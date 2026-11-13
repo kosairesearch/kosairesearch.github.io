@@ -1,220 +1,230 @@
 {
  "title": {
-  "ko": "삼성 CLT 훈풍 탄 엑시콘, 흑자전환 지속성 관건",
-  "en": "Exicon Rides Samsung CLT Orders, Eyes on Profit Durability"
+  "ko": "분기 이익 회복 속 메모리 사이클 의존이 과제",
+  "en": "Quarterly profit recovery, but memory-cycle dependence remains the test"
  },
  "lead": {
-  "ko": "삼성전자향 CLT·SSD 테스터 대형 계약이 이어지며 엑시콘은 2024년 적자에서 2025~2026년 흑자로 전환했지만, 계약 종료 시점에 몰리는 매출 인식 구조상 분기별 편차가 크다.",
-  "en": "Exicon has swung from a 2024 loss to profitability in 2025-2026 on large Samsung Electronics CLT and SSD tester contracts, but revenue recognition tied to contract completion dates produces sharp quarterly swings."
+  "ko": "엑시콘은 2025년 연간 영업이익이 흑자로 돌아선 뒤 2026년 2분기와 3분기 지배주주 순이익이 연이어 늘었지만, 매출은 메모리 투자 사이클과 삼성전자 등 대형 고객사의 발주 시점에 크게 좌우되는 구조다.",
+  "en": "After returning to operating profit in 2025, Exicon's net income attributable to controlling shareholders rose in both the second and third quarters of 2026, but revenue remains heavily dependent on memory investment cycles and the order timing of large customers such as Samsung Electronics."
  },
  "keypoints": [
   {
-   "ko": "2025년 매출 660억원으로 전년 대비 두 배 이상 증가, 영업이익·순이익 모두 흑자 전환",
-   "en": "2025 revenue of KRW 66.0 billion more than doubled year-on-year, with both operating profit and net income turning positive"
+   "ko": "DART 정기보고서 기준 2025년 영업이익은 8,012만원으로, 2024년 영업손실 159억원에서 흑자 전환했다.",
+   "en": "On a DART-filed basis, operating profit for 2025 was KRW 80.12 million, turning positive from an operating loss of KRW 15.9 billion in 2024."
   },
   {
-   "ko": "2025년 4분기·2026년 2분기에 삼성전자향 계약 종료가 몰리며 대규모 매출·이익이 집중 인식됨",
-   "en": "Contract completions concentrated in Q4 2025 and Q2 2026 caused large lump-sum revenue and profit recognition from Samsung Electronics orders"
+   "ko": "2026년 3분기 매출은 505억원, 영업이익은 151억원, 지배주주 순이익은 184억원으로, 공시된 최근 5개 분기 가운데 영업이익이 가장 크다.",
+   "en": "Third-quarter 2026 revenue was KRW 50.5 billion, operating profit KRW 15.1 billion and net income attributable to controlling shareholders KRW 18.4 billion, the largest operating profit among the last five disclosed quarters."
   },
   {
-   "ko": "챔버형 저주파 테스터(CLT)가 신성장축으로 부상, 삼성전자와 200억~500억원대 계약이 반복적으로 체결됨",
-   "en": "The Chambered Low-frequency Tester (CLT) has emerged as a new growth driver, with repeated KRW 20-50 billion contracts signed with Samsung Electronics"
+   "ko": "2026년 3월부터 7월까지 삼성전자와의 CLT·SSD 테스터 및 인터페이스 보드 공급계약이 연달아 체결됐다는 보도가 나왔다.",
+   "en": "Press reports described a run of CLT and SSD tester and interface board supply contracts with Samsung Electronics from March to July 2026."
   },
   {
-   "ko": "삼성전자가 CIB 공급망을 네오셈 등으로 다변화하면서 CLT 영역 경쟁이 심화되는 국면",
-   "en": "Samsung Electronics is diversifying its CIB supply chain to include Neosem, intensifying competition in the CLT segment"
+   "ko": "메모리 테스터는 메모리 투자 사이클의 영향을 크게 받으며, 아드반테스트 등 글로벌 업체가 시장 점유율의 절반 이상을 차지하는 구도다.",
+   "en": "Memory testers are highly sensitive to the memory investment cycle, and global players including Advantest together hold more than half of the market."
   },
   {
-   "ko": "SSD 테스터·CXL 3.1 영역에서는 미국 테라다인과 품질 평가 경쟁이 진행 중",
-   "en": "In the SSD tester and CXL 3.1 segment, Exicon is undergoing quality evaluation alongside US-based Teradyne"
+   "ko": "다음 확인 지점은 2027년 3월 말 제출 기한인 2026년 사업보고서와, 2026년 말 출시가 예정된 AMD 차세대 칩에 따른 PCIe 6.0 SSD 테스터 수요다.",
+   "en": "The next checkpoints are the 2026 annual report, due by the end of March 2027, and demand for PCIe 6.0 SSD testers tied to AMD's next-generation chip, scheduled for late 2026."
   }
  ],
  "business": {
-  "ko": "엑시콘은 코스닥에 상장된 반도체 검사장비 전문업체로, 경기 성남시 판교에 본사를 두고 있다. 회사는 반도체 검사장비 제조 및 검사 용역 사업을 영위하며, DDR5 메모리 테스터 등 다양한 제품 포트폴리오를 구축하고 있다. 20년 이상의 개발 노하우로 차세대 메모리반도체 테스터 기술을 확보하고, 비메모리 테스트 장비로 사업을 확장하고 있다. 최근 출시한 챔버형 저주파 테스터(CLT)는 엑시콘이 개발한 차세대 챔버형 저주파수 메모리 검사 장비로, 번인 테스트를 거친 D램의 2차 안정성을 확인하며 D램이 매우 느린 속도로 데이터를 읽고 쓰는 것과 유휴 상태의 동작 안정성, 내구성을 검사하는 장비다. 이 밖에 국내 테스트 장비 회사 최초로 이미지센서(CIS) 테스터기 개발에 성공한 바 있으며, 관련 CIS향 테스터기 매출 발생도 기대되는 등 비메모리 영역으로도 제품군을 넓히고 있다. 매출 구조상 해당 제품들은 삼성전자 온양 사업장에 공급되며, 온양 사업장은 삼성전자의 반도체 후공정 패키징과 테스트 전용 공장으로, 특정 고객사 의존도가 높은 편이다. CLT 공급망에서는 삼성전자가 공급망 다각화를 목적으로 각기 다른 제조사의 CIB가 상호 호환될 수 있도록 추진하면서 네오셈 등 경쟁사의 진입이 이뤄지고 있다. SSD 테스터 영역에서는 삼성전자가 미국 테라다인과 엑시콘 두 개 장비사와 함께 6세대 SSD 테스터 공급을 위한 품질 평가를 진행 중인 것으로 전해진다.",
-  "en": "Exicon is a KOSDAQ-listed semiconductor test equipment specialist headquartered in Pangyo, Seongnam. The company operates a semiconductor test equipment manufacturing and testing service business, having built a diverse product portfolio including DDR5 memory testers. Drawing on more than 20 years of development know-how, it has secured next-generation memory semiconductor tester technology and is expanding into non-memory test equipment. Its recently launched Chambered Low-frequency Tester (CLT) is a next-generation chambered low-frequency memory inspection device developed by Exicon that checks the secondary stability of DRAM after burn-in testing, examining slow-speed read/write behavior and idle-state operational stability and durability. The company has also become the first domestic test equipment maker to successfully develop a CMOS image sensor (CIS) tester, with related sales also expected, extending into non-memory areas. On the revenue side, these products are supplied to Samsung Electronics' Onyang facility, which is a dedicated back-end packaging and test plant, reflecting heavy dependence on a single customer. In the CLT supply chain, Samsung Electronics is pursuing diversification so that CIBs from different manufacturers are mutually compatible, allowing rivals such as Neosem to enter. In the SSD tester segment, Samsung Electronics is reportedly conducting quality evaluations for sixth-generation SSD testers together with both US-based Teradyne and Exicon."
+  "ko": "엑시콘은 2001년 설립되어 2015년 코스닥에 상장한 반도체 후공정 검사장비 기업이다. 완성된 칩과 모듈이 출하 전 정상적으로 작동하는지 가려내는 파이널 테스트 장비가 주력이다. 제품은 메모리 모듈 테스터, SSD 테스터, 차세대 CXL 테스터로 나뉘며, 이 가운데 SSD 테스터는 국내 시장점유율 1위 제품으로 소개된다. 주요 고객사는 삼성전자와 SK하이닉스다. 데일리인베스트 보도에 따르면 2024년 2분기 기준 매출 비중은 메모리 테스터(번인 테스터 포함) 31.6%, SSD 테스터 54.1%, SoC 테스터 14.3%였다. 2025년 처음 내놓은 챔버형 저주파 메모리 테스터(CLT)는 노후한 외산 장비를 대체하는 국산 장비로, 시간당 처리량이 기존 장비보다 20배 이상 많다고 알려졌다. 기술 보도는 CLT가 2025년 10대 공급되었고 2026년에는 15~20대로 늘어날 것으로 추정했다. 비메모리 분야에서는 2023년 국내 최초로 CIS(CMOS 이미지센서) 테스터 개발을 완료했고, 2024년에는 국내 대형 반도체 기업의 양산 검증을 통과했다. SSD 분야에서는 PCIe 5세대 테스터를 공급하며 PCIe 6세대와 CXL 3.1 테스터 솔루션을 개발 중이다. 연결 대상 종속회사는 반도체장비 연구용역 법인인 Exicon Japan Corporation 1곳이다. 경쟁 구도에서는 일본 아드반테스트, 미국 테라다인, Cohu 등 글로벌 업체가 주도하고 있어 국산 장비의 가격과 기술 경쟁력이 차별화 요소로 거론된다.",
+  "en": "Exicon was founded in 2001 and listed on KOSDAQ in 2015. Its core business is final-test equipment for back-end semiconductor production, which screens completed chips and modules for normal operation before shipment. Its products fall into memory module testers, SSD testers and next-generation CXL testers, and its SSD tester is presented as the number one product by domestic market share. Its major customers are Samsung Electronics and SK hynix. According to Daily Invest, the revenue mix as of the second quarter of 2024 was 31.6% memory testers (including burn-in testers), 54.1% SSD testers and 14.3% SoC testers. The chambered low-frequency memory tester (CLT), first launched in 2025, is a domestic replacement for aging foreign equipment, and reports say its hourly throughput is more than 20 times that of existing equipment. A technology report estimated that 10 CLT units were supplied in 2025 and that the count would rise to 15 to 20 units in 2026, although these are estimates. In non-memory testing, Exicon completed development of a CMOS image sensor (CIS) tester in 2023, and in 2024 it passed mass-production verification at a leading domestic chipmaker. In SSD testing, it supplies PCIe Gen5 testers and is developing PCIe Gen6 and CXL 3.1 testers. Its only consolidated subsidiary is Exicon Japan Corporation, a semiconductor equipment research services company. In competition, global players such as Advantest of Japan, Teradyne of the United States and Cohu lead the market, and domestic equipment's price and technology competitiveness is cited as a point of differentiation."
  },
  "earnings": {
-  "ko": "2025년 연결 매출액은 660억 2,675만원으로 2024년 316억 1,135만원에서 크게 늘었다. 2024년에는 영업손실 158억 9,733만원(영업이익률 -50.3%), 당기순손실 13억 5,881만원을 기록했으나, 2025년에는 영업이익 8,012만원(영업이익률 0.1%), 순이익 89억 6,360만원으로 흑자 전환했다. 분기별로 보면 2025년 2분기(매출 75억 6,741만원, 영업손실 28억 8,013만원)와 3분기(매출 114억 1,143만원, 영업손실 20억 3,302만원)는 적자가 이어졌으나, 4분기에는 매출이 451억 3,240만원으로 급증하며 영업이익 106억 9,998만원, 순이익 130억 835만원의 큰 흑자를 냈다. 이는 삼성전자향 CLT와 번인테스터 등 총 488억원 규모의 3건 계약이 모두 4분기에 종료되며 실적이 한꺼번에 반영된 결과로 풀이된다. 2026년 1분기에는 매출이 98억 553만원으로 다시 줄고 영업손실 19억 6,588만원을 기록했지만 순이익은 9억 3,481만원으로 흑자를 유지했다. 2026년 2분기에는 매출 314억 6,862만원, 영업이익 41억 3,490만원, 순이익 75억 8,655만원으로 다시 큰 폭의 개선을 보였다. 2025년 3분기부터 2026년 2분기까지 최근 네 개 분기를 합산하면 매출은 약 978억원, 영업이익은 약 108억원으로, 계약 종료 시점에 따라 분기별 실적 편차가 크게 나타나는 특성이 확인된다. 2022년 매출 911억 5,742만원, 영업이익률 11.2%에서 2023~2024년 실적 부진을 거쳐 2025년 이후 회복하는 흐름이 이어지고 있다.",
-  "en": "Consolidated revenue for 2025 reached KRW 66.03 billion, up sharply from KRW 31.61 billion in 2024. In 2024 the company posted an operating loss of KRW 15.90 billion (operating margin of -50.3%) and a net loss of KRW 1.36 billion, but in 2025 it turned profitable with operating profit of KRW 80 million (margin of 0.1%) and net income of KRW 8.96 billion. On a quarterly basis, losses persisted in Q2 2025 (revenue KRW 7.57 billion, operating loss KRW 2.88 billion) and Q3 2025 (revenue KRW 11.41 billion, operating loss KRW 2.03 billion), but Q4 2025 revenue surged to KRW 45.13 billion, producing operating profit of KRW 10.70 billion and net income of KRW 13.01 billion. This is attributable to three Samsung Electronics contracts worth a combined KRW 48.8 billion for CLT and burn-in testers all reaching completion in the fourth quarter, causing results to be recognized at once. Q1 2026 revenue fell back to KRW 9.81 billion with an operating loss of KRW 1.97 billion, though net income remained positive at KRW 935 million. Q2 2026 showed marked improvement again, with revenue of KRW 31.47 billion, operating profit of KRW 4.13 billion, and net income of KRW 7.59 billion. Summing the most recent four quarters from Q3 2025 through Q2 2026, revenue totals roughly KRW 97.8 billion and operating profit roughly KRW 10.8 billion, confirming that results vary considerably by quarter depending on contract completion timing. Following peak revenue of KRW 91.16 billion and an 11.2% operating margin in 2022, the company went through a weak 2023-2024 period before this recovery trend from 2025 onward."
+  "ko": "DART 정기보고서 기준 연간 매출은 2022년 912억원에서 2023년 823억원(전년 대비 9.7% 감소), 2024년 316억원(전년 대비 61.6% 감소)으로 줄었다가 2025년 660억원(전년 대비 108.9% 증가)으로 회복됐다. 2022~2025년 중 가장 큰 해는 2022년이고 가장 작은 해는 2024년이다. 영업이익은 2022년 103억원에서 2023년 14.6억원(전년 대비 85.7% 감소)으로 줄었고, 2024년에는 영업손실 159억원으로 적자 전환했다. 2025년에는 영업이익 8,012만원으로 흑자 전환했다. 영업이익률은 2022년 11.2%, 2023년 1.8%, 2024년 -50.3%, 2025년 0.1%였다. 지배주주 순이익은 2022년 152억원, 2023년 48.9억원(전년 대비 67.9% 감소)이었고, 2024년에는 지배주주 순손실 13.6억원으로 적자 전환했다. 2025년에는 지배주주 순이익 89.6억원으로 흑자 전환했다. 당기순이익(비지배지분 포함)은 같은 해 기준 값이 지배주주 순이익과 다르게 집계되었으며, 2025년 말 자본총계는 1,957억원, 부채총계는 288억원, 부채비율은 14.7%다. 영업활동 현금흐름은 2022년 -25.4억원, 2023년 212억원, 2024년 -149억원, 2025년 -40.3억원으로 연도별 편차가 컸다. 분기로는 2025년 3분기 매출 114억원과 영업손실 20.3억원에서 4분기 매출 451억원(전 분기 대비 295.5% 증가), 영업이익 107억원으로 뛰었다. 유안타증권은 2025년 4분기 호실적을 전망하면서 제품 설치가 완료되는 후반부 시점에 매출인식이 대부분 반영된다고 짚었다. 2026년 1분기에는 매출 98.1억원, 영업손실 19.7억원으로 저점을 기록했다. 2분기에는 매출 315억원, 영업이익 41.3억원으로 회복됐고, 3분기에는 매출 505억원(전 분기 대비 60.4% 증가, 전년 동기 대비 342.4% 증가), 영업이익 151억원(전년 동기 대비 흑자 전환)을 기록했다. 지배주주 순이익은 2026년 1분기 9.3억원 이후 2분기 75.9억원, 3분기 184억원으로 2개 분기 연속 증가했다. 최근 4개 분기(2025년 4분기~2026년 3분기) 지배주주 순이익 합계는 400억원이다.",
+  "en": "On a DART-filed basis, annual revenue fell from KRW 91.2 billion in 2022 to KRW 82.3 billion in 2023 (down 9.7% year on year) and then to KRW 31.6 billion in 2024 (down 61.6%), before recovering to KRW 66 billion in 2025 (up 108.9%). Among 2022 to 2025, 2022 was the largest year and 2024 the smallest. Operating profit fell from KRW 10.3 billion in 2022 to KRW 1.46 billion in 2023 (down 85.7%), then turned into an operating loss of KRW 15.9 billion in 2024 before returning to an operating profit of KRW 80.12 million in 2025. The operating margin was 11.2% in 2022, 1.8% in 2023, -50.3% in 2024 and 0.1% in 2025. Net income attributable to controlling shareholders was KRW 15.2 billion in 2022 and KRW 4.89 billion in 2023 (down 67.9%). It became a net loss of KRW 1.36 billion in 2024 and returned to net income of KRW 8.96 billion in 2025. Net income including non-controlling interests is a separate figure and was KRW 8.96 billion in 2025. At the end of 2025, total equity was KRW 195.7 billion, all attributable to controlling shareholders, total liabilities were KRW 28.8 billion, and the debt ratio was 14.7%. Operating cash flow was -KRW 2.54 billion in 2022, KRW 21.2 billion in 2023, -KRW 14.9 billion in 2024 and -KRW 4.03 billion in 2025, with wide swings between years. Quarterly results moved from revenue of KRW 11.4 billion and an operating loss of KRW 2.03 billion in the third quarter of 2025 to revenue of KRW 45.1 billion in the fourth quarter (up 295.5% from the prior quarter) and operating profit of KRW 10.7 billion. Yuanta Securities, forecasting a strong fourth quarter of 2025, noted that most revenue is recognized late in the process, when product installation is completed. Revenue then fell to KRW 9.81 billion in the first quarter of 2026, with an operating loss of KRW 1.97 billion, which marked the low point. In the second quarter, revenue recovered to KRW 31.5 billion with operating profit of KRW 4.13 billion. In the third quarter, revenue reached KRW 50.5 billion (up 60.4% from the prior quarter and up 342.4% year on year), with operating profit of KRW 15.1 billion, a turn to profit from a year earlier. Net income attributable to controlling shareholders rose for two consecutive quarters after the first-quarter low of KRW 935 million, reaching KRW 7.59 billion in the second quarter and KRW 18.4 billion in the third. Over the last four quarters (fourth quarter 2025 to third quarter 2026), net income attributable to controlling shareholders totaled KRW 40 billion."
  },
  "industry": {
-  "ko": "반도체 후공정 테스트 장비 시장은 삼성전자와 SK하이닉스의 HBM4·기업용 SSD(eSSD) 생산능력 투자 확대에 힘입어 발주가 늘어나는 국면에 있다. 한화투자증권은 최근 메모리 테스트 장비사향 대규모 발주가 늘고 있으며, 삼성전자가 대량의 테스트 장비 발주를 시작한 점과 챔버형 저주파 테스터(CLT)라는 새로운 종류의 테스터 발주가 시작된 점이 특징이라고 밝혔다. 삼성전자는 HBM 후공정을 주력으로 하는 팹을 온양에 마련하려는 것으로 파악되며, 기존 온양에서 진행하던 범용 D램과 낸드용 테스트 장비는 베트남에 신설되는 공장으로 이설될 예정이어서 두 지역 모두에서 테스터 발주가 늘어나는 모습이다. SK하이닉스 역시 HBM4 웨이퍼 테스터 투자를 확대하고 있으며, 청주에 총 19조원가량이 투입되는 첨단 패키징 전용 팹(P&T7)의 웨이퍼 테스트 라인은 2027년 10월, 웨이퍼 레벨 패키지 라인은 2028년 2월 완공될 예정이다. CES 2026에서 엔비디아 CEO가 SSD 상용화 가능성을 언급하며 GPU 지원 과정의 메모리 병목 현상을 지적한 점도 SSD 테스터 수요 확대 기대를 뒷받침하는 요인으로 거론된다. 경쟁구도에서 엑시콘은 메모리 패키지 테스터를 주력으로 하는 업체로 분류되며, CLT 영역에서는 네오셈이 삼성전자에 진입하며 경쟁이 생겼고 SSD 테스터 영역에서는 테라다인이 경쟁자로 거론된다. 업황 상승기에는 관련 장비사 전반의 매출 확대가 동반되는 경향이 뚜렷한데, 디아이가 공시한 2분기 매출액은 1,686억원으로 전년 동기 대비 41.4% 증가했으며, 영업이익은 396억원으로 전년 동기와 전분기 대비 각각 223.2%, 109.8% 성장한 사례가 이를 보여준다.",
-  "en": "The back-end semiconductor test equipment market is experiencing a wave of orders driven by expanded HBM4 and enterprise SSD (eSSD) capacity investment from Samsung Electronics and SK Hynix. Hanwha Investment & Securities noted that large-scale orders toward memory test equipment makers have been increasing recently, with Samsung Electronics beginning to place large test equipment orders and orders for a new type of tester, the Chambered Low-frequency Tester (CLT), also starting. Samsung Electronics is reportedly setting up a fab focused on HBM back-end processes in Onyang, while relocating existing general-purpose DRAM and NAND test equipment from Onyang to a newly built plant in Vietnam, increasing tester orders in both locations. SK Hynix is also expanding HBM4 wafer tester investment, with its advanced packaging-dedicated fab (P&T7) in Cheongju, requiring about KRW 19 trillion in total investment, targeting completion of the wafer test line in October 2027 and the wafer-level package line in February 2028. At CES 2026, Nvidia's CEO pointed to memory bottlenecks in GPU support processes while mentioning the potential for SSD commercialization, a factor cited as supporting expectations for greater SSD tester demand. In terms of competitive positioning, Exicon is classified as a memory package tester specialist, facing new competition from Neosem in the CLT segment after its entry at Samsung, while Teradyne is cited as a competitor in SSD testers. Upcycle periods tend to lift revenue broadly across equipment makers, as illustrated by the case where DI reported second-quarter revenue of KRW 168.6 billion, up 41.4% year-on-year, with operating profit of KRW 39.6 billion, up 223.2% year-on-year and 109.8% quarter-on-quarter."
+  "ko": "메모리 테스터 수요는 신규 팹 구축, 기존 팹 교체, 공정 변화에 따라 결정된다는 것이 증권가의 일반적인 설명이다. 유안타증권은 노후화한 일본 어드반테스트 장비의 교체 수요가 CLT 매출을 2026년에도 이어지게 할 것으로 봤다. 반면 메모리 사이클의 영향을 크게 받는 테스터 장비 특성상 메모리 업황이 불황일 때는 실적이 급락할 수 있다는 지적도 나온다. 이는 비즈니스포스트의 분석이다. SSD 측면에서는 AI 데이터센터 투자 확대와 추론 영역 확장으로 고성능·고용량 SSD 수요가 늘고 있어 관련 테스터 수요도 함께 늘 것이라는 전망이 있다. PCIe 6.0 지원은 2026년 말 AMD '베니스', 2027년 인텔 '다이아몬드 래피즈' 출시와 맞물려 본격화될 것으로 예상된다는 것이 테크노밸류의 설명이다. 엑시콘은 PCIe 6세대 SSD 테스터와 CXL 3.1 테스터를 개발 중이며, 보드 교체만으로 HBM·GDDR 검사로 넓힐 수 있다는 점을 강점으로 꼽힌다. 글로벌 테스터 시장은 아드반테스트, 테라다인, Cohu 등이 점유율 절반 이상을 차지하는 구도다. 엑시콘은 메모리와 SSD 테스터를 중심으로 국산화 포지션을 쌓았고, 비메모리 CIS 테스터로 영역을 넓혔다. 다만 SK하이닉스를 비롯해 미주·대만·중국 등 해외 고객사를 확보하는 매출처 다변화가 과제로 거론된다.",
+  "en": "Demand for memory testers is generally described by brokers as driven by new fab construction, replacement of existing fabs and process changes. Yuanta Securities expected replacement demand for aging Advantest equipment in Japan to keep CLT revenue going in 2026. At the same time, because testers are strongly affected by the memory cycle, commentary from BusinessPost points out that results can fall sharply during memory downturns. On the SSD side, expanding AI data center investment and inference workloads are seen increasing demand for high-performance, high-capacity SSDs and the testers that serve them. TechnoValue expects PCIe 6.0 support to become more widespread alongside AMD's Venice chip, scheduled for late 2026, and Intel's Diamond Rapids in 2027. Exicon is developing PCIe Gen6 SSD testers and CXL 3.1 testers, and the company's strengths are cited as the ability to extend into HBM and GDDR testing by replacing only the board. In the global tester market, Advantest, Teradyne and Cohu together hold more than half of the share. Exicon has built a domestic-substitution position centered on memory and SSD testers and has expanded into non-memory CIS testers. Diversifying the customer base to include SK hynix as well as overseas customers in the Americas, Taiwan and China is cited as a remaining challenge."
  },
  "outlook": {
-  "ko": "대신증권은 2026년 6월 18일 발표한 기업분석 보고서에서 엑시콘의 2026년 연결 매출액을 전년 대비 100.1% 증가한 1,321억원, 영업이익을 160억원으로 전망했다. 이 보고서는 2024년 말 고객사 퀄 테스트를 통과한 CLT가 2025년 10대 공급됐으며, 2026년에는 최소 15대에서 최대 20대까지 공급 대수가 확대될 것으로 추정했고, 올해 상반기까지 확보된 CLT 관련 신규 수주액이 약 420억원에 달해 연간 실적 가시성이 높다고 진단했다. 실제로 2026년 3월 4일 삼성전자와 CLT 및 SSD Tester 공급을 포함한 302억원 규모의 계약이 체결됐고, 계약 기간은 2026년 2월 27일부터 12월 31일까지였으며, 7월 10일에는 삼성전자와 498억 5,000만원 규모의 CLT 및 SSD Tester 공급계약이 추가로 체결돼 대형 수주가 이어지고 있음이 확인됐다. 유안타증권은 2026년 초 보고서에서 CLT와 SSD 테스터를 중심으로 한 포트폴리오 확장이 2026년까지 실적 성장의 핵심 동력이 될 것이라고 밝혔으며, 고대역폭메모리(HBM), 그래픽더블데이터레이트(GDDR) 영역으로의 확장도 추진 중이라고 전했다. 같은 보고서는 6세대(Gen6) SSD 테스터 개발이 진행 중으로 연내 매출 발생이 가능하며, 기술적 유사성이 높은 CXL 3.1 테스터 역시 연내 초도 매출이 기대된다고 분석했다. 다만 2026년 1분기 실적에서 나타났듯 계약 종료·인도 시점에 따라 분기별 매출 편차가 크게 발생하는 구조여서, 향후에도 특정 분기에 실적이 집중되는 패턴이 반복될 가능성이 있다.",
-  "en": "In a June 18, 2026 research report, Daishin Securities forecast Exicon's 2026 consolidated revenue to grow 100.1% year-on-year to KRW 132.1 billion, with operating profit of KRW 16.0 billion. The report estimated that the CLT, which passed customer qualification testing at the end of 2024, saw 10 units supplied in 2025, with 2026 unit shipments expected to expand to a range of 15 to 20 units, and assessed that new CLT-related orders secured through the first half of this year reached about KRW 42.0 billion, giving high visibility to annual results. This has been borne out by actual contracts: on March 4, 2026, a KRW 30.2 billion contract covering CLT and SSD Tester supply was signed with Samsung Electronics, running from February 27 to December 31, 2026, and on July 10, an additional CLT and SSD Tester supply contract worth KRW 49.85 billion was signed with Samsung Electronics, confirming continued large-scale order flow. Yuanta Securities stated in an early-2026 report that portfolio expansion centered on CLT and SSD testers would be the key driver of earnings growth through 2026, and noted expansion into high-bandwidth memory (HBM) and graphics double data rate (GDDR) areas is also being pursued. The same report assessed that development of a sixth-generation (Gen6) SSD tester is underway with potential revenue this year, and the technically similar CXL 3.1 tester is also expected to see initial sales within the year. However, as shown in first-quarter 2026 results, revenue varies considerably by quarter depending on contract completion and delivery timing, suggesting that concentrated quarterly results could recur going forward."
+  "ko": "현재 확인 가능한 전망의 축은 수주와 신제품 양산이다. 비즈니스포스트는 2026년 3월 삼성전자와 약 302억원 규모의 CLT 및 SSD 테스터 공급계약을 맺어 삼성전자 온양 사업장에 제품을 공급하기로 했다고 전했다. 같은 해 5월에는 96억 8,630만원 규모 CLT 인터페이스 보드 계약, 6월에는 120억 6,540만원 규모 반도체 검사장비 계약이 체결됐다. 7월에는 498억 5,000만원 규모 CLT 및 SSD 테스터 공급계약이 체결됐다. 이 계약들이 2026년 3분기 매출 증가에 어떻게 이어졌고 이후 분기 매출 인식으로 어떻게 연결되는지가 다음 확인 지점이다. 같은 보도는 엑시콘이 2026년 사상 첫 연 매출 1천억원을 돌파할 것이라는 전망을 전했으나, 이는 언론이 보도한 전망치이며 회사 공시 값이 아니다. 2026년 말 AMD 차세대 칩 출시와 2027년 인텔 제품 출시는 PCIe 6.0 SSD 테스터와 CXL 테스터 수요의 시점을 정하는 외부 일정이다. HBM과 GDDR 검사로의 확장은 고객사 퀄 테스트 통과가 전제라는 점이 유안타증권 등 증권가 보고서에서 반복적으로 언급됐다. 2026년 1분기 저점 이후 분기 이익이 두 분기 연속 늘어난 만큼, 2026년 4분기와 2027년 실적에서 매출 인식이 이어지는지가 주목된다. 다음 정기보고서인 2026년 사업보고서에서 연간 매출과 영업활동 현금흐름이 확정되는 시점이 가장 명확한 확인 지점이다.",
+  "en": "The visible drivers for the outlook are orders and the mass production of new products. BusinessPost reported that in March 2026 Exicon agreed to supply CLT and SSD testers worth about KRW 30.2 billion to Samsung Electronics' Onyang facility. In May 2026 a CLT interface board contract worth KRW 9.68 billion followed, and in June a semiconductor test equipment contract worth KRW 12.07 billion. In July, a CLT and SSD tester supply contract worth KRW 49.85 billion was signed. The next checkpoint is how these contracts show up in third-quarter revenue and then in revenue recognition in later quarters. The same report cited a forecast that Exicon would surpass KRW 100 billion in annual revenue for the first time in 2026, but this is a media forecast and not a figure from company disclosures. AMD's next-generation chip, scheduled for late 2026, and Intel's product launch in 2027 are external timelines that will shape demand for PCIe 6.0 SSD testers and CXL testers. Expansion into HBM and GDDR testing is repeatedly described in broker reports, including Yuanta Securities', as contingent on passing customer qualification tests. After quarterly profit rose for two consecutive quarters from the first-quarter 2026 low, the key question is whether revenue recognition continues in the fourth quarter of 2026 and in 2027. The clearest checkpoint is the 2026 annual report, which will confirm full-year revenue and operating cash flow."
  },
  "valuation_comment": {
-  "ko": "엑시콘의 주가는 2024년의 대규모 적자에서 2025년 흑자 전환, 그리고 2026년 상반기까지 이어진 실적 개선 기대를 함께 반영하며 순자산가치 대비 프리미엄이 있는 구간에서 거래되고 있다. 최근 네 개 분기 기준 영업이익률이 두 자릿수 수준까지 올라온 점은 과거 수년간의 적자·저마진 국면과 비교하면 뚜렷한 방향 전환으로 볼 수 있다. 다만 매출이 특정 분기에 몰리는 계약 인식 구조상 최근 분기 실적을 그대로 연간화하기는 어려워, 시장이 반영하는 성장 기대와 실제 분기별 실적 편차 사이에 간극이 존재할 수 있다. 배당은 소액의 현금배당을 실시하는 수준으로, 이익 성장에 대한 기대가 주주환원보다 밸류에이션에 더 크게 반영되는 구조로 해석된다. 증권사들이 제시한 2026년 매출·영업이익 전망이 현실화되는 속도와 폭에 따라 현재 밸류에이션 수준에 대한 시장의 평가도 달라질 수 있다.",
-  "en": "Exicon's share price reflects both the swing from a large 2024 loss to profitability in 2025 and expectations for further earnings improvement through the first half of 2026, and it trades at a premium to net asset value. The rise in operating margin to double-digit levels over the most recent four quarters marks a clear directional shift compared with the loss-making, low-margin years that preceded it. However, because revenue recognition is concentrated around contract completion dates, annualizing recent quarterly results is difficult, leaving a potential gap between growth expectations priced in by the market and the actual quarter-to-quarter variability. Dividends have been modest cash payouts, suggesting that expectations for earnings growth are reflected more in valuation than in shareholder returns. How quickly and to what extent the 2026 revenue and operating profit forecasts put forward by brokerages materialize could also change how the market assesses the current valuation level."
+  "ko": "밸류에이션은 이익의 지속성과 자산 규모를 함께 놓고 봐야 하는 구간이다. 2025년 연간 영업이익률은 0.1%로 낮았고, 흑자 전환도 2025년에 처음 나타났기 때문에 이익 기반이 짧다. 2026년 들어 분기 이익이 회복되면서 최근 네 개 분기 지배주주 순이익 합계는 400억원으로 집계됐다. 이익 기준 배수는 2024년 적자 구간과 2026년 흑자 구간에서 해석 기준이 달라지므로 과거 적자 기간을 빼고 봐야 한다. 주가순자산비율은 2025년 말 지배주주 지분 1,957억원과 비교하면 순자산 대비 프리미엄이 큰 구간이다. 시가총액은 자본총계의 몇 배 수준이며, 이익 규모와 비교해도 시장이 미래 매출 인식을 상당 부분 반영하고 있는 구도다. 배당수익률은 낮은 편이어서 현금 배당에 따른 수익은 제한적이다. 영업활동 현금흐름은 2025년 -40.3억원으로, 흑자 전환한 이익과 방향이 달랐다. 이익과 현금흐름이 같은 방향으로 움직이는지가 다음 정기보고서에서 점검할 항목이다.",
+  "en": "Valuation needs to be read together with the durability of earnings and the size of the balance sheet. The operating margin for 2025 was 0.1%, and the turn to profit only appeared in 2025, so the earnings base is short. As quarterly profit recovered in 2026, net income attributable to controlling shareholders over the last four quarters totaled KRW 40 billion. Earnings-based multiples are read differently across the period of losses in 2024 and the profit in 2026, so the comparison has to account for the loss-making years. Measured against equity attributable to controlling shareholders of KRW 195.7 billion at the end of 2025, the price-to-book ratio sits in a range with a large premium over net assets. The market value is a multiple of total equity, and relative to earnings, the market is pricing in much of future revenue recognition. The dividend yield is low, so cash returns to shareholders are limited. Operating cash flow was -KRW 4.03 billion in 2025, moving in a different direction from the turn to profit. Whether earnings and cash flow move together is the item to examine in the next annual report."
  },
  "bull": [
   {
    "title": {
-    "ko": "삼성전자향 CLT 대형 수주 지속",
-    "en": "Continued Large-Scale CLT Orders from Samsung Electronics"
+    "ko": "분기 이익의 방향 전환",
+    "en": "A turn in quarterly profit"
    },
    "body": {
-    "ko": "2025년 하반기부터 2026년까지 삼성전자와 204억원, 302억원, 498억 5,000만원 등 대형 CLT·SSD 테스터 공급계약이 연이어 체결됐다. 대신증권은 이를 근거로 2026년 CLT 공급 대수가 2025년 10대에서 15~20대까지 늘어날 것으로 추정했다. 상반기까지 확보된 CLT 관련 신규 수주액이 약 420억원에 달해 연간 실적 가시성이 상대적으로 높은 편이다.",
-    "en": "From the second half of 2025 through 2026, Exicon signed a series of large CLT and SSD tester supply contracts with Samsung Electronics worth KRW 20.4 billion, KRW 30.2 billion, and KRW 49.85 billion. Based on this, Daishin Securities estimated CLT unit shipments would rise from 10 units in 2025 to 15-20 units in 2026. New CLT-related orders secured through the first half of the year reached about KRW 42.0 billion, giving relatively high visibility into annual results."
+    "ko": "2026년 2분기 영업이익 41.3억원에서 3분기 151억원으로 늘었고, 지배주주 순이익도 2026년 2분기부터 3분기까지 2개 분기 연속 증가했다. 3분기 지배주주 순이익 184억원은 2025년 3분기 순손실 7.6억원과 대비된다. 최근 4개 분기 지배주주 순이익 합계는 400억원으로, 2025년 연간 흑자 전환이 분기 기준으로도 이어진 흐름이다.",
+    "en": "Operating profit rose from KRW 4.13 billion in the second quarter of 2026 to KRW 15.1 billion in the third, and net income attributable to controlling shareholders rose for two consecutive quarters. Third-quarter net income of KRW 18.4 billion compares with a net loss of KRW 760 million in the third quarter of 2025. Over the last four quarters, the total was KRW 40 billion, extending the turn to profit seen in 2025."
    }
   },
   {
    "title": {
-    "ko": "비메모리·신제품 라인업 다각화",
-    "en": "Diversification into Non-Memory and New Product Lines"
+    "ko": "신규 CLT와 대형 고객사 계약",
+    "en": "New CLT tester and large customer contracts"
    },
    "body": {
-    "ko": "엑시콘은 국내 최초로 이미지센서(CIS) 테스터 개발에 성공했고, 6세대 SSD 테스터와 CXL 3.1 테스터 개발도 진행 중이다. 유안타증권은 이들 신제품에서 연내 초도 매출 발생을 기대한다고 밝혔다. 고대역폭메모리(HBM)·GDDR 영역으로의 확장도 추진되고 있어, 메모리 패키지 테스터에 집중된 사업 구조를 점차 넓혀가는 단계다.",
-    "en": "Exicon became the first domestic maker to develop a CMOS image sensor (CIS) tester, and is also developing a sixth-generation SSD tester and a CXL 3.1 tester. Yuanta Securities said it expects initial sales from these new products within the year. Expansion into high-bandwidth memory (HBM) and GDDR areas is also underway, gradually broadening a business once concentrated on memory package testers."
+    "ko": "CLT는 2025년 처음 출시된 챔버형 저주파 메모리 테스터로, 노후한 외산 장비를 대체하는 국산 장비로 소개된다. 기술 보도는 2025년 10대 공급과 2026년 15~20대 증가를 추정했다. 비즈니스포스트에 따르면 2026년 3월부터 7월까지 삼성전자와 CLT 및 SSD 테스터 관련 공급계약이 연달아 체결됐다.",
+    "en": "The CLT, a chambered low-frequency memory tester first launched in 2025, is presented as a domestic substitute for aging foreign equipment. A technology report estimated 10 units supplied in 2025 and 15 to 20 units in 2026. According to BusinessPost, CLT and SSD tester supply contracts with Samsung Electronics followed one another from March to July 2026."
    }
   },
   {
    "title": {
-    "ko": "HBM4·eSSD 투자 확대라는 업황 사이클 수혜",
-    "en": "Benefiting from the HBM4/eSSD Investment Upcycle"
+    "ko": "차세대 인터페이스 수요",
+    "en": "Demand for next-generation interfaces"
    },
    "body": {
-    "ko": "삼성전자와 SK하이닉스 모두 HBM4·eSSD 생산능력 확대에 나서고 있어 관련 테스트 장비 발주가 늘어나는 국면이다. 한화투자증권은 삼성전자의 대량 발주 시작과 CLT라는 신규 테스터 종류의 등장을 특징으로 짚었다. 업황 상승기에는 동종 장비사 전반의 매출이 함께 확대되는 경향이 있어, 산업 사이클 자체가 우호적으로 작용하고 있다.",
-    "en": "Both Samsung Electronics and SK Hynix are expanding HBM4/eSSD production capacity, driving increased orders for related test equipment. Hanwha Investment & Securities highlighted Samsung's initiation of large-scale orders and the emergence of the new CLT tester category as key features. During upcycles, revenue tends to expand broadly across peer equipment makers, meaning the industry cycle itself is currently supportive."
+    "ko": "PCIe 6.0 지원은 2026년 말 AMD 차세대 칩과 2027년 인텔 제품 출시와 맞물려 본격화될 것으로 예상된다는 것이 테크노밸류의 설명이다. 엑시콘은 PCIe 6세대 SSD 테스터와 CXL 3.1 테스터를 개발 중이다. 보드 교체만으로 HBM과 GDDR 검사로 넓힐 수 있다는 점도 강점으로 꼽힌다.",
+    "en": "TechnoValue expects PCIe 6.0 support to gain traction alongside AMD's chip launch in late 2026 and Intel's product in 2027. Exicon is developing PCIe Gen6 SSD testers and CXL 3.1 testers. The ability to extend into HBM and GDDR testing by replacing only the board is also cited as a strength."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "고객 편중과 계약 인식 편차",
-    "en": "Customer Concentration and Uneven Contract-Based Recognition"
+    "ko": "매출 변동성과 적자 이력",
+    "en": "Revenue volatility and loss history"
    },
    "body": {
-    "ko": "매출 대부분이 삼성전자 온양 사업장 공급에 의존하는 구조로, 특정 고객사에 대한 매출 의존도가 매우 높다. 계약 종료 시점에 실적이 몰려 인식되는 구조상 2025년 4분기와 2026년 2분기처럼 매출이 급증하는 구간과 2026년 1분기처럼 급감하는 구간이 반복될 수 있다. 이런 편차는 분기 단위 실적만으로 연간 흐름을 가늠하기 어렵게 만든다.",
-    "en": "The bulk of revenue depends on supply to Samsung Electronics' Onyang facility, resulting in very high customer concentration. Because results are recognized in a lump at contract completion, periods of surging revenue such as Q4 2025 and Q2 2026 can alternate with sharp declines such as Q1 2026. This variability makes it difficult to gauge annual trends from quarterly results alone."
+    "ko": "연간 매출은 2022년 912억원에서 2024년 316억원으로 61.6% 줄었고, 2024년에는 영업손실 159억원과 지배주주 순손실 13.6억원을 기록했다. 2025년 영업이익률은 0.1%에 그쳤다. 분기 기준으로도 2026년 1분기 매출이 98.1억원으로 전 분기 대비 78.3% 줄어드는 등 변동 폭이 크다.",
+    "en": "Annual revenue fell from KRW 91.2 billion in 2022 to KRW 31.6 billion in 2024, a decline of 61.6%, and the company posted an operating loss of KRW 15.9 billion and a net loss attributable to controlling shareholders of KRW 1.36 billion that year. The operating margin for 2025 was only 0.1%. Quarterly revenue is also volatile, falling to KRW 9.81 billion in the first quarter of 2026, down 78.3% from the prior quarter."
    }
   },
   {
    "title": {
-    "ko": "CLT 멀티벤더화에 따른 경쟁 심화",
-    "en": "Intensifying Competition from CLT Multi-Vendor Strategy"
+    "ko": "메모리 사이클과 고객 집중",
+    "en": "Memory cycle and customer concentration"
    },
    "body": {
-    "ko": "삼성전자는 CIB 공급망 다변화를 추진하며 네오셈 등 다른 제조사의 장비도 상호 호환되도록 하고 있다. 이는 엑시콘이 CLT 영역에서 누리던 초기 우위가 시간이 지나며 희석될 수 있음을 시사한다. 경쟁이 본격화될 경우 물량 배분이나 가격 조건에서 협상력이 약화될 가능성이 있다.",
-    "en": "Samsung Electronics is pursuing CIB supply chain diversification, ensuring compatibility with equipment from other makers such as Neosem. This suggests Exicon's early advantage in the CLT segment could dilute over time as competition intensifies. If rivalry escalates, negotiating power over volume allocation or pricing terms could weaken."
+    "ko": "주요 고객사는 삼성전자와 SK하이닉스 중심이어서 두 회사의 메모리 투자 규모에 실적이 크게 좌우된다. 비즈니스포스트 분석은 메모리 업황 불황기에는 실적이 급락할 여지가 크다고 지적했다. 해외 고객사 확보와 비메모리 포트폴리오 확대가 실적 안정성의 과제로 거론된다.",
+    "en": "Major customers are concentrated in Samsung Electronics and SK hynix, so results depend heavily on the memory investment plans of those two companies. BusinessPost commentary notes that results could fall sharply in memory downturns. Winning overseas customers and expanding non-memory test products are cited as ways to stabilize results."
    }
   },
   {
    "title": {
-    "ko": "과거 실적 변동성이 큰 사업 특성",
-    "en": "History of Large Earnings Swings"
+    "ko": "현금흐름과 경쟁 구도",
+    "en": "Cash flow and competitive landscape"
    },
    "body": {
-    "ko": "엑시콘은 2022년 매출 911억원, 영업이익률 11.2%를 기록한 뒤 2023~2024년에는 매출이 급감하고 대규모 영업손실을 낸 경험이 있다. 2024년 영업손실률은 -50.3%에 달했다. 고객사의 투자 축소나 설비 발주 지연이 발생하면 유사한 급락이 재현될 수 있다는 점에서 사이클 민감도가 높은 사업 구조다.",
-    "en": "After posting revenue of KRW 91.16 billion and an 11.2% operating margin in 2022, Exicon experienced a sharp revenue decline and a large operating loss in 2023-2024, with the 2024 operating margin falling to -50.3%. If customer investment slows or equipment orders are delayed, a similar downturn could recur, underscoring the business's high sensitivity to industry cycles."
+    "ko": "영업활동 현금흐름은 2024년 -149억원, 2025년 -40.3억원으로 두 해 연속 적자였다. 글로벌 테스터 시장에서는 아드반테스트, 테라다인, Cohu 등이 점유율 절반 이상을 차지하고 있어 후발 국산 장비의 확장 속도가 관건이다. 원가 경쟁력 유지와 해외 거점의 엔지니어링 지원 체계도 과제로 꼽힌다.",
+    "en": "Operating cash flow was -KRW 14.9 billion in 2024 and -KRW 4.03 billion in 2025, negative in both years. In the global tester market, Advantest, Teradyne and Cohu together hold more than half of the share, so the pace of expansion for domestic equipment is the key issue. Maintaining cost competitiveness and strengthening engineering support at overseas sites are also cited as challenges."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중 리스크",
-    "en": "Customer Concentration Risk"
+    "ko": "수주 집중과 매출 인식 시점",
+    "en": "Order concentration and revenue recognition timing"
    },
    "body": {
-    "ko": "매출의 절대적인 비중이 삼성전자 한 곳, 특히 온양 사업장 공급에 집중돼 있다. 해당 고객사의 투자 계획이나 발주 스케줄이 변경되면 실적에 직접적이고 즉각적인 영향을 미칠 수 있다. 고객 다변화가 이뤄지지 않는 한 이 구조적 리스크는 지속될 가능성이 크다.",
-    "en": "The overwhelming majority of revenue is concentrated on a single customer, Samsung Electronics, particularly its Onyang facility. Any change in that customer's investment plans or order schedule could have a direct and immediate impact on results. Absent meaningful customer diversification, this structural risk is likely to persist."
+    "ko": "대형 장비 매출은 제품 설치가 완료되는 시점에 대부분 반영되는 구조여서 분기 실적이 공급계약 체결일과 어긋날 수 있다. 2025년 4분기 매출이 전 분기 대비 295.5% 늘었다가 2026년 1분기 78.3% 줄어든 것이 그 예다. 특정 고객의 계약 규모가 크기 때문에 한 분기 발주 공백이 실적에 직접 반영된다.",
+    "en": "Revenue from large equipment is mostly recognized when installation is complete, so quarterly results can diverge from contract signing dates. Revenue rose 295.5% in the fourth quarter of 2025 and then fell 78.3% in the first quarter of 2026, which illustrates the pattern. Because individual contracts are large, a gap in orders in a single quarter feeds directly into reported results."
    }
   },
   {
    "cat": {
-    "ko": "경쟁·기술 리스크",
-    "en": "Competitive and Technological Risk"
+    "ko": "메모리 투자 사이클",
+    "en": "Memory investment cycle"
    },
    "body": {
-    "ko": "CLT 영역에서는 네오셈이, SSD 테스터 영역에서는 테라다인이 각각 경쟁자로 부상하고 있다. 삼성전자가 공급망 다변화를 추진하는 상황에서 기술 우위나 원가 경쟁력을 지속적으로 유지하지 못하면 물량 배분에서 불리해질 수 있다. 차세대 규격(HBM4, GDDR, CXL 3.1 등) 대응이 늦어질 경우 신규 매출 기회를 놓칠 위험도 있다.",
-    "en": "Neosem is emerging as a rival in the CLT segment while Teradyne competes in SSD testers. As Samsung Electronics pursues supply chain diversification, failure to sustain technological or cost competitiveness could result in unfavorable volume allocation. Delays in addressing next-generation specifications such as HBM4, GDDR, and CXL 3.1 could also mean missed new revenue opportunities."
+    "ko": "메모리 업체의 설비 투자가 줄면 테스터 수요가 빠르게 줄 수 있다. 2024년 한 증권사는 고객사가 고대역폭메모리 투자에 집중하면서 기타 후공정 투자가 보수적으로 가져갈 것으로 파악된다고 분석했다. 이는 메모리 투자 우선순위가 바뀌면 테스터 주문이 영향을 받는다는 사례다.",
+    "en": "If memory makers cut capital spending, demand for testers can fall quickly. In 2024, a brokerage noted that customers were focusing investment on high-bandwidth memory and taking a conservative stance on other back-end investment. That shows how a shift in memory investment priorities can affect tester orders."
    }
   },
   {
    "cat": {
-    "ko": "현금흐름·계약 인식 리스크",
-    "en": "Cash Flow and Contract Recognition Risk"
+    "ko": "기술 세대 전환과 현금흐름",
+    "en": "Technology generation shifts and cash flow"
    },
    "body": {
-    "ko": "2025년에는 순이익이 89억 6,360만원으로 흑자를 냈음에도 영업활동현금흐름은 -40억 3,465만원으로 마이너스를 기록했다. 이는 대규모 계약의 매출 인식과 실제 대금 회수 시점 사이에 시차가 존재할 수 있음을 보여준다. 계약별 대금 지급 조건(선수금·완납 후 지급 등)에 따라 향후에도 현금흐름과 손익 간 괴리가 반복될 가능성이 있다.",
-    "en": "In 2025, despite net income of KRW 8.96 billion, cash flow from operations was negative at KRW -4.03 billion. This shows a potential timing gap between revenue recognition on large contracts and actual cash collection. Depending on payment terms for individual contracts (advance payments versus payment after full delivery), a divergence between cash flow and reported earnings could recur going forward."
+    "ko": "PCIe 6.0과 CXL 3.1 같은 차세대 인터페이스로 세대가 바뀌면 신규 테스터 개발과 양산 일정이 맞아야 한다. 개발이 늦어지면 기존 제품의 수요 감소를 메우기 어렵다. 영업활동 현금흐름이 2024년과 2025년에 적자였던 점도 개발 투자 부담과 맞물려 점검 대상이다.",
+    "en": "When the market shifts to next-generation interfaces such as PCIe 6.0 and CXL 3.1, development and mass-production schedules must line up. If development is delayed, it becomes hard to offset falling demand for existing products. Negative operating cash flow in 2024 and 2025 also needs to be watched alongside the burden of development investment."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중순",
-    "en": "Mid-November 2026"
+    "ko": "2026년 12월 중",
+    "en": "Late 2026 (December)"
    },
    "what": {
-    "ko": "2026년 3분기 실적 공시를 확인해 대신증권 등이 제시한 연간 매출 1,321억원, 영업이익 160억원 전망 대비 진행 상황을 점검할 필요가 있다.",
-    "en": "Check the third-quarter 2026 earnings disclosure to assess progress against Daishin Securities' forecast of KRW 132.1 billion in annual revenue and KRW 16.0 billion in operating profit."
+    "ko": "AMD 차세대 칩 출시가 예정된 시점이다. PCIe 6.0 SSD 테스터 수요가 실제 주문으로 이어지는지 확인한다.",
+    "en": "AMD's next-generation chip is scheduled for launch around this time. Watch whether demand for PCIe 6.0 SSD testers turns into actual orders."
    }
   },
   {
    "when": {
-    "ko": "2026년 12월 31일 전후",
-    "en": "Around December 31, 2026"
+    "ko": "2027년 3월 말",
+    "en": "End of March 2027"
    },
    "what": {
-    "ko": "7월 10일 체결한 498억 5,000만원 규모의 삼성전자 CLT·SSD 테스터 공급계약이 계약 종료 시점까지 정상적으로 매출로 인식되는지 확인할 필요가 있다.",
-    "en": "Verify whether the KRW 49.85 billion CLT and SSD tester supply contract with Samsung Electronics signed on July 10 is recognized as revenue as intended by its December 31, 2026 completion date."
+    "ko": "2026년 사업보고서 제출 기한이다. 연간 매출과 영업이익, 영업활동 현금흐름이 확정되며 2026년 4분기 실적의 공시 값이 처음 나온다.",
+    "en": "This is the deadline for the 2026 annual report, which will confirm full-year revenue, operating profit and operating cash flow, and first show the fourth-quarter 2026 figures as filed."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기",
-    "en": "Fourth quarter 2026"
+    "ko": "2027년",
+    "en": "2027"
    },
    "what": {
-    "ko": "6세대(Gen6) SSD 테스터와 CXL 3.1 테스터의 초도 매출이 증권사 전망대로 실제 발생하는지 확인할 필요가 있다.",
-    "en": "Confirm whether initial revenue from the sixth-generation (Gen6) SSD tester and CXL 3.1 tester materializes as brokerages have forecast."
+    "ko": "인텔 차세대 제품 출시가 예정된 해다. PCIe 6.0과 CXL 테스터 수요가 본격화되는지 확인하는 기준이 된다.",
+    "en": "Intel's next-generation product is scheduled for launch in this year. It serves as a benchmark for whether demand for PCIe 6.0 and CXL testers becomes substantial."
    }
   },
   {
    "when": {
-    "ko": "수시(신규 공시 시점마다)",
-    "en": "Ongoing, at each new disclosure"
+    "ko": "2027년 5월 중순 전후",
+    "en": "Around mid-May 2027"
    },
    "what": {
-    "ko": "삼성전자 외 신규 고객사 확보 여부와, 네오셈 등 경쟁사와의 CLT·CIB 시장 점유율 변화를 보여주는 추가 공급계약 공시를 계속 모니터링할 필요가 있다.",
-    "en": "Continue monitoring new supply contract disclosures for signs of customer diversification beyond Samsung Electronics and shifts in CLT/CIB market share versus competitors such as Neosem."
+    "ko": "2027년 1분기 실적 발표 시점으로 추정된다(2026년 1분기 발표일 2026년 5월 15일 기준). 2026년 1분기 매출 98.1억원 대비 흐름을 확인한다.",
+    "en": "This is the expected timing for the first-quarter 2027 results, based on the first-quarter 2026 release date of May 15, 2026. Compare against first-quarter 2026 revenue of KRW 9.81 billion."
+   }
+  },
+  {
+   "when": {
+    "ko": "수시 공시(2026년 11월 이후)",
+    "en": "Ad hoc disclosures (after November 2026)"
+   },
+   "what": {
+    "ko": "삼성전자 등 대형 고객사와의 공급계약 공시와 HBM·GDDR 고객사 퀄 테스트 통과 여부가 확인 지점이다.",
+    "en": "Watch for supply contract disclosures with large customers such as Samsung Electronics, and whether HBM and GDDR qualification tests with customers are passed."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "엑시콘은 2024년의 대규모 적자에서 2025년 흑자 전환을 거쳐 2026년 상반기까지 개선 흐름을 이어가고 있는 반도체 검사장비 업체다. 실적 개선의 핵심은 삼성전자 온양 사업장을 중심으로 한 CLT·SSD 테스터 대형 공급계약으로, 2025년 이후 여러 건의 수백억원대 계약이 이어졌다. 다만 매출이 계약 종료 시점에 몰려 인식되는 구조상 분기별 편차가 크며, 2026년 1분기처럼 매출이 크게 줄어드는 구간도 반복될 수 있다. 대신증권 등은 2026년 연간 매출이 2025년의 두 배 수준으로 늘어날 것으로 전망했지만, 이는 CLT 공급 대수 확대와 신규 수주 실현 속도에 좌우되는 가정이다. 삼성전자 의존도가 높은 고객 구조와, 네오셈의 CIB·CLT 시장 진입에 따른 경쟁 심화는 균형 있게 살펴볼 부분이다. HBM4·eSSD 투자 확대라는 업황 사이클이 우호적으로 작용하고 있으나, 과거 2023~2024년처럼 고객사 투자 축소 시 실적이 다시 둔화될 수 있는 구조적 특성도 함께 고려할 필요가 있다.",
-   "en": "Exicon is a semiconductor test equipment maker that has moved from a large 2024 loss to profitability in 2025, sustaining that improvement through the first half of 2026. The core driver has been large CLT and SSD tester supply contracts centered on Samsung Electronics' Onyang facility, with multiple contracts worth tens of billions of won signed since 2025. However, because revenue is recognized in a lump at contract completion, quarterly results vary widely, and periods of sharp revenue decline such as Q1 2026 could recur. Daishin Securities and others have forecast 2026 annual revenue roughly doubling from 2025, but this assumption hinges on the pace of CLT unit expansion and realization of new orders. The customer structure's heavy reliance on Samsung Electronics, along with intensifying competition from Neosem's entry into the CIB/CLT market, are factors that warrant balanced consideration. The favorable industry cycle from expanding HBM4 and eSSD investment is a supportive backdrop, but the structural characteristic that results could slow again if customer investment contracts—as seen in 2023-2024—should also be kept in view."
+   "ko": "엑시콘은 2022년 연간 매출 912억원에서 2024년 316억원으로 줄었다가 2025년 660억원으로 회복한 메모리 검사장비 기업이다. 2025년 영업이익과 지배주주 순이익이 흑자로 돌아섰고, 공시된 최근 5개 분기 가운데 2026년 3분기 영업이익 151억원이 가장 컸다. 성장의 축은 CLT와 SSD 테스터이며, 2026년 3월부터 7월까지 삼성전자와의 공급계약이 이어졌다는 보도가 있다. 반면 매출 변동성이 크고, 2024년 영업손실과 2024~2025년 영업활동 현금흐름 적자가 남아 있다. 메모리 업황과 고객 집중도에 따른 실적 변동 리스크도 구조적으로 존재한다. 시장에서는 글로벌 상위 업체가 점유율의 절반 이상을 차지하고 있으며, PCIe 6.0과 CXL 같은 차세대 인터페이스 수요는 2026년 말 이후 AMD와 인텔 제품 출시 일정과 맞물린다. 다음 확인 지점은 2026년 사업보고서의 연간 실적과 현금흐름, 차세대 SSD 테스터 수요, 대형 고객사 공급계약의 매출 인식 시점이다.",
+   "en": "Exicon is a memory test equipment maker whose annual revenue fell from KRW 91.2 billion in 2022 to KRW 31.6 billion in 2024 before recovering to KRW 66 billion in 2025. Operating profit and net income attributable to controlling shareholders turned positive in 2025, and third-quarter 2026 operating profit of KRW 15.1 billion was the largest among the last five disclosed quarters. Growth is centered on CLT and SSD testers, and press reports describe a run of supply contracts with Samsung Electronics from March to July 2026. On the other side, revenue remains volatile, the 2024 operating loss and negative operating cash flow in 2024 and 2025 remain on record, and structural risk from memory market conditions and customer concentration persists. In the market, global leaders hold more than half of the share, and demand for next-generation interfaces such as PCIe 6.0 and CXL is tied to the late-2026 AMD launch and Intel's 2027 product. The next checkpoints are full-year results and cash flow in the 2026 annual report, demand for next-generation SSD testers, and the timing of revenue recognition on large customer contracts."
   }
  },
  "sources": [
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=092870",
-  "https://www.etoday.co.kr/news/view/2439368",
-  "https://www.ket.kr/news/article.html?no=38862",
-  "https://www.exicon.co.kr/kr/pr/news.php",
-  "https://m.irgo.co.kr/IR-COMP/092870",
-  "https://www.etoday.co.kr/news/view/2543428",
+  "https://technovalue.com/View.aspx?No=4305067",
+  "https://app.rndcircle.io/company/c414437c-00b1-5d72-9f96-21d79615b7a9",
   "https://www.saramin.co.kr/zf_user/company-info/view/csn/bHFEQVE3R3hBaWRXYXZWZzdNcHJqZz09/company_nm/(%EC%A3%BC)%EC%97%91%EC%8B%9C%EC%BD%98",
-  "https://www.sisajournal-e.com/news/articleView.html?idxno=422853",
-  "https://www.etoday.co.kr/news/view/2620753",
-  "https://www.thelec.kr/news/articleView.html?idxno=44954",
-  "https://yelec.kr/hbm-%EC%86%94%EB%A3%A8%EC%85%98%EB%8F%84-%EC%A4%80%EB%B9%84%ED%95%98%EB%8A%94-%ED%8B%B0%EC%97%90%EC%8A%A4%EC%9D%B4-%EB%B0%98%EB%8F%84%EC%B2%B4-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%86%8C%EC%BC%93-%EC%9D%B8/",
-  "https://robonews.stockplus.com/articles/822341",
-  "https://www.thelec.kr/news/articleView.html?idxno=56131",
-  "https://yelec.kr/%EC%8E%84%ED%81%AC-hbm%EC%9A%A9-%EC%9D%B8%EB%9D%BC%EC%9D%B8-x-%EB%A0%88%EC%9D%B4-%EA%B2%80%EC%82%AC-%EC%9E%A5%EB%B9%84-%EB%82%B4%EB%85%84-%EC%B4%88-%EC%B6%9C%EC%8B%9C/",
-  "https://www.g-enews.com/article/Industry/2026/08/2026082615505172823084322ec9_1",
-  "https://littlebproject.com/stock/092870/77/48737",
-  "https://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=092870",
-  "https://alphasquare.co.kr/home/stock-summary?code=092870"
+  "http://www.dailyinvest.kr/news/articleView.html?idxno=69798",
+  "https://www.exicon.co.kr/kr/company/location.php",
+  "https://m.saramin.co.kr/job-search/company-info-view?csn=bHFEQVE3R3hBaWRXYXZWZzdNcHJqZz09",
+  "http://www.dailyinvest.kr/news/articleView.html?idxno=61261",
+  "https://www.mt.co.kr/stock/2024/05/28/2024052809322513934",
+  "https://www.etoday.co.kr/news/view/2439368",
+  "https://www.businesspost.co.kr/BP?command=article_view&num=450347",
+  "https://www.investing.com/equities/exicon-co-ltd-earnings",
+  "https://kr.investing.com/news/transcripts/article-93CH-2175564",
+  "https://www.tradingkey.com/kr/news/transcripts/262261704-",
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02371446616095872",
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03152086625962440",
+  "https://www.tradingkey.com/kr/news/transcripts/262275209-",
+  "https://www.edaily.co.kr/news/read?newsId=01193926625963424&mediaCodeNo=257",
+  "https://www.tradingkey.com/kr/news/earnings/262260421-"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "092870",
  "name": "엑시콘",
  "name_en": "Exicon Co., Ltd.",
@@ -223,11 +233,11 @@
   "반도체"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 06:36",
- "dataDate": "20260904",
+ "reportDate": "2026-11-14",
+ "reportTs": "2026-11-14 07:36",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-08-21",
+  "asOf": "2026-11-13",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -238,6 +248,7 @@
     "np_owner": 8963596191,
     "equity": 195698704855,
     "equity_owner": 195698704855,
+    "equity_nci": null,
     "liab": 28807510855,
     "cfo": -4034653160,
     "eps_basic": 715,
@@ -253,6 +264,7 @@
     "np_owner": -1358809270,
     "equity": 176817320387,
     "equity_owner": 176817320387,
+    "equity_nci": null,
     "liab": 13966536356,
     "cfo": -14879746767,
     "eps_basic": -120,
@@ -268,6 +280,7 @@
     "np_owner": 4886128432,
     "equity": 145957832632,
     "equity_owner": 145957832632,
+    "equity_nci": null,
     "liab": 20027338600,
     "cfo": 21192317741,
     "eps_basic": 474,
@@ -283,6 +296,7 @@
     "np_owner": 15211386618,
     "equity": 144785237404,
     "equity_owner": 144785237404,
+    "equity_nci": null,
     "liab": 24832895770,
     "cfo": -2544967007,
     "eps_basic": 1500,
@@ -292,12 +306,6 @@
    }
   ],
   "quarterly": [
-   {
-    "q": "2025Q2",
-    "rev": 7567410445,
-    "op": -2880133626,
-    "np_owner": -1723748367
-   },
    {
     "q": "2025Q3",
     "rev": 11411426883,
@@ -321,26 +329,36 @@
     "rev": 31468619657,
     "op": 4134899033,
     "np_owner": 7586545463
+   },
+   {
+    "q": "2026Q3",
+    "rev": 50483223227,
+    "op": 15079004342,
+    "np_owner": 18429163283
    }
   ],
   "valuation": {
-   "price": 32650,
-   "mcap": 0.4261,
+   "price": 61700,
+   "mcap": 0.8052,
    "shares": 13050797,
    "total_shares": 13050797,
-   "wavg_shares": 12950382,
-   "per": 19.957,
-   "eps": 1636,
-   "pbr": 2.0835,
-   "bps": 15671,
-   "roe_ttm": 11.1,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": 20769269864,
-   "pbr_krx": 1.41,
+   "wavg_shares": 12950752,
+   "per": 19.776,
+   "eps": 3120,
+   "pbr": 3.6171,
+   "bps": 17058,
+   "roe_ttm": 20.3,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": 39958862878,
+   "ccy": "KRW",
+   "bps_src": "자체",
+   "eps_src": "공시",
+   "pbr_krx": 4.08,
    "bps_krx": 15111.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 100.0,
-   "div": 0.31
+   "div": 0.16
   }
- }
+ },
+ "textRules": 2
 }

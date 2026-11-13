@@ -1,220 +1,210 @@
 {
  "title": {
-  "ko": "밴·PG 이익 회복세, 결제인프라 확장 국면",
-  "en": "VAN-PG Profit Recovery Amid Payment Infrastructure Expansion"
+  "ko": "매출은 늘었지만 분기 이익은 엇갈린 결제 VAN 기업",
+  "en": "Revenue Rising, Quarterly Profit Mixed at a Card Payment VAN Operator"
  },
  "lead": {
-  "ko": "한국정보통신은 오프라인 밴(VAN)과 온라인 PG를 두 축으로 4개년 연속 매출 성장과 완만한 영업이익률 개선을 이어왔으며, 애플페이 확산에 따른 NFC 단말 교체 수요와 한국은행 프로젝트 한강 참여로 결제 인프라 사업 확장을 모색하고 있다.",
-  "en": "Korea Information & Communications has posted four consecutive years of revenue growth and gradual operating margin improvement on its offline VAN and online PG businesses, while seeking to expand its payment infrastructure footprint through NFC terminal replacement demand tied to Apple Pay expansion and participation in the Bank of Korea's Project Hangang."
+  "ko": "2025년 영업이익은 452억원으로 늘었으나 2026년 3분기 영업이익은 전년 동기 대비 줄었고, 매출이 늘어도 이익이 따라가지 못하는 분기가 이어지고 있다.",
+  "en": "Operating profit reached KRW 45.2 billion in 2025, but third-quarter 2026 operating profit fell year on year even as revenue rose, leaving quarterly earnings mixed."
  },
  "keypoints": [
   {
-   "ko": "연간 매출은 2022년 5,954억원에서 2025년 8,363억원으로 4개년 연속 증가했고, 영업이익률도 4.5%에서 5.4%로 개선됐다.",
-   "en": "Annual revenue rose for four straight years from KRW 595.5 billion in 2022 to KRW 836.3 billion in 2025, while the operating margin improved from 4.5% to 5.4%."
+   "ko": "2025년 매출은 8,363억원으로 전년 대비 5.7% 증가했고, 영업이익은 452억원으로 15.6% 증가했다. 다만 지배주주 순이익은 366억원으로 16.0% 감소했다.",
+   "en": "Revenue in 2025 reached KRW 836.3 billion, up 5.7% year on year, and operating profit reached KRW 45.2 billion, up 15.6%. Net profit attributable to controlling shareholders, however, fell 16.0% to KRW 36.6 billion."
   },
   {
-   "ko": "2025년 지배주주 순이익은 366억원으로 전년(436억원) 대비 감소했으며, 2025년 4분기 한 개 분기에서 영업이익률이 2%대로 크게 압축되는 마진 변동성이 나타났다.",
-   "en": "Owner-attributable net income fell to KRW 36.6 billion in 2025 from KRW 43.6 billion a year earlier, with a notable margin squeeze in the fourth quarter of 2025 when the operating margin compressed to roughly 2%."
+   "ko": "2026년 3분기 매출 2,506억원은 전년 동기 대비 14.9% 증가했지만, 영업이익 113억원은 25.5% 감소했다.",
+   "en": "Third-quarter 2026 revenue of KRW 250.6 billion rose 14.9% year on year, while operating profit of KRW 11.3 billion fell 25.5%."
   },
   {
-   "ko": "2026년 2분기 매출은 2,376억원으로 최근 5개 분기 중 최대치를 기록하며 영업이익도 전분기 대비 회복하는 흐름을 보였다.",
-   "en": "Second-quarter 2026 revenue reached KRW 237.6 billion, the highest among the last five quarters, with operating profit also recovering from the prior quarter."
+   "ko": "최근 4개 분기(2025년 4분기~2026년 3분기) 지배주주 순이익 합계는 326억원이다.",
+   "en": "Over the last four quarters, from the fourth quarter of 2025 through the third quarter of 2026, net profit attributable to controlling shareholders totaled KRW 32.6 billion."
   },
   {
-   "ko": "2025년 영업활동현금흐름은 +1,035억원으로 2024년의 -87억원에서 흑자로 전환됐고, 부채비율도 2022~2023년 60%대에서 2025년 52.6%로 낮아졌다.",
-   "en": "Operating cash flow turned positive to KRW 103.5 billion in 2025 from negative KRW 8.7 billion in 2024, while the debt ratio declined from the 60%-plus range in 2022-2023 to 52.6% in 2025."
+   "ko": "부채비율은 2022년 63.9%에서 2025년 52.6%로 낮아졌고, 2025년 말 자본총계는 3,358억원이다.",
+   "en": "The debt ratio fell from 63.9% in 2022 to 52.6% in 2025, and total equity at the end of 2025 stood at KRW 335.8 billion."
   },
   {
-   "ko": "한국은행 주도 디지털화폐 실증사업 '프로젝트 한강' 2단계에 우리은행·우리카드와 함께 참여가 확인됐으며, 신한카드·KB국민카드의 애플페이 도입 준비로 NFC 단말 교체 수요가 재부각되고 있다.",
-   "en": "The company's participation alongside Woori Bank and Woori Card in Phase 2 of the Bank of Korea's digital currency pilot 'Project Hangang' has been confirmed, while Shinhan Card and KB Kookmin Card's preparations to adopt Apple Pay are reviving NFC terminal replacement demand."
+   "ko": "사업의 중심은 결제단말기와 POS 기반의 금융VAN이며, 창업투자와 헬스케어 부문을 함께 운영한다.",
+   "en": "The core business is financial VAN built on payment terminals and POS systems, with venture investment and healthcare units operated alongside."
   }
  ],
  "business": {
-  "ko": "한국정보통신(KICC)은 1986년 설립돼 국내 최초로 신용카드 조회 서비스를 상용화한 신용카드 부가가치통신망(VAN) 사업자다. 주력 사업은 오프라인 가맹점의 카드결제 승인·중개를 담당하는 밴(VAN) 서비스와 온라인 가맹점 대상 전자지급결제대행(PG) 서비스 두 축으로 구성돼 있다. 과거 공시 기준으로 금융 밴 용역 서비스가 매출의 90%대 중반 수준을 차지했으며, 나머지는 결제단말기 판매, 창업투자, 전사자원관리(ERP) 등 정보통신 용역이 나눠 담당하는 구조다. 결제 단말기 부문에서는 신용카드 조회 단말기 '이지체크'와 포스 시스템 '이지포스' 등을 자체 개발해 공급하며, 애플페이 결제에 필요한 근거리무선통신(NFC) 기능을 탑재한 단말기로 시장의 주목을 받은 바 있다. 외국인 관광객 대상으로는 내국세 환급대행(TRS), 알리페이 바코드결제 대행(AOS) 서비스를 통해 사업을 차별화하고 있다. 국내 밴 시장은 나이스정보통신이 선두를 유지하고 있고, 한국정보통신은 그 뒤를 잇는 대형 밴사로 자리매김하고 있다. 지분 구조상 스위스계 투자사 '드 웨이(De Wey & Cie SA)'가 최대주주로, 2000년대 초 IT 버블 위기 극복 과정에서 투자자로 참여한 이후 장기간 지분을 유지해온 것으로 파악된다. 이 외에도 케이뱅크 주주 참여, 카드사와의 중금리대출 합작법인 운영 등 결제 인접 영역에서 사업 다각화를 시도해온 이력이 있다.",
-  "en": "Korea Information & Communications (KICC) was founded in 1986 as the first company in Korea to commercialize credit card verification services, and operates as a Value Added Network (VAN) provider. Its core businesses consist of two pillars: offline VAN services that handle card payment authorization and intermediation for merchants, and online Payment Gateway (PG) services for e-commerce merchants. According to past disclosures, financial VAN services accounted for the mid-90% range of total revenue, with the remainder split among payment terminal sales, venture investment, and IT services such as ERP. In the terminal business, the company develops and supplies its own devices, including the 'Easycheck' card reader and the 'Easypos' point-of-sale system, and has drawn market attention for terminals equipped with near-field communication (NFC) functionality required for Apple Pay transactions. For foreign tourists, the company differentiates itself through tax refund agency services (TRS) and Alipay barcode payment agency services (AOS). In Korea's VAN market, NICE Information & Communications holds the leading position, with KICC established as a major player following behind. In terms of ownership, Swiss investment firm De Wey & Cie SA is the largest shareholder, having maintained its stake over a long period since investing during the early-2000s IT bubble crisis. The company has also pursued diversification into adjacent payment-related areas, including a shareholding in K-Bank and a joint venture with card companies operating a mid-rate lending business based on alternative credit scoring."
+  "ko": "한국정보통신은 1986년에 설립되어 1998년 코스닥에 상장했으며, 결제단말기와 POS 시스템을 기반으로 카드사와 은행에 연결되는 금융VAN 서비스를 제공한다. 사업부문은 신용카드 단말기를 공급해 카드 조회 서비스를 하는 금융VAN부문, 창업·벤처 투자와 중소기업창업투자조합 자금을 관리하는 중소기업창업투자부문, 건강관리 정보를 제공하는 헬스케어부문으로 나뉜다. 회사 실적 설명에서 가장 먼저 언급되는 축은 금융VAN부문이며, 신용카드 이용금액 증가와 핀테크사업 활성화가 최근 개선의 배경으로 꼽힌다. 금융VAN의 주요 서비스로는 VAN, PG, TRS, AOS 등이 있고 결제단말기 상품 판매와 용역이 함께 매출을 이룬다. 소프트웨어 쪽에서는 통합 솔루션 이지포스가 가맹점 본부 관리, 수발주, 로열티 정산, 결제 데이터 분석을 함께 제공한다. 2025년 2월에는 카카오페이 DQR 서비스를 열었고, 같은 해 6월에는 QR코드 기반 테이블오더 이지QR을 내놓았다. 고객은 카드 가맹점, 특히 소상공인 가맹점이 중심이며, 2025년 7월에는 카카오페이 등 결제·POS 업체 여러 곳과 테이블오더 확산을 위한 업무협약을 맺었다. 경쟁 측면에서는 간편결제 플랫폼이 QR과 가맹점 서비스 영역을 넓히면서 협력과 경쟁이 함께 나타나는 구도다. 2026년 6월에는 서울투자 기후대응 벤처펀드 200억원 결성이 회사 연혁에 기재되어 있다.",
+  "en": "KoreaInformation&Communication was founded in 1986 and listed on KOSDAQ in 1998. It provides financial VAN services that connect card companies and banks, built on payment terminals and POS systems. The company runs three units: a financial VAN unit that supplies credit card terminals and card inquiry services, a venture capital unit that invests in startups and manages funds for SME venture investment partnerships, and a healthcare unit that provides health management information. Management commentary cites the financial VAN unit first, with rising credit card transaction volume and expansion of fintech activity behind the recent improvement. Its main financial VAN services include VAN, PG, TRS and AOS, and terminal sales and services make up the revenue. On the software side, the integrated solution EasyPos covers franchise head office management, ordering, royalty settlement and payment data analysis. In February 2025 the company launched the kakaopay DQR service, and in June 2025 it launched EasyQR, a QR-based table ordering service. Its customers are mainly card merchants, especially small business merchants. In July 2025 it signed business agreements with kakaopay and several other payment and POS providers to expand table ordering. Competition takes the form of both cooperation and rivalry, as simple payment platforms widen their QR and merchant service reach. In June 2026 a KRW 20 billion climate response venture fund was formed, as recorded in the company history."
  },
  "earnings": {
-  "ko": "연간 실적을 보면 매출액은 2022년 5,954억원에서 2023년 7,251억원, 2024년 7,910억원, 2025년 8,363억원으로 4개년 연속 증가했다. 같은 기간 영업이익은 270억원→357억원→391억원→452억원으로 늘었고, 영업이익률도 4.5%→4.9%→4.9%→5.4%로 완만한 개선 흐름을 보였다. 다만 지배주주 순이익은 2024년 436억원에서 2025년 366억원으로 오히려 감소해, 영업이익 증가와 순이익 흐름이 엇갈리는 모습이 나타났고 이에 따라 주당순이익도 전년보다 낮아졌다. 분기별로는 2025년 2분기 매출 2,048억원·영업이익 140억원(영업이익률 약 6.8%)에서 3분기 매출 2,182억원·영업이익 151억원(약 6.9%)으로 개선됐으나, 4분기에는 매출 2,209억원에 영업이익이 60억원으로 급격히 낮아지며 영업이익률이 2%대 후반으로 압축되는 한 개 분기의 마진 압박이 확인됐다. 이어 2026년 1분기 영업이익은 110억원(약 5.1%)으로 회복했고, 2분기에는 매출이 2,376억원으로 다섯 개 분기 중 최대치를 기록하며 영업이익도 119억원(약 5.0%)으로 견조한 수준을 유지했다. 현금흐름표에서는 2025년 영업활동현금흐름이 +1,035억원으로 크게 개선됐는데, 이는 2024년 -87억원의 음(-)의 흐름에서 뒤집힌 결과다. 재무구조 역시 부채비율이 2022년 63.9%, 2023년 63.2%에서 2024년 51.0%, 2025년 52.6%로 점차 안정되는 모습을 보이고 있다. 전반적으로 외형 성장과 마진 개선이라는 장기 흐름 속에서도 분기별 이익 변동성이 상존하는 것이 특징적이다.",
-  "en": "Annual revenue grew for four consecutive years, from KRW 595.5 billion in 2022 to KRW 725.1 billion in 2023, KRW 791.0 billion in 2024, and KRW 836.3 billion in 2025. Over the same period, operating profit rose from KRW 27.0 billion to KRW 35.7 billion, KRW 39.1 billion, and KRW 45.2 billion, with the operating margin gradually improving from 4.5% to 4.9%, 4.9%, and 5.4%. However, owner-attributable net income actually declined to KRW 36.6 billion in 2025 from KRW 43.6 billion in 2024, diverging from the operating profit trend, and earnings per share also fell accordingly from the prior year. On a quarterly basis, revenue of KRW 204.8 billion and operating profit of KRW 14.0 billion (margin of about 6.8%) in the second quarter of 2025 improved to revenue of KRW 218.2 billion and operating profit of KRW 15.1 billion (about 6.9%) in the third quarter, but the fourth quarter saw revenue of KRW 220.9 billion accompanied by a sharp drop in operating profit to KRW 6.0 billion, compressing the margin to the high-2% range in a single-quarter margin squeeze. Operating profit then recovered to KRW 11.0 billion (about 5.1%) in the first quarter of 2026, and second-quarter revenue reached KRW 237.6 billion, the highest of the five quarters, with operating profit holding at a solid KRW 11.9 billion (about 5.0%). On the cash flow statement, operating cash flow improved significantly to positive KRW 103.5 billion in 2025, reversing from negative KRW 8.7 billion in 2024. The capital structure also stabilized, with the debt ratio easing from 63.9% in 2022 and 63.2% in 2023 to 51.0% in 2024 and 52.6% in 2025. Overall, while the long-term trend shows top-line growth and margin improvement, quarter-to-quarter earnings volatility remains a notable characteristic."
+  "ko": "연간 매출은 2022년 5,955억원에서 2023년 7,251억원(전년 대비 21.8% 증가), 2024년 7,910억원(9.1% 증가), 2025년 8,363억원(5.7% 증가)으로 늘었다. 영업이익은 2022년 270억원에서 2023년 357억원, 2024년 391억원, 2025년 452억원으로 2023년부터 2025년까지 3년 연속 증가했다. 영업이익률은 2022년 4.5%에서 2025년 5.4%로 올라 매출 증가 폭보다 이익 증가 폭이 컸다. 지배주주 순이익은 2024년 436억원으로 가장 컸고 2025년에는 366억원으로 16.0% 줄었다. 같은 해 당기순이익(비지배지분 포함)도 366억원이어서 2025년에는 두 지표가 같은 값으로 나타났다. 영업이익은 늘었는데 순이익이 줄어든 2025년은 영업 밖 손익과 세금 등 영업이익 아래 항목의 영향을 함께 살펴볼 해다. 영업활동 현금흐름은 2022년 -57.3억원, 2023년 277억원, 2024년 -87억원, 2025년 1,035억원으로 연도별 차이가 컸다. 부채비율은 2022년 63.9%와 2023년 63.2%에서 2024년 51.0%로 내려갔고 2025년에는 52.6%였다. 2025년 말 자본총계는 3,358억원, 부채총계는 1,767억원이다. 분기로 보면 2025년 3분기 매출 2,182억원과 영업이익 151억원에서 4분기에는 매출 2,209억원(전 분기 대비 1.2% 증가)에도 영업이익 59.8억원으로 60.5% 줄었고, 지배주주 순이익은 46.1억원으로 63.2% 감소했다. 2026년 1분기 영업이익은 110억원(전 분기 대비 83.3% 증가)으로 회복된 뒤 2분기 119억원(9.0% 증가), 3분기 113억원(5.6% 감소)으로 100억원대를 이어 갔다. 2026년 3분기 매출 2,506억원은 전년 동기 대비 14.9% 증가했으나 영업이익은 25.5% 감소했고, 지배주주 순이익 91.3억원은 27.1% 감소했다.",
+  "en": "Annual revenue rose from KRW 595.5 billion in 2022 to KRW 725.1 billion in 2023 (up 21.8% year on year), KRW 791 billion in 2024 (up 9.1%) and KRW 836.3 billion in 2025 (up 5.7%). Operating profit rose from KRW 27 billion in 2022 to KRW 35.7 billion in 2023, KRW 39.1 billion in 2024 and KRW 45.2 billion in 2025, increasing for three consecutive years from 2023 through 2025. The operating margin climbed from 4.5% in 2022 to 5.4% in 2025, so profit grew faster than revenue. Net profit attributable to controlling shareholders peaked at KRW 43.6 billion in 2024 and fell 16.0% to KRW 36.6 billion in 2025. Net profit including non-controlling interests was also KRW 36.6 billion in 2025, so both measures moved in the same direction that year. In 2025 operating profit rose while net profit fell, which points to items below operating profit, such as non-operating gains and losses and taxes, as the area to examine. Operating cash flow was KRW -5.73 billion in 2022, KRW 27.7 billion in 2023, KRW -8.7 billion in 2024 and KRW 103.5 billion in 2025, with large swings from year to year. The debt ratio fell from 63.9% in 2022 and 63.2% in 2023 to 51.0% in 2024, and stood at 52.6% in 2025. At the end of 2025, total equity was KRW 335.8 billion, all of it attributable to controlling shareholders, and total liabilities were KRW 176.7 billion. Quarterly results were volatile. Operating profit of KRW 15.1 billion in the third quarter of 2025 fell to KRW 5.98 billion in the fourth quarter, down 60.5% from the prior quarter, while net profit attributable to controlling shareholders fell 63.2% to KRW 4.61 billion. Operating profit recovered to KRW 11 billion in the first quarter of 2026, up 83.3% from the prior quarter, then reached KRW 11.9 billion in the second quarter (up 9.0%) and KRW 11.3 billion in the third quarter (down 5.6%). Third-quarter 2026 revenue of KRW 250.6 billion rose 14.9% year on year, but operating profit fell 25.5% and net profit attributable to controlling shareholders of KRW 9.13 billion fell 27.1%."
  },
  "industry": {
-  "ko": "국내 결제 인프라 산업은 오프라인 카드결제의 밴 수수료와 온라인 전자상거래의 PG 수수료가 두 축을 이루며, 최근에는 애플페이 확산이 산업 구도를 흔드는 변수로 부각되고 있다. 국내 EMV 규격 NFC 단말기 보급률은 약 10%에 그쳐 애플페이 사용처 확대에 제약이 돼왔으나, 카드업계 1위와 3위인 신한카드와 KB국민카드가 애플페이를 준비하면서 결제 시장에 지각변동이 예상되는 분위기다. 이 과정에서 토스와 네이버페이가 각각 '토스플레이스', '커넥트' 등 자체 오프라인 결제 단말기 사업에 뛰어들며 NFC 인프라 확산의 촉매 역할을 하고 있다. 업계에서는 애플페이 사용자가 늘어날수록 밴사가 소상공인 가맹점을 대상으로 NFC 단말기 교체 영업에 나설 유인이 커진다는 관측도 나온다. 다만 밴 업계는 과거부터 카드사들이 매출전표 매입 업무를 직접 처리하거나 간소화하는 방식으로 밴 수수료를 줄여온 구조적 압박에 노출돼왔다는 지적이 꾸준히 제기돼왔고, 일부 대형 가맹점이 리베이트 금지 이후 직접 밴사업에 뛰어드는 사례도 있어 기존 대형 밴사의 시장 지배력이 점차 희석되는 흐름도 병행되고 있다. PG 부문에서는 이커머스 성장과 함께 시장이 지속적으로 커지고 있으나 KG이니시스, 토스페이먼츠, 네이버파이낸셜, 카카오페이 등 경쟁자가 다수 존재해 경쟁 심화가 상수로 자리잡고 있다. 이 같은 구도 속에서 한국정보통신은 나이스정보통신에 이어 시장 2위권의 지위를 유지하며 밴·PG·단말기 사업을 병행하고 있다.",
-  "en": "Korea's payment infrastructure industry is built on two pillars—VAN fees from offline card payments and PG fees from online e-commerce—and Apple Pay's expansion has recently emerged as a variable reshaping the competitive landscape. Domestic EMV-standard NFC terminal penetration stands at only about 10%, which has constrained the expansion of Apple Pay usage, but preparations by Shinhan Card and KB Kookmin Card, the industry's No. 1 and No. 3 card issuers, to adopt Apple Pay are expected to shake up the payment market. In this process, Toss and Naver Pay have each entered the offline payment terminal business with their own devices—'Toss Place' and 'Connect,' respectively—acting as catalysts for NFC infrastructure expansion. Industry observers note that as Apple Pay users grow, VAN companies have a greater incentive to actively market NFC terminal replacements to small merchants. That said, the VAN industry has long faced structural pressure as card companies have reduced VAN fees by handling sales-slip purchasing directly or simplifying the process, and some large merchants have begun operating their own VAN businesses following the ban on rebates, gradually diluting the market power of established large VAN operators. In the PG segment, the market continues to expand alongside e-commerce growth, but competition remains a constant given the presence of multiple rivals such as KG Inicis, Toss Payments, Naver Financial, and Kakao Pay. Within this landscape, Korea Information & Communications maintains a position as the second-largest operator behind NICE Information & Communications, running its VAN, PG, and terminal businesses in parallel."
+  "ko": "금융VAN 시장은 카드 결제 가능 범위가 넓어지고 신용카드 이용금액이 늘면서 성장하는 구조다. 회사 측 설명에 따르면 모바일 결제서비스가 확대되는 가운데도 신용카드 결제 건수는 꾸준히 늘고 있다. 간편결제와 비대면 소비 확대는 결제 인프라 수요를 키우는 요인으로 언론에서 자주 언급된다. 2026년 4월 보도에서는 온라인 쇼핑과 구독형 서비스 확대, 해외 결제 인프라 확장이 업계 투자심리를 자극한다고 평가했다. 사이클 위치로 보면 카드 결제 기반은 이미 자리 잡은 상태이고, QR 결제와 테이블오더처럼 가맹점 접점을 넓히는 신규 서비스가 성장 축으로 떠오른 단계로 볼 수 있다. 정보통신산업 전체 흐름은 다르다. 2026년 상반기 ICT 수출은 AI 서버 수요에 따른 반도체와 SSD 증가가 주도했고, 이는 결제 단말과 VAN 사업과 직접 연결되지 않는다. 경쟁 구도에서 간편결제 플랫폼은 협력 상대이면서 동시에 QR 결제와 가맹점 서비스 영역의 경쟁자가 된다. 2025년 7월 카카오페이 등과 맺은 테이블오더 업무협약은 이런 협력 구도의 사례다. 회사의 포지션은 단말과 VAN·PG를 묶은 결제 인프라에 창업투자와 헬스케어를 더한 구조로, 결제 인프라 일변도의 업체와 비교하면 사업 축이 넓다. 시장 성장이 회사 이익 증가로 이어지는지는 수수료 구조와 제휴 조건에 따라 달라진다.",
+  "en": "The financial VAN market grows as the range of places accepting card payments widens and credit card transaction volume rises. According to company commentary, the number of credit card payments keeps increasing even as mobile payment services expand. Simple payments and the spread of non-face-to-face consumption are frequently cited in the press as drivers of demand for payment infrastructure. An April 2026 report said that expansion of online shopping and subscription services, along with overseas payment infrastructure, is stimulating investor sentiment across the sector. In terms of cycle position, the card payment base is already established, and new services that widen merchant touchpoints, such as QR payments and table ordering, appear to be the emerging growth axis. The broader ICT industry follows a different path. Exports in the first half of 2026 were led by semiconductors and SSDs driven by AI server demand, which are not directly linked to terminal and VAN businesses. On competition, simple payment platforms are both partners and rivals in QR payments and merchant services. The July 2025 table ordering agreement with kakaopay illustrates this cooperative side. The company combines terminals, VAN and PG payment infrastructure with venture investment and healthcare, which gives it a broader set of business lines than payment-only peers. Whether market growth converts into profit growth depends on fee structures and partnership terms."
  },
  "outlook": {
-  "ko": "한국은행이 주도하는 디지털화폐(CBDC·예금토큰) 실증사업인 '프로젝트 한강'은 2026년 3월 한국은행이 2단계 사업의 전면 추진을 발표했으며, 이르면 2026년 8월경 KB국민·신한·하나·우리·NH농협·IBK기업·부산·경남·iM뱅크 등 9개 은행이 참여하는 형태로 시작될 예정이다. 이 가운데 우리은행은 우리카드, PG사인 KICC(한국정보통신)와 함께 2단계 사업에 참여해 오프라인 결제 중심으로 사업을 추진할 계획인 것으로 확인됐다. 이는 한국정보통신이 기존 밴·PG 인프라를 CBDC·예금토큰 기반의 차세대 결제 실증사업으로 확장하는 계기가 될 수 있다. 한편 신한카드와 KB국민카드가 애플페이 도입을 준비하는 가운데, 밴사들이 소상공인 가맹점을 대상으로 NFC 단말기 교체 영업을 확대할 유인이 커지고 있어, NFC 결제 단말기를 자체 개발해 공급해온 한국정보통신의 하드웨어 역량이 매출 접점 확대에 기여할 수 있는 여건이 조성되고 있다. PG 부문에서는 이커머스 거래 확대가 지속되는 만큼 온라인 결제대행 수수료 매출의 완만한 성장도 함께 기대할 수 있는 구간이다. 다만 프로젝트 한강의 실제 사용자 확산 속도, 애플페이의 실질 도입 시점, 카드사의 밴 수수료 정책 변화 등은 아직 확정되지 않은 변수로 남아 있어 향후 공시와 업계 뉴스를 통한 확인이 필요하다.",
-  "en": "Project Hangang, the Bank of Korea-led digital currency (CBDC/deposit token) pilot, saw the central bank announce a full-scale push for Phase 2 in March 2026, with the program expected to launch as early as around August 2026 involving nine participating banks including KB Kookmin, Shinhan, Hana, Woori, NH Nonghyup, IBK, Busan, Gyeongnam, and iM Bank. Among these, it has been confirmed that Woori Bank plans to participate in Phase 2 together with Woori Card and PG company KICC (Korea Information & Communications), focusing on offline payment use cases. This could serve as an opportunity for the company to extend its existing VAN and PG infrastructure into next-generation CBDC and deposit-token-based payment pilots. Separately, as Shinhan Card and KB Kookmin Card prepare to adopt Apple Pay, VAN operators have a growing incentive to expand NFC terminal replacement sales targeting small merchants, creating conditions in which the company's in-house NFC terminal hardware capability could contribute to expanding its revenue touchpoints. In the PG segment, continued e-commerce transaction growth also suggests a window for gradual growth in online payment agency fee revenue. However, variables such as the actual pace of Project Hangang user adoption, the real-world timing of Apple Pay's broader rollout, and potential changes to card companies' VAN fee policies remain unconfirmed and will require ongoing verification through future disclosures and industry news."
+  "ko": "가장 최근 흐름은 매출이 늘고 이익이 줄어드는 방향이 엇갈리는 것이다. 2026년 2분기와 3분기 매출은 연속으로 늘었지만 영업이익은 100억원대 수준에 머물러 있다. 신규 사업으로는 2025년 12월 ㈜유베이스와 AI 라우팅봇 솔루션 구축을 위한 업무협약을 맺었다. 2025년 2월에는 카카오페이 DQR 서비스가 열렸고, 2025년 6월에는 이지QR 테이블오더가 출시되어 QR 결제 접점이 넓어졌다. 2026년 6월에는 서울투자 기후대응 벤처펀드 200억원이 결성되었다고 회사 연혁에 기재되어 있다. 2026년 4월 데일리머니 보도에 따르면 한국정보통신은 한국은행과 9개 시중은행이 참여하는 프로젝트 한강 2단계에서 핵심 결제 인프라 파트너로 선정되었다. 이 내용은 언론 보도에 근거하므로 사업 규모와 수익 반영 시기는 회사 공시로 확인해야 한다. 같은 보도가 제시한 성장률 전망은 공시 수치와 맞지 않아 DART 정기보고서를 기준으로 읽는 것이 맞다. 다음 확인 지점은 2026년 연간 실적이다. 2026년 사업보고서는 2027년 3월 31일까지 제출해야 하므로 2026년 4분기 영업이익이 2025년 4분기 59.8억원 저점과 비교해 어떻게 움직였는지, 연간 영업이익이 2025년 452억원 대비 어떤 수준인지가 핵심이다. 2027년 1분기 분기보고서는 2027년 5월 15일까지 제출해야 하며, 2026년 1분기 영업이익 110억원과 직접 비교할 수 있다. 제휴와 신사업이 실적에 반영되는지는 분기 영업이익률 추이로 확인하는 것이 된다.",
+  "en": "The most recent pattern is revenue growth alongside falling operating profit. Revenue rose in both the second and third quarters of 2026, while operating profit has stayed in the KRW 10 billion range. On new businesses, the company signed an agreement with UBase in December 2025 to build an AI routing bot solution. The kakaopay DQR service opened in February 2025, and the EasyQR table ordering service launched in June 2025, widening its QR payment touchpoints. A KRW 20 billion climate response venture fund was formed in June 2026, according to the company history. An April 2026 press report stated that the company was selected as a core payment infrastructure partner for Project Hangang Phase 2, which involves the Bank of Korea and nine commercial banks. Because this rests on press reporting, its business scale and timing of profit contribution need to be checked against company disclosures. Growth forecasts in the same report do not match the disclosed figures, so DART periodic reports should be the reference. The next checkpoint is full-year 2026 results. The 2026 annual business report must be filed by March 31, 2027, which will show whether fourth-quarter 2026 operating profit recovers from the KRW 5.98 billion low in the fourth quarter of 2025, and where full-year operating profit lands against KRW 45.2 billion in 2025. The first-quarter 2027 quarterly report is due by May 15, 2027 and can be compared directly with KRW 11 billion of operating profit in the first quarter of 2026. Whether partnerships and new businesses feed into results will show up in the quarterly operating margin trend."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 과거 5년간 형성됐던 평균 거래배수보다 낮은 구간에서 움직이고 있으며, 순자산가치 대비로도 할인된 수준에서 거래되는 것으로 나타난다. 배당 측면에서는 최근 수년간 매년 현금배당을 지급해온 이력이 있어 주주환원 정책이 꾸준히 유지돼 온 편이다. 이익 측면에서는 2022년 이후 영업이익률이 완만하게 개선돼왔으나 2025년 지배주주 순이익은 전년 대비 감소하는 등 분기별로 이익 변동성이 존재해, 시장에서 부여하는 거래배수도 이 같은 변동성을 함께 반영하고 있는 것으로 풀이된다. 결제 인프라 확장(프로젝트 한강, 애플페이 NFC 수요)과 경쟁 심화(대형 플랫폼사의 진입) 요인이 동시에 존재하는 만큼, 밸류에이션 판단은 이 두 축의 상대적 무게를 어떻게 보느냐에 따라 달라질 수 있다.",
-  "en": "The current share price trades in a range below the average multiple observed over the past five years, and also appears to trade at a discount relative to net asset value. On the dividend front, the company has a track record of paying annual cash dividends in recent years, suggesting a consistently maintained shareholder return policy. On the earnings side, while the operating margin has improved gradually since 2022, owner-attributable net income declined year-on-year in 2025, reflecting quarter-to-quarter earnings volatility that the market's trading multiple appears to incorporate as well. Given the simultaneous presence of payment infrastructure expansion factors (Project Hangang, Apple Pay-driven NFC demand) and intensifying competition factors (entry of large platform operators), valuation judgments may differ depending on how these two forces are weighted relative to each other."
+  "ko": "밸류에이션은 이익 기준 배수와 순자산 기준 배수를 나누어 보는 것이 일반적이다. 이익 기준 배수는 동종 업종 평균 배수를 밑도는 수준이다. 다만 2025년 지배주주 순이익이 2024년보다 16.0% 줄었고 2026년 3분기 순이익도 전년 동기보다 27.1% 줄어, 주가가 같더라도 이익 기준 배수는 이익 감소분만큼 높게 읽히는 구조다. 순자산 기준으로는 주가순자산비율이 1배를 밑도는 구간에 있다. 자본총계 전액이 지배주주 지분으로 구성되어 있어 순자산 대비 주가 수준은 지배주주 귀속 자본을 기준으로 읽힌다. 이익의 다년 흐름을 보면 지배주주 순이익은 2022년 218억원에서 2024년 436억원으로 회복된 뒤 2025년에 조정을 받았다. 현재 배수는 이 이익 수준 위에서 형성된 값이다. 현금배당을 지급하는 구조이므로 배당은 주가 수준과 함께 비교하는 지표로 쓰인다. 배당수익률은 주가 변동에 따라 바뀌므로 과거 범위와 업종 평균 대비 위치로 살피는 편이 적절하다. 이익 기준 배수가 낮게 보이는 것과 순자산 대비 할인 구간이 겹치는 것은, 시장이 이익의 지속성을 어떻게 보는지에 따라 해석이 달라지는 지점이다.",
+  "en": "Valuation is usually read through earnings-based and book-value-based multiples. The earnings-based multiple sits below the average multiple of the sector. However, net profit attributable to controlling shareholders fell 16.0% in 2025 from 2024, and third-quarter 2026 net profit fell 27.1% year on year, so at the same share price the earnings multiple reads higher as profit declines. On a book-value basis, the price-to-book ratio is below 1x. Total equity is entirely attributable to controlling shareholders, so price relative to net assets is read against that attributable capital. Looking at multi-year earnings, net profit attributable to controlling shareholders recovered from KRW 21.8 billion in 2022 to KRW 43.6 billion in 2024 before adjusting in 2025. Current multiples are formed on top of this earnings level. The company pays cash dividends, so the dividend yield is compared alongside the share price level, and because it moves with the share price, it is more meaningful against historical ranges and the sector average. The gap between a low earnings multiple and a price below book value depends on how the market views the durability of earnings."
  },
  "bull": [
   {
    "title": {
-    "ko": "결제 인프라 확장 참여",
-    "en": "Participation in Payment Infrastructure Expansion"
+    "ko": "연간 이익 증가 흐름",
+    "en": "Three Years of Rising Operating Profit"
    },
    "body": {
-    "ko": "한국정보통신은 한국은행 주도 디지털화폐 실증사업 '프로젝트 한강' 2단계에 우리은행·우리카드와 함께 참여가 확인됐다. 애플페이 도입을 준비하는 신한카드·KB국민카드로 인해 NFC 단말기 교체 수요도 재부각되고 있다. 자체 개발한 NFC 단말기 공급 역량을 갖춘 만큼 이 같은 흐름에서 접점을 넓힐 여건이 조성돼 있다.",
-    "en": "The company's participation in Phase 2 of the Bank of Korea-led digital currency pilot 'Project Hangang,' alongside Woori Bank and Woori Card, has been confirmed. NFC terminal replacement demand is also being revived by Shinhan Card and KB Kookmin Card's preparations to adopt Apple Pay. With in-house NFC terminal development and supply capability, conditions exist for the company to broaden its touchpoints amid these trends."
+    "ko": "영업이익은 2023년부터 2025년까지 3년 연속 늘었고, 2025년 452억원은 2022년 270억원보다 크다. 영업이익률도 2022년 4.5%에서 2025년 5.4%로 올라 매출 증가보다 이익률 개선이 두드러졌다. 강세 측은 이 흐름이 이익률 개선으로 이어질 수 있다는 점을 근거로 든다.",
+    "en": "Operating profit rose for three straight years from 2023 through 2025, and the KRW 45.2 billion in 2025 exceeds the KRW 27 billion of 2022. The operating margin improved from 4.5% to 5.4%, so margin gains stood out more than revenue growth. Bulls point to this margin improvement as the basis for further profit expansion."
    }
   },
   {
    "title": {
-    "ko": "이익구조 개선과 재무건전성",
-    "en": "Improving Earnings Structure and Financial Soundness"
+    "ko": "분기 이익의 저점 통과",
+    "en": "Quarterly Profit Has Passed Its Low"
    },
    "body": {
-    "ko": "영업이익률은 2022년 4.5%에서 2025년 5.4%로 완만하게 개선됐다. 영업활동현금흐름은 2024년 음(-)에서 2025년 +1,035억원으로 흑자 전환했다. 부채비율도 2022~2023년 60%대에서 2025년 52.6%로 낮아지며 재무 안정성이 개선되는 흐름을 보였다.",
-    "en": "The operating margin gradually improved from 4.5% in 2022 to 5.4% in 2025. Operating cash flow turned positive to KRW 103.5 billion in 2025 from a negative figure in 2024. The debt ratio also declined from the 60%-plus range in 2022-2023 to 52.6% in 2025, reflecting improving financial stability."
+    "ko": "2025년 4분기 영업이익 59.8억원을 저점으로 2026년 1분기 110억원, 2분기 119억원으로 회복됐다. 2026년 3분기에도 113억원을 기록해 세 분기 연속 100억원대를 유지했다. 매출도 2026년 2분기와 3분기 두 분기 연속 늘었다.",
+    "en": "Operating profit recovered from KRW 5.98 billion in the fourth quarter of 2025 to KRW 11 billion in the first quarter of 2026 and KRW 11.9 billion in the second quarter. The third quarter printed KRW 11.3 billion, keeping profit in the KRW 10 billion range for three straight quarters. Revenue also rose in both the second and third quarters of 2026."
    }
   },
   {
    "title": {
-    "ko": "매출 성장의 지속성",
-    "en": "Sustained Revenue Growth"
+    "ko": "디지털 결제 접점 확장과 재무 안정",
+    "en": "Wider Digital Payment Touchpoints and a Steadier Balance Sheet"
    },
    "body": {
-    "ko": "연간 매출은 2022년부터 2025년까지 4개년 연속 증가하며 5,954억원에서 8,363억원으로 확대됐다. 2026년 2분기 매출은 2,376억원으로 최근 5개 분기 중 최대치를 기록했다. 밴·PG·단말기 사업을 병행하는 사업 구조가 안정적인 외형 성장의 기반이 되고 있다.",
-    "en": "Annual revenue grew for four consecutive years from 2022 to 2025, expanding from KRW 595.5 billion to KRW 836.3 billion. Second-quarter 2026 revenue reached KRW 237.6 billion, the highest among the last five quarters. The business structure combining VAN, PG, and terminal operations underpins stable top-line growth."
+    "ko": "2025년 2월 카카오페이 DQR과 2025년 6월 이지QR 테이블오더로 QR 결제 접점을 넓혔다. 부채비율은 2022년 63.9%에서 2025년 52.6%로 낮아졌고, 2025년 영업활동 현금흐름은 1,035억원이었다. 보도에 따르면 프로젝트 한강 2단계 핵심 결제 인프라 파트너로 선정되었다는 소식도 있다.",
+    "en": "The kakaopay DQR service in February 2025 and the EasyQR table ordering service in June 2025 widened QR payment touchpoints. The debt ratio fell from 63.9% in 2022 to 52.6% in 2025, and operating cash flow in 2025 was KRW 103.5 billion. Press reports also say the company was selected as a core payment infrastructure partner for Project Hangang Phase 2."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "분기별 이익 변동성",
-    "en": "Quarter-to-Quarter Earnings Volatility"
+    "ko": "매출 증가와 이익 감소의 엇갈림",
+    "en": "Revenue Growth Not Reaching Profit"
    },
    "body": {
-    "ko": "2025년 4분기 영업이익률은 2%대 후반으로 다른 분기(5~7%대) 대비 크게 압축된 바 있다. 지배주주 순이익도 2025년 366억원으로 2024년(436억원)보다 감소했다. 이 같은 이익 변동성은 향후 분기 실적을 가늠하기 어렵게 만드는 요인이다.",
-    "en": "The fourth-quarter 2025 operating margin compressed to the high-2% range, sharply below other quarters in the 5-7% range. Owner-attributable net income also declined to KRW 36.6 billion in 2025 from KRW 43.6 billion in 2024. This earnings volatility makes it more difficult to project future quarterly results."
+    "ko": "2026년 3분기 매출 2,506억원은 전년 동기 대비 14.9% 늘었지만 영업이익 113억원은 25.5% 줄었다. 지배주주 순이익 91.3억원도 27.1% 감소했다. 외형 성장이 이익으로 이어지지 않은 분기가 나타난 셈이다.",
+    "en": "Third-quarter 2026 revenue of KRW 250.6 billion rose 14.9% year on year, but operating profit of KRW 11.3 billion fell 25.5%. Net profit attributable to controlling shareholders of KRW 9.13 billion fell 27.1%. The quarter shows top-line growth that did not carry through to profit."
    }
   },
   {
    "title": {
-    "ko": "밴 수수료 구조적 압박",
-    "en": "Structural Pressure on VAN Fees"
+    "ko": "2025년 이익 감소와 분기 변동성",
+    "en": "2025 Profit Decline and Quarterly Volatility"
    },
    "body": {
-    "ko": "카드사들이 매출전표 매입 업무를 직접 처리하거나 간소화하며 밴 수수료를 줄여온 흐름이 오랫동안 지적돼왔다. 일부 대형 가맹점이 자체 밴사업에 나서는 사례도 있어 기존 대형 밴사의 시장 지배력이 희석될 가능성이 있다. 이는 밴 사업의 장기 수익성에 부담이 될 수 있는 구조적 요인이다.",
-    "en": "A long-standing structural trend has seen card companies reduce VAN fees by handling sales-slip purchasing directly or simplifying the process. Some large merchants have also begun operating their own VAN businesses, which could dilute the market power of established large VAN operators. This represents a structural factor that could weigh on the long-term profitability of the VAN business."
+    "ko": "2025년 지배주주 순이익은 366억원으로 전년 대비 16.0% 줄었다. 2025년 4분기에는 영업이익이 전 분기 대비 60.5% 줄어 59.8억원을 기록했다. 연간 영업이익은 늘었지만 분기 변동이 커 실적 안정성을 두고 평가가 갈릴 수 있다.",
+    "en": "Net profit attributable to controlling shareholders fell 16.0% to KRW 36.6 billion in 2025. Operating profit in the fourth quarter of 2025 dropped 60.5% from the prior quarter to KRW 5.98 billion. Full-year operating profit rose while quarterly swings remained large, so views on earnings stability may differ."
    }
   },
   {
    "title": {
-    "ko": "대형 플랫폼과의 경쟁",
-    "en": "Competition from Large Platforms"
+    "ko": "경쟁과 수수료 구조 변화 가능성",
+    "en": "Competition and Possible Shifts in Fee Structures"
    },
    "body": {
-    "ko": "토스와 네이버페이가 자체 오프라인 결제 단말기 사업에 뛰어들며 결제 인프라 경쟁이 심화되고 있다. PG 부문에서도 KG이니시스, 카카오페이 등 다수 경쟁자가 존재한다. 대형 플랫폼사의 자본력과 사용자 기반은 기존 밴·PG 사업자에게 경쟁 압력으로 작용할 수 있다.",
-    "en": "Toss and Naver Pay have entered the offline payment terminal business with their own devices, intensifying competition in payment infrastructure. The PG segment also has multiple competitors including KG Inicis and Kakao Pay. The capital strength and user base of large platform operators could exert competitive pressure on established VAN and PG providers."
+    "ko": "간편결제 플랫폼이 QR과 테이블오더 영역을 넓히면 단말·VAN 사업의 수수료 구조와 협상력에 영향을 줄 수 있다. 카카오페이와의 DQR 제휴는 협력의 성격이지만 같은 영역에서 경쟁 구도를 바꾸는 변수이기도 하다. 프로젝트 한강 2단계 참여는 보도 기준이며, 사업 규모와 수익 반영 시점은 아직 공시로 제시되지 않았다.",
+    "en": "If simple payment platforms widen their reach in QR and table ordering, fee structures and bargaining power in terminal and VAN businesses could be affected. The DQR partnership with kakaopay is cooperative in nature but also a factor that could shift competition in the same space. Project Hangang Phase 2 participation rests on press reports, and its business scale and timing of profit contribution have not yet been presented in company disclosures."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "정책/규제",
-    "en": "Policy/Regulatory"
+    "ko": "실적 변동성",
+    "en": "Earnings Volatility"
    },
    "body": {
-    "ko": "밴 수수료 및 전자금융업 관련 정부 정책이 변경될 경우 수익 구조에 영향을 줄 수 있다. 과거에도 리베이트 금지 등 규제 변화가 업계 수익 배분에 영향을 미친 바 있다. 향후 결제 시장 규제 방향은 지속적으로 확인할 필요가 있다.",
-    "en": "Changes in government policy related to VAN fees or electronic financial business regulation could affect the company's revenue structure. Past regulatory changes, such as the ban on rebates, have already influenced industry profit distribution. The direction of future payment market regulation warrants ongoing monitoring."
+    "ko": "분기 영업이익은 2025년 3분기 151억원에서 4분기 59.8억원으로 떨어지는 등 변동 폭이 크다. 지배주주 순이익도 2024년 436억원에서 2025년 366억원으로 줄어 이익 기준이 흔들리는 시기가 있었다. 영업활동 현금흐름 역시 2024년 -87억원에서 2025년 1,035억원으로 연도 차이가 커 현금 창출의 일관성이 과제다.",
+    "en": "Quarterly operating profit swung from KRW 15.1 billion in the third quarter of 2025 to KRW 5.98 billion in the fourth quarter. Net profit attributable to controlling shareholders also declined from KRW 43.6 billion in 2024 to KRW 36.6 billion in 2025. Operating cash flow moved from KRW -8.7 billion in 2024 to KRW 103.5 billion in 2025, so consistency of cash generation remains a question."
    }
   },
   {
    "cat": {
-    "ko": "경쟁 심화",
-    "en": "Intensifying Competition"
+    "ko": "정책·제휴 일정",
+    "en": "Policy and Partnership Timing"
    },
    "body": {
-    "ko": "나이스정보통신 등 기존 밴사, KG이니시스 등 PG사, 그리고 토스·네이버페이·카카오페이 등 대형 플랫폼사가 동시에 결제 인프라 시장에서 경쟁하고 있다. 경쟁 심화는 수수료 단가 하락 압력으로 이어질 수 있다. 시장 점유율 변화 추이를 지속적으로 관찰할 필요가 있다.",
-    "en": "Existing VAN operators such as NICE Information & Communications, PG companies such as KG Inicis, and large platforms such as Toss, Naver Pay, and Kakao Pay are all competing simultaneously in the payment infrastructure market. Intensifying competition could lead to downward pressure on fee levels. Trends in market share changes warrant continued observation."
+    "ko": "결제 인프라 사업의 성과 시점은 카드·간편결제 제휴와 정책 일정에 따라 달라진다. 프로젝트 한강 2단계 참여는 언론 보도 기준이며, 공시로 제시된 계약 규모와 반영 시기는 아직 없다. 제휴 확대가 가맹점 수수료 구조에 미치는 영향은 분기 영업이익률 추이로 나타나므로 그 흐름을 함께 봐야 한다.",
+    "en": "The timing of results from payment infrastructure businesses depends on card and simple payment partnerships and on policy schedules. Participation in Project Hangang Phase 2 rests on press reports, and no contract size or timing of profit contribution has been disclosed. The effect of wider partnerships on merchant fee structures will appear in the quarterly operating margin trend."
    }
   },
   {
    "cat": {
-    "ko": "소비 경기",
-    "en": "Consumption Cycle"
+    "ko": "수급과 주가 변동성",
+    "en": "Share Supply and Price Volatility"
    },
    "body": {
-    "ko": "밴·PG 수익은 카드 결제거래량에 직접 연동되는 구조여서 소비 경기가 둔화될 경우 수수료 수익도 영향을 받을 수 있다. 2025년 4분기의 이익 압축 사례에서도 계절적·일회성 요인과 함께 거래 환경 변화가 영향을 미쳤을 가능성이 있다. 소비 지표 흐름을 함께 확인할 필요가 있다.",
-    "en": "Since VAN and PG revenue is directly linked to card transaction volume, a slowdown in consumption could affect fee income. The fourth-quarter 2025 earnings compression may also reflect changes in the transaction environment alongside seasonal or one-off factors. Consumption indicators warrant continued monitoring."
+    "ko": "보도에 따르면 최대주주와 특별관계자의 지분율이 높아 유통 물량이 적은 구조다. 2026년 4월 특징주 기사로 급등이 전해진 뒤에도 주가 변동 폭이 컸다. 창업투자 부문은 투자 기업의 가치 변화에 따라 손익이 달라질 수 있어 이익 변동성의 또 다른 원인이 된다.",
+    "en": "According to press reports, the stake held by the largest shareholder and related parties is high, which leaves a small free float. Share prices remained volatile after a sharp rise reported in April 2026. The venture investment unit can see gains and losses shift with the value of portfolio companies, adding another source of earnings variability."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중순",
-    "en": "Mid-November 2026"
+    "ko": "2026년 12월 31일",
+    "en": "December 31, 2026"
    },
    "what": {
-    "ko": "3분기보고서 공시를 통해 2026년 3분기 매출·영업이익률이 2025년 3분기 수준(약 6.9%)을 회복했는지 확인할 시점이다.",
-    "en": "The third-quarter 2026 report will provide a chance to check whether revenue and the operating margin have returned to third-quarter 2025 levels (around 6.9%)."
+    "ko": "2026 회계연도가 끝나는 날로, 4분기 실적이 연간 집계에 들어가는 기준점이다. 연간 영업이익이 2025년 452억원 대비 어떤 수준이 되는지는 이 뒤 사업보고서에서 확인할 지점이다.",
+    "en": "The end of fiscal 2026, the point at which fourth-quarter results enter the full-year total. Full-year operating profit compared with KRW 45.2 billion in 2025 becomes visible in the annual report that follows."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기",
-    "en": "Second half of 2026"
+    "ko": "2027년 3월 31일",
+    "en": "March 31, 2027"
    },
    "what": {
-    "ko": "프로젝트 한강 2단계 사업이 실제로 가동되는지, 한국정보통신의 참여 범위와 거래 규모가 어떻게 구체화되는지 업계 뉴스 및 공시를 통해 확인이 필요하다.",
-    "en": "It will be important to verify through industry news and disclosures whether Project Hangang Phase 2 actually launches and how the scope and transaction scale of the company's participation take shape."
+    "ko": "2026년 사업보고서 제출 기한이다. 2026년 연간 매출·영업이익·지배주주 순이익과 4분기 실적이 정기보고서로 공시되며, 2025년 4분기 영업이익 59.8억원 저점이 재현되는지가 핵심이다.",
+    "en": "The filing deadline for the 2026 annual business report. Full-year revenue, operating profit and net profit attributable to controlling shareholders, along with fourth-quarter results, will be disclosed, and the key question is whether the KRW 5.98 billion low of the fourth quarter of 2025 recurs."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 이후",
-    "en": "From the second half of 2026 onward"
+    "ko": "2027년 5월 15일",
+    "en": "May 15, 2027"
    },
    "what": {
-    "ko": "신한카드·KB국민카드의 애플페이 공식 도입 시점과 이에 따른 NFC 단말기 교체 수요 확산 여부를 확인할 필요가 있다.",
-    "en": "The official launch timing of Apple Pay by Shinhan Card and KB Kookmin Card, and whether this translates into expanded NFC terminal replacement demand, should be monitored."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 3월경",
-    "en": "Around March 2027"
-   },
-   "what": {
-    "ko": "2026년 사업보고서 및 배당 공시를 통해 연간 실적 확정치와 배당정책 지속 여부를 확인할 시점이다.",
-    "en": "The FY2026 annual report and dividend disclosure will offer a chance to confirm finalized full-year results and whether the dividend policy continues."
+    "ko": "2027년 1분기 분기보고서 제출 기한이다. 2026년 1분기 영업이익 110억원과 비교해 2026년 3분기 이후 영업이익률이 회복되는지 확인할 지점이다.",
+    "en": "The filing deadline for the first-quarter 2027 quarterly report. It is the point to compare against KRW 11 billion of operating profit in the first quarter of 2026 and check whether the operating margin recovers after the third quarter of 2026."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "한국정보통신은 밴과 PG를 두 축으로 4개년 연속 매출 성장과 완만한 영업이익률 개선을 이어왔으며, 2025년 영업활동현금흐름 흑자 전환과 부채비율 하락 등 재무구조도 안정되는 흐름을 보였다. 다만 2025년 지배주주 순이익은 영업이익 증가에도 불구하고 전년 대비 감소했고, 2025년 4분기에는 영업이익률이 2%대로 급격히 압축되는 등 분기별 이익 변동성이 상존한다. 성장 측면에서는 애플페이 확산에 따른 NFC 단말기 교체 수요와 한국은행 프로젝트 한강 2단계 참여가 새로운 사업 기회로 부각되고 있다. 반면 카드사의 밴 수수료 축소 압박, 대형 가맹점의 자체 밴사업 진출, 토스·네이버페이 등 대형 플랫폼사의 결제 인프라 진입은 구조적 경쟁 압력으로 남아 있다. 밸류에이션은 과거 평균 거래배수 대비 낮은 구간에서 형성돼 있고 순자산가치 대비로도 할인된 수준에서 거래되는 것으로 나타나지만, 이는 이익 변동성과 경쟁 구도를 동시에 반영한 결과로 해석할 수 있다. 향후 분기 실적과 프로젝트 한강·애플페이 관련 진행 상황을 확인하는 것이 판단의 핵심 변수가 될 것으로 보인다.",
-   "en": "Korea Information & Communications has sustained four consecutive years of revenue growth and gradual operating margin improvement on its VAN and PG businesses, while its financial structure has also stabilized, marked by a turn to positive operating cash flow and a lower debt ratio in 2025. However, owner-attributable net income declined year-on-year in 2025 despite higher operating profit, and the fourth quarter of 2025 saw the operating margin compress sharply into the low single digits, underscoring persistent quarter-to-quarter earnings volatility. On the growth side, NFC terminal replacement demand tied to Apple Pay expansion and participation in Phase 2 of the Bank of Korea's Project Hangang have emerged as new business opportunities. On the other hand, pressure from card companies to reduce VAN fees, large merchants entering the VAN business directly, and the entry of large platforms such as Toss and Naver Pay into payment infrastructure remain structural competitive pressures. The valuation trades below its historical average multiple range and appears to trade at a discount to net asset value, which can be interpreted as reflecting both earnings volatility and the competitive landscape simultaneously. Tracking upcoming quarterly results and developments related to Project Hangang and Apple Pay will likely be the key variables going forward."
+   "ko": "한국정보통신은 금융VAN을 중심으로 2022년부터 2025년까지 매출과 영업이익이 늘어난 회사다. 2025년 영업이익은 452억원, 영업이익률은 5.4%로 2022년 4.5%보다 높아졌다. 다만 지배주주 순이익은 2024년 436억원에서 2025년 366억원으로 줄었고, 2026년 3분기에는 매출이 14.9% 늘었어도 영업이익이 25.5% 줄었다. 강세 요인은 세 가지다. 2025년 4분기 저점 이후 영업이익이 100억원대를 이어 갔고, 부채비율이 2022년 63.9%에서 2025년 52.6%로 낮아졌으며, 2025년 영업활동 현금흐름이 1,035억원으로 늘었다. 약세 요인도 세 가지다. 분기 이익의 변동이 크고, 매출 증가가 이익으로 이어지지 않은 2026년 3분기가 있으며, 간편결제와 POS 업계의 경쟁 구도 변화가 수수료 구조에 영향을 줄 수 있다. 프로젝트 한강 2단계 같은 기대는 아직 공시 실적으로 확인되지 않았다. 종합하면 영업 체력은 2025년 이후 개선된 쪽에 가깝지만 이익의 안정성은 추가로 확인할 대상이다. 다음 확인 지점은 2026년 사업보고서의 4분기 실적과 2027년 1분기 분기보고서다.",
+   "en": "KoreaInformation&Communication has grown revenue and operating profit from 2022 through 2025, centered on financial VAN. Operating profit reached KRW 45.2 billion in 2025, and the operating margin rose to 5.4% from 4.5% in 2022. However, net profit attributable to controlling shareholders fell from KRW 43.6 billion in 2024 to KRW 36.6 billion in 2025, and in the third quarter of 2026 operating profit fell 25.5% even as revenue rose 14.9%. Three factors support the bull case. Operating profit has stayed in the KRW 10 billion range since the low of the fourth quarter of 2025, the debt ratio fell from 63.9% in 2022 to 52.6% in 2025, and operating cash flow rose to KRW 103.5 billion in 2025. Three factors weigh on the bear case. Quarterly profit has swung widely, the third quarter of 2026 showed revenue growth that did not carry through to profit, and changes in competition among simple payment and POS providers could affect fee structures. Expectations tied to Project Hangang Phase 2 have not yet been confirmed in disclosed results. Overall, operating capacity has improved since 2025, but earnings stability still needs confirmation. The next checkpoints are the fourth-quarter results in the 2026 annual business report and the first-quarter 2027 quarterly report."
   }
  },
  "sources": [
-  "https://littlebproject.com/stock/025770",
-  "https://littlebproject.com/stock/025770/326/49394",
-  "https://markets.hankyung.com/stock/025770",
-  "https://www.investing.com/equities/korea-information-communications",
-  "https://m.thinkpool.com/item/025770",
-  "http://www.thedailymoney.com/news/articleView.html?idxno=1137884",
-  "https://itooza.com/vscore/025770",
+  "https://comp.wisereport.co.kr/company/c1020001.aspx?cmp_cd=025770&cn=",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=025770",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A025770",
+  "https://www.k5.co.kr/stock/025770",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Corp.asp?pGB=1&gicode=A025770&cID=30&MenuYn=Y&NewMenuID=102&stkGb=701",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A025770&MenuYn=Y&ReportGB=B&NewMenuID=Y&stkGb=701",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_main.asp?MenuYn=Y&NewMenuID=11&ReportGB=&amp=&amp=&amp=&amp=&amp=&amp=&amp=&cID=&gicode=A025770&pGB=1&stkGb=&strResearchYN=",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Finance.asp?pGB=1&gicode=A025770&cID=&MenuYn=Y&ReportGB=B&NewMenuID=103&stkGb=701",
   "https://www.google.com/finance/quote/025770:KOSDAQ?hl=en",
-  "https://news.dealsitetv.com/articles/121514",
-  "https://www.thebell.co.kr/free/content/ArticleView.asp?key=201803080100010690000667&lcode=00",
-  "https://www.thebell.co.kr/free/content/ArticleView.asp?key=201803050100002800000178&lcode=00",
-  "https://www.thebell.co.kr/free/content/ArticleView.asp?key=201708010100001510000081",
-  "https://www.incruit.com/company/178695/",
-  "https://www.catch.co.kr/Comp/RecruitInfo/812994",
-  "https://www.nicevan.co.kr/korean/02_business/1.html",
-  "https://thevc.kr/niceinformationcommunication",
-  "https://www.newsway.co.kr/news/view?ud=2025052812031455551",
-  "https://www.bok.or.kr/portal/bbs/B0000502/view.do?menuNo=201265&nttId=10090447"
+  "http://www.thedailymoney.com/news/articleView.html?idxno=1137884",
+  "https://www.koit.co.kr/news/articleView.html?idxno=209642",
+  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=446947",
+  "https://www.motir.go.kr/kor/article/ATCLe0854704d/172023/view",
+  "https://kici.re.kr/page/board/kici-news.html",
+  "https://hellot.net/news/article.html?no=116297",
+  "https://m.news.nate.com/view/20260814n20302",
+  "https://www.kici.re.kr/",
+  "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/171585/view"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "025770",
  "name": "한국정보통신",
  "name_en": "KoreaInformation&Communication",
@@ -223,11 +213,11 @@
   "금융"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 18:08",
- "dataDate": "20260904",
+ "reportDate": "2026-11-14",
+ "reportTs": "2026-11-14 07:36",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-08-21",
+  "asOf": "2026-11-13",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -238,6 +228,7 @@
     "np_owner": 36607100000,
     "equity": 335813050000,
     "equity_owner": 335843764000,
+    "equity_nci": -30714000,
     "liab": 176675209000,
     "cfo": 103537613000,
     "eps_basic": 1038,
@@ -253,6 +244,7 @@
     "np_owner": 43572761000,
     "equity": 306452843000,
     "equity_owner": 306448562000,
+    "equity_nci": 4281000,
     "liab": 156409020000,
     "cfo": -8703887000,
     "eps_basic": 1222,
@@ -268,6 +260,7 @@
     "np_owner": 30091833000,
     "equity": 271223701000,
     "equity_owner": 271190692000,
+    "equity_nci": 33009000,
     "liab": 171546187000,
     "cfo": 27702019000,
     "eps_basic": 838,
@@ -283,6 +276,7 @@
     "np_owner": 21835805000,
     "equity": 244370476000,
     "equity_owner": 244371488000,
+    "equity_nci": -1012000,
     "liab": 156061925000,
     "cfo": -5730665000,
     "eps_basic": 604,
@@ -292,12 +286,6 @@
    }
   ],
   "quarterly": [
-   {
-    "q": "2025Q2",
-    "rev": 204838008000,
-    "op": 14019871000,
-    "np_owner": 10907040000
-   },
    {
     "q": "2025Q3",
     "rev": 218203070000,
@@ -321,26 +309,36 @@
     "rev": 237610744000,
     "op": 11941965000,
     "np_owner": 10193649000
+   },
+   {
+    "q": "2026Q3",
+    "rev": 250627603000,
+    "op": 11276610000,
+    "np_owner": 9132268000
    }
   ],
   "valuation": {
-   "price": 7910,
-   "mcap": 0.2962,
+   "price": 7740,
+   "mcap": 0.2898,
    "shares": 37444271,
    "total_shares": 37444271,
-   "wavg_shares": 35194809,
-   "per": 7.747,
-   "eps": 1021,
-   "pbr": 0.8124,
-   "bps": 9736,
-   "roe_ttm": 10.9,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": 35962892000,
+   "wavg_shares": 35215983,
+   "per": 8.368,
+   "eps": 925,
+   "pbr": 0.7798,
+   "bps": 9925,
+   "roe_ttm": 9.6,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": 32566828000,
+   "ccy": "KRW",
+   "bps_src": "자체",
+   "eps_src": "공시",
    "pbr_krx": 0.81,
    "bps_krx": 9544.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 290.0,
-   "div": 3.67
+   "div": 3.75
   }
- }
+ },
+ "textRules": 2
 }

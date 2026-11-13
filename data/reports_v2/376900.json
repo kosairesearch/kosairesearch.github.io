@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "매출 고성장 속 재투자형 적자 확대",
-  "en": "Fast Revenue Growth, Wider Reinvestment Losses"
+  "ko": "매출은 두 배, 분기 손실은 3개 분기째 확대",
+  "en": "Revenue doubled, but losses have run three quarters"
  },
  "lead": {
-  "ko": "로킷헬스케어는 분기 매출이 꾸준히 늘며 2025년 연간 영업이익 흑자전환에 성공했지만, 2026년에는 임상·미국 사업 확대 비용이 집중되며 영업손실과 순손실이 다시 확대되는 재투자 국면에 들어섰다.",
-  "en": "Rokit Healthcare posted steady quarterly revenue growth and turned operating-profit positive for full-year 2025, but 2026 has seen operating and net losses widen again as clinical and US expansion costs ramp up."
+  "ko": "로킷헬스케어는 2025년 매출 262억원과 영업이익 흑자 전환으로 외형과 손익 구조의 변화를 보였으나, 2026년 들어 세 분기 연속 영업손실이 이어지며 매출 성장과 투자 부담이 맞서는 구간에 있다.",
+  "en": "Rokit Healthcare doubled revenue in 2025 and turned operating profit positive, but operating losses have persisted for three straight quarters through the third quarter of 2026, with revenue growth and investment costs pulling in opposite directions."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출 262.47억원(전년 대비 2배), 연간 영업이익 4.53억원으로 상장 이후 첫 연간 흑자전환을 기록했다.",
-   "en": "2025 consolidated revenue reached KRW 26.247 billion (roughly double the prior year), with annual operating profit of KRW 453 million marking the first full-year operating profit since listing."
+   "ko": "2025년 매출은 262억원으로 전년 대비 100.2% 증가했고, 영업이익 4.5억원으로 2024년 영업손실에서 흑자로 돌아섰다.",
+   "en": "Revenue reached KRW 26.2 billion in 2025, up 100.2% from the prior year, and operating profit of KRW 453 million marked a turn from the prior-year operating loss."
   },
   {
-   "ko": "그러나 2026년 1분기(-23.51억원)와 2분기(-134.53억원) 연속 영업손실로 돌아서며, 2분기 지배주주순손실은 93.41억원까지 확대됐다.",
-   "en": "However, operating losses returned in both 2026 Q1 (-KRW 2.351 billion) and Q2 (-KRW 13.453 billion), with the Q2 net loss attributable to owners widening to KRW 9.341 billion."
+   "ko": "2026년 3분기 매출은 61.3억원으로 전 분기 대비 25.4% 줄었고, 영업손실은 94.8억원으로 2분기 135억원보다 줄었다.",
+   "en": "Third-quarter 2026 revenue fell to KRW 6.13 billion, down 25.4% from the prior quarter, while the operating loss narrowed to KRW 9.48 billion from KRW 13.5 billion in the second quarter."
   },
   {
-   "ko": "연골·신장·피부암 등 적응증 확장과 미국 자회사 비용 증가가 2026년 상반기 손실 확대의 주된 요인으로 지목된다.",
-   "en": "Expansion into cartilage, kidney, and skin-cancer indications, along with rising costs at its US subsidiary, were cited as key drivers of the widened losses in H1 2026."
+   "ko": "지배주주 순손실은 2026년 2분기 93.4억원, 3분기 98.7억원으로 커졌고, 최근 4개 분기 합계는 214억원이다.",
+   "en": "The net loss attributable to controlling shareholders widened to KRW 9.34 billion in the second quarter and KRW 9.87 billion in the third quarter of 2026, totaling KRW 21.4 billion over the last four quarters."
   },
   {
-   "ko": "2025년 자본총계가 지배주주 기준 115.59억원으로 처음 양전환되며 수년간 이어진 완전자본잠식 상태를 해소했다.",
-   "en": "Owners' equity turned positive at KRW 11.559 billion in 2025, ending years of complete capital impairment."
+   "ko": "회사는 2026~2027년을 핵심 기간으로 잡고 2028년까지 6개 분야에 654억원을 투자하는 로드맵을 2026년 11월 10일 발표했다.",
+   "en": "On November 10, 2026, the company announced a roadmap to invest KRW 65.4 billion across six fields through 2028, treating 2026 to 2027 as the core period."
   },
   {
-   "ko": "하버드 의대 연구진과의 신장재생 공동연구, 다국 특허 확보 등 파이프라인 확장이 계속되고 있으나 임상·상업화 일정의 불확실성은 남아 있다.",
-   "en": "Pipeline expansion continues via a kidney-regeneration collaboration with Harvard Medical School researchers and multi-country patents, though clinical and commercialization timelines remain uncertain."
+   "ko": "2025년 말 자본총계는 116억원, 부채총계는 435억원이며 영업활동 현금흐름은 -172억원으로 유출 규모가 커졌다.",
+   "en": "At the end of 2025, total equity stood at KRW 11.6 billion against total liabilities of KRW 43.5 billion, and operating cash flow was -KRW 17.2 billion, the largest outflow in the period shown."
   }
  ],
  "business": {
-  "ko": "로킷헬스케어는 AI 기반 환부 모델링 기술과 의료용 3D 바이오프린터, 초개인화 바이오잉크, 일회용 재생 키트를 결합한 장기재생 플랫폼을 상용화한 기업이다. 매출은 크게 3D 바이오프린터 등 장비 판매와, 환자당 반복적으로 소비되는 바이오잉크·지방처리 키트 등 소모품 판매로 구성되며, 회사 측은 소모품 매출총이익률이 약 80% 수준이라고 설명한다. 핵심 제품은 당뇨병성 족부궤양(당뇨발) 환자를 대상으로 자가 지방을 활용해 피부조직을 재생시키는 치료 플랫폼으로, 미국과 남미 등 일부 국가에서 상용화돼 매출을 내고 있다. 여기에 더해 AI-FRESH라는 자가혈 기반 재생치료 서비스를 출시했고, 연골·신장·피부암·화상 등으로 적응증을 확장하는 임상을 다국가에서 병행하고 있다. 글로벌 파트너사와의 플랫폼 판매 계약을 통해 다수 국가에서 상용화를 추진 중이며, 미국에서는 재향군인병원(VA)과 노스웰헬스 등 대형 의료기관에 피부·당뇨발 재생 플랫폼을 공급한 사례가 있다. 자회사로는 건강기능식품(NMN) 사업을 하는 ROKIT America와 싱글셀 RNA 기반 유전자 데이터를 다루는 ROKIT Genomics가 있다. 국내 3D 바이오프린팅·재생의료 분야에는 그래피, T&R바이오팹, 엘앤씨바이오 등의 기업이 유사 영역에서 경쟁 또는 인접 사업을 영위하고 있다. 아직은 장비·소모품 매출이 중심이나, 장기적으로는 치료 서비스 및 라이선스형 매출로 구조가 확장될 잠재력을 지닌 사업모델이다.",
-  "en": "Rokit Healthcare has commercialized an organ-regeneration platform that combines AI-based wound modeling, a medical 3D bioprinter, personalized bioink, and disposable regeneration kits. Revenue is broadly split between equipment sales (3D bioprinters) and consumables repeatedly used per patient, such as bioink and fat-processing kits, which the company says carry a gross margin of roughly 80%. Its core product is a platform that uses a patient's own fat tissue to regenerate skin for diabetic foot ulcer patients, already generating sales in markets including the United States and parts of Latin America. The company has also launched AI-FRESH, an autologous blood-based regenerative treatment service, while running multi-country clinical work to expand into cartilage, kidney, skin cancer, and burn indications. It pursues platform sales agreements with partners across many countries, and in the US has supplied its skin and diabetic foot regeneration platform to institutions including Veterans Health Administration hospitals and Northwell Health. Subsidiaries include ROKIT America, which runs an NMN dietary-supplement business, and ROKIT Genomics, which handles single-cell RNA genetic data. In Korea's 3D bioprinting and regenerative medicine space, companies such as Graphy, T&R Biofab, and L&C Bio operate in adjacent or competing areas. While equipment and consumable sales remain the core today, the business model carries potential to expand toward treatment-service and licensing revenue over the longer term."
+  "ko": "로킷헬스케어는 AI 기반 장기재생 플랫폼을 내세운 재생의료 기업으로, 3차원(3D) 바이오프린팅과 환자 자가조직 기술을 결합해 재생치료 사업을 펼친다. 사업보고서 기준으로 장비 판매에 더해 소모성 재생 키트와 유지관리 프로그램에서 나오는 반복 매출이 수익 구조의 축으로 자리 잡는 중이다. 사업 분야는 피부·연골·신장·모발 재생과 AI 질병 예측, 역노화로 나뉜다. 피부재생은 당뇨발 등 만성 난치성 창상 치료 기술과 사업화 경험을 바탕으로 해외 진출을 넓히는 주력 분야다. 연골재생은 현재 80여 명을 대상으로 임상이 진행 중이다. 신장재생은 환자 자신의 조직을 활용하는 오멘텀 기반 재생 패치와 AI·3D 바이오프린팅 융합 기술을 개발하고 있다. AI 예측 분야에는 AI 신장 기능 분석 같은 인공지능 기반 분석 기술이 있으며, 회사는 질병 예측과 예방, 재생치료를 잇는 통합 의료 서비스를 구상한다. 지역별로는 2025년 매출의 43.9%가 해외에서 발생했고, 46개국과 판매 계약을 맺어 글로벌 판매망을 넓혔다. 중국에서는 의료기기 시장점유율 1위 기업인 WEGO 그룹과 AI 장기재생 플랫폼 상용화를 위한 전략적 파트너십을 맺었다. 경쟁 구도는 분야마다 다르다. 피부재생은 창상 치료 시장, 연골·신장재생은 임상 근거 확보 경쟁이 핵심이라 기술 검증과 해외 인허가가 확장의 관문이 된다.",
+  "en": "Rokit Healthcare is a regenerative medicine company built around an AI-based long-term regeneration platform, combining three-dimensional (3D) bioprinting with patient autologous tissue technology. According to its business report, besides equipment sales, recurring revenue from consumable regeneration kits and maintenance programs is becoming a core part of the revenue structure. Its fields cover skin, cartilage, kidney and hair regeneration, plus AI disease prediction and anti-aging. Skin regeneration is the lead field, extending overseas from its experience treating chronic hard-to-heal wounds such as diabetic foot ulcers. Cartilage regeneration is in clinical trials involving about 80 patients. Kidney regeneration is developing an omentum-based patch using the patient's own tissue, fused with AI and 3D bioprinting. The AI prediction field includes AI-based kidney function analysis, and the company plans an integrated service linking disease prediction, prevention and regenerative treatment. By region, 43.9% of 2025 revenue came from overseas, with sales contracts in 46 countries. In China, it formed a strategic partnership with WEGO Group, a leading medical device company, to commercialize its AI long-term regeneration platform. Competition differs by field: skin regeneration competes in the wound-care market, while cartilage and kidney regeneration hinge on securing clinical evidence, so technical validation and overseas approvals are the gateways to expansion."
  },
  "earnings": {
-  "ko": "로킷헬스케어의 연간 매출은 2022년 91.51억원에서 2023년 124.18억원, 2024년 131.11억원, 2025년 262.47억원으로 꾸준히 늘었고 특히 2025년에는 전년 대비 매출이 2배로 뛰었다. 영업손익은 2022년 -138.78억원, 2023년 -73.78억원, 2024년 -55.72억원으로 적자가 지속되다가 2025년 4.53억원으로 상장 이후 첫 연간 흑자전환을 기록했다(영업이익률 1.7%). 그러나 순손익은 다른 양상을 보였는데, 2022년 지배주주순이익 18.75억원, 2023년 165.997억원의 대규모 흑자를 기록한 반면 2024년에는 -76.46억원으로 적자전환했고 2025년에도 -28.45억원의 적자가 이어졌다. 분기별로 보면 2025년 2분기부터 영업이익이 분기 단위로 흑자를 내기 시작해 2분기 0.22억원, 3분기 0.78억원, 4분기 6.00억원으로 개선 흐름을 보였으나, 2026년 1분기 -23.51억원, 2분기 -134.53억원으로 다시 큰 폭의 영업손실로 돌아섰다. 지배주주순손실 역시 2025년 2~4분기 -9.72억원, -11.60억원, -3.55억원 수준에서 2026년 1분기 -18.34억원, 2분기 -93.41억원으로 확대돼 최근 네 개 분기(2025년 3분기~2026년 2분기) 기준 지배주주순손실 합계는 126.90억원에 달한다. 영업현금흐름(CFO)은 2022~2024년 매년 -40억~-66억원 수준이었으나 2025년에는 -172.30억원으로 유출 규모가 오히려 커졌다. 자본 측면에서는 2022~2024년 지배주주지분이 각각 -974.56억원, -784.57억원, -770.73억원으로 완전자본잠식 상태였으나, 2025년 115.59억원으로 처음 양전환되며 부채비율도 376.3%로 낮아졌다. 2026년 상반기 손실 확대는 연골·신장 재생 임상 본격화에 따른 연구개발비 급증과 미국 자회사의 마케팅·전문서비스 비용 증가가 주요 원인으로 지목된다.",
-  "en": "Rokit Healthcare's annual revenue rose steadily from KRW 9.151 billion in 2022 to KRW 12.418 billion in 2023, KRW 13.111 billion in 2024, and KRW 26.247 billion in 2025, with revenue roughly doubling year-on-year in 2025. Operating losses persisted at -KRW 13.878 billion in 2022, -KRW 7.378 billion in 2023, and -KRW 5.572 billion in 2024, before the company posted its first full-year operating profit of KRW 453 million in 2025 (a 1.7% operating margin). Net income told a different story: net income attributable to owners was a profit of KRW 1.875 billion in 2022 and a large KRW 16.600 billion in 2023, before swinging to a loss of -KRW 7.646 billion in 2024 and remaining a loss of -KRW 2.845 billion in 2025. Quarterly operating profit turned positive starting in Q2 2025, improving from KRW 22 million in Q2 to KRW 78 million in Q3 and KRW 600 million in Q4, but reversed sharply into losses of -KRW 2.351 billion in Q1 2026 and -KRW 13.453 billion in Q2 2026. Net losses attributable to owners also widened, from -KRW 972 million, -KRW 1.160 billion, and -KRW 355 million in Q2 through Q4 2025 to -KRW 1.834 billion in Q1 2026 and -KRW 9.341 billion in Q2 2026, bringing the cumulative net loss attributable to owners over the most recent four quarters (Q3 2025 through Q2 2026) to KRW 12.690 billion. Operating cash flow, which ran between roughly -KRW 4.0 billion and -KRW 6.6 billion annually from 2022 to 2024, deteriorated further to -KRW 17.230 billion in 2025. On the balance sheet, owners' equity was deeply negative at -KRW 97.456 billion, -KRW 78.457 billion, and -KRW 77.073 billion in 2022 through 2024 respectively, reflecting complete capital impairment, before turning positive at KRW 11.559 billion in 2025, with the debt ratio easing to 376.3%. The company has attributed the wider H1 2026 losses mainly to a sharp increase in R&D spending tied to cartilage and kidney regeneration clinical work, along with rising marketing and professional-service costs at its US subsidiary."
+  "ko": "공시 실적 기준으로 매출은 2022년 91.5억원에서 2023년 124억원(전년 대비 35.7% 증가), 2024년 131억원(전년 대비 5.6% 증가)을 거쳐 2025년 262억원(전년 대비 100.2% 증가)으로 커졌다. 2023년부터 2025년까지 3년 연속 증가했고, 2022~2025년 중 가장 큰 해는 2025년이다. 영업손익은 2022년 영업손실 139억원, 2023년 영업손실 73.8억원, 2024년 영업손실 55.7억원으로 적자가 지속되며 손실 폭이 줄었고, 2025년에는 영업이익 4.5억원으로 흑자 전환했다. 영업이익률은 2022년 -151.7%에서 2025년 1.7%로 방향이 바뀌었다. 지배주주 순이익은 2023년 166억원(전년 대비 785.6% 증가)으로 크게 늘었으나 2024년 지배주주 순손실 76.5억원으로 적자 전환했고, 2025년 순손실 28.5억원으로 손실이 줄었다. 2024년 순손실은 증권신고서 가결산 대비 감사 결과에서 확대됐는데, 회사는 파생상품 평가손실과 충당금 설정률 조정 등 회계상 손실이 반영된 결과라고 설명했다. 2025년 당기순손실 28억원에 대해서도 회사는 전환사채 등 평가손실이 반영된 회계상 수치라고 밝혔다. 영업활동 현금흐름은 2022년 -65.9억원, 2023년 -39.2억원, 2024년 -50억원에 이어 2025년 -172억원으로 유출 규모가 크게 커졌다. 분기로 보면 2025년 3분기 매출 69.5억원, 4분기 95.8억원(전 분기 대비 37.8% 증가)으로 올라갔으나 2026년 1분기 80.6억원(전 분기 대비 15.9% 감소), 2분기 82.2억원, 3분기 61.3억원(전 분기 대비 25.4% 감소)으로 정체 후 줄었다. 영업손익은 2025년 4분기 영업이익 6억원의 흑자 뒤 2026년 1분기 영업손실 23.5억원, 2분기 135억원, 3분기 94.8억원으로 세 분기 연속 적자다. 2026년 1분기 영업손실에 대해 회사는 AI 연골 재생 글로벌 임상, 신장 예측 진단 플랫폼 개발, 글로벌 규제 대응 등 미래 수익원을 위한 비용이 집중된 결과라고 설명했다.",
+  "en": "On a disclosed basis, revenue rose from KRW 9.15 billion in 2022 to KRW 12.4 billion in 2023 (up 35.7% year on year) and KRW 13.1 billion in 2024 (up 5.6%), then reached KRW 26.2 billion in 2025 (up 100.2%). Revenue has risen for three consecutive years from 2023 through 2025, and 2025 is the largest year in the 2022 to 2025 span. Operating results moved from an operating loss of KRW 13.9 billion in 2022, KRW 7.38 billion in 2023 and KRW 5.57 billion in 2024, with the losses narrowing each year, to an operating profit of KRW 453 million in 2025. The operating margin shifted from -151.7% in 2022 to 1.7% in 2025. Net income attributable to controlling shareholders rose to KRW 16.6 billion in 2023 (up 785.6%), then turned into a loss of KRW 7.65 billion in 2024 and narrowed to a loss of KRW 2.85 billion in 2025. For 2024, the audited net loss came in wider than the pre-audit figure in the securities filing; the company attributed the gap to accounting losses from derivative valuation and provision rate adjustments. The company also said the 2025 net loss reflected accounting valuation losses on convertible bonds and other instruments. Operating cash flow was -KRW 6.59 billion in 2022, -KRW 3.92 billion in 2023 and -KRW 5 billion in 2024, then widened to -KRW 17.2 billion in 2025. Quarterly revenue climbed from KRW 6.95 billion in the third quarter of 2025 to KRW 9.58 billion in the fourth quarter (up 37.8% from the prior quarter), then moved to KRW 8.06 billion in the first quarter of 2026 (down 15.9%), KRW 8.22 billion in the second quarter, and KRW 6.13 billion in the third quarter (down 25.4%). Operating profit of KRW 600 million in the fourth quarter of 2025 was followed by operating losses of KRW 2.35 billion, KRW 13.5 billion and KRW 9.48 billion in the first three quarters of 2026, three straight quarters of losses. For the first-quarter 2026 loss, the company cited costs concentrated on future revenue sources, including global clinical expansion of its AI cartilage regeneration platform, kidney prediction diagnostics and regulatory response."
  },
  "industry": {
-  "ko": "의료용 3D 바이오프린팅과 재생의료 산업은 고령화와 만성질환(당뇨, 만성콩팥병 등) 증가에 따라 치료 대안이 부재한 영역을 겨냥하는 초기 성장 단계에 있다. 국내에서는 첨단재생의료법 체계 아래 신규 적응증에 대한 임상연구 승인이 이어지고 있으며, 로킷헬스케어 외에도 그래피, T&R바이오팹, 엘앤씨바이오 등 기업들이 3D 바이오프린팅·조직재생 분야에서 각자의 기술로 경쟁 또는 인접 영역 사업을 전개하고 있다. 업계 관계자는 피부암 재생치료와 같은 특정 적응증 시장이 2030년까지 9억달러(약 1조 2,537억원) 이상으로 성장할 것으로 전망한다고 밝힌 바 있다. 로킷헬스케어는 세계 최초로 의료용 3D 바이오프린터와 환부 자동모델링 AI를 상용화했다는 점에서 기술적 선점 효과를 주장하고 있으며, 미국에서는 당뇨발 치료에 대한 CPT 보험수가 코드를 획득해 공보험 청구가 가능한 수준까지 진전됐다. 다만 해외 대형 의료기기·제약사가 유사 영역에 진입할 경우 경쟁 구도가 바뀔 수 있고, 각국의 보험 등재·인허가 절차가 상이해 상용화 속도에 지역별 편차가 존재한다. 결국 산업의 성장은 확실하나, 국내 중소형 기술특례 기업들이 자본력 있는 경쟁자들과 임상·인허가 경쟁에서 속도를 유지할 수 있는지가 관전 포인트다.",
-  "en": "The medical 3D bioprinting and regenerative medicine industry is in an early growth phase, targeting conditions with few treatment alternatives amid rising chronic disease prevalence such as diabetes and chronic kidney disease, combined with an aging population. In Korea, regulatory approvals for new-indication clinical research continue under the advanced regenerative medicine framework, with companies such as Graphy, T&R Biofab, and L&C Bio operating in competing or adjacent segments of 3D bioprinting and tissue regeneration alongside Rokit Healthcare. Industry sources have indicated that certain indication markets, such as skin-cancer regeneration treatment, are expected to grow to more than $900 million by 2030. Rokit Healthcare claims a first-mover technological edge, citing its commercialization of what it describes as the world's first medical 3D bioprinter and automated wound-modeling AI, and has progressed to the point of securing a US CPT reimbursement code for diabetic foot ulcer treatment that allows insurance billing. That said, the competitive landscape could shift if larger global medical device or pharmaceutical companies enter similar spaces, and differing reimbursement and approval processes across countries create uneven commercialization speed by region. Overall industry growth appears likely, but whether capital-constrained, smaller technology-listed companies in Korea can keep pace with better-capitalized rivals on clinical and regulatory timelines remains a key question."
+  "ko": "재생의료는 세포·조직을 활용해 손상된 기능을 회복시키는 영역으로, 치료 기술과 임상 근거, 제도 승인 경로가 함께 발전해야 사업화가 가능한 분야다. 로킷헬스케어는 3D 바이오프린팅과 환자 자가조직 기술을 결합해 차별화를 꾀하며, 피부·연골·신장 등 여러 분야로 기술을 넓히는 구조다. 기사에 따르면 중국 피부 재생 시장은 1조 4,000억원 규모로 추산되며, 회사는 이 시장을 공략하기 위해 WEGO 그룹과 손을 잡았다. 유럽에서는 2026년 2월부터 이탈리아 밀라노 소재 공공병원에 AI 피부 장기재생 플랫폼 공급을 시작해 유럽 공공의료 시장 진입의 교두보를 확보했다고 회사는 밝혔다. 국내에서는 신장재생과 연골재생 모두 국내 첨단재생의료 치료계획 신청을 거쳐 임상 근거를 쌓는 경로를 추진 중이다. 사이클 위치로 보면 매출은 해외 판매망을 중심으로 늘고 있지만 손익은 임상과 인허가 투자가 큰 상업화 초기 구간에 가깝다. 같은 바이오·제약 업종에서 삼성바이오로직스나 셀트리온처럼 생산·판매 규모로 움직이는 대형 기업과 달리, 로킷헬스케어는 플랫폼과 임상 데이터 확보에 자원을 쓰는 소형 재생의료 기업이라 비교 축이 다르다. 경쟁 측면에서 피부재생은 창상 치료 기술 기업과, 연골·신장재생은 임상 단계 기업과 맞붙는 구도로 볼 수 있다.",
+  "en": "Regenerative medicine restores damaged function using cells and tissue, and commercialization depends on developing treatment technology, clinical evidence and an approval pathway together. Rokit Healthcare seeks differentiation by combining 3D bioprinting with patient autologous tissue, expanding its technology across skin, cartilage and kidney fields. According to press reports, the Chinese skin regeneration market is estimated at KRW 1.4 trillion, and the company partnered with WEGO Group to target it. In Europe, the company began supplying its AI skin regeneration platform to a public hospital in Milan, Italy, in February 2026, which it said secured a foothold in European public healthcare. Domestically, both kidney and cartilage regeneration are pursuing the advanced regenerative medicine treatment plan route to build clinical evidence. In cycle terms, revenue is growing on the back of overseas distribution, while earnings sit in an early commercialization phase where clinical and regulatory investment is heavy. Unlike large biopharma names such as Samsung Biologics or Celltrion, which operate on production and sales scale, Rokit Healthcare is a small regenerative medicine company spending on platform development and clinical data, so the comparison axes differ. Competitively, skin regeneration meets wound-care technology companies, while cartilage and kidney regeneration meet clinical-stage developers."
  },
  "outlook": {
-  "ko": "회사는 상장 당시 증권신고서에서 2025년 238억원, 2026년 414억원, 2027년 655억원의 매출 목표를 제시했으며, 2025년 실제 매출(262.47억원)은 해당 목표를 상회해 달성됐다. IBK투자증권은 2026년 3월 보고서에서 2026년 매출 성장세가 지속될 것으로 내다보면서도 신장·연골 재생 임상이 본격화됨에 따라 관련 비용이 늘어 영업이익 변동성이 커질 것으로 전망했는데, 실제로 2026년 상반기 실적은 이러한 변동성 확대를 보여줬다. 파이프라인 측면에서는 하버드 의과대학 브리검여성병원 조셉 본벤트리 교수 연구팀과의 공동연구를 통해 자사의 AI 오멘텀 기반 신장재생 패치가 동물모델에서 신장 기능(사구체여과율)을 약 62.5% 보존하는 결과를 확인했다고 밝혔으며, 이 데이터를 토대로 2026년 하반기 국내에서 만성콩팥병 3~4단계 환자를 대상으로 한 파일럿 임상을 추진하고 이후 한국과 미국 중심의 글로벌 임상으로 확대할 계획이라고 설명했다. 신장재생 관련 핵심 기술은 한국·일본·미국 등 주요 시장에서 특허를 확보한 상태다. 자금 조달 측면에서는 2026년 3월 제3자배정 방식으로 약 625억원 규모의 상환전환우선주(RCPS)를 발행해 연구개발 및 임상 자금을 확충했으며, 투자자는 글로벌 사모펀드·자산운용사로 알려졌다. 다만 해당 RCPS는 1년간 보호예수가 걸려 있어 이 기간이 지나면 유통 가능 물량이 늘어날 수 있다. 종합하면 매출 성장 모멘텀은 이어지고 있으나, 다수의 신규 적응증이 동시에 임상 단계에 진입하면서 비용 부담과 실적 변동성이 함께 커지는 구간에 있다.",
-  "en": "In its original IPO prospectus, the company targeted revenue of KRW 23.8 billion in 2025, KRW 41.4 billion in 2026, and KRW 65.5 billion in 2027, and actual 2025 revenue of KRW 26.247 billion came in above that initial target. In a March 2026 report, IBK Securities projected that revenue growth would continue into 2026, while also expecting operating profit volatility to increase as kidney and cartilage regeneration clinical work ramped up related costs — a pattern that materialized in the H1 2026 results. On the pipeline front, the company reported that its AI omentum-based kidney regeneration patch, evaluated in a collaborative preclinical study with Dr. Joseph Bonventre's team at Harvard Medical School's Brigham and Women's Hospital, preserved kidney function (glomerular filtration rate) by roughly 62.5% in an animal model, and said it plans to pursue a domestic pilot clinical trial in patients with stage 3-4 chronic kidney disease in the second half of 2026, followed by broader clinical trials centered on Korea and the United States. Core kidney-regeneration technology has already secured patents in Korea, Japan, and the United States. On financing, the company raised approximately KRW 62.5 billion through a third-party placement of redeemable convertible preferred shares in March 2026, reportedly from global private equity and asset management investors, to fund R&D and clinical activities; however, these shares are subject to a one-year lock-up, after which additional tradable supply could emerge. On balance, revenue growth momentum appears intact, but the company is in a phase where multiple new indications entering clinical stages simultaneously are driving up both cost burden and earnings volatility."
+  "ko": "회사는 2026~2027년을 글로벌 AI 재생의료 플랫폼 구축과 사업 전환의 핵심 기간으로 설정했다. 2026년 11월 10일 발표한 로드맵에서 피부재생, 연골재생, 신장재생, 모발재생, AI 질병 예측, 역노화 6개 분야에 2028년까지 총 654억원을 투자한다고 밝혔다. 연골재생은 현재 80여 명을 대상으로 임상이 진행 중이며, 2026년 11월 중 총 104명 모집을 완료하는 것을 목표로 한다. 임상 모집 이후에는 국내 첨단재생의료 치료계획 신청과 해외 인허가, 상용화 확대를 추진할 계획이다. 신장재생은 국내 첨단재생의료 치료계획 신청을 추진하며, 신기능 보존과 투석 시점 지연 가능성을 임상으로 검증할 방침이다. 모발재생은 신규 치료 기술 개발을 거쳐 장기적으로 해외 시장 진출을 검토하고 있다. 해외에서는 미국, 사우디아라비아, 중남미 시장 진출이 계획대로 진행되고 있다고 회사가 밝혔다. 자회사 로킷아메리카의 나스닥 상장 절차가 본격화됐다는 보도도 나왔으며, 상장 일정과 조건은 향후 공시에서 확인될 사항이다. 회사는 2026년 1분기 실적 발표에서 단기 이익 극대화보다 AI 장기재생 플랫폼의 글로벌 표준 선점과 임상 데이터 축적이 중요한 시기라고 강조했다. 투자 집행 속도가 매출 증가 속도를 앞서는 구간이 이어지면 영업손실 구조가 장기화할 수 있으며, 반대로 임상 모집과 인허가가 예정대로 진행되면 2027년 이후 매출 구성의 변화가 드러날 수 있다. 다음 확인 지점은 2026년 사업보고서에 담기는 연간 영업손익과 현금흐름이다.",
+  "en": "The company set 2026 to 2027 as the core period for building its global AI regenerative medicine platform and transforming its business. In its roadmap announced on November 10, 2026, it said it will invest a total of KRW 65.4 billion through 2028 across six fields: skin, cartilage, kidney and hair regeneration, AI disease prediction, and anti-aging. Cartilage regeneration trials currently involve about 80 patients, and the company aims to complete enrollment of 104 patients within November 2026. After enrollment, it plans to pursue an advanced regenerative medicine treatment plan application in Korea, overseas approvals and broader commercialization. Kidney regeneration is pursuing a domestic treatment plan application and plans to verify in clinical studies whether it can preserve kidney function and delay the start of dialysis. Hair regeneration is in new treatment technology development, with overseas market entry under review over the longer term. The company said its entry into the United States, Saudi Arabia and Latin America is proceeding as planned. Press reports said the Nasdaq listing process for its US subsidiary Rokit America has moved forward, and the listing timing and terms will be clarified in future disclosures. In its first-quarter 2026 results, the company stressed that securing global standing for its AI long-term regeneration platform and accumulating clinical data matter more than maximizing short-term profit. If investment outpaces revenue growth for an extended period, the operating loss structure could persist, while on-schedule enrollment and approvals could shift the revenue mix from 2027. The next checkpoint is the annual operating result and cash flow in the 2026 business report."
  },
  "valuation_comment": {
-  "ko": "로킷헬스케어는 순이익 적자가 이어지고 있어 주가수익비율(PER) 기반의 통상적인 밸류에이션 비교는 적용하기 어려운 구간에 있다. 주가순자산비율(PBR)은 2025년 자본총계가 양전환된 지 얼마 되지 않아 순자산 규모 자체가 작고 변동성이 크며, 과거 수년간 완전자본잠식 상태였던 만큼 순자산 대비 주가 프리미엄은 동종 업종 평균을 상회하는 수준에서 형성돼 있다. 배당은 지급하지 않고 있어 배당수익률 측면에서는 업종 내 배당주들과 비교할 기준 자체가 성립하지 않는다. 다년간의 실적 흐름을 보면 영업손익은 적자에서 2025년 한 차례 흑자로 전환한 뒤 2026년 들어 다시 적자로 되돌아간 모습이며, 순손익은 분기별 비영업 요인(전환사채 등 평가손익)에 따라 등락이 크게 나타나는 구조다. 이 같은 손익의 비선형성과 자본구조 변화 속도를 고려할 때, 시장에서의 가치 평가는 현재의 장부가치나 과거 손익보다는 향후 매출 성장과 손익 안정화 속도에 대한 기대치에 더 크게 의존하는 경향을 보인다.",
-  "en": "Because Rokit Healthcare continues to post net losses, conventional price-to-earnings-based valuation comparisons are difficult to apply at this stage. Its price-to-book ratio reflects a very small and still-volatile net asset base, given that owners' equity only recently turned positive in 2025 after years of complete capital impairment, placing the premium over book value above typical sector averages. The company pays no dividend, so dividend-yield comparisons with income-oriented peers in the sector are not meaningful. Looking at the multi-year earnings pattern, operating results swung from losses to a single year of profit in 2025 before reverting to losses in 2026, while net income has shown large swings driven by non-operating items such as convertible-bond fair-value changes on a quarterly basis. Given this earnings non-linearity and the pace of capital-structure change, market valuation appears to rely more heavily on expectations for future revenue growth and the speed of earnings stabilization than on current book value or past profit and loss."
+  "ko": "로킷헬스케어는 최근 4개 분기 기준 순손실 구간이라 순이익에 기반한 주가수익비율(PER)은 산출되지 않는다. 따라서 밸류에이션은 순자산, 매출 규모, 손익 추이 같은 다른 지표와의 관계로 읽는 편이 적합하다. 2025년 말 자본총계는 116억원이고 지배주주 지분도 같은 116억원이다. 2022년부터 2024년까지 부채비율이 음(-)으로 표시됐던 것은 자본총계가 마이너스였던 구조를 반영하며, 2025년 말에는 자본총계가 플러스로 전환됐다. 시가총액은 장부상 자본총계를 크게 웃도는 수준이어서 순자산 대비 프리미엄이 큰 구간으로 볼 수 있다. 이익이 없는 구간이라 같은 업종 흑자 기업의 배수와 직접 비교하기 어렵고, 매출 성장률과 영업손실 추이, 자금 조달 여부를 함께 놓고 보는 것이 사실 관계 정리에 도움이 된다. 배당은 이익 기반 흐름이 확인되지 않아 배당 수익을 근거로 한 평가는 어렵다. 과거 밴드와의 위치 비교는 주가 변동에 따라 달라지므로 시점을 명시해 비교해야 한다.",
+  "en": "Rokit Healthcare has been in a net loss position over the last four quarters, so a price-to-earnings ratio based on earnings cannot be calculated. Valuation is therefore better read through relationships with other measures, such as net asset value, revenue scale and the profit trend. Total equity at the end of 2025 was KRW 11.6 billion, and equity attributable to controlling shareholders was the same KRW 11.6 billion. The negative debt ratios shown for 2022 through 2024 reflected a capital structure with negative total equity, which turned positive by the end of 2025. Market capitalization sits well above book equity, a premium relative to net asset value. Because there are no earnings, direct comparison with profitable peers in the same sector is difficult, so revenue growth, the operating loss trend and funding status are useful to read together. Dividend-based evaluation is not feasible because no earnings-based dividend pattern is confirmed. Comparisons with historical valuation bands should specify the date, since they shift with the share price."
  },
  "bull": [
   {
    "title": {
-    "ko": "반복 매출 구조와 높은 소모품 마진",
-    "en": "Recurring Revenue Structure with High Consumable Margins"
+    "ko": "매출 규모의 빠른 확대",
+    "en": "Rapid revenue expansion"
    },
    "body": {
-    "ko": "장비 판매 이후 환자당 지속적으로 소비되는 바이오잉크·일회용 키트 매출이 반복적으로 발생하며, 회사 측에 따르면 소모품 매출총이익률은 약 80% 수준이다. 이러한 구조는 장비 보급이 늘어날수록 후속 소모품 매출이 함께 증가하는 레버리지 효과를 기대할 수 있게 한다. 46개국 상용화 기반이 확대될수록 이 반복 매출의 절대 규모도 커질 잠재력이 있다.",
-    "en": "After equipment sales, bioink and disposable kit consumables are used repeatedly per patient, and the company has stated that consumable gross margins run around 80%. This structure could create a leverage effect where expanding equipment placement drives a parallel rise in follow-on consumable sales. As commercialization across dozens of countries expands, the absolute scale of this recurring revenue has room to grow."
+    "ko": "2022년 91.5억원이던 매출은 2025년 262억원으로 늘었고, 2026년 1분기 매출은 전년 동기 대비 118% 증가했다고 언론이 회사 공시를 인용해 보도했다. 2025년 매출의 43.9%가 해외에서 발생했고 46개국과 판매 계약을 맺었다는 사업보고서 내용도 외형 확대를 뒷받침한다. 2025년 실적은 증권신고서상 예상치 237억원을 웃돈 것으로 보도됐다.",
+    "en": "Revenue rose from KRW 9.15 billion in 2022 to KRW 26.2 billion in 2025, and press reports citing the company disclosure said first-quarter 2026 revenue grew 118% year on year. The business report indicates 43.9% of 2025 revenue came from overseas, with sales contracts in 46 countries. Press reports said 2025 results exceeded the KRW 23.7 billion estimate in the securities filing."
    }
   },
   {
    "title": {
-    "ko": "다중 적응증 파이프라인과 권위 있는 임상 협력",
-    "en": "Multi-Indication Pipeline with Credible Clinical Partnerships"
+    "ko": "영업손익 구조의 전환",
+    "en": "Operating profit turnaround"
    },
    "body": {
-    "ko": "당뇨발 치료를 넘어 연골, 신장, 피부암, 화상 등으로 적응증을 확장하고 있으며, 하버드 의과대학 브리검여성병원 조셉 본벤트리 교수 연구팀과의 신장재생 공동연구에서 동물모델 기준 신장 기능 보존 효과를 확인했다고 밝혔다. 권위 있는 해외 연구기관과의 협업은 임상적 근거 확보와 향후 규제기관 심사 과정에서 신뢰도를 높이는 요인이 될 수 있다. 핵심 신장재생 기술은 한국·일본·미국에서 특허를 확보한 상태다.",
-    "en": "Beyond diabetic foot ulcer treatment, the company is expanding into cartilage, kidney, skin cancer, and burn indications, and has reported that a kidney regeneration collaboration with Dr. Joseph Bonventre's team at Harvard Medical School's Brigham and Women's Hospital confirmed kidney function preservation in an animal model. Collaboration with a reputable overseas research institution could strengthen clinical evidence and credibility during future regulatory review. Core kidney regeneration technology has already secured patents in Korea, Japan, and the United States."
+    "ko": "2025년 영업이익 4.5억원으로 2024년 영업손실에서 흑자로 전환했고, 영업이익률은 2022년 -151.7%에서 2025년 1.7%로 개선됐다. 2025년 4분기에는 영업이익 6억원을 기록해 분기 단위 흑자가 한 차례 나타났다. 적자 구조에서 이익 구간으로 넘어간 사실은 사업 체력의 방향 변화를 보여 준다.",
+    "en": "Operating profit was KRW 453 million in 2025 after an operating loss in 2024, and the operating margin improved from -151.7% in 2022 to 1.7% in 2025. The fourth quarter of 2025 posted an operating profit of KRW 600 million, the one quarter of profit in the recent run. The shift from losses to profit marks a change in the direction of the business."
    }
   },
   {
    "title": {
-    "ko": "자본잠식 해소와 재무구조 개선",
-    "en": "Resolution of Capital Impairment and Improved Financial Structure"
+    "ko": "파이프라인과 임상 진척",
+    "en": "Pipeline and clinical progress"
    },
    "body": {
-    "ko": "2022~2024년 매년 완전자본잠식 상태였던 지배주주지분은 2025년 115.59억원으로 처음 양전환됐고 부채비율도 376.3%로 낮아졌다. 2026년 3월에는 약 625억원 규모의 RCPS를 제3자배정 방식으로 유치해 연구개발·임상 자금을 추가로 확보했다. 자본 확충이 이어지면서 과거 수년간의 재무적 취약성은 점진적으로 완화되는 모습이다.",
-    "en": "Owners' equity, which showed complete capital impairment every year from 2022 to 2024, turned positive at KRW 11.559 billion in 2025, with the debt ratio easing to 376.3%. In March 2026, the company secured roughly KRW 62.5 billion through a third-party placement of redeemable convertible preferred shares to fund further R&D and clinical work. Continued capital raises have gradually eased the financial fragility seen in prior years."
+    "ko": "회사는 2028년까지 6개 분야에 654억원을 투자하는 로드맵을 2026년 11월 10일 발표했다. 연골재생은 임상 104명 모집 완료를 2026년 11월 중 목표로 하고 있고, 신장재생은 국내 첨단재생의료 치료계획 신청을 추진 중이다. 임상 진척은 기술 검증과 해외 인허가의 근거가 된다.",
+    "en": "On November 10, 2026, the company announced a roadmap to invest KRW 65.4 billion across six fields through 2028. Cartilage regeneration targets completing enrollment of 104 patients within November 2026, and kidney regeneration is pursuing a domestic advanced regenerative medicine treatment plan application. Clinical progress provides the evidence base for technology validation and overseas approvals."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "2026년 들어 재확대된 영업손실",
-    "en": "Operating Losses Widened Again in 2026"
+    "ko": "분기 영업손실의 지속",
+    "en": "Persistent quarterly operating losses"
    },
    "body": {
-    "ko": "2025년 분기마다 개선되던 영업이익은 2026년 1분기 -23.51억원, 2분기 -134.53억원으로 큰 폭의 적자로 돌아섰다. 연골·신장 재생 임상 본격화에 따른 연구개발비 급증과 미국 자회사 비용 증가가 주요 원인으로 지목되는데, 이는 신규 적응증이 늘어날수록 비용 부담이 함께 커질 수 있음을 보여준다. 매출이 늘어도 비용 증가 속도가 이를 앞설 경우 손익 안정화 시점은 더 늦춰질 수 있다.",
-    "en": "Operating profit, which had improved quarter over quarter through 2025, reversed into sizable losses of -KRW 2.351 billion in Q1 2026 and -KRW 13.453 billion in Q2 2026. A sharp rise in R&D spending tied to cartilage and kidney regeneration clinical work, along with increased costs at the US subsidiary, have been cited as the main drivers, illustrating how cost burden can grow alongside new indications. If cost growth outpaces revenue growth, the timeline for earnings stabilization could be pushed further out."
+    "ko": "2026년 2분기 영업손실은 135억원, 3분기 영업손실은 94.8억원으로 세 분기 연속 적자다. 3분기 매출은 61.3억원으로 전 분기보다 25.4% 줄었다. 최근 4개 분기 지배주주 순손실 합계는 214억원에 이른다.",
+    "en": "The operating loss was KRW 13.5 billion in the second quarter of 2026 and KRW 9.48 billion in the third quarter, three straight quarters of losses. Third-quarter revenue fell to KRW 6.13 billion, down 25.4% from the prior quarter. The net loss attributable to controlling shareholders totals KRW 21.4 billion over the last four quarters."
    }
   },
   {
    "title": {
-    "ko": "지속되는 순손실과 손익 변동성",
-    "en": "Persistent Net Losses and Earnings Volatility"
+    "ko": "재무 여력과 현금 유출",
+    "en": "Financial capacity and cash outflow"
    },
    "body": {
-    "ko": "지배주주순손실은 최근 네 개 분기(2025년 3분기~2026년 2분기) 기준 누적 126.90억원에 달하며, 2026년 2분기 한 분기만 -93.41억원을 기록했다. 순손익은 전환사채 등 비영업 평가손익의 영향을 받아 분기별로 크게 출렁이는 구조여서, 영업이익만으로 실적 추이를 판단하기 어려운 측면이 있다. 영업현금흐름 역시 2025년 -172.30억원으로 과거 대비 유출 규모가 커졌다.",
-    "en": "Net losses attributable to owners totaled KRW 12.690 billion over the most recent four quarters (Q3 2025 through Q2 2026), with Q2 2026 alone posting a loss of -KRW 9.341 billion. Net income is heavily influenced by non-operating valuation items such as convertible bonds, causing large quarter-to-quarter swings that make it difficult to judge performance from operating profit alone. Operating cash flow also deteriorated to -KRW 17.230 billion in 2025, a larger outflow than in prior years."
+    "ko": "2025년 말 부채총계는 435억원으로 자본총계 116억원을 크게 웃돌며 부채비율은 376.3%다. 영업활동 현금흐름은 2025년 -172억원으로 2022년 이후 가장 큰 유출이었다. 임상 비용이 늘어나는 구간에서 추가 자금 조달 가능성이 함께 거론된다.",
+    "en": "Total liabilities at the end of 2025 were KRW 43.5 billion, well above total equity of KRW 11.6 billion, with a debt ratio of 376.3%. Operating cash flow was -KRW 17.2 billion in 2025, the largest outflow since 2022. Additional fundraising has been raised as a possibility as clinical costs rise."
    }
   },
   {
    "title": {
-    "ko": "지분 희석 및 오버행 가능성",
-    "en": "Potential Share Dilution and Overhang"
+    "ko": "회계와 공시 신뢰 과제",
+    "en": "Accounting and disclosure credibility"
    },
    "body": {
-    "ko": "회사는 전환사채와 상환전환우선주 발행을 통해 자금을 조달해 왔으며, 전환사채 전환 물량과 2026년 3월 발행된 RCPS의 보호예수 해제(약 1년 후) 등이 향후 유통 주식 수 증가 요인으로 남아 있다. 지분 희석이 진행되면 주당 지표의 변동성이 커질 수 있으며, 대규모 물량 출회 시 수급 측면의 부담으로 이어질 가능성이 있다.",
-    "en": "The company has funded itself through convertible bonds and redeemable convertible preferred shares, and both the conversion of remaining convertible bonds and the lock-up expiry (roughly one year out) of the RCPS issued in March 2026 remain potential sources of increased share count going forward. Continued dilution could increase volatility in per-share metrics, and large supply releases could create near-term supply-demand pressure."
+    "ko": "2024년 확정 순손실은 증권신고서상 가결산보다 크게 늘었고, 금융감독원은 2025년 3월 실적 전망과 실제 수치의 차이를 포함해 종합 검토하겠다는 입장을 전했다. 회사는 파생상품 평가손실과 충당금 설정률 조정에 따른 회계상 손실이라고 설명했다. 이 사안은 실적 전망의 신뢰도를 판단하는 기준으로 남아 있다.",
+    "en": "The audited 2024 net loss came in well above the pre-audit figure in the securities filing, and in March 2025 the Financial Supervisory Service reportedly said it would review the gap alongside the outlook. The company attributed the loss to accounting items such as derivative valuation losses and provision rate changes. The episode remains a reference point for judging the reliability of its earnings outlook."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "재무·자본구조 리스크",
-    "en": "Financial and Capital Structure Risk"
+    "ko": "임상·인허가 일정",
+    "en": "Clinical and regulatory timing"
    },
    "body": {
-    "ko": "부채비율이 376.3%로 여전히 높고, 과거 수년간 완전자본잠식을 겪었던 만큼 추가 자금 조달이 필요할 경우 전환사채·우선주 등 희석적 수단에 다시 의존할 가능성이 있다. 영업현금흐름이 지속적으로 음수인 점도 외부 자금조달 의존도를 높이는 요인이다.",
-    "en": "The debt ratio remains elevated at 376.3%, and given years of complete capital impairment in the past, any need for further funding could again rely on dilutive instruments such as convertible bonds or preferred shares. Persistently negative operating cash flow also heightens dependence on external financing."
+    "ko": "연골재생의 104명 모집 목표와 국내 첨단재생의료 치료계획 신청이 예정대로 진행되지 않으면 상용화 시점이 늦어질 수 있다. 해외 인허가는 국가별 규제 대응 비용을 수반한다. 2026년 1분기 영업손실에도 글로벌 규제와 인허가 대응 비용이 포함됐다.",
+    "en": "If cartilage enrollment of 104 patients and the domestic treatment plan application slip, commercialization timing could be delayed. Overseas approvals carry country-specific regulatory costs. The first-quarter 2026 operating loss already included global regulatory and approval expenses."
    }
   },
   {
    "cat": {
-    "ko": "임상·규제 리스크",
-    "en": "Clinical and Regulatory Risk"
+    "ko": "자금 조달과 지분 희석",
+    "en": "Funding and dilution"
    },
    "body": {
-    "ko": "신장·연골 등 신규 적응증은 전임상 단계를 넘어 인체 임상과 각국 인허가·보험 등재 절차를 거쳐야 상업화로 이어진다. 국가별로 규제 경로와 소요 기간이 상이해 일정이 지연되거나 임상 결과가 기대에 미치지 못할 가능성을 배제할 수 없다.",
-    "en": "New indications such as kidney and cartilage regeneration must move beyond preclinical stages through human clinical trials and country-specific approval and reimbursement processes before commercialization. Regulatory pathways and timelines differ by country, and the possibility of delays or clinical results falling short of expectations cannot be ruled out."
+    "ko": "부채총계가 435억원으로 자본총계를 크게 웃도는 상황에서 전환사채 평가손실이 순손익을 흔들고 있다. 회사는 전환사채 전환이 마무리되면 자본 확충 효과가 생긴다고 설명했다. 다만 전환이 진행되면 주식 수가 늘어나 기존 주주 지분 가치에 영향을 줄 수 있다.",
+    "en": "With liabilities of KRW 43.5 billion well above equity, valuation losses on convertible bonds have swung the bottom line. The company said conversion of the bonds would strengthen capital. However, conversion increases the share count, which can affect the value of existing shareholders' stakes."
    }
   },
   {
    "cat": {
-    "ko": "경쟁·시장 리스크",
-    "en": "Competitive and Market Risk"
+    "ko": "해외 확장의 실행 부담",
+    "en": "Execution load of overseas expansion"
    },
    "body": {
-    "ko": "국내 그래피, T&R바이오팹, 엘앤씨바이오 등 유사 분야 기업뿐 아니라 자본력을 갖춘 해외 대형 의료기기·제약사가 재생의료 시장에 진입할 경우 경쟁 강도가 높아질 수 있다. 또한 특정 국가의 정책 변화나 공보험 적용 범위 조정이 매출 성장 속도에 영향을 줄 수 있다.",
-    "en": "Competitive intensity could rise not only from domestic peers such as Graphy, T&R Biofab, and L&C Bio, but also if larger, better-capitalized overseas medical device or pharmaceutical companies enter the regenerative medicine market. In addition, policy changes or adjustments to public insurance coverage in specific countries could affect the pace of revenue growth."
+    "ko": "미국, 사우디아라비아, 중남미 등 여러 시장에 동시에 진출하면서 현지 규제와 파트너 관리 부담이 커진다. 중국 시장은 WEGO 그룹과의 파트너십에 의존하는 구조다. 해외 매출 비중이 43.9%인 만큼 환율과 현지 제도 변화도 실적에 영향을 줄 수 있다.",
+    "en": "Entering the United States, Saudi Arabia and Latin America at once increases the burden of local regulation and partner management. The China plan depends on the partnership with WEGO Group. With 43.9% of revenue from overseas, exchange rates and local policy changes could also affect results."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중(3분기 실적 발표 예상 시점)",
-    "en": "Around November 2026 (expected Q3 earnings release)"
+    "ko": "2026년 11월 말",
+    "en": "Late November 2026"
    },
    "what": {
-    "ko": "2026년 3분기 매출 성장 지속 여부와 2분기에 급증한 연구개발·미국 사업 비용이 안정화되는지를 확인할 필요가 있다.",
-    "en": "Watch whether Q3 2026 revenue growth continues and whether the R&D and US business costs that spiked in Q2 begin to stabilize."
+    "ko": "연골재생 임상 104명 모집 완료 목표 시점이다. 달성 여부는 임상 규모 확대와 이후 국내 첨단재생의료 치료계획 신청 일정을 가늠하는 신호가 된다.",
+    "en": "This is the target for completing enrollment of 104 patients in the cartilage trial. Whether it is met will signal the pace of expansion and the timing of the domestic advanced treatment plan application."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 중",
-    "en": "During H2 2026"
+    "ko": "2026~2027년 핵심 기간 중",
+    "en": "During the 2026 to 2027 core period"
    },
    "what": {
-    "ko": "국내 만성콩팥병(CKD) 3~4단계 환자를 대상으로 한 신장재생 파일럿 임상 개시 여부와 초기 경과를 확인해야 한다.",
-    "en": "Confirm whether the domestic pilot clinical trial for stage 3-4 chronic kidney disease patients begins, and monitor early progress."
+    "ko": "신장재생의 국내 치료계획 신청 진행 여부와 신기능 보존 임상 결과가 확인 지점이다. 임상 결과가 나오면 해외 인허가 추진 속도를 가늠할 수 있다.",
+    "en": "Checkpoints include progress on the domestic treatment plan application for kidney regeneration and early results on kidney function preservation. Clinical results would indicate the pace of overseas approval efforts."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기~2027년 초",
-    "en": "Q4 2026 through early 2027"
+    "ko": "2027년 3월 31일까지",
+    "en": "By March 31, 2027"
    },
    "what": {
-    "ko": "하버드 의대 공동연구 데이터를 활용한 미국 FDA 확대접근프로그램(EAP) 신청 진행 여부를 확인할 필요가 있다.",
-    "en": "Check whether the company proceeds with a US FDA Expanded Access Program (EAP) application using data from its Harvard Medical School collaboration."
+    "ko": "2026년 사업보고서 제출 기한이다. 2026년 확정 매출과 영업손익, 현금흐름, 부채 구조가 공시되며 2026년 분기 수치의 연간 합계와 대조할 수 있다.",
+    "en": "This is the deadline for the 2026 annual business report. Confirmed 2026 revenue, operating results, cash flow and debt structure will be disclosed, allowing comparison with the sum of the 2026 quarterly figures."
    }
   },
   {
    "when": {
-    "ko": "매 분기 공시 시점마다",
-    "en": "At each quarterly disclosure"
+    "ko": "일정 미정(향후 공시)",
+    "en": "Date to be announced"
    },
    "what": {
-    "ko": "전환사채 잔여 물량의 전환청구 진행 상황과 총 발행주식수 변화를 통해 지분 희석 추이를 점검할 필요가 있다.",
-    "en": "Track the progress of remaining convertible bond conversions and changes in total shares outstanding to monitor dilution trends."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 3월 전후",
-    "en": "Around March 2027"
-   },
-   "what": {
-    "ko": "2026년 3월 발행된 상환전환우선주(RCPS)의 1년 보호예수 해제 시점으로, 유통 가능 물량 증가에 따른 수급 영향을 확인해야 한다.",
-    "en": "This marks the one-year lock-up expiry for the RCPS issued in March 2026; watch for supply-demand effects from the resulting increase in tradable shares."
+    "ko": "자회사 로킷아메리카의 나스닥 상장 절차 진행 상황이다. 일정과 조건이 공시되면 자금 조달 구조와 지분 구도 변화를 확인할 수 있다.",
+    "en": "Progress of the Nasdaq listing process for US subsidiary Rokit America. Once timing and terms are disclosed, changes to the funding structure and shareholding can be assessed."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "로킷헬스케어는 2025년 연간 매출이 전년 대비 2배로 늘고 처음으로 연간 영업이익 흑자를 기록하며 상업화 국면에 들어선 모습을 보였으나, 2026년에는 연골·신장 재생 임상 본격화와 미국 사업 확대에 따른 비용 증가로 영업손실과 순손실이 다시 확대됐다. 매출 성장 자체는 분기를 거듭하며 비교적 꾸준히 이어지고 있고, 하버드 의대와의 공동연구 등 임상적 근거 확보 활동도 지속되고 있다. 동시에 자본총계가 2025년 처음 양전환되며 과거의 완전자본잠식 상태는 해소됐지만, 전환사채·RCPS를 통한 자금조달 구조는 향후 지분 희석 요인으로 남아 있다. 결국 이 회사의 투자 스토리는 매출 성장과 파이프라인 확장이라는 강세 요인과, 손익 변동성·희석 우려라는 약세 요인이 동시에 작동하는 구간에 있다고 볼 수 있다. 다가오는 3분기 실적과 신장재생 임상 진입 여부가 향후 손익 안정화 속도를 판단하는 데 중요한 단서가 될 전망이다. 이 보고서는 투자 판단을 위한 정보 제공을 목적으로 하며 매수·매도 의견을 포함하지 않는다.",
-   "en": "Rokit Healthcare's 2025 full-year revenue doubled year-on-year and the company posted its first full-year operating profit, signaling progress toward commercialization, but in 2026 operating and net losses widened again as cartilage and kidney regeneration clinical work ramped up alongside rising US business costs. Revenue growth itself has continued fairly steadily across quarters, and clinical evidence-building activities, including the Harvard Medical School collaboration, have continued as well. At the same time, owners' equity turned positive for the first time in 2025, ending years of complete capital impairment, though the funding structure built on convertible bonds and redeemable convertible preferred shares remains a potential source of future dilution. Ultimately, the company's investment narrative sits at a point where bullish factors—revenue growth and pipeline expansion—and bearish factors—earnings volatility and dilution concerns—are both actively in play. The upcoming Q3 earnings release and progress on the kidney regeneration clinical trial are likely to offer important clues on the pace of future earnings stabilization. This report is intended for informational purposes only and does not constitute a buy or sell recommendation."
+   "ko": "로킷헬스케어는 2025년 매출 262억원(전년 대비 100.2% 증가)과 영업이익 흑자 전환으로 외형과 손익 구조에서 변화를 보여 줬다. 그러나 2026년 들어 세 분기 연속 영업손실이 이어졌고, 최근 4개 분기 지배주주 순손실 합계는 214억원이다. 2026년 3분기 매출은 61.3억원으로 전 분기보다 줄었고, 회사는 임상과 기술 투자 비용이 손실의 배경이라고 설명한다. 강세 측은 해외 매출 비중과 파이프라인 확장, 654억원 규모 투자 계획을 근거로 들고, 약세 측은 현금 유출과 부채 구조, 자금 조달 가능성, 실적 전망의 신뢰도 논란을 근거로 든다. 두 해석은 같은 공시 숫자를 어느 시간축에서 읽느냐에 따라 갈린다. 다음 확인 지점은 2026년 11월 말 연골재생 임상 모집 완료 목표와 2027년 3월 31일까지 제출될 2026년 사업보고서다. 사업보고서에서 2026년 연간 영업손익과 현금흐름의 방향이 드러난다.",
+   "en": "Rokit Healthcare showed change in its scale and profit structure, with 2025 revenue of KRW 26.2 billion (up 100.2% year on year) and a turn to operating profit. Yet operating losses have continued for three straight quarters in 2026, and the net loss attributable to controlling shareholders totals KRW 21.4 billion over the last four quarters. Third-quarter 2026 revenue of KRW 6.13 billion fell from the prior quarter, and the company attributes the losses to clinical and technology investment. The bull case rests on overseas revenue share, pipeline expansion and the KRW 65.4 billion investment plan, while the bear case rests on cash outflow, the debt structure, funding needs and questions over the reliability of its earnings outlook. The two readings diverge depending on which time frame is emphasized. The next checkpoints are the completion target for cartilage trial enrollment in late November 2026 and the 2026 business report due by March 31, 2027, which will show the direction of full-year 2026 operating results and cash flow."
   }
  },
  "sources": [
-  "https://m.thinkpool.com/compDiscuss/cont/1022247",
-  "https://sale.mimint.co.kr/bbs/view/news/S1N11/5345981?page=8&pageblock=6",
-  "https://moneyinsights365.com/entry/%EB%A1%9C%ED%82%B7%ED%97%AC%EC%8A%A4%EC%BC%80%EC%96%B4376900-%EC%A0%81%EC%9E%90-%ED%83%88%EC%B6%9C-%EA%B0%80%EB%8A%A5%ED%95%A0%EA%B9%8C-2026%EB%85%84-%EC%A3%BC%EA%B0%80-%EC%A0%84%EB%A7%9D-%EC%9E%AC%EB%AC%B4%EC%A0%9C%ED%91%9C%EC%8B%A4%EC%A0%81-%EB%B0%B8%EB%A5%98%EC%97%90%EC%9D%B4%EC%85%98-%EC%8B%AC%EC%B8%B5-%EB%B6%84%EC%84%9D",
-  "https://pharm.edaily.co.kr/News/Read?newsId=01866326642394256",
-  "https://www.paxetv.com/news/articleView.html?idxno=268666",
-  "https://dealsite.co.kr/articles/153002/068031",
+  "https://www.hitnews.co.kr/news/articleView.html?idxno=73825",
+  "https://www.butler.works/ko/companies/01335143",
   "https://alphasquare.co.kr/home/stock-summary?code=376900",
-  "https://www.mt.co.kr/thebio/2026/02/11/2026021113452815659",
-  "https://www.valueline.co.kr/finance/summary/376900",
-  "https://www.biotimes.co.kr/news/articleView.html?idxno=23876",
-  "https://www.infostockdaily.co.kr/news/articleView.html?idxno=208177",
-  "https://thevc.kr/rokithealthcare",
-  "https://www.eugenefn.com/common/files/amail//20250415_B_jongsun.park_2348.pdf",
-  "https://m.thinkpool.com/compDiscuss/cont/1018347",
-  "https://v.daum.net/v/y7FrmQ4qmu?f=p",
-  "https://www.biotimes.co.kr/news/articleView.html?idxno=25472",
-  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=638937",
-  "https://m.thinkpool.com/compDiscuss/cont/1027026"
+  "https://www.medicopharma.co.kr/news/articleView.html?idxno=67083",
+  "https://www.topdaily.kr/articles/108971",
+  "https://v.daum.net/v/20260515180617887?f=p",
+  "https://m.thinkpool.com/stockDiscuss/376900/cont/11837579",
+  "https://m.news.nate.com/view/20260211n36545",
+  "https://economist.co.kr/article/view/ecn202503280069",
+  "https://m.news.nate.com/view/20260211n29831",
+  "https://www.newstopkorea.com/news/articleView.html?idxno=48919",
+  "https://sale.mimint.co.kr/bbs/view/news/S1N11/5345981?page=8&pageblock=6",
+  "https://www.medipana.com/news/articleView.html?idxno=421421",
+  "https://www.biotimes.co.kr/news/articleView.html?idxno=31781",
+  "https://view.asiae.co.kr/article/2026051516131137757",
+  "https://www.job-post.co.kr/news/articleView.html?idxno=236215",
+  "https://news.nate.com/view/20260516n00293",
+  "https://www.newspost.kr/news/articleView.html?idxno=227215"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "376900",
  "name": "로킷헬스케어",
  "name_en": "ROKIT HEALTHCARE Inc.",
@@ -233,11 +223,11 @@
   "바이오·제약"
  ],
  "market": "코스닥",
- "reportDate": "2026-10-02",
- "reportTs": "2026-10-02 04:15",
- "dataDate": "20261001",
+ "reportDate": "2026-11-14",
+ "reportTs": "2026-11-14 07:36",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-09-05",
+  "asOf": "2026-11-13",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -308,12 +298,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 6012600153,
-    "op": 21533779,
-    "np_owner": -972006820
-   },
-   {
     "q": "2025Q3",
     "rev": 6954615621,
     "op": 77538648,
@@ -336,25 +320,31 @@
     "rev": 8215797437,
     "op": -13452986165,
     "np_owner": -9340760284
+   },
+   {
+    "q": "2026Q3",
+    "rev": 6128350220,
+    "op": -9475117408,
+    "np_owner": -9874959798
    }
   ],
   "valuation": {
-   "price": 28600,
-   "mcap": 0.4998,
-   "shares": 17445290,
-   "total_shares": 16642641,
-   "wavg_shares": 15716534,
+   "price": 17250,
+   "mcap": 0.3018,
+   "shares": 17493263,
+   "total_shares": 18397165,
+   "wavg_shares": 16166986,
    "per": null,
-   "eps": -802,
+   "eps": -1315,
    "pbr": null,
    "bps": null,
-   "roe_ttm": -166.4,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": -12689566467,
+   "roe_ttm": -122.3,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": -21404652114,
    "ccy": "KRW",
    "bps_src": "자체",
    "eps_src": "공시",
-   "pbr_krx": 34.32,
+   "pbr_krx": 23.31,
    "bps_krx": 740.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
@@ -363,5 +353,6 @@
     "per": "loss"
    }
   }
- }
+ },
+ "textRules": 2
 }

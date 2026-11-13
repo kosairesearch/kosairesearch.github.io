@@ -1,220 +1,229 @@
 {
  "title": {
-  "ko": "반도체유통 실적 급증, 신사업은 진통",
-  "en": "Distribution Profits Surge, New Ventures Falter"
+  "ko": "매출 확대 속 마진 압박, 3분기 적자 전환",
+  "en": "Revenue Growth Meets Margin Pressure, Q3 Swings to Loss"
  },
  "lead": {
-  "ko": "유니트론텍은 반도체·디스플레이 유통 사업의 실적이 최근 분기 들어 뚜렷하게 개선됐지만, 신성장동력으로 육성해온 자율주행 자회사 토르드라이브가 2026년 4월 파산 선고를 받으며 신사업 전략의 재정비가 필요한 국면에 놓여 있다.",
-  "en": "Unitrontech's core semiconductor and display distribution business has shown a clear earnings recovery in recent quarters, but its autonomous-driving subsidiary ThorDrive, once positioned as a new growth engine, was declared bankrupt in April 2026, leaving the company's new-business strategy in need of reassessment."
+  "ko": "유니트론텍은 2023년부터 2025년까지 매출이 3년 연속 늘었지만 영업이익률은 2023년 5.2%에서 2025년 4.2%로 낮아졌고, 2026년 3분기에는 지배주주 순손실 70억원으로 적자 전환했다.",
+  "en": "Unitrontech's revenue rose for three consecutive years through 2025, but its operating margin fell from 5.2% in 2023 to 4.2% in 2025, and in Q3 2026 it swung to a net loss attributable to controlling shareholders of KRW 7 billion."
  },
  "keypoints": [
   {
-   "ko": "2026년 2분기 매출 3,401억원·영업이익 396억원으로 분기 기준 뚜렷한 개선세를 보였고, 최근 네 개 분기(2025년 3분기~2026년 2분기) 지배주주 순이익은 443억원에 달했다.",
-   "en": "Q2 2026 revenue reached KRW 340.1bn with operating profit of KRW 39.6bn, and net income attributable to owners over the trailing four quarters (Q3 2025-Q2 2026) totaled KRW 44.3bn."
+   "ko": "2025년 매출 7,690억원은 2022~2025년 중 가장 큰 해지만, 영업이익은 323억원으로 2024년 361억원보다 줄었다.",
+   "en": "2025 revenue of KRW 769 billion was the largest year in 2022-2025, but operating profit of KRW 32.3 billion was below the KRW 36.1 billion recorded in 2024."
   },
   {
-   "ko": "2025년 연간 매출은 전년 대비 늘었으나 영업이익과 순이익은 오히려 줄어, 재고조정과 비용 부담이 수익성을 제약했다.",
-   "en": "Full-year 2025 revenue rose year over year, but operating profit and net income declined, as inventory adjustments and cost burdens constrained profitability."
+   "ko": "지배주주 순이익은 2025년 127억원(전년 대비 39.2% 감소)으로 줄었고, 2026년 1분기 158억원과 2분기 166억원으로 회복된 뒤 3분기에 순손실 70억원으로 돌아섰다.",
+   "en": "Net income attributable to controlling shareholders fell 39.2% to KRW 12.7 billion in 2025, recovered to KRW 15.8 billion in Q1 2026 and KRW 16.6 billion in Q2 2026, then turned to a KRW 7 billion loss in Q3 2026."
   },
   {
-   "ko": "핵심 신사업으로 추진해온 자율주행 자회사 토르드라이브가 2026년 4월 24일 서울회생법원으로부터 파산 선고를 받았다.",
-   "en": "ThorDrive, the autonomous-driving subsidiary central to the company's new-business push, was declared bankrupt by the Seoul Bankruptcy Court on April 24, 2026."
+   "ko": "2026년 3분기 영업이익 85.1억원은 전년 동기 대비 23.6% 늘었지만 전 분기 대비로는 78.5% 줄었고, 영업이익과 지배주주 순손익의 방향이 엇갈렸다.",
+   "en": "Q3 2026 operating profit of KRW 8.51 billion rose 23.6% year on year but fell 78.5% from the prior quarter, with operating and net results moving in opposite directions."
   },
   {
-   "ko": "로봇용 AI 컴퓨팅 모듈 'URC-100'은 여전히 상용화·양산 단계에 있으며, 국내 로봇 AI 모듈 시장은 중국·대만산 제품 의존도가 높다는 평가가 있다.",
-   "en": "The robot AI computing module 'URC-100' remains at the commercialization and production stage, while the domestic robot AI module market has been described as heavily dependent on Chinese and Taiwanese products."
+   "ko": "2026년 3월 공시된 기업가치 제고 계획은 2026 사업연도 연결 매출과 총배당금을 각각 전년 대비 10% 늘리는 목표를 담고 있다.",
+   "en": "The value-up plan disclosed in March 2026 sets targets of 10% growth in consolidated revenue and 10% growth in total dividends for fiscal 2026."
   },
   {
-   "ko": "주요 글로벌 메모리 반도체 벤더의 공급 대리점 지위를 바탕으로 국내 전장용 반도체의 90% 이상을 공급하는 안정적 시장 지위를 유지하고 있다.",
-   "en": "The company maintains a stable market position as a distributor for a major global memory semiconductor vendor, supplying over 90% of domestic automotive-grade semiconductors."
+   "ko": "2026년 3월 불성실공시법인 지정예고를 받은 뒤 6개월 지정유예 결정을 받았으며, 사유는 최대주주 변경을 수반하는 주식 담보제공 계약 정정 지연이었다.",
+   "en": "In March 2026 the company received a notice of designation as an unfaithful-disclosure company, then a six-month deferral, with the cause being a delayed amendment to a share pledge agreement tied to a change in the largest shareholder."
   }
  ],
  "business": {
-  "ko": "유니트론텍은 1996년 설립된 반도체·디스플레이 유통 전문기업으로, Micron, AUO, Delta, Fujitsu, Microchip, U-blox 등 해외 벤더의 메모리·비메모리 반도체 및 디스플레이 상품을 국내외로 유통한다. 취급 품목은 메모리 전 종류부터 ISP(Image Signal Processor) IC, 옵틱 트랜시버, MCU, 디스플레이, 아날로그, GPS 모듈 등으로 다양하며, 다산네트웍스·LG전자·콘티넨탈·현대모비스·현대오트론 등 약 300여개 고객사를 보유하고 있다. 종속회사인 오스코는 동사와 동일하게 비메모리 반도체와 디스플레이 유통사업을 영위한다. 자동차 전장용 메모리 반도체 부문에서는 국내 공급의 90% 이상을 차지하는 안정적 지위를 갖고 있다. 최근 사업보고서 기준 매출 구성은 반도체 부문이 약 72%, 디스플레이 등 기타 부문이 약 28%로 반도체 유통이 주력이다. 신성장동력으로는 자율주행과 AI 로보틱스 사업을 추진해왔는데, 2024년 1월 자율주행 소프트웨어·하드웨어 개발사 토르드라이브의 지분 51%를 약 49억원에 취득해 최대주주가 됐다. 이를 통해 로봇용 AI 컴퓨팅 모듈 'URC-100'의 경쟁력 강화를 기대했으나, 해당 자회사는 이후 완전자본잠식을 벗어나지 못하고 2026년 파산 절차에 들어갔다. 동종 유통업체로는 유니퀘스트, 매커스, 미래반도체 등이 있으며, 글로벌 벤더와의 오랜 협력 관계가 경쟁 차별점으로 꼽힌다.",
-  "en": "Founded in 1996, Unitrontech is a semiconductor and display distribution company that supplies memory and non-memory semiconductors and display products from overseas vendors including Micron, AUO, Delta, Fujitsu, Microchip, and U-blox to domestic and international markets. Its product lineup spans the full range of memory chips as well as image signal processor ICs, optical transceivers, MCUs, displays, analog components, and GPS modules, serving roughly 300 customers including Dasan Networks, LG Electronics, Continental, Hyundai Mobis, and Hyundai Autron. Its subsidiary OSCO conducts the same non-memory semiconductor and display distribution business. In the automotive-grade memory semiconductor segment, the company holds a stable position supplying over 90% of the domestic market. According to recent filings, semiconductors account for about 72% of revenue, with displays and other products making up roughly 28%, underscoring semiconductor distribution as the core business. As a new growth driver, the company has pursued autonomous driving and AI robotics, acquiring a 51% stake in autonomous driving software and hardware developer ThorDrive for about KRW 4.9bn in January 2024 to become its controlling shareholder, aiming to strengthen the competitiveness of its robot AI computing module 'URC-100.' However, the subsidiary remained in complete capital impairment and entered bankruptcy proceedings in 2026. Peer distributors include Uniquest, Macus, and Mirae Semiconductor, with long-standing vendor relationships cited as a differentiating factor."
+  "ko": "유니트론텍은 1996년 설립된 반도체·디스플레이 유통 기업이다. 마이크론(Micron), AUO, 후지쯔(Fujitsu) 등 해외 공급사의 반도체와 디스플레이 제품을 국내외 고객에 공급하는 것이 핵심 사업이며, 제조 설비보다 조달과 공급망 관리가 사업의 중심에 있다. 제품별 매출 비중은 2024년 상반기 기준 반도체 64.06%, 디스플레이 등 35.75%였다. 2023년 기준으로는 반도체 유통이 61.8%, 디스플레이 유통 및 기타가 38.2%였다. 반도체 유통 중 약 65%는 메모리, 35%는 비메모리로 구성됐고, 전체 매출의 80% 이상이 자동차 산업에서 발생한다고 2023년 보도에서 설명됐다. 2024년 상반기 매출 구성은 내수 93.15%, 수출 6.85%였다. 2018년 인수한 반도체·디스플레이 유통사 오스코를 종속회사로 두고 있으며, 자율주행 소프트웨어와 하드웨어를 개발하는 자회사도 보유하고 있다. 회사는 자율주행과 AI 로봇 분야의 개발과 사업화를 정부 국책과제와 자체 개발로 병행하고 있다. 고객 측면에서는 차량용 메모리 반도체를 부품사에 직접 제안해 공급해 온 점이 특징이다. 삼성전기나 LG이노텍이 자체 생산 능력으로 경쟁하는 것과 달리, 유니트론텍은 해외 벤더의 공급권과 고객 관계에 의존하는 유통형 모델이다. 이 구조 때문에 매출 규모는 크지만 2022~2025년 영업이익률은 4.2~5.9%에 머물렀다.",
+  "en": "Unitrontech, founded in 1996, is a distributor of semiconductors and display products. Its core business is supplying products from overseas vendors such as Micron, AUO and Fujitsu to customers in Korea and abroad, so procurement and supply-chain management sit at the center of the business rather than manufacturing. By product, semiconductors made up 64.06% of revenue and displays and other products 35.75% in the first half of 2024. In 2023, semiconductor distribution accounted for 61.8% and display distribution and other items for 38.2%. A 2023 report said about 65% of semiconductor distribution was memory and 35% non-memory, and that more than 80% of total revenue came from the automotive industry. In the first half of 2024, domestic sales were 93.15% of revenue and exports 6.85%. The company holds Osco, a semiconductor and display distributor acquired in 2018, as a consolidated subsidiary, and also owns a subsidiary developing autonomous driving software and hardware. It is pushing development and commercialization in autonomous driving and AI robotics alongside government-backed projects and in-house development. On the customer side, it has supplied automotive memory semiconductors by proposing them directly to parts makers. Unlike Samsung Electro-Mechanics or LG Innotek, which compete on in-house production capacity, Unitrontech runs a distribution model that depends on supply rights from overseas vendors and customer relationships. This structure gives it large revenue but an operating margin of 4.2% to 5.9% over 2022-2025."
  },
  "earnings": {
-  "ko": "2025년 연결 매출은 7,689.7억원으로 전년 6,712.9억원 대비 늘었지만, 영업이익은 322.7억원으로 전년 361.3억원에서 줄었고 지배주주 순이익도 127.2억원으로 전년 209.0억원에서 큰 폭 감소했다. 영업이익률은 2022년 5.9%, 2023년 5.2%, 2024년 5.1%, 2025년 4.2%로 4년 연속 하락하며 매출 성장에도 마진이 얇아지는 흐름이 이어졌다. 그러나 분기별로 보면 흐름이 뚜렷하게 반전된다. 2025년 2분기 영업이익은 35.9억원에 그쳤고 지배주주 순이익은 -49.0억원으로 적자를 기록했으나, 3분기 영업이익 68.8억원·순이익 58.4억원으로 흑자 전환했고, 4분기에는 영업이익 118.1억원·순이익 60.5억원으로 개선세가 이어졌다. 2026년 들어서는 1분기 매출 2,203.1억원·영업이익 184.4억원(영업이익률 약 8.4%)·순이익 157.7억원, 2분기 매출 3,401.0억원·영업이익 396.0억원(영업이익률 약 11.6%)·순이익 166.4억원으로 매출과 마진이 동반 확대됐다. 그 결과 최근 네 개 분기(2025년 3분기~2026년 2분기) 누적 지배주주 순이익은 443.0억원으로, 2025년 연간 순이익(127.2억원)의 세 배를 넘어서는 수준까지 회복됐다. 다만 2025년 연간 영업활동현금흐름은 -221.6억원으로 2022~2024년의 양(+)의 현금흐름(각각 40.6억원, 88.7억원, 36.5억원)에서 크게 벗어나 음전환했는데, 이는 재고 및 매출채권 등 운전자본 부담이 커졌을 가능성을 시사한다. 부채비율은 2022년 168.0%에서 2023년 119.3%로 낮아졌다가 2024년 136.2%, 2025년 134.2%로 다시 소폭 높아진 흐름을 보였다.",
-  "en": "Consolidated revenue rose to KRW 768.97bn in 2025 from KRW 712.29bn in 2024, but operating profit fell to KRW 32.27bn from KRW 36.13bn, and net income attributable to owners declined sharply to KRW 12.72bn from KRW 20.90bn. Operating margin fell for four consecutive years, from 5.9% in 2022 to 5.2% in 2023, 5.1% in 2024, and 4.2% in 2025, with margins thinning even as revenue grew. The quarterly pattern, however, shows a clear reversal: operating profit in Q2 2025 was just KRW 3.59bn with a net loss of KRW 4.90bn attributable to owners, before turning profitable in Q3 with operating profit of KRW 6.88bn and net income of KRW 5.84bn, and improving further in Q4 to operating profit of KRW 11.81bn and net income of KRW 6.05bn. Momentum accelerated into 2026, with Q1 revenue of KRW 220.31bn, operating profit of KRW 18.44bn (margin of about 8.4%), and net income of KRW 15.77bn, followed by Q2 revenue of KRW 340.10bn, operating profit of KRW 39.60bn (margin of about 11.6%), and net income of KRW 16.64bn, marking simultaneous expansion in both revenue and margin. As a result, net income attributable to owners over the trailing four quarters (Q3 2025-Q2 2026) reached KRW 44.30bn, more than three times the full-year 2025 figure of KRW 12.72bn. Notably, full-year 2025 operating cash flow turned negative at KRW -22.16bn, a marked departure from the positive cash flows of KRW 4.06bn, KRW 8.87bn, and KRW 3.65bn in 2022, 2023, and 2024 respectively, suggesting a possible buildup in working capital such as inventory or receivables. The debt ratio moved from 168.0% in 2022 down to 119.3% in 2023, before rising again to 136.2% in 2024 and 134.2% in 2025."
+  "ko": "공시 실적 기준 연간 매출은 2022년 5,250억원에서 2023년 5,981억원(전년 대비 13.9% 증가), 2024년 7,123억원(전년 대비 19.1% 증가), 2025년 7,690억원(전년 대비 8.0% 증가)으로 2023년부터 2025년까지 3년 연속 증가했다. 영업이익은 2022년 309억원, 2023년 309억원(전년 대비 0.2% 증가), 2024년 361억원(전년 대비 16.8% 증가)으로 늘었고, 2025년에는 323억원(전년 대비 10.7% 감소)으로 줄었다. 영업이익률은 2022년 5.9%, 2023년 5.2%, 2024년 5.1%, 2025년 4.2%로 4년 내내 낮아졌다. 매출은 늘었지만 마진이 얇아지는 구조가 이어진 셈이다. 지배주주 순이익은 2024년 209억원으로 가장 컸고, 2025년 127억원(전년 대비 39.2% 감소)으로 가장 작았다. 당기순이익(비지배지분 포함)은 2025년 118억원으로 2024년 197억원에서 줄었다. 2026년 2월 공시에서 회사는 영업이익 감소 요인으로 2024년 대비 환율 기저효과와 사업확장에 따른 판매관리비 증가를 제시했고, 종속회사 토르드라이브 관련 손상 인식이 순이익 감소에 영향을 줬다고 밝혔다. 분기로 보면 2025년 3분기 매출 1,924억원·영업이익 68.8억원, 2025년 4분기 1,986억원·118억원, 2026년 1분기 2,203억원·184억원, 2026년 2분기 3,401억원·396억원으로 영업이익이 단계적으로 올라왔다. 2026년 3분기에는 매출 2,888억원(전 분기 대비 15.1% 감소, 전년 동기 대비 50.1% 증가), 영업이익 85.1억원(전 분기 대비 78.5% 감소, 전년 동기 대비 23.6% 증가)으로 줄었고, 지배주주 순손실 70억원으로 적자 전환했다. 영업이익은 전년 동기보다 늘었으나 지배주주 순손익이 적자로 돌아선 것이 3분기의 핵심 차이다. 최근 4개 분기(2025년 4분기~2026년 3분기) 지배주주 순이익 합계는 315억원이다.",
+  "en": "On a disclosed annual basis, revenue went from KRW 525 billion in 2022 to KRW 598.1 billion in 2023 (up 13.9% year on year), KRW 712.3 billion in 2024 (up 19.1%) and KRW 769 billion in 2025 (up 8.0%), rising for three consecutive years from 2023 through 2025. Operating profit was KRW 30.9 billion in 2022, KRW 30.9 billion in 2023 (up 0.2%), and KRW 36.1 billion in 2024 (up 16.8%), before falling to KRW 32.3 billion in 2025 (down 10.7%). The operating margin declined from 5.9% in 2022 to 5.2% in 2023, 5.1% in 2024 and 4.2% in 2025, so revenue grew while margins thinned. Net income attributable to controlling shareholders peaked at KRW 20.9 billion in 2024 and was lowest at KRW 12.7 billion in 2025 (down 39.2%). Net income including non-controlling interests was KRW 11.8 billion in 2025, down from KRW 19.7 billion in 2024. In a February 2026 disclosure, the company attributed the operating profit decline to the reversal of a favorable exchange-rate base effect and higher selling and administrative costs from business expansion and added headcount, and said an impairment recognized on the subsidiary Thor Drive weighed on net income. Quarterly operating profit moved up step by step: KRW 6.88 billion in Q3 2025 on revenue of KRW 192.4 billion, KRW 11.8 billion in Q4 2025 on KRW 198.6 billion, KRW 18.4 billion in Q1 2026 on KRW 220.3 billion, and KRW 39.6 billion in Q2 2026 on KRW 340.1 billion. In Q3 2026 revenue was KRW 288.8 billion (down 15.1% from the prior quarter, up 50.1% year on year) and operating profit was KRW 8.51 billion (down 78.5% quarter on quarter, up 23.6% year on year), and the company swung to a net loss attributable to controlling shareholders of KRW 7 billion. Operating profit rose from a year earlier, but the swing to a controlling-shareholder loss is the key difference in Q3. Net income attributable to controlling shareholders over the last four quarters (Q4 2025 to Q3 2026) totaled KRW 31.5 billion."
  },
  "industry": {
-  "ko": "유니트론텍이 속한 반도체·디스플레이 유통업은 글로벌 벤더와 국내 전자·자동차 부품업체 사이에서 물량과 재고를 조율하는 사업 구조로, 메모리 반도체 수급과 가격 변동에 실적이 직접 연동되는 특성이 있다. 동사는 국내 전장용 반도체 공급의 90% 이상을 차지하는 안정적 지위를 확보하고 있어 유니퀘스트, 매커스, 미래반도체 등 동종 유통업체와 경쟁하는 구도다. 신사업으로 추진 중인 로봇 AI 컴퓨팅 모듈 시장과 관련해서는, 정형화된 플랫폼이 부재한 가운데 국내 로봇 기업들이 중국 및 대만산 제품에 의존도가 높다는 분석이 업계에서 제기된 바 있다. 자율주행 분야는 국내 규제와 법·제도가 아직 상용화 단계를 뒷받침하지 못해 국내 자율주행 기업 다수가 수익성 확보에 어려움을 겪고 있는 것으로 파악된다. 실제로 자율주행 1세대 기업으로 꼽히던 토르드라이브 역시 카카오모빌리티, CJ대한통운, 포스코기술투자 등으로부터 대규모 투자를 유치했음에도 상용화 문턱을 넘지 못하고 파산에 이르렀는데, 이는 산업 전반의 높은 진입장벽을 보여주는 사례로 거론된다. 이런 가운데 동사는 산업통상자원부 국책과제 등을 통해 건설기계 자율화·디지털화를 위한 소프트웨어 정의 머신(SDM) 플랫폼 개발을 추진하며 기술 축적을 이어가고 있다.",
-  "en": "The semiconductor and display distribution business Unitrontech operates in coordinates volume and inventory flows between global vendors and domestic electronics and automotive parts makers, with performance closely tied to memory chip supply and pricing conditions. The company competes against peer distributors such as Uniquest, Macus, and Mirae Semiconductor, while holding a stable position supplying more than 90% of domestic automotive-grade semiconductors. In the robot AI computing module market that the company is pursuing as a new business, industry analysis has noted the absence of a standardized platform and a heavy reliance among domestic robotics firms on Chinese and Taiwanese products. In the autonomous driving sector, domestic regulatory and legal frameworks have yet to support full commercialization, and many domestic autonomous-driving companies reportedly continue to struggle with profitability. Indeed, ThorDrive, considered a first-generation autonomous driving company that had raised substantial investment from Kakao Mobility, CJ Logistics, and POSCO Technology Investment, was unable to clear the commercialization threshold and ultimately went bankrupt, an outcome cited as illustrative of the sector's high barriers to entry. Against this backdrop, the company continues to build technical capabilities through a government-backed project under the Ministry of Trade, Industry and Energy aimed at developing a Software Defined Machine (SDM) platform for the autonomy and digitalization of construction machinery."
+  "ko": "유니트론텍의 외형은 자동차 전장화에 따른 차량용 반도체 탑재량 증가에 크게 기대 왔다. 2024년 상반기 실적을 분석한 증권가 보고서는 차량용 반도체 탑재량 증가와 우호적인 환율 환경을 매출 성장의 배경으로 꼽았다. 한국신용평가의 2024년 3월 등급 보고서는 자동차 전장부품 사용 증가와 환율 상승세가 외형 성장을 이끌었다고 설명했다. 같은 보고서는 차량용 반도체와 디스플레이 적용 확대를 바탕으로 향후에도 매출 증가세가 이어질 것으로 전망했다. 2024년 보도에 실린 분석에 따르면 현대차·기아의 글로벌 판매는 수년간 600만~700만대 수준이었고, 완성차 판매량이 유통 물량의 기본 체력이 된다. 2025년 영업이익 감소 요인으로 회사가 환율 기저효과를 꼽은 만큼 원·달러 환율의 방향도 실적 변수로 작용한다. 반도체 유통 가격은 메모리 가격과 재고 흐름에 좌우되므로 반도체 사이클의 위치를 함께 봐야 한다. 경쟁 측면에서 삼성전기, LG이노텍, 이수페타시스 같은 제조 기업과 달리 유니트론텍의 경쟁력은 공급 계약과 재고 확보 역량에 기반한다. 디스플레이 유통은 2024년 상반기 기준 매출의 35.75%로 비중이 작지 않아 반도체와 함께 실적을 가르는 축이다.",
+  "en": "Unitrontech's revenue growth has depended heavily on rising semiconductor content in vehicles as automotive electronics expand. A securities research report analyzing the first half of 2024 cited rising in-vehicle semiconductor content and a favorable exchange-rate environment as drivers of revenue growth. A February 2024 rating report from Korea Ratings attributed revenue growth to higher use of automotive electronic parts and a rise in the exchange rate. The same report expected revenue growth to continue on wider adoption of automotive semiconductors and displays. A 2024 news report cited analysts saying Hyundai and Kia's global sales had held at roughly 6 million to 7 million vehicles a year for several years, which makes vehicle volume the base load for distribution volume. The company cited the reversal of a favorable exchange-rate base effect as a reason for lower operating profit in 2025, so the direction of the won-dollar rate is also a variable for earnings. Semiconductor distribution prices depend on memory prices and inventory flows, so the position in the chip cycle matters alongside company-specific factors. On competition, unlike manufacturers such as Samsung Electro-Mechanics, LG Innotek and Isupetasys, Unitrontech's position rests on supply contracts and inventory-securing capability. Display distribution made up 35.75% of revenue in the first half of 2024, so it is a meaningful driver alongside semiconductors."
  },
  "outlook": {
-  "ko": "회사는 2024년 10월 산업통상자원부의 '건설기계 디지털 솔루션 대응을 위한 SDM 플랫폼 개발' 국책과제 세부과제의 주관기관으로 선정돼, 클라우드 기반 중앙제어 인프라 소프트웨어 개발을 추진하고 있다. 로봇용 AI 컴퓨팅 모듈 'URC-100'은 협동로봇·물류용 자율주행로봇(AMR)·서빙로봇 등에 탑재되는 제품으로, 하나증권은 2024년 10월 보고서에서 국내 메이저 실외 자율주행 로봇 제조사와의 테스트를 마치고 이후 양산에 돌입할 것으로 전망한 바 있으나, 실제 양산 및 매출 반영 시점은 이후에도 여러 차례 순연된 것으로 파악된다. 신사업 축의 한쪽이었던 자율주행 자회사 토르드라이브는 2026년 4월 파산 선고를 받아, 향후 연결 실적에서 해당 자회사의 자산·손익 처리 및 연결범위 변경 여부가 확인되어야 하는 상황이다. 이에 따라 회사의 신사업 전략은 URC-100을 비롯한 자체 하드웨어·소프트웨어 역량과 국책과제 성과에 더 집중될 가능성이 있다. 핵심 유통사업 측면에서는 2026년 1분기와 2분기에 매출과 영업이익률이 동반 확대되는 흐름이 나타났는데, 이 개선이 일회성 요인인지 추세적 개선인지는 향후 분기 실적으로 확인이 필요하다. 종속회사 오스코를 통한 비메모리 반도체·디스플레이 유통사업도 기존 벤더망을 기반으로 지속될 것으로 보인다.",
-  "en": "In October 2024, the company was selected as the lead institution for a sub-project under the Ministry of Trade, Industry and Energy's 'SDM Platform Development for Construction Machinery Digital Solutions' government initiative, and is pursuing development of cloud-based central control infrastructure software. The robot AI computing module 'URC-100,' designed for collaborative robots, logistics autonomous mobile robots (AMR), and serving robots, was projected in an October 2024 Hana Securities report to move toward mass production following testing with a major domestic outdoor autonomous robot manufacturer, though the actual timing of mass production and revenue recognition appears to have been pushed back multiple times since. ThorDrive, one pillar of the new-business strategy, was declared bankrupt in April 2026, meaning future consolidated results will need to reflect how the subsidiary's assets, losses, and scope of consolidation are treated going forward. As a result, the company's new-business strategy may increasingly center on its own hardware and software capabilities, including URC-100, and outcomes from the government-backed project. On the core distribution side, both revenue and operating margin expanded in Q1 and Q2 2026, though whether this improvement is a one-off factor or a sustained trend will require confirmation in upcoming quarterly results. The non-memory semiconductor and display distribution business conducted through subsidiary OSCO is expected to continue based on its existing vendor network."
+  "ko": "회사는 2026년 3월 공시한 기업가치 제고 계획에서 2026 사업연도 연결 매출을 전년 대비 10% 성장시키는 목표를 제시했다. 같은 계획은 총배당금도 전년 대비 10% 늘리는 목표와 안정적 배당정책 유지를 담았다. 매출 목표는 2025년 매출 7,690억원에서 10% 늘어난 수준을 가리킨다. 2026년 1~3분기 매출은 분기별로 모두 2025년 같은 분기보다 많았고, 세 분기 합계가 2025년 연간 매출을 넘어섰다. 다만 3분기에는 매출이 전 분기 대비 15.1% 줄었으므로 4분기 흐름이 연간 목표 달성 여부를 가를 변수다. 회사가 제시한 사업 방향은 반도체·디스플레이 중심의 주력사업 경쟁력 강화를 통한 안정적 외형 성장이다. 자율주행과 AI 로봇 사업은 개발과 사업화를 추진하는 단계이며, 이 사업이 매출에 기여하는 정도는 아직 수치로 드러나지 않았다. 2025년 판매관리비 증가는 사업확장에 따른 인원 충원과 연결돼 있어, 신규 사업의 고정비가 2026년 이익률에 어떻게 반영되는지가 관건이다. 2026년 1분기와 2분기에 영업이익률이 크게 올라갔던 만큼, 이 개선이 지속되는지는 2026 사업보고서의 분기별 판매관리비와 영업외손익 내역으로 확인할 대상이다.",
+  "en": "In its value-up plan disclosed in March 2026, the company set a target of 10% growth in consolidated revenue for fiscal 2026 compared with the prior year. The same plan targets a 10% increase in total dividends and maintaining a stable dividend policy. The revenue target corresponds to 10% above 2025 revenue of KRW 769 billion. Revenue in each quarter of 2026 through Q3 exceeded the same quarter of 2025, and the three-quarter total has already surpassed full-year 2025 revenue. However, Q3 revenue fell 15.1% from the prior quarter, so the Q4 trend will determine whether the annual target is reached. The business direction the company presents is to strengthen competitiveness in its core semiconductor and display distribution and achieve steady top-line growth. Autonomous driving and AI robotics are at the stage of development and commercialization, and their contribution to revenue has not yet appeared in disclosed figures. The rise in selling and administrative costs in 2025 was linked to added headcount from business expansion, so how the fixed costs of new businesses feed into 2026 margins is the key question. Because operating margins improved sharply in Q1 and Q2 2026, whether that improvement lasts will be checked against quarterly selling and administrative expenses and non-operating items in the 2026 annual report."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 순자산가치 대비 할인된 구간에서 거래되고 있어, 시장이 보유 자산가치보다 낮은 값을 부여하고 있는 상태로 볼 수 있다. 반면 최근 네 개 분기 지배주주 순이익이 2025년 연간 실적을 크게 웃돌 정도로 급증했기 때문에, 최근 실적을 기준으로 산출한 순이익 배수는 2025년 연간 실적 기준보다 낮게 나타난다. 이는 최근의 이익 개선이 이어질 경우와 2025년 이전과 같은 낮은 마진 구조로 되돌아갈 경우에 따라 배수 해석이 크게 달라질 수 있음을 의미한다. 회사는 최근 몇 년간 현금배당을 실시해온 이력이 있으나, 배당 정책의 지속성과 규모는 반도체 유통업 특성상 매 분기 실적 변동에 영향을 받을 수 있다. 자회사 토르드라이브의 파산에 따른 자산 손상 여부와 향후 연결범위 조정은 순자산가치 계산에 영향을 줄 수 있는 변수로 남아 있다.",
-  "en": "The current share price trades at a discount to net asset value, meaning the market is currently assigning a value below the company's book equity. At the same time, net income attributable to owners over the trailing four quarters has surged well above the full-year 2025 result, so an earnings multiple calculated on recent performance comes out lower than one based on the full-year 2025 figure. This means how the multiple should be interpreted depends heavily on whether the recent earnings improvement persists or reverts toward the thinner margin structure seen before 2025. The company has a history of paying cash dividends in recent years, but the continuity and scale of that policy could be affected by the quarter-to-quarter earnings volatility inherent to the semiconductor distribution business. Potential asset impairment from ThorDrive's bankruptcy and any resulting change in consolidation scope remain variables that could affect the calculation of net asset value going forward."
+  "ko": "주가순자산비율은 주당순자산을 밑도는 구간에 있어 순자산 대비 할인 상태로 거래되는 구도다. 순자산 기준점은 2025년 말 지배주주 지분 1,394억원이며, 시가총액이 이 자본에 얼마나 가까운지가 자산 측면 해석의 출발점이다. 이익 기준으로는 최근 네 개 분기(2025년 4분기~2026년 3분기) 지배주주 순이익 합계가 315억원이며, 이 합계에 2026년 3분기 순손실이 이미 포함돼 있다. 분기 실적 변동 폭이 커서 이익 기반 배수는 기간에 따라 크게 달라지므로 기간을 함께 보는 것이 해석의 전제다. 2022년 이후 영업이익은 309억원에서 323억원으로 연간 기준 큰 변화 없이 움직였고, 매출 규모 증가에 비해 이익 증가는 제한적이었다. 배당은 2026 사업연도 총배당금을 전년 대비 10% 늘리는 목표가 제시돼 있어 배당 관련 해석은 이 목표의 이행 여부와 연결된다. 부채비율은 2025년 말 134.2%로 2022년 168.0%보다 낮아졌으나, 2025년 영업활동 현금흐름이 마이너스였다는 점을 함께 봐야 한다.",
+  "en": "The price-to-book ratio places the stock below book value per share, so it trades at a discount to net assets. The net asset reference point is controlling-shareholder equity of KRW 139.4 billion at the end of 2025, and how close market capitalization sits to that equity is the starting point for an asset-based reading. On earnings, net income attributable to controlling shareholders over the last four quarters (Q4 2025 to Q3 2026) totaled KRW 31.5 billion, and that total already includes the Q3 2026 loss. Because quarterly results swing widely, earnings-based multiples change substantially depending on the period used, so the period should be stated alongside any multiple. Since 2022, operating profit has moved within a narrow range from KRW 30.9 billion to KRW 32.3 billion on an annual basis, so profit growth has been limited relative to the rise in revenue. The dividend picture is tied to the company's target of a 10% increase in total dividends for fiscal 2026, so reading dividends depends on whether that target is delivered. The debt-to-equity ratio fell to 134.2% at the end of 2025 from 168.0% in 2022, but operating cash flow was negative in 2025 and needs to be read alongside it."
  },
  "bull": [
   {
    "title": {
-    "ko": "분기 실적의 뚜렷한 개선",
-    "en": "Clear Quarterly Earnings Improvement"
+    "ko": "분기 영업이익의 회복 흐름",
+    "en": "Recovery in quarterly operating profit"
    },
    "body": {
-    "ko": "2025년 2분기 적자에서 2026년 2분기 영업이익 396억원, 순이익 166억원으로 이어지는 회복이 4개 분기 연속 확인됐다. 최근 네 개 분기 지배주주 순이익 443억원은 2025년 연간 실적의 세 배를 넘어서는 수준이다. 이 흐름이 유지된다면 핵심 유통사업의 수익성 개선을 뒷받침하는 근거가 될 수 있다.",
-    "en": "The recovery from a net loss in Q2 2025 to operating profit of KRW 39.6bn and net income of KRW 16.6bn in Q2 2026 has been confirmed over four consecutive quarters. Trailing four-quarter net income attributable to owners of KRW 44.3bn is more than three times the full-year 2025 result. If this trend holds, it could support an improvement in the profitability of the core distribution business."
+    "ko": "2025년 3분기 영업이익 68.8억원에서 2026년 2분기 396억원까지 분기 영업이익이 올라왔다. 2026년 1분기 지배주주 순이익 158억원은 2025년 연간 지배주주 순이익 127억원을 웃도는 규모다. 이 회복이 분기 단위에서 이어지는지가 강세 논리의 핵심 확인 사항이다.",
+    "en": "Quarterly operating profit climbed from KRW 6.88 billion in Q3 2025 to KRW 39.6 billion in Q2 2026. Net income attributable to controlling shareholders of KRW 15.8 billion in Q1 2026 alone exceeded the KRW 12.7 billion recorded for full-year 2025. Whether this recovery holds at the quarterly level is the key point for the bull case."
    }
   },
   {
    "title": {
-    "ko": "전장용 반도체 시장 내 안정적 지위",
-    "en": "Stable Position in Automotive Semiconductor Market"
+    "ko": "주주환원 목표 제시",
+    "en": "Shareholder return targets"
    },
    "body": {
-    "ko": "주요 글로벌 메모리 반도체 벤더의 공급 대리점으로서 국내 전장용 반도체의 90% 이상을 공급하는 지위를 갖고 있다. 300여개에 달하는 다변화된 고객사 기반도 특정 고객 의존 리스크를 완화하는 요인이다. 이는 유통업 특유의 낮은 마진을 일정 부분 안정적 물량으로 상쇄할 수 있는 기반이 된다.",
-    "en": "As a distribution agent for a major global memory semiconductor vendor, the company supplies over 90% of domestic automotive-grade semiconductors. A diversified customer base of roughly 300 companies also mitigates concentration risk on any single client. This provides a foundation for offsetting the inherently thin margins of the distribution business with stable volume."
+    "ko": "회사는 2026년 3월 공시한 기업가치 제고 계획에서 총배당금을 전년 대비 10% 늘린다는 목표를 제시했다. 안정적 배당정책을 유지하겠다는 방침도 함께 밝혔다. 이 목표의 이행 여부는 2026 사업연도 배당 결정으로 확인된다.",
+    "en": "In its March 2026 value-up plan, the company set a target of raising total dividends by 10% from the prior year. It also said it would maintain a stable dividend policy. Delivery of the target will be visible in the dividend decision for fiscal 2026."
    }
   },
   {
    "title": {
-    "ko": "로봇 AI 모듈 등 신사업 파이프라인",
-    "en": "Robot AI Module and New-Business Pipeline"
+    "ko": "자율주행·AI 로봇으로의 확장",
+    "en": "Expansion into autonomous driving and AI robotics"
    },
    "body": {
-    "ko": "로봇 AI 컴퓨팅 모듈 URC-100은 국내에서 정형화된 플랫폼이 부재한 시장에 진입을 시도하고 있으며, 산업통상자원부 국책과제 주관기관으로 선정돼 건설기계용 SDM 플랫폼 기술을 축적하고 있다. 자율주행 자회사의 파산과 별개로 이러한 자체 기술 자산은 남아있다. 상용화가 진전될 경우 유통업 중심 사업구조에 추가적인 수익원이 될 가능성이 있다.",
-    "en": "The URC-100 robot AI computing module is attempting to enter a market that currently lacks a standardized platform domestically, and the company has been selected to lead a Ministry of Trade, Industry and Energy government project accumulating SDM platform technology for construction machinery. Separate from the autonomous-driving subsidiary's bankruptcy, these in-house technology assets remain. Further commercialization progress could add a revenue source beyond the distribution-centered business structure."
+    "ko": "회사는 자율주행 소프트웨어와 하드웨어 개발사를 자회사로 두고 자율주행과 AI 로봇 분야의 개발·사업화를 추진하고 있다. 정부 국책과제와 자체 개발을 병행해 성장동력을 확보하는 구도다. 본업인 반도체 유통 외에 새로운 성장 축이 될 수 있는지가 향후 확인 대상이다.",
+    "en": "The company holds a subsidiary developing autonomous driving software and hardware and is pursuing development and commercialization in autonomous driving and AI robotics. It is securing growth drivers by combining government-backed projects with in-house development. Whether this becomes a growth pillar beyond semiconductor distribution is the item to watch."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "자회사 토르드라이브 파산",
-    "en": "Subsidiary ThorDrive's Bankruptcy"
+    "ko": "2026년 3분기 적자 전환",
+    "en": "Swing to a loss in Q3 2026"
    },
    "body": {
-    "ko": "자율주행 신사업의 핵심 축이었던 토르드라이브가 2026년 4월 24일 서울회생법원으로부터 파산 선고를 받았다. 이 회사는 인수 이후에도 완전자본잠식을 벗어나지 못했으며 2024년과 2025년 자본총계가 각각 -42억원, -108억원을 기록했다. 이는 신사업 전략의 재정비 필요성과 함께 관련 자산에 대한 추가 손상차손 반영 여부를 지켜봐야 하는 요인이다.",
-    "en": "ThorDrive, a key pillar of the autonomous-driving new business, was declared bankrupt by the Seoul Bankruptcy Court on April 24, 2026. The company never emerged from complete capital impairment after being acquired, recording total equity of KRW -4.2bn in 2024 and KRW -10.8bn in 2025. This points to a need to reassess the new-business strategy while watching for any further impairment recognized on related assets."
+    "ko": "2026년 3분기 매출은 2,888억원으로 전 분기 대비 15.1% 줄었고, 영업이익은 85.1억원으로 78.5% 줄었다. 지배주주 순손실은 70억원으로 적자로 돌아섰다. 영업이익이 전년 동기 대비 늘었는데도 순손익이 적자인 점은 영업 외 항목과 세부 비용을 더 따져 볼 필요가 있음을 보여준다.",
+    "en": "Q3 2026 revenue of KRW 288.8 billion fell 15.1% from the prior quarter, and operating profit of KRW 8.51 billion fell 78.5%. The company recorded a net loss attributable to controlling shareholders of KRW 7 billion. Operating profit rose from a year earlier even as net results turned negative, which points to non-operating items and detailed costs that need closer review."
    }
   },
   {
    "title": {
-    "ko": "유통업 특유의 낮은 마진과 마진 압박",
-    "en": "Structurally Thin Margins in Distribution"
+    "ko": "수익성 하락 추세",
+    "en": "Continued margin decline"
    },
    "body": {
-    "ko": "영업이익률은 2022년 5.9%에서 2025년 4.2%까지 4년 연속 하락했으며, 재고조정과 비용 부담이 수익성을 제약한 것으로 파악된다. 2026년 상반기 마진이 개선됐지만 이것이 일회성인지 구조적 개선인지는 아직 불확실하다. 특정 벤더에 대한 의존도가 높은 유통 구조상 벤더의 가격·물량 정책 변화에 취약할 수 있다.",
-    "en": "Operating margin fell for four straight years from 5.9% in 2022 to 4.2% in 2025, constrained by inventory adjustments and cost burdens. While margins improved in the first half of 2026, whether this reflects a one-off factor or a structural shift remains uncertain. Given the distribution model's reliance on a limited set of vendors, the business can be vulnerable to changes in vendor pricing or allocation policy."
+    "ko": "영업이익률은 2022년 5.9%에서 2025년 4.2%로 낮아졌다. 회사는 2025년 영업이익 감소 요인으로 환율 기저효과와 판매관리비 증가를 꼽았다. 2025년 지배주주 순이익은 127억원으로 전년 대비 39.2% 줄었다.",
+    "en": "The operating margin fell from 5.9% in 2022 to 4.2% in 2025. The company cited the reversal of a favorable exchange-rate base effect and higher selling and administrative costs as reasons for lower 2025 operating profit. Net income attributable to controlling shareholders fell 39.2% to KRW 12.7 billion in 2025."
    }
   },
   {
    "title": {
-    "ko": "현금흐름 및 재무구조 변동성",
-    "en": "Volatility in Cash Flow and Financial Structure"
+    "ko": "현금흐름 약세",
+    "en": "Weak operating cash flow"
    },
    "body": {
-    "ko": "2025년 영업활동현금흐름은 -221.6억원으로 직전 3개년의 양(+)의 흐름에서 벗어났다. 부채비율도 2023년 119.3%에서 2025년 134.2%로 다시 높아지는 흐름을 보였다. 이는 이익 회복과 별개로 자금 운용 측면에서 주의가 필요한 부분이다.",
-    "en": "Full-year 2025 operating cash flow turned negative at KRW -22.16bn, a departure from positive cash flow in the preceding three years. The debt ratio also rose again, from 119.3% in 2023 to 134.2% in 2025. This warrants attention on the financing side, separate from the recovery seen in reported earnings."
+    "ko": "2025년 영업활동 현금흐름은 -222억원으로 마이너스였다. 같은 해 말 부채총계는 1,948억원, 부채비율은 134.2%다. 매출이 늘어나는 동안 현금 창출이 따라가지 못한 점이 재무 부담으로 이어질 수 있다.",
+    "en": "Operating cash flow in 2025 was negative at KRW -22.2 billion. Total liabilities at the end of 2025 were KRW 194.8 billion, and the debt-to-equity ratio was 134.2%. Cash generation not keeping pace with revenue growth could translate into financial strain."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "신사업 리스크",
-    "en": "New-Business Risk"
+    "ko": "공급·고객 집중",
+    "en": "Supply and customer concentration"
    },
    "body": {
-    "ko": "자율주행 자회사 토르드라이브의 파산으로 관련 투자금 회수 가능성과 연결 재무제표상 처리 방식이 불확실해졌다. 로봇 AI 모듈 URC-100 역시 상용화 시점이 여러 차례 지연된 전력이 있어 추가 지연 가능성을 배제할 수 없다. 국책과제 성과도 아직 사업화·매출 실현 단계로 이어졌는지 확인이 필요하다.",
-    "en": "ThorDrive's bankruptcy has created uncertainty over the recoverability of related investment and how it will be treated in consolidated financial statements. The URC-100 robot AI module has also seen its commercialization timeline pushed back multiple times, so further delay cannot be ruled out. It also remains to be confirmed whether outcomes from the government-backed project have translated into commercialization or realized revenue."
+    "ko": "2023년 보도에 따르면 전체 매출의 80% 이상이 자동차 산업에서 발생해 완성차 생산과 전장 수요 변화에 민감하다. 해외 벤더 공급권에 의존하는 유통 구조이므로 공급사의 정책 변화가 실적에 직접 영향을 줄 수 있다. 환율 변동도 원가와 매출을 함께 흔드는 위험 요인이다.",
+    "en": "A 2023 report said more than 80% of revenue came from the automotive industry, which makes the company sensitive to vehicle production and changes in electronics demand. Because it relies on supply rights from overseas vendors, policy changes at those suppliers can directly affect results. Exchange-rate swings also move both costs and revenue."
    }
   },
   {
    "cat": {
-    "ko": "사업 집중 리스크",
-    "en": "Business Concentration Risk"
+    "ko": "지배구조·공시 이슈",
+    "en": "Governance and disclosure issues"
    },
    "body": {
-    "ko": "매출의 상당 부분이 반도체 유통, 그중에서도 특정 글로벌 벤더에 대한 대리점 관계에 의존한다. 벤더의 정책 변화나 특정 고객군(전장용 반도체)에 대한 수요 둔화가 발생할 경우 실적에 직접 영향을 줄 수 있다. 신사업 다각화가 아직 뚜렷한 매출 기여로 이어지지 않은 점도 이러한 집중도를 완화하지 못하는 요인이다.",
-    "en": "A significant portion of revenue depends on semiconductor distribution, particularly the agency relationship with a specific global vendor. Any change in vendor policy or a slowdown in demand for a particular customer segment such as automotive-grade semiconductors could directly affect results. The fact that new-business diversification has not yet produced a clear revenue contribution also limits the mitigation of this concentration."
+    "ko": "2026년 3월 18일 공시에 따르면 최대주주 변경을 수반하는 주식 담보제공 계약 체결 정정이 지연돼 불성실공시법인 지정예고를 받았고, 6개월간 지정을 유예받았다. 부과벌점은 2.0점이며, 유예 기간 중 새로 지정예고되면 유예된 벌점과 공시위반 제재금이 부과될 수 있다. 최대주주 변경과 담보 계약 관련 후속 공시를 확인할 필요가 있다.",
+    "en": "According to a March 18, 2026 disclosure, a delayed amendment to a share pledge agreement involving a change in the largest shareholder led to a notice of designation as an unfaithful-disclosure company, which was deferred for six months. The assigned penalty points were 2.0, and if a new designation notice is issued during the deferral period, the deferred penalty and a disclosure violation fine could apply. Follow-up disclosures on the change in the largest shareholder and the pledge agreement need to be monitored."
    }
   },
   {
    "cat": {
-    "ko": "재무 건전성 리스크",
-    "en": "Financial Soundness Risk"
+    "ko": "재무·신용 부담",
+    "en": "Financial and credit burden"
    },
    "body": {
-    "ko": "2025년 영업활동현금흐름이 음(-)전환하고 부채비율이 재차 상승한 점은 이익 회복세와는 별도로 재무 안정성 측면의 관찰 포인트다. 자회사 파산에 따른 손상차손이나 우발부채가 추가로 반영될 가능성도 배제할 수 없다. 향후 분기·연간 공시를 통해 현금흐름과 부채구조의 정상화 여부를 확인할 필요가 있다.",
-    "en": "The negative turn in 2025 operating cash flow and the renewed rise in the debt ratio are points to watch on financial stability, separate from the earnings recovery. The possibility of additional impairment losses or contingent liabilities related to the subsidiary's bankruptcy cannot be ruled out. Future quarterly and annual disclosures will need to be reviewed to confirm whether cash flow and the debt structure normalize."
+    "ko": "2025년 영업활동 현금흐름이 -222억원으로 마이너스였고, 부채비율은 134.2%였다. 한국신용평가는 2024년 3월 무보증사채(P-CBO용)를 BB(안정적)로 평가했다. 투기등급 구간의 신용도는 차입 조건과 자금 조달 비용에 영향을 줄 수 있다.",
+    "en": "Operating cash flow in 2025 was negative at KRW -22.2 billion, and the debt-to-equity ratio stood at 134.2%. Korea Ratings assigned a BB (stable) rating to unsecured bonds for P-CBO issuance in March 2024. A credit rating in the speculative-grade range can affect borrowing terms and funding costs."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중순",
-    "en": "Mid-November 2026"
+    "ko": "2026년 12월 31일 사업연도 종료",
+    "en": "December 31, 2026 (fiscal year-end)"
    },
    "what": {
-    "ko": "3분기보고서 제출을 통해 2026년 2분기의 매출·영업이익률 개선이 3분기에도 이어지는지, 그리고 토르드라이브 파산 관련 손익 처리 내용을 확인해야 한다.",
-    "en": "The Q3 report filing will show whether the revenue and margin improvement seen in Q2 2026 continued into Q3, and will reveal how the ThorDrive bankruptcy is reflected in the financial statements."
+    "ko": "2026 사업연도 결산일이다. 기업가치 제고 계획의 연결 매출 10% 성장과 총배당금 10% 증가 목표를 가르는 기준 시점이다.",
+    "en": "This is the close of fiscal 2026. It is the reference point against which the 10% consolidated revenue growth and 10% dividend increase targets will be measured."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기 중",
-    "en": "During Q4 2026"
+    "ko": "2027년 2월 전후",
+    "en": "Around February 2027"
    },
    "what": {
-    "ko": "토르드라이브 파산절차 진행에 따른 연결범위 변경, 관련 자산 손상차손 규모, 투자금 회수 가능성 등에 대한 추가 공시를 확인해야 한다.",
-    "en": "Additional disclosures should be checked regarding changes in consolidation scope from ThorDrive's bankruptcy proceedings, the scale of any related asset impairment, and the recoverability of the related investment."
+    "ko": "전년 연간 실적 공시 시점(2026년 2월 6일)을 감안하면 2026 사업연도 연간 실적이 이 무렵 공시될 것으로 보인다. 연간 매출 목표 달성 여부와 4분기 영업이익률을 확인한다.",
+    "en": "Based on the timing of the prior year's annual disclosure (February 6, 2026), fiscal 2026 annual results are expected around this period. Check whether the annual revenue target was met and the Q4 operating margin."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 중",
-    "en": "During the second half of 2026"
+    "ko": "2027년 3월 말까지",
+    "en": "By the end of March 2027"
    },
    "what": {
-    "ko": "로봇 AI 컴퓨팅 모듈 URC-100의 실제 양산·공급 계약 관련 공시나 IR 자료가 나오는지, 그리고 SDM 플랫폼 국책과제의 진행 상황이 발표되는지 확인해야 한다.",
-    "en": "Watch for disclosures or IR materials confirming actual mass production or supply contracts for the URC-100 robot AI computing module, as well as updates on progress in the SDM platform government project."
+    "ko": "2026 사업보고서 제출 기한이다. 분기별 판매관리비, 영업외손익, 토르드라이브 관련 손상 여부, 영업활동 현금흐름을 세부 항목으로 확인한다.",
+    "en": "This is the filing deadline for the 2026 annual report. Review quarterly selling and administrative expenses, non-operating items, any impairment related to Thor Drive, and operating cash flow."
    }
   },
   {
    "when": {
-    "ko": "2027년 3월 말",
-    "en": "Late March 2027"
+    "ko": "2027년 3월 정기주주총회 전후",
+    "en": "Around the March 2027 annual general meeting"
    },
    "what": {
-    "ko": "2026년 사업보고서 제출을 통해 연간 기준 매출·영업이익·순이익 확정치와 오스코·토르드라이브 관련 종속회사 구성 변화를 최종 확인해야 한다.",
-    "en": "The FY2026 annual report filing will confirm finalized full-year revenue, operating profit, and net income figures, along with any changes to the composition of subsidiaries related to OSCO and ThorDrive."
+    "ko": "2026 사업연도 배당 결정 시점이다. 총배당금 전년 대비 10% 증가 목표가 실제 배당으로 이어지는지 확인한다.",
+    "en": "This is when the fiscal 2026 dividend is decided. Check whether the 10% increase in total dividends is delivered."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 말 이후 수시 공시",
+    "en": "Ongoing disclosures from late 2026"
+   },
+   "what": {
+    "ko": "최대주주 변경과 주식 담보 계약 관련 공시 이행 상황이다. 불성실공시 지정유예와 연결된 후속 공시를 확인한다.",
+    "en": "Track progress on disclosures tied to the change in the largest shareholder and the share pledge agreement, including follow-up filings linked to the earlier deferral of designation."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "유니트론텍은 반도체·디스플레이 유통을 주력으로 하며 국내 전장용 반도체 시장에서 안정적 지위를 유지해왔으나, 2022~2025년 영업이익률은 4년 연속 하락하는 흐름을 보였다. 그러나 2025년 3분기부터 2026년 2분기까지 이어진 실적은 매출과 마진이 동반 확대되는 뚜렷한 개선세를 나타내며, 최근 네 개 분기 지배주주 순이익은 2025년 연간 실적의 세 배를 넘어섰다. 반면 신성장동력으로 추진한 자율주행 자회사 토르드라이브는 2026년 4월 파산 선고를 받아 신사업 전략의 한 축이 흔들리게 됐고, 로봇 AI 모듈 URC-100의 상용화 시점도 수차례 지연된 전력이 있다. 2025년 영업활동현금흐름이 음전환하고 부채비율이 다시 높아진 점은 이익 회복과는 별개로 재무 측면에서 주시가 필요한 대목이다. 종합하면 핵심 유통사업의 최근 실적 개선과 신사업 리스크가 공존하는 구간으로, 향후 분기 실적의 지속성과 토르드라이브 관련 후속 처리, URC-100의 실제 상용화 여부가 관전 포인트다.",
-   "en": "Unitrontech's core business is semiconductor and display distribution, and it has maintained a stable position in the domestic automotive-grade semiconductor market, though operating margin declined for four consecutive years from 2022 to 2025. Results from Q3 2025 through Q2 2026, however, showed a clear improvement with revenue and margin expanding together, and net income attributable to owners over the trailing four quarters surpassed three times the full-year 2025 figure. On the other hand, ThorDrive, the autonomous-driving subsidiary pursued as a new growth engine, was declared bankrupt in April 2026, unsettling one pillar of the new-business strategy, and the commercialization timeline for the robot AI module URC-100 has been delayed multiple times in the past. The negative turn in 2025 operating cash flow and the renewed rise in the debt ratio are financial points warranting attention, separate from the earnings recovery. Overall, the company sits at a juncture where recent improvement in its core distribution business coexists with new-business risk, and the key points to watch going forward are the sustainability of quarterly performance, the follow-up handling of the ThorDrive matter, and whether URC-100 achieves actual commercialization."
+   "ko": "유니트론텍은 반도체·디스플레이 유통을 본업으로 하며, 2025년 매출 7,690억원으로 2022~2025년 중 가장 큰 해를 기록했다. 다만 같은 기간 영업이익률은 5.9%에서 4.2%로 낮아졌고, 2025년 지배주주 순이익은 127억원으로 가장 작은 해였다. 2026년 1분기와 2분기에는 영업이익이 184억원, 396억원으로 크게 늘었으나 3분기에는 매출과 영업이익이 전 분기보다 줄었고 지배주주 순손실 70억원으로 적자 전환했다. 회사는 2026 사업연도 연결 매출과 총배당금을 각각 전년 대비 10% 늘리는 목표를 제시했고, 자율주행·AI 로봇 사업을 병행하고 있다. 반면 2025년 영업활동 현금흐름은 -222억원이었고, 2026년 3월에는 최대주주 변경 관련 공시 지연으로 불성실공시법인 지정예고와 지정유예를 받았다. 강세 요인으로 분기 실적 회복과 주주환원 목표가, 약세 요인으로 3분기 적자 전환과 현금흐름 약세가 함께 제시되는 구도다. 다음 확인 지점은 2026 사업연도 결산과 사업보고서이며, 그 안에서 4분기 영업이익률, 판매관리비 추이, 영업외손익, 차량용 반도체 수요가 함께 점검 대상이 된다.",
+   "en": "Unitrontech's core business is semiconductor and display distribution, and its 2025 revenue of KRW 769 billion was the largest year in 2022-2025. Over the same period, however, the operating margin fell from 5.9% to 4.2%, and 2025 net income attributable to controlling shareholders of KRW 12.7 billion was the smallest year. Operating profit rose to KRW 18.4 billion in Q1 2026 and KRW 39.6 billion in Q2 2026, but in Q3 both revenue and operating profit fell from the prior quarter and the company recorded a net loss attributable to controlling shareholders of KRW 7 billion. The company has set targets of 10% growth in consolidated revenue and total dividends for fiscal 2026, and it is pursuing autonomous driving and AI robotics alongside its core business. On the other side, operating cash flow in 2025 was negative at KRW -22.2 billion, and in March 2026 the company received a notice of designation as an unfaithful-disclosure company tied to a delayed filing on a change in the largest shareholder, followed by a deferral. The bull points are the quarterly earnings recovery and shareholder return targets, while the bear points are the Q3 swing to a loss and weak cash flow. The next checkpoints are the fiscal 2026 close and annual report, where Q4 operating margin, selling and administrative cost trends, non-operating items and demand for automotive semiconductors will be reviewed."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A142210",
-  "https://m.thinkpool.com/compDiscuss/cont/1015769",
-  "https://m.thinkpool.com/item/142210",
+  "https://www.jobkorea.co.kr/Recruit/Co_Read/C/unit1110/Company_name/%E3%88%9C%EC%9C%A0%EB%8B%88%ED%8A%B8%EB%A1%A0%ED%85%8D",
+  "http://www.dailyinvest.kr/news/articleView.html?idxno=58509",
+  "http://www.dailyinvest.kr/news/articleView.html?idxno=60738",
+  "https://stockrank.co.kr/stock/142210",
+  "https://www.etoday.co.kr/news/view/2125808",
+  "https://m.kisrating.com/fileDown.do?menuCd=R8&gubun=2&fileName=rs20240321-27.pdf",
   "https://www.stockplus.com/m/stocks/KOREA-A142210",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A142210&MenuYn=Y&ReportGB=B&NewMenuID=105&stkGb=701",
-  "https://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=142210",
-  "https://markets.hankyung.com/stock/142210",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A142210",
   "https://www.investing.com/equities/unitron-tech-co-ltd-earnings",
-  "https://thevc.kr/unitrontech",
-  "https://markets.hankyung.com/stock/142210/chart",
-  "https://alphasquare.co.kr/home/stock-summary?code=142210",
   "https://www.investing.com/equities/unitron-tech-co-ltd",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260306000508&rcpno=20260306000285&orgid=F&tran=Y&langTpCd=0",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=rATuK6FckcHG2xTv",
-  "https://unitrontech.com/%EC%9C%A0%EB%8B%88%ED%8A%B8%EB%A1%A0%ED%85%8D-%EB%AF%B8%EA%B5%AD-%EC%9E%90%EC%9C%A8%EC%A3%BC%ED%96%89-%EA%B8%B0%EC%88%A0%EA%B0%9C%EB%B0%9C%ED%9A%8C%EC%82%AC-thordrive%EC%97%90-%EC%A0%84%EB%9E%B5/",
-  "http://www.businessreport.kr/news/articleView.html?idxno=46432",
-  "https://www.etnews.com/20240122000338",
-  "https://news.mt.co.kr/mtview.php?no=2024012209525896366"
+  "https://goinsider.kr/stock/00879020",
+  "https://m.itooza.com/stockbot/search.php?sn=%EC%9C%A0%EB%8B%88%ED%8A%B8%EB%A1%A0%ED%85%8D",
+  "https://news.nate.com/view/20260329n10504",
+  "https://news.nate.com/view/20260206n33396",
+  "https://news.nate.com/view/20260318n38157",
+  "https://www.investing.com/equities/unitest-inc-earnings",
+  "https://www.tradingkey.com/kr/news/earnings/262282070-"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "142210",
  "name": "유니트론텍",
  "name_en": "Unitrontech Co., Ltd.",
@@ -223,11 +232,11 @@
   "전자·부품"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 18:08",
- "dataDate": "20260904",
+ "reportDate": "2026-11-14",
+ "reportTs": "2026-11-14 07:36",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-11-13",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -297,12 +306,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 205326559543,
-    "op": 3592081086,
-    "np_owner": -4901587520
-   },
-   {
     "q": "2025Q3",
     "rev": 192436529301,
     "op": 6882502855,
@@ -325,6 +328,12 @@
     "rev": 340100315048,
     "op": 39595301452,
     "np_owner": 16638561600
+   },
+   {
+    "q": "2026Q3",
+    "rev": 288784113783,
+    "op": 8508696229,
+    "np_owner": -6996119466
    }
   ],
   "valuation": {
@@ -333,20 +342,22 @@
    "shares": 20751403,
    "total_shares": 20751403,
    "wavg_shares": null,
-   "per": 2.83,
-   "eps": 2134,
-   "pbr": 0.7448,
-   "bps": 8110,
-   "roe_ttm": 30.3,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": 44299892386,
+   "per": 3.984,
+   "eps": 1516,
+   "pbr": 0.7777,
+   "bps": 7766,
+   "roe_ttm": 20.9,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": 31463281804,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 0.91,
+   "eps_src": "순이익÷주식수",
+   "pbr_krx": 0.9,
    "bps_krx": 6717.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 165.0,
    "div": 2.73
   }
- }
+ },
+ "textRules": 2
 }

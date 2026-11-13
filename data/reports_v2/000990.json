@@ -1,230 +1,218 @@
 {
  "title": {
-  "ko": "8인치 풀가동과 판가 인상, 증설이 만드는 분기점",
-  "en": "Full 8-Inch Utilization, Price Hikes and a Capex Crossroad"
+  "ko": "8인치 공급 부족 속 풀가동, 환율과 자회사가 변수",
+  "en": "Full Utilization in a Tight 8-inch Market; FX and Subsidiaries Are Swing Factors"
  },
  "lead": {
-  "ko": "삼성전자·TSMC의 8인치 축소로 열린 공급 공백 속에서 DB하이텍은 사실상 풀가동과 판가 인상으로 2026년 상반기 이익률을 끌어올렸지만, 동시에 대규모 증설과 지배구조 이슈라는 과제를 함께 안고 있다.",
-  "en": "DB HiTek lifted its first-half 2026 margins through near-full utilization and price hikes in the 8-inch supply gap left by Samsung Electronics and TSMC, while simultaneously carrying the burden of a large capacity build-out and unresolved governance questions."
+  "ko": "8인치 파운드리 가동률과 판가 상승이 2026년 2분기 이익 개선을 이끌었고, 3분기에는 환율 하락과 자회사 변수가 이익 흐름을 가르는 요인으로 떠올랐다.",
+  "en": "Full utilization and price increases in 8-inch foundry lifted profit in the second quarter of 2026, while a weaker won and subsidiary results became the key swing factors in the third quarter."
  },
  "keypoints": [
   {
-   "ko": "2026년 2분기 확정 매출 3,994억원·영업이익 1,084억원으로 영업이익률이 27% 수준까지 올라, 최근 다섯 개 분기 가운데 가장 높은 마진을 기록했다.",
-   "en": "Confirmed second-quarter 2026 revenue of 399.4 billion won and operating profit of 108.4 billion won lifted the operating margin to around 27%, the highest of the last five quarters."
+   "ko": "2025년 영업이익은 2,773억원으로 2024년 저점(1,908억원)에서 회복했지만, 2022년 7,687억원에는 아직 못 미친다.",
+   "en": "Operating profit of KRW 277.3 billion in 2025 recovered from the 2024 low of KRW 190.8 billion but remains below KRW 768.7 billion in 2022."
   },
   {
-   "ko": "연간으로는 2025년 매출 1조 3,972억원·영업이익 2,773억원(영업이익률 19.8%)으로 2024년(1조 1,312억원·1,908억원, 16.9%) 대비 외형과 마진이 함께 회복됐다.",
-   "en": "On an annual basis, 2025 revenue of 1,397.2 billion won and operating profit of 277.3 billion won (19.8% margin) marked a recovery in both scale and margin from 2024 (1,131.2 billion won, 190.8 billion won, 16.9%)."
+   "ko": "2026년 2분기 영업이익 1,084억원은 공시 실적 기준 최근 다섯 분기 중 가장 높았고, 3분기 영업이익은 900억원으로 줄었다.",
+   "en": "Operating profit of KRW 108.4 billion in the second quarter of 2026 was the highest of the last five quarters, before easing to KRW 90 billion in the third quarter."
   },
   {
-   "ko": "회사는 가동률 98% 이상 유지를 전망했고, 2분기부터 중국 대상 전력반도체 판가 인상을 단행했다고 밝혔다(헤럴드경제, 2026년 5월).",
-   "en": "The company guided for utilization above 98% and said it began raising power-semiconductor prices for China-bound products from the second quarter (Herald Business, May 2026)."
+   "ko": "3분기 가동률은 사실상 100%였고, 회사는 2026년 연간 가동률을 98%로 예상했다. 판가는 2026년 3월과 7월 두 차례 올랐다.",
+   "en": "Utilization was effectively 100% in the third quarter, and the company expects 98% for 2026 as a whole. Prices were raised twice, in March and July 2026."
   },
   {
-   "ko": "상우캠퍼스 클린룸 증설이 완료되면 8인치 월 생산능력은 15만 4,000장에서 약 19만장으로 23% 늘어난다고 회사는 설명했다.",
-   "en": "The company says completion of the Sangwoo campus cleanroom expansion will raise 8-inch monthly capacity by 23%, from 154,000 wafers to about 190,000."
+   "ko": "중국이 전체 매출의 62%를 차지하고, 3분기에는 원·달러 환율 하락이 이익 증가 폭을 제한했다.",
+   "en": "China accounts for 62% of revenue, and the weaker won limited profit growth in the third quarter."
   },
   {
-   "ko": "자사주 활용 방식, DB Inc.의 지주사 전환 요건 등 지배구조 관련 논점은 여전히 정리되지 않은 변수다.",
-   "en": "Governance items, including how treasury shares are used and the holding-company conversion requirements facing DB Inc., remain unsettled variables."
+   "ko": "8인치 SiC 파운드리는 2027년 양산과 2027년 2분기 전 고객 대상 서비스 확대를 목표로 하고 있다.",
+   "en": "The 8-inch silicon carbide foundry service targets mass production in 2027 and expansion to all customers from the second quarter of 2027."
   }
  ],
  "business": {
-  "ko": "DB하이텍은 8인치(200밀리미터) 웨이퍼 기반 시스템반도체 파운드리를 주력으로 하는 기업으로, 약 400개의 글로벌 고객사를 확보한 세계 10위권 파운드리 업체다. 고전압 BCD(Bipolar-CMOS-DMOS) 기반 전력반도체 기술이 핵심 경쟁력이며, 전력관리반도체와 디스플레이 구동칩, 이미지센서 등이 8인치 라인에서 생산되는 대표 제품군이다. 사업은 위탁생산을 담당하는 파운드리 부문과 자체 설계를 담당하는 반도체설계(팹리스) 부문으로 나뉜다. 2026년 2분기 회사 발표 기준 파운드리 부문 매출은 전년 동기 대비 16%, 반도체설계 부문은 35% 증가했는데, 두 부문 합계는 내부거래 제거 전 기준이어서 확정 연결 매출과는 차이가 있다. 제품 믹스에서는 전력반도체(BCD)가 총 매출의 69%를 차지하고, 응용 분야별로는 산업·자동차 비중이 31%로 전년 동기 29%에서 2%포인트 상승했다. 생산 거점은 경기 부천캠퍼스와 충북 음성 상우캠퍼스 두 곳으로, 부천 월 9만 1,000장, 상우 월 6만 3,000장을 합쳐 8인치 월 15만 4,000장 규모다. 경쟁 구도는 중국 SMIC·화홍 등 8인치 주력 업체와 국내 SK키파운드리 등이며, 삼성전자와 TSMC는 12인치 선단공정에 주력하는 반면 전력반도체·이미지센서·디스플레이 구동칩은 여전히 8인치에서 생산된다. 여기에 SiC와 GaN 등 차세대 화합물 반도체로 공정 포트폴리오를 확장하며 전기차·AI 데이터센터 응용을 겨냥하고 있다.",
-  "en": "DB HiTek is a system-semiconductor foundry centered on 8-inch (200mm) wafers, and it is a top-ten global foundry with roughly 400 customers worldwide. Its core competitiveness lies in high-voltage BCD (Bipolar-CMOS-DMOS) power-semiconductor technology, with power management ICs, display driver ICs and image sensors representing the main product families made on 8-inch lines. The business splits into a foundry division handling contract manufacturing and a fabless division doing in-house chip design. Based on the company's second-quarter 2026 announcement, foundry revenue rose 16% year on year and the design (fabless) division grew 35%; the sum of the two is before elimination of intercompany transactions, so it differs from confirmed consolidated revenue. In the product mix, power semiconductors (BCD) accounted for 69% of total revenue, while by application the industrial and automotive share rose to 31% from 29% a year earlier, up 2 percentage points. Manufacturing runs from two sites, the Bucheon campus in Gyeonggi and the Sangwoo campus in Eumseong, Chungbuk, with Bucheon at 91,000 wafers per month and Sangwoo at 63,000, for a combined 8-inch capacity of 154,000 wafers per month. Competitors include China's SMIC and Hua Hong plus domestic peers such as SK keyfoundry, while Samsung Electronics and TSMC focus on 12-inch leading-edge nodes even as power semiconductors, image sensors and display driver ICs are still built on 8-inch lines. The company is also broadening its process portfolio into next-generation compound semiconductors such as SiC and GaN, targeting electric-vehicle and AI data-center applications."
+  "ko": "DB하이텍은 200밀리미터(8인치) 시스템반도체 파운드리를 주력으로 하는 전문 기업이다. 삼성증권은 생산능력 기준으로 국내 2위, 글로벌 10위권이라고 평가했다. 주력 제품은 BCD 전력반도체(PMIC)이며, DDI(디스플레이구동칩), 이미지센서, 3세대 SJ MOSFET 등 고부가 특화 공정으로 제품군을 넓히고 있다. 2026년 2분기 매출에서 BCD 제품이 차지한 비중은 69%로 전년 같은 기간보다 4%포인트 높아졌다. 같은 기간 산업용 제품 비중은 11%에서 19%로 올랐고 자동차용은 12%를 유지했다. 응용처는 자동차·산업용에서 AI 데이터센터, 로봇, 전기차 쪽으로 넓어지는 흐름이다. 회사 발표 잠정 자료(2026년 11월 12일)에 따르면 2026년 3분기 파운드리 부문 매출은 3,453억원, 영업이익은 980억원이다. 지역별로는 중국이 전체 매출의 62%를 차지하는 최대 시장이다. 경쟁 구도에서는 TSMC와 삼성전자가 8인치 생산능력을 줄이고 12인치 첨단 공정으로 옮기는 가운데, 중국의 SMIC와 화훙그룹(HHG)은 신규 투자를 12인치 라인에 집중하고 있다. 8인치 설비 증설은 제한적이어서 기존 라인의 가동률과 판가가 수익성을 좌우하는 구조다. 연결 실적에는 팹리스 자회사와 2026년 5월 합금철 영업을 중단한 자회사의 손익도 함께 반영된다.",
+  "en": "DB HiTek is a specialist 8-inch (200mm) system semiconductor foundry. Samsung Securities assesses its capacity as second in Korea and within the global top ten. Its core product is BCD power semiconductors, including PMICs, and the product range extends to DDI, image sensors and third-generation SJ MOSFETs. BCD products accounted for 69% of second-quarter 2026 revenue, up 4 percentage points from a year earlier. Over the same period, industrial products rose from 11% to 19% of revenue while automotive products held at 12%. Demand is shifting from automotive and industrial uses toward AI data centers, robots and electric vehicles. According to preliminary results released on 12 November 2026, third-quarter foundry segment revenue was KRW 345.3 billion and operating profit was KRW 98 billion. China accounts for 62% of total revenue and is the largest market. In competition, TSMC and Samsung Electronics are reducing 8-inch capacity as they move to 12-inch advanced nodes, while SMIC and Hua Hong Group (HHG) are concentrating new investment on 12-inch lines. Additional 8-inch capacity is limited, so utilization and pricing at existing lines drive profitability. Consolidated results also include a fabless subsidiary and another subsidiary whose alloy business was halted in May 2026."
  },
  "earnings": {
-  "ko": "확정 실적을 보면 2025년 연결 매출은 1조 3,972억원, 영업이익 2,773억원으로 영업이익률 19.8%를 기록해 2024년 매출 1조 1,312억원·영업이익 1,908억원(영업이익률 16.9%) 대비 외형과 마진이 함께 개선됐다. 다만 2022년 매출 1조 6,753억원·영업이익 7,687억원(영업이익률 45.9%)과 비교하면 이익 규모는 여전히 절반 아래이며, 2023년(1조 1,542억원·2,654억원, 23.0%)과 2024년의 하강 구간을 거친 뒤 회복 국면에 들어선 흐름이다. 지배주주 순이익은 2023년 2,641억원에서 2024년 2,295억원으로 줄었다가 2025년 2,561억원으로 늘었다. 분기 흐름은 2025년 2분기 매출 3,374억원·영업이익 738억원에서 2025년 3분기 3,746억원·806억원, 4분기 3,878억원·704억원으로 매출은 늘었지만 마진은 18% 수준까지 낮아졌다. 2026년 1분기는 매출 3,746억원에 영업이익 637억원으로 이익률이 17% 수준까지 눌렸는데, 상상인증권은 2026년 5월 리포트에서 사내근로복지기금 출연 목적의 자기주식 처분 221.2억원이 일회성 비용으로 반영됐다고 설명했다. 2026년 2분기에는 매출 3,994억원·영업이익 1,084억원으로 영업이익률이 27% 수준까지 올라 최근 다섯 개 분기 중 가장 높았고, 지배주주 순이익도 1,080억원으로 확대됐다. 회사는 자동차·산업용 전력반도체 수요 증가에 AI 데이터센터·로봇 등 신성장 분야 물량이 더해져 제품 믹스가 개선되고 고부가 제품 비중이 커진 결과라고 설명했다. 재무구조 측면에서는 2025년 영업활동현금흐름이 3,570억원으로 2024년 3,826억원보다 소폭 줄었고, 부채총계가 3,962억원에서 7,486억원으로 늘며 부채비율이 19.8%에서 33.4%로 상승했다. 자본총계 2조 2,440억원 가운데 비지배지분이 1,016억원으로 2023년 0원에서 확대된 점도 연결 구조 변화를 보여주는 항목이다.",
-  "en": "On confirmed numbers, 2025 consolidated revenue was 1,397.2 billion won with operating profit of 277.3 billion won, a 19.8% operating margin, improving on both scale and margin versus 2024 revenue of 1,131.2 billion won and operating profit of 190.8 billion won (16.9% margin). Still, against 2022 revenue of 1,675.3 billion won and operating profit of 768.7 billion won (45.9% margin), profit remains well below half that peak, reflecting a recovery phase after the downturn through 2023 (1,154.2 billion won and 265.4 billion won, 23.0%) and 2024. Net profit attributable to owners fell from 264.1 billion won in 2023 to 229.5 billion won in 2024 before rising to 256.1 billion won in 2025. Quarterly, revenue climbed from 337.4 billion won with 73.8 billion won operating profit in the second quarter of 2025 to 374.6 billion won and 80.6 billion won in the third and 387.8 billion won and 70.4 billion won in the fourth, yet the margin slipped to around 18%. First-quarter 2026 revenue of 374.6 billion won came with operating profit of 63.7 billion won, compressing the margin to about 17%; Sangsangin Investment and Securities noted in a May 2026 report that a 22.1 billion won treasury-share disposal for an employee welfare fund contribution was booked as a one-off cost. In the second quarter of 2026, revenue of 399.4 billion won and operating profit of 108.4 billion won pushed the operating margin to roughly 27%, the highest of the five quarters supplied, while net profit attributable to owners widened to 108.0 billion won. The company attributed this to rising automotive and industrial power-semiconductor demand plus added volume from new growth areas such as AI data centers and robotics, improving the product mix and lifting the share of high-value products. On the balance sheet, 2025 operating cash flow of 356.97 billion won was slightly below 2024's 382.63 billion won, while total liabilities rose from 396.2 billion won to 748.6 billion won, taking the debt-to-equity ratio from 19.8% to 33.4%. Within total equity of 2,244.0 billion won, non-controlling interests stood at 101.6 billion won, up from zero in 2023, another marker of change in the consolidation structure."
+  "ko": "연간 기준으로 매출은 2022년 1조 6,753억원에서 2023년 1조 1,542억원(전년 대비 31.1% 감소)으로 줄었고, 2024년 1조 1,312억원(전년 대비 2.0% 감소)을 거쳐 2025년 1조 3,972억원(전년 대비 23.5% 증가)으로 회복했다. 2022~2025년 중 가장 큰 해는 2022년이고 가장 작은 해는 2024년이다. 영업이익은 2022년 7,687억원에서 2023년 2,654억원(전년 대비 65.5% 감소), 2024년 1,908억원(전년 대비 28.1% 감소)으로 내려간 뒤 2025년 2,773억원(전년 대비 45.3% 증가)으로 늘었다. 영업이익률은 2022년 45.9%에서 2023년 23.0%, 2024년 16.9%로 낮아졌고 2025년에는 19.8%로 올랐다. 지배주주 순이익은 2022년 5,588억원에서 2023년 2,641억원(전년 대비 52.7% 감소), 2024년 2,295억원(전년 대비 13.1% 감소)으로 줄었다가 2025년 2,561억원(전년 대비 11.6% 증가)으로 늘었다. 당기순이익(비지배지분 포함)은 2025년 2,526억원으로 지배주주 순이익과 다른 값이다. 2025년 말 부채비율은 33.4%로 2024년 19.8%보다 높아졌고, 같은 기간 영업활동 현금흐름은 2022년 7,301억원에서 2025년 3,570억원으로 줄었다. 분기로 보면 영업이익은 2025년 3분기 806억원, 4분기 704억원(전 분기 대비 12.7% 감소)으로 낮아졌다가 2026년 1분기 637억원(전 분기 대비 9.5% 감소)을 저점으로 2분기 1,084억원(전 분기 대비 70.2% 증가)으로 뛰었다. 2026년 3분기 영업이익 900억원은 전 분기 대비 17.0% 감소했지만 전년 동기 대비 11.7% 증가했다. 2026년 1분기에는 사내복지기금 관련 복리후생비 221억원이 일회성 비용으로 반영될 것이라고 DS투자증권이 2026년 4월 리포트에서 짚었다. 3분기 지배주주 순이익은 285억원(전 분기 대비 73.6% 감소, 전년 동기 대비 68.4% 감소)으로, 감소 폭이 영업이익 감소 폭(17.0%)보다 훨씬 컸다. 최근 네 개 분기 지배주주 순이익 합계는 2,840억원이다.",
+  "en": "On an annual basis, revenue fell from KRW 1.68 trillion in 2022 to KRW 1.15 trillion in 2023 (down 31.1% year on year), then KRW 1.13 trillion in 2024 (down 2.0%), before recovering to KRW 1.4 trillion in 2025 (up 23.5%). Of 2022 to 2025, 2022 was the largest year and 2024 the smallest. Operating profit fell from KRW 768.7 billion in 2022 to KRW 265.4 billion in 2023 (down 65.5%) and KRW 190.8 billion in 2024 (down 28.1%), then rose to KRW 277.3 billion in 2025 (up 45.3%). The operating margin declined from 45.9% in 2022 to 23.0% in 2023 and 16.9% in 2024, then rose to 19.8% in 2025. Profit attributable to owners of the parent fell from KRW 558.8 billion in 2022 to KRW 264.1 billion in 2023 (down 52.7%) and KRW 229.5 billion in 2024 (down 13.1%), then rose to KRW 256.1 billion in 2025 (up 11.6%). Net profit including non-controlling interests was KRW 252.6 billion in 2025, a different figure from profit attributable to owners of the parent. The debt-to-equity ratio rose to 33.4% at the end of 2025 from 19.8% in 2024, while operating cash flow fell from KRW 730.1 billion in 2022 to KRW 357 billion in 2025. Quarterly operating profit was KRW 80.6 billion in the third quarter of 2025 and KRW 70.4 billion in the fourth quarter (down 12.7% from the prior quarter), then bottomed at KRW 63.7 billion in the first quarter of 2026 (down 9.5%) before jumping to KRW 108.4 billion in the second quarter (up 70.2%). Third-quarter 2026 operating profit of KRW 90 billion fell 17.0% from the prior quarter but rose 11.7% from a year earlier. DS Investment noted in an April 2026 report that a KRW 22.1 billion one-time welfare fund expense would be booked in the first quarter. Third-quarter profit attributable to owners of the parent was KRW 28.5 billion, down 73.6% from the prior quarter and 68.4% from a year earlier, a far steeper decline than the 17.0% drop in operating profit. Profit attributable to owners of the parent over the last four quarters totaled KRW 284 billion."
  },
  "industry": {
-  "ko": "8인치 파운드리 업황은 공급이 구조적으로 줄어드는 국면에 있다. 트렌드포스에 따르면 삼성전자와 TSMC가 2025년 하반기부터 8인치 생산능력을 빠르게 줄이면서 세계 10대 파운드리의 8인치 평균 가동률은 2025년 약 80%에서 2026년 90%에 육박할 전망이고, 옴디아는 글로벌 8인치 월 생산능력이 2026년 304만장에서 2028년 302만장으로 계속 감소할 것으로 전망했다. 가격 측면에서는 트렌드포스가 2026년 8인치 파운드리 평균 판가가 전년 대비 5~20% 인상될 것으로 전망했고, DB하이텍은 2분기부터 중국에서 전력반도체 판가 인상을 단행하고 있다고 밝혔다. 수요 쪽에서는 전력반도체가 모바일·가전을 넘어 AI 데이터센터, 로봇, 자동차 등 전력 소모가 큰 산업군으로 확산되고 있으며, Mordor Intelligence는 글로벌 전력반도체 시장이 2026년 약 599.8억달러에서 2031년 782.5억달러로 연평균 5.46% 성장할 것으로 전망했다. 2026년 텍사스인스트루먼트가 전력관리 IC 가격을 15%에서 최대 85%까지 인상하고 인피니언도 주력 제품을 약 15% 올린 사례는 전력반도체 공급의 타이트함을 보여주는 사례로 거론된다. 반면 중국 SMIC·화홍 등이 감당하지 못한 물량이 DB하이텍으로 유입되는 구조는 중국 업체의 증설·자립 정책이 진전될 경우 반대 방향으로도 작동할 수 있는 양면성을 갖는다. 상상인증권은 2026년 5월 리포트에서 중국 정부의 BCD 자립 정책과 SMIC·Nexchip의 움직임을 함께 짚었다. 또 DS투자증권 이수림 연구원은 2026년 8인치 파운드리 글로벌 생산량이 전년 대비 2.4% 감소할 것으로 보면서, 하반기 전자제품 수요 불확실성 탓에 업체별 가동률·가격 차별화가 나타날 수 있으나 동사는 전력·가전·산업·자동차 사이클에 민감해 업황 개선 효과를 누릴 수 있다고 전망했다.",
-  "en": "The 8-inch foundry market is in a phase of structurally shrinking supply. According to TrendForce, as Samsung Electronics and TSMC rapidly cut 8-inch capacity from the second half of 2025, average 8-inch utilization among the top ten foundries is set to move from about 80% in 2025 to near 90% in 2026, and Omdia projects global 8-inch monthly capacity declining from 3.04 million wafers in 2026 to 3.02 million in 2028. On pricing, TrendForce expects average 8-inch foundry prices to rise 5-20% year on year in 2026, and DB HiTek said it has been implementing power-semiconductor price increases in China from the second quarter. On the demand side, power semiconductors are spreading beyond mobile and appliances into power-hungry sectors such as AI data centers, robotics and automobiles, and Mordor Intelligence projects the global power-semiconductor market growing from about 59.98 billion dollars in 2026 to 78.25 billion dollars in 2031, a 5.46% annual rate. Cases such as Texas Instruments raising power-management IC prices by 15% to as much as 85% in 2026 and Infineon lifting flagship product prices by around 15% are cited as evidence of tight power-semiconductor supply. Conversely, the pattern in which orders that China's SMIC and Hua Hong cannot absorb flow through to DB HiTek cuts both ways should Chinese capacity additions and localization policy advance. Sangsangin Investment and Securities, in a May 2026 report, flagged China's BCD self-sufficiency policy alongside moves by SMIC and Nexchip. In addition, analyst Lee Su-rim of DS Investment and Securities projected global 8-inch foundry output falling 2.4% year on year in 2026, noting that uncertain second-half electronics demand could differentiate utilization and pricing by player, but that this company is more exposed to power, appliance, industrial and automotive cycles and can therefore benefit from an improving environment."
+  "ko": "8인치 파운드리는 전력관리칩(PMIC)과 전력반도체가 여전히 의존하는 공정이라, 수요 구조가 AI 서버와 전기차 쪽으로 옮겨 가고 있다. KB증권의 이창민 연구원은 AI 서버용 전력관리칩 수요가 8인치 수요를 가파르게 늘리고 있다고 설명했다. 공급 측면에서는 TSMC와 삼성전자가 12인치 첨단 공정으로 전환하며 8인치 생산능력을 줄이는 흐름이 겹쳤다. 시장조사업체 트렌드포스는 2026년 1분기 8인치 파운드리 판가가 5~15% 올랐고 2분기에도 최대 10% 추가 인상이 있었을 것으로 봤다. 중국 파운드리 SMIC와 넥스칩은 2026년 1월과 3월에 각각 8인치 중심의 판가 인상을 단행했다. 중국 정부의 5개년 계획에 따른 BCD 자립 정책도 중국 내 대체 수요를 키우는 배경으로 꼽힌다. 중국 업체들의 신규 투자가 12인치 라인에 쏠려 있어 8인치 공급 확대 속도는 제한적이라는 평가다. 삼성증권은 8인치 업황의 구조적 호황과 이익 사이클 장기화 전망을 유지했다. 경쟁 포지션에서 DB하이텍은 8인치 중견·중소 파운드리 가운데 생산능력 규모와 전력반도체 특화 공정이 강점으로 꼽힌다. 다만 8인치 공정은 한 장의 웨이퍼에서 나오는 칩 수가 12인치보다 적어, 고부가 제품 믹스 전환이 수익성의 관건이다.",
+  "en": "The 8-inch foundry segment depends on processes that power management ICs and power semiconductors still rely on, so demand is shifting toward AI servers and electric vehicles. KB Securities analyst Lee Chang-min said AI server power management IC demand is steeply raising 8-inch demand. On the supply side, TSMC and Samsung Electronics are cutting 8-inch capacity as they move to 12-inch advanced nodes. TrendForce estimated that 8-inch foundry prices rose 5% to 15% in the first quarter of 2026 and could have risen by up to a further 10% in the second quarter. SMIC and Nexchip each raised 8-inch-centered prices in January and March 2026. China's five-year plan for BCD self-reliance is also cited as a driver of domestic substitution demand. Because Chinese players are concentrating new investment on 12-inch lines, the pace of 8-inch supply expansion is seen as limited. Samsung Securities maintained its view that the 8-inch market is in a structural upcycle with a prolonged profit cycle. Among mid-sized and smaller 8-inch foundries, DB HiTek's capacity scale and power semiconductor specialization are cited as strengths. However, an 8-inch wafer yields fewer chips than a 12-inch wafer, so the shift toward higher-value product mix is central to profitability."
  },
  "outlook": {
-  "ko": "회사가 제시한 방향은 가동률 유지와 캐파 확장의 병행이다. DB하이텍은 올해 가동률이 98% 이상을 유지할 것으로 내다봤고, 전력반도체 주문 증가로 사실상 풀가동 체제가 연중 지속될 것이라는 전망이 제시됐다. 증설은 상우캠퍼스 클린룸이 중심으로, 신규 클린룸은 8인치 월 3만 5,000장 규모로 GaN·BCDMOS·SiC를 생산할 예정이며 완료 시 생산능력은 15만 4,000장에서 23% 늘어난 19만장이 된다. 투자 규모와 관련해 상우캠퍼스 클린룸 확장 투자는 전자공시 기준 2,715억원이며 2025년에 1,659억원이 집행됐고, 회사는 2025년 12월 K-반도체 비전과 육성전략 보고회에서 향후 5년간 1조 5,000억원 규모 투자 계획을 공식화했다. 주주환원과 관련해서는 2026년 4월 30일 기업가치 제고계획을 공시하며 2025년 주주환원율 31.4%를 밝히고 배당성향 20%·총주주수익률 25% 이상 목표와 5년간 2조원의 미래 투자 재원 계획을 제시했으며, 자사주 중 1.4%에 해당하는 59만 2,000주를 추가 소각할 계획이라고 했다. 차세대 공정 일정으로는 이상기 기술개발실장이 2026년 2월 세미콘 코리아 세미나에서 GaN은 연말쯤 대량 양산에 들어가며 2027년 4월 공정 설계 키트를 출시할 예정이라고 밝혔다. 회사는 2025년 12월 SiC·GaN 공정 기반 멀티프로젝트웨이퍼로 각각 10개 이상 고객사 제품을 생산했고 현재 고객 평가가 진행 중이며 2027년 본격 양산을 계획하고 있다. 판가와 관련해서는 상반기 인상에 이어 하반기에는 디스플레이 구동칩 공정 제품까지 인상 범위를 넓히는 2차 인상이 추진된다고 보도됐고, 상상인증권은 2026년 5월 리포트에서 2026년 연결 매출 1조 6,022억원, 영업이익 3,553억원(영업이익률 22.2%)을 전망했다.",
-  "en": "Management's stated direction pairs sustained utilization with capacity expansion. DB HiTek guided for utilization staying above 98% this year, with expectations that rising power-semiconductor orders keep the fabs effectively full through the year. Expansion centers on the Sangwoo campus cleanroom: the new cleanroom adds about 35,000 8-inch wafers per month and will produce GaN, BCDMOS and SiC, taking capacity 23% higher from 154,000 to 190,000 wafers on completion. On spending, the Sangwoo cleanroom expansion is disclosed at 271.5 billion won with 165.9 billion won executed in 2025, and the company formalized a 1.5 trillion won five-year investment plan at a national semiconductor strategy briefing in December 2025. On shareholder returns, it filed a corporate value-up plan on April 30, 2026, citing a 2025 total return ratio of 31.4%, targeting a 20% payout ratio and total shareholder return above 25%, and earmarking 2 trillion won over five years for future investment, while planning to cancel an additional 592,000 treasury shares, equal to 1.4% of stock. On next-generation processes, technology development head Lee Sang-ki said at a Semicon Korea seminar in February 2026 that GaN would enter volume production around year-end with a process design kit due in April 2027. The company ran SiC and GaN multi-project wafers in December 2025, producing designs for more than ten customers each, with customer evaluation under way and full production planned for 2027. On pricing, reports indicate a second round of increases in the second half extending to display-driver-IC process products after first-half hikes, and Sangsangin Investment and Securities projected 2026 consolidated revenue of 1,602.2 billion won and operating profit of 355.3 billion won (22.2% margin) in a May 2026 report."
+  "ko": "회사는 하반기에도 추가 가격 인상을 추진하며, 인상 대상을 BCD 제품에서 DDI(디스플레이구동칩)까지 넓힐 계획이다. 회사는 2026년 연간 가동률을 98%로 예상했고, 고객이 요청한 물량을 모두 배정하기 어려운 상황이 이어진다고 설명했다. 생산능력은 고객 확보와 기술 개발 추이, 투자 여력을 고려해 단계적으로 확대한다는 방침이다. 고전압 BCD와 MOSFET 생산능력을 늘리고, 데이터센터·로봇·드론으로 응용처를 넓히며, 실리콘 커패시터와 GaN 같은 신규 공정도 확대할 계획이다. 8인치 SiC 쪽에서는 1200V SiC MOSFET 공정의 신뢰성 검증을 완료했다고 2026년 9월 9일 밝혔고, 2027년 양산을 목표로 한다. 기존 협력 고객에게 우선 공정을 제공한 뒤 2027년 2분기에는 모든 고객으로 파운드리 서비스를 확대할 계획이다. 회사는 2030년까지 AI 데이터센터·자동차·산업용 등 고부가 제품 매출 비중을 2025년 24%에서 60%로 끌어올리고, 전체 매출을 1조 8,000억원 규모로 키우는 목표를 세웠다. 삼성증권은 2026년 4분기 매출을 4,210억원, 영업이익을 1,113억원으로 추정했으며, 이는 증권사 추정치이지 공시 실적이 아니다. 원·달러 환율은 2026년 11월 기준 1,300원 초반으로, 3분기 1,420원 대비 내려온 상태다. 삼성증권은 이 환율 하락이 4분기 판가 상승 효과를 상쇄할 것으로 보았고, 내년에도 업계 가격 인상 흐름이 이어져 1~2회 추가 인상이 가능하다고 전망했다.",
+  "en": "The company is pursuing further price increases in the second half of 2026 and plans to extend them from BCD products to DDI (display driver ICs). It expects 2026 annual utilization of 98% and says it is hard to allocate all the volume customers request. Capacity will be expanded in stages, taking into account customer wins, technology development and investment capacity. It plans to add high-voltage BCD and MOSFET capacity, broaden applications to data centers, robots and drones, and expand new processes such as silicon capacitors and GaN. In 8-inch silicon carbide, the company said on 9 September 2026 that reliability verification of its 1200V SiC MOSFET process is complete, with mass production targeted for 2027. It will first offer the process to existing partner customers and extend foundry service to all customers from the second quarter of 2027. The company targets raising the share of high-value revenue from AI data centers, automotive and industrial applications from 24% in 2025 to 60% by 2030, with total revenue of KRW 1.8 trillion. Samsung Securities estimated fourth-quarter 2026 revenue at KRW 421 billion and operating profit at KRW 111.3 billion; these are broker estimates, not reported results. The won-dollar rate was in the low 1300s as of November 2026, down from 1,420 in the third quarter. Samsung Securities said this decline would offset the fourth-quarter price-increase effect and expects one to two more industry-wide price increases next year."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 최근 네 개 분기 이익을 기준으로 두 자릿수 초반의 주가수익비율에서 거래되고 있는데, 이는 이익이 급감했던 2024년 국면의 배수보다는 낮고 초과이익이 났던 2022년 국면의 배수보다는 높은 중간대다. 순자산 대비로는 프리미엄이 붙은 구간이며, 지배주주 자본과 총자본 중 무엇을 쓰는지, 자사주를 포함한 주식수를 어떻게 잡는지에 따라 산출되는 순자산배수가 달라지므로 화면상 지표와 거래소 공표치 간 차이를 함께 볼 필요가 있다. 배당수익률은 시장 평균을 밑도는 편으로, 이익 재원이 배당보다 증설과 자사주 정책에 우선 배분되는 구조를 반영한다. 회사는 2025년 주주환원율 31.4%를 밝히면서 배당성향 20%와 총주주수익률 25% 이상을 목표로 제시했으므로, 환원 정책의 실제 이행 여부가 밸류에이션 논의의 한 축이 된다. 이익의 방향은 2024년 축소에서 2025년 회복, 2026년 상반기 마진 개선으로 이어졌지만 파운드리 이익은 가동률과 판가에 민감해 분기별 변동폭이 크다는 점이 배수 해석에 함께 고려될 필요가 있다. 여기에 증설로 늘어나는 감가상각비와 화합물 반도체 초기 투자 부담은 향후 이익 기반을 좌우하는 변수다.",
-  "en": "Based on the last four quarters of earnings, the shares trade on a price-to-earnings multiple in the low double digits, sitting between the higher multiple of the depressed 2024 earnings phase and the lower multiple of the outsized 2022 profit phase. Relative to book value the stock carries a premium, and because the resulting book multiple varies with whether owners' equity or total equity is used and how treasury shares are treated in the share count, the on-screen metric and the exchange-published figure should be read side by side. The dividend yield sits below the market average, reflecting a structure in which earnings are allocated first to capacity expansion and treasury-share policy rather than dividends. The company disclosed a 31.4% total shareholder return ratio for 2025 while targeting a 20% payout ratio and total shareholder return above 25%, so actual execution of that policy is one axis of the valuation debate. The earnings direction has moved from contraction in 2024 to recovery in 2025 and margin improvement in the first half of 2026, but foundry profit is sensitive to utilization and pricing, and that quarter-to-quarter volatility belongs in any reading of the multiple. Added depreciation from the expansion and the early-stage cost burden of compound semiconductors are further variables shaping the future earnings base."
+  "ko": "밸류에이션은 이익 수준과 순자산 기준을 나눠 보면 사실 비교가 명확해진다. 2024년 저점 이후 영업이익이 2025년에 회복되면서 이익 대비 배수 해석은 이익 회복 속도와 분기 변동에 좌우되는 구조가 됐다. 순자산 기준으로는 2025년 말 지배주주 지분 2조 1,424억원 대비 주가 프리미엄 폭이 핵심 비교 대상이다. 3분기 지배주주 순이익이 285억원으로 줄면서 최근 네 개 분기 합계 2,840억원을 기준으로 한 배수 계산은 변동 폭이 커졌다. 증권사 목표주가는 최근 하향 조정이 이어졌다. 삼성증권은 2026년 11월 13일 리포트에서 목표주가를 13만원으로 낮추고 매수 의견을 유지했다고 제시했다. KB증권은 2026년 11월 11일 리포트에서 목표주가를 16만원으로 낮췄다고 밝혔다. 두 곳 모두 환율 하락을 3분기 실적이 기대에 못 미친 배경으로 꼽았다. 2026년 사업보고서가 나오면 지분과 이익 값이 갱신되어 이 비교의 기준이 바뀐다.",
+  "en": "Valuation is easiest to read when earnings levels and net asset levels are compared separately. After operating profit recovered in 2025 from the 2024 low, multiples on earnings have depended on the pace of earnings recovery and quarterly swings. On a net asset basis, the key comparison is the premium of the share price over equity attributable to owners of the parent, which stood at KRW 2.14 trillion at the end of 2025. Third-quarter profit attributable to owners of the parent fell to KRW 28.5 billion, so multiples computed on the last four quarters, totaling KRW 284 billion, have become more sensitive to quarterly swings. Broker target prices have been cut recently. Samsung Securities presented a cut to a target of KRW 130,000 in a 13 November 2026 report while keeping its buy rating. KB Securities said in a 11 November 2026 report that it lowered its target to KRW 160,000. Both pointed to the weaker won as a reason for third-quarter results falling short of expectations. The 2026 annual report will update the equity and earnings base used in these comparisons."
  },
  "bull": [
   {
    "title": {
-    "ko": "8인치 공급 축소가 만든 구조적 공백",
-    "en": "A structural gap created by shrinking 8-inch supply"
+    "ko": "8인치 공급 축소와 판가 인상",
+    "en": "Shrinking 8-inch Supply and Price Increases"
    },
    "body": {
-    "ko": "트렌드포스는 삼성전자·TSMC의 8인치 축소로 세계 10대 파운드리의 8인치 평균 가동률이 2025년 약 80%에서 2026년 90%에 육박할 것으로 전망했다. 옴디아 역시 글로벌 8인치 월 생산능력이 2026년 304만장에서 2028년 302만장으로 감소할 것으로 봤다. 공급이 늘지 않는 시장에서 회사는 가동률 98% 이상 유지를 전망했고, 이는 고정비 분산 측면에서 이익률에 유리한 조건이다. 두 대형사가 선단공정에 집중하며 8인치 레거시를 축소하는 흐름은 8인치 업체들의 낙수효과로 이어질 것이라는 분석도 제시됐다.",
-    "en": "TrendForce expects average 8-inch utilization among the top ten foundries to move from about 80% in 2025 toward nearly 90% in 2026 as Samsung Electronics and TSMC cut 8-inch capacity. Omdia likewise sees global 8-inch monthly capacity slipping from 3.04 million wafers in 2026 to 3.02 million in 2028. In a market where supply is not growing, the company guided for utilization above 98%, a condition that supports margins through fixed-cost absorption. Analysis also suggests the two majors' shift toward leading-edge nodes leaves trickle-down benefits for 8-inch specialists."
+    "ko": "대형 업체의 8인치 생산 축소와 AI 서버용 전력관리칩 수요 증가가 겹치며 공급이 빠듯한 상태다. DB하이텍은 2026년 3월과 7월 두 차례 가격을 올렸고 하반기 추가 인상을 추진하고 있다. 3분기 가동률은 사실상 100%로 공장이 완전 가동 수준이다. 중국 팹리스의 칩 국산화 수요도 BCD와 MOSFET 주문을 늘린다는 것이 회사의 판단이다.",
+    "en": "Reduced 8-inch capacity at major players and rising demand for AI server power management ICs have combined to keep supply tight. DB HiTek raised prices twice, in March and July 2026, and is pursuing further increases in the second half. Third-quarter utilization was effectively 100%, a fully loaded fab. The company sees Chinese fabless customers' chip localization as adding BCD and MOSFET orders."
    }
   },
   {
    "title": {
-    "ko": "판가 인상과 제품 믹스 개선의 동시 진행",
-    "en": "Price increases and mix improvement moving together"
+    "ko": "고부가 제품 비중 확대",
+    "en": "Rising Share of Higher-Value Products"
    },
    "body": {
-    "ko": "회사는 2분기부터 중국에서 전력반도체 판가 인상을 단행하고 있다고 밝혔고, 트렌드포스는 2026년 8인치 평균 판가가 전년 대비 5~20% 오를 것으로 전망했다. 믹스 측면에서도 산업·자동차 매출 비중이 31%로 전년 동기 대비 2%포인트 올랐고 전력반도체(BCD) 비중은 총 매출의 69%를 차지했다. 이 조합은 2026년 2분기 확정 영업이익률이 27% 수준까지 오른 배경과 맞물린다. 하반기에는 디스플레이 구동칩 공정 제품까지 인상 범위를 넓히는 2차 인상이 추진된다는 보도도 나왔다.",
-    "en": "The company said it has been raising power-semiconductor prices in China since the second quarter, and TrendForce expects average 8-inch prices to rise 5-20% year on year in 2026. On mix, the industrial and automotive revenue share rose 2 percentage points year on year to 31%, while power semiconductors (BCD) made up 69% of total revenue. That combination aligns with the confirmed second-quarter 2026 operating margin reaching roughly 27%. Reports also point to a second round of increases in the second half extending to display-driver-IC process products."
+    "ko": "2026년 2분기 BCD 제품 비중은 69%로 전년 같은 기간보다 높아졌고, 산업용 제품 비중은 11%에서 19%로 올랐다. 회사는 2030년 고부가 매출 비중 60%를 목표로 제시했다. 판가가 높은 제품 믹스로 바뀌면 영업이익률 개선 여지가 넓어지는 방향이다. 영업이익률은 2025년 19.8%로 2024년 16.9%보다 회복된 상태다.",
+    "en": "BCD products reached 69% of second-quarter 2026 revenue, up from a year earlier, and industrial products rose from 11% to 19%. The company has set a target of 60% high-value revenue share by 2030. A shift to a higher-priced product mix widens room for operating margin improvement. The operating margin recovered to 19.8% in 2025 from 16.9% in 2024."
    }
   },
   {
    "title": {
-    "ko": "증설·차세대 공정과 환원 정책의 제도화",
-    "en": "Expansion, next-generation processes and formalized returns"
+    "ko": "SiC 파운드리 신규 성장 축",
+    "en": "A New Growth Axis in SiC Foundry"
    },
    "body": {
-    "ko": "상우캠퍼스 신규 클린룸은 8인치 월 3만 5,000장 규모로 GaN·BCDMOS·SiC를 생산할 예정이며, 완료 시 생산능력이 15만 4,000장에서 19만장으로 23% 늘어난다. SiC·GaN 멀티프로젝트웨이퍼로 각각 10개 이상 고객사 제품을 생산해 현재 평가가 진행 중이며 2027년 본격 양산이 계획돼 있어 응용처 확장 여지가 남아 있다. 재무적으로는 2025년 영업활동현금흐름 3,570억원이 투자 재원의 기반이 된다. 2026년 4월 공시된 기업가치 제고계획에는 5년간 2조원 투자와 자사주 1.4% 추가 소각 계획이 담겼다.",
-    "en": "The new Sangwoo cleanroom adds roughly 35,000 8-inch wafers per month for GaN, BCDMOS and SiC, lifting capacity 23% from 154,000 to 190,000 wafers when complete. SiC and GaN multi-project wafers produced designs for more than ten customers each and are under customer evaluation, with full production planned for 2027, leaving room to broaden applications. Financially, 2025 operating cash flow of 356.97 billion won underpins the investment program. The value-up plan filed in April 2026 includes 2 trillion won of investment over five years and the cancellation of an additional 1.4% of shares held in treasury."
+    "ko": "회사는 8인치 1200V SiC MOSFET 공정의 신뢰성 검증을 세계 최초로 마쳤다고 2026년 9월 9일 밝혔다. 2027년 양산과 2027년 2분기 전 고객 대상 서비스 확대가 계획돼 있다. 설계 키트를 제공해 고객의 개발 기간을 1년 이상 줄일 수 있다고 회사는 설명한다. 기존 실리콘 파운드리 라인과 별개의 성장 축으로 자리 잡을지는 양산과 고객 확보 결과에 달려 있다.",
+    "en": "The company said on 9 September 2026 that it has completed reliability verification of an 8-inch 1200V SiC MOSFET process, which it describes as a world first. Mass production is targeted for 2027, with service expanding to all customers from the second quarter of 2027. The company says design kits can cut customers' development time by more than a year. Whether this becomes a separate growth axis from the silicon foundry business depends on mass production and customer wins."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "레거시 사이클과 전방 수요의 불확실성",
-    "en": "Legacy cycle and uncertain end demand"
+    "ko": "환율 하락이 3분기 이익을 눌렀다",
+    "en": "A Weaker Won Weighed on Third-Quarter Profit"
    },
    "body": {
-    "ko": "8인치 파운드리 이익은 가동률과 판가에 직결되므로 전방 수요가 꺾이면 마진이 빠르게 되돌아갈 수 있다. DS투자증권은 하반기 전자제품 수요가 불확실해 업체별 가동률과 가격 차별화가 나타날 수 있다고 지적했다. 실제 확정 실적에서도 2025년 4분기 매출은 3,878억원으로 늘었지만 영업이익은 704억원으로 줄어 마진이 18% 수준까지 낮아진 사례가 있다. 가격 인상이 고객 저항이나 물량 조정으로 이어질 가능성도 함께 확인해야 한다.",
-    "en": "Because 8-inch foundry profit is tied directly to utilization and pricing, margins can retrace quickly if end demand weakens. DS Investment and Securities noted that uncertain second-half electronics demand could differentiate utilization and pricing across players. Confirmed results already show such a case: fourth-quarter 2025 revenue rose to 387.8 billion won while operating profit fell to 70.4 billion won, taking the margin down to about 18%. Whether price increases trigger customer pushback or volume adjustments also needs monitoring."
+    "ko": "삼성증권은 3분기 영업이익 900억원이 시장 기대치를 밑돌았고, 환율 하락에 따른 비용 상승이 판가 인상 효과보다 컸다고 분석했다. 2026년 11월 12일 실적 발표 직후 주가는 장 초반 16%대 급락했다. 4분기에도 환율 하락이 판가 상승 효과를 상쇄할 것이라는 전망이 나온다.",
+    "en": "Samsung Securities said third-quarter operating profit of KRW 90 billion fell short of market expectations, as cost increases from the weaker won outweighed the effect of price increases. Shares fell more than 16% in early trading right after the results were released on 12 November 2026. Samsung Securities expects the won's decline to offset price gains again in the fourth quarter."
    }
   },
   {
    "title": {
-    "ko": "중국 경쟁·자립화라는 양면성",
-    "en": "The double edge of Chinese competition and localization"
+    "ko": "중국 매출 집중과 정책 변수",
+    "en": "China Concentration and Policy Variables"
    },
    "body": {
-    "ko": "현재는 SMIC·화홍 등이 감당하지 못한 물량이 DB하이텍으로 유입되는 구조지만, 중국 업체의 증설이 진전되면 같은 경로로 물량이 되돌아갈 수 있다. 상상인증권은 2026년 5월 리포트에서 중국 정부의 BCD 자립 정책과 SMIC·Nexchip의 움직임을 함께 언급했다. 판가 인상의 상당 부분이 중국 대상 물량에서 시작됐다는 점에서 정책·경쟁 환경 변화는 가격 협상력에 직접 영향을 준다. 미국과 중국 사이의 무역·수출통제 변수도 고객 배치에 영향을 줄 수 있다.",
-    "en": "Today, orders that SMIC and Hua Hong cannot absorb flow to DB HiTek, but that same channel can reverse as Chinese capacity additions progress. Sangsangin Investment and Securities cited China's BCD localization policy alongside moves by SMIC and Nexchip in a May 2026 report. Given that much of the price increase began with China-bound volume, shifts in policy and competition feed straight into pricing power. Trade and export-control variables between the United States and China could also reshape customer allocation."
+    "ko": "중국은 전체 매출의 62%를 차지해 지역 집중도가 높다. 중국 정부의 BCD 자립 정책과 현지 팹리스의 칩 국산화는 주문을 늘리는 요인이지만, 정책과 고객 구조가 바뀌면 물량 배정 구도도 달라질 수 있다. 판가 인상이 중국 고객에게 얼마나 받아들여지는지가 이후 마진의 관건이다.",
+    "en": "China accounts for 62% of revenue, so regional concentration is high. China's BCD self-reliance policy and local fabless chip localization add orders, but if policy or customer structure shifts, volume allocation could change as well. How far price increases are accepted by Chinese customers will be central to future margins."
    }
   },
   {
    "title": {
-    "ko": "투자 부담과 지배구조 논점",
-    "en": "Capex burden and governance questions"
+    "ko": "자회사 손익과 부채 증가",
+    "en": "Subsidiary Results and Rising Debt"
    },
    "body": {
-    "ko": "확정 재무에서 2025년 부채총계는 7,486억원으로 전년 3,962억원에서 늘고 부채비율은 19.8%에서 33.4%로 상승했으며, 증설이 진행되는 동안 감가상각 부담은 커진다. 회사는 보유 자사주 416만주를 소각·교환사채 발행·임직원 보상 등으로 활용하겠다고 공개했고, 이 가운데 222만주(54%)를 교환사채로 처분해 상우 팹 확장과 전력반도체 양산 투자 재원을 마련한다는 계획이었다. 이에 대해 소각 규모가 전체 자사주의 3분의 1에도 미치지 않아 실질적인 주주환원 효과가 제한적이라는 지적도 제기됐다. 2022년 팹리스 사업 물적분할 추진 과정에서 소액주주 연대가 결성되는 등 지배구조 관련 분쟁 이력도 남아 있다.",
-    "en": "On confirmed figures, 2025 total liabilities rose to 748.6 billion won from 396.2 billion won and the debt-to-equity ratio moved from 19.8% to 33.4%, while depreciation charges build as the expansion proceeds. The company disclosed a plan to use its 4.16 million treasury shares through cancellation, exchangeable-bond issuance and employee compensation, with 2.22 million shares (54%) to be disposed via exchangeable bonds to fund the Sangwoo fab expansion and power-semiconductor production investment. In response, commentary noted that with cancellation covering less than a third of treasury stock, the practical shareholder-return effect is limited. There is also a history of governance disputes, including a minority-shareholder coalition formed during the 2022 attempt to spin off the fabless business."
+    "ko": "2025년 말 부채비율은 33.4%로 2024년 19.8%보다 높아졌고, 부채총계는 7,486억원이다. 연결 기준에는 팹리스 자회사의 수익성 하락 가능성과 합금철 영업 중단에 따른 매출 감소 요인이 남아 있다. 3분기 지배주주 순이익은 285억원으로 영업이익 900억원과 격차가 컸다.",
+    "en": "The debt-to-equity ratio rose to 33.4% at the end of 2025 from 19.8% in 2024, with total liabilities of KRW 748.6 billion. On a consolidated basis, the fabless subsidiary may see lower profitability, and the halted alloy business reduces consolidated revenue. Third-quarter profit attributable to owners of the parent was KRW 28.5 billion, a wide gap from operating profit of KRW 90 billion."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "수요·가격 사이클",
-    "en": "Demand and pricing cycle"
+    "ko": "판가·사이클 리스크",
+    "en": "Pricing and Cycle Risk"
    },
    "body": {
-    "ko": "8인치 수요는 전력반도체·디스플레이 구동칩·이미지센서 등 전방 세트 수요에 연동돼 재고 조정 국면에서 가동률과 판가가 동시에 흔들릴 수 있다. DS투자증권은 8인치 파운드리 글로벌 생산량이 2026년 전년 대비 2.4% 감소할 것으로 보면서 업체별 차별화 가능성을 언급했다. 확정 실적에서도 분기 영업이익률이 17%대에서 27% 수준까지 넓은 범위로 움직인 만큼, 특정 분기 마진을 추세로 단정하기 어렵다. AI 데이터센터·로봇 관련 물량은 아직 비중 확대 초기 단계라는 점도 감안할 필요가 있다.",
-    "en": "Demand for 8-inch capacity tracks end-set demand for power semiconductors, display driver ICs and image sensors, so utilization and pricing can wobble together during inventory corrections. DS Investment and Securities expects global 8-inch foundry output to fall 2.4% year on year in 2026 and flags scope for divergence among players. Confirmed results show quarterly operating margins swinging across a wide band from the 17% area to roughly 27%, so a single quarter's margin should not be read as a trend. It also bears noting that AI data-center and robotics volumes are still early in their share expansion."
+    "ko": "8인치 가격 인상이 수요 둔화를 부르거나 중국 업체의 설비 전환이 공급을 늘리면 현재의 업황 구도가 바뀔 수 있다. 증권사들의 추가 인상 전망은 업황이 이어진다는 전제에 기대고 있어, 전제가 흔들리면 가격과 가동률 추정이 함께 조정될 수 있다.",
+    "en": "If price increases dampen demand, or if Chinese players' equipment conversion adds supply, the current market balance could shift. Broker expectations for further increases rest on the assumption that the upcycle continues, so a change in that assumption could force revisions to pricing and utilization estimates."
    }
   },
   {
    "cat": {
-    "ko": "실행·투자 리스크",
-    "en": "Execution and investment risk"
+    "ko": "신사업 실행 리스크",
+    "en": "Execution Risk on New Businesses"
    },
    "body": {
-    "ko": "증설과 차세대 공정 상용화가 일정대로 진행되지 않으면 비용은 선행하고 매출 인식은 뒤로 밀린다. NH투자증권은 2025년 12월 리포트에서 GaN과 SiC 모두 2026년 4분기부터 초도 물량 생산 계획이지만 SiC는 에피택시 같은 추가 투자가 필요해 GaN이 더 빠르게 진행될 것으로 예상했다. SiC·GaN 고객 평가가 진행 중이며 본격 양산은 2027년으로 계획돼 있어 수율과 고객 채택 속도가 관건이다. 8인치 전용 장비 확보 난이도 등 레거시 공정 특유의 설비 제약도 실행 변수로 남는다.",
-    "en": "If the expansion and commercialization of next-generation processes slip, costs land ahead of revenue recognition. NH Investment and Securities said in a December 2025 report that while both GaN and SiC are planned for initial volumes from the fourth quarter of 2026, GaN should progress faster because SiC requires added investment such as epitaxy. With SiC and GaN customer evaluations under way and full production planned for 2027, yield and the pace of customer adoption are the crux. Legacy-specific equipment constraints, including the difficulty of sourcing 8-inch-dedicated tools, remain an execution variable."
+    "ko": "8인치 SiC 양산은 2027년 목표이고, 2030년 고부가 매출 비중 60%와 전체 매출 1조 8,000억원은 장기 계획이다. 설비 확대가 고객 확보와 기술 개발 추이에 따라 단계적으로 이뤄진다는 점에서 일정이 늦어질 가능성도 남아 있다.",
+    "en": "Mass production of 8-inch SiC is targeted for 2027, and the 2030 goals of 60% high-value revenue share and KRW 1.8 trillion in revenue are long-term plans. Because capacity expansion will proceed in stages depending on customer wins and technology progress, timing could slip."
    }
   },
   {
    "cat": {
-    "ko": "지배구조·자본배분",
-    "en": "Governance and capital allocation"
+    "ko": "환율·재무 리스크",
+    "en": "FX and Financial Risk"
    },
    "body": {
-    "ko": "그룹 차원의 지배구조 재편 가능성은 소수주주 관점에서 반복적으로 논란이 된 사안이다. 주가 상승으로 DB Inc.가 지주회사 전환 기준에 해당할 가능성이 다시 거론되며 그룹의 실제적 준비가 필요할 수 있다는 진단이 나왔다는 보도(일요신문, 2026년 1월)가 있었고, 공정거래법상 지주회사 전환 시 2년 내 자회사 지분 30% 이상 보유 요건이 적용된다. DB Inc.는 2025년 9~10월과 12월에 걸쳐 총 20만주를 약 124억원에 장내 매수했다고 공시했으며, 이는 전체 지분의 0.45% 수준으로 매입 배경은 안정적 경영권 확보와 중장기 투자 수익 확보로 제시됐다. 자사주 교환사채 발행 조건과 소각 이행 여부는 주주환원 실질을 가르는 변수로 남아 있다.",
-    "en": "The possibility of group-level governance restructuring has repeatedly been contentious from a minority-shareholder standpoint. Reporting (Ilyo Shinmun, January 2026) noted that a rising share price revived discussion of DB Inc. meeting holding-company conversion thresholds and that concrete group preparation might be required, and fair-trade law requires a converting holding company to hold at least 30% of a listed subsidiary within two years. DB Inc. disclosed open-market purchases of 200,000 shares for about 12.4 billion won across September-October and December 2025, equal to roughly 0.45% of shares outstanding, citing stable management control and medium-to-long-term investment returns. The terms of any treasury-share exchangeable bond and follow-through on cancellation remain variables determining the substance of shareholder returns."
+    "ko": "원·달러 환율 변동은 판가 인상 효과를 상쇄할 수 있고, 3분기에 이미 그 영향이 나타났다. 부채비율이 2025년 말 33.4%로 올라간 만큼 재무 여력의 변화는 정기보고서 수치로 추적할 수 있다. 자회사 실적 변동이 연결 이익을 흔드는 구조라는 점도 함께 고려할 요인이다.",
+    "en": "Won-dollar fluctuations can offset the effect of price increases, as already seen in the third quarter. With the debt-to-equity ratio rising to 33.4% at the end of 2025, changes in financial capacity can be tracked through regular report figures. Subsidiary earnings swings that move consolidated profit are another factor to weigh."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 초",
-    "en": "Early November 2026"
+    "ko": "2027년 초 (회사 잠정 실적 공시 시점)",
+    "en": "Early 2027 (preliminary results release)"
    },
    "what": {
-    "ko": "3분기 잠정실적 공시와 기관 대상 기업설명회. 가동률 98% 유지 여부, 디스플레이 구동칩 공정까지 넓힌 하반기 2차 판가 인상의 실제 반영 정도, 2분기에 27% 수준까지 오른 영업이익률의 지속성을 확인할 자리다.",
-    "en": "Third-quarter preliminary results and the institutional briefing. Key checks are whether utilization holds above 98%, how much of the second-half price increase extended to display-driver-IC processes actually lands, and whether the roughly 27% operating margin of the second quarter persists."
+    "ko": "2026년 4분기 잠정 실적이다. 판가 인상과 환율 하락이 함께 반영되는 첫 분기이며, 삼성증권은 4분기 매출 4,210억원, 영업이익 1,113억원을 추정했다(증권사 추정치).",
+    "en": "This covers the fourth quarter of 2026. It is the first quarter reflecting both price increases and the won's decline; Samsung Securities estimated revenue of KRW 421 billion and operating profit of KRW 111.3 billion (broker estimates)."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기",
-    "en": "Fourth quarter of 2026"
+    "ko": "2027년 3월 말까지",
+    "en": "By end-March 2027"
    },
    "what": {
-    "ko": "차세대 전력반도체 양산 진입 여부. 회사 기술개발실장은 GaN이 연말쯤 대량 양산에 들어간다고 밝혔고, NH투자증권은 GaN·SiC 모두 4분기 초도 물량 생산 계획이라고 전망한 만큼 일정 준수와 초기 물량 규모가 확인 포인트다.",
-    "en": "Whether next-generation power semiconductors enter volume production. The head of technology development said GaN would reach volume production around year-end, and NH Investment and Securities projected initial volumes for both GaN and SiC in the fourth quarter, so schedule adherence and initial volume size are the checks."
+    "ko": "2026년 사업보고서 제출 기한이다. 연간 영업이익률, 가동률, 부채비율, 지배주주 순이익과 당기순이익의 차이를 정기보고서 수치로 확인하는 지점이다.",
+    "en": "This is the filing deadline for the 2026 annual report. It is the point at which annual operating margin, utilization, debt-to-equity ratio and the gap between profit attributable to owners of the parent and net profit can be checked against regulatory filings."
    }
   },
   {
    "when": {
-    "ko": "2026년 말~2027년 초",
-    "en": "Late 2026 to early 2027"
+    "ko": "2027년 2분기",
+    "en": "Q2 2027"
    },
    "what": {
-    "ko": "자사주 정책 이행. 회사는 자사주 중 1.4%인 59만 2,000주를 추가 소각할 계획이라고 밝혔고, 222만주를 교환사채로 처분해 상우 팹 확장 재원을 마련한다는 계획도 공개된 상태여서 실제 처분·소각 공시 내용이 주주환원의 실질을 가른다.",
-    "en": "Execution of treasury-share policy. The company said it plans to cancel a further 592,000 shares, or 1.4% of stock, while also disclosing a plan to dispose of 2.22 million shares via exchangeable bonds to fund the Sangwoo fab expansion, so the actual disposal and cancellation filings will determine the substance of returns."
+    "ko": "8인치 SiC 파운드리 서비스가 모든 고객으로 확대되는 시점이다. 협력 고객 외 신규 고객 확보 여부와 SiC 매출 기여가 확인 지점이다.",
+    "en": "Foundry service for 8-inch SiC expands to all customers. Whether new customers beyond existing partners are won, and how much SiC contributes to revenue, are the points to watch."
    }
   },
   {
    "when": {
-    "ko": "2027년 2월",
-    "en": "February 2027"
+    "ko": "2027년 중",
+    "en": "During 2027"
    },
    "what": {
-    "ko": "2026년 연간 실적 확정과 현금배당 결정 공시. 배당성향 20%·총주주수익률 25% 이상이라는 목표 대비 실제 환원 규모, 그리고 증설 집행에 따른 감가상각·부채비율 변화를 함께 확인할 시점이다.",
-    "en": "Confirmation of full-year 2026 results and the cash-dividend decision. This is the point to compare actual returns against the stated targets of a 20% payout ratio and total shareholder return above 25%, alongside changes in depreciation and leverage from the capex build."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 상반기",
-    "en": "First half of 2027"
-   },
-   "what": {
-    "ko": "상우캠퍼스 증설 진척과 지배구조 관련 공시. 증설 완료 시 생산능력이 19만장으로 23% 늘어나는 일정의 진행 상황과, 2027년 4월 예정된 GaN 공정 설계 키트 출시, 그리고 지주회사 전환 관련 그룹 차원의 결정 여부가 확인 대상이다.",
-    "en": "Progress on the Sangwoo expansion and governance-related filings. Watch the timeline under which completion lifts capacity 23% to 190,000 wafers, the GaN process design kit slated for April 2027, and any group-level decision on holding-company conversion."
+    "ko": "8인치 SiC 양산 목표 시점이다. 양산 개시와 물량 배정 상황은 고부가 전환 목표의 진척을 가늠하는 지표다.",
+    "en": "This is the targeted timing for 8-inch SiC mass production. The start of production and volume allocation will indicate progress toward the high-value shift target."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "DB하이텍의 최근 실적은 8인치 파운드리 공급이 구조적으로 줄어드는 국면과 겹쳐 개선 흐름을 보였다. 확정 기준으로 2025년 매출 1조 3,972억원·영업이익 2,773억원(영업이익률 19.8%)은 2024년(1조 1,312억원·1,908억원, 16.9%)보다 나아졌고, 2026년 2분기에는 매출 3,994억원·영업이익 1,084억원으로 영업이익률이 27% 수준까지 올랐다. 다만 2022년 영업이익률 45.9% 국면과 비교하면 이익 수준은 여전히 낮고, 2026년 1분기처럼 일회성 비용이 분기 마진을 크게 흔든 사례도 있어 분기 변동성은 상존한다. 트렌드포스의 8인치 가동률 상승 전망과 5~20% 판가 인상 전망, 회사의 가동률 98% 이상 유지 전망은 강세 요인으로 거론되는 반면, 중국 업체의 자립·증설, 전방 수요 불확실성, 증설에 따른 감가상각과 부채 증가는 반대편 요인이다. 2026년 4월 공시된 기업가치 제고계획에 담긴 5년 2조원 투자와 자사주 1.4% 소각 계획, 그리고 자사주 222만주의 교환사채 처분 계획은 자본배분과 지배구조를 동시에 가늠할 재료다. 결국 확인해야 할 것은 판가 인상과 믹스 개선이 다음 분기에도 이어지는지, 상우 증설과 GaN·SiC 양산 일정이 계획대로 진행되는지, 환원 정책이 공시대로 이행되는지다. 본 리포트는 정보 제공을 목적으로 하며 매수·매도 의견을 포함하지 않는다.",
-   "en": "DB HiTek's recent results improved in step with a structurally shrinking 8-inch foundry supply base. On confirmed figures, 2025 revenue of 1,397.2 billion won and operating profit of 277.3 billion won (19.8% margin) bettered 2024 (1,131.2 billion won, 190.8 billion won, 16.9%), and second-quarter 2026 revenue of 399.4 billion won with 108.4 billion won of operating profit lifted the margin to about 27%. Even so, profit remains far below the 45.9% margin phase of 2022, and cases such as the first quarter of 2026, when a one-off cost sharply moved the quarterly margin, show that volatility persists. TrendForce's outlook for rising 8-inch utilization and 5-20% price increases and the company's guidance for utilization above 98% are cited on the positive side, while Chinese localization and capacity additions, uncertain end demand, and higher depreciation and liabilities from the build-out sit on the other. The 2 trillion won five-year investment and 1.4% treasury-share cancellation in the April 2026 value-up filing, together with the plan to dispose of 2.22 million treasury shares via exchangeable bonds, offer a lens on both capital allocation and governance. What matters from here is whether price increases and mix improvement carry into the next quarter, whether the Sangwoo expansion and GaN and SiC production schedules hold, and whether the return policy is executed as disclosed. This report is for informational purposes and contains no buy or sell recommendation."
+   "ko": "DB하이텍은 8인치 파운드리 공급 부족과 가동률 상승, 판가 인상이 맞물리며 2026년 2분기 영업이익이 1,084억원으로 올라선 기업이다. 공시 실적을 보면 2024년 저점을 거쳐 2025년 영업이익이 2,773억원으로 회복됐지만, 2022년 7,687억원보다는 아직 낮다. 3분기 영업이익은 900억원이었으나 환율 하락과 자회사 변수로 지배주주 순이익이 285억원으로 줄어 흐름이 엇갈렸다. 강세 요인은 공급 축소, 판가 인상의 지속 가능성, 고부가 제품 비중 확대, SiC 신규 사업이다. 약세 요인은 환율 민감도, 중국 매출 집중, 자회사 손익과 부채비율 상승이다. 증권사 목표주가는 삼성증권 13만원(2026년 11월 13일), KB증권 16만원(2026년 11월 11일)처럼 하향 조정이 이어졌고, 두 곳 모두 환율 하락을 3분기 실적 부진의 배경으로 꼽았다. 이 리포트는 투자의견을 제시하지 않으며, 다음 확인 지점은 2026년 4분기 잠정 실적, 2026년 사업보고서, 2027년 2분기 SiC 서비스 확대다.",
+   "en": "DB HiTek is a company whose operating profit rose to KRW 108.4 billion in the second quarter of 2026 as 8-inch supply tightness, higher utilization and price increases came together. Based on reported results, operating profit recovered in 2025 from the 2024 low to KRW 277.3 billion, but it remains below KRW 768.7 billion in 2022. Third-quarter operating profit was KRW 90 billion, but profit attributable to owners of the parent fell to KRW 28.5 billion amid the weaker won and subsidiary factors, so the trend was mixed. Positive factors are supply tightness, the durability of price increases, a growing share of higher-value products and the new SiC business. Negative factors are sensitivity to the won, concentration in China, and subsidiary results alongside a rising debt-to-equity ratio. Broker target prices have been cut, with Samsung Securities presenting KRW 130,000 (13 November 2026) and KB Securities KRW 160,000 (11 November 2026), and both cited the weaker won for third-quarter results falling short. This report offers no investment opinion. The next checkpoints are preliminary fourth-quarter 2026 results, the 2026 annual report and the expansion of SiC service in the second quarter of 2027."
   }
  },
  "sources": [
-  "https://www.hankyung.com/article/202608055428P",
-  "https://www.news2day.co.kr/article/20260805500081",
-  "https://view.asiae.co.kr/article/2026080509121961468",
-  "https://news.dealsitetv.com/articles/174268",
-  "https://www.investing.com/equities/dongbu-hitek-earnings",
-  "https://www.cctimes.kr/news/articleView.html?idxno=920352",
-  "https://www.m-i.kr/news/articleView.html?idxno=1398954",
-  "http://www.topdaily.kr/articles/111305",
-  "https://comp.wisereport.co.kr/company/c1080001.aspx?cmp_cd=000990&cn=",
-  "https://m.finance.daum.net/quotes/A000990/news/stock/20260506111008395",
-  "https://v.daum.net/v/20260512113107818",
-  "https://heraldk.com/2026/05/11/%EC%A0%88%EB%8C%80%EA%B0%95%EC%9E%90-%EB%96%A0%EB%82%9C-8%EC%9D%B8%EC%B9%98-%ED%8C%8C%EC%9A%B4%EB%93%9C%EB%A6%AC-db%ED%95%98%EC%9D%B4%ED%85%8D-%E2%80%9C%EA%B0%80%EB%8F%99%EB%A5%A0-98%EA%B9%8C%EC%A7%80/",
-  "https://biz.heraldcorp.com/article/10735974",
-  "https://www.youthassembly.kr/news/949778",
-  "https://www.asiae.co.kr/article/enterprise-CEO/2026050611080904571",
-  "https://duswkd.com/entry/DB%ED%95%98%EC%9D%B4%ED%85%8D-8%EC%9D%B8%EC%B9%98-%ED%8C%8C%EC%9A%B4%EB%93%9C%EB%A6%AC-%EC%A0%84%EB%A0%A5-%EB%B0%98%EB%8F%84%EC%B2%B4-%EA%B0%80%EC%B9%98%EC%A3%BC",
-  "https://news.nate.com/view/20260510n01636",
-  "https://toryongilab.com/db-hitek-deep-analysis-2026/"
+  "https://www.hankyung.com/article/2026111341306",
+  "https://view.asiae.co.kr/article/2026090913490195778",
+  "https://www.topdaily.kr/articles/112861",
+  "https://www.ddaily.co.kr/page/view/2026111209372557274",
+  "https://www.bloter.net/news/articleView.html?idxno=678399",
+  "https://m.news.nate.com/view/20260716n26357",
+  "https://m.news.nate.com/view/20260808n04264",
+  "https://www.ajunews.com/view/20260909092350433",
+  "https://www.alphabiz.co.kr/news/articleView.html?idxno=190690",
+  "https://dbhitek.com/files/562/DB%ED%95%98%EC%9D%B4%ED%85%8D_%EC%83%81%EC%83%81%EC%9D%B8%EC%A6%9D%EA%B6%8C_20260520.pdf",
+  "https://www.newspim.com/news/view/20260520000230",
+  "https://www.thinkpool.com/item/000990/news/16829441",
+  "https://news.nate.com/view/20260415n17159",
+  "https://news.nate.com/view/20260520n07778",
+  "https://dbhitek.com/files/519/20260121_%EC%9C%A0%EC%A7%84%ED%88%AC%EC%9E%90%EC%A6%9D%EA%B6%8C_DB%ED%95%98%EC%9D%B4%ED%85%8D.pdf",
+  "https://supple.kr/news/cmttacr61000x1v05bewkst2w"
  ],
  "v": 2,
- "model": "claude-opus-5",
+ "model": "claude-haiku-5-5",
  "ticker": "000990",
  "name": "DB하이텍",
  "name_en": "DB HiTek Co.,LTD",
@@ -233,11 +221,11 @@
   "반도체"
  ],
  "market": "코스피",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 05:51",
- "dataDate": "20260904",
+ "reportDate": "2026-11-14",
+ "reportTs": "2026-11-14 07:36",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-09-04",
+  "asOf": "2026-11-13",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -307,12 +295,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 337406491433,
-    "op": 73842437551,
-    "np_owner": 59527788788
-   },
-   {
     "q": "2025Q3",
     "rev": 374649575924,
     "op": 80579586407,
@@ -335,29 +317,36 @@
     "rev": 399420599268,
     "op": 108423715257,
     "np_owner": 107979897368
+   },
+   {
+    "q": "2026Q3",
+    "rev": 403357918800,
+    "op": 90018505962,
+    "np_owner": 28538318988
    }
   ],
   "valuation": {
-   "price": 89900,
-   "mcap": 3.9111,
+   "price": 81600,
+   "mcap": 3.55,
    "shares": 43504588,
    "total_shares": 43617167,
-   "wavg_shares": 42151503,
-   "per": 10.814,
-   "eps": 8313,
-   "pbr": 1.5831,
-   "bps": 56788,
-   "roe_ttm": 15.9,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": 345707014850,
+   "wavg_shares": 42295206,
+   "per": 12.11,
+   "eps": 6738,
+   "pbr": 1.4099,
+   "bps": 57876,
+   "roe_ttm": 12.6,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": 283994625870,
    "ccy": "KRW",
    "bps_src": "자체",
    "eps_src": "공시",
-   "pbr_krx": 1.79,
+   "pbr_krx": 1.62,
    "bps_krx": 50326.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 810.0,
-   "div": 0.9
+   "div": 0.99
   }
- }
+ },
+ "textRules": 2
 }

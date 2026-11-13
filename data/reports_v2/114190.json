@@ -1,220 +1,208 @@
 {
  "title": {
-  "ko": "이차전지 소재 성장과 반복적 적자의 공존",
-  "en": "Battery Material Growth Amid Recurring Losses"
+  "ko": "소재 성장으로 적자 폭 축소, 플랜트 회복이 관건",
+  "en": "Lithium materials narrow losses; plant recovery is the test"
  },
  "lead": {
-  "ko": "이차전지 소재 부문의 외형 성장과 희토류 영구자석 재활용이라는 신사업 기대가 있지만, 정작 연결 손익은 최근 5개 분기 중 4개 분기에서 적자를 기록하며 실적 변동성이 이어지고 있다.",
-  "en": "Gangwon Energy's battery-material segment keeps expanding and a new rare-earth magnet recycling venture is emerging, yet consolidated earnings have swung to losses in four of the last five quarters, underscoring persistent volatility."
+  "ko": "2차전지 소재가 매출의 중심으로 자리 잡았지만 2026년 1분기부터 3개 분기 연속 영업손실이 이어지고 있어, 플랜트·설비 부문의 회복 여부가 다음 확인 지점이다.",
+  "en": "Battery materials now anchor sales, but operating losses have continued for three straight quarters since Q1 2026, making plant and equipment recovery the next checkpoint."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출 2,122억원(전년 대비 –5.4%), 영업손실 61억원으로 2022~2024년 흑자 기조가 깨졌다.",
-   "en": "2025 consolidated revenue was KRW212.3bn (-5.4% YoY) with an operating loss of KRW6.1bn, breaking the profitable run seen in 2022-2024."
+   "ko": "2차전지 소재(무수수산화리튬)가 사업의 중심이다. 회사 발표 기준 2026년 3분기 누적 소재 매출은 1,191억원으로 전년 동기 대비 44.2% 늘었다.",
+   "en": "Battery materials, mainly anhydrous lithium hydroxide, is the core business. Per the company announcement, cumulative materials sales for the first nine months of 2026 reached KRW 119.1 billion, up 44.2% year on year."
   },
   {
-   "ko": "2025년 3분기 지배주주 순손실 82억원이 연간 적자의 대부분을 차지했고, 2026년 1·2분기에도 각각 –11억원, –8억원의 순손실이 이어졌다.",
-   "en": "A KRW8.2bn net loss in Q3 2025 accounted for most of the annual deficit, and losses continued into 1Q26 (-KRW1.1bn) and 2Q26 (-KRW0.8bn)."
+   "ko": "2025년 연간 매출은 2,123억원으로 전년 대비 5.4% 줄었고, 영업손실 61억원으로 적자 전환했다.",
+   "en": "Full-year 2025 sales fell 5.4% to KRW 212.3 billion, and the company swung to an operating loss of KRW 6.1 billion."
   },
   {
-   "ko": "이차전지소재 부문 매출은 2025년 전년 대비 34% 성장하며 플랜트 부문 부진을 상당 부분 상쇄했다.",
-   "en": "The battery-material segment's 2025 revenue grew 34% year-on-year, offsetting much of the weakness in the plant segment."
+   "ko": "2025년 4분기 영업이익 1.1억원으로 흑자 전환한 뒤 2026년 1분기부터 3개 분기 연속 영업손실이 이어졌다. 2026년 3분기 영업손실은 9.6억원이다.",
+   "en": "After an operating profit of KRW 111 million in Q4 2025, operating losses have continued for three consecutive quarters from Q1 2026, with Q3 2026 at KRW 959 million."
   },
   {
-   "ko": "2026년 1월 미국 노베온 매그네틱스, LG전자와 폐가전 희토류 영구자석 재자원화 협력계약을 체결하며 사업 다각화를 시도하고 있다.",
-   "en": "In January 2026 the company signed a rare-earth magnet recycling cooperation agreement with US-based Noveon Magnetics and LG Electronics, marking a diversification effort."
+   "ko": "플랜트·설비 부문 매출은 2023년 559억원에서 2024년 450억원으로 줄었고, 2025년 3분기 누적은 209억원에 그쳤다.",
+   "en": "Plant and equipment sales fell from KRW 55.9 billion in 2023 to KRW 45.0 billion in 2024, and reached only KRW 20.9 billion for the first nine months of 2025."
   },
   {
-   "ko": "부채비율은 2023년 303%에서 2025년 129%로 낮아졌고, 2025년 영업활동현금흐름은 348억원으로 손익 적자에도 현금창출력은 유지됐다.",
-   "en": "The debt ratio fell from 303% in 2023 to 129% in 2025, and operating cash flow stayed positive at KRW34.8bn in 2025 despite the reported net loss."
+   "ko": "최근 네 개 분기 지배주주 순이익 합계는 25.5억원이며, 2025년 말 자본총계 640억원 가운데 지배주주 지분은 345억원이다.",
+   "en": "Attributable net income over the last four quarters totals KRW 2.55 billion, and of KRW 64 billion total equity at end-2025, KRW 34.5 billion belongs to controlling shareholders."
   }
  ],
  "business": {
-  "ko": "강원에너지는 1976년 강원보일러제작소로 설립돼 2009년 코스닥에 상장했고 2021년 현재 사명으로 변경한 에너지·소재 전문기업이다. 사업은 이차전지사업부문과 플랜트사업부문 두 축으로 구성되며, 이차전지부문에서는 소재와 설비를 함께 취급한다. 소재 사업은 양극재의 필수 원료인 리튬을 구매·가공해 무수수산화리튬과 수산화리튬을 양극재 제조사에 공급하는 구조로, 자체 특허인 전기히터건조기와 설비 자동화를 통해 고객이 요구하는 순도·입도·건조도를 맞춘 소재를 생산한다. 설비 사업은 양극재 제조공정 전반(원료투입·혼합·수세·분쇄·건조·분급·탈철·포장)에 대한 설계·구매·제작·시운전을 일괄 제공하는 턴키 방식이며, 최근에는 전극 슬러리 제조용 PD믹서 장비로 영역을 넓혔다. 플랜트사업부문은 산업용증기발생기, 화공설비, 환경에너지설비를 주력으로 하며 과거 이란 등 해외 발전 플랜트 프로젝트에 배열회수보일러(HRSG)를 공급한 이력도 있다. 국내 대표 양극재업체들이 전기차 배터리 수요 확대에 맞춰 해외 생산기지를 확장할 계획인 만큼, 회사는 이에 따른 설비 수요 증가를 기대하고 있다. 여기에 더해 2026년 1월에는 미국 희토류 영구자석 제조사 노베온 매그네틱스, LG전자와 함께 폐가전에서 회수한 네오디뮴(Nd-Fe-B) 영구자석을 재자원화하는 공동개발 협력계약을 체결하며 세 번째 사업축을 모색하고 있다. 이 협력은 노베온의 재활용 기술을 적용해 품질을 검증하는 단계이며, 기술적 타당성이 확인되면 양산 적용과 후속 계약으로 이어질 전망이고, 양사는 2027년 생산 개시를 목표로 연간 최대 2,000톤 규모의 국내 희토류 영구자석 생산공장 설립을 검토하고 있다.",
-  "en": "Gangwon Energy was established in 1976 as Gangwon Boiler Manufacturing, listed on KOSDAQ in 2009, and adopted its current name in 2021. The business rests on two pillars, a battery segment (materials and equipment) and a plant segment. The materials business purchases and processes lithium, a core cathode input, into anhydrous lithium hydroxide and lithium hydroxide supplied to cathode makers, using a proprietary electric heater dryer and automated processes to meet customer-specific purity, particle size and dryness requirements. The equipment business provides turnkey design, procurement, fabrication and commissioning across the full cathode-material production process, and has expanded into PD mixer equipment for electrode slurry manufacturing. The plant segment focuses on industrial steam generators and chemical/environmental facilities, and has a track record of supplying heat recovery steam generators (HRSG) to overseas power plant projects including in Iran. As leading domestic cathode makers plan overseas capacity expansion to meet growing EV battery demand, the company expects related equipment demand to rise. In January 2026, it also signed a joint-development cooperation agreement with US-based rare-earth magnet maker Noveon Magnetics and LG Electronics to recycle neodymium (Nd-Fe-B) magnets recovered from end-of-life LG appliances, exploring a third growth pillar. This collaboration is at a technology-verification stage using Noveon's recycling process, with mass-production application and follow-on contracts possible if feasibility is confirmed, and the two companies are studying a domestic rare-earth magnet plant targeting 2027 production start with capacity of up to 2,000 tons per year."
+  "ko": "강원에너지는 2차전지 소재와 플랜트 설비를 두 축으로 하는 에너지·전력 기업이다. 2차전지 소재 부문은 자회사 강원이솔루션이 양극재 제조사에 무수수산화리튬을 공급하는 구조다. 무수수산화리튬은 리튬이온 배터리 양극재의 핵심 원료이며, 수분 함량을 0.1% 이하로 관리해야 해 고순도·저수분 공정 기술이 경쟁력으로 꼽힌다. 2026년 3월 기준 매출 구성은 2차전지 소재가 약 81%, 산업용 증기발생기 등 플랜트가 약 12%, 2차전지 설비가 4~5% 수준이다. 플랜트 사업은 산업용 증기발생기, 화공설비, 환경에너지설비가 주력이며 삼성E&A, 현대엔지니어링, SK에코엔지니어링 등 대형 건설사를 주요 고객으로 한다. 2차전지 설비 부문은 양극재 공정 설계와 건조기, PD믹서 등을 공급하지만 전방 투자 지연으로 신규 수주가 기대에 못 미쳤다. 소재 부문은 양극재 제조사의 증설과 가동률에 실적이 연동되는 구조이고, 플랜트 부문은 건설사 발주와 프로젝트 기성 인식 시점에 좌우된다. 회사는 배관 설계·시공과 열관리 기술을 바탕으로 AI 데이터센터용 냉각수분배장치(CDU) 등 냉각설비 시장에 진출하겠다고 밝혔고, 영구자석 재활용 등 사업 영역도 정관에 추가했다. 다만 신규 사업은 아직 매출 기여 단계에 이르지 않았다는 것이 회사 설명이다.",
+  "en": "Kangwon Energy runs two main businesses, battery materials and plant equipment. The battery materials segment, operated through a subsidiary, supplies anhydrous lithium hydroxide to cathode makers. The compound is a core raw material for lithium-ion battery cathodes, and because moisture content must stay at or below 0.1 percent, high-purity, low-moisture process technology is cited as a competitive edge. As of March 2026, the sales mix stood at roughly 81 percent battery materials, 12 percent plant equipment such as industrial steam generators, and 4 to 5 percent battery equipment. The plant business focuses on industrial steam generators, chemical process equipment and environmental energy facilities, with large domestic engineering and construction groups among its main customers. The battery equipment unit designs cathode processes and supplies dryers and PD mixers, but delayed investment by downstream customers has kept new orders below expectations. Materials results are tied to cathode makers' capacity expansion and utilization, while plant results depend on construction contractors' orders and the timing of project progress recognition. Using piping design, construction and thermal management skills, the company plans to enter the AI data center cooling market, including cooling water distribution units, and has added permanent magnet recycling to its articles of incorporation. The company says new businesses have not yet reached the stage of contributing meaningful sales."
  },
  "earnings": {
-  "ko": "2025년 연결 매출액은 2,122억 5,184만원으로 전년(2,244억 2,243만원) 대비 5.4% 감소했고, 영업손실 60억 9,576만원, 지배주주 순손실 84억 6,720만원을 기록하며 2022~2024년 이어진 흑자 기조가 깨졌다. 회사측은 전기차 캐즘에 따른 전방산업 투자 지연과 글로벌 플랜트 수주 감소가 실적 악화의 주된 원인이라고 설명했다. 반면 이차전지소재 부문 매출은 전년 대비 34% 증가하며 외형을 방어하는 축이 됐다. 분기별로 보면 2025년 3분기에 매출이 372억 5,435만원으로 급감하고 영업손실 58억 601만원, 지배주주 순손실 82억 4,617만원을 기록해 연간 적자의 대부분이 이 시기에 집중됐다. 4분기에는 매출 506억 9,513만원, 영업이익 1억 1,112만원, 순이익 2억 3,806만원으로 소폭 흑자 전환에 성공했으나, 2026년 1분기(매출 521억 8,307만원, 영업손실 8억 6,611만원, 순손실 11억 435만원)와 2분기(매출 474억 8,116만원, 영업손실 9,453만원, 순손실 7억 6,162만원)에도 적자가 이어졌다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 합산 지배주주 순손실은 약 98억 7,409만원으로 연간 단위로도 적자 규모가 확대된 상태다. 한편 2022년 매출 713억 7,994만원에서 2023년 1,392억 1,124만원으로 외형이 두 배 가까이 늘었고 순이익도 34억 5,610만원에서 52억 6,205만원으로 늘며 이차전지 소재 사업 확장의 초기 성과를 보였으나, 2024년에는 매출 2,244억원에 영업이익 67억 7,197만원으로 흑자를 냈음에도 지배주주 순이익은 –5억 8,211만원의 손실을 나타내며 영업이익과 순이익 간 괴리가 발생했다. 흥미로운 점은 손익상 적자에도 2025년 영업활동현금흐름이 348억 2,134만원으로 개선돼, 2022~2024년 3년 연속 마이너스였던 현금흐름과 대비되는 모습을 보였다는 것이다.",
-  "en": "2025 consolidated revenue was KRW212.25bn, down 5.4% from KRW224.42bn in 2024, with an operating loss of KRW6.10bn and a net loss attributable to owners of KRW8.47bn, breaking the profitable streak seen from 2022 to 2024. The company attributed the deterioration mainly to delayed capital spending across downstream industries amid the EV demand slowdown and fewer global plant orders. In contrast, battery-material segment revenue grew 34% year-on-year, acting as a buffer for overall top-line performance. By quarter, revenue fell sharply to KRW37.25bn in Q3 2025 with an operating loss of KRW5.81bn and a net loss of KRW8.25bn, meaning most of the annual deficit was concentrated in that single quarter. Q4 2025 saw a modest swing to profit (revenue KRW50.70bn, operating profit KRW0.11bn, net profit KRW0.24bn), but losses resumed in Q1 2026 (revenue KRW52.18bn, operating loss KRW0.87bn, net loss KRW1.10bn) and Q2 2026 (revenue KRW47.48bn, operating loss KRW0.09bn, net loss KRW0.76bn). The trailing four quarters from Q3 2025 through Q2 2026 combined for a net loss attributable to owners of roughly KRW9.87bn, meaning the annualized loss actually widened. Looking further back, revenue nearly doubled from KRW71.38bn in 2022 to KRW139.21bn in 2023, with net profit rising from KRW3.46bn to KRW5.26bn, reflecting the early payoff of the battery-material expansion, but in 2024 the company posted an operating profit of KRW6.77bn on KRW224.42bn revenue while still recording a KRW0.58bn net loss attributable to owners, a gap between operating and net results. Notably, despite the reported net loss, 2025 operating cash flow improved to KRW34.82bn, a sharp contrast to three consecutive years of negative operating cash flow from 2022 to 2024."
+  "ko": "연간 매출은 2022년 714억원에서 2023년 1,392억원(전년 대비 95.0% 증가), 2024년 2,244억원(전년 대비 61.2% 증가)으로 늘었고, 2024년이 2022~2025년 중 가장 큰 해다. 2025년에는 2,123억원(전년 대비 5.4% 감소)으로 줄었다. 영업이익은 2022년 26.2억원, 2023년 69.3억원(전년 대비 164.6% 증가), 2024년 67.7억원(전년 대비 2.3% 감소)이었으나 2025년에는 영업손실 61억원으로 적자 전환했다. 영업이익률은 2023년 5.0%, 2024년 3.0%, 2025년 -2.9%로 내려왔다. 지배주주 순이익은 2023년 52.6억원에서 2024년 지배주주 순손실 5.8억원으로 적자 전환했고, 2025년에는 지배주주 순손실 84.7억원으로 손실이 확대됐다. 2024년부터 2025년까지 2년 연속 적자다. 회사는 2025년 부진의 배경으로 전기차 캐즘에 따른 전방 투자 지연과 플랜트 수주 감소를 들었고, 같은 해 2차전지 소재 부문은 34% 늘었다고 설명했다. 영업활동 현금흐름은 2024년 -5,672만원에서 2025년 348억원으로 플러스가 됐으나, 같은 해 순손실과 방향이 달라 그 차이의 내역은 다음 정기보고서의 현금흐름표로 확인해야 한다. 분기로 보면 2025년 3분기 매출 373억원, 영업손실 58.1억원에서 출발해 4분기에는 매출 507억원(전 분기 대비 36.1% 증가), 영업이익 1.1억원으로 흑자 전환했다. 2026년 1분기 매출은 522억원(전 분기 대비 2.9% 증가)이었으나 영업손실 8.7억원으로 적자 전환했고, 2분기에는 매출 475억원(전 분기 대비 9.0% 감소)에서 영업손실 9,453만원으로 손실이 줄었다. 3분기 매출은 492억원(전년 동기 대비 32.0% 증가)으로 늘었지만 영업손실 9.6억원으로 전 분기 대비 손실이 확대됐고, 지배주주 순이익은 41.8억원으로 흑자 전환했다. 영업 단계 손익과 지배주주 순이익의 방향이 엇갈리는 만큼, 최근 네 개 분기 지배주주 순이익 합계는 25.5억원으로 이익 기반이 얇은 편이다.",
+  "en": "Annual sales rose from KRW 71.4 billion in 2022 to KRW 139.2 billion in 2023 (up 95.0% year on year) and KRW 224.4 billion in 2024 (up 61.2%), with 2024 the largest year of 2022 to 2025. Sales then fell 5.4% to KRW 212.3 billion in 2025. Operating profit was KRW 2.62 billion in 2022, KRW 6.93 billion in 2023 (up 164.6%) and KRW 6.77 billion in 2024 (down 2.3%), before the company swung to an operating loss of KRW 6.1 billion in 2025. Operating margin moved from 5.0 percent in 2023 to 3.0 percent in 2024 and -2.9 percent in 2025. Attributable net income went from KRW 5.26 billion in 2023 to an attributable net loss of KRW 582 million in 2024, and widened to an attributable net loss of KRW 8.47 billion in 2025, making two consecutive loss years. The company attributed the 2025 weakness to delayed downstream investment from the EV slowdown and fewer plant orders, while its battery materials segment grew 34 percent that year. Operating cash flow went from -KRW 56.72 million in 2024 to KRW 34.8 billion in 2025, a direction that differs from the net loss, so the components of that gap should be checked in the next annual report's cash flow statement. Quarterly, Q3 2025 sales were KRW 37.3 billion with an operating loss of KRW 5.81 billion; Q4 2025 sales rose to KRW 50.7 billion (up 36.1% from the prior quarter) and operating income turned positive at KRW 111 million. Q1 2026 sales were KRW 52.2 billion (up 2.9% quarter on quarter), but operating results swung to a loss of KRW 866 million. Q2 2026 sales were KRW 47.5 billion (down 9.0%), with the operating loss narrowing to KRW 94.53 million. Q3 2026 sales rose to KRW 49.2 billion (up 32.0% year on year), but the operating loss widened to KRW 959 million from the prior quarter, while attributable net income turned positive at KRW 4.18 billion. Because operating and attributable net results diverged, attributable net income for the last four quarters totals only KRW 2.55 billion."
  },
  "industry": {
-  "ko": "이차전지 소재 산업은 전기차 캐즘으로 불리는 수요 정체 국면과 장기 성장 기대가 공존하는 사이클 초입에 있다. 국내 대표 양극재 업체들인 에코프로비엠, LG화학, 포스코케미칼, 엘앤에프 등은 전기차 배터리 수요 급증에 대응해 미국과 유럽에 생산기지를 확장할 예정이며, 이는 강원에너지가 공급하는 설비 수요에도 영향을 줄 변수다. 다만 현재는 양극재 투자 지연과 전기차 수요 둔화로 리튬 판매가 부진하고, 플랜트사업은 경제 침체와 발주처의 원가절감 요구로 실적이 악화되는 국면에 있다. 장기적으로는 탄소중립 목표와 재생에너지 전환에 따라 이차전지 수요가 확대될 것으로 전망되며, 회사는 연구개발을 통한 특허 확보와 원가 절감으로 경쟁력을 강화하고 있다고 밝혔다. 별도로 희토류 공급망 이슈도 부각되고 있는데, 정제 능력의 90% 이상이 중국에 집중돼 있어 수출통제가 자원 무기화 수단으로 활용될 위험이 상존한다. 이런 배경에서 고려아연이 미국에 합작법인을 세워 폐영구자석 재활용에 나선 것처럼, 강원에너지 역시 노베온·LG전자와의 협력을 통해 유사한 흐름에 대응하고 있다. 일본 에너지·금속광물자원기구(JOGMEC)에 따르면 고성능 네오디뮴 자석의 글로벌 수요는 2020년 약 12만 톤에서 2035년 약 50만 톤으로 늘어날 전망이며 2030년 이후 공급 부족 가능성도 제기된다. LG전자도 별도로 기후에너지환경부, E-순환거버넌스와 폐가전 컴프레서 희토류 자석 회수 시범사업 업무협약을 체결하는 등, 가전업계 전반에서 희토류 순환경제 구축 움직임이 확산되고 있다.",
-  "en": "The battery-material industry sits at the intersection of an EV demand slowdown, often called the 'EV chasm,' and long-term structural growth expectations. Leading domestic cathode makers such as Ecopro BM, LG Chem, POSCO Chemical and L&F plan to expand production bases in the US and Europe to meet surging EV battery demand, a factor that will influence demand for the equipment Gangwon Energy supplies. Currently, however, delayed cathode-material investment and slower EV demand have weighed on lithium sales, while the plant business has weakened amid an economic slowdown and clients' cost-cutting demands. Over the long run, battery demand is expected to expand on the back of carbon-neutrality goals and the shift to renewable energy, and the company says it is strengthening competitiveness through R&D-driven patents and cost reduction. Separately, rare-earth supply chain risk has come into focus, as more than 90% of global refining capacity is concentrated in China, leaving room for export controls to be used as a resource weapon. Against this backdrop, Korea Zinc has set up a US joint venture for scrap-magnet recycling, and Gangwon Energy is responding to a similar trend through its collaboration with Noveon and LG Electronics. According to Japan's JOGMEC, global demand for high-performance neodymium magnets is projected to rise from about 120,000 tons in 2020 to roughly 500,000 tons by 2035, with the possibility of supply shortages emerging after 2030. LG Electronics has separately signed an MOU with South Korea's climate and environment ministry and E-Cycle Governance to pilot recovery of rare-earth magnets from waste appliance compressors, reflecting a broader industry-wide push toward a rare-earth circular economy."
+  "ko": "2차전지 업황은 전기차 수요 둔화에 따른 캐즘 구간에 놓여 있고, 고객사들은 설비 투자 집행을 늦추고 있다. 회사 관계자는 리튬 소재 사업이 설비 투자 둔화 속에서도 상대적으로 견조한 수요 흐름을 유지하고 있다고 설명했다. 한편 탄소중립과 재생에너지 전환을 배경으로 2차전지 수요는 장기적으로 확대된다는 전망도 제시되고 있다. 무수수산화리튬 공장 가동률은 2025년 3분기 기준 16%대였고, 2026년 3월 보도 기준 약 20% 수준으로 집계돼 설비 활용도는 아직 낮다. 플랜트 시장은 유가와 LNG 가격 변동, 석유화학 신규 투자 위축으로 보류되거나 지연됐던 프로젝트가 재개되는 움직임을 보이고 있다고 회사 측은 설명했다. 전력 분야에서는 반도체 공장과 동기조상기 같은 전력 플랜트, 해외 소형모듈원전(SMR) 협업 등이 신규 먹거리로 거론된다. 경쟁 측면에서 회사는 저수분 공정 기술과 플랜트 설계·시공 역량을 차별점으로 내세우며, 소재 공급 규모는 고객사 증설 속도에 따라 달라진다. 2023년 2월과 2024년 2월에는 각각 439억원과 234억원 규모의 양극재 설비 공급계약이 체결됐으나, 업황 둔화로 이행이 지연되거나 축소된 것으로 파악된다. 따라서 2차전지 설비 부문은 업황 회복 속도에 따라 수주가 재개되는지가 관건으로 보인다.",
+  "en": "The battery industry is in a slowdown phase as EV demand has weakened, and customers have been delaying equipment investment. A company official said lithium materials have maintained relatively firm demand despite the investment pullback. Separately, longer-term forecasts point to battery demand expanding as carbon neutrality and renewable energy transitions progress. Utilization at the anhydrous lithium hydroxide plant was in the mid-16 percent range in Q3 2025 and about 20 percent as of a March 2026 report, so asset utilization remains low. In plants, the company says projects that were put on hold or delayed by oil and LNG price swings and weaker petrochemical investment are starting to resume, and aging facility replacement demand is expected. In power, semiconductor fabs, synchronous condensers and small modular reactor collaborations have been cited as new opportunities. On competition, the company points to its low-moisture process technology and plant design and construction capability as differentiators, while supply scale depends on the pace of customer capacity expansion. Cathode equipment supply contracts worth KRW 43.9 billion in February 2023 and KRW 23.4 billion in February 2024 were reported, but execution has reportedly been delayed or scaled back due to the industry slowdown. Recovery in battery equipment orders therefore appears to depend on the pace of the industry's recovery."
  },
  "outlook": {
-  "ko": "회사는 2026년을 소재 중심 성장의 전환점으로 삼겠다는 목표를 밝혔다. 2025년 기준 무수수산화리튬 공장 가동률은 약 20% 수준에 머물러 있으나, 2025년 하반기에 추가 확보한 신규 대형 고객사 납품이 2026년 본격화되고 기존 고객사 공급 물량도 단계적으로 확대되면서 가동률이 가파르게 상승해 영업레버리지 효과가 본격화될 것이라는 설명이다. 플랜트와 이차전지 설비 부문도 2026년 1분기 들어 반등이 시작됐다고 회사는 밝혔으나, 실제 1·2분기 연결 손익은 여전히 영업손실과 순손실을 기록해 가이던스와 분기 실적 사이에 시차 또는 온도차가 존재하는 것으로 보인다. 희토류 영구자석 재활용 사업은 아직 노베온·LG전자와의 공동 기술검증 단계로, 기술적 타당성이 확인되면 양산 적용과 후속 계약, 그리고 2027년 생산 개시를 목표로 한 연간 최대 2,000톤 규모 신설공장 투자 결정으로 이어질 수 있는 초기 국면이다. 이 신사업이 실제 매출로 기여하기까지는 투자 확정, 공장 건설, 인허가 등 여러 단계가 남아 있다. 전방산업인 이차전지 셀 업계에서는 전고체배터리 상용화를 위한 연구개발과 파일럿 라인 투자가 진행 중인 것으로 알려져, 고순도 리튬 원료 수요가 중장기적으로 어떻게 전개될지가 소재 부문의 핵심 변수로 남아 있다. 종합하면 소재 부문의 구조적 성장 스토리와 플랜트·설비 부문의 사이클 회복 여부, 신사업의 실행 속도가 향후 실적의 방향을 가를 것으로 판단된다.",
-  "en": "The company has stated its ambition to make 2026 a turning point toward materials-led growth. As of 2025, utilization at its anhydrous lithium hydroxide plant remained around 20%, but management says that as new large customers secured in the second half of 2025 begin taking deliveries in 2026 and existing customers' order volumes expand in stages, utilization should rise sharply, triggering operating leverage. The plant and battery-equipment segments reportedly began to rebound starting in Q1 2026, though actual consolidated results for Q1 and Q2 still showed operating and net losses, suggesting a gap or lag between guidance and quarterly outcomes. The rare-earth magnet recycling venture remains at the joint technology-verification stage with Noveon and LG Electronics; if feasibility is confirmed, it could progress to mass-production application, follow-on contracts, and an investment decision on a new plant targeting up to 2,000 tons of annual capacity with production starting in 2027. Multiple steps, including final investment approval, plant construction and permitting, remain before this new business can meaningfully contribute to revenue. In the downstream battery cell industry, R&D and pilot-line investment toward solid-state battery commercialization are reportedly underway, making the medium-term trajectory of high-purity lithium feedstock demand a key variable for the materials segment. Overall, the structural growth story in materials, the pace of any cyclical recovery in the plant and equipment segments, and the execution speed of the new rare-earth business are likely to determine the direction of future results."
+  "ko": "회사는 2026년 3월 연간 실적 발표에서 지난해 하반기 확보한 신규 대형 고객사의 납품이 본격화되고 기존 고객사 물량도 단계적으로 늘어난다고 밝혔다. 무수수산화리튬 가동률이 가파르게 오르면 영업 레버리지 효과도 본격화될 것이라는 것이 회사의 기대다. 2026년 초 기준 무수수산화리튬 누적 수주 물량은 전년 동기 대비 2.5배 이상 늘었다고 회사가 밝혔다. 2026년 1분기 실적 발표에서 회사는 2차전지 설비와 산업용 플랜트 부문의 수주가 하반기부터 본격화되면 소재 성장과 함께 실적 확대 흐름이 강화될 것으로 기대한다고 말했다. 공시 기준으로는 2026년 9월 30일 정정 공시에 포스코퓨처엠 광양 양극재 5단계 관련 기구부 공급계약 436억원과 수세설비 235억원이 올라 있다. 2026년 4월 16일 공시된 증기발생 시스템 계약은 해외 건설사 Ronesans와 체결한 162억원 규모로, 계약기간이 2027년 6월 30일까지로 기재돼 있다. AI 데이터센터 냉각설비 사업은 2026년 11월 13일 발표에서 진출을 추진한다고 밝힌 신사업이다. 다음 확인 지점은 2026년 사업보고서의 연간 영업이익 부호와 소재 가동률, 그리고 설비·플랜트 수주가 실제 매출로 이어지는지 여부다.",
+  "en": "In its March 2026 annual results announcement, the company said large new customers secured in late 2025 would begin full-scale deliveries and existing customer volumes would expand in stages. The company expects operating leverage to take hold as anhydrous lithium hydroxide utilization rises sharply. It also said cumulative lithium hydroxide orders in early 2026 were more than 2.5 times the year-earlier level. In its Q1 2026 results announcement, the company expected orders for battery equipment and industrial plant to gain momentum from the second half, strengthening the earnings expansion trend alongside materials growth. In disclosures, a corrected filing dated September 30, 2026 listed a cathode line supply contract of KRW 43.6 billion and a washing equipment contract of KRW 23.5 billion for a Gwangyang cathode project of a major Korean cathode maker. A steam generation system contract disclosed on April 16, 2026, worth KRW 16.2 billion with a foreign engineering customer, lists a contract period through June 30, 2027. The company announced on November 13, 2026 that it is pursuing entry into AI data center cooling equipment, a new business. The next checkpoints are the operating profit sign in the 2026 annual report, lithium hydroxide utilization, and whether battery equipment and plant orders translate into actual sales."
  },
  "valuation_comment": {
-  "ko": "최근 네 개 분기 동안 지배주주 순이익이 적자 상태를 벗어나지 못해 이익 기준 밸류에이션 지표를 산출하기 어려운 구간에 놓여 있다. 주가와 주당순자산의 관계로 보면 순자산가치 대비 상당한 프리미엄을 반영하며 거래되고 있어, 현재 손익보다는 이차전지 소재 가동률 회복과 희토류 영구자석 신사업 등 향후 성장 스토리에 대한 기대가 가격에 일부 반영된 것으로 해석될 수 있다. 배당은 최근 지급 실적이 없어 배당수익률 관점의 매력은 크지 않은 편이다. 재무구조 측면에서는 부채비율이 2023년 300%를 넘는 수준에서 2025년 129%까지 낮아지는 등 부담이 완화되는 흐름을 보였다. 다만 영업손익과 순이익이 연도별·분기별로 흑자와 적자를 반복해온 변동성은 밸류에이션을 살필 때 함께 고려할 부분이다.",
-  "en": "Net income attributable to owners has remained in loss territory over the trailing four quarters, putting the stock in a range where earnings-based valuation multiples are difficult to calculate. In terms of the relationship between share price and book value per share, the stock trades at a notable premium to net asset value, which may partly reflect expectations around future growth stories such as recovering battery-material utilization and the new rare-earth magnet business rather than current profitability. There has been no recent dividend payment, so the stock's appeal from a dividend-yield perspective is limited. On the balance sheet, the debt ratio eased from above 300% in 2023 to 129% in 2025, suggesting reduced financial-structure pressure. That said, the recurring swings between profit and loss at both the operating and net-income lines across years and quarters are a factor worth weighing alongside any valuation assessment."
+  "ko": "이익 기준 배수는 최근 네 개 분기 지배주주 순이익 합계가 25.5억원에 그쳐 높게 나타나는 구조다. 주가순자산비율은 2025년 말 자본총계 640억원 가운데 지배주주 지분이 345억원이라는 점과 비교하면 순자산 대비 프리미엄이 큰 구간에 있다. 2024년 2차전지·리튬 테마 열풍 때 주가가 급등했다가 이후 시가총액이 전고점 대비 반토막 수준으로 줄었다는 것이 보도의 설명이다. 배당은 사실상 이뤄지지 않는 수준이라 배당을 기준으로 한 업종 비교는 제한적이다. 2023년 지배주주 순이익 52.6억원 시기와 비교하면 이익 기반이 크게 줄어든 상태다. 최대주주 등 지분율이 47.17%이고 2026년 8월 대량보유 상황보고에 주식 담보대출 계약 변경이 사유로 기재돼 있어, 유통 주식 흐름과 함께 살펴볼 항목이다.",
+  "en": "On an earnings basis, the multiple screens high because attributable net income over the last four quarters totals only KRW 2.55 billion. Compared with KRW 34.5 billion of attributable equity out of KRW 64 billion total equity at end-2025, the price-to-book ratio sits in a range with a large premium over net asset value. Reports say the share price surged during the 2024 secondary battery and lithium theme rally, and market capitalization later fell by about half from its peak. Dividends are effectively negligible, so comparisons with the industry on a dividend basis are limited. Attributable net income was KRW 5.26 billion in 2023, and the earnings base has shrunk substantially since then. The controlling shareholder group holds 47.17 percent, and an August 2026 large-holding report listed a change in a share-backed loan agreement as the reason, which is worth reviewing alongside float dynamics."
  },
  "bull": [
   {
    "title": {
-    "ko": "이차전지소재 성장세와 가동률 여력",
-    "en": "Battery-Material Growth With Utilization Upside"
+    "ko": "소재 매출의 가파른 성장",
+    "en": "Steep growth in materials sales"
    },
    "body": {
-    "ko": "2025년 이차전지소재 부문 매출이 전년 대비 34% 성장하며 플랜트 부진을 상쇄하는 축이 됐다. 무수수산화리튬 공장 가동률이 약 20% 수준에 불과해, 신규 대형 고객사 납품이 본격화될 경우 생산 레버리지를 낼 여력이 남아 있다. 국내 대표 양극재업체들의 해외 생산기지 확장 계획도 중장기 설비·소재 수요 기반이 될 수 있다.",
-    "en": "Battery-material segment revenue grew 34% year-on-year in 2025, offsetting weakness in the plant business. Anhydrous lithium hydroxide plant utilization stands at only about 20%, leaving room for production leverage once new large customers begin taking deliveries. Domestic cathode makers' plans to expand overseas production bases could also underpin medium-term equipment and material demand."
+    "ko": "무수수산화리튬 누적 매출은 2026년 3분기 누적 기준 1,191억원으로 44.2% 늘었다. 2026년 1분기에는 2차전지 소재 부문 매출이 전년 동기 대비 약 65% 늘어 설비 매출 감소분을 상당 부분 만회했다. 회사는 무수수산화리튬 누적 수주 물량이 전년 동기보다 2.5배 이상 늘었다고 밝혔다.",
+    "en": "Cumulative anhydrous lithium hydroxide sales reached KRW 119.1 billion for the first nine months of 2026, up 44.2%. In Q1 2026, battery materials sales rose about 65 percent year on year, offsetting much of the decline in equipment sales. The company said cumulative lithium hydroxide orders were more than 2.5 times the prior-year level."
    }
   },
   {
    "title": {
-    "ko": "희토류 영구자석 재활용 신사업",
-    "en": "New Rare-Earth Magnet Recycling Business"
+    "ko": "가동률 상승에 따른 영업 레버리지",
+    "en": "Operating leverage from higher utilization"
    },
    "body": {
-    "ko": "2026년 1월 노베온 매그네틱스, LG전자와 폐가전 희토류 영구자석 재자원화 협력계약을 체결하며 사업 다각화를 모색하고 있다. 중국 집중형 희토류 공급망에 대한 우려가 커지는 가운데, 재활용 기반 공급망 구축이라는 산업적 방향과 부합한다. 2027년 생산 개시를 목표로 연간 최대 2,000톤 규모 신설공장 설립도 검토되고 있다.",
-    "en": "The January 2026 cooperation agreement with Noveon Magnetics and LG Electronics to recycle rare-earth magnets from waste appliances marks a diversification effort. It aligns with the broader industry push to build recycling-based supply chains amid growing concern over China-concentrated rare-earth supply. A new plant with up to 2,000 tons of annual capacity, targeting 2027 production start, is also under study."
+    "ko": "무수수산화리튬 공장 가동률은 2025년 3분기 16%대에서 2026년 3월 보도 기준 약 20% 수준으로 올라왔다. 회사는 가동률이 오르면 영업 레버리지 효과가 본격화될 것이라고 기대한다. 2026년 3분기 영업손실은 9.6억원으로 전년 동기 대비 손실이 줄었다.",
+    "en": "Utilization at the lithium hydroxide plant rose from the mid-16 percent range in Q3 2025 to about 20 percent in a March 2026 report. The company expects operating leverage to strengthen as utilization climbs. The Q3 2026 operating loss of KRW 959 million was smaller than a year earlier."
    }
   },
   {
    "title": {
-    "ko": "현금창출력과 재무구조 개선",
-    "en": "Improved Cash Generation and Balance Sheet"
+    "ko": "수주 잔고와 신규 사업 파이프라인",
+    "en": "Backlog and new business pipeline"
    },
    "body": {
-    "ko": "2025년 영업활동현금흐름이 348억원으로 개선되며 2022~2024년 3년 연속 마이너스였던 흐름과 대비를 이뤘다. 부채비율도 2023년 303%에서 2025년 129%로 낮아지며 재무 부담이 완화됐다. 손익상 적자에도 현금 측면의 체력은 유지되고 있는 것으로 보인다.",
-    "en": "Operating cash flow improved to KRW34.8bn in 2025, contrasting with three straight years of negative cash flow from 2022 to 2024. The debt ratio also fell from 303% in 2023 to 129% in 2025, easing financial pressure. Cash-flow resilience appears to have been maintained despite the reported net loss."
+    "ko": "2025년 3분기 말 수주잔고는 435억원이며 이 가운데 이차전지 설비와 산업용 플랜트 설비가 대부분이다. 2026년 공시에는 포스코퓨처엠 광양 양극재 5단계 관련 계약과 해외 건설사와의 증기발생 시스템 계약 162억원이 포함됐다. 회사는 AI 데이터센터 냉각설비 사업으로 영역을 넓히고 있다.",
+    "en": "Backlog stood at KRW 43.5 billion at end-Q3 2025, mostly battery equipment and industrial plant equipment. 2026 disclosures include cathode-related contracts for a major Korean cathode maker's Gwangyang project and a KRW 16.2 billion steam generation contract with a foreign engineering firm. The company is widening its scope into AI data center cooling equipment."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "반복되는 적자와 실적 변동성",
-    "en": "Recurring Losses and Earnings Volatility"
+    "ko": "연속 영업손실과 이익 기반 축소",
+    "en": "Consecutive losses and a thin earnings base"
    },
    "body": {
-    "ko": "2025년 연결 영업손실 61억원, 지배주주 순손실 85억원을 기록하며 2022~2024년 이어진 흑자 기조가 깨졌다. 2026년 1·2분기에도 각각 영업손실과 순손실이 이어져 적자 국면이 5개 분기 중 4개 분기로 확대됐다. 최근 네 개 분기 합산 순손실은 약 99억원으로 연간화 기준으로도 손실 규모가 커졌다.",
-    "en": "The 2025 consolidated operating loss of KRW6.1bn and net loss of KRW8.5bn broke the profitable trend seen from 2022 to 2024. Both Q1 and Q2 2026 again posted operating and net losses, extending the loss streak to four of the last five quarters. The trailing four-quarter net loss of roughly KRW9.9bn shows the deficit widening on an annualized basis."
+    "ko": "지배주주 순이익은 2024년 순손실 5.8억원에 이어 2025년 순손실 84.7억원으로 손실이 커졌고, 2024년부터 2025년까지 2년 연속 적자였다. 2026년 1분기부터 3분기까지 3개 분기 연속 영업손실이 이어졌다. 최근 네 개 분기 지배주주 순이익 합계는 25.5억원에 그친다.",
+    "en": "Attributable net income swung to a KRW 582 million loss in 2024 and widened to a KRW 8.47 billion loss in 2025, making two consecutive loss years. Operating losses have continued for three straight quarters from Q1 through Q3 2026. Attributable net income over the last four quarters totals only KRW 2.55 billion."
    }
   },
   {
    "title": {
-    "ko": "플랜트 부문의 구조적 부진",
-    "en": "Structural Weakness in the Plant Segment"
+    "ko": "2차전지 설비와 플랜트 수주 부진",
+    "en": "Weak battery equipment and plant orders"
    },
    "body": {
-    "ko": "플랜트사업은 경제 침체와 발주처의 원가절감 요구로 실적이 악화되는 국면에 있다. 글로벌 플랜트 수주 감소가 2025년 실적 부진의 주요 원인 중 하나로 지목됐다. 회사는 1분기 반등을 언급했지만 연결 손익에는 아직 뚜렷하게 반영되지 않은 모습이다.",
-    "en": "The plant business has weakened amid an economic slowdown and clients' cost-cutting demands. A decline in global plant orders was cited as one of the main causes of the 2025 earnings deterioration. Although the company mentioned a Q1 rebound, this has not yet been clearly reflected in consolidated results."
+    "ko": "2차전지 설비 공급계약은 2023년과 2024년에 체결됐으나 업황 둔화로 이행이 지연되거나 축소된 것으로 파악됐다. 플랜트 매출은 2023년 559억원에서 2024년 450억원으로 줄었고 2025년 3분기 누적은 209억원이다. 전기차 캐즘이 길어지면 설비 부문의 반등이 늦어질 수 있다.",
+    "en": "Battery equipment supply contracts signed in 2023 and 2024 have reportedly been delayed or scaled back due to the industry slowdown. Plant sales fell from KRW 55.9 billion in 2023 to KRW 45.0 billion in 2024, and reached KRW 20.9 billion for the first nine months of 2025. A prolonged EV slowdown could delay a recovery in the equipment segment."
    }
   },
   {
    "title": {
-    "ko": "전방 수요 둔화와 신사업 불확실성",
-    "en": "Downstream Demand Slowdown and New-Business Uncertainty"
+    "ko": "재무 레버리지와 지분 구조",
+    "en": "Leverage and ownership concentration"
    },
    "body": {
-    "ko": "양극재 투자 지연과 전기차 수요 둔화로 리튬 판매가 부진한 상태다. 희토류 영구자석 재활용 사업은 아직 기술검증 단계로, 양산 적용과 신설공장 투자 결정까지는 다수의 절차가 남아 있다. 신사업이 매출에 실질적으로 기여하는 시점은 불확실하다.",
-    "en": "Delayed cathode-material investment and slower EV demand have weighed on lithium sales. The rare-earth magnet recycling business remains at the technology-verification stage, with numerous steps still needed before mass-production application and a new-plant investment decision. The timing of any meaningful revenue contribution from the new business remains uncertain."
+    "ko": "2025년 말 부채비율은 129.0%이며 2023년에는 303.4%까지 올랐다. 2025년 말 자본총계 640억원 가운데 지배주주 지분은 345억원이다. 최대주주 등 지분율은 47.17%이고 2026년 8월 대량보유 상황보고에 주식 담보대출 계약 변경이 사유로 기재됐다.",
+    "en": "The debt-to-equity ratio was 129.0 percent at end-2025, after peaking at 303.4 percent in 2023. Of KRW 64 billion total equity at end-2025, KRW 34.5 billion belongs to controlling shareholders. The controlling group holds 47.17 percent, and an August 2026 large-holding report cited a change in a share-backed loan agreement."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "전방산업 의존",
-    "en": "Downstream Industry Dependence"
+    "ko": "고객 업황과 원재료 가격",
+    "en": "Customer demand and raw material prices"
    },
    "body": {
-    "ko": "이차전지 소재·설비 매출은 전기차 및 양극재 업체들의 투자 사이클에 크게 좌우된다. 전기차 캐즘이 장기화되면 리튬 소재 판매와 설비 수주 모두 부진이 이어질 수 있다. 플랜트 부문 역시 발주처의 경기 민감도에 노출돼 있다.",
-    "en": "Battery-material and equipment revenue is heavily tied to the investment cycles of EV and cathode makers. A prolonged EV chasm could keep both lithium material sales and equipment orders weak. The plant segment is similarly exposed to clients' economic sensitivity."
+    "ko": "소재 매출은 양극재 제조사의 생산 계획과 전기차 수요에 따라 움직인다. 리튬 가격 변동도 수익성에 영향을 줄 수 있으며, 보도에서는 리튬 가격 상승이 최근 주가 반등의 배경으로 언급됐다. 수요 회복이 늦어지면 가동률 개선 시점도 밀릴 수 있다.",
+    "en": "Materials sales move with cathode makers' production plans and EV demand. Lithium price swings can also affect profitability, and reports have cited rising lithium prices as a factor behind a recent share price rebound. If demand recovery slips, the timing of utilization gains could also slip."
    }
   },
   {
    "cat": {
-    "ko": "손익 변동성 및 재무 리스크",
-    "en": "Earnings Volatility and Financial Risk"
+    "ko": "신사업 실행",
+    "en": "Execution of new businesses"
    },
    "body": {
-    "ko": "영업이익과 순이익이 연도별로 흑자와 적자를 오갔고, 부채비율도 2023년 303%까지 치솟은 이력이 있다. 이러한 변동성은 향후에도 재현될 가능성을 배제할 수 없다. 손익 안정성이 낮은 만큼 실적 예측 불확실성도 상대적으로 크다.",
-    "en": "Operating and net income have swung between profit and loss year to year, and the debt ratio once spiked to 303% in 2023. Such volatility cannot be ruled out from recurring going forward. With relatively low earnings stability, forecast uncertainty is correspondingly higher."
+    "ko": "AI 데이터센터 냉각설비와 영구자석 재활용 등 신사업은 아직 매출 기여 단계에 이르지 않았다. 회사는 2025년 정관을 변경해 사업 영역을 추가했으나, 신사업 선행 투자 비용이 2025년 3분기 손익 악화의 원인 중 하나로 설명됐다. 신사업 투자가 수익으로 이어지는지 확인이 필요하다.",
+    "en": "New businesses such as AI data center cooling equipment and permanent magnet recycling have not yet reached the stage of meaningful sales. The company amended its articles in 2025 to add business lines, but upfront investment costs were cited as one reason for the Q3 2025 earnings deterioration. Whether these investments convert into profit remains to be confirmed."
    }
   },
   {
    "cat": {
-    "ko": "신사업 실행 리스크",
-    "en": "New-Business Execution Risk"
+    "ko": "재무구조와 현금흐름 해석",
+    "en": "Balance sheet and cash flow interpretation"
    },
    "body": {
-    "ko": "희토류 영구자석 재활용 사업은 아직 노베온·LG전자와의 공동 기술검증 단계에 머물러 있다. 신설공장에 대한 투자 확정, 인허가, 양산 검증 등 다수의 단계가 남아 있어 계획이 지연되거나 변경될 가능성이 있다. 2027년 생산 개시 목표도 현재로선 검토 단계의 목표치임에 유의할 필요가 있다.",
-    "en": "The rare-earth magnet recycling venture remains at the joint technology-verification stage with Noveon and LG Electronics. Multiple steps, including final investment approval, permitting and mass-production validation, remain, leaving room for delays or changes to the plan. The 2027 production-start target should be understood as a goal still under review rather than a confirmed schedule."
+    "ko": "2025년 말 부채총계는 826억원이고 자본총계는 640억원이다. 영업활동 현금흐름은 2025년 플러스였지만 영업손실과 순손실이 함께 나타나 두 지표의 차이를 세부 항목으로 따져 봐야 한다. 이 차이의 원인은 다음 사업보고서의 현금흐름표 세부 항목에서 확인된다.",
+    "en": "Total liabilities at end-2025 were KRW 82.6 billion against total equity of KRW 64 billion. Operating cash flow was positive in 2025 even though operating and net results were both negative, so the gap has to be traced through line items. The cause of that gap can be checked in the cash flow statement of the next annual report."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중",
-    "en": "Around November 2026"
+    "ko": "2027년 3월경",
+    "en": "Around March 2027"
    },
    "what": {
-    "ko": "2026년 3분기 실적 공시에서 매출 회복 여부, 무수수산화리튬 가동률 상승 여부, 플랜트 부문 반등 지속 여부를 확인해야 한다.",
-    "en": "Check the Q3 2026 earnings disclosure for whether revenue recovers, anhydrous lithium hydroxide utilization rises, and any plant-segment rebound continues."
+    "ko": "2026년 사업보고서 공시 시점이다. 2025년 연간 실적이 2026년 3월 3일에 발표된 흐름을 기준으로 한 예상 시기다. 연간 영업이익이 흑자로 돌아설지, 2026년 1분기부터 이어진 영업손실이 연장될지 확인하는 지점이다.",
+    "en": "This is the expected timing of the 2026 annual report, based on the 2025 results release on March 3, 2026. It will show whether full-year operating profit turns positive or the operating losses seen since Q1 2026 continue."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 중",
-    "en": "In the second half of 2026"
+    "ko": "2027년 5월 중순경",
+    "en": "Around mid-May 2027"
    },
    "what": {
-    "ko": "노베온·LG전자와의 희토류 영구자석 공동 기술검증 결과 발표 및 양산 적용 여부를 확인해야 한다.",
-    "en": "Watch for results of the joint technology verification with Noveon and LG Electronics on rare-earth magnets, and whether it advances to mass-production application."
+    "ko": "2027년 1분기 실적 발표 예상 시기다. 2026년 1분기 발표가 5월 15일이었던 점을 기준으로 한 추정이다. 무수수산화리튬 가동률 상승과 설비 부문 수주 회복이 실적에 반영되는지 확인하는 지점이다.",
+    "en": "This is the expected timing of the Q1 2027 results, estimated from the Q1 2026 release on May 15. It will show whether higher lithium hydroxide utilization and a recovery in equipment orders are reflected in results."
    }
   },
   {
    "when": {
-    "ko": "2027년 초",
-    "en": "Early 2027"
+    "ko": "2027년 6월 30일",
+    "en": "June 30, 2027"
    },
    "what": {
-    "ko": "희토류 영구자석 신설공장에 대한 투자 확정, 착공, 인허가 진행 여부를 확인해야 한다.",
-    "en": "Check whether a final investment decision, groundbreaking, or permitting progress occurs for the planned rare-earth magnet plant."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 하반기 중",
-    "en": "In the second half of 2026"
-   },
-   "what": {
-    "ko": "회사가 밝힌 신규 대형 고객사 납품 개시와 기존 고객사 공급 물량 확대가 실제 매출·가동률 지표로 확인되는지 살펴야 한다.",
-    "en": "Verify whether the company's stated start of deliveries to new large customers and expanded volumes with existing customers actually show up in revenue and utilization figures."
+    "ko": "2026년 4월 16일 체결 공시된 162억원 규모 증기발생 시스템 계약의 계약기간 종료 시점이다. 플랜트 매출 인식과 납품 완료 여부를 확인하는 지점이다.",
+    "en": "This is the end of the contract period for the KRW 16.2 billion steam generation system contract disclosed on April 16, 2026. It is the checkpoint for plant revenue recognition and delivery completion."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "강원에너지는 이차전지 소재·설비와 플랜트라는 기존 두 사업축에 더해 희토류 영구자석 재활용이라는 새로운 축을 모색하며 사업 포트폴리오를 넓히고 있다. 2025년 이차전지소재 매출이 34% 성장하며 외형을 방어했지만, 플랜트 부문 부진과 전기차 캐즘 영향으로 연결 기준 영업손실과 순손실이 발생했고 이 흐름은 2026년 상반기까지 이어졌다. 4분기 반짝 흑자를 제외하면 최근 다섯 개 분기 중 네 개 분기가 적자였다는 점에서 실적 안정성은 아직 확보되지 않은 상태다. 다만 부채비율 하락과 2025년 영업활동현금흐름 개선은 재무 체력 측면에서 긍정적인 신호로 볼 수 있다. 희토류 영구자석 사업은 아직 기술검증 초기 단계로 실질적 매출 기여 시점은 불확실하며, 무수수산화리튬 가동률 회복 속도가 소재 부문의 핵심 관전 포인트로 남아 있다. 투자자는 향후 분기 실적 공시와 신사업 진행 상황을 함께 확인하며 판단할 필요가 있다.",
-   "en": "Gangwon Energy is broadening its portfolio beyond its two existing pillars, battery materials/equipment and plants, by exploring a new rare-earth magnet recycling business. Battery-material revenue grew 34% in 2025, defending the top line, but plant-segment weakness and the EV demand slowdown drove a consolidated operating and net loss that persisted into the first half of 2026. Excluding a brief profitable quarter in Q4, four of the last five quarters were in the red, indicating earnings stability has not yet been established. That said, the declining debt ratio and improved 2025 operating cash flow are positive signals for financial resilience. The rare-earth magnet business remains at an early technology-verification stage with an uncertain timeline for meaningful revenue contribution, and the pace of recovery in anhydrous lithium hydroxide utilization stays the key variable to watch in the materials segment. Investors should weigh upcoming quarterly disclosures and progress on the new business together when forming a view."
+   "ko": "강원에너지는 2차전지 소재 부문의 성장으로 외형을 지탱하고 있으나, 플랜트·설비 부문 부진과 2024년 이후 손익 악화가 겹쳐 이익 기반은 아직 얇다. 2025년 영업손실 61억원과 지배주주 순손실 84.7억원은 소재 매출 성장에도 설비 부문 축소를 메우지 못했다는 것을 보여 준다. 2026년 들어 1분기부터 3분기까지 영업손실이 이어졌지만, 3분기 매출은 492억원으로 전년 동기 대비 32.0% 늘어 외형은 전년 동기보다 커졌다. 강세 요인은 무수수산화리튬 수요 확대와 누적 수주, 가동률 상승 여지이고, 약세 요인은 연속 영업손실, 설비 수주 지연, 재무 레버리지와 신사업의 실행 리스크다. 밸류에이션은 적자 구간에서 이익 기준 배수가 높게 나타나고 순자산 대비 프리미엄이 큰 구도여서, 사업 지표의 개선이 실제 이익으로 이어지는지가 해석의 핵심이다. 회사는 하반기부터 설비 수주가 회복될 것으로 기대하고 AI 냉각설비 진출을 추진 중이며, 이 흐름이 실적으로 확인되는지가 다음 단계다. 다음 확인 지점은 2026년 사업보고서의 연간 영업이익 부호, 2027년 1분기 실적의 가동률과 설비 매출, 그리고 2027년 6월 말 계약기간 종료 시점의 플랜트 납품 여부다.",
+   "en": "Kangwon Energy is holding up its top line through growth in battery materials, but weaker plant and equipment results and a deterioration in earnings since 2024 leave its earnings base thin. The 2025 operating loss of KRW 6.1 billion and attributable net loss of KRW 8.47 billion show that materials growth did not fully offset the contraction in equipment. Operating losses have continued from Q1 through Q3 2026, but Q3 sales of KRW 49.2 billion were up 32.0 percent year on year, so the top line is larger than a year earlier. Bullish factors are expanding lithium hydroxide demand, cumulative orders and room for higher utilization, while bearish factors are consecutive operating losses, delayed equipment orders, leverage, and execution risk in new businesses. On valuation, the multiple screens high on a near-zero recent earnings base and carries a large premium to net asset value, so whether operating improvements translate into profit is the central question. The company expects equipment orders to recover from the second half and is pursuing AI cooling equipment, and whether these show up in reported results is the next step. The next checkpoints are the sign of full-year operating profit in the 2026 annual report, utilization and equipment sales in Q1 2027 results, and plant deliveries as the steam generation contract period ends on June 30, 2027."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A114190",
-  "https://m.irgo.co.kr/IR-COMP/114190/%EA%B0%95%EC%9B%90%EC%97%90%EB%84%88%EC%A7%80-IR-PAGE",
-  "https://m.thinkpool.com/item/114190",
   "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=114190",
-  "https://www.kokstock.com/stock/item.asp?item_cd=114190",
-  "https://kwenergy.co.kr/sub03_101/10?sst=wr_datetime&sod=desc&sop=and&page=1",
-  "https://www.butler.works/ko/companies/00100601",
-  "https://www.jobkorea.co.kr/recruit/co_read/c/kwb211",
-  "https://ssl.pstatic.net/imgstock/upload/research/company/1700186188573.pdf",
+  "https://www.newspim.com/news/view/20261113001315",
+  "https://www.sedaily.com/article/20014383",
+  "https://v.daum.net/v/B7xuvH6bE1",
+  "https://news.nate.com/view/20260515n27140",
+  "https://dealsite.co.kr/articles/160843",
+  "https://www.theinvest.co.kr/compinfo.php?cd=114190",
+  "https://www.mt.co.kr/stock/2026/03/03/2026030316074273262",
+  "https://m.news.nate.com/view/20260303n29895",
+  "https://m.thebell.co.kr/m/newsview.asp?svccode=00&newskey=202601231409366160102624",
   "https://www.investing.com/equities/welcron-kangwon-co-ltd-earnings",
-  "https://alphasquare.co.kr/home/stock-summary?code=114190",
-  "https://cookiedeal.io/company-search/3040875980/%EA%B0%95%EC%9B%90%EC%97%90%EB%84%88%EC%A7%80",
-  "https://www.catch.co.kr/Comp/CompSummary/389498",
-  "https://markets.hankyung.com/stock/114190/consensus",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260316001421&docno=&viewerhost=",
-  "https://www.sankun.com/company-info/tV4mT2Kjvr-hiS5TiffXYQ",
-  "https://www.kwenergy.co.kr/sub05_302",
-  "https://www.mt.co.kr/stock/2026/01/07/2026010708133781115"
+  "https://www.globenewswire.com/news-release/2026/11/05/3396316/0/en/genie-energy-announces-third-quarter-2026-results.html",
+  "https://www.jobkorea.co.kr/recruit/co_read/c/kwb211",
+  "https://kr.investing.com/news/transcripts/article-93CH-2175551",
+  "https://www.mt.co.kr/stock/2025/11/14/2025111417202751925",
+  "https://m.jobkorea.co.kr/Recruit/Co_Read/C/36419752?TS_XML=2"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "114190",
  "name": "강원에너지",
  "name_en": "KANGWON ENERGY Co., Ltd.",
@@ -223,11 +211,11 @@
   "에너지·전력"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 18:02",
- "dataDate": "20260904",
+ "reportDate": "2026-11-14",
+ "reportTs": "2026-11-14 07:36",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-08-21",
+  "asOf": "2026-11-13",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -238,6 +226,7 @@
     "np_owner": -8467202799,
     "equity": 64036952122,
     "equity_owner": 34504507262,
+    "equity_nci": 29532444860,
     "liab": 82598714753,
     "cfo": 34821336776,
     "eps_basic": -234,
@@ -253,6 +242,7 @@
     "np_owner": -582114193,
     "equity": 71882484756,
     "equity_owner": 40487018320,
+    "equity_nci": 31395466436,
     "liab": 92000859233,
     "cfo": -56720683,
     "eps_basic": 40,
@@ -268,6 +258,7 @@
     "np_owner": 5262049560,
     "equity": 42520244089,
     "equity_owner": 39019756001,
+    "equity_nci": 3500488088,
     "liab": 129008631526,
     "cfo": -17620951504,
     "eps_basic": null,
@@ -283,6 +274,7 @@
     "np_owner": 3456098463,
     "equity": 32317888559,
     "equity_owner": 32317888559,
+    "equity_nci": 0,
     "liab": 52121351305,
     "cfo": -3888528307,
     "eps_basic": null,
@@ -292,12 +284,6 @@
    }
   ],
   "quarterly": [
-   {
-    "q": "2025Q2",
-    "rev": 70743945298,
-    "op": -1696667889,
-    "np_owner": 211266412
-   },
    {
     "q": "2025Q3",
     "rev": 37254352981,
@@ -321,26 +307,36 @@
     "rev": 47481157922,
     "op": -94530513,
     "np_owner": -761624641
+   },
+   {
+    "q": "2026Q3",
+    "rev": 49183171580,
+    "op": -959021191,
+    "np_owner": 4179792621
    }
   ],
   "valuation": {
-   "price": 8810,
-   "mcap": 0.2301,
+   "price": 7720,
+   "mcap": 0.2017,
    "shares": 26123038,
    "total_shares": 26123038,
    "wavg_shares": null,
-   "per": null,
-   "eps": -350,
-   "pbr": 7.0877,
-   "bps": 1243,
-   "roe_ttm": -26.6,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": -9874086303,
-   "pbr_krx": 6.21,
+   "per": 78.776,
+   "eps": 98,
+   "pbr": 5.635,
+   "bps": 1370,
+   "roe_ttm": 7.3,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": 2551879132,
+   "ccy": "KRW",
+   "bps_src": "자체",
+   "eps_src": "순이익÷주식수",
+   "pbr_krx": 5.84,
    "bps_krx": 1321.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
    "div": 0.0
   }
- }
+ },
+ "textRules": 2
 }

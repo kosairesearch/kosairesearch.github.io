@@ -1,230 +1,210 @@
 {
  "title": {
-  "ko": "구조조정 성과와 지주 재무부담의 줄다리기",
-  "en": "Restructuring Gains Versus Holdco Debt Burden"
+  "ko": "롯데지주, 본업 회복과 지분법 손실 사이",
+  "en": "Lotte: Recovery Amid Equity-Method Losses"
  },
  "lead": {
-  "ko": "계열사 실적 회복으로 분기 손익은 흑자로 돌아섰지만, 지주 자체의 차입 부담과 바이오 투자 소요가 동시에 진행되는 구간이다.",
-  "en": "Quarterly bottom line has flipped back to profit on recovering affiliate earnings, yet the holding company is simultaneously carrying heavy borrowings and funding its biologics build-out."
+  "ko": "롯데지주의 영업이익은 2026년 2분기와 3분기에 연달아 늘었지만, 지배주주 순손익은 3분기에 다시 순손실로 돌아서 영업 단계와 최종 이익 사이의 괴리가 남아 있다.",
+  "en": "Lotte's operating profit rose in the second and third quarters of 2026, but the company returned to a net loss attributable to controlling shareholders in the third quarter, leaving a gap between operating and bottom-line results."
  },
  "keypoints": [
   {
-   "ko": "2026년 1분기(지배주주 순이익 65억원)와 2분기(356억원) 연속 흑자로, 2025년 4분기 3,637억원 순손실 이후 손익 방향이 바뀌었다.",
-   "en": "Owners' net income turned positive in 1Q26 (KRW 6.5bn) and 2Q26 (KRW 35.6bn), a reversal from the KRW 363.7bn net loss of 4Q25."
+   "ko": "영업이익은 2026년 1분기 461억원을 저점으로 2분기 1,290억원, 3분기 1,576억원으로 회복했다. 다만 3분기 영업이익은 전년 동기 대비 14.8% 감소한 수준이다.",
+   "en": "Operating profit recovered from KRW 46.1 billion in Q1 2026 to KRW 129 billion in Q2 and KRW 157.6 billion in Q3, although Q3 remained 14.8% below the year-earlier quarter."
   },
   {
-   "ko": "연결 영업이익률은 2022년 3.5%에서 2025년 1.5%까지 낮아졌고, 2026년 상반기 영업이익은 1,751억원이다.",
-   "en": "Consolidated operating margin slid from 3.5% in 2022 to 1.5% in 2025; 1H26 operating profit was KRW 175.1bn."
+   "ko": "2025년 지배주주 순손실은 6,476억원으로 2023년부터 3년 연속 적자다. 손실 규모는 2024년 1조 188억원보다 줄었다.",
+   "en": "The net loss attributable to controlling shareholders was KRW 647.6 billion in 2025, the third consecutive loss-making year since 2023, although smaller than the KRW 1.02 trillion loss in 2024."
   },
   {
-   "ko": "그룹은 올해 비주력 사업·유휴자산 매각으로 약 1조 7,300억원을 확보했고, 롯데렌탈 지분 61.2% 매각은 공정위 승인을 받았다.",
-   "en": "The group has raised about KRW 1.73tn this year from non-core and idle asset sales, and the 61.2% LOTTE Rental stake sale has cleared the antitrust review."
+   "ko": "영업이익은 2022년 4,898억원에서 2025년 2,394억원으로 줄었고, 영업이익률은 3.5%에서 1.5%로 낮아졌다.",
+   "en": "Operating profit fell from KRW 489.8 billion in 2022 to KRW 239.4 billion in 2025, and the operating margin slid from 3.5% to 1.5%."
   },
   {
-   "ko": "롯데바이오로직스 송도 1공장은 사용승인을 받았지만 상업생산 수주는 아직 확정 발표가 없어, 가동률 확보가 관건이다.",
-   "en": "LOTTE Biologics' Songdo Plant 1 has secured occupancy approval, but no commercial-supply order has been confirmed yet, making utilization the key issue."
+   "ko": "식품 자회사 롯데웰푸드가 지주 영업이익의 약 46%를 차지한다는 보도가 있어 식품 이익이 실적의 완충 역할을 한다. 반면 관계기업 롯데케미칼의 적자는 지분법 손익을 통해 지주의 순손익을 끌어내린다.",
+   "en": "Reports indicate that Lotte Wellfood accounted for about 46% of group operating profit in 2025, cushioning results, while losses at affiliate Lotte Chemical weigh on net income through equity-method accounting."
   },
   {
-   "ko": "지주 자체 차입 부담과 계열 지원 소요는 신용평가사가 지목한 핵심 모니터링 항목으로 남아 있다.",
-   "en": "Standalone borrowings and affiliate-support needs remain the core monitoring items flagged by credit rating agencies."
+   "ko": "PBR은 1배를 크게 밑도는 구간이지만, 최근 네 개 분기 지배주주 순손실 합계가 이어져 주가수익비율은 산출되지 않는다.",
+   "en": "The price-to-book ratio sits well below 1x, but the combined net loss attributable to controlling shareholders over the last four quarters leaves the price-to-earnings ratio uncalculated."
   }
  ],
  "business": {
-  "ko": "롯데지주는 2017년 출범한 롯데그룹의 지주회사로, 정관상 목적 자체가 자회사 주식 보유를 통한 사업 지배와 경영 지도·평가에 있다. 연결 매출은 식품(롯데웰푸드·롯데칠성음료), 편의점(코리아세븐), 외식(롯데지알에스), 정보기술(롯데이노베이트), 바이오(롯데바이오로직스) 등 종속회사에서 주로 발생한다. 반면 롯데쇼핑과 롯데케미칼은 관계사로서 지분법손익을 통해 손익에 반영되는 구조여서, 유통·화학 업황이 매출보다 순이익에 먼저 영향을 준다. 흥국증권은 2026년 5월 리포트에서 관계사인 롯데쇼핑과 롯데케미칼의 실적 개선에 따른 지분법손익 개선을 긍정적 요인으로 지적했다. 그룹은 식품·유통·화학·인프라 4대 핵심사업과 함께 롯데바이오로직스의 위탁개발생산(CDMO), 전기차 충전 인프라, 2차전지 소재, 메타버스 플랫폼을 신성장 축으로 제시해 왔다. 2024년 11월 기업가치 제고 계획에서는 SK·LG·GS·HD현대·CJ·LS 등 비교기업 대비 낮은 주가순자산비율의 원인을 주요 사업 실적의 상대적 부진으로 진단하고, 사업 포트폴리오 관리가 필요하다고 밝혔다. 지배구조 측면에서는 출범 당시 분할·합병 과정에서 취득한 대규모 자기주식이 특징으로, 2026년 3월에는 보유 보통주 자기주식 27.5% 중 5%에 해당하는 524만 5,461주 소각을 결정했다. SK증권은 2026년 9월 3일 리포트에서 자사주 비중을 23.7%로 제시했다. 지주회사 특성상 경상수입의 상당 부분이 자회사 배당·상표권 수익에 의존하기 때문에, 계열사 이익 회복 여부가 지주 자체 현금흐름과 직결된다.",
-  "en": "LOTTE Corporation is the holding company of the LOTTE group launched in 2017, and its articles of incorporation define its purpose as controlling and supervising subsidiaries through share ownership. Consolidated revenue arises mainly from subsidiaries in food (LOTTE Wellfood, LOTTE Chilsung Beverage), convenience stores (Korea Seven), restaurants (LOTTE GRS), IT (LOTTE Innovate) and biologics (LOTTE Biologics). LOTTE Shopping and LOTTE Chemical, by contrast, are affiliates recognized through equity-method income, so retail and chemical cycles hit the bottom line before they hit revenue. Heungkuk Securities, in a May 2026 report, cited improving equity-method income from affiliates LOTTE Shopping and LOTTE Chemical as a positive factor. The group has presented four core businesses (food, retail, chemicals, infrastructure) alongside new growth pillars including LOTTE Biologics' CDMO business, EV charging infrastructure, battery materials and a metaverse platform. In its November 2024 value-up plan, the company attributed its lower price-to-book ratio versus peers such as SK, LG, GS, HD Hyundai, CJ and LS to relative underperformance of major businesses, and said portfolio management was needed. On governance, a distinctive feature is the large treasury stake acquired during the spin-off and merger process at inception; in March 2026 the company decided to cancel 5,245,461 shares, equal to 5 percentage points of the 27.5% common-share treasury holding. SK Securities put the treasury share ratio at 23.7% in a report dated 3 September 2026. Because a holding company's recurring income depends heavily on subsidiary dividends and brand royalties, the recovery in affiliate profits feeds directly into the parent's own cash flow."
+  "ko": "롯데지주는 2017년 롯데제과의 투자 부문을 떼어 설립된 순수지주회사로, 직접 제품을 팔기보다 자회사 지분을 보유해 수익을 얻는다. 수익원은 자회사에서 받는 배당금, 계열사가 롯데 브랜드를 쓰는 대가로 내는 상표권 사용료, 경영관리 서비스 수수료의 세 가지다. 2026년 3월 보도 기준 주요 지분은 롯데웰푸드 48.13%, 롯데칠성음료 45%, 롯데케미칼 25.31%, 롯데쇼핑 40%다. 식품 부문은 롯데웰푸드(제과·빙과·HMR)와 롯데칠성음료(탄산음료·주류)가 중심이며, 롯데웰푸드는 지주 연결 재무제표에 편입되어 실적이 그대로 반영된다. 2025년 기준으로 롯데웰푸드는 지주 연결 매출의 약 27%, 영업이익의 약 46%를 차지했다는 보도가 있다. 화학 부문은 롯데케미칼이 기초석유화학과 롯데에너지머티리얼즈·롯데정밀화학 등 화학 계열사의 최대주주이며, 지주 지분율이 50% 이하라 관계기업으로 분류되어 실적이 지분법손익으로 반영된다. 유통 계열 롯데쇼핑도 같은 방식으로 관계기업에 속한다. 식품 계열은 롯데웰푸드와 롯데칠성음료가 식음료 산업 내 선두권 시장지위를 유지한다는 신용평가가 있다. 반면 석유화학과 유통은 업황 부진과 중국발 공급 부담에 노출돼 있다. 지주사의 손익은 식품 자회사가 떠받치고 화학·유통 관계기업이 흔드는 구도로 정리된다.",
+  "en": "Lotte is a pure holding company set up in 2017 when the investment division of Lotte Confectionery was spun off, so it earns income mainly by holding stakes in subsidiaries rather than selling products. Its income comes from dividends from subsidiaries, trademark royalties paid by group companies for using the Lotte brand, and management service fees. As of reporting in March 2026, its major stakes were Lotte Wellfood at 48.13%, Lotte Chilsung Beverage at 45%, Lotte Chemical at 25.31%, and Lotte Shopping at 40%. The food segment centers on Lotte Wellfood (confectionery, ice cream and home meal replacement) and Lotte Chilsung Beverage (soft drinks and alcoholic beverages), and Lotte Wellfood is consolidated into Lotte's financial statements, so its results flow in directly. Reports indicate that in 2025 Lotte Wellfood accounted for about 27% of consolidated revenue and about 46% of operating profit. In chemicals, Lotte Chemical is the largest shareholder of Lotte Energy Materials and LOTTE Fine Chemical, and because Lotte's stake is 50% or less, Lotte Chemical is treated as an affiliate whose results are reflected through equity-method gains and losses. Lotte Shopping is classified the same way as an affiliate. One credit assessment says Lotte Wellfood and Lotte Chilsung Beverage hold leading positions in the food and beverage industry. Chemicals and retail face weak conditions, including pressure from Chinese oversupply. Overall, food subsidiaries support the holding company's profit while the chemical and retail affiliates drive swings in net income."
  },
  "earnings": {
-  "ko": "연결 매출은 2022년 14조 1,119억원에서 2023년 15조 1,598억원, 2024년 15조 7,570억원으로 늘었다가 2025년 15조 5,396억원으로 소폭 줄었다. 반면 영업이익은 2022년 4,898억원, 2023년 4,937억원에서 2024년 3,405억원, 2025년 2,394억원으로 축소돼 영업이익률이 3.5%→3.3%→2.2%→1.5%로 낮아졌다. 지배주주 순손익은 2022년 1,708억원 이익 이후 2023년 154억원 손실, 2024년 1조 188억원 손실, 2025년 6,476억원 손실로 3년 연속 적자였는데, 영업 단계 이익 대비 손실 폭이 훨씬 큰 점은 이자비용과 관계사 지분법·손상 요인이 손익을 좌우했음을 시사한다. 다만 영업활동현금흐름은 2023년 1조 2,375억원, 2024년 1조 529억원, 2025년 1조 1,561억원으로 1조원대를 유지했고, 부채비율은 2022년 127.1%에서 2025년 144.9%로 상승했다. 분기 흐름을 보면 2025년 4분기에 영업손실 1,058억원, 지배주주 순손실 3,637억원을 기록해 연간 실적의 대부분을 훼손했다. 이후 2026년 1분기 영업이익 461억원·지배주주 순이익 65억원, 2026년 2분기 영업이익 1,290억원·지배주주 순이익 356억원으로 두 분기 연속 흑자를 냈다. 상반기 합산 매출은 7조 7,152억원, 영업이익은 1,751억원이며, SK증권도 2026년 9월 리포트에서 상반기 연결 매출이 전년 동기 대비 1.1%, 영업이익이 9.3% 늘었다고 집계했다. 다만 2026년 2분기 영업이익(1,290억원)은 2025년 2분기(1,422억원)를 밑돌아, 개선이 분기별로 균일하지는 않다. 흥국증권은 2026년 5월 리포트에서 롯데바이오로직스의 정기 셧다운과 대규모 인력 채용으로 적자 폭이 확대돼 전사 영업이익이 전망치를 하회한 원인이 됐다고 분석했다.",
-  "en": "Consolidated revenue rose from KRW 14.11tn in 2022 to KRW 15.16tn in 2023 and KRW 15.76tn in 2024, then edged down to KRW 15.54tn in 2025. Operating profit, however, shrank from KRW 489.8bn in 2022 and KRW 493.7bn in 2023 to KRW 340.5bn in 2024 and KRW 239.4bn in 2025, taking the operating margin from 3.5% to 3.3%, 2.2% and 1.5%. Owners' net result swung from a KRW 170.8bn profit in 2022 to losses of KRW 15.4bn in 2023, KRW 1,018.8bn in 2024 and KRW 647.6bn in 2025; losses far larger than operating profit suggest interest costs, equity-method results and impairments drove the bottom line. Operating cash flow nonetheless held above KRW 1tn at KRW 1,237.5bn in 2023, KRW 1,052.9bn in 2024 and KRW 1,156.1bn in 2025, while the debt-to-equity ratio climbed from 127.1% in 2022 to 144.9% in 2025. On a quarterly basis, 4Q25 posted a KRW 105.8bn operating loss and a KRW 363.7bn owners' net loss, wiping out much of the full-year result. Then 1Q26 delivered KRW 46.1bn operating profit with KRW 6.5bn owners' net income, and 2Q26 KRW 129.0bn operating profit with KRW 35.6bn owners' net income, two straight profitable quarters. First-half revenue totaled KRW 7,715.2bn with operating profit of KRW 175.1bn, and SK Securities in a September 2026 report also calculated first-half consolidated revenue up 1.1% and operating profit up 9.3% year on year. Still, 2Q26 operating profit (KRW 129.0bn) was below 2Q25 (KRW 142.2bn), showing the improvement is not uniform quarter to quarter. Heungkuk Securities said in a May 2026 report that a wider loss at LOTTE Biologics, on scheduled shutdowns and large-scale hiring, was a reason group operating profit missed its estimate."
+  "ko": "연간 매출은 2022년 14조 1,119억원에서 2023년 15조 1,598억원(전년 대비 7.4% 증가), 2024년 15조 7,570억원(3.9% 증가)으로 늘었다가 2025년 15조 5,396억원(1.4% 감소)으로 줄었다. 2022~2025년 중 가장 큰 해는 2024년, 가장 작은 해는 2022년이다. 영업이익은 2023년 4,937억원(전년 대비 0.8% 증가)으로 2022~2025년 중 가장 컸고, 이후 2024년 3,405억원(31.0% 감소), 2025년 2,394억원(29.7% 감소)으로 2년 연속 감소했다. 영업이익률은 2022년 3.5%, 2023년 3.3%, 2024년 2.2%, 2025년 1.5%로 낮아져 매출 규모가 15조원대를 유지하는 동안 마진이 얇아진 구조다. 지배주주 순이익은 2022년 1,708억원 흑자에서 2023년 154억원 순손실로 적자 전환했고, 2024년 1조 188억원 순손실로 손실이 확대됐다. 2025년 순손실은 6,476억원으로 전년보다 줄었지만 3년 연속 적자다. 당기순이익(비지배지분 포함)은 2024년 9,461억원 순손실, 2025년 5,950억원 순손실이었다. 2025년에는 지배주주 순손실이 당기순손실보다 커서, 비지배지분에 귀속된 손익이 플러스였던 것으로 계산된다. 손익 원인으로는 관계기업 롯데케미칼의 적자가 지분법손익에 큰 영향을 준 것으로 2024년 1~9월 누적 기준 보도됐다. 부채비율은 2022년 127.1%에서 2023년 139.4%, 2024년 146.3%, 2025년 144.9%로 올랐다. 2025년 말 자본총계 9조 4,216억원 중 지배주주 지분은 6조 763억원이고 부채총계는 13조 6,494억원이다. 영업활동 현금흐름은 2022년 9,041억원에서 2023년 1조 2,375억원, 2024년 1조 529억원, 2025년 1조 1,561억원으로 2023년 이후 3년 연속 1조원을 넘었다. 분기 영업이익은 2025년 3분기 1,851억원에서 4분기 영업손실 1,058억원으로 적자 전환했다가, 2026년 1분기 461억원, 2분기 1,290억원(전 분기 대비 179.9% 증가), 3분기 1,576억원(22.2% 증가)으로 2개 분기 연속 늘었다. 지배주주 순손익은 2025년 3분기 790억원 순손실, 4분기 3,637억원 순손실이었다가 2026년 1분기 65.5억원 순이익으로 흑자 전환했다. 이후 2분기 356억원 순이익을 거쳐 3분기 421억원 순손실로 다시 적자 전환했고, 최근 네 개 분기 지배주주 순손실 합계는 3,637억원이다. 매출은 2026년 1분기 3조 6,222억원을 저점으로 2분기 4조 931억원, 3분기 4조 1,240억원으로 늘었으나 3분기 매출은 전년 동기 대비 0.7% 감소했다. 영업이익은 개선되는데 지배주주 순손익이 다시 적자로 돌아선 점이 3분기 실적의 핵심 쟁점이다.",
+  "en": "Annual revenue rose from KRW 14.1 trillion in 2022 to KRW 15.2 trillion in 2023 (up 7.4% year on year) and KRW 15.8 trillion in 2024 (up 3.9%), then fell to KRW 15.5 trillion in 2025 (down 1.4%). Among 2022 to 2025, 2024 was the largest year for revenue and 2022 the smallest. Operating profit was KRW 493.7 billion in 2023 (up 0.8% year on year), the largest of the four years, and then declined for two consecutive years to KRW 340.5 billion in 2024 (down 31.0%) and KRW 239.4 billion in 2025 (down 29.7%). The operating margin narrowed from 3.5% in 2022 and 3.3% in 2023 to 2.2% in 2024 and 1.5% in 2025, so margins thinned while revenue stayed near KRW 15 trillion. Net income attributable to controlling shareholders swung from a KRW 170.8 billion profit in 2022 to a KRW 15.4 billion loss in 2023, widened to a KRW 1.02 trillion loss in 2024, and narrowed to a KRW 647.6 billion loss in 2025, marking three consecutive loss-making years. Net income including non-controlling interests was a loss of KRW 946.1 billion in 2024 and a loss of KRW 595 billion in 2025. In 2025 the loss attributable to controlling shareholders was larger than the total net loss, which implies that non-controlling interests recorded a profit for the year. For the causes, reports said losses at affiliate Lotte Chemical weighed heavily on equity-method results in the first nine months of 2024. The debt ratio rose from 127.1% in 2022 to 139.4% in 2023, 146.3% in 2024 and 144.9% in 2025. At the end of 2025, total equity was KRW 9.42 trillion, of which the controlling shareholders' stake was KRW 6.08 trillion, and total liabilities were KRW 13.6 trillion. Operating cash flow was KRW 904.1 billion in 2022, KRW 1.24 trillion in 2023, KRW 1.05 trillion in 2024 and KRW 1.16 trillion in 2025, exceeding KRW 1 trillion in each of the last three years. Quarterly operating profit moved from KRW 185.1 billion in Q3 2025 to an operating loss of KRW 105.8 billion in Q4 2025, then to KRW 46.1 billion in Q1 2026, KRW 129 billion in Q2 (up 179.9% from the prior quarter) and KRW 157.6 billion in Q3 (up 22.2%), rising for two consecutive quarters. Net income attributable to controlling shareholders was a loss of KRW 79 billion in Q3 2025 and a loss of KRW 363.7 billion in Q4 2025, turned to a profit of KRW 6.55 billion in Q1 2026, rose to KRW 35.6 billion in Q2, and returned to a loss of KRW 42.1 billion in Q3 2026. The combined net loss attributable to controlling shareholders over the last four quarters was KRW 363.7 billion. Revenue bottomed at KRW 3.62 trillion in Q1 2026 and rose to KRW 4.09 trillion in Q2 and KRW 4.12 trillion in Q3, although Q3 revenue was 0.7% lower than a year earlier. The central question in Q3 is that operating profit improved while the bottom-line result turned negative again."
  },
  "industry": {
-  "ko": "지주회사 손익은 사실상 그룹 4대 사업 업황의 합계로 움직이며, 현재 부문별 방향은 뚜렷하게 갈린다. 유통은 내수 소비와 방한 외국인 수요가 겹치며 회복 국면이고, 롯데쇼핑의 2026년 상반기 영업이익은 3,428억원으로 전년 동기보다 81.5% 증가했다. 삼성증권은 외국인 매출 증가가 백화점 전체 기존점 성장률을 약 3~5%포인트 끌어올리는 효과를 낸다고 분석했다. 화학은 중국발 공급과잉이 여전한 부담이지만, 롯데케미칼은 2026년 2분기 매출 5조 6,864억원, 영업이익 1,101억원으로 전년 동기 대비 흑자 전환했다고 밝혔다. 호텔·면세 부문도 호텔롯데 상반기 영업이익이 1,356억원으로 전년 동기 443억원의 세 배를 넘었다. 반면 CDMO는 경쟁이 이미 대형 사업자 중심으로 굳어진 시장으로, 기존 생산 실적과 제조 경험을 중시하는 레퍼런스 산업이며 삼성바이오로직스도 1공장 준공 후 첫 고객사 확보까지 약 1년이 걸렸다. 그룹 전체 재무 지표는 아직 무겁다. 계열 합산 순차입금은 2020년 말 약 19조원에서 2026년 6월 말 31조원을 넘어섰고, 롯데케미칼의 장기 부진이 그룹 이익창출력을 끌어내렸으며 롯데케미칼 신용등급 전망은 'AA-/안정적'에서 'AA-/부정적'으로 낮아졌다. 공정거래위원회의 2026년 공시대상기업집단 지정에서 롯데의 공정자산총액은 142조 4,200억원으로, 재계 순위는 5위에서 6위로 내려왔다.",
-  "en": "A holding company's earnings are effectively the sum of the group's four core industry cycles, and those cycles currently point in clearly different directions. Retail is recovering as domestic consumption and inbound tourist demand overlap, and LOTTE Shopping's first-half 2026 operating profit rose 81.5% year on year to KRW 342.8bn. Samsung Securities estimated that rising foreign-customer sales are lifting overall department-store same-store growth by roughly 3-5 percentage points. Chemicals still face oversupply out of China, yet LOTTE Chemical reported 2Q26 revenue of KRW 5,686.4bn and operating profit of KRW 110.1bn, a swing back to profit from a year earlier. Hotels and duty free also improved, as Hotel LOTTE's first-half operating profit of KRW 135.6bn was more than triple the KRW 44.3bn a year earlier. CDMO, by contrast, is a market already consolidated around large players; it is a reference-driven industry that weighs prior production track records heavily, and even Samsung Biologics took about a year after completing its first plant to land its first client. Group-level balance-sheet metrics remain heavy. Combined affiliate net borrowings grew from about KRW 19tn at end-2020 to more than KRW 31tn as of end-June 2026, prolonged weakness at LOTTE Chemical dragged group earnings power, and LOTTE Chemical's rating outlook was cut from AA- stable to AA- negative. In the Fair Trade Commission's 2026 designation of large business groups, LOTTE's total assets were KRW 142.42tn and its ranking slipped from fifth to sixth."
+  "ko": "석유화학은 롯데지주의 순손익을 좌우하는 업황이다. 롯데케미칼은 2022년 영업손실 7,626억원으로 적자 전환한 뒤 손실이 이어지고 있다는 보도가 있다. 한국신용평가는 2025년 12월 평가에서 롯데케미칼의 수급 환경이 중국발 공급 부담으로 비우호적인 상태가 지속된다고 봤다. 2026년 3월 보도는 그룹의 양대 축인 유통과 화학 업종이 모두 힘든 시기를 보내고 있다고 짚었다. 핵심 계열사인 롯데케미칼과 롯데쇼핑의 몸값이 낮게 책정되어 있어 그룹 체계 개편 작업의 걸림돌이 될 수 있다는 분석도 나왔다. 식품은 내수 방어 업종으로 꼽히며, 롯데웰푸드는 10년 넘게 흑자를 이어온 것으로 보도됐다. 다만 식품 자회사도 업황 변화를 피하지 못한다. 롯데칠성음료는 2026년 3분기 영업이익이 570억원으로 전년 동기 대비 37.9% 감소했다고 공시했다. 신용등급 측면에서 롯데칠성음료와 롯데웰푸드는 AA, 롯데케미칼과 롯데쇼핑은 AA-로 평가되어 식품 계열의 신용도가 상대적으로 높다. 지주 체제에서 롯데지주는 그룹의 인사·전략·미래 사업을 실질적으로 결정하는 콘트롤타워 역할을 하고 있다는 평가다. 신용평가에서는 지주사 채무가 구조적으로 후순위라는 점이 반영되어 있다.",
+  "en": "Petrochemicals drive the swings in Lotte's net income. Reports say Lotte Chemical swung to an operating loss of KRW 762.6 billion in 2022 and has continued to post losses since. In its December 2025 assessment, one Korean credit rating agency judged that Lotte Chemical's supply-demand environment remains unfavorable because of supply pressure from China. A March 2026 report noted that the retail and chemical sectors, the two pillars of the group, are both going through a difficult period. Analysts also argued that the low valuations of Lotte Chemical and Lotte Shopping could hinder the group's restructuring. Food is regarded as a defensive domestic sector, and Lotte Wellfood has reportedly remained profitable for more than a decade. Still, food subsidiaries are not immune to industry shifts. Lotte Chilsung Beverage reported that its Q3 2026 operating profit fell 37.9% year on year to KRW 57 billion in a disclosure on November 9. On credit ratings, Lotte Chilsung Beverage and Lotte Wellfood are rated AA, while Lotte Chemical and Lotte Shopping are rated AA-, so the food side carries relatively higher credit quality. Within the group structure, Lotte is described as the control tower that effectively decides personnel, strategy and future businesses. Credit assessments also reflect that the holding company's debt is structurally subordinated."
  },
  "outlook": {
-  "ko": "단기 관전 포인트는 자산 매각 대금의 사용처다. 공정거래위원회는 2026년 9월 1일 TPG의 롯데렌탈 주식 취득을 승인했으며, 매각 대상은 경영권 지분 61.2%로 매각가는 총 1조 3,105억원이다. 유입 자금은 호텔롯데와 부산롯데호텔의 재무구조 개선에 활용된다. 올해 진행한 비주력 사업 지분·자산 매각 규모는 약 1조 7,300억원에 달한다. 화학 재편도 진행 중으로, 롯데케미칼 대산공장은 6월 분할을 마치고 9월 1일 HD현대케미칼과 합병한 통합법인 'H&L어드밴스드'로 출범했으며, 여수공장은 7월 사업재편계획 승인 이후 관계사들과 통합 운영체계 협의를 진행하고 있다. 바이오는 2024년 3월 착공한 송도 1공장이 6월 말 인천경제자유구역청 사용승인을 획득했고, 회사 측은 하반기 시운전과 설비 검증 절차에 들어가 11월 준공 기념식을 열 계획이며 연내 대형 계약 한두 건의 수주를 가시화하겠다고 밝혔다. 실적 전망치로는 흥국증권이 2026년 5월 리포트에서 2026년 연결 매출 15조 7,000억원, 영업이익 4,017억원을 제시했다. 최관순 SK증권 연구원은 2026년 8월 인터뷰에서 경영 효율화와 수익성 중심 경영으로 2026년 연간 매출은 3.7% 감소하지만 영업이익은 56.8% 증가할 것으로 전망했다. 다만 이 수치들은 증권사 추정치이며 회사 확정 가이던스가 아니다.",
-  "en": "The near-term focus is how asset sale proceeds are deployed. The Fair Trade Commission approved TPG's acquisition of LOTTE Rental shares on 1 September 2026; the deal covers a 61.2% controlling stake for a total of KRW 1,310.5bn. Proceeds will be used to improve the financial structure of Hotel LOTTE and Busan LOTTE Hotel. Non-core stake and asset sales executed this year total roughly KRW 1,730bn. Chemical restructuring is also under way: LOTTE Chemical's Daesan plant completed its spin-off in June and launched on 1 September as H&L Advanced, a combined entity merged with HD Hyundai Chemical, while the Yeosu plant has been in talks with affiliates on an integrated operating framework since its restructuring plan was approved in July. In biologics, the Songdo Plant 1, which broke ground in March 2024, obtained occupancy approval from the Incheon Free Economic Zone Authority at the end of June, and management said it would begin commissioning and equipment validation in the second half, hold a completion ceremony in November, and aims to secure one or two large contracts within the year. On estimates, Heungkuk Securities in a May 2026 report projected 2026 consolidated revenue of KRW 15.7tn and operating profit of KRW 401.7bn. Choi Kwan-soon of SK Securities said in August 2026 that efficiency and profitability-focused management would cut 2026 revenue by 3.7% but lift operating profit by 56.8%. These figures are broker estimates, not confirmed company guidance."
+  "ko": "회사의 향후 실적 흐름은 식품 자회사 이익의 지속성과 관계기업 석유화학의 회복 속도에 따라 갈린다. 2026년 3분기 영업이익은 두 분기 연속 늘었지만 전년 동기 대비 14.8% 낮아, 회복의 폭은 아직 전년 수준에 못 미친다. 자회사 롯데칠성음료의 2026년 3분기 영업이익 감소(37.9%)와 당기순이익 감소가 지주 연결 이익에 어떻게 반영될지가 다음 확인 지점 중 하나다. 지배구조 측면에서는 신동빈 회장 체제의 '뉴롯데' 비전 아래 지주사 중심 재편이 진행 중이라는 보도가 있다. 한국신용평가는 2024년 5월 평가에서 호텔롯데의 지주체제 편입 등이 잔존 과제이지만 당장 추가 재편에 나서지는 않을 것으로 봤다. 2026년 3월 보도는 롯데케미칼과 롯데쇼핑의 몸값이 낮게 책정된 점이 개편에 걸림돌이 될 수 있다고 짚었고, 지배구조 정리 과정에서 그룹 개인·법인이 롯데지주 지분을 일부 팔거나 양도할 것으로 예상된다고 전했다. 자금 측면에서 한국신용평가는 2025년 9월 말 현금성자산 등 약 5,500억원 대비 1년 내 만기도래 차입금이 2.1조원(리스부채 포함)이어서 단기 자금 소요를 충당하기에 크게 부족하다고 평가했다. 다만 자회사로부터 나오는 안정적인 현금흐름은 보완 요인으로 꼽혔다. 배당은 2019년 이후 확대됐는데, 이 지급이 현금흐름에 부담이 되고 있다는 평가가 있다. 회사의 다음 정기보고서는 2026년 사업보고서이며, 여기서 2026년 연간 영업이익률과 지배주주 순손익 흐름이 확인된다.",
+  "en": "Future results will depend on how durable food subsidiary profits are and how quickly the affiliated petrochemical business recovers. Operating profit rose for two consecutive quarters through Q3 2026 but was still 14.8% below the year-earlier quarter, so the recovery remains smaller than last year's level. One checkpoint is how the 37.9% fall in Lotte Chilsung Beverage's Q3 2026 operating profit and its lower net income feed into consolidated earnings. On governance, reports describe ongoing restructuring centered on the holding company under the 'New Lotte' vision led by Chairman Shin Dong-bin. A Korean credit rating agency said in May 2024 that bringing Hotel Lotte into the holding structure remains an outstanding task, but it did not expect further restructuring immediately. A March 2026 report said the low valuations of Lotte Chemical and Lotte Shopping could hinder the reorganization, and it expected group individuals and entities to sell or transfer some Lotte shares during the process. On funding, the same agency assessed that, as of the end of September 2025, cash and short-term financial assets of about KRW 550 billion fell well short of debt maturing within one year of KRW 2.1 trillion, including lease liabilities. Stable cash flows from subsidiaries were cited as a mitigating factor. Dividends have expanded since 2019, and one assessment says those payments weigh on cash flow. The next regular report is the 2026 annual report, which will show full-year 2026 operating margins and the trend in net income attributable to controlling shareholders."
  },
  "valuation_comment": {
-  "ko": "최근 네 개 분기를 합산한 지배주주 순손익이 적자여서 이익 기준 배수는 산출되지 않고, 자산 기준 지표만 남는다. 주가는 주당순자산을 크게 밑도는 구간에서 형성돼 있으며, 회사도 2024년 11월 밸류업 공시에서 주가순자산비율이 SK·LG·GS·HD현대·CJ·LS 등 6개 비교기업 평균을 밑돈다고 스스로 진단한 바 있다. 배당은 지주회사로서 자회사 배당 수취에 기반하는데, 회사는 별도 당기순이익 대비 배당과 자기주식 소각액을 합친 주주환원율을 35% 이상으로 유지하는 정책을 두고 있고, 2024년 11월 제시한 3개년 계획의 마지막 해가 올해라는 점이 이행 여부를 가르는 변수다. 순자산가치 대비 할인 정도에 대해서는 SK증권이 2026년 9월 3일 리포트에서 순자산가치(NAV) 대비 할인율 29.5%로 추가적인 주가 하락 리스크는 제한적이라고 평가하며, 이 할인율이 2024년 이후 평균 21.1%를 웃돈다고 밝혔다. 반대편에는 이익 지표가 아직 적자에서 벗어나는 초기 단계라는 사실과 지주 자체 차입 부담이 함께 놓여 있어, 자산가치와 이익창출력 회복 속도 중 어디에 무게를 두느냐에 따라 해석이 달라지는 국면이다.",
-  "en": "Because owners' net income over the last four reported quarters was negative, earnings-based multiples cannot be computed, leaving only asset-based measures. The share price sits well below book value per share, and the company itself noted in its November 2024 value-up disclosure that its price-to-book ratio was below the average of six peers including SK, LG, GS, HD Hyundai, CJ and LS. Dividends rest on the dividends the holding company receives from subsidiaries; the firm maintains a policy of keeping total shareholder returns, combining dividends and treasury-share cancellations, at 35% or more of standalone net income, and this year is the final year of the three-year plan announced in November 2024, which makes execution the swing factor. On the discount to intrinsic asset value, SK Securities said in its 3 September 2026 report that the 29.5% discount to net asset value left limited further downside risk, and noted this discount exceeded the 21.1% average since 2024. Set against that are the fact that profitability is only in the early stage of emerging from losses and the parent's own borrowing burden, so interpretation hinges on whether one weights asset value or the pace of earnings recovery."
+  "ko": "주가순자산비율은 1배를 크게 밑도는 구간으로, 순자산 대비 할인 폭이 큰 편이다. 주가수익비율은 최근 네 개 분기 지배주주 순손실 합계가 이어져 산출되지 않는 상태다. 배당은 순손실 상태에서 지급되는 구조이므로 지속성은 자회사 배당 수입과 영업활동 현금흐름에 기대고 있으며, 2025년 영업활동 현금흐름은 1조 1,561억원이었다. 순자산 대비 할인이 붙는 배경으로는 지배주주 순손실이 이어진 점과 부채비율이 2022년 127.1%에서 2025년 144.9%로 오른 점이 함께 놓인다. 지주사의 자산가치는 자회사 지분 가치에 달려 있어, 식품 자회사의 이익 흐름과 관계기업 롯데케미칼·롯데쇼핑의 실적이 밸류에이션 해석의 핵심 변수다. 다년 추세로 보면 영업이익은 2023년 4,937억원을 정점으로 2025년 2,394억원까지 낮아졌고, 2026년 들어서는 분기 영업이익이 회복되고 있다. 이 수준을 해석할 때 함께 보는 변수는 지배주주 순손익이 흑자 기조로 돌아서는지 여부다.",
+  "en": "The price-to-book ratio sits well below 1x, which means the shares trade at a large discount to net asset value. The price-to-earnings ratio cannot be calculated because the combined net loss attributable to controlling shareholders over the last four quarters has no positive earnings base. Dividends are being paid while the company reports net losses, so their sustainability rests on dividend income from subsidiaries and operating cash flow, which was KRW 1.16 trillion in 2025. The discount to net asset value reflects several factors together, including consecutive losses attributable to controlling shareholders and a debt ratio that rose from 127.1% in 2022 to 144.9% in 2025. Because the holding company's asset value depends on the value of its subsidiary stakes, the earnings trend at food subsidiaries and the results of affiliates Lotte Chemical and Lotte Shopping are the key variables for interpreting valuation. Over several years, operating profit peaked at KRW 493.7 billion in 2023 and fell to KRW 239.4 billion in 2025, and quarterly operating profit has recovered during 2026. The variable to watch when reading these levels is whether net income attributable to controlling shareholders returns to a sustained profit."
  },
  "bull": [
   {
    "title": {
-    "ko": "주요 계열사 이익의 동시 회복",
-    "en": "Simultaneous profit recovery at key affiliates"
+    "ko": "식품 자회사의 이익 완충력",
+    "en": "Earnings cushion from food subsidiaries"
    },
    "body": {
-    "ko": "지주 손익을 좌우하는 관계사 두 곳이 같은 방향으로 움직였다. 롯데쇼핑 상반기 영업이익이 3,428억원으로 81.5% 늘고 호텔롯데도 1,356억원으로 전년 동기 443억원의 세 배를 넘었다. 롯데케미칼은 2026년 2분기 영업이익 1,101억원으로 전년 동기 대비 흑자 전환했다. 연결 기준으로도 2026년 1~2분기 지배주주 순이익이 각각 65억원, 356억원으로 흑자를 유지했다.",
-    "en": "The two affiliates that drive holdco earnings moved in the same direction. LOTTE Shopping's first-half operating profit rose 81.5% to KRW 342.8bn, and Hotel LOTTE's KRW 135.6bn was more than triple the KRW 44.3bn a year earlier. LOTTE Chemical swung to a 2Q26 operating profit of KRW 110.1bn from a loss. On a consolidated basis, owners' net income stayed positive in 1Q26 and 2Q26 at KRW 6.5bn and KRW 35.6bn."
+    "ko": "롯데웰푸드는 10년 넘게 흑자를 이어 왔다는 보도가 있고, 2025년 기준 지주 영업이익의 약 46%를 차지했다. 롯데칠성음료와 롯데웰푸드는 신용평가에서 AA 등급을 받은 핵심 계열사다. 식품 이익이 화학·유통의 부진을 일부 흡수하는 구조가 강세 측 논리의 중심이다.",
+    "en": "Reports say Lotte Wellfood has stayed profitable for more than a decade and accounted for about 46% of group operating profit in 2025. Lotte Chilsung Beverage and Lotte Wellfood are core affiliates rated AA by a credit agency. Food earnings partly absorbing weakness in chemicals and retail is the core of the bullish argument."
    }
   },
   {
    "title": {
-    "ko": "실행 단계에 들어간 포트폴리오 재편",
-    "en": "Portfolio restructuring in execution phase"
+    "ko": "영업이익 2개 분기 연속 회복",
+    "en": "Two consecutive quarters of operating recovery"
    },
    "body": {
-    "ko": "매각 계획이 계약과 승인 단계로 넘어갔다. 공정거래위원회가 9월 1일 TPG의 롯데렌탈 지분 취득을 승인했고 매각가는 총 1조 3,105억원이다. 올해 비주력 지분·자산 매각 규모는 약 1조 7,300억원으로, 롯데에코월 지분 90%(1,708억원), 분당물류센터(1,311억원), 롯데마트 킨텍스점(820억원), 롯데네슬레코리아 청주공장 및 부지(347억원) 등이 포함된다. 유입 자금의 상환·투자 배분이 재무 지표 개선 폭을 좌우한다.",
-    "en": "Divestment plans have moved into signed-contract and approval stages. The Fair Trade Commission approved TPG's purchase of the LOTTE Rental stake on 1 September for a total of KRW 1,310.5bn. Non-core stake and asset sales this year total about KRW 1,730bn, including a 90% stake in LOTTE Ecowall (KRW 170.8bn), the Bundang logistics center (KRW 131.1bn), the LOTTE Mart Kintex store (KRW 82.0bn) and the LOTTE Nestle Korea Cheongju plant and land (KRW 34.7bn). How the proceeds are split between debt repayment and investment will determine how much the financial metrics improve."
+    "ko": "영업이익은 2026년 1분기 461억원에서 2분기 1,290억원, 3분기 1,576억원으로 2개 분기 연속 늘었고, 2분기 증가율은 전 분기 대비 179.9%였다. 영업이익률이 2025년 1.5%까지 떨어진 뒤 분기 기준으로 반등한 점이 강세 측 근거로 꼽힌다. 회복 폭은 아직 전년 동기 수준에는 미치지 못한다.",
+    "en": "Operating profit rose from KRW 46.1 billion in Q1 2026 to KRW 129 billion in Q2 and KRW 157.6 billion in Q3, a second consecutive quarterly gain, with Q2 up 179.9% from the prior quarter. Bulls point to the quarterly rebound after the operating margin fell to 1.5% in 2025. The recovery is still below year-earlier levels."
    }
   },
   {
    "title": {
-    "ko": "자기주식 활용 여지와 환원 정책",
-    "en": "Treasury share optionality and return policy"
+    "ko": "순자산 대비 할인과 현금창출력",
+    "en": "Discount to net assets and cash generation"
    },
    "body": {
-    "ko": "지주사 중에서도 자기주식 비중이 높은 편이다. 2026년 3월 보유 자기주식 27.5% 중 5%에 해당하는 524만 5,461주 소각을 결정했고, 2025년 6월에는 재무구조 개선을 위해 자사주 5%를 롯데물산에 매각한 이력이 있다. SK증권은 2026년 9월 리포트에서 자사주 비중을 23.7%로 제시하며 소각과 처분 모두 보유 자사주 가치가 부각되는 계기가 될 것이라고 밝혔다. 다만 소각 규모와 시점은 아직 구체적으로 공시되지 않았다.",
-    "en": "Its treasury holding is large even among Korean holding companies. In March 2026 it decided to cancel 5,245,461 shares, equal to 5 percentage points of its 27.5% treasury stake, and in June 2025 it had sold a 5% treasury block to LOTTE Engineering & Construction affiliate LOTTE Property & Development to shore up its balance sheet. SK Securities put the treasury ratio at 23.7% in a September 2026 report and said both cancellation and disposal would highlight the value of those shares. The size and timing of any cancellation, however, have not yet been disclosed in detail."
+    "ko": "주가순자산비율이 1배를 크게 밑도는 구간이어서 순자산 대비 할인 폭이 크다. 2025년 영업활동 현금흐름은 1조 1,561억원으로 당기순손실 규모를 크게 웃도는 현금 창출을 보였다. 그룹 지배구조 정리 논의가 이어지는 점도 강세 측이 거론하는 요인이다.",
+    "en": "The price-to-book ratio is well below 1x, meaning a wide discount to net assets. Operating cash flow of KRW 1.16 trillion in 2025 was far larger than the total net loss for the year. Continuing discussion of group restructuring is another factor bulls cite."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "지주 자체 차입과 이자 부담",
-    "en": "Parent-level borrowings and interest costs"
+    "ko": "관계기업 손익의 변동성",
+    "en": "Volatility from affiliate results"
    },
    "body": {
-    "ko": "연결 부채비율은 2022년 127.1%에서 2025년 144.9%로 올라왔고, 부채총계는 13조 6,494억원이다. 한국신용평가에 따르면 최근 보유 현금성 자산은 1,600억원 수준인 반면 향후 1년 내 만기 차입금은 2조 4,000억원에 달해 단기 유동성 부담이 부각된다. SK증권도 2026년 9월 리포트에서 2분기 별도 기준 순차입금이 3조 5,000억원에 달해 재무구조 개선 필요성이 존재한다고 밝혔다. 흥국증권은 2026년 5월 리포트에서 과다한 순이자비용 등으로 순이익 개선은 제한적일 것으로 전망했다.",
-    "en": "The consolidated debt-to-equity ratio rose from 127.1% in 2022 to 144.9% in 2025, with total liabilities of KRW 13,649.4bn. According to Korea Investors Service, cash and equivalents were recently around KRW 160bn while borrowings maturing within a year reached KRW 2.4tn, highlighting short-term liquidity pressure. SK Securities also noted in its September 2026 report that standalone net borrowings stood at KRW 3.5tn as of the second quarter, leaving a need for balance-sheet improvement. Heungkuk Securities said in May 2026 that excessive net interest expense would keep net profit improvement limited."
+    "ko": "2024년 1~9월에는 관계기업 롯데케미칼의 6,814억원 적자가 지분법손익 적자의 가장 큰 원인으로 보도됐다. 2025년 당기순손실은 5,950억원이었고, 2026년 3분기에도 지배주주 순손실 421억원으로 적자가 재발했다. 화학 관계기업 업황이 지주 순이익을 다시 끌어내릴 수 있다는 점이 약세 측 논리다.",
+    "en": "For the first nine months of 2024, reports cited the KRW 681.4 billion loss at affiliate Lotte Chemical as the largest driver of equity-method losses. The total net loss for 2025 was KRW 595 billion, and Q3 2026 returned to a net loss attributable to controlling shareholders of KRW 42.1 billion. Bears argue that weakness in the chemical affiliates can pull net income down again."
    }
   },
   {
    "title": {
-    "ko": "바이오 투자 소요와 수주 공백",
-    "en": "Biologics funding needs and order gap"
+    "ko": "식품 자회사의 둔화",
+    "en": "Slowdown at a food subsidiary"
    },
    "body": {
-    "ko": "대규모 설비를 먼저 짓고 고객을 채우는 구조여서 시차 위험이 크다. 그룹은 2022년 이후 6차례 유상증자로 총 1조 2,000억여원을 롯데바이오로직스에 투입했고, 송도 바이오 캠퍼스 건립 총 투입 예상액은 4조 6,000억원이다. 롯데바이오로직스는 2025년 매출 1,961억원, 영업손실 1,326억원을 기록했고 부채총계는 1조 768억원으로 전년 6,305억원 대비 69.6% 증가했다. 2027년 초까지 이어지는 시러큐스 공장 설비 고도화에 따른 일부 셧다운과 수주 감소로 가동률이 낮아진 상태다.",
-    "en": "The model builds large capacity first and fills it later, which creates timing risk. Since 2022 the group has injected roughly KRW 1.2tn into LOTTE Biologics through six rights offerings, and total planned spending on the Songdo bio campus is KRW 4.6tn. LOTTE Biologics posted 2025 revenue of KRW 196.1bn and an operating loss of KRW 132.6bn, with total liabilities up 69.6% to KRW 1,076.8bn from KRW 630.5bn. Utilization is depressed by partial shutdowns tied to Syracuse equipment upgrades running into early 2027 and by reduced orders."
+    "ko": "롯데칠성음료의 2026년 3분기 영업이익은 570억원으로 전년 동기 대비 37.9% 감소했다. 같은 기간 매출은 2.7% 줄었고 지배기업소유주지분순이익도 32.4% 감소했다. 식품 계열이 지주 이익의 완충 역할을 하더라도 자회사 수익성이 둔화되면 완충 폭이 줄어든다.",
+    "en": "Lotte Chilsung Beverage reported Q3 2026 operating profit of KRW 57 billion, down 37.9% year on year, with revenue down 2.7%. Net income attributable to its owners fell 32.4%. Even if food earnings cushion the holding company, a slowdown at the subsidiary reduces that cushion."
    }
   },
   {
    "title": {
-    "ko": "영업이익률 하락 추세와 분기 변동성",
-    "en": "Margin downtrend and quarterly volatility"
+    "ko": "재무 부담과 배당 지속성",
+    "en": "Financial burden and dividend sustainability"
    },
    "body": {
-    "ko": "연결 영업이익률은 2022년 3.5%에서 2025년 1.5%까지 4년 연속 낮아졌다. 2025년 4분기에는 영업손실 1,058억원과 지배주주 순손실 3,637억원이 한꺼번에 반영돼 연간 실적이 크게 훼손됐고, 이는 4분기에 비용·손상 인식이 몰릴 수 있음을 보여준다. 2026년 2분기 영업이익 1,290억원도 2025년 2분기 1,422억원을 밑돌아, 회복이 단선적이지 않다. 매출은 4년간 14조원대에서 15조원대로 완만하게 늘었을 뿐 성장률 자체가 높지 않다.",
-    "en": "The consolidated operating margin fell for four straight years, from 3.5% in 2022 to 1.5% in 2025. In 4Q25 a KRW 105.8bn operating loss and a KRW 363.7bn owners' net loss landed together, badly denting the full-year result and showing that costs and impairments can cluster in the fourth quarter. 2Q26 operating profit of KRW 129.0bn also came in below the KRW 142.2bn of 2Q25, so the recovery is not linear. Revenue has only crept up from the KRW 14tn range to the KRW 15tn range over four years, indicating a modest growth rate."
+    "ko": "부채비율은 2022년 127.1%에서 2025년 144.9%로 올랐고, 2025년 말 부채총계는 13조 6,494억원이다. 한국신용평가는 2025년 9월 말 현금성자산 등 약 5,500억원 대비 1년 내 만기도래 차입금 2.1조원을 부족한 수준으로 평가했다. 배당 확대가 현금흐름 부담이 됐다는 평가도 약세 측 근거다.",
+    "en": "The debt ratio rose from 127.1% in 2022 to 144.9% in 2025, and total liabilities at the end of 2025 were KRW 13.6 trillion. One credit assessment judged cash and short-term financial assets of about KRW 550 billion, as of September 2025, to be well short of KRW 2.1 trillion in debt maturing within a year. Bears also cite dividend expansion as a cash flow burden."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "신용등급·조달 조건",
-    "en": "Credit rating and funding terms"
+    "ko": "석유화학 업황 장기화",
+    "en": "Prolonged petrochemical downturn"
    },
    "body": {
-    "ko": "등급 변동이 자금 조달 비용과 조기상환 조항으로 직접 연결된다. 한국신용평가·나이스신용평가·한국기업평가는 2025년 6월 30일 정기평가에서 롯데지주 무보증사채 신용등급을 AA-(부정적)에서 A+(안정적)로 하향 조정했다. 이후 한국신용평가는 2026년 8월 무보증사채 A+/안정적, 기업어음 A2+를 유지했다. 다만 신용등급 하락 시 조기상환 부담이 발생할 수 있는 레이팅 트리거 적용 회사채·기업어음·차입금이 총 6,420억원 존재한다.",
-    "en": "Rating moves feed directly into funding costs and early-repayment clauses. Korea Investors Service, NICE Investors Service and Korea Ratings all cut LOTTE Corporation's unsecured bond rating from AA- negative to A+ stable in their 30 June 2025 periodic review. Korea Investors Service subsequently maintained A+/stable for bonds and A2+ for commercial paper in August 2026. However, bonds, commercial paper and loans totaling KRW 642.0bn carry rating triggers that could force early repayment if the rating falls."
+    "ko": "롯데케미칼의 수급 환경이 중국발 공급 부담으로 비우호적인 상태가 이어진다는 평가가 있다. 관계기업 손익은 지분법으로 반영되므로 업황 장기화는 지주 순손익의 변동성으로 이어진다. 롯데케미칼은 2022년 이후 손실이 이어진 것으로 보도됐다.",
+    "en": "One credit assessment says Lotte Chemical's supply-demand environment remains unfavorable because of Chinese oversupply. Because affiliate results flow through equity-method accounting, a prolonged downturn translates into volatility in Lotte's net income. Reports say Lotte Chemical has posted losses since 2022."
    }
   },
   {
    "cat": {
-    "ko": "자산 매각 지연·계열 지원 확대",
-    "en": "Delayed disposals and wider affiliate support"
+    "ko": "재무구조와 신용등급",
+    "en": "Balance sheet and credit rating"
    },
    "body": {
-    "ko": "재무 개선 시나리오가 매각 실행에 크게 의존한다. 한국신용평가는 보유자산 매각 및 사업구조 개편이 계획대로 이뤄지지 않을 경우 자체 재무부담이 확대될 수 있다며, 자산매각 성과와 추가 계열 지원부담을 주요 모니터링 요소로 점검하겠다고 밝혔다. 롯데지주는 2025년 롯데바이오로직스에 1,680억원을 출자했고, 롯데글로벌로지스 기업공개 철회에 따른 재무적투자자의 풋옵션 행사 등으로 1,814억원의 순자금 유출이 발생했다. 앞서 2025년 3월 체결된 롯데렌탈 지분 매각 계약은 공정위가 기업결합 심사를 불허해 무산된 전례도 있다.",
-    "en": "The deleveraging scenario depends heavily on execution of disposals. Korea Investors Service warned that if asset sales and business restructuring do not proceed as planned, standalone financial burdens could widen, and said it would monitor disposal outcomes and additional affiliate-support needs. LOTTE Corporation injected KRW 168.0bn into LOTTE Biologics in 2025 and saw KRW 181.4bn in net cash outflow tied to financial investors exercising put options after LOTTE Global Logistics withdrew its IPO. A LOTTE Rental stake sale signed in March 2025 previously collapsed after the Fair Trade Commission blocked the combination."
+    "ko": "부채비율은 2025년 말 144.9%로 2022년 127.1%보다 높다. 신용평가는 그룹 합산 재무부담 확대 기조가 이어진다고 봤다. 2023년에는 롯데지주 신용등급이 AA에서 AA-로 강등된 사례도 있다.",
+    "en": "The debt ratio was 144.9% at the end of 2025, above 127.1% in 2022. A credit assessment says the group's combined financial burden continues to expand. Lotte's rating was also downgraded from AA to AA- in 2023."
    }
   },
   {
    "cat": {
-    "ko": "CDMO 수주 및 인증 일정",
-    "en": "CDMO order and certification timeline"
+    "ko": "지배구조 정리와 지분 매각 변수",
+    "en": "Governance restructuring and share sales"
    },
    "body": {
-    "ko": "공장 완공이 곧 매출은 아니다. 송도 1공장은 시운전, 밸리데이션, 품질시스템 점검을 거쳐 GMP 인증 등 규제기관 기준을 충족하고 실사·허가 절차를 통과해야 한다. 아직 확정된 고객사는 없는 것으로 알려졌고, 업계에서는 수주 공백 우려가 제기돼 왔다. 회사는 연내 대형 계약 한두 건을 가시화하겠다고 밝혔으나, 계약 체결 시점과 규모는 확정되지 않았다.",
-    "en": "A completed plant is not the same as revenue. Songdo Plant 1 must pass commissioning, validation and quality-system checks, meet regulatory standards such as GMP certification, and clear inspections and approvals. No client has reportedly been confirmed yet, and the industry has repeatedly flagged concerns about the order gap. Management said it is working to bring one or two large contracts into view within the year, but timing and size are not yet fixed."
+    "ko": "그룹 지배구조 정리 과정에서 롯데케미칼과 롯데쇼핑의 낮은 몸값이 걸림돌로 지적됐다. 그룹 개인·법인이 지주 지분을 일부 팔거나 양도할 것으로 예상된다는 보도가 있다. 자사주 비중이 높은 것은 출범 당시 계열사 물량을 떠안았기 때문이라는 설명도 있다.",
+    "en": "Low valuations of Lotte Chemical and Lotte Shopping have been flagged as an obstacle in the group's restructuring. Reports expect group individuals and entities to sell or transfer some Lotte shares. The high treasury stock ratio is explained by the holding company absorbing a large volume of affiliate shares at its founding."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 10월 중",
-    "en": "During October 2026"
+    "ko": "2027년 1월 말 전후(예상)",
+    "en": "Late January 2027 (expected)"
    },
    "what": {
-    "ko": "TPG와의 롯데렌탈 지분 매각 거래 종결 여부와 대금 유입 시점. 증권가와 IB 업계는 매각 대금 사용처를 단기 체크포인트로 보며, 호텔 계열사 차입금 상환 규모에 따라 그룹 재무 지표가 달라진다고 본다.",
-    "en": "Whether the LOTTE Rental stake sale to TPG closes and when proceeds arrive. Brokers and IB market participants treat the use of proceeds as a near-term checkpoint, since group metrics will shift depending on how much goes to repaying hotel-affiliate borrowings."
+    "ko": "2026년 4분기 잠정 실적 발표. 3분기에 영업이익이 늘고 지배주주 순이익이 흑자로 돌아섰던 흐름이 4분기에도 이어지는지가 확인 지점이다.",
+    "en": "Provisional Q4 2026 results. The checkpoint is whether the Q3 pattern of rising operating profit continues in Q4, with net income attributable to controlling shareholders returning to profit."
    }
   },
   {
    "when": {
-    "ko": "2026년 11월 초",
-    "en": "Early November 2026"
+    "ko": "2027년 3월 31일까지",
+    "en": "By March 31, 2027"
    },
    "what": {
-    "ko": "2026년 3분기 연결 실적 발표. 2026년 2분기 영업이익 1,290억원 대비 방향, 관계사 지분법손익 기여, 롯데바이오로직스 적자 폭 축소 여부를 함께 확인해야 한다.",
-    "en": "Third-quarter 2026 consolidated results. Watch the direction versus 2Q26 operating profit of KRW 129.0bn, the contribution from affiliate equity-method income, and whether the LOTTE Biologics loss narrows."
+    "ko": "2026년 사업보고서 제출 기한. 2025년 1.5%였던 영업이익률과 지배주주 순손익이 흑자 기조로 들어서는지가 다음 정기보고서의 핵심 확인 사항이다.",
+    "en": "Statutory deadline for the 2026 annual report. The key items are whether the operating margin, 1.5% in 2025, improves and whether net income attributable to controlling shareholders moves into a sustained profit."
    }
   },
   {
    "when": {
-    "ko": "2026년 11월",
-    "en": "November 2026"
+    "ko": "2027년 3월 전후(통상 일정)",
+    "en": "Around March 2027 (typical timing)"
    },
    "what": {
-    "ko": "회사가 예고한 송도 1공장 준공 기념식과 시운전·설비 검증 진행 상황. 연말까지 GMP 레디 달성과 첫 상업 생산 수주를 동시에 달성하겠다는 목표의 이행 여부가 확인 지점이다.",
-    "en": "The Songdo Plant 1 completion ceremony the company has flagged and progress on commissioning and equipment validation. The checkpoint is whether it meets its stated goal of achieving GMP readiness and a first commercial-production order by year-end."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 4분기",
-    "en": "Fourth quarter 2026"
-   },
-   "what": {
-    "ko": "자기주식 소각·처분에 대한 구체적 계획 공시 여부. 흥국증권은 2026년 5월 리포트에서 주주환원 프레임워크의 진전과 자사주 소각에 대한 구체적 계획 제시가 필요하다고 지적했다. 주주환원율 35% 이상 3개년 계획의 마지막 해라는 점도 함께 확인 대상이다.",
-    "en": "Whether a concrete plan for treasury-share cancellation or disposal is disclosed. Heungkuk Securities said in a May 2026 report that the shareholder-return framework needs to advance and that a specific cancellation plan should be laid out. That this is the final year of the three-year plan targeting a 35%-plus payout ratio is also worth tracking."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 2월",
-    "en": "February 2027"
-   },
-   "what": {
-    "ko": "2026년 연간 실적과 배당 결정 공시. 2025년 4분기에 영업손실 1,058억원·지배주주 순손실 3,637억원이 몰렸던 만큼, 연말 손상차손 등 일회성 인식 규모가 연간 손익의 방향을 가른다. 롯데케미칼 여수공장 사업재편 협의 결과도 함께 점검할 항목이다.",
-    "en": "Disclosure of full-year 2026 results and the dividend decision. Because a KRW 105.8bn operating loss and KRW 363.7bn owners' net loss clustered in 4Q25, the scale of year-end one-off items such as impairments will shape the annual outcome. The outcome of restructuring talks for LOTTE Chemical's Yeosu plant is another item to check."
+    "ko": "정기 주주총회와 배당 결정. 배당 확대에 따른 현금흐름 부담이 이어지는지, 영업활동 현금흐름이 1조원 수준을 유지하는지 확인할 지점이다.",
+    "en": "Regular shareholders' meeting and dividend decision. Watch whether the cash flow burden from dividend expansion persists and whether operating cash flow stays near KRW 1 trillion."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "롯데지주의 최근 4년 실적은 매출은 15조원대에서 정체된 반면 영업이익률이 3.5%에서 1.5%로 낮아지고 지배주주 순손익이 3년 연속 적자였던 흐름으로 요약된다. 2025년 4분기 영업손실 1,058억원·지배주주 순손실 3,637억원이 저점 역할을 했고, 2026년 1분기와 2분기에는 각각 지배주주 순이익 65억원, 356억원으로 흑자를 유지했다. 상반기 영업이익 1,751억원은 전년 동기보다 늘었지만 2분기만 보면 전년 동기를 밑돌아 개선 속도는 분기마다 다르다. 강세 논거는 롯데쇼핑·호텔롯데의 상반기 이익 급증과 올해 약 1조 7,300억원 규모 비주력 자산 매각, 그리고 자기주식 활용 여지에 있다. 약세 논거는 1년 내 만기 차입금 2조 4,000억원 대비 낮은 현금성 자산, 2026년 6월 말 31조원을 넘어선 계열 합산 순차입금, 그리고 아직 확정 고객사가 없는 송도 공장에 있다. 결국 매각 대금의 배분, 지주 자체 이자 부담의 흡수, 바이오 첫 상업 수주라는 세 가지 축이 다음 몇 개 분기의 숫자를 결정할 변수다. 본 리포트는 정보 제공 목적이며 매수·매도 의견이나 목표주가를 포함하지 않는다.",
-   "en": "LOTTE Corporation's last four years can be summed up as revenue stalling in the KRW 15tn range while the operating margin fell from 3.5% to 1.5% and owners' net income stayed negative for three consecutive years. The KRW 105.8bn operating loss and KRW 363.7bn owners' net loss of 4Q25 marked the trough, and 1Q26 and 2Q26 held in the black with owners' net income of KRW 6.5bn and KRW 35.6bn. First-half operating profit of KRW 175.1bn rose year on year, but the second quarter alone came in below the prior year, so the pace of improvement varies by quarter. The bull case rests on the sharp first-half profit jumps at LOTTE Shopping and Hotel LOTTE, roughly KRW 1,730bn of non-core asset sales this year, and optionality around the treasury stake. The bear case rests on cash of only about KRW 160bn against KRW 2.4tn of borrowings maturing within a year, combined affiliate net borrowings above KRW 31tn as of end-June 2026, and a Songdo plant that reportedly still has no confirmed client. Ultimately three axes will set the numbers over the next few quarters: allocation of disposal proceeds, absorption of parent-level interest costs, and the first commercial biologics order. This report is for information purposes and contains no buy or sell opinion or target price."
+   "ko": "롯데지주는 식품 자회사가 이익의 바닥을 받치고 화학·유통 관계기업이 순손익을 흔드는 구조의 순수지주회사다. 2026년 들어 영업이익은 1분기 461억원에서 2분기 1,290억원, 3분기 1,576억원으로 두 분기 연속 늘었다. 그러나 지배주주 순손익은 3분기 421억원 순손실로 다시 적자 전환했고, 최근 네 개 분기 합계는 3,637억원 순손실이다. 연간으로 보면 2023년 4,937억원이던 영업이익은 2025년 2,394억원으로 줄었고, 지배주주 순손실은 2023년부터 3년 연속 이어졌다. 부채비율은 2025년 144.9%로 2022년보다 높고, 영업활동 현금흐름은 2025년 1조 1,561억원으로 3년 연속 1조원을 넘었다. 밸류에이션은 PBR이 1배를 크게 밑도는 구간이지만 적자가 이어져 주가수익비율은 산출되지 않는다. 강세 측은 식품 자회사의 이익 완충력과 순자산 대비 할인을, 약세 측은 관계기업 업황과 재무 부담, 배당 지속성을 근거로 든다. 다음 확인 지점은 2026년 4분기 잠정 실적과 2026년 사업보고서이며, 지배주주 순손익이 흑자 기조로 들어서는지가 핵심이다.",
+   "en": "Lotte is a pure holding company in which food subsidiaries provide a floor under earnings while chemical and retail affiliates drive swings in net income. Operating profit rose for two consecutive quarters in 2026, from KRW 46.1 billion in Q1 to KRW 129 billion in Q2 and KRW 157.6 billion in Q3. However, the net loss attributable to controlling shareholders returned in Q3 at KRW 42.1 billion, and the combined loss over the last four quarters is KRW 363.7 billion. On an annual basis, operating profit fell from KRW 493.7 billion in 2023 to KRW 239.4 billion in 2025, and the loss attributable to controlling shareholders has continued for three consecutive years. The debt ratio of 144.9% in 2025 is higher than in 2022, while operating cash flow exceeded KRW 1 trillion in each of the last three years, reaching KRW 1.16 trillion in 2025. The price-to-book ratio sits well below 1x, but the continuing losses leave the price-to-earnings ratio uncalculated. Bulls point to the earnings cushion from food subsidiaries and the discount to net assets, while bears point to affiliate industry conditions, financial burden and dividend sustainability. The next checkpoints are the provisional Q4 2026 results and the 2026 annual report, and the key question is whether net income attributable to controlling shareholders moves into a sustained profit."
   }
  },
  "sources": [
-  "https://m.news.nate.com/view/20260521n18530?mid=m02&list=recent&cpcd=",
-  "https://v.daum.net/v/HwToEtWAfF",
-  "https://www.biztribune.co.kr/news/articleView.html?idxno=325871",
-  "https://www.mediapen.com/news/view/1086361",
-  "https://www.edaily.co.kr/News/Read?newsId=02686326645576512",
-  "https://kr.investing.com/news/stock-market-news/article-1955134",
-  "https://www.hankyung.com/article/2026090174001",
-  "https://v.daum.net/v/HqtvmHYCW6",
-  "https://www.viva100.com/article/20260807500620",
-  "https://www.sentv.co.kr/article/view/sentv202606150054",
-  "https://www.ebn.co.kr/news/articleView.html?idxno=1721400",
-  "https://m.ceoscoredaily.com/page/view/2026052113443859297",
-  "https://www.mt.co.kr/living/2026/09/01/2026090116041926932",
-  "https://www.huffingtonpost.kr/article/258443",
-  "https://biz.heraldcorp.com/article/10786758",
-  "https://www.jabon.co.kr/news/articleView.html?idxno=6287",
-  "https://kpenews.com/View.aspx?No=3998608",
-  "https://www.newspim.com/news/view/20260615000846"
+  "https://m.news.nate.com/view/20261113n28576",
+  "https://www.koreastocknews.com/news/articleView.html?idxno=122260",
+  "https://www.asiatoday.co.kr/kn/view.php?key=20261113010005160",
+  "https://www.dtoday.co.kr/news/articleView.html?idxno=803480",
+  "https://news.mtn.co.kr/article/2026111315050248939",
+  "https://www.fnnews.com/news/202611130907563493",
+  "https://www.ziksir.com/news/articleView.html?idxno=153190",
+  "https://www.fntimes.com/html/view.php?ud=202611130931552808b372994c95_18",
+  "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=713803",
+  "https://investing-for-everyone.com/wiki/%EB%A1%AF%EB%8D%B0%EC%A7%80%EC%A3%BC",
+  "https://app.rndcircle.io/company/caab612a-0aad-50ca-bc71-cf75851f19b5",
+  "https://kisrating.com/fileDown.do?menuCd=S1&gubun=P&fileName=ss20240516-4.pdf&writedate=20240516",
+  "https://m.ekn.kr/view.php?key=20260317028417378",
+  "https://www.newswave.kr/news/articleView.html?idxno=515311",
+  "https://economist.co.kr/article/view/ecn202307100047",
+  "https://m.finance.daum.net/quotes/A089860/news/stock/20260317083755717",
+  "https://m.g-enews.com/view.php?ud=2021070822145478750647a96443_1",
+  "https://kisrating.com/fileDown.do?menuCd=R8&gubun=2&fileName=rs20251224-26.pdf"
  ],
  "v": 2,
- "model": "claude-opus-5",
+ "model": "claude-haiku-5-5",
  "ticker": "004990",
  "name": "롯데지주",
  "name_en": "Lotte Corporation",
@@ -233,11 +213,11 @@
   "지주"
  ],
  "market": "코스피",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 05:51",
- "dataDate": "20260904",
+ "reportDate": "2026-11-14",
+ "reportTs": "2026-11-14 07:36",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-09-04",
+  "asOf": "2026-11-13",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -307,12 +287,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 4043186553890,
-    "op": 142199157410,
-    "np_owner": -95157484465
-   },
-   {
     "q": "2025Q3",
     "rev": 4154307233412,
     "op": 185067817225,
@@ -335,32 +309,39 @@
     "rev": 4093073648313,
     "op": 128978572270,
     "np_owner": 35572455625
+   },
+   {
+    "q": "2026Q3",
+    "rev": 4124010560978,
+    "op": 157634655702,
+    "np_owner": -42118959789
    }
   ],
   "valuation": {
-   "price": 24750,
-   "mcap": 2.4667,
+   "price": 22450,
+   "mcap": 2.2375,
    "shares": 99663776,
-   "total_shares": 105714840,
+   "total_shares": 100469379,
    "wavg_shares": 71727167,
    "per": null,
-   "eps": -5706,
-   "pbr": 0.2776,
-   "bps": 89165,
-   "roe_ttm": -6.5,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": -400538442245,
+   "eps": -5291,
+   "pbr": 0.2694,
+   "bps": 83338,
+   "roe_ttm": -6.1,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": -363665765693,
    "ccy": "KRW",
    "bps_src": "자체",
    "eps_src": "공시",
-   "pbr_krx": 0.31,
+   "pbr_krx": 0.28,
    "bps_krx": 79142.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 1250.0,
-   "div": 5.05,
+   "div": 5.57,
    "hidden": {
     "per": "loss"
    }
   }
- }
+ },
+ "textRules": 2
 }

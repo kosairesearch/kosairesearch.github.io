@@ -1,189 +1,169 @@
 {
  "title": {
-  "ko": "적자 심화 속 유리 신사업 분기점",
-  "en": "Deepening Losses, Glass Pivot at a Crossroads"
+  "ko": "TGV 유리기판 전환 속 적자 지속",
+  "en": "Glass-substrate pivot as losses persist"
  },
  "lead": {
-  "ko": "모바일 커버글라스 축소로 본업 매출이 4년 만에 절반 수준으로 줄어든 가운데, 회사의 무게중심은 반도체 TGV 유리기판과 HDD 유리플래터로 옮겨가고 있으나 아직 손익으로는 확인되지 않았다.",
-  "en": "As the legacy mobile cover-glass business has roughly halved over four years, the company's center of gravity is shifting to TGV glass substrates and HDD glass platters, but that shift has yet to show up in reported profits."
+  "ko": "커버글라스 중심 사업의 매출이 3개 분기 연속 줄어드는 가운데 TGV 유리기판이 새 성장 축으로 제시되지만, 2025년 3분기부터 2026년 3분기까지 5개 분기 연속 적자가 이어지고 있다.",
+  "en": "Revenue has declined for three straight quarters as the core cover-glass business weakens, while TGV glass substrates are presented as a new growth axis. JNTC has posted losses for five consecutive quarters from the third quarter of 2025 through the third quarter of 2026."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출은 1,857억원으로 2023년 3,234억원에서 크게 줄었고, 영업손실 780억원(영업이익률 -42.0%)과 지배주주 순손실 916억원으로 적자 폭이 확대됐다.",
-   "en": "2025 consolidated revenue fell to KRW 185.7bn from KRW 323.4bn in 2023, with an operating loss of KRW 78.0bn (operating margin -42.0%) and a net loss attributable to owners of KRW 91.6bn."
+   "ko": "2025년 매출은 1,857억원으로 2024년에 이어 2년 연속 감소했고, 영업손실은 780억원으로 적자가 확대됐다.",
+   "en": "Revenue fell to KRW 185.7 billion in 2025, the second straight annual decline, and operating loss widened to KRW 78 billion."
   },
   {
-   "ko": "2026년 1분기 영업손실은 114억원으로 직전 분기보다 축소됐으나, 2026년 2분기에는 매출 388억원에 영업손실 250억원으로 다시 확대됐다.",
-   "en": "The Q1 2026 operating loss narrowed to KRW 11.4bn, but Q2 2026 saw revenue of KRW 38.8bn and an operating loss of KRW 25.0bn, widening again."
+   "ko": "2026년 3분기 매출은 355억원으로 전 분기 대비 8.5% 감소했고, 지배주주 순손실은 451억원으로 확대됐다.",
+   "en": "Third-quarter 2026 revenue was KRW 35.5 billion, down 8.5% from the prior quarter, and the net loss attributable to controlling shareholders widened to KRW 45.1 billion."
   },
   {
-   "ko": "2026년 6월 유럽·미국 럭셔리 브랜드를 포함한 3개 고객사로부터 총 2,500억원 규모 차량용 3D 커버글라스 공급 계약을 확보했다고 회사가 밝혔다.",
-   "en": "In June 2026 the company said it secured automotive 3D cover-glass supply contracts totaling KRW 250bn from three customers, including European and U.S. luxury brands."
+   "ko": "2026년 7월 일본 토판(TOPPAN)과 TGV 유리기판 상용화 협약을 맺었고, 회사는 2027년 양산을 목표로 제시했다.",
+   "en": "JNTC signed a TGV glass-substrate commercialization agreement with TOPPAN in July 2026 and has set a 2027 mass-production target."
   },
   {
-   "ko": "TGV 유리기판은 2026년 6월 0.3~2.0mm 두께 라인업 개발 완료를 발표하고 7월 일본 TOPPAN과 상용화 협약을 체결했으며, 회사는 2027년 양산을 목표로 제시했다.",
-   "en": "For TGV glass substrates, the company announced a 0.3-2.0mm thickness lineup in June 2026 and signed a commercialization agreement with Japan's TOPPAN in July, targeting mass production in 2027."
+   "ko": "2025년 말 부채비율은 121.3%로 2022년 56.1%에서 올랐고, 자본총계는 2,477억원이다.",
+   "en": "The debt ratio (total liabilities to total equity) reached 121.3% at the end of 2025, up from 56.1% in 2022, and total equity stood at KRW 247.7 billion."
   },
   {
-   "ko": "2025년 말 부채비율은 121.3%로 2022년 56.1%에서 크게 높아졌고, 2025년 영업활동현금흐름은 마이너스 23억원으로 전년의 플러스 387억원에서 돌아섰다.",
-   "en": "The debt-to-equity ratio rose to 121.3% at end-2025 from 56.1% in 2022, and 2025 operating cash flow turned to negative KRW 2.3bn from positive KRW 38.7bn a year earlier."
+   "ko": "2026년 상반기 매출은 전년 동기 대비 24.3% 감소했으며, 중화권 고객사의 칩 수급 이슈가 강화유리 매출 하락 요인으로 꼽혔다.",
+   "en": "First-half 2026 revenue fell 24.3% year on year, with chip supply issues at a Chinese customer cited as a cause of the cover-glass decline."
   }
  ],
  "business": {
-  "ko": "제이앤티씨는 1996년 설립돼 2020년 3월 코스닥에 상장된 첨단소재·고정밀 부품 업체로, 사업은 크게 강화유리(커버글라스)와 커넥터 두 부문으로 나뉜다. 강화유리 부문은 스마트폰 전면 커버글라스와 카메라 윈도우, 스마트워치 커버, 자동차용 3D 커버글라스를 만들고, 커넥터 부문은 C타입 인터페이스와 SIM 등 모바일 접속 부품을 담당한다. 회사는 2014년 3D 커버글라스 양산, 2019년 키리스(Keyless) 커버글라스, 2020년 자동차용 일체형 3D 커버글라스를 상용화했다고 밝히고 있으며, 생산은 100% 자회사인 베트남 법인(JNTC VINA)이 중심이다. 고객 구조는 국내 디스플레이·모듈 업체와 중화권 스마트폰 진영이 병존하는 형태였으나, 중화권 고객사의 칩 수급 문제로 모바일 물량이 줄어든 것이 최근 매출 축소의 핵심 원인으로 지목된다. 이 공백을 메우기 위해 회사는 차량용 커버글라스 비중을 키우고 있으며, 2026년 6월에는 유럽·미국 럭셔리 완성차 브랜드를 포함한 3개 고객사로부터 총 2,500억원 규모의 차량용 3D 커버글라스 공급 계약을 확보했다고 밝혔다. 회사는 이번 수주로 총 7개 차량 모델 양산 체제를 갖추게 된다고 설명했고, 대표이사는 북미 전기차 브랜드와의 신규 프로젝트 수주도 앞두고 있다고 언급했다. 신사업 축은 두 갈래다. TGV 유리기판은 유리 가공부터 관통홀 형성·도금까지 전 공정을 내부에서 수행하는 수직계열화 체계를 구축했고, 계열사 진우엔지니어링의 설비 제작 기술과 커넥터 사업의 도금 기술, 강화유리 사업의 레이저·식각·절단 기술을 적용한다고 회사는 설명한다. HDD 유리플래터는 베트남 현지 법인 1차 양산라인 설치를 마쳤으며, 회사는 베트남 비엣찌 공장 설비투자 규모를 기존 200억원에서 330억원으로 확대한다고 공시했다고 밝혔다.",
-  "en": "JNTC, founded in 1996 and listed on KOSDAQ in March 2020, is an advanced-materials and precision-components maker whose business splits into tempered glass (cover glass) and connectors. The tempered-glass unit produces smartphone front cover glass, camera windows, smartwatch covers and automotive 3D cover glass, while the connector unit supplies C-type interfaces, SIM parts and other mobile interconnects. The company says it began mass-producing 3D cover glass in 2014, commercialized keyless cover glass in 2019 and integrated automotive 3D cover glass in 2020, with manufacturing centered on its wholly owned Vietnamese unit, JNTC VINA. Its customer base historically spanned Korean display and module makers alongside Chinese smartphone brands, and chip-procurement problems at a Greater China customer are cited as the core driver of the recent revenue contraction. To fill that gap the company has been scaling automotive cover glass; in June 2026 it said it had secured automotive 3D cover-glass supply contracts worth a combined KRW 250bn from three customers, including European and U.S. luxury carmakers. Management said the awards bring it to a mass-production setup covering seven vehicle models, and the CEO noted a new project award from a North American electric-vehicle brand was pending. The new-business axis has two prongs. For TGV glass substrates, the company says it has built a vertically integrated chain covering glass processing, through-hole formation and plating in-house, drawing on affiliate Jinwoo Engineering's equipment-building know-how, plating technology from the connector business, and laser, etching and cutting techniques from tempered glass. For HDD glass platters, it said it completed installation of a first mass-production line at its Vietnamese unit and disclosed an increase in capital spending at the Viet Tri plant from KRW 20bn to KRW 33bn."
+  "ko": "제이앤티씨는 1996년 설립된 강화유리(커버글라스)와 커넥터 제조 기업이다. 모바일 커버글라스가 핵심이며, 커버글라스는 모바일·자동차·웨어러블용으로 나뉜다. 자동차용 일체형 강화글라스는 2020년 개발해 상용화했다. 커넥터는 국내 세트사 향 공급이 중심이며, 방수형 C-Type 커넥터가 매출을 받치는 것으로 전해진다. 고객은 중화권 스마트폰 제조사와 국내 세트사·패널사로 구성되며, 중화권 고객사 의존도가 실적 변동의 한 요인으로 지목돼 왔다. 2026년 상반기에는 강화유리 부문이 중화권 고객사의 칩 수급 이슈로 매출이 하락했다는 코멘트가 나왔다. 신사업인 TGV(유리관통전극) 유리기판은 2024년 반도체 유리기판 사업에 진출한 뒤 약 2년 만에 TGV 유리기판 생산 공정을 구축했다. 레이저 가공, 케미컬 에칭, 도금, CMP 연마까지 전공정을 내재화했으며, 도금·식각 자회사 코메트를 흡수합병했다. 생산 거점은 경기 화성 공장과 베트남 공장이며, 베트남에서는 생산라인 확대가 진행 중이다. HDD용 유리 플래터도 신사업으로 거론된다. 글로벌 고객사 16곳의 초기 품질 테스트를 통과했으며, 7개 고객사에는 유상 샘플 공급을 진행 중이라는 내용이 2026년 5월 스몰인사이트리서치 보고서에 담겼다.",
+  "en": "JNTC was founded in 1996 and makes cover glass (tempered glass) and connectors. Mobile cover glass is the core business, covering mobile, automotive and wearable uses. Its integrated automotive cover glass was developed and commercialized in 2020. Connector sales are centered on supply to domestic set makers, with waterproof C-Type connectors supporting revenue. Customers include Chinese smartphone makers and domestic set and panel makers, and reliance on Chinese customers has been cited as one driver of earnings swings. In the first half of 2026, cover-glass revenue declined on chip supply issues at a Chinese customer. The new TGV (through-glass via) glass-substrate business entered semiconductor glass substrates in 2024 and built its TGV production process within about two years. The company says it internalizes the full process from laser processing and chemical etching to plating and CMP polishing, and it absorbed its plating and etching subsidiary COMET by merger. Production bases are a Hwaseong plant in Gyeonggi and plants in Vietnam, where production lines are being expanded. HDD glass platters are also cited as a new business. A May 2026 report by Small Insight Research said JNTC passed initial quality tests at 16 global customers and is supplying paid samples to seven of them."
  },
  "earnings": {
-  "ko": "실적 흐름은 한 차례 회복 뒤 재차 악화된 모습이다. 2022년 매출 1,613억원에 영업손실 443억원(영업이익률 -27.5%)이었던 실적은 2023년 매출 3,234억원, 영업이익 285억원(영업이익률 8.8%), 지배주주 순이익 177억원으로 흑자 전환했다. 그러나 2024년에는 매출이 2,732억원으로 줄고 영업손실 461억원(영업이익률 -16.9%), 지배주주 순손실 334억원을 기록했으며, 2025년에는 매출 1,857억원, 영업손실 780억원(영업이익률 -42.0%), 지배주주 순손실 916억원으로 손실 폭이 한층 커졌다. 회사는 신규사업 투자에 따른 비용과 시제품·샘플 생산비 증가, 중화권 모바일 제품군 매출 감소에 따른 재고평가손실 등으로 실적이 급격히 변동했다고 공시했다. 분기 흐름을 보면 2025년 2분기 매출 561억원·영업손실 238억원, 3분기 391억원·179억원, 4분기 424억원·221억원, 2026년 1분기 400억원·114억원으로 1분기에 손실 폭이 좁혀졌지만, 2026년 2분기에는 매출 388억원에 영업손실 250억원, 지배주주 순손실 247억원으로 다섯 분기 가운데 가장 큰 영업손실을 냈다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 합산으로는 매출 1,603억원, 영업손실 764억원, 지배주주 순손실 670억원이다. 재무 구조도 함께 무거워졌는데, 부채총계 3,005억원과 자본총계 2,477억원으로 2025년 말 부채비율은 121.3%였고 이는 2022년 56.1%, 2023년 84.3%, 2024년 89.7%에서 계단식으로 올라온 수치다. 현금흐름은 2024년 영업활동현금흐름 플러스 387억원에서 2025년 마이너스 23억원으로 돌아섰다. 회사는 2024년과 2025년 영업손실로 재무현황이 악화되고 외부 자금조달 결과 매출액의 10% 수준을 상회하는 이자비용이 발생했다고 증권신고서에서 밝혔다.",
-  "en": "The earnings path shows one recovery followed by renewed deterioration. From 2022 revenue of KRW 161.3bn and an operating loss of KRW 44.3bn (margin -27.5%), the company swung to a 2023 profit with revenue of KRW 323.4bn, operating income of KRW 28.5bn (margin 8.8%) and net income attributable to owners of KRW 17.7bn. In 2024, however, revenue slipped to KRW 273.2bn with an operating loss of KRW 46.1bn (margin -16.9%) and a net loss of KRW 33.4bn; in 2025 revenue fell to KRW 185.7bn with an operating loss of KRW 78.0bn (margin -42.0%) and a net loss of KRW 91.6bn. The company disclosed that results swung sharply on new-business investment costs, higher prototype and sample production expenses, and inventory valuation losses tied to falling Greater China mobile product sales. Quarterly, revenue and operating loss ran KRW 56.1bn / KRW 23.8bn in Q2 2025, KRW 39.1bn / KRW 17.9bn in Q3, KRW 42.4bn / KRW 22.1bn in Q4 and KRW 40.0bn / KRW 11.4bn in Q1 2026, before Q2 2026 posted revenue of KRW 38.8bn with an operating loss of KRW 25.0bn and a net loss to owners of KRW 24.7bn, the largest operating loss of the five quarters. Summed over the four quarters from Q3 2025 to Q2 2026, revenue was KRW 160.3bn with an operating loss of KRW 76.4bn and a net loss to owners of KRW 67.0bn. The balance sheet has grown heavier: total liabilities of KRW 300.5bn against equity of KRW 247.7bn put the end-2025 debt-to-equity ratio at 121.3%, up in steps from 56.1% in 2022, 84.3% in 2023 and 89.7% in 2024. Operating cash flow turned from positive KRW 38.7bn in 2024 to negative KRW 2.3bn in 2025. In a securities filing the company stated that operating losses in 2024 and 2025 worsened its financial position and that external funding produced interest expense exceeding roughly 10% of revenue."
+  "ko": "공시 실적 기준 연간 매출은 2022년 1,613억원에서 2023년 3,234억원으로 100.5% 늘어 기간 중 가장 큰 해가 됐다. 이후 2024년 2,732억원(전년 대비 15.5% 감소), 2025년 1,857억원(전년 대비 32.1% 감소)으로 2년 연속 감소했다. 2024년 매출 감소에 대해서는 중국 내수경기 침체와 프리미엄 시장 경쟁심화, 반도체 공급난 이슈 등으로 강화유리 매출이 감소했다는 설명이 나왔다. 2025년에는 중화권 고객사 및 차량용 수요 둔화가 실적 부진의 배경으로 작용했다는 분석이 있었다. 영업이익률은 2022년 -27.5%, 2023년 8.8%로 개선됐다가 2024년 -16.9%, 2025년 -42.0%로 떨어졌다. 2023년 영업이익 285억원은 전년 대비 흑자 전환이었지만, 2024년 영업손실 461억원(전년 대비 적자 전환)과 2025년 영업손실 780억원(전년 대비 적자 지속, 손실 확대)으로 2년 연속 적자가 이어졌다. 지배주주 순이익은 2023년 177억원에서 2024년 순손실 334억원, 2025년 순손실 916억원으로 바뀌었다. 유진투자증권은 2025년 손실 확대에 대해 신사업을 위한 투자가 증가했기 때문이라고 설명했다. 분기로 보면 2025년 4분기 매출 424억원이 정점이었고, 이후 2026년 1분기 400억원, 2분기 388억원, 3분기 355억원으로 3개 분기 연속 감소했다. 영업손실은 2025년 3분기 179억원, 4분기 221억원에 이어 2026년 1분기 114억원, 2분기 250억원, 3분기 194억원으로 5개 분기 연속 적자다. 2026년 3분기 지배주주 순손실 451억원은 분석 대상 기간 중 가장 큰 분기 손실이다. 최근 4개 분기(2025년 4분기~2026년 3분기) 지배주주 순손실 합계는 964억원이다. 2026년 상반기 매출은 전년 동기 대비 감소했지만 영업손실은 소폭 줄었다는 증권 정보 사이트의 코멘트도 있다.",
+  "en": "On a disclosed annual basis, revenue rose from KRW 161.3 billion in 2022 to KRW 323.4 billion in 2023, a 100.5% increase and the largest year in the 2022–2025 period. Revenue then fell 15.5% to KRW 273.2 billion in 2024 and 32.1% to KRW 185.7 billion in 2025, two consecutive annual declines. For 2024, the decline was attributed to weaker cover-glass sales amid China's domestic slowdown, premium-segment competition and chip shortages. In 2025, weaker demand from Chinese customers and automotive applications was cited for the second-quarter shortfall. Operating margin moved from -27.5% in 2022 to 8.8% in 2023, then to -16.9% in 2024 and -42.0% in 2025. The 2023 operating profit of KRW 28.5 billion marked a return to profit, but operating losses of KRW 46.1 billion in 2024 and KRW 78 billion in 2025 followed, two consecutive loss years. Net income attributable to controlling shareholders moved from KRW 17.7 billion in 2023 to net losses of KRW 33.4 billion in 2024 and KRW 91.6 billion in 2025. Yuanta-type analysis attributed the wider 2025 loss to higher investment in new businesses. Quarterly revenue peaked at KRW 42.4 billion in the fourth quarter of 2025 and then declined for three straight quarters to KRW 35.5 billion in the third quarter of 2026. Operating losses ran for five consecutive quarters from the third quarter of 2025, reaching KRW 19.4 billion in the third quarter of 2026 after KRW 25 billion in the second quarter. Net loss attributable to controlling shareholders was KRW 45.1 billion in the third quarter of 2026, the largest among the five quarters shown. The four quarters from the fourth quarter of 2025 through the third quarter of 2026 total a controlling-shareholder net loss of KRW 96.4 billion. A securities information site noted that first-half 2026 revenue fell year on year while operating losses narrowed slightly."
  },
  "industry": {
-  "ko": "회사가 놓인 전방시장은 세 개의 서로 다른 사이클로 갈라져 있다. 첫째, 모바일 커버글라스는 중화권 고객사 물량 감소로 구조적 역풍을 맞은 영역이고, 회복은 특정 고객사의 부품 수급 정상화 여부에 크게 좌우된다. 둘째, 차량용 커버글라스는 자율주행과 전기차 확산에 따른 차량용 디스플레이의 대형화·고급화 수요가 배경이며, 프로젝트 단위로 수년에 걸쳐 매출이 인식되는 구조라 단기 변동성은 상대적으로 낮다. 셋째, 신사업인 유리 소재 영역은 인공지능 투자 사이클과 직접 연결된다. 유리 플래터는 알루미늄 대비 열적 안정성이 뛰어나고 더 얇은 두께 구현이 가능해 동일 공간에 더 많은 플래터를 탑재할 수 있으며, 높은 평탄도로 단위 면적당 저장 밀도도 높일 수 있다. 경쟁 구도 측면에서 글로벌 HDD 유리플래터 시장은 일본 HOYA가 사실상 독점하고 있으며, 데이터센터 투자 확대로 공급 부족 우려가 커지면서 HDD 업체들의 공급망 다변화 수요가 확대되고 있다는 분석이 나왔다. TGV 유리기판은 기존 유기기판을 유리로 대체하는 차세대 패키징 기술로, 고속 신호 전달과 발열 제어, 전력 효율이 중요해지면서 낮은 전기 손실과 열 안정성이 부각되는 분야다. 다만 유리기판은 아직 업계 전반이 상용화 이전 단계로, 국내외 소재·기판·장비 업체가 동시에 진입을 시도하고 있어 표준과 채택 시점이 확정되지 않았다는 점이 공통 리스크다.",
-  "en": "The company sits across three distinct end-market cycles. First, mobile cover glass faces structural headwinds from shrinking Greater China volumes, and recovery depends heavily on whether a specific customer's component procurement normalizes. Second, automotive cover glass is driven by larger and more premium in-vehicle displays as autonomous driving and electric vehicles spread, with revenue recognized over multi-year project cycles and therefore relatively less volatile quarter to quarter. Third, the new glass-materials businesses are tied directly to the artificial-intelligence investment cycle. Glass platters offer better thermal stability than aluminum and can be made thinner, allowing more platters in the same space, while higher flatness raises areal storage density. On competition, one analysis noted that Japan's HOYA effectively monopolizes the global HDD glass-platter market and that supply-shortage concerns amid expanding data-center investment are increasing HDD makers' appetite for supply-chain diversification. TGV glass substrates are a next-generation packaging technology replacing organic substrates with glass, gaining attention for low electrical loss and thermal stability as signal speed, heat control and power efficiency grow more critical. The shared risk is that glass substrates remain pre-commercial industry-wide, with materials, substrate and equipment vendors in Korea and abroad all attempting entry at once, leaving standards and adoption timing unsettled."
+  "ko": "TGV 유리기판은 AI 및 고성능 연산 칩(HPC)이 확산되면서 기존 패키지기판의 한계를 보완할 차세대 패키징 소재로 주목받고 있다. 증권사 분석은 기존 플라스틱 기반 기판과 비교해 발열과 구조적 뒤틀림 문제를 줄일 수 있다는 점을 강점으로 들었다. 회사 측은 자사 제품이 기존 플라스틱 기반 기판 대비 두께를 25% 줄이고 소비전력을 30% 이상 절감한다고 밝혔으며, 이는 회사 발표 수치다. 유리 인터포저는 일부 의료기기 등 틈새시장 제품에 사용되고 있다. 패키징 시장 측면에서 회사는 패키징 공정을 직접 하지 않는다고 밝히며 패키징 업체와는 경쟁 상대가 아니라고 설명했다. 즉 고객사는 유리기판을 받아 회로 패턴을 형성하거나 패키징하는 업체들이다. 시장 수급 측면에서는 다수 기업이 앞 공정에서 TGV 유리 기판을 아직 양산 시장에 내놓지 못하고 있다는 것이 회사의 진단이다. 본업인 커버글라스 시장은 중화권 스마트폰과 차량용 수요에 따라 변동성이 커, 이 부문의 업황 회복 여부가 신사업의 자금 조달과 실적 기반에 영향을 준다. 공급망 측면에서는 도금·식각 기술을 자회사 합병으로 내재화한 점이 회사가 내세우는 차별점이다. 경쟁사 대비 포지션은 TGV 기판의 양산 실적이 아직 공시로 확인되지 않은 단계라는 점에서 초기 단계로 보는 것이 사실에 가깝다.",
+  "en": "TGV glass substrates are drawing attention as a next-generation packaging material that could complement conventional package substrates as AI and high-performance computing chips spread. Analysts have cited lower heat and structural warpage compared with plastic-based substrates as an advantage. The company says its product reduces thickness by 25% and cuts power consumption by more than 30% versus plastic-based substrates; these are company figures. Glass interposers are used in niche products such as some medical devices. JNTC states that it does not perform packaging itself and therefore does not compete with packaging companies, which are its customers. The company's view is that many players have not yet brought TGV glass into mass production at the front-end stage. The core cover-glass market is volatile, driven by Chinese smartphone and automotive demand, and its recovery affects the funding base and earnings support for the new business. On the supply side, the company highlights internalizing plating and etching technology through subsidiary consolidation. Relative to peers, the TGV business remains at an early stage because mass-production results have not yet appeared in disclosures."
  },
  "outlook": {
-  "ko": "회사가 공개한 신사업 일정은 2026년을 매출 가시화의 시작점으로, 2027년을 유리기판 양산 시점으로 잡고 있다. 회사는 2024년 반도체 유리기판 사업 진출 이후 약 2년 만에 전 공정 수직계열화를 구축했다고 밝히며, 대표이사는 글로벌 톱티어 반도체 기업과 일본·유럽·중화권 패키징 업체들과 2027년 양산을 목표로 프로젝트와 평가를 진행 중이고 베트남이 아닌 국내에 전략적 양산라인 증설을 검토하고 있다고 말했다. 2.0mm 제품은 1.0mm 원장 2장을 접합하는 방식이 아니라 단일 원장으로 구현했으며 양산수율 약 94%를 확보했다고 회사는 설명했다. 일본 TOPPAN과는 2026년 7월 상용화 협약을 체결해 기술 검증과 양산 적용을 함께 추진한다고 발표했다. HDD 쪽에서는 글로벌 HDD 업체와 유리플래터 증량평가를 진행 중이며 증량평가는 양산 직전 단계라고 회사가 설명했고, 해당 업체의 품질 적합성 평가도 통과했다. 외부 추정치로는 스몰인사이트리서치가 2026년 5월 보고서에서 2026년 매출 4,011억원과 영업이익 689억원 흑자 전환을 전망하고 HDD 사업만으로 2,000억~3,000억원 수준 매출이 가능하다고 추정했다. 다만 회사가 이미 공시한 2026년 상반기 실적은 1분기 400억원, 2분기 388억원으로 합산 788억원이어서, 이러한 연간 전망치와의 격차는 하반기 신사업 매출 인식 속도에 전적으로 달려 있다. 같은 보고서는 실제 양산 지연 가능성과 공격적인 설비투자에 따른 재무 부담 우려를 이유로 투자의견을 제시하지 않았다고 밝혔다.",
-  "en": "The company's published roadmap frames 2026 as the start of revenue visibility and 2027 as the mass-production point for glass substrates. It says it built full-process vertical integration within roughly two years of entering the semiconductor glass-substrate business in 2024, and the CEO said projects and evaluations are underway with a global top-tier chipmaker and packaging firms in Japan, Europe and Greater China targeting 2027 mass production, with a strategic new production line under review in Korea rather than Vietnam. The company explained that its 2.0mm product is built from a single glass panel rather than bonding two 1.0mm panels, and that it has secured a mass-production yield of about 94%. With Japan's TOPPAN it announced a July 2026 commercialization agreement covering joint technology validation and mass-production application. On HDD, the company said it is in volume-ramp evaluation with a global HDD maker, described that stage as immediately preceding mass production, and noted it had passed the customer's quality conformance assessment. Among outside estimates, Small Insight Research in a May 2026 report projected 2026 revenue of KRW 401.1bn and a swing to operating profit of KRW 68.9bn, estimating the HDD business alone could contribute KRW 200-300bn. That said, already-disclosed first-half 2026 results were KRW 40.0bn in Q1 and KRW 38.8bn in Q2, or KRW 78.8bn combined, so closing the gap to such full-year estimates depends entirely on how fast new-business revenue is recognized in the second half. The same report stated that it withheld an investment opinion, citing the possibility of mass-production delays and financial strain from aggressive capital spending."
+  "ko": "회사의 TGV 유리기판 계획은 단계별로 제시돼 있다. 2026년 7월 7일 일본 토판(TOPPAN)과 TGV 유리기판 상용화 협약을 맺었고, 양사는 제품 성능과 양산 적용 가능성을 공동 검토하기로 했다. 회사는 2.0mm 두께 제품을 통유리 원장으로 만들었으며, 양산 수율은 94% 수준까지 확보했다고 설명했다. 조남혁 대표는 글로벌 톱티어 반도체 기업과 중화권, 일본, 유럽, 국내 소재 반도체 패키징 업체들과 2027년 양산을 목표로 프로젝트와 제품 평가를 진행하고 있다고 말했다. 같은 자리에서 국내 양산라인 증설도 추진할 계획이라고 밝혔다. 증설 시점과 규모는 아직 공개되지 않았다. 스몰인사이트리서치는 2026년 5월 보고서에서 2026년 매출액이 4,011억원으로 전년 대비 두 배 이상 증가하고 영업이익은 689억원 흑자전환할 것으로 전망했다. 이 전망은 제3자 추정치이며, 2026년 1분기부터 3분기까지 공시된 분기 매출 흐름과 격차가 크다. 회사는 2025년 보도에서 2028년 매출 목표를 1조원으로 제시한 바 있다. 다음에 확인할 지점은 2027년 양산 개시 여부, 국내 증설의 시점과 투자 규모, 그리고 TGV 매출이 공시 실적에 반영되는 시기다.",
+  "en": "JNTC's TGV glass-substrate plan is presented in stages. In July 2026 it signed a commercialization agreement with TOPPAN of Japan, and the two companies will jointly review product performance and mass-production applicability. The company says its 2.0mm-thick product is made from a single glass sheet and that mass-production yield has reached about 94%. CEO Cho Nam-hyuk said the company is running projects and product evaluations with leading global semiconductor firms and packaging companies in China, Japan, Europe and Korea, targeting mass production in 2027. He also said the company plans to pursue a strategic domestic mass-production line expansion. Timing and scale of that expansion have not been disclosed. Small Insight Research projected in a May 2026 report that 2026 revenue would reach KRW 401.1 billion, more than double the prior year, with operating profit of KRW 68.9 billion turning positive. That is a third-party estimate and differs widely from the quarterly revenue trend disclosed for the first three quarters of 2026. The company also presented a 2028 revenue target of KRW 1 trillion in 2025 reporting. Items to confirm next are whether mass production begins in 2027, the timing and size of domestic expansion, and when TGV revenue becomes visible in reported results."
  },
  "valuation_comment": {
-  "ko": "최근 네 개 분기 합산 기준 지배주주 순손실이 이어지고 있어 이익 기준 배수는 산출되지 않으며, 화면의 주가수익비율 항목이 비어 있는 것도 그 때문이다. 결과적으로 시장 가격은 현재 손익이 아니라 유리기판·HDD 플래터의 상용화 가능성을 반영하는 구조이고, 주가는 회사의 순자산 대비 프리미엄이 붙은 구간에서 형성돼 있다. 최근 결산에서 현금배당이 지급되지 않았으므로 배당수익률로 비교할 근거도 없다. 참고로 유진투자증권은 2026년 4월 리포트에서 투자의견 매수와 목표주가 2만 6,000원을 제시하며 당시 주가가 2026년 예상 실적 기준 국내 동종업계 평균 배수를 밑도는 수준에서 거래된다고 평가했고, 스몰인사이트리서치는 2026년 5월 보고서에서 양산 지연과 설비투자 부담을 이유로 투자의견을 제시하지 않았다고 밝혔다. 두 견해의 간격 자체가 이 종목의 밸류에이션이 실적 지표보다 신사업 진척 공시에 좌우된다는 점을 보여준다. 따라서 배수의 근거를 확인하려면 공급계약 체결과 매출 인식이 실제 분기 손익에 나타나는지를 순서대로 점검하는 방식이 실무적이다.",
-  "en": "Because losses attributable to owners have continued across the most recent four quarters, no earnings-based multiple can be calculated, which is why the price-earnings field on the summary card is blank. As a result, the market price reflects the possibility of commercializing glass substrates and HDD platters rather than current profits, and the shares trade at a premium to the company's net assets. No cash dividend was paid for the latest fiscal year, so there is no dividend yield to compare against peers. For reference, Eugene Investment & Securities in an April 2026 report presented a Buy rating and a target price of KRW 26,000, assessing that the shares were then trading below the domestic peer-group average multiple on 2026 estimates, while Small Insight Research in a May 2026 report stated it was withholding an investment opinion because of mass-production delay risk and capital-spending burden. The gap between those two positions itself illustrates that the valuation here hinges on new-business progress disclosures rather than on reported metrics. A practical approach is therefore to check, in sequence, whether supply contracts are signed and whether the resulting revenue shows up in quarterly results."
+  "ko": "밸류에이션은 이익 기반 지표로 읽기 어려운 구간에 있다. 최근 네 개 분기 기준 순손실이라 이익을 바탕으로 한 주가수익비율(PER)은 산출되지 않는다. 대신 자본을 기준으로 한 주가순자산비율(PBR)은 업종 평균을 크게 웃도는 구간에 있어, 주가가 장부상 순자산 대비 큰 프리미엄으로 형성돼 있다. 이 프리미엄은 TGV 유리기판의 상용화와 이익 전환에 대한 기대가 반영된 구조로 볼 수 있으나, 이를 뒷받침할 이익 기반은 아직 공시로 확인되지 않는 단계다. 배당수익률은 업종 평균을 밑도는 수준이다. 과거 흑자 연도인 2023년의 이익을 기준으로 한 비교는 현재 손실 구조와 맞지 않아 참고 수준에 머문다. 2025년 말 부채비율이 121.3%로 2022년 56.1%에서 올라간 점도 자본 구조 측면의 비교 항목이다. 이익 기반 비교가 가능해지려면 2026년 사업보고서의 연간 영업이익과 영업활동 현금흐름이 먼저 확인돼야 한다.",
+  "en": "Valuation is hard to read on earnings-based measures. Because the company has posted net losses over the most recent four quarters, a price-to-earnings ratio cannot be calculated. On a book-value basis, the price-to-book ratio sits well above the industry average, meaning the share price carries a large premium over net asset value. That premium can be read as reflecting expectations for TGV commercialization and a return to profit, but earnings that would support it are not yet visible in reported results. The dividend yield is below the industry average. Comparisons using 2023, the last profitable year, are of limited use given the current loss structure. The debt ratio rose to 121.3% at the end of 2025 from 56.1% in 2022, another point of comparison on capital structure. An earnings-based comparison will require the full-year operating profit and operating cash flow in the 2026 annual report."
  },
  "bull": [
   {
    "title": {
-    "ko": "전장 커버글라스 수주 잔량의 실체",
-    "en": "Tangible automotive cover-glass backlog"
+    "ko": "TGV 유리기판 상용화 진전",
+    "en": "Progress toward TGV commercialization"
    },
    "body": {
-    "ko": "회사는 2026년 6월 유럽·미국 럭셔리 완성차 브랜드를 포함한 3개 고객사로부터 총 2,500억원 규모의 차량용 3D 커버글라스 공급 계약을 확보했다고 밝혔다. 5만회 이상 내구성을 검증한 지문방지 코팅과 눈부심 방지 스프레이 코팅, 곡면 인쇄, 3D 열성형 기술을 근거로 수주했다고 설명했으며, 2021년 차량용 3D 커버글라스 양산 이후 이번 수주로 총 7개 차량 모델 양산 체제를 갖춘다고 밝혔다. 모바일 대비 프로젝트 수명이 길고 모델이 누적되는 구조여서 매출 기반이 상대적으로 안정적이다. 이는 신사업이 지연되더라도 본업 매출의 하방을 지지할 수 있는 요소다.",
-    "en": "In June 2026 the company said it had secured automotive 3D cover-glass supply contracts worth a combined KRW 250bn from three customers, including European and U.S. luxury car brands. It attributed the wins to anti-fingerprint coating validated beyond 50,000 cycles, anti-glare spray coating, curved printing and 3D thermoforming, and said the awards bring it to a mass-production setup covering seven vehicle models since it began automotive 3D cover-glass production in 2021. Project lifecycles are longer than in mobile and models accumulate, giving a relatively steadier revenue base. That can support the downside of legacy revenue even if the new businesses slip."
+    "ko": "2026년 7월 7일 일본 토판(TOPPAN)과 TGV 유리기판 상용화 협약을 맺었다. 회사는 2.0mm 통유리 원장 제품의 양산 수율을 94% 수준으로 설명했다. 글로벌 고객사 16곳과 평가를 진행 중이라는 점이 회사 발표와 보고서에서 확인된다.",
+    "en": "JNTC signed a TGV glass-substrate commercialization agreement with TOPPAN in July 2026. The company puts mass-production yield for its 2.0mm single-sheet product at about 94%. Evaluations are under way with customers across several regions, according to company statements and a third-party report."
    }
   },
   {
    "title": {
-    "ko": "유리기판 기술 진척의 외부 검증",
-    "en": "External validation of glass-substrate progress"
+    "ko": "생산 기반과 공정 내재화",
+    "en": "Production base and in-house process"
    },
    "body": {
-    "ko": "회사는 2026년 6월 유리두께 0.3mm에서 2.0mm까지 멀티 라인업을 확보했으며 일부 대만·한국 기판 제조사의 검증이 완료되고 일본 소재 제조사와 검증이 진행 중이라고 밝혔다. 이어 7월에는 일본 TOPPAN 홀딩스와 차세대 반도체 패키징용 유리기판 상용화 협약을 체결해 기술 검증과 양산 준비를 공동 수행하기로 했으며, 2027년 양산을 목표로 한다고 밝혔다. 자체 발표에 그치지 않고 외부 파트너와의 협약 형태로 진척이 공개된 점이 이전 단계와 다르다. 다만 협약은 계약 규모와 일정이 공개되지 않은 형태라는 점은 함께 고려해야 한다.",
-    "en": "In June 2026 the company said it had secured a multi-thickness lineup from 0.3mm to 2.0mm, with validation completed at some Taiwanese and Korean substrate makers and validation ongoing at a Japanese manufacturer. In July it signed an agreement with Japan's TOPPAN Holdings to commercialize glass substrates for next-generation semiconductor packaging, jointly validating the technology and preparing for mass production, with a 2027 target. Unlike earlier stages, progress is now disclosed through an agreement with an external partner rather than self-announcement alone. Still, the agreement was disclosed without contract size or timeline details, which should be weighed alongside it."
+    "ko": "경기 화성 공장과 베트남 생산라인을 갖추고 있으며, 베트남 생산라인 확대가 진행 중이다. 레이저 가공부터 에칭, 도금, CMP 연마까지 자체 공정을 보유했다고 설명했다. 도금·식각 자회사를 합병해 기술을 내재화한 점이 공급 측면의 강점이다.",
+    "en": "The company operates a Hwaseong plant in Gyeonggi and production lines in Vietnam, where capacity is being expanded. It says it holds the process from laser processing through etching, plating and CMP polishing in-house. Merging its plating and etching subsidiary is presented as a supply-side strength."
    }
   },
   {
    "title": {
-    "ko": "HDD 플래터의 공급망 다변화 수요",
-    "en": "Supply-chain diversification demand in HDD platters"
+    "ko": "과거 흑자 구간의 수익성 기록",
+    "en": "Profitability record in past profitable years"
    },
    "body": {
-    "ko": "회사는 글로벌 HDD 업체와 유리플래터 증량평가를 진행 중이며 증량평가가 양산 직전 단계라고 설명했고, 해당 업체의 품질 적합성 평가도 통과했다. 현재 이 시장은 일본 HOYA가 사실상 독점 구조여서, 데이터센터 투자 확대에 따른 공급 부족 우려가 커질 경우 HDD 업체들의 공급처 다변화 수요가 커진다는 분석이 제시됐다. 진입장벽이 높은 만큼 일단 인증을 통과한 공급사의 위치는 방어적이다. 다만 첫 양산 계약의 규모와 단가가 공개되지 않아 수익성 기여는 아직 정량화되지 않았다.",
-    "en": "The company said it is in volume-ramp evaluation for glass platters with a global HDD maker, described that stage as immediately preceding mass production, and noted it passed the customer's quality conformance assessment. One analysis noted the market is effectively monopolized by Japan's HOYA, so growing supply-shortage concerns from expanding data-center investment increase HDD makers' need to diversify suppliers. Given high entry barriers, a supplier that has cleared qualification holds a defensible position. Yet the size and pricing of a first mass-production contract remain undisclosed, so the profit contribution is not yet quantifiable."
+    "ko": "2023년에는 영업이익률 8.8%로 흑자 전환한 실적이 있다. 2023년 매출은 3,234억원으로 기간 중 가장 컸다. 사업 지표가 회복될 경우 과거 흑자 구간이 기준점이 될 수 있다는 점이 공시 실적에서 확인된다.",
+    "en": "In 2023 the company returned to profit with an operating margin of 8.8%. Revenue that year of KRW 323.4 billion was the largest in the 2022–2025 period. The disclosed record shows that the 2023 profitable year can serve as a reference point if business indicators recover."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "적자 규모가 매출 대비 과중",
-    "en": "Losses outsized relative to revenue"
+    "ko": "분기 적자 행진",
+    "en": "Continuing quarterly losses"
    },
    "body": {
-    "ko": "2025년 영업손실 780억원은 같은 해 매출 1,857억원의 40%를 넘는 규모이며, 영업이익률은 -42.0%로 2024년 -16.9%에서 크게 악화됐다. 2026년 1분기 영업손실이 114억원으로 줄었다가 2분기에 250억원으로 다시 확대된 점도 비용 통제가 안정적이지 않음을 시사한다. 매출은 2025년 3분기 391억원 이후 다섯 분기 연속 400억원 내외에 머물러 고정비를 흡수하기 어려운 수준이다. 신사업 매출이 본격적으로 인식되기 전까지는 손실이 계속 자본을 소진하는 구조다.",
-    "en": "The 2025 operating loss of KRW 78.0bn exceeded 40% of that year's KRW 185.7bn revenue, and the operating margin deteriorated sharply to -42.0% from -16.9% in 2024. The operating loss narrowed to KRW 11.4bn in Q1 2026 before widening again to KRW 25.0bn in Q2, suggesting cost control is not yet stable. Revenue has hovered around KRW 40bn per quarter since KRW 39.1bn in Q3 2025, a level that struggles to absorb fixed costs. Until new-business revenue is recognized in earnest, losses continue to consume equity."
+    "ko": "2025년 3분기부터 2026년 3분기까지 5개 분기 연속 영업적자다. 2026년 3분기 영업손실은 194억원, 지배주주 순손실은 451억원으로 전년 동기 대비 손실이 확대됐다. 최근 4개 분기 지배주주 순손실 합계는 964억원이다.",
+    "en": "JNTC has posted operating losses for five consecutive quarters from the third quarter of 2025 through the third quarter of 2026. The third-quarter 2026 operating loss was KRW 19.4 billion and the net loss attributable to controlling shareholders was KRW 45.1 billion, with losses wider than a year earlier. Over the last four quarters the controlling-shareholder net loss totals KRW 96.4 billion."
    }
   },
   {
    "title": {
-    "ko": "재무 부담과 희석 가능성",
-    "en": "Financial strain and dilution potential"
+    "ko": "본업 매출 축소",
+    "en": "Shrinking core revenue"
    },
    "body": {
-    "ko": "2025년 말 부채비율은 121.3%로 2022년 56.1%에서 두 배 이상 높아졌고, 자본총계 2,477억원에 부채총계 3,005억원 구조다. 회사는 2025년 유동비율이 136.87%로 전년 대비 259.68%포인트 감소했으며, 이는 한울앤제주의 종속회사 편입과 두 차례 전환사채 발행에 기인한다고 설명했다. 2026년 1분기에는 연구개발 및 운영자금 목적으로 제5회차 전환사채 50억원을 상상인저축은행을 인수인으로 발행했다고 밝혔다. 또한 2026년 4월 9일 이사회에서 주주배정 후 실권주 일반공모 방식의 유상증자를 결의했다. 전환사채와 증자가 반복되면 주식 수 증가에 따른 지분 희석 요인이 남는다.",
-    "en": "The debt-to-equity ratio reached 121.3% at end-2025, more than double the 56.1% of 2022, with equity of KRW 247.7bn against liabilities of KRW 300.5bn. The company explained that its 2025 current ratio fell to 136.87%, down 259.68 percentage points year on year, driven by the consolidation of Hanul & Jeju and two convertible bond issues. It also said that in Q1 2026 it issued a fifth-series convertible bond of KRW 5bn to Sangsangin Savings Bank for R&D and working capital. In addition, its board resolved on April 9, 2026 to conduct a rights offering with unsubscribed shares placed via public offering. Repeated convertible issuance and equity raises leave a standing dilution factor as share count rises."
+    "ko": "매출은 2024년과 2025년 2년 연속 줄었고, 2026년 1분기부터 3분기까지 3개 분기 연속 감소했다. 2026년 3분기 매출은 355억원으로 전년 동기 대비 9.1% 줄었다. 중화권 고객사의 칩 수급 이슈와 차량용 수요 둔화가 본업 약세의 배경으로 거론된다.",
+    "en": "Revenue fell in both 2024 and 2025 and has declined for three straight quarters since the first quarter of 2026. Third-quarter 2026 revenue of KRW 35.5 billion was down 9.1% from a year earlier. Chip supply issues at a Chinese customer and weaker automotive demand are cited as drivers of the core business weakness."
    }
   },
   {
    "title": {
-    "ko": "기대치와 실제 실적의 간격",
-    "en": "Gap between expectations and reported results"
+    "ko": "신사업 수익화 시점 불확실",
+    "en": "Uncertain timing of new-business revenue"
    },
    "body": {
-    "ko": "외부 추정치는 2026년 매출 4,011억원과 영업이익 689억원 흑자 전환을 전망했다. 그러나 확정 공시된 2026년 1분기 매출은 400억원, 2분기는 388억원으로 상반기 합산 788억원에 그쳤고, 영업손익도 두 분기 모두 적자였다. 하반기에 남은 기간으로 연간 전망치를 채우려면 신사업 매출이 단기간에 대규모로 인식돼야 하는 구조다. 실제 계약 공시 없이 전망만 앞서 나갈 경우 기대치 조정 위험이 뒤따른다.",
-    "en": "Outside estimates projected 2026 revenue of KRW 401.1bn and a swing to operating profit of KRW 68.9bn. Yet disclosed results showed Q1 2026 revenue of KRW 40.0bn and Q2 of KRW 38.8bn, or KRW 78.8bn for the first half, with operating losses in both quarters. Meeting the annual estimate would require large new-business revenue to be recognized within the remaining period. If forecasts run ahead of actual contract disclosures, the risk of expectation resets follows."
+    "ko": "TGV 유리기판의 양산 목표는 2027년으로 제시됐고, 증설 시점과 규모는 공개되지 않았다. 제3자 전망이 2026년 매출을 크게 높게 잡고 있지만, 공시된 분기 매출 흐름과 격차가 크다. 신사업의 매출 인식 시점이 늦어지면 적자 기조가 길어질 수 있다.",
+    "en": "The TGV glass-substrate mass-production target is 2027, and the timing and scale of expansion have not been disclosed. A third-party forecast assumes much higher 2026 revenue, a wide gap from the disclosed quarterly trend. If revenue recognition from the new business is delayed, the loss trend could persist for longer."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중·지역 리스크",
-    "en": "Customer concentration and regional risk"
+    "ko": "재무 구조",
+    "en": "Financial structure"
    },
    "body": {
-    "ko": "중화권 고객사의 칩 수급 문제로 모바일 제품 물량이 감소하며 강화유리 매출이 축소되고 재고평가손실 등 비용이 발생해 실적이 악화됐다는 설명이 제시됐다. 특정 고객사 의존도가 높은 구조에서는 지정학·수출규제 변수가 매출에 즉각 반영된다. 회사는 차량용과 인도 시장 등으로 다변화를 시도하고 있으나 대체 속도가 감소 폭을 상쇄하기까지 시간이 필요하다. 생산이 베트남 법인에 집중돼 있어 현지 인건비·환율·인프라 변수도 원가에 직접 작용한다.",
-    "en": "Commentary attributed the earnings deterioration to reduced mobile volumes from a Greater China customer's chip-procurement problems, which shrank tempered-glass revenue and generated costs such as inventory valuation losses. With high dependence on a specific customer, geopolitical and export-control variables feed straight into revenue. The company is diversifying into automotive and markets such as India, but replacement will take time to offset the decline. Because manufacturing is concentrated in the Vietnamese unit, local labor costs, exchange rates and infrastructure also act directly on the cost base."
+    "ko": "2025년 말 부채총계는 3,005억원, 자본총계는 2,477억원으로 부채비율은 121.3%다. 2022년 56.1%에서 높아진 흐름이다. 2025년 영업활동 현금흐름은 -23.3억원으로 적자 구간이다. 추가 자금 조달이 필요해질 경우 자본 구조에 부담이 될 수 있다.",
+    "en": "At the end of 2025, total liabilities were KRW 300.5 billion and total equity was KRW 247.7 billion, with a debt ratio of 121.3%, up from 56.1% in 2022. Operating cash flow was negative KRW 2.33 billion in 2025. If additional funding is needed, the capital structure could come under pressure."
    }
   },
   {
    "cat": {
-    "ko": "신사업 상용화 시점 리스크",
-    "en": "Commercialization timing risk in new businesses"
+    "ko": "고객·수요 집중",
+    "en": "Customer and demand concentration"
    },
    "body": {
-    "ko": "회사는 2027년 양산을 목표로 글로벌 종합반도체기업과 중화권·일본·유럽·국내 패키징 업체들과 프로젝트 및 평가를 진행 중이라고 밝혔다. 유리기판은 업계 전반이 아직 상용화 이전 단계여서 최종 채택 시점과 표준이 확정되지 않았다. 양산 지연 가능성과 공격적인 설비투자에 따른 재무 부담이 투자의견 유보 사유로 지적됐다. 평가·협약 단계가 구속력 있는 공급계약으로 전환되지 않으면 선행 투자만 비용으로 남는다.",
-    "en": "The company said it is running projects and evaluations with a global integrated device manufacturer and packaging firms in Greater China, Japan, Europe and Korea, targeting 2027 mass production. Glass substrates remain pre-commercial industry-wide, so final adoption timing and standards are unsettled. The possibility of mass-production delays and financial strain from aggressive capital spending were cited as reasons for withholding an investment opinion. If evaluation and agreement stages do not convert into binding supply contracts, the front-loaded investment remains as cost only."
+    "ko": "매출은 중화권 스마트폰 고객사와 차량용 수요에 크게 기대고 있다. 2024년에는 중국 내수 침체와 프리미엄 시장 경쟁으로 강화유리 매출이 줄었다. 고객사 재고 조정이나 칩 수급 차질이 이어지면 본업 회복이 늦어질 수 있다.",
+    "en": "Revenue depends heavily on Chinese smartphone customers and automotive demand. In 2024, cover-glass sales fell amid China's domestic slowdown and premium-segment competition. If customer inventory adjustments or chip supply disruptions persist, a recovery in the core business could be delayed."
    }
   },
   {
    "cat": {
-    "ko": "자금조달·지배구조 관련 리스크",
-    "en": "Funding and governance-related risk"
+    "ko": "기술·양산 이행",
+    "en": "Technology and mass-production execution"
    },
    "body": {
-    "ko": "회사는 영업적자가 지속되면 재무안정성이 악화되어 지속 경영에 부정적 영향을 미칠 수 있으며, 주가 하락에 따른 차입금 상환 요구나 만기연장 불이행, 추가 차입 가능성도 존재한다고 스스로 기재했다. 관계사 한울앤제주가 2026년 3월 29일 투자주의환기종목으로 지정됨에 따라 회사가 조합을 통해 보유한 지분에 6개월 보호예수 의무가 발생했다고 밝혔다. 회사와 경영진은 저하된 재무안정성에 책임감을 느낀다고 밝히며 유상증자 자금을 운영자금에 사용하고 관계기업·금융자산 처분으로 재무건전성을 개선할 계획이라고 설명했다. 본업 회복이 지연되는 동안 조달이 반복되면 이자비용과 희석이 동시에 누적된다.",
-    "en": "The company itself stated that continued operating losses could worsen financial stability and adversely affect going-concern prospects, and that share-price declines could trigger loan repayment demands, failed maturity extensions or additional borrowing. It disclosed that after affiliate Hanul & Jeju was designated an investment-caution issue on March 29, 2026, the stake held through a partnership became subject to a six-month lock-up. Management said it feels responsible for the weakened financial position and plans to use rights-offering proceeds for working capital while improving soundness through disposals of affiliates and financial assets. If funding rounds repeat while the core business recovery lags, interest expense and dilution accumulate together."
+    "ko": "TGV 유리기판의 수율과 품질은 회사 발표 수치이며, 고객과의 비밀유지계약으로 세부 사양과 단가는 공개되지 않았다. 2027년 양산 목표가 늦어지거나 고객 인증이 지연되면 신사업 매출 시점이 밀린다. 대면적 도금 균일도 등 양산 기술의 검증 결과가 중요한 확인 지점이다.",
+    "en": "TGV glass-substrate yield and quality are company figures, and specifications and pricing are not public because of nondisclosure agreements with customers. If the 2027 mass-production target slips or customer qualification is delayed, new-business revenue will move later. Verification of mass-production technology, such as plating uniformity over large panels, is a key checkpoint."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중순",
-    "en": "Mid-November 2026"
+    "ko": "2027년 1~2월 (통상 일정, 시기 미정)",
+    "en": "January–February 2027 (typical timing, date TBD)"
    },
    "what": {
-    "ko": "2026년 3분기 분기보고서 공시. 2026년 2분기 매출 388억원·영업손실 250억원 대비 매출이 증가 전환하는지, 신사업 관련 매출이 별도로 인식되기 시작하는지가 핵심이다.",
-    "en": "Q3 2026 quarterly report. The key points are whether revenue turns up from Q2 2026's KRW 38.8bn with its KRW 25.0bn operating loss, and whether new-business revenue starts to be recognized separately."
+    "ko": "2026년 연간 잠정 실적. 연간 매출과 영업손실의 흐름이 2025년 대비 어떻게 바뀌는지, 2026년 4분기 적자 폭이 이어지는지 확인한다.",
+    "en": "Preliminary full-year 2026 results. Check how annual revenue and operating loss compare with 2025 and whether the fourth-quarter loss pattern continued."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기",
-    "en": "Q4 2026"
+    "ko": "2027년 3월 말",
+    "en": "Late March 2027"
    },
    "what": {
-    "ko": "HDD 유리플래터의 증량평가가 구속력 있는 공급계약과 양산 전환 공시로 이어지는지 확인. 회사가 양산 직전 단계라고 설명한 만큼, 계약 규모와 납품 개시 시점이 공시되는지가 실적 반영의 분기점이다.",
-    "en": "Watch whether the HDD glass-platter volume-ramp evaluation converts into a binding supply contract and a mass-production disclosure. Since the company described it as immediately preceding mass production, disclosure of contract size and delivery start is the dividing line for earnings impact."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 4분기~2027년 상반기",
-    "en": "Q4 2026 to H1 2027"
-   },
-   "what": {
-    "ko": "대표이사가 검토 중이라고 밝힌 국내 TGV 양산라인 증설의 투자 규모·자금 조달 방식 공시. 증설 결정은 수요 확인의 신호일 수 있으나, 조달 방식에 따라 부채비율과 주식 수에 영향을 준다.",
-    "en": "Disclosure of the investment size and funding method for the domestic TGV production-line expansion the CEO said was under review. An expansion decision can signal confirmed demand, but depending on the funding method it affects leverage and share count."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 2~3월",
-    "en": "February-March 2027"
-   },
-   "what": {
-    "ko": "2026년 연간 확정 실적과 사업보고서. 2025년 영업이익률 -42.0%, 부채비율 121.3%, 영업활동현금흐름 마이너스 23억원이 어느 방향으로 움직였는지, 부문별 매출 구성이 어떻게 재편됐는지를 함께 점검한다.",
-    "en": "Confirmed full-year 2026 results and the annual report. Check the direction of the 2025 baselines - a -42.0% operating margin, 121.3% debt-to-equity and negative KRW 2.3bn operating cash flow - along with how the segment revenue mix has been reshaped."
+    "ko": "2026년 사업보고서 제출 기한. 연간 영업이익률, 부채비율, 영업활동 현금흐름이 공시 실적으로 확정된다.",
+    "en": "Filing deadline for the 2026 annual report. Full-year operating margin, debt ratio and operating cash flow will be fixed as disclosed figures."
    }
   },
   {
@@ -192,39 +172,49 @@
     "en": "During 2027"
    },
    "what": {
-    "ko": "회사가 목표로 제시한 TGV 유리기판 양산 시점 도달 여부와 TOPPAN 협약의 후속 계약화. 협약 단계에서는 규모와 일정이 공개되지 않았으므로, 구체적 수량·단가가 공시로 확인되는지가 관건이다.",
-    "en": "Whether the company reaches its stated 2027 TGV mass-production target and whether the TOPPAN agreement advances into a firm contract. Since scope and timing were not disclosed at the agreement stage, the crux is whether specific volumes and pricing appear in filings."
+    "ko": "TGV 유리기판의 양산 개시 여부와 토판과의 공동 검토 결과. 국내 양산라인 증설의 시점과 투자 규모도 이 시기에 확인해야 할 지점이다.",
+    "en": "Whether TGV glass-substrate mass production starts and the outcome of joint review with TOPPAN. The timing and investment size of the domestic production line expansion are also points to confirm in this period."
+   }
+  },
+  {
+   "when": {
+    "ko": "2027년 5월 중순 전후 (통상 일정)",
+    "en": "Mid-May 2027 (typical timing)"
+   },
+   "what": {
+    "ko": "2027년 1분기 실적 발표. 분기 매출이 3개 분기 연속 감소 흐름을 벗어나는지, 영업손실이 5개 분기 연속 이어지는지 확인한다.",
+    "en": "First-quarter 2027 results. Check whether quarterly revenue breaks its three-quarter decline and whether operating losses extend beyond five consecutive quarters."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "제이앤티씨는 모바일 커버글라스 중심 기업에서 유리 소재 기업으로 사업 구조를 바꾸는 과정의 한가운데에 있다. 숫자로 보면 그 전환 비용이 상당하다. 매출은 2023년 3,234억원에서 2025년 1,857억원으로 줄었고, 같은 기간 영업손익은 285억원 이익에서 780억원 손실로 반전됐으며 부채비율은 84.3%에서 121.3%로 높아졌다. 2026년 들어서도 1분기 400억원·영업손실 114억원, 2분기 388억원·영업손실 250억원으로 손익 회복은 아직 확인되지 않았다. 반면 사업 측면에서는 2,500억원 규모 차량용 커버글라스 수주, 0.3~2.0mm TGV 유리기판 라인업 개발과 TOPPAN 상용화 협약, 글로벌 HDD 업체 증량평가 진입 등 진척 사실이 순차적으로 공개됐다. 결국 두 흐름 가운데 어느 쪽이 먼저 손익에 도달하는지가 이 회사를 보는 기준이며, 신사업 매출 인식 시점과 자금 조달 방식이 그 속도를 결정한다. 본 자료는 정보 제공 목적으로 작성됐으며 투자의견이나 매수·매도 권유를 포함하지 않는다.",
-   "en": "JNTC sits in the middle of shifting its business structure from a mobile cover-glass maker to a glass-materials company. In the numbers, that transition has been costly. Revenue fell from KRW 323.4bn in 2023 to KRW 185.7bn in 2025, operating results reversed from a KRW 28.5bn profit to a KRW 78.0bn loss over the same period, and the debt-to-equity ratio rose from 84.3% to 121.3%. Into 2026, Q1 revenue of KRW 40.0bn with an operating loss of KRW 11.4bn and Q2 revenue of KRW 38.8bn with a KRW 25.0bn loss show that a profit recovery is not yet evident. On the business side, however, progress has been disclosed in sequence: KRW 250bn of automotive cover-glass awards, development of a 0.3-2.0mm TGV substrate lineup with a TOPPAN commercialization agreement, and entry into volume-ramp evaluation with a global HDD maker. Which of these two streams reaches the income statement first is the frame for viewing this company, and the timing of new-business revenue recognition plus the chosen funding method will set that pace. This material is provided for informational purposes only and does not contain an investment opinion or any buy or sell recommendation."
+   "ko": "제이앤티씨는 강화유리·커넥터 본업의 매출이 2024년부터 줄어든 상태에서 TGV 유리기판으로 사업 구조를 바꾸는 과정에 있다. 공시 실적 기준으로 2024년부터 2025년까지 2년 연속 적자였고, 2025년 3분기부터 2026년 3분기까지 5개 분기 연속 영업적자다. 2026년 7월 일본 토판과의 상용화 협약과 2027년 양산 목표는 신사업의 진척을 보여 주는 사실이다. 다만 양산 수율과 고객 인증 세부 내용은 회사 발표에 의존하며, 제3자의 2026년 실적 전망은 공시 흐름과 차이가 크다. 밸류에이션은 이익 기반 지표가 산출되지 않는 상태에서 순자산 대비 프리미엄으로 나타나 있다. 다음 확인 지점은 2026년 사업보고서의 연간 수치, 2027년 양산 개시 여부, 그리고 국내 증설의 시점이다.",
+   "en": "JNTC is restructuring from cover glass and connectors, where revenue has declined since 2024, toward TGV glass substrates. On a disclosed basis, it posted operating losses in 2024 and 2025, and has posted operating losses for five consecutive quarters from the third quarter of 2025 through the third quarter of 2026. The July 2026 commercialization agreement with TOPPAN and the 2027 mass-production target show progress in the new business. However, yield and customer qualification details rest on company statements, and a third-party 2026 forecast differs widely from the disclosed quarterly trend. Valuation shows a large premium to net asset value, with no earnings-based multiple calculable. The next checkpoints are the full-year figures in the 2026 annual report, whether mass production begins in 2027, and the timing of domestic expansion."
   }
  },
  "sources": [
-  "https://www.edaily.co.kr/News/Read?newsId=03814646645484672",
-  "https://www.newspim.com/news/view/20260713000769",
-  "https://www.thelec.kr/news/articleView.html?idxno=45384",
-  "https://goinsider.kr/stock/00447575",
-  "https://kind.krx.co.kr/external/2026/06/12/000997/20260612001955/10001.htm",
-  "https://v.daum.net/v/20260511082305267",
-  "https://www.mt.co.kr/stock/2026/05/11/2026051109110349966",
-  "https://www.edaily.co.kr/News/Read?newsId=03558806645514192",
-  "https://www.ic-pcb.com/jntc-signs-tgv-glass-substrate-commercialization-agreement-with-japans-toppan.html",
-  "https://www.etoday.co.kr/news/view/2583106",
-  "https://view.asiae.co.kr/article/2026061908202498016",
-  "https://www.thelec.net/news/articleView.html?idxno=12218",
-  "https://kind.krx.co.kr/external/2026/05/12/000425/20260512001016/10601.htm",
+  "https://m.thinkpool.com/news/view/16855142",
   "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A204270",
-  "https://zdnet.co.kr/view/?no=20260713142837",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=204270",
   "http://www.dailyinvest.kr/news/articleView.html?idxno=70512",
-  "https://news.nate.com/view/20260409n07968",
-  "https://alphasquare.co.kr/home/stock-summary?code=204270"
+  "https://alphasquare.co.kr/home/stock-summary?code=204270",
+  "https://m.thinkpool.com/stockDiscuss/204270/cont/11732630",
+  "https://www.etoday.co.kr/news/view/2249573",
+  "https://m.thinkpool.com/compDiscuss/cont/1013118",
+  "http://www.dailyinvest.kr/news/articleView.html?idxno=67446",
+  "https://v.daum.net/v/20260511082305267",
+  "https://www.hanaw.com/download/research/FileServer/WEB/info/small_cap/2025/09/02/250903_JNTC_F.pdf",
+  "https://www.thelec.kr/news/articleView.html?idxno=30843",
+  "https://www.thelec.kr/news/articleView.html?idxno=37611",
+  "https://m.news.nate.com/view/20260713n22579",
+  "https://www.thelec.kr/news/articleView.html?idxno=36252",
+  "https://zdnet.co.kr/view/?no=20240626142106",
+  "https://www.thejntc.com/ko/content/summary.do",
+  "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202506301609142640882"
  ],
  "v": 2,
- "model": "claude-opus-5",
+ "model": "claude-haiku-5-5",
  "ticker": "204270",
  "name": "제이앤티씨",
  "name_en": "JNTC CO.,LTD.",
@@ -233,11 +223,11 @@
   "전자·부품"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 05:51",
- "dataDate": "20260904",
+ "reportDate": "2026-11-14",
+ "reportTs": "2026-11-14 07:36",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-09-04",
+  "asOf": "2026-11-13",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -307,12 +297,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 56085163295,
-    "op": -23845215982,
-    "np_owner": -39650994118
-   },
-   {
     "q": "2025Q3",
     "rev": 39097163083,
     "op": -17927383351,
@@ -335,25 +319,31 @@
     "rev": 38831737876,
     "op": -25005727648,
     "np_owner": -24671954446
+   },
+   {
+    "q": "2026Q3",
+    "rev": 35534257829,
+    "op": -19416172489,
+    "np_owner": -45061996662
    }
   ],
   "valuation": {
-   "price": 19130,
-   "mcap": 1.1066,
+   "price": 19340,
+   "mcap": 1.1188,
    "shares": 57848466,
    "total_shares": 57848466,
-   "wavg_shares": 57166382,
+   "wavg_shares": 57177272,
    "per": null,
-   "eps": -1173,
-   "pbr": 5.025,
-   "bps": 3807,
-   "roe_ttm": -27.1,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": -67013332179,
+   "eps": -1687,
+   "pbr": 6.4617,
+   "bps": 2993,
+   "roe_ttm": -44.6,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": -96447845764,
    "ccy": "KRW",
    "bps_src": "자체",
    "eps_src": "공시",
-   "pbr_krx": 4.41,
+   "pbr_krx": 4.46,
    "bps_krx": 4333.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
@@ -362,5 +352,6 @@
     "per": "loss"
    }
   }
- }
+ },
+ "textRules": 2
 }

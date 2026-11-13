@@ -1,230 +1,217 @@
 {
  "title": {
-  "ko": "저궤도 위성 확산 속 실적 정상화 국면 진입",
-  "en": "Earnings Normalization Amid LEO Satellite Expansion"
+  "ko": "위성 안테나 수요 확대와 3분기 영업손실이 공존",
+  "en": "LEO antenna demand grows as Q3 2026 posts an operating loss"
  },
  "lead": {
-  "ko": "해상용 안테나 중심에서 저궤도(LEO) 게이트웨이·평판형 안테나·방산으로 사업을 다변화한 인텔리안테크가 2025년 이후 분기 흑자 기조를 이어가며 실적 정상화 국면에 들어섰다.",
-  "en": "Intellian Technologies, which has diversified from maritime antennas into LEO gateway and flat-panel terminals plus defense products, has sustained quarterly profitability since 2025, entering a phase of earnings normalization."
+  "ko": "인텔리안테크는 저궤도 위성통신 안테나 수요에 힘입어 2025년 매출이 2022~2025년 중 가장 큰 해가 됐지만, 2026년 3분기에는 영업손실과 지배주주 순손실이 함께 나타나 수익성의 지속성은 아직 확인 단계에 있다.",
+  "en": "Intellian Technologies' 2025 revenue was the largest of 2022–2025 on LEO satellite antenna demand, but an operating loss and a controlling-shareholder net loss in Q3 2026 leave the durability of its profitability still unconfirmed."
  },
  "keypoints": [
   {
-   "ko": "2025년 연간 매출 3,196억원, 영업이익 119.5억원(OPM 3.7%)으로 2024년 영업손실에서 흑자 전환했다.",
-   "en": "2025 annual revenue reached KRW 319.6bn with operating profit of KRW 12.0bn (OPM 3.7%), swinging back to profit after a 2024 operating loss."
+   "ko": "2025년 매출은 3,196억원으로 전년 대비 24.0% 증가해 2022~2025년 중 가장 큰 해였고, 영업이익 120억원으로 2024년 영업손실에서 흑자로 전환했다.",
+   "en": "Revenue in 2025 was KRW 319.6 billion, up 24.0% year on year and the largest of 2022–2025, and operating profit of KRW 12 billion turned the 2024 operating loss into a profit."
   },
   {
-   "ko": "2026년 2분기 연결 매출 972억원, 영업이익 71억원으로 전년 동기 대비 각각 30%, 304% 증가하며 2분기 기준 역대 최대 실적을 기록했다.",
-   "en": "Q2 2026 consolidated revenue of KRW 97.2bn and operating profit of KRW 7.1bn rose 30% and 304% year-on-year, marking the highest second-quarter results on record."
+   "ko": "2026년 3분기 영업손실은 27.6억원, 지배주주 순손실은 244억원으로 분기 실적의 변동 폭이 크게 나타났다.",
+   "en": "Q3 2026 posted an operating loss of KRW 2.76 billion and a net loss attributable to controlling shareholders of KRW 24.4 billion, showing wide quarterly swings."
   },
   {
-   "ko": "게이트웨이·저궤도 평판형 안테나·방산 제품이 성장을 견인했고, 수주잔고는 2025년 말 기준 약 4,286억원으로 전년 대비 68.7% 늘어 역대 최대를 기록했다.",
-   "en": "Growth was driven by gateway systems, LEO flat-panel antennas, and defense products, with the order backlog reaching a record roughly KRW 428.6bn at end-2025, up 68.7% year-on-year."
+   "ko": "2025년 말 수주잔고는 4,286억원으로 전년 대비 68.7% 증가했다고 유안타증권이 2026년 5월 보고서에서 밝혔다.",
+   "en": "Yuanta Securities reported in a May 2026 note that backlog at end-2025 reached KRW 428.6 billion, up 68.7% from a year earlier."
   },
   {
-   "ko": "미국 캘리포니아 첫 해외 생산공장에서 게이트웨이 안테나 첫 출하를 완료해 북미 현지 공급망 대응력을 확보했다.",
-   "en": "The company completed its first gateway antenna shipment from its new California manufacturing facility, its first overseas plant, strengthening North American local supply capability."
+   "ko": "2026년 9월 체결된 국방용 지상 단말기 계약은 409.4억원 규모로, 기간이 2032년 12월 31일까지다.",
+   "en": "A defense ground terminal supply contract signed in September 2026 is worth KRW 40.94 billion and runs through December 31, 2032."
   },
   {
-   "ko": "분기별 실적은 고객사 네트워크 투자·발주 시점에 따라 편차가 크며(2026년 1분기 영업이익 5.9억원 vs 4분기 198.6억원), 안정적 성장 지속 여부가 관전 포인트다.",
-   "en": "Quarterly results show meaningful variability tied to customer network investment timing (Q1 2026 operating profit of KRW 0.59bn versus KRW 19.9bn in Q4 2025), making the durability of the growth trend a key watch item."
+   "ko": "부채비율(부채총계 ÷ 자본총계)은 2025년 86.4%로 2024년 66.5%에서 올랐고, 2025년 영업활동 현금흐름은 -182억원이다.",
+   "en": "The debt ratio (total liabilities ÷ total equity) rose to 86.4% in 2025 from 66.5% in 2024, and operating cash flow in 2025 was -KRW 18.2 billion."
   }
  ],
  "business": {
-  "ko": "인텔리안테크는 2004년 설립된 이동체 위성통신 안테나 전문기업으로, 해상용(Maritime)·지상용(Land, 게이트웨이·유저터미널)·에비에이션·방산 등으로 제품군을 확장해왔다. 회사는 정지궤도(GEO)·중궤도(MEO)·저궤도(LEO) 위성용 유저터미널과 게이트웨이 안테나, 평판형(Flat Panel) 안테나를 개발해 전 세계 600여 고객사에 공급하고 있다. 2025년 3분기 기준 매출 비중은 해상용이 약 59%, 지상용이 약 41%로 구성되어 있다. 주요 고객군은 유텔셋 원웹(Eutelsat OneWeb), AST 스페이스모바일, SES, 텔레샛(Telesat) 등 스타링크를 제외한 저궤도 위성통신 사업자들이며, 스페이스X에 이어 세계 두 번째로 평판형 안테나를 상용화한 기업으로 알려져 있다. 게이트웨이 부문은 안정적인 공급을 통해 회사의 사업 포트폴리오에서 중추적 역할을 담당하는 주력 아이템으로 자리잡았다. 최근에는 군용 휴대형 안테나 '맨팩(Manpack)'과 이리듐 서투스(Iridium Certus) 기반 GMDSS(선박조난안전시스템) 포트폴리오를 통해 방산·정부 시장으로도 영역을 확장하고 있다. 미국 캘리포니아에 약 2,100평 규모의 첫 해외 생산공장을 구축해 대형 게이트웨이 안테나 시스템 생산 능력을 현지화했으며, 근접전계 측정 챔버 등 RF 시험 설비까지 갖춘 일괄 생산 체제를 구축했다. 경쟁구도 측면에서는 안테나 자체 수직계열화를 진행하는 스타링크(스페이스X)와 직접 경쟁하기보다, 비(非) 스타링크 진영의 다양한 위성사업자들에 안테나 패키지를 공급하는 포지션을 점하고 있다.",
-  "en": "Founded in 2004, Intellian Technologies specializes in satellite communication antennas for mobile platforms, having expanded from maritime terminals into land-based gateway and user-terminal systems, aviation, and defense products. The company develops user terminals and gateway antennas for GEO, MEO, and LEO satellites, along with flat-panel antennas, supplying more than 600 customers worldwide. As of Q3 2025, maritime accounted for roughly 59% of revenue and land-based products roughly 41%. Its main customer base consists of non-Starlink LEO satellite operators including Eutelsat OneWeb, AST SpaceMobile, SES, and Telesat, and the company is known as the second in the world after SpaceX to commercialize flat-panel antennas. The gateway segment has become a core pillar of the business portfolio through stable, high-share supply relationships. More recently, the company has expanded into defense and government markets through its military 'Manpack' portable antenna and an Iridium Certus-based GMDSS (Global Maritime Distress and Safety System) portfolio. It built its first overseas manufacturing plant in California, spanning roughly 2,100 pyeong, localizing production of large gateway antenna systems with an integrated line that includes near-field test chambers and RF test facilities. Competitively, rather than directly rivaling Starlink (SpaceX), which vertically integrates its own antennas, Intellian positions itself as a supplier of antenna packages to the broader non-Starlink camp of satellite operators."
+  "ko": "인텔리안테크는 선박 등 이동체와 지상 기지국에 쓰는 위성통신 안테나와 지상 게이트웨이(위성망과 지상망을 잇는 관문국) 장비를 만드는 회사다. 제품군은 해상용 안테나, 지상용 게이트웨이, 저궤도(LEO) 위성용 평판형 안테나, 군용 휴대용 단말기 '맨팩', 항공(에비에이션) 장비 등으로 나뉜다. 해상(Maritime) 부문이 가장 높은 매출 비중을 차지하며, 게이트웨이 제품이 외형 성장을 함께 견인한 것으로 하나증권이 2026년 2월 보고서에서 짚었다. 같은 보고서는 저궤도 제품의 매출 비중이 2023년 37%에서 2024년 48%를 거쳐 2025년 70%로 커졌다고 추정했다(하나증권 추정치). 군용 휴대용 안테나 '맨팩'은 지난해 출시 이후 수요가 늘며 성장을 뒷받침했다고 회사 측이 설명했다. 주요 고객은 스타링크(Starlink)를 제외한 글로벌 위성통신 사업자다. 원웹(OneWeb), SES, ASTS 등 주요 고객사의 서비스 출시가 본격화되면서 장비 수요가 확대될 것으로 보는 분석이 나온다. 게이트웨이 수주잔고는 2025년 말 기준 2,922억원이다. 2026년 9월에는 글로벌 위성통신 기업 네트워크 이노베이션스(NI)와 국방 및 안보 시장용 위성통신 단말기 공급 계약을 맺었다. 이 계약은 미국 해군에 납품한 해상용 안테나의 운용 이력을 바탕으로 이뤄졌다. 미국 얼바인 공장 가동으로 북미 현지 생산 기반도 갖춘 것으로 보고됐다.",
+  "en": "Intellian Technologies makes satellite communication antennas for vessels and ground sites, along with ground gateway equipment that links satellite networks to terrestrial networks. Its product lines include maritime antennas, ground gateway systems, flat-panel antennas for low-earth-orbit (LEO) satellites, the military portable terminal Manpack, and aviation equipment. Hana Securities noted in a February 2026 report that the maritime segment carries the largest revenue share, with gateway products also driving growth. The same report estimated that LEO products rose from 37% of revenue in 2023 to 48% in 2024 and about 70% in 2025 (Hana estimate). The Manpack military portable antenna is cited by the company as a driver of demand after its launch last year. Its customers are mainly global satellite operators outside Starlink, including Eutelsat OneWeb, SES and AST SpaceMobile. Gateway backlog at end-2025 was KRW 292.2 billion according to Yuanta Securities. In September 2026 the company signed a satellite terminal supply contract for defense and security markets with Network Innovations. The company is building on the operating record of a maritime antenna delivered to the U.S. Navy. Operations at its Irvine, California plant are reported to have supported a local North American supply base."
  },
  "earnings": {
-  "ko": "연간 실적을 보면 2022년 매출 2,394.7억원, 영업이익 153.4억원(OPM 6.4%), 순이익 160.3억원을 기록한 이후 2023년에는 매출 3,050.4억원으로 늘었으나 영업이익은 107.3억원(OPM 3.5%)으로 낮아졌고 순이익도 55.3억원으로 축소됐다. 2024년에는 매출이 2,577.7억원으로 줄고 영업손실 194.4억원(OPM -7.5%), 순손실 30.1억원을 기록하며 한 차례 큰 부진을 겪었는데, 증권가에서는 이 시기를 신제품 개발을 위한 R&D 투자 확대와 매출 공백기가 겹친 결과로 해석한다. 2025년에는 매출이 3,196.3억원으로 24% 가까이 증가하고 영업이익이 119.5억원(OPM 3.7%), 순이익 74.6억원으로 흑자 전환에 성공했다. 분기별로는 2025년 2분기 매출 747.4억원·영업이익 17.6억원에서 3분기 매출 772.3억원·영업이익 23.7억원으로 개선이 이어졌고, 4분기에는 매출 1,243.2억원·영업이익 198.6억원·순이익 223.1억원으로 급격히 뛰어올랐는데 이는 계절적 성수기와 게이트웨이·평판형 안테나 매출 확대가 겹친 결과로 풀이된다. 2026년 1분기는 매출 647.2억원으로 전년 동기 대비 49.3% 늘며 1분기 역대 최대치를 기록했으나 영업이익은 5.9억원에 그쳐 계절적 비수기 영향이 뚜렷했다. 2026년 2분기에는 매출 972.5억원, 영업이익 71.4억원으로 전년 동기 대비 각각 30%, 304% 증가했고 순이익도 47.5억원으로 전년 동기 순손실 40.7억원에서 흑자로 전환했다. 회사는 이 같은 개선을 해상용 안테나의 안정적 매출 기반 위에 저궤도 평판형 안테나·게이트웨이·방산 제품 판매 확대가 더해진 결과로 설명하고 있다.",
-  "en": "On an annual basis, revenue was KRW 239.5bn with operating profit of KRW 15.3bn (OPM 6.4%) and net profit of KRW 16.0bn in 2022, before revenue rose to KRW 305.0bn in 2023 while operating profit declined to KRW 10.7bn (OPM 3.5%) and net profit fell to KRW 5.5bn. In 2024, revenue contracted to KRW 257.8bn with an operating loss of KRW 19.4bn (OPM -7.5%) and a net loss of KRW 3.0bn, a downturn that analysts have attributed to a combination of heavy R&D investment in new products and a revenue gap during that period. In 2025, revenue grew nearly 24% to KRW 319.6bn, with operating profit turning positive at KRW 12.0bn (OPM 3.7%) and net profit of KRW 7.5bn, marking a return to profitability. Quarterly, improvement continued from Q2 2025 revenue of KRW 74.7bn and operating profit of KRW 1.8bn to Q3 2025 revenue of KRW 77.2bn and operating profit of KRW 2.4bn, before jumping sharply in Q4 2025 to revenue of KRW 124.3bn, operating profit of KRW 19.9bn, and net profit of KRW 22.3bn, reflecting both seasonal peak demand and expanding gateway and flat-panel antenna sales. Q1 2026 revenue reached KRW 64.7bn, up 49.3% year-on-year and a first-quarter record, though operating profit was only KRW 0.6bn, reflecting the seasonally slow first quarter. Q2 2026 revenue was KRW 97.2bn with operating profit of KRW 7.1bn, up 30% and 304% year-on-year respectively, while net profit of KRW 4.7bn reversed a prior-year net loss of KRW 4.1bn. The company attributes this improvement to stable maritime antenna sales combined with expanded sales of LEO flat-panel antennas, gateway systems, and defense products."
+  "ko": "연간 매출은 2022년 2,395억원에서 2023년 3,050억원(전년 대비 27.4% 증가)으로 늘었다가 2024년 2,578억원(전년 대비 15.5% 감소)으로 줄었고, 2025년 3,196억원(전년 대비 24.0% 증가)으로 2022~2025년 중 가장 큰 해가 됐다. 영업이익률은 2022년 6.4%에서 2023년 3.5%로 낮아졌고, 2024년에는 -7.5%로 영업손실 194억원을 기록했다. 2025년 영업이익은 120억원, 영업이익률은 3.7%로 적자에서 흑자로 돌아섰다. 지배주주 순이익은 2022년 160억원, 2023년 55.3억원(전년 대비 65.5% 감소), 2024년 순손실 30.1억원, 2025년 74.6억원이었다. 비지배지분 손익이 없어 당기순이익은 같은 해 지배주주 순이익과 같은 값으로 공시됐다. 2025년 분기 흐름을 보면 3분기 매출 772억원, 영업이익 23.7억원에서 4분기 매출 1,243억원(전 분기 대비 61.0% 증가), 영업이익 199억원으로 크게 늘었다. 2026년 1분기 매출은 647억원으로 전 분기 대비 47.9% 줄었고 영업이익은 5.9억원, 지배주주 순이익은 135억원이었다. 2분기에는 매출 972억원, 영업이익 71.4억원, 지배주주 순이익 47.5억원으로 회복했다. 3분기 매출은 762억원(전년 동기 대비 1.4% 감소)이었고 영업손실 27.6억원, 지배주주 순손실 244억원으로 적자 전환했다. 분기 지배주주 순이익이 영업이익과 크게 어긋난 분기가 반복돼 영업 외 항목의 영향이 컸던 것으로 보이며, 구성 항목은 정기보고서 주석에서 확인할 지점이다. 영업활동 현금흐름은 2022년 -261억원, 2023년 298억원, 2024년 39.6억원, 2025년 -182억원으로 흑자 해인 2025년에도 마이너스였다. 부채비율은 2022년 107.3%에서 2024년 66.5%로 낮아졌다가 2025년 86.4%로 올랐다.",
+  "en": "Annual revenue rose from KRW 239.5 billion in 2022 to KRW 305 billion in 2023 (up 27.4%), fell to KRW 257.8 billion in 2024 (down 15.5%), and reached KRW 319.6 billion in 2025 (up 24.0%), the largest year of 2022–2025. Operating margin fell from 6.4% in 2022 to 3.5% in 2023, then was -7.5% in 2024 with an operating loss of KRW 19.4 billion. Operating profit was KRW 12 billion in 2025, a 3.7% margin, turning the 2024 loss into a profit. Net income attributable to controlling shareholders was KRW 16 billion in 2022, KRW 5.53 billion in 2023 (down 65.5%), a net loss of KRW 3.01 billion in 2024, and KRW 7.46 billion in 2025. With no non-controlling interests, net income was disclosed at the same values. Quarterly revenue went from KRW 77.2 billion with operating profit of KRW 2.37 billion in Q3 2025 to KRW 124.3 billion with operating profit of KRW 19.9 billion in Q4 2025 (up 61.0% quarter on quarter). Q1 2026 revenue was KRW 64.7 billion, down 47.9% from the prior quarter, with operating profit of KRW 593 million and net income attributable to controlling shareholders of KRW 13.5 billion. Q2 2026 recovered to revenue of KRW 97.2 billion, operating profit of KRW 7.14 billion and net income attributable to controlling shareholders of KRW 4.75 billion. Q3 2026 revenue was KRW 76.2 billion (down 1.4% year on year), with an operating loss of KRW 2.76 billion and a net loss attributable to controlling shareholders of KRW 24.4 billion. Several quarters show controlling-shareholder net income moving far from operating profit, which points to a large non-operating effect; the components should be checked in the periodic report notes. Operating cash flow was -KRW 26.1 billion in 2022, KRW 29.8 billion in 2023, KRW 3.96 billion in 2024 and -KRW 18.2 billion in 2025, remaining negative in 2025 despite the profit. The debt ratio fell from 107.3% in 2022 to 66.5% in 2024 and rose to 86.4% in 2025."
  },
  "industry": {
-  "ko": "글로벌 위성통신 산업은 저궤도(LEO) 메가컨스텔레이션 확산을 축으로 재편되고 있으며, 스타링크(스페이스X)가 시장을 주도하는 가운데 유텔셋 원웹, 아마존 카이퍼, AST 스페이스모바일, SES, 텔레샛 등 비(非) 스타링크 진영이 공급원 다변화를 추진하고 있다. 국내에서는 2025년 5월 과학기술정보통신부가 스타링크 코리아-스페이스X, 한화시스템-원웹, 케이티샛-원웹 간 저궤도 위성통신 서비스 국내 공급 협정을 모두 승인하며 원웹 서비스가 국내에서도 정식으로 시작될 수 있는 여건이 마련됐다. 인텔리안테크는 원웹 서비스의 주요 파트너로서 평판형 안테나를 공급하고 있으며, 유럽·캐나다 등 각국이 스타링크 편중을 완화하기 위한 공급원 다변화 전략을 추진하는 환경에서 수혜 가능성이 제기된다. 산업 사이클 측면에서는 2024년 실적 부진을 저점으로, 2025년 하반기 이후 게이트웨이·평판형 안테나 수요 확대와 함께 회복 국면에 진입했다는 평가가 나온다. 경쟁 구도에서 인텔리안테크는 스타링크를 제외한 주요 사업자들과 폭넓게 협력하고 있어 특정 사업자에 대한 의존도를 낮추는 동시에, 고객사들의 서비스 확대 속도에 따라 실적이 좌우되는 구조를 안고 있다. 5G·6G 기반 비지상네트워크(NTN) 확산과 항공·방산 분야로의 응용 확대는 중장기적으로 시장 규모를 넓히는 요인으로 꼽힌다.",
-  "en": "The global satellite communications industry is being reshaped around the expansion of LEO megaconstellations, with Starlink (SpaceX) leading the market while a non-Starlink camp comprising Eutelsat OneWeb, Amazon Kuiper, AST SpaceMobile, SES, and Telesat pursues supply diversification. In Korea, in May 2025 the Ministry of Science and ICT approved cross-border supply agreements covering Starlink Korea-SpaceX, Hanwha Systems-OneWeb, and KT SAT-OneWeb, creating conditions for OneWeb's service to formally launch domestically. Intellian Technologies, a key partner supplying flat-panel antennas for OneWeb's service, stands to benefit as various countries, including in Europe and Canada, pursue supply-source diversification strategies to reduce reliance on Starlink. In terms of industry cycle positioning, 2024's weak results are viewed by market observers as a trough, with a recovery phase beginning in the second half of 2025 driven by growing demand for gateway and flat-panel antennas. Competitively, Intellian's broad partnerships with major non-Starlink operators reduce dependence on any single customer, though results remain tied to the pace at which those customers expand their own services. The spread of 5G/6G-based non-terrestrial networks (NTN) and expanding applications in aviation and defense are cited as factors that could widen the addressable market over the medium to long term."
+  "ko": "위성통신 시장은 저궤도 위성 구조로 바뀌면서 지상 장비 수요가 함께 커지는 국면이다. 위성통신 구조가 정지궤도(GEO)에서 저궤도 또는 저궤도와 정지궤도가 섞인 형태로 옮겨 가고 있다는 것이 하나증권의 분석이다. 데일리인베스트가 전한 증권가 분석은 2026년을 비(非) 스타링크 진영의 사업 확장 원년으로 보고, 게이트웨이와 해상용 안테나 매출이 함께 성장할 것으로 내다봤다. 원웹과 AST 스페이스모바일 등 스타링크 외 저궤도 사업자의 인프라 구축이 본격화되면서 구조적 수혜가 기대된다는 평가다. 국방 위성통신 시장도 넓어지는 흐름이다. 계약 상대 NI는 미국, 유럽연합, 캐나다, 일본, 호주 등 위성통신 현대화를 추진 중인 국가의 국방 시장을 공동 공략할 방침이라고 밝혔다. 경쟁 측면에서 회사는 다중 궤도 추적 기술과 다중 밴드 RF 기술을 강점으로 내세운다. 스타링크는 자체 위성망과 단말기를 묶은 구조라 인텔리안테크는 스타링크 외 위성망에 장비를 공급하는 위치에 있다. 해상용 부문은 기존 사업이라 저궤도 제품과 성장 속도가 다르며, 해상 매출의 안정성이 전체 실적의 하단을 받치는 역할을 한다. 한편 신한투자증권은 2026년 초 보고서에서 고객사의 지상 인프라 투자와 가입자 모집 속도에 따라 실적 변동성이 있을 수 있다고 지적했다.",
+  "en": "The satellite communications market is entering a phase in which ground equipment demand grows alongside the shift to LEO constellations. Hana Securities' analysis describes satellite network structures moving from geostationary orbit toward LEO or mixed LEO and GEO configurations. A brokerage view relayed by Daily Invest regards 2026 as the first year of business expansion for the non-Starlink camp, with gateway and maritime antenna sales growing together. Infrastructure builds by OneWeb, AST SpaceMobile and other non-Starlink LEO operators are expected to give the company structural benefits. Defense satellite communications is also widening, and the contract counterparty Network Innovations said the two companies plan to pursue defense markets jointly in the United States, the European Union, Canada, Japan and Australia. On competition, the company highlights multi-orbit tracking and multi-band RF technology in its terminals. Starlink operates its own satellite network and terminals, so Intellian supplies equipment to operators outside that ecosystem. The maritime business is an established line and its growth pace differs from LEO products, but its stability supports the overall revenue base. Shinhan Investment Corp. has noted that results could fluctuate with the pace of ground infrastructure investment and subscriber acquisition by customers."
  },
  "outlook": {
-  "ko": "회사는 향후 항공 및 군용 분야로 포트폴리오를 고도화해 시장 경쟁력을 강화하겠다는 계획을 밝혔으며, 5G·6G 기반 비지상네트워크(NTN) 확산에 대응해 신규 제품 개발을 이어갈 방침이다. 게이트웨이 부문은 글로벌 저궤도 사업자들의 지상 네트워크 확장에 힘입어 매출과 수주가 동시에 늘고 있으며, 2025년 3분기에는 AST 스페이스모바일로부터 게이트웨이 개발 수주를 추가로 확보했다. 유안타증권은 2026년 5월 리포트에서 원웹향 유저 터미널 공급 확대와 특정 고객사(Company A)향 게이트웨이 매출 증가를 근거로 2026년 매출액을 4,107억원, 영업이익을 401억원으로 전망했다. 신한투자증권은 2026년 1월 리포트에서 2026년 매출액 4,011억원, 영업이익 339억원을 예상하며 역대 최고 실적 경신 가능성을 제시했다. 회사는 2026년 9월 초 미국 캘리포니아 신공장에서 게이트웨이 안테나 첫 출하를 완료했다고 밝혔으며, 이를 통해 북미 핵심 고객에 대한 현지 공급 대응력을 확보했다고 설명했다. 다만 미국 현지 생산라인 가동에 따른 비용 증가 요인이 존재해, 외형 성장과 영업 레버리지가 이를 상쇄할 수 있을지가 관전 포인트로 꼽힌다. 원웹 2세대(Gen 2) 위성군 게이트웨이 프로젝트 참여 등 신규 대형 수주 여부도 향후 실적 가시성을 좌우할 변수로 언급된다.",
-  "en": "The company has stated plans to strengthen its market competitiveness by upgrading its portfolio in aviation and military applications, and intends to continue new product development in response to the spread of 5G/6G-based non-terrestrial networks (NTN). The gateway segment has seen simultaneous growth in sales and orders as global LEO operators expand their ground network infrastructure, and in Q3 2025 the company secured an additional gateway development order from AST SpaceMobile. Yuanta Securities, in a May 2026 report, forecast 2026 revenue of KRW 410.7bn and operating profit of KRW 40.1bn, citing expanded OneWeb user-terminal supply and growing gateway sales to a specific customer (\"Company A\"). Shinhan Investment, in a January 2026 report, projected 2026 revenue of KRW 401.1bn and operating profit of KRW 33.9bn, suggesting the potential for a record year. The company announced in early September 2026 that it had completed its first gateway antenna shipment from its new California plant, saying this secured local supply capability for key North American customers. However, cost increases tied to ramping up the U.S. production line remain a factor, making it a key point to watch whether revenue growth and operating leverage can offset this pressure. Potential participation in OneWeb's second-generation (Gen 2) satellite constellation gateway project and other large new orders are also cited as variables that will affect earnings visibility going forward."
+  "ko": "회사가 발표한 분기 흐름은 2026년 1분기와 2분기에 같은 분기 기준 역대 최대 실적을 기록했다는 점이다. 2026년 2분기 매출은 전년 동기 대비 30% 증가해 역대 2분기 최대치를 기록했다. 3분기 매출은 762억원으로 전년 동기 대비 1.4% 감소해 분기 성장세가 일정하지 않았다. 수주 측면에서는 2025년 말 기준 수주잔고가 4,286억원으로 전년 대비 68.7% 증가했고, 이 가운데 게이트웨이 관련 수주잔고가 2,922억원으로 성장세를 이끌었다. 하나증권 자료에 따르면 Telesat 게이트웨이 계약은 2027년 12월 31일까지, SES 단말기 계약은 2029년 9월 30일까지로 잡혀 있다. 2026년 9월에 체결된 NI 계약은 2026년 09월 10일부터 2032년 12월 31일까지로 약 6년 3개월 기간이다. 회사는 미국 공장에서 안테나 출하를 시작했다는 소식도 알렸다. 증권사 추정치로는 2026년 매출액이 4,107억원으로 전년 대비 28.5% 증가하고, 영업이익은 401억원으로 전망됐다. 다만 2026년 1~3분기 영업이익은 5.9억원, 71.4억원, 영업손실 27.6억원으로 누계가 100억원을 밑돈다. 따라서 4분기 이후 영업이익이 어느 수준으로 올라오는지가 추정치와 실적 간 간격을 좁히는 핵심 지점이다. 차세대 위성망 구축을 준비하는 고객사들의 신규 게이트웨이 프로젝트도 수주 가능성 측면에서 거론된다.",
+  "en": "Among the quarterly results, the company reported record same-quarter revenue in both Q1 and Q2 2026. Q2 2026 revenue rose 30% year on year to a record for a second quarter. Q3 2026 revenue of KRW 76.2 billion, down 1.4% year on year, shows that quarterly growth has not been steady. On orders, Yuanta Securities reported that backlog at end-2025 reached KRW 428.6 billion, up 68.7%, with gateway backlog at KRW 292.2 billion leading growth. According to Hana Securities' February 2026 data, the Telesat gateway contract runs through December 31, 2027 and the SES terminal contract through September 30, 2029. The September 2026 Network Innovations contract covers a period from September 10, 2026 to December 31, 2032, about six years and three months. The company also said it began shipping antennas from its U.S. plant. Securities firms estimated 2026 revenue of KRW 410.7 billion, up 28.5%, and operating profit of KRW 40.1 billion. Operating profit for Q1–Q3 2026 was KRW 593 million, KRW 7.14 billion and an operating loss of KRW 2.76 billion, adding up to less than KRW 10 billion. Whether operating profit recovers in Q4 and later is therefore the key point for narrowing the gap with estimates. New gateway projects from customers preparing next-generation satellite networks are also cited as an order opportunity."
  },
  "valuation_comment": {
-  "ko": "인텔리안테크는 2024년 영업손실에서 2025년 흑자로 전환한 뒤 2026년에도 분기 흑자 기조를 이어가는 국면에 있어, 시장의 평가 축은 과거의 적자 우려에서 이익 회복의 지속성과 속도로 옮겨가고 있다. 이 같은 실적 전환 기대를 반영해 주가는 과거 적자기 대비 거래되는 배수 구간이 상당히 높아진 편이며, 순자산 대비로도 프리미엄이 형성된 구간에서 거래되고 있다. 배당의 경우 회사가 성장 투자를 병행하는 사업 특성상 배당수익률은 안정형 배당주 대비 낮은 수준에 머물러 있는 것으로 파악된다. 다만 분기별 영업이익 편차가 커 이익 회복의 지속성에 대한 평가가 엇갈릴 수 있으며, 향후 실적 발표와 수주 흐름에 따라 시장의 배수 적용 수준도 함께 움직일 가능성이 있다.",
-  "en": "Having turned from an operating loss in 2024 to a profit in 2025 and sustained quarterly profitability into 2026, Intellian Technologies is at a stage where market assessment is shifting from concerns over past losses toward the durability and pace of earnings recovery. Reflecting this turnaround narrative, the stock has traded at multiples considerably higher than during its loss-making period, and it also trades at a premium to book value. Given the company's growth-investment profile, its dividend yield appears to remain below that of stable dividend-paying peers. That said, wide swings in quarterly operating profit mean views on the durability of the earnings recovery can diverge, and the multiples the market applies may continue to move alongside upcoming earnings releases and order flow."
+  "ko": "밸류에이션은 이익 규모와 순자산을 기준으로 보는 것이 출발점이다. 최근 4개 분기 지배주주 순이익 합계는 161억원으로, 시가총액 규모와 견주면 수십 배 차이가 난다. 2025년 말 지배주주 지분 2,663억원과 비교하면 시가총액은 그 두 배를 웃도는 수준이다. 과거 연말 주가순자산비율은 2021년 5.1배, 2022년 3.4배, 2023년 2.8배였고 적자 해인 2024년에는 1.5배까지 낮아졌다(하나증권 자료). 현재 주가순자산비율은 2021~2023년 연말 수준보다 낮은 구간에 있다. 신한투자증권은 2026년 초 보고서에서 2026년과 2027년 PER이 업종 평균 대비 낮다고 평가했다. 반면 2026년 1~3분기 영업이익 누계가 100억원을 밑도는 만큼, 추정치 기준 배수와 실제 실적 기준 배수는 서로 다르게 읽힌다. 배당수익률은 주가 대비 작은 수준이어서 현재 가치는 이익 회복에 대한 기대에 기대는 비중이 크다고 해석할 수 있다.",
+  "en": "The starting point for valuation is earnings scale and net assets. Net income attributable to controlling shareholders over the last four quarters totals KRW 16.1 billion, which is tens of times smaller than the company's market capitalization. Compared with controlling-shareholder equity of KRW 266.3 billion at end-2025, market capitalization is more than twice that level. Year-end price-to-book ratios were 5.1x in 2021, 3.4x in 2022 and 2.8x in 2023, falling to 1.5x in 2024, the loss year (Hana Securities data). The current price-to-book ratio sits below the year-end levels of 2021–2023. Shinhan Investment Corp. stated in an early 2026 report that its 2026 and 2027 PER estimates are below the industry average. Because operating profit for Q1–Q3 2026 totals less than KRW 10 billion, multiples based on forecasts and on reported earnings read very differently. The dividend yield is small relative to the share price, so the valuation leans more on expectations of earnings recovery than on cash returns."
  },
  "bull": [
   {
    "title": {
-    "ko": "사업 다변화에 따른 매출원 확대",
-    "en": "Revenue Base Expansion via Diversification"
+    "ko": "저궤도 위성 인프라 확대",
+    "en": "LEO infrastructure expansion"
    },
    "body": {
-    "ko": "해상용 안테나 중심에서 저궤도 게이트웨이·평판형 안테나·방산 제품으로 사업을 넓히면서 특정 제품군 의존도가 낮아지고 있다. 2026년 2분기 실적은 해상용의 안정적 매출에 신사업 부문의 성장이 더해진 결과로 설명되며, 게이트웨이 부문은 글로벌 사업자들의 네트워크 확장과 함께 매출·수주가 동시에 늘고 있다. 방산·정부 시장으로의 확장도 매출 다각화에 기여하고 있는 것으로 파악된다.",
-    "en": "By expanding from maritime-focused antennas into LEO gateway systems, flat-panel terminals, and defense products, the company is reducing reliance on any single product line. Q2 2026 results were driven by stable maritime sales combined with growth in newer business lines, and the gateway segment has seen simultaneous growth in sales and orders alongside global operators' network expansion. Expansion into defense and government markets is also seen as contributing to revenue diversification."
+    "ko": "원웹, SES, AST 스페이스모바일 등 스타링크 외 진영의 서비스가 본격화되면서 평판형 안테나와 게이트웨이 수요가 함께 늘고 있다. 하나증권 추정으로 2025년 저궤도 제품 매출 비중은 70%까지 올라왔다. 회사는 2026년 1분기 매출이 전년 동기 대비 49.3% 증가해 1분기 역대 최대 실적을 기록했다고 밝혔다.",
+    "en": "As services by non-Starlink operators such as Eutelsat OneWeb, SES and AST SpaceMobile scale up, demand for flat-panel antennas and gateways is growing together. Hana Securities estimates LEO products reached about 70% of 2025 revenue. The company said Q1 2026 revenue rose 49.3% year on year to a record first quarter."
    }
   },
   {
    "title": {
-    "ko": "역대 최대 수주잔고에 따른 실적 가시성",
-    "en": "Earnings Visibility from Record Order Backlog"
+    "ko": "수주잔고와 계약 가시성",
+    "en": "Backlog and contract visibility"
    },
    "body": {
-    "ko": "2025년 말 기준 수주잔고는 약 4,286억원으로 전년 대비 68.7% 늘며 역대 최대치를 기록했고, 이 중 게이트웨이 관련 수주잔고가 성장을 주도했다. 수주 모델도 단발성(Spot) 발주에서 장기 공급계약으로 전환되는 흐름이 나타나고 있다는 분석이 제기된다. 이는 향후 서비스 개시에 따른 매출 실현 가능성을 높이는 요인으로 지목된다.",
-    "en": "The order backlog reached a record roughly KRW 428.6bn at end-2025, up 68.7% year-on-year, led by growth in gateway-related orders. Analysts have pointed to a shift in the order model from one-off spot purchase orders toward longer-term supply contracts. This is cited as a factor that increases the likelihood of revenue realization as customer services roll out."
+    "ko": "2025년 말 수주잔고는 4,286억원으로 전년 대비 68.7% 증가했고 이 가운데 게이트웨이가 2,922억원이었다(유안타증권). 2026년 9월에는 국방용 지상 단말기 계약 409.4억원을 체결했고 기간은 2032년 12월 31일까지다. 계약 금액은 양사 합의에 따라 추가로 확대될 수 있다.",
+    "en": "Backlog at end-2025 reached KRW 428.6 billion, up 68.7%, with gateways at KRW 292.2 billion (Yuanta Securities). The defense ground terminal contract signed in September 2026 is worth KRW 40.94 billion and runs through 2032. The parties have said the contract value could be expanded further by agreement."
    }
   },
   {
    "title": {
-    "ko": "제품 믹스 개선에 따른 마진 회복",
-    "en": "Margin Recovery from Product Mix Improvement"
+    "ko": "사업 다변화와 현지 생산",
+    "en": "Diversification and local production"
    },
    "body": {
-    "ko": "2024년 영업손실에서 2025~2026년 분기 흑자로 전환한 배경에는 기존 정지궤도(GEO) 매출에서 게이트웨이 및 저궤도 평판형 안테나 등 고수익성 제품으로의 매출 전환이 자리하고 있다는 분석이 제시됐다. 2026년 2분기 영업이익은 전년 동기 대비 304% 증가하며 외형 성장 이상의 이익 개선을 보였다. 캘리포니아 신공장 가동을 통한 현지 공급망 대응력 강화도 중장기 수익성에 긍정적 요인으로 거론된다.",
-    "en": "Behind the shift from a 2024 operating loss to quarterly profits in 2025-2026 is a transition in sales mix from traditional GEO satellite products toward higher-margin gateway systems and LEO flat-panel antennas, according to analyst commentary. Q2 2026 operating profit grew 304% year-on-year, outpacing revenue growth. Strengthening local supply-chain response capability through the new California plant is also cited as a positive factor for medium-term profitability."
+    "ko": "해상용 안테나 외에 군용 휴대용 안테나 맨팩과 방산용 지상 단말기가 매출 구성에 더해졌다. 미국 얼바인 공장 가동으로 북미 현지 공급 체계를 갖췄다는 평가가 나온다. 2026년 2분기 매출은 972억원으로 전년 동기 대비 30% 증가해 2분기 역대 최대치였다.",
+    "en": "Beyond maritime antennas, the Manpack military portable antenna and defense ground terminals have been added to the revenue mix. Operations at the Irvine plant are cited as supporting a North American supply base. Q2 2026 revenue of KRW 97.2 billion rose 30% year on year, a record for a second quarter."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "분기별 실적 편차와 고객 발주 의존",
-    "en": "Quarterly Volatility and Customer Order Dependence"
+    "ko": "3분기 손익의 적자 전환",
+    "en": "Swing to loss in Q3 2026"
    },
    "body": {
-    "ko": "2026년 1분기 영업이익은 5.9억원으로 4분기 198.6억원 대비 크게 낮아지는 등 계절성과 고객사 발주 시점에 따라 실적 편차가 크게 나타난다. 게이트웨이·평판형 안테나 매출이 고객사의 네트워크 투자 및 가입자 확보 속도에 좌우되는 구조여서, 서비스 확산이 지연될 경우 매출 인식 시점도 함께 늦춰질 수 있다.",
-    "en": "Q1 2026 operating profit fell sharply to KRW 0.6bn from KRW 19.9bn in Q4 2025, illustrating how results can vary significantly with seasonality and the timing of customer orders. Because gateway and flat-panel antenna revenue depends on the pace of customers' network investment and subscriber acquisition, any delay in service rollout could also push back revenue recognition."
+    "ko": "2026년 3분기 영업손실은 27.6억원, 지배주주 순손실은 244억원으로 2분기 흑자에서 적자로 돌아섰다. 매출도 762억원으로 전년 동기 대비 1.4% 감소했다. 분기 흑자 기조가 이어질지는 2026년 4분기 잠정 실적에서 확인해야 할 지점이다.",
+    "en": "Q3 2026 recorded an operating loss of KRW 2.76 billion and a net loss attributable to controlling shareholders of KRW 24.4 billion, reversing the profitable Q2. Revenue of KRW 76.2 billion fell 1.4% year on year. Whether the profit run continues will be visible in the preliminary Q4 2026 results."
    }
   },
   {
    "title": {
-    "ko": "미국 현지 생산 비용 부담",
-    "en": "Cost Burden from U.S. Local Production"
+    "ko": "현금흐름과 재무 부담",
+    "en": "Cash flow and balance sheet pressure"
    },
    "body": {
-    "ko": "미국 캘리포니아 신공장 가동에 따라 현지 생산라인 증설 비용이 발생하고 있으며, 이는 매출 볼륨 확대에 따른 영업 레버리지 효과로 상쇄되어야 하는 요인으로 지목된다. 초기 양산 안정화 단계에서는 비용 부담이 일시적으로 마진을 압박할 가능성이 있다.",
-    "en": "Ramping up the new California plant entails costs associated with expanding the local production line, a factor analysts note needs to be offset by operating leverage from higher sales volume. During the initial mass-production stabilization phase, these costs could temporarily pressure margins."
+    "ko": "2025년 영업활동 현금흐름은 -182억원으로 흑자 해에도 현금이 빠져나갔다. 2022년에도 -261억원이었다. 부채비율은 2025년 86.4%로 2024년 66.5%에서 올랐으며, 부채총계는 2,302억원, 자본총계는 2,663억원이다.",
+    "en": "Operating cash flow was -KRW 18.2 billion in 2025, negative even in a profit year, and was -KRW 26.1 billion in 2022. The debt ratio rose to 86.4% in 2025 from 66.5% in 2024, with total liabilities of KRW 230.2 billion and total equity of KRW 266.3 billion."
    }
   },
   {
    "title": {
-    "ko": "비(非) 스타링크 진영 성장 속도에 대한 의존",
-    "en": "Dependence on Non-Starlink Camp Growth Pace"
+    "ko": "고객 의존과 추정 간격",
+    "en": "Customer concentration and estimate gap"
    },
    "body": {
-    "ko": "인텔리안테크는 시장 최대 사업자인 스타링크에는 직접 공급하지 않고 원웹, AST 스페이스모바일, SES, 텔레샛 등 비 스타링크 진영에 주로 공급하는 구조다. 이들 사업자의 서비스 확산과 투자 속도가 예상보다 느려지거나 경쟁 구도가 스타링크 쪽으로 더 기울 경우 성장 전제가 흔들릴 수 있다는 점이 지적된다.",
-    "en": "Intellian does not supply the market's largest operator, Starlink, directly, instead primarily serving the non-Starlink camp including OneWeb, AST SpaceMobile, SES, and Telesat. If these operators' service expansion and investment pace slow more than expected, or if the competitive landscape tilts further toward Starlink, the underlying growth premise could be weakened."
+    "ko": "A사향 게이트웨이처럼 특정 고객 의존도가 있는 품목이 있고, 고객의 지상 인프라 투자와 가입자 모집 속도에 따라 실적이 흔들릴 수 있다는 지적이 증권가에서 나온다(신한투자증권). 증권사 추정 영업이익 대비 2026년 1~3분기 실제 누계는 크게 낮아 추정 신뢰도도 변수다.",
+    "en": "Some product lines, such as gateways for one major customer, depend on a specific client, and results could fluctuate with customers' ground infrastructure spending and subscriber growth (Shinhan Investment Corp.). Reported operating profit for Q1–Q3 2026 is far below the full-year forecasts, which makes the reliability of estimates a variable."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중도",
-    "en": "Customer Concentration"
+    "ko": "고객·수주 집중",
+    "en": "Customer and order concentration"
    },
    "body": {
-    "ko": "대형 공급계약이 특정 고객사(예: 공시상 'Company A', AST 스페이스모바일 등)에 집중되는 경향이 있어, 단일 고객의 발주 축소나 계약 지연이 실적에 미치는 영향이 상대적으로 크다. 단일판매·공급계약 공시가 반복적으로 이뤄지는 구조라 계약 조건 변경 여부를 지속적으로 확인할 필요가 있다.",
-    "en": "Large supply contracts tend to be concentrated with specific customers (such as the disclosed 'Company A' and AST SpaceMobile), meaning a reduction or delay in orders from a single customer could have a relatively large impact on results. Because large single-sale/supply contracts are disclosed repeatedly, monitoring changes in contract terms remains important."
+    "ko": "게이트웨이 수주잔고가 일부 고객과의 계약에 묶여 있어 고객의 투자 일정이 늦어지면 매출 인식 시점도 밀릴 수 있다. 계약 기간이 2027년부터 2032년까지 나뉘어 있어 분기별 매출은 특정 프로젝트의 인도 시기에 따라 크게 움직일 수 있다. 수주 공시가 있더라도 실제 매출 인식은 인도 일정에 따른다는 점이 리스크다.",
+    "en": "Part of the gateway backlog is tied to contracts with a few customers, so delays in their infrastructure schedules could push back revenue recognition. Contract periods run from 2027 to 2032, so quarterly revenue can swing with the delivery timing of individual projects. Even when orders are disclosed, actual revenue depends on delivery schedules."
    }
   },
   {
    "cat": {
-    "ko": "환율·현지 생산 비용",
-    "en": "FX and Local Production Costs"
+    "ko": "스타링크 등 경쟁 구도",
+    "en": "Competition from Starlink and others"
    },
    "body": {
-    "ko": "미국 캘리포니아 신공장 가동으로 현지 생산 비중이 늘면서 인건비·설비 투자 등 현지화 비용과 환율 변동에 대한 노출이 커질 수 있다. 글로벌 공급망 상황이나 관세 정책 변화도 원가에 영향을 줄 수 있는 변수로 꼽힌다.",
-    "en": "As local production share increases with the ramp-up of the new California plant, exposure to localization costs such as labor and equipment investment, as well as currency fluctuations, may grow. Changes in global supply chain conditions or tariff policy are also cited as variables that could affect costs."
+    "ko": "스타링크가 자체 위성망과 단말기를 묶어 공급하는 구조는 스타링크 외 진영이 성장하는 데 변수다. 비스타링크 진영의 서비스가 예정대로 확대되지 않으면 평판형 안테나 수요도 기대만큼 늘지 않을 수 있다. 경쟁 장비 업체의 기술과 가격 대응도 마진 압력으로 이어질 수 있다.",
+    "en": "Starlink's integrated satellite network and terminal model is a variable for the growth of the non-Starlink camp. If services by non-Starlink operators do not expand on schedule, demand for flat-panel antennas may fall short of expectations. Competing equipment makers' technology and pricing could also create margin pressure."
    }
   },
   {
    "cat": {
-    "ko": "기술 전환·R&D 투자 부담",
-    "en": "Technology Transition and R&D Investment Burden"
+    "ko": "국방 계약과 해외 생산",
+    "en": "Defense contracts and overseas production"
    },
    "body": {
-    "ko": "2024년 영업손실은 신제품 개발을 위한 R&D 투자 확대와 관련이 있다는 분석이 있었던 만큼, 향후 AESA(능동전자주사식배열) 등 차세대 안테나 기술 개발 과정에서도 유사한 비용 부담이 재발할 가능성이 있다. 개발한 신제품의 상업화 시점이 지연될 경우 투자 회수 시점도 함께 늦춰질 수 있다.",
-    "en": "Given that the 2024 operating loss has been linked to expanded R&D investment for new product development, similar cost pressures could recur during development of next-generation antenna technologies such as AESA (Active Electronically Steerable Array). If commercialization of new products is delayed, the timing of investment payback could also be pushed back."
+    "ko": "국방용 단말기 계약은 정부 예산과 승인 일정에 따라 인도 시기가 바뀔 수 있다. 미국 공장 가동 초기에는 생산 효율과 원가 구조가 자리 잡는 과정이 필요하다. 국가별 국방 시장 진입 속도와 관세·통상 환경도 해외 매출의 변수다.",
+    "en": "Defense terminal contracts can shift in delivery timing with government budgets and approval schedules. Early operations at the U.S. plant require time for production efficiency and cost structure to settle. The pace of entry into national defense markets and the trade environment are also variables for overseas revenue."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중",
-    "en": "Mid-November 2026"
+    "ko": "2027년 2월 초 무렵(예상)",
+    "en": "Early February 2027 (expected)"
    },
    "what": {
-    "ko": "2026년 3분기 잠정 실적 발표 예정 시점으로, 게이트웨이·저궤도 평판형 안테나 매출 비중과 미국 공장 가동에 따른 마진 영향을 확인할 필요가 있다.",
-    "en": "Expected timing for preliminary Q3 2026 earnings release; watch the revenue mix from gateway and LEO flat-panel antennas and the margin impact from the California plant ramp-up."
+    "ko": "2026년 4분기 잠정 실적. 3분기 영업손실이 4분기에도 이어지는지, 영업이익이 2025년 4분기 수준(199억원)에 가까워지는지 확인하는 지점이다.",
+    "en": "Preliminary Q4 2026 results. The checkpoint is whether the Q3 operating loss continues into Q4 and whether operating profit approaches the Q4 2025 level of KRW 19.9 billion."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기 중",
-    "en": "Q4 2026"
+    "ko": "2027년 3월 말(사업보고서 제출 기한)",
+    "en": "End of March 2027 (annual report filing deadline)"
    },
    "what": {
-    "ko": "원웹 2세대(Gen 2) 위성군 게이트웨이 프로젝트나 신규 대형 고객사 수주 여부에 대한 공시가 있을지 확인이 필요하다.",
-    "en": "Check for disclosures on whether the company secures OneWeb's second-generation (Gen 2) constellation gateway project or other new large customer contracts."
+    "ko": "2026년 사업보고서. 연간 영업이익률, 영업활동 현금흐름, 86.4%였던 부채비율의 변화와 3분기 순손실을 구성한 영업 외 항목을 확인하는 지점이다.",
+    "en": "The 2026 annual report. Checkpoints include the full-year operating margin, operating cash flow, changes from the 86.4% debt ratio, and the non-operating items behind the Q3 net loss."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기~2027년 초",
-    "en": "Q4 2026 to early 2027"
+    "ko": "2027년 5월 중순 무렵(예상)",
+    "en": "Mid-May 2027 (expected)"
    },
    "what": {
-    "ko": "미국 캘리포니아 공장의 양산 안정화 진행 상황과 현지 생산 비중 확대에 따른 원가 구조 변화를 점검할 필요가 있다.",
-    "en": "Monitor the progress of mass-production stabilization at the California plant and any changes in cost structure from expanding local production share."
+    "ko": "2027년 1분기 실적. 2026년 1분기 매출 647억원 대비 증가 여부와 게이트웨이 매출 인식 속도를 확인하는 지점이다.",
+    "en": "Q1 2027 results. The checkpoint is whether revenue rises from KRW 64.7 billion in Q1 2026 and how quickly gateway revenue is recognized."
    }
   },
   {
    "when": {
-    "ko": "2027년 2~3월경",
-    "en": "Around February-March 2027"
+    "ko": "2026년 11월 이후 수시",
+    "en": "Ongoing from November 2026 (as disclosed)"
    },
    "what": {
-    "ko": "2026년 연간 확정 실적(DART 공시)이 발표되는 시점으로, 연간 매출·영업이익이 각 증권사 전망치(4,000억원대 매출, 300억원대 영업이익 안팎)에 부합하는지 확인이 필요하다.",
-    "en": "Timing for the confirmed 2026 full-year results (DART filing); check whether annual revenue and operating profit align with analyst forecasts (revenue in the low-KRW-400bn range, operating profit around the low-KRW-30bn range)."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 하반기 중",
-    "en": "Second half of 2026"
-   },
-   "what": {
-    "ko": "국내 스타링크·원웹 서비스의 실제 상용화 진행 상황과 이에 따른 국내 저궤도 위성통신 단말 수요 변화를 살펴볼 필요가 있다.",
-    "en": "Track the actual commercial rollout progress of Starlink and OneWeb services in Korea and resulting changes in domestic demand for LEO satellite communication terminals."
+    "ko": "수주·계약 공시. NI 계약의 추가 확대 여부, Telesat·SES 등 기존 계약의 추가 공시, 차세대 위성망 게이트웨이 신규 수주 여부를 확인하는 지점이다.",
+    "en": "Order and contract disclosures. Checkpoints include any expansion of the NI contract, new disclosures on existing Telesat and SES contracts, and new gateway orders tied to next-generation satellite networks."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "인텔리안테크는 해상용 안테나에 편중됐던 사업구조를 저궤도 게이트웨이·평판형 안테나·방산으로 다변화하며 2024년 영업손실에서 2025~2026년 분기 흑자로 이익 구조를 전환시켰다. 2025년 말 기준 역대 최대 수준의 수주잔고와 미국 캘리포니아 신공장 가동은 향후 매출 가시성과 현지 공급 대응력을 뒷받침하는 요소로 거론된다. 다만 분기별 영업이익 편차가 크고, 고객사의 네트워크 투자·서비스 확산 속도에 실적이 좌우되는 구조여서 성장의 지속성을 확인하는 데는 시간이 더 필요하다. 스타링크를 제외한 비 스타링크 진영의 성장이 핵심 전제인 만큼, 원웹·AST 스페이스모바일 등 주요 고객사의 서비스 확대 속도와 신규 대형 수주 여부가 다음 판단 근거가 될 것으로 보인다. 밸류에이션 측면에서는 실적 턴어라운드 기대가 이미 상당 부분 반영된 상태로, 향후 분기 실적과 수주 흐름에 따라 시장의 평가가 달라질 수 있다.",
-   "en": "Intellian Technologies has diversified from a maritime-antenna-centric business into LEO gateway, flat-panel antenna, and defense products, transforming its earnings structure from a 2024 operating loss into quarterly profitability through 2025-2026. A record order backlog as of end-2025 and the ramp-up of the new California plant are cited as factors supporting future revenue visibility and local supply responsiveness. However, given significant quarter-to-quarter swings in operating profit and a business structure dependent on the pace of customers' network investment and service rollout, more time is needed to confirm the durability of this growth. Since growth of the non-Starlink camp remains the core premise, the pace of service expansion by key customers such as OneWeb and AST SpaceMobile, along with any new large orders, will likely serve as the next basis for assessment. On the valuation side, expectations for an earnings turnaround already appear substantially priced in, and how the market values the stock going forward may continue to shift with quarterly results and order flow."
+   "ko": "인텔리안테크는 2025년 매출 3,196억원(전년 대비 24.0% 증가)과 영업이익 120억원으로 적자에서 흑자로 돌아섰고, 2026년 1분기와 2분기에는 같은 분기 기준 역대 최대 실적을 기록했다고 회사가 밝혔다. 수주잔고는 2025년 말 4,286억원으로 늘었고, 2026년 9월에는 국방용 지상 단말기 계약 409.4억원이 추가됐다. 반면 2026년 3분기에는 영업손실 27.6억원과 지배주주 순손실 244억원이 나타나 분기 수익성이 이어질지는 아직 불확실하다. 2025년 영업활동 현금흐름은 -182억원이었고 부채비율은 86.4%로 올랐다. 강세 요인은 저궤도 위성 인프라 확대와 수주 가시성이며, 약세 요인은 분기 손익 변동성, 특정 고객 의존, 추정치와 실제 실적의 간격이다. 밸류에이션은 최근 4개 분기 지배주주 순이익 합계 161억원에 비해 시가총액이 크고, 과거 주가순자산비율 구간과 비교하면 해석이 엇갈린다. 다음 확인 지점은 2026년 4분기 잠정 실적과 2026년 사업보고서이며, 영업이익률과 영업현금흐름의 방향이 핵심이다.",
+   "en": "Intellian Technologies swung from a 2024 operating loss to 2025 operating profit of KRW 12 billion on revenue of KRW 319.6 billion, up 24.0%, and the company reported record same-quarter revenue in Q1 and Q2 2026. Backlog rose to KRW 428.6 billion at end-2025, and the September 2026 defense ground terminal contract of KRW 40.94 billion was added. Q3 2026 brought an operating loss of KRW 2.76 billion and a net loss attributable to controlling shareholders of KRW 24.4 billion, so whether quarterly profitability continues remains uncertain. Operating cash flow was -KRW 18.2 billion in 2025 and the debt ratio rose to 86.4%. Bullish factors are LEO infrastructure expansion and order visibility, while bearish factors are quarterly earnings volatility, customer dependence and the gap between estimates and reported results. On valuation, market capitalization is large relative to the KRW 16.1 billion of controlling-shareholder net income over the last four quarters, and comparisons with past price-to-book ranges can be read in different ways. The next checkpoints are the preliminary Q4 2026 results and the 2026 annual report, with the direction of operating margin and operating cash flow as the key items."
   }
  },
  "sources": [
-  "https://www.investing.com/equities/intellian-technologies-inc-earnings",
-  "https://www.hanaw.com/download/research/FileServer/WEB/info/small_cap/2026/02/09/260210_intelliantech_F.pdf",
-  "https://v.daum.net/v/20260515093417875",
-  "https://alphasquare.co.kr/home/stock-summary?code=189300",
-  "https://www.butler.works/ko/companies/00664181",
   "https://www.mt.co.kr/stock/2026/05/14/2026051416209634543",
-  "https://m.thebell.co.kr/m/newsview.asp?svccode=&newskey=202406222153040880106058",
+  "https://www.etnews.com/20260515000045",
+  "https://www.hanaw.com/download/research/FileServer/WEB/info/small_cap/2026/02/09/260210_intelliantech_F.pdf",
+  "https://www.hanaw.com/download/research/FileServer/WEB/info/small_cap/2026/02/05/260206_intelliantech_F.pdf",
+  "https://m.etnews.com/20260814000291",
+  "https://www.dailyinvest.kr/news/articleView.html?idxno=69936",
+  "https://www.ksdaily.co.kr/news/articleView.html?idxno=108574",
+  "https://goinsider.kr/en/stock/00664181",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=189300",
+  "https://zdnet.co.kr/view/?no=20260514160624",
   "https://news.nate.com/view/20260506n06101",
-  "https://www.etnews.com/20250530000160",
-  "https://www.bloter.net/news/articleView.html?idxno=652844",
-  "https://scent.kisti.re.kr/site/main/archive/article/%EC%96%B4%EB%94%94%EC%84%9C%EB%93%A0-%EC%9D%B8%ED%84%B0%EB%84%B7%EC%9D%84-%EC%93%B8-%EC%88%98-%EC%9E%88%EA%B2%8C-%EB%90%9C%EB%8B%A4-%EC%8A%A4%ED%83%80%EB%A7%81%ED%81%AC-%ED%95%9C%EA%B5%AD-%ED%86%B5%EC%8B%A0-%EC%8B%9C%EC%9E%A5-%EB%92%A4%EC%97%8E%EB%82%98",
-  "https://www.bloter.net/news/articleView.html?idxno=672472",
-  "https://intelliantech.com/kr/innovation",
-  "https://www.newspim.com/news/view/20260814001122",
-  "https://zdnet.co.kr/view/?no=20260814171929",
-  "https://www.bloter.net/news/articleView.html?idxno=671030",
-  "https://www.newstomato.com/ReadNews.aspx?no=1310360",
-  "https://www.bondweb.co.kr/_research/downloadPage.asp?number=881080&gn=1"
+  "https://m.news.nate.com/view/20260911n26143",
+  "https://m.news.nate.com/view/20260911n22972",
+  "https://www.thinkpool.com/item/189300/news/",
+  "https://bbn.kiwoom.com/research/SPdfFileView?rMenuGb=CR&attaFile=1771940703735.pdf&makeDt=2026.02.25"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "189300",
  "name": "인텔리안테크",
  "name_en": "INTELLIAN TECHNOLOGIES Inc.",
@@ -233,11 +220,11 @@
   "전자·부품"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 05:36",
- "dataDate": "20260904",
+ "reportDate": "2026-11-14",
+ "reportTs": "2026-11-14 07:36",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-09-04",
+  "asOf": "2026-11-13",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -307,12 +294,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 74736003382,
-    "op": 1763174467,
-    "np_owner": -4067811414
-   },
-   {
     "q": "2025Q3",
     "rev": 77226483698,
     "op": 2373046193,
@@ -335,29 +316,36 @@
     "rev": 97246184449,
     "op": 7136001845,
     "np_owner": 4745480377
+   },
+   {
+    "q": "2026Q3",
+    "rev": 76175182946,
+    "op": -2761822116,
+    "np_owner": -24379155063
    }
   ],
   "valuation": {
-   "price": 63100,
-   "mcap": 0.6775,
+   "price": 50800,
+   "mcap": 0.5455,
    "shares": 10737497,
    "total_shares": 10737497,
-   "wavg_shares": 10211545,
-   "per": 14.781,
-   "eps": 4269,
-   "pbr": 2.2529,
-   "bps": 28008,
-   "roe_ttm": 16.6,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": 43881240812,
+   "wavg_shares": 10218503,
+   "per": 32.606,
+   "eps": 1558,
+   "pbr": 1.9938,
+   "bps": 25479,
+   "roe_ttm": 6.4,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": 16143280982,
    "ccy": "KRW",
    "bps_src": "자체",
    "eps_src": "공시",
-   "pbr_krx": 2.42,
+   "pbr_krx": 1.95,
    "bps_krx": 26101.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 200.0,
-   "div": 0.32
+   "div": 0.39
   }
- }
+ },
+ "textRules": 2
 }

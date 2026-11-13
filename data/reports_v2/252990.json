@@ -1,220 +1,230 @@
 {
  "title": {
-  "ko": "세라믹STF 독점력, 디램·HBM 성장 올라타다",
-  "en": "Ceramic STF Leader Rides DRAM/HBM Growth Wave"
+  "ko": "샘씨엔에스, 메모리 테스트 부품의 이익 회복 구간",
+  "en": "Semcns: Profit recovery in memory test parts"
  },
  "lead": {
-  "ko": "샘씨엔에스는 국내 유일의 프로브카드용 세라믹 STF 공급업체로, 2023년 적자에서 2025년 흑자 확대를 거쳐 2026년 들어 분기마다 매출·이익이 갱신되는 이익 레버리지 국면에 진입했다.",
-  "en": "SEMCNS, the sole domestic supplier of ceramic STF for probe cards, has moved from a 2023 loss into expanding 2025 profitability and, through 2026, into a phase of quarter-on-quarter revenue and earnings records driven by operating leverage."
+  "ko": "샘씨엔에스는 프로브카드용 세라믹 STF를 만드는 기업으로, 2023년 적자 이후 2025년 영업이익 147억원을 기록했고 2026년 3분기까지 영업이익이 3개 분기 연속 증가했다. 디램·HBM 비중이 얼마나 커지는지가 다음 확인 지점이다.",
+  "en": "Semcns makes ceramic STF parts for probe cards; after an operating loss in 2023, its operating profit rose for three straight quarters through the third quarter of 2026, and whether DRAM and HBM widen its revenue mix is the next point to confirm."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출 779.9억원, 영업이익 146.7억원, 순이익 150.6억원으로 2023년 적자에서 완전히 벗어났다.",
-   "en": "2025 consolidated revenue reached KRW 77.99 billion with operating profit of KRW 14.67 billion and net profit of KRW 15.06 billion, a full recovery from the 2023 loss."
+   "ko": "매출 구조는 여전히 낸드에 기울어 있다. 2025년 3분기 기준 낸드용 세라믹 STF 매출은 400억원으로 전체의 72%였고, 디램용은 143억원이었다.",
+   "en": "The revenue mix still leans toward NAND. On a Q3 2025 basis, NAND ceramic STF sales were KRW 40 billion, or 72% of the total, while DRAM sales were KRW 14.3 billion."
   },
   {
-   "ko": "2026년 1분기와 2분기 매출이 각각 271.7억원, 312.7억원으로 전분기 대비 계속 늘었고 영업이익률도 30% 안팎까지 올라왔다.",
-   "en": "Revenue rose sequentially to KRW 27.17 billion in Q1 2026 and KRW 31.27 billion in Q2 2026, with the operating margin climbing to around 30 percent."
+   "ko": "2025년 매출 780억원은 2022~2025년 중 가장 큰 해다. 매출은 2024년부터 2025년까지 2년 연속 증가했다.",
+   "en": "Revenue of KRW 78 billion in 2025 was the largest year in 2022 to 2025, and sales have risen for two consecutive years since 2024."
   },
   {
-   "ko": "낸드 중심 매출 구조에서 디램·HBM향 비중이 구조적으로 확대되고 있다는 점이 최근 실적 개선의 핵심 축이다.",
-   "en": "A structural shift from NAND-centric revenue toward a larger DRAM/HBM share is a key axis behind the recent earnings improvement."
+   "ko": "2026년 3분기 영업이익은 112억원으로 전년 동기 대비 105.9% 증가했다. 같은 기간 지배주주 순이익은 전 분기 대비 7.7% 감소했다.",
+   "en": "Operating profit in the third quarter of 2026 was KRW 11.2 billion, up 105.9% year on year, while net profit attributable to controlling shareholders fell 7.7% from the previous quarter."
   },
   {
-   "ko": "Technoprobe향 디램 퀄 테스트, 미국 신규 고객사향 비메모리 STF 등 다수의 파이프라인이 진행 중이나 아직 검증·초기 단계다.",
-   "en": "Multiple pipelines—including a DRAM qualification test with Technoprobe and a non-memory STF project with a new U.S. customer—are underway but still in early or validation stages."
+   "ko": "2025년 말 부채비율은 52.4%로 2022년 78.9%에서 낮아졌다. 2025년 영업활동 현금흐름은 192억원이다.",
+   "en": "The debt-to-equity ratio fell to 52.4% at the end of 2025 from 78.9% in 2022, and operating cash flow in 2025 was KRW 19.2 billion."
   },
   {
-   "ko": "최대주주는 와이씨(YC)로 특수관계인 포함 약 59.2%의 지분을 보유하고 있다.",
-   "en": "The largest shareholder is YC Co., Ltd., which together with related parties holds roughly 59.2% of shares outstanding."
+   "ko": "HBM용 프로브카드 부품 공급 확대와 오송 공장 설비투자가 성장 변수로 거론되지만, 고객사 인증과 공장 가동률이 함께 확인돼야 한다.",
+   "en": "Wider supply of HBM probe-card parts and capacity investment at the Osong plant are cited as growth drivers, but customer qualification and plant utilization still need to be confirmed."
   }
  ],
  "business": {
-  "ko": "샘씨엔에스는 반도체 EDS 테스트 공정에서 사용되는 프로브카드의 핵심 부품인 세라믹 STF(Space Transformer)를 개발·생산하는 업체다. 세라믹 STF는 테스터 신호를 웨이퍼에 전달하고 MEMS Pin의 지지체 역할을 수행하는 정밀 다층 세라믹 부품으로, 회사는 소재부터 제품화까지 자체 개발 체계를 갖추고 있다. 직접 고객은 프로브카드 제조업체이며, 최종 고객은 삼성전자, SK하이닉스, 마이크론, 인텔 등 글로벌 메모리·반도체 IDM이다. 매출 구조는 낸드용 세라믹 STF 중심에서 디램용으로 비중이 옮겨가는 중으로, 낸드 매출 비중은 2023년 약 87%에서 2024년 75%, 2025년 상반기 72%까지 낮아졌고, 반대로 디램 비중은 2023년 9%에서 2025년 상반기 26%까지 높아졌다. 이는 HBM·서버용 디램 수요 확대와 해외 최종 고객사의 관련 수요가 반영된 결과로 설명된다. 비메모리(CIS, 차량용 MCU 등) 세라믹 STF는 아직 연간 수억 원 규모로 미미하지만 회사는 이를 신규 성장축으로 준비하고 있다. 생산 기지는 충북 오송 공장이 핵심으로, 상장 이후 공모자금을 활용한 증설과 추가 라인 투자가 이어져 왔다. 최대주주는 와이씨(YC)로 특수관계인을 포함해 약 59.2%의 지분을 보유하고 있으며, 세라믹 STF 시장은 기술 진입장벽이 높아 국내외 소수 업체가 과점하는 구조로 알려져 있다.",
-  "en": "SEMCNS develops and manufactures ceramic STF (Space Transformer), a core component of the probe cards used in semiconductor EDS test processes. Ceramic STF is a precision multilayer ceramic part that transmits tester signals to the wafer and supports MEMS pins, and the company has built an in-house development chain covering everything from materials to finished products. Its direct customers are probe card manufacturers, while the end customers are global memory and semiconductor IDMs such as Samsung Electronics, SK hynix, Micron, and Intel. The revenue mix is shifting from NAND-oriented ceramic STF toward DRAM: the NAND share fell from roughly 87% in 2023 to 75% in 2024 and to 72% in the first half of 2025, while the DRAM share rose from 9% in 2023 to 26% in the first half of 2025. This shift is attributed to growing demand for HBM and server DRAM and related demand from overseas end customers. Non-memory ceramic STF (for CIS, automotive MCU, etc.) remains a small business worth only a few hundred million won annually, but the company is positioning it as a new growth pillar. Its core production base is the Osong plant in Chungbuk, where the company has continued capacity expansion and additional line investment using IPO proceeds. The largest shareholder is YC Co., Ltd., which together with related parties holds about 59.2% of shares, and the ceramic STF market is described as an oligopoly of a small number of domestic and overseas players due to high technical entry barriers."
+  "ko": "샘씨엔에스는 반도체 웨이퍼 테스트 공정에서 쓰이는 프로브 카드의 핵심 부품인 세라믹 STF(Space Transformer)를 만들어 공급하는 기업이다. 2016년 삼성전기의 프로브카드용 세라믹 기판 사업부를 인수해 독립한 회사로, 저온 동시 소성 세라믹(LTCC) 공법으로 대면적 무수축 기판을 구현하는 기술을 내세운다. 매출은 메모리 쪽에 크게 기대고 있다. 2025년 3분기 기준으로 낸드 프로브카드용 세라믹 STF 매출은 400억원으로 전체 매출의 72%를 차지했고, 디램용은 143억원으로 집계됐다. 2024년 기준 디램 매출 비중은 약 23%로 알려졌으며, 낸드 중심 구조에서 디램과 비메모리 쪽으로 넓히는 것이 회사의 전략이다. 고객사는 삼성전자, SK하이닉스, 인텔, 마이크론, 키옥시아, TSMC, 웨스턴디지털 등으로, 회사 IR 자료에 공개된 목록이다. 프로브카드와 테스트 소켓 업체인 FormFactor, Technoprobe, TSE 등도 고객으로 거론된다. 세라믹 기판 제조 기술은 세계적으로 소수 업체만 보유한 것으로 평가된다. 생산 기반은 충북 오송 신공장으로, 2024년 2월 준공 이후 생산능력이 기존보다 3배 이상 늘었다고 회사 측이 밝혔다. 2025년 3분기 기준 생산능력은 4,680매 수준이고 평균가동률은 54.1%로 보도됐다. 비메모리(CIS) 프로브카드용 STF는 신규 시장으로 육성 중이나 매출 비중은 아직 작은 편이다.",
+  "en": "Semcns makes ceramic STF (Space Transformer) parts, the core component of probe cards used in wafer testing. The company was spun out in 2016 after acquiring the ceramic substrate division of Samsung Electro-Mechanics and uses low-temperature co-fired ceramic (LTCC) technology to produce large-area, non-shrinking substrates. Its sales lean heavily toward memory. On a Q3 2025 basis, NAND probe-card ceramic STF sales were KRW 40 billion, or 72% of total sales, while DRAM sales were KRW 14.3 billion. The DRAM share of sales was reported at about 23% in 2024, and the company is widening its mix from NAND toward DRAM and non-memory products. Customers listed in its IR materials include Samsung Electronics, SK hynix, Intel, Micron, Kioxia, TSMC and Western Digital. Probe-card and test-socket makers FormFactor, Technoprobe and TSE are also cited as customers. Ceramic substrate technology is considered to be held by only a few companies worldwide. Production is based at the new Osong plant in Chungbuk, which the company said raised capacity more than threefold after completion in February 2024. On a Q3 2025 basis, capacity was about 4,680 sheets with an average utilization rate of 54.1%, according to press reports. Ceramic STF for CIS probe cards is being developed as a new market but remains a small share of sales."
  },
  "earnings": {
-  "ko": "연간 실적을 보면 2022년 매출 501.2억원, 영업이익 149.0억원(영업이익률 29.7%)으로 고수익 구간을 기록한 뒤, 2023년에는 매출이 309.3억원으로 급감하며 영업이익 -29.1억원, 순이익 -13.1억원의 적자로 전환됐다. 2024년에는 매출이 533.2억원으로 반등했지만 영업이익률은 9.8%로 과거 대비 낮은 수준에 머물렀고, 2025년에는 매출 779.9억원, 영업이익 146.7억원(영업이익률 18.8%), 순이익 150.6억원으로 이익 규모가 다시 확대됐다. 분기 흐름은 더 뚜렷하다. 2025년 2분기 매출 187.2억원, 영업이익 34.5억원에서 3분기 매출 208.3억원, 영업이익 54.3억원, 4분기 매출 226.8억원, 영업이익 43.5억원으로 매출은 꾸준히 늘었으나 4분기 영업이익률은 일시적으로 소폭 낮아졌다. 다만 4분기 순이익(지배주주)은 53.2억원으로 영업이익을 웃돌아 영업외 요인이 순이익에 긍정적으로 반영된 것으로 보인다. 2026년에는 레버리지 효과가 더 뚜렷해져 1분기 매출 271.7억원·영업이익 76.8억원(영업이익률 28.3%), 2분기 매출 312.7억원·영업이익 95.3억원(영업이익률 30.5%)으로 분기 최대 실적을 연이어 갱신했다. 2분기에는 순이익(지배주주)이 112.7억원으로 영업이익보다도 크게 높아, 영업외 손익 요인이 다시 순이익 증가에 기여한 것으로 판단된다. 실제로 증권가에서는 2026년 2분기 디램향 매출이 2025년 4분기를 넘어 분기 기준 최고치를 다시 경신했다는 분석이 나왔다. 이 같은 흐름은 낸드 교체수요와 디램·HBM향 신규 물량 증가가 동시에 매출 성장을 이끌면서 고정비 부담이 상대적으로 줄어드는 구조적 레버리지 효과로 해석할 수 있다.",
-  "en": "Annual results show a high-margin phase in 2022, with revenue of KRW 50.12 billion and operating profit of KRW 14.90 billion (29.7% operating margin), followed by a sharp downturn in 2023, when revenue fell to KRW 30.93 billion and the company swung to an operating loss of KRW 2.91 billion and a net loss of KRW 1.31 billion. Revenue rebounded to KRW 53.32 billion in 2024, though the operating margin stayed relatively low at 9.8%, before profitability scaled up again in 2025 with revenue of KRW 77.99 billion, operating profit of KRW 14.67 billion (18.8% margin), and net profit of KRW 15.06 billion. The quarterly trend is even clearer: revenue rose steadily from KRW 18.72 billion with operating profit of KRW 3.45 billion in Q2 2025, to KRW 20.83 billion revenue and KRW 5.43 billion operating profit in Q3, and KRW 22.68 billion revenue and KRW 4.35 billion operating profit in Q4, though the Q4 operating margin dipped slightly. Q4 net profit attributable to owners, however, came in at KRW 5.32 billion, above operating profit, suggesting non-operating items added positively to the bottom line. The leverage effect became more pronounced in 2026, with Q1 revenue of KRW 27.17 billion and operating profit of KRW 7.68 billion (28.3% margin), and Q2 revenue of KRW 31.27 billion and operating profit of KRW 9.53 billion (30.5% margin), setting consecutive quarterly records. In Q2, net profit attributable to owners reached KRW 11.27 billion, notably above operating profit, again pointing to a positive contribution from non-operating items. Industry commentary has noted that DRAM-related revenue in Q2 2026 set a new quarterly record, surpassing the previous high set in Q4 2025. This pattern can be read as a structural leverage effect, in which simultaneous growth in NAND replacement demand and new DRAM/HBM volumes drives revenue while the relative burden of fixed costs eases."
+  "ko": "공시 실적 기준 연간 매출은 2022년 501억원에서 2023년 309억원(전년 대비 38.3% 감소)으로 줄었다가, 2024년 533억원(전년 대비 72.3% 증가), 2025년 780억원(전년 대비 46.3% 증가)으로 2024년부터 2025년까지 2년 연속 증가했다. 2025년은 2022~2025년 가운데 매출이 가장 큰 해다. 영업이익은 2022년 149억원에서 2023년 영업손실 29.1억원으로 적자 전환했고, 2024년 영업이익 52억원으로 흑자 전환한 뒤 2025년에는 147억원으로 182.0% 증가했다. 영업이익률은 2022년 29.7%, 2023년 -9.4%, 2024년 9.8%, 2025년 18.8%였다. 지배주주 순이익은 2022년 151억원, 2023년 지배주주 순손실 13.1억원, 2024년 33.2억원을 거쳐 2025년 151억원으로 354.0% 증가했다. 당기순이익(비지배지분 포함)도 2023년 손실에서 2024년 흑자로 돌아섰다. 영업활동 현금흐름은 2022년 170억원에서 2023년 2.9억원으로 급감했다가 2024년 56.2억원, 2025년 192억원으로 회복됐다. 2023년의 급감은 같은 해 매출 감소와 함께 나타났다. 부채비율은 2022년 78.9%, 2023년 87.9%에서 2024년 54.3%, 2025년 52.4%로 낮아졌다. 2025년 말 자본총계는 1,665억원, 부채총계는 872억원이다. 분기 기준으로는 2025년 3분기 매출 208억원 이후 4분기 227억원(전 분기 대비 8.9% 증가), 2026년 1분기 272억원, 2분기 313억원, 3분기 322억원으로 2025년 4분기부터 2026년 3분기까지 4개 분기 연속 증가했다. 다만 매출 증가율은 2026년 3분기에 전 분기 대비 3.0%로 둔화됐다. 영업이익은 2025년 4분기 43.5억원(전 분기 대비 19.8% 감소) 이후 2026년 1분기 76.8억원, 2분기 95.3억원, 3분기 112억원으로 3개 분기 연속 증가했고, 3분기 영업이익은 전년 동기 대비 105.9% 증가했다. 반면 지배주주 순이익은 2026년 2분기 113억원에서 3분기 104억원으로 전 분기 대비 7.7% 감소했다. 최근 4개 분기 지배주주 순이익 합계는 348억원이다. 보도들은 수익성 개선의 배경으로 고부가 제품 판매와 디램용 제품의 높은 수익성을 꼽았고, 감가상각비 부담은 설비투자에 따른 부담 요인으로 지적됐다.",
+  "en": "On a reported basis, annual revenue fell from KRW 50.1 billion in 2022 to KRW 30.9 billion in 2023, a 38.3% decline, then rose to KRW 53.3 billion in 2024 (up 72.3%) and KRW 78 billion in 2025 (up 46.3%), so sales have risen for two consecutive years from 2024 to 2025. 2025 was the largest year in the 2022 to 2025 period. Operating profit went from KRW 14.9 billion in 2022 to an operating loss of KRW 2.91 billion in 2023, turned to a profit of KRW 5.2 billion in 2024, and rose 182.0% to KRW 14.7 billion in 2025. Operating margin was 29.7% in 2022, -9.4% in 2023, 9.8% in 2024 and 18.8% in 2025. Net profit attributable to controlling shareholders was KRW 15.1 billion in 2022, a net loss of KRW 1.31 billion in 2023, KRW 3.32 billion in 2024, and KRW 15.1 billion in 2025, up 354.0%. Net income including non-controlling interests also moved from a loss in 2023 to a profit in 2024. Operating cash flow fell from KRW 17 billion in 2022 to KRW 293 million in 2023, then recovered to KRW 5.62 billion in 2024 and KRW 19.2 billion in 2025. The 2023 drop coincided with the year's sales decline. The debt-to-equity ratio fell from 78.9% in 2022 and 87.9% in 2023 to 54.3% in 2024 and 52.4% in 2025. Total equity at the end of 2025 was KRW 166.5 billion and total liabilities were KRW 87.2 billion. On a quarterly basis, revenue rose from KRW 20.8 billion in Q3 2025 to KRW 22.7 billion in Q4 2025 (up 8.9% quarter on quarter), KRW 27.2 billion in Q1 2026, KRW 31.3 billion in Q2 2026 and KRW 32.2 billion in Q3 2026, which is four consecutive quarters of growth from Q4 2025 through Q3 2026. Quarter-on-quarter growth slowed to 3.0% in Q3 2026. Operating profit fell to KRW 4.35 billion in Q4 2025 (down 19.8% quarter on quarter), then rose to KRW 7.68 billion in Q1 2026, KRW 9.53 billion in Q2 2026 and KRW 11.2 billion in Q3 2026, three consecutive quarters of growth, with Q3 2026 up 105.9% year on year. Net profit attributable to controlling shareholders fell 7.7% quarter on quarter in Q3 2026, to KRW 10.4 billion from KRW 11.3 billion. Net profit attributable to controlling shareholders over the latest four quarters totaled KRW 34.8 billion. Press reports attributed the margin improvement to higher-value product sales and the stronger profitability of DRAM products, while depreciation from capacity investment was cited as a burden."
  },
  "industry": {
-  "ko": "샘씨엔에스가 속한 세라믹 STF·프로브카드 산업은 반도체 후공정 검사 영역에 위치하며, 전방산업인 메모리 반도체의 투자 사이클에 직접적인 영향을 받는다. 세계반도체무역통계기구(WSTS)는 2026년 글로벌 반도체 시장이 전년 대비 25% 이상 성장해 약 9,750억달러 수준에 이를 것으로 전망했고, 이 중 메모리 부문이 전체 성장률을 상회하는 30%대 증가세를 보일 것으로 내다봤다. HBM 시장에서는 SK하이닉스가 2025년 3분기 매출 기준 57%의 과점적 지위를 유지하고 있는 것으로 카운터포인트리서치가 집계했으며, HBM3E가 2026년 출하량의 약 2/3를 차지하고 HBM4는 점진적으로 비중을 확대하는 구도로 전망된다. 시장조사기관 테크인사이츠는 MEMS 프로브카드 시장이 2027년까지 지속 성장할 것으로 전망했는데, HBM처럼 집적도와 정밀도가 높은 반도체일수록 MEMS 프로브카드 수요가 커지는 구조다. 세라믹 STF는 진입장벽이 높아 국내외 소수 업체가 과점하는 시장으로 알려져 있으며, 샘씨엔에스는 국내에서 낸드·디램용 세라믹 STF를 공급하는 사실상 독점적 지위를 갖고 있다는 평가가 나온다. 다만 HBM용 프로브카드 시장에서는 아직 글로벌 선두권 프로브카드사 일부가 자사 세라믹STF를 채택하지 않고 있어, 특정 프로브카드사와의 협력 확대 여부가 성장 경로를 좌우하는 변수로 지목된다. 전방 메모리 업체의 다운사이클 진입 시 프로브카드·STF 수요도 함께 위축될 수 있다는 점에서, 산업 자체의 사이클성은 여전히 구조적 리스크로 남아 있다.",
-  "en": "The ceramic STF and probe card industry that SEMCNS operates in sits within the semiconductor back-end test segment and is directly influenced by the investment cycle of the memory chip industry upstream. The World Semiconductor Trade Statistics (WSTS) organization projected that the global semiconductor market would grow more than 25% year-on-year in 2026 to roughly $975 billion, with the memory segment growing faster than the overall market at over 30%. In the HBM market, Counterpoint Research found that SK hynix maintained a dominant 57% share by Q3 2025 revenue, with HBM3E expected to account for about two-thirds of 2026 shipment volume while HBM4 gradually expands its share. TechInsights forecast that the MEMS probe card market would continue growing through 2027, as chips with higher integration and precision requirements, such as HBM, drive greater need for MEMS probe cards. Ceramic STF is described as an oligopolistic market with high entry barriers dominated by a small number of domestic and overseas players, and SEMCNS is seen as holding a near-monopoly position domestically in NAND and DRAM ceramic STF supply. That said, in the HBM probe card segment some leading global probe card makers have not yet adopted SEMCNS's ceramic STF, making the pace of cooperation with specific probe card partners a key variable for the growth path. Because probe card and STF demand tends to contract alongside any downturn at upstream memory makers, cyclicality remains a structural risk inherent to the industry itself."
+  "ko": "세라믹 STF는 프로브카드 안에서 MEMS 핀을 지지하고 신호를 검사 장비로 전달하는 부품으로, 웨이퍼 테스트 과정에서 교체가 필요한 소모성 부품이다. 반도체 생산량이 늘면 수요가 함께 늘어나는 구조여서, 업황 회복 시 실적 레버리지가 커진다는 분석이 나온다. 메모리 업황에서는 메리츠증권이 2025년 11월 보고서에서 2025년 3분기 디램 매출이 분기 기준 사상 최고치를 경신했다고 밝혔다. 낸드 쪽은 일본 키옥시아와 중국 YMTC 향 물량이 꾸준히 확대되고 있다는 것이 같은 보고서의 설명이다. HBM 측면에서는 AI 칩의 테스트 핀 수가 급증하고 칩 크기가 커지면서 고다층·대면적 기판 수요가 늘어난다는 것이 회사 측 설명이다. 세라믹은 내구성과 내열성이 강해 HBM 공정에 적합하다는 평가도 있다. 한 증권사 보고서는 글로벌 선두권 프로브카드 기업 가운데 일부가 샘씨엔에스의 세라믹 STF를 채택하지 않은 반면, 이탈리아 프로브카드 업체 테크노프로브는 HBM용 프로브카드에 이 제품을 적용할 계획이라고 분석했다. 경쟁 측면에서는 세라믹 기판 제조 기술의 진입장벽이 높다는 점이 강점으로 꼽힌다. 같은 테스트 공정 부품 상장사인 티에스이(TSE)는 샘씨엔에스의 고객사로도 거론된다.",
+  "en": "Ceramic STF is a consumable part inside probe cards that supports MEMS pins and passes signals to test equipment, and it must be replaced during wafer testing. Because demand rises with chip output, analysts say operating leverage grows when the industry recovers. In the memory cycle, Meritz Securities said in a November 2025 report that third-quarter 2025 DRAM sales hit a quarterly record. The same report said NAND volumes for Kioxia in Japan and YMTC in China kept expanding. In HBM, the company says rising test-pin counts and larger chip sizes increase demand for multilayer, large-area substrates. Ceramic is also seen as suited to HBM processes because of its durability and heat resistance. One brokerage report said some leading global probe-card makers have not adopted Semcns ceramic STF, while Technoprobe of Italy plans to apply the product to its HBM probe cards. The high barrier to entry in ceramic substrate technology is cited as a strength. TSE, a listed peer in the test process, is also cited as a Semcns customer."
  },
  "outlook": {
-  "ko": "회사와 증권가가 공통으로 제시하는 성장 축은 디램·HBM향 매출 확대다. 메리츠증권은 2026년 8월 21일 자료에서 2분기 디램향 매출이 JEM을 통한 북미 M사향 매출과 국내 프로브카드 업체를 통한 중국 CXMT향 물량 증가에 힘입어 2025년 4분기를 넘어 분기 기준 최고치를 다시 경신했다고 밝혔다. 같은 자료는 낸드 부문 역시 고단화 전환에 따른 교체 수요와 국내 비상장사를 통한 중국 YMTC향, JEM을 통한 일본 키옥시아향 물량이 증가하는 것으로 파악된다고 전했다. 중장기적으로는 유럽계 프로브카드사 Technoprobe와의 디램향 세라믹STF 퀄 테스트 결과가 관심사로, 시장에서는 이 결과가 빠르면 2026년 연말께 나올 것으로 보고 있으며 통과 시 ASP가 높은 제품의 매출 기여가 기대된다는 분석이 있다. 비메모리 영역에서는 미국 반도체 테스트 장비 기업을 대상으로 로직 반도체 테스트용 세라믹STF 공급을 추진 중인 것으로 알려져 있으며, 2026년 중 퀄 테스트를 거쳐 이후 매출 기여가 가시화될 수 있다는 전망이 나온다. 오송 공장에서는 추가 라인 투자가 진행되고 있어 해당 라인의 매출 인식 시점이 향후 실적 추정치의 상향 여지를 결정할 변수로 지목된다. 메리츠증권은 2026년 1월 21일 자료에서 샘씨엔에스의 2026년 별도 매출액과 영업이익 추정치를 각각 1,003억원, 278억원으로 상향 조정했다고 밝혔는데, 이는 실적 발표 시점의 예상치였다는 점에서 이후 확정 공시와 비교해 확인이 필요하다.",
-  "en": "The growth axis emphasized both by the company and by market analysts is the expansion of DRAM/HBM-related revenue. In an August 21, 2026 note, Meritz Securities said Q2 DRAM-related revenue again set a quarterly record, surpassing the Q4 2025 high, driven by shipments to a North American customer via JEM and growing volumes to China's CXMT through domestic probe card makers. The same note said NAND demand also continued to be supported by replacement demand tied to layer-count transitions, alongside rising volumes to China's YMTC through a domestic unlisted partner and to Japan's Kioxia via JEM. Over the medium term, the qualification test result for DRAM ceramic STF with European probe card maker Technoprobe is a focal point; market commentary suggests this result could arrive as early as the end of 2026, and a pass could bring revenue contribution from a higher-ASP product line. In the non-memory area, SEMCNS is reportedly working with a U.S. semiconductor test equipment company to supply ceramic STF for logic chip testing, with qualification expected sometime in 2026 and revenue contribution becoming visible thereafter, according to analyst commentary. Additional line investment is underway at the Osong plant, and the timing of revenue recognition from that line is flagged as a variable that could shape future upward revisions to earnings estimates. Meritz Securities said in a January 21, 2026 note that it had raised its standalone 2026 revenue and operating profit estimates for SEMCNS to KRW 100.3 billion and KRW 27.8 billion respectively, though as this was a forecast made at that point in time, it should be checked against subsequent confirmed disclosures."
+  "ko": "2026년 보도에서 회사는 2027년까지 연평균 40% 이상 성장하는 글로벌 첨단 반도체 소재부품 기업이 되는 것을 목표로 밝혔다. 이를 위해 충북 오송 신공장의 가동률을 높이고 종합 반도체 소재부품 플랫폼으로 확장하는 방향을 제시했다. 2026년 4월 13일 한국산업은행은 첨단전략산업기금 지원 대상으로 선정된 샘씨엔에스의 오송 공장을 방문해 설비투자 진행 현황을 점검했다. 회사는 이 자금으로 글로벌 반도체 수요에 맞춘 공장 증설에 나서겠다는 계획이다. 2026년 10월 15일에는 유형자산 양수 결정 주요사항보고서가 공시됐다. HBM 측면에서는 삼성전자와 HBM용 맞춤형 세라믹 기판을 공동 개발하고 있다는 보도가 2025년 11월에 나왔다. 키움증권은 2026년 5월 8일 보고서에서 샘씨엔에스가 HBM 시대의 최대 수혜 가능성을 가진다는 점에 주목했다. 해외 고객 측면에서는 미국 에흐르테스트시스템스에 로직 반도체 테스트용 STF를 공급할 예정이라는 2025년 11월 보도가 있다. 메리츠증권은 2025년 11월 보고서에서 디램향 매출 확대와 낸드 업황 회복이 맞물리는 2026년 흐름을 짚었다. 다만 이들 전망은 증권사 추정과 보도에 근거한 것이며 회사의 공식 가이던스로 확인된 수치는 아니다. 향후 확인할 지점은 2026년 4분기와 연간 잠정 실적, 그리고 2026 사업보고서의 부문별 매출 구성이다.",
+  "en": "In a 2026 press report, the company set a goal of becoming a global advanced semiconductor materials and parts company growing at an average annual rate above 40% through 2027. To pursue it, the company is raising utilization at its new Osong plant and expanding toward a broader semiconductor materials and parts platform. On April 13, 2026, the Korea Development Bank visited the Osong plant, which was selected for support under the advanced strategic industry fund, to check the progress of facility investment. The company plans to use these funds to expand the plant to match global chip demand. A material-matter report on the acquisition of tangible assets was disclosed on October 15, 2026. On HBM, press reports from November 2025 said Samsung Electronics and the company are jointly developing customized HBM ceramic substrates. Kiwoom Securities said in a May 8, 2026 report that the company could be a major beneficiary of the HBM era. On overseas customers, a November 2025 report said the company would supply STF for logic chip testing to Eahrtest Systems in the United States. Meritz Securities said in a November 2025 report that DRAM sales growth and a NAND recovery would coincide in 2026. These outlooks rest on broker estimates and press reports rather than official company guidance. The next points to confirm are the fourth-quarter and full-year 2026 preliminary results and the segment sales breakdown in the 2026 annual report."
  },
  "valuation_comment": {
-  "ko": "샘씨엔에스는 2023년 적자에서 2025년 흑자 확대, 2026년 상반기 분기 최대 실적 경신으로 이어지는 이익 회복 국면에 있으며, 이러한 실적 궤적이 시장의 밸류에이션 형성에 반영되고 있다. 회사의 주가는 순자산가치 대비 상당한 프리미엄에서 거래되는 편으로, 이는 과거 고수익성 구간(2022년)과 유사한 이익 구조로의 복귀 기대가 일부 반영된 결과로 해석될 수 있다. 배당은 지급되지 않고 있어, 주가의 매력 요인은 배당수익률보다는 이익 성장 궤적에 더 크게 의존하는 구조다. 다만 회사의 연간 실적이 2022년 고수익 구간과 2023년 적자 구간을 모두 거친 바 있어, 밸류에이션 밴드 자체도 이익 사이클에 따라 넓게 움직여온 역사가 있다는 점은 함께 살펴볼 대목이다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 합산 이익 기준으로 보면 이익 규모가 과거 저수익 구간보다는 뚜렷하게 커진 상태이며, 이 점이 최근 주가 흐름의 배경 중 하나로 언급되고 있다.",
-  "en": "SEMCNS is in an earnings recovery phase that runs from a 2023 loss through expanding 2025 profitability to a series of quarterly record results in the first half of 2026, and this earnings trajectory is being reflected in how the market values the stock. Shares tend to trade at a notable premium to net asset value, which can be read as partly reflecting expectations of a return to an earnings structure similar to the high-profitability period of 2022. The company does not pay a dividend, so the stock's appeal rests more on its earnings growth trajectory than on dividend yield. That said, because the company's annual results have swung between the high-profitability period of 2022 and the loss-making year of 2023, its valuation range itself has historically moved widely along with the earnings cycle, which is worth keeping in mind. Based on combined profit over the most recent four quarters (Q3 2025 through Q2 2026), earnings scale is now clearly larger than in past low-profitability periods, a point cited as part of the backdrop for the stock's recent price behavior."
+  "ko": "2025년 11월 메리츠증권 보고서는 과거 샘씨엔에스가 높은 수익성을 바탕으로 시장에서 밸류에이션 프리미엄을 받았다고 짚었다. 현재 주가순자산비율은 순자산 대비 프리미엄이 큰 구간에 있는 것으로 비교된다. 배당수익률은 업종 평균을 밑도는 편이어서 주주환원보다 실적 회복이 주가 흐름을 설명하는 요인이다. 2025년 말 자본총계 1,665억원에 비해 최근 네 개 분기 기준 지배주주 순이익 합계 348억원은 이익 규모가 자본 대비 커졌음을 보여 준다. 적자에서 흑자로 전환한 뒤 영업이익이 3개 분기 연속 늘어난 만큼 이익 회복의 방향은 뚜렷하다. 다만 이익이 늘어나는 속도와 배수가 같은 방향으로 움직이는지는 이후 분기 실적으로 가려진다. 3분기 영업이익은 늘었으나 지배주주 순이익은 줄어든 만큼 이익의 질에 대한 해석도 분기별로 달라질 수 있다.",
+  "en": "A November 2025 Meritz Securities report noted that Semcns once received a valuation premium in the market on the back of high profitability. The price-to-book ratio places the stock in a range with a large premium over net assets. The dividend yield is below the industry average, so the share price is more closely tied to earnings recovery than to shareholder returns. Net profit attributable to controlling shareholders over the latest four quarters, KRW 34.8 billion, is large relative to total equity of KRW 166.5 billion at the end of 2025. After the shift from losses to profits, operating profit has risen for three consecutive quarters, so the direction of recovery is clear. Whether the multiple moves in the same direction as earnings growth will be clarified by later quarterly results. Because operating profit rose in Q3 2026 while net profit attributable to controlling shareholders fell, the interpretation of earnings quality may also vary quarter to quarter."
  },
  "bull": [
   {
    "title": {
-    "ko": "디램·HBM향 매출 구조적 확대",
-    "en": "Structural Expansion in DRAM/HBM Revenue"
+    "ko": "디램·HBM으로 매출 구조 확장",
+    "en": "Expansion into DRAM and HBM"
    },
    "body": {
-    "ko": "디램용 세라믹STF 매출 비중이 2023년 9%에서 2025년 상반기 26%까지 높아지며 구조적 성장축으로 자리잡고 있다. 2026년 2분기 디램향 매출이 분기 기준 최고치를 재차 경신했다는 증권가 분석도 이를 뒷받침한다. HBM·서버용 디램 수요 확대가 지속될 경우 관련 매출의 추가 확대 여지가 있다.",
-    "en": "DRAM ceramic STF revenue share rose from 9% in 2023 to 26% in the first half of 2025, establishing itself as a structural growth axis. Analyst commentary noting that Q2 2026 DRAM revenue again set a quarterly record supports this trend. Continued growth in HBM and server DRAM demand could provide further room for expansion in this segment."
+    "ko": "2025년 3분기 기준 디램용 STF 매출은 143억원으로 집계됐고, 2024년 디램 매출 비중은 약 23%였다. 메리츠증권은 2025년 11월 보고서에서 샘씨엔에스가 HBM용 프로브카드 공급 확대의 수혜를 받을 수 있다고 짚었다. 키움증권도 2026년 5월 8일 보고서에서 HBM 시대의 수혜 가능성에 주목했다.",
+    "en": "On a Q3 2025 basis, DRAM STF sales were KRW 14.3 billion, and the DRAM share of sales was about 23% in 2024. Meritz Securities said in a November 2025 report that the company could benefit from wider HBM probe-card supply. Kiwoom Securities also highlighted the company's potential to benefit in the HBM era in a May 8, 2026 report."
    }
   },
   {
    "title": {
-    "ko": "레버리지 효과로 마진 회복",
-    "en": "Margin Recovery via Operating Leverage"
+    "ko": "이익 회복이 세 분기째 이어짐",
+    "en": "Profit recovery for three straight quarters"
    },
    "body": {
-    "ko": "영업이익률이 2024년 9.8%에서 2025년 18.8%로, 2026년 1·2분기에는 각각 28.3%, 30.5%까지 상승했다. 매출 성장이 고정비 부담을 상대적으로 줄이는 레버리지 효과가 뚜렷하게 나타나고 있다. 과거 고수익성 구간(2022년 영업이익률 29.7%)에 근접하는 흐름이 확인된다.",
-    "en": "The operating margin rose from 9.8% in 2024 to 18.8% in 2025, then to 28.3% and 30.5% in Q1 and Q2 2026 respectively. A clear operating leverage effect is visible as revenue growth reduces the relative burden of fixed costs. This trajectory is approaching the high-profitability period of 2022, when the operating margin stood at 29.7%."
+    "ko": "영업이익은 2025년 4분기 저점 이후 2026년 1분기 76.8억원, 2분기 95.3억원, 3분기 112억원으로 3개 분기 연속 증가했다. 2026년 3분기 영업이익은 전년 동기 대비 105.9% 증가했다. 2025년 영업이익률은 18.8%로 2023년 적자 이후 회복된 상태다. 디램용 제품이 낸드용보다 수익성이 좋다는 설명도 보도에서 나왔다.",
+    "en": "Operating profit rose for three consecutive quarters after the Q4 2025 low, reaching KRW 7.68 billion in Q1 2026, KRW 9.53 billion in Q2 2026 and KRW 11.2 billion in Q3 2026. Q3 2026 operating profit was up 105.9% year on year. The operating margin was 18.8% in 2025, recovered from the 2023 loss. Press reports also said DRAM products are more profitable than NAND products."
    }
   },
   {
    "title": {
-    "ko": "신규 고객·비메모리 파이프라인",
-    "en": "New Customer and Non-Memory Pipeline"
+    "ko": "글로벌 고객 레퍼런스",
+    "en": "Global customer references"
    },
    "body": {
-    "ko": "Technoprobe향 디램 세라믹STF 퀄 테스트, 미국 신규 고객사향 비메모리 STF 등 복수의 신규 매출원이 진행 중이다. 통과 시 ASP가 높은 제품군의 매출 기여가 가능하다는 분석이 나온다. 낸드·디램 중심에서 비메모리로 고객 기반이 넓어질 잠재력이 있다.",
-    "en": "Multiple new revenue sources are in progress, including a DRAM ceramic STF qualification test with Technoprobe and a non-memory STF project with a new U.S. customer. Analysts have noted that a successful qualification could bring revenue contribution from higher-ASP product lines. There is potential for the customer base to broaden from NAND/DRAM into non-memory applications."
+    "ko": "회사 IR 자료에 따르면 삼성전자, SK하이닉스, 인텔, 마이크론, TSMC 등과 직접 거래 중이다. 삼성전자와 HBM용 맞춤형 세라믹 기판을 공동 개발하고 있다는 보도도 2025년 11월에 나왔다. 미국 로직 반도체 테스트 고객에 STF를 공급할 예정이라는 2025년 11월 보도도 있다.",
+    "en": "According to the company's IR materials, it deals directly with Samsung Electronics, SK hynix, Intel, Micron and TSMC. A November 2025 press report said it is jointly developing customized HBM ceramic substrates with Samsung Electronics. Another November 2025 report said it will supply STF for logic chip testing to a US customer."
+   }
+  },
+  {
+   "title": {
+    "ko": "낸드 편중",
+    "en": "NAND concentration"
+   },
+   "body": {
+    "ko": "2025년 3분기 기준 낸드용 STF가 전체 매출의 72%를 차지해 낸드 업황과 고객 물량에 민감하다. 낸드 물량 확대는 일본 키옥시아와 중국 YMTC 향 물량에 기댄 측면이 크다. 디램 비중이 커지고 있으나 디램이 낸드를 대체할 만큼의 규모에는 아직 이르다.",
+    "en": "NAND ceramic STF accounted for 72% of sales on a Q3 2025 basis, leaving the company sensitive to the NAND cycle and customer volumes. NAND volume growth has relied heavily on Kioxia in Japan and YMTC in China. DRAM's share is rising, but it has not yet reached a scale that replaces NAND."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "메모리 업황 사이클 민감도",
-    "en": "Sensitivity to the Memory Industry Cycle"
+    "ko": "실적 변동성과 이익 전달 차이",
+    "en": "Earnings volatility and uneven profit flow-through"
    },
    "body": {
-    "ko": "2023년 반도체 업계 재고 누적과 투자 축소 국면에서 매출이 309.3억원으로 급감하고 영업손실 29.1억원을 기록한 사례가 있다. 전방 메모리 업체의 다운사이클 진입 시 프로브카드·STF 수요가 함께 위축될 수 있는 구조다. 이는 산업 자체에 내재된 구조적 리스크로 남아 있다.",
-    "en": "In 2023, amid inventory buildup and reduced investment across the semiconductor industry, revenue plunged to KRW 30.93 billion and the company posted an operating loss of KRW 2.91 billion. Probe card and STF demand can contract together with any downturn at upstream memory makers. This remains a structural risk inherent to the industry itself."
+    "ko": "2023년 매출은 38.3% 감소하며 영업손실 29.1억원과 순손실 13.1억원을 냈다. 2026년 3분기에는 영업이익이 전 분기 대비 17.2% 늘었지만 지배주주 순이익은 7.7% 줄었다. 이 차이의 원인은 다음 사업보고서의 손익 세부 항목에서 가려진다.",
+    "en": "Sales fell 38.3% in 2023, producing an operating loss of KRW 2.91 billion and a net loss of KRW 1.31 billion. In Q3 2026, operating profit rose 17.2% quarter on quarter, but net profit attributable to controlling shareholders fell 7.7%. The cause of this gap will be clarified in the income statement details of the next annual report."
    }
   },
   {
    "title": {
-    "ko": "간접 공급구조에 따른 고객 의존",
-    "en": "Customer Dependence via an Indirect Supply Structure"
+    "ko": "설비·감가상각 부담",
+    "en": "Capacity and depreciation burden"
    },
    "body": {
-    "ko": "샘씨엔에스의 직접 고객은 프로브카드 제조업체이며, 최종 수요는 IDM의 투자 결정에 좌우된다. 일부 글로벌 선두권 프로브카드사가 아직 자사 세라믹STF를 채택하지 않고 있어 특정 파트너사와의 협력 확대 여부가 성장 경로에 중요한 변수로 남아 있다. 특정 채널(JEM 등)을 통한 매출 비중이 커질 경우 해당 채널의 협력 관계 변화가 실적에 영향을 줄 수 있다.",
-    "en": "SEMCNS's direct customers are probe card manufacturers, so ultimate demand hinges on IDM investment decisions. Some leading global probe card makers have not yet adopted the company's ceramic STF, making the pace of cooperation with specific partners an important variable for the growth path. As reliance on particular channels, such as JEM, grows, changes in those partnership relationships could affect results."
+    "ko": "오송 공장 관련 자산 규모는 1,177억원이며, 이 자산은 산업은행 장기차입금(약 546억원)의 담보로 제공돼 있다는 보도가 있다. 2025년 3분기까지 평균가동률은 54.1%로 보도됐고 감가상각비 부담이 지적됐다. 가동률이 오르지 않으면 고정비 부담이 이익을 누를 수 있다.",
+    "en": "Assets related to the Osong plant total KRW 117.7 billion, and press reports said they are pledged as collateral for long-term borrowings from the Korea Development Bank of about KRW 54.6 billion. Average utilization was reported at 54.1% through Q3 2025, and depreciation was cited as a burden. If utilization does not rise, fixed costs could weigh on profit."
    }
   },
   {
    "title": {
-    "ko": "신규 파이프라인의 초기 단계 리스크",
-    "en": "Early-Stage Risk in New Pipelines"
+    "ko": "HBM 인증 변수",
+    "en": "HBM qualification risk"
    },
    "body": {
-    "ko": "Technoprobe향 퀄 테스트와 미국 신규 고객사향 비메모리 STF는 아직 검증·초기 단계로, 통과 시점과 매출 기여 규모는 확정되지 않았다. 비메모리 세라믹STF 매출은 현재 연간 수억 원 수준으로 미미해 단기간에 실적에 유의미하게 반영되기는 어렵다. 신규 파이프라인의 지연이나 실패 가능성도 배제할 수 없다.",
-    "en": "The Technoprobe qualification test and the non-memory STF project with the new U.S. customer are both still at an early validation stage, with the timing and scale of any revenue contribution not yet confirmed. Non-memory ceramic STF revenue currently runs at only a few hundred million won annually, making a meaningful near-term contribution unlikely. The possibility of delays or failure in these new pipelines cannot be ruled out."
+    "ko": "HBM용 프로브카드 공급 확대는 고객사 인증 여부에 달려 있다는 분석이 보도에서 나온다. 인증이 지연되면 공급 물량 확대 시점도 늦어질 수 있다. 증권사 추정에 기댄 HBM 기대는 실제 매출로 확인되기 전까지 변동성이 크다.",
+    "en": "Press analysis suggests that expanded HBM probe-card supply depends on customer qualification. If qualification is delayed, the timing of higher supply volumes could also slip. Expectations for HBM rest partly on broker estimates and remain volatile until they show up in reported sales."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "업황·사이클 리스크",
-    "en": "Industry Cycle Risk"
+    "ko": "고객 인증·HBM 공급",
+    "en": "Customer qualification and HBM supply"
    },
    "body": {
-    "ko": "메모리 반도체 투자 사이클에 실적이 직접적으로 연동되는 구조로, 2023년 적자 전환 사례가 이를 보여준다. HBM 가격이 향후 경쟁 심화와 생산능력 확대로 조정 국면에 들어갈 가능성을 제기하는 시각도 존재한다. 다운사이클 진입 시 프로브카드·STF 수요 축소가 재현될 가능성이 있다.",
-    "en": "Results are directly tied to the memory chip investment cycle, as illustrated by the 2023 swing into a loss. Some views suggest HBM pricing could enter an adjustment phase going forward amid intensifying competition and capacity expansion. A renewed contraction in probe card and STF demand could recur if the industry enters a downcycle."
+    "ko": "글로벌 메모리 고객사의 인증 통과 여부가 중장기 성장의 주요 변수라는 분석이 있다. HBM용 프로브카드가 인증을 통과하지 못하면 공급 물량 확대 가능성이 제한된다. 프로브카드 업체의 발주 변화도 매출 구조에 영향을 줄 수 있다.",
+    "en": "Analysts see customer qualification at major global memory makers as a key variable for medium-term growth. If HBM probe cards fail to pass qualification, the potential for higher supply volumes would be limited. Changes in orders from probe-card makers could also affect the revenue mix."
    }
   },
   {
    "cat": {
-    "ko": "고객·공급망 집중 리스크",
-    "en": "Customer and Supply Chain Concentration Risk"
+    "ko": "업황·가동률",
+    "en": "Industry cycle and utilization"
    },
    "body": {
-    "ko": "매출이 소수의 프로브카드사와 그 뒤에 있는 소수의 대형 IDM 고객에게 집중되어 있다. 특정 채널(JEM 등)이나 특정 해외 고객사향 물량 변동이 실적에 직접적인 영향을 줄 수 있다. 원재료 매입 비용 상승이 마진에 부담으로 작용한 사례도 증권가 자료에서 언급된 바 있다.",
-    "en": "Revenue is concentrated among a small number of probe card makers and, behind them, a small number of large IDM customers. Volume fluctuations tied to a specific channel, such as JEM, or a specific overseas customer could directly affect results. Analyst notes have also referenced rising raw material procurement costs weighing on margins."
+    "ko": "테스트 부품은 반도체 생산량에 따라 수요가 움직이므로 메모리 업황 둔화가 주문 감소로 이어질 수 있다. 2025년 3분기까지 평균가동률이 54.1%로 보도돼 수요가 둔화되면 고정비 부담이 커진다. 설비투자 규모가 커진 만큼 감가상각 부담도 길게 이어질 수 있다.",
+    "en": "Test parts follow chip output, so a slowdown in the memory cycle could lead to lower orders. With average utilization reported at 54.1% through Q3 2025, a demand slowdown would increase the fixed-cost burden. Because capacity investment has grown, depreciation could also weigh for a long period."
    }
   },
   {
    "cat": {
-    "ko": "신사업·투자 실행 리스크",
-    "en": "New Business and Execution Risk"
+    "ko": "지배구조·재무 구조",
+    "en": "Governance and financial structure"
    },
    "body": {
-    "ko": "오송 공장 추가 라인 투자, 비메모리 STF, 신규 해외 고객사 확보 등 다수의 신규 프로젝트가 동시에 진행되고 있다. 이러한 프로젝트의 퀄 테스트 통과 시점과 매출 인식 시점은 아직 확정되지 않았다. 계획 대비 지연이 발생할 경우 시장 기대와 실제 실적 간 격차가 발생할 수 있다.",
-    "en": "Multiple new projects are proceeding in parallel, including additional line investment at the Osong plant, non-memory STF development, and securing new overseas customers. The timing of qualification test passes and revenue recognition for these projects has not yet been finalized. Any delay relative to plan could create a gap between market expectations and actual results."
+    "ko": "최대주주는 와이씨이며, 2024년 3월 정기주총을 거쳐 사명이 와이아이케이에서 와이씨로 바뀌었다. 대표이사는 2020년부터 최유진 부회장이 맡고 있다. 오송 공장 자산이 차입금 담보로 제공된 구조여서 자금 조달 여건도 주시할 대상이다.",
+    "en": "The largest shareholder is WYC, whose name changed from WYK in March 2024 after a shareholder meeting. Vice Chairman Choi Yu-jin has served as CEO since 2020. Because Osong plant assets are pledged against borrowings, financing conditions are also a point to watch."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 초(3분기 실적 발표 추정)",
-    "en": "Early November 2026 (expected Q3 earnings release)"
+    "ko": "2027년 1월 말 무렵(통상적인 연간 잠정실적 공시 시기)",
+    "en": "Around late January 2027 (typical timing for annual preliminary results)"
    },
    "what": {
-    "ko": "3분기 매출·영업이익이 2분기의 분기 최대 실적 흐름을 이어가는지, 디램향 매출 비중 확대가 계속되는지 확인이 필요하다.",
-    "en": "Check whether Q3 revenue and operating profit continue the Q2 record-setting trend and whether the rising DRAM revenue share persists."
+    "ko": "2026년 4분기와 연간 잠정 실적. 3분기 영업이익 112억원 수준을 이어가는지가 이익 회복의 지속성을 가늠하는 지점이다.",
+    "en": "Q4 and full-year 2026 preliminary results. Whether operating profit holds near the KRW 11.2 billion level of Q3 2026 will indicate the durability of the recovery."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기 중",
-    "en": "During Q4 2026"
+    "ko": "2027년 3월 말까지",
+    "en": "By the end of March 2027"
    },
    "what": {
-    "ko": "Technoprobe향 디램 세라믹STF 퀄 테스트 결과가 나올 것으로 시장이 예상하는 시점으로, 통과 여부가 향후 고ASP 제품 매출 기여 가능성을 좌우한다.",
-    "en": "The market expects the Technoprobe DRAM ceramic STF qualification test result around this time, and the outcome will determine whether higher-ASP product revenue becomes viable."
+    "ko": "2026 사업보고서. 부문별·고객사별 매출 비중과 디램·낸드 구조, 설비투자 세부 내용이 공시된다. 다음 정기보고서의 확인 지점이다.",
+    "en": "2026 annual report, which will disclose segment and customer sales mix, the DRAM and NAND split, and capacity investment details. It is the next regular filing to check."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 중",
-    "en": "During the second half of 2026"
+    "ko": "2027년 4~5월 무렵(통상 1분기 실적 공시 시기)",
+    "en": "Around April to May 2027 (typical Q1 results timing)"
    },
    "what": {
-    "ko": "미국 신규 고객사향 비메모리(로직 반도체 테스트용) STF의 퀄 테스트 통과 여부를 확인해야 하며, 통과 시 비메모리 매출 다각화의 첫 신호가 될 수 있다.",
-    "en": "Watch for confirmation of a qualification pass for the non-memory (logic chip test) STF project with the new U.S. customer, which if achieved would be a first signal of non-memory revenue diversification."
+    "ko": "2027년 1분기 실적. HBM 관련 공급이 매출에 반영되는지, 오송 공장 가동률이 올라가는지를 확인하는 지점이다.",
+    "en": "Q1 2027 results. Whether HBM-related supply shows up in sales and whether Osong plant utilization improves are the points to check."
    }
   },
   {
    "when": {
-    "ko": "2026년 중",
-    "en": "During 2026"
+    "ko": "2027년 상반기 중(분기보고서 제출 시점)",
+    "en": "During the first half of 2027 (quarterly report filings)"
    },
    "what": {
-    "ko": "오송 공장 추가 라인 투자의 가동 및 매출 인식 시점을 확인해, 향후 생산능력 확대가 실제 매출로 이어지는 속도를 점검할 필요가 있다.",
-    "en": "Track the start-up and revenue recognition timing of the additional production line investment at the Osong plant to gauge how quickly the capacity expansion translates into actual revenue."
+    "ko": "국민성장펀드 자금으로 진행되는 오송 공장 증설의 집행 현황과 감가상각비 추이. 설비 증가가 이익률에 미치는 영향을 보여 준다.",
+    "en": "Progress of the Osong plant expansion funded by the national growth fund and the trend in depreciation, which will show how added capacity affects margins."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "샘씨엔에스는 국내 유일의 세라믹 STF 공급업체로서, 2023년 적자에서 2025년 흑자 확대, 2026년 상반기 분기 최대 실적 경신으로 이어지는 명확한 이익 회복 궤적을 보여주고 있다. 낸드 중심에서 디램·HBM향으로 매출 구조가 옮겨가는 흐름이 최근 마진 개선의 핵심 동력이며, 영업이익률은 2024년 9.8%에서 2026년 2분기 30.5%까지 상승했다. Technoprobe향 퀄 테스트, 미국 신규 고객사향 비메모리 STF, 오송 공장 증설 등 여러 신규 성장 트리거가 동시에 진행 중이나, 대부분 아직 검증 또는 초기 단계에 머물러 있다. 반대로 2023년 적자 전환 사례가 보여주듯 메모리 업황 사이클에 대한 민감도는 여전히 구조적 리스크로 남아 있으며, 간접 공급구조 특성상 소수 프로브카드사·IDM에 대한 의존도도 높다. 최대주주 와이씨(YC)가 약 59.2%의 지분을 보유한 지배구조 특성도 함께 참고할 부분이다. 투자 판단에 앞서 3분기 실적, Technoprobe·미국 고객사 퀄 테스트 진행 상황, 오송 라인 가동 시점 등 구체적 이벤트를 순차적으로 확인하는 접근이 유효할 것으로 보인다.",
-   "en": "SEMCNS, the sole domestic supplier of ceramic STF, shows a clear earnings recovery trajectory running from a 2023 loss through expanding 2025 profitability to record quarterly results in the first half of 2026. The shift in revenue mix from NAND-centric to DRAM/HBM-oriented business is the key driver behind recent margin improvement, with the operating margin rising from 9.8% in 2024 to 30.5% in Q2 2026. Several new growth triggers are progressing in parallel—including the Technoprobe qualification test, a non-memory STF project with a new U.S. customer, and capacity expansion at the Osong plant—but most remain in validation or early stages. Conversely, as the 2023 loss illustrates, sensitivity to the memory industry cycle remains a structural risk, and the indirect supply structure means heavy reliance on a small number of probe card makers and IDMs. The ownership structure, with largest shareholder YC Co., Ltd. holding roughly 59.2% of shares, is another factor worth noting. Before forming any investment judgment, a sequential check of concrete events—Q3 results, progress on the Technoprobe and U.S. customer qualification tests, and the Osong line start-up timing—appears to be a reasonable approach."
+   "ko": "샘씨엔에스는 프로브카드용 세라믹 STF를 만드는 기업으로, 2023년 적자를 거쳐 2025년 영업이익 147억원을 기록했고 2026년 3분기까지 영업이익이 3개 분기 연속 증가했다. 매출 구조는 여전히 낸드에 기울어 있으나, 디램 비중은 2024년 약 23%에서 2025년 3분기 기준 143억원 규모로 커지는 흐름이다. 강세 요인은 디램·HBM 수요 확대, 글로벌 고객 레퍼런스, 부채비율 하락(2025년 52.4%)이다. 약세 요인은 낸드 편중, 2026년 3분기 지배주주 순이익 감소, 오송 공장의 감가상각 부담이다. 2025년 말 부채총계는 872억원이고 영업활동 현금흐름은 192억원이었다. 이익 회복의 지속성은 2026년 4분기와 연간 잠정 실적, 그리고 2026 사업보고서의 부문별 매출에서 가려진다. 밸류에이션은 과거 이익 회복 구간에서 받았던 프리미엄과 비교해 해석할 수 있으며, 이 리포트는 투자의견이나 목표주가를 제시하지 않는다.",
+   "en": "Semcns makes ceramic STF parts for probe cards. After an operating loss in 2023, it posted an operating profit of KRW 14.7 billion in 2025, and operating profit has risen for three consecutive quarters through Q3 2026. The revenue mix still leans toward NAND, but the DRAM share has grown from about 23% in 2024 to KRW 14.3 billion on a Q3 2025 basis. Strengths include wider DRAM and HBM demand, global customer references and a lower debt-to-equity ratio of 52.4% in 2025. Weaknesses include NAND concentration, the decline in net profit attributable to controlling shareholders in Q3 2026, and depreciation at the Osong plant. Total liabilities were KRW 87.2 billion at the end of 2025 and operating cash flow was KRW 19.2 billion in 2025. Whether the recovery lasts will be clarified by the Q4 and full-year 2026 preliminary results and the segment sales in the 2026 annual report. Valuation can be read against the premium the stock earned during past profit-recovery periods. This report does not present an investment opinion or target price."
   }
  },
  "sources": [
-  "https://m.irgo.co.kr/IR-COMP/252990/",
-  "https://finance.daum.net/quotes/A252990",
-  "https://m.thinkpool.com/item/252990",
-  "https://www.myasset.com/sitemanager/upload/2025/0414/071326/20250414071326310_0_ko.pdf",
-  "https://view.asiae.co.kr/article/2021081012225552666",
-  "https://www.asiae.co.kr/article/2021081012225552666",
-  "http://snusmic.com/wp-content/uploads/2026/05/26_1_2%EC%A3%BC%EC%B0%A8_%EC%88%98%EC%A0%95%EB%B3%B4%EA%B3%A0%EC%84%9C_1%ED%8C%80_%EC%83%98%EC%94%A8%EC%97%94%EC%97%90%EC%8A%A4.pdf",
-  "https://www.asiae.co.kr/article/2021052009594624339",
-  "https://markets.hankyung.com/stock/252990/consensus",
-  "https://m.thinkpool.com/compDiscuss/cont/1022257",
-  "https://kr.investing.com/equities/semcns-co-earnings",
-  "https://www.bondweb.co.kr/_research/downloadPage.asp?number=893419&gn=1",
-  "https://newat.biz/stock_detail.php?code=252990&name=%EC%83%98%EC%94%A8%EC%97%94%EC%97%90%EC%8A%A4&prev_url=%2Fthemedetail.php%3Fcategory_id%3D1789",
-  "https://m.thinkpool.com/compDiscuss/cont/1020823",
+  "https://app.rndcircle.io/company/5e8bbd8e-0112-52eb-8666-8bb3dedc493a",
+  "https://www.komachine.com/ko/companies/semcns",
+  "http://www.businessreport.kr/news/articleView.html?idxno=44071",
+  "https://zdnet.co.kr/view/?no=20241002103117",
+  "https://www.hinews.co.kr/view.php?ud=202506250748492174ccc2200b3c_48",
+  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=400567",
+  "https://www.businesspost.co.kr/BP?command=article_view&num=440192",
+  "https://news.mt.co.kr/mtview.php?no=2024013013221035289",
+  "https://www.ibtomato.com/ExternalView.aspx?type=1&no=17321",
+  "https://m.thinkpool.com/compDiscuss/cont/1026700",
+  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=690066",
   "http://home.imeritz.com/include/resource/research/WorkFlow/20260121071700430K_02.pdf",
-  "https://file.alphasquare.co.kr/media/pdfs/company-report/_260130%20%EC%83%98%EC%94%A8%EC%97%94%EC%97%90%EC%8A%A4_%EC%98%A8%EB%9D%BC%EC%9D%B8_%EC%A0%95%ED%99%8D%EC%8B%9D_1357_Online%20report%20_%206_10p_%EC%83%98%EC%94%A8%EC%97%94%EC%97%90%EC%8A%A4.pdf",
-  "https://w4.kirs.or.kr/download/research/250425_%EC%83%98%EC%94%A8%EC%97%94%EC%97%90%EC%8A%A4.pdf",
-  "http://www.dailyinvest.kr/news/articleView.html?idxno=69320"
+  "https://www.vegannews.co.kr/news/article.html?no=397568",
+  "https://m.saramin.co.kr/job-search/company-info-view/finance?csn=RWJtdmtnMlp0OHpWcE4xMTl5bGU4QT09",
+  "https://www.datatooza.com/article/20261027102942929252ef3a1596_80",
+  "http://www.dailyinvest.kr/news/articleView.html?idxno=69320",
+  "https://file.alphasquare.co.kr/media/pdfs/company-report/20251118063052406K_02.pdf",
+  "https://www.investing.com/equities/semcns-co"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "252990",
  "name": "샘씨엔에스",
  "name_en": "SEMCNS Co., Ltd.",
@@ -223,11 +233,11 @@
   "반도체"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 18:08",
- "dataDate": "20260904",
+ "reportDate": "2026-11-14",
+ "reportTs": "2026-11-14 07:36",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-08-21",
+  "asOf": "2026-11-13",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -238,6 +248,7 @@
     "np_owner": 15062962124,
     "equity": 166531612176,
     "equity_owner": 166531612176,
+    "equity_nci": null,
     "liab": 87198496115,
     "cfo": 19243268598,
     "eps_basic": 264,
@@ -253,6 +264,7 @@
     "np_owner": 3318152499,
     "equity": 143987757154,
     "equity_owner": 143987757154,
+    "equity_nci": null,
     "liab": 78179837873,
     "cfo": 5618810690,
     "eps_basic": 60,
@@ -268,6 +280,7 @@
     "np_owner": -1310363418,
     "equity": 102064297631,
     "equity_owner": 102064297631,
+    "equity_nci": null,
     "liab": 89701559404,
     "cfo": 292792705,
     "eps_basic": -27,
@@ -283,6 +296,7 @@
     "np_owner": 15137662739,
     "equity": 111957607437,
     "equity_owner": 111957607437,
+    "equity_nci": null,
     "liab": 88307674085,
     "cfo": 16967563313,
     "eps_basic": 309,
@@ -292,12 +306,6 @@
    }
   ],
   "quarterly": [
-   {
-    "q": "2025Q2",
-    "rev": 18715609877,
-    "op": 3454013725,
-    "np_owner": 3214532527
-   },
    {
     "q": "2025Q3",
     "rev": 20829504316,
@@ -321,26 +329,36 @@
     "rev": 31265241801,
     "op": 9529353435,
     "np_owner": 11265118027
+   },
+   {
+    "q": "2026Q3",
+    "rev": 32210906557,
+    "op": 11172587961,
+    "np_owner": 10396752902
    }
   ],
   "valuation": {
-   "price": 13660,
-   "mcap": 0.8226,
+   "price": 16660,
+   "mcap": 1.0032,
    "shares": 60217889,
    "total_shares": 60217889,
    "wavg_shares": 57056674,
-   "per": 26.996,
-   "eps": 506,
-   "pbr": 3.9977,
-   "bps": 3417,
-   "roe_ttm": 17.3,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": 29751158909,
-   "pbr_krx": 4.5,
+   "per": 28.43,
+   "eps": 586,
+   "pbr": 4.6265,
+   "bps": 3601,
+   "roe_ttm": 19.4,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": 34806830180,
+   "ccy": "KRW",
+   "bps_src": "자체",
+   "eps_src": "공시",
+   "pbr_krx": 5.82,
    "bps_krx": 2862.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
    "div": 0.0
   }
- }
+ },
+ "textRules": 2
 }

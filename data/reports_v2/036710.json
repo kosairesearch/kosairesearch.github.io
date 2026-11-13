@@ -1,220 +1,210 @@
 {
  "title": {
-  "ko": "흑자전환 신호 속 지분가치 재편 관전포인트",
-  "en": "Profit Turnaround Signals Amid Holding-Structure Value Debate"
+  "ko": "지주 실적은 자회사 기판 사업에 연동된다",
+  "en": "Holding Results Tied to Subsidiary's Substrate Business"
  },
  "lead": {
-  "ko": "자회사 심텍의 AI서버·SoCAMM 수요 확대로 연결 영업이익이 2026년 2분기 큰 폭으로 개선됐지만, 지배주주 순이익은 여전히 적자 흐름을 벗어나지 못하고 있다.",
-  "en": "Consolidated operating profit improved sharply in Q2 2026 on subsidiary Simmtech's AI-server and SoCAMM demand, but net income attributable to controlling shareholders has yet to break out of a loss pattern."
+  "ko": "2026년 3분기 영업이익은 1,047억원으로 크게 늘었지만 지배주주 순손실 113억원이 이어져, 이 지주의 실적은 자회사 심텍의 기판 사업 흐름에 따라 움직이는 구조다.",
+  "en": "Simmtech Holdings reported operating profit of KRW 104.7 billion for Q3 2026, but a net loss attributable to controlling shareholders of KRW 11.3 billion, so its results still track its subsidiary Simmtech's substrate business."
  },
  "keypoints": [
   {
-   "ko": "2026년 2분기 연결 영업이익 575.6억원으로 전분기 대비 급증했으나 지배주주순이익은 62.8억원 손실을 기록했다.",
-   "en": "Q2 2026 consolidated operating profit jumped to KRW 57.6bn quarter-on-quarter, yet net income attributable to owners posted a loss of KRW 6.28bn."
+   "ko": "2026년 3분기 영업이익은 1,047억원으로 전년 동기 대비 4,033.0% 증가했고, 같은 분기 지배주주 순손실은 113억원이었다. 영업이익 개선에 비해 지배주주 몫의 손익은 아직 적자 구간에 머물러 있다.",
+   "en": "Q3 2026 operating profit of KRW 104.7 billion rose 4,033.0% year on year, while the net loss attributable to controlling shareholders stayed at KRW 11.3 billion. Bottom-line improvement has lagged the operating gain."
   },
   {
-   "ko": "연간 매출은 2023년 저점 이후 2024·2025년 2년 연속 두 자릿수 성장세를 이어갔다.",
-   "en": "Annual revenue has posted two consecutive years of double-digit growth in 2024 and 2025 after bottoming in 2023."
+   "ko": "영업손실은 2023년부터 2025년까지 3년 연속 이어졌고, 영업이익률은 2022년 17.5%에서 2025년 -2.2%로 개선됐다. 2026년 2분기 영업이익은 576억원, 3분기는 1,047억원으로 두 분기 연속 늘었다.",
+   "en": "Operating losses ran for three consecutive years from 2023 to 2025, and the operating margin moved from 17.5% in 2022 to -2.2% in 2025. Operating profit then rose to KRW 57.6 billion in Q2 2026 and KRW 104.7 billion in Q3 2026."
   },
   {
-   "ko": "부채비율은 2024년 427.3%에서 2025년 327.0%로 낮아졌지만 여전히 높은 수준이다.",
-   "en": "The debt ratio eased from 427.3% in 2024 to 327.0% in 2025 but remains elevated."
+   "ko": "최근 4개 분기(2025년 4분기~2026년 3분기) 지배주주 순손실 합계는 293억원이다. 회사는 2026년 3분기 잠정실적의 대부분이 연결대상 자회사 심텍의 실적과 연동된다고 2026년 11월 9일 공시에서 밝혔다.",
+   "en": "The net loss attributable to controlling shareholders totaled KRW 29.3 billion over the last four quarters, from Q4 2025 to Q3 2026. The company said in its November 9, 2026 preliminary disclosure that most of its Q3 2026 results move with consolidated subsidiary Simmtech."
   },
   {
-   "ko": "자회사 심텍(코스닥 222800)이 별도 상장돼 있어 지주회사 특유의 밸류에이션 논쟁이 상존한다.",
-   "en": "Because operating subsidiary Simmtech (KOSDAQ: 222800) is separately listed, the stock is subject to the valuation debate typical of Korean holding-company structures."
+   "ko": "자회사 심텍의 2026년 3분기 SOCAMM2 관련 모듈 매출은 569억원으로 전 분기 대비 35% 증가했다. 고부가 제품 매출 비중이 커지는 흐름이 확인된다.",
+   "en": "Subsidiary Simmtech's SOCAMM-related module sales reached KRW 56.9 billion in Q3 2026, up 35% from the prior quarter. Sales of higher-value products are gaining weight."
   },
   {
-   "ko": "자회사는 하반기 매출 1조 719억원, 영업이익 1,631억원을 자체 전망치로 제시했다.",
-   "en": "The subsidiary itself guided for H2 revenue of KRW 1.0719tn and operating profit of KRW 163.1bn."
+   "ko": "주가순자산비율은 1배를 크게 웃도는 수준이고, 최근 4개 분기 순손실로 주가수익비율은 산출되지 않는다.",
+   "en": "The price-to-book ratio sits well above 1x, and because the last four quarters were net losses, no price-to-earnings ratio is calculated."
   }
  ],
  "business": {
-  "ko": "심텍홀딩스는 2015년 PCB 제조 사업부문을 인적분할해 (주)심텍을 설립한 뒤 지분투자·브랜드관리·경영자문을 영위하는 순수 지주회사로 전환했다. 매출 구성을 보면 종속회사인 (주)심텍을 통한 PCB 제조 및 임가공 매출이 전체의 대부분을 차지하고, 배당수익·임대수익·상표권수익 등 지주회사 고유 사업의 비중은 상대적으로 작다. 핵심 자회사 심텍은 반도체 및 정보통신기기용 PCB를 30여년간 개발·양산해 온 전문기업으로, 메모리 모듈용 PCB와 FC-CSP, MCP, SiP모듈, BOC 등 패키지 서브스트레이트 제품을 생산한다. 주요 고객은 SK하이닉스, 삼성전자, 마이크론 등 글로벌 빅5 메모리칩 메이커이며, 세계 최대 반도체 후공정 기업인 ASE그룹과 전략적 파트너십을 맺고 첨단 패키징 기술을 공동 개발하고 있다. 기존 메모리 반도체용 제품에서 고부가가치 System IC 제품으로 고객 확보와 매출 확대를 추진하는 중이다. 반도체용 PCB는 기술 장벽이 높아 모듈PCB와 서브스트레이트 기판 시장에 신규 진입이 제한적인 산업으로 평가된다. 지주회사 산하에 (주)글로벌심텍, 신태전자(서안)유한공사 등 해외 생산법인도 보유하고 있어 생산 거점이 국내외로 분산돼 있다.",
-  "en": "Simmtech Holdings converted into a pure holding company in 2015 after spinning off its PCB manufacturing business into Simmtech Co., Ltd., and now engages in equity investment, brand management, and management consulting. In terms of revenue composition, PCB manufacturing and processing revenue channeled through subsidiary Simmtech accounts for the vast majority of the total, while holding-company-specific income such as dividends, rental income, and trademark royalties makes up a relatively small share. The core subsidiary Simmtech has developed and mass-produced semiconductor and telecom-device PCBs for more than three decades, manufacturing memory module PCBs as well as package substrate products including FC-CSP, MCP, SiP modules, and BOC. Its main customers are Global Top-5 memory chip makers including SK hynix, Samsung Electronics, and Micron, and it has formed a strategic partnership with ASE Group, the world's largest semiconductor back-end packaging company, to co-develop advanced packaging technology. The company is pursuing customer acquisition and revenue expansion in high-value-added System IC products, moving beyond conventional memory-chip-related products. Semiconductor PCB is considered an industry with high technical barriers that limit new entrants into the module PCB and substrate markets. Under the holding structure, the group also operates overseas production entities such as Global Simmtech and Shinta Electronics (Xi'an), spreading its manufacturing footprint both domestically and abroad."
+  "ko": "심텍홀딩스(036710)는 코스닥에 상장된 지주회사이며, 실질적인 사업은 자회사 심텍(222800)이 맡고 있다. 자회사 심텍은 2015년 8월 코스닥에 상장된 기판 업체로, 패키지 기판과 메모리 모듈을 핵심 사업으로 내세운다. 회사는 기판과 모듈을 통합 공급하는 원스톱 솔루션을 강점으로 꼽고, 차세대 LPCAMM·CXL 모듈과 기판으로 사업을 넓히는 계획을 밝혔다. 자회사 심텍의 2026년 3분기 MSAP 매출은 3,312억원으로 전 분기 대비 8% 증가했다. MSAP는 미세회로 형성 기술을 쓰는 고부가 패키징 기판으로, 고집적 반도체와 고성능 메모리 제품에 쓰인다. 같은 분기 HDI 부문 매출은 1,424억원으로 전년 동기 대비 62% 늘었고, 시스템 IC 부문 매출은 946억원으로 전 분기 대비 24% 증가했다. 텐팅 부문 매출은 623억원으로 전 분기보다 22% 줄었다. SOCAMM2 기판은 2026년부터 엔비디아 인공지능 가속기에 탑재되는 제품으로 공급이 시작됐다. 회사 측은 글로벌 최상위 점유율을 전략적으로 유지하고 있다고 설명했다. 기술 난도가 높은 제품의 매출 비중이 커지면서 일반 메모리 기판보다 수익성에 긍정적인 영향이 나타나고 있다. 연결 기준으로 지주 실적의 대부분은 자회사 심텍의 실적과 연동되므로, 자회사의 제품 믹스가 지주 실적을 읽는 출발점이 된다.",
+  "en": "Simmtech Holdings (036710) is a KOSDAQ-listed holding company, and its operating business is run by its subsidiary Simmtech (222800). Simmtech listed on KOSDAQ in August 2015 and positions package substrates and memory modules as its core businesses. The company says it supplies substrates and modules as a one-stop solution, and it plans to expand into next-generation LPCAMM, CXL module and substrate products. In Q3 2026, the subsidiary's MSAP sales were KRW 331.2 billion, up 8% from the prior quarter. MSAP is a high-value packaging substrate built on fine-circuit technology and used in high-density chips and high-performance memory products. In the same quarter, HDI sales were KRW 142.4 billion, up 62% year on year, while system IC sales were KRW 94.6 billion, up 24% from the prior quarter. Tenting sales were KRW 62.3 billion, down 22% from the prior quarter. SOCAMM2 substrates began shipping in 2026 for NVIDIA AI accelerators. The company says it is maintaining a top global market share. As the share of technically demanding products grows, the mix is contributing positively to profitability compared with general memory substrates. Because most of the holding's consolidated results move with the subsidiary, the subsidiary's product mix is the starting point for reading the holding's earnings."
  },
  "earnings": {
-  "ko": "연간 실적을 보면 2022년 매출 1조 7,104억원, 영업이익 2,998.7억원(영업이익률 17.5%)의 호황을 기록한 뒤, 2023년 매출이 1조 929.6억원으로 급감하며 영업손실 2,063.1억원(영업이익률 -18.9%)으로 급격히 악화됐다. 이후 매출은 2024년 1조 3,021.1억원, 2025년 1조 5,280.8억원으로 2년 연속 회복세를 이어갔고, 영업손실 규모도 2024년 1,315.1억원에서 2025년 342.6억원(영업이익률 -2.2%)으로 꾸준히 줄어들며 손익 개선 흐름이 뚜렷했다. 다만 지배주주 순이익은 2022년 331.2억원 흑자에서 2023년 -987.1억원, 2024년 -782.2억원, 2025년 -378.1억원으로 3년 연속 적자를 이어갔으며, 지배주주지분 자본총계도 2022년 2,303.4억원에서 2024년 255.1억원까지 급격히 줄어든 뒤 2025년 256.2억원 수준에서 멈춰섰다. 분기별로는 2025년 2분기 영업손실 37.1억원에서 3분기 25.3억원, 4분기 37.5억원의 영업이익으로 흑자 기조에 들어섰고, 2026년 1분기 9.6억원, 2분기에는 575.6억원으로 큰 폭으로 뛰어올랐다. 그러나 지배주주순이익은 2025년 2분기 23.9억원 흑자 이후 3분기 -6.7억원, 4분기 -118.8억원으로 다시 적자로 돌아섰고, 2026년 1분기 2.1억원의 소폭 흑자를 냈다가 영업이익이 급증한 2분기에도 오히려 -62.8억원 적자를 기록해 연결 영업실적과 지배주주 귀속 순이익 사이의 괴리가 두드러졌다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 지배주주순이익 합산은 -186.2억원으로, 영업단 회복에도 불구하고 주주 귀속 이익은 여전히 순손실 구간에 머물러 있다. 이러한 괴리는 소수주주지분 배분, 법인세, 비영업적 손익 등 지주회사 특유의 연결 구조가 반영된 결과로 해석된다.",
-  "en": "On an annual basis, the company recorded a strong year in 2022 with revenue of KRW 1.7104tn and operating profit of KRW 299.87bn (17.5% margin), before revenue plunged to KRW 1.0930tn in 2023 alongside an operating loss of KRW 206.31bn (-18.9% margin). Revenue then recovered for two consecutive years, reaching KRW 1.3021tn in 2024 and KRW 1.5281tn in 2025, while the operating loss steadily narrowed from KRW 131.51bn in 2024 to KRW 34.26bn in 2025 (-2.2% margin), showing a clear trend of improving profitability. Net income attributable to controlling shareholders, however, remained negative for three straight years — from a KRW 33.12bn profit in 2022 to losses of KRW 98.71bn in 2023, KRW 78.22bn in 2024, and KRW 37.81bn in 2025 — while owners' equity plunged from KRW 230.34bn in 2022 to just KRW 25.51bn in 2024 before stabilizing around KRW 25.62bn in 2025. On a quarterly basis, the operating line turned to profit from a KRW 3.71bn loss in Q2 2025 to gains of KRW 2.53bn in Q3 and KRW 3.75bn in Q4, then rose modestly to KRW 0.96bn in Q1 2026 before surging to KRW 57.56bn in Q2 2026. Net income to owners, however, swung from a KRW 2.39bn gain in Q2 2025 back to losses of KRW 0.67bn in Q3 and KRW 11.88bn in Q4, posted a slim KRW 0.21bn gain in Q1 2026, and then registered a loss of KRW 6.28bn even in Q2 2026 despite the sharp operating-profit surge — highlighting a notable divergence between consolidated operating performance and income attributable to owners. Over the most recent four quarters (Q3 2025 through Q2 2026), aggregate net income attributable to owners totaled a loss of KRW 18.62bn, meaning that despite the operating-line recovery, income attributable to shareholders has remained in net-loss territory. This gap is understood to reflect the holding-company-specific consolidation structure, including minority interest allocation, tax effects, and non-operating items."
+  "ko": "연간 매출은 2022년 1조 7,104억원에서 2023년 1조 930억원(전년 대비 36.1% 감소)으로 줄었으며, 2022년이 가장 큰 해, 2023년이 가장 작은 해다. 2024년 매출은 1조 3,021억원(전년 대비 19.1% 증가)이었고 2025년에는 1조 5,281억원(전년 대비 17.4% 증가)으로 2024년부터 2025년까지 2년 연속 늘었다. 영업이익은 2022년 2,999억원에서 2023년 영업손실 2,063억원으로 적자 전환했다. 이후 2024년 영업손실 1,315억원, 2025년 영업손실 343억원으로 손실 폭이 줄었고, 2023년부터 2025년까지 3년 연속 영업손실이다. 영업이익률은 2022년 17.5%에서 2023년 -18.9%, 2024년 -10.1%, 2025년 -2.2%를 기록했다. 지배주주 순이익은 2022년 331억원에서 2023년 지배주주 순손실 987억원으로 전환했고, 2024년 782억원, 2025년 378억원 순손실로 적자 폭이 축소됐다. 당기순이익은 비지배지분을 포함한 값으로 지배주주 순이익과 다르며, 2022년 1,865억원에서 2023년 당기순손실 1,963억원으로 바뀐 뒤 2024년 1,123억원, 2025년 1,511억원의 당기순손실이 이어졌다. 영업활동 현금흐름은 2022년 4,211억원이었지만 2023년 -1,225억원, 2024년 -1,070억원, 2025년 -1,390억원으로 음(-)의 값이 이어졌다. 부채비율은 2022년 123.7%에서 2024년 427.3%까지 올랐다가 2025년 327.0%로 낮아졌다. 2025년 말 부채총계는 1조 2,225억원, 자본총계는 3,739억원이며 그중 지배주주 지분은 256억원이다. 분기로 보면 매출은 2025년 3분기 3,981억원에서 2026년 3분기 5,922억원까지 4개 분기 연속 늘었고, 2026년 3분기 매출은 전년 동기 대비 48.8% 증가했다. 영업이익은 2025년 3분기 25.3억원, 4분기 37.5억원에서 2026년 1분기 9.6억원(전 분기 대비 74.3% 감소)으로 저점을 찍은 뒤, 2분기 576억원(전 분기 대비 5,866.7% 증가), 3분기 1,047억원으로 늘었다. 같은 기간 지배주주 순손익은 2분기 17.8억원 흑자 전환 후 3분기 113억원 순손실로 돌아섰다. 영업이익은 크게 늘었지만 지배주주 순손익 개선은 그 폭만큼 따라오지 않았다. 자회사 심텍은 3분기 영업이익률이 19%로 전 분기보다 6.8%포인트 올랐다고 밝혔다.",
+  "en": "Annual revenue went from KRW 1.71 trillion in 2022 to KRW 1.09 trillion in 2023, a 36.1% decline. 2022 was the largest year of the four and 2023 the smallest. Revenue then rose to KRW 1.3 trillion in 2024 (up 19.1%) and KRW 1.53 trillion in 2025 (up 17.4%), growing for two consecutive years from 2024 to 2025. Operating profit fell from KRW 299.9 billion in 2022 to an operating loss of KRW 206.3 billion in 2023, a swing into deficit. The operating loss narrowed to KRW 131.5 billion in 2024 and KRW 34.3 billion in 2025, and the company recorded operating losses for three consecutive years from 2023 to 2025. The operating margin moved from 17.5% in 2022 to -18.9% in 2023, -10.1% in 2024 and -2.2% in 2025. Net income attributable to controlling shareholders went from KRW 33.1 billion in 2022 to a net loss of KRW 98.7 billion in 2023, then narrowed to net losses of KRW 78.2 billion in 2024 and KRW 37.8 billion in 2025. Total net income including non-controlling interests is a separate figure: KRW 186.5 billion in 2022, then net losses of KRW 196.3 billion, KRW 112.3 billion and KRW 151.1 billion in 2023 to 2025. Operating cash flow was KRW 421.1 billion in 2022 and stayed negative at -KRW 122.5 billion, -KRW 107 billion and -KRW 139 billion in 2023, 2024 and 2025. The debt-to-equity ratio rose from 123.7% in 2022 to 427.3% in 2024 before easing to 327.0% in 2025. At end-2025, total liabilities were KRW 1.22 trillion and total equity KRW 373.9 billion, of which the controlling shareholders' stake was KRW 25.6 billion. On a quarterly basis, revenue rose from KRW 398.1 billion in Q3 2025 to KRW 592.2 billion in Q3 2026, growing for four consecutive quarters from Q4 2025, and Q3 2026 revenue was up 48.8% year on year. Operating profit was KRW 2.53 billion in Q3 2025 and KRW 3.75 billion in Q4 2025, fell to KRW 965 million in Q1 2026 (down 74.3%), then rose to KRW 57.6 billion in Q2 2026 and KRW 104.7 billion in Q3 2026. Net income attributable to controlling shareholders moved from a loss of KRW 667 million in Q3 2025 and a loss of KRW 11.9 billion in Q4 2025 to a loss of KRW 7.86 billion in Q1 2026, a gain of KRW 1.78 billion in Q2 2026 and a loss of KRW 11.3 billion in Q3 2026. Operating profit grew far faster than the bottom line attributable to controlling shareholders, which is the key reading of the latest quarters. Subsidiary Simmtech said its Q3 2026 operating margin was about 19%, up 6.8 percentage points from the prior quarter."
  },
  "industry": {
-  "ko": "글로벌 반도체 시장은 AI 인프라 확산에 힘입어 메모리 중심으로 재편되는 국면에 있으며, HBM3E가 주력 제품으로 부상하고 HBM4로의 점진적 전환이 동시에 진행되는 과도기로 평가된다. 이 과정에서 GPU와 HBM뿐 아니라 이를 서버 보드에 얹는 메모리 모듈 기판 수요 역시 AI 인프라 투자 확대와 함께 늘어나는 구조로 지목된다. 특히 삼성전자가 주도하는 차세대 저전력 서버 메모리 규격인 SOCAMM이 본격 양산 단계로 접어들면서, 관련 기판을 공급하는 업체들의 실적이 이 흐름을 가장 먼저 반영하는 지표로 꼽히며 심텍이 대표적 수혜 후보로 거론된다. 시장조사 관점에서는 2026년 HBM 시장 규모가 전년 대비 큰 폭으로 늘어나고 메모리 부문이 반도체 시장 전체 성장률을 상회하는 증가세를 보일 것이란 전망도 제기된다. 다만 일부 시장조사기관은 2026년 이후 HBM 가격이 경쟁 심화와 생산능력 확대로 조정 국면에 들어갈 가능성도 함께 짚고 있어, 업황 사이클의 위치를 둘러싼 시각은 엇갈린다. 경쟁구도 측면에서 반도체용 PCB는 기술 장벽이 높아 신규 진입이 제한적인 산업으로, 심텍은 오랜 양산 경험과 글로벌 빅5 고객 기반을 바탕으로 시장 지위를 유지하고 있다는 평가를 받는다. 다만 자회사 심텍이 별도 상장돼 있는 구조는 지주회사인 심텍홀딩스의 시장 평가에 별개의 변수로 작용한다.",
-  "en": "The global semiconductor market is in a phase of memory-centric restructuring driven by the expansion of AI infrastructure, with HBM3E emerging as the mainstream product while a gradual transition toward HBM4 proceeds in parallel. In this environment, demand for memory module substrates that mount GPUs and HBM onto server boards is also seen expanding alongside growing AI infrastructure investment. In particular, as SOCAMM — the next-generation low-power server memory standard led by Samsung Electronics — enters full-scale mass production, the earnings of substrate suppliers tied to this trend are cited as an early indicator, with Simmtech frequently named as a prospective beneficiary. From a market-research perspective, some forecasts point to substantial year-on-year growth in the 2026 HBM market with the memory segment outgrowing the overall semiconductor market. However, some research houses also flag the possibility that HBM pricing could enter an adjustment phase after 2026 amid intensifying competition and capacity expansion, leaving views on the industry's cycle position mixed. On the competitive front, semiconductor PCB is regarded as an industry with high technical barriers that limit new entrants, and Simmtech is seen as maintaining its market position on the back of decades of production experience and its Global Top-5 customer base. That said, the fact that operating subsidiary Simmtech is separately listed introduces a distinct variable into how the market values holding company Simmtech Holdings."
+  "ko": "반도체 기판 업황은 AI 서버 수요와 메모리 모듈의 고사양화에 힘입어 고부가 제품 비중이 커지는 흐름이다. NH투자증권은 2026년 1월 자회사 심텍 리포트에서 메모리 반도체 사이클 회복에 따른 수주·수출 증가와 우호적 환율 환경을 중장기 성장 방향의 근거로 꼽았다. 원재료 측면에서는 2025년 11월 NH투자증권이 원재료비의 절반을 차지하는 금과 구리 가격이 가파르게 오른 점이 3분기 영업이익을 기대에 못 미치게 했다고 분석했다. 같은 리포트는 저부가 기판 비중 축소가 예상보다 느렸다는 점도 함께 지적했다. 하나증권은 2026년 11월 자회사 심텍 리포트에서 고객사 다변화로 기판 공급업체들의 가격 협상력이 높아지는 구간에 들어섰다고 제시했다. 같은 리포트는 고부가 비메모리향 패키지 기판 공급 확대와 메모리 패키지 기판의 스펙 상향이 동시에 이뤄지고 있다고 밝혔다. 대신증권은 2026년 5월 자회사 심텍의 SOCAMM2 공급 점유율이 메모리 3사 가운데 가장 높은 것으로 추정된다고 분석했다. 지주회사 구조에서는 SK스퀘어(SK Square)처럼 상장 자회사의 실적과 가치에 주가가 연동되는 방식이 나타난다. 같은 기판 업종에서는 삼성전기(Samsung Electro-Mechanics) 등 대형 업체와 고부가 기판의 기술 경쟁이 이어진다. AI 가속기 수요 변화에 따른 SOCAMM 용량 축소 이슈는 2026년 6월 부각되며 자회사 주가의 변동성을 키웠다.",
+  "en": "The semiconductor substrate market is shifting toward higher-value products as AI server demand and higher-spec memory modules expand. In January 2026, NH Investment & Securities pointed to a recovering memory cycle, rising orders and exports, and a favorable currency environment as grounds for medium- to long-term growth at subsidiary Simmtech. On raw materials, NH Investment & Securities analyzed in November 2025 that sharp rises in gold and copper prices, which account for about half of raw material costs, weighed on Q3 2025 operating profit. The same report also noted that the shrinking share of low-value BOC substrates was slower than expected. In November 2026, Hana Securities said that as customers diversify, substrate suppliers are entering a phase of stronger pricing power at subsidiary Simmtech. The same report cited expanding supply of high-value non-memory package substrates alongside upgraded specifications for memory package substrates. In May 2026, Daishin Securities estimated that subsidiary Simmtech holds the largest SOCAMM2 supply share among the three major memory makers. Among Korean holding companies, SK Square (SK Square) shows a similar structure in which share prices track the value of a listed subsidiary. In the same substrate industry, Samsung Electro-Mechanics (Samsung Electro-Mechanics) and other large makers keep technology competition in high-value substrates active. A SOCAMM capacity-reduction issue that surfaced in June 2026 added volatility to the subsidiary's share price."
  },
  "outlook": {
-  "ko": "자회사 심텍은 2026년 2분기 잠정실적 공시에서 하반기(7~12월) 매출 1조 719억원, 영업이익 1,631억원을 달성할 것으로 전망했으며, 그 근거로 System IC향 제품의 지속적 성장과 SOCAMM향 제품의 본격적인 성장, AI향 고부가가치 제품 믹스 개선에 따른 영업이익 확대를 제시했다. 앞서 2026년 초 공시된 상반기 전망에서도 회사는 고부가가치 MSAP 제품군의 매출 성장과 SoCAMM향 등 신규 제품 매출 확대를 근거로 들었다. 이러한 전망은 외부감사인의 검토가 완료되지 않은 회사 자체의 사업계획 기반 추정치로, 대내외 환경 변화에 따라 실제 실적과 차이가 발생할 수 있다는 점을 회사도 명시하고 있다. 증권가에서도 자회사의 2026년 실적 개선 기대가 반영되고 있는데, 교보증권은 2026년 5월 7일 리포트에서 자회사 심텍의 2026년 연결 매출액을 1조 9,004억원, 영업이익을 1,824억원(영업이익률 9.6%)으로 추정하며 SOCAMM 매출과 FC-CSP 확대를 수익성 개선의 핵심 근거로 제시했다. 앞서 DB증권도 2026년 2월 리포트에서 차세대 메모리 모듈 규격인 SoCAMM이 2025년 약 100억원 매출에서 2026년 대량 양산 체제에 진입하며 연매출이 10배 이상 성장할 것으로 예상했는데, 다만 BOC 등 텐팅 제품 비중 축소 여부와 원재료 가격 변동을 수익성 개선의 주요 변수로 함께 짚었다. 지주회사인 심텍홀딩스의 연결 실적은 이러한 자회사의 사업 진행 상황에 직접적으로 연동되는 구조이므로, 향후 SoCAMM 양산 확대 속도와 제품 믹스 개선 여부가 지주회사 실적 경로를 좌우할 핵심 변수로 남아 있다.",
-  "en": "In its Q2 2026 preliminary earnings disclosure, subsidiary Simmtech guided for H2 (July-December) revenue of KRW 1.0719tn and operating profit of KRW 163.1bn, citing continued growth in System IC products, the ramp-up of SOCAMM-related products, and operating profit expansion from an improved AI-related high-value product mix. Earlier in 2026, the company's H1 outlook similarly cited growth in high-value-added MSAP products and expanding sales of new products including those for SoCAMM. The company itself notes that such forecasts are internal business-plan-based estimates not yet reviewed by an external auditor, and that actual results may differ depending on changing internal and external conditions. Sell-side expectations for the subsidiary's 2026 performance have also been rising: Kyobo Securities, in a report dated May 7, 2026, estimated the subsidiary's 2026 consolidated revenue at KRW 1.9004tn and operating profit at KRW 182.4bn (9.6% margin), citing SOCAMM sales and FC-CSP expansion as key drivers of the profitability improvement. Earlier, in a February 2026 report, DB Securities projected that SoCAMM — a next-generation memory module standard — would grow more than tenfold in annual revenue from roughly KRW 10bn in 2025 as it enters full-scale mass production in 2026, while also flagging the mix of BOC and other tenting products and raw material price volatility as key variables for the profitability outlook. Because the holding company's consolidated results are directly linked to the subsidiary's business progress, the pace of SoCAMM production ramp-up and the trajectory of product mix improvement remain the key variables shaping the holding company's earnings path going forward."
+  "ko": "회사가 2026년 11월 9일 공시한 잠정실적에서 밝힌 대로 지주 연결 실적의 대부분은 자회사 심텍의 실적에 달려 있어, 자회사의 분기 흐름이 가장 가까운 확인 지점이다. 자회사 심텍은 2026년 11월 4일 기업설명회(IR) 자료에서 시스템 IC 부문 매출이 4분기에 966억원으로 증가할 것으로 전망했다고 밝혔다. 같은 자료에서 시스템 IC 부문 연간 매출은 3,293억원으로 전년 대비 63% 성장할 것으로 예상됐다. 회사는 차세대 LPCAMM·CXL 모듈과 기판으로 사업을 넓히는 계획도 밝혔다. 하나증권은 2026년 11월 리포트에서 자회사 심텍의 2027년 영업이익 추정치를 17% 상향 조정했고, 내년 실적이 올해보다 큰 폭으로 개선될 것으로 예상했다. 다만 이 전망은 자회사 기준이며 지주의 지배주주 순손익으로 바로 이어진다는 보장은 없다. 지주 단계에서 자회사 실적이 지배주주 몫으로 얼마나 귀속되는지는 정기보고서의 연결 주석에서 확인해야 한다. 다음 정기보고서인 2026년 사업보고서에서는 자회사별 매출과 지주 단계의 손익 구조가 함께 공시된다. 가장 가까운 확인 지점은 4분기 잠정실적에서 SOCAMM2와 고부가 기판 매출이 얼마나 반영되는지, 그리고 지배주주 순손익이 3분기 순손실에서 벗어나는지다.",
+  "en": "As the company said in its November 9, 2026 preliminary disclosure, most of the holding's consolidated results depend on subsidiary Simmtech, so the subsidiary's quarterly trend is the nearest checkpoint. In its November 4, 2026 investor relations materials, subsidiary Simmtech said it expects system IC sales to rise to KRW 96.6 billion in Q4 2026. The same materials expected full-year system IC sales of KRW 329.3 billion, up 63% year on year. The company also outlined plans to expand into next-generation LPCAMM and CXL modules and substrates. In a November 2026 report, Hana Securities raised its 2027 operating profit estimate for subsidiary Simmtech by 17% and expected 2027 results to improve substantially from 2026. However, this outlook is at the subsidiary level and does not guarantee that the gains will flow through to the net profit attributable to controlling shareholders at the holding level. How much subsidiary profit is attributed to controlling shareholders should be checked in the consolidated notes of periodic reports. The next periodic report, the 2026 annual report, will disclose segment and holding-level profit structure together. The nearest checkpoints are how much SOCAMM2 and high-value substrate sales show up in Q4 preliminary results, and whether net profit attributable to controlling shareholders moves out of the Q3 2026 loss."
  },
  "valuation_comment": {
-  "ko": "심텍홀딩스의 주가는 지배주주지분 기준 자본총계가 최근 수년간 크게 줄어든 상태에서 형성되고 있어, 주가순자산비율은 순자산 대비 상당한 프리미엄이 반영된 구간에서 거래되는 모습이다. 이는 2022년 이후 누적된 순손실로 지배주주지분 자본총계 자체가 크게 얇아진 결과와 맞물려 있다. 배당 측면에서는 주당 현금배당금이 소액에 그쳐 배당수익률이 업종 평균 대비 낮은 편에 속하는 것으로 파악된다. 한편 국내 다수 지주회사는 순자산가치 대비 주가가 할인돼 거래되는 소위 '지주회사 디스카운트' 현상이 구조적으로 자리잡아 왔다는 분석이 존재하며, 최근에는 자사주 소각 의무화·상법 개정 등 지배구조 개편 정책이 이러한 할인 요인에 대한 시장의 재평가 논의를 촉발하고 있다는 보도도 나온다. 다만 심텍홀딩스처럼 핵심 자회사가 별도 상장돼 있고 지배주주지분 자본 기반이 얇은 구조에서는 일반적인 지주회사 디스카운트 논의와 다른 변수들이 함께 작용할 수 있어, 밸류에이션 해석에는 이러한 구조적 특성을 함께 고려할 필요가 있다.",
-  "en": "Simmtech Holdings' share price is trading against a backdrop of owners' equity that has shrunk considerably over the past several years, putting the price-to-book ratio in a range that reflects a substantial premium to net asset value. This is tied to the sharp thinning of owners' equity caused by cumulative net losses since 2022. On the dividend side, the per-share cash dividend has been modest, placing the dividend yield on the lower end relative to industry averages. Separately, analysis suggests that many domestic Korean holding companies have structurally traded at a discount to net asset value — the so-called 'holding company discount' — and recent reporting notes that governance reform policies such as mandatory treasury share cancellation and commercial code revisions have sparked market discussion about re-rating this discount factor. However, in a structure like Simmtech Holdings, where the core subsidiary is separately listed and the owners' equity base is thin, additional variables beyond the general holding-company-discount discussion may be at play, and these structural characteristics warrant consideration alongside any valuation interpretation."
+  "ko": "심텍홀딩스의 밸류에이션은 자회사 심텍의 시장가치와 지주 자체의 손익을 함께 봐야 해석된다. 최근 4개 분기 지배주주 순손실 합계가 293억원이어서 주가수익비율은 산출되지 않는다. 주가순자산비율은 1배를 크게 웃도는 구간이다. 자본총계 3,739억원 가운데 지배주주 지분은 256억원에 그쳐 비지배지분 비중이 큰 구조이므로, 순자산 기준의 해석은 지분 구조를 함께 고려해야 한다. 배당수익률은 낮은 수준이어서 배당에 따른 현금 환원보다 자회사 가치 변화가 주가 해석의 중심이 되는 구조다. 지주회사 주가는 상장 자회사 지분 가치에 대해 할인되어 거래되는 경우가 많아, 자회사 심텍의 주가 흐름이 지주 가치 해석을 크게 좌우한다. 과거 흐름을 보면 2022년 흑자에서 2023년부터 2025년까지 적자를 거쳐 2026년 영업이익이 흑자로 돌아섰다. 지배주주 순손익은 아직 적자 구간이어서 이익 회복의 방향과 폭을 함께 확인해야 한다.",
+  "en": "The valuation of Simmtech Holdings has to be read by looking at both the market value of subsidiary Simmtech and the holding company's own profit and loss. Because the net loss attributable to controlling shareholders totaled KRW 29.3 billion over the last four quarters, no price-to-earnings ratio is calculated. The price-to-book ratio sits well above 1x. Of total equity of KRW 373.9 billion, only KRW 25.6 billion belongs to controlling shareholders, so the non-controlling stake is large and net-asset comparisons need to account for that structure. The dividend yield is low, so the share price is more closely tied to changes in the subsidiary's value than to cash returns to shareholders. Holding company shares often trade at a discount to the value of listed subsidiary stakes, so the subsidiary's share price largely shapes how the holding is interpreted. Over the longer run, operating profit moved from a profit in 2022 to losses from 2023 through 2025, then turned to profit in 2026. Net profit attributable to controlling shareholders is still in loss territory, so both the direction and the size of the earnings recovery need to be tracked."
  },
  "bull": [
   {
    "title": {
-    "ko": "연결 영업이익의 급격한 레벨업",
-    "en": "Sharp Step-up in Consolidated Operating Profit"
+    "ko": "영업이익 회복 속도",
+    "en": "Pace of operating profit recovery"
    },
    "body": {
-    "ko": "2026년 2분기 연결 영업이익은 575.6억원으로 직전 분기 9.6억원 대비 크게 확대됐다. 이는 자회사 심텍의 System IC·SOCAMM향 제품 확대와 가동률 상승이 반영된 결과로 해석된다. 2025년 3분기 이후 4개 분기 연속 영업이익 흑자를 이어가며 분기별 개선 흐름이 지속되고 있다.",
-    "en": "Consolidated operating profit reached KRW 57.6bn in Q2 2026, sharply higher than KRW 0.96bn in the prior quarter. This is understood to reflect the subsidiary's expansion in System IC and SOCAMM-related products alongside rising utilization rates. Operating profit has now stayed positive for four consecutive quarters since Q3 2025, extending the sequential improvement trend."
+    "ko": "2026년 2분기 영업이익은 576억원으로 전 분기 대비 5,866.7% 증가했고, 3분기에는 1,047억원으로 두 분기 연속 늘었다. 자회사 심텍의 2026년 3분기 영업이익률은 19%로 전 분기보다 6.8%포인트 상승했다고 회사가 밝혔다. 매출 증가율보다 영업이익 증가율이 훨씬 높아 수익성 개선이 빠르게 나타난 점이 강세 근거로 꼽힌다.",
+    "en": "Q2 2026 operating profit of KRW 57.6 billion rose 5,866.7% from the prior quarter, and Q3 2026 operating profit of KRW 104.7 billion extended the increase for a second straight quarter. Subsidiary Simmtech said its Q3 2026 operating margin rose 6.8 percentage points to about 19%. Operating profit growth far outpacing revenue growth is cited as the core bullish evidence."
    }
   },
   {
    "title": {
-    "ko": "AI 서버·메모리 인프라 수요 연계",
-    "en": "Exposure to AI Server and Memory Infrastructure Demand"
+    "ko": "AI 서버향 고부가 제품 확대",
+    "en": "Expansion of high-value AI server products"
    },
    "body": {
-    "ko": "AI 서버 시장 확장에 따라 GPU·HBM과 함께 이를 서버 보드에 얹는 메모리 모듈 기판 수요도 함께 늘어나는 구조로 평가된다. 삼성전자가 주도하는 차세대 저전력 서버 메모리 규격 SOCAMM이 본격 양산 단계에 진입하면서 관련 기판 공급업체인 심텍이 수혜 후보로 거론된다. 글로벌 빅5 메모리칩 메이커를 고객으로 확보한 점도 이러한 수요 확대의 기반이 된다.",
-    "en": "As the AI server market expands, demand for memory module substrates — which mount GPUs and HBM onto server boards — is seen growing alongside them. With SOCAMM, the next-generation low-power server memory standard led by Samsung Electronics, entering full-scale mass production, Simmtech has been cited as a prospective beneficiary as a substrate supplier. Its established customer base among Global Top-5 memory chip makers underpins this demand exposure."
+    "ko": "자회사 심텍의 SOCAMM2 관련 모듈 매출은 2026년 3분기 569억원으로 전 분기 대비 35% 증가했다. MSAP 매출도 3,312억원으로 전 분기 대비 8% 늘었다. 엔비디아 인공지능 가속기에 탑재되는 SOCAMM2 기판 공급이 2026년부터 시작됐다는 점이 중장기 성장 근거로 제시된다.",
+    "en": "Subsidiary Simmtech's SOCAMM-related module sales reached KRW 56.9 billion in Q3 2026, up 35% from the prior quarter. MSAP sales rose 8% to KRW 331.2 billion. Supply of SOCAMM2 substrates for NVIDIA AI accelerators, which began in 2026, is cited as a basis for medium- to long-term growth."
    }
   },
   {
    "title": {
-    "ko": "2년 연속 매출 회복 흐름",
-    "en": "Two Consecutive Years of Revenue Recovery"
+    "ko": "지배주주 몫 손익의 흑자 경험",
+    "en": "Recent profit at the controlling-shareholder level"
    },
    "body": {
-    "ko": "매출은 2023년 1조 929.6억원까지 줄었다가 2024년 1조 3,021.1억원, 2025년 1조 5,280.8억원으로 2년 연속 회복세를 나타냈다. 같은 기간 영업손실 규모도 2,063.1억원에서 342.6억원까지 지속적으로 줄어들며 적자에서 회복 국면으로 방향을 잡아가는 모습이다.",
-    "en": "Revenue declined to KRW 1.0930tn in 2023 before recovering for two straight years to KRW 1.3021tn in 2024 and KRW 1.5281tn in 2025. Over the same period, the operating loss steadily narrowed from KRW 206.31bn to KRW 34.26bn, indicating a directional shift from loss toward recovery."
+    "ko": "2026년 2분기 지배주주 순이익은 17.8억원으로 흑자 전환했고, 같은 해 1분기 지배주주 순손실 78.6억원에서 개선된 흐름이다. 영업이익이 늘어나는 구간에서 지배주주 몫의 손익도 흑자로 돌아설 수 있다는 것을 분기 실적이 보여 주었다. 자회사 실적이 연결 이익으로 얼마나 이어지는지가 강세 시나리오의 전제다.",
+    "en": "Net income attributable to controlling shareholders turned to a gain of KRW 1.78 billion in Q2 2026, improving from a loss of KRW 7.86 billion in Q1 2026. The quarterly record shows that the controlling-shareholder line can turn positive while operating profit grows. How far subsidiary earnings carry through to consolidated profit is the premise of the bullish case."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "영업이익과 지배주주순이익의 괴리",
-    "en": "Divergence Between Operating Profit and Owners' Net Income"
+    "ko": "지배주주 순손익의 재적자",
+    "en": "Return to loss at the controlling-shareholder level"
    },
    "body": {
-    "ko": "2026년 2분기 연결 영업이익이 575.6억원으로 급증했음에도 지배주주순이익은 62.8억원 손실을 기록했다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 지배주주순이익 합산도 -186.2억원으로 순손실 상태다. 소수주주지분 배분과 비영업적 손익 등 연결 구조상 요인이 반영된 결과로, 영업 회복이 곧바로 주주 귀속 이익 개선으로 연결되지 않고 있다.",
-    "en": "Despite consolidated operating profit surging to KRW 57.6bn in Q2 2026, net income attributable to owners posted a loss of KRW 6.28bn. Aggregate net income to owners over the most recent four quarters (Q3 2025-Q2 2026) also remained a net loss of KRW 18.62bn. This reflects consolidation-structure factors such as minority interest allocation and non-operating items, meaning operating-line recovery has not directly translated into improved income attributable to shareholders."
+    "ko": "2026년 3분기 지배주주 순손실은 113억원으로, 2분기 17.8억원 흑자에서 다시 적자로 전환했다. 최근 4개 분기 지배주주 순손실 합계는 293억원이다. 영업이익 증가폭에 비해 지배주주 몫의 손익은 아직 적자 구간이라는 점이 약세 근거다.",
+    "en": "Net loss attributable to controlling shareholders was KRW 11.3 billion in Q3 2026, reversing from a KRW 1.78 billion gain in Q2 2026. The net loss attributable to controlling shareholders totaled KRW 29.3 billion over the last four quarters. The controlling-shareholder line remains in loss despite the operating gain, which is the core bearish point."
    }
   },
   {
    "title": {
-    "ko": "여전히 높은 부채비율",
-    "en": "Still-Elevated Debt Ratio"
+    "ko": "재무구조와 현금흐름 부담",
+    "en": "Balance sheet and cash flow burden"
    },
    "body": {
-    "ko": "부채비율은 2024년 427.3%에서 2025년 327.0%로 낮아졌으나 여전히 300%를 넘는 수준이다. 2022년 123.7%에서 수년간 크게 높아진 상태로, 누적된 손실이 자본을 잠식한 결과가 반영돼 있다.",
-    "en": "The debt ratio eased from 427.3% in 2024 to 327.0% in 2025 but still exceeds 300%. This marks a substantial increase from 123.7% in 2022, reflecting the erosion of equity by accumulated losses over recent years."
+    "ko": "2025년 말 부채총계는 1조 2,225억원이고 부채비율은 327.0%로 2022년 123.7%보다 높다. 영업활동 현금흐름은 2023년부터 2025년까지 음(-)의 값이었다. 지배주주 지분이 256억원에 그쳐 재무 부담이 실적 개선의 속도를 제약할 수 있다.",
+    "en": "Total liabilities at end-2025 were KRW 1.22 trillion, and the debt-to-equity ratio of 327.0% is higher than the 123.7% recorded in 2022. Operating cash flow was negative in each year from 2023 to 2025. With only KRW 25.6 billion attributable to controlling shareholders, the financial burden could constrain the pace of improvement."
    }
   },
   {
    "title": {
-    "ko": "지배주주지분 자본의 급격한 축소",
-    "en": "Sharp Contraction in Owners' Equity"
+    "ko": "자회사 집중과 원재료 변동",
+    "en": "Concentration in the subsidiary and raw material swings"
    },
    "body": {
-    "ko": "지배주주지분 자본총계는 2022년 2,303.4억원에서 2024년 255.1억원까지 줄어든 뒤 2025년 256.2억원 수준에서 정체돼 있다. 3년 연속 지배주주순이익 적자가 누적된 결과로, 향후 이익 개선이 지속되지 않으면 자본 기반이 다시 훼손될 수 있는 구조다.",
-    "en": "Owners' equity fell from KRW 230.34bn in 2022 to KRW 25.51bn in 2024, remaining roughly flat at KRW 25.62bn in 2025. This is the result of three consecutive years of net losses attributable to owners, leaving a structure where the equity base could erode further if earnings improvement fails to continue."
+    "ko": "원재료비의 절반을 차지하는 금과 구리 가격 급등이 2025년 3분기 마진을 눌렀다는 NH투자증권 분석이 있다. SOCAMM 용량 축소 이슈가 2026년 6월 부각되며 자회사 주가 변동이 커졌다. 지주의 실적과 가치가 자회사 한 곳의 사업에 집중돼 있다는 점이 약세 요인이다.",
+    "en": "NH Investment & Securities analyzed that sharp rises in gold and copper, which account for about half of raw material costs, weighed on Q3 2025 margins. A SOCAMM capacity-reduction issue surfaced in June 2026 and added to share price swings at the subsidiary. Concentration of the holding's results and value in one subsidiary is a bearish factor."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "업황 사이클 리스크",
-    "en": "Industry Cycle Risk"
+    "ko": "자회사 의존",
+    "en": "Dependence on the subsidiary"
    },
    "body": {
-    "ko": "매출 대부분이 반도체 및 메모리용 PCB에서 발생해 메모리 업황 사이클에 실적이 크게 좌우된다. 2023년의 매출 급감과 대규모 영업손실은 이러한 사이클 리스크를 여실히 보여준 사례다. 일부 시장조사기관은 2026년 이후 HBM 가격이 경쟁 심화와 생산능력 확대로 조정 국면에 들어갈 가능성을 제기하고 있어, 향후 업황 흐름을 지속적으로 확인할 필요가 있다.",
-    "en": "Since most revenue is derived from semiconductor and memory-related PCBs, results are heavily influenced by the memory industry cycle. The sharp revenue decline and large operating loss in 2023 illustrate this cycle risk clearly. Some market research firms have raised the possibility that HBM pricing could enter an adjustment phase after 2026 amid intensifying competition and expanding capacity, making continued monitoring of industry conditions necessary."
+    "ko": "연결 실적 대부분이 자회사 심텍의 실적과 연동된다고 회사가 밝혔다. 자회사의 SOCAMM·고부가 기판 수요가 줄거나 고객사 주문이 바뀌면 지주 실적도 같은 방향으로 흔들릴 수 있다. 영업이익이 2026년 1분기 9.6억원에서 2분기 576억원으로 움직인 것처럼 분기 변동폭이 매우 크다는 점도 리스크다.",
+    "en": "The company has said most of its consolidated results move with subsidiary Simmtech. If demand for SOCAMM and high-value substrates weakens or customer orders shift, the holding's results could move in the same direction. Quarterly swings are very large, as operating profit moved from KRW 965 million in Q1 2026 to KRW 57.6 billion in Q2 2026."
    }
   },
   {
    "cat": {
-    "ko": "제품믹스·원가 변동성",
-    "en": "Product Mix and Cost Volatility"
+    "ko": "재무·현금흐름",
+    "en": "Financial and cash flow"
    },
    "body": {
-    "ko": "증권가에서는 BOC 등 텐팅 제품 비중 축소 여부와 원재료 가격 변동이 수익성 개선의 주요 변수로 지목되고 있다. 고부가가치 제품으로의 믹스 전환 속도가 계획보다 늦어질 경우 영업이익률 개선 폭이 제한될 수 있다.",
-    "en": "Sell-side analysts have flagged the mix of BOC and other tenting products alongside raw material price volatility as key variables for profitability improvement. If the shift toward a higher-value-added product mix proceeds more slowly than planned, the extent of operating margin improvement could be limited."
+    "ko": "2025년 말 부채총계는 1조 2,225억원이고 부채비율은 327.0%다. 영업활동 현금흐름은 2025년 -1,390억원이었다. 지배주주 지분이 256억원에 그쳐 손실이 이어지면 재무 완충 여력이 작다는 점이 부담이다.",
+    "en": "Total liabilities at end-2025 were KRW 1.22 trillion, with a debt-to-equity ratio of 327.0%. Operating cash flow was -KRW 139 billion in 2025. With KRW 25.6 billion attributable to controlling shareholders, the cushion against continued losses is limited."
    }
   },
   {
    "cat": {
-    "ko": "지주-자회사 이원상장 구조 리스크",
-    "en": "Dual-Listing Holding Structure Risk"
+    "ko": "전환사채 희석과 원재료",
+    "en": "Convertible bond dilution and raw materials"
    },
    "body": {
-    "ko": "핵심 자회사인 심텍이 코스닥에 별도 상장돼 있어, 지주회사인 심텍홀딩스의 연결 실적과 주주 귀속 이익 사이에 소수주주지분 배분에 따른 괴리가 발생할 수 있다. 최근 정부와 국회가 추진 중인 자사주 의무소각, 중복상장 관련 제도 변화는 이러한 이원상장 구조를 가진 지주회사들의 밸류에이션 프레임에 영향을 줄 수 있는 변수로 지목된다.",
-    "en": "Because core subsidiary Simmtech is separately listed on KOSDAQ, a gap can arise between the holding company's consolidated results and income attributable to shareholders due to minority interest allocation. Governance reforms currently being pursued by the government and National Assembly — including mandatory treasury share cancellation and measures addressing dual listings — have been cited as variables that could affect the valuation framework for holding companies with this kind of dual-listing structure."
+    "ko": "자회사 심텍의 제7회차 전환사채 165억원 규모 전환청구권 행사 공시가 2026년 11월 나왔다. 전환이 진행되면 자회사 지분 구조와 지주의 지분 가치 해석에 영향을 줄 수 있다. 금·구리 등 원재료 가격이 다시 오르면 마진을 압박할 수 있다는 점도 함께 봐야 한다.",
+    "en": "A disclosure of conversion rights exercised on the 7th convertible bond issue, about KRW 16.5 billion in size at subsidiary Simmtech, came out in November 2026. Conversion could affect the subsidiary's share structure and how the holding's stake is valued. A renewed rise in gold and copper prices could again pressure margins."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중",
-    "en": "Around November 2026"
+    "ko": "2027년 2월(예상)",
+    "en": "February 2027 (expected)"
    },
    "what": {
-    "ko": "2026년 3분기 연결 실적(잠정) 공시가 예상되는 시점으로, 2분기의 영업이익 급증세가 이어지는지와 지배주주순이익의 흑자 전환 여부를 확인할 필요가 있다.",
-    "en": "This is the expected timing for the Q3 2026 consolidated preliminary earnings disclosure, when it will be important to check whether the Q2 operating-profit surge continues and whether net income attributable to owners turns positive."
+    "ko": "2026년 4분기 및 연간 잠정실적 공시. 3분기 영업이익 1,047억원 수준이 유지되는지, 지배주주 순손익이 흑자로 돌아서는지가 확인 지점이다.",
+    "en": "Preliminary Q4 and full-year 2026 results. Whether operating profit holds near the KRW 104.7 billion of Q3 2026, and whether net profit attributable to controlling shareholders turns positive, are the checkpoints."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 중",
-    "en": "During H2 2026"
+    "ko": "2027년 3월 31일(법정 제출 기한)",
+    "en": "March 31, 2027 (statutory filing deadline)"
    },
    "what": {
-    "ko": "자회사 심텍이 제시한 하반기 매출 1조 719억원, 영업이익 1,631억원 자체 전망치가 실제 3·4분기 실적으로 얼마나 달성되는지 비교 확인이 필요하다.",
-    "en": "It will be worth comparing subsidiary Simmtech's own H2 guidance of KRW 1.0719tn in revenue and KRW 163.1bn in operating profit against actual Q3 and Q4 results as they are disclosed."
+    "ko": "2026년 사업보고서 제출. 영업활동 현금흐름이 2023년부터 2025년까지의 음(-)의 값에서 벗어났는지, 부채비율 327.0%가 얼마나 낮아졌는지를 확인한다.",
+    "en": "Filing of the 2026 annual report. The checkpoints are whether operating cash flow moves out of the negative territory seen from 2023 to 2025, and how far the 327.0% debt-to-equity ratio has declined."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기",
-    "en": "Q4 2026"
+    "ko": "2027년 5월(예상)",
+    "en": "May 2027 (expected)"
    },
    "what": {
-    "ko": "SoCAMM 등 신규 제품의 양산 확대 속도와 주요 메모리 고객사의 발주 동향을 확인해 제품믹스 개선이 계획대로 진행되는지 점검할 필요가 있다.",
-    "en": "It will be useful to track the pace of mass-production ramp-up for new products such as SoCAMM and order trends from major memory customers, to check whether product mix improvement is proceeding as planned."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 정기국회 회기 중",
-    "en": "During the 2026 regular National Assembly session"
-   },
-   "what": {
-    "ko": "자사주 의무소각, 상법 개정 등 지배구조 개편 관련 입법 진행 여부를 확인할 필요가 있으며, 이는 이원상장 구조를 가진 지주회사들의 밸류에이션 논의에 영향을 줄 수 있는 변수다.",
-    "en": "It will be worth monitoring the progress of legislation related to governance reform, including mandatory treasury share cancellation and commercial code revisions, as this is a variable that could affect valuation discussions for holding companies with dual-listing structures."
+    "ko": "2027년 1분기 잠정실적 공시. 자회사 SOCAMM2 관련 매출과 고부가 기판 매출이 4분기 이후에도 같은 흐름을 이어가는지 확인한다.",
+    "en": "Preliminary Q1 2027 results. The checkpoint is whether SOCAMM2-related and high-value substrate sales at the subsidiary keep the same trend after Q4 2026."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "심텍홀딩스는 자회사 심텍을 통해 반도체용 PCB 사업을 영위하는 지주회사로, 2023년 업황 저점을 거친 뒤 2024·2025년 2년 연속 매출 회복과 영업손실 축소를 이어왔다. 2026년 2분기에는 연결 영업이익이 575.6억원으로 급증하며 자회사의 System IC·SOCAMM향 제품 확대와 가동률 상승이 반영됐지만, 지배주주순이익은 같은 분기 62.8억원 손실을 기록하며 영업 회복과 주주 귀속 이익 사이의 괴리가 지속되고 있다. 지배주주지분 자본총계는 2022년 이후 누적 손실로 크게 얇아진 뒤 최근 정체 상태에 있으며, 부채비율도 300%를 상회하는 높은 수준을 유지하고 있다. 산업 측면에서는 AI 서버·SOCAMM 관련 수요 확대가 구조적 성장 동력으로 거론되지만, 메모리 업황 사이클 및 제품믹스·원가 변동성이 상존하는 리스크로 남아 있다. 핵심 자회사가 별도 상장돼 있는 이원상장 구조는 지주회사 특유의 밸류에이션 해석에 추가 변수로 작용하며, 관련 제도 변화 여부도 함께 지켜볼 필요가 있다. 투자자는 향후 분기 실적에서 영업이익 개선세가 지배주주순이익 흑자 전환으로 이어지는지를 핵심 관전 포인트로 삼을 필요가 있다.",
-   "en": "Simmtech Holdings is a holding company that operates a semiconductor PCB business through subsidiary Simmtech, having passed through an industry trough in 2023 before posting two consecutive years of revenue recovery and narrowing operating losses in 2024 and 2025. In Q2 2026, consolidated operating profit surged to KRW 57.6bn, reflecting the subsidiary's expansion in System IC and SOCAMM-related products alongside rising utilization, yet net income attributable to owners posted a loss of KRW 6.28bn in the same quarter, underscoring a persistent gap between operating recovery and income attributable to shareholders. Owners' equity, having thinned significantly due to accumulated losses since 2022, has recently plateaued, while the debt ratio remains elevated above 300%. On the industry side, expanding demand tied to AI servers and SOCAMM is cited as a structural growth driver, but memory industry cycle risk and product mix/cost volatility remain persistent concerns. The dual-listing structure, in which the core subsidiary is separately listed, adds an additional variable to the valuation interpretation typical of holding companies, and related regulatory developments also warrant continued observation. Investors will want to treat whether the operating profit improvement translates into a turnaround in net income attributable to owners in coming quarters as the key point to watch."
+   "ko": "심텍홀딩스는 자회사 심텍의 반도체 기판 사업 실적에 연결 손익이 연동되는 지주회사다. 2026년 3분기 영업이익은 1,047억원으로 전년 동기 대비 4,033.0% 증가했지만, 같은 분기 지배주주 순손실은 113억원이었다. 2023년부터 2025년까지 영업손실이 이어졌고, 2026년에는 1분기 저점 이후 2분기와 3분기에 영업이익이 늘었다. 재무 측면에서는 2025년 말 부채비율이 327.0%이고 지배주주 지분이 256억원에 그쳐 손익 개선의 완충 여력이 작은 편이다. 강세 요인으로는 SOCAMM2와 MSAP 등 고부가 제품 매출 증가와 고객사 다변화에 따른 가격 협상력 개선 분석이 있다. 약세 요인으로는 최근 4개 분기 지배주주 순손실 합계 293억원, 자회사 집중도와 원재료 가격 변동, 전환사채 전환청구권 행사에 따른 희석 가능성이 있다. PER은 산출되지 않고 주가순자산비율은 1배를 크게 웃도는 구간이어서, 주가는 자회사 기판 사업의 중장기 실적 흐름에 대한 평가를 반영하는 구도다. 다음 확인 지점은 2026년 4분기 및 연간 잠정실적, 2026년 사업보고서의 현금흐름과 부채비율, 2027년 1분기 지배주주 순손익이다.",
+   "en": "Simmtech Holdings is a holding company whose consolidated profit moves with the substrate business of its subsidiary Simmtech. Q3 2026 operating profit of KRW 104.7 billion rose 4,033.0% year on year, yet the net loss attributable to controlling shareholders was KRW 11.3 billion in the same quarter. Operating losses continued from 2023 through 2025, and in 2026 operating profit rose in Q2 and Q3 after a Q1 low. On the balance sheet, the debt-to-equity ratio was 327.0% at end-2025, and only KRW 25.6 billion of equity belongs to controlling shareholders, which leaves limited room to absorb further losses. Positive factors include higher sales of high-value products such as SOCAMM2 and MSAP, and analysis pointing to better pricing power as customers diversify. Negative factors include the KRW 29.3 billion net loss attributable to controlling shareholders over the last four quarters, dependence on one subsidiary, raw material price swings and possible dilution from convertible bond conversions. No price-to-earnings ratio is calculated, and the price-to-book ratio sits well above 1x, so the share price reflects how the market reads the medium- to long-term earnings path of the subsidiary's substrate business. The next checkpoints are preliminary Q4 and full-year 2026 results, the cash flow and debt-to-equity ratio in the 2026 annual report, and net profit attributable to controlling shareholders in Q1 2027."
   }
  },
  "sources": [
-  "https://alphasquare.co.kr/home/stock-summary?code=222800",
-  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=663004",
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=222800",
-  "https://buffettlab.co.kr/news/view.php?idx=52992",
-  "https://alphasquare.co.kr/home/stock-summary?code=036710",
-  "https://file.alphasquare.co.kr/media/pdfs/market-report/%EC%8B%AC%ED%85%8D%EC%9D%B4%EC%9D%B520260507%EA%B5%90%EB%B3%B4%EC%A6%9D%EA%B6%8C.",
-  "https://www.simmtech.com/upload/media/file/638786342618483612.pdf",
-  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=633901",
-  "https://www.cbci.co.kr/news/articleView.html?idxno=596254",
-  "https://www.threads.com/@neogul.wiki/post/DX9T4jBk5u8/%EA%B5%AD%EB%82%B4-%EA%B4%80%EB%A0%A8%EC%A3%BC-%EC%A0%95%EB%A6%AC1-%ED%95%98%EB%82%98%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%A0%EA%B5%AD%EB%82%B4-osat-1%EC%9C%84-%EA%B8%80%EB%A1%9C%EB%B2%8C-11%EC%9C%84%EC%82%BC%EC%84%B1%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4%ED%80%84%EC%BB%B4-%EA%B3%A0%EA%B0%9D%EC%82%AChbm-%EC%88%98%EC%9A%94-%ED%99%95%EB%8C%80-%EC%A7%81%EC%A0%91-%EC%88%98%ED%98%9C2-sfa%EB%B0%98%EB%8F%84%EC%B2%B4%EC%82%BC%EC%84%B1-%EB%A9%94%EB%AA%A8%EB%A6%AC-%ED%8C%A8%ED%82%A4%EC%A7%95/",
-  "https://www.datanews.co.kr/news/article.html?no=144972",
-  "https://news.skhynix.co.kr/2026-market-outlook/",
-  "https://www.instagram.com/popular/%E1%84%89%E1%85%B5%E1%86%B7%E1%84%90%E1%85%A6%E1%86%A8-%E1%84%87%E1%85%A1%E1%86%AB%E1%84%83%E1%85%A9%E1%84%8E%E1%85%A6-%E1%84%91%E1%85%A2%E1%84%8F%E1%85%B5%E1%84%8C%E1%85%B5-%E1%84%80%E1%85%B5%E1%84%91%E1%85%A1%E1%86%AB/",
-  "https://www.widedaily.com/news/articleView.html?idxno=262727",
-  "https://www.cbci.co.kr/news/articleView.html?idxno=594778",
-  "https://www.investing.com/equities/simmtech-co-ltd-earnings",
-  "https://www.ket.kr/news/article.html?no=39901",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260506000777&docno=&viewerhost="
+  "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=713944",
+  "https://www.vegannews.co.kr/news/article.html?no=402585",
+  "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=712317",
+  "https://www.businesspost.co.kr/BP?command=article_view&num=451058",
+  "https://www.cbci.co.kr/news/articleView.html?idxno=624866",
+  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=502171",
+  "https://www.job-post.co.kr/news/articleView.html?idxno=237963",
+  "https://www.leadeconomy.co.kr/news/articleView.html?idxno=10899",
+  "https://news.nate.com/view/20260608n07445",
+  "https://alphadistill.com/report/1791",
+  "https://www.newspim.com/news/view/20260507000550",
+  "https://www.newspim.com/news/view/20260507000151",
+  "https://news.nate.com/view/20260106n05504",
+  "https://news.nate.com/view/20260528n09399?mid=n1101",
+  "https://news.nate.com/view/20260507n19308",
+  "https://www.etoday.co.kr/news/view/2643758",
+  "https://www.fnnews.com/news/202511130906576983",
+  "https://v.daum.net/v/0dinZ8waW5?f=p"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "036710",
  "name": "심텍홀딩스",
  "name_en": "SIMMTECH HOLDINGS Co., Ltd.",
@@ -223,11 +213,11 @@
   "지주"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 09:16",
- "dataDate": "20260904",
+ "reportDate": "2026-11-14",
+ "reportTs": "2026-11-14 07:36",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-08-21",
+  "asOf": "2026-11-13",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -238,6 +228,7 @@
     "np_owner": -37812693853,
     "equity": 373911861641,
     "equity_owner": 25619521480,
+    "equity_nci": 348292340161,
     "liab": 1222534741514,
     "cfo": -138993810711,
     "eps_basic": -784,
@@ -253,6 +244,7 @@
     "np_owner": -78223488217,
     "equity": 278656340332,
     "equity_owner": 25510795750,
+    "equity_nci": 253145544582,
     "liab": 1190642671630,
     "cfo": -106971624127,
     "eps_basic": -1687,
@@ -268,6 +260,7 @@
     "np_owner": -98709308433,
     "equity": 418902842679,
     "equity_owner": 131796975690,
+    "equity_nci": 287105866989,
     "liab": 891702876069,
     "cfo": -122509976462,
     "eps_basic": 2131,
@@ -283,6 +276,7 @@
     "np_owner": 33122419177,
     "equity": 633029078947,
     "equity_owner": 230340646935,
+    "equity_nci": 402688432012,
     "liab": 783354665925,
     "cfo": 421088344535,
     "eps_basic": 711,
@@ -292,12 +286,6 @@
    }
   ],
   "quarterly": [
-   {
-    "q": "2025Q2",
-    "rev": 368115385559,
-    "op": -3708925269,
-    "np_owner": 2386585978
-   },
    {
     "q": "2025Q3",
     "rev": 398052866260,
@@ -314,33 +302,46 @@
     "q": "2026Q1",
     "rev": 443177688304,
     "op": 964665052,
-    "np_owner": 205133936
+    "np_owner": -7855787454
    },
    {
     "q": "2026Q2",
     "rev": 558207126719,
     "op": 57558623825,
-    "np_owner": -6276395274
+    "np_owner": 1784526116
+   },
+   {
+    "q": "2026Q3",
+    "rev": 592187990779,
+    "op": 104705190963,
+    "np_owner": -11325640757
    }
   ],
   "valuation": {
-   "price": 3900,
-   "mcap": 0.206,
+   "price": 5780,
+   "mcap": 0.3053,
    "shares": 52827754,
    "total_shares": 52827754,
-   "wavg_shares": 52793576,
+   "wavg_shares": 52878121,
    "per": null,
-   "eps": -353,
-   "pbr": 6.1905,
-   "bps": 630,
-   "roe_ttm": -95.1,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": -18616430469,
-   "pbr_krx": 7.79,
+   "eps": -553,
+   "pbr": 6.7053,
+   "bps": 862,
+   "roe_ttm": -112.9,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": -29274948521,
+   "ccy": "KRW",
+   "bps_src": "자체",
+   "eps_src": "공시",
+   "pbr_krx": 11.92,
    "bps_krx": 485.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 10.0,
-   "div": 0.26
+   "div": 0.17,
+   "hidden": {
+    "per": "loss"
+   }
   }
- }
+ },
+ "textRules": 2
 }

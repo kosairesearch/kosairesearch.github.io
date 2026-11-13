@@ -1,230 +1,228 @@
 {
  "title": {
-  "ko": "AI GPU가 바꾼 NHN의 이익 구조",
-  "en": "AI GPU Reshapes NHN's Profit Mix"
+  "ko": "클라우드·결제가 끌어올린 분기 최대 실적",
+  "en": "Record quarterly profit as cloud and payments drive growth"
  },
  "lead": {
-  "ko": "게임·결제·기술 세 축이 동시에 이익을 내기 시작하면서 NHN의 손익 구조가 적자에서 흑자 기조로 이동했고, 그 중심에는 클라우드의 AI GPU 사업이 있다.",
-  "en": "With games, payments and technology all contributing profit at the same time, NHN's earnings profile has shifted from losses to a profit trend, driven above all by the AI GPU business inside its cloud unit."
+  "ko": "NHN은 2026년 3분기 매출 7,583억원, 영업이익 588억원으로 회사가 역대 분기 최대치라고 밝힌 실적을 냈으며, 결제와 클라우드가 실적을 이끌었다. 게임 부문의 흐름과 구체적 실적 가이던스의 부재는 확인할 변수로 남아 있다.",
+  "en": "NHN reported record quarterly revenue of KRW 758.3 billion and operating profit of KRW 58.8 billion for Q3 2026, with payments and cloud driving the gain, while game-segment softness and the absence of formal earnings guidance remain open questions."
  },
  "keypoints": [
   {
-   "ko": "2026년 2분기 매출 7,579억원·영업이익 579억원으로 분기 최고치를 기록했고, 회사는 게임·결제·기술 전 부문이 함께 성장한 결과라고 설명했다.",
-   "en": "Second-quarter 2026 revenue of KRW 757.9bn and operating profit of KRW 57.9bn were quarterly records, which the company attributed to simultaneous growth across games, payments and technology."
+   "ko": "2026년 3분기 매출 7,583억원(전년 동기 대비 21.2% 증가)과 영업이익 588억원(112.6% 증가)은 회사가 역대 분기 최대치라고 밝힌 수준이며, 영업이익률은 7.8%로 전년 동기보다 3.3%포인트 높아졌다.",
+   "en": "Q3 2026 revenue of KRW 758.3 billion rose 21.2% year on year and operating profit of KRW 58.8 billion rose 112.6%, both described by the company as record quarterly highs, with an operating margin of 7.8%."
   },
   {
-   "ko": "기술 부문은 AI GPU 사업 확대로 2분기 매출 1,598억원을 기록했고, NHN클라우드 매출은 전년 동기 대비 85.3% 늘었다는 것이 회사 설명이다.",
-   "en": "The technology segment posted KRW 159.8bn in second-quarter revenue on AI GPU expansion, with NHN Cloud revenue up 85.3% year on year according to the company."
+   "ko": "연간 기준 영업손실 326억원이던 2024년에서 2025년에는 영업이익 1,324억원으로 흑자 전환했고, 지배주주 순이익도 321억원으로 흑자 전환했다.",
+   "en": "Annual operating profit swung from an operating loss of KRW 32.6 billion in 2024 to operating profit of KRW 132.4 billion in 2025, and profit attributable to owners of the parent turned positive at KRW 32.1 billion."
   },
   {
-   "ko": "연간으로는 2024년 영업손실에서 2025년 영업이익 1,324억원(영업이익률 5.3%)으로 흑자 전환했고, 영업활동현금흐름도 크게 늘었다.",
-   "en": "On an annual basis the company swung from a 2024 operating loss to KRW 132.4bn operating profit in 2025 (5.3% margin), with operating cash flow also sharply higher."
+   "ko": "결제 부문(NHN KCP·NHN페이코)과 기술 부문(NHN Cloud의 AI GPU 사업)의 매출 합계는 5,693억원으로 전체 매출의 75%이며, 회사 실적 발표 기준이다.",
+   "en": "Payments and technology together contributed KRW 569.3 billion, about 75% of Q3 2026 revenue, led by NHN KCP and the AI GPU business of NHN Cloud, according to the company's results release."
   },
   {
-   "ko": "웹보드게임 월 결제한도가 70만원에서 100만원으로 상향된 시행령이 2026년 2월 공포되며 게임 부문 매출 단가에 변화가 반영되고 있다.",
-   "en": "An enforcement decree raising the monthly webboard game spending cap from KRW 700,000 to KRW 1m was promulgated in February 2026, feeding through to per-user spending in the game segment."
+   "ko": "게임 부문 매출은 3분기 1,310억원으로 전년 동기 대비 10.7% 늘었지만 전 분기 대비 6.2% 줄었고, 모바일 게임 매출은 전 분기 대비 10.7% 감소했다.",
+   "en": "Game revenue was KRW 131.0 billion in Q3 2026, up 10.7% year on year but down 6.2% quarter on quarter, and mobile game revenue fell 10.7% from the prior quarter."
   },
   {
-   "ko": "데이터센터 임차·자체 구축과 최신 GPU 확충이 동시에 진행되면서 감가상각비·전력비 등 고정비 부담과 부채비율 상승이 함께 나타나고 있다.",
-   "en": "Simultaneous data-center leasing, in-house construction and newer GPU purchases are lifting fixed costs such as depreciation and electricity while also pushing the debt ratio higher."
+   "ko": "회사는 다음 분기나 연간 매출·이익의 구체적 전망치를 제시하지 않았으며, 페이코 2027년 연간 흑자 전환과 2027년 말 AI 데이터센터 100MW 목표가 다음 확인 지점이다.",
+   "en": "The company has not provided specific quarterly or annual revenue and profit forecasts, so NHN Payco's full-year profitability target for 2027 and the 100MW data center goal for end-2027 are the next checkpoints."
   }
  ],
  "business": {
-  "ko": "NHN은 게임, 결제·광고, 기술(클라우드), 기타(콘텐츠·커머스·티켓) 네 축으로 구성된 지주형 사업 구조를 갖고 있다. 회사는 온라인·모바일 게임, PG 및 VAN 서비스와 페이코 간편결제, CSP·MSP 형태의 클라우드 기술 사업을 주력으로 하고 여기에 티켓 판매·커머스·웹툰 등 기타 사업을 함께 영위하며, 2026년 1분기 말 기준 매출 구성은 게임 20.49%, 결제 및 광고 54.31%, 기타 25.20%였다. 2026년 2분기 부문별로는 게임 1,396억원, 결제 3,940억원, 기술 1,598억원으로 공시됐고 기타 부문은 880억원이었다. 결제 축의 핵심은 자회사 NHN KCP로, 2분기 총 거래대금 17조원(전년 동기 대비 34.0% 증가)과 분기 말 국내 PG 시장 점유율 30%를 기록했다고 회사는 밝혔다. 게임은 한게임 기반 웹보드가 캐시카우 역할을 하고 일본 자회사 NHN플레이아트의 모바일 게임이 해외 축을 담당한다. 2분기 PC 온라인 게임은 491억원, 모바일 게임은 905억원으로, 웹보드 규제 환경 변화에 따른 결제 유저 1인당 평균 매출 상승과 한게임 로얄홀덤 오프라인 토너먼트, 일본 '컴파스'의 '체인소맨' 협업이 배경으로 제시됐다. 기술 부문은 NHN클라우드의 공공·금융·게임 버티컬 클라우드와 GPUaaS, 그리고 일본 기술법인 NHN테코러스의 AWS 리세일 사업으로 구성된다. 회사는 지난 수년간 커머스·여행·콘텐츠 등 적자 비핵심 자회사와 서비스를 정리해 종속회사를 90여 개에서 60여 개 수준으로 줄이고, 서비스 종료와 조직 개편으로 고정비 부담을 낮췄다. 경쟁 구도는 게임에서 네오위즈·넷마블 계열 웹보드 사업자, 결제에서 국내 PG·간편결제 사업자, 클라우드에서 국내 CSP 및 글로벌 하이퍼스케일러와 각각 다른 전선을 형성한다.",
-  "en": "NHN operates through four axes: games, payments and advertising, technology (cloud), and others such as content, commerce and ticketing. The group's main businesses are online and mobile games, PG and VAN services plus the PAYCO simple-payment platform, and CSP/MSP-type cloud technology, alongside ticketing, commerce and webtoons; as of end-first-quarter 2026 the revenue mix was games 20.49%, payments and advertising 54.31%, and others 25.20%. For the second quarter of 2026 the company disclosed games at KRW 139.6bn, payments at KRW 394.0bn and technology at KRW 159.8bn, with the other segment at KRW 88.0bn. The payments axis centers on subsidiary NHN KCP, which the company said handled KRW 17tn of transaction value in the quarter, up 34.0% year on year, holding a 30% share of the domestic PG market at quarter-end. In games, Hangame-based webboard titles act as the cash cow while Japanese subsidiary NHN PlayArt handles the overseas leg. Second-quarter PC online game revenue was KRW 49.1bn and mobile game revenue KRW 90.5bn, attributed to higher average spending per paying user after the webboard regulatory change, the Hangame Royal Holdem offline tournament, and the Japanese title Compass collaborating with Chainsaw Man. The technology segment combines NHN Cloud's public-sector, financial and gaming vertical cloud plus GPU-as-a-service with the AWS resale business of Japanese unit NHN Techorus. Over recent years the company wound down or restructured loss-making non-core subsidiaries and services in commerce, travel and content, cutting consolidated subsidiaries from around 90 to roughly 60 while lowering fixed costs through service closures and reorganization. Competitively it faces webboard rivals such as Neowiz and Netmarble's affiliate in games, domestic PG and simple-payment providers in payments, and local CSPs plus global hyperscalers in cloud."
+  "ko": "NHN은 게임, 결제, 기술(클라우드) 세 축으로 사업을 운영한다. 회사의 2026년 11월 10일 3분기 실적 발표 기준 부문별 매출은 결제 3,976억원(전년 동기 대비 21.5% 증가), 기술 1,717억원(53.6% 증가), 게임 1,310억원(10.7% 증가), 기타 785억원(12.4% 감소)이다. 결제 부문은 NHN KCP와 NHN페이코로 구성되며, NHN KCP의 3분기 총 거래금액은 17조 3,000억원으로 전년 동기 대비 30.5% 늘었고 해외 가맹점 비중은 25.3%로 역대 최고 수준이다. NHN페이코는 2026년 8월 말 배달의민족 온라인 결제를 열어 결제처를 넓혔다. 기술 부문의 중심인 NHN Cloud는 AI GPU 수요에 힘입어 3분기 매출이 전년 동기 대비 75.5% 늘었고 흑자 구조를 유지했다. 일본 기술법인 NHN Techorus는 AWS 리세일 사업의 성장으로 매출이 20.8% 늘었다. 게임 부문은 국내 웹보드게임(한게임 포커와 오프라인 대회 HPT)과 일본 모바일게임의 라이브 운영에 역량을 모으고 있으며, 수익성이 낮은 일부 사업은 정비 중이다. 3분기 말 연결 대상 자회사는 56개로 1년 전보다 9개 줄었다. 고객 기반은 결제 측 온라인 가맹점, 클라우드 측 정부 사업과 민간 GPU 수요로 나뉜다. 경쟁 구도상 클라우드는 삼성에스디에스(Samsung SDS)와 LG씨엔에스(LG CNS) 등 IT 서비스 기업과, 결제는 국내 전자결제대행 업체와 비교된다.",
+  "en": "NHN runs three core businesses: games, payments, and technology led by NHN Cloud. According to the company's Q3 2026 results release of November 10, 2026, payment revenue was KRW 397.6 billion (up 21.5% year on year), technology revenue was KRW 171.7 billion (up 53.6%), game revenue was KRW 131.0 billion (up 10.7%), and other revenue was KRW 78.5 billion (down 12.4%). The payment segment includes NHN KCP and NHN Payco. NHN KCP's Q3 2026 transaction volume reached KRW 17.3 trillion, up 30.5% year on year, and overseas merchants accounted for a record 25.3% of that volume. NHN Payco opened online payments for Baemin at the end of August 2026. NHN Cloud, the center of the technology segment, grew revenue 75.5% year on year on AI GPU demand while staying profitable. Japanese technology subsidiary NHN Techorus grew revenue 20.8% on AWS resale. The game segment centers on domestic web-board games, including Hangame poker and the Hangame Poker Tour (HPT) offline tournament series, plus live operation of Japanese mobile games, and the company is restructuring some low-profit businesses. Consolidated subsidiaries stood at 56 at the end of Q3 2026, nine fewer than a year earlier. Payment customers are mainly online merchants, while cloud customers include government projects and private-sector GPU users. In cloud, the company is compared with Samsung SDS and LG CNS, and in payments with domestic PG operators."
  },
  "earnings": {
-  "ko": "연간 흐름은 뚜렷한 U자 형태다. 매출은 2022년 2조 1,148억원, 2023년 2조 2,696억원, 2024년 2조 4,561억원, 2025년 2조 5,162억원으로 꾸준히 늘었지만, 영업이익은 2022년 390억원, 2023년 556억원에서 2024년 326억원 영업손실로 돌아섰다가 2025년 1,324억원 흑자로 전환했다. 지배주주 순이익도 2022~2024년 3년 연속 적자(2024년 1,325억원 손실)에서 2025년 321억원 흑자로 바뀌었다. 영업이익률은 2022년 1.8%, 2023년 2.4%, 2024년 -1.3%를 지나 2025년 5.3%로 회복됐고, 영업활동현금흐름은 2024년 470억원에서 2025년 3,740억원으로 크게 확대됐다. 분기 흐름은 2025년 2분기 매출 6,049억원·영업이익 219억원 → 3분기 6,256억원·276억원 → 4분기 6,856억원·552억원 → 2026년 1분기 6,714억원·263억원 → 2026년 2분기 7,579억원·579억원으로, 4분기와 2분기에 이익이 크게 뛰는 계단식 개선을 보였다. 회사는 2025년 4분기부터 경영효율화·비용통제 성과가 반영됐고 2026년 2분기부터 주요 사업 성과가 이익으로 나타나고 있다고 설명했다. 2026년 1분기에 영업이익이 뒷걸음질한 배경으로 회사는 AI GPU 인프라 선제 투자 비용 등의 영향을 들었다. 2분기 비용 측면에서는 영업비용 7,000억원 가운데 지급수수료가 5,073억원으로 KCP 매출 연동 수수료 증가가 반영됐고, 감가상각비 370억원은 전년 동기 대비 47.6% 늘었는데 AI GPU 정부사업 관련 사용권자산상각비가 추가 반영된 결과라고 회사는 밝혔다. 재무구조는 확장 국면으로, 부채총계가 2024년 1조 4,277억원에서 2025년 2조 806억원으로 늘며 부채비율이 80.9%에서 117.5%로 올라섰고 자본총계는 1조 7,708억원으로 큰 변동이 없었다. 지배주주 순이익이 2026년 1분기 236억원에서 2분기 200억원으로 줄어든 데는 전 분기에 반영된 금융자산처분이익 등의 기저 효과가 있었다는 것이 회사 설명이다.",
-  "en": "The annual trajectory forms a clear U-shape. Revenue rose steadily from KRW 2,114.9bn in 2022 to KRW 2,269.6bn in 2023, KRW 2,456.1bn in 2024 and KRW 2,516.2bn in 2025, yet operating profit of KRW 39.1bn in 2022 and KRW 55.6bn in 2023 turned into a KRW 32.6bn operating loss in 2024 before swinging to a KRW 132.4bn profit in 2025. Net profit attributable to owners also moved from three consecutive loss years through 2024 (a KRW 132.5bn loss that year) to a KRW 32.1bn profit in 2025. The operating margin recovered to 5.3% in 2025 after 1.8% in 2022, 2.4% in 2023 and minus 1.3% in 2024, while operating cash flow expanded from KRW 47.0bn in 2024 to KRW 374.0bn in 2025. Quarterly, revenue and operating profit went from KRW 604.9bn and KRW 21.9bn in the second quarter of 2025 to KRW 625.6bn and KRW 27.6bn, then KRW 685.6bn and KRW 55.2bn, KRW 671.4bn and KRW 26.3bn, and KRW 757.9bn and KRW 57.9bn in the second quarter of 2026, a stair-step improvement with profit spikes in the fourth and second quarters. The company said cost-efficiency and cost-control gains began showing from the fourth quarter of 2025, with core business results turning into profit from the second quarter of 2026. For the softer first quarter of 2026, management pointed to up-front AI GPU infrastructure investment costs. On second-quarter costs, of KRW 700.0bn total operating expenses, payment fees were KRW 507.3bn on higher revenue-linked fees at KCP, while depreciation of KRW 37.0bn rose 47.6% year on year as right-of-use asset amortization tied to the government AI GPU project was additionally recognized. The balance sheet is in expansion mode: total liabilities grew from KRW 1,427.7bn in 2024 to KRW 2,080.6bn in 2025, lifting the debt-to-equity ratio from 80.9% to 117.5%, while total equity was little changed at KRW 1,770.8bn. Net profit attributable to owners eased from KRW 23.6bn in the first quarter of 2026 to KRW 20.0bn in the second, which the company linked to base effects from financial-asset disposal gains booked in the prior quarter."
+  "ko": "연간 매출은 2022년 2조 1,149억원에서 2025년 2조 5,162억원으로 늘었다. 2023년 2조 2,696억원(전년 대비 7.3% 증가), 2024년 2조 4,561억원(전년 대비 8.2% 증가), 2025년 2조 5,162억원(전년 대비 2.4% 증가)으로 2023년부터 2025년까지 3년 연속 증가했으며, 2022~2025년 중 가장 큰 해는 2025년이다. 증가율은 2024년 8.2%에서 2025년 2.4%로 낮아졌다. 영업이익은 2022년 391억원에서 2023년 556억원(전년 대비 42.4% 증가)으로 늘었지만, 2024년에는 영업손실 326억원으로 적자 전환했다. 2025년에는 영업이익 1,324억원으로 흑자 전환했고, 영업이익률은 2022년 1.8%, 2023년 2.4%, 2024년 -1.3%, 2025년 5.3%로 움직였다. 지배주주 순이익은 2022년 321억원 순손실, 2023년 85.4억원 순손실(적자 지속, 손실 축소), 2024년 1,325억원 순손실(적자 지속, 손실 확대)을 거쳐 2025년 321억원 순이익(흑자 전환)으로 돌아섰다. 당기순이익(비지배지분 포함)은 2025년 519억원으로 지배주주 순이익과 다른 값이다. 같은 기간 부채비율은 2022년 51.8%에서 2025년 117.5%로 높아졌고, 2025년 말 자본총계 1조 7,708억원 중 지배주주 지분은 1조 4,631억원, 부채총계는 2조 806억원이다. 영업활동 현금흐름은 2022년 259억원, 2023년 1,653억원, 2024년 470억원, 2025년 3,740억원이다. 분기 흐름을 보면 매출은 2025년 3분기 6,256억원, 4분기 6,856억원(전 분기 대비 9.6% 증가), 2026년 1분기 6,714억원(2.1% 감소), 2분기 7,579억원(12.9% 증가), 3분기 7,583억원(0.1% 증가, 전년 동기 대비 21.2% 증가)이었다. 영업이익은 2025년 3분기 276억원에서 4분기 552억원을 거쳐 2026년 1분기 263억원(52.5% 감소)으로 줄었다가 2분기 579억원(120.6% 증가), 3분기 588억원(1.5% 증가)으로 늘었다. 지배주주 순이익은 2025년 3분기 121억원, 4분기 147억원, 2026년 1분기 236억원, 2분기 200억원(15.0% 감소), 3분기 292억원(45.7% 증가)이었다. 3분기 순이익에는 청산 중인 연결 종속회사의 일회성 채무 면제 이익이 일부 반영됐다고 회사가 설명했다. 감가상각비는 378억원으로 전 분기 대비 2.0% 늘었다.",
+  "en": "Annual revenue rose from KRW 2.11 trillion in 2022 to KRW 2.52 trillion in 2025. It reached KRW 2.27 trillion in 2023 (up 7.3%), KRW 2.46 trillion in 2024 (up 8.2%), and KRW 2.52 trillion in 2025 (up 2.4%), so revenue grew for three consecutive years from 2023 to 2025, and 2025 was the largest year of 2022 to 2025. Growth slowed from 8.2% in 2024 to 2.4% in 2025. Operating profit rose from KRW 39.1 billion in 2022 to KRW 55.6 billion in 2023 (up 42.4%), then turned to an operating loss of KRW 32.6 billion in 2024, and returned to operating profit of KRW 132.4 billion in 2025. The operating margin moved from 1.8% in 2022 to 2.4% in 2023, -1.3% in 2024, and 5.3% in 2025. Profit attributable to owners of the parent was a loss of KRW 32.1 billion in 2022, a loss of KRW 8.54 billion in 2023 (losses narrowed), a loss of KRW 132.5 billion in 2024 (losses widened), and a profit of KRW 32.1 billion in 2025 (a swing to profit). Net profit including non-controlling interests was KRW 51.9 billion in 2025, a different figure from profit attributable to owners of the parent. Over the same period the debt-to-equity ratio rose from 51.8% in 2022 to 117.5% in 2025. At the end of 2025, total equity was KRW 1.77 trillion, of which equity attributable to owners of the parent was KRW 1.46 trillion, and total liabilities were KRW 2.08 trillion. Operating cash flow was KRW 25.9 billion in 2022, KRW 165.3 billion in 2023, KRW 47 billion in 2024, and KRW 374 billion in 2025. On a quarterly basis, revenue was KRW 625.6 billion in Q3 2025, KRW 685.6 billion in Q4 2025 (up 9.6% quarter on quarter), KRW 671.4 billion in Q1 2026 (down 2.1%), KRW 757.9 billion in Q2 2026 (up 12.9%), and KRW 758.3 billion in Q3 2026 (up 0.1% quarter on quarter and 21.2% year on year). Operating profit went from KRW 27.6 billion in Q3 2025 to KRW 55.2 billion in Q4 2025, fell to KRW 26.3 billion in Q1 2026 (down 52.5%), then rose to KRW 57.9 billion in Q2 2026 (up 120.6%) and KRW 58.8 billion in Q3 2026 (up 1.5%). Profit attributable to owners of the parent was KRW 12.1 billion in Q3 2025, KRW 14.7 billion in Q4 2025, KRW 23.6 billion in Q1 2026, KRW 20 billion in Q2 2026 (down 15.0%), and KRW 29.2 billion in Q3 2026 (up 45.7%). The company said Q3 net profit partly reflected a one-time debt forgiveness gain from a subsidiary being liquidated. Depreciation was KRW 37.8 billion, up 2.0% from the prior quarter."
  },
  "industry": {
-  "ko": "전방 수요의 무게중심은 AI 인프라로 이동했다. AI 서비스 확산으로 필요한 만큼 GPU를 빌려 쓰는 GPUaaS 수요가 커지면서, 안정적인 전력과 데이터센터 공간을 선제적으로 확보하는 것이 클라우드 사업 경쟁력의 관건이 되고 있다. 업계에서는 고성능 GPU를 안정적으로 운용할 전력·냉각 인프라를 얼마나 빨리 선점하느냐가 AI 사업 확대의 중요한 변수로 꼽힌다는 시각이 나온다. NHN클라우드는 정부 GPU 구축 사업을 발판으로 이 시장에 진입했고, 2026년 5월 AI 풀스택 브랜드 '팩토리X'를 공개해 GPU 인프라 확보부터 운영 최적화, AI 에이전트 실행 환경까지 아우르는 통합 체계를 제시했다. 회사는 단순 GPU 공급 사업자와의 차별점으로 국내 최다 수준의 안정적 GPU 운영 경험과 컨트롤 플랫폼·AI 에이전트 환경 제공을 내세운다. 결제 쪽에서는 국내 PG 시장이 거래대금 성장과 함께 상위 사업자 중심으로 재편되는 흐름이 이어지고, NHN KCP는 2026년 4월 블록체인 개발사 아바랩스와 결제 특화 메인넷 구축 파트너십을, NH농협은행과는 스테이블코인 기반 결제 생태계 조성 업무협약을 맺었다. 게임 쪽 산업 환경은 규제 변수가 크다. 고스톱·포커 등 웹보드 게임의 결제 한도를 70만원에서 100만원으로 상향하는 게임산업법 시행령 개정안이 2026년 2월 3일 공포됐고, 이는 2014년 이후 가장 큰 폭의 규제 완화 조치로 평가된다. 다만 정부는 한도 상향 이후에도 사후 관리와 모니터링을 강화하겠다는 입장을 밝혀 규제 방향이 일방향이라고 보기는 어렵다.",
-  "en": "End-demand has shifted toward AI infrastructure. As AI services spread, demand for GPU-as-a-service, in which customers rent only the GPU capacity they need, is growing, making pre-emptive access to stable power and data-center space a key competitive factor in cloud. Industry observers argue that how quickly a provider secures power and cooling infrastructure capable of running high-performance GPUs is a critical variable for scaling AI businesses. NHN Cloud entered the market on the back of a government GPU build-out program, and in May 2026 unveiled the full-stack AI brand FactoryX, spanning GPU sourcing, operational optimization and AI agent runtime environments. Management differentiates itself from pure GPU suppliers by citing among the largest and most stable domestic GPU operating track records plus control-plane and AI agent environments. In payments, the domestic PG market continues to consolidate around leading players as transaction values grow, and NHN KCP signed a partnership with blockchain developer Ava Labs in April 2026 to build a payments-focused mainnet, plus an MOU with NH NongHyup Bank on a stablecoin-based payment ecosystem. In games, regulation remains the biggest swing factor. An amended enforcement decree of the Game Industry Promotion Act raising the webboard spending cap from KRW 700,000 to KRW 1m was promulgated on February 3, 2026, and it is regarded as the largest easing step since 2014. That said, the government has stated it will strengthen post-implementation oversight and monitoring even after the cap increase, so the regulatory direction cannot be assumed to be one-way."
+  "ko": "AI 인프라 쪽에서는 GPU 수요가 NHN Cloud의 성장을 뒷받침하고 있다. 회사는 2027년 정부 사업이 약 4조원 규모로 최신 Vera Rubin 이상 기종을 탑재할 것으로 예상하며 참여를 염두에 두고 준비한다고 컨퍼런스콜에서 밝혔다. 신규 데이터센터는 수냉식 설비를 갖춘 것으로 설명됐다. 회사 CFO는 GPU 사업의 직접비 기준 수익성이 약 30%이며 GPU 세대가 발전하면 개선 여지가 있다고 설명했다. 이는 회사 측 설명이며 외부 업계 지표로 검증된 수치는 아니다. 결제 시장에서는 해외 가맹점 거래가 수입차 가맹점 거래 증가에 힘입어 늘었고, 배달 플랫폼 결제 연동이 거래 확대의 새 축으로 더해졌다. 게임 시장에서는 웹보드게임의 규제 환경 변화로 이용자당 평균 매출이 올랐다고 회사가 설명했고, 웹보드 매출은 추석 연휴와 오프라인 대회 효과로 전년 동기 대비 16.2% 늘었다. 다만 모바일 게임은 전 분기 대비 감소해 게임 사업 전반의 성장은 고르지 않다. 경쟁 측면에서 클라우드 사업은 NAVER·카카오(Kakao)·삼성에스디에스(Samsung SDS)·LG씨엔에스(LG CNS) 등과 비교되고, 결제 사업은 국내 PG 시장의 기존 사업자들과 비교된다. 3분기 결제와 기술 부문이 매출의 75%를 차지했다는 사실은 사업 무게중심이 게임에서 결제와 클라우드로 옮겨 가고 있음을 보여 준다.",
+  "en": "In AI infrastructure, GPU demand is supporting growth at NHN Cloud. The company said on its earnings call that it expects a government project of roughly KRW 4 trillion in 2027 using the latest Vera Rubin-class and newer GPUs, and that it is preparing to participate. New data centers are described as equipped with liquid cooling. The CFO said the GPU business earns a direct-cost profitability of about 30% and that there is room for improvement as GPU generations advance, though this is the company's own figure and not an independently verified industry benchmark. In payments, overseas merchant volume grew on higher automotive merchant volume, and the link to food delivery payments added a new growth channel. In games, the company said the regulatory change in web-board games raised average revenue per user, and web-board revenue rose 16.2% year on year on the Chuseok holiday and offline tournament effects. Mobile game revenue fell from the prior quarter, so growth across the game business has been uneven. In cloud, the company is compared with NAVER, Kakao, Samsung SDS, and LG CNS, and in payments with established domestic PG operators. Payments and technology together made up about 75% of Q3 2026 revenue, which shows the business mix shifting from games toward payments and cloud."
  },
  "outlook": {
-  "ko": "회사가 제시한 하반기 방향은 세 축 모두에서 확인 가능한 일정으로 구성돼 있다. 기술 부문에서는 내년까지 최소 30MW 규모 AI 데이터센터를 추가 확보하고 기존 리전에 엔비디아 B300 이상 최신 GPU를 도입하겠다는 계획으로, 30MW 가운데 20MW는 외부 임차·10MW는 자체 구축이며 목표 시점은 내년 하반기, 규모는 현재 양평·판교·광주 인프라와 비슷한 수준이라고 회사는 설명했다. 실제 실행도 시작됐다. NHN은 2026년 8월 28일 NHN클라우드가 AI팩토리포항PFV와 포항 데이터센터 임대차 확약서를 체결한다고 공시했고, 대상은 20MW에 해당하는 공간과 부대시설, 기간은 임차 개시일로부터 60개월이다. 같은 날 이사회에서는 NHN클라우드에 대한 채무보증 안건도 함께 의결됐다. 매출 가시성 측면에서 회사는 가동 중인 양평 데이터센터의 잔여분에 대한 신규 장기계약을 논의하고 있다고 밝혔다. 해외에서는 해외 기업의 GPU 수요가 늘고 있어 일부 고객과 조만간 계약할 예정이며 일본 데이터센터 확보를 통해 글로벌 사업 확대를 준비 중이라는 것이 NHN클라우드 대표의 설명이다. 게임에서는 NHN 게임사업부문과 NHN플레이아트가 협업 중인 신작 '환상세계의 푸치포용'이 올겨울 출시를 목표로 하며, 9월 도쿄게임쇼에서 주요 신작과 라이브 게임이 함께 소개될 예정이다. 결제에서는 아발란체와 공동 개발한 메인넷 기반으로 임직원 개념검증을 마치고 7월 데모데이에서 페이코 앱에 디지털 월렛을 결합한 스테이블코인 결제와 가맹점 정산 절차를 시연했다. 비용에 대해서는 CFO가 양평 리전 가동으로 2분기부터 감가상각비가 반영됐고 3분기에도 비슷한 수준을 유지할 것으로 보나 신규 투자 계획이 있어 유동적이라고 언급했다.",
-  "en": "Management's stated second-half agenda consists of verifiable milestones across all three axes. In technology, the plan is to secure at least 30MW of additional AI data-center capacity by next year and add Nvidia B300-class or newer GPUs to existing regions, with 20MW of the 30MW leased externally and 10MW built in-house, targeted for the second half of next year and roughly comparable in scale to the current Yangpyeong, Pangyo and Gwangju footprint. Execution has begun. On August 28, 2026 NHN disclosed that NHN Cloud would sign a lease commitment with AI Factory Pohang PFV covering 20MW of space and related facilities at the Pohang data center for 60 months from the lease start date. The board on the same day also approved a debt guarantee for NHN Cloud. On revenue visibility, the company said it is discussing new long-term contracts for the remaining capacity at the operating Yangpyeong data center. Overseas, the head of NHN Cloud said GPU demand from foreign companies is rising, contracts with some customers are expected shortly, and a Japanese data center is being secured to support global expansion. In games, a new title co-developed by NHN's game division and NHN PlayArt, romanized as Hwansang Segye-ui Puchipoyong, targets a launch this winter and will be introduced alongside other new and live titles at the Tokyo Game Show in September. In payments, a proof of concept with employees was completed on the mainnet co-developed with Avalanche, and a July demo day showcased stablecoin payments via a digital wallet embedded in the PAYCO app together with merchant settlement flows. On costs, the CFO noted that depreciation began to be recognized from the second quarter as the Yangpyeong region came online, is expected to stay at a similar level in the third quarter, but remains fluid given new investment plans."
+  "ko": "회사 계획의 핵심은 AI 데이터센터 용량 확대다. NHN Cloud는 2027년 말까지 기존 인프라를 포함해 전체 약 100MW 규모 AI 데이터센터 운영을 목표로 하고 있다. 서울 가산과 인천 가좌 등 수도권 데이터센터를 임차해 B300 GPU 1,700장 이상을 구축했으며, 2027년 1월부터 서비스를 순차적으로 열고 매출을 인식할 예정이다. 본격 서비스 시점은 2026년 12월부터 2027년 1월 말 사이로 제시됐다. 전남광주 장성군의 26MW 규모 AI데이터센터도 임차할 예정이다. 2027년 4분기 준공 예정인 포항 AIDC 20MW를 임차하고, 광주연구개발특구에는 10MW 규모 자체 인프라를 짓는다. 결제 쪽에서는 NHN페이코가 2027년 연간 흑자 전환을 목표로 수익성 위주의 사업 확대에 집중하고 있으며, 스테이블코인과 AI 에이전트 결제 기술 확보에도 속도를 낼 계획이다. 게임 쪽에서는 한일 협업 신작 '환상세계의 푸치포용'을 2027년 상반기 출시 목표로 하고 있다. 정부의 약 4조원 규모 사업에는 참여를 염두에 두고 준비 중이다. 회사는 다음 분기나 연간 연결 매출·이익의 구체적 전망치는 제시하지 않았다. 2027년 확인 지점은 임차·자체 설비의 준공과 가동 일정, 1월 이후 매출 인식의 시작, 페이코 흑자 전환 여부다.",
+  "en": "The core of the company's plan is expanding AI data center capacity. NHN Cloud targets operating about 100MW of AI data centers in total, including existing infrastructure, by the end of 2027. It has leased data centers in the Seoul metropolitan area, including Gasan in Seoul and Gajwa in Incheon, to deploy more than 1,700 B300 GPUs, and plans to open services in stages from January 2027 and recognize revenue from that point. Full-scale service is indicated to start between December 2026 and late January 2027. It also plans to lease a 26MW AI data center in Jangseong, Jeonnam, and to lease a 20MW Pohang AI data center slated for completion in Q4 2027, while building 10MW of its own infrastructure in the Gwangju R&D special zone. In payments, NHN Payco is focused on profitability-driven expansion with the target of a full-year profit in 2027, and is accelerating work on stablecoin and AI agent payment technology. In games, the Japan-Korea co-developed title Puchi Pocket Yong, which was shown at the Tokyo Game Show, is targeted for launch in the first half of 2027. The company is preparing to participate in a government project of roughly KRW 4 trillion. The company has not provided specific quarterly or annual revenue and profit forecasts. The 2027 checkpoints are the completion and operating schedule of leased and owned facilities, the start of revenue recognition after January, and whether NHN Payco reaches full-year profitability."
  },
  "valuation_comment": {
-  "ko": "밸류에이션의 출발점은 이익 기저가 방금 바뀌었다는 사실이다. 2024년 대규모 적자에서 2025년 흑자로, 다시 2026년 상반기에 분기 최고 이익으로 이어지는 구간이어서 주당 이익 지표는 과거 수년 평균과 단절돼 있고, 최근 네 개 분기 기준 이익을 쓰더라도 그 안에 저마진 분기와 고마진 분기가 섞여 있다. 순자산 대비로는 프리미엄이 붙은 구간에서 거래되고 있으며, 이는 시장이 게임·결제의 안정적 현금흐름보다 클라우드·AI GPU의 성장 옵션에 가중치를 두고 있다는 해석과 맞물린다. 배당은 2026년 5월 12일부터 8월 11일까지 43만 1,525주(167억원)를 장내 취득해 전량 소각하는 결정처럼 자사주 매입·소각과 병행되는 구조로, 3개년 주주환원 정책의 일환이라 현금배당만으로 환원 수준을 판단하기는 어렵다. 참고로 삼성증권은 2026년 8월 11일 리포트에서 AI 클라우드 기업을 피어 그룹에 추가하며 목표주가를 기존 46,000원에서 65,000원으로 상향했다고 밝혔고, KB증권은 2026년 6월 1일 리포트에서 목표주가를 76,000원으로 상향하고 산출 방식을 DCF에서 SOTP로 변경해 게임 1조 1,443억원, 페이코 3,223억원, 클라우드 6,996억원, 기타 투자자산 3,171억원의 부문별 가치를 제시했다. 이는 각 증권사의 견해이며, 실제 배수는 GPU 계약 시점과 감가상각 반영 속도에 따라 분기마다 흔들릴 수 있다는 점이 함께 고려될 사안이다.",
-  "en": "Any valuation discussion starts from the fact that the earnings base has only just changed. The path from a large 2024 loss to 2025 profitability and then to record quarterly profit in the first half of 2026 means per-share earnings metrics are disconnected from the multi-year average, and even a four-quarter view blends low-margin and high-margin quarters. Relative to net assets the shares trade at a premium, consistent with a market weighting the growth option in cloud and AI GPU more heavily than the steadier cash flows from games and payments. On returns, cash dividends sit alongside buybacks and cancellations, as with the decision to acquire 431,525 shares worth KRW 16.7bn on-market between May 12 and August 11, 2026 and cancel them in full under a three-year shareholder return policy, so the cash dividend alone is an incomplete gauge. For reference, Samsung Securities said in an August 11, 2026 report that it added AI cloud companies to the peer group and raised its target price from KRW 46,000 to KRW 65,000, while KB Securities said in a June 1, 2026 report that it lifted its target price to KRW 76,000 and switched methodology from DCF to sum-of-the-parts, assigning KRW 1,144.3bn to games, KRW 322.3bn to PAYCO, KRW 699.6bn to cloud and KRW 317.1bn to other investment assets. Those are the brokers' own views, and it should be weighed alongside the fact that realized multiples can swing quarter to quarter with GPU contract timing and the pace at which depreciation lands."
+  "ko": "밸류에이션은 이익 회복의 속도와 주가 수준의 관계로 읽힌다. 최근 네 개 분기의 지배주주 순이익을 합산하면 이익 규모가 적자 구간에 비해 크게 늘었지만, 절대 이익 규모는 아직 얇은 편이라 같은 주가라도 배수 해석의 폭이 넓다. 주가는 3분기 실적 발표 당일 가격제한폭까지 오르며 크게 반응했고, 연초 이후 상승 폭도 컸다. 주가순자산비율은 지배주주 지분 기준 순자산을 웃도는 구간에 있어 장부가치 대비 프리미엄이 붙은 상태다. 과거 적자 구간에는 이익 기준 배수가 성립하지 않아 과거 밴드와의 직접 비교는 제한적이다. 배당수익률은 업종 평균을 밑도는 편으로, 주주 환원보다 투자와 이익 회복에 무게가 실린 구조다. 부채비율이 2025년 말 117.5%로 높아진 만큼 자본 구조 변화를 배수와 함께 살펴볼 필요가 있다. 밸류에이션 해석의 핵심은 흑자 기조가 유지되며 이익이 커지는지, 그리고 AI 인프라 설비 투자가 이익으로 전환되는지에 있다.",
+  "en": "Valuation reads as a relationship between the pace of profit recovery and the share price level. Adding up profit attributable to owners of the parent over the most recent four quarters shows a much larger earnings base than during the loss-making period, but absolute earnings are still thin, so the range of interpretation for any multiple is wide. The share price jumped to the daily price limit on the day of the Q3 2026 results release and rose sharply year to date. The price-to-book ratio sits above book value attributable to owners of the parent, meaning the market is paying a premium over net asset value. Because earnings-based multiples did not apply during the loss-making years, direct comparison with historical multiple bands is limited. The dividend yield is below the industry average, and the structure puts more weight on investment and earnings recovery than on shareholder returns. With the debt-to-equity ratio at 117.5% at the end of 2025, changes in the capital structure should be reviewed alongside the multiples. The key to interpreting valuation is whether earnings keep growing on a profitable footing and whether AI infrastructure investment converts into profit."
  },
  "bull": [
   {
    "title": {
-    "ko": "세 축이 동시에 이익을 내는 구조",
-    "en": "Three axes generating profit at once"
+    "ko": "결제·기술이 끌어올린 이익 체질",
+    "en": "Profit base lifted by payments and technology"
    },
    "body": {
-    "ko": "회사는 핵심 사업인 게임·결제·기술이 모두 영업이익을 창출하며 균형 잡힌 수익 구조를 갖추게 됐다고 설명했다. 경영진은 이번 분기 실적이 핵심 사업들이 단일 부문이나 계절적 강점에 의존하지 않고 함께 영업이익을 낼 수 있음을 보여줬다고 밝혔다. 실제 분기 영업이익은 2025년 2분기 219억원에서 2026년 2분기 579억원으로 확대됐고, 같은 기간 매출은 6,049억원에서 7,579억원으로 늘었다. 단일 부문 의존도가 낮아지면 특정 사업의 부진이 전사 손익에 미치는 진폭도 줄어든다.",
-    "en": "The company said its core games, payments and technology businesses are all generating operating profit, giving it a more balanced earnings structure. Management stated the quarter showed that the core businesses can produce operating profit together rather than relying on a single segment or seasonal strength. Quarterly operating profit expanded from KRW 21.9bn in the second quarter of 2025 to KRW 57.9bn in the second quarter of 2026, with revenue up from KRW 604.9bn to KRW 757.9bn over the same period. Lower dependence on one segment also narrows the swing that any single business can inflict on group earnings."
+    "ko": "3분기 영업이익은 588억원으로 전년 동기 대비 112.6% 늘었고, 영업이익률은 7.8%로 전년 동기보다 3.3%포인트 높아졌다. 결제 부문 매출은 3,976억원, 기술 부문은 1,717억원으로 두 부문이 연결 매출의 75%를 차지했다. 분기 영업이익이 2026년 1분기 263억원에서 2분기 579억원, 3분기 588억원으로 두 분기 연속 늘었다는 점이 이익 체질 변화의 근거다.",
+    "en": "Q3 2026 operating profit of KRW 58.8 billion rose 112.6% year on year, and the operating margin of 7.8% was 3.3 percentage points higher than a year earlier. Payment revenue of KRW 397.6 billion and technology revenue of KRW 171.7 billion together made up about 75% of revenue. Quarterly operating profit rose for two consecutive quarters, from KRW 26.3 billion in Q1 2026 to KRW 57.9 billion in Q2 and KRW 58.8 billion in Q3."
    }
   },
   {
    "title": {
-    "ko": "AI 인프라 용량 확보의 실행 단계 진입",
-    "en": "Moving to execution on AI infrastructure capacity"
+    "ko": "AI 데이터센터 확장과 GPU 수요",
+    "en": "AI data center expansion and GPU demand"
    },
    "body": {
-    "ko": "2026년 8월 28일 공시된 포항 데이터센터 20MW 임대차 확약서는 60개월 기간으로, 계획이 문서화된 계약 단계로 넘어갔음을 보여준다. 회사는 내년까지 최소 30MW를 추가 확보하고 이 중 10MW는 자체 데이터센터로 구축한다는 계획을 제시했다. 양평 데이터센터 잔여 물량에 대해서는 신규 장기계약이 논의되고 있다고 회사는 밝혔다. 임차·자체 구축·최신 GPU 확충이 병행되면 가동률과 계약 구성에 따라 기술 부문 영업이익률의 개선 여지가 생긴다.",
-    "en": "The 20MW Pohang data-center lease commitment disclosed on August 28, 2026, running 60 months, shows the plan has moved into documented contract form. The company has laid out at least 30MW of additional capacity by next year, of which 10MW is to be built in-house. It also said new long-term contracts are under discussion for the remaining capacity at the Yangpyeong data center. Running leases, self-build and newer GPU purchases in parallel creates room for improvement in the technology segment's operating margin depending on utilization and contract mix."
+    "ko": "NHN Cloud는 2027년 말까지 약 100MW 규모 AI 데이터센터 운영을 목표로 하고 있으며, B300 GPU 1,700장 이상을 구축해 2027년 1월부터 순차 서비스를 열 계획이다. 회사 CFO는 GPU 사업의 직접비 기준 수익성이 약 30%라고 밝혔다. 2027년 정부 사업 규모가 약 4조원으로 예상돼 참여를 준비하고 있다는 점도 수요 측면의 긍정 요인으로 제시된다.",
+    "en": "NHN Cloud targets about 100MW of AI data center operations by the end of 2027, with more than 1,700 B300 GPUs deployed and staged service openings planned from January 2027. The CFO said the GPU business earns a direct-cost profitability of about 30%. The company is also preparing for a government project of roughly KRW 4 trillion expected in 2027, which it presents as a demand-side positive."
    }
   },
   {
    "title": {
-    "ko": "규제 완화와 비용 통제가 겹친 게임 부문",
-    "en": "Games benefiting from easing rules and cost control"
+    "ko": "결제 거래 확대와 해외 가맹점",
+    "en": "Payment volume growth and overseas merchants"
    },
    "body": {
-    "ko": "웹보드 결제 한도를 100만원으로 상향하는 시행령 개정안이 2026년 2월 3일 공포됐다. 회사는 2분기 전체 웹보드게임 매출이 전년 동기 대비 15% 올랐고, 규제 환경 변화와 한게임 포커 투어 효과가 배경이라고 설명했다. 동시에 2분기 광고선전비는 175억원으로 전년 동기 대비 16.4% 줄었는데, 웹보드 마케팅 비용과 신작 마케팅 비용 감소가 이유로 제시됐다. 매출 단가 상승과 마케팅비 절감이 같은 분기에 나타나면 게임 부문 수익성에 우호적으로 작용한다.",
-    "en": "The enforcement decree raising the webboard spending cap to KRW 1m was promulgated on February 3, 2026. The company said total second-quarter webboard revenue rose 15% year on year on the regulatory change and the Hangame Poker Tour effect. At the same time second-quarter advertising expenses fell 16.4% year on year to KRW 17.5bn, attributed to lower webboard marketing and lower new-title marketing spend. Higher per-user monetization coinciding with lower marketing outlays is supportive for game segment profitability."
+    "ko": "NHN KCP의 3분기 거래금액은 17조 3,000억원으로 전년 동기 대비 30.5% 늘었고, 해외 가맹점 거래금액은 75.4% 증가했다. 해외 가맹점 비중 25.3%는 역대 최고 수준이다. NHN페이코는 2026년 8월 말 배달의민족 온라인 결제를 열었고, 2027년 연간 흑자 전환을 목표로 하고 있다.",
+    "en": "NHN KCP's Q3 2026 transaction volume of KRW 17.3 trillion rose 30.5% year on year, and overseas merchant volume grew 75.4%. The overseas merchant share of 25.3% is the highest on record. NHN Payco opened online payments for Baemin at the end of August 2026 and targets full-year profitability in 2027."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "고정비가 매출보다 먼저 늘어나는 구조",
-    "en": "Fixed costs landing ahead of revenue"
+    "ko": "게임 부문의 고르지 않은 흐름",
+    "en": "Uneven trend in the game segment"
    },
    "body": {
-    "ko": "2분기 감가상각비는 370억원으로 전년 동기 대비 47.6% 늘고, 기타영업비용 188억원에는 AI GPU 정부사업 관련 전기료가 반영됐다. 회사는 3분기 감가상각비가 2분기 수준과 비슷하겠지만 추가 GPU 구매와 데이터센터 임대로 이후 비용이 증가할 수 있다고 밝혔다. 부채총계는 2024년 1조 4,277억원에서 2025년 2조 806억원으로 늘었고 부채비율은 80.9%에서 117.5%로 상승했다. 계약 체결이 늦어지면 비용은 먼저 계상되고 매출은 뒤따라오는 시차가 손익에 부담으로 작용할 수 있다.",
-    "en": "Second-quarter depreciation rose 47.6% year on year to KRW 37.0bn, and KRW 18.8bn of other operating costs included electricity charges tied to the government AI GPU project. The company said third-quarter depreciation should be similar to the second quarter but that costs could rise thereafter on further GPU purchases and data-center leases. Total liabilities grew from KRW 1,427.7bn in 2024 to KRW 2,080.6bn in 2025, lifting the debt-to-equity ratio from 80.9% to 117.5%. If contract signings slip, the lag between costs recognized up front and revenue arriving later can weigh on earnings."
+    "ko": "게임 부문 매출은 3분기 1,310억원으로 전년 동기 대비 10.7% 늘었지만 전 분기 대비 6.2% 줄었다. 모바일 게임 매출은 808억원으로 전 분기 대비 10.7% 감소했다. 웹보드 매출 증가는 규제 환경 변화에 따른 이용자당 매출 상승과 추석·대회 효과에 기댄 측면이 있어, 이 효과가 이어질지는 확인이 필요하다.",
+    "en": "Game revenue was KRW 131.0 billion in Q3 2026, up 10.7% year on year but down 6.2% from the prior quarter. Mobile game revenue of KRW 80.8 billion fell 10.7% from the prior quarter. Web-board revenue growth partly reflects higher revenue per user after a regulatory change and holiday and tournament effects, so whether those effects persist needs to be confirmed."
    }
   },
   {
    "title": {
-    "ko": "결제 성장의 마진 전환율 한계",
-    "en": "Limited margin conversion from payments growth"
+    "ko": "설비 투자와 데이터센터 실행 부담",
+    "en": "Capital spending and data center execution load"
    },
    "body": {
-    "ko": "2분기 결제 매출은 3,940억원으로 전년 동기 대비 27.3% 늘었지만, 같은 분기 지급수수료가 5,073억원으로 23.7% 증가하며 KCP 매출 연동 수수료가 함께 커졌다. 결제 부문은 총액 기준 매출 인식과 수수료 원가가 동반 확대되는 구조여서 외형 성장률이 그대로 이익 성장으로 이어지지 않는다. 페이코는 쿠폰·기업복지솔루션 거래 성장으로 영업손실이 축소되는 단계라고 회사는 설명했다. 결제가 전사 매출의 절반 이상을 차지하는 만큼, 부문 마진의 완만한 개선 속도는 전사 영업이익률의 상단을 제약하는 요인이 될 수 있다.",
-    "en": "Second-quarter payment revenue rose 27.3% year on year to KRW 394.0bn, but payment fees in the same quarter rose 23.7% to KRW 507.3bn as KCP's revenue-linked fees grew alongside. The payments business recognizes revenue on a gross basis with fee costs expanding in tandem, so top-line growth does not translate one-for-one into profit growth. PAYCO is still at the stage of narrowing its operating loss on growth in coupon and corporate welfare solution volumes, per the company. With payments accounting for more than half of group revenue, the gradual pace of margin improvement there can cap the group operating margin."
+    "ko": "AI 데이터센터 확장은 임차와 자체 구축을 병행하는 대규모 투자다. 3분기 감가상각비는 378억원으로 전 분기 대비 2.0% 늘었고, B300 GPU 감가상각이 일부 반영되기 시작했다. 구축 일정, 고객 수요 확보, 효율적인 투자 집행이 맞물리지 않으면 이익률에 부담이 될 수 있다.",
+    "en": "The AI data center expansion is a large program combining leased and self-built facilities. Depreciation was KRW 37.8 billion in Q3 2026, up 2.0% from the prior quarter, and depreciation on B300 GPUs has begun to be reflected. If construction timing, customer demand, and investment execution do not align, margins could come under pressure."
    }
   },
   {
    "title": {
-    "ko": "기타 부문 적자와 이벤트 의존 매출",
-    "en": "Loss-making other segment and event-driven revenue"
+    "ko": "부채 확대와 자본 구조",
+    "en": "Rising debt and capital structure"
    },
    "body": {
-    "ko": "2분기 기타 부문 매출은 880억원으로 전년 동기 대비 8.8% 감소했다. CFO는 기타 부문이 아직 적자를 실현 중이며 빠르게 효율화하면서 비용 손실을 줄이고 있다고 언급했다. 일본 모바일 게임 성장도 '컴파스'와 '체인소맨' 협업 효과 등이 반영된 결과여서 협업·이벤트 사이클에 따라 분기 변동성이 생길 수 있다. 신작 '환상세계의 푸치포용'은 올겨울 출시 목표 단계로, 성과가 확인되기 전까지는 게임 부문의 신규 성장 축이 검증되지 않은 상태다.",
-    "en": "Second-quarter other segment revenue fell 8.8% year on year to KRW 88.0bn. The CFO noted the other segment is still loss-making, with losses being reduced through rapid efficiency measures. Growth in Japanese mobile games also reflected collaboration effects such as Compass with Chainsaw Man, meaning quarterly volatility can follow the collaboration and event cycle. The new title romanized as Hwansang Segye-ui Puchipoyong is still at the stage of targeting a winter launch, so the game segment's next growth pillar remains unproven until results are seen."
+    "ko": "부채비율은 2022년 51.8%에서 2025년 117.5%로 높아졌다. 2025년 말 부채총계는 2조 806억원으로 자본총계 1조 7,708억원을 웃돈다. 자본 중 지배주주 지분은 1조 4,631억원이어서, 설비 투자가 부채로 조달되는 구조가 이어지면 재무 여력을 확인할 필요가 있다.",
+    "en": "The debt-to-equity ratio rose from 51.8% in 2022 to 117.5% in 2025. Total liabilities at the end of 2025 were KRW 2.08 trillion, above total equity of KRW 1.77 trillion. Equity attributable to owners of the parent was KRW 1.46 trillion, so if investment continues to be funded with debt, the room in the balance sheet will need monitoring."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "규제",
-    "en": "Regulation"
+    "ko": "규제·정책",
+    "en": "Regulation and policy"
    },
    "body": {
-    "ko": "웹보드게임은 사행성·불법환전 이슈와 늘 함께 논의된다. 사행성 논란이 반복돼 온 분야인 만큼 규제 완화를 둘러싼 사회적 논의가 이어질 전망이며, 베팅 시스템 특성상 불법환전 가능성을 완전히 차단하기 어렵고 온라인·SNS를 통한 비공식 환전 조직 활동도 늘어나는 추세라는 지적이 나온다. 정부는 결제한도 상향 이후에도 사후 관리와 모니터링을 강화하겠다는 입장이다. 스테이블코인 결제 역시 제도화 진행 상황에 따라 사업화 속도가 좌우되는 영역이다.",
-    "en": "Webboard games are perpetually discussed alongside gambling-proximity and illegal cash-out issues. Because controversy has recurred for years in this genre, public debate over easing is expected to continue, betting mechanics make it hard to fully block illegal cash-out, and unofficial exchange operations via online channels and social media are reportedly increasing. The government has said it will strengthen post-implementation oversight and monitoring even after the cap increase. Stablecoin payments are likewise an area where commercialization pace depends on how the regulatory framework develops."
+    "ko": "웹보드게임은 규제 환경에 따라 매출 구조가 달라질 수 있는 사업이다. 회사는 규제 변화로 이용자당 매출이 올랐다고 설명했지만, 규제 방향 자체는 회사가 통제하기 어렵다. 정부 AI 사업 참여 여부와 규모도 공공 발주 일정에 따라 달라지므로 실적이 잡히는 시점이 불확실하다.",
+    "en": "Web-board games are a business whose revenue structure can shift with the regulatory environment. The company said the regulatory change raised revenue per user, but the direction of regulation is outside its control. Participation and scale in government AI projects depend on public procurement timing, so the timing of revenue is uncertain."
    }
   },
   {
    "cat": {
-    "ko": "투자 회수·계약",
-    "en": "Investment recovery and contracts"
+    "ko": "사업 실행",
+    "en": "Execution"
    },
    "body": {
-    "ko": "GPU 사업은 계약 조건에 따라 수익성이 크게 갈린다. CFO는 정부사업의 경우 GPU 일부 이용권을 받는 대신 운영 비용 부담 이슈가 있어 직접 운영 쪽 마진율이 더 높을 것으로 예상하며, 시장 상황 변동으로 마진율을 정확히 말하기 어렵다고 밝혔다. 회사는 계약 속도와 장기계약 여부에 따라 영업이익 변화가 있을 수 있다고도 언급했다. 포항 데이터센터 확보에는 NHN클라우드에 대한 채무보증이 수반돼 모회사 재무 부담과 연결되는 구조다.",
-    "en": "GPU economics vary widely with contract terms. The CFO said government projects grant partial GPU usage rights but carry operating-cost burdens, so directly operated capacity should carry higher margins, and that precise margin levels are hard to state given market volatility. Management also noted operating profit could vary with how quickly contracts are signed and whether they are long term. Securing the Pohang data center came with a debt guarantee for NHN Cloud, linking the expansion to the parent's financial obligations."
+    "ko": "100MW 목표는 적시 구축, 고객 수요 확보, 효율적 투자 집행이 함께 이뤄져야 달성된다. 회사는 다음 분기나 연간 구체적 실적 가이던스를 제시하지 않아 단기 실적 경로를 외부에서 가늠하기 어렵다. 매출 인식은 서비스 오픈 시점에 따라 단계적으로 이뤄진다.",
+    "en": "The 100MW target depends on timely construction, securing customer demand, and efficient investment execution. The company has not issued specific near-term earnings guidance, which makes the near-term earnings path hard to gauge from outside. Revenue will be recognized in stages as services open."
    }
   },
   {
    "cat": {
-    "ko": "지배구조·자본조달",
-    "en": "Governance and capital structure"
+    "ko": "일회성 요인과 실적 변동",
+    "en": "One-time items and earnings volatility"
    },
    "body": {
-    "ko": "자회사 상장 문제는 결론이 나지 않았다. CFO는 재무적 투자자인 IMM인베스트먼트와 논의 중이고 주주 의견을 들어 동의를 구해야 하므로 단언하기 어렵다며, 기술 사업이 본격화되고 충분한 영업이익률이 확보되는 시점에야 상장에 대한 구체적 답변이 가능하다고 밝혔다. 중복상장 규제와 기업가치 인정 시점을 함께 고려해야 한다는 입장이다. 상장 여부와 조건은 클라우드 사업의 자금조달 방식과 모회사 주주가치 배분에 모두 영향을 주는 변수다.",
-    "en": "The subsidiary listing question remains unresolved. The CFO said discussions are under way with financial investor IMM Investment and that shareholder consent is needed, making it hard to commit, adding that a concrete answer on a listing is only possible once the technology business is fully ramped and sufficient operating margins are secured. The company says duplicate-listing rules and the timing of fair value recognition must both be considered. Whether and how a listing proceeds affects both the cloud unit's funding options and how value is shared with parent shareholders."
+    "ko": "3분기 순이익에는 청산 중인 연결 종속회사의 일회성 채무 면제 이익이 일부 반영됐다. 1분기 영업이익은 263억원으로 전 분기 대비 52.5% 줄었고, 2분기 지배주주 순이익은 전 분기 대비 15.0% 줄었다. 분기 단위 이익 변동 폭이 커서 추세 판단에는 여러 분기를 함께 봐야 한다.",
+    "en": "Q3 2026 net profit partly reflected a one-time debt forgiveness gain at a subsidiary being liquidated. Q1 2026 operating profit of KRW 26.3 billion fell 52.5% from the prior quarter, and profit attributable to owners of the parent fell 15.0% in Q2 2026. Quarterly swings are large, so trends need to be read across several quarters."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 9월 하순",
-    "en": "Late September 2026"
+    "ko": "2026년 12월~2027년 1월 말",
+    "en": "December 2026 to late January 2027"
    },
    "what": {
-    "ko": "NHN플레이아트가 도쿄게임쇼에서 신작 '환상세계의 푸치포용'과 주요 라이브 게임을 소개할 예정이다. 공개 사양과 출시 일정 확정 여부가 겨울 출시 계획의 신뢰도를 판단하는 1차 자료가 된다.",
-    "en": "NHN PlayArt is scheduled to introduce the new title romanized as Hwansang Segye-ui Puchipoyong plus key live games at the Tokyo Game Show. The specifications shown and whether a firm launch date is set will be the first read on the credibility of the winter launch plan."
+    "ko": "B300 GPU 1,700장 이상 기반 클라우드 서비스의 본격 개시와 매출 인식 시작 여부. 100MW 목표의 첫 단계가 일정대로 가동되는지 보는 지점이다.",
+    "en": "Whether the cloud service built on more than 1,700 B300 GPUs starts in full and begins recognizing revenue, which tests whether the first phase of the 100MW target is on schedule."
    }
   },
   {
    "when": {
-    "ko": "2026년 11월 초·중순",
-    "en": "Early to mid-November 2026"
+    "ko": "2027년 3월 말(사업보고서 제출 기한)",
+    "en": "End of March 2027 (annual report filing deadline)"
    },
    "what": {
-    "ko": "2026년 3분기 실적 발표. 기술 부문 매출이 2분기 1,598억원 수준을 이어가는지, 그리고 CFO가 3분기 감가상각비를 2분기와 비슷한 수준으로 제시한 발언이 실제 수치로 확인되는지가 관건이다.",
-    "en": "Third-quarter 2026 results. Key items are whether technology revenue holds near the second quarter's KRW 159.8bn and whether the CFO's guidance that third-quarter depreciation would be similar to the second quarter is borne out in the reported figures."
+    "ko": "2026년 사업보고서에 담기는 연간 실적과 4분기 수치가 정기보고서로 확정된다. 2026년 4분기 분기 흐름과 부채비율 변화를 확인하는 지점이다.",
+    "en": "The 2026 annual report will confirm full-year results and Q4 figures, and will show the quarterly trend and changes in the debt-to-equity ratio."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기",
-    "en": "Fourth quarter of 2026"
+    "ko": "2027년 상반기",
+    "en": "First half of 2027"
    },
    "what": {
-    "ko": "양평 데이터센터 잔여 물량의 신규 장기계약 체결 여부와 해외 고객 GPU 공급 계약의 실제 공시 여부를 확인할 구간이다. 계약 규모와 기간이 기술 부문 매출 가시성을 좌우한다.",
-    "en": "A window to check whether new long-term contracts for the remaining Yangpyeong capacity are signed and whether overseas GPU supply contracts are actually disclosed. Contract size and duration will determine the visibility of technology segment revenue."
+    "ko": "신작 '환상세계의 푸치포용' 출시 목표 시점. 게임 부문이 한일 협업 신작으로 매출 흐름을 개선할지 확인하는 지점이다.",
+    "en": "The target launch window for the new title Puchi Pocket Yong, which tests whether the game segment can improve its revenue trend with the Japan-Korea co-developed release."
    }
   },
   {
    "when": {
-    "ko": "2026년 겨울~2027년 상반기",
-    "en": "Winter 2026 through first half of 2027"
+    "ko": "2027년 4분기",
+    "en": "Q4 2027"
    },
    "what": {
-    "ko": "포항 데이터센터 임차 개시 시점(개시일로부터 60개월)과 30MW 중 자체 구축 10MW의 진행 상황(목표 시점 내년 하반기)을 점검할 필요가 있다. 임차 개시와 함께 관련 비용이 손익에 반영되기 시작한다.",
-    "en": "Worth monitoring the start date of the Pohang data-center lease, which runs 60 months from commencement and progress on the 10MW self-built portion of the 30MW plan, targeted for the second half of next year. Related costs begin flowing through the income statement once the lease starts."
+    "ko": "포항 AI데이터센터 20MW 임차 설비의 준공 예정 시점. 임차 설비가 제때 가동되어 용량 확대가 이어지는지 보는 지점이다.",
+    "en": "The scheduled completion of the 20MW leased Pohang AI data center, which shows whether leased capacity comes online on time to support expansion."
    }
   },
   {
    "when": {
-    "ko": "2027년 2월경",
-    "en": "Around February 2027"
+    "ko": "2027년 말",
+    "en": "End of 2027"
    },
    "what": {
-    "ko": "2026년 연간 실적과 함께 3개년 주주환원 정책의 다음 연도 이행 내용(자사주 매입·소각 및 배당 결정)이 공개되는 시점이다. 연간 영업이익률이 2025년 5.3%에서 어떻게 달라졌는지도 함께 확인할 수 있다.",
-    "en": "Full-year 2026 results, alongside disclosure of the next year's execution under the three-year shareholder return policy, covering buyback, cancellation and dividend decisions. It will also show how the annual operating margin has moved from 5.3% in 2025."
+    "ko": "AI 데이터센터 약 100MW 운영 목표와 NHN페이코 연간 흑자 전환 목표의 달성 여부. 두 목표가 다음 주요 확인 지점이다.",
+    "en": "Whether the roughly 100MW AI data center target and NHN Payco's full-year profitability target are met, which are the main checkpoints ahead."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "NHN은 게임·결제 중심 사업자에서 클라우드·AI 인프라를 세 번째 축으로 얹은 회사로 재편되는 중이다. 재무적으로는 2024년 영업손실 326억원에서 2025년 영업이익 1,324억원으로 흑자 전환했고, 분기로는 2026년 2분기 매출 7,579억원·영업이익 579억원까지 개선됐다. 회사는 그 배경으로 2025년 4분기부터 반영된 경영효율화·비용통제 성과와 2026년 들어 본격화된 주요 사업 성과를 제시했다. 다른 한편으로 2025년 부채총계는 2조 806억원으로 늘어 부채비율이 117.5%까지 올라섰고, 회사도 추가 GPU 구매와 데이터센터 임대로 향후 비용이 증가할 수 있다고 밝혔다. 강세 논리는 세 축의 동시 이익 창출과 포항 20MW 임대차 확약처럼 문서화된 용량 확보에, 약세 논리는 고정비 선행·결제 부문의 마진 전환율·기타 부문 적자와 규제 변수에 각각 근거한다. 수급 측면에서는 국민연금이 8월 중 NHN 지분율을 9.62%에서 10.12%로 확대한 사실이 공시로 확인된다. 결국 확인해야 할 것은 양평 잔여 물량과 해외 고객 계약이 실제 매출로 잡히는 속도, 그리고 그 속도가 감가상각·전력비 증가 속도를 앞서는지 여부다. 본 리포트는 정보 제공 목적이며 매수·매도 의견이나 목표주가를 포함하지 않는다.",
-   "en": "NHN is being reshaped from a games-and-payments operator into a company with cloud and AI infrastructure as a third pillar. Financially it swung from a KRW 32.6bn operating loss in 2024 to KRW 132.4bn operating profit in 2025, and on a quarterly basis reached KRW 757.9bn revenue and KRW 57.9bn operating profit in the second quarter of 2026. The company attributes this to cost-efficiency and cost-control gains reflected from the fourth quarter of 2025 and core business results ramping in 2026. On the other side, total liabilities grew to KRW 2,080.6bn in 2025, lifting the debt-to-equity ratio to 117.5%, and management itself flagged that costs could increase on further GPU purchases and data-center leases. The constructive case rests on all three axes earning profit at once and on documented capacity such as the 20MW Pohang lease commitment, while the cautious case rests on front-loaded fixed costs, the margin conversion rate in payments, losses in the other segment and regulatory variables. On the flow side, disclosures confirm the National Pension Service raised its NHN stake from 9.62% to 10.12% during August. Ultimately what needs verifying is how quickly the remaining Yangpyeong capacity and overseas customer contracts convert into revenue, and whether that pace outruns the growth in depreciation and electricity costs. This report is for information purposes only and contains no buy or sell recommendation or target price."
+   "ko": "NHN은 2026년 3분기 매출 7,583억원, 영업이익 588억원으로 회사가 역대 분기 최대치라고 밝힌 실적을 냈다. 2024년 영업손실에서 2025년 영업이익 1,324억원으로 흑자 전환했고, 2026년 2분기와 3분기에 분기 영업이익이 연속 늘어 이익 체질이 바뀌는 흐름이 확인된다. 이익을 끌어올린 축은 결제 부문의 거래 확대와 기술 부문의 AI GPU 클라우드 성장이며, 두 부문이 매출의 75%를 차지한다. 반면 게임 부문은 전 분기 대비 감소했고, 웹보드 매출은 규제 환경과 대회 효과에 기댄 부분이 있다. 설비 투자 확대와 부채비율 상승은 재무 구조의 확인 지점으로 남는다. 회사는 구체적 실적 가이던스를 제시하지 않았으므로, 2027년 1월 이후 서비스 개시와 매출 인식 시작, 2027년 연간 페이코 흑자 전환 목표, 2027년 말 100MW 목표가 다음 확인 지점이다. 2026년 사업보고서가 나오면 2026년 연간과 4분기 실적이 정기보고서 수치로 확정된다.",
+   "en": "NHN reported Q3 2026 revenue of KRW 758.3 billion and operating profit of KRW 58.8 billion, which the company described as record quarterly results. Operating profit moved from an operating loss of KRW 32.6 billion in 2024 to KRW 132.4 billion in 2025, and quarterly operating profit rose in both Q2 and Q3 2026, which points to a change in the earnings base. The growth came mainly from transaction growth in payments and AI GPU cloud demand in technology, which together made up about 75% of revenue. On the other side, the game segment declined from the prior quarter, and web-board revenue partly depends on the regulatory environment and tournament effects. Expanded capital spending and the rise in the debt-to-equity ratio remain items to monitor. Because the company has not issued specific earnings guidance, the next checkpoints are the start of cloud service and revenue recognition after January 2027, NHN Payco's full-year profitability target for 2027, and the 100MW target for end-2027. When the 2026 annual report is filed, full-year and Q4 2026 results will be confirmed in the regulatory filing."
   }
  },
  "sources": [
-  "https://www.xportsnews.com/article/2182335",
-  "https://kr.investing.com/news/transcripts/article-93CH-2055368",
-  "https://www.nspna.com/report/?mode=view&newsid=823770",
-  "https://www.koreadaily.com/article/20260812061556311",
-  "https://www.khgames.co.kr/news/articleView.html?idxno=307184",
-  "https://zdnet.co.kr/view/?no=20260811084611",
-  "https://www.ipnn.co.kr/news/articleView.html?idxno=417102",
-  "https://www.gamevu.co.kr/news/articleView.html?idxno=59940",
+  "https://kr.investing.com/news/transcripts/article-93CH-2167371",
+  "https://www.todaymild.com/news/articleView.html?idxno=40924",
+  "https://www.cnbnews.com/news/articleView.html?idxno=1023126",
+  "http://www.srtimes.kr/news/articleView.html?idxno=217145",
+  "https://www.datanet.co.kr/news/articleView.html?idxno=215739",
+  "https://www.ipnn.co.kr/news/articleView.html?idxno=418214",
+  "https://m.news.nate.com/view/20261110n36885",
+  "https://www.datanews.co.kr/news/article.html?no=147498",
+  "https://www.onews.tv/news/articleView.html?idxno=291219",
+  "https://www.thisisgame.com/articles/432432",
   "https://www.pinpointnews.co.kr/news/articleView.html?idxno=440522",
-  "https://www.ajunews.com/view/20260811084220516",
-  "https://www.biztribune.co.kr/news/articleView.html?idxno=354256",
-  "https://www.nhncloud.com/kr",
-  "https://www.youthdaily.co.kr/news/article.html?no=218956",
-  "https://www.incruit.com/company/25529861/",
-  "https://www.nhncloud.com/kr/solution/industry/game",
-  "https://alphasquare.co.kr/home/stock-summary?code=181710",
-  "https://markets.hankyung.com/stock/181710",
-  "https://kr.investing.com/equities/nhn-entertain-news"
+  "https://www.ebn.co.kr/news/articleView.html?idxno=1731062",
+  "https://kr.investing.com/news/stock-market-news/article-2167575",
+  "https://www.hankyung.com/article/2026111083251",
+  "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202611101002070100344",
+  "https://www.investing.com/news/transcripts/earnings-call-transcript-nhn-q3-2026-profit-jumps-as-cloud-and-payments-gain-93CH-5013810"
  ],
  "v": 2,
- "model": "claude-opus-5",
+ "model": "claude-haiku-5-5",
  "ticker": "181710",
  "name": "NHN",
  "name_en": "NHN Corporation",
@@ -233,11 +231,11 @@
   "IT·소프트웨어"
  ],
  "market": "코스피",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 05:51",
- "dataDate": "20260904",
+ "reportDate": "2026-11-14",
+ "reportTs": "2026-11-14 07:36",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-09-04",
+  "asOf": "2026-11-13",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -307,12 +305,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 604887356986,
-    "op": 21921852320,
-    "np_owner": 9050182079
-   },
-   {
     "q": "2025Q3",
     "rev": 625602175655,
     "op": 27637443705,
@@ -335,29 +327,36 @@
     "rev": 757918045230,
     "op": 57905020197,
     "np_owner": 20007055329
+   },
+   {
+    "q": "2026Q3",
+    "rev": 758306109896,
+    "op": 58770906144,
+    "np_owner": 29156237295
    }
   ],
   "valuation": {
-   "price": 71500,
-   "mcap": 2.3418,
-   "shares": 32753139,
+   "price": 66400,
+   "mcap": 2.1466,
+   "shares": 32328965,
    "total_shares": 32753139,
-   "wavg_shares": 30717956,
-   "per": 31.456,
-   "eps": 2273,
-   "pbr": 1.4757,
-   "bps": 48453,
-   "roe_ttm": 4.8,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": 70350957354,
+   "wavg_shares": 30616547,
+   "per": 23.331,
+   "eps": 2846,
+   "pbr": 1.3759,
+   "bps": 48261,
+   "roe_ttm": 5.9,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": 87419472806,
    "ccy": "KRW",
    "bps_src": "자체",
    "eps_src": "공시",
-   "pbr_krx": 1.51,
+   "pbr_krx": 1.4,
    "bps_krx": 47466.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 500.0,
-   "div": 0.7
+   "div": 0.75
   }
- }
+ },
+ "textRules": 2
 }
