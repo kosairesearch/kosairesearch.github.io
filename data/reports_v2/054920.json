@@ -1,220 +1,217 @@
 {
  "title": {
-  "ko": "금 유통·보안 두 엔진, 수익성 전환의 기로",
-  "en": "Gold Trading and Security: At a Profitability Crossroads"
+  "ko": "편입 효과와 금 유통 변동, 엇갈린 실적",
+  "en": "Consolidation Lifts Profit as Gold Trading Swings Revenue"
  },
  "lead": {
-  "ko": "한컴위드는 자회사 한컴금거래소의 금 유통 사업이 매출 대부분을 차지하는 가운데, PKI·양자내성암호 보안 사업과 실물연계자산(RWA) 신사업을 통해 수익 구조 다변화를 시도하고 있다.",
-  "en": "Hancom WITH derives the vast majority of its revenue from the gold trading business of its subsidiary Hancom Gold Exchange, while attempting to diversify its earnings base through PKI and post-quantum cryptography security operations alongside a new real-world asset (RWA) business."
+  "ko": "한컴위드는 한컴 연결 편입으로 2026년 3분기 영업이익이 94.3억원으로 늘었지만, 같은 분기 지배주주 순손실 286억원과 금 유통 매출 감소가 겹친 엇갈린 실적 구간에 있다.",
+  "en": "Hancom WITH's consolidation of Hancom lifted its operating profit to KRW 9.43 billion in Q3 2026, but a KRW 28.6 billion net loss attributable to controlling shareholders and lower gold-trading revenue mark a mixed quarter."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출 7,712억원, 영업이익 60.9억원으로 전년 대비 큰 폭 성장했으나 영업이익률은 0.8%에 그쳤다.",
-   "en": "2025 consolidated revenue reached KRW 771.2 billion with operating profit of KRW 6.09 billion, a sharp year-over-year increase, though the operating margin was only 0.8%."
+   "ko": "2026년 3분기 매출 1,289억원(전년 동기 대비 14.4% 감소), 영업이익 94.3억원(전년 동기 대비 493.3% 증가)으로 편입 효과가 영업이익에 먼저 나타났다.",
+   "en": "Q3 2026 revenue was KRW 128.9 billion (down 14.4% year on year) and operating profit was KRW 9.43 billion (up 493.3% year on year), with the consolidation effect showing first at the operating line."
   },
   {
-   "ko": "매출의 대부분이 금 유통 사업에서 발생해 국제 금값과 매입단가 변동에 실적이 크게 좌우되는 구조다.",
-   "en": "The vast majority of revenue comes from the gold distribution business, making results highly sensitive to swings in international gold prices and purchase costs."
+   "ko": "같은 분기 지배주주 순손실은 286억원이며, 회사는 한컴 지분 재평가에 따른 현금 유출이 없는 일회성 회계 손실이라고 설명했다.",
+   "en": "The same quarter posted a net loss of KRW 28.6 billion attributable to controlling shareholders, which the company attributes to a one-time, non-cash accounting loss from remeasuring its existing Hancom stake."
   },
   {
-   "ko": "2026년 2분기는 영업손실을 기록했음에도 지배주주 순이익이 70억원대로 크게 늘어나는 등 분기별 영업이익과 순이익의 괴리가 반복되고 있다.",
-   "en": "In the second quarter of 2026, the company posted an operating loss yet owner net profit rose sharply to the KRW 7 billion range, illustrating a recurring gap between operating income and net income across quarters."
+   "ko": "2025년 연결 매출은 7,712억원(전년 대비 72.1% 증가), 영업이익은 60.9억원(전년 대비 376.1% 증가)으로 2022~2025년 중 가장 큰 해였다.",
+   "en": "Full-year 2025 consolidated revenue was KRW 771.2 billion (up 72.1%) and operating profit was KRW 6.09 billion (up 376.1%), the largest year in the 2022 to 2025 span."
   },
   {
-   "ko": "금 실물연계자산(RWA) 플랫폼 '온토리움'과 온체인 금융 서비스 '아쿠아' 출시로 디지털 금융 사업을 확장하고 있다.",
-   "en": "The company is expanding into digital finance with the launch of the gold-backed real-world asset platform Ontorium and the on-chain financial service AQUA."
+   "ko": "최근 4개 분기(2025년 4분기~2026년 3분기) 지배주주 순손실 합계는 231억원으로, 분기 단위 이익의 안정성은 아직 확인 단계다.",
+   "en": "Over the last four quarters (Q4 2025 to Q3 2026), the net loss attributable to controlling shareholders totaled KRW 23.1 billion, so quarterly earnings stability is still to be confirmed."
   },
   {
-   "ko": "지주사격인 한컴위드가 한컴(한글과컴퓨터) 지분을 추가 확보해 연결 자회사로 편입하는 절차가 진행 중인 것으로 보도됐다.",
-   "en": "Reports indicate that Hancom WITH, which functions as the group's de facto holding company, is in the process of acquiring additional stakes in Hancom Inc. to bring it into consolidated accounts."
+   "ko": "보안 사업에서는 AI 인증·양자내성암호(PQC)의 공급이, 방산·소방 부문에서는 한컴라이프케어의 납품이 성장 축으로 제시되고 있다.",
+   "en": "Management points to AI authentication and post-quantum cryptography (PQC) supply in security, and to defense and fire-safety deliveries by Hancom Lifecare as growth drivers."
   }
  ],
  "business": {
-  "ko": "한컴위드는 PKI(공개키기반구조) 및 암호기술을 바탕으로 한 보안 솔루션 기업으로 출발했으며, 통합 간편인증 '애니사인 라이트 플러스', 인증 중계서비스 '위드어스', AI 기반 안면인증 '한컴오스', FIDO 기반 생체인증 '한컴패스' 등을 주요 제품으로 보유하고 있다. 데이터 보안 분야에서는 양자내성암호 기술을 탑재한 통합 데이터 암호화 솔루션 '한컴 엑스디비'와 통신구간 암호화 솔루션 '한컴 엑스커넥트'를 공급한다. 그러나 현재 회사 매출의 절대 다수는 보안 사업이 아니라 2020년 인수한 한컴금거래소의 금 유통 사업에서 발생하고 있으며, 금 관련 매출 비중이 전체의 97~98%에 이른다는 점이 여러 매체를 통해 확인된다. 한컴금거래소는 2023년 지분율이 54.64%로 늘어나면서 관계기업에서 종속기업으로 전환되었고, 이 시점을 기점으로 연결 매출이 급격히 커졌다. 최근에는 관계기업 아로와나허브를 통해 실물 금과 1대1로 연동되는 스테이블코인 '아로와나골드토큰(AGT)'을 발행하는 실물연계자산(RWA) 사업에도 진출했으며, 자체적으로 금 토큰화 플랫폼 '온토리움'과 온체인 금융 서비스 '아쿠아'를 글로벌 시장에 출시했다. 보안 경쟁구도에서는 펜타시큐리티, 드림시큐리티, 엑스게이트 등이 유사 기술 영역의 경쟁사로 언급되며, 한컴그룹 계열사로서 한컴오피스의 기업 고객 기반을 활용한 교차판매 여지가 있다는 평가도 있다. 최근에는 한컴위드가 한컴(한글과컴퓨터) 지분을 추가로 확보해 연결 자회사로 편입하는 절차가 보도되었는데, 이는 금 거래소 실적에 대한 높은 의존도를 완화하려는 시도로 해석된다. 종합하면 한컴위드는 '보안 솔루션 본업 + 금 유통 대형 매출원 + RWA·스테이블코인 신사업'이라는 세 갈래 구조로 재편되는 과정에 있다.",
-  "en": "Hancom WITH began as a security solutions company built on public key infrastructure (PKI) and cryptographic technology, offering products such as the integrated simple authentication solution AnySign Lite+, the authentication relay service WithUs, the AI-based facial recognition solution Hancom OS, and the FIDO-based biometric authentication solution Hancom Pass. In data security, it supplies the integrated data encryption solution Hancom XDB, which incorporates post-quantum cryptography, and the communication-channel encryption solution Hancom XConnect. However, the vast majority of the company's current revenue does not come from the security business but from the gold distribution operations of Hancom Gold Exchange, acquired in 2020, with multiple media reports confirming that gold-related sales account for roughly 97 to 98 percent of total revenue. Hancom Gold Exchange was reclassified from an associate to a subsidiary in 2023 after the ownership stake rose to 54.64 percent, a point after which consolidated revenue expanded sharply. More recently, the company has entered the real-world asset (RWA) business through its affiliate Arowana Hub, which issues a gold-pegged stablecoin called the Arowana Gold Token (AGT), and has separately launched a gold tokenization platform named Ontorium along with an on-chain financial service called AQUA in global markets. In the competitive landscape, firms such as Penta Security, Dream Security, and X-Gate are cited as rivals in similar technology segments, and as a Hancom Group affiliate, the company is seen as having cross-selling opportunities through Hancom Office's corporate customer base. Reports have also emerged that Hancom WITH is acquiring additional shares in Hancom Inc. to bring it under consolidation, a move interpreted as an effort to reduce the company's heavy dependence on gold exchange earnings. Taken together, Hancom WITH is in the process of reshaping itself into a three-pronged structure combining a core security business, a large gold-distribution revenue stream, and emerging RWA and stablecoin ventures."
+  "ko": "한컴위드는 한컴그룹의 지주사 역할을 하는 회사로, 2026년 3분기부터 핵심 계열사인 한컴을 연결 종속회사로 편입했다. 한컴위드는 한컴 지분을 꾸준히 매입해 단독 지분율을 31.2%까지 높였으며, 특수관계인을 포함한 최대주주 측 지분율은 40.15%다. 이를 바탕으로 3분기부터 한컴을 연결 종속회사로 편입했다. 한컴의 자회사 한컴라이프케어의 실적도 같은 시점부터 연결 재무제표에 포함되기 시작했다. 사업 가운데 자회사 한컴금거래소의 금 유통 사업이 2025년 실적 개선에서 주요 역할을 했다. 두 번째 축은 자체 보안 사업으로, 딥페이크 얼굴과 합성 음성을 판별하는 AI 인증 기술을 금융권과 공공기관에 공급하고, 로그인 이후 이용 과정을 점검하는 지속인증 솔루션의 적용 범위를 넓힐 계획이다. 양자내성암호(PQC)는 데이터·통신 암호화 제품에 적용해 공공·금융·국방 분야에 공급한다. 세 번째 축은 방산·소방 부문으로, 국군에 공급하는 차세대 방독면 'K5' 9차 양산분 납품을 대부분 마쳤으며, 지상레이저표적지시기(GLTD) 공급 물량도 매출에 반영됐다. 소방·안전 부문에서는 경량 모듈형 공기호흡기와 방화헬멧 'PG-1' 등 신제품이 시장에 안착하고 있다. 2026년 8월에는 프랑스 샤크로보틱스와 5년 독점 유통 계약을 체결하며 무인 소방로봇 시장으로까지 사업 영역을 넓혔다. 2026년 중에는 보안 계열 자회사 소프트포럼을 매각해 연결 대상에서 제외했다.",
+  "en": "Hancom WITH is the holding company of the Hancom group. It began consolidating Hancom as a subsidiary in Q3 2026, after raising its sole stake in Hancom to 31.2%, while the controlling shareholder side including related parties holds 40.15%. Hancom Lifecare, a Hancom subsidiary, has been included in consolidated results from the same point. The gold-trading business, run through a gold-trading subsidiary, was the main contributor to the 2025 revenue gain. The security segment supplies AI authentication that detects deepfake faces and synthetic voices to financial and public institutions, extends continuous authentication after login, and applies post-quantum cryptography to data and communications encryption products sold to public, financial and defense customers. The defense and fire-safety segment, centered on Hancom Lifecare, completed most deliveries of the K5 next-generation gas mask for the Korean army, and new fire-safety products such as lightweight air breathers and the PG-1 helmet are gaining traction. In August 2026 the company signed a five-year exclusive distribution deal with a French robotics firm to enter unmanned firefighting robots. In 2026 it also sold a security subsidiary and removed it from consolidation."
  },
  "earnings": {
-  "ko": "2025년 연결 매출은 7,712억원으로 2024년 4,482억원 대비 크게 늘었고, 영업이익은 60.9억원으로 2024년 12.8억원에서 큰 폭 개선됐다. 다만 영업이익률은 0.8%에 불과해 매출 규모 대비 수익성은 여전히 얇은 수준이다. 지배주주 순이익은 2025년 78.4억원으로 2024년 -38.2억원의 적자에서 흑자로 전환했다. 2023년에는 매출 4,101억원, 영업손실 24.6억원을 기록했음에도 지배주주 순이익이 9.0억원으로 소폭 흑자를 낸 바 있어, 영업손익과 순손익 사이의 괴리가 이 회사 실적의 특징적 패턴으로 반복되고 있다. 2022년에도 매출은 287억원에 불과했지만 지배주주 순이익은 68.1억원에 달해 비영업적 요인이 최종 손익에 상당한 영향을 미쳤음을 시사한다. 분기별로 보면 2025년 4분기 매출 2,740억원, 영업이익 19.5억원을 냈음에도 지배주주 순이익은 -28.2억원의 적자를 기록했고, 반대로 2026년 2분기는 매출 998억원, 영업손실 7.1억원의 적자였음에도 지배주주 순이익은 71.0억원으로 크게 늘어나는 상반된 흐름이 나타났다. 2026년 1분기는 매출 1,660억원, 영업이익 0.6억원의 소폭 흑자에 지배주주 순이익 11.4억원을 기록해 상대적으로 안정적인 모습을 보였다. 이러한 분기별 변동성은 금 시세 및 매입단가 변화, 그리고 지분법·평가손익 등 비영업 항목이 순이익에 미치는 영향이 크다는 점을 보여준다. 재무구조 측면에서는 2025년 말 부채비율이 67.3%로 2024년 54.2%보다 높아졌고, 영업활동 현금흐름은 2025년 64.9억원으로 양호했던 반면 2023년에는 -48.0억원의 음(-)의 흐름을 기록한 바 있어 현금창출력의 연도별 변동성도 관찰된다.",
-  "en": "Consolidated revenue in 2025 reached KRW 771.2 billion, sharply up from KRW 448.2 billion in 2024, while operating profit improved substantially to KRW 6.09 billion from KRW 1.28 billion in 2024. Still, the operating margin was only 0.8 percent, indicating that profitability remains thin relative to the scale of revenue. Owner net profit turned positive at KRW 7.84 billion in 2025, reversing a loss of KRW 3.82 billion in 2024. In 2023, the company posted revenue of KRW 410.1 billion and an operating loss of KRW 2.46 billion, yet still recorded a small owner net profit of KRW 0.90 billion, highlighting a recurring pattern in which operating and net results diverge. In 2022 as well, revenue was only KRW 28.7 billion, but owner net profit reached KRW 6.81 billion, suggesting that non-operating factors have had a considerable impact on the bottom line. On a quarterly basis, the fourth quarter of 2025 saw revenue of KRW 274.0 billion and operating profit of KRW 1.95 billion, yet owner net profit was a loss of KRW 2.82 billion; conversely, the second quarter of 2026 recorded revenue of KRW 99.8 billion and an operating loss of KRW 0.71 billion, while owner net profit surged to KRW 7.10 billion, an opposite pattern. The first quarter of 2026 was comparatively stable, with revenue of KRW 166.0 billion, a slim operating profit of KRW 0.06 billion, and owner net profit of KRW 1.14 billion. This quarter-to-quarter volatility reflects the significant influence of gold price and purchase cost movements, as well as non-operating items such as equity-method gains, on net income. On the balance sheet side, the debt ratio rose to 67.3 percent at the end of 2025 from 54.2 percent in 2024, and while operating cash flow was a healthy KRW 6.5 billion in 2025, it was negative at KRW -4.8 billion in 2023, underscoring year-to-year variability in cash generation as well."
+  "ko": "공시 실적 기준 연결 매출은 2022년 287억원에서 2023년 4,101억원(전년 대비 1,328.8% 증가), 2024년 4,482억원(전년 대비 9.3% 증가), 2025년 7,712억원(전년 대비 72.1% 증가)으로 2023년부터 2025년까지 3년 연속 증가했고, 2022~2025년 중 가장 큰 해는 2025년이다. 영업이익은 2022년 영업손실 6.9억원, 2023년 영업손실 24.6억원으로 적자가 지속되다가 2024년 영업이익 12.8억원으로 흑자 전환했으며, 2025년에는 60.9억원으로 전년 대비 376.1% 증가했다. 영업이익률은 2022년 -2.4%에서 2023년 -0.6%, 2024년 0.3%를 거쳐 2025년 0.8%로 높아졌다. 회사는 2025년 연결 실적이 역대 최대 실적이라고 밝혔다. 그 배경으로는 자회사 한컴금거래소가 보유한 금 유통 경쟁력과 글로벌 금 시세 상승 국면이 맞물리며 매출 성장을 견인한 것으로 설명됐다. 지배주주 순이익은 2022년 68.1억원에서 2023년 9억원(전년 대비 86.8% 감소)으로 줄었고, 2024년 지배주주 순손실 38.2억원으로 적자 전환한 뒤 2025년 지배주주 순이익 78.4억원으로 다시 흑자 전환했다. 당기순이익(비지배지분 포함)은 2025년 93.7억원으로 지배주주 순이익과 다른 값이다. 영업활동 현금흐름은 2023년 -48억원에서 2024년 19억원, 2025년 65억원으로 개선됐다. 부채비율은 2022년 56.3%, 2023년 48.0%, 2024년 54.2%를 거쳐 2025년 67.3%로 가장 높았다. 분기로 보면 2025년 4분기 매출 2,740억원(전 분기 대비 82.0% 증가)이 정점이었고, 2026년 1분기 1,660억원, 2분기 998억원으로 줄었다가 3분기 1,289억원으로 회복했다. 2026년 3분기 영업이익 94.3억원은 전년 동기 대비 493.3% 증가했지만, 당기순손실은 한컴 편입 과정에서 기존 보유 지분을 재평가하며 발생한 회계상 평가손실이 반영된 것으로, 현금 유출이 없는 일회성 요인이라고 회사 측은 설명했다. 그 결과 최근 4개 분기(2025년 4분기~2026년 3분기) 지배주주 순손실 합계는 231억원이다.",
+  "en": "On a consolidated basis, revenue rose from KRW 28.7 billion in 2022 to KRW 410.1 billion in 2023 (up 1,328.8%), KRW 448.2 billion in 2024 (up 9.3%) and KRW 771.2 billion in 2025 (up 72.1%), which is three consecutive years of growth from 2023 through 2025, with 2025 the largest year in the 2022 to 2025 span. Operating loss of KRW 689 million in 2022 and KRW 2.46 billion in 2023 persisted, before operating profit of KRW 1.28 billion in 2024 turned the result positive and KRW 6.09 billion in 2025 rose 376.1%. The operating margin moved from -2.4% in 2022 to -0.6% in 2023, 0.3% in 2024 and 0.8% in 2025. The company said 2025 was a record year, and it attributed growth to the competitiveness of its gold-trading subsidiary combined with a rise in global gold prices. Profit attributable to controlling shareholders fell from KRW 6.81 billion in 2022 to KRW 900 million in 2023 (down 86.8%), turned into a net loss of KRW 3.82 billion in 2024, and returned to a KRW 7.84 billion profit in 2025. Net profit including non-controlling interests, at KRW 9.37 billion in 2025, is a different figure. Operating cash flow improved from KRW -4.8 billion in 2023 to KRW 1.9 billion in 2024 and KRW 6.5 billion in 2025. The debt ratio rose from 56.3% in 2022 and 48.0% in 2023 to 54.2% in 2024 and 67.3% in 2025, the highest of the period. Quarterly revenue peaked at KRW 274 billion in Q4 2025 (up 82.0% quarter on quarter), fell to KRW 166 billion in Q1 2026 and KRW 99.8 billion in Q2 2026, then recovered to KRW 128.9 billion in Q3 2026. Q3 2026 operating profit of KRW 9.43 billion rose 493.3% year on year, while the net loss attributable to controlling shareholders of KRW 28.6 billion reflected a one-time, non-cash remeasurement loss on the existing Hancom stake, as the company explained. Over the last four quarters, the net loss attributable to controlling shareholders totaled KRW 23.1 billion."
  },
  "industry": {
-  "ko": "국내 보안 소프트웨어 산업은 양자컴퓨팅 상용화 논의가 확산되면서 양자내성암호(PQC) 전환 수요가 부각되고 있으며, 정부는 국가 기반시설에 PQC를 단계적으로 적용하는 로드맵을 추진 중인 것으로 알려져 있다. 한컴위드는 국정원 검증을 통과한 PQC 모듈을 보유하고 이를 자사 데이터·통신 암호화 제품에 상용화했다는 점에서 관련 정책 수요에 대응할 수 있는 위치에 있으나, 펜타시큐리티·드림시큐리티·엑스게이트 등 여러 업체가 유사 영역에서 경쟁하고 있어 시장 구도가 단일 업체 독점 구조는 아니다. 한편 금 유통 및 실물연계자산(RWA) 시장에서는 한컴위드 외에도 아이티센글로벌 등 IT업계 다른 기업들이 금 거래소 인수·플랫폼 구축을 통해 유사한 사업모델을 추진하고 있어, 디지털 자산 인프라를 선점하려는 경쟁이 확대되는 양상이다. 국내에서는 스테이블코인·토큰증권(STO) 제도화 논의가 이어지고 있으나 아직 법제화가 완료되지 않은 상태로, 관련 사업의 수익화 시점과 규제 프레임워크는 유동적이다. 금 유통 사업의 특성상 국제 금 시세가 상승하면 매출 외형은 확대되지만 매입단가 상승과 판매 마진 제한으로 수익성에는 오히려 부담이 될 수 있다는 점이 여러 매체를 통해 지적된 바 있다. 종합적으로 한컴위드는 전통 보안 소프트웨어 산업의 정책 수혜 기대와, 상품 가격에 연동된 금 유통업 특유의 사이클, 그리고 아직 규제가 정비되지 않은 신흥 RWA 시장이라는 세 가지 성격이 다른 산업 환경에 동시에 걸쳐 있는 구조다.",
-  "en": "In the domestic security software industry, demand for post-quantum cryptography (PQC) transition is gaining attention as discussions around commercial quantum computing spread, and the government is reportedly pursuing a roadmap to gradually apply PQC to national infrastructure. Hancom WITH holds a PQC module verified by the National Intelligence Service and has commercialized it in its data and communication encryption products, positioning it to respond to related policy demand, though competitors such as Penta Security, Dream Security, and X-Gate operate in similar segments, meaning the market is not a single-player monopoly. Meanwhile, in the gold distribution and real-world asset (RWA) market, other IT firms such as ITCEN Global are pursuing similar business models through gold exchange acquisitions and platform development, expanding competition to secure digital asset infrastructure early. In Korea, discussions on institutionalizing stablecoins and security token offerings (STOs) continue, but legislation has not yet been finalized, leaving the timing of monetization and the regulatory framework for such businesses uncertain. Several media reports have noted that, given the nature of the gold distribution business, rising international gold prices expand revenue in nominal terms but can weigh on profitability due to higher purchase costs and limited sales margins. Overall, Hancom WITH sits across three distinct industry environments simultaneously: policy tailwinds expected in traditional security software, a commodity-price-linked cycle characteristic of gold distribution, and an emerging RWA market where regulation has not yet been fully settled."
+  "ko": "보안 시장에서는 제로트러스트 전환 수요가 확대되면서 로그인 이후에도 이용 과정을 계속 점검하는 지속인증 솔루션의 적용처가 늘고 있다. 딥페이크 위협이 커지며 AI로 만든 가짜 얼굴과 합성 음성을 가려내는 인증 기술의 수요도 함께 올라가는 흐름이다. 양자내성암호는 공공·금융·국방 등 고신뢰 산업군을 겨냥해 데이터·통신 암호화 제품에 적용되는 기술이다. 국내 보안 솔루션 시장에서는 안랩 등과 경쟁 구도에 놓여 있으며, 회사는 AI 보안 플랫폼 전문기업을 목표로 PQC 암호 모듈을 전 산업군에 확대하고, AI 기반 딥페이크 탐지 기술로 글로벌 경쟁력을 확보하겠다는 방향을 내세우고 있다. 금 유통 업황은 국제 금값에 민감하다. 국제 금값 조정으로 자회사 한컴금거래소의 실물 금 유통 물량이 줄어든 영향이 매출 감소로 이어졌다. 2025년 성장 역시 글로벌 금 가격 상승과 안전자산 수요 확대가 맞물린 결과로 분석됐다. 실물 금을 디지털 자산으로 바꾸는 RWA 사업은 실물 금 조달과 보관을 맡는 파트너와 역할을 나누는 구조다. 한컴위드는 합작법인 지분 40%를 확보하는 구조로 계약했으며, 두바이 가상자산규제청 인가를 추진하고 있다. 방산 부문은 금 시세와 무관한 납품 매출 축이어서, 사업 구성이 금 유통 일변도에서 벗어나는 방향으로 움직이고 있다.",
+  "en": "In security, demand for zero-trust is widening, and continuous authentication that re-checks users after login is finding more applications. Rising deepfake threats are also lifting demand for authentication that detects AI-generated faces and synthetic voices. Post-quantum cryptography targets high-trust sectors such as public agencies, finance and defense. In domestic security software the company competes with players such as Ahnlab, and it has set out a plan to become a specialist AI security platform company by extending PQC cryptographic modules across industries and building global competitiveness in deepfake detection. Gold trading is sensitive to international gold prices: revenue fell in Q3 2026 as adjustments in gold prices reduced physical gold distribution volumes at its gold-trading subsidiary. The 2025 gain was analyzed as the product of higher global gold prices and stronger safe-haven demand. The RWA business, which tokenizes physical gold, splits roles with a partner that handles sourcing and storage of the gold. The company has secured a 40% stake in a joint venture and is pursuing approval from the Dubai virtual asset regulator. Defense deliveries form a revenue stream that does not depend on gold prices, so the business mix is moving away from gold trading alone."
  },
  "outlook": {
-  "ko": "회사는 2026년 1분기 중 금 실물 기반 디지털 자산 거래 플랫폼을 공개하겠다고 밝혔고, 실제로 4월 21일 금 토큰화 플랫폼 '온토리움'과 온체인 금융 서비스 '아쿠아'를 출시했다. 온토리움은 런던금시장연합회(LBMA) 인증 금을 기초자산으로 하는 스테이블코인 'OXAU'를 발행하며, 아쿠아는 이를 담보로 예치·대출 등 온체인 금융 서비스를 제공하는 구조다. 보안 부문에서는 사용자의 추가 동작 없이 본인 여부를 식별하는 '무자각 인증' 기술과 AI 기반 딥페이크 탐지 솔루션 '한컴오스 라이브니스', 화자인증 솔루션 등 차세대 제품 다변화를 추진하고 있다고 밝혔다. 지배구조 측면에서는 한컴위드가 한컴(한글과컴퓨터) 지분을 추가로 확보해 연결 자회사로 편입하는 절차가 진행 중이라는 보도가 나왔으며, 이를 통해 연결 매출이 조 단위로 확대되고 금거래소 의존도에 따른 실적 변동성이 일부 완화될 수 있다는 시장의 기대가 있다. 별도의 한컴(한글과컴퓨터)은 2026년 매출 2,100억원, 영업이익 600억원을 목표로 하는 가이던스를 제시한 것으로 보도됐는데, 이는 아직 한컴위드 연결 실적에 전부 반영되지 않은 목표치로 향후 편입 시점과 함께 확인이 필요하다. RWA·스테이블코인 사업은 국내 법제화 논의와 맞물려 있어 향후 관련 입법 진행 상황이 사업 확장 속도를 좌우할 가능성이 크다. 이러한 다각도의 신사업 추진이 본업인 보안 솔루션 및 금 유통업 대비 유의미한 매출·이익 기여로 이어지는지는 아직 초기 단계로, 다음 분기 이후 공시를 통해 구체적 성과가 확인될 필요가 있다.",
-  "en": "The company stated it would unveil a gold-backed digital asset trading platform in the first quarter of 2026, and it did launch the gold tokenization platform Ontorium along with the on-chain financial service AQUA on April 21. Ontorium issues a stablecoin called OXAU backed by gold certified by the London Bullion Market Association (LBMA), while AQUA provides on-chain financial services such as deposits and loans using OXAU as collateral. In the security segment, the company said it is pursuing a diversified next-generation product lineup including a 'seamless authentication' technology that identifies users without additional action, an AI-based deepfake detection solution called Hancom OS Liveness, and a voice authentication solution. On the governance front, reports indicate that Hancom WITH is in the process of acquiring additional shares in Hancom Inc. to bring it under consolidation, which the market expects could expand consolidated revenue into the trillion-won range and partially ease earnings volatility tied to dependence on the gold exchange business. Separately, Hancom Inc. was reported to have set a standalone 2026 guidance of KRW 210 billion in revenue and KRW 60 billion in operating profit, a target not yet fully reflected in Hancom WITH's consolidated results and one that will need confirmation alongside the timing of consolidation. The RWA and stablecoin business is tied to ongoing domestic legislative discussions, meaning the pace of future legislation is likely to be a major factor in how quickly the business can expand. Whether these various new-business initiatives translate into meaningful revenue and profit contributions relative to the core security and gold distribution operations remains at an early stage, and concrete results will need to be confirmed through disclosures in coming quarters."
+  "ko": "회사는 2026년 디지털 금융과 보안 사업의 성과를 구체화하겠다는 방향을 밝혔다. 보안 분야에서는 추가 동작 없이 사용자 본인을 식별하는 '무자각 인증' 기술의 상용화를 추진하고 AI 생체인식 솔루션을 적용하는 산업을 확대할 방침이다. 지속인증 솔루션의 적용 범위를 넓히는 계획도 같은 맥락이다. 대표이사는 그룹의 이익 기반이 두터워진 만큼 AI 인증과 양자내성암호 등 자체 사업에서도 성과를 내 수익 구조를 더 단단히 다지겠다고 말했다. 금 실물 기반 디지털 자산 사업은 ADGT가 실물 금 조달과 보관을 맡고, 한컴위드는 이를 기초자산으로 하는 디지털 토큰의 발행·상환 체계를 구축할 계획이다. 두바이 가상자산규제청 인가 추진 결과가 사업화 속도를 가르는 변수다. 2026년 1분기 중 공개를 계획했던 금 실물 기반 디지털 자산 거래 플랫폼은 공개 여부와 시점을 후속 보도와 공시로 따라가야 하는 항목이다. 제로트러스트 쪽에서는 과학기술정보통신부와 한국인터넷진흥원(KISA)의 제로트러스트 시범사업에 하나투어를 수요기업으로 하여 참여 중이어서, 시범사업이 본사업으로 이어지는지가 보안 매출의 확대 여부를 가를 것으로 보인다. 연결 실적 측면에서는 2026년 4분기부터 편입 효과가 분기 단위로 어떻게 유지되는지가 확인 지점이다. 다음 정기보고서는 2026년 사업보고서이며, 그 안에서 연간 영업이익률과 지배주주 순이익의 흐름이 확정 수치로 나온다.",
+  "en": "Management said it intends to make the results of its digital finance and security businesses more concrete in 2026. In security, the company plans to commercialize a 'no-awareness authentication' technology that identifies users without extra actions, and to widen the range of industries using AI biometric solutions. Expanding the use of continuous authentication is part of the same plan. The CEO said the group's earnings base has thickened and that the company intends to produce results in its own businesses, including AI authentication and post-quantum cryptography. In the physical-gold-backed digital asset business, a partner handles sourcing and custody of physical gold while the company builds a token issuance and redemption system backed by that gold. The outcome of the company's pursuit of approval from the Dubai virtual asset regulator will shape how quickly the business can launch. The digital gold asset trading platform that the company planned to unveil in Q1 2026 should be tracked through later filings and reports for whether and when it opened. In zero-trust, the company is taking part in a government pilot project with a travel company as the demand provider, so whether the pilot moves to full deployment will shape the expansion of security revenue. On the consolidated side, the key checkpoint is whether the consolidation effect holds quarter by quarter from Q4 2026. The next periodic report is the 2026 annual report, which will fix full-year operating margin and profit attributable to controlling shareholders."
  },
  "valuation_comment": {
-  "ko": "주가순자산비율은 순자산 대비 할인된 구간에서 거래되는 모습을 보이는 반면, 이익 규모 대비 주가 배수는 과거 수년간의 밴드 상단에 근접하거나 이를 웃도는 구간에 위치하는 경우가 많았다. 이는 연결 매출이 금값 변동에 크게 좌우되는 가운데, 분기별로 영업손익과 순손익이 엇갈리는 실적 패턴 때문에 이익 기준 배수가 안정적이지 않다는 점과 관련이 있다. 배당 측면에서는 최근까지 현금배당을 지급하지 않은 이력이 있어, 배당수익률에 기반한 투자 매력은 제한적인 편이다. 회사 실적이 2022년의 적자 국면에서 벗어나 2025년 흑자 전환과 이익 회복을 이어가고 있다는 점은 시장의 관심을 끄는 요인이지만, 순이익의 상당 부분이 비영업적 요인에 기인하는 경우가 반복돼 온 만큼 이익의 질에 대한 평가가 엇갈릴 수 있다. 향후 한컴(한글과컴퓨터)의 연결 편입 여부와 RWA·스테이블코인 사업의 구체적 매출 기여가 확인되면, 이익 구조의 안정성에 대한 시장의 판단도 달라질 수 있다.",
-  "en": "The price-to-book ratio has tended to trade at a discount to net asset value, whereas the price multiple relative to the scale of earnings has often sat near or above the upper end of its multi-year range. This is related to the fact that consolidated revenue is heavily influenced by gold price movements, and the recurring divergence between quarterly operating and net results makes earnings-based multiples less stable. On the dividend front, the company has a history of not paying cash dividends in recent periods, limiting the investment appeal based on dividend yield. The fact that the company has moved from a loss position in 2022 to a profit turnaround and earnings recovery through 2025 has drawn market attention, but because a significant portion of net income has repeatedly stemmed from non-operating factors, views on the quality of those earnings may differ. Once the consolidation status of Hancom Inc. and the concrete revenue contribution of the RWA and stablecoin businesses become clearer, market assessments of the stability of the earnings structure could shift as well."
+  "ko": "최근 4개 분기 지배주주 순손실 합계가 231억원이라 주가수익비율(PER)은 산출되지 않는 상태다. 대신 주가순자산비율은 1배를 밑도는 구간에 있어, 장부상 순자산 대비 낮은 가격에서 거래되는 관계로 읽힌다. 2025년 말 자본총계는 1,492억원이며 그중 지배주주 지분은 1,458억원, 부채총계는 1,003억원이다. 배당수익률은 0%대 수준이어서 배당을 기준으로 한 비교는 성립하지 않는다. 과거 추세로는 2024년 지배주주 순손실에서 2025년 지배주주 순이익 흑자로 전환해 이익이 회복되는 방향이 확인된다. 다만 2026년 3분기에는 일회성 재평가 손실이 반영돼 이익 흐름이 다시 흔들렸다. 연결 범위가 한컴 편입으로 바뀌어 과거 배수와 단순 비교하기 어렵다는 점도 함께 고려할 사실이다.",
+  "en": "Because the net loss attributable to controlling shareholders totaled KRW 23.1 billion over the last four quarters, the price-to-earnings ratio cannot be calculated. The price-to-book ratio sits below 1x, which means the shares trade below book value. Equity attributable to the parent stood at KRW 145.8 billion within total equity of KRW 149.2 billion at the end of 2025, against total liabilities of KRW 100.3 billion. The dividend yield sits near zero, so a dividend-based comparison does not apply. On the trend, profit attributable to controlling shareholders moved from a net loss in 2024 back to a profit in 2025, which is a recovery in earnings. However, a one-time remeasurement loss in Q3 2026 pushed earnings back down. Because consolidation scope changed when Hancom was brought in, comparing against past multiples is difficult."
  },
  "bull": [
   {
    "title": {
-    "ko": "매출 외형의 조 단위 확장 가능성",
-    "en": "Potential Expansion to Trillion-Won Revenue Scale"
+    "ko": "연결 이익 기반 확대",
+    "en": "Wider consolidated earnings base"
    },
    "body": {
-    "ko": "한컴(한글과컴퓨터) 지분 추가 확보를 통한 연결 자회사 편입이 완료되면 연결 매출이 조 단위로 확대될 것으로 보도됐다. 이는 금거래소 단일 사업에 대한 실적 의존도를 완화하고 매출 기반을 다변화하는 효과가 있을 수 있다. 한컴은 별도 기준 2026년 매출 2,100억원, 영업이익 600억원의 가이던스를 제시한 것으로 알려져, 편입 시 이익 기여도도 함께 확인할 부분이다.",
-    "en": "Reports indicate that consolidated revenue could expand to the trillion-won range once the additional stake acquisition in Hancom Inc. and its consolidation are completed. This could reduce dependence on the single gold exchange business and diversify the revenue base. Hancom Inc. reportedly set standalone 2026 guidance of KRW 210 billion in revenue and KRW 60 billion in operating profit, and its profit contribution will need to be confirmed upon consolidation."
+    "ko": "한컴 편입 이후 2026년 3분기 영업이익은 94.3억원으로 전년 동기 대비 493.3% 증가했다. 새로 연결 실적에 포함된 한컴라이프케어는 3분기 매출 309억원, 영업이익 34억원을 기록했으며, 매출은 전년 동기보다 31% 늘었고 영업이익률은 11.0%다. 그룹 계열사의 이익이 연결 재무제표에 더해지는 구조가 자리 잡고 있다.",
+    "en": "After consolidation, Q3 2026 operating profit reached KRW 9.43 billion, up 493.3% year on year. Hancom Lifecare, newly included in the consolidated results, posted Q3 revenue of KRW 30.9 billion and operating profit of KRW 3.4 billion, with revenue up 31% and an operating margin of 11.0%. Subsidiary earnings are now being added to the consolidated statements."
    }
   },
   {
    "title": {
-    "ko": "양자내성암호 등 차세대 보안 기술 상용화",
-    "en": "Commercialization of Next-Generation Security Technology Including PQC"
+    "ko": "보안 기술 공급 확대",
+    "en": "Expanding security technology supply"
    },
    "body": {
-    "ko": "한컴위드는 양자내성암호(PQC) 특허를 등록하고 이를 한컴 엑스커넥트, 한컴 엑스디비 등 주요 제품에 탑재해 상용화했다. AI 기반 딥페이크 탐지 솔루션과 화자인증 등 신제품도 출시하며 보안 포트폴리오를 확장하고 있다. 정부의 PQC 전환 로드맵이 진행될 경우 관련 수요 확대의 수혜를 볼 가능성이 있다.",
-    "en": "Hancom WITH has registered post-quantum cryptography (PQC) patents and commercialized the technology in key products such as Hancom XConnect and Hancom XDB. The company is also expanding its security portfolio with new products including an AI-based deepfake detection solution and voice authentication. If the government's PQC transition roadmap proceeds, the company could benefit from expanding related demand."
+    "ko": "딥페이크 얼굴과 합성 음성을 판별하는 AI 인증 기술을 금융권과 공공기관에 공급하고, 로그인 이후 이용 과정을 점검하는 지속인증 솔루션의 적용 범위를 넓힐 계획이다. 양자내성암호 핵심 기술 특허 등록을 완료하고 이를 통신·데이터 암호화 제품에 적용했다. 기술 특허와 제품 적용이 함께 있다는 점이 보안 사업의 기반으로 꼽힌다.",
+    "en": "The company supplies AI authentication that detects deepfake faces and synthetic voices to financial and public institutions, and plans to widen continuous authentication after login. It has completed registration of core post-quantum cryptography patents and applied them to communications and data encryption products. Patents together with product applications form the base of the security business."
    }
   },
   {
    "title": {
-    "ko": "실물연계자산(RWA) 신사업 조기 진출",
-    "en": "Early Entry into the Real-World Asset (RWA) Business"
+    "ko": "방산·소방 납품 축",
+    "en": "Defense and fire-safety deliveries"
    },
    "body": {
-    "ko": "금 토큰화 플랫폼 온토리움과 온체인 금융 서비스 아쿠아를 이미 글로벌 시장에 출시했으며, 관계기업 아로와나허브를 통한 금 스테이블코인 발행도 추진 중이다. 실물 금 유통 인프라를 보유한 만큼 RWA 사업 확장 시 기존 자산을 활용할 수 있다는 강점이 있다. 국내 STO·스테이블코인 제도화가 진전될 경우 선점 효과를 기대할 수 있는 위치에 있다.",
-    "en": "The company has already launched the gold tokenization platform Ontorium and the on-chain financial service AQUA in global markets, and is also pursuing gold stablecoin issuance through its affiliate Arowana Hub. Given its existing physical gold distribution infrastructure, the company has an advantage in leveraging existing assets as it expands into the RWA business. Should domestic institutionalization of STOs and stablecoins advance, the company is positioned to potentially benefit from being an early mover."
+    "ko": "국군에 공급하는 차세대 방독면 'K5' 9차 양산분 납품을 대부분 마쳤으며, 지상레이저표적지시기(GLTD) 공급 물량도 매출에 반영됐다. 금 시세와 무관하게 움직이는 납품 매출이 늘어나면 실적의 금 시세 의존도가 낮아지는 효과가 있다.",
+    "en": "Most deliveries of the K5 next-generation gas mask for the Korean army's ninth production lot have been completed, and laser target designator deliveries were also booked. As deliveries that do not move with gold prices grow, the earnings dependence on gold prices should decline."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "금값 연동형 매출·마진 구조의 취약성",
-    "en": "Vulnerability of a Gold-Price-Linked Revenue and Margin Structure"
+    "ko": "금 유통 매출 변동",
+    "en": "Volatility in gold-trading revenue"
    },
    "body": {
-    "ko": "매출의 대부분이 금 유통 사업에서 발생해 국제 금값 및 매입단가 변동에 실적이 좌우된다. 금값 상승이 매출 외형 확대에는 긍정적이지만 매입 단가 상승과 판매 마진 제한으로 수익성에는 부담이 될 수 있다는 점이 여러 매체에서 지적됐다. 2026년 2분기처럼 영업손실을 기록하는 구간이 반복될 가능성을 배제할 수 없다.",
-    "en": "The vast majority of revenue stems from the gold distribution business, making performance highly dependent on international gold price and purchase cost movements. Multiple media outlets have noted that while rising gold prices are positive for revenue expansion, they can weigh on profitability due to higher purchase costs and limited sales margins. It cannot be ruled out that periods of operating losses, as seen in the second quarter of 2026, could recur."
+    "ko": "매출액은 전년 동기 대비 14.4% 감소했으며, 국제 금값 조정으로 자회사 한컴금거래소의 실물 금 유통 물량이 줄어든 영향이다. 2025년 실적 개선에서는 자회사 한컴금거래소의 금 유통 사업이 주요 역할을 했다. 금값 방향이 바뀌면 매출 흐름이 크게 흔들릴 수 있는 구조라는 점이 약세 요인이다.",
+    "en": "Q3 2026 revenue fell 14.4% year on year, as gold price adjustments reduced physical gold distribution at its gold-trading subsidiary. The gold-trading business was the main driver of 2025 earnings improvement. Because revenue can swing sharply if gold prices change direction, this is a bearish factor."
    }
   },
   {
    "title": {
-    "ko": "얇은 영업이익률과 순이익의 비영업적 의존",
-    "en": "Thin Operating Margin and Non-Operating Dependence of Net Income"
+    "ko": "지배주주 적자 누적",
+    "en": "Accumulated losses for controlling shareholders"
    },
    "body": {
-    "ko": "2025년 영업이익률은 0.8%에 불과했고, 과거 여러 해에 걸쳐 영업이익과 지배주주 순이익 방향이 엇갈리는 사례가 반복됐다. 이는 순이익의 상당 부분이 지분법이익이나 평가손익 등 비영업 요인에서 발생할 가능성을 시사한다. 이런 구조는 향후 실적의 예측 가능성을 낮추는 요인이 될 수 있다.",
-    "en": "The 2025 operating margin was only 0.8 percent, and over several past years there have been repeated instances where operating profit and owner net profit moved in opposite directions. This suggests that a substantial portion of net income may stem from non-operating factors such as equity-method gains or valuation gains and losses. Such a structure could reduce the predictability of future results."
+    "ko": "2026년 3분기 지배주주 순손실은 286억원이었으며, 회사는 이를 현금 유출이 없는 일회성 평가손실로 설명했다. 그럼에도 최근 4개 분기(2025년 4분기~2026년 3분기) 지배주주 순손실 합계는 231억원으로 남아 있다. 지배주주 기준 이익이 분기마다 안정적으로 쌓이는지는 다음 정기보고서에서 확인할 사항이다.",
+    "en": "The net loss attributable to controlling shareholders in Q3 2026 was KRW 28.6 billion, which the company described as a one-time, non-cash valuation loss. Even so, the four-quarter total from Q4 2025 to Q3 2026 remains a net loss of KRW 23.1 billion. Whether profit attributable to controlling shareholders builds steadily each quarter is a point for the next periodic report."
    }
   },
   {
    "title": {
-    "ko": "규제 미확정 상태의 스테이블코인·RWA 사업",
-    "en": "Stablecoin and RWA Business Amid Unresolved Regulation"
+    "ko": "재무 레버리지 상승",
+    "en": "Rising financial leverage"
    },
    "body": {
-    "ko": "국내 스테이블코인·토큰증권(STO) 관련 법제화는 아직 논의 단계로, 관련 사업의 수익화 시점과 허용 범위가 불확실하다. 과거 계열 토큰과 관련한 논란이 있었다는 보도도 있어, 신뢰 확보와 규제 준수가 사업 확장의 전제조건이 될 수 있다. 법제화가 지연되거나 방향이 예상과 다르게 정해질 경우 사업 계획에 변수가 될 수 있다.",
-    "en": "Domestic legislation related to stablecoins and security token offerings remains at the discussion stage, leaving the timing of monetization and the permissible scope of related businesses uncertain. There have also been reports of past controversy involving a group-affiliated token, suggesting that building trust and ensuring regulatory compliance could be prerequisites for business expansion. If legislation is delayed or takes a different direction than expected, it could become a variable affecting business plans."
+    "ko": "부채비율은 2022년 56.3%, 2023년 48.0%에서 2024년 54.2%를 거쳐 2025년 67.3%로 올랐다. 영업활동 현금흐름은 2025년 65억원으로 개선됐지만 2025년 매출 7,712억원과 비교하면 규모가 작다. 연결 범위가 넓어지면서 부채와 자산이 함께 합산되므로 재무 구조의 변동성도 커질 수 있다.",
+    "en": "The debt ratio rose from 56.3% in 2022 and 48.0% in 2023 to 54.2% in 2024 and 67.3% in 2025. Operating cash flow improved to KRW 6.5 billion in 2025, but that is small against KRW 771.2 billion of revenue. Because the wider consolidation adds both assets and liabilities, financial structure volatility could also rise."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "재무구조·유동성",
-    "en": "Financial Structure and Liquidity"
+    "ko": "금 시세·유통",
+    "en": "Gold prices and distribution"
    },
    "body": {
-    "ko": "2025년 말 부채비율은 67.3%로 2023년 48.0%, 2024년 54.2%보다 높아지는 추세를 보였다. 과거 보도에서는 유동비율이 하락한 시점이 확인된 바 있어, 매입 규모가 큰 금 유통업 특성상 단기 자금 운용 부담이 있을 수 있다. 향후 공시되는 재무상태표를 통해 유동성 지표의 추이를 지속적으로 확인할 필요가 있다.",
-    "en": "The debt ratio rose to 67.3 percent at the end of 2025, up from 48.0 percent in 2023 and 54.2 percent in 2024. Past reporting has noted periods of declining current ratios, and given the large purchase volumes characteristic of the gold distribution business, there may be short-term funding pressure. It will be necessary to continue monitoring liquidity indicators through future disclosed balance sheets."
+    "ko": "금 유통 물량과 금 가격이 매출을 좌우하는 구조라 분기 실적 변동성이 크다. 국제 금값 조정으로 자회사 한컴금거래소의 실물 금 유통 물량이 줄어든 영향이 3분기 매출 감소의 원인으로 설명됐다. 금 기반 디지털 자산 사업을 추가하면 가격 노출과 규제 노출이 함께 늘어날 수 있다.",
+    "en": "Revenue depends on physical gold distribution volumes and gold prices, which makes quarterly results volatile. The company attributed the Q3 2026 revenue decline to gold price adjustments reducing distribution volumes. Adding gold-backed digital asset business could increase exposure to both price and regulation."
    }
   },
   {
    "cat": {
-    "ko": "사업 집중도 리스크",
-    "en": "Business Concentration Risk"
+    "ko": "회계·연결 범위",
+    "en": "Accounting and consolidation scope"
    },
    "body": {
-    "ko": "매출의 절대 다수가 한컴금거래소의 금 유통 사업 한 곳에 집중돼 있어, 해당 사업의 부진이나 규제 변화가 전체 실적에 직접적인 영향을 줄 수 있다. 보안 솔루션 본업의 매출 비중이 상대적으로 작아, 단기간에 사업 포트폴리오를 균형 잡기는 쉽지 않은 구조다. 한컴 편입이 이 집중도를 낮추는 데 어느 정도 기여할지는 편입 완료 이후 확인이 필요하다.",
-    "en": "The vast majority of revenue is concentrated in a single business—the gold distribution operations of Hancom Gold Exchange—meaning weakness or regulatory change in that business could directly affect overall results. The core security solutions business accounts for a relatively small share of revenue, making it difficult to rebalance the portfolio in the short term. How much the Hancom Inc. consolidation will reduce this concentration will need to be confirmed once the process is completed."
+    "ko": "기존 보유 지분의 재평가가 당기순손실에 반영돼 분기 순이익 흐름이 크게 움직였다. 연결 범위는 지분율과 자회사 매각에 따라 바뀌는데, 2026년 중 보안 계열 자회사가 연결 대상에서 제외됐다. 영업이익과 지배주주 순이익의 괴리를 구분해서 읽어야 하는 구간이다.",
+    "en": "Remeasurement of the existing stake flowed into the net loss, moving quarterly net profit sharply. Consolidation scope changes with ownership levels and disposals, and a security subsidiary was removed from consolidation in 2026. The gap between operating profit and profit attributable to controlling shareholders needs to be read separately."
    }
   },
   {
    "cat": {
-    "ko": "규제·평판 리스크",
-    "en": "Regulatory and Reputational Risk"
+    "ko": "사업화·규제",
+    "en": "Commercialization and regulation"
    },
    "body": {
-    "ko": "스테이블코인·RWA 관련 사업은 아직 법제화가 완료되지 않은 영역으로, 관련 법안의 방향과 시행 시점에 따라 사업 계획이 조정될 가능성이 있다. 과거 계열 토큰 관련 논란이 보도된 사례가 있어, 신규 디지털 자산 사업 추진 과정에서 시장 신뢰를 관리하는 것이 중요한 과제로 남아 있다.",
-    "en": "Stablecoin and RWA-related businesses remain areas where legislation has not yet been finalized, meaning business plans could be adjusted depending on the direction and timing of relevant laws. Given past reported controversy involving a group-affiliated token, managing market trust will remain an important task as the company pursues new digital asset businesses."
+    "ko": "디지털 자산과 RWA 사업은 두바이 가상자산규제청 인가를 추진하고 있는 단계라서 인가 여부와 시점이 사업 속도를 좌우한다. 제로트러스트 시범사업은 시범 단계여서 본사업 전환 여부와 시점이 불확실하다. 보안 기술의 공급 확대도 금융권과 공공기관의 도입 속도에 달려 있다.",
+    "en": "The digital asset and RWA business is still in the stage of pursuing approval from the Dubai virtual asset regulator, so approval and timing will set the pace. The zero-trust project is still a pilot, so the timing of any move to full deployment is uncertain. Expansion of security technology also depends on how quickly financial and public institutions adopt it."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중",
-    "en": "Around November 2026"
+    "ko": "2026년 12월 31일 (회계연도 종료)",
+    "en": "December 31, 2026 (fiscal year-end)"
    },
    "what": {
-    "ko": "2026년 3분기 실적 발표 시 한컴 자회사 편입 효과의 반영 여부와 연결 매출 규모의 변화를 확인할 필요가 있다.",
-    "en": "At the third-quarter 2026 earnings release, it will be important to check whether the effect of Hancom Inc.'s consolidation is reflected and how consolidated revenue scale has changed."
+    "ko": "2026년 4분기 실적의 출발점이다. 3분기부터 연결된 한컴과 한컴라이프케어 실적이 분기 단위로 유지되는지, 편입 효과가 영업이익에 계속 반영되는지가 확인 지점이다.",
+    "en": "This is the starting point for Q4 2026 results. The checkpoint is whether the Hancom and Hancom Lifecare results, consolidated since Q3, hold up on a quarterly basis and whether the consolidation effect continues in operating profit."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기(정기국회 회기 중)",
-    "en": "Fourth quarter of 2026 (during the regular National Assembly session)"
+    "ko": "2027년 3월 말 (사업보고서 법정 제출 기한)",
+    "en": "Late March 2027 (statutory filing deadline for the annual report)"
    },
    "what": {
-    "ko": "국내 스테이블코인·토큰증권(STO) 관련 입법 논의 진행 상황을 확인해, RWA·디지털 금융 신사업의 규제 프레임워크 방향을 점검할 필요가 있다.",
-    "en": "It will be worth checking the progress of domestic legislative discussions on stablecoins and security token offerings, to gauge the direction of the regulatory framework for the RWA and digital finance businesses."
+    "ko": "2026년 사업보고서가 나오면 연간 영업이익률, 지배주주 순이익, 부채비율이 DART 정기보고서 수치로 확정된다. 2026년 4분기 실적과 일회성 재평가 손실의 처리 방식도 함께 확인할 수 있다.",
+    "en": "The 2026 annual report will fix full-year operating margin, profit attributable to controlling shareholders and the debt ratio in a DART periodic filing. It will also show how the one-time remeasurement loss is treated along with Q4 2026 results."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기 국제 금 시세 발표 시기",
-    "en": "When international gold price data for the fourth quarter of 2026 is released"
+    "ko": "시기 미정 (추진 중)",
+    "en": "Timing not set (in progress)"
    },
    "what": {
-    "ko": "국제 금값 및 매입단가 추이를 확인해 한컴금거래소 부문의 매출·마진에 미치는 영향을 점검할 필요가 있다.",
-    "en": "It will be useful to track international gold price and purchase cost trends to assess their impact on the revenue and margin of the Hancom Gold Exchange segment."
+    "ko": "두바이 가상자산규제청의 인가 추진 결과다. 인가 여부에 따라 RWA 합작법인의 사업화 시점과 디지털 토큰 발행 체계의 가동 여부가 정해진다.",
+    "en": "The outcome of the approval application with the Dubai virtual asset regulator. Approval will determine when the RWA joint venture can commercialize and whether the digital token issuance system goes live."
    }
   },
   {
    "when": {
-    "ko": "2027년 2월 무렵(2026년 연간 실적 발표 시)",
-    "en": "Around February 2027 (at the full-year 2026 earnings release)"
+    "ko": "시기 미정 (시범사업 진행 중)",
+    "en": "Timing not set (pilot under way)"
    },
    "what": {
-    "ko": "2026년 연간 매출이 조 단위 목표에 근접했는지, 그리고 연간 영업이익률이 개선되었는지를 확인할 필요가 있다.",
-    "en": "It will be important to confirm whether full-year 2026 revenue approached the trillion-won target and whether the annual operating margin improved."
+    "ko": "과학기술정보통신부와 한국인터넷진흥원(KISA)의 제로트러스트 시범사업 결과와 본사업 전환 여부다. 보안 사업 매출 확대의 가능성을 가늠하는 지점이다.",
+    "en": "The results of the zero-trust pilot run with a government ministry and a national cybersecurity agency, and whether it moves to full deployment. This is the marker for the potential expansion of security revenue."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "한컴위드는 보안 솔루션 본업, 금 유통 대형 매출원, 그리고 RWA·스테이블코인 신사업이라는 세 갈래 구조로 재편되는 과정에 있는 기업이다. 2025년 연결 매출과 영업이익이 크게 늘고 순이익이 흑자로 전환한 점은 긍정적이나, 영업이익률이 여전히 1% 미만에 머물러 있고 분기별로 영업손익과 순손익의 방향이 엇갈리는 패턴이 반복되고 있어 이익의 질에 대한 평가는 신중할 필요가 있다. 매출의 대부분이 금값에 연동된 단일 사업에 집중돼 있다는 점은 성장의 동력이자 동시에 실적 변동성의 근원이다. 한컴(한글과컴퓨터)의 연결 편입이 진행되면 매출 기반의 다변화와 조 단위 외형 확대가 기대되지만, 실제 이익 기여와 편입 시점은 향후 공시를 통해 확인해야 한다. 양자내성암호 등 차세대 보안 기술과 RWA 신사업은 중장기 성장 스토리를 뒷받침하는 요소이나, 국내 관련 법제화가 아직 진행형이라는 점에서 사업화 속도는 유동적이다. 투자자는 다음 분기 실적과 편입·법제화 관련 공시를 통해 사업 구조 재편의 실질적 진행 상황을 계속 확인해 나갈 필요가 있다.",
-   "en": "Hancom WITH is a company in the process of restructuring itself into a three-pronged business combining a core security solutions operation, a large gold-distribution revenue stream, and emerging RWA and stablecoin ventures. The sharp increase in 2025 consolidated revenue and operating profit, along with the turnaround to net profit, is a positive development, but the operating margin remains below 1 percent, and the recurring pattern of operating and net results moving in opposite directions across quarters warrants a cautious view of earnings quality. The concentration of most revenue in a single gold-price-linked business is both a growth driver and a source of earnings volatility. If the consolidation of Hancom Inc. proceeds, it could diversify the revenue base and expand scale into the trillion-won range, but the actual profit contribution and timing of consolidation need to be confirmed through future disclosures. Next-generation security technologies such as post-quantum cryptography and the new RWA business support a longer-term growth narrative, but the pace of commercialization remains fluid given that related domestic legislation is still in progress. Investors will need to continue monitoring upcoming quarterly results and disclosures related to consolidation and legislation to track the actual progress of this business restructuring."
+   "ko": "한컴위드의 2026년 3분기는 한컴 편입 효과로 영업이익 94.3억원을 기록해 분기 흑자로 돌아섰다. 같은 분기 매출은 금 유통 물량 감소로 전년 동기 대비 14.4% 줄었고, 지배주주 순손실 286억원에는 편입 과정의 일회성 회계 손실이 반영됐다. 2025년 공시 실적은 매출 7,712억원, 영업이익 60.9억원으로 2024년보다 확대됐으며, 그 성장은 금 유통 사업과 금 시세 상승에 크게 연동된 구조다. 강세 요인은 연결 이익 기반 확대, 방산·소방 납품, AI 인증과 PQC 등 보안 사업의 공급 확대다. 약세 요인은 금 시세에 따른 매출 변동성, 최근 4개 분기 지배주주 순손실 누적(231억원), 부채비율의 상승이다. 밸류에이션은 적자 구간이 PER 산출을 막고 있어 주가순자산 관계와 이익 회복 방향으로만 읽을 수 있다. 다음 확인 지점은 2026년 사업보고서의 연간 영업이익률과 지배주주 순이익 흐름, 그리고 RWA 합작법인의 두바이 인가 추진 결과다.",
+   "en": "Hancom WITH posted Q3 2026 operating profit of KRW 9.43 billion, turning back to a quarterly profit on the consolidation of Hancom. Revenue for the same quarter fell 14.4% year on year as gold distribution volumes dropped, and the KRW 28.6 billion net loss attributable to controlling shareholders reflected a one-time accounting loss tied to the consolidation. The 2025 filed results showed revenue of KRW 771.2 billion and operating profit of KRW 6.09 billion, both larger than in 2024, and that growth was closely tied to the gold-trading business and rising gold prices. Bullish factors include a wider consolidated earnings base, defense and fire-safety deliveries, and expanding AI authentication and PQC supply in security. Bearish factors include revenue volatility tied to gold prices, a KRW 23.1 billion cumulative net loss attributable to controlling shareholders over the last four quarters, and a rising debt ratio. Valuation can be read only through the price-to-book relationship and the direction of earnings recovery, since the recent losses prevent a PER calculation. The next checkpoints are the operating margin and profit attributable to controlling shareholders in the 2026 annual report, and the outcome of the Dubai approval for the RWA joint venture."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A054920",
-  "https://m.thinkpool.com/compDiscuss/cont/1025631",
-  "https://kr.acrofan.com/detail.php?number=423825",
-  "https://www.valueline.co.kr/finance/balancesheet/054920",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260318001866",
-  "https://valueline.co.kr/finance/summary/054920",
+  "https://www.fnnews.com/news/202611131034168936",
+  "https://www.sentv.co.kr/article/view/sentv202611130080",
   "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=054920",
-  "https://alphadistill.com/report/656",
-  "https://www.k5.co.kr/stock/054920",
-  "https://sensortower.com/ko/blog/In-April-2024-mobile-casino-game-revenue-in-the-Korean-market-reached-the-third-highest-peak",
-  "https://www.hankyung.com/article/2024111128981",
-  "https://www.topcasinositekorea.us.com/",
-  "https://culture.org/casinos-in-korea/",
-  "http://www.koreacasino.or.kr/",
-  "https://www.outlookindia.com/xhub/e-gaming/2026%EB%85%84-%ED%95%9C%EA%B5%AD-%EC%98%A8%EB%9D%BC%EC%9D%B8-%EC%B9%B4%EC%A7%80%EB%85%B8%EC%82%AC%EC%9D%B4%ED%8A%B8-%EB%B0%94%EC%B9%B4%EB%9D%BC%EC%82%AC%EC%9D%B4%ED%8A%B8-%ED%8A%B8%EB%A0%8C%EB%93%9C-%EB%B6%84%EC%84%9D",
-  "https://www.outlookindia.com/xhub/e-gaming/casino-analysis-collection-of-verified-casino-sites",
-  "https://www.sportscasting.com/gambling/international/korea/offshore-casinos/",
-  "https://noverificationkasino.co.com/free-money-site/"
+  "https://www.widedaily.com/news/articleView.html?idxno=303665",
+  "https://www.smartbizn.com/news/articleView.html?idxno=159347",
+  "https://www.nextdaily.co.kr/news/articleView.html?idxno=254893",
+  "https://dealsite.co.kr/articles/172725",
+  "http://www.the-biz.co.kr/news/articleView.html?idxno=731316",
+  "https://www.epnc.co.kr/news/articleView.html?idxno=409737",
+  "https://www.epnc.co.kr/news/articleView.html?idxno=328945",
+  "https://view.asiae.co.kr/article/2026111309553912693",
+  "https://www.ebn.co.kr/news/articleView.html?idxno=1731531",
+  "https://www.ksdaily.co.kr/news/articleView.html?idxno=108494",
+  "https://m.news.nate.com/view/20260224n33173",
+  "https://www.investing.com/equities/hancom-secure-inc"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "054920",
  "name": "한컴위드",
  "name_en": "Hancom WITH Inc.",
@@ -223,11 +220,11 @@
   "IT·소프트웨어"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 07:36",
- "dataDate": "20260904",
+ "reportDate": "2026-11-13",
+ "reportTs": "2026-11-13 12:31",
+ "dataDate": "20261112",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-11-13",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -297,12 +294,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 186939091778,
-    "op": 546297376,
-    "np_owner": 4168967183
-   },
-   {
     "q": "2025Q3",
     "rev": 150526835314,
     "op": 1589399136,
@@ -325,28 +316,39 @@
     "rev": 99815476475,
     "op": -712663640,
     "np_owner": 7097526669
+   },
+   {
+    "q": "2026Q3",
+    "rev": 128851204163,
+    "op": 9429259857,
+    "np_owner": -28559684688
    }
   ],
   "valuation": {
-   "price": 3745,
-   "mcap": 0.1057,
+   "price": 3420,
+   "mcap": 0.0965,
    "shares": 28217081,
    "total_shares": 28217081,
-   "wavg_shares": 25115737,
-   "per": 10.731,
-   "eps": 349,
-   "pbr": 0.5889,
-   "bps": 6359,
-   "roe_ttm": 5.7,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": 8776538254,
+   "wavg_shares": 24904071,
+   "per": null,
+   "eps": -929,
+   "pbr": 0.652,
+   "bps": 5245,
+   "roe_ttm": -16.5,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": -23140130294,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 0.61,
+   "eps_src": "공시",
+   "pbr_krx": 0.59,
    "bps_krx": 5802.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
-   "div": 0.0
+   "div": 0.0,
+   "hidden": {
+    "per": "loss"
+   }
   }
- }
+ },
+ "textRules": 2
 }

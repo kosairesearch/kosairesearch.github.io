@@ -1,230 +1,216 @@
 {
  "title": {
-  "ko": "금구류 명가, HVDC로 이익 점프",
-  "en": "From Fittings Maker to HVDC Earnings Jump"
+  "ko": "HVDC 수주가 바꾼 이익 구조, 수주잔고가 다음 확인점",
+  "en": "HVDC orders reshape earnings; backlog is the next check"
  },
  "lead": {
-  "ko": "세명전기는 500kV 초고압직류송전(HVDC)용 금구류 공급을 계기로 2025년 영업이익률을 45.8%까지 끌어올렸으나, 회사측이 언급한 기존 노선 발주 소진 이후의 수주 공백 가능성도 함께 주목받고 있다.",
-  "en": "Semyung Electric lifted its 2025 operating margin to 45.8% on the strength of 500kV HVDC transmission-line fitting supply, but the company's own comments about the exhaustion of existing route orders have drawn attention to a potential order gap ahead."
+  "ko": "세명전기는 한국전력공사 HVDC 송전선로 공사 수주를 계기로 2025년 이익 규모가 급증했고, 2026년 들어 분기 실적의 등락 폭이 커진 상태다.",
+  "en": "SemyungElectricMachinery's 2025 profit jumped on a KEPCO HVDC transmission order, and quarterly results have since swung more widely."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출 323억원, 영업이익 148억원(영업이익률 45.8%)으로 전년 대비 크게 개선됐다.",
-   "en": "Consolidated 2025 revenue reached about KRW 32.3 billion with operating profit of about KRW 14.8 billion, an operating margin of 45.8%, sharply improved from the prior year."
+   "ko": "2025년 매출 323억원(전년 대비 124.0% 증가), 영업이익 148억원(전년 대비 389.0% 증가)으로 2022~2025년 중 가장 큰 해였다.",
+   "en": "2025 revenue was KRW 32.3 billion (up 124.0% year on year) and operating profit was KRW 14.8 billion (up 389.0%), the largest year in the 2022–2025 span."
   },
   {
-   "ko": "2025년 3분기~2026년 2분기 4개 분기 지배주주순이익 합계는 약 125억원이나, 분기별 마진 편차가 커 2025년 2분기 56%대에서 3분기 29%대로 낮아진 뒤 재상승했다.",
-   "en": "Owner net income over the four quarters from Q3 2025 to Q2 2026 totaled roughly KRW 12.5 billion, though quarterly margins swung widely, falling from about 56% in Q2 2025 to about 29% in Q3 2025 before recovering."
+   "ko": "영업이익률은 2022년 7.3%에서 2025년 45.8%로 높아졌다. 공시가 지목한 원인은 한국전력공사 동해안~신가평 구간 HVDC 500kV 송전선로 공사 수주다.",
+   "en": "The operating margin rose from 7.3% in 2022 to 45.8% in 2025, and the company's disclosure attributes the change to a KEPCO HVDC 500kV transmission construction order."
   },
   {
-   "ko": "2024년 500kV HVDC용 금구류 개발에 성공해 '동해안-신가평 송전선로' 프로젝트에 공급 중이나, 회사측은 이 노선 관련 발주는 이미 모두 마무리됐다고 밝혔다.",
-   "en": "The company developed 500kV HVDC fittings in 2024 and has been supplying the Donghaean-Singapyeong transmission line project, though it has said orders tied to that specific route have already been fully placed."
+   "ko": "수주잔고는 2023년 32억원, 2024년 212억원, 2025년 3분기 누계 347억원으로 불어났다.",
+   "en": "The order backlog grew from KRW 3.2 billion in 2023 to KRW 21.2 billion in 2024 and KRW 34.7 billion in the first nine months of 2025."
   },
   {
-   "ko": "부채비율은 18.5%로 낮은 수준을 유지하고 있으며, 영업현금흐름은 2022~2023년 적자에서 2024~2025년 흑자로 전환됐다.",
-   "en": "The debt ratio remains low at 18.5%, and operating cash flow turned from negative in 2022-2023 to positive in 2024-2025."
+   "ko": "2026년 분기 매출은 1분기 95.6억원, 2분기 126억원, 3분기 84억원이며, 3분기는 전 분기 대비 33.6% 줄었다.",
+   "en": "Quarterly revenue was KRW 9.56 billion in Q1 2026, KRW 12.6 billion in Q2 and KRW 8.4 billion in Q3, which fell 33.6% from the prior quarter."
   },
   {
-   "ko": "이 종목을 커버하는 증권사가 없어 컨센서스 기반 비교 지표를 확인하기 어렵다.",
-   "en": "No securities firm currently covers the stock, making consensus-based comparison difficult."
+   "ko": "증권업계 커버리지가 없다는 보도가 있어 외부 실적 추정치는 제한적이며, 원재료 가격과 정책 발주 일정이 주요 변수다.",
+   "en": "Reports said no securities firm covers the stock, so external earnings estimates are limited, and raw material prices and policy-driven orders are the main variables."
   }
  ],
  "business": {
-  "ko": "세명전기는 1962년 부산에서 소규모 전기 부품 판매업으로 출발한 전력 기자재 전문기업이다. 세명전기는 1962년 세명전업상사로 출발했으며, 송전탑과 초고압 전선을 연결하는 부품인 금구류가 주력 제품으로, 일본에서 100% 수입하던 금구류를 국내 최초로 개발해 상용화에 성공한 기업이다. 현재 한국전력공사, LS전선 등을 주요 고객사로 두고 있다. 이후 축적한 기술력을 바탕으로 한전의 의뢰를 받아 지난해 국내 최초로 500kV HVDC 금구류 개발에 성공했으며, 현재 공급사에 해당 제품을 납품하고 있다. 철도공사에도 전철용 금구류를 공급하며, 섬유직기용 섹셔날 빔과 자동차 부품 등으로 매출을 다각화해왔다. 2009년부터 2인 대표 체제로 들어서며 승계 작업도 완료해 장수 기업의 면모를 이어가고 있다. 부산·창원 등 영남권을 생산 거점으로 삼고 있으며, 코스닥에 상장된 소형주에 속한다. 증권업계의 정식 커버리지는 없는 상태로, 최근에는 500kV HVDC용 금구류 공급을 계기로 국가 전력망 프로젝트에 이름을 올리며 존재감을 키웠다.",
-  "en": "Semyung Electric began in 1962 in Busan as a small electrical parts trading business. The company started in 1962 and its core product is fittings, the components that connect transmission towers with ultra-high-voltage lines; it became the first domestic firm to develop fittings that had previously been entirely imported from Japan. Its key customers today include Korea Electric Power Corporation (KEPCO) and LS Cable. Building on this expertise, at KEPCO's request the company became the first in Korea to develop 500kV HVDC fittings and has been supplying that product to the client. It also supplies railway fittings to the state rail operator and has diversified into sectional beams for textile looms and automotive parts. Since 2009 the company has operated under a two-person leadership structure, completing a generational succession that supports its long history. Its production base is centered in the Busan and Changwon area, and it is a small-cap name listed on KOSDAQ with no formal securities-analyst coverage. It has recently gained visibility on national grid projects through its 500kV HVDC fitting supply."
+  "ko": "세명전기는 1962년 세명전업상사로 창업해 1991년 코스닥에 상장한 송·배전 금구류 제조사다. 송배변전선로 금구류를 한국전력공사에 납품하는 것이 주력이며, 철도 전차선로용 제품, 섬유직기용 섹셔날 빔, 자동차부품을 함께 공급한다. 2024년에는 500kV HVDC용 금구류를 개발했고, 이 기술을 바탕으로 수주를 쌓고 있다. 수주잔고는 2023년 32억원, 2024년 212억원, 2025년 3분기 누계 347억원으로 늘었다. 회사 관계자는 500kV HVDC용 금구류 수주가 잇따르면서 생산 물량을 늘리고 있다고 설명했다. 여유 생산능력이 충분하고 인력을 늘려 공장 가동률을 높이는 방식으로 사업 확장에 대응한다는 입장이다. 원재료 측면에서 금구류 업계는 인건비, 가공비, 알루미늄 가격의 영향을 다소 받지만 구리 가격 상승이 자사에 미치는 영향은 크지 않다고 회사는 밝혔다. 경쟁 구도에서는 LS ELECTRIC, 효성중공업, HD현대일렉트릭 같은 대형 전력기기 업체, 그리고 제룡전기, 일진전기, 대원전선, 가온전선 등과 같은 전력 테마에서 함께 거론된다. 사업 규모와 제품 구성이 달라 직접 비교는 금구류 특화 업체 중심으로 좁혀진다.",
+  "en": "SemyungElectricMachinery was founded in 1962 as a trading company and listed on KOSDAQ in 1991, and it makes transmission and substation fittings. Its core product is fittings for transmission and substation lines supplied to KEPCO, and it also supplies railway overhead line products, sectional beams for textile looms and automotive parts. In 2024 it developed 500kV HVDC fittings and has been building its order book on that technology. The order backlog grew from KRW 3.2 billion in 2023 to KRW 21.2 billion in 2024 and KRW 34.7 billion in the first nine months of 2025. A company official said orders for 500kV HVDC fittings keep coming in and production volume is rising. The company says it has ample spare capacity and will raise utilization by adding staff. On inputs, the fittings industry is somewhat affected by labor, processing and aluminum costs, but the company said copper price increases have little effect on it. In the competitive picture, it is grouped with power equipment names such as LS Electric, Hyosung Heavy Industries and HD Hyundai Electric, and with cable and component makers such as Iljin Electric, Cheryong Electric, Dawon Cable and Gaon Cable. Because its scale and product mix differ, direct comparisons are best drawn against fittings specialists."
  },
  "earnings": {
-  "ko": "세명전기의 연결 매출은 2022년 140억원, 2023년 118억원으로 오히려 줄었으나 2024년 144억원, 2025년 323억원으로 뚜렷한 성장 궤도에 올라섰다. 영업이익은 2022년 10억원, 2023년 14억원 수준에서 2024년 30억원, 2025년 148억원으로 급증했고, 영업이익률도 2022년 7.3%, 2023년 11.4%, 2024년 21.0%, 2025년 45.8%로 매년 개선됐다. 지배주주순이익은 2022년 23억원에서 2023년 13억원으로 줄었다가 2024년 47억원, 2025년 128억원으로 재차 확대됐다. 분기 흐름을 보면 2025년 2분기 매출 111억원·영업이익 62억원(영업이익률 약 56%)으로 정점을 찍은 뒤 3분기에는 매출 65억원·영업이익 19억원(약 29%)으로 낮아졌고, 4분기 매출 98억원·영업이익 38억원(약 39%), 2026년 1분기 매출 96억원·영업이익 40억원(약 41%), 2분기 매출 126억원·영업이익 56억원(약 44%)으로 다시 확대되는 흐름을 보였다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 지배주주순이익 합계는 약 125억원으로, 대형 프로젝트 물량이 분기별로 균일하지 않게 인식되며 마진 변동성이 크게 나타났다. 현금흐름 측면에서는 2022년과 2023년 영업활동현금흐름이 각각 -30억원, -51억원으로 순이익과 괴리를 보였으나, 2024년 155억원, 2025년 122억원으로 뚜렷한 흑자 전환을 이뤘다. 재무구조는 부채비율이 2022년 11.1%에서 2025년 18.5%로 다소 상승했지만 여전히 낮은 레버리지를 유지하고 있으며, 자기자본은 2022년 747억원에서 2025년 901억원으로 꾸준히 늘었다.",
-  "en": "Consolidated revenue actually declined from about KRW 14.0 billion in 2022 to KRW 11.8 billion in 2023, before climbing to KRW 14.4 billion in 2024 and KRW 32.3 billion in 2025. Operating profit surged from roughly KRW 1.0-1.4 billion in 2022-2023 to KRW 3.0 billion in 2024 and KRW 14.8 billion in 2025, with the operating margin improving every year from 7.3% (2022) to 11.4% (2023), 21.0% (2024), and 45.8% (2025). Owner net income fell from about KRW 2.3 billion in 2022 to KRW 1.3 billion in 2023, then rebounded to KRW 4.7 billion in 2024 and KRW 12.8 billion in 2025. On a quarterly basis, revenue and operating profit peaked at about KRW 11.1 billion and KRW 6.2 billion (roughly 56% margin) in Q2 2025, dropped to KRW 6.5 billion and KRW 1.9 billion (about 29%) in Q3 2025, then recovered to KRW 9.8 billion/KRW 3.8 billion (about 39%) in Q4 2025, KRW 9.6 billion/KRW 4.0 billion (about 41%) in Q1 2026, and KRW 12.6 billion/KRW 5.6 billion (about 44%) in Q2 2026. Owner net income across the most recent four quarters (Q3 2025-Q2 2026) totaled about KRW 12.5 billion, with large project volumes recognized unevenly across quarters, producing significant margin swings. On the cash flow side, operating cash flow was negative in 2022 and 2023 (about -KRW 3.0 billion and -KRW 5.1 billion), diverging from reported net income, but turned clearly positive at KRW 15.5 billion in 2024 and KRW 12.2 billion in 2025. The debt ratio rose modestly from 11.1% in 2022 to 18.5% in 2025 but remains low, while equity grew steadily from about KRW 74.7 billion in 2022 to KRW 90.1 billion in 2025."
+  "ko": "공시 실적 기준 매출은 2022년 140억원에서 2023년 118억원(전년 대비 15.3% 감소)으로 줄었다가 2024년 144억원(전년 대비 21.9% 증가), 2025년 323억원(전년 대비 124.0% 증가)으로 2024년부터 2025년까지 2년 연속 증가했다. 2025년이 2022~2025년 중 가장 큰 해다. 영업이익은 2022년 10.2억원, 2023년 13.5억원, 2024년 30.3억원, 2025년 148억원으로 2023년부터 2025년까지 3년 연속 증가했으며, 2025년 영업이익은 전년 대비 389.0% 증가했다. 영업이익률은 2022년 7.3%, 2023년 11.4%, 2024년 21.0%, 2025년 45.8%로 올랐다. 회사는 2025년 매출과 영업이익 증가의 원인으로 한국전력공사 HVDC 500kV 송전선로 공사 수주를 공시에서 지목했다. 매출 증가율보다 영업이익 증가율이 훨씬 커 고정비 흡수 효과가 컸던 것으로 읽힌다. 지배주주 순이익은 2022년 22.5억원, 2023년 13.1억원(전년 대비 42.0% 감소), 2024년 46.9억원, 2025년 128억원으로 2024년부터 2025년까지 2년 연속 증가했다. 분기로 보면 2025년 3분기 매출 64.6억원, 영업이익 18.7억원에서 2025년 4분기 매출 97.8억원, 영업이익 38억원으로 늘었다. 2026년 1분기 매출은 95.6억원으로 전 분기보다 2.2% 줄었지만 영업이익은 39.7억원으로 4.4% 늘었다. 2026년 2분기에는 매출 126억원, 영업이익 55.9억원으로 두 지표가 모두 늘었다. 2026년 3분기 매출은 84억원(전 분기 대비 33.6% 감소, 전년 동기 대비 30.1% 증가), 영업이익은 33억원(전 분기 대비 41.0% 감소, 전년 동기 대비 76.9% 증가)이다. 최근 4개 분기 지배주주 순이익 합계는 130억원이다. 영업활동 현금흐름은 2022년 -30.3억원, 2023년 -50.9억원의 적자에서 2024년 155억원, 2025년 122억원으로 흑자 전환했다. 부채비율은 2025년 18.5%로 2024년 12.6%보다 높아졌다.",
+  "en": "Revenue on a disclosed basis went from KRW 14 billion in 2022 to KRW 11.8 billion in 2023 (down 15.3%), then KRW 14.4 billion in 2024 (up 21.9%) and KRW 32.3 billion in 2025 (up 124.0%), rising for two consecutive years from 2024 to 2025. 2025 was the largest year in the 2022–2025 span. Operating profit went from KRW 1.02 billion in 2022 to KRW 1.35 billion in 2023, KRW 3.03 billion in 2024 and KRW 14.8 billion in 2025, rising for three consecutive years from 2023 to 2025, with 2025 up 389.0%. The operating margin moved from 7.3% in 2022 to 11.4% in 2023, 21.0% in 2024 and 45.8% in 2025. The company attributed the 2025 revenue and profit increase to the KEPCO HVDC 500kV transmission construction order. Operating profit grew much faster than revenue, which points to a large fixed-cost absorption effect. Net profit attributable to controlling shareholders went from KRW 2.25 billion in 2022 to KRW 1.31 billion in 2023 (down 42.0%), KRW 4.69 billion in 2024 and KRW 12.8 billion in 2025, rising for two consecutive years from 2024 to 2025. Net income including non-controlling interests is disclosed at the same amounts for each year. Quarterly, revenue rose from KRW 6.46 billion in Q3 2025 with operating profit of KRW 1.87 billion to KRW 9.78 billion and KRW 3.8 billion in Q4 2025. Q1 2026 revenue was KRW 9.56 billion, down 2.2% from the prior quarter, while operating profit rose 4.4% to KRW 3.97 billion. In Q2 2026 revenue reached KRW 12.6 billion and operating profit KRW 5.59 billion, with both rising from the prior quarter. Q3 2026 revenue was KRW 8.4 billion (down 33.6% quarter on quarter, up 30.1% year on year) and operating profit was KRW 3.3 billion (down 41.0% quarter on quarter, up 76.9% year on year). Net profit attributable to controlling shareholders over the last four quarters totaled KRW 13 billion. Operating cash flow turned from deficits of KRW -3.03 billion in 2022 and KRW -5.09 billion in 2023 to positive KRW 15.5 billion in 2024 and KRW 12.2 billion in 2025. The debt ratio rose to 18.5% in 2025 from 12.6% in 2024."
  },
  "industry": {
-  "ko": "전력 기자재 산업은 국내 전력망 노후화 대응과 재생에너지 연계 수요, 그리고 정부가 추진하는 '에너지 고속도로' 정책에 의해 사이클이 좌우되는 구조다. 정부는 서해안 지역의 재생에너지 전력을 수도권으로 보내는 서해안 에너지 고속도로를 2030년 개통 목표로 추진하겠다고 밝힌 바 있다. 이에 앞서 진행 중인 경북 울진과 경기 가평을 잇는 HVDC 송전선로 230km를 구축하는 500kV HVDC 동해안-신가평 송전선로 건설사업은 동부구간 140km와 서부구간 90km를 직류로 잇는 국내 최장 HVDC 건설사업으로, 신한울 원전과 삼척화력발전소 등에서 생산한 전력을 수도권에 전달하기 위해 철탑 약 440개가 세워지는 국가 전략망 사업이다. 세명전기는 이 노선에 쓰이는 500kV HVDC용 금구류를 국내 최초로 개발해 공급하며 기술 레퍼런스를 확보했다. AI 데이터센터 확산에 따른 전력 수요 급증이 변압기·차단기·전선 등 전력기기 전반의 수주 확대로 이어지는 흐름 속에서 금구류도 이 밸류체인의 말단 부품으로 조명받고 있다. 다만 금구류 시장 자체는 변압기·전선 대비 규모가 작고, 특정 노선의 발주 사이클이 끝나면 수주가 일시적으로 줄어들 수 있는 구조적 특성이 있다. 증권업계는 세명전기를 커버하고 있지 않으며 이에 따라 실적 추정치도 제공하지 않고 있어, 동종기업과의 정량적 비교 지표는 제한적이다.",
-  "en": "The power equipment industry's cycle is shaped by domestic grid aging, renewable energy interconnection demand, and the government's 'energy highway' policy. The government has said it aims to open a West Coast Energy Highway, which will carry renewable power from the west coast to the greater Seoul area, by 2030. Ahead of that, the ongoing 500kV HVDC Donghaean-Singapyeong transmission line project, which builds a 230km HVDC route linking Uljin in North Gyeongsang province and Gapyeong in Gyeonggi province, is the country's longest HVDC construction project, linking a 140km eastern section and a 90km western section by direct current, with about 440 transmission towers erected to deliver power generated at the Shin-Hanul nuclear plant and the Samcheok coal plant to the greater Seoul area as part of a national strategic grid project. Semyung Electric secured a technology track record by becoming the first domestic firm to develop and supply the 500kV HVDC fittings used on this route. Amid a broader trend in which surging AI data center power demand is driving increased orders across transformers, circuit breakers, and cables, fittings are also drawing attention as an end-of-chain component. However, the fittings market itself is smaller in scale than transformers or cables, and structurally, orders can temporarily shrink once a specific route's procurement cycle ends. No securities firm covers Semyung Electric and consequently no earnings estimates are provided, which limits quantitative peer comparisons."
+  "ko": "전력 수요의 큰 축은 AI 데이터센터 확산이다. 빅테크의 데이터센터 증설로 전력 수요가 빠르게 늘면서 초고압 변압기, 전력 케이블, 송배전 설비 수주 확대 전망이 관련 종목의 투자심리를 자극하고 있다. 북미와 유럽의 초고압 변압기 수출 호조도 같은 흐름에 속한다. 국내에서는 전기요금 현실화와 탈원전 정책 폐기로 원자력 발전 가동이 늘면서 송전선로 공사가 활성화된 것이 금구류 매출 개선의 배경으로 제시된다. 정부의 에너지 고속도로 정책과 HVDC 공사가 맞물려 있다는 점도 회사 관계자의 설명에 나온다. 철도 쪽에서는 전철화 구축 투자 계획으로 전차선로용 제품 수요가 늘고 있다는 점이 기업 코멘트에 담겼다. 사이클 위치는 공사 착수부터 매출 인식까지 시차가 있는 구조로 볼 수 있다. 회사는 HVDC 공사가 특정 시점에 시작된 것이 아니라 1~2년 전부터 진행돼 왔다고 설명했다. 경쟁 구도에서 세명전기는 LS ELECTRIC, 효성중공업, HD현대일렉트릭 같은 대형 전력기기 업체와 비교하면 사업 규모가 작은 편이다. 같은 금구류 시장 안에서는 HVDC 500kV 제품을 자체 개발했다는 점이 차별화 요소로 강조된다. 구리와 알루미늄 등 원재료 가격 변동은 전선 업계에 부담으로 거론된다.",
+  "en": "A major driver of power demand is the spread of AI data centers. As hyperscalers expand data centers and power demand rises quickly, expectations for more orders for extra-high-voltage transformers, power cables and transmission and distribution equipment are stirring sentiment in related stocks. Strong extra-high-voltage transformer exports to North America and Europe belong to the same trend. In Korea, the normalization of electricity tariffs and the policy shift away from nuclear power have raised nuclear output and activated transmission line construction, which is cited as the background for better fittings sales. The company official also linked the government's energy highway policy to HVDC construction. In rail, a rail electrification investment plan is lifting demand for overhead line products, according to company commentary. The cycle position looks like a structure with a lag between construction start and revenue recognition. The company says HVDC work did not start at one point but has been under way for one to two years. Among competitors, SemyungElectricMachinery is small in scale next to large power equipment makers such as LS Electric, Hyosung Heavy Industries and HD Hyundai Electric. Within fittings, its in-house development of 500kV HVDC products is highlighted as a point of differentiation. Copper and aluminum price swings are cited as a burden for the wire and cable industry."
  },
  "outlook": {
-  "ko": "세명전기는 정부의 에너지 고속도로 정책에 힘입어 금구류 공급량을 늘려 견조한 성장을 이어가고 있으며, 급증하는 고객사의 발주에 힘입어 수주잔고가 최근 2년 새 10배 이상 늘었다. 회사가 밝힌 기간별 공장 가동률은 30%, 39%, 70%로 상승 흐름을 이어가고 있다. 회사 관계자는 \"여유 캐파는 충분한 상황이며 인력을 늘려 공장 가동률을 높이는 형태로 향후 사업 확장에 대응할 수 있다\"고 밝혔다. 다만 HVDC 금구류 추가 수주가 당장 이뤄지기는 어려울 것으로 보이는데, 정부가 지금까지 고시한 동해안-신가평 송전선로 건설사업 관련 금구류 발주는 이미 모두 마무리됐고, 서해안 에너지 고속도로는 해저에 전선을 설치하는 사업이라 지상 송전탑을 연결하는 금구류가 많이 쓰이지 않기 때문이다. 회사 관계자는 주간동아와의 통화에서 \"내년 3월까지 납품하기로 한 금구류가 설치되고 나면 유지·보수 차원의 수주가 조금 있을 것\"이라고 밝혔고, 서해안 에너지 고속도로와 관련해서는 특별히 수주 계획을 세우지 않았으며 해외 기업을 상대로 이메일을 보내고 전시회에 참여하는 등 수출 확대 노력을 지속하고 있다고 덧붙였다. 2025년 실적 개선의 배경으로는 한국전력공사의 전기요금 현실화와 탈원전 정책 폐기로 원자력 발전 가동이 증가하면서 전력 인프라 수요가 늘어 금구류 매출이 개선된 점이 꼽히며, 정부의 전철화 구축 투자계획에 따라 철도망 구축과 철도 고속화가 추진되며 전차선로용 제품 수요 확대와 해외 프로젝트 추가 수주 기대도 거론된다.",
-  "en": "Semyung Electric has continued solid growth by increasing fittings supply on the back of the government's energy highway policy, and its order backlog has grown more than tenfold over the past two years amid surging customer orders. The company's factory utilization rates by period were reported at 30%, 39%, and 70%, showing an upward trend. A company representative said, \"spare capacity is sufficient, and the company can respond to future business expansion by adding staff to raise factory utilization.\" However, further HVDC fittings orders do not appear likely to materialize soon, since fittings orders for the Donghaean-Singapyeong transmission line project publicly notified so far have already been fully placed, and the West Coast Energy Highway, which lays cables undersea, does not require much fittings used to connect ground-based towers. A company representative told a magazine outlet, \"once fittings scheduled for delivery by next March are installed, there will be some maintenance-related orders afterward,\" and added that the company has not set a specific order plan for the West Coast Energy Highway, and is instead continuing efforts to expand exports, including emailing overseas firms and participating in trade shows. The 2025 earnings improvement has been attributed in part to increased nuclear plant utilization following electricity rate normalization and the reversal of the nuclear phase-out policy, which boosted power infrastructure demand and improved fittings sales, and expectations that government electrification investment plans to speed up rail networks will expand demand for catenary-line products and bring additional overseas project orders."
+  "ko": "회사가 공개 설명에서 제시한 확인 가능한 사실은 수주잔고와 생산능력이다. 2025년 3분기 누계 기준 수주잔고는 347억원으로 2023년 32억원보다 크게 늘어 있다. 회사는 여유 생산능력이 충분하다고 밝혔고, 인력 확충으로 가동률을 끌어올리는 방식으로 사업 확장에 대응할 계획이다. 500kV HVDC용 금구류 수주가 잇따르고 있다는 것이 회사 설명의 골자다. 기업 코멘트에서는 해외 프로젝트에서 추가 수주가 기대된다는 점도 언급됐다. 철도 전차선로용 제품은 정부 전철화 투자 계획과 맞물려 수요가 확대될 것으로 제시됐다. 다만 2026년 3분기 매출이 84억원으로 전 분기보다 줄었기 때문에, 수주잔고가 분기 매출로 전환되는 속도가 다음 확인 지점이다. 2025년 연간 실적은 2026년 2월 26일 이사회 결의로 공시됐으므로, 2026년 연간 실적과 사업보고서에서 수주잔고 소진 속도와 영업이익률 흐름을 대조할 수 있다. 증권업계 커버리지가 없다는 2026년 2월 보도가 있어, 외부 추정치에 기대는 전망은 제한적이다.",
+  "en": "The verifiable facts the company has offered are its order backlog and production capacity. The backlog stood at KRW 34.7 billion in the first nine months of 2025, up from KRW 3.2 billion in 2023. The company says it has ample spare capacity and plans to raise utilization by adding staff to support expansion. Its main message is that orders for 500kV HVDC fittings continue to come in. Company commentary also mentions expected additional orders from overseas projects. Railway overhead line products are presented as a growing demand area linked to the government's electrification investment plan. However, Q3 2026 revenue fell to KRW 8.4 billion from the prior quarter, so how quickly the backlog converts into quarterly revenue is the next point to check. The 2025 annual results were approved by the board on February 26, 2026, so the 2026 annual results and business report can be compared against backlog run-down and margin trends. A February 2026 report said no securities firm covers the stock, so outlooks relying on external estimates are limited."
  },
  "valuation_comment": {
-  "ko": "세명전기는 2024~2025년 실적이 낮은 마진 구간에서 두 자릿수, 이어 40%대 영업이익률 구간으로 빠르게 이동했고, 이 과정에서 주식시장의 평가 구간도 함께 움직였다. 이 종목을 정식으로 커버하는 증권사가 없어 컨센서스 기준의 밸류에이션 비교나 목표주가 참고치를 찾기 어려운 상태다. 순자산 대비 주가 수준은 과거 저성장기 거래 구간보다는 높은 편에서 형성돼 있으며, 이는 이익 확대를 반영한 결과로 볼 수도 있고 향후 실적이 둔화될 경우 되돌림 위험을 내포한 것으로도 볼 수 있다. 회사는 현금배당을 지급해온 이력이 있으나, 최근 이익 확대 속도에 견줘 주주환원 확대 속도는 상대적으로 더딘 모습이다. 밸류에이션의 향후 방향은 HVDC 관련 수주가 유지보수 단계로 넘어간 뒤에도 현재의 이익 수준을 유지할 수 있는지에 크게 좌우될 것으로 보인다.",
-  "en": "Semyung Electric's earnings moved quickly from a low single-digit margin range in earlier years to a double-digit range and then to a margin in the 40%-plus range in 2025, and the market's valuation range shifted along with that process. Because no securities firm formally covers the stock, it is difficult to find consensus-based valuation comparisons or reference target prices. The share price relative to net assets sits above the trading range seen during the earlier low-growth period, which can be read either as reflecting the earnings expansion or as carrying downside risk if results were to slow. The company has a history of paying cash dividends, though the pace of shareholder-return expansion has been relatively slower than the recent pace of earnings growth. The future direction of valuation is likely to hinge heavily on whether current earnings levels can be sustained once HVDC-related orders shift into a maintenance phase."
+  "ko": "밸류에이션은 이익 기준과 자산 기준 두 축에서 볼 수 있다. PER은 최근 네 개 분기 지배주주 순이익 합계 130억원을 바탕으로 계산되므로, 분기 이익이 크게 움직이는 구간에서는 배수도 함께 흔들린다. 2025년 영업이익이 389.0% 늘어 이익 기준선이 높아졌기 때문에, 과거 거래 구간과 단순 비교하면 해석이 달라진다. PBR은 2025년 말 자본총계 901억원 전액이 지배주주 지분인 장부가치 대비 주가 수준을 보여 주며, 주가순자산비율은 1배를 밑도는 구간에 있다. 배당은 2025년 실적 공시 이후 확대 흐름이 보도됐으며, 배당수익률은 이익 확대와 함께 해석하는 것이 사실 비교에 맞다. 주가는 전력기기 테마 흐름과 함께 움직이는 경향이 있어, 회사 고유 실적 변화와 테마 영향을 나눠 보는 것이 필요하다.",
+  "en": "Valuation can be read on two axes, earnings and assets. PER is calculated on net profit attributable to controlling shareholders over the last four quarters, which totaled KRW 13 billion, so the multiple moves a lot when quarterly profit swings widely. Operating profit rose 389.0% in 2025, which raised the earnings base, so comparisons with past trading ranges give different readings. PBR compares the share price with book value, where all KRW 90.1 billion of 2025 year-end equity belongs to controlling shareholders, and the price-to-book ratio sits below 1x. Reports said dividends were raised after the 2025 results, and the dividend yield is best read alongside the earnings increase. The share price tends to move with the power equipment theme, so company-specific earnings changes and theme effects are worth separating."
  },
  "bull": [
   {
    "title": {
-    "ko": "HVDC 금구류 선점 기술력",
-    "en": "First-mover technology in HVDC fittings"
+    "ko": "수주잔고의 빠른 확대",
+    "en": "Rapid backlog expansion"
    },
    "body": {
-    "ko": "세명전기는 2024년 국내 최초로 500kV HVDC용 금구류 개발에 성공해 동해안-신가평 송전선로 프로젝트에 제품을 공급하고 있다. 국가 전력망 프로젝트에 조달된 기술 레퍼런스는 향후 유사한 초고압 직류송전 프로젝트에서 트랙레코드로 활용될 수 있다. 회사는 여유 생산능력을 보유하고 있어 신규 수주가 발생할 경우 추가 설비투자 없이도 물량을 늘릴 수 있다고 밝혔다.",
-    "en": "Semyung Electric became the first domestic firm to develop 500kV HVDC fittings in 2024 and has been supplying them to the Donghaean-Singapyeong transmission line project. This technology reference on a national grid project could serve as a track record for future ultra-high-voltage direct current projects. The company has said it holds spare production capacity, allowing it to raise output for new orders without additional capital investment."
+    "ko": "수주잔고는 2023년 32억원에서 2024년 212억원, 2025년 3분기 누계 347억원으로 늘었다. 회사는 500kV HVDC용 금구류 수주가 잇따르고 있다고 설명했다. 수주가 생산능력과 맞물리면 매출 기반이 넓어지는 구조다.",
+    "en": "The order backlog grew from KRW 3.2 billion in 2023 to KRW 21.2 billion in 2024 and KRW 34.7 billion in the first nine months of 2025. The company says orders for 500kV HVDC fittings keep coming in. If the backlog matches production capacity, the revenue base widens."
    }
   },
   {
    "title": {
-    "ko": "낮은 레버리지와 현금흐름 개선",
-    "en": "Low leverage and improving cash flow"
+    "ko": "이익률 구조의 전환",
+    "en": "Shift in profit structure"
    },
    "body": {
-    "ko": "부채비율은 2025년 18.5%로 여전히 낮은 수준을 유지하고 있으며, 자기자본은 2022년 747억원에서 2025년 901억원으로 꾸준히 확대됐다. 영업활동현금흐름은 2022~2023년 적자였으나 2024년 155억원, 2025년 122억원으로 뚜렷하게 흑자 전환됐다. 낮은 차입 부담은 향후 설비 증설이나 연구개발 투자에 대응할 재무적 여력을 제공한다.",
-    "en": "The debt ratio remained low at 18.5% in 2025, and equity grew steadily from about KRW 74.7 billion in 2022 to KRW 90.1 billion in 2025. Operating cash flow, negative in 2022-2023, turned clearly positive at KRW 15.5 billion in 2024 and KRW 12.2 billion in 2025. The light debt burden provides financial flexibility for future capacity expansion or R&D investment."
+    "ko": "영업활동 현금흐름도 2022년과 2023년 적자에서 2024년과 2025년 흑자로 전환됐다. 고마진 공사 비중이 유지되는지가 다음 확인 지점이다.",
+    "en": "Operating cash flow also moved from deficits in 2022 and 2023 to surpluses in 2024 and 2025. Whether the high-margin project mix holds is the next point to check."
    }
   },
   {
    "title": {
-    "ko": "전력망 투자 확대라는 정책 순풍",
-    "en": "Policy tailwind from expanding grid investment"
+    "ko": "전력망 투자 테마와 해외 여지",
+    "en": "Grid investment theme and overseas room"
    },
    "body": {
-    "ko": "정부는 재생에너지 전력을 수도권으로 보내는 서해안 에너지 고속도로를 2030년 개통 목표로 추진하겠다고 밝혔으며, 전기요금 현실화와 탈원전 정책 폐기에 따른 원자력 발전 가동 확대도 전력 인프라 투자를 뒷받침하고 있다. 정부의 전철화 투자계획에 따른 철도망 고속화 추진도 전차선로용 제품 수요를 늘리는 요인으로 거론된다. 이러한 정책 기조가 유지될 경우 금구류를 포함한 전력 기자재 전반의 수요 기반이 장기적으로 넓어질 수 있다.",
-    "en": "The government has said it aims to open the West Coast Energy Highway, carrying renewable power to the Seoul metropolitan area, by 2030, while expanded nuclear plant operation following electricity rate normalization and the reversal of the nuclear phase-out is also supporting power infrastructure investment. Government electrification investment plans to speed up rail networks are also cited as expanding demand for catenary-line products. If this policy stance continues, the demand base for power equipment including fittings could broaden over the long term."
+    "ko": "AI 데이터센터 확산으로 초고압 변압기와 케이블, 송배전 설비 수요가 늘 것이라는 전망이 업계에 있다. 국내에서는 원전 가동 증가와 송전선로 공사 활성화가 금구류 수요를 받치고 있다. 철도 전차선로 제품과 해외 프로젝트 추가 수주도 기업 코멘트에서 거론됐다.",
+    "en": "Industry commentary expects AI data center growth to lift demand for extra-high-voltage transformers, cables and transmission equipment. In Korea, higher nuclear output and transmission construction support fittings demand. Railway overhead line products and possible additional overseas orders were also mentioned in company commentary."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "기존 노선 발주 소진에 따른 공백 우려",
-    "en": "Order gap risk as existing route orders are exhausted"
+    "ko": "2026년 분기 매출의 변동",
+    "en": "Quarterly revenue swings in 2026"
    },
    "body": {
-    "ko": "2025년 9월 회사 관계자는 동해안-신가평 송전선로와 관련된 금구류 발주는 이미 모두 마무리됐으며, 2026년 3월까지 기존 물량 납품이 끝나면 이후에는 유지·보수 성격의 수주만 일부 있을 것이라고 밝혔다. 서해안 에너지 고속도로는 해저 케이블 방식이라 지상 금구류 수요가 크지 않을 것으로 회사도 예상하고 있다. 신규 대형 프로젝트가 구체화되지 않는다면 2025년과 같은 고마진 분기가 반복되기 어려울 수 있다.",
-    "en": "In September 2025, a company representative said that orders related to the Donghaean-Singapyeong transmission line had already been fully placed, and that after existing volumes are delivered by March 2026, only some maintenance-related orders would follow. The company itself expects the subsea-cable-based West Coast Energy Highway to generate little demand for ground-based fittings. If no new large-scale project materializes, repeating the high-margin quarters seen in 2025 may prove difficult."
+    "ko": "2026년 1분기 매출은 95.6억원으로 전 분기보다 2.2% 줄었고, 3분기에는 84억원으로 33.6% 줄었다. 3분기 영업이익은 33억원으로 전 분기 대비 41.0% 감소했다. 분기 흐름이 연간 실적의 강세를 그대로 이어 가는지 확인이 필요하다.",
+    "en": "Q1 2026 revenue was KRW 9.56 billion, down 2.2% from the prior quarter, and Q3 fell to KRW 8.4 billion, down 33.6%. Q3 operating profit was KRW 3.3 billion, down 41.0% from the prior quarter. Whether quarterly trends keep up the strength seen in the annual results needs to be checked."
    }
   },
   {
    "title": {
-    "ko": "분기별 마진 변동성",
-    "en": "Quarter-to-quarter margin volatility"
+    "ko": "이익의 분기 변동성",
+    "en": "Quarterly profit volatility"
    },
    "body": {
-    "ko": "영업이익률은 2025년 2분기 56%대에서 3분기 29%대로 급락했다가 4분기 이후 39~44%대로 회복하는 등 분기별로 큰 편차를 보였다. 이는 대형 프로젝트 물량의 인식 시점에 따라 실적이 좌우되는 구조적 특성을 시사한다. 향후에도 특정 분기의 실적만으로 연간 추세를 단정하기 어려운 변동성이 이어질 수 있다.",
-    "en": "The operating margin swung sharply, from about 56% in Q2 2025 to roughly 29% in Q3 2025, before recovering to the 39-44% range from Q4 2025 onward. This suggests a structural pattern in which results are driven by the timing of large project revenue recognition. Going forward, this volatility could continue, making it difficult to judge the full-year trend from any single quarter's results."
+    "ko": "최근 네 개 분기 지배주주 순이익 합계는 130억원이지만, 2026년 3분기 지배주주 순이익은 23.6억원으로 전 분기보다 50.6% 줄었다. 대형 공사의 매출 인식 시점에 따라 분기 이익이 크게 움직이는 구조로 보인다. 연간 누계와 분기 수치가 서로 다른 방향을 가리킬 수 있다.",
+    "en": "Net profit attributable to controlling shareholders over the last four quarters totaled KRW 13 billion, but Q3 2026 was KRW 2.36 billion, down 50.6% from the prior quarter. Quarterly profit appears to move sharply with the timing of revenue recognition on large projects. Cumulative and quarterly figures can point in different directions."
    }
   },
   {
    "title": {
-    "ko": "증권사 커버리지 부재와 소형주 특성",
-    "en": "Lack of analyst coverage and small-cap characteristics"
+    "ko": "외부 추정치 부재와 고객 집중",
+    "en": "No external estimates and customer concentration"
    },
    "body": {
-    "ko": "세명전기를 담당하는 증권사가 없어 실적 추정치나 컨센서스가 제공되지 않고 있다. 시가총액이 작은 소형주로서 정보 접근성이 상대적으로 낮고, 주가가 테마성 수급에 영향을 받을 가능성도 있다. 이런 환경에서는 공시와 실적 발표 외에 회사의 실제 사업 진행 상황을 확인할 수 있는 채널이 제한적이다.",
-    "en": "No securities firm covers Semyung Electric, so no earnings estimates or consensus figures are provided. As a small-cap stock, information accessibility is relatively limited, and the share price may be affected by theme-driven trading flows. In this environment, channels to verify the company's actual business progress outside of regulatory filings and earnings announcements are limited."
+    "ko": "증권업계가 이 기업을 커버하지 않는다는 보도가 있어 외부 실적 추정치가 제공되지 않는 상태다. 주요 납품처가 한국전력공사에 집중돼 있어 발주 시기에 따라 매출이 좌우될 수 있다. 공시 정보 외에 외부에서 검증할 수단이 적은 점도 부담이다.",
+    "en": "A report said securities firms do not cover the company, so no external earnings estimates are available. Its main customer is KEPCO, so revenue can depend heavily on the timing of orders. With few external checks beyond disclosures, verification is also limited."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "수주 집중도·프로젝트 의존 리스크",
-    "en": "Order concentration and project dependency risk"
+    "ko": "정책·발주 의존",
+    "en": "Policy and order dependence"
    },
    "body": {
-    "ko": "매출과 수익성이 특정 국가 전력망 프로젝트(동해안-신가평 HVDC 노선)에 상당 부분 의존해온 것으로 파악된다. 해당 노선 관련 발주가 마무리된 이후 신규 대형 프로젝트가 뒤따르지 않으면 매출 공백이 발생할 수 있다. 고객사가 한국전력공사 등 소수 공공기관에 집중돼 있어 발주 정책 변화에 따른 영향도 클 수 있다.",
-    "en": "Revenue and profitability appear to have depended significantly on a specific national grid project, the Donghaean-Singapyeong HVDC line. If no new large project follows after orders tied to that route are completed, a revenue gap could emerge. Because customers are concentrated among a small number of public entities such as KEPCO, changes in procurement policy could have an outsized impact."
+    "ko": "매출 증가의 직접 원인으로 지목된 것이 한국전력공사 HVDC 송전선로 공사 수주다. 정부의 에너지 고속도로 정책과 전력망 투자 계획이 바뀌면 발주 시점이 밀릴 수 있다. 대형 단일 공사에 기대는 구조는 수주 공백기에 이익이 급감할 위험을 키운다.",
+    "en": "The company named a single KEPCO HVDC transmission construction order as the direct cause of the 2025 revenue increase. If the government's energy highway policy or grid investment plans change, order timing could slip. A structure that leans on large single projects raises the risk of a sharp profit drop during an order gap."
    }
   },
   {
    "cat": {
-    "ko": "원자재 가격 변동성",
-    "en": "Raw material price volatility"
+    "ko": "원재료·비용",
+    "en": "Raw materials and costs"
    },
    "body": {
-    "ko": "금구류 생산은 알루미늄 등 금속 원자재 가격에 일정 부분 영향을 받는다. 회사는 구리 가격 상승이 전선 업계에 부담을 주고 있다고 밝히면서도, 금구류 사업에 미치는 영향은 크지 않다고 설명했다. 다만 인건비와 가공비 상승이 이어질 경우 마진에 점진적인 압박 요인이 될 수 있다.",
-    "en": "Fittings production is affected to some degree by metal raw material prices such as aluminum. The company has said rising copper prices are weighing on the wire industry, but that the impact on its fittings business is not significant. However, continued increases in labor and processing costs could gradually pressure margins."
+    "ko": "금구류 업계는 인건비, 가공비, 알루미늄 가격에 영향을 받는다. 구리 가격 상승으로 전선 업계가 사업상 어려움을 겪는 것으로 알려졌다. 회사는 이 요인이 자사에 미치는 영향이 크지 않다고 설명했지만, 비용 상승이 장기화되면 마진 구조에 부담이 될 수 있다.",
+    "en": "The fittings industry is affected by labor, processing and aluminum costs. Copper price increases are reported to be pressuring wire and cable makers. The company says these factors have little effect on it, but prolonged cost increases could weigh on the margin structure."
    }
   },
   {
    "cat": {
-    "ko": "정책·인허가 일정 지연 리스크",
-    "en": "Policy and permitting schedule delay risk"
+    "ko": "분기 실적과 정보 제약",
+    "en": "Quarterly results and information limits"
    },
    "body": {
-    "ko": "HVDC 송전선로 건설은 주민 수용성 문제 등으로 준공 일정이 지연된 전례가 있다. 정부의 에너지 고속도로 정책 역시 예산·인허가 절차에 따라 추진 속도가 달라질 수 있다. 정책 일정이 지연되면 회사의 수주 회복 시점도 함께 늦춰질 가능성이 있다.",
-    "en": "HVDC transmission line construction has previously experienced schedule delays due to issues such as local resident acceptance. The pace of the government's energy highway policy could also vary depending on budget and permitting procedures. If the policy schedule slips, the timing of any recovery in the company's order intake could be delayed as well."
+    "ko": "2026년 3분기 매출은 84억원으로 줄었고 영업이익률도 분기 기준으로 움직임이 컸다. 증권사 커버리지가 없어 실적 추정치의 기준점이 부족하다. 분기별 매출 인식 시점이 흔들리면 연간 수치와 시장 기대 사이의 차이가 커질 수 있다.",
+    "en": "Q3 2026 revenue fell to KRW 8.4 billion, and quarterly operating margins moved sharply. With no securities coverage, there is little external benchmark for earnings. If the timing of quarterly revenue recognition shifts, the gap between annual figures and market expectations could widen."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중순(예상)",
-    "en": "Mid-November 2026 (expected)"
+    "ko": "2027년 3월 31일까지",
+    "en": "By March 31, 2027"
    },
    "what": {
-    "ko": "2026년 3분기 실적 공시를 통해 최근 분기별로 나타난 마진 변동성이 지속되는지, 매출 규모가 유지되는지 확인할 필요가 있다.",
-    "en": "Check the Q3 2026 earnings release to see whether the margin volatility seen in recent quarters persists and whether revenue scale is maintained."
+    "ko": "2026년 사업보고서에서 연간 매출, 영업이익률, 수주잔고 잔액을 확인한다. 2026년 3분기 매출 감소가 어느 사업 구간에서 나왔는지 주석과 대조할 수 있다.",
+    "en": "The 2026 business report will show annual revenue, operating margin and the year-end backlog. The source of the Q3 2026 revenue decline can be checked against the notes."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기~2027년 상반기",
-    "en": "Q4 2026 through H1 2027"
+    "ko": "2027년 2월 말 전후(2025년 연간 실적 공시 시점 참고)",
+    "en": "Around late February 2027 (2025 results were disclosed on February 26, 2026)"
    },
    "what": {
-    "ko": "동해안-신가평 송전선로 준공 및 상업운전 진행 상황과, 회사가 언급한 기존 물량 납품 완료(2026년 3월) 이후 유지보수성 수주로의 전환 규모를 확인해야 한다.",
-    "en": "Monitor the completion and commercial operation progress of the Donghaean-Singapyeong transmission line, and the scale of the shift to maintenance-type orders after the company's stated delivery completion in March 2026."
+    "ko": "2026년 연간 실적 공시에서 4분기 매출이 3분기 84억원 대비 회복됐는지, 영업이익률이 2025년 45.8% 수준을 유지했는지 확인한다.",
+    "en": "In the 2026 annual results, check whether Q4 revenue recovered from KRW 8.4 billion in Q3 and whether the operating margin held near the 45.8% of 2025."
    }
   },
   {
    "when": {
-    "ko": "서해안 에너지 고속도로 프로젝트 구체화 시점(수시)",
-    "en": "Whenever West Coast Energy Highway project details are announced"
+    "ko": "2027년 상반기 주주총회 전후(결산 배당 결의 시점)",
+    "en": "Around the first-half 2027 shareholder meeting (year-end dividend resolution)"
    },
    "what": {
-    "ko": "정부가 2030년 개통을 목표로 추진 중인 해저 케이블 기반 프로젝트에서 실제 금구류 발주가 발생하는지, 혹은 회사가 예상한 대로 수요가 제한적인지 확인이 필요하다.",
-    "en": "Check whether the subsea-cable-based project the government is pursuing with a 2030 target actually generates fittings orders, or whether demand stays limited as the company has anticipated."
+    "ko": "결산 배당 결의 내용으로 배당 확대 흐름이 이어지는지 확인한다. 이익 변동이 큰 해에 배당 수준이 어떻게 정해지는지가 확인 지점이다.",
+    "en": "Check whether the dividend increase continues in the year-end dividend resolution. How the payout is set in a year of volatile profit is the point to watch."
    }
   },
   {
    "when": {
-    "ko": "반기보고서·3분기보고서 공시 시점",
-    "en": "At the semiannual and Q3 report filing dates"
+    "ko": "2026년 11월 이후 수시 공시 발생 시",
+    "en": "Ad hoc disclosures from November 2026 onward"
    },
    "what": {
-    "ko": "수주잔고, 금구류 생산능력, 가동률 변화를 공시 자료로 확인해 추가 설비투자나 인력 증원 여부를 점검할 필요가 있다.",
-    "en": "Check disclosed data on order backlog, fittings production capacity, and utilization rates to assess whether additional capital investment or hiring is occurring."
-   }
-  },
-  {
-   "when": {
-    "ko": "알루미늄 등 금속 원자재 가격 추이(지속 점검)",
-    "en": "Ongoing monitoring of aluminum and other metal input prices"
-   },
-   "what": {
-    "ko": "원자재 가격 상승이 마진율에 미치는 영향을 지속적으로 점검할 필요가 있다.",
-    "en": "Continue monitoring the effect of rising raw material prices on margins."
+    "ko": "HVDC 등 대형 공급계약의 수주나 해지 공시가 나오면 수주잔고 변화와 매출 인식 시기를 대조한다.",
+    "en": "When large supply contracts for HVDC or similar projects are won or cancelled, compare backlog changes with the timing of revenue recognition."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "세명전기는 500kV HVDC용 금구류 개발을 계기로 2024~2025년 매출과 영업이익이 빠르게 확대되며 코스닥 소형주 중에서도 뚜렷한 실적 개선을 보인 사례다. 2025년 영업이익률은 45.8%까지 상승했고, 영업현금흐름도 2024년부터 뚜렷한 흑자 전환을 이뤘다. 다만 분기별로는 2025년 2분기 56%대에서 3분기 29%대로 급락하는 등 마진 변동성이 크게 나타나 특정 분기 실적만으로 추세를 판단하기는 어렵다. 회사측이 2025년 9월 언급한 대로 동해안-신가평 송전선로 관련 발주는 이미 마무리된 상태이고, 서해안 에너지 고속도로는 금구류 수요가 제한적일 것으로 예상되는 만큼 신규 수주원 확보 여부가 향후 실적의 핵심 변수로 남아있다. 재무구조는 낮은 부채비율과 꾸준한 자기자본 확대를 바탕으로 안정적인 편이며, 여유 생산능력도 확보하고 있어 신규 수주가 발생할 경우 대응력을 갖추고 있다. 다만 증권사 커버리지가 없어 외부 컨센서스를 통한 검증이 어렵고, 소수 공공 프로젝트에 대한 의존도가 높다는 점은 함께 고려할 필요가 있다.",
-   "en": "Semyung Electric is a case of a KOSDAQ small-cap showing marked earnings improvement in 2024-2025, driven by its development of 500kV HVDC fittings. The 2025 operating margin rose to 45.8%, and operating cash flow turned clearly positive from 2024 onward. However, quarterly margins swung sharply, falling from about 56% in Q2 2025 to roughly 29% in Q3 2025, making it difficult to judge the trend from any single quarter. As the company itself noted in September 2025, orders tied to the Donghaean-Singapyeong transmission line have already been fully placed, and fittings demand from the West Coast Energy Highway is expected to be limited, leaving the securing of new order sources as a key variable for future results. The financial structure remains stable, supported by a low debt ratio and steady equity growth, and the company has spare production capacity to respond if new orders emerge. That said, the absence of analyst coverage makes external consensus verification difficult, and dependence on a small number of public-sector projects is a factor to weigh alongside the positives."
+   "ko": "세명전기의 최근 실적 변화는 한국전력공사 HVDC 송전선로 공사 수주라는 계기에서 출발했다. 2025년 매출은 323억원, 영업이익은 148억원으로 2022~2025년 중 가장 큰 해였고, 영업이익률은 45.8%까지 높아졌다. 수주잔고는 2025년 3분기 누계 347억원으로 2023년 대비 크게 늘어 이익 기반의 확장 여지를 보여 준다. 반면 2026년 분기 매출은 1분기 95.6억원, 2분기 126억원, 3분기 84억원으로 변동이 커졌고, 3분기 영업이익은 33억원으로 줄었다. 강세 요인은 수주잔고, 이익률 구조 전환, 전력망 투자 테마이고, 약세 요인은 분기 실적 변동, 정책과 발주 의존, 외부 추정치 부재다. 두 요인이 같은 무게로 공존하므로 연간 수치와 분기 흐름을 함께 봐야 한다. 다음 확인 지점은 2026년 사업보고서의 연간 영업이익률과 수주잔고 소진 속도다. 주가 흐름은 전력기기 테마와 함께 움직이는 경향이 있다.",
+   "en": "SemyungElectricMachinery's recent earnings shift began with a single KEPCO HVDC transmission construction order. Revenue reached KRW 32.3 billion and operating profit KRW 14.8 billion in 2025, the largest year in the 2022–2025 span, and the operating margin rose to 45.8%. The backlog grew to KRW 34.7 billion in the first nine months of 2025 from KRW 3.2 billion in 2023, which points to room for the earnings base to expand. On the other side, quarterly revenue has swung more sharply in 2026, at KRW 9.56 billion in Q1, KRW 12.6 billion in Q2 and KRW 8.4 billion in Q3, and Q3 operating profit fell to KRW 3.3 billion. Strengths include the backlog, the shift in profit structure and the grid investment theme, while weaknesses include quarterly volatility, dependence on policy and orders, and the lack of external estimates. Both sets of factors carry comparable weight, so annual figures and quarterly trends should be read together. The next point to check is the operating margin and backlog run-down rate in the 2026 business report. The share price tends to move with the power equipment theme."
   }
  },
  "sources": [
-  "https://m.thinkpool.com/compDiscuss/cont/1025815",
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=017510",
-  "https://www.investing.com/equities/semyung-electric-machinery-earnings",
-  "https://littlebproject.com/stock/017510",
-  "https://www.investing.com/equities/semyung-electric-machinery",
-  "https://tmifactory.com/017510-260514/",
-  "https://app.rndcircle.io/company/7ba3d559-9237-51ae-ae41-c1574fa00ea5",
-  "https://m.thinkpool.com/compDiscuss/cont/1024174",
-  "http://www.semyung-elec.com/",
-  "https://www.nicebizinfo.com/ep/EP0100M002GE.nice?kiscode=F74550",
-  "https://www.thebell.co.kr/front/newsview.asp?key=202004131416569240107210",
   "https://www.snkpress.kr/news/articleView.html?idxno=1914",
-  "https://www.jobkorea.co.kr/recruit/co_read/c/sme2632",
+  "https://m.thinkpool.com/compDiscuss/cont/1025815",
+  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=634789",
+  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=502689",
   "https://www.finance-scope.com/article/view/scp202602110022",
   "https://m.thinkpool.com/stockDiscuss/017510/cont/11875738",
-  "https://v.daum.net/v/20250915090323532",
-  "https://www.finance-scope.com/article/view/scp202602130021",
-  "https://www.threads.com/@1_stockcrew/post/DIxSIYozidW/%EC%97%90%EB%84%88%EC%A7%80%EA%B3%A0%EC%86%8D%EB%8F%84%EB%A1%9C-%EA%B4%80%EB%A0%A8%EC%A3%BC-%EC%B4%9D%EC%A0%95%EB%A6%AC1-%EC%A0%84%EB%A0%A5-%EC%9D%B8%ED%94%84%EB%9D%BC%EC%84%B8%EB%AA%85%EC%A0%84%EA%B8%B0-%ED%98%84%EB%8C%80%EC%9D%BC%EB%A0%89%ED%8A%B8%EB%A6%AD-ls%EC%9D%BC%EB%A0%89%ED%8A%B8%EB%A6%AD%ED%9A%A8%EC%84%B1%EC%A4%91%EA%B3%B5%EC%97%85-%EB%8C%80%EC%9B%90%EC%A0%84%EC%84%A0-%EC%9D%BC%EC%A7%84%EC%A0%84%EA%B8%B0-%EC%A7%80%EC%95%A4%EC%94%A8%EC%97%90%EB%84%88%EC%A7%802-%EC%8B%A0%EC%9E%AC%EC%83%9D-%EC%97%90%EB%84%88%EC%A7%80%ED%95%9C%ED%99%94%EC%86%94%EB%A3%A8%EC%85%98-%EA%B8%88%EC%96%91"
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A017510&MenuYn=Y&ReportGB=D&NewMenuID=Y&stkGb=701",
+  "https://news.nate.com/view/20260226n17193",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=017510",
+  "https://www.investing.com/equities/semyung-electric-machinery-earnings",
+  "https://www.investing.com/equities/semyung-electric-machinery",
+  "https://www.jobkorea.co.kr/recruit/co_read/c/sme2632",
+  "https://tmifactory.com/017510-260514/",
+  "https://www.creditnews.kr/news/articleView.html?idxno=2455"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "017510",
  "name": "세명전기",
  "name_en": "SemyungElectricMachinery",
@@ -233,11 +219,11 @@
   "전기장비"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 18:08",
- "dataDate": "20260904",
+ "reportDate": "2026-11-13",
+ "reportTs": "2026-11-13 12:31",
+ "dataDate": "20261112",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-11-13",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -307,12 +293,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 11076510263,
-    "op": 6202283600,
-    "np_owner": 5519361907
-   },
-   {
     "q": "2025Q3",
     "rev": 6457509593,
     "op": 1865173685,
@@ -335,28 +315,36 @@
     "rev": 12646054576,
     "op": 5588161831,
     "np_owner": 4777026531
+   },
+   {
+    "q": "2026Q3",
+    "rev": 8402296703,
+    "op": 3298729220,
+    "np_owner": 2358018920
    }
   ],
   "valuation": {
-   "price": 7150,
-   "mcap": 0.109,
+   "price": 5840,
+   "mcap": 0.089,
    "shares": 15246000,
    "total_shares": 15246000,
    "wavg_shares": 15249987,
-   "per": 8.72,
-   "eps": 820,
-   "pbr": 1.1553,
-   "bps": 6189,
-   "roe_ttm": 13.9,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": 12504582518,
+   "per": 6.83,
+   "eps": 855,
+   "pbr": 0.9206,
+   "bps": 6344,
+   "roe_ttm": 14.2,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": 13032982023,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 1.19,
+   "eps_src": "공시",
+   "pbr_krx": 0.99,
    "bps_krx": 5911.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 220.0,
-   "div": 3.08
+   "div": 3.77
   }
- }
+ },
+ "textRules": 2
 }
