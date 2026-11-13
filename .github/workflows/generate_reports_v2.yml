@@ -133,15 +133,10 @@ jobs:
           # 스크립트가 건드린 전역 파일은 되돌려 rebase를 깨끗하게 유지
           git checkout -q -- data/reports_v2_run.log data/reports-index.js data/reports_v2/index.json 2>/dev/null || true
           git commit -m "📊 리포트 v2 (${{ inputs.mode }}) $(TZ='Asia/Seoul' date +'%Y-%m-%d %H:%M KST')" || exit 0
-          # 겹치지 않는 파일만 커밋하므로 rebase는 항상 깨끗. 재시도+랜덤 백오프로 push 창 확보.
-          ok=""
-          for i in $(seq 1 25); do
-            git fetch origin main -q 2>/dev/null || true
-            if git rebase origin/main 2>/dev/null && git push origin main 2>/dev/null; then ok=1; break; fi
-            git rebase --abort 2>/dev/null || true
-            sleep $(( (RANDOM % 9) + 2 ))
-          done
-          [ -n "$ok" ] || exit 1
+          # 겹치지 않는 파일만 커밋해도 실패 기록(종목마다 '1 2026-11-12' — 같은 날이면 글자까지 같다)은 git 이 이름 바꿈으로 읽어
+          # 다른 실행과 충돌할 수 있다(2026-11-12 공시 트리거가 그렇게 106편을 잃었다). 남은 충돌은 이 실행의 판을 따른다.
+          # 받아 합치기 · 충돌 · 재시도 · 실패 처리는 공용 단계가 한다(scripts/push_main.sh · 2026-11-13).
+          PUSH_TRIES=25 bash scripts/push_main.sh
 
       # 스크립트가 오류로 끝났으면 잡을 실패로 표시한다. 부분 결과는 위에서 이미
       # 커밋했으므로 잃는 것은 없고, 대신 초록불에 속지 않는다.

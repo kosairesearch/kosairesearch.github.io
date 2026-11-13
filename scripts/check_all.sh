@@ -125,6 +125,9 @@ run "리포트 파이프라인" python3 scripts/tests/reports_pipeline_test.py
 # 워치독 동기화 때만 고쳐진다). 대상 판단이 리포트 파일의 날짜도 보는지, 사용량이 남지 않던 생성기
 # (옛 생성기 · 신규 상장용 배치)가 기록하는지, 80분을 넘긴 배치를 다음 실행이 먼저 받는지 본다.
 run "리포트 주문"   python3 scripts/tests/report_orders_test.py
+# 2026-11-12 공시 트리거 실행이 리포트 106편을 쓰고도 main 에 올리지 못했다 — 같은 날 실패 기록 두 파일을 rebase 가 이름 바꿈으로
+# 읽어 충돌했고, 재시도는 멈춘 rebase 를 거두지 않았고, 다섯 번 모두 실패해도 성공으로 끝났다. 진짜 git 저장소로 그 장면을 다시 만든다.
+run "결과 올리기"   python3 scripts/tests/push_main_test.py
 # 2026-10-27 공시 조회 라이브러리가 숫자 6자리만 종목코드로 봐서, 영문이 섞인 종목코드('0011A0') 36개 종목이 재무제표를
 # 못 받아 새 형식 리포트에서 생성 불가로 빠져 있었다. 공시 객체를 직접 만드는 자리가 생기거나 생성 불가 기록이 다시 쌓이면 걸린다.
 run "공시 종목코드" python3 scripts/tests/dart_reader_test.py

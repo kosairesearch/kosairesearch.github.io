@@ -83,10 +83,8 @@ jobs:
           git config --global user.name "KOS ai Bot"
           git add data/sector_retry.json
           git commit -m "🏭 업종 분석 재시도 횟수 기록" || echo "변경 없음"
-          for i in 1 2 3 4 5; do
-            git fetch origin main && git rebase -X theirs origin/main && git push origin main && break
-            echo "push 재시도 $i..."; sleep $((i*3))
-          done
+          # 받아 합치기 · 충돌 · 재시도 · 실패 처리는 공용 단계가 한다(scripts/push_main.sh · 2026-11-13).
+          bash scripts/push_main.sh
 
       # 생성 워크플로를 부른다. force 는 켜지 않는다 — 걸러진 것만 다시 만든다.
       - name: 남은 업종만 다시 만든다

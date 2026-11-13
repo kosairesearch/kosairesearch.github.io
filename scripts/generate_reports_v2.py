@@ -2073,6 +2073,20 @@ def normalize_shape(rep):
     return n
 
 
+# 영문이 '있지만 모자란' 자리도 채운다(2026-11-13). 모양 검증(valid_v2)은 사업 · 실적 · 산업 · 전망의 영문이 150자 넘기를 요구하는데,
+# 채우기는 빈 칸만 보아 '.' · 'Revenue rose' 같은 한두 마디 영문(1~57자)이 든 글은 채우지 않고 통째로 버렸다(11/11~13 하이쿠 글 5편).
+_EN_MIN = {"business": 150, "earnings": 150, "industry": 150, "outlook": 150}   # valid_v2 의 영문 분량 문턱과 같다
+
+
+def _en_short(c, k):
+    """(담은 것, 키) 자리의 영문이 비었거나, 분량 문턱이 있는 칸인데 그보다 짧은가."""
+    en = (c[k].get("en") or "").strip() if isinstance(c[k].get("en"), str) or c[k].get("en") is None else ""
+    if not en:
+        return True
+    need = _EN_MIN.get(k) if isinstance(k, str) else None
+    return bool(need) and len(en) < need and len(c[k]["ko"]) >= need
+
+
 def fill_missing_en(cl, rep, model=None):
     """en 이 빈 자리를 한국어에서 옮겨 채운다. 채운 개수를 돌려준다.
 
@@ -2080,7 +2094,7 @@ def fill_missing_en(cl, rep, model=None):
     채운다. 한국어가 온전한 리포트에만 부르는 것은 부르는 쪽 책임이다."""
     nodes = [(c, k) for c, k in _bilingual_slots(rep)
              if isinstance(c[k], dict) and isinstance(c[k].get("ko"), str) and c[k]["ko"].strip()
-             and not (c[k].get("en") or "").strip()]
+             and _en_short(c, k)]
     if not nodes:
         return 0
     payload = {str(i): c[k]["ko"] for i, (c, k) in enumerate(nodes)}
@@ -2867,15 +2881,22 @@ def submit(cl, as_of):
     return result
 
 
-def pickup(cl, as_of):
+def pickup(cl, as_of, only=None):
     """끝난 배치를 전부 회수한다. 재과금 없다. 회수한 배치 수를 돌려준다.
 
     주문(auto/submit)은 넣고 바로 끝나므로 누군가는 결과를 받으러 와야 한다.
     그게 이 함수고, collect_batch 워크플로가 30분마다 부른다. 상태 파일마다
     한 번만 회수한다 — 두 번 회수하면 리포트를 같은 내용으로 덮어쓴다.
+
+    only — 이 배치들만 회수한다(auto 가 자기 주문만 받을 때). auto 는 받아 둔 저장소가 몇 시간 묵은
+    상태라(공시 트리거는 정량 수집에만 2시간 넘게 걸린다) 그사이 다른 실행이 이미 회수한 배치를 또
+    회수했다 — 2026-11-12 공시 트리거가 회수 작업이 받아 간 보정 배치를 다시 받아 같은 파일을 고쳤고,
+    올릴 때 충돌해 그 실행의 리포트 106편이 통째로 사라졌다. 남의 주문은 collect_batch 가 받는다.
     """
     import anthropic
     pend = S.pending_batches()
+    if only is not None:
+        pend = [(p, st) for p, st in pend if st.get("batch_id") in only]
     if not pend:
         log("- 남은 배치 없음")
         _housekeep_batches()
@@ -2951,6 +2972,22 @@ def pickup(cl, as_of):
         n += 1
     _housekeep_batches()
     return n
+
+
+def _log_shape(message):
+    """버리는 글의 사정 한 줄 — 중단 사유 · 글 길이 · JSON 표지 수 · 블록 · JSON 이 깨진 자리 · 읽힌 항목(2026-11-13).
+    11/11~13 하이쿠 글 17편이 모양 검증에서 떨어졌는데(8편은 실적 분석 뒤 항목이 모두 빠짐 · 1편은 해석이 목록으로 나옴)
+    원문이 남지 않아 까닭을 알 수 없었다. 옛 형식 생성기의 진단(diagnose)을 쓴다 — 돈이 들지 않는다."""
+    try:
+        import generate_reports_batch as GB
+        d = GB.diagnose(message)
+    except Exception as e:                                   # noqa: BLE001
+        log(f"    (사정을 읽지 못함: {type(e).__name__})")
+        return
+    log(f"    (사정: 중단 {d.get('stop')} · 글 {d.get('len')}자 · 출력 {d.get('out_tokens')} · 표지 {d.get('markers')}"
+        f" · 닫힘 {d.get('closed')} · 블록 {d.get('blocks')} · JSON {d.get('json')} · 항목 {d.get('keys') or d.get('parse')})")
+    if d.get("near"):
+        log(f"    (깨진 자리: …{d['near']}…)")
 
 
 def _housekeep_batches(keep_days=30):
@@ -3214,6 +3251,7 @@ def collect(cl, as_of, state):
                     why = getattr(result.result.message, "stop_reason", None)
                     log(f"  · ⚠️ {tk} 스키마 불완전 — 건너뜀 ({n}번째 실패"
                         f"{', 중단 사유 ' + str(why) if why and why != 'end_turn' else ''})")
+                    _log_shape(result.result.message)
                     continue
                 log(f"  · 🈯 {tk} 영문 {moved + filled}곳을 채워 되살렸다")
             srcs = collect_sources_v2(result.result.message)
@@ -3343,6 +3381,7 @@ def collect(cl, as_of, state):
             fail += 1
             n = S.bump_fail(tk)
             log(f"  · ⚠️ {tk} 파싱 실패: {type(e).__name__}: {e} ({n}번째 실패)")
+            _log_shape(result.result.message)
 
     # 전역 인덱스(reports-index.js)는 병렬 커밋 충돌을 피하려 여기서 쓰지 않는다.
     # → 워치독이 reindex(단일 직렬)로 전체 v2에서 재생성한다. 이 run은 자기 종목 JSON만 커밋.
@@ -3694,7 +3733,7 @@ def main():
         if bid and not r["unavailable"]:
             if poll(cl, bid, budget=SHORT_WAIT):
                 try:
-                    pickup(cl, as_of)
+                    pickup(cl, as_of, only={bid})      # 자기 주문만 — 남의 주문은 collect_batch 가 받는다
                 except ApiUnavailable as e:
                     _die_credit(e)
             else:

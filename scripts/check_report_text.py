@@ -563,6 +563,88 @@ def _amt_keys(met, quarterly):
     return None if quarterly else ["np", "np_owner"]
 
 
+# 영어 금액 표기의 수를 '억원'으로 옮긴 곳(2026-11-13) — 작성 재료는 금액마다 영어 표기를 붙여 준다('2,527억원[KRW 252.7 billion]').
+# 그 수에 '억원'을 붙여 '252.7억원'(실제 2,527억원 · 열 배 작다)으로 쓴 리포트가 11월 하이쿠 글 288편 중 7편 · 10월 소넷 5 글에도
+# 있었다(하림지주 최근 4개 분기 순이익 합계 · 루닛 자본총계 · 부채총계 · PS일렉트로닉스 연도별 순이익 · 영업활동 현금흐름). 금액 대조
+# (amount_hits)는 '2025년 매출 X원' 꼴만 보아 놓쳤다. 같은 문장에 그 지표 이름과 기간이 함께 있을 때만 잡는다 — 계약 · 자사주 ·
+# 증권사 전망 금액이 우연히 같은 수인 곳(쎄노텍 129억원 계약 · JTC 150억원 자사주)은 걸지 않는다.
+_MIX_MET = {
+    "rev": r"매출(?!\s*(?:총이익|원가|채권|비중))",
+    "op": r"영업(?:이익|손실)(?!률)",
+    "np": r"순(?:이익|손실)(?!률)",
+    "equity": r"자본총계|자기자본|총자본",
+    "equity_owner": r"지배(?:주주)?\s*지분",
+    "liab": r"부채(?:총계)?(?!\s*비율)",
+    "cfo": r"현금\s*흐름",
+}
+_MIX_NAME = {"rev": "매출", "op": "영업이익", "np": "순이익", "equity": "자본총계", "equity_owner": "지배주주 지분",
+             "liab": "부채총계", "cfo": "영업활동 현금흐름"}
+_MIX_EN = re.compile(r"KRW ([0-9][0-9,]*(?:\.[0-9]+)?) (billion|million)")
+_MIX_RANGE = re.compile(r"\d{4}년?\s*(?:\d{1,2}월\s*결산\s*)?(?:[1-4]\s*분기\s*)?~\s*\d{4}년\s*(?:\d{1,2}월\s*결산\s*)?(?:[1-4]\s*분기)?")
+
+
+def enmix_hits(rep):
+    """한국어 본문에 영어 금액 표기의 수를 '억원'으로 옮긴 곳 — 위험(금액 규칙과 같은 교정 · 저장 문턱)."""
+    import fin_material as F                                  # noqa: E402
+    q = rep.get("quant") if isinstance(rep, dict) else None
+    if not isinstance(q, dict):
+        return []
+    v = q.get("valuation") or {}
+    if str(v.get("ccy") or "KRW").upper() != "KRW":
+        return []
+    fm = q.get("fy_end_month") if q.get("fy_end_month") in range(1, 12) else None
+    cands, legit = [], set()
+
+    def add(x, per, met, when):
+        if not isinstance(x, (int, float)) or not x:
+            return
+        right = F.won(x)
+        legit.add(right)
+        m = _MIX_EN.fullmatch(F.won_en(x))
+        # 소수점이 있는 수만 — 영어 표기는 10억 이상이면 소수 한두 자리('252.7' · '4.26')라 옮긴 꼴이 드러난다. 소수점 없는
+        # 수('72억원' · '30억원')는 실제로 그 금액인 다른 값과 겹쳐(9월 리포트 14편이 그랬다) 걸지 않는다.
+        if m and "." in m.group(1) and f"{m.group(1)}억원" != right:
+            cands.append((f"{m.group(1)}억원", right, re.compile(per), re.compile(_MIX_MET[met]), when, met))
+
+    annual = [a for a in (q.get("annual") or []) if isinstance(a, dict) and a.get("year")]
+    for i, a in enumerate(sorted(annual, key=lambda a: a["year"])):
+        y = a["year"]
+        per = rf"(?<![0-9]){y}년(?:\s*{fm}월\s*결산)?(?!\s*(?:[1-4]\s*분기|상반기|하반기|반기))" if fm else \
+            rf"(?<![0-9]){y}년(?!\s*(?:[1-4]\s*분기|상반기|하반기|반기))"
+        when = f"{y}년 {fm}월 결산" if fm else f"{y}년"
+        for key, met in (("rev", "rev"), ("op", "op"), ("np_owner", "np"), ("np", "np"), ("cfo", "cfo"),
+                         ("equity", "equity"), ("equity_owner", "equity_owner"), ("liab", "liab")):
+            add(a.get(key), per, met, when)
+    for r in (q.get("quarterly") or []):
+        m = re.fullmatch(r"(\d{4})Q([1-4])", str((r or {}).get("q") or ""))
+        if not m:
+            continue
+        per = rf"(?:(?<![0-9]){m.group(1)}년\s*)?(?<![0-9]){m.group(2)}\s*분기"
+        for key, met in (("rev", "rev"), ("op", "op"), ("np_owner", "np"), ("np", "np")):
+            add(r.get(key), per, met, F.qtext(r["q"]))
+    add(v.get("ttm_np_owner"), r"최근\s*(?:4|네)\s*개\s*분기", "np", "최근 4개 분기 합계")
+    cands = [c for c in cands if c[0] not in legit]
+    if not cands:
+        return []
+    hits, seen = [], set()
+    for path, f in _flat_fields({k: v2 for k, v2 in rep.items() if k not in _NOT_TEXT}).items():
+        sec = path.split(".")[0]
+        for s in re.split(r"(?<=[.!?])\s+", f.get("ko") or ""):
+            # 기간의 범위('2025년 3분기~2026년 2분기' · '2022~2025년')는 그 끝 분기 · 해의 값을 말하는 것이 아니다
+            bare = _MIX_RANGE.sub(" ", s)
+            for wrong, right, per, met, when, mk in cands:
+                if (sec, s, wrong) in seen or not re.search(r"(?<![0-9.,])" + re.escape(wrong), s):
+                    continue
+                if not (per.search(bare) and met.search(s)):
+                    continue
+                seen.add((sec, s, wrong))
+                hits.append({"rule": "amount", "level": "위험", "section": sec, "match": wrong,
+                             "why": f"금액 단위가 틀렸다 — 영어 표기의 수에 '억원'을 붙였다 · {when} {_MIX_NAME[mk]} 공시 값은 {right}"
+                                    " · 이 금액이 다른 것(계약 · 전망 등)이면 문장에 그 이름을 밝힐 것",
+                             "sentence": s[:160]})
+    return hits
+
+
 def amount_hits(rep):
     """본문의 이 회사 실적 금액 ↔ 공시 값(quant). 다르면 '위험'. 공시 값이 없거나 외화 공시 회사면 보지 않는다."""
     import fin_material as F                                  # noqa: E402 — 표준 라이브러리만 쓴다(돌림 의존 없음)
@@ -964,7 +1046,7 @@ def check(rep):
             hits.append({"rule": "hangul_en", "level": "품질", "section": sec,
                          "match": t[i:i + 12], "why": "영문에 한글이 남았다 — 로마자/영문 명칭으로",
                          "sentence": t[max(0, i - 60):i + 60]})
-    return hits + streak_hits(rep) + amount_hits(rep) + defects(rep) + new_rule_hits(rep) + process_hits(rep)
+    return hits + streak_hits(rep) + amount_hits(rep) + enmix_hits(rep) + defects(rep) + new_rule_hits(rep) + process_hits(rep)
 
 
 # ── 교정: 걸린 문장만 다시 쓴다 ──────────────────────────────────────────

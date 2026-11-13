@@ -78,7 +78,5 @@ jobs:
           git config --global user.name "KOS ai Bot"
           git add -A data/ stock/ en/
           git commit -m "🆕 신규 상장 자동 업데이트 $(TZ='Asia/Seoul' date +'%Y-%m-%d %H:%M KST')" || echo "변경 없음"
-          for i in 1 2 3 4 5; do
-            git fetch origin main && git rebase -X theirs origin/main && git push origin main && break
-            echo "push 재시도 $i..."; sleep $((i*3))
-          done
+          # 받아 합치기 · 충돌 · 재시도 · 실패 처리는 공용 단계가 한다(scripts/push_main.sh · 2026-11-13).
+          bash scripts/push_main.sh

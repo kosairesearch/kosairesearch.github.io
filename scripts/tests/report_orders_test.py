@@ -594,8 +594,13 @@ _wfb = yaml.safe_load((HERE.parent.parent / ".github" / "workflows" / "generate_
 _bs = _wfb["jobs"]["batch"]["steps"]
 _modes = ((_wfb.get(True) or _wfb.get("on"))["workflow_dispatch"]["inputs"]["mode"]["options"])
 ok("dump" in _modes and any("collect_data.py" in (x.get("run") or "") and "'dump'" in str(x.get("if")) for x in _bs)
-   and any("git push" in (x.get("run") or "") and "'dump'" in str(x.get("if")) for x in _bs),
+   and any(("git push" in (x.get("run") or "") or "push_main.sh" in (x.get("run") or ""))
+           and "'dump'" in str(x.get("if")) for x in _bs),
    "작업 파일 — dump 는 시세 갱신 · 커밋을 하지 않는다", str(_modes))
+_wfb_t = (HERE.parent.parent / ".github" / "workflows" / "generate_reports_batch.yml").read_text(encoding="utf-8")
+ok("batch_id" in ((_wfb.get(True) or _wfb.get("on"))["workflow_dispatch"]["inputs"])
+   and "DUMP_BATCH_ID: ${{ inputs.batch_id" in _wfb_t,
+   "작업 파일 — dump 가 읽을 배치를 고를 수 있다(리포트 v2 배치의 버린 글도 읽는다 · 2026-11-13)")
 
 print(f"\n통과 {passed} · 실패 {failed}")
 sys.exit(1 if failed else 0)
