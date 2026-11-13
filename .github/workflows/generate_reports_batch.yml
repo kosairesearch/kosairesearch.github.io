@@ -22,6 +22,10 @@ on:
         type: choice
         default: 'no'
         options: ['no', 'yes']
+      batch_id:
+        description: 'dump 만 — 읽을 배치(msgbatch_…) · 비우면 상태 파일의 배치. 리포트 v2 배치도 읽는다'
+        type: string
+        default: ''
 
 # 데이터 쓰기 워크플로 동시 실행 금지(커밋 레이스로 결과 유실 방지)
 concurrency:
@@ -61,6 +65,7 @@ jobs:
           REPORT_TOP_N: ${{ inputs.top_n || '100' }}
           REPORT_TICKERS: ${{ inputs.tickers || '' }}
           REPORT_FORCE: ${{ inputs.force == 'yes' && '1' || '' }}
+          DUMP_BATCH_ID: ${{ inputs.batch_id || '' }}
           BATCH_MAX_WAIT_SEC: '18000'
         run: |
           set -o pipefail
@@ -76,10 +81,5 @@ jobs:
           git config --global user.name "KOS ai Bot"
           git add -A data/
           git commit --allow-empty -m "🤖📦 AI 리포트 배치 ${{ inputs.mode }} $(TZ='Asia/Seoul' date +'%Y-%m-%d %H:%M KST')"
-          ok=0
-          for i in 1 2 3 4 5; do
-            git fetch origin main && git rebase -X theirs origin/main && git push origin main && { ok=1; break; }
-            git rebase --abort 2>/dev/null || true
-            echo "push 재시도 $i..."; sleep $((i*5))
-          done
-          if [ "$ok" != "1" ]; then echo "::error::결과 푸시 실패 — 배치 결과 유실 방지를 위해 잡을 실패 처리"; exit 1; fi
+          # 받아 합치기 · 충돌 · 재시도 · 실패 처리는 공용 단계가 한다(scripts/push_main.sh · 2026-11-13).
+          bash scripts/push_main.sh

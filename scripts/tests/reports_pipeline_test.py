@@ -540,6 +540,31 @@ stA["collected"] = "2026-07-01 00:00"
 S.batch_path("msgbatch_A").write_text(json.dumps(stA), encoding="utf-8")
 M._housekeep_batches()
 ok(not S.batch_path("msgbatch_A").exists() and S.batch_path("msgbatch_B").exists(), "오래된 회수 파일만 정리")
+# auto 는 자기 주문만 받는다(2026-11-13) — 공시 트리거는 정량 수집에만 2시간 넘게 걸려 받아 둔 저장소가 묵는다.
+# 그사이 회수 작업이 받아 간 보정 배치를 또 받아 같은 파일을 고쳤고, 올릴 때 충돌해 그 실행의 리포트 106편이 사라졌다.
+mk("msgbatch_C", ["005930"])
+mk("msgbatch_D", ["000020"])
+cl.messages.batches.store["msgbatch_C"] = batch_obj("msgbatch_C", "ended", [result("005930", usage=USAGE)])
+cl.messages.batches.store["msgbatch_D"] = batch_obj("msgbatch_D", "ended", [result("000020", usage=USAGE)])
+n = M.pickup(cl, "2026-09-05 04:10", only={"msgbatch_C"})
+stC = json.loads(S.batch_path("msgbatch_C").read_text(encoding="utf-8"))
+stD = json.loads(S.batch_path("msgbatch_D").read_text(encoding="utf-8"))
+ok(n == 1 and stC.get("collected") and not stD.get("collected") and "quant" in stD,
+   "only — 자기 주문만 회수하고 남의 주문은 그대로 둔다", f"n={n}")
+_src = Path(M.__file__).read_text(encoding="utf-8")
+ok("pickup(cl, as_of, only={bid})" in _src, "auto 는 주문을 넣은 뒤 자기 주문(only={bid})만 회수한다")
+for _b in ("msgbatch_C", "msgbatch_D"):
+    S.batch_path(_b).unlink()
+# 버리는 글의 사정을 기록에 남긴다(2026-11-13) — 11/11~13 하이쿠 글 17편이 모양 검증에서 떨어졌는데 원문이 남지 않았다.
+_msg = types.SimpleNamespace(content=[types.SimpleNamespace(
+    type="text", citations=None, text='===JSON_START==={"lead": "a", "business": "b"} {"lead": "c"}===JSON_END===')],
+    stop_reason="end_turn", usage=None)
+buf = io.StringIO()
+with __import__("contextlib").redirect_stdout(buf):
+    M._log_shape(_msg)
+_lg = buf.getvalue()
+ok("사정: 중단 end_turn" in _lg and "표지 1" in _lg and "Extra data" in _lg and "깨진 자리" in _lg,
+   "버리는 글의 사정(중단 사유 · JSON 표지 · 깨진 자리)을 기록에 남긴다", _lg[-300:])
 
 # ═══ ⑧ DART 한도 마커 · 정지 스위치 ═════════════════════════════════════
 print("⑧ 한도 마커 · 정지 스위치")
@@ -961,6 +986,13 @@ ok(n == 6 and M.valid_v2(r, quiet=True), "빈 영문 6곳을 채운다", f"n={n}
 ok(r["bull"][0]["title"]["en"] == "EN0" and r["bull"][2]["body"]["en"] == "EN5", "순서대로 제자리에", str([x["title"]["en"] for x in r["bull"]]))
 ok(fm.sent[0]["model"] == "claude-sonnet-5-5", "값싼 모델을 쓴다", str(fm.sent[0]["model"]))
 ok(M.fill_missing_en(cl_fill, GOODREP()) == 0 and len(fm.sent) == 1, "채울 자리가 없으면 모델을 부르지 않는다")
+# 한두 마디만 든 영문도 채운다(2026-11-13) — 실적 분석 영문이 '.'(1자) · 11자인 하이쿠 글 5편이 채우지 않은 채 버려졌다
+r = GOODREP(); r["earnings"]["en"] = "."; r["outlook"]["en"] = "too short"
+n = M.fill_missing_en(cl_fill, r)
+ok(n == 2 and r["earnings"]["en"] == "EN0" and r["outlook"]["en"] == "EN1",
+   "분량 문턱보다 짧은 영문(사업 · 실적 · 산업 · 전망)도 채운다", f"n={n}")
+r = GOODREP(); r["keypoints"][0]["en"] = "Short but fine"
+ok(M.fill_missing_en(cl_fill, r) == 0, "문턱이 없는 칸(핵심 포인트 등)의 짧은 영문은 그대로 둔다")
 
 # (j) 회수 경로 통합 — 영문이 빠진 배치 결과는 보정을 배치로 주문하고(즉시 호출 없음 · 2026-10-08),
 #     답을 받은 다음 회수에서 그 종목만 다시 처리해 저장한다

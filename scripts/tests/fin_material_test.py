@@ -6,7 +6,7 @@
 작성 모델은 원 단위 원자료(JSON)를 받아 '억 · 만'으로 직접 옮기다 자리를 틀렸다(영업이익 7,373만원 → '7.4억원').
 이제 코드가 본문 표기로 바꿔 주고(won · won_en), 증감 · 전환 · 연속을 세어 준다(chg · 연속 줄). 여기서는
   ① 표기가 맞는가 — 조 · 억 · 만, 영어 trillion · billion · million, 절반 올림
-  ② 재료를 그대로 옮긴 문장이 저장 전 금액 검사(check_report_text.amount_hits)를 통과하는가 — 화면에 나오는 리포트의
+  ② 재료를 그대로 옮긴 문장이 저장 전 금액 검사(check_report_text.amount_hits · 금액 단위 enmix_hits)를 통과하는가 — 화면에 나오는 리포트의
      공시 값 전부로 본다. 어긋나면 재료를 그대로 옮긴 리포트가 저장되지 않는다(돈만 나간다).
   ③ 재료의 '연속' 줄을 옮긴 문장이 연속 연수 검사(streak_hits)를 통과하는가 — 같은 이유
   ④ 재료에 본문에 쓰면 안 되는 값(ROE · 주당지표)과 지시문의 말('제공한' · '분기 창' · 'ttm_window')이 없는가
@@ -111,7 +111,14 @@ for tk, name, q in quants:
             sents_en.append(f"Q{k} {y} {en_m} was {F.won_en(v)}.")
     rep = {"name": name, "quant": q, "earnings": {"ko": " ".join(sents_ko), "en": " ".join(sents_en)}}
     n += len(sents_ko) + len(sents_en)
-    bad += [(tk, h["sentence"][:60], h["why"][:50]) for h in C.amount_hits(rep)]
+    # 금액 단위 검사(enmix · 2026-11-13)도 — 재료 표기 그대로의 문장은 걸리면 안 된다
+    ex = [f"{a['year']}년 말 자본총계 {F.won(a['equity'])}이다." for a in (q.get("annual") or []) if a.get("equity")]
+    ex += [f"{a['year']}년 영업활동 현금흐름 {'-' if a['cfo'] < 0 else ''}{F.won(a['cfo'])}이다." for a in (q.get("annual") or []) if a.get("cfo")]
+    if (q.get("valuation") or {}).get("ttm_np_owner"):
+        ex.append(f"최근 4개 분기 지배주주 순이익 합계 {F.won(q['valuation']['ttm_np_owner'])}이다.")
+    rep2 = dict(rep, earnings={"ko": " ".join(sents_ko + ex), "en": "x"})
+    n += len(ex)
+    bad += [(tk, h["sentence"][:60], h["why"][:50]) for h in C.amount_hits(rep) + C.enmix_hits(rep2)]
 for b in bad[:6]:
     print("      ", b)
 eq(f"재료 표기 그대로의 문장 {n:,}개 — 금액 검사 위반 0", len(bad), 0)

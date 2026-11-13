@@ -82,10 +82,5 @@ jobs:
             echo "받아온 것 없음 — 커밋하지 않는다"; exit 0
           fi
           git commit -q -m "📦 리포트 배치 회수 $(TZ='Asia/Seoul' date +'%Y-%m-%d %H:%M KST')"
-          for i in $(seq 1 25); do
-            git fetch origin main -q 2>/dev/null || true
-            if git rebase origin/main 2>/dev/null && git push origin main 2>/dev/null; then exit 0; fi
-            git rebase --abort 2>/dev/null || true
-            sleep $(( (RANDOM % 9) + 2 ))
-          done
-          echo "::error::회수분 푸시 실패"; exit 1
+          # 받아 합치기 · 충돌 · 재시도 · 실패 처리는 공용 단계가 한다(scripts/push_main.sh · 2026-11-13).
+          PUSH_TRIES=25 bash scripts/push_main.sh
