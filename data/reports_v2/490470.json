@@ -1,230 +1,216 @@
 {
  "title": {
-  "ko": "AI ASIC 양산 전환기, 분기 손익 기복",
-  "en": "AI ASIC Production Ramp, Quarterly Earnings Swing"
+  "ko": "수주잔고 2,455억원…매출 전환이 관건",
+  "en": "Backlog at KRW 245.5 billion; revenue conversion is the test"
  },
  "lead": {
-  "ko": "삼성 파운드리 공식 디자인솔루션파트너(DSP)인 세미파이브는 2026년 들어 매출 성장세가 뚜렷해졌지만 분기별 손익은 흑자와 적자를 오가며 아직 안정화 단계에 이르지 못했다.",
-  "en": "SemiFive, an official Samsung Foundry SAFE Design Solution Partner, has shown clear revenue growth in 2026, but its quarterly profitability has swung between profit and loss and has not yet stabilized."
+  "ko": "세미파이브는 2026년 3분기 신규 수주 1,784억원과 수주잔고 2,455억원을 발표했지만, 같은 분기 영업손실이 이어지고 있어 수주가 매출로 바뀌는 속도가 다음 확인 지점이다.",
+  "en": "SemiFive reported KRW 178.4 billion in third-quarter 2026 new orders and a KRW 245.5 billion backlog, yet operating losses continue, so how quickly that backlog turns into revenue is the next thing to track."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출은 1,209.5억원으로 전년 대비 8.2% 늘었으나 영업손실은 533.9억원으로 확대됐다.",
-   "en": "2025 consolidated revenue rose 8.2% year-on-year to KRW 120.95 billion, while the operating loss widened to KRW 53.4 billion."
+   "ko": "2026년 3분기 신규 수주는 1,784억원, 수주잔고는 2,455억원으로 회사는 역대 최대 수준이라고 밝혔다(회사 발표, 2026년 11월 13일).",
+   "en": "New orders in the third quarter of 2026 reached KRW 178.4 billion and the backlog KRW 245.5 billion, which the company described as record levels (company announcement, November 13, 2026)."
   },
   {
-   "ko": "2026년 1분기에는 매출 478.7억원, 영업이익 1.05억원, 순이익 13.4억원으로 상장 후 첫 분기 흑자를 기록했다.",
-   "en": "In Q1 2026, revenue reached KRW 47.87 billion with a small operating profit of KRW 105 million and net profit of KRW 1.34 billion, the first profitable quarter since listing."
+   "ko": "2026년 3분기 매출은 514억원으로 전 분기 대비 9.9% 늘었고, 영업손실은 96.7억원으로 손실 폭이 줄었다(공시 실적).",
+   "en": "Third-quarter 2026 revenue was KRW 51.4 billion, up 9.9% from the prior quarter, and the operating loss narrowed to KRW 9.67 billion (reported results)."
   },
   {
-   "ko": "2026년 2분기는 매출 468.0억원으로 전분기와 비슷했지만 영업손실 110.4억원, 순손실 122.3억원으로 다시 적자로 돌아섰다.",
-   "en": "Q2 2026 revenue was KRW 46.80 billion, similar to the prior quarter, but the company swung back to an operating loss of KRW 11.04 billion and a net loss of KRW 12.23 billion."
+   "ko": "2025년 매출은 1,210억원으로 8.2% 늘었지만 영업손실은 534억원으로 확대됐고, 영업이익률은 -44.1%다(공시 실적).",
+   "en": "2025 revenue rose 8.2% to KRW 121 billion, but the operating loss widened to KRW 53.4 billion and the operating margin was -44.1% (reported results)."
   },
   {
-   "ko": "상반기 신규 수주는 1,189억원으로 지난해 연간 수주의 71%를 이미 달성했다고 회사 측이 밝혔다.",
-   "en": "The company reported new orders of KRW 118.9 billion in the first half, already reaching 71% of last year's full-year order total."
+   "ko": "2026년 9월 북미 AI 팹리스 기업과 703억원(5,200만 달러) 규모 스펙 핸드오프 계약을 맺었고, 글로벌 양산은 2028년부터 계획돼 있다.",
+   "en": "In September 2026 the company signed a KRW 70.3 billion (US$52 million) spec hand-off contract with a North American AI fabless company, with global volume production planned from 2028."
   },
   {
-   "ko": "최대주주 사이파이브(SiFive)가 엔비디아 등으로부터 대규모 투자를 유치하며 RISC-V 생태계 확대 기대감이 부각되고 있다.",
-   "en": "Major shareholder SiFive attracted a large investment round including Nvidia, drawing attention to the expanding RISC-V ecosystem."
+   "ko": "키움증권은 3분기 실적 발표 직전 보고서에서 목표주가를 낮추면서도 투자의견 매수를 유지했다고 밝혔다.",
+   "en": "Kiwoom Securities said in a report published just before the third-quarter results that it lowered its target price while keeping a Buy rating."
   }
  ],
  "business": {
-  "ko": "세미파이브는 2019년 설립된 시스템반도체(SoC) 플랫폼 기반 ASIC 설계 및 양산 전문기업으로, 삼성 파운드리의 공식 디자인솔루션파트너(DSP) 지위를 보유하고 있다. 사업은 크게 ASIC 개발(설계 엔지니어링 서비스), 양산 공급, IP 라이선스 3개 부문으로 구성된다. 개발 서비스는 칩 스펙 정의부터 로직·물리 설계, 샘플 생산, 패키징, 테스트, 소프트웨어 개발까지 아우르는 엔드투엔드 솔루션을 제공하며, 양산 공급은 개발이 끝난 ASIC를 파운드리를 통해 직접 생산·공급해 제품 생애주기 전반에서 반복적인 매출을 창출하는 구조다. IP 사업은 2022년 인수한 미국 자회사 아날로그 비츠(Analog Bits)가 담당하며, 저전력 혼합신호(Low-Power Mixed Signal) IP를 삼성 파운드리·TSMC·인텔 등 주요 파운드리 생태계에 공급하고 있다. 2024년 기준 매출 비중은 용역(개발) 59.2%, 제품(양산) 8.6%, 기타 32.2% 수준으로, 아직 개발 매출이 주력이나 양산 매출 비중이 점차 확대되는 구조로 전환 중이다. 고객군은 퓨리오사AI, 리벨리온, 하이퍼엑셀, 모빌린트, 엑시나 등 국내 AI 반도체 팹리스 기업들과 북미·중국·일본의 글로벌 빅테크·팹리스로 확대되고 있다. 경쟁구도상으로는 국내 디자인하우스인 에이디테크놀로지, 가온칩스 등과 경쟁하며, 해외에서는 대만 GUC(Global Unichip Corp) 등 파운드리 계열 디자인하우스가 비교대상으로 거론된다. 최대주주는 RISC-V 설계자산(IP) 기업인 사이파이브(SiFive)로, 세미파이브의 RISC-V 기반 설계 역량과 연계되는 지분 구조를 갖고 있다.",
-  "en": "Founded in 2019, SemiFive is a system-on-chip (SoC) platform-based ASIC design and production company holding official Design Solution Partner (DSP) status with Samsung Foundry. Its business spans three segments: ASIC development (design engineering services), production supply, and IP licensing. The development service covers an end-to-end solution from chip specification definition through logic and physical design, sample production, packaging, testing, and software development, while production supply directly manufactures and delivers already-developed ASICs through the foundry, generating recurring revenue across the product lifecycle. The IP business is run through its US subsidiary Analog Bits, acquired in 2022, which supplies low-power mixed-signal IP to major foundry ecosystems including Samsung Foundry, TSMC, and Intel. As of 2024, revenue mix was roughly 59.2% from development services, 8.6% from production products, and 32.2% from other sources, indicating development revenue still dominates while production revenue is gradually expanding. Its customer base includes domestic AI chip fabless companies such as FuriosaAI, Rebellions, HyperAccel, Mobilint, and Xcena, and is expanding toward global big tech and fabless firms in North America, China, and Japan. In terms of competitive positioning, it competes with domestic design houses such as ADTechnology and Gaonchips, while overseas comparisons include foundry-affiliated design houses such as Taiwan's Global Unichip Corp (GUC). Its largest shareholder is SiFive, a RISC-V design IP company, linking SemiFive's ownership structure to its RISC-V based design capabilities."
+  "ko": "세미파이브는 맞춤형 반도체(ASIC)를 설계해 공급하는 기업으로, 사업을 ASIC 개발(턴키), 양산, 설계자산(IP) 세 부문으로 나눈다. ASIC 개발 부문은 양산을 전제로 칩 사양 정의부터 IP 선정, 로직·물리 설계, 패키징, 테스트, 소프트웨어 개발까지 맡는 턴키 사업이며, 2026년 상반기 이 부문 매출은 541억원으로 전년 동기 대비 2배 이상 늘었다. 설계자산 부문은 자회사 아날로그 비츠(Analog Bits)의 저전력 혼합 신호 IP가 중심이며, 2026년 상반기 매출은 325억원으로 2025년 연간 매출 305억원을 넘어섰다. 양산 부문의 2026년 상반기 신규 수주는 423억원으로 2025년 연간 수주 212억원의 약 2배이며, 분기별로는 1분기 156억원, 2분기 267억원이었다. 고객 구성은 해외 비중이 커지고 있어, 2026년 2분기 수주 중 해외 고객사 비중은 약 45%(121억원)였다. 회사는 삼성전자 파운드리의 디자인솔루션파트너(DSP)로서 파운드리 생태계 안에서 턴키 모델을 운영한다. 2026년 9월 체결한 703억원(5,200만 달러) 규모 북미 계약은 고객이 사양만 제시하고 세미파이브가 설계부터 양산·소프트웨어까지 맡는 스펙 핸드오프 방식으로, 고객이 설계를 완성해 위탁생산만 맡기는 기존 방식보다 회사의 역할이 크다. 경쟁 구도에서 회사는 구글·아마존 등 빅테크가 브로드컴·마벨 등과 협력해 자체 AI 반도체를 만들어 온 사례를 들어 전문 ASIC 기업의 역할이 넓어지고 있다고 설명한다. 2026년 3분기 제품 매출은 120억원으로 전 분기 45억원 대비 늘어, 고부가 AI 칩 공급이 본격화되고 있다고 회사는 밝혔다.",
+  "en": "SemiFive designs and supplies custom ASIC (application-specific integrated circuit) chips and organizes its business into three segments: turnkey ASIC development, mass production, and IP (design assets). In the first half of 2026, ASIC development revenue reached KRW 54.1 billion, more than double the prior-year level, while the IP segment, run through its subsidiary Analog Bits, booked KRW 32.5 billion, already above the KRW 30.5 billion it recorded for all of 2025. The turnkey model covers chip specification definition, IP selection, logic and physical design, packaging, testing and software development, with mass production assumed from the outset. Mass-production new orders reached KRW 42.3 billion in the first half of 2026, about twice the KRW 21.2 billion booked for all of 2025, with KRW 15.6 billion in the first quarter and KRW 26.7 billion in the second. Overseas customers accounted for about 45% of second-quarter orders, or KRW 12.1 billion. The company is a design solutions partner of the Samsung Electronics foundry business. The KRW 70.3 billion (US$52 million) North American contract signed in September 2026 follows a spec hand-off model, in which the customer supplies performance requirements and SemiFive handles detailed design through packaging, testing, mass production and software, a bigger role than the conventional approach where the customer completes the design and only outsources manufacturing. The company cites cases in which large cloud companies developed their own AI chips with design partners such as Broadcom and Marvell to argue that specialist ASIC firms are taking a larger role. Third-quarter 2026 product revenue rose to KRW 12 billion from KRW 4.5 billion in the prior quarter, as supply of high-value AI chips began in earnest, according to the company."
  },
  "earnings": {
-  "ko": "2025년 연결 매출은 1,209.5억원으로 전년(1,118.1억원) 대비 8.2% 증가했으나, 영업손실은 533.9억원으로 전년 229.3억원 대비 적자 폭이 크게 확대됐고 영업이익률은 -44.1%를 기록했다. 반면 순손실은 562.2억원으로 전년 2,909.0억원 대비 오히려 크게 축소돼, 영업 부문과 비영업 부문의 손익 흐름이 상반된 모습을 보였다. 자기자본은 2,205.2억원으로 전년 1,399.0억원 대비 늘었고 부채비율은 49.5%에서 40.3%로 개선됐다. 분기 흐름을 보면 2026년 1분기 매출 478.7억원, 영업이익 1.05억원, 순이익 13.4억원으로 상장 후 처음으로 분기 흑자를 기록했으나, 2026년 2분기에는 매출이 468.0억원으로 전분기와 비슷한 수준을 유지한 가운데 영업손실 110.4억원, 순손실 122.3억원으로 다시 적자로 돌아섰다. 회사가 밝힌 상반기 누적 실적은 매출 947억원, 신규 수주 1,189억원으로, 이는 각각 지난해 연간 매출(1,209억원)의 78%, 연간 수주(1,684억원)의 71%에 해당하는 수준이다. 회사 측은 상반기 매출총이익률이 30.6%로 개선됐다고 밝혔으며, 개발·양산·IP 3개 사업 부문이 고르게 성장했다고 설명했다. 2분기 실적이 다시 적자로 전환된 것은 매출 규모가 1분기와 유사했음에도 비용 구조 변화가 있었음을 시사하며, 분기별 손익의 변동성이 아직 크다는 점을 보여준다.",
-  "en": "SemiFive's 2025 consolidated revenue was KRW 120.95 billion, up 8.2% from KRW 111.81 billion the prior year, but the operating loss widened sharply to KRW 53.4 billion from KRW 22.9 billion, with an operating margin of -44.1%. In contrast, the net loss narrowed considerably to KRW 56.2 billion from KRW 290.9 billion the prior year, showing a divergence between operating and non-operating performance. Total equity rose to KRW 220.5 billion from KRW 139.9 billion, and the debt ratio improved to 40.3% from 49.5%. On a quarterly basis, Q1 2026 revenue was KRW 47.87 billion with operating profit of KRW 105 million and net profit of KRW 1.34 billion, marking the first profitable quarter since listing, but Q2 2026 revenue held roughly steady at KRW 46.80 billion while the company swung back to an operating loss of KRW 11.04 billion and a net loss of KRW 12.23 billion. The company disclosed cumulative first-half results of KRW 94.7 billion in revenue and KRW 118.9 billion in new orders, equivalent to about 78% of last year's full-year revenue (KRW 120.9 billion) and 71% of last year's full-year orders (KRW 168.4 billion), respectively. Management stated that the first-half gross margin improved to 30.6%, driven by balanced growth across the development, production, and IP segments. The return to an operating loss in Q2 despite similar revenue to Q1 suggests a shift in cost structure and indicates that quarterly earnings volatility remains significant."
+  "ko": "2025년 매출은 1,210억원으로 2024년 1,118억원 대비 8.2% 증가했지만, 영업손실은 2024년 229억원에서 2025년 534억원으로 확대되며 적자가 이어졌다. 영업이익률은 2024년 -20.5%에서 2025년 -44.1%로 낮아져, 매출 성장이 원가와 운영비 부담을 흡수하지 못한 구조였다. 회사가 제시했던 2025년 실적 가이던스(매출 1,397억원, 영업손실 338억원)와 비교하면 실제 매출은 못 미쳤고 영업손실은 더 컸다. 지배주주 순손실은 2024년 2,909억원에서 2025년 562억원으로 줄었는데, 2024년 순손실 폭이 컸던 것은 영업외손익에서 큰 손실이 발생한 영향이 컸다(DB증권 연결손익 자료 기준). 영업활동 현금흐름은 2024년 -194억원에서 2025년 -88.8억원으로 적자 폭이 줄었다. 2026년 1분기에는 매출 479억원, 영업이익 1.1억원으로 영업 단위에서 흑자를 냈고 지배주주 순이익은 13.4억원이었다. 2분기에는 매출 468억원으로 전 분기 대비 2.2% 줄고 영업손실 110억원으로 적자 전환했으며, 지배주주 순손실은 122억원이었다. 3분기에는 매출 514억원으로 9.9% 늘었고 영업손실 96.7억원, 지배주주 순손실 82.2억원으로 손실이 줄었다. 회사 발표 기준 2026년 상반기 영업손실 109억원은 전년 상반기 영업적자 281억원보다 폭이 줄어든 수치다. 실적 발표 전 키움증권은 신규 수주가 분기 말에 몰려 3분기 매출 반영은 제한적일 것으로 봤고, 실제 3분기 매출 514억원은 그 추정치를 웃돌았다. 최근 4개 분기(2025년 1분기~2025년 4분기) 지배주주 순손실 합계는 562억원이다.",
+  "en": "Revenue rose 8.2% in 2025 to KRW 121 billion from KRW 111.8 billion in 2024, but the operating loss widened from KRW 22.9 billion to KRW 53.4 billion, extending the losses. The operating margin fell from -20.5% in 2024 to -44.1% in 2025, meaning revenue growth did not absorb cost and operating expense pressure. Against the 2025 guidance the company had given (revenue of KRW 139.7 billion and an operating loss of KRW 33.8 billion, as cited by DB Securities), actual revenue came in lower and the operating loss was larger. The net loss attributable to controlling shareholders narrowed from KRW 290.9 billion in 2024 to KRW 56.2 billion in 2025, and DB Securities' consolidated income data indicate that the 2024 loss was driven largely by a large non-operating loss. Operating cash flow improved from -KRW 19.4 billion in 2024 to -KRW 8.88 billion in 2025. In the first quarter of 2026 revenue was KRW 47.9 billion with an operating profit of KRW 105 million, and the net profit attributable to controlling shareholders was KRW 1.34 billion. In the second quarter revenue fell 2.2% to KRW 46.8 billion, the company swung to an operating loss of KRW 11 billion, and the net loss attributable to controlling shareholders was KRW 12.2 billion. In the third quarter revenue rose 9.9% to KRW 51.4 billion, the operating loss narrowed to KRW 9.67 billion and the net loss attributable to controlling shareholders was KRW 8.22 billion. The company's first-half 2026 operating loss of KRW 10.9 billion was smaller than the KRW 28.1 billion loss of the prior-year first half, according to the company's disclosures. Before the results, Kiwoom Securities had expected third-quarter revenue to be limited because new orders clustered at quarter-end; actual third-quarter revenue of KRW 51.4 billion came in above that estimate. The net loss attributable to controlling shareholders for the last four reported quarters (first quarter to fourth quarter of 2025) totaled KRW 56.2 billion."
  },
  "industry": {
-  "ko": "글로벌 AI 반도체 수요 확대에 따라 맞춤형 반도체(ASIC) 설계 및 디자인하우스 시장은 구조적 성장 국면에 있다는 평가가 나온다. 신한투자증권은 2026년 5월 12일 리포트에서 세미파이브에 대해 '한국형 실리콘 실드의 조율자'라는 제목으로 신규 분석을 내며 경쟁사 대비 강점과 삼성 파운드리 밸류체인 복귀를 핵심 논거로 제시했다. 삼성 파운드리 생태계는 테슬라, 애플, AMD 등 대형 고객사 확보 흐름과 맞물려 회복 국면에 있다는 시각이 업계에서 제기되고 있으며, 세미파이브는 삼성 파운드리의 공식 DSP로서 이 밸류체인에 직접 연동되는 위치에 있다. 세미파이브는 2·4나노 등 최선단 공정 프로젝트 비중을 확대하고 있으며, 2025년 3분기 누적 기준 해외 매출 비중이 59.8%까지 늘어 글로벌 사업 확장이 진행 중임을 보여준다. 경쟁구도상으로는 국내 디자인하우스인 에이디테크놀로지, 가온칩스 등과 경쟁하는 동시에, 해외 대만계 GUC 등과도 비교되고 있다. RISC-V 개방형 아키텍처 생태계 확대는 최대주주 사이파이브의 사업과 직접 연계되어 있어, 관련 생태계가 커질 경우 세미파이브의 설계 플랫폼 수요로 연결될 가능성이 거론된다. 다만 아직 국내 반도체 설계(디자인하우스) 업종에 대한 증권사 커버리지가 제한적이어서 컨센서스 형성이 초기 단계에 있다는 점도 함께 고려할 필요가 있다.",
-  "en": "As global AI chip demand expands, the custom semiconductor (ASIC) design and design-house market is seen by some analysts as entering a structural growth phase. In a report dated May 12, 2026, Shinhan Investment Corp initiated new coverage on SemiFive titled 'Coordinator of Korea's Silicon Shield,' citing competitive strengths versus peers and a return of value to the Samsung Foundry chain as key arguments. Some in the industry view the Samsung Foundry ecosystem as being in a recovery phase amid securing major customers such as Tesla, Apple, and AMD, and SemiFive, as an official DSP for Samsung Foundry, sits directly within this value chain. SemiFive has been expanding its share of leading-edge process projects such as 2nm and 4nm, and its overseas revenue share reached 59.8% on a nine-month cumulative basis through Q3 2025, reflecting ongoing global business expansion. Competitively, it faces domestic design houses such as ADTechnology and Gaonchips, while also being compared to Taiwan-based GUC overseas. The expansion of the open RISC-V architecture ecosystem is directly tied to major shareholder SiFive's business, and some observers suggest that growth in this ecosystem could translate into demand for SemiFive's design platform. It should also be noted that brokerage coverage of the domestic semiconductor design-house sector remains limited, meaning consensus formation is still at an early stage."
+  "ko": "맞춤형 반도체 수요 확대가 세미파이브 수주의 배경이다. 회사는 전 세계 ASIC 수요가 늘어나는 가운데 북미·일본 등 주요 글로벌 시장 진출이 본격화되며 수주가 급증했다고 설명한다. AI 추론(Inference) 칩 수요가 늘면서 4나노 공정의 기술 성숙도와 양산 경험이 경쟁력으로 제시된다. 선단 공정 쪽에서는 2·3나노 IP 매출이 늘고 있다고 회사가 밝혔다. 키움증권은 파운드리 병목과 원재료 수급 차질로 납품 소요 기간이 늘어 일부 4분기 매출이 2027년 초로 넘어갈 수 있다고 분석했다. 빅테크가 자체 AI 반도체를 만들면서 설계 파트너와 협력하는 흐름은 전문 ASIC 기업에 기회가 된다는 것이 회사의 시각이다. 경쟁 구도에서 회사는 사양 정의부터 양산까지 턴키 범위를 넓히는 방식으로 차별화를 내세운다. 반면 파운드리 생태계 의존도가 높다는 점과 글로벌 비교기업의 기업가치 평가배수가 하락한 점은 키움증권이 목표주가를 조정한 요인으로 함께 언급됐다. 회사는 산업 로봇용 AI 반도체 턴키 계약도 체결했다고 밝히며 데이터센터·엣지 AI 밖으로 적용 분야를 넓히고 있다.",
+  "en": "Demand for custom ASIC chips underpins SemiFive's order growth. The company says that rising global ASIC demand and the full-scale entry into markets such as North America and Japan drove a sharp increase in orders. As demand for AI inference chips grows, the company points to the technical maturity and mass-production track record of its 4-nanometer process as a competitive advantage. On advanced nodes, the company says IP revenue on 2- and 3-nanometer processes is rising. Kiwoom Securities analyzed that foundry bottlenecks and raw-material supply disruptions are lengthening delivery times, so part of fourth-quarter revenue could slip into early 2027. The company's view is that big cloud players developing their own AI chips while working with design partners creates opportunities for specialist ASIC firms. In terms of competition, SemiFive differentiates itself by widening its turnkey scope from specification definition through mass production. On the other side, its heavy reliance on the foundry ecosystem and a decline in valuation multiples at global peers were cited by Kiwoom Securities as reasons for its target price adjustment. The company also said it has signed a turnkey contract for AI chips for industrial robots, extending its application areas beyond data centers and edge AI."
  },
  "outlook": {
-  "ko": "세미파이브는 2025년 12월 코스닥 상장 당시 증권신고서를 통해 2026년 예상 매출 2,690억원 가운데 38.1%인 1,026억원이 양산 매출에서 발생할 것으로 제시했으며, 2026년 흑자 전환을 목표로 제시한 바 있다. 실제로 2026년 1분기 매출 478.7억원은 해당 연간 가이던스의 17.8%에 해당하는 수준으로, 초반 진도는 가이던스에 부합하는 흐름을 보였다. 회사는 2026년 2월 미국 니오비움 마이크로시스템즈와 완전동형암호(FHE) 가속기 반도체 설계·시제품 공급 계약(약 99억원, 계약기간 2026년 1월~2027년 8월)을 공시했고, 3월에는 AI NPU 개발을 위한 약 180억원 규모의 턴키 설계 계약을 체결했다고 밝혔다. 자회사 아날로그 비츠는 4월 TSMC의 2나노 N2P 공정 기반 전력관리 IP 제품군을 공개하며 파운드리 다변화 역량을 보여줬다. 조명현 대표는 상반기 실적 발표 시 확보된 수주잔고와 양산 물량의 순차적 반영, 신규 ASIC 개발 파이프라인 확대를 바탕으로 하반기 성장세가 한층 뚜렷해질 것으로 기대한다고 밝혔다. 다만 이러한 가이던스와 파이프라인의 실제 매출 전환 시점과 규모는 향후 분기 실적을 통해 확인이 필요한 사안이다.",
-  "en": "At its December 2025 KOSDAQ listing, SemiFive's securities registration statement projected 2026 revenue of KRW 269 billion, of which 38.1% (KRW 102.6 billion) was expected to come from production revenue, alongside a target of turning profitable in 2026. In practice, Q1 2026 revenue of KRW 47.87 billion represented about 17.8% of that annual guidance, an early pace broadly in line with the target. In February 2026, the company disclosed a roughly KRW 9.9 billion contract with US-based Niobium Microsystems for the design and prototype supply of a fully homomorphic encryption (FHE) accelerator chip, running from January 2026 to August 2027, and in March it announced a roughly KRW 18 billion turnkey design contract for an AI NPU. In April, subsidiary Analog Bits unveiled a power-management IP lineup based on TSMC's 2nm N2P process, demonstrating multi-foundry capability. When announcing first-half results, CEO Cho Myung-hyun said he expects second-half growth to become more pronounced based on the secured order backlog, the sequential recognition of production volumes, and an expanding pipeline of new ASIC development projects. However, the actual timing and scale of revenue conversion from this guidance and pipeline will need to be confirmed through upcoming quarterly results."
+  "ko": "회사는 2026년 3분기 말 수주잔고 2,455억원이 순차적으로 매출에 반영될 것이라고 밝혔고, 4분기부터 매출 전환이 본격화될 것으로 기대했다. 양산 부문에서는 구매주문(PO)이 꾸준히 들어오고 있어, 회사는 이 양산 포트폴리오가 2027년부터 실적 성장에 기여할 것으로 기대한다. 북미 703억원 계약은 2027년 상반기 테이프아웃을 거쳐 2028년부터 글로벌 하이퍼스케일러와 클라우드 서비스 제공업체를 대상으로 양산에 들어갈 계획이다. 키움증권은 실적 발표 직전 보고서에서 2026년 연간 영업손실 196억원, 2027년 영업이익 264억원을 전망했다. 공시된 1~3분기 영업이익을 합산하면 연간 전망치에 맞추려면 4분기에 10억원 안팎의 영업이익이 필요하다는 계산이 나온다(공시 실적 기준 산술 계산). 키움증권은 같은 보고서에서 4분기 매출 일부가 2027년 초로 넘어갈 가능성도 제시했다. 따라서 4분기 매출이 수주잔고에서 얼마나 인식되는지가 연간 전망의 방향을 가르는 첫 번째 확인 지점이다. 2026년 사업보고서에 담길 연간 영업손익과 2027년 상반기 북미 프로젝트 테이프아웃 여부가 그 다음 확인 지점이다.",
+  "en": "The company said the KRW 245.5 billion backlog at the end of the third quarter of 2026 will be recognized as revenue in sequence, and it expects revenue conversion to accelerate from the fourth quarter. Purchase orders for mass production keep arriving, and the company expects this production portfolio to contribute to earnings growth from 2027. The North American KRW 70.3 billion contract is planned to move through tape-out in the first half of 2027 and into volume production from 2028 for global hyperscalers and cloud service providers. In a report published just before the results, Kiwoom Securities forecast a full-year 2026 operating loss of KRW 19.6 billion and a 2027 operating profit of KRW 26.4 billion. Adding the reported first-to-third-quarter operating results gives a cumulative loss of about KRW 20.6 billion, so reaching Kiwoom's full-year 2026 estimate would require roughly KRW 1 billion of operating profit in the fourth quarter (an arithmetic calculation from reported figures). Kiwoom also flagged that part of fourth-quarter revenue could move into early 2027. How much of the backlog is recognized in the fourth quarter is therefore the first checkpoint for the full-year outlook. The full-year operating result in the 2026 annual report, and whether the North American project reaches tape-out in the first half of 2027, are the next checkpoints."
  },
  "valuation_comment": {
-  "ko": "세미파이브는 아직 연간 기준 순손실 상태에 있어 전통적인 이익 기반 밸류에이션 지표를 적용하기 어려운 성장 초기 단계 기업으로 분류된다. 주가순자산비율은 순자산가치 대비 프리미엄이 있는 구간에서 거래되고 있으며, 이는 상장 이후 성장성에 대한 시장의 기대가 일부 반영된 결과로 해석될 수 있다. 회사는 현재 별도의 현금배당을 실시하지 않고 있어 배당 관련 지표는 투자 판단에서 큰 의미를 갖기 어렵다. 신한투자증권은 2026년 5월 12일 리포트에서 세미파이브에 대해 목표주가 52,000원을 제시하며 '2026년부터 양산 매출이 본격화되는 디자인하우스'라고 평가했으나, 이는 특정 시점의 증권사 자체 추정에 기반한 것으로 이후 실적 전개에 따라 재평가될 수 있는 수치다. 분기별 손익이 흑자와 적자를 오가는 현재 국면에서는 향후 이익 안정화 속도가 밸류에이션 판단의 핵심 변수가 될 것으로 보인다.",
-  "en": "SemiFive remains in a net-loss position on an annual basis, placing it among early-growth companies for which traditional earnings-based valuation metrics are difficult to apply. Its price-to-book ratio trades at a premium to net asset value, which can be interpreted as partly reflecting market expectations for growth since listing. The company currently pays no cash dividend, so dividend-related metrics carry limited relevance for investment judgment. Shinhan Investment Corp, in a report dated May 12, 2026, assigned a target price of KRW 52,000 to SemiFive, describing it as 'a design house whose production revenue will become substantial from 2026,' though this figure is based on the brokerage's own estimates at a specific point in time and is subject to revision as subsequent results unfold. With quarterly earnings currently oscillating between profit and loss, the pace of future earnings stabilization is likely to be a key variable in valuation assessment going forward."
+  "ko": "이익을 기준으로 한 주가수익비율(PER)은 최근 네 개 분기 기준 순손실 구조라서 산출되지 않는다. 주가순자산비율(PBR)은 순자산 대비 프리미엄이 붙은 구간이다. 2025년 말 자본총계 2,205억원은 전액이 지배주주 지분이고, 부채총계는 888억원이다. 부채비율은 2024년 49.5%에서 2025년 40.3%로 낮아졌다. 순자산 대비 주가 수준은 수주잔고가 실제 매출과 이익으로 얼마나 이어지는지에 따라 해석이 달라지는 구간이다. 배당을 지급하지 않는 상태여서 주주 수익은 주가 변동에 기대는 구조다. 증권사 목표주가는 글로벌 비교기업의 기업가치 평가배수 하락을 반영해 조정된 사례가 있다(키움증권, 3분기 실적 발표 직전 보고서).",
+  "en": "The price-to-earnings ratio cannot be calculated because the company has posted net losses over the last four reported quarters. The price-to-book ratio sits in a range where the market price carries a premium over book value. Total equity of KRW 220.5 billion at the end of 2025 was entirely attributable to controlling shareholders, against total liabilities of KRW 88.8 billion. The debt-to-equity ratio fell from 49.5% in 2024 to 40.3% in 2025. How the price relates to net assets depends on whether the backlog turns into revenue and profit. With no dividend being paid, shareholder returns depend on share price movement. Kiwoom Securities lowered its target price in a report published just before the third-quarter results, citing lower valuation multiples at global peers."
  },
  "bull": [
   {
    "title": {
-    "ko": "AI ASIC 수요와 삼성 파운드리 밸류체인 회귀",
-    "en": "AI ASIC Demand and Return to the Samsung Foundry Value Chain"
+    "ko": "수주잔고, 매출 2배 규모",
+    "en": "Backlog about twice 2025 revenue"
    },
    "body": {
-    "ko": "신한투자증권은 세미파이브를 삼성 파운드리 밸류체인 복귀의 수혜주로 분석하며 경쟁사 대비 강점을 제시했다. 삼성 파운드리가 대형 고객사를 확보하는 흐름이 이어질 경우, 공식 DSP인 세미파이브의 설계·양산 물량에도 긍정적 영향을 미칠 수 있다. 다만 이는 특정 증권사의 분석 시각이며 향후 실제 가동률 회복 속도에 따라 결과가 달라질 수 있다.",
-    "en": "Shinhan Investment analyzed SemiFive as a beneficiary of the Samsung Foundry value chain's recovery, citing competitive strengths versus peers. If Samsung Foundry continues securing major customers, this could positively affect design and production volumes for SemiFive as an official DSP. However, this reflects one brokerage's analytical view, and outcomes will depend on the actual pace of utilization recovery."
+    "ko": "회사는 2026년 3분기 신규 수주 1,784억원과 수주잔고 2,455억원을 역대 최대 수준이라고 발표했다. 3분기 ASIC 개발 부문 수주는 1,369억원으로 전년 동기 대비 705% 늘었다. 수주잔고는 2025년 매출 1,210억원의 두 배를 넘는 규모라, 이것이 강세 논리의 중심이다.",
+    "en": "The company announced that third-quarter 2026 new orders of KRW 178.4 billion and a backlog of KRW 245.5 billion were record levels. ASIC development orders alone reached KRW 136.9 billion in the quarter, up 705% from a year earlier. The backlog is more than twice the KRW 121 billion of 2025 revenue, which is the core of the bullish case."
    }
   },
   {
    "title": {
-    "ko": "3개 사업 부문의 균형 성장",
-    "en": "Balanced Growth Across Three Business Segments"
+    "ko": "북미 703억원 대형 계약",
+    "en": "KRW 70.3 billion North American contract"
    },
    "body": {
-    "ko": "회사에 따르면 2026년 상반기 ASIC 개발, 양산, IP 3개 사업 부문이 고르게 성장하며 실적을 견인했다. 개발 사업 매출은 전년 동기 대비 2배 이상 늘었고, IP 사업 매출은 이미 지난해 연간치를 넘어섰다. 여러 매출원이 동시에 성장하는 구조는 특정 부문 부진에 대한 완충 요인이 될 수 있다.",
-    "en": "According to the company, the ASIC development, production, and IP segments grew evenly in the first half of 2026, driving results. Development revenue more than doubled year-on-year, and IP revenue already exceeded last year's full-year figure. Multiple simultaneously growing revenue streams can act as a buffer against weakness in any single segment."
+    "ko": "세미파이브는 북미 AI 팹리스 기업과 703억원(5,200만 달러) 규모 계약을 체결했다고 밝히며, 단일 계약 기준 역대 최대라고 강조했다. 계약 규모는 지난해 연간 수주의 40%를 웃돈다. 스펙 핸드오프 방식으로 상세 설계부터 패키징·테스트·양산·소프트웨어까지 맡아 수행 범위가 넓어, 후속 수주로 이어질 기반이 될 수 있다는 것이 강세 근거다. 2027년 상반기 테이프아웃과 2028년 양산 일정이 실제로 진행되는지가 확인 포인트다.",
+    "en": "SemiFive announced a KRW 70.3 billion (US$52 million) contract with a North American AI fabless company and stressed that it is the largest single contract in its history. The amount exceeds 40% of the company's full-year 2025 orders. Under the spec hand-off model it covers the work from detailed design through packaging, testing, mass production and software, which could lay a foundation for follow-on orders. Whether the tape-out in the first half of 2027 and volume production in 2028 proceed on schedule is the point to verify."
    }
   },
   {
    "title": {
-    "ko": "해외 매출 확대 및 글로벌 고객 다변화",
-    "en": "Expanding Overseas Revenue and Global Customer Diversification"
+    "ko": "마진 구조 개선 흐름",
+    "en": "Signs of improving unit economics"
    },
    "body": {
-    "ko": "해외 매출 비중은 2024년 4.4%에서 2025년 3분기 누적 기준 59.8%까지 확대됐고, 2026년 1분기에는 개발 매출의 60% 이상을 해외 고객이 차지했다. 미국 니오비움과의 FHE 가속기 계약 등 신규 해외 계약도 이어지고 있다. 특정 지역·고객 의존도가 낮아지는 방향은 매출 안정성 측면에서 긍정적으로 평가될 수 있다.",
-    "en": "Overseas revenue share expanded from 4.4% in 2024 to 59.8% on a nine-month cumulative basis through Q3 2025, and overseas customers accounted for more than 60% of development revenue in Q1 2026. New overseas contracts continue, including the FHE accelerator agreement with US-based Niobium. A declining reliance on any single region or customer can be viewed positively for revenue stability."
+    "ko": "회사 발표에 따르면 2026년 상반기 매출총이익률은 30.6%로 전년 동기 11.9%보다 18.7%포인트 높아졌다. 3분기 누적 영업이익률은 -14%로 전년 대비 25%포인트 개선됐다. 자회사 아날로그 비츠의 IP 매출도 상반기 325억원으로 반복 매출 기반을 넓히고 있다. 다만 2분기 이후 영업손실이 이어지고 있어, 개선이 흑자로 이어졌는지는 다음 실적에서 확인해야 한다.",
+    "en": "According to the company, the gross margin for the first half of 2026 was 30.6%, up 18.7 percentage points from 11.9% a year earlier. The cumulative third-quarter 2026 operating margin of -14% improved by 25 percentage points year on year. IP revenue at subsidiary Analog Bits reached KRW 32.5 billion in the first half, broadening its recurring revenue base. Operating losses have continued since the second quarter, so whether the improvement reaches operating profit must be confirmed in upcoming results."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "분기별 손익 변동성",
-    "en": "Quarterly Earnings Volatility"
+    "ko": "영업손실 지속",
+    "en": "Operating losses continue"
    },
    "body": {
-    "ko": "2026년 1분기 흑자를 기록한 직후 2분기에 다시 영업손실과 순손실로 돌아선 점은 아직 이익 구조가 안정화되지 않았음을 보여준다. 매출 규모가 비슷했음에도 손익이 크게 달라진 만큼, 비용 구조나 프로젝트별 수익성 편차가 실적에 미치는 영향이 큰 것으로 추정된다. 향후 분기에도 유사한 변동성이 반복될 가능성을 배제할 수 없다.",
-    "en": "The swing back to an operating and net loss in Q2 2026, immediately after a profitable Q1, shows that the earnings structure has not yet stabilized. Since revenue levels were similar between the two quarters, cost structure or project-level profitability variance appears to have had a significant impact on results. The possibility of similar volatility recurring in future quarters cannot be ruled out."
+    "ko": "2025년 영업손실은 534억원이고 영업이익률은 -44.1%로 2024년 -20.5%보다 낮아졌다. 2026년 2분기부터 3분기까지 2개 분기 연속 영업손실이 이어지고 있다. 3분기 영업손실은 96.7억원으로 줄었지만, 적자 구조가 해소됐다고 보기는 이르다는 것이 약세 측면이다.",
+    "en": "The 2025 operating loss was KRW 53.4 billion, and the operating margin of -44.1% was lower than the -20.5% of 2024. Operating losses have continued for two consecutive quarters, from the second quarter to the third quarter of 2026. The third-quarter operating loss narrowed to KRW 9.67 billion, but it is too early to say the loss-making structure has been resolved, which is the bearish point."
    }
   },
   {
    "title": {
-    "ko": "양산 매출 가이던스의 실현 여부",
-    "en": "Execution Risk on Production Revenue Guidance"
+    "ko": "분기말 수주와 매출 인식 지연",
+    "en": "Quarter-end orders and delayed revenue recognition"
    },
    "body": {
-    "ko": "상장 당시 증권신고서는 2026년 매출의 상당 부분을 양산 매출로 제시했으나, 이는 향후 수주가 실제 매출로 전환된다는 전제에 기반한다. 1분기 실적이 가이던스 진도에 부합했다는 점은 긍정적이나, 남은 분기에도 이 속도가 유지될지는 추가 확인이 필요하다. 고객사의 제품 채택 시점이 지연될 경우 매출 인식도 함께 늦춰질 수 있다.",
-    "en": "The listing-time securities registration statement projected a substantial portion of 2026 revenue from production sales, which assumes that order backlog will convert into actual revenue as planned. While Q1 results matched the guidance pace, whether this rate can be sustained through remaining quarters requires further confirmation. If customer adoption timelines slip, revenue recognition could be delayed accordingly."
+    "ko": "신규 수주가 분기 말에 몰리면서 3분기 매출에 반영된 규모는 제한적일 것이라는 분석이 실적 발표 전 나왔다. 키움증권은 파운드리 병목과 원재료 수급 차질로 납품 기간이 늘어 일부 4분기 매출이 2027년 초로 넘어갈 수 있다고 봤다. 수주잔고가 매출로 바뀌는 속도가 늦으면 적자 축소 속도도 그만큼 늦어질 수 있다.",
+    "en": "Before the results, analysts noted that new orders clustering at quarter-end would limit how much revenue was recognized in the third quarter. Kiwoom Securities said foundry bottlenecks and raw-material supply disruptions are lengthening delivery times, so part of fourth-quarter revenue could slip into early 2027. If the backlog converts to revenue slowly, the pace at which losses narrow could slow as well."
    }
   },
   {
    "title": {
-    "ko": "상장 후 보호예수 해제 부담",
-    "en": "Post-Listing Lock-up Release Overhang"
+    "ko": "고객·파운드리 집중",
+    "en": "Concentration in customers and foundry"
    },
    "body": {
-    "ko": "세미파이브는 2025년 12월 코스닥에 상장했으며, 최대주주 등 주요 주주의 보유 물량에는 단계적인 보호예수 기간이 설정돼 있다. 시간이 지나 보호예수가 순차적으로 해제될 경우 유통 가능 물량이 늘어날 수 있어, 이는 수급 측면에서 부담 요인으로 작용할 수 있다. 구체적인 해제 규모와 시점은 상장 당시 공시된 유통제한 내역을 통해 확인할 수 있다.",
-    "en": "SemiFive listed on KOSDAQ in December 2025, and major shareholders including the largest shareholder are subject to staggered lock-up periods. As these lock-ups are released over time, the amount of freely tradable shares could increase, which may act as a supply-side overhang. The specific release schedule and volumes are disclosed in the lock-up details published at the time of listing."
+    "ko": "703억원 계약의 상대방은 비공개이며, 3분기 신규 수주 1,784억원 중 ASIC 개발 부문이 1,369억원으로 대부분을 차지했다. 회사는 삼성전자 파운드리의 디자인솔루션파트너로서 파운드리 생태계에 기대는 구조다. 고객과 파운드리 두 축에 의존하는 만큼 특정 프로젝트의 지연이 분기 실적에 크게 반영될 수 있다.",
+    "en": "The counterparty to the KRW 70.3 billion contract has not been disclosed, and ASIC development accounted for most of the KRW 178.4 billion of third-quarter orders, at KRW 136.9 billion. The company is a design solutions partner of Samsung Electronics' foundry business and therefore depends on that ecosystem. Because it relies on both a small set of customers and one foundry ecosystem, a delay in a single project could weigh noticeably on quarterly results."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "고객사 채택 지연 리스크",
-    "en": "Customer Adoption Delay Risk"
+    "ko": "공급망·공정 리스크",
+    "en": "Supply chain and process risk"
    },
    "body": {
-    "ko": "세미파이브의 양산 매출은 협력하는 AI 반도체 팹리스 고객사가 실제로 제품 양산 및 채택에 나서야 실현된다. 고객사의 제품 개발이나 시장 진입이 지연될 경우 세미파이브의 매출 인식 시점도 함께 늦춰질 수 있다. 다수의 프로젝트가 진행 중이라는 점은 리스크 분산 요인이지만, 개별 프로젝트의 지연 가능성은 상존한다.",
-    "en": "SemiFive's production revenue depends on partnering AI chip fabless customers actually proceeding with product mass production and adoption. If a customer's product development or market entry is delayed, revenue recognition for SemiFive could be pushed back accordingly. Having multiple projects underway helps diversify this risk, but delays at the individual project level remain possible."
+    "ko": "키움증권은 파운드리 병목과 원재료 수급 차질로 납품 소요 기간이 늘고 있다고 분석했다. 이 경우 일부 4분기 매출이 2027년 초로 넘어갈 수 있다. 2분기에는 사양 변경으로 원가가 오른 프로젝트의 추가 매출 반영이 늦어진 사례도 언급됐다. 수주가 늘어도 매출 인식 시점이 밀리면 분기 실적의 변동성이 커질 수 있다.",
+    "en": "Kiwoom Securities analyzed that foundry bottlenecks and raw-material supply disruptions are extending delivery times. In that case part of fourth-quarter revenue could move into early 2027. A project whose costs rose after a specification change in the second quarter was also cited as delaying additional revenue recognition. Even with rising orders, quarterly results could swing more if revenue recognition timing slips."
    }
   },
   {
    "cat": {
-    "ko": "삼성 파운드리 생태계 의존",
-    "en": "Dependence on the Samsung Foundry Ecosystem"
+    "ko": "고객 집중·계약 구조",
+    "en": "Customer concentration and contract structure"
    },
    "body": {
-    "ko": "세미파이브는 삼성 파운드리의 공식 DSP로서 사업 기반의 상당 부분이 삼성 파운드리 생태계와 연동돼 있다. 삼성 파운드리의 가동률이나 첨단 공정 수율 개선이 기대에 미치지 못할 경우 세미파이브의 프로젝트 진행 속도에도 영향을 줄 수 있다. 특정 파운드리에 대한 사업 집중도가 높은 구조적 특성은 지속적으로 모니터링이 필요한 요인이다.",
-    "en": "As an official DSP for Samsung Foundry, a substantial part of SemiFive's business is tied to the Samsung Foundry ecosystem. If Samsung Foundry's utilization rates or advanced-process yield improvements fall short of expectations, this could affect the pace of SemiFive's project progress. This structural concentration on a single foundry is a factor that warrants ongoing monitoring."
+    "ko": "703억원 계약은 2026년 3분기 신규 수주의 상당 부분을 차지하는 단일 대형 과제이며, 계약 상대방은 비공개다. 스펙 핸드오프 방식은 설계 범위가 넓어 개발 단계의 원가와 일정 관리 부담이 커질 수 있다. 특정 고객의 사양 변경이나 일정 조정이 생기면 수익성에 바로 영향을 줄 수 있다.",
+    "en": "The KRW 70.3 billion contract is a single large project that accounts for a substantial share of third-quarter 2026 orders, and its counterparty is undisclosed. The spec hand-off model widens the scope of design work, which can add cost and schedule management burden during development. A specification change or schedule adjustment by one customer could affect profitability directly."
    }
   },
   {
    "cat": {
-    "ko": "환율 및 지정학적 리스크",
-    "en": "Foreign Exchange and Geopolitical Risk"
+    "ko": "재무·현금흐름",
+    "en": "Financial and cash flow"
    },
    "body": {
-    "ko": "해외 매출 비중이 확대되는 가운데 환율 변동은 매출과 수익성에 영향을 줄 수 있다. 또한 미국, 중국 등 여러 국가에 영업 거점을 두고 있어 반도체 관련 수출 통제나 규제 변화 등 지정학적 요인에 노출될 가능성도 있다. 글로벌 사업 확장이 진행형인 만큼 관련 리스크에 대한 지속적인 점검이 필요하다.",
-    "en": "As the share of overseas revenue grows, currency fluctuations can affect both revenue and profitability. In addition, with operating bases in multiple countries including the US and China, the company may be exposed to geopolitical factors such as semiconductor-related export controls or regulatory changes. As global business expansion is an ongoing process, continued monitoring of these risks is warranted."
+    "ko": "2025년 영업손실은 534억원으로 매출 1,210억원의 44.1%에 이르렀고, 영업활동 현금흐름은 -88.8억원이었다. 2026년 2분기부터 3분기까지 영업손실이 이어져 손실 구조가 아직 정리되지 않았다. 부채비율은 2025년 40.3%로 낮아졌지만, 수주 매출의 현금 전환 속도가 재무 안정성을 좌우하는 변수다.",
+    "en": "The 2025 operating loss of KRW 53.4 billion equaled a 44.1% margin on KRW 121 billion of revenue, and operating cash flow was -KRW 8.88 billion. Operating losses have continued from the second quarter to the third quarter of 2026, so the loss structure is not yet resolved. The debt-to-equity ratio fell to 40.3% in 2025, but how quickly order revenue turns into cash will determine financial stability."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월경",
-    "en": "Around November 2026"
+    "ko": "2026년 12월 말",
+    "en": "End of December 2026"
    },
    "what": {
-    "ko": "2026년 3분기 실적 공시를 통해 2분기의 손익 변동성이 완화되는지, 양산 매출 가이던스 진도가 유지되는지 확인이 필요하다.",
-    "en": "Check the Q3 2026 earnings disclosure to see whether the Q2 earnings volatility eases and whether progress toward production revenue guidance is maintained."
+    "ko": "분기 말에 몰린 수주가 4분기 매출에 얼마나 반영되는지 확인한다. 키움증권은 일부 4분기 매출이 2027년 초로 넘어갈 수 있다고 분석했다.",
+    "en": "Check how much of the orders clustered at quarter-end is recognized as fourth-quarter revenue. Kiwoom Securities analyzed that part of fourth-quarter revenue could move into early 2027."
    }
   },
   {
    "when": {
-    "ko": "2026년 12월 말경",
-    "en": "Around late December 2026"
+    "ko": "2027년 3월 말 이전",
+    "en": "By end of March 2027"
    },
    "what": {
-    "ko": "상장 1주년 시점을 전후한 주요 주주 보호예수 해제 일정과 이에 따른 유통 물량 변화를 확인할 필요가 있다.",
-    "en": "Monitor the lock-up release schedule for major shareholders around the one-year listing anniversary and any resulting changes in freely tradable share volume."
+    "ko": "2026년 사업보고서의 연간 매출과 영업손익을 확인한다. 키움증권의 2026년 연간 영업손실 전망(196억원)과 실제 결과의 차이가 중요한 지점이다.",
+    "en": "Check full-year 2026 revenue and operating results in the annual report. The gap between Kiwoom Securities' 2026 full-year operating loss estimate of KRW 19.6 billion and the actual result is the key point."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기 중",
-    "en": "In Q4 2026"
+    "ko": "2027년 상반기",
+    "en": "First half of 2027"
    },
    "what": {
-    "ko": "2월 니오비움과의 FHE 가속기 계약, 3월 AI NPU 턴키 계약 등 기존 계약들의 실제 매출 반영 시점과 진행 상황에 대한 후속 공시를 확인해야 한다.",
-    "en": "Watch for follow-up disclosures on the actual revenue recognition timing and progress of existing contracts, including the February FHE accelerator agreement with Niobium and the March AI NPU turnkey contract."
+    "ko": "북미 703억원 프로젝트의 테이프아웃이 예정대로 진행되는지 확인한다. 회사는 2027년 상반기 테이프아웃을 계획하고 있다.",
+    "en": "Confirm whether the tape-out of the KRW 70.3 billion North American project proceeds as planned in the first half of 2027."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기 중",
-    "en": "In Q4 2026"
+    "ko": "2028년",
+    "en": "2028"
    },
    "what": {
-    "ko": "자회사 아날로그 비츠의 TSMC 2나노 N2P 공정 IP에 대한 실제 라이선스 계약 체결 여부와 IP 매출 반영 시점을 점검할 필요가 있다.",
-    "en": "Track whether subsidiary Analog Bits secures actual licensing agreements for its TSMC 2nm N2P process IP and when related IP revenue would be recognized."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 4분기 중",
-    "en": "In Q4 2026"
-   },
-   "what": {
-    "ko": "회사가 언급한 '하반기 성장세 가속' 발언이 실제 3~4분기 매출·수주 데이터로 뒷받침되는지 후속 공시를 통해 확인이 필요하다.",
-    "en": "Confirm through subsequent disclosures whether the company's stated expectation of accelerating second-half growth is actually supported by Q3 and Q4 revenue and order data."
+    "ko": "글로벌 하이퍼스케일러와 클라우드 서비스 제공업체를 대상으로 한 양산이 본격화되는지 확인한다. 양산 매출이 늘어나야 수주잔고가 실적으로 이어진다는 의미를 가진다.",
+    "en": "Confirm whether volume production for global hyperscalers and cloud service providers begins in earnest. Only when mass-production revenue rises does the backlog show up in earnings."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "세미파이브는 삼성 파운드리 공식 DSP로서 AI ASIC 개발·양산·IP 3개 사업이 균형 성장을 보이며 2026년 상반기 매출과 수주 모두 전년 연간치의 상당 부분을 이미 달성했다. 다만 2026년 1분기 첫 분기 흑자를 기록한 이후 2분기 다시 적자로 돌아선 데서 보듯, 분기별 손익은 여전히 큰 변동성을 보이고 있어 이익 구조의 안정화 여부는 아직 확인 중인 사안이다. 최대주주 사이파이브의 RISC-V 생태계 확대 기대감과 삼성 파운드리 밸류체인 회복 기대감이 긍정적 요인으로 거론되는 반면, 양산 매출 가이던스의 실제 실현 속도, 보호예수 해제에 따른 수급 부담, 특정 파운드리·고객 집중도는 함께 살펴야 할 변수다. 상장 초기 성장기업 특유의 밸류에이션 프리미엄이 반영돼 있는 만큼, 향후 분기별 실적 발표와 신규 수주 공시를 통해 실제 성장 경로를 확인하는 과정이 중요할 것으로 보인다. 투자 판단에는 이 보고서에 제시된 사실관계와 함께 최신 공시 및 시장 데이터를 종합적으로 참고할 필요가 있다.",
-   "en": "As an official Samsung Foundry DSP, SemiFive has shown balanced growth across its ASIC development, production, and IP businesses, already achieving a substantial portion of last year's full-year revenue and order totals in the first half of 2026. However, as seen in the swing from a first profitable quarter in Q1 2026 back to a loss in Q2, quarterly earnings remain highly volatile, and whether the earnings structure will stabilize is still an open question. While expectations around major shareholder SiFive's expanding RISC-V ecosystem and a recovering Samsung Foundry value chain are cited as positive factors, the actual pace of realizing production revenue guidance, supply pressure from lock-up releases, and concentration on a single foundry and customer base are variables that warrant continued attention. Given that a valuation premium typical of early-stage growth companies appears to be reflected in the shares, tracking the company's actual growth path through upcoming quarterly results and new order disclosures will be important. Investment decisions should consider the facts presented in this report alongside the latest disclosures and market data."
+   "ko": "세미파이브는 ASIC 턴키 사업 확대를 바탕으로 2026년 3분기 신규 수주 1,784억원과 수주잔고 2,455억원을 기록했다고 회사가 발표했다. 같은 분기 공시 실적은 매출 514억원, 영업손실 96.7억원으로, 매출은 늘었지만 3분기 기준 영업 흑자 전환은 나타나지 않았다. 2025년 영업이익률은 -44.1%로 2024년 -20.5%보다 낮았고, 2026년 2분기부터 2개 분기 연속 영업손실이 이어지고 있다. 강세 측면에서는 수주잔고가 2025년 매출의 두 배를 넘고 북미 703억원 계약이 더해졌으며, 상반기 매출총이익률이 30.6%로 개선된 점이 있다. 약세 측면에서는 분기 말 수주 집중과 파운드리 병목으로 일부 매출 인식이 2027년 초로 밀릴 수 있다는 키움증권의 분석과 대형 단일 계약에 대한 의존도가 있다. 키움증권은 목표주가를 낮추면서도 투자의견 매수를 유지했다고 밝혔다. 다음 확인 지점은 2026년 4분기 매출 인식 규모, 2026년 사업보고서의 연간 영업손익, 그리고 2027년 상반기 북미 프로젝트의 테이프아웃 일정이다.",
+   "en": "Based on its ASIC turnkey expansion, SemiFive announced third-quarter 2026 new orders of KRW 178.4 billion and a backlog of KRW 245.5 billion. Over the same quarter, reported results showed revenue of KRW 51.4 billion and an operating loss of KRW 9.67 billion, so revenue grew but no operating profit has appeared for the third quarter. The 2025 operating margin of -44.1% was lower than the -20.5% of 2024, and operating losses have continued for two consecutive quarters from the second quarter of 2026. On the bullish side, the backlog is more than twice 2025 revenue, the North American KRW 70.3 billion contract has been added, and the first-half gross margin improved to 30.6%. On the bearish side, Kiwoom Securities has analyzed that quarter-end order concentration and foundry bottlenecks could push part of revenue recognition into early 2027, and the company depends heavily on a single large contract. Kiwoom Securities lowered its target price while maintaining a Buy rating, according to its report. The next checkpoints are the scale of fourth-quarter 2026 revenue recognition, the full-year operating result in the 2026 annual report, and the tape-out schedule of the North American project in the first half of 2027."
   }
  },
  "sources": [
-  "https://m.thinkpool.com/compDiscuss/cont/1025288",
-  "https://alphasquare.co.kr/home/stock-summary?code=490470",
-  "https://m.thinkpool.com/compDiscuss/cont/1025488",
-  "https://alphadistill.com/report/567",
-  "https://www.newspim.com/news/view/20260814001143",
+  "https://www.newstown.co.kr/news/articleView.html?idxno=721838",
+  "https://www.newsprime.co.kr/news/article/?no=754876",
   "https://kr.investing.com/equities/semifive-inc-earnings",
-  "https://simplywall.st/ko/stocks/kr/semiconductors/kosdaq-a490470/semifive-shares/news/7a3ae6d4619f7130",
-  "https://www.eugenefn.com/common/files/amail//20251210_B_jongsun.park_2523.pdf",
+  "https://www.vegannews.co.kr/news/article.html?no=402738",
+  "https://www.newsprime.co.kr/news/article/?no=754084",
+  "https://semifive.com/company/newsroom/press-releases/%EC%84%B8%EB%AF%B8%ED%8C%8C%EC%9D%B4%EB%B8%8C-%EC%83%81%EB%B0%98%EA%B8%B0-%EB%A7%A4%EC%B6%9C-%EC%A0%84%EB%85%84-%EB%8F%99%EA%B8%B0-%EB%8C%80%EB%B9%84-97-%EC%A6%9D%EA%B0%80asic%C2%B7%EC%96%91/",
+  "https://m.news.nate.com/view/20260814n23353",
+  "https://www.newspim.com/news/view/20260814001143",
+  "https://www.finuts.co.kr/datas/report/da20aa67b95c93d365cc9c5422cb982d2635e479.pdf",
   "https://semifive.com/ko/company/newsroom/press-releases/%EC%84%B8%EB%AF%B8%ED%8C%8C%EC%9D%B4%EB%B8%8C-2026%EB%85%84-1%EB%B6%84%EA%B8%B0-%EB%A7%A4%EC%B6%9C-%EC%A0%84%EB%85%84-%E6%AF%94-137-%EC%84%B1%EC%9E%A5-%EA%B8%80%EB%A1%9C%EB%B2%8C-ai/",
-  "https://semifive.com/ko/company/newsroom/updates/%EC%B0%BD%EC%97%85-6%EB%85%84-%EB%A7%8C%EC%97%90-%EC%83%81%EC%9E%A5-%EB%8F%84%EC%A0%84%ED%95%98%EB%8A%94-%EC%84%B8%EB%AF%B8%ED%8C%8C%EC%9D%B4%EB%B8%8C-2029%EB%85%84-%EC%97%B0-%EB%A7%A4/",
-  "https://thevc.kr/semifive",
-  "https://www.innoforest.co.kr/company/CP00001932/%EC%84%B8%EB%AF%B8%ED%8C%8C%EC%9D%B4%EB%B8%8C",
-  "https://semifive.com/ko/company/newsroom/press-releases/%EC%84%B8%EB%AF%B8%ED%8C%8C%EC%9D%B4%EB%B8%8C-%EC%B0%BD%EB%A6%BD-5%EB%85%84-%EB%A7%8C%EC%97%90-1000%EC%96%B5-%EC%9B%90-%EC%9D%B4%EC%83%81-%EB%A7%A4%EC%B6%9C-%EB%8B%AC%EC%84%B1-%EC%BE%8C%EA%B1%B0/",
-  "https://semifive.com/",
-  "https://semifive.com/ko/company/newsroom/press-releases/%EC%84%B8%EB%AF%B8%ED%8C%8C%EC%9D%B4%EB%B8%8C-ipo%ED%86%B5%ED%95%B4-%EA%B8%80%EB%A1%9C%EB%B2%8C-ai-asic-%EA%B0%95%EC%9E%90%EB%A1%9C-%EC%9E%85%EC%A7%80-%EA%B0%95%ED%99%94-%EC%B5%9C%EC%84%A0/",
-  "https://semifive.com/ko/company/newsroom/updates/%EC%96%B4%EB%96%A4-%EB%B0%98%EB%8F%84%EC%B2%B4%EB%93%A0-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EA%B8%B0%EB%B0%98-%EC%84%A4%EA%B3%84-%EB%AA%85%EC%84%B1/",
-  "https://littlebproject.com/stock/490470/73/63091",
-  "https://news.nate.com/view/20260512n18385?mid=n1101"
+  "https://biz.heraldcorp.com/article/10841670",
+  "https://www.mt.co.kr/stock/2026/09/29/2026092917111091361",
+  "https://www.finance-scope.com/article/view/scp202602190019",
+  "https://www.greened.kr/news/articleView.html?idxno=351190"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "490470",
  "name": "세미파이브",
  "name_en": "SemiFive Inc.",
@@ -233,11 +219,11 @@
   "반도체"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 05:28",
- "dataDate": "20260904",
+ "reportDate": "2026-11-13",
+ "reportTs": "2026-11-13 11:52",
+ "dataDate": "20261112",
  "quant": {
-  "asOf": "2026-09-04",
+  "asOf": "2026-11-13",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -276,12 +262,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": null,
-    "op": null,
-    "np_owner": null
-   },
-   {
     "q": "2025Q3",
     "rev": null,
     "op": null,
@@ -304,25 +284,31 @@
     "rev": 46801507514,
     "op": -11038068317,
     "np_owner": -12232124308
+   },
+   {
+    "q": "2026Q3",
+    "rev": 51439523519,
+    "op": -9667511824,
+    "np_owner": -8215316773
    }
   ],
   "valuation": {
-   "price": 14490,
-   "mcap": 0.493,
+   "price": 12030,
+   "mcap": 0.4093,
    "shares": 34025440,
    "total_shares": 34025440,
-   "wavg_shares": 33917850,
+   "wavg_shares": 33991008,
    "per": null,
    "eps": null,
-   "pbr": 2.2062,
-   "bps": 6568,
+   "pbr": 2.0117,
+   "bps": 5980,
    "roe_ttm": -25.5,
    "ttm_window": "2025Q1~2025Q4",
    "ttm_np_owner": -56220209448,
    "ccy": "KRW",
    "bps_src": "자체",
    "eps_src": "순이익÷주식수",
-   "pbr_krx": 2.22,
+   "pbr_krx": 1.85,
    "bps_krx": 6513.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
@@ -331,5 +317,6 @@
     "eps": "ref_mismatch"
    }
   }
- }
+ },
+ "textRules": 2
 }
