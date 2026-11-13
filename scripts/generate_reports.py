@@ -520,8 +520,8 @@ def collect_sources(message):
 # 리포트의 맨 위 칸 — 닫는 '}' 를 빠뜨려 앞 칸 안에 들어간 칸을 꺼낼 때 쓴다(옛 형식 · 리포트 v2).
 _TOP_KEYS = ("lead", "desc", "keypoints", "business", "recent", "earnings", "industry", "outlook",
              "valuation_comment", "bull", "bear", "risks", "checkpoints", "verdict", "sources")
-# 문자열 끝에 '","' 가 덧붙은 꼴 — '…in 2025.","},"industry":{'. 2026-11-13 진단에서 저장하지 못한 하이쿠 글 다섯 편 중 세 편이
-# 실적 분석 칸을 이렇게 닫았다. 자동 복구(json_repair)는 그 자리에서 글을 끊어 뒤 칸(산업 분석 ~ 종합 의견)을 모두 잃었다.
+# 문자열 끝에 '","' 가 덧붙은 꼴 — '…in 2025.","},"industry":{'. 2026-11-13 진단에서 항목이 빠져 저장하지 못한 하이쿠 글 8편 중 6편이
+# 실적 분석 칸을 이렇게 닫았다(1편은 닫는 '}' 누락). 자동 복구(json_repair)는 그 자리에서 글을 끊어 뒤 칸(산업 분석 ~ 종합 의견)을 모두 잃었다.
 _STRAY_QC = re.compile(r'(?<!\\)","(\s*[}\]])')
 
 

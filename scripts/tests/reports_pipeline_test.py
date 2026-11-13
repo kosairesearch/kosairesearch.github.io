@@ -555,7 +555,7 @@ _src = Path(M.__file__).read_text(encoding="utf-8")
 ok("pickup(cl, as_of, only={bid})" in _src, "auto 는 주문을 넣은 뒤 자기 주문(only={bid})만 회수한다")
 for _b in ("msgbatch_C", "msgbatch_D"):
     S.batch_path(_b).unlink()
-# 버리는 글의 사정을 기록에 남긴다(2026-11-13) — 11/11~13 하이쿠 글 17편이 모양 검증에서 떨어졌는데 원문이 남지 않았다.
+# 버리는 글의 사정을 기록에 남긴다(2026-11-13) — 11/11~13 하이쿠 글 16편이 모양 검증에서 떨어졌는데 원문이 남지 않았다.
 _msg = types.SimpleNamespace(content=[types.SimpleNamespace(
     type="text", citations=None, text='===JSON_START==={"lead": "a", "business": "b"} {"lead": "c"}===JSON_END===')],
     stop_reason="end_turn", usage=None)
@@ -993,7 +993,7 @@ ok(n == 2 and r["earnings"]["en"] == "EN0" and r["outlook"]["en"] == "EN1",
    "분량 문턱보다 짧은 영문(사업 · 실적 · 산업 · 전망)도 채운다", f"n={n}")
 r = GOODREP(); r["keypoints"][0]["en"] = "Short but fine"
 ok(M.fill_missing_en(cl_fill, r) == 0, "문턱이 없는 칸(핵심 포인트 등)의 짧은 영문은 그대로 둔다")
-# 실적 분석 칸을 닫는 자리에서 깨진 JSON 을 바로잡아 읽는다(2026-11-13 진단 — 저장하지 못한 하이쿠 글 다섯 편 중 넷)
+# 실적 분석 칸을 닫는 자리에서 깨진 JSON 을 바로잡아 읽는다(2026-11-13 진단 — 항목이 빠져 저장하지 못한 하이쿠 글 8편 중 7편)
 _full = GOODREP()
 _t = json.dumps(_full, ensure_ascii=False)
 _en = json.dumps(_full["earnings"]["en"], ensure_ascii=False)
