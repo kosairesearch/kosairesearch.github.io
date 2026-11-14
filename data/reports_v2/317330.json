@@ -1,220 +1,219 @@
 {
  "title": {
-  "ko": "본업 회복세 속 신사업 손실 상존의 변곡점",
-  "en": "Core Business Recovers While New Ventures Still Bleed"
+  "ko": "3분기 매출 성장 속 영업손실 지속, 전환 검증 구간",
+  "en": "Revenue Grows, Operating Losses Persist: A Turnaround Test"
  },
  "lead": {
-  "ko": "반도체·OLED 소재 본업은 매출 성장과 함께 개선 조짐을 보이지만, 이차전지 자회사의 초기 가동 비용과 비현금성 회계 손실이 겹치며 연결 실적 적자는 2023년 이후 계속 확대되고 있다.",
-  "en": "Duksan Techopia's core semiconductor and OLED materials business is showing revenue growth, but consolidated losses have widened since 2023 as early-stage ramp-up costs at its battery-materials subsidiary and non-cash accounting charges weigh on the bottom line."
+  "ko": "덕산테코피아는 반도체 소재 매출 증가와 북미 전해액 매출 확대가 겹치고 있지만, 2026년 1분기부터 3분기까지 영업손실이 이어지고 있어 흑자 전환 시점이 핵심 확인 과제다.",
+  "en": "Duksan Techopia's revenue is rising on semiconductor materials and North American electrolyte sales, but operating losses have continued from the first quarter through the third quarter of 2026, so the timing of a return to profit is the key item to watch."
  },
  "keypoints": [
   {
-   "ko": "2025년 매출은 1,120억원으로 전년 대비 12.4% 늘었지만 영업손실은 430억원으로 오히려 42.4% 확대됐다.",
-   "en": "2025 revenue rose 12.4% year-over-year to KRW 112.1bn, but the operating loss widened 42.4% to KRW 43.0bn."
+   "ko": "2025년 매출은 1,121억원으로 전년 대비 12.4% 증가했으나 영업손실은 430억원으로 확대되어 영업이익률은 -38.4%를 기록했다.",
+   "en": "Revenue in 2025 was KRW 112.1 billion, up 12.4% year on year, but the operating loss widened to KRW 43 billion and the operating margin was -38.4%."
   },
   {
-   "ko": "2026년 1~2분기 매출은 각각 391억원, 422억원으로 분기 최대치를 경신했으나 영업손실은 약 100억원대에서 크게 줄지 않았다.",
-   "en": "Revenue hit quarterly record highs of KRW 39.1bn and KRW 42.2bn in Q1 and Q2 2026, but the operating loss stayed roughly flat near KRW 10bn per quarter."
+   "ko": "2026년 3분기 매출은 518억원으로 3개 분기 연속 늘며 전년 동기 대비 72.4% 증가했고, 같은 분기 영업손실은 112억원으로 적자가 이어졌다.",
+   "en": "Third-quarter 2026 revenue reached KRW 51.8 billion, rising for three straight quarters and up 72.4% from a year earlier, while the operating loss stood at KRW 11.2 billion."
   },
   {
-   "ko": "핵심 캐시카우인 반도체용 HCDS 전구체는 삼성전자 3D 낸드 라인 내 높은 점유율을 바탕으로 AI 데이터센터발 수요 확대의 수혜를 받고 있다.",
-   "en": "The core cash-cow HCDS semiconductor precursor benefits from AI datacenter-driven demand given its high share within Samsung Electronics' 3D NAND lines."
+   "ko": "자회사 덕산일렉테라의 2026년 1분기 매출은 78억원으로 전년 동기 4억원에서 크게 늘었다는 언론 보도가 나왔다(2026년 5월 보도).",
+   "en": "Press reports from May 2026 said subsidiary Duksan Electera's first-quarter 2026 revenue rose to about KRW 7.8 billion from KRW 0.4 billion a year earlier."
   },
   {
-   "ko": "북미 테네시 전해액 공장을 운영하는 자회사 덕산일렉테라는 초기 가동 비용 부담으로 연결 적자의 주요 원인이 되고 있다.",
-   "en": "Subsidiary Deoksan Electera, which operates the Tennessee electrolyte plant, is a major driver of consolidated losses due to early-stage ramp-up costs."
+   "ko": "2025년 말 부채총계는 5,402억원으로 자본총계 1,065억원을 크게 웃돌며, 부채비율은 507.4%다.",
+   "en": "Total liabilities at the end of 2025 were KRW 540.2 billion, well above total equity of KRW 106.5 billion, and the debt-to-equity ratio was 507.4%."
   },
   {
-   "ko": "부채비율은 2022년 46.9%에서 2025년 507.4%로 급등해 재무 레버리지가 크게 확대된 상태다.",
-   "en": "The debt ratio jumped from 46.9% in 2022 to 507.4% in 2025, reflecting a sharp increase in financial leverage."
+   "ko": "상환전환우선주 파생상품 평가손익이 순손실 규모를 좌우하는 요인이 되고 있으며, 2026년 11월 13일 공시된 평가손실은 약 53억원 규모다.",
+   "en": "Valuation gains and losses on redeemable convertible preferred share derivatives have become a major driver of the net loss, and a valuation loss of about KRW 5.3 billion was disclosed on November 13, 2026."
   }
  ],
  "business": {
-  "ko": "덕산테코피아는 2006년 설립돼 2019년 코스닥에 상장한 정밀화학 소재 기업으로, 반도체·디스플레이용 소재, 이차전지용 소재, 의약품용 중간체를 주요 사업으로 영위한다. 반도체 부문의 핵심 제품은 헥사클로로디실란(HCDS)으로, 원자층증착(ALD) 공정에 쓰이는 전구체이며 삼성전자 3D 낸드 라인에 주로 공급된다. 디스플레이 부문은 OLED 발광층 유기재료 중간체를 삼성디스플레이 등에 공급하며, 이차전지 부문은 전해액 첨가제와 자회사 덕산일렉테라의 전해액 완제품으로 구성된다. 의약품 부문은 OLED 유기합성 기술에서 파생된 펩타이드 합성 기술을 바탕으로 당뇨, MASH, 항암제 등 글로벌 CDMO 고객사에 중간체를 공급한다. 증권사 리포트에 따르면 2025년 기준 매출 비중은 반도체 50%, OLED 35%, 이차전지 6%, 의약품 5%, 기타 4% 수준으로 반도체·OLED 두 사업부가 매출의 85%를 차지하는 구조다. 덕산테코피아는 삼성전자 3D NAND 공정에 HCDS를 공급하고 있으며, 시장 점유율 60~70%를 확보하고 있다. 이차전지 부문은 본업의 전해액 첨가제 사업과 자회사 덕산일렉테라의 전해액 완제품 사업으로 구분되며, 덕산일렉테라의 북미 테네시 공장(CAPA 10만 톤, 약 1조원)의 본격 가동이 시작되는 원년으로 꼽힌다. 주요 고객사로는 삼성전자, 삼성디스플레이, SK온과 다수의 글로벌 제약사가 있다.",
-  "en": "Founded in 2006 and listed on KOSDAQ in 2019, Duksan Techopia is a fine chemicals materials company operating semiconductor and display materials, secondary battery materials, and pharmaceutical intermediate businesses. In semiconductors, its core product is hexachlorodisilane (HCDS), a precursor used in atomic layer deposition (ALD) processes, supplied mainly to Samsung Electronics' 3D NAND lines. In display, it supplies OLED emissive-layer organic material intermediates mainly to Samsung Display. The secondary battery segment consists of electrolyte additives produced in-house and finished electrolyte products from subsidiary Deoksan Electera. The pharmaceutical segment leverages peptide synthesis technology derived from OLED organic synthesis to supply intermediates for diabetes, MASH, and anti-cancer drugs to global CDMO clients. According to brokerage reports, the 2025 revenue mix was approximately semiconductor 50%, OLED 35%, secondary battery 6%, pharma 5%, and other 4%, with the semiconductor and OLED segments together accounting for about 85% of sales. The company supplies HCDS to Samsung Electronics' 3D NAND process and holds a 60-70% market share. The battery segment is divided between its own electrolyte additive business and subsidiary Deoksan Electera's finished electrolyte products, with this year marking the start of full-scale operation at Deoksan Electera's Tennessee plant (100,000-ton capacity, roughly KRW 1 trillion in revenue potential). Key customers include Samsung Electronics, Samsung Display, SK On, and multiple global pharmaceutical companies."
+  "ko": "덕산테코피아는 2006년 설립되어 2019년 코스닥에 상장한 소재 기업으로, 반도체·디스플레이 소재를 본업으로 하고 2차전지 소재와 의약품 중간체를 신사업으로 키우는 구조다. SK증권이 2026년 4월 리포트에서 제시한 2025년 매출 비중은 반도체 약 50%, OLED 약 35%, 2차전지 약 6%, 의약품 약 5%, 기타 약 4%다. 반도체 부문의 대표 제품은 헥사클로로디실란(HCDS)으로, 삼성전자 3D NAND 공정에 공급되며 삼성전자 내 점유율은 60~70%로 소개되었다. OLED 부문은 디스플레이 유기재료를 공급하며 기존 고객사 내 점유율 회복이 성장 요인으로 거론된다. 2차전지 부문은 자회사 덕산일렉테라가 맡고 있으며, 미국 테네시 공장에서 전해액을 생산한다. 회사 측은 이 공장이 증설을 거쳐 최대 20만톤 규모까지 생산능력을 넓힐 수 있다고 설명했다. 의약품 부문은 당뇨, MASH, 항암 치료제 관련 중간체를 글로벌 위탁개발·생산(CDMO) 고객에게 공급하며, 투자액 260억원 규모의 GMP 2공장은 2026년 12월 준공 예정으로 보도됐다. 주요 고객은 삼성전자, 삼성디스플레이, SK온 등이다. 경쟁 측면에서 반도체 전구체는 삼성전자 내 점유율 1위라는 점이 강점으로 꼽히며, 전해액은 북미 현지 공급 체계를 갖추기 시작했다는 것이 회사 설명이다. 2차전지와 의약품을 합친 2025년 추정 비중은 10%대 초반으로, 신사업 매출은 아직 본업에 비해 작다.",
+  "en": "Duksan Techopia was founded in 2006 and listed on KOSDAQ in 2019. It is a materials company whose core business is semiconductor and display materials, with secondary battery materials and pharmaceutical intermediates as growth businesses. SK Securities' April 2026 report estimated the 2025 sales mix at roughly 50% semiconductors, 35% OLED, 6% secondary batteries, 5% pharmaceuticals and 4% other. The flagship semiconductor product is HCDS (hexachlorodisilane), supplied to Samsung Electronics' 3D NAND process, where the company is cited as holding a 60–70% share. The OLED business supplies organic materials, and recovering share at existing customers is cited as a growth factor. The battery business sits in subsidiary Duksan Electera, which produces electrolyte at a plant in Tennessee, USA. The company has said the plant could expand to up to 200,000 tons through added capacity. The pharmaceutical business supplies intermediates for drugs in diabetes, MASH and anticancer treatments to global CDMO clients, and a GMP No. 2 plant with an investment of KRW 26 billion was reported as scheduled for completion in December 2026. Key customers include Samsung Electronics, Samsung Display and SK On. On competition, the company is cited as the top supplier of HCDS to Samsung Electronics, and it has said it has begun building a North American supply system for electrolyte. Batteries and pharmaceuticals together were an estimated low-double-digit share of 2025 sales, so new businesses remain small relative to the core."
  },
  "earnings": {
-  "ko": "2025년 연결 매출은 1,120억 7,895만원으로 2024년 996억 9,443만원 대비 12.4% 증가했으나, 영업손실은 430억 2,641만원으로 2024년 302억 1,947만원보다 42.4% 확대됐다. 지배주주 순손실도 767억원으로 전년(531억원) 대비 크게 늘었다. 회사는 공시를 통해 덕산일렉테라 북미공장 본격 가동에 따른 감가상각비 인식과 램프업 비용 증가가 영업손실 확대에 영향을 줬으며, 매출 증가 요인으로는 신규사업 전해액과 의약품 중간체의 본격 납품을 들었다고 밝혔다. 순손실 확대에는 덕산일렉테라 기업가치 상승에 따라 상환전환우선주(RCPS) 관련 파생상품 평가 비용 약 574억원이 추가 반영됐으며, 이는 실제 현금 유출이 없는 회계 처리 항목이라는 점도 영향을 미쳤다. 분기별로 보면 2025년 3분기 매출 300억원, 영업손실 149억원으로 적자가 커졌고, 4분기에는 매출 288억원에 영업손실 97억원이었지만 지배주주 순손실은 475억원에 달해 4분기에 대규모 일회성 손실이 반영된 것으로 보인다. 2026년 들어서는 1분기 매출 391억원, 영업손실 104억원, 2분기 매출 422억원, 영업손실 106억원으로 매출은 분기 연속 최대치를 경신했으나 영업손실 규모 자체는 뚜렷하게 줄지 않았다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 합산 지배주주 순손실은 827억원 규모다. 2022년에는 매출 1,110억원에 영업이익 92억 6,000만원, 순이익 160억원을 기록해 흑자를 냈던 것과 비교하면, 최근 3년간의 적자 국면은 신규 사업 투자에 따른 구조적 비용 부담이 이어지고 있음을 보여준다.",
-  "en": "Consolidated 2025 revenue was KRW 112.08bn, up 12.4% from KRW 99.69bn in 2024, but the operating loss widened 42.4% to KRW 43.03bn from KRW 30.22bn. Net loss attributable to owners also expanded sharply to KRW 76.7bn from KRW 53.1bn a year earlier. The company disclosed that depreciation and ramp-up cost increases from the full-scale operation of Deoksan Electera's North America plant contributed to the widened operating loss, while revenue growth was driven by full-scale shipments in the new electrolyte and pharmaceutical intermediate businesses. The widened net loss was also affected by the fact that roughly KRW 57.4bn in additional derivative valuation expense related to redeemable convertible preferred stock (RCPS) was recognized due to a rise in Deoksan Electera's enterprise value, a non-cash accounting item with no actual cash outflow. On a quarterly basis, Q3 2025 revenue was KRW 30.05bn with an operating loss of KRW 14.86bn, while Q4 2025 revenue was KRW 28.81bn with a smaller operating loss of KRW 9.72bn, yet net loss attributable to owners reached KRW 47.48bn, suggesting a large one-time charge in that quarter. Into 2026, Q1 revenue was KRW 39.14bn with an operating loss of KRW 10.38bn, and Q2 revenue reached KRW 42.18bn with an operating loss of KRW 10.56bn, meaning revenue set consecutive quarterly records but the operating loss did not meaningfully narrow. The trailing four-quarter (Q3 2025-Q2 2026) net loss attributable to owners totaled roughly KRW 82.7bn. This contrasts with 2022, when the company posted revenue of KRW 111.0bn alongside an operating profit of KRW 9.26bn and net profit of KRW 16.06bn, underscoring that the past three years of losses reflect structural cost burdens tied to new business investment."
+  "ko": "연간 매출은 2022년 1,110억원에서 2023년 941억원(전년 대비 15.3% 감소)으로 줄었다가 2024년 997억원(전년 대비 6.0% 증가), 2025년 1,121억원(전년 대비 12.4% 증가)으로 2년 연속 늘었다. 2022년부터 2025년까지 가장 큰 해는 2025년, 가장 작은 해는 2023년이다. 영업이익은 2022년 92.6억원에서 2023년 영업손실 62.3억원으로 적자 전환된 뒤, 2024년 영업손실 302억원, 2025년 영업손실 430억원으로 손실이 커졌다. 영업이익률은 2022년 8.3%에서 2023년 -6.6%, 2024년 -30.3%, 2025년 -38.4%로 낮아졌고, 2023년부터 2025년까지 3년 연속 적자다. 2025년 영업손실 확대는 자회사 덕산일렉테라 북미 공장 가동에 따른 감가상각비와 초기 램프업 비용이 반영된 결과라고 회사가 설명했다. 지배주주 순이익은 2022년 161억원에서 2023년 순손실 74억원, 2024년 순손실 531억원, 2025년 순손실 767억원으로 3년 연속 적자다. 당기순이익(비지배지분 포함)은 2025년 당기순손실 1,056억원으로 지배주주 순손실보다 큰데, 상환전환우선주 파생상품 평가 비용 약 574억원이 주된 차이 요인으로 회사가 밝혔고 현금 유출이 없는 회계 항목이라고 설명했다. 영업활동 현금흐름은 2022년 123억원 흑자에서 2023년 -78.3억원, 2024년 -562억원, 2025년 -214억원으로 적자가 이어졌다. 분기 기준으로 매출은 2025년 3분기 301억원, 4분기 288억원(전 분기 대비 4.1% 감소)을 저점으로 2026년 1분기 391억원, 2분기 422억원, 3분기 518억원으로 3개 분기 연속 증가했다. 같은 기간 영업손실은 2025년 3분기 149억원, 4분기 97.2억원, 2026년 1분기 104억원, 2분기 106억원, 3분기 112억원으로 5개 분기 연속 적자다. 2026년 1분기 연결 영업손실은 104억원이었지만 별도 기준으로는 영업이익 9억원의 흑자로 전환했다고 2026년 5월 언론이 보도했다. 최근 4개 분기 지배주주 순손실 합계는 864억원이며, 매출 증가가 영업손실 축소로 이어지지 않은 점이 다음 분기 확인 지점이다.",
+  "en": "Annual revenue fell from KRW 111 billion in 2022 to KRW 94.1 billion in 2023 (down 15.3% year on year), then rose to KRW 99.7 billion in 2024 (up 6.0%) and KRW 112.1 billion in 2025 (up 12.4%), marking two straight years of growth. Among 2022–2025, 2025 was the largest year and 2023 the smallest. Operating profit of KRW 9.26 billion in 2022 turned into an operating loss of KRW 6.23 billion in 2023, then widened to an operating loss of KRW 30.2 billion in 2024 and KRW 43 billion in 2025. The operating margin moved from 8.3% in 2022 to -6.6% in 2023, -30.3% in 2024 and -38.4% in 2025, and the company has recorded losses in each of the three years from 2023 to 2025. The 2025 widening was attributed by the company to depreciation and ramp-up costs at the North American plant of subsidiary Duksan Electera. Net loss attributable to controlling shareholders went from net income of KRW 16.1 billion in 2022 to net losses of KRW 7.4 billion in 2023, KRW 53.1 billion in 2024 and KRW 76.7 billion in 2025. Net loss including non-controlling interests was KRW 105.6 billion in 2025, a larger figure, with the main difference being about KRW 57.4 billion of non-cash derivative valuation costs on redeemable convertible preferred shares, which the company said involve no cash outflow. Operating cash flow went from KRW 12.3 billion in 2022 to negative figures of KRW 7.83 billion in 2023, KRW 56.2 billion in 2024 and KRW 21.4 billion in 2025. Quarterly revenue went from KRW 30.1 billion in the third quarter of 2025 and KRW 28.8 billion in the fourth quarter (down 4.1% quarter on quarter) to KRW 39.1 billion, KRW 42.2 billion and KRW 51.8 billion in the first three quarters of 2026, rising for three consecutive quarters. Over the same span the operating loss was KRW 14.9 billion, KRW 9.72 billion, KRW 10.4 billion, KRW 10.6 billion and KRW 11.2 billion, extending five straight loss-making quarters. Press reports in May 2026 said the first-quarter 2026 separate-basis operating profit turned positive at KRW 0.9 billion, while the consolidated figure was a loss. The net loss attributable to controlling shareholders for the last four quarters totaled KRW 86.4 billion, and whether revenue growth narrows the operating loss is the point to check in upcoming quarters."
  },
  "industry": {
-  "ko": "반도체 소재 부문은 AI 데이터센터 투자 확대에 따른 낸드플래시 수요 회복과 관련이 깊다. AI 데이터센터 확대에 따른 SSD 및 NAND 수요 증가, 그리고 공정 고도화에 따른 ALD 공정 증가로 HCDS 사용량이 구조적으로 늘어나는 흐름으로 평가된다. OLED 부문은 전년 동기 대비 매출이 증가하는 등 스마트폰·태블릿 등 IT 기기의 OLED 채택 확대에 발맞춰 점진적 회복세를 보이고 있다. 이차전지 전해액 시장은 ESS 수요와 미국 인플레이션감축법(IRA)에 따른 현지 생산 유인이 맞물려 있으며, 미국 인플레이션 감축법(IRA) 시행에 따른 탈중국 기조가 뚜렷해진 가운데, 북미 테네시에 완공된 연산 10만 톤 규모의 전해액 공장은 단일 공장 기준 북미 최대 규모로 꼽힌다. 다만 이차전지 부문은 아직 초기 가동 단계로 수익성 기여보다는 비용 부담이 앞서는 국면이다. 펩타이드 CDMO 시장은 글로벌 비만치료제(GLP-1) 수요 확대와 함께 성장 잠재력이 부각되고 있으나, 덕산테코피아의 관련 매출 비중은 아직 5% 수준으로 작다. 경쟁 구도 측면에서 반도체 전구체는 특정 고객사 내 높은 점유율을 유지하고 있어 진입장벽이 있는 반면, 이차전지 전해액 시장은 국내외 다수 업체와 경쟁하는 구조여서 신규 고객사 확보 속도가 실적의 관전 포인트다.",
-  "en": "The semiconductor materials segment is closely tied to the recovery in NAND flash demand driven by expanding AI datacenter investment. Increased SSD and NAND demand from AI datacenter expansion, combined with more frequent ALD process steps from process node advancement, is structurally increasing HCDS consumption. The OLED segment has shown a gradual recovery in line with expanding OLED adoption in smartphones and tablets, with revenue increasing year-over-year. The battery electrolyte market is shaped by ESS demand and localization incentives under the US Inflation Reduction Act (IRA), and amid a clear de-China trend driven by IRA implementation, the completed 100,000-ton-capacity electrolyte plant in Tennessee is regarded as the largest single plant in North America. However, the battery segment remains in an early ramp-up phase where cost burdens still outweigh profit contribution. The peptide CDMO market is drawing attention amid growing global GLP-1 obesity drug demand, though the company's related revenue share remains small at around 5%. Competitively, the semiconductor precursor business maintains high customer concentration and entry barriers, while the battery electrolyte market involves competition among multiple domestic and overseas players, making new customer acquisition a key variable to watch."
+  "ko": "반도체 쪽에서는 AI 데이터센터 투자 확대로 SSD와 NAND 수요가 늘고, 3D NAND 고단화로 ALD 공정 횟수가 증가하면서 HCDS 사용량이 구조적으로 늘어난다는 것이 2026년 4월 증권가 리포트들의 공통된 논리다. 리딩투자증권 리포트는 덕산테코피아의 반도체 소재 매출이 대부분 낸드 향이라는 점을 구조적 성장 근거로 꼽았다. 다만 이는 증권가의 전망이며, 2025년 기준 반도체 비중이 약 절반인 만큼 낸드 투자 사이클에 실적이 민감하게 연동된다. OLED 부문은 기존 고객사 내 점유율 회복과 공정 개선을 통한 수익성 개선이 거론된다. 2차전지 쪽은 미국 ESS 수요 확대와 인플레이션감축법(IRA)에 따른 북미 현지 생산 확대가 성장 동력으로 꼽힌다. 전해액 시장은 북미 현지 생산이 필수라는 특성이 있어 현지 공장을 먼저 가동한 기업에 유리하다는 평가가 있지만, 가동률과 고객 확보가 이익으로 이어지는지가 관건이다. 같은 화학 업종에서 LG화학, 롯데케미칼, 금호석유화학 등 범용 석유화학 기업은 원재료와 가격 사이클의 영향을 받는 반면, 덕산테코피아는 반도체와 디스플레이 소재 수요에 연동되는 구조라 사업 사이클이 다르다. 2차전지 전해액 분야에서는 후성(Foosung) 등 국내 업체와 북미 현지 생산 경쟁이 벌어지는 구도다. 반도체 전구체의 시장 지위는 강하지만 신사업이 아직 손익에 기여하지 못한 상태라 업황 평가와 회사별 실적 격차를 함께 봐야 한다.",
+  "en": "In semiconductors, April 2026 brokerage reports share a common view that AI data center investment is lifting SSD and NAND demand, and that higher NAND layer counts increase the number of ALD steps and therefore HCDS usage. A second brokerage report noted that most of the company's semiconductor materials sales are tied to NAND, which it cited as the basis for structural growth. That is a forecast by analysts, however, and with semiconductors around half of 2025 sales, results are closely linked to the NAND investment cycle. In OLED, recovering share at existing customers and profitability gains from process improvements are cited. In batteries, US energy storage demand and North American local production under the Inflation Reduction Act are the cited growth drivers. Because electrolyte must be produced locally in North America, early operators are seen as advantaged, but whether utilization and customer wins translate into profit is the open question. Among chemical sector peers, commodity petrochemical companies such as LG Chem, Lotte Chemical and Kumho Petrochemical are driven by feedstock and price cycles, whereas Duksan Techopia's demand tracks semiconductor and display materials, so its cycle differs. In electrolyte, the company competes with domestic peers such as Foosung in North American local production. Its position in semiconductor precursors is strong, but the new businesses do not yet contribute to profit, so industry conditions and company-level earnings gaps need to be read together."
  },
  "outlook": {
-  "ko": "증권사들은 2026년을 본업 회복과 신사업 성장이 맞물리는 전환점으로 보고 있다. SK증권은 2026년 4월 16일 보고서에서 동사의 이차전지 부문 매출액은 2025년 63억원에서 2026년 1,271억원, 2027년 2,632억원으로 급증할 것으로 추정되며, ESS 매출 비중은 2025년 40%에서 2026년 70%대까지 증가할 전망이며, 이익 측면에서는 2026년 흑자전환 이후 2027년부터 이익 창출이 본격화될 것이라고 전망했다. 같은 리포트는 의약품 부문에 대해 4분기 2공장 준공 이후 2027년 상반기 K-GMP 인증 확보 이후 본격 양산에 진입할 전망이며, 1~2공장 합산 생산 캐파는 약 1,600억원 규모로 추정되고 2026년 손익분기점(BEP) 도달 이후 2027년부터 이익이 발생할 것으로 예상된다고 밝혔다. 리딩투자증권은 2026년 4월 19일 보고서에서 덕산테코피아의 2026년 예상 실적은 매출액 2,362억원(전년 대비 +110.7%), 영업이익 137억원(전년 대비 흑자 전환)이 될 것으로 전망했다. 다만 이러한 전망은 2026년 1~2분기 실제 실적에서 매출 증가는 확인됐지만 영업손실이 여전히 분기당 100억원대 수준을 유지하고 있어, 흑자 전환 시점이 실제로 언제 도달할지는 향후 분기 실적으로 확인이 필요한 상태다. 반도체 부문은 AI 대상 낸드 수요 확대에 따른 안정적 성장이 예상되는 한편, 이차전지 부문은 북미 공장의 가동률 상승 속도가 실적 개선의 관건이 될 전망이다.",
-  "en": "Brokerages view 2026 as a turning point where the core business recovery and new venture growth converge. In an April 16, 2026 report, SK Securities forecast that the company's battery segment revenue would surge from KRW 6.3bn in 2025 to KRW 127.1bn in 2026 and KRW 263.2bn in 2027, with ESS revenue mix rising from 40% in 2025 to over 70% in 2026, and that profitability would turn positive in 2026 before profit generation becomes substantial from 2027. The same report stated on the pharmaceutical segment that following completion of a second plant in Q4 and K-GMP certification in the first half of 2027, the company would enter full-scale production, with combined capacity across both plants estimated at about KRW 160bn, reaching breakeven in 2026 and generating profit from 2027. Leading Investment & Securities forecast in an April 19, 2026 report that the company's expected 2026 results would be revenue of KRW 236.2bn (up 110.7% year-over-year) and operating profit of KRW 13.7bn (a swing to profit from a loss). However, while actual Q1-Q2 2026 results confirmed revenue growth, the operating loss remained near KRW 10bn per quarter, meaning the actual timing of a profit turnaround still needs to be confirmed through upcoming quarterly results. The semiconductor segment is expected to see stable growth from AI-driven NAND demand, while the pace of utilization ramp-up at the North American battery plant will be a key variable for earnings improvement."
+  "ko": "회사는 2026년 3월 실적 발표에서 2026년을 실적 턴어라운드의 원년으로 보고, 북미 전해액 공장 본격 가동과 AI 수요에 따른 반도체 소재 수요 증가를 배경으로 제시했다. 리딩투자증권은 2026년 4월 리포트에서 2026년 매출 2,362억원, 영업이익 137억원의 흑자 전환을 추정했고, SK증권은 2026년 4월 리포트에서 2차전지 부문 매출을 2025년 63억원에서 2026년 1,271억원, 2027년 2,632억원으로 추정했다. 두 추정은 모두 2026년 4월 시점의 전망이며, 공시 실적에서는 2026년 1분기부터 3분기까지 분기 영업손실이 이어져 추정과의 간격이 확인 대상이다. 신규 설비로는 의약품 GMP 2공장이 투자액 260억원 규모로 2026년 12월 준공 예정이며, 2026년 4분기 준공 후 2027년 상반기 K-GMP 인증 확보를 거쳐 본격 양산에 들어갈 것으로 전망됐다. 같은 보도에 따르면 1·2공장 합산 생산능력은 약 1,600억원 규모로 추정되고, 2026년 손익분기점 도달 이후 2027년부터 이익 기여가 본격화될 것으로 제시됐다. 반도체 쪽에서는 삼성전자 3D NAND 고단화에 따른 HCDS 수요 증가와 OLED 고객사 점유율 회복이 전망의 축이다. 재무 측면에서는 상환전환우선주가 보통주로 전환되면 파생상품 평가손실 금액이 자본으로 옮겨져 재무구조가 개선되는 효과가 있다고 회사가 2026년 3월 밝혔다. 2026년 11월 13일에는 상환전환우선주 파생상품 평가손실 약 53억원이 공시되었고, 회사는 이 손실이 현금 유출을 수반하지 않는다고 명시했다. 다음 확인 지점은 2026년 사업보고서에서 연간 영업이익의 부호와 4분기 영업손실 규모, 그리고 GMP 2공장 준공 이후 의약품 매출 반영 속도다.",
+  "en": "In its March 2026 results briefing, the company described 2026 as the first year of an earnings turnaround, citing the full operation of the North American electrolyte plant and rising semiconductor materials demand tied to AI. A second brokerage's April 2026 report projected a 2026 operating profit of KRW 13.7 billion after a turn from loss, on revenue of KRW 236.2 billion. SK Securities' April 2026 report estimated battery-segment sales rising from KRW 6.3 billion in 2025 to KRW 127.1 billion in 2026 and KRW 263.2 billion in 2027. Both estimates date from April 2026, and reported quarterly operating losses in the first three quarters of 2026 mean the gap between those forecasts and actual results is what to check. On new capacity, the GMP No. 2 plant with an investment of KRW 26 billion was reported as scheduled for completion in December 2026, with K-GMP certification expected in the first half of 2027 before full-scale production. The same report estimated combined capacity of the first and second plants at about KRW 160 billion and projected profit contribution from 2027 after break-even in 2026. In semiconductors, the axes of the outlook are rising HCDS demand from higher-layer 3D NAND at Samsung Electronics and share recovery in OLED. On the balance sheet, the company said in March 2026 that conversion of the redeemable convertible preferred shares into common stock would move the derivative valuation loss into equity and improve capital structure. A valuation loss of about KRW 5.3 billion on those derivatives was disclosed on November 13, 2026, and the company stated it involves no cash outflow. The next checkpoints are the operating profit sign and fourth-quarter loss in the 2026 annual report, and how quickly pharmaceutical sales are recognized after the GMP No. 2 plant opens."
  },
  "valuation_comment": {
-  "ko": "덕산테코피아는 최근 수 년간 순손실이 이어지고 있어 통상적인 주가수익비율(PER) 산출이 어려운 상태이며, 이는 신사업 투자 국면에 있는 소재기업에서 종종 나타나는 구조다. 주가는 순자산가치(주당 장부가)를 웃도는 수준에서 거래되고 있는데, 이는 반도체·OLED 본업의 현금창출력과 이차전지·바이오 신사업의 성장 기대가 함께 반영된 결과로 해석될 수 있다. 배당은 최근 지급 실적이 없어 배당수익률을 통한 밸류에이션 비교는 의미가 제한적이다. 부채비율이 2022년 46.9%에서 2025년 507.4%로 크게 상승한 점은 신사업 투자에 따른 재무구조 변화를 보여주며, 향후 밸류에이션 해석에서 이익 회복 여부와 함께 재무 레버리지 추이도 함께 살펴볼 필요가 있다. 결국 현재 주가 수준은 적자에서 흑자로의 전환 시점과 그 속도에 대한 시장의 기대를 상당 부분 담고 있는 구간으로 볼 수 있다.",
-  "en": "Duksan Techopia has posted consecutive net losses in recent years, making a conventional price-to-earnings ratio difficult to calculate—a pattern often seen in materials companies in an investment-heavy growth phase. The stock trades at a level above net asset value per share, which can be interpreted as reflecting both the cash-generating capacity of the core semiconductor and OLED business and growth expectations for the battery and biopharma new ventures. With no recent dividend payment history, valuation comparisons based on dividend yield carry limited relevance. The sharp rise in the debt ratio from 46.9% in 2022 to 507.4% in 2025 reflects a shift in the balance sheet structure driven by new business investment, and this financial leverage trend warrants attention alongside the pace of any earnings recovery. Ultimately, the current share price level can be seen as embedding a substantial degree of market expectation around when and how quickly a swing from losses to profit might occur."
+  "ko": "최근 4개 분기 기준 지배주주 순손실이 이어져 주가수익비율(PER)은 산출되지 않는다. 따라서 이익 기준 배수로 현재 수준을 비교하기는 어렵고, 자산 기준 배수가 주된 참고 지표가 된다. 주가순자산비율(PBR)은 1배를 웃도는 구간이며, FnGuide가 집계한 2024년 6월부터 2025년 6월까지 분기말 주가순자산비율(약 1배 초반에서 4배 초반) 범위 안의 중간 부근에 있다. 과거 밴드는 공시된 분기말 기준 자료이므로 현재 주가 수준과는 별개로 읽어야 한다. 배당은 확인된 기간 동안 지급되지 않았으며, 배당 기반의 주가 뒷받침 요인은 없다. 2025년 말 자본총계 1,065억원 대비 부채총계 5,402억원의 구조는 자산 기준 배수 해석에 부담 요인으로 작용한다. 2026년 4월 증권가 추정이 제시한 흑자 전환 시나리오는 공시 실적에서 아직 나타나지 않았으므로, 이익 기반 배수가 다시 계산 가능해지는 시점은 흑자 분기가 누적된 뒤가 된다.",
+  "en": "Because the company has posted net losses attributable to controlling shareholders over the last four quarters, its price-to-earnings ratio cannot be calculated. Comparisons therefore rest on asset-based multiples. The price-to-book ratio sits above 1 times and, in the quarter-end series compiled by FnGuide from June 2024 to June 2025 (roughly from the low 1x range to the low 4x range), it lies in the middle part of that band. That band reflects past quarter-end data and should be read apart from the current share price. No dividend was paid over the periods checked, so dividends provide no support to the share price. Total liabilities of KRW 540.2 billion against total equity of KRW 106.5 billion at the end of 2025 weigh on how an asset-based multiple should be read. The turnaround to profit projected in April 2026 has not yet appeared in reported results, so an earnings-based multiple would become calculable only after profitable quarters accumulate."
  },
  "bull": [
   {
    "title": {
-    "ko": "AI 데이터센터발 낸드 수요와 HCDS 독점적 지위",
-    "en": "AI Datacenter-Driven NAND Demand and Dominant HCDS Position"
+    "ko": "반도체 소재 점유율과 NAND 수요",
+    "en": "Semiconductor share and NAND demand"
    },
    "body": {
-    "ko": "핵심 캐시카우인 HCDS 전구체는 삼성전자 3D 낸드 라인 내에서 압도적 점유율을 유지하고 있다. AI 데이터센터 투자 확대로 SSD·낸드 수요가 늘고 ALD 공정 횟수가 증가하면서 HCDS 사용량도 구조적으로 확대되는 흐름이 관찰된다. 2026년 1~2분기 매출이 분기 연속 최대치를 경신한 배경에도 이러한 반도체 소재 수요 확대가 자리한다.",
-    "en": "The core cash-cow HCDS precursor maintains an overwhelming market share within Samsung Electronics' 3D NAND lines. Expanding AI datacenter investment is driving increased SSD and NAND demand along with more ALD process steps, structurally boosting HCDS consumption. This semiconductor materials demand growth underpins the consecutive quarterly revenue records set in Q1-Q2 2026."
+    "ko": "SK증권은 2026년 4월 리포트에서 삼성전자 3D NAND 공정 내 HCDS 점유율을 60~70%로 제시했다. 회사 매출 3분기 연속 증가는 이 본업이 뒷받침하고 있다는 신호로 읽힌다. 2026년 3분기 매출은 518억원으로 전년 동기 대비 72.4% 늘었다. AI 데이터센터 투자로 NAND 수요가 늘고 고단화에 따라 HCDS 사용량이 늘어난다는 것이 증권가의 논리다.",
+    "en": "SK Securities' April 2026 report put the company's HCDS share within Samsung Electronics' 3D NAND process at 60–70%. Three straight quarters of revenue growth suggest the core business is supporting sales. Third-quarter 2026 revenue was KRW 51.8 billion, up 72.4% from a year earlier. Analysts argue AI data center investment is raising NAND demand and HCDS usage as layer counts rise."
    }
   },
   {
    "title": {
-    "ko": "북미 전해액 공장을 통한 이차전지 사업 확장",
-    "en": "Battery Business Expansion via the North American Electrolyte Plant"
+    "ko": "북미 전해액 매출의 빠른 증가",
+    "en": "Rapid growth in North American electrolyte sales"
    },
    "body": {
-    "ko": "자회사 덕산일렉테라가 운영하는 북미 테네시 전해액 공장은 단일 공장 기준 북미 최대 규모로 꼽힌다. IRA에 따른 현지 생산 유인과 ESS 수요 회복이 맞물리면서 향후 가동률이 올라올 경우 매출 규모가 크게 확대될 잠재력이 있다. 증권사들은 이 사업이 2026년 흑자 전환 이후 2027년부터 이익 기여가 본격화될 것으로 전망하고 있다.",
-    "en": "The North American electrolyte plant in Tennessee, operated by subsidiary Deoksan Electera, is considered the largest single plant of its kind in North America. With IRA-driven localization incentives and ESS demand recovery converging, there is potential for substantial revenue expansion as utilization rises. Analysts project this business could swing to profit in 2026, with profit contribution becoming more substantial from 2027."
+    "ko": "2026년 5월 언론 보도에 따르면 자회사 덕산일렉테라의 2026년 1분기 매출은 78억원으로 전년 동기 4억원에서 18배 넘게 늘었다. 한 분기 매출이 2025년 한 해 전해액 매출을 넘었다는 점이 보도의 핵심이다. 회사는 테네시 공장을 통해 최대 20만톤 규모까지 생산능력을 넓힐 수 있다고 밝혔다. 2차전지 매출 추정이 2025년 63억원에서 2026년 1,271억원으로 커질 것이라는 증권사 추정도 있다.",
+    "en": "Press reports from May 2026 said subsidiary Duksan Electera's first-quarter 2026 revenue reached about KRW 7.8 billion, up from KRW 0.4 billion a year earlier. The reports noted that one quarter exceeded the subsidiary's full-year 2025 electrolyte sales. The company has said the Tennessee plant can expand to as much as 200,000 tons. A brokerage has also estimated battery sales rising from KRW 6.3 billion in 2025 to KRW 127.1 billion in 2026."
    }
   },
   {
    "title": {
-    "ko": "펩타이드 CDMO를 통한 신성장동력 확보",
-    "en": "New Growth Driver via Peptide CDMO Business"
+    "ko": "의약품 중간체 설비 확장",
+    "en": "Expansion of pharmaceutical intermediate capacity"
    },
    "body": {
-    "ko": "OLED 유기합성 기술에서 파생된 펩타이드 합성 역량을 바탕으로 당뇨·MASH·항암제 등 의약품 중간체를 글로벌 CDMO 고객사에 공급하고 있다. 2026년 4분기 2공장 준공과 2027년 상반기 K-GMP 인증이 예정돼 있어 중장기적으로 사업 포트폴리오 다각화에 기여할 수 있다. 글로벌 비만치료제 시장 성장과 맞물려 장기적 성장 옵션으로 평가받고 있다.",
-    "en": "Leveraging peptide synthesis capabilities derived from OLED organic synthesis technology, the company supplies pharmaceutical intermediates for diabetes, MASH, and anti-cancer drugs to global CDMO clients. With a second plant completion scheduled for Q4 2026 and K-GMP certification targeted for the first half of 2027, this could contribute to portfolio diversification over the medium to long term. It is viewed as a long-term growth option amid growth in the global obesity drug market."
+    "ko": "의약품 중간체 사업은 GMP 2공장(투자액 260억원)이 2026년 12월 준공될 예정으로 보도됐다. 해당 보도는 완공 이후 목표 매출 규모를 연간 1,600억원 수준으로 제시했다. 의약품 부문은 당뇨, MASH, 항암 치료제 관련 중간체를 글로벌 CDMO 고객에게 공급하는 구조다. 신사업 매출이 본업 비중을 얼마나 바꿀지는 준공 이후 매출 반영 속도에 달려 있다.",
+    "en": "The pharmaceutical intermediate business has a GMP No. 2 plant with an investment of KRW 26 billion that was reported as scheduled for completion in December 2026. That report gave a target annual revenue of about KRW 160 billion after completion. The segment supplies intermediates for diabetes, MASH and anticancer treatments to global CDMO clients. How far new businesses change the sales mix depends on how fast revenue is recognized after completion."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "3년 연속 영업손실 확대, 흑자 전환 시점 불확실",
-    "en": "Three Consecutive Years of Widening Operating Losses, Uncertain Profit Turnaround Timing"
+    "ko": "영업손실의 지속과 확대",
+    "en": "Persistent and widening operating losses"
    },
    "body": {
-    "ko": "2023년 62억원, 2024년 302억원, 2025년 430억원으로 영업손실이 매년 확대돼 왔다. 2026년 1~2분기에도 매출은 늘었지만 영업손실은 분기당 100억원대에서 크게 줄지 않고 있다. 신사업 투자에 따른 비용 부담이 예상보다 오래 이어질 가능성을 배제할 수 없다.",
-    "en": "Operating losses have widened every year, from KRW 6.2bn in 2023 to KRW 30.2bn in 2024 and KRW 43.0bn in 2025. Even in Q1-Q2 2026, while revenue grew, the operating loss did not meaningfully narrow from the roughly KRW 10bn per quarter level. The possibility that cost burdens from new business investment persist longer than expected cannot be ruled out."
+    "ko": "2025년 영업손실은 430억원으로 2024년 302억원보다 확대됐고 영업이익률은 -38.4%다. 2026년 1분기부터 3분기까지 분기 영업손실은 104억원, 106억원, 112억원으로 매출이 늘어도 적자 폭이 크게 줄지 않았다. 2023년부터 3년 연속 영업손실이며, 공시 실적 기준 5개 분기 연속 적자다. 2026년 4월 증권가가 제시한 흑자 전환 추정은 아직 공시 실적에서 확인되지 않았다.",
+    "en": "The 2025 operating loss widened to KRW 43 billion from KRW 30.2 billion in 2024, and the operating margin was -38.4%. Quarterly operating losses of KRW 10.4 billion, KRW 10.6 billion and KRW 11.2 billion in the first three quarters of 2026 show that revenue growth has not narrowed losses much. Losses have been recorded for three straight years from 2023, and reported results show five straight loss quarters. The profit turn projected by brokerages in April 2026 has not yet appeared in reported results."
    }
   },
   {
    "title": {
-    "ko": "덕산일렉테라 초기 가동 비용이 연결 실적 발목",
-    "en": "Deoksan Electera's Early Ramp-Up Costs Weigh on Consolidated Results"
+    "ko": "재무구조 부담",
+    "en": "Balance sheet pressure"
    },
    "body": {
-    "ko": "북미 공장의 감가상각비와 램프업 비용이 연결 영업손실 확대의 주된 원인으로 지목되고 있다. 초기 가동 비용 부담으로 2차전지 전해액 사업을 담당하는 자회사 덕산일렉테라에서 약 150억원 규모의 손실이 반영되면서 연결 기준 적자가 지속됐다. 가동률 상승이 예상보다 지연될 경우 적자 국면이 더 길어질 위험이 있다.",
-    "en": "Depreciation and ramp-up costs at the North American plant have been cited as the primary driver of the widened consolidated operating loss. Due to early-stage operating cost burdens, subsidiary Deoksan Electera, which handles the electrolyte business, recorded a loss of roughly KRW 15bn, contributing to continued consolidated losses. If the utilization ramp-up is delayed beyond expectations, the loss-making phase could extend further."
+    "ko": "2025년 말 부채총계는 5,402억원으로 자본총계 1,065억원을 크게 웃돌며, 부채비율은 2022년 46.9%에서 2025년 507.4%로 올랐다. 영업활동 현금흐름은 2023년부터 3년 연속 적자로 2025년 -214억원이다. 2025년 10월 보도는 이자보상배율이 3년째 1 미만이라고 지적했다. 차입 부담이 커진 상태에서 설비 투자가 이어지면 재무 여력이 더 줄어들 수 있다.",
+    "en": "Total liabilities at the end of 2025 were KRW 540.2 billion, well above total equity of KRW 106.5 billion, and the debt-to-equity ratio rose from 46.9% in 2022 to 507.4% in 2025. Operating cash flow has been negative for three years since 2023, reaching KRW -21.4 billion in 2025. An October 2025 report noted that the interest coverage ratio had been below 1 for three years. Further capital spending while borrowing costs are high could further reduce financial room."
    }
   },
   {
    "title": {
-    "ko": "재무 레버리지 급증에 따른 부담",
-    "en": "Burden from Sharply Increased Financial Leverage"
+    "ko": "파생상품 평가손익의 변동성",
+    "en": "Volatility from derivative valuation"
    },
    "body": {
-    "ko": "부채비율은 2022년 46.9%에서 2025년 507.4%로 크게 상승했다. 같은 기간 자본총계는 2022년 2,033억원에서 2025년 1,065억원으로 줄어들었다. 신사업 투자와 누적 손실이 겹치며 재무구조가 빠르게 악화된 점은 향후 추가 자금조달 필요성으로 이어질 수 있다.",
-    "en": "The debt ratio rose sharply from 46.9% in 2022 to 507.4% in 2025. Over the same period, total equity fell from KRW 203.3bn in 2022 to KRW 106.5bn in 2025. The rapid deterioration in the balance sheet structure, driven by a combination of new business investment and accumulated losses, could lead to a need for additional financing going forward."
+    "ko": "2025년 당기순손실 1,056억원은 지배주주 순손실 767억원보다 크며, 주된 차이는 상환전환우선주 관련 파생상품 평가 비용 약 574억원이다. 회사는 이 비용이 현금 유출을 수반하지 않는다고 설명했다. 2026년 11월 13일 공시된 파생상품 평가손실도 약 53억원 규모로 같은 항목이 계속 손익에 반영되고 있다. 기업가치가 오르면 평가 비용이 커지는 구조라 순손익의 변동성이 크다.",
+    "en": "The 2025 net loss including non-controlling interests of KRW 105.6 billion was larger than the controlling-shareholder net loss of KRW 76.7 billion, mainly because of about KRW 57.4 billion in derivative valuation costs on redeemable convertible preferred shares. The company said this cost involves no cash outflow. A valuation loss of about KRW 5.3 billion disclosed on November 13, 2026 shows the same item still affects reported earnings. Because the cost rises as the subsidiary's valuation rises, net income swings are large."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중도 리스크",
-    "en": "Customer Concentration Risk"
+    "ko": "전해액 램프업과 가동률",
+    "en": "Electrolyte ramp-up and utilization"
    },
    "body": {
-    "ko": "반도체·OLED 매출의 상당 부분이 삼성전자와 삼성디스플레이에 집중돼 있어 특정 고객사의 투자 계획이나 공급망 전략 변화가 실적에 직접적인 영향을 줄 수 있다. 신규 고객사 다변화가 진행 중이지만 아직 초기 단계다.",
-    "en": "A significant portion of semiconductor and OLED revenue is concentrated with Samsung Electronics and Samsung Display, meaning changes in these customers' investment plans or supply chain strategies could directly affect results. Customer diversification efforts are underway but remain at an early stage."
+    "ko": "북미 전해액 공장의 매출이 본격화되더라도 손익분기점 도달 시점이 연결 실적 개선의 관건으로 꼽힌다. 감가상각비와 초기 운영 비용이 계속 반영되면 매출이 늘어도 영업손실이 이어질 수 있다. 2026년 1분기부터 3분기까지 영업손실이 이어진 것이 이 구조를 보여 준다. 고객 확보와 가동률 상승이 지연되면 설비 투자 회수가 늦어진다.",
+    "en": "Even as North American electrolyte sales ramp up, the timing of break-even is seen as the key to consolidated earnings improvement. Depreciation and early operating costs can keep operating losses in place even as revenue grows. Losses continuing from the first quarter through the third quarter of 2026 show this pattern. If customer wins and utilization are delayed, the recovery of capital spending slows."
    }
   },
   {
    "cat": {
-    "ko": "북미 공장 가동률 리스크",
-    "en": "North American Plant Utilization Risk"
+    "ko": "고객 집중과 업황 의존",
+    "en": "Customer concentration and industry dependence"
    },
    "body": {
-    "ko": "이차전지 전해액 사업은 글로벌 완성차·셀 제조사와의 신규 계약 확보 속도에 실적이 크게 좌우된다. 예상된 고객사 확보가 지연되거나 ESS·전기차 수요 회복이 늦어질 경우 가동률 상승 시점이 뒤로 밀릴 수 있다.",
-    "en": "The battery electrolyte business's performance is heavily dependent on the pace of securing new contracts with global automakers and cell manufacturers. If expected customer acquisitions are delayed or ESS/EV demand recovery is slower than anticipated, the timing of utilization improvement could be pushed back."
+    "ko": "주요 고객은 삼성전자, 삼성디스플레이, SK온 등으로 특정 고객과 업황에 대한 의존도가 높다. 반도체 매출은 2025년 추정으로 전체의 약 절반이며, 삼성전자 3D NAND 투자 속도에 따라 HCDS 수요가 달라진다. OLED 부문도 기존 고객사 내 점유율 회복이 전제된다. 한 고객의 설비 투자 조정이 매출에 바로 영향을 줄 수 있다.",
+    "en": "Major customers include Samsung Electronics, Samsung Display and SK On, so the company depends heavily on a few clients and on their industry conditions. Semiconductors were estimated at around half of 2025 sales, and HCDS demand depends on the pace of Samsung Electronics' 3D NAND investment. The OLED outlook assumes share recovery at existing customers. A change in one customer's capital spending could affect revenue directly."
    }
   },
   {
    "cat": {
-    "ko": "비현금성 회계 변동성",
-    "en": "Non-Cash Accounting Volatility"
+    "ko": "자본구조와 정책 변수",
+    "en": "Capital structure and policy variables"
    },
    "body": {
-    "ko": "덕산일렉테라 관련 상환전환우선주(RCPS)의 파생상품 평가손익은 자회사 기업가치 변동에 따라 매 분기 큰 폭으로 변동할 수 있다. 2025년에는 덕산일렉테라 기업가치 상승에 따라 약 574억원의 파생상품 평가 비용이 추가 반영됐으며, 이는 실제 현금 유출이 없는 회계 처리 항목이지만 순이익 지표의 해석을 어렵게 만든다.",
-    "en": "Derivative valuation gains or losses related to Deoksan Electera's redeemable convertible preferred stock (RCPS) can swing significantly each quarter depending on changes in the subsidiary's enterprise value. In 2025, an additional derivative valuation expense of roughly KRW 57.4bn was recognized due to a rise in Deoksan Electera's enterprise value, a non-cash accounting item with no actual cash outflow, but it complicates interpretation of net income figures."
+    "ko": "부채비율이 507.4%(2025년 말)에 이르고 상환전환우선주가 남아 있어, 전환 시점과 조건에 따라 자본과 손익 구조가 달라질 수 있다. 회사는 보통주 전환 시 파생상품 평가손실이 자본으로 옮겨져 재무구조가 개선된다고 밝혔다. 북미 전해액 전략은 인플레이션감축법(IRA) 등 미국 정책에 기대는 부분이 있어 정책이 바뀌면 수요 가정이 달라질 수 있다.",
+    "en": "With a debt-to-equity ratio of 507.4% at the end of 2025 and redeemable convertible preferred shares still outstanding, the capital and earnings structure could change depending on conversion timing and terms. The company said conversion into common stock would move the derivative loss into equity and improve the capital structure. The North American electrolyte strategy partly relies on US policy such as the Inflation Reduction Act, so a policy change could alter demand assumptions."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중순",
-    "en": "Mid-November 2026"
+    "ko": "2026년 12월",
+    "en": "December 2026"
    },
    "what": {
-    "ko": "2026년 3분기 보고서 공시 예정. 매출 성장세가 이어지는지, 영업손실 규모가 실제로 줄어드는지 확인이 필요하다.",
-    "en": "The Q3 2026 quarterly report is due. It will be important to confirm whether revenue growth continues and whether the operating loss actually narrows."
+    "ko": "GMP 2공장 준공 예정 시점이다. 준공이 예정대로 이뤄지는지와 이후 의약품 중간체 매출 반영 속도가 다음 확인 지점이다.",
+    "en": "Scheduled completion of the GMP No. 2 plant. Whether completion proceeds on schedule and how quickly pharmaceutical sales are recognized afterward are the next items to check."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기",
-    "en": "Q4 2026"
+    "ko": "2027년 상반기",
+    "en": "First half 2027"
    },
    "what": {
-    "ko": "의약품 중간체 2공장 준공 일정 진행 여부를 확인해야 한다. 이후 2027년 상반기로 예정된 K-GMP 인증 절차 개시 여부도 관전 포인트다.",
-    "en": "Progress on the completion of the second pharmaceutical intermediate plant should be checked. Whether the K-GMP certification process scheduled for the first half of 2027 begins on time is also worth watching."
+    "ko": "K-GMP 인증 확보가 예상된 시점이다. 인증 이후에야 본격 양산에 들어갈 수 있다는 보도가 있어, 인증 여부가 의약품 매출 전망의 전제가 된다.",
+    "en": "Expected timing for K-GMP certification. Reports say full-scale production would follow certification, so certification is a precondition for the pharmaceutical sales outlook."
    }
   },
   {
    "when": {
-    "ko": "분기별 공시 시점마다",
-    "en": "At each quarterly disclosure"
+    "ko": "2027년 3월 말까지",
+    "en": "By end-March 2027"
    },
    "what": {
-    "ko": "덕산일렉테라 관련 RCPS 파생상품 평가손익 규모를 재확인할 필요가 있다. 비현금성 항목의 변동성이 순이익 지표를 크게 흔들 수 있다.",
-    "en": "The size of RCPS derivative valuation gains or losses related to Deoksan Electera needs to be re-checked. Volatility in this non-cash item can significantly sway net income figures."
+    "ko": "2026년 사업보고서 제출 기한이다. 연간 영업이익의 흑자 여부, 4분기 영업손실 규모, 그리고 2026년 1분기부터 3분기까지의 분기 추세가 이어지는지를 확인하는 자리다.",
+    "en": "Deadline for the 2026 annual report. It is the point to check whether annual operating profit turns positive, the size of the fourth-quarter operating loss, and whether the quarterly trend from the first to third quarter of 2026 continues."
    }
   },
   {
    "when": {
-    "ko": "지속적 모니터링",
-    "en": "Ongoing monitoring"
+    "ko": "2027년 5월 중순까지",
+    "en": "By mid-May 2027"
    },
    "what": {
-    "ko": "북미 테네시 전해액 공장의 가동률 상승 속도와 글로벌 완성차·셀 제조사 대상 신규 고객사 확보 관련 공시를 추적해야 한다.",
-    "en": "Disclosures on the pace of utilization increase at the Tennessee electrolyte plant and new customer acquisitions among global automakers and cell manufacturers should be tracked."
+    "ko": "2027년 1분기 분기보고서 제출 기한이다. 북미 전해액 매출의 분기별 증가가 영업손실 축소로 이어지는지와 파생상품 평가손익의 반영 규모를 확인할 수 있다.",
+    "en": "Deadline for the first-quarter 2027 report. It shows whether quarterly growth in North American electrolyte sales narrows operating losses and how much derivative valuation gain or loss is booked."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "덕산테코피아는 반도체·OLED 본업의 매출 성장과 이차전지·바이오 신사업의 투자 비용이 동시에 진행되는 전환기에 있다. 2025년까지 3년 연속 영업손실이 확대됐고 2026년 상반기에도 매출은 분기 연속 최대치를 경신했지만 영업손실 규모는 크게 줄지 않았다. 증권사들은 덕산일렉테라 북미 공장의 가동률 상승과 의약품 부문의 2공장 가동을 근거로 2026~2027년 실적 개선을 전망하고 있으나, 이는 아직 실현되지 않은 추정치다. 부채비율이 급등한 점과 RCPS 관련 비현금성 손익 변동성은 재무 지표 해석을 복잡하게 만드는 요인이다. 향후 분기 실적에서 영업손실이 실제로 축소되는지, 이차전지 자회사의 가동률이 계획대로 올라오는지가 핵심 관찰 포인트가 될 것이다.",
-   "en": "Duksan Techopia is at a transition point where revenue growth in its core semiconductor and OLED business coincides with ongoing investment costs in new battery and biopharma ventures. Operating losses widened for three consecutive years through 2025, and while revenue set consecutive quarterly records in H1 2026, the operating loss did not narrow meaningfully. Brokerages project earnings improvement in 2026-2027 based on rising utilization at Deoksan Electera's North American plant and the launch of a second pharmaceutical plant, but these remain unrealized estimates. A sharp rise in the debt ratio and volatility from RCPS-related non-cash items complicate interpretation of financial metrics. Whether the operating loss actually narrows in upcoming quarters and whether the battery subsidiary's utilization rises as planned will be the key points to watch."
+   "ko": "덕산테코피아는 2025년 매출 1,121억원(전년 대비 12.4% 증가)과 2026년 3분기 매출 518억원(3개 분기 연속 증가)으로 외형은 커지고 있다. 반도체 소재에서는 삼성전자 3D NAND 공정 내 HCDS 점유율이 60~70%로 소개되어 본업의 기반이 있다. 반면 영업손실은 2025년 430억원에서 2026년 1분기부터 3분기까지 분기 적자가 이어져 손익 전환은 아직 공시 실적으로 확인되지 않았다. 재무 측면에서는 2025년 말 부채비율 507.4%와 영업활동 현금흐름 적자가 부담으로 남아 있다. 파생상품 평가 비용이 순손익 변동을 키우는 구조도 실적 해석을 어렵게 만든다. 북미 전해액과 의약품 중간체는 2026년 12월 준공과 2027년 상반기 인증이라는 일정이 남아 있어 사업 성과는 그 이후에 판단할 수 있다. 다음 정기보고서인 2026년 사업보고서에서 연간 영업이익의 부호와 4분기 영업손실 규모가 가장 직접적인 확인 지점이다.",
+   "en": "Duksan Techopia's revenue is growing, with KRW 112.1 billion in 2025 (up 12.4%) and KRW 51.8 billion in the third quarter of 2026, which marked three straight quarters of growth. In semiconductor materials, it is cited as holding a 60–70% share of HCDS in Samsung Electronics' 3D NAND process, which provides a base for the core business. Operating losses widened to KRW 43 billion in 2025, and reported quarterly losses continued from the first through the third quarter of 2026, so a profit turn has not yet appeared in reported results. On the balance sheet, the debt-to-equity ratio of 507.4% at the end of 2025 and negative operating cash flow remain burdens. Derivative valuation costs on redeemable convertible preferred shares add swings to net income and complicate interpretation. North American electrolyte and pharmaceutical intermediates have schedules for completion in December 2026 and certification in the first half of 2027, so their results can be judged after those points. The most direct check is the sign of annual operating profit and the size of the fourth-quarter loss in the 2026 annual report, the next periodic filing."
   }
  },
  "sources": [
-  "https://www.erountv.com/news/articleView.html?idxno=2441",
-  "https://www.sks.co.kr/data1/research/qna_file/20260416070906876_0_ko.pdf",
-  "https://news.nate.com/view/20260316n35960",
-  "https://v.daum.net/v/20260317094545049",
-  "https://www.pinpointnews.co.kr/news/articleViewAmp.html?idxno=454974",
-  "https://www.geetip.com/%EB%8D%95%EC%82%B0%ED%85%8C%EC%BD%94%ED%94%BC%EC%95%84-%EC%A3%BC%EA%B0%80-%EC%A0%84%EB%A7%9D-%EB%B0%98%EB%8F%84%EC%B2%B4-%EB%B3%B8%EC%97%85-%ED%9A%8C%EB%B3%B5%EA%B3%BC-2%EC%B0%A8%EC%A0%84%EC%A7%80/",
-  "http://www.dailyinvest.kr/news/articleView.html?idxno=70548",
+  "https://zdnet.co.kr/view/?no=20260316175234",
+  "https://www.thelec.kr/news/articleView.html?idxno=56267",
   "https://core.asiae.co.kr/article/2026041609350544677",
-  "https://v.daum.net/v/20260416093700155",
-  "https://www.geetip.com/2026-%ED%95%98%EB%B0%98%EA%B8%B0-%EC%86%8C%EB%B6%80%EC%9E%A5-%EB%A5%B4%EB%84%A4%EC%83%81%EC%8A%A4-ai-%EB%B0%98%EB%8F%84%EC%B2%B4%EC%99%80-%EB%B6%81%EB%AF%B8-ess%EA%B0%80-%EC%97%AC%EB%8A%94-%EB%B0%B8/",
-  "http://www.leading.co.kr/download?boardClassification=research&atchFileId=FILE_000000000077084",
-  "https://kr.investing.com/equities/duksan-techopia-co-ltd-earnings",
-  "https://www.catch.co.kr/Comp/CompInfo/488198",
-  "https://www.next-securities.com/board/FileDown.do?atchFileId=FILE_000000000012029&streFileNm=BBS_202604280104594490",
-  "https://comp.wisereport.co.kr/company/c1050001.aspx?cmp_cd=317330&cn=",
-  "https://m.finance.daum.net/quotes/A317330/news/disclosure/20260316029515",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=yRFBJLDldgrlgvSm",
-  "https://markets.hankyung.com/stock/317330/consensus"
+  "https://www.erountv.com/news/articleView.html?idxno=2441",
+  "http://www.ibtomato.com/Mobile/mView.aspx?no=16220",
+  "https://view.asiae.co.kr/en/article/2026041609350544677",
+  "https://www.thelec.kr/news/articleView.html?idxno=53602",
+  "https://eduinfom.com/invest/22379/",
+  "http://www.dailyinvest.kr/news/articleView.html?idxno=70548",
+  "https://www.theinvest.co.kr/article/1202",
+  "https://www.investing.com/equities/duksan-techopia-co-ltd-earnings",
+  "https://www.sks.co.kr/data1/research/qna_file/20260416070906876_0_ko.pdf",
+  "https://www.investing.com/equities/duksan-techopia-co-ltd-financial-summary",
+  "http://www.leadingkorea.com/popup/board/EquityResearch/detail/3171;jsessionid=8DE106060DA14C21EAE4847D14354B95?siteCd=&pageIndex=1&pageSize=10&pageUnit=10&sortColumnName=&sortDirection=&searchColumnName=SUBJECT&searchValue=&boardNo=58",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A317330",
+  "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=715428",
+  "https://v.daum.net/v/20260317094545049"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "317330",
  "name": "덕산테코피아",
  "name_en": "Duksan Techopia Co., Ltd.",
@@ -223,11 +222,11 @@
   "화학"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 09:16",
- "dataDate": "20260904",
+ "reportDate": "2026-11-14",
+ "reportTs": "2026-11-14 09:25",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-11-13",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -238,6 +237,7 @@
     "np_owner": -76700744016,
     "equity": 106475636736,
     "equity_owner": 115238876754,
+    "equity_nci": -8763240018,
     "liab": 540230144773,
     "cfo": -21390341189,
     "eps_basic": -3752,
@@ -253,6 +253,7 @@
     "np_owner": -53094246031,
     "equity": 205743613594,
     "equity_owner": 198243689578,
+    "equity_nci": 7499924016,
     "liab": 457247657885,
     "cfo": -56191200937,
     "eps_basic": -2692,
@@ -268,6 +269,7 @@
     "np_owner": -7398858439,
     "equity": 184305539033,
     "equity_owner": 176983785529,
+    "equity_nci": 7321753504,
     "liab": 330061600648,
     "cfo": -7827102760,
     "eps_basic": -408,
@@ -283,6 +285,7 @@
     "np_owner": 16061828691,
     "equity": 203286055415,
     "equity_owner": 188388701035,
+    "equity_nci": 14897354380,
     "liab": 95240671629,
     "cfo": 12253509090,
     "eps_basic": 885,
@@ -292,12 +295,6 @@
    }
   ],
   "quarterly": [
-   {
-    "q": "2025Q2",
-    "rev": 28966831580,
-    "op": -8714319572,
-    "np_owner": -5275726076
-   },
    {
     "q": "2025Q3",
     "rev": 30053402558,
@@ -321,27 +318,39 @@
     "rev": 42181814089,
     "op": -10561938963,
     "np_owner": -12242075227
+   },
+   {
+    "q": "2026Q3",
+    "rev": 51821247076,
+    "op": -11219356809,
+    "np_owner": -17354741781
    }
   ],
   "valuation": {
-   "price": 11910,
-   "mcap": 0.2439,
+   "price": 9020,
+   "mcap": 0.1847,
    "shares": 20476584,
    "total_shares": 20476584,
-   "wavg_shares": 20427141,
+   "wavg_shares": 20422774,
    "per": null,
-   "eps": -4048,
-   "pbr": 2.4506,
-   "bps": 4860,
-   "roe_ttm": -60.4,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": -82730166422,
+   "eps": -4230,
+   "pbr": 2.5097,
+   "bps": 3594,
+   "roe_ttm": -72.8,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": -86424256311,
    "ccy": "KRW",
-   "pbr_krx": 1.78,
+   "bps_src": "자체",
+   "eps_src": "공시",
+   "pbr_krx": 1.6,
    "bps_krx": 5642.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
-   "div": 0.0
+   "div": 0.0,
+   "hidden": {
+    "per": "loss"
+   }
   }
- }
+ },
+ "textRules": 2
 }

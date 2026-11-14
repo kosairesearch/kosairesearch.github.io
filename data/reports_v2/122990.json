@@ -1,220 +1,220 @@
 {
  "title": {
-  "ko": "흑자전환 국면, 지속성이 관건",
-  "en": "Back to Profit, But Durability in Question"
+  "ko": "RF 필터 분기 실적 회복, 연간 적자는 남아",
+  "en": "RF Filter Quarterly Recovery, Annual Losses Remain"
  },
  "lead": {
-  "ko": "2025년 대규모 적자를 기록한 와이솔이 2026년 상반기 두 개 분기 연속 지배주주순이익 흑자로 돌아섰지만, 매출 기반과 수익성 회복의 지속 여부는 아직 확인이 더 필요한 단계다.",
-  "en": "After a large annual loss in 2025, WiSol swung to owner net profit in both quarters of the first half of 2026, but whether the revenue base and margin recovery can be sustained still needs further confirmation."
+  "ko": "와이솔은 2025년 연간 영업손실 363억원으로 적자 전환한 뒤 2025년 4분기 이후 분기 영업이익이 대체로 흑자를 보이고 있으나, 최근 4개 분기 지배주주 순손실 합계는 119억원이다.",
+  "en": "WiSoL swung to an annual operating loss of KRW 36.3 billion in 2025, and although quarterly operating profit has mostly been positive since the fourth quarter of 2025, the controlling-shareholder net loss over the last four quarters totals KRW 11.9 billion."
  },
  "keypoints": [
   {
-   "ko": "2026년 1분기(지배주주순이익 63억원)와 2분기(18억원) 모두 흑자를 기록해 2025년 4개 분기 연속 적자 흐름에서 벗어났다.",
-   "en": "Owner net profit turned positive in both Q1 2026 (KRW 6.3bn) and Q2 2026 (KRW 1.8bn), breaking a streak of four consecutive quarterly losses in 2025."
+   "ko": "2025년 연간 매출은 3,212억원으로 전년 대비 14.3% 감소했고, 영업손실은 363억원으로 적자 전환했다.",
+   "en": "Annual revenue fell 14.3% year on year to KRW 321.2 billion in 2025, and operating loss was KRW 36.3 billion, a swing into deficit."
   },
   {
-   "ko": "2025년 연간 매출은 3,212억원으로 전년 대비 감소했고 영업손실 363억원, 지배주주순손실 414억원의 대규모 적자를 기록했다.",
-   "en": "Full-year 2025 revenue fell to KRW 321.2bn, with an operating loss of KRW 36.3bn and an owner net loss of KRW 41.4bn."
+   "ko": "2026년 3분기 매출은 913억원으로 전년 동기 대비 11.5% 증가했고, 영업이익 59.7억원으로 전년 동기 대비 흑자 전환했다.",
+   "en": "Third-quarter 2026 revenue rose 11.5% year on year to KRW 91.3 billion, and operating profit of KRW 5.97 billion turned positive from a year earlier."
   },
   {
-   "ko": "부채비율이 2022~2025년 14~17%대로 낮게 유지되며, 적자를 낸 해에도 영업활동현금흐름은 양(+)을 지켰다.",
-   "en": "The debt ratio stayed low, in the mid-teens to around 17% range from 2022-2025, and operating cash flow remained positive even in loss years."
+   "ko": "2026년 3분기 지배주주 순손실은 8.5억원으로 전년 동기 대비 적자가 이어졌으나 손실 폭은 줄었다.",
+   "en": "The controlling-shareholder net loss in the third quarter of 2026 was KRW 854 million, still in deficit but narrower than a year earlier."
   },
   {
-   "ko": "5G 확산과 자동차 전장용 RF 수요 증가가 구조적 성장 동력으로 꼽히지만, 고부가 BAW(FBAR) 필터 영역에서는 브로드컴 등 선두업체 대비 후발 지위에 있다.",
-   "en": "5G proliferation and growing automotive RF demand are cited as structural growth drivers, but the company remains a late mover versus leaders such as Broadcom in high-value BAW (FBAR) filters."
+   "ko": "2025년 말 부채비율은 17.5%, 자본총계는 2,947억원이며, 영업활동 현금흐름은 2025년 60.8억원으로 2024년 422억원에서 크게 줄었다.",
+   "en": "At the end of 2025 the debt ratio was 17.5% and total equity was KRW 294.7 billion, while operating cash flow fell to KRW 6.08 billion in 2025 from KRW 42.2 billion in 2024."
   },
   {
-   "ko": "주가는 순자산가치 대비 낮은 배수에서 거래되는 구간에 있어, 흑자 전환의 지속성 여부가 향후 평가의 핵심 변수로 남아 있다.",
-   "en": "The shares trade at a discount to book value, leaving the durability of the return to profit as the key variable for future assessment."
+   "ko": "삼성전자향 매출 비중 55%, 중국향 40%(2025년 9월 증권사 리포트 기준)로 고객 집중도가 높아 두 고객의 출하와 중국 경쟁이 실적을 좌우한다.",
+   "en": "Per a securities report from September 2025, Samsung Electronics accounted for 55% of sales and China-bound sales for 40%, so customer concentration makes shipments and China competition key earnings drivers."
   }
  ],
  "business": {
-  "ko": "와이솔은 2008년 삼성전기 무선주파수(RF) 사업부에서 분사해 설립된 후 2010년 코스닥에 상장한 RF 프론트엔드 전문 기업이다. 휴대폰에 탑재되는 SAW(표면탄성파) 필터와 듀플렉서, 이를 반도체 소자와 결합한 RF 모듈을 생산·판매하는 RF Front End 사업을 주력으로 영위한다. 2023년 기준 사업부문별 매출액 비중은 SAW 제품군이 54%, 필터·모듈이 46%였던 것으로 파악된다. 고객사별로는 삼성전자향이 약 56%, 중화권 모바일 고객향이 41% 이상을 차지하는 구조로 알려져 있어, 매출 대부분이 모바일 시장에 집중돼 있다. 생산은 한국 본사에서 웨이퍼 전공정을 담당하고 이를 거친 웨이퍼가 중국·베트남 생산법인에서 후공정을 거쳐 완제품으로 제조되는 분업 체계를 갖추고 있다. RF 모듈에 필요한 스위치·저잡음증폭기·전력증폭기 등 IC 소자는 계열사 NRLab을 통해 조달하며 부품 내재화를 추진하고 있다. 회사는 해외 3개, 국내 1개 등 총 4개의 계열회사를 보유하고 있으며, 지주회사 대덕(옛 대덕전자)이 현재 와이솔의 최대주주로서 반도체 기판과 통신부품 사업 간 시너지를 모색하고 있다. RF 모듈에서는 LFEM 제품이 삼성전자 내에서 약 60%의 점유율을 확보한 것으로 알려진 반면, 후발 제품인 FEMiD 등은 상대적으로 낮은 점유율을 가진 것으로 추정되며, 최근에는 자동차 전장용 RF 부품으로 사업 영역을 확장하며 매출원 다각화를 진행 중이다.",
-  "en": "WiSol was established in 2008 as a spin-off from Samsung Electro-Mechanics' radio-frequency (RF) business unit and listed on KOSDAQ in 2010. Its core business is RF Front End, producing and selling SAW (surface acoustic wave) filters and duplexers used in mobile phones, along with RF modules that integrate these with semiconductor devices. As of 2023, revenue mix by segment was reported at roughly 54% for SAW products and 46% for filter/module products. By customer, sales are said to be concentrated at around 56% to Samsung Electronics and over 41% to Chinese mobile customers, meaning the vast majority of revenue is tied to the mobile market. Production is split so that front-end wafer processing is handled at the Korean headquarters, with wafers then sent to production subsidiaries in China and Vietnam for back-end packaging into finished products. IC components needed for RF modules, such as switches, low-noise amplifiers, and power amplifiers, are increasingly sourced through affiliate NRLab as part of an internalization push. The company holds four affiliates in total, three overseas and one domestic, and its current largest shareholder is holding company Daedeok (formerly Daeduck Electronics), which seeks synergy between semiconductor substrate and communication component businesses. In RF modules, the LFEM product is reported to hold roughly 60% share within Samsung Electronics, while later-entry products such as FEMiD are believed to hold comparatively lower share, and the company has more recently been expanding into automotive electronics RF components to diversify its revenue base."
+  "ko": "와이솔은 휴대폰에 쓰이는 무선주파수(RF) 부품을 만드는 회사로, SAW 필터와 듀플렉서, 이를 능동 소자와 결합한 RF 모듈이 주력 제품이다. 2023년 매출은 SAW 필터 1,985억원, 필터 모듈 1,712억원으로 집계됐고, 모듈 비중은 전체 매출의 40%를 웃돌았다(2024년 4월 증권사 리포트 기준). 모듈에 들어가는 스위치·저잡음 증폭기(LNA)·전력 증폭기(PA) 같은 IC는 외부 팹리스 조달 비용을 줄이기 위해 대덕 계열 자회사 NRLab을 통해 공급받는 방식으로 내재화를 추진해 왔다. 같은 리포트는 2024년 모듈 생산에 필요한 반도체 설계 내재화율을 80%로 전망했다. 생산 거점은 국내 오산(연구개발·FAB) 외에 중국 천진과 베트남 박닌으로, 중국·베트남 법인은 생산 법인이고 일본 법인은 개발 거점이다. 고객은 국내외 휴대폰 제조사이며, 2025년 9월 증권사 리포트 기준 삼성전자향 매출 비중은 55%, 중국향은 40%였다. 중국에서는 오포·비보·샤오미 등 현지 스마트폰 업체에 RF 필터를 공급하고 있다. 회사는 단품 SAW 필터에서 모듈로 사업 범위를 넓혀 고객사 내 채용 범위를 키우는 전략을 취해 왔다. 다만 중국 내수 업체와의 경쟁 심화로 통신모듈 판가 하락과 수익성 악화가 이어졌다는 평가가 나왔다.",
+  "en": "WiSoL makes radio frequency (RF) components for mobile phones, with SAW filters, duplexers and RF modules that combine them with active devices as its core products. Per a securities report from April 2024, 2023 sales were split into KRW 198.5 billion for SAW filters and KRW 171.2 billion for filter modules, and module sales accounted for more than 40% of total revenue. The company has pursued in-house design of the IC parts used in its modules, supplied through its NRLab affiliate, and that report projected an in-house design rate of 80% for module production in 2024. Production sits in China (Tianjin) and Vietnam (Bac Ninh), with the Chinese and Vietnamese units serving as manufacturing entities and the Japanese unit as a development base. Per a September 2025 securities report, Samsung Electronics accounted for 55% of sales and China-bound sales for 40%, with Chinese smartphone makers such as OPPO, vivo and Xiaomi among the RF filter customers. Competition from Chinese domestic module makers has pushed down module prices and weighed on profitability."
  },
  "earnings": {
-  "ko": "와이솔의 연간 실적은 최근 4년간 뚜렷한 등락을 보였다. 2022년에는 매출 3,459억원에 영업손실 130억원, 지배주주순손실 148억원(영업이익률 -3.8%)을 기록했으나, 2023년에는 매출이 3,697억원으로 늘고 영업이익 135억원, 지배주주순이익 132억원으로 흑자 전환하며 영업이익률이 3.6%까지 개선됐다. 2024년에는 매출이 3,750억원으로 소폭 증가했지만 영업이익은 4.6억원 수준으로 급감(영업이익률 0.1%)했고, 지배주주순이익은 110억원을 기록했다. 2025년에는 매출이 3,212억원으로 전년 대비 크게 줄고 영업손실 363억원, 지배주주순손실 414억원(영업이익률 -11.3%)의 대규모 적자로 전환됐는데, 이는 중화권 고객향 경쟁 심화 등 구조적 요인이 반영된 결과로 풀이된다. 분기별로는 2025년 2분기(영업손실 210억원, 순손실 138억원)와 3분기(영업손실 38억원, 순손실 14억원)까지 적자가 이어졌고, 4분기에는 영업손익이 0.6억원으로 손익분기점에 근접했으나 지배주주순손실은 191억원으로 오히려 확대돼 영업외 부문에서 큰 손실 요인이 있었던 것으로 추정된다. 그러나 2026년 1분기에는 매출이 972억원으로 크게 늘고 영업이익 21억원, 지배주주순이익 63억원으로 흑자 전환에 성공했으며, 외부 데이터에서도 2026년 1분기 연결기준 매출액이 전년동기 대비 13.8% 증가하고 영업이익과 당기순이익이 모두 흑자로 전환됐다는 점이 확인된다. 이어 2026년 2분기에는 매출 813억원, 영업손실 18억원을 기록해 영업손익은 다시 적자로 돌아섰지만 지배주주순이익은 18억원으로 두 개 분기 연속 순이익 흑자를 유지했다. 재무구조 측면에서는 부채비율이 2022~2025년 14~17%대(2025년 17.5%)에서 안정적으로 유지됐고, 영업활동현금흐름도 2025년 61억원으로 적자 연도임에도 양(+)의 흐름을 지켰다.",
-  "en": "WiSol's annual results have swung markedly over the past four years. In 2022, revenue was KRW 345.9bn with an operating loss of KRW 13.0bn and an owner net loss of KRW 14.8bn (operating margin -3.8%), but in 2023 revenue rose to KRW 369.7bn with operating profit of KRW 13.5bn and owner net profit of KRW 13.2bn, lifting the operating margin to 3.6%. In 2024, revenue edged up slightly to KRW 375.0bn, but operating profit collapsed to about KRW 0.46bn (margin 0.1%), while owner net profit came in at KRW 11.0bn. In 2025, revenue dropped sharply to KRW 321.2bn and the company swung to a large operating loss of KRW 36.3bn and an owner net loss of KRW 41.4bn (operating margin -11.3%), a deterioration attributed to intensifying competition from Chinese customers, among other structural factors. On a quarterly basis, losses persisted through Q2 2025 (operating loss of KRW 21.0bn, net loss of KRW 13.8bn) and Q3 2025 (operating loss of KRW 3.8bn, net loss of KRW 1.4bn); in Q4 2025 the operating result was near breakeven at about KRW 0.06bn, yet the owner net loss actually widened to KRW 19.1bn, suggesting a large non-operating loss factor. However, Q1 2026 revenue jumped to KRW 97.2bn with operating profit of KRW 2.1bn and owner net profit of KRW 6.3bn, and external data likewise confirm that consolidated revenue rose 13.8% year-on-year in Q1 2026 with both operating profit and net profit turning positive. Q2 2026 revenue came in at KRW 81.3bn with an operating loss of KRW 1.8bn, meaning operating results slipped back into the red, but owner net profit stayed positive at KRW 1.8bn, marking two straight quarters of net profit. On the balance sheet, the debt ratio remained stable in the mid-teens to around 17% range from 2022-2025 (17.5% in 2025), and operating cash flow stayed positive at KRW 6.1bn in 2025 despite the annual loss."
+  "ko": "연간 매출은 2022년 3,459억원에서 2023년 3,697억원(전년 대비 6.9% 증가), 2024년 3,750억원(전년 대비 1.4% 증가)으로 늘었고, 2025년에는 3,212억원(전년 대비 14.3% 감소)으로 줄었다. 2024년이 2022~2025년 중 가장 큰 해이고 2025년이 가장 작은 해다. 영업이익은 2022년 영업손실 130억원에서 2023년 영업이익 135억원으로 흑자 전환했으나, 2024년 4.6억원(전년 대비 96.6% 감소)으로 줄었고 2025년에는 영업손실 363억원으로 적자 전환했다. 2023년 수익성 회복은 매출원가율 개선에서 나왔으며, 2024년 4월 증권사 리포트는 외부 조달 부품의 설계 내재화와 2016~2020년 증설에 따른 감가상각비 부담 완화를 원인으로 꼽았다. 영업이익률은 2022년 -3.8%, 2023년 3.6%, 2024년 0.1%, 2025년 -11.3%로 움직였다. 지배주주 순이익은 2023년 132억원 흑자 전환 후 2024년 110억원(전년 대비 16.4% 감소)을 기록했고, 2025년에는 순손실 414억원으로 적자 전환했다. 당기순이익(비지배지분 포함)은 2025년 당기순손실 421억원으로 지배주주 순이익과 다른 값이다. 부채비율은 2022년 17.2%, 2023년 14.1%, 2024년 14.5%에서 2025년 17.5%로 올랐다. 분기로 보면 2025년 4분기 영업이익 5,539만원으로 흑자 전환했으나 지배주주 순손실은 191억원으로 확대됐다. 2026년 1분기 매출 972억원(전 분기 대비 27.8% 증가), 영업이익 21.3억원, 지배주주 순이익 62.8억원으로 흑자 전환했고, 2분기에는 매출 813억원에 영업손실 18.4억원으로 적자로 돌아섰다. 2026년 3분기 매출은 913억원(전 분기 대비 12.2% 증가, 전년 동기 대비 11.5% 증가), 영업이익은 59.7억원이었다. 최근 4개 분기 지배주주 순손실 합계는 119억원이다.",
+  "en": "Annual revenue rose from KRW 345.9 billion in 2022 to KRW 369.7 billion in 2023 (up 6.9%) and KRW 375 billion in 2024 (up 1.4%), then fell 14.3% to KRW 321.2 billion in 2025. 2024 was the largest year and 2025 the smallest within 2022 to 2025. Operating profit swung from an operating loss of KRW 13 billion in 2022 to KRW 13.5 billion in 2023, then dropped 96.6% to KRW 461 million in 2024 and turned into an operating loss of KRW 36.3 billion in 2025. The 2023 margin recovery came from lower cost of sales, and a securities report from April 2024 pointed to in-house design of purchased parts and a smaller depreciation burden after the 2016 to 2020 capacity expansion. Operating margin moved from -3.8% in 2022 to 3.6% in 2023, 0.1% in 2024 and -11.3% in 2025. Controlling-shareholder net income went from KRW 13.2 billion in 2023 to KRW 11 billion in 2024 (down 16.4%), then a controlling-shareholder net loss of KRW 41.4 billion in 2025. Net income including noncontrolling interests, a different figure, was a net loss of KRW 42.1 billion in 2025. The debt ratio climbed to 17.5% in 2025 from 14.5% in 2024. In the fourth quarter of 2025 operating profit of KRW 55.39 million offset a controlling-shareholder net loss of KRW 19.1 billion, a gap that points to non-operating items. The first quarter of 2026 posted revenue of KRW 97.2 billion, operating profit of KRW 2.13 billion and controlling-shareholder net income of KRW 6.28 billion. The second quarter returned to an operating loss of KRW 1.84 billion on revenue of KRW 81.3 billion. The third quarter of 2026 reported revenue of KRW 91.3 billion and operating profit of KRW 5.97 billion. The controlling-shareholder net loss over the last four quarters totals KRW 11.9 billion."
  },
  "industry": {
-  "ko": "RF 프론트엔드 산업은 스마트폰의 통신 세대 진화에 따라 단말기당 필터 탑재 개수가 늘어나는 구조적 성장 산업으로 평가된다. 5G 대중화로 고성능 Acoustic Filter와 모듈 수요가 급증하며 스마트폰 증가에 따라 SAW 제품군 매출이 개선되는 흐름이 이어지고 있고, 통신기능 확대와 IoT 상용화, 자동차 전장 수요 증가에 힘입어 RF Front End 사업의 지속 성장이 전망된다는 평가가 나온다. 다만 산업 내 경쟁 구도는 이원화돼 있는데, 저·중가 SAW 필터 영역에서는 중국 업체들의 저가 공세가 심화되며 가격 경쟁력이 약화되는 반면, 고부가 BAW(FBAR) 필터 영역은 브로드컴이 절대적 우위를 지니고 있는 영역으로 난이도가 높고 판가도 비싸다는 평가가 있어 진입장벽이 높은 편이다. 와이솔은 RF Module에서 주력으로 생산하는 제품이 LFEM과 FEMiD이고 삼성전자 내 LFEM 점유율은 약 60% 수준으로 알려졌으나, 후발 제품인 FEMiD와 BAW 계열은 상대적으로 점유율이 낮은 것으로 추정된다. 전방산업인 스마트폰 시장은 삼성전자와 중화권 제조사의 신모델 출시 주기와 판매량에 실적이 연동되는 특성이 있어, 특정 고객사의 판매 부진이 곧바로 매출 변동으로 이어지는 구조다. 자동차 전장용 RF 모듈 수요는 아직 매출 비중이 작지만 품질경영시스템 인증 등을 통해 신규 성장축으로 육성되고 있다.",
-  "en": "The RF front-end industry is generally viewed as a structural growth market, since the number of filters used per handset tends to rise as mobile communication standards evolve. Demand for high-performance acoustic filters and modules is said to be surging with the spread of 5G, improving SAW product sales as smartphone volumes increase, and RF Front End business growth is expected to continue on the back of expanding connectivity, IoT commercialization, and rising automotive electronics demand. However, the competitive landscape is bifurcated: in low- and mid-tier SAW filters, intensifying low-price competition from Chinese makers is eroding price competitiveness, while in high-value BAW (FBAR) filters, Broadcom is described as holding an overwhelming advantage in a technically difficult, higher-priced segment with high barriers to entry. Within RF modules, WiSol's main products are LFEM and FEMiD, with LFEM reportedly holding around 60% share inside Samsung Electronics, while later-entry products such as FEMiD and BAW-class filters are believed to have comparatively lower share. The downstream smartphone market ties results closely to the new-model launch cycles and sales volumes of Samsung Electronics and Chinese manufacturers, so weak sales at a single customer can directly translate into revenue swings. Automotive RF module demand still represents a small share of revenue but is being cultivated as a new growth pillar through quality management system certification."
+  "ko": "와이솔의 전방 시장은 스마트폰이다. 2025년 9월 증권사 리포트는 폴더블폰 신제품 출시로 통신모듈 출하가 늘고 있다고 짚었다. 같은 리포트에 따르면 삼성전자향 매출 비중은 55%, 중국향은 40%로, 두 고객의 출하 흐름이 실적 방향을 좌우하는 구조다. 업황의 긍정 요인은 5G 이후 주파수 대역이 늘면서 단말 한 대당 필터와 RF 모듈의 탑재 수량과 가치가 올라가는 구조라는 점이다. 반면 같은 리포트는 중국 통신모듈 산업 내 경쟁 격화로 중국향 실적 부진이 장기화 조짐을 보인다고 평가했다. 중국 내수 업체와의 경쟁으로 판가 하락과 수익성 악화가 이어졌다는 것이다. 사이클 위치로 보면 2025년 연간 매출이 줄었고, 2026년 1분기 972억원까지 회복한 뒤 2분기 813억원으로 다시 줄었다가 3분기 913억원으로 반등해 분기 등락이 큰 국면이다. 경쟁 구도에서 와이솔은 SAW 필터 단품 공급자에서 RF 모듈 공급자로 올라서는 전략을 취하고 있다. 고부가 모듈 영역에서는 일본과 미국 RF 업체가 우위를 가진 것으로 알려져 있어, 와이솔이 이 영역에서 점유율을 넓히는지가 중요하다. 중국 OEM 비중이 높은 만큼, 중국 판가 흐름과 국내 고객의 모델 채용 확대가 업황 해석의 두 축이다.",
+  "en": "WiSoL's end market is smartphones. A September 2025 securities report noted that shipments of communication modules were rising on new foldable phone launches. Per the same report, Samsung Electronics accounted for 55% of sales and China-bound sales for 40%, so shipments to these two customers largely set the direction of earnings. A positive industry factor is that as 5G adds frequency bands, the number and value of filters and RF modules per handset rise. The same report, however, judged that weak China-bound earnings could persist for a long time as competition intensifies in China's communication module industry. Competition from Chinese domestic makers has kept module prices falling and profitability under pressure. In the cycle, annual revenue fell in 2025, recovered to KRW 97.2 billion in the first quarter of 2026, eased to KRW 81.3 billion in the second quarter, and rebounded to KRW 91.3 billion in the third quarter, a choppy pattern. On competitive position, WiSoL is moving from a supplier of standalone SAW filters toward a supplier of RF modules. Japanese and US RF makers are widely regarded as holding an edge in high-value module segments, so whether WiSoL gains share there matters. Because Chinese OEM exposure is high, China pricing trends and the pace of adoption at domestic customers frame the industry read."
  },
  "outlook": {
-  "ko": "회사는 5G 스마트폰 보급 확대와 전장용 RF 수요 증가를 성장 동력으로 삼고 있으며, RF 모듈 업체와의 협업 체계를 바탕으로 통신기능 확대와 IoT 상용화, 자동차 전장 수요 증가에 힘입어 RF Front End 사업의 지속 성장이 전망된다는 외부 평가가 나온다. 2026년 1분기 실적이 매출·영업이익·순이익 모두 개선되며 적자에서 벗어난 것은 향후 분기 실적 안정화 여부를 가늠하는 데 중요한 참고점이 될 수 있다. 과거 한 증권사 리포트(2024년)는 고주파 필터와 송신부(Tx) 모듈 라인업 확장을 통해 장기 성장의 초석을 마련하는 단계라고 진단한 바 있어, 신제품 다각화가 중장기 매출 구조에 어떤 영향을 미칠지 지켜볼 필요가 있다. 같은 리포트는 과거 수년간의 대규모 자본적지출과 이후의 감가상각비 부담이 실적을 눌러왔으나 감가상각비 부담이 정점을 지났고 핵심 원재료 내재화도 성과를 냈다고 평가했는데, 이러한 비용 구조 개선이 2026년 실적 회복에 실제로 얼마나 반영되고 있는지는 추가 분기 실적을 통해 확인이 필요하다. 다만 이 평가는 2024년 시점의 것으로 이후 중국 시장 경쟁 심화 등 변수가 발생한 만큼 현재 시점에 그대로 적용하기는 어렵다. HS(고성능) 필터, FBAR(BAW) 필터, PAMiD 등 고부가 신제품의 국내외 고객사 확대 속도가 향후 매출 믹스 개선의 핵심 변수로 남아 있다.",
-  "en": "The company is positioning 5G smartphone adoption and rising automotive RF demand as growth drivers, and external commentary suggests continued growth for the RF Front End business is expected on the back of collaboration with RF module makers, expanding connectivity, IoT commercialization, and growing automotive electronics demand. The fact that Q1 2026 results improved across revenue, operating profit, and net profit, breaking out of losses, could serve as an important reference point for gauging whether quarterly results stabilize going forward. A past brokerage report (2024) assessed the company as laying the groundwork for long-term growth through expansion of its high-frequency filter and transmit (Tx) module lineup, so it remains worth watching how this product diversification affects the medium-term revenue structure. The same report noted that years of heavy capital expenditure and subsequent depreciation burdens had weighed on results, but that the depreciation burden had peaked and internalization of key raw materials had achieved results; how much of this cost-structure improvement is actually reflected in the 2026 earnings recovery needs confirmation through further quarterly results. That assessment, however, dates to 2024, and given subsequent developments such as intensifying competition in the Chinese market, it may not apply directly to the current situation. The pace at which high-value new products such as HS (high-performance) filters, FBAR (BAW) filters, and PAMiD gain adoption among domestic and overseas customers remains the key variable for improving the revenue mix going forward."
+  "ko": "향후 실적의 첫 확인 지점은 2026년 사업보고서다. 2026년 연간 영업이익률이 2025년 -11.3%에서 어떻게 바뀌었는지, 지배주주 순손실이 2025년 414억원 규모에서 줄었는지가 여기서 드러난다. 분기 흐름에서는 1분기 영업이익 21.3억원과 3분기 영업이익 59.7억원의 흑자가 이어질지가 관건이며, 2분기에 영업손실 18.4억원으로 다시 적자를 낸 만큼 분기 이익의 안정성이 핵심 변수다. 제품 측면에서는 2025년 9월 리포트가 짚은 폴더블폰 등 신제품 출하 확대가 RF 모듈 물량을 뒷받침할 수 있다. 원가 측면에서는 모듈 IC 설계 내재화가 매입 원가를 낮추는 방향으로 작용해 왔고, 이 효과가 이어지는지가 영업이익률 추이에서 확인된다. 반대로 중국향 판가가 추가로 내려가면 원가 개선 효과가 상쇄될 수 있다. 중국 매출 비중이 40% 수준으로 남아 있는 한 중국 OEM 경쟁의 영향은 계속된다. 2025년 영업활동 현금흐름이 60.8억원으로 줄어든 만큼, 운전자본 관리와 현금 창출력이 회복되는지도 다음 확인 항목이다. 회사가 중장기 수주나 증설 일정을 공시로 밝히는지는 향후 공시에서 확인되는 사안이다.",
+  "en": "The first checkpoint for future earnings is the 2026 annual business report. It will show whether the annual operating margin moved from -11.3% in 2025 and whether the controlling-shareholder net loss, KRW 41.4 billion in 2025, narrowed. On a quarterly basis, the question is whether the operating profits of KRW 2.13 billion in the first quarter and KRW 5.97 billion in the third quarter of 2026 continue, since the second-quarter operating loss of KRW 1.84 billion shows how thin the margin of safety is. On products, the foldable phone launches flagged in the September 2025 report could support RF module volumes. On costs, in-house IC design has lowered purchase costs, and whether that effect persists will show up in margin trends. Conversely, further price cuts on China-bound products could offset that gain. With China-bound sales still around 40% of the mix, the impact of Chinese OEM competition will persist. Because operating cash flow fell to KRW 6.08 billion in 2025, working capital management and cash generation are the next items to watch."
  },
  "valuation_comment": {
-  "ko": "와이솔은 2025년 대규모 적자를 기록한 뒤 2026년 상반기 순이익이 흑자로 전환하는 국면에 있어, 시장의 밸류에이션 판단이 과거 실적보다는 향후 이익 회복의 지속성에 더 민감하게 반응할 수 있는 구간에 있다. 주가는 순자산가치 대비 할인된 수준에서 거래되고 있어 주가순자산비율이 1배를 밑도는 구간에 위치한다. 과거 이 종목은 실적 부진기에 주가순자산비율이 낮게 형성되고 흑자 전환기에는 소폭 회복하는 패턴을 보인 바 있어, 이번 흑자 전환이 일시적 현상인지 구조적 개선인지에 따라 향후 평가 구간이 달라질 수 있다. 배당 측면에서는 최근 현금배당을 지급한 이력이 있으나 이익 변동성이 큰 만큼 배당 정책의 일관성 여부는 향후 실적 흐름에 좌우될 가능성이 있다. 이 같은 밸류에이션 판단은 투자자별 관점에 따라 달라질 수 있으며, 특정 방향성을 예단하기는 어렵다.",
-  "en": "WiSol is at a stage where net profit turned positive in the first half of 2026 after a large loss in 2025, a phase in which market valuation judgments could become more sensitive to the durability of the profit recovery than to past results. The stock trades at a discount to net asset value, sitting in a range where the price-to-book ratio is below 1x. The stock has historically shown a pattern of a low price-to-book ratio during downturns and a modest recovery during profit-turning periods, so how this valuation range evolves may depend on whether the current turn to profit proves temporary or structural. On dividends, the company has a recent history of cash dividend payments, but given high earnings volatility, the consistency of dividend policy going forward may hinge on future earnings trends. Such valuation judgments can differ by investor perspective, and it is difficult to presuppose any particular direction."
+  "ko": "최근 4개 분기 기준으로 순손실이 누적되어 주가수익비율(PER)은 산출되지 않는 상태다. 주가순자산비율(PBR)은 1배를 밑도는 구간에 있어, 2025년 말 지배주주 지분 2,939억원과 비교하면 순자산 대비 주가가 낮은 편이다. 부채총계 515억원은 자본총계 2,947억원에 비해 작은 규모다. 다만 순자산 대비 낮은 배수가 곧 주가 상승을 뜻하지는 않으며, 자본이 이익으로 얼마나 불어나는지가 배수 해석의 핵심이 된다. 배당수익률은 시가 대비 배당 규모를 보여 주는 지표이며, 배당 확정은 연간 결산 공시를 통해 이뤄진다. 2025년 영업활동 현금흐름이 60.8억원으로 줄어든 점은 배당 여력을 해석할 때 함께 놓고 보는 항목이다. 과거 적자에서 흑자로 전환한 시기에 배수 해석이 달라졌던 만큼, 분기 이익이 연간 기준으로 이어지는지가 밸류에이션 논의의 중심이 된다.",
+  "en": "Because the last four quarters carry a cumulative net loss, the price-to-earnings ratio cannot be calculated. The price-to-book ratio sits below 1x, so the share price is low relative to net assets, with the controlling-shareholder equity at KRW 293.9 billion at the end of 2025. Total liabilities of KRW 51.5 billion are small compared with total equity of KRW 294.7 billion. A low multiple on net assets does not by itself mean the share price will rise, and how far earnings rebuild equity is central to reading the multiple. Dividend yield shows the dividend relative to the market price, and dividend decisions are confirmed through the annual closing disclosure. The fall in operating cash flow to KRW 6.08 billion in 2025 is worth reading alongside dividend capacity. Because the multiple has been read differently in past swings from deficit to profit, whether quarterly profits carry into annual results is the core of the valuation discussion."
  },
  "bull": [
   {
    "title": {
-    "ko": "2026년 상반기 순이익 흑자 전환",
-    "en": "Return to Net Profit in H1 2026"
+    "ko": "분기 영업이익 흑자 전환",
+    "en": "Quarterly operating profit back in the black"
    },
    "body": {
-    "ko": "2026년 1분기와 2분기 모두 지배주주순이익이 각각 63억원, 18억원으로 흑자를 기록하며 2025년 4개 분기 연속 적자에서 벗어났다. 특히 1분기에는 매출이 972억원으로 크게 늘고 영업이익도 21억원으로 흑자 전환해 외형과 수익성이 동시에 개선됐다. 이 흐름이 3분기 이후에도 이어질지가 향후 실적 신뢰도를 가르는 요인이 될 전망이다.",
-    "en": "Owner net profit was positive in both Q1 2026 (KRW 6.3bn) and Q2 2026 (KRW 1.8bn), ending a streak of four consecutive quarterly losses in 2025. In Q1 in particular, revenue rose sharply to KRW 97.2bn and operating profit also turned positive at KRW 2.1bn, improving top line and profitability together. Whether this trend continues beyond Q3 will be a key factor for the credibility of the earnings recovery."
+    "ko": "2026년 3분기 영업이익은 59.7억원으로 전년 동기 대비 흑자 전환했고, 같은 분기 매출은 913억원으로 전년 동기 대비 11.5% 증가했다. 2026년 1분기 매출 972억원은 공시 실적 기준 최근 5개 분기 중 가장 높았다. 분기 단위에서 매출과 영업이익이 함께 회복되는 흐름이 확인된다는 점이 강세 근거다.",
+    "en": "Third-quarter 2026 operating profit of KRW 5.97 billion turned positive from a year earlier, while revenue rose 11.5% year on year to KRW 91.3 billion. First-quarter 2026 revenue of KRW 97.2 billion was the highest of the last five quarters on a reported basis. Revenue and operating profit recovering together at the quarterly level is the core bullish point."
    }
   },
   {
    "title": {
-    "ko": "안정적인 재무구조",
-    "en": "Stable Balance Sheet"
+    "ko": "재무 구조의 여력",
+    "en": "Balance sheet capacity"
    },
    "body": {
-    "ko": "부채비율이 2022~2025년 14~17%대의 낮은 수준을 유지하고 있고, 적자를 낸 2025년에도 영업활동현금흐름이 61억원의 양(+)의 흐름을 나타냈다. 대규모 순손실을 기록한 해에도 현금창출력 자체는 유지된 점은 재무 안정성 측면에서 긍정적으로 볼 수 있다. 이는 향후 연구개발과 설비투자를 지속할 수 있는 여력으로 연결될 수 있다.",
-    "en": "The debt ratio has stayed low, in the mid-teens to around 17% range, from 2022-2025, and operating cash flow remained positive at KRW 6.1bn even in the loss-making year of 2025. The fact that cash generation held up even in a year of a large net loss can be viewed positively from a financial stability standpoint. This could translate into continued capacity for R&D and capital investment going forward."
+    "ko": "2025년 말 자본총계는 2,947억원이고 지배주주 지분은 2,939억원이다. 부채총계는 515억원으로 부채비율은 17.5%다. 부채 부담이 크지 않은 재무 구조는 적자 구간을 버티는 완충 역할을 할 수 있다.",
+    "en": "At the end of 2025 total equity was KRW 294.7 billion, with controlling-shareholder equity at KRW 293.9 billion. Total liabilities of KRW 51.5 billion give a debt ratio of 17.5%. A balance sheet without heavy debt can serve as a buffer through loss-making periods."
    }
   },
   {
    "title": {
-    "ko": "5G·전장 수요 확대라는 구조적 성장 동력",
-    "en": "Structural Growth from 5G and Automotive Electronics Demand"
+    "ko": "원가 구조 개선 여지",
+    "en": "Room for cost structure gains"
    },
    "body": {
-    "ko": "5G 대중화로 고성능 Acoustic Filter와 모듈 수요가 급증하는 흐름과 자동차 전장용 RF 모듈 수요 증가가 중장기 매출 기반 확대 요인으로 꼽힌다. 스마트폰 통신 세대가 진화할수록 단말기당 탑재되는 필터 개수가 늘어나는 산업 구조적 특성도 우호적이다. 다만 이러한 수혜가 실제 매출과 수익성 개선으로 이어지는 속도는 고객사별 신모델 채택 여부에 달려 있다.",
-    "en": "Surging demand for high-performance acoustic filters and modules amid 5G proliferation, along with rising demand for automotive RF modules, are cited as factors expanding the medium-term revenue base. The industry's structural feature of rising filter counts per device as mobile communication standards evolve is also favorable. However, the pace at which these tailwinds translate into actual revenue and margin improvement depends on customer-specific adoption of new models."
+    "ko": "모듈에 들어가는 IC의 설계 내재화가 진행되면서 외부 조달 비용이 줄었다는 것이 증권사 분석의 공통 설명이다. 2023년 이후 매출원가율이 개선된 배경이기도 하다. 영업이익률이 2023년 3.6%였던 수준을 다시 넘어설 수 있는지가 원가 구조 개선을 보여 주는 사업 지표다.",
+    "en": "Securities analysts have explained that in-house design of module ICs cut external procurement costs. That also underpins the cost of sales improvement since 2023. Whether operating margin can again exceed the 3.6% of 2023 is the business indicator that would show the cost gains."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "2025년 대규모 적자와 매출 역성장",
-    "en": "Large 2025 Loss and Revenue Decline"
+    "ko": "연간 적자 전환",
+    "en": "Annual deficit"
    },
    "body": {
-    "ko": "2025년 매출은 3,212억원으로 2024년 3,750억원 대비 뚜렷하게 감소했고, 영업손실 363억원, 지배주주순손실 414억원의 대규모 적자를 기록했다. 2024년에는 매출이 소폭 늘었음에도 영업이익률이 0.1%까지 떨어졌던 점을 고려하면, 수익성 저하가 일회성이 아닌 구조적 문제일 가능성을 배제할 수 없다. 중화권 고객향 경쟁 심화가 반복적으로 실적 부진의 배경으로 지목되고 있다.",
-    "en": "2025 revenue fell markedly to KRW 321.2bn from KRW 375.0bn in 2024, and the company posted a large operating loss of KRW 36.3bn and an owner net loss of KRW 41.4bn. Given that the operating margin had already dropped to just 0.1% in 2024 despite a slight revenue increase, the possibility that the profitability decline is structural rather than one-off cannot be ruled out. Intensifying competition targeting Chinese customers is repeatedly cited as a background factor for the weak results."
+    "ko": "2025년 영업손실은 363억원, 지배주주 순손실은 414억원으로 연간 적자로 전환했다. 영업활동 현금흐름도 60.8억원으로 2024년 422억원에서 크게 줄었다. 2026년 2분기 영업손실 18.4억원이 보여 주듯 분기 적자가 다시 나타날 수 있다.",
+    "en": "The 2025 operating loss was KRW 36.3 billion and the controlling-shareholder net loss KRW 41.4 billion, a swing into annual deficit. Operating cash flow also fell to KRW 6.08 billion from KRW 42.2 billion in 2024. As the second-quarter 2026 operating loss of KRW 1.84 billion shows, quarterly losses can return."
    }
   },
   {
    "title": {
-    "ko": "2025년 4분기 대규모 순손실의 불확실한 성격",
-    "en": "Uncertain Nature of the Large Q4 2025 Net Loss"
+    "ko": "중국 OEM 경쟁과 판가 압박",
+    "en": "China OEM competition and price pressure"
    },
    "body": {
-    "ko": "2025년 4분기에는 영업손익이 0.6억원으로 거의 손익분기점에 도달했음에도 지배주주순손실은 191억원으로 오히려 크게 확대됐다. 영업외 손익에서 대규모 손실 요인이 발생한 것으로 추정되나, 구체적 내역이 확인되지 않은 만큼 향후 유사한 일회성 손실이 재발할 가능성을 열어둘 필요가 있다. 이는 분기별 순이익 변동성이 영업이익 흐름만으로는 설명되지 않는다는 점을 보여준다.",
-    "en": "In Q4 2025, the operating result was near breakeven at about KRW 0.06bn, yet the owner net loss actually widened sharply to KRW 19.1bn. A large non-operating loss factor appears to have occurred, and since the specific details are not confirmed, the possibility of similar one-off losses recurring in the future should be kept in mind. This shows that quarterly net profit volatility cannot be fully explained by operating profit trends alone."
+    "ko": "중국 내수 스마트폰 업체와의 경쟁이 심화되면서 통신모듈 판가 하락과 수익성 악화가 이어졌다는 2025년 9월 증권사 리포트의 진단이 있다. 중국향 매출 비중이 40%에 달해 이 흐름이 실적에 직접 반영된다. 판가 회복이 늦어지면 분기 이익 회복 폭은 제한될 수 있다.",
+    "en": "A September 2025 securities report said competition from Chinese domestic smartphone makers had driven module prices lower and weighed on profitability. With China-bound sales at 40% of the mix, that trend feeds directly into earnings. If prices recover slowly, the scope of quarterly profit recovery could stay limited."
    }
   },
   {
    "title": {
-    "ko": "글로벌 경쟁사 대비 고부가 필터 후발 지위",
-    "en": "Late-Mover Position in High-Value Filters vs. Global Peers"
+    "ko": "고객 집중도",
+    "en": "Customer concentration"
    },
    "body": {
-    "ko": "고성능 BAW(FBAR) 필터 시장은 브로드컴 등 선두업체가 주도하고 있어, 와이솔이 해당 영역에서 점유율을 확대하기까지는 시간이 필요할 것으로 보인다. RF Module 내에서도 LFEM 대비 FEMiD 등 후발 제품의 점유율은 상대적으로 낮은 것으로 추정된다. 고부가 제품 전환이 지연될 경우 저가 경쟁이 심한 레거시 SAW 필터 매출 비중이 높게 유지되며 수익성 개선이 더뎌질 수 있다.",
-    "en": "The high-performance BAW (FBAR) filter market is led by companies such as Broadcom, meaning it may take time for WiSol to expand share in this segment. Within RF modules, later-entry products such as FEMiD are believed to hold comparatively lower share than LFEM. If the shift to high-value products is delayed, the share of revenue from legacy SAW filters facing intense low-price competition could remain high, slowing margin improvement."
+    "ko": "삼성전자향 매출 비중 55%와 중국향 40%를 합치면 95%에 이른다. 스마트폰 출하 변동이나 고객사의 모델 채용 변화가 곧바로 실적 변동으로 이어진다. 고객 다변화가 늦어지면 이 구조는 쉽게 바뀌지 않는다.",
+    "en": "Samsung Electronics at 55% and China-bound sales at 40% add up to 95% of the mix. Shipment swings or changes in model adoption at these customers pass straight through to earnings. If customer diversification lags, this structure will not change quickly."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중 리스크",
-    "en": "Customer Concentration Risk"
+    "ko": "고객·수요 집중",
+    "en": "Customer and demand concentration"
    },
    "body": {
-    "ko": "매출 대부분이 삼성전자와 중화권 모바일 고객 소수에 집중돼 있는 구조로 알려져, 특정 고객사의 신모델 판매 부진이나 물량 조정이 실적에 직접적인 영향을 줄 수 있다. 고객 다각화가 더디게 진행될 경우 이 같은 리스크는 계속될 가능성이 있다.",
-    "en": "The majority of revenue is reportedly concentrated among a small number of customers, mainly Samsung Electronics and Chinese mobile makers, so weak new-model sales or volume adjustments at a specific customer could directly affect results. If customer diversification progresses slowly, this risk is likely to persist."
+    "ko": "매출의 대부분이 소수 고객의 스마트폰 출하에 연동돼 있다. 고객사의 모델 채용이 줄거나 출하 일정이 늦어지면 분기 매출이 빠르게 변동할 수 있다. 2026년 1분기 972억원에서 2분기 813억원으로 줄었던 흐름이 이 변동성을 보여 준다.",
+    "en": "Most sales are tied to shipments from a small number of customers. Lower model adoption or delayed shipments could move quarterly revenue quickly. The drop from KRW 97.2 billion in the first quarter of 2026 to KRW 81.3 billion in the second shows that volatility."
    }
   },
   {
    "cat": {
-    "ko": "원가·환율 변동 리스크",
-    "en": "Cost and Foreign Exchange Volatility Risk"
+    "ko": "가격·경쟁",
+    "en": "Pricing and competition"
    },
    "body": {
-    "ko": "RF 모듈 생산에 필요한 스위치·증폭기 등 핵심 IC 소자를 해외 팹리스에서 조달해온 이력이 있어, 환율과 글로벌 반도체 공급 상황에 따라 원가 부담이 변동될 수 있다. 계열사 NRLab을 통한 내재화가 진행 중이나 완전한 대체까지는 시간이 필요하다.",
-    "en": "The company has a history of sourcing key IC components such as switches and amplifiers needed for RF modules from overseas fabless suppliers, so cost burdens can vary with exchange rates and global semiconductor supply conditions. Internalization through affiliate NRLab is underway but full substitution will take time."
+    "ko": "중국 내수 업체와의 경쟁 심화는 통신모듈 판가를 낮추고 수익성을 압박하는 요인이다. 고부가 모듈 영역에서는 일본과 미국 RF 업체가 기술 우위를 가진 것으로 알려져 있다. 원가 개선이 판가 하락을 상쇄하지 못하면 영업이익률 회복은 제한된다.",
+    "en": "Competition from Chinese domestic makers pushes down module prices and pressures profitability. In high-value module segments, Japanese and US RF makers are widely regarded as technologically ahead. If cost gains do not offset price declines, a recovery in operating margin will be limited."
    }
   },
   {
    "cat": {
-    "ko": "중국 업체와의 경쟁 심화",
-    "en": "Intensifying Competition from Chinese Makers"
+    "ko": "현금흐름·재무",
+    "en": "Cash flow and balance sheet"
    },
    "body": {
-    "ko": "중저가 SAW 필터 시장에서 중국 업체들의 저가 공세가 지속되고 있어, 가격 경쟁력 약화가 매출과 수익성에 부담을 줄 수 있다. 이 같은 경쟁 구도는 최근 몇 년간 반복적으로 실적 부진의 배경으로 지목된 요인이다.",
-    "en": "Low-price competition from Chinese makers continues in the low- and mid-tier SAW filter market, and the resulting weakening of price competitiveness could pressure both revenue and profitability. This competitive dynamic has repeatedly been cited as a background factor for weak results in recent years."
+    "ko": "2025년 영업활동 현금흐름은 60.8억원으로 줄었고, 부채비율은 17.5%로 올랐다. 순손실이 누적되는 만큼 분기 적자가 이어지면 자본 완충 효과가 줄어들 수 있어 현금 창출력 회복 여부가 중요하다.",
+    "en": "Operating cash flow fell to KRW 6.08 billion in 2025 and the debt ratio rose to 17.5%. Because net losses are accumulating, if quarterly losses persist, the buffer from equity could shrink, so a recovery in cash generation matters."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중",
-    "en": "November 2026"
+    "ko": "2027년 3월 중순(예상)",
+    "en": "Mid-March 2027 (expected)"
    },
    "what": {
-    "ko": "2026년 3분기 실적 발표 예정으로, 1~2분기의 순이익 흑자 흐름이 이어지는지, 영업손익이 재차 흑자로 돌아서는지 확인이 필요하다.",
-    "en": "Q3 2026 earnings are expected to be released, and it will be important to check whether the net profit trend from Q1-Q2 continues and whether operating results return to positive territory."
+    "ko": "2026년 4분기 잠정 실적 발표 시점이다. 지난해 4분기 잠정 실적은 2026년 3월 18일에 발표됐다. 2026년 4분기 영업이익이 흑자를 유지하는지, 지배주주 순손실 방향이 어떻게 나오는지 확인하는 지점이다.",
+    "en": "This is the expected release of provisional fourth-quarter 2026 results. The provisional fourth-quarter 2025 figures were released on March 18, 2026. It is the point to check whether fourth-quarter 2026 operating profit stays positive and which way the controlling-shareholder net result moves."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기",
-    "en": "Q4 2026"
+    "ko": "2027년 3월 31일까지",
+    "en": "By March 31, 2027"
    },
    "what": {
-    "ko": "연말 스마트폰 성수기 수요와 삼성전자·중화권 고객사 신모델 판매 흐름에 따른 매출 볼륨 변화를 확인할 필요가 있다.",
-    "en": "Year-end smartphone peak-season demand and sales trends for new models from Samsung Electronics and Chinese customers should be checked for their effect on revenue volume."
+    "ko": "2026년 사업보고서 제출 기한이다. 연간 영업이익률이 2025년 -11.3%에서 어떻게 바뀌었는지, 지배주주 순손실 규모와 부채비율, 영업활동 현금흐름의 회복 여부를 정기보고서 기준으로 확인하는 지점이다.",
+    "en": "This is the filing deadline for the 2026 annual business report. It is where the annual operating margin change from -11.3% in 2025, the controlling-shareholder net loss, the debt ratio and operating cash flow recovery can be confirmed on a reported basis."
    }
   },
   {
    "when": {
-    "ko": "2027년 초",
-    "en": "Early 2027"
+    "ko": "2027년 5월 15일까지",
+    "en": "By May 15, 2027"
    },
    "what": {
-    "ko": "2026년 사업보고서·감사보고서 공시를 통해 2026년 연간 확정 실적과 부문별 매출 비중 공개 여부를 확인할 필요가 있다.",
-    "en": "The 2026 annual business and audit reports should be checked to confirm final full-year 2026 results and whether segment revenue mix is disclosed."
+    "ko": "2027년 1분기 보고서 제출 기한이다. 중국향 판가와 삼성전자향 모델 채용이 2026년 1분기 매출 972억원 수준을 유지하는지, 영업이익 흑자가 분기 단위로 이어지는지 확인하는 지점이다.",
+    "en": "This is the filing deadline for the first-quarter 2027 report. It is where to check whether China-bound pricing and Samsung Electronics model adoption hold near the KRW 97.2 billion of first-quarter 2026 and whether quarterly operating profit stays positive."
    }
   },
   {
    "when": {
-    "ko": "향후 공시·IR 발표 시점",
-    "en": "Upcoming disclosure/IR events"
+    "ko": "2027년 3월(정기 주주총회 시기)",
+    "en": "March 2027 (annual general meeting period)"
    },
    "what": {
-    "ko": "FBAR(BAW) 필터, PAMiD 등 고부가 신제품의 신규 고객사 채택과 양산 개시 관련 공시나 IR 자료를 확인할 필요가 있다.",
-    "en": "Disclosures or IR materials regarding new customer adoption and mass production start for high-value new products such as FBAR (BAW) filters and PAMiD should be monitored."
+    "ko": "2026 사업연도 결산 배당의 결정 여부와 규모가 정해지는 시기다. 배당 결정은 결산 공시로 확정되므로, 영업활동 현금흐름 회복과 함께 배당 여력의 근거가 된다.",
+    "en": "This is when the dividend decision for the 2026 fiscal year and its size are set. Because dividends are confirmed through the closing disclosure, they will rest on the recovery in operating cash flow."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "와이솔은 2022~2025년 4년간 적자와 흑자를 반복하는 실적 변동성을 보여왔으며, 2025년에는 매출 감소와 함께 영업손실 363억원, 지배주주순손실 414억원의 대규모 적자를 기록했다. 그러나 2026년 상반기에는 1분기와 2분기 모두 지배주주순이익이 흑자로 전환하며 실적 개선의 신호가 나타났고, 이 흐름이 하반기까지 이어질지가 향후 관찰 포인트다. 사업 구조상 삼성전자와 중화권 모바일 고객사에 매출이 집중돼 있어 특정 고객사 물량 변화에 실적이 민감하게 반응하는 특성이 있으며, 고부가 BAW(FBAR) 필터 시장에서는 브로드컴 등 선두업체 대비 후발주자 위치에 있다. 반면 부채비율은 14~17%대로 낮은 수준을 유지하고 있고, 적자를 기록한 해에도 영업활동현금흐름은 양(+)을 유지해 재무 안정성 측면의 완충력을 보여줬다. 5G 통신 확대와 자동차 전장용 RF 부품 수요 증가는 중장기 성장 동력으로 꼽히지만, 이러한 구조적 수혜가 실제 매출과 수익성 개선으로 이어지는 속도는 고객사별 신제품 채택 시점에 좌우될 것으로 보인다. 종합적으로 이 종목은 실적 회복의 초기 국면에 있는 것으로 판단되며, 향후 분기별 실적과 신제품 양산 진행 상황을 함께 확인하는 것이 필요하다.",
-   "en": "WiSol has shown significant earnings volatility over the four years from 2022 to 2025, alternating between losses and profits, and in 2025 it posted a large annual loss with revenue declining alongside an operating loss of KRW 36.3bn and an owner net loss of KRW 41.4bn. In the first half of 2026, however, owner net profit turned positive in both Q1 and Q2, signaling a potential improvement, and whether this trend continues into the second half is a key point to watch going forward. Given the business structure, with revenue concentrated among Samsung Electronics and Chinese mobile customers, results are sensitive to volume changes at specific customers, and the company remains a late mover relative to leaders such as Broadcom in high-value BAW (FBAR) filters. On the other hand, the debt ratio has stayed low, in the mid-teens to around 17% range, and operating cash flow remained positive even in loss-making years, showing a degree of financial cushioning. Expanding 5G connectivity and rising automotive RF component demand are cited as medium-term growth drivers, but the pace at which these structural tailwinds translate into actual revenue and profitability improvement will likely depend on the timing of new-product adoption by individual customers. Overall, the company appears to be in an early phase of earnings recovery, and it will be necessary to continue monitoring quarterly results together with the progress of new-product mass production."
+   "ko": "와이솔은 RF 필터와 모듈을 주력으로 하는 휴대폰 부품사로, 2025년 연간 실적이 매출 3,212억원, 영업손실 363억원, 지배주주 순손실 414억원으로 악화됐다. 2026년 들어 분기 실적은 회복 흐름을 보인다. 1분기 매출 972억원, 영업이익 21.3억원, 지배주주 순이익 62.8억원에 이어 3분기에도 영업이익 59.7억원으로 전년 동기 대비 흑자 전환했다. 다만 2분기 영업손실 18.4억원과 최근 4개 분기 지배주주 순손실 합계 119억원은 이익의 지속성이 아직 확인 단계에 있음을 보여 준다. 강세 요인으로는 분기 영업이익 회복, 2025년 말 자본총계 2,947억원의 재무 여력, 모듈 내재화에 따른 원가 개선 여지가 꼽힌다. 약세 요인으로는 중국 OEM 경쟁에 따른 판가 압박, 삼성전자향 55%와 중국향 40%에 달하는 고객 집중, 2025년 영업활동 현금흐름의 축소가 있다. 밸류에이션은 PBR이 1배를 밑도는 반면 PER은 산출되지 않는 상태라 이익 회복 속도에 따라 해석이 갈린다. 다음 확인 지점은 2026년 사업보고서와 2027년 1분기 보고서다.",
+   "en": "WiSoL is a handset component maker centered on RF filters and modules, and its 2025 annual results deteriorated to revenue of KRW 321.2 billion, an operating loss of KRW 36.3 billion and a controlling-shareholder net loss of KRW 41.4 billion. Quarterly results have shown a recovery in 2026. After first-quarter revenue of KRW 97.2 billion, operating profit of KRW 2.13 billion and controlling-shareholder net income of KRW 6.28 billion, the third quarter also turned operating profit positive at KRW 5.97 billion from a year earlier. However, the second-quarter operating loss of KRW 1.84 billion and the KRW 11.9 billion controlling-shareholder net loss over the last four quarters show that the durability of profits is still at an early stage. Bullish factors include the quarterly operating profit recovery, the KRW 294.7 billion equity base at the end of 2025 and room for cost gains from in-house module design. Bearish factors include price pressure from Chinese OEM competition, customer concentration with Samsung Electronics at 55% and China-bound sales at 40%, and the fall in operating cash flow to KRW 6.08 billion in 2025. The price-to-book ratio sits below 1x while the price-to-earnings ratio cannot be calculated, so readings depend on how fast earnings recover. The next checkpoints are the 2026 annual business report and the first-quarter 2027 report."
   }
  },
  "sources": [
-  "https://www.investing.com/equities/wisol-co-ltd-earnings",
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=122990",
-  "https://littlebproject.com/stock/122990/118/1778",
-  "https://www.investing.com/equities/wisol-co-ltd",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=acFFusL6M8D9wkxi",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A122990&MenuYn=Y",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=jZxCjNBeH2YSzujA",
-  "https://kbthink.com/securities-view.html?docId=20250320162011303K",
-  "https://kbthink.com/securities-view.html?docId=20250923152653430K",
-  "https://jasoseol.com/companies/7387/insights",
-  "https://www.saramin.co.kr/zf_user/company-info/view/csn/MncwTjBNbWw2UWtSdjMzR3Y2Y2p5QT09/company_nm/(%EC%A3%BC)%EC%99%80%EC%9D%B4%EC%86%94",
-  "https://www.incruit.com/company/8243904/",
-  "https://www.jobkorea.co.kr/Company/1515605",
-  "https://jasoseol.com/companies/7387",
-  "https://www.dailyinvest.kr/news/articleView.html?idxno=59365",
+  "https://ssl.pstatic.net/imgstock/upload/research/company/1712790649736.pdf",
   "https://thevc.kr/wisol",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=searchInitInfo&acptNo=20241113000313&docno=",
-  "https://www.digitaltoday.co.kr/news/articleView.html"
+  "https://www.dailyinvest.kr/news/articleView.html?idxno=59365",
+  "https://wisol.career.greetinghr.com/ko/home",
+  "https://www.calculator.io.kr/kor/1202",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Main.asp?gicode=A122990",
+  "https://kbthink.com/securities-view.html?docId=20250923152653430K",
+  "https://www.thelec.kr/news/articleView.html?idxno=1025",
+  "https://www.investing.com/equities/wisol-co-ltd-earnings",
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=01384166609533248",
+  "https://www.globenewswire.com/news-release/2026/11/10/3400207/7982/en/fossil-group-inc-reports-third-quarter-2026-financial-results.html",
+  "https://www.biospace.com/press-releases/sol-gel-reports-third-quarter-2026-financial-results-and-provides-corporate-updates",
+  "https://www.infostockdaily.co.kr/news/articleView.html?idxno=141588",
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03893366612818496",
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=01535046606191584",
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02512486593136856",
+  "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=709622",
+  "https://www.prnewswire.com/news-releases/weis-markets-reports-third-quarter-2026-results-302928460.html"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "122990",
  "name": "와이솔",
  "name_en": "WiSoL Co.,LTD.",
@@ -223,11 +223,11 @@
   "전자·부품"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 17:56",
- "dataDate": "20260904",
+ "reportDate": "2026-11-14",
+ "reportTs": "2026-11-14 09:25",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-11-13",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -297,12 +297,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 77986657307,
-    "op": -21048741797,
-    "np_owner": -13829454542
-   },
-   {
     "q": "2025Q3",
     "rev": 81828892012,
     "op": -3776522013,
@@ -325,28 +319,39 @@
     "rev": 81310276850,
     "op": -1843555531,
     "np_owner": 1803244472
+   },
+   {
+    "q": "2026Q3",
+    "rev": 91270155803,
+    "op": 5973526732,
+    "np_owner": -853746178
    }
   ],
   "valuation": {
-   "price": 6240,
-   "mcap": 0.1662,
-   "shares": 26639081,
+   "price": 6650,
+   "mcap": 0.1706,
+   "shares": 25648079,
    "total_shares": 26639081,
    "wavg_shares": null,
    "per": null,
-   "eps": -466,
-   "pbr": 0.5848,
-   "bps": 10670,
-   "roe_ttm": -4.2,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": -12436113393,
+   "eps": -447,
+   "pbr": 0.6471,
+   "bps": 10277,
+   "roe_ttm": -4.1,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": -11897465467,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 0.52,
+   "eps_src": "순이익÷주식수",
+   "pbr_krx": 0.6,
    "bps_krx": 11034.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 500.0,
-   "div": 8.01
+   "div": 7.52,
+   "hidden": {
+    "per": "loss"
+   }
   }
- }
+ },
+ "textRules": 2
 }

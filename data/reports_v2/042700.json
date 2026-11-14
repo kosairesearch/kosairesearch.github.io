@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "HBM4 전환기 넘긴 TC본더 1위, 분기 변동성은 그대로",
-  "en": "TC Bonder Leader Clears HBM4 Transition, Quarterly Swings Persist"
+  "ko": "HBM 장비 수요가 이끄는 한미반도체 실적 변동",
+  "en": "HANMI Semiconductor: HBM bonder demand drives earnings swings"
  },
  "lead": {
-  "ko": "발주 공백으로 비었던 2026년 1분기를 지나 2분기에 창사 최대 분기 매출을 기록했지만, 장비 인식 시점에 따라 분기 실적이 다섯 배씩 흔들리는 구조는 그대로 남아 있다.",
-  "en": "After an order gap hollowed out the first quarter of 2026, the company posted its largest quarterly revenue ever in the second quarter, yet the structure in which quarterly results swing fivefold with equipment recognition timing remains intact."
+  "ko": "한미반도체는 HBM 적층에 쓰이는 TC 본더 수요에 실적을 크게 기대는 구조이며, 2025년 4분기 이후 분기 실적의 변동 폭이 큰 것이 핵심 쟁점이다.",
+  "en": "HANMI Semiconductor's earnings depend heavily on demand for its HBM TC bonders, and quarterly results have swung widely since the fourth quarter of 2025."
  },
  "keypoints": [
   {
-   "ko": "2026년 2분기 매출 2,511억원·영업이익 1,303억원으로 분기 최대치를 기록했고, 영업이익률은 51.9%로 계산된다.",
-   "en": "Second-quarter 2026 revenue of KRW 251.1bn and operating profit of KRW 130.3bn marked record quarterly levels, implying a 51.9% operating margin."
+   "ko": "2025년 매출은 5,767억원으로 2024년 5,589억원보다 늘었고, 영업이익은 2,514억원으로 2024년 2,554억원보다 소폭 줄었다.",
+   "en": "Revenue rose to KRW 576.7 billion in 2025 from KRW 558.9 billion in 2024, while operating profit eased to KRW 251.4 billion from KRW 255.4 billion."
   },
   {
-   "ko": "직전 분기인 2026년 1분기는 매출 509억원·영업이익 85억원에 그쳤다. 고객사 세대 전환기의 발주 공백이 원인으로 지목됐다.",
-   "en": "The immediately preceding quarter, first-quarter 2026, brought only KRW 50.9bn of revenue and KRW 8.5bn of operating profit, attributed to an order gap during the customer generation transition."
+   "ko": "분기 매출은 2025년 4분기 830억원, 2026년 1분기 509억원까지 줄었다가 2026년 2분기 2,512억원으로 반등했다.",
+   "en": "Quarterly revenue fell to KRW 83 billion in the fourth quarter of 2025 and KRW 50.9 billion in the first quarter of 2026, then rebounded to KRW 251.2 billion in the second quarter of 2026."
   },
   {
-   "ko": "고대역폭메모리용 TC 본더에서 글로벌 1위이며, 회사는 열압착 본더 점유율 71.2%를 제시했다(2026년 3월 보도 기준).",
-   "en": "It is the global number one in TC bonders for high-bandwidth memory, and the company cited a 71.2% share of the thermal compression bonder market as reported in March 2026."
+   "ko": "2026년 3분기 영업이익은 908억원으로 전년 동기 대비 33.9% 늘었고, 영업이익률은 회사 발표 기준 50.2%(2026년 10월 30일 발표)다.",
+   "en": "Third-quarter 2026 operating profit was KRW 90.8 billion, up 33.9% year on year, and the operating margin was 50.2% per the company's October 30, 2026 announcement."
   },
   {
-   "ko": "2026년 7월 공시된 기업가치 제고 계획에서 과거 제시했던 매출 2조원 목표는 제외됐고, 대신 7공장·8공장 부지·미국 법인 등 투자 일정이 담겼다.",
-   "en": "The corporate value enhancement plan disclosed in July 2026 dropped the previously stated KRW 2tn revenue target, instead detailing investment schedules for Plant 7, a Plant 8 site and a US subsidiary."
+   "ko": "같은 분기 지배주주 순이익은 349억원으로 전년 동기 대비 46.8% 감소해, 영업이익 증가와 방향이 달랐다.",
+   "en": "Net income attributable to controlling shareholders was KRW 34.9 billion, down 46.8% year on year, moving in the opposite direction to operating profit."
   },
   {
-   "ko": "한화세미텍·ASMPT와의 경쟁, SK하이닉스의 공급망 이원화, 진행 중인 특허 맞소송이 동시에 걸려 있는 구도다.",
-   "en": "Competition with Hanwha Semitech and ASMPT, SK hynix's dual-vendor supply strategy and ongoing mutual patent litigation are all in play at once."
+   "ko": "회사는 2026년 4분기 분기 기준 역대 최대 매출과 3년 연속 연간 최대 매출을 전망했다고 2026년 10월 30일 밝혔다.",
+   "en": "On October 30, 2026 the company said it expects record quarterly revenue in the fourth quarter and a third consecutive year of record annual revenue in 2026."
   }
  ],
  "business": {
-  "ko": "한미반도체는 1980년 설립된 반도체 후공정 장비 기업으로, 고대역폭메모리(HBM) 제조에 쓰이는 TC 본더와 패키지 절단·검사 장비인 MSVP가 사업의 두 축이다. TC 본더는 열과 압력으로 칩과 칩을 접합하는 장비로, HBM 세대가 올라갈수록 적층 정밀도와 수율 관리 비중이 커지며 역할이 확대되고 있다. 회사는 2025년 회계연도 배당 발표 시점에 열압착 본더 시장 점유율 71.2%로 글로벌 1위라고 밝힌 것으로 보도됐다(더스탁, 2026년 3월). MSVP는 반도체 패키지의 절단·세척·건조·검사·선별·적재까지 이어지는 필수 공정 장비로, 회사는 이 품목에서도 글로벌 점유율 1위이며 최근 AI 반도체 패키지에 패널 레벨 패키징(PLP) 적용이 확대되면서 주문량이 늘고 있다고 설명했다. 주요 고객은 SK하이닉스와 마이크론 등 메모리 제조사이며, 딜사이트가 2025년 7월 전한 LS증권 분석에서는 TC 본더 매출 내 해외 고객사 비중이 2025년 약 60%에서 2026년 66%까지 확대될 것으로 추정됐다. 제품군은 HBM용 TC 본더 외에도 시스템반도체·AI 패키징용으로 넓어져, 2026년에 2.5D TC 본더 40, FC 본더 3.5, FC 본더 75 등 2.5D 패키징 장비 3종과 BOC COB 본더를 출시해 글로벌 파운드리·후공정(OSAT) 고객사에 공급하고 있다고 밝혔다. 우주항공용 EMI 쉴드 장비도 공급 중이며 회사는 해당 분야 점유율 1위를 유지한다고 설명했다. 생산은 인천 서구 주안국가산업단지의 공장 클러스터에서 이뤄지며, 주물 생산부터 부품 가공·조립·검사까지 외주 없이 직접 진행하는 수직 통합 제조 체계를 갖췄다고 회사는 밝혔다. 경쟁 구도로는 한화세미텍과 ASMPT가 SK하이닉스 TC 본더 공급망에 함께 들어와 있고, 한미반도체와 한화세미텍은 TC 본더 핵심 기술을 놓고 서로 특허 소송을 제기한 상태다. 부문별 매출 비중은 공시로 확인되는 세부 수치가 제한적이어서, 제품군별 기여도는 정량적으로 특정하기 어렵다.",
-  "en": "Founded in 1980, Hanmi Semiconductor is a back-end semiconductor equipment maker whose two pillars are TC bonders used to build high-bandwidth memory (HBM) and MSVP package sawing and inspection systems. A TC bonder joins chip to chip using heat and pressure, and its role expands as HBM generations advance and stacking precision and yield management grow more critical. Around the fiscal 2025 dividend announcement, the company was reported to have cited a 71.2% share of the thermal compression bonder market, ranking first globally (The Stock, March 2026). MSVP covers the essential flow of sawing, cleaning, drying, inspection, sorting and loading of semiconductor packages; the company says it also ranks first globally in this line and that orders have been rising as panel-level packaging (PLP) spreads in AI chip packages. Key customers are memory makers including SK hynix and Micron, and an LS Securities analysis relayed by Dealsite in July 2025 estimated that overseas customers would grow from roughly 60% of TC bonder revenue in 2025 to 66% in 2026. The product range has widened beyond HBM TC bonders into system-chip and AI packaging, with the company stating that in 2026 it launched three 2.5D packaging tools - the 2.5D TC Bonder 40, FC Bonder 3.5 and FC Bonder 75 - plus a BOC COB bonder now supplied to global foundry and OSAT customers. It also supplies EMI shield equipment for the aerospace field and says it holds the leading share there. Production is centered on a plant cluster in the Juan National Industrial Complex in Incheon, where the company says it runs a vertically integrated system covering casting, parts machining, assembly and inspection without outsourcing. On the competitive front, Hanwha Semitech and ASMPT also sit inside SK hynix's TC bonder supply chain, and Hanmi Semiconductor and Hanwha Semitech have filed patent suits against each other over core TC bonder technology. Segment-level revenue detail in public filings is limited, so the contribution of each product line cannot be pinned down quantitatively."
+  "ko": "한미반도체는 반도체 후공정 장비, 그중에서도 HBM(고대역폭메모리) 적층에 쓰이는 열압착(TC) 본더를 주력으로 하는 회사다. TC 본더는 D램을 여러 층으로 쌓을 때 열과 압력을 가해 칩을 고정하는 장비로, HBM 제조에 필수적으로 쓰인다. 업계 보도에 따르면 회사는 TC 본더 분야에서 세계 1위 점유율을 차지하고 있으며, 주요 고객사는 SK하이닉스와 마이크론이다. 제품군은 HBM4용 'TC 본더 4'와 이를 개선한 'TC 본더 4.5 그리핀' 같은 듀얼 TC 본더가 중심이며, 대면적 AI 패키징용 신규 TC 본더와 플립칩(FC) 본더의 양산 공급이 새 성장 동력으로 거론된다. 2025년 설명회에서 회사는 플럭스리스 본더를 주요 고객사로부터 수주해 납품을 준비 중이라고 밝혔다. 2026년 10월 30일 발표 기준 회사 전체 매출에서 해외가 차지하는 비중은 약 72%다. 해외 시장의 TC 본더 마진은 국내 대비 30~40% 높은 것으로 알려졌다. 회사는 대만·중국·싱가포르 법인에 이어 미국 캘리포니아주 산호세에 현지 법인 '한미USA'를 세웠다. 국내에서는 경쟁사 한화세미텍이 SK하이닉스의 TC 본더 협력사로 추가되며 경쟁 구도가 생겼고, 해외에서는 싱가포르 ASMPT가 HBM4용 TC 본더의 경쟁자로 꼽힌다. 2025년 설명회에서 회사는 해외 고객사 매출이 국내 특정 고객사 매출의 두 배를 넘을 것이라고 전망했다.",
+  "en": "HANMI Semiconductor is a back-end semiconductor equipment maker whose core product is the thermo-compression (TC) bonder used to stack HBM (high-bandwidth memory). A TC bonder applies heat and pressure to fix chips as DRAM dies are stacked vertically, which makes it essential to HBM production. Industry reports say the company holds the world's No. 1 share in TC bonders, and its main customers are SK hynix and Micron. Its lineup centers on dual TC bonders such as the TC Bonder 4 for HBM4 and the upgraded TC Bonder 4.5 Griffin, while new TC bonders for large-area AI packaging and flip-chip (FC) bonders are cited as new growth drivers. At a 2025 briefing the company said it had received orders from a major customer for flux-less bonders and was preparing deliveries. Overseas customers accounted for about 72 percent of total revenue, as announced on October 30, 2026. Reports from 2025 said TC bonder margins overseas run 30 to 40 percent above domestic levels. Beyond subsidiaries in Taiwan, China and Singapore, the company set up a U.S. unit, HANMI USA, in San Jose, California. A domestic rival, Hanwha Semitech, was added as an SK hynix TC bonder supplier, while Singapore-based ASMPT is cited as a competitor in HBM4 TC bonders. At a 2025 briefing the company forecast that overseas customer revenue would exceed twice the revenue from one domestic customer."
  },
  "earnings": {
-  "ko": "분기 흐름이 이 회사의 실적 성격을 가장 잘 보여준다. 2025년 2분기 매출 1,800억원·영업이익 863억원에서 3분기 1,662억원·678억원, 4분기 830억원·276억원으로 축소된 뒤 2026년 1분기에는 매출 509억원·영업이익 85억원까지 내려앉았고, 곧바로 2026년 2분기에 매출 2,511억원·영업이익 1,303억원으로 반등했다. 2026년 2분기 매출은 전 분기의 약 4.9배, 영업이익률은 51.9%로 계산되며 회사는 창사 이래 최대 분기 매출이라고 밝혔다. 1분기 부진은 HBM3E 투자가 마무리되고 HBM4용 신규 발주가 본격화되기 전인 세대 전환기와 겹친 결과로 설명됐고, 장비 매출이 고객사 검수 통과 시점에 한꺼번에 인식되는 구조가 변동폭을 키운다는 분석이 함께 나왔다. 연간으로 보면 2025년 매출 5,767억원·영업이익 2,514억원(영업이익률 43.6%)으로 매출은 2024년 5,589억원보다 늘었지만 영업이익은 2024년 2,554억원(영업이익률 45.7%)보다 소폭 줄어 마진이 2%포인트가량 낮아졌다. 그 앞의 2023년은 매출 1,590억원·영업이익 346억원(영업이익률 21.7%)으로 다운사이클의 골이 깊었고, 2022년 매출 3,276억원·영업이익 1,119억원과 비교해도 외형이 절반 이하로 줄었던 해다. 다만 2023년 순이익은 2,672억원으로 영업이익을 크게 웃돌아 영업 외 항목이 그해 순이익을 좌우했는데, 이 때문에 순이익 기반 지표를 연도별로 단순 비교하기는 어렵다. 2025년 순이익은 2,140억원으로 2024년 1,526억원 대비 늘었고, 영업활동현금흐름도 2,286억원으로 2024년 1,414억원에서 확대됐다. 재무구조는 2025년 말 자기자본 6,903억원·부채 1,230억원으로 부채비율 17.8%이며, 2024년 31.4%에서 낮아졌다. 최근 네 개 분기(2025년 3분기~2026년 2분기)를 합산하면 매출 약 5,513억원, 영업이익 약 2,343억원, 순이익 약 2,220억원으로 영업이익률은 42%대다.",
-  "en": "The quarterly pattern captures this company's earnings character best. From revenue of KRW 180.0bn and operating profit of KRW 86.3bn in the second quarter of 2025, the figures narrowed to KRW 166.2bn and KRW 67.8bn in the third quarter and KRW 83.0bn and KRW 27.6bn in the fourth, then bottomed at KRW 50.9bn and KRW 8.5bn in the first quarter of 2026, before rebounding to KRW 251.1bn and KRW 130.3bn in the second quarter of 2026. Second-quarter 2026 revenue was roughly 4.9 times the prior quarter and the implied operating margin was 51.9%, which the company described as its largest quarterly revenue since founding. The weak first quarter was explained as coinciding with a generation transition, after HBM3E investment wound down and before HBM4 orders ramped, while analysts noted that equipment revenue is booked in lumps when customer acceptance testing clears, amplifying the swings. On an annual basis, 2025 revenue of KRW 576.7bn and operating profit of KRW 251.4bn (43.6% margin) topped the KRW 558.9bn of revenue in 2024, but operating profit slipped from KRW 255.4bn (45.7% margin), a roughly two percentage point margin decline. Before that, 2023 saw revenue of KRW 159.0bn and operating profit of KRW 34.6bn (21.7% margin), a deep downcycle trough and less than half the KRW 327.6bn of revenue and KRW 111.9bn of operating profit recorded in 2022. Net profit in 2023, however, reached KRW 267.2bn, far above operating profit, meaning non-operating items drove that year's bottom line and making simple year-to-year comparisons of net-profit-based metrics unreliable. Net profit in 2025 was KRW 214.0bn, up from KRW 152.6bn in 2024, while operating cash flow expanded to KRW 228.6bn from KRW 141.4bn. As of end-2025 equity stood at KRW 690.3bn against liabilities of KRW 123.0bn, a debt-to-equity ratio of 17.8%, down from 31.4% in 2024. Summing the four quarters from the third quarter of 2025 through the second quarter of 2026 gives roughly KRW 551.3bn of revenue, KRW 234.3bn of operating profit and KRW 222.0bn of net profit, an operating margin in the 42% range."
+  "ko": "연간 매출은 2022년 3,276억원에서 2023년 1,590억원(전년 대비 51.5% 감소)으로 줄었다가, 2024년 5,589억원(전년 대비 251.5% 증가)으로 크게 회복됐다. 2025년 매출 5,767억원(전년 대비 3.2% 증가)은 2022~2025년 중 가장 큰 해이며, 2024년과 2025년은 2023년 다음 2년 연속 증가한 해다. 영업이익은 2022년 1,119억원, 2023년 346억원(전년 대비 69.1% 감소), 2024년 2,554억원(전년 대비 638.7% 증가), 2025년 2,514억원(전년 대비 1.6% 감소)이며, 2024년이 2022~2025년 중 가장 큰 해다. 영업이익률은 2022년 34.1%, 2023년 21.7%, 2024년 45.7%, 2025년 43.6%로, 매출 규모가 커진 뒤에도 높은 수준을 유지했다. 지배주주 순이익은 2022년 923억원에서 2023년 2,672억원(전년 대비 189.6% 증가)으로 2022~2025년 중 가장 큰 해를 기록했고, 2024년 1,526억원(전년 대비 42.9% 감소)을 거쳐 2025년 2,140억원(전년 대비 40.2% 증가)으로 회복됐다. 재무 구조는 2025년 말 부채총계 1,230억원, 자본총계 6,903억원으로 부채비율 17.8%이며, 2024년 31.4%보다 낮아졌다. 영업활동 현금흐름은 2022년 1,095억원, 2023년 450억원, 2024년 1,414억원, 2025년 2,286억원이었다. 분기 기준으로는 2025년 3분기 매출 1,662억원·영업이익 678억원 이후 4분기 매출 830억원(전 분기 대비 50.1% 감소), 영업이익 276억원(전 분기 대비 59.3% 감소)으로 꺾였다. 2026년 1분기에는 매출 509억원, 영업이익 84.6억원(전 분기 대비 69.4% 감소)으로 공시 실적 기준 최저점을 찍었고, 이 시기는 고객사의 HBM4 전환에 따른 발주 지연이 거론된 때다. 2026년 2분기 매출 2,512억원(전 분기 대비 393.4% 증가)과 영업이익 1,303억원(전 분기 대비 1,441.4% 증가)으로 반등했고, 3분기 매출 1,810억원·영업이익 908억원은 전 분기 대비 줄었으나 전년 동기 대비 각각 8.9%, 33.9% 늘었다. 3분기 지배주주 순이익 349억원은 전년 동기 대비 46.8% 감소해 영업이익 증가와 방향이 달랐고, 최근 4개 분기 지배주주 순이익 합계는 1,913억원이다. 3분기 영업이익률 50.2%(2026년 10월 30일 발표)는 전년 동기 40.8%보다 9.4%포인트 높은 수준이며, 회사는 환율 하락 영향과 일부 장비의 매출 인식이 4분기로 넘어간 점을 제약 요인으로 꼽았다.",
+  "en": "Annual revenue fell from KRW 327.6 billion in 2022 to KRW 159 billion in 2023, a decline of 51.5%, before recovering to KRW 558.9 billion in 2024, an increase of 251.5%. Revenue of KRW 576.7 billion in 2025, up 3.2%, was the largest year of 2022 to 2025, and 2024 and 2025 were two consecutive years of growth following 2023. Operating profit was KRW 111.9 billion in 2022, KRW 34.6 billion in 2023 (down 69.1%), KRW 255.4 billion in 2024 (up 638.7%) and KRW 251.4 billion in 2025 (down 1.6%), with 2024 the largest year of the four. The operating margin was 34.1 percent in 2022, 21.7 percent in 2023, 45.7 percent in 2024 and 43.6 percent in 2025, staying at a high level even as revenue scaled up. Net income attributable to controlling shareholders went from KRW 92.3 billion in 2022 to KRW 267.2 billion in 2023 (up 189.6%), the largest year of the four, then to KRW 152.6 billion in 2024 (down 42.9%) and KRW 214 billion in 2025 (up 40.2%). At the end of 2025, total liabilities were KRW 123 billion and total equity was KRW 690.3 billion, giving a debt ratio of 17.8 percent, below 31.4 percent in 2024. Operating cash flow was KRW 109.5 billion in 2022, KRW 45 billion in 2023, KRW 141.4 billion in 2024 and KRW 228.6 billion in 2025. On a quarterly basis, revenue of KRW 166.2 billion and operating profit of KRW 67.8 billion in the third quarter of 2025 were followed by fourth-quarter revenue of KRW 83 billion (down 50.1% quarter on quarter) and operating profit of KRW 27.6 billion (down 59.3%). In the first quarter of 2026 revenue was KRW 50.9 billion and operating profit KRW 8.46 billion (down 69.4% quarter on quarter), the low point of the last five quarters, a period when delayed HBM4 orders from customers were cited. The second quarter of 2026 rebounded to revenue of KRW 251.2 billion (up 393.4%) and operating profit of KRW 130.3 billion (up 1,441.4%). Third-quarter revenue of KRW 181 billion and operating profit of KRW 90.8 billion fell quarter on quarter but rose 8.9 percent and 33.9 percent year on year. Third-quarter net income attributable to controlling shareholders of KRW 34.9 billion fell 46.8 percent year on year, moving in the opposite direction to operating profit, and the sum over the last four quarters was KRW 191.3 billion. The third-quarter operating margin of 50.2 percent, announced on October 30, 2026, was 9.4 percentage points above 40.8 percent a year earlier, while the company pointed to the weaker won-translated value and some equipment revenue shifting into the fourth quarter as drags."
  },
  "industry": {
-  "ko": "전방 수요의 축은 AI 서버용 HBM이다. 2026년 들어 메모리 3사가 HBM4 양산에 진입했고, 젠슨 황 엔비디아 최고경영자는 2026년 6월 방한 당시 세 회사 모두 HBM4 품질 평가를 통과해 양산 중이라고 밝힌 것으로 보도됐다. HBM4는 엔비디아의 차세대 AI 연산 플랫폼 베라 루빈에 탑재될 예정이어서 메모리 업계의 후공정 생산능력 확충이 뒤따르는 구조다. 다만 2025년 하반기부터 2026년 초까지는 베라 루빈 양산 일정 지연 등으로 SK하이닉스가 보수적인 투자 기조를 유지해 후공정 장비 업체 전반에 실적 공백이 나타났고, 주성엔지니어링이 2026년 1분기 영업손실을 낸 것처럼 장비업 전반의 현상이었다는 지적도 있었다. 2026년 6월 SK하이닉스가 HBM4 생산능력 확대를 위한 후공정 장비 발주를 본격화하면서 한미반도체는 442억원 규모의 TC 본더 4.5 그리핀 공급계약을 공시했고, 한화세미텍도 비슷한 시기에 유사한 규모를 수주한 것으로 전해졌다. 경쟁 포지션 측면에서 한미반도체는 TC 본더 점유율 1위를 유지하고 있으나, SK하이닉스가 공급망 안정화를 위해 복수 벤더를 동시에 활용하는 이원화 전략을 이어가고 있고 삼성전자는 ASMPT와의 평가를 통해 공급망 다변화를 진행한 것으로 보도됐다. 기술 로드맵에서는 국제반도체표준협의기구(JEDEC)가 HBM 패키지 높이 기준을 775마이크로미터에서 900마이크로미터 수준으로 완화하는 방안을 검토하면서, 하이브리드 본딩의 본격 양산 적용 시점이 2029~2030년으로 밀리고 그 사이 기존 TC 본더 계열의 수명이 연장되는 흐름이 형성됐다. 여기에 2.5D 패키징과 PLP 확산으로 파운드리·OSAT 고객군이 새 수요층으로 부상하고 있으며, 상상인증권은 지난 2년간 급감했던 OSAT 투자가 재개되고 있다고 평가한 것으로 전해졌다.",
-  "en": "The demand axis is HBM for AI servers. All three major memory makers entered HBM4 mass production in 2026, and Nvidia CEO Jensen Huang was reported to have said during his June 2026 visit to Korea that all three had passed HBM4 quality evaluation and were in production. HBM4 is slated for Nvidia's next-generation AI compute platform Vera Rubin, which implies follow-on back-end capacity expansion across the memory industry. From the second half of 2025 into early 2026, however, delays in the Vera Rubin ramp kept SK hynix's investment stance conservative, creating an earnings air pocket across back-end equipment suppliers; Jusung Engineering's first-quarter 2026 operating loss was cited as evidence that this was an industry-wide phenomenon. When SK hynix began placing back-end orders in earnest for HBM4 capacity in June 2026, Hanmi Semiconductor disclosed a KRW 44.2bn contract for TC Bonder 4.5 Griffin, and Hanwha Semitech was reported to have won a similar-sized order around the same time. On competitive positioning, Hanmi Semiconductor retains the top TC bonder share, but SK hynix continues a dual-vendor approach for supply-chain stability, and Samsung Electronics was reported to be diversifying its own supply chain through evaluation work with ASMPT. On the technology roadmap, JEDEC's review of easing the HBM package height standard from 775 to around 900 micrometers has pushed the expected timing for volume adoption of hybrid bonding out to roughly 2029-2030, effectively extending the life of existing TC bonder platforms in the interim. Meanwhile the spread of 2.5D packaging and PLP is turning foundry and OSAT customers into a new demand pool, and Sangsangin Securities was reported to have assessed that OSAT investment, which had collapsed over the prior two years, is resuming."
+  "ko": "HBM 시장은 D램을 수직으로 쌓는 적층 단수가 높아질수록 열압착 장비의 역할이 커지는 구조다. 업계에서는 HBM3E(5세대)에서 HBM4(6세대)로 넘어가는 시기에 TC 본더의 신규 수주가 일시적으로 줄었고, 2026년 1분기 실적이 그 영향을 받았다는 해석이 나온다. 주요 고객사의 HBM4 양산이 2026년 하반기에 본격화되면서 TC 본더 수주는 2분기부터 재개될 것으로 전망됐다. 중국계 증권사 CGSI증권의 연구원은 2026년 상반기 리포트에서 주문 사이클이 2025년을 기점으로 저점을 통과했다고 평가했다. SK하이닉스는 2025년 9월 HBM4 양산 체제를 구축했고, 2026년 1월 한미반도체와 한화세미텍에 TC 본더를 발주했으며, 2026년 6월에는 한미반도체에 442억원 규모 TC 본더 4.5 그리핀 계약을 공시했다. SK하이닉스는 HBM4E까지 TC 본딩과 하이브리드 본딩을 병행하는 투트랙 전략을 밝혀, 16단까지는 TC 본더 사용 가능성이 크다는 보도가 나왔다. 회사는 2025년 설명회에서 국내에서 HBM4용 TC 본더의 양산 공정에 대응할 업체는 자사 외에 없다고 주장했다. 경쟁 측면에서는 SK하이닉스가 2025년 국내 경쟁사를 신규 협력사로 추가하고 싱가포르 ASMPT에도 HBM4용 장비를 발주하면서 조달처가 다변화됐다. 회사는 북미 고객사향 TC 본더 출하가 본격화되는 것으로 보고 있으며, 증권가는 2.5D 패키징용 BOC COB 본더와 HBF용 TC 본더 같은 신규 장비를 하반기 매출 변수로 주목한다.",
+  "en": "The HBM market structure means that thermo-compression bonders become more important as DRAM stacks grow taller. Industry commentary says new TC bonder orders temporarily slowed during the shift from HBM3E (fifth generation) to HBM4 (sixth generation), and that the first quarter of 2026 was affected. As HBM4 mass production at major customers picks up in the second half of 2026, TC bonder orders were expected to resume from the second quarter. CGSI Securities, a China-linked brokerage, said in a first-half 2026 report that the order cycle passed its trough in 2025. SK hynix set up HBM4 mass production in September 2025, ordered TC bonders from HANMI and Hanwha Semitech in January 2026, and in June 2026 the company disclosed a KRW 44.2 billion TC Bonder 4.5 Griffin contract with SK hynix. SK hynix has said it will run TC bonding alongside hybrid bonding through HBM4E, and reports suggest TC bonders are likely to remain in use up to 16-high stacks. At a 2025 briefing the company claimed no domestic peer could match it on TC bonder mass-production processes for HBM4. On competition, SK hynix added a domestic rival as a supplier and placed HBM4 equipment orders with Singapore-based ASMPT in 2025, diversifying its sourcing. The company expects shipments of TC bonders to North American customers to ramp up, and analysts are watching new equipment such as BOC COB bonders for 2.5D packaging and TC bonders for HBF as second-half revenue drivers."
  },
  "outlook": {
-  "ko": "회사가 제시한 일정은 차세대 본딩 장비와 생산능력 확보에 몰려 있다. 한미반도체는 2026년 2분기 실적 발표에서 올해 말과 내년 초로 예상되는 HBM4E 양산에 맞춰 차세대 TC 본더(12단·16단) 수요도 늘 것으로 기대한다고 밝혔다. 또 올해 말 2세대 하이브리드 본더 프로토타입을 공개하고 내년 상반기에 HBM 다이 면적을 넓힌 와이드 TC 본더를 출시할 계획이라고 설명했는데, 와이드 TC 본더 출시 시점은 2026년 4월 발표 당시 올해 하반기로 제시됐던 것에서 뒤로 조정된 것이다. 생산 인프라 측면에서는 인천 주안국가산업단지에 약 1,000억원을 투입한 7공장을 하이브리드 본더 전용 생산기지로 짓고 있으며 2027년 상반기 완공·가동이 목표다. 가동 시 전체 생산시설 면적은 8만 9,530제곱미터로 늘어나고, 인근 1만 6,529제곱미터 이상 규모의 8공장 부지 매입도 추진 중이라고 보도됐다. 회사는 AI 반도체 투자가 몰리는 2027년부터 장비 공급 부족이 나타날 것으로 보고 생산능력을 미리 확보한다는 입장이며, 다만 2026년 7월 20일 공시한 기업가치 제고 계획에는 2024년 7월 제시했던 2026년 매출 2조원 목표가 담기지 않았다. 해외 거점으로는 150만달러를 출자해 미국 캘리포니아주 산호세에 한미 USA를 설립했고 2026년 4분기부터 본격 운영에 들어갈 예정이라고 밝혔다. 시장 추정치로는 상상인증권 정민규 연구원이 2026년 매출 8,196억원, 영업이익 3,822억원을 전망한 것으로 2026년 8월 보도됐으며, 이는 회사의 확정 수치가 아닌 외부 추정이다.",
-  "en": "The company's stated schedule is concentrated on next-generation bonding tools and capacity. In its second-quarter 2026 release, Hanmi Semiconductor said it expects demand for next-generation TC bonders for 12-layer and 16-layer stacks to grow in step with HBM4E mass production anticipated late this year and early next year. It also said it will unveil a second-generation hybrid bonder prototype late this year and launch a wide TC bonder with expanded HBM die area in the first half of next year - a later timing than the second half of 2026 indicated when the plan was announced in April 2026. On infrastructure, roughly KRW 100bn is going into Plant 7 in the Juan National Industrial Complex in Incheon as a dedicated hybrid bonder site, targeting completion and start-up in the first half of 2027. Once running, total production floor area rises to 89,530 square meters, and the company was reported to be pursuing purchase of a Plant 8 site of more than 16,529 square meters nearby. Management's position is that equipment shortages will emerge from 2027 as AI chip investment concentrates, so capacity is being secured in advance; notably, the corporate value enhancement plan disclosed on July 20, 2026 did not carry the KRW 2tn 2026 revenue target set out in July 2024. Overseas, the company said it established Hanmi USA in San Jose, California with USD 1.5m of capital, with full operation slated from the fourth quarter of 2026. As for outside estimates, Sangsangin Securities analyst Jung Min-kyu was reported in August 2026 to forecast 2026 revenue of KRW 819.6bn and operating profit of KRW 382.2bn - an external projection rather than company-confirmed figures."
+  "ko": "회사는 2026년 10월 30일 4분기 분기 기준 역대 최대 매출을 예상한다고 밝혔다. 이연된 장비 매출이 4분기에 반영되고 해외 고객사 장비 공급이 확대된다는 설명이다. 2026년 연간 매출도 2024년과 2025년에 이어 사상 최대를 경신해 3년 연속 최대 매출이 될 것이라는 것이 회사의 전망이다. 보도에 따르면 회사는 2027년에도 글로벌 반도체 기업의 HBM과 첨단 AI 패키징 투자 확대에 힘입어 최대 실적을 다시 경신할 것으로 전망했다. 상상인증권은 2026년 6월 보고서에서 연간 매출 7,850억원, 영업이익 3,694억원을 제시하며 사상 최대 실적 가능성을 언급했다. 증권가는 북미 고객사향 TC 본더 출하와 함께 2.5D 패키징용 BOC COB 본더, HBF용 TC 본더 등 신규 장비 매출이 하반기 실적 회복의 변수가 될 것으로 보고 있다. 회사는 2025년 설명회에서 TC 본더 월 생산능력을 35대에서 2026년 45대로 늘리겠다는 방침을 밝혔다. 회사는 2025년 결산배당을 지급했고 2026년에도 역대 최대 수준의 배당이 기대된다고 말했다. 곽동신 회장은 미국 현지 법인을 통해 고객사 요구에 밀착 지원하고, 미국 신규 공장 가동과 함께 본격적인 장비 수주를 기대한다고 2026년 상반기에 말했다. 다음 확인 지점은 4분기에 이연된 장비 매출이 실제로 인식되는지, 그리고 해외 매출 비중이 약 72% 수준을 유지하는지다.",
+  "en": "On October 30, 2026 the company said it expects record quarterly revenue in the fourth quarter. The explanation is that equipment revenue deferred from the third quarter will be recognized and supply to overseas customers will expand. The company's outlook is that 2026 annual revenue will set another record, extending its run of record annual sales to a third consecutive year after 2024 and 2025. Press reports say the company also expects record results to continue into 2027, supported by expanded HBM and advanced AI packaging investment at global chipmakers. In a June 2026 report, Sangsangin Securities projected 2026 revenue of KRW 785 billion and operating profit of KRW 369.4 billion and raised the possibility of record results. Analysts see TC bonder shipments to North American customers, along with new equipment such as BOC COB bonders for 2.5D packaging and TC bonders for HBF, as swing factors for second-half revenue. At a 2025 briefing the company said it planned to raise monthly TC bonder capacity from 35 units to 45 units in 2026. The company paid a year-end dividend for 2025 and said it expects a dividend at or near record levels for 2026. Chairman Kwak Dong-shin said the U.S. subsidiary will support customers closely and that he expects full-scale equipment orders alongside the start of new U.S. plants, as stated in the first half of 2026. The next checkpoints are whether deferred equipment revenue is recognized in the fourth quarter and whether overseas revenue stays near 72 percent of the total."
  },
  "valuation_comment": {
-  "ko": "이익 기반 배수는 국내 반도체 장비 업종 평균이나 시장 평균을 크게 웃도는 구간에서 형성돼 있고, 순자산 대비로도 프리미엄이 상당히 큰 편이다. 이는 최근 네 개 분기 이익에 2026년 1분기의 발주 공백 구간이 그대로 포함돼 있는 반면, 주가에는 HBM4·HBM4E 국면과 2027년 하이브리드 본더 전환 기대가 함께 반영된 결과로 볼 수 있다. 분기 매출이 한 분기 만에 다섯 배 가까이 움직이는 사업이어서 어느 분기를 기준 구간으로 잡느냐에 따라 배수가 크게 달라지는 점, 2023년처럼 영업 외 항목이 순이익을 좌우한 해가 있어 이익 기반 지표의 연도 간 비교가 왜곡될 수 있는 점은 함께 감안할 대목이다. 배당은 2025 사업연도 배당성향 35.5%, 이익배당금 총액이 전년 대비 11.1% 늘어난 수준으로 회사는 배당성향을 계속 확대할 계획이라고 밝혔지만, 배당수익률 자체는 절대 수준이 높지 않은 편이다. 밸류에이션에 대한 외부 시각은 증권사별로 목표주가 수준이 크게 엇갈리는 편이다. 반대편에는 실적 변동성이 큰 상태에서 성장 기대가 선반영됐다는 시각도 병존한다.",
-  "en": "Earnings-based multiples sit well above the averages for domestic semiconductor equipment peers and for the broader market, and the premium to net assets is also substantial. That reflects the fact that the trailing four-quarter earnings base still embeds the order-gap quarter of early 2026, while the share price simultaneously discounts the HBM4 and HBM4E phase plus expectations for the 2027 hybrid bonder shift. Two caveats belong alongside this: in a business where quarterly revenue can move nearly fivefold in a single quarter, the multiple changes dramatically depending on which base period is used, and years such as 2023 - when non-operating items drove net profit - can distort year-to-year comparisons of profit-based metrics. On dividends, the fiscal 2025 payout ratio was 35.5% and total dividends rose 11.1% year on year, with the company stating it plans to keep raising the payout ratio, though the dividend yield itself is not high in absolute terms. External views on valuation vary widely, with brokerage price targets diverging significantly. On the other side, some observers argue that growth expectations have been priced in ahead of results that remain highly volatile."
+  "ko": "현재 주가수익비율은 최근 4개 분기 지배주주 순이익 합계(1,913억원) 대비 높은 배수에 해당하며, 시가총액은 이 이익 규모를 크게 웃돈다. 주가순자산비율은 2025년 말 자본총계 대비 프리미엄이 큰 구간이다. 연간 지배주주 순이익은 2023년 2,672억원, 2024년 1,526억원, 2025년 2,140억원으로 해마다 크게 달라, 같은 배수라도 해석의 폭이 넓다. 강세 쪽 해석은 2026년 3분기 영업이익률 50.2%와 3년 연속 최대 매출 전망을 근거로 이익 체력이 높아졌다고 본다. 약세 쪽 해석은 분기 실적의 변동이 커서 최근 이익 기준 배수가 높다고 본다. 배당수익률은 낮은 구간이며, 회사는 2026년 배당 규모를 늘릴 뜻을 밝혔다. 이 배수가 향후 이익 성장을 얼마나 반영하는지는 2026년 4분기 실적과 2026년 사업보고서의 영업이익률 흐름으로 가늠할 수 있다.",
+  "en": "The current price-to-earnings multiple is high relative to net income attributable to controlling shareholders over the last four quarters, which totaled KRW 191.3 billion, and the market capitalization sits well above that earnings base. The price-to-book multiple is in a range with a large premium to year-end 2025 total equity. Annual net income attributable to controlling shareholders swung from KRW 267.2 billion in 2023 to KRW 152.6 billion in 2024 and KRW 214 billion in 2025, so the same multiple can be read in quite different ways. The bullish reading points to the 50.2 percent third-quarter 2026 operating margin and the expected third straight record year of revenue as evidence that earnings capacity has risen. The bearish reading points to large quarter-to-quarter swings, which make the multiple on recent earnings look high. The dividend yield is in a low range, and the company has signaled a larger dividend for 2026. How much future earnings growth the current valuation already reflects can be gauged from fourth-quarter 2026 results and the operating margin trend in the 2026 annual report."
  },
  "bull": [
   {
    "title": {
-    "ko": "HBM4 발주 재개가 숫자로 확인됐다",
-    "en": "HBM4 order resumption has shown up in the numbers"
+    "ko": "TC 본더 점유율과 HBM4 전환 수혜",
+    "en": "TC bonder share and the HBM4 transition"
    },
    "body": {
-    "ko": "2026년 6월 SK하이닉스와의 442억원 규모 TC 본더 4.5 그리핀 공급계약 공시 직후 2분기 실적이 반등했고, 매출 2,511억원·영업이익 1,303억원으로 분기 최대치를 기록했다. 회사는 AI 시장 확대로 세계 반도체 기업들의 생산시설 투자가 늘면서 HBM용 TC 본더와 MSVP 수요가 급증한 영향이라고 설명했다. 1분기 공백이 구조적 수요 둔화가 아니라 세대 전환기의 주문 지연이었다는 회사 설명이 2분기 숫자로 한 차례 검증된 셈이다.",
-    "en": "Right after the June 2026 disclosure of a KRW 44.2bn TC Bonder 4.5 Griffin contract with SK hynix, second-quarter results rebounded to record quarterly revenue of KRW 251.1bn and operating profit of KRW 130.3bn. The company attributed this to a surge in demand for HBM TC bonders and MSVP as global chipmakers expanded fab investment on AI market growth. That gave one round of verification to management's argument that the first-quarter gap was an order delay tied to the generation transition rather than structural demand weakness."
+    "ko": "회사는 TC 본더 분야에서 세계 1위 점유율을 차지하고 있다는 보도가 있다. 주요 고객사 SK하이닉스의 HBM4 양산 확대에 맞춰 2026년 6월 442억원 규모 TC 본더 계약이 공시됐다. 2026년 3분기 영업이익률은 회사 발표 기준 50.2%로 전년 동기 대비 9.4%포인트 높아졌다.",
+    "en": "Reports say the company holds the world's No. 1 share in TC bonders. A KRW 44.2 billion TC bonder contract with SK hynix was disclosed in June 2026, in step with the ramp of its HBM4 production. The third-quarter 2026 operating margin of 50.2 percent was 9.4 percentage points above a year earlier, per the company."
    }
   },
   {
    "title": {
-    "ko": "제품군이 HBM 밖으로 넓어지고 있다",
-    "en": "The product range is widening beyond HBM"
+    "ko": "해외 매출 비중과 미국 거점 확대",
+    "en": "Overseas mix and the U.S. footprint"
    },
    "body": {
-    "ko": "2026년에 2.5D TC 본더 40, FC 본더 3.5, FC 본더 75 등 2.5D 패키징 장비 3종을 출시해 글로벌 파운드리·후공정 고객사에 공급하고 있다고 회사는 밝혔다. 기존 주력이던 MSVP도 AI 반도체 패키지에 패널 레벨 패키징 적용이 확대되며 주문량이 늘고 있다는 설명이다. 메모리 고객사 한 곳의 투자 사이클에 실적이 전적으로 좌우되는 구조에서 벗어날 여지를 넓히는 방향이다.",
-    "en": "The company says that in 2026 it launched three 2.5D packaging tools - the 2.5D TC Bonder 40, FC Bonder 3.5 and FC Bonder 75 - and is supplying them to global foundry and back-end customers. It also says orders for MSVP, its long-standing mainstay, are rising as panel-level packaging spreads in AI chip packages. This broadens room to move away from a structure in which results hinge entirely on one memory customer's investment cycle."
+    "ko": "회사 전체 매출에서 해외가 차지하는 비중은 약 72%다. 미국 캘리포니아주 산호세에 '한미USA'를 세워 미국 반도체 시설투자에 맞춰 장비 공급을 넓힐 방침이다. 회사는 2025년 설명회에서 해외 고객사 매출이 국내 특정 고객사 매출의 두 배를 넘을 것이라고 전망했다.",
+    "en": "Overseas customers make up about 72 percent of total revenue, according to the company's October 30, 2026 announcement. HANMI USA in San Jose, California is intended to widen equipment supply alongside U.S. chip investment. At a 2025 briefing the company forecast overseas customer revenue above twice that of one domestic customer."
    }
   },
   {
    "title": {
-    "ko": "높은 마진과 낮은 차입 부담",
-    "en": "High margins with low leverage"
+    "ko": "신규 장비 포트폴리오와 배당 기대",
+    "en": "New equipment lineup and dividend expectations"
    },
    "body": {
-    "ko": "2025년 영업이익률 43.6%, 2024년 45.7%로 장비업 평균을 크게 웃도는 수익성을 유지했고, 2026년 2분기 영업이익률은 51.9%로 계산된다. 2025년 말 부채비율은 17.8%로 2024년 31.4%에서 낮아졌고, 영업활동현금흐름은 2,286억원으로 확대됐다. 7공장 약 1,000억원 투자와 8공장 부지 매입 추진을 자체 현금흐름 범위에서 소화할 여력이 상대적으로 크다는 의미다.",
-    "en": "Operating margins of 43.6% in 2025 and 45.7% in 2024 held well above equipment-industry norms, and the implied second-quarter 2026 margin was 51.9%. The debt-to-equity ratio fell to 17.8% at end-2025 from 31.4% in 2024, while operating cash flow expanded to KRW 228.6bn. That implies relatively ample capacity to fund the roughly KRW 100bn Plant 7 investment and the Plant 8 site purchase from internal cash flow."
+    "ko": "대면적 AI 패키징용 신규 TC 본더와 플립칩 본더의 양산 공급이 새 성장 동력으로 거론된다. 2025년 결산배당 지급 이후 2026년 배당 규모가 다음 확인 지점이다. 상상인증권은 2026년 6월 보고서에서 연간 영업이익 3,694억원을 제시하며 사상 최대 실적 가능성을 언급했다.",
+    "en": "New TC bonders for large-area AI packaging and flip-chip bonders are cited as new growth drivers. After the 2025 year-end dividend payment, the size of the 2026 dividend is the next point to check. Sangsangin Securities, in a June 2026 report, projected operating profit of KRW 369.4 billion and raised the possibility of record results."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "분기 실적 변동성이 구조적이다",
-    "en": "Quarterly volatility is structural"
+    "ko": "분기 실적의 큰 변동성",
+    "en": "Large swings in quarterly results"
    },
    "body": {
-    "ko": "장비 매출은 고객사 검수 통과 시점에 한꺼번에 인식되기 때문에 고객사가 라인 증설 일정을 한 달 미루면 매출이 통째로 다음 분기로 넘어간다. 실제로 2025년 4분기 매출 830억원, 2026년 1분기 509억원에서 2026년 2분기 2,511억원으로 한 분기 만에 다섯 배 가까이 움직였다. 특정 분기의 최대 실적이 다음 분기에도 이어진다고 단정하기 어려운 구조다.",
-    "en": "Equipment revenue is booked in lumps when customer acceptance testing clears, so a one-month delay in a customer's line expansion shifts an entire block of revenue into the next quarter. Revenue moved from KRW 83.0bn in the fourth quarter of 2025 and KRW 50.9bn in the first quarter of 2026 to KRW 251.1bn in the second quarter - close to a fivefold jump in a single quarter. It is therefore hard to assume that a record quarter carries into the following one."
+    "ko": "2025년 4분기 매출은 830억원, 2026년 1분기 매출은 509억원으로 분기 간 편차가 컸다. 2026년 1분기 영업이익은 84.6억원으로 전 분기 대비 69.4% 줄었다. 2026년 3분기 지배주주 순이익은 349억원으로 전년 동기 대비 46.8% 감소해 영업이익 증가와 방향이 달랐다.",
+    "en": "Quarterly revenue was KRW 83 billion in the fourth quarter of 2025 and KRW 50.9 billion in the first quarter of 2026, a wide spread. Operating profit in the first quarter of 2026 was KRW 8.46 billion, down 69.4 percent from the prior quarter. Third-quarter 2026 net income attributable to controlling shareholders fell 46.8 percent year on year, even as operating profit rose."
    }
   },
   {
    "title": {
-    "ko": "매출 목표 미달과 목표 철회",
-    "en": "Missed revenue targets and a withdrawn goal"
+    "ko": "고객 집중과 HBM 기술 전환",
+    "en": "Customer concentration and the HBM technology shift"
    },
    "body": {
-    "ko": "회사는 2024년 7월 2024년 매출 6,500억원, 2025년 1조 2,000억원, 2026년 2조원이라는 청사진을 제시했으나 실제 2024년 매출은 5,589억원, 2025년은 5,767억원이었다. 2026년 7월 20일 공시된 기업가치 제고 계획에서는 매출 2조원 목표가 제외됐다고 보도됐다. 투자 계획은 역대 최대 규모로 확대되는 반면 이를 언제 얼마의 매출로 회수하겠다는 수치는 제시되지 않은 상태다.",
-    "en": "In July 2024 the company laid out a roadmap of KRW 650bn of revenue in 2024, KRW 1.2tn in 2025 and KRW 2tn in 2026, whereas actual revenue was KRW 558.9bn in 2024 and KRW 576.7bn in 2025. The corporate value enhancement plan disclosed on July 20, 2026 was reported to have dropped the KRW 2tn target. Investment plans are expanding to record scale while no figure has been offered for when or how much revenue will come back from them."
+    "ko": "주요 고객사는 SK하이닉스와 마이크론이며, 최대 고객사인 SK하이닉스의 발주 시점에 실적이 크게 좌우된다. SK하이닉스는 TC 본딩과 하이브리드 본딩을 병행하는 투트랙 전략을 밝혀, 장기적으로 장비 수요 구조가 바뀔 여지가 있다. 2026년 1분기처럼 HBM 세대 전환기에는 발주가 일시적으로 줄어든 사례가 있었다.",
+    "en": "Major customers are SK hynix and Micron, and results depend heavily on the timing of orders from the largest of them, SK hynix. SK hynix has said it will pursue TC bonding and hybrid bonding in parallel, which could change the mix of equipment demand over time. During the first-quarter 2026 HBM generation shift, orders temporarily declined."
    }
   },
   {
    "title": {
-    "ko": "고객 집중과 공급망 이원화",
-    "en": "Customer concentration and dual sourcing"
+    "ko": "경쟁 구도 심화와 공급처 다변화",
+    "en": "Intensifying competition and supplier diversification"
    },
    "body": {
-    "ko": "SK하이닉스는 공급망 안정화를 위해 한미반도체와 한화세미텍에 비슷한 시기·비슷한 규모로 TC 본더를 발주하는 이원화 전략을 이어가고 있는 것으로 전해졌고, 공급망에는 ASMPT도 포함돼 있다. 삼성전자도 ASMPT와 HBM TC 본더 평가를 진행하며 공급망 다변화를 이어간 것으로 2026년 4월 보도됐다. 점유율 1위 지위가 유지되더라도 개별 발주에서 물량이 분산될 가능성은 상시적인 변수다.",
-    "en": "SK hynix is reported to be maintaining a dual-vendor approach, placing TC bonder orders of similar size and timing with both Hanmi Semiconductor and Hanwha Semitech for supply-chain stability, with ASMPT also inside that supply chain. Samsung Electronics was reported in April 2026 to be continuing diversification through HBM TC bonder evaluation with ASMPT. Even if the number one share position holds, the possibility that volumes get split across individual orders is a permanent variable."
+    "ko": "SK하이닉스는 2025년 국내 경쟁사를 신규 협력사로 추가했고, 2025년 10월 싱가포르 ASMPT에 HBM4용 TC 본딩 장비 7세트를 발주했다는 보도가 나왔다. 업계에서는 이를 제3의 장비 조달처에 물량을 준 사례로 해석했다. 경쟁이 늘어나면 고객사 내 점유율과 가격 협상력이 약해질 수 있다.",
+    "en": "In 2025 SK hynix added a domestic rival as a TC bonder supplier, and reports said it ordered seven sets of HBM4 TC bonding equipment from Singapore-based ASMPT in October 2025. Industry commentary read this as volume moving to a third equipment source. More competitors could weaken the company's share and pricing leverage with customers."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "고객 설비투자 일정 리스크",
-    "en": "Customer capex timing risk"
+    "ko": "환율과 매출 인식 시점",
+    "en": "FX and revenue recognition timing"
    },
    "body": {
-    "ko": "2025년 하반기부터 2026년 초까지 베라 루빈 양산 일정 지연 등으로 SK하이닉스가 보수적 투자 기조를 유지하면서 후공정 장비 업체 전반에 실적 공백이 발생했다. 한미반도체의 2026년 1분기 매출은 509억원, 영업이익은 85억원으로 전년 동기 대비 각각 65.5%, 87.9% 감소했다. 고객사의 세대 전환 일정이나 AI 투자 속도가 다시 조정될 경우 같은 형태의 공백이 재발할 수 있다.",
-    "en": "From the second half of 2025 into early 2026, delays in the Vera Rubin ramp kept SK hynix conservative on investment, producing an earnings air pocket across back-end equipment suppliers. Hanmi Semiconductor's first-quarter 2026 revenue of KRW 50.9bn and operating profit of KRW 8.5bn were down 65.5% and 87.9% year on year. If customers' generation-transition schedules or the pace of AI investment are recalibrated again, the same kind of gap can recur."
+    "ko": "회사는 환율 하락에 따른 원화 환산 영향과 일부 장비의 매출 인식 시점이 4분기로 넘어간 점을 3분기 실적의 제약 요인으로 설명했다. 이연된 장비 매출이 4분기에 실제로 인식되지 않으면 분기 실적 변동이 커질 수 있다. 해외 매출 비중이 약 72%인 구조에서 환율 변화는 원화 기준 매출에 직접 영향을 준다.",
+    "en": "The company cited the won-translated impact of a weaker dollar and the shift of some equipment revenue into the fourth quarter as drags on third-quarter results. If deferred equipment revenue is not recognized in the fourth quarter, quarterly swings could widen. With about 72 percent of revenue from overseas, currency moves feed directly into won-denominated sales."
    }
   },
   {
    "cat": {
-    "ko": "기술 전환 및 특허 분쟁",
-    "en": "Technology transition and patent disputes"
+    "ko": "특허 분쟁",
+    "en": "Patent litigation"
    },
    "body": {
-    "ko": "JEDEC의 HBM 패키지 높이 기준 완화 검토로 하이브리드 본딩 양산 적용 시점이 2029~2030년으로 예상되는 가운데, 회사는 7공장에 약 1,000억원을 투입해 하이브리드 본더 전용 생산기지를 준비하고 있다. 전환 시점이 더 늦춰지거나 경쟁사가 먼저 검증을 통과할 경우 선행 투자 회수 시기가 밀릴 수 있다. 한화세미텍과는 TC 본더 핵심 기술을 놓고 특허 침해 금지 소송과 무효 심판이 맞물린 상호 소송이 진행 중이다.",
-    "en": "With JEDEC reviewing an easing of HBM package height standards, volume adoption of hybrid bonding is expected around 2029-2030, while the company is spending roughly KRW 100bn on Plant 7 as a dedicated hybrid bonder site. If that transition slips further or a competitor clears qualification first, the payback timing on this pre-investment could be pushed out. Mutual litigation with Hanwha Semitech over core TC bonder technology is also under way, combining an infringement injunction suit with invalidation proceedings."
+    "ko": "회사는 2024년 말 경쟁사를 상대로 TC 본더 특허침해소송을 제기한 바 있다. 2025년 10월에는 경쟁사가 회사를 상대로 TC 본더 핵심 기술 특허침해소송을 냈다. 소송이 길어지면 고객사가 장비 조달처를 나누는 결정을 강화할 수 있다.",
+    "en": "The company filed a patent infringement suit over TC bonders against a domestic rival at the end of 2024. In October 2025 that rival filed a suit against the company over core TC bonder technology. A prolonged dispute could push customers to split their equipment sourcing further."
    }
   },
   {
    "cat": {
-    "ko": "정보 공개 축소와 가시성",
-    "en": "Reduced disclosure and visibility"
+    "ko": "고객사 설비투자 일정",
+    "en": "Customer capex timing"
    },
    "body": {
-    "ko": "회사는 2026년 1월 말 고객 요청에 따라 고객 정보와 수주 내역에 대한 자율공시를 하지 않겠다고 공지한 것으로 보도됐다. 현행 규정상 수주 공시는 직전년도 매출액의 5%를 초과할 때만 의무이므로, 그보다 작은 계약은 외부에서 추적하기 어려워진다. 분기 실적 변동성이 큰 사업에서 수주 흐름의 가시성이 낮아지면 실적 확인 시점까지 정보 공백이 길어질 수 있다.",
-    "en": "The company was reported to have announced in late January 2026 that, at customers' request, it would no longer make voluntary disclosures of customer information or order details. Under current rules, order disclosure is mandatory only above 5% of prior-year revenue, so smaller contracts become harder to track from outside. In a business with large quarterly swings, lower visibility on order flow can lengthen the information gap until results are confirmed."
+    "ko": "회사 수주는 SK하이닉스의 청주 신규 팹과 패키징 팹의 장비 반입 일정에 크게 좌우된다. 2026년 6월 442억원 계약처럼 수주가 발주 단위로 나오기 때문에 공시 간격이 불규칙하다. 고객사의 투자 계획이 바뀌면 분기 매출 인식 시점도 함께 밀릴 수 있다.",
+    "en": "Orders are closely tied to when major customers bring equipment into new fabs and packaging lines, such as SK hynix facilities in Cheongju. Contracts such as the KRW 44.2 billion award in June 2026 arrive in irregular batches, so disclosures are uneven. If customer investment plans shift, revenue recognition timing can slip as well."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 10월 중순",
-    "en": "Mid-October 2026"
+    "ko": "2026년 4분기 (2027년 초 잠정실적 공시 시점)",
+    "en": "Q4 2026 (preliminary results, early 2027)"
    },
    "what": {
-    "ko": "2026년 3분기 잠정 실적 발표. 2분기 최대 실적이 일회성 인식 집중인지, HBM4 발주가 연속적인 흐름으로 이어지는지 가르는 첫 확인 지점이다.",
-    "en": "Preliminary third-quarter 2026 results. This is the first checkpoint on whether the record second quarter was a concentration of one-off revenue recognition or whether HBM4 orders are translating into a continuous flow."
+    "ko": "회사가 예상한 4분기 역대 최대 분기 매출이 실제로 나오는지, 3분기에서 이연된 장비 매출이 4분기에 인식됐는지 확인한다.",
+    "en": "Whether fourth-quarter revenue reaches the record level the company forecast, and whether equipment revenue deferred from the third quarter was recognized."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기",
-    "en": "Fourth quarter of 2026"
+    "ko": "2027년 3월 31일까지 (2026년 사업보고서 제출 기한)",
+    "en": "By March 31, 2027 (2026 annual report filing deadline)"
    },
    "what": {
-    "ko": "미국 캘리포니아 산호세 법인 한미 USA의 본격 운영 개시 여부. 북미 고객사 기술 지원 체계가 실제 수주로 연결되는지 관찰 대상이다.",
-    "en": "Whether Hanmi USA in San Jose, California enters full operation as planned. The question to watch is whether the North American technical support setup converts into actual orders."
+    "ko": "2026년 연간 매출이 3년 연속 최대 매출 전망과 맞는지, 영업이익률이 2025년 43.6%에서 어떻게 움직였는지, 지배주주 순이익과 영업이익의 차이가 어디서 나왔는지 본다.",
+    "en": "Whether 2026 annual revenue matches the third straight record-year outlook, how the operating margin moved from 43.6 percent in 2025, and what drove the gap between operating profit and net income attributable to controlling shareholders."
    }
   },
   {
    "when": {
-    "ko": "2026년 연말",
-    "en": "End of 2026"
+    "ko": "2026년 11월 이후 수시 공시",
+    "en": "Ongoing disclosures from November 2026"
    },
    "what": {
-    "ko": "2세대 하이브리드 본더 프로토타입 공개와 고객사 협업 착수 여부. 2029년 이후 16단 이상 HBM 대응력을 판단할 근거가 된다.",
-    "en": "Whether the second-generation hybrid bonder prototype is unveiled and customer collaboration begins. This provides the basis for judging readiness for HBM stacks of 16 layers and above from 2029 onward."
+    "ko": "SK하이닉스 등 주요 고객사의 TC 본더 발주·수주 공시가 2026년 6월 442억원 계약 이후에도 이어지는지 확인한다. 발주 규모와 빈도가 HBM 생산능력 확대 흐름을 가늠하는 근거가 된다.",
+    "en": "Whether TC bonder orders and contract disclosures from major customers such as SK hynix continue after the June 2026 KRW 44.2 billion contract, which indicate the pace of HBM capacity expansion."
    }
   },
   {
    "when": {
-    "ko": "2027년 상반기",
-    "en": "First half of 2027"
+    "ko": "2027년 초 (결산배당 결정 시점)",
+    "en": "Early 2027 (year-end dividend decision)"
    },
    "what": {
-    "ko": "인천 주안 7공장(하이브리드 본더 팩토리) 완공·가동과 와이드 TC 본더 출시 일정. 앞서 와이드 TC 본더 출시 시점이 한 차례 뒤로 조정된 만큼 일정 준수 여부가 관찰 포인트다.",
-    "en": "Completion and start-up of Plant 7, the hybrid bonder factory in Juan, Incheon, plus the wide TC bonder launch. Since the wide TC bonder timeline has already slipped once, adherence to schedule is the point to watch."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 2~3월",
-    "en": "February-March 2027"
-   },
-   "what": {
-    "ko": "2026년 연간 확정 실적과 2026 사업연도 배당 결정. 회사가 배당성향을 계속 확대한다고 밝힌 만큼 2025년 35.5% 대비 실제 변화를 확인할 수 있다.",
-    "en": "Confirmed full-year 2026 results and the fiscal 2026 dividend decision. Since the company has said it will keep raising the payout ratio, the actual change against 35.5% in 2025 can be checked here."
+    "ko": "회사가 2026년에도 역대 최대 수준의 배당을 기대한다고 말한 만큼, 실제 결산배당 규모가 확대되는지 확인한다.",
+    "en": "Whether the year-end dividend is actually raised, given the company's stated expectation of record-level payouts for 2026."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "한미반도체는 HBM용 TC 본더에서 글로벌 1위 지위를 유지하며 2026년 2분기에 매출 2,511억원·영업이익 1,303억원의 분기 최대 실적을 기록했다. 그러나 직전 분기인 2026년 1분기 매출이 509억원이었던 점에서 드러나듯, 고객사 검수 시점에 매출이 몰리는 장비업 특유의 변동성이 실적 해석을 어렵게 만든다. 연간으로는 2025년 매출 5,767억원·영업이익률 43.6%로 높은 수익성을 유지했고 부채비율은 17.8%까지 낮아져 재무 여력은 확보된 상태다. 전방에서는 HBM4 양산과 베라 루빈 탑재, 2.5D 패키징·패널 레벨 패키징 확산이 수요 축을 넓히는 반면, SK하이닉스의 공급망 이원화와 한화세미텍·ASMPT와의 경쟁, 진행 중인 특허 소송은 물량 배분의 불확실성으로 남아 있다. 회사는 7공장 하이브리드 본더 팩토리와 8공장 부지, 미국 법인 등 투자 일정을 구체화했지만 2026년 7월 기업가치 제고 계획에서 매출 2조원 목표는 제외했다. 결국 확대된 생산능력을 실제 발주가 채우는지, 그리고 2분기의 회복이 연속된 분기 흐름으로 이어지는지가 앞으로 확인해야 할 핵심이다. 이 리포트는 정보 제공 목적이며 특정 종목에 대한 매수·매도 의견을 포함하지 않는다.",
-   "en": "Hanmi Semiconductor holds the global number one position in TC bonders for HBM and posted record quarterly results in the second quarter of 2026, with revenue of KRW 251.1bn and operating profit of KRW 130.3bn. Yet as the KRW 50.9bn of revenue in the immediately preceding quarter shows, the equipment sector's characteristic volatility - revenue clustering around customer acceptance timing - complicates any reading of results. On an annual basis, 2025 revenue of KRW 576.7bn and a 43.6% operating margin preserved high profitability, and the debt-to-equity ratio fell to 17.8%, leaving financial headroom in place. On the demand side, HBM4 mass production, adoption in Vera Rubin and the spread of 2.5D and panel-level packaging are widening the demand base, while SK hynix's dual sourcing, competition from Hanwha Semitech and ASMPT, and ongoing patent litigation leave order allocation uncertain. The company has detailed investment schedules for the Plant 7 hybrid bonder factory, a Plant 8 site and a US subsidiary, but excluded the KRW 2tn revenue target from its July 2026 corporate value enhancement plan. Ultimately, the core items to verify are whether actual orders fill the expanded capacity and whether the second-quarter recovery extends into a continuous run of quarters. This report is for informational purposes and does not contain any buy or sell opinion on any security."
+   "ko": "한미반도체의 실적은 HBM 적층 공정에 쓰이는 TC 본더 수요에 크게 기대는 구조이며, 2023년 저점 이후 2025년까지 매출과 이익이 회복된 흐름이 공시로 확인된다. 2025년 매출은 5,767억원, 영업이익은 2,514억원으로 2024년 대비 소폭 줄었지만 영업이익률은 43.6%로 높은 수준을 유지했다. 2026년 분기 실적은 1분기 저점(매출 509억원) 이후 2분기 반등과 3분기 영업이익률 50.2%(회사 발표 기준)로 이어졌으나, 3분기 지배주주 순이익은 349억원으로 전년 동기 대비 줄었다. 강세 쪽은 TC 본더 점유율, 해외 매출 비중 약 72%, 3년 연속 최대 매출 전망이고, 약세 쪽은 분기 실적 변동, 고객사 집중, 특허 분쟁, 하이브리드 본딩 같은 기술 전환이다. 현재 주가는 최근 4개 분기 지배주주 순이익 합계 1,913억원 대비 높은 배수에 있어, 주가가 향후 이익 성장을 얼마나 반영하는지가 해석의 핵심 쟁점이다. 회사 전망과 증권사 추정은 방향이 같지만 아직 공시로 검증되지 않았다. 다음 확인 지점은 2026년 4분기 잠정실적과 2026년 사업보고서이며, 그때의 영업이익률과 수주 흐름이 강세와 약세 구도를 가르는 기준이 된다. 이 리포트는 정보 제공을 목적으로 하며 투자의견이나 목표주가를 제시하지 않는다.",
+   "en": "HANMI Semiconductor's earnings depend heavily on demand for TC bonders used in HBM stacking, and disclosed filings show revenue and profit recovering from the 2023 low through 2025. Revenue of KRW 576.7 billion and operating profit of KRW 251.4 billion in 2025 were slightly below 2024, but the operating margin of 43.6 percent stayed at a high level. Quarterly results in 2026 moved from a first-quarter low of KRW 50.9 billion in revenue to a second-quarter rebound and a third-quarter operating margin of 50.2 percent per the company, although third-quarter net income attributable to controlling shareholders of KRW 34.9 billion fell year on year. The bullish case rests on TC bonder share, overseas revenue of about 72 percent and the outlook for a third straight record revenue year. The bearish case rests on quarterly volatility, customer concentration, patent litigation and technology shifts such as hybrid bonding. The current price-to-earnings multiple is high against the KRW 191.3 billion of controlling-shareholder net income over the last four quarters, so how much future growth the share price already reflects is the central question. Company outlooks and brokerage estimates point in the same direction but have not yet been confirmed by filings. The next checkpoints are the fourth-quarter 2026 preliminary results and the 2026 annual report, whose operating margin and order flow will sharpen the balance between the bull and bear cases. This report is for information only and does not state an investment opinion or target price."
   }
  },
  "sources": [
-  "https://www.etnews.com/20260714000274",
-  "https://zdnet.co.kr/view/?no=20260714105543",
-  "https://www.investing.com/equities/hanmi-semicon-earnings",
-  "https://www.cbci.co.kr/news/articleView.html?idxno=589008",
-  "https://v.daum.net/v/20260518101916356",
-  "https://v.daum.net/v/20260714110749138",
-  "https://dealsite.co.kr/articles/145326/068020",
-  "https://m.irgo.co.kr/IR-ROOM/042700/-IR-ROOM",
-  "https://zdnet.co.kr/view/?no=20260610151635",
-  "https://m.dnews.co.kr/m_home/view.jsp?idxno=202606081539555740499",
-  "https://biz.heraldcorp.com/article/10766689",
-  "https://v.daum.net/v/865ZUpGhTV",
-  "https://zdnet.co.kr/view/?no=20260608150728",
-  "https://www.ajunews.com/view/20260201165416006",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=searchInitInfo&acptNo=20260114000028&docno=",
-  "https://biz.newdaily.co.kr/site/data/html/2026/06/11/2026061100050.html",
-  "https://www.sptatimeskorea.com/post/%EC%A0%9C20260810-te-01%ED%98%B8-2026%EB%85%84-8%EC%9B%94-10%EC%9D%BC-%EB%B0%98%EB%8F%84%EC%B2%B4-%EC%9E%A5%EB%B9%84-%EA%B4%80%EB%A0%A8-%EC%A3%BC%EC%9A%94-%EB%89%B4%EC%8A%A4-%EC%9A%94%EC%95%BD",
-  "https://wonforecast.com/hanmi-semiconductor"
+  "https://www.thelec.kr/news/articleView.html?idxno=50886",
+  "https://www.businesspost.co.kr/BP?command=article_view&num=438140",
+  "https://zdnet.co.kr/view/?no=20250730154252",
+  "https://www.etoday.co.kr/news/view/2591475",
+  "https://m.news.nate.com/view/20260114n27944",
+  "https://v.daum.net/v/20260609075302750",
+  "https://v.daum.net/v/0H3yTlzThI",
+  "https://v.daum.net/v/20260114144825608?f=p",
+  "https://m.news.nate.com/view/20260114n27583",
+  "http://www.srtimes.kr/news/articleView.html?idxno=216288",
+  "https://www.hankyung.com/article/202610305726i",
+  "https://www.ddaily.co.kr/page/view/2026103009442678962",
+  "https://www.businesspost.co.kr/BP?command=article_view&num=450737",
+  "https://www.ajunews.com/view/20261030095437865",
+  "https://www.knowingasset.com/app/calendar/14028",
+  "https://www.news1.kr/industry/general-industry/6337442",
+  "https://www.kukinews.com/article/view/kuk202610300046",
+  "https://zdnet.co.kr/view/?no=20261030134010"
  ],
  "v": 2,
- "model": "claude-opus-5",
+ "model": "claude-haiku-5-5",
  "ticker": "042700",
  "name": "한미반도체",
  "name_en": "HANMI Semiconductor CO., LTD.",
@@ -233,11 +223,11 @@
   "반도체"
  ],
  "market": "코스피",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 05:29",
- "dataDate": "20260904",
+ "reportDate": "2026-11-14",
+ "reportTs": "2026-11-14 09:25",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-09-04",
+  "asOf": "2026-11-13",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -307,12 +297,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 180047311088,
-    "op": 86308097687,
-    "np_owner": 64687278708
-   },
-   {
     "q": "2025Q3",
     "rev": 166231357101,
     "op": 67822011689,
@@ -335,29 +319,36 @@
     "rev": 251163039356,
     "op": 130346798331,
     "np_owner": 108430749379
+   },
+   {
+    "q": "2026Q3",
+    "rev": 181014186807,
+    "op": 90803194809,
+    "np_owner": 34937825314
    }
   ],
   "valuation": {
-   "price": 230000,
-   "mcap": 21.9218,
+   "price": 181700,
+   "mcap": 17.3182,
    "shares": 95312200,
    "total_shares": 95312200,
-   "wavg_shares": 94838170,
-   "per": 98.249,
-   "eps": 2341,
-   "pbr": 29.2063,
-   "bps": 7875,
-   "roe_ttm": 33.2,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": 222033902940,
+   "wavg_shares": 94860003,
+   "per": 90.129,
+   "eps": 2016,
+   "pbr": 22.051,
+   "bps": 8240,
+   "roe_ttm": 26.6,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": 191258479972,
    "ccy": "KRW",
    "bps_src": "자체",
    "eps_src": "공시",
-   "pbr_krx": 31.6,
+   "pbr_krx": 24.97,
    "bps_krx": 7278.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 800.0,
-   "div": 0.35
+   "div": 0.44
   }
- }
+ },
+ "textRules": 2
 }

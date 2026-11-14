@@ -1,233 +1,223 @@
 {
  "title": {
-  "ko": "GPU 인프라 수주 확대, 적자는 지속",
-  "en": "AI Infra Orders Expand, Losses Persist"
+  "ko": "매출 회복 속 3개 분기 연속 적자, 흑자 전환이 과제",
+  "en": "Revenue recovers, but losses persist for three straight quarters"
  },
  "lead": {
-  "ko": "아크릴은 AI 인프라 플랫폼 '조나단'과 GPU 운용 소프트웨어 'GPUBASE'를 앞세워 매출을 빠르게 늘리고 있으나, 2026년 2분기까지 영업손실과 순손실이 이어지고 있다.",
-  "en": "Acryl is rapidly expanding revenue through its Jonathan AI infrastructure platform and GPUBASE GPU operation software, but operating and net losses have continued through the second quarter of 2026."
+  "ko": "아크릴은 2026년 1분기부터 3분기까지 분기 매출이 회복 흐름을 보였으나, 같은 기간 영업손실이 3개 분기 연속 이어져 손익 전환 시점이 핵심 확인 지점이다.",
+  "en": "Acryl's quarterly revenue recovered from the first quarter to the third quarter of 2026, but operating losses continued for three straight quarters, making the timing of a profit turnaround the key point to watch."
  },
  "keypoints": [
   {
-   "ko": "2025년 매출 133억원(전년 대비 0.8% 감소), 영업손실 22.5억원으로 전년보다 손실 폭이 줄었다.",
-   "en": "2025 revenue was KRW 13.3 billion (down 0.8% year on year), while the operating loss narrowed to KRW 2.25 billion."
+   "ko": "2025년 매출은 133억원으로 전년 대비 0.8% 감소했고, 영업손실 22.5억원으로 2년 연속 적자이나 손실 폭은 줄었다.",
+   "en": "Revenue for 2025 was KRW 13.3 billion, down 0.8% from the prior year, and the company posted an operating loss of KRW 2.25 billion, a second straight annual loss with a narrower gap."
   },
   {
-   "ko": "2026년 1분기 매출 65.7억원에서 2분기 54.7억원으로 16.7% 줄었고, 영업손실은 7.9억원에서 15억원으로 확대됐다.",
-   "en": "Revenue fell 16.7% quarter on quarter from KRW 6.57 billion in Q1 2026 to KRW 5.47 billion in Q2, while the operating loss widened from KRW 786 million to KRW 1.5 billion."
+   "ko": "2026년 1분기 매출 65.7억원, 3분기 79.2억원으로 분기 매출은 회복됐지만 3분기 영업손실 10.4억원으로 3개 분기 연속 적자다.",
+   "en": "Quarterly revenue reached KRW 6.57 billion in the first quarter of 2026 and KRW 7.92 billion in the third quarter, yet the company still recorded an operating loss of KRW 1.04 billion in the third quarter."
   },
   {
-   "ko": "2분기 말 기준 수주잔고는 212억원으로 전분기 대비 49% 늘었다고 회사가 2026년 8월에 밝혔다.",
-   "en": "The company stated in August 2026 that its order backlog stood at KRW 21.2 billion at the end of Q2, up 49% from the prior quarter."
+   "ko": "2025년 말 자본총계는 437억원으로, 2024년 부채비율이 음수였던 재무 구조와 대비된다. 2025년 말 부채총계는 71.9억원이다.",
+   "en": "Total equity at the end of 2025 was KRW 43.7 billion, a sharp change from 2024, when the debt ratio was negative, and total liabilities were KRW 7.19 billion."
   },
   {
-   "ko": "GPUBASE가 한컴의 모듈형 데이터센터 구축 사업에 누적 55억원 규모로 공급되며 상용화 초기 단계에 진입했다.",
-   "en": "GPUBASE has been supplied to Hancom's modular data center project for a cumulative KRW 5.5 billion, marking an early stage of commercialization."
+   "ko": "영업활동 현금흐름 적자 폭은 2024년 -14억원에서 2025년 -47.1억원으로 커졌다.",
+   "en": "Operating cash flow deteriorated, with the outflow widening from KRW -1.4 billion in 2024 to KRW -4.71 billion in 2025."
   },
   {
-   "ko": "한국IR협의회는 2026년 매출을 208억원, 영업손실을 17억원으로 각각 전망했다(2026년 7월).",
-   "en": "Korea IR Service forecast 2026 revenue of KRW 20.8 billion and an operating loss of KRW 1.7 billion in a July 2026 report."
+   "ko": "정부 과제(약 76억원 규모, 2026년 6월~2030년 12월)와 해외 헬스케어 AX 본계약이 중장기 매출 축으로 제시되고 있다.",
+   "en": "A government R&D project worth about KRW 7.6 billion, running from June 2026 to December 2030, and a healthcare AX contract in Uzbekistan are presented as the medium-term revenue pillars."
   }
  ],
  "business": {
-  "ko": "아크릴은 2011년 설립돼 2025년 12월 16일 코스닥 시장에 신규 상장한 인공지능(AI) 인프라 전문 기업이다. 회사는 핵심 플랫폼 '조나단(Jonathan)'을 통해 AI 모델의 개발·배포·운영 전 과정을 지원하는 MLOps 솔루션을 제공하며, 스스로를 'AX(AI-Experience) 인프라 생태계'를 지향하는 '소프트웨어 엔비디아'로 소개하고 있다. 의료 분야에는 별도 특화 플랫폼 '나디아(NADIA)'를 운영하며 의료데이터를 AI가 활용할 수 있는 형태로 가공해 병원과 공공기관에 공급한다. 2025년 사업보고서에 공시된 제품별 매출 비중은 솔루션(조나단)이 52.27%로 가장 크고, 정부보조금수익이 28.32%, 용역이 13.09%, 의료솔루션(나디아)이 6.33%를 차지했다. 상장 당시 보도에 따르면 주요 고객사는 삼성E&A, 삼성웰스토리, 씨젠 등 약 80여 곳으로, B2B 계약에 기반한 반복적 매출 구조를 갖추고 있다. 최근에는 GPU 모니터링과 가상화·오케스트레이션 기능을 통해 데이터센터의 GPU 활용률을 높이는 'GPUBASE'를 새로운 성장축으로 추가했다. 의료 부문에서는 AI 네이티브 전자의무기록 'NADIA-ANE'와 의료 특화 파운데이션 모델 'ALLM.H'를 통해 국내외 헬스케어 시장을 병행 공략하고 있다. 조나단은 범용 AI 인프라 운영 솔루션 시장에서, GPUBASE는 GPU 클러스터 효율화 소프트웨어 시장에서 각각 포지셔닝하며 사업 영역을 넓히고 있다.",
-  "en": "Founded in 2011, Acryl is an AI infrastructure company that newly listed on KOSDAQ on December 16, 2025. The company provides an MLOps solution called Jonathan that supports the full cycle of AI model development, deployment and operation, and describes itself as a 'software Nvidia' pursuing an AX (AI-Experience) infrastructure ecosystem. In healthcare, it operates a separate specialized platform called NADIA, which processes medical data into AI-usable formats for hospitals and public institutions. According to the 2025 annual report filed with DART, product revenue mix was led by the Jonathan solution at 52.27%, followed by government subsidy income at 28.32%, service revenue at 13.09%, and the NADIA medical solution at 6.33%. Media coverage at the time of listing reported roughly 80 major client companies including Samsung E&A, Samsung Welstory and Seegene, reflecting a recurring, contract-based B2B revenue structure. More recently the company added GPUBASE, a GPU monitoring, virtualization and orchestration tool designed to raise GPU utilization at data centers, as a new growth pillar. In healthcare, Acryl is pursuing both domestic and overseas markets through NADIA-ANE, an AI-native electronic medical record system, and ALLM.H, a medical-specialized foundation model. Jonathan competes in the general-purpose AI infrastructure operation market while GPUBASE positions itself in the GPU cluster efficiency software segment, broadening the company's overall footprint."
+  "ko": "아크릴은 2011년 설립된 AX(인공지능 전환) 인프라 기업으로, 기업과 공공기관을 고객으로 하는 기업 간 거래(B2B) 구조다. 핵심 제품은 AI 인프라 플랫폼 '조나단(Jonathan)'이며, GPU 클러스터 최적화 소프트웨어 'GPUBASE'와 AI 네이티브 전자의무기록(EMR) 'NADIA-ANE'의 고도화에 역량을 모으고 있다. 의료 분야에서는 의료데이터를 AI가 이해할 수 있는 형태로 가공하는 의료정보 플랫폼 '나디아'를 국내 대형 병원과 중앙아시아 시장에 공급한다. 매출 구성은 집계 사이트마다 다르게 표시된다. 버틀러는 2026년 2분기 매출 기준으로 솔루션(조나단) 59%, 정부보조금 29%, 용역 8%, 의료솔루션(나디아) 3%로 집계했다. 잡코리아는 시점을 밝히지 않고 조나단 70%, 정부보조금수익 20%, 용역 8%, 나디아 2%로 표시했다. 두 집계 모두 공시 원자료가 아니어서 부문별 비중은 참고 수준으로 읽어야 한다. 정부보조금 수익이 매출의 상당 부분을 차지하는 만큼 정부 과제의 진행 속도가 매출 흐름에 직접 연결되는 구조다. 회사 소개에 따르면 대기업, 중앙부처, 공공 연구개발(R&D), 헬스케어 분야에서 산업 특화 AX 프로젝트 200건 이상을 운영해 왔다. 2026년 6월부터 2030년 12월까지 진행되는 과학기술정보통신부의 바이오 멀티모달 파운데이션 모델 구축사업(총 약 76억원)에는 고려대학교 안암병원과 공동연구기관으로 참여한다. 경쟁 측면에서 AI 인프라 소프트웨어는 클라우드·GPU 관리 업체와 병원정보시스템 업체가 겹치는 영역이며, 아크릴은 의료 데이터와 AI 인프라를 결합한 점을 차별점으로 내세운다. 2025년 12월 코스닥에 상장해 공모 자금과 자본 확충이 재무 구조에 반영된 상태다.",
+  "en": "Acryl, founded in 2011, is an AX (AI transformation) infrastructure company that sells business-to-business to enterprises and public institutions. Its core product is the AI infrastructure platform Jonathan, and it is concentrating development resources on GPUBASE, a GPU cluster optimization software, and NADIA-ANE, an AI-native electronic medical record system. In healthcare, its NADIA platform processes medical data into a form AI can interpret and is supplied to large domestic hospitals and to Central Asian markets. Segment mixes differ by aggregator: Butler put the 2026 second-quarter revenue mix at Solution (Jonathan) 59%, government subsidies 29%, services 8% and healthcare solution (NADIA) 3%, while JobKorea, without stating a period, showed Jonathan at 70%, government subsidy income 20%, services 8% and NADIA 2%. Neither aggregator is a DART filing, so the segment shares should be read as reference only. Because government subsidy income makes up a large share of revenue, the pace of government projects feeds directly into sales. According to the company profile, it has run more than 200 industry-specialized AX projects across large corporations, central government agencies, public R&D and healthcare. It is participating as a co-research institution with Korea University Anam Hospital in a Ministry of Science and ICT biomedical multimodal foundation model project worth about KRW 7.6 billion, running from June 2026 to December 2030. In competition, AI infrastructure software overlaps with cloud and GPU management vendors and hospital information system vendors, and Acryl positions the combination of medical data and AI infrastructure as its differentiator. It listed on KOSDAQ in December 2025, and the public offering proceeds and capital increase are reflected in its balance sheet."
  },
  "earnings": {
-  "ko": "아크릴의 연결 기준 매출액은 2024년 134억원에서 2025년 133억원으로 0.8% 감소했다. 같은 기간 영업손실은 23.9억원에서 22.5억원으로, 지배주주 순손실은 54.7억원에서 28.1억원으로 각각 줄며 2024년부터 2025년까지 2년 연속 적자를 이어갔으나 손실 폭은 축소되는 흐름을 보였다. 2025년 영업이익률은 -16.9%로 전년 -17.8%보다 개선됐고, 부채비율은 2024년 -165.7%에서 2025년 16.4%로 크게 바뀌었는데, 이는 2025년 12월 상장을 통해 약 421억원의 자금을 조달한 영향이 반영된 결과로 해석된다. 2025년 말 자본총계는 437억원(전액 지배주주 지분)으로 집계됐고 부채총계는 71.9억원에 그쳤다. 다만 영업활동 현금흐름은 2024년 -14억원에서 2025년 -47.1억원으로 유출 규모가 오히려 커졌다. 상장 이후 처음 공시된 분기 실적인 2026년 1분기 매출액은 65.7억원이었으나 2분기에는 54.7억원으로 전 분기 대비 16.7% 감소했다. 영업손실은 1분기 7.9억원에서 2분기 15억원으로, 지배주주 순손실은 1분기 6.9억원에서 2분기 15.3억원으로 각각 확대되며 2026년 1분기부터 2분기까지 2개 분기 연속 적자가 이어졌다. 사업보고서에 담긴 회사 자체의 2026년 추정치는 매출 277.4억원, 영업이익 32.8억원 흑자 전환이었던 만큼, 상반기까지 나타난 매출과 손실 흐름을 하반기에 얼마나 좁히느냐가 관건으로 남아 있다.",
-  "en": "Acryl's consolidated revenue declined 0.8% from KRW 13.4 billion in 2024 to KRW 13.3 billion in 2025. Over the same period the operating loss narrowed from KRW 2.39 billion to KRW 2.25 billion, and the controlling-interest net loss narrowed from KRW 5.47 billion to KRW 2.81 billion, with losses continuing for two straight years from 2024 through 2025 while the loss magnitude shrank. The 2025 operating margin improved to -16.9% from -17.8% a year earlier, and the debt-to-equity ratio shifted sharply from -165.7% in 2024 to 16.4% in 2025, a change attributable in part to the roughly KRW 42.1 billion raised through the December 2025 listing. Total equity at the end of 2025 stood at KRW 43.7 billion (entirely attributable to controlling shareholders), while total liabilities were KRW 7.19 billion. Operating cash flow, however, worsened from -KRW 1.4 billion in 2024 to -KRW 4.71 billion in 2025. In the first quarterly results disclosed after listing, Q1 2026 revenue was KRW 6.57 billion, but it fell 16.7% quarter on quarter to KRW 5.47 billion in Q2. The operating loss widened from KRW 786 million in Q1 to KRW 1.5 billion in Q2, and the controlling-interest net loss widened from KRW 695 million to KRW 1.53 billion, marking two consecutive quarters of widening losses from Q1 through Q2 2026. The company's own 2026 estimate disclosed in its annual report called for revenue of KRW 27.74 billion and a swing to an operating profit of KRW 3.28 billion, leaving a notable gap to close in the second half relative to the revenue and loss trajectory seen through the first half."
+  "ko": "연간 기준으로 2025년 매출은 133억원으로 2024년 134억원 대비 0.8% 감소했다. 같은 기간 영업손실은 2024년 23.9억원에서 2025년 22.5억원으로 줄었고, 영업이익률은 -17.8%에서 -16.9%로 소폭 개선됐다. 영업손실은 2024년부터 2025년까지 2년 연속 발생했으며 손실 폭은 축소됐다. 지배주주 순손실은 2024년 54.7억원에서 2025년 28.1억원으로 줄었는데, 2025년에는 순손실이 영업손실보다 커 영업 외 항목이 손실을 키운 구조였다. 당기순손실(비지배지분 포함)도 2024년 54.7억원, 2025년 28.1억원으로 지배주주 순손실과 같은 금액으로 공시됐다. 2025년 말 자본총계는 437억원이며 전액이 지배주주 지분이고, 부채총계는 71.9억원이다. 부채비율은 2024년 -165.7%에서 2025년 16.4%로 바뀌었는데, 2024년 음수 표기는 자본총계가 마이너스였음을 뜻한다. 영업활동 현금흐름은 2024년 -14억원에서 2025년 -47.1억원으로 적자 폭이 커졌다. 2026년 분기 흐름을 보면, 1분기 매출은 65.7억원, 영업손실은 7.9억원, 지배주주 순손실은 6.9억원이다. 회사는 2026년 5월 18일 발표에서 1분기 매출이 전년 동기 대비 123% 증가했다고 밝혔다. 2분기 매출은 54.7억원으로 전 분기 대비 16.7% 감소했고, 영업손실은 15억원으로 확대됐다. 3분기 매출은 79.2억원으로 전 분기 대비 44.6% 증가했고, 영업손실은 10.4억원, 지배주주 순손실은 11.1억원으로 줄었다. 2026년 1분기부터 3분기까지 3개 분기 연속 적자다. 회사는 매출 규모 확대로 고정비 부담이 완화되는 영업 레버리지 효과를 설명하고 있다. 2025년 3분기와 4분기의 분기 수치는 정기보고서에 없어 분기 흐름 비교는 2026년 구간에 한정된다. 최근 4개 분기(2025년 1분기~2025년 4분기) 지배주주 순손실 합계는 28.1억원이다.",
+  "en": "On an annual basis, 2025 revenue was KRW 13.3 billion, down 0.8% from KRW 13.4 billion in 2024. Over the same period the operating loss narrowed from KRW 2.39 billion to KRW 2.25 billion, and the operating margin improved slightly from -17.8% to -16.9%. The company has posted operating losses for two consecutive years, from 2024 through 2025, with the loss gap narrowing. Net loss attributable to controlling shareholders shrank from KRW 5.47 billion in 2024 to KRW 2.81 billion in 2025, and in 2025 that net loss was larger than the operating loss, meaning non-operating items widened the loss. Net loss including non-controlling interests was also reported at KRW 5.47 billion in 2024 and KRW 2.81 billion in 2025, the same amounts as the controlling-shareholder figures. Total equity at the end of 2025 was KRW 43.7 billion, all attributable to controlling shareholders, and total liabilities were KRW 7.19 billion. The debt ratio moved from -165.7% in 2024 to 16.4% in 2025, and the negative 2024 figure indicates that total equity was negative at that time. Operating cash flow worsened, with the outflow widening from KRW -1.4 billion in 2024 to KRW -4.71 billion in 2025. Within 2026, first-quarter revenue was KRW 6.57 billion, with an operating loss of KRW 786 million and a net loss attributable to controlling shareholders of KRW 695 million. In a release dated May 18, 2026, the company said first-quarter revenue rose 123% from a year earlier. Second-quarter revenue was KRW 5.47 billion, down 16.7% from the prior quarter, and the operating loss widened to KRW 1.5 billion. Third-quarter revenue rose 44.6% from the prior quarter to KRW 7.92 billion, while the operating loss narrowed to KRW 1.04 billion and the net loss attributable to controlling shareholders narrowed to KRW 1.11 billion. The company has recorded losses in each of the three quarters from the first quarter to the third quarter of 2026. The company attributes the expected easing of fixed-cost pressure to operating leverage from a larger revenue base. Quarterly figures for the third and fourth quarters of 2025 are not in the periodic filings, so quarterly comparisons are limited to 2026. The net loss attributable to controlling shareholders for the last four quarters, from the first quarter to the fourth quarter of 2025, totaled KRW 2.81 billion."
  },
  "industry": {
-  "ko": "국내 기업과 공공기관은 생성형 AI 확산에 맞춰 대규모 GPU 인프라 투자를 늘리고 있으며, 신한투자증권은 2026년 3월 보고서에서 엔비디아가 국내에 공급하기로 한 GPU 물량이 26만장 규모에 이른다고 분석했다. 신한투자증권은 GPUBASE 같은 솔루션이 GPU 하드웨어 가격의 8~10% 수준에서 과금되는 구조라, 고가 GPU 도입 확대 시 아크릴의 수주 기회가 1조원을 상회할 수 있다고 추산했다. 한국IR협의회는 AI 인프라 시장의 무게중심이 기존 전용 네트워크인 인피니밴드에서 구축 비용이 낮은 이더넷 기반 RoCEv2로 이동하고 있다고 평가했다. 이는 특정 해외 장비업체에 대한 종속도를 낮추려는 수요와 맞물려 소프트웨어 기반 해법의 사업 기회를 넓힐 수 있는 변화로 해석된다. 의료 AI 부문에서는 아크릴이 우즈베키스탄 디지털 헬스케어 사업을 시작으로 중앙아시아 시장에 진출했고, 파인헬스케어를 완전자회사로 편입하며 디지털 의료기기 사업도 강화했다. 국내에서는 지자체·공공 R&D 참여를 늘리는 방식으로 사업 영역을 넓히고 있다. AI 인프라 운영 소프트웨어 영역에는 글로벌 빅테크들이 자체 솔루션을 내재화할 가능성도 상존해, 외부 소프트웨어 공급사에게는 잠재적 경쟁 압력으로 작용할 수 있다.",
-  "en": "Domestic corporations and public institutions are increasing large-scale GPU infrastructure investment in line with the spread of generative AI, and Shinhan Investment Corp. estimated in a March 2026 report that Nvidia plans to supply roughly 260,000 GPUs domestically. Shinhan Investment Corp. noted that solutions like GPUBASE are typically priced at 8-10% of GPU hardware cost, suggesting that expanded adoption of high-end GPUs could generate more than KRW 1 trillion in order opportunities for Acryl. Korea IR Service assessed that the center of gravity in AI infrastructure networking is shifting from the traditional dedicated InfiniBand standard toward lower-cost, Ethernet-based RoCEv2. This shift, combined with demand to reduce dependence on specific overseas equipment vendors, could widen the business opportunity for software-based solutions such as GPUBASE. In medical AI, Acryl has entered Central Asian markets starting with a digital healthcare project in Uzbekistan, and has strengthened its digital medical device business by making Fine Healthcare a wholly owned subsidiary. Domestically, the company is expanding its footprint through greater participation in local government and public R&D projects. The AI infrastructure operation software space also carries the risk that global big tech firms could internalize their own solutions, which could become a competitive pressure on outside software suppliers such as Acryl."
+  "ko": "아크릴의 전방 수요는 기업과 공공기관의 AI 도입, 특히 GPU 기반 인프라 운용 효율화에 있다. 회사는 엔비디아 GPU뿐 아니라 국산 NPU·DPU 환경까지 검증 범위를 넓히고 있다고 밝혔다. 정부는 헬스케어를 AI 적용 우선 분야로 제시했고, 보도에 따르면 이는 의료 AI 기술을 보유한 기업의 성장 기회 확대로 이어지고 있다. 정부 주도 AX 프로젝트 참여가 늘면서 공공과 민간 영역 모두에서 인프라 도입이 본격화되고 있다는 것이 회사의 설명이다. 수요 저변은 공공 R&D에서 대형 병원, 대형 통신사 등으로 넓어지는 단계로 보인다. 같은 화학 업종으로 분류된 LG화학, 한화솔루션, 롯데케미칼 등은 석유화학과 소재 사이클에 실적이 연동되는 반면, 아크릴은 소프트웨어와 인프라 매출 구조라 화학 업황 지표와의 연동성이 낮다. 다만 데이터 사이트들은 이 회사를 응용 소프트웨어 업종으로 분류하고 있어 업종 분류 기준에 따라 비교 대상이 달라진다. 경쟁사 대비 포지션은 의료 데이터를 결합한 AI 인프라라는 점과, 우즈베키스탄에서 확보한 의료 IT 레퍼런스에 기반한 해외 진출 기반으로 요약된다.",
+  "en": "Acryl's end demand comes from enterprises and public institutions adopting AI, especially efforts to improve the efficiency of GPU-based infrastructure. The company said it is widening validation beyond NVIDIA GPUs to domestic NPU and DPU environments. The government has named healthcare as a priority area for AI adoption, and press coverage described this as expanding growth opportunities for companies with medical AI technology. The company says infrastructure adoption is gaining momentum in both public and private sectors as participation in government-led AX projects increases. Demand appears to be broadening from public R&D to large hospitals and major telecom operators. Chemical peers in the same listed category, such as LG Chem, Hanwha Solutions and Lotte Chemical, have earnings tied to petrochemical and materials cycles, whereas Acryl's revenue comes from software and infrastructure, so its link to chemical industry indicators is weak. Data sites, however, classify the company as application software, so the relevant comparison set depends on which classification is used. Its competitive position rests on AI infrastructure combined with medical data and on an overseas base built on medical IT references in Uzbekistan."
  },
  "outlook": {
-  "ko": "회사는 하반기 실적 개선의 핵심 동력으로 GPUBASE 상용화 확대와 미국 시장 진출, 의료·바이오 사업 강화를 꼽고 있다. 2026년 2분기 말 수주잔고는 212억원으로 1분기 말 대비 49% 늘었으며, 회사는 이를 근거로 하반기 손익 개선 속도가 빨라질 것으로 기대한다고 2026년 8월에 밝혔다(잠정 발표 기준). GPUBASE는 한컴이 추진하는 국내 모듈형 데이터센터(MDC) 구축 사업에 기본형 계약에 이어 2026년 7월 29일 고급형 계약이 더해지며 누적 공급 규모가 55억원으로 늘었다. 이 사업은 총 사업비 약 67억원(정부지원금 55억원) 규모로 연세대·성균관대·아주대와 함께 2028년 12월까지 수행되며, 엔비디아 전용 인피니밴드를 개방형 이더넷으로 대체하는 것을 목표로 한다. 아크릴은 미국 올랜도에서 열린 'UKC 2026' 행사에서 GPUBASE의 글로벌 3대 클라우드 환경 검증 결과를 공개하며 미국 대학·연구소·데이터센터를 대상으로 고객 확보에 나설 계획이라고 밝혔다. 한국IR협의회는 2026년 7월 보고서에서 아크릴의 2026년 매출액을 전년 대비 57% 늘어난 208억원으로, 영업손실은 17억원으로 축소될 것으로 전망했다. 다만 사업보고서에 담긴 회사 자체의 2026년 추정치(매출 277.4억원, 영업이익 32.8억원 흑자 전환)와 상반기까지 나타난 실적 흐름 사이에는 여전히 격차가 남아 있어, 하반기 실적이 그 격차를 어느 정도 좁히는지가 확인 포인트다.",
-  "en": "The company cites expanded GPUBASE commercialization, entry into the U.S. market, and strengthened medical/bio operations as key drivers for second-half improvement. The order backlog stood at KRW 21.2 billion at the end of Q2 2026, up 49% from the end of Q1, and the company said in an August 2026 preliminary announcement that this supports expectations of faster profit and loss improvement in the second half. GPUBASE's cumulative supply to Hancom's domestic modular data center (MDC) project grew to KRW 5.5 billion after a premium-tier contract was added on July 29, 2026, on top of the initial basic-tier agreement. This project, with a total budget of roughly KRW 6.7 billion including KRW 5.5 billion in government support, is being carried out jointly with Yonsei University, Sungkyunkwan University and Ajou University through December 2028, aiming to replace Nvidia's proprietary InfiniBand networking with open Ethernet. Acryl said it presented GPUBASE's performance validation results across three major global cloud environments at the UKC 2026 event in Orlando, and plans to pursue customers among U.S. universities, research institutes and data centers. Korea IR Service forecast in a July 2026 report that Acryl's 2026 revenue would grow 57% year on year to KRW 20.8 billion, with the operating loss narrowing to KRW 1.7 billion. However, a gap remains between the company's own 2026 estimate disclosed in its annual report-revenue of KRW 27.74 billion and a swing to an operating profit of KRW 3.28 billion-and the trajectory seen through the first half, making the degree of second-half catch-up a key point to monitor."
+  "ko": "회사는 2026년 1분기 실적을 발표하면서 2분기에도 1분기의 성장 흐름이 이어질 것으로 전망했다. 같은 발표에서 1분기 수주액은 207억원으로 전년 동기 대비 86% 증가했다고 밝혔고, 수주잔고 확대와 대형 통신사를 포함한 신규 고객 확보가 하반기 실적 개선 속도를 높일 것이라고 기대했다. 실제 2분기 매출은 54.7억원으로 전 분기 대비 감소했고, 3분기 매출은 79.2억원으로 회복됐다. 따라서 2분기 전망과 실제 분기 흐름은 차이를 보였다. 사업 측면에서는 GPU 클러스터 최적화 소프트웨어 GPUBASE와 AI 네이티브 EMR NADIA-ANE의 고도화가 올해 핵심 과제로 제시됐다. 적용 분야는 병원에서 바이오·그린바이오·제약 기업으로 넓히는 방향이다. 과학기술정보통신부 사업은 2026년 6월부터 2030년 12월까지 진행되며, 병리 영상과 유전자·단백질 정보, 뇌파 데이터를 통합 학습하는 AI 모델을 구축한다. 회사는 이 사업을 계기로 의료 AI 영역을 전자의무기록과 텍스트 분석에서 병리 영상, 생체 분자 정보, 뇌파 분석으로 확대하겠다는 전략을 밝혔다. 해외에서는 우즈베키스탄 국영 IT 기업 우즈인포컴과 헬스케어 AX 본계약을 체결했고, 차세대 병원정보시스템 플랫폼을 공동 설계·구현하고 현지 AI 헬스케어 연구개발 거점을 구축하는 계획을 발표했다. 소프트웨어 의료기기 인허가 절차도 공동 검토할 계획이다. 다음에 확인할 지점은 2026년 12월 31일 회계연도 종료 시점의 수주잔고 전환 속도와, 2026년 사업보고서에 담길 연간 영업손실 규모다.",
+  "en": "When announcing first-quarter 2026 results, the company said growth seen in the first quarter would continue into the second quarter. In the same release it reported first-quarter orders of KRW 20.7 billion, up 86% from a year earlier, and expected faster earnings improvement in the second half as the order backlog grows and new customers, including a major telecom operator, come on board. Second-quarter revenue actually fell to KRW 5.47 billion from the prior quarter, and third-quarter revenue recovered to KRW 7.92 billion, so the second-quarter outlook and the actual quarterly path diverged. On the product side, upgrades to GPUBASE, the GPU cluster optimization software, and NADIA-ANE, the AI-native EMR, were cited as the main priorities this year, with application expanding from hospitals to biotech, green bio and pharmaceutical companies. The Ministry of Science and ICT project runs from June 2026 to December 2030 and builds an AI model that integrates pathology imaging, genetic and protein information, and EEG data. The company said the project will extend its medical AI scope from electronic medical records and text analysis to pathology imaging, biomolecular information and EEG-based analysis. Overseas, it signed a definitive healthcare AX contract with Uzinfocom, a state-owned Uzbek IT company, and plans to co-design a next-generation hospital information system platform, build a local AI healthcare R&D base and jointly review medical device software approval procedures. The next checkpoints are the pace at which the order backlog converts into revenue by the fiscal year-end on December 31, 2026, and the full-year operating loss that will appear in the 2026 annual report."
  },
  "valuation_comment": {
-  "ko": "아크릴은 최근 4개 분기 기준으로 지배주주 순손실을 기록하고 있어 주가수익비율이 산출되지 않는 구간에 있다. 주가순자산비율은 2025년 12월 상장 직후 고점 대비 상당폭 낮아진 수준에서 움직이고 있으며, 2025년 말 상장을 통해 자본총계가 크게 늘어난 점이 비교의 분모 역할을 하고 있다. 배당은 아직 지급되지 않고 있어 배당수익률 측면의 투자 매력은 기대하기 어려운 구조다. 한국IR협의회는 2026년 7월 보고서에서 \"지난 2년간 정체된 매출만으로는 동종업체 대비 높은 PBR을 설명하기 어렵다\"고 지적하며, 나디아의 후속 수주와 GPUBASE 사업화 성과가 확인돼야 시장의 평가가 달라질 수 있다고 밝혔다. 결국 순자산 대비 현재의 주가 수준이 어떻게 평가될지는 수주잔고가 실제 매출로 전환되는 속도와 다음 분기 손익 흐름에 달려 있다고 볼 수 있다.",
-  "en": "Acryl has posted controlling-interest net losses over the trailing four quarters, putting it in a range where the price-to-earnings ratio cannot be meaningfully calculated. Its price-to-book ratio has moved well below the peak level seen shortly after its December 2025 listing, with the sharp increase in total equity from the IPO serving as the denominator in that comparison. As no dividend has yet been paid, the stock offers little attraction from a dividend yield perspective at this stage. Korea IR Service noted in a July 2026 report that \"two years of stagnant revenue alone makes it hard to justify a price-to-book ratio higher than peers,"
+  "ko": "최근 네 개 분기 기준 순손실이 이어져 주가수익비율(PER)은 산출되지 않는 상태다. 대신 순자산 대비 가격을 보면 주가순자산비율(PBR)이 순자산 대비 프리미엄이 붙은 구간에 있다. 순자산은 2025년 말 자본총계 437억원을 기준으로 하며, 이 가운데 지배주주 지분이 전부를 차지한다. 상장 이후 자기자본이 커진 만큼 순자산 대비 비율은 상장 과정의 자본 확충 영향을 받는다. 배당수익률은 업종 평균을 밑도는 편이다. 이익이 아직 흑자로 전환되지 않아 이익 기반 배수 비교는 제한적이며, 이익 전환 시점에 따라 밸류에이션 지표의 의미가 달라진다. 다년 흐름으로는 적자 폭이 2024년에서 2025년 사이 줄었고 2026년 분기 매출 규모는 커졌지만, 영업손실은 분기마다 등락해 이익 회복이 방향으로만 확인되는 단계다.",
+  "en": "Because the company has posted net losses over the last four quarters, its price-to-earnings ratio cannot be calculated. On a net-asset basis, the price-to-book ratio sits in a range carrying a premium over book value. The net-asset base is total equity of KRW 43.7 billion at the end of 2025, all of it attributable to controlling shareholders. Since the listing enlarged the equity base, the book-value ratio reflects the capital raised in the offering. The dividend yield is below the industry average. Because earnings have not yet turned positive, comparisons based on earnings multiples are limited, and the meaning of valuation metrics will shift depending on when profitability returns. Over several years, losses narrowed from 2024 to 2025 and quarterly revenue scale grew in 2026, but operating losses moved up and down quarter to quarter, so the recovery in earnings is confirmed only as a direction at this stage."
  },
  "bull": [
   {
    "title": {
-    "ko": "GPU 인프라 수요 확대",
-    "en": "Expanding GPU Infrastructure Demand"
+    "ko": "매출 규모의 회복",
+    "en": "Recovery in revenue scale"
    },
    "body": {
-    "ko": "신한투자증권은 2026년 3월 보고서에서 엔비디아가 국내에 공급하기로 한 26만장 규모 GPU 도입이 아크릴에 1조원 이상의 수주 기회를 창출할 수 있다고 전망했다. GPUBASE는 고가의 네트워크 장비 교체 없이 적용할 수 있어 비용 효율성을 앞세울 수 있는 구조다. 2026년 2분기 말 수주잔고가 212억원으로 전분기 대비 49% 늘어난 점도 수요 확대를 뒷받침하는 신호로 제시되고 있다.",
-    "en": "Shinhan Investment Corp. forecast in a March 2026 report that Nvidia's planned supply of roughly 260,000 GPUs domestically could create order opportunities exceeding KRW 1 trillion for Acryl. GPUBASE can be applied without replacing costly network equipment, allowing the company to emphasize cost efficiency. The 49% quarter-on-quarter rise in order backlog to KRW 21.2 billion at the end of Q2 2026 has also been presented as a signal of growing demand."
+    "ko": "회사 발표에 따르면 2026년 1분기 매출은 65.7억원으로 전년 동기 대비 123% 증가했다. 3분기 매출도 79.2억원으로 전 분기 대비 44.6% 늘어 분기 매출이 회복 흐름을 보였다. 1분기 수주액은 207억원으로 전년 동기 대비 86% 증가했다고 밝혀졌다.",
+    "en": "According to the company, first-quarter 2026 revenue rose 123% from a year earlier to KRW 6.57 billion. Third-quarter revenue reached KRW 7.92 billion, up 44.6% from the prior quarter. First-quarter orders reached KRW 20.7 billion, up 86% from a year earlier."
    }
   },
   {
    "title": {
-    "ko": "매출 성장세 재개",
-    "en": "Renewed Revenue Growth"
+    "ko": "정부 과제와 공공 수요 확대",
+    "en": "Expanding government projects and public demand"
    },
    "body": {
-    "ko": "2026년 1분기 매출은 전년 동기 대비 123% 늘어난 65.7억원을 기록했고, 상반기 누적 매출은 전년 동기 대비 150% 증가한 120억원으로 2025년 연간 매출의 약 90%에 해당하는 규모였다. 조나단 고객사와 적용 산업이 확대되고 정부 주도 AX 프로젝트 참여가 늘어난 점이 성장 배경으로 꼽힌다. 다만 2분기 매출은 1분기 대비 16.7% 줄어 분기별 변동성은 여전히 남아 있다.",
-    "en": "Q1 2026 revenue grew 123% year on year to KRW 6.57 billion, and cumulative first-half revenue rose 150% year on year to KRW 12 billion, equivalent to about 90% of full-year 2025 revenue. The expansion of Jonathan's client base and industries served, along with greater participation in government-led AX projects, is cited as the growth driver. Still, Q2 revenue fell 16.7% from Q1, indicating quarter-to-quarter volatility remains."
+    "ko": "과학기술정보통신부의 바이오 멀티모달 파운데이션 모델 구축사업에 참여하며 총 사업 규모는 약 76억원이다. 사업 기간은 2026년 6월부터 2030년 12월까지로 중기 매출의 기반이 될 수 있다. 정부가 헬스케어를 AI 우선 적용 분야로 제시한 점도 공공 수요 확대의 배경으로 거론된다.",
+    "en": "The company is taking part in a Ministry of Science and ICT biomedical multimodal foundation model project with a total budget of about KRW 7.6 billion. The project runs from June 2026 to December 2030 and could serve as a base for medium-term revenue. Government designation of healthcare as a priority AI area is cited as a backdrop for wider public demand."
    }
   },
   {
    "title": {
-    "ko": "미국 시장 및 의료 AI 확장",
-    "en": "U.S. Market and Medical AI Expansion"
+    "ko": "해외 진출 기반 확보",
+    "en": "Overseas footprint taking shape"
    },
    "body": {
-    "ko": "아크릴은 UKC 2026에서 GPUBASE의 글로벌 클라우드 환경 성능 검증 결과를 공개하며 미국 대학·연구소·데이터센터 고객 확보를 추진하고 있다. 의료 부문에서는 우즈베키스탄 디지털 헬스케어 사업을 시작으로 중앙아시아 시장에 진출했고, 파인헬스케어를 완전자회사로 편입해 디지털 의료기기 사업도 강화했다. 두 축 모두 아직 초기 단계지만 새로운 매출원으로 자리잡을 가능성이 있다.",
-    "en": "Acryl presented GPUBASE's performance validation results across global cloud environments at UKC 2026 and is pursuing customers among U.S. universities, research institutes and data centers. In healthcare, the company entered Central Asia starting with a digital healthcare project in Uzbekistan, and strengthened its digital medical device business by making Fine Healthcare a wholly owned subsidiary. Both initiatives remain at an early stage but have the potential to become new revenue sources."
+    "ko": "우즈베키스탄 국영 IT 기업 우즈인포컴과 헬스케어 AX 본계약을 체결했다고 회사는 밝혔다. 양사는 차세대 병원정보시스템 플랫폼을 공동 설계·구현하고 현지 연구개발 거점을 구축할 계획이다. 회사는 이를 발판으로 중앙아시아 헬스케어 AX 시장 진출을 본격화하겠다는 방침을 밝혔다.",
+    "en": "The company said it signed a definitive healthcare AX contract with Uzinfocom, a state-owned Uzbek IT company. The two sides plan to co-develop a next-generation hospital information system platform and set up a local R&D base. The company said it intends to use this as a launchpad for healthcare AX in Central Asia."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "손익 개선 지연",
-    "en": "Delayed Profit Improvement"
+    "ko": "3개 분기 연속 영업손실",
+    "en": "Three straight quarters of operating losses"
    },
    "body": {
-    "ko": "2026년 1분기 영업손실 7.9억원은 2분기 15억원으로, 지배주주 순손실도 6.9억원에서 15.3억원으로 각각 확대되며 2개 분기 연속 손실 폭이 커졌다. 매출 역시 1분기 65.7억원에서 2분기 54.7억원으로 16.7% 줄어 분기별 흐름이 안정적이지 않다. 회사가 사업보고서에서 제시한 2026년 흑자 전환 추정치(영업이익 32.8억원)와 상반기까지의 실적 흐름 사이에는 상당한 격차가 있다.",
-    "en": "The operating loss widened from KRW 786 million in Q1 2026 to KRW 1.5 billion in Q2, and the controlling-interest net loss widened from KRW 695 million to KRW 1.53 billion, marking two consecutive quarters of expanding losses. Revenue also fell 16.7% from KRW 6.57 billion in Q1 to KRW 5.47 billion in Q2, showing unstable quarter-to-quarter trends. There remains a sizable gap between the company's own 2026 estimate of a swing to an operating profit of KRW 3.28 billion and the actual trajectory seen through the first half."
+    "ko": "2026년 1분기 영업손실은 7.9억원, 2분기는 15억원으로 손실이 커졌고, 3분기는 10.4억원으로 줄었다. 지배주주 순손실도 1분기 6.9억원, 2분기 15.3억원, 3분기 11.1억원으로 3개 분기 연속 적자다. 매출이 늘어도 손익분기 수준에는 도달하지 못했다.",
+    "en": "Operating losses were KRW 790 million in the first quarter of 2026 and KRW 1.5 billion in the second quarter, when they widened, before narrowing to KRW 1.04 billion in the third quarter. Net losses attributable to controlling shareholders were KRW 695 million, KRW 1.53 billion and KRW 1.11 billion across the three quarters. Revenue growth has not yet brought the business to breakeven."
    }
   },
   {
    "title": {
-    "ko": "과거 매출 정체 이력",
-    "en": "History of Stagnant Revenue"
+    "ko": "영업활동 현금 유출 확대",
+    "en": "Wider operating cash outflow"
    },
    "body": {
-    "ko": "2024~2025년 연결 매출은 134억원에서 133억원으로 오히려 0.8% 줄었다. 한국IR협의회는 지난 2년간의 매출 정체를 들어 동종업체 대비 높은 PBR을 설명하기 쉽지 않다고 지적했다. 최근 분기의 외형 성장이 일회성 프로젝트 인식에 그치지 않고 지속되는지 추가 확인이 필요한 상황이다.",
-    "en": "Consolidated revenue actually declined 0.8% from KRW 13.4 billion in 2024 to KRW 13.3 billion in 2025. Korea IR Service pointed to this two-year stagnation in revenue as a reason why the company's price-to-book ratio is hard to justify relative to peers. It remains to be confirmed whether recent quarterly growth reflects sustained demand rather than one-off project recognition."
+    "ko": "영업활동에서 빠져나간 현금이 한 해 사이 늘어 적자 폭이 커졌다. 상장으로 자금이 들어온 해에도 현금 유출이 커진 점은 투자 부담을 보여준다. 자본총계 437억원의 규모가 있어도 영업 현금 창출이 이뤄지지 않으면 자금 운용의 여유는 줄어든다.",
+    "en": "The cash drained by operating activities grew within a year, widening the deficit. The larger outflow in the year the company listed highlights the burden of investment. Even with total equity of KRW 43.7 billion, the financial cushion narrows if operations do not generate cash."
    }
   },
   {
    "title": {
-    "ko": "현금흐름 유출 지속",
-    "en": "Continued Cash Outflow"
+    "ko": "영업 외 손실과 분기 변동성",
+    "en": "Non-operating losses and quarterly volatility"
    },
    "body": {
-    "ko": "영업활동 현금흐름은 2024년 -14억원에서 2025년 -47.1억원으로 유출 규모가 오히려 커졌다. 수주잔고가 매출로 전환되는 속도가 더뎌질 경우 연구개발과 해외 진출에 필요한 자금 소요가 재무 부담으로 이어질 수 있다. 상장을 통해 자본을 확충했지만 반복적인 적자가 이어질 경우 자본 여력도 점차 줄어들 수 있다.",
-    "en": "Operating cash flow deteriorated from -KRW 1.4 billion in 2024 to -KRW 4.71 billion in 2025. If the conversion of order backlog into revenue slows, funding needs for R&D and overseas expansion could become a financial burden. Although the IPO bolstered the capital base, continued losses could gradually erode that capital cushion."
+    "ko": "2025년에는 지배주주 순손실 28.1억원이 영업손실 22.5억원보다 커 영업 외 항목이 손실을 키웠다. 2026년 2분기에는 매출이 전 분기 대비 16.7% 감소해 분기 실적의 변동성이 확인됐다. 분기 흐름 비교는 2026년 구간에 한정돼 있어 추세를 판단할 자료가 짧다.",
+    "en": "In 2025 the net loss attributable to controlling shareholders of KRW 2.81 billion exceeded the operating loss of KRW 2.25 billion, so non-operating items widened the loss. Second-quarter 2026 revenue fell 16.7% from the prior quarter, showing quarterly volatility. Quarterly comparisons cover only 2026, so the trend record is short."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings Volatility"
+    "ko": "정부 과제 및 보조금 의존",
+    "en": "Dependence on government projects and subsidies"
    },
    "body": {
-    "ko": "분기별 매출 증감 폭이 커 2026년 2분기처럼 전 분기 대비 매출이 줄어드는 구간이 다시 나타날 수 있다. 영업손실과 순손실이 2026년 1분기부터 2분기까지 2개 분기 연속 확대된 점은 비용 통제력에 대한 점검이 필요함을 시사한다. 회사가 제시한 연간 흑자 전환 목표를 달성하지 못할 경우 투자심리에 영향을 줄 수 있다.",
-    "en": "Quarterly revenue swings are large, meaning a decline such as the one seen in Q2 2026 relative to the prior quarter could recur. The fact that operating and net losses widened for two consecutive quarters from Q1 through Q2 2026 suggests cost control warrants closer scrutiny. Failure to meet the company's own annual profitability target could weigh on investor sentiment."
+    "ko": "정부보조금 수익은 매출의 상당 부분을 차지하는 것으로 집계 사이트에 표시된다. 과제 예산이 줄거나 사업 기간이 조정되면 매출 흐름이 흔들릴 수 있다. 상업 매출 비중이 얼마나 빠르게 커지는지가 이 리스크의 완화 조건이다.",
+    "en": "Aggregator data show government subsidy income making up a sizable share of revenue. A cut in project budgets or a change in project timing could disrupt revenue flow. Faster growth in commercial revenue would ease this exposure."
    }
   },
   {
    "cat": {
-    "ko": "수주·사업화 불확실성",
-    "en": "Order and Commercialization Uncertainty"
+    "ko": "의료 AI 규제와 데이터 이슈",
+    "en": "Medical AI regulation and data issues"
    },
    "body": {
-    "ko": "GPUBASE의 북미 진출과 한컴 MDC 사업 등은 아직 초기 단계로, 후속 계약이 이어지지 않으면 성장 스토리의 신뢰도가 흔들릴 수 있다. 한국IR협의회도 나디아의 중앙아시아 후속 사업과 GPUBASE 수주의 실제 확인이 필요하다고 언급한 바 있다. 정부보조금수익이 매출의 상당 부분을 차지하고 있어, 보조금 정책 변화에 따라 매출 구성이 흔들릴 가능성도 있다.",
-    "en": "GPUBASE's entry into North America and the Hancom MDC project remain at an early stage, and the credibility of the growth narrative could weaken if follow-on contracts do not materialize. Korea IR Service has also noted the need to confirm actual follow-on orders for NADIA in Central Asia and for GPUBASE-based infrastructure projects. Because government subsidy income makes up a significant portion of revenue, changes in subsidy policy could affect the revenue mix."
+    "ko": "의료 AI 사업은 소프트웨어 의료기기 인허가와 의료데이터 취급 규제를 받는다. 회사는 해외 파트너와 함께 인허가 절차를 검토하는 단계이며, 국내외 규제 변화가 제품 출시 일정에 영향을 줄 수 있다. 병리 영상과 뇌파 데이터로 영역을 넓히는 만큼 규제 대응 부담도 함께 커진다.",
+    "en": "The medical AI business is subject to approval rules for medical device software and to regulations on handling medical data. The company is reviewing approval procedures with an overseas partner, and regulatory changes at home or abroad could affect product launch timing. Expanding into pathology imaging and EEG data raises the regulatory workload as well."
    }
   },
   {
    "cat": {
-    "ko": "경쟁 및 기술 변화",
-    "en": "Competitive and Technology Shifts"
+    "ko": "자금 부담과 사업 확장 비용",
+    "en": "Funding needs and cost of expansion"
    },
    "body": {
-    "ko": "AI 인프라 운영 소프트웨어 시장은 네트워크 기술 표준(인피니밴드 대 이더넷)이 바뀌는 과도기에 있어, 기술 방향성이 달라질 경우 제품 경쟁력에 영향을 줄 수 있다. 글로벌 빅테크들이 자체 GPU 운영 소프트웨어를 내재화할 경우 외부 공급사와의 경쟁이 심화될 수 있다. 소규모 기업 특성상 인력과 연구개발 자원의 제약이 신제품 개발 속도에 영향을 줄 수 있다.",
-    "en": "The AI infrastructure operation software market is in a transitional period between networking standards (InfiniBand versus Ethernet), and a shift in technology direction could affect product competitiveness. If global big tech firms internalize their own GPU operation software, competition with outside suppliers could intensify. Given its relatively small scale, constraints on personnel and R&D resources could affect the pace of new product development."
+    "ko": "영업활동 현금 유출이 이어지는 가운데 GPUBASE, NADIA-ANE 고도화와 해외 거점 구축이 동시에 진행된다. 확장 비용이 매출 회복 속도보다 빠르면 추가 자금 조달 필요성이 생길 수 있다. 영업손실이 분기마다 등락하는 만큼 비용 통제의 효과는 아직 확인 단계다.",
+    "en": "Operating cash outflows continue while upgrades to GPUBASE and NADIA-ANE and overseas base building proceed at the same time. If expansion costs grow faster than revenue recovery, additional funding may be needed. Because operating losses have moved up and down each quarter, the effect of cost control is still at an early stage."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중순",
-    "en": "Mid-November 2026"
+    "ko": "2026년 12월 31일",
+    "en": "December 31, 2026"
    },
    "what": {
-    "ko": "2026년 3분기 분기보고서 공시 예정 시점으로, 매출이 2분기 대비 반등하는지와 영업손실 확대 추세가 꺾이는지를 확인할 시점이다.",
-    "en": "The Q3 2026 quarterly report is due, a point to check whether revenue rebounds from Q2 and whether the widening operating loss trend reverses."
+    "ko": "회계연도 종료 시점으로, 1분기 수주액 207억원과 수주잔고가 매출로 얼마나 전환되는지 확인하는 기준점이다.",
+    "en": "Fiscal year-end, a reference point for checking how much of the KRW 20.7 billion in first-quarter orders and the order backlog converts into revenue."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기 중",
-    "en": "During Q4 2026"
+    "ko": "2027년 3월 말",
+    "en": "Late March 2027"
    },
    "what": {
-    "ko": "GPUBASE의 북미 고객 확보 성과와 한컴 MDC 구축 사업의 3분기 공급 완료 이후 후속 계약 여부를 확인할 시점이다.",
-    "en": "A point to check GPUBASE's progress in securing North American customers and whether follow-on contracts emerge after the Q3 supply completion of the Hancom MDC project."
+    "ko": "2026년 사업보고서 제출 기한으로, 2026년 연간 매출·영업손실과 4분기 분기 수치가 DART 공시 실적으로 확정되는 시점이다.",
+    "en": "The deadline for the 2026 annual report, when full-year 2026 revenue and operating loss and fourth-quarter figures are confirmed as DART-filed results."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기~2027년 상반기",
-    "en": "Q4 2026 through H1 2027"
+    "ko": "2027년 5월 중순",
+    "en": "Mid-May 2027"
    },
    "what": {
-    "ko": "신한투자증권이 언급한 26만장 규모 엔비디아 GPU 도입에 따른 대형 수주가 실제 계약으로 이어지는지 확인할 시점이다.",
-    "en": "A period to check whether the large-scale order opportunity tied to Nvidia's roughly 260,000-GPU domestic rollout, as noted by Shinhan Investment Corp., converts into actual contracts."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 3월경",
-    "en": "Around March 2027"
-   },
-   "what": {
-    "ko": "2026년 사업연도 사업보고서 공시 예정 시점으로, 회사가 제시했던 2026년 매출 277.4억원·영업이익 32.8억원 흑자 전환 추정치의 실제 달성 여부를 확인할 시점이다.",
-    "en": "The FY2026 annual report is due, a point to verify whether the company's own estimate of KRW 27.74 billion in revenue and a swing to an operating profit of KRW 3.28 billion was actually achieved."
+    "ko": "2027년 1분기 분기보고서 제출 기한으로, 3개 분기 연속 이어지는 영업손실이 끝나는지 확인하는 지점이다.",
+    "en": "The deadline for the first-quarter 2027 quarterly report, a checkpoint for whether the streak of operating losses that began in the first quarter of 2026 comes to an end."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "아크릴은 2025년 12월 코스닥 상장 이후 처음으로 분기 실적을 공시하기 시작했으며, 2026년 1분기와 2분기 모두 전년보다 늘어난 매출을 기록했지만 영업손실과 순손실은 오히려 2분기 들어 확대됐다. 연간 기준으로는 2024~2025년 2년 연속 적자를 이어갔고, 2025년에는 손실 폭이 줄며 개선 흐름을 보였다. 회사는 GPUBASE의 상용화와 미국 시장 진출, 의료 AI 사업 확장을 하반기 성장과 손익 개선의 주요 동력으로 제시하고 있으며, 2분기 말 수주잔고가 전분기 대비 49% 늘어난 점을 그 근거 중 하나로 들고 있다. 다만 한국IR협의회는 지난 2년간의 매출 정체를 지적하며 추가 수주의 실제 확인이 필요하다고 진단했고, 회사가 사업보고서에 담았던 2026년 흑자 전환 추정치와 상반기까지의 실적 사이에는 여전히 격차가 남아 있다. 종합하면 아크릴에 대한 판단은 수주잔고의 매출 전환 속도와 분기별 손익 개선 여부를 다음 분기 실적에서 확인하는 과정에 달려 있다고 볼 수 있다.",
-   "en": "Acryl began disclosing quarterly results for the first time after its December 2025 KOSDAQ listing, and while both Q1 and Q2 2026 revenue rose year on year, the operating and net losses actually widened in Q2. On an annual basis, the company posted losses for two consecutive years in 2024 and 2025, with the loss magnitude narrowing in 2025. The company points to GPUBASE commercialization, U.S. market entry, and medical AI expansion as key drivers for second-half growth and profit improvement, citing the 49% quarter-on-quarter rise in order backlog at the end of Q2 as one piece of supporting evidence. However, Korea IR Service has flagged two years of stagnant revenue and said additional confirmed orders are needed, and a gap remains between the company's own 2026 profitability estimate disclosed in its annual report and the results seen through the first half. On balance, how Acryl is assessed going forward depends on how quickly its order backlog converts into revenue and whether profit and loss trends improve in upcoming quarterly results."
+   "ko": "아크릴은 AI 인프라 소프트웨어와 의료 AI를 결합한 사업 구조를 갖고 있으며, 2026년 들어 분기 매출은 회복 흐름을 보였다. 1분기 매출 65.7억원, 3분기 79.2억원과 1분기 수주 207억원은 외형 측면의 강세 요인이다. 반면 2026년 1분기부터 3분기까지 3개 분기 연속 영업손실이 이어지고 있고, 2025년 영업활동 현금흐름 적자도 커졌다. 정부 과제 76억원 규모와 우즈인포컴 본계약은 중기 매출 기반으로 거론되지만, 실적으로 확인된 규모는 아직 제한적이다. 밸류에이션은 적자 구간이라 이익 기반 배수 비교가 어렵고, 순자산 대비 프리미엄 구간에 있다는 사실 비교가 가능하다. 다음 확인 지점은 2026년 사업보고서의 연간 영업손실 규모와 2027년 1분기 분기보고서에서 영업손실이 이어지는지 여부다.",
+   "en": "Acryl operates a business that combines AI infrastructure software with medical AI, and quarterly revenue showed a recovery trend in 2026. First-quarter revenue of KRW 6.57 billion, third-quarter revenue of KRW 7.92 billion and first-quarter orders of KRW 20.7 billion are the strengths on the top-line side. On the other side, operating losses have continued for three straight quarters from the first quarter to the third quarter of 2026, and the operating cash outflow widened in 2025. The government project worth about KRW 7.6 billion and the definitive Uzinfocom contract are cited as medium-term revenue foundations, but the scale confirmed in reported results is still limited. Valuation is hard to compare on earnings because the company is loss-making, and on a net-asset basis the stock sits in a range carrying a premium over book value. The next checkpoints are the full-year operating loss in the 2026 annual report and whether operating losses continue in the first-quarter 2027 quarterly report."
   }
  },
  "sources": [
-  "https://thevc.kr/acryl",
-  "https://www.news1.kr/finance/market-exr/6009679",
-  "https://www.newswell.co.kr/news/articleView.html?idxno=15040",
-  "https://v.daum.net/v/2hjtOJ3GYA",
-  "https://v.daum.net/v/KZWVaVTsSm",
-  "https://kr.investing.com/equities/acryl-inc",
-  "https://m.news.zum.com/articles/102853036/%EC%9D%98%EB%A3%8C-%ED%8A%B9%ED%99%94-ai%EA%B8%B0%EC%97%85-%EC%95%84%ED%81%AC%EB%A6%B4-%EC%83%81%EC%9E%A5-%EC%B2%AB%EB%82%A0-%EB%94%B0%EB%B8%94-why-%EB%B0%94%EC%9D%B4%EC%98%A4",
+  "https://www.butler.works/ko/companies/01829819",
   "https://www.eugenefn.com/common/files/amail//20251125_B_jongsun.park_2511.pdf",
-  "https://www.38.co.kr/html/fund/?o=v&no=2247",
-  "https://www.etnews.com/20251201000277",
-  "https://m.thebell.co.kr/m/newsview.asp?newskey=202604241257441240104781",
-  "https://kind.krx.co.kr/external/2026/03/18/002198/20260318010268/11011.htm",
-  "https://www.jobkorea.co.kr/recruit/co_read/c/acriil",
-  "https://biz.heraldcorp.com/article/10637258",
-  "https://supple.kr/news/cmsxzovnj0000z66rxaszc8ej",
-  "https://www.etoday.co.kr/news/view/2615393",
+  "https://accidentalorder.com/stocks/0007c0/",
   "https://news.nate.com/view/20260518n07112?mid=n1101",
-  "https://www.kentertechhub.com/akeuril/"
+  "https://news.nate.com/view/20260609n08038?mid=n1101",
+  "https://www.sedaily.com/article/20038984",
+  "https://fairvalueresearch.net/listedcompanyInfo/listedcompanySearch.php?stock=0007C0",
+  "https://m.news.zum.com/articles/102853036/%EC%9D%98%EB%A3%8C-%ED%8A%B9%ED%99%94-ai%EA%B8%B0%EC%97%85-%EC%95%84%ED%81%AC%EB%A6%B4-%EC%83%81%EC%9E%A5-%EC%B2%AB%EB%82%A0-%EB%94%B0%EB%B8%94-why-%EB%B0%94%EC%9D%B4%EC%98%A4",
+  "https://www.jobkorea.co.kr/recruit/co_read/c/acriil",
+  "https://www.tradingkey.com/kr/news/transcripts/262288874-",
+  "https://www.tradingkey.com/kr/news/presentation/262286408-",
+  "https://kr.investing.com/news/stock-market-news/article-93CH-2160979",
+  "https://www.globenewswire.com/news-release/2026/11/04/3395907/25414/en/arq-reports-third-quarter-2026-results.html",
+  "https://finance.yahoo.com/markets/stocks/articles/arcelormittal-reports-third-quarter-2026-060000895.html",
+  "https://www.morningstar.com/news/globe-newswire/1001301889/arcelormittal-reports-third-quarter-2026-results",
+  "https://www.manilatimes.net/2026/11/05/tmt-newswire/globenewswire/arcelormittal-reports-third-quarter-2026-results/2462480/amp",
+  "https://www.tradingkey.com/kr/news/transcripts/262293991-",
+  "https://www.indexbox.io/blog/aker-bp-reports-strong-third-quarter-2026-results/"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "0007C0",
  "name": "아크릴",
- "name_en": "Acryl",
+ "name_en": "Acryl Inc.",
  "sector": "화학",
  "categories": [
   "화학"
  ],
  "market": "코스닥",
- "reportDate": "2026-10-27",
- "reportTs": "2026-10-27 15:41",
- "dataDate": "20261026",
+ "reportDate": "2026-11-14",
+ "reportTs": "2026-11-14 09:25",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-10-27",
+  "asOf": "2026-11-13",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -266,12 +256,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": null,
-    "op": null,
-    "np_owner": null
-   },
-   {
     "q": "2025Q3",
     "rev": null,
     "op": null,
@@ -294,25 +278,31 @@
     "rev": 5473699582,
     "op": -1495145458,
     "np_owner": -1531092020
+   },
+   {
+    "q": "2026Q3",
+    "rev": 7915004933,
+    "op": -1037579857,
+    "np_owner": -1109280996
    }
   ],
   "valuation": {
-   "price": 14400,
-   "mcap": 0.1148,
+   "price": 11630,
+   "mcap": 0.0934,
    "shares": 8030324,
    "total_shares": 8030324,
-   "wavg_shares": 8034975,
+   "wavg_shares": 8036070,
    "per": null,
    "eps": -350,
-   "pbr": 2.7576,
-   "bps": 5222,
+   "pbr": 2.2697,
+   "bps": 5124,
    "roe_ttm": -6.4,
    "ttm_window": "2025Q1~2025Q4",
    "ttm_np_owner": -2807960760,
    "ccy": "KRW",
    "bps_src": "자체",
    "eps_src": "순이익÷주식수",
-   "pbr_krx": 2.62,
+   "pbr_krx": 2.13,
    "bps_krx": 5448.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
@@ -321,5 +311,6 @@
     "per": "loss"
    }
   }
- }
+ },
+ "textRules": 2
 }

@@ -1,230 +1,210 @@
 {
  "title": {
-  "ko": "대형 수주와 반복된 계약 변수의 갈림길",
-  "en": "Record Backlog Meets a History of Contract Volatility"
+  "ko": "턴키 수주로 체질 개선 중, 분기 적자는 이어져",
+  "en": "Turnkey orders build backlog, quarterly losses persist"
  },
  "lead": {
-  "ko": "하나기술은 2026년 6월 영국 고객사와의 1,614억원 규모 턴키 계약으로 수주잔액이 연매출의 5배를 넘어섰지만, 과거 반복된 해외 계약 취소·정정 이력과 분기별 실적의 큰 변동성이 여전히 신뢰 회복의 과제로 남아 있다.",
-  "en": "Hana Technology's order backlog has swelled to more than five times annual revenue after a June 2026 turnkey contract with a UK customer, but a history of overseas contract cancellations and highly volatile quarterly results still weigh on investor confidence."
+  "ko": "하나기술은 2025년 영업손실 폭을 크게 줄였고 2026년 6월 약 1,615억원 규모의 영국 턴키 계약을 공시했지만, 2026년 3분기까지 3개 분기 연속 적자가 이어지고 있다.",
+  "en": "Hana Technology sharply narrowed its operating loss in 2025 and disclosed a UK turnkey contract worth about KRW 161.5 billion in June 2026, but it has posted losses for three consecutive quarters through the third quarter of 2026."
  },
  "keypoints": [
   {
-   "ko": "2026년 6월 영국 고객사와 1,614억원 규모 2차전지 조립공정 턴키 계약을 체결, 수주잔액이 5,000억원대로 확대",
-   "en": "Signed a KRW161.4bn turnkey battery assembly line contract with a UK customer in June 2026, lifting backlog above KRW500bn"
+   "ko": "2025년 영업손실은 3,981만원으로, 2024년 영업손실 264억원 대비 적자 폭이 크게 줄었다.",
+   "en": "The 2025 operating loss narrowed to KRW 39.81 million from KRW 26.4 billion in 2024."
   },
   {
-   "ko": "2025년 연간 영업손실은 3,981만원으로 손익분기 수준까지 축소되며 2024년 대규모 적자에서 벗어났으나, 2026년 상반기 다시 영업손실이 확대",
-   "en": "FY2025 operating loss narrowed to near breakeven from the large FY2024 loss, but the operating loss widened again in H1 2026"
+   "ko": "2026년 6월 9일 공시된 영국 턴키 계약은 약 1,615억원 규모로, 2025년 매출 938억원의 172.09%에 해당하며 계약 기간은 2030년 12월 28일까지다.",
+   "en": "The UK turnkey contract disclosed on June 9, 2026 is worth about KRW 161.5 billion, equal to 172.09% of 2025 revenue, and runs until December 28, 2030."
   },
   {
-   "ko": "2025년 3분기 매출 524억원·영업이익 43억원으로 단일 분기 큰 폭 흑자를 냈으나 이후 4분기 연속 매출이 급격히 줄어드는 등 수주 매출 인식의 편차가 큼",
-   "en": "Q3 2025 revenue of KRW52.4bn and operating profit of KRW4.3bn were followed by sharp revenue declines in subsequent quarters, reflecting lumpy order-to-revenue recognition"
+   "ko": "2026년 3분기 매출은 181억원으로 전 분기 대비 늘었지만 전년 동기 대비 65.5% 감소했고, 영업손실은 61.7억원, 지배주주 순손실은 228억원이다.",
+   "en": "Third-quarter 2026 revenue rose to KRW 18.1 billion from the prior quarter but fell 65.5% year on year, with an operating loss of KRW 6.17 billion and a net loss attributable to controlling shareholders of KRW 22.8 billion."
   },
   {
-   "ko": "브리티시볼트·수저우 신파워 등 과거 대형 해외 계약이 취소된 전례가 있고, 2026년에도 미국·프랑스·스웨덴 계약의 정정·해지가 반복됨",
-   "en": "Past large overseas contracts with Britishvolt and Suzhou Xin-Power were cancelled, and in 2026 US, French and Swedish contracts have also been revised or terminated"
+   "ko": "최근 네 개 분기 지배주주 순손실 합계는 249억원으로, 이익 기반 배수 대신 순자산과 수주 흐름을 함께 보는 것이 사실 확인에 가깝다.",
+   "en": "Net losses attributable to controlling shareholders total KRW 24.9 billion over the last four quarters, so balance-sheet and order-flow measures are more informative than earnings multiples."
   },
   {
-   "ko": "국내 배터리 3사(삼성SDI·LG에너지솔루션·SK온)를 핵심 고객으로 두고, 인도·영국·북미 등 해외 고객사로 공급망을 넓히는 중",
-   "en": "Maintains Samsung SDI, LG Energy Solution and SK On as core domestic customers while expanding overseas supply relationships in India, the UK and North America"
+   "ko": "다음 정기보고서는 2026년 사업보고서이며, 영국 계약의 금액·기간 변동 공시와 2026년 연간 영업외손익 구성이 다음 확인 지점이다.",
+   "en": "The next periodic report is the 2026 annual report; the next checkpoints are any amendment to the UK contract and the non-operating items in the 2026 full-year accounts."
   }
  ],
  "business": {
-  "ko": "하나기술은 2003년 설립되어 2020년 코스닥에 상장한 2차전지 제조장비 전문기업으로, 조립공정부터 화성공정, 팩공정까지 이어지는 풀라인 턴키 솔루션을 국내에서 유일하게 갖춘 것으로 알려져 있다. 전해액 주입기, 탭웰딩, Z-스태킹, 고속 스태킹, 노칭 등 조립공정 장비와 펄스 충방전 장비를 포함한 활성화 공정 장비, 팩 공정 장비 등을 전 공정 턴키로 공급한다. 원형·각형·파우치형 등 리튬이온 배터리의 모든 폼팩터에 대응 가능한 통합 공급 능력을 갖추고 있으며, 최근에는 전고체 배터리용 고온·고압 프레스 장비(WIP)와 전고체 스택 장비 등 차세대 배터리 공정으로 제품군을 확장하고 있다. 국내 고객사로는 삼성SDI, LG전자(LG에너지솔루션), SK이노베이션(SK온) 등 배터리 3사를 확보하고 있으며, 해외에서는 인도·영국·북미·프랑스·스웨덴 등으로 고객 기반을 넓히는 중이다. 본업인 2차전지 장비 외에 초박막 유리(UTG) 열면취 장비를 개발해 폴더블 디스플레이 시장에 진출했고, 반도체 유리기판 가공을 위한 TGV(글라스관통전극) 기술도 개발하는 등 신사업을 병행하고 있다. 폐배터리 재활용 시장을 겨냥해 팩·모듈 방전 장비와 배터리 상태 진단 시스템도 갖추고 있어 성장 동력을 다변화하려는 시도가 이어지고 있다. 다만 부문별 정확한 매출 비중은 별도로 공시되지 않아, 매출 구성은 대형 턴키 계약의 진행 상황에 따라 분기별로 크게 출렁이는 구조다. 경쟁구도상으로는 국내외 2차전지 장비 업체들과 함께 완성차·배터리셀 업체의 신증설 투자 사이클에 실적이 크게 연동되는 특성을 지닌다.",
-  "en": "Founded in 2003 and listed on KOSDAQ in 2020, Hana Technology is a secondary battery manufacturing equipment specialist that reportedly is the only domestic company offering a full-line turnkey solution spanning assembly, formation (activation) and pack processes. Its assembly-process lineup includes electrolyte injectors, tab welders, Z-stacking and high-speed stacking machines and notching equipment, alongside pulse charge-discharge activation equipment and pack-process equipment, all supplied on a turnkey basis. The company can support all lithium-ion battery form factors—cylindrical, prismatic and pouch—and has recently extended its product range into next-generation battery processes, including a Warm Isostatic Press (WIP) for solid-state batteries and solid-state stacking equipment. Domestic customers include Korea's three major battery makers, Samsung SDI, LG Energy Solution and SK On, while the overseas customer base is expanding into India, the United Kingdom, North America, France and Sweden. Beyond its core battery equipment business, the company has developed ultra-thin glass (UTG) heat-chamfering equipment for foldable displays and through-glass via (TGV) processing technology for semiconductor glass substrates as new growth avenues. It has also built pack/module discharge equipment and battery diagnostic systems targeting the waste battery recycling market, reflecting an effort to diversify growth drivers. Precise segment-level revenue mix is not separately disclosed, so quarterly revenue composition swings significantly depending on the progress of large turnkey contracts. Competitively, results are closely tied to the capital-expenditure cycles of automakers and battery cell makers, alongside other domestic and overseas battery equipment suppliers."
+  "ko": "하나기술은 2003년 3월 설립된 2차전지 공정 장비 업체로, 원형·각형·파우치형 등 배터리 전 폼팩터의 조립·활성화·팩 공정 장비를 제작해 납품한다. 회사는 정밀 조립과 라인 통합, 현장 시운전까지 일괄 수행하는 턴키 방식을 경쟁력으로 내세운다. 제품 강점은 조립공정의 전해액 주입기와 탭웰딩 장비로, 2024년 3월 한국IR협의회 기업분석은 원통형 전지 전해액 주입기 대부분을 LG에너지솔루션에 공급하고 있다고 정리했다. 이 밖에 활성화 공정 소프트웨어, Z-스태킹 장비, 펄스 충방전 장비를 라인업에 더했고 펄스 충방전 기술은 케이앤씨 지분 인수로 공급망에 붙였다. 고객은 국내 셀 3사(삼성SDI, SK온, LG에너지솔루션)와 미국·프랑스·대만·노르웨이 등의 해외 배터리 업체다. 같은 기업분석에 따르면 2023년 수주금액 3,500억원 가운데 해외 고객사향이 75%를 차지했다. 2023년 3분기 누계 기준으로는 국내와 수출 매출 비중이 각각 50%였다. 회사는 2025년 3분기 누적 이차전지 장비 수출액이 597억원으로 2024년 수출액 426억원을 넘었다고 밝혔다. 2022년 4월에는 화성 덕우리 제2공장에 495억원을 투자해 연간 생산능력을 3,500억원 수준에서 7,000억원 규모로 늘릴 계획을 발표했다. 국내 2차전지 장비 업체 가운데 셀 3사를 모두 고객으로 두었다는 점이 차별점으로 꼽힌다.",
+  "en": "Hana Technology, founded in March 2003, makes process equipment for secondary batteries, covering assembly, formation and pack processes for cylindrical, prismatic and pouch cells. The company positions its turnkey model, which covers precision assembly, line integration and on-site commissioning, as its main competitive edge. Its strength lies in electrolyte injection and tab welding equipment for the assembly process; a March 2024 equity analysis by a Korean research firm noted that it supplied most of LG Energy Solution's electrolyte injectors for cylindrical cells. The product line also includes formation process software, Z-stacking equipment and pulse charging-discharging equipment, the last technology gained through an equity stake in a pulse equipment maker. Customers include the three major Korean cell makers and battery producers in the United States, France, Taiwan and Norway. According to the same analysis, overseas customers accounted for 75% of the KRW 350 billion in orders booked in 2023. Based on cumulative third-quarter 2023 figures, domestic and export shares of sales were each 50%. The company said cumulative export shipments of secondary battery equipment reached KRW 59.7 billion in the first nine months of 2025, already above the KRW 42.6 billion exported in all of 2024. In April 2022 it decided to invest KRW 49.5 billion in a second plant in Hwaseong, with capacity expected to rise from about KRW 350 billion to KRW 700 billion a year. Its position as the only domestic equipment maker serving all three major Korean cell makers is cited as a differentiator."
  },
  "earnings": {
-  "ko": "하나기술의 연간 매출은 2022년 1,139억원에서 2023년 1,199억원으로 늘었으나 2024년 942억원, 2025년 938억원으로 2년 연속 줄었다. 수익성 측면에서는 2022년 영업이익 112억원(영업이익률 9.8%)으로 흑자를 냈던 것이 2023년 영업손실 63억원, 2024년에는 영업손실이 264억원까지 확대되며 큰 폭의 적자를 기록했다. 2025년에는 영업손실이 3,981만원으로 사실상 손익분기 수준까지 축소되며 적자 규모가 크게 줄었으나, 순이익은 -58억원으로 4년 연속 순손실을 이어갔다. 분기별로 보면 2025년 3분기 매출이 524억원, 영업이익 43억원, 순이익 43억원으로 큰 폭의 흑자를 기록했는데, 이는 대형 턴키 계약의 매출 인식이 해당 분기에 집중되며 나타난 결과로 해석된다. 그러나 2025년 4분기 매출은 98억원으로 급감했고, 2026년 1분기에는 매출 83억원에 영업손실 37억원, 2026년 2분기에는 매출이 53억원까지 줄면서 영업손실이 64억원으로 오히려 더 확대됐다. 다만 2026년 2분기 순이익은 13억원으로 흑자를 기록해 영업손익과 순손익의 괴리가 나타났는데, 이는 영업외 손익 요인이 반영된 결과로 추정되며 세부 내역은 반기보고서 등 공시를 통해 추가 확인이 필요하다. 최근 4개 분기(2025년 3분기~2026년 2분기) 누적으로 보면 매출 758억원, 지배주주순이익 22억원으로 집계되는데, 이 역시 2025년 3분기의 대형 매출 인식 효과가 대부분을 차지하는 구조다. 종합하면 하나기술의 실적은 대형 턴키 계약의 발주·검수 시점에 따라 특정 분기에 매출과 이익이 몰리는 특성이 뚜렷하며, 안정적인 매출 흐름이 아직 정착되지 않은 상태로 판단된다.",
-  "en": "Hana Technology's annual revenue rose from KRW113.9bn in 2022 to KRW119.9bn in 2023, then fell for two consecutive years to KRW94.2bn in 2024 and KRW93.8bn in 2025. On profitability, the company posted an operating profit of KRW11.2bn (a 9.8% operating margin) in 2022, before swinging to an operating loss of KRW6.3bn in 2023 and a much larger operating loss of KRW26.4bn in 2024. In 2025 the operating loss narrowed sharply to near breakeven at KRW39.8 million, though net income remained negative at KRW5.8bn, marking a fourth consecutive year of net losses. On a quarterly basis, Q3 2025 revenue reached KRW52.4bn with operating profit and net profit both around KRW4.3bn, a swing interpreted as reflecting revenue recognition concentrated in that quarter from large turnkey contracts. Revenue then dropped sharply to KRW9.8bn in Q4 2025, and Q1 2026 revenue of KRW8.3bn came with an operating loss of KRW3.7bn, while Q2 2026 revenue fell further to KRW5.3bn as the operating loss widened to KRW6.4bn. Notably, Q2 2026 still posted a net profit of KRW1.3bn, a divergence from the operating loss that appears to stem from non-operating items whose details would require further confirmation through interim disclosures. Over the trailing four quarters (Q3 2025 through Q2 2026), cumulative revenue totaled KRW75.8bn with owners' net income of KRW2.2bn, a figure still largely driven by the Q3 2025 revenue spike. Overall, Hana Technology's results show a clear pattern of revenue and profit concentrating in specific quarters tied to the timing of large turnkey contract execution, indicating that a stable revenue cadence has not yet been established."
+  "ko": "연간 매출은 2022년 1,139억원에서 2023년 1,199억원(전년 대비 5.3% 증가)으로 정점을 찍었고, 2024년 942억원(전년 대비 21.5% 감소)과 2025년 938억원(전년 대비 0.4% 감소)으로 2024년부터 2025년까지 2년 연속 감소했다. 영업이익은 2022년 112억원에서 2023년 영업손실 63.1억원으로 적자 전환했고, 2024년 영업손실 264억원으로 손실이 커졌다가 2025년 영업손실 3,981만원으로 손실이 크게 줄었다. 2023년부터 2025년까지 3년 연속 적자다. 영업이익률은 2022년 9.8%, 2023년 -5.3%, 2024년 -28.0%, 2025년 -0.0%로 움직였고, 2025년에는 손익분기 수준까지 좁혀졌다. 지배주주 순이익은 2022년 15.1억원에서 2023년 지배주주 순손실 38.1억원, 2024년 155억원, 2025년 58억원으로 이어졌다. 당기순이익(비지배지분 포함)도 같은 방향이다. 회사는 2025년 실적에 대해 원가와 비용 구조 개선, 수익성 중심의 프로젝트 운영, 판관비 통제를 원인으로 설명했다. 2025년 말 부채총계는 1,627억원, 자본총계는 1,006억원이며 부채비율은 2025년 161.7%로 2023년 105.7%보다 높다. 분기 흐름에서 2025년 3분기 매출 525억원과 영업이익 42.7억원은 상반기에 순연된 고객사 장비 납품과 해외 프로젝트 공급이 몰린 결과로 설명됐다. 그러나 2025년 4분기 매출은 97.9억원으로 전 분기 대비 81.3% 감소했고, 2026년 1·2·3분기 영업손실은 각각 36.5억원, 63.7억원, 61.7억원이다. 2026년 3분기 지배주주 순손실 228억원은 영업손실보다 훨씬 커서, 영업외손익 구성은 사업보고서에서 확인할 과제다.",
+  "en": "Annual revenue rose from KRW 113.9 billion in 2022 to a peak of KRW 119.9 billion in 2023 (up 5.3% year on year), then fell to KRW 94.2 billion in 2024 (down 21.5%) and KRW 93.8 billion in 2025 (down 0.4%), with declines in both 2024 and 2025. Operating profit of KRW 11.2 billion in 2022 turned into an operating loss of KRW 6.31 billion in 2023, widened to an operating loss of KRW 26.4 billion in 2024, and narrowed to an operating loss of KRW 39.81 million in 2025. The company has reported losses for three consecutive years from 2023 through 2025. Operating margin moved from 9.8% in 2022 to -5.3% in 2023, -28.0% in 2024 and -0.0% in 2025. Net profit attributable to controlling shareholders of KRW 1.51 billion in 2022 became a net loss of KRW 3.81 billion in 2023, widened to KRW 15.5 billion in 2024 and narrowed to KRW 5.8 billion in 2025; net profit including non-controlling interests followed the same path. The company attributed the 2025 improvement to cost structure gains, profit-focused project management and tighter selling and administrative expenses. At the end of 2025, total liabilities were KRW 162.7 billion and total equity was KRW 100.6 billion, with the debt ratio at 161.7%, up from 105.7% in 2023. Operating cash flow was KRW 8.2 billion in 2022, KRW 1.94 billion in 2023, -KRW 36.1 billion in 2024 and KRW 9.97 billion in 2025. On a quarterly basis, third-quarter 2025 revenue of KRW 52.5 billion and operating profit of KRW 4.27 billion reflected delayed customer deliveries and overseas project shipments that landed in that quarter. Fourth-quarter 2025 revenue then fell to KRW 9.79 billion, an 81.3% drop from the prior quarter. Operating losses were KRW 3.65 billion, KRW 6.37 billion and KRW 6.17 billion in the first three quarters of 2026, extending a run of three consecutive loss-making quarters. The third-quarter 2026 net loss attributable to controlling shareholders of KRW 22.8 billion is far larger than the operating loss, so the non-operating items behind that gap are a question for the annual report."
  },
  "industry": {
-  "ko": "2차전지 업황은 2023년 이후 전기차 수요 캐즘과 고금리 환경이 겹치며 수익성 최악의 국면을 지나온 것으로 평가되며, 최근에는 회복 국면의 초입에 들어섰다는 시각이 나온다. 특히 미국 등에서 AI 데이터센터발 전력수요 급증에 따라 ESS(에너지저장장치)용 배터리 수요가 빠르게 늘고 있다는 분석이 있으며, 이는 전기차용 장비 외에 ESS 관련 라인 투자로도 이어질 수 있는 요인으로 지목된다. 유럽에서는 배터리 판매가 2024년을 저점으로 회복세를 보이고 있으며, 유럽연합의 원산지 규정 강화가 현실화될 경우 중국 대비 한국 업체들의 상대적 수혜가 커질 수 있다는 전망도 제기된다. 이러한 흐름 속에서 배터리셀 업체들의 신규 라인 투자·증설 결정이 재개되면 장비 발주로 이어지는 구조인데, 하나기술의 실적도 결국 고객사의 투자 결정 시점에 크게 좌우된다. 회사는 국내 유일의 전 공정 턴키 대응 역량과 전고체 배터리용 WIP·스태킹 장비 개발 이력을 통해 차세대 배터리 장비 시장에서 포지셔닝을 강화하려는 전략을 취하고 있다. 다만 업황 회복의 속도와 강도는 여전히 고객사들의 투자 재개 시점, 완성차 수요 반등 여부 등 외부 변수에 의존적이며, 과거 노르웨이 프레이어·스웨덴 노보에너지 등 고객사의 투자 일정 지연 사례가 실제로 나타난 바 있다.",
-  "en": "The battery equipment industry is broadly assessed as having passed through its worst profitability phase amid the electric vehicle demand chasm and high interest rates since 2023, with some views suggesting the sector has entered the early stage of a recovery. Analysts point to rapidly rising energy storage system (ESS) battery demand in the United States, driven by surging power needs from AI data centers, as a factor that could extend beyond EV-related equipment into new ESS line investment. In Europe, battery sales have been recovering from a 2024 trough, and stricter EU origin-of-content rules, if implemented, are cited as a factor that could relatively benefit Korean suppliers over Chinese competitors. Under this backdrop, renewed capacity expansion decisions by battery cell makers translate into equipment orders, meaning Hana Technology's results ultimately hinge heavily on the timing of customers' investment decisions. The company is pursuing a strategy of strengthening its position in next-generation battery equipment through its domestically unique full-process turnkey capability and its track record developing WIP and stacking equipment for solid-state batteries. However, the pace and strength of the industry recovery remain dependent on external variables such as when customers resume investment and whether automaker demand rebounds, and delays in customer investment schedules—such as those previously seen at Norway's Freyr and Sweden's Novo Energy—have actually materialized."
+  "ko": "하나기술의 전방 수요는 전기차용 배터리 투자이며, 장비 발주는 셀 제조사의 증설 계획과 수주 시점에 따라 움직인다. 2024년 3월 한국IR협의회 기업분석은 글로벌 전기차 침투율이 2020년 4.2%에서 2023년 16.7%로 올랐고 2024년에는 19% 수준이 예상된다고 정리했다. 같은 자료는 일부 완성차 업체의 전기차 투자 계획 지연·축소 발표를 짚으며 2차전지 증설 지연 우려를 제기했다. 이 수치는 2024년 기준 전망이어서 현재 수급은 셀 3사의 최신 증설 발표와 함께 봐야 한다. 경쟁 구도에서 하나기술은 국내 셀 3사를 모두 고객으로 둔 국내 2차전지 장비 업체로 소개된다. 같은 자료는 해외 고객사향 수주가 많은 이유로 국내 셀업체 레퍼런스, 조립·활성화·팩 공정 턴키 공급 능력, 활성화 소프트웨어와 Z-스태킹 장비 내재화, 해외 현지법인의 기술 지원을 들었다. 해외 고객 비중이 높아 고객 국가의 정책과 투자 환경 변화가 수주 흐름에 직접 연결되는 구조다. 2025년 3분기 설명에서 회사는 유럽 중심 대형 장비 납품이 늘었다고 밝혔다. 2차전지 장비 시장의 사이클 위치를 단정하기보다, 셀 3사와 해외 고객의 증설 발표가 실제 수주로 이어지는지가 확인할 지점이다.",
+  "en": "Demand for Hana Technology's equipment depends on electric vehicle battery investment, and orders move with cell makers' capacity plans and ordering timing. A March 2024 equity analysis by a Korean research firm noted that global EV penetration rose from 4.2% in 2020 to 16.7% in 2023, with about 19% expected for 2024. The same analysis pointed to some automakers delaying or scaling back EV investment and flagged the risk of slower battery capacity additions. Because those figures are 2024 projections, current demand should be checked against the latest capacity announcements from the major cell makers. Within its competitive set, the company is described as the only domestic equipment maker serving all three major Korean cell makers. The same analysis cited its overseas order strength to a domestic reference base, turnkey supply across assembly, formation and pack processes, in-house formation software and Z-stacking equipment, and local subsidiaries that provide technical support. With a high overseas customer share, policy and investment conditions in customer countries feed directly into order flow. In its third-quarter 2025 briefing, the company said large equipment deliveries and installations in Europe increased. Rather than judge where the equipment cycle stands, the more concrete test is whether capacity announcements from the three major cell makers and overseas customers turn into actual orders."
  },
  "outlook": {
-  "ko": "2026년 6월 9일 공시된 영국 고객사와의 2차전지 조립공정 라인 턴키 계약(약 1,614억원, 2026년 6월~2030년 12월)은 하나기술의 이행 중인 계약 가운데 최대 규모로, 유진투자증권 집계 기준 2026년 1분기 말 3,393억원이었던 수주잔액을 5,000억원대로 끌어올린 것으로 파악된다. 여기에 2025년 12월 체결된 인도 고객사향 조립장비 턴키 계약(약 1,576억원)의 매출 인식이 2026년 4월부터 순차적으로 시작될 것으로 유안타증권이 2026년 1월 보고서에서 전망한 바 있다. 유안타증권은 같은 보고서에서 하나기술이 2025년 총 7건의 공급계약을 공시했으며, Z-스태킹과 전고체 배터리용 WIP 장비 수주를 통해 신규 성장 동력을 확보했다고 평가했다. 다만 투자의견과 목표주가는 제시하지 않았다. 유진투자증권은 2026년 1분기 실적 발표 이후, 북미향 제품 생산 준비와 인도 A사향 양산 준비에 따른 비용 반영으로 1분기 실적이 시장 기대치를 밑돌았다고 짚었으며, 2분기 이후 인도·북미 공급이 본격화되며 매출 성장세로 전환될 것으로 전망한 바 있다. 실제 2026년 2분기 매출은 전 분기보다 오히려 줄어 이러한 전망과는 차이를 보였다. 향후 관전 포인트는 대형 계약들의 실제 매출 인식 속도, 추가 해외 수주 여부, 그리고 과거 반복됐던 계약 정정·해지 패턴의 재발 여부가 될 것으로 보인다.",
-  "en": "A turnkey battery assembly line contract with a UK customer disclosed on June 9, 2026, worth roughly KRW161.4bn and running from June 2026 to December 2030, is the largest contract currently being executed by Hana Technology, and based on Eugene Investment & Securities' tally the order backlog of KRW339.3bn at end-Q1 2026 is understood to have risen into the KRW500bn range as a result. Yuanta Securities forecast in a January 2026 report that revenue recognition from a roughly KRW157.6bn turnkey assembly equipment contract with an Indian customer, signed in December 2025, would begin progressively from April 2026. In the same report, Yuanta noted that Hana Technology disclosed a total of seven supply contracts in 2025 and had secured new growth drivers through Z-stacking and solid-state battery WIP equipment orders, though it did not provide an investment rating or target price. Eugene Investment & Securities noted after the Q1 2026 earnings release that first-quarter results fell short of market expectations due to costs tied to preparing North American production and preparing mass production for the Indian customer, and projected that supply to India and North America would ramp up from the second quarter, driving a shift to revenue growth. In practice, Q2 2026 revenue instead declined from the prior quarter, diverging from that projection. Key points to watch going forward include the actual pace of revenue recognition from the large contracts, whether additional overseas orders materialize, and whether the previously recurring pattern of contract revisions and terminations resurfaces."
+  "ko": "회사가 공개한 전망의 중심은 턴키 수주 확대와 해외 시장 진입 강화다. 회사는 2025년 3분기 실적 설명에서 글로벌 전략시장의 턴키 수주 활동과 신규 시장 진입을 강화해 실적 개선세를 이어 가겠다고 밝혔다. 2026년 6월 9일 공시된 영국 계약은 2차전지 조립공정 라인 턴키 공급 계약으로, 계약금액은 약 1,615억원이며 2025년 매출 938억원의 172.09%에 해당한다. 계약 기간은 2026년 6월 8일부터 2030년 12월 28일까지이고, 계약 상대방은 고객사 요청으로 공시가 유보됐다. 계약은 총 4건의 발주서로 구성돼 있고, 금액이나 기간이 바뀌면 회사가 추가 공시하겠다고 밝혔다. 이 계약이 분기별 매출로 어떤 속도로 인식될지는 공시만으로 정해지지 않는다. 2026년 3분기 매출은 181억원으로 2분기 52.9억원보다 늘었지만 전년 동기 525억원에는 미치지 못한다. 2025년 3분기 매출은 상반기에 순연된 납품이 몰린 결과로 설명됐기에, 분기 매출은 납품 시점에 따라 크게 달라질 수 있다. 다음 확인 지점은 영국 계약의 금액·기간 변동 공시와 2026년 사업보고서에 담길 연간 매출 구성이다.",
+  "en": "The company's stated direction centers on expanding turnkey orders and strengthening its overseas push. In its third-quarter 2025 briefing, it said it would intensify turnkey bidding in strategic global markets and new market entry to keep improving results. The UK contract disclosed on June 9, 2026 is a turnkey supply agreement for a secondary battery assembly line, worth about KRW 161.5 billion, or 172.09% of 2025 revenue of KRW 93.8 billion. It runs from June 8, 2026 to December 28, 2030, and the counterparty has not been disclosed at the customer's request. The contract consists of four purchase orders, and the company said it would make additional disclosures if the amount or period changes. The pace at which this contract will be recognized as quarterly revenue is not set by the disclosure alone. Third-quarter 2026 revenue of KRW 18.1 billion rose from KRW 5.29 billion in the second quarter but remained well below KRW 52.5 billion in the same quarter of 2025. That earlier quarter was explained by deliveries that slipped from the first half, so quarterly revenue can swing widely with delivery timing. The next checkpoints are any change disclosed to the UK contract and the annual revenue mix in the 2026 annual report."
  },
  "valuation_comment": {
-  "ko": "하나기술은 2022년을 제외하면 최근 4개 연도 중 3개 연도에서 순손실을 기록해, 주가수익비율 같은 이익 기반 지표의 의미가 특정 분기의 일회성 흑자 여부에 따라 크게 흔들리는 구간에 있다. 최근 4개 분기 기준으로는 지배주주순이익이 흑자로 집계되지만, 이 중 대부분이 2025년 3분기 한 분기의 대형 매출 인식에서 나온 만큼 이 흑자 전환이 추세적인지 판단하기는 아직 이르다. 주가순자산비율 측면에서는 순자산 대비 일정한 프리미엄이 붙어 거래되는 편으로, 이는 향후 대형 수주의 매출 전환 기대감이 일부 반영된 결과로 해석될 수 있다. 배당의 경우 최근 회계연도까지 배당을 실시하지 않고 있어, 주주환원보다는 수주 확대에 따른 성장성에 시장의 관심이 맞춰져 있는 구조로 보인다. 과거 실적이 적자와 흑자를 반복해온 만큼, 밸류에이션 지표는 산업 평균이나 과거 자사 밴드와 단순 비교하기보다 향후 대형 계약들의 실제 매출 인식 여부와 함께 살펴볼 필요가 있다.",
-  "en": "Excluding 2022, Hana Technology posted net losses in three of the past four fiscal years, meaning earnings-based valuation metrics such as the price-to-earnings ratio remain highly sensitive to whether a single quarter's one-off profit occurs. On a trailing four-quarter basis, owners' net income is positive, but since most of that profit stems from the large revenue recognition in a single quarter (Q3 2025), it is still premature to judge whether this shift to profitability is a sustained trend. In terms of the price-to-book ratio, the stock tends to trade at a certain premium to net asset value, which can be interpreted as partly reflecting market expectations for future revenue conversion from large orders. On dividends, the company has not paid a dividend through the most recent fiscal year, suggesting market attention is focused more on growth from order expansion than on shareholder returns. Given the company's history of alternating losses and profits, valuation metrics may be better assessed alongside the actual pace of revenue recognition from pending large contracts rather than through simple comparison with industry averages or the company's own historical range."
+  "ko": "밸류에이션은 이익 기반 배수보다 순자산과 수주 흐름을 함께 읽는 편이 사실에 가깝다. 최근 네 개 분기 지배주주 순손실 합계가 249억원이어서 이익을 기준으로 한 주가수익 배수는 성립하지 않는다. 2025년 말 자본총계는 1,006억원이고 그중 지배주주 지분은 1,005억원이다. 2024년 3월 한국IR협의회 기업분석은 당시 추정 주가순자산비율이 국내 2차전지 장비 동종 평균을 웃도는 프리미엄 구간이라고 평가했다. 이후 손실이 이어지면서 현재 주가순자산비율은 그 당시 추정 수준보다 낮아 순자산 가치에 가까운 구간에 있다. 배당은 현재 이익 기여가 거의 없는 상태다. 주가와 배수는 날마다 바뀌므로 이 해설은 구조와 방향만 다룬다.",
+  "en": "Valuation reads more accurately through net asset value and order flow than through earnings multiples. Net losses attributable to controlling shareholders total KRW 24.9 billion over the last four quarters, so a price-to-earnings multiple is not meaningful. Total equity at the end of 2025 was KRW 100.6 billion, of which KRW 100.5 billion belonged to controlling shareholders. A March 2024 equity analysis by a Korean research firm described the estimated price-to-book ratio at that time as a premium to the domestic secondary battery equipment peer average. Since then, continued losses have moved the price-to-book ratio closer to net asset value than the 2024 estimate. Shareholder returns through dividends currently contribute almost nothing. Share prices and multiples change daily, so this section addresses structure and direction only."
  },
  "bull": [
   {
    "title": {
-    "ko": "수주잔액 급증에 따른 매출 가시성 확대",
-    "en": "Backlog surge expands revenue visibility"
+    "ko": "대형 턴키 수주로 매출 기반 확대",
+    "en": "Large turnkey order widens the revenue base"
    },
    "body": {
-    "ko": "2026년 6월 영국 고객사와의 1,614억원 규모 턴키 계약 체결로 수주잔액이 5,000억원대로 늘어 연매출의 5배를 웃도는 수준까지 확대된 것으로 파악된다. 여기에 2025년 12월 체결된 인도 고객사향 1,576억원 계약의 매출 인식도 2026년부터 본격화될 것으로 증권가는 전망했다. 두 계약 모두 4년 안팎의 장기 계약 구조를 갖고 있어, 실제 이행이 이뤄질 경우 향후 수년간 매출 기반이 될 수 있다.",
-    "en": "The June 2026 turnkey contract worth roughly KRW161.4bn with a UK customer lifted the order backlog into the KRW500bn range, exceeding five times annual revenue. On top of this, revenue recognition from the KRW157.6bn contract with an Indian customer signed in December 2025 was also expected by analysts to ramp up from 2026. Both contracts run for roughly four years, meaning that if actually executed, they could underpin revenue for several years ahead."
+    "ko": "2026년 6월 9일 공시된 영국 계약은 약 1,615억원으로 2025년 매출의 172.09%에 해당하며, 계약 기간이 2030년 12월 28일까지다. 계약 상대방은 공시가 유보됐으나 2차전지 조립공정 라인 턴키 공급이라는 점에서 회사의 턴키 역량이 대형 계약으로 이어졌음을 보여 준다. 계약이 실제 매출로 인식될수록 매출 규모의 바닥이 올라갈 수 있다.",
+    "en": "The UK contract disclosed on June 9, 2026 is worth about KRW 161.5 billion, equal to 172.09% of 2025 revenue, and runs until December 28, 2030. The counterparty has not been disclosed, but the contract covers a turnkey assembly line, which shows the company's turnkey capability winning large orders. As this contract is recognized as revenue, the floor of annual sales could rise."
    }
   },
   {
    "title": {
-    "ko": "전 공정 턴키 역량과 차세대 배터리 장비 포트폴리오",
-    "en": "Full-process turnkey capability and next-generation equipment portfolio"
+    "ko": "비용 효율화로 영업손실 대폭 축소",
+    "en": "Cost efficiency cut the operating loss sharply"
    },
    "body": {
-    "ko": "국내에서 조립·화성·팩공정 전체를 턴키로 대응할 수 있는 유일한 업체로 알려져 있으며, 이러한 종합 역량이 대형 해외 턴키 계약 수주로 이어지는 구조다. 여기에 전고체 배터리용 WIP·전고체 스택 장비, Z-스태킹 등 차세대 장비 개발을 통해 성장 동력을 다변화하고 있다. 폐배터리 재활용 장비, 폴더블 디스플레이용 UTG 열면취 장비 등 신사업도 병행돼 있어 2차전지 외의 매출원 확보 가능성도 존재한다.",
-    "en": "The company is reportedly the only domestic firm capable of offering full turnkey capability across assembly, formation and pack processes, a comprehensive capability that has translated into large overseas turnkey contract wins. It is also diversifying growth drivers through next-generation equipment development, including WIP and solid-state stacking equipment and Z-stacking machines. New businesses such as waste battery recycling equipment and UTG heat-chamfering equipment for foldable displays are pursued in parallel, offering potential revenue sources beyond core battery equipment."
+    "ko": "2025년 영업손실은 3,981만원으로 2024년 영업손실 264억원보다 크게 줄었다. 회사는 원가와 비용 구조 개선, 수익성 중심의 프로젝트 운영, 판관비 통제를 원인으로 설명했다. 영업이익률이 2024년 -28.0%에서 2025년 -0.0%로 개선된 것은 수익 구조가 손익분기 수준까지 회복했다는 뜻이다.",
+    "en": "The 2025 operating loss narrowed to KRW 39.81 million from KRW 26.4 billion in 2024. The company credited cost structure improvements, profit-focused project management and tighter selling and administrative expenses. Operating margin improved from -28.0% in 2024 to -0.0% in 2025, a move back toward breakeven."
    }
   },
   {
    "title": {
-    "ko": "2025년 영업손실 축소로 나타난 이익 회복 신호",
-    "en": "Signs of earnings recovery as the 2025 operating loss narrowed"
+    "ko": "해외 수출 실적과 고객 저변",
+    "en": "Export track record and customer base"
    },
    "body": {
-    "ko": "2024년 264억원에 달했던 영업손실이 2025년에는 3,981만원 수준으로 크게 줄어 사실상 손익분기 근처까지 개선됐다. 2025년 3분기에는 매출 524억원, 영업이익 43억원의 단일 분기 흑자를 기록하며 대형 계약의 매출화가 실제 이익으로 연결될 수 있음을 보여줬다. 향후 유사한 규모의 계약들이 순차적으로 매출화될 경우 이익 회복이 재현될 가능성이 있다.",
-    "en": "The operating loss, which had reached KRW26.4bn in 2024, narrowed sharply to KRW39.8 million in 2025, effectively approaching breakeven. In Q3 2025, the company posted a single-quarter operating profit of KRW4.3bn on revenue of KRW52.4bn, demonstrating that revenue recognition from large contracts can translate into actual profit. If similarly sized contracts are recognized sequentially going forward, a similar earnings recovery could recur."
+    "ko": "2025년 3분기 누적 수출액이 이미 2024년 연간 수출액을 웃돌아, 해외 납품이 늘어난 흐름이다. 국내 셀 3사를 모두 고객으로 둔 점은 국내 레퍼런스가 해외 수주의 바탕이 된다는 회사 설명과 맞물린다. 해외 고객 비중이 높은 만큼 수출 실적은 턴키 수주가 실제 납품으로 이어졌는지를 가늠하는 지표다.",
+    "en": "Cumulative exports in the first nine months of 2025 had already exceeded the full-year 2024 total, pointing to rising overseas deliveries. Serving all three major Korean cell makers is cited as the domestic reference base behind its overseas wins. Given the high overseas share, export shipments are a direct gauge of whether turnkey orders are turning into deliveries."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "반복된 해외 대형 계약 취소·정정 이력",
-    "en": "A recurring history of overseas contract cancellations and revisions"
+    "ko": "3개 분기 연속 적자와 분기 매출 변동",
+    "en": "Three consecutive loss-making quarters and volatile sales"
    },
    "body": {
-    "ko": "2022년 영국 브리티시볼트와의 약 907억원 계약은 고객사의 법정관리·청산으로 무산됐고, 2023년 중국 수저우 신파워 에너지와의 1,724억원 계약도 1년 만에 취소됐다. 2026년에도 2월 미국향 계약의 사양·금액 변경, 5월 북미 배터리 제조사와의 210억원 계약 해지, 프랑스향 계약 금액 축소 등이 이어졌다. 대형 수주 공시가 실제 매출로 이어지지 않은 전례가 반복돼 계약 이행 가능성에 대한 검증이 필요한 상황이다.",
-    "en": "A roughly KRW90.7bn contract with UK-based Britishvolt in 2022 collapsed after the customer entered administration and was later liquidated, and a KRW172.4bn contract with China's Suzhou Xin-Power Energy signed in 2023 was cancelled within a year. In 2026 as well, a US-bound contract saw specification and amount changes in February, a KRW21bn contract with a North American battery maker was terminated in May, and a France-bound contract amount was reduced. This recurring pattern of large order announcements not translating into actual revenue means the feasibility of contract execution requires ongoing scrutiny."
+    "ko": "2026년 1분기부터 3분기까지 3개 분기 연속 적자이며, 영업손실은 36.5억원, 63.7억원, 61.7억원이다. 2026년 3분기 매출 181억원은 전년 동기 대비 65.5% 감소한 수준이다. 2025년 4분기 매출 97.9억원과 2026년 2분기 매출 52.9억원처럼 분기 매출이 크게 흔들리는 가운데 적자가 지속되고 있다.",
+    "en": "The company has posted operating losses in each of the first three quarters of 2026, at KRW 3.65 billion, KRW 6.37 billion and KRW 6.17 billion. Third-quarter 2026 revenue of KRW 18.1 billion fell 65.5% from a year earlier. Quarterly sales have swung sharply, from KRW 9.79 billion in the fourth quarter of 2025 to KRW 5.29 billion in the second quarter of 2026, while losses continued."
    }
   },
   {
    "title": {
-    "ko": "분기별 실적의 큰 변동성",
-    "en": "High quarter-to-quarter earnings volatility"
+    "ko": "지배주주 순손실 확대와 누적 손실",
+    "en": "Widening net loss and cumulative losses"
    },
    "body": {
-    "ko": "2025년 3분기 524억원에 달했던 매출이 4분기 98억원, 2026년 1분기 83억원, 2분기 53억원으로 연속 감소하는 등 매출 흐름이 매우 불규칙하다. 2026년 2분기에는 매출 감소와 함께 영업손실이 64억원으로 오히려 확대돼, 대형 계약 수주가 안정적인 매출 성장으로 곧바로 이어지지 않고 있음을 보여준다. 이런 변동성은 향후 실적을 예측하기 어렵게 만드는 요인이다.",
-    "en": "Revenue, which reached KRW52.4bn in Q3 2025, fell consecutively to KRW9.8bn in Q4 2025, KRW8.3bn in Q1 2026 and KRW5.3bn in Q2 2026, showing a highly irregular pattern. In Q2 2026, the operating loss actually widened to KRW6.4bn alongside the revenue decline, illustrating that large order wins have not directly translated into stable revenue growth. This volatility makes future results difficult to forecast."
+    "ko": "2026년 3분기 지배주주 순손실은 228억원으로 영업손실 61.7억원보다 훨씬 크다. 최근 네 개 분기 지배주주 순손실 합계는 249억원이다. 2023년부터 2025년까지 지배주주 순손실이 이어졌고, 2026년 2분기 지배주주 순이익 13.3억원으로 흑자 전환한 분기도 있었지만 전체 흐름을 되돌리지는 못했다.",
+    "en": "The third-quarter 2026 net loss attributable to controlling shareholders of KRW 22.8 billion is far larger than the operating loss of KRW 6.17 billion. Losses over the last four quarters total KRW 24.9 billion. Net losses attributable to controlling shareholders have run from 2023 through 2025, and although the second quarter of 2026 showed a profit of KRW 1.33 billion, it did not reverse the broader trend."
    }
   },
   {
    "title": {
-    "ko": "영업손익과 순손익의 괴리",
-    "en": "A gap between operating and net results"
+    "ko": "재무 부담과 영업현금흐름 변동",
+    "en": "Financial burden and volatile operating cash flow"
    },
    "body": {
-    "ko": "2026년 2분기에는 영업손실이 64억원으로 확대됐음에도 순이익은 13억원으로 흑자를 기록해, 본업 외 요인이 실적에 상당한 영향을 미친 것으로 보인다. 이러한 영업외 손익 변동성은 본업의 수익성 개선 여부를 판단하기 어렵게 만든다. 세부 내역이 공시로 명확히 확인되기 전까지는 실적의 질을 보수적으로 살펴볼 필요가 있다.",
-    "en": "In Q2 2026, despite the operating loss widening to KRW6.4bn, net income was positive at KRW1.3bn, suggesting that factors outside the core business had a meaningful effect on results. This non-operating volatility makes it difficult to judge whether the core business's profitability is genuinely improving. Until the details are clearly confirmed through disclosures, the quality of earnings warrants a cautious read."
+    "ko": "2025년 말 부채비율은 161.7%로 2023년 105.7%보다 높아졌다. 영업활동 현금흐름은 2024년 -361억원으로 크게 마이너스였고, 2025년 99.7억원으로 회복됐지만 분기 손익은 여전히 적자다. 부채총계 1,627억원 대비 자본총계 1,006억원이어서, 장기 손실이 이어질 경우 재무 여력이 좁아질 수 있다.",
+    "en": "The debt ratio rose to 161.7% at the end of 2025 from 105.7% in 2023. Operating cash flow was -KRW 36.1 billion in 2024 and recovered to KRW 9.97 billion in 2025, yet quarterly profits remain in the red. With total liabilities of KRW 162.7 billion against total equity of KRW 100.6 billion, financial room could narrow if losses persist."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "계약 상대방 비공개·이행 리스크",
-    "en": "Counterparty non-disclosure and execution risk"
+    "ko": "수주 집중과 납품 일정",
+    "en": "Order concentration and delivery timing"
    },
    "body": {
-    "ko": "2026년 6월 체결된 1,614억원 규모 영국 고객사향 계약은 상대방 요청에 따라 계약 종료일인 2030년 12월까지 공시가 유보돼 있어, 투자자가 계약 상대방의 신용도나 사업 현황을 직접 확인하기 어렵다. 과거 브리티시볼트·수저우 신파워 사례처럼 고객사의 경영 악화나 투자 계획 변경이 계약 이행에 영향을 줄 수 있다. 이러한 정보 비대칭은 대형 계약의 실제 이행 여부를 판단하는 데 제약 요인이 된다.",
-    "en": "The KRW161.4bn UK contract signed in June 2026 has disclosure of the counterparty withheld until the contract's December 2030 end date at the customer's request, making it difficult for investors to directly assess the counterparty's creditworthiness or business status. As with the earlier Britishvolt and Suzhou Xin-Power cases, deterioration in a customer's business or changes to its investment plans could affect contract execution. This information asymmetry constrains investors' ability to judge whether large contracts will actually be fulfilled."
+    "ko": "2025년 3분기 매출은 상반기에 순연된 고객사 장비 납품이 몰린 결과로 설명됐다. 턴키 수주는 금액이 크지만 설치·검수 일정에 따라 매출 인식이 늦어질 수 있다. 영국 계약은 금액과 기간이 변경될 수 있다고 회사가 밝혔으므로, 변동 공시 여부가 실적 가시성에 영향을 준다.",
+    "en": "Third-quarter 2025 revenue was explained by customer deliveries that slipped from the first half and landed together. Turnkey orders are large, but revenue recognition can lag when installation and acceptance inspection schedules shift. The company has said the UK contract's amount and period may change, so any amendment affects earnings visibility."
    }
   },
   {
    "cat": {
-    "ko": "현금흐름 및 자금조달 리스크",
-    "en": "Cash flow and financing risk"
+    "ko": "고객사 투자 지연과 전방 수요",
+    "en": "Customer investment delays and end-market demand"
    },
    "body": {
-    "ko": "2024년 영업활동현금흐름은 -361억원으로 크게 악화된 바 있고, 2025년에는 100억원 수준으로 개선됐으나 대형 턴키 계약 이행을 위한 선투자 부담이 상존한다. 대주주 등의 주식담보대출 계약 변경이 반복적으로 공시된 바 있어, 지분 관련 자금조달 구조에 대한 모니터링이 필요하다. 대형 계약의 선급금 유입 시점과 자재·인력 투입 시점 간 시차도 자금 부담 요인이 될 수 있다.",
-    "en": "Operating cash flow deteriorated sharply to negative KRW36.1bn in 2024 before improving to roughly KRW10bn in 2025, though the burden of upfront investment to execute large turnkey contracts persists. Repeated disclosures of changes to stock-backed loan arrangements involving major shareholders warrant monitoring of equity-related financing structures. The timing gap between receipt of advance payments on large contracts and the outlay for materials and labor can also be a source of funding pressure."
+    "ko": "2024년 3월 한국IR협의회 기업분석은 일부 완성차 업체의 전기차 투자 계획 지연·축소 발표를 짚으며 2차전지 증설 지연 우려를 제기했다. 하나기술의 장비 수주는 셀 제조사의 증설 결정에 따라 움직이므로, 고객사 투자 조정이 수주 감소로 이어질 수 있다. 해외 고객 비중이 높아 고객 국가의 투자 환경 변화에도 노출돼 있다.",
+    "en": "A March 2024 equity analysis flagged delayed or scaled-back EV investment plans at some automakers and the risk of slower battery capacity additions. Because orders follow cell makers' capacity decisions, investment adjustments by customers could translate directly into fewer orders. The high overseas customer share also leaves the company exposed to investment conditions in those countries."
    }
   },
   {
    "cat": {
-    "ko": "전방산업 투자 사이클 의존",
-    "en": "Dependence on the downstream investment cycle"
+    "ko": "해외 수주잔고의 매출 실현",
+    "en": "Converting overseas backlog into revenue"
    },
    "body": {
-    "ko": "하나기술의 수주와 매출은 배터리셀·완성차 업체의 신증설 투자 결정 시점에 크게 좌우되는데, 과거 노르웨이 프레이어·스웨덴 노보에너지 등 고객사의 투자 일정이 지연된 사례가 실제로 있었다. 전기차 수요 회복 속도가 예상보다 늦어질 경우 고객사의 투자 재개 시점도 함께 미뤄질 수 있다. 이는 수주잔액이 실제 매출로 전환되는 속도에 직접적인 영향을 준다.",
-    "en": "Hana Technology's orders and revenue are heavily dependent on the timing of capacity expansion decisions by battery cell makers and automakers, and delays in customer investment schedules—as previously seen with Norway's Freyr and Sweden's Novo Energy—have actually occurred. If the pace of EV demand recovery is slower than expected, customers' resumption of investment could likewise be delayed. This directly affects how quickly the backlog converts into actual revenue."
+    "ko": "2024년 3월 한국IR협의회 기업분석의 수주 목록에는 영국 고객사와의 계약 가운데 매출 실현이 불확실하다고 분류된 항목이 있었다. 같은 시기 증권 보도는 해외 고객사향 수주잔고의 매출 실현이 지연되고 수익성이 악화됐다고 분석했다. 해외 대형 계약의 실현 속도가 실적 변동성의 주요 원인이므로, 수주 금액과 실제 매출 인식의 차이를 함께 확인해야 한다.",
+    "en": "The order list in a March 2024 equity analysis classified some UK contracts as having uncertain revenue realization. Press coverage of the same period also reported delayed revenue recognition from overseas backlog and worsening profitability. Because the pace at which large overseas contracts convert to revenue drives earnings volatility, the gap between booked orders and recognized revenue needs to be tracked."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중",
-    "en": "Mid-November 2026"
+    "ko": "2026년 12월 이후 (수시 공시)",
+    "en": "After December 2026 (ad hoc disclosure)"
    },
    "what": {
-    "ko": "2026년 3분기 실적(분기보고서) 공시 예정 — 인도·영국향 계약의 매출 인식이 실제로 재개되는지, 2분기의 영업손익·순손익 괴리 원인이 해소되는지 확인 필요.",
-    "en": "The Q3 2026 quarterly report is due for disclosure — worth checking whether revenue recognition from the India and UK contracts actually resumes and whether the Q2 gap between operating and net results is clarified."
+    "ko": "영국 턴키 계약의 금액·기간 변경 공시 여부를 확인한다. 변경이 없다면 계약이 분기 매출로 어떤 속도로 잡히는지가 다음 확인 지점이다.",
+    "en": "Check whether the UK turnkey contract's amount or period is amended. If it is not, the pace at which the contract shows up in quarterly revenue is the next point to watch."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 중",
-    "en": "During H2 2026"
+    "ko": "2027년 3월 31일 전후",
+    "en": "Around March 31, 2027"
    },
    "what": {
-    "ko": "인도 고객사향 조립장비 발주 및 공급이 실제로 본격화되는지 여부 — 2026년 4월부터 순차 발주가 예정됐던 만큼 진행 상황을 DART 공시로 추적할 필요.",
-    "en": "Whether orders and supply for the Indian customer's assembly equipment actually ramp up as planned — since sequential ordering was expected from April 2026, progress should be tracked through DART disclosures."
+    "ko": "2026년 사업보고서에서 연간 매출·영업손익과 영업외손익 구성, 지역별 매출 비중을 확인한다. 3분기 지배주주 순손실이 영업손실보다 크게 나온 원인이 여기서 드러난다.",
+    "en": "The 2026 annual report should show full-year revenue and operating results, the breakdown of non-operating items and regional sales mix. It should also explain why the third-quarter net loss attributable to controlling shareholders was much larger than the operating loss."
    }
   },
   {
    "when": {
-    "ko": "2026년 9월 이후 수시",
-    "en": "Ongoing from September 2026"
+    "ko": "2027년 5월 15일 전후",
+    "en": "Around May 15, 2027"
    },
    "what": {
-    "ko": "추가 해외 대형 계약 공시 여부와, 기존 계약(영국·인도·프랑스·스웨덴 등)의 정정·해지 공시 재발 여부를 지속적으로 모니터링할 필요.",
-    "en": "Continuous monitoring is needed for any new large overseas contract disclosures as well as for whether revisions or terminations of existing contracts (UK, India, France, Sweden, etc.) recur."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 9월 이후 수시",
-    "en": "Ongoing from September 2026"
-   },
-   "what": {
-    "ko": "전고체 배터리용 WIP·Z-스태킹 장비의 신규 수주 소식 및 관련 고객사 확대 여부 — 차세대 배터리 장비 시장 포지션 강화 여부를 가늠할 지표.",
-    "en": "News of new orders for solid-state battery WIP and Z-stacking equipment and any expansion of related customers — a gauge of whether the company is strengthening its position in the next-generation battery equipment market."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 9월 이후 수시",
-    "en": "Ongoing from September 2026"
-   },
-   "what": {
-    "ko": "대주주 지분 관련 주식담보대출 계약 변경 공시 및 전환사채 등 추가 자금조달 이슈 발생 여부 확인.",
-    "en": "Checking for disclosures on changes to major shareholders' stock-backed loan arrangements and for any additional financing events such as convertible bond issuance."
+    "ko": "2027년 1분기 분기보고서에서 영업손실이 4개 분기 연속으로 이어지는지 확인한다. 영국 계약의 매출 인식 규모가 분기 실적에 반영되는지도 함께 본다.",
+    "en": "The first-quarter 2027 report will show whether operating losses extend to a fourth consecutive quarter and whether revenue from the UK contract appears in quarterly results."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "하나기술은 2026년 6월 영국 고객사와의 대형 턴키 계약을 계기로 수주잔액이 연매출의 5배를 넘어서며 외형상 성장 스토리를 강화했다. 2025년에는 영업손실이 손익분기 수준까지 축소되고 3분기에는 큰 폭의 단일 분기 흑자를 기록하며 이익 회복의 가능성을 보여주기도 했다. 그러나 2025년 4분기 이후 매출이 연속으로 급감하고 2026년 2분기에는 영업손실이 다시 확대되는 등, 대형 수주가 안정적인 매출·이익 흐름으로 곧바로 연결되지는 않고 있다. 브리티시볼트·수저우 신파워 등 과거 대형 계약 무산 전례와 2026년에도 이어진 계약 정정·해지 패턴은 신규 수주의 실제 이행 가능성에 대한 검증을 요구한다. 국내 유일의 전 공정 턴키 역량과 전고체 배터리 장비 개발 이력은 구조적 성장 잠재력을 뒷받침하는 요소이지만, 계약 상대방 비공개·현금흐름 부담 등 확인이 필요한 변수도 함께 존재한다. 결국 향후 실적의 방향은 인도·영국 등 대형 계약의 실제 매출 인식 속도와, 반복돼온 계약 변수의 재발 여부에 달려 있는 것으로 보인다.",
-   "en": "Hana Technology has reinforced its growth narrative on paper after a large turnkey contract with a UK customer in June 2026 pushed its order backlog above five times annual revenue. In 2025, the operating loss narrowed to near breakeven and the company posted a large single-quarter profit in Q3, signaling potential earnings recovery. However, revenue fell sharply in consecutive quarters from Q4 2025 onward, and the operating loss widened again in Q2 2026, showing that large orders have not directly translated into a stable revenue and profit trajectory. The past collapse of large contracts with Britishvolt and Suzhou Xin-Power, together with a pattern of contract revisions and terminations that continued into 2026, calls for scrutiny of whether new orders will actually be executed. The company's reportedly unique domestic full-process turnkey capability and its track record in solid-state battery equipment development support structural growth potential, but variables requiring further confirmation—such as undisclosed contract counterparties and cash flow pressure—also remain. Ultimately, the direction of future results appears to hinge on the actual pace of revenue recognition from large contracts in India and the UK, and on whether the recurring pattern of contract issues resurfaces."
+   "ko": "하나기술은 2차전지 조립·활성화·팩 공정 장비를 턴키로 공급하는 업체로, 2025년 영업손실이 3,981만원으로 줄며 적자 폭이 크게 좁혀졌다. 2026년 6월 공시된 영국 턴키 계약은 약 1,615억원 규모로 2025년 매출의 172.09%에 해당하고 2030년 12월 28일까지 이어진다. 반면 2026년 1분기부터 3분기까지 3개 분기 연속 영업손실이 이어졌고, 2026년 3분기 매출은 전년 동기 대비 65.5% 감소했다. 지배주주 순손실 합계는 최근 네 개 분기 249억원이며 부채비율은 2025년 말 161.7%다. 강세 요인은 대형 턴키 수주와 비용 효율화, 해외 수출 실적이고 약세 요인은 분기 적자 지속, 매출 변동성, 재무 부담이다. 다음 정기보고서인 2026년 사업보고서에서 영업외손익 구성과 연간 매출 구성이 확인되고, 이후 2027년 1분기 분기보고서에서 적자 흐름이 이어지는지가 확인 지점이다. 이 글은 정보 제공을 목적으로 하며 투자의견이나 목표주가를 제시하지 않는다.",
+   "en": "Hana Technology supplies turnkey secondary battery equipment for assembly, formation and pack processes, and its 2025 operating loss narrowed to KRW 39.81 million. The UK turnkey contract disclosed in June 2026, worth about KRW 161.5 billion, equals 172.09% of 2025 revenue and runs until December 28, 2030. On the other side, operating losses have continued through three consecutive quarters from the first quarter to the third quarter of 2026, and third-quarter 2026 revenue fell 65.5% year on year. Net losses attributable to controlling shareholders total KRW 24.9 billion over the last four quarters, and the debt ratio stood at 161.7% at the end of 2025. Strengths include large turnkey orders, cost efficiency gains and export results, while weaknesses include continuing quarterly losses, volatile sales and financial burden. The next checkpoints are the non-operating items and annual revenue mix in the 2026 annual report, and whether losses continue in the first-quarter 2027 report. This report is for information only and does not present an investment opinion or target price."
   }
  },
  "sources": [
-  "https://www.newspim.com/news/view/20260610001210",
-  "https://www.kimm.re.kr/pr_policy/file_down/id/51902",
-  "https://onedaytrading.net/stocks/%ED%95%98%EB%82%98%EA%B8%B0%EC%88%A0",
-  "http://www.dailyinvest.kr/news/articleView.html?idxno=43628",
-  "https://www.eugenefn.com/common/files/amail//20251124_B20_bhh1026_1263.pdf",
-  "https://kr.investing.com/news/stock-market-news/article-1779157",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=KMqKLFLBuDQ4p5Mv",
-  "https://www.asiae.co.kr/article/2020122211230544622",
-  "https://file.alphasquare.co.kr/media/pdfs/market-report/%EA%B8%B0%ED%83%802%EC%B0%A8%EC%A0%84%EC%A7%80,20260514%EB%8C%80%EC%8B%A0%EC%A6%9D%EA%B6%8C.",
-  "https://www.komachine.com/ko/companies/hana-technology",
-  "https://www.butler.works/ko/companies/00601191",
-  "http://file.myasset.com/sitemanager/upload/2026/0109/053450/20260109053450260_0_ko.pdf",
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=299030",
-  "https://m.irgo.co.kr/IR-COMP/299030",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Finance.asp?pGB=1&gicode=A299030&cID=&MenuYn=Y&ReportGB=&NewMenuID=103&stkGb=701",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A299030",
-  "https://www.k5.co.kr/stock/299030",
-  "https://www.iprovest.com/weblogic/RSDownloadServlet?filePath=%2Fresearch%2Freport%2Fcominf%2F20210303%2F2046634%2F%EF%BF%BD%CF%B3%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD.pdf"
+  "https://www.topstarnews.net/news/articleView.html?idxno=16084964",
+  "https://ssl.pstatic.net/imgstock/upload/research/company/1709507639094.pdf",
+  "https://www.sentv.co.kr/article/view/sentv202204060011",
+  "https://m.edaily.co.kr/news/read?newsId=01915526635743728&mediaCodeNo=257",
+  "https://www.newspim.com/news/view/20260610000265",
+  "https://investing-for-everyone.com/wiki/%ED%95%98%EB%82%98%EA%B8%B0%EC%88%A0",
+  "http://www.dailyinvest.kr/news/articleView.html?idxno=62803",
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03017606635609576",
+  "http://www.dailyinvest.kr/news/articleView.html?idxno=57434",
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=04683846645480080",
+  "https://m.ddaily.co.kr/page/view/2025111309540548760",
+  "https://m.news.nate.com/view/20260302n17851",
+  "https://www.newsis.com/view/NISX20251113_0003401509",
+  "https://news.nate.com/view/20251113n19203",
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03526006632525720",
+  "https://www.mt.co.kr/stock/2026/10/23/2026102315252089634",
+  "https://supple.kr/news/cmvkm5jnd0032n9y1x4c75xum",
+  "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=713957"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "299030",
  "name": "하나기술",
  "name_en": "HANA TECHNOLOGY CO.,LTD.",
@@ -233,11 +213,11 @@
   "2차전지"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 07:33",
- "dataDate": "20260904",
+ "reportDate": "2026-11-14",
+ "reportTs": "2026-11-14 09:25",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-11-13",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -307,12 +287,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 17236371030,
-    "op": -3052609027,
-    "np_owner": -8485787549
-   },
-   {
     "q": "2025Q3",
     "rev": 52459237910,
     "op": 4271448736,
@@ -335,28 +309,39 @@
     "rev": 5292954429,
     "op": -6370321627,
     "np_owner": 1332798937
+   },
+   {
+    "q": "2026Q3",
+    "rev": 18116595533,
+    "op": -6166426365,
+    "np_owner": -22834618258
    }
   ],
   "valuation": {
-   "price": 14120,
-   "mcap": 0.1129,
+   "price": 10740,
+   "mcap": 0.0859,
    "shares": 7994910,
    "total_shares": 7994910,
-   "wavg_shares": 7992280,
-   "per": 50.975,
-   "eps": 277,
-   "pbr": 1.1475,
-   "bps": 12305,
-   "roe_ttm": 2.4,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": 2211603511,
+   "wavg_shares": 7995028,
+   "per": null,
+   "eps": -3114,
+   "pbr": 1.1396,
+   "bps": 9424,
+   "roe_ttm": -29.8,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": -24900460480,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 1.04,
+   "eps_src": "공시",
+   "pbr_krx": 0.85,
    "bps_krx": 12570.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
-   "div": 0.0
+   "div": 0.0,
+   "hidden": {
+    "per": "loss"
+   }
   }
- }
+ },
+ "textRules": 2
 }

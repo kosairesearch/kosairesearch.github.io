@@ -1,230 +1,218 @@
 {
  "title": {
-  "ko": "적자 감내하며 로봇 양산라인 짓는 구간",
-  "en": "Building Robot Capacity While Absorbing Losses"
+  "ko": "적자 속 로봇·방산 확장, 실적 전환이 관건",
+  "en": "Robotics and Defense Push Meets Five Straight Loss Quarters"
  },
  "lead": {
-  "ko": "자동차 전장부품에서 벌어온 이익을 로봇·방산 연구개발과 설비에 쏟아붓는 전환 구간으로, 네 개 분기 연속 영업손실과 휴머노이드 액추에이터 수주 파이프라인이 동시에 진행되고 있다.",
-  "en": "Samhyun is in a transition phase, pouring profits earned from automotive electronic components into robotics and defense R&D and capacity, with four consecutive quarters of operating losses running alongside a build-up of humanoid actuator order pipelines."
+  "ko": "삼현은 자동차 부품 매출을 기반으로 로봇·방산 사업을 키우는 중이지만, 2025년 3분기부터 2026년 3분기까지 5개 분기 연속 영업손실을 기록해 사업 확장이 실적으로 이어지는지가 핵심 쟁점이다.",
+  "en": "Samhyun is building robotics and defense businesses on an auto-parts base, but operating losses across five straight quarters from Q3 2025 to Q3 2026 make it a key question whether that expansion will show up in earnings."
  },
  "keypoints": [
   {
-   "ko": "모터·제어기·감속기를 하나로 묶은 '3-in-1' 통합 액추에이터가 핵심 기술이며, 삼성증권은 2025년 11월 리포트에서 매출의 약 85%가 자동차 부품이고 주로 현대트랜시스를 통해 현대차·기아에 납품된다고 정리했다.",
-   "en": "Its core technology is a 3-in-1 integrated actuator combining motor, controller and reducer; Samsung Securities noted in a November 2025 report that roughly 85% of revenue comes from auto parts, mainly supplied to Hyundai Motor and Kia via Hyundai Transys."
+   "ko": "공시 실적 기준 2025년 매출은 950억원으로 전년 대비 5.4% 감소했고, 영업이익은 8.1억원으로 85.4% 줄었다. 영업이익률은 0.8%다.",
+   "en": "On a DART-filed basis, 2025 revenue was KRW 95 billion, down 5.4% year on year, and operating profit was KRW 805 million, down 85.4%, for a 0.8% operating margin."
   },
   {
-   "ko": "2025년 연간 매출 950억원에 영업이익 8억원(영업이익률 0.8%)으로 마진이 급격히 얇아졌고, 회사는 경상연구개발비와 신규 채용 인건비 증가를 원인으로 공시했다.",
-   "en": "2025 revenue was KRW 95.0bn with operating profit of just KRW 0.8bn (0.8% margin); the company disclosed higher recurring R&D expenses and payroll from new hiring as the causes."
+   "ko": "2025년 3분기부터 2026년 3분기까지 5개 분기 연속 영업손실이 이어졌고, 최근 4개 분기 지배주주 순손실 합계는 127억원이다.",
+   "en": "Operating losses have run for five consecutive quarters from Q3 2025 through Q3 2026, and the attributable net loss over the last four quarters totals KRW 12.7 billion."
   },
   {
-   "ko": "2025년 3분기부터 2026년 2분기까지 네 개 분기 연속 영업손실이 이어졌고, 2026년 2분기 영업손실 54억원은 이 구간 중 가장 컸다.",
-   "en": "Operating losses ran for four straight quarters from 3Q25 through 2Q26, with the 2Q26 operating loss of KRW 5.4bn the largest of that stretch."
+   "ko": "2026년 3분기 매출은 234억원으로 전 분기 대비 11.3% 늘었지만, 영업손실은 60.8억원으로 적자 폭이 커졌다.",
+   "en": "Q3 2026 revenue rose 11.3% from the prior quarter to KRW 23.4 billion, yet the operating loss widened to KRW 6.08 billion."
   },
   {
-   "ko": "2026년 7월 휴머노이드 관절 액추에이터 브랜드 '액슬론(AXLON)' 12종을 공개하고, 창원 2공장 부지에 400억원을 투입해 연산 액추에이터 50만개 규모 자동화 라인을 2027년 4월 완공 목표로 건설 중이다.",
-   "en": "In July 2026 the company unveiled AXLON, a 12-model humanoid joint actuator line-up, and is building an automated line for 500,000 actuators a year at its Changwon plant 2 site with KRW 40bn of investment, targeting completion in April 2027."
+   "ko": "사업 구조는 여전히 모빌리티 부품 중심이며, 방산과 로봇 관절·물류 자동화는 회사가 제시한 중장기 성장 축이다.",
+   "en": "The business remains anchored in mobility parts, with defense, robot joint modules and logistics automation presented as the medium-term growth pillars."
   },
   {
-   "ko": "방산에서는 2026년 3월 이라크 수출용 천궁-Ⅱ 다기능레이더 구동유니트 약 71억원을 수주했다고 밝혔고, 수출 물량 대응을 위해 3공장 인수를 완료했다고 설명했다.",
-   "en": "In defense, the company said in March 2026 it won an order worth about KRW 7.1bn for multi-function radar drive units for Iraq-bound Cheongung-II (M-SAM) systems, and that it completed the acquisition of a third plant to handle export volumes."
+   "ko": "최근 4개 분기 순손실로 PER은 산출되지 않으며, PBR은 순자산 대비 높은 프리미엄 구간에 있다.",
+   "en": "PER cannot be calculated because of net losses over the last four quarters, and PBR sits in a high premium range relative to book value."
   }
  ],
  "business": {
-  "ko": "삼현은 1988년 설립된 모션 컨트롤 부품 업체로, 모터·제어기·감속기를 설계 단계부터 하나로 통합한 '3-in-1' 스마트 액추에이터와 스마트 파워유닛을 만든다. 회사 소개 자료에 따르면 국내 최초 DCT 모터와 세계 최초 CVVD 액추에이터를 비롯해 SBW, 디스커넥트 모터, MR 댐퍼 등을 개발해 현대자동차·기아, 한화그룹 등을 고객으로 확보했다. 매출 구성은 여전히 자동차 전장부품에 크게 기울어 있으며, 삼성증권은 2025년 11월 리포트에서 매출의 약 85%가 자동차 부품이고 내연기관 엔진·감속기용 모터와 밸브류가 현대트랜시스를 통해 현대차·기아로 납품된다고 설명했다. 같은 리포트는 방산 매출 비중이 2024년 11%에서 2025년 3분기 누적 13%로 올라왔다고 정리했다. 방산 쪽에서는 전기식 수평안정화 장치, 전기식 파워트레인, 레이더 구동유니트 등 유압에서 전기식으로 넘어가는 구동 모듈을 공급한다. 세 번째 축인 로봇은 2026년 7월 공개한 휴머노이드 관절 액추에이터 브랜드 '액슬론(AXLON)'이 중심으로, 회전 관절용 I 시리즈 10종과 QDD 방식 O 시리즈, 직선형 L 시리즈를 합쳐 12종 라인업을 구성했다. 생산 기반은 창원의 스마트팩토리 체계로, 회사는 자동차 부품 라인 자동화율이 90% 이상이고 액추에이터 공정은 최대 95% 수준이라고 전자신문에 밝혔다(2026년 7월). 경쟁 구도를 보면 로봇용 액추에이터에서는 로보티즈가 선도 업체로 거론되고 에스피지도 2026년 9월경 양산 진입을 준비하는 것으로 보도됐으며, 중국 업체들의 저가 공세도 변수다. 즉 자동차에서 벌어 방산·로봇으로 무게중심을 옮기는 과정에 있고, 그 전환 비용이 지금 손익계산서에 그대로 찍히는 구조다.",
-  "en": "Founded in 1988, Samhyun makes motion control components, specifically 3-in-1 smart actuators and smart power units that integrate motor, controller and reducer from the design stage. According to company materials, it developed Korea's first DCT motor and the world's first CVVD actuator, plus SBW, disconnect motors and MR dampers, winning Hyundai Motor, Kia and Hanwha Group as customers. The revenue mix is still heavily tilted toward automotive electronic components; Samsung Securities said in a November 2025 report that about 85% of sales are auto parts, with motors and valves for internal-combustion engines and transmissions supplied to Hyundai Motor and Kia through Hyundai Transys. The same report noted defense had risen to 13% of sales on a nine-month 2025 basis from 11% in 2024. In defense, the company supplies drive modules shifting from hydraulic to electric, including electric stabilizers, electric powertrains and radar drive units. The third pillar is robotics, centered on AXLON, the humanoid joint actuator brand unveiled in July 2026, comprising 12 models: ten I-series rotary joint units, one QDD-type O-series and one linear L-series. Production sits on smart-factory lines in Changwon, and the company told Electronic Times in July 2026 that automation exceeds 90% on auto part lines and reaches up to 95% in actuator processes. On competition, Robotis is cited as the leader in robot actuators while SPG was reported to be preparing mass production around September 2026, and low-cost Chinese suppliers are another variable. In short, the company is shifting its center of gravity from autos toward defense and robotics, and the cost of that shift is showing up directly in the income statement."
+  "ko": "삼현은 모터·제어기·감속기를 하나로 묶은 3-in-1 통합 기술로 액추에이터와 스마트 파워유닛을 만드는 모션 컨트롤 전문 기업이다. 자동차 변속기용 모터·감속기 부품사에서 출발해 2014년 국내 최초 DCT 모터 개발을 거쳐 방산, 로봇, 도심항공 쪽으로 응용처를 넓혀 왔다. 매출의 대부분은 모빌리티 부문에서 나오며, 증권사 자료는 2025년 기준 모빌리티 비중을 약 83%로 제시했다. 다른 집계는 2026년 2분기 매출 기준 모빌리티 비중을 약 98%로 보는 등 집계 기준에 따라 수치가 엇갈린다. 모빌리티 제품은 엔진과 감속기에 쓰이는 모터·밸브류 등 내연기관 관련 부품이 중심이며, 현대차·기아의 1차 벤더사를 거쳐 납품된다는 것이 2025년 11월 삼성증권 분석이다. 방산 매출 비중은 2025년 3분기 누적 기준 13%로 2024년 11%보다 높아졌다. 로봇·항공 등 기타 부문은 2~3% 수준으로 보고돼 아직 매출 기여는 작다. 고하중 자율주행 로봇과 로봇 관절용 액추에이터는 고객사와 수주를 협의하는 단계로 알려졌다. 자동차 부품은 수주 후 실제 납품까지 3~4년이 걸리는 구조라는 점이 KB증권 리포트에서 언급됐다. 경쟁 구도는 자동차 부품 영역에서 HL만도, 대원강업 같은 기존 부품사와 비교되며, 로봇 영역에서는 모터·제어기·감속기를 자체 통합한 구동 모듈이 차별점으로 제시된다.",
+  "en": "Samhyun is a motion control specialist that builds actuators and smart power units by integrating motors, controllers and reducers into one 3-in-1 platform. It started as a supplier of motors and reducers for automatic transmissions and has since extended into defense, robotics and urban air mobility, after developing South Korea's first DCT motor in 2014. Most revenue still comes from mobility, with a Samsung Securities analysis from November 2025 putting the 2025 mobility share at about 83%, while another tally puts mobility at about 98% for Q2 2026, so the figures differ by basis. Mobility products centre on motors and valve-type parts tied to combustion engines and reducers, delivered to Hyundai Motor and Kia through their tier-one suppliers. Defense rose to 13% of revenue in the first nine months of 2025 from 11% in 2024. Robotics and other segments are reported at roughly 2 to 3% of sales, so their contribution is still small. High-load autonomous mobile robots and robot-joint actuators are reported to be in order talks with customers. A KB Securities report from September 2026 noted that auto parts typically take three to four years from order to delivery. Competition in auto parts is framed against established suppliers such as HL Mando and Daewonkangup, while in robotics the company's integrated drive modules are presented as its differentiator."
  },
  "earnings": {
-  "ko": "연간 흐름을 보면 2022년 매출 686억원·영업이익 28억원(영업이익률 4.0%)에서 2023년 매출 998억원·영업이익 98억원(9.8%)으로 크게 뛰었고, 2024년은 매출 1,004억원에 영업이익 55억원(5.5%)으로 마진이 절반 가까이 내려앉았다. 2025년은 매출 950억원(전년 대비 -5.4%)에 영업이익 8억원, 영업이익률 0.8%로 사실상 손익분기 수준까지 얇아졌고, 회사는 경상연구개발비 증가와 신규 채용에 따른 인건비 증가를 변동 원인으로 공시했다. 반대로 2025년 순이익은 97억원(지배주주 104억원)으로 전년 83억원보다 늘었는데, 영업이익이 8억원인 상황에서 순이익이 이보다 크게 나온 만큼 영업외 항목이 이익의 대부분을 만든 구조로 읽힌다. 영업활동현금흐름은 2023년 115억원, 2024년 69억원에서 2025년 1억원 미만(9,501만원)으로 사실상 말랐다는 점이 마진 하락보다 더 눈에 띄는 변화다. 재무구조도 바뀌었다. 부채총계가 2024년 251억원에서 2025년 704억원으로 늘며 부채비율이 21.7%에서 53.4%로 올랐고, 같은 기간 자본총계는 1,152억원에서 1,317억원으로 증가했다. 분기 궤적은 더 뚜렷하다. 2025년 2분기 매출 269억원·영업이익 15억원 이후 2025년 3분기 -13억원, 4분기 -13억원, 2026년 1분기 -25억원, 2026년 2분기 -54억원으로 네 개 분기 연속 영업손실이며 손실 폭이 확대됐다. 최근 네 개 분기(2025년 3분기~2026년 2분기)를 합치면 매출 836억원에 영업손실 105억원, 지배주주 순손실 47억원으로, 2026년 2분기에는 순손실(-68억원)이 영업손실보다 커 영업외 손실도 겹친 것으로 보인다. 2026년 1분기 매출 188억원이 저점이었고 2분기 210억원으로 소폭 회복했지만, 매출 회복 속도보다 비용 증가 속도가 빨랐다는 것이 지금까지의 확정치가 보여주는 사실이다.",
-  "en": "On an annual basis, revenue and operating profit jumped from KRW 68.6bn and KRW 2.8bn (4.0% margin) in 2022 to KRW 99.8bn and KRW 9.8bn (9.8%) in 2023, then margin nearly halved in 2024 at KRW 100.4bn of revenue and KRW 5.5bn of operating profit (5.5%). In 2025 revenue fell 5.4% to KRW 95.0bn and operating profit shrank to KRW 0.8bn, a 0.8% margin close to break-even, with the company disclosing higher recurring R&D expenses and payroll from new hiring as the drivers. Net profit, by contrast, rose to KRW 9.7bn (KRW 10.4bn attributable to owners) in 2025 from KRW 8.3bn a year earlier; with operating profit at only KRW 0.8bn, the bulk of that bottom line evidently came from non-operating items. More striking than the margin decline is cash: operating cash flow dried up to under KRW 0.1bn in 2025 (KRW 95m) from KRW 11.5bn in 2023 and KRW 6.9bn in 2024. The balance sheet also changed shape, with total liabilities rising from KRW 25.1bn in 2024 to KRW 70.4bn in 2025, lifting the debt-to-equity ratio from 21.7% to 53.4%, while total equity grew from KRW 115.2bn to KRW 131.7bn. The quarterly path is clearer still: after 2Q25 revenue of KRW 26.9bn and operating profit of KRW 1.5bn, operating results turned to losses of KRW 1.3bn in 3Q25, KRW 1.3bn in 4Q25, KRW 2.5bn in 1Q26 and KRW 5.4bn in 2Q26, four straight loss quarters with a widening deficit. Summing the last four quarters (3Q25 to 2Q26) gives KRW 83.6bn of revenue, an operating loss of KRW 10.5bn and a net loss attributable to owners of KRW 4.7bn; in 2Q26 the net loss of KRW 6.8bn exceeded the operating loss, suggesting non-operating losses as well. Revenue bottomed at KRW 18.8bn in 1Q26 and recovered modestly to KRW 21.0bn in 2Q26, but the confirmed figures show costs rising faster than the top line so far."
+  "ko": "연간 매출은 2022년 686억원에서 2023년 998억원(전년 대비 45.5% 증가), 2024년 1,004억원(전년 대비 0.6% 증가)으로 늘었고, 2025년에는 950억원(전년 대비 5.4% 감소)으로 줄었다. 2022~2025년 중 가장 큰 해는 2024년이다. 영업이익은 2022년 27.5억원에서 2023년 98억원(전년 대비 255.8% 증가)으로 정점을 찍은 뒤 2024년 55.2억원(전년 대비 43.7% 감소), 2025년 8.1억원(전년 대비 85.4% 감소)으로 2년 연속 줄었다. 영업이익률도 2023년 9.8%에서 2024년 5.5%, 2025년 0.8%로 낮아졌다. 2025년 회사 공시는 실적 변동 요인으로 경상연구개발비 증가와 신규 채용에 따른 인건비 증가를 들었다. 지배주주 순이익은 2022년 33.2억원, 2023년 94.5억원, 2024년 83.7억원(전년 대비 11.4% 감소), 2025년 104억원(전년 대비 24.3% 증가)으로 2025년이 기간 중 가장 큰 해다. 당기순이익(비지배지분 포함)은 2024년 83.1억원, 2025년 96.9억원으로 지배주주 순이익과 값이 달라 구분해서 봐야 한다. 부채비율은 2022년 102.9%, 2023년 95.3%에서 2024년 21.7%로 낮아졌다가 2025년 53.4%로 올랐고, 2025년 말 부채총계는 704억원이다. 분기로 보면 2025년 3분기 매출 225억원, 영업손실 13.2억원에서 4분기 매출 214억원(전 분기 대비 5.0% 감소), 영업손실 12.9억원으로 적자 폭이 소폭 줄었다. 4분기에는 지배주주 순이익 47.9억원으로 흑자 전환했지만 영업손실은 이어졌다. 2026년 1분기 매출은 188억원(전 분기 대비 12.2% 감소), 영업손실 24.9억원으로 적자가 확대됐다. 2분기 매출은 210억원(전 분기 대비 11.9% 증가)이었으나 영업손실은 53.9억원으로 더 커졌다. 3분기 매출은 234억원(전년 동기 대비 3.9% 증가)이나 영업손실은 60.8억원, 지배주주 순손실은 83.3억원으로 확대돼 매출 회복이 이익 회복으로 이어지지 않았다. 2분기 매출 감소는 고객사 재고 증가에 따른 물량 감소가 원인으로 지목됐고, 고정비와 인력 채용 부담이 적자 확대 요인으로 제시됐다.",
+  "en": "Annual revenue rose from KRW 68.6 billion in 2022 to KRW 99.8 billion in 2023, up 45.5% year on year, and to KRW 100.4 billion in 2024, up 0.6%, before falling to KRW 95 billion in 2025, down 5.4%. Of the 2022 to 2025 span, 2024 was the largest year for revenue. Operating profit peaked in 2023 at KRW 9.8 billion, up 255.8%, then fell 43.7% to KRW 5.52 billion in 2024 and 85.4% to KRW 805 million in 2025, a two-year decline after the peak. The operating margin followed the same path, from 9.8% in 2023 to 5.5% in 2024 and 0.8% in 2025. The company's disclosure attributed the 2025 change mainly to higher ordinary R&D spending and personnel costs from new hiring. Attributable net profit was KRW 3.32 billion in 2022, KRW 9.45 billion in 2023, KRW 8.37 billion in 2024, down 11.4%, and KRW 10.4 billion in 2025, up 24.3%, making 2025 the largest year in the period. Net profit including non-controlling interests, at KRW 8.31 billion in 2024 and KRW 9.69 billion in 2025, is a different figure and should be read separately. The debt ratio went from 102.9% in 2022 and 95.3% in 2023 to 21.7% in 2024 and then 53.4% in 2025, when total liabilities stood at KRW 70.4 billion. Quarterly, Q3 2025 revenue was KRW 22.5 billion with an operating loss of KRW 1.32 billion. Q4 2025 revenue was KRW 21.4 billion, down 5.0% from the prior quarter, with an operating loss narrowed to KRW 1.29 billion, and attributable net profit turned to KRW 4.79 billion even as operating losses continued. Q1 2026 revenue fell 12.2% to KRW 18.8 billion, and the operating loss widened to KRW 2.49 billion. Q2 2026 revenue recovered 11.9% to KRW 21 billion, but the operating loss grew to KRW 5.39 billion. Q3 2026 revenue reached KRW 23.4 billion, up 3.9% year on year, yet the operating loss widened to KRW 6.08 billion and the attributable net loss to KRW 8.33 billion, so the revenue recovery did not carry through to profit. The Q2 2026 revenue drop was attributed to lower volumes from customers building up inventory, while fixed costs and hiring were cited as drivers of the wider loss."
  },
  "industry": {
-  "ko": "전방시장은 세 갈래로 갈린다. 첫째 자동차 전장부품은 삼성증권이 2025년 11월 리포트에서 지적했듯 현대차·기아의 전기차 생산 확대가 내연기관차 생산 감소로 이어져 DCT 모터·CVVD 같은 기존 주력 제품 수요에 구조적 압박을 주는 국면이다. 둘째 방산은 무기체계의 무인화·전동화 흐름과 중동 지역 천궁-Ⅱ 수출 확대가 겹치며 유압식에서 전기식으로 넘어가는 구동 모듈 수요가 늘어나는 방향이다. 셋째 로봇, 특히 휴머노이드용 액추에이터 시장은 아직 개화 초기로 대량 샘플·프로토 공급 단계에 머물러 있다. 박기원 대표는 2026년 7월 간담회에서 내년부터 완성품 업체들이 본격 진입하고 2028년부터 규모의 경제가 시작될 것으로 전망한다고 밝혔다. 경쟁 구도는 이미 형성되는 중이며, 지디넷코리아는 2026년 7월 28일 보도에서 선도 업체 로보티즈에 삼현과 에스피지가 도전하는 3파전 구도를 전했고 에스피지는 9월경 양산 진입을 준비한다고 언급했다. 가격 측면에서 전자신문은 2026년 7월 보도에서 비중국산 고사양 휴머노이드 액추에이터 가격이 개당 100만~180만원 수준으로 추정된다고 전했고, 휴머노이드 1대에 30개 안팎이 들어가는 것으로 알려져 있다. 삼현의 차별화 주장은 기술 자체보다 양산 능력에 걸려 있는데, 회사는 수작업 비중이 높은 경쟁 방식과 달리 자동화율 90% 이상 라인을 통해 수율과 원가를 잡겠다고 설명한다. 다만 자동차 부문의 매출 감소가 진행되는 동안 방산·로봇이 그 공백을 메우는 시점이 언제인지가 산업 포지션의 핵심 질문으로 남아 있다.",
-  "en": "The end markets split three ways. First, in automotive electronics, Samsung Securities noted in its November 2025 report that expanding EV output at Hyundai Motor and Kia is reducing internal-combustion vehicle production, putting structural pressure on demand for legacy products such as DCT motors and CVVD actuators. Second, in defense, the shift toward unmanned and electrified weapons systems plus expanding Cheongung-II exports to the Middle East are lifting demand for drive modules moving from hydraulic to electric. Third, the robot market, especially humanoid actuators, is still at an early stage limited to bulk samples and pre-production prototypes. CEO Park Ki-won said at a July 2026 briefing that finished-robot makers would enter in earnest from next year and that economies of scale would begin from 2028. Competition is already forming: ZDNet Korea reported on July 28, 2026 that Samhyun and SPG are challenging market leader Robotis in a three-way race, with SPG preparing to start mass production around September. On pricing, Electronic Times reported in July 2026 that brokerages estimate non-Chinese high-spec humanoid actuators at roughly KRW 1.0m to 1.8m per unit, with around 30 units typically used per humanoid. Samhyun's differentiation claim rests less on the technology itself than on manufacturing scale, with the company arguing that lines automated above 90% will secure yield and cost against rivals relying more on manual assembly. The key positioning question remains when defense and robotics will fill the gap being left by declining automotive volumes."
+  "ko": "자동차 부품 업황은 완성차의 전동화 전환에 따라 내연기관 관련 부품 수요가 줄어드는 구도다. 2025년 11월 삼성증권 분석은 현대차·기아의 전기차 생산이 늘면서 내연기관차 생산이 줄어 매출 둔화로 이어졌다고 설명했다. 2026년 2분기 매출 감소는 고객사의 재고 증가에 따른 물량 감소가 반영된 결과라는 것이 KB증권 리포트의 분석이다. 자동차 부품은 수주 후 양산까지 긴 리드타임이 있어 수주 증가 효과가 매출에 늦게 반영되며, 같은 리포트는 2027년부터 수주 증가분이 반영돼 반등이 예상된다고 봤다. 로봇 쪽에서는 휴머노이드와 물류 자동화 수요가 커지면서 액추에이터가 새 성장 축으로 주목받는 흐름이다. 2025년 기준 삼성증권은 방산 매출이 3분기 누적 95억원으로 15.9% 늘었다고 집계해, 자동차 외 수요 확장 흐름이 숫자로도 나타난다. 다만 로봇 액추에이터는 양산 검증과 고객 인증에 시간이 걸리는 사업이어서 매출 기여 시점은 불확실하다. 자동차 부품 상장사들은 전동화 대응 투자를 함께 진행하고 있으며, HL만도와 대원강업 등은 업종 비교 대상으로 자주 거론된다. 업계 사이클의 위치는 전동화 전환 과도기로, 내연기관 물량 감소와 신사업 투자가 동시에 진행되는 구간이다.",
+  "en": "The auto parts cycle is shaped by the shift to electrified vehicles, which reduces demand for combustion-related components. A Samsung Securities analysis from November 2025 said rising electric vehicle output at Hyundai Motor and Kia lowered combustion vehicle output and slowed the company's sales. A KB Securities report from September 2026 attributed the Q2 2026 sales decline to lower volumes as customers worked through inventory. Auto parts carry long lead times from order to mass production, so order gains reach revenue with a delay, and that report expected a rebound from 2027 as order increases are recognized. On the robotics side, rising demand for humanoid robots and logistics automation has drawn attention to actuators as a new growth pillar. Samsung Securities also reported that defense sales rose 15.9% to KRW 9.5 billion in the first nine months of 2025, showing expansion beyond automotive in the numbers. Robot actuators, however, require long validation and customer qualification, so the timing of their revenue contribution is uncertain. Other listed auto parts makers are investing in electrification, and HL Mando and Daewonkangup are frequently cited as sector comparisons. The industry is in a transition period in which combustion volume declines and new-business investment proceed at the same time."
  },
  "outlook": {
-  "ko": "회사가 공개한 계획은 규모가 분명하다. 2026년 7월 8일 '마케팅 커뮤니케이션 데이'에서 박기원 대표는 2025년부터 2029년까지 약 1,000억원을 투자하고 이 가운데 400억원을 휴머노이드 액추에이터 생산설비에 배정한다고 밝혔다. 지디넷코리아 보도에 따르면 창원 2공장 부지에 2026년 7월 착공해 2027년 4월 완공을 목표로, 연간 액추에이터 50만개·모터 150만개·제어기 100만개·감속기 50만개 규모 라인을 짓는다. 수주 파이프라인은 2026년 7월 초 21개사에서 같은 달 21일 약 23개사로 늘었다고 회사가 전자신문에 밝혔으며, 일부 고객사는 내부 기준으로 양산 수주 절차의 80~90%까지 진척됐고 가장 빠른 고객사는 2027년 1분기 양산을 계획한다고 설명했다. 같은 보도에서 회사는 이르면 2026년 4분기부터 양산 공급계약이 가시화될 것으로 기대한다고 밝혔는데, 이는 기대이지 확정된 계약이 아니다. 2026년 6월에는 글로벌 휴머노이드 기업으로부터 양산을 전제로 한 관절 액추에이터 프로토 수주와, 또 다른 글로벌 업체로부터 관절 코어 부품 프로토 수주를 연달아 받았다고 발표했다. 방산에서는 2026년 3월 이라크 수출용 천궁-Ⅱ 다기능레이더 구동유니트 약 71억원 수주를 밝히고, 앞서 UAE·사우디아라비아 약 200억원 물량에 이어 중동 수출국 전체에 구동 모듈을 공급하게 됐다고 설명했다. 비용 측면의 부담은 이어질 가능성이 높다. 이데일리 2026년 7월 8일 보도에서 회사는 2025년 매출 대비 20%를 넘긴 연구개발 투자 비중을 2026년에는 30% 수준까지 확대할 계획이라고 밝혔고, 로봇 핸즈는 2027년 6~7월 실물 공개, 2세대 액슬론은 토크밀도 100 돌파를 목표로 제시했다.",
-  "en": "The company's disclosed plans are specific in scale. At its Marketing Communication Day on July 8, 2026, CEO Park Ki-won said it would invest about KRW 100bn from 2025 through 2029, of which KRW 40bn is allocated to humanoid actuator production facilities. According to ZDNet Korea, construction began in July 2026 at the Changwon plant 2 site with an April 2027 completion target, for lines capable of 500,000 actuators, 1.5m motors, 1m controllers and 500,000 reducers a year. The order pipeline grew from 21 companies in early July 2026 to about 23 by July 21, the company told Electronic Times, adding that some customers had progressed 80-90% of the way through its internal mass-production award process and that the fastest customer plans to begin volume production in 1Q27. In the same report the company said it hoped mass-production supply contracts could materialize as early as 4Q26, which is an expectation rather than a signed contract. In June 2026 it announced back-to-back pre-production prototype orders: joint actuators from one global humanoid maker and core joint components from another. In defense, it disclosed in March 2026 an order worth about KRW 7.1bn for multi-function radar drive units on Iraq-bound Cheongung-II systems, saying that after roughly KRW 20bn of prior volumes for the UAE and Saudi Arabia it now supplies drive modules to all Middle East export customers of the system. Cost pressure looks likely to persist: in a July 8, 2026 Edaily report the company said it planned to raise R&D spending, already above 20% of revenue in 2025, to around 30% in 2026, and set targets of unveiling robot hands in June-July 2027 and breaking a torque density of 100 with second-generation AXLON."
+  "ko": "회사 측은 1조 5,000억원 이상의 수주잔고를 보유하고 있다고 밝혔고, 이 수주가 본격 매출로 반영되는 시점도 제시했다. 2026년 3분기 매출이 234억원 수준에 머문 만큼 수주잔고의 매출 전환 속도가 다음 확인 지점이다. 생산능력은 창원 2공장과 3공장 가동 계획이 보도됐고, 3공장은 빅테크향 휴머노이드 구동 모듈 양산 기지로 쓰일 계획이다. 가동 시점은 보도마다 차이가 있어 사업보고서의 설비 설명과 맞춰 볼 필요가 있다. 하이트진로 창원 부지를 223억원에 확보해 신사업용 생산 라인을 늘린다는 보도도 있다. 휴머노이드 관련해서는 대표가 대규모 프로젝트를 협의 중이며 빠르면 연말에 계약을 발표할 수 있다고 언급한 보도가 있다. 이 계약의 공시 여부는 2026년 4분기 흐름에서 수주가 실제 실적으로 이어지는지를 가르는 첫 확인 지점이다. 회사는 로봇 생산 비중을 중장기적으로 20%까지 끌어올리는 계획을 밝혔고, 업체당 1,000억원 규모의 물류 자동화 프로젝트가 가능하다고 설명했다. 2024년 인도 현지법인을 설립해 해외 시장 진출도 추진 중이다. 다음 정기보고서인 2026년 사업보고서에서 매출 구성과 수주잔고, 설비투자 집행 현황을 확인하는 것이 중요하다.",
+  "en": "The company has said its order backlog exceeds KRW 1.5 trillion and has pointed to when those orders would begin to show up in revenue. With Q3 2026 revenue at about KRW 23.4 billion, how quickly the backlog converts to sales is the next checkpoint. Reports describe plans for Changwon Plant 2 and Plant 3, with Plant 3 slated as a production base for drive modules for humanoid robots for big tech customers, though start-up timing differs across reports and should be checked against the annual report's capex disclosure. Reports also say the company secured a Changwon site from Hite Jinro for KRW 22.3 billion to expand new-business lines. On humanoids, the CEO has described large-scale project talks and said a contract announcement could come as early as year-end, so whether such a deal is disclosed is a key marker of order conversion. The company plans to raise robotics to about 20% of production over the medium term and has said each customer could support a logistics automation project worth about KRW 100 billion. A local subsidiary in India was established in 2024 as part of overseas expansion. The 2026 annual report will be the next filing to check the revenue mix, order backlog and capex execution."
  },
  "valuation_comment": {
-  "ko": "최근 네 개 분기 지배주주 순손익이 적자이므로 이익 기준 배수는 산출되지 않고, 화면 카드에서도 주가수익비율이 표시되지 않는다. 따라서 현재 시장 가격은 확정된 이익이 아니라 로봇·방산 전환의 실행 가능성을 반영하는 구간에 있고, 순자산 대비 프리미엄은 자동차 부품 업종에서 통상 관찰되는 수준을 크게 웃도는 위치에 있다. 배당은 실시되고 있으나 배당수익률은 코스닥 및 자동차부품 업종 평균을 크게 밑도는 수준으로, 현재 국면에서 주가를 지지하는 요소로 보기는 어렵다. 실적 방향으로만 보면 2023년 영업이익률 9.8%에서 2025년 0.8%로 내려온 뒤 최근 네 개 분기는 영업손실 구간이며, 이 손실이 연구개발과 신규 인력·설비 투자에 따른 것이라는 회사 설명이 맞는지는 양산 매출이 실제로 인식되는 시점에 검증될 사안이다. 참고 지표로는 2025년 부채비율이 21.7%에서 53.4%로 올라온 점, 영업활동현금흐름이 사실상 0에 가까워진 점, 그리고 2029년까지 약 1,000억원 규모로 예고된 투자 계획이 함께 놓여 있다. 결국 지금의 배수는 2027년 이후 양산 시나리오를 전제로 한 것이며, 그 전제가 확인되는 속도가 관건이라는 점만 사실로 남는다.",
-  "en": "Because the net result attributable to owners over the last four quarters is negative, earnings-based multiples cannot be computed and the price-earnings ratio is not displayed on the data card. The market price therefore reflects the perceived feasibility of the robotics and defense transition rather than confirmed profits, and the premium to net assets sits well above levels typically seen in the auto parts sector. A dividend is being paid, but the yield is far below KOSDAQ and auto parts sector averages, making it hard to view as a support factor in the current phase. On earnings direction alone, the operating margin fell from 9.8% in 2023 to 0.8% in 2025 and the last four quarters have been in operating loss; whether the company's explanation that this stems from R&D, new hiring and capacity spending holds up will be tested when mass-production revenue is actually recognized. Useful context includes the debt-to-equity ratio rising from 21.7% to 53.4% in 2025, operating cash flow falling to near zero, and the roughly KRW 100bn investment program flagged through 2029. What remains factual is that current multiples embed a post-2027 volume scenario, and the pace at which that premise is confirmed is the crux."
+  "ko": "최근 4개 분기 지배주주 순손실 합계가 127억원이라 PER은 산출되지 않는 상태다. PBR은 순자산 대비 높은 프리미엄 구간에 있으며, 자동차 부품 상장사 중 PBR이 1배를 밑도는 종목들과 비교하면 차이가 크다. 프리미엄의 근거는 로봇·방산 등 사업 확장에 대한 기대이며, 그 기대가 실적으로 확인되는 속도가 밸류에이션 해석의 핵심 변수다. 배당수익률은 시장 평균을 밑도는 수준이고, 2026년 2월 소액 배당을 결정했다. 과거 다년 흐름을 보면 적자 구간을 거쳤던 2022년 이후 2025년에는 지배주주 순이익이 104억원으로 확대돼 이익 회복의 방향이 나타났다. 그러나 2026년 들어 영업 단계는 적자가 이어지고 있어 이익 체력은 아직 회복 중이다. 결국 현재 수준은 이익 체력과 로봇 수주의 실현 속도라는 두 축으로 나눠 봐야 하는 구간이다.",
+  "en": "Because attributable net losses over the last four quarters total KRW 12.7 billion, PER cannot be calculated. PBR sits in a high premium range relative to book value, and the gap is wide against listed auto parts makers whose PBR is below 1x. The premium rests on expectations for robotics and defense expansion, and how quickly those expectations show up in earnings is the central variable for valuation. The dividend yield is below the market average, and the company decided on a small dividend in February 2026. Over several years, attributable net profit moved from losses in 2022 to KRW 10.4 billion in 2025, a direction of earnings recovery. However, operating losses have continued into 2026, so the earnings base is still recovering. The current level therefore has to be read on two axes: the earnings base and the speed at which robotics orders convert into revenue."
  },
  "bull": [
   {
    "title": {
-    "ko": "휴머노이드 액추에이터 파이프라인의 폭",
-    "en": "Breadth of the humanoid actuator pipeline"
+    "ko": "휴머노이드·로봇 액추에이터 확장",
+    "en": "Humanoid and robot actuator expansion"
    },
    "body": {
-    "ko": "회사는 2026년 7월 21일 전자신문에 국내외 약 23개 로봇 기업과 휴머노이드용 액추에이터 개발·공급을 협의 중이며 일부는 내부 기준 양산 수주 절차의 80~90%까지 진척됐다고 밝혔다. 2026년 6월에는 복수의 글로벌 휴머노이드 기업으로부터 양산을 전제로 한 관절 액추에이터와 관절 코어 부품 프로토 수주를 연달아 받았다고 발표했다. 단일 고객 의존이 아닌 복수 고객 구조라는 점은 특정 프로젝트가 지연될 때의 완충 역할을 할 수 있다. 다만 프로토 단계와 양산 계약은 별개이며, 현재까지 확정 공시된 대형 양산 계약은 확인되지 않는다.",
-    "en": "The company told Electronic Times on July 21, 2026 that it was in talks with about 23 domestic and overseas robot firms on humanoid actuator development and supply, with some having progressed 80-90% through its internal mass-production award process. In June 2026 it announced consecutive pre-production prototype orders from multiple global humanoid makers, covering joint actuators and core joint components. A multi-customer structure rather than single-customer dependence could cushion delays in any one project. That said, prototype stages and volume contracts are distinct, and no large mass-production contract has been confirmed via disclosure so far."
+    "ko": "3-in-1 통합 역량을 바탕으로 휴머노이드 고객사 다수와 수주를 논의 중이라는 것이 KB증권 리포트의 설명이다. 회사 측은 1조 5,000억원 이상의 수주잔고를 제시했고, 로봇 생산 비중을 중장기 20%까지 끌어올리는 계획을 밝혔다. 이 계획이 실현되면 매출 구성이 모빌리티 중심에서 다변화된다.",
+    "en": "A KB Securities report describes order talks with many humanoid customers, built on the company's integrated 3-in-1 capability. The company has cited an order backlog above KRW 1.5 trillion and a plan to lift robotics to about 20% of production over the medium term. If realized, the revenue mix would diversify away from mobility."
    }
   },
   {
    "title": {
-    "ko": "방산 전동화와 수출 물량",
-    "en": "Defense electrification and export volumes"
+    "ko": "방산 사업의 성장과 R&D 부담 완화 기대",
+    "en": "Defense growth and expected relief in R&D costs"
    },
    "body": {
-    "ko": "삼성증권은 2025년 11월 리포트에서 방산 매출 비중이 2024년 11%에서 2025년 3분기 누적 13%로 올랐다고 정리했다. 회사는 2026년 3월 이라크 수출용 천궁-Ⅱ 다기능레이더 구동유니트 약 71억원을 수주했다고 밝히고, 앞서 UAE·사우디아라비아 약 200억원 물량을 포함해 중동 수출국 전체에 구동 모듈을 공급하게 됐다고 설명했다. 수출 물량 대응을 위해 3공장 인수를 완료했다고도 밝혔다. 방산은 로봇과 달리 이미 양산 매출이 발생하는 부문이라는 점에서 전환기의 매출 공백을 일부 메울 수 있는 축이다.",
-    "en": "Samsung Securities noted in its November 2025 report that defense had risen to 13% of sales on a nine-month 2025 basis from 11% in 2024. In March 2026 the company said it won an order worth about KRW 7.1bn for multi-function radar drive units on Iraq-bound Cheongung-II systems, adding that including roughly KRW 20bn of earlier UAE and Saudi volumes it now supplies drive modules to all Middle East export customers of the system. It also said it had completed the acquisition of a third plant to handle export volumes. Unlike robotics, defense already generates volume revenue, making it a pillar that can partly fill the transition-period gap."
+    "ko": "방산 매출이 늘어난 것이 2025년 3분기 누적 기준 방산 매출 비중 상승의 배경이다. 같은 기간 방산 매출은 95억원으로 15.9% 늘었다. 삼성증권은 2026년에 방산과 로봇 제품이 양산화되면 R&D 부담이 줄 수 있다고 전망했다.",
+    "en": "The growth in defense sales underlies the higher defense share of revenue in the first nine months of 2025. Defense sales over the same period reached KRW 9.5 billion, up 15.9%. Samsung Securities expected that mass production of defense and robot products in 2026 could ease the R&D burden."
    }
   },
   {
    "title": {
-    "ko": "자동차에서 검증한 자동화 양산 기반",
-    "en": "Automation and volume manufacturing proven in autos"
+    "ko": "재무 여력과 이익 회복 흐름",
+    "en": "Financial capacity and earnings recovery"
    },
    "body": {
-    "ko": "회사는 2026년 7월 전자신문 보도에서 자동차 부품 생산라인 자동화율이 90% 이상이고 액추에이터 공정은 최대 95% 수준이라고 설명했다. 로봇 액추에이터는 권선·감속기 조립·제어기 결합 등 수작업 의존도가 높은 부품으로 꼽히는데, 회사는 이 공정을 자동화해 균일성과 원가를 잡겠다는 전략을 제시했다. 박기원 대표는 2026년 7월 간담회에서 16개 라인, 자동화율 92%를 근거로 중국 업체와의 경쟁에서 승산이 있다고 밝혔다. 이 전략의 성과는 신공장이 완공되고 실제 수율·원가가 확인된 뒤에야 판단 가능한 사안이다.",
-    "en": "In a July 2026 Electronic Times report, the company said automation exceeds 90% on its auto parts lines and reaches up to 95% in actuator processes. Robot actuators are considered manual-labor intensive, involving winding, reducer assembly and controller integration, and the company's stated strategy is to automate these steps to secure uniformity and cost. At a July 2026 briefing, CEO Park Ki-won cited 16 lines and 92% automation as grounds for competing with Chinese suppliers. The results of this strategy can only be judged once the new plant is complete and actual yields and costs are visible."
+    "ko": "2025년 말 자본총계는 1,317억원이며 지배주주 지분은 1,312억원이다. 2025년 지배주주 순이익은 104억원으로 전년 대비 24.3% 늘어 이익 회복의 방향을 보였다. 2025년 10월 전환사채 발행으로 485억원이 유입됐다는 점도 설비와 신사업 투자의 재원으로 거론된다.",
+    "en": "Year-end 2025 total equity was KRW 131.7 billion, with KRW 131.2 billion attributable to controlling shareholders. Attributable net profit rose 24.3% to KRW 10.4 billion in 2025, pointing to a direction of recovery. A convertible bond issued in October 2025 brought in KRW 48.5 billion, which is cited as funding for capacity and new-business investment."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "네 개 분기 연속 영업손실과 확대되는 손실 폭",
-    "en": "Four straight operating losses, widening"
+    "ko": "모빌리티 물량 의존과 전동화 압박",
+    "en": "Dependence on mobility volumes and electrification pressure"
    },
    "body": {
-    "ko": "2025년 3분기 영업손실 13억원 이후 4분기 -13억원, 2026년 1분기 -25억원, 2026년 2분기 -54억원으로 손실 규모가 커졌다. 매출은 2026년 1분기 188억원에서 2분기 210억원으로 소폭 늘었지만 손실이 함께 확대돼 비용 증가가 매출 회복을 앞질렀다. 최근 네 개 분기 합계로는 매출 836억원, 영업손실 105억원이다. 연구개발 투자 비중을 2026년 매출의 30% 수준까지 확대할 계획이라고 밝힌 만큼 비용 부담이 단기간에 줄어들 근거는 아직 제시되지 않았다.",
-    "en": "After a KRW 1.3bn operating loss in 3Q25, deficits widened to KRW 1.3bn in 4Q25, KRW 2.5bn in 1Q26 and KRW 5.4bn in 2Q26. Revenue edged up from KRW 18.8bn in 1Q26 to KRW 21.0bn in 2Q26, yet losses grew alongside it, meaning cost increases outpaced the top-line recovery. Over the last four quarters combined, revenue was KRW 83.6bn with an operating loss of KRW 10.5bn. With the company stating plans to lift R&D toward 30% of revenue in 2026, no basis has yet been presented for cost pressure easing in the near term."
+    "ko": "매출의 대부분이 모빌리티 부문에서 나오고, 주요 제품은 내연기관 관련 모터·밸브류다. 2026년 2분기에는 고객사 재고 증가로 물량이 줄어 매출이 210억원으로 감소했다. 완성차의 전기차 전환이 가속되면 이 부품 수요는 구조적으로 줄어들 수 있다.",
+    "en": "Most revenue comes from mobility, and the core products are motors and valve-type parts tied to combustion engines. In Q2 2026, lower volumes from customer inventory adjustments reduced revenue to KRW 21 billion. If the shift to electric vehicles accelerates, demand for these parts could shrink structurally."
    }
   },
   {
    "title": {
-    "ko": "자동차 부문 제품 믹스와 고객 집중",
-    "en": "Auto mix erosion and customer concentration"
+    "ko": "영업손실 지속과 비용 부담",
+    "en": "Persistent operating losses and cost burden"
    },
    "body": {
-    "ko": "삼성증권은 2025년 11월 리포트에서 현대차·기아의 전기차 생산 확대에 따른 내연기관차 생산 감소가 매출 둔화 요인이라고 지적했으며, 매출의 약 85%가 자동차 부품이고 현대트랜시스를 통한 납품 구조라고 설명했다. 2025년 매출이 전년 대비 5.4% 감소한 950억원에 머문 것도 이 흐름과 무관하지 않다. 기존 주력인 DCT 모터·CVVD가 내연기관·하이브리드 파워트레인에 연동된 제품이라는 점은 구조적 부담이다. 로봇·방산 매출이 이 감소분을 언제 상쇄할지는 아직 확정 실적으로 확인되지 않았다.",
-    "en": "Samsung Securities noted in November 2025 that falling internal-combustion vehicle output amid EV expansion at Hyundai Motor and Kia was slowing revenue, and that about 85% of sales are auto parts delivered largely through Hyundai Transys. The 5.4% decline in 2025 revenue to KRW 95.0bn is consistent with that trend. That legacy mainstays such as DCT motors and CVVD are tied to internal-combustion and hybrid powertrains is a structural burden. When robotics and defense revenue will offset that decline has not yet been confirmed in reported results."
+    "ko": "2025년 영업이익률은 0.8%로 낮아졌고, 2026년 1분기 24.9억원, 2분기 53.9억원, 3분기 60.8억원으로 영업손실이 커졌다. 2025년 3분기 기준 매출 대비 R&D 비중은 24.7%였다. 매출이 늘어도 고정비와 인건비가 함께 늘어 이익으로 이어지지 않는 구조다.",
+    "en": "The 2025 operating margin fell to 0.8%, and operating losses widened to KRW 2.49 billion in Q1 2026, KRW 5.39 billion in Q2 and KRW 6.08 billion in Q3. R&D equaled 24.7% of sales in Q3 2025 according to Samsung Securities. Fixed costs and personnel expenses have risen alongside sales, so higher revenue has not translated into profit."
    }
   },
   {
    "title": {
-    "ko": "순자산 대비 큰 프리미엄과 희석 요인",
-    "en": "Large premium to net assets and dilution factors"
+    "ko": "신사업 수익화 시점과 재무 부담",
+    "en": "Timing of new-business monetization and financial strain"
    },
    "body": {
-    "ko": "최근 네 개 분기 이익이 적자라 이익 기준 배수가 산출되지 않는 상태에서, 순자산 대비 프리미엄은 자동차 부품 업종에서 흔히 관찰되는 수준을 크게 웃도는 위치에 있다. 2025년 부채총계가 251억원에서 704억원으로 늘고 부채비율이 21.7%에서 53.4%로 올라간 배경에는 전환사채 발행이 자리하는데, 전환 시 주식 수 증가 요인이 된다. 삼성증권은 2025년 11월 자료에서 최근 6개월간 삼현 관련 주식연계채권 발행에 참여한 사실을 명시했다. 이익 회복이 지연되는 동안 이런 재무 요인이 함께 작동하는 구간이라는 점은 그대로 남는다.",
-    "en": "With no earnings-based multiple computable given losses over the last four quarters, the premium to net assets sits well above levels commonly seen in the auto parts sector. Behind the rise in total liabilities from KRW 25.1bn to KRW 70.4bn in 2025 and the debt-to-equity ratio from 21.7% to 53.4% is convertible bond issuance, which would increase the share count upon conversion. Samsung Securities disclosed in its November 2025 material that it had participated in an equity-linked bond issuance related to Samhyun within the prior six months. The fact remains that these financial factors operate simultaneously while earnings recovery is delayed."
+    "ko": "휴머노이드 관련 계약은 협의 단계에 머물러 있고, 공장과 부지 투자가 함께 진행되고 있다. 부채비율은 2024년 21.7%에서 2025년 53.4%로 올랐고, 2025년 말 부채총계는 704억원이다. 2026년 3분기 지배주주 순손실이 83.3억원으로 커진 점도 자금 조달 부담을 키울 수 있다.",
+    "en": "Humanoid contracts remain in negotiation while factory and land investments proceed in parallel. The debt ratio rose from 21.7% in 2024 to 53.4% in 2025, with total liabilities of KRW 70.4 billion at year-end. The attributable net loss widened to KRW 8.33 billion in Q3 2026, which may increase funding pressure."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "현금흐름·투자 집행",
-    "en": "Cash flow and capex execution"
+    "ko": "고객 집중과 전동화 리스크",
+    "en": "Customer concentration and electrification risk"
    },
    "body": {
-    "ko": "영업활동현금흐름은 2023년 115억원, 2024년 69억원에서 2025년 9,501만원으로 사실상 소멸했다. 그런 상태에서 2025~2029년 약 1,000억원(휴머노이드 액추에이터에 400억원) 투자 계획과 2027년 4월 완공 목표의 신공장 건설이 병행된다. 자체 현금 창출로 투자를 감당하기 어려우면 추가 차입이나 자본조달 필요성이 커질 수 있다. 투자 규모가 확정된 매출이 아닌 협의 단계 수요를 근거로 세워졌다는 점도 함께 봐야 한다.",
-    "en": "Operating cash flow effectively vanished, falling from KRW 11.5bn in 2023 and KRW 6.9bn in 2024 to KRW 95m in 2025. Against that backdrop, a roughly KRW 100bn investment plan for 2025-2029 (KRW 40bn for humanoid actuators) is proceeding alongside new plant construction targeted for completion in April 2027. If internally generated cash cannot fund the spending, the need for additional borrowing or equity funding could grow. It also matters that the investment scale was sized on demand still under discussion rather than confirmed orders."
+    "ko": "매출은 현대차·기아 1차 벤더사를 거치는 구조여서 특정 완성차 그룹의 생산 계획에 민감하다. 고객사 재고 조정이 길어지면 물량 감소가 분기 실적에 바로 반영된다. 전동화가 빨라질수록 내연기관 관련 제품의 수명이 짧아질 수 있다.",
+    "en": "Revenue flows through tier-one suppliers to Hyundai Motor and Kia, so it is sensitive to their production plans. Extended inventory adjustments by customers flow straight into quarterly results. Faster electrification could shorten the life of combustion-related products."
    }
   },
   {
    "cat": {
-    "ko": "수주 시점 지연",
-    "en": "Order timing slippage"
+    "ko": "재무와 희석 리스크",
+    "en": "Financial and dilution risk"
    },
    "body": {
-    "ko": "회사는 2026년 7월 전자신문 보도에서 이르면 2026년 4분기부터 양산 공급계약이 가시화되기를 기대한다고 밝혔고, 가장 빠른 고객사의 양산 계획은 2027년 1분기라고 설명했다. 휴머노이드 완제품 업체들의 양산 일정 자체가 유동적인 산업 초기 단계이므로, 고객사 일정이 밀리면 신공장 가동률과 고정비 회수 시점이 함께 뒤로 밀린다. 박기원 대표는 규모의 경제가 2028년부터 시작될 것으로 전망한다고 밝힌 바 있어, 그 사이 기간의 비용 부담이 관건이다. 프로토 수주가 양산으로 전환되지 않는 경우도 배제할 수 없다.",
-    "en": "The company told Electronic Times in July 2026 that it hoped mass-production supply contracts could materialize as early as 4Q26, and that its fastest customer plans volume production in 1Q27. Because humanoid OEM production schedules are themselves fluid at this early industry stage, any customer delay pushes back both new plant utilization and the recovery of fixed costs. CEO Park Ki-won has said he expects economies of scale from 2028, making the cost burden in the interim the crux. The possibility that prototype orders do not convert into volume programs cannot be excluded."
+    "ko": "2025년 10월 발행한 전환사채는 주식으로 전환될 경우 주식 수를 늘리는 요인이 된다. 부채비율이 2025년 53.4%로 올라 금리와 차입 조건의 영향이 커졌다. 창원 공장과 부지 투자가 이어지는 동안 현금 유출이 계속될 수 있다.",
+    "en": "The convertible bond issued in October 2025 could add shares if converted. The debt ratio rose to 53.4% in 2025, which raises sensitivity to interest rates and borrowing terms. Cash outflows could continue while Changwon plant and land investments proceed."
    }
   },
   {
    "cat": {
-    "ko": "경쟁 강도",
-    "en": "Competitive intensity"
+    "ko": "사업 전환 실행 리스크",
+    "en": "Execution risk in the business transition"
    },
    "body": {
-    "ko": "지디넷코리아는 2026년 7월 28일 보도에서 로봇 액추에이터 시장이 로보티즈·삼현·에스피지의 3파전 구도로 재편되고 있으며 에스피지가 9월경 양산에 돌입한다고 전했다. 중국 업체들의 가격 경쟁 역시 상시 변수이며, 회사도 원가 절감을 위해 액추에이터 부품 상당 부분을 중국산으로 검토 중이라고 설명한 바 있다. 액추에이터는 고객사 사양에 맞춘 맞춤 개발 비중이 커서 초기 개발비를 들여도 양산 물량을 확보하지 못하는 위험이 있다. 방산 역시 수출 계약 성사 여부와 국가별 정책에 따라 물량 변동성이 크다.",
-    "en": "ZDNet Korea reported on July 28, 2026 that the robot actuator market is reshaping into a three-way contest among Robotis, Samhyun and SPG, with SPG entering mass production around September. Price competition from Chinese suppliers is a constant variable, and the company has said it is considering sourcing a large share of actuator components from China to cut costs. Because actuators involve heavy customer-specific development, there is a risk of incurring upfront engineering costs without securing volume awards. Defense volumes are likewise volatile, depending on export contract closure and country-level policy."
+    "ko": "로봇 액추에이터와 휴머노이드 부품은 양산 검증과 고객 인증이 끝나야 매출이 나온다. 협의 중인 계약의 규모와 시기가 바뀌면 생산 설비의 가동률이 낮아질 수 있다. 인력 증가로 고정비가 늘어난 상태에서 매출 전환이 늦어지면 적자 폭이 더 커질 수 있다.",
+    "en": "Robot actuators and humanoid components generate revenue only after validation and customer qualification. If the size or timing of negotiated contracts changes, factory utilization could fall. If revenue conversion is delayed while fixed costs from hiring are already higher, losses could widen further."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중순",
-    "en": "Mid-November 2026"
+    "ko": "2026년 12월 말",
+    "en": "End of December 2026"
    },
    "what": {
-    "ko": "2026년 3분기 분기보고서. 네 개 분기 연속이던 영업손실 폭이 축소되는지, 그리고 로봇 시제품·프로토 공급 매출이 손익계산서에 얼마나 반영되는지가 전환 진행 속도의 첫 확인점이다.",
-    "en": "The 3Q26 quarterly report. Whether the operating loss that has run for four straight quarters narrows, and how much robot sample and prototype supply revenue shows up in the income statement, is the first checkpoint on the pace of the transition."
+    "ko": "휴머노이드·로봇 대형 계약의 공시 여부. 회사 측이 연말 계약 발표 가능성을 언급한 만큼, 공시로 이어지는지가 수주 전환의 첫 확인 지점이다.",
+    "en": "Whether a large humanoid or robot contract is disclosed. The company has pointed to a possible year-end announcement, so whether it is formally disclosed is the first test of order conversion."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기",
-    "en": "4Q 2026"
+    "ko": "2027년 2월 말 전후",
+    "en": "Around late February 2027"
    },
    "what": {
-    "ko": "회사가 2026년 7월 전자신문 보도에서 '이르면 4분기부터 가시화'를 기대한다고 밝힌 휴머노이드 액추에이터 양산 공급계약. 단일판매·공급계약 체결 공시로 금액과 기간이 확인되는지가 파이프라인의 실체를 가리는 기준이 된다.",
-    "en": "Humanoid actuator mass-production supply contracts, which the company said in a July 2026 Electronic Times report it hoped could materialize as early as 4Q. Whether amounts and terms are confirmed through single-sales-and-supply-contract disclosures is the test of how substantive the pipeline is."
+    "ko": "2026년 연간 잠정 실적. 4분기 영업손익이 5개 분기 연속 적자 흐름에서 벗어나는지가 확인 지점이다.",
+    "en": "Preliminary 2026 annual results. The key test is whether the Q4 operating result breaks the five-quarter loss run."
    }
   },
   {
    "when": {
-    "ko": "2027년 1분기",
-    "en": "1Q 2027"
+    "ko": "2027년 3월 31일까지",
+    "en": "By March 31, 2027"
    },
    "what": {
-    "ko": "회사가 밝힌 '가장 빠른 고객사'의 양산 개시 예정 시점. 실제 양산 진입 여부와 초기 물량 규모가 2027년 매출 및 신공장 가동률 논의의 출발점이 된다.",
-    "en": "The scheduled start of volume production at what the company calls its fastest customer. Whether volume production actually begins, and at what initial scale, sets the starting point for 2027 revenue and new plant utilization."
+    "ko": "2026년 사업보고서 제출. 매출 구성, 수주잔고 상세, 설비투자 집행 현황을 DART 공시로 확인하는 시점이다.",
+    "en": "Filing of the 2026 annual report. The revenue mix, order backlog detail and capex execution can be checked in the DART filing."
    }
   },
   {
    "when": {
-    "ko": "2027년 4월",
-    "en": "April 2027"
+    "ko": "2027년 5월 전후",
+    "en": "Around May 2027"
    },
    "what": {
-    "ko": "400억원이 투입된 창원 신공장 완공 목표 시점(2026년 7월 착공). 완공 일정 준수와 자동화 라인의 초기 수율·가동률이 원가 경쟁력 주장을 검증하는 자료가 된다.",
-    "en": "The targeted completion of the KRW 40bn Changwon plant (construction started July 2026). Adherence to the schedule and the initial yield and utilization of the automated lines will serve as evidence for the company's cost-competitiveness claims."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 2~3월",
-    "en": "February-March 2027"
-   },
-   "what": {
-    "ko": "2026년 연간 실적 공시와 배당·주주환원 결정. 연간 영업손익, 영업활동현금흐름 회복 여부, 매출 대비 연구개발비 비중이 실제로 30% 수준까지 올라갔는지를 함께 확인할 수 있다.",
-    "en": "Disclosure of full-year 2026 results along with dividend and shareholder return decisions. This will show the annual operating result, whether operating cash flow recovers, and whether R&D actually rose to around 30% of revenue."
+    "ko": "2027년 1분기 실적. 창원 신규 공장 가동 이후 첫 분기의 매출과 영업이익률이 로봇 사업 확장의 초기 신호가 된다.",
+    "en": "Q1 2027 results. Revenue and operating margin in the first quarter after new Changwon capacity starts will serve as an early signal of robotics expansion."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "삼현은 자동차 전장부품으로 쌓은 3-in-1 구동 기술을 방산과 로봇으로 확장하는 과정에 있으며, 그 비용이 최근 실적에 선명하게 드러나 있다. 확정 실적으로 보면 2023년 영업이익률 9.8%에서 2024년 5.5%, 2025년 0.8%로 마진이 내려왔고, 2025년 3분기부터 2026년 2분기까지 네 개 분기 연속 영업손실에 손실 폭이 확대됐으며 영업활동현금흐름은 2025년 사실상 0에 가까워졌다. 반대편에는 2026년 7월 공개한 휴머노이드 관절 액추에이터 12종 라인업, 약 23개사와의 공급 협의, 복수 글로벌 업체로부터의 프로토 수주, 400억원 규모 창원 신공장(2027년 4월 완공 목표), 그리고 이라크 수출용 천궁-Ⅱ 구동유니트 수주 같은 방산 실적이 놓여 있다. 즉 이 종목의 핵심 쟁점은 사업 방향이 아니라 시점이며, 협의 단계 수요가 양산 계약과 매출로 전환되는 속도가 실적과 재무 부담을 동시에 결정한다. 이익 기준 배수가 산출되지 않는 구간이라 시장 가격은 확정 이익보다 전환 시나리오의 실행 가능성을 반영하고 있고, 순자산 대비 프리미엄은 업종에서 통상 관찰되는 수준을 크게 웃도는 위치에 있다. 따라서 2026년 4분기 양산 계약 가시화 여부, 2026년 3분기 이후 손실 폭 추이, 2027년 4월 신공장 완공 일정이 확인 가능한 판단 재료다. 본 리포트는 정보 제공 목적이며 매수·매도 의견이나 목표주가를 포함하지 않는다.",
-   "en": "Samhyun is extending the 3-in-1 drive technology it built in automotive electronics into defense and robotics, and the cost of that shift is plainly visible in recent results. On confirmed numbers, the operating margin fell from 9.8% in 2023 to 5.5% in 2024 and 0.8% in 2025, operating losses ran for four consecutive quarters from 3Q25 through 2Q26 with a widening deficit, and operating cash flow fell to near zero in 2025. On the other side sit the 12-model humanoid joint actuator line-up unveiled in July 2026, supply discussions with about 23 companies, prototype orders from multiple global makers, the KRW 40bn Changwon plant targeted for completion in April 2027, and defense wins such as the drive units for Iraq-bound Cheongung-II systems. The central issue is therefore timing rather than direction: the pace at which pipeline discussions convert into volume contracts and revenue will determine both earnings and the financial burden. With no earnings-based multiple computable, the market price reflects the perceived feasibility of the transition scenario more than confirmed profits, and the premium to net assets sits well above sector norms. Accordingly, whether mass-production contracts materialize in 4Q26, the trajectory of losses from 3Q26, and adherence to the April 2027 plant completion schedule are the verifiable inputs. This report is for information purposes and contains no buy or sell opinion or target price."
+   "ko": "삼현은 모터·제어기·감속기를 통합한 기술을 바탕으로 자동차 부품 사업에서 출발해 방산과 로봇으로 영역을 넓히고 있다. 공시 실적 기준으로 2023년을 정점으로 2024년과 2025년에 매출 기반은 950억원 수준으로 유지됐지만, 영업이익은 2025년 8.1억원까지 줄었다. 2026년 들어 매출은 3분기에 234억원으로 회복했으나 영업손실은 60.8억원으로 커졌고, 최근 4개 분기 지배주주 순손실 합계는 127억원이다. 강세 요인은 1조 5,000억원 이상의 회사 측 수주잔고, 휴머노이드 고객사와의 협의, 방산 비중 확대와 재무 여력이다. 약세 요인은 내연기관 관련 물량 의존, 영업손실 지속, 부채비율 상승과 신사업의 수익화 시점 불확실성이다. 다음 확인 지점은 2026년 4분기 연간 실적과 2026년 사업보고서의 수주잔고 및 설비 설명이며, 로봇 계약의 공시 여부와 2027년 1분기 매출 전환 속도도 함께 봐야 한다.",
+   "en": "Samhyun started as an auto parts maker built on integrated motor, controller and reducer technology and is widening into defense and robotics. On a DART-filed basis, revenue has held near KRW 95 billion after peaking in 2023, while operating profit fell to KRW 805 million in 2025. Revenue recovered to KRW 23.4 billion in Q3 2026, but the operating loss widened to KRW 6.08 billion, and the attributable net loss over the last four quarters totals KRW 12.7 billion. Bullish factors include the company's order backlog above KRW 1.5 trillion, talks with humanoid customers, a rising defense share and financial capacity. Bearish factors include reliance on combustion-related volumes, continued operating losses, a higher debt ratio and uncertainty over when new businesses turn profitable. The next checkpoints are the 2026 full-year results and the 2026 annual report's backlog and capex disclosures, along with whether a robotics contract is disclosed and how fast revenue converts in 2027."
   }
  },
  "sources": [
+  "https://hedgenaru.com/stocks/437730",
   "https://www.butler.works/ko/companies/00262266",
-  "https://www.hedgenaru.com/stocks/437730",
-  "https://www.bondweb.co.kr/_research/downloadPage.asp?number=840441&gn=1",
-  "https://m.thinkpool.com/item/437730",
+  "https://samsungpop.com/common.do?cmd=down&contentType=application%2Fpdf&fileName=2010%2F2025111814503384K_02_10.pdf&inlineYn=Y&saveKey=research.pdf",
+  "https://www.samsungpop.com/common.do?cmd=down&contentType=application%2Fpdf&inlineYn=Y&saveKey=research.pdf&fileName=2010%2F2025092415290875K_02_02.pdf",
   "https://www.digitaltoday.co.kr/news/articleView.html?idxno=634562",
-  "https://alphasquare.co.kr/home/stock-summary?code=437730",
   "https://news.nate.com/view/20260225n38103",
-  "https://www.stockplus.com/m/stocks/KOREA-A437730",
-  "https://www.the-stock.kr/news/articleView.html?idxno=19813",
-  "http://weekly.cnbnews.com/news/article.html?no=158624",
-  "https://m.thinkpool.com/stockDiscuss/437730/cont/11868746",
-  "https://www.samhyun.co.kr/company/group",
-  "https://www.seoulfn.com/news/articleView.html?idxno=512395",
-  "https://www.ebn.co.kr/news/articleView.html?idxno=1713150",
-  "https://www.newsis.com/view/NISX20240227_0002641345",
-  "https://www.irobotnews.com/news/articleView.html?idxno=46980",
-  "https://www.irobotnews.com/news/articleView.html?idxno=46899",
-  "https://m.thinkpool.com/compDiscuss/cont/1027060"
+  "https://www.valueline.co.kr/finance/summary/437730",
+  "https://m.thinkpool.com/compDiscuss/cont/1022818",
+  "https://kbthink.com/securities-view.html?docId=20260824163533803K",
+  "https://m.thinkpool.com/stockDiscuss/437730/cont/11881753",
+  "https://www.samsungpop.com/common.do?cmd=down&contentType=application%2Fpdf&inlineYn=Y&saveKey=research.pdf&fileName=2010%2F2025111814503384K_02_10.pdf",
+  "https://news.samsung.com/kr/%ec%82%bc%ec%84%b1%ec%a0%84%ec%9e%90-2026%eb%85%84-3%eb%b6%84%ea%b8%b0-%ec%8b%a4%ec%a0%81-%eb%b0%9c%ed%91%9c",
+  "https://m.thinkpool.com/stockDiscuss/437730/cont/11837012",
+  "https://news.samsung.com/kr/%ec%82%bc%ec%84%b1%ec%a0%84%ec%9e%90-2026%eb%85%84-3%eb%b6%84%ea%b8%b0-%ec%9e%a0%ec%a0%95%ec%8b%a4%ec%a0%81-%eb%b0%9c%ed%91%9c",
+  "https://news.samsungsemiconductor.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-2026%EB%85%84-3%EB%B6%84%EA%B8%B0-%EC%8B%A4%EC%A0%81-%EB%B0%9C%ED%91%9C/",
+  "https://news.skhynix.com/en/q3-2026-business-results/"
  ],
  "v": 2,
- "model": "claude-opus-5",
+ "model": "claude-haiku-5-5",
  "ticker": "437730",
  "name": "삼현",
  "name_en": "SAMHYUN CO.,LTD",
@@ -234,11 +222,11 @@
   "로봇"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 05:29",
- "dataDate": "20260904",
+ "reportDate": "2026-11-14",
+ "reportTs": "2026-11-14 09:25",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-09-04",
+  "asOf": "2026-11-13",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -309,12 +297,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 26859505067,
-    "op": 1517001678,
-    "np_owner": 3263530101
-   },
-   {
     "q": "2025Q3",
     "rev": 22486764011,
     "op": -1322598179,
@@ -337,32 +319,39 @@
     "rev": 20996133954,
     "op": -5388519000,
     "np_owner": -6770843265
+   },
+   {
+    "q": "2026Q3",
+    "rev": 23359917299,
+    "op": -6079239391,
+    "np_owner": -8333423367
    }
   ],
   "valuation": {
-   "price": 32550,
-   "mcap": 1.0321,
-   "shares": 31707567,
+   "price": 47050,
+   "mcap": 1.5164,
+   "shares": 32230351,
    "total_shares": 31707567,
-   "wavg_shares": 29804929,
+   "wavg_shares": 30247567,
    "per": null,
-   "eps": -183,
-   "pbr": 8.2239,
-   "bps": 3958,
-   "roe_ttm": -3.9,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": -4658443571,
+   "eps": -440,
+   "pbr": 12.49,
+   "bps": 3767,
+   "roe_ttm": -11.1,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": -12723735277,
    "ccy": "KRW",
    "bps_src": "자체",
    "eps_src": "공시",
-   "pbr_krx": 7.81,
+   "pbr_krx": 11.29,
    "bps_krx": 4168.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 50.0,
-   "div": 0.15,
+   "div": 0.11,
    "hidden": {
     "per": "loss"
    }
   }
- }
+ },
+ "textRules": 2
 }

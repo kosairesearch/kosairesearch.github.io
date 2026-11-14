@@ -1,230 +1,216 @@
 {
  "title": {
-  "ko": "인터페이스 IP 성장통, 적자축소가 과제",
-  "en": "Interface IP Growth Pains, Narrowing Losses Is the Task"
+  "ko": "매출은 커졌지만 적자는 이어지는 IP 설계 기업",
+  "en": "Revenue Rising, Losses Persist at Interface IP Designer"
  },
  "lead": {
-  "ko": "퀄리타스반도체는 삼성전자 파운드리 기반 초고속 인터페이스 IP 라이선싱 기업으로, 2026년 1분기 매출이 전년 동기 대비 급증했지만 연간 기준으로는 여전히 대규모 영업손실이 이어지고 있다.",
-  "en": "Qualitas Semiconductor, a high-speed interface IP licensing firm built on Samsung Foundry partnerships, posted a sharp year-on-year revenue jump in the first quarter of 2026, but annual operating losses remain large."
+  "ko": "2026년 상반기 매출이 전년 동기 대비 크게 늘었지만 연구개발비가 매출을 웃도는 구조가 이어져 영업손실이 남아 있으며, 비용 구조가 바뀌는지가 다음 확인 지점이다.",
+  "en": "First-half 2026 revenue rose sharply, but R&D spending that exceeds revenue keeps operating losses in place, and whether the cost structure shifts is the next thing to track."
  },
  "keypoints": [
   {
-   "ko": "2025년 매출 53.5억원으로 전년 대비 감소했으나 영업손실은 244.7억원으로 오히려 확대됐다.",
-   "en": "2025 revenue fell to KRW 5.35 billion year-on-year, while the operating loss widened to KRW 24.47 billion."
+   "ko": "2025년 매출은 53.5억원으로 2022년 108억원의 절반 수준이며, 같은 해 영업손실은 245억원으로 영업이익률은 -457.4%다.",
+   "en": "Revenue in 2025 was KRW 5.35 billion, about half the KRW 10.8 billion of 2022, while the operating loss reached KRW 24.5 billion, an operating margin of -457.4%."
   },
   {
-   "ko": "2026년 1분기 매출 51.5억원으로 전년 동기 대비 크게 늘며 영업손실과 순손실 폭이 동시에 줄었다.",
-   "en": "First-quarter 2026 revenue reached KRW 5.15 billion, sharply higher year-on-year, with both the operating and net losses narrowing."
+   "ko": "2026년 상반기 매출은 115억원으로 전년 동기 대비 311% 증가했고, 같은 기간 연구개발비는 120억원으로 매출의 105.2%에 달했다(블로터 보도 기준).",
+   "en": "First-half 2026 revenue reached KRW 11.5 billion, up 311% year on year, while R&D spending in the same period was KRW 12 billion, equal to 105.2% of revenue (Bloter report)."
   },
   {
-   "ko": "매출 비중은 MIPI IP 약 50%, Display Chipset IP 약 31%, PCIe 약 18% 순으로 편중돼 있다.",
-   "en": "Revenue mix skews toward MIPI IP at roughly 50%, Display Chipset IP at about 31%, and PCIe at around 18%."
+   "ko": "고부가 인터페이스 IP의 비중이 커지고 있다. UCIe 매출 비중은 2025년 0.8%에서 2026년 상반기 14.1%로 올랐다(블로터 보도 기준).",
+   "en": "The share of high-value interface IP is growing. UCIe rose from 0.8% of revenue in 2025 to 14.1% in the first half of 2026 (Bloter report)."
   },
   {
-   "ko": "2025년 부채비율이 128.6%로 전년 26.4%에서 급격히 상승해 재무구조 변화가 관찰된다.",
-   "en": "The debt ratio jumped to 128.6% in 2025 from 26.4% a year earlier, marking a notable shift in the balance sheet."
+   "ko": "SK하이닉스 공급 IP 계약 총액은 정정 공시로 24억 2,352만원에서 39억 2,199만원으로 늘었다.",
+   "en": "The total value of the SK hynix IP supply contract rose from KRW 2.42 billion to KRW 3.92 billion through a revised disclosure."
   },
   {
-   "ko": "AI 데이터센터발 광통신·칩렛 인터페이스 수요 확대가 중장기 사업 기회로 거론된다.",
-   "en": "Growing optical-interconnect and chiplet interface demand driven by AI data centers is cited as a medium-to-long-term business opportunity."
+   "ko": "차입과 현금 유출이 함께 커졌다. 2025년 영업활동 현금흐름은 -165억원이었고, 단기차입금은 2025년 말 50억원에서 2026년 상반기 말 120억원으로 늘었다.",
+   "en": "Borrowing and cash outflows have both grown. Operating cash flow in 2025 was KRW -16.5 billion, and short-term borrowings rose from KRW 5 billion at year-end 2025 to KRW 12 billion at the end of the first half of 2026."
   }
  ],
  "business": {
-  "ko": "퀄리타스반도체는 2017년 설립돼 초고속 인터커넥트를 위한 반도체 IP 라이선싱과 디자인 서비스를 주력으로 하는 팹리스 기업이다. 경기 성남시에 본사를 두고 있으며, 삼성전자 파운드리의 4~8나노 공정을 기반으로 한 IP 포트폴리오를 다수 확보해 핵심 협력 관계를 유지하고 있다. 주요 제품은 MIPI(모바일 카메라·디스플레이 인터페이스), PCIe(서버·컴퓨팅), UCIe(칩렛 간 인터커넥트), 디스플레이 칩셋 인터페이스, Multi-Level Signaling SerDes PHY IP 등으로 구성된다. 2025년 사업보고서 기준 매출 비중은 MIPI IP가 약 50%, Display Chipset IP가 약 31%, PCIe가 약 18%, 기타가 약 1%로 파악되며, 이는 상장 당시인 2022년의 MIPI IP 53.7%, Display Chipset IP 29.9%, PCIe IP 12.5% 구성과 비교해 PCIe 비중이 확대되는 흐름을 보여준다. 사업모델은 하드 매크로 형태의 PHY IP 라이선싱을 중심으로 하되, 컨트롤러까지 필요로 하는 고객 수요에 대응해 소프트 매크로까지 포함하는 서브시스템 형태로 확장하고 있다. 고객사로는 엣지 AI 반도체 기업 암바렐라, 미국 IP 기업 베리실리콘, 그리고 최근에는 자동차 ADAS SoC 개발을 위한 중국 신규 고객사 등이 확인된다. 경쟁구도는 국내에서 오픈엣지테크놀로지 등 반도체 IP 전문기업과 비교되며, 글로벌 시장에서는 대형 IP 기업들이 다루지 않는 선단 공정 특화 영역에서 틈새 경쟁력을 추구하는 위치에 있다. 최근에는 광통신·실리콘 포토닉스 응용 기술 개발을 위한 국책 과제에도 참여해 사업 영역을 인터커넥트 전반으로 확장하려는 움직임을 보이고 있다.",
-  "en": "Founded in 2017, Qualitas Semiconductor is a fabless company focused on licensing high-speed interconnect semiconductor IP and providing related design services, headquartered in Seongnam, Gyeonggi Province. The company has secured a broad IP portfolio built on Samsung Foundry's 4nm-to-8nm processes and maintains a core partnership with the foundry. Its main products span MIPI (mobile camera and display interface), PCIe (server and computing), UCIe (chiplet interconnect), display chipset interfaces, and Multi-Level Signaling SerDes PHY IP. According to the 2025 annual business report, the revenue mix is roughly 50% MIPI IP, 31% Display Chipset IP, 18% PCIe, and 1% other, showing an expanding PCIe share compared with the 2022 IPO-era mix of 53.7% MIPI, 29.9% Display Chipset, and 12.5% PCIe. The business model centers on licensing hard-macro PHY IP, while expanding into subsystem offerings that include soft-macro controller IP for customers who need a fuller solution. Confirmed customers include edge AI chip maker Ambarella, US IP firm VeriSilicon, and a new China-based customer for an automotive ADAS SoC project. Domestically, the company is often compared with peers such as Openedges Technology in the semiconductor IP space, while globally it positions itself in advanced-node niches that larger IP vendors have not fully covered. More recently, the company has participated in a government-backed R&D project for optical interconnect and silicon photonics technology, signaling an effort to broaden its scope across the interconnect stack."
+  "ko": "퀄리타스반도체는 2017년 설립된 초고속 인터커넥트 반도체 설계 전문 기업으로, 2023년 코스닥에 상장했다. 주력 사업은 반도체 설계에 필요한 설계자산(IP)을 고객사에 공급하고 사용료를 받는 IP 라이선싱이며, 디자인 서비스를 함께 제공한다. 제품 축은 모바일 산업용 MIPI, 고속 데이터 전송 규격 PCIe, 칩렛 간 연결 표준 UCIe이며, 이들은 서데스(SERDES) 기술을 기반으로 한다. 교보증권 리서치센터 자료에 따르면 2025년 누적 매출 비중은 MIPI 50%, PCIe 18%, 칩셋 31%였다. 블로터 보도에 따르면 2026년 상반기에는 MIPI 36%, PCIe 38.5%, UCIe 14.1%로 집계돼 UCIe 비중이 빠르게 늘었다. 출처별로 부문 분류 기준이 달라 같은 시점의 비중도 다르게 집계된 자료가 있다. 2026년 공시 계약의 상대방으로는 SK하이닉스, 코아시아세미, 모빌린트가 확인된다. 해외에서는 2025년 초 미국 베리실리콘에 PCIe 6.0·CXL 3.0용 IP를 공급했고, 엣지 AI 반도체 기업 암바렐라와 추가 계약을 맺었다. 경쟁 구도는 소수 기업 중심이며, UCIe IP를 실리콘 검증까지 마친 기업은 해외 대형 IP 업체를 포함해 소수에 불과하다는 평가가 있다. 회사는 2026년 1월 미국 현지 법인 Qualitas Semiconductor, Inc.를 설립해 지분 100%를 취득했다.",
+  "en": "Qualitas Semiconductor was founded in 2017 as a designer of high-speed interconnect semiconductors and listed on KOSDAQ in 2023. Its core business is interface IP licensing, in which it supplies design IP blocks to customers and earns usage fees, and it also offers design services. The product lines are MIPI for mobile and embedded use, PCIe for high-speed data transfer, and UCIe for chiplet-to-chiplet connection, all built on SerDes technology. According to Kyobo Securities research, the 2025 cumulative revenue mix was MIPI 50%, PCIe 18%, and chipset 31%. A Bloter report put the first-half 2026 mix at MIPI 36%, PCIe 38.5%, and UCIe 14.1%, showing UCIe gaining share quickly. Because sources use different segment classifications, some reports show different mixes for the same period. Counterparties in 2026 disclosed contracts include SK hynix, Coasia Semi, and Mobilint. Overseas, the company supplied PCIe 6.0 and CXL 3.0 IP to VeriSilicon in the United States in early 2025 and signed an additional deal with edge AI chipmaker Ambarella. Competition is concentrated among a few firms, and only a small number, including larger overseas IP vendors, are reported to have completed silicon verification of UCIe IP. In January 2026 the company established a U.S. subsidiary, Qualitas Semiconductor, Inc., and acquired 100% of its shares."
  },
  "earnings": {
-  "ko": "2025년 연결 매출액은 53.5억원으로 2024년 60.7억원 대비 감소했으며, 2023년 107.7억원, 2022년 107.9억원과 비교하면 최근 2년 연속 매출이 줄어든 흐름이다. 반면 영업손실은 2025년 244.7억원으로 2024년 226.9억원보다 확대됐고, 2023년 111.9억원, 2022년 36.7억원과 비교하면 손실 규모가 매년 커지는 추세다. 지배주주 순손실도 2025년 230.9억원으로 2024년 190.6억원 대비 확대돼, 매출 감소와 손실 확대가 동시에 나타난 한 해였다. 분기별로 보면 2025년 1분기 매출 18.8억원에서 2분기 9.2억원, 3분기 8.4억원으로 줄었다가 4분기 17.1억원으로 다소 회복했고, 영업손실은 2025년 1분기 50.4억원에서 3분기 65.7억원까지 확대된 뒤 4분기에도 64.9억원 수준을 유지했다. 그러나 2026년 1분기 매출은 51.5억원으로 전년 동기 대비 크게 늘어 2025년 연간 매출 전체에 근접하는 수준을 한 분기 만에 기록했으며, 영업손실은 47.4억원, 지배주주 순손실은 41.6억원으로 각각 전년 동기 대비 축소됐다. 이는 IP 라이선싱 계약의 인식 시점에 따른 매출 편중 효과가 반영된 결과로 해석될 수 있으며, 연구개발비 지속 투입이 손익에 계속 부담을 주는 구조다. 자본총계는 2025년 363억원으로 2024년 507억원 대비 감소했고, 부채총계는 467억원으로 2024년 134억원 대비 크게 늘어 부채비율이 26.4%에서 128.6%로 급등한 점이 눈에 띈다. 영업활동현금흐름은 2025년 -164.6억원으로 2024년 -171.1억원과 유사한 수준의 유출이 지속됐으며, 2022년의 소폭 양(+)의 흐름 이후 4년째 현금 유출이 이어지고 있다.",
-  "en": "Consolidated revenue came to KRW 5.35 billion in 2025, down from KRW 6.07 billion in 2024, and compared with KRW 10.77 billion in 2023 and KRW 10.79 billion in 2022, marking two consecutive years of declining sales. Meanwhile, the operating loss widened to KRW 24.47 billion in 2025 from KRW 22.69 billion in 2024, KRW 11.19 billion in 2023, and KRW 3.67 billion in 2022, showing a trend of expanding losses each year. Net loss attributable to owners also widened to KRW 23.09 billion in 2025 from KRW 19.06 billion in 2024, meaning revenue declined and losses expanded in the same year. On a quarterly basis, revenue fell from KRW 1.88 billion in Q1 2025 to KRW 0.92 billion in Q2 and KRW 0.84 billion in Q3, before recovering somewhat to KRW 1.71 billion in Q4, while the operating loss widened from KRW 5.04 billion in Q1 2025 to KRW 6.57 billion in Q3 and stayed around KRW 6.49 billion in Q4. However, first-quarter 2026 revenue jumped to KRW 5.15 billion, a sharp year-on-year increase that approached the entire 2025 annual revenue figure in a single quarter, while the operating loss narrowed to KRW 4.74 billion and the net loss attributable to owners narrowed to KRW 4.16 billion, both improving from the year-earlier quarter. This pattern likely reflects the timing effect of IP licensing contract recognition, which concentrates revenue in specific quarters, while continued R&D spending keeps weighing on profitability. Total equity fell to KRW 36.3 billion in 2025 from KRW 50.7 billion in 2024, while total liabilities jumped to KRW 46.7 billion from KRW 13.4 billion, pushing the debt ratio up sharply from 26.4% to 128.6%. Operating cash flow remained negative at KRW -16.46 billion in 2025, similar to KRW -17.11 billion in 2024, extending a run of cash outflows that has continued for four straight years since a small positive figure in 2022."
+  "ko": "연간 매출은 2022년 108억원, 2023년 108억원(전년 대비 0.1% 감소), 2024년 60.7억원(전년 대비 43.6% 감소), 2025년 53.5억원(전년 대비 11.9% 감소)으로, 2023년부터 2025년까지 3년 연속 감소했다. 2022~2025년 중 가장 큰 해는 2022년이고 가장 작은 해는 2025년이다. 영업손실은 2022년 36.7억원에서 2023년 112억원, 2024년 227억원, 2025년 245억원으로 늘었고, 2022년부터 2025년까지 4년 연속 적자다. 영업이익률은 2022년 -34.0%에서 2023년 -103.8%, 2024년 -373.6%, 2025년 -457.4%로 나빠졌다. 지배주주 순손실은 2022년 22.8억원에서 2023년 81.1억원, 2024년 191억원, 2025년 231억원으로 확대됐고, 비지배지분을 포함한 당기순손실도 같은 금액으로 공시됐다. 매출이 줄어드는 가운데 연구개발비가 그대로 손익에 반영된 것이 마진 악화의 배경이다. 회사는 개발비를 자산화하지 않고 모두 당기 비용으로 처리하고 있으며, 2026년 상반기 연구개발비는 120억원으로 매출의 105.2%였다(블로터 보도). 2025년 3분기 매출은 8.4억원, 4분기 17.1억원, 2026년 1분기 51.5억원, 2분기 63.4억원으로 늘었다가 3분기 34억원으로 전 분기 대비 46.5% 줄었다. 영업손실은 2025년 3분기 65.7억원에서 2026년 2분기 8.7억원까지 줄었으나, 3분기에는 59.7억원으로 전 분기 대비 확대됐다. 2025년 3분기부터 2026년 3분기까지 5개 분기 연속 적자다. 지배주주 순손실은 2026년 3분기 58.8억원이며, 2025년 4분기부터 2026년 3분기까지 최근 4개 분기 합계는 197억원이다. 2025년 말 자본총계는 363억원, 부채총계는 467억원이며 부채비율은 128.6%다.",
+  "en": "Annual revenue was KRW 10.8 billion in 2022, KRW 10.8 billion in 2023 (down 0.1% year on year), KRW 6.07 billion in 2024 (down 43.6%), and KRW 5.35 billion in 2025 (down 11.9%), a decline for three consecutive years from 2023 through 2025. Among the years from 2022 to 2025, 2022 was the largest and 2025 the smallest. The operating loss widened from KRW 3.67 billion in 2022 to KRW 11.2 billion in 2023, KRW 22.7 billion in 2024, and KRW 24.5 billion in 2025, a loss in each of four consecutive years from 2022 through 2025. The operating margin deteriorated from -34.0% in 2022 to -103.8% in 2023, -373.6% in 2024, and -457.4% in 2025. The net loss attributable to controlling shareholders widened from KRW 2.28 billion in 2022 to KRW 8.11 billion in 2023, KRW 19.1 billion in 2024, and KRW 23.1 billion in 2025, and the consolidated net loss including non-controlling interests was reported at the same amounts. Margin pressure has come from R&D costs hitting the income statement in full while revenue shrank. The company expenses all development costs rather than capitalizing them, and first-half 2026 R&D spending was KRW 12 billion, equal to 105.2% of revenue (Bloter report). Quarterly revenue went from KRW 842 million in Q3 2025 to KRW 1.71 billion in Q4 2025, KRW 5.15 billion in Q1 2026, and KRW 6.34 billion in Q2 2026, then fell 46.5% quarter on quarter to KRW 3.4 billion in Q3 2026. The operating loss narrowed from KRW 6.57 billion in Q3 2025 to KRW 865 million in Q2 2026, then widened to KRW 5.97 billion in Q3 2026. The company has reported losses for five consecutive quarters, from Q3 2025 through Q3 2026. The net loss attributable to controlling shareholders was KRW 5.88 billion in Q3 2026, and the total for the last four quarters, from Q4 2025 through Q3 2026, was KRW 19.7 billion. Total equity at year-end 2025 was KRW 36.3 billion and total liabilities were KRW 46.7 billion, a debt ratio of 128.6%."
  },
  "industry": {
-  "ko": "반도체 IP 산업은 AI 반도체 설계 복잡도가 높아지면서 파운드리·팹리스·디자인하우스 간 협업이 늘어나는 구조적 변화 속에 있다. 특히 AI 데이터센터에서 서버 간 데이터 전송 속도 요구가 급격히 높아지면서 기존 전기 기반 인터커넥트에서 광 기반 전송으로의 전환 필요성이 커지고 있고, 이에 따라 CPO(공동패키징형광학)와 실리콘 포토닉스 관련 인터페이스 기술 수요도 함께 확대되는 흐름이 나타난다는 분석이 나온다. 삼성전자가 2026년 1분기 실적발표를 통해 광통신 모듈 대형 업체로부터 수주를 확보하고 실리콘 포토닉스 사업 기반을 마련했다고 밝히면서, 관련 밸류체인 내 인터페이스 IP 기업들에 대한 시장의 관심이 높아진 바 있다. 반도체 설계 구조가 단일 칩에서 칩렛 기반 시스템으로 전환되는 흐름도 지속되고 있으며, 이 과정에서 UCIe와 같은 칩렛 간 인터커넥트 표준의 중요성이 커지고 있다. 교보증권은 2026년 4월 리포트에서 국내에서 정부 주도로 추진되는 국민성장펀드와 K-온디바이스 AI 반도체 지원 정책이 국내 AI 반도체 밸류체인에 자금을 공급하는 요인이 될 수 있다고 짚었다. 국민성장펀드는 2026년 한 해 약 30조원 규모의 자금이 투입되는 민관 합동 정책 펀드로 조성됐다는 점이 확인되며, 정부의 K-온디바이스 AI 반도체 기술개발 사업은 국비 약 5,111억원을 포함해 총 8,002억원 규모로 편성돼 2026년 8월 말 최종 컨소시엄 매칭이 확정됐다. 다만 이 최종 컨소시엄에는 LX세미콘, 하이퍼엑셀, 가온칩스, 모빌린트, 코아시아세미 등이 언급되고 있어, 동사가 해당 사업의 직접 수주 주체로 확정됐는지는 향후 공시를 통해 추가 확인이 필요하다. 경쟁 측면에서는 국내 오픈엣지테크놀로지 등이 유사한 AI 반도체 IP 영역에서 활동하고 있으며, 글로벌 대형 IP 벤더들이 다루지 않는 선단 공정·특화 규격 영역에서의 입지가 동사의 상대적 포지션으로 거론된다.",
-  "en": "The semiconductor IP industry is undergoing structural change as growing complexity in AI chip design increases collaboration among foundries, fabless firms, and design houses. As AI data centers demand rapidly rising server-to-server data transfer speeds, the need to shift from electrical to optical-based interconnects is intensifying, and industry commentary points to a resulting expansion in demand for co-packaged optics (CPO) and silicon photonics-related interface technology. Market attention toward interface IP companies in this value chain rose after Samsung Electronics disclosed during its first-quarter 2026 earnings release that it secured orders from a major optical module maker and established a foothold in silicon photonics. The ongoing shift from monolithic chips to chiplet-based system architectures is also increasing the importance of chiplet interconnect standards such as UCIe. Kyobo Securities noted in an April 2026 report that domestic policy initiatives such as the National Growth Fund and support for K-on-device AI semiconductors could channel funding into the domestic AI semiconductor value chain. The National Growth Fund was confirmed to be a public-private policy fund deploying roughly KRW 30 trillion in 2026, and the government's K-on-device AI Semiconductor Technology Development Program, budgeted at about KRW 800.2 billion including roughly KRW 511.1 billion in government funding, had its final consortium matching confirmed in late August 2026. However, the confirmed consortium list referenced companies such as LX Semicon, HyperAccel, Gaonchips, Mobilint, and CoAsia Semi, so whether Qualitas Semiconductor is a direct participant in this specific program requires further confirmation through future disclosures. On the competitive front, domestic peer Openedges Technology operates in a similar AI semiconductor IP space, while Qualitas's relative position is often framed around advanced-node and specialized-standard niches that large global IP vendors have not fully covered."
+  "ko": "퀄리타스반도체가 속한 IP 시장은 AI 반도체 확산으로 고속 인터페이스 수요가 늘고 있는 구조다. 회사는 AI·HPC·자동차 등 고부가 응용처를 겨냥해 PCIe·UCIe 등 IP를 확대하는 중이다. 교보증권은 2026년 4월 리포트에서 국산화에 따른 IP 수혜와 AI 반도체 개발 수요 확대가 외형 성장으로 이어진다고 봤다. 같은 리포트는 당장 올해 턴어라운드까지는 부족하다고 평가하며 2026년 매출 102억원, 영업적자 115억원을 예상했다. 상반기 매출 115억원은 이 예상 매출을 이미 넘어선 수준이다. 삼성전자 파운드리의 4·5·8나노 공정 기반 IP가 핵심 자산이며, 파운드리 가동률은 회사 매출의 직접 변수다. Truefriend 리서치는 2025년 실적이 삼성 파운드리 가동률 부진과 관세 리스크의 영향을 받아 역성장이 불가피하다고 봤다. 같은 시기 미국과 중국의 관세 갈등이 격화되면서 삼성 파운드리에서 진행 중이던 중국 고객 프로젝트가 취소됐다. 경쟁 측면에서 UCIe처럼 실리콘 검증을 마친 기업이 소수라는 점은 진입장벽으로 작용한다. 다만 Rambus, CEVA, eMemory, M31 등 해외 IP 업체도 같은 인터페이스 영역에서 경쟁한다. 회사 관계자는 개발 성과가 수주와 매출로 연결되는 선순환이 이뤄지고 있다고 설명했다(블로터 보도).",
+  "en": "The IP market that Qualitas Semiconductor serves is seeing rising demand for high-speed interfaces as AI chips spread. The company is expanding PCIe and UCIe IP aimed at high-value applications such as AI, HPC, and automotive. In an April 2026 report, Kyobo Securities saw domestic-substitution demand for IP and wider AI chip development as drivers of top-line growth. The same report said a turnaround would still be insufficient in 2026 and forecast 2026 revenue of KRW 10.2 billion and an operating loss of KRW 11.5 billion. First-half 2026 revenue of KRW 11.5 billion has already exceeded that revenue forecast. The core assets are IP based on Samsung Electronics foundry 4, 5, and 8 nanometer processes, and foundry utilization directly affects the company's revenue. Truefriend Securities judged that 2025 results would inevitably decline because of weak Samsung foundry utilization and tariff risk. In the same period, escalating U.S.-China tariff tensions led to the cancellation of a Chinese customer project that was under way at the Samsung foundry. In competition, the small number of firms that have completed silicon verification for UCIe IP creates a barrier to entry. Still, overseas IP vendors such as Rambus, CEVA, eMemory, and M31 compete in the same interface space. A company official said development achievements are now connecting to orders and revenue, a positive cycle (Bloter report)."
  },
  "outlook": {
-  "ko": "김두호 대표는 2025년 7월 인터뷰에서 PCIe와 UCIe를 중심으로 IP 포트폴리오를 전년 대비 2배 가량 확충했다며, 고성능 컴퓨팅과 첨단 패키징 기술을 검토하는 해외 고객사들과의 논의가 늘고 있다고 밝혔다. 당시 회사는 미국과 중국 시장을 중심으로 고객사 논의를 진행 중이며 특히 중국 시장에서 2025년 하반기 계약 체결을 목표로 한다고 설명했는데, 이후 2025년 12월 중국 신규 고객사와 14억원 규모의 자동차 ADAS용 MIPI 서브시스템 IP 공급 계약이 체결된 바 있다. 이 계약은 자동차 안전무결성 ASIL-B 수준을 충족하는 차량용 MIPI 서브시스템 IP의 첫 공급 사례로 소개됐다. 2025년 6월에는 UCIe 2.0 규격 인터페이스 IP 개발에 성공했다고 발표한 바 있어, 칩렛 인터커넥트 분야의 기술 대응력을 넓히는 추세가 이어지고 있다. 교보증권은 2026년 4월 리포트에서 2026년 매출액을 102억원(전년 대비 +91.2%), 영업손실을 115억원(적자 지속)으로 전망하며, 국산화에 따른 IP 수혜와 AI 반도체 개발 수요 확대에 따라 외형 성장은 이뤄지나 해당 시점에서는 당장의 흑자 전환까지는 부족한 수준이라고 평가했다. 2026년 1분기 실적이 이러한 외형 성장 추정치에 부합하는 흐름을 보인 점은 확인되나, 이는 아직 확정된 연간 실적이 아니므로 향후 분기 공시를 통한 추가 확인이 필요하다. 회사는 광통신·실리콘 포토닉스 응용 기술 개발을 위한 국책 과제에 참여하고 있어, 관련 레퍼런스 확보 여부가 중장기 사업 확장의 관전 포인트로 남아 있다.",
-  "en": "CEO Kim Doo-ho said in a July 2025 interview that the company had roughly doubled its IP portfolio year-on-year around PCIe and UCIe, and that discussions with overseas customers evaluating high-performance computing and advanced packaging technologies were increasing. At the time, the company said it was in discussions with customers primarily in the United States and China, aiming to close a China contract in the second half of 2025; that goal was followed in December 2025 by a KRW 1.4 billion supply contract with a new China-based customer for automotive ADAS MIPI subsystem IP. The contract was described as the company's first supply case for an automotive-grade MIPI subsystem IP meeting ASIL-B functional safety requirements. In June 2025, the company announced it had successfully developed interface IP meeting the UCIe 2.0 specification, extending its technical coverage in chiplet interconnects. Kyobo Securities forecast in an April 2026 report that 2026 revenue would reach KRW 10.2 billion (up 91.2% year-on-year) with an operating loss of KRW 11.5 billion (loss continuing), assessing that top-line growth would occur on the back of localization-driven IP demand and expanding AI chip development needs, but that the level was not yet sufficient for a near-term swing to profit at that time. First-quarter 2026 results showed a trajectory broadly consistent with that top-line growth estimate, though this remains a single quarter and not a confirmed annual outcome, warranting further confirmation through upcoming quarterly disclosures. The company is also participating in a government-backed R&D project for optical interconnect and silicon photonics technology, making the accumulation of related production references a point to watch for medium-to-long-term business expansion."
+  "ko": "확인된 수주 흐름에서 가장 큰 축은 SK하이닉스와의 공급 IP 계약이다. 계약 총액은 정정 공시로 24억 2,352만원에서 39억 2,199만원으로 늘었고, 계약 기간은 2027년 3월 16일까지다. 2026년 공시된 계약 규모는 1월 10억원 규모로 시작해 SK하이닉스와 3월 24억원, 4월 18억원 계약 등이 포함돼 총 86억원으로 집계되며, 이후 모빌린트 계약 등을 더하면 전체 계약 규모는 92억원을 넘어선다(블로터 보도). PCIe와 UCIe IP 수주가 매출로 이어지는 흐름이 회사 설명에서 강조되고 있다. 2026년 상반기 매출 구성은 PCIe 38.5%, UCIe 14.1%로, 고부가 IP 비중이 확대되는 방향이 공시 실적과 일치한다. 해외 거점으로는 2026년 1월 미국 법인 설립이 결정됐고, 2026년 3월 총 출자금액 USD 300,000을 전액 현금 출자해 지분 100%를 취득했다(사업보고서). 정부 과제 측면에서는 2026년 4월 시스템반도체기술개발 사업에 선정됐고, 2026년 5월에는 신용보증기금 코딧 히어로 50에 선정됐다(기업모니터 연혁). 개발비 자산화에 대해서는 실적이 쌓이고 관련 요건이 충족되면 검토할 수 있다고 회사가 밝혔다. 2026년 사업 성과는 2027년 3월 말까지 제출될 사업보고서에서 공시 실적으로 확정된다. 단기 차입이 늘어난 만큼 2027년 이후 영업현금흐름 개선 여부가 자금 조달 구조를 좌우한다.",
+  "en": "The largest confirmed order flow is the IP supply contract with SK hynix. Through a revised disclosure, the total contract value rose from KRW 2.42 billion to KRW 3.92 billion, and the contract runs through March 16, 2027. Contracts disclosed in 2026 started with a KRW 1 billion deal in January and included KRW 2.4 billion and KRW 1.8 billion contracts with SK hynix in March and April, totaling KRW 8.6 billion; including a later Mobilint contract, the total exceeds KRW 9.2 billion (Bloter report). The company stresses that orders for PCIe and UCIe IP are translating into revenue. The first-half 2026 mix, with PCIe at 38.5% and UCIe at 14.1%, is consistent with the rising share of high-value IP in reported results. Overseas, a U.S. subsidiary was approved in January 2026, and in March the company paid in USD 300,000 in cash to acquire 100% of its shares (business report). In government projects, the company was selected in April 2026 for a system semiconductor technology development program and in May 2026 for the Credit Hero 50 program of the Korea Credit Guarantee Fund (company profile records). The company said it could consider capitalizing development costs once a track record builds and the requirements are met (Bloter report). Results for 2026 will be fixed in the annual business report, due by the end of March 2027, which will include Q4 2026 figures. Because short-term borrowing has risen, whether operating cash flow improves from 2027 onward will shape the financing structure."
  },
  "valuation_comment": {
-  "ko": "동사는 영업손실이 지속되고 있어 통상적인 이익 기준 밸류에이션 지표는 산출되지 않는 구간에 있으며, 주가는 순자산가치 대비 상당한 프리미엄이 반영된 수준에서 거래되고 있다. 배당은 지급되지 않고 있어 배당 관련 지표는 의미를 갖기 어렵다. 다년간 실적을 보면 매출은 정체 내지 감소하는 가운데 손실 규모는 확대돼 왔으나, 2026년 1분기에는 매출 증가와 손실 축소가 동시에 나타나며 방향성 측면에서 개선 신호가 포착됐다. 다만 이는 단일 분기의 결과이며 연간 기준의 흑자 전환 여부는 아직 확인되지 않았다. 이러한 상황에서 시장이 부여하는 프리미엄은 향후 성장 스토리에 대한 기대를 반영하는 것으로 해석될 수 있으며, 실제 실적 개선의 속도와 지속성이 뒷받침되는지가 관찰의 핵심이 된다.",
-  "en": "Because operating losses have persisted, conventional earnings-based valuation metrics are not meaningful for this company, and the share price trades at a level reflecting a substantial premium over net asset value. No dividend is paid, so dividend-related metrics carry little relevance here. Looking at multi-year results, revenue has stagnated or declined while losses expanded, but the first quarter of 2026 showed both revenue growth and loss narrowing at the same time, a directional improvement signal. That said, this is the outcome of a single quarter, and whether a full-year swing to profitability will follow remains unconfirmed. In this context, any premium the market assigns can be interpreted as reflecting expectations for a future growth story, with the pace and durability of actual earnings improvement being the key thing to watch."
+  "ko": "최근 네 개 분기 순손실 구간이라 이익 기준 배수인 PER은 산출되지 않는다. 주가순자산비율은 2025년 말 자본총계 363억원과 비교할 때 시가총액이 순자산을 크게 웃도는 구간에 있다. 순자산 대비 프리미엄이 큰 구간이라는 점이 현재 밸류에이션의 핵심 특징이다. 배당수익률은 업종 평균을 밑도는 수준이며 현금 배당 기여는 사실상 없다. 이익이 나지 않는 상황이라 밸류에이션 비교는 순자산 규모와 매출 규모의 관계에 무게가 실린다. 2026년 상반기 매출이 2025년 연간 매출을 넘어섰지만 영업손실 구조는 유지되고 있어 시가총액의 매출 대비 배수는 여전히 큰 편이다. 교보증권은 2026년 4월 리포트에서 턴어라운드 시점이 당장 올해는 어렵다고 평가했다. 밸류에이션 해석은 이 증권사 평가와 공시 실적을 함께 놓고 읽는 것이 사실 비교에 가깝다.",
+  "en": "Because the company has posted net losses over the last four quarters, the price-to-earnings ratio cannot be calculated. Measured against total equity of KRW 36.3 billion at year-end 2025, market capitalization sits well above book value, placing the price-to-book ratio in a high-premium range. The premium to net assets is the defining feature of the current valuation. The dividend yield is below the industry average, and cash dividends contribute essentially nothing. With no earnings, valuation comparisons rest more on the relationship between net asset size and revenue size. First-half 2026 revenue exceeded full-year 2025 revenue, but the operating loss structure persists, so the market capitalization relative to revenue remains large. In an April 2026 report, Kyobo Securities judged that a turnaround would not arrive within 2026. Reading the valuation alongside that assessment and the reported results is the most factual way to compare."
  },
  "bull": [
   {
    "title": {
-    "ko": "인터페이스 IP 포트폴리오 확장",
-    "en": "Expanding Interface IP Portfolio"
+    "ko": "외형 성장과 고부가 IP 비중 확대",
+    "en": "Revenue Growth and Rising High-Value IP Mix"
    },
    "body": {
-    "ko": "회사는 MIPI, PCIe, UCIe 등 다양한 표준에 대응하는 IP 포트폴리오를 지속 확충해왔으며 2025년 6월 UCIe 2.0 규격 IP 개발에 성공했다. 삼성전자 파운드리의 4~8나노 공정을 기반으로 한 하드 매크로 IP 역량은 대형 글로벌 IP 벤더가 커버하지 못하는 틈새 영역에서 경쟁력으로 작용할 수 있다. 자동차 ADAS, 엣지 AI 등 신규 응용처로의 확장도 진행되고 있다.",
-    "en": "The company has continued to expand its IP portfolio covering MIPI, PCIe, and UCIe standards, and announced successful development of UCIe 2.0-compliant IP in June 2025. Its hard-macro IP capability based on Samsung Foundry's 4nm-to-8nm processes can serve as a competitive edge in niche areas not fully covered by large global IP vendors. Expansion into new applications such as automotive ADAS and edge AI is also underway."
+    "ko": "2026년 상반기 매출은 115억원으로 전년 동기 대비 311% 증가했다(블로터 보도). UCIe 매출 비중은 2025년 0.8%에서 2026년 상반기 14.1%로 올랐다. 2025년 한 증권사는 PCIe와 UCIe 등 고부가 IP 매출이 늘면 수익성 개선이 동반될 수 있다고 전망했다(Truefriend 리서치).",
+    "en": "First-half 2026 revenue reached KRW 11.5 billion, up 311% year on year (Bloter report). UCIe rose from 0.8% of revenue in 2025 to 14.1% in the first half of 2026. A 2025 Truefriend Securities report said rising sales of high-value PCIe and UCIe IP could come with better profitability."
    }
   },
   {
    "title": {
-    "ko": "정책 자금·AI 데이터센터 수요 연계 기대",
-    "en": "Potential Links to Policy Funding and AI Data Center Demand"
+    "ko": "SK하이닉스 공급 계약 확대",
+    "en": "Expanded SK hynix Supply Contract"
    },
    "body": {
-    "ko": "국민성장펀드와 K-온디바이스 AI 반도체 기술개발 사업 등 정부 주도 정책 자금이 국내 AI 반도체 밸류체인에 투입되고 있다. AI 데이터센터의 광 인터커넥트 전환 흐름 속에서 CPO·실리콘 포토닉스 관련 인터페이스 기술 수요가 확대될 것이라는 분석도 나온다. 다만 동사가 K-온디바이스 최종 컨소시엄에 직접 포함됐는지는 추가 확인이 필요한 부분이다.",
-    "en": "Government-led policy funding, including the National Growth Fund and the K-on-device AI Semiconductor Technology Development Program, is flowing into the domestic AI semiconductor value chain. Industry commentary also points to growing demand for CPO and silicon photonics-related interface technology as AI data centers shift toward optical interconnects. That said, whether the company is directly included in the finalized K-on-device consortium requires further confirmation."
+    "ko": "정정 공시로 SK하이닉스 공급 IP 계약 금액이 당초보다 커졌다. 업계는 양사가 공급 IP의 성능을 높이며 계약 금액을 조정했다고 전했다(디일렉 보도). 계약 기간은 2027년 3월 16일까지이며, 대금은 3차례에 나눠 지급되는 방식이다.",
+    "en": "A revised disclosure raised the value of the SK hynix IP supply contract above its original amount. Industry reports said the parties adjusted the contract value as they upgraded the performance of the supplied IP (The Elec report). The contract runs through March 16, 2027, with payment made in three installments."
    }
   },
   {
    "title": {
-    "ko": "1분기 매출 회복 신호",
-    "en": "First-Quarter Revenue Recovery Signal"
+    "ko": "국산화와 AI 반도체 수요",
+    "en": "Domestic Substitution and AI Chip Demand"
    },
    "body": {
-    "ko": "2026년 1분기 매출은 51.5억원으로 전년 동기 대비 크게 늘며 2025년 연간 매출에 근접하는 수준을 한 분기 만에 달성했다. 같은 기간 영업손실과 순손실 모두 전년 동기 대비 축소돼, 방향성 측면에서 개선 흐름이 관찰됐다. IP 라이선싱 계약 인식 시점에 따른 매출 편중 가능성은 있으나, 최소한 손실 축소 추세는 확인된다.",
-    "en": "First-quarter 2026 revenue reached KRW 5.15 billion, a large year-on-year increase that approached the entire 2025 annual revenue in a single quarter. Both the operating loss and net loss narrowed year-on-year over the same period, indicating a directional improvement. While revenue timing tied to IP licensing contract recognition may play a role, the trend of narrowing losses was at least observable."
+    "ko": "교보증권은 2026년 4월 리포트에서 국산화에 따른 IP 수혜와 AI 반도체 개발 수요 확대를 외형 성장의 요인으로 꼽았다. 같은 리포트는 국산화 레퍼런스를 바탕으로 한 중장기 체질 개선 기대를 언급했다. 광통신 관련 프로젝트 확대도 향후 매출 요인으로 거론됐다.",
+    "en": "In an April 2026 report, Kyobo Securities cited domestic-substitution benefits for IP and wider AI chip development demand as drivers of top-line growth. The same report mentioned medium- to long-term structural improvement based on domestic-substitution references. Expansion of optical communication projects was also named as a future revenue factor."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "연간 기준 손실 확대 지속",
-    "en": "Continued Widening of Annual Losses"
+    "ko": "연구개발비가 매출을 웃도는 비용 구조",
+    "en": "A Cost Structure Where R&D Exceeds Revenue"
    },
    "body": {
-    "ko": "2025년 매출은 전년 대비 감소했음에도 영업손실은 244.7억원으로 오히려 확대됐고, 이는 2022년 36.7억원, 2023년 111.9억원, 2024년 226.9억원으로 이어진 손실 확대 흐름의 연장선이다. 연구개발비 지속 투입이 손익 구조에 부담을 주고 있으며, 매출 성장이 손익 개선으로 즉각 이어지지 않고 있다. 단일 분기의 개선만으로 연간 흑자 전환을 단정할 수는 없다.",
-    "en": "Even though 2025 revenue declined year-on-year, the operating loss widened to KRW 24.47 billion, extending a pattern of expanding losses from KRW 3.67 billion in 2022, KRW 11.19 billion in 2023, and KRW 22.69 billion in 2024. Continued R&D spending is weighing on the profit-and-loss structure, and revenue growth has not immediately translated into improved earnings. A single quarter's improvement is not sufficient to conclude a full-year swing to profit."
+    "ko": "2026년 상반기 연구개발비는 120억원으로 매출의 105.2%였다(블로터 보도). 개발비를 자산화하지 않고 모두 당기 비용으로 처리하는 방식이어서 개발 투자가 곧바로 손익에 반영된다. 2025년 영업손실은 245억원이고 영업이익률은 -457.4%다.",
+    "en": "First-half 2026 R&D spending was KRW 12 billion, equal to 105.2% of revenue (Bloter report). Because all development costs are expensed rather than capitalized, development investment hits the income statement immediately. The 2025 operating loss was KRW 24.5 billion, an operating margin of -457.4%."
    }
   },
   {
    "title": {
-    "ko": "재무구조 변화와 현금 유출",
-    "en": "Balance Sheet Shift and Cash Outflow"
+    "ko": "분기 매출 변동과 손실 재확대",
+    "en": "Quarterly Revenue Volatility and Renewed Losses"
    },
    "body": {
-    "ko": "2025년 부채총계가 467억원으로 2024년 134억원 대비 크게 늘어 부채비율이 26.4%에서 128.6%로 급등했다. 영업활동현금흐름은 4년째 마이너스를 기록하며 지속적인 현금 유출이 이어지고 있다. 이러한 재무구조 변화의 배경과 향후 자금 조달 계획은 공시를 통해 지속적으로 확인할 필요가 있다.",
-    "en": "Total liabilities jumped to KRW 46.7 billion in 2025 from KRW 13.4 billion in 2024, pushing the debt ratio up sharply from 26.4% to 128.6%. Operating cash flow has been negative for four consecutive years, reflecting ongoing cash outflows. The background of this balance sheet shift and future funding plans warrant continued monitoring through disclosures."
+    "ko": "2026년 3분기 매출은 34억원으로 전 분기 대비 46.5% 줄었다. 영업손실은 2분기 8.7억원에서 3분기 59.7억원으로 확대돼 직전 분기의 손실 축소 흐름이 되돌아갔다. 5개 분기 연속 적자라는 공시 실적 흐름은 아직 끊기지 않았다.",
+    "en": "Q3 2026 revenue was KRW 3.4 billion, down 46.5% from the prior quarter. The operating loss widened from KRW 865 million in Q2 to KRW 5.97 billion in Q3, reversing the narrowing of the prior quarter. The reported losses have now run for five consecutive quarters."
    }
   },
   {
    "title": {
-    "ko": "매출 편중과 수주 불확실성",
-    "en": "Revenue Concentration and Order Uncertainty"
+    "ko": "현금 유출과 차입 증가",
+    "en": "Cash Outflows and Rising Borrowing"
    },
    "body": {
-    "ko": "IP 라이선싱 매출은 계약 인식 시점에 따라 분기별로 크게 편차가 발생하는 구조로, 2025년에도 2분기 9.2억원에서 4분기 17.1억원까지 분기 간 매출 변동이 컸다. 해외 고객사와의 계약 체결 시점이 계획보다 지연될 가능성도 있으며, K-온디바이스 국책 과제 등 정책 수혜의 구체적 귀속 여부도 아직 불확실하다. 이러한 불확실성은 실적 추정의 신뢰도를 낮추는 요인이다.",
-    "en": "IP licensing revenue tends to vary significantly by quarter depending on contract recognition timing; even in 2025, quarterly revenue swung from KRW 0.92 billion in Q2 to KRW 1.71 billion in Q4. Contract signings with overseas customers could also be delayed relative to plan, and the specific attribution of policy benefits such as the K-on-device national project remains uncertain. Such uncertainties reduce the reliability of earnings estimates."
+    "ko": "2025년 영업활동 현금흐름은 -165억원이었다. 단기차입금은 2025년 말 50억원에서 2026년 상반기 말 120억원으로 늘었고, 상반기 영업활동에서는 44억원이 유출됐다(블로터 보도). 2025년 말 부채총계 467억원은 자본총계 363억원을 웃돈다.",
+    "en": "Operating cash flow in 2025 was KRW -16.5 billion. Short-term borrowings rose from KRW 5 billion at year-end 2025 to KRW 12 billion at the end of the first half of 2026, and KRW 4.4 billion of cash flowed out from operations in the first half (Bloter report). Total liabilities of KRW 46.7 billion at year-end 2025 exceed total equity of KRW 36.3 billion."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "실적/재무 리스크",
-    "en": "Earnings/Financial Risk"
+    "ko": "고객·공정 집중",
+    "en": "Customer and Process Concentration"
    },
    "body": {
-    "ko": "영업손실과 순손실이 수년째 확대되는 흐름이 이어지고 있으며, 2025년 부채비율이 128.6%로 급등해 재무 안정성 지표의 변화가 관찰된다. 영업활동현금흐름도 4년 연속 마이너스를 기록하고 있어 추가 외부 자금조달 필요성이 이어질 가능성이 있다.",
-    "en": "Operating and net losses have expanded for several consecutive years, and the debt ratio surged to 128.6% in 2025, indicating a shift in financial stability indicators. Operating cash flow has also been negative for four straight years, suggesting a possible ongoing need for additional external funding."
+    "ko": "실적은 삼성전자 파운드리 공정의 가동률에 영향을 받는 구조다. 2025년에는 관세 갈등으로 중국 고객 프로젝트가 취소되면서 실적에 직접 반영됐다. 다른 공정과 고객사로 매출 기반을 넓히는 속도가 리스크 요인으로 남아 있다.",
+    "en": "Results are affected by utilization at Samsung Electronics' foundry processes. In 2025, tariff tensions led to the cancellation of a Chinese customer project, which fed directly into results. The pace at which the company broadens its revenue base across other processes and customers remains a risk factor."
    }
   },
   {
    "cat": {
-    "ko": "고객 집중 및 수주 지연 리스크",
-    "en": "Customer Concentration and Order Delay Risk"
+    "ko": "재무 여력",
+    "en": "Financial Capacity"
    },
    "body": {
-    "ko": "IP 라이선싱 매출은 소수 고객사와의 계약 체결 및 인식 시점에 크게 좌우되는 구조로, 특정 분기의 대형 계약 지연이 실적에 즉각적인 영향을 줄 수 있다. 해외 고객사 대상 계약 협상은 국가별 규제나 지정학적 변수에도 영향을 받을 수 있다.",
-    "en": "IP licensing revenue is heavily dependent on the timing of contracts with a limited number of customers, meaning delays in a single large contract in a given quarter can immediately affect results. Contract negotiations with overseas customers can also be affected by country-specific regulations or geopolitical factors."
+    "ko": "부채비율은 2024년 26.4%에서 2025년 말 128.6%로 올랐다. 2026년 상반기 단기차입은 기업은행 70억원 차입과 신용보증기금 보증 한도 활용으로 확보된 것이다(블로터 보도). 영업현금 유출이 이어지면 추가 자금 조달 부담이 커진다.",
+    "en": "The debt ratio rose from 26.4% in 2024 to 128.6% at year-end 2025. In the first half of 2026, short-term funding came from a KRW 7 billion loan from IBK and the use of a credit guarantee facility from the Korea Credit Guarantee Fund (Bloter report). If operating cash outflows continue, the burden of additional financing will grow."
    }
   },
   {
    "cat": {
-    "ko": "정책 사업 귀속 불확실성",
-    "en": "Uncertainty Over Policy Program Attribution"
+    "ko": "회계 처리와 기술 전환",
+    "en": "Accounting Treatment and Technology Transition"
    },
    "body": {
-    "ko": "국민성장펀드나 K-온디바이스 AI 반도체 기술개발 사업 등 정책 수혜 기대가 테마성으로 거론되고 있으나, 2026년 8월 말 확정된 K-온디바이스 최종 컨소시엄 명단에는 동사가 명시적으로 포함되지 않은 것으로 확인된다. 향후 공시나 추가 발표를 통해 실제 참여 여부와 수혜 규모를 재확인할 필요가 있다.",
-    "en": "Expectations of benefiting from policy programs such as the National Growth Fund or the K-on-device AI Semiconductor Technology Development Program have been discussed on a thematic basis, but the finalized K-on-device consortium list confirmed in late August 2026 does not explicitly include the company. Actual participation and the scale of any benefit need to be reconfirmed through future disclosures or announcements."
+    "ko": "회사는 현재 개발비를 모두 비용 처리하고 있으며, 실적이 쌓이고 요건이 충족되면 자산화를 검토할 수 있다고 밝혔다(블로터 보도). 자산화로 전환하면 손익 구조의 해석이 달라진다. 차세대 인터페이스 규격을 실리콘으로 구현하는 속도와 글로벌 IP 업체와의 경쟁이 과제다.",
+    "en": "The company currently expenses all development costs, but has said it could consider capitalization once a track record builds and requirements are met (Bloter report). A switch to capitalization would change how the income statement should be read. Speed in bringing next-generation interface standards to silicon and competition with global IP vendors remain challenges."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중순경",
-    "en": "Around mid-November 2026"
+    "ko": "2027년 3월 16일",
+    "en": "March 16, 2027"
    },
    "what": {
-    "ko": "2026년 3분기 실적 공시를 통해 1분기의 매출 회복과 손실 축소 흐름이 지속되는지 확인할 필요가 있다.",
-    "en": "Check the Q3 2026 earnings disclosure to see whether the first-quarter revenue recovery and loss-narrowing trend has continued."
+    "ko": "SK하이닉스 공급 IP 계약 기간이 끝나는 시점이다. 갱신 여부와 계약 금액 변동이 IP 라이선스 매출의 연속성을 가늠하는 지표가 된다.",
+    "en": "The SK hynix IP supply contract period ends on this date. Whether it is renewed and any change in contract value will indicate the continuity of IP licensing revenue."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기~2027년 초",
-    "en": "Second half of 2026 to early 2027"
+    "ko": "2027년 3월 31일까지",
+    "en": "By March 31, 2027"
    },
    "what": {
-    "ko": "2025년 12월 체결된 중국 ADAS용 MIPI IP 계약 외 추가 해외 계약 체결 여부와, 미국·중국 고객사 대상 PCIe·UCIe 계약 협상의 진전 상황을 확인해야 한다.",
-    "en": "Watch for additional overseas contracts beyond the December 2025 China ADAS MIPI IP deal, and for progress in PCIe/UCIe contract negotiations with US and China customers."
+    "ko": "2026년 사업보고서 제출 기한이다. 2026년 연간 매출과 영업손실, 4분기 분기 실적이 공시 실적으로 확정된다.",
+    "en": "This is the filing deadline for the 2026 annual business report. Full-year 2026 revenue and operating loss, along with Q4 quarterly results, will be fixed as reported figures."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기",
-    "en": "Second half of 2026"
+    "ko": "2027년 5월 15일까지",
+    "en": "By May 15, 2027"
    },
    "what": {
-    "ko": "K-온디바이스 AI 반도체 기술개발 사업 개별 과제 착수 이후, 동사의 실제 참여 여부와 역할이 구체적으로 공시되는지 확인할 필요가 있다.",
-    "en": "After individual K-on-device AI Semiconductor Technology Development Program tasks kick off, check whether the company's actual participation and role are specifically disclosed."
+    "ko": "2027년 1분기 분기보고서 제출 기한이다. 영업손실이 2026년 3분기 수준에서 줄어드는지 확인하는 지점이다.",
+    "en": "This is the filing deadline for the Q1 2027 quarterly report. It is the point at which to check whether the operating loss narrows from the Q3 2026 level."
    }
   },
   {
    "when": {
-    "ko": "2027년 연간 실적 공시 시점",
-    "en": "At the time of the 2027 annual earnings disclosure"
+    "ko": "수시(공시 시점 기준)",
+    "en": "Ongoing, as disclosed"
    },
    "what": {
-    "ko": "교보증권이 2026년 4월 리포트에서 제시한 2026년 매출 102억원, 영업적자 115억원 전망치와 실제 연간 실적이 어떻게 부합하는지 비교 확인이 필요하다.",
-    "en": "Compare the actual 2026 full-year results against the estimates Kyobo Securities presented in its April 2026 report—revenue of KRW 10.2 billion and an operating loss of KRW 11.5 billion."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 하반기~2027년",
-    "en": "Second half of 2026 through 2027"
-   },
-   "what": {
-    "ko": "삼성전자의 실리콘 포토닉스·CPO 관련 사업 진행 상황과 이에 따른 동사의 실제 매출 연동 여부를 후속 공시로 확인해야 한다.",
-    "en": "Follow up on Samsung Electronics' silicon photonics and CPO-related business progress and whether it translates into confirmed revenue for the company through subsequent disclosures."
+    "ko": "PCIe·UCIe 등 고부가 IP의 신규 공급 계약 공시다. 계약 규모와 고객사 다변화 여부가 매출 구조 전환을 보여 준다.",
+    "en": "These are new supply contract disclosures for high-value IP such as PCIe and UCIe. Contract size and whether the customer base diversifies will show the shift in the revenue mix."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "퀄리타스반도체는 삼성전자 파운드리를 핵심 협력사로 둔 초고속 인터페이스 IP 전문 기업으로, MIPI를 중심으로 PCIe·UCIe 등으로 포트폴리오를 확장해왔다. 2025년까지는 매출 정체 내지 감소와 손실 확대가 동시에 나타났으나, 2026년 1분기에는 매출이 크게 늘고 손실이 축소되는 방향성 개선이 관찰됐다. 다만 이는 단일 분기의 결과이며, IP 라이선싱 매출의 분기별 편중 가능성을 감안하면 연간 기준의 지속성 여부는 추가 확인이 필요하다. 재무구조 측면에서는 2025년 부채비율이 급등하고 영업활동현금흐름이 4년째 마이너스를 기록하는 등 유의할 지점도 존재한다. 국민성장펀드, K-온디바이스 AI 반도체 사업 등 정책 자금과 AI 데이터센터발 광통신 인터페이스 수요 확대는 중장기 사업 기회로 거론되지만, 동사의 구체적 귀속 여부는 아직 공시를 통해 확정되지 않았다. 투자자는 향후 분기 실적 공시, 해외 고객사 계약 체결 소식, 정책 사업 참여 여부에 대한 추가 확인을 통해 사업의 실질적 진행 상황을 판단할 필요가 있다.",
-   "en": "Qualitas Semiconductor is a high-speed interface IP specialist built around a core partnership with Samsung Foundry, having expanded its portfolio from MIPI into PCIe and UCIe. Through 2025, the company experienced simultaneous revenue stagnation or decline and widening losses, but the first quarter of 2026 showed a directional improvement with sharply higher revenue and narrower losses. However, this is the result of a single quarter, and given the tendency for IP licensing revenue to be concentrated by contract timing, whether this improvement is sustained on a full-year basis requires further confirmation. On the balance sheet side, points worth noting include a sharp rise in the 2025 debt ratio and four consecutive years of negative operating cash flow. Policy funding through the National Growth Fund and the K-on-device AI Semiconductor program, along with growing AI data center-driven demand for optical interconnect interfaces, are cited as medium-to-long-term business opportunities, though the company's specific attribution to these programs has not yet been confirmed through disclosures. Investors would need to judge the actual progress of the business through future quarterly earnings disclosures, news of overseas customer contracts, and further confirmation of participation in policy programs."
+   "ko": "퀄리타스반도체는 초고속 인터페이스 IP를 공급하는 팹리스 기업으로, 2025년 매출은 53.5억원으로 줄었으나 2026년 상반기 매출은 115억원으로 크게 늘었다. 외형 성장의 내용은 고부가 PCIe·UCIe IP 비중 확대와 SK하이닉스 등 고객사 계약 확대로 설명된다. 반면 2025년 영업손실은 245억원이고 2026년 3분기에도 영업손실 59.7억원으로 확대돼, 매출 증가가 손익 개선으로 이어지는 단계에는 아직 이르지 못했다. 연구개발비가 매출을 웃도는 비용 구조와 개발비 비용 처리 방식이 손익을 좌우하고 있다. 현금흐름과 차입도 부담 요인으로, 2025년 영업활동 현금흐름은 -165억원이고 단기차입금은 2026년 상반기 말 120억원이다. 강세 요인은 사업 전환 흐름, 공급 계약 확대, 국산화·AI 수요이며, 약세 요인은 영업손실 지속, 분기 매출 변동, 차입 증가다. 두 요인이 공존하는 상태이며, 시가총액은 자본총계와 매출 규모에 비해 큰 구간이고 이익 기준 배수는 산출되지 않는다. 다음 확인 지점은 2026년 사업보고서의 연간 영업이익률과 2027년 3월 16일 계약 기간 만료 시점이다.",
+   "en": "Qualitas Semiconductor is a fabless company supplying high-speed interface IP. Its 2025 revenue fell to KRW 5.35 billion, but first-half 2026 revenue rose sharply to KRW 11.5 billion. The growth reflects a larger share of high-value PCIe and UCIe IP and expanded contracts with customers such as SK hynix. However, the operating loss was KRW 24.5 billion in 2025 and widened to KRW 5.97 billion in Q3 2026, so revenue gains have not yet translated into improved profitability. R&D costs that exceed revenue, together with the expense treatment of development costs, are driving the income statement. Cash flow and borrowing are also burdens, with operating cash flow at KRW -16.5 billion in 2025 and short-term borrowings at KRW 12 billion at the end of the first half of 2026. Strengths include the shift in business mix, expanding supply contracts, and domestic-substitution and AI demand, while weaknesses include persistent operating losses, quarterly revenue swings, and rising borrowing. Both sets of factors coexist. Market capitalization is large relative to equity and revenue, and no earnings-based multiple can be calculated. The next checkpoints are the full-year operating margin in the 2026 annual business report and the expiry of the SK hynix contract period on March 16, 2027."
   }
  },
  "sources": [
-  "https://kr.investing.com/equities/qualitas-semiconductor-earnings",
   "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=432720",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=cofHVS4Ba7PVCWt2",
-  "https://www.investing.com/equities/qualitas-semiconductor",
-  "https://m.finance.daum.net/quotes/A432720/news/disclosure/20260226019527",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260319001354&rcpno=20260319000931&orgid=F&tran=Y&langTpCd=0",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=I3rNl6CdQjWSqqMQ",
-  "http://www.finomy.com/news/articleView.html?idxno=251499",
-  "https://www.iprovest.com/upload/research/report/cominf/20260408/20260408_B4520_20250069_34.pdf",
-  "https://www.financialpost.co.kr/news/articleView.html?idxno=257470",
+  "https://www.bloter.net/news/articleView.html?idxno=675996",
+  "https://comp.wisereport.co.kr/company/c1020001.aspx?cmp_cd=432720&cn=",
   "https://zdnet.co.kr/view/?no=20250723095501",
-  "https://files-scs.pstatic.net/2024/01/09/gToRSTres0/%ED%80%84%EB%A6%AC%ED%83%80%EC%8A%A4%EB%B0%98%EB%8F%84%EC%B2%B4%20IR%20%EC%9E%90%EB%A3%8C.pdf",
-  "https://www.eugenefn.com/common/files/amail//20231010_B_jongsun.park_1944.pdf",
-  "https://www.thelec.kr/news/articleView.html?idxno=45397",
-  "https://m.thinkpool.com/stockDiscuss/432720/cont/11875408",
-  "https://www.innoforest.co.kr/company/CP00014352/%ED%80%84%EB%A6%AC%ED%83%80%EC%8A%A4%EB%B0%98%EB%8F%84%EC%B2%B4",
-  "https://littlebproject.com/stock/432720/339/65220",
-  "https://littlebproject.com/stock/432720/248/64845"
+  "https://www.hankyung.com/article/202604151653L",
+  "https://alphasquare.co.kr/home/stock-summary?code=432720",
+  "https://www.thelec.kr/news/articleView.html?idxno=65399",
+  "https://ssl.pstatic.net/imgstock/upload/research/company/1713223424156.pdf",
+  "https://www.truefriend.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=150499",
+  "https://kr.investing.com/equities/qualitas-semiconductor-earnings",
+  "https://www.investing.com/equities/qualitas-semiconductor",
+  "https://www.iprovest.com/upload/research/report/cominf/20260408/20260408_B4520_20250069_34.pdf",
+  "https://kind.krx.co.kr/external/2026/03/19/001354/20260319005557/11011.htm",
+  "https://m.thinkpool.com/stockDiscuss/432720/cont/11812987"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "432720",
  "name": "퀄리타스반도체",
  "name_en": "QUALITAS SEMICONDUCTOR CO., LTD.",
@@ -233,11 +219,11 @@
   "반도체"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 07:07",
- "dataDate": "20260904",
+ "reportDate": "2026-11-14",
+ "reportTs": "2026-11-14 09:25",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-09-04",
+  "asOf": "2026-11-13",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -308,18 +294,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q1",
-    "rev": 1879977032,
-    "op": -5043450371,
-    "np_owner": -4733134910
-   },
-   {
-    "q": "2025Q2",
-    "rev": 915321852,
-    "op": -6371080237,
-    "np_owner": -5571132480
-   },
-   {
     "q": "2025Q3",
     "rev": 841629105,
     "op": -6570469969,
@@ -336,25 +310,37 @@
     "rev": 5153686910,
     "op": -4740378317,
     "np_owner": -4160697400
+   },
+   {
+    "q": "2026Q2",
+    "rev": 6343237354,
+    "op": -865044581,
+    "np_owner": -1800431740
+   },
+   {
+    "q": "2026Q3",
+    "rev": 3395862006,
+    "op": -5974856502,
+    "np_owner": -5884576163
    }
   ],
   "valuation": {
-   "price": 8530,
-   "mcap": 0.121,
+   "price": 10100,
+   "mcap": 0.1433,
    "shares": 14187572,
-   "total_shares": 14143012,
-   "wavg_shares": 14045300,
+   "total_shares": 14187572,
+   "wavg_shares": 14169503,
    "per": null,
-   "eps": -1599,
-   "pbr": 3.7184,
-   "bps": 2294,
-   "roe_ttm": -57.6,
-   "ttm_window": "2025Q2~2026Q1",
-   "ttm_np_owner": -22518036433,
+   "eps": -1391,
+   "pbr": 5.6773,
+   "bps": 1779,
+   "roe_ttm": -55.2,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": -19664781176,
    "ccy": "KRW",
    "bps_src": "자체",
    "eps_src": "공시",
-   "pbr_krx": 3.32,
+   "pbr_krx": 3.93,
    "bps_krx": 2568.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
@@ -363,5 +349,6 @@
     "per": "loss"
    }
   }
- }
+ },
+ "textRules": 2
 }

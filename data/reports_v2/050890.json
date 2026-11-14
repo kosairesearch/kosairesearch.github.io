@@ -1,230 +1,210 @@
 {
  "title": {
-  "ko": "내수 부진 속 해외 수주로 반등 모색",
-  "en": "Domestic Slump, Overseas Orders Seek a Turnaround"
+  "ko": "해외가 떠받친 쏠리드, 연속 적자 분기가 과제",
+  "en": "Solid: Overseas Sales Carry the Model, Losses Test It"
  },
  "lead": {
-  "ko": "쏠리드는 2026년 1분기 국내 통신투자 축소와 방산 자회사 사업 전환으로 영업손실을 냈고 2분기에도 순이익이 소폭 적자를 보였지만, 미국·유럽 매출 확대와 다수의 정부 과제 수주로 하반기 회복을 시도하고 있다.",
-  "en": "SOLiD posted an operating loss in Q1 2026 amid a domestic telecom capex slowdown and a defense subsidiary business transition, and a slight net loss in Q2 2026, while pursuing a second-half recovery through expanding US and European sales and multiple government-backed R&D awards."
+  "ko": "쏠리드는 해외 매출 비중이 70%를 웃도는 구조에서 2025년 영업이익률 11.3%를 유지했으나, 2026년 2분기와 3분기 지배주주 순손실이 이어지며 이익 체력의 지속성이 다음 확인 과제가 됐다.",
+  "en": "Solid kept its 2025 operating margin at 11.3% on an overseas-weighted sales base above 70% of the total, but net losses attributable to controlling shareholders in Q2 and Q3 2026 make earnings durability the key open question."
  },
  "keypoints": [
   {
-   "ko": "2025년 매출 2,948억원(전년 대비 -10.9%), 영업이익 333억원(-5.3%)으로 3년 연속 300억원대 영업이익은 유지했으나 전년 대비 감소",
-   "en": "2025 revenue fell 10.9% YoY to KRW 294.8bn and operating profit fell 5.3% to KRW 33.3bn, marking a third straight year of operating profit above KRW 30bn but down from the prior year"
+   "ko": "영업이익은 2023년 363억원을 정점으로 2024년부터 2025년까지 2년 연속 감소했지만, 영업이익률은 2025년 11.3%로 2022년 10.2%보다 높다.",
+   "en": "Operating profit peaked at KRW 36.3 billion in 2023 and fell for two straight years through 2025, yet the operating margin rose to 11.3% in 2025 from 10.2% in 2022."
   },
   {
-   "ko": "2026년 1분기 영업손실 21억원, 2분기 지배주주 순이익 -1.4억원으로 분기별 변동성이 크게 확대",
-   "en": "Q1 2026 posted an operating loss of about KRW 2.1bn, and Q2 2026 owners' net income turned slightly negative at roughly KRW -0.14bn, reflecting wide quarter-to-quarter swings"
+   "ko": "2025년 매출은 2,948억원으로 10.9% 줄었는데, 같은 해 국내 매출 비중이 37%에서 29%로 낮아지며 수익 구조의 해외 중심화가 뚜렷해졌다.",
+   "en": "Revenue fell 10.9% to KRW 294.8 billion in 2025, while the domestic share of sales dropped from 37% to 29%, making the overseas-centered model more pronounced."
   },
   {
-   "ko": "글로벌 DAS(분산안테나시스템) 시장점유율 약 15.1%로 세계 3위 공급사 지위를 유지",
-   "en": "SOLiD holds roughly 15.1% share of the global DAS (distributed antenna system) market, ranking it the world's third-largest supplier"
+   "ko": "2026년 3분기 영업이익은 51.4억원으로 전년 동기 대비 84.0% 늘었으나, 지배주주 순손실 93.5억원으로 2개 분기 연속 적자가 이어졌다.",
+   "en": "Q3 2026 operating profit rose 84.0% year on year to KRW 5.14 billion, but a net loss attributable to controlling shareholders of KRW 9.35 billion extended the loss run to two consecutive quarters."
   },
   {
-   "ko": "미국 자회사 SOLiD Gear의 NTIA 오픈랜 프로젝트 수주, 6G 국책과제 주관기관 선정 등 중장기 R&D 파이프라인 확대",
-   "en": "The US subsidiary SOLiD Gear secured an NTIA Open RAN project, and the parent was selected as lead institution for a national 6G R&D program, broadening the mid- to long-term R&D pipeline"
+   "ko": "2026년 1분기에는 국내 통신 투자 축소와 방산 자회사의 사업 교체가 겹치며 영업손실 21.3억원을 냈다.",
+   "en": "In Q1 2026, a pullback in domestic telecom capex and a transition in the defense subsidiary's projects combined to produce an operating loss of KRW 2.13 billion."
   },
   {
-   "ko": "방산 자회사 쏠리드윈텍의 사업 전환과 신규 편입 자회사 다윈프릭션 등 비통신 부문 다각화가 진행 중",
-   "en": "Non-telecom diversification is underway via the defense subsidiary SOLiD Wintech's business transition and the newly consolidated Darwin Friction unit"
+   "ko": "2026년 1분기 말 분기보고서 기준 수주 잔고는 북미 2,004만달러, 유럽 1,455만달러로, 해외 수주 물량이 남아 있다.",
+   "en": "Per the Q1 2026 quarterly report, the order backlog stood at USD 20.04 million in North America and USD 14.55 million in Europe."
   }
  ],
  "business": {
-  "ko": "쏠리드는 1998년 설립된 통신장비 전문기업으로, 이동통신 중계기(DAS), 유선전송장비(WDM), 개방형 기지국(O-RAN) 등 통신 인프라 장비를 주력으로 생산한다. 2026년 1분기 기준 통신장비 부문 매출은 575억원으로 전체 매출의 90.3%를 차지했으며, 나머지는 방산·기타 부문이 담당한다. 고객군은 국내 통신 3사와 북미 통신 3사 및 Rogers, 유럽·MENA의 Vodafone, BT, Deutsche Telekom, 1&1, Orange, Bouygues, O2, EE, Telefónica, TIM, Etisalat, 아시아의 NTT Docomo, KDDI, UQ mobile, Mobifone 등으로 매우 폭넓게 분산되어 있다. 이와 함께 Boldyn Networks, Boingo, Transit Wireless, FreshWave와 같은 대형 건물·지하철·공항·경기장 전용 뉴트럴 호스트 사업자를 상대로 인빌딩 네트워크 장비를 공급하는 것이 통신 투자 사이클이 부진한 시기에도 상대적으로 안정적인 실적을 낼 수 있었던 배경으로 지목된다. 방산 부문에서는 쏠리드윈텍이 기존 전술정보통신체계(TICN) 중심 사업에서 군 위성통신 장비, 저궤도·정지궤도 위성통신 단말 및 핵심 모듈 사업으로 영역을 넓히는 전환기에 있다. 여기에 항공기·전차·고속철도용 브레이크 마찰재를 담당하는 다윈프릭션이 신규 연결 자회사로 편입되며 통신장비 매출 변동성을 방산·항공 부품 사업으로 보완하려는 포석이 진행되고 있다. 경쟁 구도 측면에서는 미국 암페놀(컴스코프 중계기 사업부 인수)이 여전히 높은 위상을 갖고 있으며, 중국 장비에 대한 미국·유럽의 규제 강화가 상대적인 반사 수혜 요인으로 거론된다. 2026년 1분기 연구개발비는 95억원으로 매출액 대비 14.8% 수준을 기록하며 AI-네이티브 무선인터페이스, 6G, 저궤도 위성통신 지원 셀룰러 라우터, 유럽·일본향 디지털 DAS 등 차세대 과제에 선행 투자를 지속하고 있다.",
-  "en": "Founded in 1998, SOLiD is a telecom equipment specialist whose core products include distributed antenna systems (DAS), wired transmission equipment (WDM), and open radio access network (O-RAN) base stations. In Q1 2026, the telecom equipment segment generated KRW 57.5bn, or 90.3% of total revenue, with the defense and other segments accounting for the remainder. Its customer base is broadly diversified, spanning the three major domestic carriers, three major North American carriers plus Rogers, European and MENA operators including Vodafone, BT, Deutsche Telekom, 1&1, Orange, Bouygues, O2, EE, Telefónica, TIM and Etisalat, and Asian operators such as NTT Docomo, KDDI, UQ mobile and Mobifone. The company also supplies in-building network equipment to neutral-host operators such as Boldyn Networks, Boingo, Transit Wireless and FreshWave that run networks inside large buildings, subways, airports and stadiums, which is cited as a key reason it maintained relatively stable results even during periods when carrier capex cycles were weak. In the defense segment, subsidiary SOLiD Wintech is in transition from its legacy tactical information communication system (TICN) business toward military satellite communication equipment, low-earth-orbit and geostationary satellite terminals, and core modules. Darwin Friction, a newly consolidated subsidiary producing brake friction materials for aircraft, tanks and high-speed rail, is intended to offset volatility in telecom equipment revenue with aerospace and defense parts business. On the competitive front, Amphenol (via its acquisition of CommScope's repeater business) remains a formidable rival, while tightening US and European restrictions on Chinese equipment vendors are cited as a relative tailwind. R&D spending in Q1 2026 reached KRW 9.5bn, or 14.8% of revenue, funding forward investment in AI-native wireless interfaces, 6G, low-earth-orbit satellite-enabled cellular routers, and digital DAS for the European and Japanese markets."
+  "ko": "쏠리드는 이동통신 중계기와 인빌딩 분산안테나시스템(DAS) 등 통신장비를 만드는 업체이며, 방산 자회사 쏠리드윈텍을 통해 군용 통신 사업도 함께 영위한다. 2026년 1분기 매출 637억원 가운데 통신장비 부문은 575억원으로 전체의 90.3%를 차지했다. 국내에서는 SK텔레콤·KT·LG유플러스 등 이동통신 3사에 장비를 납품하는 유일한 공급사라는 점을 강점으로 내세우고 있다. 그러나 매출의 무게중심은 해외에 있다. 2025년 지역별 매출 비중은 미국 31.8%, 유럽 18.4%, 일본 13.8%로, 국내를 제외한 해외 비중이 70%를 웃돌았다. 같은 해 미국 매출은 938억원으로 9.9% 늘었다. 2026년 1분기 지역별 매출은 국내 224억원, 미국 169억원, 유럽 139억원, 일본 81억원이며, 미국과 유럽을 합치면 국내 매출을 넘어섰다. 제품 측면에서는 대형 빌딩·지하철·경기장 등 실내 통신 품질을 높이는 인빌딩 DAS가 핵심이다. 전자신문은 글로벌 DAS 시장에서 쏠리드의 점유율이 약 15.1%로 3위 공급사라고 전했다. 이 밖에 오픈랜과 차세대 하이브리드 DAS, AI-RAN 관련 제품으로 사업 영역을 넓히고 있다. 2025년 통신장비 부문 연구개발비는 453억원으로 전년 366억원보다 늘었고, 매출 대비 비중은 15.4%였다.",
+  "en": "Solid makes telecom equipment, mainly mobile repeaters and in-building distributed antenna systems (DAS), and also runs a defense business through its subsidiary, Solid's defense unit. Telecom equipment accounted for KRW 57.5 billion, or 90.3%, of Q1 2026 revenue of KRW 63.7 billion. In Korea, the company says it is the only supplier delivering equipment to all three mobile carriers, SK Telecom, KT and LG Uplus. Its center of gravity, however, is overseas. In 2025 the revenue mix was 31.8% United States, 18.4% Europe and 13.8% Japan, so sales outside Korea exceeded 70%. US sales rose 9.9% to KRW 93.8 billion in the same year. Q1 2026 regional sales were KRW 22.4 billion in Korea, KRW 16.9 billion in the US, KRW 13.9 billion in Europe and KRW 8.1 billion in Japan, and US plus European sales exceeded domestic sales. The core product is in-building DAS, which improves indoor coverage in large buildings, subway lines and stadiums. Electronic Times reported that Solid holds a global DAS share of about 15.1%, ranking it third. The company is also extending into Open RAN, a next-generation hybrid DAS and AI-RAN products. R&D spending in the telecom equipment segment was KRW 45.3 billion in 2025, up from KRW 36.6 billion a year earlier, equal to 15.4% of segment sales."
  },
  "earnings": {
-  "ko": "연간 실적을 보면 매출은 2022년 2,798억원에서 2023년 3,214억원, 2024년 3,311억원으로 늘었다가 2025년 2,948억원으로 10.9% 감소했고, 영업이익도 2024년 351억원에서 2025년 333억원으로 5.3% 줄었다. 영업이익률은 2022~2025년 10.2~11.3% 구간에서 큰 변화 없이 유지되며 안정적인 마진 구조를 보여준다. 다만 지배주주 순이익은 2024년 461억원에서 2025년 364억원으로 21% 넘게 줄었는데, 이는 영업이익 감소 외에 비영업 요인의 영향이 컸음을 시사한다. 분기별로 보면 2025년 2분기 매출 562억원·영업이익 41억원·순이익 9억원에서 3분기 매출 700억원·영업이익 28억원·순이익 53억원으로 개선됐고, 4분기에는 매출 1,129억원·영업이익 261억원·순이익 271억원으로 연중 가장 강한 실적을 냈다. 이 4분기 실적 집중은 통신 부문 매출이 연말에 몰리는 계절성과 함께 해외 수주 물량 인식이 겹친 결과로 해석된다. 반면 2026년 1분기에는 매출이 637억원으로 전년 대비 늘었음에도 영업손실 21억원을 기록했는데, 국내 통신투자 축소와 방산 자회사 쏠리드윈텍의 사업 전환 공백, 신규 연결자회사 다윈프릭션의 초기 비용이 겹친 결과였다. 그럼에도 1분기 지배주주 순이익은 223억원의 흑자를 냈는데, 이는 대규모 비영업 이익이 반영된 결과로 영업 실적과 순이익 흐름이 크게 엇갈렸음을 보여준다. 2026년 2분기에는 영업이익이 35억원으로 다시 흑자 전환했으나 지배주주 순이익은 -1.4억원으로 소폭 적자를 기록해, 영업 손익과 순이익 간의 괴리가 반복되며 비영업 부문의 변동성이 분기 실적의 핵심 변수로 부각되고 있다.",
-  "en": "Annual revenue rose from KRW 279.8bn in 2022 to KRW 321.4bn in 2023 and KRW 331.1bn in 2024, before falling 10.9% to KRW 294.8bn in 2025, while operating profit declined 5.3% from KRW 35.1bn in 2024 to KRW 33.3bn in 2025. The operating margin stayed in a narrow 10.2%–11.3% band from 2022 through 2025, indicating a fairly stable margin structure. Owners' net income, however, dropped more than 21% from KRW 46.1bn in 2024 to KRW 36.4bn in 2025, suggesting non-operating factors weighed more heavily than the operating decline alone. On a quarterly basis, results improved from Q2 2025 (revenue KRW 56.2bn, operating profit KRW 4.1bn, net income KRW 0.9bn) to Q3 2025 (revenue KRW 70.0bn, operating profit KRW 2.8bn, net income KRW 5.3bn), before peaking in Q4 2025 with revenue of KRW 112.9bn, operating profit of KRW 26.1bn and net income of KRW 27.1bn, the strongest quarter of the year. This year-end concentration reflects both the seasonal skew of telecom revenue toward year-end and the recognition of overseas order volumes. By contrast, Q1 2026 revenue rose year-on-year to KRW 63.7bn but the company swung to an operating loss of about KRW 2.1bn, driven by reduced domestic telecom capex, a business-transition gap at defense subsidiary SOLiD Wintech, and initial costs from newly consolidated Darwin Friction. Even so, Q1 2026 owners' net income was a positive KRW 22.3bn, reflecting sizeable non-operating gains that diverged sharply from the operating result. In Q2 2026, operating profit returned to positive territory at about KRW 3.5bn, yet owners' net income turned slightly negative at roughly KRW -0.14bn, underscoring a recurring gap between operating and net results in which non-operating volatility has become a key swing factor each quarter."
+  "ko": "공시 실적 기준 연간 매출은 2022년 2,798억원에서 2023년 3,214억원(전년 대비 14.9% 증가)으로 늘었고, 2024년 3,311억원(전년 대비 3.0% 증가)으로 2022~2025년 중 가장 큰 해가 됐다. 2025년에는 2,948억원(전년 대비 10.9% 감소)으로 줄었다. 영업이익은 2022년 286억원에서 2023년 363억원(전년 대비 26.8% 증가)으로 2022~2025년 중 가장 큰 해가 됐고, 2024년 351억원(전년 대비 3.1% 감소), 2025년 333억원(전년 대비 5.3% 감소)으로 2024년부터 2025년까지 2년 연속 감소했다. 영업이익률은 2022년 10.2%, 2023년 11.3%, 2024년 10.6%, 2025년 11.3%로, 매출이 줄어든 2025년에도 2024년보다 올랐다. 국내 통신사업자의 투자 축소와 방산 자회사 매출 감소가 2025년 매출 감소 요인으로 꼽혔지만, 해외 실내망 장비 수요가 이를 일부 상쇄했다. 지배주주 순이익은 2022년 298억원에서 2023년 409억원, 2024년 461억원으로 2024년이 가장 컸고, 2025년에는 364억원(전년 대비 21.1% 감소)이었다. 당기순이익은 비지배지분을 포함한 값이라 2024년 462억원, 2025년 364억원으로 지배주주 순이익과 따로 읽어야 한다. 재무 구조는 부채비율 89.8%(2022년)에서 51.9%(2025년)로 낮아졌고, 2025년 말 자본총계는 3,533억원, 부채총계는 1,833억원이다. 영업활동 현금흐름은 2024년 569억원에서 2025년 228억원으로 줄었다. 분기로 보면 2025년 4분기 매출은 1,129억원(전 분기 대비 61.2% 증가), 영업이익은 261억원으로 3분기 대비 급증했다. 이 쏠림은 국방 과제가 연말에 몰리는 구조와 맞물린다고 회사가 설명한 바 있다. 2026년 1분기에는 매출 637억원, 영업손실 21.3억원으로 적자 전환했고, 같은 분기 지배주주 순이익은 223억원이어서 영업 단계와 순손익 단계의 격차가 컸다. 2분기에는 매출 701억원과 영업이익 35.4억원으로 흑자 전환했으나 지배주주 순손실 1.4억원이었다. 3분기는 매출 678억원(전년 동기 대비 3.1% 감소), 영업이익 51.4억원(전년 동기 대비 84.0% 증가)이었고, 지배주주 순손실은 93.5억원으로 전년 동기 대비 적자 전환이다. 최근 4개 분기 지배주주 순이익 합계는 399억원이지만, 이 중 271억원이 2025년 4분기에서 나왔다.",
+  "en": "On the disclosed annual figures, revenue rose from KRW 279.8 billion in 2022 to KRW 321.4 billion in 2023, a 14.9% increase, and reached its high of KRW 331.1 billion in 2024, the largest year of 2022 to 2025. It then fell 10.9% to KRW 294.8 billion in 2025. Operating profit climbed 26.8% to KRW 36.3 billion in 2023, the largest year of the period, and then declined 3.1% to KRW 35.1 billion in 2024 and 5.3% to KRW 33.3 billion in 2025, a two-year decline from 2024 through 2025. The operating margin read 10.2% in 2022, 11.3% in 2023, 10.6% in 2024 and 11.3% in 2025, so it improved in 2025 even as revenue shrank. Company-cited headwinds in 2025 were lower domestic telecom investment and a smaller defense subsidiary business, partly offset by demand for overseas indoor coverage equipment. Profit attributable to controlling shareholders rose from KRW 29.8 billion in 2022 to KRW 40.9 billion in 2023 and KRW 46.1 billion in 2024, the period high, before falling 21.1% to KRW 36.4 billion in 2025. Net income including non-controlling interests is a separate figure, KRW 46.2 billion in 2024 and KRW 36.4 billion in 2025. The debt-to-equity ratio fell from 89.8% in 2022 to 51.9% in 2025, with total equity of KRW 353.3 billion, equity attributable to controlling shareholders of KRW 352.7 billion and total liabilities of KRW 183.3 billion at end-2025. Operating cash flow went from KRW 15.1 billion in 2022 to KRW 56.9 billion in 2024 and then KRW 22.8 billion in 2025. Quarterly sales are heavily weighted to the fourth quarter. Q4 2025 revenue reached KRW 112.9 billion, up 61.2% from Q3, and operating profit jumped to KRW 26.1 billion, which the company linked to defense projects that typically concentrate sales at year-end. Q1 2026 swung to an operating loss of KRW 2.13 billion on revenue of KRW 63.7 billion, while profit attributable to controlling shareholders was KRW 22.3 billion, a wide gap between the operating and net lines. Q2 2026 returned to operating profit of KRW 3.54 billion on revenue of KRW 70.1 billion, but posted a net loss attributable to controlling shareholders of KRW 142 million. Q3 2026 revenue was KRW 67.8 billion, down 3.1% year on year, with operating profit of KRW 5.14 billion, up 84.0%, yet the controlling-shareholder net loss widened to KRW 9.35 billion and turned to a loss from a year earlier. Profit attributable to controlling shareholders over the last four quarters totals KRW 39.9 billion, and KRW 27.1 billion of that came from Q4 2025."
  },
  "industry": {
-  "ko": "글로벌 DAS 및 인빌딩 무선망 시장은 5G 고도화와 트래픽 증가, 대형 시설 내 통신 품질 개선 수요를 바탕으로 성장세를 이어가고 있으며, 쏠리드는 이 시장에서 약 15.1%의 점유율로 세계 3위 공급사 지위를 유지하고 있다. 경쟁 구도에서는 컴스코프의 중계기 사업부를 인수한 미국 암페놀이 여전히 높은 위상을 지니고 있고, 중국 장비 업체에 대한 미국·유럽의 규제 강화가 비중국계 공급사에게 상대적 기회로 작용하고 있다는 분석이 나온다. 전방 시장인 통신사 투자 사이클은 국가별로 엇갈리는 모습을 보이는데, 국내는 5G 인프라가 성숙기에 접어들며 신규 투자가 둔화된 반면 미국은 6월 시작된 FCC AWS-3 주파수 경매를 계기로 투자 재개 기대가 커지고 있다. 글로벌 통신사들이 5G 투자 속도를 조절하는 국면에서도 대형 건물, 지하철, 경기장 등 실내 통신 품질 개선 수요는 꾸준히 이어지고 있어, 뉴트럴 호스트 및 인빌딩 네트워크 중심의 사업 구조가 상대적인 방어력을 제공하고 있다. 오픈랜(O-RAN) 및 향후 AI-RAN 확산 국면에서는 표준화된 개방형 인터페이스에 대한 수요가 늘어날 것으로 전망되며, 쏠리드는 이미 삼성 대상으로 오픈랜 장비를 공급하고 있어 관련 밸류체인에 위치해 있다. 산업 사이클 관점에서는 5G 고도화에서 6G로 넘어가는 세대 전환 국면이 진행 중이며, 이 과정에서 프론트홀 대역폭, 실내망 품질, 광선로 효율성에 대한 요구가 높아질수록 다품목 포트폴리오를 보유한 업체의 경쟁력이 부각될 잠재력이 있다.",
-  "en": "The global DAS and in-building wireless market continues to grow on the back of 5G network densification, rising data traffic, and demand for better indoor coverage at large venues, and SOLiD holds roughly 15.1% share, making it the world's third-largest supplier. On the competitive front, Amphenol, which acquired CommScope's repeater business, remains a formidable rival, while tightening US and European restrictions on Chinese equipment vendors are seen as a relative opportunity for non-Chinese suppliers. Carrier investment cycles diverge by region: domestic 5G infrastructure has matured and new investment has slowed, while in the United States, expectations for renewed capex have grown following the FCC's AWS-3 spectrum auction that began in June. Even as global carriers moderate the pace of 5G investment, demand for improved indoor coverage in large buildings, subways and stadiums has remained steady, giving companies with a neutral-host and in-building network focus a degree of relative resilience. As Open RAN and, eventually, AI-RAN adoption spreads, demand for standardized, open interfaces is expected to increase, and SOLiD already supplies Open RAN equipment to Samsung, placing it within that value chain. From a cycle perspective, the industry is in a generational transition from 5G densification toward 6G, and as requirements for fronthaul bandwidth, indoor network quality and optical efficiency intensify, suppliers with a broader product portfolio have the potential to stand out competitively."
+  "ko": "국내 통신장비 수요는 이동통신 3사의 설비투자 흐름에 크게 좌우된다. 회사는 2026년 1분기에 국내 이동통신 사업자의 설비투자 축소로 내수 매출 회복이 제한됐다고 설명했다. 반면 글로벌 통신사는 5G 투자 속도를 조절하는 중이지만, 대형 건물·지하철·경기장 등 실내 통신 품질 개선 수요는 이어지고 있다고 전자신문이 2026년 5월 보도했다. 통신장비 업계에서도 기지국 중심의 대형 투자가 주춤한 시기에 빌딩·지하철·공공시설 등 실내 커버리지 보강 수요는 상대적으로 견조한 편으로 본다. 이 구조는 2025년 해외 실내망 장비 매출이 국내 투자 둔화를 일부 상쇄한 흐름과 맞닿아 있다. 오픈랜은 5G 무선 접속망의 인터페이스와 소프트웨어를 개방형 표준으로 구축해 특정 제조사 장비에 대한 종속을 줄이는 기술이며, 쏠리드는 오픈랜 장비를 공급하고 있다. 쏠리드는 글로벌 DAS 시장에서 점유율 약 15.1%로 3위 공급사라는 위치를 가진다. 2025년 12월 하나증권은 국내 주파수 재할당을 수혜 요인으로 꼽은 리포트를 냈다. 다만 주파수 재할당의 구체적인 일정과 규모는 확인되지 않아 수혜 크기로 단정할 수 없다. 국내 투자와 해외 실내망 수요라는 두 축이 어떻게 균형을 이루는지가 업황 판단의 기준이 된다.",
+  "en": "Domestic telecom equipment demand depends heavily on capital spending by the three mobile carriers. The company said that in Q1 2026 reduced domestic carrier investment limited the recovery of domestic sales. Meanwhile, Electronic Times reported in May 2026 that global carriers are pacing their 5G spending, while demand for better indoor coverage in large buildings, subway lines and stadiums continues. Industry observers also view indoor coverage upgrades in buildings, subways and public facilities as relatively steady when base-station investment slows. This structure is consistent with 2025, when overseas indoor-network equipment sales partly offset weaker domestic investment. Open RAN is a technology that builds the 5G radio access interface and software as open standards to reduce dependence on a single equipment maker, and Solid supplies Open RAN equipment. Solid ranks third among global DAS suppliers with a share of about 15.1%. In December 2025, Hana Securities published a report that cited domestic frequency reallocation as a potential beneficiary. The timing and scale of that reallocation are not confirmed, so its size as a benefit cannot be stated with confidence. The balance between domestic investment and overseas indoor demand is the core reference for judging the sector."
  },
  "outlook": {
-  "ko": "회사는 2026년을 '상저하고' 흐름으로 규정하며, 1분기 부진을 거쳐 하반기로 갈수록 실적이 회복되는 패턴을 예상한다고 밝혔다. 회사 측은 미국·유럽을 중심으로 한 해외 통신장비 사업이 순조롭게 진행 중이며, 관련 모멘텀을 가속화할 계획이라고 설명했다. 미국 자회사 SOLiD Gear는 2월 172억원 규모의 신규 제품공급계약(PO)을 체결했고, 이는 2024년 연결 매출의 5%를 웃도는 규모로 상반기 중 전량 공급을 완료하는 일정으로 진행됐다. 6월 개시된 FCC AWS-3 주파수 경매에는 AT&T, Verizon, T-Mobile 등 주요 사업자가 참여했으며, 경매 이후 미국 통신사들의 투자 재개가 국내 통신장비 업체들의 수혜로 이어질 수 있다는 기대가 시장에서 형성되어 있다. 회사는 트래픽 처리 용량을 늘린 장비로의 교체 수요와 중소형 인빌딩 장비 신제품 개발을 병행하고 있으며, DAS 내부에 RU를 결합한 하이브리드 DAS를 국책과제를 통해 연말 개발 완료를 목표로 하고 있다. 4월에는 과학기술정보통신부의 6G 산업기술개발 사업 중 'AI-Native 무선 인터페이스' 과제의 주관연구개발기관으로 최종 선정되어 서울대·KAIST·포항공대·UNIST·연세대·중앙대와 TTA, LG유플러스가 참여하는 산학연 컨소시엄을 이끌게 됐으며, 사업비 86억 5,000만원 규모로 2028년 12월까지 진행된다. 방산 부문에서는 쏠리드윈텍의 군 위성통신 및 저궤도·정지궤도 위성통신 단말·모듈 사업, 다윈프릭션의 항공·전차·고속철도 브레이크 마찰재 사업이 통신장비 매출의 변동성을 보완하는 축으로 자리잡을지가 관전 포인트다. 3월에는 신한투자증권을 계약기관으로 17억 6,400만원 규모의 자기주식취득 신탁계약을 체결해 2027년 3월까지 주주가치 제고 조치를 이어가고 있다.",
-  "en": "The company has characterized 2026 as a year of a weaker first half followed by a stronger second half, expecting results to recover as the year progresses after a soft first quarter. Management said its overseas telecom equipment business centered on the United States and Europe is progressing smoothly and that it plans to accelerate that momentum. US subsidiary SOLiD Gear signed a new purchase order worth about KRW 17.2bn in February, a sum exceeding 5% of 2024 consolidated revenue, with delivery scheduled to be completed in the first half. The FCC's AWS-3 spectrum auction, which opened in June, drew participation from major carriers including AT&T, Verizon and T-Mobile, and the market has built expectations that renewed US carrier investment following the auction could benefit domestic telecom equipment makers. The company is simultaneously pursuing replacement demand for higher-capacity equipment and developing new small- and mid-sized in-building products, and is targeting year-end completion of a hybrid DAS that integrates a radio unit into its DAS platform under a national R&D program. In April, it was selected as the lead research institution for an \"AI-Native wireless interface\" project under the Ministry of Science and ICT's 6G industrial technology development program, leading a consortium that includes Seoul National University, KAIST, POSTECH, UNIST, Yonsei University, Chung-Ang University, the Telecommunications Technology Association (TTA) and LG Uplus, with a project budget of about KRW 8.65bn running through December 2028. In the defense segment, whether SOLiD Wintech's military and low-earth-orbit/geostationary satellite terminal and module business and Darwin Friction's aerospace, tank and high-speed rail brake friction materials business can become a stabilizing counterweight to telecom equipment revenue volatility remains a key watch point. In March, the company signed a treasury stock acquisition trust worth about KRW 1.76bn with Shinhan Investment as the contracted institution, continuing shareholder value measures through March 2027."
+  "ko": "회사는 2026년 2분기 실적 회복을 위해 북미·유럽 통신장비 매출을 확대하고 군 위성통신·오픈랜 등 신규 사업을 키운다는 계획을 2026년 5월 밝혔다. 같은 시점에 회사는 2026년 하반기 반등을 노린다고 설명했다. 실제로 2분기는 영업이익 35.4억원으로 흑자 전환했고, 3분기는 영업이익 51.4억원으로 전년 동기 대비 84.0% 늘었다. 그러나 지배주주 순손실이 2분기 1.4억원, 3분기 93.5억원으로 이어져 영업 단계의 개선이 순손익으로 이어지지 않았다. 수주 측면에서는 2026년 1분기 분기보고서 기준 수주 잔고가 북미 2,004만달러, 유럽 1,455만달러였다. 회사는 인빌딩 DAS, 오픈랜, AI-RAN 관련 수요 확대에 대응하겠다는 방침을 밝혔다. 연구개발비는 2026년 1분기 95억원으로 매출의 14.8% 수준이었고, 차세대 통신장비 연구개발 투자는 지속된다고 회사가 밝혔다. 방산 부문은 전술정보통신체계 중심 사업에서 군 위성통신 관련 사업으로 옮겨 가는 과정에서 실적 공백이 생겼다. 이 전환이 끝나 매출이 다시 잡히는 시점이 방산 실적의 확인 지점이다. 글로벌 통신사의 5G 투자 속도 조절이 계속되는지도 해외 수주 속도를 가르는 변수다. 2026년 4분기부터는 연말 집중 구조가 다시 나타나는지가 연간 흐름의 관건이다.",
+  "en": "In May 2026 the company said it would expand telecom equipment sales in North America and Europe and grow new businesses such as military satellite communications and Open RAN to restore Q2 results. It also said it aimed for a rebound in the second half. Q2 2026 did return to operating profit of KRW 3.54 billion, and Q3 operating profit rose 84.0% year on year to KRW 5.14 billion. However, net losses attributable to controlling shareholders of KRW 142 million in Q2 and KRW 9.35 billion in Q3 show that the operating-level improvement has not carried through to the net line. Per the Q1 2026 quarterly report, the order backlog stood at USD 20.04 million in North America and USD 14.55 million in Europe. The company said it would respond to rising demand for in-building DAS, Open RAN and AI-RAN, and R&D spending was KRW 9.5 billion in Q1 2026, or 14.8% of revenue. In defense, the shift from tactical information communication systems to military satellite communications created a gap in results, and the point at which that transition completes and revenue resumes is the checkpoint for the defense segment. Whether global carriers keep pacing 5G spending remains a variable for the speed of overseas orders. Whether the year-end concentration of sales reappears in Q4 2026 will shape the full-year picture."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 순자산가치 대비 완만한 프리미엄이 형성된 구간에서 거래되고 있으며, 최근 수년간 이어진 안정적인 영업이익 창출이 그 배경으로 꼽힌다. 하나증권은 5월 20일 리포트에서 쏠리드에 대해 투자의견 매수와 12개월 목표주가 30,000원을 제시했고, 통신 부문이 여전히 영업 흑자를 유지하고 있다는 점과 미국·유럽 위상 강화를 근거로 들었다. 미래에셋증권은 5월 27일 신규 커버리지 리포트에서 투자의견 매수와 목표주가 27,000원을 제시하며, 2026년 매출액 3,881억원(+31.6% YoY)과 영업이익 458억원(+37.6% YoY) 전망을 근거로 제시했다. 다만 이러한 목표주가는 각 증권사가 제시 시점 기준으로 산출한 수치로, 이후 주가와 펀더멘털 변화에 따라 달라질 수 있다는 점은 유의할 필요가 있다. 배당 측면에서는 회사가 매년 현금배당을 실시해왔으나, 절대적인 배당수익률 수준은 업종 내 성장주 대비 크지 않은 편으로 알려져 있다. 결국 밸류에이션 판단은 영업이익률 회복 속도, 방산·비통신 부문의 정상화 시점, 해외 수주 가시성 등 펀더멘털 지표의 변화를 어떻게 해석하느냐에 따라 달라질 수 있는 영역이다.",
-  "en": "The current share price trades at a modest premium to net asset value, a level attributed to the company's track record of stable operating profit generation in recent years. Hana Securities, in a report dated May 20, presented a buy rating and a 12-month target price of KRW 30,000, citing continued operating profitability in the telecom segment and strengthening positioning in the United States and Europe. Mirae Asset Securities, initiating coverage on May 27, set a buy rating with a target price of KRW 27,000, based on its 2026 forecast of KRW 388.1bn in revenue (+31.6% YoY) and KRW 45.8bn in operating profit (+37.6% YoY). It should be noted that these target prices were calculated as of each firm's respective publication date and may change as the share price and underlying fundamentals evolve. On the dividend front, the company has paid a cash dividend annually, though its absolute dividend yield is understood to be modest compared with growth-oriented peers in the sector. Ultimately, valuation judgments in this name hinge on how one interprets the pace of operating margin recovery, the timing of normalization in the defense and non-telecom segments, and the visibility of overseas order intake."
+  "ko": "쏠리드의 배수는 최근 이익 흐름에 따라 해석 폭이 달라지는 구간에 있다. 2025년 연간 기준으로는 지배주주 순이익이 364억원으로 300억원대 이상을 유지했지만, 2026년 들어 2개 분기 연속 지배주주 순손실이 나오면서 이익 기반 배수의 의미가 흔들린다. 최근 네 개 분기 지배주주 순이익 합계는 흑자이나, 그 대부분이 2025년 4분기에 몰려 있어 분기별 이익의 편차가 크다. 주가순자산비율은 과거 증권사 리포트 표에서 1배 안팎으로 제시된 연도가 있었다. 2026년 4월 하나증권 리포트 표는 2026년 추정 주가순자산비율을 2025년 실적 기준 수준보다 높게 표시했다. 즉 장부상 자기자본 대비 프리미엄이 붙은 구간이며, 이 프리미엄이 이익 회복으로 설명되는지가 사실 비교의 핵심이다. 배당수익률은 낮은 수준이어서 총수익에서 배당이 차지하는 비중은 작은 편이다.",
+  "en": "Solid's valuation multiples sit in a range where interpretation shifts with the recent earnings trend. On the annual figures, profit attributable to controlling shareholders stayed at KRW 36.4 billion in 2025, but two straight quarters of net losses in 2026 have made earnings-based multiples harder to read. The last four quarters total a profit, yet most of it came from Q4 2025, so quarterly earnings are volatile. The price-to-book ratio was presented at around 1x in some past years in broker reports. An April 2026 Hana Securities report table showed the 2026 estimated price-to-book ratio higher than the level implied by 2025 results. The stock therefore trades at a premium to book value, and the key factual question is whether earnings recovery accounts for that premium. The dividend yield is low, so dividends make up a small part of total return."
  },
  "bull": [
   {
    "title": {
-    "ko": "폭넓게 분산된 해외 고객망",
-    "en": "Broadly Diversified Overseas Customer Base"
+    "ko": "해외 중심 수익 구조",
+    "en": "Overseas-weighted earnings base"
    },
    "body": {
-    "ko": "쏠리드는 국내외 통신 3사 외에도 유럽·아시아 다수 통신사와 북미·유럽의 뉴트럴 호스트 사업자를 다수 고객으로 확보하고 있어 특정 통신사나 시스템통합업체(SI)에 대한 매출 집중도가 낮은 편이다. 이러한 판매망 다변화는 개별 통신사의 투자 지연이 전체 실적에 미치는 영향을 완화하는 요인으로 작용해왔다. 실제로 2022~2024년 3년 연속 안정적인 영업이익을 낸 배경으로도 이 다변화된 판매 구조가 꼽힌다.",
-    "en": "Beyond the three domestic carriers, SOLiD counts numerous European and Asian telecom operators and North American and European neutral-host operators among its customers, reducing dependence on any single carrier or systems integrator. This diversified distribution structure has historically cushioned the impact of any one carrier delaying investment. It is also cited as a key reason the company sustained stable operating profit over multiple consecutive years."
+    "ko": "2025년 국내를 제외한 해외 매출 비중은 70%를 웃돌았고, 미국 매출은 938억원으로 9.9% 늘었다. 같은 해 영업이익률은 11.3%로 2022년 10.2%보다 높았다. 매출이 10.9% 줄어든 해에도 이익률이 올라간 점은 해외 실내망 장비 수요가 국내 투자 둔화를 일부 상쇄했다는 회사 측 설명과 맞닿아 있다.",
+    "en": "Sales outside Korea exceeded 70% of 2025 revenue, and US sales rose 9.9% to KRW 93.8 billion. The operating margin reached 11.3% in 2025, up from 10.2% in 2022. The margin rose even as revenue fell 10.9%, which lines up with the company's account that overseas indoor-network demand partly offset weaker domestic investment."
    }
   },
   {
    "title": {
-    "ko": "6G·오픈랜 R&D 파이프라인 확대",
-    "en": "Expanding 6G and Open RAN R&D Pipeline"
+    "ko": "오픈랜·DAS 제품 확장",
+    "en": "Expansion into Open RAN and DAS products"
    },
    "body": {
-    "ko": "미국 자회사 SOLiD Gear는 NTIA의 와이어리스 이노베이션 펀드 오픈랜 프로젝트 사업자로 선정되며 미국 정부로부터 재정 지원을 받게 됐고, 국내에서는 과학기술정보통신부의 6G AI-Native 무선 인터페이스 과제 주관기관으로 선정되어 국내 주요 대학·기관과 협력체계를 구축했다. 이러한 국책과제 참여는 직접적인 매출로 곧바로 연결되진 않지만 연구개발 비용 부담을 낮추고 장기 기술 경쟁력을 다지는 효과가 있다. 오픈랜을 이미 삼성 대상으로 공급하고 있다는 점도 향후 AI-RAN 확산 국면에서의 위치를 뒷받침한다.",
-    "en": "US subsidiary SOLiD Gear was selected for an NTIA Wireless Innovation Fund Open RAN project and will receive US government funding, while domestically the parent was chosen to lead a 6G AI-native wireless interface project under the Ministry of Science and ICT, building a consortium with major domestic universities and institutions. Such national R&D participation does not translate directly into near-term revenue but can lower the company's own R&D cost burden and strengthen long-term technical competitiveness. Its existing Open RAN supply relationship with Samsung also supports its positioning as AI-RAN adoption expands."
+    "ko": "2025년 통신장비 부문 연구개발비는 453억원으로 전년 366억원보다 늘었고, 매출 대비 비중은 15.4%로 올라갔다. 오픈랜 장비 공급과 차세대 하이브리드 DAS 개발이 병행되고 있다. 2026년 1분기 연구개발비는 95억원으로 매출의 14.8% 수준이었다. 제품 폭이 넓어지면 특정 국가의 통신 투자 사이클에 대한 노출이 분산될 수 있다는 점이 강세 논리의 한 축이다.",
+    "en": "R&D spending in the telecom equipment segment reached KRW 45.3 billion in 2025, up from KRW 36.6 billion, and its share of sales rose to 15.4%. The company is supplying Open RAN equipment while developing next-generation hybrid DAS. Q1 2026 R&D was KRW 9.5 billion, or 14.8% of revenue. A broader product set could spread exposure to any single country's telecom investment cycle, which is one pillar of the bullish case."
    }
   },
   {
    "title": {
-    "ko": "주주환원 조치 지속",
-    "en": "Continued Shareholder Return Measures"
+    "ko": "재무 체력과 해외 수주 잔고",
+    "en": "Balance sheet and overseas order backlog"
    },
    "body": {
-    "ko": "2026년 3월 신한투자증권을 계약기관으로 17억 6,400만원 규모의 자기주식취득 신탁계약을 체결했으며, 계약 기간은 2027년 3월까지로 설정되어 있다. 이는 이익 규모에 견줘 크지 않은 금액이지만 회사가 주주가치 제고에 대한 관심을 표명한 조치로 해석할 수 있다. 계약 진행 상황과 실제 매입 실적은 향후 공시를 통해 확인이 가능하다.",
-    "en": "In March 2026, the company signed a treasury stock acquisition trust worth about KRW 1.76bn with Shinhan Investment as the contracted institution, with the agreement running through March 2027. While modest relative to the company's profit scale, it can be read as a signal of management's attention to shareholder value. Progress on the trust and actual share purchases can be tracked through subsequent disclosures."
+    "ko": "2025년 말 부채비율은 51.9%로 2022년 89.8%에서 낮아졌고, 부채총계는 1,833억원, 자본총계는 3,533억원이다. 2026년 1분기 말 분기보고서 기준 수주 잔고는 북미 2,004만달러, 유럽 1,455만달러로 해외 프로젝트 물량이 남아 있다. 자본 기반이 커진 만큼 적자 분기가 이어져도 재무 여력을 갖췄다는 해석이 가능하다.",
+    "en": "The debt-to-equity ratio fell from 89.8% in 2022 to 51.9% at end-2025, with liabilities of KRW 183.3 billion and total equity of KRW 353.3 billion. The Q1 2026 quarterly report shows a backlog of USD 20.04 million in North America and USD 14.55 million in Europe. With a larger equity base, the company could be read as having financial capacity even through loss-making quarters."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "국내 통신투자 위축",
-    "en": "Domestic Telecom Capex Contraction"
+    "ko": "국내 통신 투자 축소",
+    "en": "Shrinking domestic telecom capex"
    },
    "body": {
-    "ko": "국내 5G 인프라가 성숙기에 접어들면서 주요 통신사들의 장비 발주가 줄었고, 이는 2026년 1분기 영업손실 전환의 핵심 원인 중 하나로 지목됐다. 국내 매출이 224억원 수준에 머문 반면 해외 매출은 이를 웃돌아 사업 구조상 해외 의존도가 더 높아지는 모습이다. 국내 투자 회복 시점이 불확실한 상태에서는 실적 개선의 균형점이 해외 사업에 크게 의존할 수밖에 없다.",
-    "en": "As domestic 5G infrastructure has matured, orders from major carriers have declined, and this was cited as a key factor behind the swing to an operating loss in Q1 2026. Domestic revenue stayed around KRW 22.4bn, below combined overseas revenue, deepening the business's reliance on international markets. With the timing of a domestic investment recovery uncertain, the balance of any earnings improvement is likely to depend heavily on overseas business."
+    "ko": "국내 이동통신 3사의 설비투자 축소로 2026년 1분기 내수 매출 회복이 제한됐다. 2025년 국내 매출 비중은 37%에서 29%로 낮아졌다. 국내 비중이 줄어드는 만큼 실적은 해외 수주 일정, 환율, 해외 통신사의 투자 속도에 더 민감해지는 구조다.",
+    "en": "Reduced capex by the three domestic carriers limited the recovery of domestic sales in Q1 2026. The domestic share of sales fell from 37% to 29% in 2025. As that share shrinks, results become more sensitive to overseas order timing, exchange rates and the investment pace of foreign carriers."
    }
   },
   {
    "title": {
-    "ko": "방산 자회사 사업 전환기 리스크",
-    "en": "Transition Risk at the Defense Subsidiary"
+    "ko": "적자 분기 누적",
+    "en": "Accumulating loss-making quarters"
    },
    "body": {
-    "ko": "방산 자회사 쏠리드윈텍이 기존 전술정보통신체계(TICN) 중심 사업에서 군 위성통신 관련 사업으로 옮기는 과정에서 실적 공백이 발생했다. 여기에 신규 연결자회사 다윈프릭션의 초기 비용과 인건비, 해외 신규 장비 세일즈·마케팅 비용까지 겹쳐 2026년 1분기 연결 영업손실 규모를 키웠다. 사업 전환이 완료되고 신규 매출이 본격화되기까지 걸리는 시간에 대한 불확실성이 남아 있다.",
-    "en": "A business transition at defense subsidiary SOLiD Wintech, moving from its legacy tactical information communication system (TICN) focus toward military satellite communication, created a revenue gap. This was compounded by initial costs and personnel expenses at newly consolidated Darwin Friction and sales and marketing costs for new overseas products, widening the consolidated operating loss in Q1 2026. Uncertainty remains over how long it will take for the transition to complete and new revenue to ramp up."
+    "ko": "2026년 2분기와 3분기에 지배주주 순손실이 이어져 2개 분기 연속 적자다. 3분기 영업이익은 51.4억원으로 전년 동기 대비 84.0% 늘었지만, 지배주주 순손실은 93.5억원으로 전년 동기 대비 적자 전환이다. 영업 단계의 회복이 순손익으로 연결되지 않는 점은 이익의 질에 대한 질문을 남긴다.",
+    "en": "Net losses attributable to controlling shareholders in Q2 and Q3 2026 make it two consecutive loss-making quarters. Q3 operating profit rose 84.0% year on year to KRW 5.14 billion, but the controlling-shareholder net loss of KRW 9.35 billion turned a year-earlier profit into a loss. The failure of the operating recovery to reach the net line raises questions about earnings quality."
    }
   },
   {
    "title": {
-    "ko": "분기별 실적 변동성",
-    "en": "Quarterly Earnings Volatility"
+    "ko": "이익·현금흐름 둔화",
+    "en": "Slowing profit and cash flow"
    },
    "body": {
-    "ko": "회사 실적은 연중 4분기에 매출과 이익이 집중되는 계절성을 보이며, 2026년 1분기와 2분기처럼 영업이익과 순이익의 방향이 서로 엇갈리는 경우도 나타난다. 비영업 손익 요인이 특정 분기의 순이익을 크게 좌우하는 구조는 단일 분기 실적만으로 연간 추세를 판단하기 어렵게 만든다. 이러한 변동성은 수주 잔고와 프로젝트 인식 시점에 따라 매 분기 되풀이될 소지가 있다.",
-    "en": "The company's results show seasonality with revenue and profit concentrated in the fourth quarter, and in quarters such as Q1 and Q2 2026, operating profit and net income have even moved in opposite directions. A structure in which non-operating items can heavily sway a single quarter's net income makes it difficult to read the annual trend from any one quarter's results. Such volatility could recur each quarter depending on order backlog and project revenue-recognition timing."
+    "ko": "영업이익은 2023년 363억원을 정점으로 2024년부터 2025년까지 2년 연속 감소했다. 영업활동 현금흐름도 2024년 569억원에서 2025년 228억원으로 줄었다. 4분기에 매출이 몰리는 구조여서 연간 실적은 4분기 결과에 크게 좌우된다.",
+    "en": "Operating profit has fallen for two consecutive years through 2025 after peaking at KRW 36.3 billion in 2023. Operating cash flow dropped from KRW 56.9 billion in 2024 to KRW 22.8 billion in 2025. Because sales concentrate in the fourth quarter, full-year results depend heavily on Q4 outcomes."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "업황·수요 리스크",
-    "en": "Industry and Demand Risk"
+    "ko": "해외 투자 사이클 의존",
+    "en": "Dependence on overseas investment cycles"
    },
    "body": {
-    "ko": "글로벌 통신사들의 5G 투자 속도 조절이 이어지고 있으며, 미국 FCC 경매 이후 실제 투자 집행 시점과 규모가 기대에 못 미칠 가능성이 있다. 국내 통신투자 축소가 언제 회복될지도 불확실하다. 이는 회사가 제시한 '상저하고' 흐름의 실현 여부에 직접적인 영향을 줄 수 있는 변수다.",
-    "en": "Global carriers continue to moderate the pace of 5G investment, and the actual timing and scale of capex following the US FCC auction could fall short of expectations. It is also uncertain when domestic telecom investment will recover. These are direct variables affecting whether the company's projected weaker-first-half, stronger-second-half pattern materializes."
+    "ko": "해외 매출 비중이 70%를 웃도는 만큼 미국·유럽·일본 통신사의 투자 속도가 실적을 좌우한다. 글로벌 통신사가 5G 투자 속도를 조절하면 수주 시점이 밀려 분기 매출이 흔들릴 수 있다. 2025년 1분기 일본 매출은 고객사 발주 일정 지연으로 64.4% 줄었던 사례가 있다.",
+    "en": "With more than 70% of sales overseas, earnings depend on how quickly carriers in the United States, Europe and Japan invest. If global carriers slow 5G spending, order timing can slip and quarterly sales can swing. In Q1 2025, Japanese sales fell 64.4% after a customer delayed purchase orders."
    }
   },
   {
-   "cat": {
-    "ko": "지정학·통상 리스크",
-    "en": "Geopolitical and Trade Risk"
-   },
    "body": {
-    "ko": "미국·유럽의 관세 정책 변화나 통상 환경 변화는 수출 비중이 높은 쏠리드의 매출 구조에 직접적인 영향을 줄 수 있다. 중국 장비 규제가 반사 수혜로 거론되지만, 규제 방향이 바뀌거나 경쟁사의 대응이 빨라질 경우 그 효과는 제한될 수 있다. 국가별 정책 변화에 대한 노출도가 상존한다.",
-    "en": "Changes in US and European tariff policy or the broader trade environment could directly affect SOLiD's revenue structure, given its high export exposure. While restrictions on Chinese equipment vendors are cited as a relative tailwind, that effect could be limited if regulatory direction shifts or competitors respond more quickly. Exposure to country-specific policy changes persists."
+    "ko": "국방 과제 매출이 연말에 몰리는 구조 때문에 2025년 4분기 매출은 1,129억원으로 3분기 700억원보다 크게 높았다. 반대로 2026년 1분기에는 매출이 637억원으로 줄며 영업손실이 났다. 분기 단위 수익성의 진폭이 커서 연간 수치만으로는 분기 흐름을 설명하기 어렵다.",
+    "en": "Because defense project revenue tends to concentrate at year-end, Q4 2025 revenue of KRW 112.9 billion far exceeded Q3's KRW 70 billion. In Q1 2026, revenue fell to KRW 63.7 billion and the company posted an operating loss. Quarterly profitability swings widely, so full-year figures alone cannot explain the quarterly pattern."
+   },
+   "cat": {
+    "ko": "분기 실적 계절성과 변동성",
+    "en": "Quarterly seasonality and volatility"
    }
   },
   {
-   "cat": {
-    "ko": "사업 다각화·통합 리스크",
-    "en": "Diversification and Integration Risk"
-   },
    "body": {
-    "ko": "쏠리드윈텍의 사업 전환과 다윈프릭션의 신규 편입은 중장기적으로 포트폴리오를 다각화하는 효과가 있지만, 단기적으로는 통합 비용과 실적 공백을 수반할 수 있다. 신규 사업이 기대한 만큼의 매출 기여를 하지 못할 경우 연결 실적에 부담을 줄 수 있다. 통합 과정에서의 비용 관리와 실행력이 관건이다.",
-    "en": "SOLiD Wintech's business transition and the integration of Darwin Friction can diversify the portfolio over the medium to long term, but in the near term they may involve integration costs and revenue gaps. If the new businesses fail to contribute revenue as expected, this could weigh on consolidated results. Cost management and execution during the integration process are key."
+    "ko": "방산 자회사 쏠리드윈텍은 전술정보통신체계 중심 사업에서 군 위성통신 관련 사업으로 옮기는 과정에서 실적 공백이 생겼다. 신규 연결 자회사 편입에 따른 초기 비용과 인건비, 해외 신규 장비 출시를 위한 마케팅 비용이 1분기 수익성에 반영됐다. 전환이 완료되기 전까지 수익성 변동 요인으로 남는다.",
+    "en": "The defense subsidiary moved from tactical information communication systems toward military satellite communications, which left a gap in its results. Start-up costs and staff costs from a newly consolidated subsidiary, plus marketing spending for new overseas equipment, weighed on Q1 2026 profitability. Until that transition is complete, it remains a source of earnings volatility."
+   },
+   "cat": {
+    "ko": "방산 사업 전환과 연결 편입 비용",
+    "en": "Defense transition and consolidation costs"
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중",
-    "en": "Around November 2026"
+    "ko": "2027년 2월 말 전후(통상 시기)",
+    "en": "Late February 2027 (expected timing)"
    },
    "what": {
-    "ko": "3분기 실적 발표(분기보고서)에서 통신 부문의 영업 흑자 지속 여부와 방산 자회사 사업 전환의 정상화 정도를 확인해야 한다.",
-    "en": "Q3 earnings disclosure should be checked for whether the telecom segment sustains operating profitability and how far the defense subsidiary's business transition has normalized."
+    "ko": "2026년 4분기 및 연간 잠정 실적 발표. 지난해 연간 잠정 실적은 2026년 2월 26일에 공시됐다. 2026년 연간 영업이익이 2024년부터 이어진 2년 연속 감소 흐름을 끊는지, 4분기 매출 집중이 반복되는지가 확인 지점이다.",
+    "en": "Release of preliminary Q4 and full-year 2026 results. Last year's preliminary annual results were disclosed on February 26, 2026. Whether 2026 operating profit breaks the two-year decline and whether Q4 sales concentration repeats are the points to check."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기",
-    "en": "Q4 2026"
+    "ko": "2027년 3월 31일까지",
+    "en": "By March 31, 2027"
    },
    "what": {
-    "ko": "6월 개시된 FCC AWS-3 주파수 경매 이후 미국 통신사들의 실제 설비투자 집행 시점과 규모, 그리고 이것이 쏠리드 수주로 연결되는지를 살펴봐야 한다.",
-    "en": "Following the FCC's AWS-3 spectrum auction that began in June, it is worth monitoring when and how much US carriers actually execute capex, and whether this translates into orders for SOLiD."
+    "ko": "2026년 사업보고서 제출. 정기보고서로 확정되는 연간 지배주주 순이익과 영업 외 항목, 연말 수주 잔고와 지역별 매출 비중을 확인하는 자료다. 3분기 영업이익과 순손익 사이의 격차가 연간 기준에서 어떻게 정리되는지가 핵심이다.",
+    "en": "Filing of the 2026 annual business report. It confirms full-year profit attributable to controlling shareholders, non-operating items, year-end backlog and regional sales mix. The key is how the gap between Q3 operating profit and net profit is resolved on an annual basis."
    }
   },
   {
    "when": {
-    "ko": "2026년 12월 말경",
-    "en": "Around late December 2026"
+    "ko": "2027년 5월 15일까지",
+    "en": "By May 15, 2027"
    },
    "what": {
-    "ko": "국책과제를 통해 개발 중인 하이브리드 DAS(DAS+RU 통합) 신제품의 개발 완료 여부와 이후 상용화·수주 연계 계획을 확인해야 한다.",
-    "en": "The completion status of the hybrid DAS (integrated DAS+RU) product being developed under a national R&D program, and subsequent commercialization and order plans, should be checked."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 3월 12일 이전",
-    "en": "Before March 12, 2027"
-   },
-   "what": {
-    "ko": "신한투자증권을 통해 체결한 자기주식취득 신탁계약(2026년 3월~2027년 3월)의 진행 상황과 실제 매입 실적을 공시를 통해 확인해야 한다.",
-    "en": "Progress and actual purchase results under the treasury stock acquisition trust with Shinhan Investment (March 2026–March 2027) should be checked through subsequent disclosures."
-   }
-  },
-  {
-   "when": {
-    "ko": "2028년 12월까지 순차적으로",
-    "en": "Progressively through December 2028"
-   },
-   "what": {
-    "ko": "과학기술정보통신부 6G 국책과제(AI-Native 무선 인터페이스)의 중간 성과와 기술 검증(TRL) 단계 진행 상황을 단계적으로 점검해야 한다.",
-    "en": "Interim results and technology readiness level (TRL) validation progress of the Ministry of Science and ICT's 6G national project (AI-native wireless interface) should be checked progressively."
+    "ko": "2027년 1분기 분기보고서 제출. 2026년 1분기 영업손실 이후 분기 흐름이 반등하는지, 국내 통신 투자 축소와 방산 사업 전환이 수익성에 어떤 영향을 주는지 확인하는 자료다.",
+    "en": "Filing of the Q1 2027 quarterly report. It shows whether quarterly results rebound from the Q1 2026 operating loss and how domestic capex cuts and the defense transition are affecting profitability."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "쏠리드는 2022~2025년 3년 넘게 300억원대 영업이익을 유지해온 안정적인 이익 창출 구조를 갖고 있으나, 2025년에는 매출과 영업이익이 전년 대비 감소했고 2026년 1분기에는 국내 투자 축소와 방산 자회사 사업 전환 영향으로 영업손실을 기록했다. 2분기에는 영업이익이 흑자로 돌아섰지만 지배주주 순이익은 소폭 적자를 보이며 비영업 요인의 변동성이 두드러졌다. 강세 요인으로는 폭넓게 분산된 해외 고객망, 6G·오픈랜 국책과제 참여를 통한 장기 R&D 파이프라인, 자기주식취득을 통한 주주환원 조치가 있다. 반대로 약세 요인으로는 국내 통신투자 위축, 방산 자회사의 사업 전환기 불확실성, 계절성과 비영업 요인에 따른 분기 실적 변동성이 꾸준히 지목된다. 증권가에서는 하나증권과 미래에셋증권이 각각 목표주가를 제시하며 해외 매출 확대와 미국 통신사 투자 재개 기대를 근거로 들었지만, 이는 각 사의 특정 시점 전망이며 이후 실적과 수주 흐름에 따라 달라질 수 있는 수치다. 결국 투자 판단은 하반기 해외 수주의 실제 실현 속도, 국내 투자 회복 시점, 방산·비통신 부문의 정상화 여부라는 세 갈래의 확인 과제에 달려 있다.",
-   "en": "SOLiD has built a track record of stable profit generation, maintaining operating profit above KRW 30bn for more than three consecutive years from 2022 through 2025, though both revenue and operating profit declined year-on-year in 2025, and Q1 2026 swung to an operating loss amid a domestic investment slowdown and a defense subsidiary's business transition. Operating profit returned to positive territory in Q2 2026, but owners' net income was slightly negative, highlighting the outsized role of non-operating volatility. Bullish factors include a broadly diversified overseas customer base, a long-term R&D pipeline built through participation in 6G and Open RAN national projects, and shareholder return measures via a treasury stock acquisition trust. Bearish factors consistently cited include the contraction in domestic telecom investment, uncertainty during the defense subsidiary's business transition, and quarterly earnings volatility driven by seasonality and non-operating items. In the brokerage community, Hana Securities and Mirae Asset Securities each set target prices citing expected overseas revenue expansion and renewed US carrier investment, but these are point-in-time forecasts from each firm that could change with subsequent earnings and order flow. Ultimately, the investment picture hinges on three things to verify: the actual pace of second-half overseas order realization, the timing of any domestic investment recovery, and whether the defense and non-telecom segments normalize."
+   "ko": "쏠리드는 해외 매출 비중이 70%를 웃도는 구조에서 2025년 영업이익률 11.3%를 기록하며 수익성을 지켰다. 연간 영업이익은 2023년 363억원을 정점으로 2024년부터 2025년까지 2년 연속 감소했고, 지배주주 순이익도 2025년 364억원으로 줄었다. 분기 흐름은 4분기 집중 구조가 뚜렷했고, 2026년 1분기 영업손실에 이어 2분기와 3분기에는 지배주주 순손실이 이어졌다. 3분기 영업이익이 51.4억원으로 회복된 점은 긍정적 신호지만, 순손익까지 이어지지 않은 점이 이 구간의 핵심 차이다. 재무 측면에서는 부채비율이 2022년 89.8%에서 2025년 51.9%로 낮아졌고, 2025년 말 자본총계는 3,533억원이다. 강세 요인은 해외 수익 구조, 오픈랜과 DAS 중심의 제품 확장, 해외 수주 잔고이고, 약세 요인은 국내 통신 투자 축소, 방산 사업 전환, 적자 분기의 누적이다. 다음 확인 지점은 2026년 사업보고서에서 영업이익과 지배주주 순이익의 차이를 만든 항목과, 2027년 1분기 지역별 매출 비중이다. 본 리포트는 정보 제공을 목적으로 하며 투자의견을 포함하지 않는다.",
+   "en": "Solid kept its 2025 operating margin at 11.3% on a base where sales outside Korea exceed 70%. Annual operating profit peaked at KRW 36.3 billion in 2023 and then fell for two consecutive years through 2025, while profit attributable to controlling shareholders fell to KRW 36.4 billion in 2025. Quarterly results were heavily concentrated in Q4, and after an operating loss in Q1 2026, the controlling-shareholder line posted net losses in Q2 and Q3. The return to KRW 5.14 billion in Q3 operating profit is a positive sign, but its failure to reach the net line is the central difference in this period. On the balance sheet, the debt-to-equity ratio fell from 89.8% in 2022 to 51.9% in 2025, with total equity of KRW 353.3 billion at end-2025. The bullish factors are the overseas earnings base, product expansion in Open RAN and DAS, and the overseas order backlog. The bearish factors are shrinking domestic telecom investment, the defense business transition and the accumulation of loss-making quarters. The next checkpoints are the items that explain the gap between operating and controlling-shareholder net profit in the 2026 annual report, and the regional sales mix in the Q1 2027 report. This report is for information only and does not include an investment opinion."
   }
  },
  "sources": [
-  "https://m.thinkpool.com/stockDiscuss/050890/cont/11827722",
-  "https://news.nate.com/view/20251021n05043",
-  "https://securities.miraeasset.com/bbs/download/2144830.pdf?attachmentId=2144830",
-  "https://www.dailyinvest.kr/news/articleView.html?idxno=70547",
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=050890",
-  "https://www.junggi.co.kr/news/articleView.html?idxno=35725",
-  "https://alphasquare.co.kr/home/stock-summary?code=050890",
-  "https://www.hanaw.com/main/research/research/download.cmd?bbsSeq=1284561&attachFileSeq=1&bbsId=&dbType=&bbsCd=2224",
-  "https://m.thinkpool.com/compDiscuss/cont/1016048",
-  "https://www.globalepic.co.kr/view.php?ud=2025102114365629595ebfd494dd_29",
+  "https://www.tradingkey.com/kr/news/transcripts/262272791-",
   "https://www.investing.com/equities/solid-inc-earnings",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260515001784&docno=&viewerhost=",
-  "https://news.infostock.co.kr/a",
-  "https://www.valley.town/space/@timegem/articles/6791ec0ff07a459284595226",
-  "https://www.newspim.com/news/view/20260527000593",
-  "https://alphadistill.com/report/497",
-  "https://alphadistill.com/report/364",
-  "https://www.stockplus.com/m/stocks/KOREA-A050890"
+  "https://www.hanaw.com/main/research/research/download.cmd?bbsSeq=1286265&attachFileSeq=1&bbsId=&dbType=&bbsCd=2224",
+  "https://www.newsis.com/view/NISX20260226_0003528444",
+  "https://securities.miraeasset.com/bbs/download/2144830.pdf?attachmentId=2144830",
+  "https://file.alphasquare.co.kr/media/pdfs/market-report/%EC%8F%A0%EB%A6%AC%EB%93%9C%EC%B5%9C%EC%86%8C%ED%95%9C20260312%ED%95%98%EB%82%98%EC%A6%9D%EA%B6%8C.",
+  "https://m.news.nate.com/view/20260226n37557",
+  "https://www.hanaw.com/main/research/research/download.cmd?bbsSeq=1286787&attachFileSeq=1&bbsId=&dbType=&bbsCd=2224",
+  "https://www.etnews.com/20260518000265",
+  "https://www.etnews.com/20260407000365",
+  "https://www.etnews.com/20250515000280",
+  "https://eduinfom.com/invest/22587/",
+  "https://www.hanaw.com/main/research/research/download.cmd?bbsSeq=1285204&attachFileSeq=1&bbsId=&dbType=&bbsCd=2224",
+  "https://www.etoday.co.kr/news/view/2234898",
+  "https://www.etoday.co.kr/news/view/1064933",
+  "https://alphasquare.co.kr/home/stock-summary?code=050890",
+  "https://m.thinkpool.com/compDiscuss/cont/1025283",
+  "https://www.calculator.io.kr/kor/708"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "050890",
  "name": "쏠리드",
  "name_en": "Solid, Inc.",
@@ -233,11 +213,11 @@
   "통신"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 06:36",
- "dataDate": "20260904",
+ "reportDate": "2026-11-14",
+ "reportTs": "2026-11-14 09:25",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-08-21",
+  "asOf": "2026-11-13",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -248,6 +228,7 @@
     "np_owner": 36432873160,
     "equity": 353338614123,
     "equity_owner": 352716374574,
+    "equity_nci": 622239549,
     "liab": 183334094895,
     "cfo": 22837487502,
     "eps_basic": 610,
@@ -263,6 +244,7 @@
     "np_owner": 46148160066,
     "equity": 322835242958,
     "equity_owner": 322254077465,
+    "equity_nci": 581165493,
     "liab": 173963839514,
     "cfo": 56907888035,
     "eps_basic": null,
@@ -278,6 +260,7 @@
     "np_owner": 40869847914,
     "equity": 273027046409,
     "equity_owner": 272529463691,
+    "equity_nci": 497582718,
     "liab": 184221247469,
     "cfo": 54821123399,
     "eps_basic": null,
@@ -293,6 +276,7 @@
     "np_owner": 29841317960,
     "equity": 228875014938,
     "equity_owner": 228875014938,
+    "equity_nci": 0,
     "liab": 205460154959,
     "cfo": 15117566371,
     "eps_basic": null,
@@ -303,16 +287,10 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 56222016651,
-    "op": 4142342138,
-    "np_owner": 940596245
-   },
-   {
     "q": "2025Q3",
     "rev": 70006352623,
     "op": 2790865304,
-    "np_owner": 5322413799
+    "np_owner": 5274696653
    },
    {
     "q": "2025Q4",
@@ -331,26 +309,36 @@
     "rev": 70130784805,
     "op": 3536137933,
     "np_owner": -142271457
+   },
+   {
+    "q": "2026Q3",
+    "rev": 67838898455,
+    "op": 5135898786,
+    "np_owner": -9348800406
    }
   ],
   "valuation": {
-   "price": 8520,
-   "mcap": 0.5176,
+   "price": 8620,
+   "mcap": 0.5237,
    "shares": 60756534,
    "total_shares": 60756534,
-   "wavg_shares": 59963526,
-   "per": 9.498,
-   "eps": 897,
-   "pbr": 1.3619,
-   "bps": 6256,
-   "roe_ttm": 15.7,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": 54555426395,
-   "pbr_krx": 1.54,
+   "wavg_shares": 59989392,
+   "per": 13.14,
+   "eps": 656,
+   "pbr": 1.4434,
+   "bps": 5972,
+   "roe_ttm": 11.7,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": 39884212190,
+   "ccy": "KRW",
+   "bps_src": "자체",
+   "eps_src": "순이익÷주식수",
+   "pbr_krx": 1.46,
    "bps_krx": 5886.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 50.0,
-   "div": 0.59
+   "div": 0.58
   }
- }
+ },
+ "textRules": 2
 }

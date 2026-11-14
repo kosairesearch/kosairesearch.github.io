@@ -1,220 +1,226 @@
 {
  "title": {
-  "ko": "실적 턴어라운드와 재무 부담의 교차로",
-  "en": "Earnings Turnaround Meets Balance-Sheet Strain"
+  "ko": "DDI 의존 탈피 중인 LB세미콘, 퀄컴 증설과 적자 공존",
+  "en": "LB Semicon: Qualcomm Ramp Against a Still-Loss-Making Base"
  },
  "lead": {
-  "ko": "LB세미콘은 2026년 1분기와 2분기 연속으로 영업이익·순이익 흑자전환에 성공했지만, 2025년의 대규모 순손실과 상승한 부채비율이라는 재무 부담을 동시에 안고 있다.",
-  "en": "LB Semicon posted consecutive operating and net profit turnarounds in the first and second quarters of 2026, but it still carries the financial burden of a large 2025 net loss and a rising debt ratio."
+  "ko": "LB세미콘은 2026년 1분기 영업이익이 흑자로 돌아섰고 퀄컴 물량과 비DDI 후공정을 키우고 있지만, 2023년 이후 누적된 손실과 차입 부담이 아직 실적 회복의 폭을 제한하고 있다.",
+  "en": "LB Semicon returned to quarterly operating profit in the first quarter of 2026 and is expanding its Qualcomm and non-DDI packaging business, but cumulative losses and debt still limit the pace of recovery."
  },
  "keypoints": [
   {
-   "ko": "2026년 1분기·2분기 연속 영업이익·지배주주순이익 흑자전환, 매출도 4개 분기 연속 증가세",
-   "en": "Operating and controlling-interest net profit turned positive for two consecutive quarters in 2026Q1-Q2, with revenue rising for four straight quarters"
+   "ko": "매출은 2023년 4,169억원을 저점으로 2024년부터 2025년까지 2년 연속 증가했으나, 영업손실은 2023년부터 2025년까지 3년 연속 이어졌다. 2025년 영업손실은 398억원이다.",
+   "en": "Revenue rose for two consecutive years from 2024 to 2025 after the 2023 low of KRW 416.9 billion, but operating losses continued for three consecutive years from 2023 to 2025, with the 2025 operating loss at KRW 39.8 billion."
   },
   {
-   "ko": "2025년은 LB루셈 합병 관련 자산손상차손 등의 영향으로 지배주주순이익 -1,508억원의 대규모 적자 기록",
-   "en": "FY2025 posted a large controlling-interest net loss of about KRW 150.9 billion, driven partly by an impairment charge tied to the LB Rusem merger"
+   "ko": "2026년 1분기 영업이익 76.4억원으로 흑자 전환했으나, 3분기에는 영업이익이 23.9억원으로 줄고 지배주주 순손실 39.9억원으로 다시 적자 전환했다.",
+   "en": "Operating profit turned positive at KRW 7.64 billion in the first quarter of 2026, but in the third quarter operating profit fell to KRW 2.39 billion and net income attributable to controlling shareholders swung back to a net loss of KRW 3.99 billion."
   },
   {
-   "ko": "부채비율은 2023년 116.1%→2024년 132.8%→2025년 153.3%로 3년 연속 상승",
-   "en": "The debt ratio rose for three straight years, from 116.1% in 2023 to 132.8% in 2024 and 153.3% in 2025"
+   "ko": "퀄컴과 10년 장기 공급계약(MSA)을 맺고 2026년 8월 초 양산에 들어갔으며, 비DDI 200mm 웨이퍼 생산능력을 2028년까지 월 2만 6,000장에서 3만 6,000장으로 늘리는 계획이 보도됐다.",
+   "en": "The company signed a ten-year supply agreement with Qualcomm, began mass production in early August 2026, and is reported to be raising its 200mm non-DDI wafer capacity from 26,000 to 36,000 wafers per month by 2028."
   },
   {
-   "ko": "퀄컴향 첫 제품 출하, ASE코리아와의 턴키 협력, 르네사스 전력반도체 양산 등 비-DDI·해외 고객 다변화 진행",
-   "en": "Non-DDI and overseas customer diversification is progressing via a first Qualcomm shipment, a turnkey tie-up with ASE Korea, and Renesas power-semiconductor volume production"
-  },
-  {
-   "ko": "2026년 유상증자(신주 1,200만주)와 전환사채 발행으로 설비 투자 재원을 확보했으나 지분 희석 요인 존재",
-   "en": "A 2026 rights offering (12 million new shares) and convertible bond issuance secured capex funding, but they also carry dilution implications"
+   "ko": "부채비율은 2022년 101.3%에서 2025년 153.3%로 올랐고, 2025년 말 부채총계는 4,141억원이다. 2025년 3분기 말 기준 1년 내 상환해야 할 차입금은 2,400억원을 넘는 것으로 보도됐다.",
+   "en": "The debt ratio rose from 101.3% in 2022 to 153.3% in 2025, with total liabilities of KRW 414.1 billion at the end of 2025, and press reports put debt due within one year at over KRW 240 billion as of the end of the third quarter of 2025."
   }
  ],
  "business": {
-  "ko": "LB세미콘은 반도체 후공정(OSAT) 전문기업으로, 웨이퍼 상태의 칩에 금속 범프를 형성하는 범핑(Bumping), 개별 칩의 전기적 성능을 판별하는 웨이퍼 테스트, 그리고 최종 패키징까지 이어지는 백엔드(Back-End) 공정을 핵심 사업으로 영위한다. 2024년 연결 기준 전체 매출액 가운데 반도체 부문이 97.0%, 이차전지 재생 사업이 3.0%를 차지했으며, 반도체 부문 내에서도 범프 사업이 매출의 대부분을 이루는 구조다. 오랫동안 디스플레이구동칩(DDI) 후공정에 집중해왔고 삼성전자와 LX세미콘을 핵심 고객사로 두고 있어 특정 고객사에 대한 매출 의존도가 높은 편이었다. 회사는 이 같은 구조에서 벗어나기 위해 전력관리반도체(PMIC), 이미지센서(CIS), 애플리케이션프로세서(AP)·시스템온칩(SoC) 테스트 등 비-DDI 영역으로 포트폴리오를 넓히고 있다. 2025년 2월에는 계열 패키징사인 LB루셈을 흡수합병해 구미 공장에서 칩온필름(COF) 패키지와 파이널 테스트까지 자체 수행하는 턴키 대응 체계를 구축했다. 2025년 8월에는 세계 최대 OSAT 업체인 ASE코리아와 범핑·테스트-패키징을 나눠 맡는 턴키 협력 체계를 발표했으며, 같은 시기 르네사스의 전력반도체 후공정 양산도 본격화하고 있다. 2026년 9월 초에는 퀄컴으로부터 AI 데이터센터 및 차량용 반도체 관련 첫 제품 출하를 알리며 비-DDI·해외 고객 기반을 넓히는 모습이다. 이 외에 배터리 소재 재활용을 다루는 자회사(구 진성리텍)를 통해 2차전지 재생 사업도 소규모로 병행하고 있다.",
-  "en": "LB Semicon is an outsourced semiconductor assembly and test (OSAT) specialist whose core operations span bumping (forming metal bumps on wafer-level chips), wafer testing to screen individual chip performance, and back-end packaging processes. In fiscal 2024, the semiconductor segment accounted for 97.0% of consolidated revenue on a controlling basis, with secondary-battery recycling making up the remaining 3.0%, and within the semiconductor segment bump-related sales made up the bulk of revenue. The company has long been centered on display driver IC (DDI) back-end services, with Samsung Electronics and LX Semicon as key customers, resulting in a historically high customer concentration. To diversify away from this structure, LB Semicon has been expanding into non-DDI areas such as power management IC (PMIC), CMOS image sensor (CIS), and application processor (AP)/system-on-chip (SoC) testing. In February 2025 the company absorbed its affiliated packaging unit LB Rusem, establishing an in-house turnkey capability that covers chip-on-film (COF) packaging and final test at its Gumi plant. In August 2025 it announced a turnkey partnership with ASE Korea, the world's largest OSAT operator, under which LB Semicon handles bumping and wafer test while ASE Korea handles packaging, around the same time it ramped up power-semiconductor back-end production for Renesas. In early September 2026 the company disclosed its first product shipment to Qualcomm for AI data-center and automotive semiconductor applications, extending its non-DDI and overseas customer base. Alongside these, it also runs a smaller secondary-battery material recycling business through a subsidiary formerly known as Jinsung Retec."
+  "ko": "LB세미콘은 2000년에 설립된 반도체 후공정(OSAT) 전문기업이며, 2011년부터 코스닥에 상장되어 있다. 최대주주 등 특수관계인이 보유한 지분은 28.17%로 가장 크다. 회사가 내세우는 핵심 경쟁력은 범핑(Bumping)부터 웨이퍼 테스트, 백엔드 패키징까지 한 번에 처리하는 턴키 체계다. 자회사 LB루셈을 흡수합병하면서 범핑과 테스트를 맡던 LB세미콘과 웨이퍼 후면 연삭·패키지를 맡던 LB루셈의 공정이 한 회사 안으로 들어왔다. 매출의 중심은 여전히 디스플레이구동칩(DDI) 후공정이다. 2026년 상반기 누적 기준으로 매출의 70% 이상이 DDI 제품에서 나왔다. 과거 보도에서는 삼성전자와 LX세미콘 두 곳에 대한 매출 의존도가 73.06%로 집계됐고, 디스플레이 업황에 실적이 크게 흔들리는 구조가 약점으로 지적됐다. 이 구조를 바꾸기 위해 회사는 비DDI 시스템반도체와 전력반도체로 사업을 넓히고 있다. 르네사스(Renesas)의 전력반도체 후공정 양산이 본격화됐고, 퀄컴(Qualcomm)향 PMIC 후공정은 2026년 8월 초 양산에 들어가 8월 말 첫 출하가 이뤄졌다. 해외 매출 비중은 과거 보도에서 10% 수준으로 제시됐으며, 회사는 3년 안에 40%까지 높이겠다는 목표를 밝힌 바 있다. 경쟁 구도는 고객사 물량에 따라 좌우되는 구조여서, 범핑·테스트 역량과 신규 고객 인증 확보가 차별화 요소로 꼽힌다.",
+  "en": "LB Semicon is an outsourced semiconductor assembly and test (OSAT) company founded in 2000 and listed on KOSDAQ since 2011. Related parties of the largest shareholder hold 28.17% of the shares. The company's core strength is a turnkey service covering bumping, wafer test and back-end packaging in one place. Following the absorption merger of its subsidiary LB Lusem, the bumping and test processes previously run by LB Semicon and the wafer back-grinding and package processes run by LB Lusem now sit within a single company. Display driver IC (DDI) back-end work remains the centerpiece of revenue, with more than 70% of first-half 2026 revenue coming from DDI products. Earlier press reports put dependence on Samsung Electronics and LX Semicon at 73.06% of revenue, and identified sensitivity of earnings to display market swings as a weakness. To change this mix, the company is expanding into non-DDI system semiconductors and power semiconductors. Mass production of back-end packaging for Renesas power semiconductors has ramped up, and back-end work for Qualcomm PMICs entered mass production in early August 2026, with first shipments completed at the end of that month. Overseas sales were reported at about 10% of revenue, and the company has stated a goal of raising that to 40% within three years. Competition is shaped by customer volumes, and bumping and test capability together with new customer qualifications are cited as differentiators."
  },
  "earnings": {
-  "ko": "연간 실적을 보면 2022년 매출 5,246억원, 영업이익 568억원(영업이익률 10.8%)으로 견조했던 흐름이 2023년 매출 4,169억원(-20.5%), 영업손실 127억원으로 급격히 꺾였다. 2024년에는 매출이 4,509억원(+8.2%)으로 회복됐지만 영업손실은 188억원으로 오히려 확대됐고, 지배주주순손실도 222억원으로 커졌다. 2025년에는 매출이 4,798억원(+6.4%)까지 늘었음에도 영업손실이 398억원(영업이익률 -8.3%)으로 크게 확대됐고, 지배주주순손실은 1,509억원에 달하는 대규모 적자를 기록했다. 이는 LB루셈 흡수합병 이후 손상평가에서 인식된 대규모 비현금성 자산손상차손이 반영된 결과로, 2025년 4분기 한 개 분기에서만 지배주주순손실 1,345억원이 발생하며 연간 실적을 크게 훼손했다. 반면 최근 분기 흐름은 뚜렷한 변화를 보인다. 2025년 3분기 매출 1,256억원, 영업손실 63억원으로 적자 폭이 줄었고, 2026년 1분기에는 매출 1,343억원(전년 동기 대비 증가), 영업이익 76억원, 지배주주순이익 102억원으로 영업·순이익 모두 흑자전환에 성공했다. 2026년 2분기에도 매출 1,449억원, 영업이익 131억원, 지배주주순이익 88억원을 기록하며 2개 분기 연속 흑자 기조를 이어갔다. DDI 후공정 경쟁사들의 생산능력 축소로 발주 물량이 LB세미콘에 집중된 효과와 전력반도체·CIS·AP 테스트 등 비-DDI 매출 확대가 최근 실적 개선의 주된 배경으로 지목된다. 다만 연간 현금흐름을 보면 영업활동현금흐름이 2022년 1,240억원에서 2023년 808억원, 2024년 520억원, 2025년 95억원으로 매년 큰 폭으로 축소돼 왔다는 점도 함께 살펴볼 대목이다.",
-  "en": "On an annual basis, revenue and profitability were solid in 2022 at KRW 524.6 billion and an operating profit of KRW 56.8 billion (10.8% operating margin), but performance deteriorated sharply in 2023 with revenue falling 20.5% to KRW 416.9 billion and an operating loss of KRW 12.7 billion. Revenue recovered in 2024 to KRW 450.9 billion (+8.2%), yet the operating loss widened to KRW 18.8 billion and the controlling-interest net loss grew to KRW 22.2 billion. In 2025, revenue rose further to KRW 479.8 billion (+6.4%), but the operating loss expanded sharply to KRW 39.8 billion (-8.3% margin) and the controlling-interest net loss ballooned to KRW 150.9 billion. This reflected a large non-cash impairment charge recognized after the LB Rusem absorption merger, with a single quarter, 2025Q4, contributing a controlling-interest net loss of KRW 134.5 billion that weighed heavily on the full-year result. Quarterly trends have since shifted noticeably: the loss narrowed in 2025Q3 to KRW 6.3 billion on revenue of KRW 125.6 billion, and by 2026Q1 the company posted revenue of KRW 134.3 billion with an operating profit of KRW 7.6 billion and a controlling-interest net profit of KRW 10.2 billion, marking a turnaround on both lines. In 2026Q2 revenue rose further to KRW 144.9 billion with an operating profit of KRW 13.1 billion and a controlling-interest net profit of KRW 8.8 billion, sustaining two consecutive profitable quarters. Capacity reductions among DDI back-end competitors that redirected orders toward LB Semicon, along with expanding non-DDI sales in power semiconductors, CIS, and AP testing, are cited as the main drivers of the recent improvement. Worth noting alongside this, however, is that operating cash flow has shrunk sharply each year, from KRW 124.0 billion in 2022 to KRW 80.8 billion in 2023, KRW 52.0 billion in 2024, and KRW 9.5 billion in 2025."
+  "ko": "공시 실적 기준 매출은 2022년 5,246억원에서 2023년 4,169억원(전년 대비 20.5% 감소)으로 줄었고, 2024년 4,509억원(전년 대비 8.2% 증가), 2025년 4,798억원(전년 대비 6.4% 증가)으로 2024년부터 2025년까지 2년 연속 증가했다. 2022~2025년 중 가장 큰 해는 2022년이고 가장 작은 해는 2023년이다. 영업이익은 2022년 568억원(영업이익률 10.8%)에서 2023년 영업손실 127억원으로 적자 전환했고, 2024년 영업손실 188억원, 2025년 영업손실 398억원으로 손실 폭이 커졌다. 영업이익률은 2023년 -3.0%, 2024년 -4.2%, 2025년 -8.3%로 떨어졌다. 지배주주 순이익은 2022년 402억원에서 2023년 지배주주 순손실 159억원으로 전환된 뒤, 2024년 순손실 222억원, 2025년 순손실 1,509억원으로 확대됐다. 2025년 당기순손실(비지배지분 포함)도 1,509억원이다. 과거 보도는 2025년 실적 악화의 배경으로 디스플레이 업황 부진이 LX세미콘을 거쳐 LB세미콘까지 연쇄적으로 번진 점, 고객사의 단가 인하 압박, 금 가격 상승에 따른 원재료비 부담을 꼽았다. 분기 흐름은 2025년 3분기 영업손실 62.8억원, 4분기 영업손실 262억원으로 손실이 커졌고, 4분기 지배주주 순손실은 1,345억원이었다. 2026년 들어 1분기 영업이익 76.4억원(흑자 전환), 2분기 131억원(전 분기 대비 71.5% 증가)으로 회복됐다. 3분기에는 매출 1,285억원(전 분기 대비 11.3% 감소)으로 줄며 영업이익이 23.9억원으로 낮아졌고, 지배주주 순손실은 39.9억원이었다. 최근 4개 분기 지배주주 순손실 합계는 1,195억원이다. 자본총계는 2,700억원이고 그중 지배주주 지분은 2,660억원이다. 영업활동 현금흐름은 2022년 1,240억원에서 2025년 95.3억원으로 줄었다. 2025년 4분기 순손실 1,345억원의 항목별 구성은 공시 실적 표만으로 나눌 수 없어 사업보고서 주석에서 확인할 대상이다.",
+  "en": "On the disclosed figures, revenue fell from KRW 524.6 billion in 2022 to KRW 416.9 billion in 2023, a 20.5% decline, then rose 8.2% to KRW 450.9 billion in 2024 and 6.4% to KRW 479.8 billion in 2025, which is two consecutive years of growth from 2024 to 2025. Among 2022 to 2025, 2022 was the largest year and 2023 the smallest. Operating profit was KRW 56.8 billion in 2022, a 10.8% margin, and turned into an operating loss of KRW 12.7 billion in 2023, followed by an operating loss of KRW 18.8 billion in 2024 and KRW 39.8 billion in 2025, a widening loss. The operating margin moved from -3.0% in 2023 to -4.2% in 2024 and -8.3% in 2025. Net income attributable to controlling shareholders went from KRW 40.2 billion in 2022 to a net loss of KRW 15.9 billion in 2023, KRW 22.2 billion in 2024 and KRW 150.9 billion in 2025. Net loss including non-controlling interests was also KRW 150.9 billion in 2025. Earlier press reports attributed the 2025 deterioration to a display market slump that spread from LX Semicon to LB Semicon, pressure from customers to cut prices, and higher raw material costs tied to gold prices. Quarterly, the company posted an operating loss of KRW 6.28 billion in the third quarter of 2025 and KRW 26.2 billion in the fourth quarter, when net loss attributable to controlling shareholders reached KRW 134.5 billion. In 2026, operating profit was KRW 7.64 billion in the first quarter, turning positive, and KRW 13.1 billion in the second quarter, up 71.5% from the prior quarter. In the third quarter revenue fell 11.3% from the prior quarter to KRW 128.5 billion, operating profit dropped to KRW 2.39 billion, and net loss attributable to controlling shareholders was KRW 3.99 billion. The net loss attributable to controlling shareholders for the last four quarters totals KRW 119.5 billion. Total equity was KRW 270 billion at the end of 2025, of which KRW 266 billion belonged to controlling shareholders. Operating cash flow fell from KRW 124 billion in 2022 to KRW 9.53 billion in 2025. The disclosed figures do not break down the KRW 134.5 billion fourth-quarter 2025 net loss by item, so the composition is a matter for the notes to the annual report."
  },
  "industry": {
-  "ko": "반도체 후공정(OSAT) 산업은 대규모 설비투자와 오랜 기간의 고객 신뢰 축적이 필요해 후발주자의 진입이 어려운 자본집약적 장치산업으로 평가된다. 생성형 AI 시장 성장과 AI 가속기의 수요 증가로 후공정 업계 실적이 가시화되고 있으며, IT OLED 가동률 상승과 AI PC 확산에 따라 DDI 후공정 시장의 안정적 성장이 지속 중이고, AI 모멘텀이 서버에서 PC·스마트폰으로 확장되며 첨단 패키징 부문이 범용 패키징 시장 규모를 넘어서는 추세다. 국내 DDI 후공정 경쟁사 일부가 생산능력을 축소하면서 관련 발주가 LB세미콘으로 집중되는 반사 효과도 나타나고 있다. 세계 최대 OSAT인 ASE와는 경쟁보다는 협력 관계를 택해 범핑·테스트와 패키징을 분업하는 턴키 체계를 구축한 점도 산업 내 포지셔닝의 특징이다. 범핑 생산설비 가동률은 2025년 1분기 기준 65.3% 수준으로 파악되며, 이후 협력 확대와 물량 증가에 따라 개선 여지가 있는 것으로 언급된다. 다만 DDI 의존적 사업 구조는 TV·스마트폰·모니터 등 전방 IT 세트 수요 변동에 실적이 연동되는 구조적 특성을 남기고 있어, 비-DDI 다각화의 속도가 향후 경쟁 구도에서 중요한 변수로 꼽힌다.",
-  "en": "The OSAT industry is generally viewed as a capital-intensive sector requiring large-scale equipment investment and years of accumulated customer trust, making it difficult for new entrants to break in. Generative AI-driven demand and the expansion of AI accelerators have been improving results across the back-end industry, while rising utilization at IT OLED lines and the spread of AI PCs have supported stable growth in the DDI back-end market, with AI momentum extending from servers to PCs and smartphones and advanced packaging now exceeding the scale of the general packaging market. Capacity reductions by some domestic DDI back-end competitors have also redirected order flow toward LB Semicon. Notably, rather than competing directly with ASE, the world's largest OSAT operator, LB Semicon has chosen a collaborative division of labor, handling bumping and testing while ASE manages packaging under a turnkey arrangement. Bump-line utilization stood at around 65.3% as of the first quarter of 2025, with room for improvement cited as cooperation and order volumes expand further. That said, the company's continued reliance on DDI leaves its results tied to fluctuations in downstream IT set demand such as TVs, smartphones, and monitors, making the pace of non-DDI diversification a key variable for its future competitive position."
+  "ko": "LB세미콘의 주력 시장인 DDI 후공정은 디스플레이 패널 업황에 직접 연동된다. 과거 보도에 따르면 LG디스플레이의 실적 악화가 LX세미콘을 거쳐 LB세미콘으로 이어졌고, LB세미콘은 LX세미콘의 DDI 후공정 상당량을 담당하고 있다. 2025년 보도에서는 금 가격이 2023년 3분기 대비 80% 가까이 올랐고 도금용액도 40% 이상 상승해 원가 부담이 커졌다고 전해졌다. 같은 DDI 체인에 있는 LX세미콘의 2026년 3분기 실적은 매출 3,360억원, 영업손실 156억원으로 전년 동기 대비 적자로 돌아섰으며, 회사는 전방 산업 수요 둔화와 가격 인하 압박을 원인으로 들었다. 이는 DDI 후공정 전체의 수요와 단가가 아직 회복 국면에 들어섰다고 보기 어려운 신호로 읽힌다. 한편 2025년 보도에서는 시장 수요 악화로 한 생산 라인의 설계 투자가 임시 중단됐다고 전해졌다. 비DDI 영역에서는 AI 데이터센터와 차량용 PMIC 수요가 후공정 물량의 새 축으로 거론된다. 퀄컴의 AI 데이터센터용과 차량용 PMIC 후공정을 LB세미콘이 맡고 있어, 이 영역은 전방 산업의 확장과 직접 연결된다. 같은 OSAT 업계의 다른 상장사들도 고부가 패키징으로 무게를 옮기고 있어 경쟁은 기술과 고객 인증 중심으로 옮겨가는 모습이다. 다만 LB세미콘의 비DDI 매출 규모는 공시와 보도에서 구체적으로 확인되지 않아 사업 비중은 정성적으로 보아야 한다.",
+  "en": "LB Semicon's core DDI back-end business moves with display panel cycles. Earlier press reports said a profit slump at LG Display spread through LX Semicon to LB Semicon, and that LB Semicon handles a large share of LX Semicon's DDI back-end work. A 2025 report said gold prices had risen nearly 80% from the third quarter of 2023 and plating solution costs more than 40%, raising the cost burden. LX Semicon, in the same DDI chain, reported a third-quarter 2026 operating loss of KRW 15.6 billion on revenue of KRW 336.0 billion, turning to a loss year on year, which the company linked to weaker demand from downstream industries and price-cut pressure. That suggests DDI back-end demand and pricing have not clearly entered a recovery. A 2025 report also said one production line's design investment had been temporarily halted because of weak market demand. In non-DDI areas, AI data center and automotive PMIC demand is cited as a new volume base, and LB Semicon handles back-end work for Qualcomm's AI data center and automotive PMIC products, which links this segment to downstream expansion. Other listed OSAT companies are also shifting toward high-value packaging, so competition is moving toward technology and customer qualification. The size of LB Semicon's non-DDI revenue was not confirmed in disclosures or reports, so its weight in the business should be read qualitatively."
  },
  "outlook": {
-  "ko": "회사는 2025년부터 매출 5,000억원과 영업이익 흑자전환을 목표로 제시해왔고, 2026년 1분기와 2분기 실적으로 이를 실제로 달성하는 모습을 보였다. 중장기적으로는 2027년 후공정 매출 1조원 달성과 글로벌 OSAT 톱10 진입을 비전으로 내세우고 있으며, 현재 10% 수준에 머무는 해외 매출 비중을 확대하겠다는 계획도 밝힌 바 있다. 이를 위한 재원 마련 차원에서 2026년 2월 145억원 규모의 전환사채(전환가액 4,285원)를 발행했고, 이어 보통주 1,200만주 규모의 유상증자(발행가 4,125원)를 진행해 2026년 8월 신주 상장을 마쳤다. 회사는 이번 유상증자로 확보한 재원을 범프·백엔드 신규 설비 투자에 투입해 물량 확대에 대응할 생산능력을 단계적으로 확충하겠다는 계획을 밝혔다. 퀄컴향 초도 출하는 기술 검토와 품질경영시스템 심사, 신뢰성 검증 등 약 2년에 걸친 인증 절차를 거쳐 이뤄진 것으로, 향후 협력 확대 여지가 있다고 회사 측은 설명했다. 르네사스와의 전력반도체 후공정 양산, ASE코리아와의 턴키 협력 등 비-DDI·해외 고객 기반 확대도 병행되는 흐름이다. 다만 이러한 신규 라인 증설과 고객 다변화가 실제 매출·수익성 개선으로 이어지는 속도와 규모는 향후 분기 실적을 통해 확인이 필요한 부분이다.",
-  "en": "The company set a target of KRW 500 billion in revenue and a return to operating profit starting in 2025, and its 2026Q1 and Q2 results show it actually achieving that turnaround. Over the medium to long term, management has set a vision of reaching KRW 1 trillion in back-end revenue and a top-10 global OSAT ranking by 2027, alongside a stated plan to raise its overseas revenue share from its current level of around 10%. To fund this, the company issued a KRW 14.5 billion convertible bond (conversion price of KRW 4,285) in February 2026, followed by a rights offering of 12 million common shares (issue price of KRW 4,125) that completed its new-share listing in August 2026. LB Semicon has said the proceeds from the rights offering will go toward new bump and back-end equipment investment to expand production capacity in stages to meet anticipated volume growth. The initial Qualcomm shipment followed roughly two years of technical review, quality management system audits, and reliability qualification, and the company has indicated room for expanded cooperation going forward. Expansion of the non-DDI and overseas customer base is also proceeding in parallel through Renesas power-semiconductor back-end production and the ASE Korea turnkey partnership. That said, how quickly and how substantially these new lines and diversified customers translate into actual revenue and margin improvement is something that will need to be confirmed through upcoming quarterly results."
+  "ko": "회사가 확인한 가장 큰 변화는 퀄컴 물량이다. 퀄컴의 기술 검토와 품질경영시스템(QMS) 심사, 신뢰성 검증을 거쳐 2026년 8월 양산 승인을 받았고, 이후 퀄컴 전용 생산라인을 구축했다. 보도에 따르면 퀄컴과의 장기 공급계약에서는 금액과 납기를 미리 정하지 않고 퀄컴이 발주서를 내면 생산능력 범위에서 공급하는 구조이며, 예비 생산능력 10%를 상시 확보해야 한다. 2026년 8월 유상증자로 342억 6,000만원을 조달했고, 이 가운데 시설자금 300억원을 범핑(248억원)과 백엔드(52억원) 공정에 투입한다. 2026년 1분기 실적 발표 때 약 500억원 규모로 발표된 증자는 8월에 이렇게 실제 조달액이 줄어든 형태로 마무리됐다. 보도에서는 퀄컴향 PMIC 매출이 2028년까지 500억원 수준으로 늘 것이라는 업계 전망도 나왔으나, 이는 회사 공식 가이던스가 아니다. 회사는 2026년 하반기부터 글로벌 고객사향 제품 양산을 본격화하고 2027년까지 단계적으로 설비를 확장하겠다는 계획을 밝혔다. 르네사스 전력반도체 양산도 같은 흐름에 속한다. 2025년 초 보도에서 회사는 그해 매출 5,000억원과 영업이익 흑자 전환을 목표로 밝혔지만, 공시된 2025년 실적은 매출 4,798억원, 영업손실 398억원이었다. 2026년 상반기 실적은 매출이 전년 동기 대비 20.0% 늘고 영업이익과 당기순이익이 모두 흑자 전환했다는 집계가 있다. 경영진은 전력반도체와 비DDI 등 고부가 후공정으로 사업 구조를 바꾸겠다는 방침을 되풀이하고 있다.",
+  "en": "The most concrete change the company has disclosed is the Qualcomm volume. After passing Qualcomm's technical review, quality management system audit and reliability verification, the company received mass production approval in August 2026 and built a dedicated Qualcomm line. Press reports describe the arrangement as a long-term supply agreement in which price and delivery are not fixed in advance; Qualcomm issues purchase orders within the capacity LB Semicon provides, and the company must keep a 10% spare capacity at all times. In August 2026 the company raised KRW 34.26 billion through a rights offering, of which KRW 30 billion is earmarked for equipment, with KRW 24.8 billion for bumping and KRW 5.2 billion for back-end processes. The rights offering announced at about KRW 50 billion with the first-quarter 2026 results was therefore completed at a smaller amount. A press report also cited an industry view that Qualcomm PMIC revenue could reach about KRW 50 billion by 2028, but this is not formal company guidance. The company plans to begin mass production of products for global customers in the second half of 2026 and to expand equipment in stages through 2027. Renesas power semiconductor production belongs to the same push. A 2025 report quoted the company targeting KRW 500 billion in revenue and an operating profit turnaround that year, while the disclosed 2025 results show KRW 479.8 billion in revenue and an operating loss of KRW 39.8 billion. Market data show first-half 2026 revenue up 20.0% year on year, with operating profit and net income both turning positive. Management continues to state that it will shift the mix toward higher-value back-end work, including power semiconductors and non-DDI products."
  },
  "valuation_comment": {
-  "ko": "2025년의 대규모 순손실 여파로 순자산 대비 주가 수준을 나타내는 지표는 과거 수년 밴드의 낮은 구간에서 움직이는 모습이며, 2026년 유상증자로 유통 주식수가 늘어난 점도 주당 지표 해석 시 함께 고려할 필요가 있다. 2026년 1분기와 2분기 연속 흑자전환으로 순이익 기준 밸류에이션을 다시 논할 수 있는 국면에 들어섰지만, 2025년 연간 적자 이력이 남아 있어 최근 네 개 분기를 합산한 실적은 여전히 순손실 구간에 있다. 회사는 최근 수년간 배당을 실시하지 않아 배당 관련 지표는 부재한 상태다. 부채비율이 3년 연속 상승한 점은 순자산 대비 주가 평가에서 보수적으로 볼 요인으로 꼽히며, 반대로 최근 두 개 분기 연속 이익 전환은 실적 개선 스토리에 힘을 더하는 요인으로 볼 수 있다. 밸류에이션에 대한 구체적 판단은 향후 분기별 이익의 지속성과 재무구조 개선 여부에 따라 갈릴 수 있는 부분이다.",
-  "en": "In the wake of the large 2025 net loss, the stock's valuation relative to net assets has been sitting toward the lower end of its multi-year range, and the increase in shares outstanding from the 2026 rights offering is also worth factoring into how per-share metrics are read going forward. The consecutive profitable quarters in 2026Q1 and Q2 have reopened the possibility of assessing valuation on an earnings basis, but the trailing four-quarter result still sits in net-loss territory given the scale of the 2025 annual loss. The company has not paid dividends in recent years, so dividend-related metrics are effectively absent. The three-year rise in the debt ratio is a factor that could weigh conservatively on how the stock is assessed relative to net assets, while the two consecutive profitable quarters add support to the earnings-recovery narrative. Where valuation ultimately settles will likely depend on whether the recent quarterly profitability proves durable and whether the balance sheet continues to improve."
+  "ko": "최근 네 개 분기 지배주주 순손실 합계가 1,195억원이어서 주가수익비율은 산출되지 않는 상태다. 주가순자산비율은 장부상 순자산을 밑도는 구간에 있으며, 자본 중 지배주주 지분이 2,660억원 규모라는 점이 그 비교의 기준이다. 2024년 이후 분기 말 기준 주가순자산비율은 대체로 1배 미만에 머물렀다. 과거 연말 기준으로는 2022년 1.26배, 2023년 1.59배, 2024년 0.82배로 달라졌다. 배당은 사실상 이뤄지지 않는 구조여서 주주 환원 측면에서는 업종 내에서 배당을 지속하는 회사들과 구분된다. 2026년 들어 영업이익이 흑자로 돌아섰지만 3분기에 다시 지배주주 순손실이 나면서, 순자산 대비 수준을 해석할 때 손익 흐름이 아직 안정되지 않았다는 점을 함께 봐야 한다. 최대주주 측이 2026년 8월 유상증자에 전량 청약하는 계획을 밝혔다는 점도 지분 구조 관점에서 확인할 사실이다. 밸류에이션 수준은 실적 전환의 지속 여부와 분리해 읽기 어렵다.",
+  "en": "Because the net loss attributable to controlling shareholders over the last four quarters totals KRW 119.5 billion, a price-to-earnings ratio cannot be calculated. The price-to-book ratio sits below 1x, meaning the share price is below book value per share, with the controlling shareholders' equity of KRW 266 billion as the basis of that comparison. Quarter-end price-to-book ratios since 2024 have mostly remained under 1x, while year-end readings were 1.26x in 2022, 1.59x in 2023 and 0.82x in 2024. The company pays effectively no dividend, which separates it from peers that maintain regular payouts. Operating profit turned positive in 2026, but a net loss attributable to controlling shareholders returned in the third quarter, so earnings stability is still unsettled when reading the level against book value. The largest shareholder's related parties said they planned to take up their full allocation in the August 2026 rights offering, a shareholding fact to track. The valuation level is hard to separate from whether the earnings recovery is sustained."
  },
  "bull": [
   {
    "title": {
-    "ko": "2개 분기 연속 흑자전환",
-    "en": "Two Straight Quarters of Profit"
+    "ko": "퀄컴 장기 공급계약과 양산 승인",
+    "en": "Ten-year Qualcomm supply agreement and mass production approval"
    },
    "body": {
-    "ko": "2026년 1분기 영업이익 76억원, 지배주주순이익 102억원에 이어 2분기에도 영업이익 131억원, 지배주주순이익 88억원을 기록하며 적자 기조에서 벗어났다. 매출도 2025년 3분기 이후 4개 분기 연속 증가하는 흐름을 보이고 있다. DDI 경쟁사의 생산능력 축소에 따른 반사 수혜와 비-DDI 매출 확대가 동시에 작용한 결과로 해석된다.",
-    "en": "After posting an operating profit of KRW 7.6 billion and a controlling-interest net profit of KRW 10.2 billion in 2026Q1, the company followed with an operating profit of KRW 13.1 billion and a net profit of KRW 8.8 billion in Q2, breaking out of its loss-making trend. Revenue has also risen for four consecutive quarters since 2025Q3. This is interpreted as the combined result of order flow shifting from DDI competitors that cut capacity and expanding non-DDI sales."
+    "ko": "퀄컴과 10년 장기 공급계약을 맺었고 2026년 8월 양산 승인을 받았다. 보도에 따르면 비DDI 200mm 생산능력은 2028년까지 월 3만 6,000장으로 늘어날 계획이며, 퀄컴이 발주하면 생산능력 범위에서 공급하는 구조다. 고객 다변화가 진행되는 만큼 DDI 한 축에 기대던 매출 구조를 바꿀 수 있는 재료다.",
+    "en": "LB Semicon signed a ten-year supply agreement with Qualcomm and received mass production approval in August 2026. Reports say non-DDI 200mm capacity is planned to rise to 36,000 wafers per month by 2028, with supply made within capacity as Qualcomm issues orders. This could diversify revenue beyond the DDI base."
    }
   },
   {
    "title": {
-    "ko": "고객·제품 다변화 진행",
-    "en": "Customer and Product Diversification Underway"
+    "ko": "2026년 실적 흐름의 방향 전환",
+    "en": "Turn in the direction of 2026 earnings"
    },
    "body": {
-    "ko": "퀄컴향 AI 데이터센터·차량용 반도체 제품 초도 출하, 르네사스 전력반도체 후공정 양산, ASE코리아와의 턴키 협력 등 비-DDI·해외 고객 기반이 넓어지고 있다. LB루셈 합병으로 COF 패키지·파이널 테스트까지 자체 처리하는 턴키 역량도 확보했다. 삼성전자·LX세미콘에 집중됐던 고객 구조가 점진적으로 다각화되는 모습이다.",
-    "en": "The non-DDI and overseas customer base is broadening through an initial Qualcomm shipment for AI data-center and automotive chips, Renesas power-semiconductor back-end production, and the ASE Korea turnkey tie-up. The LB Rusem merger also gave the company in-house turnkey capability spanning COF packaging through final test. The customer structure, previously concentrated on Samsung Electronics and LX Semicon, is gradually diversifying."
+    "ko": "2026년 1분기 영업이익 76.4억원으로 흑자 전환했고 2분기 영업이익은 131억원으로 전 분기 대비 71.5% 늘었다. 2026년 상반기 매출은 전년 동기 대비 20.0% 증가했고 영업이익과 당기순이익이 모두 흑자 전환했다는 집계가 있다. 2024년부터 이어진 적자 흐름이 분기 단위에서 꺾였다는 점이 강세 근거다.",
+    "en": "Operating profit turned positive at KRW 7.64 billion in the first quarter of 2026, and rose to KRW 13.1 billion in the second quarter, up 71.5% from the prior quarter. A market data tally shows first-half 2026 revenue up 20.0% year on year, with both operating and net income turning positive. The quarterly turn after a long run of losses is the main bullish reading."
    }
   },
   {
    "title": {
-    "ko": "AI 후공정 수요 확대 국면",
-    "en": "Growing AI-Driven Back-End Demand"
+    "ko": "비DDI·전력반도체 고객 확대",
+    "en": "Expansion of non-DDI and power semiconductor customers"
    },
    "body": {
-    "ko": "생성형 AI 시장 성장과 AI 가속기 수요 증가가 후공정 업계 전반의 실적 가시화로 이어지고 있다는 평가가 나온다. AI 모멘텀이 서버에서 PC·스마트폰으로 확산되며 첨단 패키징 시장 규모가 범용 패키징을 넘어서는 흐름도 나타난다. IT OLED 가동률 상승과 AI PC 확산은 DDI 후공정 시장의 안정적 성장 기반이 되고 있다.",
-    "en": "Generative AI market growth and rising AI accelerator demand are said to be driving results across the back-end industry more broadly. As AI momentum spreads from servers to PCs and smartphones, the advanced packaging market has reportedly grown to exceed the scale of general packaging. Rising IT OLED utilization and AI PC adoption are also providing a stable growth base for the DDI back-end market."
+    "ko": "르네사스의 전력반도체 후공정 양산이 본격화됐고 추가 글로벌 고객과의 협업도 진행 중이라고 회사가 밝혔다. 회사는 2026년 하반기부터 글로벌 고객사향 제품 양산을 시작하겠다는 계획이다. DDI 매출 비중을 낮추려는 방향이 실제 고객 확보로 이어지고 있다는 점이 긍정적으로 읽힌다.",
+    "en": "The company said mass production of back-end packaging for Renesas power semiconductors has ramped up and that it is working with additional global customers. Mass production for global customers is planned to start in the second half of 2026. Customer wins in the non-DDI area point to the company's stated diversification moving into actual contracts."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "2025년 대규모 순손실의 그림자",
-    "en": "Shadow of the 2025 Net Loss"
+    "ko": "3분기 실적 후퇴",
+    "en": "Weaker third quarter"
    },
    "body": {
-    "ko": "2025년 지배주주순손실은 1,509억원에 달했으며, 이 중 4분기 한 개 분기의 손실만 1,345억원으로 LB루셈 합병 관련 자산손상차손이 크게 작용했다. 최근 네 개 분기를 합산한 실적도 여전히 순손실 구간에 머물러 있다. 2026년 상반기의 흑자전환이 이 손실을 상쇄하기까지는 시간이 필요하다.",
-    "en": "The 2025 controlling-interest net loss reached KRW 150.9 billion, of which the fourth quarter alone accounted for KRW 134.5 billion, driven substantially by an impairment charge tied to the LB Rusem merger. The trailing four-quarter result still sits in net-loss territory. It will take time for the 2026 first-half profit turnaround to offset this loss."
+    "ko": "2026년 3분기 매출은 1,285억원으로 전 분기 대비 11.3% 줄었고, 영업이익은 23.9억원으로 81.8% 감소했다. 지배주주 순이익은 39.9억원의 순손실로 다시 적자 전환했다. 최근 4개 분기 지배주주 순손실 합계가 1,195억원인 점을 고려하면 분기 흑자가 이익 누적으로 이어지기 어렵다는 약세 근거가 된다.",
+    "en": "Third-quarter 2026 revenue was KRW 128.5 billion, down 11.3% from the prior quarter, and operating profit fell 81.8% to KRW 2.39 billion. Net income attributable to controlling shareholders swung back to a net loss of KRW 3.99 billion. With a cumulative four-quarter net loss attributable to controlling shareholders of KRW 119.5 billion, quarterly profits have not yet built into cumulative earnings."
    }
   },
   {
    "title": {
-    "ko": "부채비율 상승과 지분 희석",
-    "en": "Rising Debt Ratio and Share Dilution"
+    "ko": "차입 부담과 자본 구조",
+    "en": "Debt burden and capital structure"
    },
    "body": {
-    "ko": "부채비율은 2023년 116.1%에서 2025년 153.3%로 3년 연속 높아졌다. 여기에 2026년 전환사채 발행과 1,200만주 규모의 유상증자가 더해져 향후 주당 지표 해석에 지분 희석 효과를 반영해야 한다. 영업활동현금흐름도 2022년 이후 매년 축소되는 흐름을 보였다.",
-    "en": "The debt ratio climbed for three straight years, from 116.1% in 2023 to 153.3% in 2025. On top of this, the 2026 convertible bond issuance and the 12-million-share rights offering mean dilution effects need to be factored into how per-share metrics are read going forward. Operating cash flow has also shrunk each year since 2022."
+    "ko": "2022년 이후 자기자본 대비 부채 비중이 커지는 흐름이 이어졌다. 과거 보도에 따르면 2025년 3분기 말 단기차입금은 1,398억원, 유동성장기차입금은 1,006억원으로 1년 내 상환 부담이 2,400억원을 넘었다. 2026년 증자와 전환사채 발행으로 재원을 확보했지만 차입 구조는 여전히 부담이다.",
+    "en": "The share of debt relative to equity has kept growing since 2022. Press reports put short-term borrowings at KRW 139.8 billion and current portion of long-term borrowings at KRW 100.6 billion at the end of the third quarter of 2025, a repayment burden of more than KRW 240 billion within one year. Funding from the 2026 rights offering and convertible bonds has eased this, but the debt structure remains a burden."
    }
   },
   {
    "title": {
-    "ko": "DDI 의존적 구조의 잔존",
-    "en": "Lingering DDI-Dependent Structure"
+    "ko": "DDI 집중과 원가·단가 압박",
+    "en": "DDI concentration and cost and price pressure"
    },
    "body": {
-    "ko": "비-DDI 다각화가 진행 중이지만 여전히 매출의 상당 부분이 DDI 범핑에 집중돼 있어 TV·스마트폰 등 전방 IT 세트 수요 변동에 민감하다. 삼성전자·LX세미콘 등 소수 고객사에 대한 매출 의존도도 구조적으로 남아 있다. 비-DDI 신규 고객의 매출 기여도가 아직 낮은 수준이라는 점도 함께 고려해야 한다.",
-    "en": "Although non-DDI diversification is underway, a significant portion of revenue remains concentrated in DDI bumping, leaving results sensitive to shifts in downstream IT set demand such as TVs and smartphones. Structural dependence on a small number of customers, including Samsung Electronics and LX Semicon, also remains. It should also be considered that new non-DDI customers still contribute a relatively small share of revenue."
+    "ko": "매출의 70% 이상이 DDI 제품에서 나오는 구조라 디스플레이 업황과 실적이 직접 연동된다. 2026년 3분기 LX세미콘이 전방 수요 둔화와 가격 인하 압박으로 영업손실을 냈다는 점은 같은 체인의 약한 신호다. 금 가격 상승에 따른 원재료비 부담과 고객사의 단가 인하 요구는 마진을 낮추는 요인으로 남아 있다.",
+    "en": "More than 70% of revenue comes from DDI products, so results move directly with the display cycle. LX Semicon's third-quarter 2026 operating loss, linked to weaker downstream demand and price-cut pressure, is a weak signal in the same chain. Higher gold-linked raw material costs and customer demands for price cuts remain pressures on margins."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중 리스크",
-    "en": "Customer Concentration Risk"
+    "ko": "고객 집중 위험",
+    "en": "Customer concentration risk"
    },
    "body": {
-    "ko": "삼성전자와 LX세미콘 등 소수 고객사에 대한 매출 의존도가 구조적으로 높은 편이다. 이들 고객사의 발주 정책이나 전방 디스플레이·IT 세트 수요가 흔들리면 실적에 직접적인 영향을 줄 수 있다. 비-DDI·해외 고객 확대가 이를 완화하는 요인이지만 아직 초기 단계다.",
-    "en": "Revenue dependence on a small number of customers such as Samsung Electronics and LX Semicon remains structurally high. Shifts in these customers' order policies or in downstream display and IT set demand can directly affect results. Non-DDI and overseas customer expansion helps mitigate this, but remains at an early stage."
+    "ko": "과거 보도 기준으로 삼성전자와 LX세미콘에 대한 매출 의존도가 73.06%였고, 퀄컴 물량이 늘면서 특정 고객 의존 구조가 바뀌는 중이다. 다만 퀄컴과의 계약은 발주서 기반이고 예비 생산능력 10%를 상시 확보해야 하므로, 고객 물량이 줄 때 설비 부담이 그대로 남을 수 있다.",
+    "en": "Earlier reports put revenue dependence on Samsung Electronics and LX Semicon at 73.06%, and the Qualcomm ramp is changing that concentration. Because the Qualcomm arrangement is order-based and requires a 10% spare capacity at all times, equipment costs could remain if customer volumes fall."
    }
   },
   {
    "cat": {
-    "ko": "재무건전성 리스크",
-    "en": "Financial Health Risk"
+    "ko": "재무·희석 위험",
+    "en": "Financial and dilution risk"
    },
    "body": {
-    "ko": "부채비율이 3년 연속 상승했고 2025년에는 대규모 비현금성 자산손상차손까지 발생했다. 영업활동현금흐름도 매년 축소되는 흐름을 보여 향후 추가적인 자금조달 필요성이 재차 발생할 가능성을 배제할 수 없다. 2026년의 전환사채·유상증자에 따른 지분 희석 효과도 지속적으로 관찰이 필요하다.",
-    "en": "The debt ratio has risen for three consecutive years, and a large non-cash impairment charge was recognized in 2025. Operating cash flow has also shrunk each year, and the possibility of further capital-raising needs down the road cannot be ruled out. The dilution effects from the 2026 convertible bond and rights offering also warrant ongoing monitoring."
+    "ko": "2025년 말 부채총계는 4,141억원이고 2025년 4분기 지배주주 순손실은 1,345억원으로 컸다. 2026년 증자와 전환사채 발행이 이어지면서 주식 수 증가와 자금 조달 비용이 계속 부담으로 남는다. 2026년 1분기 실적 발표 때 발표된 1,200만주 규모의 신주 물량은 기존 주주의 지분 희석으로 이어진다.",
+    "en": "Total liabilities stood at KRW 414.1 billion at the end of 2025, and the net loss attributable to controlling shareholders in the fourth quarter of 2025 was KRW 134.5 billion. Successive rights offerings and convertible bond issues add share count growth and financing costs. The rights offering announced with the first-quarter 2026 results involved 12 million new shares, which dilutes existing holders."
    }
   },
   {
    "cat": {
-    "ko": "업황 사이클 리스크",
-    "en": "Industry Cycle Risk"
+    "ko": "원재료·단가 위험",
+    "en": "Raw material and pricing risk"
    },
    "body": {
-    "ko": "OSAT 산업은 전방 IT 세트 및 반도체 수요 사이클에 실적이 크게 좌우되는 자본집약적 산업이다. AI 관련 수요가 개선을 이끌고 있지만 전방 산업 사이클이 다시 둔화될 경우 가동률과 수익성이 재차 악화될 수 있다. 설비투자를 늘린 상태에서 수요가 기대에 못 미치면 고정비 부담이 커질 수 있다.",
-    "en": "The OSAT industry is a capital-intensive business whose results hinge heavily on downstream IT set and semiconductor demand cycles. AI-related demand has been driving improvement, but if the downstream cycle slows again, utilization and profitability could deteriorate once more. If demand falls short of expectations after capacity has been expanded, the fixed-cost burden could increase."
+    "ko": "2025년 보도에서 금 가격이 2023년 3분기 대비 80% 가까이 오르고 도금용액 가격이 40% 이상 올랐다고 전해졌다. 원재료 비용이 매출원가에 빠르게 반영되는 구조에서, 고객사의 단가 인하 압박까지 겹치면 영업이익률이 쉽게 악화된다. 영업이익률은 2025년 -8.3%로 떨어진 상태다.",
+    "en": "A 2025 report said gold prices had risen nearly 80% from the third quarter of 2023 and plating solution prices more than 40%. When raw material costs flow quickly into cost of sales and customers push for price cuts, operating margins can deteriorate fast. The operating margin fell to -8.3% in 2025."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중순(3분기 실적 공시 시점)",
-    "en": "Mid-November 2026 (Q3 earnings disclosure)"
+    "ko": "2026년 12월 31일 (회계연도 종료)",
+    "en": "December 31, 2026 (fiscal year-end)"
    },
    "what": {
-    "ko": "2026년 3분기 연결 실적에서 2개 분기 연속 이어진 흑자 기조가 지속되는지, 그리고 최근 네 개 분기 합산 실적이 순손실 구간을 벗어나는지 확인이 필요하다.",
-    "en": "Check whether the two-quarter profit trend continues in the 2026Q3 consolidated results, and whether the trailing four-quarter result moves out of net-loss territory."
+    "ko": "2026년 4분기 영업이익이 3분기 수준(23.9억원)에서 회복되는지, 퀄컴 양산 물량이 매출에 얼마나 반영되는지를 확인하는 시점이다.",
+    "en": "Checks whether fourth-quarter 2026 operating profit recovers from the third-quarter level of KRW 2.39 billion and how much Qualcomm mass production volume feeds into revenue."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기~2027년 상반기",
-    "en": "2026Q4 through H1 2027"
+    "ko": "2027년 3월 말까지 (2026 사업보고서 제출 기한)",
+    "en": "By end of March 2027 (2026 annual report deadline)"
    },
    "what": {
-    "ko": "2026년 유상증자로 조달한 자금을 투입한 범프·백엔드 신규 설비의 가동 개시 시점과, 이에 따른 물량 확대·가동률 변화를 확인할 필요가 있다.",
-    "en": "Watch for the startup timing of new bump and back-end equipment funded by the 2026 rights offering, and the resulting changes in order volume and utilization."
+    "ko": "2026년 사업보고서의 연간 실적과 손익 주석에서 2025년 4분기 순손실 1,345억원의 항목별 구성, 단기차입금과 유동성장기차입금 규모를 확인할 수 있다.",
+    "en": "The 2026 annual report will show full-year results and notes explaining the itemized breakdown of the KRW 134.5 billion fourth-quarter 2025 net loss, along with short-term and current portion of long-term borrowings."
    }
   },
   {
    "when": {
-    "ko": "향후 분기별 공시 시점마다",
-    "en": "At each upcoming quarterly disclosure"
+    "ko": "2027년 5월 중순 무렵 (1분기 실적 발표 예상 시기)",
+    "en": "Around mid-May 2027 (expected first-quarter results timing)"
    },
    "what": {
-    "ko": "퀄컴·르네사스 등 비-DDI·해외 고객향 매출이 실제 비중으로 얼마나 확대되는지, ASE코리아와의 턴키 협력 성과가 매출에 반영되는 속도를 확인할 필요가 있다.",
-    "en": "Track how much non-DDI and overseas customer revenue, including from Qualcomm and Renesas, actually grows as a share of sales, and how quickly the ASE Korea turnkey partnership's results show up in revenue."
+    "ko": "2026년 1분기 실적은 2026년 5월 15일에 공시됐다. 2027년 1분기에 퀄컴과 르네사스 양산 매출이 영업이익률 개선으로 이어지는지 확인하는 지점이다.",
+    "en": "First-quarter 2026 results were disclosed on May 15, 2026. The first-quarter 2027 release will show whether Qualcomm and Renesas volumes improve operating margins."
    }
   },
   {
    "when": {
-    "ko": "연간 결산 시점(2026년 사업보고서 공시)",
-    "en": "At the FY2026 annual report disclosure"
+    "ko": "2027년 하반기",
+    "en": "Second half of 2027"
    },
    "what": {
-    "ko": "부채비율과 영업활동현금흐름이 개선세로 돌아서는지, 추가적인 자산손상 요인이 재발하지 않는지 점검이 필요하다.",
-    "en": "Assess whether the debt ratio and operating cash flow turn toward improvement, and whether any further impairment factors resurface."
+    "ko": "보도에 따르면 퀄컴 물량 확대 시점이 2027년 하반기로 잡혀 있다. 범핑·백엔드 신규 설비가 이 시점에 맞춰 가동되는지가 생산능력 확충의 진행률을 보여 준다.",
+    "en": "Reports indicate Qualcomm volume is set to expand in the second half of 2027. Whether the new bumping and back-end equipment comes online on schedule will indicate progress in capacity expansion."
+   }
+  },
+  {
+   "when": {
+    "ko": "2028년 말까지",
+    "en": "By end of 2028"
+   },
+   "what": {
+    "ko": "비DDI 200mm 웨이퍼 생산능력을 월 3만 6,000장으로 늘리는 계획이 달성되는지 확인한다. 달성 여부는 회사의 비DDI 매출 비중 변화와 함께 봐야 한다.",
+    "en": "Whether the plan to raise non-DDI 200mm capacity to 36,000 wafers per month is achieved, read alongside changes in the non-DDI share of revenue."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "LB세미콘은 2026년 1분기와 2분기 연속으로 영업이익·순이익 흑자전환을 이뤄내며 2023~2025년의 부진에서 벗어나는 신호를 보여주고 있다. DDI 경쟁사의 생산능력 축소에 따른 반사 수혜와 퀄컴·르네사스·ASE코리아 등으로의 고객·제품 다변화가 이러한 개선의 배경으로 꼽힌다. 다만 2025년의 대규모 순손실과 3년 연속 상승한 부채비율, 매년 축소된 영업활동현금흐름은 여전히 부담 요인으로 남아 있다. 2026년 진행된 전환사채 발행과 유상증자는 설비투자 재원을 확보했지만 동시에 지분 희석 효과를 수반한다. 향후 실적의 관전 포인트는 최근 2개 분기의 흑자 기조가 지속성을 갖는지, 그리고 재무구조 개선이 뒤따르는지에 있다. 비-DDI·해외 매출 확대의 속도와 규모 역시 중장기 사업 다각화 스토리의 신뢰도를 가늠하는 요소가 될 것으로 보인다.",
-   "en": "LB Semicon has shown signs of emerging from its 2023-2025 slump, delivering consecutive operating and net profit turnarounds in the first and second quarters of 2026. This improvement is attributed to order flow benefiting from capacity cuts among DDI competitors, along with customer and product diversification toward Qualcomm, Renesas, and ASE Korea. That said, the large 2025 net loss, a debt ratio that has risen for three consecutive years, and operating cash flow that has shrunk every year remain lingering burdens. The convertible bond issuance and rights offering carried out in 2026 secured capex funding but also brought dilution effects. Going forward, the key points to watch are whether the recent two-quarter profit trend proves durable and whether balance-sheet improvement follows. The pace and scale of non-DDI and overseas revenue expansion will also be a factor in gauging the credibility of the company's medium-to-long-term diversification story."
+   "ko": "LB세미콘은 2023년 이후 3년 연속 영업손실과 2025년 1,509억원의 지배주주 순손실을 거쳐, 2026년 들어 분기 영업이익 흑자와 퀄컴 양산 승인으로 방향을 바꾸는 중이다. 매출은 2024년과 2025년 2년 연속 늘었지만 수익성 지표인 영업이익률은 -8.3%까지 떨어진 상태다. 2026년 3분기에는 매출과 이익이 함께 줄고 지배주주 순손실이 다시 나타나, 분기 흐름이 아직 안정되지 않았다. 퀄컴과 10년 공급계약, 2028년까지의 생산능력 확대 계획, 르네사스 전력반도체 양산은 고객 다변화의 구체적인 근거다. 반면 부채비율 153.3%, 1년 내 상환 부담, 73.06%였던 고객 집중과 DDI 업황 의존은 여전히 실적의 제약 요인이다. 주가순자산비율이 1배를 밑도는 가운데 배당은 사실상 없고 PER은 산출되지 않는다. 다음 확인 지점은 2026년 사업보고서의 손익 구성과 차입 규모, 2027년 1분기 실적에서 퀄컴 물량이 영업이익률에 반영되는지 여부다.",
+   "en": "After three consecutive years of operating losses from 2023 and a KRW 150.9 billion net loss attributable to controlling shareholders in 2025, LB Semicon is changing course in 2026 with quarterly operating profit and Qualcomm mass production approval. Revenue rose for two consecutive years in 2024 and 2025, yet the operating margin fell to -8.3%. In the third quarter of 2026 revenue and profit both fell and a net loss attributable to controlling shareholders reappeared, so quarterly results are not yet stable. The ten-year Qualcomm agreement, the planned capacity expansion through 2028 and Renesas power semiconductor production are concrete grounds for customer diversification. On the other side, a debt ratio of 153.3%, a repayment burden within one year, and continued dependence on a few customers and the DDI cycle still constrain results. The price-to-book ratio is below 1x, dividends are effectively absent, and a price-to-earnings ratio cannot be calculated. The next checkpoints are the profit breakdown and borrowing levels in the 2026 annual report, and whether Qualcomm volume shows up in operating margins in the first quarter of 2027."
   }
  },
  "sources": [
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=061970",
-  "https://www.dailyinvest.kr/news/articleView.html?idxno=66999",
-  "https://alphasquare.co.kr/home/stock-summary?code=061970",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=UiMuUH5kb2Un01Sb",
-  "https://m.thinkpool.com/item/061970",
-  "https://comp.wisereport.co.kr/company/c1080001.aspx?cmp_cd=061970",
-  "https://www.investing.com/equities/lb-semicon-co-ltd",
-  "https://finance.daum.net/quotes/A061970",
-  "https://stockplus.com/m/stocks/KOREA-A061970",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=061970&cn=",
+  "https://www.etoday.co.kr/news/view/2621040",
+  "https://www.thelec.kr/news/articleView.html?idxno=35442",
+  "https://www.thelec.kr/news/articleView.html?idxno=64269",
+  "https://eduinfom.com/invest/22738/",
+  "https://m.news.nate.com/view/20260518n24418",
+  "https://m.news.nate.com/view/20260518n23031",
   "https://www.sisajournal-e.com/news/articleView.html?idxno=412630",
-  "https://www.etnews.com/20250807000163",
-  "https://www.businesspost.co.kr/BP?command=article_view&num=410599",
-  "https://www.edaily.co.kr/News/Read?newsId=04011446645576184",
-  "https://m.theinvest.co.kr/article/621",
-  "https://www.bloter.net/news/articleView.html?idxno=663097",
-  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=411825",
+  "https://m.news.nate.com/view/20260518n23469",
+  "https://m.thebell.co.kr/m/newsview.asp?svccode=04&newskey=202512301305217160107353",
+  "https://kr.investing.com/equities/lb-semicon-co-ltd-earnings",
   "https://comp.fnguide.com/SVO2/asp/SVD_Main.asp?gicode=A061970",
-  "https://littlebproject.com/stock/061970/276/30798"
+  "https://www.jobkorea.co.kr/recruit/co_read/c/lbsemicon",
+  "https://www.vegannews.co.kr/news/article.html?no=400121",
+  "https://m.thinkpool.com/stockDiscuss/061970/list",
+  "https://www.kukinews.com/article/view/kuk202611030154",
+  "https://www.ajunews.com/view/20261103163326725",
+  "https://www.tradingkey.com/kr/news/transcripts/262266335-"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "061970",
  "name": "LB세미콘",
  "name_en": "LB SEMICON, INC.",
@@ -223,11 +229,11 @@
   "반도체"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 05:57",
- "dataDate": "20260904",
+ "reportDate": "2026-11-14",
+ "reportTs": "2026-11-14 09:25",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-08-21",
+  "asOf": "2026-11-13",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -238,6 +244,7 @@
     "np_owner": -150861485252,
     "equity": 270040821128,
     "equity_owner": 265985508616,
+    "equity_nci": 4055312512,
     "liab": 414092817635,
     "cfo": 9528097718,
     "eps_basic": -2717,
@@ -253,6 +260,7 @@
     "np_owner": -22183287900,
     "equity": 346236165510,
     "equity_owner": 230000423204,
+    "equity_nci": 116235742306,
     "liab": 459813471035,
     "cfo": 52037663579,
     "eps_basic": -507,
@@ -268,6 +276,7 @@
     "np_owner": -15901792606,
     "equity": 366147511353,
     "equity_owner": 252593608759,
+    "equity_nci": 113553902594,
     "liab": 425050149575,
     "cfo": 80751728481,
     "eps_basic": -363,
@@ -283,6 +292,7 @@
     "np_owner": 40208308823,
     "equity": 381148543507,
     "equity_owner": 268909737433,
+    "equity_nci": 112238806074,
     "liab": 385945616683,
     "cfo": 124017894235,
     "eps_basic": 918,
@@ -292,12 +302,6 @@
    }
   ],
   "quarterly": [
-   {
-    "q": "2025Q2",
-    "rev": 115688096141,
-    "op": -3306404461,
-    "np_owner": -11148136658
-   },
    {
     "q": "2025Q3",
     "rev": 125550108569,
@@ -321,26 +325,39 @@
     "rev": 144854953991,
     "op": 13108569883,
     "np_owner": 8827186346
+   },
+   {
+    "q": "2026Q3",
+    "rev": 128505858242,
+    "op": 2388853891,
+    "np_owner": -3994027345
    }
   ],
   "valuation": {
-   "price": 3865,
-   "mcap": 0.2709,
+   "price": 2830,
+   "mcap": 0.1983,
    "shares": 70083006,
-   "total_shares": 58083006,
-   "wavg_shares": 58111393,
+   "total_shares": 70083006,
+   "wavg_shares": 60274691,
    "per": null,
-   "eps": -2133,
-   "pbr": 0.7883,
-   "bps": 4903,
-   "roe_ttm": -38.8,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": -117888879362,
-   "pbr_krx": 1.11,
+   "eps": -2171,
+   "pbr": 0.5421,
+   "bps": 5220,
+   "roe_ttm": -37.7,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": -119513226978,
+   "ccy": "KRW",
+   "bps_src": "자체",
+   "eps_src": "공시",
+   "pbr_krx": 0.65,
    "bps_krx": 4381.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
-   "div": 0.0
+   "div": 0.0,
+   "hidden": {
+    "per": "loss"
+   }
   }
- }
+ },
+ "textRules": 2
 }

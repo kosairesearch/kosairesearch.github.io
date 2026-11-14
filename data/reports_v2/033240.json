@@ -1,220 +1,219 @@
 {
  "title": {
-  "ko": "자화전자, 흑자 전환 이후 공격적 증설 국면",
-  "en": "Jahwa Electronics: Profit Turnaround Meets Aggressive Capacity Expansion"
+  "ko": "카메라 액추에이터, 이익 회복 뒤 감소 국면",
+  "en": "Camera Actuator Maker: Profit Recovery Now Under Pressure"
  },
  "lead": {
-  "ko": "2024년 흑자 전환 이후 이익 체력을 회복한 자화전자가 구미 공장 증설과 신규 투자로 외형 확대를 꾀하는 가운데, 2026년 들어서는 2개 분기 연속 이익 둔화가 나타났다.",
-  "en": "Having turned profitable in 2024, Jahwa Electronics is pursuing capacity expansion in Gumi, even as operating results softened for two consecutive quarters in early 2026."
+  "ko": "자화전자는 2024년 흑자 전환과 2025년 지배주주 순이익 증가로 이익을 회복했으나, 영업이익은 2025년 4분기, 지배주주 순이익은 2026년 1분기를 정점으로 이후 분기마다 줄고 있다.",
+  "en": "Jahwa Electronics returned to profit in 2024 and grew net profit attributable to controlling shareholders sharply in 2025, but operating profit peaked in Q4 2025 and controlling-shareholder net profit peaked in Q1 2026, with both declining in each quarter since."
  },
  "keypoints": [
   {
-   "ko": "2025년 매출 8,489억원으로 2023~2025년 3년 연속 증가, 영업이익은 420억원으로 전년 대비 6.6% 감소",
-   "en": "2025 revenue reached KRW 848.9 billion, up for three straight years through 2025, while operating profit fell 6.6% year-on-year to KRW 42 billion"
+   "ko": "2025년 매출은 8,489억원으로 2022~2025년 중 가장 큰 해이며, 2023년부터 2025년까지 3년 연속 증가했다.",
+   "en": "Revenue reached KRW 848.9 billion in 2025, the largest year in 2022–2025, and has risen for three straight years since 2023."
   },
   {
-   "ko": "2025년 4분기(매출 2,640억원, 영업이익 267억원) 정점 이후 2026년 1~2분기 매출·영업이익 2개 분기 연속 감소",
-   "en": "After peaking in Q4 2025 (revenue KRW 264 billion, operating profit KRW 26.7 billion), both revenue and operating profit declined for two straight quarters into Q1-Q2 2026"
+   "ko": "영업이익은 2024년 450억원으로 흑자 전환한 뒤 2025년 420억원으로 6.6% 감소했고, 지배주주 순이익은 2025년 471억원으로 183.6% 늘었다.",
+   "en": "Operating profit turned to KRW 45 billion in 2024 and eased 6.6% to KRW 42 billion in 2025, while net profit attributable to controlling shareholders rose 183.6% to KRW 47.1 billion."
   },
   {
-   "ko": "구미 1공장 OIS 액추에이터 생산능력을 2028년 7월 양산 목표로 2,500억원 투자해 4배로 증설, 별도로 5,000억원 규모 구미 2공장 투자양해각서 체결",
-   "en": "A KRW 250 billion investment aims to quadruple OIS actuator capacity at the Gumi plant by July 2028, alongside a separate KRW 500 billion MOU for a second Gumi plant"
+   "ko": "2026년 3분기 영업이익은 144억원으로 전년 동기 대비 26.0% 감소했고, 지배주주 순이익은 31.6억원으로 전년 동기 대비 86.8% 감소했다.",
+   "en": "Operating profit fell to KRW 14.4 billion in Q3 2026, down 26.0% year on year, and net profit attributable to controlling shareholders fell to KRW 3.16 billion, down 86.8% year on year."
   },
   {
-   "ko": "매출의 90% 이상이 스마트폰 카메라 모듈용 통신기기 부품에서 발생해 특정 고객사·모델 채택 여부에 실적이 좌우되는 구조",
-   "en": "Over 90% of revenue derives from smartphone camera module components, leaving results highly dependent on specific customer and model adoption"
+   "ko": "최근 4개 분기(2025년 4분기~2026년 3분기) 지배주주 순이익 합계는 914억원이다.",
+   "en": "Controlling-shareholder net profit totaled KRW 91.4 billion over the last four quarters, from Q4 2025 through Q3 2026."
   },
   {
-   "ko": "부채비율은 2023년 82.4%에서 2025년 74.9%로 낮아졌으나 교환사채(EB) 풋옵션 부담 등 재무 변수가 남아있다",
-   "en": "The debt ratio eased from 82.4% in 2023 to 74.9% in 2025, though exchangeable bond put-option risk remains a financial variable"
+   "ko": "사업은 스마트폰 카메라 액추에이터에 집중돼 있어 대형 고객사의 채택 여부가 실적 변동의 주요 변수이며, 전장·로봇 부품으로의 확대가 그 대안으로 추진 중이다.",
+   "en": "The business is concentrated in smartphone camera actuators, so the adoption decisions of a few large customers are a major driver of earnings, and expansion into automotive and robotics parts is being pursued as an alternative."
   }
  ],
  "business": {
-  "ko": "자화전자는 1987년 법인 전환 후 1999년 코스피에 상장한 전자부품 전문기업으로, 자성 소재 내재화 기술을 바탕으로 스마트폰 카메라 모듈용 액추에이터를 주력 제품으로 생산한다. 주력 제품군은 자동초점(AF), 광학식 손떨림 보정(OIS), 잠망경 구조의 폴디드줌(Folded Zoom) 액추에이터로, 삼성전자 스마트폰에 오랫동안 부품을 공급해 왔고 2023년부터는 북미 최대 고객사의 플래그십 모델에도 핵심 부품을 공급하고 있다. 2024년 사업보고서 기준 매출 구성을 보면 통신기기용 부품이 6,262억원으로 전체의 91.9%, 기타 부품이 548억원으로 8.1%를 차지해 스마트폰 카메라 부품에 대한 의존도가 매우 높은 구조다. 기타 부문에는 전기차용 HV PTC 히터와 진동모터, OA기기용 부품 등이 포함되며, 최근에는 차량 마사지 시트용 고진동모터와 로봇용 BLDC 모터 등 신규 아이템을 추진 중이다. 로봇 부품 사업에서는 초정밀 자성 엔코더와 로봇 관절 모터 기술을 기반으로 고객사향 매출 약 40억~50억원을 올리고 있어 아직 전체 매출에서 차지하는 비중은 작다. 생산기지는 충북 청주 본사 외에 베트남, 인도, 경북 구미 등으로 다변화돼 있으며 수출 비중이 90% 이상에 달한다. 동일 업종에서는 카메라 모듈·부품을 다루는 삼성전기, LG이노텍 등이 비교 대상으로 꼽히며, 자화전자는 그중에서도 액추에이터라는 세부 품목에 특화된 전문 기업으로 분류된다.",
-  "en": "Jahwa Electronics converted to a corporation in 1987 and listed on the KOSPI in 1999, building on in-house magnetic material technology to produce actuators for smartphone camera modules as its core business. Its key products are autofocus (AF), optical image stabilization (OIS), and periscope-type folded-zoom actuators; it has long supplied Samsung Electronics smartphones and, since 2023, has also supplied key components to a leading North American customer's flagship models. According to the 2024 annual report, telecom-equipment components accounted for KRW 626.2 billion, or 91.9% of revenue, while other parts contributed KRW 54.8 billion, or 8.1%, underscoring heavy reliance on smartphone camera components. The other-parts segment includes HV PTC heaters and vibration motors for electric vehicles and OA equipment parts, and the company is now pursuing new items such as thin high-vibration motors for automotive massage seats and BLDC motors for robots. In robotics components, the company generates roughly KRW 4-5 billion in customer revenue based on precision magnetic encoder and robot-joint motor technology, still a small share of total sales. Production is diversified beyond the Cheongju headquarters in North Chungcheong Province to Vietnam, India, and Gumi in North Gyeongsang Province, with exports exceeding 90% of sales. Within the same industry, comparable peers include Samsung Electro-Mechanics and LG Innotek, both involved in camera modules and components, though Jahwa Electronics is classified as a specialist focused specifically on actuators."
+  "ko": "자화전자는 1987년 법인 전환 후 1999년 유가증권시장에 상장한 통신기기용 부품 제조 기업이다. 주력 제품은 스마트폰 및 카메라폰용 AF(자동초점) 및 OIS(광학식 손떨림 보정) 액추에이터와 폴디드 줌 액추에이터이며, 기업 개요에 따르면 전략거래선의 1차 벤더로 초고사양 액추에이터를 공급하고 있다. 고객은 글로벌 최상위 스마트폰 제조사들로 알려져 있어 고객 물량이 특정 기업에 몰리는 구조다. 2017년 기준으로 삼성전자 스마트폰에 공급되는 부품의 연 매출이 3,578억원으로 전체 매출의 70%가량을 차지했다는 자료가 있으며, 이는 과거 수치라 현재의 고객별 비중과는 차이가 있을 수 있다. 보도에서는 수출 비중이 전체의 89.6%라고 제시됐다. 사업 영역은 최근 전기차·수소차용 HV PTC 히터와 햅틱 액추에이터 등 자동차 전장 부품으로 넓어지고 있으며, 차량용 극박형 고진동모터와 로봇용 BLDC 모터도 신규 사업으로 추진 중이다. 생산 기지는 베트남을 주력으로 하고, 인도법인과 2022년 설립된 구미공장 등으로 나뉘어 있다. 카메라 모듈 부품 분야의 동종 상장사로는 LG이노텍이 있으며, 카메라 액추에이터 시장은 대형 고객의 설계 채택에 따라 물량이 갈리는 구조라는 점이 사업 특성으로 꼽힌다.",
+  "en": "Jahwa Electronics was incorporated in 1987, converted to a corporation that year, and listed on the KOSPI market in 1999 as a maker of components for communication devices. Its core products are AF (auto focus) and OIS (optical image stabilization) actuators for smartphone cameras, along with folded zoom actuators, and the company company profile describes it as a primary vendor to a strategic customer supplying high-end actuators. Its customers are reported to be leading global smartphone makers, so volume tends to concentrate among a few clients. A 2017-based report stated that smartphone parts supplied to Samsung Electronics generated KRW 357.8 billion in annual revenue, about 70% of total sales; this is older data and the current customer mix may differ. The same report cited an export share of 89.6%. New businesses extend into automotive parts such as HV PTC heaters and haptic actuators, and the company is also pursuing thin high-vibration motors for vehicle massage seats and BLDC motors for robots. Production is centered on Vietnam, with an Indian subsidiary and a Gumi plant established in 2022. In camera module components, LG Innotek is a listed peer, and camera actuator demand is generally tied to design wins at a few large customers."
  },
  "earnings": {
-  "ko": "연간 매출은 2022년 2,923억원에서 2023년 5,033억원(전년 대비 72.2% 증가), 2024년 6,811억원(전년 대비 35.3% 증가), 2025년 8,489억원(전년 대비 24.6% 증가)으로 2023년부터 2025년까지 3년 연속 늘었다. 영업손익은 2022년 영업손실 117억원, 2023년 영업손실 164억원으로 적자가 지속되며 손실이 확대된 뒤 2024년 영업이익 450억원으로 흑자 전환했고, 2025년에는 영업이익 420억원으로 전년 대비 6.6% 감소했다. 지배주주 순이익은 2022년 순손실 382억원, 2023년 순손실 244억원으로 적자가 지속되며 손실이 축소된 뒤 2024년 166억원으로 흑자 전환, 2025년에는 471억원으로 전년 대비 183.6% 증가했다. 영업이익률은 2022년 -4.0%, 2023년 -3.2%에서 2024년 6.6%로 개선됐다가 2025년 4.9%로 낮아졌다. 회사는 2025년 실적 변동 요인으로 북미향 및 중국향 수주 증가에 따른 매출 확대를 꼽았다. 분기별로는 2025년 2분기 매출 1,678억원에서 3분기 2,559억원(전 분기 대비 52.5% 증가), 4분기 2,640억원(전 분기 대비 3.2% 증가)으로 늘었다가 2026년 1분기 2,607억원(전 분기 대비 1.2% 감소), 2분기 2,352억원(전 분기 대비 9.8% 감소, 전년 동기 대비 40.1% 증가)으로 2025년 4분기를 정점으로 2개 분기 연속 감소했다. 영업이익도 2025년 4분기 267억원을 고점으로 2026년 1분기 246억원(전 분기 대비 7.8% 감소), 2분기 224억원(전 분기 대비 8.9% 감소, 전년 동기 대비 흑자 전환)으로 2개 분기 연속 줄었다. 지배주주 순이익은 2026년 1분기 366억원에서 2분기 175억원으로 전 분기 대비 52.3% 감소했으나 전년 동기 순손실 161억원 대비로는 흑자 전환했으며, 최근 4개 분기(2025년 3분기~2026년 2분기) 합계는 1,122억원이다. 영업활동 현금흐름은 2023년 -586억원에서 2024년 1,076억원, 2025년 1,034억원으로 개선 흐름을 이어갔다.",
-  "en": "Annual revenue rose from KRW 292.3 billion in 2022 to KRW 503.3 billion in 2023 (up 72.2% year-on-year), KRW 681.1 billion in 2024 (up 35.3%), and KRW 848.9 billion in 2025 (up 24.6%), marking three consecutive years of growth from 2023 through 2025. Operating results moved from an operating loss of KRW 11.7 billion in 2022 to a continued loss of KRW 16.4 billion in 2023 (loss widened), before turning to an operating profit of KRW 45 billion in 2024, then declining 6.6% year-on-year to KRW 42 billion in 2025. Net income attributable to controlling shareholders went from a loss of KRW 38.2 billion in 2022 to a continued loss of KRW 24.4 billion in 2023 (loss narrowed), turned profitable at KRW 16.6 billion in 2024, and grew 183.6% year-on-year to KRW 47.1 billion in 2025. The operating margin improved from -4.0% in 2022 and -3.2% in 2023 to 6.6% in 2024, before easing to 4.9% in 2025. The company attributed its 2025 performance changes to higher orders from North American and Chinese customers driving revenue growth. On a quarterly basis, revenue rose from KRW 167.8 billion in Q2 2025 to KRW 255.9 billion in Q3 2025 (up 52.5% QoQ) and KRW 264 billion in Q4 2025 (up 3.2% QoQ), then declined to KRW 260.7 billion in Q1 2026 (down 1.2% QoQ) and KRW 235.2 billion in Q2 2026 (down 9.8% QoQ, up 40.1% YoY), marking two consecutive quarterly declines after peaking in Q4 2025. Operating profit similarly peaked at KRW 26.7 billion in Q4 2025 before falling to KRW 24.6 billion in Q1 2026 (down 7.8% QoQ) and KRW 22.4 billion in Q2 2026 (down 8.9% QoQ, turned profitable YoY), also two straight quarterly declines. Net income attributable to controlling shareholders fell from KRW 36.6 billion in Q1 2026 to KRW 17.5 billion in Q2 2026 (down 52.3% QoQ) but turned profitable versus a loss of KRW 16.1 billion a year earlier, with the trailing four quarters (Q3 2025-Q2 2026) totaling KRW 112.2 billion. Operating cash flow improved from -KRW 58.6 billion in 2023 to KRW 107.6 billion in 2024 and KRW 103.4 billion in 2025."
+  "ko": "매출은 2022년 2,923억원에서 2023년 5,033억원(전년 대비 72.2% 증가), 2024년 6,811억원(전년 대비 35.3% 증가), 2025년 8,489억원(전년 대비 24.6% 증가)으로 2023년부터 2025년까지 3년 연속 증가했다. 영업이익은 2022년 영업손실 117억원, 2023년 영업손실 164억원으로 적자가 이어지다가 2024년 450억원으로 흑자 전환했고, 2025년에는 420억원으로 전년 대비 6.6% 감소했다. 영업이익률은 2022년 -4.0%, 2023년 -3.2%에서 2024년 6.6%로 올라섰다가 2025년 4.9%로 낮아졌으며, 매출 증가 속도만큼 이익률이 따라 오르지 못했다. 지배주주 순이익은 2022년 순손실 382억원, 2023년 순손실 244억원을 거쳐 2024년 166억원으로 흑자 전환했고, 2025년에는 471억원으로 전년 대비 183.6% 증가했다. 영업이익이 줄어든 2025년에 지배주주 순이익이 늘었으므로, 그 차이를 만든 영업외 항목은 2026년 사업보고서에서 구성을 확인해야 한다. 당기순이익(비지배지분 포함)은 2022년부터 2025년까지 지배주주 순이익과 같은 값으로 공시됐다. 영업활동 현금흐름은 2023년 -586억원에서 2024년 1,076억원, 2025년 1,034억원으로 회복됐다. 부채비율은 2022년 47.4%에서 2023년 82.4%로 올랐다가 2025년 74.9%로 낮아졌고, 2025년 말 자본총계는 4,447억원, 부채총계는 3,332억원이다. 분기 매출은 2025년 4분기 2,640억원(전 분기 대비 3.2% 증가)까지 늘었다가 2026년 2분기 2,352억원으로 줄었고, 2026년 3분기 2,528억원은 전 분기 대비 7.5% 증가했으나 전년 동기 대비로는 1.2% 감소했다. 영업이익은 2025년 4분기 267억원을 정점으로 2026년 1분기 246억원, 2분기 224억원, 3분기 144억원으로 3개 분기 연속 감소했다. 지배주주 순이익은 2026년 1분기 366억원을 정점으로 2분기 175억원, 3분기 31.6억원으로 2개 분기 연속 감소했으며, 최근 4개 분기 합계는 914억원이다.",
+  "en": "Revenue rose from KRW 292.3 billion in 2022 to KRW 503.3 billion in 2023 (up 72.2% year on year), KRW 681.1 billion in 2024 (up 35.3%), and KRW 848.9 billion in 2025 (up 24.6%), rising for three consecutive years from 2023 through 2025. Operating losses of KRW 11.7 billion in 2022 and KRW 16.4 billion in 2023 continued the loss trend, before operating profit of KRW 45 billion in 2024 marked a turn to profit; in 2025 it fell to KRW 42 billion, down 6.6% year on year. The operating margin moved from -4.0% in 2022 and -3.2% in 2023 to 6.6% in 2024 and then 4.9% in 2025, so margins did not keep pace with revenue growth. Net loss attributable to controlling shareholders was KRW 38.2 billion in 2022 and KRW 24.4 billion in 2023, before net profit of KRW 16.6 billion in 2024 turned it positive; in 2025 it reached KRW 47.1 billion, up 183.6% year on year. Because net profit rose in 2025 while operating profit declined, the non-operating items behind that gap should be checked in the 2026 annual report. Net profit including non-controlling interests matched the controlling-shareholder figure in each year from 2022 to 2025. Operating cash flow went from KRW 29.6 billion in 2022 to -KRW 58.6 billion in 2023, then recovered to KRW 107.6 billion in 2024 and KRW 103.4 billion in 2025. The debt ratio rose from 47.4% in 2022 to 82.4% in 2023 and fell to 74.9% in 2025, with year-end 2025 total equity of KRW 444.7 billion and total liabilities of KRW 333.2 billion. Quarterly revenue climbed to KRW 264 billion in Q4 2025 (up 3.2% quarter on quarter), then fell to KRW 235.2 billion in Q2 2026, and Q3 2026 revenue of KRW 252.8 billion rose 7.5% quarter on quarter but declined 1.2% year on year. Operating profit peaked at KRW 26.7 billion in Q4 2025 and then fell to KRW 24.6 billion in Q1 2026, KRW 22.4 billion in Q2 2026, and KRW 14.4 billion in Q3 2026, a three-quarter decline. Net profit attributable to controlling shareholders peaked at KRW 36.6 billion in Q1 2026, then fell to KRW 17.5 billion in Q2 2026 and KRW 3.16 billion in Q3 2026, a two-quarter decline. Over the last four quarters, controlling-shareholder net profit totaled KRW 91.4 billion."
  },
  "industry": {
-  "ko": "전방 산업의 핵심 변수는 스마트폰 카메라 모듈 고도화로, 프리미엄 모델을 중심으로 폴디드줌과 OIS 채택이 확대되는 흐름이다. 2026년 출시된 삼성전자 갤럭시 S26 시리즈를 계기로 폴디드줌 카메라 모듈의 채택 비중이 더 넓어질 것이란 전망이 부품업계에서 제기됐다. 애플 역시 후면 카메라에 잠망경 형태 폴디드줌을 순차적으로 확대 적용하는 추세이며, 아이폰 신제품 흥행과 맞물려 관련 부품사에 대한 관심이 커지는 경향이 반복돼 왔다. 과거 보도에 따르면 LG이노텍은 액추에이터를 자체 생산하지 않고 외부에서 조달해 온 것으로 전해져, 액추에이터 전문 공급사인 자화전자와는 사업 구조가 다르다. 로봇·휴머노이드 대상 액추에이터와 자성 엔코더 수요가 새로운 성장축으로 거론되고 있으며, 전기차 전장부품인 PTC 히터 시장도 확대되는 추세다. 업종 내에서는 삼성전기, LG이노텍 등 대형 종합부품사와 비교되는 가운데, 자화전자는 액추에이터라는 세부 품목에 특화된 중견 전문업체로 분류된다. 스마트폰 교체 수요, 프리미엄 모델 비중, 환율 등 거시 변수가 동시에 실적에 영향을 미치는 산업 특성상 분기별 변동성이 상대적으로 큰 편이다.",
-  "en": "The key variable in the end-market is the advancement of smartphone camera modules, with folded-zoom and OIS adoption expanding particularly in premium models. Following Samsung Electronics' 2026 launch of the Galaxy S26 series, component industry observers suggested that folded-zoom camera module adoption could broaden further. Apple has also progressively expanded periscope-style folded-zoom cameras on its rear cameras, and interest in related component makers has tended to rise alongside new iPhone launch cycles. According to earlier reporting, LG Innotek has not produced actuators in-house and has instead sourced them externally, differentiating its business structure from actuator specialist Jahwa Electronics. Demand for robot and humanoid actuators and magnetic encoders is being discussed as a new growth axis, while the market for PTC heaters used in electric-vehicle electronics is also expanding. Within the sector, Jahwa Electronics is often compared with larger diversified component makers such as Samsung Electro-Mechanics and LG Innotek, though it is classified as a mid-sized specialist focused on the actuator niche. Given that smartphone replacement demand, premium-model mix, and currency movements all affect results simultaneously, the industry tends to exhibit relatively high quarter-to-quarter volatility."
+  "ko": "카메라 액추에이터 수요는 스마트폰의 고사양화에 크게 좌우된다. wisereport 기업 실적 코멘트에 따르면 2026년 1분기 통신기기용 부품 매출은 프리미엄 스마트폰의 고사양 카메라 채택 확대와 폴디드 카메라 수요 증가로 크게 성장했다. 전기차 확산으로 HV PTC 히터 등 전장 부품 수요도 늘고 있다. 같은 전자 부품 업종에서는 흐름이 다르게 나타난다. 삼성전기는 2026년 10월 28일 3분기 실적 발표 콘퍼런스콜에서 MLCC 주요 제품의 수요가 내년에 약 8배 수준으로 늘 것으로 전망했다고 밝혔다. The Herald Business 보도에 따르면 삼성전기 MLCC의 납기는 52주까지 늘어났고, 공급 부족이 고부가 제품에서 범용 제품으로 번지고 있다. 다만 이는 MLCC 업체의 업황이며 자화전자가 직접 같은 제품을 공급하는 것은 아니므로 업종 흐름의 참고 지표로만 읽어야 한다. 자화전자의 2025년 4분기 이후 영업이익 감소는 같은 기간 전자 부품 업황의 개선 흐름과 엇갈리는 모습이어서, 이 차이를 만든 고객 물량과 제품 믹스를 확인할 필요가 있다. 카메라 액추에이터 분야에서 자화전자는 세계적 경쟁력을 갖췄다는 기업 설명이 있으나, 동종 업체와의 점유율 비교는 공개 자료로 확인되는 범위가 제한적이다. 카메라 모듈 분야의 동종 상장사로는 LG이노텍이 있으며, 두 회사 모두 스마트폰 고객사의 신제품 사이클에 실적이 영향을 받는 구조다.",
+  "en": "Demand for camera actuators is closely tied to the rising sophistication of smartphone cameras. According to the company profile on wisereport, Q1 2026 communication-device component revenue grew strongly as premium smartphones adopted higher-spec cameras and folded-camera demand increased. Electrification is also lifting demand for automotive parts such as HV PTC heaters. Across the broader electronic components sector, the picture is mixed. On its Q3 2026 earnings call on October 28, 2026, Samsung Electro-Mechanics said it expected MLCC demand for its key product to grow roughly eightfold next year. The Herald Business reported that Samsung Electro-Mechanics MLCC lead times stretched to 52 weeks and that supply shortages were spreading from premium to commodity products. This is an MLCC upcycle at a peer rather than a direct market for Jahwa Electronics, so it serves only as a read-across indicator for the sector. Jahwa's operating profit declines since Q4 2025 have moved opposite to this sector trend, which makes customer volume and product mix worth verifying. The company describes its camera actuator franchise as globally competitive, but public data allowing a detailed share comparison with rivals is limited. LG Innotek is a listed peer in camera module components, and both companies' earnings depend on the new-model cycles of smartphone customers."
  },
  "outlook": {
-  "ko": "자화전자는 구미 1공장에서 가동 중인 OIS 액추에이터 생산능력(주당 70만~75만 개 수준)을 2028년 7월 양산을 목표로 약 2,500억원을 투자해 4배 수준으로 늘리는 증설을 추진 중이며, 완료되면 관련 매출이 현재의 약 2배로 늘어날 것으로 전망된다고 밝혔다. 이와 별도로 2026년 7월 경상북도·구미시와 5,000억원 규모의 투자양해각서를 체결해 구미국가산업1단지에 광학계 구동·제어 제품 생산공장을 신설하기로 했으며, 2026년부터 2029년까지 4년간 투자가 집행되고 400명의 신규 고용이 계획돼 있다. 이 투자가 마무리되면 구미 지역 누적 투자액은 약 1조원, 신규 고용은 1,400명을 넘어설 전망이다. 회사측은 2025년 말 기준으로 북미 고객사향 매출 확대에 힘입어 실적 회복세가 이어질 것이라는 전망을 내놓은 바 있다. 로봇·휴머노이드용 액추에이터와 BLDC 모터 등 신사업은 아직 매출 규모가 크지 않지만, 회사는 이 분야를 중장기 성장 동력으로 육성하겠다는 방침을 밝혔다. 증권가에서는 대신증권이 2026년 6월 리포트에서 1분기 실적 호조와 성장 지속, 사업 다각화 추진을 근거로 목표주가 62,000원을 제시한 바 있다. 다만 이는 특정 시점의 증권사 전망으로, 2026년 2분기 실적까지 반영한 최신 전망인지는 확인이 필요하다.",
-  "en": "Jahwa Electronics stated it is investing roughly KRW 250 billion to quadruple OIS actuator capacity (currently around 700,000-750,000 units per week) at its existing Gumi plant, targeting mass production by July 2028, with related revenue expected to roughly double once complete. Separately, in July 2026 the company signed a KRW 500 billion investment MOU with North Gyeongsang Province and Gumi City to build a new plant for optical drive and control products at the Gumi National Industrial Complex 1, with investment to be executed over four years from 2026 to 2029 and plans to create 400 new jobs. Once this investment is completed, cumulative investment in the Gumi area is expected to exceed KRW 1 trillion with new employment surpassing 1,400 people. As of the end of 2025, the company indicated that a recovery in results was expected to continue, supported by expanding sales to its North American customer. New businesses such as robot and humanoid actuators and BLDC motors remain small in scale, but the company has stated its intent to cultivate this area as a medium- to long-term growth driver. On the brokerage side, Daishin Securities set a price target of KRW 62,000 in a June 2026 report, citing strong first-quarter results, continued growth, and business diversification. However, that figure reflects a specific point in time, and whether it incorporates subsequent Q2 2026 results warrants confirmation."
+  "ko": "공시 실적 기준 가장 최근 분기는 2026년 3분기이며, 다음 정기보고서는 2026년 사업보고서다. 회사는 폴디드 줌 액추에이터와 센서 시프트 OIS 등 고부가 제품 라인업을 강조하고 있어, 프리미엄 스마트폰의 카메라 사양 고도화가 계속되는지가 중요한 변수다. 전장 측면에서는 HV PTC 히터와 햅틱 액추에이터 등 신규 사업이 추진 중이라는 점이 확인된다. 다만 신규 사업의 매출 기여 시점과 규모는 공시 실적에서 아직 구분되지 않으며, 이 부분은 향후 공시로 확인해야 한다. 2026년 3분기 영업이익은 144억원으로 2025년 4분기 정점인 267억원보다 낮은 수준이어서, 4분기 실적이 감소 추세를 끊을지가 첫 확인 지점이다. 2026년 4분기 잠정 실적은 2027년 초에 나오는 것이 통상적이며, 이때 영업이익률이 2026년 3분기 수준에서 회복되는지 확인할 수 있다. 다음 정기보고서인 2026년 사업보고서에서는 연간 영업외손익 구성과 2025년 지배주주 순이익 증가의 원인이 확인된다. 2026년 사업보고서의 연간 영업이익률은 2025년의 4.9%와 비교해 읽을 수 있다. 고객사 신규 모델 채택이나 공급계약이 공시되는지도 실적 흐름을 가늠하는 지표가 된다.",
+  "en": "The most recent quarter in the disclosed results is Q3 2026, and the next periodic report is the 2026 annual report. The company highlights high-value products such as folded zoom actuators and sensor-shift OIS, so whether premium smartphones keep upgrading camera specifications is a key variable. On the automotive side, new businesses including HV PTC heaters and haptic actuators are being pursued. The revenue contribution and timing of these new businesses are not yet separable in the disclosed results and will need to be confirmed through future filings. Q3 2026 operating profit of KRW 14.4 billion is below the Q4 2025 peak of KRW 26.7 billion, so whether Q4 results halt the decline is the first checkpoint. Q4 2026 preliminary results are typically released in early 2027, and they will show whether the operating margin recovers from the Q3 2026 level. The 2026 annual report will show the breakdown of full-year non-operating items and explain the cause of the 2025 rise in controlling-shareholder net profit. The 2026 full-year operating margin can be read against the 4.9% recorded in 2025. Disclosures of new-model adoptions or supply contracts by customers are also indicators of the earnings trajectory."
  },
  "valuation_comment": {
-  "ko": "현재 거래되는 주가수익배수(PER)는 2023~2024년 적자 내지 저수익 구간에서 형성됐던 과거 배수와는 비교 기준 자체가 다른데, 2024년 흑자 전환과 2025년 이익 확대를 거치며 이익 기준이 달라졌기 때문이다. 주가순자산비율(PBR)은 2025년 말 자본총계 4,447억원 대비 시가총액의 상대적 위치를 보여주는 지표로, 순자산 대비 할인 또는 프리미엄 여부는 향후 이익 누적 속도에 따라 달라질 수 있다. 배당수익률은 최근 공시 기준 배당을 지급하지 않아 낮은 수준에 머물러 있어, 배당을 지급하는 다른 전자부품 상장사와는 주주환원 방식에서 차이가 있다. 2026년 1분기까지 이어지던 이익 개선 흐름이 2분기 들어 전 분기 대비 둔화된 만큼, 다음 분기 실적이 현재 거래 배수의 적정성을 가늠하는 변수가 될 수 있다. 대규모 증설 투자에 따른 차입금 확대와 교환사채 풋옵션 부담은 순자산 증가 속도에 영향을 줄 수 있는 요인으로 남아 있다.",
-  "en": "The price-to-earnings multiple at which the stock currently trades is not directly comparable to multiples seen during the 2023-2024 loss or low-profitability period, since the earnings base itself changed following the 2024 turnaround and 2025 profit expansion. The price-to-book ratio reflects the relative position of market capitalization against total equity of KRW 444.7 billion at the end of 2025, and whether the stock trades at a discount or premium to net assets will depend on the pace of future earnings accumulation. The dividend yield remains low, as the company has not paid dividends based on recent disclosures, differentiating its shareholder-return approach from dividend-paying peers in the electronics components sector. Because the earnings improvement trend that continued through Q1 2026 slowed in Q2 relative to the prior quarter, upcoming quarterly results could serve as a variable in assessing the current trading multiple. Expanded borrowings tied to large-scale capacity investments and exchangeable-bond put-option obligations remain factors that could affect the pace of net asset growth."
+  "ko": "현재 배수는 최근 4개 분기 이익 흐름과 함께 읽어야 하며, 배수 자체는 이익 변화에 민감하게 움직인다. 주가순자산비율은 2024년 9월 말부터 2025년 9월 말까지 분기말 기준 0.66~1.10배 범위에서 움직였고, 현재 PBR은 이 범위의 하단을 밑도는 수준이다. 순자산 대비 할인 구간에 있다는 사실은 자본총계 4,447억원의 수익성이 낮아진 상태와 맞물려 있다. 이익 측면에서는 2024년 흑자 전환 직후 대비 2025년 이익이 크게 늘었으나, 2026년 들어 3분기 연속으로 영업이익이 줄어 PER 해석이 이익 추세에 따라 바뀔 수 있다. 배당은 현재 사실상 없는 상태이므로 주주 환원 측면의 밸류에이션 근거는 제한적이다. 2025년 이익 회복이 일회성 항목에 기댄 것인지 지속 가능한 영업 이익인지는 2026년 사업보고서의 영업외손익 구성으로 가려야 한다. 같은 주가에서도 이익 규모가 줄면 배수는 높아지므로, 분기 이익 추세가 배수 해석의 핵심 변수다.",
+  "en": "Current multiples should be read alongside the earnings trend of the last four quarters, since the multiples move sharply with changes in profit. The price-to-book ratio moved within a range of 0.66 to 1.10 times at quarter-end from September 2024 to September 2025, and the current PBR sits below the bottom of that range. The price sits at a discount to net assets, against year-end 2025 total equity of KRW 444.7 billion and a return on that equity that has declined. In earnings terms, profit rose sharply in 2025 from the turn to profit in 2024, but operating profit has declined for three straight quarters in 2026, so the interpretation of the earnings multiple depends on which trend persists. Dividend payouts are currently minimal, so the shareholder-return argument for valuation is limited. Whether the 2025 profit recovery came from one-off items or sustainable operations should be checked in the non-operating breakdown of the 2026 annual report. At an unchanged share price, a smaller earnings base raises the multiple, so the quarterly earnings trend is the key variable in reading valuation."
  },
  "bull": [
   {
    "title": {
-    "ko": "이익 체력 회복",
-    "en": "Recovering Earnings Power"
+    "ko": "이익 회복의 방향 전환",
+    "en": "Turnaround in profitability"
    },
    "body": {
-    "ko": "2024년 영업이익 450억원으로 흑자 전환한 이후 2025년에도 420억원의 흑자를 유지했고, 지배주주 순이익은 2025년 471억원으로 전년 대비 183.6% 증가했다. 최근 4개 분기(2025년 3분기~2026년 2분기) 지배주주 순이익 합계는 1,122억원에 달해 적자 시기와는 다른 이익 구조를 보여준다. 영업활동 현금흐름도 2024년 1,076억원, 2025년 1,034억원으로 2년 연속 1,000억원대를 유지했다.",
-    "en": "After turning profitable with KRW 45 billion in operating profit in 2024, the company maintained profitability with KRW 42 billion in 2025, while net income attributable to controlling shareholders grew 183.6% year-on-year to KRW 47.1 billion in 2025. The trailing four quarters (Q3 2025-Q2 2026) posted combined net income attributable to controlling shareholders of KRW 112.2 billion, a markedly different profile from the loss-making years. Operating cash flow also stayed above KRW 100 billion for two straight years, at KRW 107.6 billion in 2024 and KRW 103.4 billion in 2025."
+    "ko": "영업손실이 이어지던 2023년 이후 2024년 영업이익 450억원으로 흑자 전환했고, 2025년 지배주주 순이익은 471억원으로 전년 대비 183.6% 증가했다. 영업이익률은 2024년 6.6%, 2025년 4.9%로 적자 구간에서 벗어났다. 이익 회복이 이어진 기간은 2024년과 2025년 두 해다.",
+    "en": "After operating losses continued through 2023, operating profit turned to KRW 45 billion in 2024. Net profit attributable to controlling shareholders rose 183.6% to KRW 47.1 billion in 2025. The operating margin moved to 6.6% in 2024 and 4.9% in 2025, out of the loss zone."
    }
   },
   {
    "title": {
-    "ko": "대규모 증설을 통한 외형 성장 여력",
-    "en": "Capacity Expansion Supporting Scale Growth"
+    "ko": "고부가 카메라 라인업",
+    "en": "High-value camera lineup"
    },
    "body": {
-    "ko": "구미 1공장의 OIS 액추에이터 생산능력을 2,500억원을 투자해 4배로 늘리는 증설이 진행 중이며, 완료 시 관련 매출이 현재의 약 2배로 늘어날 것으로 전망된다. 별도로 5,000억원 규모의 구미 2공장 투자양해각서도 체결돼 2026~2029년 투자가 집행된다. 이 투자들이 계획대로 실행되면 구미 지역 누적 투자액이 약 1조원에 이르러 생산 기반이 한층 확충된다.",
-    "en": "A KRW 250 billion investment is underway to quadruple OIS actuator capacity at the Gumi plant, with related revenue expected to roughly double upon completion. Separately, a KRW 500 billion MOU for a second Gumi plant has been signed, with investment to be executed from 2026 through 2029. If these investments proceed as planned, cumulative investment in the Gumi area would reach roughly KRW 1 trillion, substantially expanding the production base."
+    "ko": "폴디드 줌 액추에이터와 센서 시프트 OIS 등 고부가 제품군을 보유하고 있다. 2026년 1분기 통신기기용 부품 매출은 프리미엄 스마트폰의 고사양 카메라 채택 확대와 폴디드 카메라 수요 증가로 크게 성장했다는 실적 코멘트가 있다. 고사양 카메라 채택이 늘면 제품 믹스 개선으로 이어질 수 있다.",
+    "en": "The company offers high-value products such as folded zoom actuators and sensor-shift OIS. Its operating commentary for Q1 2026 cites strong growth in communication-device parts from wider adoption of higher-spec cameras in premium smartphones and rising folded-camera demand. Wider adoption could support product-mix improvement."
    }
   },
   {
    "title": {
-    "ko": "고객 다변화와 신사업 확대",
-    "en": "Customer Diversification and New Business Lines"
+    "ko": "현금흐름과 재무 구조 개선",
+    "en": "Cash flow and balance sheet"
    },
    "body": {
-    "ko": "2023년부터 북미 최대 고객사의 플래그십 모델에 핵심 부품을 공급하기 시작했고 중국향 매출도 늘고 있어 삼성전자 의존도가 완화되는 모습이다. 전기차용 PTC 히터, 차량 마사지 시트 고진동모터, 로봇용 BLDC 모터 등 신사업도 함께 추진되고 있다. 로봇 관절 모터와 자성 엔코더 기술을 기반으로 한 고객사향 매출도 발생하고 있어 중장기 포트폴리오 다각화가 진행 중이다.",
-    "en": "Since 2023 the company has supplied key components to the flagship models of a leading North American customer, and sales to Chinese customers have also grown, moderating reliance on Samsung Electronics. New businesses including EV PTC heaters, high-vibration motors for automotive massage seats, and BLDC motors for robots are also being pursued. Customer revenue based on robot-joint motor and magnetic encoder technology has begun, indicating ongoing medium- to long-term portfolio diversification."
+    "ko": "영업활동 현금흐름은 2024년 1,076억원, 2025년 1,034억원으로 두 해 모두 1,000억원을 넘었다. 부채비율은 2023년 82.4%에서 2025년 74.9%로 낮아졌다. 2025년 말 자본총계는 4,447억원이다.",
+    "en": "Operating cash flow was KRW 107.6 billion in 2024 and KRW 103.4 billion in 2025, both above KRW 100 billion. The debt ratio fell from 82.4% in 2023 to 74.9% in 2025. Total equity at year-end 2025 was KRW 444.7 billion."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "최근 2개 분기 연속 둔화",
-    "en": "Two Consecutive Quarters of Deceleration"
+    "ko": "분기 이익의 연속 감소",
+    "en": "Consecutive quarterly profit declines"
    },
    "body": {
-    "ko": "2025년 4분기 매출 2,640억원, 영업이익 267억원으로 정점을 찍은 이후 2026년 1분기와 2분기 모두 매출과 영업이익이 전 분기 대비 줄었다. 지배주주 순이익도 2026년 1분기 366억원에서 2분기 175억원으로 전 분기 대비 52.3% 감소했다. 전년 동기 대비는 흑자 전환이나 증가세를 보였지만, 직전 분기 대비로는 둔화 흐름이 이어지고 있다.",
-    "en": "After peaking in Q4 2025 at KRW 264 billion in revenue and KRW 26.7 billion in operating profit, both revenue and operating profit declined quarter-on-quarter in both Q1 and Q2 2026. Net income attributable to controlling shareholders also fell 52.3% quarter-on-quarter, from KRW 36.6 billion in Q1 2026 to KRW 17.5 billion in Q2 2026. While year-on-year comparisons showed a turn to profit and growth, the sequential deceleration has continued."
+    "ko": "영업이익은 2025년 4분기 267억원을 정점으로 2026년 1분기부터 3분기까지 3개 분기 연속 감소했다. 지배주주 순이익은 2026년 1분기 366억원에서 2026년 3분기 31.6억원으로 줄었고, 3분기는 전년 동기 대비 86.8% 감소했다. 최근 4개 분기 합계는 914억원이다.",
+    "en": "Operating profit peaked at KRW 26.7 billion in Q4 2025 and has declined for three consecutive quarters through Q3 2026. Controlling-shareholder net profit fell from KRW 36.6 billion in Q1 2026 to KRW 3.16 billion in Q3 2026, down 86.8% year on year in the latest quarter. The last four quarters totaled KRW 91.4 billion."
    }
   },
   {
    "title": {
-    "ko": "고객·전방산업 집중도",
-    "en": "Customer and End-Market Concentration"
+    "ko": "매출 정체와 고객 집중",
+    "en": "Flat revenue and customer concentration"
    },
    "body": {
-    "ko": "2024년 기준 매출의 91.9%가 통신기기용 부품, 즉 스마트폰 카메라 모듈 관련 부품에서 발생해 전방산업 의존도가 매우 높다. 특정 고객사의 플래그십 모델 채택 여부나 출시 일정 변화가 실적에 직접적인 영향을 줄 수 있는 구조다. 신사업인 로봇·전장 부품 매출은 아직 전체 대비 미미한 수준이어서 당장 의존도를 낮추기는 어렵다.",
-    "en": "As of 2024, 91.9% of revenue came from telecom-equipment components related to smartphone camera modules, indicating very high end-market concentration. Changes in a specific customer's flagship model adoption or launch schedule can directly affect results. Revenue from new robotics and automotive electronics components remains minor relative to the total, making near-term diversification of this reliance difficult."
+    "ko": "2026년 3분기 매출은 2,528억원으로 전년 동기 대비 1.2% 감소했다. 2025년 4분기 2,640억원 이후 매출이 분기 기준으로 정점을 넘었다. 2017년 기준으로 삼성전자 스마트폰향 부품이 전체 매출의 70%가량을 차지했다는 자료가 있어 고객 집중도가 높다.",
+    "en": "Q3 2026 revenue of KRW 252.8 billion declined 1.2% year on year. Quarterly revenue has been below the Q4 2025 level of KRW 264 billion since. A 2017-based report stated that smartphone parts for Samsung Electronics accounted for about 70% of revenue, indicating high customer concentration."
    }
   },
   {
    "title": {
-    "ko": "재무 부담 요인",
-    "en": "Financial Burden Factors"
+    "ko": "낮은 영업이익률과 영업외 의존 가능성",
+    "en": "Thin operating margin and possible reliance on non-operating items"
    },
    "body": {
-    "ko": "부채비율은 2023년 82.4%에서 2025년 74.9%로 낮아졌지만 여전히 70%대 후반 수준을 유지하고 있다. 교환사채(EB) 투자자의 풋옵션 행사 가능성이 남아 있어 추가 차입이 필요할 수 있고, 과거 분기에는 금융비용이 영업이익을 웃돈 적도 있었다. 대규모 증설 투자가 동시에 진행되는 만큼 차입금과 이자비용 부담이 함께 늘어날 가능성이 있다.",
-    "en": "The debt ratio eased from 82.4% in 2023 to 74.9% in 2025 but remains in the high-70% range. The possibility of exchangeable bond (EB) holders exercising put options remains, which could require additional borrowing, and in past quarters financial costs have exceeded operating profit. With large-scale expansion investments proceeding simultaneously, borrowings and interest expenses could rise in tandem."
+    "ko": "영업이익률은 2025년 4.9%로 2024년 6.6%보다 낮아졌다. 2025년 영업이익은 전년 대비 감소했지만 지배주주 순이익은 크게 늘어, 본업 외 항목의 기여가 있었을 가능성이 있다. 이 구성은 2026년 사업보고서에서 확인해야 한다.",
+    "en": "The operating margin fell from 6.6% in 2024 to 4.9% in 2025. Operating profit declined in 2025 while controlling-shareholder net profit rose sharply, which suggests a possible contribution from non-operating items. That composition needs to be confirmed in the 2026 annual report."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "재무구조·유동성 리스크",
-    "en": "Financial Structure and Liquidity Risk"
+    "ko": "고객·수출 집중",
+    "en": "Customer and export concentration"
    },
    "body": {
-    "ko": "교환사채(EB) 투자자의 추가 풋옵션 행사 가능성이 거론되고 있으며, 회사는 이에 대응해 추가 차입을 검토하고 있는 것으로 전해졌다. 2025년 3분기까지 별도기준 금융비용이 영업이익을 웃돈 분기도 있어 이자 부담이 실적 개선 속도를 제약할 가능성이 있다. 대규모 증설 투자가 동시에 진행되는 가운데 단기차입금 비중이 확대될 경우 재무 유연성이 저하될 수 있다.",
-    "en": "There are reports of a continued possibility that exchangeable bond (EB) holders could exercise additional put options, and the company has reportedly been considering further borrowing in response. Through Q3 2025, there were quarters in which standalone financial costs exceeded operating profit, suggesting interest burden could constrain the pace of earnings improvement. With large capacity investments proceeding simultaneously, an increase in short-term borrowings could reduce financial flexibility."
+    "ko": "사업이 소수 대형 스마트폰 고객에 의존해 있어 고객의 신제품 채택 여부가 매출을 좌우한다. 수출 비중은 보도에서 89.6%로 제시됐다. 특정 고객의 물량 변화나 수출 환경 변화가 분기 실적에 직접 반영될 수 있다.",
+    "en": "The business depends on a small number of large smartphone customers, so their new-product adoption decisions drive revenue. Reports put the export share at 89.6%. Volume shifts at a major customer or changes in the export environment could flow directly into quarterly results."
    }
   },
   {
    "cat": {
-    "ko": "고객·수주 집중 리스크",
-    "en": "Customer and Order Concentration Risk"
+    "ko": "이익 변동성",
+    "en": "Earnings volatility"
    },
    "body": {
-    "ko": "매출 대부분이 소수 스마트폰 제조사의 특정 모델 채택 여부에 좌우되는 구조여서, 고객사의 설계 변경이나 공급망 조정이 발생하면 실적 변동성이 커질 수 있다. 중국 스마트폰 업체 대상 매출 비중이 늘고 있는 점은 성장 요인이자 동시에 중국 내수 경기나 규제 변화에 대한 노출을 의미하기도 한다. 경쟁사의 기술 추격이나 원가 경쟁력 변화도 고객사 배분 비중에 영향을 줄 수 있다.",
-    "en": "Because the bulk of revenue depends on whether specific models from a small number of smartphone makers adopt the company's components, design changes or supply-chain shifts by customers could increase earnings volatility. Rising revenue exposure to Chinese smartphone makers is both a growth factor and a source of exposure to China's domestic economic conditions and regulatory shifts. Competitors' technological catch-up or changes in cost competitiveness could also affect customer allocation shares."
+    "ko": "2023년 영업손실과 순손실에서 2025년 흑자까지 이익 폭이 크게 움직였다. 2026년 3분기 영업이익은 144억원으로 정점 대비 낮다. 매출이 늘어도 이익률이 낮아 이익 변동이 커질 수 있다.",
+    "en": "Profit has swung widely, from operating and net losses in 2022–2023 to profit in 2024–2025. Q3 2026 operating profit of KRW 14.4 billion is well below the Q4 2025 peak. Even with higher revenue, a thin margin can amplify earnings swings."
    }
   },
   {
    "cat": {
-    "ko": "투자 집행·가동률 리스크",
-    "en": "Investment Execution and Utilization Risk"
+    "ko": "신사업 실행",
+    "en": "Execution of new businesses"
    },
    "body": {
-    "ko": "구미 기존 공장 증설(2,500억원)과 구미 2공장 신설(5,000억원)이 동시에 진행되면서 감가상각비 등 고정비 부담이 먼저 반영될 가능성이 있다. 신규 설비의 가동률이 계획대로 올라오지 못하면 투자 효율이 저하되고 수익성에 부담을 줄 수 있다. 2028년 7월 양산 목표 등 일정이 지연될 경우 투자 회수 시점도 함께 늦춰질 수 있다.",
-    "en": "With expansion of the existing Gumi plant (KRW 250 billion) and construction of a new second Gumi plant (KRW 500 billion) proceeding simultaneously, fixed costs such as depreciation could be reflected before related revenue ramps up. If utilization of new facilities fails to rise as planned, investment efficiency could decline and weigh on profitability. Any delay to the July 2028 mass-production target would also push back the timing of investment payback."
+    "ko": "전장용 HV PTC 히터, 햅틱 액추에이터, 로봇용 BLDC 모터 등 신규 사업을 추진 중이다. 신규 사업의 매출 기여 규모와 수익성은 현재 공시 실적에서 구분되지 않는다. 신사업이 기존 카메라 사업의 감소를 메우지 못하면 이익 회복이 지연될 수 있다.",
+    "en": "New businesses include HV PTC heaters, haptic actuators, and BLDC motors for robots. Their revenue contribution and profitability are not separately identifiable in the disclosed results. If these businesses fail to offset declines in the camera business, the earnings recovery could be delayed."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중",
-    "en": "Mid-November 2026"
+    "ko": "2026년 11월 이후 수시",
+    "en": "Ad hoc, from November 2026"
    },
    "what": {
-    "ko": "시장 데이터 업체 집계 기준 다음 분기 실적(잠정) 발표가 예정돼 있어, 2026년 1~2분기에 나타난 2개 분기 연속 매출·영업이익 감소 흐름이 3분기에 이어지는지 확인할 필요가 있다.",
-    "en": "According to market-data provider schedules, the next preliminary quarterly earnings release is expected, making it important to check whether the two-quarter decline in revenue and operating profit seen in Q1-Q2 2026 continued into Q3."
+    "ko": "고객사 신규 모델 채택 및 공급계약 체결 공시 여부. 카메라 액추에이터 물량이 회복되는지 가늠하는 지표다.",
+    "en": "Disclosures of new-model adoptions and supply contracts. These indicate whether camera actuator volumes are recovering."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기~2027년 상반기",
-    "en": "Q4 2026 through H1 2027"
+    "ko": "2027년 2월 초(통상 일정)",
+    "en": "Early February 2027 (typical timing)"
    },
    "what": {
-    "ko": "구미 기존 공장 증설(2,500억원, OIS 생산능력 4배) 클린룸 완공 및 설비 반입 진행 상황을 점검하고, 2028년 7월 양산 목표 달성 여부를 확인해야 한다.",
-    "en": "Progress on cleanroom completion and equipment move-in for the existing Gumi plant expansion (KRW 250 billion, quadrupling OIS capacity) should be monitored, along with whether the July 2028 mass-production target remains on track."
+    "ko": "2026년 4분기 잠정 실적 발표. 영업이익이 2026년 3분기 144억원에서 반등하는지, 3개 분기 연속 감소가 끝나는지 확인하는 첫 지점이다.",
+    "en": "Q4 2026 preliminary results. This is the first checkpoint for whether operating profit rebounds from KRW 14.4 billion in Q3 2026 and whether the three-quarter decline ends."
    }
   },
   {
    "when": {
-    "ko": "2027년 이후",
-    "en": "From 2027 onward"
+    "ko": "2027년 3월 말(법정 제출 기한)",
+    "en": "End of March 2027 (statutory filing deadline)"
    },
    "what": {
-    "ko": "구미 2공장(5,000억원, 2026~2029년 투자) 착공과 투자 집행 공시, 400명 신규 고용 계획의 이행 여부를 확인해야 한다.",
-    "en": "Disclosures on groundbreaking and investment execution for the second Gumi plant (KRW 500 billion, invested 2026-2029) and progress toward the planned 400 new jobs should be checked."
+    "ko": "2026년 사업보고서 제출. 연간 영업외손익 구성, 신규 사업 매출 비중, 고객별 매출 정보를 확인할 수 있는 정기보고서다.",
+    "en": "Filing of the 2026 annual report. It should show the full-year non-operating breakdown, the revenue share of new businesses, and customer-level information."
    }
   },
   {
    "when": {
-    "ko": "다가오는 분기 정기공시 시점",
-    "en": "Upcoming quarterly regulatory filings"
+    "ko": "2027년 4월 말(통상 일정)",
+    "en": "Late April 2027 (typical timing)"
    },
    "what": {
-    "ko": "교환사채(EB) 풋옵션 행사 여부와 차입금 변동 공시를 확인해 재무구조에 미치는 영향을 점검해야 한다.",
-    "en": "Disclosures on exchangeable bond (EB) put-option exercises and changes in borrowings should be checked to assess the impact on the financial structure."
+    "ko": "2027년 1분기 잠정 실적 발표. 2026년 연간 영업이익률 4.9% 수준과 비교해 분기 이익률이 회복되는지 확인하는 지점이다.",
+    "en": "Q1 2027 preliminary results. This allows comparison of quarterly margins with the 4.9% full-year operating margin recorded in 2025."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "자화전자는 2022~2023년 적자에서 2024년 흑자로 전환한 뒤 2025년까지 이익 기조를 유지했으며, 최근 4개 분기 지배주주 순이익 합계는 1,122억원에 달한다. 다만 2025년 4분기를 정점으로 2026년 1분기와 2분기 매출·영업이익이 2개 분기 연속 줄어, 성장 속도 자체는 둔화된 모습이다. 회사는 구미 기존 공장 4배 증설(2,500억원)과 구미 2공장 신설(5,000억원)이라는 두 개의 대규모 투자를 동시에 진행하며 중장기 외형 확대를 꾀하고 있다. 매출의 90% 이상이 스마트폰 카메라 모듈 부품에 쏠려 있어 특정 고객사·모델의 채택 여부가 여전히 실적의 핵심 변수이며, 교환사채 풋옵션과 차입금 확대 등 재무 변수도 함께 살펴야 한다. 증권가에서는 대신증권이 2026년 6월 리포트에서 목표주가 62,000원을 제시한 바 있으나, 이후 발표된 분기 실적 둔화를 반영한 최신 전망인지는 확인이 필요하다. 다음 분기 실적과 증설 투자의 진행 속도, 재무구조 변화가 향후 평가의 핵심 체크포인트가 될 것으로 보인다.",
-   "en": "Jahwa Electronics turned from losses in 2022-2023 to profitability in 2024 and maintained that trend through 2025, with trailing four-quarter net income attributable to controlling shareholders reaching KRW 112.2 billion. However, after peaking in Q4 2025, both revenue and operating profit declined for two consecutive quarters in Q1 and Q2 2026, indicating a slowdown in growth momentum. The company is simultaneously pursuing two large investments for medium- to long-term expansion: a fourfold capacity increase at its existing Gumi plant (KRW 250 billion) and a new second Gumi plant (KRW 500 billion). With over 90% of revenue concentrated in smartphone camera module components, adoption decisions by specific customers and models remain the central variable for results, alongside financial variables such as exchangeable bond put options and rising borrowings. On the brokerage side, Daishin Securities set a price target of KRW 62,000 in a June 2026 report, though whether this reflects the subsequent quarterly slowdown warrants confirmation. Upcoming quarterly results, the pace of expansion investment execution, and changes in financial structure are likely to be the key checkpoints going forward."
+   "ko": "자화전자는 2022년 영업손실에서 2024년 흑자 전환, 2025년 지배주주 순이익 471억원까지 이익 체력을 회복한 기업이다. 매출은 2022년 2,923억원에서 2025년 8,489억원으로 3년 연속 늘었다. 그러나 영업이익은 2025년 4분기를 정점으로 3개 분기 연속 줄었고, 지배주주 순이익도 2026년 1분기 이후 2개 분기 연속 감소해 2026년 3분기에는 31.6억원까지 낮아졌다. 강세 요인은 고부가 카메라 액추에이터 라인업, 2024년과 2025년의 흑자 전환, 영업활동 현금흐름 1,000억원대 유지이며, 약세 요인은 분기 이익의 연속 감소, 고객 집중, 낮은 영업이익률이다. 밸류에이션은 PBR이 과거 분기말 범위의 하단을 밑도는 사실로 나타나지만, 이익 추세가 바뀌면 배수 해석도 달라진다. 2025년 이익 증가의 구성과 신사업 매출 기여는 아직 공시로 충분히 구분되지 않아 2026년 사업보고서가 다음 확인 지점이다. 다음 분기 잠정 실적에서 영업이익이 3분기 연속 감소를 끊는지가 가장 가까운 확인 사항이다.",
+   "en": "Jahwa Electronics has restored its earnings capacity, moving from an operating loss in 2022 to profit in 2024 and net profit attributable to controlling shareholders of KRW 47.1 billion in 2025. Revenue grew for three consecutive years, from KRW 292.3 billion in 2022 to KRW 848.9 billion in 2025. However, operating profit has declined for three straight quarters since peaking in Q4 2025, and controlling-shareholder net profit has declined for two quarters since Q1 2026, falling to KRW 3.16 billion in Q3 2026. Supporting factors include a high-value camera actuator lineup, the turn to profit in 2024 and 2025, and operating cash flow above KRW 100 billion in both years. Negative factors include consecutive quarterly profit declines, customer concentration, and a thin operating margin. Valuation shows a price-to-book ratio below the bottom of its past quarter-end range, but the interpretation of the earnings multiple will change if the profit trend changes. The composition of the 2025 profit increase and the revenue contribution from new businesses are not yet fully separable in the filings, making the 2026 annual report the next key confirmation point. The nearest checkpoint is whether the next preliminary results end the three-quarter operating profit decline."
   }
  },
  "sources": [
-  "https://eclipse.trading/%EC%9E%90%ED%99%94%EC%A0%84%EC%9E%90-2026%EB%85%84-6%EC%9B%94-1%EC%9D%BC/",
-  "https://file.alphasquare.co.kr/media/pdfs/company-report/56554_4Q25_Review_Jawha_260209.pdf",
-  "https://kr.investing.com/equities/jahwa-electron-earnings",
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=033240",
-  "https://markets.hankyung.com/stock/033240/consensus",
-  "https://seo.goover.ai/report/202602/go-public-report-ko-692e0a2b-9447-4fb4-b023-ffcb17ca5bd4-0-0.html",
-  "https://www.investing.com/equities/jahwa-electron",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A033240&MenuYn=Y&ReportGB=B&NewMenuID=Y&stkGb=701",
-  "https://money2.daishin.com/PDF/Out/intranet_data/product/researchcenter/report/2025/12/56052_it_weekly_251215_new.pdf",
-  "https://judal.co.kr/?shareToken=DHUGZBaPiWE42mYc&view=stockAI",
-  "https://www.irobotnews.com/news/articleView.html?idxno=47771",
-  "https://www.thelec.kr/news/articleView.html?idxno=16703",
-  "http://www.thelec.kr/news/articleView.html?idxno=10082",
-  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=423276",
-  "https://www.fnnews.com/news/202211091106018668",
   "http://www.businessreport.kr/news/articleView.html?idxno=36277",
-  "https://www.thecommoditiesnews.com/news/articleView.html?idxno=9987",
-  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03709686632295792"
+  "https://www.jobkorea.co.kr/company/1643472/Info",
+  "https://app.rndcircle.io/company/62dcaf9a-5840-52b6-9473-bf611896a506",
+  "https://www.investnews.co.kr/news/articleView.html?idxno=3002214",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=033240",
+  "https://m.sedaily.com/article/20108655",
+  "https://bbn.kiwoom.com/rfCI5107.pdf",
+  "https://biz.heraldcorp.com/article/10909592",
+  "https://kr.investing.com/equities/jahwa-electron-earnings",
+  "https://file.alphasquare.co.kr/media/pdfs/company-report/56554_4Q25_Review_Jawha_260209.pdf",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A033240&cID=&MenuYn=Y&ReportGB=B&NewMenuID=Y&stkGb=701",
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=01518646635806376",
+  "https://www.tradingkey.com/kr/news/transcripts/262269734-",
+  "http://www.dailyinvest.kr/news/articleView.html?idxno=61953",
+  "https://judal.co.kr/?shareToken=qF9bHF9oXplMwhFn&view=stockAI",
+  "http://money2.daishin.co.kr/PDF/Out/intranet_data/Product/ResearchCenter/Report/2025/08/54667_2Q25_Review_Jawha_250814.pdf",
+  "https://www.etoday.co.kr/news/view/263403"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "033240",
  "name": "자화전자",
  "name_en": "JAHWA ELECTRONICS CO.,LTD",
@@ -223,11 +222,11 @@
   "전자·부품"
  ],
  "market": "코스피",
- "reportDate": "2026-10-20",
- "reportTs": "2026-10-20 01:01",
- "dataDate": "20261019",
+ "reportDate": "2026-11-14",
+ "reportTs": "2026-11-14 09:25",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-09-04",
+  "asOf": "2026-11-13",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -297,12 +296,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 167831236097,
-    "op": -9199987751,
-    "np_owner": -16128157260
-   },
-   {
     "q": "2025Q3",
     "rev": 255904592510,
     "op": 19423428405,
@@ -325,29 +318,36 @@
     "rev": 235193567600,
     "op": 22449691435,
     "np_owner": 17462467065
+   },
+   {
+    "q": "2026Q3",
+    "rev": 252796675216,
+    "op": 14371627144,
+    "np_owner": 3162869904
    }
   ],
   "valuation": {
-   "price": 22400,
-   "mcap": 0.4872,
+   "price": 15500,
+   "mcap": 0.3349,
    "shares": 21605502,
-   "total_shares": 21756636,
-   "wavg_shares": 21050424,
-   "per": 4.16,
-   "eps": 5384,
-   "pbr": 0.8931,
-   "bps": 25081,
-   "roe_ttm": 24.6,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": 112185769916,
+   "total_shares": 21605502,
+   "wavg_shares": 21114523,
+   "per": 3.549,
+   "eps": 4367,
+   "pbr": 0.6342,
+   "bps": 24441,
+   "roe_ttm": 19.8,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": 91404789256,
    "ccy": "KRW",
    "bps_src": "자체",
    "eps_src": "공시",
-   "pbr_krx": 1.41,
+   "pbr_krx": 0.72,
    "bps_krx": 21665.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
    "div": 0.0
   }
- }
+ },
+ "textRules": 2
 }

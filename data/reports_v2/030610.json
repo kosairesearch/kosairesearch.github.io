@@ -1,230 +1,207 @@
 {
  "title": {
-  "ko": "브로커리지 호황 뒤, 자본확충이 남은 숙제",
-  "en": "After the Brokerage Boom, Capital Remains the Task"
+  "ko": "교보증권, 누적 이익은 늘고 3분기는 급감",
+  "en": "Kyobo Securities: Cumulative Profit Up, Q3 Sharply Lower"
  },
  "lead": {
-  "ko": "증시 거래 활성화로 2026년 상반기 이익이 2025년 연간 실적을 이미 넘어섰지만, 하반기 거래대금 급감과 종합금융투자사업자 요건(자기자본 3조원) 사이의 간극이 동시에 부각되는 구간이다.",
-  "en": "A trading boom pushed first-half 2026 profit above the entire 2025 result, yet the sharp drop in market turnover since mid-year and the gap to the 3 trillion won equity threshold for full-scale investment bank status are surfacing at the same time."
+  "ko": "교보증권의 2026년 1~3분기 누적 영업이익과 지배주주 순이익은 늘었지만, 공정가치 측정 금융상품 손실이 겹친 3분기 지배주주 순이익은 85.1억원으로 줄었다.",
+  "en": "Kyobo Securities' cumulative operating profit and profit attributable to owners rose through the first three quarters of 2026, but Q3 profit attributable to owners fell to KRW 8.51 billion as fair-value financial instrument losses widened."
  },
  "keypoints": [
   {
-   "ko": "2026년 1~2분기 영업이익 합계는 2,119억원, 지배주주 순이익 합계는 1,585억원으로 2025년 연간 영업이익 1,904억원과 순이익 1,429억원을 상반기에 이미 초과했다.",
-   "en": "Combined operating profit for the first two quarters of 2026 was 211.9 billion won and owner-attributable net profit 158.5 billion won, already exceeding the full-year 2025 figures of 190.4 billion won and 142.9 billion won."
+   "ko": "2025년 연간 실적은 매출 4조 5,068억원(42.3% 증가), 영업이익 1,904억원(67.2% 증가), 지배주주 순이익 1,429억원(21.4% 증가)으로 세 지표 모두 늘었다.",
+   "en": "Full-year 2025 results showed revenue of KRW 4.51 trillion (up 42.3%), operating profit of KRW 190.4 billion (up 67.2%) and profit attributable to owners of KRW 142.9 billion (up 21.4%)."
   },
   {
-   "ko": "이익 개선은 위탁매매와 자기매매가 주도했고, 장내외 파생상품 부문은 손실 폭이 확대되며 부문 간 편차가 컸다.",
-   "en": "The improvement was led by brokerage and proprietary trading, while the listed and OTC derivatives segment widened its loss, leaving a wide gap between divisions."
+   "ko": "2026년 1~3분기 누적 영업이익은 2,296억원(28.7% 증가), 지배주주 순이익은 1,670억원(22.0% 증가)으로 누적 기준 성장이 이어졌다.",
+   "en": "Cumulative operating profit for the first three quarters of 2026 reached KRW 229.6 billion (up 28.7%), and profit attributable to owners reached KRW 167.0 billion (up 22.0%)."
   },
   {
-   "ko": "2025년 4분기 영업이익이 121억원까지 축소된 사례가 있어 분기 실적 변동성이 크다는 점이 이 회사 손익 구조의 특징이다.",
-   "en": "Quarterly operating profit shrank to 12.1 billion won in the fourth quarter of 2025, illustrating how volatile the earnings structure can be."
+   "ko": "2026년 3분기 단독 영업이익은 177억원(전년 동기 대비 56.4% 감소), 지배주주 순이익은 85.1억원(72.4% 감소)으로 급감했다. 공정가치 측정 금융상품 순손실과 판매비와관리비 증가가 원인이다.",
+   "en": "Q3 2026 operating profit fell to KRW 17.7 billion (down 56.4% year on year) and profit attributable to owners fell to KRW 8.51 billion (down 72.4%), driven by a net loss on fair-value financial instruments and higher SG&A expenses."
   },
   {
-   "ko": "2029년 종합금융투자사업자 진입을 목표로 하지만 자기자본 3조원 요건까지 격차가 남아 있고, 최대주주 교보생명은 금융지주 전환과 인수합병에 자본을 쓰고 있다.",
-   "en": "The company targets designation as a full-scale investment bank in 2029, but a gap to the 3 trillion won equity requirement remains while parent Kyobo Life Insurance is deploying capital toward holding-company conversion and acquisitions."
+   "ko": "2025년 말 부채비율은 809.5%로 2024년 700.6%에서 올랐다. 영업활동 현금흐름은 2025년 -8,970억원으로 마이너스였다.",
+   "en": "The debt-to-equity ratio rose to 809.5% at end-2025 from 700.6% in 2024, and operating cash flow was KRW -897 billion in 2025."
   },
   {
-   "ko": "2026년 8월 대법원이 2023년 유상증자 관련 신주발행 무효 소송을 최종 기각해 오랜 법적 불확실성이 해소됐다.",
-   "en": "In August 2026 the Supreme Court finally dismissed the suit seeking to void the 2023 share issuance, removing a long-standing legal overhang."
+   "ko": "주가는 장부상 자기자본을 밑도는 구간에서 형성돼 있어 밸류에이션은 자산 가치와 이익 변동성을 함께 읽어야 하는 구조다.",
+   "en": "The share price sits below book equity, so valuation has to be read alongside the volatility of earnings."
   }
  ],
  "business": {
-  "ko": "교보증권은 1949년 설립된 국내 첫 증권사로, 위탁매매·자산관리(WM)·세일즈앤트레이딩(S&T)·투자은행(IB)을 함께 영위하는 중형 증권사다. 최대주주는 지분 84.72%를 보유한 교보생명으로, 그룹 내 유일한 상장 금융 계열사라는 위치가 자본 조달과 사업 전략을 좌우한다. 경영은 각자대표 체제로 운영되며, 2026년 3월 박봉권 대표가 재선임되어 4연임에 성공했다. 수익 구조를 보면 2026년 상반기 위탁매매업 영업이익은 1,080억원으로 전년 동기 249억원에서 334.4% 증가했고, 자기매매업 영업이익은 2,424억원으로 전년 1,462억원 대비 65.8% 늘었다. 반면 투자은행업 영업이익은 340억원으로 10.8% 감소했고, 장내외 파생상품업은 1,072억원의 영업손실을 기록해 전년 동기 손실 567억원보다 적자 폭이 커졌다. 회사는 자산관리 부문이 증시 거래 활성화로 수익성이 개선됐고 세일즈앤트레이딩 부문은 금리 변동성에 대응한 자산운용 수익이 실적을 이끌었으며, 투자은행 부문도 우량 딜 발굴과 주관 성과를 거뒀다고 설명했다. 자기자본 기준 업계 위치는 중형사 선두권이었으나, 대규모 유상증자를 단행한 우리투자증권에 밀려 자기자본 순위 11위 자리를 내준 상태다. 신사업으로는 토큰증권(STO), 벤처투자, 고액자산가 자산관리를 아우르는 영역을 추진하고 있다. 경쟁 구도상으로는 자기자본 2조원 내외의 한화투자증권·유안타증권·신영증권, 그리고 모회사 지원으로 몸집을 키운 우리투자증권과 직접 겹치는 영역이 많다.",
-  "en": "Kyobo Securities, founded in 1949 as Korea's first securities firm, is a mid-sized house running brokerage, wealth management (WM), sales and trading (S&T) and investment banking (IB) side by side. Its largest shareholder is Kyobo Life Insurance with an 84.72% stake, and its position as the group's only listed financial affiliate shapes both funding and strategy. The firm operates under a co-CEO structure, and CEO Park Bong-kwon was reappointed in March 2026 for a fourth term. On the revenue mix, first-half 2026 brokerage operating profit rose 334.4% to 108.0 billion won from 24.9 billion won a year earlier, while proprietary trading operating profit gained 65.8% to 242.4 billion won from 146.2 billion won. By contrast, investment banking operating profit fell 10.8% to 34.0 billion won, and the listed and OTC derivatives business posted an operating loss of 107.2 billion won, wider than the 56.7 billion won loss a year earlier. Management said wealth management profitability improved on brisk market activity, sales and trading drove gains through asset operations responding to rate volatility, and investment banking sourced and led quality deals. In terms of scale, the company had led the mid-tier group by equity, but it ceded 11th place in equity rankings to Woori Investment & Securities after that firm's large rights issue. New businesses include security token offerings, venture investment and high-net-worth wealth management. Competitively, it overlaps heavily with roughly 2 trillion won equity peers such as Hanwha Investment & Securities, Yuanta Securities Korea and Shinyoung Securities, plus a parent-backed Woori Investment & Securities."
+  "ko": "교보증권은 1949년 설립된 금융투자업자로 투자매매, 중개, 집합투자, 자문, 일임, 신탁업을 영위한다. 주요 영업부문은 위탁매매, 자기매매, 파생상품, 투자은행업이며 63개 비상장 종속회사를 보유하고 있다. 모회사는 교보생명보험이다. 2026년 1분기 기준 영업수익의 83.73%를 공정가치측정 금융상품이 차지해, 외형 변화는 크고 순이익은 평가·처분 손익에 따라 크게 흔들리는 구조다. 자산관리(WM) 부문은 고액자산가(HNW) 고객 기반을 넓히고 맞춤형 금융상품을 다변화해 수수료 수익을 늘렸다. 투자은행(IB) 부문은 IPO와 유상증자 주관 계약을 꾸준히 확보했고, 수도권과 공공·임대주택 중심의 프로젝트파이낸싱(PF)을 확대했다. 브로커리지에서는 2026년 1분기 위탁매매 영업이익이 438억원으로 전년 동기 83억원의 5배를 넘었다. 장내외 파생상품은 466억원 이익으로 전년 247억원 손실에서 전환했다. 반면 자기매매 영업이익은 171억원으로 전년 720억원에서 줄었고, IB 영업이익도 191억원으로 229억원에서 감소했다. 같은 업종에서는 미래에셋증권, NH투자증권, 삼성증권 등과 경쟁하며, 업계는 WM·트레이딩·파생 등 수익성 높은 부문 중심의 경쟁력 강화에 주목하고 있다.",
+  "en": "Kyobo Securities is a financial investment company founded in 1949 that engages in investment trading, brokerage, collective investment, advisory, discretionary investment and trust businesses. Its main segments are brokerage, proprietary trading, derivatives and investment banking, and it holds 63 unlisted subsidiaries. Its parent is a life insurer. In Q1 2026, fair-value financial instruments accounted for 83.73% of operating revenue, so the top line can move sharply while net profit swings with valuation and disposal gains and losses. The wealth management (WM) unit expanded its high-net-worth client base and diversified customized products to raise fee income. The investment banking (IB) unit secured IPO and rights offering underwriting mandates and widened project financing (PF) focused on the Seoul metropolitan area and public and rental housing. In Q1 2026, brokerage operating profit from entrusted trading reached KRW 43.8 billion, more than five times the KRW 8.3 billion of a year earlier, and listed and OTC derivatives swung to KRW 46.6 billion of profit from a KRW 24.7 billion loss. Proprietary trading profit fell to KRW 17.1 billion from KRW 72 billion, and IB profit fell to KRW 19.1 billion from KRW 22.9 billion. It competes with Mirae Asset Securities, NH Investment & Securities and Samsung Securities, and industry observers highlight its focus on WM, trading and derivatives as higher-margin areas."
  },
  "earnings": {
-  "ko": "확정 실적은 4년 연속 이익 증가 흐름을 보여준다. 영업이익은 2022년 517억원, 2023년 703억원, 2024년 1,139억원, 2025년 1,904억원으로 늘었고, 지배주주 순이익도 2022년 433억원에서 2025년 1,429억원으로 확대됐다. 영업이익률은 2022년 1.3%에서 2023년 1.9%, 2024년 3.6%, 2025년 4.2%로 개선됐는데, 이는 영업수익(매출) 규모가 운용자산 평가·처분에 따라 크게 흔들리는 증권업 특성상 절대 수준보다 방향성이 의미 있는 지표다. 2026년으로 넘어오면 개선 속도가 한 단계 빨라졌다. 2026년 1분기 영업수익 2조 3,957억원·영업이익 959억원·순이익 684억원, 2분기 영업수익 2조 7,147억원·영업이익 1,160억원·순이익 901억원으로, 상반기 합계 영업이익 2,119억원과 순이익 1,585억원은 2025년 연간 수치를 이미 웃돈다. 직전 분기 흐름과 비교하면 낙폭과 회복이 모두 뚜렷하다. 2025년 3분기 영업이익 406억원·순이익 308억원에서 2025년 4분기 영업이익 121억원·순이익 60억원까지 축소된 뒤, 2026년 1분기부터 두 개 분기 연속으로 이익이 확대됐다. 손익의 질을 보면 수수료수익이 2,454억원으로 전년 동기 대비 78.7% 늘고 순수수료이익은 2,027억원으로 81.8% 증가했으며, 그 가운데 수탁수수료수익이 1,611억원으로 148.4% 급증하며 실적 개선을 주도했다. 재무구조 측면에서 자본총계는 2022년 1조 5,618억원에서 2025년 2조 1,189억원으로 늘었으나 부채비율은 2025년 809.5%로 2024년 700.6%보다 상승했는데, 고객예수금과 차입성 부채를 함께 계상하는 증권업 회계 특성이 반영된 수치다. 영업활동현금흐름은 2023년 -1조 4,894억원, 2024년 +7,108억원, 2025년 -8,970억원으로 부호가 계속 바뀌어 운용자산 증감에 따라 흔들리는 특성을 보여주며, 상반기 말 연결 순자본비율(NCR)은 974.2%로 전년 동기보다 57.9%포인트 상승하고 레버리지비율은 788.2%로 집계됐다.",
-  "en": "The confirmed figures show four straight years of profit growth. Operating profit rose from 51.7 billion won in 2022 to 70.3 billion won in 2023, 113.9 billion won in 2024 and 190.4 billion won in 2025, while owner-attributable net profit expanded from 43.3 billion won to 142.9 billion won over the same span. The operating margin improved from 1.3% in 2022 to 1.9%, 3.6% and 4.2% in the following years; given that securities firms' operating revenue swings with valuation and disposal of trading assets, the direction matters more than the absolute level. The pace stepped up in 2026: first-quarter operating revenue was 2,395.7 billion won with operating profit of 95.9 billion won and net profit of 68.4 billion won, and second-quarter operating revenue was 2,714.7 billion won with operating profit of 116.0 billion won and net profit of 90.1 billion won, so the first-half totals of 211.9 billion won and 158.5 billion won already exceed all of 2025. The quarterly path also shows how sharply results can fall and rebound: from 40.6 billion won operating profit and 30.8 billion won net profit in the third quarter of 2025, profit shrank to 12.1 billion won and 6.0 billion won in the fourth quarter, then expanded for two consecutive quarters from the first quarter of 2026. On earnings quality, fee income rose 78.7% year on year to 245.4 billion won and net fee income gained 81.8% to 202.7 billion won, with brokerage commission income surging 148.4% to 161.1 billion won as the main driver. Total equity grew from 1,561.8 billion won in 2022 to 2,118.9 billion won in 2025, while the debt ratio rose to 809.5% in 2025 from 700.6% in 2024, a level that reflects the sector's accounting where customer deposits and borrowings sit on the balance sheet. Operating cash flow flipped signs repeatedly, at minus 1,489.4 billion won in 2023, plus 710.8 billion won in 2024 and minus 897.0 billion won in 2025, tracking changes in trading assets, and the consolidated net capital ratio stood at 974.2% at the end of the first half, up 57.9 percentage points year on year, with a leverage ratio of 788.2%."
+  "ko": "연간 실적은 2022년 이후 흐름이 뚜렷하다. 매출은 2022년 4조 659억원에서 2023년 3조 7,430억원(전년 대비 7.9% 감소), 2024년 3조 1,663억원(15.4% 감소)으로 줄었다가 2025년 4조 5,068억원(42.3% 증가)으로 2022~2025년 가운데 가장 큰 해가 됐다. 영업이익은 2022년 517억원에서 2023년 703억원(36.1% 증가), 2024년 1,139억원(62.1% 증가), 2025년 1,904억원(67.2% 증가)으로 2023년부터 2025년까지 3년 연속 증가했다. 같은 기간 영업이익률은 1.3%, 1.9%, 3.6%, 4.2%로 올랐다. 지배주주 순이익은 433억원, 676억원, 1,177억원, 1,429억원으로 늘었고 2025년에는 21.4% 증가했다. 영업활동 현금흐름은 2022년 -9,291억원, 2023년 -1조 4,894억원, 2024년 7,108억원, 2025년 -8,970억원으로, 2024년을 제외하면 모두 마이너스였다. 부채비율은 2022년 759.1%, 2023년 730.6%, 2024년 700.6%에서 2025년 말 809.5%로 올랐다. 2025년 말 부채총계는 17조 1,525억원, 자본총계는 2조 1,189억원이다. 분기 흐름을 보면 2025년 3분기 매출 8,304억원, 영업이익 406억원에서 2025년 4분기 영업이익은 121억원으로 70.2% 줄었다. 2026년 1분기에는 매출 2조 3,957억원, 영업이익 959억원으로 회복됐고, 2분기에는 영업이익 1,160억원으로 분기 기준 가장 높았다. 3분기에는 매출 1조 6,488억원(전년 동기 대비 98.6% 증가)과 영업이익 177억원(전년 동기 대비 56.4% 감소)으로 이익이 줄었다. 3분기 공정가치 측정 금융상품 손실은 1조 4,320억원으로 이익 1조 2,903억원을 웃돌았다. 판매비와관리비는 874억원으로 34.6% 늘었고, 영업비용은 7,898억원에서 1조 6,311억원으로 106.5% 증가했다. 최근 네 개 분기 지배주주 순이익 합계는 1,731억원이며, 3분기 단독 손실에도 1~3분기 누적 이익 증가는 유지됐다.",
+  "en": "Annual results show a clear turnaround after 2022. Revenue rose from KRW 4.07 trillion in 2022 to KRW 3.74 trillion in 2023 (down 7.9%) and KRW 3.17 trillion in 2024 (down 15.4%), then reached KRW 4.51 trillion in 2025 (up 42.3%), the largest year in the 2022 to 2025 span. Operating profit rose from KRW 51.7 billion in 2022 to KRW 70.3 billion in 2023 (up 36.1%), KRW 113.9 billion in 2024 (up 62.1%) and KRW 190.4 billion in 2025 (up 67.2%), with operating profit increasing three years in a row from 2023 through 2025. Operating margin moved from 1.3% to 1.9%, 3.6% and 4.2% over the same period. Profit attributable to owners rose from KRW 43.3 billion to KRW 67.6 billion, KRW 117.7 billion and KRW 142.9 billion, with 2025 up 21.4%. Operating cash flow was KRW -929.1 billion in 2022, KRW -1.49 trillion in 2023, KRW 710.8 billion in 2024 and KRW -897 billion in 2025, negative in every year except 2024. The debt-to-equity ratio moved from 759.1% in 2022 and 700.6% in 2024 to 809.5% at end-2025, when total liabilities were KRW 17.2 trillion against equity of KRW 2.12 trillion. Quarterly, revenue went from KRW 830.4 billion and operating profit of KRW 40.6 billion in Q3 2025 to KRW 12.1 billion operating profit in Q4 2025. Q1 2026 revenue was KRW 2.4 trillion with operating profit of KRW 95.9 billion, and Q2 2026 operating profit of KRW 116 billion was the highest quarter. In Q3 2026, revenue was KRW 1.65 trillion (up 98.6% year on year) while operating profit was KRW 17.7 billion (down 56.4%). Fair-value financial instrument losses of KRW 1.43 trillion exceeded gains of KRW 1.29 trillion, SG&A rose 34.6% to KRW 87.4 billion, and operating expenses rose 106.5%. Profit attributable to owners over the latest four quarters totals KRW 173.1 billion."
  },
  "industry": {
-  "ko": "2026년 상반기 증권업은 유례없는 거래 활성화 국면이었다. 국내 주식시장은 유동성 강세와 반도체 중심 실적 모멘텀이 결합되며 강세장을 형성했고, 코스피가 사상 최고치를 경신하는 과정에서 일평균 거래대금은 4월 84.4조원, 5월 143.5조원까지 증가했다(ETF 포함, 신한투자증권 2026년 5월 리포트 기준). 그러나 하반기 들어 방향이 바뀌었다. 한국거래소 집계로 2026년 8월 유가증권시장 일평균 거래대금은 25조 7,706억원으로 6월 대비 48.8%, 7월 대비 30.2% 감소해 연중 최저 수준으로 내려왔다. 투자자예탁금도 8월 27일 기준 96조 7,090억원으로 6월 4일 대비 30.8% 줄었다. 이 때문에 에프앤가이드 집계 기준 코스피 증권업종의 3분기 영업이익 컨센서스는 2조 1,895억원으로 전분기 4조 275억원 대비 45.6% 감소할 것으로 예상되고 있다. 대신증권 박혜진 연구원은 2026년 6월 리포트에서 3분기부터 거래대금이 점진적으로 감소할 것으로 보여 실적은 2분기가 고점일 가능성이 높다고 전망했다. 하반기 경쟁의 축은 투자은행·자산관리·해외주식 등 비브로커리지 부문 성과로 옮겨가고 있다는 것이 업계의 시각이다. 이 구도에서 교보증권은 상반기 이익 증가분의 상당 부분을 위탁매매와 운용에서 얻었기 때문에 거래대금 민감도가 상대적으로 높고, 동시에 자기자본 규모와 자본 효율성에 따라 수익성 격차가 확대되는 구조적 변화 속에서 중형사로서의 위치를 방어해야 하는 이중 과제를 안고 있다.",
-  "en": "The first half of 2026 was an exceptionally active period for Korean brokers. Domestic equities rallied on abundant liquidity and semiconductor-led earnings momentum, and as the KOSPI set successive records, average daily turnover including ETFs climbed to 84.4 trillion won in April and 143.5 trillion won in May, according to a Shinhan Investment report in May 2026. The trend reversed in the second half. Korea Exchange data showed August 2026 average daily turnover on the main board at 25.77 trillion won, down 48.8% from June and 30.2% from July, the lowest of the year. Customer deposits also fell 30.8% from June 4 to 96.71 trillion won as of August 27. As a result, the third-quarter operating profit consensus for KOSPI-listed brokers compiled by FnGuide stands at 2.19 trillion won, 45.6% below the 4.03 trillion won of the prior quarter. Analyst Park Hye-jin at Daishin Securities said in a June 2026 report that turnover would likely decline gradually from the third quarter, making the second quarter the probable peak for earnings. Industry attention is shifting to non-brokerage areas such as investment banking, wealth management and overseas equities as the swing factor for second-half results. Within that setup, Kyobo Securities carries relatively high sensitivity to turnover because much of its first-half profit growth came from brokerage and trading, while it also faces a structural shift in which profitability gaps widen according to equity size and capital efficiency, a dual challenge for a mid-tier firm."
+  "ko": "증권업 실적은 거래대금과 증시 변동성에 크게 좌우된다. 교보증권은 2026년 1분기 실적 발표에서 우호적인 국내 증시 환경이 WM과 트레이딩 부문 성장에 도움이 됐다고 설명했다. 같은 해 3분기에는 증시 변동성이 커진 가운데 금융상품 평가·처분 손실이 확대됐다. 1~3분기 누적 수탁수수료 수익은 2,150억원으로 전년 동기 1,085억원에서 98.2% 늘었다. 이는 상반기 증시 활성화가 브로커리지 수익을 끌어올린 구조를 보여준다. 채권과 금융시장의 높은 변동성은 운용 부문 손익의 폭을 넓히는 요인이다. IB 부문은 IPO와 유상증자 시장 상황에 따라 주관 수수료가 변하고, PF는 부동산 경기와 금리 영향을 받는다. 교보증권은 PF를 수도권과 공공·임대주택 중심으로 가져가고 있다. 업계에서는 교보증권이 WM, 트레이딩, 파생 등 수익성 높은 부문을 중심으로 경쟁력을 키우고 있고, IB 부문까지 회복되면 중형 증권사 가운데 성장세가 더 두드러질 것으로 본다. 이는 경쟁사 대비 수익 구조가 수수료 중심으로 바뀌는지가 관건임을 뜻한다. 미래에셋증권, NH투자증권, 삼성증권 등 동종 상장사와 비교할 때 교보증권의 공정가치 측정 금융상품 비중이 높다는 점은 실적 변동성의 차이로 이어진다.",
+  "en": "Brokerage earnings in the securities industry depend heavily on trading volumes and market volatility. In its Q1 2026 results, Kyobo Securities cited a favorable domestic equity market as a factor behind growth in WM and trading. In Q3 2026, losses on financial instrument valuation and disposal widened as market volatility increased. Cumulative entrusted trading fee income for the first three quarters reached KRW 215 billion, up 98.2% from KRW 108.5 billion a year earlier, showing how a stronger equity market lifted brokerage income in the first half. Volatility in bonds and financial markets widens the range of gains and losses in the trading book. IB fees depend on IPO and rights offering conditions, and PF is sensitive to property markets and interest rates, with the company focusing on the Seoul metropolitan area and public and rental housing. Industry observers see the company's focus on WM, trading and derivatives as higher-margin areas and expect its growth to stand out among mid-sized securities firms if IB recovers. Compared with listed peers such as Mirae Asset Securities, NH Investment & Securities and Samsung Securities, its larger share of fair-value instruments means its earnings are more volatile."
  },
  "outlook": {
-  "ko": "회사의 중기 목표는 명확하다. 교보증권은 2026년 1분기 사업보고서를 통해 2029년 자기자본 3조원 달성과 종합금융투자사업자 진입을 목표로 한다고 밝혔다. 2026년 1분기 별도 기준 자기자본은 약 2조 1,621억원으로, 요건 충족까지 약 8,500억원의 추가 자본 확충이 필요한 상황이다. 종투사로 지정되면 기업 신용공여 한도가 자기자본의 100%에서 200%로 확대되는 등 사업 범위가 넓어진다. 경쟁도 구체화됐다. 같은 2029년 목표를 내세운 우리투자증권은 2026년 5월 1조원 규모 유상증자 이후 6월 말 자기자본이 2조 2,280억원까지 늘었다. 자금 조달 방식에 대해 회사는 2029년 종투사 진입을 목표로 체질 개선을 진행 중이며 인공지능·디지털 전환 추진과 디지털자산 사업 확대로 신성장 동력을 확보하고, 시장 상황과 재무 전략을 고려해 발행 및 조달을 포함한 다양한 방안을 검토하고 있다고 밝혔다. 신사업 일정도 확인된다. 모회사 교보생명이 참여한 KDX 컨소시엄이 토큰증권 장외거래소 인가를 획득함에 따라 교보증권은 시장 개장 전 토큰증권 상품 발행을 추진하고, 벤처펀드를 통한 모험자본 공급에도 역량을 집중한다는 계획이다. 조직도 이에 맞춰 재편됐는데, 투자은행 부문은 구조화금융·투자금융·프로젝트금융 3개 본부로 세분화됐고 디지털자산Biz부가 확대 개편됐으며, 자산관리에서는 고액자산가 대응을 위한 프리미엄 지점이 신설됐다. 그룹 차원에서는 교보생명이 2026년 4월 SBI저축은행 인수를 완료하고 8월에는 교보악사자산운용을 100% 자회사로 전환하는 등 금융지주 전환을 진행하고 있어, 지주 체제 내 자본시장 축으로서 교보증권의 역할과 자본 배분 순서가 관전 포인트다.",
-  "en": "The medium-term goal is explicit. In its first-quarter 2026 business report, Kyobo Securities said it aims to reach 3 trillion won in equity and gain designation as a full-scale investment bank by 2029. Standalone equity was about 2,162.1 billion won in the first quarter of 2026, leaving roughly 850 billion won of additional capital needed to meet the requirement. Designation would widen the business scope, including raising the corporate credit-extension limit from 100% to 200% of equity. Competition has taken shape: Woori Investment & Securities, targeting the same 2029 timeline, lifted its equity to 2,228.0 billion won as of end-June after a 1 trillion won rights issue in May 2026. On funding, the company said it is reshaping its business model toward 2029 designation, securing new growth engines through artificial intelligence, digital transformation and expansion of digital-asset businesses, and reviewing various options including issuance and funding in light of market conditions and financial strategy. Specific new-business steps are visible as well: after the KDX consortium in which Kyobo Life Insurance participated won approval for an over-the-counter security token exchange, Kyobo Securities plans to issue token products ahead of the venue's opening and is concentrating on supplying risk capital via venture funds. The organization was realigned accordingly, as the investment banking arm was split into structured finance, investment finance and project finance divisions, the digital-asset business unit was upgraded, and a premium branch for high-net-worth clients was added under wealth management. At group level, Kyobo Life completed its acquisition of SBI Savings Bank in April 2026 and took full ownership of Kyobo AXA Investment Managers in August as part of its holding-company conversion, making the securities arm's role and the group's capital allocation sequence key items to watch."
+  "ko": "회사는 사업 포트폴리오 다각화와 안정적인 리스크 관리 체계를 바탕으로 수익 기반을 지속 확대하겠다는 방향을 밝혔다. 2025년 보도 기준으로 교보증권은 2029년까지 자기자본 3조원, 2031년까지 4조원을 달성해 초대형 IB 인가를 받는 중장기 목표를 세웠다. 종합투자계좌운용 자격인 종투사가 되면 프라임브로커리지서비스(PBS) 사업이 가능해지고 기업신용공여 한도가 자기자본의 100%에서 200%로 늘어난다. 자기자본 확대 속도는 이익 축적과 공정가치 금융상품 손익에 달려 있다. 2026년 3분기 누적으로 수수료와 이자 등 핵심 영업 부문 수익은 전년 수준을 방어했다. 3분기 판매비와관리비 증가가 일시적인지 여부가 다음 확인 지점이다. WM 부문의 고액자산가 기반 확대와 IPO·유상증자 주관 계약 확보가 이어지면 수수료 수익의 바닥이 높아질 수 있다. 반대로 공정가치 측정 금융상품 손실이 반복되면 누적 이익 개선의 폭이 좁아질 수 있다. 연간 실적은 2026년 사업보고서에서 확인된다. 2027년 1분기에는 위탁매매와 파생 손익이 2026년 1분기 수준을 유지하는지가 확인 지점이 된다.",
+  "en": "The company has said it will keep expanding its earnings base through a more diversified business portfolio and a stable risk management system. Reporting in 2025 described a medium-term goal of KRW 3 trillion in equity by 2029 and KRW 4 trillion by 2031, which would support a designation as a super-large investment bank. As a comprehensive investment business company, it could offer prime brokerage services and raise its corporate credit extension limit from 100% to 200% of equity. The pace of equity growth depends on earnings accumulation and gains or losses on fair-value instruments. Through the first nine months of 2026, core operating income from fees and interest held roughly at prior-year levels. Whether the Q3 rise in SG&A proves temporary is the next point to watch. Continued growth in high-net-worth clients and IPO and rights offering mandates could raise the floor of fee income. Repeated losses on fair-value instruments would narrow the room for cumulative earnings gains. Full-year results will be confirmed in the 2026 annual report, and for Q1 2027 the key test is whether brokerage and derivatives profit holds near Q1 2026 levels."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 회사가 공시한 주당순자산을 상당 폭 밑도는 구간에서 형성되어 있으며, 주가순자산비율은 1배에 못 미치는 수준이다(자체 산출 기준과 한국거래소 공표 기준 모두 1배 미만). 이익 기준 배수는 최근 네 개 분기 이익 급증을 반영해 국내 상장 증권주 평균과 비교했을 때 낮은 편에 위치한다. 다만 이 배수의 분모인 이익이 거래대금과 운용손익에 크게 좌우되는 만큼, 3분기 증권업종 영업이익 컨센서스가 전분기 대비 45.6% 감소로 제시된 환경에서는 배수 자체가 빠르게 변할 수 있다. 배당 측면에서는 2023년부터 최대주주에는 배당하지 않고 소액주주에게만 현금배당을 실시하며 배당성향을 2022년 29.4%, 2023년 41.8%, 2024년 48%로 확대해 왔고, 2025년 12월 에프앤가이드 집계에서는 국내 금융주 배당수익률 상위 종목에 이름을 올렸다. 반대편에는 자본 확충 필요성이라는 상충 요인이 있다 — 종투사 요건 충족에는 대규모 자본 확대가 필요하고 가장 현실적인 수단으로 유상증자가 거론되어 왔다는 점에서, 환원 강도와 자본 축적은 같은 재원을 두고 경쟁한다. 업종 전반으로는 신한투자증권이 2026년 5월 리포트에서 이익 체력과 자본 효율성의 구조적 개선을 근거로 주가순자산비율 1배 돌파 기대가 높아지고 있다고 평가한 바 있다.",
-  "en": "The shares trade meaningfully below the company's reported net asset value per share, with the price-to-book multiple under one time on both the in-house calculation and the Korea Exchange's published basis. The earnings-based multiple, reflecting the surge in profit over the past four quarters, sits toward the lower end versus the average for listed Korean brokers. Because the denominator of that multiple depends heavily on market turnover and trading gains, however, the multiple itself can move quickly in an environment where the third-quarter sector operating profit consensus is set 45.6% below the prior quarter. On distributions, the company has withheld dividends from its largest shareholder since 2023 while paying cash dividends only to minority holders, lifting the payout ratio from 29.4% in 2022 to 41.8% in 2023 and 48% in 2024, and FnGuide data cited in December 2025 placed it among the highest dividend-yield names in Korean financials. Against that sits a competing claim on the same resources: meeting the full-scale investment bank threshold requires a large increase in equity, and a rights issue has been discussed as the most realistic route, so shareholder returns and capital accumulation draw on the same pool. For the sector as a whole, Shinhan Investment said in a May 2026 report that expectations for price-to-book multiples to break above one time were rising on structurally improving earnings power and capital efficiency."
+  "ko": "주가는 장부상 자기자본을 밑도는 구간에서 형성돼 있다. 즉 주가순자산비율이 1배 미만이며, 시장이 장부상 순자산을 그대로 인정하지 않는다고 읽을 수 있다. 다만 2025년 말 자본총계 2조 1,189억원 대비 부채총계는 17조 1,525억원으로 부채비율이 809.5%에 달해, 순자산의 질은 공정가치 측정 금융상품의 평가 손익에 좌우된다. 이익 기준으로 보면 최근 네 개 분기 지배주주 순이익 합계는 1,731억원이며, 2026년 3분기 단독 손실이 이 합계에 어떻게 반영되는지가 배수 해석의 핵심이다. 2023년부터 2025년까지 지배주주 순이익은 3년 연속 늘어 이익 회복 흐름이 확인됐다. 2026년 3분기에는 전 분기 대비 큰 폭으로 줄어 흐름이 바뀌었다. 배당 측면에서는 배당수익률이 주가 대비 배당 규모를 보여 주지만, 배당 재원이 되는 이익이 분기마다 크게 흔들려 지속성은 이익 변동성과 함께 봐야 한다.",
+  "en": "The share price trades below book equity, meaning the price-to-book ratio is under 1x, which indicates the market is not valuing the reported net assets at face value. However, total liabilities of KRW 17.2 trillion against equity of KRW 2.12 trillion at end-2025 imply a debt-to-equity ratio of 809.5%, so the quality of net assets depends on gains and losses on fair-value instruments. On earnings, profit attributable to owners over the latest four quarters totals KRW 173.1 billion, and how the single-quarter Q3 2026 loss is reflected in that total is central to reading the earnings multiple. Profit attributable to owners rose three years in a row from 2023 through 2025, a pattern of recovery, but it fell sharply in Q3 2026. On shareholder returns, the dividend yield shows the payout relative to the share price, yet because the earnings behind dividends swing widely from quarter to quarter, sustainability should be read together with earnings volatility."
  },
  "bull": [
   {
    "title": {
-    "ko": "상반기 이익이 연간 실적을 이미 넘어섰다",
-    "en": "First-half profit already exceeded the full prior year"
+    "ko": "누적 이익 성장과 수수료 수익 확대",
+    "en": "Cumulative profit growth and fee income expansion"
    },
    "body": {
-    "ko": "2026년 상반기 영업이익 2,119억원과 지배주주 순이익 1,585억원은 2025년 연간 영업이익 1,904억원, 순이익 1,429억원을 모두 상회한다. 2022년 영업이익 517억원에서 출발한 4년의 이익 확대 추세가 2026년에 한층 가팔라진 셈이다. 수탁수수료수익이 148.4% 급증하며 개선을 주도했다는 점은 리테일 기반이 시장 활성화 국면에서 레버리지로 작동함을 보여준다. 다만 같은 구조는 거래가 위축될 때 반대로도 작동한다.",
-    "en": "First-half 2026 operating profit of 211.9 billion won and owner-attributable net profit of 158.5 billion won both exceed the full-year 2025 figures of 190.4 billion won and 142.9 billion won. The four-year profit expansion that began from 51.7 billion won of operating profit in 2022 steepened in 2026. Brokerage commission income surging 148.4% led the improvement, showing how the retail base acts as leverage in an active market. The same structure works in reverse when trading contracts."
+    "ko": "1~3분기 누적 영업이익은 2,296억원으로 28.7% 증가했고, 지배주주 순이익은 1,670억원으로 22.0% 늘었다. 누적 수탁수수료 수익은 2,150억원으로 98.2% 증가했다. 상반기 증시 활성화가 수탁수수료를 끌어올렸고, WM의 고액자산가 고객 기반 확대와 맞춤형 상품 다변화가 수수료 수익을 뒷받침했다.",
+    "en": "Cumulative operating profit for the first three quarters reached KRW 229.6 billion, up 28.7%, and profit attributable to owners reached KRW 167.0 billion, up 22.0%. Cumulative entrusted trading fee income rose 98.2% to KRW 215 billion. A stronger first-half equity market lifted these fees, while WM's broader high-net-worth client base and more customized products added support."
    }
   },
   {
    "title": {
-    "ko": "법적 불확실성 해소와 재무 건전성 지표",
-    "en": "Legal overhang cleared and solvency metrics"
+    "ko": "장부 자기자본 대비 주가 수준",
+    "en": "Share price relative to book equity"
    },
    "body": {
-    "ko": "2026년 8월 12일 회사는 2023년 유상증자 관련 신주발행 무효 소송이 대법원에서 최종 기각됐다고 공시했다. 3년 가까이 이어진 소송 리스크가 정리되면서 자본 조달 관련 의사결정의 제약이 줄었다. 건전성 측면에서도 상반기 말 연결 순자본비율은 974.2%로 전년 동기보다 57.9%포인트 상승했다. 다만 이는 규제 비율 개선이지 자기자본 절대 규모 문제의 해결은 아니다.",
-    "en": "On August 12, 2026 the company disclosed that the Supreme Court had finally dismissed the suit seeking to void the share issuance tied to its 2023 capital raise. With nearly three years of litigation risk resolved, constraints around capital-raising decisions have eased. On solvency, the consolidated net capital ratio reached 974.2% at end-June, up 57.9 percentage points year on year. That is an improvement in a regulatory ratio, not a solution to the absolute size of equity."
+    "ko": "주가순자산비율이 1배를 밑도는 구간에서 거래된다는 점은 장부상 순자산 대비 주가 수준이 낮다는 사실이다. 2025년 말 기준 자본총계 2조 1,189억원은 전액이 지배주주 지분이다. 자산 가치에 비해 주가가 낮은 구간이라는 사실은 강세 해석의 근거로 거론된다.",
+    "en": "The share price trades below 1x price-to-book, so it sits below reported book equity. Equity of KRW 2.12 trillion at end-2025 is entirely attributable to owners of the parent. This level is cited by some as a basis for a constructive reading of the stock."
    }
   },
   {
    "title": {
-    "ko": "소액주주 중심 환원 정책과 그룹 내 위상",
-    "en": "Minority-focused payout policy and group standing"
+    "ko": "중장기 자기자본 확대와 종투사 목표",
+    "en": "Medium-term equity growth and comprehensive investment business goal"
    },
    "body": {
-    "ko": "회사는 소액주주 가치 증대를 이유로 2023년부터 최대주주에는 배당하지 않고 있다. 별도재무제표 기준 최대주주를 제외한 기타주주 기준 20% 이상 배당성향을 유지하겠다는 방침도 공표되어 있다. 그룹 차원에서는 모회사 교보생명의 상반기 별도 순이익 4,786억원에 대비해 교보증권 상반기 순이익이 약 3분의 1 수준까지 올라온 셈으로, 지주 전환 논의 속에서 자본시장 부문의 비중이 커지는 국면이다. 반면 배당은 회사 재량이며 자본 확충 필요성과 상충할 수 있다.",
-    "en": "Citing enhancement of minority shareholder value, the company has paid no dividend to its largest shareholder since 2023. It has also stated a policy of maintaining a payout ratio of at least 20% on a standalone basis for shareholders other than the largest holder. At group level, first-half net profit at the securities arm reached roughly one third of parent Kyobo Life's 478.6 billion won standalone first-half net profit, raising the capital-markets unit's weight as holding-company conversion advances. Dividends nonetheless remain discretionary and can conflict with the need to build capital."
+    "ko": "2025년 보도 기준으로 교보증권은 2029년까지 자기자본 3조원, 2031년 4조원을 달성해 초대형 IB 인가를 받는 목표를 제시했다. 종투사가 되면 PBS 사업이 가능하고 기업신용공여 한도가 자기자본의 100%에서 200%로 늘어난다. 2025년 영업이익은 1,904억원으로 67.2% 늘었고 영업이익률은 4.2%로 올랐다.",
+    "en": "Reporting in 2025 described a goal of KRW 3 trillion in equity by 2029 and KRW 4 trillion by 2031, leading to super-large investment bank status. Comprehensive investment business status would allow prime brokerage services and raise the credit extension limit. Operating profit rose 67.2% to KRW 190.4 billion in 2025, and operating margin reached 4.2%."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "거래대금 급감으로 하반기 기저가 달라졌다",
-    "en": "Collapsing turnover changes the second-half base"
+    "ko": "3분기 단독 실적 급감",
+    "en": "Sharp single-quarter decline in Q3"
    },
    "body": {
-    "ko": "2026년 8월 유가증권시장 일평균 거래대금은 25조 7,706억원으로 6월 대비 48.8% 감소해 연중 최저로 내려왔다. 일평균 거래량도 3월 약 11억주에서 8월 약 3억주로 5개월 만에 4분의 1 수준으로 줄었다. 상반기 위탁매매 이익이 전년 대비 4배 이상 늘었던 만큼, 기저 부담은 오히려 크다. 3분기 실적 공시 전까지 이 영향의 크기는 확정치로 확인되지 않는다.",
-    "en": "August 2026 average daily turnover on the main board fell 48.8% from June to 25.77 trillion won, the year's low. Average daily volume also shrank from about 1.1 billion shares in March to roughly 300 million in August, a quarter of the level in five months. Because first-half brokerage profit had more than quadrupled year on year, the comparison base is demanding. The size of the impact will not be confirmed until third-quarter results are disclosed."
+    "ko": "2026년 3분기 영업이익은 177억원으로 전년 동기 대비 56.4%, 전 분기 대비 84.7% 감소했다. 공정가치 측정 금융상품 손실 1조 4,320억원이 이익 1조 2,903억원을 웃돌아 1,417억원의 순손실이 났다. 지배주주 순이익은 85.1억원으로 전년 동기보다 72.4% 줄었다.",
+    "en": "Q3 2026 operating profit fell to KRW 17.7 billion, down 56.4% year on year and 84.7% quarter on quarter. Losses of KRW 1.43 trillion on fair-value instruments exceeded gains of KRW 1.29 trillion, producing a net loss of KRW 141.7 billion in that segment. Profit attributable to owners fell to KRW 8.51 billion, down 72.4%."
    }
   },
   {
    "title": {
-    "ko": "파생 부문 손실과 분기 변동성",
-    "en": "Derivatives losses and quarterly volatility"
+    "ko": "비용 증가와 낮은 영업이익률",
+    "en": "Rising costs and thin operating margin"
    },
    "body": {
-    "ko": "상반기 장내외 파생상품업에서 1,072억원의 영업손실이 발생해 전년 동기 567억원 손실보다 적자 폭이 커졌다. 이는 위탁매매·자기매매 호조가 부문 손실로 일부 상쇄되는 구조를 뜻한다. 실제로 2025년 4분기 영업이익은 121억원, 순이익은 60억원까지 축소된 전례가 있어 분기 실적 진폭이 크다. 회사는 부문별 손익 변동 요인을 분기 공시로 설명하고 있어 원인 추적에는 공시 확인이 필요하다.",
-    "en": "The listed and OTC derivatives business posted a 107.2 billion won operating loss in the first half, wider than the 56.7 billion won loss a year earlier. That means strength in brokerage and proprietary trading is partly offset by segment losses. Quarterly swings are wide: operating profit fell to 12.1 billion won and net profit to 6.0 billion won in the fourth quarter of 2025. Tracing the drivers requires reading the quarterly disclosures, where the company explains segment profit and loss movements."
+    "ko": "3분기 영업비용은 7,898억원에서 1조 6,311억원으로 106.5% 늘어 수익 증가율을 웃돌았다. 판매비와관리비는 874억원으로 34.6% 증가했다. 2025년 영업이익률은 4.2%로 올랐지만 여전히 낮은 수준이라 비용 증가가 이익에 직접 부담이 된다.",
+    "en": "Operating expenses in Q3 2026 rose 106.5% to KRW 1.63 trillion from KRW 789.8 billion, outpacing revenue growth. SG&A increased 34.6% to KRW 87.4 billion. Operating margin improved to 4.2% in 2025 but remains thin, so cost increases weigh directly on profit."
    }
   },
   {
    "title": {
-    "ko": "자기자본 격차와 모회사 자본 여력",
-    "en": "Equity gap and the parent's capital capacity"
+    "ko": "부채 확대와 현금흐름 변동",
+    "en": "Higher leverage and volatile cash flow"
    },
    "body": {
-    "ko": "종투사 요건인 자기자본 3조원까지 약 8,500억원의 추가 확충이 필요하다. 그런데 대주주 교보생명으로부터의 유상증자 등 자금 조달 계획은 아직 없는 것으로 알려져, 당분간 자체 사업 확대로 자본을 쌓아야 하는 과제를 안게 됐다. 교보생명이 금융지주 전환을 추진하며 SBI저축은행 인수에 이어 다른 보험사 인수전에도 참여하고 있다는 점도 자본 배분 순서의 변수다. 유상증자로 해결할 경우 기존 주주 지분 희석 논쟁이 재점화될 소지가 있다.",
-    "en": "Roughly 850 billion won of additional equity is needed to reach the 3 trillion won threshold. Yet no funding plan such as a rights issue from Kyobo Life is reported to be in place, leaving the firm to accumulate capital through its own business expansion for now. Kyobo Life is pursuing holding-company conversion and, after acquiring SBI Savings Bank, has joined bids for other insurers, which affects the order of capital allocation. Should a rights issue be chosen, debate over dilution of existing holders could resurface."
+    "ko": "2025년 말 부채비율은 809.5%로 2024년 700.6%에서 올랐고 부채총계는 17조 1,525억원이다. 영업활동 현금흐름이 마이너스에서 벗어나는지가 다음 확인 지점이다. 1분기 IB 영업이익은 191억원으로 전년 229억원보다 줄어 투자은행 부문 회복이 과제다.",
+    "en": "The debt-to-equity ratio rose to 809.5% at end-2025 from 700.6% in 2024, with total liabilities of KRW 17.2 trillion. Whether operating cash flow turns positive is the next point to check. IB operating profit in Q1 2026 fell to KRW 19.1 billion from KRW 22.9 billion, so recovery in investment banking remains an open task."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "시장 사이클·신용 리스크",
-    "en": "Market cycle and credit risk"
+    "ko": "시장 변동성과 거래대금 의존",
+    "en": "Market volatility and trading volume dependence"
    },
    "body": {
-    "ko": "브로커리지와 운용손익 의존도가 높은 손익 구조는 지수와 거래대금 하락 국면에서 빠르게 훼손될 수 있다. 개인 마이너스 통장 연체율이 6월 말 0.22%로 지난해 말 0.18% 대비 상승했고, 코스피 급락 이후 신용거래 투자자의 상환 부담이 커졌다는 해석이 나온 바 있다. 신용융자 관련 손실이나 담보 부족 사태는 증권사 손익에 직접 반영된다. 관련 지표는 금융감독원·거래소 통계로 매월 확인이 가능하다.",
-    "en": "An earnings mix dependent on brokerage and trading gains can deteriorate quickly when indices and turnover fall. The delinquency rate on individual overdraft accounts at the five major banks rose to 0.22% at end-June from 0.18% at end-2025, and observers linked heavier repayment burdens for leveraged retail investors to the KOSPI's sharp drop. Losses on margin lending or collateral shortfalls flow directly into brokers' earnings. The relevant metrics can be tracked monthly through regulator and exchange statistics."
+    "ko": "브로커리지와 수탁수수료 수익은 거래대금에 크게 좌우된다. 2026년 1분기 실적 발표에서는 우호적인 국내 증시 환경이 성장 배경으로 꼽혔다. 3분기에는 증시 변동성이 커졌고, 거래대금이 위축되면 위탁 수익이 되돌아갈 수 있다.",
+    "en": "Brokerage and entrusted trading fee income depend heavily on trading volumes. The Q1 2026 results cited a favorable domestic equity market as a growth driver, while Q3 saw higher market volatility. A shrinking trading volume could reverse the brokerage gains."
    }
   },
   {
    "cat": {
-    "ko": "부동산 금융·우발채무",
-    "en": "Real estate finance and contingent liabilities"
+    "ko": "공정가치 측정 금융상품 평가 손익",
+    "en": "Fair-value financial instrument valuation gains and losses"
    },
    "body": {
-    "ko": "중형 증권사의 공통 부담인 부동산 프로젝트금융 관련 익스포저는 이 회사에서도 과제로 지적되어 왔다. 실적이 회복세를 보이는 가운데 프로젝트금융 우발채무 부담과 건전성이 과제로 거론됐다. 회사는 조직개편에서 구조화금융·투자금융·프로젝트금융으로 본부를 세분화했지만, 익스포저의 질은 분기별 공시 자료로 확인해야 한다. 부동산 경기와 금리 경로에 따라 충당금 부담이 재부상할 수 있다.",
-    "en": "Exposure to real estate project finance, a common burden for mid-tier brokers, has been flagged here as well. Alongside recovering earnings, project-finance contingent liabilities and asset quality have been cited as outstanding tasks. The company split its structured, investment and project finance units in its reorganization, but the quality of exposure must be checked in quarterly filings. Provisioning pressure could re-emerge depending on property conditions and the rate path."
+    "ko": "2026년 1분기 영업수익의 83.73%가 공정가치측정 금융상품에서 나왔다. 3분기에는 이 부문에서 1,417억원의 순손실이 나면서 이익 변동성이 커졌다. 평가 손익의 방향에 따라 분기 실적이 크게 달라지는 구조다.",
+    "en": "Fair-value financial instruments accounted for 83.73% of operating revenue in Q1 2026. This segment posted a net loss of KRW 141.7 billion in Q3 2026, raising earnings volatility. Quarterly results can shift sharply with the direction of valuation gains and losses."
    }
   },
   {
    "cat": {
-    "ko": "지배구조·자본정책",
-    "en": "Governance and capital policy"
+    "ko": "재무 레버리지와 PF 익스포저",
+    "en": "Financial leverage and PF exposure"
    },
    "body": {
-    "ko": "최대주주 측 지분이 약 84.75%에 달해 유통주식 비중이 낮고, 자본정책 결정이 최대주주 의사에 크게 좌우된다. 과거 제3자배정 유상증자 당시에도 기존 주주 가치 희석 문제가 제기됐다. 향후 자본 확충 방식(유상증자, 신종자본증권 등)에 따라 주주별 영향이 달라지므로, 이사회 결의와 공시 내용을 직접 확인하는 것이 중요하다. 아울러 보험 전문가 독립이사 선임을 두고 모회사 지주 전환과의 연관성 논의가 제기된 만큼 이사회 구성 변화도 관찰 대상이다.",
-    "en": "The largest shareholder side holds about 84.75%, leaving a small free float and making capital policy heavily dependent on the controlling holder's intent. During past third-party share placements, dilution of existing shareholders was already contested. Because the chosen route for future capital raising, whether a rights issue or hybrid securities, changes the impact on different shareholders, board resolutions and disclosures should be read directly. In addition, the appointment of an independent director with an insurance background has prompted discussion of links to the parent's holding-company conversion, making board composition another item to monitor."
+    "ko": "2025년 말 부채비율은 809.5%이고 부채총계는 17조 1,525억원이다. IB 부문은 수도권과 공공·임대주택 중심 PF를 확대하고 있다. 부동산 경기나 금리가 바뀌어 PF 관련 충당금 부담이 늘면 자본 여력이 줄어들 수 있다.",
+    "en": "The debt-to-equity ratio stood at 809.5% at end-2025, with total liabilities of KRW 17.2 trillion. The IB unit has been expanding PF focused on the Seoul metropolitan area and on public and rental housing. If property markets or interest rates raise provisioning burdens, capital capacity could narrow."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 9월~12월, 매월 초",
-    "en": "Monthly, September to December 2026"
+    "ko": "2027년 3월 말(사업보고서 법정 제출 기한 기준)",
+    "en": "Late March 2027 (statutory deadline for the annual report)"
    },
    "what": {
-    "ko": "한국거래소가 발표하는 유가증권·코스닥 일평균 거래대금과 투자자예탁금 추이를 확인한다. 8월 유가증권시장 일평균 거래대금 25조 7,706억원, 8월 27일 투자자예탁금 96조 7,090억원이 비교 기준점이 된다.",
-    "en": "Track Korea Exchange data on average daily turnover for the main board and KOSDAQ plus customer deposits. August main-board turnover of 25.77 trillion won per day and customer deposits of 96.71 trillion won as of August 27 serve as the reference points."
+    "ko": "2026년 사업보고서에서 연간 영업이익률(2025년 4.2%), 공정가치 측정 금융상품 손익, 판매비와관리비 추이와 부채비율 변화를 확인한다. 3분기 단독 손실이 연간 실적에서 어떻게 정리되는지가 핵심이다.",
+    "en": "The 2026 annual report will show full-year operating margin (4.2% in 2025), fair-value instrument gains and losses, the SG&A trend and the debt-to-equity ratio. The key question is how the Q3 single-quarter loss is reflected in full-year results."
    }
   },
   {
    "when": {
-    "ko": "2026년 11월 중순",
-    "en": "Mid-November 2026"
+    "ko": "2027년 5월 15일(1분기 분기보고서 법정 제출 기한 기준)",
+    "en": "May 15, 2027 (statutory deadline for the Q1 2027 quarterly report)"
    },
    "what": {
-    "ko": "2026년 3분기 분기보고서 공시. 거래대금 급감이 위탁매매 수수료와 운용손익에 어떤 폭으로 반영되는지, 파생 부문 손실이 축소되는지가 핵심 확인 항목이다.",
-    "en": "The third-quarter 2026 report will be filed. Key items are the extent to which shrinking turnover feeds into brokerage commissions and trading gains, and whether the derivatives segment loss narrows."
+    "ko": "2027년 1분기 위탁매매와 파생 손익이 2026년 1분기의 438억원, 466억원 수준을 유지하는지 확인한다. 자기매매와 IB 영업이익의 회복 여부도 함께 본다.",
+    "en": "Q1 2027 brokerage and derivatives profit will be compared with the KRW 43.8 billion and KRW 46.6 billion recorded in Q1 2026. Recovery in proprietary trading and IB operating profit is also a checkpoint."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기 중",
-    "en": "During the fourth quarter of 2026"
+    "ko": "2029년(2025년 보도 기준 중장기 목표 시점)",
+    "en": "By 2029 (target timeline reported in 2025)"
    },
    "what": {
-    "ko": "자본 확충 관련 공시 여부. 회사가 발행 및 조달을 포함한 다양한 방안을 검토하고 있다고 밝힌 만큼, 유상증자·신종자본증권 등 구체적 수단과 규모가 나오는지, 그리고 그 방식이 기존 주주에게 어떤 영향을 주는지를 확인한다.",
-    "en": "Watch for any capital-raising disclosure. Management said it is reviewing various options including issuance and funding, so the specific instrument and size, whether a rights issue or hybrid securities, and its effect on existing shareholders are the points to check."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 2월 초",
-    "en": "Early February 2027"
-   },
-   "what": {
-    "ko": "2026년 결산 실적과 현금배당 이사회 결의. 최대주주 무배당·소액주주 배당이라는 기존 정책이 유지되는지, 늘어난 이익에 대응해 배당성향이 어떻게 조정되는지가 관찰 포인트다.",
-    "en": "Full-year 2026 results and the board resolution on cash dividends. Points to observe are whether the policy of no dividend for the largest shareholder and payouts only to minority holders is maintained, and how the payout ratio is set against higher profits."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 하반기~2027년",
-    "en": "Second half of 2026 through 2027"
-   },
-   "what": {
-    "ko": "토큰증권 사업 진척도. 모회사가 참여한 KDX 컨소시엄의 장외거래소 개장 일정과 교보증권의 토큰증권 상품 발행 실행 여부가 신사업 수익 기여를 판단할 첫 단서가 된다.",
-    "en": "Progress in the security token business. The opening schedule of the over-the-counter exchange run by the KDX consortium in which the parent participates, and whether Kyobo Securities actually issues token products, will provide the first read on new-business contribution."
+    "ko": "자기자본 3조원 목표의 진행 상황과 초대형 IB 인가 추진 여부를 확인한다. 자기자본 증가는 이익 축적과 평가 손익의 안정성에 달려 있다.",
+    "en": "Progress toward KRW 3 trillion in equity and any move toward super-large investment bank status will be watched. Equity growth depends on earnings retention and the stability of valuation gains."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "교보증권의 2026년 상반기는 확정 수치만으로도 뚜렷한 이익 확대 국면이었다. 영업이익 2,119억원, 지배주주 순이익 1,585억원으로 2025년 연간 영업이익 1,904억원과 순이익 1,429억원을 반년 만에 넘어섰고, 영업이익률도 2022년 1.3%에서 2025년 4.2%로 개선되는 흐름을 이어갔다. 다만 개선의 원천은 위탁매매업 영업이익 1,080억원(전년 동기 대비 334.4% 증가)과 자기매매업 2,424억원(65.8% 증가)에 집중되어 있어 시장 환경 의존도가 높고, 장내외 파생상품업의 1,072억원 영업손실과 2025년 4분기 영업이익 121억원 같은 사례는 분기 진폭이 크다는 점을 상기시킨다. 하반기 환경은 상반기와 다르다 — 8월 유가증권시장 일평균 거래대금이 연중 최저로 내려오고 증권업종 3분기 영업이익 컨센서스도 전분기 대비 45.6% 감소로 제시되어 있다. 구조적 과제는 자본이다. 2029년 종투사 진입을 목표로 하지만 자기자본 3조원 요건까지 약 8,500억원이 남았고, 우리투자증권이 1조원 증자로 자기자본을 2조 2,280억원까지 늘리며 경쟁 구도가 좁혀졌다. 결국 3분기 이후 실적이 상반기 체력을 얼마나 유지하는지, 그리고 자본 확충 방식이 어떤 형태로 결정되는지가 이 회사를 판단하는 두 축이며, 두 항목 모두 앞으로의 공시로만 확인 가능하다.",
-   "en": "On confirmed figures alone, the first half of 2026 was a clear profit expansion for Kyobo Securities. Operating profit of 211.9 billion won and owner-attributable net profit of 158.5 billion won surpassed the full-year 2025 totals of 190.4 billion won and 142.9 billion won in just six months, extending a margin trend that improved from 1.3% in 2022 to 4.2% in 2025. The source of that improvement, however, was concentrated in brokerage operating profit of 108.0 billion won, up 334.4% year on year, and proprietary trading profit of 242.4 billion won, up 65.8%, leaving results highly dependent on market conditions, while the 107.2 billion won operating loss in listed and OTC derivatives and the 12.1 billion won operating profit of the fourth quarter of 2025 are reminders of wide quarterly swings. The second-half backdrop differs from the first: August main-board turnover fell to the year's low and the third-quarter operating profit consensus for the brokerage sector is set 45.6% below the prior quarter. The structural issue is capital. The company targets full-scale investment bank designation in 2029 but still needs about 850 billion won to meet the 3 trillion won equity requirement, and Woori Investment & Securities narrowed the gap by lifting its equity to 2,228.0 billion won through a 1 trillion won rights issue. Ultimately, how much of the first-half earnings power persists from the third quarter onward, and what form the capital increase takes, are the two axes for assessing this company, and both can only be verified through future disclosures."
+   "ko": "교보증권의 2025년 연간 실적은 매출 4조 5,068억원(42.3% 증가), 영업이익 1,904억원(67.2% 증가), 지배주주 순이익 1,429억원(21.4% 증가)으로 세 지표 모두 늘었다. 2026년 1~3분기 누적 영업이익 2,296억원과 지배주주 순이익 1,670억원도 전년 대비 늘었다. 그러나 3분기 단독 실적은 공정가치 측정 금융상품 손실과 판매비와관리비 증가로 영업이익 177억원, 지배주주 순이익 85.1억원으로 급감했다. 수수료 중심의 위탁·파생·WM 수익이 늘고 있지만 공정가치 측정 금융상품 비중이 여전히 높아 실적 변동성이 큰 구조다. 재무 측면에서는 2025년 말 부채비율 809.5%와 영업활동 현금흐름 마이너스가 확인할 과제다. 밸류에이션은 장부 자기자본을 밑도는 구간이지만 이익 변동성과 부채 구조가 해석의 조건이다. 다음 확인 지점은 2026년 사업보고서의 연간 영업이익률과 공정가치 측정 금융상품 손익, 2027년 1분기 위탁·파생 손익이다. 누적 성장과 자기자본 확대 목표라는 강세 요인은 3분기 손실과 부채 부담이라는 약세 요인과 함께 놓고 읽힌다.",
+   "en": "Full-year 2025 results rose on all three measures: revenue of KRW 4.51 trillion (up 42.3%), operating profit of KRW 190.4 billion (up 67.2%) and profit attributable to owners of KRW 142.9 billion (up 21.4%). Cumulative operating profit of KRW 229.6 billion and profit attributable to owners of KRW 167.0 billion for the first three quarters of 2026 also rose year on year. However, Q3 2026 single-quarter results fell sharply, with operating profit of KRW 17.7 billion and profit attributable to owners of KRW 8.51 billion, due to fair-value instrument losses and higher SG&A. Fee-based brokerage, derivatives and WM income has grown, but the share of fair-value instruments remains high, keeping earnings volatile. On the balance sheet, the 809.5% debt-to-equity ratio and negative operating cash flow at end-2025 remain open questions. Valuation sits below book equity, but earnings volatility and leverage define how that gap should be interpreted. The next checkpoints are full-year operating margin and fair-value instrument gains in the 2026 annual report, and brokerage and derivatives profit in Q1 2027. Growth in cumulative earnings and the equity expansion target are weighed against the Q3 loss and debt burden."
   }
  },
  "sources": [
-  "https://www.ezyeconomy.com/news/articleView.html?idxno=238801",
-  "https://www.iprovest.com/weblogic/RSReportServlet?scr_id=40&menuCode=9&srch_db=0&QU=&DT1=&DT2=&provestz=&pageNum=1",
-  "https://m.iprovest.com/weblogic/ResearchServlet/newReports",
+  "https://www.dailian.co.kr/news/view/1714854/%EA%B5%90%EB%B3%B4%EC%A6%9D%EA%B6%8C-3%EB%B6%84%EA%B8%B0-%EB%88%84%EC%A0%81-%EC%98%81%EC%97%85%EC%9D%B5-2296-2026",
+  "https://news.bizwatch.co.kr/article/market/2026/11/13/0014",
+  "https://www.sentv.co.kr/article/view/sentv202611130168",
+  "https://www.g-enews.com/article/Securities/2026/11/202611131604105842923c501012_1",
+  "https://supple.kr/news/cmweofh1q79xeal9p41e3zu6g",
+  "https://m.news.nate.com/view/20261113n22791",
+  "http://www.press9.kr/news/articleView.html?idxno=86292",
+  "https://www.topdaily.kr/articles/105318",
+  "https://comp.wisereport.co.kr/company/c1020001.aspx?cmp_cd=030610&cn=",
   "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=030610",
-  "https://news.nate.com/view/20260724n12396",
-  "https://www.bloter.net/news/articleView.html?idxno=671042",
-  "https://jasoseol.com/companies/90/insights",
-  "https://www.iprovest.com/weblogic/RSNewsServlet?scr_id=8&gubun=&srch_db=0&DT1=&DT2=&pageNum=777",
-  "https://m.iprovest.com/weblogic/ResearchServlet/todaysDaily",
-  "https://www.iprovest.com/weblogic/RSNewsServlet?scr_id=17&gubun=&srch_db=0&DT1=&DT2=&pageNum=64",
-  "https://news.nate.com/view/20251230n13813",
-  "https://news.nate.com/view/20251230n13387",
-  "https://www.investing.com/equities/kyobo-securiti",
-  "https://www.iprovest.com/compintro/index.jsp",
-  "https://thevc.kr/kyobosecurities",
-  "https://www.metroseoul.co.kr/article/20260625500019",
-  "https://www.bloter.net/news/articleView.html?idxno=661374",
-  "https://news.bizwatch.co.kr/article/market/2023/08/22/0027"
+  "https://www.jobplanet.co.kr/companies/44591/landing/%EA%B5%90%EB%B3%B4%EC%A6%9D%EA%B6%8C",
+  "https://m.sedaily.com/article/20114082",
+  "https://www.saramin.co.kr/zf_user/company-info/view/csn/T1VJdk5XSURqd1U2dlUyN29ZNEJZdz09/company_nm/%EA%B5%90%EB%B3%B4%EC%A6%9D%EA%B6%8C(%EC%A3%BC)",
+  "https://news.nate.com/view/20260515n29456",
+  "https://www.goodkyung.com/news/articleView.html?idxno=288050"
  ],
  "v": 2,
- "model": "claude-opus-5",
+ "model": "claude-haiku-5-5",
  "ticker": "030610",
  "name": "교보증권",
  "name_en": "KYOBO SECURITIES CO.,LTD.",
@@ -233,11 +210,11 @@
   "금융"
  ],
  "market": "코스피",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 05:51",
- "dataDate": "20260904",
+ "reportDate": "2026-11-14",
+ "reportTs": "2026-11-14 09:25",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-09-04",
+  "asOf": "2026-11-13",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -308,12 +285,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 1257802255355,
-    "op": 70518419545,
-    "np_owner": 54332515832
-   },
-   {
     "q": "2025Q3",
     "rev": 830434267000,
     "op": 40632797000,
@@ -336,29 +307,36 @@
     "rev": 2714652037000,
     "op": 115971660000,
     "np_owner": 90110538000
+   },
+   {
+    "q": "2026Q3",
+    "rev": 1648845801000,
+    "op": 17702045000,
+    "np_owner": 8505492000
    }
   ],
   "valuation": {
-   "price": 10100,
-   "mcap": 1.151,
+   "price": 8050,
+   "mcap": 0.9174,
    "shares": 113962961,
    "total_shares": 113962961,
-   "wavg_shares": 112907344,
-   "per": 5.838,
-   "eps": 1730,
-   "pbr": 0.5014,
-   "bps": 20144,
-   "roe_ttm": 8.9,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": 195389841000,
+   "wavg_shares": 112856353,
+   "per": 5.251,
+   "eps": 1533,
+   "pbr": 0.3988,
+   "bps": 20185,
+   "roe_ttm": 7.9,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": 173065275000,
    "ccy": "KRW",
    "bps_src": "자체",
    "eps_src": "공시",
-   "pbr_krx": 0.54,
+   "pbr_krx": 0.43,
    "bps_krx": 18773.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 550.0,
-   "div": 5.45
+   "div": 6.83
   }
- }
+ },
+ "textRules": 2
 }
