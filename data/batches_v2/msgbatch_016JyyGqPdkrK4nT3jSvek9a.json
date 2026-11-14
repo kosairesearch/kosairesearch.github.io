@@ -918,27 +918,63 @@
   }
  },
  "deferred": [
-  "023150",
-  "065650",
-  "256630",
-  "111710",
-  "081150",
-  "054780"
+  "081150"
+ ],
+ "result": {
+  "ok": 5,
+  "fail": 1
+ },
+ "repair_answers": {
+  "256630-2e5e7c6e3f83e2d1a6553fcd": {
+   "text": "===JSON_START===\n{\"bear\": [{\"title\": {\"ko\": \"디스플레이 수요 위축\", \"en\": \"Weaker display demand\"}, \"body\": {\"ko\": \"2026년 1분기 매출은 58억원으로 전년 대비 30.9% 감소했다. 회사는 계절적 비수기와 고객사 생산 일정 조정을 원인으로 들었고, 외부 분석은 중국발 LCD 공급 과잉과 패널 투자 축소를 짚었다. 주력인 디스플레이 장비 부품 수요가 회복되는지가 실적 회복의 전제가 된다.\", \"en\": \"First-quarter 2026 revenue was KRW 5.8 billion, down 30.9% year on year. The company cited seasonal weakness and customer production schedule changes, while outside analysis pointed to Chinese LCD oversupply and reduced panel investment. Recovery in display-equipment parts demand is a precondition for a broader earnings recovery.\"}}, {\"title\": {\"ko\": \"순손실 지속\", \"en\": \"Continued net losses\"}, \"body\": {\"ko\": \"2025년에는 지배주주 순손실 59.2억원으로 적자 전환했고, 2026년 3분기에도 지배주주 순손실 2.6억원이 남았다. 영업이익이 흑자로 돌아섰어도 순이익 단계에서 적자가 이어지면 이익 기준 평가는 어려운 상태가 계속된다.\", \"en\": \"The 2025 attributable net loss of KRW 5.92 billion marked a swing back to losses, and the third quarter of 2026 still recorded an attributable net loss of KRW 259 million. Even with operating profit back in the black, a continued net loss keeps earnings-based assessment difficult.\"}}, {\"title\": {\"ko\": \"설비 손상과 신사업 부담\", \"en\": \"Asset impairment and new-business burden\"}, \"body\": {\"ko\": \"보도에 따르면 2025년 Pin Foundry 유휴설비 손상 94.4억원이 반영되면서 순손실로 전환했다. 회사는 PF 사업이 설비 투자 부담으로 수년간 손실을 냈다고 설명했다. 신규 사업의 매출 기여가 제한적인 상태에서 설비 가동률이 낮으면 추가 손상 가능성이 남는다.\", \"en\": \"A news report said the 2025 net loss reflected a KRW 9.44 billion impairment on idle Pin Foundry equipment. The company has acknowledged that the PF business incurred losses for several years because of capital spending burdens. With new-business revenue still limited, low utilization of equipment leaves room for further impairments.\"}}]}\n===JSON_END===",
+   "model": "claude-sonnet-5-5",
+   "stop_reason": "end_turn"
+  },
+  "023150-e1a87524380e710401d9d707": {
+   "text": "===JSON_START===\n{\"bear\": [{\"title\": {\"ko\": \"3개 분기 연속 매출 감소\", \"en\": \"Sales have fallen for three straight quarters\"}, \"body\": {\"ko\": \"매출은 2025년 4분기 234억원을 정점으로 2026년 1분기 210억원, 2분기 175억원, 3분기 174억원으로 3개 분기 연속 줄었다. 2026년 3분기 매출은 전년 동기 대비 22.9% 감소했다. 주정 부문은 주류 판매 감소, 골프장 부문은 내방객 감소라는 두 가지 수요 요인이 동시에 작용하고 있다. 매출 감소가 이어지면 고정비 부담 아래서 영업이익 회복이 제한될 수 있다.\", \"en\": \"Sales peaked at KRW 23.4 billion in the fourth quarter of 2025 and then fell to KRW 21 billion in the first quarter of 2026, KRW 17.5 billion in the second and KRW 17.4 billion in the third, a third straight quarterly decline. Third-quarter 2026 sales were down 22.9% year on year. Lower alcohol sales in ethanol and fewer golf visitors are pressuring revenue at the same time. If declines continue, a fixed cost base could limit profit recovery.\"}}, {\"title\": {\"ko\": \"지배주주 기준 적자 지속\", \"en\": \"Losses for controlling shareholders persist\"}, \"body\": {\"ko\": \"지배주주 순손실은 2024년 31.1억원, 2025년 23.8억원으로 2년 연속 적자였다. 2026년 3분기에도 지배주주 순손실 7.9억원으로 적자가 이어졌다. 2026년 1분기 18.7억원 순이익으로 흑자 전환했던 분기가 있었으나 2분기와 3분기에 다시 흐름이 바뀌었다.\", \"en\": \"Net losses attributable to controlling shareholders were KRW 3.11 billion in 2024 and KRW 2.38 billion in 2025, two straight loss years. The third quarter of 2026 posted a controlling-shareholder net loss of KRW 791 million. A profit of KRW 1.87 billion in the first quarter of 2026 was not sustained into the following two quarters.\"}}, {\"title\": {\"ko\": \"높은 부채 부담\", \"en\": \"Heavy debt burden\"}, \"body\": {\"ko\": \"부채비율은 2024년 421.0%에서 낮아졌지만 여전히 높은 수준이다. 영업이익 규모가 100억원 안팎인 상황에서 이자 등 금융비용 부담은 이익 구조의 제약 요인이다. 금융비용이 줄어든 효과가 2025년 순손실 축소에 기여한 만큼 금리와 차입 구조의 변화가 이익에 직접 반영된다.\", \"en\": \"The debt ratio improved from 421.0% in 2024 but remains high. With annual operating profit near KRW 10 billion, financing costs are a structural constraint on earnings. Because lower financial costs helped narrow the 2025 net loss, changes in rates and borrowing structure feed directly into reported profit.\"}}]}\n===JSON_END===",
+   "model": "claude-sonnet-5-5",
+   "stop_reason": "end_turn"
+  },
+  "054780-f7cb248794e43d837807ded6": {
+   "text": "===JSON_START===\n{\"bear\": [{\"title\": {\"ko\": \"영업적자 지속\", \"en\": \"Continued Operating Losses\"}, \"body\": {\"ko\": \"2025년 영업손실은 39.4억원으로 전년 대비 적자 전환했고, 영업이익률은 -25.1%였다. 2026년 3분기 영업손실은 13.9억원으로 전 분기보다 적자 폭이 커졌고, 2025년 3분기부터 5개 분기 연속 적자다. 매출 증가가 아직 영업이익 흑자로 이어지지 않는 것이 약세 요인이다.\", \"en\": \"Keyeast's operating loss in 2025 was KRW 3.94 billion, a swing back into deficit from 2024, and its operating margin was -25.1%. The 3Q 2026 operating loss of KRW 1.39 billion was wider than the prior quarter, and the company has posted five consecutive loss-making quarters from 3Q 2025. The fact that revenue growth has not yet produced an operating profit is the bearish factor.\"}}, {\"title\": {\"ko\": \"매출 변동성\", \"en\": \"Revenue Volatility\"}, \"body\": {\"ko\": \"연간 매출은 2022년 620억원, 2023년 520억원, 2024년 758억원, 2025년 157억원으로 크게 움직였다. 2025년은 전년 대비 79.3% 감소해 2022~2025년 중 가장 작은 해가 됐다. 제작 매출이 작품 단위로 인식되기 때문에 편성 공백이 생기면 연간 매출이 크게 줄 수 있다는 점이 약세 요인이다.\", \"en\": \"Annual revenue moved sharply, from KRW 62 billion in 2022 to KRW 52 billion in 2023, KRW 75.8 billion in 2024 and KRW 15.7 billion in 2025. Revenue fell 79.3% in 2025, making it the smallest year in the 2022 to 2025 window. Because production revenue is recognized per title, a gap in scheduling can sharply reduce annual revenue, which is the bearish factor.\"}}, {\"title\": {\"ko\": \"누적 순손실과 지배구조 변화\", \"en\": \"Cumulative Net Losses and Ownership Change\"}, \"body\": {\"ko\": \"지배주주 순손실은 2022년 16.7억원에서 2024년 110억원으로 확대된 뒤 2025년 26.4억원으로 줄었고, 2022년부터 2025년까지 4년 연속 적자다. 분기 순손실이 이어지면 지배주주 몫의 누적 손실이 더 쌓이므로, 분기별 손실 폭이 줄어드는지가 다음 확인 지점이다. 2025년 3월 보도에서는 최대주주 지분 매각이 추진 중이라고 전해져 지배구조 변화 가능성도 약세 요인으로 꼽힌다.\", \"en\": \"Net losses attributable to controlling shareholders widened from KRW 1.67 billion in 2022 to KRW 11 billion in 2024, then narrowed to KRW 2.64 billion in 2025, marking four consecutive years of losses. If quarterly net losses continue, losses attributable to controlling shareholders keep accumulating, so whether the quarterly loss narrows is the next point to check. A March 2025 report said the largest shareholder's stake was being prepared for sale, so a possible change in ownership is also a bearish factor.\"}}]}\n===JSON_END===",
+   "model": "claude-sonnet-5-5",
+   "stop_reason": "end_turn"
+  },
+  "081150-d2b09dc3258e269686a213e0": {
+   "text": "===JSON_START===\n{\"0\": \"Annual results showed diverging trends in revenue and profit. Revenue was highest in 2022 at KRW 257.7 billion among 2022–2025, then fell to KRW 251.1 billion in 2023 (down 2.6% year over year) and KRW 207.5 billion in 2024 (down 17.4% year over year), before recovering slightly to KRW 209.2 billion in 2025 (up 0.8% year over year). Operating profit swung from KRW 21.3 billion in 2022 to an operating loss of KRW 1.53 billion in 2023, returned to profit at KRW 4.79 billion in 2024, and rose 9.2% to KRW 5.24 billion in 2025. The operating margin was 8.3% in 2022, -0.6% in 2023, 2.3% in 2024, and 2.5% in 2025. The 2022 margin peak coincided with a period of declining revenue, and since 2024 the margin has risen gradually from a low level. Net profit attributable to owners of the parent was KRW 15.6 billion in 2022, a net loss of KRW 2.23 billion in 2023 (swing to a loss), KRW 1.36 billion in 2024 (return to profit), and KRW 3.2 billion in 2025 (up 134.8% year over year). Net profit including non-controlling interests is disclosed at the same amounts for the same years. The company explained that the reversal of valuation losses and a decrease in non-operating expenses drove the 2025 increase in net profit. On a quarterly basis, revenue was KRW 52.5 billion in Q3 2025 and KRW 52.4 billion in Q4 (down 0.2% quarter over quarter), then KRW 63.9 billion in Q1 2026 (up 22.0% quarter over quarter), KRW 71.5 billion in Q2 (up 11.8% quarter over quarter), and KRW 69.1 billion in Q3 (down 3.3% quarter over quarter, up 31.6% year over year). Operating profit was KRW 1.09 billion in Q3 2025, KRW 1.74 billion in Q4, and KRW 2.36 billion in Q1 2026, then declined to KRW 2.16 billion in Q2 (down 8.7% quarter over quarter) and KRW 1.26 billion in Q3 (down 41.7% quarter over quarter). Net profit attributable to owners of the parent was KRW 1.12 billion in Q3, up 146.4% quarter over quarter; because operating profit and net profit moved in different directions, the detailed causes, including non-operating items, should be confirmed in the periodic report. The sum of net profit attributable to owners of the parent over the latest four quarters is KRW 3.93 billion.\"}\n===JSON_END===",
+   "model": "claude-sonnet-5-5",
+   "stop_reason": "end_turn"
+  },
+  "111710-85e72cb0320ef9895a67ead4": {
+   "text": "===JSON_START===\n{\"business\": {\"ko\": \"남화산업은 골프장을 운영하는 회사다. 공시와 언론 보도에서도 골프장 운영사로 소개된다. 2022년 4월 증권사 리포트에 따르면 2021년 매출은 골프 입장료가 대부분을 차지했고, 대여·식음료·숙박이 나머지를 이뤘다. 이 구성은 오래된 자료이므로 현재 부문별 비중은 정기보고서에서 따로 확인해야 한다. 매출은 골프장 내장객 수에 직접 연동되는 구조로 보인다. 회사는 2025년 매출 감소를 경기침체에 따른 내장고객 감소로 설명했다. 이익에는 관계회사 지분법이익도 영향을 준다. 회사는 2024년과 2025년 실적 감소 원인으로 지분법이익 감소를 함께 들었다. 해외 골프 활동 증가와 파크골프 활성화는 내장객 감소의 배경으로 제시됐다. 2026년 1분기 별도 매출은 전년 동기 대비 8.6% 감소했다는 요약 자료가 있다. 같은 요약은 숙박 시설 확충도 함께 언급했다. 주주환원 측면에서 2025년 결산 현금배당 총액은 41억 1,760만원으로 결정됐고, 2026년 3월 24일 정기주주총회에서 승인됐다. 같은 날 주총에서 사내이사 1명이 신규 선임됐고, 대표이사 변경도 공시됐다. 골프존은 스크린골프 중심이라 사업 성격이 다르다.\", \"en\": \"Namhwa Industrial operates golf courses, and disclosures and press coverage describe it as a golf course operator. A brokerage report from April 2022 said green fees accounted for most of 2021 revenue, with rentals, food and beverage and lodging making up the rest. That mix is dated, so current segment weights should be checked in the periodic reports. Revenue appears tied closely to visitor counts, and the company attributed the 2025 sales decline to fewer golf course visitors amid the economic slowdown. Equity-method income from affiliates also affects earnings; the company cited lower affiliate income alongside visitor declines for 2024 and 2025. Overseas golf trips and the growth of park golf were cited as reasons for fewer visitors. A Q1 2026 business summary reported standalone sales down 8.6% year on year and mentioned expanding lodging facilities. The 2025 year-end cash dividend total was set at KRW 4.12 billion and approved at the March 24, 2026 shareholders' meeting. The same meeting added one inside director, and a CEO change was disclosed on the same day. Golfzon centers on screen golf, so its business model differs.\"}, \"industry\": {\"ko\": \"골프장 운영 업계의 수요는 국내 라운딩 인구와 해외 골프 선택에 따라 움직이는 것으로 회사는 설명한다. 회사는 2024년 실적 설명에서 골프장 내장객의 해외 활동 증가를, 2026년 1분기 실적 요약에서는 파크골프 활성화를 내장객 감소 요인으로 들었다. 2026년 7월 말 시장 보도는 골프장 이용객 증가와 레저 산업 회복 기대감이 투자 심리를 자극한다고 전했다. 같은 해 8월 레저 상장기업 브랜드 평판 조사에서는 레저 상장기업 전체의 빅데이터가 감소했다는 결과가 나왔다. 같은 조사에서 남화산업은 11~15위 구간에 포함된 것으로 보도됐다. 골프존은 스크린골프 중심이라 필드 골프장 운영과 수익 구조가 다르다. 호텔·레저 업종의 강원랜드와 GKL은 카지노·리조트 중심이라 내장객 기반의 골프장 운영과 수요 구조가 다르다. 업황 판단에서 핵심 변수는 회사가 공시하는 내장고객 추이다. 골프 수요 회복 기대와 내장객 감소 공시가 엇갈리는 만큼, 업황 신호가 회사 실적으로 이어지는지가 관건이다.\", \"en\": \"Demand for golf course operators depends on domestic rounds and the choice between domestic and overseas golf, according to the company's own explanation. The company cited growing overseas golf activity in its 2024 results commentary and the rise of park golf in its Q1 2026 business summary as reasons for fewer visitors. A market report from late July 2026 said rising golf course usage and expectations for a leisure recovery were supporting investor sentiment. An August 2026 brand reputation survey of listed leisure companies found that big-data brand metrics for the group as a whole declined. In the same survey, Namhwa Industrial was reported in the 11th to 15th place range. Golfzon focuses on screen golf, so its revenue model differs from field-based golf course operation. Kangwon Land and Grand Korea Leisure (GKL) are centered on casinos and resorts, so their demand drivers differ from visitor-based golf course operations. For the industry view, the key variable is the visitor trend the company discloses. Because recovery expectations and the visitor declines in company filings point in different directions, whether the industry signal reaches the company's results is the central question.\"}}\n===JSON_END===",
+   "model": "claude-sonnet-5-5",
+   "stop_reason": "end_turn"
+  },
+  "065650-b6d80d2b995b9ff4137b72b6": {
+   "text": "===JSON_START===\n{\"outlook\": {\"ko\": \"회사의 사업 확장 방향은 2026년 3월 정관 변경으로 먼저 드러난다. 광고대행, 라이브커머스, MCN, OEM·ODM이 사업목적에 추가됐으며, 이는 유통 중심에서 콘텐츠와 마케팅 영역으로 넓히려는 신호로 읽힌다. 숏폼 드라마 콘텐츠 제작과 커머스를 연결하는 통합 플랫폼, 글로벌 파트너십 확대도 함께 추진 과제로 꼽힌다. 바이오 쪽에서는 신약과 진단기기 중심으로 파이프라인을 넓히며 상업화에 착수했다고 회사가 밝힌 바 있다(이데일리 보도). 진단키트 QPLEX Alz Plus는 식약처 허가를 받아 판매 중이지만, 신약 파이프라인의 상업화 일정은 공시된 수치로 확인되지 않는다. 자금 측면에서는 데일리연합 보도에 따르면 누적 전환사채 발행 결정이 705억원이며 기말현금 대비 386.8%이고, 단일 회차의 최대 잠재희석률은 44.69%다. 2026년 6~11월 사이 유상증자 결정·정정·철회와 임시주주총회 소집·정정 공시가 반복됐다. 2026년 3월 불성실공시법인 지정이 예고된 것도 유상증자 발행주식 수와 발행금액이 20% 이상 바뀐 데 따른 것이다. 다음 확인 지점은 전환·유상증자가 실제로 실행되는지와 그에 따른 주식 수 변화다.\", \"en\": \"The direction of expansion first appeared in the March 2026 articles of incorporation changes, which added advertising agency work, live commerce, MCN and OEM and ODM manufacturing to the business purposes. This points to a move from distribution toward content and marketing. Short-form drama production, a commerce-linked platform and wider global partnerships are also listed as initiatives. On the bio side, the company has said it has begun commercialization focused on new drugs and diagnostic devices, as reported by Edaily. The QPLEX Alz Plus diagnostic kit is approved by the MFDS and on sale, but commercialization timing for the drug pipeline is not confirmed by filed figures. On funding, a Daily Yonhap report says cumulative convertible bond issuance decisions total KRW 70.5 billion, equal to 386.8% of year-end cash, and the largest single-tranche potential dilution is 44.69%. Rights offering decisions, corrections and withdrawals, along with extraordinary shareholder meeting notices and corrections, were repeated between June and November 2026. A designation as an unfaithful disclosure company was flagged in March 2026 because the number and value of shares in a rights offering changed by 20% or more. The next checkpoints are whether the conversions and rights offerings are executed and how the share count changes.\"}}\n===JSON_END===",
+   "model": "claude-sonnet-5-5",
+   "stop_reason": "end_turn"
+  }
+ },
+ "usage_repair": {
+  "claude-sonnet-5-5": {
+   "n": 6,
+   "in": 22523,
+   "cache_w": 0,
+   "cache_r": 0,
+   "out": 8305,
+   "search": 0,
+   "usd": 0.064048
+  }
+ },
+ "repairs": [
+  "msgbatch_01S4bZmWiusBAstitADRqkXH"
  ],
  "repair": {
-  "batch_id": "msgbatch_01S4bZmWiusBAstitADRqkXH",
-  "created": "2026-11-15 01:57",
+  "batch_id": "msgbatch_01VeQj6DRwEivNWXy5mMAMm1",
+  "created": "2026-11-15 03:57",
   "keys": [
-   "023150-e1a87524380e710401d9d707",
-   "065650-b6d80d2b995b9ff4137b72b6",
-   "256630-2e5e7c6e3f83e2d1a6553fcd",
-   "111710-85e72cb0320ef9895a67ead4",
-   "081150-d2b09dc3258e269686a213e0",
-   "054780-f7cb248794e43d837807ded6"
+   "081150-4455ecf5894f889732f4e5b3"
   ]
- },
- "result": {
-  "ok": 1,
-  "fail": 0
  }
 }
