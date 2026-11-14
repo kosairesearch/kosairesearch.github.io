@@ -1,220 +1,220 @@
 {
  "title": {
-  "ko": "손익 개선 vs 신뢰성 논란, 갈림길의 배터리 진단주",
-  "en": "Mintech: Margin Recovery Meets Credibility Questions"
+  "ko": "매출 급감 속 적자 폭 축소, 수주와 제도가 변수",
+  "en": "Sales Fall Sharply as Losses Narrow; Orders and Rules Are the Test"
  },
  "lead": {
-  "ko": "2025년 순손실이 크게 줄고 2026년 1분기 매출과 손익이 개선됐지만, IPO 당시 매출 전망과 실제 실적 간 괴리, 3분기 편중형 매출 구조는 여전히 해소되지 않았다.",
-  "en": "Net losses narrowed sharply in 2025 and both revenue and margins improved in the first quarter of 2026, yet the gap between Mintech's original IPO revenue projections and actual results, along with its third-quarter-concentrated revenue pattern, remains unresolved."
+  "ko": "민테크는 2026년 3분기 매출이 8.4억원으로 줄었지만 영업손실은 2026년 2분기와 3분기에 연속으로 축소됐으며, 수주와 배터리 검사 제도 확대가 실적 회복의 핵심 변수로 남아 있다.",
+  "en": "Mintech's third-quarter 2026 sales fell to KRW 844 million, yet operating losses narrowed in both the second and third quarters, leaving orders and battery inspection rules as the key variables."
  },
  "keypoints": [
   {
-   "ko": "2025년 매출 210억원으로 전년과 유사한 수준을 유지했으나, 영업손실은 88억원으로 전년 110억원 대비 축소됐다.",
-   "en": "2025 revenue held near prior-year levels at KRW 21.0 billion, while the operating loss narrowed to KRW 8.8 billion from KRW 11.0 billion a year earlier."
+   "ko": "2025년 연간 매출은 210억원으로 2024년에 이어 2년 연속 증가했고, 영업손실은 88억원으로 전년 110억원보다 줄었다.",
+   "en": "Annual sales reached KRW 21 billion in 2025, rising for a second straight year, while the operating loss narrowed to KRW 8.8 billion from KRW 11 billion."
   },
   {
-   "ko": "지배주주 순손실은 2024년 145억원에서 2025년 25억원으로 크게 줄었으나, 영업활동현금흐름은 3년 연속 마이너스를 이어갔다.",
-   "en": "Net loss attributable to owners shrank from KRW 14.5 billion in 2024 to KRW 2.5 billion in 2025, but operating cash flow stayed negative for a third straight year."
+   "ko": "2026년 3분기 매출은 8.4억원으로 전년 동기 대비 91.9% 감소했고, 2025년 4분기부터 매출은 4개 분기 연속 줄었다.",
+   "en": "Third-quarter 2026 sales were KRW 844 million, down 91.9% from a year earlier, and have declined for four straight quarters since the fourth quarter of 2025."
   },
   {
-   "ko": "2026년 1분기 별도기준 매출은 전년 동기 대비 63.1% 증가했고 영업손실과 순손실도 각각 35.9%, 34.0% 축소됐다.",
-   "en": "In the first quarter of 2026, standalone revenue rose 63.1% year over year, while the operating loss and net loss narrowed 35.9% and 34.0%, respectively."
+   "ko": "영업손실은 2026년 1분기 26.8억원에서 2분기 19.9억원, 3분기 16.2억원으로 줄었고, 3분기 지배주주 순이익은 3,388만원으로 흑자 전환했다.",
+   "en": "The operating loss shrank from KRW 2.68 billion in the first quarter of 2026 to KRW 1.99 billion and then KRW 1.62 billion, and third-quarter owner net income turned to a KRW 33.88 million profit."
   },
   {
-   "ko": "국토교통부가 예고한 전기차 배터리 탈거 전 성능검사 의무화(2027년)와 폐배터리 재사용 검사제도가 회사의 진단 수요 확대 논리를 뒷받침한다.",
-   "en": "The Ministry of Land, Infrastructure and Transport's planned mandate for pre-removal EV battery performance inspection in 2027, along with used-battery reuse inspection rules, underpins the company's diagnostic-demand growth thesis."
+   "ko": "2026년 5월 공시된 108억 7,000만원 규모 반도체모듈 자동검사장비 공급계약은 2025년 매출액 대비 51.72%에 해당하는 규모다.",
+   "en": "A KRW 10.87 billion semiconductor module inspection equipment contract disclosed in May 2026 equals 51.72% of 2025 sales."
   },
   {
-   "ko": "2024년 IPO 당시 제시한 매출 전망치와 실제 실적 간 큰 괴리가 있었다는 점, 그리고 매출이 3분기에 집중되는 계절성은 실적 예측 신뢰도에 대한 의문을 남긴다.",
-   "en": "A large gap between the revenue projections presented at the 2024 IPO and actual results, plus a seasonality pattern where revenue concentrates in the third quarter, leaves questions about earnings predictability."
+   "ko": "폐배터리 재사용 검사 제도 시행으로 진단 수요가 늘고 있으며, 2026년 1분기 별도 매출은 전년 동기 대비 63.1% 증가했다.",
+   "en": "Mandatory safety inspections for reused batteries are lifting diagnostic demand, and standalone sales in the first quarter of 2026 rose 63.1% from a year earlier."
   }
  ],
  "business": {
-  "ko": "민테크는 2015년 설립돼 전기화학 임피던스 분광법(EIS)을 기반으로 이차전지 진단기술을 상용화한 국내 유일의 이차전지 진단기술 및 장비 전문기업이다. 주요 제품은 배터리 성능 진단 솔루션, 충방전 검사장비, 재사용 ESS 진단시스템 세 갈래로 구성되며, KB증권이 2025년 12월 리포트에서 제시한 최근 3년 평균 매출 비중은 각각 56%, 36%, 10%였다. 2023년 기준으로는 배터리 진단시스템이 69.3%, 배터리시스템이 14.2%, 충방전 검사장비가 11.5%를 차지해 특정 연도별로 제품 비중 변동이 큰 편이다. 진단 수요는 배터리의 제조, 사용 중, 사용 후 세 단계에서 발생하는데, 현재까지는 사용 후 배터리 관련 B2G(정부·공공기관 대상) 매출이 중심이었고 제조 단계는 파일럿 라인 소액 수주 위주였다. 주요 고객사로는 현대자동차, LG에너지솔루션, 삼성SDI, SK온 등 국내 전기차·배터리 대기업이 있으며, LG에너지솔루션과 GS에너지가 각각 지분을 보유한 주요 주주로 참여하고 있다. 최근에는 전고체 배터리용 실시간 가압 EIS 검사기를 개발해 제조공정 단계 진입을 시도하고 있으며, 2026년 5월에는 검사 장비 사업에서 확보한 기술과 데이터를 소재 영역까지 확장하기 위한 전고체 배터리 소재 전문 자회사 설립을 추진했다. 경쟁구도에서는 EIS 기반 기술의 국내 상용화 선점 효과를 보유하고 있다는 평가가 있으나, 글로벌 기업들의 시장 진입 확대라는 경쟁 심화 변수도 함께 존재한다.",
-  "en": "Founded in 2015, Mintech is Korea's sole specialized battery diagnostic technology and equipment company to commercialize electrochemical impedance spectroscopy (EIS) based diagnostics. Its product lineup spans three areas: battery performance diagnostic solutions, charge-discharge inspection equipment, and reused ESS diagnostic systems, with KB Securities' December 2025 report citing a three-year average revenue mix of 56%, 36%, and 10%, respectively. In 2023, the mix was skewed differently, with diagnostic systems at 69.3%, battery systems at 14.2%, and inspection equipment at 11.5%, indicating meaningful year-to-year variation in product contribution. Diagnostic demand arises across three battery life-cycle stages—manufacturing, in-use, and post-use—and to date revenue has centered on post-use, business-to-government battery diagnostics, while manufacturing-stage business has consisted mainly of small pilot-line orders. Key customers include major domestic EV and battery makers such as Hyundai Motor, LG Energy Solution, Samsung SDI, and SK On, and LG Energy Solution and GS Energy hold equity stakes as key shareholders. The company has recently developed a real-time pressurized EIS inspection device for solid-state batteries to expand into the manufacturing stage, and in May 2026 pursued establishing a dedicated solid-state battery materials subsidiary to extend its inspection technology and data assets into the materials domain. In terms of competitive positioning, Mintech is seen as an early mover in commercializing EIS-based technology domestically, though intensifying competition from global entrants remains a variable."
+  "ko": "민테크는 2015년 설립되어 2024년 5월 코스닥에 상장한 배터리 검사·진단 장비 기업이다. 핵심 기술은 전기화학 임피던스 분광법(EIS)으로, KB증권은 이 기술을 국내에서 유일하게 상용화한 기업이라고 평가했다. 주요 제품은 배터리 성능 진단 솔루션, 충방전 검사장비, 재사용 ESS이며, KB증권 집계로 최근 3년 평균 매출 비중은 진단 솔루션 56%, 충방전 검사장비 36%, 재사용 ESS 10%였다. 잡코리아 집계에서는 2026년 3월 기준 배터리 진단시스템이 54%, 충방전검사장비가 26%, 기타가 20%로 나타나 진단 솔루션의 비중이 가장 크다는 점은 두 집계에서 같다. KB증권은 2025년 리포트에서 현재까지 매출은 사용 후 배터리 관련 정부·공공 수요 중심으로 발생했고, 제조 단계 수주는 파일럿 라인 위주의 소액 계약이었다고 설명했다. 2024년 리포트에서는 미국과 유럽에서 증설되는 배터리 공정 수요를 겨냥해 LG에너지솔루션과 폭스바겐 PowerCo 등 셀 제조사로 고객을 넓히고 있다고 소개했다. 2026년 5월 공시된 반도체모듈 제조·검사 및 EIS 일체형 자동검사장비 공급계약은 108억 7,000만원 규모이며, 계약상대방은 경영상 비밀유지 요청에 따라 공시하지 않았다. 2025년 10월에는 국내 배터리사에 자체 개발한 전고체 배터리 공정 검사 장비를 공급했다고 KB증권이 밝혔다. KB증권은 3,000개 이상의 배터리를 대상으로 기술 검증을 마쳤다고 설명하며, 이 검증 실적을 수주 경쟁력의 근거로 제시했다.",
+  "en": "Mintech, founded in 2015 and listed on KOSDAQ in May 2024, makes battery inspection and diagnostic equipment. Its core technology is electrochemical impedance spectroscopy (EIS), which KB Securities described as the only commercialized version of the method in Korea. Main products are battery performance diagnosis solutions, charge-discharge test equipment and reused ESS. KB Securities put the three-year average revenue mix at 56% for diagnosis solutions, 36% for charge-discharge equipment and 10% for reused ESS. A Jobkorea compilation as of March 2026 showed battery diagnosis systems at 54%, charge-discharge equipment at 26% and other items at 20%, so diagnosis remains the largest category in both compilations. KB Securities said in a 2025 report that sales had mainly come from used-battery projects tied to public-sector demand, while manufacturing-stage orders were small pilot-line contracts. A 2024 KB Securities report said the company was widening its customer base to cell makers including LG Energy Solution and Volkswagen PowerCo as battery lines expanded in the United States and Europe. A semiconductor module inspection equipment contract worth KRW 10.87 billion, disclosed in May 2026, was signed with a counterparty the company did not name at the customer's request. KB Securities said the company supplied a solid-state battery process inspection tool it developed in-house to a domestic battery maker in October 2025. The same broker cited technology validation across more than 3,000 batteries as the basis for the company's competitive position in orders."
  },
  "earnings": {
-  "ko": "2025년 연간 매출은 210억 1,600만원으로 2024년 208억 5,900만원과 거의 동일한 수준에 머물렀다. 반면 영업손실은 2024년 109억 6,300만원에서 2025년 87억 9,900만원으로 축소되며 영업이익률이 -52.6%에서 -41.9%로 개선됐다. 지배주주 순손실은 2024년 144억 5,800만원에서 2025년 25억 1,400만원으로 큰 폭으로 줄었는데, 이는 분기별 흐름을 보면 3분기(2025Q3)에 매출 103억 6,000만원, 영업이익 1억 6,100만원, 지배주주 순이익 42억 5,800만원을 기록하며 유일하게 흑자를 낸 영향이 크다. 그러나 4분기(2025Q4)에는 매출이 88억 7,000만원으로 여전히 높았음에도 영업손실 13억 2,800만원, 순손실 18억 1,400만원으로 다시 적자 전환해 매출 규모와 손익이 반드시 비례하지 않는 구조를 보였다. 2026년 1분기 매출은 16억 1,500만원으로 2025년 1분기 9억 9,000만원 대비 늘었으나 영업손실 26억 7,800만원, 순손실 29억 600만원을 기록해 여전히 적자 상태다. 다만 FnGuide는 2026년 1분기 별도기준 매출이 전년 동기 대비 63.1% 늘고 영업손실과 순손실은 각각 35.9%, 34.0% 줄었다고 짚었으며, 배터리 진단시스템은 폐배터리 재사용을 위한 검사제도 시행으로 성능 및 안전 평가 수요가 증가해 매출이 확대됐다고 설명했다. 재무구조 측면에서는 부채비율이 2023년 173.4%에서 2024년 121.2%, 2025년 65.2%로 뚜렷하게 낮아졌으나, 영업활동현금흐름은 2023년 -34억원, 2024년 -98억원, 2025년 -47억원으로 3개 연도 모두 마이너스를 이어가며 손익 개선과 현금창출력 사이에 간극이 존재한다.",
-  "en": "Full-year 2025 revenue came in at KRW 21.02 billion, essentially flat versus KRW 20.86 billion in 2024. The operating loss, however, narrowed from KRW 10.96 billion in 2024 to KRW 8.80 billion in 2025, improving the operating margin from -52.6% to -41.9%. Net loss attributable to owners shrank sharply from KRW 14.46 billion in 2024 to KRW 2.51 billion in 2025, driven largely by the third quarter of 2025, when the company posted its only profitable quarter in the window—revenue of KRW 10.36 billion, operating profit of KRW 161 million, and owners' net income of KRW 4.26 billion. Yet in the fourth quarter of 2025, despite revenue remaining elevated at KRW 8.87 billion, the company swung back to an operating loss of KRW 1.33 billion and a net loss of KRW 1.81 billion, illustrating that revenue scale does not automatically translate into profitability. First-quarter 2026 revenue rose to KRW 1.61 billion from KRW 990 million in the same period a year earlier, but the quarter still posted an operating loss of KRW 2.68 billion and a net loss of KRW 2.91 billion. FnGuide noted that standalone-basis first-quarter 2026 revenue rose 63.1% year over year while the operating and net losses narrowed 35.9% and 34.0%, respectively, attributing the diagnostic system revenue growth to rising demand for performance and safety evaluation tied to the used-battery reuse inspection system. On the balance sheet, the debt ratio fell markedly from 173.4% in 2023 to 121.2% in 2024 and 65.2% in 2025, though operating cash flow remained negative across all three years—KRW -3.4 billion in 2023, KRW -9.8 billion in 2024, and KRW -4.7 billion in 2025—pointing to a gap between reported earnings improvement and actual cash generation."
+  "ko": "연간 매출은 2023년 175억원, 2024년 209억원(전년 대비 18.9% 증가), 2025년 210억원(전년 대비 0.8% 증가)으로 2024년부터 2025년까지 2년 연속 증가했으며, 2023~2025년 중 가장 큰 해는 2025년이다. 같은 기간 영업손실은 2023년 66억원, 2024년 110억원, 2025년 88억원으로 3년 연속 적자였고, 2024년에는 적자 폭이 확대됐다가 2025년에는 축소됐다. KB증권은 2024년 적자 확대의 원인으로 R&D 비용과 감가상각비 증가를 꼽았다. 영업이익률은 2023년 -37.6%, 2024년 -52.6%, 2025년 -41.9%로 나타났다. 지배주주 순손실은 2023년 85억원, 2024년 145억원, 2025년 25.1억원이었고, 당기순이익(비지배지분 포함)도 같은 해 순손실 85억원, 145억원, 25.1억원으로 같은 방향을 보였다. 부채비율은 2023년 173.4%, 2024년 121.2%, 2025년 65.2%로 낮아졌으며, 2025년 말 자본총계는 338억원, 부채총계는 220억원이다. 영업활동 현금흐름은 2023년 -34억원, 2024년 -97.6억원, 2025년 -47.1억원으로 3년 모두 유출이었다. 분기로 보면 2025년 3분기 매출은 104억원, 영업이익은 1.6억원, 지배주주 순이익은 42.6억원이었으며, KB증권은 이를 매출이 3분기에 몰린 효과로 해석했다. 2025년 4분기 매출은 88.7억원으로 전 분기 대비 14.4% 감소했고 영업손실 13.3억원으로 적자 전환됐다. 2026년 1분기 매출은 16.1억원(전 분기 대비 81.8% 감소), 영업손실은 26.8억원, 지배주주 순손실은 29.1억원이었고, 2026년 2분기 매출은 15.4억원, 영업손실은 19.9억원, 지배주주 순손실은 21.9억원이었다. 2026년 3분기 매출은 8.4억원으로 전년 동기 대비 91.9% 감소했고, 영업손실은 16.2억원으로 전년 동기 흑자에서 적자로 돌아섰으며, 지배주주 순이익은 3,388만원이었다. 최근 4개 분기 지배주주 순손실 합계는 68.8억원이다.",
+  "en": "Annual sales were KRW 17.5 billion in 2023, KRW 20.9 billion in 2024 (up 18.9% year on year) and KRW 21 billion in 2025 (up 0.8%), rising for two straight years from 2024 through 2025, with 2025 the largest year of the three. Operating losses were KRW 6.6 billion in 2023, KRW 11 billion in 2024 and KRW 8.8 billion in 2025, a loss in each of the three years; the loss widened in 2024 and narrowed in 2025. KB Securities attributed the 2024 widening to higher R&D and depreciation costs. The operating margin was -37.6% in 2023, -52.6% in 2024 and -41.9% in 2025. Owner net losses were KRW 8.5 billion, KRW 14.5 billion and KRW 2.51 billion in the same years, and net income including non-controlling interests moved in the same direction. The debt ratio fell from 173.4% in 2023 to 121.2% in 2024 and 65.2% in 2025, when total equity was KRW 33.8 billion and total liabilities were KRW 22 billion. Operating cash flow was -KRW 3.4 billion in 2023, -KRW 9.76 billion in 2024 and -KRW 4.71 billion in 2025, an outflow in all three years. In the third quarter of 2025, sales were KRW 10.4 billion, operating profit KRW 161 million and owner net income KRW 4.26 billion; KB Securities read this as sales concentrating in that quarter. Fourth-quarter 2025 sales were KRW 8.87 billion, down 14.4% from the prior quarter, and the company swung to an operating loss of KRW 1.33 billion. First-quarter 2026 sales were KRW 1.61 billion (down 81.8% quarter on quarter), with an operating loss of KRW 2.68 billion and an owner net loss of KRW 2.91 billion. Second-quarter 2026 sales were KRW 1.54 billion, with an operating loss of KRW 1.99 billion and an owner net loss of KRW 2.19 billion. Third-quarter 2026 sales were KRW 844 million, down 91.9% from a year earlier; the operating loss of KRW 1.62 billion was a swing from a year-earlier profit, and owner net income was KRW 33.88 million. Owner net losses over the latest four quarters totaled KRW 6.88 billion."
  },
  "industry": {
-  "ko": "배터리 진단·검사 시장은 전기차 및 ESS 배터리의 제조, 사용 중, 사용 후 단계 전반에서 안전성과 성능 평가 수요가 발생하는 구조로, 그동안 민테크의 매출은 사용 후 단계의 B2G 계약에 상당히 의존해왔다. KB증권은 2025년 12월 리포트에서 리스크 요인으로 전방 산업 및 정치·제도 의존도를 지목하며 전방 회복과 제도 확립이 함께 이뤄져야 실적 가시화가 가능하다고 평가했다. 실제로 2024년 IPO 실사 당시와 현재 사이 이차전지 업계 전반의 설비투자가 위축된 이른바 '케즘' 국면이 있었다는 설명이 KB증권 IPO 실무부서를 통해 제기된 바 있다. 정책적으로는 국토교통부가 예고한 전기차 배터리 탈거 전 성능검사 의무화가 2027년 시행을 목표로 하고 있어, 사용 후 배터리 검사 수요의 제도적 뒷받침이 될 수 있는 변수로 꼽힌다. 경쟁구도 측면에서 민테크는 EIS 기반 기술을 국내에서 유일하게 상용화한 기업으로 평가되지만, 전고체 배터리 등 차세대 배터리로의 전환 과정에서 글로벌 검사장비 업체들의 시장 진입도 함께 거세지고 있다. 전기차 판매 회복 속도와 배터리 제조사들의 검사·진단 투자 재개 시점이 업종 전반의 사이클 반등 여부를 가를 핵심 변수로 남아있다.",
-  "en": "The battery diagnostic and inspection market is structured around safety and performance evaluation needs across the manufacturing, in-use, and post-use stages of EV and ESS batteries, and Mintech's revenue has historically depended heavily on business-to-government contracts in the post-use segment. In its December 2025 report, KB Securities flagged dependence on downstream industry recovery and policy or institutional conditions as a key risk factor, noting that earnings visibility requires both downstream recovery and institutional frameworks to be established. Indeed, KB Securities' IPO working team explained that a so-called chasm period of reduced capital spending across the secondary battery industry emerged between the time of IPO due diligence and the present. On the policy front, the Ministry of Land, Infrastructure and Transport's planned mandate for pre-removal EV battery performance inspection is targeted for 2027 implementation, a variable that could provide institutional support for post-use battery inspection demand. Competitively, Mintech is regarded as the sole domestic company to have commercialized EIS-based technology, but competition is intensifying as global inspection equipment makers enter the market alongside the industry's transition toward next-generation batteries such as solid-state cells. The pace of EV sales recovery and the timing of battery makers resuming inspection and diagnostic investment remain the key variables determining whether the broader industry cycle turns."
+  "ko": "배터리 진단 수요는 사용 후 배터리 재사용 단계에서 먼저 발생했고, 2024년부터 배터리 안전이 주요 화두로 떠오르면서 진단 제도가 강화되는 흐름이다. 폐배터리 재사용을 위한 검사 제도 시행으로 성능과 안전 평가 수요가 늘었다는 설명이 2026년 1분기 실적 해석에서도 반복되고 있다. 업계에서는 전기차 판매 증가와 재사용 배터리 안전성 검사 제도 시행으로 진단 시장이 성장할 것으로 보고 있다. 사용 중 배터리 단계로의 진단 시장 확장은 KB증권이 기회로 제시한 영역이지만, 제도가 실제로 어떤 속도로 시행되는지가 관건이다. 셀 제조 공정의 진단 수요는 미국과 유럽의 배터리 증설 공정에서 발생한다는 것이 KB증권의 설명이다. 국내에서 EIS 기반 진단을 상용화한 기업은 드물어 기술 장벽이 높다는 평가가 있으며, KB증권은 기존 충방전 진단법보다 시간과 비용 면에서 효율적이라고 설명했다. 민테크는 반도체모듈 검사장비처럼 배터리 외 영역으로 장비 수요를 넓히고 있지만 여전히 배터리 전방 산업에 대한 의존도가 높다. 전기장비 업종의 대형주인 LS ELECTRIC이나 HD현대일렉트릭과 달리 민테크는 배터리 검사 장비에 집중된 구조라서 업종 평균 지표를 그대로 적용하기 어렵다.",
+  "en": "Demand for battery diagnostics first arose in the reuse stage of used batteries, and since 2024 battery safety has become a central issue, strengthening diagnostic rules. The introduction of inspection rules for reused batteries has raised demand for performance and safety assessment, a point that recurs in the company's first-quarter 2026 results. Industry commentary expects the diagnostics market to grow as electric vehicle sales rise and safety inspections for reused batteries take effect. KB Securities sees expansion into in-use battery diagnostics as an opportunity, but the pace at which the rules are implemented will determine how fast that happens. KB Securities said diagnostic demand in cell manufacturing arises from battery lines expanding in the United States and Europe. Few Korean companies have commercialized EIS-based diagnostics, and KB Securities said the method is more time- and cost-efficient than conventional charge-discharge testing, with a high technical barrier. Mintech is extending equipment demand beyond batteries, as the semiconductor module contract shows, but its dependence on battery customers remains high. Unlike large-cap electrical equipment peers such as LS ELECTRIC and HD Hyundai Electric, Mintech is concentrated in battery test equipment, so sector averages are not a direct benchmark."
  },
  "outlook": {
-  "ko": "민테크는 2026년 3월 인터배터리 2026에 참가해 전고체 배터리용 실시간 가압 EIS 검사기, 전기차 사용 후 배터리 안전점검 및 재제조 배터리 순환 기술, 충방전기 일체형 올인원 배터리 검사장비를 공개했다. 회사는 국토교통부가 예고한 2027년 시행 목표의 전기차 배터리 탈거 전 성능검사 의무화에 대응해 사용 후 배터리 성능검사와 안전점검 기술을 함께 준비하고 있다고 밝혔다. 2026년 2월에는 한국전기안전공사(KESCO)와 중대형 배터리 ESS 팩·모듈의 상태 및 안전성 진단평가 시스템을 공급·구축하는 계약을 체결해 공공 부문 레퍼런스를 확대했다. 홍영진 대표는 전고체 배터리 실시간 가압 검사기를 비롯한 제조공정 단계별 검사 장비 개발이 진행 중이라고 밝혔으며, 2026년 5월에는 검사 장비 사업의 기술·데이터 축적을 소재 영역까지 확장하기 위한 전고체 배터리 소재 전문 자회사 설립을 추진했다. 과거 공시 기준으로 회사는 2024~2026년 3개년에 걸쳐 배터리 검사·진단 관련 설비에 순차적으로 투자할 계획을 제시한 바 있어, 생산 및 테스트 역량 확충이 이어지고 있음을 시사한다. 또한 배터리 상태 추정 관련 특허를 중국에서 취득하는 등 해외 지재권 확보를 지속하며, 중국을 포함한 글로벌 시장 진출을 매출 확대 경로로 제시하고 있다.",
-  "en": "Mintech participated in InterBattery 2026 in March, unveiling a real-time pressurized EIS inspection device for solid-state batteries, safety inspection and remanufactured battery circulation technology for used EV batteries, and an all-in-one charge-discharge inspection device. The company stated it is preparing used-battery performance and safety inspection technology in response to the Ministry of Land, Infrastructure and Transport's planned mandate for pre-removal EV battery performance inspection, targeted for 2027. In February 2026, it signed a contract with the Korea Electrical Safety Corporation (KESCO) to supply and build a condition and safety diagnostic evaluation system for large-format battery ESS packs and modules, expanding its public-sector reference base. CEO Hong Young-jin stated that development of manufacturing-stage inspection equipment, including a real-time pressurized inspection device for solid-state batteries, is underway, and in May 2026 the company pursued establishing a dedicated solid-state battery materials subsidiary to extend its inspection-derived technology and data into the materials domain. Based on earlier disclosures, the company had laid out a phased three-year capital investment plan for battery inspection and diagnostic facilities spanning 2024 through 2026, suggesting continued expansion of production and test capacity. It has also continued securing overseas intellectual property, including a battery-state-estimation patent obtained in China, positioning global market entry including China as a revenue growth path."
+  "ko": "2024년 4월 상장을 앞두고 회사가 제시한 2026년 매출 목표는 1,055억원이었다(전자신문 보도). 2025년 매출은 210억원이었고 2026년 1분기부터 3분기까지 분기 매출은 16.1억원, 15.4억원, 8.4억원으로 나타나 목표와의 격차가 크다. 2024년 보도에서 회사는 2026년 배터리 검사·진단 관련 설비에 114억원을 쓸 계획이라고 밝혔다. 2026년 5월 공시된 반도체모듈 검사장비 공급계약의 본계약은 국내 자체 생산 방식으로 약 2년 6개월간 진행된다고 보도됐다. 이 계약이 어느 분기부터 매출로 반영되는지가 2027년 이후 실적에서 확인할 지점이다. KB증권은 2024년 리포트에서 사용 중 배터리 진단 시장을 기회 영역으로 꼽았고, 이 확장이 실제 수주로 이어지는지가 다음 과제다. 배터리 셀 제조사의 증설 일정과 정부 검사 제도의 세부 시행 시점이 수주 규모를 좌우한다. 2026년 3분기까지 영업손실이 줄어드는 흐름이 이어지는지, 그리고 매출 감소가 멈추는지가 다음 실적에서 함께 확인할 지점이다.",
+  "en": "Before its 2024 listing, the company set a 2026 sales target of KRW 1.055 billion, according to an Electronic Times report. Sales were KRW 21 billion in 2025, and quarterly sales in the first three quarters of 2026 were KRW 1.61 billion, KRW 1.54 billion and KRW 844 million, a wide gap from that target. A 2024 report quoted the company as planning to spend KRW 11.4 billion on battery inspection and diagnostic facilities in 2026. The main contract for the semiconductor module inspection equipment disclosed in May 2026 was reported to run for about 2.5 years on an in-house production basis. When that contract starts to show up in reported sales is a checkpoint for results after 2027. KB Securities cited in-use battery diagnostics as an opportunity in its 2024 report, and whether that expansion turns into orders is the next test. Cell makers' capacity schedules and the timing of government inspection rules will shape order volume. Whether operating losses keep narrowing and whether sales stop declining will be the next points to confirm in reported results."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 회사의 주당순자산 대비 일정한 프리미엄이 반영된 구간에서 거래되고 있으며, 이는 과거 상장 이후 형성된 거래 밴드 안에서 움직이는 모습이다. 회사가 여전히 순손실 상태에 있어 통상적인 이익 기준 밸류에이션 지표를 적용하기 어려운 구간이 이어지고 있으며, 이 때문에 시장의 관심은 매출 성장성과 손익 개선 속도, 그리고 향후 제도 변화에 따른 수요 확대 가능성에 집중되는 경향이 있다. 배당은 현재까지 지급 실적이 없어 배당 관련 지표는 업종 평균 대비 낮은 수준에 머물러 있다. 부채비율이 최근 3개년 연속 하락하며 재무구조가 개선된 점은 자본시장에서 긍정적으로 해석될 수 있는 요소지만, 영업활동현금흐름이 여전히 음수라는 점은 손익 개선의 질적 측면에서 함께 살펴볼 필요가 있는 부분이다. 투자경고종목에서 해제되어 투자주의종목으로 전환된 이력이 있다는 점은 최근까지 주가 변동성이 상당했음을 보여주는 사실이며, 이러한 수급 이력도 밸류에이션 해석에 참고할 요소다.",
-  "en": "The current share price trades at a level reflecting a certain premium over the company's net asset value per share, moving within the trading band that has formed since listing. Because the company remains in a net loss position, conventional earnings-based valuation metrics are difficult to apply, and market attention tends to focus instead on revenue growth momentum, the pace of profitability improvement, and potential demand expansion tied to future regulatory changes. Dividend-related metrics remain below the industry average given the absence of any dividend payment history to date. The consecutive three-year decline in the debt ratio, reflecting an improved capital structure, could be viewed constructively by the market, but the continued negative operating cash flow warrants scrutiny of the qualitative nature of the earnings improvement. The stock's history of being lifted from investment-warning status to investment-caution status is a fact indicating substantial recent price volatility, and this supply-demand history is also relevant context for valuation interpretation."
+  "ko": "주가수익비율(PER)은 최근 4개 분기 지배주주 순손실 구조 때문에 산출되지 않는 상태다. 주가순자산비율(PBR)은 순자산 가치 근처의 구간에서 형성돼 있어 자본총계 대비 프리미엄이 크지 않은 편이다. 과거 PER 밴드와 비교하면 현재는 이익 기반 지표를 적용할 수 없는 적자 구간이라 밴드 자체를 대입하기 어렵다. 배당수익률은 업종 평균을 밑도는 편이다. 2026년 3분기 지배주주 순이익이 흑자로 돌아섰지만 최근 4개 분기 누적은 여전히 순손실이어서 이익 기준의 비교는 아직 제한적이다. 2026년 4월 김호기 전무가 주식매수청구권을 행사해 보유 주식이 늘었다고 공시했다. 밸류에이션 해석의 핵심은 자본총계 338억원이 얼마나 빠르게 이익으로 바뀌는지에 놓여 있다.",
+  "en": "The price-to-earnings ratio cannot be calculated because the company has posted owner net losses over the latest four quarters. The price-to-book ratio sits near net asset value, so the premium over book equity is not large. Compared with the past PER band, the current figure falls in a loss-making range where earnings-based bands cannot be applied directly. The dividend yield is below the sector average. Owner net income turned to a profit in the third quarter of 2026, but the four-quarter cumulative result is still a net loss, which limits earnings-based comparison. In April 2026 Kim Ho-gi, an executive director, reported that his holdings rose after exercising appraisal rights. The key to valuation is how quickly the KRW 33.8 billion in total equity converts into earnings."
  },
  "bull": [
   {
    "title": {
-    "ko": "순손실 축소와 재무구조 개선",
-    "en": "Narrowing Net Loss and Improved Capital Structure"
+    "ko": "제도 기반 수요 확대",
+    "en": "Demand Backed by Rules"
    },
    "body": {
-    "ko": "2025년 지배주주 순손실이 25억원으로 2024년 145억원 대비 크게 줄었고, 부채비율도 2023년 173.4%에서 2025년 65.2%로 3개년 연속 하락했다. 2026년 1분기에도 매출이 전년 동기 대비 늘고 영업손실·순손실 폭이 함께 축소되는 흐름이 이어졌다. 손익과 재무구조 양면에서 개선 방향성이 확인되고 있다.",
-    "en": "Owners' net loss narrowed to KRW 2.5 billion in 2025 from KRW 14.5 billion in 2024, and the debt ratio fell for three consecutive years from 173.4% in 2023 to 65.2% in 2025. In the first quarter of 2026, revenue grew year over year while both the operating and net losses narrowed further. Improvement is evident on both the earnings and balance-sheet fronts."
+    "ko": "폐배터리 재사용 검사 제도가 시행되면서 진단 수요가 늘고 있다. 2026년 1분기 별도 매출은 전년 동기 대비 63.1% 증가했다. KB증권은 사용 중 배터리 진단 시장으로 영역을 넓힐 여지가 있다고 평가했다.",
+    "en": "Inspection rules for reused batteries are lifting diagnostic demand. Standalone sales in the first quarter of 2026 rose 63.1% from a year earlier. KB Securities sees room to expand into in-use battery diagnostics."
    }
   },
   {
    "title": {
-    "ko": "제도적 수요 확대 가능성",
-    "en": "Potential Regulatory Demand Expansion"
+    "ko": "대형 수주와 사업 범위 확장",
+    "en": "Large Order and Wider Scope"
    },
    "body": {
-    "ko": "국토교통부가 예고한 전기차 배터리 탈거 전 성능검사 의무화가 2027년 시행을 목표로 하고 있어, 사용 후 배터리 검사 수요의 제도적 뒷받침이 될 수 있다. FnGuide는 폐배터리 재사용을 위한 검사제도 시행이 실제로 진단시스템 매출 확대에 기여했다고 짚었다. 한국전기안전공사와의 ESS 진단평가 시스템 공급 계약 등 공공 부문 레퍼런스도 축적되고 있다.",
-    "en": "The Ministry of Land, Infrastructure and Transport's planned mandate for pre-removal EV battery performance inspection, targeted for 2027, could provide institutional backing for used-battery inspection demand. FnGuide noted that the implementation of a used-battery reuse inspection system has already contributed to diagnostic system revenue growth. Public-sector references are also accumulating, including a supply contract for an ESS diagnostic evaluation system with the Korea Electrical Safety Corporation."
+    "ko": "2026년 5월 공시된 108억 7,000만원 규모 반도체모듈 자동검사장비 공급계약은 2025년 매출액의 51.72%에 해당한다. 공급 기간이 약 2년 6개월로 길어 매출 가시성 측면에서 의미가 있다. 배터리 외 반도체 검사장비로 수요처를 넓힌 사례다.",
+    "en": "A KRW 10.87 billion semiconductor module inspection contract disclosed in May 2026 equals 51.72% of 2025 sales. Its roughly two-and-a-half-year term adds revenue visibility. It is an example of extending demand beyond batteries into semiconductor inspection equipment."
    }
   },
   {
    "title": {
-    "ko": "신사업 확장(전고체·소재)",
-    "en": "New Business Expansion into Solid-State and Materials"
+    "ko": "영업손실 축소와 분기 흑자",
+    "en": "Narrower Losses and a Quarterly Profit"
    },
    "body": {
-    "ko": "전고체 배터리용 실시간 가압 EIS 검사기를 개발해 제조공정 단계로 사업 영역을 넓히고 있으며, 2026년 5월에는 전고체 배터리 소재 전문 자회사 설립을 추진했다. 검사 장비 사업에서 쌓은 데이터와 기술을 소재 영역까지 확장하려는 전략이다. 중국에서 배터리 상태 추정 관련 특허를 취득하며 해외 지재권도 강화하고 있다.",
-    "en": "The company has developed a real-time pressurized EIS inspection device for solid-state batteries to expand into the manufacturing stage, and in May 2026 pursued establishing a dedicated solid-state battery materials subsidiary. The strategy aims to extend data and technology accumulated in the inspection equipment business into the materials domain. It has also strengthened overseas intellectual property, including a battery-state-estimation patent obtained in China."
+    "ko": "영업손실은 2026년 1분기 26.8억원에서 2분기 19.9억원, 3분기 16.2억원으로 두 분기 연속 줄었다. 2026년 3분기 지배주주 순이익은 3,388만원으로 흑자 전환했다. 2025년 연간 영업손실도 전년 대비 축소됐다.",
+    "en": "The operating loss narrowed from KRW 2.68 billion in the first quarter of 2026 to KRW 1.99 billion and then KRW 1.62 billion. Third-quarter owner net income turned to a KRW 33.88 million profit. The 2025 annual operating loss also narrowed from the prior year."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "실적 예측 신뢰성 논란",
-    "en": "Earnings Forecast Credibility Concerns"
+    "ko": "매출 연속 감소",
+    "en": "Sales Decline for Consecutive Quarters"
    },
    "body": {
-    "ko": "2024년 IPO 투자설명서에서 제시한 매출 예상치 대비 실제 매출이 절반 수준에 그쳤고, 배터리 진단시스템 매출은 전년 대비 54.5% 급감했다는 보도가 있었다. 수주가능성 '높음'으로 기재된 매출조차 상당수가 실제 매출로 이어지지 않았다는 지적도 있었다. 이러한 과거 이력은 향후 가이던스에 대한 신중한 접근을 요구한다.",
-    "en": "Reports indicated that actual 2024 revenue came in at roughly half of the projection presented in the 2024 IPO prospectus, with diagnostic system revenue plunging 54.5% year over year. It was also noted that a substantial portion of revenue listed as having a 'high' order probability failed to materialize as actual revenue. This history warrants a cautious approach to future guidance."
+    "ko": "2026년 3분기 매출은 8.4억원으로 전년 동기 대비 91.9% 감소했다. 2025년 4분기부터 4개 분기 연속 줄어 매출 기반이 약해진 상태다. 2024년 상장 무렵 제시한 2026년 매출 목표 1,055억원과의 차이가 크다.",
+    "en": "Third-quarter 2026 sales were KRW 844 million, down 91.9% from a year earlier. Sales have fallen for four straight quarters since the fourth quarter of 2025, weakening the revenue base. The gap from the 2026 sales target of KRW 1.055 billion set before the listing is wide."
    }
   },
   {
    "title": {
-    "ko": "3분기 편중형 매출 구조",
-    "en": "Third-Quarter-Concentrated Revenue Pattern"
+    "ko": "3년 연속 적자와 고정비 부담",
+    "en": "Three Years of Losses and Fixed-Cost Pressure"
    },
    "body": {
-    "ko": "2025년 분기별 실적을 보면 3분기 매출이 103억원으로 유일하게 흑자를 견인했으나, 매출 규모가 비슷했던 4분기에는 다시 영업손실과 순손실로 돌아섰다. 1·2분기는 매출과 손익 모두 부진한 흐름을 보였다. 이는 계약 인식 시점이나 B2G 계절성에 따라 실적이 크게 출렁일 수 있음을 보여준다.",
-    "en": "Quarterly results in 2025 show that third-quarter revenue of KRW 10.36 billion was the sole driver of profitability, while fourth-quarter revenue at a similar scale reverted to both an operating and net loss. The first and second quarters showed weak revenue and earnings alike. This illustrates how contract recognition timing or business-to-government seasonality can cause substantial earnings swings."
+    "ko": "2023~2025년 영업손실은 3년 연속 이어졌고, 최근 4개 분기 지배주주 순손실 합계는 68.8억원이다. 2024년에는 R&D와 감가상각비 증가로 영업손실이 110억원까지 커졌다. 2026년 설비투자 114억원 계획이 이어지면 고정비 부담이 남는다.",
+    "en": "Operating losses ran for three straight years from 2023 through 2025, and owner net losses over the latest four quarters totaled KRW 6.88 billion. In 2024 higher R&D and depreciation pushed the operating loss to KRW 11 billion. If the planned KRW 11.4 billion of 2026 facility spending continues, fixed-cost pressure remains."
    }
   },
   {
    "title": {
-    "ko": "지속되는 현금 소진",
-    "en": "Ongoing Cash Burn"
+    "ko": "정책·전방 산업 의존",
+    "en": "Dependence on Policy and Battery Customers"
    },
    "body": {
-    "ko": "영업활동현금흐름이 2023년, 2024년, 2025년 모두 마이너스를 기록해 손익 개선이 실제 현금창출로 이어지지 못하고 있다. 2025년 순손실 축소는 파생상품 평가이익 등 비현금성 요인의 영향을 받았다는 설명도 있었다. 지속적인 현금 소진은 향후 추가 자금조달 필요성을 높일 수 있는 요인이다.",
-    "en": "Operating cash flow was negative in 2023, 2024, and 2025 alike, meaning the reported earnings improvement has not translated into actual cash generation. There were also explanations that the narrower 2025 net loss was influenced by non-cash factors such as derivative valuation gains. Continued cash burn is a factor that could increase the need for additional capital raising going forward."
+    "ko": "KB증권은 전방 및 정치·제도 의존도를 리스크 요인으로 꼽았다. 제도가 확립되고 전방 산업이 회복돼야 실적이 가시화된다는 평가다. 계약상대방을 공시하지 않은 수주가 있어 고객 집중도를 외부에서 확인하기 어렵다.",
+    "en": "KB Securities cited dependence on downstream battery demand and on policy as a risk. It said results will become visible only once rules are established and downstream demand recovers. Some orders have undisclosed counterparties, which makes customer concentration hard to assess from outside."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "실적 가시성 리스크",
-    "en": "Earnings Visibility Risk"
+    "ko": "정책·제도 일정",
+    "en": "Policy and Rule Timing"
    },
    "body": {
-    "ko": "과거 IPO 매출 전망치와 실제 실적 간 큰 괴리, 그리고 3분기 편중형 매출 패턴은 향후 실적을 미리 가늠하기 어렵게 만드는 요인이다. B2G 계약 특성상 예산 집행 시점에 따라 매출 인식이 크게 좌우될 수 있다. 투자자는 분기별 매출 변동성을 감안해 접근할 필요가 있다.",
-    "en": "The large gap between past IPO revenue projections and actual results, combined with the third-quarter-concentrated revenue pattern, makes it difficult to forecast future performance. Given the business-to-government contract structure, revenue recognition can be heavily influenced by the timing of budget execution. Investors need to account for quarterly revenue volatility."
+    "ko": "배터리 검사·진단 수요는 정부의 검사 제도 시행 시점에 크게 좌우된다. 제도 시행이 늦어지면 진단 수요 확대 시점도 함께 밀릴 수 있다. 제도 확산 속도는 회사가 통제할 수 없는 외부 변수다.",
+    "en": "Demand for battery inspection and diagnostics depends heavily on when government rules take effect. If implementation slips, the timing of demand growth could slip with it. The pace of rule adoption is an external variable the company cannot control."
    }
   },
   {
    "cat": {
-    "ko": "정책·제도 의존 리스크",
-    "en": "Policy and Institutional Dependence Risk"
+    "ko": "수주와 분기 실적 변동성",
+    "en": "Order and Quarterly Volatility"
    },
    "body": {
-    "ko": "KB증권은 전방 산업 및 정치·제도 의존도를 리스크 요인으로 지목하며 전방 회복과 제도 확립이 함께 이뤄져야 실적 가시화가 가능하다고 평가했다. 국토교통부의 2027년 성능검사 의무화 시행 일정이 지연되거나 변경될 경우 예상된 수요 확대 시점도 함께 조정될 수 있다. 정책 변수에 대한 노출도가 높은 구조다.",
-    "en": "KB Securities flagged dependence on downstream industry and policy/institutional conditions as a risk factor, noting that earnings visibility requires both downstream recovery and institutional frameworks to be established. If the Ministry of Land, Infrastructure and Transport's 2027 inspection mandate timeline is delayed or altered, the expected timing of demand expansion could shift as well. The business structure carries elevated exposure to policy variables."
+    "ko": "2026년 1분기부터 3분기까지 분기 매출은 16.1억원, 15.4억원, 8.4억원으로 줄어 수주 공백이 실적에 바로 반영됐다. 대형 계약 하나의 규모가 연간 매출에 견줄 만큼 커서 실적 편차가 크다. 2025년 3분기 매출 104억원도 특정 분기에 매출이 몰린 사례다.",
+    "en": "Quarterly sales fell to KRW 1.61 billion, KRW 1.54 billion and KRW 844 million across the first three quarters of 2026, so gaps in orders showed up in results immediately. A single large contract is comparable in size to annual sales, which makes reported results volatile. The KRW 10.4 billion of sales in the third quarter of 2025 is another example of revenue concentrated in one quarter."
    }
   },
   {
    "cat": {
-    "ko": "유동성·자금조달 리스크",
-    "en": "Liquidity and Funding Risk"
+    "ko": "재무와 투자 부담",
+    "en": "Financing and Investment Burden"
    },
    "body": {
-    "ko": "3년 연속 영업활동현금흐름이 마이너스를 기록하고 있어 사업 운영에 필요한 자금을 외부 조달에 의존할 가능성이 있다. 과거 시설투자 계획에 따라 향후에도 지속적인 자본 지출이 예상된다. 자금조달 방식과 시점에 따라 기존 주주의 지분 희석 가능성도 검토가 필요하다.",
-    "en": "With operating cash flow negative for three consecutive years, the company may need to rely on external funding to cover operational needs. Based on prior facility investment plans, continued capital expenditure is expected going forward. Depending on the method and timing of any funding, potential dilution for existing shareholders also warrants consideration."
+    "ko": "2025년 말 부채총계는 220억원, 자본총계는 338억원이다. 영업활동 현금흐름은 2023~2025년 3년 모두 유출이었다. 2026년 설비투자 114억원 계획이 실행되면 현금 소요가 늘어난다.",
+    "en": "Total liabilities were KRW 22 billion and total equity KRW 33.8 billion at the end of 2025. Operating cash flow was negative in each of the three years from 2023 through 2025. If the planned KRW 11.4 billion of 2026 facility spending is executed, cash needs will rise."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월경(3분기 실적 공시 예상 시점)",
-    "en": "Around November 2026 (expected third-quarter earnings disclosure)"
+    "ko": "2026년 12월 31일(2026 사업연도 종료)",
+    "en": "December 31, 2026 (end of fiscal 2026)"
    },
    "what": {
-    "ko": "2025년에 나타난 3분기 매출 집중 패턴이 2026년에도 재현되는지, 그리고 영업이익 흑자 전환 여부를 확인해야 한다.",
-    "en": "Check whether the third-quarter revenue concentration pattern seen in 2025 recurs in 2026, and whether the company returns to operating profitability."
+    "ko": "4분기 매출이 3분기 8.4억원 수준에서 이어질지, 그리고 반도체모듈 검사장비 계약의 매출 인식이 시작되는지가 확인 지점이다.",
+    "en": "Whether fourth-quarter sales stay near the KRW 844 million of the third quarter, and whether revenue recognition on the semiconductor module contract begins, are the points to watch."
    }
   },
   {
    "when": {
-    "ko": "2027년 시행 예정(국토교통부 성능검사 의무화)",
-    "en": "Targeted for 2027 implementation (Ministry mandate)"
+    "ko": "2027년 3월 말(2026 사업보고서 제출 기한)",
+    "en": "Late March 2027 (deadline for the 2026 annual report)"
    },
    "what": {
-    "ko": "전기차 배터리 탈거 전 성능검사 의무화의 구체적 시행 시기와 세부 기준이 확정되는지 확인해야 한다. 시행이 지연되거나 기준이 완화될 경우 수요 확대 논리에 영향을 줄 수 있다.",
-    "en": "Monitor whether the specific implementation timing and detailed criteria for the mandatory pre-removal EV battery performance inspection are finalized. Delays or relaxed criteria could affect the demand-expansion thesis."
+    "ko": "2026년 연간 매출과 영업손실이 공시되며, 2026년 매출 목표 1,055억원과의 격차와 설비투자 114억원의 집행 실적을 함께 확인할 수 있다.",
+    "en": "Full-year 2026 sales and operating loss will be disclosed, allowing comparison with the KRW 1.055 billion sales target and the execution of planned facility spending."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기(전고체 소재 자회사 사업화 진행 상황)",
-    "en": "Second half of 2026 (progress of solid-state materials subsidiary)"
+    "ko": "2027년 5월 15일 전후(2027년 1분기 분기보고서 제출 기한)",
+    "en": "Around May 15, 2027 (deadline for the first-quarter 2027 report)"
    },
    "what": {
-    "ko": "2026년 5월 추진이 알려진 전고체 배터리 소재 전문 자회사의 구체적 설립 완료, 초기 고객사 확보 및 공급 계약 여부를 확인해야 한다.",
-    "en": "Check whether the solid-state battery materials subsidiary, whose formation was disclosed as being pursued in May 2026, is formally established, and whether initial customer or supply contracts are secured."
+    "ko": "2027년 1분기 매출이 2026년 3분기 수준에서 회복되는지, 그리고 반도체모듈 검사장비 계약 매출이 분기 실적에 반영되는지가 확인 지점이다.",
+    "en": "Whether first-quarter 2027 sales recover from the third-quarter 2026 level and whether revenue from the semiconductor module contract appears in quarterly results are the points to watch."
    }
   },
   {
    "when": {
-    "ko": "향후 한국거래소 시장경보 지정 여부 발표 시",
-    "en": "Upon any future KRX market alert designation announcement"
+    "ko": "시행 일정 발표 시점(미정)",
+    "en": "Timing to be announced"
    },
    "what": {
-    "ko": "투자경고종목에서 투자주의종목으로 전환된 이력이 있어, 향후 유사한 시장경보 지정이 재발하는지 여부와 그 배경을 확인할 필요가 있다.",
-    "en": "Given the history of moving from investment-warning to investment-caution status, it is worth checking whether similar market alert designations recur in the future and understanding the underlying reasons."
+    "ko": "폐배터리 재사용 검사 제도와 ESS 안전 진단 기준의 세부 시행 일정이 정해지는 시점이 수요 확대의 핵심 확인 지점이다.",
+    "en": "When the detailed implementation schedule for reused-battery inspection rules and ESS safety diagnostic standards is set is the key checkpoint for demand expansion."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "민테크는 2025년 순손실을 크게 줄이고 부채비율을 낮추는 등 재무구조 측면에서 뚜렷한 개선을 보였고, 2026년 1분기에도 매출과 손익이 함께 개선되는 흐름을 이어갔다. 다만 영업활동현금흐름이 3년 연속 마이너스를 기록하고 있어 손익 개선의 질적 지속성은 앞으로 확인이 필요한 부분이다. 2025년 3분기에 집중됐던 매출과 흑자, 4분기의 재적자화 사례는 회사의 실적이 계약 인식 시점에 따라 크게 출렁일 수 있음을 보여준다. 국토교통부의 2027년 성능검사 의무화 예고와 폐배터리 재사용 검사제도는 중장기 수요 확대의 잠재 요인으로 꼽히지만, 시행 시기와 세부 기준이 아직 확정되지 않은 정책 변수이기도 하다. 전고체 배터리 검사 및 소재 사업으로의 확장은 새로운 성장 축을 모색하는 시도로 평가할 수 있으나, 아직 초기 단계에 머물러 있다. 과거 IPO 매출 전망치와 실제 실적 간 괴리 이력은 향후 회사 가이던스를 해석할 때 참고할 배경 정보다.",
-   "en": "Mintech showed clear improvement in its capital structure in 2025, sharply narrowing its net loss and lowering its debt ratio, and this trend of improving revenue and earnings continued into the first quarter of 2026. However, operating cash flow has remained negative for three consecutive years, leaving the qualitative durability of the earnings improvement to be confirmed going forward. The pattern of concentrated revenue and profit in the third quarter of 2025, followed by a return to loss in the fourth quarter despite similar revenue scale, illustrates that results can swing significantly depending on contract recognition timing. The Ministry of Land, Infrastructure and Transport's planned 2027 performance inspection mandate and the used-battery reuse inspection system are cited as potential medium-to-long-term demand drivers, though the implementation timing and detailed criteria remain unconfirmed policy variables. Expansion into solid-state battery inspection and materials business can be viewed as an attempt to seek a new growth axis, but it remains at an early stage. The historical gap between IPO-era revenue projections and actual results is useful background information when interpreting the company's future guidance."
+   "ko": "민테크는 전기화학 임피던스 분광법 기반 배터리 진단 장비를 국내에서 상용화했다는 평가를 받는 기업이며, 2025년 연간 매출은 210억원, 영업손실은 88억원이다. 2023~2025년 3년 연속 영업손실이 이어졌지만 2025년 손실 폭은 전년보다 줄었다. 2026년 들어 분기 매출은 16.1억원, 15.4억원, 8.4억원으로 줄었고 3분기 매출은 전년 동기 대비 91.9% 감소했다. 반면 영업손실은 2026년 2분기와 3분기에 연속 축소됐고, 3분기에는 지배주주 순이익이 3,388만원으로 흑자 전환했다. 강세 요인은 폐배터리 재사용 검사 제도에 따른 진단 수요 확대와 108억 7,000만원 규모의 반도체모듈 검사장비 계약이다. 약세 요인은 분기 매출 감소, 최근 4개 분기 지배주주 순손실 합계 68.8억원, 그리고 전방 제도 일정에 대한 의존도다. 다음 확인 지점은 2026년 사업보고서(2027년 3월 말)와 2027년 1분기 실적이며, 매출 회복과 계약 매출 반영 여부가 결과를 가를 변수다. 이 글은 정보 제공을 목적으로 하며 매수·매도 의견을 포함하지 않는다.",
+   "en": "Mintech is a company whose battery diagnostic equipment based on electrochemical impedance spectroscopy has been described by KB Securities as commercialized in Korea, with 2025 annual sales of KRW 21 billion and an operating loss of KRW 8.8 billion. An operating loss was recorded in each of the three years from 2023 through 2025, though the loss narrowed in 2025 from the prior year. Quarterly sales fell to KRW 1.61 billion, KRW 1.54 billion and KRW 844 million during 2026, and third-quarter sales were down 91.9% from a year earlier. Operating losses narrowed in the second and third quarters of 2026, and third-quarter owner net income turned to a KRW 33.88 million profit. Bullish factors are demand from the reused-battery inspection rules and the KRW 10.87 billion semiconductor module inspection contract. Bearish factors are the sales decline, owner net losses of KRW 6.88 billion over the latest four quarters, and dependence on the timing of battery-related rules. The next checkpoints are the 2026 annual report due in late March 2027 and first-quarter 2027 results, where sales recovery and the recognition of contract revenue will determine the outcome. This material is provided for information only and does not include a buy or sell opinion."
   }
  },
  "sources": [
-  "https://m.thinkpool.com/compDiscuss/cont/1025952",
-  "http://www.thedailymoney.com/news/articleView.html?idxno=1139629",
-  "https://thevc.kr/mintech",
-  "https://m.irgo.co.kr/IR-COMP/452200/",
   "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A452200",
-  "https://www.inthenews.co.kr/news/article.html?no=85796",
-  "https://v.daum.net/v/5kJggaNfc2?f=p",
-  "https://www.thelec.kr/news/articleView.html?idxno=53109",
-  "https://w4.kirs.or.kr/download/research/251204_IT_%EB%AF%BC%ED%85%8C%ED%81%AC(452200)_%EB%B0%B0%ED%84%B0%EB%A6%AC%20%EA%B2%80%EC%82%AC%C2%B7%EC%A7%84%EB%8B%A8%20%EC%9E%A5%EB%B9%84%20%EC%A0%84%EB%AC%B8%20%EA%B8%B0%EC%97%85_%ED%95%9C%EA%B5%AD%EA%B8%B0%EC%88%A0%EC%8B%A0%EC%9A%A9%ED%8F%89%EA%B0%80(%EC%A3%BC).pdf",
+  "https://m.thinkpool.com/compDiscuss/cont/1025952",
   "https://www.eugenefn.com/common/files/amail/20240415_B_jongsun.park_2072.pdf",
-  "https://stocks.pluconnect.com/452200_%EB%AF%BC%ED%85%8C%ED%81%AC/",
-  "https://www.jobkorea.co.kr/recruit/co_read/c/mintech0625",
-  "https://goinsider.kr/stock/01689035",
+  "https://markets.hankyung.com/stock/452200",
   "https://kbthink.com/securities-view.html?docId=20251125100317903K",
-  "https://news.dealsitetv.com/articles/153450",
-  "https://m.kbsec.com/go.able?linkcd=m06030000",
-  "https://littlebproject.com/stock/452200/87/37381",
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=086960"
+  "https://m.thinkpool.com/compDiscuss/cont/1027439",
+  "https://www.inews24.com/view/1798169",
+  "https://www.topstarnews.net/news/articleView.html?idxno=16121225",
+  "https://kbthink.com/securities-view.html?docId=20250411133928270K",
+  "https://kbthink.com/collect-view/securities-view.html?docId=20241018160557567K",
+  "https://www.investing.com/equities/mintech",
+  "http://www.thedailymoney.com/news/articleView.html?idxno=1139629",
+  "https://www.jobkorea.co.kr/recruit/co_read/c/mintech0625",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=PQmczoadw5iUwT3u",
+  "https://goinsider.kr/stock/01689035",
+  "https://www.datatooza.com/article/20260417164116898552ef35e4a2_80",
+  "https://www.inthenews.co.kr/mobile/article.html?no=79419",
+  "https://www.thelec.kr/news/articleView.html?idxno=29654"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "452200",
  "name": "민테크",
  "name_en": "Mintech Co., Ltd.",
@@ -223,11 +223,11 @@
   "전기장비"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 21:32",
- "dataDate": "20260904",
+ "reportDate": "2026-11-14",
+ "reportTs": "2026-11-14 15:03",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-09-05",
+  "asOf": "2026-11-14",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -282,18 +282,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q1",
-    "rev": 990350000,
-    "op": -4175919931,
-    "np_owner": -4400469170
-   },
-   {
-    "q": "2025Q2",
-    "rev": 795030000,
-    "op": -3457737173,
-    "np_owner": -556562718
-   },
-   {
     "q": "2025Q3",
     "rev": 10360871546,
     "op": 161487195,
@@ -310,25 +298,37 @@
     "rev": 1614831001,
     "op": -2677807135,
     "np_owner": -2906049560
+   },
+   {
+    "q": "2026Q2",
+    "rev": 1540079000,
+    "op": -1990698287,
+    "np_owner": -2193262847
+   },
+   {
+    "q": "2026Q3",
+    "rev": 843533232,
+    "op": -1622455508,
+    "np_owner": 33883163
    }
   ],
   "valuation": {
-   "price": 1598,
-   "mcap": 0.0389,
+   "price": 1209,
+   "mcap": 0.0294,
    "shares": 24332800,
    "total_shares": 25457800,
-   "wavg_shares": 22646408,
+   "wavg_shares": 24006773,
    "per": null,
-   "eps": -40,
-   "pbr": 1.1698,
-   "bps": 1366,
-   "roe_ttm": -3.5,
-   "ttm_window": "2025Q2~2026Q1",
-   "ttm_np_owner": -1019331683,
+   "eps": -291,
+   "pbr": 1.0008,
+   "bps": 1208,
+   "roe_ttm": -21.6,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": -6879859746,
    "ccy": "KRW",
    "bps_src": "자체",
    "eps_src": "공시",
-   "pbr_krx": 1.18,
+   "pbr_krx": 0.89,
    "bps_krx": 1360.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
@@ -337,5 +337,6 @@
     "per": "loss"
    }
   }
- }
+ },
+ "textRules": 2
 }

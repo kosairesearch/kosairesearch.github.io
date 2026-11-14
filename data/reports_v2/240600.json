@@ -1,220 +1,230 @@
 {
  "title": {
-  "ko": "이차전지 캐즘 속 손실 축소 국면 진입",
-  "en": "Battery Mold Maker's Losses Narrow Amid EV Chasm"
+  "ko": "매출은 회복, 손익은 아직 적자",
+  "en": "Sales Recover, Earnings Still in Loss"
  },
  "lead": {
-  "ko": "국내 이차전지 노칭금형·리드탭 전문기업 유진테크놀로지는 전기차 수요 둔화(캐즘) 여파로 2년 연속 매출이 줄고 적자가 이어졌으나, 2026년 들어 분기별 손실 규모가 완만히 줄어드는 흐름을 보이고 있다.",
-  "en": "Eugene Technology, a Korean maker of precision notching molds and lead tabs for secondary batteries, posted two straight years of declining revenue and widening losses amid the EV demand slowdown, but quarterly losses have been narrowing gradually through 2026."
+  "ko": "2026년 1분기를 저점으로 매출은 두 분기 연속 늘었지만, 2025년 3분기 이후 5개 분기 연속 영업손실이 이어지고 있어 매출 회복이 손익 흑자 전환으로 이어질지가 핵심 확인 과제다.",
+  "en": "Sales have risen for two straight quarters since the first quarter of 2026, but operating losses have continued for five consecutive quarters, so whether the sales recovery turns into profit is the key item to watch."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출 286.8억원으로 전년(311.2억원) 대비 감소했고, 영업손실은 77.8억원으로 전년(39.3억원) 대비 확대됐다.",
-   "en": "2025 consolidated revenue fell to KRW 28.68bn from KRW 31.12bn a year earlier, while the operating loss widened to KRW 7.78bn from KRW 3.93bn."
+   "ko": "2026년 3분기 매출은 102억원으로 전년 동기 대비 33.3% 증가했고, 직전 분기보다는 5.8% 늘었다.",
+   "en": "Third-quarter 2026 sales were KRW 10.2 billion, up 33.3% from a year earlier and up 5.8% from the prior quarter."
   },
   {
-   "ko": "분기 실적은 2025년 4분기 순손실 27.4억원을 정점으로 2026년 1분기 -11.5억원, 2분기 -5.5억원으로 손실 규모가 축소되는 흐름이다.",
-   "en": "Quarterly net losses peaked at KRW 2.74bn in Q4 2025 before narrowing to KRW 1.15bn in Q1 2026 and KRW 0.55bn in Q2 2026."
+   "ko": "2026년 3분기 영업손실은 11.4억원으로 2분기 7.9억원보다 적자 폭이 커졌고, 지배주주 순손실은 27.8억원으로 영업손실보다 크다.",
+   "en": "The third-quarter 2026 operating loss was KRW 1.14 billion, wider than KRW 793 million in the second quarter, and the loss attributable to controlling shareholders was larger still at KRW 2.78 billion."
   },
   {
-   "ko": "주력 제품은 이차전지 노칭 공정용 정밀금형과 파우치형 배터리용 리드탭으로, 삼성SDI·LG에너지솔루션·SK온 등 국내 배터리 3사를 고객으로 두고 있다.",
-   "en": "Core products are precision notching molds for the battery notching process and lead tabs for pouch-type cells, with Samsung SDI, LG Energy Solution and SK On as domestic customers."
+   "ko": "연간 영업손실은 2024년 39.3억원에서 2025년 77.8억원으로 확대됐고, 영업활동 현금흐름도 2025년 -51억원으로 적자가 커졌다.",
+   "en": "Annual operating losses widened from KRW 3.93 billion in 2024 to KRW 7.78 billion in 2025, and operating cash flow fell to -KRW 5.1 billion."
   },
   {
-   "ko": "최근 북미 배터리 생산라인용 PET 세정설비 신규 수주와 국내 배터리사 울산공장 LFP ESS용 일체형 금형 1차 수주 등 EV 중심에서 ESS·LFP로 사업을 다각화하고 있다.",
-   "en": "The company recently won new orders for PET cleaning equipment for a North American battery line and a first-phase LFP ESS integrated mold order for a domestic battery maker's Ulsan plant, diversifying beyond EV-centric demand into ESS and LFP."
+   "ko": "회사는 화성 사업장 정리로 고정비 부담이 줄었고 해외 법인 4곳이 정상화됐다고 밝혔으며, 이는 비용 측면의 개선 근거로 제시된다.",
+   "en": "The company says the Hwaseong plant consolidation has reduced fixed costs and that four overseas subsidiaries have returned to normal operations, which it cites as grounds for cost improvement."
   },
   {
-   "ko": "주가는 주당순자산에 못 미치는 수준에서 거래되고 있으며 배당은 실시하지 않고 있다.",
-   "en": "The stock trades below its per-share net asset value and the company does not currently pay a dividend."
+   "ko": "시가총액은 보도된 코스닥 상장폐지 기준(200억원, 2027년 1월부터 300억원)과 비교하면 낮은 구간이어서 상장 유지가 주요 쟁점이다.",
+   "en": "Market value is well below the reported KOSDAQ delisting thresholds of KRW 20 billion, rising to KRW 30 billion from January 2027, which makes maintaining the listing a central issue."
   }
  ],
  "business": {
-  "ko": "유진테크놀로지는 2010년 설립돼 2023년 11월 코스닥에 상장한 이차전지 부품·소재 전문기업이다. 회사는 이차전지 제조에 필요한 정밀금형과 공정 기계부품, 자동화장비, 리드탭을 제조해 공급한다. 주력 제품인 노칭금형은 양극과 음극 활물질이 코팅된 전극판을 셀 형태로 절단하는 노칭 공정에 쓰이는 핵심 부품이며, 스마트폰용 소형부터 전기차·ESS용 대형까지 다양한 사양을 설계·가공·조립한다. 기계부품으로는 나이프 유닛, 프릭션 샤프트, 노칭 프레스 유닛, 라미커터 등을 생산하며 일부 외산 설비의 국산화를 이뤄냈다. 주요 고객은 삼성SDI, LG에너지솔루션 등 이차전지 제조사와 피엔티, 지아이텍 등 자동화장비 업체이며, 국내뿐 아니라 폴란드, 헝가리, 중국, 미국 등 해외 시장에도 제품을 공급하고 있다. 상장 당시 회사는 피엔티·씨아이에스·엠플러스 등 배터리 장비 및 전기자동차 제조사도 파트너로 확보하고 있다고 밝혔다. 이미연 각자대표는 상장 당시 기업공개 간담회에서 제품이 주기적 유지·보수를 통해 지속적인 수익 창출이 가능한 구조라고 언급하며, 전기차 시장 성장과 함께 성장하겠다는 방향을 제시했다. 최근에는 전기차향 매출 의존도를 낮추기 위해 LFP·ESS용 금형과 세정설비 등으로 제품 포트폴리오를 넓히는 추세다.",
-  "en": "Eugene Technology was founded in 2010 and listed on KOSDAQ in November 2023 as a secondary battery parts and materials specialist. The company manufactures and supplies precision molds, process machine parts, automation equipment, and lead tabs used in secondary battery production. Its core product, the notching mold, is a key component used in the notching process that cuts electrode sheets coated with active material into cell shapes, with designs ranging from small formats for smartphones to large formats for EVs and ESS. Machine parts include knife units, friction shafts, notching press units, and lami cutters, some of which achieved import substitution for previously foreign-sourced equipment. Major customers include battery makers such as Samsung SDI and LG Energy Solution, as well as automation equipment makers such as PNT and GI Tech, and the company supplies products not only domestically but also to Poland, Hungary, China, and the United States. At the time of its listing, the company said it had also secured battery equipment and electric vehicle makers such as PNT, CIS, and MPlus as partners. Co-CEO Lee Mi-yeon said at the IPO briefing that the company's products generate recurring revenue through periodic maintenance, and that it would grow alongside the expanding EV market. More recently, the company has been broadening its product portfolio into LFP and ESS molds and cleaning equipment to reduce its reliance on EV-linked revenue."
+  "ko": "유진테크놀로지는 이차전지 생산공정에 쓰이는 정밀금형과 노칭 프레스 등 장비·부품을 만드는 기업이다. 노칭 프레스, 정밀금형, 커터 카트리지 등 배터리 제조 공정 전반의 장비와 부품을 묶어 공급하는 구조이며, 청주 본사를 기반으로 화성 테크캠퍼스에서 자동화 장비 사업을 키우고 있다. 주요 고객은 LG에너지솔루션과 삼성SDI 등 국내 배터리 셀 제조사로, 회사는 두 곳과 장기 협력 관계를 이어오고 있다고 밝혔다. 해외에는 폴란드, 헝가리, 미국, 중국에 생산 거점을 두고 있어 고객의 현지 생산라인에 기술 대응과 부품 공급을 맞추는 방식이다. 2026년 3월 공개한 노칭 장비는 250~300cpm 수준에서 안정 운영되며 최대 400cpm까지 대응하도록 개발 중이고, 노칭 금형은 버를 5μm 이하로 관리한다고 회사는 설명했다. 리드탭은 표면처리 특허기술을 내세우는 신규 품목이지만, 2025년 리드탭 매출은 약 2억원에 그쳤다고 보도됐다. 이에 회사는 2029년까지 리드탭 매출 500억원, 자동화 장비 사업을 포함한 5년 내 1,000억원 매출을 목표로 제시했다. 화성 공장 정리는 2026년 6월까지 마무리됐고, 연간 약 24~25억원 규모의 고정비 부담을 줄이는 효과가 있다고 회사는 설명했다. 매출 회복은 국내 금형·기계 사업을 중심으로 이어지고 있다고 회사는 밝혔다. 경쟁 측면에서는 정밀도와 해외 현지 대응력을 차별점으로 내세운다.",
+  "en": "Yujin Technology makes precision molds, notching presses and other equipment and parts used in secondary battery production lines. It supplies a package of equipment and parts across the battery manufacturing process, including notching presses, precision molds and cutter cartridges, from its Cheongju headquarters, while growing its automation equipment business at the Hwaseong Technical Campus. Its main customers are domestic battery cell makers including LG Energy Solution and Samsung SDI, and the company says it has maintained long-term cooperation with both. It runs production bases in Poland, Hungary, the United States and China, matching technical support and parts supply to customers' local production lines. The notching equipment it unveiled in March 2026 runs stably at 250 to 300 cpm and is being developed to handle up to 400 cpm, while its notching molds keep burrs below 5 μm, according to the company. Lead tabs are a new product line built on proprietary surface-treatment technology, but sales were only about KRW 200 million in 2025, press reports said. The company targets KRW 50 billion in lead tab sales by 2029 and KRW 100 billion in total sales within five years by growing its automation equipment business centered on Hwaseong. The Hwaseong plant consolidation was completed by June 2026, and the company says it cuts fixed costs by roughly KRW 2.4 to 2.5 billion a year. Sales recovery is being led by domestic mold and machinery businesses, the company said. On competition, the company points to precision and local response capability in overseas markets as its differentiators."
  },
  "earnings": {
-  "ko": "유진테크놀로지의 연간 매출은 2023년 474.9억원으로 정점을 찍은 뒤 2024년 311.2억원, 2025년 286.8억원으로 2년 연속 감소했다. 영업이익 역시 2023년 63.8억원(영업이익률 13.4%)의 흑자에서 2024년 -39.3억원(-12.6%), 2025년 -77.8억원(-27.1%)으로 적자가 매년 확대됐다. 순이익 기준으로는 2022년 11.8억원 흑자 이후 2023년부터 3년 연속 순손실을 기록했으며, 2025년 순손실은 77.7억원에 달했다. 자본총계는 2023년 상장 자금 유입으로 478.5억원까지 늘었으나 이후 누적 손실로 2024년 452.1억원, 2025년 383.9억원으로 줄어드는 추세다. 영업활동현금흐름도 2023년 106.9억원 순유입에서 2024년 -11.1억원, 2025년 -51.0억원으로 악화되며 현금창출력 저하가 뚜렷하다. 다만 분기 흐름을 보면 2025년 4분기 순손실 27.4억원을 정점으로 2026년 1분기 -11.5억원, 2분기 -5.5억원으로 손실 규모가 점차 줄어들고 있으며, 2026년 2분기 매출은 96.0억원으로 직전 분기(77.6억원) 대비 늘었다. 최근 4개 분기(2025년 3분기~2026년 2분기) 합산으로도 매출 규모가 2025년 연간치를 웃도는 수준까지 올라온 점은 주목할 부분이다. 다만 아직 분기 단위 영업이익 흑자 전환에는 이르지 못한 상태다.",
-  "en": "Eugene Technology's annual revenue peaked at KRW 47.5bn in 2023 before declining for two consecutive years to KRW 31.1bn in 2024 and KRW 28.7bn in 2025. Operating profit also swung from a KRW 6.4bn profit (13.4% margin) in 2023 to losses of KRW 3.9bn (-12.6%) in 2024 and KRW 7.8bn (-27.1%) in 2025, with the loss widening each year. On a net income basis, the company posted three consecutive years of net losses starting in 2023 after a KRW 1.2bn profit in 2022, with the 2025 net loss reaching KRW 7.8bn. Total equity rose to KRW 47.8bn in 2023 on IPO proceeds but has since declined to KRW 45.2bn in 2024 and KRW 38.4bn in 2025 as accumulated losses eroded capital. Operating cash flow also deteriorated from a KRW 10.7bn inflow in 2023 to outflows of KRW 1.1bn in 2024 and KRW 5.1bn in 2025, signaling weaker cash generation. That said, quarterly figures show net losses peaking at KRW 2.74bn in Q4 2025 before narrowing to KRW 1.15bn in Q1 2026 and KRW 0.55bn in Q2 2026, while Q2 2026 revenue rose to KRW 9.6bn from KRW 7.76bn in the prior quarter. Notably, the trailing four-quarter revenue sum (Q3 2025 through Q2 2026) now exceeds the full-year 2025 figure. However, the company has not yet returned to quarterly operating profitability."
+  "ko": "연간 매출은 2022년 398억원에서 2023년 475억원(전년 대비 19.3% 증가)으로 정점을 찍었고, 2024년 311억원(전년 대비 34.5% 감소)과 2025년 287억원(전년 대비 7.9% 감소)으로 2024년부터 2025년까지 2년 연속 줄었다. 2022~2025년 중 가장 큰 해는 2023년이고 가장 작은 해는 2025년이며, 회사 측은 2025년 매출 감소를 전기차 시장 성장 둔화에 따른 고객사 설비투자 축소와 생산 조정 탓으로 설명했다. 영업이익은 2022년 23.8억원에서 2023년 63.8억원(전년 대비 167.5% 증가)으로 늘었다가 2024년 영업손실 39.3억원으로 적자 전환했고, 2025년에는 영업손실 77.8억원으로 손실이 확대됐다. 영업이익률은 2023년 13.4%에서 2024년 -12.6%, 2025년 -27.1%로 떨어졌고, 영업손실은 2024년부터 2025년까지 2년 연속 이어졌다. 지배주주 순이익은 2023년 지배주주 순손실 18.1억원으로 적자 전환한 뒤 2025년 지배주주 순손실 77.7억원까지 3년 연속 적자다. 2023년 순손실 전환에는 약 71억원 규모의 일회성 파생상품금융부채평가손실이 반영됐다고 보도됐으며, 이는 영업 성과와 구분되는 항목이다. 영업활동 현금흐름은 2023년 107억원에서 2024년 -11.1억원, 2025년 -51억원으로 전환됐고, 부채비율은 2024년 43.2%에서 2025년 54.4%로 올랐다. 2025년 말 자본총계는 384억원, 부채총계는 209억원이다. 분기 매출은 2025년 4분기 95.4억원(전 분기 대비 25.2% 증가)으로 올라선 뒤 2026년 1분기 77.6억원(전 분기 대비 18.7% 감소)으로 꺾였다가, 2026년 2분기 96억원(전 분기 대비 23.6% 증가)과 3분기 102억원(전 분기 대비 5.8% 증가)으로 2개 분기 연속 늘었다. 영업손실은 2025년 3분기 14.6억원에서 2026년 2분기 7.9억원까지 좁혀졌으나 3분기에는 11.4억원으로 커졌고, 회사는 2분기 개선의 배경으로 화성 사업장의 고정비 절감을 들었다. 3분기 지배주주 순손실 27.8억원은 영업손실보다 커서 영업 외 손익의 영향이 적자 폭을 키운 것으로 읽히며, 최근 4개 분기 지배주주 순손실 합계는 72.2억원이다.",
+  "en": "Annual sales went from KRW 39.8 billion in 2022 to a peak of KRW 47.5 billion in 2023, a 19.3% increase, before falling to KRW 31.1 billion in 2024 (down 34.5%) and KRW 28.7 billion in 2025 (down 7.9%), marking two straight years of decline from 2024 through 2025. Of the 2022 to 2025 period, 2023 was the largest year and 2025 the smallest, and the company attributed the 2025 drop to customers cutting equipment investment and adjusting production as electric vehicle demand slowed. Operating profit rose from KRW 2.38 billion in 2022 to KRW 6.38 billion in 2023, a 167.5% increase, then turned into an operating loss of KRW 3.93 billion in 2024 and widened to KRW 7.78 billion in 2025. The operating margin moved from 13.4% in 2023 to -12.6% in 2024 and -27.1% in 2025, and operating losses have continued for two consecutive years. Net income attributable to controlling shareholders swung to a loss of KRW 1.81 billion in 2023 and reached a loss of KRW 7.77 billion in 2025, making three straight years of losses. The 2023 swing was tied to a one-off derivative liability valuation loss of about KRW 7.1 billion, according to press reports, and was separate from operating performance. Operating cash flow went from KRW 10.7 billion in 2023 to -KRW 1.11 billion in 2024 and -KRW 5.1 billion in 2025, while the debt ratio rose to 54.4% in 2025 from 43.2% in 2024; total equity at end-2025 was KRW 38.4 billion and total liabilities KRW 20.9 billion. Quarterly sales rose to KRW 9.54 billion in the fourth quarter of 2025 (up 25.2% from the prior quarter) before falling to KRW 7.76 billion in the first quarter of 2026 (down 18.7%). They then rebounded to KRW 9.6 billion in the second quarter (up 23.6%) and KRW 10.2 billion in the third quarter (up 5.8%), two straight quarters of growth, with third-quarter sales up 33.3% year on year. The operating loss narrowed from KRW 1.46 billion in the third quarter of 2025 to KRW 793 million in the second quarter of 2026 before widening to KRW 1.14 billion in the third quarter, and the company credited Hwaseong fixed-cost savings for part of the second-quarter improvement. The third-quarter 2026 loss attributable to controlling shareholders of KRW 2.78 billion exceeded the operating loss, suggesting non-operating items widened the loss, and the four-quarter total is KRW 7.22 billion."
  },
  "industry": {
-  "ko": "이차전지 소재·부품·장비(소부장) 업계는 전기차 수요 성장세 둔화, 즉 이른바 캐즘 구간 진입과 주요국 보조금 축소, 공급망 불확실성으로 2024~2025년 전반적인 투자 위축을 겪었다. 유진테크놀로지 역시 2025년 3분기 누적 기준 매출이 전년동기 대비 14.7% 감소하고 영업손실이 88.1% 늘어나는 등 업황 부진의 직접적인 영향을 받았다. 이런 환경에서 전방 배터리 3사(삼성SDI, LG에너지솔루션, SK온)의 설비투자 속도와 완성차업체의 전기차 판매 회복 시점이 장비·부품 업체들의 실적을 좌우하는 핵심 변수로 남아 있다. 최근에는 전기차 캐즘 여파 속에서도 LFP 배터리와 ESS(에너지저장장치) 전환 수요, 완성차업체의 파일럿 라인 증설이 새로운 성장축으로 부각되고 있다는 점이 업계 안에서 관찰된다. 노칭금형과 같은 소모성 부품은 한 번 공급을 시작하면 유지·보수·교체 수요가 이어지는 구조여서, 완전한 신규 투자 없이도 일정 수준의 반복 매출이 발생할 수 있다는 특징이 있다. 경쟁 구도에 대해서는 공개된 3자 비교 데이터가 제한적이나, 회사는 국내 배터리 3사를 모두 고객으로 확보하고 해외로도 공급망을 넓혀온 점에서 상대적으로 안정적인 거래선을 보유하고 있는 것으로 파악된다.",
-  "en": "The secondary battery materials, parts, and equipment industry experienced broad investment contraction in 2024-2025 amid slowing EV demand growth (the so-called chasm), subsidy cuts in major markets, and supply chain uncertainty. Eugene Technology was directly affected, with revenue down 14.7% and the operating loss widening 88.1% year-on-year on a cumulative basis through Q3 2025. In this environment, the capex pace of the three domestic battery makers (Samsung SDI, LG Energy Solution, SK On) and the timing of a recovery in automaker EV sales remain key variables for equipment and parts suppliers. More recently, industry observers note that even amid the EV chasm, demand for LFP battery and ESS conversion, along with pilot line expansions by automakers, is emerging as a new growth driver. Consumable parts such as notching molds tend to generate recurring maintenance and replacement demand once initial supply begins, allowing for some repeat revenue even without full-scale new capex. Detailed third-party competitive comparisons are limited in public sources, but the company appears to hold a relatively stable customer base, having secured all three domestic battery makers as clients and expanded its supply footprint overseas."
+  "ko": "전방 시장은 이차전지, 그중에서도 전기차 배터리 투자 사이클에 크게 묶여 있다. 2025년에는 유럽 시장의 전기차 판매가 보조금 축소와 수요 정체로 줄었고, 회사 측은 국내 배터리 3사의 평균 가동률이 50%대로 내려갔다고 설명했다. 2026년 들어 회사는 북미 주요 배터리 공장의 재가동에 맞춰 오하이오와 미시간 법인을 기반으로 현지 공급을 늘리겠다고 밝혔다. 수요의 중심이 전기차에서 ESS와 LFP 배터리로 넓어지는 흐름이 나타나고 있어, 회사는 국내에서 검증한 LFP 배터리용 정밀금형과 설비 기술을 미국과 유럽 법인으로 확대하는 중이다. ESS용 각형 배터리 생산라인에 핵심 부품 공급을 늘리는 것도 본업의 과제로 제시됐다. 수요 구조는 신규 설비 수주와 기존 생산라인에서 나오는 반복 수요가 함께 가는 형태이며, 회사는 반복 수요를 키워 매출 안정성과 수익성을 함께 높인다는 방침이다. 경쟁 측면에서 회사는 노칭 금형의 정밀도와 리드탭 표면처리 기술을 강점으로 내세우며, 해외 법인 4곳이 정상화됐다고 밝혔다. 다만 장비 투자는 고객사의 증설 결정에 좌우되므로 전방 업황 변화가 매출 변동으로 빠르게 이어지는 특성이 있다.",
+  "en": "The end market is tied closely to the battery investment cycle, especially electric vehicle batteries. In 2025, electric vehicle sales in Europe fell as subsidies were cut and demand stalled, and the company said the average utilization rate of the three major Korean battery makers dropped into the 50% range. In 2026 the company said it would expand local supply through its Ohio and Michigan subsidiaries in step with the restart of major North American battery plants. Demand is broadening from electric vehicles toward ESS and LFP batteries, and the company is extending precision mold and equipment technology it verified domestically to its US and European subsidiaries. Supplying core parts for prismatic-cell lines in ESS production is also presented as a priority. Demand combines new equipment orders with repeat demand from existing production lines, and the company plans to raise repeat demand to support revenue stability and profitability. On competition, the company cites notching mold precision and lead tab surface-treatment technology as strengths, and says four overseas subsidiaries are back to normal operations. Because equipment spending depends on customers' capacity decisions, shifts in end-market conditions can pass into revenue quickly."
  },
  "outlook": {
-  "ko": "회사는 2026년 7월 공시한 2분기 잠정실적 발표에서 상반기 연결 매출이 전년동기 대비 53.6% 늘었다고 밝히며, 확보된 수주잔고의 매출 전환이 순조롭게 진행되고 있어 하반기 실적 개선에 대한 기대감이 커지고 있다고 설명했다. 회사 관계자는 하반기에도 글로벌 기업들과의 수주가 이어지고 해외 시장 확대를 통한 성장이 예고돼 있다고 언급하며, 특히 대형 배터리업체의 유럽 소재 공장에서 진행되는 글로벌 자동차업체 대상 프로젝트에 공급이 이뤄지도록 총력을 기울이고 있다고 말했다. 최근에는 북미 지역 배터리 생산라인에 투입될 PET 세정설비 신규 주문을 접수해 조만간 양산 체제에 돌입할 예정이며, 국내 주요 배터리업체의 울산사업장향 LFP ESS용 일체형 금형 1차 수주도 확정했다고 밝혔다. 회사는 이 금형이 향후 ESS 시장 성장에 맞춰 추가 물량 수주로 이어질 것으로 기대하고 있다. 회사 관계자는 전기차 시장의 수요 정체 속에서도 LFP 배터리 및 ESS 전환 수요, 완성차업체의 파일럿 라인 증설이 새로운 성장 동력이 되고 있다고 평가하며, 소모품 기반의 재구매 구조와 북미 각형·LFP 라인용 정밀 노칭 장비 및 세정기 등 고부가가치 설비 수주 확대를 통해 연간 실적 턴어라운드와 성장을 이루겠다는 목표를 제시했다.",
-  "en": "In its preliminary Q2 2026 earnings release in July 2026, the company reported that first-half consolidated revenue rose 53.6% year-on-year, and said the smooth conversion of its order backlog into recognized revenue is raising expectations for further improvement in the second half. A company representative said meaningful orders from global clients are continuing into the second half, with overseas market expansion set to support continued growth, and that the company is focused on securing supply to a global automaker's project at a major battery maker's European plant. The company recently received new orders for PET cleaning equipment to be installed on a North American battery production line and is preparing to begin mass production soon, while also confirming a first-phase order for an LFP ESS integrated mold for a domestic battery maker's Ulsan plant. The company expects this mold order to lead to additional volume orders as the ESS market grows. A company representative said that even amid stagnant EV demand, LFP battery and ESS conversion demand along with automakers' pilot line expansions are becoming new growth drivers, and set a goal of achieving a full-year earnings turnaround and growth through a recurring-purchase consumables structure and expanded orders for high value-added equipment such as precision notching machines and cleaning equipment for North American prismatic/LFP lines."
+  "ko": "회사는 2026년 하반기 실적이 한 단계 더 개선될 것으로 기대한다고 밝혔고, 화성 고정비 부담 해소와 해외 법인 흑자 전환, ESS 수주 확대가 맞물릴 것으로 내다봤다. 2026년 3분기 매출은 102억원으로 증가했지만 영업손실은 11.4억원으로 2분기보다 커져, 이익 단계의 개선은 3분기 기준으로는 아직 뚜렷하지 않다. 수주 측면에서는 미국 조지아주 신규 배터리 업체의 유상 샘플 요청을 받았고, 캐나다 온타리오주 윈저 배터리 생산기지에서는 커터 카트리지 사용 테스트를 준비 중이라고 회사는 밝혔다. 북미 현지 법인을 기반으로 한 부품 공급 확대 계획도 함께 제시됐다. 리드탭 사업은 2029년까지 매출 500억원, 자동화 장비 사업을 포함한 5년 내 1,000억원 매출 목표가 회사 측 계획으로 제시됐다. 2026년 7월 21일 발송된 주주서신에서 회사는 본업 경쟁력 강화, IR 확대, 주주가치 제고, 경영진 책임경영의 4가지 과제를 내세웠고, 같은 해 7월 13일에는 주식 유동성 개선을 위한 무상증자를 결정했다. 화성 사업장 정리는 2026년 6월까지 마무리됐고, 7월부터 비용 절감 효과가 실적에 반영되기 시작했다고 회사는 설명했다. 다음 확인 지점은 2026년 4분기 영업손실이 3분기 수준에서 개선되는지 여부와, ESS 라인 수주가 매출 추세에 반영되는지 여부다.",
+  "en": "The company said it expects results to improve further in the second half of 2026, citing relief from Hwaseong fixed costs, a return to profit at overseas subsidiaries and wider ESS orders. Third-quarter 2026 sales rose to KRW 10.2 billion, but the operating loss widened to KRW 1.14 billion from the second quarter, so profit-level improvement is not yet clear on a third-quarter basis. On orders, the company said it received a paid sample request from a new battery maker in Georgia in the United States and is preparing a cutter cartridge usage test at a battery plant in Windsor, Ontario, Canada. It also presented plans to expand parts supply through its North American subsidiaries. For lead tabs, the company set a target of KRW 50 billion in sales by 2029 and KRW 100 billion in total sales within five years including automation equipment. In a shareholder letter sent on July 21, 2026, the company set out four priorities: strengthening its core business, expanding investor relations, raising shareholder value and stronger management accountability. On July 13, 2026 it decided on a bonus share issue to improve stock liquidity. The Hwaseong plant consolidation was completed by June 2026, and the company says cost savings began to show in results from July. The next checkpoints are whether the operating loss in the fourth quarter of 2026 improves from the third-quarter level and whether ESS line orders show up in the sales trend."
  },
  "valuation_comment": {
-  "ko": "유진테크놀로지는 최근 3년간 순손실이 이어지면서 이익 기반의 밸류에이션 지표를 적용하기 어려운 상태다. 주가는 주당순자산에 못 미치는 수준에서 거래되고 있어, 순자산 대비 할인된 구간에 위치한다고 볼 수 있다. 다만 이는 회사가 최근 몇 년간 누적 손실로 자본이 줄어드는 흐름과 함께 해석해야 하며, 시장이 향후 이익 회복 여부를 지켜보는 국면으로 이해할 수 있다. 배당은 현재 지급되지 않고 있어 배당 매력도 측면에서 참고할 지표가 없는 상태다. 분기 손실이 축소되는 최근 흐름이 이어져 연간 기준 적자에서 흑자로 전환될 수 있는지가 향후 시장의 평가를 가르는 핵심 변수가 될 것으로 보인다.",
-  "en": "With net losses persisting for three consecutive years, earnings-based valuation metrics are difficult to apply to Eugene Technology at this time. The stock trades below its per-share net asset value, placing it in a discount range relative to book value. This should be read alongside the fact that accumulated losses have been shrinking the company's equity base in recent years, and can be understood as a phase in which the market is watching for signs of an earnings recovery. The company does not currently pay a dividend, so there is no yield-related metric to reference. Whether the recent trend of narrowing quarterly losses can translate into a full-year swing from loss to profit is likely to be the key variable shaping how the market evaluates the stock going forward."
+  "ko": "최근 네 개 분기가 순손실이어서 주가수익비율(PER)은 산출되지 않는다. 주가순자산비율(PBR)은 주당순자산 대비 큰 할인 구간에 있어, 장부상 순자산 가치와 시장 평가 사이의 괴리가 크다. 2025년 말 기준 자본총계와 지배주주 지분이 같은 금액이므로, 순자산 대비 주가 수준은 자산 가치 기준으로 비교된다. 현금배당을 통한 수익률은 사실상 없는 수준이며, 2026년 7월에는 주식 유동성 개선을 위한 무상증자가 결정됐다. 적자 구간에서는 이익 기반 배수보다 순자산과 매출 추세가 비교의 기준으로 쓰이며, 배수 수준은 분기 흑자 전환 여부에 따라 달라질 수 있다. 상장 유지 기준으로 보도된 시가총액(200억원, 2027년 1월부터 300억원)과 견주면 현재 시가총액은 낮은 구간에 있다.",
+  "en": "Because the last four quarters show net losses, a price-earnings ratio cannot be calculated. The price-to-book ratio sits in a deep discount zone relative to book value per share, a wide gap between net asset value on the balance sheet and market pricing. Equity at end-2025 is shown as total equity and as equity attributable to controlling shareholders at the same amount, so price relative to net assets can be compared on an asset-value basis. Cash dividends provide virtually no yield, and in July 2026 the company decided on a bonus share issue to improve stock liquidity. In loss-making periods, comparisons rely more on net assets and the sales trend than on earnings multiples, and the multiple level could shift with a return to quarterly profit. Measured against the reported listing-maintenance thresholds of KRW 20 billion and, from January 2027, KRW 30 billion, current market value sits at a low level."
  },
  "bull": [
   {
    "title": {
-    "ko": "분기 손실 축소 흐름",
-    "en": "Narrowing Quarterly Losses"
+    "ko": "분기 매출의 회복 흐름",
+    "en": "Recovery in quarterly sales"
    },
    "body": {
-    "ko": "2025년 4분기 순손실 27.4억원을 정점으로 2026년 1분기 -11.5억원, 2분기 -5.5억원으로 손실 규모가 세 분기 연속 줄어들고 있다. 매출도 2026년 2분기 96.0억원으로 직전 분기 대비 늘어나며 최근 4개 분기 합산 매출이 2025년 연간치를 넘어섰다. 이 흐름이 이어질 경우 연간 실적의 방향 전환 가능성을 가늠하는 근거가 될 수 있다.",
-    "en": "Net losses have narrowed for three straight quarters, peaking at KRW 2.74bn in Q4 2025 before falling to KRW 1.15bn in Q1 2026 and KRW 0.55bn in Q2 2026. Revenue also rose to KRW 9.6bn in Q2 2026 from the prior quarter, with the trailing four-quarter revenue sum now exceeding the full-year 2025 total. If this trend continues, it could provide a basis for assessing a potential turn in full-year results."
+    "ko": "2026년 1분기 77.6억원을 저점으로 2분기 96억원, 3분기 102억원까지 두 분기 연속 늘었고, 3분기 매출은 전년 동기 대비 33.3% 증가했다. 회사는 이 회복이 국내 금형·기계 사업 중심의 흐름에서 나온다고 설명했다. 이 매출 회복이 이익 단계로 이어지는지가 이 강세 논리의 시험대다.",
+    "en": "From a low of KRW 7.76 billion in the first quarter of 2026, sales rose to KRW 9.6 billion in the second quarter and KRW 10.2 billion in the third, two straight quarters of growth, with third-quarter sales up 33.3% year on year. The company attributes the recovery to its domestic mold and machinery businesses. Whether this sales recovery carries through to profit is the test for this bull case."
    }
   },
   {
    "title": {
-    "ko": "국내 배터리 3사 고객 기반",
-    "en": "All Three Domestic Battery Makers as Customers"
+    "ko": "고정비 구조조정과 손익 개선 흐름",
+    "en": "Fixed-cost restructuring and margin gains"
    },
    "body": {
-    "ko": "삼성SDI, LG에너지솔루션, SK온 등 국내 배터리 3사를 모두 고객으로 확보하고 있으며, 자동화장비 업체 피엔티, 지아이텍 등도 주요 거래선이다. 노칭금형과 같은 소모성 부품은 공급 개시 이후 유지·보수·교체 수요가 이어지는 구조여서 반복적인 매출 창출이 가능하다는 점이 특징이다.",
-    "en": "The company has secured all three domestic battery makers—Samsung SDI, LG Energy Solution, and SK On—as customers, alongside automation equipment makers such as PNT and GI Tech. Consumable parts such as notching molds tend to generate recurring maintenance and replacement demand once initial supply begins, supporting repeat revenue."
+    "ko": "화성 사업장 정리가 2026년 6월 마무리되면서 연간 약 24~25억원 규모의 고정비 부담이 줄어드는 효과가 기대된다고 회사는 밝혔다. 2026년 상반기 매출총이익률은 15.3%로 전년 같은 기간 8.6%보다 올랐고, 영업손실은 1분기 16.9억원에서 2분기 7.9억원으로 줄었다. 영업손실이 축소된 분기가 있다는 사실은 고정비 절감 효과를 뒷받침한다.",
+    "en": "The company says the Hwaseong plant consolidation, completed by June 2026, should cut fixed costs by roughly KRW 2.4 to 2.5 billion a year. Gross margin for the first half of 2026 was 15.3%, up from 8.6% a year earlier, and the operating loss narrowed from KRW 1.69 billion in the first quarter to KRW 793 million in the second. The narrowing in the second quarter is consistent with the cost-savings effect the company describes."
    }
   },
   {
    "title": {
-    "ko": "ESS·LFP·해외로 사업 다각화",
-    "en": "Diversification into ESS, LFP, and Overseas Markets"
+    "ko": "해외 거점 정상화와 북미 신규 수요",
+    "en": "Overseas recovery and new North American demand"
    },
    "body": {
-    "ko": "최근 북미 배터리 생산라인용 PET 세정설비 신규 수주와 국내 배터리사 울산공장 LFP ESS용 일체형 금형 1차 수주를 확정했다. 전기차 중심 매출 구조에서 ESS·LFP 전환 수요와 유럽·북미 영업망 확대로 고객 다변화를 추진하고 있어, 전기차 수요 둔화의 영향을 상대적으로 완화할 수 있는 여지가 있다.",
-    "en": "The company recently secured new orders for PET cleaning equipment for a North American battery line and a first-phase LFP ESS integrated mold order for a domestic battery maker's Ulsan plant. It is pursuing customer diversification through ESS/LFP conversion demand and expanded sales networks in Europe and North America, which could help offset the impact of slowing EV demand."
+    "ko": "미국, 폴란드, 헝가리, 중국 등 해외 법인 4곳이 정상화된 상태라고 회사는 2026년 7월 밝혔다. 미국 조지아주 신규 배터리 업체의 유상 샘플 요청과 캐나다 윈저 생산기지의 커터 카트리지 테스트 준비가 신규 수요의 단서로 제시됐다. 국내에서 검증한 LFP 배터리용 금형 기술을 해외 법인으로 넓히는 계획도 강세 요인으로 꼽힌다.",
+    "en": "In July 2026 the company said four overseas subsidiaries in the United States, Poland, Hungary and China have returned to normal operations. A paid sample request from a new battery maker in Georgia and preparations for a cutter cartridge test at a Windsor, Canada plant are cited as early signs of new demand. Extending LFP battery mold technology verified in Korea to overseas subsidiaries is also cited as a positive factor."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "3년 연속 순손실과 자본 감소",
-    "en": "Three Straight Years of Net Losses and Shrinking Equity"
+    "ko": "5개 분기 연속 영업손실과 적자 폭 확대",
+    "en": "Five straight quarters of operating losses"
    },
    "body": {
-    "ko": "2023년부터 2025년까지 3년 연속 순손실을 기록했으며, 2025년 순손실은 77.7억원에 달했다. 자본총계는 상장 직후인 2023년 478.5억원에서 2025년 383.9억원으로 줄어드는 흐름이며, 누적 손실이 자본을 계속 갉아먹고 있다.",
-    "en": "The company recorded net losses for three consecutive years from 2023 to 2025, with the 2025 net loss reaching KRW 7.8bn. Total equity has declined from KRW 47.8bn shortly after listing in 2023 to KRW 38.4bn in 2025, as accumulated losses continue to erode capital."
+    "ko": "2025년 3분기부터 2026년 3분기까지 5개 분기 연속 영업손실이 이어졌고, 2026년 3분기 영업손실 11.4억원은 2분기 7.9억원보다 커졌다. 2026년 3분기 지배주주 순손실 27.8억원은 전년 동기보다 적자 폭이 커졌고, 최근 4개 분기 지배주주 순손실 합계는 72.2억원이다. 매출 회복이 손익 개선으로 이어지지 않는 점이 가장 큰 약세 요인이다.",
+    "en": "Operating losses have continued for five consecutive quarters from the third quarter of 2025 through the third quarter of 2026, and the third-quarter 2026 operating loss of KRW 1.14 billion was wider than KRW 793 million in the second quarter. The third-quarter loss attributable to controlling shareholders of KRW 2.78 billion widened from a year earlier, and the four-quarter total is KRW 7.22 billion. The failure of sales growth to carry through to profit is the largest bearish factor."
    }
   },
   {
    "title": {
-    "ko": "영업활동현금흐름 악화",
-    "en": "Deteriorating Operating Cash Flow"
+    "ko": "전기차 수요 둔화와 고객사 투자 축소",
+    "en": "EV demand slowdown and customer capex cuts"
    },
    "body": {
-    "ko": "영업활동현금흐름은 2023년 106.9억원 순유입에서 2024년 -11.1억원, 2025년 -51.0억원으로 악화됐다. 매출 감소와 원가 부담이 겹치며 현금창출력이 약해진 모습으로, 향후 투자 재원 확보 측면에서 점검이 필요한 부분이다.",
-    "en": "Operating cash flow deteriorated from a KRW 10.7bn inflow in 2023 to outflows of KRW 1.1bn in 2024 and KRW 5.1bn in 2025. Weaker cash generation amid declining revenue and cost pressure is a point that warrants monitoring in terms of funding future investment."
+    "ko": "매출은 2024년과 2025년 2년 연속 감소했고, 회사는 2025년 감소의 배경으로 고객사의 설비투자 축소와 생산 조정을 꼽았다. 보도에 따르면 유럽 전기차 판매 감소와 배터리 업체의 낮은 가동률이 실적 악화의 주요 원인이었다. 영업활동 현금흐름이 2024년과 2025년 적자로 돌아선 것도 고객 투자 사이클에 대한 노출을 보여 준다.",
+    "en": "Sales fell for two consecutive years in 2024 and 2025, and the company attributes the 2025 decline to customers cutting capital spending and adjusting production. Press reports cite falling electric vehicle sales in Europe and low battery plant utilization as major causes of the earnings deterioration. Operating cash flow turning negative in 2024 and 2025 also shows exposure to customers' investment cycles."
    }
   },
   {
    "title": {
-    "ko": "전기차 캐즘에 따른 매출 기반 취약성",
-    "en": "Vulnerability to the EV Demand Slowdown"
+    "ko": "신규 사업 목표와 실제 격차",
+    "en": "Gap between new-business targets and results"
    },
    "body": {
-    "ko": "2025년 3분기 누적 기준 매출이 전년동기 대비 14.7% 줄고 영업손실이 88.1% 늘어난 데서 보듯, 회사 매출은 여전히 전기차 투자 사이클에 크게 의존하고 있다. 보조금 정책 변화나 완성차업체의 투자 지연이 재차 발생할 경우 실적 개선 흐름이 다시 꺾일 수 있다.",
-    "en": "As shown by the 14.7% revenue decline and 88.1% wider operating loss on a cumulative basis through Q3 2025, the company's revenue remains heavily dependent on the EV investment cycle. A renewed shift in subsidy policy or delays in automaker investment could again disrupt the recent improvement trend."
+    "ko": "리드탭은 IPO 당시 2025년까지 매출 25억원을 목표로 했으나 2025년 매출은 약 2억원에 그쳤다고 보도됐다. 생산 규모도 목표 수준의 절반인 월 100만 세트 안팎에 머물렀다고 보도됐다. 해외 사업장을 통한 글로벌 거점 확장 전략도 지연되며 실적 악화가 이어졌다는 평가가 나왔다.",
+    "en": "Press reports said lead tab sales were about KRW 200 million in 2025, far below the KRW 2.5 billion target set at the IPO for 2025. Production volume was reported at around 1 million sets a month, about half the target level. Delays in the overseas expansion strategy were also cited as contributing to weaker results."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중 리스크",
-    "en": "Customer Concentration Risk"
+    "ko": "전방 투자 사이클과 고객 집중",
+    "en": "End-market capex cycle and customer concentration"
    },
    "body": {
-    "ko": "매출의 상당 부분이 국내 배터리 3사에 집중돼 있어, 특정 고객사의 투자 계획 변경이나 물량 조정이 실적에 직접적인 영향을 줄 수 있다. 고객 다변화가 진행 중이나 아직 초기 단계로 판단된다.",
-    "en": "A significant portion of revenue is concentrated among the three domestic battery makers, so changes in a specific customer's investment plans or order volumes could directly affect results. Customer diversification is underway but appears to be in an early stage."
+    "ko": "매출은 전기차와 배터리 업체의 설비투자 결정에 크게 좌우되며, 2025년에는 고객사의 설비투자 축소로 매출이 감소했다. 배터리 산업이 LFP와 ESS로 넓어지는 흐름은 기회이면서도 기존 고객 중심 구조를 바꿔야 하는 과제다. 주요 고객인 LG에너지솔루션과 삼성SDI의 투자 계획이 바뀌면 매출 변동 폭이 커질 수 있다.",
+    "en": "Sales depend heavily on capital spending decisions by electric vehicle and battery makers, and in 2025 revenue fell as customers cut equipment investment. The shift toward LFP and ESS batteries is an opportunity but also requires changing a structure built around existing customers. If investment plans at major customers such as LG Energy Solution and Samsung SDI change, revenue swings could widen."
    }
   },
   {
    "cat": {
-    "ko": "산업 사이클 리스크",
-    "en": "Industry Cycle Risk"
+    "ko": "상장 유지와 시가총액 기준",
+    "en": "Listing maintenance and market value threshold"
    },
    "body": {
-    "ko": "이차전지 장비·부품 업종은 전방 배터리업체의 설비투자 사이클에 실적이 크게 좌우되는 구조다. 전기차 수요 둔화, 보조금 정책 변화, 글로벌 공급망 재편 등 외부 변수에 따라 수주와 매출 인식 시점이 지연될 가능성이 있다.",
-    "en": "The battery equipment and parts industry is highly dependent on the capex cycle of upstream battery makers. External variables such as slowing EV demand, changes in subsidy policy, and global supply chain restructuring could delay order intake and revenue recognition timing."
+    "ko": "보도에 따르면 코스닥 상장폐지 시가총액 기준은 2026년 7월부터 200억원으로 올랐고, 2027년 1월부터 300억원으로 한 차례 더 상향될 예정이다. 현재 시가총액은 이 기준들과 비교해 낮은 수준이어서 상장 유지 요건이 주요 리스크로 꼽힌다. 회사는 2026년 7월 주주서신을 내고 상장 유지와 기업가치 회복에 총력을 밝혔다.",
+    "en": "Press reports say the KOSDAQ market value threshold for delisting rose to KRW 20 billion from July 2026 and is set to rise to KRW 30 billion from January 2027. Current market value is low against both thresholds, which makes listing maintenance a key risk. In July 2026 the company issued a shareholder letter pledging to focus on maintaining its listing and restoring corporate value."
    }
   },
   {
    "cat": {
-    "ko": "재무 건전성 및 자금 조달 리스크",
-    "en": "Financial Health and Funding Risk"
+    "ko": "재무 여력과 현금흐름",
+    "en": "Financial capacity and cash flow"
    },
    "body": {
-    "ko": "연속된 순손실로 자본이 줄어들고 영업활동현금흐름도 음(-)의 흐름을 보이고 있어, 신규 투자나 사업 다각화에 필요한 자금을 외부 조달에 의존할 가능성이 있다. 이는 주주가치 희석이나 재무비용 부담으로 이어질 수 있다.",
-    "en": "With continued net losses shrinking equity and operating cash flow in negative territory, the company may need to rely on external funding for new investment or business diversification, which could lead to shareholder dilution or increased financial costs."
+    "ko": "2025년 말 자본총계는 384억원이지만, 영업활동 현금흐름은 2025년 -51억원으로 2024년 -11.1억원보다 적자 폭이 커졌다. 2026년 상반기 말 현금성자산은 62.7억원, 수주잔고는 95억원으로 집계됐다. 3분기까지 영업손실이 이어지면 현금 여력이 줄어드는지 여부가 다음 점검 대상이다.",
+    "en": "Total equity at end-2025 was KRW 38.4 billion, but operating cash flow fell to -KRW 5.1 billion in 2025 from -KRW 1.11 billion in 2024. Cash and cash equivalents were reported at KRW 6.27 billion and the order backlog at KRW 9.5 billion at the end of the first half of 2026. Whether cash cushions shrink if operating losses continue is the next item to monitor."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 10월 말~11월 초",
-    "en": "Late October to early November 2026"
+    "ko": "2027년 1월",
+    "en": "January 2027"
    },
    "what": {
-    "ko": "2026년 3분기 실적(잠정실적 포함) 공시 확인 — 최근 이어진 분기 손실 축소 흐름이 지속되는지, 매출 성장세가 유지되는지를 점검해야 한다.",
-    "en": "Watch for the Q3 2026 earnings disclosure (including preliminary figures) — check whether the recent trend of narrowing quarterly losses and revenue growth continues."
+    "ko": "코스닥 상장폐지 시가총액 기준이 300억원으로 상향되는 시점이다. 현재 시가총액과의 격차가 상장 유지 가능성을 좌우하는 지점이다.",
+    "en": "The KOSDAQ delisting market value threshold is scheduled to rise to KRW 30 billion. The gap to current market value is the key factor for maintaining the listing."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기 중",
-    "en": "During Q4 2026"
+    "ko": "2027년 2월 초 전후",
+    "en": "Early February 2027, approximately"
    },
    "what": {
-    "ko": "북미 배터리 생산라인용 PET 세정설비의 양산 개시 및 매출 인식 시점을 확인할 필요가 있다.",
-    "en": "Confirm the timing of mass production and revenue recognition for the PET cleaning equipment supplied to the North American battery production line."
+    "ko": "2026년 4분기와 연간 잠정 실적이 발표되는 시기다(2025년 연간 실적은 2026년 2월 9일 공시됐다). 영업손실이 3분기 수준에서 줄어드는지, 매출 증가가 손익으로 이어지는지 확인한다.",
+    "en": "Fourth-quarter and full-year 2026 preliminary results are expected around this period; full-year 2025 results were disclosed on February 9, 2026. The key test is whether the operating loss narrows from the third-quarter level and whether sales growth carries through to profit."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기",
-    "en": "Second half of 2026"
+    "ko": "2027년 3월 31일 전후",
+    "en": "Around March 31, 2027"
    },
    "what": {
-    "ko": "국내 배터리사 울산공장 LFP ESS용 금형의 추가 물량 수주 여부와 유럽 소재 배터리 공장 프로젝트 공급 계약 체결 여부를 확인해야 한다.",
-    "en": "Check whether additional volume orders materialize for the LFP ESS mold at the domestic battery maker's Ulsan plant, and whether a supply contract is finalized for the project at the European battery plant."
+    "ko": "2026년 사업보고서 제출 기한이다. 연간 영업이익률, 영업활동 현금흐름, 해외 법인 흑자 유지 여부가 정기보고서에서 확정된다.",
+    "en": "This is the filing deadline for the 2026 annual report. Full-year operating margin, operating cash flow and whether overseas subsidiaries stay profitable will be confirmed in the filing."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기~2027년 초",
-    "en": "Q4 2026 to early 2027"
+    "ko": "2027년 5월 15일 전후",
+    "en": "Around May 15, 2027"
    },
    "what": {
-    "ko": "전기차 시장 캐즘 완화 여부와 주요국 보조금 정책 변화를 모니터링해야 하며, 이는 전방 배터리업체의 투자 재개 속도에 영향을 줄 수 있다.",
-    "en": "Monitor whether the EV market chasm eases and how subsidy policies in major markets evolve, as these factors could affect the pace at which upstream battery makers resume investment."
+    "ko": "2027년 1분기 분기보고서 제출 기한이다. 1분기 매출과 영업손실 방향이 2026년 4분기 흐름과 이어지는지 확인하는 지점이다.",
+    "en": "This is the filing deadline for the first-quarter 2027 report. It is the point to check whether first-quarter sales and operating loss continue the direction seen in the fourth quarter of 2026."
+   }
+  },
+  {
+   "when": {
+    "ko": "수시 공시",
+    "en": "Ongoing, as disclosed"
+   },
+   "what": {
+    "ko": "ESS용 각형 배터리 라인 부품 수주와 북미 신규 고객의 샘플 평가 결과가 공시되는지 여부다. 수주 규모가 매출 추세에 반영되는지 확인한다.",
+    "en": "Watch for disclosed orders for prismatic-cell ESS line parts and evaluation results for new North American customer samples, and whether order size shows up in the sales trend."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "유진테크놀로지는 이차전지 노칭금형과 리드탭을 주력으로 하는 부품·소재 기업으로, 국내 배터리 3사를 고객으로 두고 있으나 최근 3년간 전기차 수요 둔화의 직접적인 영향을 받아 매출 감소와 순손실 확대를 경험했다. 2025년 영업손실은 77.8억원, 순손실은 77.7억원으로 전년보다 확대됐고 자본과 영업활동현금흐름도 함께 줄어드는 모습을 보였다. 다만 2025년 4분기를 정점으로 2026년 들어 분기별 손실 규모가 완만히 줄어드는 흐름이 나타나고 있으며, 최근에는 북미 PET 세정설비와 국내 LFP ESS용 금형 등 신규 수주를 통해 전기차 중심 매출 구조를 ESS·LFP·해외 시장으로 넓히려는 움직임이 확인된다. 주가는 주당순자산 대비 할인된 구간에서 거래되고 있으며 배당은 지급되지 않고 있다. 앞으로의 관전 포인트는 분기 손실 축소 흐름이 연간 기준 이익 회복으로 이어질 수 있는지, 그리고 새로 확보한 수주들이 실제 매출로 얼마나 안정적으로 전환되는지에 있다.",
-   "en": "Eugene Technology is a parts and materials company centered on precision notching molds and lead tabs for secondary batteries, with all three domestic battery makers as customers, but it has been directly affected by the EV demand slowdown over the past three years, experiencing declining revenue and widening net losses. The 2025 operating loss reached KRW 7.78bn and the net loss KRW 7.77bn, both wider than the prior year, while equity and operating cash flow also declined. However, quarterly losses have shown a gradual narrowing trend since peaking in Q4 2025, and the company has recently secured new orders—including PET cleaning equipment for North America and an LFP ESS mold domestically—signaling a move to broaden its EV-centric revenue base into ESS, LFP, and overseas markets. The stock trades at a discount to its per-share net asset value and does not currently pay a dividend. Key points to watch going forward are whether the narrowing quarterly loss trend can translate into a full-year earnings recovery, and how reliably the newly secured orders convert into actual revenue."
+   "ko": "유진테크놀로지는 이차전지 정밀금형과 노칭 장비를 중심으로 한 기업으로, 2026년 들어 매출이 두 분기 연속 늘며 회복 흐름을 보이고 있다. 2026년 3분기 매출은 102억원으로 전년 동기 대비 33.3% 증가했다. 그러나 2025년 3분기 이후 5개 분기 연속 영업손실이 이어졌고, 2026년 3분기 지배주주 순손실은 27.8억원으로 전년 동기보다 적자 폭이 커졌다. 연간으로 보면 2023년 정점 이후 2024년과 2025년 매출이 줄었고, 영업이익은 2024년부터 적자로 돌아섰다. 화성 사업장 정리와 해외 법인 정상화는 비용 측면의 개선 근거로 제시되지만, 이익 개선의 속도는 3분기 기준으로 아직 뚜렷하지 않다. 강세 요인으로는 매출 회복, 고정비 절감, 북미·유럽 신규 수요의 단서가 있고, 약세 요인으로는 지속 적자, 전방 설비투자 변동, 상장 유지 기준과 현금흐름 부담이 있다. 두 요인이 같은 무게로 맞서 있어, 이익 단계가 분기 단위로 흑자로 돌아서는지가 가장 중요한 확인 지점이다.",
+   "en": "Yujin Technology is a company centered on secondary battery precision molds and notching equipment, and sales have risen for two straight quarters in 2026, showing a recovery trend. Third-quarter 2026 sales were KRW 10.2 billion, up 33.3% from a year earlier. However, operating losses have continued for five consecutive quarters since the third quarter of 2025, and the third-quarter 2026 loss attributable to controlling shareholders of KRW 2.78 billion was wider than a year earlier. On an annual basis, sales have fallen in 2024 and 2025 after peaking in 2023, and operating profit turned into losses from 2024. The Hwaseong plant consolidation and overseas subsidiary recovery are presented as grounds for cost improvement, but the pace of profit improvement is not yet clear on a third-quarter basis. Bullish factors include the sales recovery, fixed-cost savings and early signs of new North American and European demand, while bearish factors include continued losses, swings in end-market capital spending, listing maintenance thresholds and cash flow strain. The two sides carry comparable weight, so whether quarterly profit returns to positive territory is the most important checkpoint."
   }
  },
  "sources": [
-  "https://m.thinkpool.com/compDiscuss/cont/1024299",
-  "https://m.thinkpool.com/compDiscuss/cont/1021669",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A240600&MenuYn=Y&ReportGB=B&NewMenuID=Y&stkGb=701",
-  "https://m.thinkpool.com/item/240600",
-  "https://www.newswell.co.kr/news/articleView.html?idxno=8926",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Invest.asp?pGB=1&gicode=A240600&MenuYn=Y&NewMenuID=105&stkGb=701",
-  "https://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=240600",
-  "https://www.dukoo.kr/2026/01/240600.html",
   "https://comp.wisereport.co.kr/company/c1010001.aspx?cn=&cmp_cd=240600",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=gT71jotbw2CbEAjZ",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=dMr8pqj0bmqGlAeU",
-  "https://alphasquare.co.kr/home/stock-summary?code=084370",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=67YTxhaKjcRg2gbT",
-  "https://comp.wisereport.co.kr/wiseReport/summary/ReportSummary.aspx?cn=&cmp_cd=033540",
-  "https://kr.investing.com/equities/eugenetechnology-co-ltd-earnings",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A240600&cID=&MenuYn=Y&ReportGB=B&NewMenuID=Y&stkGb=701",
-  "https://m.thinkpool.com/compDiscuss/cont/1019894",
-  "http://www.yujintechnology.com/"
+  "https://comp.wisereport.co.kr/company/c1020001.aspx?cmp_cd=240600&cn=",
+  "https://www.jbnews.com/news/articleView.html?idxno=1509690",
+  "https://m.news.nate.com/view/20260209n36685",
+  "https://www.seoulexchange.kr/stocks/%EC%9C%A0%EC%A7%84%ED%85%8C%ED%81%AC%EB%86%80%EB%A1%9C%EC%A7%80-549/",
+  "https://www.innoforest.co.kr/company/CP00010987/%EC%9C%A0%EC%A7%84%ED%85%8C%ED%81%AC%EB%86%80%EB%A1%9C%EC%A7%80",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=084370",
+  "https://kind.krx.co.kr/external/2025/05/14/001223/20250514002663/11013.htm",
+  "https://news.dealsitetv.com/articles/172569",
+  "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=710906",
+  "https://m.news.nate.com/view/20260724n21705",
+  "https://www.vegannews.co.kr/news/article.html?no=398139",
+  "https://m.news.nate.com/view/20260306n24299",
+  "https://m.news.nate.com/view/20260306n26554",
+  "https://www.inews365.com/news/article.html?no=941399",
+  "https://m.news.nate.com/view/20260409n30059",
+  "https://www.etnews.com/20260721000278",
+  "https://www.inews365.com/news/article.html?no=932353"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "240600",
  "name": "유진테크놀로지",
  "name_en": "YUJIN TECHNOLOGY CO.,LTD.",
@@ -223,11 +233,11 @@
   "화학"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 21:32",
- "dataDate": "20260904",
+ "reportDate": "2026-11-14",
+ "reportTs": "2026-11-14 15:03",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-09-05",
+  "asOf": "2026-11-14",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -298,12 +308,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 6957820657,
-    "op": -1537360238,
-    "np_owner": -1890353403
-   },
-   {
     "q": "2025Q3",
     "rev": 7617519905,
     "op": -1460068072,
@@ -326,25 +330,31 @@
     "rev": 9595475902,
     "op": -792944606,
     "np_owner": -553788614
+   },
+   {
+    "q": "2026Q3",
+    "rev": 10152004323,
+    "op": -1142633196,
+    "np_owner": -2782661498
    }
   ],
   "valuation": {
-   "price": 1677,
-   "mcap": 0.0139,
+   "price": 801,
+   "mcap": 0.0066,
    "shares": 8299410,
-   "total_shares": 6928151,
-   "wavg_shares": 6863922,
+   "total_shares": 8299410,
+   "wavg_shares": 7164399,
    "per": null,
-   "eps": -802,
-   "pbr": 0.3078,
-   "bps": 5449,
-   "roe_ttm": -13.9,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": -5495639484,
+   "eps": -1026,
+   "pbr": 0.1717,
+   "bps": 4664,
+   "roe_ttm": -19.5,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": -7222554872,
    "ccy": "KRW",
    "bps_src": "자체",
    "eps_src": "공시",
-   "pbr_krx": 0.36,
+   "pbr_krx": 0.17,
    "bps_krx": 4683.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
@@ -353,5 +363,6 @@
     "per": "loss"
    }
   }
- }
+ },
+ "textRules": 2
 }

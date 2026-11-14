@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "경영권 교체기의 AI 데이터라벨링 기업",
-  "en": "CrowdWorks: AI Data Labeler at an Ownership Crossroads"
+  "ko": "매출 반등 속 적자 지속, 체질 전환이 관건",
+  "en": "Revenue rebounds, losses persist; turnaround is the test"
  },
  "lead": {
-  "ko": "크라우드웍스는 최대주주·대표이사 교체와 반복적 자본조달이 맞물린 전환기에서 매출 회복과 손익 개선이라는 과제를 동시에 안고 있다.",
-  "en": "CrowdWorks faces the twin tasks of reviving revenue and repairing profitability just as its controlling shareholder and CEO have changed and repeated capital raises have diluted the share base."
+  "ko": "2026년 1분기 매출은 전년 동기 대비 50% 늘었지만, 2025년 3분기부터 5개 분기 연속 영업손실이 이어지고 있어 수익 구조 전환이 핵심 과제다.",
+  "en": "First-quarter 2026 revenue rose 50% year on year, but operating losses have persisted for five consecutive quarters since the third quarter of 2025, making a shift in the earnings structure the central challenge."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출은 104.8억원으로 전년(120.1억원) 대비 줄었고 영업손실은 133.7억원으로 확대됐다.",
-   "en": "2025 consolidated revenue fell to KRW 10.48 billion from KRW 12.01 billion in 2024, while the operating loss widened to KRW 13.37 billion."
+   "ko": "연간 매출은 2023년 240억원을 정점으로 2024년 120억원, 2025년 105억원으로 2년 연속 감소했다.",
+   "en": "Annual revenue peaked at KRW 24 billion in 2023 and then fell to KRW 12 billion in 2024 and KRW 10.5 billion in 2025, a two-year decline."
   },
   {
-   "ko": "2025년 12월부터 2026년 2월까지 최대주주와 대표이사가 잇달아 교체되며 지배구조 전환기에 들어섰다.",
-   "en": "Between December 2025 and February 2026 the controlling shareholder and CEO were both replaced, putting the company in a governance transition."
+   "ko": "영업손실은 2022년부터 2025년까지 4년 연속 이어졌고, 2025년 영업손실은 134억원, 영업이익률은 -127.5%다.",
+   "en": "Operating losses have continued for four consecutive years from 2022 to 2025, with the 2025 operating loss at KRW 13.4 billion and an operating margin of -127.5%."
   },
   {
-   "ko": "UNIST 주관 컨소시엄의 조선업 AI 국책과제(2030년까지 총 403억원) 참여 등 산업특화 데이터 수주를 확대하고 있다.",
-   "en": "The company has been expanding industry-specific data contracts, including participation in a UNIST-led shipbuilding AI project worth KRW 40.3 billion through 2030."
+   "ko": "2026년 1분기에는 LLM 데이터 매출이 49.9% 늘며 외형 성장을 이끌었고, 영업손실률은 -145.9%에서 -75.8%로 낮아졌다.",
+   "en": "In the first quarter of 2026, LLM data revenue grew 49.9% and led top-line growth, while the operating loss ratio improved from -145.9% to -75.8%."
   },
   {
-   "ko": "2024년 8월, 2025년 12월, 2026년 4월 세 차례 유상증자로 자본은 확충됐으나 지분 희석과 자금 출처 관련 논란이 이어졌다.",
-   "en": "Three separate capital raises in August 2024, December 2025 and April 2026 bolstered equity but also raised dilution and funding-transparency concerns."
+   "ko": "국책 과제와 피지컬 AI 데이터가 새 성장 축으로 제시되는 한편, 2026년 8월 대양금속 지분 4.8(120억원) 취득은 자금 부담 요인으로 거론된다.",
+   "en": "National R&D projects and physical AI data are presented as new growth pillars, while the KRW 12 billion acquisition of a 4.8% stake in a stainless steel maker in August 2026 is cited as a cash burden."
   },
   {
-   "ko": "글로벌 데이터라벨링 시장은 고성장 국면이지만 국내에서는 에이모, AIWORKX(구 테스트웍스) 등과의 경쟁이 심화되고 있다.",
-   "en": "The global data-labeling market remains in a high-growth phase, but domestic competition from AIMMO and AIWORKX (formerly Testworks) is intensifying."
+   "ko": "최근 4개 분기 지배주주 순손실 합계는 186억원으로, 이익 기반 밸류에이션 지표인 PER은 산출되지 않는 상태다.",
+   "en": "Controlling-shareholder net losses totaled KRW 18.6 billion over the last four quarters, so the price-to-earnings ratio cannot be calculated."
   }
  ],
  "business": {
-  "ko": "크라우드웍스는 2017년 설립돼 2023년 8월 스팩 합병을 통해 코스닥에 상장한 AI 데이터·솔루션 기업이다. 회사는 DATA, AI, 교육이라는 세 축을 중심으로 사업을 전개하며 데이터 라벨링에서 출발해 AI-Ready 데이터 구축, 맞춤형 모델 개발·운영, 모델 평가·검증까지 영역을 넓혀왔다. 주요 솔루션으로는 에이전트형 AI 개발·운영을 위한 올인원 솔루션 '알피(Alpy)', 비정형 문서를 RAG에 적합한 형태로 전처리하는 '알피 날리지 컴파일러', 모델 평가 도구 '알피 이밸류에이션'을 보유하고 있다. 고객 기반은 네이버, 삼성전자, 크래프톤 등 약 430여개 기업에 이르며, 회사 스스로는 코스피 상위 30대 기술기업의 70% 이상이 모델 개발에 자사를 선택했다고 밝히고 있다. 작업자 풀은 60만명 이상 규모로, AI가 1차 처리를 하고 사람이 정교한 검수를 담당하는 하이브리드 방식을 채택하고 있으며 이 인력은 금융·건설 등 산업 도메인에서 실무 경험을 쌓은 전문가들로 구성돼 있다고 회사는 설명한다. 글로벌 리서치기관 가트너는 크라우드웍스를 오픈AI, 구글, 마이크로소프트 등과 함께 금융권 생성형 AI 대표 공급기업으로 평가한 바 있다. 경쟁구도에서는 자율주행 데이터에 특화된 에이모(AIMMO), 사명을 AIWORKX로 변경한 옛 테스트웍스 등이 국내 주요 경쟁사로 꼽힌다. 2025년 12월부터 2026년 2월 사이 최대주주가 창업자 박민우 의장에서 엑스알피1호조합(김광일 대표)으로 바뀌었고, 신임 김광일 대표이사 체제로 이사회가 6인으로 재편되면서 사업 방향에 변화 가능성이 제기되고 있다.",
-  "en": "Founded in 2017, CrowdWorks listed on KOSDAQ in August 2023 via a SPAC merger and operates as an AI data and solutions company. The firm organizes its business around three pillars—Data, AI, and Education—expanding from data labeling into AI-ready data construction, custom model development and operation, and model evaluation and verification. Its core solutions include Alpy, an all-in-one platform for agentic AI development and operation, the Alpy Knowledge Compiler, which preprocesses unstructured documents into RAG-suitable formats, and Alpy Evaluation, a model assessment tool. Its client base spans roughly 430 companies including Naver, Samsung Electronics, and Krafton, and the company states that more than 70% of KOSPI's top 30 technology firms have chosen it for model development. Its labeler pool exceeds 600,000 workers, operating under a hybrid model in which AI handles first-pass processing while human reviewers—described by the company as domain experts with experience in fields such as finance and construction—perform detailed quality checks. Gartner has reportedly rated CrowdWorks alongside OpenAI, Google, and Microsoft as a leading generative AI vendor for the financial sector. Domestically, key competitors include AIMMO, which specializes in autonomous-driving data, and AIWORKX, the rebranded former Testworks. Between December 2025 and February 2026 the controlling shareholder changed from founder Park Min-woo to XRP1 Association led by Kim Kwang-il, and the board was reorganized to six members under new CEO Kim Kwang-il, raising questions about the company's future strategic direction."
+  "ko": "크라우드웍스는 2017년 설립된 AI 학습 데이터 전문 기업으로, 2023년 8월 31일 코스닥 시장에 상장했다. 회사는 DATA, AI, 교육의 3축으로 사업을 나누고 있으며, 데이터 라벨링에서 출발해 생성형 AI 등장 이후 AI-Ready 데이터 구축, 맞춤형 모델 개발, 모델 평가·검증으로 영역을 넓혔다. 데이터 사업은 불특정 다수의 작업자를 플랫폼으로 모으는 크라우드소싱 방식으로 운영되며, 전수 검수로 품질을 관리하는 점을 경쟁력으로 내세운다. 디지털데일리가 2026년 5월 16일 DART 분기보고서를 토대로 전한 2026년 1분기 사업별 매출을 보면, 데이터 사업 매출은 12억 7,700만원으로 전년 동기 대비 2.5% 늘었다. 이 가운데 LLM 데이터 매출은 10억 2,800만원으로 49.9% 늘어 성장을 이끌었고, AI 데이터 매출은 2억 4,900만원으로 55.5% 줄었다. AI사업 매출은 5억 6,100만원으로 전년 동기 대비 0.5% 줄었다. 정부 과제 축도 커지고 있다. 과학기술정보통신부의 독자 AI 파운데이션 모델 프로젝트에서 모티프테크놀로지스가 이끄는 컨소시엄의 3,000억(300B) 추론형 모델 핵심 데이터 공급을 맡았다. 2026년 5월에는 울산과학기술원, HD현대중공업과 컨소시엄을 구성해 403억원 규모 조선업 초거대 AI 사업에서 현장 데이터를 정제·구축하는 역할을 맡았다고 밝혔다. 교육 사업은 자회사 크라우드아카데미가 맡고 있다. 경쟁 구도는 넓다. 2022년 2월 ZDNet 보도에 따르면 국내 AI 학습 데이터 플랫폼 기업은 약 700여 곳으로 집계됐다.",
+  "en": "CrowdWorks was founded in 2017 as an AI training data specialist and listed on KOSDAQ on August 31, 2023. The company organizes its business around three pillars, DATA, AI and education, starting from data labeling and expanding after generative AI into AI-ready data construction, custom model development and model evaluation. Its data business runs on a crowdsourcing model that draws on a large pool of workers, and it presents full-scale inspection as its quality edge. According to a May 16, 2026 Digital Daily report based on the DART quarterly filing, first-quarter 2026 data revenue was KRW 1.277 billion, up 2.5% year on year. Within that, LLM data revenue reached KRW 1.028 billion, up 49.9% and the main driver of growth, while AI data revenue was KRW 249 million, down 55.5%. AI business revenue was KRW 561 million, down 0.5% year on year. Government-led projects are also growing in weight. In a national foundation model project led by the Ministry of Science and ICT, the company supplies core data for a 300B reasoning model led by Motif Technologies. In May 2026 it also said it would take the lead on data construction in a KRW 40.3 billion shipbuilding AI project with UNIST and HD Hyundai Heavy Industries. The education business is run by its subsidiary, CrowdAcademy. Competition is broad: a February 2022 ZDNet report counted about 700 AI training data platform companies in Korea."
  },
  "earnings": {
-  "ko": "2025년 연결 매출은 104.84억원으로 2024년 120.14억원에서 줄었고, 앞서 2023년 239.78억원까지 치솟았던 매출은 2024년과 2025년 2년 연속 크게 축소됐다. 영업손실은 2023년 17.86억원에서 2024년 117.26억원, 2025년 133.66억원으로 3년 연속 확대되며 영업이익률은 2023년 -7.4%에서 2024년 -97.6%, 2025년 -127.5%로 악화됐다. 지배주주순손실은 2024년 88.22억원에서 2025년 211.98억원으로 크게 늘었는데, 분기별로 보면 2025년 4분기(매출 42.38억원)에 순손실이 88.91억원으로 유독 커 연간 손실 확대를 주도했다. 이후 2026년 1분기에는 매출 28.49억원, 영업손실 21.61억원, 순손실 26.99억원으로 손실 규모가 다소 줄었으나, 2026년 2분기 들어 매출이 23.51억원으로 재차 감소하고 영업손실은 35.86억원, 순손실은 30.52억원으로 다시 확대됐다. 최근 4개 분기(2025년 3분기~2026년 2분기) 누적 지배주주순손실은 177.72억원에 달한다. 자본 측면에서는 지배주주지분이 2022년 43.37억원에서 2023년 142.93억원, 2024년 101.97억원, 2025년 171.97억원으로 등락을 보였는데, 이는 실적 악화를 상쇄하는 반복적 유상증자의 결과로 해석된다. 부채비율은 2022년 313.3%에서 2023년 191.3%로 낮아진 뒤 2024년 218.6%로 다시 높아졌다가 2025년 141.7%로 개선됐다. 영업활동현금흐름은 2022년부터 2025년까지 매년 마이너스를 지속했으며 2025년에는 -109.63억원으로 2024년(-102.06억원)보다 유출 규모가 커졌다.",
-  "en": "Consolidated revenue fell to KRW 10.484 billion in 2025 from KRW 12.014 billion in 2024, continuing a sharp two-year decline from the 2023 peak of KRW 23.978 billion. The operating loss widened for three straight years, from KRW 1.786 billion in 2023 to KRW 11.726 billion in 2024 and KRW 13.366 billion in 2025, pushing the operating margin from -7.4% in 2023 to -97.6% in 2024 and -127.5% in 2025. Net loss attributable to owners jumped from KRW 8.822 billion in 2024 to KRW 21.198 billion in 2025, with the fourth quarter of 2025 (revenue of KRW 4.238 billion) standing out for a particularly large net loss of KRW 8.891 billion that drove much of the annual deterioration. Losses then narrowed somewhat in the first quarter of 2026, with revenue of KRW 2.849 billion, an operating loss of KRW 2.161 billion, and a net loss of KRW 2.700 billion, before widening again in the second quarter of 2026 as revenue slipped to KRW 2.351 billion, the operating loss expanded to KRW 3.586 billion, and the net loss reached KRW 3.052 billion. Over the trailing four quarters from the third quarter of 2025 through the second quarter of 2026, cumulative net loss attributable to owners totaled KRW 17.772 billion. On the balance sheet, equity attributable to owners fluctuated from KRW 4.337 billion in 2022 to KRW 14.293 billion in 2023, KRW 10.197 billion in 2024, and KRW 17.197 billion in 2025, a pattern consistent with repeated capital injections offsetting ongoing losses. The debt ratio eased from 313.3% in 2022 to 191.3% in 2023, rose again to 218.6% in 2024, then improved to 141.7% in 2025. Operating cash flow remained negative throughout 2022–2025, with the 2025 outflow of KRW 10.963 billion exceeding the KRW 10.206 billion outflow recorded in 2024."
+  "ko": "연간 공시 실적에서 매출은 2022년 119억원에서 2023년 240억원(전년 대비 101.6% 증가)으로 정점을 찍은 뒤, 2024년 120억원(전년 대비 49.9% 감소)과 2025년 105억원(전년 대비 12.7% 감소)으로 2년 연속 줄었다. 영업손실은 2022년 63.1억원, 2023년 17.9억원, 2024년 117억원, 2025년 134억원으로 4년 연속 적자다. 2023년에는 손실이 줄었지만 매출이 줄어든 2024년과 2025년에 손실이 다시 커졌다. 영업이익률은 2022년 -53.0%, 2023년 -7.4%, 2024년 -97.6%, 2025년 -127.5%로 나타났다. 지배주주 순손실은 2022년 135억원, 2023년 95.8억원, 2024년 88.2억원, 2025년 212억원이며, 비지배지분을 포함한 당기순손실은 2025년 217억원이다. 두 값은 기준이 다르므로 구분해 읽어야 한다. 2025년 매출·손익 변동 공시에서 회사는 국내 기업의 AI 도입 속도 저조와 교육 관련 정부지원사업 규모 축소를 매출 감소 원인으로 밝혔다. 비용 측면에서는 AI 솔루션 사업 진출에 따른 개발 투자 집중이 원인으로 제시됐다. 분기 매출은 2025년 3분기 23.5억원에서 4분기 42.4억원(전 분기 대비 80.1% 증가)으로 올랐다가 2026년 1분기 28.5억원(전 분기 대비 32.8% 감소), 2분기 23.5억원, 3분기 24.8억원(전년 동기 대비 5.5% 증가)으로 움직였다. 같은 기간 영업손실은 30.1억원, 45.8억원, 21.6억원, 35.9억원, 33.3억원으로 5개 분기 연속 적자다. 2026년 1분기는 디지털데일리가 DART 자료를 토대로 보도한 바에 따르면 지급수수료가 전년 동기 대비 204.2% 늘어 비용을 끌어올렸으나, 매출 증가율이 비용 증가율을 웃돌아 손실률이 개선됐다. 2025년 말 자본총계는 168억원, 부채총계는 238억원이며, 영업활동 현금흐름은 2025년 -110억원으로 2022년 -48.8억원보다 유출 폭이 커졌다.",
+  "en": "In annual results from the regulatory filings, revenue rose from KRW 11.9 billion in 2022 to KRW 24 billion in 2023, a 101.6% increase, before falling to KRW 12 billion in 2024 (down 49.9%) and KRW 10.5 billion in 2025 (down 12.7%). Operating losses were KRW 6.31 billion in 2022, KRW 1.79 billion in 2023, KRW 11.7 billion in 2024 and KRW 13.4 billion in 2025, a four-year run of losses. Losses narrowed in 2023 but widened again in 2024 and 2025 as revenue declined, and the operating margin moved from -53.0% in 2022 to -7.4% in 2023, then -97.6% in 2024 and -127.5% in 2025. Net losses attributable to controlling shareholders were KRW 13.5 billion, KRW 9.58 billion, KRW 8.82 billion and KRW 21.2 billion for 2022 through 2025, while total net loss including non-controlling interests was KRW 21.7 billion in 2025; the two measures differ and should be read separately. In the February 2026 disclosure on the 2025 change, the company attributed the revenue decline to slow domestic AI adoption and a smaller government-funded education program, and cited development spending for its AI solutions business as a cost driver. Quarterly revenue moved from KRW 2.35 billion in the third quarter of 2025 to KRW 4.24 billion in the fourth quarter (up 80.1% quarter on quarter), then KRW 2.85 billion in the first quarter of 2026 (down 32.8%), KRW 2.35 billion in the second quarter and KRW 2.48 billion in the third quarter (up 5.5% year on year). Operating losses over the same five quarters were KRW 3.01 billion, KRW 4.58 billion, KRW 2.16 billion, KRW 3.59 billion and KRW 3.33 billion. In the first quarter of 2026, based on DART data reported by Digital Daily, commission fees rose 204.2% and lifted costs, but revenue growth outpaced cost growth, so the loss ratio improved. Total equity at the end of 2025 was KRW 16.8 billion and total liabilities KRW 23.8 billion, and operating cash flow was -KRW 11 billion in 2025 versus -KRW 4.88 billion in 2022."
  },
  "industry": {
-  "ko": "글로벌 데이터라벨링 시장은 2026년 26억 1천만 달러에서 2031년 70억 2천만 달러로 연평균 21.94% 성장할 것으로 전망되며, 파운데이션 모델 개발사와 자율주행·산업 기업들의 고품질 데이터 수요가 성장을 이끌고 있다. 2025년 6월 메타의 스케일AI 150억 달러 인수는 라벨링 인프라를 단순 아웃소싱 상품이 아닌 전략적 경쟁우위 요소로 부각시켰고, 이는 오픈AI와 구글 등이 어노테이션 공급업체를 다변화하도록 자극한 계기로 꼽힌다. 민감 데이터는 사내에 두고 대량 작업만 외부에 맡기는 하이브리드 소싱이 2026년 연 22.48%로 성장하고 있으며, 2025년 기준 아웃소싱 비중은 63.43%로 여전히 높지만 지적재산권 보호 우려와 전문인력 부족으로 예산이 혼합형 모델로 옮겨가는 추세다. 국내에서는 크라우드웍스가 60만명 이상의 작업자 풀을 보유한 최대 규모 플랫폼으로 자리하고 있으나, 자율주행 데이터에 특화된 에이모(AIMMO), 사명을 AIWORKX로 바꾼 옛 테스트웍스 등이 각자의 전문 영역에서 경쟁하고 있다. 시장의 무게중심은 단순 반복 라벨링에서 AI 자동 라벨링 이후의 검수, 의료·법률 등 전문 도메인, AI 응답 품질 평가 같은 고부가 작업으로 이동하고 있다는 점이 산업 전반의 공통된 흐름으로 관찰된다. 이러한 흐름 속에서 크라우드웍스는 데이터 구축뿐 아니라 모델 개발·운영·평가까지 아우르는 엔드투엔드 역량을 차별화 포인트로 제시하고 있다.",
-  "en": "The global data-labeling market is projected to grow from USD 2.61 billion in 2026 to USD 7.02 billion by 2031, a 21.94% compound annual growth rate, driven by foundation-model developers and autonomous-driving and industrial firms seeking high-quality training data. Meta's USD 15 billion acquisition of Scale AI in June 2025 elevated labeling infrastructure from a commoditized outsourcing service to a strategic competitive asset, a shift credited with prompting OpenAI and Google to diversify their annotation vendors. Hybrid sourcing—keeping sensitive data in-house while outsourcing bulk work—grew at a 22.48% rate in 2026, and while outsourcing still accounted for 63.43% of the market in 2025, budgets are shifting toward hybrid models amid intellectual-property concerns and a shortage of domain experts. In Korea, CrowdWorks positions itself as the largest platform with a labeler pool exceeding 600,000, while competitors such as AIMMO, which specializes in autonomous-driving data, and AIWORKX (the rebranded former Testworks) compete in their own niches. A broader industry trend is the shift away from simple repetitive labeling toward higher-value work such as reviewing AI-generated first-pass labels, specialized domains like medicine and law, and evaluating AI response quality. Against this backdrop, CrowdWorks presents its end-to-end capability—spanning data construction, model development, operation, and evaluation—as its point of differentiation."
+  "ko": "국내 AI 학습 데이터 시장은 AI 모델 고도화에 따라 데이터 수요가 늘어나는 구조다. 2022년 2월 ZDNet 보도에 따르면 국내 시장에는 약 700여 곳의 AI 학습 데이터 플랫폼 기업이 있었다. 2022년 1월 전자신문은 크라우드웍스가 데이터 라벨링 업계 강자로 올라서면서 신흥 경쟁업체가 이어지고 있다고 전하며, 시장 진입장벽이 상대적으로 낮다는 점을 이유로 들었다. 전방 수요는 기업의 AI 도입 속도에 좌우된다. 2025년 매출 감소의 원인으로 회사가 든 국내 기업의 AI 도입 속도 저조는 전방 수요가 얼마나 빨리 살아나는지를 보여 주는 지점이다. 정부 과제는 반등의 축이 되고 있다. 2026년 5월 22일 머니투데이 보도 제목은 국책과제 수주 규모가 작년의 7배라는 내용이었다. 피지컬 AI는 새 수요처로 떠오르고 있다. 회사는 2026년 5월 사내에 피지컬 AI 데이터랩을 신설해 휴머노이드 로봇과 원격 조작 장비를 활용한 데이터 연구에 나섰다. 제조 데이터 확보도 업황 대응 축이다. 회사는 제조업 데이터 수집의 중요성을 들어 대양금속 지분 취득을 설명했다. 사업 축별 방향은 엇갈린다. 2026년 1분기 AI 데이터 매출은 55.5% 줄었고 LLM 데이터 매출은 49.9% 늘었다. 같은 업종의 대형 IT서비스 기업과 비교하면 크라우드웍스는 매출 규모와 재무 체력에서 차이가 크다는 점이 구조적 특징이다.",
+  "en": "Demand for AI training data in Korea rises as AI models grow more sophisticated. A February 2022 ZDNet report counted about 700 AI training data platform companies in the domestic market. In January 2022, the Electronic Times reported that new competitors keep appearing as CrowdWorks rose to the top of the data labeling industry, citing a comparatively low barrier to entry. Downstream demand depends on how fast companies adopt AI, and the company's own explanation for the 2025 revenue decline, slow domestic AI adoption, shows how closely the business tracks that pace. Government projects have become a rebound lever: a May 22, 2026 Money Today headline said national project awards had reached seven times the prior year's level. Physical AI is emerging as a new demand source; in May 2026 the company set up a physical AI data lab inside the firm to research data from humanoid robots and remote manipulation equipment. Securing manufacturing data is another response to the cycle, and the company linked its stake purchase in a stainless steel maker to the importance of manufacturing data collection. Direction varies by business line: AI data revenue fell 55.5% in the first quarter of 2026 while LLM data revenue rose 49.9%. Compared with large IT services companies in the same sector, the scale of revenue and financial capacity differ widely, which is a structural feature of the company."
  },
  "outlook": {
-  "ko": "회사는 2026년 4월 UNIST 주관 컨소시엄에 참여해 '초거대 산업 AI 연구지원사업' 조선 분야 수행기관으로 선정됐으며, 이 사업은 2030년까지 총 403억원이 투입돼 HD현대중공업, HD한국조선해양과 협력해 조선업 특화 데이터셋을 구축하는 것을 목표로 한다. 같은 해 5월 서울 코엑스 AI EXPO KOREA 2026에서는 RAG 성능 저하 문제를 겨냥한 자체 특허 기술 '알피 날리지 컴파일러'와 정밀 데이터 구축 플랫폼 '워크스테이지'를 시연하며 기업용 데이터 전처리·검수 역량을 알렸다. 지배구조 측면에서는 2026년 2월 임시주주총회에서 신규 이사진이 선임되며 최대주주 변경과 대표이사 교체가 동시에 이뤄졌는데, 새 경영진에게 주어진 최우선 과제는 수년째 이어진 적자 기조에서 수익성을 회복하는 것으로 평가된다. 회사는 2025년 12월 주주서한에서 유상증자로 조달한 자금을 기존 AI 사업과 시너지를 내고 수익성이 검증된 기업 인수에 사용하겠다고 밝혔으나, 구체적인 인수 대상은 아직 확정·공시되지 않았다. 다만 2026년 2월 임시주총에서는 탄약·유도무기 부품, 통신기기 제조, 연예인·스포츠 매니지먼트, 공연 사업 등 기존 AI 데이터 사업과 무관한 사업목적이 정관에 추가돼, 신규 경영진이 실제로 어떤 방향을 택할지는 아직 불확실하다. 회가 확보한 M&A 활용 가용 현금은 약 90억원 안팎으로 추산되며, 앞선 주주배정 유상증자로 조달한 230억원은 전액 운영자금으로 사용하도록 이미 공시된 상태다.",
-  "en": "In April 2026 the company was selected, as part of a UNIST-led consortium, to participate in a shipbuilding-focused 'hyperscale industrial AI' research support project backed by a total of KRW 40.3 billion in government funding through 2030, working alongside HD Hyundai Heavy Industries and HD Korea Shipbuilding & Offshore Engineering to build shipbuilding-specific datasets. That May, at AI EXPO KOREA 2026 in Seoul, the company demonstrated its patented Alpy Knowledge Compiler, aimed at the performance degradation problem in RAG systems, along with its Workstage data-construction platform, showcasing its enterprise data preprocessing and review capabilities. On governance, an extraordinary shareholders' meeting in February 2026 saw new directors installed alongside a simultaneous change in controlling shareholder and CEO, with the new management's top priority widely seen as reversing years of operating losses. In a December 2025 shareholder letter the company said funds raised through its capital increase would be directed toward acquiring a profitable business with synergies to its existing AI operations, though no specific acquisition target has been confirmed or disclosed as of this report. However, the February 2026 extraordinary meeting also added business purposes unrelated to AI data—including ammunition and guided-weapon components, communications equipment manufacturing, and entertainment and performance management—to the company's articles of incorporation, leaving the new management's actual strategic direction uncertain. Cash available for M&A is estimated at roughly KRW 9 billion, while the separate KRW 23 billion raised through the earlier rights offering has already been earmarked entirely for operating expenses."
+  "ko": "회사가 제시한 사업 방향은 세 갈래다. 피지컬 AI 데이터, 제조 AI 데이터, 기업용 LLM·에이전트 평가 데이터다. 에이전트 실행 과정을 평가하고 로봇 움직임을 학습 데이터로 만드는 사업을 추진 중이라고 전해졌다. 조선업 초거대 AI 사업(403억원 규모)에서 회사는 설계 도면, 작업 지시서, 현장 영상, 센서 데이터 등을 AI 학습용 데이터로 정제·구축하는 역할을 맡는다. 과학기술정보통신부 독자 AI 파운데이션 모델 프로젝트에서는 3,000억(300B) 추론형 모델의 핵심 데이터 공급을 전담한다. 2026년 들어 제3자배정 유상증자가 1월 약 40억원, 2월 약 50억원 규모로 이어졌고, 5월에는 소액공모 유상증자(약 10억원 규모)가 있었다. 대양금속 지분 4.8%(120억원)는 2026년 8월 이사회에서 결정됐고 양수 예정일은 2026년 8월 10일이었다. 이 거래는 공동경영 참여를 수반하며, 회사는 대양금속과의 협업을 통한 수익화 방안을 내부 검토 중이라고 밝혔다. 자금 측면에서 2026년 1분기 말 현금및현금성자산은 약 75억원 수준이었고, 지분 대금 120억원은 2025년 말 자기자본의 71%에 해당한다. 다음 확인 지점은 2026년 사업보고서다. 2025년 매출 105억원과 영업손실 134억원을 기준으로, 2026년 영업이익률과 지배주주 순손실 폭이 얼마나 줄었는지가 쟁점이다.",
+  "en": "The company has pointed to three directions: physical AI data, manufacturing AI data, and evaluation data for enterprise LLMs and agents. It is pursuing work that evaluates agent execution and turns robot movements into training data. In the KRW 40.3 billion shipbuilding AI project, the company refines and builds training data from design drawings, work instructions, site video and sensor data. In the national foundation model project it is the dedicated supplier of core data for the 300B reasoning model. Capital raising continued in 2026, with third-party allotment rights offerings of roughly KRW 4 billion in January and KRW 5 billion in February, followed by a small public offering of about KRW 1 billion in May. The KRW 12 billion purchase of a 4.8% stake was approved by the board on August 6, 2026, with the transfer scheduled for August 10, 2026. The deal involves joint management participation, and the company said it is internally reviewing ways to generate revenue through collaboration with the stainless steel maker. On liquidity, cash and cash equivalents were about KRW 7.5 billion at the end of the first quarter of 2026, and the stake payment equaled 71% of year-end 2025 total equity. The next checkpoint is the 2026 annual business report. Against 2025 revenue of KRW 10.5 billion and an operating loss of KRW 13.4 billion, the key question is how far the 2026 operating margin and controlling-shareholder net loss narrow."
  },
  "valuation_comment": {
-  "ko": "크라우드웍스는 수년째 순손실을 기록하고 있어 통상적인 주가수익비율 산정이 불가능한 구간에 있으며, 이 때문에 밸류에이션 논의는 자연히 주가와 순자산의 관계에 집중된다. 주가순자산비율은 순자산 대비 크게 할인되지도, 크게 프리미엄이 붙지도 않은 수준에서 형성되어 있는 것으로 파악되며, 반복된 유상증자로 주당 순자산 자체가 여러 차례 변동해온 점을 함께 고려할 필요가 있다. 회사는 현재 배당을 지급하지 않고 있어 배당 관련 논의는 해당되지 않는다. 상장 초기 고평가 국면을 지나 실적 부진과 지배구조 불확실성이 겹치며 시장의 관심이 성장성보다 재무 안정성과 경영 투명성 쪽으로 옮겨간 것으로 보인다. 향후 밸류에이션의 방향은 매출 회복 속도, 영업손실률의 개선 여부, 그리고 예고된 M&A의 실현 여부에 따라 갈릴 것으로 판단된다.",
-  "en": "CrowdWorks has posted net losses for years, putting it in a range where a conventional price-to-earnings ratio cannot be meaningfully calculated, so valuation discussion naturally centers on the relationship between share price and net assets. The price-to-book ratio appears to sit at a level that is neither deeply discounted nor richly premium to net asset value, though it should be considered alongside the fact that book value per share itself has shifted repeatedly due to successive capital raises. The company currently pays no dividend, so dividend-related comparisons do not apply. Having moved past an early post-listing period of elevated valuation, market attention appears to have shifted from growth expectations toward financial stability and governance transparency amid weak earnings and ownership uncertainty. Where the valuation heads from here is likely to hinge on the pace of revenue recovery, whether the operating loss ratio improves, and whether the previously announced M&A plans materialize."
+  "ko": "최근 4개 분기 지배주주 순손실이 이어지고 있어 주가수익비율(PER)은 산출되지 않는다. 이익 기반 배수가 성립하지 않는 구간에서는 장부가치와 자산 구조를 함께 보는 것이 일반적인 비교 방식이다. 주가순자산비율(PBR)은 순자산에 가까운 수준에 있어 장부가치 대비 큰 프리미엄이 붙은 구간은 아니다. 배당수익률은 업종 평균을 밑도는 수준이다. 자본 흐름을 보면 부채비율은 2022년 313.3%에서 2025년 141.7%로 낮아졌지만, 2026년 들어 유상증자가 이어진 점이 자본 기반을 뒷받침한 요인이다. 같은 업종 대형 IT서비스 기업과의 할인이나 프리미엄 여부는 사업 규모와 수익 구조 차이 때문에 단순 비교가 어렵다. 밸류에이션 해석의 핵심 쟁점은 이익 회복 여부다. 적자에서 흑자로 전환되기 전까지 수익 기반 배수는 의미 있게 산출되지 않으며, 자산 기준 지표가 주된 비교 축으로 남는다.",
+  "en": "Net losses attributable to controlling shareholders have continued over the last four quarters, so the price-to-earnings ratio cannot be calculated. When earnings-based multiples do not apply, the usual comparison shifts to book value and asset structure. The price-to-book ratio sits near net asset value, so the stock does not carry a large premium over book value. The dividend yield is below the industry average. On the capital side, the debt-to-equity ratio fell from 313.3% in 2022 to 141.7% in 2025, and the 2026 rights offerings supported the capital base. Whether the stock trades at a discount or premium to large IT services peers is hard to compare directly because of differences in scale and earnings structure. The central question for valuation is whether earnings recover: until the business moves from losses to profit, earnings-based multiples will not be meaningful, and asset-based measures remain the main point of comparison."
  },
  "bull": [
   {
    "title": {
-    "ko": "산업특화 데이터 수주 확대",
-    "en": "Expanding industry-specific data contracts"
+    "ko": "피지컬 AI·국책 과제로 사업 축 확대",
+    "en": "Expansion into physical AI and national projects"
    },
    "body": {
-    "ko": "UNIST 주관 컨소시엄을 통한 조선업 AI 국책과제(2030년까지 총 403억원) 참여는 정부 지원사업 기반의 안정적 수주처를 확보했다는 의미가 있다. HD현대중공업, HD한국조선해양 등 대형 조선사와의 협력 경험은 향후 유사한 산업 특화 프로젝트 수주로 이어질 가능성을 보여준다. 회사가 보유한 알피 날리지 컴파일러 등 비정형 데이터 전처리 기술은 제조·조선 등 보안이 중요한 산업군에서 차별화 요소로 작용할 수 있다.",
-    "en": "Participation in the UNIST-led shipbuilding AI project, backed by KRW 40.3 billion in government funding through 2030, gives the company a stable, government-supported revenue stream. Its collaboration with major shipbuilders such as HD Hyundai Heavy Industries and HD Korea Shipbuilding & Offshore Engineering illustrates the potential for further industry-specific project wins. Proprietary technology such as the Alpy Knowledge Compiler for unstructured data preprocessing could serve as a differentiator in security-sensitive sectors such as manufacturing and shipbuilding."
+    "ko": "과학기술정보통신부 독자 AI 파운데이션 모델 프로젝트에서 핵심 데이터 공급을 맡았고, 403억원 규모 조선업 초거대 AI 사업에서는 데이터 구축을 총괄하는 역할을 맡았다. 2026년 5월에는 피지컬 AI 데이터랩을 신설했다. 국책 과제 수주 규모가 작년의 7배라는 보도도 나왔다.",
+    "en": "The company supplies core data for a national foundation model project and takes the lead on data construction in a KRW 40.3 billion shipbuilding AI project. It set up a physical AI data lab in May 2026. A Money Today report said national project awards had reached seven times the prior year's level."
    }
   },
   {
    "title": {
-    "ko": "대형 고객 기반과 브랜드 인지도",
-    "en": "Large client base and brand recognition"
+    "ko": "LLM 데이터 성장과 1분기 손실률 개선",
+    "en": "LLM data growth and a narrower first-quarter loss ratio"
    },
    "body": {
-    "ko": "네이버, 삼성전자, 크래프톤 등 약 430여개 기업을 고객으로 확보하고 있으며, 회사 스스로는 코스피 상위 30대 기술기업의 70% 이상이 모델 개발에 자사를 선택했다고 밝히고 있다. 가트너로부터 오픈AI, 구글, 마이크로소프트와 함께 금융권 생성형 AI 대표 공급기업으로 평가받은 경험은 대외 신뢰도 제고에 도움이 될 수 있다. 60만명 이상의 작업자 풀은 국내 최대 규모로, 신규 프로젝트 수행 시 확장성 측면에서 강점이 될 수 있다.",
-    "en": "The company counts roughly 430 clients including Naver, Samsung Electronics, and Krafton, and states that more than 70% of KOSPI's top 30 technology firms have chosen it for model development. Having been named alongside OpenAI, Google, and Microsoft as a leading generative AI vendor for the financial sector by Gartner may help bolster external credibility. Its labeler pool of over 600,000 is the largest domestically, offering scalability advantages when taking on new projects."
+    "ko": "2026년 1분기 매출은 28억 4,934만원으로 전년 동기 대비 50% 늘었고, LLM 데이터 매출은 49.9% 늘었다. 영업손실은 21억 6,074만원으로 전년 동기 대비 22% 줄었다. 영업손실률은 -145.9%에서 -75.8%로 낮아졌다.",
+    "en": "First-quarter 2026 revenue of KRW 2.85 billion rose 50% year on year, with LLM data revenue up 49.9%. The operating loss narrowed 22% to KRW 2.16 billion, and the operating loss ratio improved from -145.9% to -75.8%."
    }
   },
   {
    "title": {
-    "ko": "반복 증자를 통한 재무구조 개선",
-    "en": "Improved balance sheet from repeated capital raises"
+    "ko": "제조 데이터 확보와 자본 기반 보강",
+    "en": "Manufacturing data access and a stronger capital base"
    },
    "body": {
-    "ko": "부채비율은 2022년 313.3%에서 2025년 141.7%로 뚜렷하게 낮아졌으며, 이는 반복된 유상증자를 통한 자본 확충의 결과다. 새 최대주주 측이 확보한 현금은 향후 시너지·수익성이 검증된 기업 인수에 활용될 계획으로 공시된 바 있어, 자체 사업 확장 외에 M&A를 통한 외형·손익 개선 경로도 열려 있다.",
-    "en": "The debt ratio has fallen markedly from 313.3% in 2022 to 141.7% in 2025, reflecting repeated equity capital injections. The new controlling shareholder has disclosed plans to use available cash for acquiring a business with proven profitability and synergy with the existing AI operations, opening a potential path to improved scale and earnings through M&A in addition to organic growth."
+    "ko": "대양금속 지분 4.8%를 120억원에 양수해 제조업 데이터 확보와 공동경영 참여를 추진한다고 2026년 8월 공시했다. 2026년 초에는 제3자배정 유상증자로 자본을 보강했다. 부채비율은 2022년 313.3%에서 2025년 141.7%로 낮아졌다.",
+    "en": "In August 2026 the company disclosed the KRW 12 billion purchase of a 4.8% stake in a stainless steel maker to secure manufacturing data and join joint management. Third-party allotment rights offerings in early 2026 added capital, and the debt-to-equity ratio fell from 313.3% in 2022 to 141.7% in 2025."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "매출 정점 이후 지속된 감소",
-    "en": "Sustained revenue decline since the 2023 peak"
+    "ko": "적자 지속과 손실 확대",
+    "en": "Persistent losses and wider losses"
    },
    "body": {
-    "ko": "매출은 2023년 239.78억원까지 늘었다가 2024년 120.14억원, 2025년 104.84억원으로 2년 연속 크게 줄었다. 같은 기간 영업손실률은 -7.4%에서 -127.5%까지 악화됐다. 2026년 1분기 손실 개선 흐름도 2분기에 재차 매출 감소와 손실 확대로 되돌아가며 회복이 아직 일관되지 않은 모습을 보이고 있다.",
-    "en": "Revenue rose to KRW 23.978 billion in 2023 before falling sharply for two consecutive years to KRW 12.014 billion in 2024 and KRW 10.484 billion in 2025. Over the same period the operating margin deteriorated from -7.4% to -127.5%. The improvement seen in the first quarter of 2026 also reversed in the second quarter, with revenue declining again and losses widening, showing that any recovery has not yet been consistent."
+    "ko": "2025년 영업손실은 134억원으로 2022년 63.1억원보다 커졌다. 지배주주 순손실은 2025년 212억원으로 2024년 88.2억원에서 크게 확대됐다. 최근 4개 분기 지배주주 순손실 합계는 186억원이며, 5개 분기 연속 영업손실이 이어지고 있다.",
+    "en": "The 2025 operating loss of KRW 13.4 billion was larger than the KRW 6.31 billion in 2022. Controlling-shareholder net loss widened to KRW 21.2 billion in 2025 from KRW 8.82 billion in 2024. Controlling-shareholder net losses totaled KRW 18.6 billion over the last four quarters, with operating losses in five straight quarters."
    }
   },
   {
    "title": {
-    "ko": "지배구조 불확실성",
-    "en": "Governance uncertainty"
+    "ko": "매출 감소와 현금 유출 확대",
+    "en": "Falling revenue and wider cash outflows"
    },
    "body": {
-    "ko": "2025년 12월부터 2026년 2월까지 이어진 최대주주·대표이사 교체 과정에서 새 최대주주 측인 엑스알피1호조합의 자금 출처가 명확히 공개되지 않았다는 지적이 나왔다. 유상증자 대금 납입 일정이 여러 차례 정정되고 구주 매각가가 하향 조정되는 등 인수 과정 자체가 순탄치 않았다. 신규 이사진 다수가 본업인 AI 데이터·솔루션 사업과의 직접적 연관성이 크지 않다는 평가도 나오고 있다.",
-    "en": "During the shareholder and CEO transition from December 2025 to February 2026, questions were raised about the lack of clear disclosure regarding the funding sources of the new controlling entity, XRP1 Association. The acquisition process itself was not smooth, with the capital-raise payment schedule revised multiple times and the price of the founder's stake sale lowered. There have also been assessments that many of the newly appointed directors lack direct experience relevant to the core AI data and solutions business."
+    "ko": "매출은 2023년 240억원을 정점으로 2024년 120억원, 2025년 105억원으로 2년 연속 줄었다. 영업활동 현금흐름은 2025년 -110억원으로 2022년 -48.8억원보다 유출 폭이 커졌다. 2026년 1분기 말 현금및현금성자산은 약 75억원 수준이다.",
+    "en": "Revenue peaked at KRW 24 billion in 2023 and then fell to KRW 12 billion in 2024 and KRW 10.5 billion in 2025. Operating cash flow was -KRW 11 billion in 2025, a larger outflow than the -KRW 4.88 billion of 2022. Cash and cash equivalents were about KRW 7.5 billion at the end of the first quarter of 2026."
    }
   },
   {
    "title": {
-    "ko": "본업과 무관한 사업목적 확대",
-    "en": "Expansion into business areas unrelated to the core"
+    "ko": "대규모 자금 집행과 유동성 부담",
+    "en": "Large cash outlay and liquidity pressure"
    },
    "body": {
-    "ko": "2026년 2월 임시주주총회에서 탄약·유도무기 부품, 통신기기 제조, 연예인·스포츠 매니지먼트, 공연 사업 등이 정관상 사업목적으로 추가됐다. 이는 기존 AI 데이터 사업과 직접적인 연관성이 뚜렷하지 않아, 신규 경영진이 본업 집중 대신 이종사업 진출을 택할 가능성에 대한 우려를 낳고 있다.",
-    "en": "At the February 2026 extraordinary shareholders' meeting, business purposes including ammunition and guided-weapon components, communications equipment manufacturing, and entertainment and performance management were added to the articles of incorporation. Because these lack a clear connection to the existing AI data business, they have raised concerns that new management might pursue unrelated diversification rather than focusing on the core business."
+    "ko": "대양금속 지분 취득 대금 120억원은 2025년 말 자기자본의 71%에 해당한다. 이투데이 보도에 따르면 시장은 이 집행이 유동성에 미칠 영향을 주시하고 있으며, 누적 결손금은 329억원에 달한다.",
+    "en": "The KRW 12 billion stake purchase equals 71% of year-end 2025 total equity. According to an eToday report, the market is watching its effect on liquidity, and accumulated deficit reached KRW 32.9 billion."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "자본조달·희석 리스크",
-    "en": "Capital raising and dilution risk"
+    "ko": "유동성·자금 조달",
+    "en": "Liquidity and funding"
    },
    "body": {
-    "ko": "2024년 8월, 2025년 12월, 2026년 4월 세 차례에 걸쳐 유상증자가 이뤄지며 발행주식수가 지속적으로 늘었다. 영업활동현금흐름이 2022년부터 2025년까지 매년 마이너스를 기록하고 있어, 추가적인 외부 자금조달 필요성이 이어질 가능성을 배제할 수 없다. 향후 증자가 반복될 경우 기존 주주의 지분 희석이 추가로 발생할 수 있다.",
-    "en": "Rights and third-party capital increases in August 2024, December 2025, and April 2026 have continuously expanded the share count. Operating cash flow has been negative every year from 2022 through 2025, so the possibility of further need for external funding cannot be ruled out. Additional capital raises going forward could further dilute existing shareholders."
+    "ko": "현금성 자산이 약 75억원인 상태에서 대규모 지분 투자를 집행해 운전자금 관리 부담이 커졌다. 2026년 들어 유상증자가 여러 차례 이어졌고, 추가 자금 조달이 필요해지면 기존 주주 지분이 희석될 가능성이 있다.",
+    "en": "After a large stake purchase, working capital management has become more demanding with cash and equivalents at about KRW 7.5 billion. Several rights offerings in 2026 show repeated fundraising, and further capital raises could dilute existing shareholders."
    }
   },
   {
    "cat": {
-    "ko": "경쟁 심화 및 단가 하락 리스크",
-    "en": "Intensifying competition and pricing pressure"
+    "ko": "지배구조·경영 변화",
+    "en": "Governance and management change"
    },
    "body": {
-    "ko": "AI 자동 라벨링 확산으로 단순 반복 작업의 단가가 낮아지는 추세이며, 국내에서는 에이모, AIWORKX 등 특화 경쟁사와의 경쟁이 심화되고 있다. 하이브리드 소싱 확산에 따라 대형 고객사들이 민감 데이터를 사내에서 처리하려는 경향이 강해질 경우 외부 아웃소싱 수요가 줄어들 가능성도 있다.",
-    "en": "As AI auto-labeling spreads, pricing for simple repetitive tasks has trended lower, and domestic competition from specialized rivals such as AIMMO and AIWORKX is intensifying. If large clients increasingly process sensitive data in-house as hybrid sourcing spreads, external outsourcing demand could decline."
+    "ko": "2026년 2월 최대주주가 공동창업자 박민우 대표 측에서 엑스알피1호조합으로 바뀌었고, 대표이사도 김광일로 교체됐다. 전략 방향이 바뀌는 과정에서 사업 연속성과 실행 속도에 대한 불확실성이 남아 있다.",
+    "en": "In February 2026 the largest shareholder changed from a co-founder's holding to a new investment fund, and the CEO was replaced by Kim Kwang-il. The business continuity and execution speed of the strategy remain uncertain during this transition."
    }
   },
   {
    "cat": {
-    "ko": "지배구조·전략 실행 리스크",
-    "en": "Governance and strategy execution risk"
+    "ko": "수요·경쟁 구조",
+    "en": "Demand and competition"
    },
    "body": {
-    "ko": "새 최대주주 측의 자금 출처 불투명성 논란과 신규 이사진의 본업 연관성 부족 지적이 이어지고 있다. 정관상 사업목적에 AI 데이터와 무관한 항목이 다수 추가된 상태에서, 실제 M&A나 신사업 추진이 본업 경쟁력 강화로 이어질지 아니면 사업 방향의 분산으로 이어질지는 아직 판가름나지 않았다.",
-    "en": "Controversy over the funding transparency of the new controlling shareholder and concerns about the limited relevance of newly appointed directors to the core business persist. With multiple business purposes unrelated to AI data now added to the articles of incorporation, it remains undetermined whether actual M&A or new-business initiatives will strengthen the core business or instead lead to strategic dispersion."
+    "ko": "국내 기업의 AI 도입 속도 저조와 정부지원 교육사업 축소가 2025년 매출 감소 원인으로 공시됐다. 2022년 기준 약 700여 곳으로 집계된 시장에서 진입장벽이 낮아 신흥 경쟁이 이어지고 있다.",
+    "en": "The disclosed reasons for the 2025 revenue decline were slow domestic AI adoption and a smaller government-funded education program. The market had about 700 platform companies in 2022 and a comparatively low barrier to entry, so new competitors keep emerging."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중순",
-    "en": "Mid-November 2026"
+    "ko": "2026년 12월 31일",
+    "en": "December 31, 2026"
    },
    "what": {
-    "ko": "2026년 3분기보고서 공시 예정 시점으로, 매출 회복 지속 여부와 영업손실률 추이를 확인할 필요가 있다.",
-    "en": "The third-quarter 2026 report is expected around this time, offering a check on whether revenue recovery continues and how the operating loss ratio trends."
+    "ko": "2026 회계연도 말이다. 이후 공시에서 자금 잔고와 대양금속 지분 취득 이후의 재무 구조 변화가 확인된다.",
+    "en": "This is the end of fiscal 2026. Later filings will show cash balances and how the balance sheet changed after the stake purchase."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기 중",
-    "en": "Fourth quarter of 2026"
+    "ko": "2027년 2월 말 전후(2026년 2월 24일 공시 전례 기준)",
+    "en": "Around late February 2027 (based on the February 24, 2026 disclosure precedent)"
    },
    "what": {
-    "ko": "회사가 예고한 시너지·수익성 기업 인수 대상이 확정·공시되는지, 그리고 인수 조건과 자금 사용처가 어떻게 구체화되는지 확인이 필요하다.",
-    "en": "Watch for whether the previously flagged acquisition target with synergy and proven profitability is finalized and disclosed, and how the deal terms and use of funds are specified."
+    "ko": "2025년 4분기 매출·손익 변동 공시가 2026년 2월 24일에 나온 전례가 있어, 2026년 4분기 매출과 영업손실 변동이 같은 방식으로 공시되는지가 확인 지점이다.",
+    "en": "A revenue and profit change disclosure for the fourth quarter of 2025 came on February 24, 2026. Whether the fourth quarter of 2026 follows the same pattern is the next check point."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 이후",
-    "en": "From the second half of 2026 onward"
+    "ko": "2027년 3월 31일",
+    "en": "March 31, 2027"
    },
    "what": {
-    "ko": "UNIST 컨소시엄 조선업 AI 국책과제의 초기 데이터 구축 마일스톤 달성 여부와 후속 계약 확대 가능성을 점검할 필요가 있다.",
-    "en": "Monitor whether the initial data-construction milestones of the UNIST consortium's shipbuilding AI project are met and whether follow-on contracts materialize."
+    "ko": "2026년 사업보고서 제출 기한이다. 2025년 매출 105억원과 영업손실 134억원과 비교해 2026년 영업이익률과 지배주주 순손실 폭이 확인된다.",
+    "en": "This is the filing deadline for the 2026 annual business report. Comparing against 2025 revenue of KRW 10.5 billion and an operating loss of KRW 13.4 billion will show the 2026 operating margin and controlling-shareholder net loss."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기 중",
-    "en": "Fourth quarter of 2026"
+    "ko": "2026년 12월 이후(발표 시점 미정)",
+    "en": "After December 2026 (timing not yet set)"
    },
    "what": {
-    "ko": "정관에 추가된 탄약·유도무기 부품, 엔터테인먼트 등 신규 사업목적과 관련해 신규 경영진이 실제 진출을 추진하는지, 혹은 본업 집중 전략을 재확인하는지 확인이 필요하다.",
-    "en": "Check whether new management actually moves to pursue the newly added business purposes—such as ammunition/guided-weapon components or entertainment—or instead reaffirms a focus on the core AI data business."
-   }
-  },
-  {
-   "when": {
-    "ko": "지속 모니터링",
-    "en": "Ongoing monitoring"
-   },
-   "what": {
-    "ko": "영업활동현금흐름이 수년째 마이너스인 만큼, 추가 유상증자나 전환사채 발행 등 자본조달 공시 여부와 지분 희석 정도를 지속적으로 살펴볼 필요가 있다.",
-    "en": "Given years of negative operating cash flow, continue to watch for disclosures of further capital raises or convertible bond issuances and the resulting degree of shareholder dilution."
+    "ko": "대양금속과의 협업을 통한 수익화 방안을 공개할지 여부가 확인 지점이다. 제조 데이터 사업이 매출로 이어지는지가 중요한 판단 근거가 된다.",
+    "en": "Whether the company discloses concrete revenue plans from its collaboration with the stainless steel maker is the next point to watch. Whether manufacturing data converts into sales will be the key evidence."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "크라우드웍스는 2023년 매출 정점 이후 2년 연속 외형이 축소되고 영업손실률이 -127.5%까지 악화된 상태에서, 2025년 말부터 2026년 초까지 최대주주와 대표이사가 동시에 교체되는 전환기를 지나고 있다. 조선업 AI 국책과제 참여와 알피 날리지 컴파일러 등 자체 기술을 통한 산업특화 데이터 사업 확장은 긍정적 신호지만, 신규 경영진의 자금 출처 투명성 논란과 본업과 무관한 사업목적 추가는 전략의 일관성에 대한 의문을 남긴다. 반복된 유상증자로 부채비율은 개선됐으나 발행주식수 증가와 지분 희석은 계속되고 있으며, 영업활동현금흐름은 4년 연속 마이너스를 벗어나지 못했다. 글로벌 데이터라벨링 시장은 여전히 두 자릿수 성장률을 보이고 있어 산업 자체의 기회는 열려 있지만, 국내 경쟁사와의 차별화와 자동 라벨링 확산에 대한 대응이 관전 포인트로 남아 있다. 향후 관전 포인트는 예고된 M&A의 구체화 여부, 3분기 실적을 통한 매출·손익 추이의 방향성, 그리고 신규 경영진이 본업 집중과 신사업 확장 사이에서 어떤 선택을 하는지다.",
-   "en": "Since peaking in 2023, CrowdWorks has seen two consecutive years of contracting revenue and a deteriorating operating margin that reached -127.5% in 2025, all while navigating a transition in which both its controlling shareholder and CEO changed between late 2025 and early 2026. Its participation in a government-backed shipbuilding AI project and expansion of industry-specific data services through proprietary technology such as the Alpy Knowledge Compiler are positive developments, but controversy over the new management's funding transparency and the addition of business purposes unrelated to its core operations leave questions about strategic consistency. Repeated capital raises have improved the debt ratio but have also continued to increase the share count and dilute existing holders, while operating cash flow has remained negative for four consecutive years. The global data-labeling market continues to grow at double-digit rates, keeping the broader industry opportunity open, but how the company differentiates itself from domestic rivals and responds to the spread of automated labeling remains to be seen. Key things to watch going forward include whether the previously announced M&A materializes, the direction of revenue and profitability in the upcoming third-quarter results, and whether new management ultimately chooses to focus on the core business or pursue unrelated diversification."
+   "ko": "크라우드웍스는 2023년 240억원을 정점으로 매출이 감소한 뒤 2026년 1분기에 전년 동기 대비 50% 증가를 기록하며 외형 반등 신호를 보이고 있다. 그러나 2022년부터 2025년까지 영업손실이 4년 연속 이어졌고, 2025년 영업이익률은 -127.5%다. 2025년 3분기부터 5개 분기 연속 영업손실이 이어지고 있어 수익 구조 전환은 아직 확인되지 않은 과제다. 사업 측면에서는 LLM 데이터와 국책 과제, 피지컬 AI 데이터가 새 축으로 제시되지만, AI 데이터 매출은 같은 시기 55.5% 줄었다. 재무 측면에서는 부채비율이 2022년 313.3%에서 2025년 141.7%로 낮아졌으나, 2026년 들어 유상증자가 이어졌고 2026년 8월 대양금속 지분 취득 대금 120억원이 자기자본의 71%에 해당했다. 밸류에이션 측면에서는 이익 기반 지표가 산출되지 않아 장부가치와 자산 구조가 주된 비교 축이다. 다음 확인 지점은 2026년 사업보고서이며, 그때 영업이익률과 지배주주 순손실 폭이 이 리포트의 핵심 쟁점에 답을 준다.",
+   "en": "CrowdWorks's revenue peaked at KRW 24 billion in 2023 and then declined, and first-quarter 2026 revenue rose 50% year on year, a sign of top-line recovery. Yet operating losses ran for four consecutive years from 2022 to 2025, with a 2025 operating margin of -127.5%, and have continued for five straight quarters since the third quarter of 2025, so a shift in the earnings structure is still an open task. On the business side, LLM data, national projects and physical AI data are presented as new pillars, while AI data revenue fell 55.5% in the same period. On the financial side, the debt-to-equity ratio fell from 313.3% in 2022 to 141.7% in 2025, but rights offerings continued in 2026 and the KRW 12 billion stake purchase in August 2026 equaled 71% of year-end 2025 total equity. On valuation, the absence of an earnings-based multiple leaves book value and asset structure as the main points of comparison. The next checkpoint is the 2026 annual business report, where the operating margin and the size of the controlling-shareholder net loss will show whether the issues raised here are resolving."
   }
  },
  "sources": [
   "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=355390",
-  "https://alphasquare.co.kr/home/stock-summary?code=355390",
-  "https://www.valueline.co.kr/finance/investment/355390",
-  "https://invest.zum.com/stock/355390/",
-  "https://m.thinkpool.com/item/355390",
-  "https://www.investing.com/equities/crowdworks",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Finance.asp?pGB=1&gicode=A355390&cID=&MenuYn=Y&ReportGB=&NewMenuID=103&stkGb=701",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A355390&cID=&MenuYn=Y&ReportGB=B&NewMenuID=Y&stkGb=701",
-  "https://works.crowdworks.kr/",
-  "https://www.how-toai.com/blog/ai-data-labeling-side-job-reality-2026",
-  "https://www.crowdworks.ai/en/data/labeling",
-  "https://industryjournal.co.kr/news/245950",
-  "https://academy.crowdworks.kr/data-labeling",
-  "https://www.osutla.com/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%9D%BC%EB%B2%A8%EB%A7%81-%ED%98%84%EC%8B%A4-%ED%81%AC%EB%9D%BC%EC%9A%B0%EB%93%9C%EC%9B%8D%EC%8A%A4-%ED%85%8D%EC%8A%A4%ED%8A%B8/",
-  "https://www.mt.co.kr/amp/stock/2026/04/14/2026041410359613639",
+  "https://www.ddaily.co.kr/page/view/2026051600354775121",
+  "https://m.news.nate.com/view/20260516n02009",
+  "https://www.etoday.co.kr/news/view/2612159",
+  "https://www.jobkorea.co.kr/company/43426952",
+  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=690695",
+  "https://www.openbizdata.com/crowdworks/",
+  "https://www.saramin.co.kr/zf_user/company-info/view/csn/eE52N0dmQ0F2Y0VrcEtHREtZS2xMQT09/company_nm/(%EC%A3%BC)%ED%81%AC%EB%9D%BC%EC%9A%B0%EB%93%9C%EC%9B%8D%EC%8A%A4",
+  "https://crowdworks.blog/",
+  "https://www.awakeplus.co.kr/data/view/20260224901238",
+  "https://www.datanet.co.kr/news/articleView.html?idxno=154915",
+  "http://www.aitimes.com/news/articleView.html?idxno=142571",
+  "https://www.epnc.co.kr/news/articleView.html?idxno=407979",
+  "https://zdnet.co.kr/view/?no=20220210100257",
+  "https://www.aitimes.com/news/articleView.html?idxno=149129",
   "https://www.itdaily.kr/news/articleView.html?idxno=236097",
-  "https://crowdworks.blog/data-voucher-2026-2/",
-  "https://www.crowdworks.ai/en/"
+  "https://www.hankyung.com/article/202105199096i",
+  "https://www.inews24.com/view/1379649"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "355390",
  "name": "크라우드웍스",
  "name_en": "CrowdWorks, Inc.",
@@ -234,11 +224,11 @@
   "인공지능(AI)"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 18:25",
- "dataDate": "20260904",
+ "reportDate": "2026-11-14",
+ "reportTs": "2026-11-14 15:03",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-09-05",
+  "asOf": "2026-11-14",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -309,12 +299,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 1994226212,
-    "op": -3009080077,
-    "np_owner": -5840157855
-   },
-   {
     "q": "2025Q3",
     "rev": 2352490093,
     "op": -3008108635,
@@ -337,25 +321,31 @@
     "rev": 2350636470,
     "op": -3585508559,
     "np_owner": -3052147847
+   },
+   {
+    "q": "2026Q3",
+    "rev": 2481510820,
+    "op": -3333430613,
+    "np_owner": -3922155680
    }
   ],
   "valuation": {
-   "price": 1323,
-   "mcap": 0.021,
-   "shares": 15874344,
-   "total_shares": 15874344,
-   "wavg_shares": 15338836,
+   "price": 1288,
+   "mcap": 0.0215,
+   "shares": 16697023,
+   "total_shares": 15943444,
+   "wavg_shares": 15528442,
    "per": null,
-   "eps": -1330,
-   "pbr": 0.9742,
-   "bps": 1358,
-   "roe_ttm": -130.5,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": -17771984964,
+   "eps": -1337,
+   "pbr": 1.1838,
+   "bps": 1088,
+   "roe_ttm": -85.6,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": -18565234874,
    "ccy": "KRW",
    "bps_src": "자체",
    "eps_src": "공시",
-   "pbr_krx": 1.05,
+   "pbr_krx": 1.02,
    "bps_krx": 1265.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
@@ -364,5 +354,6 @@
     "per": "loss"
    }
   }
- }
+ },
+ "textRules": 2
 }

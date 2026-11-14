@@ -1,220 +1,219 @@
 {
  "title": {
-  "ko": "코어뱅킹 국내 유일주, 손익 개선 시험대",
-  "en": "Sole Domestic Core Banking Vendor Tests Path to Breakeven"
+  "ko": "매출 회복 속 적자 지속, 이익 체력은 확인 단계",
+  "en": "Revenue recovers, losses persist; profit durability still unproven"
  },
  "lead": {
-  "ko": "국내 유일 코어뱅킹 소프트웨어 기업 뱅크웨어글로벌은 파키스탄·인도네시아 등 해외 수주를 늘리며 매출 성장을 이어가고 있으나, 연간 영업손실이 지속되는 가운데 최근 분기에서는 적자 규모가 축소되는 흐름을 보이고 있다.",
-  "en": "Bankware Global, the sole domestic core banking software vendor in Korea, continues to expand overseas orders in markets such as Pakistan and Indonesia, and while annual operating losses have persisted, the most recent quarters show a narrowing of the loss."
+  "ko": "뱅크웨어글로벌은 2025년 매출이 26.4% 늘고 영업손실이 줄었지만, 2025년 3분기부터 2026년 3분기까지 5개 분기 연속 영업적자가 이어져 이익 체력은 아직 확인 단계다.",
+  "en": "Bankware Global grew 2025 revenue 26.4% and narrowed its operating loss, but five straight quarters of operating losses from the third quarter of 2025 through the third quarter of 2026 leave its earnings durability unconfirmed."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출 634억원으로 전년 대비 26% 늘었으나 영업손실 44억원으로 4년 연속 적자를 기록했다.",
-   "en": "2025 consolidated revenue rose 26% year over year to KRW 63.4 billion, but the company posted an operating loss of KRW 4.4 billion, marking its fourth consecutive year in the red."
+   "ko": "2025년 매출은 634억원으로 전년 대비 26.4% 증가했고, 영업손실은 43.8억원으로 2024년 149억원에서 줄었다.",
+   "en": "2025 revenue was KRW 63.4 billion, up 26.4% year on year, and the operating loss narrowed to KRW 4.38 billion from KRW 14.9 billion in 2024."
   },
   {
-   "ko": "2026년 2분기 영업손실이 8,144만원으로 전분기(11.8억원) 대비 축소됐고 지배주주 순이익은 9,930만원으로 소폭 흑자를 기록했다.",
-   "en": "The Q2 2026 operating loss narrowed to KRW 81.44 million from KRW 1.18 billion in the prior quarter, while net income attributable to owners was a modest KRW 99.3 million."
+   "ko": "지배주주 순손실은 2024년 142억원에서 2025년 27.6억원으로 축소됐고, 2026년 2분기에는 지배주주 순이익 9,930만원으로 흑자 전환했다.",
+   "en": "The net loss attributable to controlling shareholders shrank from KRW 14.2 billion in 2024 to KRW 2.76 billion in 2025, and the second quarter of 2026 returned to a controlling-shareholder profit of KRW 99.3 million."
   },
   {
-   "ko": "올해 8월 282억원 규모 파키스탄 우정국 디지털 전환 사업을 케이티디에스·데이터스트림즈와 공동수주하며 남아시아로 사업 영역을 확대했다.",
-   "en": "In August 2026, the company won a KRW 28.2 billion Pakistan Postal Office digital transformation project jointly with KTDS and Datastreams, expanding into the South Asian market."
+   "ko": "2026년 3분기 영업손실은 7.3억원으로 전년 동기보다 적자 폭이 커졌고, 최근 네 개 분기 지배주주 순손실 합계는 20.8억원이다.",
+   "en": "The third quarter of 2026 posted an operating loss of KRW 729 million, wider than a year earlier, and the four quarters from the fourth quarter of 2025 to the third quarter of 2026 total KRW 2.08 billion in controlling-shareholder net losses."
   },
   {
-   "ko": "STO(토큰증권) 테마 부각 속에 STO 기반 미들웨어 'BXB' 기술 특허를 등록하며 디지털자산 인프라 사업 확장을 모색하고 있다.",
-   "en": "Amid rising attention to the security token offering (STO) theme, the company registered a patent for its STO-based middleware technology 'BXB,' signaling efforts to expand into digital asset infrastructure."
+   "ko": "2025년 내수 매출 552억원 가운데 시스템 구축(SWSI) 매출이 311억원으로 절반가량이고, 구축 후 유지·관리(AMS) 매출은 164억원이다.",
+   "en": "Of 2025 domestic sales of KRW 55.2 billion, custom system build (SWSI) revenue was KRW 31.1 billion, about half, and application management service (AMS) revenue was KRW 16.4 billion."
   },
   {
-   "ko": "경영진은 과거 IPO 간담회에서 일본·동남아 사업 확대에 힘입어 손익분기점 달성을 목표로 제시했으나, 실현 시점은 이후 실적으로 확인이 필요하다.",
-   "en": "Management previously stated at its IPO briefing a goal of reaching breakeven on the back of expansion in Japan and Southeast Asia, though the timing needs to be confirmed by subsequent actual results."
+   "ko": "해외에서는 파키스탄 우정국 디지털 전환 사업(282억원)을 수주했으나, 일본 법인은 2025년 3분기 공시 기준 자본잠식 상태로 보도됐다.",
+   "en": "Overseas, the company won a KRW 28.2 billion digital transformation project for Pakistan Post, while its Japan subsidiary was reported as fully capital-impaired as of the third quarter of 2025."
   }
  ],
  "business": {
-  "ko": "뱅크웨어글로벌은 2010년 설립된 국내 유일의 코어뱅킹 소프트웨어 전문기업으로, 은행의 여수신·외환 등 핵심 금융거래를 처리하는 코어뱅킹 패키지 'BX-CBP'와 기술 플랫폼 소프트웨어를 자체 개발해 공급한다. 주 고객은 상업은행, 저축은행, 카드사, 캐피탈사, 보험사 등 금융기관으로 국내외 100여 개 고객사를 확보하고 있다. 사업 영역은 리테일뱅킹, 자산관리, 카드, 할부리스 등 금융영역별 맞춤형 솔루션 구축(SI성 프로젝트)과 동남아 중소형 은행 대상 구독형 뱅킹 SaaS 'BADA' 공급으로 나뉜다. 한국·중국·대만·일본·필리핀 등 아시아 여러 국가에 금융시스템을 구축한 트랙레코드를 보유하고 있으며, 라인뱅크 타이완의 소프트웨어 유지보수(SW M/A) 장기계약(2022.05~2029.04)과 같이 반복 매출 구조도 일부 갖추고 있다. 최근에는 신한은행에 생성형 AI 기반 개발 지원 플랫폼을 구축하는 등 국내 대형 금융기관 대상 기술 혁신 프로젝트도 수행하고 있다. 2026년 8월에는 케이티디에스, 데이터스트림즈와 컨소시엄을 구성해 파키스탄 우정국(PPOD) 디지털 전환 사업을 수주하며 남아시아 시장 진출을 확대했다. 경쟁 구도는 국내에서는 코어뱅킹 전문 기업이 부재해 독점적 지위에 있으나, 해외 시장에서는 Temenos, FIS 등 글로벌 벤더 및 현지 SI 기업들과 경쟁한다. 회사는 SaaS 전환을 통한 반복 매출 확대와 일본·동남아·남아시아 지역 다변화를 핵심 성장 전략으로 제시하고 있다.",
-  "en": "Founded in 2010, Bankware Global is Korea's sole dedicated core banking software company, developing and supplying its proprietary core banking package 'BX-CBP' and technology platform software that process core financial transactions such as deposits, loans, and foreign exchange for banks. Its main customers are commercial banks, savings banks, card companies, capital firms, and insurers, with over 100 client institutions domestically and abroad. The business is split between customized system integration-type projects across retail banking, wealth management, cards, and installment leasing, and its subscription-based banking SaaS product 'BADA' aimed at small and mid-sized banks in Southeast Asia. The company has a track record of building financial systems across multiple Asian countries including Korea, China, Taiwan, Japan, and the Philippines, and holds some recurring revenue structures such as a long-term software maintenance contract with LINE Bank Taiwan running from May 2022 to April 2029. More recently, it has undertaken technology innovation projects for large domestic financial institutions, including building a generative AI-based development support platform for Shinhan Bank. In August 2026, the company formed a consortium with KTDS and Datastreams to win a Pakistan Postal Office Department (PPOD) digital transformation project, expanding its footprint into the South Asian market. Domestically, the company holds a de facto monopoly position given the absence of dedicated core banking rivals, but overseas it competes against global vendors such as Temenos and FIS as well as local system integrators. The company has positioned SaaS conversion for recurring revenue expansion and geographic diversification across Japan, Southeast Asia, and South Asia as its core growth strategy."
+  "ko": "뱅크웨어글로벌은 2010년 설립된 금융 소프트웨어 기업으로, 은행의 여·수신과 외환 등 핵심 업무를 처리하는 코어뱅킹 소프트웨어를 주력으로 한다. 2024년 8월 기술특례상장을 통해 코스닥에 상장했으며, 케이뱅크와 중국 알리바바 계열 인터넷은행 마이뱅크 등에 솔루션을 공급한 이력이 있다. 사업은 고객 맞춤형 시스템 구축(SWSI), 구축 이후 유지·관리를 맡는 애플리케이션 관리서비스(AMS), 그리고 SaaS·클라우드와 라이선스 판매로 나뉜다. 2025년 연결 기준 내수 매출은 552억원으로 전체의 약 87%였고, 이 가운데 SWSI가 311억원, AMS가 164억원이었다. 구축 프로젝트가 매출의 큰 축을 이루고 유지·관리 매출이 반복 수익의 바탕이 되는 구조다. 주요 프로젝트로는 한국거래소 경영정보 차세대 시스템 구축과 후속 스마트워크시스템 운영·유지보수, 우리카드 통합단말 구축이 있다. OK저축은행 수신 계정계 구축(계약금액 160억 6,560만원, 2027년 12월까지 진행)과 삼성SDS와 체결한 케이뱅크 비대면 기업 채널 구축(58억원 규모)도 금융권 수주 사례다. 해외에서는 일본을 핵심 거점으로 삼았으나 대형 SI 수주가 늦어지자, 금융 소프트웨어를 모듈화한 툴킷 형태로 현지 은행에 공급하는 방식으로 전략을 바꾸고 있다. 2026년 8월에는 파키스탄 우정국 디지털 전환 사업(282억원 규모)을 수주했다고 회사가 밝혔다.",
+  "en": "Bankware Global is a financial software company founded in 2010, centered on core banking software that handles deposits, loans and foreign exchange at banks. It listed on KOSDAQ through a technology-special listing in August 2024 and has supplied solutions to K Bank and to MyBank, the internet bank under Alibaba's group. The business divides into custom system build (SWSI), application management service (AMS) for maintenance after delivery, and SaaS, cloud and license sales. Domestic sales in 2025 on a consolidated basis were KRW 55.2 billion, about 87% of the total, of which SWSI was KRW 31.1 billion and AMS was KRW 16.4 billion. Build projects form the large share of revenue, while maintenance revenue underpins recurring income. Major projects include the Korea Exchange management information system rebuild and its follow-on smart work system operation and maintenance, and the Woori Card integrated terminal build. The OK Savings Bank core deposit system build, with a contract value of KRW 16.07 billion running through December 2027, and a KRW 5.8 billion K Bank corporate digital channel build contracted with Samsung SDS are also financial-sector wins. Overseas, Japan was the core target, but delays in large SI orders led the company to shift to supplying modular software toolkits to local banks. In August 2026 the company said it had won a KRW 28.2 billion digital transformation and automation project for Pakistan Post."
  },
  "earnings": {
-  "ko": "2025년 연결 매출은 634억원으로 2024년 502억원 대비 26.4% 증가했으나, 영업손실은 44억원으로 2024년 149억원 대비 손실 규모는 크게 줄었다. 2023년 매출 729억원, 영업손실 46억원과 비교하면 2024년은 매출이 일시적으로 줄고 손실이 급증한 부진한 해였고, 2025년은 매출 회복과 함께 적자가 완화된 국면으로 해석된다. 순이익 역시 2023년 -80억원, 2024년 -142억원에서 2025년 -28억원으로 적자 규모가 축소되며 방향성 개선이 나타났다. 분기별로 보면 2025년 2분기 매출 149억원·영업손실 6.0억원에서 2025년 3분기 170억원·영업손실 2.3억원, 4분기 174억원·영업손실 15.1억원으로 등락이 있었고, 2026년 1분기에는 매출 193억원까지 늘었지만 영업손실도 11.8억원으로 재차 확대됐다. 그러나 2026년 2분기에는 매출 172억원에 영업손실이 8,144만원으로 크게 줄었고, 지배주주 순이익은 9,930만원으로 소폭 흑자 전환했다. 이는 직전 분기(2025년 4분기, 순이익 1.4억원)에 이어 최근 4개 분기 중 두 번째로 순이익이 양(+)의 값을 기록한 사례다. 다만 이 흐름이 특정 프로젝트의 매출 인식 시점이나 일회성 요인에 기인했는지는 다음 분기 실적을 통해 추가 확인이 필요하다. 재무건전성 측면에서는 자본총계가 2023년 102억원에서 2024년 189억원으로 늘었다가 2025년 179억원으로 소폭 줄었고, 부채비율은 2023년 342.4%에서 2024년 174.6%, 2025년 163.5%로 개선되는 추세를 보였다.",
-  "en": "Consolidated revenue for 2025 reached KRW 63.4 billion, up 26.4% from KRW 50.2 billion in 2024, while the operating loss narrowed sharply to KRW 4.4 billion from KRW 14.9 billion in 2024. Compared with 2023 revenue of KRW 72.9 billion and an operating loss of KRW 4.6 billion, 2024 stands out as a weak year marked by a temporary revenue decline and a sharp widening of losses, whereas 2025 reflects a phase of revenue recovery alongside easing losses. Net income also showed directional improvement, moving from KRW -8.0 billion in 2023 and KRW -14.2 billion in 2024 to KRW -2.8 billion in 2025. On a quarterly basis, revenue and operating loss fluctuated from KRW 14.9 billion revenue and a KRW 0.60 billion operating loss in Q2 2025, to KRW 17.0 billion revenue and a KRW 0.23 billion operating loss in Q3 2025, and KRW 17.4 billion revenue with a KRW 1.51 billion operating loss in Q4 2025; revenue rose further to KRW 19.3 billion in Q1 2026 but the operating loss widened again to KRW 1.18 billion. However, in Q2 2026 revenue was KRW 17.2 billion with the operating loss shrinking sharply to KRW 81.44 million, and net income attributable to owners turned modestly positive at KRW 99.3 million. This marks the second quarter of positive net income within the trailing four quarters, following Q4 2025 (net income of KRW 0.14 billion). Whether this pattern reflects the timing of revenue recognition on specific projects or one-off factors will require confirmation through subsequent quarterly results. On the balance sheet, total equity rose from KRW 10.2 billion in 2023 to KRW 18.9 billion in 2024 before slipping to KRW 17.9 billion in 2025, while the debt ratio improved from 342.4% in 2023 to 174.6% in 2024 and 163.5% in 2025."
+  "ko": "연간 매출은 2023년 729억원에서 2024년 502억원(전년 대비 31.2% 감소)으로 줄었다가 2025년 634억원(전년 대비 26.4% 증가)으로 회복했으며, 세 해 가운데 2023년이 가장 크고 2024년이 가장 작았다. 2024년 감소는 일본 시장에서 기대한 대형 SI 프로젝트의 매출 인식이 늦어진 데 따른 것으로 보도됐고, 2024년 매출은 상장 당시 제시한 목표 735억원에 못 미쳤다. 영업손실은 2023년 45.6억원, 2024년 149억원, 2025년 43.8억원으로 3년 연속 적자였고, 영업이익률은 -6.2%, -29.7%, -6.9%로 2024년에 손실률이 가장 컸다. 2025년 개선 요인으로 회사는 금융시장 호조와 전방산업 인프라 투자 심리 회복, 비용 효율화 및 원가 구조 개선을 들었다. 지배주주 순손실은 2023년 79.8억원, 2024년 142억원, 2025년 27.6억원이었으며, 부채비율은 342.4%에서 163.5%로 낮아졌지만 2025년 말 부채총계 293억원은 자본총계 179억원보다 크다. 영업활동 현금흐름은 2023년 -22.1억원, 2024년 14.1억원, 2025년 -58.6억원이었다. 분기로 보면 2025년 3분기 영업손실 2.3억원에서 4분기 15.1억원으로 손실이 커졌고, 2026년 1분기 매출은 193억원으로 분기 기준 가장 컸으나 영업손실 11.8억원이 남았다. 2026년 2분기에는 영업손실이 8,144만원으로 줄었고, 3분기에는 매출 180억원(전년 동기 대비 6.1% 증가)에도 영업손실 7.3억원으로 적자 폭이 커졌으며 지배주주 순손실 18.3억원으로 다시 적자 전환했다. 2026년 2분기를 두고 회사는 2026년 8월 18일 발표에서 별도 기준 영업이익 흑자 전환을 알렸으나, 이는 연결 공시와 기준이 달라 구분해 읽어야 한다.",
+  "en": "Annual revenue fell from KRW 72.9 billion in 2023 to KRW 50.2 billion in 2024, a 31.2% decline, then recovered to KRW 63.4 billion in 2025, up 26.4%. Of the three years, 2023 was the largest and 2024 the smallest. The 2024 decline was reported to stem from delayed revenue recognition on large SI projects in Japan, and 2024 revenue fell well short of the KRW 73.5 billion target presented at listing. Operating losses were KRW 4.56 billion in 2023, KRW 14.9 billion in 2024 and KRW 4.38 billion in 2025, three straight years of losses, with operating margins of -6.2%, -29.7% and -6.9%; 2024 carried the widest margin loss. The company attributed the 2025 improvement to a stronger financial market, a recovery in investment sentiment in downstream infrastructure, and cost efficiency with a better cost structure. Net losses attributable to controlling shareholders were KRW 7.98 billion, KRW 14.2 billion and KRW 2.76 billion for 2023 to 2025. The debt ratio fell from 342.4% to 163.5%, yet total liabilities of KRW 29.3 billion at year-end 2025 remained larger than total equity of KRW 17.9 billion. Operating cash flow was -KRW 2.21 billion in 2023, KRW 1.41 billion in 2024 and -KRW 5.86 billion in 2025. Quarterly, the operating loss widened from KRW 230 million in the third quarter of 2025 to KRW 1.51 billion in the fourth quarter. Revenue of KRW 19.3 billion in the first quarter of 2026 was the highest of the five quarters, yet the operating loss was KRW 1.18 billion. The second quarter narrowed the operating loss to KRW 81.44 million, while the third quarter brought revenue of KRW 18 billion, up 6.1% year on year, but an operating loss of KRW 729 million, a wider loss than a year earlier, and a controlling-shareholder net loss of KRW 1.83 billion. In an August 18, 2026 announcement, the company cited a second-quarter operating profit on a standalone basis, which differs from the consolidated figures above and should be read separately."
  },
  "industry": {
-  "ko": "글로벌 뱅킹 IT 시장은 클라우드 네이티브 코어뱅킹과 서비스형 소프트웨어(SaaS) 전환이라는 구조적 흐름 속에 있으며, 국내외 금융사들이 레거시 시스템 현대화에 나서는 것이 주요 수요 기반이다. 국내에서는 뱅크웨어글로벌이 코어뱅킹 소프트웨어 전문 기업으로서 독점적 위치에 있는 반면, 해외에서는 Temenos, FIS 등 글로벌 대형 벤더 및 각국 현지 SI 업체와 경쟁한다. 동남아시아는 금융 포용성 확대와 디지털뱅킹 수요 증가로 성장성이 높은 지역으로 꼽히며, 필리핀·인도네시아 등에서는 중소형 지방은행 대상 뱅킹 SaaS 수요가 확대되고 있다. 최근에는 스테이블코인·토큰증권(STO)·실물자산토큰화(RWA) 등 디지털자산 인프라가 금융 IT의 새로운 축으로 부각되고 있으며, 국내에서는 지난 1월 전자증권법·자본시장법 개정안이 국회를 통과해 STO 제도화가 사실상 확정됐고 2027년 1월 전후 시행을 목표로 하위법령 정비가 진행 중이다. 다만 STO 시행령 발표는 당초 목표였던 7월을 넘겨 지연되고 있어 구체적 사업화 시점에는 불확실성이 남아 있다. 코어뱅킹 사업 자체는 프로젝트 단위 수주형 매출 구조로 인해 계약 시점과 규모에 따라 실적 변동성이 큰 특성을 가지며, 이는 뱅크웨어글로벌의 분기별 실적 등락에도 반영되고 있다.",
-  "en": "The global banking IT market is undergoing a structural shift toward cloud-native core banking and software-as-a-service (SaaS) conversion, with legacy system modernization by financial institutions worldwide serving as the primary demand driver. Domestically, Bankware Global holds a de facto monopoly as a dedicated core banking software vendor, while overseas it competes against large global vendors such as Temenos and FIS as well as local system integrators in each country. Southeast Asia is viewed as a high-growth region on the back of expanding financial inclusion and rising digital banking demand, with banking SaaS demand growing among small and mid-sized rural banks in countries such as the Philippines and Indonesia. More recently, digital asset infrastructure such as stablecoins, security token offerings (STO), and real-world asset tokenization (RWA) has emerged as a new pillar of financial IT, and in Korea, amendments to the Electronic Securities Act and Capital Markets Act passed the National Assembly in January, effectively confirming STO institutionalization with subordinate regulations being prepared ahead of a targeted implementation around January 2027. However, the announcement of the STO enforcement decree has been delayed past its original July target, leaving uncertainty around the specific timing of commercialization. The core banking business itself carries a project-based order structure, which leads to significant earnings volatility depending on contract timing and scale, a dynamic reflected in the company's quarterly earnings fluctuations."
+  "ko": "뱅크웨어글로벌의 전방 수요는 은행·카드·저축은행 등 금융기관의 IT 투자이며, 프로젝트 발주 시기에 따라 매출이 달라지는 구조다. 상장 첫 해인 2024년에는 금융권 프로젝트 발주가 전반적으로 위축됐다는 평가가 나왔다. 금융권 프로젝트 회복은 손익 개선의 핵심 변수로 꼽히며, 회사는 신규 금융권 프로젝트가 이어지면 연결 실적도 점진적으로 개선될 것으로 기대한다고 밝혔다. 회사 관계자는 내수 사업이 흑자 기조로 전환된 것으로 본다는 입장을 밝혔으나, 연결 기준으로는 2025년까지 적자가 이어졌다. 경쟁 측면에서 회사는 국내 유일 코어뱅킹 플랫폼 개발 기업을 자처하며 업종별 맞춤 솔루션을 내세운다. 해외 코어뱅킹 시장에서는 2021년 영국 조사기관 IBS인텔리전스가 글로벌 리테일 코어뱅킹 판매 4위로 선정한 이력이 있다. 국내 금융 IT 시장에서는 삼성SDS와 LG CNS 같은 대형 SI 기업이 대형 금융 프로젝트의 경쟁 상대가 되며, 뱅크웨어글로벌은 삼성SDS와 계약을 맺는 협력 사례도 확인된다. 기술 측면에서 회사는 AI 코드 어시스턴트(BX-CA)와 AI 포털(BX-AP)을 핵심 서비스로 키우고 있다. 2026년에는 금융권 AI 보안 게이트웨이와 바이브 코딩 솔루션 등 신제품을 잇따라 출시했다.",
+  "en": "Bankware Global's end demand comes from IT spending by banks, card companies and savings banks, and its revenue depends on when projects are ordered. Financial-sector project orders were broadly weak in 2024, the first year after listing. Recovery in financial-sector projects is seen as the key variable for profit improvement, and the company expects consolidated results to improve gradually if new financial projects continue. A company official said the domestic business has shifted to a profit trend, while consolidated results stayed in the red through 2025. On competition, the company positions itself as the only domestic developer of a core banking platform and pitches industry-specific solutions. In overseas core banking, IBS Intelligence, a UK research firm, ranked it fourth in global retail core banking sales in 2021. In domestic financial IT, large SI firms such as Samsung SDS and LG CNS compete for big financial projects, and the company has also contracted with Samsung SDS. On technology, the company is developing its AI code assistant (BX-CA) and AI portal (BX-AP) as core services. In 2026 it launched a series of new products, including a financial-sector AI security gateway and a vibe coding solution."
  },
  "outlook": {
-  "ko": "뱅크웨어글로벌은 IPO 당시 일본 신용카드 코어시스템 시장과 동남아 뱅킹 SaaS 사업 확대를 통해 손익분기점 달성을 목표로 제시한 바 있으며, 2026년 2분기 순이익이 소폭 흑자로 전환된 점은 이러한 방향성과 궤를 같이한다. 다만 이는 아직 단일 분기의 결과이며 연간 기준으로는 여전히 누적 적자 구조에 있어, 향후 분기 실적을 통해 흑자 전환의 지속성을 확인하는 과정이 필요하다. 2026년 8월 파키스탄 우정국 디지털 전환 사업(약 282억원, 2028년 3월까지 수행) 수주는 남아시아·중동 시장 진출의 교두보로 평가되며, 향후 유사한 대형 공공·금융 프로젝트 수주 여부가 매출 성장의 핵심 변수가 될 전망이다. 2025년 12월에는 인도네시아 살림그룹 계열 MKP와 전략적 MOU를 체결했고, 같은 시기 STO 기반 미들웨어 'BXB' 기술 특허를 등록하며 디지털자산 인프라 영역으로 사업 다각화를 모색하고 있다. 국내 STO 제도는 2027년 1월 전후 시행을 목표로 하위법령 정비가 진행 중이어서, 관련 사업이 실제 매출로 연결되는 시점은 하위법규 확정 이후가 될 것으로 보인다. 코어뱅킹 업종 특성상 개별 프로젝트의 수주·매출 인식 시점에 따라 분기별 실적 변동성이 지속될 가능성이 높으며, SaaS 매출 비중 확대가 진행될수록 반복 매출 구조가 강화되어 실적 안정성이 개선될지 지켜볼 부분이다.",
-  "en": "At its IPO briefing, Bankware Global set a target of reaching breakeven through expansion in the Japanese credit card core system market and Southeast Asian banking SaaS business, and the modest net income swing to positive in Q2 2026 is consistent with that stated direction. However, this remains the result of a single quarter, and on an annual basis the company is still in a cumulative loss position, meaning the persistence of the profit turn needs to be confirmed through subsequent quarterly results. The August 2026 win of the Pakistan Postal Office digital transformation project (approximately KRW 28.2 billion, to be executed through March 2028) is viewed as a bridgehead into the South Asian and Middle Eastern markets, and whether similar large public and financial-sector project wins follow will be a key variable for revenue growth going forward. In December 2025, the company signed a strategic memorandum of understanding with MKP, a unit of Indonesia's Salim Group, and around the same period registered a patent for its STO-based middleware technology 'BXB,' signaling efforts to diversify into digital asset infrastructure. As Korea's STO regime is targeted for implementation around January 2027 with subordinate regulations still being prepared, the point at which related business translates into actual revenue is likely to come only after those regulations are finalized. Given the nature of the core banking industry, quarterly earnings volatility tied to the timing of individual project orders and revenue recognition is likely to persist, and whether an expanding share of SaaS revenue strengthens the recurring revenue structure and improves earnings stability going forward remains to be seen."
+  "ko": "회사는 2026년 8월 18일 발표에서 하반기에도 주요 프로젝트와 SaaS·클라우드 사업을 중심으로 수익성 개선 흐름이 이어질 것으로 기대한다고 밝혔다. 2026년 8월 발표된 파키스탄 우정국 디지털 전환·자동화 사업(282억원)은 해외 매출 인식의 기반이 될 수 있는 사업이다. OK저축은행 수신 계정계 구축(계약금액 160억 6,560만원)은 2027년 12월까지 진행되는 계약이어서 그 기간 매출 인식이 이어질 구조다. 케이뱅크 SME 여신시스템 구축 사업에는 자사 AI 기반 코딩 자동화 솔루션이 적용됐다고 2026년 6월 22일 보도됐다. 2026년 7월에는 바이브 코딩 솔루션과 금융권 AI 보안 게이트웨이 솔루션 출시가 발표됐다. 일본에서는 대형 SI 대신 툴킷 형태의 라이선스·유지보수 계약으로 반복 매출을 쌓는 전략으로 바꾸는 중이다. 중장기로는 2024년 상장 준비 기자간담회에서 국내외 목표 시장이 연간 7~11% 성장할 것으로 예상한다고 밝혔다. 다만 상장 당시 제시한 2024년 목표 매출 735억원에 실적이 502억원에 그쳤던 만큼, 중장기 계획의 실현 여부는 수주 매출이 정기보고서 실적에 얼마나 반영되는지로 가려진다.",
+  "en": "In its August 18, 2026 announcement, the company said it expects the profitability improvement trend to continue in the second half, centered on major projects and its SaaS and cloud business. The KRW 28.2 billion Pakistan Post digital transformation and automation project, announced in August 2026, can serve as a base for overseas revenue recognition. The OK Savings Bank core deposit system build, with a contract value of KRW 16.07 billion, runs through December 2027, so revenue recognition is structured to continue over that period. A June 22, 2026 report said the company's AI-based coding automation solution was applied to the K Bank SME loan system build. In July 2026 the company announced the launch of a vibe coding solution and a financial-sector AI security gateway. In Japan, the company is shifting from large SI projects to toolkit-style license and maintenance contracts to build recurring revenue. Over the medium term, at a 2024 pre-listing briefing, it projected 7% to 11% annual growth in its domestic and overseas target markets. However, against a 2024 target of KRW 73.5 billion and actual revenue of KRW 50.2 billion, whether the medium-term plan materializes will depend on how much contracted revenue shows up in reported results."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 순자산 대비 프리미엄이 형성된 구간에서 거래되고 있어, 시장이 코어뱅킹 국내 독점 지위와 해외 수주 확대, STO 등 디지털자산 테마 관련 성장 기대를 일정 부분 반영하고 있는 것으로 볼 수 있다. 다만 회사는 여전히 연간 기준 누적 적자 구조에 있어 순이익 기반의 전통적 밸류에이션 지표를 적용하기 어려운 상태이며, 최근 분기의 흑자 전환이 이어질지가 향후 밸류에이션 해석의 관건이 될 것으로 보인다. 배당의 경우 최근 공시된 주당 현금배당금이 없어 배당수익률 관점의 투자 매력은 제한적인 편이다. 코스닥 IT 서비스 업종 내에서는 실적 개선 초기 단계에 있는 기업들이 통상 높은 배수에서 거래되는 경향이 있으며, 뱅크웨어글로벌 역시 이러한 업종 특성의 영향을 받을 수 있다. 투자 판단에는 향후 분기별 손익 전환의 지속성과 해외 수주 실현 속도를 함께 확인하는 것이 중요하다.",
-  "en": "The current share price trades at a premium to net asset value, suggesting the market is pricing in some expectation tied to the company's domestic monopoly position in core banking, expanding overseas orders, and growth themes such as STO-related digital asset infrastructure. That said, the company remains in a cumulative annual loss position, making traditional net-income-based valuation metrics difficult to apply meaningfully, and whether the recent quarterly swing to profitability persists will likely be central to how the valuation is interpreted going forward. On the dividend front, no per-share cash dividend has been disclosed recently, limiting the investment appeal from a yield perspective. Within the KOSDAQ IT services sector, companies at an early stage of earnings recovery tend to trade at elevated multiples, and Bankware Global may be similarly influenced by this sector characteristic. Assessing the durability of the recent quarterly earnings turn alongside the pace at which overseas order wins convert into realized revenue will be important considerations."
+  "ko": "현재 주가수익비율(PER)은 최근 네 개 분기 순손실 때문에 산출되지 않는다. 주가순자산비율(PBR)은 장부상 자본을 웃도는 프리미엄 구간이며, 시가총액도 자본총계를 웃도는 상태다. 2025년 말 자본총계 179억원은 전부 지배주주 지분이며 비지배지분은 없다. 배당수익률은 사실상 0에 가까워 주주환원보다 사업 재투자 단계의 구조로 읽힌다. 다년 실적을 보면 2023년부터 2025년까지 3년 연속 적자였고, 영업손실이 2024년 149억원에서 2025년 43.8억원으로 줄어 이익 회복의 방향이 나타났다. 다만 2026년 3분기 적자가 다시 커진 만큼, 배수 해석은 분기 흑자가 이어지는지에 달려 있다. 같은 업종 상장사와는 규모와 수익성 차이가 커서 단순 비교에는 한계가 있다.",
+  "en": "The price-to-earnings ratio cannot be calculated because the last four quarters show net losses. The price-to-book ratio sits at a premium to book value, and market capitalization is above total equity. All of the KRW 17.9 billion in total equity at year-end 2025 belongs to controlling shareholders, with no minority interest. Dividend yield is close to zero, so the company appears to be in a phase of reinvesting in the business rather than returning cash. Over several years, the company moved from three straight loss years through 2025 to a narrower operating loss, from KRW 14.9 billion in 2024 to KRW 4.38 billion in 2025, a direction of earnings recovery. However, the wider losses of the third quarter of 2026 mean that any reading of these multiples depends on whether quarterly profits follow. Direct comparison with listed peers in the same sector is limited because scale and margin profiles differ widely."
  },
  "bull": [
   {
    "title": {
-    "ko": "국내 유일 코어뱅킹 벤더의 독점적 지위",
-    "en": "Monopoly Position as Korea's Sole Core Banking Vendor"
+    "ko": "매출 규모 회복과 반복 매출 기반",
+    "en": "Revenue recovery and a recurring revenue base"
    },
    "body": {
-    "ko": "뱅크웨어글로벌은 국내에서 유일하게 코어뱅킹 소프트웨어를 전문으로 개발·공급하는 기업으로, 국내 시장에서 직접 경쟁하는 동종 업체가 부재한 독점적 위치에 있다. 라인뱅크 타이완과의 장기 SW 유지보수 계약(2029년까지)처럼 반복 매출 구조를 일부 확보하고 있으며, Gartner·IBSi 등 글로벌 시장조사기관으로부터 기술력을 인정받은 트랙레코드도 보유하고 있다. 이러한 독점적 지위는 국내 대형 금융기관의 차세대 시스템 교체 수요가 발생할 때 유리한 수주 위치로 이어질 수 있다.",
-    "en": "Bankware Global is the sole company in Korea dedicated to developing and supplying core banking software, occupying a monopoly position domestically with no direct same-industry competitor. It has secured some recurring revenue structure, such as its long-term software maintenance contract with LINE Bank Taiwan running through 2029, and holds a track record of technical recognition from global market research firms including Gartner and IBSi. This monopoly position could translate into an advantageous bidding position whenever large domestic financial institutions require next-generation system replacements."
+    "ko": "2025년 매출은 634억원으로 전년 대비 26.4% 증가했다. 2025년 3분기 이후 다섯 개 분기 매출이 모두 170억원 이상이었고, 2026년 1분기는 193억원으로 가장 컸다. 구축 이후 유지·관리 매출인 AMS가 2025년 164억원을 기록해 반복 수익의 한 축을 이룬다.",
+    "en": "Revenue in 2025 was KRW 63.4 billion, up 26.4% year on year. Every quarter from the third quarter of 2025 through the third quarter of 2026 was at or above KRW 17 billion, and the first quarter of 2026 peaked at KRW 19.3 billion. AMS maintenance revenue of KRW 16.4 billion in 2025 forms one pillar of recurring income."
    }
   },
   {
    "title": {
-    "ko": "해외 수주 다변화 진행",
-    "en": "Diversification of Overseas Order Wins"
+    "ko": "적자 폭 축소와 분기 흑자 전환",
+    "en": "Narrower losses and quarterly profit swings"
    },
    "body": {
-    "ko": "2026년 8월 파키스탄 우정국의 282억원 규모 디지털 전환 사업을 컨소시엄으로 수주하며 남아시아·중동 시장으로 사업 지역을 확대했다. 2025년 12월에는 인도네시아 살림그룹 계열 MKP와 전략적 MOU를 체결해 동남아 뱅킹 SaaS 사업 확장의 발판을 마련했다. 필리핀, 대만 등 기존 진출 지역에서의 레퍼런스를 기반으로 신규 지역 진출이 이어지고 있어 매출원 다변화가 진행되는 모습이다.",
-    "en": "In August 2026, the company won, as part of a consortium, a KRW 28.2 billion digital transformation project for Pakistan's postal office, expanding its geographic footprint into South Asia and the Middle East. In December 2025, it signed a strategic memorandum of understanding with MKP, a unit of Indonesia's Salim Group, laying groundwork for expansion of its Southeast Asian banking SaaS business. Building on existing references in markets such as the Philippines and Taiwan, entry into new regions continues, indicating progress toward revenue source diversification."
+    "ko": "지배주주 순손실은 2024년 142억원에서 2025년 27.6억원으로 줄었다. 2025년 4분기와 2026년 2분기에는 지배주주 순이익이 흑자로 돌아섰다. 2026년 2분기 영업손실도 8,144만원으로 줄어 손실 규모가 축소됐다.",
+    "en": "The net loss attributable to controlling shareholders narrowed from KRW 14.2 billion in 2024 to KRW 2.76 billion in 2025. Controlling-shareholder net income turned positive in the fourth quarter of 2025 and again in the second quarter of 2026. The second-quarter 2026 operating loss narrowed to KRW 81.44 million."
    }
   },
   {
    "title": {
-    "ko": "최근 분기 손익 개선 흐름",
-    "en": "Recent Quarterly Earnings Improvement Trend"
+    "ko": "해외·신규 수주 파이프라인",
+    "en": "Overseas and new contract pipeline"
    },
    "body": {
-    "ko": "2026년 2분기 영업손실은 8,144만원으로 직전 분기(11.8억원) 대비 크게 축소됐고, 지배주주 순이익은 9,930만원으로 소폭 흑자를 기록했다. 2025년 4분기에도 순이익이 1.4억원으로 양(+)의 값을 보인 바 있어, 최근 4개 분기 중 두 개 분기에서 순이익 흑자가 나타났다. 연간 기준으로도 2024년 영업손실 149억원에서 2025년 44억원으로 손실 규모가 크게 줄어드는 추세가 확인된다.",
-    "en": "The Q2 2026 operating loss narrowed sharply to KRW 81.44 million from KRW 1.18 billion in the prior quarter, and net income attributable to owners was modestly positive at KRW 99.3 million. Q4 2025 also showed positive net income of KRW 0.14 billion, meaning two of the trailing four quarters posted positive net income. On an annual basis, the operating loss also narrowed substantially, from KRW 14.9 billion in 2024 to KRW 4.4 billion in 2025."
+    "ko": "파키스탄 우정국 디지털 전환 사업 282억원이 2026년 8월 수주 보도자료로 공개됐다. OK저축은행 수신 계정계 구축은 계약금액 160억 6,560만원으로 2027년 12월까지 진행된다. 삼성SDS와 체결한 케이뱅크 비대면 기업 채널 구축(58억원 규모)도 금융권 신규 수주 사례로 보도됐다.",
+    "en": "A KRW 28.2 billion Pakistan Post digital transformation project was disclosed in an August 2026 contract press release. The OK Savings Bank core deposit system build has a contract value of KRW 16.07 billion and runs through December 2027. A KRW 5.8 billion K Bank corporate digital channel build contracted with Samsung SDS was also reported as a new financial-sector win."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "4년 연속 연간 영업손실 지속",
-    "en": "Four Consecutive Years of Annual Operating Losses"
+    "ko": "영업적자 지속과 3분기 적자 확대",
+    "en": "Persistent operating losses and a wider loss in Q3 2026"
    },
    "body": {
-    "ko": "2023년부터 2025년까지 3개년 확정 실적 모두 영업손실을 기록했으며, 2024년에는 149억원의 대규모 손실을 냈다. 최근 분기에서 손익이 개선되는 흐름이 나타나고 있으나, 연간 기준으로는 여전히 적자 누적 구조를 벗어나지 못하고 있다. 손익 개선이 구조적인 것인지, 일부 프로젝트의 매출 인식 시점에 따른 변동인지는 추가 분기를 통한 확인이 필요하다.",
-    "en": "All three confirmed annual results from 2023 through 2025 showed operating losses, with a particularly large KRW 14.9 billion loss in 2024. While recent quarters show an improving trend, on an annual basis the company has yet to break out of its cumulative loss structure. Whether the earnings improvement is structural or driven by the timing of revenue recognition on specific projects requires confirmation over additional quarters."
+    "ko": "2023년부터 2025년까지 3년 연속 영업손실이 이어졌다. 2025년 3분기부터 2026년 3분기까지 5개 분기 연속 영업적자가 공시됐고, 2026년 3분기 영업손실 7.3억원은 전년 동기보다 적자 폭이 커졌다. 최근 네 개 분기 지배주주 순손실 합계는 20.8억원이다.",
+    "en": "Operating losses ran for three consecutive years from 2023 through 2025. Five straight quarters of operating losses were reported from the third quarter of 2025 through the third quarter of 2026, and the third-quarter 2026 operating loss of KRW 729 million was wider than a year earlier. The four quarters from the fourth quarter of 2025 total KRW 2.08 billion in controlling-shareholder net losses."
    }
   },
   {
    "title": {
-    "ko": "프로젝트 단위 매출 구조에 따른 실적 변동성",
-    "en": "Earnings Volatility from Project-Based Revenue Structure"
+    "ko": "일본 사업 부진과 법인 자본잠식",
+    "en": "Weak Japan business and capital impairment at the subsidiary"
    },
    "body": {
-    "ko": "코어뱅킹 SI 사업은 개별 프로젝트 단위로 매출이 인식되는 특성상 계약 규모와 시점에 따라 분기별 실적이 크게 오르내린다. 실제로 2025년 3분기 영업손실 2.3억원에서 4분기 15.1억원으로 확대됐다가 2026년 1분기에도 11.8억원의 손실을 낸 뒤 2분기에 급격히 축소되는 등 뚜렷한 등락이 관찰된다. 이러한 변동성은 특정 분기 실적만으로 추세를 단정하기 어렵게 만든다.",
-    "en": "Given that the core banking system integration business recognizes revenue on a per-project basis, quarterly results swing significantly depending on contract size and timing. Indeed, distinct fluctuations are observed, with the operating loss widening from KRW 0.23 billion in Q3 2025 to KRW 1.51 billion in Q4 2025, followed by a KRW 1.18 billion loss in Q1 2026 before sharply narrowing in Q2. This volatility makes it difficult to draw firm conclusions about the trend from any single quarter's results."
+    "ko": "2024년 매출은 상장 때 목표 735억원에 크게 못 미친 502억원이었고, 일본 SI 수주 지연이 주요 원인으로 지목됐다. 2025년 3분기 공시 기준 일본 법인의 자본총액은 마이너스 9억원으로 완전잠식 상태였다. 회사는 일본 공략을 툴킷 형태로 바꾸고 있으나, 그 성과는 아직 실적에 충분히 드러나지 않았다.",
+    "en": "2024 revenue of KRW 50.2 billion fell well short of the KRW 73.5 billion target set at listing, with delayed Japanese SI orders cited as a main cause. As of the third quarter of 2025, the Japan subsidiary had negative equity of KRW 900 million and was fully capital-impaired. The company is shifting its Japan approach to toolkits, but the results have not yet shown up clearly in reported figures."
    }
   },
   {
    "title": {
-    "ko": "STO 등 신사업의 제도 불확실성",
-    "en": "Regulatory Uncertainty Surrounding New STO-Related Business"
+    "ko": "현금 창출력과 재무 여력의 제약",
+    "en": "Cash generation and limited financial headroom"
    },
    "body": {
-    "ko": "STO 기반 미들웨어 'BXB' 특허 등록 등 디지털자산 인프라 사업을 모색하고 있으나, 국내 STO 시행령 등 하위법규 발표가 당초 목표였던 7월을 넘겨 지연되고 있는 상황이다. 제도가 확정되지 않은 상태에서는 관련 사업이 실제 매출로 전환되는 시점을 예측하기 어렵고, 시행 일정이 추가로 지연될 가능성도 배제할 수 없다. 이는 신사업 기대감과 실제 실적 반영 사이의 시차 리스크로 작용할 수 있다.",
-    "en": "While the company is exploring digital asset infrastructure business, including registering a patent for its STO-based middleware 'BXB,' the announcement of Korea's subordinate STO regulations, including the enforcement decree, has been delayed past its originally targeted July timeline. With the regulatory framework not yet finalized, it is difficult to predict when related business would convert into actual revenue, and further delays to the implementation schedule cannot be ruled out. This creates a timing-gap risk between new business expectations and their eventual reflection in actual results."
+    "ko": "2025년 영업활동 현금흐름은 -58.6억원으로 2024년 플러스에서 다시 적자로 돌아섰다. 현금및현금성자산은 2024년 334억원에서 2025년 232억원으로 줄었다. 2025년 말 부채총계 293억원이 자본총계 179억원을 웃돌아, 추가 자금 조달 필요성이 제기될 수 있다.",
+    "en": "Operating cash flow was -KRW 5.86 billion in 2025, turning negative again after a positive KRW 1.41 billion in 2024. Cash and cash equivalents fell from KRW 33.4 billion in 2024 to KRW 23.2 billion in 2025. Total liabilities of KRW 29.3 billion exceed total equity of KRW 17.9 billion at year-end 2025, which could raise the need for additional funding."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "수익성 리스크",
-    "en": "Profitability Risk"
+    "ko": "프로젝트 매출 시점의 편차",
+    "en": "Timing volatility of project revenue"
    },
    "body": {
-    "ko": "2024년 일본 라인뱅크 관련 프로젝트 차질과 OK저축은행 등 일부 프로젝트의 원가율 상승 사례처럼, 개별 대형 프로젝트에서 예상치 못한 원가 초과나 계약 변경이 발생하면 실적에 직접적인 타격을 줄 수 있다. 연간 기준 누적 적자가 지속되는 가운데, 흑자 전환의 지속성이 확인되지 않으면 추가적인 자본 확충 필요성이 제기될 수 있다.",
-    "en": "As seen in 2024 with disruptions to a project related to LINE Bank in Japan and rising cost ratios on certain projects such as one with OK Savings Bank, unexpected cost overruns or contract changes on individual large projects can directly impact earnings. Amid continued cumulative annual losses, if the sustainability of the recent profit turn is not confirmed, the need for additional capital raising could arise."
+    "ko": "구축(SWSI) 프로젝트 비중이 높아 발주와 검수 시점에 따라 분기 매출이 흔들린다. 2026년 2분기 매출은 전 분기 대비 11.0% 감소했다. 2024년에는 상장 목표 대비 매출이 크게 미달한 사례도 있어, 수주가 실적으로 전환되는 속도가 핵심 변수다.",
+    "en": "Build (SWSI) projects make up a large share of sales, so quarterly revenue moves with order and acceptance timing. Second-quarter 2026 revenue fell 11.0% from the prior quarter. Revenue fell well short of the pre-listing target in 2024, so the pace at which orders convert into reported revenue is a key variable."
    }
   },
   {
    "cat": {
-    "ko": "해외 사업 집행 리스크",
-    "en": "Overseas Execution Risk"
+    "ko": "해외 법인의 재무 부담",
+    "en": "Financial burden of the overseas subsidiary"
    },
    "body": {
-    "ko": "파키스탄 우정국 사업은 2028년 3월까지 장기간에 걸쳐 수행되는 컨소시엄 사업으로, 공동수급체 대표사로서의 사업 관리 부담과 현지 정치·환율 변동 등 신흥시장 특유의 실행 리스크에 노출될 수 있다. 동남아·남아시아 등 신규 지역 진출이 확대될수록 현지화, 법규 대응, 통화 리스크 관리 부담도 함께 늘어난다.",
-    "en": "The Pakistan Postal Office project is a long-term consortium undertaking running through March 2028, exposing the company, as lead member of the joint venture, to project management burdens as well as emerging-market-specific execution risks such as local political and currency volatility. As expansion into new regions such as Southeast and South Asia increases, the burden of localization, regulatory compliance, and currency risk management also grows."
+    "ko": "일본 법인은 2025년 3분기 공시 기준 자본총액이 마이너스 9억원인 완전잠식 상태였다. 누적 매출은 16억원, 누적 순손실은 10억원으로 집계됐다. 일본 성과가 늦어지면 모회사의 추가 자금 지원 부담이 커질 수 있다는 우려가 제기됐다.",
+    "en": "The Japan subsidiary was fully capital-impaired with negative equity of KRW 900 million as of the third quarter of 2025. Its cumulative revenue stood at KRW 1.6 billion and its cumulative net loss at KRW 1.0 billion. Concerns were raised that delayed results abroad could increase the parent company's funding burden."
    }
   },
   {
    "cat": {
-    "ko": "규제·제도 리스크",
-    "en": "Regulatory Risk"
+    "ko": "지분 구조와 소형주 변동성",
+    "en": "Shareholding concentration and small-cap volatility"
    },
    "body": {
-    "ko": "STO 관련 하위법규 확정이 지연되고 있는 것처럼, 국내외 금융 규제 환경의 변화 속도가 회사의 신사업 계획과 어긋날 경우 사업화 시점이 추가로 지연될 수 있다. 또한 각국 금융당국의 인허가·데이터 규제 강화는 코어뱅킹 시스템 구축 사업의 진행 속도에 영향을 줄 수 있는 변수다.",
-    "en": "As seen with the delayed finalization of subordinate STO regulations, if the pace of change in domestic and international financial regulation diverges from the company's new business plans, the timing of commercialization could face further delays. In addition, tightening licensing and data regulations by financial authorities in various countries represent a variable that could affect the pace of core banking system implementation projects."
+    "ko": "2025년 3월 공시 기준 최대주주 등 지분율은 32.10%로 높은 편이다. 시가총액 규모가 작아 소형주 특성상 주가 변동이 크게 나타날 수 있다. 자본총계 179억원 규모에서는 대규모 자금이 필요한 프로젝트를 동시에 수행하기 어려운 제약도 있다.",
+    "en": "As of a March 2025 disclosure, the largest shareholder and related parties held 32.10%, a high concentration. With a small market capitalization, the share price can swing widely, as is typical for small caps. With total equity of KRW 17.9 billion, the company may face constraints in running several large-funding projects at once."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중",
-    "en": "Around November 2026"
+    "ko": "2027년 2월 말 전후",
+    "en": "Late February 2027"
    },
    "what": {
-    "ko": "2026년 3분기 실적 공시를 통해 2분기의 손익 개선 흐름이 이어지는지, 순이익 흑자 전환이 지속되는지 확인이 필요하다.",
-    "en": "The Q3 2026 earnings disclosure will need to be checked to see whether the earnings improvement seen in Q2 continues and whether the swing to positive net income persists."
+    "ko": "2026 사업연도 연간 잠정 실적 공시. 2025 사업연도 결과가 2026년 2월 27일 공시된 점을 기준으로 보면, 4분기 영업손실이 연간 기준 적자 폭 축소 흐름을 이어가는지 확인하는 지점이다.",
+    "en": "Preliminary annual results for fiscal 2026. Based on the fiscal 2025 results disclosed on February 27, 2026, this is the point to check whether the fourth-quarter operating loss keeps the annual loss narrowing."
    }
   },
   {
    "when": {
-    "ko": "2026년 10월 1~2일",
-    "en": "October 1-2, 2026"
+    "ko": "2027년 3월 31일까지",
+    "en": "By March 31, 2027"
    },
    "what": {
-    "ko": "한국거래소에서 열리는 'STO 서밋 2026'에서 토큰증권 발행인 계좌관리기관 허가 기준 등 제도 세부 내용이 논의될 예정으로, 뱅크웨어글로벌의 STO 관련 사업 방향성에 참고가 될 수 있다.",
-    "en": "At 'STO Summit 2026' to be held at the Korea Exchange, details such as licensing criteria for security token issuer account management institutions are expected to be discussed, which could provide reference points for the direction of Bankware Global's STO-related business."
+    "ko": "2026 사업보고서 제출. 연간 영업이익률, 지배주주 순손익, 일본 법인의 자본 상태와 현금흐름 변화를 정기보고서 수치로 확인하는 지점이다.",
+    "en": "Filing of the 2026 annual report. This is where the annual operating margin, controlling-shareholder net result, the Japan subsidiary's capital position and cash flow changes can be checked against audited figures."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 중",
-    "en": "During the second half of 2026"
+    "ko": "2027년 5월 15일 전후",
+    "en": "Around May 15, 2027"
    },
    "what": {
-    "ko": "국내 STO 시행령 등 하위법규 발표 시점을 확인해야 한다. 당초 목표였던 7월을 넘겨 지연되고 있어 발표 시점에 따라 관련 신사업의 구체화 속도가 달라질 수 있다.",
-    "en": "The timing of the announcement of Korea's subordinate STO regulations, including the enforcement decree, should be monitored. Having already slipped past the originally targeted July timeline, the pace at which related new business plans take concrete shape may depend on when this announcement occurs."
+    "ko": "2027년 1분기 분기보고서 제출과 실적 발표. 2026년 1분기 이후 분기 흑자 흐름이 유지되는지, 3분기 적자 확대가 일시적 요인인지 확인하는 지점이다.",
+    "en": "Filing of the first-quarter 2027 quarterly report and results. This is where it can be seen whether quarterly profitability holds after the first quarter of 2026, and whether the wider third-quarter 2026 loss was temporary."
    }
   },
   {
    "when": {
-    "ko": "수시",
-    "en": "On an ongoing basis"
+    "ko": "2027년 12월",
+    "en": "December 2027"
    },
    "what": {
-    "ko": "파키스탄 우정국 사업(2028년 3월까지) 및 인도네시아 MKP와의 전략적 MOU 후속 계약 체결 여부 등 해외 수주의 구체적 진전 상황을 추적할 필요가 있다.",
-    "en": "Concrete progress on overseas orders should be tracked on an ongoing basis, including execution of the Pakistan Postal Office project (through March 2028) and whether the strategic memorandum of understanding with Indonesia's MKP develops into follow-on contracts."
+    "ko": "OK저축은행 수신 계정계 구축 계약기간 종료. 대형 프로젝트 매출 인식이 끝난 뒤 AMS 등 유지·관리 매출로 이어지는지가 확인 지점이다.",
+    "en": "End of the OK Savings Bank core deposit system build contract period. The check is whether revenue shifts from this large project to maintenance revenue such as AMS once recognition ends."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "뱅크웨어글로벌은 국내 유일의 코어뱅킹 소프트웨어 기업으로서 독점적 지위를 바탕으로 해외 수주 다변화를 진행하고 있으며, 2026년 2분기에는 순이익이 소폭 흑자로 전환되는 등 최근 분기 실적 개선 흐름이 관찰된다. 다만 연간 기준으로는 2023~2025년 3개년 모두 영업손실을 기록한 누적 적자 구조에 있으며, 프로젝트 단위 매출 인식 특성상 분기별 실적 변동성이 크다는 점도 함께 고려해야 한다. 파키스탄 우정국 수주와 인도네시아 살림그룹 계열 MKP와의 MOU는 해외 시장 확대의 긍정적 신호이나, 실제 매출 기여 시점과 규모는 향후 실적을 통해 확인이 필요하다. STO 기반 미들웨어 특허 등록으로 디지털자산 인프라 사업 다각화를 모색하고 있지만, 국내 STO 하위법규 확정이 지연되고 있어 사업화 시점은 여전히 불확실하다. 종합적으로 실적 턴어라운드의 지속성, 해외 대형 프로젝트의 실행 리스크, 신사업의 제도적 불확실성이 균형을 이루는 국면으로 평가된다.",
-   "en": "As Korea's sole dedicated core banking software company, Bankware Global is leveraging its monopoly position to diversify overseas order wins, and Q2 2026 saw a modest swing to positive net income, indicating an improving trend in recent quarterly results. However, on an annual basis the company recorded operating losses across all three years from 2023 through 2025, reflecting a cumulative loss structure, and the project-based nature of revenue recognition means quarterly results carry significant volatility that should be weighed alongside the recent improvement. The Pakistan Postal Office order win and the memorandum of understanding with Indonesia's Salim Group affiliate MKP are positive signals for overseas market expansion, but the actual timing and scale of revenue contribution will need to be confirmed through future results. The company is also exploring diversification into digital asset infrastructure through its STO-based middleware patent registration, though the timing of commercialization remains uncertain given delays in finalizing Korea's subordinate STO regulations. Overall, the situation reflects a balance between the sustainability of the earnings turnaround, execution risks tied to large overseas projects, and regulatory uncertainty surrounding new business initiatives."
+   "ko": "뱅크웨어글로벌은 2025년 매출 634억원(전년 대비 26.4% 증가)과 영업손실 축소로 2024년의 부진에서 일부 벗어난 모습이다. 2026년 분기 매출은 170억원 이상을 유지했지만, 2025년 3분기부터 2026년 3분기까지 5개 분기 연속 영업적자가 이어졌고 3분기에는 적자 폭이 다시 커졌다. 지배주주 순이익은 2026년 2분기에 흑자로 돌아섰으나 3분기에는 순손실 18.3억원으로 되돌아갔다. 수주 측면에서는 파키스탄 우정국 282억원과 OK저축은행 160억 6,560만원 프로젝트가 있어 매출 기반이 넓어지고 있다. 반면 일본 법인의 자본잠식, 2024년 목표 미달의 경험, 2025년 말 부채총계가 자본총계를 웃도는 재무 구조는 실행력과 안정성에 관한 질문을 남긴다. 이익 체력의 지속성은 분기별 영업손익이 흑자로 이어지는지에 따라 달라지는 것이 현재 가장 분명한 쟁점이다. 다음 확인 지점은 2026 사업연도 연간 실적과 2026 사업보고서이며, 이후 2027년 1분기 분기보고서까지 손익 흐름을 이어서 보는 것이 된다.",
+   "en": "Bankware Global has partly moved past its 2024 slump, with 2025 revenue of KRW 63.4 billion, up 26.4%, and a narrower operating loss. Quarterly revenue stayed at or above KRW 17 billion through 2026, but five straight quarters of operating losses ran from the third quarter of 2025 through the third quarter of 2026, and the loss widened again in the third quarter. Controlling-shareholder net income turned positive in the second quarter of 2026 but returned to a KRW 1.83 billion net loss in the third quarter. On the contract side, the KRW 28.2 billion Pakistan Post project and the KRW 16.07 billion OK Savings Bank project are widening the revenue base. On the other side, the capital impairment at the Japan subsidiary, the 2024 target shortfall, and total liabilities exceeding total equity at year-end 2025 raise questions about execution and stability. Whether earnings durability holds depends on whether quarterly operating profits follow, which is currently the clearest open issue. The next checkpoints are the fiscal 2026 annual results and the 2026 annual report, followed by the first-quarter 2027 report to continue tracking the earnings trend."
   }
  },
  "sources": [
+  "https://thevc.kr/bankwareglobal",
   "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A199480",
-  "https://www.catch.co.kr/Comp/CompSummary/G15415",
+  "https://m.sedaily.com/article/20103186",
+  "https://m.news.nate.com/view/20260227n30576",
+  "https://www.newspim.com/news/view/20260818000318",
   "https://www.catch.co.kr/Comp/CompInfo/G15415",
-  "https://m.irgo.co.kr/IR-COMP/199480/",
-  "https://markets.hankyung.com/stock/199480/financial-summary",
-  "https://www.jobkorea.co.kr/company/16152820",
-  "https://www.saramin.co.kr/zf_user/company-info/view/csn/c3Fsc2tVcWdkR0VWM1l0SlNwK0ExUT09/company_nm/%EB%B1%85%ED%81%AC%EC%9B%A8%EC%96%B4%EA%B8%80%EB%A1%9C%EB%B2%8C(%EC%A3%BC)",
-  "https://www.innoforest.co.kr/company/CP00001806/%EB%B1%85%ED%81%AC%EC%9B%A8%EC%96%B4%EA%B8%80%EB%A1%9C%EB%B2%8C",
-  "https://finance.finup.co.kr/Stock/199480",
-  "https://www.jobplanet.co.kr/companies/32559/reviews/%EB%B1%85%ED%81%AC%EC%9B%A8%EC%96%B4%EA%B8%80%EB%A1%9C%EB%B2%8C",
-  "https://www.insightkorea.co.kr/news/articleView.html?idxno=205909",
-  "https://www.jobkorea.co.kr/recruit/co_read/c/bankware2",
-  "https://v.daum.net/v/8Wxo6ckLIM?f=p",
   "https://platum.kr/archives/232487",
-  "https://dart.fss.or.kr/navi/searchNavi.do?naviCrpCik=01138595&naviCrpNm=%EB%B1%85%ED%81%AC%EC%9B%A8%EC%96%B4%EA%B8%80%EB%A1%9C%EB%B2%8C&naviCode=A002",
-  "https://bankwareglobal.com/aboutus/company.php",
+  "https://dealsite.co.kr/articles/155910",
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03781846645548632",
+  "https://www.epnc.co.kr/news/articleView.html?idxno=304620",
+  "https://www.catch.co.kr/Comp/CompSummary/G15415",
+  "https://dealsite.co.kr/articles/164267",
+  "https://news.nate.com/view/20260227n30576",
+  "https://www.jobkorea.co.kr/recruit/co_read/c/bankware2",
+  "https://bankwareglobal.com/bbs/?so_table=news",
   "https://comp.fnguide.com/SVO2/ASP/SVD_Finance.asp?pGB=1&gicode=A199480&MenuYn=Y&NewMenuID=103&stkGb=701",
-  "https://comp.wisereport.co.kr/wiseReport/summary/ReportSummary.aspx"
+  "https://www.paxetv.com/news/articleView.html?idxno=279620&replyAll=&reply_sc_order_by=I"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "199480",
  "name": "뱅크웨어글로벌",
  "name_en": "Bankware Global Co., Ltd.",
@@ -223,11 +222,11 @@
   "IT·소프트웨어"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 19:14",
- "dataDate": "20260904",
+ "reportDate": "2026-11-14",
+ "reportTs": "2026-11-14 15:03",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-09-05",
+  "asOf": "2026-11-14",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -282,12 +281,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 14851191221,
-    "op": -604139970,
-    "np_owner": -991197895
-   },
-   {
     "q": "2025Q3",
     "rev": 16976739698,
     "op": -230218518,
@@ -310,25 +303,31 @@
     "rev": 17213006773,
     "op": -81436366,
     "np_owner": 99298633
+   },
+   {
+    "q": "2026Q3",
+    "rev": 18006443124,
+    "op": -729027023,
+    "np_owner": -1834104273
    }
   ],
   "valuation": {
-   "price": 3940,
-   "mcap": 0.0402,
+   "price": 3075,
+   "mcap": 0.0314,
    "shares": 10196588,
    "total_shares": 10196588,
    "wavg_shares": null,
    "per": null,
-   "eps": -27,
-   "pbr": 2.2696,
-   "bps": 1736,
-   "roe_ttm": -1.6,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": -275299910,
+   "eps": -204,
+   "pbr": 1.9762,
+   "bps": 1556,
+   "roe_ttm": -12.9,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": -2075853717,
    "ccy": "KRW",
    "bps_src": "자체",
    "eps_src": "순이익÷주식수",
-   "pbr_krx": 2.24,
+   "pbr_krx": 1.75,
    "bps_krx": 1760.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
@@ -337,5 +336,6 @@
     "per": "loss"
    }
   }
- }
+ },
+ "textRules": 2
 }

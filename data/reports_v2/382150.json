@@ -1,230 +1,229 @@
 {
  "title": {
-  "ko": "매출 정체 속 사업모델 확장의 시험대",
-  "en": "Revenue Stagnates as Business Model Expands"
+  "ko": "AI 플랫폼 전환 중인 적자 바이오",
+  "en": "Oncocross: AI platform pivot, still loss-making"
  },
  "lead": {
-  "ko": "온코크로스는 신약 재창출 서비스에서 ADC·데이터뱅킹으로 사업 영역을 넓히고 있지만, 매출 성장은 아직 상장 당시 제시한 목표치를 크게 밑돌고 있다.",
-  "en": "OnCoCross is expanding from drug repositioning services into ADC and data-banking businesses, but revenue growth still falls well short of the targets presented at its IPO."
+  "ko": "온코크로스는 자체 신약 개발보다 AI 플랫폼 사업에 무게를 옮겼지만, 공시 실적 기준으로 2022년부터 2025년까지 4년 연속 적자가 이어졌고 2025년 3분기부터 2026년 3분기까지 5개 분기 연속 영업손실이 공시됐다. 매출 규모를 얼마나 키우는지가 다음 확인 지점이다.",
+  "en": "Oncocross has moved its focus from in-house drug development to its AI platform, yet operating losses have been reported for four straight years and for five consecutive quarters through Q3 2026, so the pace of revenue growth is the key point to track."
  },
  "keypoints": [
   {
-   "ko": "2025년 매출은 3.7억원으로 2024년 10.7억원에서 급감했고, 영업손실은 88.3억원으로 확대됐다.",
-   "en": "2025 revenue fell sharply to KRW 370 million from KRW 1.07 billion in 2024, while the operating loss widened to KRW 8.83 billion."
+   "ko": "2025년 매출은 3.7억원으로 전년 대비 65.4% 감소했고, 영업손실은 88.3억원으로 손실 폭이 커졌다.",
+   "en": "2025 revenue was KRW 370 million, down 65.4% year on year, while operating loss widened to KRW 8.83 billion."
   },
   {
-   "ko": "2026년 9월 앱티스와 항체-약물접합체(ADC) 공동개발 계약을 체결하며 분석서비스 중심 사업에서 후보물질 개발로 영역을 넓혔다.",
-   "en": "In September 2026 the company signed an antibody-drug conjugate (ADC) co-development deal with Aptis, extending its business from analysis services into candidate development."
+   "ko": "최근 4개 분기(2025년 4분기~2026년 3분기) 지배주주 순손실 합계는 80.5억원이며, 이 기간에 지배주주 순이익이 플러스였던 분기는 2026년 2분기(10.1억원)뿐이다.",
+   "en": "Over the last four quarters (Q4 2025 to Q3 2026), net loss attributable to controlling shareholders totaled KRW 8.05 billion, and Q2 2026 (KRW 1.01 billion) was the only quarter in that span with a profit."
   },
   {
-   "ko": "2026년 4월 온코마스터를 흡수합병해 1만명 규모의 암 환자 코호트 데이터를 확보했으나, 피합병사는 완전자본잠식 상태였다.",
-   "en": "In April 2026 the company absorbed OncoMaster to secure a cancer-patient cohort of roughly 10,000 people, though the absorbed entity was in full capital impairment."
+   "ko": "사업 축은 AI 플랫폼으로 옮겨 갔고, 2026년 7월 1일 온코마스터 흡수합병 이후 1만명 규모의 실제 암환자 데이터를 내재화했다.",
+   "en": "The business has shifted toward the AI platform, and after the absorption merger completed on July 1, 2026, the company holds real-world cancer patient data for about 10,000 people."
   },
   {
-   "ko": "부채비율이 2024년 10.2%에서 2025년 116.5%로 급등했고, 영업활동현금흐름은 5년 연속 마이너스를 이어가고 있다.",
-   "en": "The debt ratio jumped from 10.2% in 2024 to 116.5% in 2025, and operating cash flow has remained negative for five consecutive years."
+   "ko": "췌장암 병용요법 OC212e가 ASCO 2026 초록으로 채택됐지만, 상업적 성과가 매출에 반영됐다는 공시는 아직 없다.",
+   "en": "The pancreatic cancer combination candidate OC212e was accepted as an ASCO 2026 abstract, but no commercial revenue from it has been disclosed yet."
   },
   {
-   "ko": "2026년 2분기에는 영업손실이 지속되는 가운데 지배주주순이익이 일시적으로 흑자 전환되는 등 손익 변동성이 크다.",
-   "en": "In Q2 2026, net income attributable to owners briefly turned positive even as the operating loss continued, reflecting significant earnings volatility."
+   "ko": "최근 4개 분기 순손실이어서 PER은 산출되지 않고, PBR은 순자산 대비 프리미엄 구간에 있다.",
+   "en": "PER cannot be calculated because the last four quarters show net losses, and price-to-book sits at a premium to net assets."
   }
  ],
  "business": {
-  "ko": "온코크로스는 유전자 발현 데이터(전사체) 분석을 기반으로 기존 약물의 신규 적응증과 병용요법을 발굴하는 AI 플랫폼 'RAPTOR AI'를 주력으로 하는 정밀의료 AI 기업이다. 매출은 제약사를 대상으로 한 약물평가 분석서비스가 대부분을 차지하며, 대웅제약·동화약품·JW중외제약·보령 등 국내 제약사와 프랑스 4P-Pharma, 스위스 AlphaMol Science 등 해외 파트너를 고객으로 두고 있다. 블로터 보도에 따르면 지난해 매출 전액이 분석서비스에서 발생했고 올해 상반기에도 분석서비스가 매출의 84.3%를 차지했으며, 공동연구개발 매출은 2024년부터 올해 상반기까지 발생하지 않았다. 회사는 2026년 4월 암 환자 코호트 데이터 보유사인 온코마스터를 흡수합병해 유전체·임상 데이터 자산을 내재화했고, 이 과정에서 온코마스터의 2대 주주였던 유한양행이 신주 배정을 통해 주주로 참여하게 됐다. 같은 해 1월에는 단백체 분석기업 오믹스AI에 20억원을 투자하며 표적단백질분해(TPD) 등 차세대 분석 영역으로 사업을 확장했다. 2026년 9월에는 ADC 전문기업 앱티스와 항암 타깃·항체 후보물질을 공동 발굴·개발하는 계약을 체결해, 분석 결과 제공을 넘어 실제 후보물질 개발에 참여하는 구조로 사업 범위를 넓혔다. 이 계약은 계약금과 단계별 마일스톤을 합쳐 28억원 규모로, 앱티스가 제3자에게 기술이전할 경우 별도 수익 배분도 받는 구조다. 회사는 국내 AI 신약개발 기업 중 파로스아이바이오·신테카바이오·프로티나 등과 함께 언급되며, 초기 후보물질 발굴형 경쟁사와 달리 이미 전임상·임상을 마친 약물의 적응증 확장에 특화된 점을 차별점으로 내세우고 있다.",
-  "en": "OnCoCross is a precision-medicine AI company centered on RAPTOR AI, a platform that analyzes gene-expression (transcriptomic) data to identify new indications and combination therapies for existing drugs. Most of its revenue comes from drug-evaluation analysis services sold to pharmaceutical companies, with clients including Daewoong Pharmaceutical, Dong Wha Pharmaceutical, JW Pharmaceutical and Boryung domestically, and 4P-Pharma of France and AlphaMol Science of Switzerland internationally. According to Bloter, last year's entire revenue came from analysis services, and analysis services still accounted for 84.3% of revenue in the first half of this year, while co-development revenue was zero from 2024 through the first half of this year. In April 2026 the company absorbed OncoMaster, a holder of cancer-patient cohort data, internalizing a genomic and clinical data asset, and Yuhan Corporation, formerly OncoMaster's second-largest shareholder, became an OnCoCross shareholder through the merger. In January of the same year the company invested KRW 2 billion in proteomics firm OmicsAI, expanding into next-generation analysis areas such as targeted protein degradation (TPD). In September 2026 it signed a co-development agreement with ADC specialist Aptis to jointly discover cancer targets and antibody candidates, extending its role beyond providing analysis results into actual candidate development. That contract, combining upfront payment and staged milestones, totals KRW 2.8 billion, with additional revenue sharing if Aptis licenses the resulting assets to a third party. The company is discussed alongside domestic AI drug-discovery peers such as Paros IBio, Syntekabio and Protina, and positions its specialization in expanding indications for drugs that have already completed preclinical or clinical testing as a differentiator from early-stage candidate-discovery competitors."
+  "ko": "온코크로스는 AI 기반 신약개발 서비스 기업으로, 핵심 플랫폼은 RAPTOR AI다. 항암제에 특화된 ONCO-RAPTOR AI가 약물의 적응증과 병용 요법을 찾는 데 쓰이고, 암 조기 진단 보조 솔루션인 ONCOfind가 진단 사업 영역을 넓히고 있다. 매출의 원천은 제약사를 상대로 한 약물평가서비스와 공동연구개발이며, 2025년 매출이 줄어든 이유로 회사는 이 서비스의 신규 수주 감소를 꼽았다. 상장 준비 과정에서 회사는 자체 신약 파이프라인 개발보다 AI 플랫폼 사업에 우선순위를 두는 쪽으로 전략을 바꿨다. 상장 1년 무렵에는 질량분석기를 들여 단백질 분석 서비스 매출을 일으키기 시작했다. 2026년 7월 1일 온코마스터 흡수합병이 완료되면서 약 10년간 쌓인 1만명 규모의 실제 암환자 데이터를 내재화했고, 이를 RAPTOR AI 2.0과 결합하는 구조를 갖췄다. 회사는 데이터 생산, 데이터 자산화, AI 분석, 사업화로 이어지는 생태계를 내세운다. 고객 측면에서는 국내 제약사들과 실제 환자 데이터 기반 공동연구와 플랫폼 도입 조건을 협의 중이며, 일부 프로젝트는 실무 협의 단계까지 진전됐다. 경쟁 구도에서 국내 AI 신약개발사는 대체로 임상 전 단백질 구조 설계에 초점을 맞추지만, 온코크로스는 이미 전임상을 마친 약물의 적응증을 찾는 방식으로 차별화한다. 일부 경쟁 기업이 세포주 데이터를 쓰는 것과 달리 회사는 환자 데이터와 DNA·RNA·단백체·임상결과를 통합한 멀티오믹스 데이터를 강조한다.",
+  "en": "Oncocross is an AI-based drug development services company whose core platform is RAPTOR AI. ONCO-RAPTOR AI, specialized for anticancer drugs, is used to identify indications and combination therapies, while ONCOfind, an assistive cancer early-detection solution, extends the company into diagnostics. Revenue has mainly come from drug evaluation services and joint R&D with pharmaceutical companies, and the company attributed the 2025 revenue decline to fewer new drug evaluation service orders. During the IPO preparation, the company moved priority from developing its own drug pipeline toward the AI platform business. Around a year after listing, it added a mass spectrometer and began generating protein analysis service revenue. The absorption merger with an unlisted company was completed on July 1, 2026, bringing in about 10 years of real-world cancer patient data covering roughly 10,000 patients, which the company plans to combine with RAPTOR AI 2.0. The company describes an ecosystem running from data generation to data asset building, AI analysis and commercialization. On the customer side, it is negotiating joint research and platform adoption terms with major domestic pharmaceutical companies, and some projects have reached working-level discussions. Among domestic AI drug developers, most typically focus on protein structure design before clinical stages, whereas Oncocross seeks new indications for drugs that have already completed preclinical work. Some peers use cell line data, while the company emphasizes integrated multi-omics data that combines real patient records with DNA, RNA, proteomic and clinical outcome data."
  },
  "earnings": {
-  "ko": "온코크로스의 매출은 2022년 1.5억원, 2023년 0.9억원, 2024년 10.7억원으로 등락을 거친 뒤 2025년 3.7억원으로 다시 급감했다. 분기별로도 2025년 2분기 1.38억원, 3분기 0.29억원, 4분기 1.41억원, 2026년 1분기 1.67억원, 2분기 0.58억원으로 매 분기 매출 규모가 크게 출렁이며 안정적인 매출 기반을 갖추지 못한 모습이다. 영업손실은 2022년 100.0억원에서 2023년 68.1억원, 2024년 69.6억원으로 다소 줄었다가 2025년 88.3억원으로 다시 확대됐고, 분기 영업손실도 2025년 2분기 18.7억원에서 2026년 2분기 27.0억원까지 꾸준히 늘어나는 추세다. 지배주주순이익 역시 2022년 -102.0억원에서 2023년 -42.1억원으로 적자가 축소됐다가 2024년 -64.8억원, 2025년 -89.3억원으로 다시 확대되며 뚜렷한 개선 흐름을 보이지 못했다. 특히 2026년 2분기에는 영업손실 27.0억원이 지속됐음에도 지배주주순이익이 +10.1억원으로 일시적으로 흑자 전환됐는데, 이는 영업외 요인에 따른 것으로 영업 본연의 수익성 개선과는 성격이 다른 변동으로 해석된다. 자본총계는 2024년 204.6억원에서 2025년 133.7억원으로 줄었고, 같은 기간 부채총계는 20.9억원에서 155.8억원으로 급증해 부채비율이 10.2%에서 116.5%로 뛰었다. 영업활동현금흐름은 2022년 -82.0억원, 2023년 -49.1억원, 2024년 -55.2억원, 2025년 -74.1억원으로 5년 연속 마이너스를 기록하며 현금 소진이 이어지고 있다. 톱데일리 보도에 따르면 회사가 상장 증권신고서에서 제시했던 2025년 매출 목표(37억원)와 실제 실적(3.7억원) 사이에는 10배 가까운 격차가 존재해, 상장 당시 실적 추정치의 신뢰도에 대한 지적이 나온 바 있다.",
-  "en": "OnCoCross's revenue moved from KRW 150 million in 2022 to KRW 92 million in 2023 and KRW 1.07 billion in 2024, before falling sharply again to KRW 370 million in 2025. Quarterly revenue was similarly volatile, at KRW 138 million in Q2 2025, KRW 29 million in Q3, KRW 141 million in Q4, KRW 167 million in Q1 2026 and KRW 58 million in Q2 2026, showing no stable revenue base. The operating loss narrowed from KRW 10.00 billion in 2022 to KRW 6.81 billion in 2023 and KRW 6.96 billion in 2024, before widening again to KRW 8.83 billion in 2025, and the quarterly operating loss has been trending wider, from KRW 1.87 billion in Q2 2025 to KRW 2.70 billion in Q2 2026. Net income attributable to owners also failed to show a clear improving trend, moving from -KRW 10.20 billion in 2022 to -KRW 4.21 billion in 2023, then widening again to -KRW 6.48 billion in 2024 and -KRW 8.93 billion in 2025. Notably, in Q2 2026 net income attributable to owners briefly turned positive at +KRW 1.01 billion even as the operating loss continued at KRW 2.70 billion, a swing that appears driven by non-operating factors rather than any underlying improvement in operating profitability. Total equity fell from KRW 20.46 billion in 2024 to KRW 13.37 billion in 2025, while total liabilities surged from KRW 2.09 billion to KRW 15.58 billion over the same period, pushing the debt ratio from 10.2% to 116.5%. Operating cash flow has been negative for five straight years, at -KRW 8.20 billion in 2022, -KRW 4.91 billion in 2023, -KRW 5.52 billion in 2024 and -KRW 7.41 billion in 2025, indicating continued cash burn. According to Topdaily, the roughly tenfold gap between the 2025 revenue target of KRW 3.7 billion presented in the IPO prospectus and the actual result of KRW 370 million drew criticism over the reliability of the company's original earnings projections."
+  "ko": "연간 매출은 2022년 1.5억원에서 2023년 9,152만원으로 39.1% 줄었고, 2024년에는 10.7억원으로 1,071.5% 늘어 2022~2025년 중 가장 큰 해가 됐다. 2025년 매출은 3.7억원으로 65.4% 줄었으며, 상장 증권신고서가 2025년 매출을 37억원으로 추정했던 것에 크게 못 미쳤다. 영업손실은 2022년 100억원에서 2023년 68.1억원으로 줄었다가 2024년 69.6억원, 2025년 88.3억원으로 다시 늘었다. 2024년 영업이익률이 -649.6%로 개선된 것은 매출이 커진 데 따른 분모 효과이고, 영업손실 절대액은 2023년 수준과 비슷했다. 2025년 영업이익률은 -2,383.0%로 나빠졌는데, 매출이 줄어든 상태에서 비용이 늘었기 때문이다. 회사는 2025년 실적 감소 요인으로 약물평가서비스 신규 수주 감소와 AI 플랫폼 고도화를 위한 다중오믹스 분석 기술 개발 비용 증가를 들었다. 지배주주 순손실은 2023년 42.1억원에서 2024년 64.8억원, 2025년 89.3억원으로 확대됐고, 당기순손실 수치도 같은 연도의 공시값과 같다. 부채비율은 2023년 6.7%에서 2025년 116.5%로 올랐는데, 2025년 7월 발행한 125억원 규모 전환사채 발행과 맞물린 것으로 보인다. 영업활동 현금흐름은 2022년 -82억원, 2023년 -49.1억원, 2024년 -55.2억원, 2025년 -74.1억원으로 모두 유출이었다. 분기 매출은 2025년 3분기 2,918만원, 4분기 1.4억원, 2026년 1분기 1.7억원, 2분기 5,812만원, 3분기 9,012만원으로 변동이 컸다. 2026년 3분기 매출은 전년 동기 대비 208.8% 늘었지만 같은 분기 영업손실은 28.7억원으로 손실이 확대됐다. 2026년 2분기에는 영업손실 27억원에도 지배주주 순이익이 10.1억원으로 플러스였는데, 영업 외 손익이 작용한 것으로 보이며 세부 항목은 정기보고서에서 확인해야 한다.",
+  "en": "Annual revenue went from KRW 150 million in 2022 to KRW 91.52 million in 2023, down 39.1%, then rose to KRW 1.07 billion in 2024, up 1,071.5%, making 2024 the largest year of the 2022 to 2025 window. Revenue fell 65.4% to KRW 370 million in 2025, far below the KRW 3.7 billion that the IPO registration statement had projected for that year. Operating loss narrowed from KRW 10 billion in 2022 to KRW 6.81 billion in 2023, then widened to KRW 6.96 billion in 2024 and KRW 8.83 billion in 2025. The operating margin improved in 2024 to -649.6%, mainly because the revenue base was larger, while the absolute operating loss stayed close to the 2023 level. The margin deteriorated again to -2,383.0% in 2025 as revenue shrank and costs rose. The company attributed the 2025 decline to fewer new drug evaluation service orders and higher costs for developing multi-omics analysis technology to upgrade its AI platform. Net loss attributable to controlling shareholders widened from KRW 4.21 billion in 2023 to KRW 6.48 billion in 2024 and KRW 8.93 billion in 2025, and the total net loss reported each year matches these figures. The debt-to-equity ratio rose from 6.7% in 2023 to 116.5% in 2025, which appears to coincide with the KRW 12.5 billion convertible bond issued in July 2025. Operating cash flow was negative in every year, at -KRW 8.2 billion in 2022, -KRW 4.91 billion in 2023, -KRW 5.52 billion in 2024 and -KRW 7.41 billion in 2025. Quarterly revenue was KRW 29.18 million in Q3 2025, KRW 141 million in Q4 2025, KRW 167 million in Q1 2026, KRW 58.12 million in Q2 2026 and KRW 90.12 million in Q3 2026, a volatile path. Q3 2026 revenue rose 208.8% from the year-earlier quarter, yet operating loss widened to KRW 2.87 billion in the same quarter. In Q2 2026, net profit attributable to controlling shareholders was KRW 1.01 billion despite an operating loss of KRW 2.7 billion, a gap that appears to reflect non-operating items, and the breakdown should be checked in the annual report."
  },
  "industry": {
-  "ko": "국내 AI 신약개발 산업은 파로스아이바이오, 신테카바이오, 프로티나 등 여러 상장·비상장 기업이 경쟁하는 초기 성장 단계에 있으며, 각 업체는 후보물질 발굴, 플랫폼 라이선싱, 임상 단계 적응증 확장 등 서로 다른 사업모델을 취하고 있다. 온코크로스는 이미 전임상·임상을 마친 약물의 적응증 확장과 병용요법 도출에 특화돼 있어, 완전히 새로운 화합물을 발굴하는 초기 단계형 업체들과는 사업모델이 구분된다. 최근에는 ADC, 이중특이항체, 표적단백질분해(TPD) 등 차세대 모달리티로 국내외 AI 신약개발사들의 사업 확장이 이어지고 있으며, 온코크로스도 랩터AI 2.0 공개와 앱티스와의 ADC 공동개발을 통해 이 흐름에 합류했다. 업계에서는 세포주 기반 데이터에 의존하던 기존 AI 플랫폼과 달리, 실제 환자의 조직·혈액·임상정보를 활용하는 리얼월드데이터(RWD) 기반 플랫폼에 대한 글로벌 제약사의 관심이 커지고 있다는 평가가 나온다. 온코크로스는 10년간 축적한 약 1만명 규모의 암 환자 데이터에 온코마스터 인수로 확보한 코호트 데이터를 더해 이 흐름에서 데이터 경쟁력을 강조하고 있다. 다만 AI 신약개발 업종 전반이 아직 대형 기술이전이나 뚜렷한 매출 성장을 통한 검증 사례가 제한적인 초기 단계에 머물러 있어, 개별 기업의 파이프라인 진행과 계약 성과가 실제 매출로 이어지는 속도가 핵심 변수로 남아 있다.",
-  "en": "Korea's AI drug-discovery industry is at an early growth stage with several listed and unlisted companies—including Paros IBio, Syntekabio and Protina—competing under distinct business models spanning candidate discovery, platform licensing and clinical-stage indication expansion. OnCoCross is differentiated by its specialization in expanding indications and identifying combination therapies for drugs that have already completed preclinical or clinical testing, setting it apart from early-stage candidate-discovery peers. Domestic and global AI drug-discovery firms have recently been expanding into next-generation modalities such as ADCs, bispecific antibodies and targeted protein degradation (TPD), and OnCoCross has joined this trend through the unveiling of RAPTOR AI 2.0 and its ADC co-development with Aptis. Industry observers note growing interest among global pharmaceutical companies in real-world-data (RWD)-based platforms that use actual patient tissue, blood and clinical information, in contrast to earlier AI platforms that relied on cell-line-based data. OnCoCross has emphasized its data competitiveness in this trend, combining roughly a decade of accumulated cancer-patient data covering about 10,000 patients with the cohort data acquired through the OncoMaster acquisition. However, the AI drug-discovery sector as a whole still has a limited track record of major licensing deals or clear revenue growth, leaving the pace at which individual companies' pipeline progress and contracts convert into actual revenue as the key variable."
+  "ko": "회사 대표는 글로벌 바이오산업에서 신약 자체보다 신약개발을 가능하게 하는 데이터와 플랫폼 기업의 가치가 빠르게 높아지고 있다고 말했다. 이는 온코크로스가 AI 플랫폼 중심으로 방향을 잡은 논리와 맞닿아 있다. 국내 제약 업계는 약가인하와 미국 관세 이슈가 겹치며 해외진출을 대안으로 찾는 분위기라는 진단이 나온다. 이런 환경에서 회사는 2026년 2월 포럼에서 아시아 멀티오믹스 데이터의 관문이 되겠다는 구상을 공개했다. 전임상을 마친 약물의 적응증을 찾는 방식은 임상 전 구조 설계 중심의 국내 AI 신약개발사와 비교되는 지점이다. 2026년 1월에는 단백체 분석 기업 오믹스AI에 투자해 데이터 분석 역량을 넓히는 행보도 있었다. 시장 환경에 대한 민감도도 확인된다. 2021년 첫 IPO 추진은 기술성평가에서 A·BBB 등급을 받았지만 금리 인상과 주가 변동으로 시장이 나빠지며 상장을 완주하지 못했다. 기술특례 상장사는 통상 상장 후 5년간 매출액 요건 유예를 받아 2028년까지는 상장폐지 리스크가 당장 크지 않다는 것이 기사의 해석이다. 업황 측면에서는 데이터 플랫폼 계약이 반복 매출로 얼마나 이어지는지가 관건이다.",
+  "en": "The company's chief executive has said that in global biopharma, the value of data and platform companies that make drug development possible is rising faster than that of companies developing drugs themselves. That view matches the company's decision to prioritize its AI platform. Press coverage in early 2026 described domestic pharmaceutical companies facing a combination of drug price cuts and US tariff concerns, which has pushed them toward overseas expansion. In February 2026 the company presented a plan to become a gatekeeper for Asian multi-omics data, including a digital biobanking system and autonomous lab-based data production. Its approach of finding new indications for drugs that have already completed preclinical work differs from the structure-design focus typical of domestic AI drug developers. In January 2026 the company also made a strategic investment in an AI proteomics analysis firm. Market sensitivity is visible in its history: its first IPO attempt in 2021 received technology-evaluation grades of A and BBB but was not completed as interest rates rose and share prices fell. Under the technology-special listing route, press coverage noted that such companies typically receive a grace period on the five-year revenue requirement, which keeps near-term delisting risk limited through 2028. For the sector, the open question is whether data-platform contracts can grow into recurring revenue."
  },
  "outlook": {
-  "ko": "회사는 2026년을 랩터AI 중심의 분석서비스 외에 단백체 분석, 대사체 데이터를 아우르는 디지털 바이오뱅킹(DBB) 사업을 본격화해 매출 기반을 확대하는 해로 제시하고 있다. 이를 위해 2026년 7월 오믹스AI와 단백체 분석 용역 위탁계약을 체결했으며, 계약기간은 2026년 7월 1일부터 12월 31일까지로 계약금 50%는 7월 31일, 중도금 25%는 10월 30일, 잔금 25%는 12월 31일에 지급되는 구조다. 온코마스터 흡수합병을 통해 확보한 임상·유전체 데이터를 자사 랩터AI·온코파인드 플랫폼에 결합해 항암 적응증 발굴과 바이오마커 탐색 역량을 끌어올리는 작업도 진행 중이다. 앱티스와의 ADC 공동개발 계약과 관련해 김이랑 대표는 유사한 형태의 공동개발 계약을 추가로 수건 체결할 계획이라고 밝혔다. 회사는 2026년 6월 미국 바이오USA에서 차세대 플랫폼 '랩터AI 2.0'을 공개하고 글로벌 제약사들과 미팅을 진행했으며, 4월에는 미국암연구학회(AACR)에서 췌장암 파이프라인 OC212e의 비임상 연구 결과를 발표하는 등 해외 마케팅과 파이프라인 홍보를 병행하고 있다. 기술특례 상장사인 만큼 매출액 요건(30억원 미만) 미충족에 대한 상장폐지 관련 유예기간이 2028년까지 부여돼 있어, 이 기간 내 매출 기반을 확대할 수 있는지가 중요한 과제로 남아 있다. 다만 상장 이후 두 해 연속 자체 목표치를 크게 밑돈 전례가 있어, 새로 발표되는 계약·사업들이 실제 매출로 얼마나, 언제 연결되는지를 분기별로 확인하는 것이 필요하다.",
-  "en": "The company has framed 2026 as the year it moves beyond RAPTOR AI-centered analysis services to launch a Digital Bio-Banking (DBB) business spanning proteomic and metabolomic analysis, aiming to broaden its revenue base. Toward this end, it signed a proteomic analysis service agreement with OmicsAI in July 2026, running from July 1 to December 31, 2026, with 50% of the contract amount paid on July 31, 25% as an interim payment on October 30, and the remaining 25% settled on December 31. It is also working to combine the clinical and genomic data acquired through the OncoMaster absorption with its RAPTOR AI and ONCOfind platforms to enhance cancer-indication discovery and biomarker exploration capabilities. Regarding the ADC co-development agreement with Aptis, CEO Kim Yi-rang stated that the company plans to sign several additional similar co-development contracts. In June 2026 the company unveiled its next-generation platform \"RAPTOR AI 2.0\" at Bio USA in the United States and held meetings with global pharmaceutical companies, while in April it presented preclinical results for its pancreatic cancer pipeline OC212e at the American Association for Cancer Research (AACR), pursuing overseas marketing and pipeline promotion in parallel. As a technology-special-listed company, it has a grace period through 2028 before delisting risk tied to the revenue requirement (below KRW 3 billion) could become an issue, making the expansion of its revenue base within this window an important task. However, given that actual results have fallen well short of the company's own targets for two consecutive years since listing, it will be important to track quarterly how much and how quickly newly announced contracts and businesses convert into actual revenue."
+  "ko": "회사는 2026년 3월 31일 췌장암 병용요법 OC212e 임상 연구가 ASCO 2026 초록으로 채택됐다고 밝혔다. 대상은 국소진행성 및 전이성 췌장암 환자이며, 표준요법과의 병용 가능성을 평가하는 연구다. 회사는 향후 학회 발표를 통해 임상적 의미와 적용 가능성을 더 구체적으로 제시할 계획이라고 덧붙였다. 2026년 2월에는 OC-212e의 미국 특허 등록 소식도 나왔다. 2026년 2월 포럼에서 회사는 디지털 바이오뱅킹 구축, 자율 주행 랩 기반 데이터 생산, ADC·TPD 등 신규 모달리티 확장을 핵심 과제로 제시했다. 2026년 정관 변경으로 단백질체 분석, 오믹스 데이터 분석, 디지털 바이오뱅크 구축·운영업이 사업 목적에 추가됐다. 합병으로 확보한 환자 데이터를 바탕으로 국내 제약사와 사업 조건을 협의 중이며, 글로벌 제약사와도 후속 미팅을 이어갈 예정이라고 회사는 밝혔다. 2026년 2월에는 일본 국립암센터와의 단백체 공동연구가 최종 논의 단계라는 보도도 나왔다. 다만 자금 조달 측면에서는 2026년 1월 발행한 70억원 전환사채의 전환청구가 2027년 2월 9일부터 가능하다는 점을 함께 봐야 한다.",
+  "en": "In late March 2026 the company said its AI-derived pancreatic cancer combination therapy OC212e had been accepted as an ASCO 2026 abstract. The study covers patients with locally advanced and metastatic pancreatic cancer and evaluates the combination with standard therapy. The company said it plans to present the clinical implications in more detail at future conferences. In February 2026, news reported that a US patent for OC-212e had been registered. At a February 2026 forum, the company set out digital biobanking, autonomous lab-based data production and expansion into new modalities such as ADCs and TPDs as core priorities. A 2026 amendment to its articles of incorporation added protein analysis, omics data analysis and digital biobank operations to its business purpose. Using the patient data it secured through the merger, the company says it is negotiating business terms with major domestic pharmaceutical companies and plans follow-up meetings with global pharmaceutical companies. In February 2026, a report said joint proteomics research with a Japanese national cancer center had reached the final discussion stage. On the financing side, conversion requests for the KRW 7 billion convertible bond issued in January 2026 become possible from February 9, 2027."
  },
  "valuation_comment": {
-  "ko": "온코크로스는 연속 영업손실 구조로 이익을 기준으로 한 밸류에이션 지표를 산출하기 어려운 상태이며, 대신 자산가치 대비 주가 수준을 살펴보는 접근이 주로 활용된다. 현재 주가는 순자산가치 대비 상당한 프리미엄이 반영된 구간에서 거래되고 있어, 시장이 현재의 이익·자산 규모보다는 향후 사업모델 확장과 파이프라인 성과에 대한 기대를 반영하고 있는 것으로 해석될 수 있다. 배당은 지급되지 않고 있어 배당 관점의 비교는 적용되지 않는다. 다년간 매출 목표치와 실제 실적 간의 격차, 그리고 부채비율 상승 등 재무구조 변화는 자산가치 산정의 안정성에도 영향을 줄 수 있는 요인으로 함께 고려할 필요가 있다. 앱티스와의 ADC 공동개발, 온코마스터 합병에 따른 데이터 자산 확대 등 최근 사업모델 변화가 향후 매출·손익 구조에 어떤 영향을 줄지가 자산가치 대비 프리미엄의 지속 여부를 가늠하는 핵심 변수가 될 것으로 보인다.",
-  "en": "Because of its continuous operating losses, OnCoCross is difficult to value on an earnings basis, and valuation discussions instead tend to focus on the share price relative to book value. The current share price trades at a level reflecting a considerable premium to net asset value, which may be interpreted as the market pricing in expectations for future business-model expansion and pipeline progress rather than current profit or asset scale. The company pays no dividend, so a dividend-based comparison does not apply. The multi-year gap between revenue targets and actual results, along with the recent rise in the debt ratio, are factors that could also affect the stability of the underlying asset-value calculation and should be considered alongside any book-value comparison. How recent business-model changes—such as the ADC co-development with Aptis and the expanded data assets from the OncoMaster merger—affect future revenue and earnings structure will likely be a key variable in whether the premium to book value persists."
+  "ko": "PER은 최근 4개 분기 순손실 구조라 이익을 기준으로 한 배수 비교가 성립하지 않는다. PBR은 순자산 대비 프리미엄 구간에 있어 장부상 순자산보다 높은 가격이 형성돼 있다. 이 프리미엄은 현재의 자산가치보다 AI 플랫폼과 데이터 자산, 임상 진척에 대한 기대를 반영하는 구조로 읽힌다. 2025년 말 자본총계는 134억원이고 이 중 지배주주 지분도 134억원이며, 부채총계는 156억원으로 부채비율은 116.5%다. 배당수익률은 업종 평균을 밑도는 수준으로, 주주환원 측면의 배당 요소는 거의 없다. 신주 발행은 희석 요인으로, 온코마스터 합병에서 85만 397주가 새로 발행됐다. 전환사채는 2025년 발행분이 2026년 7월 25일부터, 2026년 1월 발행분이 2027년 2월 9일부터 전환청구가 가능해 주식 수 변동 가능성이 남아 있다. 상장 당시 회사는 동종 업종 상장사의 PER 등과 비교해 공모가를 산정했다고 밝혔지만, 이후 실적 추정치가 낮아지며 공모가 밴드도 조정됐다. 따라서 밸류에이션에 대한 해석은 사업 전환의 성과를 어느 정도 인정하느냐에 따라 달라진다.",
+  "en": "PER cannot be used for comparison because the last four quarters show net losses, so earnings-based multiples do not apply. Price-to-book sits at a premium to net assets, meaning the share price is set above book value. That premium appears to reflect expectations for the AI platform, data assets and clinical progress rather than current asset value. Total equity at the end of 2025 was KRW 13.4 billion, all of it attributable to controlling shareholders, against total liabilities of KRW 15.6 billion, giving a debt ratio of 116.5%. Dividend yield is below the industry average, so shareholder returns through dividends play a minimal role. New share issuance is a dilution factor, and the merger issued 850,397 new shares. Convertible bonds add further share count variability: the 2025 issue has been convertible since July 25, 2026, and the January 2026 issue becomes convertible from February 9, 2027. At listing, the company set its offer price by comparing its projected earnings with the PER of listed peers, but the offer band was later lowered after its earnings estimates were revised down. How the valuation reads therefore depends on how much credit is given to the business transition."
  },
  "bull": [
   {
    "title": {
-    "ko": "사업모델 다변화",
-    "en": "Business Model Diversification"
+    "ko": "데이터 자산 내재화",
+    "en": "Data asset now in-house"
    },
    "body": {
-    "ko": "기존 분석서비스 중심 매출 구조에서 앱티스와의 ADC 공동개발, 온코마스터 합병을 통한 데이터뱅킹 사업으로 영역을 확장하고 있다. 앱티스 계약은 계약금·마일스톤에 더해 기술이전 시 별도 수익 배분 구조를 포함해 성과에 따른 추가 수익 가능성을 열어둔다. 회사는 유사한 형태의 공동개발 계약을 추가로 체결할 계획이라고 밝힌 바 있어, 사업 확장이 이어질 가능성이 있다.",
-    "en": "The company is expanding beyond its analysis-service-centric revenue structure into ADC co-development with Aptis and a data-banking business via the OncoMaster merger. The Aptis contract includes a separate revenue-sharing structure upon any licensing, alongside the upfront payment and milestones, leaving room for additional performance-based revenue. The company has stated it plans to sign several more similar co-development contracts, suggesting further business expansion may follow."
+    "ko": "2026년 7월 온코마스터 흡수합병으로 약 10년간 축적한 1만명 규모의 실제 암환자 데이터를 내재화했다. 회사는 이 데이터를 멀티오믹스 분석과 결합해 RAPTOR AI 2.0을 고도화하고 있다고 밝혔다. 데이터 자산이 쌓이면 제약사 대상 플랫폼 서비스와 공동연구의 협상 기반이 넓어진다는 것이 회사 측 논리다. 국내 제약사와의 사업 조건 협의도 진행 중이다.",
+    "en": "The July 2026 absorption merger brought in about 10 years of real-world cancer patient data covering roughly 10,000 patients. The company says it is combining this data with multi-omics analysis to upgrade RAPTOR AI 2.0. Its argument is that a larger data base widens its negotiating position in platform services and joint research with pharmaceutical companies. Business-term talks with domestic pharmaceutical companies are ongoing."
    }
   },
   {
    "title": {
-    "ko": "글로벌 파트너링 활동",
-    "en": "Global Partnering Activity"
+    "ko": "AI 설계 후보의 임상 진입",
+    "en": "AI-designed candidate reaches clinic"
    },
    "body": {
-    "ko": "2026년 6월 바이오USA에서 차세대 플랫폼 랩터AI 2.0을 공개하고 글로벌 제약사들과 미팅을 진행했다. 4월에는 AACR에서 췌장암 파이프라인 OC212e의 비임상 데이터를 발표하며 파이프라인의 학술적 검증을 병행하고 있다. 회사는 실제 환자 기반 리얼월드데이터를 활용한 플랫폼 경쟁력이 글로벌 제약사의 관심을 받았다고 밝혔다.",
-    "en": "In June 2026 the company unveiled its next-generation platform RAPTOR AI 2.0 at Bio USA and held meetings with global pharmaceutical companies. In April it presented preclinical data on its pancreatic cancer pipeline OC212e at AACR, pursuing academic validation of its pipeline in parallel. The company said global pharmaceutical companies showed interest in its platform competitiveness based on real patient real-world data."
+    "ko": "OC212e 췌장암 병용요법이 ASCO 2026 초록으로 채택되어 AI 도출 전략이 환자 대상 임상 연구 단계로 이어졌다는 점이 부각됐다. 회사는 2026년 2월 OC-212e의 미국 특허 등록 소식도 알렸다. AI로 설계한 후보가 임상 단계에 들어갔다는 사실은 플랫폼 검증 근거로 제시된다.",
+    "en": "OC212e, a pancreatic cancer combination therapy, was accepted as an ASCO 2026 abstract, highlighting that an AI-derived strategy has moved into a patient clinical study. The company also reported a US patent registration for OC-212e in February 2026. The company presents the fact that an AI-designed candidate has entered clinical study as evidence for its platform."
    }
   },
   {
    "title": {
-    "ko": "데이터 자산 확대",
-    "en": "Expanded Data Assets"
+    "ko": "해외 공동연구 논의 확대",
+    "en": "Overseas joint research talks widen"
    },
    "body": {
-    "ko": "온코마스터 흡수합병으로 50여개 대학병원 기반 1만명 규모의 암 환자 유전체·임상 데이터를 확보했다. 오믹스AI 투자와 단백체 분석 위탁계약을 통해 단백체 데이터까지 결합한 멀티오믹스 기반 디지털 바이오뱅킹 사업 구축을 추진 중이다. 아시아인 암 환자의 장기추적 데이터는 서구권 중심 데이터에 대비한 희소성 있는 자산으로 평가받는다는 언론 보도가 있다.",
-    "en": "Through the OncoMaster absorption, the company secured genomic and clinical data on roughly 10,000 cancer patients drawn from over 50 university hospitals. Through the OmicsAI investment and a proteomic analysis service contract, it is building a multi-omics-based Digital Bio-Banking business that also incorporates proteomic data. Media reports have noted that long-term follow-up data on Asian cancer patients is viewed as a scarce asset relative to Western-centric datasets."
+    "ko": "일본 국립암센터와의 단백체 공동연구가 2026년 2월 최종 논의 단계라는 보도가 나왔다. 회사는 글로벌 제약사들과 후속 미팅과 사업 협의를 이어갈 계획이라고 밝혔다. 2026년 2월 포럼에서 제시한 아시아 멀티오믹스 데이터 관문 구상이 실제 계약으로 이어지는지가 확인 지점이다.",
+    "en": "A February 2026 report said joint proteomics research with a Japanese national cancer center had reached the final discussion stage. The company said it plans follow-up meetings and business talks with global pharmaceutical companies. Whether the Asian multi-omics data gateway concept presented in February 2026 turns into actual contracts is the point to confirm."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "매출 목표 대비 큰 격차",
-    "en": "Large Gap Versus Revenue Targets"
+    "ko": "매출 기반의 취약성",
+    "en": "Thin revenue base"
    },
    "body": {
-    "ko": "상장 당시 증권신고서에서 제시한 2025년 매출 목표 37억원 대비 실제 실적은 3.7억원으로 10분의 1 수준에 그쳤다. 2024년 매출 역시 목표치 12억원에 못 미치는 10.7억원을 기록했다. 이러한 격차는 회사가 제시하는 향후 사업 계획의 실현 가능성을 판단할 때 신중한 검증이 필요함을 보여준다.",
-    "en": "Actual 2025 revenue of KRW 370 million came in at only about one-tenth of the KRW 3.7 billion target presented in the IPO prospectus. 2024 revenue of KRW 1.07 billion also fell short of the KRW 1.2 billion target. This gap suggests that careful scrutiny is warranted when assessing the feasibility of the company's future business plans."
+    "ko": "2025년 매출은 3.7억원으로 전년 대비 65.4% 줄었고, 상장 증권신고서의 2025년 추정 매출 37억원과도 큰 차이가 났다. 회사는 약물평가서비스 신규 수주 감소를 원인으로 들었다. 영업손실 88.3억원에 비해 매출 규모가 작아 손익 개선 폭이 제한된다는 점이 약세 논리다.",
+    "en": "Revenue fell 65.4% to KRW 370 million in 2025, far below the KRW 3.7 billion projected in the IPO registration statement. The company cited fewer new drug evaluation service orders as the cause. The bear argument is that revenue is small relative to the KRW 8.83 billion operating loss, which limits how much profitability can improve from sales growth alone."
    }
   },
   {
    "title": {
-    "ko": "재무구조 악화",
-    "en": "Deteriorating Financial Structure"
+    "ko": "적자 지속과 손실 확대",
+    "en": "Losses persist and widened"
    },
    "body": {
-    "ko": "부채비율이 2024년 10.2%에서 2025년 116.5%로 급등했고, 자본총계는 204.6억원에서 133.7억원으로 줄었다. 영업활동현금흐름은 5년 연속 마이너스를 기록하며 현금 소진이 지속되고 있다. 지속적인 외부자금 조달 필요성이 이어질 가능성을 배제할 수 없다.",
-    "en": "The debt ratio surged from 10.2% in 2024 to 116.5% in 2025, while total equity fell from KRW 20.46 billion to KRW 13.37 billion. Operating cash flow has been negative for five consecutive years, indicating continued cash burn. The possibility of an ongoing need for external funding cannot be ruled out."
+    "ko": "영업손실은 2022년부터 2025년까지 4년 연속 적자로 공시됐고, 2025년 3분기부터 2026년 3분기까지 5개 분기 연속 영업손실이 이어졌다. 2026년 3분기 영업손실은 28.7억원으로 전년 동기 대비 손실이 늘었다. 최근 4개 분기 지배주주 순손실 합계는 80.5억원이다.",
+    "en": "Operating losses have been reported for four straight years from 2022 to 2025 and for five consecutive quarters from Q3 2025 through Q3 2026. Q3 2026 operating loss of KRW 2.87 billion was larger than in the year-earlier quarter. Net loss attributable to controlling shareholders over the last four quarters totaled KRW 8.05 billion."
    }
   },
   {
    "title": {
-    "ko": "손익 변동성과 예측 불확실성",
-    "en": "Earnings Volatility and Forecast Uncertainty"
+    "ko": "자금 조달과 희석 부담",
+    "en": "Funding and dilution burden"
    },
    "body": {
-    "ko": "영업손실이 매 분기 확대되는 가운데 2026년 2분기 순이익만 일시적으로 흑자를 기록하는 등 영업손익과 순손익 간 괴리가 크다. 분기 매출 역시 1억원대에서 6천만원대까지 큰 폭으로 출렁여 안정적인 매출 예측이 어렵다. 이런 변동성은 회사의 사업 성과를 분기 단위로 판단하기 어렵게 만든다.",
-    "en": "While the operating loss has widened every quarter, net income briefly turned positive only in Q2 2026, creating a large gap between operating and net results. Quarterly revenue has also swung widely, from around KRW 100 million to about KRW 60 million, making stable revenue forecasting difficult. This volatility makes it hard to judge the company's business performance on a quarter-by-quarter basis."
+    "ko": "2025년 7월 발행한 125억원 전환사채 가운데 25억원을 2026년 9월 만기 전에 자기자금 약 25억 5,929만원을 들여 취득했고, 잔액은 100억원이다. 2026년 1월에는 70억원 규모 전환사채도 발행했다. 합병 신주 85만 397주까지 더해져 주식 수 증가 가능성이 있다.",
+    "en": "The company used about KRW 2.56 billion of its own funds in September 2026 to buy back KRW 2.5 billion of the KRW 12.5 billion convertible bond issued in July 2025 before maturity, leaving KRW 10 billion outstanding. It also issued KRW 7 billion in convertible bonds in January 2026. Together with the 850,397 shares issued in the merger, the share count could rise further."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "매출 집중 리스크",
-    "en": "Revenue Concentration Risk"
+    "ko": "매출 변동성과 수주 의존",
+    "en": "Revenue volatility and dependence on orders"
    },
    "body": {
-    "ko": "매출의 대부분이 분석서비스 계약에 의존하고 있으며, 공동연구개발 매출은 2024년부터 2026년 상반기까지 발생하지 않았다. 신규 계약된 ADC 공동개발이나 디지털 바이오뱅킹 사업이 실제 매출로 연결되는 시점과 규모는 아직 확인되지 않았다. 특정 계약의 지연이나 축소가 전체 매출에 미치는 영향이 클 수 있다.",
-    "en": "Most revenue depends on analysis-service contracts, and co-development revenue has been zero from 2024 through the first half of 2026. The timing and scale at which newly signed ADC co-development or the Digital Bio-Banking business will translate into actual revenue have not yet been confirmed. Delays or reductions in any individual contract could have an outsized impact on total revenue."
+    "ko": "매출은 2024년 10.7억원에서 2025년 3.7억원으로 줄었고, 약물평가서비스 수주 규모에 따라 실적이 크게 움직이는 구조다. 분기 매출도 2026년 2분기 5,812만원에서 3분기 9,012만원으로 크게 출렁였다. 대형 계약이 안정적으로 나오지 않으면 변동성이 줄지 않을 수 있다.",
+    "en": "Revenue dropped from KRW 1.07 billion in 2024 to KRW 370 million in 2025, and results move sharply with the size of drug evaluation service orders. Quarterly revenue also swung from KRW 58.12 million in Q2 2026 to KRW 90.12 million in Q3 2026. Without steady large contracts, that volatility may persist."
    }
   },
   {
    "cat": {
-    "ko": "재무 건전성 리스크",
-    "en": "Financial Soundness Risk"
+    "ko": "임상과 기술이전의 불확실성",
+    "en": "Clinical and licensing uncertainty"
    },
    "body": {
-    "ko": "부채비율이 1년 만에 10.2%에서 116.5%로 급등했고, 자본총계는 축소되는 추세다. 영업활동현금흐름이 5년 연속 마이너스를 기록해 향후에도 외부 자금조달 의존도가 높아질 가능성이 있다. 온코마스터 합병 대상이 완전자본잠식 상태였다는 점도 재무구조에 부담 요인이 될 수 있다.",
-    "en": "The debt ratio jumped from 10.2% to 116.5% within a year, and total equity has been on a declining trend. Operating cash flow has been negative for five consecutive years, raising the possibility of continued reliance on external financing. The fact that the OncoMaster merger target was in full capital impairment is also a potential burden on the financial structure."
+    "ko": "OC212e는 현재 학회 초록 채택 단계이며, 임상 결과와 기술이전 계약은 아직 공시 실적에 반영되지 않았다. 상장 당시 회사는 자체 파이프라인과 기술이전 중심의 매출을 추정했지만 사업 방향 변경 후 실적 추정치가 줄었다. 학회 발표 결과와 계약 성사 여부에 따라 플랫폼 사업성 평가가 달라질 수 있다.",
+    "en": "OC212e is currently at the conference-abstract stage, and clinical results and licensing contracts are not yet reflected in disclosed earnings. At listing, the company projected revenue centered on its own pipeline and licensing, but after the strategy change its earnings estimates were revised down. Depending on conference results and whether contracts materialize, the assessment of the platform business could change."
    }
   },
   {
    "cat": {
-    "ko": "상장유지·기술 리스크",
-    "en": "Listing Maintenance and Technology Risk"
+    "ko": "자금 조달과 지배구조 변화",
+    "en": "Financing and governance changes"
    },
    "body": {
-    "ko": "기술특례 상장사로서 매출액 요건(30억원 미만) 유예기간이 2028년까지 부여돼 있으나, 현재의 매출 규모가 이를 크게 밑돌아 유예기간 만료 시점의 매출 기준 충족 여부가 변수로 남는다. ADC·이중항체 등 신규 모달리티 진출은 기술적 난이도와 임상 성공 불확실성을 동반한다. 다수의 공동연구 계약이 진행 중이나 권리 구조와 임상 주도권 배분에 대한 해석이 계약별로 다를 수 있다.",
-    "en": "As a technology-special-listed company, the revenue requirement grace period (below KRW 3 billion) runs through 2028, but current revenue is well below that threshold, leaving compliance at the end of the grace period as an open variable. Entry into new modalities such as ADCs and bispecific antibodies carries technical difficulty and clinical-success uncertainty. Multiple co-research contracts are underway, but the allocation of rights and clinical leadership may be interpreted differently across individual agreements."
+    "ko": "전환사채 전환청구와 합병 신주로 주식 수가 늘 수 있고, 2025년 말 부채비율은 116.5%로 올랐다. 합병 이후 데이터 통합과 플랫폼 운영 인력 유지도 과제다. 재무총괄임원과 기술총괄임원이 상장 이후 교체됐고, 대표는 각자대표 체제로 운영된다.",
+    "en": "Conversion of convertible bonds and the merger shares could increase the share count, and the debt ratio rose to 116.5% at the end of 2025. Integrating the merged data assets and retaining platform operating staff are additional challenges. The chief financial officer and chief technology officer were both replaced after listing, and the company is run by co-CEOs."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 10월 30일",
-    "en": "October 30, 2026"
+    "ko": "2027년 3월 말 전후(사업보고서 법정 제출 기한 기준)",
+    "en": "Around late March 2027 (statutory deadline for the annual report)"
    },
    "what": {
-    "ko": "오믹스AI 단백체 분석 위탁계약의 중도금(25%) 지급 시점으로, 디지털 바이오뱅킹 사업의 진행 상황을 가늠할 수 있다.",
-    "en": "This is the interim payment (25%) date for the OmicsAI proteomic analysis service contract, offering a checkpoint on the progress of the Digital Bio-Banking business."
+    "ko": "2026년 사업보고서에서 연간 매출과 영업손실, 2026년 4분기 실적이 정식 수치로 확정된다. 영업 외 손익 명세를 통해 2026년 2분기 지배주주 순이익 플러스의 원인도 확인할 수 있다.",
+    "en": "The 2026 annual report will confirm full-year revenue and operating loss, including Q4 2026, in audited form. Its non-operating income breakdown should also explain the Q2 2026 profit attributable to controlling shareholders."
    }
   },
   {
    "when": {
-    "ko": "2026년 11월경(3분기 보고서 공시)",
-    "en": "Around November 2026 (Q3 report filing)"
+    "ko": "2027년 2월 9일 이후",
+    "en": "From February 9, 2027"
    },
    "what": {
-    "ko": "2026년 3분기 실적에서 앱티스 ADC 계약금 인식 여부와 분석서비스 매출 회복 흐름을 확인할 필요가 있다.",
-    "en": "Investors should check whether the Q3 2026 results reflect recognition of the Aptis ADC contract upfront payment and any recovery in analysis-service revenue."
+    "ko": "2026년 1월 발행한 70억원 전환사채의 전환청구가 시작된다. 2025년 발행 사채 잔액 100억원은 2026년 7월 25일부터 전환이 가능하므로, 전환 규모와 주식 수 증가 가능성을 함께 점검해야 한다.",
+    "en": "Conversion requests for the KRW 7 billion convertible bond issued in January 2026 become possible. The KRW 10 billion balance of the 2025 bond has been convertible since July 25, 2026, so conversion volume and potential share count growth should be tracked together."
    }
   },
   {
    "when": {
-    "ko": "2026년 12월 31일",
-    "en": "December 31, 2026"
+    "ko": "2027년 5월 중순 전후(1분기 보고서 법정 기한 기준)",
+    "en": "Around mid-May 2027 (statutory deadline for the Q1 2027 report)"
    },
    "what": {
-    "ko": "오믹스AI 위탁계약 종료 및 잔금(25%) 정산 시점으로, 계약 완료에 따른 최종 매출 인식 여부를 확인할 시점이다.",
-    "en": "This marks the end of the OmicsAI service contract and final (25%) settlement, a point to confirm whether final revenue is recognized upon contract completion."
+    "ko": "2027년 1분기 매출과 영업손실이 공시된다. 2026년 3분기 영업손실 28.7억원 대비 손실 폭이 줄어드는지, 분기 매출이 9,012만원 수준을 넘어서는지가 확인 지점이다.",
+    "en": "Q1 2027 revenue and operating loss will be disclosed. The points to check are whether the operating loss narrows from the KRW 2.87 billion recorded in Q3 2026 and whether quarterly revenue moves above the KRW 90.12 million level of Q3 2026."
    }
   },
   {
    "when": {
-    "ko": "2027년 상반기(2026년 사업보고서 공시)",
-    "en": "First half of 2027 (2026 annual report filing)"
+    "ko": "2027년 중(발표 일정 미정)",
+    "en": "During 2027 (date not yet announced)"
    },
    "what": {
-    "ko": "온코마스터 통합 이후 첫 연간 실적에서 부채비율·자본 상태가 안정화됐는지, 디지털 바이오뱅킹 매출이 반영됐는지 확인이 필요하다.",
-    "en": "In the first full-year results following the OncoMaster integration, it will be worth checking whether the debt ratio and equity position have stabilized and whether Digital Bio-Banking revenue is reflected."
+    "ko": "OC212e 췌장암 병용요법의 임상 데이터 학회 발표와, 국내외 제약사와의 사업 계약 체결 여부가 확인 지점이다. 계약이 매출로 잡히는지가 플랫폼 사업성의 핵심 검증 지표다.",
+    "en": "Conference presentation of clinical data for the OC212e pancreatic cancer combination, and whether business contracts with domestic or global pharmaceutical companies are signed. Whether such contracts show up as revenue is the key test of the platform business."
    }
   },
   {
    "when": {
-    "ko": "2028년까지 매출 요건 유예기간 진행 상황",
-    "en": "Progress toward the revenue-requirement grace period through 2028"
+    "ko": "2028년 무렵",
+    "en": "Around 2028"
    },
    "what": {
-    "ko": "기술특례 상장사 매출액 요건(30억원) 충족을 위한 연간 매출 확대 추이를 지속적으로 확인할 필요가 있다.",
-    "en": "It is worth continuously monitoring the annual revenue trend toward meeting the KRW 3 billion revenue requirement applicable to technology-special-listed companies."
+    "ko": "기술특례 상장 기업의 매출액 요건 유예가 끝나는 시점으로 알려져 있다. 이 무렵부터 매출 요건 관리가 과제로 떠오를 수 있어, 그전까지 매출 기반이 얼마나 커지는지 추적할 필요가 있다.",
+    "en": "This is the period when the grace period on the revenue requirement for technology-special listed companies is expected to end. Revenue requirement management may become a challenge from around this point, so the pace of revenue base growth before then should be tracked."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "온코크로스는 신약 재창출 분석서비스라는 기존 사업모델에 ADC 공동개발, 데이터뱅킹 등 새로운 축을 더하며 사업 확장을 시도하고 있다. 그러나 2025년 매출은 전년 대비 크게 줄었고 영업손실·순손실은 다시 확대되는 등, 상장 당시 제시한 실적 목표와 실제 성과 사이의 간극이 두 해 연속 이어지고 있다. 부채비율 급등과 5년 연속 마이너스 영업활동현금흐름은 재무 건전성 측면에서 계속 관찰이 필요한 요인이다. 반면 온코마스터 합병을 통한 대규모 암 환자 데이터 확보, 앱티스와의 ADC 공동개발, 오믹스AI를 통한 단백체 분석 역량 강화 등은 사업모델을 다변화하려는 구체적 시도로 평가할 수 있다. 2026년 2분기의 일시적 순이익 흑자 전환은 영업손익과는 별개의 비영업적 요인으로 보이며, 지속적인 개선 신호로 단정하기는 어렵다. 앞으로는 새롭게 체결된 계약들이 실제 매출로 얼마나, 언제 전환되는지, 그리고 재무구조가 추가로 악화되지 않는지를 분기별로 점검하는 것이 중요하다. 이 보고서는 정보 제공을 목적으로 하며 매수·매도 의견이나 목표주가를 포함하지 않는다.",
-   "en": "OnCoCross is attempting to expand its business by adding new pillars—ADC co-development and data banking—to its existing drug-repositioning analysis-service model. However, 2025 revenue fell sharply from the prior year and both the operating loss and net loss widened again, meaning the gap between the performance targets presented at listing and actual results has persisted for two consecutive years. The sharp rise in the debt ratio and five straight years of negative operating cash flow are factors that warrant continued observation from a financial-soundness standpoint. On the other hand, securing a large cancer-patient dataset through the OncoMaster merger, the ADC co-development with Aptis, and strengthened proteomic-analysis capability via OmicsAI can be viewed as concrete attempts to diversify the business model. The brief turn to positive net income in Q2 2026 appears to stem from non-operating factors separate from operating performance and should not be taken as a definitive sign of sustained improvement. Going forward, it will be important to track quarterly how much and when newly signed contracts convert into actual revenue, and whether the financial structure avoids further deterioration. This report is for informational purposes only and does not include a buy/sell recommendation or a target price."
+   "ko": "온코크로스는 AI 신약개발 플랫폼으로 사업 무게를 옮긴 상태이며, 2026년 7월 온코마스터 흡수합병으로 1만명 규모의 실제 암환자 데이터를 내재화했다. 그러나 공시 실적 기준으로 2025년 매출은 3.7억원, 영업손실은 88.3억원이며 2022년부터 2025년까지 4년 연속 적자가 이어졌다. 2025년 3분기부터 2026년 3분기까지 5개 분기 연속 영업손실이 공시됐고, 2026년 2분기 지배주주 순이익 플러스는 영업손실과 방향이 달랐다. 강세 쪽에서는 데이터 자산 확보, ASCO 2026 초록 채택, 해외 공동연구 논의가 근거로 꼽히고, 약세 쪽에서는 매출 규모의 작음, 적자 지속, 전환사채와 합병 신주에 따른 희석 가능성이 근거로 꼽힌다. PER은 산출되지 않고 PBR은 순자산 대비 프리미엄 구간이어서 밸류에이션은 사업 전환의 성과를 얼마나 인정하느냐에 따라 달라진다. 다음 확인 지점은 2026년 사업보고서의 연간 매출과 영업손실, 2027년 2월 9일 이후의 전환청구 흐름, OC212e의 학회 발표와 계약 여부다. 상장 당시 2027년 흑자 전환을 목표로 제시된 추정치와 현재 실적의 격차도 추적 대상이다.",
+   "en": "Oncocross has shifted weight toward its AI drug platform, and the July 2026 absorption merger brought in real-world cancer patient data covering about 10,000 patients. On disclosed figures, however, 2025 revenue was KRW 370 million and operating loss was KRW 8.83 billion, with losses reported every year from 2022 to 2025. Operating losses have also been reported for five consecutive quarters from Q3 2025 through Q3 2026, and the Q2 2026 profit attributable to controlling shareholders moved in the opposite direction to operating results. Bullish points include the data asset, the ASCO 2026 abstract acceptance and overseas joint research talks. Bearish points include the small revenue base, persistent losses and dilution risk from convertible bonds and merger shares. PER cannot be calculated and price-to-book sits at a premium to net assets, so how the valuation reads depends on how much credit is given to the business transition. The next checkpoints are full-year revenue and operating loss in the 2026 annual report, conversion activity from February 9, 2027, and the conference presentations and contract status for OC212e. The gap between the 2027 profitability target set at listing and current results is also worth tracking."
   }
  },
  "sources": [
-  "https://www.mt.co.kr/thebio/2026/09/01/2026090114344323202",
-  "https://www.oncocross.com/history",
-  "https://kormedi.com/2857454/",
-  "https://thevc.kr/oncocross",
-  "https://www.mt.co.kr/thebio/2026/06/26/2026062611083810609",
-  "https://www.medicopharma.co.kr/news/articleView.html?idxno=63285",
-  "https://www.kr-inside.com/2026/04/ai.html",
-  "https://www.oncocross.com/",
-  "https://www.bloter.net/news/articleView.html?idxno=672378",
-  "https://m.dailypharm.com/newsView.html?ID=317403",
-  "https://www.investing.com/equities/oncocross-earnings",
   "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A382150",
-  "https://m.thinkpool.com/item/382150",
-  "https://www.investing.com/equities/oncocross",
+  "https://pharm.edaily.co.kr/News/Read?newsId=02309126642368016",
+  "https://news.nate.com/view/20260210n38436",
+  "https://www.mt.co.kr/thebio/2026/07/01/2026070109200350814",
+  "https://m.dailypharm.com/newsView.html?ID=317403",
   "https://www.topdaily.kr/articles/108708",
-  "https://www.valueline.co.kr/finance/bicchart/382150",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Finance.asp?pGB=1&gicode=A382150&MenuYn=Y&ReportGB=&NewMenuID=103",
-  "https://m.thinkpool.com/compDiscuss/cont/1016857"
+  "https://www.calculator.io.kr/kor/1187",
+  "https://m.news.nate.com/view/20260415n33139",
+  "https://v.daum.net/v/20260918162747985",
+  "https://www.oncocross.com/announcement/lists/",
+  "https://m.news.nate.com/view/20260327n30053",
+  "https://www.oncocross.com/en/press/lists/all/2",
+  "https://m.news.nate.com/view/20260130n29726",
+  "https://www.hankyung.com/article/202602237557i",
+  "https://www.biotimes.co.kr/news/articleView.html?idxno=30777",
+  "https://m.news.nate.com/view/20260329n07706",
+  "https://m.medigatenews.com/news/2380597167"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "382150",
  "name": "온코크로스",
  "name_en": "Oncocross Co.,Ltd.",
@@ -234,11 +233,11 @@
   "인공지능(AI)"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 19:14",
- "dataDate": "20260904",
+ "reportDate": "2026-11-14",
+ "reportTs": "2026-11-14 15:03",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-09-05",
+  "asOf": "2026-11-14",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -309,12 +308,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 137776250,
-    "op": -1868749814,
-    "np_owner": -1759395911
-   },
-   {
     "q": "2025Q3",
     "rev": 29180750,
     "op": -2364957690,
@@ -337,26 +330,32 @@
     "rev": 58122500,
     "op": -2698045615,
     "np_owner": 1010721993
+   },
+   {
+    "q": "2026Q3",
+    "rev": 90121886,
+    "op": -2871493324,
+    "np_owner": -3551623957
    }
   ],
   "valuation": {
-   "price": 3455,
-   "mcap": 0.0451,
+   "price": 3055,
+   "mcap": 0.0399,
    "shares": 13046354,
    "total_shares": 13046354,
-   "wavg_shares": 12207260,
+   "wavg_shares": 12470336,
    "per": null,
-   "eps": -543,
-   "pbr": 3.1098,
-   "bps": 1111,
-   "roe_ttm": -42.6,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": -6538558002,
+   "eps": -654,
+   "pbr": 2.718,
+   "bps": 1124,
+   "roe_ttm": -53.7,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": -8045722783,
    "ccy": "KRW",
    "bps_src": "자체",
    "eps_src": "공시",
-   "pbr_krx": null,
-   "bps_krx": null,
+   "pbr_krx": 2.75,
+   "bps_krx": 1112.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
    "div": 0.0,
@@ -364,5 +363,6 @@
     "per": "loss"
    }
   }
- }
+ },
+ "textRules": 2
 }

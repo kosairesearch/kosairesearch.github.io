@@ -1,220 +1,219 @@
 {
  "title": {
-  "ko": "매각 무산 속 이익 개선 지속",
-  "en": "Profitability Improves Amid Stalled Sale"
+  "ko": "영업 흑자 전환에도 매출 감소가 과제인 음원 플랫폼",
+  "en": "NHN Bugs: Profit Turn Meets Continued Revenue Decline"
  },
  "lead": {
-  "ko": "NHN벅스는 매각 계약 무산이라는 지배구조 불확실성 속에서도 에센셜 중심 B2B 사업 확장에 힘입어 2026년 들어 세 개 분기 연속 영업이익을 냈다.",
-  "en": "NHN Bugs has posted three consecutive quarters of operating profit into 2026 on the back of its essential; B2B curation business, even as ownership uncertainty persists after a failed share sale."
+  "ko": "NHN벅스는 2026년 3분기 영업이익 흑자를 이어갔지만, 매출은 2023년부터 2025년까지 3년 연속 감소했고 지배주주 순손실은 같은 분기 8.1억원으로 다시 확대됐다.",
+  "en": "NHN Bugs kept posting operating profit into the third quarter of 2026, but revenue has declined for three straight years through 2025, and the controlling-shareholder net loss widened again in that quarter to KRW 814 million."
  },
  "keypoints": [
   {
-   "ko": "본업인 음악 스트리밍 벅스(Bugs!)의 매출은 2022~2025년 3년 연속 감소했으나, B2B 큐레이션 브랜드 '에센셜(essential;)' 확장이 이익을 견인 중",
-   "en": "Revenue from the core Bugs! streaming service has declined for three straight years through 2025, while the essential; B2B curation brand is driving profitability"
+   "ko": "2026년 3분기 영업이익은 2.2억원으로, 전년 동기 영업손실 4.1억원에서 흑자로 돌아섰다. 다만 직전 분기 영업이익 5억원보다는 줄었다.",
+   "en": "Operating profit in the third quarter of 2026 was KRW 221 million, turning positive from an operating loss of KRW 412 million a year earlier, though it was below the KRW 496 million of the prior quarter."
   },
   {
-   "ko": "2025Q4~2026Q2 3개 분기 연속 영업이익 흑자, 2026Q1부터는 지배주주 순이익도 흑자 전환",
-   "en": "Operating profit has been positive for three consecutive quarters (2025Q4-2026Q2), and net income attributable to owners turned positive starting 2026Q1"
+   "ko": "매출은 2025년 4분기 113억원을 정점으로 2026년 1분기 107억원, 2분기 106억원, 3분기 99.6억원으로 줄어 100억원 선을 밑돌았다.",
+   "en": "Revenue peaked at KRW 11.3 billion in the fourth quarter of 2025 and then fell to KRW 10.7 billion, KRW 10.6 billion and KRW 9.96 billion in the first three quarters of 2026."
   },
   {
-   "ko": "최대주주 NHN의 지분 45.26% 매각이 2026년 3월 잔금 미납으로 무산된 뒤, 8월 새 인수자와 협상 소식이 전해졌으나 미확정",
-   "en": "Majority shareholder NHN's plan to sell a 45.26% stake collapsed in March 2026 due to unpaid balance, and talks with a new potential buyer surfaced in August 2026 but remain unconfirmed"
+   "ko": "2025년 연간 지배주주 순손실은 62.2억원으로 2024년 127억원보다 줄었지만, 2026년 3분기 지배주주 순손실은 8.1억원으로 다시 커졌다.",
+   "en": "The annual controlling-shareholder net loss for 2025 was KRW 6.22 billion, narrower than KRW 12.7 billion in 2024, but the third-quarter 2026 loss of KRW 814 million was larger than the second-quarter profit."
   },
   {
-   "ko": "국내 음악 플랫폼 점유율은 유튜브뮤직·멜론 등에 크게 못 미치는 수준으로, 구조적 경쟁 열위가 지속",
-   "en": "Domestic market share trails far behind YouTube Music and Melon, reflecting a persistent structural competitive disadvantage"
+   "ko": "최대주주 NHN의 지분 45.26% 매각은 2026년 1월 계약 체결 뒤 3월 해제됐고, 8월 협상 결렬에 이어 9월에는 재추진이 무산됐다고 보도됐다.",
+   "en": "The sale of the 45.26% stake held by the controlling shareholder was signed in January 2026, cancelled in March, failed in negotiations in August, and reportedly stalled again in September."
   },
   {
-   "ko": "최근 5년간 배당을 지급하지 않았으며, 2026년 5월 불성실공시법인으로 지정되는 등 지배구조 리스크가 남아 있음",
-   "en": "No dividends have been paid in the past five years, and the company was designated an unfaithful disclosure entity by the exchange in May 2026, leaving governance risk in place"
+   "ko": "음원 큐레이션 브랜드 '에센셜'의 구독자는 2026년 6월 기준 152만여명으로 집계됐고, 자동차와 가전 등 탑재처가 늘고 있다.",
+   "en": "The Essential curation brand reached about 1.52 million subscribers as of June 2026, and its placement in cars and home appliances is expanding."
   }
  ],
  "business": {
-  "ko": "NHN벅스는 디지털 음원 플랫폼 '벅스(Bugs!)'를 중심으로 B2C·B2B 두 개 사업부문을 운영한다. B2C 부문은 벅스 앱을 통한 스트리밍·다운로드 이용권 판매, 온라인 커뮤니티 '세이클럽'과 음악방송 SNS '세이캐스트' 운영으로 구성된다. B2B 부문은 음원 제작에 투자해 일정 기간 독점 유통권을 확보한 뒤 이를 서비스 업체에 판매하는 음원유통사업과, 음악 큐레이션 브랜드 '에센셜(essential;)'을 축으로 한 공간·기기용 콘텐츠 공급 사업으로 나뉜다. 에센셜은 매장이나 가전 화면에 감성적인 영상과 음악을 함께 송출하는 시청각 큐레이션 서비스로, 삼성전자·LG전자 등 글로벌 가전사와 제휴해 전 세계 180개국에 출시됐다. 최근에는 현대차그룹의 차세대 인포테인먼트 '플레오스 커넥트'와 LG유플러스를 통한 토요타 신형 RAV4 인포테인먼트에도 탑재되며 자동차 영역으로 접점을 넓히고 있다. 경쟁 구도는 유튜브뮤직, 카카오엔터테인먼트(멜론), KT 계열 지니뮤직, 드림어스컴퍼니(플로), 스포티파이, 애플뮤직, 네이버 바이브 등 대형 플랫폼이 시장을 장악한 가운데 벅스는 후발 사업자로 자리한다. 최대주주는 NHN이며, 2026년 초 지분 45.26% 매각을 추진했으나 잔금 미납으로 무산된 뒤 새로운 인수 후보와 협상이 진행 중인 것으로 알려졌다. 회사는 자체 음원 IP 확보와 에센셜 브랜드의 글로벌·B2B 확장을 통해 스트리밍 경쟁 열위를 상쇄하는 전략을 취하고 있다.",
-  "en": "NHN Bugs operates two business segments centered on its digital music platform Bugs!: B2C and B2B. The B2C segment sells streaming and download subscriptions through the Bugs! app and runs the online community SayClub and the music broadcast SNS SayCast. The B2B segment covers a music distribution business that invests in track production to secure exclusive distribution rights for resale to service providers, alongside the essential; music curation brand that supplies audiovisual content for retail spaces and consumer devices. essential; combines ambient visuals with curated playlists for store and appliance displays, and has been rolled out in 180 countries through partnerships with global appliance makers including Samsung Electronics and LG Electronics. More recently, essential; has expanded into automotive infotainment, appearing in Hyundai Motor Group's next-generation Pleos Connect system and, via LG Uplus, in Toyota's new RAV4. The competitive landscape is dominated by large platforms such as YouTube Music, Kakao Entertainment's Melon, KT-affiliated Genie Music, Dreamus Company's Flo, Spotify, Apple Music, and Naver Vibe, positioning Bugs as a smaller, later-stage player. Majority shareholder NHN attempted to sell its 45.26% stake in early 2026, but the deal collapsed after the buyer failed to pay the balance, and talks with a new prospective buyer have since surfaced. The company's strategy leans on securing proprietary music IP and expanding essential; globally and into B2B channels to offset its disadvantaged position in core streaming."
+  "ko": "NHN벅스는 음원 스트리밍 플랫폼 '벅스'를 운영하는 회사로, 2002년 설립되어 2009년 코스닥 시장에 상장됐다. 사업은 크게 두 축으로 나뉜다. 하나는 벅스 앱을 중심으로 한 개인 대상 음원 서비스이고, 다른 하나는 기업 간 거래(B2B) 음원 유통이다. 기업모니터의 2026년 상반기 실적 코멘트에 따르면 B2B 음원유통 사업이 전체 매출의 과반을 차지한다. 큐레이션 브랜드 '에센셜'은 음원 앱을 넘어 활용처를 넓히고 있다. 삼성전자 등 가전에 이어 2026년 5월에는 현대자동차그룹의 차세대 인포테인먼트 시스템용 에센셜 앱이 출시됐고, 2026년 6월에는 한 통신사가 토요타 신형 RAV4의 인포테인먼트에 에센셜을 탑재했다. 에센셜 구독자는 2026년 6월 기준 152만여명이다. 2026년 8월 20일에는 벅스 앱 홈 화면을 HOT & NEW, 장르별, 테마별 탭으로 개편하고 청취 이력을 반영한 'MIX 플레이리스트'를 내놓았다. 음원 스트리밍 시장은 포화 상태로 평가되며, 벅스는 1세대 음원 플랫폼으로 소개된다. 대형 플랫폼과 경쟁하는 구도에서 회사는 B2B 채널과 차량·가전 등 인접 영역으로 수익원을 넓히는 방향을 택한 모습이다.",
+  "en": "NHN Bugs operates the Bugs music streaming platform. The company was founded in 2002 and listed on KOSDAQ in 2009. Its business is split into two main lines. The first is consumer music streaming centered on the Bugs app, and the second is business-to-business (B2B) music distribution. According to the company's first-half 2026 earnings commentary from an independent data provider, B2B music distribution accounts for more than half of total revenue. The Essential curation brand has moved beyond the music app into other settings. After home appliances from Samsung Electronics and other makers, an Essential app for Hyundai Motor Group's next-generation infotainment system launched in May 2026, and in June 2026 Essential was installed in the infotainment system of a new Toyota RAV4 through a telecom operator. Essential subscribers stood at about 1.52 million as of June 2026. On August 20, 2026, the Bugs app home screen was reorganized into HOT & NEW, genre and theme tabs, and a 'MIX Playlist' reflecting listening history was added. The domestic music streaming market is regarded as saturated, and Bugs is described as a first-generation music platform. Competing against large platforms, the company is widening revenue through B2B channels and adjacent areas such as cars and appliances."
  },
  "earnings": {
-  "ko": "연간 매출은 2022년 658억원에서 2023년 568억원, 2024년 521억원, 2025년 449억원으로 4년 연속 감소했다. 영업손익은 2022년 20.8억원, 2023년 8.0억원 흑자를 유지하다 2024년 3.6억원으로 축소된 뒤 2025년 -7.3억원 적자로 전환했다. 지배주주순이익은 2022년 25.3억원 흑자에서 2023년 -50.7억원, 2024년 -126.7억원으로 손실 규모가 커졌다가 2025년 -62.2억원으로 축소됐다. 분기별로 보면 2025Q3 영업손실 -4.1억원을 기록한 뒤 2025Q4 영업이익 0.8억원, 2026Q1 1.8억원, 2026Q2 5.0억원으로 3개 분기 연속 흑자 기조를 이어갔다. 순이익 측면에서는 2025Q4에 지배주주순손실이 -48.1억원으로 크게 확대됐는데, 이는 같은 분기 영업이익(0.8억원)과 괴리가 커 영업외 손익 요인이 작용한 것으로 보이며 2026Q1부터는 순이익도 4.8억원, 2026Q2 2.4억원으로 흑자가 이어졌다. 매출 규모 자체는 분기별로 106억~116억원 사이에서 완만한 하향 흐름을 보이고 있어, 이익 개선이 외형 성장이 아니라 비용 구조 개선과 B2B 부문 수익성 확대에서 비롯된 것으로 해석된다. 영업활동현금흐름은 2022~2025년 매년 24억~88억원 수준의 유입을 유지해 순손실에도 현금창출력은 꾸준했다. 자기자본(지배주주)은 2022년 738억원에서 2025년 507억원으로 매년 축소되며 부채비율은 26.9%에서 31.8%로 소폭 상승했다.",
-  "en": "Annual revenue fell for four consecutive years, from KRW 65.8 billion in 2022 to KRW 56.8 billion in 2023, KRW 52.1 billion in 2024, and KRW 44.9 billion in 2025. Operating profit stayed positive at KRW 2.08 billion in 2022 and KRW 0.80 billion in 2023, narrowed to KRW 0.36 billion in 2024, then turned to an operating loss of KRW 0.73 billion in 2025. Net income attributable to owners swung from a profit of KRW 2.53 billion in 2022 to losses of KRW 5.07 billion in 2023 and KRW 12.67 billion in 2024, before the loss narrowed to KRW 6.22 billion in 2025. On a quarterly basis, after an operating loss of KRW 0.41 billion in 2025Q3, the company posted operating profits of KRW 0.08 billion in 2025Q4, KRW 0.18 billion in 2026Q1, and KRW 0.50 billion in 2026Q2, extending a three-quarter profit streak. On the bottom line, the owners' net loss widened sharply to KRW 4.81 billion in 2025Q4 despite a positive operating result that quarter, a gap that points to non-operating items, before net income turned positive again at KRW 0.48 billion in 2026Q1 and KRW 0.24 billion in 2026Q2. Quarterly revenue itself has drifted gently lower within a roughly KRW 10.6-11.6 billion range, suggesting the profit improvement stems from cost discipline and stronger B2B profitability rather than top-line growth. Operating cash flow remained positive every year from 2022 to 2025, ranging between KRW 2.4 billion and KRW 8.8 billion, indicating steady cash generation despite the net losses. Owners' equity shrank from KRW 73.8 billion in 2022 to KRW 50.7 billion in 2025, while the debt ratio edged up from 26.9% to 31.8%."
+  "ko": "연간 매출은 2022년 658억원에서 2023년 568억원(전년 대비 13.7% 감소), 2024년 521억원(전년 대비 8.4% 감소), 2025년 449억원(전년 대비 13.8% 감소)으로 줄었다. 2023년부터 2025년까지 3년 연속 감소했고, 2022~2025년 중 가장 큰 해는 2022년, 가장 작은 해는 2025년이다. 수익성도 같은 기간 약해졌다. 영업이익률은 2022년 3.2%에서 2023년 1.4%, 2024년 0.7%로 낮아진 뒤 2025년에는 -1.6%를 기록했다. 영업이익은 2022년 20.8억원에서 2023년 8억원(전년 대비 61.4% 감소), 2024년 3.6억원(전년 대비 55.5% 감소)으로 줄었고, 2025년에는 영업손실 7.3억원으로 적자 전환했다. 지배주주 순이익은 2022년 25.3억원이었으나 2023년 지배주주 순손실 50.7억원으로 적자 전환했고, 2024년 순손실 127억원으로 손실이 확대됐다. 2025년에는 지배주주 순손실 62.2억원으로 손실 폭이 줄었다. 당기순이익(비지배지분 포함)도 같은 방향을 보였다. 재무구조는 부채비율이 2022년 26.9%, 2024년 34.6%, 2025년 31.8%였고, 2025년 말 자본총계는 507억원, 부채총계는 161억원이다. 영업활동 현금흐름은 2022년 24.7억원, 2023년 24.5억원, 2024년 88.4억원, 2025년 53.7억원으로 손익과 달리 플러스를 유지했다. 분기 기준으로 2025년 3분기 영업손실 4.1억원 이후 2025년 4분기 영업이익 8,388만원으로 전 분기 대비 흑자 전환했고, 2026년 1분기 1.8억원, 2분기 5억원, 3분기 2.2억원의 영업이익이 이어졌다. 매출은 2025년 4분기 113억원에서 2026년 3분기 99.6억원으로 낮아졌고, 2026년 3분기 영업이익은 직전 분기보다 55.4% 감소했다. 지배주주 순손익은 2026년 1분기 4.8억원, 2분기 2.4억원 순이익 뒤 3분기 8.1억원 순손실로 돌아섰다. 최근 네 개 분기 지배주주 순손실 합계는 49억원이다. 기업모니터의 실적 코멘트는 비용 절감이 영업이익 흑자 전환의 배경이었다고 정리했다.",
+  "en": "Annual revenue fell from KRW 65.8 billion in 2022 to KRW 56.8 billion in 2023 (down 13.7% year on year), KRW 52.1 billion in 2024 (down 8.4%) and KRW 44.9 billion in 2025 (down 13.8%). Revenue declined for three consecutive years from 2023 through 2025, with 2022 the largest year and 2025 the smallest in the 2022–2025 range. Profitability weakened over the same period. The operating margin slid from 3.2% in 2022 to 1.4% in 2023 and 0.7% in 2024 before reaching -1.6% in 2025. Operating profit went from KRW 2.08 billion in 2022 to KRW 804 million in 2023 (down 61.4%) and KRW 357 million in 2024 (down 55.5%), and the company recorded an operating loss of KRW 735 million in 2025, turning into a deficit. Net income attributable to controlling shareholders was KRW 2.53 billion in 2022, turned into a loss of KRW 5.07 billion in 2023, widened to a loss of KRW 12.7 billion in 2024, and narrowed to a loss of KRW 6.22 billion in 2025. Net income including non-controlling interests followed the same direction. The debt ratio rose from 26.9% in 2022 to 34.6% in 2024 and was 31.8% in 2025. At year-end 2025, total equity was KRW 50.7 billion, all attributable to controlling shareholders, and total liabilities were KRW 16.1 billion. Operating cash flow was KRW 2.47 billion in 2022, KRW 2.45 billion in 2023, KRW 8.84 billion in 2024 and KRW 5.37 billion in 2025, remaining positive even in the loss year. Quarterly, an operating loss of KRW 412 million in the third quarter of 2025 became an operating profit of KRW 83.88 million in the fourth quarter, followed by KRW 175 million in the first quarter of 2026, KRW 496 million in the second and KRW 221 million in the third. Revenue slid from KRW 11.3 billion in the fourth quarter of 2025 to KRW 9.96 billion in the third quarter of 2026, and third-quarter operating profit fell 55.4% from the prior quarter. Controlling-shareholder net income was KRW 478 million in the first quarter of 2026 and KRW 240 million in the second, before a net loss of KRW 814 million in the third. The combined controlling-shareholder net loss over the last four quarters was KRW 4.9 billion. A corporate earnings commentary attributed the return to operating profit mainly to cost reduction."
  },
  "industry": {
-  "ko": "국내 음악 산업은 디지털 음악시장이 성장하고 불법 음원시장은 축소되는 흐름을 보이고 있으나, 저작권 징수규정 개편으로 권리자 수익 배분율이 상승하고 할인율이 폐지되면서 플랫폼 사업자의 비용 부담이 커지고 있다. 소비자 이용 플랫폼 점유율은 한국콘텐츠진흥원의 '2025 음악산업백서' 기준 유튜브뮤직 37.6%, 멜론 31.7%, 지니뮤직 9.0%, 플로 5.6%, 스포티파이 5.2%, 애플뮤직 3.4%, 네이버 바이브 2.1% 순이며, 벅스는 1.8%에 그쳤다. 상위 두 개 플랫폼이 전체 이용의 약 70%를 차지하는 과점 구조가 고착화되어 있어 후발 사업자의 점유율 반등은 쉽지 않은 환경이다. 시장은 단독 스트리밍 이용권 판매 중심에서 영상·클라우드·커머스 등과 결합한 통합 구독 모델로 수익 구조가 재편되고 있어, 벅스와 같은 순수 스트리밍 사업자에게는 차별화 압력이 커지고 있다. 이런 배경에서 NHN벅스는 스트리밍 경쟁에서 벗어나 B2B 큐레이션·음원유통 영역으로 무게중심을 옮기는 전략을 취하고 있으며, 이는 카카오엔터테인먼트(멜론)나 지니뮤직 등 경쟁사와 차별화되는 포지셔닝이다.",
-  "en": "South Korea's music industry is seeing digital music consumption grow while illegal distribution shrinks, but a revised royalty collection scheme that raises rights holders' revenue share and removes prior discount rates is adding to platform operators' cost burden. According to the Korea Creative Content Agency's 2025 Music Industry White Paper, platform usage share stood at 37.6% for YouTube Music, 31.7% for Melon, 9.0% for Genie Music, 5.6% for Flo, 5.2% for Spotify, 3.4% for Apple Music, and 2.1% for Naver Vibe, with Bugs trailing at just 1.8%. The top two platforms together account for roughly 70% of usage, reflecting an entrenched oligopoly that makes a share recovery difficult for smaller operators. The market is also shifting from standalone streaming subscriptions toward integrated bundles combining video, cloud, and commerce, adding differentiation pressure on pure-play streamers like Bugs. Against this backdrop, NHN Bugs has shifted its center of gravity away from head-on streaming competition and toward B2B curation and music distribution, a positioning that differs from rivals such as Kakao Entertainment's Melon or Genie Music."
+  "ko": "국내 음원 스트리밍 시장은 포화 상태로 평가된다. 2026년 1월 NHN이 벅스 지분을 매각하기로 한 배경으로도 시장 포화와 수익성 난항이 언급됐고, 모회사는 AI·게임·클라우드 등 주력 사업에 자원을 집중하겠다고 설명했다. 벅스는 1세대 음원 플랫폼으로 소개되며, 개인 음원 구독 시장에서 대형 플랫폼과 경쟁하는 위치다. 이 때문에 회사는 B2B 음원 유통과 차량·가전 등 인접 채널로 활로를 찾고 있다. 2026년 8월의 홈 화면 개편과 MIX 플레이리스트 도입도 이용자 접점을 넓히려는 시도로 볼 수 있다. 실적 측면에서는 매출이 줄어드는 가운데 영업이익이 흑자로 돌아섰는데, 이는 비용 구조 조정이 맞물린 결과로 읽힌다. 한 IT업계 관계자는 향후 지분 매각 추진 여부와 관계없이 매출 감소세를 되돌리는 것이 과제라고 말했다. 같은 관계자는 축소되는 매출을 되돌리는 사업적 판단이 수익성 개선의 변수가 될 것이라고 언급했다. 동종 상장사와의 직접 비교 수치는 많지 않아, 미디어·엔터 업종 상장사와 비교할 때는 사업 구조 차이를 함께 봐야 한다.",
+  "en": "The domestic music streaming market is regarded as saturated. When NHN agreed in January 2026 to sell its Bugs stake, the reasons cited included market saturation and difficult profitability, and the parent said it would concentrate resources on core businesses such as AI, games and cloud. Bugs is described as a first-generation music platform and competes with large platforms in the consumer subscription market. For that reason, the company is looking for revenue in B2B music distribution and adjacent channels such as cars and home appliances. The August 2026 home screen redesign and the introduction of the MIX Playlist can also be read as efforts to widen user contact. On the earnings side, operating profit turned positive while revenue declined, a result that appears tied to cost restructuring. An IT industry official said that regardless of whether the stake sale proceeds, reversing the revenue decline is the company's task. The same official said that business decisions to reverse shrinking revenue will be a variable for profitability. Direct peer comparisons are limited, so comparisons with listed media and entertainment companies need to account for differences in business structure."
  },
  "outlook": {
-  "ko": "회사의 단기 방향성은 두 갈래로 갈린다. 하나는 에센셜 브랜드의 B2B 확장으로, 자동차 인포테인먼트(현대차그룹 플레오스 커넥트, LG유플러스를 통한 토요타 RAV4)와 글로벌 가전(삼성전자·LG전자, 180개국) 채널을 지속 확대하며 구독자 기반을 늘리고 있다. 2026년 6월 기준 에센셜 구독자는 152만여 명으로 파악되며, 이 부문의 수익성이 회사 전체 흑자 전환을 견인하는 핵심 변수로 자리했다. 다른 하나는 지배구조 변화 가능성으로, NHN이 보유한 지분 45.26%(671만 1,020주)를 매각하려던 1차 계약(NDT엔지니어링 외 3인, 347억원, 주당 5,170원)이 2026년 3월 잔금 미납으로 해제된 뒤, 8월 중순 보도에 따르면 엔터테인먼트 기업 '뮤즈엠'과 동일한 347억원 규모의 재매각 협상이 막바지 단계에 이른 것으로 전해졌다(2026년 8월 13일 보도, 다음뉴스). 다만 NHN 측은 해당 시점에 \"매각을 포함해 여러 방안을 검토 중이지만 아직 확정된 부분은 없다\"는 입장을 밝혀 거래 성사 여부는 불확정 상태다. 매각이 성사될 경우 최대주주 변경과 함께 사업 전략의 재편이 이어질 수 있으며, 무산될 경우 NHN 체제 하에서 현재의 에센셜 중심 수익성 개선 전략이 이어질 것으로 예상된다.",
-  "en": "The company's near-term trajectory hinges on two tracks. The first is continued B2B expansion of the essential; brand, extending into automotive infotainment (Hyundai Motor Group's Pleos Connect, and Toyota's RAV4 via LG Uplus) and global appliance channels (Samsung Electronics, LG Electronics, 180 countries) to grow its subscriber base. As of June 2026, essential; subscribers were estimated at roughly 1.52 million, and this segment's profitability has become the key driver behind the company's return to overall profit. The second is a possible ownership change: an initial agreement for NHN to sell its 45.26% stake (6,711,020 shares) to NDT Engineering and three other investors for KRW 34.7 billion at KRW 5,170 per share collapsed in March 2026 after the buyer failed to pay the balance, and an August 13, 2026 media report indicated that renewed sale talks at the same KRW 34.7 billion valuation with entertainment company MuseM had reached a final stage. However, NHN stated at the time that it was \"reviewing several options including a sale, but nothing has been finalized,"
+  "ko": "다음 분기 실적의 첫 확인 지점은 2026년 4분기 잠정 실적이다. 지난해 4분기 잠정 실적은 2026년 2월 11일에 공시됐으므로, 같은 시기에 발표될 가능성이 있다. 확인할 첫 지점은 매출이 2026년 3분기 99.6억원 아래에서 반등하는지 여부다. 영업이익이 2026년 1분기부터 3분기까지처럼 흑자를 유지하는지, 지배주주 순손실이 2026년 3분기 8.1억원 수준에서 줄어드는지도 함께 본다. 2026년 사업연도 사업보고서는 법정 제출 기한이 2027년 3월 말이며, 지난해 사업보고서는 2026년 3월 18일에 제출됐다. 그때 공개되는 연간 매출과 영업손익이 2025년 449억원, 영업손실 7.3억원과 어떻게 달라지는지가 핵심 비교 지점이다. 에센셜의 차량·가전 탑재 확대가 매출 감소를 상쇄할 수 있을지도 다음 확인 사항이다. 2026년 8월 개편된 홈 화면과 MIX 플레이리스트의 효과는 분기 매출 추이에서 드러난다. 최대주주 지분 매각의 재추진 여부는 연내 지속될 것으로 예상된다는 보도가 있어, 그 결과에 따라 최대주주 변경 공시가 나올 수 있다.",
+  "en": "The first checkpoint for the next quarterly results is the preliminary fourth-quarter 2026 earnings. Last year's preliminary fourth-quarter figures were disclosed on February 11, 2026, so a similar timing is plausible. The first item to watch is whether revenue rebounds from the KRW 9.96 billion recorded in the third quarter of 2026. It is also worth checking whether operating profit stays positive as it did across the first three quarters of 2026, and whether the controlling-shareholder net loss of KRW 814 million narrows. The annual report for fiscal 2026 must be filed by the end of March 2027 under the statutory deadline, and last year's annual report was filed on March 18, 2026. The key comparison will be how annual revenue and operating results compare with KRW 44.9 billion and an operating loss of KRW 735 million in 2025. Whether the wider placement of Essential in cars and appliances can offset the revenue decline is another item to verify. The effect of the August 2026 home screen redesign and the MIX Playlist will show up in the quarterly revenue trend. Reports indicate that the stake sale may be pursued again during the year, and any outcome would be disclosed as a change of the controlling shareholder."
  },
  "valuation_comment": {
-  "ko": "NHN벅스는 순이익이 여러 해 적자와 소폭 흑자를 오간 이력이 있어 통상적인 주가수익비율 해석이 까다로운 종목이다. 최근 네 개 분기(2025Q3~2026Q2) 합산 기준으로는 여전히 순손실 구간에 머물러 있어, 이 지표만으로 밸류에이션을 논하기는 제한적이다. 반면 주가와 주당순자산의 관계를 보면, 현재 시장에서 거래되는 가격은 회사의 주당순자산 대비 할인된 수준에 위치해 있다. 배당 측면에서는 최근 5년간 배당을 지급하지 않아온 이력이 있어, 배당수익률을 통한 주주환원 비교는 의미를 갖기 어려운 상황이다. 2026년 들어 이어진 분기 실적 흑자 전환이 향후 재무 지표 해석에 어떤 영향을 줄지는 다음 분기 확정 실적과 지분 매각 관련 공시를 함께 지켜봐야 할 부분이다.",
-  "en": "NHN Bugs has swung between losses and small profits across recent years, making conventional price-to-earnings analysis difficult for this stock. On a trailing four-quarter basis (2025Q3-2026Q2), the company remains in a net loss position, limiting how much can be read into that particular metric. Looking at the relationship between share price and net assets per share, the stock currently trades at a discount to its book value per share. On the dividend side, the company has a track record of paying no dividends over the past five years, which limits the relevance of dividend-yield comparisons for shareholder returns. How the recent run of quarterly profitability carries into future financial readings is something to watch alongside upcoming confirmed quarterly results and any disclosures related to the ownership sale process."
+  "ko": "밸류에이션은 손익 기준으로 해석이 제한적이다. 최근 네 개 분기 지배주주 순손실 합계가 49억원이어서 이익 기준의 주가수익비율은 산출되지 않는 상태다. 주가순자산비율은 1배를 밑도는 구간에 있어 자본총계 507억원 대비 주가 수준이 낮은 편이다. 다만 자산 가치가 주가에 얼마나 반영되는지는 사업 수익성과 자산의 성격에 따라 달라지므로, 순자산 대비 할인 폭을 그대로 가치 판단으로 읽을 수는 없다. 과거 추이를 보면 영업이익률은 2022년 3.2%에서 2025년 -1.6%로 떨어졌고, 부채비율은 26.9%에서 31.8%로 높아졌다. 배당수익률은 사실상 없는 수준이다. 2026년 3분기에는 영업이익이 흑자로 돌아섰기 때문에, 이익이 지속적으로 회복되는지가 배수 해석의 핵심 변수다. 미디어·엔터 업종 상장사들과 비교하면 이익 기반이 다른 기업이 많아 배수 비교 범위가 제한된다.",
+  "en": "Valuation is limited to interpret on an earnings basis. The combined controlling-shareholder net loss over the last four quarters was KRW 4.9 billion, so a price-to-earnings multiple is not calculated. The price-to-book ratio sits below 1x, meaning the share price is low relative to total equity of KRW 50.7 billion. However, how much asset value is reflected in the share price depends on profitability and the nature of the assets, so a discount to book value cannot be read directly as a value judgment. Looking at the trend, the operating margin fell from 3.2% in 2022 to -1.6% in 2025, and the debt ratio rose from 26.9% to 31.8%. The dividend yield is effectively nil. Operating profit turned positive in the third quarter of 2026, so whether earnings keep recovering is the main variable for interpreting multiples. Compared with listed media and entertainment companies, many have different earnings bases, which limits the scope of multiple comparisons."
  },
  "bull": [
   {
    "title": {
-    "ko": "에센셜 B2B 확장이 이익 구조를 바꾸는 중",
-    "en": "Essential B2B Expansion Is Reshaping the Profit Mix"
+    "ko": "영업이익 흑자 기조 이어져",
+    "en": "Operating profit has stayed positive"
    },
    "body": {
-    "ko": "음악 큐레이션 브랜드 에센셜은 삼성전자·LG전자 등 글로벌 가전사와의 제휴로 180개국에 출시됐고, 최근에는 현대차그룹과 LG유플러스를 통해 자동차 인포테인먼트로도 접점을 넓혔다. 2026년 6월 기준 구독자 152만여 명을 확보하며 B2B 부문 영업이익이 전년 동기 대비 증가한 것으로 나타났다. 스트리밍 본업의 구조적 열위를 B2B·큐레이션 영역에서 상쇄하려는 전략이 실제 이익 개선으로 이어지고 있다.",
-    "en": "The essential; curation brand has been rolled out in 180 countries through partnerships with global appliance makers Samsung Electronics and LG Electronics, and has recently extended into automotive infotainment via Hyundai Motor Group and LG Uplus. As of June 2026, it had gathered roughly 1.52 million subscribers, with the B2B segment's operating profit rising year over year. The strategy of offsetting structural weakness in core streaming through B2B curation is translating into tangible profit improvement."
+    "ko": "2025년 4분기 영업이익 8,388만원으로 흑자 전환한 뒤 2026년 1분기 1.8억원, 2분기 5억원, 3분기 2.2억원으로 영업이익이 이어졌다. 연간 영업이익률은 2025년 -1.6%로 떨어졌으나 분기 단위로는 손익 구조가 개선되는 흐름이다. 기업모니터의 실적 코멘트는 비용 절감을 흑자 전환의 배경으로 꼽았다.",
+    "en": "After an operating profit of KRW 83.88 million in the fourth quarter of 2025, operating profit recorded KRW 175 million in the first quarter of 2026, KRW 496 million in the second and KRW 221 million in the third. The annual operating margin was -1.6% in 2025, but quarterly profitability has improved. A corporate earnings commentary cited cost reduction as the reason for the turn to profit."
    }
   },
   {
    "title": {
-    "ko": "3개 분기 연속 영업이익, 순이익도 흑자 전환",
-    "en": "Three Straight Quarters of Operating Profit, With Net Income Also Turning Positive"
+    "ko": "에센셜 B2B 채널 확장",
+    "en": "Essential expanding through B2B channels"
    },
    "body": {
-    "ko": "2025Q4부터 2026Q2까지 영업이익이 세 개 분기 연속 흑자를 기록했고, 2026Q1과 2026Q2에는 지배주주 순이익도 각각 4.8억원, 2.4억원으로 흑자를 이어갔다. 매출이 완만하게 줄어드는 가운데서도 이익이 개선된 것은 비용 구조 조정과 B2B 부문 수익성 확대가 맞물린 결과로 해석된다. 연간 기준으로도 2025년 순손실 규모가 2024년 대비 절반 수준으로 줄었다.",
-    "en": "Operating profit was positive for three consecutive quarters from 2025Q4 through 2026Q2, and net income attributable to owners also stayed positive in both 2026Q1 (KRW 0.48 billion) and 2026Q2 (KRW 0.24 billion). Profit improved even as revenue declined modestly, which points to a combination of cost restructuring and stronger B2B profitability. On an annual basis, the 2025 net loss was roughly half the size of the 2024 loss."
+    "ko": "큐레이션 브랜드 에센셜의 구독자는 2026년 6월 기준 152만여명이다. 가전에 이어 2026년 5월 현대자동차그룹 인포테인먼트용 앱이 출시됐고, 6월에는 토요타 신형 RAV4에 탑재됐다. 음원 소비가 자동차와 가전으로 넓어지는 점은 매출 감소를 보완할 수 있는 채널이다.",
+    "en": "The Essential curation brand had about 1.52 million subscribers as of June 2026. After home appliances, an app for the Hyundai Motor Group infotainment system launched in May 2026, and in June Essential was installed in a new Toyota RAV4. Expansion of music consumption into cars and appliances is a channel that could offset the revenue decline."
    }
   },
   {
    "title": {
-    "ko": "새 인수자 등장, 지배구조 변화 가능성",
-    "en": "A New Prospective Buyer Signals Possible Ownership Change"
+    "ko": "순자산 대비 낮은 주가 수준",
+    "en": "Share price low relative to book value"
    },
    "body": {
-    "ko": "2026년 3월 무산된 NDT엔지니어링 딜 이후 약 4개월 반 만에 엔터테인먼트 기업 뮤즈엠과의 재매각 협상이 마무리 단계에 이르렀다는 보도가 8월 나왔다. 매각이 성사되면 아티스트 IP 사업을 보유한 뮤즈엠과의 시너지를 통해 사업 방향이 재편될 여지가 있다. 다만 아직 계약이 확정된 것은 아니라는 점은 감안할 필요가 있다.",
-    "en": "About four and a half months after the failed NDT Engineering deal in March 2026, an August 2026 report indicated that renewed sale talks with entertainment company MuseM had reached a final stage. If completed, the sale could open the door to synergies with MuseM's existing artist IP business and a reshaped strategic direction. It should be noted, however, that no contract has yet been confirmed."
+    "ko": "주가순자산비율은 1배를 밑도는 수준이고 자본총계는 2025년 말 507억원이다. 영업활동 현금흐름은 2025년 53.7억원으로 손익 적자 속에서도 플러스를 유지했다. 부채총계는 161억원으로, 자본 규모에 비해 부채 부담은 크지 않은 편이다.",
+    "en": "The price-to-book ratio is below 1x, with total equity at KRW 50.7 billion at year-end 2025. Operating cash flow was KRW 5.37 billion in 2025, remaining positive despite the net loss. Total liabilities were KRW 16.1 billion, a modest amount relative to the equity base."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "핵심 스트리밍 사업의 구조적 열위",
-    "en": "Structural Disadvantage in the Core Streaming Business"
+    "ko": "매출 감소 지속",
+    "en": "Revenue decline continues"
    },
    "body": {
-    "ko": "국내 음악 플랫폼 이용자 점유율에서 벅스는 1.8%로, 유튜브뮤직(37.6%)과 멜론(31.7%)에 크게 못 미친다. 상위 두 플랫폼이 전체 이용의 약 70%를 차지하는 과점 구조에서 후발 사업자가 점유율을 되찾기는 쉽지 않다. 이 때문에 회사의 매출은 2022년 이후 4년 연속 감소해왔다.",
-    "en": "In domestic music platform usage share, Bugs stands at just 1.8%, far behind YouTube Music (37.6%) and Melon (31.7%). In an oligopolistic market where the top two platforms account for roughly 70% of usage, it is difficult for a smaller operator to recover share. As a result, the company's revenue has declined for four consecutive years since 2022."
+    "ko": "매출은 2022년 658억원에서 2025년 449억원으로 줄었고, 2023년부터 2025년까지 3년 연속 감소했다. 2026년 3분기 매출은 99.6억원으로 전년 동기 대비 8.6% 감소해 100억원 선을 밑돌았다. 외형 감소가 이어지면 영업이익 개선 폭은 제한될 수 있다.",
+    "en": "Revenue fell from KRW 65.8 billion in 2022 to KRW 44.9 billion in 2025, declining for three consecutive years from 2023. Third-quarter 2026 revenue was KRW 9.96 billion, down 8.6% from a year earlier and below KRW 10 billion. If the top-line decline persists, the room for operating profit improvement could be limited."
    }
   },
   {
    "title": {
-    "ko": "저작권 비용 부담 증가",
-    "en": "Rising Royalty Cost Burden"
+    "ko": "지배주주 순손실 재확대",
+    "en": "Controlling-shareholder net loss widened again"
    },
    "body": {
-    "ko": "저작권 징수규정 개편으로 권리자 수익 배분율이 상승하고 기존 할인율이 폐지되면서 플랫폼 사업자의 비용 부담이 커지고 있다. 디지털 음악시장 자체는 성장하고 있지만, 비용 구조 변화가 스트리밍 부문의 수익성 개선을 제약하는 요인으로 작용하고 있다. 매출이 줄어드는 상황에서 비용 부담이 늘어나면 본업의 손익 개선은 더 어려워질 수 있다.",
-    "en": "A revised royalty collection scheme has raised rights holders' revenue share and eliminated a previous discount rate, increasing the cost burden on platform operators. While the digital music market itself is growing, this cost structure shift constrains profitability improvements in the streaming segment. With revenue already declining, a rising cost burden could make it harder to improve core business earnings."
+    "ko": "2026년 3분기 지배주주 순손실은 8.1억원으로, 2분기 2.4억원 순이익에서 다시 적자로 돌아섰다. 영업이익은 흑자였지만 법인세비용차감전 손실이 커지면서 순손실 규모가 확대됐다. 영업이익 흑자가 순이익 흑자로 이어지지 못한 점이 약세 요인이다.",
+    "en": "The controlling-shareholder net loss in the third quarter of 2026 was KRW 814 million, reversing from a KRW 240 million profit in the second quarter. Operating profit was positive, but the pre-tax loss widened, enlarging the net loss. The failure of operating profit to translate into net profit is a bearish factor."
    }
   },
   {
    "title": {
-    "ko": "매각 불확실성과 불성실공시 이력",
-    "en": "Sale Uncertainty and a History of Disclosure Issues"
+    "ko": "지배구조 불확실성",
+    "en": "Governance uncertainty"
    },
    "body": {
-    "ko": "2026년 1월 체결된 지분 45.26% 매각 계약이 3월 잔금 미납으로 무산됐고, 8월에는 새로운 인수자와의 협상 소식이 나왔지만 아직 확정되지 않았다. 같은 해 5월에는 공시번복 및 공시불이행을 이유로 불성실공시법인으로 지정된 바 있어, 지배구조 및 공시 신뢰성 측면의 불확실성이 남아 있다. 이러한 반복된 불확실성은 주가와 거래 안정성에 부담 요인이 될 수 있다.",
-    "en": "A stake sale agreement for 45.26% signed in January 2026 collapsed in March due to unpaid balance, and while an August 2026 report pointed to talks with a new buyer, nothing has been finalized. In May of the same year, the company was designated an unfaithful disclosure entity for a disclosure reversal and a disclosure failure, leaving governance and disclosure-reliability uncertainty in place. This repeated uncertainty can weigh on trading stability."
+    "ko": "최대주주 NHN이 보유한 45.26% 지분 매각은 2026년 1월 계약 체결 뒤 3월 계약 해제됐다. 8월 재매각 협상도 최종 계약에 이르지 못했고, 9월에는 매각 재추진이 무산됐다고 보도됐다. 2026년 3월에는 경영권 분쟁 관련 소송도 제기됐다.",
+    "en": "The sale of the 45.26% stake held by the controlling shareholder was signed in January 2026 and cancelled in March. Renewed negotiations in August did not reach a final agreement, and reports in September said a renewed sale had stalled. A management-rights dispute lawsuit was also filed in March 2026."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "지배구조·M&A 리스크",
-    "en": "Governance and M&A Risk"
+    "ko": "지배구조·경영권",
+    "en": "Governance and control"
    },
    "body": {
-    "ko": "최대주주 NHN의 지분 매각이 한 차례 잔금 미납으로 무산된 전력이 있어, 재추진되는 거래 역시 완결 여부를 확신할 수 없다. 매각이 반복적으로 지연되거나 무산될 경우 경영 불확실성이 장기화될 수 있다. 새로운 인수자의 사업 역량과 통합 전략도 아직 검증되지 않았다.",
-    "en": "Since majority shareholder NHN's earlier stake sale collapsed due to an unpaid balance, there is no certainty that a renewed transaction will be completed. Repeated delays or further collapses in the sale process could prolong management uncertainty. The business capability and integration strategy of any new buyer also remain unverified."
+    "ko": "매각 시도가 계약 해제와 협상 결렬을 거쳐 9월 재추진 무산으로 이어지면서 최대주주의 향후 방향이 정해지지 않은 상태다. 2026년 3월 제기된 경영권 분쟁 소송도 지배구조 변수다. 최대주주가 바뀌면 사업 방향과 비용 구조가 달라질 수 있다.",
+    "en": "Attempts to sell the stake led to a cancelled contract, failed talks and a stalled renewed sale, leaving the controlling shareholder's direction unsettled. The management-rights lawsuit filed in March 2026 is another governance variable. A change of controlling shareholder could alter the business direction and cost structure."
    }
   },
   {
    "cat": {
-    "ko": "공시·규제 리스크",
-    "en": "Disclosure and Regulatory Risk"
+    "ko": "매출 구성 집중",
+    "en": "Revenue concentration"
    },
    "body": {
-    "ko": "2026년 5월 공시번복과 공시불이행을 이유로 불성실공시법인에 지정된 이력이 있어, 향후 추가 제재나 시장 신뢰 저하로 이어질 가능성이 있다. 저작권 징수규정 변경과 같은 산업 정책 변화도 비용 구조에 직접적인 영향을 줄 수 있다.",
-    "en": "The company's May 2026 designation as an unfaithful disclosure entity, tied to a disclosure reversal and a disclosure failure, carries the risk of further sanctions or reduced market confidence. Industry policy changes such as revised royalty collection rules can also directly affect the cost structure."
+    "ko": "B2B 음원유통이 전체 매출의 과반을 차지하는 만큼, 유통 계약 조건과 거래처 변화에 실적이 민감할 수 있다. 개인 구독과 B2B의 매출 흐름 변화는 정기보고서의 사업 부문 설명에서 확인해야 한다. 채널 집중도가 높을수록 한쪽 감소가 전체 매출에 크게 반영된다.",
+    "en": "Because B2B music distribution accounts for more than half of revenue, results may be sensitive to distribution contract terms and changes in client relationships. Shifts between consumer subscriptions and B2B revenue need to be checked in the business-segment discussion of the periodic reports. The higher the channel concentration, the more a decline in one channel shows up in total revenue."
    }
   },
   {
    "cat": {
-    "ko": "경쟁·구조적 리스크",
-    "en": "Competitive and Structural Risk"
+    "ko": "공시 신뢰도",
+    "en": "Disclosure reliability"
    },
    "body": {
-    "ko": "유튜브뮤직, 멜론 등 대형 플랫폼이 시장을 장악한 과점 구조에서 벅스의 점유율은 1.8%에 불과해, 스트리밍 본업의 반등 가능성은 제한적이다. 통합 구독 모델로의 시장 재편이 가속화될 경우 순수 스트리밍 사업자로서의 차별화가 더욱 어려워질 수 있다.",
-    "en": "In an oligopolistic market dominated by large platforms such as YouTube Music and Melon, Bugs' 1.8% share leaves limited room for a rebound in the core streaming business. If the market continues shifting toward integrated subscription bundles, differentiation as a pure-play streaming operator could become even more difficult."
+    "ko": "2026년 5월 13일 코스닥시장본부는 공시번복 1건과 공시불이행 1건을 이유로 불성실공시법인으로 지정했다. 영업(잠정)실적은 외부감사인의 감사 또는 검토 과정에서 변경될 수 있다는 단서가 붙어 있다. 잠정치와 정기보고서 수치가 다를 수 있으므로 확정 공시를 기준으로 확인해야 한다.",
+    "en": "On May 13, 2026, the KOSDAQ market division designated the company as a company subject to unfaithful disclosure, citing one disclosure reversal and one failure to disclose. Preliminary operating results carry a caveat that they may change during the external audit or review. Because preliminary and final figures can differ, confirmation should rely on the final filings."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중",
-    "en": "Around November 2026"
+    "ko": "2026년 12월 말까지",
+    "en": "By end-December 2026"
    },
    "what": {
-    "ko": "2026년 3분기 잠정 실적 공시 예정 시점으로, 2025Q4부터 이어진 영업이익 흑자 기조와 순이익 흑자 전환이 계속되는지 확인할 시점이다.",
-    "en": "Provisional Q3 2026 earnings are expected around this time, a point to check whether the operating profit streak that began in 2025Q4 and the net income turnaround continue."
+    "ko": "최대주주 지분 매각 재추진 여부. 매각이 성사되면 최대주주 변경 공시와 경영 방향 변화가 뒤따른다.",
+    "en": "Whether the sale of the controlling shareholder's stake is pursued again. If a deal closes, a change of controlling shareholder would be disclosed and the business direction could shift."
    }
   },
   {
    "when": {
-    "ko": "2026년 9월 이후 관련 공시 발표 시",
-    "en": "Upon any related disclosure after September 2026"
+    "ko": "2027년 2월 전후(지난해 같은 시기 기준)",
+    "en": "Around February 2027 (based on last year's timing)"
    },
    "what": {
-    "ko": "엔터테인먼트 기업 뮤즈엠과의 재매각 협상이 실제 계약 체결로 이어지는지, 계약금·잔금 조건과 일정이 어떻게 확정되는지를 DART·KRX 공시로 확인해야 한다.",
-    "en": "It will be important to check DART and KRX disclosures for whether renewed sale talks with entertainment company MuseM result in an actual signed contract, and how the deposit, balance terms, and schedule are finalized."
+    "ko": "2026년 4분기 잠정 실적. 매출이 2026년 3분기 99.6억원 아래에서 반등하는지, 영업이익 흑자가 이어지는지 확인한다.",
+    "en": "Preliminary fourth-quarter 2026 results. Check whether revenue rebounds from KRW 9.96 billion and whether operating profit stays positive."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 중 후속 공시 발표 시",
-    "en": "As follow-up disclosures emerge in the second half of 2026"
+    "ko": "2027년 3월 31일까지",
+    "en": "By March 31, 2027"
    },
    "what": {
-    "ko": "5월 불성실공시법인 지정에 따른 추가 제재(벌점·매매거래정지 등) 여부와, 이것이 재매각 협상이나 주가 안정성에 미치는 영향을 살펴야 한다.",
-    "en": "Watch for whether the May unfaithful disclosure designation leads to further sanctions such as penalty points or trading halts, and how this affects the resale negotiations or price stability."
+    "ko": "2026년 사업보고서. 연간 매출과 영업손익이 2025년 449억원, 영업손실 7.3억원과 비교해 어떻게 달라졌는지, 지배주주 순손익 흐름을 확인한다.",
+    "en": "The 2026 annual report. Compare annual revenue and operating results with KRW 44.9 billion and the KRW 735 million operating loss of 2025, and track the controlling-shareholder net income trend."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기 이후 신규 제휴 발표 시",
-    "en": "Upon any new partnership announcements from Q4 2026 onward"
+    "ko": "2027년 5월 중순 전후(지난해 같은 시기 기준)",
+    "en": "Around mid-May 2027 (based on last year's timing)"
    },
    "what": {
-    "ko": "에센셜 브랜드의 추가 자동차·가전 OEM 제휴나 구독자 수 증가 여부가 B2B 부문 이익 기여도를 계속 키울 수 있는지 확인해야 한다.",
-    "en": "Check whether additional automotive or appliance OEM partnerships for the essential; brand, or continued subscriber growth, can keep expanding the B2B segment's profit contribution."
+    "ko": "2027년 1분기 분기보고서. 에센셜 차량·가전 탑재 확대가 분기 매출 감소를 멈추는 데 기여하는지 확인한다.",
+    "en": "The first-quarter 2027 quarterly report. Check whether the wider placement of Essential in cars and appliances helps stop the quarterly revenue decline."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "NHN벅스는 본업인 스트리밍 사업의 구조적 열위 속에서도 에센셜 중심 B2B 사업 확장을 통해 2025Q4~2026Q2 세 개 분기 연속 영업이익 흑자, 2026Q1부터는 순이익 흑자 전환이라는 실질적 개선을 보여줬다. 다만 연간 매출은 2022년 이후 4년 연속 감소했고, 저작권 비용 부담 증가와 대형 플랫폼의 과점 구조라는 산업 환경은 여전히 도전적이다. 최대주주 NHN의 지분 매각은 2026년 3월 잔금 미납으로 한 차례 무산됐고, 8월에는 새로운 인수 후보와의 협상이 알려졌으나 확정되지는 않아 지배구조 불확실성이 이어지고 있다. 여기에 5월 불성실공시법인 지정 이력도 함께 고려할 요소다. 밸류에이션 측면에서는 회사가 최근 5년간 배당을 지급하지 않았고, 주가는 주당순자산 대비 할인된 수준에서 거래되고 있다는 사실 관계가 확인된다. 향후 분기 실적의 흑자 지속 여부와 매각 협상의 진전 상황이 이 종목을 판단하는 핵심 변수가 될 것으로 보인다.",
-   "en": "NHN Bugs has shown tangible improvement, posting operating profit for three consecutive quarters from 2025Q4 through 2026Q2 and turning net income positive starting in 2026Q1, driven by expansion of its essential; B2B curation business even as its core streaming operation faces structural disadvantages. Still, annual revenue has declined for four straight years since 2022, and the industry backdrop of rising royalty costs and an oligopolistic platform market remains challenging. Majority shareholder NHN's stake sale collapsed once in March 2026 due to an unpaid balance, and while talks with a new prospective buyer surfaced in August, nothing has been finalized, leaving governance uncertainty in place. The May 2026 unfaithful disclosure designation is another factor to weigh. On valuation, the facts show the company has paid no dividends over the past five years and that its shares trade at a discount to net asset value per share. Whether the quarterly profit streak continues and how the sale negotiations progress are likely to be the key variables for assessing this stock going forward."
+   "ko": "NHN벅스는 2022년 이후 매출이 줄어드는 구조 속에서 영업이익률이 떨어졌지만, 2026년 1분기부터 3분기까지 영업이익이 흑자를 이어가며 수익성 방향을 되돌린 상태다. 연간 기준으로는 2025년 영업손실 7.3억원과 지배주주 순손실 62.2억원으로 적자였다. 2026년 3분기에는 영업이익이 2.2억원으로 흑자였으나 지배주주 순손실은 8.1억원으로 확대됐다. 매출은 2025년 4분기 113억원에서 2026년 3분기 99.6억원으로 낮아졌다. 강세 요인으로는 영업이익 흑자 기조, 에센셜 구독자 152만여명과 차량·가전 탑재처 확대, 순자산 대비 낮은 주가 수준이 꼽힌다. 약세 요인으로는 매출 감소 지속, 지배주주 순손실 재확대, 최대주주 지분 매각 무산과 경영권 분쟁 소송 등 지배구조 불확실성이 있다. 두 측면은 같은 무게로 보아야 하며 해석이 엇갈린다. 앞으로 확인할 지점은 2026년 4분기 잠정 실적, 2026년 사업보고서, 최대주주 지분 매각의 재추진 여부다.",
+   "en": "NHN Bugs has seen its operating margin fall while revenue declined from 2022 onward, but operating profit stayed positive from the first to the third quarter of 2026, reversing the earlier direction of profitability. On an annual basis, 2025 included an operating loss of KRW 735 million and a controlling-shareholder net loss of KRW 6.22 billion. In the third quarter of 2026, operating profit was KRW 221 million, but the controlling-shareholder net loss widened to KRW 814 million. Revenue fell from KRW 11.3 billion in the fourth quarter of 2025 to KRW 9.96 billion in the third quarter of 2026. Bullish factors include positive operating profit, about 1.52 million Essential subscribers with expanding placement in cars and appliances, and a share price low relative to book value. Bearish factors include the continued revenue decline, the widened controlling-shareholder net loss, and governance uncertainty from the failed sale of the controlling stake and a management-rights lawsuit. These two sides should be weighed equally, and interpretations diverge. The next items to verify are the preliminary fourth-quarter 2026 results, the 2026 annual report and whether the stake sale is pursued again."
   }
  },
  "sources": [
-  "https://www.bugscorp.co.kr/",
-  "https://dealsite.co.kr/articles/159351",
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=104200",
-  "https://www.stockplus.com/m/stocks/KOREA-A104200/articles",
-  "https://www.jobkorea.co.kr/Company/1639076/Info",
-  "https://www.bloter.net/news/articleView.html?idxno=663307",
-  "https://itooza.com/vscore/104200",
-  "https://boxfin.co.kr/company?corp_code=00645089",
-  "https://www.mt.co.kr/tech/2024/01/19/2024011911024854202",
-  "https://www.nhn.com/ko_/ir/AuditReport/2024/[%EC%97%94%EC%97%90%EC%9D%B4%EC%B9%98%EC%97%94]%EB%B0%98%EA%B8%B0%EB%B3%B4%EA%B3%A0%EC%84%9C(20240814).pdf",
-  "https://www.jobkorea.co.kr/starter/companyreport/view?Inside_No=21150&schCtgr=101012&schGrpCtgr=0&Page=1",
-  "https://nhn.com/ko_/ir/AuditReport/2024/%5B%EC%97%94%EC%97%90%EC%9D%B4%EC%B9%98%EC%97%94%5D%EB%B6%84%EA%B8%B0%EB%B3%B4%EA%B3%A0%EC%84%9C(20240514).pdf",
+  "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=714027",
+  "https://www.ddaily.co.kr/page/view/2026111014200198972",
+  "http://comp.wisereport.co.kr/bsfn/company/c1010001.aspx?cn=bsfn&cmp_cd=104200",
+  "https://www.vegannews.co.kr/news/article.html?no=403047",
   "https://www.ddaily.co.kr/page/view/2026081113350754728",
-  "https://ssl.pstatic.net/imgstock/upload/research/company/1640226374742.pdf",
-  "https://thetracker.co.kr/View.aspx?No=3944561",
-  "https://www.nhn.com/ko_/ir/AuditReport/2024/%5B%EC%97%94%EC%97%90%EC%9D%B4%EC%B9%98%EC%97%94%5D%EB%B6%84%EA%B8%B0%EB%B3%B4%EA%B3%A0%EC%84%9C(20241114).pdf",
-  "https://zdnet.co.kr/view/?no=20260116090116",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=w4QrQiIF2boSFgzB"
+  "https://thevc.kr/nhnbugs",
+  "https://m.news.nate.com/view/20260115n35372",
+  "https://m.news.nate.com/view/20260115n35661",
+  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=714054",
+  "https://www.sedaily.com/article/14171432",
+  "https://m.news.nate.com/view/20260211n39515",
+  "https://www.awakeplus.co.kr/data/view/20260327902737",
+  "https://www.saramin.co.kr/zf_user/company-info/view-inner-finance/csn/QWc4Tml2SVBEbjBNemJ2bVZ1MjlmZz09/company_nm/(%EC%A3%BC)%EC%97%94%EC%97%90%EC%9D%B4%EC%B9%98%EC%97%94%EB%B2%85%EC%8A%A4",
+  "https://www.knowingasset.com/app/calendar/8064",
+  "https://m.irgo.co.kr/IR-COMP/181710/-IR-PAGE",
+  "https://www.stockplus.com/m/stocks/KOREA-A104200/articles",
+  "https://www.cnbnews.com/news/articleView.html?idxno=1023126"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "104200",
  "name": "NHN벅스",
  "name_en": "NHN BUGS Corporation",
@@ -223,11 +222,11 @@
   "미디어·엔터"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 21:16",
- "dataDate": "20260904",
+ "reportDate": "2026-11-14",
+ "reportTs": "2026-11-14 15:03",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-11-14",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -297,12 +296,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 11586460332,
-    "op": 219719728,
-    "np_owner": -664802232
-   },
-   {
     "q": "2025Q3",
     "rev": 10904624918,
     "op": -412246361,
@@ -325,28 +318,39 @@
     "rev": 10597424297,
     "op": 495639604,
     "np_owner": 240302789
+   },
+   {
+    "q": "2026Q3",
+    "rev": 9964814278,
+    "op": 220999181,
+    "np_owner": -813640081
    }
   ],
   "valuation": {
-   "price": 2685,
-   "mcap": 0.0398,
+   "price": 2300,
+   "mcap": 0.0341,
    "shares": 14827550,
    "total_shares": 14827550,
    "wavg_shares": 13523394,
    "per": null,
-   "eps": -319,
-   "pbr": 0.7068,
-   "bps": 3799,
-   "roe_ttm": -8.1,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": -4314231010,
+   "eps": -362,
+   "pbr": 0.6151,
+   "bps": 3739,
+   "roe_ttm": -9.3,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": -4902244725,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 0.68,
+   "eps_src": "공시",
+   "pbr_krx": 0.61,
    "bps_krx": 3749.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
-   "div": 0.0
+   "div": 0.0,
+   "hidden": {
+    "per": "loss"
+   }
   }
- }
+ },
+ "textRules": 2
 }

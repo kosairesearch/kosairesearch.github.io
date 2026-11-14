@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "이익 회복세와 테마성 변동성의 공존",
-  "en": "Earnings Recovery Amid Thematic Volatility"
+  "ko": "DB 암호화 실적 반등과 PQC 전환 과제 점검",
+  "en": "Ksign: Profit Rebound and the PQC Transition Test"
  },
  "lead": {
-  "ko": "케이사인은 2025년 영업이익률이 개선되고 2026년 상반기 흑자 기조를 이어갔지만, 매출은 계절성이 크고 주가는 스테이블코인 등 테마 이슈에 민감하게 반응해 온 정보보안 전문기업이다.",
-  "en": "KSign is an information-security specialist whose operating margin improved in 2025 and stayed profitable through the first half of 2026, even as revenue remains seasonally lumpy and its share price has repeatedly reacted to stablecoin-related theme news."
+  "ko": "케이사인은 2025년 4분기 이후 영업이익 흑자가 이어지고 있으나, 2026년 3분기에도 지배주주 순손실이 남아 있어 이익 체력의 지속성이 다음 확인 과제다.",
+  "en": "Ksign's operating profit has stayed in the black since the fourth quarter of 2025, but it still posted a net loss attributable to controlling shareholders in the third quarter of 2026, so the durability of earnings remains the key item to confirm."
  },
  "keypoints": [
   {
-   "ko": "2025년 영업이익률이 6.0%로 개선되며 2024년(2.5%)보다 뚜렷한 이익 회복을 보였고, 2026년 1분기와 2분기 모두 흑자를 유지했다.",
-   "en": "The 2025 operating margin improved to 6.0% from 2.5% in 2024, and both the first and second quarters of 2026 stayed profitable."
+   "ko": "공시 기준 2025년 매출은 484억원으로 전년 대비 6.7% 줄었으나, 영업이익은 29억원으로 전년 대비 121.7% 증가하며 반등했다.",
+   "en": "On a disclosed basis, 2025 revenue fell to KRW 48.4 billion, down 6.7% year on year, while operating profit rebounded to KRW 2.9 billion, up 121.7%."
   },
   {
-   "ko": "국내 DB 암호화 시장 점유율 1위, 8,000여 곳 이상의 공공·금융·교육기관 레퍼런스를 보유하고 있다.",
-   "en": "The company holds the No.1 market share in domestic database encryption with references at more than 8,000 public, financial, and education institutions."
+   "ko": "2026년 3분기 매출은 106억원으로 전년 동기 대비 49.0% 늘었고, 영업이익 6.5억원은 전년 동기 영업손실에서 흑자로 돌아선 수치다. 지배주주 순손실은 1,931만원이다.",
+   "en": "Third-quarter 2026 revenue reached KRW 10.6 billion, up 49.0% from a year earlier. Operating profit of KRW 650 million compares with an operating loss a year earlier, and the net loss attributable to controlling shareholders was KRW 19.31 million."
   },
   {
-   "ko": "삼성전자에 2010년부터 DB 암호화 제품을 공급해온 이력이 있어, 삼성월렛의 스테이블코인 기능 도입 계획이 부각될 때마다 관련 테마주로 반복 거론된다.",
-   "en": "It has supplied database encryption products to Samsung Electronics since 2010, which has repeatedly made it a theme stock whenever Samsung Wallet's stablecoin plans draw attention."
+   "ko": "2026년 7월 범국가 양자내성암호(PQC) 핵심기술개발사업 주관기관으로 선정됐으며, 2029년 12월까지 52.5억원 규모의 자동 전환 플랫폼을 개발한다.",
+   "en": "In July 2026 Ksign was named lead institution of a national PQC core technology project, an automated transition platform worth KRW 5.25 billion to be developed through December 2029."
   },
   {
-   "ko": "2026년 사업 방향은 양자내성암호(PQC)와 AI 보안에 집중하는 것으로, 회사 측은 '차세대 보안기술 선도기업' 도약을 목표로 제시했다.",
-   "en": "The 2026 business focus is on post-quantum cryptography (PQC) and AI security, with the company stating a goal of becoming a 'next-generation security technology leading company.'"
+   "ko": "디일렉 보도에 따르면 삼성전자의 DB 암호화 고도화 사업을 기존 계약과 별도로 수주했으며, 회사는 4분기부터 매출을 인식할 것으로 예상했다. 계약 규모는 공개되지 않았다.",
+   "en": "According to a late-October 2026 report by THE ELEC, Ksign won an additional DB encryption upgrade project from Samsung Electronics, separate from existing contracts, and expects to recognize revenue from the fourth quarter. The contract size was not disclosed."
   },
   {
-   "ko": "매출은 4분기에 집중되는 계절성이 뚜렷해 3분기 적자, 4분기 큰 흑자로 이어지는 패턴이 반복돼 왔다.",
-   "en": "Revenue shows a pronounced fourth-quarter seasonality pattern, with third-quarter losses repeatedly followed by large fourth-quarter profits."
+   "ko": "2026년 11월 9일 소각 예정으로 공시된 자기주식 27만 7,277주가 소각되면 발행주식총수는 706만 7,125주에서 678만 9,848주로 줄어든다.",
+   "en": "Treasury shares of 277,277 were scheduled for cancellation on November 9, 2026, which would reduce total issued shares from 7,067,125 to 6,789,848."
   }
  ],
  "business": {
-  "ko": "케이사인은 1999년 설립되어 2014년 코스닥 시장에 상장한 정보보안 전문기업으로, PKI 인증, DB 암호화, 암호 키 관리, 통합인증(SSO/EAM/IAM), 양자내성암호(PQC), AI 보안 솔루션 등을 핵심 사업으로 영위한다. 국내 DB 암호화 시장에서 점유율 1위를 유지하고 있으며 8,000여 곳 이상의 공공·금융·교육기관에 레퍼런스를 보유하고 있고, KCMVP·CC인증·GS인증 1등급 등 필수 국가 인증을 선제적으로 취득해 조달·국방 시장에서 신뢰도를 확보하고 있다. 금융권에서는 현대해상, 수협은행, 미래에셋증권, 한화생명, 삼성카드, 한국투자증권 등을 고객사로 두고 있으며, 삼성전자에는 2010년부터 DB 암호화 제품을 표준화 제품으로 공급해온 이력이 있다. 계열사인 샌즈랩은 사이버위협 인텔리전스 서비스 'CTX'와 네트워크 탐지·대응(NDR) 솔루션 'MNX'를 제공하며, 2026년 3월 9일 공시에 따르면 샌즈랩이 보유한 케이사인 지분율은 35.27%로 늘어난 것으로 확인됐다. IAM(통합인증) 분야에서는 넷앤드, 피앤피시큐어, 라온시큐어 등과 경쟁하고 있다. 2026년 신년 인터뷰에서 구자동 대표는 올해 핵심 목표로 '차세대 보안기술 선도기업' 도약을 제시하며 기술 경쟁력 강화, 전략적 파트너십 확대, 핵심 산업군 집중을 세 가지 축으로 제시했다. 국내 영업망 확충을 위해 2026년 1월부터 전국 기술·영업 파트너사를 모집하며 기업·금융·공공·국방 분야 협력을 확대하고 있다. 이처럼 회사는 전통적인 인증·암호화 솔루션 사업 기반 위에 PQC와 AI 보안이라는 신규 축을 더해가는 구조를 갖추고 있다.",
-  "en": "KSign is an information-security specialist founded in 1999 and listed on KOSDAQ in 2014, with core businesses spanning PKI authentication, database encryption, cryptographic key management, integrated authentication (SSO/EAM/IAM), post-quantum cryptography (PQC), and AI security solutions. The company holds the No.1 share in the domestic database encryption market with references at more than 8,000 public, financial, and education institutions, and has preemptively secured mandatory national certifications such as KCMVP, CC, and GS Level 1 to maintain credibility in the procurement and defense markets. Its financial-sector clients include Hyundai Marine & Fire Insurance, Suhyup Bank, Mirae Asset Securities, Hanwha Life, Samsung Card, and Korea Investment & Securities, and it has supplied standardized database encryption products to Samsung Electronics since 2010. Affiliate SandsLab provides the cyber threat intelligence service 'CTX' and the network detection and response (NDR) solution 'MNX,' and a March 9, 2026 disclosure confirmed that SandsLab's stake in KSign had risen to 35.27%. In the integrated authentication (IAM) segment, it competes with NetAND, P&P Secure, and RaonSecure. In a 2026 New Year interview, CEO Koo Ja-dong laid out a goal of becoming a 'next-generation security technology leading company,' built around three pillars: strengthening technological competitiveness, expanding strategic partnerships, and focusing on core industry sectors. To expand its domestic sales network, the company began recruiting technology and sales partners nationwide from January 2026, broadening cooperation across corporate, financial, public, and defense sectors. Overall, the company is layering new PQC and AI-security pillars onto its traditional authentication and encryption solution base."
+  "ko": "케이사인은 1999년 11월 설립된 정보보안 전문기업으로, 개인정보 암호화·PKI 인증·통합 인증·모바일 보안·AI 보안 사업을 펼치고 있다. 회사가 밝힌 주력 제품은 세 갈래다. 첫째는 대규모 사용자 환경에서 인증과 전자서명을 맡는 PKI 및 인증 솔루션이고, 둘째는 데이터 암호화와 키 관리를 담당하는 HSM·암호모듈 계열이며, 셋째는 정형 데이터의 개인정보를 탐지하고 비식별화하는 AI 기반 보호 솔루션이다. 매출의 중심에는 DB 암호화 제품 시큐어DB가 있다. 디일렉 보도에 따르면 시큐어DB는 2025년 252억원의 매출을 올려 회사 전체 매출의 52.21%를 차지했다. 고객은 공공기관과 금융사, 민간 기업으로 나뉜다. 회사는 2026년 1월 신년 인터뷰에서 공공·금융을 중심축으로 두고 제조·엔터프라이즈·의료 영역으로 넓히겠다고 밝혔다. 삼성전자와는 DB 암호화 고도화 사업을 진행하고 있다. 기술 측면에서는 양자내성암호 제품인 케이사인케이스 포 PQC와 케이사인PKI 포 PQC를 출시해 공공기관 대상 시범 적용을 진행 중이다. 경쟁 구도에서는 같은 보안 업종의 안랩(Ahnlab) 등이 비교 대상이다.",
+  "en": "Ksign is a information security company founded in November 1999 that runs personal data encryption, PKI authentication, integrated authentication, mobile security and AI security businesses. The company names three core product lines. The first is PKI and authentication solutions that handle authentication and e-signatures in large user environments. The second is the HSM and cryptographic module line for data encryption and key management. The third is an AI-based privacy protection solution that detects and de-identifies personal information in structured data. At the center of revenue is SecureDB, a database encryption product. According to a THE ELEC report, SecureDB generated KRW 25.2 billion in 2025, accounting for 52.21% of total company revenue. Customers include public institutions, financial companies and private enterprises. In its January 2026 New Year interview, the company said it would keep public and financial sectors as its core while expanding into manufacturing, enterprise and healthcare. Ksign is also carrying out a DB encryption upgrade project for Samsung Electronics. On technology, it has launched KSign CASE for PQC and KSign PKI for PQC, which are under pilot deployment with public institutions. Its competitive peers include Ahnlab in the security sector."
  },
  "earnings": {
-  "ko": "2025년 연결 매출액은 483억 9,400만원으로 전년(2024년 518억 6,600만원) 대비 6.7% 감소했으나, 영업이익은 28억 9,500만원으로 전년 13억 600만원 대비 두 배 이상 늘며 영업이익률이 2.5%에서 6.0%로 개선됐다. 지배주주 순이익도 2024년 16억 6,800만원에서 2025년 23억 9,800만원으로 늘며 이익 회복 흐름을 이어갔다. 연간 추이를 보면 2022년에는 매출 431억 9,000만원에 영업이익률 21.2%로 높은 수익성을 보였으나, 2023년(매출 471억원, 영업이익률 9.1%)과 2024년(매출 519억원, 영업이익률 2.5%)을 거치며 마진이 지속적으로 낮아졌다가 2025년 들어 다시 개선되는 모습을 보였다. 분기별로는 계절성이 뚜렷하다. 2025년 2분기 매출 126억원에 영업손실 6억 6,000만원을 기록한 데 이어 3분기에는 매출이 71억원으로 줄면서 영업손실이 14억 8,000만원까지 확대돼 연중 가장 부진한 구간을 지났다. 반면 4분기에는 매출이 219억원으로 급증하며 영업이익 59억 8,000만원, 지배주주 순이익 45억 6,000만원을 기록해 단일 분기 실적이 연간 실적의 상당 부분을 차지했다. 2026년에는 1분기 매출 77억 5,000만원, 영업이익 2억 4,000만원, 지배주주 순이익 7억원으로 흑자 기조를 이어갔고, 2분기에는 매출이 99억 4,000만원으로 늘고 영업이익도 9억 4,000만원, 지배주주 순이익 12억 1,000만원으로 두 분기 연속 흑자와 개선 흐름을 보였다. 현금흐름 측면에서는 2023년 영업활동현금흐름이 -75억 8,000만원으로 크게 악화됐다가 2024년 58억 2,000만원, 2025년 32억 2,000만원으로 다시 양(+)의 흐름을 회복했으며, 부채비율은 2022년 99.8%에서 2023년 71.2%, 2024년 65.8%, 2025년 62.1%로 점진적으로 낮아지는 추세다.",
-  "en": "In 2025, consolidated revenue was KRW 48.39 billion, down 6.7% from KRW 51.87 billion in 2024, while operating profit more than doubled to KRW 2.90 billion from KRW 1.31 billion, lifting the operating margin from 2.5% to 6.0%. Net income attributable to owners also rose from KRW 1.67 billion in 2024 to KRW 2.40 billion in 2025, extending the earnings recovery. Looking at the multi-year trend, 2022 posted revenue of KRW 43.19 billion with a high 21.2% operating margin, but margins declined steadily through 2023 (revenue KRW 47.1 billion, margin 9.1%) and 2024 (revenue KRW 51.9 billion, margin 2.5%) before improving again in 2025. The quarterly pattern shows pronounced seasonality: after an operating loss of KRW 663 million on revenue of KRW 12.63 billion in the second quarter of 2025, the third quarter saw revenue fall to KRW 7.10 billion and the operating loss widen to KRW 1.48 billion, marking the weakest stretch of the year. By contrast, fourth-quarter revenue surged to KRW 21.92 billion, generating operating profit of KRW 5.98 billion and owner net income of KRW 4.56 billion, so a single quarter accounted for a large share of the annual result. In 2026, the first quarter maintained profitability with revenue of KRW 7.75 billion, operating profit of KRW 241 million, and owner net income of KRW 700 million, while the second quarter improved further with revenue of KRW 9.94 billion, operating profit of KRW 936 million, and owner net income of KRW 1.21 billion, marking two consecutive profitable quarters. On the cash-flow side, operating cash flow swung sharply negative to KRW -7.58 billion in 2023 before recovering to positive KRW 5.82 billion in 2024 and KRW 3.22 billion in 2025, and the debt ratio has gradually declined from 99.8% in 2022 to 71.2% in 2023, 65.8% in 2024, and 62.1% in 2025."
+  "ko": "공시 기준 연간 매출은 2022년 432억원에서 2023년 471억원(전년 대비 9.1% 증가), 2024년 519억원(전년 대비 10.1% 증가)으로 늘었다가 2025년에는 484억원(전년 대비 6.7% 감소)으로 줄었다. 2022~2025년 중 가장 큰 해는 2024년, 가장 작은 해는 2022년이다. 이익은 매출과 다른 궤적을 그렸다. 영업이익은 2022년 91.6억원에서 2023년 42.6억원(전년 대비 53.5% 감소), 2024년 13.1억원(전년 대비 69.4% 감소)으로 내려갔고, 2025년에는 29억원(전년 대비 121.7% 증가)으로 반등했다. 영업이익률은 2022년 21.2%, 2023년 9.1%, 2024년 2.5%로 낮아졌다가 2025년 6.0%로 회복했다. 2024년에는 매출이 가장 컸음에도 이익률이 가장 낮았으며, 비용 항목별 내역은 공시 실적에 없어 원인을 수치로 나눠 보기는 어렵다. 지배주주 순이익은 2022년 50.1억원, 2023년 45.5억원(전년 대비 9.2% 감소), 2024년 16.7억원(전년 대비 63.4% 감소), 2025년 24억원(전년 대비 43.8% 증가)이다. 당기순이익(비지배지분 포함)은 2024년 4.3억원까지 떨어졌다가 2025년 21.6억원으로 늘었다. 분기로 보면 2025년 3분기 매출 71억원, 영업손실 14.8억원, 지배주주 순손실 11.4억원에서 2025년 4분기에는 매출 219억원, 영업이익 59.8억원, 지배주주 순이익 45.6억원으로 전환됐다. 2026년 1분기에는 매출 77.5억원(전 분기 대비 64.7% 감소), 영업이익 2.4억원, 지배주주 순이익 7억원으로 줄었다. 2026년 2분기에는 매출 99.4억원, 영업이익 9.4억원, 지배주주 순이익 12.1억원으로 회복됐고, 2026년 3분기 매출 106억원(전 분기 대비 6.3% 증가, 전년 동기 대비 49.0% 증가)으로 2개 분기 연속 증가했다. 다만 3분기 영업이익 6.5억원은 전 분기 대비 30.6% 감소했고, 지배주주 순손실 1,931만원으로 적자가 이어졌으나 손실은 축소됐다. 최근 네 개 분기 지배주주 순이익 합계는 64.5억원이다. 자회사 샌즈랩 측은 2025년 보도에서 NDR 솔루션 MNX의 매출이 기대치를 밑돌아 영업이익이 적자로 전환됐다고 설명했다.",
+  "en": "On a disclosed basis, annual revenue rose from KRW 43.2 billion in 2022 to KRW 47.1 billion in 2023 (up 9.1% year on year) and KRW 51.9 billion in 2024 (up 10.1%), then fell to KRW 48.4 billion in 2025 (down 6.7%). Among 2022 to 2025, 2024 was the largest year and 2022 the smallest. Profit followed a different path. Operating profit fell from KRW 9.16 billion in 2022 to KRW 4.26 billion in 2023 (down 53.5%) and KRW 1.31 billion in 2024 (down 69.4%), then rebounded to KRW 2.9 billion in 2025 (up 121.7%). The operating margin declined from 21.2% in 2022 to 9.1% in 2023 and 2.5% in 2024, then recovered to 6.0% in 2025. Margin was lowest in 2024 even though revenue peaked that year, and the disclosed figures do not break down cost items, so the cause cannot be split out in numbers. Net profit attributable to controlling shareholders was KRW 5.01 billion in 2022, KRW 4.55 billion in 2023 (down 9.2%), KRW 1.67 billion in 2024 (down 63.4%) and KRW 2.4 billion in 2025 (up 43.8%). Net profit including non-controlling interests fell to KRW 434 million in 2024 before rising to KRW 2.16 billion in 2025. By quarter, the third quarter of 2025 showed revenue of KRW 7.1 billion, an operating loss of KRW 1.48 billion and a net loss attributable to controlling shareholders of KRW 1.14 billion. The fourth quarter of 2025 showed revenue of KRW 21.9 billion, operating profit of KRW 5.98 billion and net profit attributable to controlling shareholders of KRW 4.56 billion, a swing into profit. In the first quarter of 2026 revenue was KRW 7.75 billion (down 64.7% from the prior quarter), operating profit KRW 241 million and net profit attributable to controlling shareholders KRW 700 million. The second quarter of 2026 recovered to revenue of KRW 9.94 billion, operating profit of KRW 936 million and net profit attributable to controlling shareholders of KRW 1.21 billion. The third quarter of 2026 brought revenue of KRW 10.6 billion (up 6.3% from the prior quarter and up 49.0% year on year), a second straight quarterly increase. Operating profit of KRW 650 million was down 30.6% from the prior quarter, and the company recorded a net loss attributable to controlling shareholders of KRW 19.31 million, a continued loss with a smaller deficit than a year earlier. Net profit attributable to controlling shareholders over the last four quarters totaled KRW 6.45 billion. A Ksign subsidiary, Sands Lab, said in a 2025 report that revenue from its NDR product MNX fell short of expectations, pushing operating profit into a loss."
  },
  "industry": {
-  "ko": "국내 정보보안 산업은 클라우드 전환, 생성형 AI 확산, 원격근무 정착 등에 따라 인증, 접근통제, 데이터 암호화 관련 수요가 확대되는 국면에 있다. 2026년 1분기 실적과 관련해서도 DB보안 및 암호화 솔루션은 금융권과 공공부문 중심으로 안정적인 유지보수 및 추가 구축 수요가 발생하고 PKI 및 인증 부문은 비대면 서비스 확대로 실적이 개선된 것으로 평가된다. 통합인증(IAM) 시장에서는 넷앤드, 피앤피시큐어, 라온시큐어 등 다수의 중소형 전문업체들이 경쟁하고 있어 경쟁 강도가 높은 편이다. 회사 측은 2026년 보안 시장이 단순 방어 중심에서 '사전 예방과 구조적 보안 전환'으로 이동할 것으로 전망하며, 양자내성암호(PQC)와 AI 보안 및 AI 악용 공격 대응, 데이터·키 관리 고도화를 핵심 기술로 제시했다. 한 증권가 애널리스트는 글로벌 사이버 보안 시장 규모가 2022년 1,158억 달러에서 2029년 2,660억 달러로 연평균 13.4% 성장할 것으로 전망한다고 밝힌 바 있다. 가상자산·스테이블코인 관련 법·제도 정비도 진행 중이며, 국회에는 원화 스테이블코인 발행 허용과 디지털자산위원회 설치를 골자로 한 디지털자산기본법이 발의된 상태다.",
-  "en": "South Korea's information-security industry is in a phase of expanding demand for authentication, access control, and data encryption, driven by cloud migration, the spread of generative AI, and the entrenchment of remote work. Regarding first-quarter 2026 results, database security and encryption solutions saw stable maintenance and additional deployment demand centered on the financial and public sectors, while the PKI and authentication segment improved on the back of expanded non-face-to-face services. The integrated authentication (IAM) market remains highly competitive, with multiple small and mid-sized specialists such as NetAND, P&P Secure, and RaonSecure vying for share. The company expects the 2026 security market to shift from simple defense toward 'proactive prevention and structural security transformation,' identifying post-quantum cryptography (PQC), AI security and defense against AI-enabled attacks, and advanced data and key management as core technologies. One securities-industry analyst stated that the global cybersecurity market was projected to grow from $115.8 billion in 2022 to $266 billion by 2029, a compound annual growth rate of 13.4%. Legal and regulatory groundwork for digital assets and stablecoins is also underway, with a Digital Asset Basic Act pending in the National Assembly that would permit won-denominated stablecoin issuance and establish a presidential digital asset committee."
+  "ko": "보안 시장의 무게 중심은 단순 방어에서 사전 예방과 구조적 보안 전환으로 옮겨가고 있다는 것이 회사 대표의 2026년 시장 진단이다. 회사는 양자내성암호(PQC), AI 보안 및 AI 악용 공격 대응, 데이터·키 관리 고도화를 핵심 기술로 꼽았다. 고객도 개별 솔루션 도입보다 장기적인 보안 아키텍처 관점에서 투자하는 경향이 강해질 것으로 회사는 내다봤다. PQC 수요의 제도적 배경은 국가 암호체계 전환 일정이다. 회사 측은 2035년 국가 암호체계 전면 전환을 목표로 제시했다. 와우테일 보도는 2026년부터 2033년까지 PQC 전환 시장의 연평균 성장률을 37.8%로 전망하는 자료를 소개했다. 국내 DB 암호화와 PKI 시장은 공공 보안 예산과 개인정보 보호 규제에 연동되는 구조여서 수요가 공공·금융 발주 일정에 따라 나뉘는 특성이 있다. PQC 시장은 전환 초기 단계로 볼 수 있으며, 수요 규모는 국가 과제와 공공 시범 적용 실적에 따라 달라진다. 경쟁 측면에서 케이사인은 공공 시범 적용과 국가 과제 주관 경험으로 PQC 레퍼런스를 쌓는 단계다. 보안 업종 내 비교 대상으로는 안랩(Ahnlab) 등이 있다. 회사는 해외 시장 진출 가능성을 검토하고 있으나 시점은 확정하지 않았다고 밝혔다.",
+  "en": "The company's CEO described the 2026 security market as shifting from simple defense toward proactive prevention and structural security transformation. Ksign names post-quantum cryptography (PQC), AI security including defense against AI-driven attacks, and advanced data and key management as core technologies. The company expects customers to invest more from a long-term security architecture perspective rather than buying individual solutions. The institutional driver for PQC demand is the national cryptographic transition schedule, and the company has pointed to a goal of fully transitioning the national cryptographic system by 2035. A WOWTALE report cited a forecast of a 37.8% compound annual growth rate for the PQC transition market from 2026 to 2033. Domestic DB encryption and PKI demand is tied to public security budgets and personal data protection rules, so demand tends to follow public and financial procurement timing. The PQC market can be viewed as being in an early transition stage, and the size of demand will depend on national projects and results from public pilot deployments. On competition, Ksign is building PQC references through public pilot deployments and its role as lead institution in national projects. Ahnlab is among the peers in the security sector used for comparison. The company said it is reviewing the possibility of overseas expansion with global security firms and partners but has not fixed a timing."
  },
  "outlook": {
-  "ko": "회사는 2026년 한 해 동안 PQC와 AI 보안에 사업의 축을 집중하겠다는 방침을 밝히고 있다. 구자동 대표는 AI 환경 변화에 대응하는 AI 기반 개인정보 보호 및 인증 기술을 포함한 차세대 보안 솔루션을 올해 시장에 선보이겠다고 말했다. 해외 진출과 관련해서는 글로벌 보안기업 및 해외 파트너와의 협력을 통해 가능성을 검토하고 있으나, 아직 구체적인 진출 시점은 확정하지 않은 상태라고 밝혔다. 국내에서는 2026년 1월 B2B 보안 시장 확대를 위해 전국 기술·영업 파트너사 모집에 나서며 공공·금융·국방 분야 영업망 확충을 추진하고 있다. 삼성전자가 2026년 갤럭시 언팩 행사 이후 삼성월렛에 스테이블코인 계좌 개설, 국경 간 송금, 매장 결제 기능을 순차 도입하겠다는 계획을 구체화하면서, DB 암호화 제품을 삼성전자에 공급해온 이력이 있는 케이사인이 관련 기대감의 대상으로 다시 부각됐다. 다만 이러한 기대감은 케이사인이 삼성월렛 스테이블코인 사업에 직접 참여한다는 공식 발표에 근거한 것은 아니며, 시장의 테마성 해석에 가까운 측면이 있다. 자회사 샌즈랩을 통한 위협 인텔리전스·네트워크 탐지 대응(NDR) 사업도 AI 기반 이상 탐지 역량을 확대하며 그룹 차원의 보안 포트폴리오를 강화하는 방향으로 진행되고 있다.",
-  "en": "The company has stated it will concentrate its 2026 business focus on PQC and AI security. CEO Koo Ja-dong said the company would bring next-generation security solutions to market this year, including AI-based personal-data protection and authentication technology designed to respond to changes in the AI environment. On overseas expansion, the company said it is examining possibilities through cooperation with global security firms and overseas partners, but has not yet fixed a specific timeline for entry. Domestically, starting in January 2026 the company began recruiting technology and sales partners nationwide to expand its B2B security business and broaden its sales network across public, financial, and defense sectors. After Samsung Electronics detailed plans following its 2026 Galaxy Unpack event to sequentially roll out stablecoin account opening, cross-border remittance, and in-store payment features in Samsung Wallet, KSign—which has a history of supplying database encryption products to Samsung Electronics—was again highlighted as a potential beneficiary. However, this expectation is not based on any official announcement that KSign is directly participating in Samsung Wallet's stablecoin business, and it leans more toward a thematic market interpretation. Through affiliate SandsLab, the threat-intelligence and network detection and response (NDR) business is also expanding AI-based anomaly detection capabilities as part of strengthening the group's overall security portfolio."
+  "ko": "회사는 2026년 기존 PKI 및 암호 제품에 PQC 알고리즘을 단계적으로 적용한 업그레이드 버전을 선보일 계획이라고 밝혔다. AI 악용 공격 시나리오를 반영한 신규 보안 기능과 제품도 출시를 준비 중이라고 설명했으나 출시 시점은 공개되지 않았다. 디일렉 보도에 따르면 삼성전자 DB 암호화 고도화 사업은 올해 초 착수됐고 회사는 4분기부터 매출을 인식할 것으로 예상했다. 계약 규모가 공개되지 않아 매출 기여분은 분기 실적에서 드러나는 구조다. 국가 PQC 핵심기술개발사업은 2029년 12월까지 총 52.5억원(정부지원금 45억원) 규모로 진행되며, 암호 전환 과정을 자동화하는 플랫폼 개발이 목표다. 우주 분야 PQC 시범전환 사업에서는 컨텍과 함께 위성-지상국 구간의 PQC 실증을 진행 중이다. 해외 시장은 글로벌 보안기업과 해외 파트너와의 협력을 통해 진출 가능성을 검토하고 있으며, 시점은 정해지지 않았다. 2026년 9월에는 전기차 충전기 보안 테스트 도구 퍼저를 국제 전기차 충전 표준기구 OCA가 검토하기로 했다는 보도가 나왔다. 다음 확인 지점은 2026년 4분기부터 삼성전자 DB 암호화 매출이 실제로 잡히는지와 PQC 과제의 분기별 진행 상황이다.",
+  "en": "The company plans to roll out upgraded versions of its existing PKI and cryptography products that apply PQC algorithms in stages during 2026. It is also preparing new security functions and products that reflect AI-driven attack scenarios, but the launch timing has not been disclosed. According to a THE ELEC report, the Samsung Electronics DB encryption upgrade started earlier in 2026, and the company expects to recognize revenue from the fourth quarter. Because the contract size was not disclosed, the revenue contribution will become visible only in quarterly results. The national PQC core technology project runs through December 2029 with a total of KRW 5.25 billion, of which KRW 4.5 billion is government funding, and aims to develop a platform that automates cryptographic transitions. In the space-sector PQC pilot transition project, Ksign is carrying out PQC demonstrations across the satellite-to-ground segment together with Contec. For overseas markets, the company is reviewing entry possibilities through cooperation with global security companies and overseas partners, but no timing has been set. A September 2026 report said the Open Charge Alliance, an international EV charging standards body, would review Ksign's fuzzing tool for EV chargers. The next confirmation points are whether Samsung Electronics DB encryption revenue appears from the fourth quarter of 2026, and the quarterly progress of the PQC project."
  },
  "valuation_comment": {
-  "ko": "주가순자산비율은 순자산 대비 할인된 구간에서 거래되는 편이며, 이는 지배주주 귀속 이익 규모 대비 자기자본 규모가 상대적으로 크고 자회사 관련 비지배주주지분이 자본에서 상당한 비중을 차지하는 연결 재무구조 특성과도 관련이 있다. 이익 측면에서는 2022년 이후 영업이익률이 21.2%에서 2.5%까지 낮아졌다가 2025년 6.0%로 다시 개선되는 등, 과거 고마진 시절의 거래 배수와 최근 이익 회복 국면의 배수 사이에서 시장의 평가가 엇갈릴 수 있는 구간에 있다. 배당은 최근 회계연도 기준으로 지급 실적이 없어, 주가 매력도를 이익 성장이나 사업 모멘텀 외에 배당 수익률로 보완하기는 어려운 구조다. 한편 주가는 정보보안 업종 내에서도 스테이블코인·삼성페이 테마 등 이슈에 따라 단기적으로 크게 출렁이는 이력이 있어, 펀더멘털에 기반한 밸류에이션 논의와 테마성 수급에 따른 가격 변동을 구분해서 볼 필요가 있다.",
-  "en": "The price-to-book ratio tends to trade at a discount to net asset value, a pattern also linked to the consolidated financial structure in which equity attributable to owners is relatively large compared with owner net income, and non-controlling interests tied to subsidiaries make up a meaningful share of total equity. On profitability, the operating margin fell from 21.2% in 2022 to 2.5% in 2024 before recovering to 6.0% in 2025, leaving the market's assessment positioned somewhere between the trading multiples of the earlier high-margin period and those of the recent earnings-recovery phase. There has been no dividend payout in recent fiscal years, meaning share appeal cannot be supplemented by dividend yield beyond earnings growth or business momentum. Separately, the share price has a history of large short-term swings tied to sector themes such as stablecoins and Samsung Pay, so fundamentals-based valuation discussion should be distinguished from price moves driven by thematic trading flows."
+  "ko": "현재 주가는 주당순자산을 크게 밑도는 구간에 있어 주가순자산비율 기준으로는 순자산 대비 낮은 가격에 거래되는 상태다. 최근 네 개 분기 지배주주 순이익 합계는 64.5억원이지만 2026년 3분기에는 순손실을 기록해, 이익 대비 주가 배수는 분기 단위로 해석하기 어렵다. 2024년 영업이익률이 2.5%까지 떨어졌다가 2025년 6.0%로 회복한 흐름을 감안하면 이익 배수는 회복이 이어지는지 여부에 따라 해석이 달라진다. 배당 기여는 사실상 없는 수준이어서 주주 수익은 주가 변동과 자사주 정책에 더 의존하는 구조다. 자기주식은 2026년 10월 28일 임시주주총회에서 보유·처분 계획이 승인됐고, 2026년 11월 9일 소각이 예정됐다. 소각 후 발행주식총수는 678만 9,848주로 줄어든다. 자본총계 1,215억원 가운데 지배주주 지분은 899억원으로, 장부상 자본 규모와 주가 수준을 비교할 때 지배주주 지분을 기준으로 봐야 한다.",
+  "en": "The share price currently sits well below book value per share, so on a price-to-book basis it trades at a discount to net assets. Net profit attributable to controlling shareholders over the last four quarters totaled KRW 6.45 billion, but the third quarter of 2026 posted a net loss, so price-to-earnings multiples are hard to read on a single quarter. The operating margin fell to 2.5% in 2024 and recovered to 6.0% in 2025, so how the earnings multiple reads depends on whether that recovery continues. Dividend contribution is effectively negligible, so shareholder returns depend more on share price movement and treasury share policy. Treasury share holding and disposal plans were approved at the extraordinary shareholders meeting on October 28, 2026, and cancellation was scheduled for November 9, 2026. After cancellation, total issued shares will fall to 6,789,848. Of total equity of KRW 121.5 billion, KRW 89.9 billion is attributable to controlling shareholders, so that is the relevant base when comparing book value with the share price."
  },
  "bull": [
   {
    "title": {
-    "ko": "이익 회복 흐름",
-    "en": "Earnings Recovery Trend"
+    "ko": "국가 PQC 과제 주관 경험",
+    "en": "Lead role in national PQC projects"
    },
    "body": {
-    "ko": "2025년 영업이익률이 2.5%에서 6.0%로 개선된 데 이어 2026년 1분기와 2분기 모두 흑자를 이어갔다. 2025년 3분기와 같은 계절적 적자 구간이 반복되더라도 연간 전체로는 이익 기반이 넓어지고 있음을 보여준다. 부채비율도 2022년 99.8%에서 2025년 62.1%로 점진적으로 낮아지고 있어 재무 부담이 완화되는 흐름이다.",
-    "en": "After the operating margin improved from 2.5% to 6.0% in 2025, both the first and second quarters of 2026 remained profitable. Even if a seasonal loss quarter similar to the third quarter of 2025 recurs, the annual earnings base appears to be broadening. The debt ratio has also gradually declined from 99.8% in 2022 to 62.1% in 2025, easing financial pressure."
+    "ko": "케이사인은 2026년 7월 범국가 양자내성암호 전환 핵심기술개발사업 주관기관으로 선정됐고, 같은 시기 우주 분야 PQC 시범전환 사업에서도 주관기관으로 뽑혔다. 과제 규모는 52.5억원이며 정부지원금은 45억원이다. 2025년 에너지 분야에서 PQC 전환을 마친 실증 경험이 공공 레퍼런스를 넓히는 기반이 된다는 점이 강세 논리다.",
+    "en": "Ksign was named lead institution of a national PQC core technology project in July 2026 and was also selected as lead institution for a space-sector PQC pilot transition project in the same period. The project is worth KRW 5.25 billion, of which KRW 4.5 billion is government funding. The bull case rests on its 2025 PQC transition in the energy sector, which gives it a base for building public-sector references."
    }
   },
   {
    "title": {
-    "ko": "삼성 생태계 연계 가능성",
-    "en": "Potential Samsung Ecosystem Linkage"
+    "ko": "실적 턴어라운드 흐름",
+    "en": "Earnings turnaround"
    },
    "body": {
-    "ko": "케이사인은 삼성전자에 2010년부터 DB 암호화 표준 제품을 공급해온 이력을 갖고 있다. 삼성전자가 삼성월렛에 스테이블코인 계좌 개설, 해외송금, 매장 결제 기능을 순차 도입하겠다는 계획을 구체화하면서 관련 수혜 기대감의 대상으로 다시 부각됐다. 다만 이는 아직 공식 파트너십 발표에 근거한 것은 아니라는 점을 함께 고려해야 한다.",
-    "en": "KSign has a track record of supplying standardized database encryption products to Samsung Electronics since 2010. As Samsung detailed plans to sequentially roll out stablecoin account opening, cross-border remittance, and in-store payment features in Samsung Wallet, KSign was again highlighted as a potential beneficiary. However, this has not yet been confirmed by any official partnership announcement."
+    "ko": "2025년 영업이익은 29억원으로 전년 대비 121.7% 증가하며 반등했고, 2026년 3분기 매출은 106억원으로 전년 동기 대비 49.0% 늘었다. 같은 분기 영업이익 6.5억원은 전년 동기 영업손실에서 흑자로 전환된 수치다. 매출 증가가 이익으로 이어지는 구간이 늘어나면 이익 체력이 개선되는 방향으로 읽힌다.",
+    "en": "Operating profit rebounded 121.7% to KRW 2.9 billion in 2025, and third-quarter 2026 revenue reached KRW 10.6 billion, up 49.0% from a year earlier. Operating profit of KRW 650 million in the same quarter compares with an operating loss a year earlier. If revenue growth converts into profit more consistently, earnings strength would improve."
    }
   },
   {
    "title": {
-    "ko": "인증 기반 진입장벽",
-    "en": "Certification-Based Entry Barriers"
+    "ko": "대형 고객사 적용 확대",
+    "en": "Expansion with large customers"
    },
    "body": {
-    "ko": "국내 DB 암호화 시장 점유율 1위와 8,000여 곳 이상의 공공·금융·교육기관 레퍼런스를 보유하고 있다. KCMVP·CC·GS 1등급 등 국가 필수 인증을 선제적으로 취득해 조달·국방 시장에서의 신뢰도를 확보하고 있어 신규 진입자 대비 상대적 우위를 갖는다.",
-    "en": "The company holds the No.1 share in the domestic database encryption market with references at more than 8,000 public, financial, and education institutions. Having preemptively secured mandatory national certifications such as KCMVP, CC, and GS Level 1, it maintains credibility in the procurement and defense markets, giving it a relative edge over new entrants."
+    "ko": "디일렉 보도에 따르면 삼성전자의 DB 암호화 고도화 사업은 기존 계약과 별도로 체결됐고, 회사는 4분기부터 매출을 인식할 것으로 예상했다. 계약 규모는 공개되지 않았지만 기존 고객사에서 암호화 적용 시스템을 넓히는 흐름은 추가 수주의 근거가 된다. PQC 레퍼런스 확보와 맞물리면 기존 고객 기반을 활용한 신규 수주 여지가 넓어진다.",
+    "en": "According to a THE ELEC report, the Samsung Electronics DB encryption upgrade was contracted separately from existing agreements, and the company expects to recognize revenue from the fourth quarter. The contract size was not disclosed, but widening encryption coverage within an existing customer is a basis for additional orders. Combined with PQC references, the scope for new orders built on the existing customer base could widen."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "매출 정체와 낮은 가시성",
-    "en": "Stagnant Revenue and Low Visibility"
+    "ko": "이익률의 취약성",
+    "en": "Thin profit margins"
    },
    "body": {
-    "ko": "2025년 매출은 483억 9,400만원으로 전년 대비 6.7% 감소했다. 분기별로는 2025년 3분기 매출이 71억원까지 줄며 영업손실 14억 8,000만원을 기록하는 등 연중 실적 가시성이 낮은 편이다. 4분기 매출 집중도가 높아 연간 실적이 특정 분기 결과에 크게 좌우되는 구조다.",
-    "en": "Revenue in 2025 fell 6.7% year over year to KRW 48.39 billion. On a quarterly basis, third-quarter 2025 revenue dropped to KRW 7.10 billion with an operating loss of KRW 1.48 billion, reflecting relatively low earnings visibility through the year. The high concentration of revenue in the fourth quarter means annual results are heavily dependent on a single quarter's outcome."
+    "ko": "영업이익률은 2022년 21.2%에서 2024년 2.5%까지 떨어졌고 2025년에도 6.0%에 그쳤다. 2026년 3분기 영업이익은 6.5억원으로 매출 106억원 대비 이익 폭이 여전히 좁다. 같은 분기 지배주주 순손실 1,931만원이 이어지고 있어 이익의 안정성은 확인 단계에 있다.",
+    "en": "The operating margin fell from 21.2% in 2022 to 2.5% in 2024 and reached only 6.0% in 2025. Third-quarter 2026 operating profit of KRW 650 million remains narrow against KRW 10.6 billion in revenue. The net loss attributable to controlling shareholders of KRW 19.31 million in the same quarter shows that earnings stability is not yet confirmed."
    }
   },
   {
    "title": {
-    "ko": "장기적 마진 하락 추세",
-    "en": "Long-Term Margin Decline"
+    "ko": "매출 변동성과 분기 편중",
+    "en": "Revenue volatility and quarterly concentration"
    },
    "body": {
-    "ko": "영업이익률은 2022년 21.2%에서 2023년 9.1%, 2024년 2.5%로 지속적으로 낮아졌다. 2025년 6.0%로 개선됐지만 여전히 2022~2023년 수준에는 미치지 못한다. 마진 하락 배경에 대한 구조적 개선 여부는 앞으로의 분기 실적으로 확인이 필요하다.",
-    "en": "The operating margin declined steadily from 21.2% in 2022 to 9.1% in 2023 and 2.5% in 2024. Although it improved to 6.0% in 2025, it remains well below the 2022–2023 levels. Whether the underlying causes of the margin decline have been structurally addressed still needs confirmation from upcoming quarterly results."
+    "ko": "2025년 매출은 484억원으로 전년 대비 6.7% 줄었다. 2025년 4분기 매출 219억원은 3분기 71억원과 큰 차이를 보였고, 2026년 1분기에는 77.5억원으로 전 분기 대비 64.7% 감소했다. 대형 프로젝트 인식 시점에 따라 실적이 크게 좌우되는 구조다.",
+    "en": "Revenue fell 6.7% to KRW 48.4 billion in 2025. Fourth-quarter 2025 revenue of KRW 21.9 billion was far above the KRW 7.1 billion of the third quarter, and first-quarter 2026 revenue fell 64.7% from the prior quarter to KRW 7.75 billion. Results depend heavily on when large projects are recognized."
    }
   },
   {
    "title": {
-    "ko": "테마 의존형 주가 변동성",
-    "en": "Theme-Driven Share Price Volatility"
+    "ko": "자회사 손실과 신사업 수익화 시점",
+    "en": "Subsidiary losses and timing of new businesses"
    },
    "body": {
-    "ko": "케이사인 주가는 스테이블코인, AI 보안 이슈 등 테마 뉴스가 나올 때마다 단기간 급등락하는 이력이 반복됐다. 한 예로 2026년 4월 한 매체는 '전세계 미토스발 AI보안 공포 확산에 따른 보안관련주 수혜기대감 속 주가 상한가'를 기록했다고 전했다. 이러한 변동은 실적 발표와 무관하게 나타나는 경우가 많아 펀더멘털과 가격 움직임이 반드시 일치하지는 않는다.",
-    "en": "KSign's share price has repeatedly swung sharply within short periods whenever theme-related news—such as stablecoins or AI security scares—emerged. For instance, one outlet reported in April 2026 that the stock hit its daily upper limit \"amid expectations security-related stocks would benefit\" from AI-security fears tied to a next-generation AI model. Such swings often occur independent of earnings announcements, meaning fundamentals and price movement do not always align."
+    "ko": "2025년 보도에 따르면 자회사 샌즈랩의 NDR 솔루션 MNX 매출이 기대치를 밑돌아 영업이익이 적자로 전환됐다는 설명이 나왔다. PQC 신사업의 국가 과제 규모는 52.5억원 수준이며, 해외 진출 시점도 정해지지 않았다. 신사업이 수익으로 전환되기까지 시간이 걸린다는 점이 약세 논리다.",
+    "en": "A 2025 report said that revenue from MNX, an NDR solution at subsidiary Sands Lab, fell short of expectations, pushing operating profit into a loss. The national PQC project is worth KRW 5.25 billion, and no timing has been set for overseas expansion. The bear case is that these new businesses will take time to become meaningful earnings contributors."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "사업 집중·계절성 리스크",
-    "en": "Business Concentration and Seasonality Risk"
+    "ko": "고객·계약 집중",
+    "en": "Customer and contract concentration"
    },
    "body": {
-    "ko": "공공·금융 부문 발주와 예산 집행이 연말에 몰리는 소프트웨어 업계 특유의 계절성으로 인해, 3분기 적자와 4분기 대규모 흑자가 반복되는 패턴이 이어지고 있다. 이러한 구조는 연간 목표 달성 여부가 4분기 실적에 크게 좌우된다는 점에서 리스크로 작용할 수 있다.",
-    "en": "Due to the software industry's characteristic seasonality, in which public and financial sector orders and budget execution are concentrated at year-end, a pattern of third-quarter losses followed by large fourth-quarter profits has recurred. This structure poses a risk because whether annual targets are met depends heavily on fourth-quarter results."
+    "ko": "디일렉 보도에 따르면 시큐어DB는 2025년 매출의 52.21%를 차지해 제품 집중도가 높다. 삼성전자 추가 수주는 계약 규모가 공개되지 않아 매출 기여 시점과 규모를 외부에서 가늠하기 어렵다. 공공 발주 일정이 바뀌면 분기 실적이 흔들릴 수 있다.",
+    "en": "According to a THE ELEC report, SecureDB accounted for 52.21% of 2025 revenue, so product concentration is high. The Samsung Electronics order's contract size has not been disclosed, which makes its revenue timing and scale hard to gauge from outside. A change in public procurement schedules could shake quarterly results."
    }
   },
   {
    "cat": {
-    "ko": "경쟁 심화 리스크",
-    "en": "Intensifying Competition Risk"
+    "ko": "기술 전환 경쟁",
+    "en": "Competition in technology transition"
    },
    "body": {
-    "ko": "통합인증(IAM) 분야에서 넷앤드, 피앤피시큐어, 라온시큐어 등 다수의 국내 전문업체들과 경쟁하고 있다. 경쟁 심화에 따른 가격 압박이나 고객사 이탈 가능성은 매출 및 마진에 부담 요인이 될 수 있다.",
-    "en": "The company competes with multiple domestic specialists such as NetAND, P&P Secure, and RaonSecure in the integrated authentication (IAM) segment. Intensifying competition could pressure pricing or lead to client attrition, weighing on revenue and margins."
+    "ko": "PQC 전환 시장은 국가 일정과 표준 확정에 좌우된다. 2035년 전면 전환 목표가 조정되면 과제 수요도 달라질 수 있다. 자동화 플랫폼의 상용화 성과는 2029년 12월 과제 종료 이후에야 본격적으로 확인된다.",
+    "en": "The PQC transition market depends on national schedules and the finalization of standards. If the 2035 full-transition target changes, project demand could shift too. The commercial results of the automated platform will only be fully visible after the project ends in December 2029."
    }
   },
   {
    "cat": {
-    "ko": "지분구조·지배구조 리스크",
-    "en": "Ownership Structure and Governance Risk"
+    "ko": "자회사·재무 구조",
+    "en": "Subsidiary and balance sheet"
    },
    "body": {
-    "ko": "연결 자본에서 비지배주주지분이 차지하는 비중이 커지고 있으며, 계열사 샌즈랩은 2026년 3월 공시를 통해 케이사인 지분율을 35.27%로 늘린 것으로 확인됐다. 이러한 계열사 간 지분 변동은 지배구조와 지배주주 귀속 이익 배분 구조에 영향을 줄 수 있어 지속적인 공시 확인이 필요하다.",
-    "en": "The share of non-controlling interests within consolidated equity has been growing, and affiliate SandsLab's disclosure in March 2026 confirmed its stake in KSign had risen to 35.27%. Such inter-affiliate ownership changes can affect governance and the distribution of income attributable to owners, warranting ongoing monitoring of disclosures."
+    "ko": "자회사 샌즈랩의 손실은 2025년 보도에서 영업이익 적자 전환 요인으로 거론됐고, 자회사 실적 변동은 지배주주 순이익에 그대로 반영된다. 2025년 말 부채총계는 754억원이며 부채비율은 62.1%다. 자본 규모는 안정적이지만 이익이 줄면 재무 여력의 체감도 달라질 수 있다.",
+    "en": "Losses at subsidiary Sands Lab were cited in a 2025 report as a factor behind an operating loss, and subsidiary swings flow through to net profit attributable to controlling shareholders. Total liabilities at the end of 2025 were KRW 75.4 billion, and the debt-to-equity ratio was 62.1%. Capital is substantial, but financial headroom will feel different if earnings weaken."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중순",
-    "en": "Mid-November 2026"
+    "ko": "2027년 2월 중 (예상)",
+    "en": "Mid-February 2027 (expected)"
    },
    "what": {
-    "ko": "2026년 3분기(7~9월) 실적 공시 확인 — 2025년 3분기와 같은 계절적 적자 패턴이 반복되는지, 아니면 상반기 흑자 기조가 이어지는지가 관전 포인트다.",
-    "en": "Check the disclosure of third-quarter 2026 (July–September) results — the key question is whether the seasonal loss pattern seen in the third quarter of 2025 repeats, or whether the profitable trend from the first half of 2026 continues."
+    "ko": "2026년 4분기 및 연간 잠정 실적 발표. 삼성전자 DB 암호화 고도화 매출이 4분기에 잡히는지, 4분기에 매출이 몰리는 패턴이 이어지는지 확인할 지점이다.",
+    "en": "Preliminary fourth-quarter and full-year 2026 results. The checkpoints are whether Samsung Electronics DB encryption revenue appears in the fourth quarter and whether the fourth-quarter revenue concentration pattern repeats."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기 중",
-    "en": "Fourth quarter of 2026"
+    "ko": "2027년 3월 말 (사업보고서 제출 기한)",
+    "en": "End of March 2027 (annual report filing deadline)"
    },
    "what": {
-    "ko": "연말 공공·금융 발주 시즌에 따른 매출 집중도 확인 — 2025년 4분기(매출 219억원, 영업이익 59억 8,000만원) 수준의 재현 여부가 연간 실적의 핵심 변수다.",
-    "en": "Watch for revenue concentration tied to the year-end public and financial sector ordering season — whether results approach the fourth quarter of 2025 (KRW 21.92 billion in revenue, KRW 5.98 billion in operating profit) will be the key variable for the annual result."
+    "ko": "2026년 사업보고서 공시. 영업이익률이 2025년 6.0%에서 이어지는지, 영업활동 현금흐름이 2025년 32.2억원 수준을 유지하는지, 부채비율 추이가 계속되는지 확인할 지점이다.",
+    "en": "The 2026 annual report. Checkpoints are whether the operating margin holds above the 6.0% of 2025, whether operating cash flow stays near the KRW 3.22 billion of 2025, and whether the debt-to-equity ratio keeps declining."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기~연말",
-    "en": "Second half through year-end 2026"
+    "ko": "2026년 11월 이후 (출시 시점 미공개)",
+    "en": "After November 2026 (launch timing not disclosed)"
    },
    "what": {
-    "ko": "삼성월렛 스테이블코인 기능의 국가별 도입 일정 구체화 및 케이사인의 실제 참여 여부에 대한 공식 확인이 필요하다.",
-    "en": "Watch for further specification of Samsung Wallet's country-by-country stablecoin rollout schedule and any official confirmation of KSign's actual participation."
+    "ko": "PQC 적용 업그레이드 제품과 AI 악용 공격 대응 신제품의 출시 여부. 공공기관 시범 적용이 본 계약으로 이어지는지가 확인 지점이다.",
+    "en": "Whether the PQC-enabled upgrade products and the new AI attack response products launch. The checkpoint is whether public-sector pilot deployments convert into full contracts."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 국회 회기 중",
-    "en": "During the 2026 second-half National Assembly session"
+    "ko": "2029년 12월",
+    "en": "December 2029"
    },
    "what": {
-    "ko": "원화 스테이블코인 발행 허용 등을 담은 디지털자산기본법의 심의·통과 여부를 확인할 필요가 있다.",
-    "en": "Monitor whether the Digital Asset Basic Act, which would permit won-denominated stablecoin issuance, advances through National Assembly deliberation."
-   }
-  },
-  {
-   "when": {
-    "ko": "수시(공시 발생 시)",
-    "en": "On an ongoing basis, as disclosures occur"
-   },
-   "what": {
-    "ko": "계열사 샌즈랩 등의 지분 변동 공시를 지속적으로 확인해 지배구조 변화 여부를 점검할 필요가 있다.",
-    "en": "Continue monitoring ownership-change disclosures from affiliate SandsLab and others to track any shifts in governance structure."
+    "ko": "범국가 PQC 핵심기술개발사업 과제 종료 시점. 52.5억원 규모 자동 전환 플랫폼의 결과물과 정부지원금 집행 상황이 확인 지점이다.",
+    "en": "End of the national PQC core technology project. Checkpoints are the results of the KRW 5.25 billion automated transition platform and the execution of government funding of KRW 4.5 billion."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "케이사인은 PKI 인증과 DB 암호화를 축으로 국내 공공·금융 보안 시장에서 오랜 레퍼런스를 축적한 전문기업으로, 2025년 영업이익률이 6.0%로 개선되고 2026년 상반기 두 분기 연속 흑자를 기록하며 이익 회복 흐름을 보이고 있다. 다만 2022년 21.2%에 달했던 영업이익률이 2024년 2.5%까지 낮아진 뒤 완전히 회복되지 않은 상태이며, 매출은 4분기에 집중되는 계절성이 뚜렷해 3분기 적자가 반복되는 패턴을 보여왔다. 삼성전자에 대한 DB 암호화 공급 이력을 바탕으로 삼성월렛의 스테이블코인 기능 도입 계획이 부각될 때마다 테마주로 거론되지만, 이는 아직 공식적인 사업 참여 발표에 근거한 것은 아니다. 재무구조 면에서는 부채비율이 점진적으로 낮아지고 영업활동현금흐름도 다시 양(+)으로 돌아섰으나, 비지배주주지분의 비중이 커지는 등 연결 자본구조의 복잡성은 지속적으로 살펴볼 부분이다. 앞으로의 3분기 실적, 연말 공공·금융 발주 규모, 삼성월렛 스테이블코인 진행 상황, 관련 법안의 국회 논의 등이 향후 실적과 사업 전개를 판단하는 핵심 변수가 될 것으로 보인다.",
-   "en": "KSign is a specialist that has built a long track record in Korea's public and financial security markets around PKI authentication and database encryption, and it is showing signs of earnings recovery with the operating margin improving to 6.0% in 2025 and two consecutive profitable quarters in the first half of 2026. That said, the operating margin, which reached 21.2% in 2022, fell to 2.5% in 2024 and has not fully recovered, while revenue shows a pronounced fourth-quarter seasonality pattern with recurring third-quarter losses. Based on its history of supplying database encryption to Samsung Electronics, the company is repeatedly cited as a theme stock whenever Samsung Wallet's stablecoin plans draw attention, though this is not yet grounded in any official announcement of business participation. On the financial-structure side, the debt ratio has gradually declined and operating cash flow has turned positive again, but the growing share of non-controlling interests adds complexity to the consolidated capital structure that warrants continued attention. Third-quarter results, the scale of year-end public and financial sector orders, progress on Samsung Wallet's stablecoin rollout, and related legislative discussions in the National Assembly are likely to be the key variables shaping future performance and business development."
+   "ko": "케이사인은 DB 암호화와 PKI 인증을 중심으로 한 정보보안 기업으로, 공시 기준 2025년 매출은 484억원으로 줄었지만 영업이익은 29억원으로 반등했다. 2026년 3분기에는 매출 106억원(전년 동기 대비 49.0% 증가)과 영업이익 6.5억원의 흑자를 기록했으나, 지배주주 순손실 1,931만원이 남아 있어 이익의 안정성은 아직 확인 단계다. 강세 근거는 국가 PQC 핵심기술개발사업 주관기관 선정, 삼성전자 DB 암호화 고도화 추가 수주, PQC 시장 성장 전망에 있다. 약세 근거는 2024년 영업이익률 2.5%까지 떨어진 이익 체력의 취약성, 분기 매출의 편중, 자회사 손실 이력, 신사업 수익화 시점의 불확실성이다. 재무 측면에서는 부채비율이 2022년 99.8%에서 2025년 62.1%로 낮아졌고, 2025년 말 자본총계는 1,215억원이다. 주가는 주당순자산을 밑도는 구간이지만 이익 배수는 분기별 실적에 따라 크게 움직여 단일 지표로 판단하기 어렵다. 다음 확인 지점은 2026년 4분기와 연간 잠정 실적, 2026년 사업보고서의 영업이익률과 영업활동 현금흐름, 그리고 PQC 과제의 분기별 진행이다.",
+   "en": "Ksign is an information security company centered on DB encryption and PKI authentication. On a disclosed basis, 2025 revenue fell to KRW 48.4 billion, but operating profit rebounded to KRW 2.9 billion. Third-quarter 2026 revenue reached KRW 10.6 billion, up 49.0% year on year, and operating profit of KRW 650 million was in the black, but a net loss attributable to controlling shareholders of KRW 19.31 million remains, so earnings stability is still being confirmed. The bull case rests on the lead role in a national PQC core technology project, an additional Samsung Electronics DB encryption order and the growth outlook for the PQC market. The bear case rests on thin earnings strength, with the operating margin down to 2.5% in 2024, concentrated quarterly revenue, past subsidiary losses and uncertain timing for monetizing new businesses. On the balance sheet, the debt-to-equity ratio fell from 99.8% in 2022 to 62.1% in 2025, and total equity at the end of 2025 was KRW 121.5 billion. The share price sits below book value per share, but earnings multiples swing with quarterly results, so no single metric settles the picture. The next checkpoints are preliminary fourth-quarter and full-year 2026 results, the operating margin and operating cash flow in the 2026 annual report, and the quarterly progress of the PQC project."
   }
  },
  "sources": [
-  "https://www.investing.com/equities/ksign-co-ltd",
-  "https://alphasquare.co.kr/home/stock-summary?code=192250",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_main_chosunbiz.asp?pGB=1&gicode=A192250&NewMenuID=11&cID=CB&MenuYn=Y",
-  "https://m.irgo.co.kr/IR-COMP/192250/%EC%BC%80%EC%9D%B4%EC%82%AC%EC%9D%B8-IR-ROOM",
-  "https://m.thinkpool.com/item/192250",
-  "http://www.thinkpool.com/itemanal/i/index.jsp?code=192250",
-  "https://m.thinkpool.com/compDiscuss/cont/1010304",
-  "https://m.thinkpool.com/compDiscuss/cont/1014007",
-  "http://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=192250",
-  "https://zdnet.co.kr/view/?no=20260123103704",
-  "https://tlo.korea.ac.kr/partnership/1318",
-  "https://www.ksign.com/ksign/main/main.php",
-  "https://m.jobkorea.co.kr/company/42616011",
+  "https://www.jobkorea.co.kr/Recruit/Co_Read/C/ksign13936",
   "https://thevc.kr/ksign",
-  "https://www.ksign.com/ksign/company/about.php",
-  "https://m.boannews.com/html/detail.html?tab_type=1&idx=141408",
-  "https://m.boannews.com/html/detail.html?idx=51634",
-  "https://www.ksign.com/"
+  "https://www.catch.co.kr/Comp/CompSummary/L38667",
+  "https://zdnet.co.kr/view/?no=20260123103704",
+  "https://www.saramin.co.kr/zf_user/company-info/view/csn/TXNhYTNsT3lWdkZma0FsdTBiK0xqQT09/company_nm/(%EC%A3%BC)%EC%BC%80%EC%9D%B4%EC%82%AC%EC%9D%B8",
+  "https://www.thelec.kr/news/articleView.html?idxno=64318",
+  "https://investing-for-everyone.com/wiki/%EC%BC%80%EC%9D%B4%EC%82%AC%EC%9D%B8",
+  "http://www.srtimes.kr/news/articleView.html?idxno=181096",
+  "https://wowtale.net/2026/07/29/262150/",
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02765046609536856",
+  "https://www.vegannews.co.kr/news/article.html?no=399850",
+  "https://www.vegannews.co.kr/news/article.html?no=401063",
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03683446632233144",
+  "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=710622",
+  "https://marketin.edaily.co.kr/News/ReadE?newsId=03703126645320672",
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=01636726606284736",
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02046726612553144",
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=05320166639058496"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "192250",
  "name": "케이사인",
  "name_en": "KSIGN CO., Ltd.",
@@ -233,11 +223,11 @@
   "IT·소프트웨어"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 09:10",
- "dataDate": "20260904",
+ "reportDate": "2026-11-14",
+ "reportTs": "2026-11-14 15:03",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-11-14",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -307,12 +297,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 12630232403,
-    "op": -662770869,
-    "np_owner": -727417570
-   },
-   {
     "q": "2025Q3",
     "rev": 7095268159,
     "op": -1482415063,
@@ -335,28 +319,36 @@
     "rev": 9940269913,
     "op": 936297166,
     "np_owner": 1210390289
+   },
+   {
+    "q": "2026Q3",
+    "rev": 10569154813,
+    "op": 649832396,
+    "np_owner": -19311786
    }
   ],
   "valuation": {
-   "price": 7240,
-   "mcap": 0.0512,
+   "price": 7580,
+   "mcap": 0.0536,
    "shares": 7067125,
    "total_shares": 7067125,
-   "wavg_shares": 6221144,
-   "per": 8.66,
-   "eps": 836,
-   "pbr": 0.5139,
-   "bps": 14089,
-   "roe_ttm": 6.1,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": 5329811823,
+   "wavg_shares": 6178364,
+   "per": 7.498,
+   "eps": 1011,
+   "pbr": 0.5344,
+   "bps": 14184,
+   "roe_ttm": 7.4,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": 6446411253,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 0.56,
+   "eps_src": "공시",
+   "pbr_krx": 0.58,
    "bps_krx": 13139.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
    "div": 0.0
   }
- }
+ },
+ "textRules": 2
 }

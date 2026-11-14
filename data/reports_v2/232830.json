@@ -1,220 +1,212 @@
 {
  "title": {
-  "ko": "총판 확대·PQC 신사업, 수익성 회복이 과제",
-  "en": "Distribution Growth and PQC Push, Profitability Remains the Test"
+  "ko": "3분기 흑자 전환, 연간 손익 회복은 과제",
+  "en": "Q3 Turns Profitable, Full-Year Recovery Still Ahead"
  },
  "lead": {
-  "ko": "아이티센피엔에스는 글로벌 보안 솔루션 총판 사업의 매출 규모가 급격히 커진 반면 수익성은 아직 뒤따라오지 못하고 있으며, 양자내성암호(PQC)·반도체 보안칩 등 신사업이 다음 성장축으로 제시되고 있다.",
-  "en": "ITCen PNS has sharply expanded revenue through its global security solution distribution business, but profitability has yet to catch up, while post-quantum cryptography (PQC) and semiconductor security chips are positioned as the next growth axis."
+  "ko": "2026년 3분기 연결 영업이익이 흑자로 돌아섰지만, 최근 네 개 분기 지배주주 순손실 합계가 5.7억원이라 손익 회복은 아직 진행 중이다.",
+  "en": "Consolidated operating profit turned positive in Q3 2026, but the last four quarters still carry a KRW 567 million net loss attributable to controlling shareholders, so the earnings recovery is still in progress."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출은 2,695억원으로 전년(1,044억원) 대비 크게 늘었으나 영업손실 3억원, 순손실 46억원을 기록했다.",
-   "en": "2025 consolidated revenue reached KRW 269.6 billion, up sharply from KRW 104.4 billion a year earlier, but the company posted an operating loss of KRW 0.3 billion and a net loss of KRW 4.6 billion."
+   "ko": "2026년 3분기 매출 1,209억원으로 전년 동기 대비 59.9% 증가했고, 영업이익 16.6억원으로 흑자 전환했다. 자회사의 GPU 서버 매출이 성장을 이끌었다.",
+   "en": "Q3 2026 revenue of KRW 120.9 billion rose 59.9% year on year, and operating profit of KRW 1.66 billion turned positive, with GPU server sales at a subsidiary driving growth."
   },
   {
-   "ko": "2026년 2분기 연결 매출은 647억원으로 전년 동기 대비 감소했고 영업손실도 발생했으나, 지배주주 순이익은 18억원으로 흑자를 기록했다.",
-   "en": "Q2 2026 consolidated revenue of KRW 64.7 billion declined year-on-year with an operating loss, yet net income attributable to owners was a positive KRW 1.8 billion."
+   "ko": "2023년부터 2025년까지 3년 연속 영업 적자지만, 영업손실 폭은 2024년 15.7억원에서 2025년 3억원으로 줄었다.",
+   "en": "The company posted operating losses for three straight years from 2023 to 2025, but the 2025 loss narrowed to KRW 303 million from KRW 1.57 billion in 2024."
   },
   {
-   "ko": "매출의 대부분은 팔로알토네트웍스·사이버아크 등 글로벌 보안 솔루션 총판 사업에서 발생하며, 보안솔루션 자체 사업 비중은 상대적으로 작다.",
-   "en": "The majority of revenue comes from the distribution business for global security solutions such as Palo Alto Networks and CyberArk, while the company's own security solution segment remains comparatively smaller."
+   "ko": "2025년 매출은 2,696억원으로 2022~2025년 중 가장 컸으며, 2024년부터 2년 연속 늘었다.",
+   "en": "Revenue of KRW 269.6 billion in 2025 was the largest of 2022 to 2025 and has grown for two consecutive years since 2024."
   },
   {
-   "ko": "반도체 IP·설계기업 코아솔에 80억원을 투자해 지분 20.97%를 확보했으며, 완전자본잠식 상태인 피투자기업에 대한 투자라는 점에서 논란이 제기됐다.",
-   "en": "The company invested KRW 8 billion for a 20.97% stake in semiconductor IP design firm CoreSol, a move that drew scrutiny given CoreSol's fully impaired capital position."
+   "ko": "2025년 말 부채비율은 681.2%로, 부채총계 1,771억원이 자본총계 260억원을 크게 웃돈다. 재무 부담이 큰 편이다.",
+   "en": "The debt-to-equity ratio was 681.2% at end-2025, with total liabilities of KRW 177.1 billion against total equity of KRW 26 billion, a heavy financial burden."
   },
   {
-   "ko": "부채비율이 2024년 1,214.2%에서 2025년 681.2%로 낮아졌지만 여전히 높은 수준이며, 신사업 투자에 따른 재무 부담이 관찰 포인트다.",
-   "en": "The debt ratio eased from 1,214.2% in 2024 to 681.2% in 2025 but remains elevated, making financial strain from new-business investment a point to monitor."
+   "ko": "신규 보안 사업 확대에 따른 판관비 부담과 일부 프로젝트의 매출 인식 이연이 상반기 실적에 영향을 줬다.",
+   "en": "Selling and administrative costs from new security businesses and the deferral of some project revenue recognition weighed on first-half results."
   }
  ],
  "business": {
-  "ko": "아이티센피엔에스는 2011년 설립된 보안 플랫폼 전문기업으로, IT보안·핀테크 보안·생체인증 솔루션을 공급하며 2016년 코넥스에 상장한 뒤 2023년 코스닥으로 이전 상장했다. 회사는 경기도 과천시에 본사를 두고 있으며, 비상장 종속회사로 씨플랫폼과 투케이엠시스템즈를 보유하고 있다. 사업 구조상 매출의 절대 다수는 팔로알토네트웍스, 사이버아크 등 글로벌 보안기업 제품을 공급하는 총판 사업에서 발생하며, 여기에 보안 컨설팅과 확장형 탐지·대응(XDR), 관리형 탐지·대응(MDR) 등 운영형 서비스가 더해진다. 이와 별도로 모바일 보안·생체인증·전자서명 등 자체 개발 보안솔루션 사업을 영위하고 있는데, 이 부문의 매출 비중은 총판 사업 대비 작은 편이다. 최근에는 양자내성암호(PQC) 기반 통합 인증 관리 플랫폼 '엣지CS(EdgeCS)'를 축으로 인증·암호체계 전환 사업을 새로운 성장축으로 육성하고 있다. 소프트웨어 중심 사업에서 하드웨어로 영역을 넓히기 위해 반도체 IP·설계 전문기업 코아솔에 지분을 투자해 PQC 기술을 하드웨어에 내재화한 보안칩 개발도 추진 중이다. 경쟁 구도상 회사는 국내 생체인증·보안 솔루션 시장에서 여러 중소형 보안업체들과 경쟁하며, 글로벌 보안기업의 국내 유통망 지위를 통해 안정적 매출 기반을 확보하고 있다. 모회사 격인 아이티센그룹은 IT서비스·웹3·경영투자 등 여러 사업부문을 아우르는 지주 성격의 그룹으로, 계열사 간 사업 연계도 회사의 사업 전개에 영향을 미치는 요소다.",
-  "en": "ITCen PNS is a security platform specialist founded in 2011, supplying IT security, fintech security, and biometric authentication solutions; it listed on KONEX in 2016 before transferring to KOSDAQ in 2023. The company is headquartered in Gwacheon, Gyeonggi Province, and holds unlisted subsidiaries C-Platform and TKM Systems. The overwhelming majority of revenue is generated through the distribution business supplying products from global security vendors such as Palo Alto Networks and CyberArk, complemented by security consulting and operational services including extended detection and response (XDR) and managed detection and response (MDR). Separately, the company runs its own security solution business covering mobile security, biometric authentication, and electronic signatures, though this segment's revenue share is smaller than the distribution business. More recently, the company has been building a post-quantum cryptography (PQC) based unified authentication management platform, EdgeCS, as an axis for authentication and cryptographic transition projects. To expand from software into hardware, it has invested in semiconductor IP design firm CoreSol to develop security chips that embed PQC technology at the hardware level. Competitively, the company vies with various small and mid-sized security vendors in the domestic biometric and security solution market while leveraging its status as a distributor for global security vendors to secure a stable revenue base. The parent ITCen Group operates as a holding-company-like structure spanning IT services, Web3, and management investment segments, and intra-group business linkages also factor into the company's operations."
+  "ko": "아이티센피엔에스는 아이티센그룹 계열의 보안 회사다. 사업은 회사 고유의 보안 사업과 자회사 씨플랫폼이 맡는 GPU 서버·메모리 관련 판매의 두 축으로 나뉜다. 회사 발표에 따르면 2026년 3분기 별도 기준 매출은 84억 5,260만원으로, 연결 매출 1,209억 4,000만원의 일부에 그쳤다. 연결 성장은 자회사 씨플랫폼이 주도했다. 보안 사업의 기반은 모바일 보안, 생체인증, 전자서명, 보안 컨설팅이다. 회사는 여기에 글로벌 보안, AI 보안, 양자내성암호(PQC)를 더해 차세대 성장동력으로 키우는 중이다. 글로벌 보안 분야는 팔로알토 네트웍스와의 협력을 바탕으로 솔루션 공급을 넘어 AI 기반 취약점 분석, 보안 컨설팅, XDR·MDR 같은 운영형 서비스로 범위를 넓히고 있다. 수익 구조에서는 일회성 솔루션 공급 대신 구독형 보안솔루션과 보안관제 같은 반복 매출 비중을 늘리는 방향이다. 고객은 금융·공공·기업이며, 진단부터 솔루션 구축과 운영까지 묶은 통합 보안 서비스를 제공하는 것이 회사 계획이다. 국내 보안 시장에서는 안랩, 엑스게이트 같은 상장 보안 업체와 경쟁하는 위치다.",
+  "en": "Itcenpns is a security affiliate of a Korean IT services group. Its business runs on two axes: the company's own security business, and GPU server and memory-related sales at a subsidiary. According to the company, standalone revenue in Q3 2026 was KRW 8.45 billion, only a fraction of consolidated revenue of KRW 120.9 billion. Consolidated growth was led by the subsidiary. The core security business rests on mobile security, biometric authentication, e-signature and security consulting. The company is building global security, AI security and post-quantum cryptography (PQC) into new growth engines. In global security, it works with Palo Alto Networks to extend from solution supply into AI-driven vulnerability analysis, security consulting, and managed operating services such as XDR and MDR. Its revenue model is shifting away from one-time solution sales toward subscription security solutions and security monitoring that generate recurring revenue. Its customers are in finance, the public sector and enterprises, and the plan is an integrated service spanning diagnosis, solution deployment and operation. In the domestic security market, it competes with listed security peers such as Ahnlab and Axgate."
  },
  "earnings": {
-  "ko": "연간 실적을 보면 2022년 매출 395억원, 영업이익 22억원, 순이익 22억원으로 흑자를 기록했으나 2023년에는 매출이 162억원으로 축소되며 영업손실 13억원, 순손실 10억원으로 전환했다. 2024년에는 매출이 1,044억원으로 급격히 늘었지만 영업손실 16억원을 기록했고 순손실은 소폭(약 10백만원 미만)으로 거의 손익분기에 근접했다. 2025년에는 매출이 2,696억원으로 다시 두 배 이상 확대됐으나 영업손실 3억원, 순손실 46억원을 기록해 매출 성장과 손익 개선이 함께 가지 못했다. 분기별로는 2025년 2분기 매출 768억원·영업이익 15억원으로 흑자를 냈지만 2025년 3분기(-17억원), 4분기(-16억원), 2026년 1분기(-23억원)까지 세 개 분기 연속 순손실을 이어갔다. 2026년 2분기에는 매출 647억원으로 전년 동기 대비 감소했고 영업손실도 9억원 수준으로 발생했지만, 지배주주 순이익은 18억원으로 흑자 전환했다. 회사 설명에 따르면 상반기 실적 부진은 일부 주요 프로젝트의 매출 인식이 하반기로 순연된 데다 글로벌 보안·AI 보안·PQC 등 신규 사업 확대를 위한 비용 선투입이 반영된 결과다. 별도 기준으로는 매출총이익률이 13.5%에서 15.1%로 개선되는 등 본업 수익성 지표는 나아지는 모습을 보였으나, 신규 사업 투자에 따른 판관비 증가가 연결 손익을 눌렀다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 지배주주 순이익 합계는 마이너스를 기록하고 있어, 흑자 전환의 지속성은 하반기 실적으로 확인이 필요한 상황이다.",
-  "en": "Looking at annual results, the company posted revenue of KRW 39.5 billion, operating profit of KRW 2.2 billion, and net income of KRW 2.2 billion in 2022, but 2023 revenue contracted to KRW 16.2 billion with an operating loss of KRW 1.3 billion and a net loss of KRW 1.0 billion. In 2024, revenue jumped sharply to KRW 104.4 billion, yet the company recorded an operating loss of KRW 1.6 billion while the net loss narrowed to near break-even. In 2025, revenue more than doubled again to KRW 269.6 billion, but the company still posted an operating loss of KRW 0.3 billion and a net loss of KRW 4.6 billion, showing that revenue growth and earnings improvement did not move together. On a quarterly basis, Q2 2025 delivered revenue of KRW 76.8 billion with an operating profit of KRW 1.5 billion, but the company then logged net losses for three consecutive quarters through Q3 2025 (KRW -1.7 billion), Q4 2025 (KRW -1.6 billion), and Q1 2026 (KRW -2.3 billion). In Q2 2026, revenue fell year-on-year to KRW 64.7 billion with an operating loss of roughly KRW 0.9 billion, yet net income attributable to owners turned positive at KRW 1.8 billion. According to the company, the weak first-half results reflect the deferral of revenue recognition for certain major projects into the second half combined with upfront cost investment for global security, AI security, and PQC business expansion. On a standalone basis, gross margin improved from 13.5% to 15.1%, indicating some improvement in core profitability, though rising selling and administrative expenses tied to new-business investment weighed on consolidated earnings. The sum of owner net income over the trailing four quarters (Q3 2025 through Q2 2026) remains negative, so the durability of the Q2 2026 profit turnaround will need to be confirmed through second-half results."
+  "ko": "연간 매출은 2022년 395억원에서 2023년 162억원으로 59.0% 줄었다가, 2024년 1,044억원, 2025년 2,696억원으로 2024년부터 2025년까지 2년 연속 늘었다. 2025년 매출은 전년 대비 158.1% 증가해 2022~2025년 중 가장 큰 해였다. 영업이익은 2022년 21.7억원에서 2023년 영업손실 12.8억원으로 적자 전환했고, 2024년에는 영업손실 15.7억원으로 손실이 커졌다. 2025년 영업손실은 3억원으로 줄었지만 2023년부터 2025년까지 3년 연속 영업 적자다. 영업이익률은 2022년 5.5%에서 2023년 -7.9%, 2024년 -1.5%, 2025년 -0.1%로 움직여, 매출이 가장 커진 2025년에 적자 폭이 가장 작았다. 지배주주 순이익은 2023년 순손실 9.6억원, 2024년 순손실 99만원, 2025년 순손실 45.5억원이다. 영업손실이 줄어든 2025년에 지배주주 순손실이 커진 만큼, 영업 외 손익 등 영업이익 밖의 항목을 사업보고서 원문에서 따져볼 대목이다. 부채비율은 2024년 1,214.2%로 4년 중 가장 높았고 2025년 말에도 681.2%이며, 2025년 말 부채총계 1,771억원은 자본총계 260억원을 크게 웃돈다. 분기 매출은 2025년 3분기 756억원에서 4분기 612억원, 2026년 1분기 539억원으로 줄었다가 2분기 647억원, 3분기 1,209억원으로 2개 분기 연속 늘었다. 분기 영업손익은 2025년 3분기 영업손실 3.1억원, 4분기 영업손실 3.9억원, 2026년 1분기 영업손실 8.4억원, 2분기 영업손실 9.2억원으로 이어지다가 3분기에 영업이익 16.6억원으로 흑자 전환했다. 2026년 2분기는 영업손실 9.2억원에도 지배주주 순이익이 18.1억원 흑자였는데, 누적 당기순이익 흑자에는 전환사채 평가이익 등이 영향을 줬다는 것이 보도 내용이다.",
+  "en": "Annual revenue fell 59.0% from KRW 39.5 billion in 2022 to KRW 16.2 billion in 2023, then rose to KRW 104.4 billion in 2024 and KRW 269.6 billion in 2025, growing for two consecutive years from 2024 through 2025. Revenue in 2025 rose 158.1% year on year and was the largest year of 2022 to 2025. Operating profit of KRW 2.17 billion in 2022 turned into an operating loss of KRW 1.28 billion in 2023, and the loss widened to KRW 1.57 billion in 2024. The 2025 operating loss narrowed to KRW 303 million, but the company has posted operating losses for three consecutive years from 2023 to 2025. Operating margin moved from 5.5% in 2022 to -7.9% in 2023, -1.5% in 2024 and -0.1% in 2025, so the loss margin was smallest in 2025, the year revenue was largest. Net income attributable to controlling shareholders was a loss of KRW 959 million in 2023, KRW 0.99 million in 2024 and KRW 4.55 billion in 2025. The net loss grew in 2025 even as the operating loss narrowed, which makes non-operating items a point to check in the full annual report. The debt-to-equity ratio reached 1,214.2% in 2024 and stood at 681.2% at end-2025, when total liabilities of KRW 177.1 billion far exceeded total equity of KRW 26 billion. Quarterly revenue fell from KRW 75.6 billion in Q3 2025 to KRW 61.2 billion in Q4 and KRW 53.9 billion in Q1 2026, then rose to KRW 64.7 billion in Q2 and KRW 120.9 billion in Q3, extending growth for two consecutive quarters. Operating losses of KRW 310 million in Q3 2025, KRW 388 million in Q4, KRW 836 million in Q1 2026 and KRW 918 million in Q2 gave way to an operating profit of KRW 1.66 billion in Q3 2026. In Q2 2026 net income attributable to controlling shareholders was KRW 1.81 billion despite that operating loss, and press reports said cumulative nine-month net income turned positive partly on convertible bond valuation gains."
  },
  "industry": {
-  "ko": "국내 보안 시장은 사이버 위협 증가와 AI 기술 도입 확산에 힘입어 계속 커지는 추세로, 회사가 분기보고서에서 인용한 시장 전망에 따르면 2026년 국내 시장 규모는 약 4.3조원에서 4.8조원 사이로 확대될 것으로 예상된다. 특히 2024년 8월 미국 국립표준기술연구소(NIST)의 PQC 표준 알고리즘 공표를 기점으로 양자내성암호 관련 수요가 부각되고 있으며, 한국인터넷진흥원(KISA)을 중심으로 한국형 양자내성암호(KpqC) 표준화와 금융·공공 분야 시범 사업이 진행 중이다. 이러한 흐름 속에서 아이티센피엔에스는 NIST 표준 기반 PQC 솔루션을 금융망 등에 적용한 사례를 보유하고 있어 관련 분야에서 초기 레퍼런스를 축적한 상태다. 다만 회사 매출의 상당 부분은 자체 기술이 아닌 글로벌 보안기업의 국내 유통 사업에서 발생해, 부가가치가 낮은 유통 마진에 실적이 크게 좌우되는 구조적 특성이 있다. 경쟁사 대비로는 생체인증·전자서명 등 전통 보안 분야에서 이미 자리를 잡았지만, PQC·AI 보안 등 신성장 분야에서는 다수의 국내외 업체가 경쟁적으로 진입하고 있어 초기 시장 선점 경쟁이 치열하다. 반도체 보안칩 영역은 코아솔과의 협업을 통해 하드웨어 내재화를 시도하는 단계로, 상용화까지는 추가적인 기술 검증과 고객 확보 과정이 필요하다.",
-  "en": "The domestic security market continues to expand on the back of rising cyber threats and the spread of AI adoption; the company's quarterly report cites a market forecast for the domestic market to grow to roughly KRW 4.3 trillion to KRW 4.8 trillion in 2026. Demand related to post-quantum cryptography has come into focus especially since the US National Institute of Standards and Technology (NIST) announced its PQC standard algorithms in August 2024, and Korea's Internet & Security Agency (KISA) is leading standardization of a Korean PQC standard (KpqC) along with pilot projects in the financial and public sectors. Amid this trend, ITCen PNS has applied its NIST-standard-based PQC solution to financial networks, giving it an early reference case in the field. However, a significant portion of the company's revenue comes not from its own technology but from distributing products of global security vendors domestically, a structural characteristic that leaves earnings heavily exposed to low-value-added distribution margins. Relative to competitors, the company has an established position in traditional security areas such as biometric authentication and electronic signatures, but in emerging fields like PQC and AI security, competition to secure early market position is intense as numerous domestic and overseas players enter concurrently. In the semiconductor security chip area, the company is at an early stage of hardware internalization through its collaboration with CoreSol, and further technical validation and customer acquisition will be needed before commercialization."
+  "ko": "자회사 씨플랫폼의 실적을 끌어올린 GPU 서버 수요는 AI 인프라 투자 확대에 따른 GPU 서버 수요 증가에서 나온 것이다. 메모리 관련 제품 판매 확대도 같은 기간 매출 증가에 기여했다. 이 수요는 AI 인프라 투자 주기에 민감해서, 설비 투자가 둔화되면 매출 변동 폭이 커질 수 있는 구조다. 보안 쪽에서는 양자 컴퓨팅 시대가 도래하며 기존 암호체계의 한계가 드러났고, 금융·공공 분야를 중심으로 PQC 적용 수요가 빠르게 확대됐다. PQC 사업은 기업과 공공기관이 보유한 암호 알고리즘과 인증서 등 암호자산을 식별한 뒤 양자내성암호 기반으로 전환하는 흐름이다. 국내 보안 상장사 가운데 안랩, 엑스게이트와 경쟁하는 구도이며, 차별점으로는 글로벌 보안 솔루션 협력과 PQC 기반 상호 인증 기술의 실증 경험을 내세운다. 수익성 측면에서 상반기 매출총이익률은 13.5%에서 15.1%로 개선됐다. 반면 신규 사업 확대에 따른 판관비가 늘면서 별도 영업손실이 전년 8억원에서 11억원으로 확대됐다. 따라서 업황 관점에서는 GPU 서버 같은 외형 성장 사업과 PQC·AI 보안 같은 신규 사업 중 어느 쪽이 수익 기반으로 이어지는지가 가장 중요한 관찰 지점이다.",
+  "en": "GPU server demand that lifted the subsidiary's results comes from expanding AI infrastructure investment. Memory-related product sales also contributed to revenue growth over the same period. This demand is sensitive to the AI infrastructure investment cycle, so revenue could swing widely if capital spending slows. In security, the arrival of the quantum computing era has exposed the limits of existing cryptography, and demand for PQC adoption is growing quickly in finance and the public sector. A PQC transition typically starts with identifying the cryptographic assets that enterprises and public agencies rely on, then migrating them to quantum-resistant schemes. Among listed domestic security companies, the company competes with Ahnlab and Axgate, and it points to its global security partnerships and PQC authentication demonstrations as differentiators. Gross margin improved in the first half of 2026, from 13.5% to 15.1%. Yet higher selling and administrative costs from new businesses widened the standalone operating loss from KRW 800 million to KRW 1.1 billion. Accordingly, the key point to watch is whether the growth in GPU server sales or the new PQC and AI security businesses ends up as the earnings base."
  },
  "outlook": {
-  "ko": "회사는 하반기에 상반기 순연된 프로젝트의 매출 인식과 사업별 수익성 관리에 집중한다는 계획을 밝혔다. 대표이사는 하반기에 이연된 프로젝트의 매출 반영과 함께 글로벌 보안·AI 보안·엣지CS 중심의 PQC 인증·암호 전환 사업을 본격화하겠다는 방침을 제시했다. 회사는 '데이터 중심 제로트러스트 오버레이 금융망 구축' 실증 사업을 통해 PQC 기술의 금융망 적용 가능성을 검증했으며, 하반기에는 금융·공공 고객을 대상으로 기술검증(PoC)을 확대해 실제 구축·운영 사업으로 연결한다는 계획을 세우고 있다. 반도체 IP·설계기업 코아솔과는 PQC 기술을 하드웨어에 내재화한 보안칩을 개발해 금융 단말, AI 인프라, 산업 장비, 사물인터넷(IoT) 등으로 적용 범위를 확대할 계획이다. 사업 전략상 일회성 솔루션 공급에서 라이선스 갱신·유지보수·운영 서비스 등 반복형 매출 비중을 높이는 것도 회사가 밝힌 과제 중 하나다. 다만 코아솔 투자와 관련해서는 피투자기업의 완전자본잠식 상태와 부채 상환 부담이 해소되지 않았다는 지적이 제기된 바 있어, 향후 추가 자금 지원 여부와 사업화 성과가 함께 확인돼야 할 변수로 남아 있다.",
-  "en": "The company has stated a plan to focus on recognizing revenue from second-half deferred projects and managing profitability by business line. Management indicated it will reflect deferred project revenue in the second half while advancing PQC authentication and cryptographic transition business centered on global security, AI security, and the EdgeCS platform. The company validated the applicability of PQC technology to financial networks through a data-centric zero-trust overlay financial network pilot project, and plans to expand proof-of-concept (PoC) testing with financial and public sector clients in the second half to convert these into actual build-and-operate contracts. With semiconductor IP design firm CoreSol, the company plans to develop security chips embedding PQC technology at the hardware level for application in financial terminals, AI infrastructure, industrial equipment, and IoT. Increasing the share of recurring revenue from license renewals, maintenance, and operational services—rather than one-off solution supply—is another task the company has outlined. However, concerns have been raised regarding the CoreSol investment, given that the invested company remains in a state of full capital impairment with unresolved debt repayment burdens, leaving the possibility of additional financial support and the pace of commercialization as variables that still need to be confirmed."
+  "ko": "회사는 상반기 매출 감소가 일부 주요 프로젝트의 매출 인식이 하반기로 순연된 데 따른 것이라고 설명했다. 하반기에는 순연된 프로젝트의 매출 인식과 사업별 수익성 관리를 통해 실적 개선에 집중할 계획이다. 같은 맥락에서 신규 사업을 위한 인력 확충과 인건비 등 판매관리비 부담을 관리하며 사업별 수익성 관리와 고정비 효율화를 병행하겠다는 방침을 밝혔다. 글로벌 보안과 AI 보안, 엣지CS를 중심으로 한 PQC 인증·암호 전환 사업을 본격화하겠다는 계획이 제시돼 있다. 금융·공공 고객을 중심으로 진단과 PoC를 넓혀 실제 구축·운영 사업으로 잇는다는 방침도 있다. 라이선스 갱신과 유지보수, 운영 서비스 같은 반복형 매출 기반을 강화한다는 계획도 포함된다. 반도체 IP 전문기업 코아솔에 지분을 투자해 PQC 기반 보안칩부터 보안 인프라까지 사업 영역을 넓히겠다는 방향이다. 데이터 중심 제로트러스트 오버레이 금융망 구축 실증 사업을 통해 PQC 기반 상호 인증 기술의 상용화 가능성을 검증했다고 회사는 밝혔다. 2026년 3분기 누적 영업손익은 약 1억원 손실이어서, 2026년 4분기 실적이 연간 영업손익의 방향을 가르는 구조다. 다음 확인 지점은 2026년 4분기에 이연 프로젝트 매출이 얼마나 인식되는지와 2026년 사업보고서에 나타나는 연간 영업손익이다.",
+  "en": "The company attributed the first-half revenue decline to some major projects being pushed into the second half, and it plans to focus on recognizing that deferred project revenue alongside business-level profitability management. It also plans to manage headcount and personnel costs for new businesses while running cost-control measures in parallel. It intends to scale up PQC certification and cryptographic transition projects, centered on global security, AI security and edge CS. The plan also includes expanding diagnosis and PoC work with financial and public-sector clients to connect them to actual build-and-operate projects. The company also plans to strengthen recurring revenue through license renewals, maintenance and operating services. It invested in a semiconductor IP firm to widen its reach from PQC-based security chips to security infrastructure. The company said it validated the commercial potential of PQC-based mutual authentication in a zero-trust overlay financial network demonstration. Cumulative operating results through Q3 2026 show a loss of about KRW 100 million, so Q4 2026 results will determine the direction of full-year operating profit. The next checkpoints are how much deferred project revenue is recognized in Q4 2026 and the full-year operating result in the 2026 annual report."
  },
  "valuation_comment": {
-  "ko": "회사는 최근 몇 개 분기 연속 순손실을 내다가 2026년 2분기에 지배주주 순이익 흑자로 전환했으나, 최근 네 개 분기를 합산하면 여전히 순손실 구간에 머물러 있어 통상적인 이익 기준 밸류에이션 지표는 산출이 어려운 상태다. 주가순자산비율은 순자산 대비 일정한 프리미엄이 붙어 거래되는 구간으로, 이는 회사의 자기자본 규모가 크지 않은 가운데 신사업(PQC·보안칩) 확장에 대한 시장의 기대가 일부 반영된 결과로 해석될 수 있다. 배당은 최근 회계연도 기준으로 지급되지 않아 배당수익률로 접근하는 투자자에게는 매력이 제한적인 구조다. 부채비율이 여전히 높은 수준이고 코아솔 투자와 같은 신사업 투자 지출이 이어지고 있어, 순자산 규모 자체의 변동성도 함께 살펴볼 필요가 있다. 과거 흑자를 냈던 2022년과 달리 최근 3개 회계연도는 연간 기준 적자가 이어지고 있어, 이익 흐름의 방향성 자체가 밸류에이션 해석의 중요한 전제가 된다.",
-  "en": "The company swung from consecutive quarterly net losses to a net profit attributable to owners in Q2 2026, but summing the trailing four quarters still leaves the company in net-loss territory, making conventional earnings-based valuation metrics difficult to calculate. The price-to-book ratio trades at a level carrying a certain premium over net asset value, which can be interpreted as reflecting some market expectation for the expansion of new businesses such as PQC and security chips against a relatively small equity base. No dividend was paid in the most recent fiscal year, limiting the appeal for investors approaching the stock through dividend yield. Given the still-elevated debt ratio and continuing new-business investment outlays such as the CoreSol stake, the volatility of the net asset base itself also warrants attention. Unlike 2022 when the company was profitable, the trailing three fiscal years have all posted annual losses, making the direction of the earnings trend itself an important premise for interpreting valuation."
+  "ko": "최근 네 개 분기 지배주주 순손실이 합계 5.7억원이어서 주가수익비율(PER)은 산출되지 않는다. 주가순자산비율은 장부가치를 웃도는 수준으로, 주가가 순자산 대비 프리미엄을 받는 구간에 있다. 배당은 이뤄지지 않고 있어 배당수익률은 업종 평균을 밑도는 편이다. 과거 PER 밴드와 비교하려면 흑자가 여러 분기 이어져야 의미가 생기는데, 2026년 3분기 흑자는 공시된 분기 중 첫 영업이익 흑자다. 다년 흐름에서는 영업 적자가 이어지던 구조에서 2026년 3분기 흑자 전환이 나타났고, 2025년에는 영업손실 폭이 축소됐다. 밸류에이션의 전제는 AI 인프라 수요가 자회사 실적을 얼마나 오래 지탱하는지와 본사 보안 사업이 판관비 부담을 흡수할 수 있는지다. 이익 기록이 긴 동종 상장사와 비교하면 현재로서는 이익 배수를 기준으로 한 비교가 어려운 위치다.",
+  "en": "Because the last four quarters show net losses attributable to controlling shareholders, the price-to-earnings ratio cannot be calculated. The price-to-book ratio places the stock above book value, so the market price carries a premium to net assets. The company has not paid dividends, so its dividend yield sits below the industry average. A comparison with a historical PER band would need several consecutive profitable quarters, and the Q3 2026 profit is the first quarterly operating profit in the disclosed series. Over the disclosed years, the company moved from operating losses toward a first profitable quarter, and the 2025 operating loss narrowed. The valuation case hinges on how long AI infrastructure demand sustains subsidiary earnings and whether the company's own security business can absorb its selling and administrative costs. Against listed peers with longer profit records, a multiple-based comparison is harder to make for this company at present."
  },
  "bull": [
   {
    "title": {
-    "ko": "총판 사업 매출 규모 확대",
-    "en": "Scaling Up of the Distribution Business"
+    "ko": "AI 인프라 수요와 자회사 성장",
+    "en": "AI infrastructure demand and subsidiary growth"
    },
    "body": {
-    "ko": "글로벌 보안기업 제품을 공급하는 총판 사업이 연결 매출을 2023년 162억원에서 2025년 2,696억원으로 크게 끌어올렸다. 팔로알토네트웍스·사이버아크 등과의 협력을 바탕으로 보안 컨설팅·XDR·MDR 등 운영형 서비스로 영역을 넓히고 있어, 매출 기반 자체는 계속 확장되는 모습이다. 별도 기준 매출총이익률도 13.5%에서 15.1%로 개선되며 본업 수익성 지표는 나아지는 흐름을 보였다.",
-    "en": "The distribution business supplying global security vendor products has driven consolidated revenue up from KRW 16.2 billion in 2023 to KRW 269.6 billion in 2025. Building on partnerships with Palo Alto Networks and CyberArk, the company has expanded into operational services such as security consulting, XDR, and MDR, continuing to broaden its revenue base. Standalone gross margin also improved from 13.5% to 15.1%, showing improvement in core profitability metrics."
+    "ko": "자회사 씨플랫폼의 GPU 서버와 메모리 관련 매출이 연결 실적을 끌어올렸다. 회사 측은 이 수요를 AI 인프라 투자 확대와 연결해 설명했다. 2026년 3분기 연결 매출이 전년 동기 대비 59.9% 늘어 외형 성장의 폭이 컸다.",
+    "en": "GPU server and memory-related sales at a subsidiary lifted consolidated results. The company links this demand to expanding AI infrastructure investment. Consolidated revenue in Q3 2026 rose 59.9% year on year, a wide margin of growth."
    }
   },
   {
    "title": {
-    "ko": "PQC·양자보안 초기 레퍼런스",
-    "en": "Early PQC and Quantum Security References"
+    "ko": "PQC·AI 보안 수요 확대",
+    "en": "Growing demand for PQC and AI security"
    },
    "body": {
-    "ko": "회사는 NIST 표준 기반 PQC 솔루션 '아이인젝션(iEnxection) PQC'를 실제 금융망에 적용한 사례를 보유하고 있다. 데이터 중심 제로트러스트 오버레이 금융망 구축 실증 사업을 통해 PQC 기술의 금융망 적용 가능성을 검증했으며, 하반기 금융·공공 대상 PoC 확대를 계획하고 있다. 국내 양자내성암호 표준화가 진행되는 시점에 앞서 관련 기술력을 축적해 둔 점은 향후 사업화 과정에서 참고할 만한 요소다.",
-    "en": "The company holds a track record of applying its NIST-standard-based PQC solution, iEnxection PQC, to actual financial networks. It validated the feasibility of applying PQC technology to financial networks through a data-centric zero-trust overlay pilot project and plans to expand PoC testing with financial and public sector clients in the second half. Having accumulated related technical capability ahead of ongoing domestic PQC standardization is a factor worth noting for future commercialization."
+    "ko": "양자 컴퓨팅 시대가 가까워지며 기존 암호체계의 한계가 드러났고 금융·공공 분야의 PQC 수요가 늘고 있다. 회사는 PQC 기반 상호 인증 기술을 금융망 실증에서 검증했다고 밝혔다. 본사 보안 사업이 이 수요를 매출로 바꿀 수 있는지가 관건이다.",
+    "en": "The quantum computing era has exposed the limits of existing cryptography, and PQC demand in finance and the public sector is growing. The company said it validated PQC-based mutual authentication in a financial network demonstration. Whether its own security business can convert this demand into revenue is the key test."
    }
   },
   {
    "title": {
-    "ko": "하드웨어 영역 확장 시도",
-    "en": "Attempted Expansion into Hardware"
+    "ko": "반복 매출 전환과 마진 개선",
+    "en": "Recurring revenue and margin gains"
    },
    "body": {
-    "ko": "반도체 IP·설계 전문기업 코아솔에 지분을 투자해 PQC 기술을 하드웨어에 내재화한 보안칩 개발을 추진하고 있다. 소프트웨어 중심 사업에서 하드웨어까지 영역을 넓히려는 시도로, 성공할 경우 금융 단말·AI 인프라·산업 장비·IoT 등 다양한 응용처로 확장할 수 있는 잠재력이 있다. 다만 이는 아직 초기 단계의 시도로 상용화 성과는 추후 확인이 필요하다.",
-    "en": "The company has invested in semiconductor IP design firm CoreSol to develop security chips that embed PQC technology at the hardware level, an attempt to expand from software-centric business into hardware. If successful, this carries potential for expansion into diverse applications including financial terminals, AI infrastructure, industrial equipment, and IoT, though this remains an early-stage attempt whose commercialization outcome still needs to be confirmed."
+    "ko": "상반기 매출총이익률은 13.5%에서 15.1%로 개선됐다. 일회성 솔루션 공급 대신 구독형 보안솔루션과 보안관제 같은 반복 매출 비중을 늘리고 있다. 반복 매출 비중이 커지면 매출 변동성이 줄어드는지는 다음 정기보고서에서 확인할 대목이다.",
+    "en": "The gross profit margin improved from 13.5% to 15.1% in the first half of 2026. The company is raising the share of recurring revenue through subscription security solutions and security monitoring instead of one-time sales. Whether a larger recurring base reduces revenue volatility is a point for the next annual report."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "수익성 회복 지연",
-    "en": "Delayed Profitability Recovery"
+    "ko": "3년 연속 영업 적자",
+    "en": "Three straight years of operating losses"
    },
    "body": {
-    "ko": "매출 규모는 크게 늘었지만 2024년과 2025년 모두 연간 영업손실을 기록했고, 2025년 3분기부터 2026년 1분기까지 세 개 분기 연속 순손실을 냈다. 2026년 2분기에 순이익이 흑자로 전환했지만 영업손실은 이어졌으며, 최근 네 개 분기 합산으로는 여전히 순손실 상태다. 신사업 투자에 따른 비용 부담이 지속되는 한 수익성 회복의 속도는 불확실하다.",
-    "en": "Although revenue scale has grown significantly, the company posted annual operating losses in both 2024 and 2025, and logged net losses for three consecutive quarters from Q3 2025 through Q1 2026. Net income turned positive in Q2 2026, but the operating loss continued, and the trailing four-quarter sum remains in net-loss territory. As long as cost burdens from new-business investment persist, the pace of profitability recovery remains uncertain."
+    "ko": "2023년부터 2025년까지 영업손실이 이어졌고, 2025년 영업손실은 3억원으로 줄었다. 공시된 분기 중 영업이익 흑자는 2026년 3분기가 처음이다. 2025년 지배주주 순손실은 45.5억원으로 적자 구조가 순이익 단계까지 이어졌다.",
+    "en": "The company recorded operating losses from 2023 to 2025, and the 2025 loss narrowed to KRW 303 million. Among the disclosed quarters, Q3 2026 is the only one with an operating profit. Net income attributable to controlling shareholders was a KRW 4.55 billion loss in 2025, so the losses carried down to the net income line."
    }
   },
   {
    "title": {
-    "ko": "코아솔 투자 관련 불확실성",
-    "en": "Uncertainty Around the CoreSol Investment"
+    "ko": "신사업 비용과 별도 적자 확대",
+    "en": "New-business costs and wider standalone losses"
    },
    "body": {
-    "ko": "회사는 자기자본의 약 30%에 해당하는 80억원을 완전자본잠식 상태인 코아솔에 투자해 지분 20.97%를 확보했다. 취득가액을 기준으로 산정된 코아솔의 전체 지분가치는 381억원 수준으로 제시됐으나, 이를 정당화할 만한 평가 근거는 공시에 명확히 제시되지 않았다는 지적이 있었다. 지분율이 경영권을 확보하기에는 부족하고, 향후 코아솔의 부채 상환이나 운영자금을 위해 추가적인 재무 지원이 필요할 가능성도 거론된다.",
-    "en": "The company invested KRW 8 billion—about 30% of its equity—into CoreSol, a firm in a state of full capital impairment, to secure a 20.97% stake. The implied full equity value of CoreSol based on the acquisition price was put at roughly KRW 38.1 billion, but observers have noted that clear valuation grounds justifying this were not disclosed. The stake is insufficient to secure management control, and there is also discussion of the possibility that additional financial support may be needed for CoreSol's debt repayment or operating funds going forward."
+    "ko": "신규 사업 확대에 따른 판관비가 전년 대비 증가하면서 별도 영업손실은 전년 동기 8억원에서 11억원으로 확대됐다. 회사는 신규 사업을 위한 인력 확충과 인건비가 판관비 부담을 키운다고 설명했다. 신사업의 수익화가 늦어지면 이 비용 구조가 실적을 계속 누를 수 있다.",
+    "en": "Standalone operating loss widened from KRW 800 million to KRW 1.1 billion in the first half of 2026 as selling and administrative costs for new businesses rose. The company attributes the pressure to headcount additions and personnel costs. If new businesses take longer to generate revenue, this cost structure could keep weighing on results."
    }
   },
   {
    "title": {
-    "ko": "높은 부채비율과 재무 구조 부담",
-    "en": "High Debt Ratio and Balance Sheet Strain"
+    "ko": "매출 인식 시점과 순이익의 변동성",
+    "en": "Revenue recognition timing and non-operating swings"
    },
    "body": {
-    "ko": "부채비율은 2024년 1,214.2%에서 2025년 681.2%로 낮아졌지만 여전히 업종 내에서 높은 수준이다. 연결 회사의 차입금이 지배기업 재무제표에 인식되는 구조적 특성도 있어, 종속회사를 포함한 재무구조 전반을 함께 살펴볼 필요가 있다. 이러한 상황에서 완전자본잠식 기업에 대한 투자와 신사업 비용 지출이 동시에 이어지고 있어 재무 부담 관리가 중요한 과제로 남아 있다.",
-    "en": "The debt ratio eased from 1,214.2% in 2024 to 681.2% in 2025 but remains high relative to the sector. The structural characteristic where consolidated subsidiary borrowings are recognized on the parent's financial statements also means the overall financial structure, including subsidiaries, warrants close attention. Against this backdrop, simultaneous investment in a fully capital-impaired company and ongoing new-business cost outlays leave financial burden management as an important task."
+    "ko": "상반기 연결 매출은 전년 동기 대비 10.7% 감소했는데, 일부 프로젝트의 매출 인식이 하반기로 순연된 탓이다. 3분기 순이익 흑자에는 전환사채 평가이익 등의 영향이 있었다. 영업 흐름과 순이익 방향이 엇갈릴 수 있다는 점이 약세 요인이다.",
+    "en": "First-half consolidated revenue fell 10.7% year on year because some major projects were pushed into the second half. The Q3 net profit was supported partly by convertible bond valuation gains. Operating trends and net income direction can diverge, which is a weakness to monitor."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "사업 리스크",
-    "en": "Business Risk"
+    "ko": "매출 인식 시점",
+    "en": "Revenue recognition timing"
    },
    "body": {
-    "ko": "매출의 대부분이 글로벌 보안기업 제품의 국내 유통에서 발생해, 공급사의 가격·유통 정책 변화나 계약 조건 변경이 실적에 직접적인 영향을 줄 수 있다. 자체 개발 보안솔루션 사업의 비중이 상대적으로 작아, 부가가치가 높은 자체 기술 매출로의 전환이 더디게 진행될 경우 수익성 개선의 한계로 이어질 수 있다.",
-    "en": "The majority of revenue is generated from domestic distribution of global security vendor products, so changes in a supplier's pricing or distribution policy, or contract terms, could directly affect results. The relatively small share of the company's own security solution business means that if the shift toward higher-value-added proprietary technology revenue proceeds slowly, it could limit profitability improvement."
+    "ko": "프로젝트 단위 매출은 인식 시점이 분기마다 바뀌어 분기 실적의 변동이 크다. 2026년 상반기 매출 감소와 3분기 급증이 그 예다. 하반기 이연 매출이 4분기에 얼마나 반영되는지가 연간 실적의 방향을 좌우한다.",
+    "en": "Project-based revenue shifts between quarters, as seen in the first-half decline and the Q3 surge. Deferred second-half revenue must be recognized in Q4 for the full-year picture to improve. Quarterly results can swing sharply on the timing of recognition."
    }
   },
   {
    "cat": {
-    "ko": "재무 리스크",
-    "en": "Financial Risk"
+    "ko": "자회사 사업의 업황 의존",
+    "en": "Dependence on subsidiary demand"
    },
    "body": {
-    "ko": "부채비율이 여전히 높은 수준을 유지하고 있는 가운데, 완전자본잠식 상태인 코아솔에 대한 투자와 향후 추가 자금 지원 가능성이 재무 부담을 키울 요인으로 지목된다. 연간·분기 단위로 순손실이 반복되는 상황에서 신사업 투자를 병행하는 만큼, 자본 확충이나 차입 조달과 관련한 추가 공시 여부를 지속적으로 확인할 필요가 있다.",
-    "en": "With the debt ratio remaining high, investment in the fully capital-impaired CoreSol and the possibility of further financial support have been flagged as factors that could increase financial burden. As recurring annual and quarterly net losses coincide with concurrent new-business investment, continued monitoring of any additional disclosures related to capital raising or debt financing is warranted."
+    "ko": "자회사 씨플랫폼의 GPU 서버 매출은 AI 인프라 투자 흐름에 따라 달라진다. 수요가 둔화되면 연결 매출의 증가세가 크게 꺾일 수 있다. 본사 보안 사업은 상반기 별도 영업손실이 확대된 상태라, 자회사 수요가 약해지면 실적을 받쳐 줄 완충 역할이 약하다.",
+    "en": "GPU server sales at the subsidiary depend on AI infrastructure investment flows. A slowdown in demand could sharply reduce consolidated growth. The standalone operating loss widened in the first half, so the company's own security business offers a limited cushion if subsidiary demand weakens."
    }
   },
   {
    "cat": {
-    "ko": "경쟁·규제 리스크",
-    "en": "Competitive and Regulatory Risk"
+    "ko": "재무 레버리지와 전환사채",
+    "en": "Leverage and convertible bonds"
    },
    "body": {
-    "ko": "PQC·AI 보안 등 신성장 분야는 국내외 다수 업체가 동시에 진입하고 있어 초기 시장에서의 경쟁이 치열하며, 한국형 양자내성암호(KpqC) 표준이 확정되는 시점과 세부 요건에 따라 회사의 기존 솔루션 적용 범위가 달라질 수 있다. 총판 사업의 경우 계약 갱신이나 공급사 정책 변경에 따른 구조적 리스크도 존재한다.",
-    "en": "Emerging growth areas such as PQC and AI security are seeing simultaneous entry by numerous domestic and overseas players, intensifying early-market competition, and the scope of the company's existing solution applicability could shift depending on the timing and detailed requirements of Korea's finalized KpqC standard. The distribution business also carries structural risk tied to contract renewals or changes in supplier policy."
+    "ko": "2025년 말 부채총계는 1,771억원으로 자본총계 260억원을 크게 웃돈다. 부채비율은 2024년 1,214.2%, 2025년 681.2%로 높은 수준이다. 전환사채 평가손익이 순이익을 흔들 수 있어 헤드라인 흑자를 그대로 영업 체력으로 읽기는 어렵다.",
+    "en": "Total liabilities of KRW 177.1 billion far exceed total equity of KRW 26 billion at end-2025. The debt-to-equity ratio was 1,214.2% in 2024 and 681.2% in 2025. Convertible bond valuation gains and losses can move net income, so the headline profit is not a clean read on operating strength."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중순",
-    "en": "Mid-November 2026"
+    "ko": "2026년 12월 말",
+    "en": "End of December 2026"
    },
    "what": {
-    "ko": "2026년 3분기 실적 공시 시점으로, 상반기 순연된 프로젝트 매출이 실제로 하반기에 인식되며 수익성이 회복되는지를 확인할 핵심 시점이다.",
-    "en": "The Q3 2026 earnings disclosure date, a key point to confirm whether first-half deferred project revenue is actually recognized in the second half and whether profitability recovers."
+    "ko": "2026년 4분기 마감 시점이다. 하반기 이연 프로젝트 매출이 4분기에 반영되는지, 3분기까지 약 1억원 손실인 누적 영업손익이 흑자로 바뀌는지가 연간 손익의 방향을 정한다.",
+    "en": "Fourth-quarter 2026 closing. The key questions are whether deferred second-half project revenue is recognized in Q4 and whether the cumulative operating result, a loss of about KRW 100 million through Q3, turns positive."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기 중",
-    "en": "During Q4 2026"
+    "ko": "2027년 3월 말",
+    "en": "Late March 2027"
    },
    "what": {
-    "ko": "PQC 기반 엣지CS 관련 금융·공공 고객 기술검증(PoC)이 실제 구축·운영 계약으로 전환되는지 여부를 확인할 필요가 있다.",
-    "en": "It will be worth checking whether PQC-based EdgeCS proof-of-concept testing with financial and public sector clients converts into actual build-and-operate contracts."
+    "ko": "2026년 사업보고서 제출 시점이다. 연간 매출, 영업이익, 지배주주 순이익이 확정되며 2025년 영업손실 3억원, 지배주주 순손실 45.5억원과 비교해 적자 구조가 해소됐는지 확인할 수 있다.",
+    "en": "Submission of the 2026 annual report. Full-year revenue, operating profit and net income attributable to controlling shareholders will be fixed, allowing comparison with the 2025 operating loss of KRW 303 million and the KRW 4.55 billion net loss attributable to controlling shareholders."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기 이후",
-    "en": "From Q4 2026 onward"
+    "ko": "2027년 5월 중순",
+    "en": "Mid-May 2027"
    },
    "what": {
-    "ko": "코아솔 투자와 관련해 추가 자금 지원 여부, 보안칩 상용화 진행 상황에 대한 추가 공시가 나오는지 지속적으로 확인해야 한다.",
-    "en": "Continued monitoring is needed for whether additional disclosures emerge regarding further financial support tied to the CoreSol investment and the progress of security chip commercialization."
+    "ko": "2027년 1분기 분기보고서 제출 시점이다. 2026년 1분기 영업손실 8.4억원과 비교해 적자 폭이 줄었는지, 2026년 3분기에 시작된 흑자가 이어지는지를 본다.",
+    "en": "First-quarter 2027 quarterly report. Comparing with the Q1 2026 operating loss of KRW 836 million will show whether losses are narrowing and whether the Q3 2026 profit has continued."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기~2027년 초",
-    "en": "Q4 2026 to early 2027"
+    "ko": "2027년 상반기 중",
+    "en": "First half of 2027"
    },
    "what": {
-    "ko": "부채비율 및 재무구조 개선 여부를 다음 분기·연간 공시를 통해 확인하고, 신사업 투자에 따른 자본 확충 필요성이 재차 제기되는지 살펴볼 필요가 있다.",
-    "en": "Whether the debt ratio and financial structure improve should be checked through upcoming quarterly and annual disclosures, along with whether the need for capital raising tied to new-business investment resurfaces."
+    "ko": "회사가 본격화하겠다고 밝힌 PQC 인증·암호 전환 사업의 계약과 매출 공시가 나오는지 확인한다. 이 매출이 반복형으로 잡히는지가 사업 구조 변화의 핵심이다.",
+    "en": "Whether disclosed contracts and revenue from the PQC certification and cryptographic transition projects materialize as planned. Whether those revenues are recurring is central to the shift in business structure."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "아이티센피엔에스는 글로벌 보안 솔루션 총판 사업을 축으로 매출 규모를 빠르게 키워왔으나, 2024~2025년 연속 영업손실과 최근 몇 개 분기의 순손실이 보여주듯 매출 성장이 수익성 개선으로 곧바로 이어지지는 못했다. 2026년 2분기 지배주주 순이익이 흑자로 전환됐지만 영업손실은 지속됐고, 최근 네 개 분기 합산으로는 여전히 순손실 구간에 머물러 있어 흑자 전환의 지속성은 하반기 실적으로 재확인이 필요하다. 회사는 PQC·AI 보안·반도체 보안칩 등 신성장 사업을 다음 축으로 제시하며 초기 레퍼런스를 쌓아가고 있지만, 코아솔 투자를 둘러싼 밸류에이션 논란과 여전히 높은 부채비율은 재무적으로 살펴야 할 지점이다. 산업 측면에서는 국내 보안·양자보안 시장의 구조적 성장이 뒷받침되고 있어 사업 기회 자체는 열려 있는 편이나, 다수 업체의 동시 진입에 따른 경쟁 심화도 함께 고려해야 한다. 투자자 입장에서는 하반기 순연 매출의 인식 여부, PQC PoC의 실제 계약 전환, 코아솔 관련 추가 공시를 순차적으로 확인해 가는 접근이 필요해 보인다. 본 리포트는 투자 의견이나 목표주가를 제시하지 않으며, 정보 제공 목적으로 작성되었다.",
-   "en": "ITCen PNS has rapidly scaled up revenue centered on its global security solution distribution business, but as shown by consecutive operating losses in 2024-2025 and net losses in recent quarters, revenue growth has not directly translated into profitability improvement. Net income attributable to owners turned positive in Q2 2026, but the operating loss continued, and the trailing four-quarter sum remains in net-loss territory, so the durability of the profit turnaround needs to be reconfirmed through second-half results. The company is presenting PQC, AI security, and semiconductor security chips as its next growth axis and building early references, but the valuation controversy surrounding the CoreSol investment and the still-elevated debt ratio are points that warrant financial scrutiny. From an industry perspective, structural growth in the domestic security and quantum security market provides supportive conditions and business opportunities remain open, though intensifying competition from simultaneous entry by numerous players should also be considered. For investors, a sequential approach of confirming second-half deferred revenue recognition, actual contract conversion from PQC PoCs, and further disclosures related to CoreSol appears warranted. This report does not present an investment opinion or target price and is prepared for informational purposes only."
+   "ko": "아이티센피엔에스의 2026년 3분기는 연결 매출 1,209억원과 영업이익 16.6억원으로 흑자 전환이 확인된 분기다. 다만 2023년부터 2025년까지 3년 연속 영업 적자였고, 최근 네 개 분기 지배주주 순손실 합계는 5.7억원이다. 성장의 대부분은 자회사 씨플랫폼의 GPU 서버·메모리 매출에서 나왔고, 회사 고유의 보안 사업은 상반기 별도 영업손실이 확대됐다. PQC와 AI 보안은 금융·공공 수요가 늘고 있는 분야이나, 반복 매출로 얼마나 전환되는지는 다음 정기보고서에서 확인할 과제다. 밸류에이션 측면에서는 최근 네 개 분기 순손실로 주가수익비율이 산출되지 않고, 주가순자산비율은 장부가치를 웃도는 수준이다. 부채비율은 2025년 말 681.2%로 높아 재무 레버리지를 점검할 필요가 있다. 다음 확인 지점은 2026년 12월 말 4분기 실적과 2027년 3월 말 사업보고서다.",
+   "en": "The third quarter of 2026 was the first quarter with an operating profit in the disclosed series, with consolidated revenue of KRW 120.9 billion and operating profit of KRW 1.66 billion. However, the company posted operating losses for three straight years from 2023 to 2025, and the last four quarters total a KRW 567 million net loss attributable to controlling shareholders. Most of the growth came from GPU server and memory sales at a subsidiary, while the company's own security business widened its standalone operating loss in the first half. PQC and AI security are areas where demand in finance and the public sector is rising, but how far they convert into recurring revenue remains a task for the next annual report. On valuation, the recent net losses leave the price-to-earnings ratio uncalculated, and the price-to-book ratio sits above book value. The debt-to-equity ratio of 681.2% at end-2025 calls for close attention to financial leverage. The next checkpoints are the Q4 2026 results at end-December 2026 and the 2026 annual report in late March 2027."
   }
  },
  "sources": [
-  "https://m.irgo.co.kr/IR-COMP/232830",
-  "https://www.butler.works/ko/companies/01113499",
-  "https://www.investing.com/equities/secucen-co-ltd",
-  "https://kind.krx.co.kr/external/2026/05/14/001104/20260514002408/11013.htm",
-  "https://www.valueline.co.kr/finance/mri/232830",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20250320001937&docno=&viewerhost=",
-  "https://file.alphasquare.co.kr/media/pdfs/market-report/%EC%95%84%EC%9D%B4%ED%8B%B0%EC%84%BC%EC%97%94%ED%85%8D1Q2620260521%EC%9C%A0%EC%A7%84%ED%88%AC%EC%9E%90%EC%A6%9D%EA%B6%8C.",
-  "https://www.paxnet.co.kr/tbbs/list?id=232830&tbbsType=L",
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=124500",
-  "https://www.itdaily.kr/news/articleView.html?idxno=240975",
-  "https://www.bloter.net/news/articleView.html?idxno=670829",
-  "https://alphasquare.co.kr/home/stock-summary?code=124500",
-  "https://news.infostock.co.kr/a",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260514001513&docno=&viewerhost=",
-  "https://www.ddaily.co.kr/page/view/2026081311430493165",
-  "https://www.ibtomato.com/ExternalView.aspx?type=1&no=18106",
-  "https://www.tfmedia.co.kr/news/article.html?no=203764",
-  "https://www.investing.com/equities/itcen-co-ltd"
+  "https://zdnet.co.kr/view/?no=20261113182928",
+  "https://www.ddaily.co.kr/page/view/2026111316243654968",
+  "https://m.news.nate.com/view/20260813n26405",
+  "https://www.smarttoday.co.kr/ko-kr/articles/110415",
+  "https://www.mt.co.kr/stock/2026/05/15/2026051513299641277",
+  "https://supple.kr/news/cmsqzgwoc001u14m392tr5twa",
+  "https://www.newsworks.co.kr/news/articleView.html?idxno=903076",
+  "https://www.mt.co.kr/stock/2026/08/13/2026081312479678859",
+  "https://kr.investing.com/equities/itcen-co-ltd-earnings",
+  "https://www.investing.com/equities/secucen-co-ltd"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "232830",
  "name": "아이티센피엔에스",
  "name_en": "ITCENPNS CO.,LTD.",
@@ -223,11 +215,11 @@
   "IT·소프트웨어"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 18:40",
- "dataDate": "20260904",
+ "reportDate": "2026-11-14",
+ "reportTs": "2026-11-14 15:03",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-09-05",
+  "asOf": "2026-11-14",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -298,12 +290,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 76841769705,
-    "op": 1524204718,
-    "np_owner": 877074514
-   },
-   {
     "q": "2025Q3",
     "rev": 75628219164,
     "op": -310443357,
@@ -326,25 +312,31 @@
     "rev": 64650159781,
     "op": -918066266,
     "np_owner": 1809747002
+   },
+   {
+    "q": "2026Q3",
+    "rev": 120940005808,
+    "op": 1662525304,
+    "np_owner": 1533907815
    }
   ],
   "valuation": {
-   "price": 1916,
-   "mcap": 0.0317,
+   "price": 2000,
+   "mcap": 0.0331,
    "shares": 16533726,
    "total_shares": 16533726,
-   "wavg_shares": 16806065,
+   "wavg_shares": 12295758,
    "per": null,
-   "eps": -231,
-   "pbr": 2.0849,
-   "bps": 919,
-   "roe_ttm": -30.5,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": -3826952565,
+   "eps": -34,
+   "pbr": 1.4482,
+   "bps": 1381,
+   "roe_ttm": -4.6,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": -566963863,
    "ccy": "KRW",
    "bps_src": "자체",
    "eps_src": "순이익÷주식수",
-   "pbr_krx": 1.99,
+   "pbr_krx": 2.08,
    "bps_krx": 962.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
@@ -353,5 +345,6 @@
     "per": "loss"
    }
   }
- }
+ },
+ "textRules": 2
 }
