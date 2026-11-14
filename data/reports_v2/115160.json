@@ -1,220 +1,210 @@
 {
  "title": {
-  "ko": "합병·모빌리티 흑자 전환점에 선 휴맥스",
-  "en": "Humax at a Merger and Mobility Turning Point"
+  "ko": "셋톱박스 축소 속 모빌리티 인프라 전환 과제",
+  "en": "Humax: Mobility Infrastructure Pivot as Set-top Box Sales Shrink"
  },
  "lead": {
-  "ko": "셋톱박스 중심에서 자동차 전장·모빌리티 중심으로 사업구조를 재편해온 휴맥스가 10월 1일 휴맥스홀딩스와의 합병으로 지배구조 단일화를 앞두고 있다.",
-  "en": "Humax, which has been restructuring from a set-top box-centered business toward automotive electronics and mobility, is set to unify its governance structure through a merger with Humax Holdings effective October 1."
+  "ko": "휴맥스의 매출은 2023년부터 3년 연속 줄었고 2022년부터 4년 연속 적자를 기록했지만, 주차·전기차 충전 등 모빌리티 자회사는 2025년 EBITDA 흑자와 2026년 상반기 영업이익 흑자로 체질 변화를 보여 주고 있다.",
+  "en": "Humax's revenue has declined for three straight years since 2023 and the company has posted losses for four straight years since 2022, while its mobility subsidiaries in parking and EV charging have moved to positive EBITDA and operating profit."
  },
  "keypoints": [
   {
-   "ko": "2025년 매출 3,941.7억원, 영업손실 292.2억원으로 4개 연속 연간 순손실을 기록했으나 부채비율은 410.8%까지 상승했다.",
-   "en": "2025 revenue was KRW 394.2 billion with an operating loss of KRW 29.2 billion, marking four consecutive years of annual net losses while the debt ratio rose to 410.8%."
+   "ko": "2025년 매출은 3,942억원으로 2022년 6,895억원에서 줄었고, 2025년은 2022~2025년 중 가장 작은 해다.",
+   "en": "Revenue fell to KRW 394.2 billion in 2025 from KRW 689.5 billion in 2022, making 2025 the smallest year in the 2022-2025 window."
   },
   {
-   "ko": "최근 4개 분기(2025년 3분기~2026년 2분기) 지배주주 순이익은 130.8억원으로 흑자를 기록했으나 분기별 영업손익은 흑자와 적자를 오갔다.",
-   "en": "Net income attributable to owners over the trailing four quarters (Q3 2025-Q2 2026) turned positive at KRW 13.08 billion, though quarterly operating income alternated between profit and loss."
+   "ko": "2025년 영업손실은 292억원, 지배주주 순손실은 781억원으로 2022년부터 4년 연속 적자다.",
+   "en": "The company recorded an operating loss of KRW 29.2 billion and a net loss attributable to controlling shareholders of KRW 78.1 billion in 2025, a fourth straight year of losses since 2022."
   },
   {
-   "ko": "핵심 자회사 휴맥스모빌리티는 2026년 1분기에 이어 2분기에도 영업이익 흑자를 이어가며 상반기 누적 영업이익 18.5억원을 기록했다.",
-   "en": "Core subsidiary Humax Mobility posted a second consecutive quarter of operating profit in Q2 2026, bringing cumulative H1 operating profit to KRW 1.85 billion."
+   "ko": "2026년 2분기와 3분기는 영업손실로 2개 분기 연속 적자이며, 2026년 1분기에는 영업이익 28.2억원으로 흑자 전환했다.",
+   "en": "Operating results were a loss in the second and third quarters of 2026 after a 1Q 2026 operating profit of KRW 2.82 billion, a two-quarter run of losses."
   },
   {
-   "ko": "휴맥스와 휴맥스홀딩스는 10월 1일을 합병기일로 이중 상장 구조를 정리하며, 존속법인은 사명을 휴맥스로 유지한다.",
-   "en": "Humax and Humax Holdings will eliminate their dual-listing structure with a merger effective October 1, with the surviving entity retaining the Humax name."
+   "ko": "모빌리티 자회사는 2025년 EBITDA 흑자 전환 후 2026년 상반기 영업이익 흑자를 발표했고, 이 흐름이 그룹 실적 개선의 핵심 근거로 제시된다.",
+   "en": "The mobility subsidiaries reported positive EBITDA in 2025 and a first-half 2026 operating profit, which the company presents as the core basis for its earnings recovery."
   },
   {
-   "ko": "전기차 충전(EVCS) 사업은 영국 인증을 시작으로 독일·프랑스 등 유럽 시장으로 확대되고 있다.",
-   "en": "The EV charging solutions (EVCS) business is expanding into European markets including Germany and France, starting from UK certification."
+   "ko": "2026년 7월 발표된 휴맥스홀딩스 흡수합병은 2026년 10월 1일 합병기일로 마무리되어 단일 상장 체제가 되었으나, 파생상품부채와 풋옵션 부채가 재무 부담으로 거론된다.",
+   "en": "The absorption merger of Humax Holdings, announced in July 2026 with an October 1, 2026 effective date, created a single listed entity, but derivative and put-option liabilities remain cited as financial burdens."
   }
  ],
  "business": {
-  "ko": "휴맥스는 1989년 설립되어 디지털 셋톱박스와 비디오·브로드밴드 게이트웨이를 전 세계 방송·통신사업자에 공급해온 게이트웨이 전문기업이다. 셋톱박스 및 게이트웨이 사업은 여전히 매출의 상당 비중을 차지하지만, 유료방송 시장이 성숙 단계에 접어들면서 회사는 사업 다각화를 지속해왔다. 자동차 전장 부문은 자회사 위너콤을 통해 현대차·기아 등 완성차 업체에 차량용 통합샤크안테나와 스마트키 안테나를 공급하며, 이는 안정적 매출 기반으로 평가된다. 모빌리티 부문은 자회사 휴맥스모빌리티가 총괄하며, 그 아래 주차 인프라 운영사 하이파킹과 전기차 충전 운영사 휴맥스이브이가 있다. 하이파킹은 전국 1,400여 개 거점에서 29만 개 주차면을 운영하고 있으며, 휴맥스이브이는 전국 2만 기 이상의 전기차 충전기를 운영 중이다. 휴맥스는 전기차 충전 분야에서 35년간 쌓은 유럽 사업 경험을 바탕으로 OCPP·V2G 등 차세대 표준을 적용한 충전 솔루션(EVCS)을 영국 OZEV 인증을 시작으로 독일·프랑스 등으로 확대하고 있으며, 최근에는 영국 전기차 결제 플랫폼 라이트차지와 협력해 법인차·개인차 혼용 환경의 비용을 자동 정산하는 B2B 플릿 충전 통합 솔루션도 선보였다. 2026년 10월 1일 지주회사 휴맥스홀딩스와의 합병이 완료되면 셋톱박스에서 시작해 자동차 전장과 모빌리티 플랫폼으로 확장해온 사업 재편의 성과가 단일 상장 법인 안에 온전히 반영될 예정이다. 경쟁구도 측면에서 셋톱박스는 글로벌 하드웨어 업체들과, 모빌리티·주차 사업은 국내 주차·충전 운영사들과 경쟁하는 구조다.",
-  "en": "Founded in 1989, Humax is a gateway equipment specialist that has supplied digital set-top boxes and video/broadband gateways to broadcasters and telecom operators worldwide. The set-top box and gateway business still accounts for a significant share of revenue, but as the pay-TV hardware market has matured, the company has pursued continuous diversification. The automotive electronics segment, run through subsidiary Winercom, supplies integrated shark-fin antennas and smart-key antennas to automakers including Hyundai and Kia, providing a relatively stable revenue base. The mobility segment is overseen by subsidiary Humax Mobility, under which sit parking infrastructure operator Hi-Parking and EV charging operator Humax EV. Hi-Parking operates roughly 290,000 parking spaces across about 1,400 nationwide locations, while Humax EV runs more than 20,000 EV chargers nationwide. Drawing on 35 years of European business experience, Humax is expanding its EV charging solutions (EVCS), which apply next-generation standards such as OCPP and V2G, starting with UK OZEV certification and extending into Germany and France, and it recently partnered with UK EV payment platform Rightcharge to launch a B2B fleet charging integration solution that automatically separates costs between corporate and personal vehicle use. Once the merger with holding company Humax Holdings is completed on October 1, 2026, the results of a business transformation that began with set-top boxes and expanded into automotive electronics and mobility platforms will be fully reflected within a single listed entity. Competitively, the set-top box business faces global hardware makers while the mobility and parking business competes with domestic parking and charging operators."
+  "ko": "휴맥스는 셋톱박스를 출발점으로 한 방송 장비 제조기업이며, 현재는 자동차 전장과 전기차 충전 솔루션, 모빌리티 인프라 사업으로 무게 중심을 옮기는 중이다. 기업 개요에 따르면 유료방송사업자에게 디지털 방송 송출부터 단말까지의 솔루션을 공급하고, 차량용 안테나 등 자동차 전장 사업을 함께 영위한다. 셋톱박스 축의 흐름은 이투데이 보도에 나온 게이트웨이 매출 추이로 가늠할 수 있다. 이 매출은 2018년 약 1조 2,907억원에서 2025년 1,962억원, 2026년 상반기 1,012억원으로 줄었다. 자동차 부문에서는 차량용 안테나가 세계 경기와 자동차 산업 변동의 영향을 받아 2025년 실적 악화 요인으로 꼽혔다. 전기차 충전 솔루션은 유럽 사업 경험을 바탕으로 영국 OZEV 인증을 시작으로 독일과 프랑스 등으로 확대 중이라고 회사가 밝혔다. 모빌리티 사업은 자회사 체계로 운영된다. 주차 자회사는 전국 1,400여 거점, 29만 주차면을 운영하며 2025년 매출 약 2,000억원으로 전년 대비 8.2% 성장했다고 2026년 2월 회사가 밝혔다. 충전 자회사는 완속과 급속을 합쳐 2만기 이상을 운영하며 2025년 EBITDA 기준 흑자를 달성했다. 여기에 카셰어링 플랫폼과 플릿 관리, 대리·택시 서비스가 얹힌 구조다. 부문별 매출 비중은 본문 수치로 제시하지 않는다.",
+  "en": "Humax started as a set-top box maker and is now shifting its center of gravity toward automotive electronics, EV charging solutions and mobility infrastructure. According to the company overview, it supplies digital broadcast transmission-to-terminal solutions to pay-TV operators and also runs automotive electronics including in-vehicle antennas. The decline in the set-top box core can be traced through gateway revenue reported by a Korean financial daily, which fell from about KRW 1,290.7 billion in 2018 to KRW 196.2 billion in 2025 and KRW 101.2 billion in the first half of 2026. In automotive, in-vehicle antennas were cited as a 2025 drag because they are exposed to global economic and auto-industry swings. For EV charging, the company said it is extending its European experience, starting with UK OZEV certification, into Germany and France. Mobility operates through subsidiaries. The parking unit runs about 1,400 sites and 290,000 spaces and, according to the company in February 2026, grew 2025 revenue about 8.2 percent to roughly KRW 200 billion. The charging unit operates more than 20,000 chargers and turned EBITDA positive in 2025. A car-sharing platform, fleet management and ride services sit on top of this infrastructure."
  },
  "earnings": {
-  "ko": "휴맥스의 연간 매출은 2022년 6,894.8억원에서 2023년 6,526.3억원, 2024년 5,355.6억원, 2025년 3,941.7억원으로 4년 연속 감소했다. 영업이익은 2023년 112.1억원, 2024년 62.0억원으로 소폭 흑자를 유지했으나 2025년에는 292.2억원의 영업손실로 다시 적자 전환했고, 영업이익률도 2024년 1.2%에서 2025년 -7.4%로 악화됐다. 지배주주 순이익은 2022~2025년 4년 연속 적자(각각 -383.5억원, -614.9억원, -570.5억원, -780.7억원)를 기록해 누적 손실이 자본을 계속 잠식했다. 그 결과 지배주주 자본총계는 2022년 2,771.7억원에서 2025년 906.9억원으로 3년 만에 3분의 1 이하로 줄었고, 부채비율은 212.4%(2022)→235.8%(2023)→300.7%(2024)→410.8%(2025)로 꾸준히 상승했다. 다만 영업활동현금흐름은 2022년 -227.4억원에서 2023년 367.9억원, 2024년 817.9억원으로 개선된 뒤 2025년 179.3억원으로 낮아졌지만 여전히 양(+)의 흐름을 유지했다. 분기 단위로 보면 2025년 3분기 영업손실 19.6억원 속에서도 순이익은 27.4억원 흑자를 기록했고, 2025년 4분기에는 매출 867.3억원, 영업손실 149.8억원, 순손실 261.1억원으로 손익이 크게 악화됐다. 2026년 1분기에는 매출 920.9억원, 영업이익 28.2억원으로 흑자 전환했고 순이익은 351.7억원으로 영업이익 규모를 크게 웃돌아 영업외 요인이 컸던 것으로 보이며, 2026년 2분기에는 매출 1,095.9억원으로 회복됐지만 영업손실 15.0억원을 기록한 가운데 순이익은 12.8억원으로 소폭 흑자를 유지했다. 이에 따라 최근 4개 분기(2025년 3분기~2026년 2분기) 누적 지배주주 순이익은 130.8억원으로 집계되며, 분기별 영업손익의 등락에도 불구하고 순이익 기준으로는 흑자 구간에 들어섰다.",
-  "en": "Humax's annual revenue declined for four consecutive years, from KRW 689.5 billion in 2022 to KRW 652.6 billion in 2023, KRW 535.6 billion in 2024, and KRW 394.2 billion in 2025. Operating income stayed modestly positive at KRW 11.2 billion in 2023 and KRW 6.2 billion in 2024, but swung back to a loss of KRW 29.2 billion in 2025, with the operating margin worsening from 1.2% in 2024 to -7.4% in 2025. Net income attributable to owners posted losses for four straight years from 2022 to 2025 (-KRW 38.4 billion, -KRW 61.5 billion, -KRW 57.0 billion, and -KRW 78.1 billion, respectively), steadily eroding equity. As a result, equity attributable to owners fell from KRW 277.2 billion in 2022 to KRW 90.7 billion in 2025, less than a third of the earlier level within three years, while the debt ratio climbed steadily from 212.4% (2022) to 235.8% (2023), 300.7% (2024), and 410.8% (2025). Operating cash flow, however, improved from -KRW 22.7 billion in 2022 to KRW 36.8 billion in 2023 and KRW 81.8 billion in 2024, before easing to KRW 17.9 billion in 2025 while still remaining positive. On a quarterly basis, Q3 2025 saw a net profit of KRW 2.7 billion despite an operating loss of KRW 2.0 billion, while Q4 2025 deteriorated sharply with revenue of KRW 86.7 billion, an operating loss of KRW 15.0 billion, and a net loss of KRW 26.1 billion. Q1 2026 turned to an operating profit of KRW 2.8 billion on revenue of KRW 92.1 billion, with net income of KRW 35.2 billion far exceeding operating profit, suggesting a significant non-operating factor, while Q2 2026 revenue recovered to KRW 109.6 billion but posted an operating loss of KRW 1.5 billion alongside a modest net profit of KRW 1.3 billion. As a result, cumulative net income attributable to owners over the trailing four quarters (Q3 2025-Q2 2026) came to KRW 13.08 billion, moving into positive territory on a net-income basis despite the volatility in quarterly operating results."
+  "ko": "연간 매출은 2022년 6,895억원에서 2023년 6,526억원(전년 대비 5.3% 감소), 2024년 5,356억원(전년 대비 17.9% 감소), 2025년 3,942억원(전년 대비 26.4% 감소)으로 2023년부터 2025년까지 3년 연속 감소했다. 2022~2025년 중 가장 큰 해는 2022년이고 가장 작은 해는 2025년이다. 영업이익은 2022년 영업손실 52.6억원에서 2023년 112억원으로 흑자 전환했고, 2024년에는 62억원(전년 대비 44.7% 감소)으로 줄었으며, 2025년에는 영업손실 292억원으로 적자 전환했다. 영업이익률은 2022년 -0.8%, 2023년 1.7%, 2024년 1.2%, 2025년 -7.4%다. 지배주주 순손실은 2022년 384억원, 2023년 615억원, 2024년 570억원, 2025년 781억원으로 2022년부터 4년 연속 적자다. 당기순손실(비지배지분 포함)은 같은 기간 511억원, 784억원, 609억원, 814억원이며, 지배주주 몫과의 차이는 비지배지분이 손실을 나눠 가진 부분으로 읽힌다. 셋톱박스 시장 불황과 모빌리티 투자 확대가 적자 배경으로 보도됐다. 부채비율은 2022년 212.4%에서 2025년 410.8%로 올랐고, 2025년 말 부채총계는 3,949억원, 자본총계는 961억원(지배주주 지분 907억원)이다. 영업활동 현금흐름은 2022년 -227억원에서 2023년 368억원, 2024년 818억원으로 개선된 뒤 2025년 179억원으로 줄었으며, 영업손실을 낸 2025년에도 플러스를 유지했다. 분기로는 2025년 3분기 매출 976억원, 4분기 867억원(전 분기 대비 11.1% 감소), 2026년 1분기 921억원, 2분기 1,096억원(전 분기 대비 19.0% 증가), 3분기 763억원(전 분기 대비 30.3% 감소, 전년 동기 대비 21.8% 감소)이다. 영업이익은 2026년 1분기 28.2억원 흑자였으나 2분기 영업손실 15억원, 3분기 영업손실 71.9억원으로 적자가 이어졌다. 지배주주 순이익은 2026년 1분기 352억원으로 흑자 전환했지만 영업이익 규모를 크게 웃돌아 영업 외 항목 등 일회성 요인의 영향이 컸을 가능성이 있다. 2분기에는 12.8억원으로 96.4% 줄었고 3분기에는 52억원 순손실로 전환했다. 2025년 4분기부터 2026년 3분기까지 네 개 분기 지배주주 순이익 합계는 51.4억원이다.",
+  "en": "Annual revenue went from KRW 689.5 billion in 2022 to KRW 652.6 billion in 2023 (down 5.3 percent year on year), KRW 535.6 billion in 2024 (down 17.9 percent) and KRW 394.2 billion in 2025 (down 26.4 percent), a three-year decline from 2023 through 2025. The largest year in the 2022-2025 window was 2022 and the smallest was 2025. Operating results swung from an operating loss of KRW 5.26 billion in 2022 to an operating profit of KRW 11.2 billion in 2023, then KRW 6.2 billion in 2024 (down 44.7 percent), and an operating loss of KRW 29.2 billion in 2025. The operating margin was -0.8 percent in 2022, 1.7 percent in 2023, 1.2 percent in 2024 and -7.4 percent in 2025. The net loss attributable to controlling shareholders was KRW 38.4 billion, KRW 61.5 billion, KRW 57 billion and KRW 78.1 billion across 2022 to 2025, a loss in each of those four years. The net loss including non-controlling interests was KRW 51.1 billion, KRW 78.4 billion, KRW 60.9 billion and KRW 81.4 billion, and the gap versus the parent figure reflects losses borne by non-controlling interests. The set-top box market slump and mobility investment were reported as the causes of the 2025 loss. The debt-to-equity ratio rose from 212.4 percent in 2022 to 410.8 percent in 2025, with total liabilities of KRW 394.9 billion against total equity of KRW 96.1 billion, of which KRW 90.7 billion belongs to controlling shareholders. Operating cash flow went from negative KRW 22.7 billion in 2022 to KRW 36.8 billion in 2023 and KRW 81.8 billion in 2024, then KRW 17.9 billion in 2025, which stayed positive even in the loss year. Quarterly revenue was KRW 97.6 billion in 3Q 2025, KRW 86.7 billion in 4Q 2025 (down 11.1 percent quarter on quarter), KRW 92.1 billion in 1Q 2026, KRW 109.6 billion in 2Q 2026 (up 19.0 percent) and KRW 76.3 billion in 3Q 2026 (down 30.3 percent quarter on quarter and down 21.8 percent year on year). Operating profit was KRW 2.82 billion in 1Q 2026, then an operating loss of KRW 1.5 billion in 2Q and KRW 7.19 billion in 3Q, a two-quarter run of losses. Net profit attributable to controlling shareholders was KRW 35.2 billion in 1Q 2026, far above that quarter's operating profit, which points to non-operating or one-off items; it fell to KRW 1.28 billion in 2Q (down 96.4 percent) and turned to a KRW 5.2 billion loss in 3Q. For the four quarters from 4Q 2025 through 3Q 2026, the sum of such net profit was KRW 5.14 billion."
  },
  "industry": {
-  "ko": "휴맥스가 속한 셋톱박스·게이트웨이 시장은 OTT 서비스 확산과 유료방송 가입자 성장세 둔화 속에서 성숙 단계에 접어든 것으로 평가된다. 다만 선진시장에서는 IPTV 보급 확대와 안드로이드 기반 셋톱박스 수요가 이어지고 있어 지역별로 수요 편차가 존재한다. 이에 회사는 셋톱박스 사업에서 쌓은 기술력을 자동차 전장과 전기차 충전 솔루션으로 확장하는 방향으로 사업 재편을 진행해왔다. 자동차 전장 부문은 현대차·기아라는 대형 완성차 고객을 확보하고 있어 전방산업인 완성차 생산 사이클에 연동되는 특성을 가진다. 전기차 충전 인프라 시장은 유럽과 국내 모두에서 성장 국면에 있으며, 국내에서는 주차·충전 통합 운영사들 간 경쟁이 이어지고 있다. 모빌리티 허브 개념을 통해 자율주행·로보택시 시대의 인프라 사업자로 자리매김하려는 시도는 아직 초기 단계로, 관련 매출 기여도는 제한적이다. 지주사와 사업회사로 이원화됐던 상장 구조를 단일화하는 이번 합병은 그룹 내 사업 재편 성과를 시장에 더 명확하게 전달하려는 시도로 풀이된다.",
-  "en": "The set-top box and gateway market that Humax operates in is generally seen as having entered a mature phase amid the spread of OTT services and slowing pay-TV subscriber growth. That said, demand for IPTV expansion and Android-based set-top boxes continues in developed markets, creating regional variation in demand. In response, the company has pursued a business realignment that extends its accumulated set-top box technology into automotive electronics and EV charging solutions. The automotive electronics segment benefits from large automaker customers in Hyundai and Kia, linking its performance to the broader vehicle production cycle. The EV charging infrastructure market is in a growth phase both in Europe and domestically, with competition among integrated parking and charging operators continuing in Korea. The attempt to position the company as a mobility hub infrastructure provider for the autonomous driving and robotaxi era remains at an early stage, with limited revenue contribution so far. The merger unifying the previously dual-listed holding company and operating company structure is interpreted as an effort to more clearly convey the results of the group's business realignment to the market."
+  "ko": "셋톱박스 시장은 OTT 확산 이후 수요가 줄며 불황에 들어섰고, 이 흐름이 게이트웨이 매출 급감으로 드러났다는 것이 보도의 공통된 진단이다. 자동차 전장에서는 차량용 안테나가 완성차 생산과 세계 교역 변화에 민감해 사이클 위치를 가늠하기 어렵다. 전기차 충전은 설치 경쟁을 넘어 운영 품질과 이용률 중심으로 시장 구도가 바뀌고 있다는 것이 업계 설명이다. 휴맥스는 주차, 충전, 플릿 관리를 하나의 운영 체계로 묶는 구조를 차별점으로 내세운다. 주차 자회사는 데이터 기반 빈 공간 분석과 동적 가격 모델을 도입해 2026년 1분기 영업이익이 전년 동기 대비 159% 늘었다고 밝혔다. 충전 자회사는 2026년 1분기 매출이 전년 동기 대비 46% 성장했다고 발표했다. 2026년 9월에는 6개사가 참여하는 로보택시 플릿 운영 인프라 협의체가 출범했다. 주차장과 충전소를 로보택시 운영 기반으로 쓸 수 있다는 것이 회사의 전략 논리다. 다만 이런 수요가 실제 매출로 이어지는 시점은 공개된 일정이 없다. 셋톱박스 쪽 경쟁 구도는 수요 축소 속 가격과 물량 경쟁이 겹친 구조로 볼 수 있다.",
+  "en": "The set-top box market entered a slump as OTT adoption reduced demand, and reporting consistently ties this to the sharp drop in gateway revenue. In automotive electronics, in-vehicle antennas are sensitive to vehicle production and shifts in global trade, which makes the cycle position difficult to pin down. In EV charging, the industry debate has moved from installation races toward operating quality and utilization. Humax positions the combination of parking, charging and fleet management as a single operating system that sets it apart. The parking unit said that after introducing data-driven vacant-space analysis and dynamic pricing, its 1Q 2026 operating profit rose 159 percent year on year. The charging unit reported 1Q 2026 revenue up 46 percent year on year. In September 2026 a robotaxi fleet operations consortium of six companies was launched, and the company's strategy rests on the idea that parking and charging sites can serve as robotaxi infrastructure. No schedule for when such demand converts into revenue has been disclosed. In set-top boxes, competition is shaped by shrinking demand combined with price and volume pressure."
  },
  "outlook": {
-  "ko": "가장 가까운 확인 대상은 2026년 10월 1일로 예정된 휴맥스와 휴맥스홀딩스의 합병 완료다. 합병비율은 휴맥스홀딩스 1주당 휴맥스 약 0.96주로, 자본시장법상 법정 기준시가를 적용해 산정됐으며 존속법인은 사명을 휴맥스로 유지한다. 이번 합병으로 지주사·사업회사로 이원화된 이중 상장 구조가 정리되며, 회사 측은 사업 재편의 성과를 기업가치에 온전히 반영하고 투자자 소통을 강화하겠다는 목표를 밝혔다. 모빌리티 부문에서는 휴맥스모빌리티가 하반기에도 주차 운영 효율화와 전기차 충전 사업의 수익성 개선을 지속하고, AI·데이터 기반 운영 고도화를 추진할 계획이라고 밝혔다. 전기차 충전 사업은 영국 인증을 발판으로 독일·프랑스 등 유럽 시장 진출을 확대하는 단계에 있다. 회사는 전국 단위로 구축한 주차·충전 인프라를 자율주행·로보택시 시대의 모빌리티 허브로 발전시키겠다는 방향을 제시했다. 다만 이러한 신사업의 확대가 셋톱박스 사업의 매출 감소를 상쇄할 수 있을지, 그리고 합병 이후 재무구조가 어떻게 재편될지는 향후 공시를 통해 확인이 필요하다.",
-  "en": "The nearest event to monitor is the completion of the merger between Humax and Humax Holdings, scheduled for October 1, 2026. The merger ratio is approximately 0.96 shares of Humax per share of Humax Holdings, calculated using the statutory market price basis under capital markets law, and the surviving entity will retain the Humax name. The merger will eliminate the dual-listing structure between the holding company and operating company, with management stating a goal of fully reflecting the results of business realignment in corporate value and strengthening investor communication. On the mobility side, Humax Mobility has stated it plans to continue improving parking operation efficiency and EV charging profitability in the second half, while pursuing AI- and data-driven operational upgrades. The EV charging business is in a stage of expanding into European markets including Germany and France, building on its UK certification. The company has outlined a direction to develop its nationwide parking and charging infrastructure into a mobility hub for the autonomous driving and robotaxi era. However, whether this new-business expansion can offset the decline in set-top box revenue, and how the balance sheet will be reshaped after the merger, remain to be confirmed through future disclosures."
+  "ko": "회사의 확인된 방향은 세 갈래다. 첫째, 2026년 7월 발표한 휴맥스홀딩스 합병이 2026년 10월 1일 합병기일로 마무리되어 사업회사 휴맥스가 단일 상장 체제로 존속했다. 회사는 이를 지배구조 단순화와 기업가치 반영의 계기로 설명한다. 둘째, 모빌리티 자회사는 2026년 상반기 영업이익 18.5억원으로 2개 분기 연속 흑자를 냈다고 발표했다. 회사는 주차 운영 역량과 AI 데이터 기반 관리 체계를 고도화해 수익성 중심 구조를 이어 간다는 계획을 밝혔다. 셋째, 전기차 충전 사업은 영국 OZEV 인증 이후 독일과 프랑스로 확대하는 중이며, 로보택시 운영 인프라 협의체에도 참여했다. 엔터프라이즈 AX 솔루션 기술을 모빌리티 사업에 결합해 시너지를 내겠다는 계획도 발표됐다. 반면 본업의 매출 회복 시점을 제시한 공개 가이던스는 확인되지 않았다. 셋톱박스 게이트웨이 매출 감소가 이어지는 한 전사 매출은 모빌리티 성장만으로 상쇄되는지가 관건이다. 2026년 3분기 매출이 전 분기 대비 30.3% 줄었다는 점도 이 질문과 연결된다. 다음 확인 지점은 2026년 사업보고서에 담길 연간 영업이익률과 부채 구조 변화다.",
+  "en": "Three directions are confirmed. First, the absorption merger of Humax Holdings, announced in July 2026, took effect on October 1, 2026, leaving the operating company Humax as the single listed entity, which the company presents as simplifying governance and reflecting its business restructuring in value. Second, the mobility subsidiaries reported a first-half 2026 operating profit of KRW 1.85 billion and two consecutive quarters of profit, and management said it will strengthen parking operations and AI-based data management to keep the business profit-focused. Third, EV charging is expanding from the UK to Germany and France, and the company joined a robotaxi operations infrastructure consortium. The company also announced plans to combine its enterprise AI transformation technology with the mobility business. No public guidance on a timeline for a recovery in the core set-top box revenue has been disclosed. As long as gateway revenue keeps declining, the key question is whether mobility growth can offset it, and the 30.3 percent quarter-on-quarter drop in 3Q 2026 revenue bears directly on that question. The next checkpoint is the annual operating margin and debt structure in the 2026 annual report."
  },
  "valuation_comment": {
-  "ko": "휴맥스는 지난 4년간 연속 순손실을 기록하며 주가수익비율이 유효하게 산출되지 않던 구간을 지나, 최근 4개 분기 기준 지배주주 순이익이 흑자로 전환되면서 비로소 이익 기준 배수 산정이 가능한 국면으로 들어섰다. 주가는 지배주주 순자산가치 대비 상당한 할인 구간에서 거래되는 모습을 보이는데, 이는 4년 연속 이어진 순손실로 자본총계가 지속적으로 축소된 배경과 맞물려 해석할 필요가 있다. 배당은 최근 확인되는 주당 현금배당금이 없어 배당 관련 지표는 업종 내에서 낮은 편에 속한다. 합병을 통한 지배구조 단일화가 향후 밸류에이션 산정 기준 자체를 바꿀 수 있다는 점도 감안해야 하는데, 이는 실적 개선의 지속성과 별개로 상장 주식수·자본구조 변화를 수반하기 때문이다. 결국 현재의 밸류에이션 지표는 실적 턴어라운드의 초기 신호와 재무구조 악화라는 상반된 요인을 동시에 반영하고 있는 것으로 볼 수 있다.",
-  "en": "Humax passed through a period in which price-to-earnings figures were effectively not meaningful due to four consecutive years of net losses, and has only recently entered a phase where earnings-based multiples can be calculated again, as net income attributable to owners turned positive over the trailing four quarters. The stock trades at a substantial discount to owners' net asset value, a pattern that should be read alongside the steady contraction of total equity driven by four straight years of net losses. With no recently confirmed per-share cash dividend, dividend-related metrics sit on the lower end within the industry. It is also worth noting that the governance unification through the merger could itself alter the basis for future valuation calculations, since it involves changes to share count and capital structure independent of the sustainability of any earnings improvement. Ultimately, current valuation metrics appear to reflect both an early signal of an earnings turnaround and the countervailing factor of a weakened balance sheet at the same time."
+  "ko": "주가와 장부가치를 비교하면 주가순자산비율은 순자산 대비 큰 폭으로 낮은 구간에 있다. 2025년 말 지배주주 지분 907억원과 비교해도 시가총액은 낮은 수준이다. 다만 장부가치의 무게는 부채비율이 2022년 212.4%에서 2025년 410.8%로 오른 흐름과 함께 봐야 한다. 주가이익비율은 적자 연도가 많아 배수 자체의 해석에 제약이 있다. 최근 네 개 분기 지배주주 순이익 합계가 51.4억원으로 작아 분기 이익이 조금만 바뀌어도 배수가 크게 움직일 수 있다. 배당 측면에서는 이익잉여금이 결손 상태라 배당 재원이 제약된다는 보도가 있다. 시가총액은 2027년부터 적용될 예정인 코스닥 상장 유지 기준인 300억원 요건을 웃도는 수준이다. 배수 해석의 핵심 변수는 영업손익이 흑자 구간을 얼마나 이어 가느냐는 점이다.",
+  "en": "Compared with book value, the price-to-book ratio sits well below net asset value, and the market capitalization is low relative to the KRW 90.7 billion of equity attributable to controlling shareholders at the end of 2025. The weight of that book value, however, has to be read alongside a debt-to-equity ratio that rose from 212.4 percent in 2022 to 410.8 percent in 2025. The price-to-earnings ratio carries limited interpretive value because the company posted losses in several years. Because the four quarters from 4Q 2025 through 3Q 2026 produced only KRW 5.14 billion of net profit attributable to controlling shareholders, small changes in quarterly profit can move the multiple sharply. On dividends, a Korean financial news report noted that retained earnings are in deficit, which constrains the funds available for distributions, and actual shareholder returns are minimal. The market capitalization sits above the KOSDAQ listing threshold of KRW 30 billion that a financial news report says takes effect from 2027. The key variable in reading these multiples is whether the company can keep operating profit in positive territory over consecutive quarters."
  },
  "bull": [
   {
    "title": {
-    "ko": "모빌리티 부문 흑자 전환 지속",
-    "en": "Sustained Turnaround in the Mobility Segment"
+    "ko": "모빌리티 자회사의 흑자 축적",
+    "en": "Profit build-up at the mobility subsidiaries"
    },
    "body": {
-    "ko": "핵심 자회사 휴맥스모빌리티는 2026년 1분기에 이어 2분기에도 영업이익 흑자를 이어가며 상반기 누적 영업이익 18.5억원을 기록했다. 하이파킹은 상반기 매출 986억원, 영업이익 79억원으로 전년 동기 대비 66% 증가했고 영업이익률도 5%에서 8%로 개선됐다. 전기차 충전 자회사 휴맥스이브이도 상반기 상각전영업이익(EBITDA) 약 30억원을 내며 4개 분기 연속 EBITDA 흑자를 이어갔다. 신사업 부문의 이러한 실적 개선이 이어질 경우 그룹 전체 손익 구조에 긍정적 영향을 줄 수 있다.",
-    "en": "Core subsidiary Humax Mobility posted a second straight quarter of operating profit in Q2 2026, bringing cumulative H1 operating profit to KRW 1.85 billion. Hi-Parking's H1 revenue reached KRW 98.6 billion with operating profit of KRW 7.9 billion, up 66% year-on-year, with the operating margin improving from 5% to 8%. EV charging subsidiary Humax EV also generated approximately KRW 3.0 billion in EBITDA in H1, extending its streak to four consecutive quarters of positive EBITDA. If this improvement in new-business performance continues, it could positively affect the group's overall earnings structure."
+    "ko": "주차·충전 자회사는 2025년 EBITDA 흑자를 기록했고, 주차 자회사는 2026년 1분기 영업이익 흑자 전환 이후 상반기 영업이익 흑자를 발표했다. 모빌리티 자회사는 상반기 영업이익 18.5억원으로 2개 분기 연속 흑자를 냈다고 밝혔다. 셋톱박스 축소로 줄어든 그룹 매출 중 운영형 인프라 사업이 이익 기반을 넓히는 흐름이다.",
+    "en": "The parking and charging subsidiaries reported positive EBITDA in 2025, and the parking unit followed its 1Q 2026 operating profit with a first-half profit. The mobility subsidiaries reported a first-half 2026 operating profit of KRW 1.85 billion and two straight quarters of profit. Operating infrastructure is widening the profit base as the set-top box business shrinks."
    }
   },
   {
    "title": {
-    "ko": "지배구조 단일화를 통한 투명성 제고",
-    "en": "Improved Transparency Through Governance Unification"
+    "ko": "사업 재편과 지배구조 단순화",
+    "en": "Restructuring and simpler governance"
    },
    "body": {
-    "ko": "2026년 10월 1일 완료 예정인 휴맥스홀딩스와의 합병으로 지주사·사업회사로 이원화된 이중 상장 구조가 정리된다. 회사 측은 사업 재편 성과를 기업가치에 온전히 반영하고 투자자와의 소통을 강화하겠다는 목표를 밝혔다. 합병 절차는 독립적인 사외이사 중심 특별위원회 심의와 외부 법률·회계 자문을 거쳤다는 점에서 절차적 투명성 확보가 강조됐다.",
-    "en": "The merger with Humax Holdings, set to be completed on October 1, 2026, will eliminate the dual-listing structure between the holding company and the operating company. Management has stated a goal of fully reflecting the results of business realignment in corporate value and strengthening investor communication. The merger process emphasized procedural transparency, having gone through review by an independent outside-director special committee and external legal and accounting advisors."
+    "ko": "2026년 10월 1일 합병기일로 휴맥스홀딩스 흡수합병이 마무리되어 그룹의 상장사는 휴맥스 하나로 정리됐다. 이중 상장 구조가 정리되면서 지주사의 상장 유지 리스크도 함께 해소됐다. 회사는 사업 재편의 성과를 기업가치에 온전히 반영하는 계기로 설명한다.",
+    "en": "The absorption merger of Humax Holdings took effect on October 1, 2026, leaving Humax as the only listed company in the group. Ending the dual-listing structure also removed the listing-maintenance risk at the holding company. The company describes the merger as a way to fully reflect the results of its business restructuring in corporate value."
    }
   },
   {
    "title": {
-    "ko": "자동차 전장·전기차 충전 사업 확장",
-    "en": "Expansion in Automotive Electronics and EV Charging"
+    "ko": "전기차 충전과 로보택시 인프라 확장",
+    "en": "Expansion in EV charging and robotaxi infrastructure"
    },
    "body": {
-    "ko": "자회사 위너콤을 통해 현대차·기아 등 완성차 업체에 차량용 안테나를 공급하는 사업은 상대적으로 안정적인 매출원으로 기능하고 있다. 전기차 충전 솔루션(EVCS)은 35년간 쌓은 유럽 사업 경험을 바탕으로 영국 OZEV 인증을 시작으로 독일·프랑스 등지로 확대되고 있다. 최근에는 영국 라이트차지와 협력해 법인차·개인차 혼용 환경의 B2B 플릿 충전 통합 솔루션도 선보이며 사업 영역을 넓히고 있다.",
-    "en": "Through subsidiary Winercom, the automotive antenna business supplying automakers including Hyundai and Kia functions as a relatively stable revenue source. The EV charging solutions (EVCS) business, built on 35 years of European experience, is expanding from UK OZEV certification into markets such as Germany and France. It has also recently partnered with UK-based Rightcharge to launch a B2B fleet charging integration solution for mixed corporate and personal vehicle environments, broadening its business scope."
+    "ko": "전기차 충전 솔루션은 영국 OZEV 인증을 확보한 뒤 독일과 프랑스 등 유럽으로 확대 중이다. 전국 주차 거점과 충전 인프라가 로보택시 전환 시 운영 기반으로 쓰일 수 있다는 것이 회사의 논리다.",
+    "en": "The EV charging solution has secured UK OZEV certification and is expanding into Europe, including Germany and France. The company argues that its nationwide parking sites and charging network could serve as operating infrastructure once robotaxi services scale."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "셋톱박스 핵심 사업의 구조적 매출 감소",
-    "en": "Structural Revenue Decline in the Core Set-Top Box Business"
+    "ko": "본업 매출 축소 지속",
+    "en": "Continued shrinkage of the core business"
    },
    "body": {
-    "ko": "연간 매출은 2022년 6,894.8억원에서 2025년 3,941.7억원으로 3년 만에 절반 가까이 줄었다. 유료방송 시장의 성숙과 OTT 확산 속에서 셋톱박스·게이트웨이 중심 매출 기반이 약화되고 있는 것으로 판단된다. 신사업이 아직 매출 비중에서 이를 완전히 대체하지 못하는 구간에 있다.",
-    "en": "Annual revenue nearly halved over three years, from KRW 689.5 billion in 2022 to KRW 394.2 billion in 2025. The set-top box and gateway revenue base appears to be weakening amid pay-TV market maturity and OTT expansion. New businesses have not yet fully offset this decline in terms of revenue contribution."
+    "ko": "연간 매출은 2023년부터 2025년까지 3년 연속 감소했고, 2025년 매출은 2022년의 절반을 웃도는 감소폭을 보였다. 게이트웨이 매출은 2025년 1,962억원에서 2026년 상반기 1,012억원으로 줄었다. 2026년 3분기 매출은 763억원으로 전 분기 대비 30.3% 줄어 분기 매출 회복의 신호가 약하다.",
+    "en": "Annual revenue declined for three straight years from 2023 through 2025, and 2025 revenue was down 26.4 percent from 2024. Gateway revenue fell from KRW 196.2 billion in 2025 to KRW 101.2 billion in the first half of 2026. Third-quarter 2026 revenue of KRW 76.3 billion fell 30.3 percent quarter on quarter, which gives little sign of a near-term rebound."
    }
   },
   {
    "title": {
-    "ko": "재무구조 악화와 자본 축소",
-    "en": "Deteriorating Balance Sheet and Shrinking Equity"
+    "ko": "적자 반복과 분기 실적 변동성",
+    "en": "Recurring losses and quarterly volatility"
    },
    "body": {
-    "ko": "지배주주 순이익은 2022년부터 2025년까지 4년 연속 적자를 기록했으며, 이에 따라 지배주주 자본총계는 2022년 2,771.7억원에서 2025년 906.9억원으로 3분의 1 이하로 줄었다. 부채비율도 212.4%(2022)에서 410.8%(2025)로 꾸준히 상승해 재무 안정성 지표가 악화되는 추세를 보였다. 자본 기반이 계속 축소되는 상황에서는 추가 자금조달이나 자본구조 재편의 필요성이 커질 수 있다.",
-    "en": "Net income attributable to owners posted losses for four consecutive years from 2022 to 2025, and as a result, equity attributable to owners shrank to less than a third, from KRW 277.2 billion in 2022 to KRW 90.7 billion in 2025. The debt ratio also rose steadily from 212.4% (2022) to 410.8% (2025), showing a worsening trend in financial stability metrics. With the capital base continuing to shrink, the need for additional funding or capital restructuring could increase."
+    "ko": "지배주주 순손실은 2022년부터 2025년까지 4년 연속 이어졌고, 2026년 2분기와 3분기에는 영업손실이 2개 분기 연속 나타났다. 2026년 1분기 지배주주 순이익 352억원은 영업이익 규모를 크게 웃돌아 일회성 성격이 짙다. 2분기 순이익은 12.8억원으로 96.4% 줄었고 3분기에는 52억원 순손실로 전환했다.",
+    "en": "The net loss attributable to controlling shareholders continued for four straight years from 2022 through 2025, and operating losses appeared in both the second and third quarters of 2026. The KRW 35.2 billion of controlling-shareholder profit in 1Q 2026 far exceeded that quarter's operating profit, which suggests a one-off character. Second-quarter net profit fell 96.4 percent to KRW 1.28 billion, and third quarter turned to a KRW 5.2 billion net loss."
    }
   },
   {
    "title": {
-    "ko": "분기 실적의 높은 변동성",
-    "en": "High Volatility in Quarterly Results"
+    "ko": "재무 부담과 부채 구조",
+    "en": "Financial burden and debt structure"
    },
    "body": {
-    "ko": "2025년 4분기 영업손실 149.8억원에서 2026년 1분기 영업이익 28.2억원으로 전환되고 다시 2분기 영업손실 15.0억원으로 돌아서는 등 영업손익이 분기마다 크게 오르내렸다. 2026년 1분기 순이익 351.7억원은 영업이익 규모를 크게 웃돌아 일회성 영업외 요인이 작용했을 가능성을 시사한다. 이러한 변동성은 사업 재편이 진행 중인 과도기적 특성을 반영하는 것으로 해석할 수 있다.",
-    "en": "Operating results swung sharply between quarters, from an operating loss of KRW 15.0 billion in Q4 2025 to an operating profit of KRW 2.8 billion in Q1 2026, before reverting to an operating loss of KRW 1.5 billion in Q2 2026. Q1 2026 net income of KRW 35.2 billion far exceeded the scale of operating profit, suggesting a possible one-off non-operating factor. This volatility can be interpreted as reflecting the transitional nature of an ongoing business realignment."
+    "ko": "부채비율은 2022년 212.4%에서 2025년 410.8%로 올랐고, 2025년 말 부채총계는 3,949억원으로 자본총계 961억원을 크게 웃돈다. 2026년 6월 말 기준 파생상품부채는 1,106억원이며, 이 가운데 1년 내 만기 유동부채가 996억원에 이른다는 보도가 있다. 모빌리티 자회사 관련 풋옵션 부채도 836억원 규모로 보도됐다.",
+    "en": "The debt-to-equity ratio climbed from 212.4 percent in 2022 to 410.8 percent in 2025, with total liabilities of KRW 394.9 billion at the end of 2025 well above total equity of KRW 96.1 billion. A financial news report said derivative liabilities stood at KRW 110.6 billion at the end of June 2026, with nearly KRW 99.6 billion of that current and due within one year. Put-option liabilities linked to the mobility subsidiary were reported at KRW 83.6 billion."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "재무 리스크",
-    "en": "Financial Risk"
+    "ko": "재무 · 파생상품 부채",
+    "en": "Financial and derivative liabilities"
    },
    "body": {
-    "ko": "4년 연속 순손실이 이어지며 지배주주 자본총계가 크게 줄었고 부채비율은 2025년 말 410.8%까지 상승했다. 자본 기반이 계속 얇아지는 상황에서는 추가 유상증자나 차입 확대와 같은 자본조달 이슈가 발생할 가능성을 배제할 수 없다. 재무구조 개선 여부는 향후 분기 실적과 공시를 통해 지속적으로 확인이 필요하다.",
-    "en": "Four consecutive years of net losses have substantially reduced equity attributable to owners, while the debt ratio rose to 410.8% at the end of 2025. With the capital base continuing to thin, the possibility of capital-raising issues such as additional rights offerings or increased borrowing cannot be ruled out. Whether the balance sheet improves needs to be continuously verified through future quarterly results and disclosures."
+    "ko": "파생상품부채와 풋옵션 부채는 현금 지출 시점이 불확실한 부담이다. 2025년 말 부채비율이 410.8%로 높아 유동성 여유가 제한된다. 영업활동 현금흐름이 플러스를 유지해도 이 부채의 정산 규모에 따라 재무 구조가 빠르게 바뀔 수 있다.",
+    "en": "Derivative and put-option liabilities carry uncertain timing for cash outflows. A debt-to-equity ratio of 410.8 percent at the end of 2025 limits financial flexibility. Even with positive operating cash flow, settlement amounts could reshape the balance sheet quickly."
    }
   },
   {
    "cat": {
-    "ko": "합병·구조 재편 리스크",
-    "en": "Merger and Restructuring Risk"
+    "ko": "상장 유지 요건과 지배구조",
+    "en": "Listing requirements and governance"
    },
    "body": {
-    "ko": "2026년 10월 1일 예정된 휴맥스홀딩스와의 합병은 합병비율 산정, 신주 발행 등 절차가 완결돼야 마무리되는 사안이다. 합병 이후 통합법인의 자본구조와 주식 수 변화가 기존 주주가치에 미치는 영향은 별도로 확인해야 한다. 사업 재편이 진행 중인 만큼 통합 과정에서 예상치 못한 비용이나 지연이 발생할 가능성도 있다.",
-    "en": "The merger with Humax Holdings, scheduled for October 1, 2026, is only finalized once procedures such as the merger ratio determination and new share issuance are completed. The impact on existing shareholder value from changes in the combined entity's capital structure and share count after the merger needs to be separately verified. As the business realignment is still in progress, there is also a possibility of unexpected costs or delays during the integration process."
+    "ko": "코스닥 상장폐지 기준인 시가총액 요건은 2027년부터 200억원 미만에서 300억원 미만으로 높아진다는 보도가 있다. 지배 구조에서는 2세 가족회사가 최대주주가 되는 2단계 지분 변동이 있었다. 지배 구조 변화와 상장 기준의 변화가 함께 맞물려 주주 신뢰 측면의 부담이 될 수 있다.",
+    "en": "A financial news report said the KOSDAQ delisting threshold for market capitalization rises from KRW 20 billion to KRW 30 billion from 2027. The ownership structure changed in two steps, with a family company of the second generation becoming the largest shareholder. Together, the governance change and the higher listing threshold could weigh on shareholder confidence."
    }
   },
   {
    "cat": {
-    "ko": "산업·경쟁 리스크",
-    "en": "Industry and Competitive Risk"
+    "ko": "자동차 전장과 신사업 투자 부담",
+    "en": "Automotive exposure and new-business investment"
    },
    "body": {
-    "ko": "글로벌 셋톱박스·게이트웨이 하드웨어 시장은 유료방송 시장의 성숙과 OTT 확산 속에서 구조적으로 정체되는 국면에 있는 것으로 평가된다. 전기차 충전과 모빌리티 사업은 성장 시장이지만 국내외 경쟁사들과의 경쟁이 치열하며, 해외 인증·규제 대응에 시간과 비용이 소요될 수 있다. 자동차 전장 부문 역시 완성차 업체의 생산 계획이나 공급망 상황에 실적이 연동되는 구조적 특성을 지닌다.",
-    "en": "The global set-top box and gateway hardware market is assessed to be in a structurally stagnating phase amid pay-TV market maturity and OTT expansion. The EV charging and mobility businesses are growth markets, but face intense competition from domestic and overseas rivals, and responding to overseas certification and regulatory requirements can take time and cost. The automotive electronics segment also has a structural characteristic of being linked to automakers' production plans and supply-chain conditions."
+    "ko": "차량용 안테나는 자동차 산업의 글로벌 변동에 노출되어 2025년 실적 악화 요인으로 꼽혔다. 모빌리티 자회사는 흑자 전환했지만 투자 확대가 적자의 배경으로 보도됐다. 로보택시 전환 시점이 공개되지 않아 인프라 투자의 회수 기간을 예측하기 어렵다.",
+    "en": "In-vehicle antennas are exposed to global swings in the auto industry, and they were cited as a 2025 earnings drag. The mobility subsidiaries have turned profitable, but investment expansion was reported as a cause of the group's losses. Because no timeline for the shift to robotaxi services has been disclosed, the payback period for infrastructure spending is hard to estimate."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 10월 1일",
-    "en": "October 1, 2026"
+    "ko": "2027년 3월 말",
+    "en": "Late March 2027"
    },
    "what": {
-    "ko": "휴맥스와 휴맥스홀딩스의 합병기일로, 이중 상장 구조가 정리되고 존속법인 휴맥스가 단일 상장체제로 전환되는지 확인이 필요하다.",
-    "en": "The merger effective date between Humax and Humax Holdings; check whether the dual-listing structure is resolved and the surviving Humax entity transitions to a single-listing structure."
+    "ko": "2026년 사업보고서 제출로 연간 영업손익과 지배주주 순손실이 확정된다. 파생상품부채와 풋옵션 부채의 정산 가능성, 부채비율이 410.8%에서 얼마나 바뀌는지가 확인 지점이다.",
+    "en": "The 2026 annual report will confirm full-year operating and net results. The points to check are the settlement outlook for derivative and put-option liabilities and how the 410.8 percent debt-to-equity ratio moves."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기 실적 발표 시점",
-    "en": "Q4 2026 earnings release"
+    "ko": "2027년부터",
+    "en": "From 2027"
    },
    "what": {
-    "ko": "합병 이후 첫 통합 분기 실적으로, 셋톱박스·자동차 전장·모빌리티 부문별 손익 기여도와 재무구조 변화를 확인할 필요가 있다.",
-    "en": "The first combined quarterly report after the merger; check the profit contribution of the set-top box, automotive electronics, and mobility segments, along with any changes to the balance sheet."
+    "ko": "코스닥 상장 유지 기준의 시가총액 요건이 300억원 미만으로 높아진다. 시가총액이 이 기준을 계속 웃도는지가 상장 유지와 관련된 확인 지점이다.",
+    "en": "The KOSDAQ market-capitalization threshold for listing maintenance rises to below KRW 30 billion. Whether market capitalization stays above that level is the checkpoint tied to continued listing."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 중",
-    "en": "During H2 2026"
+    "ko": "2027년 5월 중순",
+    "en": "Mid-May 2027"
    },
    "what": {
-    "ko": "휴맥스모빌리티의 주차·전기차 충전 사업 수익성 개선이 3개 분기 이상 연속될 수 있는지, 흑자 기조의 지속성을 점검할 필요가 있다.",
-    "en": "Check whether the profitability improvement in Humax Mobility's parking and EV charging businesses can extend beyond two consecutive quarters, testing the durability of the profit trend."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 하반기 이후",
-    "en": "From H2 2026 onward"
-   },
-   "what": {
-    "ko": "독일·프랑스 등 유럽 전기차 충전 시장 진출 관련 인증·계약 진행 상황을 추가로 확인할 필요가 있다.",
-    "en": "Additional confirmation is needed on the progress of certification and contracts related to EV charging market entry in Germany, France, and other European markets."
+    "ko": "2027년 1분기 분기보고서에서 영업이익이 흑자를 이어 가는지 확인된다. 2026년 2분기 이후 영업손실이 이어진 가운데 모빌리티 자회사의 흑자가 그룹 영업이익으로 연결되는지가 관건이다.",
+    "en": "The 1Q 2027 quarterly report will show whether operating profit stays positive after operating losses in the second and third quarters of 2026. The key question is whether mobility subsidiary profits translate into group operating profit."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "휴맥스는 셋톱박스 중심의 전통 사업이 구조적으로 축소되는 가운데, 자동차 전장과 모빌리티(주차·전기차 충전) 사업으로의 전환을 통해 새로운 손익 구조를 만들어가고 있다. 연간 실적은 4년 연속 순손실과 자본 축소, 부채비율 상승이라는 재무적 부담을 안고 있지만, 최근 4개 분기 기준으로는 순이익이 흑자로 전환됐고 핵심 자회사 휴맥스모빌리티도 2개 분기 연속 영업흑자를 냈다. 2026년 10월 1일로 예정된 휴맥스홀딩스와의 합병은 이중 상장 구조를 정리하고 사업 재편 성과를 단일 법인에 반영하려는 시도로, 회사의 지배구조와 자본구조에 변화를 가져올 예정이다. 산업 측면에서는 셋톱박스 시장의 성숙과 모빌리티·전기차 충전 시장의 성장이라는 상반된 흐름이 동시에 존재한다. 투자자로서는 합병 완료 이후의 재무구조 변화, 모빌리티 부문 흑자 기조의 지속 여부, 그리고 셋톱박스 사업의 매출 안정화 여부를 함께 지켜볼 필요가 있다. 본 리포트는 정보 제공을 목적으로 하며 매수·매도 의견이나 목표주가를 포함하지 않는다.",
-   "en": "Humax is building a new earnings structure through its shift toward automotive electronics and mobility (parking and EV charging) even as its traditional set-top box-centered business faces structural contraction. Annual results carry a financial burden of four consecutive years of net losses, shrinking equity, and a rising debt ratio, but net income turned positive over the trailing four quarters, and core subsidiary Humax Mobility posted operating profit for two consecutive quarters. The merger with Humax Holdings, scheduled for October 1, 2026, is an attempt to eliminate the dual-listing structure and reflect the results of business realignment within a single entity, and it will bring changes to the company's governance and capital structure. On the industry side, the maturity of the set-top box market and the growth of the mobility and EV charging markets represent two opposing trends occurring simultaneously. Investors should watch the changes to the balance sheet after the merger is completed, whether the mobility segment's profit trend continues, and whether the set-top box business stabilizes in terms of revenue. This report is provided for informational purposes and does not include a buy or sell recommendation or a target price."
+   "ko": "휴맥스는 셋톱박스 매출 축소가 3년 연속 이어진 가운데 자동차 전장과 모빌리티 인프라로 사업을 옮기는 중이다. 공시 실적 기준 2022년부터 4년 연속 지배주주 순손실이 나타났고, 2026년 2분기와 3분기에는 영업손실이 2개 분기 연속 발생했다. 반면 주차·충전 자회사는 2025년 EBITDA 흑자와 2026년 상반기 영업이익 흑자를 발표해 운영형 인프라의 수익성이 개선되는 흐름을 보인다. 합병으로 상장 체제가 단일화되었고 유럽 충전 사업과 로보택시 인프라 협의체가 새로운 축으로 제시된다. 약세 요인은 매출 감소의 지속, 분기 실적의 변동성, 부채비율 410.8%와 파생상품·풋옵션 부채의 부담이다. 강세 요인은 모빌리티 자회사의 흑자 축적과 사업 재편에 따른 지배구조 정리다. 두 흐름이 상쇄되는지는 2027년 사업보고서의 연간 영업이익률과 부채 구조 변화에서 확인될 전망이다.",
+   "en": "Humax is moving its business toward automotive electronics and mobility infrastructure while set-top box revenue has declined for three straight years. On the basis of filed results, the company has posted net losses attributable to controlling shareholders for four straight years since 2022, and operating losses in both the second and third quarters of 2026. On the other side, the parking and charging subsidiaries reported positive EBITDA in 2025 and a first-half 2026 operating profit, which points to improving profitability in operating infrastructure. The merger has consolidated the group into a single listed company, and European charging and the robotaxi consortium are presented as new pillars. Weak points include continuing revenue decline, quarterly volatility, a 410.8 percent debt-to-equity ratio and the burden of derivative and put-option liabilities. Strong points include the profit build-up at the mobility subsidiaries and the governance simplification from the restructuring. Whether these forces offset each other is expected to become clear from the annual operating margin and debt structure in the 2026 annual report."
   }
  },
  "sources": [
-  "https://m.thinkpool.com/item/115160",
-  "https://alpha-lenz.com/ko/companies/1608",
-  "https://securities.miraeasset.com/bbs/maildownload/2017081018463884_140",
-  "https://littlebproject.com/stock/115160/40/23806",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A115160",
-  "https://www.investing.com/equities/humax-co-ltd-earnings",
-  "https://www.google.com/finance/beta/quote/115160:KOSDAQ?hl=ko",
-  "https://www.stockplus.com/m/stocks/KOREA-A115160",
-  "https://thevc.kr/humax",
+  "https://holdings.humaxdigital.com/archives/5406",
+  "https://www.gocarnet.co.kr/rental-used_car/2026/05/117654",
+  "https://humaxmobility.com/global/news/",
+  "https://www.fnnews.com/news/202605201128477087",
+  "https://www.etoday.co.kr/news/view/2643454",
   "https://holdings.humaxdigital.com/archives/5576",
-  "https://thevc.kr/humax/products",
-  "https://kr.humaxdigital.com/archives/13888",
-  "https://www.greened.kr/news/articleView.html?idxno=292562",
-  "https://www.asiae.co.kr/article/2021022409505997145",
-  "https://kr.humaxdigital.com/about-humax",
-  "https://www.electimes.com/news/articleView.html?idxno=333777",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=scSHmr7Xj2Ev3AKn",
-  "https://www.paxnet.co.kr/stock/analysis/main?abbrSymbol=028080"
+  "https://www.sentv.co.kr/article/view/sentv202602260174",
+  "https://news.bizwatch.co.kr/article/market/2026/09/02/0029",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=115160",
+  "https://kr.humaxdigital.com/",
+  "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=715439",
+  "https://www.globenewswire.com/news-release/2026/11/05/3396193/8267/en/himax-technologies-inc-reports-third-quarter-2026-financial-results-provides-fourth-quarter-2026-guidance.html",
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02646966616124408",
+  "https://www.manilatimes.net/2026/11/05/tmt-newswire/globenewswire/himax-technologies-inc-reports-third-quarter-2026-financial-results-provides-fourth-quarter-2026-guidance/2462748",
+  "https://www.morningstar.com/news/globe-newswire/9871139/himax-technologies-inc-reports-third-quarter-2026-financial-results-provides-fourth-quarter-2026-guidance",
+  "https://www.fool.com/earnings/call-transcripts/2026/11/05/himax-himx-q3-2026-earnings-call-transcript/",
+  "https://www.vlsi.kr/en/sk-hynix-q3-2026-earnings-14-facts-en/",
+  "https://finance.yahoo.com/markets/stocks/articles/himax-technologies-inc-reports-third-113500149.html"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "115160",
  "name": "휴맥스",
  "name_en": "HUMAX CO., LTD.",
@@ -223,11 +213,11 @@
   "전자·부품"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 18:44",
- "dataDate": "20260904",
+ "reportDate": "2026-11-14",
+ "reportTs": "2026-11-14 15:52",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-09-04",
+  "asOf": "2026-11-14",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -297,12 +287,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 111935021933,
-    "op": -5471489236,
-    "np_owner": -36711971523
-   },
-   {
     "q": "2025Q3",
     "rev": 97560040226,
     "op": -1962394137,
@@ -325,36 +309,36 @@
     "rev": 109592671754,
     "op": -1498266464,
     "np_owner": 1279839807
+   },
+   {
+    "q": "2026Q3",
+    "rev": 76335843284,
+    "op": -7190695402,
+    "np_owner": -5201255854
    }
   ],
   "valuation": {
-   "price": 4770,
-   "mcap": 0.0359,
+   "price": 4655,
+   "mcap": 0.035,
    "shares": 7524831,
-   "total_shares": 4307533,
-   "wavg_shares": 4310347,
-   "per": null,
-   "eps": null,
-   "pbr": null,
-   "bps": null,
-   "roe_ttm": 11.2,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": 13079191398,
+   "total_shares": 4312142,
+   "wavg_shares": 4305186,
+   "per": 3.908,
+   "eps": 1191,
+   "pbr": 0.1681,
+   "bps": 27697,
+   "roe_ttm": 4.5,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": 5135037165,
    "ccy": "KRW",
    "bps_src": "자체",
    "eps_src": "순이익÷주식수",
-   "pbr_krx": null,
-   "bps_krx": null,
+   "pbr_krx": 0.22,
+   "bps_krx": 21030.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
-   "div": 0.0,
-   "shares_patched": {
-    "on": "2026-11-12",
-    "was": 6584982,
-    "now": 7524831,
-    "factor": null,
-    "why": "주식수가 배수로 안 떨어진다(증자 등) — 자본을 다시 받아야 해서 값을 숨긴다"
-   }
+   "div": 0.0
   }
- }
+ },
+ "textRules": 2
 }
