@@ -602,5 +602,32 @@ ok("batch_id" in ((_wfb.get(True) or _wfb.get("on"))["workflow_dispatch"]["input
    and "DUMP_BATCH_ID: ${{ inputs.batch_id" in _wfb_t,
    "작업 파일 — dump 가 읽을 배치를 고를 수 있다(리포트 v2 배치의 버린 글도 읽는다 · 2026-11-13)")
 
+print("⑧ 리포트 작업 직후 정리 — 워치독이 목록 · 지표 표 · 첫 화면 숫자 · 종목 페이지를 곧바로 맞춘다(2026-11-16)")
+# 30분 예약이 실제로는 4~7시간에 한 번만 돌아 새로 쓴 리포트와 상단 지표 줄 · 첫 화면 숫자가 그동안 달랐다.
+# workflow_run 은 작업 이름으로 잇는다 — 이름을 바꾸면 조용히 끊기므로 실제 이름과 견준다.
+_WFD = HERE.parent.parent / ".github" / "workflows"
+_wd = yaml.safe_load((_WFD / "reports_watchdog.yml").read_text(encoding="utf-8"))
+_won = _wd.get(True) or _wd.get("on")
+_writers = ["filing_reports.yml", "collect_batch.yml", "generate_reports_v2.yml", "generate_reports_batch.yml",
+            "new_listings.yml"]
+_names = [yaml.safe_load((_WFD / f).read_text(encoding="utf-8"))["name"] for f in _writers]
+_listed = ((_won.get("workflow_run") or {}).get("workflows") or [])
+ok(sorted(_listed) == sorted(_names) and (_won.get("workflow_run") or {}).get("types") == ["completed"],
+   "워치독 — 리포트를 쓰는 작업 다섯이 끝나면 돈다(작업 이름이 실제 이름과 같다)",
+   f"빠짐 {sorted(set(_names) - set(_listed))} · 없는 이름 {sorted(set(_listed) - set(_names))}")
+_wj = _wd["jobs"]["watchdog"]
+ok("workflow_run.head_branch == 'main'" in str(_wj.get("if")),
+   "워치독 — 작업 가지에서 돌린 실행(진단 dump 등)이 끝난 것으로는 돌지 않는다", str(_wj.get("if")))
+_sync = [x for x in _wj["steps"] if "_sync_grid.py" in (x.get("run") or "")]
+_bf = [x for x in _wj["steps"] if "gh workflow run generate_reports_v2.yml" in (x.get("run") or "")]
+ok(len(_sync) == 1 and not _sync[0].get("if") and "stamp_counts.py" in _sync[0]["run"] and "_reindex.py" in _sync[0]["run"],
+   "워치독 — 정리 단계(목록 · 첫 화면 숫자 · 지표 표 · 종목 페이지)는 언제나 돈다")
+ok(len(_bf) == 1 and "github.event_name != 'workflow_run'" in str(_bf[0].get("if"))
+   and "!inputs.sync_only" in str(_bf[0].get("if")),
+   "워치독 — 리포트 작업이 끝나서 부른 실행 · 정리만 하라는 손 실행은 백필을 다시 켜지 않는다(되먹임 방지)",
+   str(_bf[0].get("if")) if _bf else "백필 단계 없음")
+ok(((_won.get("workflow_dispatch") or {}).get("inputs") or {}).get("sync_only", {}).get("type") == "boolean",
+   "워치독 — 손 실행에 '정리만' 선택이 있다")
+
 print(f"\n통과 {passed} · 실패 {failed}")
 sys.exit(1 if failed else 0)
