@@ -246,15 +246,33 @@ def diagnose(message):
         out["need"] = {"verdict": bool(rep.get("verdict")), "risks": len(rep.get("risks") or []),
                        "keypoints": len(rep.get("keypoints") or []), "business": bool(rep.get("business"))}
         out["keys"] = ",".join(sorted(rep))
-        # 항목 목록의 칸 이름(2026-11-13) — 위험 요인 항목에 분류(cat)만 남은 글(033790)의 본문 칸 이름을 알 수 없었다
+        # 항목 목록의 칸 이름(2026-11-13) — 위험 요인 항목에 분류(cat)만 남은 글(033790)의 본문 칸 이름을 알 수 없었다.
+        # 항목마다 칸 이름과 글자 수를 찍는다(2026-11-16) — 칸 이름을 모두 합쳐 찍으니(risks:body/cat/title) 어느 항목에서
+        # 본문이 빠졌는지, 'title' 이 짧은 이름표인지 본문인지 가릴 수 없었다.
         items = []
         for k in ("bull", "bear", "risks", "checkpoints"):
             if isinstance(rep.get(k), list):
-                names = sorted({kk for x in rep[k] if isinstance(x, dict) for kk in x})
-                items.append(f"{k}:{'/'.join(names) or len(rep[k])}")
+                each = ["/".join(f"{kk}{_vlen(x[kk])}" for kk in sorted(x)) if isinstance(x, dict) else type(x).__name__
+                        for x in rep[k]]
+                items.append(f"{k}:[{', '.join(each)}]")
         if items:
             out["items"] = " ".join(items)
     return out
+
+
+def _vlen(v, depth=0):
+    """진단용 글자 수 — 글은 길이, {ko, en} 은 한국어 길이, 다른 꼴은 그 모양(칸 이름 · 목록 길이 · 빈 값)."""
+    if isinstance(v, str):
+        return len(v)
+    if isinstance(v, dict) and isinstance(v.get("ko"), str):
+        return len(v["ko"])
+    if isinstance(v, dict):
+        if depth >= 2:
+            return "{…}"
+        return "{" + "/".join(f"{k}{_vlen(v[k], depth + 1)}" for k in sorted(v)) + "}"
+    if isinstance(v, list):
+        return f"[{len(v)}]"
+    return "∅" if v is None else type(v).__name__
 
 
 def fix_shape(rep):

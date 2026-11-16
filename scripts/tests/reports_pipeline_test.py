@@ -565,6 +565,18 @@ with __import__("contextlib").redirect_stdout(buf):
 _lg = buf.getvalue()
 ok("사정: 중단 end_turn" in _lg and "표지 1" in _lg and "Extra data" in _lg and "깨진 자리" in _lg,
    "버리는 글의 사정(중단 사유 · JSON 표지 · 깨진 자리)을 기록에 남긴다", _lg[-300:])
+# 항목 목록의 칸 이름도 남긴다(2026-11-16) — 위험 요인에 분류만 남은 글은 본문 칸 이름을 dump 로 다시 읽어야 알았다
+_msg2 = types.SimpleNamespace(content=[types.SimpleNamespace(
+    type="text", citations=None,
+    text='===JSON_START==={"lead": "a", "business": "b", "risks": [{"cat": "규제", "description": "x"}],'
+         ' "bull": [{"title": "t", "body": "y"}]}===JSON_END===')],
+    stop_reason="end_turn", usage=None)
+buf = io.StringIO()
+with __import__("contextlib").redirect_stdout(buf):
+    M._log_shape(_msg2)
+_lg = buf.getvalue()
+ok("항목 칸: bull:[body1/title1] risks:[cat2/description1]" in _lg,
+   "버리는 글의 항목마다 칸 이름 · 글자 수(위험 요인 본문 칸 등)를 기록에 남긴다", _lg[-300:])
 
 # ═══ ⑧ DART 한도 마커 · 정지 스위치 ═════════════════════════════════════
 print("⑧ 한도 마커 · 정지 스위치")
@@ -956,6 +968,32 @@ r = GOODREP()
 r["risks"][0]["title"] = {"ko": "덤", "en": "Extra"}
 M.normalize_shape(r)
 ok(r["risks"][0]["cat"]["ko"] != "덤" and "title" not in r["risks"][0], "(g2) 제자리 칸이 있으면 다른 이름의 칸은 덮지 않고 걷어낸다")
+# (g3) 항목을 칸 하나로 한 번 더 감싼 글 — 033790(11/11~13 하이쿠)의 위험 요인 둘째 항목이 {"title": {"cat": …, "body": …}} 였다.
+#      전에는 이름표 칸 옮기기가 'title' 을 분류로 옮기고 안쪽 칸을 걷어내 분류도 본문도 빈 항목이 되어 글 전체를 버렸다.
+r = GOODREP()
+_r1 = r["risks"][1]
+r["risks"][1] = {"title": {"body": _r1["body"], "cat": _r1["cat"]}}
+r["bear"][2] = {"item": {"heading": {"ko": "수요 둔화", "en": "Demand slowdown"}, "body": r["bear"][2]["body"]}}
+n = M.normalize_shape(r)
+ok(n >= 2 and M.valid_v2(r, quiet=True) and r["risks"][1]["cat"] == _r1["cat"] and r["risks"][1]["body"] == _r1["body"]
+   and set(r["risks"][1]) == {"cat", "body"} and r["bear"][2]["title"]["ko"] == "수요 둔화",
+   "(g3) 한 번 더 감싼 항목을 풀어 되살린다(감싼 칸 이름 · 안쪽의 다른 이름표 칸)", f"n={n} · {r['risks'][1]}")
+r = GOODREP()
+r["risks"][0]["note"] = {"cat": {"ko": "덤", "en": "Extra"}}
+_c0 = dict(r["risks"][0]["cat"])
+M.normalize_shape(r)
+ok(r["risks"][0]["cat"] == _c0 and "note" not in r["risks"][0] and M.valid_v2(r, quiet=True),
+   "(g3) 푼 칸은 있는 칸을 덮지 않는다")
+r = GOODREP()
+_t0 = dict(r["bull"][0]["title"])
+M.normalize_shape(r)
+ok(r["bull"][0]["title"] == _t0 and M.valid_v2(r, quiet=True), "(g3) 글 칸({ko, en})은 풀지 않는다")
+r = GOODREP()
+r["risks"][2] = {"ko": {"cat": "환율 리스크", "body": r["risks"][2]["body"]["ko"]},
+                 "en": {"cat": "FX risk", "body": r["risks"][2]["body"]["en"]}}
+M.normalize_shape(r)
+ok(M.valid_v2(r, quiet=True) and r["risks"][2]["cat"] == {"ko": "환율 리스크", "en": "FX risk"},
+   "(g3) 한국어 뭉치는 풀고 영문 뭉치는 영문 자리로 나눠 담는다", str(r["risks"][2])[:200])
 
 # (h) en=False 검증 — 영문만 빠진 글과 통째로 잘린 글을 가른다
 r = GOODREP()

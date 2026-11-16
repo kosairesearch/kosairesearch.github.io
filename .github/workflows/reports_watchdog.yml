@@ -13,6 +13,22 @@ on:
   schedule:
     - cron: '*/30 * * * *'   # 30분마다 점검 (한 번 켜지면 self-chain이 이어가므로 시작 지연만 줄임)
   workflow_dispatch:
+    inputs:
+      sync_only:
+        description: '목록 · 지표 표 · 첫 화면 숫자 · 종목 페이지만 맞추고 백필 재가동은 하지 않는다'
+        type: boolean
+        default: false
+  # 리포트를 쓰는 작업이 끝나면 곧바로 맞춘다(2026-11-16). 30분 예약이 실제로는 4~7시간에 한 번만 돌아(11/14~16 실행
+  # 기록 8번) 그동안 상단 지표 줄(valuation.js)의 주당 지표 · 목록 · 첫 화면 숫자가 새로 쓴 리포트와 달랐다(11/16 숫자
+  # 삼각대조 그리드동기 16건 · 첫 화면 출처 평균). 이때는 정리만 한다 — 백필 재가동은 예약 · 손 실행에서만(되먹임을 막는다).
+  workflow_run:
+    workflows:
+      - "🗓️ 공시 트리거 리포트 (정기보고서 제출 종목 자동 갱신)"
+      - "📦 리포트 배치 회수 (남은 주문 받아오기)"
+      - "리포트 v2 생성 (정량+정성 · Batch)"
+      - "🤖📦 AI 리포트 대량 생성 (Batch · 50%↓)"
+      - "🆕 신규 상장 자동 리포트"
+    types: [completed]
 
 concurrency:
   group: reports-watchdog
@@ -24,6 +40,8 @@ permissions:
 
 jobs:
   watchdog:
+    # 작업 가지에서 돌린 실행(진단 dump 등)이 끝난 것으로는 돌지 않는다
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.head_branch == 'main' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -68,6 +86,8 @@ jobs:
           done
 
       - name: 남은 리포트 점검 후 필요 시 재가동
+        # 리포트 작업이 끝나서 부른 실행 · 정리만 하라는 손 실행은 백필을 다시 켜지 않는다
+        if: ${{ github.event_name != 'workflow_run' && !inputs.sync_only }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
