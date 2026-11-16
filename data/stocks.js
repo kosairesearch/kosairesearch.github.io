@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-11-16 20:54",
+  "lastUpdated": "2026-11-16 21:45",
   "dataDate": "20261116",
   "stocks": [
     {
@@ -15650,7 +15650,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "345290",
       "name": "영광와이케이엠씨",
-      "name_en": "",
+      "name_en": "YOUNGKWANG YKMC. INC.",
       "market": "코스닥",
       "sector": "기타",
       "price": 12540,
