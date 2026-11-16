@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "본업 안정 속 우주·전지 신성장 부각",
-  "en": "Core Power Business Steady, Space & Battery Units Gain Traction"
+  "ko": "영업이익 회복 지속, 수주 확대가 다음 확인 지점",
+  "en": "Operating profit recovery continues; order wins are the next test"
  },
  "lead": {
-  "ko": "전력기기 본업의 안정적 현금창출력을 기반으로 전지(비츠로셀)와 우주항공·핵융합(비츠로넥스텍) 자회사의 수주가 늘어나며 그룹 실적이 이익 회복 국면에 들어섰다.",
-  "en": "Backed by stable cash generation from its core power equipment business, Vitzro Tech's battery unit (Vitzro Cell) and space/fusion unit (Vitzro Nextek) are winning more orders, and group earnings have entered a recovery phase."
+  "ko": "비츠로테크는 2023년 저점 이후 영업이익이 2024년과 2025년 2년 연속 늘었고, 2026년 3분기 영업이익은 180억원으로 전년 동기 대비 17.4% 증가했다. 다만 2026년 분기 매출은 1분기 감소, 2분기 증가, 3분기 감소를 오가고 있다.",
+  "en": "Vitzro Tech's operating profit has risen for two straight years since its 2023 low, and third-quarter 2026 operating profit reached KRW 18 billion, up 17.4% year on year. Quarterly revenue in 2026, however, has moved down, up and then down again."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출 4,323억원, 영업이익 557억원으로 영업이익률이 2022~2023년보다 뚜렷하게 개선됐다.",
-   "en": "2025 consolidated revenue reached KRW 432.3 billion with operating profit of KRW 55.7 billion, showing a clearly improved operating margin versus 2022-2023."
+   "ko": "매출은 2022년 3,477억원에서 2025년 4,323억원으로 늘었고, 2023년부터 2025년까지 3년 연속 증가했다.",
+   "en": "Revenue grew from KRW 347.7 billion in 2022 to KRW 432.3 billion in 2025, rising for three consecutive years from 2023 to 2025."
   },
   {
-   "ko": "2023년은 영업이익이 전년보다 늘었음에도 지배주주 순이익이 적자로 전환된 특이 구간이었고, 2024~2025년에는 순이익이 400억원대로 회복됐다.",
-   "en": "2023 was an unusual period where operating profit rose year-on-year but net income attributable to owners turned negative; net income recovered to the KRW 40 billion range in 2024-2025."
+   "ko": "영업이익률은 2023년 8.2%를 바닥으로 2024년 11.9%, 2025년 12.9%로 올라, 2025년이 2022~2025년 중 가장 높다.",
+   "en": "The operating margin bottomed at 8.2% in 2023, then rose to 11.9% in 2024 and 12.9% in 2025, the highest of the 2022 to 2025 period."
   },
   {
-   "ko": "자회사 비츠로넥스텍이 한화에어로스페이스로부터 차세대발사체 연소기(45억원)와 누리호 엔진 컴포넌트(535억원) 공급계약을 잇달아 수주했다.",
-   "en": "Subsidiary Vitzro Nextek won consecutive supply contracts from Hanwha Aerospace for a next-generation launch vehicle combustor (KRW 4.5 billion) and Nuri rocket engine components (KRW 53.5 billion)."
+   "ko": "지배주주 순이익은 2023년 순손실 8.1억원에서 2024년 415억원으로 흑자 전환했고, 2025년에는 427억원이다.",
+   "en": "Net income attributable to controlling shareholders swung from a KRW 811 million loss in 2023 to KRW 41.5 billion in 2024, and reached KRW 42.7 billion in 2025."
   },
   {
-   "ko": "전지부문(비츠로셀)은 리튬일차전지 시장에서 세계 3대 업체 지위와 유틸리티 미터용 전원 분야 글로벌 1위 점유율을 보유한다.",
-   "en": "The battery segment (Vitzro Cell) ranks among the world's top three lithium primary battery makers and holds the global No.1 share in utility meter power sources."
+   "ko": "2026년 1분기 매출은 전 분기 대비 17.2% 감소했다가 2분기에 회복했고, 3분기에는 전 분기 대비 7.6% 감소한 1,138억원이다.",
+   "en": "Revenue fell 17.2% quarter on quarter in the first quarter of 2026, recovered in the second quarter, and dropped 7.6% in the third quarter to KRW 113.8 billion."
   },
   {
-   "ko": "부채비율은 2022년 54.1%에서 2025년 32.8%로 낮아졌고 영업활동현금흐름도 꾸준히 개선됐다.",
-   "en": "The debt ratio fell from 54.1% in 2022 to 32.8% in 2025, alongside steady improvement in operating cash flow."
+   "ko": "전지 중심의 사업 구조에 우주항공 수주가 더해지고 있으며, 2026년 1월 비츠로넥스텍은 272.7억원 규모 통합 풍동 장치 계약을 맺었다.",
+   "en": "Alongside a battery-centred business, space-related orders are being added, and in January 2026 Vitzro Nextech signed a KRW 27.27 billion integrated wind tunnel equipment contract."
   }
  ],
  "business": {
-  "ko": "비츠로테크는 전력기기, 전지, 특수(우주항공·핵융합·가속기) 3개 사업부문으로 구성된 코스닥 상장 그룹사다. 전력기기사업은 전기제어장치의 개발·제조·판매를 담당하며, 전지사업은 리튬일차전지를 제작하고, 특수사업은 플라즈마응용 기술을 활용한 프로젝트를 수행한다. 전력기기 부문은 진공인터럽터를 독자 개발해 핵심 부품의 수직계열화를 이뤘다. 전지 부문은 자회사 비츠로셀을 통해 영위되며 리튬일차전지 시장 세계 3대 업체 지위와 유틸리티 미터·스마트그리드 분야 글로벌 1위 점유율을 확보하고 있고, 북미 스마트 워터 솔루션 기업 Badger Meter 등을 주요 고객으로 두고 있다. 특수 부문은 2016년 물적분할로 설립된 비츠로넥스텍이 담당하며, 이 회사는 2025년 11월 코스닥에 별도 상장했다. 비츠로넥스텍은 국내 최초로 누리호 엔진 컴포넌트를 납품한 실적을 보유한 국내 유일의 액체로켓 엔진 전문 기업으로 평가되며, 주요 고객은 한화에어로스페이스다. 2025년에는 계열사 비츠로이엠과 비츠로이에스를 합병해 비츠로일렉트릭으로 사명을 변경하고 비츠로밀텍 지분 매각을 완료하는 등 그룹 구조 개편도 진행됐다. 전력기기·전지·특수 세 부문 모두 국내외 대형 전력기기·전지·우주항공 기업들과 경쟁하는 구도를 형성하고 있다.",
-  "en": "Vitzro Tech is a KOSDAQ-listed group company organized into three business segments: power equipment, battery, and special projects (space, fusion energy, and accelerators). The power equipment business develops, manufactures, and sells electric control devices, the battery business produces lithium primary batteries, and the special business carries out plasma-application technology projects. In power equipment, the company vertically integrated a key component by developing its own vacuum interrupter. The battery segment operates through subsidiary Vitzro Cell, which ranks among the world's top three lithium primary battery makers and holds the global No.1 share in utility meter and smart grid power sources, with customers including North American smart water solutions company Badger Meter. The special segment is run through Vitzro Nextek, established via a spin-off in 2016 and separately listed on KOSDAQ in November 2025. Vitzro Nextek is regarded as the country's only dedicated liquid rocket engine company, having supplied Korea's first Nuri rocket engine components, with Hanwha Aerospace as its key customer. In 2025 the group also restructured, merging affiliates Vitzro EM and Vitzro ES into Vitzro Electric and completing the divestment of its Vitzro Meltech stake. All three segments compete against large domestic and global players in power equipment, batteries, and aerospace, respectively."
+  "ko": "비츠로테크는 전력기기, 전지, 특수 세 개 사업 부문을 축으로 움직이는 전기·전자 기업이다. 버틀러 집계에 따르면 2026년 2분기 매출 기준 비중은 전지 63%, 전력 32%, 특수 5%다. 전력기기 부문은 전기제어장치와 개폐장치 등 중전기기를 개발·제조하며, 주요 고객은 한국전력과 발전자회사 등이다. 전지 부문은 자회사 비츠로셀이 맡고 있으며, 국방·의료·산업 분야 수요가 있는 산업용 일차전지가 주력이다. 리튬일차전지는 유틸리티 미터와 스마트 그리드 분야에서 글로벌 점유율 1위라는 설명이 증권 자료에 실려 있다. 특수 부문은 플라즈마 응용 기술과 진공 상태의 초정밀 접합 기술을 활용한 장비·솔루션을 개발하며, 우주항공과 핵융합 분야로 기술 범위를 넓히고 있다. 우주항공 사업은 자회사 비츠로넥스텍이 맡고, 2025년 11월 공시 기준 비츠로테크는 이 회사 보통주의 69%를 보유한다. 비츠로넥스텍은 2026년 1월 우주항공통합풍동센터와 272.7억원 규모 통합 풍동 장치 계약을 맺었고, 계약기간은 2029년 10월 31일까지다. 2024년 12월에는 자회사 비츠로밀텍이 매각됐고, 2025년 4월에는 대표이사가 바뀌었다. 전력기기 부문은 같은 전기장비 업종의 LS ELECTRIC, 효성중공업, HD현대일렉트릭과 비교되는 위치에 있다.",
+  "en": "Vitzro Tech is an electric and electronics company organised around three business segments: power equipment, batteries and special applications. According to a third-party breakdown by Butler, the share of 2026 second-quarter revenue was 63% batteries, 32% power equipment and 5% special applications. The power equipment segment develops and manufactures medium-voltage equipment such as electrical control devices and switchgear, with Korea Electric Power Corporation (KEPCO) and power generation subsidiaries among its main customers. The battery segment sits under the subsidiary Vitzrocell, whose main product is industrial primary batteries used in defence, medical and industrial applications. Securities coverage describes its lithium primary batteries as holding the global number one share in utility meters and smart grid applications. The special applications segment develops equipment and solutions based on plasma application technology and ultra-precise vacuum joining, extending into space and fusion energy. Space-related business is run by the subsidiary Vitzro Nextech, in which Vitzro Tech held 69% of the common shares as of its November 2025 filing. In January 2026 Vitzro Nextech signed a KRW 27.27 billion integrated wind tunnel equipment contract with the Space Aerodynamics Integrated Wind Tunnel Center, running to 31 October 2029. In December 2024 the subsidiary Vitzro Mill-Tech was sold, and in April 2025 the chief executive changed. In power equipment, the company is compared with LS ELECTRIC, Hyosung Heavy Industries and HD Hyundai Electric in the same electrical equipment industry."
  },
  "earnings": {
-  "ko": "2025년 연결 매출액은 4,322억 8,738만원으로 2024년 4,283억 2,522만원 대비 소폭 늘었으며, 이 기간 영업이익은 8.9% 증가하고 당기순이익은 20.2% 감소한 것으로 집계됐다. 영업이익률은 2022년 9.4%, 2023년 8.2%로 하락했다가 2024년 11.9%, 2025년 12.9%로 뚜렷하게 개선되는 흐름을 보였다. 특히 2023년은 영업이익이 288억 3,609만원으로 전년(327억 2,759만원)보다는 소폭 낮았지만 여전히 흑자였음에도, 지배주주 순이익은 -8억 1,096만원으로 적자 전환했는데, 이는 일회성 비영업 요인의 영향으로 해석된다. 이후 지배주주 순이익은 2024년 415억 3,466만원, 2025년 426억 8,787만원으로 회복돼 2년 연속 400억원대를 유지했다. 분기 흐름을 보면 2025년 3분기(매출 1,024억원, 영업이익 153억원)와 4분기(매출 1,276억원, 영업이익 183억원)에 영업이익률이 14~15% 수준까지 높아졌으나, 2026년 1분기(매출 1,056억원, 영업이익 133억원)와 2분기(매출 1,232억원, 영업이익 118억원)에는 영업이익률이 9~13% 수준으로 낮아졌다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 누적 지배주주 순이익은 538억원으로, 2025년 연간 실적을 웃도는 수준을 기록했다. 영업활동현금흐름은 2022년 517억원에서 2023년 165억원으로 크게 줄었다가 2024년 546억원, 2025년 806억원으로 다시 늘었고, 부채비율은 2022년 54.1%에서 2025년 32.8%까지 낮아지며 재무구조가 함께 개선됐다.",
-  "en": "2025 consolidated revenue came in at KRW 432.29 billion, a modest increase from KRW 428.33 billion in 2024, with operating profit up 8.9% while net income attributable to owners fell 20.2% year-on-year. The operating margin declined from 9.4% in 2022 to 8.2% in 2023, then improved markedly to 11.9% in 2024 and 12.9% in 2025. Notably, 2023 operating profit of KRW 28.84 billion was slightly below the prior year's KRW 32.73 billion but still positive, yet net income attributable to owners swung to a loss of KRW 0.81 billion, which appears attributable to a one-off non-operating factor. Net income attributable to owners then recovered to KRW 41.53 billion in 2024 and KRW 42.69 billion in 2025, holding in the KRW 40 billion range for two consecutive years. On a quarterly basis, operating margin rose to roughly 14-15% in the third quarter of 2025 (revenue KRW 102.5 billion, operating profit KRW 15.3 billion) and fourth quarter (revenue KRW 127.6 billion, operating profit KRW 18.3 billion), before easing to roughly 9-13% in the first quarter of 2026 (revenue KRW 105.6 billion, operating profit KRW 13.3 billion) and second quarter (revenue KRW 123.2 billion, operating profit KRW 11.8 billion). Net income attributable to owners over the most recent four quarters (Q3 2025 through Q2 2026) totaled KRW 53.8 billion, exceeding the full-year 2025 figure. Operating cash flow fell sharply from KRW 51.7 billion in 2022 to KRW 16.5 billion in 2023, then rebounded to KRW 54.6 billion in 2024 and KRW 80.6 billion in 2025, while the debt ratio declined from 54.1% in 2022 to 32.8% in 2025, reflecting a parallel improvement in the balance sheet."
+  "ko": "매출은 2022년 3,477억원, 2023년 3,529억원(전년 대비 1.5% 증가), 2024년 4,283억원(전년 대비 21.4% 증가), 2025년 4,323억원(전년 대비 0.9% 증가)이다. 2023년부터 2025년까지 3년 연속 증가했고, 2022~2025년 중 가장 큰 해는 2025년, 가장 작은 해는 2022년이다. 증가 폭은 2024년에 집중됐고 2025년에는 0.9%로 둔화됐다. 영업이익은 2022년 327억원에서 2023년 288억원(전년 대비 11.9% 감소)으로 줄었다가, 2024년 511억원(전년 대비 77.4% 증가), 2025년 557억원(전년 대비 8.9% 증가)으로 2년 연속 늘었다. 2024년에는 매출이 21.4% 늘 때 영업이익이 77.4% 늘어, 이익 개선이 외형 성장보다 마진 개선에서 크게 나타났다. 영업이익률은 2022년 9.4%, 2023년 8.2%, 2024년 11.9%, 2025년 12.9%다. 지배주주 순이익은 2022년 195억원에서 2023년 순손실 8.1억원으로 적자 전환된 뒤, 2024년 415억원으로 흑자 전환했고 2025년에는 427억원(전년 대비 2.8% 증가)이다. 같은 해 당기순이익(비지배지분 포함)은 2023년 224억원으로 지배주주 순손실과 차이가 컸는데, 자회사 지분 일부가 외부 주주에 귀속되는 지주 구조가 주된 원인으로 해석된다. 부채비율은 2022년 54.1%에서 2025년 32.8%로 낮아졌고, 영업활동 현금흐름은 2023년 165억원을 바닥으로 2025년 806억원까지 늘었다. 분기로 보면 2025년 3분기 매출 1,025억원, 영업이익 153억원에서 2025년 4분기 매출 1,276억원(전 분기 대비 24.6% 증가), 영업이익 183억원(전 분기 대비 19.4% 증가)으로 올라섰다. 이후 2026년 1분기 매출 1,056억원(전 분기 대비 17.2% 감소), 영업이익 133억원(전 분기 대비 27.2% 감소)으로 줄었고, 2026년 2분기 매출 1,232억원(전 분기 대비 16.7% 증가), 영업이익 118억원(전 분기 대비 11.2% 감소)을 거쳐, 2026년 3분기에는 매출 1,138억원(전 분기 대비 7.6% 감소, 전년 동기 대비 11.1% 증가), 영업이익 180억원(전 분기 대비 52.0% 증가, 전년 동기 대비 17.4% 증가)을 기록했다. 최근 4개 분기(2025년 4분기~2026년 3분기) 지배주주 순이익 합계는 369억원이다.",
+  "en": "Revenue was KRW 347.7 billion in 2022, KRW 352.9 billion in 2023 (up 1.5% year on year), KRW 428.3 billion in 2024 (up 21.4%) and KRW 432.3 billion in 2025 (up 0.9%). It rose for three consecutive years from 2023 to 2025, with 2025 the largest year and 2022 the smallest in the 2022 to 2025 period. Growth was concentrated in 2024 and slowed to 0.9% in 2025. Operating profit was KRW 32.7 billion in 2022, fell to KRW 28.8 billion in 2023 (down 11.9%), then rose to KRW 51.1 billion in 2024 (up 77.4%) and KRW 55.7 billion in 2025 (up 8.9%), increasing for two consecutive years. In 2024 operating profit grew far faster than revenue, so margin gains drove the improvement more than sales growth. The operating margin was 9.4% in 2022, 8.2% in 2023, 11.9% in 2024 and 12.9% in 2025. Net income attributable to controlling shareholders moved from KRW 19.5 billion in 2022 to a net loss of KRW 811 million in 2023, turned to a profit of KRW 41.5 billion in 2024, and reached KRW 42.7 billion in 2025 (up 2.8%). Net income including non-controlling interests was KRW 22.4 billion in 2023, a wide gap from the controlling-shareholder loss, which reflects the holding structure in which part of subsidiary profit belongs to outside shareholders. The debt-to-equity ratio fell from 54.1% in 2022 to 32.8% in 2025, and operating cash flow bottomed at KRW 16.5 billion in 2023 before reaching KRW 80.6 billion in 2025. Quarterly revenue was KRW 102.5 billion with operating profit of KRW 15.3 billion in the third quarter of 2025, then rose to KRW 127.6 billion (up 24.6% quarter on quarter) with operating profit of KRW 18.3 billion (up 19.4%) in the fourth quarter. It fell to KRW 105.6 billion and KRW 13.3 billion in the first quarter of 2026 (down 17.2% and 27.2%), recovered to KRW 123.2 billion revenue in the second quarter with KRW 11.8 billion operating profit (down 11.2%), and in the third quarter of 2026 reached KRW 113.8 billion revenue (down 7.6% quarter on quarter, up 11.1% year on year) and KRW 18 billion operating profit (up 52.0% quarter on quarter, up 17.4% year on year). Net income attributable to controlling shareholders for the last four quarters, from the fourth quarter of 2025 to the third quarter of 2026, totalled KRW 36.9 billion."
  },
  "industry": {
-  "ko": "전지부문의 전방시장은 리튬일차전지 수요 성장과 스마트그리드 사업 활성화에 따른 유틸리티 미터용 전원 수요 증가가 주된 동력으로 꼽힌다. 특수부문의 전방시장인 우주발사체 시장은 재사용 로켓과 민간기업 진출 확대에 힘입어 연평균 13.22% 성장하는 것으로 파악되며, 핵융합에너지 분야도 투자 확대로 연평균 7.4% 성장세를 보이고 있다. 우주항공 분야에서는 정부가 차세대발사체 사업 추진 방향을 재정비하고 예산을 기존 약 2조 1,000억원에서 약 2조 3,000억원 수준으로 확대해 정책 수혜 기대가 커지고 있다. 비츠로넥스텍은 국내 유일의 액체로켓 엔진 전문 기업으로 평가되며 누리호 엔진 컴포넌트 납품 등 국내 최초 실적을 보유하고 있어 해당 밸류체인 내 위치가 상대적으로 견고한 편이다. 전력기기 부문은 국내외 대형 전력기기 업체들과 경쟁하는 구도이며, 탄소중립 정책에 따른 친환경·DC·스마트·안전 전력기기 수요 대응이 부문의 성장 과제로 꼽힌다. 전지부문 역시 글로벌 스마트 계량기·방산·석유가스 시장을 대상으로 안정적인 수주 확대를 도모하고 있다.",
-  "en": "The battery segment's end markets are driven mainly by growing demand for lithium primary batteries and increasing utility meter power source needs as smart grid deployment expands. The special segment's end market, the space launch vehicle sector, is understood to be growing at a compound annual rate of roughly 13.22% amid the expansion of reusable rockets and private-sector entry, while the fusion energy field is also growing at roughly 7.4% annually on rising investment. In the aerospace space, the government has realigned its next-generation launch vehicle program and expanded the related budget from about KRW 2.1 trillion to roughly KRW 2.3 trillion, raising expectations for policy-driven benefits. Vitzro Nextek is regarded as the country's only dedicated liquid rocket engine company and holds a track record that includes Korea's first Nuri rocket engine component deliveries, giving it a relatively solid position within that value chain. The power equipment segment competes against large domestic and global power equipment makers, with responding to demand for eco-friendly, DC, smart, and safety-oriented power equipment under carbon-neutrality policy seen as a key growth task. The battery segment is likewise pursuing steady order expansion across global smart metering, defense, and oil & gas markets."
+  "ko": "전력기기 부문은 한국전력과 발전자회사 중심의 발주 구조여서, 수주 시점에 따라 분기 매출이 오르내리는 경향이 있다. 전지 부문은 전기차와 에너지저장장치(ESS) 수요가 늘어나는 리튬전지 시장에 속하며, 증권가는 기술 장벽과 품질 경쟁력을 갖추면 장기 성장 요인이 될 수 있다고 보도했다(핀포인트뉴스). 리튬일차전지 분야에서 비츠로테크는 세계 3대 업체로 소개된다(WiseReport 기업정보). 우주항공 시장은 재사용 로켓과 민간 기업의 진출로 연평균 13.22% 성장하고, 핵융합 에너지는 투자 증가로 연평균 7.4% 성장할 것으로 FnGuide 기업 요약은 정리했다. 국내에서는 누리호 4차 발사 성공과 우주항공청 개청이 우주 관련 종목에 대한 관심을 키운 것으로 데일리머니가 보도했다. 전력기기 부문은 LS ELECTRIC, 효성중공업, HD현대일렉트릭 같은 대형 전기장비 기업과 같은 업종에 속하며, 비츠로테크는 개폐장치와 전기제어장치 등 특정 기기 중심의 포지션이다. 전지 부문은 국방·항공 분야에 특화된 고신뢰성 전지로 수출을 넓히고 있다고 핀포인트뉴스가 소개했다. 기업 분석 자료는 자체 기술과 인증을 바탕으로 한 특수 제품군이 차별점이라고 정리한다.",
+  "en": "The power equipment segment sells mainly to a procurement structure centred on KEPCO and power generation companies, so quarterly revenue tends to swing with the timing of orders. The battery segment belongs to the lithium battery market, where demand from electric vehicles and energy storage systems is rising, and a securities report carried by Pinpoint News said that technological barriers and quality competitiveness could support long-term growth. In lithium primary batteries, Vitzro Tech is described as one of the world's three largest producers, according to WiseReport company information. FnGuide's company summary puts the expected annual growth of the space launch market at 13.22% and of fusion energy at 7.4%, citing reusable rockets, private entrants and rising investment. Domestically, Daily Money reported that the success of the fourth Nuri launch and the opening of the Korea Aerospace Administration increased interest in space-related stocks. In power equipment, the company operates in the same industry as large electrical equipment makers such as LS ELECTRIC, Hyosung Heavy Industries and HD Hyundai Electric, with a position centred on specific devices such as switchgear and electrical control equipment. Pinpoint News also reported that the battery segment is expanding exports of high-reliability batteries specialised for defence and aviation. A company analysis report describes its differentiation as specialty products built on in-house technology and certifications."
  },
  "outlook": {
-  "ko": "비츠로넥스텍은 2026년 3월 한화에어로스페이스와 차세대발사체 고압 작동용 연소기 공급계약(약 45억원, 계약기간 2026년 3월~2027년 11월)을 체결했으며, 이어 2026년 8월에는 같은 고객사로부터 누리호 FM7~FM11호기 액체로켓엔진 핵심 구성품 공급계약(총 535억원, 계약기간 2026년 8월~2029년 11월)을 추가로 수주했다. 정부는 2032년까지 매년 1기 이상 누리호를 발사해 발사 성공률을 90% 이상으로 높이는 계획을 추진 중이며, 차세대발사체는 2032년 달 착륙선 발사를 목표로 개발되고 있어 관련 부품 공급 기회가 이어질 가능성이 있다. 전지부문에서는 비츠로셀이 북미 스마트 워터 솔루션 기업 Badger Meter와 2026년부터 2028년까지 3년간 총 2,964만달러(약 436억원) 규모의 리튬일차전지 장기공급계약을 체결해 둔 상태다. 회사 측은 우주항공 부문에서 연소기 외에도 발사체 엔진을 비롯한 관련 부품 공급 기회가 점차 늘어날 것으로 기대한다고 밝혔다. 전력기기 부문은 탄소중립 시나리오에 대응한 친환경 전력기기 개발과 해외시장 진출을 지속적인 과제로 제시하고 있다. 다만 발사체 개발 프로젝트는 과거에도 엔진 체계 변경 등으로 일정이 지연된 사례가 있어, 향후 매출 인식 속도는 프로젝트 진행 상황에 따라 달라질 수 있다.",
-  "en": "In March 2026, Vitzro Nextek signed a supply contract with Hanwha Aerospace for a next-generation launch vehicle high-pressure combustor worth about KRW 4.5 billion (contract period March 2026 to November 2027), and in August 2026 it won an additional contract from the same customer for core liquid rocket engine components for the Nuri FM7 through FM11 launches, totaling KRW 53.5 billion (contract period August 2026 to November 2029). The government is pursuing a plan to launch at least one Nuri rocket per year through 2032 to raise the launch success rate above 90%, and the next-generation launch vehicle is being developed with a goal of a 2032 lunar lander mission, suggesting further component supply opportunities may follow. On the battery side, Vitzro Cell has a three-year lithium primary battery supply agreement worth a total of USD 29.64 million (about KRW 43.6 billion) with North American smart water solutions company Badger Meter, running from 2026 through 2028. The company has stated it expects supply opportunities for launch vehicle engines and related components, beyond the combustor, to gradually increase in the aerospace segment. The power equipment segment continues to cite eco-friendly power equipment development and overseas market expansion in response to carbon-neutrality scenarios as ongoing tasks. That said, launch vehicle development projects have previously experienced schedule delays due to factors such as engine system changes, so the pace of future revenue recognition may vary with project progress."
+  "ko": "우주항공 사업의 대표 사례는 2026년 1월 16일 체결된 통합 풍동 장치 계약(272.7억원, 우주항공통합풍동센터)이다. 이 계약은 2029년 10월 31일까지 약 3년 9개월에 걸쳐 진행되므로, 실적 반영 속도는 공정 진행에 따라 분기마다 달라질 수 있다. 2025년 12월 26일에는 한국핵융합에너지연구원과의 초전도 도체 시험시설 헬륨냉동기 및 회수설비 구축 계약(63.1억원)이 공시됐다. 2026년 3월부터 시작된 한화에어로스페이스 대상 차세대 발사체 고압 작동용 연소기 공급 계약은 약 45억원 규모로 보도됐다. 자회사 비츠로셀은 2030년 매출 6,000억원, 영업이익 1,600억원을 목표로 제시했다고 디일렉이 보도했으며, 이는 자회사 차원의 목표다. 같은 보도에서 비츠로셀은 3분기 매출이 27% 증가했고 창사 이후 처음으로 연 매출 3,000억원도 가능하다고 전망됐다. 2026년 6월에는 자회사 주식소각결정과 자기주식처분 결정이 공시되어 자회사 단위의 자본 구조 조정이 이어지고 있음을 보여 준다. 2026년 2분기 매출이 1,232억원으로 1분기보다 회복했고 3분기 영업이익이 180억원으로 늘어, 수주 매출이 분기 실적에 얼마나 반영되는지가 다음 확인 지점이다.",
+  "en": "The representative space-related order is the integrated wind tunnel equipment contract signed on 16 January 2026 with the Space Aerodynamics Integrated Wind Tunnel Center, worth KRW 27.27 billion. Because the contract runs for about three years and nine months until 31 October 2029, the pace at which it shows up in results will depend on project progress each quarter. On 26 December 2025, a contract with the Korea Institute of Fusion Energy for helium refrigeration and recovery equipment for a superconducting conductor test facility, worth KRW 6.31 billion, was disclosed. A supply contract for high-pressure combustors for next-generation launch vehicles with Hanwha Aerospace, starting in March 2026, was reported at about KRW 4.5 billion. Pinpoint-style coverage by The Elec reported that the subsidiary Vitzrocell has set a 2030 target of KRW 600 billion in revenue and KRW 160 billion in operating profit, and these are the subsidiary's own targets. The same report said third-quarter revenue rose 27% and that annual revenue of KRW 300 billion could be reached for the first time in its history. In June 2026, filings on a subsidiary share cancellation decision and a treasury share disposal decision showed capital structure changes continuing at the subsidiary level. Second-quarter 2026 revenue of KRW 123.2 billion recovered from the first quarter, and third-quarter operating profit rose to KRW 18 billion, so the next point to check is how much order-based revenue feeds into quarterly results."
  },
  "valuation_comment": {
-  "ko": "주가순자산비율은 1배를 밑도는 수준에서 형성돼 있어, 주가가 주당 순자산가치 대비 할인된 상태에서 거래되고 있음을 보여준다. 배당수익률은 업종 평균보다 낮은 편으로, 회사의 이익 배분보다는 재투자에 무게를 둔 정책과 관련이 있는 것으로 풀이된다. 2023년 지배주주 순이익 적자 이후 2024~2025년 흑자 기조가 정착되면서 이익 대비 주가 부담은 적자 국면보다는 완화된 것으로 볼 수 있으나, 절대적인 저평가·고평가 여부를 단정하기는 어렵다. 시가총액 규모로는 코스닥 내 소형주로 분류되며, 특수부문(우주항공·핵융합)의 수주 뉴스에 주가가 민감하게 반응하는 경향이 있어 실적 지표와 별개로 이벤트성 변동성이 상존한다는 점도 함께 고려할 필요가 있다.",
-  "en": "The price-to-book ratio stands below 1x, indicating the stock trades at a discount to its per-share net asset value. The dividend yield runs below the industry average, which appears linked to a policy weighted more toward reinvestment than profit distribution. With profitability having turned positive again in 2024-2025 after the 2023 net loss attributable to owners, the earnings-to-price burden appears to have eased relative to the loss-making period, though this does not amount to a definitive over- or under-valuation call. In terms of market capitalization, the company is classified as a small-cap on KOSDAQ, and the stock has shown sensitivity to news flow around special-segment orders (space, fusion), meaning event-driven volatility separate from underlying earnings trends should also be considered."
+  "ko": "시가총액은 2025년 말 지배주주 지분(2,588억원)과 비교할 때 장부상 지배주주 지분을 밑도는 수준이므로 주가순자산비율로는 순자산 대비 할인 구간에 있다. 2023년 적자에서 2024년 흑자로 돌아선 뒤 2025년까지 이익이 늘어난 흐름이 밸류에이션 해석의 배경이다. 다만 2025년 지배주주 순이익 증가율은 2.8%로 2024년의 큰 증가율보다 둔화됐다. 배당은 매년 12월 기준일을 두고 결산 배당을 공시하는 구조가 반복되고 있다. 배당수익률은 주가 변동에 따라 달라지므로 이익 추세와 함께 놓고 비교된다. 동종 업종 대비 배수 비교는 이익 회복 속도와 수주 잔고 규모를 함께 봐야 의미가 있다. 최근 4개 분기 지배주주 순이익 합계는 369억원이다.",
+  "en": "Measured against the controlling-shareholder equity of KRW 258.8 billion at the end of 2025, the market capitalisation sits below book value attributable to controlling shareholders, placing the price-to-book ratio in a discount zone relative to net assets. The shift from a 2023 loss to a 2024 profit, followed by higher earnings through 2025, forms the background for reading the valuation. Still, growth in net income attributable to controlling shareholders slowed to 2.8% in 2025 from the much larger jump in 2024. Dividends have followed a recurring pattern of a year-end record date and an annual year-end dividend disclosure. The dividend yield moves with the share price, so it is compared alongside the earnings trend. A comparison of multiples with same-industry peers is meaningful only when read together with the pace of earnings recovery and the size of the order backlog. Net income attributable to controlling shareholders for the last four quarters totalled KRW 36.9 billion."
  },
  "bull": [
   {
    "title": {
-    "ko": "우주항공·핵융합 수주 모멘텀",
-    "en": "Space & Fusion Order Momentum"
+    "ko": "영업이익 회복과 높은 영업이익률",
+    "en": "Operating profit recovery and a higher margin"
    },
    "body": {
-    "ko": "자회사 비츠로넥스텍이 한화에어로스페이스로부터 차세대발사체 연소기와 누리호 엔진 컴포넌트를 잇달아 수주하며 우주항공 밸류체인 내 지위를 확인했다. 정부의 차세대발사체 예산 확대와 2032년 달 착륙선 목표 등 정책 방향도 우호적이다. 다만 이러한 수주가 실제 매출로 인식되는 속도는 프로젝트 진행 상황에 좌우된다.",
-    "en": "Subsidiary Vitzro Nextek has secured consecutive orders from Hanwha Aerospace for a next-generation launch vehicle combustor and Nuri rocket engine components, confirming its position in the aerospace value chain. Government policy direction, including an expanded next-generation launch vehicle budget and a 2032 lunar lander goal, is also supportive. That said, the pace at which such orders translate into recognized revenue depends on project progress."
+    "ko": "2023년 영업이익 288억원을 바닥으로 2024년 511억원, 2025년 557억원으로 2년 연속 늘었고, 영업이익률은 2025년 12.9%로 2022~2025년 중 가장 높다. 2026년 3분기 영업이익은 180억원으로 전년 동기 대비 17.4% 증가해 회복 흐름이 분기 실적에서도 이어졌다. 최근 4개 분기 지배주주 순이익 합계 369억원은 이익 체력을 보여 주는 지표다.",
+    "en": "Operating profit rose for two consecutive years from KRW 28.8 billion in 2023, reaching KRW 51.1 billion in 2024 and KRW 55.7 billion in 2025. The operating margin was 12.9% in 2025, the highest of the 2022 to 2025 period. Third-quarter 2026 operating profit of KRW 18 billion, up 17.4% year on year, shows the recovery continuing in quarterly results."
    }
   },
   {
    "title": {
-    "ko": "전지부문의 글로벌 지위",
-    "en": "Global Position in the Battery Segment"
+    "ko": "우주항공·핵융합 수주 확대",
+    "en": "Expanding space and fusion-related orders"
    },
    "body": {
-    "ko": "비츠로셀은 리튬일차전지 시장 세계 3대 업체이자 유틸리티 미터용 전원 분야 글로벌 1위 점유율을 확보하고 있다. Badger Meter와의 다년 장기공급계약 등으로 매출 가시성이 일부 확보돼 있다. 스마트그리드 확산이 지속될 경우 관련 수요 기반도 함께 넓어질 수 있다.",
-    "en": "Vitzro Cell ranks among the world's top three lithium primary battery makers and holds the global No.1 share in utility meter power sources. Multi-year supply agreements such as the one with Badger Meter provide some revenue visibility. Continued smart grid expansion could broaden the related demand base."
+    "ko": "자회사 비츠로넥스텍은 2026년 1월 우주항공통합풍동센터와 272.7억원 계약을 맺었고, 2025년 12월에는 한국핵융합에너지연구원과 63.1억원 계약을 체결했다. 한화에어로스페이스와의 차세대 발사체 연소기 계약(약 45억원)도 보도됐다. 우주항공 매출이 전지·전력 중심 구조에 더해질 수 있다는 점이 강세 요인이다.",
+    "en": "Subsidiary Vitzro Nextech signed a KRW 27.27 billion wind tunnel contract in January 2026 and a KRW 6.31 billion fusion-related contract in December 2025. A combustor supply contract with Hanwha Aerospace, reported at about KRW 4.5 billion, has also been reported. Space-related revenue could be added to the battery and power equipment mix, which is the main bullish factor."
    }
   },
   {
    "title": {
-    "ko": "이익 회복과 재무구조 개선",
-    "en": "Earnings Recovery and Improved Balance Sheet"
+    "ko": "재무 구조 개선과 현금 창출",
+    "en": "Improved balance sheet and cash generation"
    },
    "body": {
-    "ko": "지배주주 순이익은 2023년 적자에서 2024~2025년 400억원대로 회복됐고, 영업이익률도 2023년 8.2%에서 2025년 12.9%로 개선됐다. 부채비율은 2022년 54.1%에서 2025년 32.8%로 낮아졌고 영업활동현금흐름도 함께 늘었다. 이는 그룹 전반의 수익 구조가 안정화되고 있음을 보여준다.",
-    "en": "Net income attributable to owners recovered from a loss in 2023 to the KRW 40 billion range in 2024-2025, while the operating margin improved from 8.2% in 2023 to 12.9% in 2025. The debt ratio fell from 54.1% in 2022 to 32.8% in 2025, alongside rising operating cash flow. This points to a stabilizing profit structure across the group."
+    "ko": "부채비율은 2022년 54.1%에서 2025년 32.8%로 낮아졌고, 영업활동 현금흐름은 2022년 517억원에서 2025년 806억원으로 늘었다. 2025년 말 자본총계는 4,876억원이다. 이 같은 현금 창출력은 사업 투자와 주주환원의 여력으로 이어질 수 있다.",
+    "en": "The debt-to-equity ratio fell from 54.1% in 2022 to 32.8% in 2025, while operating cash flow rose from KRW 51.7 billion to KRW 80.6 billion over the same period. Total equity stood at KRW 487.6 billion at the end of 2025. This cash generation could support investment in the business and shareholder returns."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "실적 변동성과 일회성 요인",
-    "en": "Earnings Volatility and One-Off Factors"
+    "ko": "매출 성장 둔화와 분기 변동",
+    "en": "Slower revenue growth and quarterly swings"
    },
    "body": {
-    "ko": "2023년에는 영업이익이 흑자였음에도 지배주주 순이익이 적자로 전환된 사례가 있어, 연결 실적의 지배주주 몫이 비영업 요인에 따라 크게 흔들릴 수 있음을 보여준다. 2026년 1~2분기 영업이익률도 2025년 3~4분기보다 낮아지는 흐름이 확인된다. 향후에도 이런 분기별 마진 변동이 재현될 가능성이 있다.",
-    "en": "In 2023, operating profit was positive yet net income attributable to owners turned negative, illustrating that the owners' share of consolidated results can swing sharply due to non-operating factors. Operating margin in the first and second quarters of 2026 also eased compared with the third and fourth quarters of 2025. Similar quarter-to-quarter margin swings could recur going forward."
+    "ko": "2025년 매출은 4,323억원으로 전년 대비 0.9% 증가해 2024년 21.4% 증가에서 크게 둔화됐다. 2026년 1분기 매출은 1,056억원으로 전 분기 대비 17.2% 감소했고, 2분기 1,232억원으로 회복한 뒤 3분기에는 1,138억원으로 다시 줄었다. 분기 매출의 방향이 일정하지 않은 점이 약세 요인이다.",
+    "en": "Revenue rose only 0.9% in 2025 to KRW 432.3 billion, a sharp slowdown from the 21.4% increase in 2024. First-quarter 2026 revenue of KRW 105.6 billion fell 17.2% quarter on quarter, recovered to KRW 123.2 billion in the second quarter, and then dropped to KRW 113.8 billion in the third. The lack of a steady direction in quarterly revenue is the main bearish factor."
    }
   },
   {
    "title": {
-    "ko": "발사체 프로젝트 일정 리스크",
-    "en": "Launch Vehicle Project Schedule Risk"
+    "ko": "비지배지분 몫이 큰 자본 구조",
+    "en": "A capital structure with a large non-controlling share"
    },
    "body": {
-    "ko": "차세대발사체 사업은 과거 엔진 체계 변경 등으로 일정이 지연된 사례가 있어, 매출 인식 시점이 계획보다 늦어질 가능성을 배제할 수 없다. 우주항공 프로젝트는 발사 성공 여부나 정부 정책 변화에도 영향을 받는다. 수주 잔고가 실제 실적으로 반영되는 속도를 지켜봐야 한다.",
-    "en": "The next-generation launch vehicle program has previously experienced schedule delays due to factors such as engine system changes, so revenue recognition could lag behind plan. Aerospace projects are also exposed to launch outcomes and shifts in government policy. The pace at which order backlog converts into actual results warrants monitoring."
+    "ko": "2023년 지배주주 순손실 8.1억원은 같은 해 당기순이익 224억원과 큰 차이를 보였다. 2025년 말 자본총계 4,876억원 중 지배주주 지분은 2,588억원으로 절반을 조금 넘는 수준이다. 자회사 지분이 외부 주주에게 나뉘어 있어 실적 일부가 모회사 주주에게 온전히 귀속되지 않는 구조다.",
+    "en": "The controlling-shareholder net loss of KRW 811 million in 2023 contrasted sharply with net income of KRW 22.4 billion including non-controlling interests. Controlling-shareholder equity of KRW 258.8 billion is only a little over half of total equity of KRW 487.6 billion at the end of 2025. Because part of subsidiary ownership sits with outside holders, part of the earnings does not fully accrue to parent shareholders."
    }
   },
   {
    "title": {
-    "ko": "배당 매력과 밸류 프리미엄 부담",
-    "en": "Limited Dividend Appeal and Special-Segment Premium"
+    "ko": "사업 집중과 계열 재편 부담",
+    "en": "Concentration and group restructuring"
    },
    "body": {
-    "ko": "배당수익률이 업종 평균보다 낮은 편이어서 배당 매력만으로 접근하기는 어려운 구조다. 특수부문 수주 뉴스에 주가가 민감하게 반응하는 경향이 있어, 실적과 무관한 이벤트성 변동성이 함께 나타날 수 있다. 이런 변동성은 본업인 전력기기·전지 부문의 안정적 실적과는 다른 리스크 요인이다.",
-    "en": "With the dividend yield below the industry average, the stock is not easily approached on dividend appeal alone. Because the share price tends to react sensitively to special-segment order news, event-driven volatility unrelated to underlying earnings can also appear. This volatility represents a distinct risk factor apart from the more stable performance of the core power equipment and battery businesses."
+    "ko": "전지 부문이 2026년 2분기 매출 기준 63%(버틀러 집계)로 가장 커서, 산업용 일차전지 수요와 수출 환경에 실적이 민감하다. 계열사 합병과 매각이 2024~2025년에 반복돼 사업 경계가 자주 바뀌었다. 수주형 매출은 계약 규모가 자회사 매출 대비 커서 특정 계약 시점에 실적이 몰릴 수 있다.",
+    "en": "The battery segment accounts for 63% of second-quarter 2026 revenue on Butler's breakdown, so results are sensitive to demand for industrial primary batteries and to export conditions. Mergers and disposals within the group recurred through 2024 and 2025, changing the boundaries of the businesses. Order-based revenue can be lumpy, because individual contracts are large relative to the subsidiary's sales."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "사업·수주 리스크",
-    "en": "Business & Order Risk"
+    "ko": "계열 재편·지배구조",
+    "en": "Group restructuring and governance"
    },
    "body": {
-    "ko": "우주항공·핵융합 관련 수주는 정부 예산 및 정책 방향, 발사 성공 여부에 따라 매출 인식 시점과 규모가 달라질 수 있다. 전력기기·전지 부문도 글로벌 경기와 전방산업 투자 사이클에 노출돼 있다. 특정 고객사(한화에어로스페이스 등)에 대한 의존도가 높아지면 협상력이나 계약 조건 변화에 취약해질 수 있다.",
-    "en": "Revenue recognition timing and scale for space- and fusion-related orders can vary with government budgets, policy direction, and launch outcomes. The power equipment and battery segments are also exposed to global economic conditions and end-market investment cycles. Rising dependence on specific customers such as Hanwha Aerospace could increase vulnerability to changes in bargaining power or contract terms."
+    "ko": "2024년 12월 비츠로밀텍 매각, 2025년 비츠로이엠과 비츠로이에스의 합병 결정, 2025년 4월 대표이사 변경 등 계열 재편이 반복됐다. 사업 단위가 바뀌면 부문별 실적 비교가 어려워져 분석 기준이 흔들릴 수 있다. 비츠로넥스텍의 2025년 11월 코스닥 상장에 따른 지분 가치 변동도 연결 실적과 함께 봐야 할 요인이다.",
+    "en": "Restructuring has recurred, including the December 2024 sale of Vitzro Mill-Tech, a 2025 merger decision between Vitzro Nextech's affiliates, and a change of chief executive in April 2025. When business units change, segment comparisons become harder and the analytical baseline can shift. The value of Vitzro Tech's stake in Vitzro Nextech, which listed on KOSDAQ in November 2025, also needs to be read alongside consolidated results."
    }
   },
   {
    "cat": {
-    "ko": "재무·손익 변동 리스크",
-    "en": "Financial & Earnings Volatility Risk"
+    "ko": "수주 집행과 매출 인식 시점",
+    "en": "Order execution and revenue timing"
    },
    "body": {
-    "ko": "2023년 사례처럼 영업이익과 지배주주 순이익의 방향이 엇갈릴 수 있어, 연결 실적 해석 시 일회성 요인을 함께 살펴야 한다. 분기별 영업이익률도 최근 4개 분기 사이 9%대에서 15%대까지 등락한 바 있다. 원자재·환율 변동은 전지·전력기기 부문의 원가에 영향을 줄 수 있다.",
-    "en": "As seen in 2023, operating profit and net income attributable to owners can move in opposite directions, so one-off factors need to be examined when interpreting consolidated results. Quarterly operating margin has also fluctuated between roughly 9% and 15% over the most recent four quarters. Raw material and foreign exchange movements can affect costs in the battery and power equipment segments."
+    "ko": "통합 풍동 장치 계약은 2026년 1월부터 2029년 10월까지 약 3년 9개월에 걸쳐 진행된다. 계약 규모가 자회사 매출 대비 커서 공정 진행과 검수 시점에 따라 분기 실적이 크게 흔들릴 수 있다. 연소기와 헬륨냉동기 계약은 우주·핵융합 시장의 개발 일정에 따라 집행 시기가 정해진다.",
+    "en": "The integrated wind tunnel contract runs from January 2026 to October 2029, about three years and nine months. Because it is large relative to the subsidiary's sales, quarterly results could swing with project progress and acceptance timing. Contracts for combustors and helium refrigeration equipment depend on development schedules in the space and fusion markets."
    }
   },
   {
    "cat": {
-    "ko": "지배구조·계열 리스크",
-    "en": "Governance & Group Structure Risk"
+    "ko": "업황·정책 의존",
+    "en": "Industry and policy dependence"
    },
    "body": {
-    "ko": "비츠로테크는 비츠로셀, 비츠로넥스텍 등 다수의 상장·비상장 계열사를 보유한 그룹 구조로, 지배주주 지분과 비지배주주 지분의 비중 변화가 지배주주 순이익에 영향을 줄 수 있다. 2025년 계열사 합병·지분 매각 등 구조 개편이 진행된 만큼, 향후에도 유사한 재편이 있을 경우 재무 구조에 변화가 생길 수 있다. 계열사 간 내부거래나 지분 관계의 투명성도 지속적으로 확인할 필요가 있다.",
-    "en": "Vitzro Tech operates a group structure with multiple listed and unlisted affiliates including Vitzro Cell and Vitzro Nextek, and changes in the split between controlling and non-controlling interests can affect net income attributable to owners. Given the 2025 restructuring involving an affiliate merger and stake sale, similar reorganizations could alter the financial structure going forward. The transparency of intra-group transactions and equity relationships also warrants ongoing monitoring."
+    "ko": "전지 사업은 국방·산업 수요와 해외 수출 환경에 좌우되며, 전기차·ESS 수요 기대가 실적으로 이어지는지는 아직 확인 단계다. 우주항공 사업은 정부 예산과 발사 일정에 따른 정책 의존도가 높다. 전력기기 부문은 한국전력과 발전자회사의 투자 계획에 맞춰 발주가 이뤄지는 구조다.",
+    "en": "The battery business depends on defence and industrial demand and on export conditions, and it is still early to confirm whether expected demand from electric vehicles and energy storage turns into reported results. Space-related business is highly dependent on government budgets and launch schedules. Power equipment orders follow the investment plans of KEPCO and power generation companies."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중순",
-    "en": "Mid-November 2026"
+    "ko": "2026년 12월 중순(과거 기준일 패턴 기준 예상)",
+    "en": "Mid-December 2026 (expected from past record-date pattern)"
    },
    "what": {
-    "ko": "2026년 3분기 실적 공시 예정으로, 2026년 1~2분기 나타난 영업이익률 둔화 흐름이 이어지는지 확인이 필요하다.",
-    "en": "Q3 2026 results are expected to be disclosed, and it will be important to check whether the operating margin deceleration seen in Q1-Q2 2026 continues."
+    "ko": "연말 배당 기준일 설정과 배당 결정 공시 여부. 최근 배당 기준일이 12월에 반복된 만큼 배당 정책의 연속성을 확인하는 지점이다.",
+    "en": "Whether a year-end record date and dividend decision are disclosed. Since record dates have repeatedly fallen in December, this is a point to confirm continuity of the dividend policy."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기~2027년",
-    "en": "Second half of 2026 through 2027"
+    "ko": "2027년 3월 말(예상)",
+    "en": "Late March 2027 (expected)"
    },
    "what": {
-    "ko": "정부가 매년 1기 이상 목표로 추진 중인 누리호 FM7호기 등의 발사 일정과 성공 여부는 비츠로넥스텍의 관련 계약 이행 및 후속 수주에 영향을 줄 수 있다.",
-    "en": "The launch schedule and outcome of the Nuri FM7 mission and subsequent launches, which the government aims to conduct at a rate of at least one per year, could affect Vitzro Nextek's contract execution and follow-on orders."
+    "ko": "2026년 사업보고서 제출. 2026년 4분기와 연간 실적이 DART 정기보고서 수치로 확정되며, 영업이익률이 2025년 12.9%를 유지하는지가 다음 확인 지점이다.",
+    "en": "Filing of the 2026 annual report. Fourth-quarter and full-year 2026 results will be fixed in the DART periodic report, and whether the operating margin holds near the 12.9% of 2025 is the next checkpoint."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기 이후",
-    "en": "From Q4 2026 onward"
+    "ko": "2027년 5월 중순(예상)",
+    "en": "Mid-May 2027 (expected)"
    },
    "what": {
-    "ko": "차세대발사체 개발 프로그램 진행에 따른 비츠로넥스텍의 추가 부품 수주 공시 여부를 확인할 필요가 있다.",
-    "en": "It will be worth checking for disclosures of additional component orders won by Vitzro Nextek as the next-generation launch vehicle development program progresses."
+    "ko": "2027년 1분기 분기보고서. 2026년 1분기 매출 1,056억원, 영업이익 133억원과 비교해 분기 실적의 방향을 확인한다.",
+    "en": "The first-quarter 2027 quarterly report. It can be compared with first-quarter 2026 revenue of KRW 105.6 billion and operating profit of KRW 13.3 billion to check the direction of quarterly results."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기~2028년",
-    "en": "Second half of 2026 through 2028"
+    "ko": "2027년 이후(계약기간 2029년 10월 31일까지)",
+    "en": "From 2027 onward (contract term through 31 October 2029)"
    },
    "what": {
-    "ko": "비츠로셀의 Badger Meter 장기공급계약(2026~2028년) 이행 실적과 신규 고객 확보 여부는 전지부문 매출 가시성을 판단하는 지표가 된다.",
-    "en": "Execution of Vitzro Cell's long-term supply agreement with Badger Meter (2026-2028) and any new customer wins will serve as indicators of revenue visibility in the battery segment."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 3월경",
-    "en": "Around March 2027"
-   },
-   "what": {
-    "ko": "차기 정기주주총회에서 배당 정책 및 재무제표 승인 안건을 통해 2026년 실적 확정치와 주주환원 방향을 확인할 수 있다.",
-    "en": "The next annual general meeting is expected to confirm 2026 final results and the direction of shareholder returns through agenda items on dividend policy and financial statement approval."
+    "ko": "비츠로넥스텍 통합 풍동 장치 계약의 매출 인식 진행률과 후속 수주 공시. 수주 매출이 분기 실적에 얼마나 반영되는지를 보여 준다.",
+    "en": "Progress of revenue recognition on the Vitzro Nextech integrated wind tunnel contract and any follow-on order disclosures. They show how much order-based revenue feeds into quarterly results."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "비츠로테크는 전력기기 본업의 안정적 현금창출력을 바탕으로 전지(비츠로셀)와 우주항공·핵융합(비츠로넥스텍) 자회사가 성장 축을 더하는 구조로 재편되고 있다. 2023년 지배주주 순이익 적자를 거쳐 2024~2025년 이익이 회복됐고, 영업이익률과 부채비율 등 재무 지표도 함께 개선되는 흐름이 확인된다. 다만 2026년 1~2분기 영업이익률이 2025년 하반기보다 낮아진 점, 그리고 2023년처럼 영업이익과 지배주주 순이익의 방향이 엇갈릴 수 있는 점은 실적 해석 시 유의할 부분이다. 특수부문의 우주항공·핵융합 관련 수주는 정책·프로젝트 진행 상황에 따라 매출 인식 시점이 달라질 수 있어 이벤트성 변동성을 동반한다. 전지부문은 글로벌 지위와 장기공급계약을 바탕으로 상대적으로 안정적인 성장 경로를 갖고 있다. 앞으로는 3분기 실적, 누리호 및 차세대발사체 관련 후속 수주, 배당 정책 등을 통해 이익 회복의 지속성을 확인해 나가는 것이 관전 포인트다.",
-   "en": "Vitzro Tech is being reshaped around a structure where the stable cash generation of its core power equipment business is complemented by growth from the battery segment (Vitzro Cell) and the space/fusion segment (Vitzro Nextek). Following a net loss attributable to owners in 2023, earnings recovered in 2024-2025, with operating margin and debt ratio also showing parallel improvement. That said, the lower operating margin in Q1-Q2 2026 compared with the second half of 2025, and the possibility—as seen in 2023—that operating profit and net income attributable to owners diverge, are points to watch when interpreting results. Orders related to space and fusion in the special segment carry event-driven volatility, as revenue recognition timing can shift with policy and project progress. The battery segment has a comparatively stable growth path underpinned by its global position and long-term supply agreements. Going forward, Q3 results, follow-on orders tied to the Nuri and next-generation launch vehicle programs, and dividend policy will be key points to watch to confirm the durability of the earnings recovery."
+   "ko": "비츠로테크는 2023년 영업이익 저점 이후 2024년과 2025년 연이어 이익이 늘었고, 영업이익률은 2025년 12.9%로 2022~2025년 중 가장 높다. 지배주주 순이익도 2023년 순손실에서 2024년 흑자로 전환된 뒤 2025년 427억원으로 이어졌다. 반면 매출은 2025년 0.9% 증가로 둔화됐고, 2026년 분기 매출은 1분기 감소, 2분기 회복, 3분기 감소를 반복했다. 사업 구성은 전지 63%(2026년 2분기 매출 기준, 버틀러 집계)에 우주항공 신사업이 더해지는 구조이며, 우주항공 수주는 풍동 장치 계약 등으로 가시성이 생겼지만 계약 집행 속도에 따라 분기 실적이 달라질 수 있다. 비지배지분의 몫이 커서 연결 실적이 지배주주 몫으로 그대로 이어지지 않는 점도 함께 봐야 할 구조적 특징이다. 다음 확인 지점은 2026년 사업보고서에서 확정될 연간 영업이익률과 2027년 1분기 분기보고서의 매출 방향이며, 수주 매출이 분기 실적에 얼마나 반영되는지가 핵심 관찰 항목이다.",
+   "en": "Vitzro Tech's operating profit rose in both 2024 and 2025 after its 2023 low, and the operating margin of 12.9% in 2025 was the highest of the 2022 to 2025 period. Net income attributable to controlling shareholders also moved from a 2023 loss to a 2024 profit and reached KRW 42.7 billion in 2025. On the other side, revenue growth slowed to 0.9% in 2025, and quarterly revenue in 2026 has moved down, up and down again. The business mix is weighted to batteries at 63% of second-quarter 2026 revenue on Butler's breakdown, with space-related business added on top. Space orders such as the wind tunnel contract have improved visibility, but quarterly results could shift with the pace of contract execution. The large non-controlling interest is also a structural feature to read alongside consolidated results. The next checkpoints are the annual operating margin to be fixed in the 2026 annual report and the revenue direction in the first-quarter 2027 report, with how much order-based revenue feeds into quarterly results as the key item to track."
   }
  },
  "sources": [
   "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=042370",
-  "http://www.thedailymoney.com/news/articleView.html?idxno=1138673",
-  "https://alphasquare.co.kr/home/stock-summary?code=042370",
-  "https://goinsider.kr/stock/00103644",
-  "https://www.catch.co.kr/Comp/CompSummary/451266",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20250321001783&docno=&viewerhost=",
-  "https://m.finance.daum.net/quotes/A042370/news/disclosure/20260224017497",
-  "https://finance.daum.net/quotes/A042370?view=pc",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A042370",
-  "https://www.jobkorea.co.kr/recruit/co_read/c/c-039247",
   "https://www.butler.works/ko/companies/00103644",
-  "https://www.jobkorea.co.kr/company/16152937",
-  "https://stockplus.newat.biz/stock_detail.php?code=042370&name=%EB%B9%84%EC%B8%A0%EB%A1%9C%ED%85%8C%ED%81%AC&prev_url=%2Fthemedetail.php%3Fcategory_id%3D1736",
-  "https://m.thinkpool.com/compDiscuss/cont/1024542",
-  "https://www.newspim.com/news/view/20260310001266",
-  "https://www.g-enews.com/article/Securities/2026/03/20260310101436878244093b5d4e_1",
-  "https://www.thebell.co.kr/front/newsview.asp?key=202603110923258200107390",
-  "https://www.newspim.com/news/view/20260807000873"
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A042370",
+  "https://www.bloter.net/news/articleView.html?idxno=655013",
+  "https://jasoseol.com/companies/1306/insights",
+  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=415437",
+  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=351853",
+  "https://www.saramin.co.kr/zf_user/company-info/view/csn/anJQTEpyWHNGTkh5WGZZd1BlcVAyZz09/company_nm/(%EC%A3%BC)%EB%B9%84%EC%B8%A0%EB%A1%9C%ED%85%8C%ED%81%AC",
+  "http://www.thedailymoney.com/news/articleView.html?idxno=1138673",
+  "https://goinsider.kr/stock/00103644",
+  "https://m.irgo.co.kr/IR-COMP/042370/-IR-PAGE",
+  "https://news.nate.com/view/20251125n32077",
+  "https://news.nate.com/view/20260116n26383",
+  "https://www.antwinner.com/stocks_analysis/%EB%B9%84%EC%B8%A0%EB%A1%9C%ED%85%8C%ED%81%AC",
+  "https://m.news.nate.com/view/20251226n19715",
+  "https://thelec.kr/news/articleView.html?idxno=65404",
+  "https://m.news.nate.com/view/20260526n31301",
+  "https://vegannews.co.kr/news/article.html?no=405896"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "042370",
  "name": "비츠로테크",
  "name_en": "Vitzro Tech Co.,LTD.",
@@ -233,11 +223,11 @@
   "전기장비"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 09:16",
- "dataDate": "20260904",
+ "reportDate": "2026-11-16",
+ "reportTs": "2026-11-16 20:23",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-09-04",
+  "asOf": "2026-11-16",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -307,12 +297,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 104502252937,
-    "op": 10727786089,
-    "np_owner": null
-   },
-   {
     "q": "2025Q3",
     "rev": 102454536010,
     "op": 15299901259,
@@ -335,32 +319,40 @@
     "rev": 123206867635,
     "op": 11817356978,
     "np_owner": null
+   },
+   {
+    "q": "2026Q3",
+    "rev": 113825506981,
+    "op": 17957035498,
+    "np_owner": null
    }
   ],
   "valuation": {
-   "price": 8110,
-   "mcap": 0.2125,
+   "price": 7960,
+   "mcap": 0.2086,
    "shares": 26200025,
    "total_shares": 26200025,
    "wavg_shares": null,
    "per": null,
    "eps": null,
-   "pbr": 0.8194,
-   "bps": 9898,
-   "roe_ttm": 22.0,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": 53807633603,
+   "pbr": null,
+   "bps": null,
+   "roe_ttm": 15.1,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": 36882317165,
    "ccy": "KRW",
    "bps_src": "자체",
-   "eps_src": "순이익÷주식수",
-   "pbr_krx": 0.82,
+   "eps_src": null,
+   "pbr_krx": 0.81,
    "bps_krx": 9877.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 60.0,
-   "div": 0.74,
+   "div": 0.75,
    "hidden": {
-    "eps": "ref_mismatch"
+    "eps": "mismatch",
+    "bps": "mismatch"
    }
   }
- }
+ },
+ "textRules": 2
 }

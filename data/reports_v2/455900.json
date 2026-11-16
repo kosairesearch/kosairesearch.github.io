@@ -1,230 +1,210 @@
 {
  "title": {
-  "ko": "웨어러블 로봇 해외 확장, 수익성 전환은 과제",
-  "en": "Wearable Robot Global Expansion Advances, Profitability Remains the Test"
+  "ko": "매출 회복 속 적자 구조는 지속",
+  "en": "Sales Rebound, Losses Still Persist"
  },
  "lead": {
-  "ko": "엔젤로보틱스는 동남아 인증 확대와 신제품 라인업 다변화로 성장 스토리를 이어가고 있으나, 4개 연도 연속 영업적자와 지속적인 현금유출은 여전히 해소되지 않은 과제다.",
-  "en": "Angel Robotics continues its growth narrative through expanded Southeast Asian certifications and product diversification, yet four consecutive years of operating losses and persistent cash burn remain unresolved."
+  "ko": "엔젤로보틱스는 2026년 3분기 매출이 공시 실적 기준 최근 5개 분기 중 가장 큰 13.8억원을 기록했지만, 영업손실은 최근 5개 분기 연속 이어지고 있어 흑자 전환 신호는 아직 공시 실적에 나타나지 않았다.",
+  "en": "Angel Robotics booked KRW 1.38 billion in sales in 3Q 2026, the highest of the last five quarters on a disclosed basis, while operating losses have run for five straight quarters and no profit turn appears in the filed numbers."
  },
  "keypoints": [
   {
-   "ko": "2022~2025년 연간 매출은 21.8억~51.5억원 구간에서 등락했고, 영업손실은 매년 65억~108억원대에 머물렀다.",
-   "en": "Annual revenue fluctuated between roughly KRW 2.18 billion and KRW 5.15 billion from 2022 to 2025, while operating losses stayed in the KRW 6.5–10.8 billion range every year."
+   "ko": "2026년 3분기 매출은 13.8억원으로 공시 실적 기준 최근 5개 분기 중 가장 크고, 전년 동기 대비 70.7% 증가했다.",
+   "en": "Sales in 3Q 2026 were KRW 1.38 billion, the largest of the last five quarters and up 70.7% year on year."
   },
   {
-   "ko": "2026년 2분기 영업손실은 34.9억원으로 확인된 분기 구간 내 최대치를 기록했지만, 순손실은 11.4억원으로 오히려 축소돼 비영업 요인의 영향이 관찰된다.",
-   "en": "Second-quarter 2026 operating loss reached KRW 3.49 billion, the widest in the period shown, yet net loss narrowed to KRW 1.14 billion, suggesting non-operating items offset the operating deterioration."
+   "ko": "연간 영업손실은 2022년 71억원에서 2025년 103억원으로 2022년 대비 커졌고, 2025년 영업이익률은 -221.4%다.",
+   "en": "Annual operating losses were KRW 7.1 billion in 2022 and KRW 10.3 billion in 2025, with a 2025 operating margin of -221.4%."
   },
   {
-   "ko": "태국·베트남·말레이시아 의료기기 인증을 마치고 싱가포르·인도네시아 진출과 유럽 CE-MDR, 미국 FDA 인증을 단계적으로 준비하고 있다.",
-   "en": "Having completed medical device certifications in Thailand, Vietnam, and Malaysia, the company is preparing phased entry into Singapore and Indonesia along with European CE-MDR and US FDA approvals."
+   "ko": "2025년 말 자본총계는 326억원, 부채총계는 44.1억원이며 2025년 부채비율은 13.5%다.",
+   "en": "Total equity at end-2025 was KRW 32.6 billion against total liabilities of KRW 4.41 billion, a 2025 debt ratio of 13.5%."
   },
   {
-   "ko": "2026년 8월 '체내이식형 뇌AI로봇 실시간 연동 시스템' 국책과제에 선정되며 기존 웨어러블 로봇 사업 외 신기술 영역으로 연구범위를 넓혔다.",
-   "en": "In August 2026 the company was selected for a government-funded R&D project on a real-time linked implantable brain-AI robot system, extending its research scope beyond its core wearable robot business."
+   "ko": "의료용 웨어러블 로봇은 2022년 12월부터 의료보험 수가가 적용돼 병원 매출의 기반이 됐고, 동남아 인허가 확대가 다음 성장 축으로 제시된다.",
+   "en": "Medical wearable robots have carried reimbursement since December 2022, and Southeast Asian approvals are presented as the next growth axis."
   },
   {
-   "ko": "부채비율은 한 자릿수~10%대로 매우 낮은 편이나, 순손실 누적으로 자본총계는 2024년 403억원에서 2025년 326억원으로 줄었다.",
-   "en": "The debt ratio remains very low at single digits to the mid-teens percent, but total equity fell from KRW 40.3 billion in 2024 to KRW 32.6 billion in 2025 as losses accumulated."
+   "ko": "최근 네 개 분기 순손실로 주가수익비율은 산출되지 않으며, 주가순자산비율은 순자산 대비 프리미엄이 큰 구간이다.",
+   "en": "Because the last four quarters show net losses, the price-to-earnings ratio is not calculated, and the price-to-book ratio sits in a range with a large premium over net assets."
   }
  ],
  "business": {
-  "ko": "엔젤로보틱스는 2017년 공경철 대표(KAIST 기계공학과 교수 출신)가 설립한 웨어러블 로봇 전문기업으로, 설립 초기 LG전자로부터 투자를 받았으며 2024년 3월 코스닥에 상장했다. 제품군은 재활치료용 엔젤메디(angel MEDI), 일상 보조용 엔젤슈트(angel SUIT), 산업안전용 엔젤기어(angel GEAR), 로봇 부품인 엔젤키트(angel KIT)로 구성된다. 2025년 매출 구성은 보행재활로봇인 엔젤메디가 68%로 절대적 비중을 차지했고, 엔젤슈트가 19%, 웨어러블로봇 개발 용역 등이 8%, 엔젤기어가 4%였다. 주력 제품인 '엔젤렉스 M20'은 신촌세브란스병원, 분당서울대병원, 삼성창원병원 등 국내 상급종합병원을 포함해 70여 곳에 판매됐다. 2025년에는 경량형 고관절 보조 로봇 '엔젤슈트 H10'을 출시하며 제품 포트폴리오를 확장했다. 산업 안전 분야에서는 LG전자, CJ대한통운과의 협업 경험이 있으며, 2025년 5월에는 LIG넥스원과 국방용 웨어러블 로봇 기술 개발 협력계약을 체결해 방산 영역까지 사업 반경을 넓혔다. 경쟁 구도 측면에서는 미국 FDA와 유럽 CE 인증을 모두 확보하고 42개국에서 인증을 보유한 코스모로보틱스가 코스닥 상장을 준비하고 있으며, 현대차·기아와 삼성전자도 각각 산업용·의료용 웨어러블 로봇 개발에 나서는 등 경쟁이 확대되는 국면이다.",
-  "en": "Angel Robotics is a wearable robot specialist founded in 2017 by CEO Nammin Cho (formerly Kyoungchul Kong, a KAIST mechanical engineering professor), which received early-stage investment from LG Electronics and listed on KOSDAQ in March 2024. Its product lineup consists of angel MEDI for rehabilitation, angel SUIT for daily assistance, angel GEAR for industrial safety, and angel KIT robot components. In 2025, the rehabilitation walking robot angel MEDI accounted for the vast majority of revenue at 68%, followed by angel SUIT at 19%, wearable robot development services and other items at 8%, and angel GEAR at 4%. Its flagship product, the ANGEL LEGS M20, has been sold to more than 70 medical institutions including major tertiary hospitals such as Severance Hospital, Seoul National University Bundang Hospital, and Samsung Changwon Hospital. In 2025 the company expanded its portfolio with the lightweight hip-assist robot ANGEL SUIT H10. In industrial safety it has collaborated with LG Electronics and CJ Logistics, and in May 2025 it signed a technology development cooperation agreement with LIG Nex1 for defense-use wearable robots, extending its business scope into the defense sector. On the competitive front, domestic rival Cosmo Robotics, which holds both US FDA and European CE approvals across 42 countries, is preparing a KOSDAQ listing, while Hyundai Motor-Kia and Samsung Electronics are also developing industrial and medical wearable robots respectively, intensifying competition."
+  "ko": "엔젤로보틱스는 2017년 설립된 웨어러블 로봇 기업으로, 2024년 3월 26일 코스닥 시장에 상장했다. 사업은 네 개 제품군으로 나뉜다. 보행재활 로봇 angel MEDI(제품명 엔젤렉스 M20)는 뇌졸중·뇌성마비·척수손상 환자의 보행 훈련에 쓰이며, 2022년 12월 웨어러블 로봇 가운데 최초로 3등급 의료기기 인증과 보험 수가 적용을 받았다. 근력 보조 슈트 angel SUIT는 고관절 보조형 엔젤슈트 H10을 2025년 6월 출시하며 회복기와 일상 복귀 영역으로 범위를 넓히고 있다. 산업용 상지 보조 장비 angel GEAR는 택배 상하차처럼 반복적인 중량물 작업에 활용되고, 부품 브랜드 angel KIT는 구동기와 관성측정 모듈 같은 로봇 핵심 부품을 공급한다. 제품별 매출 비중은 2024년 3분기 시점 기준으로 엔젤메디 82.68%, 엔젤기어 2.25%, 웨어러블 로봇 개발 용역 8.6%였다. 고객은 상급종합병원, 국립재활원, 지역 의료기관, 복지시설 등이며, 회사는 2026년 3월 두 제품이 국내외 126개 이상 기관에 165대 이상 공급됐다고 밝혔다. 2025년에는 angel MEDI 3기를 해외에 수출하면서 매출 구조가 다변화됐다는 평가가 나왔다. 해외 전략은 베트남·태국·말레이시아 등 동남아 3개국에서 인허가를 받은 뒤 인접 국가로 넓히는 방식이다. 국내 재활 로봇 시장에서는 코스모로보틱스, 피앤에스로보틱스, 휴로틱스 등이 유사 기업으로 함께 거론된다. 2025년에는 LIG넥스원과 국방용 웨어러블 로봇 협력 계약을 맺는 등 방산과 산업안전 영역으로도 사업 범위를 넓히고 있다.",
+  "en": "Angel Robotics was founded in 2017 as a wearable robot company and listed on the KOSDAQ market on March 26, 2024. Its business spans four product lines. The angel MEDI line, whose flagship is the Angel Legs M20, is used for gait training of patients with stroke, cerebral palsy and spinal cord injury, and in December 2022 it became the first wearable robot to receive Class 3 medical device certification and reimbursement under the national health insurance fee schedule. The angel SUIT line includes the hip-assist Angel Suit H10, launched in June 2025, which extends the company's reach into recovery and daily-life return. The angel GEAR line is an industrial upper-body assist device used for repetitive heavy-lifting work such as parcel loading and unloading, while the angel KIT brand supplies core robot components including actuators and inertial measurement modules. As of 3Q 2024, product-level revenue mix was 82.68 percent angel MEDI, 2.25 percent angel GEAR and 8.6 percent wearable robot development services. Customers include tertiary hospitals, the National Rehabilitation Center, regional medical institutions and welfare facilities, and in March 2026 the company said the two flagship products had been supplied to more than 126 institutions at home and abroad, totaling more than 165 units. In 2025 the company exported angel MEDI units overseas, which was cited as a diversification of its revenue structure. Its overseas strategy is to secure approvals in three Southeast Asian countries, Vietnam, Thailand and Malaysia, and then expand into neighboring markets. In domestic rehabilitation robotics, Cosmo Robotics, P&S Robotics and Hurotics are grouped as similar companies. In 2025 the company also signed a cooperation agreement with LIG Nex1 on defense-use wearable robots, extending its scope into defense and industrial safety."
  },
  "earnings": {
-  "ko": "연간 매출은 2022년 21.8억원에서 2023년 51.5억원으로 급증했다가 2024년 42.1억원으로 감소했고, 2025년 46.4억원으로 소폭 회복됐다. 영업손실은 2022년 71.0억원, 2023년 65.0억원, 2024년 108.4억원으로 확대된 뒤 2025년 102.8억원으로 소폭 축소됐다. 순손실 역시 2022년 68.0억원에서 2023년 92.4억원, 2024년 100.1억원, 2025년 97.2억원으로 손실이 누적되는 흐름을 보였다. 분기별로 보면 2025년 2분기 매출 14.9억원에서 3분기 8.06억원, 2026년 1분기 5.07억원까지 축소된 뒤 2분기 7.88억원으로 다소 회복됐는데, 이는 매출의 프로젝트성·계절성이 강함을 보여준다. 영업손실은 2026년 2분기 34.9억원으로 확인된 5개 분기 구간 중 최대치를 기록했으나, 같은 분기 순손실은 11.4억원으로 오히려 직전 분기(25.3억원)보다 축소돼 영업손익과 순손익 사이에 상당한 괴리가 나타났다. 이러한 괴리는 비영업적 요인(자산 재평가, 정부 보조금, 세무 효과 등 가능성)이 반영됐을 가능성을 시사하나 구체적 원인은 후속 공시로 확인이 필요하다. 자본총계는 2022년 -197.9억원(자본잠식)에서 상장 및 자본확충 효과로 2023년 86.8억원, 2024년 403.3억원까지 늘었으나, 이후 손실이 누적되며 2025년 326.3억원으로 줄었다. 현금흐름 측면에서는 영업활동현금흐름이 2022년부터 2025년까지 매년 -43억~-72억원 수준의 유출을 지속해, 외형 성장 시도와 별개로 현금소진 구조가 이어지고 있음을 보여준다.",
-  "en": "Annual revenue jumped from KRW 2.18 billion in 2022 to KRW 5.15 billion in 2023, then declined to KRW 4.21 billion in 2024 before recovering modestly to KRW 4.64 billion in 2025. Operating losses widened from KRW 7.10 billion in 2022 to KRW 6.50 billion in 2023 and KRW 10.84 billion in 2024, before narrowing slightly to KRW 10.28 billion in 2025. Net losses similarly built up, from KRW 6.80 billion in 2022 to KRW 9.24 billion in 2023, KRW 10.01 billion in 2024, and KRW 9.72 billion in 2025. On a quarterly basis, revenue fell from KRW 1.49 billion in Q2 2025 to KRW 0.806 billion in Q3 and to as low as KRW 0.507 billion in Q1 2026, before partially recovering to KRW 0.788 billion in Q2 2026, underscoring the project-based, seasonal nature of demand. The Q2 2026 operating loss of KRW 3.49 billion was the widest in the disclosed five-quarter window, yet the same quarter's net loss of KRW 1.14 billion actually narrowed from KRW 2.53 billion in the prior quarter, revealing a notable gap between operating and net results. This gap may reflect non-operating items such as asset revaluation, government subsidy income, or tax effects, though the specific cause requires confirmation from subsequent disclosures. Total equity swung from negative KRW 19.79 billion (capital impairment) in 2022 to KRW 8.68 billion in 2023 and KRW 40.33 billion in 2024 following listing-related capital increases, before declining to KRW 32.63 billion in 2025 as losses accumulated. On the cash flow side, operating cash flow remained negative every year from 2022 through 2025, in a range of roughly negative KRW 4.3–7.2 billion, indicating a persistent cash-consuming structure regardless of top-line efforts."
+  "ko": "연간 매출은 2022년 21.8억원에서 2023년 51.5억원으로 135.6% 증가했고, 2024년에는 42.1억원으로 18.2% 감소한 뒤 2025년 46.4억원으로 10.2% 늘었다. 2022~2025년 중 가장 큰 해는 2023년이고 가장 작은 해는 2022년이다. 영업손실은 2022년 71억원, 2023년 65억원, 2024년 108억원, 2025년 103억원으로 2022년부터 2025년까지 4년 연속 적자가 이어졌다. 2023년과 2025년에는 손실이 줄었고 2024년에는 손실이 확대됐다. 영업이익률은 2022년 -325.1%에서 2023년 -126.2%로 개선된 뒤 2024년 -257.5%로 악화됐고 2025년에는 -221.4%였다. 지배주주 순손실은 2022년 68억원, 2023년 92.4억원, 2024년 100억원, 2025년 97.2억원이며, 비지배지분을 포함한 당기순손실도 같은 흐름을 보인다. 영업활동 현금흐름은 2022년 -57.6억원, 2023년 -43.5억원, 2024년 -72.3억원, 2025년 -72.2억원으로 네 해 모두 음(-)의 값이다. 부채비율은 2022년 -183.2%로 음수였다가 2023년 145.7%, 2024년 8.8%, 2025년 13.5%로 바뀌었다. 2025년 말 기준 자본총계는 326억원이고 이 중 지배주주 지분도 326억원이며, 부채총계는 44.1억원이다. 분기로 보면 2026년 1분기 매출 5.1억원(전 분기 대비 60.2% 감소)을 저점으로 2026년 2분기 7.9억원, 2026년 3분기 13.8억원으로 2개 분기 연속 늘었다. 같은 기간 영업손실은 2026년 2분기 34.9억원으로 확대됐다가 3분기 26.6억원으로 줄었다. 2026년 4월 더벨 보도에 따르면 매출총이익은 상장 이후 꾸준히 흑자를 유지했고, 영업손실의 주된 요인은 판관비 부담과 경상연구개발비 지출이다. 최근 4개 분기(2025년 4분기~2026년 3분기) 지배주주 순손실 합계는 88억원이다.",
+  "en": "Annual sales rose from KRW 2.18 billion in 2022 to KRW 5.15 billion in 2023, an increase of 135.6 percent, then fell 18.2 percent to KRW 4.21 billion in 2024 before rising 10.2 percent to KRW 4.64 billion in 2025. Among 2022 to 2025, 2023 was the largest year and 2022 the smallest. Operating losses were KRW 7.1 billion in 2022, KRW 6.5 billion in 2023, KRW 10.8 billion in 2024 and KRW 10.3 billion in 2025, so the company recorded a loss in each year from 2022 through 2025. The loss narrowed in 2023 and 2025 and widened in 2024. The operating margin moved from -325.1 percent in 2022 to -126.2 percent in 2023, worsened to -257.5 percent in 2024, and was -221.4 percent in 2025. Net loss attributable to controlling shareholders was KRW 6.8 billion in 2022, KRW 9.24 billion in 2023, KRW 10 billion in 2024 and KRW 9.72 billion in 2025, and the net loss including non-controlling interests followed the same path. Operating cash flow was KRW -5.76 billion in 2022, KRW -4.35 billion in 2023, KRW -7.23 billion in 2024 and KRW -7.22 billion in 2025, negative in all four years. The debt ratio was -183.2 percent in 2022, reflecting negative equity, then 145.7 percent in 2023, 8.8 percent in 2024 and 13.5 percent in 2025. At end-2025 total equity was KRW 32.6 billion, all of it attributable to controlling shareholders, against total liabilities of KRW 4.41 billion. On a quarterly basis, sales bottomed at KRW 507 million in 1Q 2026, down 60.2 percent from the prior quarter, then rose to KRW 788 million in 2Q 2026 and KRW 1.38 billion in 3Q 2026, marking two consecutive quarters of growth. Over the same span, the operating loss widened to KRW 3.49 billion in 2Q 2026 before narrowing to KRW 2.66 billion in 3Q 2026. According to a Thebell report from April 2026, gross profit has stayed in the black since the listing, and the main drag on operating results is selling, general and administrative expense together with ongoing recurring R&D spending. The net loss attributable to controlling shareholders over the last four quarters, from 4Q 2025 to 3Q 2026, totals KRW 8.8 billion."
  },
  "industry": {
-  "ko": "웨어러블 로봇 시장은 아직 초기 성장 단계로, 2024년 11월 리딩투자증권 유성만 연구원은 국내외 웨어러블 시장이 연평균 40% 이상의 높은 성장률을 보이고 있으며 2023년 대비 2030년에는 약 10배 이상 성장할 것으로 전망했다. 국내에서는 엔젤로보틱스가 웨어러블 로봇 분야 최초의 코스닥 상장사이자, 2025년 산업통상자원부의 '차세대 세계일류상품'으로 선정되며 재활 로봇 기술이 수출 전략 산업으로 인정받았다. 다만 국내에서도 경쟁이 확대되고 있는데, 미국 FDA와 유럽 CE 인증을 모두 갖추고 42개국에서 의료기기 인증을 보유한 코스모로보틱스가 코스닥 상장을 준비 중이며, 소비자용 보행보조 로봇을 내놓은 위로보틱스도 시장에 진입했다. 대기업들의 관심도 이어지고 있어 현대차·기아가 산업용 웨어러블 로봇을 공개했고 삼성전자도 의료용 제품 출시를 준비하고 있다. 국내 의료 시장은 건강보험 수가 체계 안에서 움직여 신기술의 제도권 진입에 시간이 걸리는 반면, 동남아 등 일부 해외 시장은 공공급여 체계가 상대적으로 유연해 병원·보험사·유통 파트너와의 협력을 통해 빠르게 시장을 열 수 있다는 점이 회사의 해외 우선 전략의 배경이 되고 있다. 고령화가 가속화되는 아시아 지역에서는 재활·보행보조 수요가 지속적으로 확대되는 추세이며, 이는 웨어러블 로봇 기업들에 공통된 성장 기회로 거론된다.",
-  "en": "The wearable robot market remains in an early growth phase; in November 2024, Leading Investment & Securities analyst Seongman Yoo stated that the domestic and global wearable robot market was growing at a compound annual rate exceeding 40%, with the market expected to expand more than tenfold from 2023 to 2030. Domestically, Angel Robotics was the first KOSDAQ-listed wearable robot company and, in 2025, its rehabilitation robot technology was designated a 'next-generation world-class product' by the Ministry of Trade, Industry and Energy, recognizing it as a strategic export industry. Competition is nonetheless intensifying, as Cosmo Robotics, which holds both US FDA and European CE approvals across 42 countries, prepares its own KOSDAQ listing, while Werobotics has entered the market with a consumer-oriented gait-assist robot. Large conglomerates have also shown interest, with Hyundai Motor-Kia unveiling an industrial wearable robot and Samsung Electronics preparing a medical-use product. While Korea's domestic medical market operates within a national health insurance reimbursement framework that slows new technology adoption, certain overseas markets in Southeast Asia have comparatively more flexible public reimbursement structures, allowing faster market opening through cooperation with hospitals, insurers, and distribution partners—a key rationale behind the company's overseas-first strategy. Demand for rehabilitation and gait-assist solutions continues to expand across rapidly aging Asian populations, a growth opportunity commonly cited across wearable robot companies."
+  "ko": "웨어러블 재활 로봇의 전방 시장은 의료기관의 도입 속도와 보험 수가 체계에 따라 움직인다. 회사 측은 의료용 로보틱스가 초기 테스트 성격의 제한적 도입에서 실제 임상 적용 단계로 넘어가는 과도기라고 설명했다(2026년 4월 더벨 보도). 상급종합병원을 중심으로 angel MEDI와 angel SUIT의 도입에 속도가 붙었다는 점은 긍정적 신호다. 다만 회사는 산업이 아직 초기 단계라 수익을 내기까지 시간이 필요하다는 점도 인정했다. 보험 수가 편입 시점은 정해지지 않았고, 회사는 임상 데이터가 쌓이면 수가 체계가 점진적으로 넓어질 수 있다고 보고 있다. 2024년 증권가 분석은 상급종합병원들의 집단 휴진이 웨어러블 로봇 투자를 늦출 가능성을 지적했는데, 병원 수요가 의료 현장의 경영 여건에 민감하다는 뜻이다. 산업용 영역에서는 산업재해와 중대재해에 대한 법적 규제가 강화되면서 근골격계 질환 예방 수요가 늘고 있다는 점이 2024년 회사 IR 자료에 담겼다. 경쟁 측면에서 회사는 국내 제품 가운데 CE·FDA·K마크를 모두 확보했다는 점을 강점으로 내세우고 있다(2024년 보도 기준). 같은 기계·장비 업종의 산업용 로봇 상장사와는 고객층과 인허가 체계가 달라 직접 비교에는 한계가 있다. 해외에서는 동남아가 레퍼런스를 쌓는 테스트베드로 설정돼 있어, 해외 매출 비중의 변화가 업황 판단의 핵심 지표가 된다.",
+  "en": "The end market for wearable rehabilitation robots moves with the pace of hospital adoption and the reimbursement schedule. The company describes medical robotics as a transition from limited test-stage adoption to actual clinical use, according to a Thebell report from April 2026. Adoption of angel MEDI and angel SUIT has picked up, centered on tertiary hospitals, which is a positive signal. The company also acknowledges that the industry is still at an early stage and that profitability will take time. The timing of reimbursement inclusion has not been set, and the company expects the reimbursement system could gradually widen as clinical data accumulates. A 2024 brokerage analysis pointed to collective clinic closures at tertiary hospitals as a possible source of delay in wearable robot investment, which shows how sensitive hospital demand is to operating conditions. In industrial use, stronger legal rules on industrial accidents and serious accidents have raised demand for preventing musculoskeletal injuries, as reflected in the company's 2024 investor materials. On competition, the company highlights that it holds CE, FDA and K-mark approvals, a point reported in 2024. Compared with industrial robot peers in the same sector, the customer base and approval framework differ, which limits direct comparison. Overseas, Southeast Asia serves as a testbed for building references, so changes in the overseas revenue share are a key indicator for judging the industry trajectory."
  },
  "outlook": {
-  "ko": "엔젤로보틱스는 2025년 태국(TFDA), 베트남(보건복지부), 말레이시아(MDA)에서 엔젤렉스 M20의 의료기기 인증을 잇달아 획득하며 아세안 3개국 진출을 마무리했고, 2026년 1월에는 말레이시아에서 정식 출시를 알렸다. 2026년 8월에는 두 번째 제품인 엔젤슈트 H10의 베트남 의료기기 등록을 완료해 단일 제품 의존 구조에서 포트폴리오형 해외 진출 모델로 전환하고 있음을 보였다. 회사는 향후 싱가포르·인도네시아 등 추가 아세안 국가 진출과 함께 유럽 CE-MDR, 미국 FDA 인증을 단계적으로 추진한다는 계획을 밝히고 있다. 2026년 3월에는 파이낸셜타임즈와 스태티스타가 공동 발표한 '아시아 태평양 고성장 기업 500'에 국내 웨어러블 로봇 기업 최초로 이름을 올리며 메커니컬·플랜트 엔지니어링 분야 1위를 기록했다. 조남민 대표는 병원 재활치료에서 가정용 관리로 이어지는 '커넥티드 케어' 플랫폼을 장기 구상으로 제시하며, 유럽 시장에 대해서도 프랑스 국무총리실 산하 투자총괄국과의 협력 논의 등 단순 수출을 넘어선 공동연구·임상 파트너십을 모색하고 있다고 밝혔다. 2026년 8월에는 '체내이식형 뇌AI로봇 실시간 연동 시스템 개발' 국책과제에 선정됐다고 공시해, 기존 웨어러블 로봇 중심 사업에서 신경인터페이스 기술로 연구 영역을 확장하려는 움직임도 확인된다. 2025년 5월 체결한 LIG넥스원과의 국방용 웨어러블 로봇 기술 개발 협력은 방산 부문에서의 추가 수요 창출 가능성을 열어두고 있다.",
-  "en": "Angel Robotics completed its entry into three ASEAN countries in 2025 by sequentially securing medical device approvals for the ANGEL LEGS M20 in Thailand (TFDA), Vietnam (Ministry of Health), and Malaysia (MDA), followed by an official product launch in Malaysia in January 2026. In August 2026 the company completed Vietnam medical device registration for its second product, the ANGEL SUIT H10, signaling a shift from single-product dependence toward a portfolio-based overseas expansion model. The company has stated plans to enter additional ASEAN markets such as Singapore and Indonesia while pursuing European CE-MDR and US FDA approvals in phases. In March 2026 it became the first Korean wearable robot company to be included in the Financial Times and Statista's jointly published 'High-Growth Companies Asia-Pacific 500' list, ranking first in the mechanical and plant engineering category. CEO Nammin Cho has outlined a long-term vision of a 'connected care' platform linking hospital rehabilitation to home management, and has described exploratory discussions with France's Secretariat General for Investment on collaboration extending beyond simple exports into joint research and clinical partnerships in Europe. In August 2026 the company disclosed its selection for a government-funded project to develop a real-time linked implantable brain-AI robot system, indicating a move to expand its research scope from wearable robots into neural interface technology. The defense-use wearable robot development cooperation signed with LIG Nex1 in May 2025 also leaves open the possibility of additional demand generation in the defense segment."
+  "ko": "회사가 제시한 중기 방향은 해외 확장과 인증 확보, 데이터 기반 플랫폼 전환의 세 축으로 정리된다. 2026년 1월 말레이시아에서 엔젤렉스 M20을 공식 출시했고, 2026년 4월 말에는 말레이시아에서 엔젤슈트 H10의 의료기기 인허가를 획득했다. 2026년 3월 회사 측은 동남아 인허가를 기반으로 싱가포르와 인도네시아 등으로 확장을 가속하고, 미국 FDA 승인과 유럽 CE-MDR 인증으로 글로벌 입지를 넓히겠다고 밝혔다. 2026년 6월에는 범부처 ‘브레인 투 로봇’ 개발 과제의 주관기관으로 선정됐다. 회사는 웨어러블 로봇에서 쌓인 데이터를 제품 개선에 다시 반영하는 선순환 구조를 장기 목표로 제시했다. 국방 분야에서는 2025년 맺은 LIG넥스원과의 협력이 실제 매출로 이어지는지가 다음 확인 대상이다. 의료 부문의 성장은 보험 수가 확대 여부에 좌우되는데, 수가 편입 일정은 아직 공개되지 않았다. 해외 매출은 2025년 angel MEDI 3기 수출로 초기 레퍼런스를 확보한 수준이며 수량은 많지 않다는 평가다. 공시 실적 기준으로 2026년 3분기 매출은 13.8억원으로 늘었지만 영업손실 26.6억원이 이어지고 있어, 매출 증가가 손실 축소로 이어지는지가 다음 확인 지점이다.",
+  "en": "The company's medium-term direction can be grouped into three pillars: overseas expansion, certification, and a shift toward a data-driven platform. Angel Robotics launched the Angel Legs M20 in Malaysia in late January 2026, and in late April 2026 it obtained medical device approval in Malaysia for the Angel Suit H10. In March 2026 the company said it would build on Southeast Asian approvals to accelerate expansion into markets such as Singapore and Indonesia, and broaden its global footprint through US FDA approval and European CE-MDR certification. In June 2026 it was selected as the lead institution for a cross-ministry 'Brain to Robot' development project. The company presents a long-term goal of a virtuous cycle in which data gathered from wearable robots feeds back into product improvement. In defense, the open question is whether the 2025 cooperation with LIG Nex1 translates into actual revenue. Growth in the medical segment depends on whether reimbursement is widened, and the schedule for inclusion has not yet been disclosed. Overseas revenue so far reflects early references from the 2025 export of angel MEDI units, and the volume is described as small. On a disclosed basis, 3Q 2026 sales rose to KRW 1.38 billion, but the operating loss of KRW 2.66 billion continues, so whether higher sales lead to a narrower loss is the next point to watch."
  },
  "valuation_comment": {
-  "ko": "엔젤로보틱스는 4개 연도 연속 순손실을 기록하고 있어 이익 기준의 전통적 가치평가 지표를 적용하기 어려운 구조다. 2024년 기준으로는 신한투자증권이 주가매출비율(PSR)을 약 65배 수준으로 코스닥 시장 평균(1.75배) 대비 크게 할증된 상태라고 평가한 바 있으며, 상장 초기의 성장 기대감이 반영된 결과로 해석했다. 순자산가치 대비로는 주가가 상당한 프리미엄이 형성된 구간에서 거래되는 편으로, 이는 시장이 해외 인증 확대와 제품 다변화 등 미래 성장 스토리에 가치를 부여하고 있음을 보여준다. 배당은 지급되지 않고 있어 배당 관련 지표를 통한 비교는 의미를 갖기 어렵다. 결국 현재 밸류에이션은 과거 실적이 아닌 향후 매출 성장과 손익 개선 속도에 대한 기대치에 크게 의존하는 구조로 볼 수 있다.",
-  "en": "Angel Robotics has posted net losses for four consecutive years, making traditional earnings-based valuation metrics difficult to apply. As of 2024, Shinhan Investment & Securities assessed the price-to-sales ratio at around 65 times, a substantial premium to the KOSDAQ market average of 1.75 times, interpreting this as reflecting growth expectations shortly after listing. Relative to book value, the shares tend to trade at a meaningful premium to net asset value, indicating that the market is assigning value to the future growth narrative built around overseas certification expansion and product diversification rather than to current results. The company does not pay a dividend, making dividend-based comparisons largely inapplicable. Ultimately, the current valuation appears to depend heavily on expectations for future revenue growth and the pace of margin improvement rather than on historical performance."
+  "ko": "밸류에이션은 이익 기반 지표보다 순자산과 매출을 기준으로 한 비교가 더 의미를 가진다. 최근 네 개 분기 순손실이 이어지고 있어 주가수익비율은 산출되지 않는다. 주가순자산비율은 순자산 대비 프리미엄이 큰 구간에 있으며, 기준이 되는 자본은 2025년 말 지배주주 지분 326억원이다. 배당수익률은 업종 평균을 밑도는 편이어서 배당을 통한 주주 환원은 현재 실적 구조에서 제한적이다. 매출 규모가 아직 작아 매출 대비 배수는 이익 기준 지표보다 해석의 폭이 넓다. 2025년 연간 매출은 46.4억원이었고, 2026년 3분기 매출이 최근 5개 분기 중 가장 큰 수준으로 늘며 매출 기반 지표는 개선 방향에 있다. 영업손실이 이어지는 동안에는 손익 기반 지표가 적자 폭 축소 여부에 따라 달라진다. 주가 수준과 방향에 대한 판단은 이 리포트의 범위에 포함하지 않는다.",
+  "en": "For this company, comparisons based on net assets and sales carry more meaning than earnings-based measures. Because the last four quarters show net losses, the price-to-earnings ratio is not calculated. The price-to-book ratio sits in a range with a large premium over net assets, measured against end-2025 equity attributable to controlling shareholders of KRW 32.6 billion. The dividend yield is below the industry average, so shareholder returns through dividends are limited under the current earnings structure. Because sales are still small, multiples based on sales are open to a wider range of interpretation than profit-based measures. Annual sales were KRW 4.64 billion in 2025, and 3Q 2026 sales rose to the largest level of the last five quarters, so sales-based indicators are moving in a favorable direction. While operating losses continue, profit-based indicators will depend on whether the loss narrows. This report does not include a view on the level or direction of the share price."
  },
  "bull": [
   {
    "title": {
-    "ko": "해외 인증망 확대",
-    "en": "Expanding Overseas Certification Network"
+    "ko": "분기 매출의 회복 흐름",
+    "en": "Recovery in quarterly sales"
    },
    "body": {
-    "ko": "태국·베트남·말레이시아 3개국 인증을 마무리하고 엔젤슈트 H10까지 등록을 확대하며 포트폴리오형 해외 진출 구조를 갖췄다. 2026년 파이낸셜타임즈 아시아태평양 고성장기업 500 선정은 이러한 성과가 외부에서도 인정받고 있음을 보여준다. 싱가포르·인도네시아 등 추가 시장과 유럽·미국 인증까지 단계적으로 이어진다면 매출 기반이 지리적으로 다변화될 잠재력이 있다.",
-    "en": "Having completed certifications in Thailand, Vietnam, and Malaysia and expanded registration to the ANGEL SUIT H10, the company has built a portfolio-based overseas expansion structure. Its 2026 selection to the Financial Times Asia-Pacific High-Growth 500 list reflects external recognition of this progress. If additional markets such as Singapore and Indonesia, along with European and US certifications, follow in phases, the revenue base has potential to become more geographically diversified."
+    "ko": "2026년 1분기 매출 5.1억원을 저점으로 2분기 7.9억원, 3분기 13.8억원으로 2개 분기 연속 늘었다. 3분기 매출은 전년 동기 대비 70.7% 증가했고, 공시 실적 기준 최근 5개 분기 중 가장 큰 규모다. 2025년 연간 매출도 46.4억원으로 전년 대비 10.2% 늘어 외형 회복의 흐름이 이어지고 있다.",
+    "en": "After a low of KRW 507 million in 1Q 2026, sales rose to KRW 788 million in 2Q and KRW 1.38 billion in 3Q, two straight quarters of growth. 3Q 2026 sales were up 70.7 percent year on year and are the largest of the last five quarters on a disclosed basis. Annual sales also rose 10.2 percent to KRW 4.64 billion in 2025."
    }
   },
   {
    "title": {
-    "ko": "제품·기술 다변화",
-    "en": "Product and Technology Diversification"
+    "ko": "보험 수가와 임상 레퍼런스",
+    "en": "Reimbursement and clinical references"
    },
    "body": {
-    "ko": "엔젤메디 중심의 매출 구조에서 엔젤슈트 H10 출시로 제품 포트폴리오가 넓어지고 있다. LIG넥스원과의 국방용 웨어러블 로봇 협력, 체내이식형 뇌AI로봇 국책과제 선정 등은 기존 재활·산업안전 영역을 넘어선 신규 응용 분야 확장 가능성을 보여준다. 이러한 다변화는 특정 제품이나 고객군에 대한 의존도를 낮추는 방향으로 작용할 수 있다.",
-    "en": "The launch of the ANGEL SUIT H10 is broadening the product portfolio beyond the MEDI-centric revenue structure. The defense-use wearable robot collaboration with LIG Nex1 and selection for a government-funded implantable brain-AI robot project point to potential expansion into new application areas beyond the existing rehabilitation and industrial safety segments. Such diversification could reduce dependence on any single product or customer group."
+    "ko": "웨어러블 로봇 최초로 의료보험 수가가 적용된 제품군을 보유하고 있으며, 두 제품은 국내외 126개 이상 기관에 165대 이상 공급됐다고 회사가 2026년 3월 밝혔다. 회사는 임상 데이터가 쌓이면 수가 체계가 점진적으로 확대될 수 있다고 보고 있다. 상급종합병원 중심의 도입이 빨라진 점도 임상 근거를 넓히는 요인이다.",
+    "en": "The company holds a product line that was the first wearable robot to receive reimbursement under the national health insurance schedule. It said in March 2026 that its two flagship products had been supplied to more than 126 institutions at home and abroad, totaling over 165 units. The company expects the reimbursement system could widen gradually as clinical data accumulates."
    }
   },
   {
    "title": {
-    "ko": "낮은 부채비율의 재무 여력",
-    "en": "Financial Flexibility from a Low Debt Ratio"
+    "ko": "동남아와 방산으로의 확장",
+    "en": "Expansion into Southeast Asia and defense"
    },
    "body": {
-    "ko": "2024~2025년 부채비율이 한 자릿수에서 10%대 초반 수준으로 매우 낮게 유지되고 있어, 상장 전 자본잠식 상태였던 2022년과 비교하면 재무구조가 크게 개선됐다. 이는 지속되는 순손실에도 당장의 채무 상환 부담이 크지 않다는 의미로, R&D와 해외 진출 비용을 감당할 여력을 제공한다.",
-    "en": "The debt ratio has remained very low, in the single digits to low teens percent range in 2024–2025, marking a substantial improvement in the balance sheet compared to the capital-impaired state of 2022 prior to listing. This means the company faces limited near-term debt repayment burden despite ongoing net losses, providing some capacity to fund R&D and overseas expansion costs."
+    "ko": "동남아 3개국에서 의료기기 인허가를 확보했고, 2026년 4월 말에는 말레이시아에서 엔젤슈트 H10의 인허가를 받았다. 2025년에는 LIG넥스원과 국방용 웨어러블 로봇 협력을 맺었다. 해외 매출 비중이 커지면 국내 의료 수가에 의존하는 구조를 분산할 수 있다는 점이 강점으로 거론된다.",
+    "en": "The company has obtained medical device approvals in three Southeast Asian countries, and in late April 2026 it secured approval in Malaysia for the Angel Suit H10. In 2025 it entered a cooperation arrangement with LIG Nex1 on defense wearable robots. If the overseas share of revenue grows, the company could reduce its dependence on domestic reimbursement."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "구조적 적자의 지속",
-    "en": "Persistent Structural Losses"
+    "ko": "5개 분기 연속 영업손실",
+    "en": "Five straight quarters of operating losses"
    },
    "body": {
-    "ko": "2022년부터 2025년까지 4개 연도 연속 영업손실을 기록했으며, 손실 규모는 매출 규모를 크게 상회하는 수준이 이어지고 있다. 2026년 2분기 영업손실은 34.9억원으로 확인된 분기 구간에서 가장 컸으며, 매출 회복이 아직 손익 개선으로 뚜렷하게 이어지지 않고 있다. 영업활동현금흐름도 매년 지속적으로 유출되고 있어 자금 소진 구조가 이어지고 있다.",
-    "en": "The company has posted operating losses for four consecutive years from 2022 through 2025, with loss magnitudes consistently exceeding revenue by a wide margin. The Q2 2026 operating loss of KRW 3.49 billion was the largest in the last five quarters, and revenue recovery has not yet clearly translated into margin improvement. Operating cash flow has also remained persistently negative every year, indicating an ongoing cash-consuming structure."
+    "ko": "2025년 3분기부터 2026년 3분기까지 영업손실이 5개 분기 연속 이어졌고, 2026년 2분기에는 영업손실이 34.9억원으로 확대됐다. 최근 4개 분기 지배주주 순손실 합계는 88억원이다. 흑자 전환을 보여 주는 분기 실적은 아직 없다.",
+    "en": "Operating losses have run for five straight quarters from 3Q 2025 through 3Q 2026, and widened to KRW 3.49 billion in 2Q 2026. The net loss attributable to controlling shareholders over the last four quarters totals KRW 8.8 billion. No quarter in the disclosed period shows a profit."
    }
   },
   {
    "title": {
-    "ko": "매출 변동성과 작은 사업 규모",
-    "en": "Revenue Volatility and Small Scale"
+    "ko": "판관비와 연구개발비 부담",
+    "en": "Burden of selling, G&A and R&D costs"
    },
    "body": {
-    "ko": "분기 매출은 2025년 2분기 14.9억원에서 2026년 1분기 5.07억원까지 줄어드는 등 등락이 크게 나타나, 병원·기관 대상 프로젝트성 판매 구조의 수요 불안정성을 보여준다. 연간 매출 역시 2023년 51.5억원에서 2024년 42.1억원으로 줄어드는 등 일관된 성장 곡선을 그리지 못했다. 절대적인 사업 규모가 작아 개별 계약이나 인증 지연이 실적에 미치는 영향이 크다.",
-    "en": "Quarterly revenue swung sharply, falling from KRW 1.49 billion in Q2 2025 to KRW 0.507 billion in Q1 2026, reflecting demand instability inherent in project-based sales to hospitals and institutions. Annual revenue also failed to show a consistent growth trajectory, declining from KRW 5.15 billion in 2023 to KRW 4.21 billion in 2024. Given the small absolute scale of the business, individual contracts or certification delays can have an outsized impact on results."
+    "ko": "2026년 4월 보도에 따르면 매출총이익은 흑자를 유지하지만 판관비와 경상연구개발비 부담이 영업손실을 키우는 구조다. 2025년 영업이익률은 -221.4%로 매출 규모에 비해 고정 비용이 크다. 매출이 늘어도 비용이 함께 늘면 적자 폭 축소가 더딜 수 있다.",
+    "en": "According to an April 2026 Thebell report, gross profit stays positive, but selling, G&A and recurring R&D expenses keep the company in operating losses. The 2025 operating margin was -221.4 percent, which points to a fixed cost base large relative to sales. If costs rise alongside sales, the loss may narrow only slowly."
    }
   },
   {
    "title": {
-    "ko": "자본 잠식 이력과 희석 우려",
-    "en": "History of Capital Impairment and Dilution Concerns"
+    "ko": "작은 매출 규모와 현금 흐름",
+    "en": "Small sales base and cash burn"
    },
    "body": {
-    "ko": "2022년 자본총계가 -197.9억원으로 완전자본잠식 상태였던 이력이 있으며, 상장 이후에도 순손실 누적으로 자본총계가 2024년 403.3억원에서 2025년 326.3억원으로 줄었다. 손실이 계속될 경우 추가적인 자금조달이 필요할 수 있으며, 이는 기존 주주에게 지분 희석 부담으로 이어질 가능성이 있다.",
-    "en": "Total equity was negative at KRW 19.79 billion in 2022, a state of complete capital impairment, and even after listing, accumulated net losses caused equity to decline from KRW 40.33 billion in 2024 to KRW 32.63 billion in 2025. If losses continue, additional financing may be required, which could pose a dilution risk for existing shareholders."
+    "ko": "2025년 연간 매출은 46.4억원으로 규모가 작고, 2024년에는 전년 대비 18.2% 줄었다. 영업활동 현금흐름은 2022년부터 2025년까지 네 해 모두 음수였으며 2025년에는 -72.2억원이었다. 보험 수가 확대 시점이 정해지지 않은 점도 실적 변동성을 키우는 요인이다.",
+    "en": "Annual sales were KRW 4.64 billion in 2025, a small base, and fell 18.2 percent in 2024. Operating cash flow was negative in all four years from 2022 to 2025, at KRW -7.22 billion in 2025. The undetermined timing of reimbursement expansion adds to earnings volatility."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "기술·인증 지연 리스크",
-    "en": "Technology and Certification Delay Risk"
+    "ko": "실적 리스크",
+    "en": "Earnings risk"
    },
    "body": {
-    "ko": "유럽 CE-MDR과 미국 FDA 인증은 단계적으로 추진 중이나 구체적 승인 시점은 아직 확정되지 않았다. 해외 인증 획득이 지연되거나 현지 유통·의료진 교육 등 후속 절차가 늦어질 경우, 계획된 매출 확대 시점이 뒤로 밀릴 수 있다. 국가별 상이한 의료기기 규제 환경은 신규 시장 진입마다 반복되는 리스크 요인이다.",
-    "en": "European CE-MDR and US FDA approvals are being pursued in phases, but specific approval timelines have not yet been finalized. If overseas certification is delayed, or if follow-up processes such as local distribution setup and clinician training take longer than expected, planned revenue expansion could be pushed back. Country-specific medical device regulatory environments represent a recurring risk factor with each new market entry."
+    "ko": "영업손실이 2022년부터 2025년까지 4년 연속 이어졌고, 최근 5개 분기도 모두 적자였다. 매출이 늘어도 판관비와 연구개발비가 함께 늘면 흑자 전환 시점이 늦어질 수 있다. 다음 정기보고서인 2026년 사업보고서에서 연간 영업손실 규모를 확인해야 한다.",
+    "en": "Operating losses have been recorded in each year from 2022 through 2025, and all of the last five quarters were loss-making. If SG&A and R&D costs grow alongside sales, the timing of a profit turn could be pushed out. The 2026 annual report will show the full-year operating loss."
    }
   },
   {
    "cat": {
-    "ko": "경쟁 심화 리스크",
-    "en": "Intensifying Competition Risk"
+    "ko": "규제와 수가 리스크",
+    "en": "Regulatory and reimbursement risk"
    },
    "body": {
-    "ko": "미국 FDA와 유럽 CE 인증을 모두 갖추고 42개국 인증을 보유한 코스모로보틱스가 상장을 준비하고 있으며, 현대차·기아와 삼성전자 등 대기업도 인접 분야 웨어러블 로봇 개발에 나서고 있다. 자본력과 글로벌 네트워크에서 우위를 가진 경쟁자가 늘어날 경우 가격 경쟁이나 시장점유율 압박이 커질 수 있다.",
-    "en": "Cosmo Robotics, which holds both US FDA and European CE approvals across 42 countries, is preparing to go public, while large conglomerates such as Hyundai Motor-Kia and Samsung Electronics are also developing wearable robots in adjacent categories. As competitors with greater capital resources and global networks increase, pricing pressure or market share erosion could intensify."
+    "ko": "의료 부문 매출은 보험 수가 체계와 인증 일정에 크게 의존한다. 2024년 증권가는 상급종합병원의 집단 휴진이 웨어러블 로봇 투자를 늦출 가능성을 지적했다. 해외 인허가가 국가별로 달라 확장 속도가 예상보다 늦어질 수 있다.",
+    "en": "Medical revenue depends heavily on the reimbursement schedule and certification timelines. A 2024 brokerage analysis flagged that collective clinic closures at tertiary hospitals could delay wearable robot investment. Approvals differ by country, so the pace of overseas expansion could be slower than planned."
    }
   },
   {
    "cat": {
-    "ko": "재무·자본조달 리스크",
-    "en": "Financial and Capital-Raising Risk"
+    "ko": "경영진과 등기 변동",
+    "en": "Management and registry changes"
    },
    "body": {
-    "ko": "지속적인 순손실과 영업활동현금흐름의 유출이 이어지고 있어, 현재의 자본 여력이 소진될 경우 추가 유상증자나 외부 차입이 필요해질 수 있다. 이 경우 기존 주주의 지분 희석이나 재무구조 변화가 나타날 가능성을 배제할 수 없다.",
-    "en": "With ongoing net losses and negative operating cash flow, if the current capital buffer is depleted, additional equity issuance or external borrowing may become necessary. This could result in dilution for existing shareholders or changes to the balance sheet structure."
+    "ko": "기업정보 사이트의 등기 기록에는 2026년 10월 16일 대표이사 사임과 취임이 올라 있고, 대표자 표기가 조남민에서 공경철로 바뀌어 있다. 경영진이 바뀌면 중장기 전략의 일관성에 영향을 줄 수 있다. 이 변동은 공식 공시로 교차 확인이 필요하다.",
+    "en": "The registry record on a corporate information website lists the resignation and appointment of the chief executive on October 16, 2026, and the representative name changes from Cho Nam-min to Kong Kyung-chul. A leadership change can affect the continuity of medium-term strategy. This change should be cross-checked against official disclosures."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월경",
-    "en": "Around November 2026"
+    "ko": "2027년 3월 말",
+    "en": "Late March 2027"
    },
    "what": {
-    "ko": "2026년 3분기 실적 공시를 통해 매출 회복 여부와 영업손실·순손실 간 괴리가 반복되는지 확인이 필요하다.",
-    "en": "The Q3 2026 earnings disclosure should be checked to see whether revenue recovers and whether the gap between operating and net losses observed in Q2 2026 recurs."
+    "ko": "2026년 사업보고서 제출 시점으로, 2026년 연간 매출과 영업손실, 영업이익률을 2025년 -221.4%와 비교하는 것이 핵심이다.",
+    "en": "The 2026 annual report is due around this time, and the key checks are full-year 2026 sales, operating loss and operating margin compared with -221.4 percent in 2025."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기~2027년",
-    "en": "Second half of 2026 through 2027"
+    "ko": "2027년 5월 15일",
+    "en": "May 15, 2027"
    },
    "what": {
-    "ko": "싱가포르·인도네시아 등 추가 아세안 인증 진행 상황과 유럽 CE-MDR·미국 FDA 인증 절차의 구체적 진척을 확인할 필요가 있다.",
-    "en": "Progress on additional ASEAN certifications such as Singapore and Indonesia, along with concrete advancement of the European CE-MDR and US FDA approval processes, should be monitored."
+    "ko": "2027년 1분기 분기보고서 제출 기한으로, 2026년 1분기 매출 5.1억원 대비 회복 흐름이 이어지는지와 영업손실이 줄어드는지를 확인한다.",
+    "en": "This is the filing deadline for the 1Q 2027 quarterly report, where the check is whether the sales recovery from KRW 507 million in 1Q 2026 continues and whether the operating loss narrows."
    }
   },
   {
    "when": {
-    "ko": "수시(공시 확인)",
-    "en": "Ongoing (via disclosures)"
+    "ko": "2026년 11월 이후 일정 미공개",
+    "en": "Date not yet announced, after November 2026"
    },
    "what": {
-    "ko": "2026년 8월 선정된 체내이식형 뇌AI로봇 국책과제의 세부 내용, 지원 규모, 향후 사업화 계획 등이 후속 공시로 구체화되는지 확인이 필요하다.",
-    "en": "Follow-up disclosures should be checked to see whether details, funding scale, and commercialization plans for the implantable brain-AI robot government project selected in August 2026 become more concrete."
-   }
-  },
-  {
-   "when": {
-    "ko": "수시(공시 확인)",
-    "en": "Ongoing (via disclosures)"
-   },
-   "what": {
-    "ko": "LIG넥스원과의 국방용 웨어러블 로봇 협력의 구체적 성과물이나 후속 계약 공시 여부를 점검할 필요가 있다.",
-    "en": "It is worth checking for disclosures of concrete deliverables or follow-on contracts from the defense-use wearable robot collaboration with LIG Nex1."
-   }
-  },
-  {
-   "when": {
-    "ko": "수시(공시 확인)",
-    "en": "Ongoing (via disclosures)"
-   },
-   "what": {
-    "ko": "2026년 6월 대량보유상황보고서 이후 주요주주 지분 변동이나 추가 자금조달 관련 공시가 발생하는지 지속적으로 확인해야 한다.",
-    "en": "Continued monitoring is needed for any changes in major shareholder holdings or additional capital-raising disclosures following the June 2026 large shareholding report."
+    "ko": "동남아 신규 인허가와 수출, 미국 FDA 승인, 유럽 CE-MDR 인증, 국방 협력의 매출 가시화가 해당된다. 보험 수가 편입 일정도 함께 확인할 지점이다.",
+    "en": "This covers new Southeast Asian approvals and exports, US FDA approval, European CE-MDR certification, and whether the defense cooperation becomes visible in revenue. Timing of reimbursement inclusion is also a point to watch."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "엔젤로보틱스는 국내 웨어러블 로봇 산업을 대표하는 상장사로서 아세안 3개국 인증 완료, 제품 라인업 확장, 국방 및 신기술 분야로의 연구 확장 등 성장 스토리를 꾸준히 축적하고 있다. 그러나 2022년부터 2025년까지 4개 연도 연속 영업손실과 순손실이 이어졌고, 2026년 상반기까지도 영업손실이 확대되는 흐름이 나타나는 등 수익성 전환의 가시적 신호는 아직 확인되지 않고 있다. 매출은 병원·기관 대상 프로젝트성 판매 특성상 분기별로 큰 등락을 보이며, 자본총계는 순손실 누적으로 점차 줄어드는 추세다. 반면 부채비율은 매우 낮게 유지되고 있어 당장의 재무적 경직성은 제한적이며, 해외 인증 확대와 신제품·신기술 파이프라인은 중장기 성장 잠재력을 뒷받침하는 요소로 거론된다. 결국 향후 관전 포인트는 해외 매출이 실제 손익 개선으로 얼마나 빠르게 이어지는지, 그리고 영업손익과 순손익 사이에 나타난 괴리의 성격이 무엇인지를 확인하는 데 있다. 투자자는 성장 스토리와 지속되는 현금소진 구조를 함께 놓고 균형 있게 판단할 필요가 있다.",
-   "en": "As a listed leader in Korea's wearable robot industry, Angel Robotics continues to build a growth narrative through completed ASEAN certifications, an expanding product lineup, and research extension into defense and new technology areas. However, operating and net losses have persisted for four consecutive years from 2022 through 2025, and operating losses widened further through the first half of 2026, with no clear sign yet of a turn toward profitability. Revenue shows significant quarter-to-quarter volatility given its project-based sales to hospitals and institutions, while total equity has gradually declined amid accumulating losses. On the other hand, the debt ratio remains very low, limiting near-term financial rigidity, and expanding overseas certifications along with new product and technology pipelines are cited as factors supporting medium- to long-term growth potential. Going forward, the key points to watch are how quickly overseas revenue translates into actual margin improvement, and the nature of the gap observed between operating and net losses. Investors should weigh the growth narrative against the ongoing cash-consuming structure in a balanced manner."
+   "ko": "엔젤로보틱스는 의료용 웨어러블 로봇을 중심으로 보험 수가와 임상 레퍼런스를 쌓아 온 기업이다. 공시 실적에서 매출은 2022년 21.8억원에서 2025년 46.4억원으로 늘었고, 2026년 3분기에는 13.8억원으로 공시 기준 최근 5개 분기 중 가장 큰 규모를 기록했다. 다만 영업손실은 2022년부터 2025년까지 4년 연속 이어졌고, 최근 5개 분기 모두 적자였으며, 영업활동 현금흐름도 네 해 모두 음수였다. 재무 측면에서는 2025년 말 자본총계 326억원과 부채총계 44.1억원으로 부채 부담이 작은 편이다. 강세 요인은 매출 회복, 동남아 인허가 확대, 방산 협력의 확장 가능성이다. 약세 요인은 판관비와 연구개발비 부담이 매출 증가를 상쇄하는 구조, 작은 매출 규모, 보험 수가 확대 시점의 불확실성이다. 다음 확인 지점은 2027년 3월 말 사업보고서이며, 2026년 연간 영업손실과 영업이익률이 2025년 -221.4%에서 어떻게 움직였는지가 핵심이다. 이 정리는 공시와 보도에 근거한 정보이며 투자 의견을 담지 않는다.",
+   "en": "Angel Robotics has built its business around medical wearable robots, accumulating reimbursement status and clinical references. On a disclosed basis, annual sales rose from KRW 2.18 billion in 2022 to KRW 4.64 billion in 2025, and 3Q 2026 sales of KRW 1.38 billion were the largest of the last five quarters. However, operating losses ran for four straight years from 2022 through 2025, all of the last five quarters were loss-making, and operating cash flow was negative in all four years. On the balance sheet, end-2025 total equity of KRW 32.6 billion against total liabilities of KRW 4.41 billion points to a modest debt burden. Bullish factors include the sales recovery, expanding Southeast Asian approvals and the potential growth of defense cooperation. Bearish factors include SG&A and R&D costs offsetting sales gains, a small revenue base and uncertainty over the timing of reimbursement expansion. The next checkpoint is the 2026 annual report due around late March 2027, where full-year operating loss and operating margin versus -221.4 percent in 2025 will be the key figures. This summary is informational, is based on disclosures and press reports, and contains no investment opinion."
   }
  },
  "sources": [
+  "https://thevc.kr/angelrobotics",
+  "https://m.thebell.co.kr/m/newsview.asp?newskey=202604151516439280107963",
   "https://kr.investing.com/equities/angel-robotics-earnings",
-  "https://www.bondweb.co.kr/_research/downloadPage.asp?number=757021&gn=1",
-  "https://m.irgo.co.kr/IR-COMP/455900/%EC%97%94%EC%A0%A4%EB%A1%9C%EB%B3%B4%ED%8B%B1%EC%8A%A4-IR-PAGE",
-  "https://littlebproject.com/stock/455900",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=searchInitInfo&acptNo=20240328003548&docno=",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=QqU6Q2oxXUBzBaTJ",
-  "https://v.daum.net/v/Y6jAtLQ07A?f=p",
-  "https://alphasquare.co.kr/home/stock-summary?code=455900",
-  "https://m.thinkpool.com/compDiscuss/cont/1021167",
-  "https://www.hankyung.com/article/202510159273a",
+  "https://m.news.nate.com/view/20260319n26479",
+  "https://www.mt.co.kr/stock/2026/03/19/2026031910509618431",
+  "https://www.newspim.com/news/view/20260303000081",
+  "https://www.angel-robotics.com/ko/company/newsroom?page=2",
+  "https://www.inews24.com/view/1951052",
+  "https://www.saramin.co.kr/zf_user/company-info/view?csn=WTMzenBOQ3NVaW5GdnJWOXpMVmFyUT09",
+  "https://www.rapportian.com/news/articleView.html?idxno=233691",
   "https://files-scs.pstatic.net/2024/03/08/dQsOgvcZXO/%EC%97%94%EC%A0%A4%EB%A1%9C%EB%B3%B4%ED%8B%B1%EC%8A%A4_IR%20Book.pdf",
-  "https://www.angel-robotics.com/ko/company/overview",
-  "https://digitalchosun.dizzo.com/site/data/html_dir/2025/11/19/2025111980043.html",
-  "https://zdnet.co.kr/view/?no=20241216165744",
-  "https://www.edaily.co.kr/News/Read?newsId=01479286645481720&mediaCodeNo=257",
-  "https://www.jobkorea.co.kr/recruit/co_read/c/agrobotics",
-  "https://marvellab.maxnmarvel.com/company_report?ct_idx=997&turn=2024-02-15",
-  "http://www.dailyinvest.kr/news/articleView.html?idxno=62869"
+  "https://www.jobkorea.co.kr/recruit/co_read/c/sgrobotics",
+  "https://www.hankyung.com/article/202511192385a",
+  "https://www.youtube.com/channel/UCDnrv0HTudnLeIHqO0mScwg",
+  "https://www.etoday.co.kr/news/view/2339406",
+  "https://www.hankyung.com/article/202510159273a",
+  "http://www.dailyinvest.kr/news/articleView.html?idxno=62869",
+  "https://linkonbiz.com/en/seller/858"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "455900",
  "name": "엔젤로보틱스",
  "name_en": "ANGEL ROBOTICS Co., Ltd.",
@@ -234,11 +214,11 @@
   "로봇"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 06:04",
- "dataDate": "20260904",
+ "reportDate": "2026-11-16",
+ "reportTs": "2026-11-16 20:23",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-09-04",
+  "asOf": "2026-11-16",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -309,12 +289,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 1490249387,
-    "op": -2176596654,
-    "np_owner": -1973683608
-   },
-   {
     "q": "2025Q3",
     "rev": 805939232,
     "op": -2840429627,
@@ -337,25 +311,31 @@
     "rev": 788302493,
     "op": -3485917720,
     "np_owner": -1138909917
+   },
+   {
+    "q": "2026Q3",
+    "rev": 1375512087,
+    "op": -2656986498,
+    "np_owner": -2504984278
    }
   ],
   "valuation": {
-   "price": 20500,
-   "mcap": 0.3156,
-   "shares": 15392981,
-   "total_shares": 15218053,
+   "price": 17240,
+   "mcap": 0.2658,
+   "shares": 15419981,
+   "total_shares": 15392981,
    "wavg_shares": 15132494,
    "per": null,
-   "eps": -590,
-   "pbr": 10.0147,
-   "bps": 2047,
-   "roe_ttm": -26.3,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": -8975281197,
+   "eps": -576,
+   "pbr": 9.0262,
+   "bps": 1910,
+   "roe_ttm": -27.7,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": -8797662199,
    "ccy": "KRW",
    "bps_src": "자체",
    "eps_src": "공시",
-   "pbr_krx": 9.56,
+   "pbr_krx": 8.04,
    "bps_krx": 2144.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
@@ -364,5 +344,6 @@
     "per": "loss"
    }
   }
- }
+ },
+ "textRules": 2
 }

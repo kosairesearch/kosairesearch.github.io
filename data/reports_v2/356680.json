@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "양자보안 성장동력과 지배구조 변수",
-  "en": "Quantum Security Growth Meets Parent Governance Overhang"
+  "ko": "매출은 커졌지만 이익률은 얇아진 양자보안 전환기",
+  "en": "Revenue Up, Margins Thin as Axgate Shifts Toward Quantum Security"
  },
  "lead": {
-  "ko": "엑스게이트는 VPN·방화벽 중심의 안정적 현금창출 사업에 양자보안·AI 신사업을 얹어 매출 성장을 이어가고 있으나, 4분기 편중 실적 구조와 모회사 가비아의 상장폐지 추진이라는 두 가지 변수가 동시에 진행 중이다.",
-  "en": "AXGATE continues to grow revenue by layering quantum-security and AI initiatives on top of its stable VPN and firewall cash-generating business, while a heavily fourth-quarter-weighted earnings pattern and parent company Gabia's ongoing take-private process represent two concurrent variables."
+  "ko": "엑스게이트는 2025년 매출 481억원으로 2022~2025년 중 가장 큰 해를 기록했지만 영업이익률은 2022년 14.1%에서 2025년 7.8%로 낮아졌고, 양자보안 본사업 수주가 이익으로 이어질지가 다음 확인 지점이다.",
+  "en": "Axgate posted its largest revenue of the 2022–2025 span in 2025, at KRW 48.1 billion, while its operating margin fell from 14.1% in 2022 to 7.8% in 2025; whether quantum-security contracts translate into profit is the next thing to watch."
  },
  "keypoints": [
   {
-   "ko": "2025년 매출 481억원으로 2년 연속 최대 실적을 경신했으나 영업이익률은 2022년 14.1%에서 2025년 7.8%로 하락 추세",
-   "en": "2025 revenue reached 48.1 billion won, a second consecutive record, but operating margin declined from 14.1% in 2022 to 7.8% in 2025"
+   "ko": "2025년 매출 481억원은 2022~2025년 중 가장 큰 해이며, 2023년부터 2025년까지 3년 연속 증가했다.",
+   "en": "Annual revenue reached KRW 48.1 billion in 2025, the largest year of 2022–2025, and rose for three straight years from 2023 to 2025."
   },
   {
-   "ko": "2025년 3분기 영업손실 -18.9억원에서 4분기 영업이익 +68.8억원으로 급반전, 2026년 1·2분기는 소폭 흑자로 계절성 완화 조짐",
-   "en": "Operating loss of -1.89 billion won in Q3 2025 reversed sharply to +6.88 billion won in Q4 2025, with modest profits in Q1-Q2 2026 hinting at reduced seasonality"
+   "ko": "영업이익률은 2022년 14.1%에서 2025년 7.8%로 내려왔고, 2025년 영업이익 37.5억원은 전년 대비 7.7% 늘었지만 2022년 54.2억원에는 못 미쳤다.",
+   "en": "The operating margin declined from 14.1% in 2022 to 7.8% in 2025, and 2025 operating profit of KRW 3.75 billion, up 7.7% year on year, remained below the KRW 5.42 billion of 2022."
   },
   {
-   "ko": "QRNG·PQC 결합 'AX-Quantum'과 KCMVP 인증 기반으로 국방·방산 시장 확대를 추진 중",
-   "en": "The company is expanding into defense and military markets based on its KCMVP-certified 'AX-Quantum' platform combining QRNG and PQC"
+   "ko": "2026년 3분기 영업손실 14.8억원으로 전 분기 대비 적자 전환했고, 분기 실적은 4분기에 몰리는 구조가 이어지고 있다.",
+   "en": "The third quarter of 2026 swung to an operating loss of KRW 1.48 billion from the prior quarter, and quarterly results remain concentrated in the fourth quarter."
   },
   {
-   "ko": "모회사 가비아가 맥쿼리자산운용과 함께 자진 상장폐지를 추진 중이며, 엑스게이트 등 자회사 재편 여부는 아직 미확정",
-   "en": "Parent Gabia is pursuing a voluntary delisting with Macquarie Asset Management, while the future treatment of subsidiaries including AXGATE remains undecided"
+   "ko": "회사는 2026년 매출 목표를 500억원대 중반으로 잡았다고 밝혔고, 양자VPN과 홈네트워크 보안이 신성장축으로 제시됐다.",
+   "en": "The company has set a 2026 revenue target in the mid-KRW 50 billion range and presents quantum VPN and home-network security as its growth pillars."
   },
   {
-   "ko": "하드웨어 원재료 비용 상승과 매출원가 증가율이 매출 성장률을 웃돌며 외형 성장이 수익성 개선으로 완전히 이어지지 못하는 구조",
-   "en": "Rising hardware raw-material costs and cost-of-goods growth outpacing revenue growth mean top-line expansion has not fully translated into profitability gains"
+   "ko": "2026년 4월 하이브리드 KCMVP 인증을 확보했고, 교통 분야 PQC 시범전환 사업의 수행기관으로 선정됐다.",
+   "en": "Axgate secured hybrid KCMVP certification in April 2026 and was selected as a performing institution for the transport-sector PQC pilot conversion project."
   }
  ],
  "business": {
-  "ko": "엑스게이트는 가상사설망(VPN)과 방화벽을 양대 축으로 하는 국내 네트워크 보안 전문기업으로, 자체 운영체제와 보안 엔진을 기반으로 SSL VPN, 침입방지시스템(IPS), 통합위협관리(UTM), 홈네트워크 보안 등 네트워크 보안 전반의 포트폴리오를 갖추고 있다. 지난해 기준 VPN과 방화벽은 각각 전체 매출의 40%, 30%를 차지하며 회사의 핵심 사업으로 자리 잡고 있으며, VPN 사업은 연평균 성장률(CAGR) 7.8%, 방화벽 사업은 18.9%의 성장률을 기록하고 있다. 제품·서비스 형태별로 보면 하드웨어·소프트웨어가 매출의 상당 비중을 차지하고 임대·보안관제서비스와 유지관리서비스가 나머지를 나눠 차지하는 구조다. 주 수익원인 VPN 시장에서는 공공·민간 대형 수요처를 기반으로 시장 점유율 1위를 유지하고 있으며, 공공 조달 시장에서 안랩 등과 경쟁하며 입지를 넓혀왔다. 연구개발 인력이 전체 임직원의 55%를 차지할 정도로 기술 개발 중심 경영을 이어오고 있으며, 최근에는 양자난수생성기(QRNG)와 양자내성암호(PQC)를 하이브리드로 결합한 'AX-Quantum' 플랫폼과 국내 최초 하이브리드 암호모듈검증(KCMVP) 인증을 확보해 국방·방산 시장 진입을 준비하고 있다. AI 기반 애플리케이션 식별·제어, 암호화 트래픽 내 위협 탐지 등을 적용한 AI 차세대 방화벽(AI NGFW)도 또 다른 핵심 축으로 제시되고 있으며, LLM 기반 자연어 인터페이스 기술도 개발 중이다. 최대주주는 코스닥 상장사 가비아로, 인터넷 인프라·클라우드·보안 사업을 영위하는 지주적 성격의 모회사다. 하드웨어 부문은 국내외 거래처로부터 OEM 방식으로 원재료를 매입해 자체 소프트웨어를 탑재하는 구조여서 반도체·메모리 등 원자재 가격 변동에 노출돼 있다.",
-  "en": "AXGATE is a domestic network security specialist built on two core pillars, virtual private networks (VPN) and firewalls, offering a portfolio spanning SSL VPN, intrusion prevention systems (IPS), unified threat management (UTM), and home network security based on its own operating system and security engine. As of last year, VPN and firewall each accounted for 40% and 30% of total revenue and remain the company's core businesses, with the VPN business posting a compound annual growth rate (CAGR) of 7.8% and the firewall business 18.9%. By product and service type, hardware and software account for a substantial share of revenue, with the remainder split between leasing/security monitoring services and maintenance services. In its core VPN market, the company maintains the number one market share based on large public and private demand, competing with rivals such as AhnLab in public procurement. Research and development staff make up 55% of total employees, reflecting technology-centered management, and the company recently secured its 'AX-Quantum' platform combining a quantum random number generator (QRNG) and post-quantum cryptography (PQC) along with Korea's first hybrid cryptographic module verification (KCMVP) certification as it prepares to enter the defense market. AI-based application identification and control and encrypted-traffic threat detection applied to an AI next-generation firewall (AI NGFW) form another key pillar, alongside large-language-model-based natural language interface technology under development. The largest shareholder is KOSDAQ-listed Gabia, a holding-like parent operating internet infrastructure, cloud, and security businesses. The hardware segment sources raw materials from domestic and overseas vendors on an OEM basis and installs proprietary software, exposing it to fluctuations in semiconductor and memory prices."
+  "ko": "엑스게이트는 2010년 설립된 네트워크 보안 기업으로 VPN과 방화벽을 주력으로 한다. 2025년 매출 481억원 가운데 VPN이 40%(192억원), 방화벽이 30%(145억원)를 차지했다고 보도됐다. 기존 주력 제품인 AXGATE 시리즈와 SSL VPN이 안정적인 수익 기반을 이룬다. 신사업은 양자VPN(Q-VPN)과 홈네트워크 보안이며, 양자VPN은 2025년 방산 시장에 진입한 뒤 공공·지자체·국방 분야 납품이 본격화됐다. 양자 제품군은 자체 제작한 온보드형 양자난수생성기(QRNG)와 양자내성암호(PQC)를 결합한 AX-Quantum 플랫폼으로 묶인다. 홈네트워크 보안 솔루션 AXGATE-HOMES는 주요 홈네트워크 업체를 중심으로 공급이 이뤄졌다. 차세대 방화벽(NGFW)에는 AI 기반 위협 식별과 자연어 장비 제어 기능이 더해지고 있다. 주요 고객은 공공 조달 시장과 국내 방산 대기업이며, 방산은 시범사업을 마친 뒤 본사업 전환을 기다리는 단계다. 회사는 높은 호환성과 자체 기술력을 바탕으로 공공·기업 시장에서 수익 구조를 쌓아 왔다고 설명한다. 양자 신사업이 매출 비중을 얼마나 빨리 키우는지가 사업 구조 변화의 핵심 변수다.",
+  "en": "Axgate is a network security company founded in 2010 whose core products are VPN and firewall systems. According to reports, VPN accounted for 40% (KRW 19.2 billion) and firewalls for 30% (KRW 14.5 billion) of 2025 revenue of KRW 48.1 billion. The existing AXGATE Series and SSL VPN form the stable earnings base. The new businesses are Quantum VPN (Q-VPN) and home-network security; Q-VPN entered the defense market in 2025, and deliveries to public, local-government and defense customers have since expanded. The quantum product family is built on the AX-Quantum platform, which combines in-house on-board quantum random number generators (QRNG) with post-quantum cryptography (PQC). The AXGATE-HOMES home-network security solution has been supplied mainly to major home-network makers. The next-generation firewall (NGFW) line has added AI-based threat identification and natural-language device control. Main customers are the public procurement market and large domestic defense contractors, where the business is moving from completed pilots toward full-scale contracts. The company cites its compatibility and proprietary technology as the basis for its revenue structure in public and enterprise markets. How quickly the quantum businesses grow their share of revenue is the key variable for the change in the business mix."
  },
  "earnings": {
-  "ko": "엑스게이트의 연간 매출은 2022년 383억원에서 2025년 481억원으로 꾸준히 늘었으나, 영업이익률은 2022년 14.1%, 2023년 9.6%, 2024년 8.1%, 2025년 7.8%로 매년 낮아지는 추세를 보이고 있다. 특히 2023년은 연간 영업이익률이 9.6%로 양호했음에도 지배주주 순이익이 2.9억원에 그쳤는데, 이는 2023년 코스닥 상장에 따른 일회성 비용 등이 반영된 결과로 추정되며 이후 2024년 지배주주 순이익은 40.0억원으로 크게 회복됐다. 2025년에는 매출과 영업이익이 각각 481억원, 37.5억원으로 늘었지만 지배주주 순이익은 38.7억원으로 전년 대비 소폭 줄어 외형 성장이 이익 성장으로 완전히 이어지지 못했다. 분기별로 보면 계절성이 뚜렷한데, 2025년 2분기 매출 106.8억원에 영업손실 -3.2억원, 3분기 매출 88.7억원에 영업손실 -18.9억원을 기록한 뒤 4분기에는 매출이 212.3억원으로 급증하며 영업이익 68.8억원, 지배주주 순이익 70.4억원의 대규모 흑자를 냈다. 통상 공공분야 예산 집행이 4분기에 집중되는 점을 고려하면 이러한 급등락은 구조적 계절성으로 해석된다. 2026년에는 계절성이 다소 완화된 모습을 보였는데, 1분기 매출 97.0억원, 영업이익 2.5억원, 지배주주 순이익 4.8억원, 2분기 매출 120.9억원, 영업이익 3.7억원, 지배주주 순이익 5.8억원으로 상반기 내내 소폭이나마 흑자를 유지했다. 이는 전년 동기(2025년 2분기 영업손실)와 비교해 개선된 흐름으로, 매출 확대가 매출원가·판관비 증가를 상회하며 흑자전환을 이끈 결과로 풀이된다. 다만 하드웨어 관련 원재료 비용이 전년 대비 두 배 가까이 급증한 점, 그리고 영업활동현금흐름이 2023년 53.6억원에서 2025년 14.2억원으로 줄어든 점은 외형 성장의 질적 측면에서 함께 살펴볼 대목이다.",
-  "en": "AXGATE's annual revenue rose steadily from 38.3 billion won in 2022 to 48.1 billion won in 2025, but operating margin has declined each year, from 14.1% in 2022 to 9.6% in 2023, 8.1% in 2024, and 7.8% in 2025. Notably, despite a solid 9.6% operating margin in 2023, net income attributable to owners was only 294.8 million won that year, likely reflecting one-off costs associated with the company's 2023 KOSDAQ listing, before recovering sharply to 4.0 billion won in 2024. In 2025, revenue and operating profit rose to 48.1 billion won and 3.75 billion won respectively, yet owners' net income slipped slightly to 3.87 billion won, showing that top-line growth did not fully carry through to earnings growth. Quarterly results reveal pronounced seasonality: after an operating loss of -315 million won on revenue of 10.68 billion won in Q2 2025 and a wider operating loss of -1.89 billion won on revenue of 8.87 billion won in Q3 2025, revenue surged to 21.23 billion won in Q4 2025, delivering a large operating profit of 6.88 billion won and owners' net income of 7.04 billion won. Given that public-sector budget execution is typically concentrated in the fourth quarter, this swing is understood as structural seasonality. In 2026, seasonality appeared to moderate somewhat, with Q1 revenue of 9.70 billion won, operating profit of 248 million won, and owners' net income of 481 million won, followed by Q2 revenue of 12.09 billion won, operating profit of 373 million won, and owners' net income of 581 million won, maintaining modest profitability throughout the first half. This marks an improvement versus the same period last year, when Q2 2025 posted an operating loss, suggesting revenue growth outpaced increases in cost of goods sold and selling/administrative expenses to drive the swing to profit. However, hardware-related raw material costs nearly doubled year over year, and operating cash flow declined from 5.36 billion won in 2023 to 1.42 billion won in 2025, both of which warrant attention regarding the quality of top-line growth."
+  "ko": "공시 실적 기준 연간 매출은 2022년 383억원에서 2023년 428억원(전년 대비 11.8% 증가), 2024년 432억원(전년 대비 0.9% 증가), 2025년 481억원(전년 대비 11.4% 증가)으로 늘었다. 2023년부터 2025년까지 3년 연속 증가했고, 2022~2025년 중 가장 큰 해는 2025년이다. 같은 기간 영업이익은 2022년 54.2억원에서 2023년 41억원(전년 대비 24.3% 감소), 2024년 34.9억원(전년 대비 15.0% 감소)으로 줄었고, 2025년 37.5억원(전년 대비 7.7% 증가)으로 돌아섰다. 매출은 커졌지만 영업이익은 2022년이 가장 큰 해다. 영업이익률은 2022년 14.1%, 2023년 9.6%, 2024년 8.1%, 2025년 7.8%로 낮아져 외형 성장이 마진 개선으로 이어지지 않았다. 회사 대표는 영업이익률이 오르지 않는 이유로 5~10년 뒤 먹거리를 위한 연구개발 재투자를 들었다. 지배주주 순이익은 2022년 45.8억원에서 2023년 2.9억원(전년 대비 93.6% 감소)으로 급감했다가 2024년 40억원(전년 대비 1,256.5% 증가), 2025년 38.7억원(전년 대비 3.1% 감소)이었다. 같은 해 당기순이익(비지배지분 포함)도 같은 금액으로 공시됐다. 영업활동 현금흐름은 2025년 14.2억원으로 2022~2025년 중 가장 작았다. 분기로 보면 2025년 4분기 매출은 212억원(전 분기 대비 139.3% 증가), 영업이익 68.8억원(전 분기 대비 흑자 전환)으로 같은 해 연간 영업이익 37.5억원을 웃돌았다. 2026년 1분기 매출은 97억원(전 분기 대비 54.3% 감소), 영업이익은 2.5억원(전 분기 대비 96.4% 감소)으로 줄었고, 2분기에는 매출 121억원, 영업이익 3.7억원으로 회복했다. 2026년 3분기 매출은 104억원(전년 동기 대비 17.6% 증가)이었지만 영업손실 14.8억원으로 전 분기 대비 적자 전환했고, 지배주주 순손실은 22.7억원이었다. 최근 4개 분기(2025년 4분기~2026년 3분기) 지배주주 순이익 합계는 58.4억원이다.",
+  "en": "On a disclosed basis, annual revenue rose from KRW 38.3 billion in 2022 to KRW 42.8 billion in 2023 (up 11.8% year on year), KRW 43.2 billion in 2024 (up 0.9%) and KRW 48.1 billion in 2025 (up 11.4%). Revenue increased for three consecutive years from 2023 to 2025, and 2025 was the largest year of 2022–2025. Operating profit over the same span went from KRW 5.42 billion in 2022 to KRW 4.1 billion in 2023 (down 24.3%) and KRW 3.49 billion in 2024 (down 15.0%), before recovering to KRW 3.75 billion in 2025 (up 7.7%). Revenue grew while operating profit peaked in 2022, so growth did not carry through to margins. The operating margin fell from 14.1% in 2022 to 9.6%, 8.1% and 7.8% in 2025. The CEO attributed the flat margin to reinvestment in research and development for products five to ten years out. Profit attributable to controlling shareholders fell from KRW 4.58 billion in 2022 to KRW 295 million in 2023 (down 93.6%), rebounded to KRW 4 billion in 2024 (up 1,256.5%) and was KRW 3.87 billion in 2025 (down 3.1%). Net income including non-controlling interests was disclosed at the same amounts in each year. Operating cash flow was KRW 1.42 billion in 2025, the lowest of 2022–2025. Quarterly, fourth-quarter 2025 revenue was KRW 21.2 billion (up 139.3% from the prior quarter), and operating profit of KRW 6.88 billion swung to a profit and exceeded the full-year 2025 operating profit of KRW 3.75 billion. First-quarter 2026 revenue fell to KRW 9.7 billion (down 54.3% from the prior quarter) and operating profit to KRW 248 million (down 96.4%), before the second quarter recovered to KRW 12.1 billion in revenue and KRW 373 million in operating profit. Third-quarter 2026 revenue was KRW 10.4 billion (up 17.6% year on year), but the quarter swung to an operating loss of KRW 1.48 billion from the prior quarter, with a net loss attributable to controlling shareholders of KRW 2.27 billion. Profit attributable to controlling shareholders for the last four quarters, from the fourth quarter of 2025 through the third quarter of 2026, totaled KRW 584 million."
  },
  "industry": {
-  "ko": "국내 네트워크 보안 시장은 비대면 환경 확산과 사이버 위협 증가에 따라 VPN, UTM 등 통합 보안 솔루션 수요가 꾸준히 확대되는 국면이며, 공공·금융·기업 시장을 중심으로 안정적인 수요 기반이 형성돼 있다. 최근 보안 업계에서는 양자컴퓨터 발전에 따른 암호체계 붕괴 우려, 즉 '선 수집 후 해독(SNDL)' 위협이 커지면서 국방·방산 인프라의 양자 전환이 국가적 과제로 부각되고 있다. 엑스게이트는 이러한 흐름 속에서 QRNG·PQC 하이브리드 기술과 KCMVP 인증을 앞세워 국방 대기업과의 협업을 통해 양자보안 시범사업을 수행한 바 있으며, 향후 드론·무인기·작전차량·로봇·무전기 등 다양한 무기체계로 납품 분야를 확대할 준비를 하고 있다. 경쟁구도 측면에서는 공공 조달 VPN 시장에서 안랩을 비롯한 기존 강자들과 경쟁하는 구조이며, 엑스게이트는 시장 점유율 1위를 유지해왔다는 평가를 받는다. 차세대 방화벽(NGFW) 시장은 아직 상용화 초기 단계로, 기존 방화벽 시장 대비 진입 시 시장 규모(TAM) 확대가 기대되는 영역이지만 경쟁사들도 유사한 방향으로 기술을 고도화하고 있어 차별화 지속 여부가 관건이다. AI 기반 보안 수요 역시 새로운 성장축으로 부상하고 있으며, AI 모델 고도화에 따른 신규 취약점 대응 수요가 늘어나는 추세다. 다만 하드웨어 원재료를 해외 OEM에 의존하는 구조상 반도체·메모리 가격 변동과 지정학적 리스크에 따른 원가 부담은 업계 전반이 공통으로 안고 있는 변수다. 모회사인 가비아를 둘러싼 맥쿼리자산운용의 공개매수·상장폐지 추진은 엑스게이트가 속한 그룹 전체의 지배구조 재편 가능성을 시사하는 산업 외적 변수로 함께 관찰할 필요가 있다.",
-  "en": "South Korea's network security market is in a phase of steady demand expansion for integrated solutions such as VPN and UTM, driven by the spread of remote environments and rising cyber threats, with a stable demand base centered on public, financial, and corporate sectors. Recently, concerns over cryptographic collapse from quantum computing advances, the so-called harvest-now-decrypt-later threat, have elevated the quantum transition of defense infrastructure to a national priority. Against this backdrop, AXGATE has leveraged its hybrid QRNG-PQC technology and KCMVP certification to conduct a quantum security pilot program in collaboration with a major defense company, and is preparing to expand deliveries into weapons systems including drones, unmanned vehicles, combat vehicles, robots, and radios. In terms of competitive positioning, the company competes against incumbents such as AhnLab in the public procurement VPN market and has been credited with holding the number one market share. The next-generation firewall (NGFW) market remains at an early commercialization stage, an area expected to expand total addressable market versus the existing firewall market upon entry, though competitors are advancing similar technologies, making continued differentiation a key question. AI-driven security demand is also emerging as a new growth axis, with rising need to address new vulnerabilities from more sophisticated AI models. That said, dependence on overseas OEM sourcing for hardware raw materials exposes the whole industry to common cost pressures from semiconductor and memory price swings and geopolitical risk. Macquarie Asset Management's tender offer and delisting push targeting parent Gabia is an external variable worth monitoring, as it signals potential governance restructuring across the broader group to which AXGATE belongs."
+  "ko": "양자보안 수요는 양자컴퓨터가 기존 공개키 암호체계를 무력화할 수 있다는 우려에서 출발한다. 특히 지금 암호화된 데이터를 미리 모아 두었다가 나중에 양자컴퓨터로 해독하는 위협이 국방·방산·국가 기반시설에서 중요한 보안 과제로 떠올랐다. 국내에서는 국가 검증필암호모듈(KCMVP)에 PQC 알고리즘이 없어 공공기관이 도입할 제도 근거가 없었는데, 회사가 확보한 하이브리드 KCMVP 인증이 그 기반을 마련했다는 설명이다. 정부는 2026년 PQC 시범전환 사업을 추진하고 있으며, 엑스게이트는 교통 분야 최종 수행기관으로 선정됐다고 밝혔다. 방산 시장은 본사업 전환, 예산 편성, 조달 절차, 기술 검증 등 여러 단계를 거쳐야 하므로 매출 반영 시점이 늦어질 수 있다. 경쟁 측면에서 엑스게이트는 VPN·방화벽 고객 기반과 공공 조달 경험을 강점으로 든다. AI 차세대 방화벽 시장은 암호화 트래픽이 늘면서 단순 탐지에서 지능형 분석으로 무게가 옮겨가는 흐름이다. 국내 보안 시장에서는 안랩(Ahnlab) 같은 대형 보안 업체와 공공 조달 시장에서 맞붙는 구도다. PQC 수요가 실제 매출로 이어지는 속도는 본사업 발주 시점에 달려 있다.",
+  "en": "Demand for quantum security starts from concern that quantum computers could break today's public-key cryptography. The threat of harvesting encrypted data now and decrypting it later with quantum computers has become a major security issue for defense, defense industry and critical infrastructure. In Korea, no PQC algorithm had been available in the KCMVP cryptographic module verification, leaving public agencies without a basis for adoption; the company says its hybrid KCMVP certification has created that foundation. The government is running a 2026 PQC pilot conversion program, and Axgate has been selected as a final performing institution for the transport sector. Defense procurement moves through several stages, including conversion to full contracts, budget allocation, procurement procedures and technical validation, so revenue recognition may come later than pilot milestones. On competition, Axgate points to its VPN and firewall customer base and public procurement experience as strengths. The AI next-generation firewall market is shifting from simple detection toward intelligent analysis as encrypted traffic grows. In domestic security, Axgate competes in public procurement with large security vendors such as Ahnlab. How quickly PQC demand turns into revenue depends on when full-scale orders are placed."
  },
  "outlook": {
-  "ko": "회사는 VPN·방화벽 중심의 안정적 사업 구조를 바탕으로 성장세를 이어가겠다는 방침을 밝히고 있으며, 여러 매체를 통해 매출 목표 달성 가능성에 대한 자신감을 나타냈다. AI 기반 차세대 방화벽에 적용 중인 자연어 기반 인터페이스 기술은 올해 하반기 개발을 마무리하고 내년 1분기 출시를 목표로 하고 있어, 향후 출시 일정 준수 여부가 확인 포인트다. 양자보안 분야에서는 국내 방산 대기업과의 시범사업 성공을 바탕으로 드론·무인기·작전차량 등 다양한 무기체계로의 본사업 확대를 추진하고 있으며, 회사 대표는 조 단위 본사업 수주를 통한 도약을 목표로 제시했다. 홈네트워크 보안 사업도 포트폴리오의 한 축으로 자리 잡아가고 있어, 관련 규제 강화 흐름에 따른 수요 확대 여부를 지켜볼 필요가 있다. 다만 이러한 신사업들은 대부분 아직 대규모 본사업 수주로 이어지지 않은 초기 단계이며, 실제 매출 기여 시점은 정부 예산 편성과 인증 절차 등에 따라 유동적이다. 한편 모회사 가비아는 맥쿼리자산운용과 함께 자진 상장폐지를 추진 중이며, 회사 측은 상장폐지 이후 엑스게이트 등 자회사 운영 방향에 대해 \"현재 확정된 계획이 없다\"고 밝힌 상태로, 이 거래의 성사 여부와 이후 자회사 재편 방향이 향후 엑스게이트의 지배구조에 영향을 줄 수 있는 변수로 남아 있다. 공개매수 응모율이 목표에 못 미칠 경우 거래 자체가 성립하지 않을 가능성도 있어, 그룹 차원의 불확실성은 단기간 내 해소되기 어려운 상황이다.",
-  "en": "The company has stated its intention to sustain growth on the back of its stable VPN- and firewall-centered business, expressing confidence through various media outlets about the likelihood of achieving its revenue targets. The natural-language interface technology being applied to its AI next-generation firewall is targeted for development completion in the second half of this year and launch in the first quarter of next year, making adherence to that timeline a point to verify going forward. In quantum security, the company is pursuing expansion into full-scale programs across weapons systems such as drones, unmanned vehicles, and combat vehicles building on a successful pilot with a major domestic defense company, with its CEO citing an ambition to win contracts worth trillions of won. Home network security has also become part of the portfolio, and whether tightening related regulations will boost demand is worth watching. However, most of these new growth initiatives remain at an early stage without having yet converted into large-scale program contracts, and the actual timing of revenue contribution is contingent on government budget allocation and certification procedures. Meanwhile, parent Gabia is pursuing a voluntary delisting together with Macquarie Asset Management, and the company has stated it has \"no confirmed plans\" regarding the future operation of subsidiaries including AXGATE after delisting, leaving the deal's completion and the subsequent direction of subsidiary restructuring as a variable that could affect AXGATE's governance going forward. There is also a possibility the deal itself may not be completed if the tender offer acceptance rate falls short of target, meaning group-level uncertainty is unlikely to be resolved in the near term."
+  "ko": "회사는 2026년 매출 목표를 500억원대 중반으로 잡았다고 밝혔고, 대표는 목표를 넘길 수 있을 것이라고 말했다. 2026년 1분기 매출은 97억원으로 전년 같은 기간보다 25.8% 늘었다고 보도됐다. 그러나 2026년 1~3분기 분기 매출은 100억원 안팎에 머물러 목표 달성에는 4분기 매출이 다시 크게 몰려야 한다. 방산 쪽에서는 대기업과 양자보안 시범사업을 마쳤고, 드론·무인기·작전차량·무전기 등 무기체계와 국방 통신 인프라로 납품을 넓히는 것이 목표다. 교통 분야 PQC 사업에서는 현장 장비와 관제센터 사이 데이터 전송 구간의 보안을 맡는다. 홈네트워크 쪽은 2026년 확보된 수주 잔액이 충분하다는 것이 회사 설명이다. AI 차세대 방화벽은 자연어 기반 장비 제어 기능을 포함하며, 공공·금융·스마트 인프라 시장으로 확대한다는 방침이다. 회사는 연구개발 투자를 계속하겠다는 입장이어서, 연구개발 부담이 분기 영업이익에 얼마나 반영되는지가 확인 지점이다. 방산 본사업 수주 시기와 규모는 아직 공개된 일정이 없다.",
+  "en": "The company has set a 2026 revenue target in the mid-KRW 50 billion range, and its CEO has said the company can exceed it. First-quarter 2026 revenue of KRW 9.7 billion was reported as up 25.8% from a year earlier. Yet quarterly revenue from the first to third quarters of 2026 stayed near the KRW 10 billion level, so reaching the target would require fourth-quarter revenue to be concentrated again. In defense, the company has completed a quantum-security pilot with a large defense contractor and aims to expand deliveries to weapons systems and defense communications infrastructure. In the transport PQC project, Axgate is responsible for securing data transmission between roadside equipment and the control center. In home-network security, the company says its order backlog secured for 2026 is sufficient. Its AI next-generation firewall includes natural-language device control and is slated for expansion into public, financial and smart-infrastructure markets. The company intends to keep investing in research and development, so how much of that spending shows up in quarterly operating profit is a checkpoint. No public timetable for full-scale defense orders has been confirmed."
  },
  "valuation_comment": {
-  "ko": "엑스게이트의 주가는 최근 몇 년간 적자에서 흑자로 전환되는 과정을 거치며 순자산 대비 프리미엄이 큰 구간에서 거래되는 경향을 보여왔다. 이는 VPN·방화벽의 안정적 현금창출력에 더해 양자보안·AI 신사업의 성장 스토리가 함께 반영된 결과로 해석할 수 있다. 다만 신사업의 매출 기여가 아직 초기 단계인 만큼, 이러한 밸류에이션 수준이 실적으로 뒷받침되는지는 앞으로의 분기 실적에서 계속 확인해야 할 부분이다. 배당 측면에서는 최근 회계연도 기준 현금배당이 이뤄지지 않아 배당 매력보다는 성장 스토리에 의존하는 밸류에이션 구조로 평가할 수 있다. 아울러 모회사 가비아를 둘러싼 지배구조 재편 이슈는 엑스게이트의 밸류에이션에 추가적인 변수로 작용할 수 있어, 그룹 차원의 상황 전개를 함께 살펴볼 필요가 있다.",
-  "en": "AXGATE's share price has tended to trade at a substantial premium to net asset value as the company transitioned from losses to profits in recent years. This can be interpreted as reflecting both the stable cash-generating capacity of its VPN and firewall businesses and the growth narrative around its quantum security and AI initiatives. However, since revenue contribution from these new businesses remains at an early stage, whether this valuation level is supported by actual earnings is something that will need continued confirmation in coming quarterly results. On the dividend front, no cash dividend was paid in the most recent fiscal year, suggesting the valuation structure relies more on the growth story than on dividend appeal. In addition, the governance restructuring issue surrounding parent Gabia could act as an additional variable for AXGATE's valuation, warranting attention to how the group-level situation develops."
+  "ko": "최근 4개 분기 지배주주 순이익 합계는 58.4억원으로, 주가 수준에 비해 이익 규모가 작은 구조다. 2025년 말 기준 지배주주 지분은 483억원으로 자본총계와 같아, 주가순자산비율은 순자산 대비 프리미엄이 큰 구간에 있다. 2022년 영업이익이 정점이었고 이후 영업이익률이 14.1%에서 7.8%로 낮아진 점은 배수 해석의 핵심 배경이다. 2026년 3분기 영업손실로 적자 전환이 나타나 분기 단위로는 이익 기반이 흔들리는 구간이 있었다. 주가가 실적보다 양자보안 사업 기대에 더 반응하는지는 본사업 수주 공시로 확인해야 할 쟁점이다. 영업활동 현금흐름은 2025년 14.2억원으로 2022~2025년 중 가장 작아, 이익 대비 현금 창출 확인이 과제로 남아 있다. 배당 환원 수준은 현재 낮은 편이다. 배수는 주가에 따라 움직이므로 실적과의 관계에서 해석이 달라진다.",
+  "en": "Profit attributable to controlling shareholders for the last four quarters totaled KRW 584 million, which is small relative to the current share price. At the end of 2025, equity attributable to controlling shareholders was KRW 48.3 billion, equal to total equity, so the price-to-book multiple sits in a range of large premium over net assets. The operating profit peak came in 2022, and the operating margin has since fallen from 14.1% to 7.8%, which is central to how the multiples should be read. The third quarter of 2026 swung to an operating loss, so the earnings base has been volatile at the quarterly level. Whether the share price is reacting more to quantum-security expectations than to reported earnings is a question that full-scale contract disclosures will help answer. Operating cash flow of KRW 1.42 billion in 2025 was the lowest of 2022–2025, so converting earnings into cash remains an open task. The dividend payout is currently low. Multiples move with the share price, so their meaning relative to earnings changes over time."
  },
  "bull": [
   {
    "title": {
-    "ko": "양자보안·국방 시장 진입",
-    "en": "Entry into Quantum Security and Defense Markets"
+    "ko": "양자보안 인증 선점",
+    "en": "Early Quantum-Security Certification"
    },
    "body": {
-    "ko": "QRNG·PQC를 결합한 'AX-Quantum' 플랫폼과 국내 최초 하이브리드 KCMVP 인증을 확보해 국방 대기업과의 시범사업을 성공적으로 수행했다. 향후 드론·무인기·작전차량·로봇·무전기 등 다양한 무기체계로 본사업이 확대될 경우 새로운 매출원으로 자리매김할 수 있다. 정부 차원의 양자내성암호 전환 정책과 연계된 만큼 정책 수혜 가능성도 함께 거론된다.",
-    "en": "The company secured its 'AX-Quantum' platform combining QRNG and PQC along with Korea's first hybrid KCMVP certification, successfully conducting a pilot program with a major defense company. If full-scale programs expand into weapons systems such as drones, unmanned vehicles, combat vehicles, robots, and radios, this could become a new revenue source. Alignment with the government's post-quantum cryptography transition policy is also cited as a potential policy tailwind."
+    "ko": "회사는 PQC와 QRNG를 결합한 AX-Quantum 플랫폼으로 국내 최초 하이브리드 KCMVP 국가 인증을 획득했다고 밝혔다. 공공기관이 PQC를 도입할 제도 기반이 생겼다는 점에서 조달 시장 진입의 문이 열렸다는 설명이다. 2026년 교통 분야 PQC 시범전환 사업의 수행기관으로도 선정됐다. 인증과 시범사업 실적이 쌓이면 본사업 수주의 근거가 된다는 것이 회사의 논리다.",
+    "en": "The company says its AX-Quantum platform, which combines PQC and QRNG, earned the first hybrid KCMVP national certification in Korea. The company argues this opens procurement access because public agencies now have a basis to adopt PQC. Axgate was also selected for the 2026 transport-sector PQC pilot. The company's logic is that certification and pilot track records will support full-scale contract wins."
    }
   },
   {
    "title": {
-    "ko": "AI 차세대 방화벽·자연어 인터페이스",
-    "en": "AI Next-Generation Firewall and Natural Language Interface"
+    "ko": "기존 VPN·방화벽 기반",
+    "en": "Established VPN and Firewall Base"
    },
    "body": {
-    "ko": "AI 기반 애플리케이션 식별·제어, 암호화 트래픽 내 위협 탐지 등을 적용한 AI NGFW를 핵심 축으로 내세우고 있으며, LLM 기반 자연어 인터페이스는 올해 하반기 개발 완료 후 내년 1분기 출시를 목표로 한다. 기존 VPN·방화벽 고객의 업그레이드 수요를 흡수하는 동시에 신규 고신뢰 시장 선점도 기대할 수 있다.",
-    "en": "The company positions its AI NGFW, featuring AI-based application identification and control and encrypted-traffic threat detection, as a core pillar, with an LLM-based natural language interface targeted for completion in the second half of this year and launch in the first quarter of next year. This could capture upgrade demand from existing VPN and firewall customers while pursuing new high-trust markets."
+    "ko": "2025년 매출에서 VPN이 40%, 방화벽이 30%를 차지해 두 제품군이 매출의 대부분을 떠받친다. 매출은 2023년부터 2025년까지 3년 연속 늘었고, 2025년에는 2022~2025년 중 가장 큰 해를 기록했다. 공공 조달 시장에서 전년 대비 매출이 꾸준히 증가하고 있다는 것이 회사 설명이다. 신사업이 부진하더라도 기존 제품군이 최소한의 외형을 받쳐 주는 구조다.",
+    "en": "VPN accounted for 40% and firewalls for 30% of 2025 revenue, so these two product lines carry most of the top line. Revenue rose for three consecutive years from 2023 to 2025, with 2025 the largest year of 2022–2025. The company says public procurement sales have kept rising year on year. Even if the new businesses lag, the established product lines provide a base for the top line."
    }
   },
   {
    "title": {
-    "ko": "2026년 상반기 계절성 완화",
-    "en": "Moderating Seasonality in H1 2026"
+    "ko": "방산·공공 수요 확대 경로",
+    "en": "Defense and Public-Sector Demand Path"
    },
    "body": {
-    "ko": "2025년 2분기 영업손실을 기록했던 것과 달리 2026년 1·2분기는 각각 2.5억원, 3.7억원의 영업이익을 내며 흑자 기조를 이어갔다. 4분기에 실적이 몰리는 계절성이 완전히 해소된 것은 아니지만, 상반기 손익이 개선된 점은 연중 수익 안정성 측면에서 긍정적으로 볼 수 있는 신호다.",
-    "en": "Unlike the operating loss recorded in Q2 2025, the company posted operating profits of 248 million won and 373 million won in Q1 and Q2 2026 respectively, sustaining a profitable trend. While the seasonality concentrated in the fourth quarter has not been fully resolved, improved first-half profitability is a signal that can be viewed positively for earnings stability across the year."
+    "ko": "회사는 국내 방산 대기업과 양자보안 시범사업을 마쳤고, 드론·무인기·작전차량·무전기 등으로 납품 분야를 넓히겠다고 밝혔다. 양자VPN은 2025년 방산 시장에 진입한 뒤 공공·지자체·국방 분야에서 납품이 본격화됐다. 교통 인프라에서도 PQC 확장 기술로 관제센터 데이터 구간을 맡는다. 방산과 공공을 잇는 수요가 실제로 발주되면 매출 구조가 바뀔 수 있다.",
+    "en": "The company says it completed a quantum-security pilot with a large domestic defense contractor and plans to expand into drones, unmanned vehicles, operational vehicles and radios. Q-VPN entered the defense market in 2025, and deliveries to public, local-government and defense customers have since increased. In transport infrastructure, the company is securing the data link to the control center with its PQC extension technology. If public and defense demand turns into orders, the revenue mix could change."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "구조적 계절성에 따른 실적 변동성",
-    "en": "Earnings Volatility from Structural Seasonality"
+    "ko": "영업이익률 하락 추세",
+    "en": "Downward Trend in Operating Margin"
    },
    "body": {
-    "ko": "공공분야 예산 집행이 4분기에 집중되는 구조상 2025년 3분기까지 영업손실을 낸 뒤 4분기에 대부분의 연간 이익이 몰리는 패턴이 반복됐다. 이러한 계절성은 분기별 실적을 예측하기 어렵게 만들며, 특정 분기의 부진이 곧바로 연간 실적 악화로 이어질 위험을 내포한다.",
-    "en": "Because public-sector budget execution is concentrated in the fourth quarter, the pattern of operating losses through Q3 2025 followed by most of the annual profit being concentrated in Q4 has recurred. This seasonality makes quarterly results difficult to predict and carries the risk that weakness in any given quarter could quickly translate into a deterioration in annual results."
+    "ko": "영업이익률은 2022년 14.1%에서 2023년 9.6%, 2024년 8.1%, 2025년 7.8%로 4년 가까이 낮아졌다. 매출은 2022년 383억원에서 2025년 481억원으로 늘었지만 이익률은 따라 오르지 않았다. 회사는 연구개발 재투자를 이유로 들었으나, 이 투자가 언제 이익으로 돌아올지는 공시로 확인된 바가 없다. 이익률이 낮은 상태에서 매출 성장이 이익 증가로 이어지지 않는 구조가 약세 논리다.",
+    "en": "The operating margin fell from 14.1% in 2022 to 9.6% in 2023, 8.1% in 2024 and 7.8% in 2025. Revenue rose from KRW 38.3 billion in 2022 to KRW 48.1 billion in 2025, but the margin did not recover with it. The company cites research reinvestment, but no disclosed timetable shows when that spending will return as profit. The bear case rests on revenue growth not converting into higher profit at a low margin."
    }
   },
   {
    "title": {
-    "ko": "원가 상승에 따른 마진 압박",
-    "en": "Margin Pressure from Rising Costs"
+    "ko": "분기 실적의 편차와 적자 전환",
+    "en": "Quarterly Volatility and Return to Loss"
    },
    "body": {
-    "ko": "영업이익률은 2022년 14.1%에서 2025년 7.8%로 매년 낮아지는 추세를 보이고 있으며, 하드웨어 관련 원재료 비용은 전년 대비 두 배 가까이 급증했다. 반도체·메모리 등 원자재를 해외 OEM에 의존하는 구조상 지정학적 리스크나 업황 변화에 따른 비용 부담이 지속될 가능성이 있다.",
-    "en": "Operating margin has declined every year from 14.1% in 2022 to 7.8% in 2025, and hardware-related raw material costs nearly doubled year over year. Given the structural reliance on overseas OEM sourcing for materials such as semiconductors and memory, cost pressure from geopolitical risk or industry cycle shifts could persist."
+    "ko": "2025년 4분기 매출은 212억원이었지만 2026년 1분기에는 97억원으로 줄었다. 2026년 3분기에는 매출 104억원에도 영업손실 14.8억원으로 전 분기 대비 적자 전환했고, 지배주주 순손실은 22.7억원이었다. 분기 실적이 대형 납품에 좌우되는 구조라 특정 분기의 수주 지연이 적자로 바로 이어질 수 있다. 4분기 집중 구조가 되풀이되지 않으면 연간 목표 달성이 어렵다.",
+    "en": "Revenue was KRW 21.2 billion in the fourth quarter of 2025 but fell to KRW 9.7 billion in the first quarter of 2026. In the third quarter of 2026, revenue of KRW 10.4 billion coincided with an operating loss of KRW 1.48 billion, a swing from the prior quarter, and a net loss attributable to controlling shareholders of KRW 2.27 billion. Because quarterly results depend on large deliveries, a delay in one quarter can quickly turn into a loss. If the fourth-quarter concentration does not repeat, the annual target becomes harder to reach."
    }
   },
   {
    "title": {
-    "ko": "모회사 가비아 지배구조 불확실성",
-    "en": "Governance Uncertainty at Parent Gabia"
+    "ko": "이익 규모 대비 주가 부담",
+    "en": "Share Price Weight Relative to Earnings"
    },
    "body": {
-    "ko": "최대주주인 가비아가 맥쿼리자산운용과 함께 자진 상장폐지를 추진 중이며, 2대·3대 주주인 미리캐피탈·얼라인파트너스가 공개매수가에 반발해 청약 불참을 공식화한 상태다. 거래가 성사되지 않거나 성사되더라도 이후 엑스게이트 등 자회사 재편 방향이 아직 확정되지 않아, 그룹 차원의 불확실성이 엑스게이트의 지배구조에도 영향을 줄 수 있다.",
-    "en": "Largest shareholder Gabia is pursuing a voluntary delisting together with Macquarie Asset Management, while second- and third-largest shareholders Miri Capital and Align Partners have formally declared they will not tender their shares, objecting to the offer price. Whether or not the deal is completed, the future direction of subsidiary restructuring including AXGATE has not yet been finalized, meaning group-level uncertainty could also affect AXGATE's own governance."
+    "ko": "최근 4개 분기 지배주주 순이익 합계는 58.4억원으로 이익 기반이 얇다. 2025년 말 기준 지배주주 지분은 483억원이며, 주가순자산비율은 순자산 대비 프리미엄이 큰 구간이다. 주가가 실적보다 양자보안 사업 기대에 의존하는 구도라면 사업 이벤트가 지연될 때 조정 압력이 커질 수 있다. 영업활동 현금흐름이 2025년 14.2억원으로 줄어든 점도 이익의 질 측면에서 약세 근거다.",
+    "en": "Profit attributable to controlling shareholders for the last four quarters totals KRW 584 million, a thin earnings base. Equity attributable to controlling shareholders at the end of 2025 was KRW 48.3 billion, and the price-to-book multiple sits in a large-premium range. If the share price depends more on quantum-security expectations than on earnings, any delay in business milestones could add pressure. Operating cash flow falling to KRW 1.42 billion in 2025 is also a bear point on earnings quality."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "지배구조/지분 리스크",
-    "en": "Governance/Ownership Risk"
+    "ko": "정책·조달 일정",
+    "en": "Policy and Procurement Timing"
    },
    "body": {
-    "ko": "가비아는 엑스게이트 지분 32.9%를 보유한 최대주주이며, 가비아 자체가 맥쿼리자산운용의 공개매수 및 자진 상장폐지 대상이 되어 있다. 회사 측은 상장폐지 이후 자회사 운영 방향에 대해 확정된 계획이 없다고 밝혔으며, 공개매수 응모율이 목표에 못 미칠 경우 거래 자체가 무산될 가능성도 있어 그룹 차원의 지배구조 불확실성이 이어지고 있다.",
-    "en": "Gabia is the largest shareholder of AXGATE with a 32.9% stake, and Gabia itself is the target of a tender offer and voluntary delisting by Macquarie Asset Management. The company has stated it has no confirmed plans for subsidiary operations after delisting, and there is a possibility the deal could fall through if the tender offer acceptance rate falls short of target, leaving group-level governance uncertainty ongoing."
+    "ko": "방산 시장은 본사업 전환, 예산 편성, 조달 절차, 기술 검증 등 여러 단계를 거쳐야 한다. 교통 분야 PQC 사업은 시범전환 과제이므로 본사업으로 이어지는지가 불확실하다. 공공 PQC 도입의 제도 기반이 생겼어도 실제 발주 규모와 시기는 정부 예산에 따라 달라진다. 시범사업 성과가 발주로 이어지지 않으면 매출 목표 달성 경로가 약해진다.",
+    "en": "Defense markets move through several stages, including conversion to full contracts, budget allocation, procurement procedures and technical validation. The transport PQC project is a pilot, so whether it leads to full contracts is uncertain. Even with a basis for public PQC adoption, the timing and size of orders depend on government budgets. If pilot results do not lead to orders, the path to the revenue target weakens."
    }
   },
   {
    "cat": {
-    "ko": "원가 변동성 리스크",
-    "en": "Cost Volatility Risk"
+    "ko": "연구개발 부담과 원가",
+    "en": "R&D Burden and Input Costs"
    },
    "body": {
-    "ko": "주 수익원인 하드웨어(보안서버) 및 소프트웨어 부문은 국내외 거래처로부터 OEM 방식으로 원재료를 매입하는 구조로, AI 서버 수요 확대와 반도체 업황 변화, 지정학적 리스크가 맞물리며 메모리 등 원재료 값이 크게 상승한 바 있다. 이러한 비용 부담이 지속될 경우 매출 성장에도 마진 개선이 제한될 수 있다.",
-    "en": "The main revenue-generating hardware (security server) and software segment sources raw materials on an OEM basis from domestic and overseas vendors, and memory and other material prices have risen sharply amid rising AI server demand, semiconductor industry cycle shifts, and geopolitical risk. If this cost burden persists, margin improvement could remain limited even as revenue grows."
+    "ko": "회사는 5~10년 뒤 먹거리를 위해 연구개발을 계속 늘리겠다는 입장이다. 연구개발 비용이 매출보다 빠르게 늘면 영업이익률 회복이 늦어질 수 있다. 메모리 가격 인상으로 부품 수급이 불안하다는 점도 원가 부담 요인이다. 회사는 내년까지 쓸 메모리·SSD를 미리 확보했다고 설명했지만 가격 변동성은 여전히 크다.",
+    "en": "The company intends to keep expanding research spending for products five to ten years out. If R&D costs grow faster than revenue, a margin recovery could be delayed. Rising memory prices have also created supply and cost pressure on components. The company says it bought memory and SSDs in advance for next year's needs, but price volatility remains high."
    }
   },
   {
    "cat": {
-    "ko": "신사업 실행 리스크",
-    "en": "New Business Execution Risk"
+    "ko": "테마 민감도와 주가 변동",
+    "en": "Theme Sensitivity and Share Price Swings"
    },
    "body": {
-    "ko": "양자보안·AI NGFW·홈네트워크 등 신성장 사업은 아직 대규모 본사업 수주로 이어지지 않은 초기 단계이며, 회사가 목표로 제시한 조 단위 수주는 정부 예산 편성과 인증·검증 절차 등 외부 변수에 크게 의존한다. 자연어 인터페이스 등 신제품 출시 일정이 지연될 경우 성장 스토리의 실현 시점도 함께 늦춰질 수 있다.",
-    "en": "New growth businesses such as quantum security, AI NGFW, and home network security remain at an early stage without yet converting into large-scale program contracts, and the trillion-won-scale contracts the company has targeted depend heavily on external variables such as government budget allocation and certification/verification procedures. If the launch schedule for new products such as the natural language interface is delayed, realization of the growth story could also be pushed back."
+    "ko": "양자 관련 기대가 주가에 크게 반영되는 구간에서는 사업 뉴스의 강도에 따라 주가 변동이 커질 수 있다. 실적이 분기마다 큰 폭으로 바뀌는 구조라 이익 기반으로 주가를 설명하기 어려운 시기가 생긴다. 주가 흐름이 실적과 무관하게 움직이면 투자 판단의 기준이 흔들릴 수 있다. 이 리스크는 사업 자체보다 시장 기대의 변화에서 비롯된다.",
+    "en": "When quantum-related expectations weigh heavily on the share price, its moves can grow with the intensity of business news. Because quarterly results swing sharply, there are periods when the share price is hard to explain with earnings alone. If the price moves independently of results, the basis for assessing the stock can become unstable. This risk stems more from shifts in market expectations than from the business itself."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 9월 17일",
-    "en": "September 17, 2026"
+    "ko": "2026년 말 사업연도 종료 후 2027년 3월 말까지",
+    "en": "By end-March 2027, after the 2026 fiscal year closes"
    },
    "what": {
-    "ko": "맥쿼리자산운용의 가비아 공개매수 마감 시한으로, 응모율에 따라 거래 성사 여부와 이후 자회사(엑스게이트 등) 재편 방향에 대한 시장의 관심이 집중될 시점이다.",
-    "en": "This is the deadline for Macquarie Asset Management's tender offer for Gabia; the acceptance rate will determine whether the deal is completed and will draw market attention to the subsequent direction of subsidiary restructuring, including AXGATE."
+    "ko": "2026년 사업보고서 제출. 2026년 4분기와 연간 실적, 영업이익률 추이, 500억원대 중반 매출 목표 달성 여부가 확인된다.",
+    "en": "Filing of the 2026 annual report. It will show fourth-quarter and full-year 2026 results, the operating margin trend and whether the mid-KRW 50 billion revenue target was reached."
    }
   },
   {
    "when": {
-    "ko": "2026년 11월 중(3분기 실적 발표 예상 시점)",
-    "en": "Around November 2026 (expected Q3 earnings release)"
+    "ko": "2027년 2월 전후(직전 연도 실적은 2026년 2월 23일 발표)",
+    "en": "Around February 2027 (2025 results were announced on February 23, 2026)"
    },
    "what": {
-    "ko": "2025년 3분기에는 영업손실을 기록한 만큼, 2026년 3분기 실적이 계절성을 완화된 형태로 나타나는지 아니면 과거 패턴을 반복하는지 확인이 필요하다.",
-    "en": "Since Q3 2025 recorded an operating loss, it will be important to check whether Q3 2026 results show reduced seasonality or repeat the historical pattern."
+    "ko": "2026년 연간 잠정 실적 발표. 4분기 매출 집중 구조가 반복되는지, 영업이익이 전년보다 늘었는지가 확인 지점이다.",
+    "en": "Preliminary full-year 2026 results. The checkpoints are whether fourth-quarter revenue is again concentrated and whether operating profit rose from the prior year."
    }
   },
   {
    "when": {
-    "ko": "2027년 1분기(자연어 인터페이스 출시 목표 시점)",
-    "en": "Q1 2027 (targeted natural language interface launch)"
+    "ko": "2027년 5월 15일 전후",
+    "en": "Around May 15, 2027"
    },
    "what": {
-    "ko": "회사가 밝힌 LLM 기반 자연어 인터페이스 출시 목표 시점으로, 개발 일정 준수 여부와 실제 제품 상용화 진행 상황을 확인할 필요가 있다.",
-    "en": "This is the company's stated target for launching its LLM-based natural language interface; adherence to the development schedule and actual commercialization progress will need to be verified."
+    "ko": "2027년 1분기 분기보고서 제출. 2026년 1분기 매출 97억원, 영업이익 2.5억원 대비 분기 흐름과 방산 본사업 매출 반영 여부를 확인한다.",
+    "en": "Filing of the first-quarter 2027 quarterly report. It will be compared with first-quarter 2026 revenue of KRW 9.7 billion and operating profit of KRW 248 million, and will show whether defense full-scale contracts begin to contribute."
    }
   },
   {
    "when": {
-    "ko": "2027년 2월 중(2026년 4분기 및 연간 실적 발표 예상 시점)",
-    "en": "Around February 2027 (expected Q4/full-year 2026 earnings release)"
+    "ko": "2026년 연말 무렵",
+    "en": "Around year-end 2026"
    },
    "what": {
-    "ko": "역사적으로 연간 이익이 4분기에 집중되는 구조인 만큼, 2026년 연간 매출이 최대치 경신을 이어가는지와 영업이익률 하락 추세가 반전되는지를 확인할 시점이다.",
-    "en": "Given the historical concentration of annual profit in the fourth quarter, this will be a point to check whether full-year 2026 revenue continues to set records and whether the declining operating margin trend reverses."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 하반기 이후 지속 확인",
-    "en": "Ongoing monitoring from H2 2026"
-   },
-   "what": {
-    "ko": "국방·방산 분야 양자보안 본사업 수주 및 정부의 양자내성암호 전환 관련 시범사업 진행 상황을 지속적으로 확인할 필요가 있다.",
-    "en": "Continued monitoring is needed on the award of full-scale quantum security defense contracts and progress of government pilot programs related to the post-quantum cryptography transition."
+    "ko": "2026년 PQC 시범전환 사업 교통 분야 수행 결과와 방산 본사업 발주 여부. 시범사업 성과가 후속 발주로 이어지는지가 매출 경로를 바꾼다.",
+    "en": "Results of the transport-sector work in the 2026 PQC pilot conversion project and whether defense full-scale orders are placed. Whether pilot results lead to follow-on orders will shape the revenue path."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "엑스게이트는 VPN·방화벽이라는 안정적 현금창출 사업 위에 양자보안·AI·홈네트워크라는 신성장 축을 쌓아가는 구조를 보이고 있으며, 2025년 매출은 481억원으로 2년 연속 최대치를 기록했다. 다만 영업이익률은 2022년 14.1%에서 2025년 7.8%로 매년 낮아지는 추세이며, 공공분야 예산 집행 주기에 따른 4분기 편중 실적 구조는 여전히 뚜렷하다. 2026년 상반기에는 전년 동기와 달리 소폭이나마 흑자를 이어가며 계절성이 다소 완화되는 모습을 보였다. 양자보안·AI NGFW 등 신사업은 정부 정책과 국방 대기업 협업을 발판으로 성장 스토리를 그리고 있으나 대부분 아직 대규모 본사업 수주로 이어지지 않은 초기 단계다. 여기에 최대주주인 가비아가 맥쿼리자산운용과 함께 자진 상장폐지를 추진 중이고, 2·3대 주주가 공개매수가에 반발해 청약 불참을 밝히는 등 그룹 차원의 지배구조 변수가 새롭게 부상했다. 이 거래의 성사 여부와 이후 자회사 재편 방향은 엑스게이트의 향후 지배구조를 좌우할 수 있는 만큼, 신사업 실행 성과와 함께 지속적으로 확인해야 할 요소다. 종합하면 성장 스토리와 실적 계절성, 지배구조 변수가 동시에 얽혀 있는 국면으로, 각 요소의 전개를 균형 있게 살펴볼 필요가 있다.",
-   "en": "AXGATE is building new growth pillars in quantum security, AI, and home network security atop its stable VPN and firewall cash-generating business, with 2025 revenue reaching a second consecutive record of 48.1 billion won. However, operating margin has declined every year from 14.1% in 2022 to 7.8% in 2025, and the earnings pattern remains clearly weighted toward the fourth quarter due to the public-sector budget execution cycle. In the first half of 2026, the company maintained modest profitability unlike the same period a year earlier, showing somewhat reduced seasonality. New businesses such as quantum security and AI NGFW are drawing on government policy support and collaboration with a major defense company to build a growth narrative, but most remain at an early stage without yet converting into large-scale program contracts. Compounding this, largest shareholder Gabia is pursuing a voluntary delisting together with Macquarie Asset Management, and the second- and third-largest shareholders have declared they will not tender their shares in objection to the offer price, introducing a new group-level governance variable. Whether this deal is completed and how subsidiaries are subsequently restructured could shape AXGATE's future governance, making it a factor to monitor alongside execution of its new growth businesses. Overall, this is a phase where growth narrative, earnings seasonality, and governance variables are intertwined, warranting a balanced view of how each element develops."
+   "ko": "엑스게이트는 2022~2025년 공시 기준으로 매출이 2023년부터 3년 연속 늘어 2025년 481억원에 이르렀다. 반면 영업이익률은 2022년 14.1%에서 2025년 7.8%로 낮아졌고, 지배주주 순이익도 연도별 변동이 컸다. 2026년 분기 실적은 1분기 매출 97억원, 3분기 영업손실 14.8억원처럼 편차가 크며, 최근 4개 분기 지배주주 순이익 합계는 58.4억원이다. 양자VPN과 PQC 인증, 교통·방산 시범사업은 신성장 근거로 제시되지만 본사업 발주와 매출 반영 시점은 아직 확인되지 않았다. 기존 VPN·방화벽 제품군이 매출의 큰 부분을 받치고 있어 외형 기반은 있다. 다음 확인 지점은 2026년 사업보고서의 4분기 실적과 영업이익률 추이, 2027년 1분기 분기 흐름이다.",
+   "en": "On a disclosed basis, Axgate's revenue has risen for three consecutive years from 2023, reaching KRW 48.1 billion in 2025. The operating margin, however, fell from 14.1% in 2022 to 7.8% in 2025, and profit attributable to controlling shareholders has swung widely from year to year. Quarterly results in 2026 have been uneven, with first-quarter revenue of KRW 9.7 billion and a third-quarter operating loss of KRW 1.48 billion, and profit attributable to controlling shareholders over the last four quarters totals KRW 584 million. Quantum VPN, the PQC certification and the transport and defense pilots are presented as growth evidence, but the timing of full-scale orders and their revenue recognition is not yet confirmed. The established VPN and firewall lines carry a large part of revenue, which gives the top line a base. The next checkpoints are the fourth-quarter results and operating margin trend in the 2026 annual report, and the first-quarter 2027 quarterly flow."
   }
  },
  "sources": [
-  "https://alphasquare.co.kr/home/stock-summary?code=356680",
-  "https://www.investing.com/equities/axgate",
-  "https://www.butler.works/ko/companies/01372782",
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=356680",
-  "https://kr.investing.com/equities/axgate-earnings",
-  "https://littlebproject.com/stock/356680/299/30566",
-  "https://stock1.brokdam.com/%EC%97%91%EC%8A%A4%EA%B2%8C%EC%9D%B4%ED%8A%B8356680-%EC%A3%BC%EA%B0%80-%EB%B6%84%EC%84%9D-2026-%EC%99%B8%EA%B5%AD%EC%9D%B8-%EC%88%9C%EB%A7%A4%EC%88%98-%EA%B8%89%EC%A6%9D-%EC%A7%80/",
-  "https://www.valueline.co.kr/finance/investment/356680",
-  "https://m.invest.zum.com/stock/356680/documents/",
   "https://x.com/Jaymin_Alpha/status/2057820777383100524",
-  "https://www.finance-scope.com/article/view/scp202606110020",
-  "https://ahtid.co.kr/axgate-utm",
-  "https://www.axgate.com/main/company/history.php",
-  "https://news.nate.com/view/20260611n21481",
-  "https://dealsite.co.kr/articles/162575",
-  "https://kt-bizinternet.com/pages/utm.php",
-  "https://kind.krx.co.kr/external/dst/irReference/18757/%EC%97%91%EC%8A%A4%EA%B2%8C%EC%9D%B4%ED%8A%B8_IR_Book_20260610.pdf",
-  "https://alphadistill.com/report/346"
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=356680",
+  "https://stock1.brokdam.com/%EC%97%91%EC%8A%A4%EA%B2%8C%EC%9D%B4%ED%8A%B8356680-%EC%A3%BC%EA%B0%80-%EB%B6%84%EC%84%9D-2026-%EC%99%B8%EA%B5%AD%EC%9D%B8-%EC%88%9C%EB%A7%A4%EC%88%98-%EA%B8%89%EC%A6%9D-%EC%A7%80/",
+  "https://v.daum.net/v/GHju61MVIb?f=p",
+  "https://v.daum.net/v/20260611144523862?f=p",
+  "https://zdnet.co.kr/view/?no=20260223232045",
+  "https://byline.network/2026/02/23-556/",
+  "https://m.boannews.com/html//detail.html?idx=144076",
+  "https://www.datanet.co.kr/news/articleView.html?idxno=209462",
+  "https://alphadistill.com/report/1228",
+  "https://www.itdaily.kr/news/articleView.html?idxno=239801",
+  "https://www.dailysecu.com/news/articleView.html?idxno=207117",
+  "https://www.axgate.com/main/bbs/board.php?bo_table=newsroom&wr_id=105",
+  "https://v.daum.net/v/20260611161802508",
+  "https://www.axgate.com/main/bbs/board.php?bo_table=newsroom&wr_id=96",
+  "https://www.itdaily.kr/news/articleView.html?idxno=239664",
+  "https://www.dailysecu.com/news/articleView.html?idxno=207277",
+  "https://m.ddaily.co.kr/page/view/2025051316221048682"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "356680",
  "name": "엑스게이트",
  "name_en": "AXGATE Co., Ltd.",
@@ -233,11 +223,11 @@
   "IT·소프트웨어"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 09:16",
- "dataDate": "20260904",
+ "reportDate": "2026-11-16",
+ "reportTs": "2026-11-16 20:23",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-08-21",
+  "asOf": "2026-11-16",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -248,6 +238,7 @@
     "np_owner": 3874151374,
     "equity": 48279627368,
     "equity_owner": 48279627368,
+    "equity_nci": null,
     "liab": 20056270906,
     "cfo": 1416011655,
     "eps_basic": 136,
@@ -263,6 +254,7 @@
     "np_owner": 3998882575,
     "equity": 44405475994,
     "equity_owner": 44405475994,
+    "equity_nci": null,
     "liab": 22682636259,
     "cfo": 3736810464,
     "eps_basic": 140,
@@ -278,6 +270,7 @@
     "np_owner": 294783793,
     "equity": 40385096419,
     "equity_owner": 40385096419,
+    "equity_nci": null,
     "liab": 9610492157,
     "cfo": 5363612449,
     "eps_basic": 11,
@@ -293,6 +286,7 @@
     "np_owner": 4578999440,
     "equity": 22572964744,
     "equity_owner": 22572964744,
+    "equity_nci": null,
     "liab": 12134380786,
     "cfo": 3639494757,
     "eps_basic": 219,
@@ -302,12 +296,6 @@
    }
   ],
   "quarterly": [
-   {
-    "q": "2025Q2",
-    "rev": 10683064077,
-    "op": -315174634,
-    "np_owner": 16314691
-   },
    {
     "q": "2025Q3",
     "rev": 8872326945,
@@ -331,26 +319,36 @@
     "rev": 12091873233,
     "op": 373332335,
     "np_owner": 581291014
+   },
+   {
+    "q": "2026Q3",
+    "rev": 10432864528,
+    "op": -1477509896,
+    "np_owner": -2268255483
    }
   ],
   "valuation": {
-   "price": 11430,
-   "mcap": 0.3263,
+   "price": 13670,
+   "mcap": 0.3902,
    "shares": 28543492,
    "total_shares": 28543492,
    "wavg_shares": 28486407,
-   "per": 55.756,
+   "per": 66.683,
    "eps": 205,
-   "pbr": 6.5993,
-   "bps": 1732,
-   "roe_ttm": 12.6,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": 5847118902,
-   "pbr_krx": 6.76,
+   "pbr": 8.2698,
+   "bps": 1653,
+   "roe_ttm": 13.2,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": 5837992590,
+   "ccy": "KRW",
+   "bps_src": "자체",
+   "eps_src": "공시",
+   "pbr_krx": 8.08,
    "bps_krx": 1692.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
    "div": 0.0
   }
- }
+ },
+ "textRules": 2
 }

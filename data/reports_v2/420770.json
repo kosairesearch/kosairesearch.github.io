@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "AI 기판 증설 사이클과 검사장비 회복",
-  "en": "AI Substrate Capex Cycle and an Inspection-Tool Recovery"
+  "ko": "기판 검사장비 수주 확대, 실적 회복 흐름",
+  "en": "Substrate inspection orders expand as earnings recover"
  },
  "lead": {
-  "ko": "FC-BGA 기판 검사·수리 장비에 특화된 기가비스는 2024년의 급격한 실적 공백을 지나 2025년 흑자 전환에 이어 2026년 상반기까지 회복 흐름을 이어갔으나, 분기 실적의 진폭이 크고 신시장(PLP·유리기판) 수주는 아직 확인 단계에 있다.",
-  "en": "GigaVis, a specialist in inspection and repair tools for FC-BGA substrates, returned to profit in 2025 after a sharp 2024 downturn and extended the recovery through the first half of 2026, yet quarterly swings remain wide and orders in new markets such as panel-level packaging and glass substrates are still to be confirmed."
+  "ko": "기가비스는 FC-BGA 기판 검사·수리 장비를 만드는 기업으로, 2025년 흑자 전환 이후 2026년 3분기까지 수주 확대가 실적 회복을 뒷받침하고 있으며, 다음 확인 지점은 2026년 사업보고서다.",
+  "en": "GigaVis makes inspection and repair equipment for FC-BGA substrates. Order growth after its return to profit in 2025 is supporting the recovery, and the 2026 annual report is the next filing to check."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출 524억원·영업이익 121억원(영업이익률 23.1%)으로 2024년 매출 261억원·영업손실 18억원에서 흑자로 돌아섰다.",
-   "en": "In 2025 consolidated revenue was KRW 52.4 billion with operating profit of KRW 12.1 billion (23.1% margin), a swing back to profit from KRW 26.1 billion of revenue and a KRW 1.8 billion operating loss in 2024."
+   "ko": "2025년 영업이익은 121억원으로, 2024년 영업손실에서 흑자로 전환했다. 같은 해 매출은 524억원으로 전년 대비 100.6% 증가했다.",
+   "en": "Operating profit in 2025 was KRW 12.1 billion, turning positive from the 2024 operating loss. Revenue for the same year was KRW 52.4 billion, up 100.6% from the prior year."
   },
   {
-   "ko": "2026년 2분기 매출 223억원·영업이익 66억원으로 2025년 2분기(매출 89억원·영업이익 20억원) 대비 크게 확대됐고, 2026년 1분기 매출 60억원·영업손실 10억원과 대비해 분기 편차가 매우 크다.",
-   "en": "Second-quarter 2026 revenue of KRW 22.3 billion and operating profit of KRW 6.6 billion were far above the second quarter of 2025 (KRW 8.9 billion revenue, KRW 2.0 billion operating profit), while first-quarter 2026 revenue of KRW 6.0 billion and a KRW 1.0 billion operating loss show how wide the quarterly swings are."
+   "ko": "2026년 3분기 매출 269억원과 영업이익 89.5억원은 2개 분기 연속 증가한 결과다. 다만 2026년 1분기에는 영업손실 9.7억원을 기록했다.",
+   "en": "Third-quarter 2026 revenue of KRW 26.9 billion and operating profit of KRW 8.95 billion marked a second straight quarter of growth. The first quarter of 2026, however, posted an operating loss of KRW 971 million."
   },
   {
-   "ko": "전방 수요는 AI 서버용 FC-BGA로, 이비덴은 기판 대형화와 다층화로 SAP 공법 수요가 업계 공급능력을 상회할 것이라고 밝혔다.",
-   "en": "End demand comes from AI server FC-BGA substrates, and Ibiden said demand for the semi-additive process needed for server CPU and AI accelerator substrates would exceed the industry's supply capability as substrates get larger and add layers."
+   "ko": "2026년 7~9월 공시된 신규 수주는 1,168억 4,000만원이었다. 10월에는 국내외 기판 업체와의 공급계약이 추가로 공시돼 합계가 약 775억원에 이르렀다.",
+   "en": "New orders disclosed for July through September 2026 totaled KRW 116.84 billion. Supply contracts with domestic and Chinese substrate makers added about KRW 77.5 billion in October."
   },
   {
-   "ko": "수주는 공시로 확인된다 — 2026년 8월 18일 일본 반도체 기판 제조회사와 89억 5,390만원(10억 830만엔) 규모 검사·수리장비 공급계약을 체결했고 계약기간은 2027년 9월 30일까지다.",
-   "en": "Order flow is visible through disclosures: on 18 August 2026 the company signed a KRW 8.95 billion (JPY 1.0083 billion) supply contract for substrate inspection and repair tools with a Japanese substrate maker, running to 30 September 2027."
+   "ko": "장비 출하 시점에 따라 분기 매출이 크게 움직이는 구조라, 분기 실적 한 번만으로 추세를 판단하기는 어렵다.",
+   "en": "Quarterly revenue moves sharply with equipment shipment timing, so a single quarter is a weak basis for judging the trend."
   },
   {
-   "ko": "재무구조는 2025년 말 자본 2,110억원·부채 283억원(부채비율 13.4%), 영업활동현금흐름 257억원으로 순현금 성격이 강하다.",
-   "en": "The balance sheet is net-cash in character: at end-2025 equity stood at KRW 211.0 billion against liabilities of KRW 28.3 billion (13.4% liability-to-equity), with operating cash flow of KRW 25.7 billion."
+   "ko": "AI 서버용 기판 수요에 더해 PLP·WLP·유리기판 등 차세대 패키징 장비가 다음 성장 축으로 거론된다.",
+   "en": "Beyond demand for AI server substrates, next-generation packaging equipment for PLP, WLP and glass substrates is cited as the next growth axis."
   }
  ],
  "business": {
-  "ko": "기가비스는 반도체 패키지 기판의 회로 패턴 결함을 찾아내는 자동광학검사(AOI) 장비와 레이저로 결함을 수리하는 자동광학수리(AOR) 장비를 만드는 장비업체다. 삼성증권은 회사가 AOI와 AOR을 주력으로 하며, 두 장비를 인라인 설비 형태로 묶어 납품하기도 하고 기판 결함 검증·수리 장비(VRS)와 소프트웨어에서도 매출이 발생한다고 정리했다. 고객군은 특정 대기업 한 곳에 묶이지 않는다 — 삼성증권은 주요 고객이 이비덴·신코 같은 FC-BGA(ABF) 기판 업체이며 글로벌 상위 10개 기판 업체 대부분에 장비를 공급한다고 설명했다. 매출의 상당 부분이 수출에서 나오는데, 최근 공시된 계약 상대방만 봐도 일본·중화권·국내 기판 제조사가 섞여 있다. 2026년 3월에는 중화권 반도체 기판 생산 기업과 109억 1,167만원 규모의 검사·수리 장비 공급계약을 체결했으며, 계약 대상은 AI 서버용 FC-BGA 기판의 결함을 검출·수리하는 고해상도 AOI·AOR 장비였다. 경쟁 구도는 소수 업체로 좁혀져 있다 — KB증권은 회사가 2004년 설립돼 2023년 코스닥에 상장한 기판 광학검사·수리 장비 전문기업이며, 주요 고객은 글로벌 FC-BGA 기판 제조사, 주요 경쟁사는 미국 KLA·이스라엘 Camtek·일본 Inspec이라고 소개했다. 사업 모델의 특성상 매출은 고객사의 설비투자 집행 시점에 좌우되고, 장비 사양이 올라갈수록 대당 판매단가가 높아지는 구조다. 삼성증권은 클라우드용 기판에서 3마이크로미터, 5마이크로미터 선폭 검사장비 등 하이엔드 중심의 제품 믹스 개선이 가능하다고 봤다. 부문별 매출 비중은 회사가 공개하지 않아 확인된 수치가 없고, 여기서는 정성적으로만 다룬다.",
-  "en": "GigaVis makes automated optical inspection (AOI) tools that detect circuit-pattern defects in semiconductor package substrates and automated optical repair (AOR) tools that fix those defects with lasers. Samsung Securities noted that AOI and AOR are the core products, that the two are sometimes delivered together as in-line equipment, and that the company also books revenue from verification and repair systems (VRS) and from software. The customer base is not tied to a single conglomerate: Samsung Securities said key customers are FC-BGA (ABF) substrate makers such as Ibiden and Shinko, and that the company supplies most of the global top ten substrate producers. A large share of revenue is export-driven, and recently disclosed counterparties span Japanese, greater-China and domestic substrate makers. In March 2026 it signed a KRW 10.91 billion inspection and repair equipment contract with a greater-China substrate producer, covering high-resolution AOI and AOR tools that detect and repair defects in FC-BGA substrates for AI servers. The competitive field is narrow: KB Securities described the company as a substrate optical inspection and repair specialist founded in 2004 and listed on KOSDAQ in 2023, whose main customers are global FC-BGA substrate makers and whose main rivals are KLA of the United States, Camtek of Israel and Inspec of Japan. Because of this model, revenue tracks the timing of customer capital spending, and unit prices rise as tool specifications tighten. Samsung Securities saw room for a high-end mix shift in cloud substrates, including inspection tools for 3-micrometre and 5-micrometre line widths. Segment revenue splits are not disclosed by the company, so this section stays qualitative on that point."
+  "ko": "기가비스는 2004년 설립된 반도체 장비 기업으로, 반도체 기판의 회로 결함을 광학으로 찾는 자동광학검사기(AOI)와 레이저로 불량을 고치는 자동광학수리기(AOR)를 만든다. 주력 대상은 AI 서버와 고성능 컴퓨팅에 쓰이는 FC-BGA 기판이며, 검사(AOI)·확인(VRS)·수리(AOR)를 하나의 공정으로 묶은 통합 솔루션이 강점으로 꼽힌다. 비즈니스포스트 보도에 따르면 2025년 기준 매출 비중이 가장 큰 제품은 AOI 장비이며, AOI·AOR·VRS를 하나의 생산라인으로 연결한 인라인 자동화 설비 공급을 넓히고 있다. 고객사는 일본의 이비덴(Ibiden)과 신코전기공업, 대만의 유니마이크론(Unimicron), 국내의 삼성전기 등 글로벌 기판 업체로 알려져 있다. 2026년 2월 KB증권 분석은 주요 경쟁사로 미국 KLA, 이스라엘 Camtek, 일본 Inspec을 꼽았다. 사업 영역은 FC-BGA에 머물지 않고 WLP, PLP, 유리기판 등 차세대 패키징으로 넓어지는 중이다. 회사는 2024년 WLP 공정의 재배선층(RDL) 검사용 AOI를 출시했고, PLP용 검사 장비는 글로벌 반도체 제조사와 외주 패키징·테스트(OSAT) 업체를 대상으로 공급을 추진하고 있다. 사업 구조는 반도체 업황과 고객사 설비투자(CAPEX)에 연동돼 있어, 투자 속도에 따라 발주 규모가 크게 달라진다. 2026년 들어서는 국내외 기판 제조사와 대형 공급계약을 잇달아 맺으며 수주 기반을 넓혔다.",
+  "en": "GigaVis, founded in 2004, makes semiconductor equipment. Its automated optical inspection (AOI) tools find circuit defects on semiconductor substrates, and its automated optical repair (AOR) tools fix them with lasers. Its core market is FC-BGA substrates used in AI servers and high-performance computing, and its integrated solution links inspection (AOI), verification (VRS) and repair (AOR) into one process. According to BusinessPost, AOI equipment was the largest revenue item in 2025, and the company is expanding in-line automated systems that connect AOI, AOR and VRS on one production line. Its customers reportedly include Ibiden and Shinko Electric in Japan, Unimicron in Taiwan, and Samsung Electro-Mechanics in Korea. In a February 2026 analysis, KB Securities named KLA of the United States, Camtek of Israel and Inspec of Japan as main competitors. The business is also moving beyond FC-BGA into next-generation packaging such as WLP, PLP and glass substrates. The company launched an AOI tool for the redistribution layer (RDL) in WLP in 2024 and is pursuing supply of PLP inspection equipment to global chipmakers and outsourced semiconductor assembly and test (OSAT) firms. Its business is tied to semiconductor cycles and customers' capital expenditure, so order volumes shift with the pace of investment. In 2026 it signed several large supply contracts with domestic and overseas substrate makers, widening its order base."
  },
  "earnings": {
-  "ko": "실적은 전방 설비투자 사이클을 그대로 따라 움직였다. 2022년 매출 997억원·영업이익 338억원(영업이익률 33.9%), 2023년 매출 914억원·영업이익 350억원(38.3%)의 고마진 구간을 지나, 2024년에는 매출 261억원으로 급감하며 영업손실 18억원을 냈다. 2025년에는 매출 524억원·영업이익 121억원(23.1%)으로 영업단이 흑자로 돌아섰고 지배주주 순이익은 155억원을 기록했다. 다만 매출 규모는 2022~2023년의 절반 수준에 머물러 있어 회복의 절대 위치는 아직 과거 정점 아래다. 분기별로 보면 진폭이 크다 — 2025년 4분기 매출 317억원·영업이익 111억원(영업이익률 약 35%)에서 2026년 1분기 매출 60억원·영업손실 10억원으로 급락했고, 2026년 2분기에 다시 매출 223억원·영업이익 66억원(약 30%)으로 올라섰다. 2026년 2분기는 2025년 2분기(매출 89억원·영업이익 20억원)와 비교해 매출과 이익이 모두 크게 늘었고, 2026년 상반기 누적으로는 매출 283억원·영업이익 56억원이다. 이 패턴은 장비 인수·검수 시점에 매출이 몰리는 고정비 구조를 보여준다 — 분기 매출이 100억원을 밑돌면 영업단이 적자로 내려가고 300억원대에서는 30%를 웃도는 마진이 나온다. 2024년과 2026년 1분기에는 영업적자에도 순이익이 흑자였는데, 이는 1분기 말 현금성자산 약 467.7억원과 단기금융상품 1,000억원을 합쳐 1년 내 현금화 가능한 자산이 1,467.7억원에 달하고 유동부채 약 415.8억원을 크게 웃도는 순현금 구조에서 나오는 영업외 수익이 손실을 상쇄한 결과로 해석된다. 2025년 영업활동현금흐름 257억원은 같은 해 영업이익을 크게 웃돌았고, 부채비율은 13.4%로 낮은 편이다.",
-  "en": "Earnings have tracked the customer capex cycle almost one-for-one. After a high-margin stretch of KRW 99.7 billion revenue and KRW 33.8 billion operating profit (33.9% margin) in 2022 and KRW 91.4 billion revenue with KRW 35.0 billion operating profit (38.3%) in 2023, revenue collapsed to KRW 26.1 billion in 2024 with a KRW 1.8 billion operating loss. In 2025 revenue recovered to KRW 52.4 billion with operating profit of KRW 12.1 billion (23.1%) and net profit attributable to owners of KRW 15.5 billion. Revenue is still only about half the 2022-2023 level, so the recovery sits well below the prior peak in absolute terms. Quarterly figures swing hard: from KRW 31.7 billion revenue and KRW 11.1 billion operating profit (roughly a 35% margin) in the fourth quarter of 2025, the top line fell to KRW 6.0 billion with a KRW 1.0 billion operating loss in the first quarter of 2026, then rebounded to KRW 22.3 billion revenue and KRW 6.6 billion operating profit (about 30%) in the second quarter. That second quarter was far above the same quarter of 2025 (KRW 8.9 billion revenue, KRW 2.0 billion operating profit), and first-half 2026 totals were KRW 28.3 billion of revenue and KRW 5.6 billion of operating profit. The pattern reflects a fixed-cost base against revenue recognised at tool acceptance: below roughly KRW 10 billion of quarterly revenue the operating line turns negative, while above KRW 30 billion margins exceed 30%. In 2024 and the first quarter of 2026 net profit was positive despite operating losses, consistent with non-operating income from a net-cash position: at the end of that first quarter cash and equivalents of about KRW 46.8 billion plus KRW 100 billion of short-term financial instruments gave KRW 146.8 billion of assets convertible within a year, well above roughly KRW 41.6 billion of current liabilities, leaving effectively no net debt. Operating cash flow of KRW 25.7 billion in 2025 exceeded that year's operating profit, and the liability-to-equity ratio was a low 13.4%."
+  "ko": "공시 실적 기준 연간 매출은 2022년 997억원에서 2023년 914억원(전년 대비 8.3% 감소)으로 줄었고, 2024년에는 261억원(전년 대비 71.4% 감소)으로 기간 중 가장 작은 해가 됐다. 2025년 매출은 524억원(전년 대비 100.6% 증가)으로 회복됐다. 비즈니스포스트 보도에 따르면 2024년 매출 감소는 미국과 중국의 갈등에 따른 고객사 투자 지연과 일부 계약 취소의 영향이었다. 영업이익은 2022년 338억원(영업이익률 33.9%)과 2023년 350억원(영업이익률 38.3%)을 기록한 뒤, 2024년 영업손실 17.9억원(영업이익률 -6.8%)으로 적자 전환했다. 2025년에는 영업이익 121억원(영업이익률 23.1%)으로 흑자 전환했다. 지배주주 순이익은 2023년 327억원으로 기간 중 가장 큰 해였고, 2024년 34.1억원(전년 대비 89.6% 감소)을 거쳐 2025년 155억원(전년 대비 352.9% 증가)으로 회복됐다. 당기순이익(비지배지분 포함)은 2025년 155억원이다. 영업활동 현금흐름은 2022년 358억원, 2023년 131억원, 2024년 29.9억원, 2025년 257억원이었고, 2025년 말 자본총계 2,110억원 가운데 지배주주 지분도 2,110억원이며 부채총계는 283억원이다. 분기로 보면 2025년 4분기 매출 317억원(전 분기 대비 338.8% 증가)과 영업이익 111억원이 크게 늘어난 뒤, 2026년 1분기에는 매출 59.9억원(전 분기 대비 81.1% 감소)과 영업손실 9.7억원으로 줄었다. 2026년 2분기 매출 223억원과 영업이익 66.1억원, 3분기 매출 269억원과 영업이익 89.5억원으로 2개 분기 연속 증가했다. 최근 4개 분기 지배주주 순이익 합계는 216억원이다. 데일리연합 보도에 따르면 2025년 말 현금및현금성자산은 397.8억원으로 전기 대비 97.4% 증가했다.",
+  "en": "On a disclosed annual basis, revenue fell from KRW 99.7 billion in 2022 to KRW 91.4 billion in 2023, down 8.3% year on year, and then to KRW 26.1 billion in 2024, down 71.4%, which was the smallest year in the 2022 to 2025 span. Revenue recovered to KRW 52.4 billion in 2025, up 100.6%. According to BusinessPost, the 2024 decline reflected customers delaying investment because of US-China tensions and some contract cancellations. Operating profit was KRW 33.8 billion in 2022 (operating margin 33.9%) and KRW 35 billion in 2023 (38.3%), then turned into an operating loss of KRW 1.79 billion in 2024 (margin -6.8%). In 2025 operating profit of KRW 12.1 billion (margin 23.1%) returned the company to profit. Profit attributable to controlling shareholders was KRW 27.8 billion in 2022 and KRW 32.7 billion in 2023, the largest year in the span, then KRW 3.41 billion in 2024, down 89.6%, and KRW 15.5 billion in 2025, up 352.9%. Net income including non-controlling interests was KRW 15.5 billion in 2025. Operating cash flow was KRW 35.8 billion in 2022, KRW 13.1 billion in 2023, KRW 2.99 billion in 2024 and KRW 25.7 billion in 2025. At the end of 2025, total equity was KRW 211 billion, all attributable to controlling shareholders, and total liabilities were KRW 28.3 billion. Quarterly, revenue rose to KRW 31.7 billion in the fourth quarter of 2025, up 338.8% from the prior quarter, with operating profit of KRW 11.1 billion. It then fell to KRW 5.99 billion in the first quarter of 2026, down 81.1%, with an operating loss of KRW 971 million. Revenue then rose to KRW 22.3 billion in the second quarter and KRW 26.9 billion in the third, marking two consecutive quarters of growth, with third-quarter operating profit of KRW 8.95 billion. Profit attributable to controlling shareholders over the latest four quarters totaled KRW 21.6 billion. According to Daily Yonhap, cash and cash equivalents at the end of 2025 were KRW 39.78 billion, up 97.4% from the prior year."
  },
  "industry": {
-  "ko": "전방 시장은 AI 서버용 고사양 패키지 기판이다. 이비덴은 2026회계연도(2026년 4월~2027년 3월) 매출이 전년 대비 20% 상승할 것이라고 밝혔고, 2025회계연도 실적은 매출 4,162억엔·영업이익 620억엔으로 전년 대비 각각 12.7%, 30.3% 증가했다. 이비덴은 2026회계연도 안에서도 상반기보다 하반기 실적이 좋을 것으로 예상하며 상반기 매출 2,300억엔, 하반기 2,700억엔을 제시했다. 국내 쪽도 방향이 같다 — 삼성전기는 2026년 2분기 컨퍼런스 콜에서 AI 데이터센터용 반도체의 대면적화·고다층화로 FC-BGA 공급 부족이 심화되고 기판 가격이 꾸준히 상승하는 추세라고 밝히며, 주요 고객사들과 투자 지원을 포함한 전략적 장기 공급계약 협의를 진행 중이고 이를 기반으로 국내외 생산능력을 증설할 계획이라고 전했다. 증설 규모도 커지고 있다 — 일본 이비덴은 2026년부터 2028년까지 3년간 5,000억엔을 투입해 AI 서버용 패키지 기판 캐파를 확대한다고 밝혔다. 장비 수요는 이 캐펙스의 파생 변수다. 아이엠증권에 따르면 이비덴은 연간 가이던스를 매출 5.5%, 영업이익 22.9% 상향했고, AI 서버뿐 아니라 범용 서버 회복과 스위치 IC 수요, 고부가 제품 중심의 평균판매단가 강세가 복합적으로 작용했으며, 생산설비 투자 확대가 본격화될 경우 기가비스 등 장비업체까지 수혜가 이어질 것으로 예상됐다. 다만 검사·수리 장비 시장 자체는 KLA·Camtek·Inspec 등과 나누는 구조여서, 고객사 투자 규모가 늘어도 사양별·지역별 채택 결과에 따라 회사의 몫은 달라질 수 있다. KB증권은 2026년 2월 리포트에서 리스크 요인으로 T-Glass 쇼티지 심화를 지목했다 — 기판 원재료 병목이 고객사 증설 일정을 늦출 수 있다는 점도 사이클 판단에 함께 얹어야 한다.",
-  "en": "The end market is high-specification package substrates for AI servers. Ibiden guided fiscal 2026 (April 2026 to March 2027) revenue to rise 20% year on year, after fiscal 2025 revenue of JPY 416.2 billion and operating profit of JPY 62.0 billion, up 12.7% and 30.3% respectively. Ibiden also expects the second half of fiscal 2026 to be stronger than the first, guiding JPY 230 billion of first-half and JPY 270 billion of second-half revenue. Domestic signals point the same way: on its second-quarter 2026 earnings call Samsung Electro-Mechanics said larger, higher-layer-count AI datacentre chips are deepening the FC-BGA shortage and pushing substrate prices steadily higher, that it is negotiating strategic long-term supply agreements including investment support with major chip customers, and that it plans to expand FC-BGA capacity at home and abroad on that basis. Expansion budgets are growing: Ibiden said it would spend JPY 500 billion over the three years from 2026 to 2028 to lift AI server package substrate capacity. Equipment demand is a derivative of that capex. According to iM Securities, Ibiden raised annual guidance by 5.5% for revenue and 22.9% for operating profit, driven by a mix of AI server strength, a better-than-expected general server recovery, switch IC demand and firm average selling prices for high-value products, and if capacity investment accelerates the benefit is expected to extend to equipment makers including GigaVis. That said, the inspection and repair tool market is shared with players such as KLA, Camtek and Inspec, so a larger customer capex pool does not automatically translate into a proportional share for the company across specifications and regions. KB Securities, in a February 2026 report, flagged a worsening T-Glass shortage as a risk factor, a reminder that raw-material bottlenecks at substrate makers can push customer expansion timelines back."
+  "ko": "기가비스의 실적은 FC-BGA 기판 업체의 설비투자 사이클에 묶여 있다. 2026년 2월 KB증권은 주요 고객사인 이비덴과 Zhen Ding이 2026년 설비투자 목표액을 70% 상향했다는 점을 근거로 기판 업계의 증설 흐름이 이어질 것으로 봤다. 메리츠증권은 2026년 6월 리포트에서 이번 ABF 기판 투자 사이클의 규모와 지속성이 과거 업사이클을 크게 웃돌 것으로 판단했다. 사이클 위치로 보면 2024년에는 고객사 투자 지연으로 실적이 꺾였고, 2025년 이후 AI 산업 확산과 반도체 수요 증가로 FC-BGA 검사·수리 장비 수요가 함께 늘었다는 것이 비즈니스포스트의 설명이다. 경쟁 구도에서는 KLA, Camtek, Inspec이 거론되며, 기가비스는 검사와 수리를 함께 제공하는 통합 솔루션을 차별점으로 내세운다. 기판 제조 난도가 올라갈수록 수율 관리의 중요성이 커져 검사·수리 장비 수요가 함께 늘어난다는 것이 업계 설명이다. 차세대 패키징 쪽에서는 업계가 유리기판 상용화의 분기점을 2028년 전후로 보고 있어, 해당 제품의 매출 기여는 중장기 과제로 남아 있다. 반면 사업 구조가 CAPEX에 연동돼 있어 AI 투자 속도가 둔화되면 발주가 빠르게 줄 수 있다는 구조적 변동성도 함께 지적된다. 따라서 기가비스의 포지션은 FC-BGA 검사·수리 분야에서의 기술 선도와, 고객 투자 사이클에 대한 높은 민감도가 함께 존재하는 구도로 정리된다.",
+  "en": "GigaVis's results are tied to the capital expenditure cycle of FC-BGA substrate makers. In February 2026, KB Securities said key customers Ibiden and Zhen Ding had raised their 2026 capital expenditure targets by 70%, and it expected expansion across substrate makers to continue. In a June 2026 report, Meritz Securities judged that the current ABF substrate investment cycle would be considerably larger and more durable than past upcycles. Looking at where the cycle stands, BusinessPost described 2024 as a year when customer investment delays hurt results, and demand for FC-BGA inspection and repair equipment rising alongside AI adoption and chip demand from 2025. Competitors named in the coverage include KLA, Camtek and Inspec, and GigaVis differentiates itself by offering inspection and repair in one integrated solution. As substrate manufacturing gets more demanding, yield control becomes more important, which supports demand for inspection and repair tools. In next-generation packaging, the industry sees glass substrate commercialization around 2028, so revenue from that segment remains a medium-term task. On the other side, the business is tied to customer capex, so a slowdown in AI investment could cut orders quickly. GigaVis's position therefore combines technology leadership in FC-BGA inspection and repair with high sensitivity to customers' investment cycles."
  },
  "outlook": {
-  "ko": "가장 확인 가능한 선행 지표는 공시된 수주다. 2026년 8월 18일 일본 반도체 기판 제조회사와 89억 5,390만원(10억 830만엔) 규모의 검사·수리장비 공급계약을 체결했으며, 이는 최근 매출액 524억 3,499만원의 17.08%에 해당하고 계약기간은 2027년 9월 30일까지다. 이는 단일 계약이 연간 매출의 두 자릿수 비중을 차지하는 구조를 보여주는 동시에, 개별 계약의 인수·검수 시점이 분기 실적을 흔든다는 뜻도 된다. 증권가 추정도 회복 방향을 가리킨다 — KB증권은 2026년 2월 리포트에서 2026년 매출 655억원(전년 대비 29.8% 증가), 영업이익 228억원(81.3% 증가, 영업이익률 34.8%)을 전망하며, 주요 고객사인 이비덴과 Zhen Ding이 2026년 설비투자 목표액을 70% 상향했고 다른 기판 업체들도 증설 흐름을 보일 것으로 예상했다(회사 공식 가이던스가 아닌 외부 추정치다). 신시장 축도 남아 있다 — 회사는 FC-BGA를 넘어 PLP(패널레벨패키지)와 유리기판 시장에서도 기술 경쟁력을 강화하고 있으며, 초기 시장 선점으로 중장기 성장동력을 확보한다는 전략을 밝혔다. 다만 이 부분은 아직 매출이 아니다 — 삼성증권은 유리기판용 검사장비는 고객사의 투자가 결정되며 진입 시기가 구체화될 것으로 기대하면서도, 신제품 장비의 특성상 구체적인 수주 이벤트가 선결되어야 한다고 지적했다. 제품 사양 상향도 진행 중인 변수로, 검사 선폭이 미세해질수록 장비 단가와 검사량이 함께 늘어나는 구조다. 결국 2026년 하반기 이후의 관전 포인트는 (1) 고객사 캐펙스가 실제 발주로 이어지는 속도, (2) 분기 매출이 고정비를 넘어서는 구간을 유지하는지, (3) PLP·유리기판에서 정식 발주가 나오는지 세 가지로 압축된다.",
-  "en": "The most verifiable leading indicator is disclosed orders. On 18 August 2026 the company signed a KRW 8.95 billion (JPY 1.0083 billion) inspection and repair equipment contract with a Japanese substrate maker, equal to 17.08% of its most recent annual revenue of KRW 52.43 billion, running to 30 September 2027. That shows both how a single order can represent a double-digit share of annual revenue and how the timing of acceptance on individual contracts moves quarterly results. Broker estimates also point to recovery: KB Securities, in a February 2026 report, projected 2026 revenue of KRW 65.5 billion (up 29.8% year on year) and operating profit of KRW 22.8 billion (up 81.3%, a 34.8% margin), noting that key customers Ibiden and Zhen Ding had raised 2026 capital spending targets by 70% and that other substrate makers were expected to expand as well - an external estimate rather than company guidance. New markets remain a second axis: the company says it is strengthening its technology position beyond FC-BGA in panel-level packaging and glass substrates, aiming to secure medium-term growth drivers by moving early into those markets. Those are not yet revenue, however: Samsung Securities expects the entry timing for glass-substrate inspection tools to firm up once customers commit investment, but stressed that with new equipment categories a concrete order event has to come first. Specification upgrades are another live variable, since finer inspection line widths raise both tool prices and inspection volumes. For the period after the second half of 2026, then, the watch list narrows to three items: how quickly customer capex converts into purchase orders, whether quarterly revenue stays above the fixed-cost threshold, and whether formal orders emerge in panel-level packaging and glass substrates."
+  "ko": "2026년 3분기 공시 신규 수주는 1,168억 4,000만원이었고, 메리츠증권은 2026년 9월 30일 리포트에서 이 시점의 수주잔고를 1,821억원으로 제시했다. 이후 2026년 10월 23일 발표된 국내 반도체 기판 업체 대상 469억 3,700만원 규모 공급계약과 10월 28일 공시된 중국 기판 업체 대상 305억 8,909만원 규모 계약이 더해졌다. 두 계약의 합계는 약 775억원으로, 2025년 매출의 약 1.5배에 해당한다. 국내 계약 장비는 2027년 12월 말까지 납품할 예정이며, 중국 계약 기간은 2027년 10월 30일까지다. 중국 고객사는 비밀유지 요청에 따라 공개되지 않았고, 회사는 최근 3년간 해당 업체와 동종 계약을 이행한 이력이 있다고 밝혔다. 증설 측면에서는 2026년 9월 11일 동탄 신사옥 준공식이 열렸다. 비즈니스포스트 보도 시점 기준으로는 동탄산업단지에 약 500억원을 투입한 신규 생산거점을 2026년 내 준공하는 것이 목표였다. 업계에서는 연간 생산능력이 기존 약 1천억원 규모에서 2,500억원 수준으로 늘어날 것으로 보고 있다. iM증권은 2026년 11월 1일 보도에서 2026년 연간 매출을 971억원(전년 대비 86% 증가), 영업이익을 316억원으로 전망했다. 이는 증권사의 추정이며, 1~3분기 누적 공시 영업이익을 감안하면 4분기에 상당한 이익이 나와야 달성 가능한 수준이다. 제품 측면에서는 PLP 검사 장비 공급 추진과 유리기판 대응이 다음 성장 축으로 거론된다.",
+  "en": "New orders disclosed for July through September 2026 totaled KRW 116.84 billion. In a September 30, 2026 report, Meritz Securities put the order backlog at that point at KRW 182.1 billion. Contracts announced later added a KRW 46.94 billion domestic order on October 23, 2026 and a KRW 30.59 billion order from a Chinese substrate maker disclosed on October 28, 2026. Together those two contracts total about KRW 77.5 billion, roughly 1.5 times 2025 revenue. Equipment under the domestic contract is scheduled for delivery by the end of December 2027, and the Chinese contract runs until October 30, 2027. The Chinese customer has not been disclosed at its request, but the company said it has fulfilled similar contracts with the same counterparty over the past three years. On the capacity side, a ceremony for the new Dongtan headquarters building was held on September 11, 2026. As of BusinessPost's report, the company was building a new production base in Dongtan Industrial Complex with about KRW 50 billion of investment, targeting completion within 2026. Industry observers expect annual production capacity to rise from about KRW 100 billion to around KRW 250 billion. In a November 1, 2026 report, iM Securities forecast 2026 revenue of KRW 97.1 billion, up 86% from the prior year, and operating profit of KRW 31.6 billion. That is the brokerage's estimate, and reaching it would require a fourth quarter with substantial profit after the first three quarters disclosed so far. On the product side, PLP inspection equipment supply and glass substrate readiness are cited as the next growth axes."
  },
  "valuation_comment": {
-  "ko": "이 회사의 밸류에이션은 이익의 절대 수준보다 사이클 위치에 크게 좌우된다. 2022~2023년에는 30%대 후반의 영업이익률이 나왔지만 2024년에는 영업적자로 내려갔고 2025년에 다시 흑자로 돌아섰기 때문에, 어느 해의 이익을 기준으로 삼느냐에 따라 배수가 크게 달라진다. 현재 주가는 순자산 대비 프리미엄이 상당히 큰 구간에서 거래되고 있으며, 이는 2026년 이후의 이익 회복을 상당 부분 반영한 결과로 볼 수 있다. 외부 시각으로는 미래에셋증권 장다현 연구원이 2026년 6월 보도된 코멘트에서 향후 12개월 예상 이익 기준 주가수익비율이 70배 수준이라며 밸류에이션 부담을 지적하면서도, 핵심 고객사 내 검사장비 점유율이 95% 이상으로 기판 업체 투자 확대가 수주로 직접 연결되는 구조여서 수주잔고와 글로벌 기판 투자 사이클이 상향으로 이어지면 이익 증가와 함께 밸류에이션 부담은 완화될 것이라고 평가했다. 배당은 실시하고 있으나 주가 대비 수익률 기여는 제한적인 편이며, 현금 활용의 초점은 아직 증설과 연구개발에 놓여 있다. 참고로 하나증권은 2026년 1월 커버리지 개시 리포트에서 목표 배수를 KLA·온투·캠텍 평균에 전방 산업이 패키지 기판에 한정된 점을 감안해 50% 할인율을 적용해 산출했다고 밝혔다 — 비교군 대비 할인이냐 프리미엄이냐를 두고 시각이 갈리는 종목이라는 뜻이다.",
-  "en": "Valuation here depends less on the absolute level of profit than on where the cycle sits. Operating margins ran in the high thirties in 2022-2023, fell to an operating loss in 2024 and returned to profit in 2025, so the multiple changes dramatically depending on which year's earnings are used as the base. The shares currently trade at a substantial premium to book value, which can be read as pricing in a good part of the earnings recovery expected from 2026 onward. On external views, Mirae Asset Securities analyst Jang Da-hyun noted in comments reported in June 2026 that the multiple on the next twelve months of expected earnings was around 70 times, flagging a valuation burden, while adding that with over 95% inspection-tool share inside core customers, substrate makers' investment feeds straight into orders, so rising backlog and an upturn in the global substrate investment cycle would ease that burden as profits grow. A dividend is paid, but its contribution relative to the share price is modest, and cash use is still focused on capacity and research. For reference, Hana Securities said in its January 2026 initiation report that it derived its target multiple by applying a 50% discount to the average multiple of KLA, Onto Innovation and Camtek, reflecting the fact that the company's end market is limited to package substrates - an indication that views differ on whether the stock should sit at a discount or a premium to its peer group."
+  "ko": "밸류에이션은 2024년 적자 구간을 지나 2025년 흑자 전환 이후, 실적 기반 배수로 해석하는 단계로 넘어왔다. 적자 구간에서는 이익 기준 배수가 의미를 갖기 어려웠고, 지금은 2026년 추정 이익의 수준에 따라 배수 해석이 크게 달라진다. 자본총계 2,110억원 대비 시가총액이 크게 웃도는 구간이라, 주가에는 순자산보다 이익 성장 기대가 큰 비중으로 반영된 상태다. 메리츠증권은 2026년 9월 30일 리포트에서 적정 주가를 20만원으로 제시했다. iM증권은 2026년 연간 영업이익을 316억원으로 추정했으며, 이 추정은 4분기 실적에 크게 기대는 구조다. 분기 이익이 출하 시점에 따라 크게 흔들리는 만큼 연간 추정치가 조금만 바뀌어도 배수 해석이 민감하게 움직인다. 2025년 말 현금및현금성자산이 397.8억원으로 늘어난 점은 재무 여력이 넓어졌다는 사실로 읽을 수 있다.",
+  "en": "Valuation has moved from the 2024 loss period, when earnings-based multiples had little meaning, to a stage where multiples are read against 2025 profit and forward earnings. Because total equity was KRW 211 billion, the market capitalization sits well above book value, meaning the share price already reflects a large premium for expected earnings growth. In a September 30, 2026 report, Meritz Securities presented a fair share price of KRW 200,000. iM Securities projects 2026 operating profit of KRW 31.6 billion, an estimate that depends heavily on the fourth quarter. Because quarterly profit swings with shipment timing, small changes to the full-year estimate can shift how the multiple reads. Cash and cash equivalents rose to KRW 39.78 billion at the end of 2025, which is a fact that widens financial flexibility."
  },
  "bull": [
   {
    "title": {
-    "ko": "고객사 캐펙스가 수주로 직결되는 구조",
-    "en": "Customer capex converts directly into orders"
+    "ko": "수주 잔고에 따른 가시성",
+    "en": "Visibility from the order backlog"
    },
    "body": {
-    "ko": "회사 매출은 기판업체의 설비투자 집행에 연동된다. 이비덴은 2026년부터 2028년까지 3년간 5,000억엔을 AI 서버용 패키지 기판 캐파 확대에 투입한다고 밝혔고, 삼성전기도 2026년 2분기 컨퍼런스 콜에서 주요 고객사와 투자 지원을 포함한 장기 공급계약 협의를 바탕으로 국내외 FC-BGA 생산능력을 증설할 계획이라고 전했다. KB증권은 2026년 2월 리포트에서 이비덴과 Zhen Ding이 2026년 설비투자 목표액을 70% 상향했다고 전했다. 이 투자들이 발주로 전환되는 정도가 회사 실적의 1차 변수다.",
-    "en": "Revenue is linked to substrate makers' capital spending. Ibiden said it would invest JPY 500 billion over 2026-2028 to expand AI server package substrate capacity, and Samsung Electro-Mechanics said on its second-quarter 2026 call that it plans to expand FC-BGA capacity domestically and overseas on the basis of long-term supply talks including investment support with major customers. KB Securities reported in February 2026 that Ibiden and Zhen Ding had raised their 2026 capital spending targets by 70%. How much of that spending turns into purchase orders is the primary driver of the company's results."
+    "ko": "메리츠증권은 2026년 9월 30일 리포트에서 7~9월 공시된 신규 수주가 1,168억 4,000만원이라고 밝혔고, 이 시점의 수주잔고를 1,821억원으로 제시했다. 2026년 10월에는 국내 기판 업체 469억 3,700만원과 중국 기판 업체 305억 8,909만원 계약이 추가로 공시됐다. 계약 장비의 납품 기한이 2027년 말까지 이어져 있어 매출로 전환되는 기간이 길게 깔려 있다.",
+    "en": "In a September 30, 2026 report, Meritz Securities said new orders disclosed in July through September totaled KRW 116.84 billion and put the backlog at KRW 182.1 billion. Domestic and Chinese substrate contracts of KRW 46.94 billion and KRW 30.59 billion were disclosed in October 2026. Delivery schedules run into late 2027, so conversion into revenue is spread over a long period."
    }
   },
   {
    "title": {
-    "ko": "회복 국면에서 확인된 마진 레버리지",
-    "en": "Margin leverage visible in the recovery"
+    "ko": "고객사 설비투자 확대 신호",
+    "en": "Signs of customer capex expansion"
    },
    "body": {
-    "ko": "2025년 4분기 매출 317억원에서 영업이익 111억원, 2026년 2분기 매출 223억원에서 영업이익 66억원이 나왔다. 반대로 2026년 1분기에는 매출 60억원에 영업손실 10억원이었다. 매출이 일정 수준을 넘으면 마진이 빠르게 올라가는 구조가 실제 숫자로 확인된 셈이고, 2022~2023년에는 연간 30%대 후반의 영업이익률을 기록한 이력도 있다.",
-    "en": "Fourth-quarter 2025 revenue of KRW 31.7 billion produced KRW 11.1 billion of operating profit, and second-quarter 2026 revenue of KRW 22.3 billion produced KRW 6.6 billion. By contrast, first-quarter 2026 revenue of KRW 6.0 billion came with a KRW 1.0 billion operating loss. The numbers confirm that margins rise quickly once revenue clears a threshold, and the company posted full-year operating margins in the high thirties in 2022-2023."
+    "ko": "KB증권은 2026년 2월 분석에서 주요 고객사인 이비덴과 Zhen Ding이 2026년 설비투자 목표액을 70% 상향했다고 짚었다. 메리츠증권은 2026년 6월 리포트에서 이번 ABF 기판 투자 사이클이 과거 업사이클을 크게 웃돌 것으로 판단했다. 이런 투자 흐름이 이어진다면 검사·수리 장비 수요도 함께 늘어날 수 있다.",
+    "en": "In a February 2026 analysis, KB Securities noted that key customers Ibiden and Zhen Ding raised their 2026 capex targets by 70%. In a June 2026 report, Meritz Securities judged that the current ABF investment cycle would exceed past upcycles. If this investment flow continues, demand for inspection and repair equipment could rise as well."
    }
   },
   {
    "title": {
-    "ko": "순현금 기반의 재무 여력",
-    "en": "Balance-sheet capacity backed by net cash"
+    "ko": "영업이익률 회복 여지",
+    "en": "Room for operating margin recovery"
    },
    "body": {
-    "ko": "2025년 말 자본 2,110억원 대비 부채는 283억원으로 부채비율 13.4% 수준이고, 같은 해 영업활동현금흐름은 257억원으로 영업이익을 웃돌았다. 보도된 1분기 말 기준으로도 현금성자산 약 467.7억원과 단기금융상품 1,000억원을 합한 유동자산이 유동부채 약 415.8억원을 크게 상회해 사실상 순현금 상태였다. 사이클 저점에서 적자를 흡수하고 증설·연구개발을 이어갈 여력이 있다는 뜻이다.",
-    "en": "At end-2025, liabilities of KRW 28.3 billion against equity of KRW 211.0 billion gave a 13.4% liability-to-equity ratio, and operating cash flow of KRW 25.7 billion that year exceeded operating profit. Reported first-quarter figures also showed cash and equivalents of about KRW 46.8 billion plus KRW 100 billion of short-term financial instruments far exceeding roughly KRW 41.6 billion of current liabilities, leaving effectively a net cash position. That gives room to absorb losses at cycle troughs while continuing capacity and R&D spending."
+    "ko": "공시 실적 기준 영업이익률은 2023년 38.3%에서 2024년 -6.8%로 떨어진 뒤, 2025년에는 23.1%로 회복됐다. 2026년 3분기 영업이익은 89.5억원으로 전 분기 대비 35.3% 늘었다. 과거 고수익 구간의 영업이익률로 되돌아갈 수 있는지가 사업 지표 측면의 개선 여지다.",
+    "en": "On a disclosed basis, operating margin fell from 38.3% in 2023 to -6.8% in 2024 and recovered to 23.1% in 2025. Third-quarter 2026 operating profit of KRW 8.95 billion rose 35.3% from the prior quarter. Whether the margin returns to the earlier high-profit range is the operating indicator that matters for improvement."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "분기 실적의 극심한 변동성",
-    "en": "Extreme quarterly volatility"
+    "ko": "분기 실적의 변동성",
+    "en": "Volatility in quarterly results"
    },
    "body": {
-    "ko": "2025년 4분기 매출 317억원에서 2026년 1분기 매출 60억원으로 한 분기 만에 급락했고, 영업단도 흑자에서 적자로 뒤집혔다. 장비 인수·검수 시점에 매출이 몰리는 특성 때문에 특정 분기 숫자만으로 추세를 판단하기 어렵다. 2024년 연간 매출 261억원·영업손실 18억원처럼 고객사 투자가 멈추면 연 단위로도 실적 공백이 생긴다.",
-    "en": "Revenue fell from KRW 31.7 billion in the fourth quarter of 2025 to KRW 6.0 billion in the first quarter of 2026 in a single quarter, and the operating line flipped from profit to loss. Because revenue clusters around equipment acceptance, no single quarter is a reliable read on trend. When customer investment stops, the gap shows up at the annual level too, as in 2024 with KRW 26.1 billion of revenue and a KRW 1.8 billion operating loss."
+    "ko": "2025년 4분기 매출 317억원 이후 2026년 1분기 매출은 59.9억원(전 분기 대비 81.1% 감소)으로 줄었고 영업손실 9.7억원이 나왔다. 2026년 3분기 매출은 2분기보다 늘었지만, iM증권은 출하 일정 변경으로 3분기 실적이 시장 예상치를 밑돌 것으로 전망했다. 분기 흐름이 출하 시점에 따라 흔들리는 점은 약세 요인이다.",
+    "en": "After KRW 31.7 billion of revenue in the fourth quarter of 2025, first-quarter 2026 revenue fell to KRW 5.99 billion, down 81.1%, with an operating loss of KRW 971 million. Third-quarter 2026 revenue rose from the second quarter, but iM Securities had expected third-quarter results to fall short of market forecasts because of shipment schedule changes. Quarterly results that swing with shipment timing are a weakness."
    }
   },
   {
    "title": {
-    "ko": "고객 집중도와 소수 경쟁 구도의 양면성",
-    "en": "Two sides of customer concentration and a narrow field"
+    "ko": "설비투자 사이클 의존",
+    "en": "Dependence on the capex cycle"
    },
    "body": {
-    "ko": "주요 고객이 이비덴·신코 등 FC-BGA 기판 업체에 집중돼 있고, 단일 계약 하나가 최근 연간 매출의 17.08%에 해당하는 경우도 있다. 특정 고객의 투자 지연이나 사양 변경이 곧바로 매출 공백으로 이어질 수 있다. 경쟁 측면에서는 KLA·Camtek·Inspec 등이 같은 시장에 있어 사양별 채택 결과에 따라 수주 분배가 달라질 수 있다.",
-    "en": "Key customers are concentrated among FC-BGA substrate makers such as Ibiden and Shinko, and a single contract can equal 17.08% of the most recent year's revenue. A delay or specification change at one customer can therefore leave an immediate revenue hole. On competition, KLA, Camtek and Inspec operate in the same market, so order allocation can shift with how each specification tier is awarded."
+    "ko": "비즈니스포스트 보도에 따르면 사업 구조가 반도체 업황과 고객사 설비투자에 연동돼 있어, 투자 속도가 둔화되면 발주가 곧바로 줄 수 있다. 2024년에는 고객사 투자 지연과 일부 계약 취소로 매출이 261억원(전년 대비 71.4% 감소)까지 떨어졌다. 공시 실적 기준으로도 이 시기 매출이 기간 중 가장 작았다.",
+    "en": "According to BusinessPost, the business is tied to semiconductor demand and customer capex, so orders can fall quickly if investment slows. In 2024, customer investment delays and some contract cancellations pushed revenue down to KRW 26.1 billion, a 71.4% decline. On a disclosed basis, that was also the smallest revenue year in the span."
    }
   },
   {
    "title": {
-    "ko": "신시장은 아직 수주 이벤트 전 단계",
-    "en": "New markets are still pre-order"
+    "ko": "고객 집중과 추정치 의존",
+    "en": "Customer concentration and reliance on estimates"
    },
    "body": {
-    "ko": "유리기판·PLP는 서사로는 강하지만 확정 매출로는 아직 확인되지 않았다. 삼성증권은 유리기판용 검사장비의 진입 시기가 고객 투자 결정과 함께 구체화될 것으로 보면서도 신제품 장비 특성상 구체적인 수주 이벤트가 선결되어야 한다고 지적했다. 기술 표준이 정착되지 않은 시장에서는 데모·퀄 단계와 양산 발주 사이의 시차가 길어질 수 있다.",
-    "en": "Glass substrates and panel-level packaging make a strong narrative but have not yet shown up as confirmed revenue. Samsung Securities expects entry timing for glass-substrate inspection tools to firm up alongside customer investment decisions, but stressed that a concrete order event must come first for a new equipment category. In markets where technical standards are unsettled, the gap between demo and qualification stages and volume purchase orders can stretch out."
+    "ko": "주요 고객사가 일본과 대만의 기판 제조사 등으로 이루어져 있어, 해외 투자 결정이 수주 시점에 직접 영향을 준다. iM증권의 2026년 연간 영업이익 316억원 추정은 1~3분기 누적 공시 영업이익을 크게 넘는 4분기 이익을 전제한다. 추정이 빗나가면 배수 해석도 함께 달라질 수 있다.",
+    "en": "Key customers include substrate makers in Japan and Taiwan, so overseas investment decisions directly affect when orders arrive. iM Securities' 2026 operating profit estimate of KRW 31.6 billion assumes fourth-quarter profit well above the first three quarters' disclosed total. If that estimate misses, the reading of the valuation multiple could change as well."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "전방 투자 사이클 리스크",
-    "en": "End-market investment cycle risk"
+    "ko": "고객 집중과 지정학 리스크",
+    "en": "Customer concentration and geopolitical risk"
    },
    "body": {
-    "ko": "회사 매출은 기판업체 캐펙스에 연동돼 있어 사이클 반전 시 낙폭이 크다. 2023년 매출 914억원에서 2024년 261억원으로 70% 이상 줄어든 전례가 이를 보여준다. AI 데이터센터 투자 속도가 둔화되거나 고객사가 기존 장비를 전용해 신규 발주를 미루면 같은 형태의 공백이 반복될 수 있다.",
-    "en": "Because revenue is tied to substrate makers' capex, downturns bite hard. Revenue fell more than 70%, from KRW 91.4 billion in 2023 to KRW 26.1 billion in 2024, as precedent. If AI datacentre investment slows or customers repurpose existing tools instead of ordering new ones, a similar gap can recur."
+    "ko": "주요 고객이 일본과 대만의 글로벌 기판 업체여서 해외 투자 결정과 환율, 미국과 중국의 기술 갈등이 수주 시점을 흔들 수 있다. 2024년 매출 감소는 이 갈등에 따른 고객사 투자 지연과 계약 취소에서 비롯됐다고 보도됐다. 중국 계약 상대방 정보가 비공개라 고객 구성을 세부적으로 파악하기는 어렵다.",
+    "en": "Key customers are global substrate makers in Japan and Taiwan, so overseas investment decisions, exchange rates and US-China technology tensions could shift the timing of orders. BusinessPost reported that the 2024 revenue decline stemmed from customer investment delays and contract cancellations tied to those tensions. The Chinese counterparty is undisclosed, which makes it hard to see the customer mix in detail."
    }
   },
   {
    "cat": {
-    "ko": "공급망·원재료 병목",
-    "en": "Supply chain and raw material bottlenecks"
+    "ko": "기술 전환과 경쟁 구도",
+    "en": "Technology shifts and competition"
    },
    "body": {
-    "ko": "KB증권은 2026년 2월 리포트에서 T-Glass 쇼티지 심화를 리스크 요인으로 지목했다. 기판 원재료 병목은 고객사 증설 일정과 장비 발주 시점을 함께 미룰 수 있다. 회사 측면에서도 장비 부품 조달 지연은 납기와 매출 인식 시점에 직접 영향을 준다.",
-    "en": "KB Securities flagged a worsening T-Glass shortage as a risk in its February 2026 report. Raw material bottlenecks at substrate makers can push back both expansion schedules and equipment orders. On the company side, delays in sourcing tool components feed directly into delivery timing and revenue recognition."
+    "ko": "FC-BGA 검사 시장에서는 KLA, Camtek, Inspec 등과 경쟁한다. PLP, WLP, 유리기판 같은 차세대 패키징은 사업 확장의 기회이지만 상용화 시점이 불확실하다. 업계는 유리기판 상용화 분기점을 2028년 전후로 보고 있어, 해당 제품의 매출 기여는 중장기 과제다.",
+    "en": "In FC-BGA inspection, GigaVis competes with KLA, Camtek and Inspec. Next-generation packaging such as PLP, WLP and glass substrates offers expansion potential, but commercialization timing is uncertain. The industry sees glass substrate commercialization around 2028, so revenue from that segment is a medium-term task."
    }
   },
   {
    "cat": {
-    "ko": "환율·수출 지역 리스크",
-    "en": "Currency and export region risk"
+    "ko": "증설 실행과 고정비 부담",
+    "en": "Expansion execution and fixed-cost burden"
    },
    "body": {
-    "ko": "계약이 외화로 체결되는 경우가 많다 — 2026년 8월 계약은 10억 830만엔으로 체결일 매매기준율 888.02원이 적용된 수출계약이었다. 환율 변동은 원화 환산 매출과 마진에 영향을 준다. 또 중화권 고객 대상 계약 비중이 있는 만큼 반도체 장비 관련 수출 규제나 지역별 정책 변화도 점검 항목이다.",
-    "en": "Many contracts are denominated in foreign currency: the August 2026 order was for JPY 1.0083 billion, an export contract translated at the contract-date rate of KRW 888.02. Exchange rate moves therefore affect won-converted revenue and margins. With a meaningful share of contracts going to greater-China customers, export controls on semiconductor equipment and regional policy shifts are also items to monitor."
+    "ko": "동탄산업단지 신규 생산거점 건설에 약 500억원이 투입되고 있어, 가동이 늦어지거나 가동률이 낮으면 고정비 부담이 커질 수 있다. 업계가 기대하는 생산능력 확대 효과는 아직 공시 실적에 반영되지 않았다. 증설 완료 후 매출 전환 속도가 실적 회복의 지속성을 가르는 변수다.",
+    "en": "About KRW 50 billion is being invested in a new production base in the Dongtan Industrial Complex. If operations start late or utilization is low, fixed-cost pressure could rise. The capacity gains industry observers expect are not yet reflected in disclosed results. How fast revenue follows the expansion will determine whether the recovery is sustained."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 10월 말~11월 중순",
-    "en": "Late October to mid-November 2026"
+    "ko": "2026년 12월 말",
+    "en": "Late December 2026"
    },
    "what": {
-    "ko": "2026년 3분기 분기보고서. 2026년 2분기 매출 223억원·영업이익 66억원의 회복이 이어지는지, 아니면 1분기처럼 다시 공백 분기가 나오는지가 핵심이다. 분기 매출이 고정비를 넘는 구간을 유지하는지 확인할 대목이다.",
-    "en": "The third-quarter 2026 quarterly report. The key question is whether the recovery seen in second-quarter 2026 (KRW 22.3 billion revenue, KRW 6.6 billion operating profit) continues or another gap quarter appears as in the first quarter. Watch whether quarterly revenue stays above the fixed-cost threshold."
+    "ko": "동탄 신규 생산거점의 가동 상황과 생산능력 확대 진행 여부를 확인한다. 업계 관측대로 생산능력이 늘어난다면 2027년 매출 전환 속도를 가늠하는 근거가 된다.",
+    "en": "Check the operating status of the new Dongtan production base and progress on expanded capacity. If capacity rises as industry observers expect, it becomes a basis for judging how fast revenue converts in 2027."
    }
   },
   {
    "when": {
-    "ko": "2026년 10월 말",
-    "en": "Late October 2026"
+    "ko": "2026년 12월 말",
+    "en": "Late December 2026"
    },
    "what": {
-    "ko": "삼성전기 3분기 실적 발표·컨퍼런스 콜. 앞서 2분기 콜에서 밝힌 국내외 FC-BGA 증설 계획의 진행 상황과 구체적 투자 일정이 장비 발주 시점의 단서가 된다.",
-    "en": "Samsung Electro-Mechanics' third-quarter results and earnings call. Progress and concrete timing on the domestic and overseas FC-BGA expansion plan it described on the second-quarter call offer clues to equipment order timing."
+    "ko": "10월 공시 계약분의 진행 상황을 확인한다. 국내 계약 납품 기한이 2027년 12월 말이므로, 2026년 4분기 매출 규모가 수주 전환 속도를 보여 주는 지표다.",
+    "en": "Check progress on the October contracts. Domestic delivery runs to the end of December 2027, so fourth-quarter 2026 revenue will indicate how quickly orders convert."
    }
   },
   {
    "when": {
-    "ko": "2026년 11월 초",
-    "en": "Early November 2026"
+    "ko": "2027년 3월 말 전후",
+    "en": "Around late March 2027"
    },
    "what": {
-    "ko": "이비덴의 2026회계연도 상반기 실적 및 가이던스 갱신. 이비덴이 상반기 2,300억엔·하반기 2,700억엔의 매출 전망을 제시한 만큼, 하반기 강세 예상이 실제 설비투자 집행으로 이어지는지가 검사장비 수요의 선행 신호다.",
-    "en": "Ibiden's first-half fiscal 2026 results and any guidance update. Since Ibiden guided JPY 230 billion of first-half and JPY 270 billion of second-half revenue, whether the expected second-half strength translates into actual capital spending is a leading signal for inspection tool demand."
+    "ko": "2026년 사업보고서가 다음 정기보고서로 공시된다. 2026년 연간 매출·영업이익·영업활동 현금흐름을 2025년 공시 실적과 비교하는 기준점이 된다.",
+    "en": "The 2026 annual report, the next periodic filing, will disclose full-year revenue, operating profit and operating cash flow. It becomes the benchmark for comparison with the 2025 disclosed results."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기 중",
-    "en": "During the fourth quarter of 2026"
+    "ko": "2027년 10월 30일",
+    "en": "October 30, 2027"
    },
    "what": {
-    "ko": "단일판매·공급계약 공시 흐름. 2026년 8월 18일 체결된 89억 5,390만원 규모 일본 계약(2027년 9월 30일까지) 이후 추가 수주가 이어지는지, 계약 상대 지역이 일본·중화권·국내로 계속 분산되는지가 수주 모멘텀의 실측치다.",
-    "en": "The flow of single sales and supply contract disclosures. Whether further orders follow the KRW 8.95 billion Japanese contract signed on 18 August 2026 and running to 30 September 2027, and whether counterparties remain spread across Japan, greater China and Korea, is the measurable read on order momentum."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 2월 전후",
-    "en": "Around February 2027"
-   },
-   "what": {
-    "ko": "2026년 연간 실적과 배당 결정. KB증권이 2026년 2월 리포트에서 제시한 2026년 매출 655억원·영업이익 228억원 전망과 실제 확정치 간 격차, 그리고 PLP·유리기판 관련 정식 수주 언급 여부를 함께 확인할 시점이다.",
-    "en": "Full-year 2026 results and the dividend decision. This is the point to compare the actual figures with KB Securities' February 2026 projection of KRW 65.5 billion in revenue and KRW 22.8 billion in operating profit for 2026, and to check for any mention of formal orders in panel-level packaging or glass substrates."
+    "ko": "중국 기판 업체와의 공급계약 기간이 끝나는 시점이다. 계약 이행 완료와 추가 갱신 여부가 해외 수주 흐름을 가늠하는 지표가 된다.",
+    "en": "The supply contract with the Chinese substrate maker ends on this date. Completion and any renewal will be a gauge of overseas order flow."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "기가비스는 FC-BGA 패키지 기판의 내층 검사(AOI)와 수리(AOR)에 특화된 장비업체로, 실적이 전방 기판업체의 설비투자 사이클을 거의 그대로 따라 움직인다. 확정 실적으로 보면 2022년 매출 997억원·2023년 914억원의 고마진 구간에서 2024년 매출 261억원·영업손실 18억원으로 급락했고, 2025년 매출 524억원·영업이익 121억원(영업이익률 23.1%)으로 영업단이 흑자로 돌아섰다. 분기 흐름은 2025년 4분기 매출 317억원·영업이익 111억원, 2026년 1분기 매출 60억원·영업손실 10억원, 2026년 2분기 매출 223억원·영업이익 66억원으로 진폭이 매우 크며, 이는 장비 인수·검수 시점에 매출이 몰리는 구조를 반영한다. 강세 요인은 이비덴의 3년 5,000억엔 증설과 삼성전기가 언급한 FC-BGA 공급 부족 심화처럼 전방 캐펙스 방향이 확인되고 있다는 점, 그리고 2025년 말 부채비율 13.4%와 영업활동현금흐름 257억원으로 요약되는 재무 여력이다. 약세 요인은 고객 집중도, 분기 실적의 변동성, 그리고 유리기판 등 신제품이 아직 구체적인 수주 이벤트를 선결 조건으로 두고 있다는 점이다. 밸류에이션은 순자산 대비 프리미엄이 큰 구간에 있어 이익 회복 속도와 수주 전환율이 논쟁의 중심에 놓여 있다. 본 리포트는 정보 제공용이며 매수·매도 의견이나 목표주가를 포함하지 않는다.",
-   "en": "GigaVis is an equipment maker specialising in inner-layer inspection (AOI) and repair (AOR) for FC-BGA package substrates, and its results track the capital spending cycle of its substrate-maker customers almost directly. On confirmed figures, it fell from a high-margin stretch of KRW 99.7 billion of revenue in 2022 and KRW 91.4 billion in 2023 to KRW 26.1 billion of revenue and a KRW 1.8 billion operating loss in 2024, then recovered to KRW 52.4 billion of revenue and KRW 12.1 billion of operating profit (23.1% margin) in 2025. Quarterly swings are wide - KRW 31.7 billion revenue and KRW 11.1 billion operating profit in the fourth quarter of 2025, KRW 6.0 billion revenue and a KRW 1.0 billion operating loss in the first quarter of 2026, then KRW 22.3 billion revenue and KRW 6.6 billion operating profit in the second quarter - reflecting revenue that clusters around equipment acceptance. The supportive factors are a visible direction in end-market capex, such as Ibiden's JPY 500 billion three-year expansion and the deepening FC-BGA shortage described by Samsung Electro-Mechanics, plus balance-sheet capacity summarised by a 13.4% liability-to-equity ratio and KRW 25.7 billion of operating cash flow at end-2025. The offsetting factors are customer concentration, quarterly earnings volatility, and the fact that new products such as glass-substrate tools still require a concrete order event as a precondition. With the shares trading at a large premium to book value, the pace of the earnings recovery and the conversion rate from customer capex into orders sit at the centre of the debate. This report is for information only and contains no buy or sell opinion or target price."
+   "ko": "기가비스는 FC-BGA 기판의 검사·수리 장비를 만드는 기업으로, 2024년 영업손실 이후 2025년 흑자 전환을 거쳐 2026년 3분기까지 분기 매출이 두 분기 연속 늘었다. 공시 실적 기준 2025년 매출은 524억원, 영업이익은 121억원, 지배주주 순이익은 155억원이며, 2025년 말 자본총계는 2,110억원이다. 2026년 3분기 공시된 신규 수주는 1,168억 4,000만원이었고, 10월에는 약 775억원의 공급계약이 더해져 수주 기반이 넓어졌다. 강점은 AI 서버용 기판 수요와 검사·수리 통합 솔루션에 있고, 고객사 설비투자 사이클과 차세대 패키징 개발 성과가 중장기 변수다. 반면 분기 매출은 출하 시점에 따라 크게 움직여 2026년 1분기에는 영업손실 9.7억원이 나왔고, 고객 집중과 투자 둔화 시 발주 감소 위험이 구조적으로 남아 있다. 증권사 추정 2026년 영업이익 316억원은 4분기 실적에 크게 기댄 수치라 실제 결과와의 차이를 확인할 필요가 있다.",
+   "en": "GigaVis makes inspection and repair equipment for FC-BGA substrates. After an operating loss in 2024 and a return to profit in 2025, quarterly revenue has risen for two consecutive quarters through the third quarter of 2026. On a disclosed basis, 2025 revenue was KRW 52.4 billion, operating profit KRW 12.1 billion and profit attributable to controlling shareholders KRW 15.5 billion, and total equity at the end of 2025 was KRW 211 billion. New orders disclosed for the third quarter of 2026 totaled KRW 116.84 billion, and about KRW 77.5 billion of supply contracts were added in October, widening the order base. Strengths lie in demand for AI server substrates and an integrated inspection and repair solution, while customers' capex cycle and progress in next-generation packaging are medium-term variables. On the other side, quarterly revenue swings with shipment timing, as the first quarter of 2026 showed with an operating loss of KRW 971 million, and concentration among customers and any slowdown in investment leave structural risk of lower orders. The brokerage's 2026 operating profit estimate of KRW 31.6 billion leans heavily on fourth-quarter results, so the gap versus actual results needs to be checked."
   }
  },
  "sources": [
-  "https://news.infostock.co.kr/a",
-  "https://www.datatooza.com/article/20260311100244853552ef3e8f32_80",
-  "https://m.thinkpool.com/compDiscuss/cont/1027770",
-  "https://alphasquare.co.kr/home/stock-summary?code=420770",
-  "https://file.alphasquare.co.kr/media/pdfs/company-report/20260122075131853K_02.pdf",
-  "https://m.ibks.com/iko/IKO01/download.do?seq=16747&gubun=DAIL&menuCode=IKO010101&attatchCd=ATTATCH1",
-  "https://www.investing.com/equities/gigavis",
+  "https://thevc.kr/gigavis",
+  "https://www.gigavis.com/kr/main",
+  "https://www.businesspost.co.kr/BP?command=article_view&num=439327",
+  "https://zdnet.co.kr/view/?no=20230510130913",
+  "https://www.hankyung.com/article/202610281326i",
+  "http://www.dailyinvest.kr/news/articleView.html?idxno=58086",
+  "https://www.hankyung.com/article/202511279840i",
+  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=375174",
+  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=500359",
+  "https://eduinfom.com/%EA%B8%B0%EA%B0%80%EB%B9%84%EC%8A%A4-%EB%AA%A9%ED%91%9C%EC%A3%BC%EA%B0%80-%EB%B6%84%EC%84%9D25-10-14-2026%EB%85%84-ai-%EB%B0%98%EB%8F%84%EC%B2%B4-%EA%B8%B0%ED%8C%90-%EA%B2%80%EC%82%AC-%EB%8F%85/",
+  "https://www.dailyan.com/news/article.html?no=784457",
+  "https://www.mt.co.kr/stock/2026/09/30/2026093008335245837",
   "https://kbthink.com/securities-view.html?docId=20260126173555143K",
-  "https://news.nate.com/view/20240912n09745",
-  "https://m.newsprime.co.kr/section_view.html?no=654842",
-  "https://samsungpop.com/common.do?cmd=down&contentType=application%2Fpdf&fileName=2010%2F2025122308324053K_02_02.pdf&inlineYn=Y&saveKey=research.pdf",
-  "https://m.thinkpool.com/compDiscuss/cont/1012397",
-  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=435517",
-  "https://www.thebigdata.co.kr/view.php?ud=20241218061920732cd1e7f0bdf_23",
-  "https://m.thinkpool.com/stockDiscuss/420770/cont/11634723",
-  "https://www.newspim.com/news/view/20251117000613",
-  "https://www.asiae.co.kr/article/2024090314395499782",
-  "https://kr.investing.com/news/stock-market-news/article-1971775"
+  "https://www.investing.com/equities/gigavis",
+  "https://www.hankyung.com/article/202602093153L",
+  "https://m.news.nate.com/view/20260625n27976",
+  "https://m.thinkpool.com/compDiscuss/cont/1027770",
+  "https://bbn.kiwoom.com/rfCR11874"
  ],
  "v": 2,
- "model": "claude-opus-5",
+ "model": "claude-haiku-5-5",
  "ticker": "420770",
  "name": "기가비스",
  "name_en": "GigaVis Co., Ltd.",
@@ -233,11 +223,11 @@
   "반도체"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 05:36",
- "dataDate": "20260904",
+ "reportDate": "2026-11-16",
+ "reportTs": "2026-11-16 20:23",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-09-04",
+  "asOf": "2026-11-16",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -308,16 +298,10 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 8893890020,
-    "op": 2033681704,
-    "np_owner": 1393996186
-   },
-   {
     "q": "2025Q3",
-    "rev": null,
-    "op": null,
-    "np_owner": null
+    "rev": 7225894009,
+    "op": 866413774,
+    "np_owner": 2066987275
    },
    {
     "q": "2025Q4",
@@ -336,32 +320,36 @@
     "rev": 22307133450,
     "op": 6610590501,
     "np_owner": 5996928869
+   },
+   {
+    "q": "2026Q3",
+    "rev": 26932561662,
+    "op": 8946384371,
+    "np_owner": 2666204616
    }
   ],
   "valuation": {
-   "price": 101200,
-   "mcap": 1.2828,
+   "price": 78800,
+   "mcap": 0.9988,
    "shares": 12675758,
    "total_shares": 12675758,
-   "wavg_shares": 12676125,
-   "per": null,
-   "eps": null,
-   "pbr": 6.0795,
-   "bps": 16646,
-   "roe_ttm": 7.3,
-   "ttm_window": "2025Q1~2025Q4",
-   "ttm_np_owner": 15452197332,
+   "wavg_shares": 12668611,
+   "per": 46.271,
+   "eps": 1703,
+   "pbr": 4.7504,
+   "bps": 16588,
+   "roe_ttm": 10.6,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": 21582782560,
    "ccy": "KRW",
    "bps_src": "자체",
    "eps_src": "공시",
-   "pbr_krx": 6.08,
+   "pbr_krx": 4.73,
    "bps_krx": 16646.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 800.0,
-   "div": 0.79,
-   "hidden": {
-    "eps": "ref_mismatch"
-   }
+   "div": 1.02
   }
- }
+ },
+ "textRules": 2
 }

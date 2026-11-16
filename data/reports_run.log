@@ -1,33 +1,34 @@
-=== 공시 트리거 옛 형식 갱신 Mon Nov 16 01:54:46 UTC 2026 · 대상 0039P0,468670,486510,359410,487580,487400 ===
-## 🤖 Batch 제출 — 대상 3개 / 상위 100개 (최근 98개 건너뜀) · 모델 claude-haiku-5-5
+=== 공시 트리거 옛 형식 갱신 Mon Nov 16 11:24:04 UTC 2026 · 대상 950260,0158S0,493410,0011T0,0035S0,0039P0 ===
+## 🤖 Batch 제출 — 대상 4개 / 상위 100개 (최근 101개 건너뜀) · 모델 claude-haiku-5-5
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
-  · 준비 468670 브릴스 (DART O)
+  · 준비 950260 인제니아테라퓨틱스(Reg.S) (DART O)
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
-  · 준비 486510 글로벌테크놀로지 (DART O)
+  · 준비 0158S0 엘리스 (DART O)
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
-  · 준비 487580 폴레드 (DART O)
-- ✅ 배치 제출 완료: msgbatch_01RnAW4CKfcjWJKmmyArZ5Ds (3건) → data/batch_state.json
-  · 상태 in_progress · 처리 3/성공 0/오류 0
-  · 상태 in_progress · 처리 3/성공 0/오류 0
-  · 상태 in_progress · 처리 3/성공 0/오류 0
-  · 상태 in_progress · 처리 3/성공 0/오류 0
-  · 상태 in_progress · 처리 3/성공 0/오류 0
-  · 상태 in_progress · 처리 3/성공 0/오류 0
-  · 상태 in_progress · 처리 3/성공 0/오류 0
-  · 상태 ended · 처리 0/성공 3/오류 0
-- 🔎 교정 배치 제출: msgbatch_01CtiFChhhpSiwpyYYKC6F9P (2건)
-  · ✏️ 468670 표현 교정 1건 → 남은 0건
-  · ✏️ 487580 표현 교정 1건 → 남은 0건
-💵 claude-sonnet-5-5 2회(교정 배치) · 입력 7,675(캐시쓰기 0·읽기 0) · 출력 2,067 · 검색 0 → 약 $0.02
+  · 준비 0011T0 채비 (DART O)
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
-✅ 회수 완료 · 성공 3/실패 0 · 총 보유 2695개 → data/reports/ + reports-index.js
-💵 claude-haiku-5-5 3회(배치) · 입력 16,089(캐시쓰기 108,180·읽기 14,355) · 출력 76,227 · 검색 6 → 약 $0.09
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  · 준비 0035S0 빅웨이브로보틱스 (DART O)
+- ✅ 배치 제출 완료: msgbatch_01KDLUZqeEAePqHKASNQFkSn (4건) → data/batch_state.json
+  · 상태 in_progress · 처리 4/성공 0/오류 0
+  · 상태 in_progress · 처리 4/성공 0/오류 0
+  · 상태 in_progress · 처리 4/성공 0/오류 0
+  · 상태 in_progress · 처리 4/성공 0/오류 0
+  · 상태 in_progress · 처리 4/성공 0/오류 0
+  · 상태 in_progress · 처리 4/성공 0/오류 0
+  · 상태 in_progress · 처리 4/성공 0/오류 0
+  · 상태 ended · 처리 0/성공 4/오류 0
+
+✅ 회수 완료 · 성공 4/실패 0 · 총 보유 2695개 → data/reports/ + reports-index.js
+💵 claude-haiku-5-5 4회(배치) · 입력 21,364(캐시쓰기 157,712·읽기 20,097) · 출력 95,533 · 검색 8 → 약 $0.11

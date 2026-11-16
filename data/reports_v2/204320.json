@@ -1,230 +1,208 @@
 {
  "title": {
-  "ko": "전장 66%로 버틴 본업, 로봇은 검증 단계",
-  "en": "Electronics at 66% Carries the Core; Robotics Still in Validation"
+  "ko": "수주는 늘었지만 3분기 수익성은 꺾였다",
+  "en": "Orders grow, but Q3 2026 profitability weakens"
  },
  "lead": {
-  "ko": "HL만도는 제동·조향·현가에 전자제어를 얹은 고부가 제품 비중 확대로 완성차 생산 정체 속에서도 외형과 이익을 늘렸지만, 시장이 주목하는 로봇 액추에이터는 아직 수주·양산이 확인되지 않은 단계다.",
-  "en": "HL Mando has grown revenue and profit despite flat global vehicle output by shifting its brake, steering and suspension mix toward electronically controlled products, while the robot actuator business that draws market attention has yet to show confirmed orders or mass production."
+  "ko": "HL만도는 전장 중심 수주 확대와 인도 매출 성장에도 2026년 3분기 영업이익이 45.3% 줄고 지배주주 순손실로 전환해, 원가 정산 회복 여부가 다음 확인 지점이다.",
+  "en": "HL Mando's electrified-product orders and India growth have not offset a 45.3% drop in Q3 2026 operating profit or the swing to an owner net loss, so cost pass-through is the next checkpoint."
  },
  "keypoints": [
   {
-   "ko": "2026년 2분기 매출 2조 4,952억원·영업이익 1,070억원으로 분기 최대 매출을 기록했고, 회사는 영업이익률 4.3%를 유지했다고 밝혔다.",
-   "en": "Second quarter 2026 revenue reached KRW 2,495.3bn with operating profit of KRW 107.0bn, a record quarterly top line, and the company said its operating margin held at 4.3%."
+   "ko": "2026년 9월 말 누적 신규 수주는 7조 6,000억원으로 연간 목표 13조원의 59%에 이르며, 수주잔고는 58조원으로 집계됐다.",
+   "en": "Cumulative new orders through September 2026 reached KRW 7.6 trillion, or 59% of the KRW 13 trillion annual target, and the order backlog stood at KRW 58 trillion."
   },
   {
-   "ko": "2분기 매출에서 전장 제품 비중이 66%까지 올라왔고, 상반기 신규 수주 5조 8,000억원 중 71%가 제동·조향·현가·ADAS 등 전장 제품이었다.",
-   "en": "Electronic products accounted for 66% of second quarter revenue, and 71% of the KRW 5.8tn in new orders booked in the first half were electronic braking, steering, suspension and ADAS items."
+   "ko": "2026년 3분기 영업이익은 515억원으로 45.3% 줄었고 영업이익률은 2.2%로 내려갔다. 반도체·원자재 가격 상승과 연구개발비 증가가 주된 배경으로 꼽혔다.",
+   "en": "Q3 2026 operating profit fell 45.3% to KRW 51.5 billion, and the operating margin dropped to 2.2%. Higher semiconductor and raw material prices and rising R&D spending were cited as the main drivers."
   },
   {
-   "ko": "연간 수주 목표 13조원 대비 상반기 44% 달성, 6월 말 수주잔고는 59조원으로 회사가 공개했다.",
-   "en": "The company disclosed that first half bookings filled 44% of the KRW 13tn annual order target, with an order backlog of KRW 59tn as of end June."
+   "ko": "2026년 3분기 매출은 2조 3,205억원으로 전년 동기와 비슷했고, 인도 매출은 2,825억원으로 30.8% 늘어 분기 기준 최고치를 냈다.",
+   "en": "Q3 2026 revenue of KRW 2.32 trillion was roughly flat year on year, while India sales rose 30.8% to KRW 282.5 billion, a quarterly high."
   },
   {
-   "ko": "지역별로는 중국·인도·유럽이 성장을 주도한 반면 한국과 미주 매출은 감소해, 고객·지역 분산 구조가 완충 역할을 했다.",
-   "en": "China, India and Europe drove growth while Korea and the Americas declined, so the diversified customer and regional base acted as a buffer."
+   "ko": "지배주주 순이익은 2026년 3분기 471억원 순손실로 적자 전환했고, 최근 4개 분기 합계는 783억원이다.",
+   "en": "Owner net income swung to a KRW 47.1 billion net loss in Q3 2026, and the total for the most recent four quarters was KRW 78.3 billion."
   },
   {
-   "ko": "휴머노이드 로봇 액추에이터는 마스터 모델 개발과 고객 협의 단계로, 회사가 제시한 로드맵상 수주와 양산은 2027년 이후 사안이다.",
-   "en": "The humanoid robot actuator line is at the master model development and customer discussion stage; under the roadmap the company presented, orders and mass production are matters for 2027 and beyond."
+   "ko": "영업활동 현금흐름은 2022년 마이너스 133억원에서 2025년 7,209억원으로 개선됐다.",
+   "en": "Operating cash flow improved from -KRW 13.3 billion in 2022 to KRW 720.9 billion in 2025."
   }
  ],
  "business": {
-  "ko": "HL만도는 제동장치·조향장치·현가장치 등 차량 안전과 주행에 직결되는 샤시 부품을 개발·생산하는 자동차 부품사다. 평택·원주·익산에 생산시설을, 판교에 연구개발센터를 운영하며, 해외에도 다수의 생산 사이트와 연구소를 두고 있다. 사업의 무게중심은 기계식 단품에서 전자제어 영역으로 이동해 왔는데, 제동·조향 부품에 전자제어 기능을 결합하고 적용 범위를 시스템 단위로 넓히면서 전동식 주차브레이크, 회생제동, 전자식 제동장치 등이 양산에 적용됐고 역할도 제어 로직 설계 단계까지 확장됐다. 대표 제품군은 통합형 전자 브레이크 IDB2와 랙 구동형 전동식 조향장치 R-EPS이며, 이들 전장 제품 확대로 2026년 2분기 전장 비중은 66%까지 높아졌다. 자율주행 계열사 HL클레무브가 레이더·카메라 등 ADAS 부품을 담당해 제동·조향·센싱을 한 지붕 아래 갖춘 구조다. 고객 기반은 현대자동차·기아를 비롯해 북미 완성차 업체, 중국과 인도 등 신흥국 완성차 브랜드까지 다변화돼 있고, 2026년 2분기 지역별 매출은 미주 6,555억원(26%), 중국 5,344억원(21%), 인도 2,657억원(11%), 유럽 2,372억원(10%)으로 분산돼 있다. 다만 전자제어 기반 제품 매출은 기존 샤시 사업군에 포함돼 집계되며 제어 사업이 독립 축으로 구분 공시되지 않아, 전략 전환의 속도를 외부에서 정량적으로 가늠하기는 쉽지 않다. 경쟁 구도는 보쉬·ZF·컨티넨탈 등 글로벌 샤시·제동 대형 공급사와 국내 현대모비스가 함께 놓인 시장으로, 브레이크·조향의 전자화 전환 속도가 점유율을 가르는 국면이다.",
-  "en": "HL Mando develops and produces chassis components tied directly to vehicle safety and driving, namely braking, steering and suspension systems. It runs plants in Pyeongtaek, Wonju and Iksan and an R&D center in Pangyo, and also operates numerous overseas production sites and research centers. The center of gravity has shifted from mechanical single parts toward electronic control: by combining electronic control functions with braking and steering parts and widening the scope to system level, products such as electronic parking brakes, regenerative braking and electronic braking systems entered mass production, and the company's role expanded into control logic design. Flagship lines include the integrated dynamic brake IDB2 and rack-drive electric power steering R-EPS, and the expansion of these electronic products lifted their share of revenue to 66% in the second quarter of 2026. Autonomous driving affiliate HL Klemove handles ADAS parts such as radar and cameras, giving the group braking, steering and sensing under one roof. The customer base is diversified, spanning Hyundai Motor and Kia, North American automakers and emerging market brands in China and India, and second quarter 2026 revenue by region was Americas KRW 655.5bn (26%), China KRW 534.4bn (21%), India KRW 265.7bn (11%) and Europe KRW 237.2bn (10%). That said, revenue from electronically controlled products is tallied within the existing chassis segment and the control business is not disclosed as a separate axis, making it hard for outsiders to quantify the pace of the strategic shift. The competitive field includes global chassis and braking majors such as Bosch, ZF and Continental alongside domestic peer Hyundai Mobis, with the speed of electrification in brakes and steering deciding share."
+  "ko": "HL만도는 제동, 조향, 현가 장치와 ADAS(첨단운전자지원시스템) 등 자동차 샤시 부품을 설계·생산하는 1차 부품사다. 2024년 사업보고서 기준으로 내부거래 차감 전 지역별 매출은 한국 3조 8,359억원, 중국 2조 3,031억원, 미국 1조 5,186억원, 인도 9,003억원이며 한국이 가장 크다. 전장 제품은 2024년 기준 전체 매출의 64%로 기계 부품 비중을 넘어섰고, 2026년 2분기에는 전장 비중이 66%로 높아졌다. 전자식 제동장치(IDB2)와 전동식 조향장치(R-EPS) 같은 고부가 제품이 수익성을 떠받친다는 것이 회사 설명이다. 고객 구조는 현대차그룹이 매출의 절반에 가깝고, 중국 로컬 완성차 업체, 북미 전기차 업체, GM 등이 뒤를 잇는다. 2026년 9월 말 누적 신규 수주는 현대차·기아 40%, 중국 완성차 업체 34%, 인도 완성차 업체 12%, 북미 완성차 업체 10% 순이었다. 2026년 3분기 회사 발표 기준 지역별 매출은 한국 7,165억원(전년 동기 대비 8.6% 감소), 중국 4,947억원(1.7% 감소), 미주 6,344억원(0.4% 증가), 유럽 1,925억원(3.1% 증가), 인도 2,825억원(30.8% 증가)이다. 경쟁 측면에서는 국내 다른 1차 부품사보다 고객사 포트폴리오가 다양하다는 평가가 있다. 자회사 HL클레무브는 고성능 컴퓨터(HPC) 등 차세대 제품 개발을 맡고 있다.",
+  "en": "HL Mando designs and manufactures braking, steering and suspension systems along with ADAS (advanced driver assistance systems), making it a Tier 1 automotive chassis supplier. In the 2024 annual report, regional sales before intercompany eliminations were KRW 3.84 trillion in Korea, KRW 2.30 trillion in China, KRW 1.52 trillion in the United States, KRW 900.3 billion in India and KRW 1.66 trillion in other regions, with Korea the largest. Electrified products made up 64% of sales in 2024, overtaking mechanical parts, and the share reached 66% in Q2 2026. Management credits high-value products such as the electronic brake (IDB2) and motor-driven power steering (R-EPS) with protecting profitability. Hyundai Motor Group accounts for close to half of sales, followed by Chinese local automakers, a North American EV maker and GM. Of cumulative new orders through September 2026, Hyundai Motor and Kia accounted for 40%, Chinese automakers 34%, Indian automakers 12% and North American automakers 10%. Per the company's Q3 2026 regional figures, Korea sales were KRW 716.5 billion (down 8.6% year on year), China KRW 494.7 billion (down 1.7%), the Americas KRW 634.4 billion (up 0.4%), Europe KRW 192.5 billion (up 3.1%) and India KRW 282.5 billion (up 30.8%). Some analysts view its customer base as more diversified than other domestic Tier 1 suppliers. The subsidiary HL Clemove leads development of next-generation products such as high-performance computers (HPC)."
  },
  "earnings": {
-  "ko": "연간 흐름은 완만한 외형 확대와 얇은 마진의 조합이다. 매출은 2022년 7조 5,162억원에서 2023년 8조 3,931억원, 2024년 8조 8,482억원, 2025년 9조 4,548억원으로 3년 연속 늘었고, 영업이익은 2,481억원 → 2,793억원 → 3,588억원 → 3,571억원으로 2025년에 소폭 뒷걸음쳤다. 영업이익률은 2022~2023년 3.3%에서 2024년 4.1%로 올라섰다가 2025년 3.8%로 되돌아갔다. 지배주주 순이익은 2023년 1,356억원, 2024년 1,299억원, 2025년 1,000억원으로 영업이익 흐름보다 부진했는데, 영업외 항목의 변동성이 컸다는 뜻이다. 분기로 보면 2025년 4분기 영업이익이 797억원(영업이익률 3.2%)으로 저점을 찍은 뒤 2026년 1분기 936억원, 2026년 2분기 1,070억원으로 회복했고, 2026년 2분기 매출 2조 4,953억원은 최근 5개 분기 중 가장 큰 값이다. 순이익 개선 폭이 유난히 컸던 이유는 환산 요인으로, 2025년 2분기에는 371억원의 외환손실이 났지만 2026년 2분기에는 43억원의 외환이익을 기록했고 실제 지배주주 순이익도 2025년 2분기 45억원에서 2026년 2분기 536억원으로 확대됐다. 일회성 요인도 섞여 있는데, 한국투자증권은 2026년 4월 리포트에서 1분기 약 100억원의 일회성 이익이 전자식 주차 브레이크 물량 감소에 따른 보상 성격이었고, 약 190억원의 관세 비용은 전년 이월 환급분과 상쇄돼 손익 영향이 제한적이었다고 분석했다. 재무구조는 개선 방향으로, 부채비율은 2023년 166.8%에서 2024년 163.8%, 2025년 148.2%로 낮아졌고 영업활동현금흐름은 2022년 마이너스에서 2023년 4,294억원, 2024년 4,347억원을 거쳐 2025년 7,209억원으로 크게 늘었다. 다만 매출 9조원대 규모 대비 영업이익률이 4% 안팎에 머물러, 물량보다 제품 믹스가 이익을 좌우하는 구조라는 점은 그대로다.",
-  "en": "The multi-year pattern combines gradual top line expansion with thin margins. Revenue rose for three straight years from KRW 7,516.2bn in 2022 to KRW 8,393.1bn in 2023, KRW 8,848.2bn in 2024 and KRW 9,454.8bn in 2025, while operating profit moved from KRW 248.1bn to KRW 279.3bn, KRW 358.8bn and then slipped slightly to KRW 357.1bn in 2025. The operating margin climbed from 3.3% in 2022 and 2023 to 4.1% in 2024 before easing back to 3.8% in 2025. Net profit attributable to owners of KRW 135.6bn in 2023, KRW 129.9bn in 2024 and KRW 100.0bn in 2025 lagged the operating profit trend, indicating heavy volatility in non-operating items. On a quarterly basis, operating profit bottomed at KRW 79.7bn in the fourth quarter of 2025 (a 3.2% margin), then recovered to KRW 93.6bn in the first quarter of 2026 and KRW 107.0bn in the second, while second quarter 2026 revenue of KRW 2,495.3bn was the largest figure in the quarters shown. The unusually large swing in net profit came from currency effects: the company booked a foreign exchange loss of KRW 37.1bn in the second quarter of 2025 but a gain of KRW 4.3bn in the same quarter of 2026, and net profit attributable to owners widened from KRW 4.5bn to KRW 53.6bn over that span. One-off items were also in the mix; Korea Investment and Securities noted in an April 2026 report that a roughly KRW 10bn one-off gain in the first quarter was compensation for lower than planned electronic parking brake volumes, while about KRW 19bn of tariff costs were offset by carried-over refunds from the prior year, limiting the earnings impact. The balance sheet has been trending better, with the debt-to-equity ratio falling from 166.8% in 2023 to 163.8% in 2024 and 148.2% in 2025, and operating cash flow swinging from negative in 2022 to KRW 429.4bn in 2023, KRW 434.7bn in 2024 and KRW 720.9bn in 2025. Still, with an operating margin near 4% on a revenue base above KRW 9tn, profit remains driven more by product mix than by volume."
+  "ko": "DART 정기보고서 기준 연간 매출은 2022년 7조 5,162억원에서 2025년 9조 4,548억원으로 늘었고, 2023년부터 2025년까지 3년 연속 증가했다. 증가율은 2023년 11.7%, 2024년 5.4%, 2025년 6.9%였다. 영업이익은 2024년 3,588억원(전년 대비 28.5% 증가)으로 정점을 찍은 뒤 2025년 3,571억원(0.5% 감소)으로 소폭 줄었다. 영업이익률은 2022년 3.3%, 2023년 3.3%, 2024년 4.1%, 2025년 3.8%로 2024년 이후 낮아졌다. 지배주주 순이익은 2023년 1,356억원을 정점으로 2024년 1,299억원(4.2% 감소), 2025년 1,000억원(23.0% 감소)으로 2년 연속 감소했다. 비지배지분을 포함한 당기순이익은 2024년 1,582억원에서 2025년 1,228억원으로 줄어 두 값 모두 2025년에 내려갔다. 부채비율은 2022년 157.1%, 2023년 166.8%, 2024년 163.8%에서 2025년 148.2%로 낮아져 네 해 가운데 가장 낮았다. 영업활동 현금흐름은 2022년 -133억원에서 2023년 4,294억원, 2025년 7,209억원으로 늘었다. 분기로 보면 영업이익은 2025년 3분기 942억원, 4분기 797억원에서 2026년 1분기 936억원, 2분기 1,070억원으로 회복된 뒤 3분기 515억원으로 급감했다. 2026년 3분기 매출 2조 3,205억원은 전년 동기와 비슷했지만 지배주주 순이익은 471억원 순손실로 적자 전환했다. 회사는 반도체·원자재 가격 상승과 연구개발비 증가를 원인으로 꼽았고, 보도에서는 외환손익이 614억원 손실로 돌아선 점도 짚였다.",
+  "en": "Per the DART periodic filings, annual revenue rose from KRW 7.52 trillion in 2022 to KRW 9.45 trillion in 2025 and grew for three consecutive years from 2023 to 2025. Growth was 11.7% in 2023, 5.4% in 2024 and 6.9% in 2025. Operating profit peaked at KRW 358.8 billion in 2024, up 28.5%, before easing 0.5% to KRW 357.1 billion in 2025. Operating margin was 3.3% in 2022, 3.3% in 2023, 4.1% in 2024 and 3.8% in 2025, declining after 2024. Owner net income peaked at KRW 135.6 billion in 2023 and then fell two years in a row, to KRW 129.9 billion in 2024 (down 4.2%) and KRW 100 billion in 2025 (down 23.0%). Net income including non-controlling interests fell in 2025 as well, from KRW 158.2 billion to KRW 122.8 billion. The debt ratio dropped from 163.8% in 2024 to 148.2% in 2025, the lowest of the four years. Operating cash flow moved from -KRW 13.3 billion in 2022 to KRW 429.4 billion in 2023 and KRW 720.9 billion in 2025. Quarterly operating profit was KRW 94.2 billion in Q3 2025 and KRW 79.7 billion in Q4 2025, recovered to KRW 93.6 billion in Q1 2026 and KRW 107 billion in Q2 2026, then fell to KRW 51.5 billion in Q3 2026. Q3 2026 revenue of KRW 2.32 trillion was roughly flat, but owner results swung to a KRW 47.1 billion net loss. The company cited higher semiconductor and raw material costs and rising R&D, and news reports also noted a foreign-exchange swing to a KRW 61.4 billion loss."
  },
  "industry": {
-  "ko": "전방 완성차 시장은 성장보다 정체에 가깝다. 2025년 글로벌 자동차 시장은 아시아 중심 회복으로 9,193.5만 대를 기록했고 한국은 168만 대 수준이었다. 2026년 들어서도 물량 환경은 우호적이지 않아, 한국투자증권은 2026년 4월 리포트에서 1분기 글로벌 완성차 생산량이 전년 대비 3.4% 감소했다고 집계했다. 이런 국면에서 부품사의 실적을 가르는 변수는 물량이 아니라 대당 단가와 믹스이며, HL만도가 IDB2·R-EPS 등 전자제어 제품 비중을 끌어올린 배경도 여기에 있다. 관세 환경은 다소 완화됐는데, 메리츠증권은 2026년 4월 자료에서 자동차 품목관세가 25%에서 15%로, 상호관세가 15%에서 10%로 낮아지면서 2026년 연간 관세 영향이 2025년 대비 줄어 약 1,150만달러 수준일 것으로 추정했다. 지역별로는 인도가 새로운 변수로, 푸네 신규 생산기지 가동과 인도 정부의 자동 긴급제동장치 등 ADAS 탑재 의무화 정책 정비로 관련 부품 수요가 늘고 있다. 중국은 경쟁 강도가 가장 높은 시장이지만, 한국투자증권은 2026년 7월 \"한국 부품사들은 대부분 중국에서 철수했지만 HL만도는 현지화 체질 변화에 성공했다\"고 평가했다. 신사업 측면에서 로봇 부품 시장은 성장 기대가 큰 영역으로, 시장조사업체 밸류에이츠 리포트는 글로벌 휴머노이드 로봇용 액추에이터 시장이 2024년 1억 5,000만달러에서 2031년 98억 6,400만달러로 확대될 것으로 전망했으나, 이는 아직 추정 시장이며 공급사 선정은 진행 중이다.",
-  "en": "The downstream vehicle market looks closer to stagnation than growth. In 2025 the global auto market recorded 91.94 million units on an Asia-led recovery, while Korea reached about 1.68 million units. Volume conditions stayed unfriendly into 2026, with Korea Investment and Securities noting in an April 2026 report that global automaker output fell 3.4% year on year in the first quarter. In such a phase, supplier earnings hinge on content per vehicle and mix rather than volume, which is precisely why HL Mando has been raising the weight of electronically controlled products such as IDB2 and R-EPS. The tariff backdrop has eased somewhat; Meritz Securities estimated in an April 2026 note that with the auto product tariff cut from 25% to 15% and the reciprocal tariff from 15% to 10%, the 2026 annual tariff impact should shrink versus 2025 to around USD 11.5m. Regionally, India is a new swing factor, as the start-up of a new plant in Pune and the Indian government's move to mandate ADAS features such as autonomous emergency braking are lifting related component demand. China is the most competitive market, yet Korea Investment and Securities said in July 2026 that \"most Korean suppliers withdrew from China, but HL Mando succeeded in localizing\". On the new business side, robot components carry high growth expectations: research firm Valuates Reports projects the global humanoid robot actuator market to expand from USD 150m in 2024 to USD 9.864bn in 2031, though this remains an estimated market with supplier selection still under way."
+  "ko": "전방시장은 완성차 생산과 판매에 직접 연동된다. 현대차·기아는 2024년 글로벌 판매가 730만 2,451대로 전년 대비 6.7% 늘었다고 2025년 초 보도됐다. 2026년에는 국내 생산 차질로 한국 매출이 줄었고, 중국 내수 둔화로 중국 로컬 완성차 업체 대상 매출도 흔들렸다. 중국 로컬 업체들은 수출을 늘려 성장 동력을 찾고 있지만, HL만도는 주요 수출 업체에 납품하지 않아 수혜가 제한적이라는 분석이 나왔다. 원가 측면에서는 반도체 가격 상승이 가장 큰 변수다. 키움증권은 ADAS 생산에 들어가는 메모리 구매단가 상승분을 고객사에 적기에 정산하지 못하고 있으며, 단기간에 협상력이 바뀔 근거를 찾기 어렵다고 짚었다. 인도에서는 현대차그룹과 현지 완성차 업체의 생산 확대, 자동차 수요 반등, 전기차 보급 정책이 함께 작용한다는 분석이 2025년 11월 iM증권 보고서에 실렸다. 경쟁 측면에서는 국내 다른 1차 부품사보다 고객사 분산이 넓다는 평가가 있다. 2026년 3분기 신규 수주에서 전장 비중이 높아 전장화 흐름은 수주 측면에서 이어지고 있다. 업황은 전장화 확대와 원가 상승이 동시에 나타나는 구간이다.",
+  "en": "Demand in this industry tracks automaker production and sales. Hyundai Motor and Kia's global sales reached 7,302,451 units in 2024, up 6.7% from the prior year, according to a report carried in early 2025. In 2026, production disruptions in Korea reduced Korean sales, and weaker domestic demand in China hit sales to Chinese local automakers. Chinese local makers are expanding exports to find growth, but analysts note HL Mando does not supply the main exporters, which limits its benefit. Semiconductors are the biggest cost variable. Kiwoom Securities noted that memory price increases tied to ADAS production have not been passed through to customers in time, and that it sees little basis for a near-term change in bargaining power. In India, Hyundai Motor Group and local automakers are expanding output, demand is rebounding, and EV policy support is building, according to an iM Securities report from November 2025. On competition, its customer base is more diversified than that of other domestic Tier 1 suppliers. Electrified products were a high share of Q3 2026 new orders, so the shift toward electrification continues on the order side. The sector is in a phase where electrification is expanding while input costs are rising."
  },
  "outlook": {
-  "ko": "회사가 제시한 방향은 완만한 성장과 이익 체력 확보다. HL만도는 2026사업연도 연결 매출액을 9조 6,233억원 수준으로 전망했고, 2026년 2월에는 \"2030년 매출 14조 1,000억원 달성을 목표한다\"고 밝혔다. 수주는 진행형으로, 상반기 누적 수주 5조 8,000억원으로 연간 목표 13조원의 44%를 채웠고 6월 말 수주잔고는 59조원이다. 상반기 신규 수주 구성은 중국 완성차 36%, 현대차·기아 33%, 인도 14%, 북미 12%, 유럽 등 5%였고 전체의 71%가 제동·조향·현가·ADAS 등 전장 제품이었다. 하반기에 대해 회사는 연초 제시한 연간 매출 9조 6,000억원 이상을 무난하게 달성할 것으로 내다봤다. 신사업 일정도 잡혀 있다. 전기 화재 원인인 아크와 과열을 감지하는 센서 'e-해치'는 하반기부터 양산에 들어갈 예정이며, 소프트웨어 사업에서는 올해 기술 검증 10건과 양산 6건을 목표로 하고 있다. 로봇 액추에이터는 2025년 12월 투자자 행사에서 2026년 하반기까지 마스터 모델을 완성하고 2027년 수주, 2028년 양산 개시를 목표로 하는 단계별 로드맵이 제시됐고, 북미 현지 대응과 조기 양산 체제 구축을 위해 확보한 부지를 활용한 단계적 투자를 1,000억~2,000억원 규모로 검토하고 있다. 인도에서는 HL클레무브가 인도 자회사 지분 30%-1주를 현지 부품사 가브리엘 인디아에 약 9,844만달러에 매각해 현지 파트너십을 확대할 계획이다.",
-  "en": "The direction management has laid out is moderate growth plus rebuilt earnings power. HL Mando guided to consolidated 2026 revenue of around KRW 9,623.3bn, and in February 2026 said it targets revenue of KRW 14.1tn by 2030. Order intake is progressing: first half bookings of KRW 5.8tn filled 44% of the KRW 13tn annual target, with backlog at KRW 59tn as of end June. By customer, first half new orders were 36% Chinese automakers, 33% Hyundai and Kia, 14% Indian makers, 12% North American makers and 5% European and others, with 71% of the total in electronic braking, steering, suspension and ADAS products. For the second half, the company said it should comfortably reach the annual revenue target of more than KRW 9.6tn set at the start of the year. New business milestones are also scheduled. The e-Hatch sensor, which detects arcing and overheating behind electrical fires, is slated to enter mass production from the second half, and in software the company targets 10 proof-of-concept projects and six mass production cases this year. For robot actuators, a December 2025 investor event laid out a phased roadmap of completing a master model by the second half of 2026, winning orders in 2027 and starting mass production in 2028, and the company is reviewing phased investment of roughly KRW 100bn to 200bn on land already secured to serve North American customers and build early production capability. In India, HL Klemove plans to sell a 30% minus one share stake in its Indian subsidiary to local supplier Gabriel India for about USD 98.44m to broaden local partnership."
+  "ko": "회사는 2026년 4분기에 대형 프로젝트 수주가 집중된 만큼 연간 수주 목표 달성에 집중하겠다고 밝혔다. 연간 목표 13조원 가운데 9월 말까지 7조 6,000억원이 쌓였고, 나머지는 4분기 대형 수주에 달려 있다. 2026년 상반기에는 현대차·기아의 북미 신차 프로그램에 브레이크 캘리퍼, 전동식 조향장치, ADAS 공급을 확보했다. 중국에서는 IDB2 등 제동 제품과 전자제어 서스펜션, 고성능 컴퓨터 관련 수주를 넓혔다. 신사업 측면에서는 CES 2026에서 액추에이터를 공개해 로보틱스 부품 사업 영역을 넓히고 있다. 미국에서는 로봇 공급망 현지화 요구에 맞춰 미국 생산체제 구축을 추진 중이며, 흥국증권은 이를 중장기 성장 가능성 측면에서 긍정적으로 평가했다. 반면 흥국증권은 원가 부담이 4분기까지 이어질 가능성이 높다고 전망했다. 가격 연동 품목은 고객사 정산 시차가 있어 원가 회수가 예상되지만, PCB와 플라스틱 등은 추가 협상이 필요하다. 연구개발비도 신사업 확대로 단기간에 줄기 어렵다는 전망이 나온다. 다음 확인 지점은 2026년 12월 말 수주 목표 달성 여부와 2026년 4분기 원가 회수 진행 상황이다.",
+  "en": "The company said it will focus on meeting its annual order target, since large projects are concentrated in Q4 2026. Of the KRW 13 trillion annual target, KRW 7.6 trillion had been booked through September, and the remainder depends on large Q4 awards. In the first half of 2026, it secured brake calipers, motor-driven steering and ADAS supply for Hyundai Motor and Kia's new North American models. In China, it expanded orders for braking products such as the IDB2, electronically controlled suspension and high-performance computers. On new businesses, it unveiled an actuator at CES 2026 and is widening its robotics component activities. In the United States, it is pursuing a local production setup in line with demands to localize robot supply chains, and Heungkuk Securities viewed this positively for medium- to long-term growth. Heungkuk Securities, however, expects cost pressure to persist through Q4. Price-linked items should see cost recovery after a lag in customer settlements, while PCB and plastic items still require further negotiation. R&D spending is also expected to stay high in the short term as new businesses expand. The next checkpoints are whether the annual order target is met by the end of December 2026 and how cost recovery progresses in Q4 2026."
  },
  "valuation_comment": {
-  "ko": "주가는 회계상 순자산 가치를 밑도는 구간에서 거래되고 있고, 최근 네 개 분기를 합산한 지배주주 순이익은 2025년 연간치를 웃돌아 이익이 회복 방향으로 움직였다. 시장의 시각은 갈린다. 한국투자증권은 2026년 4월 리포트에서 \"밸류에이션 부담이 크다\"며 투자의견 중립을 유지했으나, 같은 증권사는 2026년 7월 말 중국 사업의 성장세를 반영해 투자의견을 중립에서 매수로, 목표주가를 5만 2,000원으로 상향한다고 밝혔다. 하나증권은 2026년 7월 15일 리포트에서 투자의견 '매수'와 목표주가 6만 9,000원을 유지한다고 밝혔다. 배수 논쟁의 핵심은 로봇 사업이 얼마나 반영돼 있느냐인데, 메리츠증권은 2026년 6월 자료에서 차량 부품 업종의 2026년 평균 주가수익비율이 12.9배인 반면 로봇 부품 업종은 103.5배라고 비교하며 해당 수주가 확인될 경우 기존 차량 부품 사업 가치에 로봇 부품 사업 가치가 더해질 것이라고 전망했다. 배당은 매년 지급되고 있으나 이익 규모 대비 배당성향이 높지 않아, 배당수익률은 국내 대형 배당주 대비 낮은 편에 속한다. 결국 현재 배수를 어떻게 볼지는 본업 영업이익률이 4%대를 지켜내는지, 그리고 로봇 수주가 숫자로 확인되는지에 달려 있다.",
-  "en": "The shares trade below the book value of net assets, while the sum of the last four quarters of net profit attributable to owners exceeds the full-year 2025 figure, meaning profit has moved in a recovering direction. Market views diverge. Korea Investment and Securities kept a Neutral rating in an April 2026 report, saying \"the valuation burden is large,\" yet the same house said in late July 2026 that it was raising its rating from Neutral to Buy and its target price to KRW 52,000 on the strength of the China business. Hana Securities said in a July 15, 2026 report that it maintained a Buy rating and a target price of KRW 69,000. The core of the multiple debate is how much of the robot business is embedded: Meritz Securities compared in a June 2026 note that the 2026 average price-earnings multiple for the auto parts sector is 12.9 times versus 103.5 times for robot components, and projected that if the order is confirmed, robot component value would be added on top of the existing vehicle parts business. Dividends are paid annually but the payout is modest relative to earnings, so the yield sits on the lower side among large Korean dividend payers. Ultimately, how one reads the current multiple depends on whether the core operating margin holds around 4% and whether robot orders show up as actual numbers."
+  "ko": "이익 기준 배수는 2026년 3분기 지배주주 순손실 전환 이후 해석 폭이 넓어졌다. 최근 네 개 분기 기준 지배주주 순이익 합계가 783억원인 만큼 이익 기반 배수는 실적 회복 속도에 민감하다. 순자산 기준으로 보면 주가는 2025년 말 지배주주 지분 2조 7,138억원 대비 할인 구간에 있다. 다년 흐름에서 지배주주 순이익은 2023년을 정점으로 2년 연속 줄어 이익 체력이 정점 대비 낮아진 상태다. 증권가는 3분기 실적 발표 이후 목표주가를 일제히 낮췄다. 흥국증권은 2026년 11월 3일 보고서에서 목표주가를 5만 4,000원으로 낮추면서 투자의견 '매수'를 유지했다고 밝혔다. 삼성증권은 2026년 11월 초 목표주가를 6만 5,000원에서 4만 2,000원으로 낮추고 투자의견을 '매수'에서 '홀드'로 낮췄다고 제시했다. 키움증권과 한국투자증권은 4만원을 가장 낮은 목표가로 제시했다고 보도됐다.",
+  "en": "Earnings-based multiples became harder to read after the swing to an owner net loss in Q3 2026. Owner net income over the most recent four quarters totaled KRW 78.3 billion, so earnings-based multiples are sensitive to how fast profits recover. On a book-value basis, the share price sits at a discount to owner equity of KRW 2.71 trillion at year-end 2025. Owner net income peaked in 2023 and then fell two years in a row, leaving earnings power below that peak. Analysts cut target prices after the Q3 results. Heungkuk Securities, in a report dated November 3, 2026, lowered its target to KRW 54,000 and kept a 'Buy' rating. Samsung Securities, in early November 2026, cut its target from KRW 65,000 to KRW 42,000 and lowered its rating from 'Buy' to 'Hold'. Media reports said Kiwoom Securities and Korea Investment & Securities set the lowest targets, at KRW 40,000."
  },
  "bull": [
   {
    "title": {
-    "ko": "고부가 전장 믹스가 마진을 방어",
-    "en": "High-Value Electronics Mix Defends Margin"
+    "ko": "전장 수주가 외형을 떠받친다",
+    "en": "Electrified orders underpin the top line"
    },
    "body": {
-    "ko": "완성차 생산이 정체된 국면에서도 2026년 2분기 영업이익은 1,070억원으로 직전 분기 936억원, 2025년 4분기 797억원을 웃돌았다. 회사는 반도체와 원자재 가격 인상 부담에도 신흥시장 매출 증가와 유럽 지역 공헌이익 확대, 원가 회수 활동으로 수익성을 방어했다고 설명했고, IDB2와 R-EPS 확대로 전장 비중이 66%까지 올랐다. 물량이 아닌 제품 단가로 이익을 만드는 구조가 자리 잡으면 생산 사이클 둔화의 충격을 일부 흡수할 수 있다. 한국투자증권은 2026년 7월 말 저가 수주 경쟁보다 IDB 2세대와 전동식 조향장치 등 고부가 제품 비중을 늘린 전략이 수익성 개선으로 이어지고 있다고 평가했다.",
-    "en": "Even with vehicle output flat, second quarter 2026 operating profit of KRW 107.0bn topped the prior quarter's KRW 93.6bn and the fourth quarter 2025 trough of KRW 79.7bn. The company said it defended profitability through emerging market growth, wider contribution profit in Europe and cost recovery activity despite higher semiconductor and raw material prices, while expansion of IDB2 and R-EPS lifted the electronics share to 66%. If profit generation rests on content value rather than volume, the shock from a slowing production cycle can be partly absorbed. Korea Investment and Securities assessed in late July 2026 that a strategy of raising the share of high-value products such as second generation IDB and electric power steering, instead of chasing low-price orders, is feeding through to better profitability."
+    "ko": "2026년 9월 말 누적 신규 수주 7조 6,000억원 가운데 전장 제품이 76%를 차지했다. 연간 목표 13조원 대비 59%를 채웠고 수주잔고는 58조원이다. 현대차 북미 신차 프로그램에 브레이크 캘리퍼, 전동식 조향, ADAS 공급이 확보된 점도 수주 측면의 근거다.",
+    "en": "Electrified products made up 76% of cumulative new orders through September 2026. The company has booked 59% of its KRW 13 trillion annual target, and the backlog stands at KRW 58 trillion. Supply for Hyundai Motor's new North American programs covering brake calipers, electric steering and ADAS adds to the order base."
    }
   },
   {
    "title": {
-    "ko": "수주잔고 59조원과 지역 분산",
-    "en": "KRW 59tn Backlog and Regional Spread"
+    "ko": "인도·유럽 등 신흥 지역 성장",
+    "en": "Growth in India and Europe"
    },
    "body": {
-    "ko": "6월 말 수주잔고는 59조원으로 2025년 연간 매출의 여러 배에 해당하는 규모다. 상반기 신규 수주에서 중국 완성차가 36%로 가장 컸고 현대차·기아 33%, 인도 14%, 북미 12%로 특정 고객 편중이 완화됐다. 2026년 2분기에도 인도가 17.7%, 유럽이 16.5% 증가한 반면 한국은 2.3%, 미주는 1.4% 감소해, 한 지역의 부진을 다른 지역이 상쇄하는 구도가 실제로 작동했다. 다만 수주잔고는 매출로 인식되기까지 수년이 걸리고 고객사 물량 계획 변경에 따라 조정될 수 있다.",
-    "en": "The order backlog stood at KRW 59tn at the end of June, several times annual 2025 revenue. In first half new orders, Chinese automakers were the largest at 36%, followed by Hyundai and Kia at 33%, India at 14% and North America at 12%, easing single-customer concentration. In the second quarter of 2026 as well, India grew 17.7% and Europe 16.5% while Korea fell 2.3% and the Americas 1.4%, so one region genuinely offset weakness in another. Backlog, however, takes years to convert into revenue and can be adjusted when customers change volume plans."
+    "ko": "2026년 3분기 인도 매출은 2,825억원으로 30.8% 늘어 분기 기준 최고치를 기록했다. 2분기에도 인도 매출은 2,657억원으로 17.7% 증가했다. 유럽 매출은 1,925억원으로 3.1% 늘었다. 현대차·기아와 인도 현지 완성차 업체의 공급 물량 확대가 배경으로 꼽혔다.",
+    "en": "India sales reached KRW 282.5 billion in Q3 2026, up 30.8% and a quarterly high. India sales also rose 17.7% to KRW 265.7 billion in Q2 2026. European sales increased 3.1% to KRW 192.5 billion. Higher supply to Hyundai Motor, Kia and local Indian automakers was cited as the driver."
    }
   },
   {
    "title": {
-    "ko": "로봇 액추에이터라는 선택지",
-    "en": "The Robot Actuator Option"
+    "ko": "로봇·신사업으로 영역 확장",
+    "en": "Expansion into robotics and new businesses"
    },
    "body": {
-    "ko": "HL만도는 2025년 4분기 글로벌 로봇 기업으로부터 차세대 4족 보행 로봇용 액추에이터를 수주했고 해당 제품은 이르면 2027년 양산 예정이다. QDD·PRS·하모닉 방식의 액추에이터 9종을 개발 중이며 시제품 제작을 마치고 하반기 마스터 모델과 미국 시범 생산라인 완성을 계획하고 있다. 하나증권은 2026년 7월 리포트에서 기존 자동차 밸류체인을 활용한 원가 절감 잠재력, 모듈화·자동화 기반 양산 경쟁력, 미국 내 생산기지 보유를 차별화 요인으로 평가했다. 자동차 부품에서 축적한 모터·감속기·제어기 통합 역량이 로봇 관절로 이전 가능한지가 관건이다.",
-    "en": "HL Mando won an order from a global robotics company in the fourth quarter of 2025 for next-generation quadruped robot actuators, with mass production slated for 2027 at the earliest. It is developing nine actuator types across QDD, PRS and harmonic architectures, has finished prototypes, and plans to complete a master model and a pilot production line in the United States in the second half. Hana Securities said in a July 2026 report that cost reduction potential from the existing auto value chain, mass production capability built on modularization and automation, and ownership of a US production base are differentiators. The key question is whether integration skills in motors, reducers and controllers built in auto parts truly transfer to robot joints."
+    "ko": "CES 2026에서 액추에이터를 공개하며 로보틱스 부품 사업으로 영역을 넓히고 있다. 미국 로봇 공급망 현지화 요구에 대응하는 미국 생산체제 구축도 추진 중이다. 흥국증권은 미국 로봇 시장 진출이 중장기 성장 가능성 측면에서 긍정적이라고 평가했다. 다만 신사업이 실적에 기여하는 규모는 아직 뚜렷한 수치로 드러나지 않았다.",
+    "en": "HL Mando unveiled an actuator at CES 2026 and is widening its robotics component business. It is also pursuing US production capacity to meet demand for localized robot supply chains. Heungkuk Securities viewed entry into the US robotics market positively for medium- to long-term growth. The contribution of these new businesses to earnings has not yet appeared in clear figures."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "4% 안팎에 갇힌 영업이익률",
-    "en": "Operating Margin Stuck Near 4%"
+    "ko": "3분기 수익성 급락",
+    "en": "Sharp Q3 profit decline"
    },
    "body": {
-    "ko": "매출이 2022년 7조 5,162억원에서 2025년 9조 4,548억원으로 늘어나는 동안 영업이익률은 3.3%에서 3.8% 사이를 오갔고, 2024년 4.1%가 최고치였다. 2025년에는 매출이 6% 넘게 늘었는데도 영업이익은 3,588억원에서 3,571억원으로 오히려 줄었다. 키움증권은 2026년 4월 자료에서 본업의 연간 영업이익률 4%대 방어 가능성 역시 가시성 확대가 필요해졌다고 지적했다. 완성차의 원가 인하 압박이 구조화된 산업 특성상, 믹스 개선분이 판가 인하로 상쇄될 위험은 상존한다.",
-    "en": "While revenue rose from KRW 7,516.2bn in 2022 to KRW 9,454.8bn in 2025, the operating margin oscillated between 3.3% and 3.8%, peaking at 4.1% in 2024. In 2025, despite revenue growth above 6%, operating profit actually slipped from KRW 358.8bn to KRW 357.1bn. Kiwoom Securities noted in an April 2026 note that visibility on defending an annual operating margin in the 4% range in the core business also needs to improve. Given structural cost-down pressure from automakers, there is a standing risk that mix gains get offset by price concessions."
+    "ko": "2026년 3분기 영업이익은 515억원으로 45.3% 줄었고, 영업이익률은 2025년 3분기 4.1%에서 2.2%로 1.9%포인트 낮아졌다. 증권가는 시장 영업이익 전망치를 크게 밑돈 실적이라고 평가했다. 지배주주 순이익은 471억원 순손실로 적자 전환했다. 외환손익이 614억원 손실로 돌아선 것도 순이익 하락에 영향을 줬다.",
+    "en": "Q3 2026 operating profit fell 45.3% to KRW 51.5 billion, and the operating margin dropped 1.9 percentage points from 4.1% in Q3 2025 to 2.2%. Brokers described the result as falling well short of market operating profit forecasts. Owner net income swung to a KRW 47.1 billion net loss. The foreign-exchange swing to a KRW 61.4 billion loss also weighed on net income."
    }
   },
   {
    "title": {
-    "ko": "로봇 매출은 아직 100억원대",
-    "en": "Robot Revenue Still in the Tens of Billions of Won"
+    "ko": "메모리 원가 정산 지연",
+    "en": "Delayed memory cost pass-through"
    },
    "body": {
-    "ko": "하나증권은 2026년 7월 리포트에서 현재 4족보행 로봇용 액추에이터 공급 규모가 100억원대 수준이라고 밝혔다. 9조원대 매출 회사의 손익에 유의미한 기여를 하기까지는 상당한 시차가 있다는 뜻이다. 메리츠증권은 2026년 6월 자료에서 미국 월드모델 개발업체의 3세대 휴머노이드 액추에이터 수주를 목표했으나 3세대 대량 양산 준비가 지연되며 목표가 4세대로 변경됐고, 입찰 결과 확인은 빠르면 2027년 상반기말로 예상된다고 전했다. 키움증권은 2026년 4월 2027년 중 휴머노이드 로봇 관절 액추에이터 비딩에 참여하기 시작한다는 HL만도의 타임라인을 빠른 편이라 평가하기는 객관적으로 어렵다고 지적했다.",
-    "en": "Hana Securities said in a July 2026 report that current supply of quadruped robot actuators is only in the tens of billions of won. That implies a long lag before any meaningful contribution to the earnings of a company with revenue above KRW 9tn. Meritz Securities reported in June 2026 that the company had targeted actuator supply for a US world-model developer's third generation humanoid, but the target shifted to the fourth generation as third generation volume preparation was delayed, with bidding results expected at the earliest by the end of the first half of 2027. Kiwoom Securities noted in April 2026 that it is objectively hard to call HL Mando's timeline of beginning humanoid joint actuator bidding during 2027 an early one."
+    "ko": "메모리 반도체 가격 인상분을 고객사에 적기에 정산하지 못하는 구조가 드러났다는 분석이 나왔다. 흥국증권은 3분기 원가 부담을 약 420억원으로 추정했고, 연구개발비는 전년 동기 대비 235억원 늘었다고 짚었다. PCB와 플라스틱 등 추가 협상이 필요한 품목 때문에 4분기까지 원가 부담이 이어질 가능성이 높다고 봤다.",
+    "en": "Analysts say the structure exposed by the Q3 results is that memory price increases are not being passed to customers in time. Heungkuk Securities estimated the Q3 cost burden at about KRW 42 billion and noted R&D spending rose KRW 23.5 billion year on year. It views the burden as likely to persist through Q4 because PCB and plastic items still need negotiation."
    }
   },
   {
    "title": {
-    "ko": "영업외 변동성과 낮아진 순이익",
-    "en": "Non-Operating Volatility and Lower Net Profit"
+    "ko": "한국·중국 매출 둔화",
+    "en": "Slower sales in Korea and China"
    },
    "body": {
-    "ko": "지배주주 순이익은 2023년 1,356억원에서 2024년 1,299억원, 2025년 1,000억원으로 3년 연속 줄었고, 2025년 2분기에는 45억원까지 떨어진 적도 있다. 환율과 금융자산 평가가 분기 손익을 크게 흔든다는 뜻이다. 특히 HL클레무브가 2022년 투자한 중국 자율주행 스타트업 iMotion의 주가 등락에 따른 평가손익 변동성이 수년째 지속되며 영업외손실 확대에 기여했고, 지분 청산을 통한 순이익 변동성 안정화 요구가 아직 해결되지 않은 과제로 남아 있다는 지적이 있다. 영업이익이 개선돼도 순이익이 같은 폭으로 따라오지 않을 수 있는 구조다.",
-    "en": "Net profit attributable to owners fell for three straight years from KRW 135.6bn in 2023 to KRW 129.9bn in 2024 and KRW 100.0bn in 2025, and in the second quarter of 2025 dropped as low as KRW 4.5bn. Currency moves and financial asset valuation swing quarterly results heavily. In particular, it has been pointed out that valuation swings tied to the share price of iMotion, a Chinese autonomous driving startup HL Klemove invested in during 2022, have persisted for years and added to non-operating losses, and calls to stabilize net profit volatility by exiting the stake remain unresolved. In other words, an improving operating line may not translate one-for-one into net profit."
+    "ko": "2026년 3분기 한국 매출은 7,165억원으로 8.6% 줄었고, 현대차·기아의 국내 생산 감소와 일부 생산 차질이 영향을 줬다. 중국 매출은 4,947억원으로 1.7% 줄었으며, 중국 로컬 OEM향 매출은 흥국증권 보고서 기준 16% 감소했다. 중국 내수 부진이 이어지며 중국 지역 단기 성장 가시성이 낮아졌다는 평가다.",
+    "en": "Korea sales fell 8.6% to KRW 716.5 billion in Q3 2026, reflecting lower domestic production and some production disruptions at Hyundai Motor and Kia. China sales dropped 1.7% to KRW 494.7 billion, and sales to Chinese local OEMs fell 16% according to a Heungkuk Securities report. Weak domestic demand in China has reduced near-term growth visibility there."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "전방 수요·고객 집중",
-    "en": "Downstream Demand and Customer Concentration"
+    "ko": "원가·정산 리스크",
+    "en": "Cost and settlement risk"
    },
    "body": {
-    "ko": "부품 매출의 기반은 결국 완성차 생산 물량이다. 키움증권은 2026년 4월 자료에서 2위 고객사인 북미 순수전기차 선도 업체의 연간 생산량이 전년 대비 4.2% 줄어든 158만 대로 예상되고, 하반기로 갈수록 주요 시장의 친환경차 보조금 소진에 따른 볼륨 부진이 부담으로 가중될 것이라고 전망했다. 2026년 2분기 한국 매출은 현대차·기아 국내 생산 감소로 2.3% 줄었다. 상위 고객사의 생산 계획 변경이 곧바로 가동률과 고정비 부담으로 이어지는 구조다.",
-    "en": "Component revenue ultimately rests on automaker production volume. Kiwoom Securities projected in an April 2026 note that the second largest customer, a North American battery electric vehicle leader, would produce 1.58 million units this year, down 4.2% year on year, and that volume weakness from the exhaustion of green vehicle subsidies in major markets would weigh more heavily into the second half. Korean revenue in the second quarter of 2026 fell 2.3% on lower domestic output at Hyundai and Kia. Changes in top customers' production plans feed directly into utilization rates and fixed cost burden."
+    "ko": "메모리 가격이 올라도 고객사 정산이 늦으면 수익성이 흔들린다. 2026년 3분기 영업이익률은 2.2%로 낮아졌다. 원가 회수 시차가 길어지면 2026년 4분기 이후에도 이익률 부담이 이어질 수 있다. 연구개발비도 신사업과 차세대 제품 확대로 단기간에 줄기 어렵다는 전망이 있다.",
+    "en": "Even when memory prices rise, profitability is hit if customer settlements lag. The operating margin fell to 2.2% in Q3 2026. If the recovery lag stretches, margin pressure could continue after Q4 2026. R&D spending is also expected to stay elevated in the short term as new and next-generation products expand."
    }
   },
   {
    "cat": {
-    "ko": "원가·관세·환율",
-    "en": "Input Costs, Tariffs and Currency"
+    "ko": "고객사 집중 리스크",
+    "en": "Customer concentration risk"
    },
    "body": {
-    "ko": "회사는 2026년 2분기에도 반도체와 원자재 가격 인상 부담이 있었다고 설명했다. ADAS 제품용 반도체가 달러로 매입되는 만큼 환율 방향에 따라 원가 부담이 달라지며, 키움증권은 2026년 4월 달러로 매입되는 ADAS 제품용 반도체 원재료비 상승 부담이 수익성 개선을 제약한다고 지적했다. 관세는 2026년 들어 완화 방향이지만 정책 변수인 만큼 재차 강화될 여지도 있고, 실제로 2026년 1분기에도 관세 비용이 발생한 바 있다. 환율은 영업이익과 순이익 양쪽에 서로 다른 방향으로 작용할 수 있다.",
-    "en": "The company said semiconductor and raw material price increases were a burden again in the second quarter of 2026. Since ADAS semiconductors are purchased in dollars, cost pressure shifts with the exchange rate, and Kiwoom Securities noted in April 2026 that rising dollar-denominated semiconductor input costs for ADAS products constrain margin improvement. Tariffs have eased in 2026 but remain a policy variable that could tighten again, and tariff costs were indeed incurred in the first quarter of 2026. Currency can work in opposite directions on operating profit and net profit."
+    "ko": "현대차·기아는 2026년 9월 말 누적 신규 수주에서 40%를 차지했다. 2023년 실적 보도에서는 현대차그룹사 매출이 전체의 48% 가량으로 소개됐다. 국내 생산 차질이나 북미 판매 변동이 곧바로 실적에 반영되는 구조다. 고객 다변화가 진행 중이지만 현대차그룹 의존도는 여전히 높은 편이다.",
+    "en": "Hyundai Motor and Kia accounted for 40% of cumulative new orders through September 2026. A 2024 report on 2023 results cited Hyundai Motor Group affiliates as about 48% of sales. Domestic production disruptions or North American sales swings pass through quickly to results. Customer diversification is under way, but dependence on Hyundai Motor Group remains high."
    }
   },
   {
    "cat": {
-    "ko": "신사업 투자 집행과 경쟁",
-    "en": "New Business Capex and Competition"
+    "ko": "환율·외환손익 리스크",
+    "en": "Currency and FX-gain/loss risk"
    },
    "body": {
-    "ko": "로봇 액추에이터는 북미 조기 양산 체제 구축을 위해 1,000억~2,000억원 규모의 단계적 투자가 검토되는 사업으로, 수주가 확정되기 전 선투자 성격이 강하다. 경쟁도 이미 시작돼 현대모비스가 2025년 8월 휴머노이드 로봇 액추에이터 시장 진출을 선언했고, 중국 부품사와의 원가 경쟁도 변수다. 투자 대비 회수 시점이 2027년 수주, 2028년 양산이라는 로드맵에 걸려 있어, 일정이 밀릴 경우 감가상각과 연구개발비가 먼저 손익에 반영될 수 있다.",
-    "en": "The robot actuator business involves phased investment of roughly KRW 100bn to 200bn under review to build early mass production capability in North America, which is largely upfront spending ahead of confirmed orders. Competition has already begun, with Hyundai Mobis declaring entry into the humanoid robot actuator market in August 2025, and cost competition from Chinese suppliers is another variable. Payback hinges on the roadmap of orders in 2027 and mass production in 2028, so any slippage means depreciation and R&D costs hit the income statement first."
+    "ko": "2026년 3분기 외환손익은 614억원 손실로 전환됐다는 보도가 나왔다. 2025년 3분기에는 164억원 이익이었다. 영업이익과 별개로 순이익을 흔드는 변수다. 해외 매출 비중이 높은 구조라 환율 변동 노출이 크다.",
+    "en": "Reports said the foreign-exchange result swung to a KRW 61.4 billion loss in Q3 2026. It had been a KRW 16.4 billion gain in Q3 2025. The line sits apart from operating profit but can move net income. With most sales generated outside Korea, exposure to exchange-rate moves is large."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 10월 말",
-    "en": "Late October 2026"
+    "ko": "2026년 12월 말",
+    "en": "End of December 2026"
    },
    "what": {
-    "ko": "3분기 실적 발표와 컨퍼런스콜. 2026년 2분기 1,070억원까지 회복한 영업이익과 4% 초반 영업이익률이 유지되는지, 그리고 회사가 언급한 연간 매출 9조 6,000억원 이상 달성 경로가 유효한지 확인 대상이다.",
-    "en": "Third quarter results and the earnings call. The checks are whether operating profit, which recovered to KRW 107.0bn in the second quarter of 2026, and a margin in the low 4% range hold, and whether the path to the annual revenue target of more than KRW 9.6tn the company cited remains intact."
+    "ko": "연간 신규 수주 목표 13조원 대비 누적 실적이 얼마나 채워지는지 확인하는 지점이다. 회사는 4분기에 대형 프로젝트 수주가 집중된다고 밝혔다. 목표 달성 여부는 전장 수주 흐름을 가늠하는 기준이다.",
+    "en": "This is the point to check how far cumulative orders reach against the KRW 13 trillion annual target. The company said large projects are concentrated in Q4. Whether the target is met is the benchmark for the electrified order trend."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기",
-    "en": "Fourth quarter 2026"
+    "ko": "2027년 초",
+    "en": "Early 2027"
    },
    "what": {
-    "ko": "누적 수주가 연간 목표 13조원에 얼마나 근접하는지와 전장 제품 비중 추이. 상반기 44% 달성이었던 만큼 하반기 수주 속도가 2027년 이후 매출 가시성을 좌우한다.",
-    "en": "How close cumulative bookings get to the KRW 13tn annual target, and the trend in the electronics share of orders. With 44% achieved in the first half, the second half booking pace determines revenue visibility from 2027 onward."
+    "ko": "2026년 4분기 잠정 실적 발표 시점이다. 영업이익률이 3분기의 2.2%에서 회복되는지, 메모리 등 원가의 고객사 정산이 진행됐는지가 확인 지점이다. 흥국증권은 4분기까지 원가 부담이 이어질 가능성이 높다고 전망했다.",
+    "en": "This is when Q4 2026 provisional results are expected. The checkpoints are whether the operating margin recovers from 2.2% in Q3 and whether memory cost settlements with customers have progressed. Heungkuk Securities expects cost pressure to persist through Q4."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 중",
-    "en": "During the second half of 2026"
+    "ko": "2027년 3월 말까지",
+    "en": "By the end of March 2027"
    },
    "what": {
-    "ko": "로봇 사업의 물리적 진척 확인. 고객 요구를 반영한 마스터 모델 완성과 미국 내 시범 생산라인 가동이 예정대로 이뤄지는지, e-해치 센서 양산 개시 여부도 함께 볼 대목이다.",
-    "en": "Physical progress in the robot business. Watch whether the master model reflecting customer requirements is completed and the pilot production line in the United States starts up on schedule, along with the start of mass production for the e-Hatch sensor."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 2월 초",
-    "en": "Early February 2027"
-   },
-   "what": {
-    "ko": "2026년 연간 실적 확정과 2027년 가이던스 제시. 2025년 3.8%였던 연간 영업이익률이 개선됐는지, 2030년 매출 14조 1,000억원 목표를 향한 중간 경로가 어떻게 갱신되는지가 관찰 포인트다.",
-    "en": "Confirmation of full-year 2026 results and 2027 guidance. Key observations are whether the annual operating margin improved from 3.8% in 2025 and how the interim path toward the 2030 revenue goal of KRW 14.1tn is updated."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 상반기말",
-    "en": "End of the first half of 2027"
-   },
-   "what": {
-    "ko": "메리츠증권이 2026년 6월 자료에서 예상한 북미 업체 4세대 휴머노이드 액추에이터 입찰 결과 확인 시점. 실제 공급사 선정 여부가 로봇 사업의 손익 기여 시작 시점을 가른다.",
-    "en": "The point at which, per a June 2026 Meritz Securities note, the bidding result for a North American company's fourth generation humanoid actuator is expected to be confirmed. Actual supplier selection determines when the robot business begins contributing to earnings."
+    "ko": "2026년 사업보고서(DART 정기보고서) 제출 기한이다. 연간 매출, 영업이익, 지배주주 순이익과 2026년 말 부채비율이 확정 수치로 공시된다. 2026년 4분기 잠정치와 확정치의 차이도 함께 확인할 지점이다.",
+    "en": "This is the deadline for the 2026 annual report (DART periodic filing). Annual revenue, operating profit, owner net income and the year-end 2026 debt ratio will be disclosed as confirmed figures. The gap between Q4 2026 provisional and confirmed numbers is also a point to check."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "HL만도의 최근 실적은 '물량 없는 성장'의 전형이다. 완성차 생산이 정체된 환경에서 매출은 2022년 7조 5,162억원에서 2025년 9조 4,548억원으로 늘었지만 영업이익률은 3%대 중후반에 머물렀고, 2026년 들어 2분기 영업이익 1,070억원까지 회복하며 방향은 개선 쪽으로 돌아섰다. 이 회복의 동력은 IDB2와 R-EPS 확대에 따른 전장 비중 66%와 중국·인도·유럽의 지역 분산이며, 여기에 59조원의 수주잔고가 중기 매출 기반을 받치고 있다. 반대편에는 얇은 마진, 환율·금융자산 평가에 흔들리는 순이익, 그리고 완성차의 구조적 원가 인하 압박이 있다. 시장의 관심이 쏠린 로봇 액추에이터는 현재 공급 규모가 100억원대로 손익 기여가 아직 미미하고, 2027년 수주·2028년 양산이라는 로드맵이 지켜지는지를 지켜봐야 하는 단계다. 증권가 시각도 통일돼 있지 않아, 같은 실적을 두고 밸류에이션 부담을 지적한 리포트와 중국 사업의 체질 변화를 높이 평가한 리포트가 몇 달 간격으로 나왔다. 결국 본업 영업이익률의 4%대 안착과 로봇 수주의 실물 확인이라는 두 가지 사실이 확인되는지가 다음 국면을 가르는 기준이 될 것이다. 본 리포트는 정보 제공을 목적으로 하며 매수·매도 의견을 포함하지 않는다.",
-   "en": "HL Mando's recent results are a textbook case of growth without volume. With automaker output flat, revenue rose from KRW 7,516.2bn in 2022 to KRW 9,454.8bn in 2025 while the operating margin stayed in the mid-to-high 3% range, and in 2026 the direction turned better as second quarter operating profit recovered to KRW 107.0bn. The drivers of that recovery are an electronics share of 66% on wider IDB2 and R-EPS adoption plus regional spread across China, India and Europe, supported by an order backlog of KRW 59tn underpinning the medium-term revenue base. On the other side sit thin margins, net profit that swings with currency and financial asset valuation, and structural cost-down pressure from automakers. The robot actuator business drawing market attention currently supplies only tens of billions of won, so its earnings contribution is still negligible, and the stage now is watching whether the roadmap of orders in 2027 and mass production in 2028 holds. Brokerage views are not aligned either, with reports flagging valuation burden and reports praising the structural change in the China business appearing only months apart on the same set of numbers. Ultimately, the next phase will be defined by two verifiable facts: whether the core operating margin settles in the 4% range, and whether robot orders materialize in physical form. This report is for information purposes and contains no buy or sell recommendation."
+   "ko": "HL만도는 제동·조향·현가와 ADAS를 아우르는 전장 중심 자동차 부품사로, 2023년부터 2025년까지 매출이 3년 연속 증가해 2025년 9조 4,548억원에 이르렀다. 수익성은 영업이익률이 2022년 3.3%에서 2024년 4.1%로 오른 뒤 2025년 3.8%로 낮아졌고, 2026년 3분기에는 2.2%까지 내려갔다. 강세 요인은 2026년 9월 말 누적 신규 수주 7조 6,000억원(목표의 59%)과 전장 비중 상승, 인도 등 신흥 지역 성장이다. 약세 요인은 메모리 등 반도체 원가의 고객사 정산 지연, 국내와 중국의 생산·내수 부진, 외환손익 악화다. 지배주주 순이익은 2023년 정점 이후 2년 연속 감소했고 2026년 3분기에는 순손실로 전환했다. 증권가는 3분기 실적 이후 목표주가를 낮췄고 일부는 투자의견을 하향했다. 두 흐름 가운데 어디에 무게를 둘지는 수주 성장을 볼지 원가 부담을 볼지에 따라 달라진다. 다음 확인 지점은 2026년 12월 말 수주 목표 달성, 2027년 초 4분기 원가 회수 진행, 2027년 3월 말까지 제출될 2026년 사업보고서다.",
+   "en": "HL Mando is an electrified-focused automotive parts maker spanning braking, steering, suspension and ADAS, and sales rose for three consecutive years from 2023 to 2025, reaching KRW 9.45 trillion in 2025. Operating margin rose from 3.3% in 2022 to 4.1% in 2024 before easing to 3.8% in 2025, and fell to 2.2% in Q3 2026. Strengths include cumulative new orders of KRW 7.6 trillion through September 2026 (59% of the annual target), a rising electrified share and growth in India and other emerging markets. Weaknesses include delayed pass-through of memory and other chip costs to customers, weak production and demand in Korea and China, and a worse foreign-exchange result. Owner net income fell two years in a row after its 2023 peak and swung to a net loss in Q3 2026. Brokers cut target prices after the Q3 results, and some lowered their ratings. Which side carries more weight depends on whether order growth or cost pressure is viewed as dominant. The next checkpoints are meeting the order target by the end of December 2026, cost recovery progress in Q4 2026, and the 2026 annual report due by the end of March 2027."
   }
  },
  "sources": [
-  "https://biz.heraldcorp.com/article/10826168",
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=204320",
-  "https://www.hlmando.com/ko/hl-mando/ir2.do",
-  "https://www.newsquest.co.kr/news/articleView.html?idxno=269862",
-  "https://alphasquare.co.kr/home/stock-summary?code=204320",
-  "https://m.irgo.co.kr/IR-COMP/204320/%EB%A7%8C%EB%8F%84-%EA%B8%B0%EC%97%85%EC%A0%95%EB%B3%B4",
-  "http://www.bondweb.co.kr/_research/downloadPage.asp?number=898053&gn=1",
-  "https://truefriend.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=154874",
-  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=05654726645519768",
-  "https://www.etoday.co.kr/news/view/2609434",
-  "https://buffettlab.co.kr/news/view.php?idx=51892",
-  "https://stock1.brokdam.com/hl%EB%A7%8C%EB%8F%84-%EC%A3%BC%EA%B0%80-%EC%A0%84%EB%A7%9D-2025%EF%BD%9C-%EB%B0%B0%EB%8B%B9%EA%B8%88%C2%B7%EC%8B%A4%EC%A0%81%C2%B7%EC%88%98%EA%B8%89-%EC%B4%9D%EC%A0%95%EB%A6%AC-%EF%BD%9C-%EB%A1%9C/",
-  "https://stockhandbook.blog/2026/06/18/hl%EB%A7%8C%EB%8F%84-4/",
-  "https://www.bondweb.co.kr/_research/downloadPage.asp?number=845868&gn=1",
-  "https://file.hanaw.com/download/research/FileServer/WEB/industry/enterprise/2026/04/29/HLMando_260430_1Q26Review.pdf",
-  "https://www.thebell.co.kr/front/newsview.asp?key=202602050852213560104065",
+  "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=711494",
+  "https://www.vegannews.co.kr/news/article.html?no=398489",
+  "https://www.seoulfn.com/news/articleView.html?idxno=641524",
+  "https://www.ddaily.co.kr/page/view/2026103112182320941",
+  "https://www.job-post.co.kr/news/articleView.html?idxno=236005",
+  "https://www.kmjournal.net/news/articleView.html?idxno=14077",
+  "http://www.ksdaily.co.kr/news/articleView.html?idxno=111364",
   "http://www.ftoday.co.kr/news/articleView.html?idxno=363312",
-  "https://www.irobotnews.com/news/articleView.html?idxno=47694"
+  "https://www.hlmando.com/upload/mando/regularReport/1742372591759.pdf",
+  "https://file.alphasquare.co.kr/media/pdfs/company-report/_25072330-204320.pdf",
+  "https://news.nate.com/view/20260730n32250",
+  "https://needinfo.co.kr/hl%EB%A7%8C%EB%8F%84-%EC%A3%BC%EA%B0%80-%EC%A0%84%EB%A7%9D-2026%EB%85%84-hl%EB%A7%8C%EB%8F%84-%EB%AA%A9%ED%91%9C%EC%A3%BC%EA%B0%80-%EB%A1%9C%EB%B4%87-%EC%95%A1%EC%B6%94%EC%97%90%EC%9D%B4%ED%84%B0/",
+  "https://dealsite.co.kr/articles/117651",
+  "https://biz.heraldcorp.com/article/10826168",
+  "https://www.samsungpop.com/common.do?cmd=down&contentType=application%2Fpdf&inlineYn=Y&saveKey=research.pdf&fileName=2010%2F2025042516572859K_02_03.pdf",
+  "http://www.lkp.news/news/articleView.html?idxno=67860"
  ],
  "v": 2,
- "model": "claude-opus-5",
+ "model": "claude-haiku-5-5",
  "ticker": "204320",
  "name": "HL만도",
  "name_en": "HL Mando CO.,LTD",
@@ -233,11 +211,11 @@
   "자동차"
  ],
  "market": "코스피",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 05:28",
- "dataDate": "20260904",
+ "reportDate": "2026-11-16",
+ "reportTs": "2026-11-16 20:23",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-09-04",
+  "asOf": "2026-11-16",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -307,12 +285,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 2400873734426,
-    "op": 104101108144,
-    "np_owner": 4493892434
-   },
-   {
     "q": "2025Q3",
     "rev": 2321277920316,
     "op": 94152368623,
@@ -335,29 +307,36 @@
     "rev": 2495284875900,
     "op": 107018119504,
     "np_owner": 53643976032
+   },
+   {
+    "q": "2026Q3",
+    "rev": 2320530414555,
+    "op": 51537793008,
+    "np_owner": -47056957161
    }
   ],
   "valuation": {
-   "price": 48500,
-   "mcap": 2.2774,
+   "price": 34300,
+   "mcap": 1.6106,
    "shares": 46957120,
    "total_shares": 46957120,
-   "wavg_shares": 46928924,
-   "per": 13.468,
-   "eps": 3601,
-   "pbr": 0.7737,
-   "bps": 62683,
-   "roe_ttm": 6.5,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": 169060180010,
+   "wavg_shares": 46939938,
+   "per": 20.576,
+   "eps": 1667,
+   "pbr": 0.5885,
+   "bps": 58283,
+   "roe_ttm": 3.0,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": 78322490415,
    "ccy": "KRW",
    "bps_src": "자체",
    "eps_src": "공시",
-   "pbr_krx": 0.84,
+   "pbr_krx": 0.59,
    "bps_krx": 57793.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 750.0,
-   "div": 1.55
+   "div": 2.19
   }
- }
+ },
+ "textRules": 2
 }

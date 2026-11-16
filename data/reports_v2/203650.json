@@ -1,220 +1,208 @@
 {
  "title": {
-  "ko": "양자보안 기대와 재무부담의 이중구도",
-  "en": "Quantum Security Hopes Meet Leverage Strain"
+  "ko": "매출은 반기 최대, 이익률 회복은 과제",
+  "en": "Record half-year sales; margin recovery still pending"
  },
  "lead": {
-  "ko": "렌탈 자회사가 매출을 견인하는 가운데 양자내성암호(PQC) 정부 시범사업 참여가 새로운 관심을 모으고 있으나, 본업 수익성 저하와 높은 부채비율이 함께 부각되는 국면이다.",
-  "en": "While the rental subsidiary continues to drive top-line growth, participation in government-led post-quantum cryptography pilot programs has drawn fresh attention, even as core-business profitability erosion and high leverage remain prominent concerns."
+  "ko": "드림시큐리티는 2026년 상반기 창사 이래 최대 반기 매출을 냈지만, 영업이익률이 2023년 14.3%에서 2025년 7.1%로 낮아진 상태라 수익성 회복 여부가 다음 확인 지점이다.",
+  "en": "Dream Security posted its largest first-half revenue since its founding in 2026, but its operating margin has fallen from 14.3% in 2023 to 7.1% in 2025, so whether profitability recovers is the next checkpoint."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출은 3,189억원으로 전년 대비 증가했으나 영업이익률은 7.1%로 2023년 14.3% 대비 크게 낮아졌다.",
-   "en": "2025 consolidated revenue rose to KRW 318.9 billion year-on-year, but operating margin fell to 7.1%, sharply down from 14.3% in 2023."
+   "ko": "2026년 상반기 연결 매출은 2,167억원으로 회사는 창사 이래 최대 반기 매출이라고 밝혔다. 같은 기간 영업이익은 119억원으로 41.8% 늘었다.",
+   "en": "Consolidated revenue in the first half of 2026 reached KRW 216.7 billion, which the company described as its largest half-year revenue since its founding. Operating profit rose 41.8% to KRW 11.9 billion over the same period."
   },
   {
-   "ko": "매출의 대부분은 렌탈 자회사 한국렌탈에서 발생하며, 별도(본사) 기준 솔루션 매출은 수년째 정체 상태다.",
-   "en": "The bulk of revenue comes from rental subsidiary Korea Rental, while the parent company's standalone solution revenue has stagnated for years."
+   "ko": "연간 매출은 2023년 2,327억원에서 2025년 3,189억원으로 늘었지만, 영업이익은 2024년 256억원, 2025년 225억원으로 2년 연속 감소했다. 영업이익률은 2023년 14.3%에서 2025년 7.1%로 내려왔다.",
+   "en": "Annual revenue grew from KRW 232.7 billion in 2023 to KRW 318.9 billion in 2025, while operating profit fell for two consecutive years to KRW 25.6 billion in 2024 and KRW 22.5 billion in 2025. The operating margin dropped from 14.3% in 2023 to 7.1% in 2025."
   },
   {
-   "ko": "2026년 5월 과학기술정보통신부의 국가 핵심 인프라 PQC(양자내성암호) 시범전환 사업에서 통신 분야 수행기관으로 선정됐다.",
-   "en": "In May 2026, the company was selected as the lead performing entity for the telecom sector in the government's national critical-infrastructure PQC pilot conversion program."
+   "ko": "국방 부문은 2026년 상반기 매출 235억원으로 전년 동기 대비 190% 이상 늘었다고 회사가 밝혔다. 렌탈 부문은 기업 정보 사이트 집계 기준으로 매출의 약 67%를 차지한다.",
+   "en": "The company said its defense segment generated KRW 23.5 billion of revenue in the first half of 2026, up more than 190% from a year earlier. A corporate information site puts the rental segment at about 67% of revenue."
   },
   {
-   "ko": "연결 기준 부채비율이 200%대 후반에서 유지되며, 2026년 1분기에는 본사(별도) 기준 영업손실이 발생했다.",
-   "en": "The consolidated debt ratio has remained in the high-200% range, and the parent company (standalone basis) posted an operating loss in the first quarter of 2026."
+   "ko": "2026년 3분기 영업이익은 98.4억원으로 2026년 1분기 저점 이후 2개 분기 연속 증가했다. 그러나 같은 분기 지배주주 순이익은 16.4억원으로 전년 동기 대비 56.6% 줄었다.",
+   "en": "Operating profit recovered to KRW 9.84 billion in the third quarter of 2026, rising for two straight quarters from the first-quarter low. Net income attributable to controlling shareholders, however, fell 56.6% year on year to KRW 1.64 billion in the same quarter."
   },
   {
-   "ko": "양자보안 관련 매출은 아직 유의미한 규모로 나타나지 않고 있어, 실적은 여전히 렌탈 부문에 크게 의존하는 구조다.",
-   "en": "Quantum-security-related revenue has not yet become materially significant, meaning earnings still depend heavily on the rental segment."
+   "ko": "지배주주 순이익은 2023년 225억원을 정점으로 2024년 130억원, 2025년 82.8억원으로 2년 연속 감소했다. 최근 4개 분기 합계는 112억원이다.",
+   "en": "Net income attributable to controlling shareholders peaked at KRW 22.5 billion in 2023 and then fell to KRW 13 billion in 2024 and KRW 8.28 billion in 2025. The total for the last four quarters is KRW 11.2 billion."
   }
  ],
  "business": {
-  "ko": "드림시큐리티는 PKI(공개키 기반 구조) 기술을 축으로 암호·인증·전자서명·생체인증 등 보안 솔루션을 제공하는 정보보호 전문기업이다. 회사는 행정기관, 금융기관, 일반기업을 대상으로 모바일 보안플랫폼과 간편인증, 전자서명 서비스를 제공하며, 주요 종속기업으로 한국렌탈, 디지캡, 시드코어 등 14개 연결대상 종속회사를 보유하고 있다. 사업 구조상 매출의 절대 다수는 렌탈 자회사인 한국렌탈에서 발생하는데, 지난해 연결 매출의 83.55%가 렌탈 부문에서, 솔루션 부문은 6.22%에 그쳤다. 한국렌탈은 사무기기·계측기기·건설장비 등 IT 및 산업 장비를 임대하는 사업으로, 본업인 보안·인증 솔루션과는 별개의 사업 성격을 지닌다. 반면 본사(별도) 기준 매출은 2022년 302억원, 2023년 302억원, 2024년 304억원으로 수년간 정체된 흐름을 보이고 있다. 2026년 1분기에는 국방 부문의 보안장비·솔루션 공급 확대가 연결 매출 성장에 기여했다는 점이 확인된다. 고객 기반은 공공·금융·이동통신·민간 부문에 걸쳐 다수 확보하고 있으며, PKI·FIDO 생체인증·블록체인 기반 DID 등 다양한 인증 기술 포트폴리오를 갖추고 있다. 최근에는 양자내성암호(PQC) 기술을 기존 PKI·TLS·데이터베이스 암호화 제품군에 접목한 '양자보안 풀스택' 포트폴리오를 선보이며 사업 영역 확장을 시도하고 있다.",
-  "en": "Dream Security is an information-security specialist centered on public key infrastructure (PKI) technology, providing encryption, authentication, digital signature, and biometric authentication solutions. The company supplies mobile security platforms, simple authentication, and digital signature services to government agencies, financial institutions, and general enterprises, and holds 14 consolidated subsidiaries including Korea Rental, Digicap, and SeedCore. Structurally, the vast majority of revenue comes from rental subsidiary Korea Rental; last year, rental accounted for 83.55% of consolidated revenue while the solutions segment made up only 6.22%. Korea Rental leases office equipment, measuring instruments, and construction machinery, a business distinct in character from the core security and authentication solutions business. In contrast, the parent company's standalone revenue has stagnated for years, at KRW 30.2 billion in 2022, KRW 30.2 billion in 2023, and KRW 30.4 billion in 2024. In the first quarter of 2026, expanded supply of security equipment and solutions to the defense sector contributed to consolidated revenue growth. The customer base spans public, financial, telecommunications, and private sectors, and the company holds a broad authentication technology portfolio spanning PKI, FIDO biometrics, and blockchain-based decentralized identity (DID). More recently, it has introduced a 'quantum security full-stack' portfolio that integrates post-quantum cryptography (PQC) into its existing PKI, TLS, and database encryption product lines, attempting to expand its business scope."
+  "ko": "드림시큐리티는 1998년 설립된 정보보호 전문기업으로, 2017년 신한제2호기업인수목적회사와의 합병을 통해 코스닥시장에 상장했다. 회사는 PKI 기반 인증, 유선·무선 보안, 전자문서 보안 솔루션과 SI 사업을 영위하며, 사업부문은 IT보안, 국방, 렌탈로 나뉜다. 주력 제품은 제로트러스트 모델을 구현한 Magic ZTA, 다요소 인증 솔루션 Magic MFA, 양자내성암호(PQC)를 적용한 Magic DBPlus와 Magic IAM 등이다. 기업 정보 사이트 집계로는 렌탈 부문이 매출의 약 67%를 차지해 매출 구조의 중심이다. 렌탈 수요는 IT기기, 고소작업대, 산업용 장비 수요와 5G·IoT 보급에 따른 계측기 수요의 영향을 받는다. 국방 부문은 2026년 상반기 매출 235억원으로 외형 확대를 이끌었다. 연결대상 종속회사는 한국렌탈, 디지캡, 시드코어 등을 포함해 15개사로 집계된다. 최대주주 범진규 외 5인은 41.81%를 보유하고 있다(2026년 10월 2일 기준). 같은 기간 회사는 2026년 8월 타법인 출자 100억원을 공시했다. 경쟁 측면에서 IT보안 본업은 PKI·인증 솔루션 업체들과 맞서며, 같은 보안 소프트웨어 업종의 안랩(Ahnlab)과 사업 영역이 일부 겹친다.",
+  "en": "Dream Security is an information security company founded in 1998 that listed on KOSDAQ in 2017 through a merger with a special purpose acquisition vehicle. It runs PKI-based authentication, wired and wireless security, electronic document security solutions and system integration work, and reports three segments: IT security, defense and rental. Its flagship products include Magic ZTA, which implements a zero-trust model, Magic MFA for multi-factor authentication, and Magic DBPlus and Magic IAM, which apply post-quantum cryptography. A corporate information site puts the rental segment at about 67% of revenue, making it the core of the revenue mix. Rental demand is tied to IT equipment, elevated work platforms, industrial equipment and instrumentation demand from 5G and IoT deployment. The defense segment drove expansion with KRW 23.5 billion of first-half 2026 revenue. Consolidated subsidiaries number 15 companies, including Korea Rental, DigiCAP and Seedcore. The largest shareholder group led by Beom Jin-gyu and five others holds 41.81% as of October 2, 2026. In August 2026 the company also disclosed a KRW 10 billion investment in another company. In IT security, the core business competes with PKI and authentication vendors, and it partly overlaps with Ahnlab in security software."
  },
  "earnings": {
-  "ko": "연결 매출은 2022년 2,242억원, 2023년 2,327억원, 2024년 2,688억원, 2025년 3,189억원으로 꾸준히 늘었으나, 영업이익은 2023년 333억원(영업이익률 14.3%)을 정점으로 2024년 256억원(9.5%), 2025년 225억원(7.1%)으로 축소되는 추세를 보였다. 지배주주 순이익 역시 2023년 225억원에서 2024년 121억원, 2025년 74억원으로 뚜렷하게 줄어들며 매출 성장과 이익 둔화가 동시에 나타나는 모습이다. 분기별로 보면 2025년 3분기 매출 751억원·영업이익 40억원·지배주주 순이익 38억원을 기록한 뒤, 성수기 효과가 반영된 2025년 4분기에는 매출 947억원·영업이익 101억원으로 크게 확대됐다. 그러나 2026년 1분기에는 매출이 1,084억원으로 늘었음에도 영업이익은 38억원, 순이익은 3억원 수준에 그쳤고, 2026년 2분기에는 매출 1,083억원·영업이익 82억원·순이익 48억원으로 다시 회복되는 등 분기별 수익성 변동성이 큰 편이다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 합산 지배주주 순이익은 약 114억원 수준으로, 연간 실적 개선 흐름이 이어지고 있는지는 다음 분기 실적에서 재확인이 필요하다. 이러한 영업이익률 하락과 순이익 둔화는 한국렌탈 등 렌탈 자회사의 차입금 확대에 따른 이자비용 증가, 그리고 본사 솔루션 매출의 정체가 복합적으로 작용한 결과로 해석된다. 실제로 2026년 1분기 본사(별도) 기준 매출은 65억원에 불과했고 영업손실 23억원, 순손실 30억원을 기록해 전년 동기 대비 적자 폭이 확대된 것으로 보도됐다. 현금흐름 측면에서도 2025년 영업활동현금흐름이 -148억원으로 나타나 2023년 207억원의 양(+)의 흐름과는 대조적인 모습을 보였다.",
-  "en": "Consolidated revenue grew steadily from KRW 224.2 billion in 2022 to KRW 232.7 billion in 2023, KRW 268.8 billion in 2024, and KRW 318.9 billion in 2025, but operating profit peaked at KRW 33.3 billion (14.3% margin) in 2023 before contracting to KRW 25.6 billion (9.5%) in 2024 and KRW 22.5 billion (7.1%) in 2025. Net income attributable to owners also declined sharply, from KRW 22.5 billion in 2023 to KRW 12.1 billion in 2024 and KRW 7.4 billion in 2025, showing revenue growth and profit deceleration occurring simultaneously. By quarter, revenue of KRW 75.1 billion and operating profit of KRW 4.0 billion with owner net income of KRW 3.8 billion in the third quarter of 2025 was followed by a seasonally strong fourth quarter with revenue of KRW 94.7 billion and operating profit of KRW 10.1 billion. However, in the first quarter of 2026, despite revenue rising to KRW 108.4 billion, operating profit was only KRW 3.8 billion and net income just KRW 0.3 billion, before recovering in the second quarter of 2026 to revenue of KRW 108.3 billion, operating profit of KRW 8.2 billion, and net income of KRW 4.8 billion, illustrating considerable quarter-to-quarter profitability volatility. Owner net income summed over the most recent four quarters (Q3 2025 through Q2 2026) was approximately KRW 11.4 billion, and whether this represents a sustained annual improvement will need reconfirmation in coming quarters. This margin and profit deceleration appears attributable to a combination of rising interest expenses from expanded borrowings at rental subsidiary Korea Rental and stagnant parent-company solution revenue. Indeed, media reports indicate that in the first quarter of 2026 the parent company's standalone revenue was only KRW 6.5 billion, with an operating loss of KRW 2.3 billion and a net loss of KRW 3.0 billion, a wider deficit than the year-earlier period. On the cash flow side, 2025 operating cash flow came in at negative KRW 14.8 billion, a contrast to the positive KRW 20.7 billion recorded in 2023."
+  "ko": "연간 매출은 2022년 2,242억원에서 2023년 2,327억원(전년 대비 3.8% 증가), 2024년 2,688억원(전년 대비 15.5% 증가), 2025년 3,189억원(전년 대비 18.6% 증가)으로 늘었고, 2023년부터 2025년까지 3년 연속 증가했다. 2025년이 2022~2025년 중 가장 큰 해다. 같은 기간 영업이익은 2022년 252억원에서 2023년 333억원(전년 대비 31.8% 증가)으로 정점을 찍은 뒤 2024년 256억원(전년 대비 22.9% 감소), 2025년 225억원(전년 대비 12.3% 감소)으로 2년 연속 감소했다. 매출은 늘었으나 이익은 줄면서 영업이익률은 2023년 14.3%에서 2024년 9.5%, 2025년 7.1%로 내려왔다. 회사는 2025년 실적 변동 요인으로 영업 경쟁력 강화에 따른 매출 증가와 고환율 등 경영환경 변화를 들었다. 연구개발비는 판매비와관리비에서 2025년 56억원대로 2024년보다 늘었다. 지배주주 순이익은 2023년 225억원에서 2024년 130억원(전년 대비 42.3% 감소), 2025년 82.8억원(전년 대비 36.2% 감소)으로 줄었다. 당기순이익(비지배지분 포함)은 2025년 73.9억원으로 지배주주 순이익과 다른 값이다. 영업활동 현금흐름은 2023년 207억원에서 2024년 -30억원, 2025년 -148억원으로 나타났다. 분기로 보면 2025년 3분기 매출 751억원, 영업이익 40억원에서 4분기 매출 947억원, 영업이익 101억원(전 분기 대비 152.2% 증가)으로 올랐다. 2026년 1분기에는 매출 1,084억원으로 정점을 찍었지만 영업이익은 37.6억원으로 저점이었다(전 분기 대비 62.7% 감소). 회사는 상반기 설명에서 연구인력 채용과 투자 확대가 수익성 둔화 요인이라고 밝혔고, 1분기에는 성과급 충당 등 일회성 비용이 반영됐다는 분석이 있다. 2026년 2분기 매출은 1,083억원, 영업이익은 81.6억원(전 분기 대비 117.0% 증가)이었고, 3분기 매출 1,032억원(전 분기 대비 4.7% 감소, 전년 동기 대비 37.4% 증가), 영업이익 98.4억원(전년 동기 대비 146.2% 증가)을 기록했다.",
+  "en": "Annual revenue rose from KRW 224.2 billion in 2022 to KRW 232.7 billion in 2023 (up 3.8%), KRW 268.8 billion in 2024 (up 15.5%) and KRW 318.9 billion in 2025 (up 18.6%), and grew for three consecutive years from 2023 through 2025. 2025 was the largest year of the 2022 to 2025 period. Operating profit peaked at KRW 33.3 billion in 2023 (up 31.8%) from KRW 25.2 billion in 2022, then fell 22.9% to KRW 25.6 billion in 2024 and 12.3% to KRW 22.5 billion in 2025, a two-year decline. Revenue grew while profit shrank, and the operating margin moved from 14.3% in 2023 to 9.5% in 2024 and 7.1% in 2025. The company attributed 2025 changes to higher sales from stronger competitiveness and to a business environment that included a high exchange rate. R&D expense booked in selling and administrative costs rose to KRW 5.66 billion in 2025 from a year earlier. Net income attributable to controlling shareholders rose to KRW 22.5 billion in 2023, then fell 42.3% to KRW 13 billion in 2024 and 36.2% to KRW 8.28 billion in 2025. Total net income including non-controlling interests was KRW 7.39 billion in 2025, a different figure from net income attributable to controlling shareholders. Operating cash flow was KRW 20.7 billion in 2023, -KRW 3 billion in 2024 and -KRW 14.8 billion in 2025. By quarter, revenue was KRW 75.1 billion with operating profit of KRW 4 billion in the third quarter of 2025, and KRW 94.7 billion with KRW 10.1 billion in the fourth quarter (up 152.2% from the prior quarter). Revenue peaked at KRW 108.4 billion in the first quarter of 2026, while operating profit hit its low of KRW 3.76 billion (down 62.7% from the prior quarter). In the first-half disclosure the company cited added research hiring and investment as the reason for weaker profitability, and an analysis points to one-off costs such as performance bonus provisions in the first quarter. Second-quarter 2026 revenue was KRW 108.3 billion with operating profit of KRW 8.16 billion (up 117.0%). Third-quarter revenue was KRW 103.2 billion (down 4.7% from the prior quarter and up 37.4% year on year), with operating profit of KRW 9.84 billion (up 146.2% year on year)."
  },
  "industry": {
-  "ko": "국내 정보보안 산업은 공공·금융권을 중심으로 한 인증·암호화 수요가 꾸준한 가운데, 양자컴퓨팅 발전에 대응하는 양자내성암호(PQC) 전환이 새로운 성장축으로 부상하고 있다. 과학기술정보통신부와 한국인터넷진흥원(KISA)은 2025년 에너지·행정·의료 3개 분야에서 시작한 PQC 시범전환 사업을 2026년에는 통신·금융·교통·국방·우주 5개 분야로 확대했으며, 드림시큐리티는 통신 분야(KREONET) 수행기관으로 선정됐다. 다만 업계에서는 아직 시장이 초기 단계로, 관련 매출이 본격화되지 않고 있다는 진단이 나온다. 경쟁 구도는 펜타시큐리티, 한국퀀텀컴퓨팅, 케이사인, ICTK 등 다수의 보안·양자기술 기업이 각자의 강점 영역에서 시범사업과 표준화 참여를 병행하는 다자간 경쟁 양상이다. 드림시큐리티는 통신망 분야에서 KT와의 협력 경험 등 레퍼런스를 축적해왔다는 점이 상대적 강점으로 꼽힌다. 한편 렌탈업(한국렌탈)이 속한 IT·산업 장비 임대 시장은 경기 변동에 따라 실적이 좌우되는 특성이 있어, 고소장비·계측기기 등 전방산업 부진 시 임대 자산의 가동률 관리 부담이 커질 수 있다는 평가도 존재한다.",
-  "en": "South Korea's information security industry continues to see steady demand for authentication and encryption centered on the public and financial sectors, while transition to post-quantum cryptography (PQC) in response to advancing quantum computing is emerging as a new growth axis. The Ministry of Science and ICT and the Korea Internet & Security Agency (KISA), which began PQC pilot conversion programs in energy, administration, and healthcare in 2025, expanded the program to five sectors in 2026—telecommunications, finance, transportation, defense, and space—with Dream Security selected as the performing entity for the telecommunications sector (KREONET). However, industry observers note that the market remains at an early stage and related revenue has not yet become substantial. The competitive landscape features multiple security and quantum-technology firms including Penta Security, Korea Quantum Computing, K-sign, and ICTK, each participating in pilot programs and standardization efforts within their respective areas of strength. Dream Security's relative advantage lies in accumulated references in the telecommunications network domain, including collaboration experience with KT. Meanwhile, the IT and industrial equipment rental market to which subsidiary Korea Rental belongs is sensitive to economic cycles, and downturns in front-end industries such as aerial work platforms and measuring instruments can increase the burden of managing utilization rates for rental assets."
+  "ko": "보안 시장에서는 공공과 금융권을 중심으로 양자암호통신과 보안 인증 수요가 확대될 것이라는 전망이 나온다. 회사는 양자내성암호 적용 솔루션과 제로트러스트 모델을 차세대 주력으로 내세우고, AI 보안 연계 제품도 확장하겠다고 밝혔다. 회사는 국내 양자보안 시장에서 압도적 1위 자리를 굳히는 것을 단기 목표로 제시했다. 국방 산업의 호조가 상반기 실적에 반영됐다는 것도 회사의 설명이다. 렌탈 부문은 IT기기와 산업용 장비, 계측기 수요 확대의 영향을 받는 구조라 보안 시장 사이클과는 다른 변수에 노출된다. 보안 업종 내 경쟁은 PKI와 인증 솔루션 기업들 사이에서 벌어지며, 안랩과 같은 보안 소프트웨어 업체와도 사업 영역이 맞닿는다. 다만 시장점유율과 경쟁사 대비 수익성을 비교할 수 있는 공개 수치는 이 리포트의 비교 범위에 포함하지 않는다. 차세대 보안 시장의 성장 속도와 회사의 상용화 실적이 업계 내 포지션을 가를 변수다.",
+  "en": "Public and financial-sector demand for quantum-resistant communications and security authentication is expected to expand. The company positions post-quantum cryptography solutions and zero-trust models as its next-generation core products and plans to extend AI security offerings. In the near term it aims to consolidate a dominant position in Korea's post-quantum security market. The company also credits a strong defense industry for its first-half results. The rental segment depends on IT equipment, industrial equipment and instrumentation demand, so it is exposed to drivers different from the security market cycle. Competition in the sector takes place among PKI and authentication vendors, and its business overlaps with security software players such as Ahnlab. Public market-share data and a direct profitability comparison with competitors are not included in this comparison. The pace of growth in next-generation security markets and the company's commercial track record will determine its position in the industry."
  },
  "outlook": {
-  "ko": "드림시큐리티는 2026년 4월부터 12월까지 진행되는 KISTI(한국과학기술정보연구원) 국가과학기술연구망(KREONET) PQC 전환 실증 사업을 수행하고 있으며, 이는 물리적 보안(QKD)과 수학적 보안(PQC)을 결합한 하이브리드 모델을 검증하는 사업으로, 향후 공공·국가 인프라 전반으로 확산될 가능성이 있는 레퍼런스로 평가된다. 회사는 ISEC 2026, CISO Korea 2026 등 주요 보안 컨퍼런스에서 데이터베이스 보안·계정관리(IAM)·다요소 인증(MFA)·PKI 등 기존 핵심 제품군에 PQC 기술을 접목한 포트폴리오를 지속적으로 선보이고 있다. 다만 이러한 활동이 실제 상용 계약과 매출로 이어지기까지는 시간이 필요하다는 것이 업계의 공통된 시각이다. 재무적으로는 2026년 7월 0% 금리의 250억원 규모 전환사채(CB)를 발행해 단기 유동성 위험 완화에 나섰으며, 조기상환청구권(풋옵션)은 발행 2년 후인 2028년 7월부터 행사 가능하도록 설계돼 당분간 상환 압박은 제한적일 것으로 보인다. 한국렌탈을 비롯한 자회사들의 실적 개선 여부와 본사 솔루션 부문의 수익성 회복이 향후 연결 실적의 방향을 가를 핵심 변수로 지목된다. 회사 측은 렌탈업 특성상 매출 확대에 따라 레버리지가 동반 상승하는 구조라는 입장을 밝히고 있어, 외형 성장과 재무 건전성 개선을 동시에 달성할 수 있을지가 관전 포인트다.",
-  "en": "Dream Security is carrying out a PQC conversion demonstration project on the Korea Institute of Science and Technology Information's (KISTI) national research network KREONET from April through December 2026, a project verifying a hybrid model combining physical security (quantum key distribution) with mathematical security (PQC), viewed as a reference case with potential for broader expansion across public and national infrastructure. The company continues to showcase its PQC-integrated product portfolio—spanning database security, account and identity management (IAM), multi-factor authentication (MFA), and PKI—at major security conferences such as ISEC 2026 and CISO Korea 2026. However, industry consensus holds that time will be needed before such activities translate into actual commercial contracts and revenue. On the financial side, the company issued a KRW 25 billion zero-coupon convertible bond in July 2026 to ease near-term liquidity risk, with the early redemption (put) option structured to become exercisable from July 2028, two years after issuance, limiting repayment pressure for the time being. Whether performance improves at Korea Rental and other subsidiaries, along with a recovery in profitability at the parent company's solutions segment, is cited as a key variable determining the future direction of consolidated results. Management maintains that leverage naturally rises alongside revenue expansion given the nature of the rental business, making it a point of interest whether the company can achieve both top-line growth and improved financial soundness simultaneously."
+  "ko": "회사는 2026년 하반기에도 성장세를 이어갈 것으로 기대한다고 밝혔다. 국방과 차세대 보안 사업이 성장 궤도에 들어섰다는 것이 회사의 판단이다. 회사는 비용 효율화와 수익성 개선을 추진해 성장 기반을 강화하겠다는 계획도 함께 밝혔다. 그룹 계열사 간 시너지를 바탕으로 중장기 성장 동력을 확보하겠다는 방침이다. 2026년 7월 22일 전환사채 발행을 결정했고, 2026년 8월 25일에는 타법인 출자 100억원을 공시했다. 두 건이 재무 구조와 지분 구조에 어떤 영향을 줄지는 공시 세부 내용으로 확인되는 사항이다. 2026년 1분기의 일회성 비용이 반영된 만큼 이후 분기에 비용 구조가 안정되는지가 관건이다. 2026년 3분기 영업이익이 전년 동기 대비 146.2% 늘었지만 지배주주 순이익은 줄었으므로, 두 지표의 차이가 어디서 생겼는지는 다음 정기보고서의 손익 세부 항목에서 확인할 부분이다. 양자암호와 제로트러스트 시장에서 상용화 실적이 쌓이는지가 중장기 전망의 핵심이다.",
+  "en": "The company expects growth to continue in the second half of 2026. It judges that its defense and next-generation security businesses have entered a growth phase. It also plans to strengthen its growth base by pursuing cost efficiency and better profitability. It intends to secure medium- to long-term growth drivers through synergies among group affiliates. The board decided on a convertible bond issuance on July 22, 2026, and on August 25, 2026 the company disclosed a KRW 10 billion investment in another company. How these two moves affect the capital and shareholding structure will be confirmed in the detailed disclosures. Because one-off costs were recorded in the first quarter of 2026, whether the cost structure stabilizes in later quarters is the key question. Third-quarter operating profit rose 146.2% year on year while net income attributable to controlling shareholders fell, and the source of that gap will be visible in the income statement details of the next periodic report. Whether commercial results build up in post-quantum cryptography and zero-trust markets is central to the medium-term outlook."
  },
  "valuation_comment": {
-  "ko": "현재 거래되는 배수는 최근 1~2년간 형성된 거래 밴드 상단권에 위치해 있어, 순자산 대비 프리미엄이 존재하는 구간으로 볼 수 있다. 이익 흐름이 2023년을 정점으로 둔화된 이후 분기별로 다시 회복되는 모습을 보이고 있어, 최근 네 개 분기 실적을 기준으로 한 수익성 지표는 과거 고점 대비 낮은 수준에서 형성돼 있다. 배당은 현재 지급되지 않고 있어, 배당수익률에 기반한 투자 매력도 평가는 해당되지 않는다. 양자보안(PQC) 관련 정부 시범사업 참여 소식이 주가에 영향을 미친 사례가 있었던 만큼, 밸류에이션에는 실제 실적 기여 여부가 확인되지 않은 미래 성장 기대가 일부 반영돼 있을 가능성이 있다. 다만 이는 사업의 상용화 시점과 규모에 대한 불확실성을 동반하므로, 순자산가치와 수익성 지표만으로 현재 거래 수준을 단순 비교하기는 쉽지 않다.",
-  "en": "The multiples at which the stock currently trades sit in the upper range of the trading band formed over the past one to two years, suggesting a segment where a premium exists relative to net asset value. Since profit flows peaked in 2023 and subsequently slowed, before showing quarter-to-quarter recovery more recently, profitability metrics based on the most recent four quarters stand below their prior peak levels. The company does not currently pay a dividend, so dividend-yield-based attractiveness assessments do not apply. Given past instances where news of participation in government-led quantum security (PQC) pilot programs affected the share price, valuation may partly reflect future growth expectations whose actual earnings contribution has not yet been confirmed. However, because this carries uncertainty regarding the timing and scale of commercialization, a simple comparison of current trading levels using net asset value and profitability metrics alone is not straightforward."
+  "ko": "밸류에이션은 이익 규모와 순자산을 기준으로 해석하는 것이 기본이다. 2025년 말 지배주주 지분은 1,189억원이고, 시가총액은 이 지분 규모를 웃도는 구간에 있어 순자산 대비 프리미엄이 붙은 상태다. 이익 측면에서는 최근 4개 분기 지배주주 순이익 합계 112억원이 2023년 연간 지배주주 순이익 225억원의 절반 수준이라 이익 기반이 정점 때보다 얇아졌다. 2024년에는 이익 규모가 작아 이익 기준 배수가 매우 높게 나타나 배수만으로 수준을 읽기 어려웠다. 배당은 업종 평균을 밑도는 수준이라 주주환원 측면에서 현금으로 받는 수익은 작다. 이익 회복이 2026년 2분기와 3분기처럼 이어지는지에 따라 같은 시가총액도 이익 기준 배수가 달라지므로, 분기 이익의 추세를 함께 보는 것이 해석의 출발점이다.",
+  "en": "Valuation is best read against earnings scale and book value. Equity attributable to controlling shareholders was KRW 118.9 billion at the end of 2025, and market capitalization sits above that level, so the stock trades at a premium to book value. On earnings, the total for the last four quarters, KRW 11.2 billion, is about half of the KRW 22.5 billion of controlling-shareholder net income in 2023, so the earnings base is thinner than at the peak. In 2024, when earnings were very small, the earnings multiple was so high that it was hard to read the level from the multiple alone. The dividend is below the industry average, so cash returns to shareholders are small. Whether profit recovery continues as in the second and third quarters of 2026 will change the earnings multiple at the same market capitalization, so the quarterly trend is the starting point for interpretation."
  },
  "bull": [
   {
    "title": {
-    "ko": "국가 주도 PQC 시범사업 수행기관 선정",
-    "en": "Selected as Lead Entity for National PQC Pilot Program"
+    "ko": "국방 부문의 빠른 성장",
+    "en": "Rapid growth in defense"
    },
    "body": {
-    "ko": "2026년 5월 과학기술정보통신부의 국가 핵심 인프라 PQC 시범전환 사업에서 통신 분야(KREONET) 수행기관으로 선정됐다. 국내 200여개 연구기관이 이용하는 국가 백본망에 양자내성암호를 적용하는 실증 사업으로, 향후 공공·국가 인프라 전반으로 확산될 경우 레퍼런스 확보 효과가 기대된다. 회사는 양자암호기술연구소 설립 이후 약 10년간 관련 알고리즘 개발과 표준화에 참여해온 경험을 갖고 있다.",
-    "en": "In May 2026, the company was selected as the performing entity for the telecommunications sector (KREONET) in the Ministry of Science and ICT's national critical-infrastructure PQC pilot conversion program. The demonstration project applies post-quantum cryptography to the national backbone network used by roughly 200 domestic research institutions, and could yield valuable reference credentials if expanded across public and national infrastructure. The company has approximately a decade of experience in related algorithm development and standardization since establishing its quantum cryptography research institute."
+    "ko": "국방 부문은 2026년 상반기 매출 235억원으로 전년 동기 대비 190% 이상 늘었고, 회사는 이를 상반기 외형 성장의 핵심 요인으로 꼽았다. 회사는 국방 사업이 성장 궤도에 진입했다고 판단하고 있다. 국방 매출이 전체 매출에서 차지하는 몫이 커질수록 외형 성장에 대한 기여도 커지므로, 이 부문의 증가 폭이 다음 분기에도 유지되는지가 관찰 포인트다.",
+    "en": "Defense revenue reached KRW 23.5 billion in the first half of 2026, up more than 190% from a year earlier, and the company cited it as a key driver of top-line growth. The company judges that its defense business has entered a growth phase. As defense makes up a larger share of revenue, its contribution to growth also rises, so whether this segment keeps growing in the coming quarters is the point to watch."
    }
   },
   {
    "title": {
-    "ko": "렌탈 자회사 기반 매출 규모 확대",
-    "en": "Revenue Scale Expansion via Rental Subsidiary"
+    "ko": "차세대 보안 제품 라인업",
+    "en": "Next-generation security lineup"
    },
    "body": {
-    "ko": "한국렌탈을 중심으로 연결 매출이 2022년 2,242억원에서 2025년 3,189억원으로 꾸준히 확대되며 외형 성장을 이어가고 있다. 렌탈업은 자본력과 업력을 바탕으로 한 과점적 시장지위를 확보하고 있다는 평가를 받는다. 국방 부문 보안장비·솔루션 공급 확대 등 신규 매출원 발굴도 병행되고 있다.",
-    "en": "Consolidated revenue, driven mainly by Korea Rental, has expanded steadily from KRW 224.2 billion in 2022 to KRW 318.9 billion in 2025, continuing top-line growth. The rental business has been assessed as holding an oligopolistic market position built on capital strength and track record. New revenue sources, such as expanded supply of security equipment and solutions to the defense sector, are also being developed in parallel."
+    "ko": "회사는 제로트러스트를 구현한 Magic ZTA와 양자내성암호를 적용한 Magic MFA, Magic DBPlus, Magic IAM 등을 주력 제품으로 내세운다. 국내 양자보안 시장에서 1위 자리를 굳히겠다는 목표도 밝혔다. 공공과 금융권의 양자암호통신, 보안 인증 수요 확대 전망이 이 라인업의 배경이다.",
+    "en": "The company positions Magic ZTA, which implements zero trust, and post-quantum-based Magic MFA, Magic DBPlus and Magic IAM as its flagship products. It has set a goal of securing the top spot in Korea's post-quantum security market. The expected growth in public and financial-sector demand for quantum-resistant communications and authentication forms the backdrop for this lineup."
    }
   },
   {
    "title": {
-    "ko": "폭넓은 인증 기술 포트폴리오와 고객 기반",
-    "en": "Broad Authentication Technology Portfolio and Customer Base"
+    "ko": "분기 영업이익 회복",
+    "en": "Quarterly operating profit recovery"
    },
    "body": {
-    "ko": "PKI, FIDO 생체인증, 블록체인 기반 DID 등 다양한 인증 기술을 확보하고 있으며 공공·금융·이동통신·민간 부문에 걸쳐 다수의 고객사를 보유하고 있다. 기존 핵심 제품군에 PQC를 접목한 풀스택 포트폴리오를 지속적으로 고도화하고 있어, 장기적으로 다양한 산업의 암호 전환 수요에 대응할 수 있는 기술적 준비가 갖춰져 있다는 평가다.",
-    "en": "The company holds a diverse authentication technology portfolio spanning PKI, FIDO biometrics, and blockchain-based DID, with a broad customer base across the public, financial, telecommunications, and private sectors. It continues to upgrade a full-stack portfolio integrating PQC into existing core product lines, positioning it, in some assessments, with the technical readiness to address cryptographic transition demand across various industries over the long term."
+    "ko": "2026년 1분기 영업이익 37.6억원을 저점으로 2분기 81.6억원, 3분기 98.4억원으로 2개 분기 연속 증가했다. 3분기 영업이익은 전년 동기 대비 146.2% 늘었다. 회사는 상반기 매출 확대와 판매비와관리비 효율화 효과가 영업이익 증가에 반영됐다고 설명했다.",
+    "en": "Operating profit recovered from a first-quarter 2026 low of KRW 3.76 billion to KRW 8.16 billion in the second quarter and KRW 9.84 billion in the third, rising for two consecutive quarters. Third-quarter operating profit was up 146.2% year on year. The company said higher sales and selling and administrative cost efficiency were reflected in the increase."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "높은 부채비율과 차입 부담",
-    "en": "High Debt Ratio and Borrowing Burden"
+    "ko": "영업이익률 하락 추세",
+    "en": "Downtrend in operating margin"
    },
    "body": {
-    "ko": "연결 기준 부채비율은 2022년 357.7%에서 2023년 280.8%, 2024년 263.2%, 2025년 281.0%로 200%대 후반에서 지속되고 있다. 렌탈 자산 확대에 따른 차입금 증가가 구조적 원인으로, 2026년 7월에는 유동성 대응을 위해 0% 금리 전환사채를 발행해야 했다.",
-    "en": "The consolidated debt ratio has persisted in the high-200% range, moving from 357.7% in 2022 to 280.8% in 2023, 263.2% in 2024, and 281.0% in 2025. Rising borrowings tied to rental asset expansion are the structural cause, and in July 2026 the company had to issue a zero-coupon convertible bond to address liquidity needs."
+    "ko": "영업이익률은 2023년 14.3%에서 2024년 9.5%, 2025년 7.1%로 낮아졌다. 영업이익은 2024년과 2025년 두 해 연속 감소했고, 매출이 늘어도 이익률이 따라오지 못한 구조다. 회사는 연구인력 채용과 투자 확대를 수익성 둔화의 이유로 설명했다.",
+    "en": "The operating margin declined from 14.3% in 2023 to 9.5% in 2024 and 7.1% in 2025. Operating profit fell for two consecutive years in 2024 and 2025, and margins did not keep pace with revenue growth. The company attributed weaker profitability to added research hiring and investment."
    }
   },
   {
    "title": {
-    "ko": "영업이익률 하락과 본업 수익성 둔화",
-    "en": "Declining Operating Margin and Weakening Core Profitability"
+    "ko": "재무 부담과 현금흐름",
+    "en": "Financial burden and cash flow"
    },
    "body": {
-    "ko": "영업이익률은 2023년 14.3%에서 2024년 9.5%, 2025년 7.1%로 지속 하락했다. 2026년 1분기에는 본사(별도) 기준 영업손실이 발생한 것으로 보도돼, 렌탈 부문을 제외한 핵심 보안 솔루션 사업의 자체 수익성이 약화된 모습이 확인된다.",
-    "en": "Operating margin has continued to decline, from 14.3% in 2023 to 9.5% in 2024 and 7.1% in 2025. Media reports indicate the parent company posted a standalone operating loss in the first quarter of 2026, confirming weakened self-sustaining profitability in the core security solutions business excluding the rental segment."
+    "ko": "2025년 말 부채총계는 4,212억원이고 부채비율은 281.0%다. 영업활동 현금흐름은 2024년 -30억원, 2025년 -148억원으로 순유출이 이어졌다. 사모사채 만기가 반복되고 있어 차입과 상환 관리가 재무 안정성의 관건이다.",
+    "en": "Total liabilities at the end of 2025 were KRW 421.2 billion, and the debt-to-equity ratio was 281.0%. Operating cash flow was -KRW 3 billion in 2024 and -KRW 14.8 billion in 2025, showing continued net outflows. Private bond maturities recur, so debt management and repayment are key to financial stability."
    }
   },
   {
    "title": {
-    "ko": "PQC 사업의 매출 가시화 지연",
-    "en": "Delayed Revenue Visibility for PQC Business"
+    "ko": "분기 이익의 질",
+    "en": "Quality of quarterly earnings"
    },
    "body": {
-    "ko": "다양한 PQC 관련 제품과 정부 시범사업 참여에도 아직 유의미한 매출은 발생하지 않고 있다는 진단이 나온다. 주가가 해외 양자컴퓨터 관련 종목 흐름에 연동되는 양상을 보인 바 있어, 실질적인 수요 발생 여부가 확인되기까지 시간이 소요될 수 있다.",
-    "en": "Despite various PQC-related products and participation in government pilot programs, assessments indicate that no meaningful revenue has yet materialized. The share price has at times moved in tandem with overseas quantum-computing-related stocks, suggesting it may take time before actual demand materialization can be confirmed."
+    "ko": "2026년 3분기 영업이익은 늘었지만 지배주주 순이익은 16.4억원으로 전년 동기 대비 56.6% 줄었다. 2026년 1분기에는 성과급 충당 등 일회성 비용이 반영됐다는 분석이 있다. 최근 4개 분기 지배주주 순이익 합계는 112억원으로 이익 규모가 연간 정점 때보다 얇다.",
+    "en": "Third-quarter 2026 operating profit rose, but net income attributable to controlling shareholders fell 56.6% year on year to KRW 1.64 billion. An analysis points to one-off costs such as performance bonus provisions in the first quarter of 2026. Net income attributable to controlling shareholders over the last four quarters totals KRW 11.2 billion, a thinner base than at the annual peak."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "재무건전성·유동성 리스크",
-    "en": "Financial Soundness and Liquidity Risk"
+    "ko": "재무 구조",
+    "en": "Balance sheet"
    },
    "body": {
-    "ko": "연결 기준 부채비율이 200%대 후반에서 유지되고 있으며, 2026년 1분기 기준 보도에 따르면 부채비율이 312.72%까지 상승한 것으로 나타났다. 단기차입금과 유동성 사채 등 1년 내 만기 도래 금융채무 비중이 높아, 리파이낸싱(자금재조달) 위험이 지속적으로 모니터링 대상이다.",
-    "en": "The consolidated debt ratio has remained in the high-200% range, and according to reports as of the first quarter of 2026 it rose to 312.72%. A high proportion of financial liabilities—including short-term borrowings and current portion of bonds—mature within one year, making refinancing risk an ongoing point of monitoring."
+    "ko": "부채총계 4,212억원, 부채비율 281.0%로 부채 부담이 자본에 비해 크다. 영업활동 현금흐름이 2024년과 2025년 연속 마이너스였다는 점도 차입 의존도를 키울 수 있다. 2027년 6월 만기인 사모사채 상환 방식이 주요 점검 사항이다.",
+    "en": "Total liabilities of KRW 421.2 billion and a 281.0% debt-to-equity ratio mean debt is large relative to equity. Negative operating cash flow in 2024 and 2025 could increase reliance on borrowing. Repayment of the private bond maturing in June 2027 is a key item to monitor."
    }
   },
   {
    "cat": {
-    "ko": "자회사 실적 변동성",
-    "en": "Subsidiary Earnings Volatility"
+    "ko": "이익 변동성과 비용",
+    "en": "Earnings volatility and costs"
    },
    "body": {
-    "ko": "한국렌탈, 시드코어, 드림디엔에스 등 주요 종속회사의 실적이 과거 특정 시기 동반 부진했던 사례가 있으며, 렌탈 자산의 가동률은 전방산업 경기에 민감하다. 자회사 실적 부진이 연결 실적 전반에 미치는 영향력이 큰 구조다.",
-    "en": "Major subsidiaries such as Korea Rental, SeedCore, and Dream DNS have in the past experienced concurrent performance weakness, and utilization rates for rental assets are sensitive to front-end industry conditions. This structure means subsidiary performance weakness can have an outsized impact on overall consolidated results."
+    "ko": "분기 영업이익은 2026년 1분기 37.6억원에서 3분기 98.4억원으로 폭이 크게 움직였다. 연구개발비가 2025년 56억원대로 늘었고, 연구인력 투자도 이어지는 중이다. 성과급 충당 같은 일회성 비용이 분기 손익을 다시 흔들 수 있다.",
+    "en": "Quarterly operating profit swung widely, from KRW 3.76 billion in the first quarter of 2026 to KRW 9.84 billion in the third. R&D expense rose to the KRW 5.66 billion range in 2025, and research staffing investment continues. One-off items such as performance bonus provisions could again move quarterly results."
    }
   },
   {
    "cat": {
-    "ko": "정책·시범사업 의존 리스크",
-    "en": "Policy and Pilot-Program Dependence Risk"
+    "ko": "지분 희석과 사업 집중",
+    "en": "Dilution and concentration"
    },
    "body": {
-    "ko": "PQC 관련 사업이 상당 부분 정부 예산 지원을 받는 시범전환 사업 형태로 진행되고 있어, 향후 정부 정책 방향이나 예산 배정 변화에 따라 사업 규모와 지속성이 영향을 받을 수 있다. 상용화 시점이 불확실한 만큼 정책 의존도가 높은 사업 구조라는 평가가 나온다.",
-    "en": "Because a significant portion of PQC-related business is conducted in the form of government-budget-supported pilot conversion programs, future changes in government policy direction or budget allocation could affect the scale and continuity of these projects. Given uncertain commercialization timing, the business structure is seen as having relatively high policy dependence."
+    "ko": "2026년 7월 22일 전환사채 발행이 결정됐고, 2026년 4월에는 전환청구권 행사가 발행주식 대비 2.3%와 2.5% 수준으로 공시됐다. 렌탈 부문이 매출의 약 67%를 차지해 사업 구조가 한 부문에 기대는 점도 부담이다. 국방 사업의 발주 시점이 흔들리면 성장률이 함께 변할 수 있다.",
+    "en": "A convertible bond issuance was decided on July 22, 2026, and conversion right exercises disclosed in April 2026 equaled about 2.3% and 2.5% of outstanding shares. Rental accounts for about 67% of revenue, so the business leans heavily on one segment. If the timing of defense orders shifts, growth could change as well."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중",
-    "en": "Around November 2026"
+    "ko": "2027년 3월 말",
+    "en": "Late March 2027"
    },
    "what": {
-    "ko": "2026년 3분기(2026Q3) 실적 공시 확인 — 렌탈 부문의 계절적 성수기 효과와 본사(별도) 솔루션 부문의 흑자 전환 여부를 살펴볼 시점이다.",
-    "en": "Check the third-quarter 2026 (2026Q3) earnings disclosure — a point to observe whether the rental segment's seasonal peak effect materializes and whether the parent company's standalone solutions segment returns to profit."
+    "ko": "2026년 사업보고서 제출 시점이다. 2026년 연간 매출이 2025년 3,189억원을 웃돌았는지, 영업이익률이 2025년 7.1%에서 올라섰는지를 확인한다.",
+    "en": "The 2026 annual report is due. It shows whether full-year 2026 revenue exceeded the KRW 318.9 billion of 2025 and whether the operating margin rose from 7.1% in 2025."
    }
   },
   {
    "when": {
-    "ko": "2026년 12월",
-    "en": "December 2026"
+    "ko": "2027년 5월 중순 전후",
+    "en": "Mid-May 2027 (approximate)"
    },
    "what": {
-    "ko": "KISTI 국가과학기술연구망(KREONET) PQC 전환 실증 사업 종료 시점 — 사업 성과가 후속 상용 계약이나 추가 수주로 이어지는지 확인이 필요하다.",
-    "en": "Conclusion of the KISTI national research network (KREONET) PQC conversion demonstration project — worth checking whether the results translate into follow-on commercial contracts or additional orders."
+    "ko": "2027년 1분기 분기보고서가 나올 시점이다. 2026년 1분기 보고서가 2026년 5월 15일에 제출된 전례를 기준으로 한 예상 일정이다. 1분기 영업이익이 2026년 3분기 수준을 유지하는지와 지배주주 순이익의 방향을 본다.",
+    "en": "The first-quarter 2027 report is expected around this time, based on the May 15, 2026 filing of the first-quarter 2026 report. The check is whether operating profit holds near the third-quarter 2026 level and which way net income attributable to controlling shareholders moves."
    }
   },
   {
    "when": {
-    "ko": "2027년 초",
-    "en": "Early 2027"
+    "ko": "2027년 6월 25일",
+    "en": "June 25, 2027"
    },
    "what": {
-    "ko": "과학기술정보통신부의 2027년도 PQC 시범전환 사업 예산·확대 계획 발표 — 정부 주도 양자보안 사업의 지속·확대 여부를 판단할 수 있는 지표다.",
-    "en": "Announcement of the Ministry of Science and ICT's 2027 budget and expansion plans for the PQC pilot conversion program — an indicator for judging whether the government-led quantum security initiative continues or expands."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 상반기",
-    "en": "First half of 2027"
-   },
-   "what": {
-    "ko": "한국렌탈 등 주요 종속회사에 대한 신용평가기관의 정기 신용평가 결과 — 부채비율, 차입금의존도 등 재무건전성 지표의 추이를 재확인할 수 있는 계기다.",
-    "en": "Regular credit rating results for major subsidiaries such as Korea Rental — an opportunity to reconfirm the trajectory of financial soundness metrics such as debt ratio and borrowing dependence."
+    "ko": "제8회 사모사채(5.90%, 당분기말 잔액 50억원)의 만기일이다. 상환이나 차환 여부가 재무 부담의 수준을 보여 준다.",
+    "en": "Maturity date of the 8th private bond, which carries a 5.90% coupon and a KRW 5 billion balance at the last quarter-end. Whether it is repaid or refinanced will show the level of financial burden."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "드림시큐리티는 렌탈 자회사 한국렌탈이 매출의 대부분을 견인하는 구조 속에서, 양자내성암호(PQC) 관련 정부 시범사업 참여를 통해 새로운 성장 스토리를 구축해가고 있다. 2025년까지 연결 매출은 꾸준히 증가했으나 영업이익률과 지배주주 순이익은 2023년을 정점으로 둔화되는 흐름을 보였고, 2026년 들어서는 분기별 수익성 변동성이 커졌다. 연결 기준 부채비율이 200%대 후반에서 유지되는 가운데 2026년 7월에는 유동성 대응을 위한 전환사채 발행이 이뤄지는 등 재무 부담도 지속적으로 관찰되는 요소다. 양자보안 사업은 정부 시범전환 사업의 통신 분야 수행기관으로 선정되는 등 기술적 위상은 확인되고 있으나, 업계에서는 아직 유의미한 매출로 이어지지 않았다는 평가가 지배적이다. 따라서 향후 관전 포인트는 렌탈 부문의 안정적 확대 지속 여부, 본사 솔루션 부문의 수익성 회복, 그리고 PQC 시범사업이 실제 상용 계약으로 전환되는 시점이 될 것으로 보인다. 투자 판단에 앞서 부채구조와 자회사 실적 변동성, 정책 의존적 사업 특성을 균형 있게 고려할 필요가 있다.",
-   "en": "Dream Security is building a new growth narrative through participation in government-led post-quantum cryptography (PQC) pilot programs, even as rental subsidiary Korea Rental continues to drive the majority of revenue. Consolidated revenue grew steadily through 2025, but operating margin and owner net income slowed after peaking in 2023, and quarter-to-quarter profitability volatility increased in 2026. The consolidated debt ratio has persisted in the high-200% range, and the company issued a convertible bond in July 2026 to address liquidity needs, making financial burden a continuously observed factor. While the quantum security business has demonstrated technical standing—including selection as the telecommunications sector performing entity for the government's pilot conversion program—industry assessment generally holds that it has not yet translated into meaningful revenue. Key points to watch going forward will therefore include whether stable expansion of the rental segment continues, whether the parent company's solutions segment profitability recovers, and when the PQC pilot programs might convert into actual commercial contracts. Any investment judgment should balance consideration of the debt structure, subsidiary earnings volatility, and the policy-dependent nature of the business."
+   "ko": "드림시큐리티는 2026년 상반기 매출 2,167억원과 영업이익 119억원으로 외형 성장과 분기 이익 회복을 동시에 보여 주었다. 국방 부문 매출 235억원과 렌탈 부문의 큰 비중은 성장의 두 축으로 확인된다. 반면 영업이익률은 2023년 14.3%에서 2025년 7.1%로 낮아졌고, 지배주주 순이익은 2023년 정점 이후 2년 연속 줄었다. 2025년 영업활동 현금흐름은 -148억원이며, 부채총계 4,212억원은 자본총계 1,499억원을 웃돈다. 2026년 3분기 영업이익은 늘었지만 지배주주 순이익은 줄어 이익의 질을 더 확인할 필요가 남아 있다. 시가총액이 지배주주 지분을 웃도는 구간이라 이익 회복의 지속성이 해석의 핵심 변수다. 강세 요인은 국방과 양자보안 등 성장 사업이고, 약세 요인은 수익성 하락과 재무 부담이다. 다음 확인 지점은 2026년 사업보고서의 연간 영업이익률, 2027년 1분기 보고서의 분기 이익 추이, 2027년 6월 사모사채 만기 처리다.",
+   "en": "Dream Security showed both top-line growth and a quarterly profit recovery in the first half of 2026, with revenue of KRW 216.7 billion and operating profit of KRW 11.9 billion. Defense revenue of KRW 23.5 billion and the large weight of the rental segment are the two visible growth pillars. The operating margin, however, fell from 14.3% in 2023 to 7.1% in 2025, and net income attributable to controlling shareholders has declined for two years since its 2023 peak. Operating cash flow was -KRW 14.8 billion in 2025, and total liabilities of KRW 421.2 billion exceed total equity of KRW 149.9 billion. Operating profit rose in the third quarter of 2026, but net income attributable to controlling shareholders fell, so earnings quality still needs confirmation. With market capitalization above controlling-shareholder equity, the durability of profit recovery is the central variable for valuation. Strengths center on growth businesses such as defense and post-quantum security, while weaknesses are falling profitability and financial burden. The next checkpoints are the operating margin in the 2026 annual report, the quarterly earnings trend in the first-quarter 2027 report, and how the private bond maturing in June 2027 is handled."
   }
  },
  "sources": [
-  "https://alphasquare.co.kr/home/stock-summary?code=203650",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=203650",
+  "https://hedgenaru.com/stocks/203650",
+  "https://zdnet.co.kr/view/?no=20260728095958",
+  "https://www.itdaily.kr/news/articleView.html?idxno=241006",
+  "https://kind.krx.co.kr/external/2026/05/15/003134/20260515007160/11013.htm",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A203650",
+  "https://news.nate.com/view/20260225n38777",
+  "https://thevc.kr/dreamsecurity",
+  "https://www.investing.com/equities/shinhan-2nd-special-purpose-acquisi",
+  "https://www.etnews.com/20260814000210",
+  "https://www.investing.com/equities/shinhan-2nd-special-purpose-acquisi-earnings",
+  "https://m.thinkpool.com/stockDiscuss/203650/cont/11837601",
+  "https://www.saramin.co.kr/zf_user/company-info/view-inner-finance/csn/Q0JWd3B0RDZZOVluMWkxZ1ZBWitzdz09/company_nm/(%EC%A3%BC)%EB%93%9C%EB%A6%BC%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0?nomo=1",
+  "https://m.thinkpool.com/compDiscuss/cont/1009725",
   "https://www.judal.co.kr/?view=stockAI&shareToken=yBx1eRIQziQkGMYR",
-  "https://www.jobkorea.co.kr/recruit/co_read/c/dream1998",
-  "https://www.youtube.com/watch?v=wR4ohO8HkI0",
-  "https://www.msn.com/ko-kr/news/other/%EC%82%BC%EC%84%B1-%EA%B8%88%EC%9C%B5%EA%B6%8C%EB%8F%84-%EC%A3%BC%EB%AA%A9%ED%95%9C-%EC%9D%B4-%EA%B8%B0%EC%88%A0-%EB%93%9C%EB%A6%BC%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0-%EC%B0%A8%EC%84%B8%EB%8C%80-%EB%B3%B4%EC%95%88-%EB%8F%85%EC%A0%90%ED%95%98%EB%82%98/vi-AA22GiIV",
-  "https://www.saramin.co.kr/zf_user/company-info/view-inner-finance/csn/Q0JWd3B0RDZZOVluMWkxZ1ZBWitzdz09/company_nm/(%EC%A3%BC)%EB%93%9C%EB%A6%BC%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=42pIeJ3wX6KbmLAt",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=PYK1BnWdZbbVUehk",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=wuoMvfYH793bkGSp",
-  "https://www.tiktok.com/discover/%EB%93%9C%EB%A6%BC%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0-2026%EB%85%84-%EC%A0%84%EB%A7%9D",
-  "https://www.dreamsecurity.com/",
-  "https://smartcert.kr/",
-  "https://dreamsign.kr/faq",
-  "https://dealsite.co.kr/articles/63199/094046",
-  "https://paxnetnews.com/articles/63199",
-  "https://www.mobile-ok.com/",
-  "https://www.dreamsign.kr/",
-  "https://play.google.com/store/apps/details?id=com.dreamsecurity.dreamauth&hl=en_US"
+  "https://m.thinkpool.com/stockDiscuss/203650/cont/11772824"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "203650",
  "name": "드림시큐리티",
  "name_en": "Dream Security Co.,Ltd.",
@@ -223,11 +211,11 @@
   "IT·소프트웨어"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 06:36",
- "dataDate": "20260904",
+ "reportDate": "2026-11-16",
+ "reportTs": "2026-11-16 20:23",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-08-21",
+  "asOf": "2026-11-16",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -235,14 +223,15 @@
     "rev": 318850687156,
     "op": 22485342269,
     "np": 7391870568,
-    "np_owner": 7391870568,
+    "np_owner": 8280518224,
     "equity": 149933736062,
     "equity_owner": 118921387684,
+    "equity_nci": 31012348378,
     "liab": 421248180938,
     "cfo": -14788435920,
     "eps_basic": 87,
     "opm": 7.1,
-    "roe": 6.2,
+    "roe": 7.0,
     "debt_ratio": 281.0
    },
    {
@@ -250,14 +239,15 @@
     "rev": 268839122078,
     "op": 25645563681,
     "np": 12074733764,
-    "np_owner": 12074733764,
+    "np_owner": 12977282637,
     "equity": 147742892486,
     "equity_owner": 111491869425,
+    "equity_nci": 36251023061,
     "liab": 388891992199,
     "cfo": -3000882452,
     "eps_basic": 261,
     "opm": 9.5,
-    "roe": 10.8,
+    "roe": 11.6,
     "debt_ratio": 263.2
    },
    {
@@ -268,6 +258,7 @@
     "np_owner": 22491074630,
     "equity": 106612345647,
     "equity_owner": 106486138811,
+    "equity_nci": 126206836,
     "liab": 299328030265,
     "cfo": 20735318067,
     "eps_basic": 444,
@@ -283,6 +274,7 @@
     "np_owner": 9656471865,
     "equity": 85384823391,
     "equity_owner": 85156836519,
+    "equity_nci": 227986872,
     "liab": 305451917704,
     "cfo": -25336595901,
     "eps_basic": 191,
@@ -293,12 +285,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 74881773359,
-    "op": 2472084272,
-    "np_owner": 392722944
-   },
-   {
     "q": "2025Q3",
     "rev": 75117316645,
     "op": 3997488742,
@@ -308,40 +294,49 @@
     "q": "2025Q4",
     "rev": 94675020615,
     "op": 10081329181,
-    "np_owner": 2529303625
+    "np_owner": 3417951281
    },
    {
     "q": "2026Q1",
     "rev": 108396221463,
     "op": 3760781819,
-    "np_owner": 275674445
+    "np_owner": 697747962
    },
    {
     "q": "2026Q2",
     "rev": 108304341195,
     "op": 8161426426,
-    "np_owner": 4783122848
+    "np_owner": 5403467100
+   },
+   {
+    "q": "2026Q3",
+    "rev": 103220077282,
+    "op": 9840292299,
+    "np_owner": 1641778256
    }
   ],
   "valuation": {
-   "price": 2025,
-   "mcap": 0.206,
+   "price": 2085,
+   "mcap": 0.2121,
    "shares": 101704484,
-   "total_shares": 95632844,
-   "wavg_shares": 76648443,
-   "per": 15.577,
-   "eps": 130,
-   "pbr": 1.4403,
-   "bps": 1406,
-   "roe_ttm": 9.4,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": 11371571618,
-   "pbr_krx": 1.63,
+   "total_shares": 101704484,
+   "wavg_shares": 93289076,
+   "per": 17.669,
+   "eps": 118,
+   "pbr": 1.404,
+   "bps": 1485,
+   "roe_ttm": 8.9,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": 11160944599,
+   "ccy": "KRW",
+   "bps_src": "자체",
+   "eps_src": "공시",
+   "pbr_krx": 1.68,
    "bps_krx": 1244.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
-   "div": 0.0,
-   "bps_denom_fixed": "발행총수"
+   "div": 0.0
   }
- }
+ },
+ "textRules": 2
 }
