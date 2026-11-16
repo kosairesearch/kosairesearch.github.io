@@ -1,220 +1,230 @@
 {
  "title": {
-  "ko": "사업재편 갈림길, 실적은 여전히 적자",
-  "en": "Business Pivot at a Crossroads, Losses Persist"
+  "ko": "AI 서버 전환 착수, 4년 연속 영업적자가 과제",
+  "en": "AI server pivot starts as four straight years of operating losses weigh"
  },
  "lead": {
-  "ko": "디스플레이 장비 제조업체에서 K-콘텐츠 커머스로, 다시 AI 서버·데이터센터 인프라 사업으로 정체성을 바꿔온 넥사다이내믹스는 2026년 9월 15일 임시주주총회를 앞두고 또 한 번의 최대주주 변경과 사업목적 추가를 준비하고 있으며, 그 사이 본업 매출은 축소되고 손실은 누적되어 왔다.",
-  "en": "Nexa Dynamics, which has shifted its identity from display equipment manufacturing to K-content commerce and now toward AI server and data center infrastructure, is preparing for another change of controlling shareholder and a new business purpose at an extraordinary general meeting scheduled for September 15, 2026, while its core revenue has shrunk and losses have accumulated in the interim."
+  "ko": "넥사다이내믹스는 디스플레이 장비 매출이 줄어드는 가운데 AI 서버, K뷰티, 콘텐츠 커머스로 사업 축을 넓히고 있으나, 2022년부터 이어진 영업적자와 전환사채에 기댄 자금조달 구조는 아직 해소되지 않았다.",
+  "en": "Nexa Dynamics is widening into AI servers, K-beauty and content commerce as its display equipment sales shrink, but operating losses that have run since 2022 and its reliance on convertible bonds remain unresolved."
  },
  "keypoints": [
   {
-   "ko": "2026년 9월 15일 임시주주총회에서 신규 최대주주 시원이노텍의 130억원 제3자배정 유상증자 납입 및 AI 서버·데이터센터 사업목적 추가가 처리될 예정",
-   "en": "An extraordinary general meeting on September 15, 2026 is set to process new controlling shareholder Siwon Innotech's 13.0 billion won third-party share placement and the addition of AI server and data center business purposes"
+   "ko": "2025년 매출은 130억원으로 전년 대비 51.9% 증가했으나 영업손실은 94.6억원으로 손실 폭이 커졌다.",
+   "en": "Revenue for 2025 rose 51.9% to KRW 13 billion, yet the operating loss widened to KRW 9.46 billion."
   },
   {
-   "ko": "2025년 매출은 130.1억원으로 전년 대비 늘었지만 영업손실 94.6억원, 지배주주 순손실 120.7억원으로 손실 규모는 오히려 확대",
-   "en": "2025 revenue rose year over year to 13.01 billion won, but the operating loss widened to 9.46 billion won and the owner net loss to 12.07 billion won"
+   "ko": "2026년 9월 유상증자 대금 130억원의 전액 납입이 완료돼 AI GPU 서버 생산라인 투자 자금이 마련됐고, 2027년 양산이 목표다.",
+   "en": "A KRW 13 billion rights offering was fully paid in September 2026, funding a GPU server line targeted for mass production in 2027."
   },
   {
-   "ko": "2026년 1분기·2분기 매출은 각각 5.8억원, 8.6억원 수준으로 과거 연간 매출 규모에 크게 못 미치는 저조한 흐름",
-   "en": "Revenue in Q1 and Q2 2026 came to only about 0.58 billion won and 0.86 billion won respectively, far below the company's historical annual revenue scale"
+   "ko": "2026년 3분기 영업손실은 11.1억원으로 전년 동기 28.1억원보다 줄었지만, 지배주주 순손실은 32.7억원으로 전년 동기보다 늘었다.",
+   "en": "The operating loss in 3Q 2026 narrowed to KRW 1.11 billion from KRW 2.81 billion a year earlier, while the controlling-shareholder net loss widened to KRW 3.27 billion."
   },
   {
-   "ko": "FY2025 감사보고서에서 감사의견 '적정'과 법인세비용차감전계속사업손실률 50% 이하 확인으로 관리종목 지정 우려는 일부 완화",
-   "en": "The FY2025 audit report received an unqualified opinion and confirmed the pre-tax loss ratio was managed below 50%, easing some concerns about administrative issue designation"
+   "ko": "2026년 9월 최대주주가 시원이노텍(28.71%)으로 바뀌었고 대표이사도 교체됐다.",
+   "en": "The largest shareholder changed to a 28.71% holder in September 2026, and the CEO was replaced."
   },
   {
-   "ko": "잦은 사명·최대주주 변경과 전환사채·소액공모 등 외부자금조달 반복으로 부채비율이 2022년 72.1%에서 2025년 173.8%로 상승",
-   "en": "Repeated name and controlling-shareholder changes alongside recurring external financing via convertible bonds and small-scale offerings pushed the debt ratio from 72.1% in 2022 to 173.8% in 2025"
+   "ko": "2025년 말 부채비율은 173.8%, 영업활동 현금흐름은 -81억원으로 재무 부담이 커진 상태다.",
+   "en": "The debt ratio reached 173.8% at end-2025, and operating cash flow was -KRW 8.1 billion."
   }
  ],
  "business": {
-  "ko": "넥사다이내믹스는 2004년 설립된 디스플레이 장비업체로, FPD(평판디스플레이) 생산설비와 시스템통합, 소프트웨어 개발·공급을 주력으로 삼아왔다. 2013년 코넥스에 입성한 뒤 2021년 IBKS제14호스팩과 합병해 코스닥에 상장했으며, 2025년 3월 사명을 에스에이티에서 넥사다이내믹스로 변경하며 콘텐츠·마케팅·커머스를 아우르는 신규 성장 영역으로의 사업 확장을 추진해 왔다. 현재 사업 구조는 크게 스마트솔루션과 K-콘텐츠 커머스 두 축으로 구성되며, 스마트솔루션 부문은 LCD·OLED 등 디스플레이 패널 제작을 위한 본딩 및 검사 시스템, 물류자동화 시스템을 개발·생산하는 기존 핵심 사업이다. K-콘텐츠 커머스 부문은 콘텐츠 IP, 디지털 마케팅, 브랜드 및 커머스를 유기적으로 연결하는 신성장 사업으로, 단순한 제작에 그치지 않고 콘텐츠를 통해 형성된 팬덤을 구매 전환으로 연결하는 브랜디드 커머스 구조를 지향한다. 회사는 2026년 4월 아시아 아티스트 어워즈 운영사인 더스타파트너 지분 100%를 약 200억원에 인수하고, 버추얼 엔터테인먼트 기업 엘브이넥서스 지분 45%를 취득하는 등 한·일 엔터테인먼트 밸류체인 확보에 나섰다. K-뷰티 브랜드 비알머드와 스포츠 케어 제품 유통, 배우 장근석 주연 드라마에 대한 메인 제작투자 참여 등 브랜드·콘텐츠 사업도 병행하고 있다. 그런데 2026년 8월 말 기존 최대주주 글로벌씨앤디가 신설법인 시원이노텍과 경영권 변경 계약을 체결하면서, 회사는 다시 한 번 AI 서버 및 데이터센터 인프라 사업으로의 체질 개선을 예고했다. 이처럼 짧은 기간 안에 디스플레이 장비 → K-콘텐츠 커머스 → AI 서버·데이터센터로 사업 축이 반복적으로 이동해온 점이 이 회사의 가장 뚜렷한 특징이다.",
-  "en": "Nexa Dynamics is a display equipment maker founded in 2004, historically focused on flat panel display (FPD) production equipment, systems integration, and software development and supply. The company entered KONEX in 2013 and listed on KOSDAQ in 2021 through a merger with IBKS 14th SPAC, then changed its name from SAT to Nexa Dynamics in March 2025 while pursuing expansion into content, marketing, and commerce as new growth areas. Its current business structure centers on two pillars, Smart Solutions and K-content commerce, with the Smart Solutions segment covering bonding and inspection systems for LCD and OLED panel production along with logistics automation systems as its legacy core business. The K-content commerce segment is a new growth business connecting content IP, digital marketing, and brand commerce, aiming for a branded commerce structure that converts fandom generated through content into purchases rather than stopping at production alone. In April 2026 the company acquired 100% of The Star Partner, operator of the Asia Artist Awards, for roughly 20 billion won and took a 45% stake in virtual entertainment company LV Nexus, moving to secure a Korea-Japan entertainment value chain. It has also pursued brand and content businesses in parallel, including the K-beauty brand BRMUD, sports care product distribution, and main production investment in a drama starring actor Jang Keun-suk. However, at the end of August 2026 the previous controlling shareholder Global C&D signed a management-control transfer agreement with newly established Siwon Innotech, and the company has again signaled a shift toward AI server and data center infrastructure. This repeated pivoting of business focus within a short period, from display equipment to K-content commerce to AI server and data center infrastructure, stands as the company's most distinctive characteristic."
+  "ko": "넥사다이내믹스의 주력은 디스플레이 제조장비를 공급하는 스마트솔루션 부문이다. 회사는 초정밀 얼라이먼트와 본딩 기술을 바탕으로 디스플레이 공정 장비와 물류자동화 설비를 공급해 왔으며, 최근에는 AI 기반 공정 제어와 무인 자동화를 접목한 통합형 솔루션으로 영역을 넓히고 있다고 밝혔다. 장비 부문 매출은 2025년 120억 4,000만원이었고, 이 가운데 수출 비중은 29.7%에서 97.2%로 높아졌다. 장비 수출액은 2024년 25억 4,000만원에서 2025년 약 117억원으로 늘었다는 것이 회사 발표(2026년 4월 2일 보도)다. 회사는 CSOT, BOE, HKC, 샤프, 폭스콘 등 글로벌 디스플레이 고객사와 협력 관계를 유지하고 있다고 설명했다. 신사업인 화장품 유통은 2025년 3분기에 시작됐으며 2025년 연간 매출은 약 9억원이다. 2026년 상반기 K뷰티 매출은 약 7억원으로 전체 매출의 45.5%를 차지했고, 그 가운데 96%가 수출이다. 콘텐츠 커머스는 드라마 제작에 메인 투자자로 참여해 콘텐츠 지식재산권 지분을 확보하는 방식으로 시작됐으며 아직 초기 단계다. 2026년 9월에는 AI GPU 서버 제조 사업으로의 전환을 본격화한다고 밝혔다. 이 사업은 국내 AI 서버 완제품 시장을 슈퍼마이크로, 델, HPE 등 해외 업체가 장악한 구조에 새로 들어가는 것이다. 사업 구조는 장비 중심에서 장비, K뷰티, AI 서버가 병존하는 형태로 옮겨 가는 중이다.",
+  "en": "Nexa Dynamics' core business is its Smart Solutions segment, which supplies display manufacturing equipment such as bonding systems and logistics automation. The company says it is extending that base into integrated solutions that add AI-based process control and unmanned automation. Equipment sales for 2025 were KRW 12.04 billion, and the export share rose from 29.7% to 97.2%. Equipment exports grew from KRW 2.54 billion in 2024 to about KRW 11.7 billion in 2025, according to a company announcement reported in April 2026. The company says it maintains relationships with major display customers including CSOT, BOE, HKC, Sharp and Foxconn. Its cosmetics distribution business started in the third quarter of 2025 and generated about KRW 900 million of sales in 2025. In the first half of 2026, K-beauty sales were about KRW 700 million, or 45.5% of total sales, and 96% of that was exports. Content commerce began with a main investment in a drama production that secured an equity stake in the drama's intellectual property, and it remains at an early stage. In September 2026 the company said it would move forward with AI GPU server manufacturing, a finished-product market where overseas makers such as Supermicro, Dell and HPE dominate. The business mix is shifting from equipment alone toward equipment, K-beauty and AI servers operating side by side."
  },
  "earnings": {
-  "ko": "연간 매출은 2022년 329.4억원에서 2023년 161.8억원, 2024년 85.7억원으로 두 해 연속 급감한 뒤 2025년 130.1억원으로 반등했다. 그러나 매출 회복과 무관하게 손익은 계속 악화되어, 영업손실은 2022년 1.6억원에서 2023년 85.6억원, 2024년 84.0억원, 2025년 94.6억원으로 오히려 확대됐고 영업이익률은 2022년 -0.5%에서 2024년 -98.1%, 2025년 -72.7%까지 떨어졌다. 지배주주 순이익은 2022년 7.8억원 흑자를 기록했으나 이후 세 해 연속 적자로 전환돼 2023년 -64.2억원, 2024년 -83.1억원, 2025년 -120.7억원까지 손실 규모가 커졌다. 분기별로 보면 2025년 2분기 매출 9.8억원·영업손실 29.1억원, 3분기 매출 12.0억원·영업손실 28.1억원, 4분기 매출 17.6억원·영업손실 18.6억원을 기록했고, 2026년 들어 1분기 매출 5.8억원·영업손실 17.6억원, 2분기 매출 8.6억원·영업손실 26.1억원으로 매출 규모가 오히려 더 축소되면서도 손실은 지속됐다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 합산 지배주주 순손실은 약 113.0억원에 달한다. 현금흐름 역시 악화되어 영업활동현금흐름은 2022년 +3.8억원에서 2023년 -37.1억원, 2024년 -9.8억원, 2025년에는 -81.0억원으로 크게 늘어난 마이너스를 기록했다. 자본 측면에서는 지배주주 자본총계가 2022년 272.0억원에서 2024년 177.7억원까지 줄었다가 2025년 206.0억원으로 다시 늘었는데, 이는 이익 개선이 아니라 잦은 유상증자·소액공모를 통한 외부자금 유입에 기인한 것으로 해석할 수 있다. 반면 부채비율은 2022년 72.1%에서 2025년 173.8%로 뚜렷하게 상승해 재무 부담이 커진 모습이다.",
-  "en": "Annual revenue fell sharply for two consecutive years, from 32.94 billion won in 2022 to 16.18 billion won in 2023 and 8.57 billion won in 2024, before rebounding to 13.01 billion won in 2025. Despite the revenue recovery, profitability continued to deteriorate: the operating loss actually widened from 0.16 billion won in 2022 to 8.56 billion won in 2023, 8.40 billion won in 2024, and 9.46 billion won in 2025, while the operating margin fell from -0.5% in 2022 to as low as -98.1% in 2024 and -72.7% in 2025. Owner net income was positive at 0.78 billion won in 2022 but turned negative for three straight years, with losses deepening to -6.42 billion won in 2023, -8.31 billion won in 2024, and -12.07 billion won in 2025. On a quarterly basis, revenue was 0.98 billion won with an operating loss of 2.91 billion won in Q2 2025, 1.20 billion won in revenue with a 2.81 billion won operating loss in Q3, and 1.76 billion won in revenue with an 1.86 billion won operating loss in Q4; entering 2026, revenue shrank further to 0.58 billion won with a 1.76 billion won operating loss in Q1 and 0.86 billion won with a 2.61 billion won operating loss in Q2, with losses persisting even as revenue scale contracted. The owner net loss summed over the most recent four quarters (Q3 2025 through Q2 2026) reached approximately 11.30 billion won. Cash flow also deteriorated, with operating cash flow swinging from +0.38 billion won in 2022 to -3.71 billion won in 2023, -0.98 billion won in 2024, and a much larger negative 8.10 billion won in 2025. On the capital side, owner's equity fell from 27.20 billion won in 2022 to 17.77 billion won in 2024 before rising back to 20.60 billion won in 2025, a pattern better explained by frequent capital raises via rights offerings and small-scale public offerings than by earnings improvement. The debt ratio, meanwhile, rose noticeably from 72.1% in 2022 to 173.8% in 2025, indicating an increasing financial burden."
+  "ko": "공시 기준 연간 매출은 2022년 329억원에서 2023년 162억원(전년 대비 50.9% 감소), 2024년 85.7억원(전년 대비 47.0% 감소)으로 줄었다가 2025년 130억원(전년 대비 51.9% 증가)으로 늘었다. 2022~2025년 중 가장 큰 해는 2022년이고 가장 작은 해는 2024년이다. 회사는 2025년 매출 증가의 배경으로 신규 수주사업의 안정적 수행을 꼽았다. 같은 해 영업손실은 94.6억원으로 전년 대비 적자가 확대됐으며, 회사는 원가율 상승과 판매관리비 증가를 이익 감소 요인으로 설명했다. 영업이익률은 2022년 -0.5%, 2023년 -52.9%, 2024년 -98.1%, 2025년 -72.7%로 나타났다. 영업손실은 2022년 1.6억원에서 2023년 85.6억원으로 급격히 커진 뒤 2024년 84억원으로 줄었고, 2025년에는 다시 94.6억원으로 늘었다. 지배주주 순이익은 2022년 7.8억원 흑자에서 2023년 지배주주 순손실 64.2억원으로 적자 전환했고, 2025년 지배주주 순손실은 121억원까지 커졌다. 당기순손실(비지배지분 포함)은 2025년 142억원으로 지배주주 순손실보다 크다. 영업활동 현금흐름은 2022년 3.8억원 유입에서 2025년 -81억원으로 악화됐고, 2025년 중 현금 및 현금성 자산은 101.6억원에서 43.4억원으로 줄었다고 데일리연합이 보도했다. 분기로 보면 매출은 2025년 4분기 17.6억원에서 2026년 1분기 5.8억원으로 66.8% 줄었고, 2분기 8.6억원, 3분기 8.1억원으로 일부 회복됐다. 3분기 매출은 전년 동기 대비 32.0% 감소했다. 2026년 3분기 영업손실은 11.1억원으로 2025년 3분기 28.1억원보다 줄었지만, 지배주주 순손실은 32.7억원으로 전년 동기 32.1억원보다 늘었다. 최근 4개 분기 지배주주 순손실 합계는 114억원이다. 2025년 3분기까지의 누적 외주가공비가 58억원 발생해 매출원가 부담이 컸다는 보도도 있다. 매출 규모가 2025년 수준으로 돌아오지 않은 가운데 원가와 판관비 구조가 손익을 좌우하고 있다.",
+  "en": "On a DART-filed basis, annual revenue went from KRW 32.9 billion in 2022 to KRW 16.2 billion in 2023 (down 50.9% year on year) and KRW 8.57 billion in 2024 (down 47.0%), before rising to KRW 13 billion in 2025 (up 51.9%). The largest year in 2022 to 2025 was 2022, and the smallest was 2024. The company attributed the 2025 revenue increase to the stable execution of newly won contracts. Operating losses, however, widened to KRW 9.46 billion in 2025 from KRW 8.4 billion in 2024, and the company cited a higher cost ratio and rising selling, general and administrative expenses. The operating margin was -0.5% in 2022, -52.9% in 2023, -98.1% in 2024 and -72.7% in 2025. The operating loss jumped from KRW 159 million in 2022 to KRW 8.56 billion in 2023, eased to KRW 8.4 billion in 2024 and widened again to KRW 9.46 billion in 2025. Controlling-shareholder net income turned from a profit of KRW 783 million in 2022 to a net loss of KRW 6.42 billion in 2023, and that loss widened to KRW 12.1 billion in 2025. Net loss including non-controlling interests was KRW 14.2 billion in 2025. Operating cash flow moved from a KRW 381 million inflow in 2022 to -KRW 8.1 billion in 2025, and a press report said cash and cash equivalents fell from KRW 10.16 billion to KRW 4.34 billion during 2025. Quarterly revenue fell 66.8% from KRW 1.76 billion in 4Q 2025 to KRW 584 million in 1Q 2026, then recovered to KRW 865 million in 2Q and KRW 813 million in 3Q 2026, which was down 32.0% year on year. Operating loss in 3Q 2026 was KRW 1.11 billion, narrower than KRW 2.81 billion in 3Q 2025, while the controlling-shareholder net loss widened to KRW 3.27 billion from KRW 3.21 billion. The controlling-shareholder net loss over the last four quarters totaled KRW 11.4 billion. A press report said outsourced processing costs reached KRW 5.8 billion in the first three quarters of 2025, adding to cost-of-sales pressure. With revenue still below 2025 levels, cost of sales and selling and administrative expenses are shaping the bottom line."
  },
  "industry": {
-  "ko": "스마트솔루션 부문이 속한 디스플레이 장비 산업은 국내 패널업체들의 LCD 생산 축소와 중국 업체로의 생산 이전, OLED 전환 등 구조적 변화 속에서 신규 설비투자(capex) 수요가 정체된 성숙기 국면에 있다. 이런 환경에서 회사는 기존 디스플레이 제조 장비 분야에서 축적한 정밀 제어, 공정 설계, 설비 제작 역량을 기반으로 제조 자동화 설비 시장에서 사업 기회를 넓혀간다는 계획을 밝혔다. 실제로 2026년 5월에는 미국 지역에 공급되는 제조공정용 자동화 조립라인 제작 및 셋업 계약을 54억원 규모로 수주했는데, 이는 회사의 전년도 매출액 대비 41.5%에 해당하는 규모였다. K-콘텐츠 커머스 부문이 속한 콘텐츠·뷰티·엔터테인먼트 시장은 국내외 팬덤 경제와 브랜드 커머스가 맞물려 성장하는 영역이지만, 대형 엔터테인먼트사와 유통 플랫폼이 이미 자리잡은 경쟁이 치열한 시장이어서 신규 진입자로서의 지위는 초기 단계에 머물러 있다. 여기에 더해 2026년 9월 예정된 임시주주총회를 계기로 회사는 지난해 3월 최대주주 변경 이후 확대해 온 K-뷰티 유통 및 한류 콘텐츠 커머스 사업에서 나아가, 향후 AI 서버 및 데이터센터 인프라 사업을 기반으로 고부가가치 비즈니스 모델로 체질을 개선할 방침을 예고했다. AI 서버·데이터센터 인프라 시장은 최근 수요가 빠르게 확대되는 영역이나, 대규모 설비투자와 반도체·네트워크 분야의 전문성이 요구되는 자본집약적 사업으로, 신규 진입 시점에서의 경쟁 구도와 실행력은 아직 검증되지 않았다.",
-  "en": "The display equipment industry that houses the Smart Solutions segment is in a mature phase with stagnant new capital expenditure demand, amid structural shifts including domestic panel makers reducing LCD production, shifting production to Chinese manufacturers, and transitioning toward OLED. Against this backdrop, the company has stated a plan to expand opportunities in the manufacturing automation equipment market by leveraging precision control, process design, and equipment fabrication capabilities accumulated in its legacy display manufacturing equipment business. Indeed, in May 2026 the company won a 5.4 billion won contract to build and set up an automated assembly line for a manufacturing process supplied to the United States, a size equivalent to 41.5% of its prior year's revenue. The content, beauty, and entertainment market that houses the K-content commerce segment is growing at the intersection of domestic and overseas fandom economies and brand commerce, but it is a fiercely competitive market already occupied by large entertainment companies and distribution platforms, leaving the company's position as a new entrant still at an early stage. Furthermore, ahead of the extraordinary general meeting scheduled for September 2026, the company signaled that beyond the K-beauty distribution and Korean-wave content commerce businesses it had expanded since the change of controlling shareholder in March of the previous year, it plans to improve its business quality going forward based on an AI server and data center infrastructure business as a higher value-added model. The AI server and data center infrastructure market has recently seen rapidly expanding demand, but it is a capital-intensive business requiring large-scale facility investment and expertise in semiconductors and networking, and the competitive positioning and execution capability of a new entrant at this stage remain unverified."
+  "ko": "넥사다이내믹스의 핵심 전방 시장은 디스플레이 패널 제조사의 설비 투자다. 회사는 국내 디스플레이 장비 투자가 둔화된 가운데서도 2025년 수출이 약 4.6배 늘었다고 밝혔다. 이는 실적의 중심이 해외 패널 고객사 발주로 옮겨 갔다는 뜻이며, 국내 투자는 선별 집행으로 내수 환경이 위축된 상태다. 2026년 2월 보도는 디스플레이 산업 침체가 수년째 이어지면서 후방 장비 업체가 실적 반등의 실마리를 찾지 못하고 있다고 전했다. 같은 보도는 칩과 회로를 정밀하게 접합하는 본딩 기술력을 회사가 인정받고 있다고 평가했다. 2026년 상반기 장비 매출은 약 6억원으로, 2025년 연간 120억원대에서 크게 줄었다. AI 서버 시장에서 국내는 HBM과 DDR 메모리, 엔터프라이즈 SSD 같은 핵심 부품에 강점이 있지만, 이를 결합한 GPU 서버 완제품은 슈퍼마이크로, 델, HPE 등 해외 업체가 장악하고 있다. 회사는 국내 AI 서버 시장의 외산 의존도가 100%에 달한다고 설명한다. 업종 분류는 자동차이나 사업 본문은 디스플레이 제조장비와 AI 서버 하드웨어에 집중돼 있어, 자동차 부품 업황이 실적을 직접 좌우하는 구조는 아니다. 디스플레이 장비와 AI 서버 두 축 모두 고객사 투자 사이클에 민감하다는 점이 업황 내 위치를 정한다.",
+  "en": "The core end market for Nexa Dynamics is capital spending by display panel makers. The company said its exports rose about 4.6 times in 2025 even as domestic display equipment investment slowed, which indicates that overseas panel customers now drive much of its orders. Domestic spending has been selectively executed, and the domestic market has weakened. A February 2026 press report said a prolonged display industry downturn has left upstream equipment makers without a clear path to a earnings rebound. The same report noted that the company is recognized for its bonding technology, which precisely joins chips and circuits. Equipment sales in the first half of 2026 were about KRW 600 million, sharply below the 2025 annual level of roughly KRW 12 billion. In AI servers, Korea has strength in core components such as HBM, DDR memory and enterprise SSDs, but finished GPU servers that combine them are dominated by overseas makers including Supermicro, Dell and HPE. The company describes domestic dependence on foreign suppliers in AI servers as 100%. Its exchange classification is automobiles, but the business description centers on display manufacturing equipment and AI server hardware, so auto-parts cycles do not directly drive its earnings. Both of its business lines depend on customer investment cycles, which defines its position in the industry."
  },
  "outlook": {
-  "ko": "가장 가까운 이벤트는 2026년 9월 15일 예정된 임시주주총회로, 신규 사업목적 추가를 위한 정관 일부 변경의 건과 사내이사·사외이사 선임의 건이 상정되어 처리될 예정이다. 이번 임시주총은 최대주주 변경에 따른 새로운 경영진 선임과 신사업 진출을 진행하기 위한 절차로, 새 최대주주로 올라서는 시원이노텍은 같은 날 총 130억원 규모의 제3자배정 유상증자 대금을 신주 발행가액 1,041원에 납입할 예정이다. 신규 이사진 후보에는 SK하이닉스 부사장 출신, 전 인텔코리아 전무 출신 등 반도체·ICT 대기업 경력자들이 포함되어 있어, 경영진 교체와 함께 사업 방향이 AI 서버 및 데이터센터 인프라 쪽으로 재편될 가능성이 예고된 상태다. 다만 시원이노텍은 2026년 7월 설립된 신생법인으로, 인수대금 조달을 자체 전환사채 발행에 의존할 계획인 것으로 알려져 있어 실제 대금 납입 여부와 조건이 첫 관찰 포인트가 된다. 스마트솔루션 부문에서는 2026년 5월 수주한 54억원 규모의 미국 자동화 조립라인 턴키 계약이 2027년 9월까지 계약 기간 동안 매출로 인식될 예정이어서, 향후 분기 실적에 반영되는 속도와 규모를 확인할 필요가 있다. K-콘텐츠 커머스 부문에서는 더스타파트너·엘브이넥서스 인수 및 장근석 주연 드라마 IP 투자 등이 실제 수익화 단계로 이어지는지가 관전 포인트다. 재무구조 측면에서는 2025년 11월 발행 결정되고 2026년 4월 조건이 변경된 45억원 규모 전환사채(만기 2029년, 만기이자율 5.0%)의 자금 사용 목적이 운영자금에서 타법인 증권 취득자금으로 바뀐 점에서, 향후 추가 인수합병이나 지분투자 가능성도 함께 지켜볼 대상이다.",
-  "en": "The nearest event is the extraordinary general meeting scheduled for September 15, 2026, at which an amendment to the articles of incorporation to add new business purposes and the appointment of inside and outside directors are set to be tabled and processed. This meeting is a procedure for appointing new management and advancing into new business following the change of controlling shareholder, with incoming controlling shareholder Siwon Innotech scheduled to pay in a 13.0 billion won third-party share placement at an issue price of 1,041 won on the same day. Candidates for the new board include individuals with backgrounds at semiconductor and ICT conglomerates, including a former SK Hynix vice president and a former Intel Korea executive managing director, signaling that alongside the management change, the business direction may be realigned toward AI server and data center infrastructure. However, since Siwon Innotech is a newly established entity founded in July 2026 reportedly planning to fund the acquisition through its own convertible bond issuance, whether the payment is actually made and under what terms is the first point to watch. In the Smart Solutions segment, the 5.4 billion won turnkey contract for a US automation assembly line won in May 2026 is set to be recognized as revenue over a contract period running through September 2027, making the pace and scale of its reflection in upcoming quarterly results worth monitoring. In the K-content commerce segment, whether the acquisitions of The Star Partner and LV Nexus and the drama IP investment starring Jang Keun-suk translate into actual monetization is a point to watch. On the financial structure side, given that the purpose of the 4.5 billion won convertible bond decided in November 2025 and revised in April 2026 (maturing 2029, 5.0% coupon) was changed from working capital to funding the acquisition of equity in other companies, the possibility of further M&A or equity investments also warrants attention."
+  "ko": "가장 구체적인 확인 지점은 AI GPU 서버 사업이다. 회사는 2026년 9월 이사회 결의 유상증자 대금 130억원이 전액 납입됐다고 밝혔다. 확보한 자금으로 경기도 시화 국가산업단지 공장 2층에 3,000제곱미터 규모의 GPU 서버 전용라인을 구축한다. 운영시설 2,000제곱미터와 생산구역 1,000제곱미터로 구성되며, GPU 서버 조립과 품질 테스트 설비가 들어선다. 2026년 4분기 시험생산을 거쳐 2027년부터 본격 양산에 들어가고, 초기 전문인력 60여 명을 배치할 방침이다. 초기 수요는 디씨코리아(DC Korea)와 디씨피(DCP) 그룹과의 협업으로 선점하겠다는 구상이다. 수도권 도심형 엣지 AI 데이터센터와 충남 당진 하이퍼스케일 데이터센터에 자체 제조 서버를 연계 공급하는 방안도 제시됐다. 회사는 300억원 규모 추가 유상증자를 병행 추진한다고 밝혔다. 일본 기업과의 AI 서버 및 부속품 공급 계약은 약 16.0억원 규모로 보도됐으며, 이는 2025년 매출의 12.2%에 해당한다. 콘텐츠 커머스는 K뷰티에서 K패션과 K푸드로 확장 가능성을 열어 두었고, 회사는 단기 매출보다 중장기 브랜드 자산 축적에 무게를 둔다고 밝혔다. 장비 부문은 국내 디스플레이 투자 재개 여부와 해외 고객사의 추가 수주가 관건이다. 다음 확인 지점은 2026년 4분기 시험생산 착수, 300억원 유상증자의 일정과 조건, 2027년 양산 전후의 수주 규모다.",
+  "en": "The most concrete checkpoint is the AI GPU server business. The company said in September 2026 that the full payment for its KRW 13 billion rights offering had been made. The proceeds will fund a dedicated GPU server line of 3,000 square meters on the second floor of its plant in the Siheung National Industrial Complex in Gyeonggi Province, made up of 2,000 square meters of operations space and 1,000 square meters of production area. The line will house GPU server assembly and quality test equipment. Trial production is planned for 4Q 2026, full mass production starts in 2027, and about 60 initial technical staff are to be deployed. Early demand is to be secured through collaboration with DC Korea and the DCP group. The company also plans to supply its in-house servers to an urban edge AI data center in the Seoul metropolitan area and a hyperscale data center in Dangjin, South Chungcheong Province. The company said it is pursuing an additional KRW 30 billion rights offering in parallel. A press report put a supply contract with a Japanese company for AI servers and components at about KRW 1.6 billion, equal to 12.2% of 2025 revenue. In content commerce, the company has opened the door to expanding from K-beauty into K-fashion and K-food, with emphasis on medium-term brand assets rather than short-term sales. The equipment business depends on whether domestic panel investment recovers and on new orders from overseas customers. The next checkpoints are the start of trial production in 4Q 2026, the timing and terms of the KRW 30 billion rights offering, and the scale of AI server orders around the 2027 mass-production start."
  },
  "valuation_comment": {
-  "ko": "회사는 수년째 순손실이 이어지고 있어 주가수익비율 같은 이익 기반 지표는 의미 있는 해석이 어려운 상태다. 자체 산출 기준 순자산가치 대비 주가 수준을 살펴보면, 산출 방식에 따라 순자산 대비 프리미엄의 폭이 크게 달라질 수 있다는 점이 눈에 띈다. 최근 몇 년간 잦은 유상증자·전환사채 발행·소액공모로 발행주식수가 반복적으로 늘어나면서, 주당 지표의 기준이 되는 총 주식수 자체가 자주 변동돼 온 점도 밸류에이션 해석에 영향을 준다. 배당은 최근 지급 이력이 없어 배당 관련 지표는 현재로서는 큰 의미를 갖기 어렵다. 매출 규모 대비 시가총액, 순자산 대비 주가 수준 등은 향후 임시주주총회를 계기로 한 사업 재편 결과와 자금조달 구조 변화에 따라 재평가될 소지가 있는 구간으로 판단된다.",
-  "en": "The company has posted net losses for several consecutive years, making earnings-based metrics such as the price-to-earnings ratio difficult to interpret meaningfully. Looking at the share price relative to net asset value on a self-calculated basis, it is notable that the size of the premium or discount to net assets can vary considerably depending on the calculation method used. The interpretation of valuation is also affected by the fact that the total share count, which serves as the basis for per-share metrics, has changed repeatedly in recent years due to frequent rights offerings, convertible bond issuances, and small-scale public offerings. There has been no recent dividend payment history, so dividend-related metrics carry little meaningful weight at present. Market capitalization relative to revenue scale and the share price relative to net assets appear to be in a range that could be reassessed depending on the outcome of the upcoming business realignment tied to the extraordinary general meeting and any resulting changes to the financing structure."
+  "ko": "최근 4개 분기 기준 지배주주 순손실이 이어져 PER은 산출되지 않는다. 그래서 이익 대비 배수보다 순자산 대비 배수인 PBR이 주된 비교 기준이 된다. 2026년 3월부터 10월 초까지 여러 투자지표 사이트가 집계한 PBR은 대체로 6배에서 8배 사이였으며, 현재 PBR은 이 구간보다 낮은 수준이다. 그럼에도 순자산보다 높은 가격에 거래되는 프리미엄 구간이라는 점은 같다. 2025년 말 자본총계는 213억원이며 그중 지배주주 지분은 206억원이고, 부채총계는 370억원이다. 부채가 자본보다 많은 상태라 재무 레버리지에 따른 변동성이 배수 해석에도 함께 작용한다. 배당을 실시하지 않는 상태라 배당수익률 기준의 비교는 적용되지 않는다. 유상증자와 전환사채 전환이 이어지면 발행 주식 수가 늘어 주당 자산 기준 비교 결과도 달라지므로 발행 주식 수 변화를 함께 봐야 한다. 이익 기반 배수가 다시 산출되려면 최근 4개 분기 합산 순손실이 해소돼야 한다.",
+  "en": "Because the company has posted controlling-shareholder net losses over the last four quarters, PER cannot be calculated. Price-to-book is therefore the main reference point for comparison. Across several investment-data services, the PBR ran roughly between 6 and 8 times from March to early October 2026, and the current PBR is below that band. The market price still sits well above net assets, so the premium over book value remains the central feature of the valuation. Equity at end-2025 was KRW 21.3 billion, of which KRW 20.6 billion belonged to controlling shareholders, while total liabilities were KRW 37 billion. Liabilities exceed equity, so financial leverage adds to the volatility that shapes how the multiples should be read. The company does not pay dividends, so yield-based comparisons do not apply. Rights offerings and convertible bond conversions increase the share count, which changes per-share asset comparisons over time, so the share count trend must be read alongside the multiples. Earnings-based multiples can only return once the last four quarters of combined net losses are eliminated."
  },
  "bull": [
   {
    "title": {
-    "ko": "감사의견 '적정'으로 관리종목 우려 일부 해소",
-    "en": "Unqualified Audit Opinion Eases Some Administrative Issue Concerns"
+    "ko": "AI 서버 라인의 자금 확보",
+    "en": "Funding secured for the AI server line"
    },
    "body": {
-    "ko": "넥사다이내믹스는 2025사업연도 감사보고서를 통해 외부감사인의 감사의견 '적정'을 받았으며, 시장 일각에서 우려하던 법인세비용차감전계속사업손실률도 50% 이하로 관리되는 것으로 확인됐다. 계속기업 존속 관련 불확실성 역시 나타나지 않아, 상장 유지와 관련해 민감하게 받아들여지는 핵심 지표가 안정 구간에 들어왔다는 점이 확인된 셈이다. 이는 손실 규모 축소를 의미하지는 않지만, 재무 및 관리종목 리스크에 대한 시장의 우려를 일부 완화하는 요인으로 볼 수 있다.",
-    "en": "Nexa Dynamics received an unqualified opinion from its external auditor in the FY2025 audit report, and the pre-tax loss ratio that some market participants had worried about was confirmed to be managed below 50%. No uncertainty regarding going-concern status was noted either, indicating that a key metric sensitive to continued listing status has entered a stable range. While this does not mean losses have shrunk, it can be viewed as a factor that partially eases market concerns about financial and administrative-issue risk."
+    "ko": "2026년 9월 유상증자 대금 130억원이 전액 납입돼 GPU 서버 전용라인 구축 자금이 마련됐다. 시험생산은 2026년 4분기, 본격 양산은 2027년으로 계획돼 있다. 일본 기업과의 AI 서버 및 부속품 공급 계약 약 16.0억원도 보도됐다. 회사는 디씨코리아와 디씨피 그룹과 협업해 초기 물량을 국내 데이터센터에 연계 공급하겠다고 밝혔다.",
+    "en": "A KRW 13 billion rights offering was fully paid in September 2026, securing funds for a dedicated GPU server line. Trial production is planned for 4Q 2026 and mass production for 2027. A supply contract with a Japanese company for AI servers and components, worth about KRW 1.6 billion, was also reported. The company said it will work with DC Korea and the DCP group to supply initial volumes to domestic data centers."
    }
   },
   {
    "title": {
-    "ko": "신규 최대주주의 자본 유입과 기술 인력 영입",
-    "en": "New Controlling Shareholder's Capital Injection and Technical Talent Recruitment"
+    "ko": "장비 수출을 중심으로 한 해외 수요",
+    "en": "Overseas demand anchoring equipment sales"
    },
    "body": {
-    "ko": "새 최대주주로 올라설 예정인 시원이노텍은 130억원 규모의 제3자배정 유상증자 대금을 납입할 계획이며, 신규 이사진 후보에는 SK하이닉스 부사장 출신, 전 인텔코리아 전무 등 반도체·ICT 분야 전문가들이 포함돼 있다. 회사는 이를 계기로 K-뷰티·콘텐츠 커머스에서 AI 서버 및 데이터센터 인프라 사업으로 체질 개선을 추진할 방침을 예고했다. 자금 유입과 전문 인력 영입이 동시에 이뤄진다면 사업 재편의 실행력을 높이는 요인이 될 수 있다.",
-    "en": "Siwon Innotech, set to become the new controlling shareholder, plans to pay in a 13.0 billion won third-party share placement, and candidates for the new board include semiconductor and ICT experts such as a former SK Hynix vice president and a former Intel Korea executive managing director. The company has signaled it plans to use this as an opportunity to improve its business quality, moving from K-beauty and content commerce toward an AI server and data center infrastructure business. If capital inflow and expert talent recruitment occur together, it could be a factor that strengthens the execution of the business realignment."
+    "ko": "장비 수출액은 2024년 25억 4,000만원에서 2025년 약 117억원으로 늘었고, 장비 부문 매출 중 수출 비중은 29.7%에서 97.2%로 올랐다는 것이 회사 발표다. 회사는 CSOT, BOE, HKC, 샤프, 폭스콘 등 주요 고객사와 협력 관계를 유지해 추가 수주를 기대한다고 밝혔다. 국내 투자가 둔화된 상황에서 해외 고객 기반이 매출을 떠받치고 있다는 점이 이 시기의 특징이다.",
+    "en": "According to the company, equipment exports rose from KRW 2.54 billion in 2024 to about KRW 11.7 billion in 2025, and the export share of equipment sales increased from 29.7% to 97.2%. The company said it maintains relationships with major customers including CSOT, BOE, HKC, Sharp and Foxconn and expects additional orders. Overseas customers are holding up sales while domestic display investment has slowed."
    }
   },
   {
    "title": {
-    "ko": "스마트솔루션 부문의 해외 턴키 수주",
-    "en": "Overseas Turnkey Order Win in the Smart Solutions Segment"
+    "ko": "분기 영업손실 축소 흐름",
+    "en": "Narrowing quarterly operating loss"
    },
    "body": {
-    "ko": "회사는 2026년 5월 미국 지역에 공급되는 제조공정용 자동화 조립라인 제작 및 셋업 계약을 54억원 규모로 수주했으며, 이는 전년도 매출액 대비 41.5%에 해당하는 규모다. 단순 장비 공급을 넘어 현장의 공정 전반을 책임지는 턴키 방식의 통합 솔루션 사업으로, 기존 디스플레이 제조 장비 분야의 역량을 제조 자동화 설비 시장 전반으로 확장하는 사례로 평가된다. 이는 스마트솔루션 부문이 디스플레이 산업 편중에서 벗어나 사업 영역을 넓힐 수 있는 가능성을 보여준다.",
-    "en": "In May 2026 the company won a 5.4 billion won contract to build and set up an automated assembly line for a manufacturing process supplied to the United States, a size equivalent to 41.5% of its prior year's revenue. Going beyond simple equipment supply, it represents a turnkey integrated solution business responsible for the entire on-site process, seen as a case of expanding capabilities from the legacy display manufacturing equipment field into the broader manufacturing automation equipment market. This shows potential for the Smart Solutions segment to broaden its business scope beyond its historical concentration in the display industry."
+    "ko": "2026년 3분기 영업손실은 11.1억원으로 2025년 3분기 28.1억원에서 줄었다. 같은 분기 매출은 8.1억원으로 전년 동기 대비 32.0% 감소해, 매출이 줄었는데도 손실이 축소된 흐름이다. 비용 구조 변화가 이 추세를 이어 갈지가 다음 분기의 확인 지점이다.",
+    "en": "The operating loss in 3Q 2026 was KRW 1.11 billion, narrower than KRW 2.81 billion in 3Q 2025. Revenue in the same quarter was KRW 813 million, down 32.0% year on year, so the loss narrowed even as sales fell. Whether the cost structure keeps this trend going is the next quarterly checkpoint."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "매출 규모 급격한 축소와 지속되는 손실",
-    "en": "Sharp Revenue Contraction and Persistent Losses"
+    "ko": "4년 연속 영업적자와 손실 확대",
+    "en": "Four straight years of operating losses"
    },
    "body": {
-    "ko": "2026년 1분기와 2분기 매출은 각각 5.8억원, 8.6억원으로 과거 연간 매출 규모(2022년 329억원, 2025년 130억원)에 크게 못 미치는 수준으로 축소됐다. 매출 규모가 줄어드는 가운데서도 영업손실은 각각 17.6억원, 26.1억원으로 매 분기 지속됐으며, 최근 네 개 분기 합산 지배주주 순손실은 약 113억원에 이른다. 사업 재편이 진행되는 과정에서 본업 매출 기반이 오히려 약화되고 있다는 점은 유의할 대목이다.",
-    "en": "Revenue in Q1 and Q2 2026 was only 0.58 billion won and 0.86 billion won respectively, far below historical annual revenue scale (32.9 billion won in 2022, 13.0 billion won in 2025). Even as revenue scale shrank, operating losses continued each quarter at 1.76 billion won and 2.61 billion won respectively, with the owner net loss summed over the most recent four quarters reaching approximately 11.3 billion won. It is worth noting that the core revenue base appears to be weakening even as business realignment proceeds."
+    "ko": "영업손실은 2022년 1.6억원 이후 2023년 85.6억원, 2024년 84억원, 2025년 94.6억원으로 이어졌다. 2022년부터 2025년까지 4년 연속 적자이며, 2025년에는 손실 폭이 전년보다 커졌다. 2025년 당기순손실은 142억원, 지배주주 순손실은 121억원이다. 2023년부터 2025년까지는 3년 연속 지배주주 순손실이 이어졌다.",
+    "en": "Operating losses ran from KRW 159 million in 2022 to KRW 8.56 billion in 2023, KRW 8.4 billion in 2024 and KRW 9.46 billion in 2025. The company posted losses for four consecutive years from 2022 through 2025, and the 2025 loss widened. The 2025 net loss including non-controlling interests was KRW 14.2 billion, and the controlling-shareholder net loss was KRW 12.1 billion. Controlling-shareholder losses have continued for three consecutive years from 2023 through 2025."
    }
   },
   {
    "title": {
-    "ko": "반복되는 사명·최대주주·사업 방향 변경",
-    "en": "Repeated Changes in Name, Controlling Shareholder, and Business Direction"
+    "ko": "부채 확대와 현금 유출",
+    "en": "Rising debt and cash outflow"
    },
    "body": {
-    "ko": "회사는 2025년 3월 에스에이티에서 넥사다이내믹스로 사명을 변경했고, 같은 달 글로벌씨앤디가 최대주주에 올라 지분율을 29.97%까지 높였으나 약 1년 반 만인 2026년 8월 다시 시원이노텍으로 경영권 이전을 앞두고 있다. 사업 방향 역시 디스플레이 장비 중심에서 K-뷰티·콘텐츠 커머스로, 이제 다시 AI 서버·데이터센터 인프라로 잇따라 바뀌고 있다. 짧은 기간 내 반복되는 정체성 변화는 사업 전략의 일관성과 실행력에 대한 의문을 낳을 수 있다.",
-    "en": "The company changed its name from SAT to Nexa Dynamics in March 2025, and in the same month Global C&D became the controlling shareholder and raised its stake to 29.97%, but roughly a year and a half later in August 2026 a transfer of management control to Siwon Innotech is again pending. The business direction has likewise shifted repeatedly, from display equipment centered operations to K-beauty and content commerce, and now toward AI server and data center infrastructure. Such repeated identity changes within a short span may raise questions about the consistency and execution capability of business strategy."
+    "ko": "부채비율은 2022년 72.1%에서 2025년 173.8%로 올랐고, 2025년 말 부채총계는 370억원이다. 영업활동 현금흐름은 2022년 3.8억원 유입에서 2025년 -81억원으로 크게 바뀌었다. 현금 및 현금성 자산은 2025년 중 101.6억원에서 43.4억원으로 줄었다고 데일리연합이 보도했다. 2025년 3분기 기준 유동비율은 42%로 집계됐다는 보도도 있다.",
+    "en": "The debt ratio rose from 72.1% in 2022 to 173.8% in 2025, and total liabilities were KRW 37 billion at end-2025. Operating cash flow swung from a KRW 381 million inflow in 2022 to -KRW 8.1 billion in 2025. A press report said cash and cash equivalents fell from KRW 10.16 billion to KRW 4.34 billion during 2025. Another report put the current ratio at 42% as of 3Q 2025."
    }
   },
   {
    "title": {
-    "ko": "외부자금조달 의존과 재무구조 악화",
-    "en": "Reliance on External Financing and Deteriorating Financial Structure"
+    "ko": "지배구조와 공시를 둘러싼 이슈",
+    "en": "Governance and disclosure issues"
    },
    "body": {
-    "ko": "회사는 2025년 1월 1대10 자본감소를 진행한 이후에도 소액공모, 제3자배정 유상증자, 전환사채 발행을 반복해 왔으며, 이 과정에서 발행주식수가 계속 늘어나 왔다. 부채비율은 2022년 72.1%에서 2025년 173.8%로 뚜렷하게 상승했고, 같은 기간 영업활동현금흐름은 2022년 +3.8억원에서 2025년 -81.0억원으로 크게 악화됐다. 신규 최대주주 시원이노텍조차 인수대금을 자체 보유자금이 아닌 전환사채 발행을 통해 조달할 계획인 것으로 알려져, 회사를 둘러싼 자금조달 구조 자체가 여전히 취약하다는 점을 보여준다.",
-    "en": "Even after implementing a 1-for-10 capital reduction in January 2025, the company has repeated small-scale public offerings, third-party share placements, and convertible bond issuances, with the number of issued shares continuing to rise in the process. The debt ratio rose noticeably from 72.1% in 2022 to 173.8% in 2025, and over the same period operating cash flow deteriorated sharply from +0.38 billion won in 2022 to -8.10 billion won in 2025. Even the incoming controlling shareholder Siwon Innotech is reportedly planning to fund its acquisition through its own convertible bond issuance rather than existing cash, illustrating that the financing structure surrounding the company remains fragile."
+    "ko": "2026년 9월 임시주주총회에서 사내이사 4명 등 9개 안건이 가결됐고, 같은 시기 최대주주가 시원이노텍(28.71%)으로 바뀌었다. 2026년 4월에는 130억원 규모의 전환사채를 발행했고, 비상장 더스타파트너 지분 100%를 200억원에 취득하기로 결정했다. 한국거래소는 불성실공시법인 지정 여부를 검토해 벌점 4.0점을 산정했고, 지정은 일정 조건 아래 유예된 것으로 알려졌다. 전환사채 발행 무효확인 소송도 2026년 9월 21일 기준 데이터에 등록돼 있다.",
+    "en": "At a September 2026 extraordinary shareholders' meeting, nine agenda items were approved, including four inside directors. In the same period, the largest shareholder changed to a 28.71% holder. In April 2026 the company issued KRW 13 billion of convertible bonds and decided to acquire 100% of a non-listed company for KRW 20 billion. The Korea Exchange reviewed possible designation as an insincere-disclosure company, assigned 4.0 penalty points, and reportedly deferred the designation under certain conditions. A lawsuit challenging the validity of a convertible bond issuance is also on record as of 21 September 2026."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "재무·유동성 리스크",
-    "en": "Financial and Liquidity Risk"
+    "ko": "재무와 유동성",
+    "en": "Financing and liquidity"
    },
    "body": {
-    "ko": "영업손실과 영업활동현금흐름 악화가 여러 해에 걸쳐 지속되고 있으며, 2025년 영업활동현금흐름은 -81.0억원으로 전년 대비 크게 확대됐다. 이를 메우기 위한 잦은 유상증자·전환사채 발행은 주식 희석과 부채비율 상승(2025년 173.8%)으로 이어지고 있다. 향후에도 유사한 자금조달이 반복될 경우 기존 주주의 지분가치 희석이 계속될 가능성이 있다.",
-    "en": "Operating losses and deteriorating operating cash flow have persisted over multiple years, with 2025 operating cash flow at -8.10 billion won, a significant widening from the prior year. Frequent capital raises and convertible bond issuances to cover this have led to share dilution and a rising debt ratio (173.8% in 2025). If similar financing is repeated going forward, continued dilution of existing shareholders' equity value is possible."
+    "ko": "영업활동 현금 유출이 2025년 -81억원으로 커졌고, 이를 재무활동 자금으로 메우는 구조가 반복되고 있다. 2025년 3분기부터 2026년 3분기까지 분기마다 영업손실이 이어졌다. 회사가 병행 추진하는 300억원 규모 추가 유상증자가 실행되면 기존 주주의 지분 희석이 커질 수 있다. 전환사채가 주식으로 전환되면 희석은 더 커진다.",
+    "en": "Operating cash outflow widened to -KRW 8.1 billion in 2025, and financing inflows have repeatedly covered the gap. Operating losses have continued in every quarter from 3Q 2025 through 3Q 2026. If the additional KRW 30 billion rights offering goes ahead, dilution for existing shareholders could increase. Conversions of convertible bonds would add further dilution."
    }
   },
   {
    "cat": {
-    "ko": "지배구조·경영권 이전 불확실성",
-    "en": "Governance and Change-of-Control Uncertainty"
+    "ko": "지배구조와 공시",
+    "en": "Governance and disclosure"
    },
    "body": {
-    "ko": "신규 최대주주 시원이노텍은 2026년 7월 설립된 신생법인으로, 130억원 인수대금을 자체 전환사채 발행을 통해 조달할 계획인 것으로 알려져 있다. 전환사채의 구체적인 조건과 실제 인수자가 아직 공개되지 않은 상태이며, 예정된 2026년 9월 15일 대금 납입이 실제로 이뤄지는지가 경영권 이전 완료 여부를 가르는 분수령이 된다. 대금 납입 지연이나 조건 변경이 발생할 경우 사업 재편 일정 전반이 흔들릴 수 있다.",
-    "en": "New controlling shareholder Siwon Innotech is a newly established entity founded in July 2026, reportedly planning to fund its 13.0 billion won acquisition through its own convertible bond issuance. Specific terms of the convertible bond and the actual bond investors have not yet been disclosed, and whether the scheduled September 15, 2026 payment is actually completed is the watershed point determining whether the change of control is finalized. If payment is delayed or terms change, the entire business realignment schedule could be affected."
+    "ko": "2026년 9월 최대주주가 바뀌었고 같은 시기 대표이사도 교체됐다. 최근 몇 년간 7회차에 걸쳐 481.1억원 규모의 전환사채가 발행됐으며, 전환 시 주식 희석 가능성이 존재한다고 보도됐다. 불성실공시 벌점 관련 지정 유예 건과 전환사채 발행 효력을 다투는 소송 기록도 이어지고 있다.",
+    "en": "The largest shareholder changed in September 2026, and the CEO was replaced in the same period. A press report said the company has issued KRW 48.11 billion of convertible bonds across seven tranches in recent years, creating potential dilution on conversion. The deferred insincere-disclosure designation and a lawsuit over bond issuance validity also remain on record."
    }
   },
   {
    "cat": {
-    "ko": "사업모델 전환의 실행 리스크",
-    "en": "Execution Risk of Business Model Transition"
+    "ko": "사업 집중과 신사업 실행",
+    "en": "Concentration and new-business execution"
    },
    "body": {
-    "ko": "디스플레이 장비에서 K-콘텐츠 커머스로, 다시 AI 서버·데이터센터 인프라로 이어지는 잇따른 사업 재편이 실제 매출·이익 기여로 연결될지는 아직 검증되지 않았다. 더스타파트너·엘브이넥서스 인수, 드라마 IP 투자 등 신사업들이 서로 어떤 시너지를 낼지도 불분명하며, AI 서버·데이터센터 사업은 대규모 자본과 전문성을 요구하는 만큼 신규 진입 시점의 경쟁력 확보 여부가 관건이다.",
-    "en": "It remains unverified whether the successive business realignments, from display equipment to K-content commerce and now to AI server and data center infrastructure, will translate into actual revenue and earnings contributions. It is also unclear what synergies the new businesses, including the acquisitions of The Star Partner and LV Nexus and the drama IP investment, will generate with each other, and since the AI server and data center business requires large-scale capital and expertise, whether competitiveness can be secured as a new entrant remains a key question."
+    "ko": "장비 매출은 2025년 연간 120억원대에서 2026년 상반기 약 6억원으로 줄었다. 국내 디스플레이 투자 둔화가 길어지면 매출 공백이 커질 수 있다. AI 서버 양산은 2027년이며 콘텐츠 커머스는 초기 단계라 검증된 사업 성과는 아직 제한적이다. K뷰티 매출의 96%가 수출이어서 해외 수요 변화에 민감하다.",
+    "en": "Equipment sales fell from roughly KRW 12 billion in 2025 to about KRW 600 million in the first half of 2026. If the slowdown in domestic display investment persists, the revenue gap could widen. AI server mass production is not until 2027, and content commerce is at an early stage with limited proven results. Because 96% of K-beauty sales are exports, that business is sensitive to overseas demand."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 9월 15일",
-    "en": "September 15, 2026"
+    "ko": "2026년 4분기 중",
+    "en": "During 4Q 2026"
    },
    "what": {
-    "ko": "임시주주총회에서 신규 사업목적 추가를 위한 정관 변경, 사내·사외이사 선임 안건 처리 여부와 시원이노텍의 130억원 유상증자 대금 실제 납입 여부를 확인해야 한다.",
-    "en": "Check whether the extraordinary general meeting processes the articles amendment for new business purposes and the appointment of inside and outside directors, and whether Siwon Innotech actually pays in the 13.0 billion won capital increase."
+    "ko": "GPU 서버 전용라인의 시험생산 착수 여부. 2027년 양산 일정이 실제로 진행되는지 가늠하는 첫 지점이다.",
+    "en": "Whether trial production of the GPU server line starts as planned. It is the first test of the 2027 mass-production timetable."
    }
   },
   {
    "when": {
-    "ko": "2026년 9월 중순 이후",
-    "en": "Mid-September 2026 onward"
+    "ko": "추가 유상증자 일정 공시 시점(미정)",
+    "en": "At disclosure of the additional rights offering (date not yet set)"
    },
    "what": {
-    "ko": "경영권 이전이 완료될 경우 새 경영진이 발표하는 AI 서버·데이터센터 인프라 사업의 구체적인 계획, 파트너십, 초기 투자 규모를 확인해야 한다.",
-    "en": "If the change of control is completed, check the concrete plans, partnerships, and initial investment scale for the AI server and data center infrastructure business that the new management announces."
+    "ko": "300억원 규모 추가 유상증자의 발행가, 물량, 대상. 기존 주주의 지분 희석 폭을 가르는 지점이다.",
+    "en": "Issue price, share count and allottees of the planned KRW 30 billion rights offering, which determine dilution for existing shareholders."
    }
   },
   {
    "when": {
-    "ko": "2026년 11월경(3분기 보고서 공시 예정 시점)",
-    "en": "Around November 2026 (expected Q3 report disclosure)"
+    "ko": "2027년 2월 전후(과거 연간 잠정 공시 시기 기준)",
+    "en": "Around February 2027, based on the timing of the prior-year preliminary disclosure"
    },
    "what": {
-    "ko": "2026년 3분기 실적에서 매출 축소·영업손실 지속 흐름이 이어지는지, 5월에 수주한 54억원 규모 미국 자동화 조립라인 계약의 매출 인식이 시작되는지를 확인해야 한다.",
-    "en": "Check whether the Q3 2026 results continue the pattern of revenue contraction and persistent operating losses, and whether revenue recognition begins for the 5.4 billion won US automation assembly line contract won in May."
+    "ko": "2026년 연간 잠정 실적. 2025년 연간 손익구조변동 공시는 2026년 2월 9일에 나온 전례가 있다. 영업손실 규모와 AI 서버 매출 반영 여부가 확인 대상이다.",
+    "en": "Preliminary full-year 2026 results. The 2025 full-year profit-and-loss change disclosure came out on 9 February 2026. The key items are the size of the operating loss and whether AI server revenue appears."
    }
   },
   {
    "when": {
-    "ko": "2026년 9월 5일 이후 수시",
-    "en": "On an ongoing basis after September 5, 2026"
+    "ko": "2027년 3월 31일까지",
+    "en": "By March 31, 2027"
    },
    "what": {
-    "ko": "45억원 규모 전환사채(만기 2029년 4월)의 전환청구 현황과 추가 소액공모·제3자배정 유상증자 등 신규 자금조달 공시가 나오는지를 DART를 통해 지속 점검해야 한다.",
-    "en": "Continue monitoring DART disclosures for the conversion status of the 4.5 billion won convertible bond (maturing April 2029) and for any new financing announcements such as additional small-scale offerings or third-party share placements."
+    "ko": "2026 사업보고서 제출. 연간 영업손실률과 자본총계, 부채총계 변화를 확정 수치로 확인하는 지점이다.",
+    "en": "Filing of the 2026 annual report. It is the point at which the full-year operating margin and changes in total equity and total liabilities are confirmed in final figures."
+   }
+  },
+  {
+   "when": {
+    "ko": "2027년 5월 15일까지",
+    "en": "By May 15, 2027"
+   },
+   "what": {
+    "ko": "2027년 1분기 분기보고서. AI 서버 양산을 앞둔 분기 매출 규모와 영업손실 추세가 이어지는지 확인하는 지점이다.",
+    "en": "The 1Q 2027 quarterly report. It shows whether quarterly sales and the operating loss trend continue ahead of AI server mass production."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "넥사다이내믹스는 디스플레이 장비 제조라는 본업을 유지하면서도 K-콘텐츠 커머스, 이제는 AI 서버·데이터센터 인프라로 잇따라 사업 축을 옮겨온 코스닥 소형주다. 2025년 매출은 전년 대비 늘었지만 영업손실과 지배주주 순손실은 오히려 확대됐고, 2026년 상반기 분기 매출은 과거 연간 규모에 크게 못 미치는 수준으로 축소된 상태다. FY2025 감사보고서에서 '적정' 의견과 법인세비용차감전계속사업손실률 50% 이하 확인은 관리종목 우려를 일부 완화했지만, 부채비율 상승과 영업활동현금흐름 악화는 재무 부담이 여전함을 보여준다. 2026년 9월 15일 임시주주총회를 계기로 신규 최대주주 시원이노텍의 자본 유입과 반도체·ICT 전문 인력 영입이 예정돼 있어 사업 재편의 실행력을 높일 요인이 될 수 있으나, 신생법인의 전환사채 기반 자금조달 구조와 반복된 사업 방향 전환 이력은 불확실성으로 남아 있다. 스마트솔루션 부문의 해외 턴키 수주는 본업 다각화의 긍정적 신호이지만, 신사업들 간 시너지와 AI 서버·데이터센터 사업의 실제 진입 경쟁력은 아직 검증되지 않았다. 투자 판단에 앞서 임시주주총회 결과와 대금 납입 여부, 이후 발표될 구체적 사업계획을 확인하는 것이 중요하다.",
-   "en": "Nexa Dynamics is a small-cap KOSDAQ company that has maintained its core display equipment manufacturing business while successively shifting its business focus toward K-content commerce and now toward AI server and data center infrastructure. Although 2025 revenue rose year over year, both the operating loss and owner net loss actually widened, and quarterly revenue in the first half of 2026 shrank to a level far below the company's historical annual scale. The FY2025 audit report's unqualified opinion and confirmation that the pre-tax loss ratio was managed below 50% eased some administrative-issue concerns, but a rising debt ratio and worsening operating cash flow show that financial pressure remains. Ahead of the extraordinary general meeting scheduled for September 15, 2026, capital inflow from new controlling shareholder Siwon Innotech and the recruitment of semiconductor and ICT expertise are planned, which could strengthen the execution of the business realignment, but the newly established entity's convertible-bond-based financing structure and the company's history of repeated business pivots remain sources of uncertainty. The overseas turnkey order win in the Smart Solutions segment is a positive sign of diversification in the core business, but synergies among the new businesses and the actual competitiveness of entering the AI server and data center business remain unverified. Before making any investment judgment, it is important to confirm the outcome of the extraordinary general meeting, whether payment is actually made, and the concrete business plans to be announced afterward."
+   "ko": "넥사다이내믹스는 2022년 이후 영업적자가 이어지는 가운데 사업 구조를 장비 중심에서 AI 서버, K뷰티, 콘텐츠 커머스로 넓히는 중이다. 2025년 매출은 130억원으로 전년 대비 51.9% 증가했으나 영업손실은 94.6억원으로 확대됐다. 장비 매출은 2025년 연간 120억원대에서 2026년 상반기 약 6억원으로 줄어, 장비 중심 실적의 공백을 신사업이 메울 수 있는지가 핵심이다. 2026년 3분기에는 영업손실이 11.1억원으로 줄었지만 지배주주 순손실은 32.7억원으로 늘어 손익 흐름이 엇갈린다. 긍정 요인은 130억원 유상증자로 마련한 GPU 서버 생산라인 계획, 장비 수출 비중 97.2%, 일본 기업과의 약 16.0억원 규모 공급 계약 보도다. 부정 요인은 부채비율 173.8%, 영업활동 현금흐름 -81억원, 반복된 전환사채 발행, 2026년 9월 최대주주 변경과 공시 관련 이슈다. 실적 회복의 방향은 영업적자 축소와 현금흐름 개선이 함께 나타나는지로 확인하게 된다. 다음 확인 지점은 2026년 4분기 시험생산 착수, 300억원 추가 유상증자 일정, 2026 사업보고서다.",
+   "en": "Nexa Dynamics has posted operating losses since 2022 while widening its business from equipment into AI servers, K-beauty and content commerce. Revenue rose 51.9% to KRW 13 billion in 2025, yet the operating loss widened to KRW 9.46 billion. Equipment sales fell from roughly KRW 12 billion in 2025 to about KRW 600 million in the first half of 2026, so whether new businesses can fill that gap is the central question. The 3Q 2026 operating loss narrowed to KRW 1.11 billion, but the controlling-shareholder net loss widened to KRW 3.27 billion, so the profit trend is mixed. Positive factors include the GPU server line planned with the KRW 13 billion rights offering, a 97.2% export share of equipment, and a reported supply contract with a Japanese company worth about KRW 1.6 billion. Negative factors include a 173.8% debt ratio, operating cash outflow of -KRW 8.1 billion, repeated convertible bond issuance, and governance and disclosure issues following the September 2026 change in the largest shareholder. Any recovery will show up as a smaller operating loss and better cash flow appearing together. The next checkpoints are the start of trial production in 4Q 2026, the timing of the KRW 30 billion rights offering, and the 2026 annual report."
   }
  },
  "sources": [
-  "https://deepsearch.com/analytics/company-analysis/KRX:351320?c-name=%EC%97%90%EC%8A%A4%EC%97%90%EC%9D%B4%ED%8B%B0%EC%9D%B4%EC%97%94%EC%A7%80&c-symbol=KRX%3A351320&fs-type=csd&fs-list=IS%3A1000%3BIS%3A5000%3BIS%3A8200",
-  "https://deepsearch.com/analytics/company-analysis/KRX:351320?c-symbol=KRX%3A351320",
-  "https://www.investing.com/equities/ibks-no-14-special-purpose-acquisit",
-  "https://www.tossinvest.com/stocks/A351320/order",
-  "https://www.asiae.co.kr/article/2025122914092767310",
-  "https://core.asiae.co.kr/article/2025122914092767310",
-  "https://dealsite.co.kr/articles/158949/089059",
-  "https://kr.investing.com/news/global-filings/article-93CH-1897821",
-  "https://www.topdaily.kr/articles/109964",
-  "https://nexadynamics.kr/public-info/",
-  "https://nexadynamics.kr/category/notice/",
-  "https://www.stockplus.com/m/stocks/KOREA-A351320",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20250515000914",
-  "https://nexadynamics.kr/about/",
-  "https://nexadynamics.kr/",
-  "https://www.sedaily.com/article/20045924",
-  "https://www.ttlnews.com/news/articleView.html?idxno=3098854",
-  "https://www.newspim.com/news/view/20260518001153"
+  "https://www.bloter.net/news/articleView.html?idxno=678440",
+  "https://www.ibtomato.com/ExternalView.aspx?type=1&no=17362",
+  "https://www.upkoreanews.kr/news/articleView.html?idxno=100884",
+  "https://www.etoday.co.kr/news/view/2568693",
+  "https://m.news.nate.com/view/20260916n28791",
+  "https://view.asiae.co.kr/article/2026032509463120461",
+  "https://view.asiae.co.kr/article/2026040213341409589",
+  "https://www.geconomy.co.kr/mobile/article.html?no=320109",
+  "https://www.dailyan.com/news/article.html?no=779130",
+  "http://www.thenext-news.com/compinfo.php?cd=351320",
+  "https://www.tradingkey.com/kr/news/earnings/262255424-tradingkey",
+  "https://news.nate.com/view/20260209n38447",
+  "https://www.tradingkey.com/kr/news/transcripts/262262335-",
+  "https://judal.co.kr/?shareToken=iyMNvAUEzNyOmzCd&view=stockAI",
+  "https://judal.co.kr/?shareToken=bRi2EQ0peFcQeaKa&view=stockAI",
+  "https://www.job-post.co.kr/news/articleView.html?idxno=230287",
+  "https://judal.co.kr/?shareToken=C49g0D7ypiXArT1g&view=stockAI",
+  "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=700751"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "351320",
  "name": "넥사다이내믹스",
  "name_en": "Nexa Dynamics Co., Ltd.",
@@ -223,11 +233,11 @@
   "자동차"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 07:33",
- "dataDate": "20260904",
+ "reportDate": "2026-11-16",
+ "reportTs": "2026-11-16 10:54",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-11-16",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -297,12 +307,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 978009575,
-    "op": -2907071573,
-    "np_owner": -3201610121
-   },
-   {
     "q": "2025Q3",
     "rev": 1195505296,
     "op": -2812788169,
@@ -325,35 +329,39 @@
     "rev": 864712237,
     "op": -2610886823,
     "np_owner": -2896222307
+   },
+   {
+    "q": "2026Q3",
+    "rev": 813077692,
+    "op": -1110187332,
+    "np_owner": -3266076425
    }
   ],
   "valuation": {
-   "price": 4345,
-   "mcap": 0.189,
+   "price": 4395,
+   "mcap": 0.1912,
    "shares": 43495535,
-   "total_shares": 29698642,
-   "wavg_shares": 29413157,
+   "total_shares": 43495535,
+   "wavg_shares": 31039677,
    "per": null,
-   "eps": null,
-   "pbr": null,
-   "bps": null,
-   "roe_ttm": -73.4,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": -11297470638,
+   "eps": -284,
+   "pbr": 4.4349,
+   "bps": 991,
+   "roe_ttm": -46.2,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": -11355482427,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": null,
-   "bps_krx": null,
+   "eps_src": "공시",
+   "pbr_krx": 6.15,
+   "bps_krx": 715.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
    "div": 0.0,
-   "shares_patched": {
-    "on": "2026-10-08",
-    "was": 29698642,
-    "now": 43495535,
-    "factor": null,
-    "why": "주식수가 배수로 안 떨어진다(증자 등) — 자본을 다시 받아야 해서 값을 숨긴다"
+   "hidden": {
+    "per": "loss"
    }
   }
- }
+ },
+ "textRules": 2
 }

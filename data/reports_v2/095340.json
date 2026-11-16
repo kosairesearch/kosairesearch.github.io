@@ -1,230 +1,230 @@
 {
  "title": {
-  "ko": "AI 테스트소켓 호조와 증설 부담의 갈림길",
-  "en": "AI Test Sockets Boom Meets Heavy Capex"
+  "ko": "AI 테스트 소켓 증설과 분기 이익 둔화 사이",
+  "en": "Between AI socket expansion and softer quarterly profit"
  },
  "lead": {
-  "ko": "AI 가속기·ASIC용 테스트소켓 수요가 실적을 끌어올려 최근 네 개 분기 영업이익률이 30%대에 올라섰지만, 동시에 과거 평균을 크게 웃도는 설비투자와 분기 마진의 되돌림이 함께 진행되고 있다.",
-  "en": "Demand for AI accelerator and ASIC test sockets has lifted ISC's operating margin above 30% over the last four quarters, but the company is simultaneously running capex far above its historical average while quarterly margins have already given back part of their peak."
+  "ko": "ISC는 AI 관련 매출 비중이 2026년 3분기 87%까지 높아졌지만, 지배주주 순이익은 2025년 4분기 정점 이후 3개 분기 연속 줄어 증설 효과와 분기 이익 흐름이 엇갈리는 구간이다.",
+  "en": "ISC's AI-related revenue reached 87% of sales in Q3 2026, yet profit attributable to controlling shareholders has declined for three straight quarters since peaking in Q4 2025, so capacity expansion and quarterly earnings are moving in different directions."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출 2,201.9억원·영업이익 600.5억원으로 영업이익률 27.3%를 기록, 2023년 저점(영업이익률 7.7%)에서 이익이 빠르게 회복됐다.",
-   "en": "2025 consolidated revenue was KRW 220.2bn with operating profit of KRW 60.1bn, a 27.3% operating margin, a sharp recovery from the 2023 trough margin of 7.7%."
+   "ko": "2024년부터 2025년까지 매출·영업이익·지배주주 순이익이 2년 연속 증가했고, 2025년이 2022~2025년 중 가장 큰 해다.",
+   "en": "Revenue, operating profit and profit attributable to controlling shareholders rose two years in a row from 2024 to 2025, and 2025 was the largest year in the 2022–2025 period."
   },
   {
-   "ko": "2026년 1분기 영업이익 236.2억원(영업이익률 34.6%)으로 분기 최고치를 찍은 뒤, 2026년 2분기는 매출 729.3억원으로 늘었으나 영업이익 213.2억원(29.2%)으로 마진이 되돌려졌다.",
-   "en": "Q1 2026 operating profit hit a record KRW 23.6bn (34.6% margin); in Q2 2026 revenue rose to KRW 72.9bn but operating profit eased to KRW 21.3bn (29.2%)."
+   "ko": "2026년 3분기 영업이익은 218억원으로 전년 동기 대비 25.4% 증가했지만, 지배주주 순이익은 148억원으로 7.9% 감소했다.",
+   "en": "Q3 2026 operating profit rose 25.4% year on year to KRW 21.8 billion, while profit attributable to controlling shareholders fell 7.9% to KRW 14.8 billion."
   },
   {
-   "ko": "회사는 2026년 1분기 AI 관련 매출이 전사의 81%를 차지했다고 밝혔고, 시스템레벨테스트(SLT) 비중은 60%를 넘었다고 설명했다.",
-   "en": "The company said AI-related sales accounted for 81% of Q1 2026 revenue, with system-level test (SLT) products exceeding 60% of the mix."
+   "ko": "회사는 2026년 연간 매출 3,050억원·영업이익 1,000억원을 전망했고, 4분기 전망치는 매출 약 920억원·영업이익 약 333억원이다.",
+   "en": "The company guided to 2026 annual revenue of KRW 305.0 billion and operating profit of KRW 100.0 billion, with a fourth-quarter estimate of about KRW 92.0 billion in revenue and about KRW 33.3 billion in operating profit."
   },
   {
-   "ko": "베트남 1공장 증설은 2026년 10월 본격 가동, 2공장은 연내 완료가 목표이며 송도사업장에는 350억원 투자와 국내 사업장 통합이 진행 중이다.",
-   "en": "The Vietnam Plant 1 expansion is targeted for full operation in October 2026 and Plant 2 for completion within the year, while KRW 35bn is being invested to expand Songdo and consolidate domestic sites."
+   "ko": "베트남 1공장 증설 라인은 2026년 10월부터 가동됐고, 회사는 2029년 생산능력을 연간 최대 500만개로 늘리는 계획을 밝혔다.",
+   "en": "The Vietnam Fab 1 expansion line began operating in October 2026, and the company plans to raise annual capacity to as many as 5 million units by 2029."
   },
   {
-   "ko": "2025년 말 부채비율 15.9%로 재무구조는 가벼우나, 영업활동현금흐름은 2024년 506.7억원에서 2025년 417.1억원으로 줄었다.",
-   "en": "The balance sheet is light with a 15.9% debt-to-equity ratio at end-2025, but operating cash flow fell from KRW 50.7bn in 2024 to KRW 41.7bn in 2025."
+   "ko": "3분기 매출은 생산능력 병목으로 약 11억원이 4분기로 넘어가 시장 전망치를 일부 밑돌았다.",
+   "en": "Q3 revenue fell somewhat short of market expectations because roughly KRW 1.1 billion of orders slipped into Q4 due to a production-capacity bottleneck."
   }
  ],
  "business": {
-  "ko": "ISC는 패키징이 끝난 반도체 칩을 검사 장비와 연결하는 테스트소켓을 만드는 회사로, 소켓은 검사 과정에서 마모되는 소모성 부품이다. 접촉 방식에 따라 실리콘 러버 소켓과 스프링 핀 방식의 포고 소켓으로 나뉘는데, 회사는 2003년 실리콘 러버 소재 테스트소켓을 세계 최초로 상업화했고 이 시장에서 절반이 넘는 점유율을 차지하고 있다. 미래에셋증권 2026년 1월 자료에 따르면 메모리 테스트소켓 시장은 러버 방식이 사실상 전부이고 ISC의 점유율은 80% 수준이며, 비메모리는 포고와 러버가 혼재된 가운데 러버 전환이 진행되고 있다. 제품군은 러버 소켓 외에 포고 소켓, 고온 환경 검사용 번인 소켓, 인터페이스 보드 등으로 구성된다. 같은 자료는 생산이 베트남 약 90%, 한국 약 10%로 이뤄진다고 설명했다. 고객은 삼성전자, SK하이닉스를 비롯한 국내외 반도체 기업과 북미 GPU·ASIC 설계사로, 최근에는 데이터센터용 고사양 제품 비중이 커졌다. 2023년 10월 SKC에 인수돼 SK그룹 계열로 편입됐으며, 그룹 내 반도체 후공정 및 장비·소재 사업을 담당하고 테스트소켓이 주력 제품이다. 2025년 상반기에 인수한 장비·소재 사업을 통해 하이스피드 번인테스터, 실장 테스터, HBM용 DRAM 세정 케미컬까지 공급하며 포트폴리오를 넓혔다(해당 인수 대상은 SK엔펄스의 후공정 장비사 아이세미와 PCB 업체 테크드림으로, 인수금액은 413억원으로 공개됐다). 경쟁 구도는 러버 소켓에서의 기술 우위를 바탕으로 하되, 한국투자증권은 SLT 시장에서 ISC와 대만 윈웨이(Winway)의 양강 구도가 형성되고 있다고 평가했다.",
-  "en": "ISC makes test sockets that connect packaged semiconductor chips to test equipment; the socket is a consumable part that wears out during testing. Sockets are split by contact method into silicone rubber and pogo (spring pin) types, and the company was first in the world to commercialize silicone rubber test sockets in 2003 and holds more than half of that market. According to a January 2026 Mirae Asset Securities note, the memory test socket market is effectively all rubber-type with ISC at roughly 80% share, while non-memory is a mix of pogo and rubber with a shift toward rubber underway. Beyond rubber sockets, the line-up includes pogo sockets, burn-in sockets for high-temperature testing, and interface boards. The same note said production is about 90% in Vietnam and 10% in Korea. Customers include Samsung Electronics, SK hynix and other domestic and overseas chipmakers, plus North American GPU and ASIC designers, with high-spec datacenter products now a larger share. SKC acquired the company in October 2023, bringing it into the SK group, where it handles back-end and equipment/materials businesses with test sockets as the core product. An equipment and materials business acquired in the first half of 2025 added high-speed burn-in testers, board-level testers and DRAM cleaning chemicals for HBM to the portfolio (the targets were iSemi, a back-end equipment firm from SK enpulse, and PCB supplier Techdream, for a reported KRW 41.3bn). Competitively, ISC leans on its rubber socket edge, and Korea Investment & Securities described the SLT market as forming a two-player structure between ISC and Taiwan's Winway."
+  "ko": "ISC는 반도체 칩과 최종 테스트 장비를 전기적으로 잇는 테스트 소켓을 주력으로 하는 반도체 테스트 부품 기업이다. 주력 제품은 실리콘 러버(엘라스토머) 소켓, 포고핀 소켓, 번인(burn-in) 소켓이며, 회사는 엘라스토머 소켓이 매출의 80%를 차지하고 글로벌 점유율은 약 90%로 추정된다고 밝혔다. 2025년 2분기에 편입된 사업부로 모듈 테스터, 고속 번인 테스터, EFEM, 화학소재, PCB가 운영 포트폴리오에 더해졌다. 2026년 3분기 매출 718억원 가운데 AI 관련 매출은 626억원으로 전년 동기 대비 46% 늘었고, 비중은 87%까지 높아졌다. AI 데이터센터용 매출은 처음으로 분기 500억원을 넘었으며, AI 가속기용 소켓에 이어 서버 CPU용 제품에서도 성장이 이어졌다. 회사는 북미 CPU 고객사 내 점유율이 100%라고 밝혔다. 모바일 부문은 글로벌 스마트폰 고객사의 R&D용 소켓 중심에서 2026년 3분기부터 모바일 AP·CPU 양산 테스트 제품 공급으로 넓어졌고, 플래그십 AP용 SLT 소켓 수주도 늘었다. 메모리 부문은 레거시 제품 매출과 함께 HBM·SOCAMM2용 테스트 솔루션의 개발과 공급을 확대하고 있다. 해외 매출 비중은 75%로 수출 중심 구조이며, 거래 대부분이 달러 기준이다.",
+  "en": "ISC is a semiconductor test-component company whose core products are test sockets that electrically connect chips to final test equipment. Its main product lines are silicone rubber (elastomer) sockets, pogo-pin sockets and burn-in sockets, and the company says elastomer sockets account for 80% of sales with an estimated global share of about 90%. Businesses acquired in Q2 2025 added module testers, high-speed burn-in testers, EFEM, chemicals and PCBs to the portfolio. Of Q3 2026 revenue of KRW 71.8 billion, AI-related revenue was KRW 62.6 billion, up 46% year on year, and its share rose to 87%. Revenue from AI data center applications exceeded KRW 50 billion in a quarter for the first time, with growth extending from AI accelerator sockets to server CPU products. The company says its share within one North American CPU customer is 100%. The mobile business, long centered on R&D sockets for a global smartphone customer, began supplying mass-production test products for mobile AP and CPU in Q3 2026, and orders for SLT sockets for a flagship smartphone AP increased. In memory, ISC is expanding development and supply of test solutions for HBM and SOCAMM2 alongside legacy product sales. Overseas sales account for 75% of revenue, and most transactions are denominated in US dollars."
  },
  "earnings": {
-  "ko": "실적은 사이클을 따라 크게 흔들렸다. 2022년 매출 1,788.7억원·영업이익 558.8억원(영업이익률 31.2%)에서 2023년 매출 1,402.2억원·영업이익 107.4억원(7.7%)으로 이익이 급감했고, 2024년 매출 1,744.8억원·영업이익 447.8억원(25.7%), 2025년 매출 2,201.9억원·영업이익 600.5억원(27.3%)으로 회복됐다. 2025년 지배주주 순이익은 561.3억원으로 2024년 546.6억원과 큰 차이가 없는데, 2024년은 순이익(548.99억원)이 영업이익을 웃돌아 영업외 항목이 이익을 밀어 올린 구조였던 반면 2025년은 순이익이 영업이익을 밑돌았다. 에프앤가이드는 2025년 결산에서 매출 26.2%, 영업이익 34.1%, 순이익 2.7% 증가를 기록했으며 AI 반도체 테스트소켓 수요와 AI 가속기·ASIC 고객의 시스템레벨 테스트용 소켓 수주가 개선의 배경이라고 정리했다. 분기 흐름은 2025년 2분기 매출 516.6억원·영업이익 137.1억원에서 3분기 645.2억원·174.2억원, 4분기 723.3억원·219.3억원으로 연속 확대됐다. 2026년 1분기에는 매출 682.7억원에 영업이익 236.2억원으로 영업이익률 34.6%를 기록했는데, 회사는 1분기가 계절적 비수기임에도 AI GPU·ASIC·하이엔드 메모리 수요로 역대 분기 최대 영업이익을 달성했다고 밝혔다. 2026년 2분기는 매출이 729.3억원으로 분기 최고를 다시 썼지만 영업이익은 213.2억원, 영업이익률은 29.2%로 전분기보다 낮아졌고 지배주주 순이익도 204.7억원에서 192.9억원으로 줄었다. 이에 따라 최근 네 개 분기(2025년 3분기~2026년 2분기) 합산은 매출 2,780.5억원, 영업이익 842.9억원으로 영업이익률 30.3% 수준이며, 이는 이미 2025년 연간 매출을 넘어선 규모다. 재무구조는 2025년 말 자기자본 5,372.6억원, 부채총계 851.6억원, 부채비율 15.9%로 가벼운 편이지만, 영업활동현금흐름은 2024년 506.7억원에서 2025년 417.1억원으로 감소해 이익 증가가 현금 유입으로 온전히 이어지지 않은 흐름이 확인된다.",
-  "en": "Earnings have swung sharply with the cycle. From 2022 revenue of KRW 178.9bn and operating profit of KRW 55.9bn (31.2% margin), profit collapsed in 2023 to KRW 10.7bn on revenue of KRW 140.2bn (7.7%), then recovered to KRW 174.5bn revenue and KRW 44.8bn operating profit (25.7%) in 2024 and KRW 220.2bn and KRW 60.1bn (27.3%) in 2025. Net profit attributable to owners was KRW 56.1bn in 2025 versus KRW 54.7bn in 2024; in 2024 total net profit of KRW 54.9bn exceeded operating profit, meaning non-operating items lifted the bottom line, whereas in 2025 net profit came in below operating profit. FnGuide summarized the 2025 results as revenue up 26.2%, operating profit up 34.1% and net profit up 2.7%, driven by AI chip test socket demand and system-level test socket orders from AI accelerator and ASIC customers. Quarterly, revenue and operating profit rose from KRW 51.7bn and KRW 13.7bn in Q2 2025 to KRW 64.5bn and KRW 17.4bn in Q3, and KRW 72.3bn and KRW 21.9bn in Q4. Q1 2026 delivered KRW 68.3bn revenue and KRW 23.6bn operating profit for a 34.6% margin, and the company said it achieved a record quarterly operating profit despite Q1 being a seasonal low, helped by AI GPU, ASIC and high-end memory demand. In Q2 2026 revenue set another high at KRW 72.9bn, but operating profit was KRW 21.3bn for a 29.2% margin, below the prior quarter, and net profit to owners eased from KRW 20.5bn to KRW 19.3bn. Summed over the last four quarters (Q3 2025 to Q2 2026), revenue reached KRW 278.1bn and operating profit KRW 84.3bn, a roughly 30.3% margin, already above full-year 2025 revenue. The balance sheet is light, with equity of KRW 537.3bn against liabilities of KRW 85.2bn and a 15.9% debt-to-equity ratio at end-2025, yet operating cash flow declined from KRW 50.7bn in 2024 to KRW 41.7bn in 2025, showing that profit growth did not fully convert into cash."
+  "ko": "연간 매출은 2022년 1,789억원에서 2023년 1,402억원(전년 대비 21.6% 감소)으로 줄었다가 2024년 1,745억원(전년 대비 24.4% 증가), 2025년 2,202억원(전년 대비 26.2% 증가)으로 2024년부터 2025년까지 2년 연속 증가했다. 영업이익은 2022년 559억원, 2023년 107억원(전년 대비 80.8% 감소), 2024년 448억원(전년 대비 317.1% 증가), 2025년 601억원(전년 대비 34.1% 증가)으로 같은 흐름을 보였고, 언론은 2025년을 역대 최대 연간 실적으로 전했다. 지배주주 순이익은 2022년 440억원, 2023년 132억원(전년 대비 70.0% 감소), 2024년 547억원(전년 대비 314.0% 증가), 2025년 561억원(전년 대비 2.7% 증가)이며, 당기순이익(비지배지분 포함)은 2025년 563억원으로 큰 차이가 없다. 영업이익률은 2022년 31.2%, 2023년 7.7%, 2024년 25.7%, 2025년 27.3%로 2023년 저점에서 회복됐다. 영업활동 현금흐름은 2022년 654억원, 2023년 224억원, 2024년 507억원, 2025년 417억원으로 2025년에 줄었다. 분기로 보면 2025년 3분기 매출 645억원·영업이익 174억원에서 2025년 4분기 매출 723억원(전 분기 대비 12.1% 증가)·영업이익 219억원으로 올라섰다. 2026년 1분기 매출 683억원·영업이익 236억원은 언론이 역대 최대 분기 영업이익이라고 전한 수준이다. 2026년 2분기 매출 729억원은 회사가 분기 기준 사상 최대라고 밝혔다. 2026년 3분기 매출 718억원(전 분기 대비 1.6% 감소)·영업이익 218억원(전 분기 대비 2.5% 증가)이며, 3분기 매출에서는 생산능력 병목으로 약 11억원이 4분기로 넘어갔다. 지배주주 순이익은 2025년 4분기 217억원을 정점으로 2026년 1분기 205억원, 2분기 193억원, 3분기 148억원으로 3개 분기 연속 줄었고, 최근 4개 분기 합계는 763억원이다.",
+  "en": "Annual revenue fell from KRW 178.9 billion in 2022 to KRW 140.2 billion in 2023, a 21.6% decline, then rose 24.4% to KRW 174.5 billion in 2024 and 26.2% to KRW 220.2 billion in 2025, so revenue grew two years in a row from 2024 to 2025. Operating profit went from KRW 55.9 billion in 2022 to KRW 10.7 billion in 2023, an 80.8% decline, then rose 317.1% to KRW 44.8 billion in 2024 and 34.1% to KRW 60.1 billion in 2025, and press reports described 2025 as a record annual result. Profit attributable to controlling shareholders was KRW 44 billion in 2022, KRW 13.2 billion in 2023, KRW 54.7 billion in 2024 and KRW 56.1 billion in 2025, while net profit including non-controlling interests was KRW 56.3 billion in 2025, a small gap. The operating margin moved from 31.2% in 2022 to 7.7% in 2023 and then recovered to 25.7% in 2024 and 27.3% in 2025. Operating cash flow was KRW 65.4 billion in 2022, KRW 22.4 billion in 2023, KRW 50.7 billion in 2024 and KRW 41.7 billion in 2025, declining in 2025. Quarterly revenue rose from KRW 64.5 billion with operating profit of KRW 17.4 billion in Q3 2025 to KRW 72.3 billion and KRW 21.9 billion in Q4 2025, a 12.1% quarter-on-quarter gain. Q1 2026 revenue was KRW 68.3 billion with operating profit of KRW 23.6 billion, which press reports called a record quarterly operating profit. Q2 2026 revenue of KRW 72.9 billion was described by the company as a quarterly record. Q3 2026 revenue was KRW 71.8 billion, down 1.6% quarter on quarter, and operating profit was KRW 21.8 billion, up 2.5% quarter on quarter, with about KRW 1.1 billion of revenue deferred to Q4 by the capacity bottleneck. Profit attributable to controlling shareholders peaked at KRW 21.7 billion in Q4 2025 and then declined for three straight quarters to KRW 20.5 billion, KRW 19.3 billion and KRW 14.8 billion. The four quarters from Q4 2025 to Q3 2026 total KRW 76.3 billion in profit attributable to controlling shareholders."
  },
  "industry": {
-  "ko": "테스트소켓 수요는 반도체 출하량과 신제품 개발 빈도에 함께 연동된다. 미래에셋증권은 테스트소켓이 신제품 개발 초기에 고단가 연구개발용 수요가 발생하고 양산 이후에는 장비 가동률 상승에 따른 교체 수요가 늘어나는 특성이 있어 HBM 세대 전환 전 주기에 걸친 수요가 예상된다고 설명했다. 현재 사이클의 축은 AI 데이터센터다. 한국투자증권은 AI 가속기의 주력 폼팩터가 베이스보드에서 랙, 랙에서 팟 단위로 확장되면서 단일 칩 성능을 보는 최종검사를 넘어 여러 칩의 종합 성능을 검사하는 시스템레벨테스트 도입이 크게 확대될 것으로 전망했다. 반대편에서 스마트폰·PC·웨어러블 등 컨슈머 IT 관련 테스트소켓 매출은 다소 부진했으나 데이터센터 성장이 이를 상쇄했다는 설명도 나온다. 즉 전방 수요가 AI로 쏠린 만큼 컨슈머 IT 회복 여부는 아직 실적의 보조 변수에 머문다. 경쟁 측면에서는 러버 소켓의 기술 장벽이 방어선이지만, SLT 초기 시장에서 ISC와 윈웨이의 과점 구도가 형성될 것이라는 평가처럼 소수 업체 간 점유율 경쟁이 곧바로 단가와 마진에 반영되는 구조다. 미래에셋증권 자료는 AI 매출 비중이 2024년 40%에서 2025년 3분기 67%로 확대되며 고부가 제품 중심으로 매출 믹스가 개선됐다고 정리했다. 결국 산업 사이클 상 현 위치는 메모리·비메모리 모두 가동률이 높은 확장 국면에 가깝고, 그만큼 다음 국면에서의 되돌림 위험도 함께 커진 상태다.",
-  "en": "Test socket demand tracks both chip shipment volumes and the pace of new product development. Mirae Asset Securities noted that sockets see high-priced R&D demand early in a chip's development and replacement demand as tool utilization rises after mass production begins, implying demand across the full HBM generation transition cycle. The current cycle is centered on AI datacenters. Korea Investment & Securities forecast that as the dominant AI accelerator form factor expands from baseboard to rack and from rack to pod, adoption of system-level test, which checks combined performance across multiple chips rather than a single die, will widen substantially. On the other side, consumer IT socket sales for smartphones, PCs and wearables were described as somewhat weak, offset by datacenter growth. With end demand concentrated in AI, a consumer IT recovery remains only a secondary earnings variable for now. Competitively, the technical barrier in rubber sockets is the main defense, but the view that the early SLT socket market will be an oligopoly between ISC and Winway also means share competition among few players feeds directly into pricing and margins. Mirae Asset Securities said the AI share of revenue expanded from 40% in 2024 to 67% in Q3 2025, improving the mix toward higher-value products. In cycle terms, the position looks closer to an expansion phase with high utilization across memory and non-memory, which also raises the exposure to any subsequent downturn."
+  "ko": "테스트 소켓 수요는 AI 가속기, 서버 CPU, ASIC 등 AI 반도체 제품군이 늘면서 커지고 있다. 회사는 AI 반도체의 고속·고전력화와 핀 수 증가, 패키지 대면적화로 테스트 난도가 높아졌다고 설명하며, 이에 따라 고사양 소켓 수요도 확대되고 있다고 본다. 언론은 ISC가 AI 반도체 호황에 따른 구조적 성장 국면에 들어섰다고 평가했다. 증권가에서는 칩 성능이 높아지면서 개별 칩 검사를 넘어 시스템 단위 검사인 시스템레벨테스트(SLT) 수요가 커진다는 점에 주목한다. 회사는 일반 소켓보다 수익성이 30~40% 높은 SLT 소켓의 양산 비중을 2026년 1분기 기준 70%까지 끌어올렸다고 밝혔다. 메모리에서는 HBM 등 하이엔드 제품 중심 수요가 커지는 반면 레거시 메모리는 약세다. 스마트폰과 PC 등 컨슈머 IT 전방 수요의 회복은 더디다는 진단도 나온다. 경쟁 구도에서는 대형 고객사 상대로 기술력과 함께 대량·적기 공급 능력이 주요 경쟁 요소로 부상하고 있다는 것이 회사 판단이다. 같은 업종 상장사로 티에스이(TSE), 리노공업(LEENO Industrial), 하나마이크론(HanaMicron) 등이 있으며, 회사가 밝힌 글로벌 점유율 약 90%는 회사 추정치다.",
+  "en": "Demand for test sockets is growing as AI accelerator, server CPU and ASIC product lines expand. The company says faster, higher-power AI chips, rising pin counts and larger packages have raised test difficulty and expanded demand for high-specification sockets. Press coverage has described ISC as entering a structural growth phase tied to the AI semiconductor boom. Brokers have focused on system-level test (SLT), which is gaining weight as chips grow more complex and testing shifts from individual chips to whole systems. The company says its SLT sockets, which it describes as earning 30–40% better profitability than general sockets, reached 70% of its mass-production mix in Q1 2026. In memory, demand is concentrated in high-end products such as HBM while legacy memory is weaker. Some analysts say the recovery in consumer IT demand from smartphones and PCs has been slow. The company argues that large global customers now treat the ability to supply volume on time, alongside technology, as a key competitive factor. Listed peers in the same industry include TSE, LEENO Industrial and HanaMicron, and the roughly 90% global share cited by the company is its own estimate."
  },
  "outlook": {
-  "ko": "회사가 공개한 계획의 핵심은 생산능력 확대다. 아이에스시는 2026년 4월 1분기 실적 발표에서 베트남 1공장 증설을 조기 완료해 10월부터 본격 가동하고 2공장 신설을 연내 완료해 생산능력을 극대화하며, 국내 생산 통합과 제조 AX 적용으로 생산성과 운영 효율을 강화하겠다고 밝혔다. 2026년 5월 보도에 따르면 회사는 베트남 1공장 증설과 2공장 신설을 목적으로 올해 설비투자 가이던스를 최근 5년 연평균(150억원)을 크게 웃도는 800억~1,000억원으로 제시했고, 이를 통해 전체 생산능력을 기존 2,900억원에서 4,000억원 규모로 확대할 방침이다. 국내에서는 인천 송도사업장 증설에 350억원을 투자하고 분산 운영 중인 공장과 연구개발 기능을 송도로 통합하기로 했다. 제품 측면에서는 2026년 1분기 AI 반도체 테스트소켓(GPU·ASIC) 매출이 전년 대비 191% 성장했고 시스템레벨테스트 비중이 60%를 넘었다고 회사가 설명했다. 적용 범위도 넓히는 중으로, 회사는 데이터센터용 테스트소켓 양산을 본격화한 데 이어 차세대 반도체용 제품의 품질 평가를 고객사와 진행하고 있으며, HBM·HBF·CPO·SOCAMM2 등 차세대 반도체 및 패키징 분야로 소켓 적용 범위를 확대하고 있다고 2026년 7월 밝혔다. 증권가 추정치로는 iM증권이 2026년 3월 자료에서 2026회계연도 매출 3,290억원, 영업이익 1,003억원을 제시했다. 목표주가로는 한국투자증권이 2026년 4월 28일 자료에서 투자의견 매수와 목표주가 30만원을 유지한다고 밝혔다. 다만 이런 계획은 증설 일정 준수, 신규 라인 수율 안정화, 고객 양산 스케줄이 모두 맞물릴 때 성립하는 전제 위에 있다.",
-  "en": "The core of the company's disclosed plan is capacity expansion. In its April 2026 Q1 release, ISC said it had pulled forward completion of the Vietnam Plant 1 expansion for full operation from October, aims to finish new Plant 2 within the year to maximize capacity, and will consolidate domestic production while applying manufacturing AI to lift productivity and operating efficiency. According to May 2026 reporting, the company guided this year's capex to KRW 80-100bn, far above its five-year average of KRW 15bn, for the Plant 1 expansion and Plant 2 build, expanding total capacity from about KRW 290bn to KRW 400bn of output value. Domestically, it decided to invest KRW 35bn to expand the Songdo site in Incheon and consolidate scattered plants and R&D functions there. On products, the company said Q1 2026 AI chip test socket sales for GPUs and ASICs grew 191% year on year and that system-level test accounted for more than 60% of the mix. Application scope is also widening: in July 2026 the company said it had moved datacenter test sockets into full mass production and was running quality evaluations with customers on next-generation chip products, extending socket coverage to HBM, HBF, CPO and SOCAMM2. Among brokerage estimates, iM Securities in a March 2026 note projected FY2026 revenue of KRW 329bn and operating profit of KRW 100.3bn. On target prices, Korea Investment & Securities said on April 28, 2026 that it was maintaining a buy rating and a target price of KRW 300,000. These plans, however, rest on the expansion staying on schedule, yields stabilizing at new lines, and customer ramp timetables lining up."
+  "ko": "회사는 2026년 연결 기준 매출 3,050억원, 영업이익 1,000억원을 전망했다고 2026년 10월 27일 공정공시했다. 같은 공시에서 4분기 전망치는 매출 약 920억원(범위 870억~970억원), 영업이익 약 333억원(범위 283억~383억원)으로 제시됐다. 3분기까지의 잠정 누계 영업이익 667억 7,900만원에 4분기 전망치를 더하면 연간 영업이익 1,000억원 수준에 이른다는 것이 보도의 설명이다. 회사는 4분기가 비수기지만 분기 최대 매출을 예상한다고 밝혔다. 증설 일정은 베트남 1공장 라인이 2026년 10월부터 가동됐고 2공장은 2027년 2분기 가동이 목표다. 베트남과 송도에 투자하는 1,000억원이 완료되면 연간 테스트 소켓 생산능력은 약 200만개에서 최대 500만개로 늘어난다. 송도팹은 2026년 11월 12일 착공했으며 2027년 말 공사 완료, 2028년부터 상업 운영을 계획하고 있다. 실적 발표 요약에 따르면 회사는 2027년 성장률 30% 이상을 목표로 했고, 자동화율은 2026년 10월 기준 약 45%에서 2027년 10월까지 85%로 높이는 것이 목표다. 증설 지연이나 고객 제품 승인 지연이 생기면 목표 시점이 밀릴 수 있다는 점도 회사가 언급한 리스크다.",
+  "en": "On October 27, 2026, the company disclosed under fair disclosure rules that it expects 2026 consolidated revenue of KRW 305.0 billion and operating profit of KRW 100.0 billion. The same disclosure put the Q4 estimate at about KRW 92.0 billion in revenue (range KRW 87.0–97.0 billion) and about KRW 33.3 billion in operating profit (range KRW 28.3–38.3 billion). Adding that estimate to preliminary nine-month operating profit of KRW 66.8 billion brings annual operating profit to roughly KRW 100 billion, according to press reports. The company says Q4 is a seasonally weak quarter but expects its largest quarterly revenue of the year. On capacity, the Vietnam Fab 1 line began operating in October 2026, and Fab 2 is targeted to start in Q2 2027. Once the KRW 100 billion investment across Vietnam and Songdo is complete, annual socket capacity is expected to rise from about 2 million units to as many as 5 million. The Songdo fab broke ground on November 12, 2026, with construction due to finish by the end of 2027 and commercial operation planned from 2028. A summary of the earnings call says management targets growth of 30% or more in 2027, and that automation is to rise from about 45% in October 2026 to 85% by October 2027. The company also flags that delays in capacity expansion or customer product approvals could push these targets back."
  },
  "valuation_comment": {
-  "ko": "현재 주가수익배수는 회사가 이익 저점을 지난 2023년을 제외하면 과거 수년간의 거래 밴드 상단에 가까운 구간에 있고, 순자산 대비로도 프리미엄이 상당히 붙은 상태다. 이는 2023년 이익 급감 이후 2024~2025년 이익이 회복되고 최근 네 개 분기 영업이익률이 30%대에 올라선 흐름을 시장이 반영한 결과로 볼 수 있으며, 반대로 말하면 증설 효과와 AI 매출 성장이 앞으로도 이어진다는 전제가 가격에 들어가 있다는 뜻이기도 하다. 배당은 지급되고 있으나 이익 규모 대비 환원 비중이 크지 않아 배당수익률 자체는 성장주 성격에 가깝게 낮은 편이다. 상대 비교와 관련해서는 한국투자증권이 2026년 5월 자료에서 경쟁사 윈웨이와의 배수 괴리가 매우 크다고 평가했다는 언급이 있으나, 이는 해당 증권사의 판단이며 대만 상장사와의 회계·시장 프리미엄 차이는 별도로 감안해야 한다. 배수 자체보다는 2026년 하반기 증설 라인 가동에 따른 감가상각 증가분을 마진이 흡수하는지, 그리고 2026년 2분기에 나타난 영업이익률 되돌림이 일시적인지가 숫자로 확인될 항목이다.",
-  "en": "The earnings multiple currently sits near the upper part of the trading band seen over the past several years, excluding 2023 when profit bottomed, and the stock also carries a meaningful premium to book value. That reflects the market pricing in the profit recovery through 2024-2025 after the 2023 slump and an operating margin above 30% over the last four quarters; equally, it means continued AI revenue growth and expansion benefits are embedded in the price. A dividend is paid, but the payout is small relative to earnings, so the yield is low in a way typical of growth names. On relative comparison, Korea Investment & Securities said in a May 2026 note that the multiple gap versus rival Winway was very wide, though that is the broker's own assessment and differences in accounting and market premium versus a Taiwan-listed peer need separate consideration. More checkable than the multiple itself is whether margins absorb the higher depreciation from new lines starting up in the second half of 2026, and whether the margin give-back seen in Q2 2026 proves temporary."
+  "ko": "주가순자산비율은 자본총계 대비 시가총액 프리미엄이 큰 구간에 있다. 2025년 말 자본총계는 5,373억원이고 이 중 지배주주 지분은 5,366억원으로, 순자산 규모에 비해 시가총액이 크게 형성된 상태다. 배수 해석은 이익 흐름에 민감하다. 최근 4개 분기 지배주주 순이익 합계는 763억원이고, 이익은 2025년 4분기 정점 이후 3개 분기 연속 감소했기 때문에 같은 주가 수준이라도 이익 방향에 따라 배수가 달리 읽힌다. 2026년 연간 영업이익 전망 1,000억원이 실제로 이어지는지가 배수 해석의 분기점이다. 부채비율은 2022년 33.7%에서 2025년 15.9%로 낮아져 재무 부담은 작다. 배당수익률은 낮은 수준이라 주주환원에서 배당의 비중은 제한적인 구조다.",
+  "en": "The price-to-book ratio places ISC in a range where market value carries a large premium over its net asset base. Total equity at the end of 2025 was KRW 537.3 billion, of which KRW 536.6 billion belonged to controlling shareholders, so market capitalization is high relative to book equity. Earnings-based multiples are sensitive to the direction of profit. The four quarters from Q4 2025 to Q3 2026 total KRW 76.3 billion in profit attributable to controlling shareholders, and that profit has declined for three straight quarters after peaking in Q4 2025, so the same share price can read differently depending on that trend. Whether the 2026 operating profit guidance of KRW 100 billion is realized is the key point for interpreting the multiple. The debt-to-equity ratio fell from 33.7% in 2022 to 15.9% in 2025, indicating a light balance-sheet burden. The dividend yield is low, so dividends play a limited role in shareholder returns."
  },
  "bull": [
   {
    "title": {
-    "ko": "AI 데이터센터향 믹스 개선이 마진으로 확인됨",
-    "en": "AI datacenter mix improvement is showing up in margins"
+    "ko": "AI 매출 비중 확대",
+    "en": "Rising AI revenue share"
    },
    "body": {
-    "ko": "2023년 영업이익률 7.7%였던 회사가 2025년 27.3%, 최근 네 개 분기 합산 30.3% 수준까지 올라온 것은 제품 믹스 변화가 실제 손익에 반영됐다는 근거다. 회사는 2026년 1분기 AI 반도체 테스트소켓 매출이 전년 대비 191% 성장하고 시스템레벨테스트 비중이 60%를 넘었다고 설명했다. AI 매출 비중이 2024년 40%에서 2025년 3분기 67%로 확대됐다는 증권사 집계도 같은 방향이다. 소켓이 소모품이라는 특성상 고객 양산 가동률이 유지되면 반복 매출이 발생하는 구조도 뒷받침 요인이다.",
-    "en": "Moving from a 7.7% operating margin in 2023 to 27.3% in 2025 and about 30.3% over the last four quarters is evidence that the product mix shift is landing in the P&L. The company said Q1 2026 AI chip test socket revenue grew 191% year on year with system-level test above 60% of the mix. A broker tally showing the AI revenue share rising from 40% in 2024 to 67% in Q3 2025 points the same way. Because sockets are consumables, sustained customer utilization generates recurring replacement revenue."
+    "ko": "2026년 3분기 AI 관련 매출은 626억원으로 전년 동기 대비 46% 늘었고 전체 매출의 87%를 차지했다. AI 데이터센터용 매출은 처음으로 분기 500억원을 넘었다. 회사는 서버 CPU와 ASIC으로 제품군을 넓히고 있다고 설명한다.",
+    "en": "AI-related revenue reached KRW 62.6 billion in Q3 2026, up 46% year on year and 87% of total revenue. AI data center revenue passed KRW 50 billion in a quarter for the first time. The company says it is broadening its lineup to server CPUs and ASICs."
    }
   },
   {
    "title": {
-    "ko": "생산능력 병목 해소 일정이 구체적",
-    "en": "A concrete timetable for relieving the capacity bottleneck"
+    "ko": "생산능력 확대 일정",
+    "en": "Capacity expansion timeline"
    },
    "body": {
-    "ko": "미래에셋증권은 2026년 1월 자료에서 생산능력 부족으로 수주 물량을 전부 소화하지 못하는 상황이며 증설 완료 시 연간 생산능력이 약 2,900억원에서 3,500억원 수준으로 확대될 전망이라고 설명했다. 회사는 베트남 1공장 증설을 조기 완료해 10월부터 본격 가동하고 2공장 신설을 연내 완료하겠다고 밝혔다. 병목이 매출 상한이었다면 증설 완료 여부는 확인 가능한 사실 기반의 변수다. 국내에서도 송도사업장 350억원 증설과 분산 공장·연구개발 기능 통합이 병행된다.",
-    "en": "In a January 2026 note, Mirae Asset Securities said capacity shortages were preventing the company from absorbing all its orders and that annual capacity would expand from roughly KRW 290bn to KRW 350bn of output value once expansion completed. The company said it had pulled forward the Vietnam Plant 1 expansion for full operation from October and would complete new Plant 2 within the year. If the bottleneck was capping revenue, completion of the build-out is a fact-based, checkable variable. Domestically, a KRW 35bn Songdo expansion and consolidation of scattered plants and R&D proceed in parallel."
+    "ko": "베트남 1공장은 2026년 10월부터 가동됐고 2공장 목표 시점은 2027년 2분기다. 송도팹은 2028년 상업 운영을 계획하며, 생산능력은 2029년 최대 500만개까지 늘어날 전망이다. 고객 물량을 적기에 공급하는 능력이 경쟁 요소로 떠오른 시장에서 증설은 회사의 대응 수단이다.",
+    "en": "Vietnam Fab 1 began operating in October 2026, and Fab 2 is targeted for Q2 2027. The Songdo fab is planned for commercial operation from 2028, with capacity expected to reach as many as 5 million units by 2029. In a market where timely volume supply has become a competitive factor, the expansion is the company's response."
    }
   },
   {
    "title": {
-    "ko": "가벼운 재무구조와 적용처 확장",
-    "en": "Light balance sheet and widening application base"
+    "ko": "고부가 제품 비중과 수익성",
+    "en": "Higher-value mix and profitability"
    },
    "body": {
-    "ko": "2025년 말 자기자본 5,372.6억원에 부채총계 851.6억원, 부채비율 15.9%로 대규모 설비투자를 자체 재원으로 감당할 여력이 있는 구조다. 2025년 영업활동현금흐름도 417.1억원을 기록했다. 회사는 HBM·HBF·CPO·SOCAMM2 등 차세대 반도체 및 패키징 분야로 소켓 적용 범위를 확대하고 있다고 밝혔고, 피지컬AI와 자율주행 분야 제품의 품질 평가도 고객사와 진행 중이라고 2026년 7월 설명했다. 적용처가 늘어나면 특정 칩 세대에 대한 의존도를 낮출 여지가 있다.",
-    "en": "With equity of KRW 537.3bn against liabilities of KRW 85.2bn and a 15.9% debt-to-equity ratio at end-2025, the structure allows large capex to be funded largely internally. Operating cash flow was KRW 41.7bn in 2025. The company said it is extending socket coverage into next-generation chip and packaging areas including HBM, HBF, CPO and SOCAMM2, and in July 2026 it said quality evaluations for physical AI and autonomous driving applications were under way with customers. A broader application base offers room to reduce dependence on any single chip generation."
+    "ko": "회사는 SLT 소켓의 양산 비중을 2026년 1분기 기준 70%까지 끌어올렸고, 일반 소켓 대비 수익성이 30~40% 높다고 밝혔다. 3분기 영업이익률은 30%를 유지했다. 실적 발표 요약에 따르면 CPU 부문 영업이익률은 55%를 넘었다.",
+    "en": "The company says SLT sockets reached 70% of mass-production mix in Q1 2026 and earn 30–40% higher profitability than general sockets. Operating margin held at about 30% in Q3 2026. A summary of the earnings call says the CPU segment's operating margin already exceeded 55%."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "2026년 2분기 마진 되돌림",
-    "en": "Margin give-back in Q2 2026"
+    "ko": "생산능력 병목",
+    "en": "Production bottleneck"
    },
    "body": {
-    "ko": "2026년 1분기 영업이익률 34.6%(영업이익 236.2억원)에서 2026년 2분기 29.2%(213.2억원)로 낮아졌고, 매출이 682.7억원에서 729.3억원으로 늘어난 가운데 영업이익 금액 자체가 감소했다. 지배주주 순이익도 204.7억원에서 192.9억원으로 줄었다. 원인이 제품 믹스, 증설 초기 비용, 판가 중 무엇인지는 공시된 숫자만으로 특정하기 어렵다. 마진이 30%대 초반에서 안정되는지 여부는 다음 분기 실적에서 확인해야 할 사안이다.",
-    "en": "The operating margin fell from 34.6% in Q1 2026 (KRW 23.6bn) to 29.2% in Q2 2026 (KRW 21.3bn), and operating profit declined in absolute terms even as revenue rose from KRW 68.3bn to KRW 72.9bn. Net profit to owners also slipped from KRW 20.5bn to KRW 19.3bn. Whether the driver was mix, early expansion costs or pricing cannot be pinned down from disclosed figures alone. Whether margins settle in the low 30s is a matter for the next quarterly release."
+    "ko": "3분기 매출은 시장 전망치를 일부 밑돌았다. 후공정 검사 단계의 생산능력 제약으로 약 11억원 규모의 물량이 4분기로 넘어갔다. 생산능력이 수주를 따라가지 못하면 분기 매출이 수주 규모만큼 늘지 않을 수 있다.",
+    "en": "Q3 revenue came in somewhat below market expectations. A production-capacity constraint in post-processing inspection pushed roughly KRW 1.1 billion of orders into Q4. If capacity lags orders, quarterly revenue may not rise in step with bookings."
    }
   },
   {
    "title": {
-    "ko": "설비투자 급증에 따른 고정비 부담",
-    "en": "Fixed-cost burden from a capex surge"
+    "ko": "지배주주 이익의 3개 분기 연속 감소",
+    "en": "Three straight quarters of lower controlling-shareholder profit"
    },
    "body": {
-    "ko": "회사는 베트남 1공장 증설과 2공장 신설을 위해 2026년 설비투자를 최근 5년 연평균 150억원을 크게 웃도는 800억~1,000억원으로 제시했다. 투자 규모가 과거 평균의 여러 배인 만큼 신규 라인 가동 이후 감가상각비와 인건비가 손익에 반영되기 시작한다. 수요가 계획대로 채워지지 않으면 고정비가 마진을 압박하는 방향으로 작동한다. 참고로 2025년 영업활동현금흐름은 417.1억원으로 2024년 506.7억원보다 줄어든 상태다.",
-    "en": "The company guided 2026 capex to KRW 80-100bn for the Vietnam Plant 1 expansion and new Plant 2, well above its five-year average of KRW 15bn. With investment at a multiple of the historical average, depreciation and labor costs will start flowing through the P&L once new lines run. If demand does not fill the added capacity as planned, those fixed costs work against margins. For reference, 2025 operating cash flow of KRW 41.7bn was below the KRW 50.7bn recorded in 2024."
+    "ko": "지배주주 순이익은 2025년 4분기 217억원을 정점으로 2026년 3분기 148억원까지 3개 분기 연속 줄었다. 같은 기간 영업이익은 늘어 두 지표의 방향이 엇갈린다. 2026년 3분기 지배주주 순이익은 전년 동기 대비 7.9% 감소했다. 회사는 3분기 환율 하락의 영향을 받았다고 밝혔다.",
+    "en": "Profit attributable to controlling shareholders fell from KRW 21.7 billion in Q4 2025 to KRW 14.8 billion in Q3 2026 over three consecutive quarterly declines. Operating profit rose over the same period, so the two measures are moving in different directions. Q3 2026 profit attributable to controlling shareholders was down 7.9% year on year. The company said the weaker dollar against the won weighed on Q3 results."
    }
   },
   {
    "title": {
-    "ko": "AI 투자 사이클 의존도 심화",
-    "en": "Deepening dependence on the AI investment cycle"
+    "ko": "컨슈머 IT와 레거시 메모리 약세",
+    "en": "Weak consumer IT and legacy memory"
    },
    "body": {
-    "ko": "회사 설명에 따르면 2026년 1분기 AI 관련 매출은 553억원으로 전사 매출의 81%를 차지했다. 매출 구조가 한 방향으로 쏠릴수록 빅테크와 메모리 업체의 투자 계획 변동이 실적에 직접 전달된다. 같은 기간 스마트폰·PC·웨어러블 등 컨슈머 IT 관련 소켓 매출은 다소 부진했다는 설명도 있어 완충 역할을 기대하기는 어려운 상황이다. 2023년 영업이익률이 7.7%까지 떨어진 전례는 전방 투자 축소 시 이 회사 손익의 진폭이 크다는 사실을 보여준다.",
-    "en": "Per the company, AI-related revenue was KRW 55.3bn in Q1 2026, or 81% of total sales. The more revenue concentrates in one direction, the more directly changes in big tech and memory maker investment plans hit results. Consumer IT socket sales for smartphones, PCs and wearables were described as somewhat weak in the same period, leaving little cushion. The 2023 drop in operating margin to 7.7% shows how wide the earnings swing can be when end-market investment contracts."
+    "ko": "스마트폰과 PC 등 컨슈머 IT 전방 수요의 회복은 더디다는 진단이 나온다. 2026년 1분기 컨슈머 IT 관련 테스트 소켓 매출은 다소 부진했던 것으로 파악됐다. 메모리 부문은 레거시 제품 매출이 줄어 HBM 등 하이엔드 제품 확대가 실적을 받쳐야 하는 구도다.",
+    "en": "Some analysts say the recovery in consumer IT demand from smartphones and PCs has been slow. Consumer IT-related test socket revenue was reported to be somewhat weak in Q1 2026. In memory, legacy product sales are soft, so growth in high-end products such as HBM has to carry the segment."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "고객·전방 집중 위험",
-    "en": "Customer and end-market concentration"
+    "ko": "증설 실행과 고객 승인",
+    "en": "Capacity execution and customer approvals"
    },
    "body": {
-    "ko": "매출이 AI 데이터센터용 GPU·ASIC 고객에 집중돼 있어 특정 고객의 칩 세대 전환 지연이나 물량 조정이 분기 실적에 곧바로 반영될 수 있다. 테스트소켓은 소모품이지만 신제품 개발 단계 수요가 단가가 높은 만큼, 고객의 개발 일정 변경도 믹스에 영향을 준다. 고객사의 HBM 생산능력 증설이 본격화될 때 테스트 장비·소켓 수요가 동반 증가할 것이라는 분석은 역으로 증설 지연 시의 위험도 함께 내포한다.",
-    "en": "Revenue is concentrated in AI datacenter GPU and ASIC customers, so a delay in a given customer's chip generation transition or a volume adjustment can feed straight into quarterly results. Sockets are consumables, but because development-stage demand carries higher unit prices, shifts in customer development schedules also move the mix. The view that test equipment and socket demand rises alongside customers' HBM capacity build-outs equally implies risk if those build-outs slip."
+    "ko": "증설 지연이나 고객사 제품 승인 지연이 생기면 2027년 성장 목표 달성 시점이 늦어질 수 있다. 실적 발표 요약에서는 30% 성장 목표가 보수적이라는 평가와 함께 증설과 승인이 순조로우면 40%까지 올라갈 여지가 있다는 설명이 나왔다. 투자는 1,000억원 규모이며 회사는 고객 수요와 승인 일정에 맞춰 단계적으로 집행한다고 밝혔다.",
+    "en": "Delays in capacity expansion or customer product approvals could push back the timeline for 2027 growth targets. A summary of the earnings call said the 30% growth target is conservative, with upside to 40% if permitting and ramp-ups proceed smoothly. The company says the KRW 100 billion investment will be executed in stages tied to customer demand and approval schedules."
    }
   },
   {
    "cat": {
-    "ko": "실행·수율 위험",
-    "en": "Execution and yield risk"
+    "ko": "환율과 달러 거래 구조",
+    "en": "Exchange rates and dollar-based transactions"
    },
    "body": {
-    "ko": "베트남 1공장 10월 본격 가동과 2공장 연내 완료, 송도사업장 통합이 같은 시기에 겹쳐 있어 이전·통합 과정의 생산 차질이나 신규 라인 수율 안정화 지연 가능성이 있다. 증설 규모가 큰 만큼 가동 초기 고정비가 먼저 발생하고 매출 인식은 뒤따르는 시차도 발생할 수 있다. 해외 생산 비중이 높아 베트남 현지 인건비·환율·물류 변수도 원가에 영향을 준다.",
-    "en": "Full operation of Vietnam Plant 1 in October and completion of Plant 2 within the year, together with the Songdo consolidation, overlap in timing, raising the possibility of production disruption during relocation or delays in stabilizing yields at new lines. Given the scale of the build-out, fixed costs may arrive before the associated revenue is recognized. With most output offshore, Vietnamese labor costs, currency and logistics also affect unit costs."
+    "ko": "거래 대부분이 달러 기준이어서 원·달러 환율 변동이 원화 환산 매출과 이익에 직접 영향을 준다. 2026년 3분기에는 환율 하락이 실적에 부담으로 작용했다. 해외 매출 비중이 75%인 구조라 환율 방향이 분기 실적 변동 요인으로 남는다.",
+    "en": "Most transactions are dollar-denominated, so won-dollar moves feed directly into won-based revenue and profit. Currency weakness weighed on Q3 2026 results. With overseas sales at 75% of revenue, the exchange-rate direction remains a source of quarterly earnings swings."
    }
   },
   {
    "cat": {
-    "ko": "경쟁·단가 및 지배구조 관련 사항",
-    "en": "Competition, pricing and ownership-related items"
+    "ko": "자동화와 인건비 구조",
+    "en": "Automation and labor costs"
    },
    "body": {
-    "ko": "SLT 초기 시장이 ISC와 윈웨이의 과점 구도로 형성될 것이라는 평가가 있으나, 소수 업체 경쟁 구도는 대형 고객의 이중 벤더 요구와 단가 협상 압력을 동반한다. 비메모리에서 포고와 러버가 혼재된 상태에서 러버 전환이 진행 중이라는 점은 기술 표준 경쟁이 아직 진행형임을 뜻한다. 지분 측면에서는 2023년 10월 SKC 편입 이후 최대주주가 SK그룹 계열이며, 회사 IR은 2026년 4월 교환사채 등 오버행 이슈가 해소된 것으로 파악된다고 안내했다. 이런 자본구조 관련 사안은 이후 공시로 계속 확인할 필요가 있다.",
-    "en": "While the early SLT market is described as an oligopoly between ISC and Winway, a few-player structure also brings dual-vendor requirements from large customers and pricing pressure. The fact that non-memory remains a mix of pogo and rubber with a rubber shift still under way means the technical standard contest is unresolved. On ownership, the largest shareholder has been part of the SK group since the October 2023 SKC acquisition, and company IR indicated in April 2026 that exchangeable bond and related overhang issues appeared to have been resolved. Such capital-structure items need continued monitoring through future filings."
+    "ko": "후공정 검사 공정은 노동 집약적이어서 인건비가 원가의 약 30%를 차지한다는 설명이 나왔다. 회사는 2026년 10월 기준 자동화율을 약 45%로 보고 2027년 10월까지 85%로 높이는 목표를 제시했다. 목표 달성 여부가 인건비 부담과 영업이익률에 직접 반영된다.",
+    "en": "Post-processing inspection is labor-intensive, and labor was described as about 30% of total cost. As of October 2026 the company put combined automation at about 45% and targets 85% by October 2027. Whether that target is met will feed directly into labor costs and operating margin."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 10월",
-    "en": "October 2026"
+    "ko": "2026년 12월 말",
+    "en": "End of December 2026"
    },
    "what": {
-    "ko": "회사가 밝힌 베트남 1공장 증설의 10월 본격 가동이 실제로 개시되는지, 그리고 가동 초기 비용이 어느 정도로 반영되는지 확인할 시점이다. 생산능력 병목이 매출 상한이었다면 가동 여부가 4분기 이후 외형의 전제가 된다.",
-    "en": "Check whether the October start of full operations at the expanded Vietnam Plant 1, as stated by the company actually begins, and how much early-stage cost is recognized. If capacity was capping revenue, this start-up is the precondition for top-line scale from Q4 onward."
+    "ko": "2026년 4분기 실적이 공정공시 전망 범위(매출 870억~970억원, 영업이익 283억~383억원)에 들어오는지, 3분기에서 넘어간 약 11억원이 반영되는지 확인한다.",
+    "en": "Whether Q4 2026 results fall within the disclosed outlook ranges (revenue KRW 87.0–97.0 billion, operating profit KRW 28.3–38.3 billion) and whether the roughly KRW 1.1 billion deferred from Q3 is recognized."
    }
   },
   {
    "when": {
-    "ko": "2026년 10월 말~11월 초",
-    "en": "Late October to early November 2026"
+    "ko": "2027년 2월 초",
+    "en": "Early February 2027"
    },
    "what": {
-    "ko": "2026년 3분기 실적 발표에서 2026년 2분기에 29.2%로 낮아진 영업이익률이 회복되는지, 매출이 분기 최고치를 다시 넘는지 확인해야 한다. 회사는 과거 3분기 잠정실적을 11월 초에 공개해 왔다.",
-    "en": "In the Q3 2026 release, watch whether the operating margin, which eased to 29.2% in Q2 2026, recovers and whether revenue again exceeds the prior quarterly high. The company has historically disclosed preliminary third-quarter results in early November."
+    "ko": "2026년 연간 잠정실적 공시가 나온다. 2025년 연간 잠정실적은 2026년 2월 3일에 공시됐다. 연간 매출·영업이익이 3,050억원·1,000억원 전망과 맞는지, 지배주주 순이익의 3개 분기 연속 감소가 멈추는지 본다.",
+    "en": "The 2026 full-year preliminary results are expected. The 2025 preliminary results were disclosed on February 3, 2026. Checks include whether annual revenue and operating profit track the KRW 305.0 billion and KRW 100.0 billion outlook and whether the decline in profit attributable to controlling shareholders ends."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기",
-    "en": "Q4 2026"
+    "ko": "2027년 3월 말",
+    "en": "End of March 2027"
    },
    "what": {
-    "ko": "베트남 2공장 신설의 연내 완료 목표 달성 여부와 생산능력을 기존 2,900억원에서 4,000억원 규모로 확대한다는 계획의 진척도를 점검할 구간이다. 일정이 지연되면 2027년 매출 계획의 전제가 바뀐다.",
-    "en": "This is the window to check whether the target of completing new Vietnam Plant 2 within the year is met and how far the plan to expand capacity from about KRW 290bn to KRW 400bn of output value has progressed. Any slippage changes the basis for 2027 revenue plans."
+    "ko": "2026 사업보고서 제출 기한이다. 확정 연간 수치가 공시 실적에 반영되며, 영업이익률이 2025년 27.3%에서 어떻게 움직였는지 비교하는 기준이 된다.",
+    "en": "The deadline for the 2026 annual report. The confirmed full-year figures will enter the disclosed record, and the operating margin can be compared with 27.3% in 2025."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기~2027년 초",
-    "en": "Q4 2026 to early 2027"
+    "ko": "2027년 2분기",
+    "en": "Q2 2027"
    },
    "what": {
-    "ko": "2025년 인수한 장비·소재 사업(하이스피드 번인테스터, 실장 테스터, HBM용 DRAM 세정 케미컬)의 매출 기여가 숫자로 드러나는지, 그리고 차세대 반도체용 제품의 고객사 품질 평가가 양산 수주로 전환되는지 확인할 항목이다.",
-    "en": "Watch whether the equipment and materials business acquired in 2025, covering high-speed burn-in testers, board-level testers and DRAM cleaning chemicals for HBM, shows measurable revenue contribution, and whether customer quality evaluations for next-generation chip products convert into mass-production orders."
+    "ko": "베트남 2공장 가동 목표 시점이다. 생산능력 확대가 AI 고객 물량 증가와 맞물려 병목을 줄이는지 확인한다.",
+    "en": "The target start for Vietnam Fab 2. Checks include whether added capacity eases the bottleneck as AI customer volume grows."
    }
   },
   {
    "when": {
-    "ko": "2027년 2월 전후",
-    "en": "Around February 2027"
+    "ko": "2027년 10월",
+    "en": "October 2027"
    },
    "what": {
-    "ko": "2026년 연간 확정 실적과 함께 배당 규모, 설비투자 집행 실적, 주주환원 정책 공시 여부를 확인할 시점이다. 대규모 투자기와 환원 정책이 어떻게 병행되는지가 현금흐름 배분의 관전 포인트다.",
-    "en": "Alongside audited full-year 2026 results, check the dividend decision, actual capex execution and any shareholder return policy disclosure. How a heavy investment phase is balanced against returns is the key question for cash flow allocation."
+    "ko": "자동화율 85% 달성 목표 시점이다. 자동화가 인건비 부담과 영업이익률에 반영되는지 확인한다. 같은 시기에 송도팹 공사 완료(2027년 말) 여부도 함께 본다.",
+    "en": "The target date for 85% automation. Checks include whether automation shows up in labor costs and operating margin, and whether the Songdo fab, due for completion by the end of 2027, stays on schedule."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "ISC는 반도체 테스트소켓, 특히 실리콘 러버 소켓에서 오랜 기술 축적을 가진 회사로, 2023년 영업이익률 7.7%까지 떨어졌던 손익이 2024년 25.7%, 2025년 27.3%로 회복되고 최근 네 개 분기 합산 30%대에 올라섰다. 회복의 동력은 AI 데이터센터용 GPU·ASIC 테스트소켓과 시스템레벨테스트 비중 확대이며, 회사도 2026년 1분기 AI 소켓 매출이 전년 대비 191% 성장했다고 설명했다. 다만 2026년 2분기에는 매출이 729.3억원으로 늘어난 반면 영업이익은 213.2억원, 영업이익률은 29.2%로 전분기보다 낮아져 마진의 지속성이 확인 대상으로 남았다. 회사는 2026년 설비투자를 최근 5년 연평균을 크게 웃도는 800억~1,000억원으로 제시하고 생산능력을 2,900억원에서 4,000억원 규모로 확대하겠다고 밝혔는데, 이는 성장 대응이면서 동시에 고정비 선반영이라는 양면을 갖는다. 재무구조는 2025년 말 부채비율 15.9%로 투자를 감당할 여력이 있지만, 영업활동현금흐름은 2024년보다 줄어든 상태다. 밸류에이션 측면에서는 이익 회복과 성장 계획이 이미 배수에 반영된 구간으로, 증설 가동 이후 마진과 AI 매출 성장률이 계획과 얼마나 맞는지가 다음 확인 지점이다. 이 리포트는 정보 제공을 목적으로 하며 매수·매도 의견이나 목표주가를 포함하지 않는다.",
-   "en": "ISC has long-accumulated technology in semiconductor test sockets, particularly silicone rubber types, and its profitability has recovered from a 7.7% operating margin in 2023 to 25.7% in 2024 and 27.3% in 2025, reaching above 30% over the last four quarters combined. The driver has been AI datacenter GPU and ASIC test sockets plus a rising system-level test share, and the company itself said Q1 2026 AI socket revenue grew 191% year on year. However, in Q2 2026 revenue rose to KRW 72.9bn while operating profit came in at KRW 21.3bn for a 29.2% margin, below the prior quarter, leaving margin durability as an open item. The company has guided 2026 capex to KRW 80-100bn, far above its five-year average, and plans to expand capacity from roughly KRW 290bn to KRW 400bn of output value, which is both a response to growth and a front-loading of fixed costs. The balance sheet, with a 15.9% debt-to-equity ratio at end-2025, can support that investment, though operating cash flow was lower than in 2024. On valuation, the profit recovery and growth plan already appear embedded in the multiple, so the next checkpoints are how margins and AI revenue growth track against plan once the new capacity runs. This report is for information purposes and contains no buy or sell recommendation or target price."
+   "ko": "ISC의 공시 실적은 2023년 저점 이후 매출·영업이익·지배주주 순이익이 2년 연속 늘었고, 영업이익률은 2023년 7.7%에서 2025년 27.3%로 회복됐다. 2026년에는 분기 매출이 683억원·729억원·718억원으로 700억원 안팎을 유지했고, 3분기 영업이익은 218억원으로 전년 동기 대비 25.4% 늘었다. 반면 지배주주 순이익은 2025년 4분기 217억원을 정점으로 3개 분기 연속 줄어 영업이익 흐름과 엇갈린다. 3분기 매출의 일부가 생산능력 병목으로 4분기로 넘어간 점은 증설 전까지 분기 실적 변동 요인이다. 강세 요인은 AI 관련 매출 비중 87%, 실리콘 러버 소켓 글로벌 점유율 약 90%(회사 추정), SLT 소켓의 수익성 구조다. 약세 요인은 생산능력 병목, 달러 기준 거래에 따른 환율 영향, 컨슈머 IT와 레거시 메모리의 약세다. 다음 확인 지점은 2026년 4분기 실적, 2027년 초 연간 잠정실적, 2026 사업보고서다.",
+   "en": "ISC's disclosed results show revenue, operating profit and profit attributable to controlling shareholders rising two years in a row after the 2023 low, with the operating margin recovering from 7.7% in 2023 to 27.3% in 2025. Quarterly revenue held around KRW 68–73 billion through 2026, and Q3 operating profit of KRW 21.8 billion was up 25.4% year on year. Profit attributable to controlling shareholders, however, has fallen for three straight quarters from its Q4 2025 peak of KRW 21.7 billion, moving against operating profit. Part of Q3 revenue slipped into Q4 because of a capacity bottleneck, which makes quarterly results sensitive until new capacity comes online. The bullish points are an AI share of 87% of revenue, an estimated global share of about 90% in silicone rubber sockets, and the profitability profile of SLT sockets. The bearish points are the capacity bottleneck, exposure to the dollar in most transactions, and weakness in consumer IT and legacy memory. The next checkpoints are Q4 2026 results, the preliminary full-year 2026 results in early 2027, and the 2026 annual report."
   }
  },
  "sources": [
-  "https://zdnet.co.kr/view/?no=20230707153542",
-  "https://securities.miraeasset.com/bbs/download/2142114.pdf?attachmentId=2142114",
-  "https://zdnet.co.kr/view/?no=20240206192327",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Main.asp?gicode=A095340",
-  "https://m.thinkpool.com/compDiscuss/cont/1022118",
-  "https://www.xn--9v2b23mi6ckvf86n.com/report/485",
-  "https://zdnet.co.kr/view/?no=20260427100925",
-  "https://m.thinkpool.com/compDiscuss/cont/1026291",
+  "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=710143",
+  "https://www.newstap.co.kr/news/articleView.html?idxno=336572",
+  "https://www.tipranks.com/news/company-announcements/isc-reports-2026-third-quarter-sales-of-krw-212976-million",
+  "https://finance.yahoo.com/technology/ai/articles/isc-co-ltd-xkrx-095340-110205610.html",
+  "https://news.mtn.co.kr/article/2026102714353694168",
+  "https://www.gurufocus.com/news/9144080/isc-co-ltd-xkrx095340-q3-2026-earnings-call-highlights-ai-revenue-surges-to-87-of-sales-as-capacity-bottleneck-defers-11-billion-won-to-q4",
+  "https://www.newspim.com/news/view/20261027000245",
+  "https://m.irgo.co.kr/IR-COMP/095340/ISC-",
+  "https://m.thinkpool.com/compDiscuss/cont/1016138",
+  "https://www.hankyung.com/article/202607277466i",
   "https://news.nate.com/view/20260511n10266",
-  "https://www.fnnews.com/news/202607010957577269",
-  "https://www.newspim.com/news/view/20260729000293",
-  "https://m.thinkpool.com/compDiscuss/cont/1025884",
-  "https://isc21.irpage.co.kr/",
-  "https://m.irgo.co.kr/IR-COMP/095340/ISC-IR-PAGE",
-  "https://news.jkn.co.kr/post/869580",
-  "https://comp.wisereport.co.kr/company/c1080001.aspx?cmp_cd=095340&cn=",
-  "https://alphasquare.co.kr/home/stock-summary?code=095340",
-  "https://m.thinkpool.com/compDiscuss/cont/1015604"
+  "https://supple.kr/news/cms2tmver005im3jywgbmxzzy",
+  "https://www.mt.co.kr/stock/2026/09/28/2026092816419613805",
+  "https://www.hankyung.com/article/202611123387i",
+  "https://www.fntoday.co.kr/news/articleView.html?idxno=396320",
+  "https://www.thelec.kr/news/articleView.html?idxno=62151",
+  "https://www.mediapen.com/news/view/1127973",
+  "https://m.joongdo.co.kr/view.php?key=20261112010004488"
  ],
  "v": 2,
- "model": "claude-opus-5",
+ "model": "claude-haiku-5-5",
  "ticker": "095340",
  "name": "ISC",
  "name_en": "ISC Co., LTD.",
@@ -233,11 +233,11 @@
   "반도체"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 05:29",
- "dataDate": "20260904",
+ "reportDate": "2026-11-16",
+ "reportTs": "2026-11-16 10:54",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-09-04",
+  "asOf": "2026-11-16",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -307,12 +307,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 51659253551,
-    "op": 13712859846,
-    "np_owner": 11500017692
-   },
-   {
     "q": "2025Q3",
     "rev": 64521775618,
     "op": 17420765513,
@@ -335,29 +329,36 @@
     "rev": 72929001545,
     "op": 21320151038,
     "np_owner": 19290146566
+   },
+   {
+    "q": "2026Q3",
+    "rev": 71774503502,
+    "op": 21842926341,
+    "np_owner": 14810006008
    }
   ],
   "valuation": {
-   "price": 182000,
-   "mcap": 3.8579,
+   "price": 150900,
+   "mcap": 3.1986,
    "shares": 21197058,
    "total_shares": 21197058,
-   "wavg_shares": 20804676,
-   "per": 48.43,
-   "eps": 3758,
-   "pbr": 6.5044,
-   "bps": 27981,
-   "roe_ttm": 14.4,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": 77554149931,
+   "wavg_shares": 20915194,
+   "per": 41.106,
+   "eps": 3671,
+   "pbr": 5.341,
+   "bps": 28253,
+   "roe_ttm": 13.8,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": 76291434441,
    "ccy": "KRW",
    "bps_src": "자체",
    "eps_src": "공시",
-   "pbr_krx": 6.94,
+   "pbr_krx": 5.75,
    "bps_krx": 26223.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 850.0,
-   "div": 0.47
+   "div": 0.56
   }
- }
+ },
+ "textRules": 2
 }
