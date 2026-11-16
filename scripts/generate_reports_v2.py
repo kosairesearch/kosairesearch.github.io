@@ -2988,6 +2988,9 @@ def _log_shape(message):
         f" · 닫힘 {d.get('closed')} · 블록 {d.get('blocks')} · JSON {d.get('json')} · 항목 {d.get('keys') or d.get('parse')})")
     if d.get("near"):
         log(f"    (깨진 자리: …{d['near']}…)")
+    if d.get("items"):
+        # 항목 목록의 칸 이름(2026-11-16) — 위험 요인에 분류만 남은 글(033790)은 dump 로 다시 읽어야 본문 칸 이름을 알았다
+        log(f"    (항목 칸: {d['items']})")
 
 
 def _housekeep_batches(keep_days=30):

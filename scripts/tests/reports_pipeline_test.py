@@ -565,6 +565,18 @@ with __import__("contextlib").redirect_stdout(buf):
 _lg = buf.getvalue()
 ok("사정: 중단 end_turn" in _lg and "표지 1" in _lg and "Extra data" in _lg and "깨진 자리" in _lg,
    "버리는 글의 사정(중단 사유 · JSON 표지 · 깨진 자리)을 기록에 남긴다", _lg[-300:])
+# 항목 목록의 칸 이름도 남긴다(2026-11-16) — 위험 요인에 분류만 남은 글은 본문 칸 이름을 dump 로 다시 읽어야 알았다
+_msg2 = types.SimpleNamespace(content=[types.SimpleNamespace(
+    type="text", citations=None,
+    text='===JSON_START==={"lead": "a", "business": "b", "risks": [{"cat": "규제", "description": "x"}],'
+         ' "bull": [{"title": "t", "body": "y"}]}===JSON_END===')],
+    stop_reason="end_turn", usage=None)
+buf = io.StringIO()
+with __import__("contextlib").redirect_stdout(buf):
+    M._log_shape(_msg2)
+_lg = buf.getvalue()
+ok("항목 칸: bull:[body1/title1] risks:[cat2/description1]" in _lg,
+   "버리는 글의 항목마다 칸 이름 · 글자 수(위험 요인 본문 칸 등)를 기록에 남긴다", _lg[-300:])
 
 # ═══ ⑧ DART 한도 마커 · 정지 스위치 ═════════════════════════════════════
 print("⑧ 한도 마커 · 정지 스위치")
