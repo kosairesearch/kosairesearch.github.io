@@ -628,6 +628,16 @@ ok(len(_bf) == 1 and "github.event_name != 'workflow_run'" in str(_bf[0].get("if
    str(_bf[0].get("if")) if _bf else "백필 단계 없음")
 ok(((_won.get("workflow_dispatch") or {}).get("inputs") or {}).get("sync_only", {}).get("type") == "boolean",
    "워치독 — 손 실행에 '정리만' 선택이 있다")
+# GITHUB_TOKEN 으로 부른 실행(워치독이 켠 백필 청크 · self-chain)은 끝나도 workflow_run 이 생기지 않는다(11/16 확인) — 직접 부른다
+_v2s = yaml.safe_load((_WFD / "generate_reports_v2.yml").read_text(encoding="utf-8"))["jobs"]
+_v2steps = [s for j in _v2s.values() for s in j.get("steps", [])]
+_ask = [s for s in _v2steps if "gh workflow run reports_watchdog.yml -f sync_only=true" in (s.get("run") or "")]
+_iC = next((i for i, s in enumerate(_v2steps) if "push_main.sh" in (s.get("run") or "")), None)
+ok(len(_ask) == 1 and "github-actions[bot]" in str(_ask[0].get("if")) and "refs/heads/main" in str(_ask[0].get("if"))
+   and "always()" in str(_ask[0].get("if")) and "data/reports_v2" in _ask[0]["run"]
+   and _iC is not None and _v2steps.index(_ask[0]) == _iC + 1,
+   "리포트 v2 — GITHUB_TOKEN 으로 불린 실행은 리포트를 썼을 때 커밋 바로 뒤에서 워치독(정리만)을 직접 부른다",
+   str(_ask[0].get("if")) if _ask else "단계 없음")
 
 print(f"\n통과 {passed} · 실패 {failed}")
 sys.exit(1 if failed else 0)

@@ -138,6 +138,22 @@ jobs:
           # 받아 합치기 · 충돌 · 재시도 · 실패 처리는 공용 단계가 한다(scripts/push_main.sh · 2026-11-13).
           PUSH_TRIES=25 bash scripts/push_main.sh
 
+      # 새로 쓴 리포트에 맞춰 목록 · 지표 표 · 첫 화면 숫자 · 종목 페이지를 곧바로 맞춘다(2026-11-16).
+      # 워치독은 이 작업이 끝나면 workflow_run 으로 돈다 — 다만 워치독 · 앞 청크가 GITHUB_TOKEN 으로 부른 실행(실행 주체
+      # github-actions[bot])은 끝나도 workflow_run 이 생기지 않는다(11/16 병합 뒤 끝난 백필 청크로 확인). 그런 실행만 직접 부른다.
+      - name: 목록 · 지표 표 정리 요청(워치독 · 정리만)
+        if: ${{ always() && github.actor == 'github-actions[bot]' && github.ref == 'refs/heads/main' }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BEFORE: ${{ github.sha }}
+        run: |
+          if git diff --name-only "$BEFORE" HEAD -- data/reports_v2 | grep -q .; then
+            gh workflow run reports_watchdog.yml -f sync_only=true \
+              || echo "::warning::워치독 정리 요청 실패 — 예약 실행이 맞춘다"
+          else
+            echo "새로 쓴 리포트 없음 — 정리 요청 안 함"
+          fi
+
       # 스크립트가 오류로 끝났으면 잡을 실패로 표시한다. 부분 결과는 위에서 이미
       # 커밋했으므로 잃는 것은 없고, 대신 초록불에 속지 않는다.
       #   3 = DART 를 쓸 수 없음(하루 한도·점검·키). 종목 탓이 아니라 skip 을 남기지 않았다.
