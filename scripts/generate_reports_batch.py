@@ -260,13 +260,19 @@ def diagnose(message):
     return out
 
 
-def _vlen(v):
-    """진단용 글자 수 — 글은 길이, {ko, en} 은 한국어 길이, 그 밖은 '?'."""
+def _vlen(v, depth=0):
+    """진단용 글자 수 — 글은 길이, {ko, en} 은 한국어 길이, 다른 꼴은 그 모양(칸 이름 · 목록 길이 · 빈 값)."""
     if isinstance(v, str):
         return len(v)
     if isinstance(v, dict) and isinstance(v.get("ko"), str):
         return len(v["ko"])
-    return "?"
+    if isinstance(v, dict):
+        if depth >= 2:
+            return "{…}"
+        return "{" + "/".join(f"{k}{_vlen(v[k], depth + 1)}" for k in sorted(v)) + "}"
+    if isinstance(v, list):
+        return f"[{len(v)}]"
+    return "∅" if v is None else type(v).__name__
 
 
 def fix_shape(rep):
