@@ -1,220 +1,206 @@
 {
  "title": {
-  "ko": "실적 회복세와 지배구조 리스크의 공존",
-  "en": "Earnings Recovery Coexists with Governance Overhang"
+  "ko": "통신 코어망 소프트웨어 기업, 이익 흐름이 과제",
+  "en": "Telecom Core-Network Software Maker Faces Earnings Volatility"
  },
  "lead": {
-  "ko": "텔코웨어는 SK텔레콤·KT 등 통신사에 코어망 소프트웨어를 공급하며 2025년 이후 마진 회복을 보였지만, 2025년 자진 상장폐지 시도가 실패로 끝나며 지배구조 불확실성이 남아 있다.",
-  "en": "Telcoware supplies core network software to SK Telecom and KT and has shown margin recovery since 2025, but its failed 2025 voluntary delisting attempt leaves governance uncertainty in place."
+  "ko": "텔코웨어는 2025년 연간 매출이 줄었는데도 지배주주 순이익은 늘었고, 2025년 4분기를 정점으로 2026년 1~3분기 지배주주 순이익이 3개 분기 연속 감소해 실적 편차가 큰 구조가 쟁점이다.",
+  "en": "Telcoware's 2025 full-year revenue fell while controlling-shareholder net income rose, but quarterly controlling-shareholder net income has declined for three straight quarters in 2026 after peaking in the fourth quarter of 2025, making earnings volatility the central issue."
  },
  "keypoints": [
   {
-   "ko": "2025년 매출은 383.5억원으로 전년(448.5억원) 대비 줄었으나 영업이익률은 8.6%로 최근 4개년 중 최고치를 기록했다.",
-   "en": "2025 revenue fell to KRW 38.35bn from KRW 44.85bn a year earlier, but operating margin rose to 8.6%, the highest in the past four years."
+   "ko": "무선데이터 솔루션이 2025년 1분기 매출의 83.3%를 차지해 제품 비중이 한 축에 쏠려 있다.",
+   "en": "The wireless data solution accounted for 83.3% of first-quarter 2025 revenue, leaving the product mix concentrated on one line."
   },
   {
-   "ko": "매출은 4분기에 크게 편중되는 구조로, 2025년 4분기 매출(187.3억원)이 다른 분기 대비 두 배 이상 높았다.",
-   "en": "Revenue is heavily concentrated in the fourth quarter, with 2025Q4 revenue of KRW 18.73bn more than double other quarters."
+   "ko": "2025년 매출은 384억원으로 전년 대비 14.5% 줄었지만, 지배주주 순이익은 61.7억원으로 전년 대비 24.0% 늘었다.",
+   "en": "Revenue fell to KRW 38.4 billion in 2025, down 14.5% year on year, while controlling-shareholder net income rose 24.0% to KRW 6.17 billion."
   },
   {
-   "ko": "2025년 5~6월 대표이사가 주당 1만 3,000원에 자진 상장폐지를 위한 공개매수를 시도했으나 목표 물량의 41.4%만 확보해 실패했다.",
-   "en": "In May-June 2025 the CEO attempted a tender offer at KRW 13,000 per share for voluntary delisting but secured only 41.4% of the target volume and failed."
+   "ko": "2025년 4분기 매출 187억원과 지배주주 순이익 69.3억원이 분기 정점이었고, 2026년 1~3분기 지배주주 순이익은 3개 분기 연속 감소했다.",
+   "en": "Fourth-quarter 2025 revenue of KRW 18.7 billion and controlling-shareholder net income of KRW 6.93 billion marked the quarterly peak, followed by three consecutive quarterly declines in 2026."
   },
   {
-   "ko": "자사주 비중이 발행주식의 44%대에 달해 주주환원 정책(소각 여부)에 대한 소액주주들의 요구가 이어지고 있다.",
-   "en": "Treasury shares account for roughly 44% of outstanding shares, and minority shareholders continue to demand clarity on shareholder-return policy including possible cancellation."
+   "ko": "2026년 상반기 SK텔레콤과의 유지보수·재구축 계약이 잇따라 공시되어 주요 고객과의 거래가 이어지고 있음이 공시로 확인된다.",
+   "en": "Several maintenance and rebuilding contracts with SK Telecom were disclosed in the first half of 2026, showing continued business with a core customer."
   },
   {
-   "ko": "최근 네 개 분기(2025년 3분기~2026년 2분기) 지배주주 순이익 합계는 159.6억원으로 연간 기준 이익 규모가 확대됐다.",
-   "en": "Over the trailing four quarters (2025Q3-2026Q2), owner net profit totaled KRW 15.96bn, marking an expanded annual profit scale."
+   "ko": "자기주식과 최대주주 지분이 시장 유통 물량을 제한하는 구조여서, 거래 흐름을 볼 때 이 점을 함께 고려해야 한다.",
+   "en": "Treasury shares and the largest shareholder's stake limit the float, a structural factor to weigh alongside trading activity."
   }
  ],
  "business": {
-  "ko": "텔코웨어는 2000년 설립된 통신 소프트웨어 기업으로, 이동통신망의 핵심 시스템인 코어 솔루션(Core Network)을 주력으로 한다. 회사는 IMS(IP Multimedia Subsystem) 네트워크상의 필수 코어 시스템을 제공하며, HLR·HD Voice 등 음성 핵심망 솔루션과 가상화(VNF·CNF) 기반 이동통신 솔루션, 영상관제 시스템 등으로 사업 영역을 확장해왔다. 주요 고객은 SK텔레콤과 KT 등 국내 이동통신사이며, 텔코웨어는 주로 SK텔레콤과 KT 등 국내 이동통신사에 통신망 소프트웨어를 공급하는 기업으로 알려져 있다. 최근 매출 구성을 보면 2026년 1분기 기준 무선데이터 부문이 82%로 절대적 비중을 차지하고, 음성핵심망이 17%, 기타가 1% 수준으로 파악된다. SK텔레콤과의 계약은 가상화 장비 기술지원, HLR·HD Voice 유지보수, IMS Rebuilding 용역 등 반복적 유지보수·기술지원 성격의 용역이 다수를 이룬다. 이러한 사업구조는 통신사의 네트워크 투자·유지보수 주기에 실적이 연동되는 특성을 낳는다. 경쟁구도 면에서는 국내 통신사 코어망 시장에 특화된 소수 업체 중 하나로, 노키아·에릭슨·삼성전자 등 대형 장비업체와는 직접 경쟁보다 특정 소프트웨어 영역에서의 보완적 역할을 하는 것으로 파악된다. 재무적으로는 자사주 비중이 매우 높고 현금성 자산이 풍부한 편으로, 이는 2025년 지배구조 이벤트(공개매수)의 배경이 되기도 했다.",
-  "en": "Telcoware, founded in 2000, is a telecom software company whose core business centers on Core Network solutions essential to mobile networks. The company provides essential core systems on IMS (IP Multimedia Subsystem) networks and has expanded into HLR and HD Voice voice-core solutions, virtualization-based (VNF/CNF) mobile solutions, and video surveillance systems. Its major customers are domestic mobile carriers, and Telcoware is known as a company that mainly supplies telecom network software to SK Telecom and KT among Korea's mobile carriers. Based on the most recent breakdown as of Q1 2026, wireless data solutions accounted for an overwhelming 82% of revenue, with voice-core network at 17% and other items around 1%. Its contracts with SK Telecom largely consist of recurring maintenance and technical-support work such as virtualization equipment technical support, HLR/HD Voice maintenance, and IMS rebuilding services. This business structure ties results closely to carriers' network investment and maintenance cycles. Competitively, Telcoware is one of a small number of vendors specialized in domestic carrier core-network software, playing a complementary role in specific software segments rather than directly competing with large equipment vendors such as Nokia, Ericsson, or Samsung Electronics. Financially, the company carries an unusually high treasury-share ratio and ample cash holdings, factors that were part of the backdrop to the 2025 governance event involving a tender offer."
+  "ko": "텔코웨어는 이동통신 코어망에 들어가는 소프트웨어를 개발해 통신사에 공급하는 회사다. 주력 제품은 수천만 가입자의 정보를 관리하고 인증하는 통합 가입자 정보 관리 시스템(e-UM)과, VoLTE 같은 IP 기반 음성·멀티미디어 서비스를 제어하는 IP 멀티미디어 서브시스템(i-IMS)이다. 수익은 솔루션 공급에 따른 라이선스 매출과 시스템 운영을 위한 유지보수 용역에서 나온다. 2025년 1분기 분기보고서의 제품별 매출 비중은 무선데이터 83.3%, 음성핵심망 15.3%, 기타 1.4%로, 무선데이터 솔루션이 매출의 대부분을 차지했다. 회사는 단일 사업부문으로 보고하며, 고객은 SK텔레콤을 비롯한 국내 주요 통신사에 집중돼 있다. 2026년 3월 31일 공시된 SK텔레콤과의 '26년 인증(HLR)·HD Voice 유지보수 계약은 94억원 규모로 2026년 4월 1일부터 2027년 3월 31일까지 진행되며, 최근 매출액 대비 21.0%에 해당한다. 같은 날 공시된 가상화 장비 기술지원 계약도 SK텔레콤과 맺은 단일 용역 계약이다. 2026년 6월 23일에는 IMS 재구축 용역(22억원)과 UDM 재구축 용역(43.6억원) 계약이 SK텔레콤과 각각 공시됐다. 2026년 6월 30일 기준 사원수는 169명이며, 자회사 텔코웨어USA는 통신장비 판매 및 서비스를 맡는 해외 법인이다.",
+  "en": "Telcoware develops software for mobile core networks and supplies it to telecom operators. Its flagship products are the integrated subscriber information management system (e-UM), which manages and authenticates subscriber data for tens of millions of users, and the IP multimedia subsystem (i-IMS), which controls IP-based voice and multimedia services such as VoLTE. Revenue comes from license sales tied to software supply and from maintenance services that keep the systems running. In the first-quarter 2025 quarterly report, the wireless data solution accounted for 83.3% of sales, the voice core network for 15.3%, and other products for 1.4%. The company reports a single business segment, and its customers are concentrated among major domestic telecom operators led by SK Telecom. A KRW 9.4 billion maintenance contract with SK Telecom, disclosed on March 31, 2026, runs from April 1, 2026 to March 31, 2027 and equals 21.0% of recent sales. A virtualized equipment technical support contract with SK Telecom was disclosed the same day. On June 23, 2026, separate contracts with SK Telecom for IMS rebuilding (KRW 2.2 billion) and UDM rebuilding (KRW 4.36 billion) were disclosed. The company had 169 employees as of June 30, 2026, and its subsidiary Telcoware USA handles telecom equipment sales and services overseas."
  },
  "earnings": {
-  "ko": "연간 매출은 2022년 425.7억원, 2023년 406.4억원, 2024년 448.5억원으로 등락을 보인 뒤 2025년 383.5억원으로 다시 줄었다. 반면 영업이익은 2022년 28.6억원(영업이익률 6.7%)에서 2023년 30.4억원(7.5%), 2024년 33.8억원(7.5%)으로 꾸준히 개선됐고, 2025년에는 매출 감소에도 영업이익 32.9억원(8.6%)을 기록하며 마진이 오히려 개선됐다. 지배주주 순이익도 2022년 38.7억원에서 2025년 61.7억원으로 확대돼, 최근 4개년 중 가장 높은 수준을 보였다. 분기별로는 뚜렷한 편차가 나타난다. 2025년 2분기는 매출 61.2억원, 영업손실 13.9억원, 순손실 3.8억원으로 적자를 기록했으나, 3분기는 매출 71.4억원에 영업손실이 0.3억원 수준으로 축소됐고 순이익은 7.3억원으로 흑자 전환했다. 4분기는 매출이 187.3억원으로 급증하며 영업이익 65.2억원, 순이익 69.3억원을 기록해 연간 실적을 견인했는데, 이는 프로젝트·라이선스 매출이 연말에 집중 인식되는 구조와 관련된 것으로 해석된다. 2026년 1분기는 매출 68.2억원에 영업손실 13.5억원을 기록했음에도 순이익은 52.3억원으로 큰 흑자를 냈는데, 이는 영업외 손익 요인이 컸던 것으로 보이며, 2분기에는 매출 103.0억원, 영업이익 31.4억원, 순이익 30.8억원으로 다시 영업 실적 중심의 흑자 구조로 복귀했다. 최근 4개 분기(2025년 3분기~2026년 2분기) 누적 지배주주 순이익은 159.6억원에 달해, 2025년 연간 순이익(61.7억원)을 크게 웃도는 규모로 집계된다.",
-  "en": "Annual revenue fluctuated from KRW 42.57bn in 2022 to KRW 40.64bn in 2023 and KRW 44.85bn in 2024, before declining again to KRW 38.35bn in 2025. Operating profit, however, rose steadily from KRW 2.86bn (6.7% margin) in 2022 to KRW 3.04bn (7.5%) in 2023 and KRW 3.38bn (7.5%) in 2024, and even as revenue fell in 2025, operating profit reached KRW 3.29bn with margin improving to 8.6%. Owner net profit likewise expanded from KRW 3.87bn in 2022 to KRW 6.17bn in 2025, the highest level in the past four years. Quarterly results show marked volatility: 2025Q2 posted revenue of KRW 6.12bn with an operating loss of KRW 1.39bn and a net loss of KRW 0.38bn, while 2025Q3 revenue rose to KRW 7.14bn with the operating loss narrowing to roughly KRW 0.03bn and net profit turning positive at KRW 0.73bn. Revenue surged to KRW 18.73bn in 2025Q4, driving operating profit of KRW 6.52bn and net profit of KRW 6.93bn, a pattern consistent with year-end concentration of project and license revenue recognition. In 2026Q1, despite an operating loss of KRW 1.35bn on revenue of KRW 6.82bn, net profit reached KRW 5.23bn, likely reflecting non-operating items, before the company returned to operationally driven profitability in 2026Q2 with revenue of KRW 10.30bn, operating profit of KRW 3.14bn, and net profit of KRW 3.08bn. Over the trailing four quarters (2025Q3-2026Q2), cumulative owner net profit reached KRW 15.96bn, well above the full-year 2025 figure of KRW 6.17bn."
+  "ko": "연간 매출은 2022년 426억원, 2023년 406억원(전년 대비 4.5% 감소), 2024년 449억원(전년 대비 10.4% 증가), 2025년 384억원(전년 대비 14.5% 감소)으로 움직였으며, 2022~2025년 중 가장 큰 해는 2024년, 가장 작은 해는 2025년이다. 2025년 3분기 누적 실적을 설명한 자료에서는 통신사의 투자 계획 변화와 프로젝트 일정 조정이 무선데이터 솔루션 매출 감소의 원인으로 제시됐다. 영업이익은 2022년 28.6억원, 2023년 30.4억원(전년 대비 6.6% 증가), 2024년 33.8억원(전년 대비 10.9% 증가), 2025년 32.9억원(전년 대비 2.6% 감소)이다. 영업이익률은 2022년 6.7%, 2023년 7.5%, 2024년 7.5%, 2025년 8.6%로 올라 2025년에는 매출이 줄었는데도 수익성 비율이 개선됐다. 분기로 보면 2025년 3분기 영업손실 2,998만원 이후 2025년 4분기 영업이익 65.2억원으로 전환됐으며, 이 분기 영업이익은 같은 해 연간 영업이익 32.9억원을 웃돈다. 2025년 4분기 매출 187억원은 전 분기 대비 162.4% 증가해 분기 매출이 특정 시기에 몰리는 패턴을 보여 준다. 2026년 1분기에는 매출 68.2억원과 영업손실 13.5억원, 2분기에는 매출 103억원과 영업이익 31.4억원, 3분기에는 매출 95.2억원과 영업이익 21.9억원을 기록했다. 지배주주 순이익은 2025년 4분기 69.3억원을 정점으로 2026년 1분기 52.3억원, 2분기 30.8억원, 3분기 24.3억원으로 줄었으나, 2026년 3분기는 전년 동기 대비 234.6% 증가한 수치다. 연간 지배주주 순이익은 2022년 38.7억원에서 2023년 53.4억원(전년 대비 37.9% 증가)으로 늘었고, 2024년 49.8억원(전년 대비 6.8% 감소)을 거쳐 2025년 61.7억원(전년 대비 24.0% 증가)이 되어 2022~2025년 중 가장 큰 해가 됐다. 영업활동 현금흐름은 2022년 73.3억원, 2023년 31.3억원, 2024년 44.4억원에서 2025년 169억원으로 크게 늘었다. 반면 부채비율은 2024년 13.4%에서 2025년 26.5%로 올랐고 부채총계는 298억원이다.",
+  "en": "Annual revenue moved from KRW 42.6 billion in 2022 to KRW 40.6 billion in 2023 (down 4.5% year on year), KRW 44.9 billion in 2024 (up 10.4%), and KRW 38.4 billion in 2025 (down 14.5%), making 2024 the largest year and 2025 the smallest in the 2022–2025 span. An analysis of the nine-month 2025 results attributed the revenue decline in the wireless data solution to changes in telecom operators' investment plans and project schedule adjustments. Operating profit was KRW 2.86 billion in 2022, KRW 3.04 billion in 2023 (up 6.6%), KRW 3.38 billion in 2024 (up 10.9%), and KRW 3.29 billion in 2025 (down 2.6%). The operating margin rose from 6.7% in 2022 to 8.6% in 2025, so profitability improved even as 2025 revenue fell. Quarterly, an operating loss of KRW 29.98 million in the third quarter of 2025 turned into operating profit of KRW 6.52 billion in the fourth quarter, which alone exceeded the full-year 2025 operating profit of KRW 3.29 billion. Fourth-quarter 2025 revenue of KRW 18.7 billion, up 162.4% from the prior quarter, shows how sales can concentrate in particular periods. In 2026, first-quarter revenue was KRW 6.82 billion with an operating loss of KRW 1.35 billion, second-quarter revenue reached KRW 10.3 billion with operating profit of KRW 3.14 billion, and third-quarter revenue was KRW 9.52 billion with operating profit of KRW 2.19 billion. Controlling-shareholder net income peaked at KRW 6.93 billion in the fourth quarter of 2025 and then declined to KRW 5.23 billion, KRW 3.08 billion, and KRW 2.43 billion across the next three quarters, although the third-quarter 2026 figure was up 234.6% from a year earlier. Annual controlling-shareholder net income rose from KRW 3.87 billion in 2022 to KRW 5.34 billion in 2023 (up 37.9%), fell to KRW 4.98 billion in 2024 (down 6.8%), and reached KRW 6.17 billion in 2025 (up 24.0%), the largest year in the span. Operating cash flow grew from KRW 7.33 billion in 2022 and KRW 3.13 billion in 2023 to KRW 4.44 billion in 2024 and KRW 16.9 billion in 2025. The debt ratio, however, rose from 13.4% in 2024 to 26.5% in 2025, with total liabilities of KRW 29.8 billion at year-end 2025."
  },
  "industry": {
-  "ko": "텔코웨어가 속한 통신 코어망 소프트웨어 시장은 이동통신사의 네트워크 투자 사이클에 직접적으로 연동되는 특성을 갖는다. 5G 상용화 이후 코어망의 가상화(NFV) 전환이 진행 중이며, 이는 하드웨어 중심에서 소프트웨어 중심 아키텍처로의 구조적 변화를 의미한다. 다만 과거 증권가 분석은 이러한 성장성이 본격화되기 위해서는 5G 환경하에서의 IT 디바이스 보급이 전제돼야 한다고 지적한 바 있다. 국내 시장은 SK텔레콤, KT, LG유플러스 등 소수 통신사에 의해 수요가 결정되는 과점적 구조로, 텔코웨어와 같은 특화 소프트웨어 벤더의 매출은 통신사의 설비투자(CAPEX) 예산과 유지보수 주기에 따라 좌우된다. 글로벌 시장에서는 노키아·에릭슨·삼성전자 등 대형 장비업체가 하드웨어와 통합 솔루션을 제공하는 반면, 텔코웨어는 국내 통신사와의 오랜 관계를 기반으로 특정 소프트웨어 영역에서 안정적 지위를 유지하고 있다. 통신 장비 섹터는 과거 통신사들의 투자 지연 국면을 겪은 바 있어 실적의 사이클 변동성이 상존하는 산업으로 평가된다. 이 때문에 코어망 소프트웨어 기업들은 매출의 절대 규모보다 유지보수·용역 매출의 반복성과 수익성 관리가 중요한 경쟁 요소로 작용한다.",
-  "en": "The telecom core-network software market that Telcoware operates in is directly tied to mobile carriers' network investment cycles. Following 5G commercialization, virtualization (NFV) of core networks is underway, marking a structural shift from hardware-centric to software-centric architecture. However, past brokerage analysis noted that this growth potential requires wider penetration of 5G-capable IT devices before it can fully materialize. The domestic market is an oligopoly dominated by a handful of carriers—SK Telecom, KT, and LG Uplus—so demand for specialized software vendors like Telcoware hinges on carriers' capital-expenditure budgets and maintenance cycles. Globally, large equipment vendors such as Nokia, Ericsson, and Samsung Electronics provide integrated hardware-software solutions, while Telcoware maintains a stable position in specific software niches based on long-standing relationships with domestic carriers. The telecom equipment sector has previously experienced carrier investment delays, making cyclical earnings volatility a persistent industry characteristic. As a result, recurring maintenance and service revenue, along with profitability management, matter more to core-network software companies than absolute revenue scale."
+  "ko": "텔코웨어가 속한 시장은 이동통신사의 네트워크 투자 계획에 따라 수요가 정해지는 구조다. 2025년 3분기 누적 실적에서 매출이 줄어든 이유로 통신사 투자 계획 변화와 프로젝트 일정 조정이 꼽혔다. 회사는 2019년 이후 MEC와 5G SA 코어망에 구축될 NRF, NSSF 등을 신규로 공급하며 원천기술을 강화해 왔다. 5G 코어망 고도화 프로젝트 단위의 공급과 유지보수가 회사 매출의 원천이라는 점에서, 통신사 투자 일정이 분기 실적을 직접 움직인다. 2026년 들어 공시된 SK텔레콤 계약에는 유지보수, 가상화 장비 기술지원, IMS와 UDM 재구축이 포함돼 있어 코어망 관련 수요가 이어지고 있음을 보여 준다. 고객이 국내 주요 통신사에 집중돼 있어 한 고객의 투자 조정이 실적에 곧바로 반영되는 구조다. 업종 내 대형 시스템통합이나 플랫폼 기업과 비교하면 회사는 통신 코어망 소프트웨어에 특화된 사업 구조를 갖고 있다. 2025년 4분기 이후 분기 매출 편차가 커진 점은 프로젝트 인식 시점이 분기마다 달라지는 영향으로 해석된다.",
+  "en": "Telcoware's demand is set by the network investment plans of mobile operators. In the nine-month 2025 results, changes in operator investment plans and project schedule adjustments were cited as reasons for lower revenue. Since 2019 the company has supplied NRF and NSSF functions for MEC and 5G SA core networks and has strengthened its core technologies. Because its revenue comes from project-based software supply and maintenance tied to core network upgrades, operator investment timing directly drives quarterly results. The SK Telecom contracts disclosed in 2026, covering maintenance, virtualization equipment support, and IMS and UDM rebuilding, point to continued demand for core network work. Customer concentration among major domestic operators means that one customer's investment adjustment flows quickly into the company's results. Compared with large system integrators and platform companies in the same IT and software sector, the company has a business structure specialized in telecom core network software. The wider quarterly swings since the fourth quarter of 2025 appear to reflect differences in when projects are recognized from quarter to quarter."
  },
  "outlook": {
-  "ko": "회사의 향후 실적은 SK텔레콤·KT 등 핵심 고객과의 유지보수·기술지원 계약 갱신 여부에 크게 의존할 것으로 보인다. SK텔레콤은 가상화 장비 기술지원, HLR·HD Voice 유지보수, IMS Rebuilding 등 반복적 용역을 지속적으로 발주해온 만큼, 이러한 계약의 연속성이 향후 매출 안정성의 핵심 변수가 될 전망이다. 지배구조 측면에서는 2025년 공개매수 실패 이후 대표이사 측이 2차 공개매수나 포괄적 주식교환 등 대안을 검토할 수 있다는 관측이 시장에서 제기된 바 있으나, 회사 측은 구체적 방침이 결정된 것은 아니라고 밝힌 바 있다. 소액주주들 사이에서는 자사주 소각 등 주주환원 강화를 요구하는 목소리가 이어지고 있어, 향후 이사회나 주주총회 안건으로 관련 논의가 재부상할 가능성이 있다. 신규 성장동력 측면에서는 5G Core 가상화 솔루션(NRF·NSSF 등)과 같은 신규 기술 영역이 언급된 바 있으나, 본격적인 매출 기여 시점은 아직 불확실하다. 매출의 4분기 편중 패턴이 반복될 경우, 연간 실적의 향방은 4분기 실적 발표 시점에 좀 더 명확해질 것으로 예상된다. 회사가 별도의 정량적 가이던스를 공식적으로 제시했는지는 이번 조사에서 확인되지 않았다.",
-  "en": "The company's future performance is likely to depend heavily on whether maintenance and technical-support contracts with core clients such as SK Telecom and KT continue to be renewed. Given that SK Telecom has consistently ordered recurring services such as virtualization equipment technical support, HLR/HD Voice maintenance, and IMS rebuilding, the continuity of these contracts is expected to be a key variable for future revenue stability. On the governance front, following the failed 2025 tender offer, market observers raised the possibility that the CEO's side could consider alternatives such as a second tender offer or a comprehensive share swap, though the company has stated that no specific plan has been finalized. Minority shareholders continue to call for stronger shareholder returns, including cancellation of treasury shares, suggesting these issues could resurface at future board or shareholder meetings. On the growth side, newer technology areas such as 5G core virtualization solutions (e.g., NRF, NSSF) have been mentioned, though the timing of any meaningful revenue contribution remains uncertain. Given the recurring fourth-quarter revenue concentration pattern, the direction of full-year results is likely to become clearer around the fourth-quarter earnings release. This research did not identify any specific quantitative guidance formally issued by the company."
+  "ko": "2026년 들어 공시된 계약은 SK텔레콤 중심으로 이어져 있다. 2026년 3월 31일 공시된 유지보수 계약 94억원은 2027년 3월 31일까지 진행되므로, 그 이후의 계약 갱신 여부가 2027년 매출 흐름을 가르는 변수다. 같은 날 공시된 가상화 장비 기술지원 계약과 2026년 6월 23일의 IMS 재구축(22억원), UDM 재구축(43.6억원) 계약은 코어망 고도화 수요가 반영된 사례다. 2026년 2분기 매출 103억원은 전 분기 대비 51.0% 늘었지만, 같은 분기 지배주주 순이익 30.8억원은 전 분기 대비 41.2% 줄어 매출 회복이 이익 회복으로 곧바로 이어지지는 않았다. 2026년 3분기 매출 95.2억원은 전 분기 대비 7.6% 줄었으나 전년 동기 대비 33.4% 늘어난 수준이다. 다음 확인 지점은 2026년 사업보고서에 담길 연간 영업이익률과 분기 매출 집중 패턴이 2026년 4분기에도 반복되는지 여부다. 2026년 3월 정기주주총회에서는 주당 현금배당이 결의됐으며, 같은 주총 일정이 2027년에도 반복되는지가 주주환원 흐름을 볼 때의 확인 지점이다. 지분 구조는 2025년 9월 기준 자기주식 44.11%, 최대주주 측 41.09%로 집계돼 시장 유통 물량이 제한적인 편이다.",
+  "en": "The contracts disclosed in 2026 are concentrated with SK Telecom. The KRW 9.4 billion maintenance contract disclosed on March 31, 2026 runs through March 31, 2027, so whether it is renewed will shape revenue flow in 2027. The virtualization equipment support contract disclosed the same day, along with the IMS rebuilding (KRW 2.2 billion) and UDM rebuilding (KRW 4.36 billion) contracts disclosed on June 23, reflect demand for core network upgrades. Second-quarter 2026 revenue of KRW 10.3 billion rose 51.0% from the prior quarter, but controlling-shareholder net income of KRW 3.08 billion fell 41.2%, so the revenue recovery did not immediately translate into profit recovery. Third-quarter 2026 revenue of KRW 9.52 billion fell 7.6% from the prior quarter but rose 33.4% from a year earlier. The next checkpoints are the full-year operating margin in the 2026 annual report and whether the quarterly sales concentration seen in the fourth quarter of 2025 recurs in the fourth quarter of 2026. The March 2026 annual general meeting approved a cash dividend per share, and whether the next meeting repeats that decision is the shareholder return checkpoint. Ownership data as of September 2025 show treasury shares at 44.11% and the largest shareholder's side at 41.09%, which limits the float."
  },
  "valuation_comment": {
-  "ko": "주가순자산비율은 순자산 가치에 못 미치는 수준에서 거래되는 구간에 위치해 있어, 시장이 회사의 순자산 전체 가치를 온전히 반영하지는 않는 모습이다. 순이익이 분기별로 적자와 흑자를 반복하다가 최근 4개 분기 기준으로는 뚜렷한 이익 회복을 보인 만큼, 이익 개선의 지속성이 향후 밸류에이션 논의의 중심이 될 것으로 보인다. 배당은 매년 지급돼 왔으나 그 수준이 업종 내에서 상대적으로 높은지 낮은지는 시점별로 달라질 수 있어 일반화하기는 어렵다. 2025년 자진 상장폐지 시도가 실패로 끝난 이후 시장에서는 지배구조 이벤트 재발 가능성과 자사주 소각 여부 등 비영업적 변수가 주가 흐름에 함께 작용하고 있다는 평가가 나온다. 다만 이러한 지배구조 관련 전망은 사업 펀더멘털과는 별개의 변수로, 투자자들은 영업이익률 개선 추이와 지배구조 이슈의 진행 상황을 함께 살펴볼 필요가 있다.",
-  "en": "The price-to-book ratio sits in a range below net asset value, suggesting the market does not fully reflect the company's total net asset base in its share price. Given that quarterly net profit alternated between losses and gains before showing clear improvement over the trailing four quarters, the durability of this profit recovery is likely to remain central to valuation discussions going forward. Dividends have been paid annually, though whether the payout level is relatively high or low versus the sector can vary by period, making generalization difficult. Following the failed 2025 voluntary delisting attempt, market commentary has suggested that non-operating variables—such as the possibility of a renewed governance event or decisions on treasury-share cancellation—are factoring into share price behavior alongside business fundamentals. These governance-related considerations are distinct from operating fundamentals, and investors may wish to monitor both the trajectory of operating margin improvement and the progress of governance issues."
+  "ko": "주가순자산비율은 1배를 밑도는 구간에 있어, 장부상 순자산 대비 할인된 가격에서 거래되는 상태다. 시가총액은 2025년 말 자본총계 1,124억원을 소폭 웃도는 수준이어서 순자산 대비 프리미엄은 크지 않다. 이익 기준 배수는 최근 네 개 분기 지배주주 순이익 합계 177억원을 기준으로 볼 때 2025년 4분기 정점이 포함돼 있어, 이 분기가 빠지면 배수 수준이 달라진다. 배당수익률은 2026년 1월 기준 업종 비교표에서 IT 서비스 업종 평균을 크게 웃돌았다. 자기주식 비중이 높아 실제 거래되는 주식은 제한적이며, 이는 가격 수준을 해석할 때 함께 볼 요소다. 연간 영업이익 32.9억원 대비 시가총액이 여러 배 수준이라는 점에서 수익 기반보다 자산과 배당 쪽에서 평가가 형성되는 구조로 볼 수 있다. 과거 PER 밴드와의 비교는 이 리포트 기준 공시 자료만으로는 정리하지 않는다.",
+  "en": "The price-to-book ratio sits below 1x, so the shares trade at a discount to book net assets. Market capitalization is slightly above total equity of KRW 112.4 billion at year-end 2025, so the premium over net assets is modest. On an earnings basis, the trailing four quarters of controlling-shareholder net income total KRW 17.7 billion and include the fourth-quarter 2025 peak, so the multiple would change materially if that quarter were excluded. The dividend yield was well above the IT services industry average in the January 2026 peer comparison. High treasury share holdings limit the shares actually available for trading, a factor to weigh when reading the price level. Market capitalization is several times the 2025 full-year operating profit of KRW 3.29 billion, so valuation rests more on assets and dividends than on operating earnings alone."
  },
  "bull": [
   {
    "title": {
-    "ko": "영업이익률 개선 흐름",
-    "en": "Improving Operating Margin Trend"
+    "ko": "코어망 고도화 계약의 연속성",
+    "en": "Continuity of core network upgrade contracts"
    },
    "body": {
-    "ko": "영업이익률은 2022년 6.7%에서 2025년 8.6%로 꾸준히 상승했다. 매출 규모가 정체·감소하는 가운데서도 마진이 개선된 점은 비용구조 관리나 수익성 높은 유지보수·용역 매출 비중 확대와 관련이 있을 수 있다. 최근 4개 분기 지배주주 순이익 합계는 159.6억원으로 연간 기준 이익 규모가 확대됐다. 이러한 개선 흐름이 이어질지는 향후 분기 실적으로 확인될 필요가 있다.",
-    "en": "Operating margin rose steadily from 6.7% in 2022 to 8.6% in 2025. The margin improvement even as revenue stagnated or declined may be related to cost management or a growing mix of higher-margin maintenance and service revenue. Cumulative owner net profit over the trailing four quarters reached KRW 15.96bn, an expanded annual scale. Whether this improvement trend continues will need to be confirmed through future quarterly results."
+    "ko": "2026년 3월 SK텔레콤과의 유지보수 계약 94억원이 공시됐고, 같은 해 6월에는 IMS 재구축(22억원)과 UDM 재구축(43.6억원) 계약이 이어졌다. 회사는 2019년 이후 MEC와 5G SA 코어망에 NRF, NSSF 등을 신규 공급해 온 이력이 있다. 주요 고객과의 계약이 공시로 연달아 확인되는 점은 사업 기반의 연속성을 보여 주는 사실이다.",
+    "en": "A KRW 9.4 billion maintenance contract with SK Telecom was disclosed in March 2026, followed by IMS rebuilding (KRW 2.2 billion) and UDM rebuilding (KRW 4.36 billion) contracts in June. The company has supplied NRF and NSSF functions for MEC and 5G SA core networks since 2019. Contracts with a major customer appearing in consecutive filings show continuity in its business base."
    }
   },
   {
    "title": {
-    "ko": "낮은 부채비율과 안정적 현금흐름",
-    "en": "Low Leverage and Stable Cash Flow"
+    "ko": "영업활동 현금흐름의 증가",
+    "en": "Growth in operating cash flow"
    },
    "body": {
-    "ko": "2025년 부채비율은 26.5%로 낮은 수준을 유지하고 있으며, 영업활동현금흐름(CFO)은 2025년 169.3억원으로 전년(44.4억원) 대비 크게 늘었다. 이는 회사가 안정적인 재무 기반 위에서 사업을 운영하고 있음을 보여준다. 풍부한 현금성 자산은 향후 주주환원 정책이나 사업 재투자의 여력으로 작용할 수 있다.",
-    "en": "The debt ratio remained low at 26.5% in 2025, and operating cash flow (CFO) rose sharply to KRW 16.93bn in 2025 from KRW 4.44bn a year earlier. This indicates the company operates on a stable financial base. Ample cash holdings could provide room for future shareholder-return policy or business reinvestment."
+    "ko": "영업활동 현금흐름은 2024년 44.4억원에서 2025년 169억원으로 크게 늘었다. 같은 기간 영업이익률은 2024년 7.5%에서 2025년 8.6%로 올랐다. 매출이 줄어든 해에도 현금 창출 규모가 커진 점은 재무 측면의 강점으로 볼 수 있는 사실이다.",
+    "en": "Operating cash flow rose from KRW 4.44 billion in 2024 to KRW 16.9 billion in 2025. Over the same period the operating margin climbed from 7.5% to 8.6%. Cash generation grew in a year when revenue declined, a financial strength supported by the reported figures."
    }
   },
   {
    "title": {
-    "ko": "핵심 고객과의 반복적 용역 관계",
-    "en": "Recurring Service Relationship with Core Clients"
+    "ko": "주주환원 제도의 유지",
+    "en": "Continued shareholder returns"
    },
    "body": {
-    "ko": "SK텔레콤은 가상화 장비 기술지원, HLR·HD Voice 유지보수, IMS Rebuilding 등 지속적인 용역을 텔코웨어에 발주해온 것으로 확인된다. 이러한 반복적 유지보수 계약은 매출의 기저를 형성하는 안전판 역할을 할 수 있다. 통신 코어망은 대체가 쉽지 않은 인프라 성격상 기존 벤더와의 관계가 유지되는 경향이 있다.",
-    "en": "SK Telecom has been confirmed to continuously order services from Telcoware such as virtualization equipment technical support, HLR/HD Voice maintenance, and IMS rebuilding. Such recurring maintenance contracts can serve as a base-revenue safety net. Because core telecom network infrastructure is not easily replaced, relationships with incumbent vendors tend to persist."
+    "ko": "2026년 3월 정기주주총회에서 주당 현금배당이 결의됐다. 자기주식 보유 비중이 높은 점도 주주환원 정책의 여지를 넓히는 요인으로 해석될 수 있다.",
+    "en": "A cash dividend per share was approved at the regular shareholders' meeting in March 2026. The high treasury share holding could be read as adding room for shareholder return policies."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "매출 성장 정체",
-    "en": "Stagnant Revenue Growth"
+    "ko": "분기 이익의 연속 감소",
+    "en": "Consecutive quarterly profit declines"
    },
    "body": {
-    "ko": "연간 매출은 2022년 425.7억원에서 2025년 383.5억원으로 오히려 줄었으며, 4개년 사이 뚜렷한 성장 궤적을 보이지 못했다. 코어망 소프트웨어 수요가 통신사의 투자 사이클에 의존하는 구조상, 신규 성장동력이 뚜렷하지 않다면 매출 정체가 이어질 가능성이 있다. 이는 이익 개선이 매출 확대가 아닌 비용·마진 관리에 주로 기인했음을 시사한다.",
-    "en": "Annual revenue actually declined from KRW 42.57bn in 2022 to KRW 38.35bn in 2025, showing no clear growth trajectory over the four-year period. Because demand for core-network software depends on carriers' investment cycles, revenue could remain stagnant absent a clear new growth driver. This suggests recent profit improvement stemmed mainly from cost and margin management rather than revenue expansion."
+    "ko": "지배주주 순이익은 2025년 4분기 69.3억원을 정점으로 2026년 1분기 52.3억원, 2분기 30.8억원, 3분기 24.3억원으로 3개 분기 연속 감소했다. 2026년 2분기 매출이 전 분기 대비 51.0% 늘었는데도 이익이 줄어든 점은 매출과 이익의 방향이 엇갈린다는 뜻이다. 이익 흐름이 분기 단위로 안정되는지는 아직 확인할 자료가 충분하지 않다.",
+    "en": "Controlling-shareholder net income fell from KRW 6.93 billion in the fourth quarter of 2025 to KRW 5.23 billion, KRW 3.08 billion, and KRW 2.43 billion across the next three quarters. Second-quarter 2026 revenue rose 51.0% from the prior quarter while profit still declined, so revenue and profit moved in opposite directions. Whether quarterly profit stabilizes is not yet clear from the reported data."
    }
   },
   {
    "title": {
-    "ko": "지배구조 불확실성 지속",
-    "en": "Persistent Governance Uncertainty"
+    "ko": "고객과 매출의 집중",
+    "en": "Customer and revenue concentration"
    },
    "body": {
-    "ko": "2025년 5~6월 대표이사가 자진 상장폐지를 위한 공개매수를 시도했으나 목표 물량의 41.4%만 확보해 실패했다. 소액주주들의 버티기로 자진 상폐 요건을 충족시키지 못했기 때문이라는 평가가 나왔으며, 이후 2차 공개매수나 포괄적 주식교환 등 대안이 재검토될 수 있다는 관측이 제기된 바 있다. 이러한 지배구조 이벤트의 재발 가능성은 일반 주주와 최대주주 간 이해관계 상충 우려를 지속시킨다.",
-    "en": "In May-June 2025, the CEO attempted a tender offer for voluntary delisting but secured only 41.4% of the target volume and failed. Market commentary attributed the failure to minority shareholders holding out, and observers later suggested the CEO's side might reconsider alternatives such as a second tender offer or a comprehensive share swap. The possibility of a repeat governance event continues to raise concerns about conflicts of interest between general shareholders and the controlling shareholder."
+    "ko": "2025년 매출은 384억원으로 전년 대비 14.5% 줄었고, 공시 설명은 통신사의 투자 계획 변화와 프로젝트 일정 조정을 원인으로 들었다. 고객이 국내 주요 통신사에 집중돼 있어 한 고객의 투자 조정이 곧바로 실적에 반영된다. 무선데이터 솔루션 비중이 83.3%로 높아 제품 축이 좁은 점도 약세 요인이다.",
+    "en": "Revenue fell 14.5% to KRW 38.4 billion in 2025, and the filings cited operator investment changes and project schedule adjustments. Customers are concentrated among major domestic operators, so one customer's investment adjustment flows directly into results. A wireless data solution share of 83.3% in the first quarter of 2025 also narrows the product base."
    }
   },
   {
    "title": {
-    "ko": "실적의 높은 분기 변동성",
-    "en": "High Quarterly Earnings Volatility"
+    "ko": "재무 구조의 변화",
+    "en": "Shift in the capital structure"
    },
    "body": {
-    "ko": "2025년 2분기는 영업손실 13.9억원을 기록했고, 2026년 1분기에도 영업손실 13.5억원을 기록했다. 반면 4분기에는 매출과 이익이 급증하는 패턴이 반복돼, 분기별 실적 예측의 신뢰도가 낮은 편이다. 이러한 변동성은 프로젝트·라이선스 매출 인식 시점에 따른 것으로 보이며, 투자자들에게는 단일 분기 실적만으로 연간 추세를 판단하기 어렵게 만드는 요인이다.",
-    "en": "Operating losses of KRW 1.39bn were recorded in 2025Q2 and KRW 1.35bn in 2026Q1, while revenue and profit have repeatedly surged in the fourth quarter. This pattern makes quarter-by-quarter earnings forecasting less reliable. The volatility appears tied to the timing of project and license revenue recognition, making it difficult for investors to gauge the annual trend from any single quarter's results."
+    "ko": "부채비율은 2024년 13.4%에서 2025년 26.5%로 올랐고 부채총계는 298억원이다. 같은 해 영업이익은 32.9억원으로 전년 대비 2.6% 줄었다. 영업활동 현금흐름이 늘었지만 부채가 함께 늘어난 점은 재무 구조를 살필 때의 확인 항목이다.",
+    "en": "The debt ratio rose from 13.4% in 2024 to 26.5% in 2025, with total liabilities of KRW 29.8 billion. Operating profit fell 2.6% to KRW 3.29 billion in 2025. Operating cash flow grew, but liabilities rose alongside it, which is an item to watch in the capital structure."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "지배구조·법적 리스크",
-    "en": "Governance and Legal Risk"
-   },
-   "body": {
-    "ko": "자진 상장폐지 시도 실패 이후 2차 공개매수나 포괄적 주식교환 등 새로운 방식의 지배구조 이벤트가 재추진될 가능성이 시장에서 거론된 바 있다. 이 과정에서 소액주주와의 이해관계 상충, 관련 소송이나 규제당국의 개입 가능성도 배제할 수 없다. 자사주 44%대의 높은 비중은 향후 지배구조 관련 의사결정에서 중요한 변수로 작용할 수 있다.",
-    "en": "Following the failed voluntary delisting attempt, the market has floated the possibility of a renewed governance event via a second tender offer or a comprehensive share swap. This process carries risk of conflicts of interest with minority shareholders and cannot rule out related litigation or regulatory intervention. The roughly 44% treasury-share ratio is likely to remain an important variable in future governance decisions."
-   }
-  },
-  {
-   "cat": {
     "ko": "고객 집중 리스크",
-    "en": "Customer Concentration Risk"
+    "en": "Customer concentration risk"
    },
    "body": {
-    "ko": "회사의 매출은 SK텔레콤과 KT 등 소수 통신사에 크게 의존하는 구조로 파악된다. 특정 고객사의 투자 축소나 계약 조건 변경이 있을 경우 실적에 직접적인 영향을 줄 수 있다. 신규 고객이나 해외 매출 비중에 대한 구체적 정보는 확인되지 않아, 고객 다변화 수준을 가늠하기 어렵다.",
-    "en": "The company's revenue is understood to be heavily dependent on a small number of carriers, mainly SK Telecom and KT. Any reduction in investment or change in contract terms by a key client could directly affect results. Specific information on new clients or the proportion of overseas revenue was not confirmed, making it difficult to gauge the degree of customer diversification."
+    "ko": "매출의 대부분이 국내 주요 통신사에서 나오므로 특정 사업자의 설비 투자 계획 변경이 곧바로 매출 변동으로 이어진다. SK텔레콤과의 계약 금액이 최근 매출액 대비 21.0% 수준인 계약도 있어, 한 고객과의 계약 규모가 전체 실적에 미치는 비중이 크다. 계약 종료 시점인 2027년 3월 31일 이후 갱신 여부가 주요 변수다.",
+    "en": "Most revenue comes from a small number of major domestic operators, so a change in one operator's equipment investment plan quickly moves sales. A single SK Telecom contract equals about 21% of recent revenue, so one customer carries a large share of results. Renewal after the contract ends on March 31, 2027 is the key variable."
    }
   },
   {
    "cat": {
-    "ko": "실적 변동성·성장성 리스크",
-    "en": "Earnings Volatility and Growth Risk"
+    "ko": "프로젝트 일정과 분기 편차 리스크",
+    "en": "Project timing and quarterly volatility risk"
    },
    "body": {
-    "ko": "매출이 4분기에 집중되는 인식 패턴으로 인해 분기별 실적 변동성이 크고, 연간 매출도 최근 4개년간 뚜렷한 성장세를 보이지 못했다. 5G Core 가상화 등 신규 기술 영역이 본격적인 매출로 이어지는 시점은 불확실하다. 통신사의 설비투자 축소나 지연이 발생할 경우 실적에 부정적 영향을 줄 수 있다.",
-    "en": "The year-end revenue concentration pattern creates significant quarterly volatility, and annual revenue has shown no clear growth over the past four years. The timing at which newer technology areas such as 5G core virtualization could translate into meaningful revenue remains uncertain. Any reduction or delay in carrier capital expenditure could negatively affect results."
+    "ko": "2025년 4분기 매출 187억원과 2026년 2분기 매출 103억원처럼 분기 매출 편차가 크다. 프로젝트 인식 시점이 바뀌면 분기 이익이 적자와 흑자 사이를 오갈 수 있다. 2026년 1분기 영업손실 13.5억원이 이 구조를 보여 준다.",
+    "en": "Quarterly revenue swings widely, from KRW 18.7 billion in the fourth quarter of 2025 to KRW 6.82 billion in the first quarter of 2026. A shift in project timing can push quarterly profit between operating losses and operating profit. The first-quarter 2026 operating loss of KRW 1.35 billion illustrates this pattern."
+   }
+  },
+  {
+   "cat": {
+    "ko": "지분 구조와 유통 물량 리스크",
+    "en": "Ownership structure and float risk"
+   },
+   "body": {
+    "ko": "2025년 9월 기준 자기주식이 44.11%, 최대주주 측이 41.09%로 집계돼 시장에서 거래되는 물량이 제한적이다. 유통 주식이 적으면 주가가 실적 이외의 수급 요인에 민감해질 수 있다. 지배구조와 자기주식 처리 방향은 공시를 통해 계속 확인할 사항이다.",
+    "en": "As of September 2025, treasury shares accounted for 44.11% and the largest shareholder's side for 41.09%, limiting the float. With a thin float, the share price can respond more strongly to supply and demand factors unrelated to earnings. Governance and the treatment of treasury shares should be tracked through future filings."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중순",
-    "en": "Mid-November 2026"
+    "ko": "2027년 1분기",
+    "en": "Q1 2027"
    },
    "what": {
-    "ko": "2026년 3분기(7~9월) 실적 발표를 확인해, 통상 비수기로 여겨지는 3분기의 손익 추이와 4분기 실적 집중 패턴이 이번에도 재현되는지 살펴볼 필요가 있다.",
-    "en": "Check the 2026 third-quarter (July-September) earnings release to see whether the typically slower third quarter and the pattern of fourth-quarter revenue concentration repeat this year."
+    "ko": "2026년 연간 잠정 실적과 2026년 사업보고서가 나온다. 2026년 4분기 매출이 2025년 4분기처럼 특정 분기에 몰리는지, 연간 영업이익률이 2025년의 8.6%를 유지하는지 확인할 지점이다.",
+    "en": "The 2026 full-year preliminary results and the 2026 annual report are due. Key checks are whether fourth-quarter revenue concentrates as it did in the fourth quarter of 2025 and whether the full-year operating margin holds near 8.6%."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기(일정 미확정)",
-    "en": "Second half of 2026 (date unconfirmed)"
+    "ko": "2027년 3월 31일",
+    "en": "March 31, 2027"
    },
    "what": {
-    "ko": "2차 공개매수나 포괄적 주식교환 등 지배구조 이벤트 재추진 여부에 대한 공시가 있는지 DART·KIND를 통해 확인이 필요하다.",
-    "en": "Monitor DART and KIND disclosures for any renewed governance event, such as a second tender offer or comprehensive share swap."
+    "ko": "SK텔레콤과의 '26년 인증(HLR)·HD Voice 유지보수 계약 기간이 끝난다. 후속 계약 공시 여부와 금액은 2027년 매출 흐름과 고객 의존도를 가늠하는 자료가 된다.",
+    "en": "The 2026 HLR and HD Voice maintenance contract with SK Telecom ends. Whether a follow-on contract is disclosed, and its size, will indicate revenue direction for 2027 and the level of customer dependence."
    }
   },
   {
    "when": {
-    "ko": "2026년 12월",
-    "en": "December 2026"
+    "ko": "2027년 3월 정기주주총회",
+    "en": "March 2027 regular shareholders' meeting"
    },
    "what": {
-    "ko": "SK텔레콤 등 핵심 고객과의 유지보수·기술지원 계약 갱신 관련 공시가 있는지 확인해, 반복 매출의 지속 여부를 점검할 필요가 있다.",
-    "en": "Check for disclosures on the renewal of maintenance and technical-support contracts with core clients such as SK Telecom to assess the continuity of recurring revenue."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 3월경",
-    "en": "Around March 2027"
-   },
-   "what": {
-    "ko": "2026 사업연도 정기 주주총회에서 자사주 소각·배당정책 등 주주환원 관련 안건이 상정되는지 확인할 필요가 있다.",
-    "en": "Check whether the regular shareholders' meeting for fiscal year 2026 includes agenda items on shareholder returns, such as treasury-share cancellation or dividend policy."
+    "ko": "2026년 사업연도 배당 결의가 이뤄진다. 2026년 3월 주총에서 현금배당이 결의된 사례와 비교해 배당 정책의 연속성을 확인할 지점이다.",
+    "en": "The dividend for fiscal 2026 is expected to be decided. Comparing it with the cash dividend approved in March 2026 will show whether the dividend policy continues."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "텔코웨어는 SK텔레콤·KT를 주요 고객으로 하는 통신 코어망 소프트웨어 기업으로, 2025년 영업이익률이 8.6%로 개선되고 최근 4개 분기 지배주주 순이익이 159.6억원에 달하는 등 이익 측면에서 회복 흐름을 보이고 있다. 다만 연간 매출은 최근 4개년간 뚜렷한 성장세를 보이지 못했고, 분기별 실적은 4분기 편중 패턴 속에서 큰 변동성을 나타낸다. 2025년 5~6월 자진 상장폐지를 위한 공개매수가 목표치의 41.4%만 채우며 실패로 끝났고, 이후 대안적 지배구조 이벤트가 재추진될 가능성이 시장에서 거론되는 등 지배구조 불확실성이 사업 펀더멘털과 별개의 변수로 남아 있다. 자사주 비중이 44%대로 매우 높은 점은 향후 주주환원 정책 방향에 대한 논쟁을 지속시킬 수 있는 요인이다. 재무적으로는 부채비율이 낮고 현금흐름이 견실한 편으로, 안정적 재무 기반을 유지하고 있다. 투자자들은 영업이익률 개선의 지속성, 핵심 고객과의 계약 갱신 여부, 그리고 지배구조 이슈의 진행 상황을 함께 살펴볼 필요가 있다.",
-   "en": "Telcoware is a telecom core-network software company whose main clients are SK Telecom and KT, and it has shown a profit recovery trend, with operating margin improving to 8.6% in 2025 and trailing four-quarter owner net profit reaching KRW 15.96bn. However, annual revenue has shown no clear growth trend over the past four years, and quarterly results exhibit significant volatility within a fourth-quarter-concentrated pattern. The May-June 2025 tender offer for voluntary delisting failed after securing only 41.4% of its target, and market commentary has since raised the possibility of a renewed alternative governance event, leaving governance uncertainty as a variable distinct from business fundamentals. The unusually high treasury-share ratio of around 44% is likely to keep debate alive over the direction of future shareholder-return policy. Financially, the company maintains a low debt ratio and solid cash flow, underpinning a stable financial base. Investors may wish to monitor the durability of operating-margin improvement, the renewal status of contracts with core clients, and the progress of governance issues together."
+   "ko": "텔코웨어는 통신사 코어망 소프트웨어를 공급하는 기업으로, 2025년 연간 매출은 줄었지만 지배주주 순이익과 영업활동 현금흐름은 늘었다. 2025년 4분기 실적이 정점을 이룬 뒤 2026년 1~3분기 지배주주 순이익은 3개 분기 연속 감소했고, 분기 매출 편차가 큰 구조가 함께 나타난다. 강세 요인으로는 SK텔레콤과의 유지보수·재구축 계약이 2026년 상반기에 이어 공시된 점과 주주환원 이력이 꼽힌다. 약세 요인으로는 고객과 제품의 집중, 프로젝트 일정에 따른 실적 변동, 2025년 부채비율의 상승이 있다. 주가 관련 배수는 순자산 대비 낮은 구간에 있지만 이익 기준 배수는 2025년 4분기 정점에 영향을 받는다. 자기주식과 최대주주 지분이 많아 유통 물량이 제한적인 점도 함께 볼 요소다. 다음 확인 지점은 2026년 사업보고서, SK텔레콤 계약의 2027년 3월 31일 이후 갱신 여부, 2027년 3월 정기주주총회의 배당 결의다. 이 리포트는 투자 의견과 목표주가를 포함하지 않으며, 공시와 시장 자료를 정리한 정보 제공용이다.",
+   "en": "Telcoware supplies core network software to telecom operators. Its 2025 full-year revenue fell, while controlling-shareholder net income and operating cash flow rose. After peaking in the fourth quarter of 2025, controlling-shareholder net income declined for three consecutive quarters through the third quarter of 2026, alongside wide quarterly revenue swings. Supporting factors include the maintenance and rebuilding contracts with SK Telecom disclosed in the first half of 2026 and a record of cash dividends. Negative factors include concentration in customers and products, earnings swings tied to project timing, and the rise in the debt ratio in 2025. The price-to-book ratio sits below 1x, while earnings-based multiples are affected by the fourth-quarter 2025 peak. High treasury share and largest-shareholder stakes limit the float. The next checkpoints are the 2026 annual report, whether the SK Telecom contract is renewed after March 31, 2027, and the dividend decision at the March 2027 shareholders' meeting. This report contains no investment opinion or target price and is provided for information only."
   }
  },
  "sources": [
+  "https://comp.fnguide.com/SVO2/asp/SVD_Main.asp?gicode=A078000",
   "https://www.catch.co.kr/Comp/CompInfo/151461",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=ocZWmB50oLGlIYM4",
-  "https://www.jobkorea.co.kr/company/1481542",
-  "https://www.jobplanet.co.kr/companies/5838/reviews/%ED%85%94%EC%BD%94%EC%9B%A8%EC%96%B4",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20250519000007&rcpno=20250519000002&orgid=F&tran=Y&langTpCd=0",
-  "https://www.digitaltoday.co.kr/news/articleView.html",
-  "https://www.eugenefn.com/common/files/amail/20210601_B4520_jongsun.park_1386.pdf",
-  "https://m.imfnsec.com:442/upload/R_E08/2026/05/[11072613]_054450.pdf",
-  "https://m.finance.daum.net/quotes/A054450/news/disclosure/20260210012731",
-  "https://ssl.pstatic.net/imgstock/upload/research/company/1649286602698.pdf",
-  "https://www.telcoware.com/",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20240321001722",
-  "https://ettrends.etri.re.kr/ettrends/158/0905002121/0905002121.html",
-  "https://m.giikorea.co.kr/report/ires1621623-virtualized-evolved-packet-core-market-by.html",
-  "http://home.imeritz.com/include/resource/research/WorkFlow/20210718213355590K_02.pdf",
-  "https://www.newstomato.com/ReadNews.aspx?no=1262522",
-  "https://news.nate.com/view/20250518n20802",
-  "https://news.mt.co.kr/mtview.php?no=2025051914432637703"
+  "https://app.rndcircle.io/company/a3a02dfb-90eb-5b73-819c-1d8f982f4416",
+  "https://kind.krx.co.kr/external/2025/05/15/000722/20250515001641/11013.htm",
+  "https://www.valueline.co.kr/finance/summary/078000",
+  "https://stockvery.com/stock/@078000",
+  "https://m.news.nate.com/view/20260331n40256",
+  "https://www.albamon.com/jobs/detail-company/aOMu_p6xMO08QC8JDC4mPw==",
+  "https://goinsider.kr/en/stock/00361488",
+  "https://stockray.app/ko/stock/078000.KS-dcsna2",
+  "https://www.jobkorea.co.kr/Company/1481542/Info",
+  "https://www.investing.com/equities/telcoware",
+  "https://pflow.keywordegg.com/domestic/078000",
+  "https://m.news.nate.com/view/20260327n30137"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "078000",
  "name": "텔코웨어",
  "name_en": "TELCOWARE CO.,LTD.",
@@ -223,11 +209,11 @@
   "IT·소프트웨어"
  ],
  "market": "코스피",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 07:36",
- "dataDate": "20260904",
+ "reportDate": "2026-11-17",
+ "reportTs": "2026-11-17 03:46",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-11-16",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -297,12 +283,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 6116345272,
-    "op": -1390395002,
-    "np_owner": -376583776
-   },
-   {
     "q": "2025Q3",
     "rev": 7136006441,
     "op": -29978196,
@@ -325,28 +305,36 @@
     "rev": 10303557600,
     "op": 3144129060,
     "np_owner": 3075578375
+   },
+   {
+    "q": "2026Q3",
+    "rev": 9518581036,
+    "op": 2193171544,
+    "np_owner": 2432937593
    }
   ],
   "valuation": {
-   "price": 13360,
-   "mcap": 0.1234,
+   "price": 13440,
+   "mcap": 0.1242,
    "shares": 9240077,
    "total_shares": 9240077,
-   "wavg_shares": 5162969,
-   "per": 4.322,
-   "eps": 3091,
-   "pbr": 0.5881,
-   "bps": 22718,
-   "roe_ttm": 14.4,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": 15956594007,
+   "wavg_shares": 5163536,
+   "per": 3.929,
+   "eps": 3421,
+   "pbr": 0.5788,
+   "bps": 23221,
+   "roe_ttm": 15.7,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": 17662354727,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 0.6,
+   "eps_src": "공시",
+   "pbr_krx": 0.62,
    "bps_krx": 21758.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 640.0,
-   "div": 4.79
+   "div": 4.76
   }
- }
+ },
+ "textRules": 2
 }

@@ -1,230 +1,210 @@
 {
  "title": {
-  "ko": "매출 성장 속 반복된 대규모 순손실",
-  "en": "Revenue Growth Overshadowed by Repeated Net Losses"
+  "ko": "외형은 커졌지만 이익은 적자로 돌아섰다",
+  "en": "Sales Grew, but Profits Turned to Losses"
  },
  "lead": {
-  "ko": "식품 밸류체인 확장으로 매출은 꾸준히 늘었지만, 전분당 자회사의 가격담합 과징금 이슈가 최근 두 개 분기에 대규모 순손실을 남겼다.",
-  "en": "Revenue has expanded steadily through food value-chain M&A, but a price-fixing penalty tied to a starch subsidiary has driven large net losses in two recent quarters."
+  "ko": "사조대림은 2025년 매출 3조 4,998억원으로 외형이 커졌지만 영업이익률은 2.7%로 낮아졌고, 2026년 2분기부터 지배주주 순손실이 이어지고 있다.",
+  "en": "Sajodaerim's 2025 sales rose to KRW 3.5 trillion, yet its operating margin fell to 2.7%, and it has posted attributable net losses in each of the last two quarters."
  },
  "keypoints": [
   {
-   "ko": "연결 매출액은 2022년 2조 188억원에서 2025년 3조 4,998억원으로 확대, 사조CPK·사조푸디스트 인수 온기 반영이 주요 요인.",
-   "en": "Consolidated revenue expanded from KRW 2.019 trillion in 2022 to KRW 3.500 trillion in 2025, mainly from full consolidation of Sajo CPK and Sajo Foodist."
+   "ko": "2025년 매출은 3조 4,998억원(전년 대비 32.4% 증가)이었지만 영업이익은 947억원(전년 대비 28.8% 감소)으로 줄었고, 지배주주 순손실 786억원으로 적자 전환했다.",
+   "en": "2025 sales reached KRW 3.5 trillion, up 32.4% from the prior year, but operating income fell 28.8% to KRW 94.7 billion and attributable net income swung to a loss of KRW 78.6 billion."
   },
   {
-   "ko": "영업이익률은 2023년 6.2%에서 2025년 2.7%로 낮아져, 매출 확대와 별개로 수익성은 오히려 약화됐다.",
-   "en": "The operating margin fell from 6.2% in 2023 to 2.7% in 2025, showing profitability weakened even as sales grew."
+   "ko": "2026년 3분기 영업이익은 63.5억원으로 전년 동기 대비 79.9% 감소했고, 영업이익은 2개 분기 연속 감소했으며 지배주주 순손실 32.6억원으로 2개 분기 연속 적자를 기록했다.",
+   "en": "Operating income in the third quarter of 2026 was KRW 6.35 billion, down 79.9% year on year, and it has declined for two consecutive quarters while attributable net losses have persisted for two quarters."
   },
   {
-   "ko": "2025년 4분기(-1,266억원)와 2026년 2분기(-1,144억원)에 대규모 지배주주순이익 손실이 발생, 최근 4개 분기 합산 순이익도 -2,006억원 적자.",
-   "en": "Owner net loss reached KRW -126.6 billion in Q4 2025 and KRW -114.5 billion in Q2 2026, pushing the trailing four-quarter total to a KRW -200.6 billion loss."
+   "ko": "2024년 인수 자회사가 연결에 반영되며 외형은 커졌지만, 인수기업 실적이 반영되며 매출원가와 판매관리비가 크게 늘었고 원가율과 판관비율이 전년 동기보다 올랐다는 것이 2024년 3분기 보도의 분석이다.",
+   "en": "Consolidating acquired subsidiaries in 2024 expanded sales, but a 2024 third-quarter report attributed higher cost of sales and selling and administrative expenses to the acquisitions, pressuring margins."
   },
   {
-   "ko": "자회사 사조CPK가 전분당 가격담합으로 공정거래위원회로부터 2,001억원의 과징금을 부과받았으며(2026년 7월), 부산물 담합 심의도 별도로 진행 중.",
-   "en": "Subsidiary Sajo CPK was fined KRW 200.1 billion by the Fair Trade Commission for starch price-fixing (announced July 2026), while a separate byproduct collusion case is still under review."
+   "ko": "부채비율은 2023년 77.7%에서 2025년 174.7%로 올랐고, 2025년 말 부채총계는 1조 3,895억원, 자본총계는 7,954억원이다.",
+   "en": "The debt-to-equity ratio rose from 77.7% in 2023 to 174.7% in 2025, with total liabilities of KRW 1.39 trillion and total equity of KRW 795.4 billion at the end of 2025."
   },
   {
-   "ko": "최대주주 및 특별관계인(사조산업·사조랜더텍 등)의 지분 확대가 이어지며 지배구조 변화 가능성이 주목받고 있다.",
-   "en": "The controlling shareholder group (including Sajo Industries and Sajo Landertech) has been steadily increasing its stake, drawing attention to potential governance changes."
+   "ko": "주가순자산비율은 1배를 크게 밑도는 수준이고, 최근 네 개 분기 순손실 구간이라 주가수익비율은 산출되지 않는다.",
+   "en": "The price-to-book ratio sits well below 1x, and because the last four quarters were net losses, a price-to-earnings ratio cannot be calculated."
   }
  ],
  "business": {
-  "ko": "사조대림은 사조그룹의 식품 사업을 총괄하는 핵심 계열사로, 가공육·수산가공품·식용유 등을 제조해온 전통적 식품기업이다. 2019년 사조해표를 흡수합병하며 식용유·소스 사업을 통합했고, 사조대림은 2019년 '사조해표' 흡수합병, 2023년 전분당 제조업체 '인그리디언 코리아' 인수, 지난 6월 식자재업체 '푸디스트' 인수를 통해 외형 확장은 물론 원가 및 유통 경쟁력 강화를 도모하고 있다. 특히 지난 6월 사조CPK 및 사조오양이 각각 '푸디스트' 지분 68.16%, 31.7%를 인수한다고 밝혔다는 점에서, 사조대림은 자회사인 사조CPK를 매개로 식자재·급식 사업을 간접 편입한 구조를 갖게 됐다. 주요 제품군은 햄·소시지 등 가공육, 어묵 등 수산가공품, 참치·연어 등 냉동수산물, 식용유, 그리고 사조CPK를 통한 물엿·전분당 등 산업용 식품 소재다. 사조푸디스트는 사조대림의 계열사로 '토탈 푸드 솔루션' 기업으로의 도약을 목표로 하며, 사명 변경과 더불어 온라인 쇼핑몰 및 케어푸드 사업 확대를 통해 매출 증대를 꾀하고 있다. FS(위탁급식 및 컨세션) 부문은 사조푸디스트의 주요 사업 분야로 계약된 대형 고객사를 대상으로 식자재 및 급식 서비스를 제공하며, 최근 실적의 주요 성장 동력으로 작용하고 있다. 경쟁구도는 가공식품에서 CJ제일제당·대상·동원F&B 등과, 전분당에서 대상·삼양사·CJ제일제당과, 급식·식자재 유통에서 CJ프레시웨이·현대그린푸드 등과 맞물려 있다. 최대주주 및 특별관계인 지분이 높은 편으로, 지배구조가 오너 3세 중심으로 재편되는 과정에 있으며, 잇단 M&A로 외형은 빠르게 확대됐으나 자회사 편입에 따른 비용구조 변화와 통합 리스크도 함께 커지고 있다.",
-  "en": "Sajo Daerim is the core food affiliate of Sajo Group, a traditional processed-food company producing processed meats, seafood products and cooking oil. It absorbed Sajo Haepyo in 2019 to integrate its cooking oil and sauce business, and Sajo Daerim has pursued external growth and strengthened cost and distribution competitiveness through the 2019 merger with Sajo Haepyo, the 2023 acquisition of starch maker Ingredion Korea, and the June acquisition of food-service company Foodist. Notably, in June, Sajo CPK and Sajo Ohyang announced they would acquire 68.16% and 31.7% stakes in Foodist, respectively, meaning Sajo Daerim indirectly absorbed the food-service and distribution business through its subsidiary Sajo CPK. Its core product lines include processed meats such as ham and sausages, seafood products like fish cakes, frozen seafood such as tuna and salmon, cooking oil, and industrial food materials such as starch syrup produced by Sajo CPK. Sajo Foodist, a Sajo Daerim affiliate, aims to become a 'total food solution' company and is pursuing sales growth through a name change along with expansion into online retail and care-food business. The FS (contracted food service and concession) segment is Sajo Foodist's core business, providing food materials and catering services to large contracted clients, and has recently served as a key growth driver. Competitively, the company faces CJ CheilJedang, Daesang and Dongwon F&B in processed foods, Daesang, Samyang and CJ CheilJedang in starch sweeteners, and CJ Freshway and Hyundai Green Food in food-service distribution. The controlling family and related parties hold a large stake, with governance increasingly centered on the third-generation owner, and while successive M&A has rapidly expanded scale, cost-structure changes and integration risk from newly consolidated affiliates have also grown."
+  "ko": "사조대림은 1964년 설립된 식품 제조·유통 기업으로, 그룹 내에서 가공식품 제조와 유통을 맡고 있다(사조그룹 내 가공식품 제조 및 유통을 담당하고 있다). 2023년 기준 사업 비중은 식품 제조 81%, 축산 15%, 원양어업 3%, 임대 기타 1%였으며, 이는 인수합병 이전 총매출 기준이다. 식품 제조 안의 카테고리별로는 식용유지 17%, 어묵 및 맛살 11%, 대두부산물 9%, 참치캔 7%, 장류 4% 순으로 추산됐다. 외형 확대는 인수에서 나왔다. 2024년 2월 전분당 제조업체 인그리디언코리아 매매계약을 체결하고 사명을 사조CPK로 변경했고, 식자재 유통·급식 업체 푸디스트 인수 계약도 맺었다. 푸디스트는 식품 제조와 유통, 급식 사업을 영위하며 매출 규모는 약 1조원으로 소개됐다. 주요 품목의 국내 위치는 맛살류 시장점유율 42.44%, 식용유 31.40%, 어묵 27.30%(2025년 9월 기준)다. 수출은 2023년 수출액이 1,060억원 규모였고, 2024년 12월 기준 OEM·명태·대구 등 상품 매출의 수출 비중은 9.36%에 그쳤다. 경쟁 측면에서는 식품 산업 내 제조기술 평준화와 자동화로 특정 신제품이 나오면 곧이어 유사제품이 출시되는 구조가 경쟁 심화 요인으로 꼽힌다. 지분 구조는 최대주주는 사조산업 외(58.52%)로, 2023년 연결 실적을 다룬 보도 기준이다.",
+  "en": "Founded in 1964, Sajodaerim manufactures and distributes processed foods and handles food manufacturing and distribution within its group. Based on 2023 total sales before its acquisitions were consolidated, food manufacturing accounted for 81%, livestock 15%, overseas fishing 3%, and leasing and other 1%. Within food manufacturing, edible oils and fats were estimated at 17%, fish cakes and surimi at 11%, soybean meal by-products at 9%, canned tuna at 7%, and soy and fermented seasonings at 4%. Growth in scale came mainly from acquisitions: in February 2024 the company agreed to buy the starch and sugar maker Ingredient Korea and renamed it, and it also agreed to acquire the food-service and distribution company Foodist, which was reported to have sales of roughly KRW 1 trillion. Among key products, market shares in 2025 (September) were 42.44% for fish-paste products, 31.40% for cooking oil and 27.30% for fish cakes. Exports were about KRW 106 billion in 2023, and the export share of OEM, pollock and cod-related product sales was 9.36% as of December 2024. Competition is intense because technology in food manufacturing has become standardized, so similar new products tend to follow quickly. The largest shareholder, Sajo Industries, together with related parties held 58.52%, per a report on 2023 consolidated results."
  },
  "earnings": {
-  "ko": "연간 실적을 보면 매출액은 2022년 2조 188억원에서 2023년 2조 631억원, 2024년 2조 6,430억원, 2025년 3조 4,998억원으로 M&A 온기 반영에 힘입어 꾸준히 늘었다. 그러나 영업이익률은 2022년 4.8%→2023년 6.2%→2024년 5.0%→2025년 2.7%로 오히려 하락했는데, 이는 매출 볼륨은 커졌지만 원가·고정비 비중이 높은 사업이 섞여 들어간 영향으로 해석된다. 실제로 사조대림은 매출은 늘었지만 당기순이익은 줄었는데, 인그리디언코리아와 푸디스트 인수 후 해당 회사 실적이 반영되며 비용 리스크가 커진 것으로 지적된 바 있다. 지배주주 순이익은 2022년 712억원, 2023년 913억원, 2024년 918억원으로 흑자 기조를 유지했으나 2025년에는 -736억원으로 적자 전환했다. 분기별로는 2025년 3분기(매출 9,370억원, 영업이익 317억원, 지배주주순이익 261억원)까지 영업이익·순이익이 모두 양(+)의 흐름을 보였으나, 2025년 4분기에는 매출 8,486억원·영업이익 161억원의 흑자에도 지배주주순이익이 -1,266억원으로 급격히 악화됐다. 2026년 1분기에 143억원 흑자로 돌아섰다가 2026년 2분기 다시 -1,144억원의 대규모 순손실을 기록했는데, 사조대림의 재무체력이 흔들리고 있으며 현금흐름이 급감한 가운데 자회사 사조CPK의 전분당 담합 사건으로 인한 과징금 현실화 가능성이 커지고 있다는 지적이 이미 2026년 3월경 제기된 바 있어, 두 차례의 대규모 순손실은 이 이슈와 시기적으로 맞물려 있는 것으로 풀이된다. 이 결과 2025년 3분기~2026년 2분기 4개 분기 합산 지배주주순이익은 -2,006억원의 손실로, 2025년 연간 영업활동현금흐름(627억원)이 여전히 플러스임에도 손익계정상 적자가 이어지고 있다. 부채비율은 2022년 93.5%에서 2025년 174.7%로 크게 높아져, M&A 재원 조달과 관련한 재무 부담도 함께 확인된다.",
-  "en": "Annual revenue rose steadily from KRW 2.019 trillion in 2022 to KRW 2.063 trillion in 2023, KRW 2.643 trillion in 2024 and KRW 3.500 trillion in 2025, driven by full-year consolidation from M&A. However, the operating margin actually declined from 4.8% in 2022 to 6.2% in 2023, 5.0% in 2024 and 2.7% in 2025, reflecting a mix shift toward businesses with higher cost and fixed-cost ratios even as sales volume grew. Indeed, it has been noted that Sajo Daerim's revenue increased while net income declined, as cost risk grew after the earnings of acquired Ingredion Korea and Foodist were consolidated. Owner net income stayed positive at KRW 71.2 billion in 2022, KRW 91.3 billion in 2023 and KRW 91.8 billion in 2024, but turned negative at KRW -73.6 billion in 2025. On a quarterly basis, both operating profit and net income remained positive through Q3 2025 (revenue KRW 937.0 billion, operating profit KRW 31.7 billion, owner net income KRW 26.1 billion), but in Q4 2025 owner net income deteriorated sharply to KRW -126.6 billion despite an operating profit of KRW 16.1 billion on revenue of KRW 848.6 billion. After returning to a KRW 14.3 billion profit in Q1 2026, the company again posted a large net loss of KRW -114.5 billion in Q2 2026; notably, concerns that Sajo Daerim's financial strength was weakening, with cash flow shrinking and the risk of a fine materializing from subsidiary Sajo CPK's starch price-fixing case, had already been raised around March 2026, suggesting the two large losses coincide with this issue. As a result, the trailing four-quarter (Q3 2025-Q2 2026) owner net income totals a loss of KRW -200.6 billion, even as 2025 annual operating cash flow of KRW 62.7 billion remained positive. The debt ratio also rose sharply, from 93.5% in 2022 to 174.7% in 2025, underscoring the financial burden tied to M&A funding."
+  "ko": "연간 기준 매출은 2022년 2조 188억원, 2023년 2조 631억원(전년 대비 2.2% 증가), 2024년 2조 6,430억원(전년 대비 28.1% 증가), 2025년 3조 4,998억원(전년 대비 32.4% 증가)으로 2023년부터 2025년까지 3년 연속 증가했다. 같은 기간 영업이익은 2022년 977억원, 2023년 1,286억원(전년 대비 31.7% 증가), 2024년 1,330억원(전년 대비 3.4% 증가)으로 늘었다가 2025년 947억원(전년 대비 28.8% 감소)으로 줄었다. 2022~2025년 중 영업이익이 가장 큰 해는 2024년이다. 영업이익률은 2022년 4.8%, 2023년 6.2%, 2024년 5.0%, 2025년 2.7%로 매출 증가 속도를 따라가지 못했다. 지배주주 순이익은 2022년 712억원, 2023년 913억원, 2024년 918억원(전년 대비 0.5% 증가)이었으나 2025년에는 지배주주 순손실 786억원으로 적자 전환했다. 당기순이익(비지배지분 포함)은 2025년 당기순손실 736억원으로, 비지배지분 몫에 이익이 있어 지배주주 손실 규모가 당기순손실보다 크다. 분기 흐름을 보면 2025년 3분기 매출 9,370억원, 영업이익 317억원에서 2025년 4분기에는 매출 8,486억원(전 분기 대비 9.4% 감소), 영업이익 161억원(전 분기 대비 49.1% 감소)으로 줄었고 지배주주 순손실 1,286억원으로 전환됐다. 2026년 1분기에는 영업이익 238억원(전 분기 대비 47.4% 증가)으로 회복됐으나 2분기 204억원(전 분기 대비 14.0% 감소), 3분기 63.5억원(전 분기 대비 68.9% 감소)으로 2개 분기 연속 감소했다. 2026년 3분기 매출은 9,273억원으로 전 분기 대비 5.5% 늘었지만 전년 동기 대비 1.0% 줄었다. 지배주주 순이익은 2026년 1분기 143억원으로 흑자 전환했다가 2분기 순손실 1,145억원, 3분기 순손실 32.6억원으로 2개 분기 연속 적자다. 최근 네 개 분기 지배주주 순손실 합계는 2,320억원이다. 영업활동 현금흐름은 2022년 612억원, 2023년 1,748억원, 2024년 1,530억원에서 2025년 627억원으로 줄었다. 부채비율은 2024년 153.2%, 2025년 174.7%로 올랐다. 2025년 말 자본총계 7,954억원 중 지배주주 지분은 6,523억원이다.",
+  "en": "On an annual basis, sales were KRW 2.02 trillion in 2022, KRW 2.06 trillion in 2023 (up 2.2%), KRW 2.64 trillion in 2024 (up 28.1%) and KRW 3.5 trillion in 2025 (up 32.4%), rising three consecutive years from 2023 to 2025. Operating income went from KRW 97.7 billion in 2022 to KRW 128.6 billion in 2023 (up 31.7%) and KRW 133 billion in 2024 (up 3.4%), then fell to KRW 94.7 billion in 2025 (down 28.8%). 2024 was the largest year for operating income across 2022 to 2025. Operating margin was 4.8% in 2022, 6.2% in 2023, 5.0% in 2024 and 2.7% in 2025, so margins did not keep pace with sales growth. Attributable net income was KRW 71.2 billion in 2022, KRW 91.3 billion in 2023 and KRW 91.8 billion in 2024 (up 0.5%), then turned to an attributable net loss of KRW 78.6 billion in 2025. Net income including non-controlling interests was a loss of KRW 73.6 billion in 2025, a different figure because non-controlling holders recorded profit. Quarterly, operating income fell from KRW 31.7 billion in the third quarter of 2025 to KRW 16.1 billion in the fourth quarter (down 49.1% quarter on quarter), when attributable net loss was KRW 128.6 billion. It recovered to KRW 23.8 billion in the first quarter of 2026 (up 47.4%), then declined to KRW 20.4 billion in the second quarter (down 14.0%) and KRW 6.35 billion in the third quarter (down 68.9%), two consecutive quarterly declines. Third-quarter 2026 sales were KRW 927.3 billion, up 5.5% from the prior quarter but down 1.0% year on year. Attributable net income was KRW 14.3 billion in the first quarter of 2026, then losses of KRW 114.5 billion in the second quarter and KRW 3.26 billion in the third quarter. Attributable net losses over the last four quarters total KRW 232 billion. Operating cash flow was KRW 61.2 billion in 2022, KRW 174.8 billion in 2023, KRW 153 billion in 2024 and KRW 62.7 billion in 2025. The debt-to-equity ratio rose to 153.2% in 2024 and 174.7% in 2025, and attributable equity was KRW 652.3 billion at the end of 2025."
  },
  "industry": {
-  "ko": "식품업종은 내수 소비 둔화와 원가(곡물·유지·인건비) 변동성이 상존하는 업종으로, 전방 소비 경기와 후방 원자재 가격에 동시에 노출된다. 특히 전분당(물엿·액상과당) 시장은 국내 B2B 전분 시장의 95.7%, 전분당 시장의 86.4%를 대상·사조CPK·삼양사·CJ제일제당 4개사가 차지하는 고과점 구조로, 대규모 설비투자가 필요해 신규 진입이 어려운 장치산업 특성을 갖는다. 이 과점 구조는 2026년 7월 공정거래위원회가 2018년 5월부터 2025년 10월까지 전분·전분당 판매가격을 담합한 행위에 대해 총 7,475억 7,800만원의 과징금을 부과하기로 결정하면서 크게 흔들렸으며, 업체별 과징금은 대상 2,341억 4,100만원, 삼양사 2,103억 4,000만원, 사조CPK 2,001억 3,200만원, CJ제일제당 1,029억 6,500만원이었다. 이는 공정위가 담합 사건에 부과한 과징금 중 역대 최대 규모다. 공정위는 이와 별도로 대상·사조CPK·삼양사가 전분당 부산물 제품 판매가격을 담합했다고 판단해 심사보고서를 발송했으나 아직 최종 판단은 내려지지 않은 상태다. 정부는 물가 안정을 위해 2021년부터 수입 가공용 옥수수 200만톤에 대해 할당관세 0%를 적용해왔지만, 국제 옥수수 가격 급등기에 전분당 판매가격이 담합 시작 시점인 2018년 5월 대비 최대 73%까지 인상된 것으로 조사돼 정책 효과가 온전히 전달되지 못했다는 지적이 나온다. 급식·식자재 유통 부문에서는 CJ프레시웨이·현대그린푸드·아워홈 등 대형 업체와 경쟁하며, 계약 기반의 안정적 매출 구조가 특징이다. 업종 전반적으로 2025~2026년은 곡물 투입가와 규제 리스크가 동시에 부각된 시기로, 원가 안정화 효과와 별개로 담합 관련 비용 부담이 업계 실적에 새로운 변수로 등장했다.",
-  "en": "The food industry faces persistent domestic consumption softness alongside cost volatility in grains, fats and labor, exposed simultaneously to downstream consumption cycles and upstream raw material prices. The starch sweetener market in particular has an oligopoly structure where Daesang, Sajo CPK, Samyang and CJ CheilJedang together control 95.7% of the domestic B2B starch market and 86.4% of the starch sweetener market, a capital-intensive industry that is difficult for new entrants to penetrate. This oligopoly was significantly shaken in July 2026 when the Fair Trade Commission decided to impose a total fine of KRW 747.58 billion for price-fixing of starch and starch sweetener products from May 2018 to October 2025, with individual fines of KRW 234.14 billion for Daesang, KRW 210.34 billion for Samyang, KRW 200.13 billion for Sajo CPK and KRW 102.97 billion for CJ CheilJedang. This was the largest fine the Fair Trade Commission has ever imposed in a collusion case. Separately, the regulator determined that Daesang, Sajo CPK and Samyang colluded on prices for starch sweetener byproducts and sent an examination report, though a final ruling has not yet been made. The government has applied a zero-percent quota tariff on about 2 million tons of imported industrial corn since 2021 to stabilize prices, but investigators found that starch sweetener prices rose by as much as 73% compared to the start of the collusion in May 2018 during a period of surging international corn prices, suggesting the policy benefit was not fully passed through. In food service and distribution, the company competes with large players such as CJ Freshway, Hyundai Green Food and Ourhome, a segment characterized by stable, contract-based revenue. Overall, 2025-2026 has been a period where both grain input costs and regulatory risk have come to the fore, with collusion-related cost burdens emerging as a new variable for industry earnings despite raw material stabilization."
+  "ko": "식품 제조 업황은 신제품이 나오면 유사 제품이 곧바로 뒤따르는 구조라 가격 경쟁과 마진 압박이 반복되기 쉽다(할인점, SSM, 편의점 매장 영향이 늘어 경쟁이 심화될 것으로 예상됨이라는 업계 평가도 있다). 원가 측면에서는 주요 원재료 7개 중 4개(돈정육, 계정육, 대두유, 채종유) 품목 가격이 올랐다고 2024년 3분기 보도가 전했다. 반대로 2024년 증권가에서는 대두 및 참치 등 주요 원재료 투입가가 안정화되면서 마진 레버리지를 기대할 수 있다는 분석도 나왔다. 원재료 가격이 마진을 좌우하는 구도는 같지만 방향은 시기별로 엇갈린 셈이다. 수출 측면에서 광천김, 맛살, 햄, 어묵, 식용유 등 기존 주요 제품은 김밥 등 가공식품의 주재료로, 수출 시장 확대가 동반 매출 증가로 이어질 수 있다는 2024년 6월 증권사 분석이 있었다. 다만 수출 비중이 아직 작아 이 효과가 전사 매출에서 차지하는 비중은 제한적이다. 같은 업종의 대형 식품사와 비교하면 사조대림은 축산과 원양어업 부문을 함께 가진 구조가 차이점이다(식품 제조 81%, 축산 15%, 원양어업 3%). 같은 업종의 CJ제일제당(CJ Cheiljedang), 동원산업(Dongwon Industries), 오뚜기(Otoki)와는 채널과 원재료 구조가 다르다. 유통 채널에서는 할인점과 편의점 영향력이 커지는 흐름이 가격 협상력에 영향을 준다. 원가 구조가 실적 방향을 좌우하는 만큼, 원재료 가격 안정 여부가 업황 판단의 핵심 변수다.",
+  "en": "Food manufacturing is marked by rapid copycat launches, which tends to produce recurring price competition and margin pressure. On the cost side, a 2024 third-quarter report noted that four of seven key raw materials, including pork, chicken, soybean oil and rapeseed oil, rose in price. Conversely, a 2024 brokerage analysis expected stable soybean and tuna input costs to support margins, so the direction of raw-material costs has shifted over time. On exports, a June 2024 brokerage note argued that core products used as ingredients in gimbap and other processed foods could benefit as export markets expand, though export share remains small relative to total sales. Compared with major food peers such as CJ Cheiljedang, Dongwon Industries and Otoki, Sajodaerim's mix includes livestock and overseas fishing, which sets it apart. Channel power of discount stores and convenience stores also affects pricing negotiations. Because cost structure drives earnings direction, the stability of raw-material prices is a central variable for the sector."
  },
  "outlook": {
-  "ko": "사조대림은 2019년 사조해표 합병, 2023년 사조CPK 인수, 2024~2025년 사조푸디스트 인수를 거치며 제조-원료-유통·급식을 잇는 식품 밸류체인 구축을 지속해왔다. 사조푸디스트는 온라인몰과 케어푸드 등 신사업 확대를 통해 매출 기반을 넓히려는 전략을 추진하고 있으며, FS(위탁급식·컨세션) 부문이 최근 매출 성장의 한 축으로 언급되고 있다. 사조CPK 인수 관련 잔금은 2025년 2월(180억원), 2026년 2월(180억원), 2027년 2월(180억원) 지급을 끝으로 딜이 최종 마무리될 예정이어서, 향후 몇 개월간 추가적인 자금 부담이 이어질 수 있다. 공정거래위원회의 독자적 가격 재결정 명령에 따라 사조CPK 등 4개사는 담합 이전 경쟁 수준으로 가격을 다시 결정해야 하고, 향후 3년간 반기마다 가격 변경 내역을 공정위에 보고해야 하는 만큼, 전분당 부문의 가격 정책과 마진 구조에 변화가 예상된다. 아울러 전분당 부산물 가격담합 혐의에 대한 공정위 심의도 진행 중이어서, 결과에 따라 추가적인 비용 인식 가능성이 남아 있다. 최대주주 측(사조산업·사조랜더텍 등)의 지분 매입이 이어지고 있어, 지배구조 변화 및 유통주식 수 축소 여부도 관전 포인트로 남아 있다. 그룹 내에서는 안정적 캐시플로 창출원으로서 사조대림의 역할이 강조돼 왔으며, 향후 M&A 시너지 실현과 비용구조 개선이 실적 회복의 핵심 변수가 될 것으로 보인다.",
-  "en": "Sajo Daerim has continued building a food value chain linking manufacturing, raw materials and distribution/food service through the 2019 Sajo Haepyo merger, the 2023 Sajo CPK acquisition and the 2024-2025 Foodist acquisition. Sajo Foodist is pursuing a strategy to broaden its revenue base through new businesses such as online retail and care food, and the FS (contracted food service/concession) segment has been cited as a recent growth driver. The remaining payment for the Sajo CPK acquisition is scheduled to be completed with installments of KRW 18 billion in February 2025, February 2026 and February 2027, meaning some additional funding burden could persist over the coming months. Under the Fair Trade Commission's order for independent price re-determination, Sajo CPK and the other three firms must reset prices to pre-collusion competitive levels and report price changes to the regulator semi-annually for the next three years, which is expected to change pricing policy and margin structure in the starch business. In addition, the Fair Trade Commission's review of the alleged byproduct price collusion is still ongoing, leaving room for further cost recognition depending on the outcome. Continued share purchases by the controlling shareholder group (including Sajo Industries and Sajo Landertech) keep governance change and potential reduction in free float as points to watch. Within the group, Sajo Daerim's role as a stable cash-generating affiliate has been emphasized, and realizing M&A synergies while improving cost structure is likely to be the key variable for earnings recovery."
+  "ko": "회사 관계자는 2024년 3분기 보도에서 인수기업이 포함되며 전반적인 비용이 상승했다고 설명하며 향후는 영업활동으로 인한 실적개선이 예상된다고 말했다. 이 예상과 달리 2026년 3분기 영업이익은 63.5억원으로 줄었으므로, 영업 측면의 개선 흐름이 나타나는지가 다음 확인 지점이다. 수출 전략으로는 2024년 보도 기준 미국 최대 한인마트인 H마트로 냉동김밥 3종을 공급하는 계획이 소개됐다. 같은 보도에서 하반기에는 미국 현지 시장의 선호도를 반영한 한식 HMR 상품을 H마트에 공급할 예정이라는 계획도 있었다. 제품군으로는 고급 맛살 제품을 2024년 하반기부터 공급할 준비를 한다고 보도됐다. 해외 품목 확장으로는 떡볶이, 핫도그, 튜브형 고추장 등으로 카테고리를 확장하는 방안이 소개됐다. 인수 자회사 측면에서는 전분당 사업의 국내 시장 점유율은 25% 내외로 추산된다는 분석이 있다. 재무 측면에서 잔여 양수대금 540억원을 3년 분할로 지급할 예정이어서, 현금 지출 일정이 영업현금 흐름과 함께 확인 대상이다. 다음 정기보고서인 2026년 사업보고서에서는 4분기와 연간 실적, 연말 차입금 구조가 공시된다. 수출 계획과 인수 자회사의 수익 기여가 실제 실적에 반영되는지는 2027년 1분기 이후 분기 실적에서 확인할 수 있다.",
+  "en": "In a 2024 third-quarter report, a company official attributed higher overall costs to the consolidation of acquired companies and said operating performance was expected to improve going forward. However, third-quarter 2026 operating income fell to KRW 6.35 billion, so whether operating improvement appears is the next checkpoint. On exports, a 2024 plan described supplying three types of frozen gimbap to H Mart in the United States, with Korean-style ready meals to follow in the second half. Premium fish-paste products were also reported as being prepared for supply in the second half of 2024. Product category expansion was reported to include tteokbokki, hot dogs and tube-type red pepper paste. In the starch-sugar business, the Korean market share of the acquired unit was estimated at around 25%. The remaining acquisition payment of KRW 54 billion is scheduled to be paid over three years, so cash outflows should be tracked alongside operating cash flow. The 2026 annual report will disclose fourth-quarter and full-year results and year-end debt structure. Whether export plans and acquired-unit contributions show up in earnings can be tested in quarterly results from the first quarter of 2027 onward."
  },
  "valuation_comment": {
-  "ko": "사조대림은 최근 4개 분기(2025년 3분기~2026년 2분기) 합산 기준으로 순손실을 기록해, 순이익에 기반한 통상적인 가격 대 이익 비교가 어려운 국면에 있다. 주가는 순자산가치 대비 할인되어 거래되는 구간에 위치해 있으며, 이는 최근 대규모 일회성 순손실로 자기자본이 줄어든 영향과 무관하지 않다. 배당은 매년 현금배당을 지급해온 이력이 있으나, 순이익 적자 전환이 이어지는 국면에서는 배당 지속 여부와 규모에 대한 불확실성이 상존한다. M&A 이전 사업 구조를 기준으로 형성됐던 과거의 가격 대 이익 비교 밴드는 사조CPK·사조푸디스트 편입에 따른 비용구조 변화로 인해 참고 가치가 제한적일 수 있다. 결국 현재 밸류에이션은 영업이익 자체의 회복 속도와 담합 관련 비용의 추가 반영 여부에 따라 크게 달라질 수 있는 구간에 있다고 볼 수 있다.",
-  "en": "Sajo Daerim has posted a net loss on a trailing four-quarter basis (Q3 2025-Q2 2026), making a conventional price-to-earnings comparison based on net income difficult at this stage. The share price sits in a range discounted to net asset value, which is not unrelated to the recent reduction in equity from large one-off net losses. The company has a track record of paying annual cash dividends, but uncertainty remains over the continuation and size of dividends amid the recent shift to net losses. Historical price-to-earnings comparison bands formed before the M&A-driven business restructuring may have limited reference value given the cost-structure changes from consolidating Sajo CPK and Sajo Foodist. Ultimately, current valuation appears to be in a range that could shift considerably depending on the pace of operating profit recovery and whether further collusion-related costs are recognized."
+  "ko": "현재 주가수익비율은 최근 네 개 분기가 순손실이어서 산출되지 않는다. 주가순자산비율은 1배를 크게 밑도는 구간이라 지배주주 지분 대비 주가가 낮게 형성된 상태로 읽힌다. 다만 순자산이 그대로 이익을 낸다고 보기는 어려운데, 2025년 말 지배주주 지분 6,523억원 가운데 상당 부분이 인수 자회사의 자산과 차입으로 얽혀 있어 자산의 질에 따라 해석이 달라진다. 배당수익률은 주가 수준에 따라 달라지며, 순손실 상태에서 배당을 얼마나 유지할지는 사업보고서의 배당 결의 내용으로 확인하는 지점이다. 부채비율이 174.7%로 올라 있어 자본 대비 부채 부담이 커진 상태이고, 이 부담은 배수 해석에서도 함께 고려해야 할 항목이다. 2023년 지배주주 순이익 913억원에서 2025년 적자로 돌아선 만큼, 이익 회복 여부가 배수 해석의 핵심 변수다. 이익 기준 배수가 산출되지 않는 시기에는 자산 기준 지표가 참고 지표로 쓰인다.",
+  "en": "The price-to-earnings ratio cannot be calculated because the last four quarters were net losses. The price-to-book ratio sits well below 1x, which means the share price is low relative to attributable equity. Book value should not be read as earnings power, however, since a meaningful part of the KRW 652.3 billion attributable equity at the end of 2025 is tied to acquired subsidiaries and borrowings, so asset quality shapes the interpretation. The dividend yield moves with the share price, and whether dividends can be sustained during net-loss periods will be visible in the dividend resolutions in the annual report. The debt-to-equity ratio of 174.7% means debt burden is high relative to equity, which should be weighed alongside any multiple. Attributable net income was KRW 91.3 billion in 2023 before turning to a loss in 2025, so the recovery of earnings is the key variable for interpreting multiples. When earnings-based multiples are unavailable, asset-based measures serve as the main reference point."
  },
  "bull": [
   {
    "title": {
-    "ko": "식품 밸류체인 완성을 통한 매출 확대",
-    "en": "Revenue Expansion via a Completed Food Value Chain"
+    "ko": "수출 확대 여지",
+    "en": "Room for export growth"
    },
    "body": {
-    "ko": "2019년 사조해표 합병에 이어 2023년 사조CPK(전분당), 2024~2025년 사조푸디스트(식자재·급식) 인수로 제조-원료-유통을 잇는 밸류체인을 구축했다. 그 결과 연결 매출액은 2022년 2조 188억원에서 2025년 3조 4,998억원으로 크게 늘었다. 사조푸디스트의 급식·식자재 유통 사업은 계약 기반의 안정적 매출을 제공해, 변동성이 큰 사업과 상호 보완적인 포트폴리오를 형성하고 있다.",
-    "en": "Following the 2019 Sajo Haepyo merger, the company built a value chain linking manufacturing and raw materials to distribution through the 2023 acquisition of starch maker Sajo CPK and the 2024-2025 acquisition of food-service company Sajo Foodist. As a result, consolidated revenue grew significantly from KRW 2.019 trillion in 2022 to KRW 3.500 trillion in 2025. Sajo Foodist's food-service and material distribution business provides stable, contract-based revenue that complements the company's more volatile segments."
+    "ko": "수출 비중이 아직 작아 사업 지표 개선 여지가 남아 있다. 2024년 12월 기준 OEM·명태·대구 등 상품 매출의 수출 비중은 9.36%이고 식용유지는 3.25%다. 2023년 수출액은 1,060억원이었고, 2024년 보도에서는 냉동김밥과 HMR의 미국 유통이 거론됐다.",
+    "en": "Export share remains small, leaving room for improvement in business metrics. The export share of OEM, pollock and cod-related product sales was 9.36% as of December 2024, and exports were about KRW 106 billion in 2023. A 2024 report cited US distribution of frozen gimbap and ready meals as a growth path."
    }
   },
   {
    "title": {
-    "ko": "본업의 현금창출력 유지",
-    "en": "Core Cash-Generating Ability Remains Intact"
+    "ko": "주요 품목의 국내 점유율",
+    "en": "Strong domestic shares in key products"
    },
    "body": {
-    "ko": "순이익이 두 개 분기(2025년 4분기, 2026년 2분기)에서 대규모 일회성 요인으로 적자를 보였음에도, 연간 영업활동현금흐름은 2025년 627억원으로 여전히 플러스를 유지했다. 이는 일회성 항목을 제외한 본업의 현금창출력이 아직 유지되고 있음을 보여준다. 2022~2024년에도 매년 600억원 이상의 영업현금흐름을 기록해 온 점도 이를 뒷받침한다.",
-    "en": "Even though net income swung to a loss in two quarters (Q4 2025 and Q2 2026) due to large one-off items, annual operating cash flow remained positive at KRW 62.7 billion in 2025. This shows the core business's cash-generating ability has been maintained excluding one-off items. Operating cash flow of over KRW 60 billion in each year from 2022 to 2024 supports this pattern."
+    "ko": "맛살류, 식용유, 어묵은 시장점유율이 27.30%에서 42.44% 사이로 집계됐다(2025년 9월 기준). 2024년 증권사 분석은 이 품목들이 김밥 등 가공식품의 주재료라 K-푸드 수요와 연결된다고 봤다(식용유, 맛살류, 참치연승 등 품목별 국내 점유율은 1~3위라는 설명이 있었다).",
+    "en": "Fish-paste products, cooking oil and fish cakes had market shares between 27.3% and 42.44% as of September 2025. A 2024 brokerage view linked these items to K-food demand because they are ingredients in gimbap and other processed foods."
    }
   },
   {
    "title": {
-    "ko": "사업 다각화를 통한 원가 대응력",
-    "en": "Cost Resilience Through Business Diversification"
+    "ko": "인수 자회사의 수익성",
+    "en": "Profitability of acquired units"
    },
    "body": {
-    "ko": "사조CPK를 통해 전분당(옥수수 가공)을 직접 생산하면서 그룹 내 가공식품 원가 경쟁력을 일부 내부화할 수 있는 구조를 갖췄다. 공정위의 가격 재결정 명령에 따라 단기적으로는 담합 이전 수준으로 가격을 낮춰야 하지만, 중장기적으로는 투명한 가격 산정 구조가 정착될 경우 영업 효율 개선의 여지도 있다. 정부의 가공용 옥수수 할당관세(연간 약 200만톤, 0% 관세) 정책은 원가 부담을 완화하는 요인으로 계속 작동하고 있다.",
-    "en": "Through Sajo CPK's direct production of starch sweeteners from corn, the company has internalized part of the raw-material cost competitiveness for its processed-food business. While the FTC's price re-determination order requires prices to be lowered to pre-collusion levels in the near term, a more transparent pricing structure over the medium to long term could offer room for operational efficiency improvement. The government's zero-tariff quota policy on roughly 2 million tons of industrial corn continues to act as a factor easing cost pressure."
+    "ko": "2024년 보도에 따르면 인수한 자회사의 수익성이 인수 후 크게 확대된 것으로 나타났다. 2025년 연결 매출이 3조 4,998억원으로 늘어난 점은 외형 측면의 근거다. 인수 자산이 본업 이익으로 이어지는지는 영업이익률 추이로 확인할 수 있다.",
+    "en": "A 2024 report said profitability at the acquired unit expanded substantially after acquisition. Consolidated 2025 sales rose to KRW 3.5 trillion, which supports the scale argument. Whether acquired assets translate into core profit can be tracked through the operating margin trend."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "반복된 대규모 순손실",
-    "en": "Repeated Large Net Losses"
+    "ko": "이익 감소와 적자 전환",
+    "en": "Earnings decline and swing to losses"
    },
    "body": {
-    "ko": "2025년 4분기와 2026년 2분기 두 차례에 걸쳐 지배주주순이익이 각각 -1,266억원, -1,144억원에 달하는 대규모 손실을 기록했다. 이 시기는 자회사 사조CPK가 연루된 전분당 가격담합 사건 관련 비용 인식 시점과 맞물려 있어, 향후에도 유사한 일회성 손실이 재발할 가능성을 배제하기 어렵다. 그 결과 최근 4개 분기 합산 지배주주순이익은 -2,006억원의 손실로, 연간 기준으로도 2025년 전체가 적자로 전환됐다.",
-    "en": "Owner net income posted large losses of KRW -126.6 billion in Q4 2025 and KRW -114.5 billion in Q2 2026. These periods coincide with the timing of cost recognition related to the starch price-fixing case involving subsidiary Sajo CPK, making it difficult to rule out similar one-off losses recurring. As a result, the trailing four-quarter owner net income totals a loss of KRW -200.6 billion, and full-year 2025 also turned to a net loss."
+    "ko": "2025년 지배주주 순손실 786억원으로 적자 전환했고, 2026년 3분기 영업이익은 63.5억원으로 전년 동기 대비 79.9% 감소했다. 영업이익이 2개 분기 연속 감소한 점은 1분기의 반등이 지속되지 않았다는 뜻이다.",
+    "en": "Attributable net loss was KRW 78.6 billion in 2025, and third-quarter 2026 operating income fell 79.9% year on year to KRW 6.35 billion. Two consecutive quarterly declines in operating income show that the first-quarter rebound has not been sustained."
    }
   },
   {
    "title": {
-    "ko": "진행 중인 규제·소송 리스크",
-    "en": "Ongoing Regulatory and Litigation Risk"
+    "ko": "재무 레버리지 부담",
+    "en": "Financial leverage burden"
    },
    "body": {
-    "ko": "공정거래위원회는 사조CPK를 포함한 4개사에 전분당 가격담합으로 역대 최대 규모인 총 7,475억원의 과징금을 부과했으며, 이 중 사조CPK 몫은 2,001억원이다. 이와 별도로 전분당 생산과정의 부산물 가격담합 혐의에 대해서도 공정위 심사보고서가 발송돼 심의가 진행 중이며, 검찰 기소 사건의 형사재판도 남아있다. 결과에 따라 추가적인 비용 인식이나 제재가 발생할 가능성이 있다.",
-    "en": "The Fair Trade Commission imposed a record total fine of KRW 747.58 billion on four companies including Sajo CPK for starch price-fixing, with Sajo CPK's share amounting to KRW 200.13 billion. Separately, an examination report has been issued and review is ongoing for alleged byproduct price collusion in starch production, and criminal trials from the prosecutor's indictment also remain pending. Additional cost recognition or sanctions could follow depending on the outcomes."
+    "ko": "부채비율은 2023년 77.7%에서 2025년 174.7%로 높아졌고, 2025년 말 부채총계는 1조 3,895억원이다. 2024년 3분기 말 기준 1년 내 상환해야 하는 단기차입금과 유동성장기부채가 약 3,530억원으로, 현금성자산 1,878억원의 2배에 가까운 규모였다는 보도가 있었다.",
+    "en": "The debt-to-equity ratio rose from 77.7% in 2023 to 174.7% in 2025, with total liabilities of KRW 1.39 trillion at the end of 2025. A 2024 report noted short-term borrowings and current portion of long-term debt of about KRW 353 billion due within a year, close to twice cash and equivalents of KRW 187.8 billion."
    }
   },
   {
    "title": {
-    "ko": "지배구조 관련 소수주주 우려",
-    "en": "Minority Shareholder Concerns Over Governance"
+    "ko": "원가와 고정비 부담",
+    "en": "Cost and fixed-expense pressure"
    },
    "body": {
-    "ko": "최대주주 및 특별관계인(사조산업, 사조랜더텍 등)의 지분율이 계속 늘어나고 있으며, 사조산업의 보유 지분율은 2026년 6월 기준 15.01%로 확인됐다. 사조랜더텍 등 동일인 측 지분율이 70% 안팎에 이른다는 분석도 나오는 가운데, 유통주식 수 감소 및 향후 지배구조 변화에 대한 소수주주들의 관심이 이어지고 있다. 이러한 지분 집중은 주식의 시장 유동성에 영향을 줄 수 있는 요인이다.",
-    "en": "The stake held by the controlling shareholder and related parties (including Sajo Industries and Sajo Landertech) has continued to grow, with Sajo Industries' holding confirmed at 15.01% as of June 2026. Amid analysis suggesting the controlling family's combined stake, including Sajo Landertech, is near 70%, minority shareholders continue to watch for reduced free float and potential future governance changes. Such ownership concentration is a factor that can affect the stock's market liquidity."
+    "ko": "2024년 3분기 보도 기준으로 주요 원재료 가격이 올랐고, 판매관리비 부문에서 인건비가 큰 폭으로 올랐다. 운반비 등 고정비 항목도 함께 늘었다는 점에서, 원가 상승을 판가에 전가하지 못하면 이익률이 추가로 낮아질 수 있다.",
+    "en": "A 2024 third-quarter report said several key raw-material prices rose and labor costs in selling and administrative expenses increased sharply. Because fixed costs such as logistics also grew, any failure to pass cost increases through to prices could compress margins further."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "법률/규제 리스크",
-    "en": "Legal/Regulatory Risk"
+    "ko": "재무 · 유동성",
+    "en": "Financial and liquidity"
    },
    "body": {
-    "ko": "전분당 가격담합 관련 과징금(사조CPK 2,001억원)과 부산물 가격담합 심의, 관련 임직원에 대한 검찰 기소 등 다층적 법률 리스크가 진행되고 있다. 공정위의 독자적 가격 재결정 명령에 따라 향후 3년간 반기별 가격 변경 보고 의무도 부과돼, 전분당 부문의 가격 정책 자유도가 제한될 수 있다. 최종 판결이나 추가 제재 여부에 따라 재무제표에 추가 반영될 여지가 있다.",
-    "en": "Multiple layers of legal risk are unfolding, including the KRW 200.1 billion fine for starch price-fixing at Sajo CPK, the ongoing byproduct collusion review, and the criminal indictment of related executives. Under the FTC's price re-determination order, the company must also report semi-annual price changes for three years, potentially constraining pricing flexibility in the starch business. Depending on the final rulings or additional sanctions, further impacts on the financial statements are possible."
+    "ko": "차입금과 부채비율이 높아진 상태에서 영업이익이 줄면 이자와 상환 부담이 상대적으로 커진다. 2025년 영업활동 현금흐름은 627억원으로 2024년 1,530억원보다 크게 줄었다. 현금 창출력이 약해지면 차입 의존도가 높아질 수 있다.",
+    "en": "With borrowings and the debt ratio elevated, lower operating income raises the relative burden of interest and repayment. Operating cash flow fell to KRW 62.7 billion in 2025 from KRW 153 billion in 2024. Weaker cash generation could increase reliance on borrowing."
    }
   },
   {
    "cat": {
-    "ko": "원자재·환율 리스크",
-    "en": "Raw Material and Currency Risk"
+    "ko": "원재료 · 비용 구조",
+    "en": "Raw materials and cost structure"
    },
    "body": {
-    "ko": "사조CPK의 핵심 원료인 옥수수는 대부분 해외에서 수입하기 때문에, 국제 곡물가격과 원/달러 환율 변동에 실적이 직접적인 영향을 받는다. 식용유·사료 등 다른 부문 역시 팜유 등 국제 원자재가에 노출돼 있다. 가격 재결정 명령으로 원가 상승분을 과거처럼 신속히 판매가에 반영하기 어려워질 경우, 원가 상승기 마진 방어력이 약화될 수 있다.",
-    "en": "Since most of the corn used by Sajo CPK is imported, earnings are directly exposed to swings in international grain prices and the KRW/USD exchange rate. Other segments, including cooking oil and feed, are similarly exposed to global commodity prices such as palm oil. If the price re-determination order makes it harder to pass on cost increases as quickly as before, margin defense during cost upcycles could weaken."
+    "ko": "식품 제조는 돈육, 대두, 채종유 등 원재료 가격에 따라 원가가 움직인다. 2024년 3분기 보도에서는 주요 원재료 다수가 오른 것으로 나타났다. 원재료 가격이 다시 오를 때 판가 인상이 늦어지면 영업이익률의 하락이 이어질 수 있다.",
+    "en": "Food manufacturing costs move with pork, soybean and rapeseed oil prices. A 2024 report showed that several key raw materials rose in price. If price increases lag behind cost increases, operating margin could keep declining."
    }
   },
   {
    "cat": {
-    "ko": "지배구조·유동성 리스크",
-    "en": "Governance and Liquidity Risk"
+    "ko": "인수 통합 · 사업 범위",
+    "en": "Acquisition integration and scope"
    },
    "body": {
-    "ko": "최대주주 및 특별관계인의 지분이 지속적으로 확대되고 있어 유통 주식 수가 줄어들 가능성이 있으며, 이는 주가 변동성 확대나 거래 유동성 저하로 이어질 수 있다. 시가총액이 상대적으로 작은 편에 속해 기관 수급 유입이 제한적일 수 있다는 점도 함께 고려할 필요가 있다. 향후 지배구조 개편 방향에 따라 소수주주 권익에 대한 이슈가 부각될 가능성도 배제할 수 없다.",
-    "en": "As the controlling shareholder and related parties continue to expand their stake, free float could shrink, potentially leading to greater price volatility or reduced trading liquidity. The relatively small market capitalization, which may limit institutional inflows, should also be considered. Depending on the direction of future governance restructuring, minority shareholder rights issues could also come to the fore."
+    "ko": "인수 자회사가 연결에 편입되면서 외형이 커졌지만 사업 범위가 식품 제조, 전분당, 식자재 유통, 축산으로 넓어졌다. 푸디스트는 매출 규모가 약 1조원으로 소개됐고, 자회사별 실적 격차가 연결 이익의 변동성을 키울 수 있다.",
+    "en": "Consolidating acquired subsidiaries expanded sales, but the scope now spans food manufacturing, starch and sugar, food-service distribution and livestock. Foodist was reported to have sales of about KRW 1 trillion, and profit gaps across subsidiaries can increase volatility in consolidated earnings."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중",
-    "en": "Mid-November 2026"
+    "ko": "2026년 12월 31일 (회계연도 말)",
+    "en": "December 31, 2026 (fiscal year-end)"
    },
    "what": {
-    "ko": "2026년 3분기 실적(분기보고서) 발표를 통해 전분당 관련 과징금 비용이 추가로 반영되는지, 영업이익률 회복 여부를 확인할 필요가 있다.",
-    "en": "Check the Q3 2026 quarterly report to see whether additional starch fine-related costs are recognized and whether the operating margin shows signs of recovery."
+    "ko": "연말 차입금 구조와 단기 상환 규모를 확인한다. 인수 잔여 양수대금 540억원의 분할 지급 일정이 차입 구조에 어떻게 반영되는지가 다음 확인 지점이다.",
+    "en": "Check year-end debt structure and short-term repayment amounts. How the remaining KRW 54 billion acquisition payment, scheduled over three years, is reflected in borrowings is the next point to confirm."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기",
-    "en": "Second half of 2026"
+    "ko": "2027년 3월 31일 (사업보고서 제출 기한)",
+    "en": "March 31, 2027 (annual report filing deadline)"
    },
    "what": {
-    "ko": "전분당 부산물 가격담합 혐의에 대한 공정거래위원회 심의 결과가 나올 경우, 추가 과징금 부과 여부와 규모를 확인해야 한다.",
-    "en": "If the Fair Trade Commission issues its ruling on the alleged starch byproduct price collusion, confirm whether an additional fine is imposed and its size."
+    "ko": "2026년 사업보고서에서 4분기와 연간 영업이익률, 지배주주 순손익이 공시된다. 2025년 영업이익률 2.7%와 비교해 이익률이 회복되는지, 2026년 4분기 적자가 연간 손익에 어떻게 반영되는지 확인한다.",
+    "en": "The 2026 annual report will disclose fourth-quarter and full-year operating margin and attributable net income. Compare with the 2.7% operating margin in 2025 to see whether margins recover and how fourth-quarter 2026 results affect full-year profit."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기~2027년 초",
-    "en": "Late 2026 to early 2027"
+    "ko": "2027년 5월 15일 (1분기 분기보고서 제출 기한)",
+    "en": "May 15, 2027 (first-quarter report filing deadline)"
    },
    "what": {
-    "ko": "검찰이 기소한 사조CPK 등 담합 관련 형사재판의 진행 상황과 1심 결과를 주시할 필요가 있다.",
-    "en": "Monitor the progress and first-instance outcome of the criminal trial related to the price-fixing indictment against Sajo CPK and other defendants."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 2월",
-    "en": "February 2027"
-   },
-   "what": {
-    "ko": "사조CPK(옛 인그리디언코리아) 인수 관련 마지막 잔금(180억원) 지급이 완료되는 시점으로, 이후 추가적인 M&A 관련 자금 부담이 해소되는지 확인해야 한다.",
-    "en": "This marks completion of the final KRW 18 billion installment for the Sajo CPK (formerly Ingredion Korea) acquisition; check whether related funding burdens ease afterward."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 4분기",
-    "en": "Q4 2026"
-   },
-   "what": {
-    "ko": "사조산업·사조랜더텍 등 최대주주 측의 지분 변동 공시가 이어지는지, 이에 따른 지배구조 변화 여부를 계속 확인할 필요가 있다.",
-    "en": "Continue to check whether stake-change disclosures from the controlling shareholder group (Sajo Industries, Sajo Landertech, etc.) continue and whether they signal governance changes."
+    "ko": "2027년 1분기 영업이익이 2026년 1분기 238억원 수준을 회복하는지, 지배주주 순손익이 적자에서 벗어나는지 확인한다. 수출 계획과 인수 자회사의 기여가 분기 실적에 나타나는지도 함께 본다.",
+    "en": "Check whether first-quarter 2027 operating income recovers to the KRW 23.8 billion level of the first quarter of 2026 and whether attributable net income moves out of loss. Also watch whether export plans and acquired-unit contributions appear in quarterly results."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "사조대림은 사조해표·사조CPK·사조푸디스트 인수를 통해 매출 규모를 2022년 2조원대에서 2025년 3조 5,000억원대로 확대하며 식품 제조-원료-유통·급식을 잇는 밸류체인을 구축해왔다. 그러나 영업이익률은 같은 기간 4%대~6%대에서 2025년 2.7%로 낮아졌고, 2025년 4분기와 2026년 2분기에는 각각 -1,266억원, -1,144억원의 대규모 지배주주순이익 손실이 발생해 최근 4개 분기 합산 순이익이 적자로 전환됐다. 이 손실은 자회사 사조CPK가 연루된 전분당 가격담합 사건에 대한 공정거래위원회의 역대 최대 규모 과징금(사조CPK 몫 2,001억원) 부과와 시기적으로 맞물려 있는 것으로 보인다. 아울러 전분당 부산물 가격담합 혐의에 대한 공정위 심의와 관련 형사재판이 아직 진행 중이어서, 추가적인 비용 인식 가능성도 남아 있다. 한편 연간 영업활동현금흐름은 여전히 플러스를 유지하고 있고, 사조푸디스트를 통한 급식·식자재 유통 부문은 매출 성장의 한 축으로 언급되고 있어 사업 자체의 현금창출력과 다각화 효과는 지속되고 있다. 최대주주 및 특별관계인의 지분 확대가 이어지고 있는 점은 지배구조 변화 가능성과 유동성 측면에서 함께 살펴볼 필요가 있는 요인이다. 종합적으로 이 종목은 M&A를 통한 외형 성장과 규제·소송 리스크가 동시에 진행 중인 국면에 있으며, 향후 실적 발표와 공정위 심의 결과가 중요한 관찰 포인트가 될 것으로 보인다.",
-   "en": "Sajo Daerim has expanded its revenue base from roughly KRW 2 trillion in 2022 to about KRW 3.5 trillion in 2025 through the acquisitions of Sajo Haepyo, Sajo CPK and Sajo Foodist, building a value chain linking food manufacturing, raw materials and distribution/food service. However, the operating margin fell from the 4%-6% range in prior years to 2.7% in 2025, and owner net income posted large losses of KRW -126.6 billion in Q4 2025 and KRW -114.5 billion in Q2 2026, turning the trailing four-quarter net income into a loss. These losses appear to coincide with the Fair Trade Commission's record fine on the starch price-fixing case involving subsidiary Sajo CPK, whose share of the penalty came to KRW 200.1 billion. In addition, the FTC's review of alleged starch byproduct price collusion and related criminal trials are still ongoing, leaving room for further cost recognition. Meanwhile, annual operating cash flow has remained positive, and the food-service and material distribution business through Sajo Foodist has been cited as a growth driver, indicating that the core business's cash-generating ability and diversification benefits persist. The continued stake expansion by the controlling shareholder and related parties is a factor worth watching for both governance change potential and liquidity implications. Overall, the company is in a phase where M&A-driven scale growth and regulatory/litigation risk are unfolding simultaneously, and upcoming earnings releases and the outcome of the FTC review will likely be important points to monitor."
+   "ko": "사조대림은 2025년 매출 3조 4,998억원으로 외형이 가장 컸지만, 영업이익 947억원과 지배주주 순손실 786억원으로 이익 측면에서는 후퇴한 해였다. 2026년 1분기 영업이익이 238억원으로 회복된 뒤 2분기와 3분기에 영업이익이 연속 감소했고, 지배주주 순손실도 2개 분기 연속 이어지고 있다. 부채비율이 174.7%까지 오르고 영업활동 현금흐름이 627억원으로 줄어, 재무 지표는 약세 요인으로 분류되는 항목이 많다. 강세 요인으로는 수출 확대 여지, 맛살·식용유·어묵 등 주요 품목의 국내 점유율, 인수 자회사의 수익성 확대 사례가 있다. 약세 요인으로는 원재료와 인건비 등 원가 부담, 높은 차입금, 최근 네 개 분기 순손실 누적이 있다. 다음 확인 지점은 2026년 사업보고서의 4분기와 연간 영업이익률, 그리고 2027년 1분기 영업이익이 회복되는지 여부다.",
+   "en": "Sajodaerim posted its largest sales year in 2025 at KRW 3.5 trillion, yet operating income of KRW 94.7 billion and an attributable net loss of KRW 78.6 billion show earnings went backward. After operating income recovered to KRW 23.8 billion in the first quarter of 2026, it declined in the second and third quarters, and attributable losses have persisted for two quarters. The debt-to-equity ratio reached 174.7% and operating cash flow fell to KRW 62.7 billion, so many financial indicators fall on the weaker side. Positive factors include room for export growth, strong domestic shares in fish-paste products, cooking oil and fish cakes, and the profitability expansion reported at an acquired unit. Negative factors include raw-material and labor cost pressure, high borrowings, and cumulative net losses over the last four quarters. The next checkpoints are the fourth-quarter and full-year operating margin in the 2026 annual report, and whether operating income recovers in the first quarter of 2027."
   }
  },
  "sources": [
-  "https://insight.goover.ai/report/202604/go-public-report-ko-de3781e7-a216-4ca1-9ca3-30ff4911657c-0-0.html",
-  "https://kr.investing.com/equities/sajodaerim-earnings",
-  "https://www.hanaw.com/download/research/FileServer/WEB/industry/enterprise/2024/07/05/edit_Sajo_DR_202407.pdf",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A003960",
-  "https://m.irgo.co.kr/IR-COMP/007160",
-  "https://www.thebell.co.kr/front/newsview.asp?key=202407011011386320104269",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20251114002103&docno=&viewerhost=",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260515002186&docno=&viewerhost=",
-  "https://m.irgo.co.kr/IR-COMP/003960/-IR-PAGE",
-  "https://m.finance.daum.net/quotes/A003960/talks/13514133",
-  "https://m.irgo.co.kr/IR-COMP/003960/%EC%82%AC%EC%A1%B0%EB%8C%80%EB%A6%BC-IR-PAGE",
-  "https://www.datatooza.com/article/20260625154452602352ef3e8a60_80",
-  "https://dealsitetv.com/news/all?endDt=2026-02-12&sort=reversed",
-  "https://www.nicebizinfo.com/ep/EP0100M002GE.nice?kiscode=100013",
-  "https://www.1conomynews.co.kr/news/articleView.html?idxno=47358",
+  "https://www.investing.com/equities/sajodaerim-earnings",
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02801126599725720",
+  "https://m.thinkpool.com/stockDiscuss/003960/cont/11836993",
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02227126596445720",
+  "https://www.consumernews.co.kr/news/articleView.html?idxno=535146",
   "https://www.ibtomato.com/ExternalView.aspx?type=1&no=16875",
-  "https://www.catch.co.kr/Comp/AnalysisCompView?ID=3619",
-  "https://www.saramin.co.kr/zf_user/company-info/view-inner-finance/csn/SVA0T2k5NWlWYVBid3QxTFdsS2NvZz09/company_nm/(%EC%A3%BC)%EC%82%AC%EC%A1%B0%EB%8C%80%EB%A6%BC"
+  "https://insight.goover.ai/report/202604/go-public-report-ko-de3781e7-a216-4ca1-9ca3-30ff4911657c-0-0.html",
+  "https://www.ibtomato.com/Mobile/mView.aspx?no=13799",
+  "https://m.thinkpool.com/stockDiscuss/003960/cont/11770747",
+  "https://v.daum.net/v/qUwPY2WQI3",
+  "https://www.hanaw.com/download/research/FileServer/WEB/industry/enterprise/2024/07/05/edit_Sajo_DR_202407.pdf",
+  "https://www.jobkorea.co.kr/company/1452361",
+  "https://www.jobplanet.co.kr/companies/74113/landing/%EC%82%AC%EC%A1%B0%EB%8C%80%EB%A6%BC",
+  "https://www.saramin.co.kr/zf_user/company-info/view/csn/SVA0T2k5NWlWYVBid3QxTFdsS2NvZz09/company_nm/(%EC%A3%BC)%EC%82%AC%EC%A1%B0%EB%8C%80%EB%A6%BC",
+  "https://alphasquare.co.kr/home/stock-summary?code=003960",
+  "https://encykorea.aks.ac.kr/Article/E0014335",
+  "https://m.thinkpool.com/compDiscuss/cont/1013241",
+  "https://comp.wisereport.co.kr/company/c1020001.aspx?cmp_cd=003960&cn="
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "003960",
  "name": "사조대림",
  "name_en": "SAJODAERIM CORPORATION",
@@ -233,11 +213,11 @@
   "식음료"
  ],
  "market": "코스피",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 06:36",
- "dataDate": "20260904",
+ "reportDate": "2026-11-17",
+ "reportTs": "2026-11-17 03:46",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-08-21",
+  "asOf": "2026-11-16",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -245,14 +225,15 @@
     "rev": 3499812746968,
     "op": 94682992676,
     "np": -73563368883,
-    "np_owner": -73563368883,
+    "np_owner": -78632514561,
     "equity": 795351643461,
     "equity_owner": 652329783150,
+    "equity_nci": 143021860311,
     "liab": 1389473134578,
     "cfo": 62712943443,
     "eps_basic": -8909,
     "opm": 2.7,
-    "roe": -11.3,
+    "roe": -12.1,
     "debt_ratio": 174.7
    },
    {
@@ -263,6 +244,7 @@
     "np_owner": 91797539665,
     "equity": 838581573734,
     "equity_owner": 701571876209,
+    "equity_nci": 137009697525,
     "liab": 1284969216510,
     "cfo": 153030568534,
     "eps_basic": 11494,
@@ -278,6 +260,7 @@
     "np_owner": 91338274035,
     "equity": 710879106964,
     "equity_owner": 585182053978,
+    "equity_nci": 125697052986,
     "liab": 552092559042,
     "cfo": 174781035260,
     "eps_basic": 12123,
@@ -293,6 +276,7 @@
     "np_owner": 71247530590,
     "equity": 603832489151,
     "equity_owner": 497448142062,
+    "equity_nci": 106384347089,
     "liab": 564420178134,
     "cfo": 61221766850,
     "eps_basic": 9689,
@@ -303,22 +287,16 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 860453610053,
-    "op": 31625485459,
-    "np_owner": 18273863934
-   },
-   {
     "q": "2025Q3",
     "rev": 937038195098,
     "op": 31679136738,
-    "np_owner": 26138365325
+    "np_owner": 23005488804
    },
    {
     "q": "2025Q4",
     "rev": 848590392231,
     "op": 16126112900,
-    "np_owner": -126619463876
+    "np_owner": -128555733033
    },
    {
     "q": "2026Q1",
@@ -331,26 +309,39 @@
     "rev": 879223955831,
     "op": 20441773573,
     "np_owner": -114450631675
+   },
+   {
+    "q": "2026Q3",
+    "rev": 927286641922,
+    "op": 6354324126,
+    "np_owner": -3260194239
    }
   ],
   "valuation": {
-   "price": 30800,
-   "mcap": 0.2823,
+   "price": 23200,
+   "mcap": 0.2126,
    "shares": 9164467,
    "total_shares": 9168247,
-   "wavg_shares": 8943974,
+   "wavg_shares": 8944371,
    "per": null,
-   "eps": -23198,
-   "pbr": 0.4853,
-   "bps": 63462,
-   "roe_ttm": -30.3,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": -200626785031,
-   "pbr_krx": 0.41,
+   "eps": -26152,
+   "pbr": 0.3556,
+   "bps": 65250,
+   "roe_ttm": -34.1,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": -231961613752,
+   "ccy": "KRW",
+   "bps_src": "자체",
+   "eps_src": "공시",
+   "pbr_krx": 0.32,
    "bps_krx": 72933.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 250.0,
-   "div": 0.81
+   "div": 1.08,
+   "hidden": {
+    "per": "loss"
+   }
   }
- }
+ },
+ "textRules": 2
 }
