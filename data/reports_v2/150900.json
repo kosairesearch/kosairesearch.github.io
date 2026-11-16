@@ -1,220 +1,219 @@
 {
  "title": {
-  "ko": "AI 보안기업 전환, 실적은 분기 변동성 여전",
-  "en": "AI Security Pivot, Quarterly Swings Persist"
+  "ko": "데이터 보안 성장 속 흑자 유지, 이익 회복은 진행형",
+  "en": "Profit recovery continues on data security growth, still in progress"
  },
  "lead": {
-  "ko": "파수AI는 문서보안(DRM) 강자에서 AI 데이터 보안·AX 플랫폼 기업으로 사업 축을 옮기는 중이며, 2026년 2분기 매출이 늘고 영업이익이 흑자로 돌아섰지만 분기별 실적 기복은 여전하다.",
-  "en": "Fasoo AI is shifting its business axis from a document DRM leader to an AI data security and AX platform company, and while second-quarter 2026 revenue rose and operating profit turned positive, quarter-to-quarter earnings volatility persists."
+  "ko": "데이터 보안 수요와 AI 사업 확대로 2026년 2분기와 3분기 영업이익이 흑자를 이어갔지만, 2025년 영업이익률은 5.4%로 2022년 11.8%보다 낮아 수익성의 본격 회복 여부는 2026년 사업보고서에서 확인할 부분이다.",
+  "en": "Data security demand and AI expansion kept operating profit in the black in the second and third quarters of 2026, but the 2025 operating margin of 5.4% remains well below the 11.8% recorded in 2022, so whether profitability fully recovers will be tested in the 2026 annual report."
  },
  "keypoints": [
   {
-   "ko": "2026년 2분기 매출 131억원(전년 동기 대비 22.7% 증가), 영업이익·순이익 모두 흑자 전환",
-   "en": "Q2 2026 revenue reached KRW 13.1 billion, up 22.7% year over year, with both operating profit and net profit turning positive"
+   "ko": "2026년 3분기 매출은 135억원으로 전년 동기 대비 29.0% 증가했고, 영업이익 12.5억원으로 흑자를 기록했다.",
+   "en": "Third-quarter 2026 revenue reached KRW 13.5 billion, up 29.0% year on year, and operating profit of KRW 1.25 billion kept the quarter in the black."
   },
   {
-   "ko": "2025년 연간 영업이익률은 5.4%로 2022년 11.8% 대비 하락, 최근 4개 분기 사이 두 차례 영업손실 분기 존재",
-   "en": "Full-year 2025 operating margin fell to 5.4% from 11.8% in 2022, and the trailing four quarters included two quarters of operating losses"
+   "ko": "2026년 1분기 영업손실 20.2억원 이후 2분기와 3분기가 연속 흑자로 돌아섰고, 최근 4개 분기 지배주주 순이익 합계 68.4억원 중 대부분이 2025년 4분기 61.1억원에서 나왔다.",
+   "en": "After an operating loss of KRW 2.02 billion in the first quarter of 2026, the second and third quarters returned to operating profit, while KRW 6.11 billion of the KRW 6.84 billion four-quarter total came from the fourth quarter of 2025."
   },
   {
-   "ko": "사명을 '파수AI'로 변경하고 미국법인을 'Symbologic'으로 통합, AX(AI전환) 플랫폼 '엘름(Ellm)'을 신규 전시",
-   "en": "The company renamed itself Fasoo AI, merged its US subsidiary into Symbologic, and unveiled a new AX platform called Ellm"
+   "ko": "2025년 영업이익률은 5.4%로 2022년 11.8%에서 낮아졌고, 회사는 AI 사업 투자로 인건비와 클라우드 비용이 늘어 이익이 줄었다고 설명했다.",
+   "en": "The 2025 operating margin fell to 5.4% from 11.8% in 2022, and the company attributed the decline to higher personnel and cloud costs from its AI investment."
   },
   {
-   "ko": "2030년까지 매출 성장률 20%·영업이익률 25%·주주환원율 30%를 목표로 하는 밸류업 계획을 공표",
-   "en": "The company disclosed a value-up plan targeting 20% revenue growth, 25% operating margin, and 30% shareholder return ratio by 2030"
+   "ko": "2025년 말 부채비율은 28.2%로 2022년 59.5%보다 낮아졌고, 자본총계는 381억원이다.",
+   "en": "The debt ratio stood at 28.2% at the end of 2025, down from 59.5% in 2022, with total equity of KRW 38.1 billion."
   },
   {
-   "ko": "공공부문 국가망보안체계(N2SF) 대응과 생성형 AI 유출방지(AI-R DLP) 솔루션이 신규 성장 축으로 부각",
-   "en": "Public-sector National Network Security Framework (N2SF) compliance and the generative-AI leak-prevention solution AI-R DLP have emerged as new growth pillars"
+   "ko": "회사는 2026년 연간 매출이 두 자릿수 성장할 것으로 기대하며, 2030년까지 연평균 매출 20% 성장과 영업이익률 25%를 중장기 목표로 제시했다.",
+   "en": "The company expects double-digit revenue growth for 2026 and has set medium-term targets of 20% annual revenue growth and a 25% operating margin by 2030."
   }
  ],
  "business": {
-  "ko": "파수AI는 문서 중심 디지털저작권관리(DRM) 상용화를 세계 최초로 시작한 것으로 알려진 국내 데이터 보안 기업으로, 최근 사명을 '파수'에서 '파수AI'로 바꾸며 AI 데이터 보안·AI 전환(AX) 지원 기업으로의 정체성 전환을 공식화했다. 주력 제품은 문서 암호화·권한제어를 제공하는 플래그십 '파수 엔터프라이즈 디알엠(FED)', 조직 내 민감데이터를 자동 탐지·분류하는 '파수 데이터 레이더(FDR)', 생성형 AI 사용 과정에서 프롬프트·첨부파일의 민감정보 유출을 통제하는 'AI-R DLP', 그리고 온프레미스·프라이빗 클라우드 구축이 가능한 AX 플랫폼 '엘름(Ellm)'이다. 고객군은 공공기관, 금융, 대기업 등 보안 규제가 엄격한 조직이 중심이며, 특히 공공부문에서는 국가망보안체계(N2SF) 도입에 따른 데이터 분류·보안등급(CSO) 대응 수요가 확대되고 있다. 회사는 미국 현지법인을 AX 전문기업 '심볼로직(Symbologic)'으로 합병해 글로벌사업 조직을 재편했으며, 가트너 시큐리티 서밋 등 해외 콘퍼런스 참가를 통해 해외 고객 접점 확대를 추진하고 있다. 경쟁 구도는 국내 문서보안·DLP 업체들과 마이크로소프트 퓨어뷰(Purview) 등 글로벌 플랫폼 기업이 혼재된 시장으로, 파수AI는 제로트러스트 데이터 보안 원칙을 축으로 기존 문서보안 고객 기반을 AI 거버넌스 영역으로 확장하는 전략을 취하고 있다. 부문별 매출 비중에 대한 별도 공시 수치는 확인되지 않았으며, 회사는 AI 사업 확대와 데이터 보안 수요 증가가 동반 성장하고 있다고 설명하고 있다. 사업모델은 라이선스·유지보수 매출이 소프트웨어 업종 특성상 계절적으로 하반기에 집중되는 경향을 보인다.",
-  "en": "Fasoo AI is a South Korean data security company reported to be the first to commercialize document-centric Digital Rights Management (DRM), and it recently rebranded from Fasoo to Fasoo AI to formalize its shift toward AI data security and AI transformation (AX) support. Its flagship products include Fasoo Enterprise DRM (FED) for document encryption and permission control, Fasoo Data Radar (FDR) for automatic detection and classification of sensitive organizational data, AI-R DLP for controlling leakage of sensitive information in prompts and attachments during generative AI use, and Ellm, an AX platform deployable on-premises or in private cloud environments. Its customer base centers on public institutions, financial firms, and large enterprises with strict security requirements, with public-sector demand growing around National Network Security Framework (N2SF) adoption and its associated data classification and security-grade (CSO) requirements. The company merged its US subsidiary into an AX-focused entity, Symbologic, to reorganize its global operations, and has pursued overseas customer engagement through conferences such as the Gartner Security Summit. The competitive landscape mixes domestic document security and DLP vendors with global platform providers such as Microsoft Purview, and Fasoo AI's strategy centers on zero-trust data security principles to extend its existing document-security customer base into AI governance territory. No disclosed breakdown of revenue by business segment was confirmed through public sources, though the company has described AI business expansion and rising data security demand as mutually reinforcing. As is typical for software business models, license and maintenance revenue tends to be seasonally concentrated in the second half of the year."
+  "ko": "파수AI는 기업의 중요 정보가 외부로 유출되거나 오남용되지 않도록 보호하는 데이터 보안 제품을 본업으로 한다. 여기에 애플리케이션 보안 자회사 스패로우(Sparrow)의 소프트웨어 공급망 보안 사업과 AI 사업이 더해진 구조다. AI 사업은 2024년부터 본격화했으며, 초기에는 고객사에서 개념검증(PoC) 중심으로 진행되다가 2025년부터 실제 구축 사업이 늘었다고 회사 CFO가 설명했다. 회사는 2026년 3월 사명에 'AI'를 붙였는데, 임직원과 고객에게 AI 회사로의 방향을 알리려는 목적이었다고 밝혔다. 수익 구조는 과거의 영구 라이선스 판매에서 매년 대가를 받는 구독형 라이선스 중심으로 옮겨가는 중이다. 신규 AI 제품을 중심으로 구독형을 늘려 매출이 매년 4분기에 몰리는 구조를 완화하려는 목적이다. 유지보수 계약 갱신률은 95% 이상이라고 회사가 밝혔다. 주요 고객은 반도체, 방산, 조선, 자동차 등 호황 산업이며, 대기업이 협력사에 보안 수준 강화를 요구하면서 보안 투자가 공급망 아래쪽으로 번지는 흐름이 나타난다. 제품 측면에서는 데이터 보안 제품군과 AI 제품군이 함께 실적을 이끄는 구도이며, AI 레디 플랫폼 '랩소디 코어'가 2026년 7월 출시됐다. 해외에서는 미국 법인을 현지 AI·클라우드 컨설팅 회사와 합쳐 데이터 관리, 보안, AI를 함께 제공하는 구조로 재편했다. 경쟁 측면에서는 같은 보안 소프트웨어 시장의 안랩(Ahnlab) 등 국내 보안 업체와 겹치며, 데이터 보안에 AI 기능을 결합하는 방향으로 차별화를 내세운다. 제품군별 매출 비중은 공시에서 수치로 나뉘어 제시되지 않아 데이터 보안과 AI 사업의 기여도를 정량적으로 구분하기는 어렵다.",
+  "en": "Fasoo AI is built on data security products that protect corporate information from leakage and misuse. Its application security subsidiary Sparrow runs a software supply chain security business, and the AI business sits alongside both. The AI business began in earnest in 2024, when most engagements were proof-of-concept projects, and actual implementation projects increased from 2025, according to the company's CFO. In March 2026 the company added 'AI' to its name to signal to employees and customers that it is moving toward an AI business. The revenue model is shifting from perpetual licenses toward annual subscription licenses, with new AI products leading the subscription push. The aim is to ease the concentration of revenue in the fourth quarter every year. The company says its maintenance contract renewal rate is above 95%. Its main customers are in booming industries such as semiconductors, defense, shipbuilding and automotive, where large corporations are demanding stronger security from their suppliers, pushing security spending down the supply chain. Data security and AI products are both driving results, and the Rhapsody Core AI-ready platform was launched in July 2026. Overseas, the U.S. subsidiary was combined with a local AI and cloud consulting firm to offer data management, security and AI together. Competition comes from domestic security vendors such as Ahnlab, and the company differentiates by combining AI features with data security. Revenue by product line is not disclosed as numbers, so the contribution of data security and AI cannot be separated quantitatively."
  },
  "earnings": {
-  "ko": "연간 매출은 2022년 441억원에서 2023년 427억원으로 소폭 줄었다가 2024년 461억원, 2025년 467억원으로 완만히 늘었으나, 영업이익률은 2022년 11.8%에서 2023년 8.9%, 2024년 8.5%, 2025년 5.4%로 4년 연속 하락하며 수익성 둔화가 뚜렷하다. 2025년 지배주주 순이익은 26.6억원으로 2024년 44.9억원, 2022년 52.1억원 대비 크게 축소됐다. 분기별로 보면 변동성이 크다. 2025년 2분기는 매출 107억원에 영업손실 9.4억원, 지배주주순손실 12.2억원을 기록했고, 3분기에는 매출 104억원에 영업이익 2.5억원으로 소폭 흑자 전환했다. 4분기에는 매출 171억원으로 급증하며 영업이익 59.3억원, 지배주주순이익 61.1억원의 대규모 흑자를 냈는데, 이는 소프트웨어 업종 특유의 하반기 매출 집중 효과가 반영된 결과로 해석된다. 그러나 2026년 1분기에는 다시 매출 90억원, 영업손실 20.2억원, 순손실 18.0억원으로 적자 전환했고, 2분기에는 매출 131억원으로 회복하며 영업이익 10.1억원, 지배주주순이익 8.6억원의 흑자를 기록했다. 이처럼 최근 5개 분기(2025년 2분기~2026년 2분기)는 흑자와 적자가 교차하는 패턴을 반복해, 연간 실적의 계절성과 분기 단위 수익성 관리의 어려움이 동시에 드러난다. 현금흐름 측면에서는 영업활동현금흐름이 2022년 106억원에서 2025년 32.7억원으로 축소돼, 이익 감소와 함께 현금창출력도 약화된 흐름을 보였다.",
-  "en": "Annual revenue slipped from KRW 44.1 billion in 2022 to KRW 42.7 billion in 2023, then rose modestly to KRW 46.1 billion in 2024 and KRW 46.7 billion in 2025, but operating margin declined for four consecutive years, from 11.8% in 2022 to 8.9% in 2023, 8.5% in 2024, and 5.4% in 2025, showing a clear profitability slowdown. Net profit attributable to owners fell sharply to KRW 2.66 billion in 2025 from KRW 4.49 billion in 2024 and KRW 5.21 billion in 2022. Quarterly results show pronounced volatility. Second-quarter 2025 revenue was KRW 10.7 billion with an operating loss of KRW 0.94 billion and a net loss attributable to owners of KRW 1.22 billion, before the company turned modestly profitable in the third quarter with KRW 10.4 billion in revenue and KRW 0.25 billion in operating profit. Fourth-quarter revenue jumped to KRW 17.1 billion, delivering a large operating profit of KRW 5.93 billion and net profit attributable to owners of KRW 6.11 billion, a pattern consistent with the software industry's tendency toward second-half revenue concentration. However, the first quarter of 2026 swung back to losses, with revenue of KRW 9.0 billion, an operating loss of KRW 2.02 billion, and a net loss of KRW 1.80 billion, before the second quarter recovered to KRW 13.1 billion in revenue with operating profit of KRW 1.01 billion and net profit attributable to owners of KRW 0.86 billion. This alternating profit-and-loss pattern across the trailing five quarters (Q2 2025 through Q2 2026) illustrates both the seasonality of annual results and the difficulty of managing quarter-to-quarter profitability. On the cash flow side, operating cash flow contracted from KRW 10.6 billion in 2022 to KRW 3.27 billion in 2025, reflecting weakened cash generation alongside declining profits."
+  "ko": "공시 실적 기준 연간 매출은 2022년 441억원에서 2023년 427억원(전년 대비 3.3% 감소)으로 줄었다가, 2024년 461억원(전년 대비 8.1% 증가), 2025년 467억원(전년 대비 1.2% 증가)으로 2024년부터 2025년까지 2년 연속 늘었다. 2022~2025년 중 가장 큰 해는 2025년이다. 매출이 회복되는 동안 이익은 반대로 움직였다. 영업이익은 2022년 52억원에서 2023년 38.1억원(전년 대비 26.6% 감소), 2024년 39억원(전년 대비 2.2% 증가), 2025년 25.4억원(전년 대비 35.0% 감소)이었고, 2022~2025년 중 가장 작은 해는 2025년이다. 영업이익률은 2022년 11.8%, 2023년 8.9%, 2024년 8.5%, 2025년 5.4%로 내려왔다. 지배주주 순이익은 2022년 52.1억원에서 2025년 26.6억원(전년 대비 40.7% 감소)으로 줄었고, 당기순이익(비지배지분 포함)은 2025년 27.2억원이다. 회사 CFO는 매출이 정체된 상태에서 AI에 투자하다 보니 이익이 줄었다고 설명했다(머니투데이 인터뷰, 2026년 9월 보도). 구독형 전환은 매출을 당장 줄이는 선택이었다는 설명도 함께 나왔다. 영업활동 현금흐름은 2022년 106억원에서 2025년 32.7억원으로 줄었다. 반면 2025년 말 자본총계 381억원 가운데 지배주주 지분은 374억원이고, 부채총계는 107억원으로 부채비율은 2022년 59.5%에서 2025년 28.2%로 낮아졌다. 분기로 보면 2025년 3분기 매출 104억원, 영업이익 2.5억원에서 4분기에는 매출 171억원(전 분기 대비 63.6% 증가), 영업이익 59.3억원으로 크게 늘었다. 2026년 1분기는 매출 90억원(전 분기 대비 47.3% 감소)에 영업손실 20.2억원으로 적자 전환했고, 2분기 매출 131억원, 영업이익 10.1억원으로 흑자 전환했다. 2026년 3분기 매출 135억원은 전 분기 대비 2.7% 증가했고, 영업이익 12.5억원은 전년 동기 대비 389.5% 증가했다. 지배주주 순이익은 3분기 16.7억원이다. 4분기 매출 집중과 일회성 성격이 섞인 이익 증가로 분기 이익 변동 폭이 크다.",
+  "en": "On a disclosed annual basis, revenue fell from KRW 44.1 billion in 2022 to KRW 42.7 billion in 2023, a 3.3% decline, and then rose to KRW 46.1 billion in 2024, up 8.1%, and KRW 46.7 billion in 2025, up 1.2%. Revenue grew in both 2024 and 2025, and 2025 was the largest year of the 2022 to 2025 period. Profit moved the other way during the same stretch. Operating profit went from KRW 5.2 billion in 2022 to KRW 3.81 billion in 2023, down 26.6%, then to KRW 3.9 billion in 2024, up 2.2%, and to KRW 2.54 billion in 2025, down 35.0%, making 2025 the smallest year of the period. The operating margin slid from 11.8% in 2022 to 8.9%, 8.5% and 5.4% in 2025. Profit attributable to controlling shareholders fell from KRW 5.21 billion in 2022 to KRW 2.66 billion in 2025, down 40.7% in that year. Net income including non-controlling interests was KRW 2.72 billion in 2025. The CFO said profit declined because the company invested in AI while revenue had stagnated, and the shift to subscriptions also deferred revenue in the near term. Operating cash flow dropped from KRW 10.6 billion in 2022 to KRW 3.27 billion in 2025. At the end of 2025, total equity was KRW 38.1 billion, of which KRW 37.4 billion belonged to controlling shareholders, and total liabilities were KRW 10.7 billion, so the debt ratio fell from 59.5% to 28.2%. Quarterly results show a sharp swing around year-end. Revenue rose from KRW 10.4 billion in the third quarter of 2025 to KRW 17.1 billion in the fourth quarter, up 63.6% quarter on quarter, and operating profit went from KRW 255 million to KRW 5.93 billion. The first quarter of 2026 returned to an operating loss of KRW 2.02 billion on revenue of KRW 9 billion, down 47.3%. The second quarter returned to profit with revenue of KRW 13.1 billion and operating profit of KRW 1.01 billion. The third quarter brought revenue of KRW 13.5 billion, up 2.7% quarter on quarter and 29.0% year on year, and operating profit of KRW 1.25 billion, up 389.5% year on year. Profit attributable to controlling shareholders was KRW 1.67 billion in the third quarter. Because revenue concentrates in the fourth quarter, quarterly profit remains volatile."
  },
  "industry": {
-  "ko": "생성형 AI의 업무 현장 확산은 프롬프트·첨부파일을 통한 개인정보·영업비밀 유출이라는 새로운 보안 위협을 만들어냈고, 이는 데이터 보안·DLP 시장의 성장 동력으로 작용하고 있다. 국내에서는 공공기관 대상 국가망보안체계(N2SF) 개편이 핵심 변수로 부상해, 보안등급(CSO) 분류와 데이터 식별·통제 솔루션에 대한 수요를 자극하고 있다. 파수AI는 이러한 흐름 속에서 기존 문서보안(DRM) 고객 기반을 발판으로 AI 거버넌스 영역으로 사업을 확장하는 위치에 있으며, ISDP·ISEC 등 국내 정보보안 콘퍼런스와 가트너 시큐리티 서밋 같은 해외 행사에서 지속적으로 신제품을 공개하며 시장 존재감을 유지하고 있다. 경쟁은 국내 문서보안·DLP 전문업체들과 마이크로소프트 퓨어뷰 등 글로벌 클라우드 보안 플랫폼이 혼재된 구도로 전개되며, 온프레미스·프라이빗 클라우드 구축이 가능하다는 점을 파수AI는 차별점으로 내세우고 있다. 다만 산업 전반의 정보보안 예산은 경기와 공공 발주 일정에 영향을 받는 경향이 있어, 연간 실적의 계절성과 정부 예산 집행 시기가 실적에 직접 영향을 미치는 구조다. 밸류업 프로그램 확산과 상법 개정에 따른 주주환원 강화 흐름은 코스닥 소형 IT 기업 전반에도 자사주 매입·배당 확대 압력으로 작용하고 있다.",
-  "en": "The spread of generative AI in everyday workplace use has created a new security threat centered on leakage of personal information and trade secrets through prompts and attachments, acting as a growth driver for the data security and DLP market. In South Korea, the overhaul of the National Network Security Framework (N2SF) for public institutions has emerged as a key variable, stimulating demand for security-grade (CSO) classification and data identification and control solutions. Amid this trend, Fasoo AI is positioned to extend its existing document-security (DRM) customer base into the AI governance domain, maintaining market visibility through repeated product unveilings at domestic conferences such as ISDP and ISEC as well as overseas events like the Gartner Security Summit. Competition unfolds in a landscape that mixes domestic document security and DLP specialists with global cloud security platforms such as Microsoft Purview, and Fasoo AI positions its ability to deploy on-premises or in private cloud environments as a point of differentiation. That said, overall information security budgets tend to be sensitive to macroeconomic conditions and public procurement schedules, meaning the seasonality of annual results and the timing of government budget execution directly affect performance. The broader spread of value-up programs and strengthened shareholder return expectations following commercial code amendments has also created pressure across small-cap KOSDAQ IT companies for expanded buybacks and dividends."
+  "ko": "데이터 보안 수요는 최근 잇따른 해킹 사고와 AI 기반 사이버 위협 증가로 커지고 있다는 것이 회사와 언론의 공통된 설명이다(파이낸셜뉴스, 2026년 11월 16일 보도). 생성형 AI 도입으로 기업 내부 데이터의 유출과 오남용 위험이 커진 것도 문서와 데이터 보호 솔루션 수요를 늘리는 요인으로 꼽힌다. 수요 측면에서는 반도체, 방산, 조선처럼 수주와 투자가 늘어난 산업의 고객 매출이 확대되고 있다. 이는 업황이 좋은 산업이 보안 투자를 먼저 늘리는 구조로 읽히며, 업황이 둔화하면 보안 투자 속도도 달라질 수 있다는 민감도가 있다. 공급망 측면에서는 소프트웨어 자재명세서(SBOM) 도입 필요성이 커지면서 스패로우의 애플리케이션 보안 사업이 호조를 보였다. 사이클 위치는 사고 발생과 규제 강화에 따라 수요가 움직이는 구조여서 한 방향으로 단정하기 어렵다. 같은 IT·소프트웨어 업종에서 삼성에스디에스(Samsung SDS)나 현대오토에버(Hyundai Autoever)처럼 대형 시스템 통합 기업과 비교하면 파수AI는 시가총액 규모가 작은 전문 보안 소프트웨어 업체다. 보안 소프트웨어 영역에서는 안랩(Ahnlab) 같은 국내 보안 상장사와 해외 솔루션이 경쟁한다. 파수AI는 데이터 보안의 고객 기반에 AI 제품을 얹는 방식으로 포지션을 잡고 있다. 같은 업종 내 비교에서 이익률과 성장률을 함께 봐야 하는 이유는 대형사와 전문사의 수익 구조가 다르기 때문이다.",
+  "en": "The company and media both describe data security demand as rising on the back of recent hacking incidents and AI-driven cyber threats. The spread of generative AI has also increased the risk of corporate data leaking or being misused, adding to demand for document and data protection solutions. On the demand side, revenue from customers in industries with rising orders and investment, such as semiconductors, defense and shipbuilding, is expanding. That pattern suggests security spending moves early in strong industries and could slow if those industries weaken. On the supply chain side, growing need for software bills of materials (SBOM) helped Sparrow's application security business perform well. Demand is shaped by incidents and regulatory tightening, so the position in the cycle is difficult to pin down in one direction. Within the IT and software sector, companies such as Samsung SDS and Hyundai Autoever are large system integrators, while Fasoo AI is a small specialist security software company by market capitalization. In security software, domestic listed firms such as Ahnlab and overseas vendors compete for the same customers. Fasoo AI is positioning itself by layering AI products on top of its data security customer base. When comparing with peers, margins and growth should be read together, because specialist and large-scale firms have different earnings structures."
  },
  "outlook": {
-  "ko": "회사는 2026년 2분기 잠정 실적 발표 시점에 하반기 실적에 대해 긍정적 전망을 제시했다. 상반기의 AI 사업 확대와 데이터 보안 수요 증가 흐름이 이어지는 가운데 수주 잔고가 전년 동기 대비 큰 폭으로 늘었다는 설명이며, 소프트웨어 업종 특유의 하반기 매출 집중 계절성을 감안해 연간 매출은 두 자릿수 성장이 가능할 것으로 기대하고 있다고 밝혔다. 중장기적으로는 지난해 발표한 '기업가치 제고(Value-up) 계획'에서 2030년까지 연평균 매출 성장률 20%, 영업이익률 25%, 주주환원율 30%를 목표로 제시한 바 있다. 사업 측면에서는 미국법인 합병으로 출범한 '심볼로직(Symbologic)'을 통한 해외 AX 사업 확대, 국가망보안체계(N2SF) 대응 솔루션 고도화, AX 플랫폼 '엘름' 및 'AI-R DLP'의 고객 저변 확대가 향후 실적에 영향을 줄 핵심 변수로 꼽힌다. 지난 6월에는 자사주 취득을 결정하는 등 주주환원 정책도 지속 추진되고 있다. 다만 이러한 성장 목표와 수주 확대 기대는 아직 확정 실적으로 검증되지 않은 회사 측 설명 단계이며, 2026년 1분기처럼 계절적 비수기에 재차 적자로 돌아설 가능성도 과거 분기 패턴상 배제하기 어렵다.",
-  "en": "At the time of its second-quarter 2026 preliminary earnings disclosure, the company presented a positive outlook for the second half. It stated that the expansion of its AI business and rising data security demand seen in the first half were continuing, that its order backlog had increased substantially year over year, and that, factoring in the software industry's typical second-half revenue concentration, double-digit annual revenue growth was achievable this year. Over the longer term, the value-up plan disclosed last year set targets of 20% average annual revenue growth, 25% operating margin, and 30% shareholder return ratio by 2030. On the business side, key variables likely to affect future results include overseas AX business expansion through Symbologic, the entity formed by merging its US subsidiary, upgrades to solutions addressing the National Network Security Framework (N2SF), and broadening the customer base for the Ellm AX platform and AI-R DLP. The company also decided on a share buyback in June, continuing its shareholder return policy. However, these growth targets and backlog expectations remain company statements not yet verified by confirmed results, and given past quarterly patterns, a return to losses during a seasonally slow quarter, as seen in the first quarter of 2026, cannot be ruled out."
+  "ko": "회사는 2026년 연간 매출이 두 자릿수 성장할 것으로 기대한다고 밝혔다. 근거로는 하반기 매출 집중 구조와 수주 잔고가 전년 동기 대비 큰 폭으로 늘었다는 점을 들었다(2026년 7월 31일 2분기 잠정 실적 공시 시 설명). 2026년 9월 CFO 인터뷰에서는 2026년 8월 기준 매출이 2025년 연간 실적을 넘어섰다고 밝혔는데, 이는 회계상 매출로 잡히지 않은 계약까지 포함한 수치라고 덧붙였다. 4분기에는 기존 수주 물량의 매출 반영이 집중될 것이라는 설명이 3분기 실적 발표에서 함께 나왔다(2026년 11월 16일 공시). 중기 목표로는 2030년까지 연평균 매출 20% 성장, 영업이익률 25%, 주주환원율 30%를 제시했고, 이는 2025년 6월 밸류업 계획에 담긴 내용이다. 2026년 6월 말에는 자사주 취득 결정도 공시했다. 현재 영업이익률은 2025년 연간 5.4%이고 2026년 3분기 분기 기준으로는 흑자 구간이어서, 목표치와의 간격은 여전히 크다. 이 간격이 AI 사업 매출 비중이 커지면서 좁혀지는지가 핵심 변수다. 미국 법인은 투자비 부담으로 적자가 이어졌으며, 2027년 손익분기 달성을 목표로 사업 구조를 다시 짰다. 다음에 확인할 지점은 2026년 사업보고서에서 연간 매출 성장률과 영업이익률이 어떻게 나오는지, 그리고 구독형 매출 비중이 늘어나는지다.",
+  "en": "The company expects 2026 annual revenue to grow by double digits. It cited the concentration of revenue in the second half and a sharp year-on-year increase in order backlog, as stated when it released preliminary second-quarter results on July 31, 2026. In a September 2026 CFO interview, the company said revenue as of August 2026 had already exceeded full-year 2025 revenue, and noted that this figure includes contracts not yet recognized as accounting revenue. When it announced third-quarter results on November 16, 2026, the company said existing order volumes would be recognized mainly in the fourth quarter. Its medium-term targets, set in the value-up plan announced in June 2025, call for 20% average annual revenue growth, a 25% operating margin and a 30% shareholder return ratio by 2030. The company also announced a share buyback decision at the end of June 2026. The 2025 operating margin was 5.4%, and the third quarter of 2026 was profitable on a quarterly basis, so the gap to the targets remains large. Whether that gap narrows as AI revenue grows is the central variable. The U.S. subsidiary has been loss-making because of investment costs, and it was restructured with a target of breaking even in 2027. The next checkpoints are the annual growth rate and operating margin in the 2026 annual report, and whether the share of subscription revenue increases."
  },
  "valuation_comment": {
-  "ko": "최근 4개 분기(2025년 3분기~2026년 2분기) 동안 흑자와 적자 분기가 교차하며 주당 수익성 지표는 연간 단위로 볼 때보다 완만한 회복 신호를 보이고 있다. 주가는 순자산가치에 근접한 수준에서 형성돼 있어, 과거 몇 년간의 이익 감소 흐름을 감안하면 순자산 대비 큰 폭의 프리미엄이나 할인이 두드러지지는 않는 구간으로 볼 수 있다. 이익 규모가 2022년 이후 축소된 뒤 2025년 하반기~2026년 상반기에 걸쳐 적자와 흑자를 오가며 회복을 시도하는 국면인 만큼, 주가 배수 해석에는 분기별 실적 변동성을 함께 고려할 필요가 있다. 배당은 매년 현금배당을 지급해 온 이력이 있으며, 여기에 더해 지난 6월 자사주 취득 결정으로 주주환원 수단이 다변화되는 모습이다. 다만 이 같은 주주환원 정책의 지속성과 규모는 향후 실적 추이에 따라 달라질 수 있다.",
-  "en": "Over the trailing four quarters (Q3 2025 through Q2 2026), profitable and loss-making quarters alternated, with per-share profitability signaling a gentler recovery pattern than the annual figures alone would suggest. The share price sits at a level close to net asset value, and given the multi-year decline in profit that preceded it, this is not a segment marked by a pronounced premium or discount relative to book value. Because earnings shrank after 2022 and then swung between losses and profits through the second half of 2025 and first half of 2026 in an attempted recovery, interpreting valuation multiples requires accounting for this quarterly variability. The company has a history of paying annual cash dividends, and its June decision to conduct a share buyback has diversified its shareholder return toolkit. That said, the continuity and scale of these shareholder return policies may vary depending on future earnings trends."
+  "ko": "현재 배수는 주가에 따라 매일 바뀐다. 시가총액은 2025년 말 지배주주 지분 374억원을 웃도는 구간에 있어 장부상 순자산 대비 프리미엄이 붙어 있는 상태다. 이익 기준으로는 최근 4개 분기 지배주주 순이익 합계가 68.4억원이고 그중 2025년 4분기 61.1억원의 비중이 커서, 분기 이익 변동이 배수 해석에 큰 영향을 준다. 2025년 연간 영업이익 25.4억원은 2022~2025년 중 가장 작은 해였고, 2026년 들어 분기 이익이 흑자로 돌아선 것은 이익 회복의 방향이다. 시장 가격이 자본 규모보다 높게 형성된 만큼, 이익 체력이 회복되는지가 해석의 중심 변수가 된다. 배당과 관련해 회사는 2030년까지 주주환원율 30%를 목표로 제시했고, 2026년 6월 말 자사주 취득을 결정했다. 주주환원 목표와 실제 이익 규모가 맞물려 움직일 수 있다는 점도 함께 볼 대목이다.",
+  "en": "Current multiples change daily with the share price. Market capitalization sits above the KRW 37.4 billion of equity attributable to controlling shareholders at the end of 2025, which means the stock trades at a premium to book value. On earnings, the four-quarter total of profit attributable to controlling shareholders is KRW 6.84 billion, and the fourth quarter of 2025 accounts for most of it, so quarterly swings strongly affect how multiples read. The 2025 annual operating profit of KRW 2.54 billion was the smallest of the 2022 to 2025 period, and the return to quarterly profitability in 2026 reflects a recovery in direction. Because the market price sits above the capital base, whether earnings strength recovers is the central variable in interpreting the valuation. On shareholder returns, the company set a 30% return ratio target for 2030 and decided on a share buyback at the end of June 2026. How the return target fits with actual earnings levels is also worth tracking."
  },
  "bull": [
   {
    "title": {
-    "ko": "AI 보안 수요 확대와 사업 재편",
-    "en": "Expanding AI Security Demand and Business Realignment"
+    "ko": "데이터 보안 수요와 고객 확대",
+    "en": "Rising data security demand and customer expansion"
    },
    "body": {
-    "ko": "생성형 AI 사용 확산에 따른 데이터 유출 우려가 AI-R DLP, FDR 등 신제품 수요를 자극하고 있다. 사명 변경과 미국법인의 심볼로직 통합은 AI 보안·AX 사업으로의 전환 의지를 보여준다. 공공부문 N2SF 대응 확대는 규제 기반의 안정적 수요처가 될 잠재력이 있다.",
-    "en": "Concerns over data leakage from widespread generative AI use are stimulating demand for new products such as AI-R DLP and FDR. The company's name change and the integration of its US subsidiary into Symbologic signal its commitment to pivoting toward AI security and AX business. Expanded response to the N2SF in the public sector has the potential to become a stable, regulation-driven demand source."
+    "ko": "2026년 3분기 매출은 135억원으로 전년 동기 대비 29.0% 증가했다. 회사는 AI 기반 사이버 위협 증가와 반도체·방산·조선 고객 확대를 배경으로 꼽았다. 대기업의 협력사 보안 요구가 공급망 아래쪽으로 이어지는 흐름도 수요를 받친다는 설명이다.",
+    "en": "Third-quarter 2026 revenue reached KRW 13.5 billion, up 29.0% year on year. The company points to growing AI-driven cyber threats and expanding customers in semiconductors, defense and shipbuilding. Large companies demanding stronger security from their suppliers is also cited as supporting demand."
    }
   },
   {
    "title": {
-    "ko": "2분기 흑자 전환과 매출 성장",
-    "en": "Q2 Profitability Turnaround and Revenue Growth"
+    "ko": "구독형 전환과 AI 매출 기반",
+    "en": "Subscription shift and an emerging AI revenue base"
    },
    "body": {
-    "ko": "2026년 2분기 매출은 131억원으로 전년 동기 대비 22.7% 늘었고 영업이익·순이익 모두 흑자로 전환했다. 회사는 수주 잔고 증가와 하반기 계절성을 근거로 연간 두 자릿수 매출 성장을 기대한다고 밝혔다. 4분기 실적이 연간 실적을 좌우하는 구조상 하반기 실적 개선 여지가 남아있다.",
-    "en": "Second-quarter 2026 revenue reached KRW 13.1 billion, up 22.7% year over year, with both operating profit and net profit turning positive. The company said it expects double-digit annual revenue growth based on order backlog growth and second-half seasonality. Given that fourth-quarter results tend to drive annual performance, there remains room for improvement in the second half."
+    "ko": "신규 AI 제품을 중심으로 연간 구독형 라이선스를 늘려 반복 매출 기반을 키우는 중이다. 회사 측은 2026년 8월 기준 매출이 2025년 연간 실적을 넘었다고 밝혔으며, 이 수치에는 아직 회계상 매출로 잡히지 않은 계약도 포함된다고 설명했다.",
+    "en": "It is expanding annual subscription licenses, led by new AI products, to build a recurring revenue base. The company also said revenue as of August 2026 had exceeded full-year 2025 revenue, a figure that includes contracts not yet booked as accounting revenue."
    }
   },
   {
    "title": {
-    "ko": "주주환원 정책 강화",
-    "en": "Strengthened Shareholder Return Policy"
+    "ko": "재무 부담 감소와 주주환원 의지",
+    "en": "Lower financial burden and stated shareholder return intent"
    },
    "body": {
-    "ko": "회사는 지난해 2030년까지 주주환원율 30%를 목표로 하는 밸류업 계획을 발표했다. 지난 6월에는 자사주 취득을 결정해 배당에 더해 환원 수단을 다변화했다. 밸류업 프로그램 확산이라는 시장 전반의 흐름과도 맞물려 있다.",
-    "en": "The company announced a value-up plan last year targeting a 30% shareholder return ratio by 2030. In June it decided on a share buyback, diversifying its return methods beyond dividends. This also aligns with the broader market trend of expanding value-up programs."
+    "ko": "2025년 말 부채비율은 28.2%로 2022년 59.5%보다 낮아졌다. 2026년 1~3분기 누적 영업이익은 흑자로 전환됐다. 회사는 2030년까지 주주환원율 30%를 목표로 제시했고, 2026년 6월 말 자사주 취득을 결정했다.",
+    "en": "The debt ratio fell to 28.2% at the end of 2025 from 59.5% in 2022. Operating profit for the first three quarters of 2026 turned to a cumulative profit. The company targets a 30% shareholder return ratio by 2030 and decided on a share buyback at the end of June 2026."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "수익성 둔화 추세",
-    "en": "Profitability Slowdown Trend"
+    "ko": "수익성 하락 추세",
+    "en": "Declining profitability trend"
    },
    "body": {
-    "ko": "영업이익률은 2022년 11.8%에서 2025년 5.4%로 4년 연속 하락했다. 지배주주 순이익도 2022년 52억원에서 2025년 27억원으로 절반 수준으로 줄었다. AI 사업 전환 과정에서의 투자 비용이 수익성에 부담을 주고 있을 가능성이 있다.",
-    "en": "Operating margin declined for four consecutive years, from 11.8% in 2022 to 5.4% in 2025. Net profit attributable to owners was also roughly halved, from KRW 5.2 billion in 2022 to KRW 2.7 billion in 2025. Investment costs associated with the AI business pivot may be weighing on profitability."
+    "ko": "영업이익률은 2022년 11.8%에서 2025년 5.4%로 낮아졌다. 2025년 영업이익 25.4억원은 2022~2025년 중 가장 작은 해였다. 영업활동 현금흐름도 2022년 106억원에서 2025년 32.7억원으로 줄었다. 매출은 늘었지만 이익과 현금 창출이 따라가지 못한 구간이다.",
+    "en": "The operating margin fell from 11.8% in 2022 to 5.4% in 2025. Operating profit of KRW 2.54 billion in 2025 was the smallest of the 2022 to 2025 period. Operating cash flow also dropped from KRW 10.6 billion in 2022 to KRW 3.27 billion in 2025. Revenue grew, but profit and cash generation did not keep pace."
    }
   },
   {
    "title": {
-    "ko": "분기 실적의 높은 변동성",
-    "en": "High Quarter-to-Quarter Earnings Volatility"
+    "ko": "분기 실적의 계절성과 변동성",
+    "en": "Seasonality and volatility in quarterly results"
    },
    "body": {
-    "ko": "최근 5개 분기 중 두 개 분기(2025년 2분기, 2026년 1분기)에서 영업손실과 순손실을 기록했다. 4분기 매출·이익 집중도가 높아 상반기 실적만으로는 연간 방향을 예단하기 어렵다. 이러한 계절성은 투자자들의 실적 예측 신뢰도를 낮추는 요인이 될 수 있다.",
-    "en": "Two of the trailing five quarters (Q2 2025 and Q1 2026) recorded operating and net losses. High revenue and profit concentration in the fourth quarter means first-half results alone cannot reliably indicate the full-year direction. This seasonality can undermine investor confidence in earnings forecasts."
+    "ko": "2026년 1분기는 영업손실 20.2억원으로 적자 전환했다. 최근 4개 분기 지배주주 순이익 합계 68.4억원 가운데 2025년 4분기 61.1억원이 대부분을 차지한다. 매출이 4분기에 몰리는 구조여서 이익이 특정 분기에 집중되며, 이 구조가 바뀌려면 구독형 비중이 늘어나야 한다.",
+    "en": "The first quarter of 2026 swung to an operating loss of KRW 2.02 billion. Of the KRW 6.84 billion four-quarter total of profit attributable to controlling shareholders, KRW 6.11 billion came from the fourth quarter of 2025. Revenue concentrates in the fourth quarter, so profit clusters in particular quarters, and changing this pattern requires a larger subscription share."
    }
   },
   {
    "title": {
-    "ko": "경쟁 심화와 검증되지 않은 신사업",
-    "en": "Intensifying Competition and Unproven New Business"
+    "ko": "AI 투자 비용과 미국 사업 적자",
+    "en": "AI investment costs and U.S. business losses"
    },
    "body": {
-    "ko": "AI 데이터 보안 시장에는 마이크로소프트 퓨어뷰 등 글로벌 대형 플랫폼 기업들도 진입해 있어 경쟁이 심화되고 있다. 사명 변경 이후 제시된 AX 플랫폼 '엘름' 등 신사업의 매출 기여도는 아직 별도로 공시되지 않았다. 목표로 제시된 2030년 밸류업 지표 달성 여부는 아직 확인되지 않은 계획 단계다.",
-    "en": "Competition in the AI data security market is intensifying with the entry of large global platform companies such as Microsoft Purview. The revenue contribution of new businesses unveiled after the rebrand, such as the Ellm AX platform, has not yet been separately disclosed. Whether the 2030 value-up targets will be achieved remains an unverified, plan-stage matter."
+    "ko": "회사는 매출이 정체된 상태에서 AI에 투자하면서 이익이 줄었다고 설명했다. 미국 사업은 투자비 부담으로 적자가 이어졌고, 2027년 손익분기 달성이 목표로 제시됐다. 목표가 실현되기 전까지 해외 투자 비용이 수익성 회복 속도를 늦출 수 있다.",
+    "en": "The company said profit fell while it invested in AI during a period of stagnant revenue. The U.S. business has run losses because of investment costs, and breaking even in 2027 is the stated target. Until that target is reached, overseas investment costs could slow the pace of profitability recovery."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "실적 계절성 리스크",
-    "en": "Earnings Seasonality Risk"
+    "ko": "업황 및 고객 집중",
+    "en": "Industry cycle and customer concentration"
    },
    "body": {
-    "ko": "소프트웨어 라이선스 매출이 4분기에 집중되는 구조상 상반기 실적만으로 연간 방향을 판단하기 어렵다. 2026년 1분기처럼 비수기에 재차 적자로 전환될 가능성이 과거 패턴상 존재한다. 공공부문 예산 집행 시기 변화도 분기별 실적에 영향을 줄 수 있다.",
-    "en": "Because software license revenue is concentrated in the fourth quarter, first-half results alone are insufficient to determine the full-year direction. Past patterns show the possibility of returning to losses during off-peak quarters, as occurred in the first quarter of 2026. Changes in the timing of public-sector budget execution can also affect quarterly results."
+    "ko": "실적 개선은 반도체, 방산, 조선 등 호황 산업 고객의 보안 투자에 크게 기대고 있다. 이들 산업의 투자가 둔화하면 수주와 매출 인식 속도가 함께 늦어질 수 있다. 특정 산업에 대한 의존도가 높아지는 만큼 고객 구성 변화를 함께 살펴볼 필요가 있다.",
+    "en": "The earnings recovery relies heavily on security spending by customers in booming industries such as semiconductors, defense and shipbuilding. If investment slows in these industries, order intake and revenue recognition could slow as well. As dependence on specific industries rises, changes in the customer mix need to be watched."
    }
   },
   {
    "cat": {
-    "ko": "사업 전환 실행 리스크",
-    "en": "Business Transition Execution Risk"
+    "ko": "경쟁과 AI 제품 전환",
+    "en": "Competition and transition to AI products"
    },
    "body": {
-    "ko": "사명 변경과 심볼로직 합병 등 조직 재편이 진행 중인 가운데 AI·AX 신사업의 매출 기여가 아직 검증되지 않았다. 신사업 투자 확대가 기존 문서보안 사업의 수익성을 추가로 압박할 가능성이 있다. 해외 사업 확장 과정에서 초기 비용 부담이 발생할 수 있다.",
-    "en": "While organizational restructuring such as the rebrand and the Symbologic merger is underway, the revenue contribution from new AI and AX businesses has not yet been verified. Expanded investment in new businesses could further pressure the profitability of the existing document security business. Initial cost burdens may arise during overseas business expansion."
+    "ko": "보안 소프트웨어 시장에는 안랩(Ahnlab) 등 국내 보안 기업과 해외 솔루션이 경쟁하고 있다. AI 기능을 데이터 보안에 결합하는 방향이 고객에게 설득력을 얻지 못하면 신규 AI 매출의 성장이 기대에 못 미칠 수 있다. 제품 전환 속도와 고객 채택률이 중요한 변수다.",
+    "en": "Domestic security firms such as Ahnlab and overseas vendors compete in security software. If combining AI features with data security fails to win customers, growth in new AI revenue could fall short of expectations. The pace of product transition and customer adoption are key variables."
    }
   },
   {
    "cat": {
-    "ko": "경쟁 및 규제 환경 리스크",
-    "en": "Competitive and Regulatory Environment Risk"
+    "ko": "매출 인식 시차와 지표 해석",
+    "en": "Revenue recognition timing and metric interpretation"
    },
    "body": {
-    "ko": "글로벌 클라우드 보안 플랫폼과의 경쟁이 심화될 경우 가격 및 기술 경쟁력 압박이 커질 수 있다. N2SF 등 공공부문 규제 변화의 구체적 시행 일정과 예산 배정 시기는 회사 통제 밖의 변수다. 정책 변화가 지연되거나 축소될 경우 기대했던 공공 수요가 예상보다 늦게 반영될 수 있다.",
-    "en": "Intensifying competition with global cloud security platforms could increase pricing and technology competitiveness pressures. The specific implementation timeline and budget allocation for public-sector regulatory changes such as the N2SF are variables outside the company's control. If policy changes are delayed or scaled back, anticipated public-sector demand may materialize later than expected."
+    "ko": "구독형 전환은 단기 매출 인식을 늦추는 효과가 있다고 회사 CFO가 설명했다. 회사가 제시한 2026년 8월 기준 매출은 회계상 매출에 아직 잡히지 않은 계약을 포함하므로 공시 매출과 다르게 읽어야 한다. 연간 두 자릿수 성장 기대는 4분기 매출 반영 여부에 달려 있다.",
+    "en": "The CFO said the shift to subscriptions defers near-term revenue recognition. The revenue figure the company gave for August 2026 includes contracts not yet booked as accounting revenue, so it should not be read as reported revenue. The expectation of double-digit annual growth depends on how much revenue is recognized in the fourth quarter."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중(잠정)",
-    "en": "Mid-November 2026 (tentative)"
+    "ko": "2027년 3월 말",
+    "en": "Late March 2027"
    },
    "what": {
-    "ko": "2026년 3분기 실적 발표 예정 시기로, 2분기 흑자 전환이 이어지는지와 수주 잔고 증가가 실제 매출로 이어지는지 확인이 필요하다.",
-    "en": "Third-quarter 2026 results are expected to be disclosed around this time; it will be important to check whether the Q2 profitability turnaround continued and whether the reported order backlog growth translated into actual revenue."
+    "ko": "2026년 사업보고서 공시. 2026년 연간 매출 두 자릿수 성장 기대가 실제 수치로 확인되는지, 4분기 매출 171억원 수준의 집중이 연간 실적에 어떻게 반영되는지 본다.",
+    "en": "Release of the 2026 annual report. This will show whether the expected double-digit annual revenue growth materializes and how the fourth-quarter concentration, after revenue of KRW 17.1 billion in the fourth quarter of 2025, is reflected in full-year results."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기 중",
-    "en": "Fourth quarter of 2026"
+    "ko": "2027년 3월 말",
+    "en": "Late March 2027"
    },
    "what": {
-    "ko": "소프트웨어 업종 특유의 하반기 매출 집중 효과가 실제로 나타나는지, 회사가 제시한 연간 두 자릿수 매출 성장 목표에 부합하는지 살펴볼 시점이다.",
-    "en": "This period will show whether the software industry's typical second-half revenue concentration materializes and whether results align with the company's stated target of double-digit annual revenue growth."
+    "ko": "같은 사업보고서에서 영업이익률이 2025년 5.4%보다 개선되는지 본다. 개선 폭은 AI 투자 비용 증가와 구독형 전환의 매출 인식 효과가 어떻게 상쇄되는지를 보여 준다.",
+    "en": "The same report will show whether the operating margin improves from 5.4% in 2025. The size of any improvement will indicate how AI investment costs and the revenue timing effect of subscriptions are offsetting each other."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기~2027년 상반기",
-    "en": "Second half of 2026 through first half of 2027"
+    "ko": "2027년 7월 말 무렵",
+    "en": "Around late July 2027"
    },
    "what": {
-    "ko": "지난 6월 결정한 자사주 취득의 실제 이행 규모와 추가 주주환원 정책 발표 여부를 확인할 필요가 있다.",
-    "en": "It will be worth confirming the actual scale of execution of the June share buyback decision and whether additional shareholder return policies are announced."
+    "ko": "2027년 2분기 실적 발표 시점으로, 2026년 2분기 잠정 실적이 7월 31일에 공시된 전례에 따른 것이다. 2분기 흑자가 이어지는지와 구독형 매출 비중 변화를 확인할 수 있다.",
+    "en": "The second-quarter 2027 results are expected around the time of the 2026 second-quarter release on July 31, 2026. The checkpoint is whether profitability holds and whether the subscription revenue share rises."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 이후",
-    "en": "From the second half of 2026 onward"
+    "ko": "2027년 사업연도 말",
+    "en": "Fiscal year-end 2027"
    },
    "what": {
-    "ko": "국가망보안체계(N2SF) 관련 공공부문 신규 수주 공시와 심볼로직을 통한 해외 매출 비중 변화를 추적할 필요가 있다.",
-    "en": "New public-sector order disclosures related to the National Network Security Framework (N2SF) and changes in the share of overseas revenue via Symbologic should be tracked."
+    "ko": "미국 법인의 2027년 손익분기 달성 여부를 확인하는 시점이다. 해외 사업 적자 축소가 전사 수익성 회복에 얼마나 기여하는지 볼 수 있다.",
+    "en": "This is when the U.S. subsidiary's target of breaking even in 2027 can be checked. It will show how much narrowing overseas losses contribute to the company's overall profit recovery."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "파수AI는 전통적인 문서보안(DRM) 사업에서 AI 데이터 보안·AX 플랫폼 기업으로 정체성을 전환하는 과정에 있으며, 사명 변경과 미국법인 통합이 이러한 전략을 뒷받침한다. 재무적으로는 2022년 이후 영업이익률이 4년 연속 하락하며 수익성 둔화가 이어졌고, 최근 5개 분기 동안 흑자와 적자가 교차하는 높은 변동성을 보였다. 2026년 2분기에는 매출이 늘고 영업이익·순이익이 흑자로 전환됐으며, 회사는 수주 잔고 증가와 하반기 계절성을 근거로 연간 두 자릿수 매출 성장을 기대한다고 밝혔다. 2030년까지 매출 성장률 20%·영업이익률 25%·주주환원율 30%를 목표로 하는 밸류업 계획과 자사주 취득 결정은 주주환원 강화 의지를 보여준다. 다만 AI·AX 신사업의 실제 매출 기여도는 아직 별도로 검증되지 않았고, 공공부문 N2SF 관련 수요의 구체적 실현 시기도 확인이 필요한 상태다. 향후 3분기 실적과 하반기 계절성 반영 여부, 밸류업 계획의 이행 속도가 판단의 핵심 변수가 될 것으로 보인다.",
-   "en": "Fasoo AI is in the process of transitioning its identity from a traditional document DRM business to an AI data security and AX platform company, a strategy underscored by its name change and the integration of its US subsidiary. Financially, operating margin declined for four consecutive years after 2022, reflecting an ongoing profitability slowdown, and the trailing five quarters showed high volatility with profits and losses alternating. In the second quarter of 2026, revenue grew and both operating profit and net profit turned positive, with the company stating it expects double-digit annual revenue growth based on order backlog increases and second-half seasonality. The value-up plan targeting 20% revenue growth, 25% operating margin, and 30% shareholder return ratio by 2030, along with the share buyback decision, demonstrates a commitment to strengthening shareholder returns. However, the actual revenue contribution of the new AI and AX businesses has not yet been separately verified, and the specific timing for realizing N2SF-related public-sector demand still needs confirmation. Third-quarter results, whether second-half seasonality materializes as expected, and the pace of value-up plan execution appear to be the key variables going forward."
+   "ko": "파수AI는 데이터 보안 수요 확대와 AI 사업 본격화를 바탕으로 2026년 2분기와 3분기 영업이익이 흑자를 이어 갔고, 3분기 매출은 전년 동기 대비 29.0% 증가했다. 다만 2025년 영업이익률은 5.4%로 2022년 11.8%보다 낮고, 영업이익과 영업활동 현금흐름이 2022년 이후 줄어든 흐름은 아직 뒤집히지 않았다. 부채비율이 28.2%로 낮아지고 자본총계가 381억원으로 자리 잡은 점은 재무 부담이 줄었다는 근거다. 실적은 4분기 매출 집중과 구독형 전환의 시차에 크게 좌우되어 분기별 변동이 크다. 강세 요인은 고객 확대, 유지보수 갱신률 95% 이상, 2030년 중기 목표 제시이며, 약세 요인은 수익성 하락, 분기 이익의 편중, 미국 사업 적자다. 다음 확인 지점은 2026년 사업보고서에서 연간 매출 성장과 영업이익률이 어떻게 나오는지, 2027년 미국 법인의 손익분기 달성 여부다.",
+   "en": "Fasoo AI kept operating profit in the black in the second and third quarters of 2026, supported by stronger data security demand and the start of its AI business, and third-quarter revenue rose 29.0% year on year. However, the 2025 operating margin of 5.4% remains below the 11.8% of 2022, and the decline in operating profit and operating cash flow since 2022 has not yet been reversed. The debt ratio falling to 28.2% and total equity of KRW 38.1 billion point to a lighter financial burden. Results depend heavily on fourth-quarter revenue concentration and the timing effects of the subscription shift, so quarterly swings are large. Supporting factors include customer expansion, a maintenance renewal rate above 95%, and the 2030 medium-term targets. Offsetting factors are the lower profitability, the concentration of profit in single quarters and the U.S. business losses. The next checkpoints are the annual growth and operating margin in the 2026 annual report, and whether the U.S. subsidiary reaches breakeven in 2027."
   }
  },
  "sources": [
-  "https://comp.wisereport.co.kr/wiseReport/summary/ReportSummary.aspx?cmp_cd=000910",
-  "https://markets.hankyung.com/stock/150900/consensus",
-  "https://m.thinkpool.com/item/150900",
-  "https://kind.krx.co.kr/corpgeneral/irschedule.do?method=searchIRScheduleMain&gubun=iRSchedule",
-  "https://zdnet.co.kr/view/?no=20260604164735",
-  "https://www.dailysecu.com/news/articleView.html?idxno=205270",
+  "https://www.fnnews.com/news/202611161000067120",
+  "https://news.mtn.co.kr/article/2026111610315520320",
+  "https://zdnet.co.kr/view/?no=20260731160334",
+  "https://m.news.nate.com/view/20260913n09689",
   "https://www.smartbizn.com/news/articleView.html?idxno=149991",
-  "https://v.daum.net/v/20260723082815535",
-  "https://www.dailysecu.com/news/articleView.html?idxno=207031",
-  "https://www.epnc.co.kr/news/articleView.html?idxno=400058",
-  "https://biz.heraldcorp.com/article/10707309",
-  "https://www.fasoo.ai/?lang=kr",
-  "https://www.fnnews.com/news/202604071034586898",
-  "https://cdn.fnguide.com/SVO2/ASP/SVD_main.asp?MenuYn=Y&gicode=A150900",
-  "http://asp01.fnguide.com/SVO2/asp/SVD_Corp.asp?pGB=5&gicode=A150900&cID=&MenuYn=Y&ReportGB=&NewMenuID=102&stkGb=701",
-  "https://news.infostock.co.kr/a",
-  "https://www.stockplus.com/m/stocks/KOREA-A150900/analysis",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Comparison.asp?pGB=1&gicode=A150900&MenuYn=Y&NewMenuID=106&stkGb=701"
+  "https://supple.kr/news/cms8a46nn00963mgk4ik8jipy",
+  "https://www.mt.co.kr/stock/2026/07/31/2026073110420597658",
+  "https://m.news.nate.com/view/20260731n27572",
+  "https://www.bloter.net/news/articleView.html?idxno=669624",
+  "https://view.asiae.co.kr/article/2026111609491342718",
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=01695766629245064",
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=06553446632525720",
+  "https://www.newstong.co.kr/view3.aspx?seq=14817682",
+  "https://www.tradingkey.com/kr/news/transcripts/262279962-",
+  "https://www.vegannews.co.kr/news/article.html?no=405685",
+  "https://www.tradingkey.com/kr/news/transcripts/262285932-",
+  "https://www.globenewswire.com/news-release/2026/10/28/3389964/0/en/parsons-reports-third-quarter-2026-results.html"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "150900",
  "name": "파수AI",
  "name_en": "FASOO AI Co.,Ltd.",
@@ -224,11 +223,11 @@
   "인공지능(AI)"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 19:14",
- "dataDate": "20260904",
+ "reportDate": "2026-11-16",
+ "reportTs": "2026-11-16 17:17",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-11-16",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -298,12 +297,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 10698906240,
-    "op": -938848887,
-    "np_owner": -1217969690
-   },
-   {
     "q": "2025Q3",
     "rev": 10449307647,
     "op": 254920294,
@@ -326,28 +319,36 @@
     "rev": 13128399489,
     "op": 1006287416,
     "np_owner": 862593465
+   },
+   {
+    "q": "2026Q3",
+    "rev": 13476352487,
+    "op": 1247931557,
+    "np_owner": 1669300762
    }
   ],
   "valuation": {
-   "price": 3545,
-   "mcap": 0.0415,
+   "price": 4755,
+   "mcap": 0.0557,
    "shares": 11703922,
    "total_shares": 11703922,
-   "wavg_shares": 11337751,
-   "per": 7.34,
-   "eps": 483,
-   "pbr": 1.1355,
-   "bps": 3122,
-   "roe_ttm": 16.7,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": 5467533256,
+   "wavg_shares": 11204113,
+   "per": 7.86,
+   "eps": 605,
+   "pbr": 1.5043,
+   "bps": 3161,
+   "roe_ttm": 20.7,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": 6836793378,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 1.07,
+   "eps_src": "공시",
+   "pbr_krx": 1.44,
    "bps_krx": 3303.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 100.0,
-   "div": 2.82
+   "div": 2.1
   }
- }
+ },
+ "textRules": 2
 }

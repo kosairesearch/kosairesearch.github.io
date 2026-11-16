@@ -1,230 +1,207 @@
 {
  "title": {
-  "ko": "소켓 마진 턴어라운드, 2026년 성장 시험대",
-  "en": "Socket Margin Turnaround Faces 2026 Growth Test"
+  "ko": "메모리 테스트 부품 실적 전환, 다음 확인 지점",
+  "en": "Memory test parts turnaround: the next checkpoints"
  },
  "lead": {
-  "ko": "오킨스전자는 2025년 매출 41.5% 증가와 영업이익 급증으로 적자에서 흑자로 전환했고, 2026년 2분기에는 분기 기준 최대 실적을 기록하며 CLT·HBM 관련 소모성 부품 수요 확대의 초기 성과를 보여주고 있다.",
-  "en": "OKins Electronics swung from loss to profit in 2025 with revenue up 41.5%, and posted its strongest quarter on record in Q2 2026, an early signal of demand growth for CLT- and HBM-related consumable parts."
+  "ko": "오킨스전자는 2024년 지배주주 순손실에서 2025년 지배주주 순이익 흑자로 돌아섰고, 2025년 4분기부터 2026년 3분기까지 매출이 4개 분기 연속 늘었다. 번인 소켓과 프로브핀 등 메모리 테스트 부품 수요가 실적을 끌고 있으며, 고객 집중과 분기 이익 변동이 함께 남아 있다.",
+  "en": "OKins Electronics moved from a net loss attributable to controlling shareholders in 2024 to a profit in 2025, and its quarterly revenue has risen for four straight quarters from the fourth quarter of 2025 through the third quarter of 2026. Demand for burn-in sockets and probe pins tied to memory testing is driving results, while customer concentration and quarterly profit swings remain open issues."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출 943.7억원(+41.5%), 영업이익 110.9억원(영업이익률 11.7%)으로 전년 적자에서 흑자 전환",
-   "en": "2025 consolidated revenue reached KRW 94.37bn (+41.5%) with operating profit of KRW 11.09bn (11.7% margin), swinging from a net loss to a net profit"
+   "ko": "2025년 매출은 944억원으로 2022~2025년 중 가장 큰 해이며, 2024년부터 2025년까지 2년 연속 증가했다.",
+   "en": "Revenue in 2025 was KRW 94.4 billion, the largest year in 2022 to 2025 and the second straight year of growth after 2023."
   },
   {
-   "ko": "2026년 2분기 매출 350.8억원, 영업이익 83.9억원으로 분기 기준 최대 실적 경신",
-   "en": "Q2 2026 revenue hit KRW 35.08bn with operating profit of KRW 8.39bn, marking the company's strongest quarter on record"
+   "ko": "지배주주 순이익은 2024년 순손실 54.2억원에서 2025년 77.4억원으로 흑자 전환했다. 당기순이익(비지배지분 포함)은 2025년 77.9억원으로 별도 값이다.",
+   "en": "Net profit attributable to controlling shareholders moved from a net loss of KRW 5.42 billion in 2024 to a profit of KRW 7.74 billion in 2025. Net profit including non-controlling interests was KRW 7.79 billion in 2025, a separate figure."
   },
   {
-   "ko": "HBM용 마그네틱 콜렛을 글로벌 메모리 3사 모두에 공급하며 삼성전자 벤더 다변화 경쟁에서 단독 승인",
-   "en": "The company now supplies HBM magnetic collets to all three global memory makers and was the sole approved vendor in a Samsung Electronics vendor diversification process"
+   "ko": "2026년 3분기 매출은 379억원으로 전년 동기 대비 62.7% 증가했으나, 영업이익은 71.6억원으로 전 분기보다 14.7% 줄었다.",
+   "en": "Third-quarter 2026 revenue was KRW 37.9 billion, up 62.7% year on year, while operating profit was KRW 7.16 billion, down 14.7% from the prior quarter."
   },
   {
-   "ko": "주요 고객사의 CLT 장비 전환에 따른 번인·테스트 소켓 수요 확대가 핵심 성장 동력으로 지목",
-   "en": "Demand growth for burn-in and test sockets tied to key customers' CLT equipment transition has been cited as the core growth driver"
+   "ko": "고객은 삼성전자와 중국 CXMT가 주요 매출처로 알려져 있고, 고사양 메모리(LPDDR·HBM 관련) 테스트 수요가 번인 소켓과 마그네틱 콜렛 공급 확대로 이어지고 있다.",
+   "en": "Samsung Electronics and CXMT are reported as major customers, and demand for high-spec memory testing, including LPDDR and HBM-related applications, is lifting burn-in socket and magnetic collet supply."
   },
   {
-   "ko": "부채비율은 2024년 215.7%에서 2025년 88.8%로 크게 낮아지며 재무구조가 개선되는 흐름",
-   "en": "The debt ratio fell sharply from 215.7% in 2024 to 88.8% in 2025, indicating an improving financial structure"
+   "ko": "다음 확인 지점은 2026년 연간 잠정실적(2027년 2월 초 전후)과 2026 사업보고서(2027년 3월 31일까지)다.",
+   "en": "The next checkpoints are the 2026 full-year provisional results, expected in early February 2027, and the 2026 annual report, due by March 31, 2027."
   }
  ],
  "business": {
-  "ko": "오킨스전자는 1998년 설립되어 2014년 코스닥에 상장한 반도체 후공정 테스트 솔루션 전문기업이다. 사업 구조는 번인·테스트 소켓, MEMS 프로브핀(포고핀), 마그네틱 콜렛, 커넥터, 웨이퍼 및 패키지 테스트 용역까지 아우른다. 2025년 3분기 누적 기준 매출 비중은 반도체 검사용 소켓을 제조하는 BiTS 사업부가 89.6%, 반도체 테스트 용역 사업부가 7.1%, 기타가 3.3%로 소모성 부품 매출이 실적의 절대 다수를 차지한다. 주요 고객사는 삼성전자, SK하이닉스를 포함한 국내외 주요 반도체 제조사와 반도체 제조 장비사이며, 중국 CXMT 등 해외 고객사도 확보하고 있다. 최근에는 HBM용 마그네틱 콜렛을 글로벌 메모리 3사 모두에 공급하게 됐으며, 삼성전자의 벤더 다변화 과정에서 6개 업체가 경쟁한 끝에 단독 승인되며 사실상 솔벤더 지위를 확보했다. 신규 제품으로는 D램 프로브카드 내부에서 인터포저 역할을 하는 스프링핀을 개발해 삼성전자와 SK하이닉스의 승인을 받아 대량 양산에 들어갔다. 이 외에도 배터리 커넥터, 테스트보드용 커넥터 등 반도체 외 영역으로도 포트폴리오를 확장하는 중이다. 경영진은 매출의 15~20% 수준을 지속적으로 신제품 라인 구축에 투자하고 있다고 밝혔다.",
-  "en": "OKins Electronics was founded in 1998 and listed on KOSDAQ in 2014 as a semiconductor back-end test solutions specialist. Its business spans burn-in and test sockets, MEMS probe pins (pogo pins), magnetic collets, connectors, and wafer/package test services. As of cumulative Q3 2025, revenue mix was led by the BiTS division (semiconductor inspection socket manufacturing) at 89.6%, the semiconductor test service division at 7.1%, and other at 3.3%, meaning consumable-parts revenue accounts for the vast majority of results. Major customers include Samsung Electronics, SK hynix, and other domestic and overseas chipmakers and equipment makers, along with China's CXMT. The company recently began supplying HBM magnetic collets to all three global memory makers, and became the sole approved vendor at Samsung Electronics after competing against six other suppliers in a vendor diversification process. As a new product, it developed spring pins that serve as interposers inside DRAM probe cards, which received approval from Samsung Electronics and SK hynix and entered mass production. It is also expanding its portfolio beyond semiconductors into battery connectors and test-board connectors. Management has stated it continuously invests 15-20% of revenue into building new product lines."
+  "ko": "오킨스전자는 1998년 반도체 검사용 소켓 제조를 목적으로 설립됐고, 2014년 코스닥에 상장했다. 2006년 반도체 사업부를 세워 후공정 테스트 사업을 함께 영위하고 있다. 회사의 본업은 번인·테스트 소켓, 프로브핀·포고핀, 마그네틱 콜렛의 매출로 구성된 BiTS 사업부다. 번인 소켓은 칩의 불량 여부를 가리는 후공정 단계에서 쓰이는 핵심 제품이며, 언론은 이 분야에서 독보적인 기술력과 점유율을 보유한 것으로 소개했다. 회사는 2026년 상반기 실적을 설명하면서 번인소켓, 커넥터, 프로브핀의 3대 제품군이 고르게 성장했다고 밝혔다. 메모리 제품의 고성능화와 세대 전환으로 저전력 DDR 등 고사양 번인 소켓 수요가 늘었고, 고객사 생산 증가에 맞춰 커넥터와 프로브핀 공급도 함께 늘었다. 주요 매출처는 삼성전자와 중국 CXMT로 알려져 있으며, 중국향 매출 비중이 높아졌다는 설명도 있었다. 회사는 2025년 12월 메모리 고객사에 HBM용 콜렛을 공급하게 되면서 글로벌 메모리 3사 모두에 납품한다고 밝혔다. 반도체 외 사업으로는 현대기아차 커넥터 SQ 인증을 취득하고 5G 통신용 커넥터 개발을 진행하고 있다. 경쟁 구도는 리노공업, 티에스이, ISC 등 테스트 소켓과 프로브 영역의 상장 업체와 겹친다.",
+  "en": "OKins Electronics was founded in 1998 to make semiconductor test sockets and listed on KOSDAQ in 2014. It set up a semiconductor division in 2006 and also runs back-end test services. Its core business is the BiTS division, which generates sales from burn-in and test sockets, probe pins and pogo pins, and magnetic collets. Burn-in sockets are a key product used in the back-end stage that screens chips for defects, and the press has described the company as holding distinctive technology and share in this field. In explaining its first-half 2026 results, the company said its three main product lines of burn-in sockets, connectors and probe pins grew evenly. Higher-spec memory products and generational shifts lifted demand for high-spec burn-in sockets such as those for low-power DDR, and connector and probe pin supply rose with customers' production. Samsung Electronics and CXMT are reported as major customers, and the company has said its China-related sales share has risen. In December 2025 the company said it had begun supplying HBM collets to a global memory maker, bringing deliveries to all three major memory makers. Outside semiconductors, the company obtained Hyundai Kia connector SQ certification and is developing 5G communication connectors. Its competitive set overlaps with listed test-socket and probe makers such as LEENO Industrial, TSE and ISC."
  },
  "earnings": {
-  "ko": "2025년 연결 매출액은 943억 7,400만원으로 2024년 666억 8,000만원 대비 41.5% 증가했고, 영업이익은 110억 8,600만원으로 영업이익률이 2024년 2.9%에서 11.7%로 크게 뛰었다. 지배주주 순이익은 77억 4,400만원을 기록해 2024년 -54억 1,800만원의 적자에서 흑자로 전환했다. 앞서 2023년에는 매출 568억 5,000만원, 영업이익 3억 7,400만원(영업이익률 0.7%)으로 수익성이 크게 위축됐던 바 있고, 2022년에는 매출 641억 7,700만원, 영업이익 26억 900만원(영업이익률 4.1%)을 기록해 최근 4개년 동안 영업이익률이 0.7%~11.7% 구간에서 크게 출렁였다. 최근 분기 흐름을 보면 2025년 2분기 매출 270억 8,200만원·영업이익 31억 8,700만원에서 2025년 3분기 매출 233억 2,000만원·영업이익 36억 9,400만원으로 매출은 줄었지만 영업이익률은 오히려 개선됐고, 다만 지배주주 순이익은 3억 7,100만원에 그쳐 영업이익과의 괴리가 컸다. 2025년 4분기에는 매출 250억 9,400만원·영업이익 25억 5,100만원을 기록했으나 순이익은 37억 5,200만원으로 영업이익을 웃돌았고, 2026년 1분기에는 매출 256억 1,300만원·영업이익 36억 700만원·순이익 37억 3,800만원으로 안정적인 흐름을 이어갔다. 2026년 2분기에는 매출 350억 8,300만원, 영업이익 83억 9,400만원(영업이익률 23.9%), 지배주주 순이익 86억 9,200만원으로 분기 기준 최대치를 기록하며 실적 레벌리지가 가장 뚜렷하게 나타났다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 합산으로는 매출 약 1,091억원, 지배주주 순이익 약 165억 5,000만원이 누적됐다. 영업활동현금흐름은 2022년 76억 1,800만원에서 2025년 168억 6,200만원으로 꾸준히 늘어 손익 개선이 현금창출력으로도 이어지고 있음을 보여준다.",
-  "en": "Consolidated revenue in 2025 reached KRW 94.37bn, up 41.5% from KRW 66.68bn in 2024, while operating profit jumped to KRW 11.09bn, lifting the operating margin from 2.9% in 2024 to 11.7%. Net income attributable to owners came in at KRW 7.74bn, swinging from a loss of KRW 5.42bn in 2024 to a profit. Prior to that, 2023 saw profitability compressed sharply with revenue of KRW 56.85bn and operating profit of only KRW 0.37bn (0.7% margin), while 2022 posted revenue of KRW 64.18bn and operating profit of KRW 2.61bn (4.1% margin), showing the operating margin swung between 0.7% and 11.7% over the past four fiscal years. On a quarterly basis, revenue fell from KRW 27.08bn in Q2 2025 to KRW 23.32bn in Q3 2025, yet operating profit actually improved to KRW 3.69bn, though owners' net income was only KRW 0.37bn, a notable gap versus operating profit. Q4 2025 saw revenue of KRW 25.09bn and operating profit of KRW 2.55bn, while net income of KRW 3.75bn exceeded operating profit, and Q1 2026 continued a stable trend with revenue of KRW 25.61bn, operating profit of KRW 3.61bn, and net income of KRW 3.74bn. Q2 2026 delivered the strongest quarter on record, with revenue of KRW 35.08bn, operating profit of KRW 8.39bn (23.9% margin), and owners' net income of KRW 8.69bn, showing the clearest sign of earnings leverage. Over the trailing four quarters (Q3 2025 through Q2 2026), cumulative revenue totaled roughly KRW 109.1bn and owners' net income roughly KRW 16.55bn. Operating cash flow rose steadily from KRW 7.62bn in 2022 to KRW 16.86bn in 2025, indicating that the earnings recovery has translated into stronger cash generation as well."
+  "ko": "공시 실적 기준 연간 매출은 2022년 642억원에서 2023년 569억원(전년 대비 11.4% 감소)으로 줄었다가, 2024년 667억원(전년 대비 17.3% 증가), 2025년 944억원(전년 대비 41.5% 증가)으로 2년 연속 늘었다. 2025년은 2022~2025년 중 매출이 가장 큰 해다. 영업이익은 2022년 26.1억원에서 2023년 3.7억원(전년 대비 85.7% 감소)으로 줄어 가장 작은 해가 됐고, 2024년 19억원(전년 대비 408.8% 증가), 2025년 111억원(전년 대비 482.1% 증가)으로 2년 연속 늘었다. 영업이익률은 2022년 4.1%, 2023년 0.7%, 2024년 2.9%에서 2025년 11.7%로 올라섰다. 지배주주 순이익은 2023년 10.7억원에서 2024년 순손실 54.2억원으로 적자 전환된 뒤 2025년 77.4억원으로 흑자 전환했다. 회사는 2025년 실적을 외형 확대보다 고부가가치 제품 비중 확대, 수익성 중심의 사업 포트폴리오 재편, 영업·개발·사업 간 구조 효율화의 결과로 설명했다. 재무구조도 나아져 부채비율은 2024년 215.7%에서 2025년 88.8%로 낮아졌고, 2025년 말 부채총계는 450억원, 자본총계는 507억원이다. 영업활동 현금흐름은 2022년 76.2억원에서 2025년 169억원으로 늘었다. 분기 실적은 매출이 2025년 3분기 233억원, 4분기 251억원(전 분기 대비 7.6% 증가), 2026년 1분기 256억원(2.1% 증가), 2분기 351억원(37.0% 증가), 3분기 379억원(8.1% 증가)으로 4개 분기 연속 늘었다. 반면 영업이익은 2025년 4분기 25.5억원으로 전 분기보다 30.9% 줄었고, 2026년 1분기 36.1억원, 2분기 83.9억원으로 회복된 뒤 3분기 71.6억원으로 14.7% 감소했다. 지배주주 순이익은 2026년 2분기 86.9억원, 3분기 51억원이며, 최근 4개 분기 합계는 213억원이다. 매출 증가가 이익 증가로 같은 속도로 이어지지 않는 분기가 있었다는 점에서 분기별 마진 추이를 함께 봐야 한다.",
+  "en": "On the basis of DART-filed results, annual revenue fell from KRW 64.2 billion in 2022 to KRW 56.9 billion in 2023, a decline of 11.4%, then rose 17.3% to KRW 66.7 billion in 2024 and 41.5% to KRW 94.4 billion in 2025. Revenue grew in 2024 and 2025, and 2025 was the largest year of 2022 to 2025. Operating profit fell from KRW 2.61 billion in 2022 to KRW 374 million in 2023, the smallest year, an 85.7% drop, then rose to KRW 1.9 billion in 2024 and KRW 11.1 billion in 2025, two straight years of growth. Operating margin moved from 4.1% in 2022 and 0.7% in 2023 to 2.9% in 2024 and 11.7% in 2025. Net profit attributable to controlling shareholders went from KRW 1.07 billion in 2023 to a net loss of KRW 5.42 billion in 2024, then returned to a profit of KRW 7.74 billion in 2025. The company attributed the 2025 improvement to a larger share of high value-added products, a portfolio reshaped around profitability, and structural efficiency across sales, development and business units. The balance sheet also improved, with the debt ratio falling from 215.7% in 2024 to 88.8% in 2025. At the end of 2025, total liabilities were KRW 45 billion and total equity was KRW 50.7 billion. Operating cash flow rose from KRW 7.62 billion in 2022 to KRW 16.9 billion in 2025. On a quarterly basis, revenue was KRW 23.3 billion in the third quarter of 2025, KRW 25.1 billion in the fourth quarter (up 7.6% quarter on quarter), KRW 25.6 billion in the first quarter of 2026 (up 2.1%), KRW 35.1 billion in the second quarter (up 37.0%) and KRW 37.9 billion in the third quarter (up 8.1%), four straight quarters of growth. Operating profit, however, fell 30.9% to KRW 2.55 billion in the fourth quarter of 2025, recovered to KRW 3.61 billion in the first quarter of 2026 and KRW 8.39 billion in the second quarter, then dropped 14.7% to KRW 7.16 billion in the third quarter. Net profit attributable to controlling shareholders was KRW 8.69 billion in the second quarter and KRW 5.1 billion in the third quarter, and the four-quarter total from the fourth quarter of 2025 to the third quarter of 2026 was KRW 21.3 billion. Because revenue growth has not always carried through to profit in the same quarter, quarterly margin trends need to be tracked alongside sales."
  },
  "industry": {
-  "ko": "반도체 후공정 소모성 부품 업체인 오킨스전자는 제품 가격과 판매량이 동시에 개선되는 국면에 진입했다는 평가를 받고 있다. 유안타증권은 2026년 1월 23일 보고서에서 소켓 부문의 가격과 물량이 동시에 개선될 수 있는 환경이 조성되고 있다고 평가했다. 소켓은 반도체 칩이 정상적으로 작동하는지를 검사하는 과정에서 사용되는 소모성 부품으로 교체 주기가 짧아 수요의 안정성이 비교적 높은 편으로 알려져 있다. 최근 반도체 업황은 고대역폭메모리(HBM)와 차세대 메모리 모듈 수요 확대로 무게 중심이 이동하면서 메모리 테스트 공정의 고도화와 장비 전환이 본격화되고 있다. 국내 주요 메모리 업체들이 고효율 CLT(Continuous Loop Tester) 장비로의 전환을 추진하는 흐름 속에서 오킨스전자는 해당 장비용 번인 소켓과 로우프리퀀시 테스트 소켓을 공급하고 있다. 마그네틱 콜렛은 자성을 활용해 칩을 안정적으로 고정·이송할 수 있어 기존 러버 콜렛 대비 진화한 방식으로, 글로벌 주요 반도체 제조사가 신규 다이 어태치 장비에서 선호하는 추세다. 2025년 7월 LPDDR6 표준이 제정된 점도 업계에서 주목하는 변수로, 차세대 메모리 규격 도입이 새로운 테스트 환경과 장비 수요를 동반할 수 있다는 전망이 나온다.",
-  "en": "As a consumable-parts supplier for semiconductor back-end processes, OKins Electronics has been assessed as entering a phase where both product pricing and sales volume are improving simultaneously. Yuanta Securities noted in a January 23, 2026 report that conditions are forming for the socket segment's price and volume to improve together. Sockets are consumable parts used to test whether semiconductor chips function normally, and are known to have relatively stable demand due to their short replacement cycles. The recent semiconductor industry landscape has been shifting toward high-bandwidth memory (HBM) and next-generation memory modules, driving upgrades in memory test processes and equipment transitions. Amid a trend of domestic memory makers transitioning to high-efficiency CLT (Continuous Loop Tester) equipment, OKins Electronics supplies burn-in sockets and low-frequency test sockets for such equipment. Magnetic collets, which use magnetism to hold and transfer chips more stably, represent an evolution over conventional rubber collets and are increasingly preferred by major global chipmakers for new die-attach equipment. The establishment of the LPDDR6 standard in July 2025 is also being watched as a variable, with expectations that adoption of the next-generation memory specification could bring new test environment and equipment demand."
+  "ko": "회사의 주요 전방은 메모리 반도체 테스트 공정이다. 최근 업황은 HBM과 차세대 메모리 모듈 수요 확대로 무게 중심이 옮겨 가고 있고, 이에 따라 메모리 테스트 공정의 고도화와 장비 전환이 본격화되고 있다는 것이 한국IR협의회 보고서(2026년 2월)의 진단이다. 같은 보고서는 고부가 메모리일수록 테스트 난도가 높아 소켓과 프로브 부품의 단가와 교체 수요가 함께 오른다고 설명했다. 회사의 주요 고객사가 CLT 장비로 전환하면서 메모리 소켓 매출이 늘어나는 것이 핵심 동력으로 지목됐다. 이 밖에 글로벌 프로브카드 고객사 확대에 따른 포고핀 매출, HBM 관련 마그네틱 콜렛 공급도 실적을 키우는 요인으로 꼽혔다. 최근 전력반도체(SiC)와 고성능 반도체 시장이 커지면서 테스트 부품 수요가 늘고 있다는 언론 보도도 있다. 경쟁 구도에서 오킨스전자는 번인 소켓을 주력으로 하고 프로브핀과 커넥터, 마그네틱 콜렛을 함께 공급하는 구조다. 같은 테스트 소켓과 프로브 영역에는 리노공업, 티에스이, ISC 같은 상장사가 있어 제품 세대 전환과 고객 인증 속도가 점유율을 가르는 변수가 된다. 회사는 차세대 하이브리드 본딩 기술에 대응하기 위해 신규 재질 개발과 내열성 연구를 진행 중이라고 밝혔다. 사이클상 메모리 투자 확대 국면에 들어와 있지만, 설비 투자 속도는 메모리 업체의 수요 판단에 따라 달라진다.",
+  "en": "The company's main end market is the memory semiconductor test process. According to a Korea IR Council report from February 2026, the industry's center of gravity is shifting toward HBM and next-generation memory modules, which is pushing memory test processes toward greater sophistication and equipment conversion. The same report said higher-spec memory raises test difficulty, which tends to lift unit prices and replacement demand for sockets and probe parts. Customers' move to CLT equipment was identified as the main driver of memory socket sales. Growth in pogo pin sales tied to global probe card customers and expanding HBM-related magnetic collet supply were also cited as profit drivers. Press reports point to rising test-part demand from power semiconductors, including silicon carbide, and from high-performance chips. Within competition, OKins Electronics centers on burn-in sockets and also supplies probe pins, connectors and magnetic collets. It shares the test socket and probe segment with listed companies such as LEENO Industrial, TSE and ISC, so product generation changes and the speed of customer qualification are the variables that determine share. The company said it is developing new materials and heat-resistance research to address next-generation hybrid bonding. Memory investment appears to be expanding, but the pace of equipment spending depends on memory makers' own demand decisions."
  },
  "outlook": {
-  "ko": "한국IR협의회는 2026년 2월 21일 보고서에서 오킨스전자가 반도체 테스트 전방위 포트폴리오를 기반으로 2026년 가파른 외형 성장과 수익성 개선을 동시에 달성할 가능성이 높다고 평가했다. 같은 보고서는 2026년 매출액을 1,405억원, 영업이익을 207억원으로 전망하며 주요 고객사의 CLT 장비 전환에 따른 메모리 소켓 매출 증가를 핵심 동력으로 지목했다. 세부적으로는 BiTS 사업부 매출이 전년 대비 48.9% 늘어난 1,245억원에 이를 것으로 전망했으며, 테스트 소켓 매출은 양산 적용 확대 시 약 50%, 마그네틱 콜렛 매출은 약 54%, 포고핀 매출은 글로벌 프로브카드 고객사 확대에 따라 약 25% 성장할 것으로 분석했다. 다만 이는 특정 기관이 제시한 전망치로, 회사가 2025년 초 제시했던 매출 1,200억원·영업이익 246억원의 목표는 실제로는 매출 943억원·영업이익 110억원에 그쳐 목표치에 미달했던 전례가 있다. 오킨스전자는 2026년 9월 2~4일 대만에서 열린 '세미콘 타이완 2026'에 참가해 번인 소켓, 테스트용 소켓, 초정밀 커넥터 등 차세대 반도체 검사 부품 라인업을 선보였다. 회사 측은 2025년 실적 개선이 고부가가치 제품 비중 확대와 사업 포트폴리오 재편에 따른 결과라고 설명하며, 2026년에는 사업 포트폴리오 고도화와 전사 전략 재정렬에 속도를 내겠다고 밝혔다.",
-  "en": "The Korea Investors Service Council (KOSCOM's IR arm) assessed in a February 21, 2026 report that OKins Electronics is likely to achieve both sharp top-line growth and profitability improvement in 2026, underpinned by its comprehensive semiconductor test portfolio. The same report projected 2026 revenue of KRW 140.5bn and operating profit of KRW 20.7bn, citing memory socket sales growth from key customers' CLT equipment transition as the core driver. In detail, it projected BiTS division revenue rising 48.9% year-on-year to KRW 124.5bn, with test socket sales potentially growing about 50% as mass production applications expand, magnetic collet sales growing about 54%, and pogo pin sales growing about 25% on expanded global probe-card customers. However, these are figures from a specific external institution; notably, the company's own guidance set in early 2025 for revenue of KRW 120bn and operating profit of KRW 24.6bn was not met, with actual results coming in at KRW 94.3bn revenue and KRW 11bn operating profit. OKins Electronics participated in SEMICON Taiwan 2026, held September 2-4 in Taiwan, showcasing its burn-in socket, test socket, and precision connector lineup for next-generation semiconductor inspection. The company has explained its 2025 improvement as a result of expanding high-value-added product mix and restructuring its business portfolio, and stated it intends to accelerate portfolio upgrades and company-wide strategic realignment in 2026."
+  "ko": "회사는 2026년 8월 상반기 실적 공시에서 하반기에도 고객사의 수요와 수주 흐름이 연간 사업계획에 부합하는 수준으로 진행되고 있다고 밝혔다. 번인소켓과 커넥터 공급 확대에 더해 프로브핀, 차세대 반도체 관련 부품, 차세대 메모리 인터페이스 제품의 매출 비중이 점진적으로 늘어날 것으로 기대했다. 회사는 2026년 초 사업 포트폴리오 고도화와 전사 전략 재정렬을 목표로 제시했다. 증권가에서는 2026년 2월 리포트에서 2026년 매출 1,405억원, 영업이익 207억원을 전망했다. 한국IR협의회와 유안타증권이 같은 수준의 전망을 낸 것으로 보도됐다. 이 전망과 2026년 1분기부터 3분기까지의 공시 매출(256억원, 351억원, 379억원)을 비교하면, 2026년 연간 매출이 전망치에 닿으려면 4분기 매출이 상당 폭 늘어야 하는 구조다. 4분기 영업이익은 3분기보다 얼마나 회복되는지가 연간 영업이익 전망의 핵심 변수다. 회사 쪽 설명은 고객사 생산 증가와 신규 제품의 양산 전환에 기대고 있어, 고객사 발주 일정과 양산 전환 시점이 전망의 실현 여부를 가를 것으로 보인다. 다음 공시 기준으로는 2026년 연간 잠정실적과 2026 사업보고서에서 연간 수주·매출 구성이 구체적인 수치로 확인될 것이다.",
+  "en": "In its first-half 2026 results disclosure in August 2026, the company said demand and order flow from customers in the second half are proceeding at a level consistent with its annual business plan. Beyond expanding burn-in socket and connector supply, it expects the revenue share of probe pins, next-generation semiconductor parts and next-generation memory interface products to rise gradually. Earlier in 2026, it set a goal of upgrading its business portfolio and realigning its company-wide strategy. In a February 2026 report, securities research cited forecasts of KRW 140.5 billion in 2026 revenue and KRW 20.7 billion in operating profit, and the press reported similar forecasts from Korea IR Council and Yuanta Securities. Compared with the disclosed revenue of KRW 25.6 billion, KRW 35.1 billion and KRW 37.9 billion for the first three quarters of 2026, reaching the forecast would require a substantial increase in fourth-quarter revenue. How much fourth-quarter operating profit recovers from the third quarter is therefore the key variable for full-year profit. The company's outlook rests on customers' production increases and the shift of new products into mass production, so the timing of customer orders and mass-production transitions will determine whether the outlook is realized. The next concrete data points will be the full-year 2026 provisional results and the 2026 annual report, which should show annual revenue and profit mix in numbers."
  },
  "valuation_comment": {
-  "ko": "오킨스전자는 2024년 순손실에서 2025년 순이익으로 전환한 뒤 2026년 상반기까지 이익 개선 흐름이 이어지고 있으며, 시장의 관심은 이러한 개선세가 얼마나 지속될지에 맞춰져 있다. 최근 분기 실적이 빠르게 개선되면서 주가는 과거 수년간의 거래 밴드 상단부에서 형성되는 모습을 보이고 있고, 순자산 대비로도 상당한 프리미엄을 받는 구간에 있다. 회사는 배당을 지급하지 않고 있어 배당 매력보다는 이익 개선과 사업 확장에 따른 재평가 여부가 투자자들의 주된 관심사로 보인다. 유안타증권과 한국IR협의회 등 일부 기관은 소켓 부문의 가격·물량 동시 개선 가능성에 주목하면서도 구체적인 목표주가나 투자의견은 제시하지 않았다. 밸류에이션 판단은 향후 몇 개 분기 실적이 2026년 2분기 수준의 이익률을 유지할 수 있는지에 따라 크게 갈릴 수 있는 구간으로 보인다.",
-  "en": "OKins Electronics moved from a net loss in 2024 to a net profit in 2025, and this earnings improvement has continued through the first half of 2026, with market attention focused on how sustainable this trend proves to be. As recent quarterly results have improved rapidly, the share price has been trading near the upper end of its multi-year historical range and commands a notable premium relative to net asset value. The company does not pay dividends, so investor focus appears centered less on dividend appeal and more on whether the earnings improvement and business expansion warrant a re-rating. Institutions such as Yuanta Securities and the Korea IR Service, while noting the potential for simultaneous price and volume improvement in the socket segment, have not issued specific target prices or investment ratings. Valuation judgments going forward may hinge heavily on whether the margin levels seen in Q2 2026 can be sustained over the coming quarters."
+  "ko": "이 종목의 배수 해석은 이익 기반의 변화를 먼저 봐야 한다. 2024년에는 지배주주 순손실로 이익 기반 배수가 의미를 가지기 어려웠고, 2025년 흑자 전환 이후 최근 네 개 분기 지배주주 순이익 합계 213억원을 기준으로 배수를 읽을 수 있게 됐다. 과거 연말 기준 주가순자산비율은 2021년과 2022년 8배 이상이었다가 2023년 3배대, 2024년 2배대로 낮아진 흐름이다. 현재 배수는 2021~2022년 연말 수준보다는 낮고 2023년 이후 연말 수준보다는 높은 구간에 있어, 과거 밴드 안에서 순자산 대비 프리미엄이 큰 쪽에 위치한다. 시가총액이 자본총계를 크게 웃도는 구조라는 점도 같은 맥락이다. 배당수익률은 업종 평균을 밑도는 편이다. 분기 이익 변동이 커서 배수는 분기마다 다르게 보일 수 있으므로, 배수 해석은 연간 이익이 얼마나 유지되는지와 함께 봐야 한다.",
+  "en": "Reading the multiples starts with the change in earnings. In 2024, the net loss attributable to controlling shareholders made earnings-based multiples hard to interpret, while after the return to profit in 2025, the four-quarter total of KRW 21.3 billion from the fourth quarter of 2025 to the third quarter of 2026 provides a base for reading them. Year-end price-to-book ratios were above 8 times in 2021 and 2022, fell to the low threes in 2023 and the low twos in 2024. The current multiple sits below the year-end levels of 2021 and 2022 but above those of 2023 and 2024, placing it toward the higher end of the premium to net assets within this historical range. Market capitalization also sits well above total equity at the end of 2025, consistent with that reading. The dividend yield is below the industry average. Because quarterly earnings swing considerably, the multiple can look different from quarter to quarter, so it should be read together with whether full-year profit is sustained."
  },
  "bull": [
   {
    "title": {
-    "ko": "HBM·CLT 전환의 직접 수혜",
-    "en": "Direct Beneficiary of HBM and CLT Transition"
+    "ko": "2025년 흑자 전환 뒤 매출 증가 지속",
+    "en": "Revenue growth continues after the 2025 return to profit"
    },
    "body": {
-    "ko": "글로벌 메모리 3사 모두에 HBM용 마그네틱 콜렛을 공급하고 있으며, 삼성전자 벤더 다변화 경쟁에서 6개 업체 중 단독 승인을 받아 사실상 솔벤더 지위를 확보했다. 주요 고객사의 CLT 장비 전환에 따른 번인·테스트 소켓 수요 확대도 실적에 반영되기 시작했다. 2026년 2분기 영업이익률이 23.9%까지 뛴 것은 이러한 고부가 제품 비중 확대가 실제 수익성으로 연결되고 있음을 보여준다.",
-    "en": "The company supplies HBM magnetic collets to all three global memory makers and secured sole-vendor status at Samsung Electronics after being the only approved supplier among six competitors. Demand growth for burn-in and test sockets tied to key customers' CLT equipment transition has also started showing up in results. The jump in Q2 2026 operating margin to 23.9% suggests this high-value product mix shift is translating into real profitability."
+    "ko": "2024년 지배주주 순손실 54.2억원에서 2025년 지배주주 순이익 77.4억원으로 돌아섰다. 매출은 2025년 4분기부터 2026년 3분기까지 4개 분기 연속 늘었고, 3분기 매출 379억원은 전년 동기 대비 62.7% 증가했다. 영업이익률도 2022~2024년 0.7~4.1% 구간에서 2025년 11.7%로 올라섰다. 외형 성장과 수익성 개선이 함께 나타난 점이 강세 근거로 꼽힌다.",
+    "en": "Net profit attributable to controlling shareholders moved from a net loss of KRW 5.42 billion in 2024 to a profit of KRW 7.74 billion in 2025. Revenue has risen for four straight quarters through the third quarter of 2026, and third-quarter revenue of KRW 37.9 billion was up 62.7% year on year. Operating margin moved from a range of 0.7% to 4.1% in 2022 to 2024 to 11.7% in 2025. Growth in sales and improved profitability together form the core of the bull case."
    }
   },
   {
    "title": {
-    "ko": "적자에서 흑자로, 재무구조 개선",
-    "en": "Loss-to-Profit Turnaround with Improving Balance Sheet"
+    "ko": "고부가 메모리 테스트 수요 확대",
+    "en": "Higher-value memory testing demand"
    },
    "body": {
-    "ko": "2024년 순손실에서 2025년 순이익으로 전환했고, 부채비율은 2024년 215.7%에서 2025년 88.8%로 크게 낮아졌다. 영업활동현금흐름도 2022년 76억원에서 2025년 169억원으로 꾸준히 늘어 손익 개선이 현금창출력으로 이어지고 있다. 2026년 들어서도 분기별 순이익이 안정적으로 유지되며 재무 건전성 개선이 이어지고 있다.",
-    "en": "The company swung from a net loss in 2024 to a net profit in 2025, while its debt ratio fell sharply from 215.7% in 2024 to 88.8% in 2025. Operating cash flow also grew steadily from KRW 7.6bn in 2022 to KRW 16.9bn in 2025, showing the earnings improvement is converting into cash generation. Quarterly net income has remained stable through 2026, continuing the trend of improving financial health."
+    "ko": "HBM과 SOCAMM 수요 증가로 메모리 소켓과 포고핀 매출이 성장 구간에 들어갔다는 분석이 2026년 2월 한국IR협의회 보고서에서 나왔다. 고부가 메모리일수록 테스트 난도가 높아 소켓과 프로브 부품의 단가와 교체 수요가 함께 오른다는 설명이다. 회사는 2025년 12월 HBM용 콜렛 공급으로 메모리 3사 모두에 납품하게 됐다고 밝혔다. 이 구조가 연간 실적에 얼마나 반영되는지가 다음 확인 지점이다.",
+    "en": "A February 2026 Korea IR Council report said memory sockets and pogo pin sales have entered a growth phase on HBM and SOCAMM demand. Higher-spec memory raises test difficulty, which the report linked to higher unit prices and replacement demand for socket and probe parts. In December 2025 the company said HBM collet supply brought deliveries to all three major memory makers. How much of this structure shows up in full-year results is the next thing to confirm."
    }
   },
   {
    "title": {
-    "ko": "제품 다변화로 밸류체인 확장",
-    "en": "Value Chain Expansion Through Product Diversification"
+    "ko": "제품군 확장과 신규 양산 전환",
+    "en": "Product expansion and new mass production"
    },
    "body": {
-    "ko": "번인·테스트 소켓 중심에서 포고핀, 마그네틱 콜렛, 스프링핀, 배터리 커넥터 등으로 제품군을 확장하며 단일 제품 의존도를 낮추고 있다. 스프링핀은 삼성전자와 SK하이닉스의 승인을 받아 양산에 들어갔고, 글로벌 프로브카드 고객사 확대도 추진 중이다. 소켓부터 프로브, 콜렛, 테스트 용역까지 이어지는 수직적 밸류체인을 갖춘 점은 산업 성장의 수혜를 폭넓게 흡수할 수 있는 구조로 평가된다.",
-    "en": "The company has expanded beyond its core burn-in and test sockets into pogo pins, magnetic collets, spring pins, and battery connectors, reducing reliance on any single product. Spring pins have received approval from Samsung Electronics and SK hynix and entered mass production, while the company is also pursuing expansion of its global probe-card customer base. Its vertical value chain spanning sockets, probes, collets, and test services is viewed as a structure that can broadly capture the benefits of industry growth."
+    "ko": "회사는 2026년 상반기 실적에서 기존 개발 제품이 고객 평가를 거쳐 양산 단계로 넘어가며 신규 매출이 반영됐다고 설명했다. 프로브핀, 차세대 반도체 관련 부품, 차세대 메모리 인터페이스 제품의 매출 비중도 점진적으로 늘어날 것으로 기대했다. DDR5 서버용 메모리 테스트 솔루션과 차세대 메모리 모듈용 테스트 제품 양산을 준비하고 있다. 반도체 외 영역에서는 현대기아차 커넥터 SQ 인증을 취득했다.",
+    "en": "In its first-half 2026 results, the company said newly developed products moved into mass production after customer qualification and began contributing new sales. It expects the share of probe pins, next-generation semiconductor parts and next-generation memory interface products to rise gradually. It is also preparing mass production of memory test solutions for DDR5 server DRAM and test products for next-generation memory modules. Outside semiconductors, it has obtained Hyundai Kia connector SQ certification."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "가이던스 미달 전례",
-    "en": "History of Missing Company Guidance"
+    "ko": "고객·지역 집중 구조",
+    "en": "Concentration in customers and region"
    },
    "body": {
-    "ko": "회사가 2025년 초 제시했던 매출 1,200억원, 영업이익 246억원의 목표는 실제 매출 943억원, 영업이익 110억원에 그쳐 목표치에 미달했다. 2026년에도 외부 기관이 제시한 매출 1,405억원, 영업이익 207억원 전망이 실제로 달성될지는 아직 확인되지 않은 상태다. 과거 목표와 실제 실적 간 격차를 감안하면 향후 가이던스에 대한 신중한 검증이 필요하다.",
-    "en": "The company's own guidance set in early 2025 for revenue of KRW 120bn and operating profit of KRW 24.6bn was not met, with actual results coming in at KRW 94.3bn revenue and KRW 11bn operating profit. It remains unconfirmed whether the 2026 revenue forecast of KRW 140.5bn and operating profit forecast of KRW 20.7bn issued by an external institution will actually be achieved. Given the past gap between targets and actual results, future guidance likely warrants careful scrutiny."
+    "ko": "삼성전자와 중국 CXMT가 주요 매출처로 알려져 있어 고객사 설비 투자에 실적이 크게 연동된다. 중국향 매출 비중이 높아졌다는 설명도 있어 미·중 간 규제나 수출 통제의 변화가 영향을 줄 수 있다. 고객 구성이 메모리 업체에 집중돼 있어 한 고객의 발주 조정이 분기 매출을 흔들 수 있다. 고객 다변화 속도가 약세 논리의 핵심 확인 지점이다.",
+    "en": "Samsung Electronics and CXMT are reported as major customers, so results are closely tied to these customers' capital spending. Because China-related sales share has risen, changes in US-China regulation or export controls could have an effect. With its customer base concentrated among memory makers, an order adjustment by a single customer could move quarterly revenue. The pace of customer diversification is the main checkpoint for the bear case."
    }
   },
   {
    "title": {
-    "ko": "분기별 실적 변동성",
-    "en": "Quarter-to-Quarter Earnings Volatility"
+    "ko": "분기 이익 변동성",
+    "en": "Quarterly profit volatility"
    },
    "body": {
-    "ko": "2025년 3분기에는 영업이익이 전분기보다 늘었음에도 지배주주 순이익이 3억 7,100만원에 그쳐 영업이익과 순이익 간 괴리가 컸다. 2026년 2분기에 실적이 크게 뛰었지만 이러한 분기별 등락 패턴을 감안하면 다음 분기에도 유사한 수준이 이어질지는 불확실하다. 소모성 부품 특성상 고객사의 장비 도입·가동 시점에 따라 매출 인식 시점이 분기별로 크게 엇갈릴 수 있다.",
-    "en": "In Q3 2025, despite operating profit rising quarter-on-quarter, owners' net income was only KRW 0.37bn, a notable gap versus operating profit. While results surged in Q2 2026, given this pattern of quarterly swings it remains uncertain whether a similar level can be sustained in coming quarters. Given the consumable-parts nature of the business, revenue recognition timing can vary significantly by quarter depending on when customers adopt and ramp up equipment."
+    "ko": "2025년 4분기 영업이익은 25.5억원으로 전 분기보다 30.9% 줄었고, 2026년 3분기 영업이익 71.6억원도 전 분기 대비 14.7% 감소했다. 매출이 늘어도 영업이익이 같은 흐름으로 늘지 않은 분기가 있었다는 뜻이다. 2023년 영업이익이 3.7억원까지 떨어졌던 이력이 있어, 이익 회복이 몇 년 이어졌는지에 대한 시계열은 아직 짧다. 3분기 지배주주 순이익 51억원은 2분기 86.9억원보다 낮다.",
+    "en": "Operating profit fell 30.9% to KRW 2.55 billion in the fourth quarter of 2025, and the third-quarter 2026 figure of KRW 7.16 billion was down 14.7% from the prior quarter. In some quarters, profit did not move in step with rising revenue. Operating profit fell to KRW 374 million in 2023, so the record of sustained profit recovery is still short. Net profit attributable to controlling shareholders was KRW 5.1 billion in the third quarter, below KRW 8.69 billion in the second quarter."
    }
   },
   {
    "title": {
-    "ko": "높은 고객·산업 집중도",
-    "en": "High Customer and Industry Concentration"
+    "ko": "주가 변동성과 배수 부담",
+    "en": "Share price volatility and multiple burden"
    },
    "body": {
-    "ko": "매출의 상당 부분이 삼성전자, SK하이닉스 등 소수의 메모리 대형 고객사에 집중돼 있어 이들의 설비투자·장비 전환 속도에 실적이 크게 좌우된다. 반도체 후공정 소모성 부품 시장 자체도 메모리 반도체 사이클과 밀접하게 연동돼 움직인다. 특정 고객사의 CLT 전환 지연이나 투자 축소가 발생하면 실적 개선 흐름이 둔화될 수 있다.",
-    "en": "A significant portion of revenue is concentrated among a small number of large memory customers such as Samsung Electronics and SK hynix, making results highly dependent on the pace of their capex and equipment transitions. The back-end consumable parts market itself is closely tied to the memory semiconductor cycle. A delay in a specific customer's CLT transition or a pullback in investment could slow the earnings improvement trend."
+    "ko": "2026년 8월 상반기 실적 공시 이후 하루 주가가 16%를 넘게 오르는 등 공시에 따른 등락 폭이 컸다. 주가순자산비율은 2023~2024년 연말 수준을 웃도는 구간이고, 시가총액은 자본총계를 크게 넘는다. 배당수익률은 업종 평균을 밑도는 편이다. 실적 전환기가 짧은 만큼 배수 수준이 이익 유지 여부에 민감하게 반응할 수 있다.",
+    "en": "After the first-half 2026 results disclosure in August 2026, the share price moved sharply, rising more than 16% in one day. The price-to-book ratio is above year-end levels of 2023 and 2024, and market capitalization is well above total equity. The dividend yield is below the industry average. Because the turnaround is recent, the multiple may react sharply to whether profit is sustained."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중 리스크",
-    "en": "Customer Concentration Risk"
+    "ko": "설비 투자 사이클과 장비 전환 일정",
+    "en": "Capex cycle and equipment conversion timing"
    },
    "body": {
-    "ko": "주요 매출이 삼성전자, SK하이닉스 등 소수 대형 반도체 제조사에 편중돼 있어 특정 고객사의 발주 축소나 장비 전환 일정 변경이 실적에 직접적인 영향을 줄 수 있다. 중국 CXMT 등 해외 고객 비중이 늘고 있지만 여전히 국내 대형 고객사에 대한 의존도가 높은 구조다.",
-    "en": "Major revenue is concentrated among a small number of large chipmakers such as Samsung Electronics and SK hynix, meaning order cuts or schedule changes at a specific customer could directly affect results. While overseas customers such as China's CXMT are growing in share, the company remains heavily dependent on large domestic customers."
+    "ko": "번인 소켓 발주는 고객사의 장비 전환 일정에 따라 좌우된다. 주요 고객사의 CLT 장비 전환이 예정보다 늦어지면 메모리 소켓 매출의 시점이 밀릴 수 있다. 메모리 투자가 확대되는 국면이라도 고객사별 설비 투자 속도는 다르다. 분기 실적에서 매출 증가가 끊기는 구간이 생기는지 살펴볼 필요가 있다.",
+    "en": "Burn-in socket orders depend on customers' equipment conversion schedules. If major customers' move to CLT equipment is delayed, memory socket sales could shift in timing. Even while memory investment expands, spending pace differs across customers. Whether quarterly revenue growth stalls at any point is worth monitoring."
    }
   },
   {
-   "cat": {
-    "ko": "실적 변동성 및 가이던스 신뢰도",
-    "en": "Earnings Volatility and Guidance Reliability"
-   },
    "body": {
-    "ko": "분기별 영업이익과 순이익 간 괴리, 그리고 2025년 초 제시한 목표치와 실제 실적 간 격차는 실적 추정의 불확실성을 보여준다. 2026년 전망치 역시 외부 기관의 추정에 기반한 것으로, 실제 달성 여부는 향후 분기 공시를 통해 확인이 필요하다.",
-    "en": "The gap between quarterly operating profit and net income, along with the divergence between the early-2025 guidance and actual results, illustrates the uncertainty inherent in earnings estimates. The 2026 outlook is also based on external institutional estimates, and actual achievement needs to be confirmed through future quarterly disclosures."
+    "ko": "신규 재질 개발과 내열성 연구의 성과가 차세대 하이브리드 본딩 대응의 관건이다. 테스트 난도가 높아질수록 소켓과 프로브 부품의 사양 요구도 함께 높아진다. 개발이 제때 양산 단계로 넘어가지 못하면 경쟁사 대비 제품 세대 전환에서 밀릴 수 있다. 신제품의 고객 인증 기간이 매출 반영 시점을 결정한다.",
+    "en": "The outcome of new-material development and heat-resistance research is key to responding to next-generation hybrid bonding. As test difficulty rises, spec requirements for sockets and probe parts rise as well. If development does not move into mass production on time, the company could fall behind peers in product generation changes. Customer qualification periods for new products determine when sales are recognized."
+   },
+   "cat": {
+    "ko": "차세대 기술 대응",
+    "en": "Next-generation technology response"
    }
   },
   {
-   "cat": {
-    "ko": "산업 사이클 리스크",
-    "en": "Industry Cycle Risk"
-   },
    "body": {
-    "ko": "반도체 후공정 소모성 부품 수요는 메모리 반도체 사이클과 밀접하게 연동돼 움직이는 만큼, AI·서버 투자 확대가 예상보다 둔화되거나 메모리 업황이 재차 하강할 경우 소켓·콜렛 등 제품군의 수요도 함께 위축될 수 있다. 과거 2023년처럼 영업이익률이 1% 미만으로 급락했던 전례가 있어 업황 변화에 따른 마진 민감도가 높은 편이다.",
-    "en": "Since demand for back-end consumable parts is closely tied to the memory semiconductor cycle, a slowdown in AI and server capex growth beyond expectations, or a renewed downturn in the memory market, could weigh on demand for sockets, collets, and related product lines. There is a precedent from 2023 when operating margin fell below 1%, indicating margin sensitivity is relatively high to industry conditions."
+    "ko": "부채비율은 2024년 215.7%에서 2025년 88.8%로 낮아졌지만, 2025년 말 부채총계는 450억원이다. 영업활동 현금흐름은 2025년 169억원으로 늘었으나 운전자본과 설비 수요에 따라 연도별로 달라질 수 있다. 회사가 신규 설비와 연구개발에 자금을 쓰면 현금흐름과 재무 여력에 영향을 준다. 2026 사업보고서에서 부채와 현금흐름의 연간 추이를 함께 확인해야 한다.",
+    "en": "The debt ratio fell from 215.7% in 2024 to 88.8% in 2025, but total liabilities were still KRW 45 billion at the end of 2025. Operating cash flow rose to KRW 16.9 billion in 2025, but it can swing with working capital and equipment needs. If the company directs funds to new equipment and research, cash flow and financial flexibility will be affected. The annual trends in debt and cash flow should be checked together in the 2026 annual report."
+   },
+   "cat": {
+    "ko": "재무구조와 현금흐름 변동",
+    "en": "Balance sheet and cash flow variability"
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중순",
-    "en": "Mid-November 2026"
+    "ko": "2027년 2월 초 전후",
+    "en": "Early February 2027 (estimated)"
    },
    "what": {
-    "ko": "2026년 3분기 실적 공시 예정 시점으로, 2분기의 영업이익률 급등(23.9%)이 다음 분기에도 유지되는지, CLT향 매출이 실제로 반영되는 규모를 확인해야 한다.",
-    "en": "Q3 2026 earnings are expected to be disclosed around this time; check whether the sharp Q2 operating margin jump (23.9%) is sustained and how much CLT-related revenue is actually reflected."
+    "ko": "2026년 연간 잠정실적 발표. 직전 해 잠정실적은 2026년 2월 9일 공시됐다. 2026년 매출이 2026년 2월 증권가 전망치 1,405억원에 어느 수준까지 닿았는지, 4분기 영업이익이 3분기 수준을 유지하는지 확인한다.",
+    "en": "Full-year 2026 provisional results. The prior year's provisional results were disclosed on February 9, 2026. Check how close 2026 revenue came to the KRW 140.5 billion forecast made in February 2026, and whether fourth-quarter operating profit held near the third-quarter level."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기 중",
-    "en": "Q4 2026"
+    "ko": "2027년 3월 31일까지",
+    "en": "By March 31, 2027"
    },
    "what": {
-    "ko": "마그네틱 콜렛 관련 추가 공급계약이나 증설 관련 공시가 나오는지 점검할 필요가 있다. HBM 3사 공급이 실제 물량 증가로 이어지는지가 핵심이다.",
-    "en": "Watch for any disclosures on additional magnetic collet supply contracts or capacity expansion; the key question is whether HBM supply to all three memory makers translates into actual volume growth."
+    "ko": "2026 사업보고서 제출. 연간 영업이익률(2025년 11.7%)과 부채비율(2025년 88.8%), 영업활동 현금흐름의 연간 추이를 확인한다. 고객별 매출 구성 공시 내용도 함께 본다.",
+    "en": "Submission of the 2026 annual report. Check annual operating margin (11.7% in 2025), the debt ratio (88.8% in 2025) and the annual trend in operating cash flow, along with any disclosure of customer-level sales mix."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기~2027년 초",
-    "en": "H2 2026 to early 2027"
+    "ko": "2027년 5월 중순 전후",
+    "en": "Mid-May 2027 (estimated)"
    },
    "what": {
-    "ko": "2025년 7월 제정된 LPDDR6 표준의 실제 상용화 시점과 이에 따른 번인 소켓 신규 수주 여부를 확인해야 한다.",
-    "en": "Confirm the actual commercialization timing of the LPDDR6 standard set in July 2025 and whether it generates new burn-in socket orders."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 초",
-    "en": "Early 2027"
-   },
-   "what": {
-    "ko": "2026년 연간 실적 공시 시점으로, 외부 기관이 제시한 매출 1,405억원·영업이익 207억원 전망 대비 실제 달성 여부와 2025년 초 목표치 미달 전례가 재현되는지를 비교 확인해야 한다.",
-    "en": "Full-year 2026 results are expected to be disclosed around this time; compare actual results against the external forecast of KRW 140.5bn revenue and KRW 20.7bn operating profit, and check whether the pattern of missing early guidance (as seen in 2025) repeats."
-   }
-  },
-  {
-   "when": {
-    "ko": "차기 IR·컨퍼런스콜 시점",
-    "en": "Next IR event or conference call"
-   },
-   "what": {
-    "ko": "MEK 외 글로벌 프로브카드 고객사(KI, 테크노프로브 등)로의 포고핀 납품 개시 여부와 신규 고객 확대 진행 상황을 확인해야 한다.",
-    "en": "Check whether pogo pin shipments to global probe-card customers beyond MEK (such as KI and Technoprobe) have begun, and monitor progress on new customer expansion."
+    "ko": "2027년 1분기 실적 발표. 2026년 1분기 실적은 2026년 5월 중순에 공시됐다. 고부가 제품 비중과 고객사 CLT 장비 전환이 분기 매출과 영업이익률에 반영되는지 확인한다.",
+    "en": "First-quarter 2027 results. The first-quarter 2026 results were disclosed in mid-May 2026. Check whether the higher-value product mix and customers' CLT equipment conversion show up in quarterly revenue and operating margin."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "오킨스전자는 2024년 순손실에서 2025년 흑자 전환에 이어 2026년 상반기까지 영업이익률 개선이 이어지며, 특히 2분기에는 분기 기준 최대 실적을 기록했다. HBM용 마그네틱 콜렛의 글로벌 메모리 3사 전면 공급, 삼성전자 CLT 장비 전환에 따른 소켓 수요 확대, 스프링핀 등 신제품 양산 개시가 이러한 개선의 배경으로 지목된다. 다만 분기별 영업이익과 순이익 간 괴리, 2025년 초 제시했던 매출·이익 목표를 실제로는 밑돌았던 전례는 실적 추정에 대한 신중한 접근이 필요함을 보여준다. 부채비율이 크게 낮아지고 영업활동현금흐름도 꾸준히 늘어나는 점은 재무구조 측면에서 긍정적 신호로 볼 수 있다. 반도체 후공정 소모성 부품 시장 자체가 메모리 사이클에 밀접하게 연동돼 있어, 향후 AI·서버 투자 흐름과 고객사의 장비 전환 속도가 실적의 방향을 좌우할 핵심 변수로 남아 있다. 다가오는 3분기 실적 공시와 2026년 연간 목표 달성 여부가 최근의 개선 흐름이 구조적인 것인지 판단하는 데 중요한 기준이 될 것으로 보인다.",
-   "en": "OKins Electronics turned from a net loss in 2024 to a profit in 2025, with operating margin improvements continuing through the first half of 2026, highlighted by its strongest-ever quarter in Q2. This improvement has been attributed to full supply of HBM magnetic collets to all three global memory makers, expanded socket demand from Samsung Electronics' CLT equipment transition, and the start of mass production of new products such as spring pins. However, the gap between quarterly operating profit and net income, along with the precedent of falling short of the revenue and profit targets set in early 2025, suggests a cautious approach to earnings estimates is warranted. The sharp decline in the debt ratio and steady growth in operating cash flow can be viewed as positive signals for the balance sheet. Because the back-end consumable parts market itself is closely tied to the memory cycle, future AI and server capex trends and the pace of customers' equipment transitions remain key variables determining the direction of results. The upcoming Q3 earnings disclosure and whether the 2026 full-year targets are met will likely serve as important benchmarks for judging whether the recent improvement trend is structural."
+   "ko": "오킨스전자는 2024년 지배주주 순손실에서 2025년 흑자 전환으로 이익 구조가 바뀌었고, 2026년 3분기까지 매출이 4개 분기 연속 늘었다. 2025년 영업이익률은 11.7%로 2022~2024년보다 높아졌고, 부채비율도 88.8%로 낮아졌다. 반면 분기 영업이익은 2025년 4분기와 2026년 3분기에 전 분기보다 줄어 분기별 변동성이 남아 있다. 고객은 삼성전자와 중국 CXMT 등 메모리 업체에 집중돼 있고, 고객사 장비 전환 일정에 따라 매출 시점이 바뀔 수 있다. 증권가는 2026년 2월 매출 1,405억원 전망을 제시했으며, 2026년 연간 실적이 이 전망에 어떻게 맞춰지는지가 가장 직접적인 확인 지점이다. 밸류에이션은 이익 기반 배수가 의미를 갖게 된 2025년 이후의 이익 유지 여부와 함께 읽어야 한다. 다음 확인 지점은 2027년 2월 초 전후의 2026년 연간 잠정실적, 2027년 3월 31일까지 제출되는 2026 사업보고서, 2027년 5월 중순 전후의 1분기 실적이다.",
+   "en": "OKins Electronics changed its earnings profile when it moved from a net loss attributable to controlling shareholders in 2024 to a profit in 2025, and its revenue has risen for four straight quarters through the third quarter of 2026. Operating margin rose to 11.7% in 2025 from the 0.7% to 4.1% range of 2022 to 2024, and the debt ratio fell to 88.8%. Quarterly operating profit fell in the fourth quarter of 2025 and the third quarter of 2026, so quarterly volatility remains. Customers are concentrated among memory makers including Samsung Electronics and CXMT, and sales timing can shift with customers' equipment conversion schedules. A February 2026 securities forecast put 2026 revenue at KRW 140.5 billion, and whether full-year 2026 results match that forecast is the most direct checkpoint. Valuation should be read together with whether profit is sustained after the return to profitability in 2025. The next checkpoints are the 2026 full-year provisional results expected in early February 2027, the 2026 annual report due by March 31, 2027, and the first-quarter 2027 results expected in mid-May 2027."
   }
  },
  "sources": [
-  "https://m.thinkpool.com/compDiscuss/cont/1024744",
-  "https://okins.co.kr/business01/",
   "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=080580",
+  "https://www.etnews.com/20260814000200",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A080580",
+  "https://supple.kr/news/cmssi4nx9003zctamli8ptbw8",
+  "https://www.mt.co.kr/stock/2026/05/18/2026051808124347802",
+  "https://www.mt.co.kr/stock/2026/02/09/2026020914002473966",
+  "https://www.thelec.kr/news/articleView.html?idxno=34173",
   "https://www.pinpointnews.co.kr/news/articleView.html?idxno=431050",
+  "http://www.dailyinvest.kr/news/articleView.html?idxno=70133",
   "https://m.thinkpool.com/compDiscuss/cont/1023934",
-  "https://www.mt.co.kr/stock/2026/08/25/2026082509101272617",
-  "https://thevc.kr/okinselectronics/products",
-  "https://thevc.kr/okinselectronics",
-  "https://www.etnews.com/20251017000060",
-  "https://www.investing.com/equities/okins-electronics-co-ltd-earnings",
-  "https://okins.co.kr/news/?mod=document&uid=149",
-  "https://alphasquare.co.kr/home/stock-summary?code=080580",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=XmP1PqONhiIyPTPt",
+  "https://m.etnews.com/20260814000200",
   "https://www.investing.com/equities/okins-electronics-co-ltd",
-  "https://okins.co.kr/finance/",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Finance.asp?pGB=1&gicode=A080580&cID=&MenuYn=Y&ReportGB=&NewMenuID=103&stkGb=701",
-  "https://littlebproject.com/stock/080580",
-  "https://littlebproject.com/stock/080580/56/61105"
+  "https://www.investing.com/equities/okins-electronics-co-ltd-earnings",
+  "https://www.mt.co.kr/stock/2026/08/14/2026081414061580840",
+  "https://www.job-post.co.kr/news/articleView.html?idxno=234851"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "080580",
  "name": "오킨스전자",
  "name_en": "OKins Electronics Co.,Ltd.",
@@ -233,11 +210,11 @@
   "반도체"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 05:29",
- "dataDate": "20260904",
+ "reportDate": "2026-11-16",
+ "reportTs": "2026-11-16 17:17",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-09-04",
+  "asOf": "2026-11-16",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -307,12 +284,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 27081629679,
-    "op": 3187052822,
-    "np_owner": 2920661158
-   },
-   {
     "q": "2025Q3",
     "rev": 23316786598,
     "op": 3694159253,
@@ -335,29 +306,36 @@
     "rev": 35083034144,
     "op": 8394249822,
     "np_owner": 8691773236
+   },
+   {
+    "q": "2026Q3",
+    "rev": 37925964319,
+    "op": 7157973491,
+    "np_owner": 5098242507
    }
   ],
   "valuation": {
-   "price": 19340,
-   "mcap": 0.4079,
+   "price": 24950,
+   "mcap": 0.5262,
    "shares": 21090955,
-   "total_shares": 20581176,
-   "wavg_shares": 20682546,
-   "per": 23.672,
-   "eps": 817,
-   "pbr": 5.5671,
-   "bps": 3474,
-   "roe_ttm": 30.4,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": 16553073019,
+   "total_shares": 21090955,
+   "wavg_shares": 20817639,
+   "per": 23.944,
+   "eps": 1042,
+   "pbr": 6.7799,
+   "bps": 3680,
+   "roe_ttm": 35.7,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": 21280454736,
    "ccy": "KRW",
    "bps_src": "자체",
    "eps_src": "공시",
-   "pbr_krx": 7.72,
+   "pbr_krx": 9.96,
    "bps_krx": 2506.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
    "div": 0.0
   }
- }
+ },
+ "textRules": 2
 }
