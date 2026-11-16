@@ -284,6 +284,29 @@ const cfgOf = (w) => { const c = (w.dataLayer || []).find((a) => a && a[0] === "
      "https://kosai.kr/stock.html?ticker=0220W0&utm_source=naver");
 }
 {
+  // '.html' 을 뺀 주소(/stock/001680) — 호스팅이 같은 페이지를 연다. 2026-11-16 전에는 따로 된 페이지로 잡히고
+  // 리포트 열람에도 들지 않았다.
+  const store = {};
+  const { w, events } = open("https://kosai.kr/stock/001680", { store });
+  const rv = events.filter((e) => e.name === "report_view");
+  eq("확장자 없는 주소 — 리포트를 열면 한 번 뜬다", rv.length, 1);
+  eq("확장자 없는 주소 — 어느 종목인지 실린다", rv[0] && rv[0].params.ticker, "001680");
+  eq("확장자 없는 주소 — 페이지 이름은 옛 덩어리 그대로", rv[0] && rv[0].params.from_page, "/stock.html");
+  eq("확장자 없는 주소 — 통계에 싣는 주소는 옛 주소 모양", cfgOf(w) && cfgOf(w).page_location,
+     "https://kosai.kr/stock.html?ticker=001680");
+  eq("확장자 없는 주소 — 본 리포트 수도 센다", store.kosai_reports_seen, "1");
+}
+{
+  const { w } = open("https://kosai.kr/en/stock/005930?utm_source=x");
+  eq("확장자 없는 영어 주소 — lang=en · 꼬리표", cfgOf(w) && cfgOf(w).page_location,
+     "https://kosai.kr/stock.html?ticker=005930&lang=en&utm_source=x");
+}
+for (const u of ["https://kosai.kr/stock/assets/stock.js", "https://kosai.kr/stock/00593", "https://kosai.kr/stock/005930.htm"]) {
+  const { w, events } = open(u);
+  eq(`종목 페이지가 아닌 주소는 바꾸지 않는다(${u.slice(17)})`,
+     [cfgOf(w) && "page_location" in cfgOf(w), events.filter((e) => e.name === "report_view").length], [false, 0]);
+}
+{
   // 영어 종목 페이지(/en/stock/) — 같은 덩어리로 싣고 &lang=en 을 붙인다(옛 영어 화면 stock.html?ticker=…&lang=en 과 같은 모양)
   const store = {};
   const { w, events } = open("https://kosai.kr/en/stock/005930.html?utm_source=x", { store });
