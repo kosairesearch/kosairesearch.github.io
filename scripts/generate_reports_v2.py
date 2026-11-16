@@ -2047,6 +2047,28 @@ _LABEL_ALIAS = {"risks": ("cat", ("title", "category", "label")),
                 "bull": ("title", ("cat", "heading")), "bear": ("title", ("cat", "heading"))}
 
 
+def _unwrap_items(rep):
+    """항목 하나를 칸 하나로 한 번 더 감싼 것을 푼다. 푼 개수를 돌려준다(2026-11-16).
+    11/11~13 하이쿠 글 033790 은 위험 요인 둘째 항목을 {"title": {"cat": …, "body": …}} 로 썼다. 이름표 칸 옮기기가
+    그 'title' 을 분류(cat)로 옮기고 안쪽 칸을 걷어내 분류도 본문도 빈 항목이 되어 글 전체를 버렸다(다시 읽기 dump 로 확인).
+    감싼 칸의 값이 글({ko, en})이 아니고 그 항목의 칸(분류 · 제목 · 본문 등)을 품고 있을 때만 푼다 — 있는 칸은 덮지 않는다.
+    영문 뭉치({"en": {"title": …, "body": …}} · body_en 꼴)는 풀지 않는다 — 영문 자리로 나눠 담는 것은 _absorb_en_siblings 다."""
+    n = 0
+    for k, fields in _BI_ITEM_FIELDS.items():
+        alts = _LABEL_ALIAS.get(k, (None, ()))[1]
+        for x in _items(rep, k):
+            if not isinstance(x, dict):
+                continue
+            for a in [a for a, v in x.items() if a != "en" and not _EN_SIB.fullmatch(a)
+                      and isinstance(v, dict) and "ko" not in v and "en" not in v
+                      and any(f in v for f in (*fields, *alts))]:
+                inner = x.pop(a)
+                for f, v in inner.items():
+                    x.setdefault(f, v)
+                n += 1
+    return n
+
+
 def _fix_item_labels(rep):
     """항목의 이름표 칸 이름을 스키마 이름으로 바꾼다. 바꾼 개수를 돌려준다."""
     n = 0
@@ -2066,7 +2088,8 @@ def normalize_shape(rep):
     회수한 100개 중 9개가 영문을 빠뜨리거나 곁키에 적어 두는 바람에 통째로
     버려졌다 — 한 장에 0.6달러가 이미 나간 뒤였다. 돈도 글도 이미 있으니
     옮겨 담을 수 있는 것은 옮겨 담고 나서 검증한다."""
-    n = _fix_item_labels(rep)
+    n = _unwrap_items(rep)
+    n += _fix_item_labels(rep)
     n += _wrap_ko(rep)
     n += _absorb_en_siblings(rep)
     _strip_unknown(rep)

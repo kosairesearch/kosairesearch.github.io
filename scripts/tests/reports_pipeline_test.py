@@ -968,6 +968,32 @@ r = GOODREP()
 r["risks"][0]["title"] = {"ko": "덤", "en": "Extra"}
 M.normalize_shape(r)
 ok(r["risks"][0]["cat"]["ko"] != "덤" and "title" not in r["risks"][0], "(g2) 제자리 칸이 있으면 다른 이름의 칸은 덮지 않고 걷어낸다")
+# (g3) 항목을 칸 하나로 한 번 더 감싼 글 — 033790(11/11~13 하이쿠)의 위험 요인 둘째 항목이 {"title": {"cat": …, "body": …}} 였다.
+#      전에는 이름표 칸 옮기기가 'title' 을 분류로 옮기고 안쪽 칸을 걷어내 분류도 본문도 빈 항목이 되어 글 전체를 버렸다.
+r = GOODREP()
+_r1 = r["risks"][1]
+r["risks"][1] = {"title": {"body": _r1["body"], "cat": _r1["cat"]}}
+r["bear"][2] = {"item": {"heading": {"ko": "수요 둔화", "en": "Demand slowdown"}, "body": r["bear"][2]["body"]}}
+n = M.normalize_shape(r)
+ok(n >= 2 and M.valid_v2(r, quiet=True) and r["risks"][1]["cat"] == _r1["cat"] and r["risks"][1]["body"] == _r1["body"]
+   and set(r["risks"][1]) == {"cat", "body"} and r["bear"][2]["title"]["ko"] == "수요 둔화",
+   "(g3) 한 번 더 감싼 항목을 풀어 되살린다(감싼 칸 이름 · 안쪽의 다른 이름표 칸)", f"n={n} · {r['risks'][1]}")
+r = GOODREP()
+r["risks"][0]["note"] = {"cat": {"ko": "덤", "en": "Extra"}}
+_c0 = dict(r["risks"][0]["cat"])
+M.normalize_shape(r)
+ok(r["risks"][0]["cat"] == _c0 and "note" not in r["risks"][0] and M.valid_v2(r, quiet=True),
+   "(g3) 푼 칸은 있는 칸을 덮지 않는다")
+r = GOODREP()
+_t0 = dict(r["bull"][0]["title"])
+M.normalize_shape(r)
+ok(r["bull"][0]["title"] == _t0 and M.valid_v2(r, quiet=True), "(g3) 글 칸({ko, en})은 풀지 않는다")
+r = GOODREP()
+r["risks"][2] = {"ko": {"cat": "환율 리스크", "body": r["risks"][2]["body"]["ko"]},
+                 "en": {"cat": "FX risk", "body": r["risks"][2]["body"]["en"]}}
+M.normalize_shape(r)
+ok(M.valid_v2(r, quiet=True) and r["risks"][2]["cat"] == {"ko": "환율 리스크", "en": "FX risk"},
+   "(g3) 한국어 뭉치는 풀고 영문 뭉치는 영문 자리로 나눠 담는다", str(r["risks"][2])[:200])
 
 # (h) en=False 검증 — 영문만 빠진 글과 통째로 잘린 글을 가른다
 r = GOODREP()
