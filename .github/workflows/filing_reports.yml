@@ -77,6 +77,9 @@ jobs:
           # 공시의 숫자가 빠진 채 다시 써진다(2026-10-07 정정 14개 중 13개가 그랬다).
           REPORT_NO_REUSE: '1'
           BATCH_MAX_WAIT_SEC: ${{ vars.BATCH_MAX_WAIT_SEC || '18000' }}
+          # 정량 수집은 2시간까지만(2026-11-17) — 남은 종목은 다음 실행이 받는다. 11/16 20:45(세계 표준시) 실행이 500종목 중 250종목의
+          # 정량만 받은 채 작업 시간 한도(6시간)에 걸려 주문 · 커밋 전에 취소됐다(종목당 79초 — 한국 시간 오전의 공시 조회가 느렸다).
+          REPORT_QUANT_BUDGET_SEC: '7200'
         run: |
           set -o pipefail
           echo "=== 공시 트리거 v2 생성 $(date -u) · 대상 ${{ steps.filings.outputs.new_tickers }} ===" > data/reports_v2_run.log

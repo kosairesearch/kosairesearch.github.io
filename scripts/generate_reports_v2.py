@@ -131,6 +131,13 @@ MAX_WAIT = int(os.getenv("BATCH_MAX_WAIT_SEC", "10800"))
 # auto 가 주문 직후 기다리는 시간. 짧게 끝나는 배치만 그 자리에서 받고,
 # 오래 걸리면 collect_batch 워크플로에 넘긴다(6시간 제한을 무의미하게).
 SHORT_WAIT = int(os.getenv("BATCH_SHORT_WAIT_SEC", "1800"))
+# 정량 수집 시간 한도(초 · 0 = 없음 · 프로세스 시작부터 잰다). 넘으면 남은 종목은 이번에 주문하지 않고 다음 실행에 맡긴다 —
+# 실패 · 생성 불가 기록을 남기지 않으므로 공시 트리거의 백로그에 그대로 남는다(2026-11-17). 11/16 20:45(세계 표준시) 공시 트리거는
+# 500종목 중 250종목의 정량만 받은 채 작업 시간 한도(6시간)에 걸려 취소됐다 — 종목당 79초(오후 실행은 24초 · 공시 조회가 한국 시간
+# 오전에 느렸다). 주문 전에 잘려 리포트는 한 편도 나오지 않았고, 그 6시간 동안 공용 실행 순서(kos-data)를 잡아 시세 갱신 · 신규 상장
+# 작업이 거듭 취소됐다.
+QUANT_BUDGET = int(os.getenv("REPORT_QUANT_BUDGET_SEC", "0") or "0")
+_T0 = time.monotonic()
 
 
 def model_for(rank):
@@ -2541,7 +2548,10 @@ def collect_all_quant(targets, data, allow_reuse=False, fresh=()):
         return reused, {}, DartUnavailable(m.group(1) if m else "init", f"DART 초기화 실패({why[:120]})")
     fund = krx_fundamentals(data.get("dataDate", ""))
     out, errors = dict(reused), {}
-    for st in need:
+    for i, st in enumerate(need):
+        if QUANT_BUDGET and time.monotonic() - _T0 > QUANT_BUDGET:
+            log(f"- ⏱️ 정량 수집 시간 한도({QUANT_BUDGET // 60}분) — 남은 {len(need) - i}개는 이번에 주문하지 않고 다음 실행에 맡긴다")
+            break
         tk = st["ticker"]
         log(f"- 정량 수집 {tk} {st['name']}...")
         krx_row = None

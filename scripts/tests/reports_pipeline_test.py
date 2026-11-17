@@ -291,6 +291,30 @@ out, errors, unavailable = M.collect_all_quant(STOCKS[:3], {"dataDate": "2026090
 ok(list(out) == ["005930"], "한도에 걸리면 그때까지 모은 것만", str(list(out)))
 ok(unavailable is not None and unavailable.status == "020", "unavailable 에 사유")
 ok(not errors, "종목 오류로 세지 않는다")
+# 정량 수집 시간 한도(2026-11-17) — 넘으면 남은 종목은 실패로 세지 않고 다음 실행에 맡긴다. 11/16 공시 트리거는 500종목 중
+# 250종목만 받은 채 작업 시간 한도(6시간)에 걸려 주문도 못 하고 취소됐다.
+calls["n"] = 0
+_clock = {"t": 100.0}
+def quant_slow(dart, tk, row, stock):
+    calls["n"] += 1
+    _clock["t"] += 50.0                       # 종목마다 50초
+    return {"annual": [{"year": 2025, "rev": 1, "op": 1, "np_owner": 1, "opm": 1.0, "roe": 1.0, "debt_ratio": 1.0}],
+            "quarterly": [], "valuation": {}}
+M.collect_quant = quant_slow
+_real_mono, _real_budget, _real_t0 = M.time.monotonic, M.QUANT_BUDGET, M._T0
+M.time.monotonic = lambda: _clock["t"]
+M.QUANT_BUDGET, M._T0 = 120, 100.0           # 2분 — 세 번째 종목 앞에서 멈춘다
+_fails0 = {tk: S.fail_count(tk) for tk in [s["ticker"] for s in STOCKS[:4]]}
+buf = io.StringIO()
+with __import__("contextlib").redirect_stdout(buf):
+    out, errors, unavailable = M.collect_all_quant(STOCKS[:4], {"dataDate": "20260904"})
+M.time.monotonic, M.QUANT_BUDGET, M._T0 = _real_mono, _real_budget, _real_t0
+ok(len(out) == 3 and calls["n"] == 3 and not errors and unavailable is None and "시간 한도" in buf.getvalue()
+   and all(S.fail_count(tk) == n for tk, n in _fails0.items()),
+   "정량 수집 시간 한도 — 넘으면 멈추고, 남은 종목은 실패로 세지 않는다", f"{list(out)} · {buf.getvalue()[-160:]}")
+_src2 = Path(M.__file__).read_text(encoding="utf-8")
+_wf_f = (Path(M.__file__).resolve().parent.parent / ".github" / "workflows" / "filing_reports.yml").read_text(encoding="utf-8")
+ok("REPORT_QUANT_BUDGET_SEC: '7200'" in _wf_f, "공시 트리거 — 정량 수집 시간 한도 2시간(작업 시간 한도 6시간 안에 주문 · 회수 · 커밋까지 끝낸다)")
 M.collect_quant, M.krx_fundamentals, M.g.get_dart = REAL_COLLECT_QUANT, REAL_KRX, REAL_GET_DART   # cross_check 는 계속 가짜(네이버 호출 없음)
 # 실패 횟수의 유효기간 — 오래된 실패는 0 으로 본다
 S.FAIL_DIR.mkdir(exist_ok=True)
