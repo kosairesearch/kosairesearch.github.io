@@ -1,230 +1,218 @@
 {
  "title": {
-  "ko": "MS 라이선스 강자, 이익회복과 재편 리스크 공존",
-  "en": "MS License Leader Faces Profit Rebound and Governance Overhang"
+  "ko": "순이익은 회복, 영업이익률은 하락 흐름",
+  "en": "Profit Rebounds, but Operating Margin Keeps Falling"
  },
  "lead": {
-  "ko": "국내 마이크로소프트 SPLA 유통 시장의 지배적 사업자인 에스피소프트는 유호스트 편입 기저효과로 2025년 순이익이 급증했지만, 영업이익률 하락과 가비아그룹의 중복상장 재편 이슈가 동시에 진행되고 있다.",
-  "en": "SP Software, the dominant distributor in Korea's Microsoft SPLA market, saw net income surge in 2025 on a base effect from the Yohost consolidation, even as operating margins have declined and the Gabia group's multiple-listing restructuring issue unfolds in parallel."
+  "ko": "에스피소프트의 2025년 지배주주 순이익은 38.1억원으로 회복됐지만, 같은 해 영업이익은 3년 연속 감소했고 영업이익률은 6.6%까지 낮아졌다.",
+  "en": "SPSoft's net income attributable to controlling shareholders recovered to KRW 3.81 billion in 2025, but operating profit has declined for three straight years and the operating margin fell to 6.6%."
  },
  "keypoints": [
   {
-   "ko": "국내 MS SPLA 유통시장에서 지배적 지위를 확보한 사업자로, MS 생태계(코파일럿·애저) 확산의 구조적 수혜 위치에 있다는 평가를 받는다.",
-   "en": "The company holds a dominant position in Korea's Microsoft SPLA distribution market and is viewed as structurally positioned to benefit from Microsoft ecosystem expansion (Copilot, Azure)."
+   "ko": "2025년 매출은 545억원으로 전년 대비 20.8% 증가해 2022~2025년 중 가장 큰 해였다. 반면 영업이익은 36.2억원으로 전년 대비 3.7% 감소했다.",
+   "en": "Revenue reached KRW 54.5 billion in 2025, up 20.8% from the prior year and the largest year in the 2022-2025 period. Operating profit, however, fell 3.7% to KRW 3.62 billion."
   },
   {
-   "ko": "2025년 지배주주 순이익은 38.1억원으로 전년 대비 1,162.9% 급증했으나, 이는 2024년 유호스트 편입 관련 일회성 합병비용에 따른 기저효과 영향이 크다는 해석이 나온다.",
-   "en": "2025 net income attributable to owners jumped 1,162.9% year-over-year to KRW 3.81 billion, though this is largely attributed to a base effect from one-off merger costs tied to the 2024 Yohost consolidation."
+   "ko": "순이익 회복은 2024년 스팩 합병 상장에 따른 일회성 비용과 자회사 인수 과정의 주식교환 비용이 해소된 데서 비롯했다는 것이 회사 설명이다.",
+   "en": "According to the company, the net income rebound reflects the absence of one-off costs tied to the 2024 SPAC merger listing and share-exchange costs from the subsidiary acquisition."
   },
   {
-   "ko": "영업이익률은 2022년 14.6%에서 2025년 6.6%로 4년 연속 낮아지는 추세를 보여, 매출 성장과 수익성 개선 사이의 괴리가 확인된다.",
-   "en": "The operating margin has declined for four consecutive years, from 14.6% in 2022 to 6.6% in 2025, revealing a gap between revenue growth and profitability improvement."
+   "ko": "2026년 3분기 영업이익은 5.8억원으로 전년 동기 대비 50.4% 감소했으며, 공시 실적 기준 최근 다섯 분기 중 가장 낮았다.",
+   "en": "Operating profit in the third quarter of 2026 was KRW 580 million, down 50.4% year on year and the lowest of the last five quarters on a reported basis."
   },
   {
-   "ko": "2026년 2월 코파일럿·어도비 통합 라이선스 플랫폼을 출시하고 7월 SPLA 사용량 자동화 기능을 추가하며 AIaaS 사업모델 확장을 시도하고 있다.",
-   "en": "The company launched an integrated Copilot-Adobe license platform in February 2026 and added an SPLA usage-automation feature in July 2026, moving toward an AIaaS business model."
+   "ko": "MS SPLA 총판 지위와 데이터센터 자회사가 수익 구조의 두 축이며, 어도비 파트너 자격 확보와 MS 보안 솔루션 판매가 새 성장 동력으로 제시되고 있다.",
+   "en": "The Microsoft SPLA distribution position and the data-center subsidiary form the two pillars of the revenue base, while the Adobe partner status and Microsoft security solution sales are presented as new growth drivers."
   },
   {
-   "ko": "가비아→KINX→에스피소프트로 이어지는 다단계 상장 구조가 중복상장 논란과 계열 재편 가능성의 중심에 놓여 있다.",
-   "en": "The multi-tiered listing chain of Gabia to KINX to SP Software sits at the center of duplicate-listing controversy and potential group restructuring."
+   "ko": "최대주주인 케이아이엔엑스(Kinx)는 2026년 6월 17일 기준 41.28%를 보유하고 있으며, 2026년 5월 29일에는 자사주 특정금전신탁 계약이 만료에 따라 해지됐다.",
+   "en": "Kinx is the largest shareholder with a 41.28% stake as of June 17, 2026, and a treasury-share special money trust contract was terminated upon expiry on May 29, 2026."
   }
  ],
  "business": {
-  "ko": "에스피소프트는 2013년 설립되어 2024년 2월 스팩 합병을 통해 코스닥에 상장한 클라우드·소프트웨어 유통 기업이다. 사업은 Microsoft Business, Cloud Business, Solution Business, DaaS Business 네 개 부문으로 구성되며, Microsoft Business는 서비스 제공사업자용 서버 OS와 MS SQL 라이선스 유통·컨설팅을, Cloud Business는 클라우드 스토리지·IDC·스트리밍 CDN 등을, Solution Business는 부하분산 기반 CDN과 저작권 보호 솔루션을, DaaS Business는 클라우드 기반 가상 데스크톱과 구축형 VDI를 제공한다. 국내 마이크로소프트 SPLA(서비스 제공사업자 라이선스) 유통 시장에서 지배적 지위를 확보하고 있으며, 관련 시장 점유율은 자료에 따라 70%대에서 76%까지 제시된다. 2024년 8월 유호스트 지분 100%를 인수해 클라우드 MSP와 스마트팩토리 사업을 자회사로 편입했으며, 유호스트는 LG유플러스의 IDC 운영, 공공·금융기관 대상 클라우드 전환·매니지먼트, 산업단지 스마트팩토리 전력 모니터링 등 3개 사업부로 운영되고 있다. 한 시장 보고서에 따르면 2025년 3분기 누적 기준 매출 비중은 MS 소프트웨어 47%, 솔루션 15%, DaaS 3%, 자회사 유호스트(IDC·MSP) 35%로 소프트웨어 유통과 데이터센터 인프라가 균형을 이루고 있다는 평가다. 주요 고객사로는 삼성전자, 카카오, SK텔레콤 등 국내 대형 IT·통신사가 포함된다. 지배구조상 가비아가 케이아이엔엑스(KINX) 지분 36.3%를 보유하고, KINX가 에스피소프트 지분 41.28%를 보유하는 다단계 종속 구조를 이루고 있다. 최근에는 마이크로소프트 코파일럿과 어도비 AI 라이선스를 결합한 통합 플랫폼을 선보이며 단순 라이선스 유통에서 AIaaS 사업모델로 영역을 넓히고 있다.",
-  "en": "SP Software was founded in 2013 and listed on KOSDAQ in February 2024 through a SPAC merger, operating as a cloud and software distribution company. Its business is organized into four segments: Microsoft Business, Cloud Business, Solution Business, and DaaS Business. Microsoft Business handles server OS and MS SQL license distribution and consulting for service providers, Cloud Business runs cloud storage, IDC, and streaming CDN services, Solution Business offers load-balanced CDN and copyright-protection solutions, and DaaS Business provides cloud-based virtual desktops and on-premise VDI. The company holds a dominant position in Korea's Microsoft SPLA (Service Provider License Agreement) distribution market, with cited market share ranging from around 70% to 76% depending on the source. In August 2024 it acquired 100% of Yohost, bringing cloud MSP and smart-factory operations into the group; Yohost runs three business units covering IDC operations for LG Uplus, cloud migration and management for public and financial institutions, and power-monitoring systems for factories in industrial parks. According to one market report, cumulative revenue mix through the third quarter of 2025 was roughly 47% Microsoft software, 15% Solution, 3% DaaS, and 35% from subsidiary Yohost (IDC/MSP), reflecting a balance between software distribution and data-center infrastructure. Major clients include large domestic IT and telecom firms such as Samsung Electronics, Kakao, and SK Telecom. In terms of ownership structure, Gabia holds a 36.3% stake in KINX, which in turn holds 41.28% of SP Software, forming a multi-tiered subsidiary chain. Most recently, the company introduced an integrated platform combining Microsoft Copilot and Adobe AI licenses, expanding beyond simple license resale toward an AIaaS business model."
+  "ko": "에스피소프트는 마이크로소프트(MS) 소프트웨어를 중심으로 SW 공급·유통과 데이터센터 서비스를 함께 운영하는 IT·소프트웨어 기업이다. 2024년 2월 15일 코스닥 시장에 상장됐으며, 상장은 스팩(SPAC) 합병 방식으로 이뤄졌다. 회사는 MS 제품을 서비스 공급자 라이선스 계약(SPLA) 방식으로 공급하는 총판 지위를 바탕으로 사업을 해 왔고, 2025년 5월 보도에서는 매출 대부분이 SW 판매·유통에서 나온다고 설명됐다. 같은 보도에 따르면 IBK투자증권은 2024년 6월 발간 자료에서 MS SW SPLA의 국내 시장 점유율을 70%로 봤다. 2025년 6월 IBK투자증권 보고서 기준 사업 영역은 MS 소프트웨어, 서비스형 데스크톱(DaaS), 솔루션 비즈니스의 세 분야로 나뉜다. 2024년 8월 30일 편입된 자회사를 통한 데이터센터 매출은 2025년 외형 확대의 또 다른 축이다. 회사는 2025년 실적 호조의 배경으로 본원 AI SW 제품 공급과 자회사 데이터센터 매출 확대를 들었다. 신규 사업으로는 어도비(Adobe) VIP 마켓플레이스 파트너 자격을 얻어 보유 라이선스를 묶은 통합 소프트웨어 플랫폼을 내놓고, 서비스형 AI(AIaaS)로 영역을 넓히고 있다. 2026년 4월 회사는 AI 기술을 활용한 보안 위협이 커지며 MS 보안 솔루션 매출이 큰 폭으로 늘었다고 밝혔다. 고객은 주로 중소기업과 호스팅 사업자이며, 같은 2025년 5월 보도에서는 대기업의 경우 그룹 내 ICT 계열사가 AI 도입을 주도한다는 점이 언급됐다.",
+  "en": "SPSoft is an IT and software company that supplies and distributes Microsoft software and also runs data-center services. The company was listed on KOSDAQ on February 15, 2024, through a SPAC merger. It has built its business on a distributor position for Microsoft products sold under the Services Provider License Agreement (SPLA) model, and a May 2025 report described most revenue as coming from software sales and distribution. The same report cited IBK Investment & Securities, which estimated in a June 2024 publication that the company held a 70% share of the domestic Microsoft SW SPLA market. According to an IBK Investment & Securities report from June 2025, the business is divided into three areas: Microsoft software, desktop as a service (DaaS), and solutions. Data-center revenue through a subsidiary acquired on August 30, 2024 added to the expansion in 2025. The company attributed its 2025 performance to supply of its core AI software products and to higher data-center revenue at the subsidiary. In new business, it obtained Adobe VIP Marketplace partner status, launched an integrated software platform combining its licenses, and is extending into AI as a Service (AIaaS). In April 2026 the company said Microsoft security solution sales had risen sharply as AI-enabled security threats grew. Its customers are mainly small and mid-sized companies and hosting providers, and the May 2025 report noted that large companies tend to adopt AI through ICT affiliates within their groups."
  },
  "earnings": {
-  "ko": "2025년 연결 매출액은 544.8억원으로 전년(451.2억원) 대비 20.8% 증가했다. 반면 영업이익은 36.2억원으로 전년(37.6억원)보다 3.7% 감소해 매출 성장에도 이익 레버리지는 오히려 둔화됐다. 지배주주 순이익은 38.1억원으로 전년(3.0억원) 대비 1,162.9% 급증했는데, 회사는 2024년 유호스트 자회사 편입과 전기 합병비용 발생을 전년도 낮은 이익의 주요 원인으로 제시한 바 있어 이번 급증은 기저효과 성격이 크다. 영업이익률은 2022년 14.6%, 2023년 13.5%에서 2024년 8.3%, 2025년 6.6%로 4년 연속 낮아지는 추세를 보여, 상대적으로 낮은 마진의 유호스트(IDC·MSP) 매출 비중 확대가 전체 수익성에 영향을 준 것으로 풀이된다. 분기별로 보면 2025년 3분기 매출 131.7억원·영업이익 11.7억원, 4분기 매출 141.5억원·영업이익 8.9억원을 기록해 매출은 늘었지만 영업이익은 오히려 줄어드는 흐름을 보였다. 2026년 들어서는 1분기 매출 129.2억원·영업이익 8.5억원, 2분기 매출 131.0억원·영업이익 8.5억원으로 매출과 영업이익 모두 전년 동기 수준에서 정체된 모습이다. 순이익 흐름은 분기별로 더 큰 편차를 보여 2025년 4분기 12.9억원까지 늘었다가 2026년 1분기 9.1억원, 2분기 6.2억원으로 낮아지는 등 영업외 요인에 따른 변동성이 확인된다. 실제로 2026년 2분기 실적은 매출이 전년 동기 대비 4.06% 줄고 순이익도 32.29% 감소한 것으로 나타나, 앞서 본 분기 실적과 같은 둔화 흐름이 최근까지 이어지고 있음을 보여준다.",
-  "en": "Consolidated revenue for 2025 rose 20.8% year-over-year to KRW 54.48 billion from KRW 45.12 billion in 2024. Operating profit, however, fell 3.7% to KRW 3.62 billion from KRW 3.76 billion, indicating that operating leverage did not follow revenue growth. Net income attributable to owners surged 1,162.9% to KRW 3.81 billion from just KRW 302 million in 2024; the company had previously cited the 2024 Yohost subsidiary consolidation and prior-year merger costs as the main reasons for the depressed prior-year profit, meaning much of the 2025 jump reflects a base effect rather than an operational step-change. The operating margin has fallen for four straight years, from 14.6% in 2022 and 13.5% in 2023 to 8.3% in 2024 and 6.6% in 2025, a trend attributed in part to the growing revenue contribution from the relatively lower-margin Yohost IDC/MSP business. On a quarterly basis, revenue reached KRW 13.17 billion with operating profit of KRW 1.17 billion in the third quarter of 2025, and KRW 14.15 billion in revenue with KRW 0.89 billion in operating profit in the fourth quarter — revenue rose but operating profit actually declined. Moving into 2026, first-quarter revenue was KRW 12.92 billion with operating profit of KRW 0.85 billion, and second-quarter revenue was KRW 13.10 billion with operating profit of KRW 0.85 billion, showing both metrics essentially flat versus the prior year. Net income showed sharper quarter-to-quarter swings, rising to KRW 1.29 billion in the fourth quarter of 2025 before falling to KRW 0.91 billion in the first quarter of 2026 and KRW 0.62 billion in the second quarter, pointing to volatility driven by non-operating items. Indeed, the company's own second-quarter 2026 results showed revenue down 4.06% and net income down 32.29% year-over-year, confirming that the deceleration visible in the confirmed quarterly data has persisted into the most recent period."
+  "ko": "공시 실적 기준 매출은 2022년 334억원, 2023년 352억원, 2024년 451억원, 2025년 545억원으로 4년 동안 늘었고, 2025년은 전년 대비 20.8% 증가했다. 같은 기간 영업이익은 2022년 48.7억원에서 2023년 47.5억원, 2024년 37.6억원, 2025년 36.2억원으로 줄어 2023년부터 2025년까지 3년 연속 감소했다. 영업이익률은 2022년 14.6%, 2023년 13.5%, 2024년 8.3%, 2025년 6.6%로 낮아졌다. 매출 증가 폭에 비해 영업이익이 따라오지 못한 구조이며, 2024년에는 스팩 합병 상장과 자회사 인수 과정의 비용이 겹쳤다. 지배주주 순이익은 2022년 41.1억원, 2023년 43.8억원에서 2024년 3억원으로 93.1% 줄었다가 2025년 38.1억원으로 1,162.7% 늘었다. 2024년 감소의 배경으로 회사는 스팩 합병 상장에 따른 일회성 비용과 주식교환 비용을 들었고, 2025년 회복도 이 비용이 해소된 데서 비롯했다고 설명했다. 당기순이익(비지배지분 포함)은 2022~2025년 모든 해에 지배주주 순이익과 같은 금액으로 공시됐다. 분기 기준으로는 2025년 3분기 매출 132억원, 4분기 141억원, 2026년 1분기 129억원, 2분기 131억원, 3분기 129억원이다. 분기 영업이익은 2025년 3분기 11.7억원, 4분기 8.9억원, 2026년 1분기 8.5억원, 2분기 8.5억원, 3분기 5.8억원으로 내려왔다. 지배주주 순이익은 2025년 4분기 12.9억원에서 2026년 1분기 9.1억원, 2분기 6.2억원, 3분기 6.4억원으로 낮아졌고, 최근 네 개 분기 합계는 34.6억원이다. 현금흐름은 영업활동 현금흐름이 2022년 40.5억원, 2023년 72.2억원, 2024년 13.1억원, 2025년 33억원으로 변동이 컸다. 2025년 말 부채비율은 17.4%로 2022년 이후 가장 낮고, 자본총계 677억원 전액이 지배주주 지분이며 부채총계는 118억원이다.",
+  "en": "Based on reported figures, revenue rose from KRW 33.4 billion in 2022 to KRW 35.2 billion in 2023, KRW 45.1 billion in 2024 and KRW 54.5 billion in 2025, with 2025 up 20.8% from the prior year. Operating profit over the same period went from KRW 4.87 billion in 2022 to KRW 4.75 billion, KRW 3.76 billion and KRW 3.62 billion, declining for three consecutive years from 2023 through 2025. The operating margin fell from 14.6% in 2022 to 13.5%, 8.3% and 6.6%. Revenue grew faster than operating profit, and in 2024 the SPAC listing and subsidiary acquisition costs overlapped with the decline. Net income attributable to controlling shareholders went from KRW 4.11 billion in 2022 and KRW 4.38 billion in 2023 to KRW 302 million in 2024, a 93.1% drop, before rising to KRW 3.81 billion in 2025, up 1,162.7%. The company attributed the 2024 decline to one-off SPAC listing costs and share-exchange costs, and the 2025 recovery to those costs no longer recurring. Net income including non-controlling interests was reported at the same amounts as controlling-shareholder net income in every year from 2022 to 2025. On a quarterly basis, revenue was KRW 13.2 billion in Q3 2025, KRW 14.1 billion in Q4 2025, KRW 12.9 billion in Q1 2026, KRW 13.1 billion in Q2 2026 and KRW 12.9 billion in Q3 2026. Operating profit went from KRW 1.17 billion in Q3 2025 to KRW 890 million, KRW 848 million, KRW 852 million and KRW 580 million in Q3 2026, the lowest of the five quarters. Net income attributable to controlling shareholders fell from KRW 1.29 billion in Q4 2025 to KRW 910 million, KRW 622 million and KRW 641 million in the first three quarters of 2026, and the four-quarter total from Q4 2025 through Q3 2026 is KRW 3.46 billion. Operating cash flow was KRW 4.05 billion in 2022, KRW 7.22 billion in 2023, KRW 1.31 billion in 2024 and KRW 3.3 billion in 2025, a volatile pattern. The debt ratio at end-2025 was 17.4%, the lowest of the four years, with equity of KRW 67.7 billion, all attributable to controlling shareholders, and total liabilities of KRW 11.8 billion."
  },
  "industry": {
-  "ko": "국내 마이크로소프트 서버 소프트웨어 SPLA 유통사업자는 단 2곳에 불과해 진입장벽이 높은 구조이며, 에스피소프트는 이 시장에서 다수 지분을 차지하는 사업자로 평가받는다. MS 365와 코파일럿 확산이 중소·중견기업(SME) 시장에서 빠르게 나타나고 있다는 분석이 나오며, 관련 생산성 소프트웨어 및 AI 업무자동화 수요 확대가 유통사에는 구조적 성장 동력으로 지목된다. 한 시장 보고서는 MS 생태계 확산 속도가 예상보다 빠르게 나타나고 있으며, 국내 SPLA 유통 1위 지위를 가진 사업자가 이 흐름에서 상대적으로 많은 수혜를 받을 수 있는 위치에 있다고 평가했다. 그룹 차원에서는 가비아의 호스팅·도메인·IDC 고객 기반이 에스피소프트의 DaaS·MSP 서비스로 자연스럽게 연결되는 구조가 형성돼 있다는 점이 경쟁우위 요인으로 꼽힌다. 다만 CSP·DaaS 시장 경쟁이 확대되는 추세여서 가격 정책과 서비스 품질을 통한 차별화가 향후 과제로 지목된다. 그룹 지배구조 측면에서는 가비아→KINX→에스피소프트로 이어지는 다단계 상장 구조가 시장에서 중복상장 문제로 거론되고 있으며, 최근 가비아 지분을 매집한 행동주의펀드의 등장으로 계열 재편 논의에 관심이 모이고 있다.",
-  "en": "Only two companies distribute Microsoft server software under SPLA in Korea, creating high barriers to entry, and SP Software is viewed as holding the larger share of this market. Analysts note that adoption of Microsoft 365 and Copilot is expanding rapidly in the small and mid-sized enterprise (SME) segment, with growing demand for productivity software and AI-based work automation cited as a structural growth driver for distributors. One market report assessed that the pace of Microsoft ecosystem expansion has been faster than expected, and that the leading domestic SPLA distributor is positioned to capture a relatively large share of the resulting benefit. At the group level, Gabia's SME customer base in hosting, domain, and IDC services is seen as naturally feeding into SP Software's DaaS and MSP offerings, a structural advantage cited by market observers. At the same time, competition in the CSP and DaaS markets is intensifying, making pricing strategy and service-quality differentiation an ongoing challenge. On the governance side, the multi-tiered listing chain running from Gabia through KINX to SP Software has drawn scrutiny as a duplicate-listing issue, and the emergence of an activist fund building a stake in Gabia has drawn attention to potential group restructuring discussions."
+  "ko": "회사의 주력 유통 대상이 MS 제품이어서 MS의 가격 정책과 AI 제품 전략이 실적과 직접 연결되는 구조다. 2026년 6월 9일 보도에서 IBK투자증권은 MS 365 가격 인상과 공공기관 예산 확대를 근거로 2026년 하반기 실적이 개선될 것으로 봤다. 중소기업의 AI 도입 확대는 회사의 고객층과 맞닿아 있다는 점이 2025년 IBK투자증권 보고서에서도 같은 방향으로 언급됐다. 정책 측면에서는 국가정보원이 업무 정보를 기밀·민감·공개 등급으로 나누고 AI를 쓸 수 있는 중간 망 서버를 두는 망분리 유연화 방안을 내놨다(2025년 5월 보도). 회사는 이 중간 서버에 AI 서비스를 공급할 수 있다고 설명했다. 보안 위협의 증가도 수요 요인이다. 회사는 2026년 4월 AI 기반 해킹 위협이 커지며 국내 기업의 선제 대응이 늘었고, 이에 따라 보안 SW 매출이 크게 증가했다고 밝혔다. 같은 업종 상장사로는 삼성에스디에스, LG CNS, 현대오토에버, NAVER, 카카오 등이 꼽힌다. 회사의 차별점은 MS SPLA 국내 점유율(2024년 6월 IBK투자증권 기준 70%)을 바탕으로 한 중소기업 유통 채널이다. 웹하드 관련 사업은 2025년 6월 IBK투자증권 보고서에서 이익률은 높지만 전방 시장 정체가 지속된다고 평가됐다. 사이클 측면에서 2025년 실적은 일회성 비용 해소 효과가 컸고, 영업이익 기준으로는 2022년 이후 감소 추세가 이어지고 있어 사업 체력의 회복 여부는 아직 확인 단계다.",
+  "en": "Because the company's main distribution product is Microsoft software, Microsoft's pricing and AI product strategy feed directly into its results. In a June 9, 2026 report, IBK Investment & Securities cited Microsoft 365 price increases and higher public-sector budgets as grounds for expecting improved second-half 2026 earnings. A June 2025 IBK report also pointed to small and mid-sized companies' growing AI adoption as aligned with the company's customer base. On policy, the National Intelligence Service has proposed a relaxed network-separation framework that classifies work information into confidential, sensitive and open tiers and introduces intermediate-network servers where AI can be used, and the company said it could supply AI services on those servers (May 2025 report). Security threats are also a source of demand: in April 2026 the company said that AI-enabled hacking risks had prompted proactive responses from domestic firms and that its security software sales had risen sharply. Listed peers in the same industry include Samsung SDS, LG CNS, Hyundai Autoever, NAVER and Kakao. The company's distinguishing position rests on its 70% share of the domestic Microsoft SW SPLA market as estimated in June 2024 by IBK Investment & Securities, and on its channel to small and mid-sized companies. A June 2025 IBK report described the web-hard business as high-margin but facing a stagnant end market. On the cycle, 2025 earnings benefited from the absence of one-off costs, while operating profit has continued to decline from 2022, so whether the core business is recovering remains to be confirmed."
  },
  "outlook": {
-  "ko": "회사는 2026년 2월 마이크로소프트 코파일럿과 어도비 AI 솔루션 라이선스를 결합한 통합 소프트웨어 플랫폼을 출시하며 AIaaS(AI as a Service) 사업 모델을 본격화하겠다는 방침을 밝혔다. 이어 2026년 7월에는 해당 플랫폼에 MS SPLA 고객사의 월별 사용량 집계·리포팅 업무를 자동화하는 기능을 추가해 기존 고객의 락인 효과를 높이고 신규 고객 확보에 나설 계획이라고 밝혔다. 아울러 어도비 VIP MP(Marketplace) 파트너 자격을 획득해 마이크로소프트 중심의 사업 구조에서 벗어나 글로벌 빅테크 파트너십을 다변화하려는 시도도 확인된다. 자회사 유호스트를 통한 애저(Azure) 특화 클라우드 관리서비스와 IDC·스마트팩토리 사업의 통합도 지속적인 성장 축으로 거론된다. 다만 그룹 차원에서는 가비아-KINX-에스피소프트로 이어지는 중복상장 구조 해소 압박이 커지고 있어, 포괄적 주식교환 등을 통한 계열 재편 가능성이 시장에서 관측되고 있다. 이 경우 기존 주주와의 이해관계 조정이 필요할 수 있어 재편 방향과 시기에 대한 확인이 필요하다.",
-  "en": "In February 2026 the company launched an integrated software platform combining Microsoft Copilot and Adobe AI solution licenses, stating its intent to advance an AIaaS (AI as a Service) business model. In July 2026 it added a feature to the platform that automates the monthly usage aggregation and reporting tasks required of MS SPLA clients, aiming to strengthen lock-in among existing customers and attract new ones. The company also obtained Adobe VIP MP (Marketplace) partner status, signaling an attempt to diversify beyond a Microsoft-centric business structure toward broader global big-tech partnerships. Continued integration of Azure-specialized cloud management services and IDC/smart-factory operations through subsidiary Yohost is also cited as an ongoing growth pillar. At the same time, pressure is building within the group to resolve the duplicate-listing structure running from Gabia through KINX to SP Software, and market observers have raised the possibility of a group restructuring, potentially via a comprehensive stock swap. Such a move could require reconciling the interests of existing shareholders, making the direction and timing of any restructuring an important item to monitor."
+  "ko": "회사는 2026년 2월 본원 사업과 데이터센터 매출이 지속 성장하고 있다고 밝히며, 클라우드 스토리지 등 신규 서비스를 중심으로 실적 호조세가 이어질 것이라고 전망했다. 2026년 4월에는 M365 보안 솔루션 프로모션을 2026년 말까지 진행한다고 밝혔다. IBK투자증권은 2026년 6월 9일 보도에서 M365 가격 인상과 공공 예산 확대를 바탕으로 하반기 실적이 나아질 것으로 봤다. 다만 2026년 3분기 영업이익은 5.8억원으로 전년 동기 대비 50.4% 감소해, 하반기 개선 전망이 분기 실적에서는 아직 나타나지 않았다. 2026년 1분기 지배주주 순이익 9.1억원, 2분기 6.2억원, 3분기 6.4억원의 흐름도 같은 방향이다. 어도비 통합 플랫폼과 AIaaS 같은 신규 서비스는 2026년 3분기 공시 실적에서 별도 수치로 드러나지 않았다. 따라서 신규 서비스 기여분은 연간 사업보고서에서 매출 구성과 설명이 나오는지를 확인하는 것이 순서다. 자사주 특정금전신탁은 2026년 5월 29일 신탁기간 만료로 해지됐다고 공시됐다. 다음에 확인할 지점은 2026 사업연도 사업보고서의 연간 영업이익률이 2025년의 6.6%보다 낮아질지 여부다. 보안 솔루션 프로모션이 끝나는 2026년 말 이후 보안 관련 매출이 얼마나 유지되는지도 함께 보는 지점이다.",
+  "en": "In February 2026 the company said its core business and data-center revenue continued to grow, and expected results to stay on an upward path driven by new services such as cloud storage. In April 2026 it stated that a Microsoft 365 security solution promotion would run through the end of 2026. In a June 9, 2026 report, IBK Investment & Securities expected second-half earnings to improve on Microsoft 365 price increases and higher public budgets. However, operating profit in the third quarter of 2026 was KRW 580 million, down 50.4% year on year, so the second-half improvement has not yet appeared in quarterly results. Net income attributable to controlling shareholders also fell across the first three quarters of 2026, to KRW 910 million, KRW 622 million and KRW 641 million. New services such as the integrated Adobe-based platform and AIaaS have not been separately quantified in reported third-quarter 2026 figures, so their contribution will need to be checked against the annual business report's revenue breakdown. A treasury-share special money trust was terminated on May 29, 2026 upon expiry of the trust period. The next checkpoint is whether the operating margin in the 2026 annual business report falls below the 6.6% recorded for 2025. Whether security-related revenue holds up after the promotion ends at the end of 2026 is another point to follow."
  },
  "valuation_comment": {
-  "ko": "2025년 지배주주 순이익이 전년 대비 크게 늘며 저조했던 이익 수준에서 회복하는 흐름을 보였고, 이는 최근 네 개 분기 실적에도 이어지고 있다. 다만 영업이익률은 2022년부터 2025년까지 매년 낮아지는 추세를 보여, 외형 성장이 곧바로 수익성 개선으로 연결되지는 않고 있다. 순자산가치 대비 주가 수준은 과거 상장 초기의 높은 프리미엄 구간에 비해 낮아진 상태이며, 현재는 순자산 대비 소폭의 프리미엄이 붙어 거래되는 편이다. 회사는 현재 별도의 현금배당을 지급하지 않는 무배당 정책을 유지하고 있어, 주주환원 측면에서는 배당보다 사업 재투자와 자사주 신탁 운용 등에 무게를 두고 있는 것으로 보인다. 그룹 차원의 지배구조 재편 이슈가 부각되고 있는 만큼, 밸류에이션을 살펴볼 때는 실적 지표뿐 아니라 계열 구조 변화 가능성도 함께 고려할 필요가 있다.",
-  "en": "Net income attributable to owners rose sharply in 2025 from a depressed prior-year base, and this recovery has continued through the most recent four quarters. However, the operating margin has declined every year from 2022 through 2025, showing that top-line growth has not directly translated into improved profitability. The share price relative to net asset value sits below the elevated premium levels seen shortly after listing, and currently trades at a modest premium to net assets. The company currently maintains a no-dividend policy, suggesting that shareholder returns are weighted more toward business reinvestment and treasury-share trust management than cash distributions. Given the prominence of group-level governance restructuring issues, valuation assessments should weigh not only earnings indicators but also the possibility of changes to the group's ownership structure."
+  "ko": "주가 기준 배수는 이익 규모에 따라 크게 달라진다. 최근 네 개 분기 지배주주 순이익 합계가 34.6억원으로 규모가 작아, 같은 주가라도 이익 기준 배수는 크게 계산되는 구조다. 주가순자산비율은 1배를 웃도는 구간이어서 주가가 자본총계 677억원보다 높게 형성돼 있다. 자본총계 전액이 지배주주 지분이고 2025년 말 부채총계는 118억원, 부채비율은 17.4%로 2022년 이후 가장 낮아 재무 부담은 작은 편이다. 배당은 사실상 이뤄지지 않고 있어 배당 수익률을 기준으로 한 비교는 제한된다. 2024년 지배주주 순이익이 3억원에서 2025년 38.1억원으로 변동한 만큼, 배수 해석은 어느 연도 이익을 기준으로 삼느냐에 따라 달라진다. 2026년 3분기 영업이익 감소가 이어지는 가운데 하반기 이익이 공시 실적으로 확인되는지가 배수 수준을 가르는 변수다.",
+  "en": "Price-based multiples move with earnings scale. Because net income attributable to controlling shareholders over the last four quarters totals KRW 3.46 billion, a small earnings base, the same share price produces a larger earnings-based multiple. The price-to-book ratio sits above 1x, meaning the share price is above the KRW 67.7 billion of equity at end-2025, all of which is attributable to controlling shareholders. Total liabilities were KRW 11.8 billion at end-2025, with a debt ratio of 17.4%, the lowest of the four years, so financial leverage is modest. Cash dividends are effectively absent, which limits comparisons on dividend yield. Net income attributable to controlling shareholders moved from KRW 302 million in 2024 to KRW 3.81 billion in 2025, so multiples differ depending on which year's earnings are used. Whether second-half 2026 earnings are confirmed in reported figures, given the decline in third-quarter operating profit, is the variable that will shape the multiple level."
  },
  "bull": [
   {
    "title": {
-    "ko": "SPLA 시장 지배력과 MS 생태계 확산",
-    "en": "SPLA Market Dominance and Microsoft Ecosystem Expansion"
+    "ko": "MS 총판 기반의 시장 지위",
+    "en": "Market position as a Microsoft distributor"
    },
    "body": {
-    "ko": "국내 MS SPLA 유통시장에서 다수 지분을 차지하는 사업자로 평가받고 있으며, 이는 진입장벽이 높은 소수 사업자 구조에서 나온 결과다. MS 365·코파일럿 확산이 SME 시장을 중심으로 빠르게 나타나고 있다는 분석이 나오고 있어, 관련 라이선스 유통 수요가 이어질 가능성이 있다. 최근에는 어도비 파트너십까지 더해 단일 벤더 의존구조를 완화하려는 움직임도 나타난다.",
-    "en": "The company is regarded as holding the larger share in Korea's MS SPLA distribution market, a result of a high-barrier, low-competitor market structure. Analysts note that Microsoft 365 and Copilot adoption is expanding rapidly in the SME segment, suggesting continued demand for related license distribution. The recent addition of an Adobe partnership also signals moves to ease reliance on a single vendor."
+    "ko": "회사는 MS SPLA 방식의 총판 지위를 바탕으로 사업을 하고 있으며, IBK투자증권은 2024년 6월 발간 자료에서 국내 MS SW SPLA 시장 점유율을 70%로 봤다. 같은 증권사는 2025년 6월 보고서에서 MS 제품을 중소기업에 판매할 권리를 얻은 점을 관련 매출 증가 요인으로 꼽았다. 주력 파트너십이 유지되면 MS 제품 수요 증가가 매출로 연결되는 구조다.",
+    "en": "The company operates under a Microsoft SPLA distributor position, and IBK Investment & Securities estimated a 70% share of the domestic Microsoft SW SPLA market in a June 2024 publication. In a June 2025 report, the same brokerage cited the right to sell Microsoft products to small and mid-sized companies as a driver of related revenue. If this core partnership holds, rising Microsoft product demand can flow through to revenue."
    }
   },
   {
    "title": {
-    "ko": "유호스트 편입 이후 이익 정상화",
-    "en": "Profit Normalization Following Yohost Integration"
+    "ko": "2026년 하반기 이익 개선 기대",
+    "en": "Expected second-half 2026 earnings improvement"
    },
    "body": {
-    "ko": "2024년 낮았던 지배주주 순이익이 2025년 크게 회복된 것은 전년의 합병 관련 일회성 비용에 따른 기저효과가 컸다는 해석이 나온다. 유호스트는 LG유플러스 IDC 운영과 공공·금융기관 대상 클라우드 전환 등 안정적 사업기반을 갖추고 있다. 그룹 계열사인 가비아의 SME 고객 기반과 연계한 DaaS·MSP 교차판매 구조도 강점으로 꼽힌다.",
-    "en": "The sharp 2025 recovery in owners' net income from a depressed 2024 level is interpreted as largely a base effect from prior-year one-off merger-related costs. Yohost has a stable business base including IDC operations for LG Uplus and cloud migration for public and financial institutions. Cross-selling of DaaS and MSP services linked to affiliate Gabia's SME customer base is also cited as a strength."
+    "ko": "IBK투자증권은 2026년 6월 9일 보도에서 M365 가격 인상과 공공 예산 확대가 하반기 실적 개선으로 이어질 것으로 봤다. 회사는 2026년 4월 MS 보안 솔루션 매출이 큰 폭으로 증가하고 있다고 밝혔다. 두 요인이 2026 사업보고서 수치로 확인되면 영업이익 흐름을 가늠하는 근거가 된다.",
+    "en": "In a June 9, 2026 report, IBK Investment & Securities expected second-half earnings to improve on Microsoft 365 price increases and higher public-sector budgets. In April 2026 the company said its Microsoft security solution sales had risen sharply. If these factors show up in the 2026 annual business report, they will serve as evidence for the direction of operating profit."
    }
   },
   {
    "title": {
-    "ko": "AI 라이선스 플랫폼으로 사업모델 확장",
-    "en": "Business Model Expansion via AI License Platform"
+    "ko": "데이터센터와 AI 신규 사업 확장",
+    "en": "Expansion into data centers and AI services"
    },
    "body": {
-    "ko": "2026년 2월 코파일럿·어도비 AI 라이선스를 통합한 플랫폼을 선보이며 AIaaS 사업으로 영역을 넓히고 있다. 이어 SPLA 사용량 자동 집계 기능을 추가해 고객 락인 효과를 강화하려는 시도도 이어지고 있다. 이러한 플랫폼화 전략은 단순 라이선스 재판매업에서 벗어나려는 회사의 방향성을 보여준다.",
-    "en": "The February 2026 launch of an integrated Copilot-Adobe AI license platform expands the company's reach into the AIaaS business. It has followed up by adding an automated SPLA usage-aggregation feature to strengthen customer lock-in. This platform strategy reflects the company's direction away from simple license resale."
+    "ko": "회사는 데이터센터 자회사 매출이 2025년 연결 외형 확대에 기여했다고 설명했다. 어도비 VIP 마켓플레이스 파트너 자격을 얻어 통합 소프트웨어 플랫폼을 내놓았고, 서비스형 AI(AIaaS)로 사업 영역을 넓히고 있다. 2026년 2월 회사는 이들 신규 서비스를 중심으로 실적 호조세가 이어질 것이라고 밝혔다.",
+    "en": "The company said data-center subsidiary revenue contributed to the expansion of consolidated sales in 2025. It obtained Adobe VIP Marketplace partner status, launched an integrated software platform, and is extending into AI as a Service. In February 2026 the company said it expected its new services to keep supporting results."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "구조적으로 낮아지는 영업이익률",
-    "en": "Structurally Declining Operating Margin"
+    "ko": "영업이익률의 하락 추세",
+    "en": "Continued decline in operating margin"
    },
    "body": {
-    "ko": "영업이익률은 2022년 14.6%에서 2025년 6.6%까지 4년 연속 낮아지는 추세를 보였다. 매출 성장에도 이익 증가 속도가 이를 따라가지 못하는 구간이 반복되고 있다. 상대적으로 저마진인 유호스트(IDC·MSP) 매출 비중이 커진 점이 원인으로 지목된다.",
-    "en": "The operating margin has declined for four consecutive years, from 14.6% in 2022 to 6.6% in 2025. Profit growth has repeatedly failed to keep pace with revenue growth. The rising revenue share of the relatively lower-margin Yohost IDC/MSP business is cited as a contributing factor."
+    "ko": "영업이익률은 2022년 14.6%에서 2023년 13.5%, 2024년 8.3%, 2025년 6.6%로 낮아졌다. 영업이익은 2023년부터 2025년까지 3년 연속 감소했다. 2026년 3분기 영업이익은 5.8억원으로 전년 동기 대비 50.4% 감소해 공시 실적 기준 최근 다섯 분기 중 가장 낮았다.",
+    "en": "The operating margin declined from 14.6% in 2022 to 13.5%, 8.3% and 6.6% in 2025. Operating profit fell for three consecutive years from 2023 through 2025. Third-quarter 2026 operating profit of KRW 580 million was down 50.4% year on year and the lowest of the last five quarters on a reported basis."
    }
   },
   {
    "title": {
-    "ko": "단일 벤더 의존 구조",
-    "en": "Single-Vendor Dependency"
+    "ko": "순이익 회복의 일회성 성격",
+    "en": "One-off nature of the net income rebound"
    },
    "body": {
-    "ko": "매출의 상당 부분이 마이크로소프트 라이선스 유통에서 발생해 MS의 정책·가격 변경에 따른 영향력이 크다. 이런 구조는 시장에서도 수익구조 고착화에 대한 부담 요인으로 지목되고 있다. 어도비 파트너십 등 다변화 시도가 진행 중이지만 아직 초기 단계다.",
-    "en": "A substantial portion of revenue derives from Microsoft license distribution, leaving the company highly exposed to changes in Microsoft's pricing and policies. Market observers cite this locked-in Microsoft-centric revenue structure as a burden. Diversification efforts such as the Adobe partnership are underway but still at an early stage."
+    "ko": "2025년 지배주주 순이익 38.1억원의 회복은 2024년 일회성 비용이 해소된 데 따른 측면이 컸다고 회사가 설명했다. 최근 네 개 분기 지배주주 순이익 합계는 34.6억원이다. 2026년 1분기 9.1억원, 2분기 6.2억원, 3분기 6.4억원으로 분기 순이익은 2025년 4분기 12.9억원보다 낮은 수준에 머물렀다.",
+    "en": "The company explained that the 2025 rebound in net income attributable to controlling shareholders to KRW 3.81 billion reflected the disappearance of one-off costs in 2024. Net income attributable to controlling shareholders over the last four quarters totals KRW 3.46 billion. Quarterly figures of KRW 910 million, KRW 622 million and KRW 641 million in the first three quarters of 2026 stayed below the KRW 1.29 billion recorded in Q4 2025."
    }
   },
   {
    "title": {
-    "ko": "가비아그룹 중복상장·지배구조 리스크",
-    "en": "Gabia Group Duplicate-Listing and Governance Risk"
+    "ko": "기존 사업의 정체 우려",
+    "en": "Concern over stagnation in legacy businesses"
    },
    "body": {
-    "ko": "가비아→KINX→에스피소프트로 이어지는 다단계 상장 구조가 중복상장 논란의 대상이 되고 있다. 가비아 지분을 매집한 행동주의펀드의 등장으로 계열 재편 논의가 부상하고 있다. 포괄적 주식교환 등 재편 시나리오가 현실화될 경우 기존 주주와의 이해관계 조정이 필요할 수 있다.",
-    "en": "The multi-tiered listing chain from Gabia through KINX to SP Software has become a target of duplicate-listing controversy. An activist fund's stake-building in Gabia has fueled discussion of potential group restructuring. Should a restructuring scenario such as a comprehensive stock swap materialize, reconciling existing shareholders' interests could become necessary."
+    "ko": "2025년 6월 IBK투자증권 보고서는 웹하드 시스템 사업의 신규 고객 확보가 제한돼 매출이 완만하게 감소할 가능성을 제시했다. 기존 사업의 비중이 적지 않은 만큼 이 흐름이 전체 매출에 미치는 영향이 주목 대상이다.",
+    "en": "A June 2025 IBK Investment & Securities report said the web-hard system business has limited room to add new customers, so revenue could decline gradually. Given the weight of these legacy operations, their effect on total revenue is a point to watch."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "벤더 집중 리스크",
-    "en": "Vendor Concentration Risk"
+    "ko": "공급선 · 정책 의존",
+    "en": "Dependence on supplier and policy"
    },
    "body": {
-    "ko": "마이크로소프트의 라이선스 정책이나 가격 조건이 변경될 경우 수익성에 직접적인 영향을 줄 수 있다. 계열사 유호스트의 애저 특화 사업 역시 마이크로소프트 클라우드 정책에 연동돼 있다. 단일 벤더에 대한 높은 의존도는 협상력 저하로 이어질 가능성이 있다.",
-    "en": "Changes to Microsoft's licensing policies or pricing terms could directly affect profitability. Subsidiary Yohost's Azure-specialized business is likewise tied to Microsoft's cloud policies. High dependence on a single vendor could reduce the company's negotiating leverage."
+    "ko": "회사 사업은 MS의 라이선스 구조와 제품 정책에 크게 기대는 구조다. SPLA 방식의 유통 모델이라 공급 조건이 바뀌면 수익성에 바로 영향이 간다. 회사도 2025년 실적 설명에서 MS 파트너십 확장을 성장 근거로 들었기 때문에, 파트너 조건 변화는 실적 판단의 핵심 변수다.",
+    "en": "The business depends heavily on Microsoft's licensing structure and product policies. Under the SPLA distribution model, changes in supplier terms feed directly into profitability. Because the company cited expanded Microsoft partnerships as a basis for growth in its 2025 results, any change in partner terms is a key variable for assessing performance."
    }
   },
   {
    "cat": {
-    "ko": "지배구조·중복상장 리스크",
-    "en": "Governance and Duplicate-Listing Risk"
+    "ko": "최대주주 지분 집중",
+    "en": "Concentrated ownership by the largest shareholder"
    },
    "body": {
-    "ko": "가비아그룹 내 중복상장 이슈와 행동주의펀드 개입으로 계열 재편 시나리오가 거론되고 있다. 재편 방식에 따라 기존 소수주주의 이해관계가 영향을 받을 수 있다. 재편 시기와 방향은 아직 확정되지 않은 상태다.",
-    "en": "Duplicate-listing issues within the Gabia group and activist fund involvement have raised the prospect of group restructuring scenarios. Depending on the restructuring method, minority shareholders' interests could be affected. The timing and direction of any restructuring remain unconfirmed."
+    "ko": "케이아이엔엑스(Kinx)는 2026년 6월 17일 기준 41.28%를 보유한 대주주다. 지분이 한 곳에 집중돼 있으면 시장에서 유통되는 주식 물량과 주주 구성 변화가 거래에 영향을 줄 수 있다. 2026년 5월 29일에는 자사주 특정금전신탁 계약이 만료에 따라 해지됐다.",
+    "en": "Kinx holds a 41.28% stake as of June 17, 2026, making it the largest shareholder. Concentrated ownership can affect the volume of shares available for trading and the outcome of any changes in the shareholder base. On May 29, 2026, a treasury-share special money trust contract was terminated upon expiry."
    }
   },
   {
    "cat": {
-    "ko": "수익성·실적 변동성",
-    "en": "Profitability and Earnings Volatility"
+    "ko": "비용 구조와 자회사 변수",
+    "en": "Cost structure and subsidiary variables"
    },
    "body": {
-    "ko": "영업이익률이 다년간 하락 추세를 보이고 있고, 분기별 순이익도 영업외 요인에 따라 큰 편차를 보인다. 2026년 2분기에는 매출과 순이익이 모두 전년 동기보다 줄어든 것으로 나타났다. CSP·DaaS 시장 경쟁 심화도 마진 압박 요인으로 지목된다.",
-    "en": "The operating margin has trended lower over multiple years, and quarterly net income has shown large swings tied to non-operating items. Second-quarter 2026 results showed both revenue and net income declining year-over-year. Intensifying competition in the CSP and DaaS markets is also cited as a margin-pressure factor."
+    "ko": "데이터센터 자회사 편입 이후 외형은 커졌지만, 2024년에는 합병과 주식교환 관련 비용으로 지배주주 순이익이 3억원까지 줄었다. 일회성 비용이 반복되는지 여부가 순이익 안정성을 좌우한다. 영업이익 기준으로는 2025년 36.2억원으로 감소세가 이어졌다.",
+    "en": "Revenue expanded after the data-center subsidiary was acquired, but in 2024 merger and share-exchange costs reduced net income attributable to controlling shareholders to KRW 302 million. Whether one-off costs recur will determine the stability of net income. On an operating basis, profit declined further to KRW 3.62 billion in 2025."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중",
-    "en": "November 2026"
+    "ko": "2027년 2월 중순 전후",
+    "en": "Around mid-February 2027"
    },
    "what": {
-    "ko": "2026년 3분기 분기보고서 제출 및 실적 발표가 예정돼 있으며, 매출·영업이익이 상반기의 정체 국면에서 벗어나는지 확인이 필요하다.",
-    "en": "The third-quarter 2026 quarterly report and earnings are due, and it will be worth checking whether revenue and operating profit break out of the stagnation seen in the first half."
+    "ko": "2026 사업연도 연간 실적 공시 시점. 2025 사업연도 매출액 변동 공시가 2026년 2월 11일에 나온 전례가 있어, 이 무렵 연간 잠정 실적이 나오는지 확인한다. 매출 증가와 영업이익률 하락 추세가 이어지는지가 핵심이다.",
+    "en": "Timing of the 2026 fiscal-year annual results. The 2025 fiscal-year revenue-change disclosure came out on February 11, 2026, so the key is whether annual preliminary figures appear around the same period and whether revenue growth alongside the falling operating margin continues."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기",
-    "en": "Fourth quarter of 2026"
+    "ko": "2026년 12월 말",
+    "en": "End of December 2026"
    },
    "what": {
-    "ko": "코파일럿·어도비 통합 플랫폼과 SPLA 자동화 기능이 신규 매출로 이어지는지, 4분기 실적에 반영되는지를 확인할 필요가 있다.",
-    "en": "It will be important to check whether the integrated Copilot-Adobe platform and the SPLA automation feature translate into new revenue reflected in fourth-quarter results."
+    "ko": "M365 보안 솔루션 프로모션 종료 시점. 회사가 2026년 말까지로 밝힌 만큼, 기간 중 보안 솔루션 매출 흐름이 이후 사업보고서의 매출 설명에 나타나는지 본다.",
+    "en": "End of the Microsoft 365 security solution promotion, which the company said runs through the end of 2026. The follow-through of security-related revenue during and after the promotion will show in the revenue commentary of the next business report."
    }
   },
   {
    "when": {
-    "ko": "2027년 2월 전후",
-    "en": "Around February 2027"
+    "ko": "2027년 3월 말",
+    "en": "End of March 2027"
    },
    "what": {
-    "ko": "2026 사업연도 감사보고서 및 연간 실적 확정 발표 시점으로, 영업이익률 하락세가 지속되는지 여부를 점검할 시점이다.",
-    "en": "This is when the audited report and confirmed annual results for fiscal 2026 are expected, providing a checkpoint on whether the multi-year decline in operating margin continues."
+    "ko": "2026 사업연도 사업보고서 제출 기한. 분기 공시로 확인된 3분기 영업이익 감소가 연간 영업이익률과 지배주주 순이익에 어떻게 반영되는지, 하반기 개선 전망이 수치로 확인되는지 본다.",
+    "en": "Filing deadline for the 2026 fiscal-year business report. The focus is how the decline in third-quarter 2026 operating profit is reflected in the annual operating margin and net income attributable to controlling shareholders, and whether the expected second-half improvement appears in the figures."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 중",
-    "en": "Second half of 2026"
+    "ko": "2027년 5월 15일",
+    "en": "May 15, 2027"
    },
    "what": {
-    "ko": "가비아그룹의 중복상장 해소 관련 후속 조치나 공시, 행동주의펀드 관련 지배구조 논의 진행 상황을 확인할 필요가 있다.",
-    "en": "Follow-up disclosures on resolving the Gabia group's duplicate-listing structure and developments in the activist-fund-related governance discussion warrant monitoring."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 4분기 중",
-    "en": "Fourth quarter of 2026"
-   },
-   "what": {
-    "ko": "자회사 유호스트의 IDC·MSP 신규 계약 및 주요 고객사와의 협력 확대 여부를 확인할 필요가 있다.",
-    "en": "It will be worth confirming whether subsidiary Yohost secures new IDC/MSP contracts or expands cooperation with key clients."
+    "ko": "2027년 1분기 분기보고서 제출 기한. 2026년 사업보고서 이후 분기 매출과 영업이익이 2026년 3분기 수준에서 회복되는지, 신규 서비스 기여가 분기 수치로 드러나는지 확인한다.",
+    "en": "Filing deadline for the first-quarter 2027 quarterly report. The key is whether quarterly revenue and operating profit recover from third-quarter 2026 levels and whether contributions from new services become visible in quarterly figures."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "에스피소프트는 국내 MS SPLA 유통시장에서 지배적 지위를 가진 사업자로, 2025년 지배주주 순이익이 전년 대비 크게 늘며 유호스트 편입 관련 일회성 비용의 기저효과에서 벗어나는 모습을 보였다. 다만 영업이익률은 2022년 이후 4년 연속 낮아지는 추세이며, 2026년 들어서는 매출과 영업이익 모두 전년 동기 수준에서 정체되거나 소폭 줄어드는 분기가 이어지고 있다. 회사는 코파일럿·어도비 AI 라이선스를 결합한 통합 플랫폼 출시와 SPLA 자동화 기능 추가 등으로 사업모델을 AIaaS 방향으로 확장하려는 시도를 이어가고 있다. 동시에 가비아→KINX→에스피소프트로 이어지는 다단계 상장 구조가 중복상장 논란의 대상이 되고 있고, 행동주의펀드의 가비아 지분 매집으로 계열 재편 논의도 부상하고 있다. 단일 벤더 의존 구조와 그룹 지배구조 변수는 향후 실적과 기업가치 평가 모두에 영향을 줄 수 있는 요인으로 지목된다. 후속 실적 발표, AI 플랫폼의 매출 기여, 그룹 차원의 지배구조 재편 논의 등을 계속 확인할 필요가 있다.",
-   "en": "SP Software holds a dominant position in Korea's MS SPLA distribution market, and its 2025 net income attributable to owners rose sharply from the prior year as the base effect from one-off Yohost-integration costs faded. However, the operating margin has declined for four consecutive years since 2022, and in 2026 both revenue and operating profit have been essentially flat or modestly lower year-over-year across successive quarters. The company continues efforts to expand its business model toward AIaaS, including the launch of an integrated Copilot-Adobe AI license platform and the addition of an SPLA automation feature. At the same time, the multi-tiered listing structure from Gabia through KINX to SP Software has become a target of duplicate-listing controversy, and an activist fund's stake-building in Gabia has raised the prospect of group restructuring. Single-vendor dependency and group governance variables are cited as factors that could affect both future earnings and valuation. Upcoming earnings releases, the revenue contribution of the AI platform, and developments in group-level governance restructuring all warrant continued monitoring."
+   "ko": "에스피소프트는 MS 총판 지위와 데이터센터 자회사를 두 축으로 매출을 2025년 545억원까지 키웠고, 지배주주 순이익도 2024년 3억원에서 2025년 38.1억원으로 회복했다. 그러나 영업이익은 2023년부터 3년 연속 감소했고 영업이익률은 14.6%(2022년)에서 6.6%(2025년)로 낮아졌다. 회사는 순이익 회복의 배경으로 2024년 일회성 비용 해소를 들었으며, 이는 공시 수치로 확인되는 범위에서 기존 이익 체력과 구분해 봐야 한다. 2026년 분기 실적은 매출이 129억원에서 131억원 사이에서 횡보하고, 영업이익은 2026년 3분기 5.8억원까지 줄었다. 긍정적 요인으로는 MS 파트너십 기반 점유율, M365 가격 인상과 공공 예산 확대에 따른 하반기 개선 기대, MS 보안 솔루션 매출 증가가 거론된다. 부정적 요인으로는 영업이익률 하락, 분기 순이익 감소, 웹하드 등 기존 사업의 정체, 최대주주 지분 집중이 있다. 다음 확인 지점은 2026 사업연도 사업보고서의 연간 영업이익률과 2026년 말 보안 프로모션 종료 후 매출 흐름이다. 이 리포트는 투자의견과 목표주가를 제시하지 않는다.",
+   "en": "SPSoft built revenue to KRW 54.5 billion in 2025 on two pillars, its Microsoft distributor position and its data-center subsidiary, and net income attributable to controlling shareholders recovered from KRW 302 million in 2024 to KRW 3.81 billion in 2025. However, operating profit has declined for three consecutive years from 2023, and the operating margin fell from 14.6% in 2022 to 6.6% in 2025. The company attributes the earnings rebound to the absence of one-off costs in 2024, and that explanation should be weighed against the underlying earnings base shown in reported figures. Quarterly revenue has moved sideways between KRW 12.9 billion and KRW 14.1 billion through 2026, while operating profit fell to KRW 580 million in Q3 2026. Positive factors include the Microsoft partnership-based market position, expectations for second-half improvement from Microsoft 365 price increases and higher public budgets, and rising Microsoft security solution sales. Negative factors include the declining operating margin, lower quarterly net income, stagnation in legacy web-hard businesses, and concentrated ownership by the largest shareholder. The next checkpoints are the annual operating margin in the 2026 fiscal-year business report and the revenue trend after the security promotion ends at the end of 2026. This report does not present an investment opinion or target price."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A443670&MenuYn=Y",
-  "https://www.valueline.co.kr/finance/summary/443670",
-  "https://g2bmarket.com/detail/eseupisopeuteu",
-  "https://m.thinkpool.com/compDiscuss/cont/1013850",
   "https://www.digitaltoday.co.kr/news/articleView.html?idxno=630258",
-  "https://stocks.pluconnect.com/443670_%EC%97%90%EC%8A%A4%ED%94%BC%EC%86%8C%ED%94%84%ED%8A%B8/",
-  "https://www.forwarder.kr/krx/A443670",
-  "https://m.thinkpool.com/item/443670",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=Unx7r2TjxmoBUmyK",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=PifpSTCZxc3OUNbx",
-  "https://m.irgo.co.kr/IR-COMP/058610/",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=CFrsO9eY51aMwi0m",
-  "https://w4.kirs.or.kr/download/research/251208_%EC%97%90%EC%8A%A4%ED%94%BC%EC%86%8C%ED%94%84%ED%8A%B8.pdf",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=eNUsyKyq70w8ss1m",
-  "https://alphasquare.co.kr/home/stock-summary?code=443670",
+  "https://bigvalue.ai/dashboard/biz/6052762583",
+  "https://view.asiae.co.kr/article/2026021209492998045",
+  "https://news.nate.com/view/20260211n38978",
+  "https://www.etoday.co.kr/news/view/2555989",
+  "https://www.mt.co.kr/stock/2026/02/12/2026021208572058071",
   "https://goinsider.kr/stock/01381391",
-  "https://thevc.kr/spsoft",
-  "https://www.businesspost.co.kr/BP?command=article_view&num=425065"
+  "http://www.dailyinvest.kr/news/articleView.html?idxno=67162",
+  "https://www.finance-scope.com/article/view/scp202505080017",
+  "https://www.newspim.com/news/view/20260212000117",
+  "https://www.forwarder.kr/krx/A443670",
+  "https://en.edaily.co.kr/news/eda202606095095/",
+  "https://www.hankyung.com/article/202605158344i",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=Unx7r2TjxmoBUmyK",
+  "https://v.daum.net/v/20260420101332423",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=C4pASD12J1Ogy7C2"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "443670",
  "name": "에스피소프트",
  "name_en": "SPSoft Inc.",
@@ -234,11 +222,11 @@
   "인공지능(AI)"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 07:33",
- "dataDate": "20260904",
+ "reportDate": "2026-11-17",
+ "reportTs": "2026-11-17 03:46",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-09-04",
+  "asOf": "2026-11-16",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -309,12 +297,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 13657369096,
-    "op": 916701512,
-    "np_owner": 919079130
-   },
-   {
     "q": "2025Q3",
     "rev": 13172878792,
     "op": 1167420957,
@@ -337,29 +319,36 @@
     "rev": 13102284833,
     "op": 851505049,
     "np_owner": 622307088
+   },
+   {
+    "q": "2026Q3",
+    "rev": 12947315141,
+    "op": 579586877,
+    "np_owner": 641340381
    }
   ],
   "valuation": {
-   "price": 4070,
-   "mcap": 0.0977,
+   "price": 5460,
+   "mcap": 0.1311,
    "shares": 24010564,
-   "total_shares": 24741392,
+   "total_shares": 24010564,
    "wavg_shares": 24608885,
-   "per": 25.28,
-   "eps": 161,
-   "pbr": 1.5035,
-   "bps": 2707,
-   "roe_ttm": 5.9,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": 3947837642,
+   "per": 38.723,
+   "eps": 141,
+   "pbr": 1.9239,
+   "bps": 2838,
+   "roe_ttm": 5.0,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": 3459227631,
    "ccy": "KRW",
    "bps_src": "자체",
-   "eps_src": "공시",
-   "pbr_krx": 1.47,
+   "eps_src": "순이익÷주식수",
+   "pbr_krx": 1.97,
    "bps_krx": 2772.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
    "div": 0.0
   }
- }
+ },
+ "textRules": 2
 }

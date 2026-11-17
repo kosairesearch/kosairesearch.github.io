@@ -1,220 +1,210 @@
 {
  "title": {
-  "ko": "철근 한파 5개 분기, 저부채로 버티는 국면",
-  "en": "Five Straight Quarters of Rebar Losses, Cushioned by Low Debt"
+  "ko": "영업적자 5개 분기째, 업황 회복 확인이 과제",
+  "en": "Five Straight Quarters of Operating Losses; Recovery Still Unproven"
  },
  "lead": {
-  "ko": "한국철강은 건설경기 침체와 철근 수요 급감 속에 5개 분기 연속 영업손실을 이어가고 있으나, 낮은 부채비율과 양호한 현금흐름으로 재무 안정성은 유지하고 있다.",
-  "en": "Kisco Corp continues to post operating losses for five straight quarters amid a construction downturn and shrinking rebar demand, while maintaining balance-sheet stability through low leverage and positive operating cash flow."
+  "ko": "한국철강은 2025년 영업손실로 전환한 뒤 2026년 3분기까지 영업손실이 5개 분기 이어지고 있으며, 철강 업황은 가격 반등 신호가 나타났지만 내수 수요 회복은 제한적이라는 평가가 많다.",
+  "en": "Kisco swung to an operating loss in 2025 and has posted operating losses for five consecutive quarters through the third quarter of 2026, while steel prices have rebounded from their lows but most forecasts see only limited recovery in domestic demand."
  },
  "keypoints": [
   {
-   "ko": "2025년 연간 매출 4,866억원(전년 대비 18.9% 감소), 영업손실 387억원으로 적자 전환",
-   "en": "2025 annual revenue fell to KRW 486.6bn, down sharply from the prior year, with an operating loss of KRW 38.7bn"
+   "ko": "영업이익률은 2022년 11.4%에서 2025년 -8.0%로 떨어졌고, 2025년 영업손실은 387억원으로 적자 전환했다.",
+   "en": "The operating margin fell from 11.4% in 2022 to -8.0% in 2025, and the company recorded an operating loss of KRW 38.7 billion in 2025 after turning to a loss."
   },
   {
-   "ko": "2025Q3~2026Q2 최근 4개 분기 연속 영업손실 지속, 2026Q1 손실 폭이 가장 컸다가 2026Q2 매출 반등",
-   "en": "Operating losses persisted through the most recent four quarters (2025Q3-2026Q2), with the widest loss in 2026Q1 before a revenue rebound in 2026Q2"
+   "ko": "2026년 2분기 매출은 1,738억원으로 전 분기 대비 55.6% 늘었지만 같은 분기 영업손실은 62.8억원이었다. 매출 회복과 이익 회복이 같은 방향으로 움직이지 않았다.",
+   "en": "Sales rose to KRW 173.8 billion in the second quarter of 2026, up 55.6% from the prior quarter, yet the company still posted an operating loss of KRW 6.28 billion in the same quarter, so the sales recovery did not translate into profit."
   },
   {
-   "ko": "국내 철근 수요는 2026년 상반기 기준 3년 연속 최저 수준을 기록 중이며, 8대 철근 메이커 가동률도 낮은 수준에 머물러 있다",
-   "en": "Domestic rebar demand has hit a three-year low as of first-half 2026, with utilization at major rebar makers remaining depressed"
+   "ko": "최근 4개 분기(2025년 4분기~2026년 3분기) 지배주주 순손실 합계는 142억원이다. 지배주주 순이익은 2025년 4분기 한 분기만 흑자였고, 2026년 1분기부터 3분기까지 3개 분기 연속 적자다.",
+   "en": "Net loss attributable to controlling shareholders totaled KRW 14.2 billion over the last four quarters, with only the fourth quarter of 2025 in the black before three consecutive loss quarters through the third quarter of 2026."
   },
   {
-   "ko": "부채비율 12.4%(2025년)로 업종 내 낮은 레버리지를 유지하고 있으며, 영업손실에도 현금흐름(CFO)은 양(+)의 흐름을 유지",
-   "en": "Debt ratio stood at 12.4% in 2025, reflecting conservative leverage, and operating cash flow remained positive despite the net loss"
+   "ko": "국내 철강 업황은 열연강판 가격 반등과 반덤핑 관세 효과가 나타났지만, 한국신용평가와 삼정KPMG는 2026년 철강업 전망을 비우호적·부정으로 제시했다.",
+   "en": "Domestic steel prices have rebounded on anti-dumping duties, but Korea Ratings and Samjong KPMG both characterized the 2026 steel outlook as unfavorable or negative."
   },
   {
-   "ko": "정부의 국내생산세액공제 대상 확대 논의, EU CBAM 강화 등 철강 산업 정책 변수가 산재",
-   "en": "Policy variables such as potential expansion of domestic production tax credits and tightening EU CBAM rules remain in play for the steel sector"
+   "ko": "2025년 말 부채비율은 12.4%로 낮은 수준이고, 2025년 영업활동 현금흐름은 243억원 플러스였다. 주가순자산비율은 1배를 밑돌아 장부상 순자산보다 낮은 가격에서 거래되고 있다.",
+   "en": "The debt-to-equity ratio stood at 12.4% at the end of 2025, and operating cash flow remained positive at KRW 24.3 billion in 2025 even as the company posted an operating loss. The price-to-book ratio is below 1, so the shares trade under book value."
   }
  ],
  "business": {
-  "ko": "한국철강은 경상남도 창원에 본사를 둔 철근 전문 제강사로, 120톤 전기로와 압연설비를 보유하고 철근을 생산한다. 주요 제품인 철근은 전체 매출의 약 93~94%를 차지하는 절대적 비중을 갖고 있으며, 나머지는 강관·단조 등 부수 제품에서 발생한다. 주요 판매처는 건설사, 유통상, 조달청 등이며, 원재료는 철스크랩(고철)에 절대적으로 의존한다. 국내 철근 시장에서 한국철강의 점유율은 약 10%대 초중반 수준으로 파악되며, 현대제철·동국제강·대한제강·환영철강공업·와이케이스틸·한국제강·한국특강 등과 함께 국내 8대 철근 메이커 구도를 형성하고 있다. 이 중 한국철강·대한제강·환영철강공업은 철근 비중이 특히 높은 '철근 전문' 3사로 분류된다. 건설업 경기와 밀접하게 연동되는 사업 구조상 국내 건설 발주·착공 물량 변화가 실적에 직접적인 영향을 미친다. 회사는 저가 원재료 확보, 판매처 다각화, 디지털 전환을 통한 생산공정 효율화 등을 통해 원가 절감과 경쟁력 강화를 추진하고 있다. 최근분기 말 기준 자사주 비중이 13%대에 이르는 것으로 파악되어 유통주식 수가 상대적으로 제한적인 구조다.",
-  "en": "Kisco Corp is a Changwon-headquartered rebar-focused steelmaker operating a 120-ton electric arc furnace and rolling facilities. Rebar accounts for roughly 93-94% of total revenue, with the remainder coming from steel pipe and forged products. Its main customers are construction companies, distributors, and the Public Procurement Service, and the company is heavily dependent on steel scrap as its primary raw material. Kisco's domestic rebar market share is estimated in the low-to-mid teens percentage range, positioning it alongside Hyundai Steel, Dongkuk Steel, Daehan Steel, Hwanyoung Steel, YK Steel, Korea Steel, and Korea Special Steel as one of the eight major domestic rebar producers. Among these, Kisco, Daehan Steel, and Hwanyoung Steel are classified as the three specialized rebar makers given their especially high rebar exposure. Because its business is closely tied to construction activity, changes in domestic construction orders and starts have a direct impact on earnings. The company is pursuing cost reduction through low-cost raw material sourcing, customer diversification, and digital transformation of production processes. As of the most recent quarter, treasury shares are reported at roughly 13% of outstanding shares, which constrains the freely tradable float."
+  "ko": "한국철강은 철강·금속 업종에 속한 철강 제조 회사로, KISCO홀딩스가 잔여 지분 공개매수에 나선다는 보도의 대상 회사이기도 하다. 철강 수요처는 건설, 자동차, 조선, 일반 기계 등으로 나뉘는데, 수요처별 회복 속도가 달라 회사 실적도 어느 수요처의 비중이 큰지에 따라 달라진다. 건설용 봉형강 수요는 건설 경기 침체가 이어지면서 회복이 더딜 것이라는 분석이 많다. 반면 자동차강판과 조선용 후판 수요는 상대적으로 견조하다는 평가가 나온다. 동국제강은 2026년 3분기 봉형강 판매량이 전년 동기 대비 17% 늘어난 68만 2,000톤이었다고 밝혔고, 반도체 공장과 AI 데이터센터 같은 대형 산업시설 프로젝트를 새 수요처로 삼았다. 국내 대형 철강사인 포스코, 현대제철, 동국제강은 2026년 3분기 별도 기준으로 수익성 회복 방식이 서로 달랐으며, 이는 제품 구성과 수요처 차이에서 나온 결과다. 한국철강의 제품 라인업과 부문별 비중은 DART 사업보고서와 IR 자료로 따로 확인해야 하는 항목이다. 원재료 측면에서는 철광석과 원료탄 가격이 제품 가격과 함께 마진을 결정하는 구조라, 원가 전가가 얼마나 되는지가 실적의 핵심 변수가 된다. 지배구조 측면에서는 KISCO홀딩스의 잔여 지분 공개매수 조건이 주주 구성과 거래 구조를 바꿀 수 있어 공시 내용을 함께 봐야 한다. 정리하면 한국철강의 사업 구조는 건설 중심 봉형강 수요의 약세와 고부가 수요의 선택적 회복이 맞물린 형태로 볼 수 있다.",
+  "en": "Kisco is a steel producer in the steel and metals sector, and it is the company named in reports that KISCO Holdings is making a tender offer for its remaining shares. Steel demand comes from construction, automotive, shipbuilding and general machinery, and each channel recovers at a different pace, so the company's results depend on which channel carries more weight. Analysts broadly expect demand for construction-grade long steel to recover slowly while the construction slump persists. By contrast, demand for automotive sheet and shipbuilding plate is described as comparatively firm. Dongkuk Steel Mill reported third-quarter 2026 long-steel sales volume of 682,000 tons, up 17% year on year, supported by large industrial projects such as semiconductor fabs and AI data centers. Among the large domestic steelmakers, POSCO Holdings, Hyundai Steel and Dongkuk Steel Mill showed different profitability recovery paths in the third quarter of 2026 on a standalone basis, reflecting differences in product mix and end markets. Kisco's own product lineup and segment weights should be checked against its DART annual report and IR materials. On the input side, iron ore and coking coal costs set the margin along with product prices, so how much cost can be passed through to customers is the central variable. On governance, the terms and timing of the tender offer by KISCO Holdings could change the shareholder base and trading structure, so the filing details matter. In short, the business structure combines weak construction-linked long-steel demand with selective recovery in higher-value demand."
  },
  "earnings": {
-  "ko": "한국철강의 실적은 2022년부터 2025년까지 뚜렷한 하락 궤적을 보였다. 2022년 매출 1조 641억원, 영업이익 1,215억원(영업이익률 11.4%)에서 2023년 매출 9,051억원, 영업이익 866억원(9.6%)으로 외형과 마진이 함께 줄었고, 2024년에는 매출이 6,000억원으로 급감하면서 영업이익도 18억원(영업이익률 0.3%)까지 쪼그라들었다. 2025년에는 매출 4,866억원(전년 대비 18.9% 감소)에 영업손실 387억원(영업이익률 -8.0%), 순손실 89억원으로 완전히 적자 구조로 전환됐다. 분기별로 보면 최근 4개 분기(2025Q3~2026Q2) 동안 영업손실이 매 분기 이어졌다: 2025Q3 매출 1,217억원·영업손실 98억원, 2025Q4 매출 1,264억원·영업손실 158억원(다만 순이익은 일회성 요인으로 21억원 흑자), 2026Q1 매출 1,117억원·영업손실 143억원으로 손실 폭이 가장 컸고, 2026Q2에는 매출이 1,738억원으로 큰 폭 반등했음에도 영업손실 63억원이 지속됐다. 이 같은 매출 회복 속 손실 지속 패턴은 판매물량 증가가 있었더라도 원가(철스크랩) 부담과 판가 스프레드 압박이 여전히 해소되지 않았음을 시사한다. 다만 2025년 영업활동현금흐름(CFO)은 243억원으로 순손실에도 양(+)의 현금흐름을 유지했으며, 부채비율은 12.4%로 최근 4개 연도 중 가장 낮은 수준을 기록해 재무 건전성 자체는 훼손되지 않았다. 지배주주 자기자본은 2024년 8,104억원에서 2025년 7,708억원으로 줄었는데, 이는 순손실과 배당 지급 등이 반영된 결과로 해석된다.",
-  "en": "Kisco's earnings trajectory from 2022 to 2025 shows a clear downward path. Revenue fell from KRW 1,064.2bn with operating profit of KRW 121.5bn (11.4% operating margin) in 2022, to KRW 905.1bn and KRW 86.6bn (9.6%) in 2023, before collapsing to KRW 600.0bn in revenue and just KRW 1.8bn in operating profit (0.3% margin) in 2024. In 2025, revenue fell further to KRW 486.6bn (down 18.9% year over year) and the company swung to an operating loss of KRW 38.7bn (-8.0% margin) and a net loss of KRW 8.9bn. On a quarterly basis, the trailing four-quarter window (2025Q3-2026Q2) shows operating losses in every quarter: KRW 121.7bn revenue with a KRW 9.8bn operating loss in 2025Q3, KRW 126.4bn revenue with a KRW 15.8bn operating loss in 2025Q4 (though net income turned positive at KRW 2.1bn on one-off items), the widest operating loss of KRW 14.3bn on KRW 111.7bn revenue in 2026Q1, and a sharp revenue rebound to KRW 173.8bn in 2026Q2 that still came with a KRW 6.3bn operating loss. This pattern of recovering sales alongside persistent losses suggests that even with higher shipment volumes, scrap cost pressure and thin product spreads have not been resolved. Still, 2025 operating cash flow remained positive at KRW 24.3bn despite the net loss, and the debt ratio fell to 12.4%, the lowest of the past four years, indicating balance-sheet health was not materially impaired. Owners' equity declined from KRW 810.4bn in 2024 to KRW 770.8bn in 2025, reflecting the net loss combined with dividend payments."
+  "ko": "공시 연간 실적 기준 매출은 2022년 1조 642억원에서 2023년 9,051억원(전년 대비 14.9% 감소), 2024년 6,000억원(전년 대비 33.7% 감소), 2025년 4,866억원(전년 대비 18.9% 감소)으로 줄었다. 2023년부터 2025년까지 3년 연속 감소했고, 2022~2025년 중 가장 큰 해는 2022년, 가장 작은 해는 2025년이다. 영업이익은 2022년 1,215억원, 2023년 866억원(전년 대비 28.8% 감소), 2024년 18.1억원(전년 대비 97.9% 감소)으로 줄다가 2025년에는 영업손실 387억원으로 적자 전환했다. 영업이익률은 2022년 11.4%, 2023년 9.6%, 2024년 0.3%, 2025년 -8.0%로 하락 폭이 커졌다. 지배주주 순이익은 2022년 798억원, 2023년 682억원(전년 대비 14.5% 감소), 2024년 235억원(전년 대비 65.6% 감소)을 거쳐 2025년 지배주주 순손실 89.2억원으로 적자 전환했다. 당기순이익(비지배지분 포함)도 같은 해 수치대로 2025년 당기순손실 89.2억원이다. 분기 실적을 보면 영업손실은 2025년 3분기 97.7억원, 2025년 4분기 158억원(손실 확대), 2026년 1분기 143억원(손실 축소), 2026년 2분기 62.8억원(손실 축소), 2026년 3분기 70.5억원(손실 확대, 전년 동기 대비 손실 축소)으로 5개 분기 연속 적자다. 매출은 2026년 2분기 1,738억원으로 전 분기 대비 55.6% 늘었지만, 손실은 줄지 않았다. 2026년 3분기 매출 1,234억원은 전년 동기 대비 1.4% 증가에 그쳤다. 이익 악화의 원인은 공시 수치만으로 가격과 원가, 가동률로 나눠 보기 어려워 사업보고서의 원가·판가 자료로 분해해 볼 필요가 있다. 재무 측면에서 부채비율은 2024년 10.9%에서 2025년 12.4%로 소폭 올랐고, 영업활동 현금흐름은 2022년 364억원, 2023년 650억원, 2024년 384억원, 2025년 243억원으로 2023년 고점 이후 줄고 있다.",
+  "en": "On the filed annual results, sales fell from KRW 1.06 trillion in 2022 to KRW 905.1 billion in 2023 (down 14.9% year on year), to KRW 600 billion in 2024 (down 33.7%), and to KRW 486.6 billion in 2025 (down 18.9%). Sales declined for three consecutive years from 2023 through 2025, with 2022 the largest year and 2025 the smallest in the 2022–2025 period. Operating profit went from KRW 121.5 billion in 2022 to KRW 86.6 billion in 2023 (down 28.8%) and KRW 1.81 billion in 2024 (down 97.9%), before turning into an operating loss of KRW 38.7 billion in 2025. The operating margin declined from 11.4% in 2022 to 9.6% in 2023, 0.3% in 2024 and -8.0% in 2025. Net profit attributable to controlling shareholders fell from KRW 79.8 billion in 2022 to KRW 68.2 billion in 2023 (down 14.5%) and KRW 23.5 billion in 2024 (down 65.6%), then became a net loss of KRW 8.92 billion in 2025. Net income including non-controlling interests matched these figures in each year, with a 2025 net loss of KRW 8.92 billion. On a quarterly basis, operating losses were KRW 9.77 billion in the third quarter of 2025, KRW 15.8 billion in the fourth quarter of 2025 (wider), KRW 14.3 billion in the first quarter of 2026 (narrower), KRW 6.28 billion in the second quarter of 2026 (narrower) and KRW 7.05 billion in the third quarter of 2026 (wider quarter on quarter, but narrower year on year), making five consecutive quarters of operating losses. Sales reached KRW 173.8 billion in the second quarter of 2026, up 55.6% from the prior quarter, but the loss did not narrow with that volume. Third-quarter 2026 sales of KRW 123.4 billion rose only 1.4% year on year. The filed figures alone do not separate price, cost and utilization effects, so the annual report's cost and pricing data are needed to decompose the margin decline. On the balance sheet, the debt-to-equity ratio edged up from 10.9% in 2024 to 12.4% in 2025, and operating cash flow declined from KRW 65 billion in 2023 to KRW 38.4 billion in 2024 and KRW 24.3 billion in 2025."
  },
  "industry": {
-  "ko": "국내 철근 산업은 건설경기 침체의 직접적인 영향권에 있다. 업계 추산에 따르면 2026년 상반기 국내 철근 수요는 약 659만톤으로 3년 연속 최저치를 기록했다. 이에 따라 주요 제강사들은 감산으로 대응하고 있는데, 8대 철근 메이커의 압연 기준 가동률은 2026년 7월 기준 66.4% 수준으로 70%에도 못 미치는 낮은 수준을 유지할 것으로 조사됐다. 원가 측에서는 철스크랩(고철) 가격이 변동성을 보이는 가운데, 8월 들어 국내 주요 제강사들이 잇따라 구매가격을 인하하는 흐름과 글로벌 지표 기준 가격이 완만히 상승하는 흐름이 혼재돼 있다. 실제로 8월 둘째 주에는 현대제철의 인하를 시작으로 한국철강을 포함한 다수 제강사가 철스크랩 구매가격을 인하했지만, 건설 수요 자체의 부족이 여전히 철근 가격 반등을 제약하는 핵심 요인으로 지목된다. 이런 환경에서 대한제강·한국철강·환영철강공업 등 철근 전문 3사의 2026년 상반기 합산 매출은 전년 동기 대비 늘었으나, 합산 영업손실은 오히려 확대된 것으로 집계돼 수출 확대와 판가 인상 시도가 원가 상승에 상쇄되는 구조적 어려움을 보여준다. 정책 측면에서는 저탄소 전환과 공급과잉 구조조정을 골자로 하는 이른바 'K-스틸법' 논의가 진행 중이며, 정부는 2026년 세제개편안에서 철강을 국내생산세액공제 대상에 포함하는 방안을 산업통상부 장관이 재정당국과 협의하겠다고 밝혔으나 9월 정기국회 제출 전까지 확정된 것은 아니다. 경쟁 구도 측면에서 한국철강은 대한제강 등과 유사하게 수출 시장에서 돌파구를 찾으려는 시도가 이어지고 있으나, 표준 인증 포트폴리오나 글로벌 네트워크 측면에서 경쟁사와의 차별화 정도는 회사별로 다르게 나타난다.",
-  "en": "The domestic rebar industry sits squarely in the path of the construction downturn. Industry estimates put first-half 2026 domestic rebar demand at roughly 6.59 million tons, a three-year low. In response, major steelmakers have been cutting output, with rolling-based utilization at the eight major rebar makers surveyed at around 66.4% in July 2026, remaining below the 70% threshold. On the cost side, steel scrap prices have shown mixed signals, with several major domestic mills cutting purchase prices in August even as some global scrap benchmarks edged higher. In the second week of August, Hyundai Steel led a wave of scrap purchase price cuts that included Kisco among other mills, yet insufficient underlying construction demand was cited as the key factor still constraining any rebar price rebound. Against this backdrop, combined first-half 2026 revenue at the three specialized rebar makers—Daehan Steel, Kisco, and Hwanyoung Steel—rose year over year, but their combined operating loss reportedly widened, illustrating how export expansion and price-increase attempts have been offset by rising input costs. On the policy front, discussions around the so-called \"K-Steel Act,"
+  "ko": "2026년 국내 철강 업황은 바닥을 다지는 국면이라는 평가가 많지만 회복 폭은 제한적이라는 시각이 우세하다. 한국신용평가는 2026년 철강업 산업 전망을 '비우호적', 산업 크레딧 전망을 '부정적'으로 제시하며 내수 침체, 중국 수출, 보호무역을 3대 위협으로 꼽았다. 삼정KPMG도 철강업 업황을 5단계 중 두 번째로 나쁜 '부정'으로 산정했다. 산업연구원(KIET)은 2026년 국내 철강 내수를 4,341만 3,000톤으로 전년 대비 0.4% 줄 것으로 보았고, 생산은 0.2% 늘 것으로 전망했다. 가격 측면에서는 반덤핑 관세가 중국산 수입을 줄이면서 반등의 동력이 됐다는 평가가 나온다. 하나증권 집계로 2026년 5월 11일 기준 국내 열연강판 가격은 톤당 96만원으로 연초 대비 8.8~21.8% 올랐다. 한국철강협회 집계로 2026년 1분기 중국산 열연강판 수입은 전년 동기 대비 크게 줄었다. 다만 EU 탄소국경조정제도(CBAM)가 2026년 1월부터 본격 시행되면서 대한상공회의소는 EU로 수출하는 국내 철강 제품의 인증서 비용을 2026년 851억원에서 2034년 5,589억원으로 추산했다. 세계철강협회는 2026년 한국 철강 수요가 1.8% 늘 것으로 예상했고 2027년에는 1.3% 늘 것으로 봤다. 경쟁사와 비교하면, 2026년 3분기 별도 기준 영업이익률은 포스코 4.6%, 동국제강 약 3.2%, 현대제철 0.3%였다. 한국철강은 같은 분기 영업손실을 냈으므로 업황 반등의 혜택이 수익성으로 얼마나 전달되는지가 비교의 핵심이다. 조선과 방산은 긍정적으로 평가됐지만 건설과 석유화학은 부정적 전망을 받았다.",
+  "en": "Most assessments describe the domestic steel sector in 2026 as a bottoming phase, but the prevailing view is that the recovery will be limited. Korea Ratings rated the 2026 steel industry outlook as unfavorable and the industry credit outlook as negative, citing domestic demand weakness, Chinese exports and trade protectionism as the three main threats. Samjong KPMG also rated steel as negative, the second-lowest of five levels. The Korea Institute for Industrial Economics and Trade expects domestic steel consumption to fall 0.4% in 2026 to 43.41 million tons, while production is seen rising 0.2%. On prices, anti-dumping duties that reduced Chinese imports have been cited as the main driver of the rebound. According to Hana Securities data as of May 11, 2026, domestic hot-rolled coil prices were KRW 960,000 per ton, up 8.8% to 21.8% from the start of the year depending on the product. Korean steel association data showed first-quarter 2026 hot-rolled imports from China falling sharply year on year. The EU's carbon border adjustment mechanism (CBAM) has been in force since January 2026, and the Korea Chamber of Commerce and Industry estimated the certificate cost for Korean steel exports to the EU at KRW 85.1 billion in 2026, rising to KRW 558.9 billion in 2034. The World Steel Association expects Korean steel demand to grow 1.8% in 2026 and 1.3% in 2027. Against peers, the standalone third-quarter 2026 operating margins were 4.6% at POSCO Holdings, about 3.2% at Dongkuk Steel Mill and 0.3% at Hyundai Steel. Kisco posted an operating loss in the same quarter, so the key comparison is how much of the sector's price rebound reaches its profitability. Shipbuilding and defense were rated favorably, while construction and petrochemicals received negative outlooks."
  },
  "outlook": {
-  "ko": "회사 차원의 구체적인 증설·신제품 가이던스는 확인되지 않으며, 실적 향방은 상당 부분 철근 시황과 원가 변수에 좌우되는 구조다. 2026년 7월 기준 철근 유통가격은 국내산 톤당 86만~87만원 수준에서 형성됐고, 동국제강이 판매가격을 인상하는 등 업계 전반의 가격 정상화 시도가 관측됐으나, 8월 들어서도 건설 성수기 진입 이후에도 주문 회복이 뚜렷하지 않은 것으로 파악된다. 원가 측에서는 철스크랩 구매가격 인하와 국제 가격 등락이 혼재하며, 원가-판가 스프레드의 방향성은 아직 명확하지 않다. 정책 변수로는 정부의 국내생산세액공제 철강 포함 여부, EU CBAM(탄소국경조정제도) 강화 등이 2026년 하반기 이후 실적과 수출 채산성에 영향을 줄 수 있는 요인으로 거론된다. 현대차증권은 2026년 2월 리포트에서 2026년 국내 철근 수요가 전년 대비 증가하고 철근 가격 상승에 따라 실적이 개선될 것으로 전망한 바 있으나, 이후 발표된 2026년 1~2분기 실적은 여전히 영업손실을 기록해 해당 전망의 실현 여부는 아직 분기 실적으로 확인되지 않은 상태다. 회사는 원가절감, 저가 원재료 확보, 판매처 다각화, 디지털 전환을 통한 생산공정 효율화를 지속 추진한다는 방침을 유지하고 있다. 하반기 실적의 관전 포인트는 성수기 진입에 따른 수주·물량 회복 여부와 철스크랩 가격 안정화 여부, 그리고 정부 세제 지원 확정 여부로 압축된다.",
-  "en": "No specific company-level capacity expansion or new-product guidance has been confirmed, and the earnings outlook remains heavily tied to rebar market conditions and cost variables. As of July 2026, domestic rebar distribution prices were forming around KRW 860,000-870,000 per ton, and industry-wide attempts at price normalization were observed, including a price hike announced by Dongkuk Steel, though order recovery remained unclear even after entering the August construction peak season. On the cost side, scrap purchase price cuts and mixed movements in international benchmarks leave the direction of the cost-price spread unclear. Policy variables such as whether steel will be included in domestic production tax credits and the tightening of the EU's Carbon Border Adjustment Mechanism are cited as factors that could affect earnings and export profitability from the second half of 2026 onward. Hyundai Motor Securities projected in a February 2026 report that domestic rebar demand in 2026 would increase year over year and that earnings would improve on rising rebar prices, but subsequent first- and second-quarter 2026 results still showed operating losses, meaning the realization of that view has not yet been confirmed by quarterly results. The company maintains its stated policy of continuing cost reduction, securing low-cost raw materials, diversifying sales channels, and improving production efficiency through digital transformation. Key points to watch for the second half include whether order volumes recover with the peak season, whether scrap prices stabilize, and whether government tax support is finalized."
+  "ko": "회사 차원의 수주, 증설, 신제품 일정은 DART 공시와 IR 자료로 추적해야 하는 항목이며, 외부 매체에서 확인된 가이던스는 제한적이다. 현재 확인된 가장 구체적인 지배구조 이벤트는 KISCO홀딩스가 한국철강의 잔여 지분을 주당 1만 3,000원에 공개매수한다는 보도다. 공개매수의 일정과 조건은 공시 기준으로 확정되며, 결과에 따라 유통 주식 수와 거래 구조가 바뀔 수 있다. 업황 측면에서 산업연구원은 2026년 하반기에 철강 산업이 바닥을 다지는 국면이라고 보았고, 상반기 철강 판매가격 상승이 하반기에는 상승세가 둔화될 것으로 전망했다. 삼정KPMG는 2026년 국내 철강 수요가 0.6% 늘 것으로 보았다. 페로타임즈 칼럼은 2026년 국내 철강을 'L자형' 흐름, 즉 V자 반등보다 바닥을 다지는 흐름으로 보며 회복률을 0.6% 수준으로 제시했다. 수요 측면에서 AI 데이터센터, 반도체 공장, 에너지 전환 분야가 고부가 강재 수요를 끌어올릴 것이라는 전망이 나온다. 이 분야는 경쟁사들이 신사업으로 적극 공략하는 영역이다. 현대제철은 AI 데이터센터 7곳에서 3만톤 이상의 철강재 공급 계약을 따냈다고 밝혔다. 한국철강이 이 수요처에 얼마나 참여하는지는 공시와 사업보고서에서 확인해야 한다. 원재료 측면에서는 삼정KPMG가 2026년 원료탄 가격이 소폭 상승할 것으로 전망했는데, 이는 마진에 부담으로 작용할 수 있다. 다음 확인 지점은 2026년 사업보고서에서 영업이익률이 2025년 -8.0%에서 방향을 바꾸는지다.",
+  "en": "Company-level plans for orders, capacity expansion and new products are tracked through DART filings and IR materials, and external sources provide only limited guidance. The most concrete governance event reported so far is KISCO Holdings' tender offer for Kisco's remaining shares at KRW 13,000 per share. The schedule and terms of the tender offer are set by the filing, and the outcome could change the number of freely tradable shares and the trading structure. On the sector side, KIET sees the steel industry bottoming in the second half of 2026, with price increases in the first half expected to slow in the second half. Samjong KPMG projects domestic steel demand to rise 0.6% in 2026. A Ferrotimes column describes the 2026 domestic outlook as an L-shaped path rather than a V-shaped rebound, with recovery of about 0.6%. Demand for higher-value steel is expected from AI data centers, semiconductor fabs and energy transition projects, and peers are pursuing these markets as new businesses. Hyundai Steel reported winning supply contracts for more than 30,000 tons of steel from seven domestic AI data centers. Whether Kisco participates in these channels should be checked in its filings and annual report. On inputs, Samjong KPMG expects coking coal prices to rise slightly in 2026, which could weigh on margins. The next checkpoint is whether the operating margin, which was -8.0% in 2025, changes direction in the 2026 annual report."
  },
  "valuation_comment": {
-  "ko": "한국철강의 주가는 주당순자산에 못 미치는 수준에서 거래되는 구간으로, 순자산 대비 할인된 상태가 이어지고 있다. 과거 5년 평균 배수와 비교하면 최근 실적 부진 국면에서도 밸류에이션 재평가가 뚜렷하게 이뤄지지 않은 모습이다. 이익 측면에서는 2022~2023년 흑자 구간에서 2024년 소폭 흑자, 2025년 적자로 전환된 흐름이 이어지고 있어, 최근 실적만 놓고 보면 통상적인 이익 기반 밸류에이션 지표를 적용하기 어려운 국면이다. 배당 측면에서는 순손실에도 배당을 지급한 이력이 있어 주주환원 정책 자체는 유지되고 있는 것으로 파악되나, 배당 지속 가능성은 향후 이익 회복 여부에 달려 있다. 현대차증권은 2026년 2월 리포트에서 지속가능한 수익성 수준과 순자산가치를 근거로 적정 주가순자산비율을 산출해 목표주가를 제시한 바 있으나, 해당 시점으로부터 상당한 시간이 지나 현재 시점의 판단으로 옮기기는 어렵다.",
-  "en": "Kisco's share price trades at a level below stated book value per share, reflecting a discount to net assets that has persisted. Compared with the company's five-year average trading multiples, valuation has not clearly re-rated even through the recent earnings downturn. On the earnings side, the shift from profitability in 2022-2023, to a modest profit in 2024, to a loss in 2025 means conventional earnings-based valuation metrics are difficult to apply cleanly to the most recent period. On the dividend side, the company has a track record of paying dividends even in a net-loss year, suggesting its shareholder-return policy remains intact, though the sustainability of future payouts depends on earnings recovery. Hyundai Motor Securities issued a target price in a February 2026 report based on an appropriate price-to-book multiple derived from a sustainable profitability assumption and book value, but given the considerable time that has passed since that report, it should not be carried forward as a reflection of the current situation."
+  "ko": "주가순자산비율이 1배를 밑돌아 주가가 장부상 자기자본보다 낮은 수준에서 형성되어 있다. 2025년 말 자본총계와 지배주주 지분이 같은 7,708억원이고 부채총계는 959억원으로 부채비율이 12.4%이므로, 재무 구조상 부채 부담은 낮은 편이다. 반면 최근 4개 분기 기준 순손실이 이어져 이익 기반 배수인 주가수익비율은 산출되지 않는다. 영업활동 현금흐름은 2025년에도 243억원 플러스였으나, 2023년 650억원 고점 이후 3년 연속 감소 흐름이다. 배당은 이익 대비 현금 창출과 함께 봐야 하는 지표로, 적자 구간에서 배당을 유지할 현금 여력이 있는지가 관건이다. 주가순자산비율이 낮은 구간은 자산의 장부가치가 주가를 받치는 근거가 되지만, 자산이 수익을 내지 못하면 장부가치의 의미가 줄어든다. 과거 거래 구간과 비교하면 현재 배수는 밴드의 하단 쪽에 위치하는 것으로 해석된다. 이 두 해석은 모두 사실 비교에 해당하며, 어느 쪽에 무게를 둘지는 영업 정상화 여부에 달려 있다.",
+  "en": "The price-to-book ratio is below 1, meaning the shares trade under the company's book equity. Total equity and equity attributable to controlling shareholders were both KRW 770.8 billion at the end of 2025, and total liabilities were KRW 95.9 billion, a debt-to-equity ratio of 12.4%, so the balance-sheet leverage is low. Because the company has posted net losses over the last four quarters, an earnings-based price-to-earnings multiple cannot be calculated. Operating cash flow remained positive at KRW 24.3 billion in 2025, but it has declined for three straight years from the KRW 65 billion peak in 2023. Dividend capacity should be read alongside cash generation, so whether cash flow can support payouts during the loss period is the key question. A price-to-book ratio below 1 gives book value some support, but that support weakens if the assets do not generate earnings. Compared with its own trading history, the current multiple sits toward the lower end of its range. Both readings are factual comparisons, and which one carries more weight depends on whether operations return to profit."
  },
  "bull": [
   {
    "title": {
-    "ko": "낮은 부채비율과 양(+)의 현금흐름",
-    "en": "Low Leverage and Positive Cash Flow"
+    "ko": "가격 반등과 수입 감소",
+    "en": "Price rebound and lower imports"
    },
    "body": {
-    "ko": "2025년 부채비율이 12.4%로 최근 4개 연도 중 가장 낮은 수준을 기록했고, 순손실에도 영업활동현금흐름(CFO)은 243억원의 양(+) 흐름을 유지했다. 이는 재무구조 자체는 크게 훼손되지 않았음을 시사한다. 보수적인 재무 정책은 업황 악화 국면에서 버틸 수 있는 여력을 제공한다.",
-    "en": "The 2025 debt ratio of 12.4% was the lowest of the past four years, and operating cash flow remained positive at KRW 24.3bn even amid a net loss. This suggests the balance sheet itself has not been materially impaired. A conservative financial policy provides some cushion to withstand the current industry downturn."
+    "ko": "하나증권 집계로 2026년 5월 11일 기준 국내 열연강판 가격은 연초 대비 8.8~21.8% 상승했다. 반덤핑 관세로 2026년 1분기 중국산 열연강판 수입이 전년 동기 대비 크게 줄었다는 점이 가격 반등의 근거로 제시된다. 가격이 오르면 판가 상승분이 원가 부담을 상쇄하는 구조가 될 수 있어, 업황 개선이 실적으로 이어질지가 관심사다.",
+    "en": "According to Hana Securities data as of May 11, 2026, domestic hot-rolled coil prices rose 8.8% to 21.8% from the start of the year. Anti-dumping duties are cited as the basis for the rebound, with first-quarter 2026 hot-rolled imports from China falling sharply year on year. If higher selling prices offset cost pressure, the sector recovery could feed into earnings, which is the key point to watch."
    }
   },
   {
    "title": {
-    "ko": "2026Q2 매출 반등 신호",
-    "en": "Revenue Rebound Signal in 2026Q2"
+    "ko": "분기 매출의 회복 흐름",
+    "en": "Quarterly sales recovery"
    },
    "body": {
-    "ko": "2026년 1분기 매출 1,117억원에서 2분기 1,738억원으로 큰 폭 반등하며 손실 폭도 143억원에서 63억원으로 줄었다. 성수기 진입에 따른 물량 회복 가능성을 시사하는 대목이다. 다만 이 흐름이 지속적인 수익성 개선으로 이어질지는 추가 분기 확인이 필요하다.",
-    "en": "Revenue rebounded sharply from KRW 111.7bn in 2026Q1 to KRW 173.8bn in 2026Q2, while the operating loss narrowed from KRW 14.3bn to KRW 6.3bn. This points to a possible recovery in shipment volumes as the peak season approaches. Whether this translates into sustained profitability improvement, however, requires confirmation over additional quarters."
+    "ko": "2026년 2분기 매출은 1,738억원으로 전 분기 대비 55.6% 늘었고, 2026년 3분기 매출은 1,234억원으로 전년 동기 대비 1.4% 증가했다. 2025년 3분기 영업손실 97.7억원과 비교하면 2026년 3분기 영업손실 70.5억원은 전년 동기 대비 손실 폭이 줄었다. 매출 규모가 다시 늘어나는 흐름은 가동 정상화의 신호로 읽을 수 있다.",
+    "en": "Sales reached KRW 173.8 billion in the second quarter of 2026, up 55.6% from the prior quarter, and KRW 123.4 billion in the third quarter, up 1.4% year on year. The third-quarter 2026 operating loss of KRW 7.05 billion was narrower than the KRW 9.77 billion loss of the third quarter of 2025. A renewed rise in sales volume can be read as a sign that operations are normalizing."
    }
   },
   {
    "title": {
-    "ko": "배당 지속 이력과 높은 자사주 비중",
-    "en": "Dividend Track Record and High Treasury Stock Ratio"
+    "ko": "지배구조 변화 가능성",
+    "en": "Possible change in ownership structure"
    },
    "body": {
-    "ko": "2025년 순손실에도 배당을 지급한 이력이 있어 주주환원 정책의 연속성이 확인된다. 최근분기 말 자사주 비중이 13%대에 이르는 것으로 파악돼 유통주식 수가 제한적인 구조다. 이런 요소는 주주환원에 대한 회사의 태도를 가늠하는 참고 지표가 된다.",
-    "en": "The company paid a dividend even in a net-loss year in 2025, indicating continuity in its shareholder-return policy. Treasury shares are reported at roughly 13% of shares outstanding as of the most recent quarter, constraining the freely tradable float. These factors serve as reference points for gauging the company's approach to shareholder returns."
+    "ko": "관련 보도에 따르면 KISCO홀딩스가 한국철강의 잔여 지분을 주당 1만 3,000원에 공개매수하는 방안이 제시됐다. 잔여 지분 공개매수는 지배주주의 지분율을 높이는 절차로, 소액주주 구성과 유통 주식 수에 변화를 줄 수 있다. 공개매수 조건과 일정은 공시로 확정되므로 그 내용을 기준으로 판단하는 것이 필요하다.",
+    "en": "Press reports say KISCO Holdings has proposed a tender offer for Kisco's remaining shares at KRW 13,000 per share. A tender offer for remaining shares raises the controlling shareholder's stake and can change the minority shareholder base and the number of freely tradable shares. The terms and schedule will be fixed in the filing, so the filing is the reference point."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "구조적 수요 위축",
-    "en": "Structural Demand Contraction"
+    "ko": "장기 적자와 이익 체력 약화",
+    "en": "Prolonged losses and weaker earnings base"
    },
    "body": {
-    "ko": "국내 철근 수요는 2026년 상반기 기준 3년 연속 최저치를 기록하고 있으며, 건설경기 침체가 지속되는 한 근본적인 수요 회복을 기대하기 어렵다. 매출의 93~94%가 철근에 의존하는 사업 구조상 이 리스크에 대한 노출도가 매우 높다.",
-    "en": "Domestic rebar demand has hit a three-year low as of first-half 2026, and a fundamental demand recovery is difficult to expect as long as the construction downturn persists. Given that rebar accounts for 93-94% of revenue, exposure to this risk is very high."
+    "ko": "영업이익률은 2022년 11.4%에서 2025년 -8.0%로 떨어졌고, 영업손실은 2025년 3분기부터 2026년 3분기까지 5개 분기 연속 이어졌다. 최근 4개 분기 지배주주 순손실 합계는 142억원이다. 2026년 2분기 매출이 크게 늘었음에도 영업손실이 남았다는 점은 매출 확대만으로 수익성이 회복되지 않는다는 뜻으로 읽힌다.",
+    "en": "The operating margin fell from 11.4% in 2022 to -8.0% in 2025, and operating losses have continued for five consecutive quarters from the third quarter of 2025 through the third quarter of 2026. Net loss attributable to controlling shareholders totaled KRW 14.2 billion over the last four quarters. The operating loss persisted in the second quarter of 2026 despite a sharp sales rise, which suggests that higher volume alone has not restored profitability."
    }
   },
   {
    "title": {
-    "ko": "5개 분기 연속 영업손실",
-    "en": "Five Consecutive Quarters of Operating Losses"
+    "ko": "국내 수요 구조의 약화",
+    "en": "Weakening domestic demand structure"
    },
    "body": {
-    "ko": "2025Q2부터 2026Q2까지 다섯 개 분기 모두 영업손실을 기록했다. 매출이 반등한 2026Q2에도 손실이 지속된 점은 원가-판가 스프레드 압박이 여전히 해소되지 않았음을 보여준다. 낮은 가동률 환경이 지속되는 한 고정비 부담이 이익 회복을 제약할 수 있다.",
-    "en": "The company posted an operating loss in every quarter from 2025Q2 through 2026Q2. That losses persisted even in 2026Q2, when revenue rebounded, shows cost-price spread pressure remains unresolved. As long as low-utilization conditions persist, fixed-cost burden could constrain any earnings recovery."
+    "ko": "한국신용평가는 건설 경기 침체와 제조업 위축으로 국내 철강 수요가 2010년 이래 최저 수준이라고 지적했다. 산업연구원은 2026년 국내 철강 내수가 전년 대비 0.4% 줄 것으로 봤다. 건설용 봉형강 수요 회복이 더딘 만큼, 건설 비중이 큰 제품군은 수요 회복의 혜택을 늦게 받을 가능성이 있다.",
+    "en": "Korea Ratings pointed to domestic steel demand at its lowest level since 2010 due to the construction slump and weaker manufacturing. KIET expects domestic steel consumption to fall 0.4% in 2026. Because the recovery in construction-grade long steel is slow, product lines tied to construction may benefit later than others."
    }
   },
   {
    "title": {
-    "ko": "업계 전반의 저가동률·원가 압박",
-    "en": "Industry-wide Low Utilization and Cost Pressure"
+    "ko": "규제 비용과 수출 여건",
+    "en": "Regulatory costs and export conditions"
    },
    "body": {
-    "ko": "8대 철근 메이커의 가동률이 70%를 밑도는 상황이 이어지고 있으며, 철근 전문 3사의 2026년 상반기 합산 영업손실도 오히려 확대된 것으로 집계됐다. 수출 확대나 판가 인상 시도가 원료비 상승에 상쇄되는 구조적 어려움이 산업 전반에 걸쳐 나타나고 있다.",
-    "en": "Utilization at the eight major rebar makers has remained below 70%, and the combined operating loss at the three specialized rebar producers reportedly widened in first-half 2026. Structural difficulties, where export expansion or price-hike attempts are offset by rising raw material costs, are apparent across the industry."
+    "ko": "EU 탄소국경조정제도가 2026년 1월부터 시행되면서 대한상공회의소는 EU 수출 철강 제품의 인증서 비용을 2026년 851억원으로 추산했다. 중국은 한국과 베트남 등 기존 시장이 막히자 동남아와 중동으로 수출 루트를 바꾸고 있어 해외 가격 경쟁도 치열해질 수 있다. 수출 가격에 탄소 비용을 얼마나 전가할 수 있는지가 하반기 수익성의 핵심 변수로 꼽힌다.",
+    "en": "With the EU carbon border mechanism in force since January 2026, the Korea Chamber of Commerce and Industry estimated certificate costs for Korean steel exported to the EU at KRW 85.1 billion in 2026. China is redirecting exports to Southeast Asia and the Middle East after losing access to markets such as Korea and Vietnam, which could intensify overseas price competition. How much carbon cost can be passed through to export prices is seen as a key variable for second-half profitability."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "건설경기 리스크",
-    "en": "Construction Cycle Risk"
+    "ko": "원재료·원가 리스크",
+    "en": "Raw material and cost risk"
    },
    "body": {
-    "ko": "국내 건설 발주·착공 물량이 회복되지 않으면 철근 수요 위축이 장기화될 수 있다. 중소 건설사의 재무 상황 악화는 판매 대금 회수 리스크로도 이어질 수 있다. 건설경기는 정부 정책, 금리, 부동산 시장 상황 등 여러 변수에 좌우돼 예측이 쉽지 않다.",
-    "en": "If domestic construction orders and starts fail to recover, weak rebar demand could persist for an extended period. Deteriorating financial conditions at smaller construction companies could also raise the risk of delayed receivables collection. The construction cycle is difficult to predict given its dependence on government policy, interest rates, and real estate market conditions."
+    "ko": "삼정KPMG는 2026년 원료탄 가격이 아시아 수요와 탈탄소화에 따른 공급 제약으로 소폭 상승할 것으로 전망했다. 원료 가격이 오르는데 판가 인상이 뒤따르지 않으면 마진이 추가로 압박받는다. 2025년 영업활동 현금흐름이 243억원으로 줄어든 만큼, 원가 부담이 현금 창출력을 더 약화시킬 수 있다.",
+    "en": "Samjong KPMG expects coking coal prices to rise slightly in 2026 on steady Asian demand and supply constraints tied to decarbonization. If raw-material costs rise without matching price increases, margins come under further pressure. Operating cash flow fell to KRW 24.3 billion in 2025, so higher input costs could weaken cash generation further."
    }
   },
   {
    "cat": {
-    "ko": "원자재 가격 변동성",
-    "en": "Raw Material Price Volatility"
+    "ko": "정책·무역 리스크",
+    "en": "Policy and trade risk"
    },
    "body": {
-    "ko": "철스크랩(고철) 가격은 국내외 지표에 따라 등락이 크며, 원가와 판가 사이의 스프레드가 좁아질 경우 수익성이 즉각 악화될 수 있다. 최근에도 국내 구매가격 인하와 국제 가격 상승이 동시에 나타나는 등 방향성이 엇갈리고 있다. 원가 관리 능력이 실적의 핵심 변수로 작용한다.",
-    "en": "Steel scrap prices fluctuate significantly based on domestic and international benchmarks, and profitability can deteriorate quickly if the spread between input costs and selling prices narrows. Recently, domestic purchase price cuts and rising international prices have appeared simultaneously, creating mixed signals. Cost management capability remains a key determinant of earnings."
+    "ko": "이번 가격 반등의 동력은 반덤핑 관세였고, 그 효과가 지속되려면 정부의 무역구제 정책이 집행력을 유지해야 한다. 중국산 저가 물량이 동남아와 중동으로 우회하면 관세 효과가 약해질 수 있다. 미국과 EU의 보호무역과 탄소 규제가 함께 작용해 수출 여건은 여전히 불확실하다.",
+    "en": "The main driver of the price rebound was anti-dumping duties, and the effect depends on continued enforcement of trade remedies. If low-priced Chinese supply is diverted to Southeast Asia and the Middle East, the duty effect could weaken. Protectionism in the United States and the EU, together with carbon rules, keeps export conditions uncertain."
    }
   },
   {
    "cat": {
-    "ko": "통상·정책 리스크",
-    "en": "Trade and Policy Risk"
+    "ko": "지배구조·거래 구조 리스크",
+    "en": "Governance and trading structure risk"
    },
    "body": {
-    "ko": "EU의 탄소국경조정제도(CBAM) 강화, 각국의 반덤핑 관세 등 통상 환경 변화는 수출 채산성에 영향을 줄 수 있다. 국내에서는 철강의 국내생산세액공제 포함 여부가 아직 확정되지 않아 정책 불확실성이 남아 있다. 저탄소 전환에 대응하기 위한 설비 투자 부담도 중장기적으로 고려해야 할 변수다.",
-    "en": "Changes in the trade environment, such as the EU's tightening Carbon Border Adjustment Mechanism and anti-dumping tariffs imposed by various countries, could affect export profitability. Domestically, whether steel will be included in production tax credits remains unconfirmed, leaving policy uncertainty. The capital burden of investing in low-carbon transition equipment is also a factor to consider over the medium to long term."
+    "ko": "KISCO홀딩스의 잔여 지분 공개매수가 진행되면 유통 주식 수와 거래 구조가 바뀔 수 있다. 공개매수 가격과 시장 가격의 관계, 응모 결과에 따라 소액주주의 거래 여건이 달라진다. 이 과정의 일정과 조건은 공시 기준으로 확인해야 하며, 보도 내용만으로 결과를 가늠하기는 어렵다.",
+    "en": "If KISCO Holdings proceeds with the tender offer for remaining shares, the number of freely tradable shares and the trading structure could change. Depending on the relationship between the offer price and the market price and the tender results, trading conditions for minority shareholders may shift. The schedule and conditions should be confirmed in the filing, since press reports alone do not show the outcome."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중순",
-    "en": "Mid-November 2026"
+    "ko": "2026년 12월 말",
+    "en": "End of December 2026"
    },
    "what": {
-    "ko": "2026년 3분기 실적 공시 예정 시기로, 2분기의 매출 반등이 수익성 개선으로 이어지는지, 영업손실 축소 여부를 확인해야 한다.",
-    "en": "Third-quarter 2026 results are expected around this time; check whether the 2026Q2 revenue rebound translates into profitability improvement and whether operating losses narrow further."
+    "ko": "열연강판과 철근 가격이 연초 이후 반등 폭을 유지하는지, 중국산 수입 감소 흐름이 이어지는지를 본다. 반덤핑 관세 효과가 가격에 얼마나 남아 있는지가 2027년 1분기 마진의 변수다.",
+    "en": "Whether hot-rolled coil and rebar prices hold their gains since the start of the year and whether the decline in Chinese imports continues. How much of the anti-dumping effect remains in prices is a key variable for first-quarter 2027 margins."
    }
   },
   {
    "when": {
-    "ko": "2026년 9월 정기국회 기간",
-    "en": "September 2026 regular session of the National Assembly"
+    "ko": "2027년 3월 말",
+    "en": "End of March 2027"
    },
    "what": {
-    "ko": "정부의 2026년 세제개편안 처리 과정에서 철강이 국내생산세액공제 대상에 포함되는지 여부를 확인할 필요가 있다.",
-    "en": "Monitor whether steel is included in domestic production tax credits during deliberation of the government's 2026 tax reform bill."
+    "ko": "2026년 사업보고서 제출 기한이다. 2026년 연간 매출, 영업이익, 지배주주 순이익이 DART 정기보고서로 확정되며, 영업이익률이 2025년 -8.0%에서 방향을 바꿨는지가 확인 지점이다.",
+    "en": "Deadline for the 2026 annual report. Full-year 2026 sales, operating profit and net profit attributable to controlling shareholders will be confirmed in the DART periodic report, and the key check is whether the operating margin, at -8.0% in 2025, changed direction."
    }
   },
   {
    "when": {
-    "ko": "2026년 10월",
-    "en": "October 2026"
+    "ko": "2027년 5월 중순",
+    "en": "Mid-May 2027"
    },
    "what": {
-    "ko": "4분기 철근 기준가격 조정 여부와 철스크랩 가격 추이를 통해 원가-판가 스프레드 방향성을 점검해야 한다.",
-    "en": "Check the direction of the cost-price spread through fourth-quarter rebar benchmark price adjustments and steel scrap price trends."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 4분기",
-    "en": "Fourth quarter of 2026"
-   },
-   "what": {
-    "ko": "한국철강협회의 월간 철근 수요·가동률 통계를 통해 건설 성수기 진입에 따른 실질적인 물량 회복 여부를 확인해야 한다.",
-    "en": "Track the Korea Iron & Steel Association's monthly rebar demand and utilization statistics to confirm whether actual shipment volumes recover as the construction peak season arrives."
+    "ko": "2027년 1분기 분기보고서 법정 제출 기한(분기 종료 후 45일)이다. 2026년 1분기부터 이어진 지배주주 순손실이 끝나는지, 영업손실 폭이 2026년 2분기 62.8억원 수준 아래로 줄었는지를 본다.",
+    "en": "Statutory deadline for the first-quarter 2027 quarterly report, 45 days after quarter-end. The check is whether the net loss attributable to controlling shareholders, which has run since the first quarter of 2026, ends, and whether the operating loss narrows below the KRW 6.28 billion of the second quarter of 2026."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "한국철강은 건설경기 침체와 철근 수요 위축이라는 산업 전반의 구조적 압박 속에서 2025년 연간 적자와 최근 4개 분기 연속 영업손실을 기록하며 어려운 국면을 지나고 있다. 다만 부채비율 12.4%의 낮은 레버리지와 순손실 국면에서도 유지된 양(+)의 영업현금흐름은 재무 안정성이 훼손되지 않았음을 보여준다. 2026년 2분기 매출이 1분기 대비 크게 반등하며 손실 폭이 줄어든 점은 성수기 진입에 따른 물량 회복 가능성을 시사하지만, 원가-판가 스프레드 압박이 완전히 해소됐다고 보기는 아직 이르다. 산업 차원에서는 8대 철근 메이커의 낮은 가동률, 정부의 세제 지원 및 통상 정책 불확실성이 여전히 변수로 남아 있다. 배당 지급 이력과 높은 자사주 비중은 주주환원 측면의 참고 요소이나, 향후 지속 가능성은 이익 회복 속도에 달려 있다. 투자 판단에 앞서 다가오는 3분기 실적과 철근 시황·정책 변화를 함께 확인하는 것이 필요하다.",
-   "en": "Kisco Corp is navigating a difficult stretch, posting an annual loss in 2025 and operating losses in each of the most recent four quarters, amid structural industry pressure from a construction downturn and shrinking rebar demand. Still, a low debt ratio of 12.4% and operating cash flow that remained positive even during the net-loss period indicate the balance sheet has not been materially impaired. The sharp revenue rebound in 2026Q2 versus 2026Q1, alongside a narrower loss, hints at a possible volume recovery tied to the peak construction season, though it is still too early to conclude that cost-price spread pressure has been fully resolved. At the industry level, low utilization across the eight major rebar makers and policy uncertainty around tax support and trade measures remain live variables. The dividend track record and high treasury stock ratio serve as reference points on shareholder returns, but their future sustainability depends on the pace of earnings recovery. Investors should weigh the upcoming third-quarter results together with rebar market and policy developments before forming a view."
+   "ko": "한국철강은 2022년 영업이익 1,215억원에서 2025년 영업손실 387억원으로 실적이 꺾였고, 영업이익률도 11.4%에서 -8.0%로 떨어졌다. 2026년 분기 흐름에서는 매출이 2분기에 크게 늘었지만 영업손실이 5개 분기 연속 이어져 매출 회복이 이익 회복으로 이어지지 않았다. 업황 측면에서는 열연 가격 반등과 반덤핑 관세 효과가 긍정적이지만, 한신평과 삼정KPMG는 2026년 철강업을 비우호적·부정으로 평가했고 내수는 2010년 이래 최저 수준이라는 지적이 나온다. 재무 측면에서 부채비율은 12.4%로 낮고 2025년 영업활동 현금흐름은 243억원 플러스였으나, 현금흐름은 2023년 이후 줄고 있다. 주가순자산비율은 1배를 밑돌아 장부가치 대비 낮은 가격에 거래되지만, 이익이 나지 않는 구간에서 장부가치가 주가를 받치는 힘은 자산 수익성에 달려 있다. KISCO홀딩스의 잔여 지분 공개매수 보도는 지배구조와 거래 구조 변화의 가능성을 보여준다. 다음 확인 지점은 2026년 사업보고서의 영업이익률과 2027년 1분기 영업손실 폭이며, 이 리포트는 투자 의견이나 목표 주가를 제시하지 않는다.",
+   "en": "Kisco's results turned from operating profit of KRW 121.5 billion in 2022 to an operating loss of KRW 38.7 billion in 2025, and the operating margin fell from 11.4% to -8.0%. In 2026, sales jumped in the second quarter, but operating losses have persisted for five consecutive quarters, so the sales recovery has not yet become a profit recovery. On the sector side, the hot-rolled coil price rebound and anti-dumping duties are positive, while Korea Ratings and Samjong KPMG rated the 2026 steel outlook as unfavorable or negative and domestic demand is described as the weakest since 2010. On the balance sheet, the debt-to-equity ratio of 12.4% is low and 2025 operating cash flow stayed positive at KRW 24.3 billion, but cash flow has declined since 2023. The price-to-book ratio is below 1, so the shares trade under book value, though whether book value supports the price depends on how well the assets earn returns. The reported tender offer by KISCO Holdings for remaining shares points to possible changes in ownership and trading structure. The next checkpoints are the operating margin in the 2026 annual report and the size of the operating loss in the first quarter of 2027. This report does not present an investment opinion or a target price."
   }
  },
  "sources": [
-  "https://www.valueline.co.kr/finance/summary/104700",
-  "https://www.newspim.com/news/view/20260227000400",
-  "https://m.thinkpool.com/item/104700",
-  "https://alpha-lenz.com/ko/companies/kisco-corp",
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=104700",
-  "https://itooza.com/vscore/104700",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=ty3gnHq0giacsSm8",
-  "https://www.google.com/finance/beta/quote/104700:KRX?hl=ko",
-  "https://www.kosa.or.kr/",
-  "https://www.steelprice.co.kr/news/articleList.html?page=1&total=74&sc_section_code=&sc_sub_section_code=&sc_serial_code=&sc_area=&sc_level=&sc_article_type=&sc_view_level=&sc_sdate=2026-07-04&sc_edate=2026-07-10&sc_serial_number=&sc_word=&box_idxno=&sc_multi_code=&sc_is_image=&sc_is_movie=&sc_user_name=&sc_order_by=C&view_type=sm",
-  "https://www.snmnews.com/",
-  "http://ceoranking.com/lib/print_pages.php?sn=22309",
-  "https://www.index.go.kr/unity/potal/main/EachDtlPageDetail.do?idx_cd=1143",
-  "https://www.catch.co.kr/Comp/CompSummary/c42850",
-  "https://www.steeldaily.co.kr/news/articleView.html?idxno=196621",
-  "https://ko.tradingeconomics.com/commodity/steel",
-  "https://ebseng.co.kr/kor/bbs/board.php?bo_table=steelindustrytrend&wr_id=2",
-  "https://www.snmnews.com/news/articleView.html?idxno=573417"
+  "https://www.ferrotimes.com/news/articleView.html?idxno=45548",
+  "https://www.ftoday.co.kr/news/articleView.html?idxno=359696",
+  "https://www.steeldaily.co.kr/news/articleView.html?idxno=197121",
+  "https://www.snmnews.com/news/articleView.html?idxno=563603",
+  "https://www.snmnews.com/news/articleView.html?idxno=569941",
+  "https://biz.heraldcorp.com/article/10784875",
+  "https://m.news.nate.com/view/20261103n27066",
+  "https://www.ferrotimes.com/news/articleView.html?idxno=45695",
+  "https://www.snmnews.com/news/articleView.html?idxno=562391",
+  "https://www.newsway.co.kr/news/view?ud=2026110314472978790",
+  "https://www.seoulfn.com/news/articleView.html?idxno=641753",
+  "https://www.sentv.co.kr/article/view/sentv202611060119",
+  "https://thetracker.co.kr/View.aspx?No=4295531",
+  "https://www.news1.kr/industry/general-industry/6340418",
+  "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=711369",
+  "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=711368",
+  "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=711332",
+  "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=712209"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "104700",
  "name": "한국철강",
  "name_en": "KISCO Corp.",
@@ -223,11 +213,11 @@
   "철강·금속"
  ],
  "market": "코스피",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 06:04",
- "dataDate": "20260904",
+ "reportDate": "2026-11-17",
+ "reportTs": "2026-11-17 03:46",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-08-17",
+  "asOf": "2026-11-16",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -238,6 +228,7 @@
     "np_owner": -8922947072,
     "equity": 770845640468,
     "equity_owner": 770845640468,
+    "equity_nci": null,
     "liab": 95937715408,
     "cfo": 24335122462,
     "eps_basic": -271,
@@ -253,6 +244,7 @@
     "np_owner": 23450927886,
     "equity": 810359379879,
     "equity_owner": 810359379879,
+    "equity_nci": null,
     "liab": 88709937336,
     "cfo": 38373225971,
     "eps_basic": 659,
@@ -268,6 +260,7 @@
     "np_owner": 68179597574,
     "equity": 851747532604,
     "equity_owner": 851747532604,
+    "equity_nci": null,
     "liab": 120716792280,
     "cfo": 65031930257,
     "eps_basic": 1756,
@@ -283,6 +276,7 @@
     "np_owner": 79785552100,
     "equity": 790918579636,
     "equity_owner": 790918579636,
+    "equity_nci": null,
     "liab": 147735227497,
     "cfo": 36404663697,
     "eps_basic": 2055,
@@ -292,12 +286,6 @@
    }
   ],
   "quarterly": [
-   {
-    "q": "2025Q2",
-    "rev": 122300509014,
-    "op": -2551067223,
-    "np_owner": -2672524214
-   },
    {
     "q": "2025Q3",
     "rev": 121721869549,
@@ -321,26 +309,39 @@
     "rev": 173809519338,
     "op": -6284385117,
     "np_owner": -1795105037
+   },
+   {
+    "q": "2026Q3",
+    "rev": 123404500456,
+    "op": -7050931796,
+    "np_owner": -3325242775
    }
   ],
   "valuation": {
-   "price": 9700,
-   "mcap": 0.3536,
+   "price": 12910,
+   "mcap": 0.4706,
    "shares": 36450000,
    "total_shares": 36450000,
    "wavg_shares": 32926003,
    "per": null,
-   "eps": -488,
-   "pbr": 0.4315,
-   "bps": 22482,
-   "roe_ttm": -2.1,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": -15509426745,
-   "pbr_krx": 0.42,
+   "eps": -457,
+   "pbr": 0.5845,
+   "bps": 22086,
+   "roe_ttm": -1.9,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": -14223386807,
+   "ccy": "KRW",
+   "bps_src": "자체",
+   "eps_src": "공시",
+   "pbr_krx": 0.54,
    "bps_krx": 23878.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 750.0,
-   "div": 7.73
+   "div": 5.81,
+   "hidden": {
+    "per": "loss"
+   }
   }
- }
+ },
+ "textRules": 2
 }
