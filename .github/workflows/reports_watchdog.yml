@@ -85,6 +85,31 @@ jobs:
             sleep $(( (RANDOM % 9) + 2 ))
           done
 
+      # 리포트가 하나도 없는 상장 종목이 있으면 신규 상장 작업을 다시 부른다(2026-11-17 영광와이케이엠씨). 그 작업은 평일 밤
+      # 예약인데, 공용 실행 순서(kos-data)에서 실적 철의 공시 트리거(4~5시간)에 밀려 기다리다 뒤에 들어온 시세 갱신에 취소됐다
+      # (11/13 · 11/16 — 깃허브는 묶음마다 기다리는 실행을 하나만 둔다). 이 워치독은 리포트 작업이 끝날 때마다 돌므로 순서가 빈 직후
+      # 부를 수 있다. 되풀이를 막는다 — 진행 · 대기 중인 실행이 있거나, 6시간 안에 취소되지 않고 끝난 실행이 있으면 부르지 않는다
+      # (같은 이유로 거듭 저장하지 못하는 종목은 신규 상장 작업이 세 번째부터 빼고, --peek 도 같은 기준으로 센다).
+      - name: 리포트 없는 상장 종목 — 신규 상장 작업 다시 부르기
+        if: ${{ !inputs.sync_only }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          n=$(python scripts/new_listings.py --peek | sed -n 's/^missing=//p')
+          echo "리포트가 하나도 없는 상장 종목(신규 상장 작업의 대상): ${n:-?}개"
+          [ "${n:-0}" -gt 0 ] 2>/dev/null || exit 0
+          since=$(date -u -d '-6 hours' +%Y-%m-%dT%H:%M:%SZ)
+          busy=$(gh run list --workflow=new_listings.yml --limit 10 --json status \
+                   --jq '[.[] | select(.status != "completed")] | length')
+          recent=$(gh run list --workflow=new_listings.yml --limit 10 --json status,conclusion,createdAt \
+                   --jq "[.[] | select(.status == \"completed\" and .conclusion != \"cancelled\" and .createdAt > \"$since\")] | length")
+          echo "신규 상장 작업 — 진행 · 대기 ${busy:-?} · 6시간 안에 끝난 실행 ${recent:-?}"
+          if [ "${busy:-1}" = "0" ] && [ "${recent:-1}" = "0" ]; then
+            gh workflow run new_listings.yml && echo "→ 신규 상장 작업을 다시 불렀다"
+          else
+            echo "→ 부르지 않는다"
+          fi
+
       - name: 남은 리포트 점검 후 필요 시 재가동
         # 리포트 작업이 끝나서 부른 실행 · 정리만 하라는 손 실행은 백필을 다시 켜지 않는다
         if: ${{ github.event_name != 'workflow_run' && !inputs.sync_only }}

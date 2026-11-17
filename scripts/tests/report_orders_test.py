@@ -628,6 +628,24 @@ ok(len(_bf) == 1 and "github.event_name != 'workflow_run'" in str(_bf[0].get("if
    str(_bf[0].get("if")) if _bf else "백필 단계 없음")
 ok(((_won.get("workflow_dispatch") or {}).get("inputs") or {}).get("sync_only", {}).get("type") == "boolean",
    "워치독 — 손 실행에 '정리만' 선택이 있다")
+# 리포트가 하나도 없는 상장 종목 — 신규 상장 작업을 다시 부른다(2026-11-17 영광와이케이엠씨 · 그 작업이 공용 실행 순서에서 밀려 취소됐다)
+_nl = [x for x in _wj["steps"] if "gh workflow run new_listings.yml" in (x.get("run") or "")]
+ok(len(_nl) == 1 and "!inputs.sync_only" in str(_nl[0].get("if")) and "new_listings.py --peek" in _nl[0]["run"]
+   and 'select(.status != \\"completed\\")' not in _nl[0]["run"] and "select(.status != \"completed\")" in _nl[0]["run"]
+   and "conclusion != \\\"cancelled\\\"" in _nl[0]["run"] and "-6 hours" in _nl[0]["run"]
+   and _wj["steps"].index(_nl[0]) < _wj["steps"].index(_bf[0]),
+   "워치독 — 리포트 없는 상장 종목이 있으면 신규 상장 작업을 다시 부른다(진행 · 대기 중이거나 6시간 안에 끝난 실행이 있으면 안 부름)",
+   str(_nl[0].get("if")) if _nl else "단계 없음")
+import hashlib  # noqa: E402
+import re  # noqa: E402
+import subprocess  # noqa: E402
+_KT = HERE.parent.parent / "data" / "known_tickers.json"
+_h0 = hashlib.md5(_KT.read_bytes()).hexdigest() if _KT.exists() else None
+_pk = subprocess.run([sys.executable, str(HERE.parent / "new_listings.py"), "--peek"], capture_output=True, text=True,
+                     env={k: v for k, v in os.environ.items() if k != "GITHUB_OUTPUT"})
+_h1 = hashlib.md5(_KT.read_bytes()).hexdigest() if _KT.exists() else None
+ok(_pk.returncode == 0 and re.search(r"^missing=\d+$", _pk.stdout, re.M) and _h0 == _h1,
+   "신규 상장 --peek — 대상 수만 찍고 아무것도 쓰지 않는다(known_tickers 그대로)", _pk.stdout[-200:] + _pk.stderr[-200:])
 # GITHUB_TOKEN 으로 부른 실행(워치독이 켠 백필 청크 · self-chain)은 끝나도 workflow_run 이 생기지 않는다(11/16 확인) — 직접 부른다
 _v2s = yaml.safe_load((_WFD / "generate_reports_v2.yml").read_text(encoding="utf-8"))["jobs"]
 _v2steps = [s for j in _v2s.values() for s in j.get("steps", [])]
