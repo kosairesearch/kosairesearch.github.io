@@ -1,230 +1,230 @@
 {
  "title": {
-  "ko": "AI 인프라 수주와 차량SW 부진의 교차점",
-  "en": "AI Infrastructure Orders Meet Vehicle Software Weakness"
+  "ko": "현대오토에버, 외형 성장과 수익성 사이",
+  "en": "Hyundai Autoever: Growth Ahead of Margins"
  },
  "lead": {
-  "ko": "엔터프라이즈IT의 고성장이 차량 소프트웨어의 역성장을 메우는 구조가 2026년 상반기에도 이어졌고, 분기 이익률의 진폭은 오히려 커졌다.",
-  "en": "Enterprise IT growth kept offsetting a shrinking vehicle software line through the first half of 2026, while the swing in quarterly margins widened rather than narrowed."
+  "ko": "매출은 2023년부터 2025년까지 3년 연속 증가해 2025년 4조 2,521억원에 이르렀지만, 영업이익률은 6%대 초반에 머물러 있어 수익성 회복 여부가 다음 확인 지점이 되었다.",
+  "en": "Revenue rose for three straight years from 2023 through 2025 and reached KRW 4.25 trillion, but the operating margin has stayed near 6%, making profitability recovery the next checkpoint."
  },
  "keypoints": [
   {
-   "ko": "연결 매출은 2022년 2조 7,545억원에서 2025년 4조 2,521억원으로 3년 만에 1.5배 이상 확대됐고, 영업이익률은 5.2%에서 6.0%로 올라섰다.",
-   "en": "Consolidated revenue expanded from KRW 2.755tn in 2022 to KRW 4.252tn in 2025, more than 1.5x in three years, while the operating margin rose from 5.2% to 6.0%."
+   "ko": "2025년 매출은 4조 2,521억원으로 전년 대비 14.5% 증가했고, 영업이익은 2,553억원으로 13.8% 늘었다.",
+   "en": "Revenue reached KRW 4.25 trillion in 2025, up 14.5% year on year, and operating profit rose 13.8% to KRW 255.3 billion."
   },
   {
-   "ko": "2026년 1분기 영업이익 212억원(이익률 2.3%)으로 급락한 뒤 2분기 905억원(7.2%)으로 회복했는데, 삼성증권은 2분기에 1분기 이연 매출 약 200억원이 반영됐다고 분석했다.",
-   "en": "Operating profit collapsed to KRW 21.2bn (2.3% margin) in 1Q26 before recovering to KRW 90.5bn (7.2%) in 2Q26; Samsung Securities noted roughly KRW 20bn of revenue deferred from 1Q was recognized in 2Q."
+   "ko": "2026년 3분기 매출은 1조 2,247억원으로 전년 동기 대비 16.2% 늘었지만, 영업이익은 689억원으로 2.6% 줄어 영업이익률이 낮아졌다.",
+   "en": "Third-quarter 2026 revenue rose 16.2% year on year to KRW 1.22 trillion, but operating profit fell 2.6% to KRW 68.9 billion, pulling the margin lower."
   },
   {
-   "ko": "2026년 상반기 SI 8,674억원(+26.2%)·ITO 9,088억원(+18.8%)이 성장을 이끈 반면, 차량 소프트웨어는 4,102억원으로 2.9% 줄었다.",
-   "en": "In 1H26, SI revenue of KRW 867.4bn (+26.2%) and ITO of KRW 908.8bn (+18.8%) drove growth, while vehicle software slipped 2.9% to KRW 410.2bn."
+   "ko": "2026년 상반기 매출의 96.1%는 현대차를 포함한 계열회사 매출이어서, 그룹 내 IT 프로젝트 확대가 외형 성장의 중심이다.",
+   "en": "Affiliates, including Hyundai Motor, accounted for 96.1% of first-half 2026 revenue, so group IT project growth sits at the center of top-line expansion."
   },
   {
-   "ko": "현대차·기아 대상 3,043억원 규모 GPU 서버 공급계약과 현대차 대상 3,986억원 규모 AWS 약정 계약이 2026년 7월 잇따라 공시되며 그룹 AI 인프라 역할이 구체화됐다.",
-   "en": "A KRW 304.3bn GPU server supply contract with Hyundai Motor and Kia and a KRW 398.6bn AWS commitment contract with Hyundai Motor were both disclosed in July 2026, giving concrete shape to the company's group AI infrastructure role."
+   "ko": "2026년 7월 현대차와 기아를 대상으로 약 3,650억원 규모의 GPU 서버 통합 구매 및 공급 계약이 체결되어, 데이터센터 관련 매출 흐름이 새로운 변수로 떠올랐다.",
+   "en": "A roughly KRW 365 billion GPU server bulk purchase and supply contract with Hyundai Motor and KIA was signed in July 2026, adding data center revenue as a new variable."
   },
   {
-   "ko": "회사는 2026년 1월 공시에서 연간 매출 전망치만 4조 5,120억원으로 제시하고 손익 전망은 제시하지 않았다.",
-   "en": "In a January 2026 filing the company guided only to full-year revenue of KRW 4.512tn, declining to provide any profit guidance."
+   "ko": "주가 배수는 최근 네 개 분기 지배주주 순이익 규모에 비해 높은 구간이라, 수익성 회복 속도가 밸류에이션 해석의 핵심이 된다.",
+   "en": "Price multiples sit high relative to recent controlling-shareholder earnings, so the pace of margin recovery is central to valuation interpretation."
   }
  ],
  "business": {
-  "ko": "현대오토에버는 정보시스템 기획·구축·운영을 담당하는 IT서비스 사업과 차량 소프트웨어 플랫폼·내비게이션 소프트웨어 사업을 함께 영위하며, 중국·인도·독일·미국 등에 해외 종속기업을 두고 있다. 실적은 시스템통합(SI)과 IT아웃소싱(ITO)으로 구성된 엔터프라이즈IT 부문, 그리고 차량 소프트웨어(SW) 부문으로 구분된다. 2026년 2분기 엔터프라이즈IT 매출은 1조 384억원으로 전년 동기 대비 27.9% 증가했고, 차량SW 매출은 2,123억원으로 7.8% 감소했다. 상반기 누적으로는 SI 8,674억원(+26.2%), ITO 9,088억원(+18.8%), 차량SW 4,102억원(-2.9%)으로 성장의 축이 전통 IT서비스 쪽에 있었다. SI에서는 그룹 차세대 전사적자원관리(ERP) 구축과 클라우드 전환 같은 고부가 프로젝트가, ITO에서는 완성차·계열사 IT 운영과 국내외 커넥티드카서비스(CCS) 운영 확대가 매출 기반이다. 차량SW는 내비게이션 소프트웨어와 차량 제어 미들웨어 '모빌진', 정밀지도 등으로 구성되며, 2023년 2분기부터 모빌진이 현대차·기아 차량에 적용되기 시작했다. 지역별로는 2026년 상반기 국내 1조 4,080억원, 미주 3,946억원, 유럽 2,122억원, 아시아 1,269억원으로 해외 비중이 35.6%까지 올라왔다. 고객 구성은 현대차그룹 의존도가 절대적이어서 언론은 전체 매출의 90%를 웃도는 물량이 그룹에서 나온다고 전한다. 경쟁 구도상 국내 IT서비스 시장은 대기업 계열 시스템통합 업체들이 각자의 그룹 물량을 기반으로 나뉘어 있어, 외부 고객 확대와 스마트팩토리 솔루션 '네오팩토리' 같은 자체 솔루션의 외판이 차별화 과제로 남아 있다.",
-  "en": "Hyundai AutoEver runs an IT services business covering information system planning, construction and operation alongside a vehicle software business spanning in-car software platforms and navigation software, with overseas subsidiaries in China, India, Germany and the United States. Results are split between Enterprise IT, made up of system integration (SI) and IT outsourcing (ITO), and the vehicle software (SW) division. In 2Q26 Enterprise IT revenue rose 27.9% year on year to KRW 1,038.4bn while vehicle software fell 7.8% to KRW 212.3bn. For the first half, SI was KRW 867.4bn (+26.2%), ITO KRW 908.8bn (+18.8%) and vehicle software KRW 410.2bn (-2.9%), placing the growth axis squarely in traditional IT services. SI leans on high value-added projects such as the group's next-generation ERP build and cloud migration, while ITO rests on IT operations for the automakers and affiliates plus expanding domestic and overseas Car Connectivity Service operations. Vehicle software comprises navigation software, the mobilgene vehicle control middleware and HD maps, with mobilgene beginning to be applied to Hyundai and Kia vehicles from 2Q23. By region, 1H26 revenue was KRW 1,408.0bn domestically, KRW 394.6bn in the Americas, KRW 212.2bn in Europe and KRW 126.9bn in Asia, lifting the overseas share to 35.6%. Customer concentration on Hyundai Motor Group is overwhelming, with press reports indicating group-related volume accounts for more than 90% of total revenue. Competitively, the Korean IT services market is divided among conglomerate-affiliated integrators each serving their own group, leaving external customer expansion and third-party sales of proprietary solutions such as the NEO Factory smart factory suite as the key differentiation task."
+  "ko": "현대오토에버는 2000년 설립된 현대차그룹의 IT 서비스 및 차량 소프트웨어 회사다. 2021년 현대오트론과 현대엠엔소프트를 합병하면서 차량용 임베디드 소프트웨어, 자율주행 정밀지도, 차량용 OS, 클라우드 관제까지 사업 영역을 넓혔다. 매출은 시스템통합(SI)과 IT아웃소싱(ITO)을 묶은 엔터프라이즈IT 부문과 차량SW 부문으로 나뉜다. 2026년 3분기 엔터프라이즈IT 매출은 1조 248억원으로 전년 동기 대비 19.7% 늘었고, 차량SW 매출은 1,999억원으로 0.8% 증가에 그쳤다. 2026년 상반기 기준으로는 SI 매출이 8,674억원으로 26.2% 늘었고 ITO 매출은 9,088억원으로 18.8% 늘었다. 차량SW의 핵심 제품은 국제 자동차 소프트웨어 표준을 기반으로 한 차량용 표준 OS '모빌진(mobilgene)'이며, 섀시·파워트레인용 클래식과 고성능 프로세서용 어댑티브로 이원화되어 있다. 고정밀 지도와 클라우드 연동도 같은 밸류체인에 묶여 있다. 고객 구조는 그룹 의존도가 높다. 2026년 상반기 계열회사 매출은 2조 1,019억원으로 전체의 96.1%였고, 해외 매출 비중은 35.6%까지 높아졌다. 경쟁 구도에서 IT 서비스 물량은 삼성에스디에스(Samsung SDS)와 LG씨엔에스(LG CNS) 같은 대형 IT 서비스사와 겹치지만, 차량 소프트웨어는 그룹 표준 미들웨어를 공급하는 위치라 성격이 다르다. 그룹 외부 완성차와 부품사로의 제3자 수주 확대는 아직 입증해야 할 과제로 남아 있다.",
+  "en": "Hyundai Autoever was founded in 2000 as the IT services and automotive software arm of Hyundai Motor Group. Its 2021 merger with Hyundai AutoEver's affiliates Hyundai Autron and Hyundai MNsoft widened the business into embedded automotive software, high-precision mapping, in-vehicle OS and cloud control systems. Revenue is split between the Enterprise IT segment, which combines system integration (SI) and IT outsourcing (ITO), and the Automotive SW segment. In third-quarter 2026, Enterprise IT revenue rose 19.7% year on year to KRW 1.02 trillion, while Automotive SW revenue rose only 0.8% to KRW 199.9 billion. In the first half of 2026, SI revenue grew 26.2% to KRW 867.4 billion and ITO revenue grew 18.8% to KRW 908.8 billion. The core automotive product is the mobilgene standard vehicle OS, split into a Classic version for chassis and powertrain and an Adaptive version for high-performance processors. High-precision maps and cloud links sit in the same value chain. Customer concentration is high: affiliates generated KRW 2.10 trillion, or 96.1% of first-half 2026 revenue, and overseas revenue rose to 35.6% of the total. In IT services the company competes for group demand with Samsung SDS and LG CNS, but its automotive software role, supplying the group's standard middleware, is different in nature. Winning third-party orders from outside the group remains an unproven task."
  },
  "earnings": {
-  "ko": "확정 실적을 보면 연결 매출은 2022년 2조 7,545억원, 2023년 3조 650억원, 2024년 3조 7,136억원, 2025년 4조 2,521억원으로 4년 연속 확대됐다. 영업이익도 같은 기간 1,424억원에서 2,553억원으로 늘었고 영업이익률은 5.2%(2022년)→5.9%(2023년)→6.0%(2024년)→6.0%(2025년)로 개선 후 정체하는 흐름이다. 2025년 지배주주 순이익은 1,825억원, 영업활동현금흐름은 4,236억원으로 전년 2,560억원보다 크게 늘어 영업이익 대비 현금 창출력이 두드러졌다. 부채비율은 2022년 75.8%에서 2024년 93.6%까지 올랐다가 2025년 92.3%로 소폭 낮아졌다. 분기 흐름의 진폭은 컸다. 2025년 2분기 매출 1조 421억원·영업이익 814억원, 3분기 1조 543억원·708억원, 4분기 1조 3,227억원·765억원을 기록한 뒤, 2026년 1분기에는 매출 9,357억원에 영업이익이 212억원(이익률 2.3%)까지 떨어졌다. 2026년 2분기에는 매출 1조 2,507억원, 영업이익 905억원, 지배주주 순이익 682억원으로 최근 다섯 개 분기 중 가장 높은 이익 수준을 회복했으며, 삼성증권은 이를 엔터프라이즈IT 고성장과 1분기 이연 매출 약 200억원 반영에 따른 것으로 설명했다. 다만 이익의 질은 갈렸다 — 키움증권은 전년 동기 대비 매출총이익률이 SI 10.1%→12.8%, ITO 9.2%→10.3%로 개선된 반면 차량SW는 19.3%→8.2%로 급락했다고 지적했다. 인력이 2026년 상반기 약 7,900명까지 늘어난 가운데 20% 이상이 차량SW 소속이라는 점에서, 고정비 부담이 분기 이익률 변동의 핵심 변수로 남아 있다.",
-  "en": "On confirmed figures, consolidated revenue expanded for four straight years: KRW 2.755tn in 2022, KRW 3.065tn in 2023, KRW 3.714tn in 2024 and KRW 4.252tn in 2025. Operating profit rose from KRW 142.4bn to KRW 255.3bn over the same span, with the operating margin improving then plateauing at 5.2% (2022), 5.9% (2023), 6.0% (2024) and 6.0% (2025). Net profit attributable to owners was KRW 182.5bn in 2025 while operating cash flow reached KRW 423.6bn, well above the prior year's KRW 256.0bn, underlining cash generation relative to reported operating profit. The debt-to-equity ratio climbed from 75.8% in 2022 to 93.6% in 2024 before easing slightly to 92.3% in 2025. Quarterly swings were pronounced. After revenue of KRW 1,042.1bn and operating profit of KRW 81.4bn in 2Q25, KRW 1,054.3bn and KRW 70.8bn in 3Q25 and KRW 1,322.7bn and KRW 76.5bn in 4Q25, first-quarter 2026 revenue of KRW 935.7bn came with operating profit of just KRW 21.2bn, a 2.3% margin. In 2Q26 revenue of KRW 1,250.7bn, operating profit of KRW 90.5bn and owners' net profit of KRW 68.2bn marked the strongest profit level among the last five quarters, which Samsung Securities attributed to Enterprise IT growth plus roughly KRW 20bn of revenue deferred from the first quarter. The quality of that profit was uneven, however: Kiwoom Securities pointed out that year-on-year gross margins improved for SI from 10.1% to 12.8% and for ITO from 9.2% to 10.3%, while vehicle software plunged from 19.3% to 8.2%. With headcount rising to about 7,900 in the first half of 2026 and more than 20% of that sitting in vehicle software, fixed-cost absorption remains the central variable behind quarterly margin volatility."
+  "ko": "공시 실적 기준 연간 매출은 2022년 2조 7,545억원에서 2025년 4조 2,521억원으로 늘었다. 2023년부터 2025년까지 3년 연속 증가했으며, 2022~2025년 중 가장 큰 해는 2025년이다. 매출 증가율은 2023년 11.3%, 2024년 21.2%, 2025년 14.5%였다. 영업이익은 2022년 1,424억원에서 2023년 1,814억원, 2024년 2,244억원을 거쳐 2025년 2,553억원까지 늘었다. 영업이익률은 2022년 5.2%에서 2023년 5.9%, 2024년 6.0%, 2025년 6.0%로 올랐지만, 2024년 이후에는 거의 변하지 않았다. 지배주주 순이익은 2022년 1,139억원에서 2025년 1,825억원으로 늘었으나, 2025년 증가율은 6.8%로 영업이익 증가율 13.8%를 밑돌았다. 같은 해 당기순이익(비지배지분 포함)은 1,868억원이다. 재무 구조에서는 부채비율이 2023년 78.5%에서 2024년 93.6%로 뛰었다가 2025년 92.3%로 소폭 낮아졌다. 2025년 말 자본총계는 1조 8,747억원, 그중 지배주주 지분은 1조 8,471억원, 부채총계는 1조 7,305억원이다. 영업활동 현금흐름은 2022년 2,013억원에서 2025년 4,236억원으로 크게 늘었다. 분기로 보면 2025년 4분기 매출 1조 3,227억원이 정점이었고, 2026년 1분기 매출은 9,357억원으로 줄며 영업이익은 212억원에 그쳤다. 증권가에서는 이 분기의 부진을 SW 사업부 매출 둔화 탓으로 해석했다. 2026년 2분기에는 매출 1조 2,507억원, 영업이익 905억원으로 회복됐다. 2026년 3분기 영업이익률은 5.6%로 전 분기 6.7%보다 낮아졌다. 최근 4개 분기 지배주주 순이익 합계는 1,832억원이다.",
+  "en": "On the disclosed annual figures, revenue rose from KRW 2.75 trillion in 2022 to KRW 4.25 trillion in 2025. Revenue grew for three consecutive years from 2023 through 2025, and 2025 was the largest year of 2022 to 2025. Growth was 11.3% in 2023, 21.2% in 2024 and 14.5% in 2025. Operating profit climbed from KRW 142.4 billion in 2022 to KRW 181.4 billion in 2023, KRW 224.4 billion in 2024 and KRW 255.3 billion in 2025. The operating margin improved from 5.2% in 2022 to 5.9% in 2023, 6.0% in 2024 and 6.0% in 2025, and has barely moved since 2024. Controlling-shareholder net income rose from KRW 113.9 billion in 2022 to KRW 182.5 billion in 2025, but the 2025 gain of 6.8% trailed the 13.8% operating profit gain. Net income including non-controlling interests was KRW 186.8 billion in 2025. The debt ratio rose from 78.5% in 2023 to 93.6% in 2024 before easing to 92.3% in 2025. At year-end 2025, total equity was KRW 1.87 trillion, controlling-shareholder equity was KRW 1.85 trillion and total liabilities were KRW 1.73 trillion. Operating cash flow grew from KRW 201.3 billion in 2022 to KRW 423.6 billion in 2025. Quarterly, revenue peaked at KRW 1.32 trillion in the fourth quarter of 2025, then fell to KRW 935.7 billion in the first quarter of 2026 with operating profit of KRW 21.2 billion, which market commentary attributed to slower SW business revenue. Revenue recovered to KRW 1.25 trillion in the second quarter of 2026, with operating profit of KRW 90.5 billion. The third-quarter operating margin of 5.6% was below the 6.7% of a year earlier, according to press reports of the 30 October 2026 preliminary results. Controlling-shareholder net income over the latest four quarters totaled KRW 183.2 billion."
  },
  "industry": {
-  "ko": "국내 IT서비스 수요는 클라우드 전환과 차세대 ERP 교체 사이클이 겹치며 대형 구축 프로젝트가 몰리는 국면에 있다. 현대오토에버 상반기 성과의 배경으로도 현대차그룹 계열사의 대형 IT 프로젝트 확대가 꼽혔고, 회사는 반기보고서에서 IT서비스 부문은 시스템 고도화와 운영 서비스 확대를, 차량SW 부문은 소프트웨어 정의 차량(SDV) 전환 대응을 추진하겠다고 밝혔다. 반대편에서 전방인 완성차 사이클은 둔화 신호를 보인다 — 현대차의 2026년 2분기 도매 판매는 전년 동기 대비 6.9% 감소했고 영업이익은 원자재 가격 상승과 부품사 화재 영향으로 20.8% 줄었다. 회사는 차량SW 매출 둔화의 원인으로 지난해부터 이어진 미국 관세와 지정학적 리스크를 지목했다. 즉 그룹의 디지털·AI 투자(전방 투자 사이클)와 차량 판매·판가(전방 수요 사이클)가 서로 다른 방향을 가리키는 구간이다. 산업 내 포지션은 그룹 캡티브 물량을 기반으로 한 계열 시스템통합 업체로, 안정적 반복 매출이라는 장점과 외부 고객 확보가 제한된다는 단점을 동시에 갖는다. 최근에는 피지컬 AI·휴머노이드 흐름이 스마트팩토리 소프트웨어 수요와 연결될지가 업종 전체의 관심사로 부상했고, 현대차는 2026년 8월 CEO 인베스터 데이에서 로봇 훈련센터를 10배 확장하고 2028년 미국 공장에 로봇을 투입하겠다는 계획을 공개했다. 다만 IT서비스업 특성상 인건비가 원가의 중심이어서, 업종 전반이 인력 증가와 단가 협상 결과에 따라 마진이 결정되는 구조라는 점은 변하지 않았다.",
-  "en": "Korean IT services demand is in a phase where cloud migration and a next-generation ERP replacement cycle overlap, concentrating large build projects. Press coverage tied the company's first-half performance to expanding large IT projects at Hyundai Motor Group affiliates, and in its semi-annual report the company said it would pursue system upgrades and expanded operating services in IT services while responding to the software-defined vehicle (SDV) transition in vehicle software. On the other side, the downstream auto cycle is signalling deceleration: Hyundai Motor's 2Q26 wholesale volume fell 6.9% year on year and operating profit dropped 20.8% on higher raw material prices and a supplier fire. The company itself cited US tariffs and geopolitical risk carried over from last year as the reason for slowing vehicle software revenue. In other words, the group's digital and AI investment cycle and the downstream vehicle demand and pricing cycle currently point in opposite directions. Its industry position is that of a captive affiliate integrator, which brings the advantage of stable recurring revenue and the drawback of limited external customer acquisition. More recently, whether the physical AI and humanoid theme translates into smart factory software demand has become an industry-wide focus, and at its August 2026 CEO Investor Day Hyundai Motor disclosed plans to expand its robot training centre tenfold and deploy robots at a US plant in 2028. That said, labour costs sit at the centre of the cost base in IT services, so sector margins continue to hinge on headcount growth and the outcome of rate negotiations."
+  "ko": "현대오토에버의 수요는 현대차그룹의 투자 사이클에 크게 좌우된다. 그룹은 2030년까지 약 125조원을 투자해 스마트 공장 기반의 소프트웨어 정의 공장 전환을 추진하고 있으며, 이 과정에서 시스템 구축과 IT 서비스 수요가 늘 것으로 전망된다. 로봇 분야에서는 보스턴다이내믹스의 로봇이 생산 공정에 투입될 경우 시스템통합과 로봇 관제 시스템 구축을 맡을 것으로 예상된다. 차량 측면에서는 SDV 전환으로 차량 아키텍처가 분산 ECU 구조에서 중앙 고성능컴퓨터와 존 컨트롤러 중심으로 바뀌고 있다. LS증권은 이에 따라 통합 제어기에 더 복잡한 운영체제와 미들웨어가 필요해져 소프트웨어 통합의 가치가 커질 것으로 분석했다. 경쟁 측면에서 IT 서비스 부문은 삼성에스디에스와 LG씨엔에스 등과 비교되고, 차량 소프트웨어 부문은 그룹 표준 플랫폼을 공급한다는 점에서 위치가 다르다. 다만 차량SW 매출은 2026년 3분기 0.8% 증가에 그쳐, 양산 차종 확대 효과가 아직 분기 매출에 충분히 반영되지 않은 상태다. 고정밀 지도와 클라우드 부문의 매출 기여도는 회사가 따로 공개한 수치가 없어 정성적으로 볼 수밖에 없다. 그룹 외부 고객 확대가 진행되는지가 업황 내 포지션을 가르는 기준이 된다.",
+  "en": "Demand for Hyundai Autoever is closely tied to the investment cycle of Hyundai Motor Group. The group plans to invest about KRW 125 trillion through 2030 to move its factories toward software-defined factories, which is expected to lift demand for system build-outs and IT services. In robotics, the company is expected to handle system integration and robot control systems if Boston Dynamics robots are deployed in production lines. On the vehicle side, the shift to SDV architectures is moving cars from distributed ECUs toward central high-performance computers and zone controllers. LS Securities has argued that this makes software integration more valuable, since consolidated controllers need more complex operating systems and middleware. In IT services the company is compared with Samsung SDS and LG CNS, while its automotive software role differs because it supplies the group's standard platform. However, Automotive SW revenue grew only 0.8% in the third quarter of 2026, so the effect of wider mass production has not yet shown fully in quarterly sales. The company has not disclosed separate revenue figures for its high-precision map and cloud businesses, so those contributions can only be discussed qualitatively. Whether third-party customers outside the group grow will be the main yardstick for its position in the sector."
  },
  "outlook": {
-  "ko": "회사는 2026년 1월 공시에서 연간 연결 매출 전망치를 4조 5,120억원으로 제시했고, 대외 불확실성으로 수익성 예측이 어렵다는 이유로 영업이익 등 손익 전망은 기재하지 않았다. 참고로 2025년 매출 전망치는 3조 9,060억원이었고 실제는 4조 2,521억원으로 오차율 8.9%였다. 하반기 매출 기반으로는 대형 프로젝트 일정이 확인된다 — 현대차 차세대 ERP 본사·미주 롤인 프로젝트는 2026년 8월 말 마무리 예정이며, 아태·유럽 롤인 프로젝트는 2027년 4월까지 이어진다. 2026년 7월에는 현대차·기아와 총 3,043억 5,090만원 규모의 'GPU 서버 통합 구매 및 공급 계약'(계약기간 2027년 2월 28일까지)을, 현대차와는 3,985억 8,880만원 규모의 AWS 프라이빗 프라이싱 약정 계약(2026년 10월 1일~2031년 9월 30일)을 각각 공시했다. 다만 GPU 서버 계약은 회사가 일반 하드웨어 구매·공급 건이라고 설명한 만큼 계약금액 전액이 고부가 서비스 매출로 인식되는 것은 아니다. 증권가 시각은 갈린다 — NH투자증권 하늘 연구원은 2026년 7월 리포트에서 해외법인 차세대 ERP 전환 구축, 3분기 ITO 단가 협상, 차세대 내비게이션 탑재율 증가가 하반기에 반영될 수 있다고 전망했고, 키움증권 신윤철 연구원은 같은 시점에 차량SW 부문 부진이 더 뚜렷해지고 있으며 올해 이 부문의 영업이익 기여도가 10% 미만에 그칠 것으로 추정했다. 삼성증권은 2026년 7월 리포트에서 3분기 매출 1조 1,800억원·영업이익 739억원을 전망하며, 로봇 훈련센터 관련 3분기 유의미한 매출 발생 가능성은 제한적이라고 밝혔다.",
-  "en": "In a January 2026 filing the company guided to full-year consolidated revenue of KRW 4.512tn and omitted operating profit and other earnings forecasts, citing difficulty in projecting profitability amid external uncertainty. For reference, its 2025 revenue guidance was KRW 3.906tn against actual revenue of KRW 4.252tn, an 8.9% deviation. Large project schedules underpin the second-half revenue base: Hyundai Motor's next-generation ERP head office and Americas roll-in was slated for completion at the end of August 2026, while the Asia-Pacific and Europe roll-in runs to April 2027. In July 2026 the company disclosed a KRW 304.35bn GPU server integrated purchase and supply contract with Hyundai Motor and Kia running to 28 February 2027, plus a KRW 398.59bn AWS private pricing commitment contract with Hyundai Motor covering 1 October 2026 to 30 September 2031. That said, the company described the GPU server deal as ordinary hardware purchasing and supply, so the full contract value will not be recognised as high value-added service revenue. Broker views diverge: in a July 2026 report NH Investment & Securities analyst Ha Neul projected that overseas subsidiary next-generation ERP builds, third-quarter ITO rate negotiations and rising next-generation navigation fitment rates could feed into the second half, while Kiwoom Securities analyst Shin Yun-chul argued at the same time that the vehicle software downturn was becoming more pronounced and estimated the division would contribute less than 10% of this year's operating profit. In a July 2026 report Samsung Securities forecast third-quarter revenue of KRW 1.18tn and operating profit of KRW 73.9bn, and said the scope for meaningful third-quarter revenue tied to the robot training centre was limited."
+  "ko": "회사는 2026년 1월 말 공정공시를 통해 2026사업연도 연결 매출 전망을 4조 5,120억원으로 제시했고, 손익 전망은 대외 불확실성이 크다는 이유로 기재하지 않았다. 보도에 따르면 2026년 1분기부터 3분기까지 누적 매출은 3조 4,111억원으로 전년 동기 대비 16.4% 늘었다. 같은 기간 누적 영업이익은 1,806억원으로 1.0% 늘었다. 증권사 컨센서스를 모은 FnGuide 기준 2026년 매출 추정치는 4조 7,741억원, 영업이익 추정치는 2,770억원이다. 삼성증권은 2026년 10월 30일 보도 기준으로 2026년 영업이익을 2,770억원, 2027년 3,550억원, 2028년 5,360억원으로 전망했다. 같은 증권사는 2027년부터 2029년까지 데이터센터 구축 과정의 GPU 구매 대행으로 약 5조원의 매출이 발생할 수 있다고 추정했다. 회사가 2026년 7월 체결한 약 3,650억원 규모 GPU 계약은 이 흐름의 출발점으로 볼 수 있다. LS증권은 2026년 9월 보고서에서 차량 SDV 양산 일정과 대당 매출, 통합 검증과 OTA 운영의 수익성이 향후 실적과 밸류에이션의 핵심 변수가 될 것이라고 밝혔다. 회사는 2026년 말부터 2027년까지 실제 고객사 제어기로 자동검증 범위를 넓힐 계획이라고 설명했다. 이 밖에 로봇 관제와 RMAC 센터 개소 같은 신사업 일정은 아직 구체적인 매출 시점이 공개되지 않았다.",
+  "en": "In late January 2026 the company disclosed through a fair disclosure filing a 2026 consolidated revenue outlook of KRW 4.51 trillion, and it did not provide profit guidance, citing high external uncertainty. According to press reports, revenue for the first three quarters of 2026 totaled KRW 3.41 trillion, up 16.4% year on year, with cumulative operating profit of KRW 180.6 billion, up 1.0%. The FnGuide consensus compiled for 2026 shows revenue of KRW 4.77 trillion and operating profit of KRW 277 billion. Samsung Securities, in a report carried by the press on 30 October 2026, projected operating profit of KRW 277 billion for 2026, KRW 355 billion for 2027 and KRW 536 billion for 2028. The same brokerage estimated that GPU purchasing agency work in data center builds from 2027 through 2029 could generate revenue of about KRW 5 trillion. The roughly KRW 365 billion GPU contract signed in July 2026 can be read as the starting point of this flow. In a September 2026 report, LS Securities said mass-production timing and revenue per vehicle, along with the profitability of integration, verification and OTA operations, would be key variables for future earnings and valuation. The company has said it plans to extend automated verification to actual customer controllers from late 2026 into 2027. Other new businesses, including robot control and the RMAC center, have no disclosed revenue timing yet."
  },
  "valuation_comment": {
-  "ko": "확정 실적 기준으로 이 회사의 영업이익률은 2022년 5.2%에서 2025년 6.0%로 개선된 뒤 3년째 6% 안팎에 머물러 있고, 최근 다섯 분기 이익률은 2.3%에서 7.2%까지 흔들렸다. 반면 시장이 참조하는 주가 배수는 국내 IT서비스 업종 평균보다 크게 높고 순자산 대비 프리미엄도 큰 구간에 형성돼 있는데, 이는 현재 이익보다 소프트웨어 정의 차량(SDV)·피지컬 AI·스마트팩토리로의 사업모델 변화에 대한 기대가 반영된 결과로 해석된다. 배당은 회사가 2021년 중기 목표에서 배당성향 27% 유지를 언급한 바 있고, 현 배당수익률 수준은 코스피 평균을 밑도는 편이다. 증권사 평가는 엇갈린다 — 삼성증권은 2026년 7월 리포트에서 2027~2028년 평균 주당순이익에 목표 주가수익비율 42배(과거 사업모델 변화기의 밸류에이션 상단)를 적용해 목표주가 40만원과 투자의견 'HOLD'로 각각 하향했다고 밝혔고, 현대차증권은 2026년 4월 리포트에서 목표주가를 58만원에서 54만원으로 낮춰 제시했다. 결국 배수가 정당화되는지는 차량SW 마진 회복, ITO 단가 협상 결과, AI 인프라 계약이 반복 매출로 이어지는지 여부라는 사업 지표로 확인될 사안이며, 이 리포트는 어느 방향도 단정하지 않는다.",
-  "en": "On confirmed figures the operating margin improved from 5.2% in 2022 to 6.0% in 2025 and has hovered around 6% for three years, while margins across the last five quarters swung between 2.3% and 7.2%. The share multiples the market references, by contrast, sit well above the Korean IT services sector average and carry a large premium to net asset value, which is generally read as reflecting expectations for a business model shift toward SDV, physical AI and smart factory work rather than current earnings. On dividends, the company has previously referenced maintaining a 27% payout ratio in its 2021 mid-term targets, and the current dividend yield level runs below the KOSPI average. Broker assessments diverge: in a July 2026 report Samsung Securities said it cut its target price to KRW 400,000 and its rating to HOLD, applying a target price-to-earnings multiple of 42x, described as the upper end of valuation during the earlier business model shift, to average 2027-2028 earnings per share, while Hyundai Motor Securities in an April 2026 report lowered its target price from KRW 580,000 to KRW 540,000. Whether those multiples are borne out will be settled by operating metrics such as vehicle software margin recovery, ITO rate negotiation outcomes and whether AI infrastructure contracts convert into recurring revenue, and this report takes no position on the direction."
+  "ko": "현재 주가 배수는 최근 네 개 분기 지배주주 순이익 규모에 비해 높은 구간에 있다. 주당순자산 대비 주가는 프리미엄이 큰 구간이고, 배당수익률은 낮은 편이다. 다년 실적으로 보면 지배주주 순이익은 2022년 1,139억원에서 2025년 1,825억원으로 늘었지만, 2025년에는 증가 폭이 둔화됐다. 2026년 3분기 영업이익률이 5.6%로 낮아져 있어 배수 해석은 영업이익률 회복 여부와 맞물린다. LS증권은 2026년 9월 4일 투자의견 '매수'와 목표주가 54만원을 유지하면서 수익성 개선을 핵심 과제로 꼽았다. 같은 리포트는 중장기 차량당 수주 범위 확대에 주목할 필요가 있다고 밝혔다. 삼성증권의 2027년 영업이익 추정치가 2026년 대비 크게 늘어나 있어, 실제 실적이 이 추정 경로를 따라가는지가 배수 판단의 기준이 된다. 주가 수준 자체보다 이익 체력이 어떤 속도로 바뀌는지가 해석의 출발점이다.",
+  "en": "The current price multiple sits high relative to controlling-shareholder earnings over the most recent four quarters. The share price is at a large premium to book value per share, and the dividend yield is on the low side. On a multi-year view, controlling-shareholder net income rose from KRW 113.9 billion in 2022 to KRW 182.5 billion in 2025, though growth slowed in 2025. The third-quarter 2026 operating margin of 5.6% sits below prior levels, so the multiple reading is tied to whether margins recover. LS Securities kept a Buy opinion and a KRW 540,000 target price on 4 September 2026 and named profitability improvement as the main task. The same report said wider per-vehicle order scope in the medium term deserves attention. Samsung Securities projects a sharp rise in 2027 operating profit from 2026, so whether actual results follow that path will be the test for the multiple. The starting point is how fast earnings power changes, not the share price level itself."
  },
  "bull": [
   {
    "title": {
-    "ko": "엔터프라이즈IT의 구조적 물량 확대",
-    "en": "Structural volume expansion in Enterprise IT"
+    "ko": "그룹 SDV 전환의 수혜 범위 확대",
+    "en": "Wider role in the group's SDV shift"
    },
    "body": {
-    "ko": "2026년 상반기 SI 매출은 8,674억원으로 26.2%, ITO는 9,088억원으로 18.8% 증가하며 차량SW 부진을 상쇄했다. 그룹 차세대 ERP 구축과 클라우드 전환이 동시에 진행되면서 고부가 프로젝트 비중이 올라간 결과다. 현대차 차세대 ERP의 아태·유럽 롤인 프로젝트가 2027년 4월까지 이어지는 만큼 구축 물량의 가시성은 상대적으로 길게 확보돼 있다.",
-    "en": "In 1H26 SI revenue rose 26.2% to KRW 867.4bn and ITO rose 18.8% to KRW 908.8bn, offsetting vehicle software weakness. The simultaneous progression of the group's next-generation ERP build and cloud migration lifted the share of high value-added projects. With the Asia-Pacific and Europe roll-in of Hyundai Motor's next-generation ERP running to April 2027, visibility on build volume is secured over a relatively long horizon."
+    "ko": "LS증권은 2026년 9월 보고서에서 현대오토에버의 역할이 시스템 아키텍처 설계와 양산 검증, OTA 운영까지 넓어졌다고 분석했다. 그룹은 2030년까지 약 125조원을 투자해 소프트웨어 정의 공장으로 전환하는 계획을 세웠다. 차량당 소프트웨어 범위가 넓어지면 개발비와 제어기당 라이선스 형태의 매출이 늘 수 있다는 점이 강세 근거로 제시된다.",
+    "en": "LS Securities said in a September 2026 report that the company's role now extends from architecture design and mass-production verification to OTA operations. The group plans about KRW 125 trillion of investment through 2030 toward software-defined factories. Bulls cite wider per-vehicle software scope as a source of development fees and per-controller license revenue."
    }
   },
   {
    "title": {
-    "ko": "그룹 AI 인프라 조달 역할의 구체화",
-    "en": "A concrete role in group AI infrastructure procurement"
+    "ko": "대형 GPU 계약과 데이터센터 매출 가능성",
+    "en": "Large GPU contract and data center revenue potential"
    },
    "body": {
-    "ko": "2026년 7월 현대차·기아와 총 3,043억원 규모 GPU 서버 통합 구매·공급 계약이, 이어 현대차와 3,986억원 규모 AWS 프라이빗 프라이싱 약정이 공시됐다. 후자는 2025년 연결 매출의 9.4%에 해당하는 규모로 2031년 9월까지 매월 실사용료를 청구하는 구조다. 업계에서는 GPU 서버 공급 이후 AI 데이터센터 구축과 인프라 운영 등 후속 사업으로 연결될 가능성이 거론된다.",
-    "en": "In July 2026 the company disclosed a KRW 304.3bn GPU server integrated purchase and supply contract with Hyundai Motor and Kia, followed by a KRW 398.6bn AWS private pricing commitment with Hyundai Motor. The latter equals 9.4% of 2025 consolidated revenue and bills actual monthly usage through September 2031. Industry commentary points to the possibility of follow-on work such as AI data centre construction and infrastructure operation after the server supply phase."
+    "ko": "2026년 7월 현대차와 기아를 대상으로 한 약 3,650억원 규모의 GPU 서버 통합 구매 및 공급 계약이 체결됐다. 삼성증권은 2027년부터 2029년까지 GPU 구매 대행으로 약 5조원의 매출이 발생할 수 있다고 추정했다. 이 추정이 현실화되면 외형 기준으로 현재 규모를 크게 넘어서는 매출 흐름이 생긴다.",
+    "en": "In July 2026 the company signed a roughly KRW 365 billion GPU server bulk purchase and supply deal covering Hyundai Motor and KIA. Samsung Securities estimated that GPU purchasing work from 2027 through 2029 could bring about KRW 5 trillion of revenue. If that estimate materializes, the top line would rise well beyond its current scale."
    }
   },
   {
    "title": {
-    "ko": "현금 창출력과 무차입 기조",
-    "en": "Cash generation and a debt-free stance"
+    "ko": "영업이익 추정의 상향 경로",
+    "en": "A rising operating profit estimate path"
    },
    "body": {
-    "ko": "2025년 영업활동현금흐름은 4,236억원으로 같은 해 영업이익 2,553억원을 크게 웃돌았고, 전년 2,560억원 대비로도 증가폭이 컸다. 부채비율은 2024년 93.6%에서 2025년 92.3%로 낮아졌다. 삼성증권은 2026년 7월 리포트에서 2026년 2분기 말 순현금 6,658억원에 차입금이 없다고 밝혔는데, 이는 인력·연구개발 선행 투자를 자체 현금으로 감당할 여력과 연결된다.",
-    "en": "Operating cash flow of KRW 423.6bn in 2025 far exceeded that year's operating profit of KRW 255.3bn and rose sharply from KRW 256.0bn a year earlier. The debt-to-equity ratio eased from 93.6% in 2024 to 92.3% in 2025. In a July 2026 report Samsung Securities stated that the company held net cash of KRW 665.8bn at the end of 2Q26 with no borrowings, which ties to its capacity to fund upfront headcount and R&D investment internally."
+    "ko": "2026년 2분기 영업이익은 905억원으로 전년 대비 늘었고, 상반기 SI 매출은 26.2% 증가했다. 삼성증권은 2026년 영업이익을 2,770억원에서 2027년 3,550억원, 2028년 5,360억원으로 늘어날 것으로 전망했다. 고부가 프로젝트인 차세대 ERP와 클라우드 서비스가 수익성 개선을 이끈다는 해석도 강세 근거다.",
+    "en": "Second-quarter 2026 operating profit reached KRW 90.5 billion, and first-half SI revenue rose 26.2%. Samsung Securities projects operating profit rising from KRW 277 billion in 2026 to KRW 355 billion in 2027 and KRW 536 billion in 2028. Bulls point to high-value projects such as next-generation ERP and cloud services as drivers of margin improvement."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "고마진 차량SW의 역성장과 마진 훼손",
-    "en": "Shrinking, margin-impaired vehicle software"
+    "ko": "영업이익률 정체",
+    "en": "Stalled operating margin"
    },
    "body": {
-    "ko": "2026년 2분기 차량SW 매출은 2,123억원으로 전년 동기 대비 7.8% 감소하고 상반기 누적도 4,102억원으로 2.9% 줄었다. 회사는 미국 관세와 지정학적 리스크를 원인으로 설명했다. 키움증권은 이 부문 매출총이익률이 전년 동기 19.3%에서 8.2%로 급락했다고 지적했으며, 회사 전체에서 가장 마진이 높았던 축이 흔들린다는 점이 부담 요인이다.",
-    "en": "Vehicle software revenue fell 7.8% year on year to KRW 212.3bn in 2Q26 and 2.9% to KRW 410.2bn for the first half. The company attributed this to US tariffs and geopolitical risk. Kiwoom Securities noted the division's gross margin plunged from 19.3% a year earlier to 8.2%, and the weakening of what had been the group's highest-margin axis is a burden."
+    "ko": "영업이익률은 2024년 6.0%에서 2025년 6.0%로 같은 수준에 머물렀다. 2026년 상반기 영업이익률은 5.1%로 전년 동기 5.8%보다 낮아졌다. 2026년 3분기 영업이익은 689억원으로 2.6% 줄었다. 외형 성장이 이익률 개선으로 이어지지 않는다는 점이 약세 근거다.",
+    "en": "The operating margin held at 6.0% in both 2024 and 2025. The first-half 2026 margin fell to 5.1% from 5.8% a year earlier. Third-quarter 2026 operating profit fell 2.6% to KRW 68.9 billion. Bears argue that top-line growth has not translated into margin gains."
    }
   },
   {
    "title": {
-    "ko": "인력 증가에 따른 고정비 부담",
-    "en": "Fixed-cost burden from headcount growth"
+    "ko": "그룹 의존과 제3자 수주의 과제",
+    "en": "Group dependence and third-party wins"
    },
    "body": {
-    "ko": "키움증권에 따르면 인력은 2022년 말 약 5,500명에서 2025년 말 약 7,800명, 2026년 상반기 약 7,900명까지 늘었고 이 가운데 20% 이상이 차량SW 소속이다. 같은 리포트는 올해 차량SW의 영업이익 기여도가 10% 미만에 머물 것으로 추정했다. 2026년 1분기 영업이익률이 2.3%까지 떨어진 사례는 매출 인식 시점이 밀릴 때 고정비가 곧바로 이익률을 압박한다는 점을 보여준다.",
-    "en": "According to Kiwoom Securities, headcount grew from about 5,500 at the end of 2022 to roughly 7,800 at the end of 2025 and about 7,900 in the first half of 2026, with more than 20% sitting in vehicle software. The same report estimated the division would contribute less than 10% of this year's operating profit. The drop in the operating margin to 2.3% in 1Q26 illustrates how fixed costs immediately compress margins when revenue recognition slips."
+    "ko": "2026년 상반기 계열회사 매출은 2조 1,019억원으로 전체의 96.1%를 차지했다. 전문가들은 그룹 내부 시장에 대한 매출 의존을 극복하고 해외 완성차와 부품사로 수주를 넓히는 것이 과제라고 지적한다. 그룹 투자 속도가 둔화되면 성장 경로가 흔들릴 수 있다는 점이 약세 근거다.",
+    "en": "Affiliates accounted for KRW 2.10 trillion, or 96.1%, of first-half 2026 revenue. Commentators note that the company must reduce its reliance on the group market and widen orders from overseas automakers and parts suppliers. Bears note that a slowdown in group investment could disrupt the growth path."
    }
   },
   {
    "title": {
-    "ko": "캡티브 의존과 신사업 가시성 부족",
-    "en": "Captive dependence and limited new-business visibility"
+    "ko": "차량SW 사업의 둔화",
+    "en": "Slowing Automotive SW business"
    },
    "body": {
-    "ko": "언론 보도에 따르면 매출의 90%를 웃도는 물량이 현대차그룹에서 나오며, GPU 서버 계약 상대방도 최대주주 현대차와 주요주주 기아다. 조세일보는 이 계약을 두고 외부 고객 확대라는 의미는 제한적이라고 짚었다. 삼성증권은 2026년 7월 리포트에서 로봇 훈련센터 관련 3분기 유의미한 매출 발생 가능성이 제한적이며 로봇·데이터센터 매출 기대가 2028년 이후로 지연된다고 밝혔다.",
-    "en": "Press reports indicate more than 90% of revenue comes from Hyundai Motor Group, and the counterparties to the GPU server contract are largest shareholder Hyundai Motor and major shareholder Kia. Joseilbo noted the deal carries limited significance as external customer expansion. In a July 2026 report Samsung Securities said the scope for meaningful third-quarter revenue from the robot training centre was limited and that expectations for robot and data centre revenue had been pushed out beyond 2028."
+    "ko": "차량SW 매출은 2026년 3분기 1,999억원으로 전년 동기 대비 0.8% 증가에 그쳤다. 2026년 1분기 영업이익 감소도 SW 사업부 매출 지연이 원인으로 꼽혔다. 차량 SDV 양산 확대가 분기 매출로 연결되기까지 시간이 걸린다는 점이 약세 근거다.",
+    "en": "Automotive SW revenue rose only 0.8% to KRW 199.9 billion in the third quarter of 2026. The first-quarter 2026 profit decline was linked to delayed SW business revenue. Bears argue that SDV volume gains will take time to show up in quarterly sales."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "전방 완성차 수요·관세",
-    "en": "Downstream auto demand and tariffs"
+    "ko": "재무 구조",
+    "en": "Balance sheet"
    },
    "body": {
-    "ko": "현대차의 2026년 2분기 도매 판매는 전년 동기 대비 6.9% 감소했고 영업이익은 20.8% 줄었다. 차량SW 매출은 그룹 차량 판매량과 탑재율에 직접 연동되는 구조이며, 회사도 미국 관세와 지정학적 리스크를 성장 둔화 원인으로 지목했다. 완성차 물량이나 판가 전략이 추가로 흔들릴 경우 차량SW 회복 시점은 더 밀릴 수 있다.",
-    "en": "Hyundai Motor's 2Q26 wholesale volume fell 6.9% year on year and operating profit dropped 20.8%. Vehicle software revenue is directly geared to group vehicle volumes and fitment rates, and the company itself cited US tariffs and geopolitical risk behind slowing growth. If automaker volumes or pricing strategy wobble further, the timing of a vehicle software recovery could slip again."
+    "ko": "부채비율은 2024년 93.6%로 뛰었다가 2025년 92.3%로 낮아졌다. 2025년 말 부채총계는 1조 7,305억원으로 자본총계 1조 8,747억원에 가까운 규모다. 영업활동 현금흐름이 2025년 4,236억원으로 늘어난 점은 완충 요인이지만, 대형 계약의 운전자본 부담을 확인할 필요가 있다.",
+    "en": "The debt ratio jumped to 93.6% in 2024 and eased to 92.3% in 2025. Total liabilities of KRW 1.73 trillion are close to total equity of KRW 1.87 trillion at year-end 2025. Operating cash flow rose to KRW 423.6 billion in 2025, which cushions the balance sheet, but the working capital needs of large contracts should be watched."
    }
   },
   {
    "cat": {
-    "ko": "프로젝트 인식 시점 변동성",
-    "en": "Project recognition timing volatility"
+    "ko": "인력과 연구개발 비용",
+    "en": "Talent and R&D costs"
    },
    "body": {
-    "ko": "2026년 1분기 영업이익 212억원과 2분기 905억원의 격차는 대형 구축 프로젝트의 매출 인식 시점에 실적이 크게 좌우된다는 점을 보여준다. 삼성증권은 2분기에 1분기 이연 매출 약 200억원이 반영됐다고 분석했다. 대형 ERP 프로젝트가 순차 종료되는 국면에서는 특정 분기의 매출·이익이 앞뒤로 이동하며 추세 판단을 어렵게 만들 수 있다.",
-    "en": "The gap between operating profit of KRW 21.2bn in 1Q26 and KRW 90.5bn in 2Q26 shows how heavily results depend on the recognition timing of large build projects. Samsung Securities analysed that roughly KRW 20bn of revenue deferred from the first quarter was booked in the second. As large ERP projects wind down in sequence, revenue and profit can shift between quarters, complicating trend assessment."
+    "ko": "SDV 소프트웨어 경쟁이 심해지면서 우수 개발 인력을 확보하기 위한 인건비 부담이 커지고 있다. 2026년 상반기 연구개발비는 343억원으로 9.8% 줄었고, 매출 대비 비율은 2.03%에서 1.57%로 낮아졌다. 자산 계상액과 비용 계상액의 구조도 바뀌어, 비용 처리 방식이 손익에 미치는 영향을 함께 봐야 한다.",
+    "en": "Competition for software talent in SDV development is raising personnel costs. First-half 2026 R&D spending fell 9.8% to KRW 34.3 billion, and its share of revenue dropped from 2.03% to 1.57%. The capitalized and expensed split also shifted, so the effect of accounting treatment on reported profit needs to be checked."
    }
   },
   {
    "cat": {
-    "ko": "인건비·노무 환경",
-    "en": "Labour costs and industrial relations"
+    "ko": "대형 계약의 수익성",
+    "en": "Margins on large contracts"
    },
    "body": {
-    "ko": "IT서비스업은 인건비가 원가의 중심이며, 회사는 2026년 상반기 본사 급여 총액 2,591억원을 지출했다. 2026년 7월에는 창사 첫 노동조합이 출범했다고 보도됐다. 임금 협상과 인력 운용 방식의 변화가 향후 판매관리비와 부문 이익률에 어떤 영향을 줄지는 아직 확인되지 않은 변수다.",
-    "en": "In IT services labour is the core cost, and the company paid KRW 259.1bn in total headquarters salaries in the first half of 2026. In July 2026 press reports noted the establishment of the company's first labour union. How wage negotiations and changes in workforce management affect selling and administrative expenses and divisional margins remains an unverified variable."
+    "ko": "GPU 서버 구매 및 공급 계약은 장비 원가가 매출에 포함되는 구조여서 매출 규모에 비해 이익률이 낮을 수 있다. 매출이 늘어나도 영업이익률이 희석되는지가 중요한 확인 지점이다. 2027년 이후 추정 매출이 실제로 인식되는 시점과 이익률은 아직 회사가 공개한 정보가 제한적이다.",
+    "en": "GPU server purchasing and supply contracts can carry equipment costs within revenue, so margins may be thin relative to sales size. Whether operating margin gets diluted as revenue grows is a key check. The timing and profit margin of the post-2027 revenue estimates remain limited in what the company has disclosed."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 10월 1일",
-    "en": "1 October 2026"
+    "ko": "2026년 12월~2027년",
+    "en": "December 2026 to 2027"
    },
    "what": {
-    "ko": "현대차 대상 AWS 프라이빗 프라이싱 약정(3,985억 8,880만원, 2031년 9월 30일까지) 개시 시점이다. 계약금·선급금 없이 매월 실사용료를 청구하는 구조여서 ITO성 반복 매출이 실제로 얼마나 얹히는지 확인할 필요가 있다.",
-    "en": "The AWS private pricing commitment with Hyundai Motor (KRW 398.59bn, running to 30 September 2031) begins. With no upfront or advance payment and monthly billing of actual usage, it is worth checking how much genuinely recurring ITO-type revenue is added."
+    "ko": "실제 고객사 제어기로 자동검증 범위가 넓어지는 일정이다. SDV 양산 확대가 대당 매출과 수익성에 어떻게 연결되는지 확인하는 지점이다.",
+    "en": "The expansion of automated verification to actual customer controllers. It tests how SDV mass production links to revenue per vehicle and profitability."
    }
   },
   {
    "when": {
-    "ko": "2026년 10월 말~11월 초",
-    "en": "Late October to early November 2026"
+    "ko": "2027년 1월 말~2월 중순 무렵(통상 시점)",
+    "en": "Late January to mid-February 2027 (typical timing)"
    },
    "what": {
-    "ko": "2026년 3분기 실적 발표가 예상된다. 삼성증권이 2026년 7월 리포트에서 제시한 3분기 매출 1조 1,800억원·영업이익 739억원 전망 대비 실제치, 그리고 3분기 ITO 단가 협상 결과와 차량SW 매출총이익률 회복 여부가 확인 포인트다.",
-    "en": "Third-quarter 2026 results are expected. Key checks are the actual figures against the third-quarter forecast of KRW 1.18tn revenue and KRW 73.9bn operating profit given by Samsung Securities in its July 2026 report, plus the outcome of third-quarter ITO rate negotiations and any recovery in vehicle software gross margin."
+    "ko": "2026년 4분기 잠정실적 발표다. 2026년 연간 매출이 회사 전망(4조 5,120억원)과 컨센서스 중 어디에 가까운지, 4분기 영업이익률이 6%대를 유지하는지 확인할 수 있다.",
+    "en": "The preliminary fourth-quarter 2026 results. They show whether 2026 annual revenue lands closer to the company outlook of KRW 4.51 trillion or to consensus, and whether the fourth-quarter operating margin holds in the 6% range."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기",
-    "en": "Fourth quarter of 2026"
+    "ko": "2027년 3월 말 이전",
+    "en": "By the end of March 2027"
    },
    "what": {
-    "ko": "현대차가 2026년 8월 CEO 인베스터 데이에서 밝힌 아이오닉 5 기반 로보택시의 웨이모 공급 개시와 로봇 훈련센터 10배 확장 진행 상황을 확인할 시점이다. 관제·데이터 시스템 영역에서 현대오토에버의 수주가 실제 공시로 나타나는지가 관건이다.",
-    "en": "This is the point to check the start of Ioniq 5-based robotaxi supply to Waymo and progress on the tenfold expansion of the robot training centre, both announced by Hyundai Motor at its August 2026 CEO Investor Day. The question is whether Hyundai AutoEver orders in control and data systems actually appear in filings."
+    "ko": "2026 사업보고서 제출 시점이다. 연간 영업이익률, 부채비율, 계열회사 매출 비중과 해외 매출 비중의 변화를 DART 공시로 확인하는 지점이다.",
+    "en": "The filing of the 2026 annual report. It is the point to check annual operating margin, debt ratio, and the shares of affiliate and overseas revenue in DART filings."
    }
   },
   {
    "when": {
-    "ko": "2027년 1월 말~2월 초",
-    "en": "Late January to early February 2027"
+    "ko": "2027년 4월 말 무렵",
+    "en": "Around late April 2027"
    },
    "what": {
-    "ko": "2026년 연간 실적과 함께 2027년 장래사업·경영계획(매출 전망) 공시가 나올 시기다. 2026년 매출 가이던스 4조 5,120억원의 달성 여부와, 2025년처럼 손익 전망을 생략하는지가 회사의 수익성 자신감을 읽는 단서가 된다.",
-    "en": "Full-year 2026 results and the 2027 business plan disclosure with a revenue outlook are due around this time. Whether the 2026 revenue guidance of KRW 4.512tn is met, and whether profit guidance is again omitted, offers a read on management's confidence in profitability."
+    "ko": "2027년 1분기 잠정실적 발표다. 2026년 1분기 잠정실적 발표가 2026년 4월 30일에 있었던 흐름을 기준으로 한 시점이다. 1분기 SW 사업부 매출 흐름과 영업이익률의 회복 여부를 본다.",
+    "en": "The preliminary first-quarter 2027 results. Based on the pattern of the first-quarter 2026 release on 30 April 2026, it is the point to check SW segment sales and margin recovery."
    }
   },
   {
    "when": {
-    "ko": "2027년 2월 28일",
-    "en": "28 February 2027"
+    "ko": "2027년 상반기",
+    "en": "First half of 2027"
    },
    "what": {
-    "ko": "현대차·기아 대상 3,043억 5,090만원 규모 GPU 서버 통합 구매·공급 계약의 계약기간 종료일이다. 회사가 일반 하드웨어 구매·공급 건이라고 설명한 만큼, 실제 인식 매출과 후속 계약 갱신 여부, 마진 기여도를 함께 봐야 한다.",
-    "en": "The contract period for the KRW 304.35bn GPU server integrated purchase and supply agreement with Hyundai Motor and Kia ends. Since the company described it as ordinary hardware purchasing and supply, the actual revenue recognised, any renewal, and the margin contribution should all be examined together."
+    "ko": "2026년 7월 GPU 계약의 매출 인식이 시작되는지 확인하는 지점이다. 삼성증권이 추정한 2027년 이후 GPU 구매 대행 매출이 실적에 반영되는 속도가 핵심이다.",
+    "en": "The start of revenue recognition from the July 2026 GPU contract. The speed at which the GPU purchasing revenue estimated by Samsung Securities for 2027 onward appears in results is the key test."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "현대오토에버는 2022년 2조 7,545억원에서 2025년 4조 2,521억원으로 매출을 키우는 동안 영업이익률을 5.2%에서 6.0%로 올렸지만, 최근 3년은 6% 안팎에서 정체했다. 2026년 상반기에는 SI 8,674억원(+26.2%)과 ITO 9,088억원(+18.8%)이 차량SW 4,102억원(-2.9%)의 부진을 메우는 구도가 이어졌고, 분기 영업이익은 1분기 212억원에서 2분기 905억원으로 급반등했다. 이 반등에는 삼성증권이 지적한 1분기 이연 매출 약 200억원이 포함돼 있어, 회복의 지속성은 3분기 이후 숫자로 확인해야 한다. 강세 요인은 그룹 차세대 ERP·클라우드 물량과 2026년 7월 잇따라 공시된 GPU 서버(3,043억원)·AWS 약정(3,986억원) 계약, 그리고 무차입에 가까운 재무구조다. 약세 요인은 가장 마진이 높았던 차량SW의 역성장과 매출총이익률 급락, 약 7,900명까지 늘어난 인력의 고정비 부담, 매출의 90%를 웃도는 그룹 의존도다. 회사가 2026년 매출 전망만 4조 5,120억원으로 제시하고 손익 전망을 생략한 점, 로봇·데이터센터 관련 매출 기대가 뒤로 밀린다는 증권가 지적도 함께 놓고 볼 사안이다. 이 리포트는 정보 제공 목적이며 매수·매도 의견이나 목표주가를 포함하지 않는다.",
-   "en": "Hyundai AutoEver lifted its operating margin from 5.2% to 6.0% while growing revenue from KRW 2.755tn in 2022 to KRW 4.252tn in 2025, but the margin has stalled near 6% for the past three years. Through the first half of 2026 the pattern persisted, with SI at KRW 867.4bn (+26.2%) and ITO at KRW 908.8bn (+18.8%) filling the gap left by vehicle software at KRW 410.2bn (-2.9%), and quarterly operating profit rebounded sharply from KRW 21.2bn in the first quarter to KRW 90.5bn in the second. That rebound included roughly KRW 20bn of first-quarter deferred revenue flagged by Samsung Securities, so the durability of the recovery must be verified in third-quarter figures onward. The bullish elements are group next-generation ERP and cloud volume, the GPU server (KRW 304.3bn) and AWS commitment (KRW 398.6bn) contracts disclosed back-to-back in July 2026, and a near debt-free balance sheet. The bearish elements are the contraction and sharp gross margin decline in the previously highest-margin vehicle software line, the fixed-cost burden of headcount that has grown to about 7,900, and group dependence exceeding 90% of revenue. The fact that the company guided only to 2026 revenue of KRW 4.512tn while omitting profit guidance, alongside broker observations that robot and data centre revenue expectations have been pushed back, also belongs in the frame. This report is for information purposes and contains no buy or sell opinion and no target price."
+   "ko": "현대오토에버는 현대차그룹의 IT 서비스와 차량 소프트웨어를 맡는 회사로, 공시 실적 기준 매출은 2022년 2조 7,545억원에서 2025년 4조 2,521억원으로 늘었다. 영업이익은 2025년 2,553억원까지 늘었지만 영업이익률은 6.0%에서 정체된 상태다. 2026년 3분기 매출은 16.2% 늘었으나 영업이익은 2.6% 줄었고, 같은 기간 차량SW 매출 증가율은 0.8%에 그쳤다. 강세 요인은 그룹 SDV 전환에 따른 역할 확대, 3,650억원 규모 GPU 계약과 대형 데이터센터 매출 가능성, 증권사 추정의 영업이익 상향 경로다. 약세 요인은 계열 매출 96.1%라는 높은 그룹 의존, 영업이익률 정체, 차량SW 사업의 느린 성장이다. 재무적으로는 부채비율이 92.3%이고 영업활동 현금흐름이 늘어난 점이 함께 놓여 있다. 주가 배수는 최근 네 개 분기 이익 규모에 비해 높은 구간이므로, 수익성 회복 속도가 해석의 중심이다. 다음 확인 지점은 2026년 4분기 잠정실적과 2026 사업보고서의 영업이익률이다.",
+   "en": "Hyundai Autoever provides IT services and automotive software for Hyundai Motor Group, and disclosed revenue grew from KRW 2.75 trillion in 2022 to KRW 4.25 trillion in 2025. Operating profit reached KRW 255.3 billion in 2025, but the operating margin has stayed around 6.0%. Third-quarter 2026 revenue rose 16.2%, while operating profit fell 2.6% and Automotive SW revenue grew only 0.8%. Bull factors include a wider role in the group's SDV shift, a roughly KRW 365 billion GPU contract and potential large data center revenue, and brokerage estimates of rising operating profit. Bear factors include the 96.1% affiliate revenue share in the first half of 2026, a stalled margin and slow Automotive SW growth. On the balance sheet, the debt ratio is 92.3% and operating cash flow has risen, and both sit alongside each other. The price multiple is high relative to recent earnings, so the pace of margin recovery is the central question. The next checkpoints are the preliminary fourth-quarter 2026 results and the operating margin in the 2026 annual report."
   }
  },
  "sources": [
-  "https://comp.wisereport.co.kr/company/c1080001.aspx?cmp_cd=307950&cn=",
-  "https://zdnet.co.kr/view/?no=20260730095418",
-  "https://www.mt.co.kr/industry/2026/07/29/2026072914135438501",
-  "https://samsungpop.com/common.do?cmd=down&contentType=application%2Fpdf&fileName=2010%2F2026072908290849K_02_05.pdf&inlineYn=Y&saveKey=research.pdf",
-  "https://www.betanews.net/article/view/beta202108070023",
-  "https://biz.heraldcorp.com/article/10824428",
-  "https://zdnet.co.kr/view/?no=20260729141018",
-  "https://m.irgo.co.kr/IR-ROOM/307950",
-  "https://www.etoday.co.kr/news/view/2608769",
-  "https://www.bondweb.co.kr/_research/downloadPage.asp?number=891426&gn=1",
-  "https://www.fetv.co.kr/news/article.html?no=207538",
-  "https://www.bloter.net/news/articleView.html?idxno=635738",
-  "http://news.bizwatch.co.kr/article/mobile/2023/01/31/0029",
-  "https://m.ddaily.co.kr/page/view/2025072814590397868",
-  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=408770",
-  "https://www.fetv.co.kr/news/articleView.html?idxno=207538",
+  "https://www.samsungpop.com/common.do?cmd=down&contentType=application%2Fpdf&inlineYn=Y&saveKey=research.pdf&fileName=2010%2F2026043010223972K_02_05.pdf",
+  "https://zdnet.co.kr/view/?no=20261030154709",
+  "https://www.tokenpost.kr/amp/news/economy/356789",
+  "https://www.vegannews.co.kr/news/article.html?no=398472",
   "https://zdnet.co.kr/view/?no=20260814185634",
-  "https://www.bosoop.com/ed4c132c-5450-43ac-8c05-cadc939e4aa9/"
+  "https://www.bloter.net/news/articleView.html?idxno=653176",
+  "https://stock1.brokdam.com/%ED%98%84%EB%8C%80%EC%98%A4%ED%86%A0%EC%97%90%EB%B2%84307950-2026-q1-%EC%8B%A4%EC%A0%81-%EB%B6%84%EC%84%9D%EA%B3%BC-%EB%AA%A9%ED%91%9C%EC%A3%BC%EA%B0%80-sdv%C2%B7%EB%A1%9C%EB%B3%B4/",
+  "https://kbthink.com/securities-view.html?docId=20260504091655093K",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A307950",
+  "https://www.businesspost.co.kr/BP?command=article_view&num=450793",
+  "https://www.etoday.co.kr/news/view/2621778",
+  "https://www.fnnews.com/news/202609040832260964",
+  "https://www.epnc.co.kr/news/articleView.html?idxno=407767",
+  "https://m.newsprime.co.kr/section_view.html?no=727026&menu=1",
+  "https://news.jkn.co.kr/post/889535",
+  "https://www.widedaily.com/news/articleView.html?idxno=300591",
+  "https://stockeasy.intellio.kr/share_chat/86ce4d05-5514-4003-9e91-c93a11304a2f",
+  "https://m.ddaily.co.kr/page/view/2023090717322626689"
  ],
  "v": 2,
- "model": "claude-opus-5",
+ "model": "claude-haiku-5-5",
  "ticker": "307950",
  "name": "현대오토에버",
  "name_en": "HYUNDAI AUTOEVER CORPORATION.",
@@ -233,11 +233,11 @@
   "IT·소프트웨어"
  ],
  "market": "코스피",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 05:28",
- "dataDate": "20260904",
+ "reportDate": "2026-11-18",
+ "reportTs": "2026-11-18 01:50",
+ "dataDate": "20261117",
  "quant": {
-  "asOf": "2026-09-04",
+  "asOf": "2026-11-17",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -307,12 +307,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 1042052024000,
-    "op": 81370112000,
-    "np_owner": 58211340000
-   },
-   {
     "q": "2025Q3",
     "rev": 1054258216000,
     "op": 70755406000,
@@ -335,29 +329,36 @@
     "rev": 1250738561000,
     "op": 90547139000,
     "np_owner": 68189747000
+   },
+   {
+    "q": "2026Q3",
+    "rev": 1224702890000,
+    "op": 68906103000,
+    "np_owner": 44126935000
    }
   ],
   "valuation": {
-   "price": 395000,
-   "mcap": 10.8325,
+   "price": 277000,
+   "mcap": 7.5964,
    "shares": 27423982,
    "total_shares": 27423982,
-   "wavg_shares": 27427096,
-   "per": 56.786,
-   "eps": 6956,
-   "pbr": 5.7257,
-   "bps": 68987,
-   "roe_ttm": 10.5,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": 190778376000,
+   "wavg_shares": 27426409,
+   "per": 41.473,
+   "eps": 6679,
+   "pbr": 3.978,
+   "bps": 69633,
+   "roe_ttm": 9.9,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": 183181278000,
    "ccy": "KRW",
    "bps_src": "자체",
    "eps_src": "공시",
-   "pbr_krx": 5.86,
+   "pbr_krx": 4.13,
    "bps_krx": 67357.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 1900.0,
-   "div": 0.48
+   "div": 0.69
   }
- }
+ },
+ "textRules": 2
 }
