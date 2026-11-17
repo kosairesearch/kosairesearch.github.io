@@ -1,220 +1,225 @@
 {
  "title": {
-  "ko": "멀티 성장엔진, 스테이블코인 인프라로 확장",
-  "en": "Multi-Engine Growth Expands Into Stablecoin Infrastructure"
+  "ko": "외형은 커지고 이익률은 과제로 남은 헥토이노베이션",
+  "en": "Hecto Innovation: Revenue Growth, Margin Still the Question"
  },
  "lead": {
-  "ko": "IT서비스·핀테크·헬스케어 3대 사업이 동반 성장하며 역대 최대 매출을 이어가는 가운데, 스테이블코인 지갑·결제 인프라 투자가 차기 성장 축으로 부상하고 있다.",
-  "en": "Hecto Innovation's IT service, fintech, and healthcare segments are growing in tandem to deliver record revenue, while stablecoin wallet and payment infrastructure investment emerges as the next growth axis."
+  "ko": "매출은 2025년 3,758억원까지 3년 연속 늘었지만 영업이익률은 2024년 15.3%에서 2025년 13.4%로 낮아졌고, 부채비율은 같은 기간 122.3%까지 올랐다.",
+  "en": "Revenue reached KRW 375.8 billion in 2025 after three straight years of growth, but the operating margin fell from 15.3% in 2024 to 13.4%, and the debt ratio rose to 122.3%."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출 3,758억원(전년 대비 17.6%↑), 영업이익 502억원(2.7%↑)으로 매출·이익 모두 역대 최대치를 경신했다.",
-   "en": "2025 consolidated revenue reached KRW 375.8bn (up 17.6% YoY) and operating profit KRW 50.2bn (up 2.7%), both record highs."
+   "ko": "2025년 매출은 3,758억원으로 전년 대비 17.6% 증가했고 2023년부터 3년 연속 늘었다. 같은 해 영업이익은 502억원으로 2.7% 증가에 그쳤다.",
+   "en": "Revenue reached KRW 375.8 billion in 2025, up 17.6% year on year and rising for three years since 2023, while operating profit grew only 2.7% to KRW 50.2 billion."
   },
   {
-   "ko": "2026년 1분기 매출이 창사 이래 처음으로 1,000억원을 넘어섰고, 상반기 누적 매출도 2,000억원을 처음 돌파했다.",
-   "en": "First-quarter 2026 revenue topped KRW 100bn for the first time in company history, and cumulative first-half revenue also crossed KRW 200bn for the first time."
+   "ko": "2025년 영업이익률은 13.4%로 2024년 15.3%보다 낮아졌다. 매출 성장이 이익률 개선으로 이어지지 않은 해다.",
+   "en": "The 2025 operating margin was 13.4%, below 15.3% in 2024, so sales growth did not carry through to margin gains that year."
   },
   {
-   "ko": "지배주주 순이익은 분기별로 등락이 커, 2025년 2분기 110억원에서 4분기 41억원까지 낮아진 뒤 2026년 2분기 70억원으로 회복했다.",
-   "en": "Net income attributable to owners has fluctuated sharply by quarter, falling from KRW 11.0bn in Q2 2025 to KRW 4.1bn in Q4 2025 before recovering to KRW 7.0bn in Q2 2026."
+   "ko": "2026년 3분기 영업이익은 153억원으로 전년 동기 대비 4.0% 증가했다. 회사와 언론은 이를 분기 기준 사상 최대 영업이익이라고 설명했다(2026년 11월 10일 잠정 공시 기준).",
+   "en": "Third-quarter 2026 operating profit was KRW 15.3 billion, up 4.0% year on year; the company and media described it as a record quarterly operating profit (preliminary disclosure dated November 10, 2026)."
   },
   {
-   "ko": "블록체인 지갑 기업 월렛원 인수와 서클(Circle) 결제망 합류 등으로 스테이블코인 인프라 사업을 확장 중이다.",
-   "en": "The company is expanding into stablecoin infrastructure through its acquisition of blockchain wallet firm WalletOne and its participation in Circle's payment network."
+   "ko": "지배주주 순이익은 2025년 4분기 41.2억원을 저점으로 2026년 3분기 100억원까지 3개 분기 연속 늘었다.",
+   "en": "Net profit attributable to controlling shareholders rose for three straight quarters, from KRW 4.12 billion in Q4 2025 to KRW 10 billion in Q3 2026."
   },
   {
-   "ko": "국내 디지털자산기본법 입법이 지연되고 있어, 발행 주체와 사업 범위를 둘러싼 제도적 불확실성이 남아 있다.",
-   "en": "Legislation for Korea's Digital Asset Basic Act has been delayed, leaving regulatory uncertainty around issuance rights and the scope of permitted business."
+   "ko": "2025년 말 부채총계(4,398억원)는 자본총계(3,595억원)를 웃돈다. 부채비율은 2022년 86.4%에서 2025년 122.3%로 올랐다.",
+   "en": "Total liabilities of KRW 439.8 billion exceed total equity of KRW 359.5 billion at the end of 2025, and the debt ratio climbed from 86.4% in 2022 to 122.3% in 2025."
   }
  ],
  "business": {
-  "ko": "헥토이노베이션은 IT 정보서비스, 핀테크, 헬스케어 3대 사업 부문으로 구성된 지주형 사업회사다. IT 정보서비스는 본사가 직접 운영하는 플랫폼·인증 관련 서비스가 중심이며, 신규 서비스 출시와 고객군 확대를 통해 두 자릿수 성장을 이어가고 있다. 핀테크 부문은 자회사 헥토파이낸셜이 담당하며, 회원제 기반의 간편현금결제와 가상계좌, 해외 가맹점 대상 크로스보더 정산이 핵심 서비스다. 헬스케어 부문은 자회사 헥토헬스케어가 프로바이오틱스(유산균) 브랜드 '드시모네' 등을 앞세워 그룹의 확고한 캐시카우로 자리잡았다. 2026년 상반기 기준 IT 정보서비스, 핀테크, 헬스케어 매출은 전년 동기 대비 각각 16.8%, 18.3%, 17.3% 증가하며 특정 사업에 편중되지 않은 균형 성장을 보였다. 회사는 지난해 9월 블록체인 지갑 기업 월렛원(옛 헥슬란트) 지분 47.15%를 인수해 최대주주에 올랐고, 이를 통해 가상자산사업자(VASP) 라이선스와 옥텟 등 지갑 인프라를 확보했다. 핀테크 시장에서는 NHN KCP, KG이니시스 등 간편결제 사업자들과 경쟁하고 있으며, 헬스케어 부문은 국내외 건강기능식품 브랜드들과 경쟁 구도를 형성한다. 최근에는 프로야구 승부예측 플랫폼 '폴리볼'과 날씨 정보 앱 '날씨돌' 등 B2C 서비스를 통해 디지털자산 지갑 이용 경험을 확산시키는 전략도 병행하고 있다.",
-  "en": "Hecto Innovation operates through three core business segments: IT information services, fintech, and healthcare. The IT service segment, run directly by the parent company, centers on platform and authentication services and continues to post double-digit growth through new service launches and expanding client bases. The fintech segment is handled by subsidiary Hecto Financial, whose core offerings include membership-based simple cash payment, virtual accounts, and cross-border settlement for overseas merchants. The healthcare segment, run by subsidiary Hecto Healthcare, has become the group's reliable cash cow, led by its probiotics brand De Simone. In the first half of 2026, revenue from IT services, fintech, and healthcare grew 16.8%, 18.3%, and 17.3% year-on-year respectively, reflecting balanced growth without heavy reliance on any single segment. In September of the prior year, the company acquired a 47.15% stake in blockchain wallet firm WalletOne (formerly Haechi Labs), becoming its largest shareholder and gaining a Virtual Asset Service Provider (VASP) license along with wallet infrastructure including Octet. In the fintech market, the company competes with simple-payment operators such as NHN KCP and KG Inicis, while the healthcare segment competes with domestic and overseas health-supplement brands. More recently, the company has paired its core business with consumer-facing services such as the baseball prediction platform Polyball and the weather app Nalssidol, using them to expand user exposure to its digital asset wallet."
+  "ko": "헥토이노베이션은 IT 정보 서비스, 핀테크, 헬스케어 세 부문을 거느린 헥토그룹의 지주사다. IT 정보 서비스 부문은 2026년 3분기 매출 351억원, 영업이익 90억원(전년 동기 대비 20.2% 증가)을 기록했고, 회사는 6개 분기 연속 분기 최대 매출을 경신했다고 밝혔다. 핀테크 부문은 같은 분기 매출 462억원, 영업이익 54억원으로 가맹점 결제대행(PG)과 간편현금결제가 주력이다. 헬스케어 부문은 매출 238억원, 영업이익 23억원이며 반려동물 유산균 ‘드시모네펫’과 스킨케어 ‘온리추얼’로 제품군을 넓히고 있다. 세 부문의 2026년 상반기 매출은 전년 동기 대비 IT 정보 서비스 16.8%, 핀테크 18.3%, 헬스케어 17.3% 늘었다. 그룹은 보안·인증 기술을 바탕으로 디지털자산 지갑과 스테이블코인 결제 생태계를 추진하고 있으며, 지갑·결제·플랫폼을 잇는 결제 레일 구축을 계획으로 제시했다. 신규 서비스로는 2026년 3월 출시한 승부 예측 플랫폼 ‘폴리볼’, 참여형 커머스 ‘라운드’, 날씨 앱 ‘날씨돌’이 있다. 경쟁 구도에서 같은 IT·소프트웨어 업종의 삼성에스디에스, 엔에이치엔, 안랩과는 사업 구성이 다르다. 여러 사업을 가진 지주 구조라 단일 소프트웨어 기업과의 직접 비교는 제한적이다.",
+  "en": "Hecto Innovation is the holding company of the Hecto Group, with three business segments: IT information services, fintech, and healthcare. The IT information services segment posted Q3 2026 revenue of KRW 35.1 billion and operating profit of KRW 9.0 billion, up 20.2% year on year, and the company said it set a record quarterly revenue for the sixth straight quarter. The fintech segment booked Q3 2026 revenue of KRW 46.2 billion and operating profit of KRW 5.4 billion, driven mainly by merchant payment processing (PG) and simple cash payment services. The healthcare segment recorded revenue of KRW 23.8 billion and operating profit of KRW 2.3 billion, while expanding its product line with the pet probiotic Dr. Simone Pet and the skincare line Only Ritual. First-half 2026 revenue grew 16.8% in IT information services, 18.3% in fintech, and 17.3% in healthcare. Building on its security and authentication technology, the group is pursuing a stablecoin payment ecosystem with digital asset wallet infrastructure, and has presented a plan to link wallet, payment, and platform into one settlement rail. New services include the sports prediction platform Polyball launched in March 2026, the participatory commerce platform Round, and the weather app Nalssi-dol. Among the same IT and software sector peers, Samsung SDS, NHN, and Ahnlab run different business mixes. As a multi-business holding structure, direct comparison with a single software company is limited."
  },
  "earnings": {
-  "ko": "2025년 연결 매출은 3,758억원으로 전년(3,195억원) 대비 17.6% 증가했고, 영업이익은 502억원으로 2.7% 늘며 매출과 이익 모두 역대 최대치를 경신했다. 다만 영업이익률은 2024년 15.3%에서 2025년 13.4%로 낮아졌는데, 이는 매출 성장 속도보다 완만한 이익 성장에서 드러나듯 신사업 투자 확대에 따른 비용 부담이 반영된 결과로 풀이된다. 지배주주 순이익은 2025년 305억원으로 2024년 279억원 대비 9.4% 늘었으나, 이 역시 영업이익 성장률(2.7%)보다는 높고 매출 성장률(17.6%)보다는 낮은 중간 수준에 머물렀다. 분기별로 보면 2025년 2분기 영업이익 134억원, 지배주주 순이익 111억원을 기록한 이후 3분기(영업이익 147억원, 순이익 84억원), 4분기(영업이익 104억원, 순이익 41억원)로 이어지며 순이익이 영업이익보다 더 큰 폭으로 둔화되는 흐름이 나타났다. 2026년 1분기에는 매출 1,123억원, 영업이익 146억원으로 반등하며 창사 이래 최초로 분기 매출 1,000억원을 넘어섰지만, 지배주주 순이익은 63억원으로 전년 동기(2025년 1분기)보다는 개선됐어도 2025년 2분기 수준에는 못 미쳤다. 2026년 2분기는 매출 1,028억원, 영업이익 129억원, 지배주주 순이익 70억원을 기록해 매출은 전년 동기(918억원) 대비 12.0% 늘었지만 영업이익과 순이익의 개선 속도는 매출 성장에 비해 완만했다. 이처럼 매출과 영업이익은 분기마다 최대치를 경신하는 추세를 지속하고 있는 반면, 지배주주 순이익은 신사업 투자, 비지배주주 지분 확대(연결 자회사 소수지분 인수 관련) 등의 영향으로 변동성이 더 크게 나타나는 점이 실적의 특징이다. 연간 현금흐름 측면에서는 2025년 영업활동현금흐름이 1,004억원으로 2024년(1,060억원)과 유사한 수준을 유지해, 이익 성장 대비 현금창출력은 비교적 안정적으로 뒷받침되고 있다.",
-  "en": "Consolidated revenue in 2025 reached KRW 375.8bn, up 17.6% from KRW 319.5bn in 2024, while operating profit rose 2.7% to KRW 50.2bn, with both figures marking record highs. However, the operating margin narrowed from 15.3% in 2024 to 13.4% in 2025, reflecting the cost burden from expanded investment in new businesses, as profit growth trailed well behind revenue growth. Net income attributable to owners rose 9.4% to KRW 30.5bn in 2025 from KRW 27.9bn in 2024, a pace faster than operating profit growth (2.7%) but slower than revenue growth (17.6%). On a quarterly basis, after posting operating profit of KRW 13.4bn and owner net income of KRW 11.1bn in the second quarter of 2025, the company saw operating profit of KRW 14.7bn and net income of KRW 8.4bn in the third quarter, followed by KRW 10.4bn and KRW 4.1bn in the fourth quarter, with net income decelerating more sharply than operating profit. The first quarter of 2026 saw a rebound to revenue of KRW 112.3bn and operating profit of KRW 14.6bn, marking the first time quarterly revenue exceeded KRW 100bn, though owner net income of KRW 6.3bn improved from the year-earlier quarter but remained below the second-quarter 2025 level. In the second quarter of 2026, revenue reached KRW 102.8bn, operating profit KRW 12.9bn, and owner net income KRW 7.0bn; revenue grew 12.0% from KRW 91.8bn a year earlier, but operating profit and net income improved at a more modest pace than revenue. While revenue and operating profit have continued to set new quarterly records, owner net income has shown greater volatility, likely influenced by new business investment and the growing minority-interest share tied to consolidated subsidiaries. On the cash flow side, operating cash flow of KRW 100.4bn in 2025 was broadly similar to KRW 106.0bn in 2024, suggesting cash generation has remained relatively stable relative to earnings growth."
+  "ko": "2022년부터 2025년까지 매출은 2,630억원, 2,885억원, 3,195억원, 3,758억원으로 늘었고 2023년부터 2025년까지 3년 연속 증가했다. 2025년 매출 증가율 17.6%는 2024년의 10.7%보다 높았다. 영업이익은 2022년 356억원에서 2023년 373억원(전년 대비 4.5% 증가), 2024년 489억원(전년 대비 31.1% 증가)으로 늘었고, 2025년에는 502억원으로 2.7% 증가에 그쳤다. 매출과 영업이익의 증가율 격차가 2025년에 가장 크게 벌어졌다. 영업이익률은 2022년 13.6%, 2023년 12.9%, 2024년 15.3%, 2025년 13.4%로 2024년에 정점을 찍은 뒤 낮아졌다. 지배주주 순이익은 2022년 295억원, 2023년 226억원(전년 대비 23.4% 감소), 2024년 279억원(전년 대비 23.7% 증가), 2025년 305억원(전년 대비 9.4% 증가)이었다. 2023년을 저점으로 2024년부터 2025년까지 2년 연속 증가했다. 당기순이익(비지배지분 포함)은 2025년 368억원으로 지배주주 순이익 305억원보다 컸다. 분기로 보면 2026년 1분기 매출은 1,123억원으로 전 분기 대비 13.6% 늘었고, 2분기 매출은 1,028억원으로 8.4% 줄었다. 2분기 영업이익 129억원은 전년 동기 대비 4.0% 감소했는데, 회사는 신규 서비스 출시 등에 투자를 집행한 탓이라고 설명했다. 2025년 4분기 영업이익 104억원은 공시 실적의 최근 다섯 분기 가운데 가장 낮다. 이후 2026년 3분기 영업이익은 153억원까지 회복됐다. 영업활동 현금흐름은 2022년 260억원에서 2024년 1,060억원으로 늘었고 2025년에는 1,004억원으로 소폭 줄었다. 부채비율은 2022년 86.4%에서 2025년 122.3%로 올랐고, 2025년 말 부채총계 4,398억원은 자본총계 3,595억원을 웃돈다.",
+  "en": "Revenue rose from KRW 263 billion in 2022 to KRW 288.5 billion in 2023, KRW 319.5 billion in 2024, and KRW 375.8 billion in 2025, and grew for three consecutive years from 2023 through 2025. The 17.6% increase in 2025 was faster than the 10.7% gain in 2024. Operating profit went from KRW 35.6 billion in 2022 to KRW 37.3 billion in 2023 (up 4.5%) and KRW 48.9 billion in 2024 (up 31.1%), then reached KRW 50.2 billion in 2025, up only 2.7%. The gap between revenue growth and operating profit growth was widest in 2025. The operating margin was 13.6% in 2022, 12.9% in 2023, 15.3% in 2024, and 13.4% in 2025, peaking in 2024 before declining. Net profit attributable to controlling shareholders was KRW 29.5 billion in 2022, KRW 22.6 billion in 2023 (down 23.4%), KRW 27.9 billion in 2024 (up 23.7%), and KRW 30.5 billion in 2025 (up 9.4%), rising for two consecutive years after the 2023 low. Net profit including non-controlling interests was KRW 36.8 billion in 2025, above the KRW 30.5 billion attributable to controlling shareholders. On a quarterly basis, Q1 2026 revenue was KRW 112.3 billion, up 13.6% from the prior quarter, while Q2 2026 revenue fell 8.4% to KRW 102.8 billion. Q2 2026 operating profit of KRW 12.9 billion was down 4.0% year on year, which the company attributed to investment in new service launches. Q4 2025 operating profit of KRW 10.4 billion was the lowest of the last five quarters in the disclosed figures, and it recovered to KRW 15.3 billion in Q3 2026. Operating cash flow rose from KRW 26 billion in 2022 to KRW 106 billion in 2024 and eased slightly to KRW 100.4 billion in 2025. The debt ratio climbed from 86.4% in 2022 to 122.3% in 2025, and total liabilities of KRW 439.8 billion at the end of 2025 exceeded total equity of KRW 359.5 billion."
  },
  "industry": {
-  "ko": "국내 간편결제·핀테크 시장은 가맹점 확대와 온라인 거래 증가를 바탕으로 꾸준히 성장하는 가운데, 최근에는 스테이블코인이라는 새로운 결제 인프라 축이 부상하고 있다. 정부는 2026년 하반기 디지털자산기본법 입법을 목표로 추진 중이며, 법안에는 원화 스테이블코인 발행 인가제와 준비자산 보유 의무, 이용자 보호 장치 등이 담길 예정이다. 다만 발행 주체를 은행 중심 컨소시엄으로 제한할지 여부를 둘러싼 은행권과 핀테크·플랫폼 업계 간 이견이 여전히 정리되지 않아 입법 일정이 여러 차례 지연된 바 있다. 해외에서는 파이어블록스, 비트고 등 디지털자산 지갑 기업들이 기관 대상 커스터디 시장에서 높은 기업가치를 인정받고 있는 반면, 국내는 제도화가 이제 막 진행 중인 초기 단계에 머물러 있다. 이런 환경에서 헥토이노베이션은 자회사 헥토파이낸셜의 기존 결제·정산 인프라와 월렛원의 지갑 기술을 결합해 '지갑-결제-플랫폼'을 잇는 구조를 준비하고 있으며, 서클의 결제 네트워크(CPN)와 스테이블코인 전용 메인넷 '아크(Arc)' 테스트넷에 국내 유일의 디지털 지갑 파트너로 참여하는 등 선제적 포지셔닝에 나서고 있다. 헬스케어 부문에서는 프로바이오틱스 시장의 성장과 함께 중국 등 해외 유통망 확대가 새로운 수요처로 부상하고 있다. 전반적으로 헥토이노베이션은 국내 제도화가 완성되기 전 단계에서 인프라와 파트너십을 먼저 구축해 두는 전략을 취하고 있어, 법제화 속도와 방향이 사업 확장의 핵심 변수로 남아 있다.",
-  "en": "Korea's simple-payment and fintech market continues to grow steadily on the back of merchant expansion and rising online transactions, while stablecoins have recently emerged as a new payment infrastructure axis. The government is pursuing enactment of the Digital Asset Basic Act in the second half of 2026, with provisions expected to include a licensing regime for won-denominated stablecoin issuance, reserve asset requirements, and user protection measures. However, disagreement between the banking sector and the fintech/platform industry over whether issuance should be restricted to bank-led consortiums has repeatedly delayed the legislative timeline. Overseas, digital asset wallet firms such as Fireblocks and BitGo have earned high valuations in the institutional custody market, whereas Korea's institutional framework remains at an early stage. Against this backdrop, Hecto Innovation is combining Hecto Financial's existing payment and settlement infrastructure with WalletOne's wallet technology to build a wallet-to-payment-to-platform structure, and has positioned itself early as Korea's sole digital wallet partner in Circle's Payment Network (CPN) and the Arc stablecoin-focused mainnet testnet. In the healthcare segment, growth in the probiotics market alongside expanding overseas distribution channels, including in China, is emerging as a new demand driver. Overall, the company is building infrastructure and partnerships ahead of full domestic institutionalization, leaving the pace and direction of legislation as a key variable for business expansion."
+  "ko": "헥토이노베이션의 주력 영역인 IT 정보 서비스와 결제는 기업의 디지털 전환 투자와 온라인 결제 거래량에 영향을 받는 구조다. 이 가운데 스테이블코인은 결제와 정산 방식을 바꿀 수 있는 신규 축으로 주목받고 있다. 회사는 서클(Circle)의 스테이블코인 전용 블록체인 메인넷 아크(Arc) 생태계를 국내 기업이 선점하도록 지원하고 있으며, 이를 위해 옥텟 API 기반 디지털자산 지갑 기술을 제공한다고 밝혔다. 국내 스테이블코인 사업은 사업자 요건과 발행·결제 범위에 따라 참여 속도가 달라질 수 있다. 업종 내 대형 플레이어로는 네이버, 카카오, 삼성에스디에스, 엔에이치엔 등이 있으며, 이들은 플랫폼과 클라우드 같은 규모가 큰 사업을 중심으로 움직인다. 헥토이노베이션은 이들과 달리 IT 서비스, 결제, 헬스케어를 함께 가진 포트폴리오로 설명하는 편이 정확하다. 회사는 2026년 3분기 누적 매출 3,240억원을 3,000억원 돌파의 의미로 강조했으며, 이는 2026년 11월 10일 잠정 공시를 근거로 한다. 2026년 들어 세 부문이 동시에 두 자릿수 성장을 보이는 구간이라 외형 확장의 폭은 넓어졌다. 다만 헬스케어와 핀테크의 성장이 얼마나 지속될지는 다음 정기보고서의 부문별 수치로 확인해야 한다.",
+  "en": "Hecto Innovation's core areas, IT information services and payments, depend on corporate digital transformation spending and online payment volumes. Within this, stablecoins are drawing attention as a new axis that could change how payments and settlement work. The company said it is supporting domestic firms in claiming positions in the ecosystem around Circle’s stablecoin-dedicated blockchain mainnet, Arc, and that it provides digital asset wallet technology based on API. Domestic stablecoin businesses may move at different speeds depending on licensing requirements and the scope of issuance and payments. Large players in the same sector include NAVER, Kakao, Samsung SDS, and NHN, which center on large-scale businesses such as platforms and cloud. Hecto Innovation is more accurately described as a portfolio combining IT services, payments, and healthcare. The company highlighted that cumulative Q3 2026 revenue of KRW 324 billion surpassed KRW 300 billion for the first time, based on the preliminary disclosure dated November 10, 2026. Three segments growing at double-digit rates at the same time in 2026 widens the scope of expansion. Whether growth in healthcare and fintech can persist should be checked against segment figures in the next regular report."
  },
  "outlook": {
-  "ko": "회사는 2026년에도 '월렛-결제-플랫폼'이 유기적으로 연결되는 스테이블코인 생태계 구축을 핵심 과제로 제시하고 있다. 자체 B2C 앱 플랫폼 경쟁력을 강화하는 동시에 월렛원과 협업한 신규 서비스를 선보일 계획이며, AI 에이전트를 활용한 자동 스테이블코인 지급 체계 개념검증(PoC)도 진행 중이다. 헬스케어 부문에서는 헥토헬스케어가 자체 개발한 프로바이오틱스 복합 원료가 식품의약품안전처로부터 체지방 감소 기능성을 인정받아 개별인정형 건강기능식품 원료 승인을 획득했으며, 건강기능식품 범위를 넘어 헬스케어 식품 전반으로 사업 영역을 확대할 계획이다. 뉴스1 보도(2026년 5월)에 따르면 중국 시노팜 계열사와 최소 1,550억원 규모의 공급 계약이 이어지고 있어, 해외 유통 확대가 헬스케어 부문의 중장기 성장 여력으로 거론되고 있다. 유진투자증권은 2026년 5월 리포트에서 2분기에도 분기 매출 1,000억원대를 유지하며 안정적인 성장이 이어질 것으로 전망했는데, 실제로 2분기 매출은 1,028억원을 기록해 해당 전망과 부합했다. 국내 제도화 측면에서는 정부가 2026년 하반기 디지털자산기본법 입법을 목표로 하고 있어, 연내 통과 여부와 발행 주체 관련 조항이 스테이블코인 사업의 실제 수익화 시점을 좌우할 변수로 남아 있다. 회사는 기존 사업의 안정적인 수익성을 유지하면서 신성장 동력에 대한 투자를 지속하겠다는 방침을 반복적으로 밝히고 있어, 투자 확대에 따른 단기 마진 압박과 중장기 사업 확장이 동시에 진행되는 구도가 이어질 것으로 보인다.",
-  "en": "The company continues to identify building a stablecoin ecosystem that organically links wallet, payment, and platform as its core task for 2026. It plans to strengthen its own B2C app platform while introducing new services developed jointly with WalletOne, and is also conducting a proof of concept for an AI-agent-driven automated stablecoin payment system. In the healthcare segment, Hecto Healthcare has received approval for an individually recognized functional health-food ingredient after its proprietary probiotics compound was recognized by the Ministry of Food and Drug Safety for body-fat reduction benefits, and the company plans to expand beyond health supplements into the broader healthcare food category. According to a News1 report from May 2026, a supply contract worth at least KRW 155bn with a Sinopharm affiliate in China is underway, positioning overseas distribution expansion as a medium-term growth driver for the healthcare segment. Eugene Investment & Securities projected in a May 2026 report that quarterly revenue would remain above KRW 100bn in the second quarter with stable growth continuing, and actual second-quarter revenue of KRW 102.8bn was consistent with that projection. On the domestic institutionalization front, the government is targeting enactment of the Digital Asset Basic Act in the second half of 2026, and whether it passes within the year along with its provisions on issuance rights remain key variables determining the actual monetization timeline for the stablecoin business. The company has repeatedly stated its intent to maintain stable profitability from existing operations while continuing to invest in new growth engines, suggesting a structure in which short-term margin pressure from expanded investment and medium-to-long-term business expansion will proceed in parallel."
+  "ko": "회사는 2026년 3분기 발표에서 체지방 감소 기능성 원료를 활용한 신제품을 2027년에 출시한다고 밝혔고, 이를 수익성 개선의 근거로 제시했다. 헬스케어 부문은 분기 매출 200억원 이상을 유지하고 있다는 평가가 있다(유안타증권, 2026년 11월 11일 리포트). 스테이블코인 사업은 2026년 5월 서클 아크 생태계 얼리버드 모집, 2026년 8월 비토즈와의 스테이블코인 사업 협력 MOU 체결, 2026년 10월 방한 외국인의 병원비·무역대금 결제 모델 소개로 이어졌다. 회사는 2026년 8월 자회사의 결제 인프라와 지갑 기술을 결합해 보관·결제·정산으로 이어지는 결제 레일을 완성하겠다고 밝혔다. 증권사들의 전망은 엇갈림이 크지 않은 편이다. 유안타증권은 4분기 이후에도 호실적이 기대되며 별도 기준 신규 서비스와 고객군 확대가 이어지고 있다고 평가했다. 유진투자증권은 4분기가 성수기라 분기 최고 매출을 갱신할 것으로 기대했다. 신한투자증권은 2027년에 이익 성장세가 다시 빨라질 것으로 예상했다. 회사는 2024년 발표한 3개년 주주환원 계획을 2026년 11월 자기주식 소각으로 마쳤고, 이후 환원 정책은 새 공시로 확인해야 한다. 신규 서비스 투자가 이익률에 얼마나 부담을 주는지가 전망의 핵심 변수다. 다음 확인 지점은 2026년 연간 실적과 2026년 사업보고서의 영업이익률이다.",
+  "en": "In its Q3 2026 announcement, the company said it plans to launch a new health product using a functional ingredient for body fat reduction in 2027, and it presented this as a basis for improved profitability. One analyst view notes that the healthcare segment has kept quarterly revenue above KRW 20 billion (Yuanta Securities, report dated November 11, 2026). Stablecoin activity moved through an early-bird recruitment for the Circle Arc ecosystem in May 2026, an MOU with Vitobs for stablecoin cooperation in August 2026, and an October 2026 presentation of a stablecoin model for medical bills and trade payments by foreign visitors to Korea. In August 2026, the company said it aims to complete a settlement rail linking custody, payments and settlement by combining payment infrastructure from a subsidiary with wallet technology. Broker views are not uniform in tone. Yuanta Securities said strong results are expected after Q4 and that new services and customer groups are expanding on a standalone basis. Eugene Investment & Securities expected Q4, a peak season, to set a new quarterly revenue high. Shinhan Investment Corp. expected earnings growth to re-accelerate in 2027. The company completed its three-year shareholder return plan, which called for annual cancellation of 1% of issued shares, with a cancellation decision in November 2026, and any subsequent return policy will need to be checked in new disclosures. The key variable for the outlook is how much new-service investment weighs on the margin. The next checkpoints are the 2026 annual results and the 2026 annual report on operating margin."
  },
  "valuation_comment": {
-  "ko": "최근 4개 분기(2025년 3분기~2026년 2분기) 기준 지배주주 순이익은 2025년 연간 수준에 비해 완만한 개선을 보이고 있으며, 이는 밸류에이션 지표에도 반영되고 있다. 순자산 대비 주가 수준은 과거 수년간의 거래 밴드 안에서 하단 부근에 위치해 있다는 평가가 증권가에서 제기된 바 있으며, 이는 이익 성장세에 비해 시장이 아직 신사업 가치를 온전히 반영하지 않았을 가능성을 시사하는 근거로 활용되고 있다. 유진투자증권은 2026년 5월 보도에서 \"목표주가 2만 8,000원은 현재주가 대비 약 40%의 상승 여력에 해당한다\"며 \"현재주가는 동사 2026년 예상 실적 기준 PER 6.6배로 국내 유사업체 평균 PER 9.0배 대비 할인되어 거래 중\"이라고 밝혔다(2026년 5월 11일 기준). 배당 측면에서는 회사가 2025년 사업연도에 대해 주당 500원의 현금배당을 결의한 바 있어, 이익 성장과 함께 주주환원 정책을 병행하고 있는 점도 참고할 만하다. 다만 이러한 증권사 전망과 목표가는 발표 시점의 판단으로, 이후 실적과 제도 환경 변화에 따라 달라질 수 있다는 점은 유의할 필요가 있다.",
-  "en": "Owner net income over the most recent four quarters (Q3 2025 to Q2 2026) shows only modest improvement relative to the full-year 2025 level, a trend also reflected in valuation metrics. Some brokerages have noted that the stock's price-to-book level sits near the lower end of its multi-year trading band, which they cite as a possible sign that the market has not yet fully priced in the value of new growth businesses. Eugene Investment & Securities stated in a report dated May 11, 2026 that \"the target price of KRW 28,000 implies roughly 40% upside from the current share price,"
+  "ko": "밸류에이션은 주가와 실적을 나란히 놓고 봐야 하는 영역이다. 유안타증권은 2026년 11월 리포트에서 실적이 개선됐는데도 최근 주가가 내려 밸류에이션 매력이 높아졌다고 평가했다. 유진투자증권은 같은 시점에 주주친화 정책과 밸류에이션 매력을 함께 꼽았다. 이들은 증권사의 평가이며 실적 기준의 사실 비교와는 구분해서 봐야 한다. 공시 실적 기준 최근 네 개 분기 지배주주 순이익 합계는 275억원이고, 2025년 연간 지배주주 순이익은 305억원이다. 주가순자산비율은 지배주주 지분 2,223억원을 기준으로 보는 편이 주주 몫에 가깝다. 자본총계 3,595억원에는 비지배지분이 포함되어 있어 두 기준의 해석이 다르다. 부채총계 4,398억원이 자본총계보다 큰 만큼 주가 대비 재무 레버리지도 함께 봐야 한다. 주주환원은 2024년부터 매년 발행주식 1%를 소각하는 방식으로 이행되어 3년 계획이 마무리됐다. 밸류에이션 해석은 이익 체력이 유지되는지에 따라 갈린다. 영업이익률이 2025년 13.4%에서 회복되는지와 부채비율 상승이 이익에 주는 부담이 확인 포인트다.",
+  "en": "Valuation is a question of reading share price alongside earnings. In a report dated November 2026, Yuanta Securities said the valuation became more attractive because the share price fell despite improved results. Eugene Investment & Securities cited shareholder-friendly policy and valuation appeal at the same time. These are broker assessments and should be distinguished from factual comparisons based on reported figures. Net profit attributable to controlling shareholders for the latest four quarters totaled KRW 27.5 billion, and the full-year 2025 figure was KRW 30.5 billion. Price-to-book is more closely tied to shareholder value when measured against the controlling shareholders’ equity of KRW 222.3 billion. Total equity of KRW 359.5 billion includes non-controlling interests, so the two bases give different readings. Because total liabilities of KRW 439.8 billion exceed total equity, financial leverage also needs to be considered alongside the share price. On shareholder returns, the company cancelled 1% of issued shares annually from 2024, completing the three-year plan. How valuation reads depends on whether earnings strength holds, and the points to check are whether the operating margin recovers from 13.4% in 2025 and how the rise in the debt ratio affects profit."
  },
  "bull": [
   {
    "title": {
-    "ko": "3대 사업 동반 성장",
-    "en": "Balanced Growth Across Three Segments"
+    "ko": "매출 성장이 여러 부문으로 퍼짐",
+    "en": "Revenue growth spread across segments"
    },
    "body": {
-    "ko": "IT 정보서비스, 핀테크, 헬스케어가 2026년 상반기 모두 17% 안팎의 성장률을 기록하며 특정 사업 편중 없이 고르게 성장하고 있다. 1분기와 2분기 모두 분기 매출이 1,000억원대를 유지하며 안정적인 외형 확대가 이어졌다. 이러한 다각화된 사업 구조는 특정 부문의 부진이 전체 실적에 미치는 영향을 완화하는 요인으로 작용할 수 있다.",
-    "en": "IT services, fintech, and healthcare all posted growth rates of around 17% in the first half of 2026, growing evenly without reliance on any single segment. Quarterly revenue held above KRW 100bn in both the first and second quarters, sustaining stable top-line expansion. This diversified business structure can help cushion the overall results from weakness in any single segment."
+    "ko": "매출은 2023년부터 2025년까지 3년 연속 늘었고, 2025년에는 17.6% 증가한 3,758억원이 됐다. 2026년 3분기에도 전년 동기 대비 13.8% 늘어 1,088억원을 기록했다. 회사는 IT 정보 서비스, 핀테크, 헬스케어 모두 누적 기준 두 자릿수 성장을 보였다고 설명했다. 한 부문에 기대지 않는 외형 성장은 강세 요인으로 해석될 수 있다.",
+    "en": "Revenue rose for three consecutive years from 2023 through 2025, up 17.6% in 2025 to KRW 375.8 billion. Q3 2026 revenue rose 13.8% year on year to KRW 108.8 billion. The company said IT information services, fintech and healthcare all posted double-digit cumulative growth. Growth not dependent on one segment can be read as a bullish factor."
    }
   },
   {
    "title": {
-    "ko": "스테이블코인 인프라 선점 행보",
-    "en": "Early Positioning in Stablecoin Infrastructure"
+    "ko": "분기 이익의 회복 흐름",
+    "en": "Recovery in quarterly profit"
    },
    "body": {
-    "ko": "월렛원 인수를 통해 VASP 라이선스와 지갑 인프라를 확보했고, 서클의 결제 네트워크(CPN)와 아크 테스트넷에 국내 유일의 디지털 지갑 파트너로 참여하고 있다. 헥토파이낸셜의 기존 결제·정산 인프라와 결합해 지갑-결제-플랫폼 구조를 구축하려는 전략이 구체화되고 있다. 국내 제도화가 완성되기 전에 글로벌 파트너십을 먼저 확보해 둔 점은 향후 시장 진입 시 유리한 위치를 점할 수 있는 요인으로 꼽힌다.",
-    "en": "Through the acquisition of WalletOne, the company secured a VASP license and wallet infrastructure, and it participates as Korea's sole digital wallet partner in Circle's Payment Network and the Arc testnet. Its strategy of combining this with Hecto Financial's existing payment and settlement infrastructure to build a wallet-payment-platform structure is becoming more concrete. Securing global partnerships ahead of full domestic institutionalization is cited as a factor that could position the company favorably once the market opens."
+    "ko": "지배주주 순이익은 2025년 4분기 41.2억원을 저점으로 2026년 1분기 63.1억원, 2분기 70.2억원, 3분기 100억원으로 늘었다. 같은 3분기 영업이익 153억원은 전년 동기 대비 4.0% 증가했고, 회사와 언론은 분기 기준 사상 최대라고 설명했다. 헬스케어 영업이익이 전 분기 대비 77.8% 늘었다는 점도 개선 흐름의 일부다. 이 흐름이 2027년 실적으로 이어질지가 다음 확인 지점이다.",
+    "en": "Net profit attributable to controlling shareholders climbed from KRW 4.12 billion in Q4 2025 to KRW 6.31 billion in Q1 2026, KRW 7.02 billion in Q2, and KRW 10 billion in Q3. Q3 operating profit of KRW 15.3 billion rose 4.0% year on year, and the company and media described it as a quarterly record. Healthcare operating profit rising 77.8% from the prior quarter is also part of the improvement. Whether this momentum carries into 2027 is the next point to check."
    }
   },
   {
    "title": {
-    "ko": "헬스케어 부문의 캐시카우화",
-    "en": "Healthcare Segment Becoming a Cash Cow"
+    "ko": "주주환원 계획 이행",
+    "en": "Completion of the shareholder return plan"
    },
    "body": {
-    "ko": "프로바이오틱스 브랜드 드시모네를 중심으로 헬스케어 부문이 그룹의 확실한 수익원으로 자리잡았다. 최근 체지방 감소 기능성 원료 승인을 획득해 제품 라인업을 확장할 기반을 마련했고, 중국 시노팜 계열사와의 대규모 공급 계약을 통해 해외 유통망도 넓어지고 있다. 이러한 흐름이 이어질 경우 헬스케어 부문이 전체 실적의 안정판 역할을 지속할 수 있다.",
-    "en": "Centered on its probiotics brand De Simone, the healthcare segment has become a reliable earnings source for the group. The company recently secured approval for a body-fat-reduction functional ingredient, laying the groundwork for an expanded product lineup, while a large supply contract with a Sinopharm affiliate in China is also broadening its overseas distribution network. If this trend continues, the healthcare segment could keep serving as a stabilizer for overall earnings."
+    "ko": "회사는 2024년 발표한 3개년 주주환원 계획에 따라 매년 발행주식 총수의 1%를 소각해 왔다. 2026년 11월 3일에는 자기주식 12만 9,934주의 소각을 결정해 3년 약속을 마쳤다. 발행주식 수를 줄이는 방식의 환원은 주주에게 우호적인 요인으로 볼 수 있다. 다만 계획이 끝난 뒤의 환원 방향은 회사 공시로 확인해야 한다.",
+    "en": "Under the three-year shareholder return plan announced in 2024, the company cancelled 1% of issued shares each year. On November 3, 2026, it decided to cancel 129,934 treasury shares, completing the three-year commitment. Returns that reduce the number of issued shares can be viewed as shareholder-friendly. The direction of returns after the plan ends should be confirmed through company disclosures."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "순이익 성장, 매출 성장에 못 미쳐",
-    "en": "Net Income Growth Trailing Revenue Growth"
+    "ko": "영업이익률 하락과 이익 증가율 둔화",
+    "en": "Lower operating margin and slower profit growth"
    },
    "body": {
-    "ko": "2025년 매출은 17.6% 늘었지만 영업이익은 2.7%, 지배주주 순이익은 9.4% 증가에 그쳐 이익 성장이 매출 성장 속도를 따라가지 못했다. 분기별로도 지배주주 순이익이 2025년 2분기 111억원에서 4분기 41억원까지 낮아지는 등 영업이익보다 변동성이 크게 나타났다. 신사업 투자가 지속되는 한 이러한 이익 성장 지연 현상이 계속될 가능성이 있다.",
-    "en": "While 2025 revenue grew 17.6%, operating profit rose only 2.7% and owner net income only 9.4%, with profit growth failing to keep pace with revenue growth. On a quarterly basis as well, owner net income fell from KRW 11.1bn in the second quarter of 2025 to KRW 4.1bn in the fourth quarter, showing greater volatility than operating profit. As long as new business investment continues, this lag in profit growth could persist."
+    "ko": "영업이익률은 2024년 15.3%에서 2025년 13.4%로 낮아졌다. 2025년 매출은 17.6% 늘었지만 영업이익은 2.7% 증가에 그쳤다. 2026년 2분기 영업이익 129억원은 전년 동기 대비 4.0% 감소했고, 회사는 신규 서비스 출시 등에 투자를 집행한 탓이라고 설명했다. 투자 효과가 이익률에 반영되는 시점이 늦어지면 약세 요인으로 남는다.",
+    "en": "The operating margin fell from 15.3% in 2024 to 13.4% in 2025. Revenue rose 17.6% in 2025, but operating profit rose only 2.7%. Q2 2026 operating profit of KRW 12.9 billion was down 4.0% year on year, which the company attributed to investment in new service launches. If the effect of these investments on margins comes later, it remains a bearish factor."
    }
   },
   {
    "title": {
-    "ko": "국내 스테이블코인 제도화 지연",
-    "en": "Delayed Domestic Stablecoin Institutionalization"
+    "ko": "부채 증가와 재무 부담",
+    "en": "Rising debt and financial burden"
    },
    "body": {
-    "ko": "디지털자산기본법은 당초 2026년 1분기 통과를 목표로 했으나 지방선거와 관계기관 간 이견 등으로 여러 차례 지연됐다. 발행 주체를 은행 중심 컨소시엄으로 제한할지를 둘러싼 논쟁이 계속되고 있어, 핀테크 기업의 사업 참여 범위가 최종 법안에 따라 크게 달라질 수 있다. 제도화가 예상보다 더 늦어질 경우 스테이블코인 관련 투자의 수익화 시점도 함께 늦춰질 수 있다.",
-    "en": "The Digital Asset Basic Act originally targeted passage in the first quarter of 2026 but has been repeatedly delayed due to local elections and disagreements among relevant agencies. Debate continues over whether issuance should be restricted to bank-led consortiums, meaning the scope of fintech company participation could vary significantly depending on the final legislation. If institutionalization is delayed further than expected, the monetization timeline for stablecoin-related investment could also be pushed back."
+    "ko": "2025년 말 부채총계는 4,398억원으로 자본총계 3,595억원보다 많다. 영업활동 현금흐름은 2024년 1,060억원에서 2025년 1,004억원으로 소폭 줄었다. 신규 투자와 부채 확대가 함께 진행되는 만큼 현금 창출 능력이 이를 얼마나 뒷받침하는지가 핵심 질문이다.",
+    "en": "Total liabilities at the end of 2025 were KRW 439.8 billion, above total equity of KRW 359.5 billion. Operating cash flow eased from KRW 106 billion in 2024 to KRW 100.4 billion in 2025. With new investment and higher debt advancing together, the key question is how well cash generation supports them."
    }
   },
   {
    "title": {
-    "ko": "신사업 투자 부담에 따른 마진 압박",
-    "en": "Margin Pressure From New Business Investment"
+    "ko": "신사업 수익화 시점의 불확실성",
+    "en": "Uncertain timing of new business monetization"
    },
    "body": {
-    "ko": "2025년 영업이익률은 13.4%로 전년(15.3%) 대비 낮아졌고, 2025년 4분기 영업이익률도 전 분기 대비 하락했다. 회사는 이를 신규 서비스 런칭과 미래 성장동력 확보를 위한 선제적 투자의 영향으로 설명하고 있다. 투자가 예상만큼 성과로 이어지지 않을 경우 수익성 회복이 지연될 위험이 있다.",
-    "en": "The operating margin fell to 13.4% in 2025 from 15.3% the prior year, and the fourth-quarter 2025 operating margin also declined from the prior quarter. The company attributes this to preemptive investment for new service launches and future growth engines. If this investment does not translate into results as expected, there is a risk that margin recovery could be delayed."
+    "ko": "스테이블코인 결제 생태계, 참여형 커머스 라운드, 승부 예측 플랫폼 폴리볼은 초기 단계로 수익 기여 시점을 가늠하기 어렵다. 헬스케어 부문은 3분기 영업이익이 23억원 수준이라 이익 기여가 제한적이다. 신사업 투자가 길어지면 분기 영업이익의 변동 폭이 커질 수 있다. 수익화 시점이 뚜렷하지 않다는 점이 약세 요인으로 꼽힌다.",
+    "en": "Stablecoin payment ecosystem efforts, the participatory commerce platform Round, and the sports prediction platform Polyball are at an early stage, making the timing of their revenue contribution hard to gauge. The healthcare segment’s Q3 2026 operating profit of KRW 2.3 billion means its contribution to earnings is limited. If new business investment is prolonged, quarterly operating profit may swing more widely. The unclear timing of monetization is a bearish factor."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "제도·규제 리스크",
-    "en": "Regulatory Risk"
+    "ko": "투자 부담과 이익 변동",
+    "en": "Investment burden and earnings volatility"
    },
    "body": {
-    "ko": "디지털자산기본법의 최종 내용, 특히 스테이블코인 발행 주체 제한 여부가 핀테크 기업의 사업 범위를 좌우할 수 있다. 은행 중심 컨소시엄으로 발행이 제한될 경우 헥토파이낸셜과 월렛원이 확보한 인프라의 활용 범위가 축소될 가능성이 있다. 법안 처리 일정이 다시 지연될 경우 신사업 관련 불확실성이 장기화될 수 있다.",
-    "en": "The final content of the Digital Asset Basic Act, particularly whether stablecoin issuance rights are restricted, could determine the scope of business available to fintech companies. If issuance is limited to bank-led consortiums, the scope for utilizing infrastructure secured by Hecto Financial and WalletOne could be reduced. If the legislative timeline is delayed again, uncertainty around new business plans could persist longer."
+    "ko": "신규 서비스 출시 등 투자가 집행되면 분기 영업이익이 매출 증가와 다르게 움직일 수 있다. 2026년 2분기에는 실제로 영업이익이 전년 동기보다 줄었다. 2025년 4분기 영업이익 104억원처럼 분기 간 폭이 커지는 점도 실적 판단을 어렵게 한다. 이익률 관리가 핵심 변수다.",
+    "en": "When investment in new service launches is executed, quarterly operating profit can move differently from revenue. In Q2 2026, operating profit actually declined year on year. Wide swings between quarters, such as KRW 10.4 billion in Q4 2025, also make earnings harder to judge. Margin management is a key variable."
    }
   },
   {
    "cat": {
-    "ko": "연결 자회사·비지배주주 리스크",
-    "en": "Consolidated Subsidiary and Minority Interest Risk"
+    "ko": "규제 환경 변화",
+    "en": "Changes in the regulatory environment"
    },
    "body": {
-    "ko": "2025년 연결 순이익 368억원 중 지배주주 귀속분은 305억원으로, 나머지는 비지배주주 지분으로 배분됐다. 다수의 자회사를 연결 대상으로 편입한 구조에서는 자회사별 손익 변동이 지배주주 순이익의 안정성에 영향을 줄 수 있다. 월렛원 등 신규 인수 자회사의 손익 기여도가 아직 초기 단계인 점도 지켜볼 부분이다.",
-    "en": "Of the KRW 36.8bn in consolidated net income in 2025, KRW 30.5bn was attributable to owners, with the remainder allocated to minority interests. In a structure that consolidates multiple subsidiaries, earnings volatility at individual subsidiaries can affect the stability of owner net income. The earnings contribution from newly acquired subsidiaries such as WalletOne remains at an early stage and warrants monitoring."
+    "ko": "스테이블코인과 디지털자산 지갑 사업은 금융 규제와 발행·결제 요건의 영향을 받는다. 규제 요건이 바뀌면 서비스 출시 일정과 사업 범위가 달라질 수 있다. 회사는 규제 준수형 디지털자산 활용 모델을 내세우고 있으나, 규제 해석의 변화는 회사가 통제하기 어려운 변수다. 해외 결제 모델은 여러 나라의 제도에 따라 속도가 달라질 수 있다.",
+    "en": "Stablecoin and digital asset wallet businesses are affected by financial regulation and issuance and payment requirements. A change in requirements could alter launch schedules and business scope. The company promotes a regulation-compliant digital asset model, but shifts in regulatory interpretation are hard for it to control. Cross-border payment models may move at different speeds under different national systems."
    }
   },
   {
    "cat": {
-    "ko": "경쟁 심화 리스크",
-    "en": "Competitive Intensity Risk"
+    "ko": "부문 의존과 재무 레버리지",
+    "en": "Segment concentration and financial leverage"
    },
    "body": {
-    "ko": "간편결제 시장에는 다수의 핀테크 사업자가 경쟁하고 있어 가맹점 확보 경쟁이 마진에 영향을 줄 수 있다. 디지털자산 지갑 분야에서는 파이어블록스, 비트고 등 해외 기업들이 기관 커스터디 시장에서 이미 높은 기업가치를 인정받고 있어 글로벌 경쟁이 만만치 않다. 헬스케어 부문 역시 국내외 건강기능식품 브랜드 간 경쟁이 지속되고 있다.",
-    "en": "The simple-payment market has numerous competing fintech operators, and competition for merchant acquisition could affect margins. In the digital asset wallet space, overseas firms such as Fireblocks and BitGo already command high valuations in the institutional custody market, making global competition formidable. The healthcare segment also continues to face ongoing competition among domestic and overseas health-supplement brands."
+    "ko": "2026년 3분기 IT 정보 서비스 부문 영업이익 90억원과 핀테크 부문 영업이익 54억원이 세 부문 영업이익 합계에서 큰 비중을 차지한다. 부채비율이 122.3%까지 오른 상황에서 특정 부문의 이익이 흔들리면 재무 여력이 줄어들 수 있다. 지배주주 지분 2,223억원과 부채총계 4,398억원의 관계를 함께 살펴볼 필요가 있다.",
+    "en": "In Q3 2026, IT information services operating profit of KRW 9.0 billion and fintech operating profit of KRW 5.4 billion made up a large share of the three segments’ combined operating profit. With the debt ratio at 122.3%, a dip in profit from either segment could reduce financial flexibility. The relationship between controlling shareholders’ equity of KRW 222.3 billion and total liabilities of KRW 439.8 billion should be considered together."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 초",
-    "en": "Early November 2026"
+    "ko": "2027년 3월 무렵",
+    "en": "Around March 2027"
    },
    "what": {
-    "ko": "2026년 3분기 잠정실적 공시 예정 — 매출·영업이익의 분기 최대치 경신 흐름과 지배주주 순이익 회복 속도를 확인할 시점이다.",
-    "en": "The Q3 2026 provisional earnings disclosure is expected — a point to check whether the trend of record quarterly revenue and operating profit continues and whether owner net income growth accelerates."
+    "ko": "2026년 연간 잠정 실적 발표(2026년 4분기 포함). 2025년 연간 잠정 실적이 2026년 3월 11일 발표된 점을 감안하면 비슷한 시기가 될 가능성이 있다. 4분기 성수기 효과로 분기 매출이 최고치를 갱신하는지, 영업이익률이 2025년 13.4%보다 회복되는지를 본다.",
+    "en": "Preliminary 2026 full-year results including Q4 2026. Given that the 2025 preliminary annual results were announced on March 11, 2026, a similar timing is possible. Check whether Q4 peak-season sales set a quarterly high and whether the operating margin recovers from 13.4% in 2025."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기(연중)",
-    "en": "Fourth quarter 2026 (ongoing)"
+    "ko": "2027년 3월 말",
+    "en": "By end of March 2027"
    },
    "what": {
-    "ko": "디지털자산기본법의 국회 처리 여부와 발행 주체 관련 조항 확정 여부 — 스테이블코인 사업의 실제 수익화 범위를 좌우할 핵심 변수다.",
-    "en": "Whether the National Assembly passes the Digital Asset Basic Act and finalizes provisions on issuance rights — a key variable determining the actual monetization scope of the stablecoin business."
+    "ko": "2026 사업보고서 제출. 다음 정기보고서로, 2026년 4분기 실적과 부채비율, 영업활동 현금흐름이 공시 값으로 확정된다. 부채비율이 2025년 122.3%에서 올라가는지 내려가는지가 재무 부담의 방향을 보여 준다.",
+    "en": "Filing of the 2026 annual report, the next regular report. Q4 2026 results, the debt ratio and operating cash flow will be fixed as disclosed figures. Whether the debt ratio moves above or below 122.3% from 2025 will indicate the direction of financial burden."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기",
-    "en": "Fourth quarter 2026"
+    "ko": "2027년 상반기",
+    "en": "First half of 2027"
    },
    "what": {
-    "ko": "월렛원-서클 아크 기반 신규 서비스의 상용화 일정과 헥토파이낸셜의 서클 결제망(CPN) 활용 확대 여부를 확인할 필요가 있다.",
-    "en": "It is worth monitoring the commercialization timeline of new WalletOne–Circle Arc-based services and whether Hecto Financial expands its use of Circle's Payment Network."
+    "ko": "체지방 감소 기능성 원료를 쓴 헬스케어 신제품 출시. 회사가 2027년 출시를 밝힌 계획이 실제로 이뤄지는지, 헬스케어 영업이익률이 개선되는지 확인한다.",
+    "en": "Launch of the healthcare product using a functional ingredient for body fat reduction. Check whether the launch planned for 2027 happens on schedule and whether healthcare operating margin improves."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기",
-    "en": "Fourth quarter 2026"
+    "ko": "2027년 5월 무렵",
+    "en": "Around May 2027"
    },
    "what": {
-    "ko": "중국 시노팜 계열사와의 공급 계약 이행 현황과 헥토헬스케어 신규 브랜드·기능성 원료 확장 성과를 점검할 시점이다.",
-    "en": "A point to check the progress of the supply contract with the Sinopharm affiliate in China and the results of Hecto Healthcare's new brand and functional ingredient expansion."
+    "ko": "2027년 1분기 잠정 실적 발표. 2026년 1분기 실적이 2026년 5월 8일 발표된 점을 기준으로 한다. 신규 서비스 투자가 영업이익에 얼마나 반영되는지, 지배주주 순이익이 3분기 100억원 수준을 유지하는지 본다.",
+    "en": "Preliminary Q1 2027 results. The Q1 2026 results were announced on May 8, 2026, which serves as the reference timing. Check how much new-service investment shows up in operating profit and whether net profit attributable to controlling shareholders holds near the KRW 10 billion level of Q3 2026."
+   }
+  },
+  {
+   "when": {
+    "ko": "시점 미정(회사 발표 시)",
+    "en": "Timing undetermined (per company announcement)"
+   },
+   "what": {
+    "ko": "스테이블코인 결제 레일 상용화와 아크 생태계 서비스 출시. 자회사 결제 인프라와 지갑 기술이 실제 거래 서비스로 이어지는지가 확인 지점이다.",
+    "en": "Commercial launch of the stablecoin settlement rail and Arc ecosystem services. The checkpoint is whether the subsidiary’s payment infrastructure and wallet technology translate into live transaction services."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "헥토이노베이션은 IT 정보서비스, 핀테크, 헬스케어 3대 사업의 균형 성장을 바탕으로 매출과 영업이익 모두 분기·연간 기준 최대치를 지속적으로 경신하고 있다. 다만 지배주주 순이익은 매출·영업이익 성장 속도를 따라가지 못하고 분기별 변동성도 큰 편이어서, 신사업 투자와 비지배주주 지분 확대가 이익 흐름에 미치는 영향을 계속 지켜볼 필요가 있다. 스테이블코인 관련해서는 월렛원 인수와 서클 파트너십을 통해 국내 업체 중 비교적 앞선 인프라를 확보했지만, 국내 디지털자산기본법의 입법 일정과 발행 주체 관련 조항이 아직 확정되지 않아 실제 수익화 시점은 불확실하다. 헬스케어 부문은 드시모네 브랜드와 시노팜 공급 계약을 중심으로 그룹의 안정적인 수익원 역할을 하고 있으며, 이 흐름이 이어질지가 향후 실적의 주요 변수가 될 것이다. 밸류에이션 측면에서는 순자산 대비 주가 수준과 관련해 증권가에서 여러 견해가 제시되고 있으나, 이는 발표 시점의 판단이며 향후 실적과 제도 환경에 따라 달라질 수 있다는 점을 유의해야 한다. 종합적으로 사업 구조 다각화와 신성장 동력 투자가 동시에 진행되는 국면으로, 매출 성장의 지속성과 이익 전환 속도, 그리고 국내 제도화 진전 여부가 향후 실적의 방향을 결정할 핵심 요인으로 판단된다.",
-   "en": "Hecto Innovation has continued to set new quarterly and annual records for both revenue and operating profit, underpinned by balanced growth across its three core segments of IT information services, fintech, and healthcare. However, owner net income has not kept pace with revenue and operating profit growth and has shown considerable quarterly volatility, warranting continued attention to how new business investment and expanding minority interests affect earnings flow. On the stablecoin front, the company has secured relatively advanced infrastructure among domestic peers through its WalletOne acquisition and Circle partnership, but the actual monetization timeline remains uncertain given that Korea's Digital Asset Basic Act and its provisions on issuance rights have not yet been finalized. The healthcare segment, centered on the De Simone brand and the Sinopharm supply contract, continues to serve as a stable earnings source for the group, and whether this trend persists will be a key variable for future results. On valuation, various views have been offered by brokerages regarding the stock's price relative to book value, but these reflect judgments made at specific points in time and may change with subsequent earnings and regulatory developments. Overall, the company is in a phase where business diversification and new growth investment are proceeding simultaneously, with the sustainability of revenue growth, the pace of profit conversion, and progress on domestic institutionalization standing as the key factors that will shape future results."
+   "ko": "헥토이노베이션의 최근 흐름은 외형 성장과 이익 회복이 함께 나타난 구간이다. 매출은 2025년 3,758억원으로 3년 연속 늘었고, 2026년 3분기에도 13.8% 늘어 1,088억원을 기록했다. 지배주주 순이익은 2025년 4분기 저점 이후 3개 분기 연속 증가해 최근 네 개 분기 합계가 275억원이다. 반면 영업이익률은 2024년 15.3%에서 2025년 13.4%로 낮아졌고, 신규 서비스 투자로 2026년 2분기 영업이익이 전년 동기보다 줄었다. 부채비율이 2025년 122.3%까지 오른 점도 재무 부담 측면에서 함께 봐야 한다. 주주환원은 3년 1% 소각 계획을 마쳤고, 증권사들은 실적 개선과 최근 주가 하락을 함께 언급하며 밸류에이션 매력을 평가했다. 강세 요인은 여러 부문의 고른 성장과 분기 이익 회복이며, 약세 요인은 이익률 정체와 부채 확대, 신사업 수익화 시점의 불확실성이다. 다음 확인 지점은 2026년 연간 잠정 실적과 2026년 사업보고서에 담기는 영업이익률과 부채비율이다.",
+   "en": "Recent trends at Hecto Innovation show revenue growth and profit recovery arriving together. Revenue reached KRW 375.8 billion in 2025 after three consecutive years of growth, and rose 13.8% year on year to KRW 108.8 billion in Q3 2026. Net profit attributable to controlling shareholders has risen for three quarters since the Q4 2025 low, totaling KRW 27.5 billion over the latest four quarters. By contrast, the operating margin fell from 15.3% in 2024 to 13.4% in 2025, and Q2 2026 operating profit declined year on year as new-service investment weighed. The debt ratio climbed to 122.3% in 2025, which also needs to be read as a financial burden. The three-year shareholder return plan has been completed through annual 1% share cancellations, and brokers have pointed to both improved results and the recent share price decline when describing valuation appeal. Bullish factors are balanced growth across segments and the quarterly profit recovery, while bearish factors are the stalled margin, rising debt, and uncertain timing of new-business monetization. The next checkpoints are the 2026 preliminary annual results and the operating margin and debt ratio in the 2026 annual report."
   }
  },
  "sources": [
-  "http://www.enewstoday.co.kr/news/articleView.html?idxno=2457121",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A214180&MenuYn=Y&ReportGB=B&NewMenuID=Y&stkGb=701",
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=214180",
   "https://www.hectoinnovation.co.kr/",
-  "https://www.newspim.com/news/view/20260508000816",
-  "https://m.irgo.co.kr/IR-ROOM/214180",
-  "https://www.newspim.com/news/view/20260511000348",
-  "https://view.asiae.co.kr/article/2026051109163797616",
-  "https://www.nexblock.co.kr/article/1002073",
-  "https://www.hectoinnovation.co.kr/ir/stock_info",
-  "https://www.goodkyung.com/news/articleView.html?idxno=290231",
-  "https://www.news1.kr/industry/sb-founded/6160762",
-  "https://www.news1.kr/industry/sb-founded/6161165",
-  "https://zdnet.co.kr/view/?no=20260508172325",
-  "https://www.newspim.com/news/view/20260807000647",
-  "https://www.mt.co.kr/tech/2026/05/08/2026050810433699717",
-  "https://www.ebn.co.kr/news/articleView.html?idxno=1719571",
-  "https://v.daum.net/v/20260312000300770"
+  "https://supple.kr/news/cmw9ztnpmuzzkal9ph6b8eays",
+  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=714512",
+  "https://view.asiae.co.kr/article/2026111010235043447",
+  "https://news.bizwatch.co.kr/article/mobile/2026/11/10/0012",
+  "https://news.nate.com/view/20261110n08848",
+  "https://www.consumernews.co.kr/news/articleView.html?idxno=767993",
+  "https://m.news.nate.com/view/20260807n16563",
+  "https://www.ftoday.co.kr/news/articleView.html?idxno=369326",
+  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=714088",
+  "https://hectoinnovation.co.kr/pr/news",
+  "https://www.vegannews.co.kr/news/article.html?no=403019",
+  "https://www.news1.kr/industry/sb-founded/6350265"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "214180",
  "name": "헥토이노베이션",
  "name_en": "Hecto Innovation Co., Ltd.",
@@ -223,11 +228,11 @@
   "IT·소프트웨어"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 06:36",
- "dataDate": "20260904",
+ "reportDate": "2026-11-18",
+ "reportTs": "2026-11-18 07:07",
+ "dataDate": "20261117",
  "quant": {
-  "asOf": "2026-08-21",
+  "asOf": "2026-11-17",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -238,6 +243,7 @@
     "np_owner": 30525142337,
     "equity": 359509411699,
     "equity_owner": 222280460798,
+    "equity_nci": 137228950901,
     "liab": 439800628468,
     "cfo": 100434444308,
     "eps_basic": 2427,
@@ -253,6 +259,7 @@
     "np_owner": 27903667102,
     "equity": 329720255396,
     "equity_owner": 207165059663,
+    "equity_nci": 122555195733,
     "liab": 362434259746,
     "cfo": 105993130041,
     "eps_basic": null,
@@ -268,6 +275,7 @@
     "np_owner": 22563244907,
     "equity": 294803526459,
     "equity_owner": 168458006838,
+    "equity_nci": 126345519621,
     "liab": 281290032080,
     "cfo": 61385493515,
     "eps_basic": null,
@@ -283,6 +291,7 @@
     "np_owner": 29451590887,
     "equity": 282603992186,
     "equity_owner": 140043068846,
+    "equity_nci": 142560923340,
     "liab": 244207085048,
     "cfo": 26043244224,
     "eps_basic": null,
@@ -292,12 +301,6 @@
    }
   ],
   "quarterly": [
-   {
-    "q": "2025Q2",
-    "rev": 91790640659,
-    "op": 13421792659,
-    "np_owner": 11051664592
-   },
    {
     "q": "2025Q3",
     "rev": 95626133165,
@@ -321,26 +324,36 @@
     "rev": 102828587183,
     "op": 12880295226,
     "np_owner": 7022065122
+   },
+   {
+    "q": "2026Q3",
+    "rev": 108828971939,
+    "op": 15262547605,
+    "np_owner": 10001528565
    }
   ],
   "valuation": {
-   "price": 15030,
-   "mcap": 0.1953,
+   "price": 13370,
+   "mcap": 0.1737,
    "shares": 12993367,
    "total_shares": 12993367,
-   "wavg_shares": 12579737,
-   "per": 7.378,
-   "eps": 2037,
-   "pbr": 0.8286,
-   "bps": 18140,
-   "roe_ttm": 11.6,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": 25846566074,
-   "pbr_krx": 0.8,
+   "wavg_shares": 12586866,
+   "per": 6.042,
+   "eps": 2213,
+   "pbr": 0.7064,
+   "bps": 18926,
+   "roe_ttm": 12.0,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": 27456369350,
+   "ccy": "KRW",
+   "bps_src": "자체",
+   "eps_src": "공시",
+   "pbr_krx": 0.75,
    "bps_krx": 17664.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 500.0,
-   "div": 3.33
+   "div": 3.74
   }
- }
+ },
+ "textRules": 2
 }

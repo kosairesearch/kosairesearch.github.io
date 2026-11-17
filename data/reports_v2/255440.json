@@ -1,220 +1,218 @@
 {
  "title": {
-  "ko": "적자 늪 벗어난 OLED 장비주, 지속성이 관건",
-  "en": "OLED Equipment Maker Turns Profitable, Durability in Question"
+  "ko": "OLED 증착 장비 야스, 흑자 전환 이후의 변동성",
+  "en": "YAS: Profit Turnaround Tested by Order Volatility"
  },
  "lead": {
-  "ko": "야스는 2025년 4분기부터 3개 분기 연속 흑자전환에 성공했으나, 이는 8.6세대 OLED 투자 사이클에 따른 특정 고객사 발주 인식에 크게 의존한 결과로 지속 여부 확인이 필요하다.",
-  "en": "YAS has posted three consecutive quarters of operating profit since Q4 2025, but this turnaround is heavily tied to order recognition from specific customers within the 8.6-generation OLED investment cycle, making its durability a key question."
+  "ko": "야스는 2026년 2분기 영업이익 흑자 전환으로 4년 연속 적자 흐름에 변화를 보였지만, 3분기에는 지배주주 순손실로 돌아섰다. 수주 매출이 얼마나 지속되는지가 다음 확인 지점이다.",
+  "en": "YAS swung to operating profit in the second quarter of 2026 after four straight years of annual losses, but returned to a controlling-shareholder net loss in the third quarter, so the durability of order-driven revenue is the next checkpoint."
  },
  "keypoints": [
   {
-   "ko": "2026년 2분기 연결 매출 872억원, 영업이익 280억원으로 전년 동기 대비 흑자전환하며 분기 실적이 급격히 개선됐다.",
-   "en": "Q2 2026 consolidated revenue reached 87.2 billion won with operating profit of 28.0 billion won, marking a sharp turnaround from the prior-year quarter."
+   "ko": "2026년 2분기 매출은 872억원, 영업이익은 280억원으로 흑자 전환했다. 같은 해 3분기에는 매출 403억원, 영업이익 6.9억원, 지배주주 순손실 124억원을 기록했다.",
+   "en": "Second-quarter 2026 revenue was KRW 87.2 billion with operating profit of KRW 28 billion, a swing to profit. In the third quarter, revenue was KRW 40.3 billion, operating profit KRW 694 million, and controlling-shareholder net loss KRW 12.4 billion."
   },
   {
-   "ko": "전세계에서 유일하게 8세대 이상 증착기와 증발원 모두 양산 성공 경험을 보유한 기술 경쟁력이 핵심 자산이다.",
-   "en": "The company's core asset is its position as the only global maker with mass-production experience in both 8th-generation-plus deposition systems and evaporation sources."
+   "ko": "2025년 연간 매출은 348억원으로 전년 대비 21.4% 증가했지만, 영업손실 64.6억원으로 적자가 이어졌다. 영업활동 현금흐름은 2022년부터 2025년까지 매년 마이너스다.",
+   "en": "Full-year 2025 revenue rose 21.4% year on year to KRW 34.8 billion, yet the operating loss was KRW 6.46 billion. Operating cash flow was negative in each year from 2022 to 2025."
   },
   {
-   "ko": "BOE·CSOT·삼성디스플레이 등 글로벌 패널사의 8.6세대 OLED 투자 확대가 수주 환경의 핵심 변수로 부상했다.",
-   "en": "Expanding 8.6-generation OLED investment by global panel makers including BOE, CSOT, and Samsung Display has become the key variable for the order environment."
+   "ko": "실적은 장비 수주 시점에 크게 좌우되는 구조다. 2026년 6월 중국 Guangzhou China Star Optoelectronics Printing Display Technology와 124.2억원 규모 증발원 공급계약을 맺었고, 계약 기간은 2026년 11월 6일에 끝났다.",
+   "en": "Results depend heavily on the timing of equipment orders. In June 2026 YAS signed a supply contract of about KRW 12.4 billion for display evaporation sources with Guangzhou China Star Optoelectronics Printing Display Technology, with the contract period ending on November 6, 2026."
   },
   {
-   "ko": "LG디스플레이는 68억원 규모의 설비 공급 계약을 2026년 5월 체결했으나, 8.6세대 투자 자체는 아직 결정하지 않은 상태다.",
-   "en": "LG Display signed a 6.8 billion won equipment supply contract in May 2026, but has not yet decided on its own 8.6-generation investment."
+   "ko": "중국 OLED 투자 재개가 수주 배경으로 거론된다. 업계 보도는 2026년 상반기 중국 TCL CSOT의 8.6세대 OLED 라인 증착 장비 수주를 근거로 매출 증가를 전망했다.",
+   "en": "A resumption of Chinese OLED investment is cited as the background to these orders. Industry reports in the first half of 2026 projected higher revenue on the back of a deposition equipment order for TCL CSOT's 8.6-generation OLED line."
   },
   {
-   "ko": "2022~2025년 연간 영업이익은 4년 연속 적자를 기록했고, 영업활동현금흐름도 매년 순유출을 보였다.",
-   "en": "Annual operating profit was in the red for four consecutive years from 2022 to 2025, and operating cash flow was also negative every year."
+   "ko": "2025년 말 기준 자본총계는 1,334억원으로 부채총계 383억원을 웃돈다. 시가총액은 자본총계를 밑도는 구간에 있다.",
+   "en": "At the end of 2025, total equity was KRW 133.4 billion against total liabilities of KRW 38.3 billion. Market capitalization sits below total equity."
   }
  ],
  "business": {
-  "ko": "야스는 2002년 설립되어 진공·반도체·평판디스플레이 장비를 제조해온 기업으로, 2017년 코스닥에 상장했다. 핵심 사업은 OLED 디스플레이 패널 제작에 쓰이는 증착시스템과 증착원(증발원)의 제작·판매이며, 주요 제품으로는 OLED TV 및 조명용 In-Line 시스템, 증착원 등이 있다. 회사는 전 세계에서 유일하게 8세대 이상 증착기와 증착원 모두 양산 성공 경험을 보유하고 있으며, 대형 시장에서는 증착 공정을 턴키 형태로 제공하고 정밀 온도 제어와 평탄도 유지가 가능한 척(Chuck) 기술을 활용한다. 물질 증착 효율을 개선한 LNS(Linear Nozzle Source) 구조의 증발원 기술을 내재화했으며 실제 사용 효율은 약 70% 수준으로 파악된다. 주요 고객사는 LG디스플레이(8세대 WOLED 증착기)와 BOE(8.6세대 증발원)이며, 매출은 내수와 중국 수출이 큰 비중을 차지한다. 향후 10.5세대 제조를 겨냥한 Fab4 공장 가동을 준비 중이며, 이는 대형 패널 시장에서의 장비 대응력 확대와 연결된다. 경쟁 구도에서는 미국 어플라이드머티리얼즈(AMAT)의 비마스크 증착 방식인 eLEAP, 국내 선익시스템, 일본 캐논도키 등이 주요 경쟁자로 꼽힌다. 최근에는 중국 비전옥스가 마스크 없이 증착하는 ViP(Visionox intelligent Pixelization) 방식을 채택하려는 움직임을 보이며, 비마스크 증착 경험을 보유한 야스가 새로운 수주 후보로 부각되고 있다.",
-  "en": "Founded in 2002, YAS has manufactured vacuum, semiconductor, and flat-panel display equipment, and listed on KOSDAQ in 2017. Its core business is the manufacture and sale of deposition systems and evaporation sources used in OLED display panel production, with key products including In-Line systems for OLED TV and lighting applications and evaporation sources. The company is the only global maker with mass-production success in both 8th-generation-plus deposition systems and evaporation sources, providing turnkey deposition processes for the large-panel market using chuck technology capable of precise temperature control and flatness maintenance. It has internalized evaporation source technology using a Linear Nozzle Source (LNS) structure that improves material deposition efficiency, with actual usage efficiency estimated at around 70%. Its major customers are LG Display, for 8th-generation WOLED deposition systems, and BOE, for 8.6-generation evaporation sources, with revenue skewed toward domestic sales and China exports. The company is preparing to operate its Fab4 plant targeting 10.5-generation production, which is linked to expanding its capability in the large-panel market. In the competitive landscape, Applied Materials (AMAT)'s mask-less eLEAP deposition method, domestic rival Sunic System, and Japan's Canon Tokki are cited as key competitors. More recently, China's Visionox has been moving toward adopting a mask-less deposition method called ViP (Visionox intelligent Pixelization), positioning YAS as a new candidate for orders given its mask-less deposition experience."
+  "ko": "야스는 2002년 설립된 OLED 디스플레이 패널용 증착 장비 제조사로, 2017년 코스닥에 상장했다. 전 세계에서 8세대 이상 증착기와 증착원을 모두 양산한 경험을 보유했다고 알려져 있다. 주력 제품은 8세대 이상 TV용 대형 패널 증착 시스템, 6세대 이하 중소형 패널용 증발원, 5세대 조명 장비로 나뉜다. 매출은 장비 개조와 유지보수 부품 쪽 비중이 큰 구조로 설명된다. 2026년 6월에는 중국 Guangzhou China Star Optoelectronics Printing Display Technology와 디스플레이 양산용 증발원 단일판매·공급계약을 124.2억원 규모로 체결했으며, 이는 2025년 매출 대비 약 35.74% 수준이다. 생산 측면에서는 파주 공장의 팹3·팹4가 풀가동 중이라는 보도가 있으며, 향후 10.5세대 제조를 위해 Fab4 공장 가동을 준비 중이라는 내용도 소개된다. 다만 Fab4가 대응하는 세대는 보도에 따라 8.6세대로 소개되기도 해 세대 기준은 일치하지 않는다. 고객은 중국 패널업체가 중심이 되는 흐름이고, 국내 LG디스플레이와 중국 BOE가 주요 패널 고객이다. 경쟁 구도에서는 국내 OLED 증착 장비 업체인 선익시스템(Sunic System) 등과 겹친다.",
+  "en": "YAS is a manufacturer of deposition equipment for OLED display panels, founded in 2002 and listed on KOSDAQ in 2017. The company is reported to be the only one in the world with mass-production experience in both 8th-generation-and-above deposition systems and evaporation sources. Its main products are deposition systems for large TV panels of 8th generation and above, evaporation sources for small and medium panels of 6th generation and below, and 5th-generation lighting equipment. Revenue is described as weighted toward equipment refurbishment and maintenance parts rather than new equipment sales. In June 2026 YAS signed a single-sale supply contract for display evaporation sources worth about KRW 12.4 billion with Guangzhou China Star Optoelectronics Printing Display Technology, equal to roughly 35.74 percent of 2025 revenue. Media reports say the Paju Fab3 and Fab4 plants are running at full capacity, and the company is preparing Fab4 for next-generation panel production, though reports differ on whether that generation is 8.6 or 10.5. Customers are centered on Chinese panel makers, while LG Display and BOE are also named as major panel customers. Competition overlaps with domestic OLED deposition equipment maker Sunic System."
  },
  "earnings": {
-  "ko": "야스의 연간 매출액은 2022년 548억원에서 2023년 420억원, 2024년 286억원으로 감소하다가 2025년 348억원으로 반등했으나, 4개 연도 모두 영업손실을 기록했다. 2025년 영업손실은 64.6억원(영업이익률 -18.6%)으로 2024년 96.6억원 손실보다 축소됐고, 지배주주 순손실도 55.1억원으로 전년 99.9억원 대비 줄었다. 다만 영업활동현금흐름은 2025년에도 -120.9억원의 순유출을 기록하며 4년 연속 현금 창출력이 부진했다. 분기 흐름을 보면 2025년 2분기 매출 61.5억원, 영업손실 41.7억원에서 2025년 3분기 매출 106.4억원, 영업손실 0.25억원으로 손익 균형에 근접했고, 2025년 4분기에는 매출 139.5억원, 영업이익 24.4억원으로 분기 흑자전환에 성공했다. 이후 2026년 1분기 매출 326.5억원, 영업이익 51.8억원으로 흑자 기조를 이어갔고, 2026년 2분기에는 매출 872.2억원, 영업이익 280.2억원, 지배주주 순이익 284.0억원으로 매출과 이익이 급격히 확대됐다. 2026년 2분기 매출은 전년 동기 대비 1,318.8% 증가한 것으로 공시됐다. 이러한 실적 급증은 특정 고객사의 대형 장비 발주가 특정 분기에 집중적으로 매출로 인식된 결과로 해석되며, 매출 규모의 분기별 변동성이 매우 크다는 점이 특징이다. 최근 4개 분기(2025년 3분기~2026년 2분기) 합산 지배주주 순이익은 이전의 만성적 적자 구도와는 뚜렷하게 대비되는 흐름을 보이지만, 이 흐름이 향후 분기에도 유지될지는 후속 수주와 매출 인식 시점에 달려 있다.",
-  "en": "YAS's annual revenue declined from 54.8 billion won in 2022 to 42.0 billion won in 2023 and 28.6 billion won in 2024, before rebounding to 34.8 billion won in 2025, though the company posted an operating loss in all four years. The 2025 operating loss narrowed to 6.46 billion won (operating margin of -18.6%) from a 9.66 billion won loss in 2024, and the net loss attributable to owners also narrowed to 5.51 billion won from 9.99 billion won a year earlier. However, operating cash flow remained negative at -12.09 billion won in 2025, marking four consecutive years of weak cash generation. On a quarterly basis, revenue of 6.15 billion won and an operating loss of 4.17 billion won in Q2 2025 narrowed to revenue of 10.64 billion won and a near-breakeven operating loss of 0.02 billion won in Q3 2025, before the company turned profitable in Q4 2025 with revenue of 13.95 billion won and operating profit of 2.44 billion won. The profitable trend continued into Q1 2026 with revenue of 32.65 billion won and operating profit of 5.18 billion won, before revenue and profit expanded sharply in Q2 2026 to 87.22 billion won in revenue, 28.02 billion won in operating profit, and 28.40 billion won in net income attributable to owners. Q2 2026 revenue was reported to have increased 1,318.8% year over year. This sharp jump is interpreted as the result of large equipment orders from specific customers being recognized as revenue in a concentrated manner within a single quarter, highlighting the company's very high quarter-to-quarter revenue volatility. The combined net income attributable to owners over the most recent four quarters (Q3 2025 through Q2 2026) stands in stark contrast to the company's previously chronic loss pattern, though whether this trend persists in future quarters depends on follow-on orders and the timing of revenue recognition."
+  "ko": "공시 실적 기준 연간 매출은 2022년 548억원에서 2023년 420억원(전년 대비 23.4% 감소), 2024년 286억원(전년 대비 31.8% 감소)으로 줄었다가 2025년 348억원(전년 대비 21.4% 증가)으로 회복했다. 2022~2025년 중 가장 큰 해는 2022년이고 가장 작은 해는 2024년이다. 영업손실은 2022년 48.3억원, 2023년 54.4억원, 2024년 96.6억원, 2025년 64.6억원으로 2022년부터 2025년까지 4년 연속 적자이며, 2025년에는 적자가 축소됐다. 영업이익률은 2022년 -8.8%, 2023년 -12.9%, 2024년 -33.7%, 2025년 -18.6%로 2024년에 저점을 찍은 뒤 2025년에 개선됐다. 지배주주 순손실은 2022년 8.5억원에서 2024년 99.9억원까지 확대됐고 2025년에는 55.1억원으로 줄었다. 당기순이익(비지배지분 포함)은 2024년 당기순손실 105억원이 가장 컸다. 회사는 2025년 순손실 개선의 주요 원인으로 진행매출 인식에 따른 손익구조 개선을 제시했다. 분기 실적은 2025년 3분기 매출 106억원, 영업손실 2,487만원으로 손익분기 근처였고, 2025년 4분기 매출 139억원, 영업이익 24.4억원으로 흑자 전환했다. 2026년 1분기 매출은 326억원, 영업이익은 51.8억원이었고, 2026년 2분기 매출은 872억원, 영업이익은 280억원으로 크게 늘었다. 2026년 2분기 잠정 발표 때 지배기업 소유주지분 순이익은 271.8억원이었으나 정기보고서 기준 지배주주 순이익은 284억원으로 공시됐다. 2026년 3분기 매출은 403억원으로 전년 동기 대비 늘었지만 영업이익은 6.9억원으로 전 분기 대비 97.5% 줄었고, 지배주주 순손실 124억원으로 적자 전환했다. 2분기 이익이 집중된 구조에서 3분기 급감의 원인은 공시 실적만으로 특정되지 않으며, 2026년 사업보고서 본문의 매출 인식 시점과 비용 구조가 확인할 사항이다. 2018년에는 매출 1,845억원, 영업이익 442억원(영업이익률 24%)을 낸 적이 있어 현재 수준과 대비된다.",
+  "en": "On a reported basis, annual revenue fell from KRW 54.8 billion in 2022 to KRW 42 billion in 2023 (down 23.4 percent year on year) and to KRW 28.6 billion in 2024 (down 31.8 percent), then recovered to KRW 34.8 billion in 2025 (up 21.4 percent). Among 2022 to 2025, 2022 was the largest year and 2024 the smallest. The operating loss was KRW 4.83 billion in 2022, KRW 5.44 billion in 2023, KRW 9.66 billion in 2024 and KRW 6.46 billion in 2025, a loss in each of the four years, with the loss narrowing in 2025. The operating margin was -8.8 percent in 2022, -12.9 percent in 2023, -33.7 percent in 2024 and -18.6 percent in 2025, bottoming in 2024 and improving in 2025. The controlling-shareholder net loss widened from KRW 845 million in 2022 to KRW 9.99 billion in 2024 and narrowed to KRW 5.51 billion in 2025. Net loss including non-controlling interests was largest in 2024 at KRW 10.5 billion. The company cited a change in profit structure from progress-based revenue recognition as the main reason for the 2025 improvement. Quarterly, the third quarter of 2025 had revenue of KRW 10.6 billion and an operating loss of KRW 24.87 million, and the fourth quarter swung to an operating profit of KRW 2.44 billion on revenue of KRW 13.9 billion. In the first quarter of 2026 revenue was KRW 32.6 billion with operating profit of KRW 5.18 billion, and in the second quarter revenue jumped to KRW 87.2 billion with operating profit of KRW 28 billion. The provisional second-quarter release, issued on July 30, 2026, showed controlling-shareholder net income of KRW 27.18 billion, while the regular-report figure is KRW 28.4 billion. In the third quarter, revenue was KRW 40.3 billion, but operating profit fell to KRW 694 million and the controlling-shareholder result turned to a net loss of KRW 12.4 billion. The cause of the sharp third-quarter drop cannot be pinned down from reported figures alone and should be checked against the timing of revenue recognition and cost structure in the 2026 annual report. For reference, in 2018 the company posted revenue of KRW 184.5 billion and operating profit of KRW 44.2 billion."
  },
  "industry": {
-  "ko": "OLED 증착 장비 시장은 글로벌 패널사들의 8세대 이상 대면적 투자 사이클에 좌우되는 구조다. 삼성디스플레이는 충남 아산에 8.6세대 IT OLED 라인을 구축 중이며 2026년 양산을 목표로 하고 있고, BOE는 중국 청두 8.6세대 라인에서 2026년 6월 양산을 시작해 고객사에 첫 OLED 패널을 공급했다. CSOT는 8.6세대 OLED 라인 장비 발주를 2026년 1분기부터 시작할 계획으로 알려져 있으며, 초기 월 2만 2,500장 규모에서 향후 4만 5,000장까지 단계적 증설이 논의되고 있다. 반면 LG디스플레이는 8.6세대 투자에 신중한 입장을 유지하고 있으며, 정철동 사장은 2026년 1월 CES에서 현재 시장 수요는 기존 6세대 설비로도 대응 가능하다는 견해를 밝혔다. 이러한 고객사별 투자 속도 차이는 장비업체들의 수주 시점과 매출 인식 시점을 크게 벌려놓는 요인으로 작용한다. 경쟁 구도에서는 마스크 방식(FMM)을 채택한 삼성디스플레이·BOE와 달리, 비전옥스가 마스크 없는 ViP 방식을 검토하며 야스와 같은 비마스크 증착 경험 보유 업체에 새로운 기회가 열릴 가능성이 제기된다. 산업 전체로 보면 IT 기기의 OLED 채택 확대와 대형 패널사들의 라인 증설이 중장기 수요 기반이 되지만, 개별 프로젝트의 발주 시점 지연이나 취소 가능성은 여전히 사이클 리스크로 남아 있다.",
-  "en": "The OLED deposition equipment market is heavily dependent on the large-panel investment cycles of global panel makers at the 8th generation and above. Samsung Display is building an 8.6-generation IT OLED line in Asan, South Chungcheong Province, targeting mass production in 2026, while BOE began mass production at its 8.6-generation line in Chengdu, China in June 2026, supplying its first OLED panels to customers. CSOT is known to plan to begin ordering equipment for its 8.6-generation OLED line starting in Q1 2026, with capacity discussed in stages from an initial 22,500 sheets per month up to 45,000 sheets. LG Display, in contrast, has maintained a cautious stance on 8.6-generation investment, with CEO Jeong Cheol-dong stating at CES in January 2026 that current market demand can still be met with existing 6th-generation equipment. These differing investment paces among customers create significant timing gaps in order intake and revenue recognition for equipment makers. In terms of competitive positioning, unlike Samsung Display and BOE, which have adopted the fine-metal-mask (FMM) method, Visionox is considering a mask-less ViP method, which could open new opportunities for companies with mask-less deposition experience such as YAS. Overall, expanding OLED adoption in IT devices and line expansions by major panel makers form the medium-to-long-term demand base, but delays or cancellations in individual project orders remain a cyclical risk."
+  "ko": "전방 수요는 중국 OLED 투자 재개가 핵심 변수다. 업계 보도에 따르면 중국의 OLED 투자가 다시 늘면서 장비 수주가 확대되는 흐름이다. 다만 해당 보도의 매출 전망은 2026년 상반기 기사에 근거한 것으로 현재 시점의 확정 가이던스가 아니다. TCL CSOT 8.6세대 라인 수주 규모에 대해서는 업계 추정치가 있으나 회사가 금액을 밝히지 않았다. 과거 패널업체들의 투자 지연은 수익성 악화 요인으로 작용했다. 이 사이클에서 패널 투자가 얼마나 지속되는지가 야스의 수주 흐름을 좌우하는 변수다. 경쟁사 대비 포지션에서 야스는 8세대 이상 증착기와 증발원을 모두 양산한 이력을 강점으로 내세운다. 그러나 동종 업체 선익시스템과 수주를 나누는 구조에서 고객사별 점유율은 공시로 확인되는 범위가 제한적이다. 고객사 집중도가 높다는 점은 특정 패널 업체의 투자 결정이 실적에 직접 반영된다는 뜻이다. 증착 장비는 대형 설비투자이므로 수주 공시가 연속성을 가질지가 업황 판단의 출발점이다.",
+  "en": "China's resumed OLED investment is the central variable for end demand. Reports say that renewed Chinese OLED investment has lifted equipment orders for YAS. Those revenue projections come from first-half 2026 coverage and are not firm company guidance. Industry estimates put the TCL CSOT 8.6-generation line order at around KRW 300 billion, but the company has not disclosed the contract amount. Earlier, investment delays by Chinese panel makers BOE and LG Display were cited as a drag on profitability. Whether panel investment continues through this cycle will largely determine YAS order flow. Against peers, YAS emphasizes its experience in mass producing both 8th-generation-and-above deposition systems and evaporation sources. It competes with Sunic System, and disclosed data give only a limited view of market share by customer. High customer concentration means investment decisions at a few panel makers flow directly into results. Because deposition equipment is a large capital expenditure, whether order disclosures continue steadily is the starting point for judging the cycle."
  },
  "outlook": {
-  "ko": "회사는 2026년 5월 LG디스플레이와 68억원 규모의 디스플레이 제조용 설비 공급 계약을 체결했으며, 계약 기간은 2026년 5월 22일부터 2027년 3월 3일까지로 설비 납품 후 입고검사 합격 시 중도금 90%, Acceptance Test 완료 시 잔금 10%를 지급받는 구조다. 증권가에서는 CSOT의 8.6세대 OLED 라인 장비 발주가 2026년 초부터 시작되고 관련 장비 선정이 이뤄질 경우, 야스가 해외향 대형·고사양 장비 수주를 확보할 가능성이 있다고 언급했다. 다만 해당 수주 규모나 성사 여부에 대해서는 아직 공시로 확정되지 않았다. Fab4 공장은 10.5세대 제조를 겨냥해 가동을 준비 중이며, 가동 시점과 실제 수주 연계 여부가 향후 매출 성장의 핵심 변수로 지목된다. 비전옥스의 8.6세대 IT OLED 라인 공급사 선정 절차도 진행 중인 것으로 알려져 있으며, 비마스크 증착 방식(ViP)이 채택될 경우 야스가 후보로 거론되고 있다. LG디스플레이의 8.6세대 투자 여부는 아직 확정되지 않은 상태로, 결정 시점과 규모가 향후 실적에 영향을 줄 수 있는 변수로 남아 있다. 종합하면 회사의 성장 경로는 개별 고객사의 대형 투자 결정과 발주 타이밍에 강하게 연동되어 있어, 특정 프로젝트의 진행 여부를 지속적으로 확인하는 것이 중요하다.",
-  "en": "In May 2026, the company signed a 6.8 billion won equipment supply contract with LG Display for display manufacturing equipment, running from May 22, 2026 to March 3, 2027, under a payment structure of 90% upon acceptance inspection after delivery and the remaining 10% upon completion of the acceptance test. Some brokerages have noted that if CSOT's equipment ordering for its 8.6-generation OLED line, expected to begin in early 2026, proceeds and equipment selection is finalized, YAS could secure large-scale, high-specification overseas orders. However, the scale or finalization of any such order has not yet been confirmed through official disclosure. The Fab4 plant is being prepared for operation targeting 10.5-generation production, with the timing of its startup and its linkage to actual orders cited as a key variable for future revenue growth. Visionox's supplier selection process for its 8.6-generation IT OLED line is also reportedly underway, and YAS has been mentioned as a candidate should the mask-less ViP method be adopted. LG Display's decision on 8.6-generation investment remains undetermined, and the timing and scale of any such decision remain a variable that could affect future performance. Overall, the company's growth path is strongly tied to individual customers' large investment decisions and order timing, making continuous monitoring of specific project progress important."
+  "ko": "단기 실적의 방향은 수주 공시의 연속성에 달려 있다. 2026년 6월 체결된 증발원 계약은 2026년 11월 6일 계약 기간이 끝났으며, 후속 공급계약 공시 여부가 다음 매출 흐름을 가늠하는 지표다. 증설 측면에서는 파주 공장의 팹5 증설이 생산 능력 확대와 병행된다는 보도가 있다. 증설의 가동 시점과 규모는 확인된 일정이 없어 공시 확인이 필요하다. 2026년 초 증권사 리포트는 고객사의 장비 발주가 실현되면 신규 수주가 크게 늘 수 있다고 전망했다. 이 전망은 발주의 실현 여부를 전제로 하므로 사실 확인이 필요하다. 2026년 1~3분기 누적 매출은 1,601억원으로, 2분기에 수주 매출이 집중된 구조가 확인된다. 2026년 사업보고서에서 4분기 실적과 연간 영업이익·영업활동 현금흐름이 확정되며, 이것이 흑자 전환이 연간 단위로 이어졌는지를 가르는 확인 지점이다. 3분기 영업이익이 크게 줄어든 만큼 4분기 이익 규모와 비용 추이가 중요하다. 회사가 밝힌 중장기 계획은 공시 범위에서 확인되는 것이 제한적이므로, 수주 공시와 정기보고서를 기준으로 전망을 점검하는 것이 필요하다.",
+  "en": "Near-term results depend on whether order disclosures continue. The June 2026 evaporation source contract reached the end of its contract period on November 6, 2026, so follow-on supply contract disclosures are the indicator to watch for the next revenue stream. On the capacity side, reports say the Paju Fab5 expansion will run alongside higher production capacity. No confirmed schedule for the start of operations has been disclosed. An early-2026 brokerage report said new orders could rise substantially if customers' equipment orders materialize. That view depends on orders being realized and is not yet verified. Cumulative revenue for the first three quarters of 2026 is KRW 160.1 billion, which shows that revenue was concentrated in the second quarter. The 2026 annual report will confirm fourth-quarter results and full-year operating profit and operating cash flow, which will show whether the profit turn held across a full year. After the sharp third-quarter drop, fourth-quarter profit scale and the cost trend are the key items. Because the company's medium-term plans are only partly visible in disclosures, outlook should be checked against order disclosures and periodic reports."
  },
  "valuation_comment": {
-  "ko": "야스는 2022년부터 2025년까지 4개 연도 연속 영업손실을 기록한 뒤 2025년 4분기부터 분기 흑자로 전환하며 이익 회복 국면에 들어섰다. 이 때문에 주가수익배수는 과거 적자 국면에서는 산출이 어려웠던 지표가 최근 계산 가능해진 상태이며, 그 수치는 2026년 2분기와 같은 특정 분기의 대규모 이익 인식이 크게 반영된 결과라는 점을 감안할 필요가 있다. 주가순자산비율은 순자산 대비 할인된 구간에서 거래되는 모습을 보이는데, 이는 과거 다년간의 누적 적자로 자기자본이 꾸준히 감소해온 배경과 함께 살펴볼 필요가 있다. 최근 회계연도 기준으로는 배당을 지급하지 않아, 배당수익률 측면에서는 배당을 지급하는 업종 내 다른 장비업체 대비 매력이 낮은 편이다. 이익의 지속성이 아직 여러 분기에 걸쳐 검증되지 않은 만큼, 밸류에이션 지표의 해석에는 향후 실적 발표를 통한 추가 확인이 필요하다.",
-  "en": "After posting operating losses for four consecutive years from 2022 through 2025, YAS entered a profit-recovery phase starting with its return to quarterly operating profit in Q4 2025. As a result, the price-to-earnings multiple, which was difficult to calculate during the loss-making period, has now become computable, though it should be noted that the figure heavily reflects large profit recognition concentrated in a specific quarter such as Q2 2026. The price-to-book ratio trades at a discount to net asset value, a pattern that should be considered alongside the steady decline in shareholders' equity resulting from years of accumulated losses. The company has not paid dividends in the most recent fiscal year, making its dividend yield less attractive relative to other dividend-paying equipment makers in the sector. Since the persistence of the recent profit has not yet been verified across multiple quarters, interpreting the valuation metrics requires further confirmation through upcoming earnings releases."
+  "ko": "밸류에이션은 실적 흐름과 자산 수준을 함께 봐야 한다. 최근 네 개 분기(2025년 4분기~2026년 3분기) 지배주주 순이익 합계는 240억원으로, 2025년 연간 지배주주 순손실과 대비된다. 연간 기준으로는 2025년까지 적자가 이어져 이익 기반의 배수를 해석하기에 제약이 있다. 주가순자산비율은 1배를 밑도는 구간에서 거래되며 자본총계 대비 시가총액이 낮은 상태다. 2025년 말 자본총계 1,334억원 대비 부채 비율이 28.7%로 재무 부담은 크지 않은 편이다. 다만 영업활동 현금흐름이 2022년부터 2025년까지 마이너스였다는 점은 자산 가치와 현금 창출력 사이의 간극으로 읽힌다. 과거 거래 밴드와 비교하면 현재 배수는 실적 변동 폭이 큰 구간을 반영한다. 업종 평균과의 비교에서도 실적이 일정하지 않아 배수의 해석 범위가 넓다. 배당은 지급 이력이 확인되지 않은 상태다.",
+  "en": "Valuation has to be read alongside both the earnings trend and the asset base. Controlling-shareholder net income for the last four quarters, from the fourth quarter of 2025 through the third quarter of 2026, totals KRW 24 billion, which contrasts with the 2025 full-year controlling-shareholder net loss. On an annual basis losses persisted through 2025, which limits how earnings-based multiples can be interpreted. The price-to-book ratio sits below 1x, meaning market capitalization is lower than total equity. Against total equity of KRW 133.4 billion at the end of 2025, the debt ratio of 28.7 percent indicates a moderate financial burden. Still, operating cash flow was negative in every year from 2022 to 2025, a gap between asset value and cash generation. Compared with its past trading band, the current multiple reflects a period of wide earnings swings. Against industry averages, the wide variability in earnings also widens the range of reasonable multiples. The company has not shown a dividend payment history."
  },
  "bull": [
   {
    "title": {
-    "ko": "3개 분기 연속 흑자전환",
-    "en": "Three Consecutive Quarters of Profit"
+    "ko": "분기 흑자 전환의 폭",
+    "en": "Scale of the quarterly profit swing"
    },
    "body": {
-    "ko": "2025년 4분기부터 2026년 2분기까지 3개 분기 연속 영업이익 흑자를 기록했으며, 2026년 2분기에는 매출 872억원, 영업이익 280억원으로 분기 기준 최대 실적을 냈다. 이는 만성적 적자 구도에서 벗어난 뚜렷한 변곡점으로 평가할 수 있다. 다만 이 흑자가 일회성 대형 프로젝트 매출 인식에 기인한 것인지, 구조적 개선인지는 추가 분기를 통해 확인이 필요하다.",
-    "en": "The company posted three consecutive quarters of operating profit from Q4 2025 through Q2 2026, with Q2 2026 marking its largest quarterly results on record with 87.2 billion won in revenue and 28.0 billion won in operating profit. This can be viewed as a clear inflection point away from a chronic loss structure. However, whether this profitability stems from one-off large project revenue recognition or structural improvement requires confirmation over additional quarters."
+    "ko": "2026년 2분기 매출은 872억원, 영업이익은 280억원으로 2025년 1분기 영업손실 대비 큰 폭의 개선을 보였다. 최근 네 개 분기 지배주주 순이익 합계는 240억원이다. 이는 수주가 몰렸을 때 손익이 빠르게 개선될 수 있음을 보여 주는 공시 실적이다.",
+    "en": "Second-quarter 2026 revenue reached KRW 87.2 billion with operating profit of KRW 28 billion, a sharp improvement from the operating loss in the first quarter of 2025. Controlling-shareholder net income over the last four quarters totals KRW 24 billion. Reported results show profits can improve quickly when orders concentrate."
    }
   },
   {
    "title": {
-    "ko": "독보적 기술 포지션",
-    "en": "Unique Technology Position"
+    "ko": "중국 OLED 투자 재개",
+    "en": "Resumption of Chinese OLED investment"
    },
    "body": {
-    "ko": "야스는 전 세계에서 유일하게 8세대 이상 증착기와 증발원 모두 양산 성공 경험을 보유한 업체로, LNS 구조 증발원 기술과 정밀 척 기술을 내재화하고 있다. 비전옥스가 마스크 없는 ViP 방식을 검토하는 가운데, 비마스크 증착 경험을 보유한 야스가 새로운 수주 후보로 부각되고 있다. 이러한 기술적 차별성은 신규 투자 사이클에서 경쟁사 대비 진입 기회를 넓혀줄 수 있는 요소다.",
-    "en": "YAS is the only global maker with mass-production success in both 8th-generation-plus deposition systems and evaporation sources, having internalized LNS-structure evaporation source technology and precision chuck technology. As Visionox considers a mask-less ViP method, YAS has emerged as a candidate for new orders given its mask-less deposition experience. This technological differentiation could broaden entry opportunities relative to competitors within new investment cycles."
+    "ko": "업계 보도는 중국 OLED 투자 재개로 장비 수주가 늘고 있다고 전했다. TCL CSOT의 8.6세대 OLED 라인 증착 장비 수주도 보도된 바 있다. 중국 패널 투자가 이어지면 증발원과 증착 장비 수요가 함께 늘어날 여지가 있다.",
+    "en": "Industry reports say renewed Chinese OLED investment is lifting equipment orders. A deposition equipment order for TCL CSOT's 8.6-generation OLED line has also been reported. If Chinese panel investment continues, demand for evaporation sources and deposition systems could rise together."
    }
   },
   {
    "title": {
-    "ko": "8.6세대 투자 사이클 수혜 가능성",
-    "en": "Potential Beneficiary of the 8.6-Generation Investment Cycle"
+    "ko": "자산 기반과 재무 부담",
+    "en": "Asset base and moderate leverage"
    },
    "body": {
-    "ko": "BOE는 이미 중국 청두 8.6세대 라인에서 양산을 시작했고, CSOT도 2026년 초부터 관련 장비 발주를 시작할 계획으로 알려져 있다. 삼성디스플레이 역시 아산에서 8.6세대 IT OLED 라인을 구축 중이다. 글로벌 패널사들의 이러한 투자 확대는 증착 장비 수요 기반을 넓히는 요인으로, 야스와 같은 기존 공급 경험 보유 업체에는 우호적인 환경을 조성할 수 있다.",
-    "en": "BOE has already begun mass production at its 8.6-generation line in Chengdu, China, and CSOT is reportedly planning to begin related equipment orders starting in early 2026. Samsung Display is also building an 8.6-generation IT OLED line in Asan. This expanding investment by global panel makers broadens the demand base for deposition equipment, potentially creating a favorable environment for suppliers with existing track records such as YAS."
+    "ko": "2025년 말 자본총계는 1,334억원이고 부채총계는 383억원이다. 부채비율은 2022년 35.7%에서 2025년 28.7%로 낮아졌다. 재무 여력이 있어 수주 변동기에 운영 부담을 흡수할 수 있는 구조다.",
+    "en": "Total equity was KRW 133.4 billion at the end of 2025 against total liabilities of KRW 38.3 billion. The debt ratio fell from 35.7 percent in 2022 to 28.7 percent in 2025. The balance sheet gives room to absorb operating strain during periods of order volatility."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "핵심 고객사 투자 결정 지연",
-    "en": "Delayed Investment Decision by a Key Customer"
+    "ko": "3분기 순손실 전환",
+    "en": "Return to a net loss in the third quarter"
    },
    "body": {
-    "ko": "LG디스플레이는 8.6세대 OLED 투자에 대해 신중한 입장을 유지하고 있으며, 2026년 1월 CES에서 경영진이 현재 수요는 기존 6세대 설비로도 대응 가능하다는 견해를 밝혔다. 야스의 매출 상당 부분이 LG디스플레이 관련 장비 개조 및 유지보수에서 발생해온 만큼, 신규 투자 결정 지연은 실적 회복의 속도를 제약할 수 있는 요인이다.",
-    "en": "LG Display has maintained a cautious stance on 8.6-generation OLED investment, with management stating at CES in January 2026 that current demand can be met with existing 6th-generation equipment. Since a significant portion of YAS's revenue has come from equipment retrofitting and maintenance related to LG Display, delays in new investment decisions could constrain the pace of the company's earnings recovery."
+    "ko": "2026년 3분기 영업이익은 6.9억원으로 전 분기 대비 97.5% 줄었고, 지배주주 순손실은 124억원이었다. 2분기 흑자가 일시적 수주 매출에 집중된 것인지 확인되지 않았다. 분기 실적이 수주 시점에 따라 크게 흔들린다는 점이 약세 요인이다.",
+    "en": "Third-quarter 2026 operating profit fell to KRW 694 million, down 97.5 percent from the prior quarter, and controlling-shareholder net loss was KRW 12.4 billion. Whether the second-quarter profit was concentrated in one-time order revenue has not been confirmed. Quarterly results swinging sharply with order timing is the main weakness."
    }
   },
   {
    "title": {
-    "ko": "높은 실적 변동성과 누적 손실",
-    "en": "High Earnings Volatility and Accumulated Losses"
+    "ko": "연간 적자와 현금흐름",
+    "en": "Annual losses and negative cash flow"
    },
    "body": {
-    "ko": "2022년부터 2025년까지 4개 연도 연속 영업손실을 기록했고, 영업활동현금흐름도 매년 순유출을 보였다. 분기별로도 매출이 61억원에서 872억원까지 크게 출렁이는 모습을 보여, 특정 분기의 대형 계약 인식 여부에 따라 실적이 급변하는 구조다. 이러한 변동성은 향후 실적 예측의 불확실성을 높이는 요인이다.",
-    "en": "The company posted operating losses for four consecutive years from 2022 through 2025, and operating cash flow was also negative every year. Quarterly revenue has swung sharply from 6.1 billion won to 87.2 billion won, reflecting a structure in which results can shift dramatically depending on whether a large contract is recognized in a given quarter. This volatility raises uncertainty in forecasting future performance."
+    "ko": "2025년 연간 영업손실은 64.6억원으로 4년 연속 적자였다. 영업활동 현금흐름은 2025년 -121억원으로 2022년부터 매년 마이너스였다. 연간 기준으로 흑자가 확인되기 전까지는 현금 창출력이 약세 요인으로 남는다.",
+    "en": "The 2025 operating loss was KRW 6.46 billion, the fourth straight annual loss. Operating cash flow was KRW -12.1 billion in 2025 and negative every year since 2022. Until an annual profit is confirmed, weak cash generation remains a drag."
    }
   },
   {
    "title": {
-    "ko": "경쟁 심화 및 중국 의존 리스크",
-    "en": "Intensifying Competition and China Dependence Risk"
+    "ko": "고객 집중과 패널 투자 지연",
+    "en": "Customer concentration and panel investment delays"
    },
    "body": {
-    "ko": "야스의 경쟁사로는 미국 어플라이드머티리얼즈의 비마스크 방식 eLEAP, 국내 선익시스템, 일본 캐논도키 등이 있어 신규 투자 프로젝트마다 경쟁이 벌어진다. 또한 주요 매출처 중 하나인 BOE, CSOT 등이 중국 기업인 만큼, 중국 내 OLED 투자 환경이나 무역 정책 변화가 실적에 영향을 줄 수 있는 대외 변수로 남아 있다.",
-    "en": "YAS competes against Applied Materials' mask-less eLEAP method, domestic rival Sunic System, and Japan's Canon Tokki, with competition arising around each new investment project. In addition, since major revenue sources such as BOE and CSOT are Chinese companies, changes in China's OLED investment environment or trade policy remain an external variable that could affect performance."
+    "ko": "주요 패널 고객인 중국 BOE와 LG디스플레이의 투자 지연은 과거 수익성 악화의 원인으로 지목됐다. 중국 고객 중심의 수주 구조는 특정 업체의 투자 결정에 실적이 좌우될 수 있음을 뜻한다. 고객 다변화 여부가 확인되지 않은 점이 약세 요인이다.",
+    "en": "Investment delays by major panel customers BOE and LG Display were cited as a cause of past profitability declines. An order book centered on Chinese customers means results can hinge on a few companies' investment decisions. Whether the customer base is diversifying has not been confirmed, which is a weakness."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "수주 의존·매출 인식 리스크",
-    "en": "Order Dependence and Revenue Recognition Risk"
+    "ko": "고객 및 투자 사이클",
+    "en": "Customer and investment cycle"
    },
    "body": {
-    "ko": "대형 장비 계약의 특성상 실적은 특정 분기의 계약 체결과 매출 인식 시점에 크게 좌우된다. 후속 수주가 이어지지 않으면 2026년 2분기와 같은 실적 급증이 재현되기 어려울 수 있으며, 수주 공백기에는 다시 매출과 이익이 크게 줄어들 가능성이 있다.",
-    "en": "Given the nature of large equipment contracts, results are heavily dependent on the timing of contract signing and revenue recognition in a given quarter. Without follow-on orders, a surge in results similar to Q2 2026 may not recur, and revenue and profit could shrink sharply again during any gap in order flow."
+    "ko": "패널 업체의 설비 투자가 줄거나 지연되면 장비 수주가 바로 줄어든다. 과거 BOE와 LG디스플레이의 투자 지연이 실적 악화로 이어진 사례가 있다. 수주 잔고가 특정 고객에 몰려 있는 구조가 이 리스크를 키운다.",
+    "en": "If panel makers cut or delay capital spending, equipment orders fall quickly. Past investment delays by BOE and LG Display fed into weaker results. A backlog concentrated in a few customers magnifies this risk."
    }
   },
   {
    "cat": {
-    "ko": "고객사 투자 지연 리스크",
-    "en": "Customer Investment Delay Risk"
+    "ko": "수주 공시의 단발성",
+    "en": "One-off nature of order disclosures"
    },
    "body": {
-    "ko": "LG디스플레이의 8.6세대 투자 여부가 아직 확정되지 않았고, 기존 매출의 상당 부분이 장비 개조 및 유지보수 부품에서 발생하는 구조다. 주요 고객사의 신규 투자 결정이 지연되거나 축소될 경우, 신규 장비 매출 확대가 계획보다 늦어질 수 있다.",
-    "en": "LG Display's decision on 8.6-generation investment remains unconfirmed, and a significant portion of existing revenue is derived from equipment retrofitting and maintenance parts. If a major customer's new investment decision is delayed or scaled back, the expansion of new equipment revenue could be slower than planned."
+    "ko": "2026년 6월 증발원 계약은 계약 기간이 2026년 11월 6일에 끝났다. 후속 계약이 이어지지 않으면 매출 공백이 생길 수 있다. 3분기 영업이익이 크게 줄어든 점도 수주 시기에 따른 변동성을 보여 준다.",
+    "en": "The June 2026 evaporation source contract reached the end of its period on November 6, 2026. If follow-on contracts do not materialize, a revenue gap could follow. The sharp third-quarter profit decline also shows volatility tied to order timing."
    }
   },
   {
    "cat": {
-    "ko": "기술 표준 전환 및 경쟁 리스크",
-    "en": "Technology Standard Shift and Competition Risk"
+    "ko": "수익성과 자금 조달",
+    "en": "Profitability and funding"
    },
    "body": {
-    "ko": "패널사들이 FMM 방식과 ViP, 잉크젯 프린팅 등 서로 다른 증착·화소 형성 방식을 검토하고 있어, 특정 기술 표준이 채택되는 방향에 따라 장비업체별 수혜 정도가 달라질 수 있다. 야스가 강점을 가진 방식이 시장에서 채택되지 않을 경우 경쟁사에 수주를 내줄 가능성도 존재한다.",
-    "en": "Panel makers are considering different deposition and pixel-formation methods including FMM, ViP, and inkjet printing, meaning the degree to which each equipment maker benefits could vary depending on which technology standard is adopted. If the method in which YAS holds strength is not adopted by the market, there is a possibility that orders could go to competitors instead."
+    "ko": "영업이익률은 2024년 -33.7%에서 2025년 -18.6%로 개선됐으나 여전히 손실 구간이다. 영업활동 현금흐름의 누적 마이너스는 운전자금이나 설비 투자 부담이 커질 경우 재무 여력을 줄일 수 있다. 이익 체력이 연간 단위로 확인되기 전까지 이 리스크는 남아 있다.",
+    "en": "The operating margin improved from -33.7 percent in 2024 to -18.6 percent in 2025 but remains negative. Cumulative negative operating cash flow could erode financial flexibility if working capital or capital spending needs grow. The risk persists until annual profitability is confirmed."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 10월 말~11월 초",
-    "en": "Late October to Early November 2026"
+    "ko": "2026년 11월 이후 (수시 공시)",
+    "en": "After November 2026 (ad hoc disclosures)"
    },
    "what": {
-    "ko": "2026년 3분기 잠정 실적 공시를 통해 2분기의 대규모 흑자가 지속되는지, 아니면 특정 분기에 집중된 일시적 현상이었는지 확인할 필요가 있다.",
-    "en": "The Q3 2026 preliminary earnings disclosure will show whether the large Q2 profit continues or was a one-time phenomenon concentrated in a single quarter."
+    "ko": "2026년 6월 증발원 계약의 기간 종료 이후 후속 단일판매·공급계약 공시가 나오는지 확인한다. 수주 공시의 연속성이 다음 분기 매출의 가시성을 가른다.",
+    "en": "Check whether follow-on single-sale supply contract disclosures appear after the June 2026 evaporation source contract ended. Continuity of order disclosures will shape visibility on next-quarter revenue."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 중",
-    "en": "During the Second Half of 2026"
+    "ko": "2027년 3월 말 (사업보고서 제출 기한)",
+    "en": "End of March 2027 (annual report filing deadline)"
    },
    "what": {
-    "ko": "비전옥스의 8.6세대 IT OLED 라인 장비 공급사 선정 결과를 확인해, 야스가 실제로 수주에 성공하는지 지켜볼 필요가 있다.",
-    "en": "Watch for the outcome of Visionox's supplier selection for its 8.6-generation IT OLED line equipment to see whether YAS actually secures an order."
+    "ko": "2026년 4분기 실적과 연간 영업이익, 영업활동 현금흐름이 확정된다. 2025년까지 이어진 연간 적자가 2026년에 끝났는지가 핵심 확인 지점이다.",
+    "en": "Fourth-quarter 2026 results and full-year operating profit and operating cash flow will be confirmed. The key check is whether the annual losses that ran through 2025 ended in 2026."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기~2027년 초",
-    "en": "Second Half of 2026 to Early 2027"
+    "ko": "2027년 5월 중순 (2027년 1분기 분기보고서 제출 기한)",
+    "en": "Mid-May 2027 (Q1 2027 quarterly report deadline)"
    },
    "what": {
-    "ko": "LG디스플레이의 8.6세대 OLED 투자 여부에 대한 공식 결정이 나올 경우, 그 규모와 시점이 야스의 국내향 수주 전망에 영향을 줄 수 있다.",
-    "en": "If LG Display makes an official decision on 8.6-generation OLED investment, its scale and timing could affect YAS's domestic order outlook."
+    "ko": "2026년 3분기 영업이익이 크게 줄어든 뒤 수주 매출이 평탄해졌는지 확인한다. 분기 영업이익률이 흑자 구간을 유지하는지가 판단 기준이다.",
+    "en": "Check whether order-based revenue levelled out after the sharp third-quarter 2026 profit decline. Whether the quarterly operating margin holds in positive territory is the benchmark."
    }
   },
   {
    "when": {
-    "ko": "2026년 5월 체결 LG디스플레이 계약의 인도 기한인 2027년 3월 3일까지",
-    "en": "Through the March 3, 2027 Delivery Deadline of the May 2026 LG Display Contract"
+    "ko": "2027년 상반기 (시점 미정, 회사 공시 기준)",
+    "en": "First half of 2027 (timing not set, per company disclosures)"
    },
    "what": {
-    "ko": "2026년 5월 체결한 68억원 규모 LG디스플레이향 설비 공급 계약의 납품·검사 진행 상황과 후속 계약 체결 여부를 확인할 필요가 있다.",
-    "en": "Monitor the delivery and inspection progress of the 6.8 billion won equipment supply contract signed with LG Display in May 2026, as well as whether any follow-on contracts are signed."
+    "ko": "파주 팹4 · 팹5 증설과 가동 일정이 공시로 구체화되는지 확인한다. 증설 완료 시점이 생산 능력과 매출 상한을 바꾼다.",
+    "en": "Check whether the Paju Fab4 and Fab5 expansion and start-up schedules become concrete in company disclosures. Completion timing changes production capacity and the revenue ceiling."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "야스는 2022년부터 2025년까지 4개 연도 연속 영업손실을 기록한 이후, 2025년 4분기부터 2026년 2분기까지 3개 분기 연속 흑자전환에 성공하며 뚜렷한 실적 변곡점을 만들었다. 특히 2026년 2분기에는 매출 872억원, 영업이익 280억원으로 분기 기준 최대 실적을 기록했으나, 이는 특정 대형 계약의 매출 인식이 집중된 결과일 가능성이 높아 지속성 여부는 아직 검증되지 않았다. 회사는 전 세계에서 유일하게 8세대 이상 증착기와 증발원 모두 양산 성공 경험을 보유한 기술적 강점을 바탕으로, BOE·CSOT·삼성디스플레이 등의 8.6세대 OLED 투자 확대와 비전옥스의 비마스크 방식 검토라는 우호적인 산업 환경에 놓여 있다. 반면 핵심 고객사인 LG디스플레이의 8.6세대 투자 결정이 아직 이뤄지지 않았고, 과거 4년간 누적된 손실과 현금흐름 부진, 분기별 실적의 극단적인 변동성은 여전히 부담 요인으로 남아 있다. 밸류에이션 측면에서는 이익 회복을 반영해 주가수익배수가 계산 가능한 수준으로 낮아졌고 주가순자산비율은 순자산 대비 할인된 구간에서 거래되고 있으나, 이 수치들이 특정 분기 실적에 크게 의존한다는 점은 유의할 필요가 있다. 향후 분기별 실적 발표와 CSOT·비전옥스·LG디스플레이 관련 수주 소식을 통해 이번 흑자전환이 구조적 개선인지 확인하는 과정이 중요할 것으로 보인다.",
-   "en": "After four consecutive years of operating losses from 2022 through 2025, YAS achieved a clear earnings inflection point, posting three consecutive quarters of operating profit from Q4 2025 through Q2 2026. In particular, Q2 2026 marked the company's largest quarterly results on record with 87.2 billion won in revenue and 28.0 billion won in operating profit, though this is likely the result of concentrated revenue recognition from a specific large contract, meaning its durability has not yet been verified. The company benefits from a favorable industry backdrop, being the only global maker with mass-production success in both 8th-generation-plus deposition systems and evaporation sources, amid expanding 8.6-generation OLED investment by BOE, CSOT, and Samsung Display, and Visionox's consideration of a mask-less deposition method. On the other hand, a decision on 8.6-generation investment by key customer LG Display has not yet been made, and four years of accumulated losses, weak cash flow, and extreme quarter-to-quarter earnings volatility remain burdens. In terms of valuation, the price-to-earnings multiple has fallen to a computable level reflecting the profit recovery, and the price-to-book ratio trades at a discount to net asset value, though it should be noted that these figures are heavily dependent on results from a specific quarter. Going forward, tracking quarterly earnings releases and order news related to CSOT, Visionox, and LG Display will be important in confirming whether this turnaround represents a structural improvement."
+   "ko": "야스는 OLED 증착 장비를 제조하며 8세대 이상 증착기와 증착원을 모두 양산한 이력을 갖고 있다. 공시 실적으로 보면 2025년까지 연간 적자가 이어졌지만, 2026년 2분기에는 영업이익 280억원으로 흑자 전환했다. 같은 해 3분기에는 매출 403억원에도 영업이익 6.9억원, 지배주주 순손실 124억원으로 돌아섰다. 실적의 방향은 중국 OLED 투자와 개별 수주 공시에 크게 좌우되는 구조다. 강세 요인으로는 분기 흑자 폭, 중국 투자 재개 보도, 자본총계 기반이 꼽히고, 약세 요인으로는 연간 적자와 마이너스 영업현금흐름, 고객 집중, 3분기 실적 급변이 꼽힌다. 밸류에이션은 주가순자산비율이 1배를 밑도는 구간이지만 연간 이익이 확인되지 않아 이익 기반 배수 해석은 제약이 있다. 다음 확인 지점은 후속 수주 공시, 2026년 사업보고서의 연간 영업이익과 영업현금흐름, 2027년 1분기 분기보고서다. 이 리포트는 투자 의견과 목표주가를 제시하지 않으며 정보 제공을 목적으로 한다.",
+   "en": "YAS manufactures OLED deposition equipment and has mass-production experience in both 8th-generation-and-above deposition systems and evaporation sources. On a reported basis, annual losses continued through 2025, but the second quarter of 2026 swung to operating profit of KRW 28 billion. In the third quarter, revenue of KRW 40.3 billion coincided with operating profit of KRW 694 million and a controlling-shareholder net loss of KRW 12.4 billion. Earnings direction depends heavily on Chinese OLED investment and on individual order disclosures. Strengths include the size of the quarterly profit swing, reports of resumed Chinese investment, and an equity base of KRW 133.4 billion at the end of 2025. Weaknesses include annual losses, negative operating cash flow, customer concentration and the sharp third-quarter swing. The valuation sits with the price-to-book ratio below 1x, but without confirmed annual profits, earnings-based multiples are hard to interpret. The next checkpoints are follow-on order disclosures, operating profit and operating cash flow in the 2026 annual report, and the first-quarter 2027 report. This report does not present an investment opinion or target price and is provided for information only."
   }
  },
  "sources": [
-  "https://www.hanaw.com/download/research/FileServer/WEB/info/small_cap/2026/01/06/260107_YAS_F.pdf",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A255440",
-  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=669081",
+  "https://www.thelec.kr/news/articleView.html?idxno=55705",
   "https://www.valueline.co.kr/finance/summary/255440",
   "https://clever-insight.vip/stock/255440/report/",
-  "https://m.irgo.co.kr/IR-COMP/255440/%EC%95%BC%EC%8A%A4-IR-ROOM",
-  "https://alphasquare.co.kr/home/stock-summary?code=255440",
   "https://www.digitaltoday.co.kr/news/articleView.html?idxno=688392",
+  "https://www.butler.works/ko/companies/00875307",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=255440&cn=",
   "https://www.digitaltoday.co.kr/news/articleView.html?idxno=688123",
-  "https://www.cbci.co.kr/news/articleView.html?idxno=593272",
+  "https://www.hanaw.com/download/research/FileServer/WEB/info/small_cap/2026/01/06/260107_YAS_F.pdf",
+  "https://m.news.nate.com/view/20260227n31177",
+  "https://www.thinkpool.com/item/255440/news/16610467",
+  "https://m.news.nate.com/view/20260615n29645",
+  "https://www.vegannews.co.kr/news/article.html?no=406491",
   "https://www.datatooza.com/article/20260730145315195552ef347fde_80",
-  "https://kr.investing.com/news/transcripts/article-93CH-2082096",
-  "https://www.investing.com/equities/yas-co-income-statement",
   "https://arca.live/b/stock/178441619?p=2",
-  "https://m.thinkpool.com/item/255440",
-  "https://finance.yahoo.com/quote/255440.KQ/",
-  "https://portfolio.ezinit.com/community/stock_analysis/2068",
-  "https://www.stockplus.com/m/stocks/KOREA-A255440"
+  "https://www.investing.com/equities/yas-co",
+  "https://www.cbci.co.kr/news/articleView.html?idxno=593272"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "255440",
  "name": "야스",
  "name_en": "YAS Co., Ltd",
@@ -223,11 +221,11 @@
   "기계·장비"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 18:02",
- "dataDate": "20260904",
+ "reportDate": "2026-11-18",
+ "reportTs": "2026-11-18 07:07",
+ "dataDate": "20261117",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-11-17",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -238,6 +236,7 @@
     "np_owner": -5509591896,
     "equity": 133380862875,
     "equity_owner": 133380862875,
+    "equity_nci": null,
     "liab": 38287350928,
     "cfo": -12094293947,
     "eps_basic": -460,
@@ -253,6 +252,7 @@
     "np_owner": -9987721799,
     "equity": 137355569495,
     "equity_owner": 137355569495,
+    "equity_nci": null,
     "liab": 37816610253,
     "cfo": -8590619980,
     "eps_basic": -797,
@@ -268,6 +268,7 @@
     "np_owner": -3404980245,
     "equity": 155175900745,
     "equity_owner": 155082989281,
+    "equity_nci": 92911464,
     "liab": 48275050937,
     "cfo": -11638361041,
     "eps_basic": -264,
@@ -283,6 +284,7 @@
     "np_owner": -845462189,
     "equity": 159665774361,
     "equity_owner": 159089407493,
+    "equity_nci": 576366868,
     "liab": 57075049639,
     "cfo": -3772094538,
     "eps_basic": -97,
@@ -292,12 +294,6 @@
    }
   ],
   "quarterly": [
-   {
-    "q": "2025Q2",
-    "rev": 6147532917,
-    "op": -4168392951,
-    "np_owner": -3692846402
-   },
    {
     "q": "2025Q3",
     "rev": 10638439874,
@@ -321,27 +317,36 @@
     "rev": 87220392857,
     "op": 28015616952,
     "np_owner": 28398333929
+   },
+   {
+    "q": "2026Q3",
+    "rev": 40327419164,
+    "op": 693997157,
+    "np_owner": -12395973584
    }
   ],
   "valuation": {
-   "price": 7170,
-   "mcap": 0.0936,
+   "price": 7190,
+   "mcap": 0.0939,
    "shares": 13058000,
    "total_shares": 13058000,
-   "wavg_shares": 11926956,
-   "per": 2.298,
-   "eps": 3120,
-   "pbr": 0.5105,
-   "bps": 14044,
-   "roe_ttm": 25.2,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": 37255882256,
+   "wavg_shares": 11931407,
+   "per": 3.57,
+   "eps": 2014,
+   "pbr": 0.5531,
+   "bps": 13000,
+   "roe_ttm": 17.0,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": 24040136339,
    "ccy": "KRW",
-   "pbr_krx": 0.66,
+   "bps_src": "자체",
+   "eps_src": "공시",
+   "pbr_krx": 0.65,
    "bps_krx": 11182.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
    "div": 0.0
   }
- }
+ },
+ "textRules": 2
 }

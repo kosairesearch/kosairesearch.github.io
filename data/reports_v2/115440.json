@@ -1,220 +1,219 @@
 {
  "title": {
-  "ko": "우리넷, 실적 변동성 속 양자보안 기대감",
-  "en": "Woori Net: Earnings Volatility Meets Quantum Security Hopes"
+  "ko": "전송장비 1위, 적자 전환 뒤 회복 검증 단계",
+  "en": "Leading PTN Supplier Still Verifying Earnings Recovery"
  },
  "lead": {
-  "ko": "국방 프로젝트 기저효과로 2025년 실적이 크게 흔들린 우리넷은 5G-SA 전환과 양자암호 정책 수혜 기대 속에서 2026년 2분기 다시 영업이익 흑자를 기록했다.",
-  "en": "Having seen 2025 results swing sharply on the base effect from a large defense project, Woori Net returned to an operating profit in the second quarter of 2026 amid expectations tied to 5G standalone network transition and quantum security policy."
+  "ko": "우리넷은 국내 전송장비(PTN) 점유율 1위 업체이지만, 2025년 이익이 급감한 뒤 2026년 분기 손익이 흔들리며 이익 회복의 지속성을 검증하는 단계에 있다.",
+  "en": "Woori-Net is a leading domestic PTN transport equipment supplier, but after a steep 2025 profit decline its 2026 quarterly results have swung, so the durability of the recovery is still being verified."
  },
  "keypoints": [
   {
-   "ko": "2025년 매출은 국방광대역통합망 프로젝트 기저효과로 전년 대비 크게 감소했고, 2026년 1분기에는 다시 큰 영업손실을 기록했다.",
-   "en": "2025 revenue fell sharply on the base effect from a large defense broadband network project, and the company posted another large operating loss in Q1 2026."
+   "ko": "2024년 영업이익 201억원이 최고점이었고 2025년에는 19.5억원으로 90.3% 감소했다. 매출도 755억원으로 전년 대비 42.6% 줄었다.",
+   "en": "Operating profit peaked at KRW 20.1 billion in 2024 and fell to KRW 1.95 billion in 2025, a 90.3% decline. Revenue dropped 42.6% year on year to KRW 75.5 billion."
   },
   {
-   "ko": "2026년 2분기 매출 224억원, 영업이익 5.0억원으로 흑자 전환했지만 최근 4개 분기 합산으로는 지배주주 순손실 상태다.",
-   "en": "Q2 2026 revenue reached KRW 22.4 billion with a small operating profit of KRW 0.5 billion, but the trailing four-quarter window still shows a net loss attributable to owners."
+   "ko": "2026년 상반기 매출은 전년 동기 대비 15.1% 감소했고 영업이익과 당기순이익이 적자로 전환했다.",
+   "en": "First-half 2026 revenue declined 15.1% year on year, and both operating profit and net income turned to losses, according to a Wisereport summary."
   },
   {
-   "ko": "주력 제품인 패킷-광전송장치(PTN)에서 국내 점유율 1위를 유지 중이며, 5G 단독모드(SA) 전환에 따른 백본망 교체 수요가 성장 동력으로 거론된다.",
-   "en": "The company maintains the domestic top share in its core packet optical transport (PTN) product line, with backbone network replacement demand tied to 5G standalone (SA) transition cited as a growth driver."
+   "ko": "최근 4개 분기 지배주주 순손실 합계는 20.9억원이며, 2026년 3분기 영업이익은 3,878만원으로 전년 동기 대비 91.8% 줄었다.",
+   "en": "The attributable net loss over the last four quarters totals KRW 2.09 billion, and third-quarter 2026 operating profit was KRW 38.78 million, down 91.8% year on year."
   },
   {
-   "ko": "QKD·QKMS·QENC·PQC 등 양자보안 전 영역을 자체 개발한 유일한 전송장비 기업으로 꼽히며, 양자기술산업법 개정에 따른 공공부문 양자보안 의무화가 정책 수혜 요인으로 언급된다.",
-   "en": "The company is cited as the only transmission equipment maker that has developed the full range of quantum security technologies (QKD, QKMS, QENC, PQC) in-house, with the amended Quantum Technology Industry Act mandating public-sector quantum security adoption seen as a policy tailwind."
+   "ko": "5G 단독모드 투자와 피지컬 AI에 따른 트래픽 증가가 전송망 교체 수요의 근거로 증권사 리포트에 제시되어 있다.",
+   "en": "Brokerage reports cite 5G standalone investment and physical AI traffic growth as grounds for demand for transport network replacement."
   },
   {
-   "ko": "매출 인식이 통신사 BMT 이후 계약 확정 구조여서 통상적인 수주잔고 개념이 없고, 대형 프로젝트 유무에 따라 실적 변동성이 크다.",
-   "en": "Because revenue is recognized only after telecom operator benchmarking tests and contracts are finalized at that point, there is no conventional order-backlog concept, and results swing significantly depending on the presence of large one-off projects."
+   "ko": "회사는 콘텐츠 사업을 중단하고 방산 IT와 양자암호 쪽으로 사업 축을 옮기는 중이며, 2025년 말 부채비율은 35.0%다.",
+   "en": "The company has exited its content business and is shifting toward defense IT and quantum cryptography, and its debt ratio stood at 35.0% at the end of 2025."
   }
  ],
  "business": {
-  "ko": "우리넷은 2000년 1월 삼성전자 네트워크 부문 출신 연구원들이 주축이 되어 설립된 통신장비 전문기업으로, 주요 사업은 전송사업(POTN, 패킷-광전송장치·Access Gateway·셀룰러-IoT 등)이며 그 밖에 OLED 디스플레이 유기물소재 사업을 영위한다. 2025년 사업보고서 기준 주요 제품 매출 비율은 MSPP(PTN 등) 제품군이 32.0%, 셀룰러-IoT 제품군이 16.1%, AGW 제품군이 7.3%를 차지한다. 판매는 KT·LG유플러스·SK그룹 등 통신 3사와 한국철도시설공단, 도로공사, 한전, 자가망사업자 등 공공·인프라 부문을 대상으로 하며, 지방자치단체·경찰청·소방서 등에는 시스템통합(SI) 업체를 통한 간접 공급도 이뤄진다. OLED 소재는 중국 디스플레이 업체에 납품되고 있어 국내 통신장비 사업과는 별도의 사업 축을 형성한다. 경쟁 구도에서 우리넷은 지난해 전송망 장비(PTN) 시장 점유율 1위를 유지한 것으로 거론되며, 국내 광전송 시장에는 코위버 등 경쟁사가 존재해 세부 제품군별로 점유율 구도가 나뉜다. 신성장 축으로는 양자암호기술을 꼽을 수 있는데, 회사는 QKD(양자키분배)·QKMS(양자키관리)·QENC(양자암호화장치)·PQC(양자내성암호)까지 양자보안 전 영역의 장비를 자체 개발해 공급할 수 있는 역량을 갖춘 유일한 전송장비 기업으로 소개된다. 매출 인식 구조상 주요 고객사인 통신 3사와의 계약은 BMT(사전 시험) 통과 후 매출 발생 시점에 확정되는 경우가 많아 통상적인 수주 개념이 적용되지 않으며, 다품종 연간 단가계약 방식이어서 개별 계약금액이 사전에 확정되지 않는 특성이 있다. 이런 구조는 특정 대형 프로젝트(예: 국방광대역통합망)의 유무가 연간 실적에 큰 영향을 미치는 배경이 된다.",
-  "en": "Woori Net is a telecom equipment specialist founded in January 2000 by researchers who came from Samsung Electronics' network division, with its core business being transmission equipment (POTN, packet-optical transport devices, access gateways, cellular-IoT) alongside an OLED display organic materials business. According to the 2025 annual report, the MSPP (PTN and related) product group accounted for 32.0% of revenue, the cellular-IoT product group 16.1%, and the access gateway (AGW) product group 7.3%. Sales are directed at the three major telecom operators (KT, LG Uplus, SK Group) as well as public infrastructure entities such as the Korea National Railway, the Korea Expressway Corporation, KEPCO, and private network operators, with indirect supply to local governments, police, and fire authorities via system integrators. OLED materials are supplied to Chinese display makers, forming a separate business line from the domestic telecom equipment operation. In terms of competitive positioning, Woori Net is cited as having held the number one domestic market share in packet transport network (PTN) equipment last year, though rivals such as Kowiber exist in the broader optical transport market with share divided by specific product segment. A key growth pillar is quantum encryption, where the company is described as the only transmission equipment maker with in-house capability across the full range of quantum security technologies -- QKD (quantum key distribution), QKMS (quantum key management), QENC (quantum encryption devices), and PQC (post-quantum cryptography). Because revenue with major telecom customers is often finalized only after passing benchmarking tests (BMT) at the point revenue occurs, a conventional order-backlog concept does not apply, and multi-product annual unit-price contracts mean individual contract values are not fixed in advance. This structure is a key reason why the presence or absence of specific large projects, such as the defense broadband integrated network, has an outsized effect on annual results."
+  "ko": "우리넷은 광 기반 패킷 전송망 장비(PTN)를 주력으로 하는 통신장비 제조 기업이다. 2025년 2월 하나증권 리포트 기준으로 송장비가 56.5%, 엑세스게이트웨이 6.2%, 셀룰러 IoT 7.6%, 용역 매출 11.4%, 기타 상품 매출 9.2%로 구성돼 있었다. 2026년 2분기 매출을 다른 기준으로 집계한 자료는 통신장비·IoT모듈 72%, 설치 및 유지보수 16%, 상품 12%로 나뉘어 있어 두 자료의 비중은 직접 비교할 수 없다. 회사는 콘텐츠 사업부문을 중단한 뒤 방산 IT 시장 진출을 추진 중이며, 테라급 POTN과 양자암호 기술을 국방망에 맞춘다는 계획을 밝혔다. 대표 고객은 KT와 국방 발주처다. 2023년 7월 KT와 체결한 799억원 규모의 차기 국방광대역 통합망 장비 구축 사업이 실적의 큰 축이었다. 2024년 8월에는 10년간 총 436억원 규모의 유지보수 계약이 추가됐다. 금융권과 공공기관으로 수주처를 넓히는 계획도 함께 제시됐다. 국내 PTN 시장에서는 지난해 전송망 장비(PTN) 시장 점유율 1위를 수성한 것으로 보도됐다. 통신 3사와 비교하면 매출 규모가 작고, 장비 공급과 유지보수·용역 매출이 섞여 있어 프로젝트 시점에 따라 분기 실적 변동이 크다.",
+  "en": "Woori-Net is a telecom equipment maker whose core product is packet transport network (PTN) equipment for optical networks. A February 2025 Hanaw Investment & Securities report showed the product mix as transport equipment 56.5%, access gateways 6.2%, cellular IoT 7.6%, services 11.4% and other merchandise 9.2%. A different classification of second-quarter 2026 sales shows telecom equipment and IoT modules at 72%, installation and maintenance at 16%, and merchandise at 12%, so the two splits cannot be compared directly. The company has exited its content business and is pursuing entry into the defense IT market, with plans to tailor its tera-class POTN and quantum cryptography technology to defense networks. Its key customers are KT and defense procurement agencies. A KRW 79.9 billion next-generation defense broadband network equipment contract with KT, signed in July 2023, formed a large part of its earnings base. A ten-year maintenance contract worth KRW 43.6 billion was added in August 2024. The company also plans to widen its customer base to financial institutions and public agencies. Media reports said it held the number one share of the domestic PTN market last year. Compared with the three major telecom operators its revenue scale is small, and because it combines equipment supply with maintenance and services, quarterly results swing with project timing."
  },
  "earnings": {
-  "ko": "2025년 연결 매출액은 755.1억원으로 전년(1,315.9억원) 대비 크게 줄었는데, 이는 2023년 7월~2024년 9월 수행된 차기 국방광대역 통합망 관련 장비구축사업 매출 약 799억원 중 상당액이 전년도 상반기에 집중 인식된 기저효과 때문이다. 이에 따라 영업이익은 2024년 200.7억원(영업이익률 15.2%)에서 2025년 19.5억원(영업이익률 2.6%)으로 급감했고, 지배주주 순이익도 203.8억원에서 36.7억원으로 축소됐다. 분기별로 보면 2025년 2분기까지는 250.7억원의 매출과 27.2억원의 영업이익을 기록하며 국방 프로젝트 효과가 일부 남아 있었으나, 2025년 3분기(175.2억원, 영업이익 4.7억원)와 4분기(177.3억원, 영업손실 3.1억원)로 넘어가면서 프로젝트 종료에 따른 매출 공백이 뚜렷해졌다. 2026년 1분기에는 매출 117.6억원, 영업손실 39.9억원, 지배주주순손실 33.3억원을 기록하며 계절적 비수기와 발주 지연이 겹친 모습을 보였고, 2026년 2분기에는 매출 224.2억원, 영업이익 5.0억원, 지배주주순이익 9.0억원으로 다시 흑자 전환했다. 최근 네 개 분기(2025년 3분기~2026년 2분기)를 합산하면 매출은 약 694억원 수준이나, 1분기의 큰 손실 영향으로 지배주주 기준 순손실이 발생한 구간이다. 과거 연간 실적을 보면 2022년에는 매출 622.7억원에 영업손실 69.5억원으로 적자를 기록했으나, 2023년 매출 1,190.7억원·영업이익 84.8억원으로 흑자 전환했고 2024년에는 국방 프로젝트 효과로 매출·이익 모두 최대치를 경신한 바 있어, 대형 프로젝트 유무에 따른 실적 진폭이 반복되는 패턴을 보여준다. 2025년 현금흐름(영업활동현금흐름 166.4억원)은 순이익 대비 양호했던 반면, 2023년에는 영업활동현금흐름이 -148.3억원으로 순이익과 큰 괴리를 보인 해도 있었다.",
-  "en": "Consolidated revenue for 2025 was KRW 75.5 billion, down sharply from KRW 131.6 billion in 2024, reflecting the base effect from a large share of roughly KRW 79.9 billion in revenue from the defense broadband integrated network equipment project (executed July 2023 to September 2024) being concentrated in the prior year's first half. Operating profit accordingly fell from KRW 20.1 billion (operating margin 15.2%) in 2024 to KRW 1.9 billion (operating margin 2.6%) in 2025, and net income attributable to owners shrank from KRW 20.4 billion to KRW 3.7 billion. On a quarterly basis, through Q2 2025 the company still posted revenue of KRW 25.1 billion and operating profit of KRW 2.7 billion, retaining some residual defense-project benefit, but by Q3 2025 (KRW 17.5 billion revenue, KRW 0.5 billion operating profit) and Q4 2025 (KRW 17.7 billion revenue, KRW 0.3 billion operating loss) the revenue gap left by the project's conclusion became more evident. Q1 2026 saw revenue of KRW 11.8 billion, an operating loss of KRW 4.0 billion, and a net loss attributable to owners of KRW 3.3 billion, reflecting a combination of seasonal weakness and order timing delays, before Q2 2026 turned positive again with revenue of KRW 22.4 billion, operating profit of KRW 0.5 billion, and net income attributable to owners of KRW 0.9 billion. Summing the trailing four quarters (Q3 2025 through Q2 2026), revenue totals roughly KRW 69.4 billion, but the large Q1 loss left the period with a net loss attributable to owners. Looking further back, 2022 revenue was KRW 62.3 billion with an operating loss of KRW 6.9 billion, before the company turned profitable in 2023 with revenue of KRW 119.1 billion and operating profit of KRW 8.5 billion, and then posted record revenue and profit in 2024 on the defense project effect -- a pattern that shows results swinging repeatedly depending on the presence of large projects. Operating cash flow in 2025 (KRW 16.6 billion) was solid relative to net income, whereas in 2023 operating cash flow was negative KRW 14.8 billion, a year showing a large divergence from reported net income."
+  "ko": "연간 실적은 2022년 매출 623억원, 영업손실 69.5억원에서 출발했다. 2023년에는 매출 1,191억원(전년 대비 91.2% 증가)과 영업이익 84.8억원으로 전년 대비 흑자 전환했다. 2024년에는 매출 1,316억원(전년 대비 10.5% 증가)과 영업이익 201억원(전년 대비 136.6% 증가)을 기록해 2022~2025년 중 가장 큰 해가 됐다. 영업이익률은 2022년 -11.2%, 2023년 7.1%, 2024년 15.2%로 올라갔다. 2025년에는 매출 755억원(전년 대비 42.6% 감소), 영업이익 19.5억원(전년 대비 90.3% 감소), 지배주주 순이익 36.7억원(전년 대비 82.0% 감소)으로 줄었고 영업이익률은 2.6%였다. 2024년 실적의 바탕은 2023년 정식 공급 계약을 맺은 국방망 구축 프로젝트였다. 2025년에는 작년 700억원대 국방부 프로젝트를 수주한 데 따른 기저효과로 전년 대비 매출과 이익이 감소하는 양상이 나타났다. 영업활동 현금흐름은 2022년 -105억원, 2023년 -148억원에서 2024년 430억원, 2025년 166억원으로 전환됐다. 분기로 보면 2025년 3분기 영업이익 4.7억원에서 4분기 영업손실 3.1억원(전 분기 대비 적자 전환)으로 바뀌었고, 2026년 1분기에는 영업손실 39.9억원과 지배주주 순손실 33.3억원으로 손실이 커졌다. 2026년 2분기에는 매출 224억원(전 분기 대비 90.6% 증가)과 영업이익 5억원으로 흑자 전환했으나, 3분기에는 매출 199억원(전 분기 대비 11.5% 감소)에 영업이익 3,878만원으로 줄었다. 3분기 지배주주 순손실은 1억원으로 적자 전환이다. 2025년 말 부채비율은 35.0%로 2022년 88.0%에서 낮아졌고 자본총계는 999억원이다. 분기 이익이 한 자릿수 억원 수준에서 크게 흔들리고 있어 일회성 프로젝트 손익의 비중을 다음 정기보고서에서 확인하는 것이 필요하다.",
+  "en": "Annual results started from revenue of KRW 62.3 billion and an operating loss of KRW 6.95 billion in 2022. In 2023 revenue rose to KRW 119.1 billion, up 91.2%, and operating profit of KRW 8.48 billion marked a turn to profit. In 2024 revenue reached KRW 131.6 billion, up 10.5%, and operating profit reached KRW 20.1 billion, up 136.6%, making 2024 the largest year of 2022 to 2025. The operating margin moved from -11.2% in 2022 to 7.1% in 2023 and 15.2% in 2024. In 2025 revenue fell 42.6% to KRW 75.5 billion, operating profit fell 90.3% to KRW 1.95 billion, and attributable net income fell 82.0% to KRW 3.67 billion, leaving an operating margin of 2.6%. The 2024 result rested on the defense network project contracted in 2023. The 2025 decline reflected a base effect from a defense ministry project of over KRW 70 billion won in the prior year, as Hanaw noted in July 2025. Operating cash flow went from KRW -10.5 billion in 2022 and KRW -14.8 billion in 2023 to KRW 43 billion in 2024 and KRW 16.6 billion in 2025. Quarterly, operating profit of KRW 473 million in the third quarter of 2025 turned into an operating loss of KRW 314 million in the fourth quarter. The first quarter of 2026 posted an operating loss of KRW 3.99 billion and an attributable net loss of KRW 3.33 billion. The second quarter returned to operating profit of KRW 505 million on revenue of KRW 22.4 billion, but the third quarter revenue of KRW 19.9 billion produced operating profit of KRW 38.78 million. Third-quarter attributable net loss of KRW 102 million marked a return to a loss. The debt ratio fell from 88.0% in 2022 to 35.0% at the end of 2025, and total equity was KRW 99.9 billion. Quarterly profit has swung sharply, so the share of one-off project gains should be checked in the next periodic report."
  },
  "industry": {
-  "ko": "국내 전송망 장비 시장은 5G 단독모드(SA) 전환과 물리적 AI(자율주행·휴머노이드 등)로 인한 트래픽 증가가 핵심 수급 변수로 부각되고 있다. 하나증권 김홍식 연구원은 대규모 신규 전송장비 도입은 물론, 장비 부하 증가에 따른 교체 주기 단축과 고사양화로 인한 단가 인상이 예상된다고 분석했다. 정부 주도의 5G SA 망 전환은 기존 LTE 코어를 5G 전용 코어로 교체하는 과정에서 백본망 전송장비에 대한 신규 구축 수요를 유발하는 요인으로 지목된다. 여기에 더해 정부는 양자 과학기술산업법 개정을 통해 정부·지방자치단체·공공기관에 양자내성암호(PQC)와 양자키분배(QKD) 등 양자보안기술 확보·적용 계획을 의무화했으며, 지원 범위도 연구개발에서 산업화·공급망·보안·국방으로 확대했다. 한국지능정보사회진흥원과 과학기술정보통신부가 발간한 백서는 글로벌 양자암호통신 시장이 연평균 39.8%씩 성장해 2030년 약 24조 5,793억원 규모에 달할 것으로 전망했으며, 정부는 2028년까지 국가 핵심망 양자암호통신 구축, 2030년 위성 양자암호통신 개발을 로드맵으로 제시했다. 경쟁 구도에서는 SK텔레콤과 KT가 자체 QKD 기술을 고도화하며 코위버·우리넷 등 국내 장비사에 기술을 이전해 공급망을 구축하는 방식을 취하고 있어, 우리넷을 비롯한 중소형 장비주들이 통신사 주도 양자보안 밸류체인의 한 축으로 자리잡고 있다. 한편 광통신·통신장비 테마 전반은 2026년 상반기 들어 미국 빅테크의 실리콘 포토닉스·데이터센터 투자 확대 기대감과 연동돼 단기 수급이 요동치는 모습을 보였는데, 자본시장연구원의 한 선임연구위원은 산업의 장기 전망을 긍정적으로 평가하면서도 실적 연결고리가 부족한 기업들은 단순 테마주로 그칠 수 있다고 지적한 바 있다.",
-  "en": "In the domestic transmission equipment market, the transition to 5G standalone (SA) mode and traffic growth driven by physical AI applications such as autonomous vehicles and humanoid robots have emerged as key demand variables. Hana Securities analyst Kim Hong-sik assessed that large-scale new equipment adoption, along with shorter replacement cycles and higher unit prices from more demanding specifications, is expected as equipment load increases. The government-led 5G SA network transition is cited as generating new backbone transmission equipment demand as operators replace existing LTE cores with dedicated 5G cores. In addition, the government mandated, through an amendment to the Quantum Technology Industry Act, that central and local governments and public institutions establish and apply plans for securing quantum security technologies such as post-quantum cryptography (PQC) and quantum key distribution (QKD), expanding support from R&D into industrialization, supply chains, security, and defense. A white paper published by the National Information Society Agency and the Ministry of Science and ICT projected that the global quantum encryption communication market would grow at a compound annual rate of 39.8% to reach roughly KRW 24.6 trillion by 2030, with the government presenting a roadmap to build quantum encryption communication for core national networks by 2028 and develop satellite-based quantum encryption communication by 2030. In terms of competitive structure, SK Telecom and KT have been upgrading their own QKD technologies while transferring technology to domestic equipment makers including Kowiber and Woori Net to build out the supply chain, positioning small and mid-cap equipment makers as one pillar of a telecom-operator-led quantum security value chain. Meanwhile, the broader optical communication and telecom equipment theme saw sharp short-term swings in the first half of 2026 tied to expectations around U.S. big tech investment in silicon photonics and data centers, with one senior research fellow at the Korea Capital Market Institute noting that while the industry's long-term outlook is positive, companies lacking a clear link to actual earnings could end up as mere theme stocks."
+  "ko": "국내 전송망 장비 시장은 통신사의 5G 투자와 트래픽 증가에 따라 움직인다. 하나증권은 2026년 3월 리포트에서 5G SA 투자 및 실내 기지국 구축이 연계되어 전송망 장비 수요가 증가할 것으로 봤다. 같은 리포트는 향후 피지컬 AI가 활성화되면 백본망 트래픽이 수십배 증가할 것으로 예상된다는 정부 발표를 인용했다. 실내 기지국 구축에 따라 프론트홀용 전송장비 수요도 추가되는 구조다. 우리넷은 국내 전송장비 점유율 1위인 만큼 향후 전송 장비 증가 수요가 집중될 것으로 기대된다는 것이 증권사 시각이다. 반면 교체와 신규 구축 수요의 시기는 통신사 투자 일정에 달려 있어 단기 실적으로 바로 이어지지는 않는다. 2025년에는 방산 프로젝트 기저효과로 매출이 줄었고, 2026년 상반기에는 제품과 용역 매출이 모두 감소했다. 통신 업종 안에서 우리넷은 통신사 대형 설비투자의 하위 공급자 위치에 있어, 통신 3사의 투자 계획과 방산 발주가 동시에 실적을 좌우한다. 무선 장비주가 먼저 오른 뒤 유선 장비주가 순차적으로 움직인다는 시각도 2026년 3월 보도에 등장했다.",
+  "en": "The domestic transport network equipment market moves with telecom carriers' 5G investment and traffic growth. Hanaw Investment & Securities said in a March 2026 report that linked 5G SA investment and indoor base station rollouts should lift demand for transport equipment. The same report cited a government statement that backbone traffic could rise several times over if physical AI spreads. Indoor base station construction also adds fronthaul transport demand. The brokerage view is that the leading domestic PTN share should concentrate this incremental demand on Woori-Net. Replacement and new build demand, however, depends on carriers' investment schedules and does not translate into near-term earnings automatically. In 2025 revenue fell on a defense project base effect, and in the first half of 2026 both product and service revenue declined. Within the telecom sector, Woori-Net sits as a supplier to large carrier capex programs, so both carrier investment plans and defense orders drive its results. A March 2026 report also described a view that wired equipment stocks tend to follow wireless equipment rallies."
  },
  "outlook": {
-  "ko": "하나증권은 2026년 3월 리포트에서 2026년 예상 매출액을 1,158억원, 영업이익을 85억원으로 추정하며 일회성 요인을 제외하면 역대 최고 실적 경신이 가능할 것으로 관측했다. 같은 리포트에서 하나증권은 2026년 전망 주당순자산(FWD BPS)에 목표 PBR 1.5배를 적용해 12개월 목표주가를 15,000원으로 상향 제시했다. 회사는 2026년 4월 월드IT쇼(WIS)에 참가해 SK브로드밴드와 공동 개발한 패킷 기반 하이브리드 양자암호 전송장비를 전시했는데, 이 장비는 QKD가 분배한 양자키와 PQC 알고리즘 키를 동시에 적용하는 이중 암호화 구조로 한국전력기술 통신망에 실제 적용을 완료해 현장 실증까지 마친 상태로 소개됐다. 정부가 추진하는 개방형 양자 테스트베드 고도화·확산 사업은 기존 서울~판교~대전 구간을 전국으로 확대하고 일본·싱가포르 양자통신망과의 연동 검증까지 계획하고 있어, 관련 장비 수요의 지역적 확산 가능성이 열려 있다. 다만 2026년 국내 주파수 재할당·경매 일정과 통신사들의 5G-SA 투자 시점은 아직 확정되지 않은 변수로 남아 있으며, 이는 전송망 장비 발주 시점에 직접적인 영향을 미칠 수 있다. 회사의 매출 인식 구조상 대형 공공·국방 프로젝트의 신규 발주 여부가 분기별 실적의 방향을 크게 좌우할 것으로 보이며, 2026년 2분기 흑자 전환이 이어질지는 하반기 발주 상황에 따라 달라질 전망이다.",
-  "en": "Hana Securities, in a March 2026 report, estimated 2026 revenue at KRW 115.8 billion and operating profit at KRW 8.5 billion, observing that excluding one-off factors, the company could set record results. In the same report, Hana Securities raised its 12-month target price to KRW 15,000, applying a target price-to-book multiple of 1.5x to its 2026 forward book value per share estimate. The company participated in the April 2026 World IT Show, exhibiting a packet-based hybrid quantum encryption transmission device co-developed with SK Broadband, described as a dual-encryption structure applying both QKD-distributed quantum keys and PQC algorithm keys simultaneously, and reported to have already been field-tested on Korea Electric Power Corporation's communication network. The government's plan to upgrade and expand its open quantum testbed, extending the existing Seoul-Pangyo-Daejeon route nationwide and verifying interoperability with quantum communication networks in Japan and Singapore, leaves open the possibility of geographic expansion in related equipment demand. That said, the timing of Korea's 2026 spectrum reallocation and auction and telecom operators' 5G-SA investment schedule remain unconfirmed variables that could directly affect the timing of transmission equipment orders. Given the company's revenue recognition structure, whether new large public or defense projects are ordered is likely to significantly determine the direction of quarterly results, and whether the Q2 2026 return to profit continues will depend on order flow in the second half."
+  "ko": "2026년 3월 하나증권은 2026년 매출을 1,158억원, 영업이익을 85억원으로 추정했다. 그러나 2026년 상반기 매출은 전년 동기 대비 15.1% 감소하고 영업이익은 적자로 전환해 이 추정과 흐름이 크게 어긋나 있다. 회사는 콘텐츠 사업을 중단하고 방산 IT 시장에 진출하는 계획을 밝혔으며, 테라급 POTN과 양자암호 기술을 국방망에 맞추는 방향을 제시했다. 방산 IT 사업의 수주 규모와 시기는 아직 공시된 수치로 확인되지 않은 영역이다. 2024년 8월 체결된 436억원 규모 10년 유지보수 계약은 매출의 하단을 받쳐 주는 요소로 거론된다. 금융권과 공공기관 수주 확대도 추진 중이다. 5G SA 관련 전송망 수요는 주파수 할당 요건과 연결되어 있어 통신사 투자 시점에 따라 실적 반영 시기가 달라진다. 피지컬 AI 트래픽 증가는 중장기 수요 요인으로 제시되고 있으나 회사 수주와의 연결은 개별 공시로 확인된다. 다음 확인 지점은 2026년 사업연도 잠정실적(2027년 2월 초 전후 발표가 예상되며 전년 잠정실적은 2026년 2월 9일 발표)과 2026 사업보고서이며, 이때 영업이익률이 2024년 수준의 회복 흐름을 보이는지가 핵심이다. 방산 IT 사업 수주 공시와 금융·공공 수주 공시는 수시로 나올 수 있어 시기를 특정하기 어렵다.",
+  "en": "In a March 2026 report, Hanaw Investment & Securities estimated 2026 revenue at KRW 115.8 billion and operating profit at KRW 8.5 billion. First-half 2026 revenue declined 15.1% year on year and operating results turned to a loss, so the trajectory has diverged sharply from that estimate. The company has exited its content business and plans to enter the defense IT market, with its tera-class POTN and quantum cryptography technology aimed at defense networks. The size and timing of defense IT orders are not yet visible in disclosed figures. A ten-year maintenance contract worth KRW 43.6 billion signed in August 2024 is cited as a support for the revenue floor. The company also plans to expand orders from financial institutions and public agencies. Transport network demand tied to 5G SA is linked to spectrum allocation requirements, so the timing of earnings recognition depends on carriers' investment schedules. Physical AI traffic growth is presented as a medium-term demand driver, and its link to specific company orders will be confirmed through individual disclosures. The next checkpoints are the 2026 provisional annual results, expected around early February 2027 based on last year's announcement on February 9, 2026, and the 2026 annual business report. The key question then is whether the operating margin shows a recovery trend toward the 2024 level. Defense IT and financial or public sector order disclosures can arrive at any time, so their timing is hard to pin down."
  },
  "valuation_comment": {
-  "ko": "우리넷의 주가순자산비율은 하나증권이 2026년 3월 리포트에서 언급한 바에 따르면 당시 1배 수준이었으며, 이 리포트는 2019년 고점(1.5~2배)과 비교해 여전히 낮은 구간이라고 평가한 바 있다. 다만 이는 특정 시점의 증권사 견해이며, 최근 네 개 분기 기준으로는 순이익이 적자로 전환된 구간이어서 주당순이익 기반 지표 자체가 산출되기 어려운 상태다. 순자산 대비 주가 수준은 과거 국방 프로젝트 호황기 대비 낮은 편에 머물러 있으며, 배당은 최근 소액 배당을 유지하는 수준으로 배당수익률 자체는 업종 평균을 밑도는 편으로 평가된다. 연간 실적이 2022년 적자에서 2023~2024년 흑자로 전환된 뒤 2025년 다시 이익 규모가 축소된 흐름을 보였다는 점에서, 밸류에이션은 향후 실적 회복의 지속성 여부에 민감하게 반응할 수 있는 구간에 있다.",
-  "en": "Woori Net's price-to-book ratio stood at roughly 1x as of the point referenced in Hana Securities' March 2026 report, which characterized this as still low relative to the 2019 peak of 1.5x to 2x. This, however, reflects one brokerage's view at a specific point in time, and over the trailing four quarters the company has swung into a net loss, making earnings-per-share-based valuation metrics difficult to compute in the current window. The share price relative to net assets remains below levels seen during the earlier defense-project boom period, and dividends have been maintained at a modest level, with the dividend yield itself assessed as below the industry average. Given that annual results swung from a loss in 2022 to profits in 2023-2024 before shrinking again in 2025, valuation appears to be in a range sensitive to whether the recent earnings recovery proves durable."
+  "ko": "밸류에이션은 이익 기준 배수보다 순자산 기준 비교가 중심이 된다. 최근 4개 분기 지배주주 순손실이 이어져 이익 배수로는 비교가 어렵고, 순자산 대비 주가 수준이 주요 비교 축이다. 2025년 10월 하나증권 리포트는 PBR 0.7배 수준을 역사적으로 낮은 구간으로 제시했다. 같은 증권사의 2026년 3월 25일 리포트에서는 PBR이 1배 수준이라고 전했다. 2025년 말 기준 자본총계 999억원 가운데 지배주주 지분은 941억원이며, 시가총액은 이 지배주주 지분보다 낮은 수준에서 움직여 왔다. 주가가 순자산 대비 어느 위치에 있는지는 시점마다 달라지므로, 증권사 인용 배수는 해당 리포트 시점의 주가 기준으로만 읽어야 한다. 배당은 소액 현금배당 수준이어서 배당 매력이 밸류에이션 논거의 중심이 되기는 어렵다. 통신 3사와 장비주는 이익 체력과 업종 구조가 달라 단순 배수 비교가 제한적이다. 무선 장비주 급등 뒤 유선 장비주가 뒤따른다는 순환매 논리는 증권사와 언론이 제시한 시각이며, 실적 반영 여부와는 별도로 봐야 한다.",
+  "en": "Valuation here rests mainly on comparison with book value rather than earnings multiples. Because attributable net losses have persisted over the last four quarters, earnings-based multiples are of limited use, and the price relative to net asset value is the main reference. Hanaw Investment & Securities presented a price-to-book ratio around 0.7 times as historically low in an October 2025 report. A March 25, 2026 report from the same brokerage described the ratio as around 1 times. Against year-end 2025 total equity of KRW 99.9 billion, attributable equity was KRW 94.1 billion, and market value has been trading below that attributable equity level. Where the share price sits relative to net asset value changes over time, so brokerage multiples should be read only against the share price on the date of each report. The dividend is small, so yield is unlikely to be the central argument in valuation. Telecom carriers and equipment makers differ in earnings capacity and industry structure, so simple multiple comparisons are limited. The argument that wired equipment stocks follow wireless rallies is a view presented by brokers and media and should be considered separately from whether earnings are actually recognized."
  },
  "bull": [
   {
    "title": {
-    "ko": "PTN 시장 지위와 5G-SA 전환 수요",
-    "en": "PTN Market Position and 5G-SA Transition Demand"
+    "ko": "전송망 교체·5G SA 수요",
+    "en": "Transport network replacement and 5G SA demand"
    },
    "body": {
-    "ko": "우리넷은 지난해 전송망 장비(PTN) 시장 점유율 1위를 수성한 것으로 거론되며, 5G 단독모드 전환 과정에서 발생하는 백본망 전송장비 신규 구축 수요의 수혜가 기대된다는 분석이 나온다. 통신사의 코어 교체와 트래픽 증가가 겹치면 장비 교체 주기 단축과 단가 상승도 가능하다는 분석도 있다. 다만 이러한 수요는 통신사와 정부의 주파수 재할당·투자 일정에 따라 시점이 달라질 수 있다.",
-    "en": "Woori Net is cited as having retained the number one domestic market share in packet transport network (PTN) equipment last year, with analysis pointing to potential benefits from new backbone transmission equipment demand generated during the 5G standalone transition. Some analysis also suggests that a combination of core replacement and rising traffic could shorten equipment replacement cycles and support unit price increases. However, the timing of this demand can shift depending on telecom operators' and the government's spectrum reallocation and investment schedules."
+    "ko": "하나증권은 2026년 3월 리포트에서 5G 단독모드 투자와 실내 기지국 구축이 전송망 장비 수요로 이어진다고 제시했다. 국내 전송장비 점유율 1위 업체로서 향후 전송 장비 증가 수요가 우리넷에 집중될 것으로 기대된다는 시각도 함께 나왔다. 이 논리는 통신사 투자 일정과 회사 수주가 연결될 때 실적에 반영된다.",
+    "en": "Hanaw Investment & Securities argued in a March 2026 report that 5G standalone investment and indoor base station rollouts will translate into transport equipment demand. The brokerage also expected that growth in transport equipment demand would concentrate on Woori-Net as the leading domestic share holder. This thesis reaches reported earnings only when carrier investment timing and company orders connect."
    }
   },
   {
    "title": {
-    "ko": "양자보안 전 영역 자체 개발 역량",
-    "en": "In-House Capability Across the Full Quantum Security Stack"
+    "ko": "방산 IT·양자암호 확장 계획",
+    "en": "Defense IT and quantum cryptography expansion plan"
    },
    "body": {
-    "ko": "우리넷은 QKD·QKMS·QENC·PQC까지 양자보안 전 영역의 장비를 자체 개발해 공급할 수 있는 유일한 전송장비 기업으로 소개되며, SK브로드밴드와 공동 개발한 하이브리드 양자암호 전송장비는 한국전력기술 통신망에서 현장 실증까지 마쳤다. 양자기술산업법 개정으로 공공기관의 양자보안 기술 확보가 의무화되면서 제도화된 수요가 늘어날 것이란 전망도 나온다. 다만 실제 매출 기여 규모와 시점은 아직 구체적으로 확인되지 않았다.",
-    "en": "Woori Net is described as the only transmission equipment maker capable of developing and supplying equipment across the full quantum security stack, from QKD to QKMS, QENC, and PQC, and its hybrid quantum encryption transmission device co-developed with SK Broadband has completed field testing on Korea Electric Power Corporation's network. There are also expectations that institutionalized demand will grow following the amended Quantum Technology Industry Act mandating public institutions to secure quantum security technology. However, the actual scale and timing of revenue contribution from this business have not yet been specifically confirmed."
+    "ko": "콘텐츠 사업부문을 중단한 뒤 방산 IT 시장 진출을 추진 중이며, 테라급 POTN 및 양자암호 기술력을 국방망에 최적화하려는 계획이 제시돼 있다. 이미 2023년 7월 KT와 체결한 799억원 규모의 국방광대역 통합망 장비 구축 사업이 실적의 기반이 된 만큼 국방 부문의 경험이 있다는 점이 강점이다.",
+    "en": "The company has exited its content business and is pursuing defense IT, aiming to tailor its tera-class POTN and quantum cryptography technology to defense networks. Its experience in defense network work is a relevant asset, since the 2023 KRW 79.9 billion defense broadband network equipment contract with KT formed a basis for earnings."
    }
   },
   {
    "title": {
-    "ko": "2026년 2분기 이익 회복 신호",
-    "en": "Signs of Profit Recovery in Q2 2026"
+    "ko": "재무 체력 개선",
+    "en": "Improved financial strength"
    },
    "body": {
-    "ko": "2026년 1분기 큰 영업손실을 기록한 뒤 2분기에는 매출 224.2억원, 영업이익 5.0억원으로 다시 흑자로 돌아섰다. 하나증권은 2026년 예상 매출액 1,158억원, 영업이익 85억원을 제시하며 일회성 요인을 제외하면 역대 최고 실적 경신 가능성을 언급했다. 다만 이는 증권사 추정치로, 실제 달성 여부는 하반기 발주 상황에 좌우될 전망이다.",
-    "en": "After posting a large operating loss in Q1 2026, the company returned to profit in Q2 2026 with revenue of KRW 22.4 billion and operating profit of KRW 0.5 billion. Hana Securities estimated 2026 revenue at KRW 115.8 billion and operating profit at KRW 8.5 billion, noting the potential for record results excluding one-off factors. This, however, is a brokerage estimate, and actual achievement will depend on order flow in the second half."
+    "ko": "2025년 말 자본총계는 999억원이고 부채비율은 35.0%로 2022년 88.0%에서 크게 낮아졌다. 영업활동 현금흐름은 2024년 430억원, 2025년 166억원으로 플러스를 기록했다. 2022년과 2023년 마이너스였던 현금흐름이 전환된 점은 사업 체질 개선의 근거로 볼 수 있다.",
+    "en": "Total equity at the end of 2025 was KRW 99.9 billion, and the debt ratio fell to 35.0% from 88.0% in 2022. Operating cash flow was positive at KRW 43 billion in 2024 and KRW 16.6 billion in 2025, after negative readings in 2022 and 2023. This shift is one basis for reading an improvement in the business structure."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "대형 프로젝트 의존형 실적 변동성",
-    "en": "Earnings Volatility Dependent on Large Projects"
+    "ko": "2026년 상반기 역성장과 적자 전환",
+    "en": "First-half 2026 decline and swing to losses"
    },
    "body": {
-    "ko": "2025년 매출은 국방광대역통합망 프로젝트의 기저효과로 전년 대비 크게 줄었고, 2026년 1분기에는 다시 39.9억원의 영업손실을 기록했다. 매출 인식이 통신사 BMT 통과 후 확정되는 구조여서 통상적인 수주잔고 개념이 적용되지 않아, 향후 실적을 사전에 가늠하기 어려운 특성이 있다. 대형 프로젝트가 없을 경우 분기별 실적 편차가 크게 나타날 수 있다.",
-    "en": "2025 revenue fell sharply year-on-year on the base effect from the defense broadband integrated network project, and Q1 2026 saw another operating loss of KRW 4.0 billion. Because revenue is recognized only after passing telecom operator benchmarking tests, a conventional order-backlog concept does not apply, making it difficult to forecast results in advance. In the absence of large projects, quarterly results can vary widely."
+    "ko": "2026년 상반기 전년동기 대비 연결기준 매출액은 15.1% 감소하고 영업이익이 적자로 전환했다. 1분기 영업손실 39.9억원이 2분기 영업이익 5억원으로 일부 상쇄됐지만, 3분기 영업이익은 3,878만원으로 줄었다. 매출과 이익 모두 방향이 약세 쪽에 있다는 점이 약세 논리의 중심이다.",
+    "en": "Consolidated revenue for the first half of 2026 fell 15.1% year on year, and operating results turned to a loss. The KRW 3.99 billion operating loss in the first quarter was partly offset by KRW 505 million of operating profit in the second quarter, but third-quarter operating profit fell to KRW 38.78 million. Both revenue and profit are trending weaker, which forms the core of the bear case."
    }
   },
   {
    "title": {
-    "ko": "투자 시점 불확실성",
-    "en": "Uncertainty Around Investment Timing"
+    "ko": "최근 4개 분기 순손실 누적",
+    "en": "Cumulative losses over the last four quarters"
    },
    "body": {
-    "ko": "5G-SA 투자와 주파수 재할당·경매 일정은 정부와 통신 3사의 결정에 달려 있어 구체적인 시점이 아직 불확실하다. 양자보안 장비 역시 제도적 의무화가 진행되고 있지만 실제 발주와 매출 인식까지는 시차가 있을 수 있다. 이런 변수들은 회사가 제시하는 성장 스토리의 실현 시점을 늦출 수 있는 요인이다.",
-    "en": "The timing of 5G-SA investment and spectrum reallocation and auctions depends on decisions by the government and the three major telecom operators, and the specific schedule remains uncertain. While institutional mandates for quantum security equipment are progressing, there can be a time lag before actual orders and revenue recognition occur. These variables are factors that could delay the realization of the company's growth narrative."
+    "ko": "지배주주 순손실이 최근 4개 분기 동안 쌓인 상태이다. 2026년 3분기 지배주주 순손실은 1억원으로 전 분기 흑자에서 적자로 돌아섰다. 순이익 기준으로 이익 배수 비교가 성립하지 않는 상태가 이어지고 있어, 이익 회복의 시점이 불확실하다는 점이 부담으로 꼽힌다.",
+    "en": "Attributable net losses have accumulated over the last four quarters. The third-quarter 2026 attributable result was a loss of KRW 102 million, reversing the prior quarter's profit. Because earnings-based multiples cannot be applied while losses persist, the timing of the earnings recovery remains uncertain."
    }
   },
   {
    "title": {
-    "ko": "테마성 수급에 따른 변동성",
-    "en": "Volatility from Theme-Driven Trading"
+    "ko": "전망치와 실적의 괴리",
+    "en": "Gap between forecasts and actual results"
    },
    "body": {
-    "ko": "우리넷은 광통신·양자보안 테마가 부각될 때마다 관련 종목군과 함께 단기 급등락을 보인 사례가 다수 확인된다. 자본시장연구원의 한 선임연구위원은 광통신 테마 전반에 대해 실적 연결고리가 부족한 기업들은 이후 주가 조정 시 큰 충격을 받을 수 있다고 지적했다. 코스닥 소형주 특성상 거래량과 수급 변화에 따른 단기 변동성이 상대적으로 크게 나타날 수 있다.",
-    "en": "Woori Net has repeatedly shown sharp short-term price swings alongside peer stocks whenever the optical communication or quantum security theme comes into focus. A senior research fellow at the Korea Capital Market Institute noted that within the broader optical communication theme, companies lacking a clear link to actual earnings could face significant impact during subsequent price corrections. As a small-cap KOSDAQ stock, short-term volatility tied to shifts in trading volume and supply-demand can be relatively pronounced."
+    "ko": "하나증권은 2026년 3월 리포트에서 2026년 매출을 1,158억원, 영업이익을 85억원으로 추정했다. 이는 2025년 매출 755억원과 영업이익 19.5억원 대비 큰 회복을 전제한 숫자였다. 그러나 2026년 상반기 매출은 전년 동기 대비 감소했고 영업이익은 적자로 돌아서 추정이 현실과 어긋나고 있다.",
+    "en": "Hanaw Investment & Securities estimated 2026 revenue at KRW 115.8 billion and operating profit at KRW 8.5 billion in its March 2026 report. Those figures assumed a large recovery from 2025 revenue of KRW 75.5 billion and operating profit of KRW 1.95 billion. First-half 2026 revenue fell year on year and operating results turned to a loss, so the estimates are diverging from reported results."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "수주 구조 리스크",
-    "en": "Order Structure Risk"
+    "ko": "고객·프로젝트 집중",
+    "en": "Customer and project concentration"
    },
    "body": {
-    "ko": "회사의 주요 매출은 3대 통신사업자의 BMT를 통과한 뒤 매출 발생 시점에 계약이 확정되는 구조로, 통상적인 수주잔고 개념이 적용되지 않는다. 다품종 연간 단가계약 방식이어서 개별 계약금액이 사전에 확정되지 않아 매출 예측 가시성이 낮다. 이 때문에 특정 대형 프로젝트의 발주·종료 시점이 연간 실적에 큰 영향을 미친다.",
-    "en": "The company's principal revenue is structured such that contracts are finalized at the point revenue occurs, after passing the three major telecom operators' benchmarking tests, meaning a conventional order-backlog concept does not apply. Because annual unit-price contracts cover multiple products, individual contract values are not fixed in advance, resulting in low revenue predictability. As a result, the timing of the start and end of specific large projects has an outsized effect on annual results."
+    "ko": "매출은 KT와 국방 발주 프로젝트에 크게 기대는 구조다. 작년 700억원대 국방부 프로젝트를 수주하며 역대 최대 실적을 기록한 뒤 그 기저효과로 매출과 이익이 감소한 것이 대표 사례다. 대형 프로젝트 종료나 발주 지연이 있으면 분기 실적이 큰 폭으로 움직일 수 있다.",
+    "en": "Revenue depends heavily on KT and defense procurement projects. A defense ministry project above KRW 70 billion in the prior year produced record earnings, and the base effect afterward reduced both revenue and profit. A project completion or delayed order can move quarterly results sharply."
    }
   },
   {
    "cat": {
-    "ko": "정책·투자 일정 리스크",
-    "en": "Policy and Investment Timing Risk"
+    "ko": "사업 전환 실행",
+    "en": "Execution of business transition"
    },
    "body": {
-    "ko": "5G-SA 투자, 주파수 재할당·경매, 양자보안 의무화 시행 등 회사의 성장 스토리를 뒷받침하는 핵심 변수들은 대부분 정부와 통신사의 정책·투자 결정에 종속돼 있다. 해당 일정이 지연되거나 투자 규모가 예상보다 축소될 경우 관련 장비 수요 역시 지연될 수 있다. 공공·국방 부문 예산 편성 시점의 변화도 매출 인식 시점에 영향을 줄 수 있다.",
-    "en": "Key variables underpinning the company's growth narrative, including 5G-SA investment, spectrum reallocation and auctions, and the implementation of quantum security mandates, are largely subject to government and telecom operator policy and investment decisions. If these schedules are delayed or investment scale falls short of expectations, related equipment demand could also be delayed. Changes in the timing of public and defense sector budget allocation can also affect revenue recognition timing."
+    "ko": "콘텐츠 사업부문을 접은 뒤 방산 IT와 양자암호로 사업을 전환하는 중이다. 신규 시장의 수주 시점과 규모는 아직 공시로 확인되지 않아 전환 비용이 실적에 먼저 반영될 가능성이 있다. 사업 전환이 기존 전송장비 매출 감소를 상쇄할 수 있는지는 향후 분기 실적으로 판단하게 된다.",
+    "en": "The company has exited content and is transitioning toward defense IT and quantum cryptography. The timing and size of new market orders have not yet appeared in disclosures, so transition costs could hit earnings first. Whether the shift can offset the decline in core transport equipment revenue will show up in future quarterly results."
    }
   },
   {
    "cat": {
-    "ko": "소형주 유동성 및 사업 다각화 리스크",
-    "en": "Small-Cap Liquidity and Diversification Risk"
+    "ko": "통신 투자 일정 변수",
+    "en": "Carrier investment timing risk"
    },
    "body": {
-    "ko": "코스닥 소형주로서 시가총액이 작아 테마성 수급 변화에 따른 단기 가격 변동성이 상대적으로 크게 나타날 수 있다. OLED 소재 사업은 중국 디스플레이 업체를 대상으로 하고 있어 해당 고객사의 수요 변화나 중국 디스플레이 산업 경기에 노출돼 있다. 사업 영역이 통신장비, OLED 소재, 양자보안 등으로 다각화돼 있어 부문별 실적 기여도를 명확히 구분하기 어려운 점도 분석의 제약 요인이다.",
-    "en": "As a small-cap KOSDAQ stock with a small market capitalization, short-term price volatility tied to changes in theme-driven trading can be relatively pronounced. The OLED materials business is directed at Chinese display makers, exposing the company to changes in customer demand and the broader Chinese display industry cycle. The diversification of the business across telecom equipment, OLED materials, and quantum security also makes it difficult to clearly separate segment-level earnings contributions, which is a constraint on analysis."
+    "ko": "전송망 수요는 5G SA 투자와 실내 기지국 구축, 주파수 할당 요건과 연결돼 있다. 통신사 투자가 지연되거나 요건 충족 시점이 늦어지면 교체 수요의 실적 반영도 늦어진다. 업황 개선 논리가 실제 수주로 이어지는지가 가장 직접적인 변수다.",
+    "en": "Transport demand is linked to 5G SA investment, indoor base station rollouts and spectrum allocation requirements. If carrier investment slows or compliance timelines slip, the earnings impact of replacement demand will also be delayed. Whether the industry recovery thesis turns into actual orders is the most direct variable."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중순",
-    "en": "Mid-November 2026"
+    "ko": "2027년 2월 초 전후(예정)",
+    "en": "Early February 2027 (expected)"
    },
    "what": {
-    "ko": "3분기 보고서 공시를 통해 2026년 2분기 흑자 전환이 이어지는지, PTN·셀룰러-IoT 제품군 매출 비중과 마진 추이가 개선되는지 확인이 필요하다.",
-    "en": "Check the Q3 2026 quarterly report to see whether the return to profit seen in Q2 2026 continues, and whether the revenue mix and margin trends for the PTN and cellular-IoT product groups improve."
+    "ko": "2026년 연간 잠정실적 발표. 전년 잠정실적은 2026년 2월 9일 발표됐고, 2025년 영업이익 19.5억원 대비 회복 여부와 2026년 1분기 영업손실 이후 흑자 흐름의 지속성을 확인하는 지점이다.",
+    "en": "Release of 2026 provisional annual results. Last year's provisional results were announced on February 9, 2026, and this release will show whether profit recovers from the KRW 1.95 billion operating profit of 2025 and whether the second-quarter 2026 return to profit holds."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기",
-    "en": "Second half of 2026"
+    "ko": "2027년 3월 말(사업보고서 제출 기한)",
+    "en": "End of March 2027 (annual report filing deadline)"
    },
    "what": {
-    "ko": "과학기술정보통신부의 5G 주파수 재할당 및 신규 경매 일정과 조건이 확정되는지, 이것이 통신사의 5G-SA 투자 계획과 연동되는지 확인이 필요하다.",
-    "en": "Check whether the Ministry of Science and ICT finalizes the schedule and conditions for 5G spectrum reallocation and any new auction, and whether this is linked to telecom operators' 5G-SA investment plans."
+    "ko": "2026 사업보고서 확정 공시. 연간 영업이익률과 부채비율, 영업활동 현금흐름이 공시 값으로 확정되며, 2026년 분기 손익의 합계가 연간 실적으로 확인된다.",
+    "en": "Filing of the 2026 annual business report. The annual operating margin, debt ratio and operating cash flow are confirmed in disclosed figures, and the 2026 quarterly results are reconciled into the full-year total."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기~2027년",
-    "en": "Second half of 2026 through 2027"
+    "ko": "2027년 5월 중순(1분기 분기보고서 기한)",
+    "en": "Mid-May 2027 (first-quarter report deadline)"
    },
    "what": {
-    "ko": "양자기술산업법 개정에 따른 후속 시행령과 공공기관 양자보안 의무화 로드맵이 구체화되는지, 이와 관련한 우리넷의 신규 수주나 공급 계약 공시가 나오는지 확인이 필요하다.",
-    "en": "Check whether the follow-up implementing decrees and the public-sector quantum security mandate roadmap under the amended Quantum Technology Industry Act take concrete shape, and whether Woori Net discloses any new orders or supply contracts related to this."
+    "ko": "2027년 1분기 매출과 영업손익. 2026년 1분기 매출 118억원 및 영업손실 39.9억원과 비교해, 전송망 교체 수요가 실적에 나타나는지를 확인하는 지점이다.",
+    "en": "First-quarter 2027 revenue and operating results. Comparing against first-quarter 2026 revenue of KRW 11.8 billion and an operating loss of KRW 3.99 billion will show whether replacement demand is reaching reported earnings."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기",
-    "en": "Fourth quarter of 2026"
+    "ko": "2027년 중 수시 공시(시기 미정)",
+    "en": "Ad hoc disclosures during 2027 (timing not set)"
    },
    "what": {
-    "ko": "국방광대역통합망 등 과거 대형 프로젝트의 후속 사업 발주 여부와 공공·국방 부문의 예산 집행 상황을 공시를 통해 확인할 필요가 있다.",
-    "en": "Check disclosures for whether follow-up projects to past large-scale contracts such as the defense broadband integrated network are ordered, and monitor the state of budget execution in the public and defense sectors."
+    "ko": "방산 IT·양자암호 관련 수주 공시와 금융·공공기관 수주 공시. 사업 전환의 실제 매출 기여 규모를 가늠하는 자료다.",
+    "en": "Order disclosures related to defense IT and quantum cryptography, and orders from financial and public institutions. These show the scale of revenue contribution from the business transition."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "우리넷은 국방 프로젝트라는 대형 일회성 계약의 기저효과로 2025년 매출과 이익이 크게 축소됐고, 2026년 1분기에도 큰 영업손실을 기록했지만 2분기에는 매출과 이익 모두 다시 개선되며 흑자로 돌아섰다. 회사는 전송망 장비(PTN) 시장에서 국내 1위 지위를 유지하고 있으며, 5G 단독모드 전환과 양자보안 정책 의무화라는 두 가지 구조적 변수가 향후 장비 수요에 영향을 줄 수 있는 요인으로 거론된다. 다만 매출 인식이 통신사 BMT 통과 이후 확정되는 구조여서 통상적인 수주잔고가 없고, 대형 프로젝트 유무에 따라 실적 진폭이 반복적으로 나타나는 특성은 여전히 유효하다. 밸류에이션 측면에서는 순자산 대비 주가 수준이 과거 국방 프로젝트 호황기 대비 낮은 구간에 있다는 평가가 증권사 리포트에서 나온 바 있으나, 최근 네 개 분기 기준으로는 순이익이 적자 구간에 있어 이익 기반 지표의 해석에는 제약이 따른다. 투자자 입장에서는 5G-SA 투자 일정과 양자보안 관련 신규 수주 여부, 그리고 하반기 이후 발표되는 분기 실적을 통해 이익 회복의 지속성을 지속적으로 점검할 필요가 있다.",
-   "en": "Woori Net saw revenue and profit contract sharply in 2025 on the base effect from a large one-off defense project contract, and posted another large operating loss in Q1 2026, before both revenue and profit improved again in Q2 2026 to return to a profit. The company retains the domestic number one position in the packet transport network (PTN) equipment market, and two structural variables -- the transition to 5G standalone mode and mandated quantum security policy -- are cited as factors that could influence future equipment demand. That said, the fact that revenue recognition is finalized only after telecom operators complete benchmarking tests means there is no conventional order backlog, and the pattern of results swinging depending on the presence of large projects remains valid. On valuation, brokerage reports have noted that the share price relative to net assets sits below levels seen during the earlier defense-project boom period, but with net income in a loss position over the trailing four quarters, interpretation of earnings-based metrics carries constraints. Investors will want to continue monitoring the timing of 5G-SA investment, any new quantum-security-related orders, and quarterly results released from the second half onward to assess the durability of the profit recovery."
+   "ko": "우리넷은 국내 전송장비 시장에서 점유율 1위 사업자이며, 5G SA 투자와 피지컬 AI 트래픽 증가가 전송망 교체 수요의 근거로 제시되고 있다. 다만 2024년 영업이익 201억원에서 2025년 19.5억원으로 줄었고, 2026년 상반기에는 매출이 줄고 영업이익이 적자로 전환됐다. 최근 4개 분기 지배주주 순손실 합계는 20.9억원이다. 재무 측면에서는 2025년 말 부채비율 35.0%와 영업활동 현금흐름 플러스가 완충 요인이다. 밸류에이션은 이익 배수보다 순자산 대비 주가 수준이 기준이 되며, 증권사 인용 배수는 리포트 시점에 한정해 읽어야 한다. 방산 IT와 양자암호로의 사업 전환은 아직 공시된 수주 규모로 확인되지 않아 성패가 열려 있다. 다음 확인 지점은 2026년 사업연도 잠정실적(2027년 2월 초 전후)과 2026 사업보고서이며, 영업이익률이 2024년 수준으로 돌아오는지가 핵심이다. 이 글은 정보 제공을 목적으로 하며 매수·매도 의견을 포함하지 않는다.",
+   "en": "Woori-Net is a leading domestic transport equipment supplier, and 5G SA investment and physical AI traffic growth are cited as grounds for transport network replacement demand. However, operating profit fell from KRW 20.1 billion in 2024 to KRW 1.95 billion in 2025, and in the first half of 2026 revenue declined and operating results turned to a loss. The attributable net loss over the last four quarters totals KRW 2.09 billion. On the financial side, the debt ratio of 35.0% at the end of 2025 and positive operating cash flow act as buffers. In valuation, price relative to net asset value is the reference point rather than earnings multiples, and broker multiples should be read only as of each report date. The shift toward defense IT and quantum cryptography remains unresolved because the scale of orders has not yet appeared in disclosures. The next checkpoints are the 2026 provisional annual results, expected around early February 2027, and the 2026 annual business report, where the key question is whether the operating margin returns toward the 2024 level. This report is for information only and does not include a buy or sell opinion."
   }
  },
  "sources": [
-  "https://www.ket.kr/news/article.html?no=37787",
-  "https://littlebproject.com/stock/115440/421/63639",
-  "https://www.hanaw.com/download/research/FileServer/WEB/industry/enterprise/2026/03/24/Woorinet_0324.pdf",
-  "https://m.thinkpool.com/breakingNews/cont/256372",
-  "https://www.hanaw.com/download/research/FileServer/WEB/industry/enterprise/2026/03/03/Woorinet_Indepth_0301.pdf",
   "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=115440",
-  "https://kind.krx.co.kr/common/disclsviewer.do?acptno=20260323001990&langTpCd=0&method=search&orgid=F&rcpno=20260323001378&tran=Y",
-  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=445398",
-  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=451744",
-  "https://www.leadeconomy.co.kr/news/articleView.html?idxno=7124",
-  "https://stockheyu.com/5g-beneficiaries/",
-  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=443782",
-  "https://m.finance.daum.net/quotes/A316140/news/disclosure/20260424049311",
-  "https://kind.krx.co.kr/corpgeneral/irschedule.do?method=searchIRScheduleMain&gubun=iRSchedule",
-  "https://alphasquare.co.kr/home/stock-summary?code=115440",
-  "https://comp.wisereport.co.kr/wiseCalendar/EarningsReleaseMonthlyView.aspx",
   "https://thevc.kr/woorinet",
-  "http://www.thedailymoney.com/news/articleView.html?idxno=1136138"
+  "https://www.hanaw.com/download/research/FileServer/WEB/info/small_cap/2025/02/17/250218_woorinet_FF.pdf",
+  "https://www.butler.works/ko/companies/00664048",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A115440&cID=&MenuYn=Y&ReportGB=&NewMenuID=11&stkGb=701",
+  "https://www.hanaw.com/download/research/FileServer/WEB/industry/enterprise/2025/08/18/Woorinet_0818.pdf",
+  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=629044",
+  "https://www.hanaw.com/download/research/FileServer/WEB/industry/enterprise/2025/07/30/Woorinet_init_final_0730.pdf",
+  "https://m.news.nate.com/view/20260209n37593",
+  "https://www.hanaw.com/download/research/FileServer/WEB/industry/enterprise/2026/03/03/Woorinet_Indepth_0301.pdf",
+  "https://www.hanaw.com/download/research/FileServer/WEB/industry/enterprise/2026/03/24/Woorinet_0324.pdf",
+  "https://www.hanaw.com/download/research/FileServer/WEB/industry/enterprise/2025/10/20/Woorinet_1020.pdf",
+  "https://www.ket.kr/news/article.html?no=37787",
+  "https://m.thinkpool.com/compDiscuss/cont/1015677",
+  "https://kr.investing.com/news/transcripts/article-93CH-2172367",
+  "https://factstock.net/earnings",
+  "https://www.investing.com/equities/woori-net-co-ltd"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "115440",
  "name": "우리넷",
  "name_en": "Woori-Net Co., Ltd.",
@@ -223,11 +222,11 @@
   "통신"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 09:16",
- "dataDate": "20260904",
+ "reportDate": "2026-11-18",
+ "reportTs": "2026-11-18 07:07",
+ "dataDate": "20261117",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-11-17",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -297,12 +296,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 25070762693,
-    "op": 2719799537,
-    "np_owner": 3153655083
-   },
-   {
     "q": "2025Q3",
     "rev": 17518722779,
     "op": 472697387,
@@ -325,28 +318,39 @@
     "rev": 22420023218,
     "op": 504853201,
     "np_owner": 902951737
+   },
+   {
+    "q": "2026Q3",
+    "rev": 19851367778,
+    "op": 38778045,
+    "np_owner": -101961026
    }
   ],
   "valuation": {
-   "price": 7180,
-   "mcap": 0.0775,
+   "price": 6620,
+   "mcap": 0.0715,
    "shares": 10794292,
    "total_shares": 10794292,
-   "wavg_shares": 10194854,
+   "wavg_shares": 10194904,
    "per": null,
-   "eps": -124,
-   "pbr": 0.7702,
-   "bps": 9322,
-   "roe_ttm": -1.3,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": -1260978319,
+   "eps": -205,
+   "pbr": 0.7108,
+   "bps": 9314,
+   "roe_ttm": -2.2,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": -2085633238,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 0.76,
+   "eps_src": "공시",
+   "pbr_krx": 0.71,
    "bps_krx": 9217.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 50.0,
-   "div": 0.7
+   "div": 0.76,
+   "hidden": {
+    "per": "loss"
+   }
   }
- }
+ },
+ "textRules": 2
 }

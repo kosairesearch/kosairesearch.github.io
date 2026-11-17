@@ -1,220 +1,220 @@
 {
  "title": {
-  "ko": "반도체 성장 vs 에너지 M&A, 엇갈린 손익 신호",
-  "en": "Semiconductor Growth vs Energy M&A: Mixed Earnings Signals"
+  "ko": "미코, 반도체와 연료전지 두 축의 실적 엇갈림",
+  "en": "MiCo: Two Growth Engines, Uneven Earnings"
  },
  "lead": {
-  "ko": "미코는 반도체 세정·코팅·세라믹 부품 사업의 견조한 성장과, 넴에너지 인수 등 에너지·환경 부문 확장이 동시에 진행되며 외형은 커졌지만 통합 비용과 부채 확대로 손익 변동성이 커진 국면에 있다.",
-  "en": "MiCo is expanding rapidly through steady growth in its semiconductor cleaning, coating and ceramics parts business alongside an aggressive push into the energy and environment segment via the NEM Energy acquisition, resulting in larger revenue scale but greater earnings volatility from integration costs and rising leverage."
+  "ko": "2025년 매출은 9,770억원으로 2년 연속 늘었지만, 2026년 3분기에는 지배주주 순손실 268억원으로 적자 전환해 매출 성장과 이익 흐름이 엇갈리고 있다.",
+  "en": "Revenue rose to KRW 977 billion in 2025 and grew for two straight years, but MiCo swung to a net loss attributable to controlling shareholders of KRW 26.8 billion in the third quarter of 2026, so sales growth and profit trends are diverging."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출 9,770억원으로 전년 대비 크게 확대됐으나 영업이익률은 17.5%에서 10.3%로 낮아졌다.",
-   "en": "Consolidated 2025 revenue expanded sharply to KRW 977.0bn year over year, but operating margin declined from 17.5% to 10.3%."
+   "ko": "연간 매출은 2023년 3,873억원을 저점으로 2024년 5,405억원, 2025년 9,770억원으로 두 해 연속 증가했다. 2025년은 전년 대비 80.8% 늘었다.",
+   "en": "Annual revenue bottomed at KRW 387.3 billion in 2023, then rose to KRW 540.5 billion in 2024 and KRW 977 billion in 2025, the largest year in the 2022-2025 period, up 80.8% from the prior year."
   },
   {
-   "ko": "2026년 1분기 지배주주순이익이 적자로 전환한 뒤 2분기 다시 흑자로 돌아섰다.",
-   "en": "Net income attributable to owners swung to a loss in 1Q26 before returning to profit in 2Q26."
+   "ko": "영업이익은 2025년 1,010억원으로 2024년 946억원에 이어 늘었지만, 영업이익률은 2024년 17.5%에서 2025년 10.3%로 낮아졌다.",
+   "en": "Operating profit reached KRW 101 billion in 2025 after KRW 94.6 billion in 2024, yet the operating margin fell from 17.5% in 2024 to 10.3% in 2025."
   },
   {
-   "ko": "자회사 현대중공업파워시스템(HPS)이 네덜란드 넴에너지(NEM Energy) 지분 100%를 인수하는 계약을 체결했으며, 3분기 중 최종 마무리될 예정이다.",
-   "en": "Subsidiary Hyundai Heavy Industries Power Systems (HPS) signed a deal to acquire 100% of Netherlands-based NEM Energy, with completion targeted within the third quarter."
+   "ko": "2026년 3분기 영업이익은 163억원으로 전년 동기 대비 27.3% 줄었고, 지배주주 순손실은 268억원으로 전년 동기 순이익 16.5억원에서 적자로 돌아섰다.",
+   "en": "Third-quarter 2026 operating profit was KRW 16.3 billion, down 27.3% from a year earlier, and the net loss attributable to controlling shareholders was KRW 26.8 billion, compared with a KRW 1.65 billion profit in the third quarter of 2025."
   },
   {
-   "ko": "미코파워는 평택 신공장을 통해 SOFC(고체산화물 연료전지) 생산능력을 30MW 규모로 확장하고, 이후 100MW로 추가 증설할 계획을 밝혔다.",
-   "en": "MiCo Power plans to expand solid oxide fuel cell (SOFC) capacity to 30MW through its new Pyeongtaek plant, with further expansion to 100MW announced."
+   "ko": "부채비율은 2022년 94.3%에서 2025년 228.6%로 올라 재무 레버리지가 커졌다. 2025년 말 부채총계는 1조 5,755억원이다.",
+   "en": "The debt-to-equity ratio climbed from 94.3% in 2022 to 228.6% in 2025, and total liabilities at the end of 2025 stood at KRW 1.58 trillion."
   },
   {
-   "ko": "연속적 M&A로 부채비율이 2022년 94.3%에서 2025년 228.6%까지 상승했다.",
-   "en": "The debt ratio rose from 94.3% in 2022 to 228.6% in 2025 amid successive M&A transactions."
+   "ko": "사업은 반도체 세라믹 부품과 고체산화물 연료전지(SOFC) 두 축이며, 연료전지는 안성 10MW 확장과 평택 30MW 체제 구축을 추진 중이다.",
+   "en": "The business rests on two pillars, semiconductor ceramic parts and solid oxide fuel cells (SOFC), and the fuel-cell unit is pursuing a 10MW expansion in Anseong and a 30MW production setup in Pyeongtaek."
   }
  ],
  "business": {
-  "ko": "미코는 반도체 장비 부품 제작·세정·코팅 서비스와 SOFC·산업용 보일러·CCUS 등 에너지·환경, AI 기반 IT솔루션 및 컨택센터 시스템 부문으로 구성된 사업지주형 그룹이다. 반도체 부문은 세라믹 소재 기술을 바탕으로 고부가 특수소재를 국산화했으며, 세정·코팅과 세라믹 부품 제조는 삼성전자, SK하이닉스 등 국내외 반도체 제조사를 주요 고객으로 두고 있다. 세정·코팅 및 세라믹 부품 사업은 별도 상장된 자회사 코미코(183300)를 통해 영위되며, 미코는 코미코의 최대주주 지위를 갖고 있다. 에너지·환경 부문은 자회사 미코파워의 SOFC(고체산화물 연료전지), 현대중공업파워시스템(HPS)과 플랜텍의 LNG 발전용 배열회수보일러(HRSG) EPC 사업으로 구성된다. 미코파워는 세라믹 소재 기술을 SOFC 전 공정에 내재화하고 평택 신공장을 통해 생산 체계를 확장하고 있다. 최근에는 HPS를 통해 네덜란드 넴에너지 인수를 추진하며 LNG 발전 설비 글로벌 플랫폼 구축에 나섰다. 이 밖에 AI 기반 IT솔루션·컨택센터 시스템 부문도 소규모로 영위하고 있다. 전체적으로 반도체 부품(에프터마켓+세라믹 소재)과 에너지·환경(SOFC+HRSG) 두 축이 그룹 매출과 이익의 대부분을 차지하는 구조다.",
-  "en": "MiCo operates as a holding-type group spanning semiconductor equipment parts manufacturing, cleaning and coating services, an energy and environment segment covering SOFC, industrial boilers and CCUS, and a smaller AI-based IT solutions and contact center systems business. The semiconductor segment has localized high-value specialty ceramic materials, with cleaning, coating and ceramic parts manufacturing serving major domestic and global chipmakers including Samsung Electronics and SK hynix as customers. The cleaning, coating and ceramics business is run through separately listed subsidiary Comico (183300), of which MiCo is the largest shareholder. The energy and environment segment comprises subsidiary MiCo Power's SOFC (solid oxide fuel cell) business along with Hyundai Heavy Industries Power Systems (HPS) and Plantec's LNG heat recovery steam generator (HRSG) EPC operations. MiCo Power has internalized ceramic material technology across the entire SOFC production process and is expanding capacity through its new Pyeongtaek plant. More recently, the group has pursued the acquisition of Netherlands-based NEM Energy through HPS to build a global platform in LNG power generation equipment. The group also runs a smaller AI-based IT solutions and contact center systems business. Overall, the semiconductor parts business (aftermarket plus ceramic materials) and the energy and environment business (SOFC plus HRSG) together account for most of group revenue and profit."
+  "ko": "미코는 반도체 부문과 에너지·환경 부문을 함께 운영하는 소재·부품 기업이다. 버틀러 집계에 따르면 2026년 2분기 매출 기준으로 고체연료전지(에너지·환경) 부문이 약 50%, 반도체 부문이 약 49%, AI·IT 서비스가 약 1%를 차지해 두 사업의 비중이 비슷하다. 반도체 부문의 핵심은 반도체 장비에 들어가는 히터와 정전척(ESC) 등 세라믹 부품이다. fnguide 연결 기준으로 2024년 히터·ESC 및 세라믹 부품 매출 가운데 수출 비중은 53.6%였고 나머지는 내수였다. 연결 자회사 미코세라믹스는 반도체 장비 부품을 제조하고, 또 다른 연결 자회사 코미코는 반도체 공정 장비 부품의 세정과 코팅을 맡는다. 에너지·환경 부문은 고체산화물 연료전지(SOFC)가 중심이며, 2024년 SOFC 매출은 전량 내수로 집계됐다. 생산능력은 2025년 안성 공장 10MW 확장과 2026년 평택 신공장 30MW 생산 체제 구축을 추진하는 단계다. 소재 내재화도 진행 중이다. 회사는 2026년 3월 19일 고기능성 세라믹 소재인 질화규소 분말의 국산화에 성공해 양산 체제를 구축했다고 발표했다. 자회사 현대중공업파워시스템(HPS)은 2026년 3월 25일 경남 사천공장 중심의 배열회수보일러(HRSG) 생산 체계를 구축하고 베트남 생산거점을 마련해 공급망을 다변화한다고 밝혔다. 경쟁은 국내외 반도체 장비 부품 업체와 겹치며, 연료전지 부문은 SOFC 사업 기반의 후발 확장 단계에 있다.",
+  "en": "MiCo runs a semiconductor segment and an energy and environment segment, making it a materials and parts company with two businesses. According to a share estimate by Butler, the energy and environment segment, centered on solid oxide fuel cells, accounted for about 50% of second-quarter 2026 revenue, semiconductors for about 49%, and AI and IT services for about 1%, so the two main businesses carry similar weight. The semiconductor side centers on ceramic parts such as heaters and electrostatic chucks (ESC) used in chipmaking equipment. Per fnguide's consolidated data, exports made up 53.6% of 2024 revenue from heater, ESC and ceramic parts, with the rest sold domestically. The ceramics subsidiary MiCo Ceramics manufactures semiconductor equipment parts, and another consolidated subsidiary handles cleaning and coating of equipment parts. The energy segment centers on solid oxide fuel cells, and fnguide reports that all 2024 SOFC sales were domestic. Capacity plans include a 10MW expansion in Anseong in 2025 and a 30MW production setup at a new Pyeongtaek plant in 2026. On materials, the company announced on March 19, 2026 that it had localized high-performance silicon nitride powder and set up mass production. On March 25, 2026, its power-systems subsidiary HPS said it would build a heat recovery steam generator production line centered on its Sacheon plant in South Gyeongsang and secure a production base in Vietnam to diversify its supply chain. Competition in semiconductor parts includes domestic and foreign equipment-parts suppliers, while the fuel-cell business is at an early stage of expansion."
  },
  "earnings": {
-  "ko": "2025년 연결 매출은 9,770억원으로 2024년 5,405억원 대비 크게 확대됐으나, 영업이익률은 같은 기간 17.5%에서 10.3%로 낮아졌다. 2023년과 2022년에는 매출이 각각 3,873억원, 4,148억원 수준이었고 지배주주순이익은 두 해 모두 적자(-272.6억원, -552.3억원)를 기록해 최근 3개년 사이 이익 구조가 적자에서 흑자로 전환되는 흐름을 보였다. 분기별로 보면 2025년 2분기 매출 2,485.9억원, 영업이익 302.0억원으로 상대적으로 높은 이익률을 나타냈으나, 3분기(영업이익 223.9억원)와 4분기(131.1억원)로 이어지며 영업이익이 점차 축소됐다. 2026년 1분기에는 매출이 3,219.7억원까지 늘었음에도 영업이익은 188.7억원에 그쳤고, 지배주주순이익은 -114.8억원으로 적자 전환했다. 2026년 2분기에는 매출 3,491.9억원, 영업이익 195.0억원을 기록했고 지배주주순이익은 214.7억원으로 다시 흑자로 돌아섰다. 이 같은 흐름은 반도체 부문의 매출 성장과 에너지·환경 부문의 일회성 통합 비용·영업손실이 동시에 반영되며 나타난 결과로 풀이된다. 실제로 2026년 1분기 실적에 대해 반도체 부문은 AI 반도체 투자 확대와 HBM, 첨단 패키징 등으로 매출이 성장했으나, 에너지·환경 부문 영업손실과 일회성 비용 증가로 영업이익이 감소했다는 평가가 나왔다. 최근 4개 분기(2025년 3분기~2026년 2분기) 누적 지배주주순이익은 약 161.5억원으로, 연간 단위로 환산하면 2025년 전체(295.0억원)보다 낮은 수준이다.",
-  "en": "Consolidated revenue expanded sharply to KRW 977.0bn in 2025 from KRW 540.5bn in 2024, while operating margin declined from 17.5% to 10.3% over the same period. Revenue in 2023 and 2022 stood at KRW 387.3bn and KRW 414.8bn respectively, with net income attributable to owners posting losses in both years (-KRW 27.26bn and -KRW 55.23bn), reflecting a shift from loss to profit over the recent three-year span. On a quarterly basis, 2Q25 revenue of KRW 248.6bn came with a relatively high operating profit of KRW 30.2bn, but operating profit progressively narrowed through 3Q25 (KRW 22.4bn) and 4Q25 (KRW 13.1bn). In 1Q26, revenue rose to KRW 322.0bn yet operating profit was only KRW 18.9bn, and net income attributable to owners swung to a loss of -KRW 11.48bn. In 2Q26, revenue reached KRW 349.2bn with operating profit of KRW 19.5bn, and net income attributable to owners returned to a profit of KRW 21.47bn. This pattern reflects the simultaneous effect of revenue growth in the semiconductor segment and one-off integration costs and operating losses in the energy and environment segment. Commentary on 1Q26 results noted that the semiconductor segment grew on expanded AI chip investment, HBM and advanced packaging demand, while operating profit declined due to operating losses and one-off cost increases in the energy and environment segment. Over the trailing four quarters (3Q25 through 2Q26), cumulative net income attributable to owners totaled roughly KRW 16.15bn, lower on an annualized basis than the full-year 2025 figure of KRW 29.50bn."
+  "ko": "연간 실적은 2022년 이후 흐름이 뚜렷하게 나뉜다. 매출은 2022년 4,148억원에서 2023년 3,873억원으로 줄었다가 2024년 5,405억원, 2025년 9,770억원으로 늘었다. 영업이익은 2023년 211억원(전년 대비 67.2% 감소)을 저점으로 2024년 946억원, 2025년 1,010억원으로 두 해 연속 증가했다. 다만 영업이익률은 2024년 17.5%에서 2025년 10.3%로 낮아져 매출 증가 폭만큼 이익률이 따라오지는 못했다. 지배주주 순이익은 2022년 552억원, 2023년 273억원의 순손실에서 2024년 181억원 흑자로 전환했고, 2025년에는 295억원으로 전년 대비 62.8% 증가했다. 당기순이익은 비지배지분을 포함한 값이라 2024년 765억원, 2025년 749억원으로 지배주주 순이익보다 크게 나타난다. 분기로 보면 매출은 2025년 3분기 2,454억원에서 2026년 3분기 3,700억원까지 늘었다. 반면 영업이익은 2025년 3분기 224억원, 2025년 4분기 131억원, 2026년 1분기 189억원, 2026년 2분기 195억원, 2026년 3분기 163억원으로 움직였다. 2026년 1분기 지배주주 순손실 115억원, 2026년 2분기 순이익 215억원, 2026년 3분기 순손실 268억원으로 분기별 이익 변동 폭이 컸다. 2026년 상반기에 대해서는 씽크풀 등 정보 사이트가 반도체 매출 증가와 연료전지 초기 투자 및 AI·IT 서비스 적자에 따른 영업이익 감소를 정리했다. 최근 네 개 분기(2025년 4분기~2026년 3분기) 지배주주 순손실 합계는 123억원이다. 영업활동 현금흐름은 2024년 1,205억원에서 2025년 248억원으로 줄었다.",
+  "en": "Annual results show a clear shift in direction since 2022. Revenue fell from KRW 414.8 billion in 2022 to KRW 387.3 billion in 2023, then rose to KRW 540.5 billion in 2024 and KRW 977 billion in 2025. Operating profit bottomed at KRW 21.1 billion in 2023, down 67.2% from the prior year, and then rose to KRW 94.6 billion in 2024 and KRW 101 billion in 2025. However, the operating margin dropped from 17.5% in 2024 to 10.3% in 2025, so profit did not keep pace with sales growth. Net profit attributable to controlling shareholders moved from a loss of KRW 55.2 billion in 2022 and a loss of KRW 27.3 billion in 2023 to a profit of KRW 18.1 billion in 2024, and reached KRW 29.5 billion in 2025, up 62.8%. Net income including non-controlling interests was KRW 76.5 billion in 2024 and KRW 74.9 billion in 2025, which is well above the profit attributable to controlling shareholders. Quarterly revenue climbed from KRW 245.4 billion in the third quarter of 2025 to KRW 370 billion in the third quarter of 2026. Operating profit moved from KRW 22.4 billion in the third quarter of 2025 to KRW 13.1 billion in the fourth quarter of 2025, KRW 18.9 billion in the first quarter of 2026, KRW 19.5 billion in the second quarter, and KRW 16.3 billion in the third quarter of 2026. Attributable net profit swung from a loss of KRW 11.5 billion in the first quarter of 2026 to a profit of KRW 21.5 billion in the second quarter and a loss of KRW 26.8 billion in the third quarter. According to a 2026 first-half summary on the Wisereport company page, semiconductor sales rose on AI data center investment and demand for high-performance memory, while early investment in the fuel-cell business and losses in AI and IT services weighed on operating profit. Over the four quarters from the fourth quarter of 2025 to the third quarter of 2026, the combined net loss attributable to controlling shareholders was KRW 12.3 billion. Operating cash flow fell from KRW 120.5 billion in 2024 to KRW 24.8 billion in 2025. The debt-to-equity ratio rose from 94.3% in 2022 to 228.6% in 2025, reflecting heavier leverage."
  },
  "industry": {
-  "ko": "반도체 산업은 생성형 AI 인프라 투자 확대로 2026년 글로벌 시장 규모가 1조 달러를 넘어설 것으로 전망되며, 신규 팹 건설이 이어지면서 세정·코팅 및 세라믹 부품 수요 증가가 기대되는 국면으로 평가된다. 이는 미코의 반도체 부문(코미코+미코세라믹스)에 우호적인 업황 배경으로, HBM·첨단 패키징향 세라믹 부품 수요가 최근 실적 성장을 견인하고 있다. 반면 에너지 부문에서는 LNG 발전 설비 시장이 2025년 약 42조원에서 2030년 약 61조원 규모로 연평균 7.5% 성장할 것으로 전망돼, HRSG(배열회수보일러) 사업을 하는 HPS·플랜텍·넴에너지 편입 이후의 미코그룹에 성장 여력이 있는 시장으로 꼽힌다. 넴에너지는 2026년 1분기 신규 수주 실적에서 미국 GE·보그트·누터에릭슨, 일본 미쓰비시파워 등을 제치고 글로벌 1위를 차지한 것으로 조사됐다. SOFC(고체산화물 연료전지) 분야는 아직 상용화 초기 단계로, 전 세계적으로 셀·스택·시스템 원천기술을 보유한 기업이 미국 블룸에너지, 일본 교세라, 영국 세레스파워, 이탈리아 솔리드파워와 미코파워 등 단 다섯 곳에 불과해 진입장벽이 높은 시장으로 평가된다. 미코그룹은 반도체 부품(코미코·미코세라믹스)에서는 이미 안정적 매출 기반을 확보한 반면, 에너지·환경(HPS·플랜텍·넴에너지·미코파워)에서는 아직 사업 통합과 수익성 정상화가 진행 중인 초기 성장 단계에 있다.",
-  "en": "The global semiconductor industry is projected to exceed USD 1 trillion in 2026 driven by expanded generative AI infrastructure investment, with new fab construction expected to support growing demand for cleaning, coating and ceramic parts. This provides a favorable backdrop for MiCo's semiconductor segment (Comico plus MiCo Ceramics), where demand for ceramic components tied to HBM and advanced packaging has been driving recent growth. On the energy side, the LNG power generation equipment market is forecast to grow from roughly KRW 42.4 trillion in 2025 to about KRW 61.6 trillion by 2030 at a 7.5% compound annual rate, positioning the HRSG (heat recovery steam generator) business run by HPS, Plantec and the newly acquired NEM Energy as an area with structural growth potential for the MiCo group. NEM Energy was reported to have ranked first globally in new HRSG orders in 1Q26, surpassing US-based GE, Vogt and Nooter/Eriksen and Japan's Mitsubishi Power. The SOFC (solid oxide fuel cell) field remains in an early commercialization stage globally, with only five companies worldwide holding proprietary cell-stack-system technology: Bloom Energy of the United States, Kyocera of Japan, Ceres Power of the United Kingdom, Solid Power of Italy, and MiCo Power, indicating high barriers to entry. While the MiCo group has already secured a stable revenue base in semiconductor parts (Comico and MiCo Ceramics), the energy and environment segment (HPS, Plantec, NEM Energy and MiCo Power) remains at an earlier stage where business integration and profitability normalization are still in progress."
+  "ko": "전방 수요는 AI 데이터센터 투자와 고대역폭메모리(HBM) 확대가 중심이다. fnguide의 2025년 3분기 누적 실적 설명에 따르면 HBM 제조 장비용 세라믹 부품 수요와 공정 미세화에 따른 증착·식각 장비용 부품 수요가 늘어 실적이 개선됐다. 메모리 업황에서도 회복 신호가 나타난다. 마이크론 테크놀로지(Micron Technology)는 2026년 6월 24일 발표한 회계 3분기 실적에서 매출이 전년 동기 대비 크게 늘었다고 밝혔다. 다만 마이크론의 실적은 메모리 기업의 수치여서 미코 부품 수요와 직접 연결되는지는 별도로 가릴 필요가 있다. 2026년 상반기에는 반도체 매출이 늘었지만 영업이익은 줄어, 장비 부품 수요 확대가 이익률 개선으로 바로 이어지지 않는 구도다. 연료전지 쪽에서는 재경일보 보도가 미코를 SOFC 테마의 주요 연관주로 꼽았다. 이 테마 관심이 실제 매출로 이어지는지는 생산능력 가동과 수주 실적으로 확인해야 한다. 경쟁 측면에서 미코는 세라믹 부품의 소재 내재화(질화규소 분말)와 해외 수출 비중을 함께 갖춘 구조다. 반면 장비 부품 사업은 반도체 장비 투자 사이클의 영향을 받는 만큼, 메모리 투자 변동이 수요 변수로 남는다.",
+  "en": "Demand from downstream markets centers on AI data center investment and the expansion of high-bandwidth memory (HBM). According to fnguide's summary of cumulative results through the third quarter of 2025, demand for ceramic parts used in HBM manufacturing equipment and for deposition and etching equipment parts tied to finer process nodes lifted results. Signs of recovery also appear in memory. Micron Technology said in its fiscal third-quarter 2026 release on June 24, 2026 that revenue rose sharply from a year earlier. Micron's figures are those of a memory maker, so whether they translate directly into MiCo parts demand needs separate confirmation. In the first half of 2026, semiconductor sales rose while operating profit fell, which suggests that higher parts demand has not yet translated into better margins. On the fuel-cell side, a Jaeggyeong Ilbo report named MiCo as a key related stock in the SOFC theme. Whether that market interest converts into revenue depends on capacity utilization and order results. On competition, MiCo combines in-house ceramic materials work, including silicon nitride powder, with a large export share in its parts business. Semiconductor equipment parts remain exposed to the investment cycle of chip equipment makers, so swings in memory capital spending remain a demand variable."
  },
  "outlook": {
-  "ko": "회사 측은 HPS를 통해 네덜란드 넴에너지 지분 100%를 인수하는 주식매매계약을 체결했으며, 이번 거래는 관계 당국의 승인 절차를 거쳐 2026년 3분기 중 최종 마무리될 예정이라고 밝혔다. 인수가 완료되면 HPS의 제조 역량과 넴에너지의 설계·엔지니어링 원천기술이 결합되는 통합형(Design-to-Delivery) HRSG 플랫폼이 구축될 것으로 회사는 설명했다. 미코파워는 평택 신공장을 통해 SOFC 생산능력을 2026년 초까지 30MW 규모로 확대하고, 이후 100MW 규모로 추가 증설할 계획이라고 밝힌 바 있다. 현재 상용화된 2·8kW 건물용 SOFC 제품에 더해 발전용 150kW급 시스템도 개발 중인 것으로 알려져 있다. 반도체 부문에서는 AI 반도체 및 HBM, 첨단 패키징 관련 투자 확대가 이어지면서 세정·코팅과 세라믹 부품 수요가 지속될 것으로 업계는 전망하고 있다. 회사는 앞서 2024년 HPS, 이후 플랜텍 등을 잇달아 인수하며 에너지 사업을 신성장동력으로 육성해 왔다. 다만 신규 인수 자산의 통합 비용과 규제 승인 절차 등이 향후 몇 개 분기 실적에 계속 영향을 줄 수 있는 변수로 남아 있다.",
-  "en": "The company stated that HPS signed a stock purchase agreement to acquire 100% of Netherlands-based NEM Energy, with the transaction expected to be finalized within the third quarter of 2026 pending regulatory approval from relevant authorities. Once completed, the company explained that the deal will create an integrated design-to-delivery HRSG platform combining HPS's manufacturing capability with NEM Energy's design and engineering technology. MiCo Power has stated plans to expand SOFC production capacity to 30MW through its new Pyeongtaek plant by early 2026, with further expansion to 100MW planned thereafter. In addition to its already commercialized 2kW and 8kW building-use SOFC products, a 150kW power-generation system is reportedly under development. In the semiconductor segment, industry observers expect continued demand for cleaning, coating and ceramic parts as AI chip, HBM and advanced packaging-related investment continues to expand. The company has been building out its energy business as a new growth driver through successive acquisitions, having acquired HPS in 2024 followed by Plantec. However, integration costs from newly acquired assets and regulatory approval procedures remain variables that could continue to affect results over the coming quarters."
+  "ko": "회사가 공개한 확장 계획은 연료전지 생산능력, 소재 국산화, 해외 생산거점, 자회사 구조 재편의 네 가지로 정리된다. 연료전지 부문은 2025년 3분기 누적 실적 설명 기준으로 2025년 안성 공장 10MW 확장을 추진했고 2026년 평택 신공장 30MW 생산 체제 구축을 추진하고 있었다. 생산능력이 실제로 가동되면 SOFC 매출 기반이 넓어지지만, 2026년 상반기 기준 연료전지 초기 투자 비용이 영업이익을 낮춘 만큼 증설 이후 손익 반영 시점이 중요하다. 소재 쪽에서는 질화규소 분말이 양산 체제에 들어간 것이 확인된 사실이며, 이는 세라믹 부품의 원재료 내재화 측면에서 의미가 있다. HPS의 사천 HRSG 생산 체계와 베트남 생산거점은 2026년 3월 25일 발표된 계획이며, 공급망 다변화가 실제 수주로 이어지는지가 다음 확인 지점이다. 자회사 미코하이테크를 흡수합병하는 결정도 공시됐다. 회사 측은 이 합병으로 사업 효율성을 높이겠다는 방침이다. 다만 SOFC 등 신성장 사업이 실질 성과를 내는지는 아직 확인이 필요하다는 것이 시장 관심의 초점이다. 반도체 부문은 HBM과 공정 미세화에 따른 부품 수요가 이어질지가 관건이다. 정량 목표치 대비 진척은 2026년 사업보고서에서 연간 수치로 확인할 수 있다.",
+  "en": "The expansion plans the company has disclosed fall into four areas: fuel-cell capacity, materials localization, overseas production, and a restructuring of subsidiaries. In the fuel-cell business, according to the cumulative results update for the third quarter of 2025, the company was pursuing a 10MW expansion in Anseong in 2025 and setting up a 30MW production system at a new Pyeongtaek plant in 2026. If that capacity runs, the SOFC revenue base widens, but because early investment costs weighed on operating profit in the first half of 2026, the timing of when expansion shows up in earnings matters. On materials, the mass production setup for silicon nitride powder is a confirmed fact and matters for in-house sourcing of raw materials for ceramic parts. HPS's Sacheon heat recovery steam generator line and Vietnam production base were announced on March 25, 2026, and whether supply-chain diversification turns into orders is the next checkpoint. A decision to absorb the subsidiary MiCo Hitech through a merger has also been disclosed, and the company says the merger will improve business efficiency. However, whether new growth businesses such as SOFC produce tangible results remains the focus of market attention. In semiconductors, the key question is whether parts demand linked to HBM and finer process nodes continues. Progress against capacity plans can be checked in annual figures in the 2026 annual report."
  },
  "valuation_comment": {
-  "ko": "미코의 연결 재무구조는 지배주주 지분보다 비지배주주 지분 비중이 훨씬 큰 특징을 가지고 있는데, 이는 상장 자회사 코미코를 비롯한 다수 계열사의 연결 편입 방식에서 비롯된 결과다. 최근 3년간 순이익이 적자에서 흑자로 전환된 흐름을 보였지만, 2026년 1분기와 2분기 사이에도 지배주주순이익이 적자와 흑자를 오가는 등 분기별 변동성이 큰 편이어서 순이익 기준 밸류에이션 지표는 시점에 따라 편차가 크게 나타날 수 있다. 배당은 최근 지급 실적이 없어 배당수익률 측면에서는 업종 평균을 밑도는 편으로 평가된다. 주가는 반도체 부품 사업의 안정적 실적과 에너지·환경 부문의 성장 기대, 그리고 상장 자회사 코미코의 지분가치 및 비상장 자회사(미코파워·미코세라믹스 등)의 잠재 가치가 함께 반영되는 구조여서, 순자산가치 대비 프리미엄 수준을 평가할 때 사업지주형 그룹의 복합적 가치 구조를 함께 고려할 필요가 있다. 연속적인 M&A로 부채비율이 확대된 만큼, 향후 이익 회복 속도와 재무구조 개선 여부가 밸류에이션 판단에 중요한 변수로 작용할 것으로 보인다.",
-  "en": "MiCo's consolidated financial structure is characterized by non-controlling interests substantially exceeding the owners' equity portion, a result stemming from the consolidation of listed subsidiary Comico and numerous other affiliates. While net income has shifted from loss to profit over the past three years, net income attributable to owners swung between loss and profit even within 1Q26 and 2Q26, indicating meaningful quarterly volatility that can cause net-income-based valuation metrics to vary considerably depending on the measurement period. With no recent dividend payments, the dividend yield is assessed as below the industry average. Because the share price reflects a combination of stable performance in the semiconductor parts business, growth expectations in the energy and environment segment, the equity value of listed subsidiary Comico, and the potential value of unlisted subsidiaries such as MiCo Power and MiCo Ceramics, any assessment of premium relative to book value needs to account for this composite holding-structure characteristic. Given that the debt ratio has expanded through successive M&A transactions, the pace of earnings recovery and improvement in the financial structure going forward are likely to be important variables in valuation assessments."
+  "ko": "최근 네 개 분기(2025년 4분기~2026년 3분기) 지배주주 순손실 합계가 123억원이어서 이익을 기준으로 한 배수는 산출되지 않는 상태다. 이익 기준 비교가 어려워 밸류에이션 논의는 순자산 기준 비교가 중심이 된다. 주가순자산비율은 순자산 대비 프리미엄이 큰 구간에 있다. 자본총계 6,891억원 가운데 지배주주 지분은 1,152억원으로, 두 값의 차이는 비지배지분 규모가 크다는 뜻이므로 지배주주 기준 순자산과 비교할 때 이 차이를 함께 봐야 한다. 2024년과 2025년 지배주주 순이익이 흑자를 기록하며 이익 기반이 회복된 점은 2023년 적자 대비 방향이 개선된 것이다. 배당을 기준으로 한 비교는 성립하지 않는 수준이다. 부채비율이 2022년 94.3%에서 2025년 228.6%로 오른 점도 자본 대비 부채 부담으로 함께 비교해야 할 항목이다.",
+  "en": "Over the four quarters from the fourth quarter of 2025 through the third quarter of 2026, the combined net loss attributable to controlling shareholders was KRW 12.3 billion, so no earnings-based multiple can be calculated. Valuation discussion therefore centers on comparisons against net asset value. The price-to-book ratio sits in a range with a large premium over net assets. Of total equity of KRW 689.1 billion, the portion attributable to controlling shareholders is KRW 115.2 billion, so the gap reflects a large non-controlling interest and should be considered alongside any per-share book value comparison. Profit attributable to controlling shareholders turned positive in 2024 and rose in 2025, a direction of recovery from the 2023 loss. Comparisons based on dividends are not meaningful at the current payout level. The rise in the debt-to-equity ratio from 94.3% in 2022 to 228.6% in 2025 is also a point to weigh against equity."
  },
  "bull": [
   {
    "title": {
-    "ko": "AI·HBM 투자 확대가 반도체 부품 수요 견인",
-    "en": "AI and HBM Investment Expansion Driving Semiconductor Parts Demand"
+    "ko": "AI·HBM 관련 장비 부품 수요",
+    "en": "Demand from AI and HBM equipment"
    },
    "body": {
-    "ko": "반도체 부문은 AI 반도체 투자 확대와 HBM, 첨단 패키징 관련 수요 증가로 매출 성장을 지속하고 있는 것으로 평가된다. 2026년 글로벌 반도체 시장이 생성형 AI 인프라 투자 확대로 1조 달러를 넘어설 것으로 전망되는 가운데, 신규 팹 건설에 따른 세정·코팅 수요 증가도 기대되고 있다. 상장 자회사 코미코를 통한 세정·코팅과 세라믹 부품 사업이 안정적인 매출 기반 역할을 하고 있다.",
-    "en": "The semiconductor segment is assessed to be sustaining revenue growth driven by expanded AI chip investment and rising demand tied to HBM and advanced packaging. With the global semiconductor market projected to exceed USD 1 trillion in 2026 amid expanded generative AI infrastructure investment, demand for cleaning and coating services is also expected to increase as new fabs are built. The cleaning, coating and ceramic parts business run through listed subsidiary Comico serves as a stable revenue base."
+    "ko": "반도체 부문은 AI 데이터센터 투자 확대와 고성능 메모리 수요 증가로 2026년 상반기 매출이 늘었다. 2026년 3분기 매출은 3,700억원으로 전 분기 대비 6.0%, 전년 동기 대비 50.8% 증가했다. 2025년 4분기부터 2026년 3분기까지 4개 분기 연속 매출이 늘어난 점은 이 수요가 분기 실적에 반영되고 있음을 보여준다.",
+    "en": "The semiconductor segment's first-half 2026 sales rose on AI data center investment and stronger demand for high-performance memory. Third-quarter 2026 revenue of KRW 370 billion was up 6.0% from the prior quarter and 50.8% from a year earlier. Revenue has grown for four consecutive quarters from the fourth quarter of 2025 through the third quarter of 2026, showing that this demand is reaching quarterly results."
    }
   },
   {
    "title": {
-    "ko": "넴에너지 인수로 글로벌 LNG HRSG 플랫폼 확보",
-    "en": "NEM Energy Acquisition Building a Global LNG HRSG Platform"
+    "ko": "연료전지 생산능력 확대",
+    "en": "Fuel-cell capacity expansion"
    },
    "body": {
-    "ko": "자회사 HPS가 네덜란드 넴에너지 지분 100%를 인수하는 계약을 체결했으며, 이번 거래로 설계·엔지니어링부터 제조, 공급, 시운전까지 아우르는 통합형 HRSG 플랫폼을 확보하게 될 것으로 회사는 설명했다. 넴에너지는 2026년 1분기 신규 수주 실적에서 미국 GE·보그트·누터에릭슨, 일본 미쓰비시파워를 제치고 글로벌 1위를 차지한 것으로 조사됐다. LNG 발전 설비 시장이 2030년까지 연평균 7.5%씩 성장할 것으로 전망되는 가운데 편입 효과가 기대된다.",
-    "en": "Subsidiary HPS signed an agreement to acquire 100% of Netherlands-based NEM Energy, and the company explained the deal will secure an integrated HRSG platform spanning design and engineering through manufacturing, supply and commissioning. NEM Energy was reported to have ranked first globally in new HRSG orders in 1Q26, surpassing US-based GE, Vogt and Nooter/Eriksen and Japan's Mitsubishi Power. With the LNG power generation equipment market forecast to grow at a 7.5% compound annual rate through 2030, the consolidation effect is anticipated."
+    "ko": "연료전지 부문은 2025년 안성 공장 10MW 확장을 추진했고 2026년 평택 신공장 30MW 생산 체제 구축을 추진했다. 2024년 SOFC 매출은 전량 내수로 집계됐다. 연료전지는 반도체와 함께 매출의 절반 안팎을 차지하는 두 번째 축으로, 증설이 가동되면 사업 다변화 효과가 커질 수 있다.",
+    "en": "The fuel-cell unit pursued a 10MW expansion in Anseong in 2025 and set up a 30MW production system at a new Pyeongtaek plant in 2026. All 2024 SOFC sales were domestic. Fuel cells account for roughly half of revenue alongside semiconductors, so a working expansion would broaden the business mix."
    }
   },
   {
    "title": {
-    "ko": "SOFC 원천기술 보유한 세계 5개사 중 하나",
-    "en": "One of Only Five Global Firms with Proprietary SOFC Technology"
+    "ko": "소재 내재화와 공급망 다변화",
+    "en": "In-house materials and supply-chain diversification"
    },
    "body": {
-    "ko": "미코파워는 셀·스택·시스템에 이르는 SOFC 전 공정 원천기술을 보유한 전 세계 5개 기업 중 하나로 평가된다. 평택 신공장을 통해 생산능력을 30MW 규모로 확대한 뒤 100MW로 추가 증설할 계획을 밝힌 바 있다. 건물용 2·8kW 제품 상용화에 이어 발전용 150kW급 시스템 개발도 진행되고 있는 것으로 알려져, 향후 발전용 시장으로 사업 영역을 확장할 여지가 있다.",
-    "en": "MiCo Power is regarded as one of only five global companies holding proprietary technology across the entire SOFC production chain from cells to stacks to systems. The company has announced plans to expand production capacity to 30MW through its new Pyeongtaek plant before further expanding to 100MW. Following commercialization of building-use 2kW and 8kW products, development of a 150kW power-generation-use system is reportedly underway, leaving room to expand into the power generation market."
+    "ko": "질화규소 분말 국산화에 성공해 2026년 3월 19일 양산 체제를 구축했다고 발표했다. 자회사 HPS는 2026년 3월 25일 사천공장 중심의 HRSG 생산 체계와 베트남 생산거점을 밝혔다. 자회사 미코하이테크의 흡수합병 결정도 공시돼, 원재료와 생산 구조를 함께 정비하는 흐름이다.",
+    "en": "The company announced on March 19, 2026 that it had localized silicon nitride powder and set up mass production. On March 25, 2026, subsidiary HPS outlined an HRSG production line centered on its Sacheon plant and a Vietnam production base. A decision to absorb MiCo Hitech through a merger has also been disclosed, as the group reorganizes materials and production structure."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "연속 M&A로 부채비율 급등",
-    "en": "Debt Ratio Surging on Successive M&A"
+    "ko": "영업이익 감소와 분기 적자 전환",
+    "en": "Lower operating profit and a return to quarterly losses"
    },
    "body": {
-    "ko": "부채비율은 2022년 94.3%에서 2025년 228.6%로 크게 상승했다. HPS, 플랜텍에 이어 넴에너지 인수까지 추진되면서 재무 레버리지가 지속적으로 확대되는 모습이다. 인수 대상 자산의 통합 비용과 차입 부담이 향후 재무구조에 계속 영향을 줄 수 있다.",
-    "en": "The debt ratio rose sharply from 94.3% in 2022 to 228.6% in 2025. With HPS, Plantec and now NEM Energy acquisitions in progress, financial leverage has continued to expand. Integration costs and borrowing burdens tied to the acquired assets could continue to affect the financial structure going forward."
+    "ko": "2026년 3분기 영업이익은 163억원으로 전년 동기 대비 27.3% 줄었다. 같은 분기 지배주주 순손실은 268억원으로 2025년 3분기 순이익 16.5억원에서 적자로 돌아섰다. 최근 네 개 분기 지배주주 순손실 합계는 123억원이며, 분기 매출 증가가 이익 개선으로 이어지지 않고 있다.",
+    "en": "Third-quarter 2026 operating profit was KRW 16.3 billion, down 27.3% from a year earlier. The net loss attributable to controlling shareholders of KRW 26.8 billion turned a KRW 1.65 billion profit from the third quarter of 2025 into a loss. Over the four quarters through the third quarter of 2026, the combined attributable net loss totals KRW 12.3 billion, and revenue growth has not yet produced profit gains."
    }
   },
   {
    "title": {
-    "ko": "에너지·환경 부문 손익 불안정",
-    "en": "Volatile Profitability in the Energy and Environment Segment"
+    "ko": "마진 하락과 신사업 초기 투자 부담",
+    "en": "Margin compression and early investment in new businesses"
    },
    "body": {
-    "ko": "2026년 1분기 실적에서는 에너지·환경 부문의 영업손실과 일회성 비용 증가가 반도체 부문의 매출 성장을 상쇄해 지배주주순이익이 적자로 전환됐다. 2분기에는 다시 흑자로 돌아섰지만, 신규 인수 자산 통합 과정에서 손익이 분기별로 크게 출렁이는 모습을 보이고 있다. 이 같은 변동성은 사업 통합이 완전히 정상화되기까지 지속될 가능성이 있다.",
-    "en": "In 1Q26 results, operating losses and one-off cost increases in the energy and environment segment offset revenue growth in the semiconductor segment, causing net income attributable to owners to swing to a loss. While the figure returned to profit in 2Q26, profitability has fluctuated significantly on a quarterly basis during the integration of newly acquired assets, and this volatility could persist until the business integration fully normalizes."
+    "ko": "영업이익률은 2024년 17.5%에서 2025년 10.3%로 낮아졌다. 2026년 상반기에는 연료전지 초기 투자와 AI·IT 서비스 적자가 영업이익을 낮춘 것으로 정보 사이트 정리에 나타났다. 신사업 설비가 가동되기 전까지 고정비 부담이 이익률을 계속 누를 수 있다.",
+    "en": "The operating margin fell from 17.5% in 2024 to 10.3% in 2025. Information-service summaries of first-half 2026 results attribute part of the operating profit decline to early fuel-cell investment and losses in AI and IT services. Until new capacity runs at scale, fixed costs could keep weighing on margins."
    }
   },
   {
    "title": {
-    "ko": "복잡한 연결구조와 비지배주주 지분 비중",
-    "en": "Complex Consolidated Structure with Large Non-Controlling Interests"
+    "ko": "재무 레버리지 상승과 현금흐름 둔화",
+    "en": "Higher leverage and slower cash generation"
    },
    "body": {
-    "ko": "2025년 연결 자기자본 중 비지배주주 지분이 지배주주 지분보다 훨씬 큰 비중을 차지하고 있다. 이는 상장 자회사 코미코를 비롯한 다수 계열사가 연결 대상에 포함되는 구조에서 비롯된 것으로, 지배주주 귀속 실적이 연결 전체 실적과 다른 방향으로 움직일 수 있음을 의미한다. 사업구조가 복잡해질수록 투자자가 그룹 전체 가치를 파악하는 데 필요한 정보 부담도 커질 수 있다.",
-    "en": "Within 2025 consolidated equity, non-controlling interests account for a substantially larger share than owners' equity. This stems from a structure in which numerous affiliates, including listed subsidiary Comico, are included in consolidation, meaning results attributable to owners can move in a different direction from overall consolidated results. As the business structure grows more complex, the information burden on investors trying to assess the group's overall value can also increase."
+    "ko": "부채비율은 2022년 94.3%에서 2025년 228.6%로 올랐고, 2025년 말 부채총계는 1조 5,755억원이다. 영업활동 현금흐름이 줄어든 만큼 늘어난 부채를 내부 자금으로 감당할 여력도 작아졌다. 지배주주 지분은 1,152억원으로 자본총계보다 작아, 자본 기준 완충 여력을 따질 때 부담 요인으로 꼽힌다.",
+    "en": "The debt-to-equity ratio rose from 94.3% in 2022 to 228.6% in 2025, and total liabilities at year-end 2025 reached KRW 1.58 trillion. The decline in operating cash flow leaves less internally generated cash to absorb the higher debt load. Equity attributable to controlling shareholders is much smaller than total equity, which weighs on the cushion available against debt."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "M&A 통합·규제 리스크",
-    "en": "M&A Integration and Regulatory Risk"
+    "ko": "수요 사이클",
+    "en": "Demand cycle"
    },
    "body": {
-    "ko": "넴에너지 인수는 관계 당국의 승인 절차를 거쳐 2026년 3분기 중 최종 마무리될 예정으로 공시됐다. 각국 규제 심사 과정에서 예상보다 시간이 더 걸리거나 조건이 변경될 가능성이 있으며, 인수 후 통합(PMI) 과정에서 추가 비용이 발생할 수 있다.",
-    "en": "The NEM Energy acquisition was disclosed as expected to be finalized within the third quarter of 2026 pending regulatory approval. There is a possibility that regulatory review across jurisdictions could take longer than expected or terms could change, and additional costs may arise during post-merger integration."
+    "ko": "반도체 장비 투자가 메모리 업황에 따라 흔들리면 세라믹 부품과 세정·코팅 수요도 함께 변동할 수 있다. HBM 수요 확대의 지속 여부가 부품 주문 흐름을 좌우하는 핵심 변수다. 2026년 상반기 매출 증가에도 영업이익이 줄어든 점은 수요 변화가 이익으로 전달되는 속도가 느릴 수 있음을 보여준다.",
+    "en": "If chip equipment investment swings with the memory cycle, demand for ceramic parts and cleaning and coating services can move with it. Whether HBM demand keeps expanding is the key variable for parts orders. Operating profit fell in the first half of 2026 even as sales grew, suggesting that demand changes may pass through to profit slowly."
    }
   },
   {
    "cat": {
-    "ko": "재무 건전성 리스크",
-    "en": "Financial Soundness Risk"
+    "ko": "재무 레버리지와 현금흐름",
+    "en": "Leverage and cash flow"
    },
    "body": {
-    "ko": "부채비율이 2022년 94.3%에서 2025년 228.6%로 크게 확대됐다. 추가적인 인수합병이나 시설 투자가 이어질 경우 차입 부담이 더 늘어날 가능성이 있으며, 이자비용 증가가 향후 순이익에 부담으로 작용할 수 있다.",
-    "en": "The debt ratio expanded significantly from 94.3% in 2022 to 228.6% in 2025. If additional M&A or facility investment continues, borrowing burdens could increase further, and rising interest expense could weigh on future net income."
+    "ko": "부채비율 228.6%와 부채총계 1조 5,755억원은 금리와 차환 환경의 영향을 받는다. 2025년 영업활동 현금흐름이 248억원으로 줄어 설비와 연료전지 증설 자금을 영업현금으로 충당하는 여력이 작아졌다. 지배주주 지분 대비 비지배지분이 큰 구조는 지배주주 몫의 이익 변동 폭을 키운다.",
+    "en": "A debt-to-equity ratio of 228.6% and total liabilities of KRW 1.58 trillion leave the company exposed to interest rates and refinancing conditions. Operating cash flow fell to KRW 24.8 billion in 2025, which reduces the room to fund equipment and fuel-cell capacity from operating cash. A large non-controlling interest relative to controlling shareholders' equity also widens the swings in profit attributable to controlling shareholders."
    }
   },
   {
    "cat": {
-    "ko": "사업구조 복잡성 리스크",
-    "en": "Business Structure Complexity Risk"
+    "ko": "신사업 실행",
+    "en": "New-business execution"
    },
    "body": {
-    "ko": "미코그룹은 상장 자회사 코미코와 다수의 비상장 계열사(미코파워, 미코세라믹스, HPS, 플랜텍, 넴에너지 등)로 구성돼 있어 그룹 전체의 가치와 손익 구조를 파악하기가 상대적으로 복잡하다. 자회사별 상장·비상장 여부와 지분율 변동에 따라 지배주주 귀속 실적이 연결 실적과 다르게 나타날 수 있다.",
-    "en": "The MiCo group is composed of listed subsidiary Comico and numerous unlisted affiliates including MiCo Power, MiCo Ceramics, HPS, Plantec and NEM Energy, making it relatively complex to assess the group's overall value and profit structure. Depending on each subsidiary's listing status and changes in equity stakes, results attributable to owners can diverge from overall consolidated results."
+    "ko": "SOFC의 안성·평택 증설과 자회사 합병이 실제 이익으로 이어지는지는 아직 확인되지 않은 단계다. 연료전지 초기 투자가 2026년 영업이익을 압박한 만큼 증설 가동률과 수주 실적이 늦어지면 적자 구조가 길어질 수 있다. SOFC 테마 관심이 주가에 반영되는 것과 사업 성과는 별개로 봐야 한다.",
+    "en": "Whether the SOFC expansions in Anseong and Pyeongtaek and the subsidiary merger turn into actual profit is still unproven. Because early fuel-cell investment has pressured 2026 operating profit, a delay in capacity utilization or orders could extend the loss pattern. Market interest in the SOFC theme should be distinguished from actual business results."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 9월 말까지",
-    "en": "By late September 2026"
+    "ko": "2026년 12월",
+    "en": "December 2026"
    },
    "what": {
-    "ko": "넴에너지 인수가 계획대로 3분기 내 최종 완료되는지, 규제 당국 승인 절차의 진행 상황을 확인할 필요가 있다.",
-    "en": "It is worth confirming whether the NEM Energy acquisition is finalized within the third quarter as planned, and tracking the progress of regulatory approval procedures."
+    "ko": "평택 신공장 30MW 생산 체제 구축의 진척과 가동 시점을 확인한다. 연료전지 증설이 매출과 영업이익에 반영되기 시작하는지가 핵심이다.",
+    "en": "Check progress on the 30MW production setup at the new Pyeongtaek plant and its start-up timing. The key question is whether fuel-cell expansion begins to show up in revenue and operating profit."
    }
   },
   {
    "when": {
-    "ko": "2026년 11월경",
-    "en": "Around November 2026"
+    "ko": "2027년 3월 말(사업보고서 제출 기한)",
+    "en": "End of March 2027 (annual report filing deadline)"
    },
    "what": {
-    "ko": "3분기 실적 발표에서 반도체 부문의 성장세가 유지되는지와 에너지·환경 부문의 통합 비용이 줄며 손익이 정상화되는지를 확인할 시점이다.",
-    "en": "The 3Q26 earnings release will be a point to check whether semiconductor segment growth is sustained and whether the energy and environment segment's profitability is normalizing as integration costs decline."
+    "ko": "2026년 사업보고서에서 연간 매출, 영업이익률, 지배주주 순이익, 부채비율을 확인한다. 2026년 4분기 실적은 이 보고서로 처음 정기보고서 수치로 확정된다.",
+    "en": "The 2026 annual report will confirm full-year revenue, operating margin, net profit attributable to controlling shareholders, and the debt-to-equity ratio. Fourth-quarter 2026 results will first be confirmed as formal filed figures in this report."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기 중",
-    "en": "During the fourth quarter of 2026"
+    "ko": "2027년 5월 15일 전후(분기보고서 제출 기한)",
+    "en": "Around May 15, 2027 (quarterly report filing deadline)"
    },
    "what": {
-    "ko": "미코파워 평택 신공장(30MW 규모)의 실제 가동 개시와 초기 매출 반영 여부를 확인할 필요가 있다.",
-    "en": "It is worth checking whether MiCo Power's new Pyeongtaek plant (30MW capacity) actually begins operations and whether initial revenue contribution is reflected."
+    "ko": "2027년 1분기 분기보고서에서 영업이익률이 2026년 분기 흐름 대비 회복되는지, 연료전지 초기 투자 비용이 줄었는지를 본다.",
+    "en": "The first-quarter 2027 quarterly report will show whether operating margin recovers from the 2026 quarterly pattern and whether early fuel-cell investment costs decline."
    }
   },
   {
    "when": {
-    "ko": "향후 공시 시점",
-    "en": "Upon future disclosure"
+    "ko": "합병 종결 공시 시점(일정 미확인)",
+    "en": "Timing of merger completion disclosure (date not confirmed)"
    },
    "what": {
-    "ko": "미코세라믹스 등 비상장 자회사의 별도 상장(IPO) 추진과 관련한 공식 공시 여부를 지켜볼 필요가 있다.",
-    "en": "It is worth monitoring for any official disclosure regarding a potential separate listing (IPO) of unlisted subsidiaries such as MiCo Ceramics."
+    "ko": "자회사 미코하이테크 흡수합병이 종결되면 연결 구조와 사업 효율화 효과가 공시로 확인된다.",
+    "en": "Once the absorption merger of subsidiary MiCo Hitech is completed, the change in group structure and any efficiency gains will be confirmed through disclosures."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "미코는 반도체 부품 사업의 안정적 성장과 에너지·환경 부문의 대형 M&A가 동시에 진행되며 외형이 빠르게 확대되고 있는 회사다. 2025년 연결 매출은 9,770억원까지 늘었으나 영업이익률은 10.3%로 낮아졌고, 2026년 1분기와 2분기 사이 지배주주순이익이 적자와 흑자를 오가는 등 분기별 변동성이 뚜렷하게 나타났다. 넴에너지 인수와 미코파워 평택 신공장 증설 등 성장 동력이 다수 존재하지만, 이는 아직 완료되지 않았거나 초기 단계에 있는 사업들이다. 동시에 연속적인 M&A로 부채비율이 크게 확대돼 재무 건전성 측면의 부담도 함께 커졌다. 상장 자회사 코미코와 다수의 비상장 계열사로 구성된 복잡한 연결구조는 그룹 전체 가치를 판단하는 데 있어 추가적인 이해가 필요한 요소다. 향후 넴에너지 인수 완료 시점, 에너지·환경 부문 손익 정상화 속도, 반도체 부문의 성장 지속 여부가 실적 방향을 가늠하는 핵심 변수가 될 것으로 보인다.",
-   "en": "MiCo is a company undergoing rapid expansion driven by both steady growth in its semiconductor parts business and a large-scale M&A push in its energy and environment segment. Consolidated 2025 revenue grew to KRW 977.0bn, but operating margin declined to 10.3%, and net income attributable to owners swung between loss and profit between 1Q26 and 2Q26, showing pronounced quarterly volatility. While growth drivers such as the NEM Energy acquisition and MiCo Power's Pyeongtaek plant expansion exist, these initiatives remain either incomplete or at an early stage. At the same time, successive M&A has significantly expanded the debt ratio, adding to financial soundness concerns. The complex consolidated structure comprising listed subsidiary Comico and numerous unlisted affiliates is a factor requiring additional understanding when assessing overall group value. Going forward, the timing of the NEM Energy acquisition's completion, the pace of profitability normalization in the energy and environment segment, and whether semiconductor segment growth continues are likely to be key variables shaping the direction of results."
+   "ko": "미코는 2023년 저점 이후 2024년과 2025년 매출과 영업이익이 함께 늘며 외형을 키웠다. 다만 2025년 영업이익률은 10.3%로 2024년 17.5%보다 낮아졌고, 2026년 3분기에는 지배주주 순손실 268억원으로 적자 전환했다. 반도체 부문은 AI·HBM 관련 수요를 바탕으로 분기 매출이 4개 분기 연속 늘었지만 이익은 같은 흐름을 따르지 않았다. 연료전지는 안성·평택 증설과 SOFC 테마 관심이 맞물린 신성장 축이나, 2026년 상반기 기준 초기 투자 부담이 영업이익을 누르고 있다. 재무 측면에서는 부채비율이 228.6%까지 올라 레버리지가 커졌고, 2025년 영업활동 현금흐름은 248억원으로 줄었다. 강세 요인은 수요 기반과 생산능력 확대, 소재 내재화이며, 약세 요인은 이익률 하락과 재무 부담이다. 다음 확인 지점은 2026년 사업보고서의 연간 영업이익률과 평택 신공장의 가동 시점이다.",
+   "en": "MiCo expanded its top line after the 2023 low, with both revenue and operating profit rising in 2024 and 2025. However, the operating margin fell from 17.5% in 2024 to 10.3% in 2025, and the third quarter of 2026 brought a net loss attributable to controlling shareholders of KRW 26.8 billion. The semiconductor segment's quarterly revenue has risen for four consecutive quarters on AI and HBM-related demand, but profit has not followed the same path. Fuel cells, where Anseong and Pyeongtaek expansions coincide with interest in the SOFC theme, form a new growth pillar, yet early investment costs weighed on operating profit in the first half of 2026. On the financial side, the debt-to-equity ratio rose to 228.6%, and operating cash flow fell to KRW 24.8 billion in 2025. Strengths include demand exposure, capacity expansion, and in-house materials, while weaknesses include margin decline and balance-sheet burden. The next checkpoints are the operating margin in the 2026 annual report and the start-up timing of the new Pyeongtaek plant."
   }
  },
  "sources": [
-  "https://m.thinkpool.com/compDiscuss/cont/1018389",
-  "https://market.edaily.co.kr/stock/059090/",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A059090",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=059090",
+  "https://www.butler.works/ko/companies/00366942",
+  "https://news.jkn.co.kr/post/860639",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Corp.asp?gicode=A059090&NewMenuID=102/1000",
   "https://www.bosoop.com/stocks/059090/",
-  "https://alphadistill.com/report/1883",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Finance.asp?pGB=1&gicode=A059090&cID=&MenuYn=Y&ReportGB=&NewMenuID=103&stkGb=701",
+  "https://news.jkn.co.kr/post/898298",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A059090&cID=&MenuYn=Y&ReportGB=B&NewMenuID=Y&stkGb=701",
+  "https://kr.investing.com/news/transcripts/article-93CH-2172101",
+  "https://www.vegannews.co.kr/news/article.html?no=406771",
+  "https://kr.investing.com/news/transcripts/article-93CH-2158649",
   "https://www.investing.com/equities/mico-ltd-earnings",
-  "https://www.micopower.com/",
-  "https://www.etnews.com/20241111000305",
-  "https://www.igasnet.com/news/articleView.html?idxno=21780",
-  "https://www.h2news.kr/news/articleView.html?idxno=11151",
-  "https://micopower.com/kr/sofc/tucy_intro.php",
-  "https://ideal-life.co.kr/1038",
-  "https://www.thelec.kr/news/articleView.html?idxno=30024",
-  "https://www.jobplanet.co.kr/companies/375268/landing/%EB%AF%B8%EC%BD%94%ED%8C%8C%EC%9B%8C",
-  "https://www.newspim.com/news/view/20260611000947",
-  "https://m.thinkpool.com/compDiscuss/cont/1026493",
-  "https://m.finance.daum.net/quotes/A100840/news/stock/20260601174419202",
-  "https://www.sedaily.com/article/20054473"
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02919206616125720",
+  "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Results-for-the-Third-Quarter-of-Fiscal-2026/default.aspx",
+  "https://s25.q4cdn.com/621799436/files/doc_financials/2026/q3/Micron_Q3_26_Earnings_Deck.pdf",
+  "https://kr.investing.com/news/transcripts/article-93CH-2113509",
+  "https://m.thinkpool.com/compDiscuss/cont/1024676",
+  "https://m.thinkpool.com/stockDiscuss/059090/cont/11881975"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "059090",
  "name": "미코",
  "name_en": "MiCo Ltd.",
@@ -223,11 +223,11 @@
   "반도체"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 05:29",
- "dataDate": "20260904",
+ "reportDate": "2026-11-18",
+ "reportTs": "2026-11-18 07:07",
+ "dataDate": "20261117",
  "quant": {
-  "asOf": "2026-09-04",
+  "asOf": "2026-11-17",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -297,12 +297,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 248593861112,
-    "op": 30202679869,
-    "np_owner": 11972635040
-   },
-   {
     "q": "2025Q3",
     "rev": 245401380370,
     "op": 22388639568,
@@ -325,29 +319,39 @@
     "rev": 349190198259,
     "op": 19502426666,
     "np_owner": 21471483957
+   },
+   {
+    "q": "2026Q3",
+    "rev": 370003541834,
+    "op": 16272967860,
+    "np_owner": -26782668142
    }
   ],
   "valuation": {
-   "price": 18060,
-   "mcap": 0.6035,
+   "price": 20000,
+   "mcap": 0.6683,
    "shares": 33416778,
    "total_shares": 33416778,
-   "wavg_shares": 31508777,
-   "per": 37.391,
-   "eps": 483,
-   "pbr": 3.0925,
-   "bps": 5840,
-   "roe_ttm": 10.8,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": 16151692734,
+   "wavg_shares": 31509166,
+   "per": null,
+   "eps": -368,
+   "pbr": 4.1399,
+   "bps": 4831,
+   "roe_ttm": -9.2,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": -12284244552,
    "ccy": "KRW",
    "bps_src": "자체",
    "eps_src": "순이익÷주식수",
-   "pbr_krx": 4.94,
+   "pbr_krx": 5.46,
    "bps_krx": 3658.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
-   "div": 0.0
+   "div": 0.0,
+   "hidden": {
+    "per": "loss"
+   }
   }
- }
+ },
+ "textRules": 2
 }

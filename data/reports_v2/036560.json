@@ -1,230 +1,218 @@
 {
  "title": {
-  "ko": "펌프·밸브 본업과 고려아연 지분가치의 이중구조",
-  "en": "A Pump-Valve Maker Shadowed by Its Korea Zinc Stake"
+  "ko": "영업이익 둔화 속 배당수익이 순이익을 떠받치는 구조",
+  "en": "Operating profit slows as dividend income props up net profit"
  },
  "lead": {
-  "ko": "KZ정밀은 산업용 펌프·밸브 제조가 본업이지만, 실적과 자산 규모의 상당 부분은 고려아연 지분의 평가·배당 손익에 좌우되는 이중적 구조를 보이고 있다.",
-  "en": "KZ Precision's core business is industrial pumps and valves, but a large share of its earnings and balance sheet is shaped by valuation and dividend flows from its Korea Zinc stake."
+  "ko": "KZ정밀은 영업이익이 2023년 정점 이후 2024년과 2025년 2년 연속 줄었고, 2026년에는 배당금 수익이 순이익에서 큰 비중을 차지하는 구조가 뚜렷하다.",
+  "en": "KZ Precision's operating profit has declined in 2024 and 2025 after peaking in 2023, and dividend income now makes up a large share of its 2026 net profit."
  },
  "keypoints": [
   {
-   "ko": "본업(펌프·밸브) 매출은 2023년 정점 이후 2년 연속 감소, 영업이익률도 15.0%→13.5%→9.2%로 하락했다.",
-   "en": "Core pump-valve revenue has declined for two straight years since peaking in 2023, and operating margin slid from 15.0% to 13.5% to 9.2%."
+   "ko": "연간 영업이익은 2023년 208억원에서 2024년 152억원, 2025년 102억원으로 낮아졌고, 2025년 영업이익률은 9.2%였다.",
+   "en": "Annual operating profit fell from KRW 20.8 billion in 2023 to KRW 15.2 billion in 2024 and KRW 10.2 billion in 2025, with the 2025 operating margin at 9.2%."
   },
   {
-   "ko": "2026년 1분기 순이익(85억원)은 영업이익(18억원)을 크게 상회했는데, 이는 고려아연 지분 관련 배당·평가 손익 영향으로 추정된다.",
-   "en": "First-quarter 2026 net income of KRW 8.5 billion far exceeded operating profit of KRW 1.8 billion, likely reflecting dividend and valuation effects tied to its Korea Zinc stake."
+   "ko": "2026년 1~9월 누계 당기순이익은 181억 6,000만원으로 같은 기간 누계 영업이익 110억 9,200만원을 웃돌았다. 이는 2026년 11월 5일 공시된 잠정치 기준이며, 공시에는 배당금 수익 약 125억원이 반영됐다고 기재됐다.",
+   "en": "Cumulative net profit for January to September 2026 was KRW 18.16 billion, above cumulative operating profit of KRW 11.09 billion. These are preliminary figures disclosed on November 5, 2026, and the filing says dividend income of about KRW 12.5 billion was included."
   },
   {
-   "ko": "회사는 영풍·MBK파트너스와의 고려아연 경영권 분쟁에서 최윤범 회장 측 우군으로 분류되며, 9,300억원대 주주대표소송을 제기해 진행 중이다.",
-   "en": "The company is aligned with Chairman Choi Yun-beom's side in the Korea Zinc governance battle against Youngpoong and MBK Partners, and has filed a roughly KRW 930 billion shareholder derivative lawsuit that remains ongoing."
+   "ko": "2026년 3분기 매출은 186억원으로 전년 동기 대비 33.5% 감소했고, 지배주주 순이익은 27.8억원으로 전년 동기 대비 22.3% 증가했다.",
+   "en": "Third-quarter 2026 revenue fell 33.5% year on year to KRW 18.6 billion, while net profit attributable to shareholders rose 22.3% to KRW 2.78 billion."
   },
   {
-   "ko": "자기자본은 2022년 3,405억원에서 2025년 5,812억원으로 급증했는데, 상당 부분이 고려아연 지분의 공정가치 상승에 기인한다.",
-   "en": "Shareholders' equity jumped from KRW 340.5 billion in 2022 to KRW 581.2 billion in 2025, largely driven by fair-value gains on its Korea Zinc holding."
+   "ko": "회사가 공시한 2026년 3분기 수주누계는 약 289억원으로, 직전 분기 약 230억원 대비 25.7% 늘었다.",
+   "en": "The company disclosed third-quarter 2026 order intake of about KRW 28.9 billion, up 25.7% from roughly KRW 23 billion in the prior quarter."
   },
   {
-   "ko": "2026년 9월 10일 개정 상법 시행으로 감사위원 분리선출 확대 등 지배구조 이슈가 본격화될 전망이다.",
-   "en": "The revised Commercial Act taking effect on September 10, 2026 is set to bring governance issues such as expanded separate election of audit committee members into sharper focus."
+   "ko": "최대주주 등 지분율은 70.30%(2025년 12월 말 기준)로, 주주 구조와 그룹 간 지분 관계가 함께 거론되는 종목이다.",
+   "en": "The largest shareholder group, including related parties, held 70.30% as of the end of December 2025, and the company's cross-holdings with a related group are often discussed alongside its results."
   }
  ],
  "business": {
-  "ko": "KZ정밀(옛 영풍정밀)은 1986년 미국 플로우서브(Flowserve)와의 기술제휴로 펌프 생산을 시작한 유체기계 전문기업으로, 산업용 펌프·밸브·주물을 제조·판매한다. 유체기계사업부는 정유·석유화학 등 프로세스 설비에 쓰이는 원심펌프와 유체·기체·분체 이송용 밸브, 그리고 자체 주물공장에서 생산하는 주물품으로 구성된다. 회사는 API-610, ASME 등 국제 규격에 따라 정유·석유화학·화학·2차전지 등 다양한 산업에 제품을 공급하고 있다. 1996년 자체 주물공장을 설립해 주물부터 가공·조립·테스트까지 일관 생산 체계를 갖췄고, 밸브 부문에서는 Metal Seat 및 High Alloy 분야의 기술력을 보유하고 있다. 2015년부터 해외 직접 판매를 확대해 현재 10개국에 글로벌 영업망을 형성했으며, 영남·호남·중부권에 퀵서비스센터를 운영해 신속한 고객 대응 체계를 구축했다. 다만 일반적인 제조업체와 달리 이 회사는 고려아연·영풍 등 계열·관계사 지분을 상당량 보유한 특수한 자산 구조를 지니고 있어, 사업보고서상 자산과 순이익의 흐름을 본업만으로 설명하기 어렵다. 실제로 회사는 영풍 보통주 지분과 고려아연 지분을 각각 3%대, 2%대 수준으로 보유하고 있는 것으로 파악된다.",
-  "en": "KZ Precision (formerly Youngpoong Precision) is a fluid-machinery specialist that began pump production in 1986 through a technology partnership with Flowserve of the United States, manufacturing and selling industrial pumps, valves, and castings. Its fluid-machinery division covers centrifugal pumps used in refining and petrochemical process equipment, valves for fluid, gas, and powder transport, and castings produced at its own foundry. The company supplies products to the refining, petrochemical, chemical, and battery industries in line with international standards such as API-610 and ASME. It established its own foundry in 1996, integrating casting, machining, assembly, and testing, and holds proprietary technology in metal-seat and high-alloy valves. Since 2015 the company has expanded direct overseas sales and now operates a sales network spanning ten countries, backed by quick-service centers in the Yeongnam, Honam, and central regions of Korea for rapid customer support. Unlike a typical manufacturer, however, the company holds sizeable equity stakes in affiliated firms Korea Zinc and Youngpoong, giving it an unusual asset structure in which reported assets and net income cannot be explained by the core business alone. It is understood to hold roughly a 3%-range stake in Youngpoong common shares and a 2%-range stake in Korea Zinc."
+  "ko": "KZ정밀은 펌프와 밸브를 생산하는 업체다. 시장 분류상으로는 자동차 업종에 묶여 있으나, 사업 내용의 중심은 산업용 펌프·밸브 제조에 있다. 매출은 고객의 수주에서 발생하는 구조여서 분기별 매출이 크게 흔들리며, 회사도 단기간 분기 실적 비교보다 누계 실적 비교가 합리적이라고 밝히고 있다. 주요 수요처는 국내외 석유화학 설비투자로, 설비투자 규모에 따라 매출과 수익구조가 함께 변한다. 회사는 IMF 이후 투자 위축으로 시장 경쟁이 치열해졌다고 설명하며 수출 확대에 주력하고 있다. 해외 시장 확대는 2025년 3분기 누계 기준으로 매출 증가세의 배경으로 꼽혔다. 지배구조 측면에서 최대주주 등 특수관계인 지분율은 70.30%(2025년 12월 말 기준)다. 최창규 회장은 영풍과 경영권 분쟁을 벌이고 있는 고려아연 최윤범 회장의 삼촌이다. KZ정밀은 영풍 보통주 68만 590주(지분율 3.76%)를 보유한 주주이며, 2026년 3월 영풍 이사회에 감사위원 분리선출 확대와 자기주식 소각 등을 요구하는 주주제안을 했다. 보유 지분에서 나오는 배당금 수익은 사업 매출과 별개로 순이익을 끌어올리는 요인이다. 2026년 9월 30일에는 주식담보계약과 관련한 최대주주 변경 계약 정정 공시가 나왔다.",
+  "en": "KZ Precision manufactures pumps and valves. Although the stock is classified under the automotive sector, its core business is industrial pump and valve manufacturing. Revenue is generated from customer orders, so quarterly sales swing sharply, and the company says comparing cumulative results is more meaningful than comparing single quarters. Its main demand source is petrochemical plant investment, so sales and earnings structure move with that investment. The company says investment contracted after the IMF crisis, competition intensified, and it has focused on expanding exports. Overseas market growth was cited as a driver of sales growth on a cumulative basis through the third quarter of 2025. On governance, its largest shareholder group, including related parties, held 70.30% as of the end of December 2025. Its chairman is the uncle of the chairman of another listed group that is in a management-control dispute with a related company. KZ Precision holds 3.76% of a related listed company and in March 2026 submitted shareholder proposals on governance and capital return. Dividend income from equity holdings is recorded apart from operating revenue and lifts net profit. A filing dated September 30, 2026 amended a main-shareholder change tied to a share collateral agreement."
  },
  "earnings": {
-  "ko": "연간 매출은 2022년 890억원에서 2023년 1,387억원으로 급증했으나 이후 2024년 1,127억원, 2025년 1,105억원으로 2년 연속 감소했다. 영업이익률도 2023년 15.0%를 정점으로 2024년 13.5%, 2025년 9.2%까지 낮아지며 본업 수익성 둔화가 뚜렷하다. 지배주주 순이익은 2023년 292억원에서 2024년 192억원, 2025년 93억원으로 더 큰 폭으로 줄었는데, 이는 영업이익 감소 외에 비영업 손익의 변동성이 컸음을 시사한다. 분기별로 보면 2025년 3분기 매출 280억원·영업이익 29억원에서 4분기에는 매출 287억원 대비 영업이익이 14억원으로 급감했고, 순이익은 3억원 수준까지 축소됐다. 2026년 1분기는 매출 230억원, 영업이익 18억원으로 전분기보다도 낮았지만 지배주주 순이익은 85억원으로 오히려 크게 뛰었는데, 이러한 영업이익과 순이익의 괴리는 고려아연 지분에서 발생하는 배당·평가 관련 손익의 영향으로 해석된다. 실제로 한 매체는 2025년 1분기 KZ정밀 회계에 반영된 고려아연 배당 수익이 31억원으로 같은 기간 영업이익 19억원을 웃돌았다고 보도한 바 있어, 이런 패턴이 반복될 가능성을 시사한다. 2026년 2분기에는 매출 343억원, 영업이익 70억원으로 본업 회복 조짐이 나타났고 순이익도 69억원으로 영업이익과 비교적 근접한 흐름을 보였다. 재무구조 측면에서는 부채비율이 2023년 17.8%에서 2025년 26.3%로 다소 높아졌지만 여전히 낮은 수준이며, 자기자본은 자산 재평가 효과 등에 힘입어 크게 늘었다.",
-  "en": "Annual revenue surged from KRW 89.1 billion in 2022 to KRW 138.7 billion in 2023, then fell for two consecutive years to KRW 112.7 billion in 2024 and KRW 110.5 billion in 2025. Operating margin, which peaked at 15.0% in 2023, has since eased to 13.5% in 2024 and 9.2% in 2025, signaling a clear slowdown in core profitability. Net income attributable to owners fell even more sharply, from KRW 29.2 billion in 2023 to KRW 19.2 billion in 2024 and KRW 9.3 billion in 2025, suggesting significant volatility in non-operating items beyond the operating profit decline. On a quarterly basis, revenue of KRW 28.0 billion and operating profit of KRW 2.9 billion in the third quarter of 2025 gave way to a sharp drop in operating profit to KRW 1.4 billion in the fourth quarter despite similar revenue of KRW 28.7 billion, with net income shrinking to roughly KRW 0.3 billion. In the first quarter of 2026, revenue of KRW 23.0 billion and operating profit of KRW 1.8 billion were both lower than the prior quarter, yet net income attributable to owners jumped to KRW 8.5 billion — a divergence widely attributed to dividend and valuation-related gains linked to the Korea Zinc stake. One media outlet reported that dividend income from the Korea Zinc holding booked in the first quarter of 2025 reached KRW 3.1 billion, exceeding that period's operating profit of KRW 1.9 billion, suggesting this pattern can recur. In the second quarter of 2026, revenue rose to KRW 34.3 billion with operating profit of KRW 7.0 billion, pointing to some core-business recovery, and net income of KRW 6.9 billion tracked operating profit more closely. On the balance-sheet side, the debt ratio rose modestly from 17.8% in 2023 to 26.3% in 2025 but remains low, while shareholders' equity has expanded sharply, aided by asset revaluation effects."
+  "ko": "연간 매출은 2022년 891억원에서 2023년 1,387억원으로 55.7% 증가해 2022~2025년 중 가장 큰 해가 됐다. 이후 2024년 1,127억원(전년 대비 18.7% 감소), 2025년 1,105억원(전년 대비 2.0% 감소)으로 2024년부터 2025년까지 2년 연속 감소했다. 영업이익은 2022년 120억원에서 2023년 208억원(전년 대비 73.9% 증가)으로 정점을 찍었고, 2024년 152억원(전년 대비 26.9% 감소), 2025년 102억원(전년 대비 33.0% 감소)으로 2025년이 2022~2025년 중 가장 작은 해가 됐다. 영업이익률은 2022년 13.4%, 2023년 15.0%, 2024년 13.5%, 2025년 9.2%로 낮아졌다. 지배주주 순이익은 2023년 292억원으로 영업이익을 웃돌았고 2025년에는 93억원(전년 대비 51.5% 감소)까지 줄었다. 2023년 순이익이 영업이익보다 큰 것은 영업 외 수익이 반영된 결과로 읽힌다. 배당금 수익은 2025년 3분기 누계 약 31억원에서 2026년 3분기 누계 약 125억원으로 늘었다. 2025년 말 자본총계는 5,812억원이며 전액이 지배주주 지분이고, 부채비율은 2022년 21.0%에서 2025년 26.3%로 올랐다. 영업활동 현금흐름은 2023년 203억원, 2024년 222억원에서 2025년 122억원으로 줄었다. 분기로 보면 2026년 1분기 지배주주 순이익 85.2억원이 정점이었고, 이후 2분기 68.6억원, 3분기 27.8억원으로 2개 분기 연속 감소했다. 영업이익은 2026년 2분기 69.8억원으로 전 분기 대비 282.3% 증가했다가 3분기 22.9억원으로 67.2% 감소했다. 2026년 3분기 매출은 186억원으로 전 분기 대비 45.7% 감소했다. 최근 네 개 분기(2025년 4분기~2026년 3분기) 지배주주 순이익 합계는 185억원이다. 2026년 1~9월 누계 매출은 758억 5,300만원으로 전년 동기 대비 7.3% 감소했고 누계 영업이익은 110억 9,200만원으로 26.0% 늘었다(2026년 11월 5일 공시된 잠정치).",
+  "en": "Annual revenue rose 55.7% from KRW 89.1 billion in 2022 to KRW 138.7 billion in 2023, the largest year in the 2022 to 2025 span. It then fell 18.7% to KRW 112.7 billion in 2024 and 2.0% to KRW 110.5 billion in 2025, a two-year decline from 2024 through 2025. Operating profit rose from KRW 12 billion in 2022 to a peak of KRW 20.8 billion in 2023, which was up 73.9%. It then fell 26.9% to KRW 15.2 billion in 2024 and 33.0% to KRW 10.2 billion in 2025, the smallest year in the span. The operating margin moved from 13.4% in 2022 to 15.0% in 2023, 13.5% in 2024, and 9.2% in 2025. Net profit attributable to shareholders reached KRW 29.2 billion in 2023, above operating profit, and then fell 51.5% to KRW 9.3 billion in 2025. The 2023 gap between net profit and operating profit reads as the effect of non-operating income. Dividend income rose from about KRW 3.1 billion in the first nine months of 2025 to about KRW 12.5 billion in the first nine months of 2026. Equity at the end of 2025 was KRW 581.2 billion, all of it attributable to shareholders, while the debt ratio climbed from 21.0% in 2022 to 26.3% in 2025. Operating cash flow was KRW 20.3 billion in 2023 and KRW 22.2 billion in 2024, then KRW 12.2 billion in 2025. In quarterly terms, net profit attributable to shareholders peaked at KRW 8.52 billion in the first quarter of 2026, then fell to KRW 6.86 billion and KRW 2.78 billion over the next two quarters. Operating profit reached KRW 6.98 billion in the second quarter of 2026, up 282.3% from the prior quarter, then fell 67.2% to KRW 2.29 billion in the third quarter. Third-quarter 2026 revenue fell 45.7% from the prior quarter to KRW 18.6 billion. Net profit attributable to shareholders over the last four quarters, from the fourth quarter of 2025 to the third quarter of 2026, totaled KRW 18.5 billion. Cumulative revenue for January to September 2026 was KRW 75.85 billion, down 7.3% year on year, and cumulative operating profit was KRW 11.09 billion, up 26.0% (preliminary figures disclosed on November 5, 2026)."
  },
  "industry": {
-  "ko": "산업용 펌프·밸브 시장은 정유·석유화학·2차전지 등 전방 설비투자 사이클에 밀접하게 연동되는 특성을 가진다. 국내 정유·화학사들의 설비 증설·정기보수(턴어라운드) 일정과 2차전지 소재 공정 투자 규모가 주문량을 좌우하는 구조다. KZ정밀은 API-610, ASME 등 국제 인증을 갖추고 자체 주물공장을 통한 일관 생산 체계를 구축해 품질·납기 대응력에서 경쟁력을 확보하고 있는 것으로 파악된다. 해외 직접 판매망을 10개국으로 확대해 온 점은 내수 의존도를 낮추는 요인이나, 국내 설비투자 사이클 둔화 시기에는 본업 매출이 민감하게 반응하는 모습이 최근 실적에서도 확인된다. 한편 KZ정밀은 계열·관계사인 영풍·고려아연의 경영권 분쟁 구도에 깊이 연관돼 있어, 순수 제조업체로서의 산업 사이클 분석만으로는 회사 전체의 자산·손익 변동을 온전히 설명하기 어렵다는 평가가 나온다. 총자산 중 고려아연 지분이 차지하는 비중이 확대돼 왔다는 점은 회사의 재무구조가 일반적인 펌프·밸브 제조사와는 다른 양상을 띠게 된 배경으로 지목된다.",
-  "en": "The industrial pump and valve market is closely tied to capital-expenditure cycles in refining, petrochemicals, and battery materials. Order volumes are largely determined by expansion and turnaround maintenance schedules at domestic refiners and chemical producers, as well as investment in battery-material processes. KZ Precision is understood to have built competitiveness in quality and delivery through API-610 and ASME certifications and an integrated in-house foundry system. Expansion of its direct overseas sales network to ten countries has reduced reliance on the domestic market, though core revenue has shown clear sensitivity to slowdowns in the domestic capex cycle, as reflected in recent results. At the same time, the company is deeply entangled in the governance dispute involving affiliates Youngpoong and Korea Zinc, making it difficult to fully explain the company's asset and earnings swings through a pure manufacturing-cycle lens. The growing share of the Korea Zinc stake within total assets is cited as a key reason the company's financial structure diverges from that of a typical pump-and-valve manufacturer."
+  "ko": "KZ정밀의 수요는 국내외 석유화학 설비투자 사이클에 묶여 있다. 투자 위축 이후 시장 경쟁이 치열해진 환경에서 회사는 수출 확대에 주력하고 있다. 2025년 3분기 누계 기준으로는 해외 시장 확대가 매출 증가세를 떠받친 요인으로 공시 자료에 기재됐다. 이는 설비 발주가 몰리는 시기에 매출이 늘고 발주가 뜸한 시기에 줄어드는 구조임을 뜻한다. 2026년 분기 매출은 1분기 230억원, 2분기 343억원, 3분기 186억원으로 큰 폭으로 오르내렸다. 이 흐름은 수주 시점과 매출 인식 시점의 차이가 분기 실적에 그대로 반영되는 사업 특성을 보여 준다. 석유화학 설비투자가 어느 지역에서 어느 속도로 이뤄지는지가 수요 방향을 정하는 변수다. 경쟁 구도에서 회사는 해외 수주 비중을 넓히는 방향을 택했고, 그 성과는 사업보고서의 매출 구성에서 드러난다. 업황의 기본 조건은 투자 위축 이후 경쟁이 치열해진 국면이라는 회사의 설명에 맞춰져 있다.",
+  "en": "KZ Precision's demand is tied to the petrochemical plant investment cycle in Korea and overseas. In an environment where competition intensified after investment contracted, the company has focused on expanding exports. On a cumulative basis through the third quarter of 2025, overseas market expansion was cited in its filing as a driver of sales growth. This means revenue tends to rise when plant orders cluster and to fall when orders slow. Quarterly revenue in 2026 moved sharply, at KRW 23 billion in the first quarter, KRW 34.3 billion in the second, and KRW 18.6 billion in the third. The pattern reflects the gap between order timing and revenue recognition, which feeds directly into quarterly results. Where petrochemical investment is made, and how fast, is the variable that sets the direction of demand. In the competitive setting, the company has chosen to widen its overseas order share, and the results of that choice will appear in the revenue mix in its annual report. The industry backdrop, in the company's own description, is a competitive phase that followed a period of weaker investment."
  },
  "outlook": {
-  "ko": "영풍은 2025년 자기주식 103만 500주 소각, 10대 1 액면분할, 336억원 규모 현금·주식 배당을 시행했으며 상반기 내 잔여 자기주식 20만 3,500주를 추가 소각하고 배당 정책의 중기 로드맵을 마련하겠다고 밝혔다. KZ정밀은 이에 만족하지 않고 영풍에 자기주식 취득·소각, 현물배당 도입, 분기배당 근거 신설, 감사위원 분리선출 확대, ESG위원회의 이사회 내 위원회 격상 등을 담은 주주제안을 제출했으며, 영풍은 법령에 부합하는 안건은 주주총회에 상정하겠다는 입장을 밝혔다. 2026년 9월 10일부터 시행되는 개정 상법에 따라 감사위원 분리선출 확대 조항이 적용되면서, 소수주주 대변 이사의 이사회 진입 여건에 변화가 예상된다. 고려아연을 둘러싼 경영권 분쟁은 KZ정밀이 제기한 9,300억원대 주주대표소송, 영풍-MBK파트너스 경영협력계약 문서제출명령을 둘러싼 항고·재항고, 그리고 영풍이 KZ정밀과 최창규 회장 등을 상대로 제기한 손해배상청구소송 등 다수의 법적 절차가 병행되며 장기화 조짐을 보이고 있다. 이러한 소송 결과와 계약 공개 여부는 향후 고려아연 지분의 처분 가능성 및 가치 평가에 직접적인 영향을 줄 수 있는 변수로 지목된다. 본업 측면에서는 2026년 2분기 매출·영업이익이 개선된 점이 확인되지만, 이 흐름이 이어질지는 향후 분기 실적에서 추가로 확인이 필요하다.",
-  "en": "Youngpoong retired 1,030,500 treasury shares, carried out a 10-for-1 stock split, and paid KRW 33.6 billion in cash and stock dividends in 2025, and has said it will retire a remaining 203,500 treasury shares within the first half of 2026 and establish a medium-term dividend roadmap. Unsatisfied with this, KZ Precision submitted shareholder proposals to Youngpoong calling for treasury share buybacks and retirement, in-kind dividends, a legal basis for quarterly dividends, expanded separate election of audit committee members, and elevation of the ESG committee to a board-level committee; Youngpoong has said it will place proposals that comply with the law on the agenda. Under the revised Commercial Act taking effect on September 10, 2026, expanded separate election of audit committee members is expected to change the conditions under which minority-shareholder-aligned directors can join the board. The Korea Zinc governance dispute continues through multiple parallel legal tracks, including KZ Precision's roughly KRW 930 billion shareholder derivative lawsuit, appeals over the order to disclose the Youngpoong-MBK Partners cooperation agreement, and Youngpoong's damages lawsuit against KZ Precision and Chairman Choi Chang-gyu, all of which show signs of dragging on. The outcomes of these cases and whether the cooperation agreement is disclosed are flagged as variables that could directly affect the potential disposal and valuation of the Korea Zinc stake. On the core business side, the improvement in second-quarter 2026 revenue and operating profit is confirmed, but whether this trend continues will need to be verified in subsequent quarterly results."
+  "ko": "회사가 공시한 수주 흐름이 가장 직접적인 선행 지표다. 2026년 2분기 신규 수주는 약 230억원으로 1분기 약 193억원 대비 19.2% 늘었고, 3분기 수주누계는 약 289억원으로 직전 분기 대비 25.7% 늘었다. 연속으로 늘어난 수주가 매출로 얼마나 이어질지는 다음 사업보고서에서 확인된다. 회사가 밝힌 주주환원 계획은 배당절차 개선과 배당성향 40% 이상 유지다. 2026년 3월 주주총회에서 정관 변경이 완료됐고, 배당액을 먼저 확정한 뒤 배당기준일을 정하는 방식으로 바뀌었다. 2025 사업연도 결산배당의 배당총액은 126억원이었고 시가배당율은 5%로 제시됐다. 회사는 안정적인 현금흐름 확보를 전제로 지속가능한 배당정책을 유지하겠다고 밝혔다. 배당 여력은 영업활동 현금흐름 규모와 보유 지분에서 나오는 배당금 수익의 크기에 좌우된다. 2026년 1~9월 누계 배당금 수익이 약 125억원에 이른 만큼, 배당금 수익의 지속성이 다음 확인 지점이다. 회사가 공개한 정량 목표는 배당성향 40% 이상 유지가 중심이다.",
+  "en": "Order intake is the most direct leading indicator the company discloses. Second-quarter 2026 new orders were about KRW 23 billion, up 19.2% from roughly KRW 19.3 billion in the first quarter, and third-quarter order intake totaled about KRW 28.9 billion, up 25.7% from the prior quarter. How far the two consecutive increases convert into revenue will show up in the next annual report. The shareholder return plan the company has announced centers on improving the dividend procedure and maintaining a payout ratio of at least 40%. At the March 2026 shareholder meeting, articles of incorporation were amended so that the dividend amount is fixed first and the record date is set afterward. The total year-end dividend for fiscal 2025 was KRW 12.6 billion, and the company presented a market dividend yield of 5%. The company said it will maintain a sustainable dividend policy on the premise of securing stable cash flow. Dividend capacity depends on the size of operating cash flow and dividend income from its equity holdings. With cumulative dividend income for January to September 2026 at about KRW 12.5 billion, whether that income continues is the next point to watch. The quantitative target the company has made public centers on keeping the payout ratio at 40% or higher."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 순자산 대비 상당한 할인 상태에서 거래되는 것으로 파악되는데, 이는 순자산의 상당 부분이 고려아연 지분 등 금융자산의 공정가치 평가액으로 구성돼 있어 시장이 이를 액면 그대로 반영하지 않는 것과 관련이 있다는 해석이 가능하다. 과거 형성된 주가수익비율(PER) 밴드와 비교하면 현재는 중하단권에서 거래되는 편으로, 이는 2023년 이후 본업 이익이 방향적으로 둔화된 흐름과 맞물려 있다. 배당 측면에서는 업종 평균을 상회하는 수익률 수준이 형성돼 있는 것으로 파악되지만, 배당의 원천 중 상당 부분이 본업 이익이 아닌 고려아연으로부터 받는 배당수입에 기반한다는 점은 배당의 지속성을 평가할 때 함께 고려할 요소다. 순자산 규모 자체가 고려아연 주가 변동에 연동돼 등락하는 구조인 만큼, 주당순자산(BPS) 역시 결산 시점의 고려아연 시세에 따라 변동성을 지닐 수 있다는 점도 함께 참고할 필요가 있다.",
-  "en": "The stock is understood to trade at a meaningful discount to net asset value, which can be interpreted in light of the fact that a large portion of net assets consists of fair-value gains on financial assets such as the Korea Zinc stake, which the market does not appear to price at face value. Relative to the price-to-earnings band formed in past years, the current level sits in the lower-middle range, consistent with the directional slowdown in core-business earnings since 2023. On the dividend side, the yield level is understood to sit above the sector average, though a substantial portion of that dividend is funded not by core-business earnings but by dividend income received from Korea Zinc, a factor worth weighing when assessing the sustainability of the payout. Because the size of net assets itself moves in tandem with Korea Zinc's share price, book value per share can also carry volatility tied to Korea Zinc's price level at each reporting date."
+  "ko": "주가순자산비율은 1배를 밑도는 수준으로, 장부상 자본에 비해 주가가 낮게 형성된 구간이다. 자본총계 5,812억원이 전액 지배주주 지분이라는 점이 이 비율의 바탕이다. 주가수익비율은 순이익 변동에 민감하다. 2026년 분기 지배주주 순이익은 1분기 85.2억원에서 3분기 27.8억원으로 줄었고, 최근 네 개 분기 합계는 185억원이다. 이 가운데 배당금 수익의 비중이 커서 주가수익비율은 영업 기준 수익성과 따로 읽는 것이 사실관계에 맞다. 배당수익률은 배당성향 목표(40% 이상)와 2025 사업연도 배당총액 126억원을 함께 놓고 보면 해석이 쉬워진다. 2022~2025년 영업이익이 정점 이후 낮아진 흐름은 배수의 해석에도 그대로 반영된다.",
+  "en": "The price-to-book ratio sits below 1x, which means the share price is set low relative to book equity. Equity of KRW 581.2 billion, all attributable to shareholders, is the base for this ratio. The price-to-earnings ratio is sensitive to swings in net profit. Quarterly net profit attributable to shareholders fell from KRW 8.52 billion in the first quarter of 2026 to KRW 2.78 billion in the third, and the four-quarter total was KRW 18.5 billion. Because dividend income makes up a large share of that total, the price-to-earnings ratio is best read apart from operating profitability. The dividend yield is easier to interpret when set against the payout target of at least 40% and the fiscal 2025 total dividend of KRW 12.6 billion. The decline in operating profit from its 2023 peak is reflected in how the multiples read."
  },
  "bull": [
   {
    "title": {
-    "ko": "고려아연 지분에서 나오는 안정적 배당 수입",
-    "en": "Stable Dividend Income from the Korea Zinc Stake"
+    "ko": "배당 절차와 정책의 정비",
+    "en": "Dividend procedure and policy overhaul"
    },
    "body": {
-    "ko": "회사는 고려아연 지분에서 매년 배당 수입을 수취하고 있으며, 최근 3년간 고려아연이 중간배당을 포함해 주당 1만 5,000원~2만원 수준의 배당을 시행한 것으로 보도된 바 있다. 이 배당 수입은 영업외수익으로 반영되어 본업 이익이 둔화된 시기에도 순이익을 보완하는 완충 역할을 해왔다. 2026년 1분기 순이익이 영업이익을 크게 상회한 사례는 이러한 배당·평가 손익의 완충 효과를 보여주는 단적인 예다.",
-    "en": "The company receives annual dividend income from its Korea Zinc stake, and Korea Zinc is reported to have paid dividends of roughly KRW 15,000 to 20,000 per share, including interim dividends, over the past three years. This dividend income is booked as non-operating income and has served as a buffer for net income even during periods when the core business slowed. The first-quarter 2026 case in which net income far exceeded operating profit illustrates this buffering effect from dividend and valuation-related income."
+    "ko": "회사는 2026년 3월 주주총회에서 정관을 바꿔 배당액을 먼저 확정한 뒤 배당기준일을 정하는 절차를 도입했다. 배당성향 40% 이상을 유지하고 안정적인 현금흐름을 확보해 지속가능한 배당정책을 이어 가겠다는 계획도 함께 밝혔다. 2025 사업연도 결산배당의 배당총액은 126억원이며, 회사는 조세특례제한법 기준 고배당기업에 해당한다고 설명했다.",
+    "en": "At the March 2026 shareholder meeting, the company amended its articles so that the dividend amount is fixed first and the record date is set afterward. It also outlined a plan to keep the payout ratio at 40% or higher and to maintain a sustainable dividend policy supported by stable cash flow. The total dividend for fiscal 2025 was KRW 12.6 billion, and the company described itself as a high-dividend company under the Restriction of Special Taxation Act."
    }
   },
   {
    "title": {
-    "ko": "낮은 부채비율과 견고한 재무 완충력",
-    "en": "Low Leverage and Solid Financial Buffer"
+    "ko": "수주 흐름의 개선",
+    "en": "Improving order intake"
    },
    "body": {
-    "ko": "부채비율은 2023년 17.8%에서 2025년 26.3%로 소폭 올랐지만 여전히 낮은 수준을 유지하고 있다. 자기자본은 2022년 3,405억원에서 2025년 5,812억원으로 크게 늘어 재무 완충력이 확충됐다. 이는 사업 둔화 국면에서도 재무적 유연성을 확보할 수 있는 요인으로 볼 수 있다.",
-    "en": "The debt ratio rose only modestly from 17.8% in 2023 to 26.3% in 2025 and remains at a low level. Shareholders' equity expanded sharply from KRW 340.5 billion in 2022 to KRW 581.2 billion in 2025, bolstering the company's financial buffer, which can be viewed as a source of financial flexibility even during a business slowdown."
+    "ko": "2026년 2분기 신규 수주는 약 230억원으로 1분기 193억원 대비 19.2% 늘었다. 3분기 수주누계는 약 289억원으로 직전 분기 대비 25.7% 늘어 두 분기 연속 증가했다. 2026년 2분기 매출은 343억원으로 전 분기 대비 49.2% 증가해, 수주가 매출로 이어지는 흐름이 확인된 분기이기도 했다.",
+    "en": "Second-quarter 2026 new orders were about KRW 23 billion, up 19.2% from KRW 19.3 billion in the first quarter. Third-quarter order intake totaled about KRW 28.9 billion, up 25.7% from the prior quarter, marking two consecutive quarters of growth. Second-quarter 2026 revenue of KRW 34.3 billion rose 49.2% from the prior quarter, showing orders converting into sales in that period."
    }
   },
   {
    "title": {
-    "ko": "지배구조 개선 요구를 통한 주주환원 압박",
-    "en": "Governance Push That Pressures for Greater Shareholder Returns"
+    "ko": "재무 여력",
+    "en": "Financial capacity"
    },
    "body": {
-    "ko": "KZ정밀은 영풍을 상대로 자기주식 취득·소각, 현물배당 도입, 분기배당 근거 신설 등을 요구하는 주주제안을 지속적으로 제출하고 있다. 영풍 역시 자사주 소각과 액면분할, 현금·주식 배당 등 일부 주주환원 조치를 시행했다고 밝힌 바 있다. 이러한 활동이 이어질 경우 관계사 차원의 주주환원 확대로 이어질 가능성이 있다는 점은 참고할 만하다.",
-    "en": "KZ Precision has repeatedly submitted shareholder proposals to Youngpoong calling for treasury share buybacks and retirement, the introduction of in-kind dividends, and a legal basis for quarterly dividends. Youngpoong, for its part, has said it implemented some shareholder-return measures, including treasury share retirement, a stock split, and cash and stock dividends. Continuation of this activism could plausibly lead to broader shareholder returns across the affiliated companies, which is worth noting."
+    "ko": "2025년 말 부채총계는 1,528억원이고 자본총계는 5,812억원으로 부채비율은 26.3%다. 자본총계는 전액 지배주주 지분이며, 부채비율은 2022년 21.0%에서 2024년 25.3%로 높아진 뒤 2025년에도 26.3%로 소폭 올랐다. 영업활동 현금흐름은 2025년 122억원으로 2022년 127억원과 비슷한 수준을 유지했다.",
+    "en": "At the end of 2025, total liabilities were KRW 152.8 billion and equity was KRW 581.2 billion, for a debt ratio of 26.3%. All equity is attributable to shareholders, and the debt ratio rose from 21.0% in 2022 to 25.3% in 2024 and 26.3% in 2025. Operating cash flow was KRW 12.2 billion in 2025, close to the KRW 12.7 billion recorded in 2022."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "본업 매출·마진의 3년 연속 하향 흐름",
-    "en": "Three Straight Years of Declining Core Revenue and Margin"
+    "ko": "영업 수익성의 둔화",
+    "en": "Slowing operating profitability"
    },
    "body": {
-    "ko": "매출은 2023년 1,387억원을 정점으로 2024년 1,127억원, 2025년 1,105억원으로 2년 연속 줄었다. 영업이익률도 같은 기간 15.0%에서 13.5%, 9.2%로 하락하며 본업 수익성 둔화가 이어지고 있다. 2026년 2분기 일부 회복 조짐이 나타났지만 이 흐름이 지속될지는 추가 확인이 필요하다.",
-    "en": "Revenue peaked at KRW 138.7 billion in 2023 before falling for two consecutive years to KRW 112.7 billion in 2024 and KRW 110.5 billion in 2025. Operating margin over the same period declined from 15.0% to 13.5% to 9.2%, reflecting a continued slowdown in core profitability. While the second quarter of 2026 showed some signs of recovery, whether this trend will persist requires further confirmation."
+    "ko": "영업이익률은 2023년 15.0%에서 2025년 9.2%로 낮아졌다. 2026년 3분기 영업이익은 22.9억원으로 전년 동기 대비 20.8% 줄었다. 영업이익이 줄어드는 가운데 순이익이 늘어난 것은 배당금 수익의 기여로 해석되며, 그래서 본업 회복 여부는 영업이익 추이가 가르는 지점이다.",
+    "en": "The operating margin fell from 15.0% in 2023 to 9.2% in 2025. Third-quarter 2026 operating profit was KRW 2.29 billion, down 20.8% year on year. Net profit rose while operating profit fell, which reflects the contribution of dividend income, so whether the core business recovers is decided by the operating profit trend."
    }
   },
   {
    "title": {
-    "ko": "순이익의 높은 비영업 변동성",
-    "en": "High Non-Operating Volatility in Net Income"
+    "ko": "매출 변동성",
+    "en": "Revenue volatility"
    },
    "body": {
-    "ko": "2026년 1분기에는 영업이익 18억원에 비해 순이익이 85억원으로 크게 웃돌았고, 2025년 4분기에는 영업이익 14억원에 순이익이 3억원 수준으로 크게 낮아지는 등 분기별 순이익 변동성이 크다. 이는 고려아연 지분과 관련된 배당·평가 손익이 실적의 예측 가능성을 낮추는 요인으로 작용하고 있음을 보여준다. 투자자 입장에서는 영업이익과 순이익 간의 괴리를 매 분기 확인해야 하는 부담이 있다.",
-    "en": "In the first quarter of 2026, net income of KRW 8.5 billion far exceeded operating profit of KRW 1.8 billion, while in the fourth quarter of 2025 net income fell to roughly KRW 0.3 billion against operating profit of KRW 1.4 billion, illustrating substantial quarter-to-quarter volatility. This shows how dividend and valuation-related income tied to the Korea Zinc stake reduces the predictability of reported results. Investors face the burden of checking the gap between operating profit and net income each quarter."
+    "ko": "2026년 3분기 매출은 186억원으로 2분기 343억원 대비 45.7% 줄었다. 2026년 1~9월 누계 매출은 758억 5,300만원으로 전년 동기 대비 7.3% 감소했다(2026년 11월 5일 공시된 잠정치). 회사는 매출이 수주에서 발생하는 구조라 누계 비교가 합리적이라고 설명하지만, 분기 단위 변동 폭은 여전히 크다.",
+    "en": "Third-quarter 2026 revenue of KRW 18.6 billion fell 45.7% from KRW 34.3 billion in the second quarter. Cumulative revenue for January to September 2026 was KRW 75.85 billion, down 7.3% year on year (preliminary figures disclosed on November 5, 2026). The company says its revenue is generated from orders, so cumulative comparisons are more meaningful, but quarter-to-quarter swings remain large."
    }
   },
   {
    "title": {
-    "ko": "장기화되는 경영권 분쟁·소송 리스크",
-    "en": "Protracted Governance Dispute and Litigation Risk"
+    "ko": "배당금 수익 의존과 지배구조",
+    "en": "Reliance on dividend income and governance"
    },
    "body": {
-    "ko": "KZ정밀은 영풍·MBK파트너스와의 고려아연 경영권 분쟁에서 특정 진영에 가담해 9,300억원대 주주대표소송을 제기했고, 영풍은 반대로 KZ정밀과 최창규 회장 등을 상대로 손해배상청구소송을 제기해 법적 공방이 확대되고 있다. 경영협력계약 문서제출명령을 둘러싼 항고·재항고도 계속되며 분쟁이 장기화되는 모습이다. 이러한 소송 비용과 불확실성은 회사의 자산인 고려아연·영풍 지분 가치 평가와 처분 가능성에 부담 요인으로 작용할 수 있다.",
-    "en": "KZ Precision has taken a side in the Korea Zinc governance battle against Youngpoong and MBK Partners, filing a roughly KRW 930 billion shareholder derivative lawsuit, while Youngpoong has in turn filed a damages lawsuit against KZ Precision and Chairman Choi Chang-gyu, escalating the legal confrontation. Appeals and further appeals over the order to produce the cooperation agreement continue, suggesting the dispute could drag on. The associated litigation costs and uncertainty could weigh on the valuation and potential disposal of the company's Korea Zinc and Youngpoong stakes."
+    "ko": "2026년 1~9월 누계 배당금 수익은 약 125억원으로, 같은 기간 누계 영업이익 110억 9,200만원보다 많았다. 최대주주 등 지분율이 70.30%로 높고, 2026년 9월 30일 주식담보계약과 관련한 최대주주 변경 공시가 나왔다. 그룹 간 분쟁과 얽힌 지배구조 문제는 주주환원 방향에 영향을 줄 수 있어 불확실성으로 남아 있다.",
+    "en": "Cumulative dividend income for January to September 2026 was about KRW 12.5 billion, more than the cumulative operating profit of KRW 11.09 billion for the same period. The largest shareholder group holds 70.30%, and a filing dated September 30, 2026 amended a main-shareholder change tied to a share collateral agreement. Governance issues tied to intergroup disputes could affect the direction of shareholder returns, and that uncertainty remains."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "법적·소송 리스크",
-    "en": "Legal and Litigation Risk"
+    "ko": "지배구조와 그룹 분쟁",
+    "en": "Governance and group dispute"
    },
    "body": {
-    "ko": "9,300억원대 주주대표소송, 경영협력계약 문서제출명령을 둘러싼 항고 절차, 영풍이 KZ정밀을 상대로 제기한 손해배상청구소송 등 다수의 소송이 동시에 진행되고 있다. 소송 결과에 따라 지분 처분 조건이나 계약 내용이 뒤늦게 공개될 가능성이 있어 불확실성이 장기간 지속될 수 있다.",
-    "en": "Multiple lawsuits are proceeding in parallel, including the roughly KRW 930 billion shareholder derivative suit, appeals over the order to produce the cooperation agreement, and Youngpoong's damages lawsuit against KZ Precision. Depending on the outcomes, terms of the equity disposal or the agreement itself could be disclosed later than expected, meaning uncertainty may persist for an extended period."
+    "ko": "회사는 영풍 주주제안과 자기주식 소각 요구 등 그룹 분쟁의 한 축에 서 있다. 영풍은 일부 안건에 대해 추가 설명을 요구하며 신중한 입장을 보였고, 안건 상정 여부는 영풍 이사회의 검토 결과에 따라 정해진다. 분쟁 결과에 따라 주주환원 방향과 지분 구조가 바뀔 수 있다.",
+    "en": "The company is one side of an intergroup dispute, having submitted shareholder proposals to a related listed company that include a request for share buybacks and cancellation. That company has asked for further explanation on some items and has taken a cautious stance. Whether the items are put to a vote depends on the related company's board review, and the outcome could change the direction of shareholder returns and the ownership structure."
    }
   },
   {
    "cat": {
-    "ko": "지분 집중 리스크",
-    "en": "Equity Concentration Risk"
+    "ko": "실적 변동성",
+    "en": "Earnings volatility"
    },
    "body": {
-    "ko": "회사 자산의 상당 부분이 고려아연 단일 종목의 지분 가치에 좌우되는 구조다. 고려아연 주가가 하락할 경우 회사의 자산 규모와 자기자본이 동반 축소될 수 있으며, 이는 재무비율 전반에 영향을 줄 수 있다.",
-    "en": "A significant portion of the company's assets is tied to the value of a single holding, Korea Zinc. If Korea Zinc's share price declines, the company's asset base and equity could shrink in tandem, affecting overall financial ratios."
+    "ko": "매출은 수주 구조상 분기마다 크게 흔들리고, 영업이익률은 2023년 15.0%에서 2025년 9.2%로 낮아졌다. 순이익은 배당금 수익 규모에 따라 달라져 영업 흐름과 괴리가 커질 수 있다. 석유화학 설비투자가 줄어 수주가 감소하면 실적 하방 압력이 커질 수 있다.",
+    "en": "Revenue swings sharply from quarter to quarter because of the order-based structure, and the operating margin fell from 15.0% in 2023 to 9.2% in 2025. Net profit depends on the size of dividend income, so it can diverge widely from operating performance. If petrochemical plant investment shrinks and orders fall, downside pressure on results could increase."
    }
   },
   {
    "cat": {
-    "ko": "전방산업 설비투자 둔화 리스크",
-    "en": "Downstream Capex Slowdown Risk"
+    "ko": "내부자 지분 변동",
+    "en": "Insider holding changes"
    },
    "body": {
-    "ko": "본업인 펌프·밸브 매출은 정유·석유화학·2차전지 업계의 설비투자 및 정기보수 일정에 크게 의존한다. 전방산업의 투자 축소나 발주 지연이 발생하면 본업 매출·마진에 직접적인 영향을 줄 수 있으며, 최근 2년간의 매출·마진 하락 흐름이 이를 뒷받침한다.",
-    "en": "Core pump-and-valve revenue is heavily dependent on capex and maintenance schedules in the refining, petrochemical, and battery industries. Any reduction or delay in downstream investment could directly hit core revenue and margins, a dynamic already reflected in the revenue and margin declines seen over the past two years."
+    "ko": "김성일 상무이사는 2026년 3월 3일부터 4월 20일까지 장내에서 총 2,400주를 매도했고, 4월 27일 공시로 알려졌다. 같은 기간 박찬희 전무이사는 2026년 1월 30일과 2월 4일 장내매수로 보유 주식을 1,358주로 늘렸다. 최종태 이사도 2026년 1월 30일과 2월 4일 장내매수로 1,000주를 추가 매수했다.",
+    "en": "Director Kim Sung-il sold a total of 2,400 shares on the open market between March 3 and April 20, 2026, according to a April 27 filing. Executive director Park Chan-hee raised his holding to 1,358 shares through open-market purchases on January 30 and February 4, 2026. Director Choi Jong-tae added 1,000 shares through open-market purchases on the same two dates."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 9월 10일",
-    "en": "September 10, 2026"
+    "ko": "2026년 12월 말 전후",
+    "en": "Late December 2026"
    },
    "what": {
-    "ko": "개정 상법 시행으로 감사위원 분리선출 확대 조항이 적용된다. 영풍·KZ정밀 관련 지배구조 변화 여부를 확인할 필요가 있다.",
-    "en": "The revised Commercial Act takes effect, expanding separate election of audit committee members. It is worth checking whether this triggers governance changes at Youngpoong and KZ Precision."
+    "ko": "배당기준일 흐름이다. 직전 사업연도 배당기준일이 2025년 12월 31일이었고, 회사는 배당액을 먼저 확정한 뒤 기준일을 정하는 절차를 밝혔다. 같은 방식이 적용되는지와 배당성향 40% 이상 유지 여부가 다음 확인 지점이다.",
+    "en": "Watch the dividend record date. The record date for fiscal 2025 was December 31, 2025, and the company has said it will fix the dividend amount before setting the record date. Whether the same procedure applies and whether the payout ratio stays at 40% or higher are the next points to check."
    }
   },
   {
    "when": {
-    "ko": "2026년 11월 초(3분기 실적 발표 예상 시점)",
-    "en": "Early November 2026 (expected Q3 earnings release)"
+    "ko": "2027년 3월 전후",
+    "en": "Around March 2027"
    },
    "what": {
-    "ko": "2026년 3분기 실적에서 본업 매출·마진의 회복 지속 여부와 영업이익·순이익 간 괴리 정도를 재확인할 필요가 있다.",
-    "en": "Third-quarter 2026 results should be checked to see whether the core-business revenue and margin recovery continues, and how large the gap between operating profit and net income remains."
+    "ko": "2026 사업보고서 공시와 정기주주총회다. 연간 매출과 영업이익률(2025년 9.2%와 비교), 배당금 수익의 비중, 연말 수주 흐름과 최대주주 주식담보 관련 내용이 함께 나온다. 전년 정기주주총회가 2026년 3월 19일에 열려 같은 시기가 예상된다.",
+    "en": "The 2026 annual report and the regular shareholder meeting. The filing will show full-year revenue, the operating margin against the 9.2% recorded in 2025, the share of dividend income, year-end order flow, and details on shares pledged by the largest shareholder group. The prior year's meeting was held on March 19, so a similar timing is expected."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 중",
-    "en": "Second half of 2026"
+    "ko": "2027년 5월 초 전후",
+    "en": "Early May 2027"
    },
    "what": {
-    "ko": "영풍이 예고한 잔여 자기주식 20만 3,500주 소각 및 배당 중기 로드맵 발표가 실제로 이행되는지 확인이 필요하다.",
-    "en": "It is worth confirming whether Youngpoong actually follows through on its announced retirement of the remaining 203,500 treasury shares and the release of a medium-term dividend roadmap."
+    "ko": "2027년 1분기 실적 발표다. 비교 기준은 2026년 1분기 지배주주 순이익 85.2억원과 영업이익 18.3억원이다. 분기 매출이 수주 시점에 따라 얼마나 움직였는지와 영업이익이 배당금 수익 없이 유지되는지가 이 분기에서 드러난다.",
+    "en": "The first-quarter 2027 results. The comparison base is KRW 8.52 billion in net profit attributable to shareholders and KRW 1.83 billion in operating profit for the first quarter of 2026. This quarter will show how revenue moved with order timing and whether operating profit holds up without relying on dividend income."
    }
   },
   {
    "when": {
-    "ko": "향후 재판 진행 시점(2026년 하반기~)",
-    "en": "Upcoming court proceedings (H2 2026 onward)"
+    "ko": "2027년 3월 전후",
+    "en": "Around March 2027"
    },
    "what": {
-    "ko": "9,300억원대 주주대표소송, 경영협력계약 문서제출명령 관련 항고·재항고, 영풍의 KZ정밀 대상 손해배상소송 등의 심리 진행 상황을 지속적으로 확인할 필요가 있다.",
-    "en": "Progress in the roughly KRW 930 billion shareholder derivative lawsuit, appeals over the cooperation agreement disclosure order, and Youngpoong's damages lawsuit against KZ Precision should be monitored on an ongoing basis."
-   }
-  },
-  {
-   "when": {
-    "ko": "고려아연 연간 배당 발표 시점",
-    "en": "Timing of Korea Zinc's annual dividend announcement"
-   },
-   "what": {
-    "ko": "고려아연의 배당 규모 및 정책 변화는 KZ정밀의 배당 수입에 직접 영향을 미치므로 관련 공시를 확인할 필요가 있다.",
-    "en": "Changes in the size or policy of Korea Zinc's dividend directly affect KZ Precision's dividend income, making related disclosures worth checking."
+    "ko": "영풍 정기주주총회의 안건 결과다. KZ정밀이 제출한 자기주식 취득·소각과 현물배당 관련 주주제안의 상정 여부와 결과가 주주환원 방향을 가늠하는 지점이다.",
+    "en": "The results of the related listed company's regular shareholder meeting. Whether the share buyback and cancellation proposal and the in-kind dividend proposal KZ Precision submitted are put to a vote, and their outcome, will indicate the direction of shareholder returns."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "KZ정밀은 산업용 펌프·밸브 제조라는 본업을 갖고 있지만, 실적과 재무구조의 상당 부분이 고려아연 지분의 배당·평가 손익에 좌우되는 독특한 구조를 지니고 있다. 본업 매출과 영업이익률은 2023년 이후 2년 연속 하락했으며, 분기별 순이익은 영업이익과 큰 폭으로 괴리되는 모습을 반복적으로 보였다. 회사는 고려아연·영풍 경영권 분쟁의 한 축으로 9,300억원대 주주대표소송을 제기하는 등 법적 공방에 깊이 관여돼 있으며, 이는 향후 지분 가치 평가와 처분 가능성에 영향을 줄 수 있는 변수다. 재무건전성 측면에서는 부채비율이 낮고 자기자본이 크게 확충됐다는 점이 긍정적이나, 이 확충 자체가 고려아연 주가 변동에 연동된 결과라는 점은 함께 고려할 필요가 있다. 2026년 2분기 본업 매출·이익의 일부 회복이 확인됐지만 이 흐름의 지속 여부와 진행 중인 소송의 결과는 추가로 확인해야 할 사안이다. 투자자는 본업 실적과 지분 관련 손익을 구분해서 살펴보는 접근이 필요해 보인다.",
-   "en": "KZ Precision operates a core business of manufacturing industrial pumps and valves, but a substantial portion of its earnings and balance sheet is shaped by an unusual structure tied to dividend and valuation flows from its Korea Zinc stake. Core revenue and operating margin have declined for two consecutive years since 2023, and quarterly net income has repeatedly diverged sharply from operating profit. The company is deeply involved in legal battles as one side of the Korea Zinc governance dispute, having filed a roughly KRW 930 billion shareholder derivative lawsuit, a variable that could affect future valuation and potential disposal of its equity holdings. On the financial-soundness side, a low debt ratio and significantly expanded equity are positives, though it should be kept in mind that this expansion itself largely reflects movements in Korea Zinc's share price. Some recovery in core revenue and profit was confirmed in the second quarter of 2026, but whether this trend continues and how the ongoing litigation is resolved remain matters that require further confirmation. Investors may find it useful to separate the core-business performance from equity-related gains and losses when assessing the company."
+   "ko": "KZ정밀은 2023년 매출과 영업이익이 정점을 찍은 뒤 2024년과 2025년 2년 연속 감소했고, 영업이익률은 2025년 9.2%로 낮아졌다. 2026년 분기 실적은 매출 기준으로 크게 출렁이고 있으며, 지배주주 순이익은 1분기 85.2억원을 정점으로 2분기와 3분기에 2개 분기 연속 줄었다. 반면 수주 흐름은 2026년 2분기와 3분기에 늘었고, 3분기 수주누계는 약 289억원으로 회사가 공시했다. 순이익에서 배당금 수익이 차지하는 비중이 커져 2026년 1~9월 누계 당기순이익 181억 6,000만원 가운데 배당금 수익 약 125억원이 큰 몫을 차지했다. 회사는 배당성향 40% 이상 유지와 배당 절차 개선을 공시했고, 최대주주 지분율이 70.30%로 높아 지배구조와 그룹 간 분쟁이 주주환원 방향에 영향을 줄 수 있는 구도다. 이 글은 정보 제공용이며 매수나 매도 의견을 담지 않는다. 다음 확인 지점은 영업이익 흐름의 회복 여부와 수주가 매출로 전환되는 속도다.",
+   "en": "KZ Precision's sales and operating profit peaked in 2023 and then declined for two consecutive years through 2025, with the operating margin falling to 9.2% in 2025. Quarterly results in 2026 have swung sharply on revenue, and net profit attributable to shareholders peaked at KRW 8.52 billion in the first quarter before falling over the next two quarters. On the other side, order intake rose in the second and third quarters of 2026, and the company disclosed third-quarter order intake of about KRW 28.9 billion. Dividend income now makes up a large share of net profit, and of the KRW 18.16 billion in cumulative net profit for January to September 2026, about KRW 12.5 billion came from dividend income. The company has disclosed a payout ratio of at least 40% and an improved dividend procedure, while the largest shareholder group's 70.30% stake means governance and intergroup disputes could influence the direction of shareholder returns. This report is provided for information only and does not include a buy or sell opinion. The next points to check are whether operating profit recovers and how quickly orders convert into revenue."
   }
  },
  "sources": [
-  "https://www.butler.works/ko/companies/00141389",
-  "https://markets.hankyung.com/stock/036560",
-  "https://www.k5.co.kr/stock/036560",
-  "https://valueline.co.kr/finance/summary/036560",
-  "https://m.thinkpool.com/item/036560",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&cID=&MenuYn=Y&ReportGB=D&NewMenuID=105&stkGb=701&gicode=A036560",
-  "https://www.thinkpool.com/item/036560/news/16371361",
-  "https://www.k5.co.kr/stock/036560/official_notice_read?sfm_idx=504751",
-  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=05966326642363096",
+  "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=713048",
+  "https://www.vegannews.co.kr/news/article.html?no=401013",
+  "https://goinsider.kr/en/stock/00141389",
   "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A036560&NewMenuID=11&cID=AA&MenuYn=Y",
-  "https://www.investing.com/equities/young-poong-precision-corp-earnings",
-  "https://news.infostock.co.kr/a",
-  "https://www.investing.com/equities/young-poong-precision-corp",
-  "https://www.instagram.com/popular/sk%E1%84%92%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%82%E1%85%B5%E1%86%A8%E1%84%89%E1%85%B3-%E1%84%8C%E1%85%A5%E1%86%AB%E1%84%86%E1%85%A1%E1%86%BC-2026-hbm-%E1%84%89%E1%85%B5%E1%86%AF%E1%84%8C%E1%85%A5%E1%86%A8-%E1%84%8C%E1%85%A5%E1%86%AB%E1%84%86%E1%85%A1%E1%86%BC/",
-  "https://itooza.com/vscore/036560",
-  "https://www.instagram.com/p/DaX6MiygeGm/",
-  "https://www.bloter.net/news/articleView.html?idxno=637594",
-  "https://www.ebn.co.kr/news/articleView.html?idxno=1694504"
+  "https://www.datatooza.com/article/20250807161658572852ef370259_80",
+  "https://www.m-i.kr/news/articleView.html?idxno=1399764",
+  "https://m.news.nate.com/view/20260507n26108",
+  "https://m.news.nate.com/view/20260202n27752",
+  "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=05966326642363096",
+  "https://news.nate.com/view/20260427n29719",
+  "https://m.news.nate.com/view/20260319n26333",
+  "https://m.news.nate.com/view/20260304n34695",
+  "https://m.news.nate.com/view/20260205n33380",
+  "https://m.news.nate.com/view/20260210n35432",
+  "https://m.news.nate.com/view/20260319n26283",
+  "https://m.news.nate.com/view/20260304n29937"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "036560",
  "name": "KZ정밀",
  "name_en": "KZ Precision Corporation",
@@ -233,11 +221,11 @@
   "자동차"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 07:07",
- "dataDate": "20260904",
+ "reportDate": "2026-11-18",
+ "reportTs": "2026-11-18 07:07",
+ "dataDate": "20261117",
  "quant": {
-  "asOf": "2026-08-22",
+  "asOf": "2026-11-17",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -248,6 +236,7 @@
     "np_owner": 9303093069,
     "equity": 581167526018,
     "equity_owner": 581167526018,
+    "equity_nci": null,
     "liab": 152840088664,
     "cfo": 12164624583,
     "eps_basic": 591,
@@ -263,6 +252,7 @@
     "np_owner": 19199161723,
     "equity": 482375961342,
     "equity_owner": 482375961342,
+    "equity_nci": null,
     "liab": 122071874986,
     "cfo": 22197154291,
     "eps_basic": 1219,
@@ -278,6 +268,7 @@
     "np_owner": 29214391153,
     "equity": 336447687443,
     "equity_owner": 336447687443,
+    "equity_nci": null,
     "liab": 59903006583,
     "cfo": 20271311753,
     "eps_basic": 1855,
@@ -293,6 +284,7 @@
     "np_owner": 15509594197,
     "equity": 340550766940,
     "equity_owner": 340550766940,
+    "equity_nci": null,
     "liab": 71656711563,
     "cfo": 12728997773,
     "eps_basic": 985,
@@ -302,12 +294,6 @@
    }
   ],
   "quarterly": [
-   {
-    "q": "2025Q2",
-    "rev": 32132811468,
-    "op": 4005699657,
-    "np_owner": 4073010981
-   },
    {
     "q": "2025Q3",
     "rev": 27989129948,
@@ -331,26 +317,36 @@
     "rev": 34270020658,
     "op": 6978754616,
     "np_owner": 6856153458
+   },
+   {
+    "q": "2026Q3",
+    "rev": 18614097663,
+    "op": 2287854568,
+    "np_owner": 2779564593
    }
   ],
   "valuation": {
-   "price": 12150,
-   "mcap": 0.1914,
+   "price": 10430,
+   "mcap": 0.1643,
    "shares": 15750000,
    "total_shares": 15750000,
    "wavg_shares": 15741274,
-   "per": 10.649,
-   "eps": 1141,
-   "pbr": 0.3799,
-   "bps": 31980,
-   "roe_ttm": 3.9,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": 17961925283,
-   "pbr_krx": 0.33,
+   "per": 8.892,
+   "eps": 1173,
+   "pbr": 0.3258,
+   "bps": 32011,
+   "roe_ttm": 3.8,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": 18469216840,
+   "ccy": "KRW",
+   "bps_src": "자체",
+   "eps_src": "공시",
+   "pbr_krx": 0.28,
    "bps_krx": 36900.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 800.0,
-   "div": 6.58
+   "div": 7.67
   }
- }
+ },
+ "textRules": 2
 }
