@@ -1,220 +1,218 @@
 {
  "title": {
-  "ko": "광통신 흑자전환, 양자기술이 다음 과제",
-  "en": "Optical Firm Turns Profitable, Eyes Quantum Tech"
+  "ko": "광다이오드 성장 속 흑자 분기, 유통 비중이 과제",
+  "en": "Photodiode growth brings profitable quarters, distribution mix remains the challenge"
  },
  "lead": {
-  "ko": "우리로는 2025년 3분기부터 4개 분기 연속 영업이익 흑자를 이어가며 회복세를 보이고 있지만, 매출 기반은 2022년 대비 여전히 크게 줄어든 상태다.",
-  "en": "Wooriro has posted four consecutive quarters of operating profit since Q3 2025, but its revenue base remains well below 2022 levels."
+  "ko": "우리로는 연간 매출이 2023년 이후 3년 연속 줄었지만, 광다이오드 수요 회복과 함께 2026년 1분기부터 3분기까지 영업이익이 모두 흑자를 기록해 실적 흐름의 방향이 바뀌는 신호가 나타나고 있다. 다만 2022년부터 4년 연속 지배주주 순손실이 누적된 만큼 이익 기반은 아직 얇다.",
+  "en": "Wooriro's annual revenue has fallen for three straight years since 2023, but photodiode demand has recovered and operating profit was positive in each quarter from Q1 to Q3 2026, signaling a possible turn in momentum. Still, four straight years of parent net losses from 2022 leave the earnings base thin."
  },
  "keypoints": [
   {
-   "ko": "2026년 1분기·2분기 연속으로 매출과 영업이익이 동반 확대되며 영업이익률이 뚜렷하게 개선됐다.",
-   "en": "Revenue and operating profit expanded together in both Q1 and Q2 2026, with operating margin visibly improving."
+   "ko": "2025년 공시 매출은 425억원으로 2023년부터 3년 연속 감소했다.",
+   "en": "Disclosed 2025 revenue was KRW 42.5 billion, the third straight annual decline since 2023."
   },
   {
-   "ko": "SI사업부(IT저장장치 유통)가 2025년 매출의 46.6%로 가장 큰 비중을 차지하며 실적을 좌우한다.",
-   "en": "The SI segment (IT storage device distribution) accounted for 46.6% of 2025 revenue, the largest share driving results."
+   "ko": "2026년 3분기 매출은 204억원으로 전년 동기 대비 68.8% 늘었고, 2025년 4분기 이후 3개 분기 연속 증가했다.",
+   "en": "Q3 2026 revenue reached KRW 20.4 billion, up 68.8% year on year, and has risen for three straight quarters since the Q4 2025 low."
   },
   {
-   "ko": "ETRI로부터 이전받은 200Gbps급 광검출기 기술은 2026년 9월 시장 진출을 목표로 상용화가 추진 중이다.",
-   "en": "The 200Gbps-class photodetector technology transferred from ETRI is being commercialized with a target market entry in September 2026."
+   "ko": "2026년 1~3분기 영업이익은 모두 흑자(1분기 14.7억원, 2분기 25.5억원, 3분기 19.8억원)였으며, 3분기는 전 분기 대비 22.5% 줄었다.",
+   "en": "Operating profit was positive in each of Q1 to Q3 2026 (KRW 1.47 billion, KRW 2.55 billion, KRW 1.98 billion), though Q3 fell 22.5% from Q2."
   },
   {
-   "ko": "SPAD(단일광자검출소자) 매출이 2026년 1분기 전년 동기 대비 68% 증가하며 양자암호 사업의 성장세가 확인됐다.",
-   "en": "SPAD (single-photon avalanche diode) revenue rose 68% year-on-year in Q1 2026, confirming growth in the quantum-encryption business."
+   "ko": "외부 집계 기준 광다이오드 매출은 2025년 98억원으로 전년 55억원보다 약 77% 늘었다.",
+   "en": "According to an external aggregator, photodiode revenue rose about 77% to KRW 9.8 billion in 2025 from KRW 5.5 billion."
   },
   {
-   "ko": "영업활동현금흐름이 2024년 적자에서 2025년 흑자로 전환되고 부채비율도 낮아지며 재무 안정성이 개선됐다.",
-   "en": "Operating cash flow turned positive in 2025 after a 2024 deficit, and the debt ratio declined, improving financial stability."
+   "ko": "지배주주 순이익은 2022년부터 2025년까지 4년 연속 적자였고, 최근 4개 분기 합계는 40.5억원이다.",
+   "en": "Parent net income was negative for four straight years from 2022, and the last four quarters total KRW 4.05 billion."
   }
  ],
  "business": {
-  "ko": "우리로는 1998년 설립돼 광주광역시에 본사를 둔 광통신 부품 전문기업으로, 광통신사업부·SI사업부·음향기기사업부의 3개 축으로 매출을 구성한다. 광통신사업부는 광신호를 여러 갈래로 분배하는 PLC(평판형 광회로) 광분배기와 광신호를 전기신호로 변환하는 광다이오드(PD·APD)를 생산하며, 회사는 데이터센터 및 5G용으로 사용되는 10G, 25G, 50G, 100G급 PD와 양자암호통신용 단일광자검출소자(SPAD)를 개발해 공급하고 있다고 밝히고 있다. 2025년 기준 부문별 매출 비중은 SI가 46.6%로 가장 크고 광다이오드 23.2%, 음향기기 21.7%, 광분배기 8.6% 순이다. SI사업부는 미국 웨스턴디지털사와 국내 수입원 계약을 맺고 HDD·SSD 등 IT저장장치를 국내 유통업체에 공급하는 사업으로, 최종 수요자는 통신기간망 사업자나 장비 제조·판매업체다. 음향기기 부문은 자회사를 통해 미국 클립쉬(Klipsch), 덴마크 야모(JAMO), 삼성전자 계열 하만의 데논·마란츠·바워스앤윌킨스 등 해외 오디오 브랜드를 수입, 국내에 유통한다. 광통신 부문 매출은 대부분 수출에서 발생하며, 광분배기 웨이퍼·칩의 주요 시장은 중국으로, 현지 거래처가 이를 구매해 모듈로 가공한 뒤 통신사업자에 납품하는 구조다. 최근에는 한국전자통신연구원(ETRI)으로부터 200Gbps급 차세대 광검출기 기술을 이전받아 상용화를 추진하고 있으며, 2024년에는 양자기술 신사업을 위한 자회사 퀀텀플럭스를 설립했다. 회사는 2013년부터 SK텔레콤과 양자암호통신 분야에서 협력해 왔다.",
-  "en": "Founded in 1998 and headquartered in Gwangju, Wooriro is an optical communication component specialist whose revenue is organized around three business lines: optical communication, SI (storage distribution), and audio equipment. The optical communication division makes PLC (planar lightwave circuit) splitters that divide optical signals and photodiodes (PD/APD) that convert optical signals into electrical signals; the company states it develops and supplies 10G, 25G, 50G and 100G-class PDs for data centers and 5G, as well as single-photon avalanche diodes (SPAD) for quantum-encrypted communication. As of 2025, SI represented the largest revenue share at 46.6%, followed by photodiodes at 23.2%, audio equipment at 21.7%, and optical splitters at 8.6%. The SI segment supplies HDDs and SSDs to domestic distributors under an import agreement with Western Digital, with end demand coming from telecom network operators and equipment makers. The audio segment, run through a subsidiary, imports and distributes overseas brands such as Klipsch, JAMO, and Samsung-affiliated Harman's Denon, Marantz, and Bowers & Wilkins. Optical communication revenue is largely export-driven, with China as the main market for splitter wafers and chips that local partners assemble into modules before delivery to telecom operators. The company recently secured technology transfer from ETRI for a next-generation 200Gbps photodetector and, in 2024, established a subsidiary, Quantum Flux, to pursue quantum-technology businesses. It has cooperated with SK Telecom in quantum-encrypted communication since 2013."
+  "ko": "우리로는 1998년 설립되어 2012년 코스닥에 상장한 광통신 부품 기업이다. 주력은 광분배기(PLC)와 광다이오드(PD) 같은 광통신 핵심 부품이며, IT 저장장치(SI) 판매와 음향기기 유통을 함께 운영한다. 외부 집계 사이트 OpenBizData는 2025년 기준 유통(SI·음향) 비중을 약 68%, 자체 제조 광부품(PD·PLC) 비중을 약 32%로 정리했다. 같은 자료에 따르면 광다이오드 매출은 2024년 55억원에서 2025년 98억원으로 약 77% 늘었고, AI 데이터센터와 5G용 고속 제품 수요 회복이 배경으로 꼽혔다. 투자 전문 매체 인베스팅닷컴은 2026년 1분기 SI 사업부 매출이 80억 9,500만원으로 전체 매출의 55.7%였다고 보도했다. 반면 버틀러 집계는 2026년 2분기 기준 씨제이에스 46%, SI 38%, 광통신 16%로 비중을 제시해, 부문 분류 기준에 따라 수치가 달라지는 점을 감안해야 한다. 광다이오드 모듈 생산량은 2026년 1분기 7만 1,236개, 생산능력 대비 가동률은 64.53%였다. 수출은 같은 집계 기준 2025년 90억원으로 2024년 67억원보다 늘었고, 달러 결제 비중이 커 환율 변동에 노출된다. 같은 업종 상장사로는 광통신 부품을 다루는 대한광통신(TAIHAN Fiberoptics)이 있다. 연구개발비는 2024년 18억 3,800만원으로 매출의 3.88%였으며, 단일광자검출소자 기술로 양자암호통신과 라이다 시장 진출을 추진하고 있다.",
+  "en": "Wooriro was founded in 1998 and listed on KOSDAQ in 2012 as an optical communication component maker. Its core products are optical distribution units (PLC) and photodiodes (PD), and it also runs IT storage device sales (SI) and audio equipment distribution. OpenBizData, an external aggregator, put distribution (SI and audio) at about 68% and in-house optical components (PD and PLC) at about 32% for 2025. The same source said photodiode revenue rose about 77% from KRW 5.5 billion in 2024 to KRW 9.8 billion in 2025, linked to recovering demand from AI data centers and 5G systems. The investment media outlet Investing.com reported that the SI division generated KRW 8.095 billion in Q1 2026, or 55.7% of total revenue. Butler's aggregation of Q2 2026 mix instead shows CJS at 46%, SI at 38% and optical communications at 16%, so the figures depend on how segments are classified. Photodiode module output in Q1 2026 was 71,236 units, with utilization at 64.53% of capacity. Exports rose to KRW 9 billion in 2025 from KRW 6.7 billion in 2024 on the same aggregator's data, and dollar settlement makes results exposed to currency moves. Among listed peers in optical components, TAIHAN Fiberoptics operates in the same sector. R&D spending was KRW 1.838 billion in 2024, or 3.88% of revenue, and the company is pursuing single-photon detection technology for quantum encryption communication and lidar markets."
  },
  "earnings": {
-  "ko": "연간 매출은 2022년 990.1억원에서 2023년 546.1억원, 2024년 473.7억원, 2025년 424.7억원으로 4개 연도 연속 축소되며 외형이 크게 줄었다. 영업손익은 2022년 13.5억원 흑자를 낸 이후 2023년 -34.5억원, 2024년 -30.0억원의 손실을 기록했고, 2025년에는 -6.8억원으로 적자 규모가 뚜렷하게 축소됐다. 지배주주 순이익도 2022년 -34.5억원에서 2023년 -47.9억원, 2024년 -51.1억원으로 확대됐다가 2025년에는 -7.9억원으로 손실폭이 크게 줄었다. 분기별로는 2025년 2분기 매출 100.8억원·영업손실 2.1억원에서 3분기 매출 120.6억원·영업이익 5.6억원으로 흑자 전환했고, 4분기에도 매출 114.5억원·영업이익 0.5억원으로 흑자 기조를 이어갔다. 2026년 들어서는 1분기 매출 145.3억원·영업이익 14.7억원, 2분기 매출 147.3억원·영업이익 25.5억원으로 매출과 영업이익이 동반 확대되며 네 개 분기 연속 영업흑자를 기록했다. 영업이익률은 2025년 3분기 약 4.7%에서 2026년 2분기 약 17.3%까지 높아지는 추세를 보였다. 순이익은 2025년 4분기 -4.2억원으로 일시 적자를 기록했으나 2026년 1분기 15.3억원, 2분기 12.7억원으로 다시 흑자를 냈다. 영업활동현금흐름은 2024년 -31.9억원에서 2025년 +11.6억원으로 흑자 전환했고 부채비율도 2024년 50.8%에서 2025년 44.1%로 낮아지며 재무 안정성이 개선됐다. 회사 측은 단순한 비용 절감이 아닌 수익성 중심의 사업 재편이 실적 개선을 이끌었다고 설명했다.",
-  "en": "Annual revenue fell for four straight years, from KRW 99.0 billion in 2022 to KRW 54.6 billion in 2023, KRW 47.4 billion in 2024, and KRW 42.5 billion in 2025. Operating profit, which was positive at KRW 1.35 billion in 2022, swung to losses of KRW 3.45 billion in 2023 and KRW 3.00 billion in 2024 before narrowing sharply to a loss of KRW 0.68 billion in 2025. Net income attributable to owners followed a similar pattern, widening from a loss of KRW 3.45 billion in 2022 to KRW 4.79 billion in 2023 and KRW 5.11 billion in 2024, before narrowing to a loss of KRW 0.79 billion in 2025. On a quarterly basis, the company moved from revenue of KRW 10.08 billion and an operating loss of KRW 0.21 billion in Q2 2025 to revenue of KRW 12.06 billion and operating profit of KRW 0.56 billion in Q3, sustaining profitability into Q4 with revenue of KRW 11.45 billion and operating profit of KRW 0.05 billion. In 2026, revenue and operating profit both expanded further, reaching KRW 14.53 billion and KRW 1.47 billion in Q1 and KRW 14.73 billion and KRW 2.55 billion in Q2, marking four consecutive quarters of operating profitability. Operating margin rose from roughly 4.7% in Q3 2025 to roughly 17.3% in Q2 2026. Net income briefly dipped to a loss of KRW 0.42 billion in Q4 2025 before returning to profit of KRW 1.53 billion in Q1 2026 and KRW 1.27 billion in Q2 2026. Operating cash flow turned positive at KRW 1.16 billion in 2025 from a deficit of KRW 3.19 billion in 2024, while the debt ratio declined from 50.8% to 44.1%, indicating improved financial stability. The company attributed the improvement to a profitability-focused business realignment rather than simple cost cutting."
+  "ko": "공시 실적 기준 연간 매출은 2022년 990억원에서 2023년 546억원(전년 대비 44.8% 감소), 2024년 474억원(전년 대비 13.3% 감소), 2025년 425억원(전년 대비 10.3% 감소)으로 줄어 2023년부터 2025년까지 3년 연속 감소했다. 2022년이 가장 큰 해이고 2025년이 가장 작은 해다. 영업이익은 2022년 13.5억원 흑자에서 2023년 영업손실 34.5억원으로 적자 전환됐고, 2024년 영업손실 30억원, 2025년 영업손실 6.8억원으로 적자가 이어지되 손실 폭은 줄었다. 영업이익률은 2022년 1.4%, 2023년 -6.3%, 2024년 -6.3%, 2025년 -1.6%로 움직였다. 외부 집계 사이트는 매출총이익률이 10.9%에서 18.8%로 올라간 점을 손익 개선의 배경으로 정리했고, 연결 매출원가율도 전년 89%에서 81%로 낮아졌다고 짚었다. 지배주주 순이익은 2022년 순손실 34.5억원에서 2023년 순손실 47.9억원, 2024년 순손실 51.1억원으로 손실이 커졌다가 2025년 순손실 7.9억원으로 줄었다. 2022년부터 2025년까지 4년 연속 적자다. 당기순이익(비지배지분 포함) 기준으로도 2025년 당기순손실은 7.9억원이다. 영업활동 현금흐름은 2022년 12.9억원에서 2023년 -17.6억원, 2024년 -31.9억원으로 마이너스였다가 2025년 11.6억원으로 돌아섰다. 2025년 말 자본총계는 392억원이며 그중 지배주주 지분은 388억원, 부채총계는 173억원이다. 부채비율은 2022년 61.9%, 2023년 33.5%, 2024년 50.8%, 2025년 44.1%였다. 분기 실적은 2025년 4분기 매출 114억원(전 분기 대비 5.1% 감소)을 저점으로 2026년 1분기 145억원, 2분기 147억원, 3분기 204억원으로 3개 분기 연속 늘었고, 3분기 매출은 전년 동기 대비 68.8% 증가했다. 영업이익은 2025년 4분기 5,392만원에서 2026년 1분기 14.7억원, 2분기 25.5억원으로 커졌으나, 3분기에는 19.8억원으로 전 분기 대비 22.5% 줄었다. 매출이 38.2% 늘어난 3분기에 영업이익이 줄어 영업이익률은 2분기보다 낮아진 것으로 계산된다. 3분기 영업이익 감소의 구체적 원인은 공시 수치만으로는 특정하기 어렵다. 지배주주 순이익은 2025년 4분기 순손실 4.2억원에서 2026년 1분기 15.3억원 흑자로 전환된 뒤 2분기 12.7억원, 3분기 16.7억원을 기록했고, 최근 4개 분기 합계는 40.5억원이다. 외부 집계에 따르면 2026년 1분기 개선은 SI 사업부의 저장장치 판매 확대와 광통신 사업부의 광다이오드 매출 증가가 함께 이끌었다.",
+  "en": "Based on reported results, annual revenue fell from KRW 99.0 billion in 2022 to KRW 54.6 billion in 2023 (down 44.8% year on year), KRW 47.4 billion in 2024 (down 13.3%), and KRW 42.5 billion in 2025 (down 10.3%), a decline for three consecutive years from 2023 through 2025. 2022 was the largest year and 2025 the smallest. Operating profit swung from a profit of KRW 1.35 billion in 2022 to an operating loss of KRW 3.45 billion in 2023, followed by operating losses of KRW 3.0 billion in 2024 and KRW 680 million in 2025, so the losses continued but narrowed. The operating margin moved from 1.4% in 2022 to -6.3% in 2023, -6.3% in 2024, and -1.6% in 2025. An external data aggregator attributed the improvement in earnings to the gross margin rising from 10.9% to 18.8%, and also noted that the consolidated cost-of-sales ratio fell from 89% the previous year to 81%. Net income attributable to controlling shareholders went from a net loss of KRW 3.45 billion in 2022 to net losses of KRW 4.79 billion in 2023 and KRW 5.11 billion in 2024, so the losses widened, before shrinking to a net loss of KRW 790 million in 2025. The company has posted losses for four consecutive years, from 2022 through 2025. On a net income basis including non-controlling interests, the 2025 net loss is also KRW 790 million. Cash flow from operating activities was KRW 1.29 billion in 2022, then negative at KRW -1.76 billion in 2023 and KRW -3.19 billion in 2024, before turning positive at KRW 1.16 billion in 2025. At the end of 2025, total equity was KRW 39.2 billion, of which KRW 38.8 billion was attributable to controlling shareholders, and total liabilities were KRW 17.3 billion. The debt ratio was 61.9% in 2022, 33.5% in 2023, 50.8% in 2024, and 44.1% in 2025. In quarterly results, revenue bottomed at KRW 11.4 billion in the fourth quarter of 2025 (down 5.1% from the previous quarter) and then rose for three consecutive quarters to KRW 14.5 billion in the first quarter of 2026, KRW 14.7 billion in the second quarter, and KRW 20.4 billion in the third quarter, with third-quarter revenue up 68.8% from the same period a year earlier. Operating profit grew from KRW 53.92 million in the fourth quarter of 2025 to KRW 1.47 billion in the first quarter of 2026 and KRW 2.55 billion in the second quarter, but fell 22.5% from the previous quarter to KRW 1.98 billion in the third quarter. Because operating profit declined in the third quarter even as revenue rose 38.2%, the operating margin works out to be lower than in the second quarter. The specific cause of the third-quarter decline in operating profit is hard to pinpoint from the reported figures alone. Net income attributable to controlling shareholders turned from a net loss of KRW 420 million in the fourth quarter of 2025 to a profit of KRW 1.53 billion in the first quarter of 2026, followed by KRW 1.27 billion in the second quarter and KRW 1.67 billion in the third quarter, and the total for the most recent four quarters is KRW 4.05 billion. According to external data, the improvement in the first quarter of 2026 was driven jointly by expanded storage device sales in the SI division and higher photodiode revenue in the optical communications division."
  },
  "industry": {
-  "ko": "광통신 부품 산업은 AI 데이터센터와 5G·6G 통신 인프라 확대에 따라 광트랜시버 수요가 늘어나는 국면에 있으며, 글로벌 광학 트랜시버 시장은 2032년까지 452억달러 규모로 성장할 것으로 전망된다. ETRI 연구진에 따르면 200Gbps급 광검출기 수요는 중국을 중심으로 최근 급증하는 추세로 알려져 있다. 양자암호통신 산업은 아직 초기 단계이나, 관련 시장은 2032년까지 연평균 28.8% 성장하고 국내 시장은 2031년 23조원 규모로 확대될 것으로 전망된다. SK텔레콤은 자회사 ID Quantique(IDQ)를 통해 유럽연합 양자정보통신 프로젝트의 핵심 공급사로 선정된 바 있어, 국내 양자암호 생태계에서 소자 공급망의 중요성이 부각되고 있으며 우리로는 이 생태계에서 SPAD 등 소자·부품 단에 위치한다. 다만 광통신 부품 산업은 다수의 국내외 업체가 경쟁하는 구조로, 상대적으로 소규모 인력으로 운영되는 우리로는 기술 개발과 양산 대응을 동시에 이끌어야 하는 부담이 있다. 코스닥 스몰캡 특성상 대형 증권사의 정식 커버리지가 희소해, 시황이 실적 공시보다 테마성 뉴스에 더 민감하게 반응하는 경향도 관찰된다.",
-  "en": "The optical component industry is benefiting from rising demand for optical transceivers as AI data centers and 5G/6G infrastructure expand, with the global optical transceiver market projected to reach USD 45.2 billion by 2032. ETRI researchers have noted that demand for 200Gbps-class photodetectors has recently surged, particularly from China. The quantum-encrypted communication industry remains at an early stage, but the related market is forecast to grow at an annual average of 28.8% through 2032, with the domestic market expected to expand to KRW 23 trillion by 2031. SK Telecom, through its subsidiary ID Quantique (IDQ), has been selected as a key supplier for a European Union quantum-communication project, underscoring the growing importance of component supply chains in the domestic quantum ecosystem, where Wooriro sits at the component level with products such as SPAD. However, the optical component industry involves competition from numerous domestic and overseas players, and Wooriro, which operates with a relatively small workforce, faces the burden of simultaneously advancing technology development and mass-production readiness. Given its small-cap status on KOSDAQ, formal coverage from major brokerages is scarce, and the stock's market response tends to be more sensitive to thematic news than to earnings disclosures."
+  "ko": "우리로가 속한 광통신 부품 수요는 AI 데이터센터와 5G·6G 인프라 투자에 연동되는 구조다. 외부 집계는 2025년 광다이오드 매출 확대의 배경으로 데이터센터와 5G용 10·25·50·100G급 광다이오드 수요 회복을 꼽았다. 같은 자료에서 광분배기(PLC) 매출은 59억원, 39억원, 36억원으로 줄어 구조적 약세 흐름으로 설명됐다. 즉 고속 광다이오드와 저속 광분배기의 수요 방향이 엇갈리는 상태다. 사이클 위치는 가동률로 가늠할 수 있는데, 2026년 1분기 광다이오드 모듈 가동률이 64.53%라는 점은 생산 설비에 여유가 있음을 뜻한다. 다만 광다이오드 수요가 어느 시점까지 이어질지는 AI 투자 사이클에 달려 있어 단정하기 어렵다. 우리로는 400G·800G 고용량 광다이오드 개발을 추진 중이어서, 속도 세대 교체에 맞춘 제품 포트폴리오가 경쟁력의 핵심 척도가 된다. 같은 업종 상장사로 광통신 부품을 다루는 대한광통신(TAIHAN Fiberoptics)이 있으며, 전자·부품 대형주와 비교하면 우리로의 매출 규모는 작은 편이다. 2026년 3월 언론은 우리로의 주가 급등을 광반도체 테마와 연결해 다뤘다. 환율 측면에서는 수출 비중이 커지며 달러 결제가 늘어, 환율 변동이 원화 환산 매출과 이익에 함께 반영되는 구조다.",
+  "en": "Demand for Wooriro's optical components is tied to investment in AI data centers and 5G and 6G infrastructure. An external aggregator attributed the 2025 photodiode revenue growth to recovering demand for 10G, 25G, 50G and 100G-class photodiodes used in data centers and 5G. In the same source, optical distribution unit (PLC) revenue fell from KRW 5.9 billion to KRW 3.9 billion and then KRW 3.6 billion, which was described as a structural weakness. Demand direction is therefore split between high-speed photodiodes and lower-speed PLC products. Cycle position can be gauged from utilization, and the 64.53% photodiode module utilization in Q1 2026 indicates spare production capacity. Whether photodiode demand lasts depends on the AI investment cycle, so a firm call is difficult. Wooriro is developing high-capacity 400G and 800G photodiodes, so product mix across speed generations is a key measure of competitiveness. TAIHAN Fiberoptics is also listed in the same sector for optical components, and Wooriro's revenue scale is small compared with large electronics and components names. In March 2026, media coverage linked the stock's sharp rise to the optical semiconductor theme. On currency, rising exports and dollar settlement mean exchange rate moves feed into both won-denominated revenue and profit."
  },
  "outlook": {
-  "ko": "회사는 ETRI로부터 이전받은 200Gbps급 광검출기 기술의 시제품 개발과 성능 검증을 마치고 2026년 9월 시장 진출을 목표로 상용화 절차에 착수했다고 밝혔다. 해당 기술은 상반기 시제품 성능검증, 하반기 공급을 조건으로 이전된 것으로 알려져 있다. 회사는 이후 400Gbps급 반도체소자 상용화에도 역량을 집중하겠다는 계획을 공개한 바 있다. 양자암호 부문에서는 2026년 1분기 SPAD 매출이 전년 동기 대비 68% 증가하며 전체 실적 개선을 견인했다. 회사 측은 양자암호와 방산 등 고수익 사업 비중 확대가 영업이익 흑자 전환의 핵심 동력이라고 밝혔다. 대표이사는 SK텔레콤과의 협력을 통해 양자암호통신 사업을 향후 성장축으로 삼겠다는 방침을 언급했다. 다만 이러한 신사업들은 여전히 초기 상용화 단계에 있어, 매출 기여 규모와 시점은 향후 분기 공시를 통해 순차적으로 확인이 필요하다.",
-  "en": "The company said it has completed prototype development and performance verification of the ETRI-transferred 200Gbps photodetector technology and has begun commercialization procedures targeting market entry in September 2026. The technology reportedly was transferred on the condition of first-half prototype verification and second-half supply. The company has also disclosed plans to concentrate capabilities on commercializing a 400Gbps-class semiconductor device going forward. In the quantum-encryption segment, SPAD revenue rose 68% year-on-year in Q1 2026, driving overall earnings improvement. Management has cited the expanding share of high-margin businesses such as quantum encryption and defense as the key driver behind the swing to operating profit. The CEO has stated intentions to build quantum-encrypted communication into a future growth pillar through cooperation with SK Telecom. These new businesses, however, remain at an early commercialization stage, and the scale and timing of their revenue contribution will need to be confirmed through subsequent quarterly disclosures."
+  "ko": "회사가 추진하는 사업 방향은 고용량 광다이오드와 신규 광센서 시장으로 정리된다. 우리로는 400G·800G 고용량 광다이오드의 기술 개발과 조기 양산화를 추진하고 있다. 단일광자검출소자 기술로 양자암호통신과 라이다 시장에 진출하겠다는 방향도 함께 제시돼 있다. 2026년 3분기 매출이 204억원으로 늘었지만 영업이익은 19.8억원으로 줄었기 때문에, 다음 확인 지점은 매출 증가가 이익률 개선으로 이어지는지 여부다. 2026년 1분기 가동률 64.53%는 설비 증설 없이도 생산량을 늘릴 여지가 있음을 보여 주며, 수요가 이어질 때 매출이 빠르게 불어날 수 있는 구조다. 수출 비중이 커진 만큼 환율 변동이 실적에 미치는 영향도 함께 살펴볼 대목이다. 연구개발 투자는 2024년 18억 3,800만원으로 매출의 3.88%를 차지해, 신규 사업 준비에 비용이 계속 드는 구조다. 벤처기업 지정 해제 예정일은 2027년 8월 30일로 표시돼 있어, 그 전후의 사업과 재무 변화도 확인 대상이다. 다음 정기보고서인 2026년 사업보고서에서 연간 영업이익률이 2025년 -1.6%에서 어떻게 바뀌었는지가 첫 확인 지점이다.",
+  "en": "Wooriro's stated direction centers on high-capacity photodiodes and new optical sensor markets. The company is pursuing technology development and early mass production of 400G and 800G high-capacity photodiodes. It has also set out a direction to enter quantum encryption communication and lidar markets using single-photon detection technology. Q3 2026 revenue rose to KRW 20.4 billion while operating profit fell to KRW 1.98 billion, so the next check is whether higher sales translate into a better margin. Q1 2026 utilization of 64.53% suggests room to raise output without new capacity, so revenue could scale quickly if demand holds. With exports growing as a share of sales, the effect of currency moves on results also needs watching. R&D spending was KRW 1.838 billion in 2024, or 3.88% of revenue, so new business preparation continues to carry cost. The scheduled date for lifting venture company designation is August 30, 2027, so business and financial changes around that date are also a point to monitor. The first check in the next periodic report, the 2026 annual report, is whether the operating margin moved from -1.6% in 2025."
  },
  "valuation_comment": {
-  "ko": "회사는 2022년부터 2024년까지 3개 연도 연속 순손실을 기록한 데 이어 2025년에도 적자를 이어갔지만 손실 규모는 크게 줄었고, 2026년 들어서는 분기 기준으로 영업이익과 순이익이 함께 흑자 기조로 전환된 모습이다. 이러한 이익 회복 국면에서 주가는 순자산가치 대비 상당한 프리미엄이 형성된 구간에서 거래되고 있다는 점이 특징이다. 최근 네 개 분기 이익 흐름을 반영한 주가수익 배수는 과거 적자가 지속되던 시기의 밸류에이션 잣대와 단순 비교가 어려운 수준에서 형성돼 있다. 회사는 최근 회계연도까지 현금배당을 실시하지 않아, 배당수익률 측면에서는 배당을 지급하는 업종 평균 종목들과는 성격이 다른 종목으로 분류된다. 증권사의 정식 목표주가 제시가 드문 종목인 만큼, 밸류에이션에 대한 판단은 분기 실적 발표와 신사업 진행 상황에 대한 지속적인 확인이 병행될 필요가 있다.",
-  "en": "The company posted net losses for three straight years from 2022 through 2024 and remained in the red in 2025, though the loss narrowed considerably, and quarterly results in 2026 have shown both operating profit and net income turning positive at the same time. Against this backdrop of earnings recovery, the shares trade at a level that carries a sizable premium over net asset value. The price-to-earnings multiple implied by the most recent four quarters of earnings sits at a level that is difficult to compare directly with the valuation seen during the earlier years of sustained losses. The company has not paid a cash dividend through its most recent fiscal year, placing it in a different category from dividend-paying peers when it comes to yield. Because formal target-price coverage from brokerages is scarce for this name, any valuation assessment needs to be paired with ongoing confirmation of quarterly results and progress on new business initiatives."
+  "ko": "주가순자산비율은 장부상 자기자본 대비 프리미엄이 큰 구간에 있다. 주가수익비율은 이익 규모에 비해 주가가 높은 구간이며, 최근 4개 분기 지배주주 순이익 합계가 40.5억원에 그친다는 점이 배경이다. 2022년부터 2025년까지 4년 연속 적자였던 이익 체력이 2026년 들어 분기 흑자로 돌아서면서 이익 기반 배수의 분모가 커지는 방향의 변화가 나타났다. 배당 환원은 사실상 이뤄지지 않는 상태여서 배당 기준의 밸류에이션 비교는 제한적이다. 이익 기반 배수는 분기 손익 변동에 민감하므로 최근 4개 분기 합계 기준이 비교에 더 안정적인 틀로 쓰인다. 업종 평균과 비교할 때는 같은 날짜의 업종 배수를 기준으로 삼아야 비교가 정확하다.",
+  "en": "The price-to-book ratio sits in a range with a large premium over book value of equity. The price-to-earnings ratio reflects a share price that is high relative to earnings, given that the last four quarters of parent net income total only KRW 4.05 billion. Earnings returned to quarterly profit in 2026 after four straight years of losses through 2025, which enlarges the earnings base behind earnings-based multiples. Cash dividends are effectively absent, so dividend-based valuation comparisons are limited. Earnings-based multiples are sensitive to quarterly swings, so a four-quarter total is the steadier basis for comparison. Comparisons with industry averages are accurate only when the industry multiples are taken on the same date."
  },
  "bull": [
   {
    "title": {
-    "ko": "실적 턴어라운드 가시화",
-    "en": "Earnings Turnaround Becoming Visible"
+    "ko": "광다이오드 수요 회복과 가동률 여지",
+    "en": "Photodiode demand recovery and spare utilization"
    },
    "body": {
-    "ko": "2025년 3분기부터 2026년 2분기까지 네 개 분기 연속 영업이익 흑자를 기록했고, 영업이익률은 4.7%에서 17.3%까지 상승하는 추세를 보였다. 순이익도 2025년 4분기의 일시적 적자를 제외하면 2026년 들어 두 개 분기 연속 흑자를 냈다. 영업활동현금흐름도 2025년 흑자로 전환돼 이익의 질적 측면도 개선되는 모습이다.",
-    "en": "The company posted four consecutive quarters of operating profit from Q3 2025 through Q2 2026, with operating margin rising from 4.7% to 17.3%. Net income also returned to profit for two straight quarters in 2026, aside from a brief loss in Q4 2025. Operating cash flow turned positive in 2025 as well, pointing to an improvement in earnings quality."
+    "ko": "2026년 1분기 광다이오드 모듈 생산량은 7만 1,236개, 가동률은 64.53%로 생산 여력이 남아 있어 수요가 늘면 매출로 이어질 여지가 있다. 데이터센터와 5G용 고속 제품 수요가 이 성장의 배경으로 꼽혔다.",
+    "en": "Q1 2026 photodiode module output was 71,236 units at 64.53% utilization, leaving production room that could convert added demand into sales. Demand for high-speed products used in data centers and 5G was cited as the driver."
    }
   },
   {
    "title": {
-    "ko": "신사업 파이프라인 확장",
-    "en": "Expanding New-Business Pipeline"
+    "ko": "분기 매출 증가와 흑자 유지",
+    "en": "Sustained quarterly revenue growth and profitability"
    },
    "body": {
-    "ko": "ETRI로부터 이전받은 200Gbps급 광검출기 기술이 2026년 9월 시장 진출을 목표로 상용화 단계에 들어갔고, 400Gbps급 소자도 후속 계획으로 제시됐다. SPAD 매출은 2026년 1분기 전년 동기 대비 68% 증가하며 양자암호 사업의 성장을 보여줬다. AI 데이터센터·양자암호통신 시장의 중장기 성장 전망도 신사업 확장의 배경이 된다.",
-    "en": "The ETRI-transferred 200Gbps photodetector technology has entered the commercialization phase with a target market entry in September 2026, and a 400Gbps-class device has been outlined as a follow-on plan. SPAD revenue rose 68% year-on-year in Q1 2026, demonstrating growth in the quantum-encryption business. Long-term growth forecasts for AI data centers and quantum-encrypted communication provide the backdrop for this expansion."
+    "ko": "2025년 4분기 114억원을 저점으로 2026년 1분기 145억원, 2분기 147억원, 3분기 204억원으로 매출이 3개 분기 연속 늘었다. 3분기 매출은 전년 동기 대비 68.8% 증가했다. 2026년 1분기부터 3분기까지 영업이익과 지배주주 순이익이 모두 흑자를 기록했다.",
+    "en": "Revenue bottomed at KRW 11.4 billion in Q4 2025 and then rose to KRW 14.5 billion in Q1 2026, KRW 14.7 billion in Q2 and KRW 20.4 billion in Q3, three straight quarters of growth. Q3 revenue was up 68.8% year on year. Operating profit and parent net income were both positive in each quarter from Q1 to Q3 2026."
    }
   },
   {
    "title": {
-    "ko": "재무구조 개선",
-    "en": "Improving Financial Structure"
+    "ko": "고속 광부품 기술 파이프라인",
+    "en": "High-speed optical component technology pipeline"
    },
    "body": {
-    "ko": "영업활동현금흐름은 2024년 -31.9억원에서 2025년 +11.6억원으로 흑자 전환했다. 부채비율도 2024년 50.8%에서 2025년 44.1%로 낮아지며 2022년 61.9%에 비해 크게 개선됐다. 누적 손실 규모도 매년 축소되는 흐름을 보이고 있다.",
-    "en": "Operating cash flow swung from a deficit of KRW 3.19 billion in 2024 to a surplus of KRW 1.16 billion in 2025. The debt ratio also declined to 44.1% in 2025 from 50.8% in 2024, a marked improvement from 61.9% in 2022. Cumulative losses have also narrowed each year in recent periods."
+    "ko": "400G·800G 고용량 광다이오드 기술 개발과 조기 양산화를 추진하고 있다. 단일광자검출소자 기술로 양자암호통신과 라이다 시장 진출을 추구한다. 2024년 연구개발비는 18억 3,800만원으로 매출의 3.88%였다. 고속 광다이오드 세대 전환에 제품군이 대응할 수 있는지가 이 강점의 지속성을 가르는 관찰 포인트다.",
+    "en": "The company is developing 400G and 800G high-capacity photodiodes and pushing for early mass production. It is pursuing quantum encryption communication and lidar markets with single-photon detection technology. R&D spending in 2024 was KRW 1.838 billion, or 3.88% of revenue. Whether the product line keeps pace with the shift to faster generations will determine how durable this advantage is."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "매출 기반 축소",
-    "en": "Shrinking Revenue Base"
+    "ko": "누적 적자와 얇은 이익 기반",
+    "en": "Accumulated losses and a thin earnings base"
    },
    "body": {
-    "ko": "연간 매출은 2022년 990.1억원에서 2025년 424.7억원으로 4년 연속 줄어들며 외형이 절반 이하로 축소됐다. SI사업부 매출은 2023년 358억원에서 2025년 198억원까지 급감한 것으로 알려져 있다. 최근 분기 실적 개선이 이러한 장기 매출 축소 흐름을 완전히 되돌린 것인지는 추가 확인이 필요하다.",
-    "en": "Annual revenue fell for four straight years, from KRW 99.0 billion in 2022 to KRW 42.5 billion in 2025, cutting the top line by more than half. The SI segment's revenue reportedly fell sharply from KRW 35.8 billion in 2023 to KRW 19.8 billion in 2025. Whether the recent quarterly improvement fully reverses this long-term decline in revenue still requires further confirmation."
+    "ko": "2022년부터 2025년까지 4년 연속 지배주주 순손실을 기록했다. 2025년 말 자본총계는 392억원이고 지배주주 지분은 388억원이다. 최근 4개 분기 지배주주 순이익 합계는 40.5억원으로 이익 규모가 작다.",
+    "en": "Parent net income was negative for four straight years from 2022 through 2025. Total equity at end 2025 was KRW 39.2 billion, of which KRW 38.8 billion belonged to parent shareholders. Parent net income for the last four quarters totals KRW 4.05 billion, a small earnings base."
    }
   },
   {
    "title": {
-    "ko": "누적 적자 구조",
-    "en": "Cumulative Loss History"
+    "ko": "유통 비중과 3분기 이익 감소",
+    "en": "Distribution mix and the Q3 profit decline"
    },
    "body": {
-    "ko": "2022년부터 2025년까지 4개 연도 연속 지배주주 순손실을 기록했으며, 2024년에는 -51.1억원까지 손실이 확대된 바 있다. 2025년과 2026년 상반기의 이익 회복이 이러한 다년간의 적자 구조를 완전히 상쇄한 것은 아니다. 과거 매출 성장기였던 2022년에도 영업이익은 흑자였지만 순이익은 적자였던 점은 비영업 부문 변동성이 크다는 점을 보여준다.",
-    "en": "The company recorded net losses attributable to owners for four consecutive years from 2022 to 2025, with the loss widening to KRW 5.11 billion in 2024. The earnings recovery seen in 2025 and the first half of 2026 has not fully offset this multi-year loss history. Notably, even in 2022, when operating profit was positive, net income was still negative, indicating significant volatility in non-operating items."
+    "ko": "외부 집계 기준 유통(SI·음향) 비중이 약 68%로 마진이 얇은 구조라고 정리됐다. 2026년 3분기 매출은 204억원으로 늘었지만 영업이익은 19.8억원으로 전 분기 대비 22.5% 줄었다. 3분기 감소의 원인은 공시 수치만으로 특정하기 어렵다.",
+    "en": "An external aggregator put distribution (SI and audio) at about 68% of the mix and described the margin as thin. Q3 2026 revenue rose to KRW 20.4 billion, but operating profit fell to KRW 1.98 billion, down 22.5% from Q2. The cause of the Q3 decline cannot be pinned down from the disclosed figures alone."
    }
   },
   {
    "title": {
-    "ko": "신사업 상용화 불확실성",
-    "en": "Uncertainty in New-Business Commercialization"
+    "ko": "환율 노출과 현금흐름 변동",
+    "en": "Currency exposure and cash flow swings"
    },
    "body": {
-    "ko": "200Gbps 광검출기와 400Gbps 소자, SPAD 기반 양자암호 사업은 모두 초기 상용화 단계에 있으며 고객사 검증과 양산 전환이 남아 있다. 이들 사업은 ETRI 등 외부 연구기관의 기술이전과 정부·통신사 발주 일정에 상당 부분 의존한다. 상용화 시점이 지연될 경우 성장 스토리에 대한 시장의 기대가 조정될 수 있다.",
-    "en": "The 200Gbps photodetector, the 400Gbps device, and the SPAD-based quantum-encryption business are all at an early commercialization stage, with customer validation and mass-production transition still pending. These businesses depend considerably on technology transfers from external research institutions such as ETRI and on the ordering schedules of government agencies and telecom operators. If commercialization timing is delayed, market expectations around the growth narrative could be adjusted."
+    "ko": "수출은 2025년 90억원으로 2024년 67억원보다 늘었고 달러 결제 비중이 커 환율에 노출된다. 영업활동 현금흐름은 2023년 -17.6억원, 2024년 -31.9억원으로 마이너스였고 2025년에야 11.6억원으로 돌아섰다. 플러스 전환 기간이 아직 짧아 현금 창출력의 지속성은 추가 연도에서 확인해야 한다.",
+    "en": "Exports rose to KRW 9 billion in 2025 from KRW 6.7 billion in 2024 on an external aggregator's figures, and dollar settlement leaves results exposed to exchange rates. Operating cash flow was negative at KRW 1.76 billion in 2023 and KRW 3.19 billion in 2024 before turning positive at KRW 1.16 billion in 2025. Because the positive period is short, the durability of cash generation needs more years of data to confirm."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "사업 포트폴리오 리스크",
-    "en": "Business Portfolio Risk"
+    "ko": "사업 구조와 고객 집중",
+    "en": "Business mix and customer concentration"
    },
    "body": {
-    "ko": "SI(저장장치 유통)와 음향기기 유통 사업이 2025년 매출의 약 68%를 차지해, 자체 기술 기반 제품보다 유통·수입 마진에 의존하는 비중이 크다. 이들 사업은 환율, 해외 공급사 단가, 유통 경쟁 등 외부 변수에 노출돼 있다. 광통신 핵심 부품 매출 비중이 상대적으로 낮아 신사업 성과가 전체 실적에 반영되는 데 시간이 걸릴 수 있다.",
-    "en": "The SI (storage distribution) and audio-equipment distribution businesses accounted for roughly 68% of 2025 revenue, meaning the company relies more on distribution and import margins than on proprietary technology products. These businesses are exposed to external variables such as exchange rates, overseas supplier pricing, and distribution competition. The relatively low share of core optical component revenue means it may take time for new-business gains to be reflected in overall results."
+    "ko": "저장장치(SI) 유통은 외형을 떠받치지만 마진이 얇다는 외부 분석이 있어, 매출이 늘어도 이익으로 이어지지 않을 수 있다. 광다이오드 수요는 데이터센터와 5G 투자에 묶여 있어 투자 사이클이 꺾이면 매출 변동이 커질 수 있다. 매출 구성 분류가 자료마다 달라 부문별 수익성을 정확히 가늠하기 어렵다.",
+    "en": "Storage device distribution supports the top line, but an external analysis describes its margins as thin, so revenue gains may not reach profit. Photodiode demand is tied to data center and 5G investment, so a slowdown in that cycle could swing sales sharply. Segment classifications differ across sources, which makes division-level profitability hard to gauge precisely."
    }
   },
   {
    "cat": {
-    "ko": "수급·주가 변동성 리스크",
-    "en": "Liquidity and Price Volatility Risk"
+    "ko": "환율과 수출 노출",
+    "en": "Exchange rate and export exposure"
    },
    "body": {
-    "ko": "우리로는 대형 증권사의 정식 리서치 커버리지가 거의 없는 대표적인 코스닥 스몰캡 종목으로 알려져 있다. 광통신·양자암호 테마 부각에 따른 개인 투자자 수급이 주가에 상당한 영향을 미치는 구조다. 테마성 수급 의존도가 높은 종목은 실적과 무관한 단기 변동성이 커질 수 있다.",
-    "en": "Wooriro is known as a representative KOSDAQ small-cap stock with little formal research coverage from major brokerages. Retail investor flows tied to optical-communication and quantum-encryption themes have a substantial influence on its share price. Stocks with high reliance on thematic flows can experience elevated short-term volatility unrelated to underlying results."
+    "ko": "수출 비중이 커지며 달러 결제 비중도 늘었다. 환율이 움직이면 원화 환산 매출과 이익이 함께 흔들릴 수 있다. 영업활동 현금흐름이 2025년 한 해만 플러스여서 환율과 운전자본 변동을 함께 견딜 현금 창출력은 아직 기간이 짧다.",
+    "en": "As exports grew as a share of sales, dollar settlement also increased. Currency moves can shift won-denominated revenue and profit together. Operating cash flow has been positive only in 2025, so the cash generation needed to absorb currency swings has a short track record."
    }
   },
   {
    "cat": {
-    "ko": "신기술 상용화 지연 리스크",
-    "en": "Risk of Delayed Technology Commercialization"
+    "ko": "테마성 주가 변동과 신사업 불확실성",
+    "en": "Theme-driven share price swings and new business uncertainty"
    },
    "body": {
-    "ko": "200Gbps·400Gbps 광검출기와 SPAD 기반 양자암호 사업은 모두 외부 기술이전과 고객사 인증 절차에 의존하는 초기 단계 사업이다. ETRI와 같은 연구기관의 기술이전 조건이나 통신사·정부의 발주 일정이 변경될 경우 상용화 시점이 늦춰질 수 있다. 소형 인력 구조상 여러 신사업을 동시에 추진하는 데 따른 자원 배분 부담도 존재한다.",
-    "en": "The 200Gbps and 400Gbps photodetector projects and the SPAD-based quantum-encryption business are all early-stage initiatives dependent on external technology transfers and customer certification processes. Changes in the transfer conditions set by institutions such as ETRI, or in the ordering schedules of telecom operators and government agencies, could delay commercialization. The company's small workforce also creates resource-allocation pressure from pursuing multiple new businesses simultaneously."
+    "ko": "2026년 3월 언론은 우리로 주가 급등을 광반도체 테마와 연결해 다뤘다. 테마에 따른 가격 움직임은 실적 흐름과 어긋날 수 있다. 양자암호와 라이다 사업은 공시 실적 수치에서 따로 구분해 볼 수 없어 성과를 가늠하기 어렵다.",
+    "en": "In March 2026, media coverage tied Wooriro's share price surge to the optical semiconductor theme. Price moves driven by a theme can diverge from the earnings trend. Quantum encryption and lidar businesses cannot be separated out in the disclosed earnings figures, which makes their performance hard to gauge."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 9월",
-    "en": "September 2026"
+    "ko": "2027년 3월 중순 전후",
+    "en": "Mid-March 2027 (approx.)"
    },
    "what": {
-    "ko": "회사가 목표로 밝힌 200Gbps급 광검출기의 초기 상용화·시장 진출 여부와 관련 매출 반영 시점을 확인해야 한다.",
-    "en": "Check whether the company achieves its stated goal of initial commercialization and market entry for the 200Gbps photodetector, and when related revenue begins to appear."
+    "ko": "2026년 4분기 잠정실적 공시. 2025년 4분기 잠정실적은 2026년 3월 19일에 발표됐다(인베스팅닷컴). 4분기 매출이 3분기 수준을 이어가는지, 영업이익 흑자가 연간으로 유지되는지 확인하는 지점이다.",
+    "en": "Q4 2026 provisional results. The Q4 2025 provisional figures were released on March 19, 2026 (Investing.com). This shows whether revenue holds near the Q3 2026 level and whether operating profit stays positive for the full year."
    }
   },
   {
    "when": {
-    "ko": "2026년 11월 중순(3분기보고서 제출 예정 시기)",
-    "en": "Mid-November 2026 (expected Q3 report filing)"
+    "ko": "2027년 3월 31일까지",
+    "en": "By March 31, 2027"
    },
    "what": {
-    "ko": "네 개 분기 연속 영업흑자 흐름이 5분기째로 이어지는지, SI·음향기기 부문 매출 회복 여부를 함께 점검해야 한다.",
-    "en": "Assess whether the streak of quarterly operating profit extends to a fifth quarter, alongside any recovery in the SI and audio-equipment segments."
+    "ko": "2026년 사업보고서 제출 기한이다. 연간 매출·영업이익·지배주주 순이익이 DART 정기보고서로 확정되며, 영업이익률이 2025년 -1.6%에서 어떻게 바뀌었는지 볼 수 있다.",
+    "en": "Deadline for the 2026 annual report on DART. It confirms full-year revenue, operating profit and parent net income, and shows how the operating margin moved from -1.6% in 2025."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기~2027년",
-    "en": "Q4 2026 through 2027"
+    "ko": "2027년 5월 15일까지",
+    "en": "By May 15, 2027"
    },
    "what": {
-    "ko": "국내 양자암호통신망 관련 정부·통신사 프로젝트 발주 여부와 우리로·퀀텀플럭스의 참여·수주 소식을 확인할 필요가 있다.",
-    "en": "Monitor whether domestic quantum-encrypted communication network projects from the government or telecom operators are ordered, and whether Wooriro or Quantum Flux participates or wins related contracts."
+    "ko": "2027년 1분기 분기보고서 제출 기한이다. 2026년 3분기 이후 매출 흐름이 이어지는지, 광다이오드 가동률 변화와 함께 영업이익 흑자가 유지되는지 확인하는 지점이다.",
+    "en": "Deadline for the Q1 2027 quarterly report. It shows whether sales momentum continues after Q3 2026 and whether operating profit stays positive alongside photodiode utilization."
    }
   },
   {
    "when": {
-    "ko": "2027년",
-    "en": "2027"
+    "ko": "2027년 8월 30일",
+    "en": "August 30, 2027"
    },
    "what": {
-    "ko": "회사가 밝힌 400Gbps급 반도체소자 상용화 계획의 진행 상황을 추가 공시나 IR 자료로 확인해야 한다.",
-    "en": "Confirm the progress of the company's stated plan to commercialize a 400Gbps-class semiconductor device through further disclosures or IR materials."
+    "ko": "벤처기업 지정 해제(예정)일이다(FnGuide 기업개요). 전후로 연구개발비 규모와 양자암호·라이다 관련 공시 흐름을 함께 볼 수 있다.",
+    "en": "Scheduled date for lifting venture company designation (FnGuide). Around this date, R&D spending and disclosures on quantum encryption and lidar programs can be read together."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "우리로는 2022년부터 2025년까지 매출이 지속적으로 줄고 순손실이 이어진 코스닥 스몰캡이지만, 2025년 3분기 이후로는 네 개 분기 연속 영업이익 흑자를 기록하며 뚜렷한 회복 흐름을 보이고 있다. 이러한 개선은 SI사업부의 저장장치 판매 확대와 광통신사업부의 광다이오드·SPAD 매출 증가가 맞물린 결과로, 재무구조 역시 영업활동현금흐름 흑자 전환과 부채비율 하락으로 함께 나아졌다. 동시에 회사는 ETRI로부터 이전받은 200Gbps급 광검출기와 SPAD 기반 양자암호통신 사업 등 새로운 성장축을 준비하고 있으나, 이들은 모두 상용화 초기 단계에 머물러 있어 실제 매출 기여 시점과 규모는 아직 불확실하다. 매출의 상당 부분을 차지하는 SI·음향기기 유통 사업은 자체 기술 기반 제품보다 마진이 낮고 외부 변수에 취약하다는 점도 함께 고려할 필요가 있다. 증권사 커버리지가 희소한 소형주 특성상 시황이 테마성 뉴스에 민감하게 반응해온 이력도 있다. 앞으로의 분기 실적 공시와 신사업 상용화 일정이 이 회사의 이야기를 어떻게 이어갈지 확인하는 것이 중요하다.",
-   "en": "Wooriro is a KOSDAQ small-cap that saw revenue decline and net losses persist from 2022 through 2025, yet it has shown a clear recovery since Q3 2025, posting four consecutive quarters of operating profit. This improvement stems from a combination of expanded storage-device sales in the SI segment and rising photodiode and SPAD revenue in the optical communication segment, accompanied by a stronger financial structure marked by positive operating cash flow and a lower debt ratio. At the same time, the company is building new growth pillars around the ETRI-transferred 200Gbps photodetector and its SPAD-based quantum-encryption business, though both remain at an early commercialization stage with uncertain timing and scale of revenue contribution. It is also worth noting that the SI and audio-equipment distribution businesses, which make up a large share of revenue, carry lower margins than proprietary technology products and are more exposed to external variables. As a small-cap with scarce brokerage coverage, the stock has a history of reacting sensitively to thematic news. Going forward, tracking quarterly earnings disclosures and the commercialization timeline of new businesses will be important to see how this story develops."
+   "ko": "우리로는 광분배기와 광다이오드를 만드는 광통신 부품사로, 2022년부터 2025년까지 연간 매출이 줄고 4년 연속 지배주주 순손실을 기록했다가 2026년 들어 분기 흑자로 돌아섰다. 2026년 3분기 매출은 204억원으로 3개 분기 연속 늘었고, 광다이오드 가동률은 64.53%로 생산 여력이 남아 있다. 긍정 요인은 고속 광다이오드 수요 회복, 분기 매출 증가, 흑자 유지이고, 부정 요인은 누적 적자와 얇은 이익 기반, 유통 비중이 큰 매출 구조, 3분기 영업이익 감소, 환율 노출이다. 최근 4개 분기 지배주주 순이익 합계는 40.5억원으로 이익 규모가 작아 수익성 지표의 변동 폭이 크다. 밸류에이션은 장부 자산 대비 프리미엄이 큰 구간이어서 이익 체력의 지속성이 해석의 핵심 변수로 남는다. 다음 확인 지점은 2026년 4분기 잠정실적과 2026년 사업보고서이며, 연간 영업이익률이 흑자 방향으로 굳어지는지가 핵심이다. 2027년 1분기 분기보고서에서는 3분기 영업이익 감소 이후 흐름이 이어지는지 볼 수 있다.",
+   "en": "placeholder"
   }
  },
  "sources": [
   "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=046970",
-  "https://alphasquare.co.kr/home/stock-summary?code=046970",
-  "https://littlebproject.com/stock/046970",
+  "https://www.butler.works/ko/companies/00296005",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A046970",
+  "https://ssl.pstatic.net/imgstock/upload/research/company/1576114994584.pdf",
   "https://www.investing.com/equities/wooriro-co-ltd",
   "https://kr.investing.com/news/global-filings/article-93CH-1931849",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A046970&MenuYn=Y&ReportGB=B&NewMenuID=Y&stkGb=701",
+  "https://www.openbizdata.com/wooriro/",
+  "https://asp01.fnguide.com/SVO2/asp/SVD_Corp.asp?gicode=A046970&NewMenuID=102",
+  "https://factstock.net/earnings",
   "https://www.investing.com/equities/wooriro-co-ltd-earnings",
-  "https://markets.hankyung.com/stock/046970/financial-summary",
-  "https://m.thinkpool.com/item/046970",
-  "https://www.komachine.com/ko/companies/wooriro",
-  "https://ssl.pstatic.net/imgstock/upload/research/company/1576114994584.pdf",
-  "https://www.ggilbo.com/news/articleView.html?idxno=1159849",
-  "https://www.opinionnews.co.kr/news/articleView.html?idxno=136052",
-  "https://www.wooriro.com/kor/",
-  "https://www.leadeconomy.co.kr/news/articleView.html?idxno=6827",
-  "https://www.saramin.co.kr/zf_user/company-info/view/csn/MFdoRE8xcUVNOVhkbUZHVkJtNVU2Zz09/company_nm/(%EC%A3%BC)%EC%9A%B0%EB%A6%AC%EB%A1%9C",
-  "https://www.jobkorea.co.kr/company/1466997",
-  "https://kind.krx.co.kr/external/2026/05/07/000308/20260507000779/11013.htm",
-  "https://v.daum.net/v/20260508103019307?f=p"
+  "https://www.businesskorea.co.kr/news/articleView.html?idxno=279594",
+  "https://eureka.hankyung.com/insight/detail/17136",
+  "https://www.tradingkey.com/kr/news/earnings/262282726-",
+  "https://news.samsung.com/kr/%ec%82%bc%ec%84%b1%ec%a0%84%ec%9e%90-2026%eb%85%84-3%eb%b6%84%ea%b8%b0-%ec%9e%a0%ec%a0%95%ec%8b%a4%ec%a0%81-%eb%b0%9c%ed%91%9c",
+  "https://kr.investing.com/news/transcripts/article-93CH-2175686"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "046970",
  "name": "우리로",
  "name_en": "WOORIRO CO., LTD",
@@ -223,11 +221,11 @@
   "전자·부품"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 06:36",
- "dataDate": "20260904",
+ "reportDate": "2026-11-17",
+ "reportTs": "2026-11-17 11:17",
+ "dataDate": "20261113",
  "quant": {
-  "asOf": "2026-08-21",
+  "asOf": "2026-11-16",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -237,7 +235,8 @@
     "np": -788673761,
     "np_owner": -788673761,
     "equity": 39177298684,
-    "equity_owner": 39177298684,
+    "equity_owner": 38779907028,
+    "equity_nci": 397391656,
     "liab": 17290055659,
     "cfo": 1159407745,
     "eps_basic": -18,
@@ -252,12 +251,13 @@
     "np": -5111261698,
     "np_owner": -5111261698,
     "equity": 39794790431,
-    "equity_owner": 39794790431,
+    "equity_owner": 39396093167,
+    "equity_nci": 398697264,
     "liab": 20215315660,
     "cfo": -3191585062,
     "eps_basic": -120,
     "opm": -6.3,
-    "roe": -12.8,
+    "roe": -13.0,
     "debt_ratio": 50.8
    },
    {
@@ -268,6 +268,7 @@
     "np_owner": -4785013092,
     "equity": 45083677788,
     "equity_owner": 45083677788,
+    "equity_nci": null,
     "liab": 15106762273,
     "cfo": -1759621532,
     "eps_basic": -135,
@@ -283,6 +284,7 @@
     "np_owner": -3453579742,
     "equity": 37658654174,
     "equity_owner": 37658654174,
+    "equity_nci": null,
     "liab": 23316377217,
     "cfo": 1288779303,
     "eps_basic": -27,
@@ -292,12 +294,6 @@
    }
   ],
   "quarterly": [
-   {
-    "q": "2025Q2",
-    "rev": 10077603301,
-    "op": -209072001,
-    "np_owner": 218257354
-   },
    {
     "q": "2025Q3",
     "rev": 12061552981,
@@ -321,26 +317,36 @@
     "rev": 14727621026,
     "op": 2554875343,
     "np_owner": 1272413106
+   },
+   {
+    "q": "2026Q3",
+    "rev": 20354320093,
+    "op": 1979779955,
+    "np_owner": 1665582436
    }
   ],
   "valuation": {
-   "price": 4840,
-   "mcap": 0.2121,
+   "price": 6860,
+   "mcap": 0.3006,
    "shares": 43824999,
    "total_shares": 43824999,
-   "wavg_shares": 43071352,
-   "per": 57.619,
-   "eps": 84,
-   "pbr": 4.9743,
-   "bps": 973,
-   "roe_ttm": 9.1,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": 3634394142,
-   "pbr_krx": 4.65,
+   "wavg_shares": 43351653,
+   "per": 72.979,
+   "eps": 94,
+   "pbr": 6.8876,
+   "bps": 996,
+   "roe_ttm": 9.8,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": 4049637540,
+   "ccy": "KRW",
+   "bps_src": "자체",
+   "eps_src": "공시",
+   "pbr_krx": 7.6,
    "bps_krx": 903.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
    "div": 0.0
   }
- }
+ },
+ "textRules": 2
 }
