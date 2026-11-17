@@ -32,3 +32,23 @@
 
 ✅ 회수 완료 · 성공 4/실패 0 · 총 보유 2695개 → data/reports/ + reports-index.js
 💵 claude-haiku-5-5 4회(배치) · 입력 21,364(캐시쓰기 157,712·읽기 20,097) · 출력 95,533 · 검색 8 → 약 $0.11
+## 🤖 Batch 제출 — 대상 2개 / 상위 100개 (최근 105개 건너뜀) · 모델 claude-haiku-5-5
+  · 준비 493260 옵토닉스 (DART X)
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  · 준비 345290 영광와이케이엠씨 (DART O)
+- ✅ 배치 제출 완료: msgbatch_01NR1bnnTRmNdAQdqkDEKHDJ (2건) → data/batch_state.json
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 ended · 처리 0/성공 2/오류 0
+- 🧹 유니버스 제외 종목 리포트 정리: 2건 (097780, 206400)
+
+✅ 회수 완료 · 성공 2/실패 0 · 총 보유 2695개 → data/reports/ + reports-index.js
+💵 claude-haiku-5-5 2회(배치) · 입력 10,537(캐시쓰기 70,744·읽기 8,613) · 출력 58,497 · 검색 4 → 약 $0.06
