@@ -1314,7 +1314,12 @@ exports.socialLogin = onCall(
     const needConsent = (!exists || snapRead) && !(cNow &&
       cNow.age14 === true && cNow.terms === true && cNow.privacy === true &&
       cNow.version === CONSENT_VERSION);
-    return { token, needConsent };
+    /* 이번 호출로 동의까지 갖춘 새 계정을 만들었는가(2026-11-17). 카카오 · 네이버 가입은 여기서 계정과 동의를 한
+       번에 남겨 동의 화면(Consent.html)을 거치지 않는다 — 가입 기록(sign_up)은 그 화면만 보내므로 이 길의 가입이
+       방문 통계의 가입 숫자에서 빠졌다. 화면이 이 값을 보고 sign_up 을 보낸다. 동의 없이 만든 계정(needConsent)은
+       동의 화면이 마칠 때 보낸다 — 여기서 같이 세면 두 번이다. 이력의 'signup' 과 같은 조건이다. */
+    const signedUp = !exists && !!patch.consents;
+    return { token, needConsent, signedUp };
   }
 );
 

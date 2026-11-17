@@ -109,6 +109,12 @@ async function completeLogin(code, returnedState, saved, onError){
     if(!data || !data.token) throw new Error("가입을 마치지 못했습니다.");
 
     await signInWithCustomToken(auth, data.token);
+    /* 서버가 동의까지 갖춘 새 계정을 만들었으면 가입 기록을 남긴다(2026-11-17). 이 길은 동의 화면(Consent.html)을
+       거치지 않아, 그 화면이 보내는 sign_up 이 남지 않고 가입 숫자에서 빠졌다. 동의 화면으로 가는 계정(needConsent)은
+       그 화면이 마칠 때 보낸다 — 여기서 같이 보내면 두 번 센다. */
+    if(data.signedUp === true && data.needConsent !== true){
+      try{ if(window.KOSA) window.KOSA.track("sign_up", { method: saved.provider }); }catch(_){}
+    }
     /* 동의 기록이 없는 계정 — 곧바로 우리 동의 화면으로 간다. 다음 화면의
        guardConsent 에 맡기면 한 탭에 한 번만 보내므로 놓칠 수 있다. 돌아갈
        곳은 동의 화면이 safeNext 로 다시 거른다. */
