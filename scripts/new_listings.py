@@ -15,6 +15,12 @@ known 목록은 항상 현재 전체로 갱신한다. 첫 실행(known 없음)�
 읽었거나 비정상으로 작으면(종목 수의 절반 미만) 재시도는 하지 않는다 — 그대로 두면
 리포트가 있는 종목까지 '없음' 으로 보고 다시 쓴다. 같은 종목이 계속 실패하면 평일마다
 배치 한 건 값으로 다시 쓴다 — 로그의 '재시도' 줄이 며칠째 같으면 사람이 본다.
+
+  python3 scripts/new_listings.py --peek   # 아무것도 쓰지 않고 'missing=N'(이번에 쓸 대상 수)만 찍는다
+
+--peek 은 워치독이 쓴다(2026-11-16 영광와이케이엠씨). 이 작업은 평일 밤 예약인데, 공용 실행 순서(kos-data)에서 실적 철의
+공시 트리거(4~5시간)에 밀려 기다리다 뒤에 들어온 시세 갱신에 취소됐다(11/13 · 11/16 — 깃허브는 묶음마다 기다리는 실행을
+하나만 둔다). 워치독은 리포트 작업이 끝날 때마다 돌므로, 대상이 남았으면 순서가 빈 직후 이 작업을 다시 부른다.
 """
 import os
 import sys
@@ -40,19 +46,21 @@ def _load_obj(path):
     return json.loads(raw[raw.find("{"): raw.rfind("}") + 1])
 
 
-def main():
+def main(peek=False):
     stocks = _load_obj(STOCKS_JS)["stocks"]
     cur = [s["ticker"] for s in stocks]
     cur_set = set(cur)
 
     if not KNOWN.exists():
-        KNOWN.write_text(json.dumps(sorted(cur_set), ensure_ascii=False), encoding="utf-8")
+        if not peek:
+            KNOWN.write_text(json.dumps(sorted(cur_set), ensure_ascii=False), encoding="utf-8")
         print(f"known_tickers 초기화 ({len(cur_set)}개) — 신규 없음")
         new = []
     else:
         known = set(json.loads(KNOWN.read_text(encoding="utf-8")))
         new = [t for t in cur if t not in known]
-        KNOWN.write_text(json.dumps(sorted(cur_set), ensure_ascii=False), encoding="utf-8")
+        if not peek:
+            KNOWN.write_text(json.dumps(sorted(cur_set), ensure_ascii=False), encoding="utf-8")
         print(f"신규 진입 종목 {len(new)}개")
 
     # 종목명 매핑(로그용)
@@ -97,6 +105,9 @@ def main():
     todo = ([t for t in new if t not in reported] + retry)[:MAX_NEW]
 
     out = ",".join(todo)
+    if peek:
+        print(f"missing={len(todo)}")
+        return todo
     gh = os.getenv("GITHUB_OUTPUT")
     if gh:
         with open(gh, "a", encoding="utf-8") as f:
@@ -107,4 +118,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main(peek="--peek" in sys.argv[1:])
