@@ -1,230 +1,210 @@
 {
  "title": {
-  "ko": "CSM은 늘고 순익은 줄었다",
-  "en": "CSM Grows While Net Profit Slips"
+  "ko": "건강보험 CSM 성장, 3분기 적자 전환",
+  "en": "Health-protection CSM grows as Q3 2026 turns to a loss"
  },
  "lead": {
-  "ko": "건강보험·변액보험 신계약은 두 자릿수로 늘었지만 계리가정 변경이 보험손익을 눌러 2026년 상반기 이익은 뒷걸음쳤고, 대규모 자사주 소각으로 자본정책과 건전성 관리가 동시에 시험대에 올랐다.",
-  "en": "New business in health and variable products grew at a double-digit pace, but a change in actuarial assumptions compressed insurance profit and dented first-half 2026 earnings, while a large share cancellation put capital policy and solvency management on trial at the same time."
+  "ko": "보유 보험계약마진(CSM)은 2026년 3분기 말 2조 3,205억원으로 늘었지만, 계리가정 제도변경 영향과 투자손실이 겹치면서 3분기 단독 실적은 영업손실과 순손실로 돌아섰다.",
+  "en": "Held contractual service margin (CSM) rose to KRW 2.32 trillion at the end of Q3 2026, but a regulatory assumption change and investment losses pushed the quarter to an operating loss and a net loss."
  },
  "keypoints": [
   {
-   "ko": "2025년 보험수익 1조 804억원, 영업이익 1,945억원으로 전년(9,640억원·1,221억원) 대비 외형과 영업이익이 함께 늘었으나, 지배주주 순이익은 1,308억원으로 전년 1,361억원보다 소폭 줄었다.",
-   "en": "In 2025 insurance revenue reached KRW 1,080.4bn and operating profit KRW 194.5bn, both up from KRW 964.0bn and KRW 122.1bn a year earlier, yet owner-attributable net profit of KRW 130.8bn edged down from KRW 136.1bn."
+   "ko": "보험수익은 2025년 1조 804억원으로 2024년부터 2년 연속 증가했고, 정기보고서 분기 실적으로는 2025년 4분기부터 2026년 3분기까지 4개 분기 연속 증가했다.",
+   "en": "Insurance revenue rose two years in a row through 2025 to KRW 1.08 trillion, and the DART quarterly figures show four consecutive quarterly increases from Q4 2025 through Q3 2026."
   },
   {
-   "ko": "분기 흐름은 변동성이 크다. 2026Q1 영업이익 684억원·순이익 534억원에서 2026Q2에는 각각 236억원·180억원으로 급감했다.",
-   "en": "The quarterly path is volatile: operating profit and net profit of KRW 68.4bn and KRW 53.4bn in 1Q26 dropped to KRW 23.6bn and KRW 18.0bn in 2Q26."
+   "ko": "2026년 3분기 영업손실 431억원, 지배주주 순손실 339억원으로 적자 전환했고, 계리가정 가이드라인 적용에 따른 제도변경 영향 707억원이 누적 보험손익에 반영됐다.",
+   "en": "Q3 2026 recorded an operating loss of KRW 43.1 billion and a net loss attributable to controlling shareholders of KRW 33.9 billion, with the regulatory change reducing cumulative insurance profit by KRW 70.7 billion."
   },
   {
-   "ko": "회사는 상반기 계리가정 변경에 따른 손익 감소 영향이 약 700억원이라고 설명했고, 같은 기간 신계약 연납화보험료와 신계약 보험계약마진은 각각 32.4%, 25.4% 증가했다고 밝혔다(2026년 8월 14일).",
-   "en": "The company said the actuarial assumption change cut first-half earnings by roughly KRW 70bn, while annualized premium equivalent and new-business contractual service margin rose 32.4% and 25.4% respectively (August 14, 2026)."
+   "ko": "건강상해보험 신계약 CSM은 2026년 3분기 누적 3,489억원으로 10.6% 늘었고, 전체 신계약 CSM에서 차지하는 비중은 84.9%로 높아졌다.",
+   "en": "Health and accident insurance new-contract CSM reached KRW 348.9 billion in the first nine months of 2026, up 10.6% year on year, and accounted for 84.9% of total new-contract CSM."
   },
   {
-   "ko": "자본총계는 2022년 4조 869억원에서 2025년 2조 4,481억원으로 축소됐고 부채비율은 757.4%에서 1,244.8%로 높아졌다. 6월 말 지급여력비율은 155.3%로 연초 176.7%에서 하락했다고 보도됐다.",
-   "en": "Total equity shrank from KRW 4,086.9bn in 2022 to KRW 2,448.1bn in 2025 and the debt ratio rose from 757.4% to 1,244.8%; the solvency ratio was reported at 155.3% at end-June versus 176.7% at the start of the year."
+   "ko": "지급여력비율(K-ICS)은 2026년 3분기 말 147.3%(추정치)로 2025년 말보다 29.4%포인트 낮아졌으며, 시장금리 상승이 주요 배경으로 언급됐다.",
+   "en": "The K-ICS solvency ratio was an estimated 147.3% at the end of Q3 2026, down 29.4 percentage points from year-end 2025, with rising market interest rates cited as a main factor."
   },
   {
-   "ko": "2026년 3~4월 두 차례에 걸쳐 자기주식 6,296만주를 소각해 발행주식이 약 31.8% 줄었고, 회사는 보험 본업과 자기자본투자를 결합한 전략을 제시하며 인공지능 반도체 기업 리벨리온 투자를 의결했다.",
-   "en": "Two rounds of cancellation in March and April 2026 retired 62.96m treasury shares, cutting issued shares by about 31.8%, and the company unveiled a strategy combining core insurance with principal investment, approving an investment in AI chip designer Rebellions."
+   "ko": "최근 4개 분기 지배주주 순이익 합계는 430억원으로 이익 규모가 얇아, 주가 수준과 이익 기반의 격차가 밸류에이션 해석의 핵심 변수다.",
+   "en": "Controlling-shareholder net income for the last four quarters totals KRW 43 billion, so the gap between the share price and the earnings base is the central variable in valuation reading."
   }
  ],
  "business": {
-  "ko": "미래에셋생명은 변액보험과 퇴직연금을 축으로 한 자산관리형 생명보험사로, 최근에는 건강보험 중심 보장성 상품 확대를 병행하는 투트랙 전략을 내세우고 있다. 회사는 2026년 경영전략에서 변액보험 'MVP 펀드 시리즈'를 기반으로 보험과 투자를 결합한 상품 경쟁력을 강화하고, 퇴직연금 DC·IRP 중심 수수료 기반 사업을 확대하겠다고 밝혔다. 보장성 부문에서는 건강상해 상품 비중이 빠르게 높아져, 2026년 1분기 보장성 신계약 보험계약마진 내 건강상해 비중이 92.9%까지 확대됐다고 보도됐다. 자산운용은 채권 비중이 68%에 달해 금리 변동이 손익과 자본에 직접 반영되는 구조로 알려져 있다. 2026년부터는 보험부채 대응 자산을 관리하는 자산부채종합관리 북과 성장기업 투자를 담는 자기자본투자 북을 분리 운용하는 체계를 도입했고, 리벨리온 투자가 그 첫 사례로 집행됐다. 변액보험 시장에서는 메트라이프생명과 1위 경쟁을 벌이고 있으며, 2025년 변액보험 신계약 보험료 누적액은 3조 7,977억원으로 전년 대비 37% 늘었다고 보도됐다. 판매 채널은 보험대리점 중심 영업 확대와 유병자·고령층 상품 경쟁력 강화를 병행하는 방향으로 제시됐다. 삼성생명·한화생명·신한라이프 등 대형사 대비 자산 규모는 작지만, 변액·연금 등 특정 영역에서 존재감을 확보한 중형사 포지션이다. 2026년 자사주 소각과 계열사 지분 매입이 이어지며 최대주주 측 합산 지분율은 81.43%까지 높아졌다고 보도됐다.",
-  "en": "Mirae Asset Life Insurance is a wealth-management-oriented life insurer built around variable insurance and retirement pensions, and it is now pursuing a two-track strategy that adds health-centered protection products. In its 2026 strategy the company said it would strengthen combined insurance-investment offerings based on its variable insurance MVP fund series and expand fee-based business centered on defined-contribution and individual retirement pension accounts. Within protection products the health and injury share has risen quickly, reported at 92.9% of protection new-business contractual service margin in the first quarter of 2026. On the asset side, bonds are reported to account for 68% of the investment portfolio, so rate moves feed directly into earnings and capital. From 2026 the insurer separated an asset-liability management book, which backs insurance liabilities, from a principal investment book for growth-company stakes, and the Rebellions investment was executed as the first case under this framework. In variable insurance it competes for the top spot with MetLife Korea, with 2025 cumulative new-business variable premiums reported at KRW 3,797.7bn, up 37% year on year. Distribution strategy centers on expanding general agency channels while strengthening products for people with pre-existing conditions and older customers. Its asset base is smaller than that of majors such as Samsung Life, Hanwha Life and Shinhan Life, leaving it as a mid-sized player with a distinct presence in variable and annuity segments. Following the 2026 share cancellations and continued affiliate purchases, the combined largest-shareholder stake was reported to have risen to 81.43%."
+  "ko": "미래에셋생명은 생명보험을 주력으로 하는 상장사로, 사업 축은 건강·상해 등 보장성 보험, 변액보험, 퇴직연금으로 나뉜다. 2026년 3분기 누적 보장성 신계약 연납화보험료(APE)는 2,938억원으로 전년 동기보다 23.5% 늘었다. 같은 기간 건강상해보험 신계약 CSM은 3,489억원으로 전체 신계약 CSM의 84.9%를 차지했고, 1년 전 비중은 79.6%였다. 신계약 구성이 건강상해 중심으로 옮겨 가면서 계약 기간에 걸쳐 이익으로 인식되는 보험계약마진의 기반이 넓어지는 구조다. 변액보험 적립금은 14조 1,940억원으로 10.8% 증가했고, 변액보험 수수료 수입은 457억원으로 21.0% 늘었다. 퇴직연금 확정기여형(DC)과 개인형퇴직연금(IRP) 적립금은 2조 3,030억원으로 11.7% 증가했다. 2026년 3분기 말 연결 기준 보유 CSM은 2조 3,205억원으로 2025년 말보다 12.7% 늘었다. 실적 코멘트에 따르면 판매 채널에서는 GA(법인보험대리점) 중심의 보장성 판매 확대가 실적 개선 요인으로 꼽힌다. 회사는 손해율 관리, 수익성 중심의 신계약 확보, 자산부채관리(ALM)를 질적 성장의 축으로 내세우고 있다. 상품 측면에서 건강·상해가 보장성 포트폴리오의 중심에 있고, 변액 부문은 수수료 수익의 기반 역할을 한다. 이익은 보험 본업을 뜻하는 보험손익과 투자손익으로 나뉘며, 투자손익은 대체투자 평가손실과 환율 변동에 크게 흔들렸다.",
+  "en": "MIRAE ASSET Life Insurance is a listed life insurer whose business is organized around three areas: health and accident protection, variable insurance, and retirement pensions. Cumulative first-nine-month 2026 protection new-business annualized premium equivalent (APE) reached KRW 293.8 billion, up 23.5% from a year earlier. Health and accident insurance accounted for KRW 348.9 billion of new-contract CSM in the same period, or 84.9% of the total, compared with 79.6% a year earlier. Because the new-business mix has shifted toward health and accident products, the base of contractual service margin that is recognized as profit over the contract period has widened. Variable insurance reserves rose 10.8% to KRW 14.194 trillion, and variable insurance fee income rose 21.0% to KRW 45.7 billion. Defined-contribution and individual retirement pension reserves reached KRW 2.303 trillion, up 11.7%. Held CSM at the end of Q3 2026 was KRW 2.32 trillion on a consolidated basis, up 12.7% from year-end 2025. According to the company's earnings commentary, expansion of protection sales through general insurance agencies (GA) channels contributed to the improvement. Management has put loss-ratio control, profitability-focused new business, and asset-liability management (ALM) at the center of its quality-growth strategy. Health and accident products anchor the protection portfolio, while variable products support fee income. Profit is split between insurance service results and investment results, and investment results were highly sensitive to alternative-asset valuation losses and currency moves."
  },
  "earnings": {
-  "ko": "연간 흐름을 보면 보험수익은 2022년 9,039억원, 2023년 9,016억원, 2024년 9,640억원, 2025년 1조 804억원으로 최근 2년간 외형이 확대됐다. 영업이익은 2023년 1,691억원에서 2024년 1,221억원으로 줄었다가 2025년 1,945억원으로 회복했고, 지배주주 순이익은 2023년 1,172억원, 2024년 1,361억원, 2025년 1,308억원으로 1,200억~1,400억원 구간에서 등락했다. 영업이익과 순이익의 방향이 엇갈린 해가 반복되는 것은 보험손익과 투자손익, 계리가정 변경이 서로 다른 시점에 반영되기 때문으로 볼 수 있다. 분기 실적은 편차가 크다. 보험수익은 2025Q2 2,617억원에서 2026Q2 3,063억원까지 매 분기 증가했지만, 영업이익은 2025Q2 650억원 → 2025Q3 618억원 → 2025Q4 283억원 → 2026Q1 684억원 → 2026Q2 236억원으로, 순이익은 507억원 → 498억원 → 55억원 → 534억원 → 180억원으로 크게 흔들렸다. 2026년 상반기 합산 순이익은 714억원으로 전년 동기 755억원 대비 5.4% 감소했으며, 회사는 계리가정 변경에 따른 손익 감소 영향이 약 700억원이고 상반기 보험손익은 36억원으로 전년 동기 836억원에서 크게 줄었다고 설명했다. 반대로 1분기에는 전년도 해외 부동산 손상의 기저효과와 해외 투자자산 회복이 반영돼 투자 부문이 이익 증가를 견인했다고 보도됐다. 재무구조 측면에서는 자본총계가 2022년 4조 869억원에서 2025년 2조 4,481억원으로 줄고 부채는 30조원 내외를 유지해 부채비율이 757.4%에서 1,244.8%로 상승했다. 현금흐름은 영업활동현금흐름이 2022년 -6,716억원, 2023년 -9,907억원, 2024년 -2,532억원의 유출에서 2025년 +2,845억원으로 전환됐다. 최근 네 개 분기(2025Q3~2026Q2) 합산 지배주주 순이익은 1,267억원으로, 연간 1,300억원대였던 2024~2025년 수준보다 낮아진 상태다.",
-  "en": "On an annual basis, insurance revenue moved from KRW 903.9bn in 2022 and KRW 901.6bn in 2023 to KRW 964.0bn in 2024 and KRW 1,080.4bn in 2025, showing top-line expansion over the last two years. Operating profit fell from KRW 169.1bn in 2023 to KRW 122.1bn in 2024 before recovering to KRW 194.5bn in 2025, while owner-attributable net profit oscillated between roughly KRW 120bn and KRW 140bn at KRW 117.2bn, KRW 136.1bn and KRW 130.8bn across 2023 to 2025. The repeated divergence between operating and net profit reflects the fact that insurance results, investment results and actuarial assumption changes land in different periods. Quarterly results are far less smooth. Insurance revenue rose every quarter from KRW 261.7bn in 2Q25 to KRW 306.3bn in 2Q26, yet operating profit swung from KRW 65.0bn to KRW 61.8bn, KRW 28.3bn, KRW 68.4bn and KRW 23.6bn, and net profit from KRW 50.7bn to KRW 49.8bn, KRW 5.5bn, KRW 53.4bn and KRW 18.0bn. First-half 2026 net profit totaled KRW 71.4bn, down 5.4% from KRW 75.5bn a year earlier; the company said the actuarial assumption change reduced earnings by about KRW 70bn and that first-half insurance profit fell to KRW 3.6bn from KRW 83.6bn. Conversely, in the first quarter the investment line drove profit growth on the base effect from prior-year overseas property impairments and a recovery in offshore assets, according to press reports. On the balance sheet, total equity contracted from KRW 4,086.9bn in 2022 to KRW 2,448.1bn in 2025 while liabilities stayed near KRW 30tn, lifting the debt ratio from 757.4% to 1,244.8%. Operating cash flow turned positive at KRW 284.5bn in 2025 after outflows of KRW 671.6bn in 2022, KRW 990.7bn in 2023 and KRW 253.2bn in 2024. Summed owner-attributable net profit for the four quarters from 3Q25 to 2Q26 was KRW 126.7bn, below the roughly KRW 130bn annual level of 2024 and 2025."
+  "ko": "공시 실적 기준 연간 보험수익은 2022년 9,039억원에서 2023년 9,016억원(전년 대비 0.2% 감소)으로 줄었다가, 2024년 9,640억원(전년 대비 6.9% 증가), 2025년 1조 804억원(전년 대비 12.1% 증가)으로 늘었다. 2025년이 2022~2025년 중 가장 큰 해이고 2023년이 가장 작은 해다. 영업이익은 2022년 1,624억원, 2023년 1,691억원(전년 대비 4.1% 증가)에서 2024년 1,221억원(전년 대비 27.8% 감소)으로 꺾인 뒤 2025년 1,945억원(전년 대비 59.3% 증가)으로 회복됐다. 보험수익이 2024년 이후 늘었는데도 영업이익은 2024년이 가장 작았으므로, 수익 규모와 이익 수준의 연결은 연도별로 일정하지 않았다. 지배주주 순이익은 2022년 1,248억원, 2023년 1,172억원(전년 대비 6.1% 감소), 2024년 1,361억원(전년 대비 16.1% 증가)으로 2024년이 가장 컸고, 2025년에는 1,308억원(전년 대비 3.9% 감소)이었다. 당기순이익(비지배지분 포함)은 연도별로 같은 금액으로 기재돼 있다. 부채비율(부채총계 ÷ 자본총계)은 2022년 757.4%에서 2025년 1,244.8%로 올랐고, 2025년 말 자본총계는 2조 4,481억원, 부채총계는 30조 4,727억원이다. 영업활동 현금흐름은 2022년 -6,716억원, 2023년 -9,907억원, 2024년 -2,532억원으로 음수였다가 2025년 2,845억원으로 전환됐다. 분기로 보면 보험수익은 2025년 3분기 2,750억원에서 2026년 3분기 3,226억원까지 늘었고, 2026년 3분기는 전년 동기 대비 17.3% 증가다. 반면 영업이익은 2025년 3분기 618억원, 4분기 283억원, 2026년 1분기 684억원, 2분기 236억원을 거쳐 3분기 영업손실 431억원으로 전환됐다. 3분기 적자의 배경으로 회사는 계리가정 가이드라인 적용에 따른 제도변경 영향 707억원(누적 보험손익 기준), 대체투자 평가손실 등에 따른 투자손익 적자(누적 92억원), 환율 변동을 꼽았다. 제도변경 영향을 뺀 누적 보험손익은 1,252억원으로 전년 동기 1,179억원보다 늘었다. 같은 기간 누적 당기순이익은 375억원으로 전년 동기 대비 70.1% 감소했다(2026년 11월 13일 발표 기준).",
+  "en": "Based on disclosed results, annual insurance revenue fell from KRW 903.9 billion in 2022 to KRW 901.6 billion in 2023 (down 0.2% year over year), then rose to KRW 964.0 billion in 2024 (up 6.9% year over year) and KRW 1.0804 trillion in 2025 (up 12.1% year over year). 2025 was the largest year of 2022–2025 and 2023 was the smallest. Operating profit was KRW 162.4 billion in 2022 and KRW 169.1 billion in 2023 (up 4.1% year over year), then turned down to KRW 122.1 billion in 2024 (down 27.8% year over year) before recovering to KRW 194.5 billion in 2025 (up 59.3% year over year). Even though insurance revenue grew after 2024, operating profit was lowest in 2024, so the link between revenue scale and profit level was not consistent from year to year. Net profit attributable to controlling shareholders was KRW 124.8 billion in 2022, KRW 117.2 billion in 2023 (down 6.1% year over year) and KRW 136.1 billion in 2024 (up 16.1% year over year), the highest of the period, and then KRW 130.8 billion in 2025 (down 3.9% year over year). Net profit including non-controlling interests is reported at the same amount each year. The debt ratio (total liabilities ÷ total equity) rose from 757.4% in 2022 to 1,244.8% in 2025, and at the end of 2025 total equity was KRW 2.4481 trillion and total liabilities were KRW 30.4727 trillion. Operating cash flow was negative at KRW -671.6 billion in 2022, KRW -990.7 billion in 2023 and KRW -253.2 billion in 2024, then turned positive at KRW 284.5 billion in 2025. On a quarterly basis, insurance revenue grew from KRW 275.0 billion in the third quarter of 2025 to KRW 322.6 billion in the third quarter of 2026, a 17.3% increase year over year for the third quarter of 2026. Operating profit, on the other hand, went through KRW 61.8 billion in the third quarter of 2025, KRW 28.3 billion in the fourth quarter, KRW 68.4 billion in the first quarter of 2026 and KRW 23.6 billion in the second quarter, before swinging to an operating loss of KRW 43.1 billion in the third quarter. The company cited as the reasons for the third-quarter loss the impact of a regulatory change from applying the actuarial assumption guidelines of KRW 70.7 billion (on a cumulative insurance profit basis), an investment loss (KRW 9.2 billion cumulative) due to valuation losses on alternative investments and other items, and exchange rate movements. Cumulative insurance profit excluding the impact of the regulatory change was KRW 125.2 billion, up from KRW 117.9 billion in the same period a year earlier. Cumulative net profit for the same period was KRW 37.5 billion, down 70.1% year over year (as announced on November 13, 2026)."
  },
  "industry": {
-  "ko": "생명보험 업권은 성장 둔화와 자본규제 강화가 겹친 국면에 있다. 보험연구원은 2026년 생명보험 수입보험료 증가율을 1.0%로 제시하며 보장성 성장은 이어지나 저축성·변액 판매 감소가 외형 확대를 제약한다고 분석했고, 생보사 보험계약마진 규모가 2025년 64조 7,000억원에서 2026년 64조 3,000억원으로 소폭 줄 것으로 전망했다. 금리 하락 국면에서는 부채 시가평가로 지급여력비율이 압박받는데, 실제로 2026년 상반기 경과조치 전 기준 생보사 지급여력비율은 181%로 전년 동기 대비 11%포인트 하락했다고 보험연구원 자료가 제시했다. 금융당국은 손실흡수력이 높은 항목만 반영하는 기본자본 지급여력비율 제도를 2027년 1월 1일 시행한다고 밝혔으며, 적기시정조치에는 총 9년의 경과기간을 부여한다고 설명했다. 미래에셋생명의 2026년 1분기 기본자본 기준 지표는 105.8%로 보도돼 업권 평균 대비 절대 수준은 낮지 않으나 하락 추세가 관찰된다. 주주환원 측면에서는 자사주 의무소각을 담은 3차 상법 개정안 통과 이후 보험사들이 잇따라 소각 계획을 발표했고, 미래에셋생명은 그 흐름의 선두에 섰다. 다만 NH투자증권은 2026년 2월 보고서에서 보험사 예실차 부진과 신계약 둔화 흐름이 당분간 이어질 것으로 전망했다. 해약환급금준비금 적립 비율 완화 논의가 진행 중이라는 점은 업권 전반의 배당 여력을 좌우하는 변수로 남아 있다.",
-  "en": "The life insurance sector faces slowing growth alongside tighter capital rules. The Korea Insurance Research Institute projected 2026 life premium growth of 1.0%, arguing that protection growth continues while weaker savings and variable sales cap top-line expansion, and it forecast the sector's contractual service margin easing from KRW 64.7tn in 2025 to KRW 64.3tn in 2026. Falling rates pressure solvency through mark-to-market liabilities: institute data showed the life sector's pre-transitional solvency ratio at 181% in the first half of 2026, down 11 percentage points year on year. The Financial Services Commission said a tier-one-only solvency ratio regime, counting solely high-loss-absorbency items, takes effect on January 1, 2027, with a nine-year transition period for prompt corrective action. Mirae Asset Life's tier-one-based measure was reported at 105.8% for the first quarter of 2026, not low in absolute terms versus the industry but on a declining path. On shareholder returns, insurers announced successive cancellation plans after the third round of commercial act amendments mandating treasury share retirement passed, and Mirae Asset Life moved early within that trend. That said, NH Investment & Securities said in a February 2026 report that weak experience variance and slowing new business would likely persist for some time. Ongoing discussions on easing the surrender value reserve accumulation ratio remain a swing factor for sector-wide dividend capacity."
+  "ko": "생명보험업계는 금융당국의 계리가정 가이드라인 적용으로 보험손익에 제도변경 영향이 반영되는 국면에 있다. 미래에셋생명의 경우 이 영향이 2026년 3분기 누적 보험손익에서 707억원으로 집계됐다. 보험업계는 IFRS17 도입 이후 단기 실적보다 미래 이익 기반인 CSM 확보에 힘을 쏟고 있으며, 건강·상해 등 보장성보험 중심의 수익성 경쟁이 한층 뚜렷해지고 있다는 평가가 나온다. 금리 측면에서는 시장금리 상승이 지급여력비율을 끌어내리는 요인으로 작용했다는 것이 회사 설명이다. 투자 측면에서는 대체투자 자산의 평가손실과 환율 변동이 분기 이익을 흔들고 있어, 보험 본업과 투자손익의 차이가 커지는 구도다. 자산 기반 상품군에서는 변액보험 적립금 14조 1,940억원과 퇴직연금 적립금 2조 3,030억원 규모를 갖춘 편이다. 보장성 시장에서는 대형 생명보험사와 같은 영역에서 경쟁하는 구도여서, 손해율 관리와 신계약 수익성이 차별화 요인이 된다. 회사가 강조하는 건강보험 CSM 확대는 업계 흐름과 같은 방향이지만, 손해율이 악화되면 CSM 성장이 이익으로 이어지는 속도가 달라질 수 있다. 금리, 환율, 계리가정이 생보사 이익 변동을 키우는 공통 요인으로 작용하고 있다.",
+  "en": "Life insurers are in a phase where the regulatory assumption guidelines applied by the financial authorities are feeding one-time effects into insurance profit. At MIRAE ASSET Life Insurance, that effect was KRW 70.7 billion in cumulative insurance profit through Q3 2026. Since the adoption of IFRS 17, the industry has put more weight on securing CSM, the future profit base, than on short-term earnings, and competition on profitability centered on protection products such as health and accident coverage has become more pronounced. On the rate side, the company attributes the decline in its solvency ratio partly to higher market interest rates. On the investment side, valuation losses on alternative assets and currency moves have been moving quarterly profit, widening the gap between insurance operations and investment results. The company holds variable insurance reserves of KRW 14.194 trillion and retirement pension reserves of KRW 2.303 trillion, a sizable asset-linked base. In protection, it competes in the same space as large life insurers, so loss-ratio management and new-business profitability are the differentiators. Expanding health-insurance CSM matches the industry direction, but if loss ratios worsen, the speed at which CSM turns into profit could change. Interest rates, currency moves, and actuarial assumptions are common drivers that amplify earnings swings across life insurers."
  },
  "outlook": {
-  "ko": "회사가 제시한 2026년 전략은 건강보험 중심 보장성 확대와 변액·퇴직연금 기반 수수료 사업 강화, 그리고 자기자본투자 확대의 세 갈래다. 경영진은 정기 주주총회에서 보험 본업과 자기자본투자를 결합한 모델을 핵심 전략으로 선포하고, 첫 사례로 인공지능 반도체 설계 기업 리벨리온 투자를 의결했다고 밝혔다. 회사 관계자는 미국을 비롯한 글로벌 유망 기술기업 투자 검토가 진행 중이라고 설명했으며, 리벨리온의 상장 시점은 시장에서 2027년 상반기 전후로 거론된다고 보도됐다. 보험 본업에서는 유병자·고령층 상품 경쟁력 강화와 보험대리점 채널 중심 영업 확대를 통해 수익성 중심 성장을 지속한다는 방침이 제시됐다. 확인해야 할 부담 요인은 계리가정 변경의 잔여 영향과 지급여력비율 관리다. 6월 말 지급여력비율은 155.3%로 연초 대비 21.4%포인트 하락했다고 보도됐고, 업계에서는 하반기 후순위채 추가 발행 등 자본 조달 가능성이 거론된다는 관측이 전해졌다. 현금배당은 해약환급금준비금 규제로 제약을 받아 왔으며, 회사 측은 배당과 자사주 소각을 관련 법규와 내부 절차에 따라 검토하고 있다고 밝혔다. 결과적으로 신계약 지표의 성장세가 회계·자본 변수의 부담을 얼마나 상쇄하는지가 향후 실적 방향을 가르는 축이 된다.",
-  "en": "The strategy the company has laid out for 2026 runs along three lines: expanding health-centered protection sales, strengthening fee businesses built on variable insurance and retirement pensions, and scaling up principal investment. Management said at the annual general meeting that it had adopted a model combining core insurance with principal investment as its central strategy, approving an investment in AI chip designer Rebellions as the first case. A company official said reviews of promising technology companies in the United States and elsewhere were under way, and reports noted market talk of a Rebellions listing around the first half of 2027. In the core business, the stated plan is profitability-led growth through stronger products for customers with pre-existing conditions and older ages, plus broader general agency distribution. The burdens to monitor are the residual impact of the actuarial assumption change and solvency management. The solvency ratio was reported at 155.3% at end-June, down 21.4 percentage points from the start of the year, and industry watchers were cited as expecting possible additional subordinated debt issuance or other capital raising in the second half. Cash dividends have been constrained by the surrender value reserve rules, and the company said dividends and share cancellations are being reviewed in line with relevant regulations and internal procedures. Ultimately, how far growth in new-business indicators offsets accounting and capital headwinds will determine the earnings trajectory."
+  "ko": "회사는 2026년 3분기 발표에서 손해율 관리, 수익성 중심의 신계약 확보, 자산부채관리(ALM)를 질적 성장의 방향으로 제시했다. 보장성 신계약 APE가 23.5% 증가하고 보유 CSM이 12.7% 늘어난 점은 향후 보험계약마진이 이익으로 인식되는 기반이 넓어졌다는 뜻이다. 다만 보험손익의 제도변경 영향 707억원은 계리가정 가이드라인 적용에 따른 것이어서, 이후 분기 손익에서 이 영향이 반복되는지 확인이 필요하다. 투자손익은 대체투자 평가손실과 환율에 따라 분기마다 크게 달라졌다. 지급여력비율(K-ICS)은 147.3%(추정치)로 연말 대비 낮아져 자본 여력 관리가 다음 과제로 남는다. 회사는 AI 얼굴인증과 AI 챗봇 출시, 판매 네트워크 확장, GA 시장 경쟁력 강화를 추진 중이라고 실적 코멘트에서 밝혔다. 이들 디지털·채널 과제는 신계약 규모를 늘리는 변수이지만, 효과가 실적 수치로 나타나기까지는 시차가 있을 수 있다. 다음 정기 확인 지점은 2026년 사업보고서이며, 여기서 2026년 연간 보험수익, 영업이익, 지배주주 순이익, 연말 부채비율이 확정치로 나온다. 2027년 1분기 분기 실적에서는 제도변경 효과가 분기 보험손익에 얼마나 남는지가 함께 볼 대목이다. 종합하면 보장성 신계약과 보유 CSM의 성장이 이어지는지, 그리고 투자손익과 지급여력비율이 얼마나 안정되는지가 전망을 가르는 두 축이다.",
+  "en": "In its Q3 2026 announcement, the company set out loss-ratio control, profitability-focused new business, and asset-liability management as the direction of its quality growth. Protection APE up 23.5% and held CSM up 12.7% mean the base for future contractual service margin recognized as profit has widened. The KRW 70.7 billion regulatory-assumption effect came from the application of the financial authority's guidelines, so whether it recurs in later quarters' insurance profit needs to be confirmed. Investment results have swung sharply each quarter with alternative-asset valuation losses and currency moves. The K-ICS solvency ratio was an estimated 147.3%, lower than at year-end, so managing capital headroom remains a task. The company said in its earnings commentary that it is pursuing AI face authentication, an AI chatbot launch, expansion of its sales network, and stronger competitiveness in the GA channel. These digital and channel initiatives could expand new business, but they may take time to show up in reported figures. The next scheduled confirmation point is the 2026 annual report, which will provide the confirmed full-year 2026 insurance revenue, operating profit, net income attributable to controlling shareholders, and year-end debt-to-equity ratio. In the Q1 2027 quarterly results, the key question is how much of the regulatory effect persists in quarterly insurance profit. Overall, two factors will shape the outlook: whether growth in protection new business and held CSM continues, and whether investment results and the solvency ratio stabilize."
  },
  "valuation_comment": {
-  "ko": "이 종목의 밸류에이션은 두 가지 축이 동시에 움직이고 있다. 하나는 이익의 질로, 최근 네 개 분기 합산 이익이 2024~2025년 연간 수준을 밑돌면서 이익 기준 배수의 분모가 약해진 상태다. 다른 하나는 주식 수로, 2026년 자기주식 6,296만주 소각으로 발행주식이 약 31.8% 줄어 주당 지표 산식 자체가 바뀌었다. 국내 생명보험주는 오랫동안 주당순자산을 크게 밑도는 배수에서 거래돼 왔는데, 현재 미래에셋생명은 순자산 대비 할인이 사라진 구간에서 거래되고 있다. 자본총계가 2022년 이후 축소돼 온 점, 배당은 해약환급금준비금 규제로 제약을 받아 온 점, 반면 자사주 소각과 자기자본투자 전략이 새로 반영된 점이 이 배수를 설명하는 상반된 재료다. 정확한 배수와 주당 지표는 화면 카드의 실시간 값을 참고하면 되고, 본문에서는 계리가정 변경의 잔여 영향과 지급여력비율 추이가 이익·자본 양쪽에 어떻게 반영되는지가 관찰 포인트라는 점만 남겨 둔다.",
-  "en": "Two forces are moving this stock's valuation at once. One is earnings quality: the sum of the last four quarters sits below the annual levels of 2024 and 2025, weakening the denominator of earnings-based multiples. The other is the share count: the cancellation of 62.96m treasury shares in 2026 cut issued shares by about 31.8%, changing the arithmetic of per-share metrics outright. Korean life insurers have long traded well below book value, whereas Mirae Asset Life currently trades in a zone where the discount to net assets has disappeared. Contradicting inputs behind that multiple include equity that has shrunk since 2022 and dividends constrained by surrender value reserve rules, set against newly priced-in share cancellations and the principal investment strategy. Exact multiples and per-share figures are shown live on the screen cards; what matters in the text is watching how the residual actuarial assumption impact and the solvency trend flow through both earnings and capital."
+  "ko": "밸류에이션은 순자산과 이익 기반 두 측면에서 읽을 수 있다. 주가순자산비율(PBR)은 1배 안팎으로, 주당순자산 근처에서 주가가 형성된 상태다. 2025년 말 자본총계는 2조 4,481억원이고, 그중 지배주주 지분도 같은 금액이다. 반면 이익 기준으로는 최근 4개 분기 지배주주 순이익 합계가 430억원에 그쳐 시가총액에 비해 이익 규모가 작다. 주가이익비율(PER)은 이익이 줄었던 기간을 반영해 높게 나타나며, 이익 회복 속도에 따라 수준이 크게 달라지는 구조다. 배당수익률은 0%대 수준이어서 현금 배당을 통한 주주환원은 두드러지지 않는다. 과거 거래 밴드와 비교했을 때 배수가 어느 구간에 있는지는 이익 회복 여부와 함께 읽어야 할 항목이다.",
+  "en": "Valuation can be read through two lenses: net asset value and the earnings base. The price-to-book ratio sits around 1x, meaning the share price is trading close to book value per share. Total equity at year-end 2025 was KRW 2.45 trillion, and equity attributable to controlling shareholders was the same amount. On an earnings basis, however, net income attributable to controlling shareholders over the last four quarters totals only KRW 43 billion, which is small relative to the market capitalization. The price-to-earnings ratio is elevated because the earnings base has contracted, and its level will move with the pace of earnings recovery. Dividend yield is in the 0% range, so cash dividends are not a prominent source of shareholder return. Where the multiple sits within its past trading band should be read together with whether earnings recover."
  },
  "bull": [
   {
    "title": {
-    "ko": "신계약 지표의 두 자릿수 성장",
-    "en": "Double-digit growth in new business"
+    "ko": "보장성 신계약의 질적 확대",
+    "en": "Quality expansion of protection new business"
    },
    "body": {
-    "ko": "회사는 2026년 상반기 신계약 연납화보험료가 3,923억원으로 전년 동기 대비 32.4%, 신계약 보험계약마진이 3,076억원으로 25.4% 증가했다고 밝혔다. 이 가운데 보장성 연납화보험료는 2,130억원으로 50.8% 늘었다고 설명했다. 6월 말 보유 보험계약마진은 2조 3,311억원으로 지난해 말 대비 13.2% 증가했다고 보도됐다. 보험계약마진은 미래에 인식될 이익의 재고에 해당하므로, 신계약 지표의 증가는 향후 보험손익의 기반이 된다.",
-    "en": "The company said first-half 2026 annualized premium equivalent rose 32.4% year on year to KRW 392.3bn and new-business contractual service margin gained 25.4% to KRW 307.6bn. Within that, protection APE increased 50.8% to KRW 213.0bn. Contractual service margin in force was reported at KRW 2,331.1bn at end-June, up 13.2% from the end of last year. Because this margin represents a stock of profit to be recognized later, growth in new-business metrics underpins future insurance earnings."
+    "ko": "건강상해보험 신계약 CSM은 2026년 3분기 누적 3,489억원으로 10.6% 늘었고, 전체 신계약 CSM의 84.9%를 차지했다. 보장성 신계약 APE는 2,938억원으로 23.5% 증가해 판매 규모도 함께 커졌다. 회사는 이를 수익성 중심 포트폴리오 전환의 결과로 설명한다.",
+    "en": "Health and accident new-contract CSM reached KRW 348.9 billion in the first nine months of 2026, up 10.6%, and made up 84.9% of total new-contract CSM. Protection APE grew 23.5% to KRW 293.8 billion, so sales volume expanded alongside. The company describes this as the result of shifting the portfolio toward profitability."
    }
   },
   {
    "title": {
-    "ko": "포트폴리오 질의 개선",
-    "en": "Improving portfolio quality"
+    "ko": "보유 CSM과 보험 본업의 회복",
+    "en": "Held CSM and recovery in insurance operations"
    },
    "body": {
-    "ko": "2026년 1분기 보장성 신계약 보험계약마진 내 건강상해 비중이 92.9%까지 확대됐고, 월납보험료 기준 마진 배수는 건강상해 18.2배, 보장성 16.3배 수준으로 집계됐다고 보도됐다. 같은 분기 전체 연납화보험료는 1,782억원으로 5.8% 증가한 가운데 보장성만 1,011억원으로 34.6% 늘어 구성 변화가 뚜렷했다. 저축성 위주 성장에서 벗어난 상품 구성은 회계 제도상 이익 인식에 유리한 방향으로 해석된다. 다만 이 흐름이 손해율 관리와 함께 유지되는지는 별개의 확인 사항이다.",
-    "en": "Reports showed health and injury products at 92.9% of protection new-business contractual service margin in the first quarter of 2026, with margin multiples on monthly premiums around 18.2 times for health and injury and 16.3 times for protection overall. In the same quarter total APE rose 5.8% to KRW 178.2bn while protection alone jumped 34.6% to KRW 101.1bn, a clear mix shift. A product mix that moves away from savings-led growth is generally read as favorable for profit recognition under the current accounting regime. Whether that trend holds alongside loss ratio control is a separate item to verify."
+    "ko": "보유 CSM은 2026년 3분기 말 2조 3,205억원으로 2025년 말보다 12.7% 늘었다. 제도변경 영향을 제외한 누적 보험손익은 1,252억원으로 전년 동기 1,179억원보다 증가했다. 보험수익은 2025년 4분기부터 2026년 3분기까지 4개 분기 연속 늘었다.",
+    "en": "Held CSM reached KRW 2.32 trillion at the end of Q3 2026, up 12.7% from year-end 2025. Cumulative insurance profit excluding the regulatory change was KRW 125.2 billion, above KRW 117.9 billion a year earlier. Insurance revenue has risen for four consecutive quarters from Q4 2025 through Q3 2026."
    }
   },
   {
    "title": {
-    "ko": "자본정책의 가시성과 신규 투자 전략",
-    "en": "Visible capital policy and a new investment strategy"
+    "ko": "보험수익 두 해 연속 증가와 이익 회복",
+    "en": "Two straight years of insurance revenue growth and profit recovery"
    },
    "body": {
-    "ko": "회사는 2026년 3월과 4월 두 차례에 걸쳐 자기주식 6,296만주를 소각했고, 이는 보유 자기주식의 약 93%로 발행주식 약 31.8% 감소 효과가 있다고 설명했다. 자사주 의무소각을 담은 상법 개정 흐름 속에서 업권 내에서는 비교적 빠른 실행으로 평가됐다. 여기에 보험 본업과 자기자본투자를 결합한 전략을 제시하고 리벨리온 투자를 의결하면서, 투자 성과가 손익에 기여할 경로가 새로 생겼다. 영업 지표 측면에서 수수료 기반 사업과 보장성 마진의 개선 여지는 회사가 제시한 전략의 핵심 축이다.",
-    "en": "The company cancelled 62.96m treasury shares across March and April 2026, describing this as about 93% of its treasury holdings and equivalent to roughly a 31.8% reduction in issued shares. Amid commercial act amendments mandating treasury share retirement, this was viewed as relatively early execution within the sector. It also presented a strategy combining core insurance with principal investment and approved the Rebellions deal, creating a new channel through which investment outcomes could feed earnings. On operating metrics, room to improve fee-based businesses and protection margins is the core axis of the strategy the company has outlined."
+    "ko": "보험수익은 2024년 9,640억원, 2025년 1조 804억원으로 2년 연속 증가했다. 2025년 영업이익은 1,945억원으로 전년 대비 59.3% 증가해 2024년의 감소를 되돌렸다. 변액보험 수수료 수입과 퇴직연금 적립금도 전년 대비 늘었다.",
+    "en": "Insurance revenue rose to KRW 964 billion in 2024 and KRW 1.08 trillion in 2025, two consecutive years of growth. Operating profit reached KRW 194.5 billion in 2025, up 59.3%, reversing the 2024 decline. Variable insurance fee income and retirement pension reserves also grew year on year."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "계리가정 변경이 누른 보험손익",
-    "en": "Actuarial assumption change squeezed insurance profit"
+    "ko": "3분기 적자 전환과 제도 변경 충격",
+    "en": "Q3 swing to losses and the regulatory-change hit"
    },
    "body": {
-    "ko": "회사는 2026년 상반기 계리가정 변경에 따른 손익 감소 영향이 약 700억원이며 상반기 보험손익이 36억원으로 전년 동기 836억원에서 급감했다고 설명했다. 확정 실적으로 보면 2026Q2 영업이익 236억원, 순이익 180억원으로 직전 분기 684억원·534억원 대비 크게 축소됐다. 2025Q4에도 영업이익 283억원, 순이익 55억원으로 유사한 급감이 관찰됐다는 점에서 특정 분기에 가정 변경과 경험조정이 집중되는 패턴이 반복되고 있다. 이익의 분기 변동성이 큰 만큼 단일 분기 수치로 추세를 판단하기 어렵다.",
-    "en": "The company said the actuarial assumption change reduced first-half 2026 earnings by about KRW 70bn and that insurance profit collapsed to KRW 3.6bn from KRW 83.6bn a year earlier. In confirmed figures, 2Q26 operating profit of KRW 23.6bn and net profit of KRW 18.0bn were far below the prior quarter's KRW 68.4bn and KRW 53.4bn. A similar drop appeared in 4Q25, with operating profit of KRW 28.3bn and net profit of KRW 5.5bn, suggesting a recurring pattern where assumption changes and experience adjustments cluster in particular quarters. With earnings this volatile by quarter, a single quarter is a poor basis for judging trend."
+    "ko": "2026년 3분기 영업손실은 431억원, 지배주주 순손실은 339억원으로 적자 전환했다. 계리가정 가이드라인 적용에 따른 제도변경 영향 707억원이 누적 보험손익에 반영됐고, 투자손익은 92억원 적자였다. 회사는 환율과 평가손실 등을 일회성 요인으로 설명하지만, 이익 변동성이 크게 드러났다.",
+    "en": "Q3 2026 posted an operating loss of KRW 43.1 billion and a net loss attributable to controlling shareholders of KRW 33.9 billion. The regulatory assumption change reduced cumulative insurance profit by KRW 70.7 billion, and investment results were a KRW 9.2 billion loss. The company attributes these to one-time factors such as currency moves and valuation losses, but the swing in earnings was large."
    }
   },
   {
    "title": {
-    "ko": "자본 축소와 지급여력비율 하락",
-    "en": "Shrinking equity and a falling solvency ratio"
+    "ko": "지급여력비율 하락",
+    "en": "Lower solvency ratio"
    },
    "body": {
-    "ko": "자본총계는 2022년 4조 869억원에서 2023년 2조 9,107억원, 2024년 2조 5,637억원, 2025년 2조 4,481억원으로 줄었고 부채비율은 1,244.8%까지 올랐다. 6월 말 지급여력비율은 155.3%로 연초 176.7% 대비 21.4%포인트 하락했다고 보도됐다. 자사주 소각은 주주환원 측면과 별개로 회계상 가용자본을 줄여 지급여력비율에 부담으로 작용한다는 지적도 제기됐다. 2027년 기본자본 기준 규제 시행을 앞두고 자본 관리 난도가 높아지는 국면이다.",
-    "en": "Total equity fell from KRW 4,086.9bn in 2022 to KRW 2,910.7bn in 2023, KRW 2,563.7bn in 2024 and KRW 2,448.1bn in 2025, while the debt ratio climbed to 1,244.8%. The solvency ratio was reported at 155.3% at end-June, down 21.4 percentage points from 176.7% at the start of the year. Commentary also noted that share cancellation, separate from its shareholder-return merits, reduces accounting-basis available capital and thus weighs on the solvency ratio. With tier-one-based rules taking effect in 2027, capital management is becoming harder."
+    "ko": "지급여력비율(K-ICS)은 2026년 3분기 말 147.3%(추정치)로 2025년 말보다 29.4%포인트 낮아졌다. 시장금리 상승이 주요 배경으로 언급됐다. 자본 여력이 줄어든 만큼 금리 변동에 대한 민감도가 주목된다.",
+    "en": "The K-ICS solvency ratio was an estimated 147.3% at the end of Q3 2026, down 29.4 percentage points from year-end 2025. Higher market interest rates were cited as a main cause. With capital headroom narrower, sensitivity to interest-rate moves is drawing attention."
    }
   },
   {
    "title": {
-    "ko": "업황 둔화와 배당 제약",
-    "en": "Slowing industry and dividend constraints"
+    "ko": "얇은 이익 기반과 높은 부채비율",
+    "en": "Thin earnings base and high leverage"
    },
    "body": {
-    "ko": "보험연구원은 2026년 생명보험 수입보험료 증가율을 1.0%로, 생보사 보험계약마진은 소폭 감소로 전망했고 변액보험은 시장 변동성 확대로 5% 감소를 예상했다. 변액보험 시장에서는 메트라이프생명이 2026년 1월 초회보험료를 103.2% 늘린 반면 미래에셋생명은 29.9% 감소했다고 보도돼 점유율 경쟁이 심화되는 모습이다. 현금배당은 해약환급금준비금 규제로 재원 확보가 어려운 구조라고 회사 관계자가 설명했으며, 확정 공시 기준 주당 현금배당은 확인되지 않는다. 준비금 적립 비율 완화 논의가 확정되지 않은 상태에서는 환원 수단이 자사주 소각에 의존하는 구조가 이어진다.",
-    "en": "The Korea Insurance Research Institute projected 2026 life premium growth of 1.0% and a slight decline in life insurers' contractual service margin, with variable insurance premiums down 5% on wider market volatility. In the variable segment, MetLife Korea's January 2026 first-year premiums were reported up 103.2% while Mirae Asset Life's fell 29.9%, pointing to intensifying share competition. A company official said surrender value reserve rules make it structurally difficult to secure funds for cash dividends, and no per-share cash dividend is confirmed in disclosed data. Until the reserve ratio easing is settled, shareholder returns remain reliant on share cancellation."
+    "ko": "최근 4개 분기 지배주주 순이익 합계는 430억원이다. 2025년 지배주주 순이익은 전년 대비 3.9% 감소했고, 2026년 2분기는 180억원으로 전 분기 대비 66.3% 줄었다. 부채비율은 2022년 757.4%에서 2025년 1,244.8%로 올랐다.",
+    "en": "Net income attributable to controlling shareholders for the last four quarters totals KRW 43 billion. The 2025 figure fell 3.9% from 2024, and Q2 2026 came in at KRW 18 billion, down 66.3% from the prior quarter. The debt-to-equity ratio climbed from 757.4% in 2022 to 1,244.8% in 2025."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "금리·자본 리스크",
-    "en": "Rate and capital risk"
+    "ko": "계리가정·제도 리스크",
+    "en": "Actuarial assumption and regulatory risk"
    },
    "body": {
-    "ko": "자산 포트폴리오의 채권 비중이 68%로 알려져 금리 방향이 손익과 자본에 직접 반영된다. 자산 20조원 이상 생보사 10곳 분석에서 금리 50bp 상승 시 미래에셋생명의 지급여력비율은 11.4%포인트 하락하는 것으로 나타났다고 보도돼, 금리 상승이 반드시 유리하게 작용하지 않는 구조다. 금리 하락 국면에서는 부채 시가평가로 자본이 줄어드는 반대 방향의 압력이 작용한다. 어느 방향이든 지급여력비율과 자본총계의 분기 변동을 함께 확인해야 한다.",
-    "en": "Bonds are reported at 68% of the investment portfolio, so the direction of rates feeds straight into earnings and capital. An analysis of ten life insurers with assets above KRW 20tn reportedly showed Mirae Asset Life's solvency ratio falling 11.4 percentage points on a 50bp rate rise, meaning higher rates are not automatically favorable. In a falling-rate environment, mark-to-market liabilities push capital down from the other direction. Either way, quarterly moves in the solvency ratio and total equity need to be tracked together."
+    "ko": "금융당국의 계리가정 가이드라인 적용으로 2026년 3분기 누적 보험손익에 707억원의 제도변경 영향이 반영됐다. 이 효과가 연간 결산과 이후 분기에서 어떻게 이어질지는 아직 확정되지 않았다. 제도 변화가 반복되면 보험 본업의 개선 폭이 가려질 수 있다.",
+    "en": "The financial authority's actuarial assumption guidelines reduced cumulative insurance profit by KRW 70.7 billion through Q3 2026. How much of this effect carries into the full-year close and later quarters has not yet been settled. If regulatory changes recur, the improvement in core insurance operations could be obscured."
    }
   },
   {
    "cat": {
-    "ko": "규제 리스크",
-    "en": "Regulatory risk"
+    "ko": "금리·환율·투자자산 리스크",
+    "en": "Interest rate, currency and investment asset risk"
    },
    "body": {
-    "ko": "금융위원회는 기본자본 기준 지급여력비율 제도를 2027년 1월 1일 시행하고, 2027년 3월 말 기준으로 기본자본비율이 50%에 미달하는 보험사에는 최저 이행기준을 부과한다고 밝혔다. 미래에셋생명의 2026년 1분기 기본자본 기준 지표는 105.8%로 보도됐으나 전년 말 대비 하락한 것으로 전해졌다. 또한 기본자본으로 인정되는 자본증권의 조기상환에도 요건이 부과된다고 당국이 설명했다. 해약환급금준비금 적립 비율 완화 여부는 배당 재원과 직결되는 변수로 남아 있다.",
-    "en": "The Financial Services Commission said a tier-one-based solvency regime takes effect on January 1, 2027, and that insurers whose tier-one ratio falls below 50% as of end-March 2027 will face minimum compliance targets. Mirae Asset Life's tier-one-based measure was reported at 105.8% in the first quarter of 2026, though down from the prior year-end. The authorities also said conditions apply to early redemption of capital securities counted as tier one. Whether the surrender value reserve accumulation ratio is eased remains a variable tied directly to dividend capacity."
+    "ko": "시장금리 상승은 지급여력비율을 끌어내렸고, 대체투자 평가손실과 환율 변동은 투자손익을 적자로 돌렸다. 투자손익의 변동 폭이 커지면 보험 본업의 개선이 당기손익에 반영되는 정도가 제한된다. 자산 측면에서 대체투자 비중과 평가 방식이 중요한 관찰 대상이다.",
+    "en": "Higher market interest rates pushed down the solvency ratio, and alternative-asset valuation losses and currency moves turned investment results negative. When investment swings are large, the extent to which core insurance improvement shows up in net income is limited. On the asset side, the weight of alternative investments and their valuation approach are key items to watch."
    }
   },
   {
    "cat": {
-    "ko": "지배구조·유동성 리스크",
-    "en": "Governance and liquidity risk"
+    "ko": "건강보험 손해율 리스크",
+    "en": "Health insurance loss-ratio risk"
    },
    "body": {
-    "ko": "자사주 소각과 계열사 지분 매입이 이어지며 최대주주 측 합산 지분율이 81.43%까지 높아졌다고 보도됐다. 지분 집중은 유통 물량 축소와 소액주주 영향력 약화라는 상반된 해석을 동시에 낳는 사안으로, 실제 유통주식 규모와 거래 여건 변화를 확인할 필요가 있다. 자기자본투자 확대 전략은 비상장 기업 투자 비중을 높이는 만큼 평가손익 변동성과 회수 시점의 불확실성을 함께 수반한다. 리벨리온의 경우 상장 시점이 시장에서 거론되는 수준이며 확정된 일정은 확인되지 않는다.",
-    "en": "Following share cancellations and continued affiliate purchases, the combined largest-shareholder stake was reported to have risen to 81.43%. Concentrated ownership invites opposing readings, from a smaller free float to weaker minority shareholder influence, so the actual float and trading conditions warrant checking. Expanding principal investment raises exposure to unlisted companies, bringing valuation volatility and uncertainty over exit timing. In the Rebellions case, listing timing is only market talk and no confirmed schedule is verifiable."
+    "ko": "건강상해보험 CSM 비중이 84.9%로 높아진 만큼 손해율 관리가 수익성의 핵심 변수다. 회사는 손해율 관리를 강조하지만, 손해율이 악화되면 신계약 CSM의 질이 달라질 수 있다. 부채비율이 1,244.8%로 높은 점도 재무 완충 여력을 제약하는 요소다.",
+    "en": "With health and accident products now 84.9% of new-contract CSM, loss-ratio management is the central variable for profitability. The company stresses this control, but a deterioration in loss ratios could change the quality of new CSM. The debt-to-equity ratio of 1,244.8% also limits financial cushion."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중순",
-    "en": "Mid-November 2026"
+    "ko": "2026년 12월 말",
+    "en": "Late December 2026"
    },
    "what": {
-    "ko": "2026년 3분기 실적 발표. 계리가정 변경의 잔여 영향이 소멸했는지, 보험손익이 상반기 36억원 수준에서 정상화되는지가 핵심이며 신계약 연납화보험료와 신계약 보험계약마진의 증가율 유지 여부도 함께 확인할 대목이다.",
-    "en": "Third-quarter 2026 results. The key questions are whether the residual actuarial assumption impact has washed out and whether insurance profit normalizes from the first half's KRW 3.6bn level, alongside whether growth rates in APE and new-business contractual service margin hold up."
+    "ko": "연말 결산 기준 지급여력비율(K-ICS) 흐름과 금리 환경을 확인한다. 3분기 추정치 147.3%가 연말에 어디에 자리하는지가 자본 여력의 방향을 보여 준다.",
+    "en": "Watch the year-end K-ICS solvency ratio and the interest rate backdrop. Where the Q3 estimate of 147.3% lands at year-end will show the direction of capital headroom."
    }
   },
   {
    "when": {
-    "ko": "2026년 11월 경영공시",
-    "en": "November 2026 disclosure"
+    "ko": "2027년 3월 말",
+    "en": "Late March 2027"
    },
    "what": {
-    "ko": "3분기 말 지급여력비율과 기본자본 기준 지표. 6월 말 155.3%에서 추가 하락하는지, 후순위채 발행 등 자본 확충이 실제로 집행되는지가 2027년 규제 대응 여력을 가늠하는 기준이 된다.",
-    "en": "End-third-quarter solvency ratio and the tier-one-based measure. Whether the ratio slips further from 155.3% at end-June and whether capital raising such as subordinated debt is actually executed will gauge readiness for the 2027 rules."
+    "ko": "2026년 사업보고서에서 연간 보험수익, 영업이익, 지배주주 순이익, 연말 부채비율이 확정치로 나온다. 계리가정 변경의 연간 영향도 함께 확인된다.",
+    "en": "The 2026 annual report will confirm full-year insurance revenue, operating profit, net income attributable to controlling shareholders, and the year-end debt-to-equity ratio, along with the full-year effect of the assumption change."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기~2027년 초",
-    "en": "Fourth quarter 2026 to early 2027"
+    "ko": "2027년 5월 중순",
+    "en": "Mid-May 2027"
    },
    "what": {
-    "ko": "해약환급금준비금 적립 비율 완화 등 보험 자본규제 개편의 최종 확정 여부. 제도 변경이 확정되면 배당 재원 산정 방식이 달라지므로 환원 수단의 구성이 바뀔 수 있다.",
-    "en": "Final decisions on insurance capital rule changes, including any easing of the surrender value reserve accumulation ratio. A confirmed change would alter how distributable funds are calculated and could shift the mix of shareholder return tools."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 1월 1일",
-    "en": "January 1, 2027"
-   },
-   "what": {
-    "ko": "기본자본 기준 지급여력비율 제도 시행. 금융위원회는 2027년 3월 말 기준 기본자본비율이 50%에 미달하는 보험사에 최저 이행기준을 부과한다고 밝혔으므로, 시행 직후 공시되는 회사별 수치가 규제 대응 부담을 드러낸다.",
-    "en": "Start of the tier-one-based solvency regime. The Financial Services Commission said insurers below a 50% tier-one ratio as of end-March 2027 will face minimum compliance targets, so company-level figures disclosed right after implementation will reveal the regulatory burden."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 2~3월",
-    "en": "February to March 2027"
-   },
-   "what": {
-    "ko": "2026년 연간 실적 확정과 자본정책 발표. 배당 재개 여부, 추가 자사주 취득·소각 계획, 자기자본투자 포트폴리오의 평가손익 반영 규모가 함께 공시되는 시점이다.",
-    "en": "Confirmation of full-year 2026 results and the capital policy announcement. This is when any dividend resumption, further treasury share purchases or cancellations, and the scale of valuation gains or losses on the principal investment portfolio should be disclosed together."
+    "ko": "2027년 1분기 분기보고서 제출 시점으로, 제도변경 영향이 분기 보험손익에서 얼마나 반복되는지와 영업손익이 2026년 3분기 적자에서 회복되는지를 본다.",
+    "en": "Q1 2027 quarterly report filing, where the focus is whether the regulatory effect recurs in quarterly insurance profit and whether operating results recover from the Q3 2026 loss."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "미래에셋생명은 보험수익이 2023년 9,016억원에서 2025년 1조 804억원으로 확대되는 동안 이익은 1,200억~1,400억원 구간에서 등락하는 구조를 보여왔다. 2026년 들어서는 1분기 순이익 534억원과 2분기 180억원이라는 극단적인 편차가 나타났고, 회사는 그 배경으로 약 700억원 규모의 계리가정 변경 영향과 상반기 보험손익 36억원을 제시했다. 반면 신계약 연납화보험료 32.4% 증가, 신계약 보험계약마진 25.4% 증가, 보유 보험계약마진 2조 3,311억원 등 미래 이익 기반 지표는 확대됐다. 자본 측면에서는 자본총계 축소와 부채비율 상승, 6월 말 지급여력비율 155.3%라는 부담이 동시에 존재하며, 2027년 기본자본 기준 규제 시행이 예정돼 있다. 자본정책은 6,296만주 자기주식 소각으로 가시화됐으나 현금배당은 해약환급금준비금 규제에 묶여 있고, 자기자본투자 전략은 리벨리온 투자로 첫발을 뗐지만 성과 확인에는 시간이 필요하다. 결국 신계약 지표의 성장과 회계·자본 변수의 부담이 맞서는 구도이며, 어느 쪽이 우세한지는 3분기 실적과 지급여력비율 공시에서 순차적으로 드러날 사안이다. 이 리포트는 정보 제공을 목적으로 하며 매수·매도 의견이나 목표주가를 포함하지 않는다.",
-   "en": "Mirae Asset Life has expanded insurance revenue from KRW 901.6bn in 2023 to KRW 1,080.4bn in 2025 while profit oscillated in a band of roughly KRW 120bn to KRW 140bn. In 2026 the swing became extreme, with first-quarter net profit of KRW 53.4bn against KRW 18.0bn in the second, which the company attributed to an actuarial assumption change worth about KRW 70bn and first-half insurance profit of just KRW 3.6bn. Against that, forward profit indicators expanded, with APE up 32.4%, new-business contractual service margin up 25.4% and margin in force at KRW 2,331.1bn. On capital, shrinking equity, a rising debt ratio and a 155.3% solvency ratio at end-June coexist as burdens, with tier-one-based rules due in 2027. Capital policy became visible through the cancellation of 62.96m treasury shares, yet cash dividends remain constrained by surrender value reserve rules, and the principal investment strategy has only taken its first step with Rebellions, so results will take time to verify. The setup pits new-business growth against accounting and capital headwinds, and which side prevails should emerge step by step in third-quarter results and solvency disclosures. This report is for information purposes only and contains no buy or sell opinion or target price."
+   "ko": "미래에셋생명은 건강상해 중심의 보장성 신계약과 보유 CSM이 함께 늘며 보험 본업의 기반을 넓히고 있다. 2025년 보험수익은 1조 804억원으로 2년 연속 증가했고, 영업이익은 1,945억원으로 회복됐다. 그러나 2026년 3분기에는 제도변경 영향 707억원과 투자손익 적자가 겹치며 영업손실 431억원, 지배주주 순손실 339억원으로 적자 전환했다. 지급여력비율은 147.3%(추정치)로 연말 대비 낮아졌고, 부채비율은 1,244.8%로 자본 대비 부채가 큰 구조다. 최근 4개 분기 지배주주 순이익 합계는 430억원으로 이익 규모가 얇아 배수 해석이 이익 회복 속도에 따라 달라진다. 강세 요인으로는 신계약의 질적 개선과 보험수익의 연속 증가가 있고, 약세 요인으로는 계리가정 영향, 금리·환율·투자손익 변동성, 지급여력비율 하락이 있다. 두 요인은 같은 무게로 놓고 봐야 하며, 다음 확인 지점은 2026년 사업보고서의 연간 확정치와 2027년 1분기 분기 실적이다. 이 리포트는 정보 제공이 목적이며 매수·매도 의견과 목표주가를 포함하지 않는다.",
+   "en": "MIRAE ASSET Life Insurance is widening its core insurance base as health and accident-centered protection new business and held CSM grow together. Insurance revenue rose two straight years to KRW 1.08 trillion in 2025, and operating profit recovered to KRW 194.5 billion. However, Q3 2026 turned to an operating loss of KRW 43.1 billion and a net loss attributable to controlling shareholders of KRW 33.9 billion as the regulatory effect of KRW 70.7 billion coincided with investment losses. The solvency ratio was an estimated 147.3%, lower than at year-end, and the debt-to-equity ratio of 1,244.8% reflects a large liability base relative to equity. Net income attributable to controlling shareholders over the last four quarters totals KRW 43 billion, so the reading of the valuation multiple depends on the pace of earnings recovery. Strengths include improving new-business quality and consecutive growth in insurance revenue, while weaknesses include the regulatory-assumption effect, volatility in rates, currency and investment results, and the decline in the solvency ratio. These factors should be weighed equally, and the next confirmation points are the confirmed full-year figures in the 2026 annual report and the Q1 2027 quarterly results. This report is for information only and contains no buy or sell opinion or target price."
   }
  },
  "sources": [
-  "https://kr.investing.com/equities/mirae-asset-life-insurance-co-ltd-earnings",
-  "https://life.miraeasset.com/micro/company/PC-HO-060401-000000.do",
-  "https://comp.wisereport.co.kr/company/c1080001.aspx?cmp_cd=085620&cn=",
-  "https://securities.miraeasset.com/newir/view/pc/kr/investor/announceList.jsp",
+  "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=715242",
+  "https://view.asiae.co.kr/article/2026111315353620407",
+  "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=715243",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=085620",
+  "https://www.huffingtonpost.kr/article/262074",
   "https://insight.goover.ai/report/202605/go-public-report-ko-8e9b1298-e0df-4f0b-91aa-43c2b0fbc272-0-0.html",
-  "https://alphasquare.co.kr/home/stock-summary?code=085620",
-  "https://securities.miraeasset.com/bbs/download/2142246.pdf?attachmentId=2142246",
-  "https://securities.miraeasset.com/bbs/board/message/list.do?categoryId=1525",
-  "https://securities.miraeasset.com/bbs/board/message/list.do?categoryId=1521",
-  "https://www.investing.com/equities/mirae-asset-life-insurance-co-ltd",
-  "https://www.newspim.com/news/view/20260814001131",
-  "https://www.ftoday.co.kr/news/articleView.html?idxno=363662",
-  "https://www.etoday.co.kr/news/view/2614711",
-  "https://life.miraeasset.com/micro/disclosure/variable/PC-HO-080505-000000.do",
-  "https://spot.wooribank.com/pot/pot/mall/comm/download.jsp?PLM_BIZ_DSCD=05&PLM_ANX_SAVE_FILE_NM=PLM_P050000599_DS013_20211229095617000195.pdf&PLM_ATFL_NM=%EB%AF%B8%EB%9E%98%EC%97%90%EC%85%8B%EC%83%9D%EB%AA%85+%EB%B3%80%EC%95%A1%EC%A0%80%EC%B6%95%EB%B3%B4%ED%97%98(%EB%AC%B4)2108_%EC%9A%B4%EC%9A%A9%EC%84%A4%EB%AA%85%EC%84%9C.pdf",
-  "https://www.insnews.co.kr/news/articleView.html?idxno=89451",
-  "https://online.miraeasset.com/es/calc/08?utm_source_ppomppu_web=&_OC_=3405",
-  "https://life.miraeasset.com/micro/disclosure/product/PC-HO-080301-000000.do"
+  "https://m.news.nate.com/view/20261113n28500",
+  "https://www.g-enews.com/article/Finance/2026/11/202611131737311531cd0bfacc1c_1",
+  "https://www.fntimes.com/html/view.php?ud=202611131534114784ed56b8e1f8_18",
+  "https://www.ftoday.co.kr/news/articleView.html?idxno=369712",
+  "https://www.e-science.co.kr/news/articleView.html?idxno=139798",
+  "https://www.insjournal.co.kr/news/articleView.html?idxno=33922",
+  "https://daily.hankooki.com/news/articleView.html?idxno=1425089",
+  "http://www.dailysmart.co.kr/news/articleView.html?idxno=132533",
+  "https://www.lcnews.co.kr/news/articleView.html?idxno=211393",
+  "https://www.wolyo.co.kr/news/articleView.html?idxno=320517",
+  "https://www.joongangenews.com/news/articleView.html?idxno=556702",
+  "https://www.ezyeconomy.com/news/articleView.html?idxno=241850"
  ],
  "v": 2,
- "model": "claude-opus-5",
+ "model": "claude-haiku-5-5",
  "ticker": "085620",
  "name": "미래에셋생명",
  "name_en": "MIRAE ASSET Life Insurance CO., Ltd.",
@@ -233,11 +213,11 @@
   "보험"
  ],
  "market": "코스피",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 05:51",
- "dataDate": "20260904",
+ "reportDate": "2026-11-18",
+ "reportTs": "2026-11-18 02:52",
+ "dataDate": "20261117",
  "quant": {
-  "asOf": "2026-09-04",
+  "asOf": "2026-11-17",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -308,12 +288,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 261692153137,
-    "op": 65038991669,
-    "np_owner": 50692164966
-   },
-   {
     "q": "2025Q3",
     "rev": 275037552050,
     "op": 61774487859,
@@ -336,25 +310,31 @@
     "rev": 306311474760,
     "op": 23649548586,
     "np_owner": 17970234609
+   },
+   {
+    "q": "2026Q3",
+    "rev": 322571135804,
+    "op": -43075299341,
+    "np_owner": -33867780397
    }
   ],
   "valuation": {
-   "price": 19920,
-   "mcap": 2.6928,
+   "price": 16560,
+   "mcap": 2.2386,
    "shares": 135180000,
-   "total_shares": 198142949,
-   "wavg_shares": 130461379,
-   "per": 20.515,
-   "eps": 971,
-   "pbr": 1.0722,
-   "bps": 18578,
-   "roe_ttm": 5.2,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": 126663563078,
+   "total_shares": 135180000,
+   "wavg_shares": 130515400,
+   "per": 52.075,
+   "eps": 318,
+   "pbr": 0.968,
+   "bps": 17108,
+   "roe_ttm": 1.8,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": 43039790336,
    "ccy": "KRW",
    "bps_src": "자체",
-   "eps_src": "공시",
-   "pbr_krx": 1.06,
+   "eps_src": "순이익÷주식수",
+   "pbr_krx": 0.89,
    "bps_krx": 18762.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
@@ -364,5 +344,6 @@
    "ko": "보험수익",
    "en": "Insurance revenue"
   }
- }
+ },
+ "textRules": 2
 }

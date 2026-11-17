@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "구독형 보안 현금흐름과 거버넌스 논쟁",
-  "en": "Subscription Security Cash Flow Meets a Governance Debate"
+  "ko": "에스원, 건물관리 성장과 일회성 비용 사이",
+  "en": "S-1: Building Management Growth Amid One-Off Costs"
  },
  "lead": {
-  "ko": "물리보안 구독 매출이 만드는 안정적 현금흐름과, 보안 시스템통합(SI) 매출 지연·행동주의 펀드의 지배구조 압박이 동시에 진행되는 국면이다.",
-  "en": "Stable cash flow from subscription-based physical security is running alongside delayed security systems integration (SI) revenue and an activist fund's pressure on governance."
+  "ko": "에스원은 2023년부터 2025년까지 매출이 3년 연속 늘었고, 2026년 1분기 일회성 비용으로 영업이익이 저점을 찍은 뒤 2분기와 3분기에 2개 분기 연속 늘었으나, 일회성 비용의 재발 여부는 여전히 변수다.",
+  "en": "S-1 grew revenue for three straight years through 2025, and operating profit rose for two consecutive quarters after a first-quarter 2026 low driven by one-off costs, though the recurrence of such costs remains a variable."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출 2조 8,894억원, 영업이익 2,345억원으로 영업이익률 8.1%를 기록해 전년(7.5%)보다 마진이 회복됐다.",
-   "en": "In 2025 consolidated revenue was KRW 2,889.4bn with operating profit of KRW 234.6bn, an 8.1% operating margin, recovering from 7.5% a year earlier."
+   "ko": "2025년 매출은 2조 8,894억원으로 2022~2025년 중 가장 큰 해였고, 영업이익은 2,346억원으로 전년 대비 12.1% 증가했다.",
+   "en": "Revenue reached KRW 2.89 trillion in 2025, the largest year in the 2022–2025 span, while operating profit rose 12.1% to KRW 234.6 billion."
   },
   {
-   "ko": "2026년 1분기 영업이익은 207억원으로 급감했는데, 퇴직급여 산정 기준 변경에 따른 일회성 비용이 반영된 결과이며 2분기에는 643억원으로 회복됐다.",
-   "en": "First-quarter 2026 operating profit fell to KRW 20.7bn on a one-off cost tied to a change in severance calculation standards, then recovered to KRW 64.4bn in the second quarter."
+   "ko": "2025년에는 인프라 부문 매출(1조 4,893억원)이 시큐리티 부문 매출(1조 3,854억원)을 앞질러 두 부문의 비중이 거의 같아졌다.",
+   "en": "In 2025 the Infrastructure segment overtook the Security segment, and the two now account for nearly equal shares of revenue."
   },
   {
-   "ko": "2026년 2분기 보안SI 매출은 636억원으로 전년 동기 대비 25.9% 감소했다(회사 IR·언론 보도 기준). 프로젝트 착공 지연이 원인으로 제시됐다.",
-   "en": "Second-quarter 2026 security SI revenue was KRW 63.6bn, down 25.9% year on year per company IR and press reports, attributed to delayed project start-ups."
+   "ko": "2026년 1분기 영업이익 207억원은 평균임금 관련 소송에 따른 퇴직급여비용이 일회성으로 반영된 결과라고 회사가 설명했으며, 이후 2분기 644억원과 3분기 654억원으로 회복됐다.",
+   "en": "First-quarter 2026 operating profit fell to KRW 20.7 billion, which the company attributed to a one-off retirement benefit charge tied to a wage lawsuit, before recovering to KRW 64.4 billion and KRW 65.4 billion in the next two quarters."
   },
   {
-   "ko": "회사는 2026년 3월 기업가치 제고 계획에서 인공지능(AI)·로봇 기반 신상품 확대와 2026 사업연도 배당성향 50~60% 유지를 제시했다.",
-   "en": "In a March 2026 value-up disclosure the company presented AI- and robot-based new products and a plan to keep the fiscal 2026 dividend payout ratio at 50-60%."
+   "ko": "2026년 10월 공개매수에서 응모 주식이 취득예정수량에 미달해 자기주식 130만 4,797주를 1,291억 7,490만원에 취득했고, 취득 후 자기주식 비율은 14.39%가 됐다.",
+   "en": "A tender offer in October and November 2026 was undersubscribed, and the company acquired 1,304,797 shares for KRW 129.17 billion, lifting treasury shares to 14.39% of issued shares."
   },
   {
-   "ko": "행동주의 펀드 FCP가 6월 이사회 요구안에 이어 8월 27일 삼성 계열 5개사 보유 지분(20.6%) 인수를 제안하며 답변 기한을 9월 23일로 제시했다.",
-   "en": "Activist fund FCP followed a June letter to the board by offering on August 27 to buy the 20.6% stake held by five Samsung affiliates, setting a September 23 deadline for replies."
+   "ko": "2026년 3월 공시한 기업가치 제고 계획은 2026 사업연도 배당성향 50~60% 유지를 담고 있으며, 직전 사업연도 배당성향은 60.6%였다.",
+   "en": "The 2026 value-up plan disclosed in March 2026 keeps the 2026 dividend payout ratio at 50% to 60%, and the prior-year payout ratio was 60.6%."
   }
  ],
  "business": {
-  "ko": "에스원은 시큐리티 사업과 인프라 사업을 두 축으로 하는 통합보안·부동산 서비스 기업이다. 시큐리티 사업은 유·무선 네트워크로 보안기기와 관제센터, 출동 인력을 연결하는 물리보안 구독 서비스가 중심이며, 클라우드 기반 출입·근태 관리와 AI 영상보안, 정보 자산을 보호하는 디지털보안까지 포함한다. 수원과 대구에 이중화된 지능형 통합관제센터를 운영하고, 전국 서비스 거점과 출동 인력, 자체 시큐리티 연수원을 갖춘 점이 구조적 진입장벽으로 꼽힌다. 인프라 사업은 시설운영·유지관리(FM)와 자산관리(PM)를 아우르는 부동산 서비스, 그리고 산업체·중대형 건물을 대상으로 컨설팅·설계·구축·유지보수를 제공하는 보안SI로 구성된다. 2025년 사업부문 구성은 물리보안·디지털·이동체 보안이 44.57%(1조 2,878억원), 보안상품 4.01%, 부동산 서비스 28.63%(8,273억원), 통합보안 17.71%(5,116억원), 보안SI 11.84%(3,422억원)로 공시 자료를 정리한 보안뉴스 집계에서 나타났다. 2026년 2분기 기준으로는 회사 IR 자료를 인용한 보도에서 시큐리티 부문 매출 3,532억원, 인프라 부문 3,661억원, 그 안에서 부동산 서비스 2,207억원과 통합보안 1,279억원으로 집계됐다. 고객군은 대형 기업·공공(B2B·B2G) 중심으로, 국내외 삼성 관계사 사업장 통합 사원증 시스템 등 그룹 관련 수요와 공공·국방 대형 보안SI가 함께 있다. 주주 구성은 최대주주가 일본 경비업체 세콤(25.7%)이지만 실질적 지배력은 2대주주인 삼성 계열사에 있고 최고경영자도 삼성 출신 인사가 맡아 왔다는 점이 특징이며, 국민연금은 2026년 3월 말 기준 6.57%를 보유했다. 경쟁구도는 매출 확대에도 순손실을 낸 에스케이쉴더스, AI 기반 신규 서비스로 매출·순이익이 늘어난 케이티텔레캅, AI 통합보안 솔루션으로 해외를 공략하는 슈프리마와의 경합으로 요약된다.",
-  "en": "S-1 Corporation is an integrated security and real-estate services company built on two pillars: a Security business and an Infrastructure business. The Security business centers on subscription-based physical security that links devices, monitoring centers and dispatch staff over wired and wireless networks, and also covers cloud-based access and attendance management, AI video security, and digital security that protects customers' information assets. It runs duplicated intelligent integrated monitoring centers in Suwon and Daegu, and maintains nationwide service bases, dispatch staff and its own security training institute, which the company cites as structural entry barriers. The Infrastructure business consists of real-estate services spanning facility management and property management, plus security SI that provides consulting, design, construction and maintenance for industrial sites and mid-to-large buildings. For 2025, a Boannews tabulation of disclosure data showed physical, digital and mobile security at 44.57% (KRW 1,287.9bn), security products 4.01%, real-estate services 28.63% (KRW 827.3bn), integrated security 17.71% (KRW 511.7bn) and security SI 11.84% (KRW 342.2bn). For the second quarter of 2026, reports citing company IR materials put Security revenue at KRW 353.2bn and Infrastructure at KRW 366.1bn, including real-estate services of KRW 220.7bn and integrated security of KRW 127.9bn. The customer base skews to large corporate and public clients, and includes group-related demand such as integrated employee ID systems across domestic and overseas Samsung affiliate sites, alongside large public and defense security SI projects. On ownership, the largest shareholder is Japan's Secom with 25.7%, yet effective control rests with the Samsung affiliates that form the second-largest bloc, and chief executives have come from Samsung, while the National Pension Service held 6.57% as of end-March 2026. The competitive field is summarized by SK Shieldus, which posted a net loss despite revenue growth, KT Telecop, which grew both revenue and net profit on AI-based new services, and Suprema, which is targeting global markets with AI integrated security solutions."
+  "ko": "에스원은 일본 SECOM이 최대주주인 국내 대표 보안 서비스 기업이며, 한 집계 자료는 삼성 계열 특수관계자 매출 비중이 높다고 정리했다. 회사는 사업을 시큐리티 부문과 인프라 부문으로 나눠 공시하며, 2025년 연결 매출 2조 8,894억원 가운데 시큐리티 부문이 1조 3,854억원(47.96%), 인프라 부문이 1조 4,893억원(51.53%)을 차지했다. 시큐리티 부문은 출동요원과 관제센터를 연계한 물리보안을 중심으로 디지털보안과 이동체보안 서비스를 포함하며, 회사의 전통적인 매출원이다. 인프라 부문은 부동산 서비스(건물관리), 통합보안, 보안 시스템통합(SI)으로 구성된다. 건물관리 매출은 2025년 8,274억원으로 전사 매출의 약 28~31%에 해당한다는 것이 언론 집계다. 보안SI는 대형 건물과 산업시설 프로젝트 중심이라 착공 일정에 따라 분기별 매출이 크게 움직이며, 한 집계 자료에서는 2025년 보안SI 매출이 전년 대비 7.2% 줄었다. 시큐리티 서비스는 장기 계약을 바탕으로 매달 현금이 유입되는 구조이고, 매출 대부분이 기간에 걸쳐 인식되는 서비스 매출이라 실적 변동성이 낮다는 평가가 있다. 경쟁력의 바탕은 전국 100개 이상의 출동 인프라와 수원·대구의 통합관제센터다. 회사는 2026년 K-BPI 방범보안서비스 부문 1위로 선정됐으며, AI 영상분석(SVMS), IoT 기반 스마트 건물관리(블루스캔), 무인매장 보안(안심24), 삼성전자와 협업한 AI 도어캠 등 AI 기반 제품군을 넓히고 있다.",
+  "en": "S-1 is a leading security services company in Korea, with Japan's SECOM as its largest shareholder, and one aggregator data set indicates a high share of revenue from related parties. The company reports two segments, Security and Infrastructure. In 2025, Security generated KRW 1,385.4 billion, or 47.96% of consolidated revenue, while Infrastructure generated KRW 1,489.3 billion, or 51.53%. Security covers physical security linked to dispatch personnel and control centers, along with digital and mobile security services, and has long been the core revenue source. Infrastructure comprises real estate services (building management), integrated security, and security system integration (SI). Building management revenue was KRW 827.4 billion in 2025, which a media tally places at roughly 28% to 31% of total revenue. Security SI is project-driven, so quarterly revenue moves with construction timing, and one aggregator data set shows a 7.2% decline in 2025. Security services run on long-term contracts that generate recurring cash, and most revenue is recognized over time, which tends to limit volatility. The competitive base includes more than 100 dispatch facilities nationwide and integrated control centers in Suwon and Daegu. The company was ranked first in the 2026 K-BPI security service category, and it is widening AI-based products such as SVMS video analytics, the BlueScan smart building service, the Ansim24 unmanned store security solution, and an AI door cam developed with Samsung Electronics."
  },
  "earnings": {
-  "ko": "연간 흐름을 보면 매출은 2022년 2조 4,680억원에서 2023년 2조 6,208억원, 2024년 2조 8,047억원, 2025년 2조 8,894억원으로 4년 연속 증가했다. 반면 영업이익은 2022년 2,041억원, 2023년 2,126억원, 2024년 2,092억원으로 정체 구간을 지난 뒤 2025년 2,345억원으로 12.1% 늘었고, 영업이익률은 2024년 7.5%에서 2025년 8.1%로 회복했다. 다만 2025년 지배주주 순이익 1,785억원은 2024년 1,767억원과 사실상 비슷한 수준이고, 영업이익이 더 낮았던 2023년(순이익 1,894억원)보다는 적어 영업외 항목과 세부담이 순이익 흐름을 좌우해 왔음을 보여준다. 현금 창출력은 꾸준하다. 영업활동현금흐름은 2023년 3,683억원, 2024년 3,766억원, 2025년 3,685억원으로 영업이익을 크게 웃도는 3,700억원 안팎을 유지했는데, 이는 보안기기 감가상각이 큰 구독형 모델의 특성이다. 재무구조도 2025년 부채비율 38.5%로 안정적이며, 자본총계는 1조 7,563억원이다. 분기 흐름에서는 2026년 1분기가 변곡점이었다. 매출 6,737억원에 영업이익 207억원(영업이익률 약 3.1%)으로, 1월 대법원의 퇴직금 산정 기준 판결에 따라 퇴직급여비용을 소급 적용한 일회성 비용이 집중 반영된 결과였다. 2026년 2분기에는 매출 7,231억원, 영업이익 643억원으로 영업이익률이 8.9%까지 올라오며 흥국증권 황성진 연구원은 2026년 8월 초 리포트에서 1분기 일회성 비용에 따른 이익 감소분을 모두 회복했다고 평가했다. 다만 같은 분기 매출은 2025년 2분기 7,326억원보다 줄었고 지배주주 순이익도 467억원으로 전년 동기 520억원을 밑돌아, 착공 지연으로 보안SI 매출이 636억원으로 25.9% 감소한 영향이 확인된다. 계절성도 뚜렷한데, 2025년 4분기는 매출 7,839억원으로 분기 최대였지만 영업이익은 558억원으로 마진이 낮아졌다.",
-  "en": "On an annual basis revenue rose four years in a row, from KRW 2,468.0bn in 2022 to KRW 2,620.8bn in 2023, KRW 2,804.7bn in 2024 and KRW 2,889.4bn in 2025. Operating profit, by contrast, stalled at KRW 204.1bn in 2022, KRW 212.6bn in 2023 and KRW 209.2bn in 2024 before rising 12.1% to KRW 234.6bn in 2025, lifting the operating margin from 7.5% to 8.1%. Yet 2025 net profit attributable to owners of KRW 178.6bn was essentially flat against KRW 176.7bn in 2024 and below the KRW 189.5bn of 2023, a year with lower operating profit, showing that non-operating items and taxes have driven the bottom line. Cash generation has been consistent: operating cash flow was KRW 368.4bn in 2023, KRW 376.6bn in 2024 and KRW 368.6bn in 2025, well above operating profit, reflecting heavy depreciation of security devices in a subscription model. The balance sheet is stable, with a 2025 debt-to-equity ratio of 38.5% and total equity of KRW 1,756.3bn. Quarterly figures show the first quarter of 2026 as the inflection point: revenue of KRW 673.7bn and operating profit of just KRW 20.7bn, an operating margin near 3.1%, because a January Supreme Court ruling on severance calculation standards led to retroactive severance costs being concentrated in that quarter. In the second quarter of 2026 revenue was KRW 723.1bn and operating profit KRW 64.4bn, an 8.9% margin, and Heungkuk Securities analyst Hwang Sung-jin said in an early-August 2026 report that the profit shortfall from the first-quarter one-off had been fully recovered. Still, that revenue was below the KRW 732.7bn of the second quarter of 2025 and net profit attributable to owners of KRW 46.8bn trailed KRW 52.1bn a year earlier, reflecting security SI revenue of KRW 63.6bn, down 25.9% on delayed project start-ups. Seasonality is also visible: the fourth quarter of 2025 delivered a record quarterly revenue of KRW 783.9bn but operating profit of only KRW 55.8bn, a weaker margin."
+  "ko": "연간 매출은 2022년 2조 4,680억원에서 2023년 2조 6,208억원(전년 대비 6.2% 증가), 2024년 2조 8,047억원(전년 대비 7.0% 증가), 2025년 2조 8,894억원(전년 대비 3.0% 증가)으로 2023년부터 2025년까지 3년 연속 증가했고, 2022~2025년 중 가장 큰 해는 2025년이다. 영업이익은 2022년 2,041억원에서 2023년 2,126억원(전년 대비 4.1% 증가), 2024년 2,092억원(전년 대비 1.6% 감소)으로 움직였고, 2025년 2,346억원(전년 대비 12.1% 증가)으로 2022~2025년 중 가장 큰 해가 됐다. 영업이익률은 2022년 8.3%, 2023년 8.1%, 2024년 7.5%를 거쳐 2025년 8.1%로 회복됐다. 지배주주 순이익은 2023년 1,895억원(전년 대비 25.5% 증가)으로 2022~2025년 중 가장 큰 해였고, 2024년 1,767억원(전년 대비 6.7% 감소), 2025년 1,786억원(전년 대비 1.0% 증가)으로 증가 폭이 좁아졌다. 2025년 영업이익 증가율이 지배주주 순이익 증가율을 크게 웃돈 배경으로는 법인세 부담 증가를 꼽는 집계가 있으며, 같은 해 당기순이익(비지배지분 포함)은 1,786억원으로 지배주주 순이익과 같은 값이다. 부채비율(부채총계 ÷ 자본총계)은 2022년 36.3%, 2023년 36.4%, 2024년 39.9%, 2025년 38.5%였고, 2025년 말 자본총계는 1조 7,563억원이다. 영업활동 현금흐름은 2022년 2,774억원에서 2023년 3,684억원, 2024년 3,766억원, 2025년 3,686억원으로 2023년 이후 3,600억원 이상을 유지했다. 분기 기준으로 2025년 4분기 매출 7,839억원(전 분기 대비 12.2% 증가)은 늘었지만 영업이익 558억원(전 분기 대비 10.1% 감소)은 줄었다. 2026년 1분기 영업이익 207억원(전 분기 대비 62.8% 감소)은 평균임금 관련 소송에 따른 퇴직급여비용이 일회성으로 반영된 결과라고 회사는 설명했다. 이후 2026년 2분기 영업이익 644억원(전 분기 대비 210.4% 증가), 3분기 654억원(전 분기 대비 1.6% 증가)으로 2개 분기 연속 늘었고, 3분기 매출 7,167억원은 전년 동기 대비 2.6% 증가했다. 최근 4개 분기(2025년 4분기~2026년 3분기) 지배주주 순이익 합계는 1,540억원이다.",
+  "en": "Annual revenue rose from KRW 2.47 trillion in 2022 to KRW 2.62 trillion in 2023 (up 6.2% year on year), KRW 2.8 trillion in 2024 (up 7.0%), and KRW 2.89 trillion in 2025 (up 3.0%), marking three straight years of growth from 2023 through 2025, with 2025 the largest year in the 2022–2025 span. Operating profit went from KRW 204.1 billion in 2022 to KRW 212.6 billion in 2023 (up 4.1%) and KRW 209.2 billion in 2024 (down 1.6%), then reached KRW 234.6 billion in 2025 (up 12.1%), the largest year in the span. The operating margin moved from 8.3% in 2022 and 8.1% in 2023 to 7.5% in 2024 before recovering to 8.1% in 2025. Net profit attributable to controlling shareholders peaked at KRW 189.5 billion in 2023 (up 25.5%), fell to KRW 176.7 billion in 2024 (down 6.7%), and reached KRW 178.6 billion in 2025 (up 1.0%). One aggregator attributes the gap between 2025 operating profit growth and net profit growth to higher income tax expense, and net profit including non-controlling interests was also KRW 178.6 billion in 2025. The debt-to-equity ratio, measured as total liabilities divided by total equity, was 36.3% in 2022, 36.4% in 2023, 39.9% in 2024, and 38.5% in 2025, with total equity of KRW 1.76 trillion at the end of 2025. Operating cash flow was KRW 277.4 billion in 2022, then KRW 368.4 billion, KRW 376.6 billion, and KRW 368.6 billion in 2025, staying above KRW 360 billion since 2023. In quarterly terms, fourth-quarter 2025 revenue rose 12.2% from the prior quarter to KRW 783.9 billion, while operating profit fell 10.1% to KRW 55.8 billion. First-quarter 2026 operating profit was KRW 20.7 billion, down 62.8% from the prior quarter, which the company said reflected a one-off retirement benefit charge tied to a wage lawsuit. Operating profit then rose to KRW 64.4 billion in the second quarter of 2026 and KRW 65.4 billion in the third, two consecutive quarterly increases, while third-quarter revenue of KRW 716.7 billion grew 2.6% year on year. Controlling-shareholder net profit for the last four quarters, from the fourth quarter of 2025 through the third quarter of 2026, totaled KRW 154 billion."
  },
  "industry": {
-  "ko": "국내 물리보안은 소수 사업자가 나누는 시장으로, 에스원은 국내 경비·보안 시장 점유율 50% 이상의 1위 사업자로 평가된다. 사업 성격상 성장은 완만하다. 보안 서비스가 구독·수수료 기반이어서 고객당 결제금액이 크게 늘거나 신규 고객이 급증하지 않으면 매출이 비교적 완만한 증가세를 보이는 구조라는 분석이 제기된다. 수요 측면에서는 AI 전환이 변수다. 회사가 고객 2만 7,207명을 대상으로 실시한 조사에서 AI 기반 실시간 위험 감지 솔루션 도입이 필요하다는 응답이 83%로 전년 58%보다 25%포인트 상승했고, 무인매장 수는 2020년 약 2,250곳에서 2025년 1만곳 이상으로 추정되며 무인매장 대상 범죄는 2021년 3,514건에서 2023년 1만 847건으로 늘었다. 공공 부문에서는 2024년 기준 전체 건물의 약 44.4%가 사용 승인 후 30년 이상 경과한 노후 건물이라는 점이 예방형 시설관리 수요의 배경으로 제시된다. 반면 보안SI는 전방 투자 사이클에 직접 연동돼 변동성이 크다. 배터리 공장 프로젝트의 매출화 지연이 2026년 2분기 보안SI 부진의 원인으로 지목됐고, 반도체·데이터센터 투자와 국방 GOP 과학화 경계 시스템 입찰이 향후 변수로 거론된다. 부동산 서비스 쪽은 건설경기 침체로 대형건물 신축이 줄어들면 단기 성장 속도가 둔화되지만, 건물 유지·설비 관리 수요는 장기적으로 늘어난다는 구도에 놓여 있다. 경쟁사 대비로는 안정적 흑자 기조를 유지하는 반면, AI·클라우드 기반 신규 서비스에서 통신 계열 사업자와의 기술·가격 경쟁이 이어지고 있다.",
-  "en": "Korean physical security is a market shared by a few players, and S-1 Corporation is regarded as the leader with more than 50% share of the domestic guarding and security market. Growth is inherently gradual: analysts note that because security services run on subscriptions and fees, revenue tends to rise only modestly unless spending per customer jumps or new customer additions accelerate sharply. On the demand side, the AI transition is the key variable. In a company survey of 27,207 customers, 83% said AI-based real-time risk detection solutions were needed, up 25 percentage points from 58% a year earlier, while the number of unmanned stores is estimated to have grown from about 2,250 in 2020 to more than 10,000 in 2025, with crimes targeting them rising from 3,514 cases in 2021 to 10,847 in 2023. In the public sector, about 44.4% of all buildings as of 2024 were more than 30 years past occupancy approval, which the company cites as the backdrop for preventive facility management demand. Security SI, by contrast, is directly tied to capital expenditure cycles and is volatile: delayed revenue recognition on a battery plant project was named as the cause of weak second-quarter 2026 security SI, while semiconductor and data center investment and a defense border surveillance system tender are cited as future swing factors. Real-estate services sit in a structure where a construction downturn slows near-term growth by reducing new large-building starts, even as demand for building upkeep and equipment management increases over the long run. Versus peers, the company maintains steadier profitability, while competing on technology and price with telecom-affiliated providers in AI and cloud-based new services."
+  "ko": "에스원은 보안 시장의 무게중심이 사고 이후 대응에서 AI 기반 사전 감지·예측형 보안으로 옮겨 가고 있다고 진단했다. 에스원이 2026년 1월 고객 2만 7,207명을 대상으로 한 설문에서 AI 기반 실시간 위험 감지 도입 필요성에 공감한 응답은 83%로, 전년 조사(58%)보다 25%포인트 높았다. 무인매장 수는 2020년 약 2,250여곳에서 2025년 1만곳을 넘은 것으로 추정되며, 무인매장 대상 범죄는 2021년 3,514건에서 2023년 1만 847건으로 늘었다. 무인매장 운영자들은 사고 발생 이후에야 상황을 확인하는 구조와 상시 모니터링 부담을 가장 큰 애로로 꼽았다. 산업재해 사망자 수는 2025년 6월 기준 1,120명으로 전년 동기 대비 8.4% 증가했다는 고용노동부 통계가 회사 자료에 인용됐다. 인프라 부문의 보안SI는 건설·시설 투자 사이클에 노출돼 착공 시점에 따라 매출이 움직인다. 반면 시큐리티 부문은 장기 서비스 계약 비중이 높아 사이클 영향이 상대적으로 작다. 원가 구조는 인건비와 출동 인프라 중심의 노동집약 구조라 인력 수급과 임금 변화에 민감하다는 집계가 있다. 경쟁 구도에서 회사는 K-BPI 방범보안서비스 부문 1위 선정과 전국 출동 인프라, 물리보안과 AI 영상보안을 결합한 솔루션을 차별점으로 내세운다.",
+  "en": "The company argues that the security market is shifting from response after incidents toward AI-based detection and prediction. In a January 2026 survey of 27,207 customers, 83% of respondents said AI-based real-time risk detection is needed, up from 58% in the prior-year survey. The number of unmanned stores was estimated at more than 10,000 in 2025, up from about 2,250 in 2020, and crimes targeting them rose from 3,514 cases in 2021 to 10,847 in 2023. Unmanned store operators cited detection only after an incident and the burden of constant monitoring as their main difficulties. Industrial accident deaths rose 8.4% year on year to 1,120 as of June 2025, according to Ministry of Employment and Labor statistics that the company cited. In security SI, project timing depends on construction and facility investment cycles, so Infrastructure revenue can swing from quarter to quarter. The Security segment, by contrast, rests on long-term service contracts, which tends to dampen exposure to those cycles. One aggregator's cost analysis says labor is the main cost, so wage conditions and staffing supply affect margins. Competitively, the company points to its first-place ranking in the 2026 K-BPI security service category, its dispatch network, and a solution set that combines physical security with AI video security."
  },
  "outlook": {
-  "ko": "회사가 제시한 방향은 기존 사업의 기술 전환과 업역 확대다. 2026년 3월 19일 공시한 기업가치 제고 계획에서 AI·로봇 기술 기반 신상품 확대, 시큐리티의 인력 중심 운영체계를 기술 중심으로 전환, 건물관리를 통합 시설관리(IFM)로 확대, 보안SI의 설계·시공 역량 고도화와 사업영역 다변화, 중장기 인수합병(M&A)·전략펀드 투자를 통한 미래기술 확보, 그리고 2026 사업연도 배당성향 50~60% 유지를 제시했다. 실적 방향에 대해서는 회사 관계자가 2026년 7월 말 시큐리티 부문의 견조한 성장과 건물관리 신규 수주 확대를 바탕으로 하반기에는 매출과 수익성을 함께 개선해 나갈 예정이라고 밝혔다. 신사업 지표로는 2026년 1~7월 스마트 스쿨 서비스 매출이 1년 전보다 69% 증가했고, 회사는 초·중·고교와 대학을 우선 대상으로 서비스를 확대한 뒤 해외 진출도 검토한다고 밝혔다. 보안SI 회복 시점이 관건인데, 흥국증권 황성진 연구원은 2026년 8월 리포트에서 하반기 이후 반도체·데이터센터 투자 관련 프로젝트와 국방 GOP 과학화 경계 시스템 입찰 등을 근거로 점진적 회복세가 나타날 것으로 전망했다. 업계에서는 회사가 보안·인프라 균형 성장을 바탕으로 2026년 매출 3조원 달성을 목표로 하고 있다는 점에 주목하고 있다. 자본 정책 쪽에서는 최근 시장의 주주환원 확대 요구와 정부 규제 등을 고려해 자사주 매입·소각 등 방안을 검토하는 것으로 전해졌다는 보도가 있어 확인이 필요한 사안으로 남아 있다. 여기에 FCP가 삼성 계열 5개사에 9월 23일까지 답변을 요구하고, 대응을 지켜본 뒤 필요하면 추가 주주권 행사를 검토하겠다고 밝힌 만큼 지배구조 관련 일정도 하반기 관찰 대상이다.",
-  "en": "The company's stated direction is a technology shift in existing businesses plus scope expansion. In a value-up plan disclosed on March 19, 2026, it presented AI- and robot-based new products, a shift of Security operations from labor-centric to technology-centric, expansion of building management into integrated facility management, upgraded design and construction capability plus diversification in security SI, mid-to-long-term M&A and strategic fund investment to secure future technology, and maintenance of a 50-60% dividend payout ratio for fiscal 2026. On the earnings path, a company official said in late July 2026 that solid Security growth and expanded new building-management orders would allow revenue and profitability to improve together in the second half. As a new-business indicator, smart school service revenue in the January-July 2026 period rose 69% year on year, and the company said it would first expand services to schools and universities before also considering overseas markets. The timing of a security SI recovery is pivotal, and Heungkuk Securities analyst Hwang Sung-jin forecast in an August 2026 report a gradual recovery, citing semiconductor and data center investment projects in the second half and an upcoming defense border surveillance system tender. Industry observers note that the company targets KRW 3trn of revenue in 2026 on balanced growth in security and infrastructure. On capital policy, reports say the company has been reviewing measures such as share buybacks and cancellation in light of rising shareholder-return demands and government regulation, which remains to be confirmed. In addition, FCP has asked the five Samsung affiliates for answers by September 23 and said it would consider further exercise of shareholder rights depending on their responses, keeping the governance calendar in focus for the second half."
+  "ko": "회사는 2026년 3월 19일 공시한 기업가치 제고 계획에서 AI·로봇 기반 신상품과 서비스로 사업영역을 넓히고 2026 사업연도 배당성향을 50~60%로 유지하겠다고 밝혔다. 인프라 사업에서는 건물관리를 기존 시설관리에서 비즈니스 지원까지 포함하는 통합 시설관리(IFM)로 넓히고, 보안SI는 설계·시공 전문역량을 고도화하겠다는 방침이다. 중장기적으로는 M&A와 전략펀드 투자를 통해 미래 기술을 확보하겠다고 했다. 직전 사업연도 배당성향은 60.6%였고, 직전 사업연도 이익배당금액은 전전 사업연도 대비 18.5% 늘었다. 2026년 10월 14일 결정된 자기주식 공개매수는 약 4,500억원 규모였으나 응모 주식수가 취득예정수량에 미달했고, 2026년 11월 5일 결제 기준 취득 금액은 1,291억 7,490만원이다. 회사는 공개매수에 쓰이지 않은 재원을 주주환원에 활용할 예정이며 구체적 방안은 이사회 결의로 확정한다고 밝혔다. 2026년 1분기 일회성 비용과 관련해 회사는 시큐리티 부문의 성장과 건물관리 신규 수주 확대가 이어져 사업의 기초 체력에는 영향이 없다고 설명했다. 다음 확인 지점은 2026년 4분기 잠정 실적과 2026 사업보고서에서 건물관리 매출과 보안SI 매출이 어떻게 움직이는지, 그리고 평균임금 소송 관련 비용이 추가로 반영되는지 여부다.",
+  "en": "In its 2026 value-up plan disclosed on March 19, 2026, the company said it would expand into AI- and robot-based products and services while keeping the 2026 dividend payout ratio at 50% to 60%. In infrastructure, it plans to widen building management into integrated facility management (IFM) that adds business support, and to deepen design and construction capability in security SI. Over the medium term, it plans M&A and strategic fund investments to secure future technologies. The payout ratio for the prior year was 60.6%, and the prior-year dividend amount rose 18.5% from the year before. The tender offer, decided on October 14, 2026 for about KRW 450 billion, was undersubscribed, and the company acquired 1,304,797 shares for KRW 129.17 billion, with settlement on November 5, 2026. Treasury shares reached 14.39% of issued shares after the purchase. The company said funds not used in the tender will go toward shareholder returns, with details to be set by a future board resolution. On the first-quarter one-off, the company said core business fundamentals were unaffected, citing steady security growth and new building-management contracts. The next checkpoints are the fourth-quarter 2026 provisional results and the 2026 annual report, including how building management and security SI revenue trend."
  },
  "valuation_comment": {
-  "ko": "최근 네 개 분기 합산 이익에는 2026년 1분기의 퇴직급여 관련 일회성 비용이 포함돼 있어, 같은 기간 이익을 기준으로 계산한 이익배수는 정상 분기 이익만 반영했을 때보다 높게 산출되는 구간이다. 순자산 대비로는 프리미엄이 크지 않은 편으로, FCP는 2026년 6월 주가순자산비율이 수년째 1배대 수준에 머물고 주가 흐름이 부진하다고 지적했다. 상대 지표에 대해서도 FCP는 에스원의 EV/EBITDA 배수가 3.3배 수준으로 과거 에스케이쉴더스가 인정받은 12배의 30%에도 못 미친다고 주장했다. 배당은 정책 자체가 명시돼 있어 예측 가능성이 상대적으로 높은데, 최근 5년 현금배당성향이 평균 56.4%였고 회사는 2026 사업연도에도 배당성향 50~60% 유지 방침을 공식화했다. 증권사 시각은 갈린다. 흥국증권 황성진 연구원은 2026년 8월 초 리포트에서 투자의견 매수와 목표주가 9만 5,000원을 유지했다고 밝혔고, LS증권 김세련 연구원은 2026년 5월 4일 리포트에서 투자의견 HOLD와 목표주가 8만 8,000원을 제시하며 직전 10만 4,000원에서 하향했다. 한편 FCP는 2026년 8월 27일 삼성 계열 5개사 보유 지분 20.6%를 주당 11만 6,000원, 총 9,066억원에 인수하겠다고 제안했으며 이를 전체 지분 가치로 환산하면 약 4조 4,000억원이라고 설명했다 — 이는 특정 주주의 제안 가격이며 회사나 이사회가 승인한 가치가 아니다.",
-  "en": "Profit summed over the most recent four quarters includes the first-quarter 2026 one-off severance cost, so an earnings multiple computed on that base screens higher than one based only on normalized quarters. Relative to net assets the premium is modest, and FCP argued in June 2026 that the price-to-book ratio had sat around the one-times level for years alongside weak share performance. On relative metrics, FCP claimed the company's EV/EBITDA multiple of about 3.3 times was less than 30% of the 12 times once ascribed to SK Shieldus. Dividends are comparatively predictable because the policy is spelled out: the cash payout ratio averaged 56.4% over the past five years and the company formalized a 50-60% payout target for fiscal 2026. Brokerage views diverge. Heungkuk Securities analyst Hwang Sung-jin maintained a Buy rating and a KRW 95,000 target price in an early-August 2026 report, while LS Securities analyst Kim Se-ryun set a Hold rating and a KRW 88,000 target in a May 4, 2026 report, cutting from a prior KRW 104,000. Separately, FCP proposed on August 27, 2026 to acquire the 20.6% stake held by five Samsung affiliates at KRW 116,000 per share for a total of KRW 906.6bn, which it said implies about KRW 4.4trn for the whole company - a price offered by one shareholder, not a value endorsed by the company or its board."
+  "ko": "주가순자산비율은 1배를 웃도는 구간이어서 장부상 순자산보다 높은 가격에 거래되는 상태다. 2025년 말 자본총계 1조 7,563억원은 지배주주 지분과 같은 금액이라 순자산 기준 비교는 지배주주 귀속분 기준으로 읽어도 같다. 이익 기준으로 보면 최근 4개 분기 지배주주 순이익 합계 1,540억원은 2025년 연간 지배주주 순이익 1,786억원과 차이가 있어, 배수 해석은 기간 선택에 따라 달라진다. 2026년 1분기에는 일회성 비용이 반영돼 있어 이 분기를 포함한 배수와 제외한 배수는 다르게 읽힌다. 배당은 배당성향 50~60%를 유지한다는 계획과 함께 봐야 하며, 배당 금액이 이익 규모에 연동되는 구조다. 자기주식 비율이 14.39%라 유통 주식 수에 따라 주당 기준 비교도 달라진다. 영업이익률은 2025년 8.1%로 회복됐지만 지배주주 순이익 증가율은 1.0%에 머물러, 영업 단계와 순이익 단계의 이익 속도가 서로 다르게 나타난다.",
+  "en": "The price-to-book ratio is above 1x, which means the stock trades at a premium to book value. Total equity at the end of 2025 was KRW 1.76 trillion, and controlling-shareholder equity is the same amount, so book-value comparisons read the same on either basis. On earnings, controlling-shareholder net profit for the last four quarters totaled KRW 154 billion, which differs from the full-year 2025 figure of KRW 178.6 billion, so multiples change with the period chosen. The first quarter of 2026 contains a one-off charge, so multiples with and without that quarter read differently. The dividend should be read alongside the 50% to 60% payout plan, which ties dividend amounts to profit levels. With treasury shares at 14.39% of issued shares, the share count used in per-share comparisons also changes the picture. The operating margin recovered to 8.1% in 2025, but controlling-shareholder net profit grew only 1.0%, so profit is moving at different speeds from the operating line down to net income."
  },
  "bull": [
   {
    "title": {
-    "ko": "구독 기반 현금흐름과 낮은 재무 레버리지",
-    "en": "Subscription cash flow with low financial leverage"
+    "ko": "반복 매출 기반의 실적 안정성",
+    "en": "Recurring revenue base"
    },
    "body": {
-    "ko": "영업활동현금흐름은 2023년 3,683억원, 2024년 3,766억원, 2025년 3,685억원으로 3년간 3,700억원 안팎을 유지했고, 매년 영업이익을 1,300억원 이상 웃돌았다. 보안기기 감가상각이 큰 구독형 모델이 경기 변동과 무관한 기저 현금흐름을 만드는 구조다. 2025년 부채비율은 38.5%, 자본총계는 1조 7,563억원으로 재무 여력이 유지되고 있다. 이 현금흐름이 2026 사업연도 배당성향 50~60% 유지 방침의 기반이 된다.",
-    "en": "Operating cash flow held near KRW 370bn for three years - KRW 368.4bn in 2023, KRW 376.6bn in 2024 and KRW 368.6bn in 2025 - exceeding operating profit by more than KRW 130bn each year. A subscription model with heavy device depreciation produces baseline cash flow that is relatively insulated from the cycle. The 2025 debt-to-equity ratio of 38.5% and total equity of KRW 1,756.3bn keep financial capacity intact. This cash flow underpins the stated plan to keep the fiscal 2026 dividend payout ratio at 50-60%."
+    "ko": "시큐리티 부문은 장기 계약을 바탕으로 매달 현금이 유입되는 구조이며, 매출 대부분이 기간에 걸쳐 인식되는 서비스 매출이다. 이 때문에 경기 변동에 따른 실적 변동성이 낮다는 평가가 나온다. 2023년부터 2025년까지 매출이 3년 연속 늘어 이 기반이 작동해 왔음을 보여 준다. 2025년 영업이익률은 8.1%로 2024년 7.5%에서 회복됐다.",
+    "en": "The Security segment runs on long-term contracts that bring in cash each month, and most of its revenue is recognized over time. That structure has been associated with lower earnings volatility through economic cycles. Revenue rose for three straight years from 2023 through 2025, which shows the base has held up. The operating margin recovered to 8.1% in 2025 from 7.5% in 2024."
    }
   },
   {
    "title": {
-    "ko": "AI 전환이 열어주는 신규 수요와 마진 개선 여지",
-    "en": "New demand and margin headroom from the AI shift"
+    "ko": "건물관리가 성장 축으로 자리 잡음",
+    "en": "Building management as a growth pillar"
    },
    "body": {
-    "ko": "회사는 시큐리티의 인력 중심 운영을 기술 중심으로 전환하고 AI로 관제·영상 분석 역량을 높여 인력 부담을 낮추면서 서비스 범위를 넓히겠다는 계획을 제시했다. 이는 출동·관제 인력 비중이 큰 원가 구조에서 영업이익률 개선 여지를 만드는 방향이다. 수요 쪽에서도 AI 기반 실시간 위험 감지 솔루션이 필요하다는 고객 응답이 83%까지 올라왔다. 신규 영역 지표로 2026년 1~7월 스마트 스쿨 서비스 매출이 69% 증가한 점이 확인된다.",
-    "en": "The company has laid out a plan to move Security operations from labor-centric to technology-centric, using AI to strengthen monitoring and video analysis so it can reduce staffing burden while widening service scope. That direction creates room for operating margin improvement in a cost structure dominated by dispatch and monitoring personnel. On demand, 83% of surveyed customers said AI-based real-time risk detection solutions were needed. As a new-area indicator, smart school service revenue rose 69% in the January-July 2026 period."
+    "ko": "건물관리 매출은 2023년 7,035억원에서 2024년 7,717억원, 2025년 8,274억원으로 늘었다는 것이 언론 집계다. 2026년 2분기 2,207억원과 3분기 2,229억원으로 2개 분기 연속 2,200억원대 매출을 기록했다는 보도가 있다. 회사는 건물관리를 비즈니스 지원까지 포함하는 통합 시설관리(IFM)로 업역을 넓히겠다는 계획을 밝혔다.",
+    "en": "Building management revenue rose from KRW 703.5 billion in 2023 to KRW 771.7 billion in 2024 and KRW 827.4 billion in 2025, according to a media tally. Quarterly revenue of KRW 220.7 billion in the second quarter of 2026 and KRW 222.9 billion in the third kept the segment above KRW 220 billion for two quarters. The company plans to widen the business into integrated facility management that adds business support services."
    }
   },
   {
    "title": {
-    "ko": "지배구조·주주환원 논의가 표면화된 국면",
-    "en": "Governance and shareholder-return debate has surfaced"
+    "ko": "배당성향 유지와 자기주식 취득 병행",
+    "en": "Payout policy and treasury share purchase"
    },
    "body": {
-    "ko": "FCP는 2026년 6월 3개년 목표주가 제시, 5개년 사업 비전 공개, 잉여현금 활용 계획, 주주 소통 강화, 상법 취지에 부합하는 이사회 운영 등 5가지를 요구했다. 이어 8월 27일에는 삼성 계열 5개사 이사회에 지분 20.6% 일괄 인수 제안서를 전달하고 9월 23일까지 답변을 요구했다. 회사 측은 주주가 다른 주주에게 지분 매입을 제안한 사안으로 회사가 밝힐 입장은 없다고 답했다. 별도로 자사주 매입·소각 등 주주가치 제고 방안을 검토하는 것으로 전해졌다는 보도가 나온 상태로, 자본 정책 관련 정보 공개 빈도가 늘어날 가능성이 있는 구간이다.",
-    "en": "In June 2026 FCP demanded five items: a three-year share price target, a five-year business vision, a plan for surplus cash, stronger shareholder communication, and board operations aligned with the intent of commercial law. It then delivered on August 27 a proposal to buy the entire 20.6% stake from the boards of five Samsung affiliates, requesting answers by September 23. The company responded that this is a matter of one shareholder proposing to buy from another and it has no position to state. Separately, reports say it has been reviewing shareholder-value measures such as buybacks and share cancellation, suggesting a period in which disclosure around capital policy may become more frequent."
+    "ko": "회사는 2026 사업연도 배당성향을 50~60%로 유지한다는 계획을 2026년 3월 19일 공시했다. 2026년 10월 공개매수에서 자기주식 130만 4,797주를 1,291억 7,490만원에 취득했고, 취득 후 자기주식 비율은 14.39%다. 공개매수에 쓰이지 않은 재원은 주주환원에 활용할 방침이다.",
+    "en": "The company disclosed on March 19, 2026 that it plans to keep the 2026 dividend payout ratio at 50% to 60%. Through a tender offer, the company acquired 1,304,797 shares for KRW 129.17 billion, lifting treasury shares to 14.39% of issued shares. Funds not used in the tender are to be directed to shareholder returns."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "매출 성장률이 낮고 보안SI 변동성이 크다",
-    "en": "Low revenue growth and volatile security SI"
+    "ko": "2026년 1분기 이익 저점과 소송 비용",
+    "en": "Q1 2026 profit trough and lawsuit costs"
    },
    "body": {
-    "ko": "매출은 2022년 2조 4,680억원에서 2025년 2조 8,894억원으로 3년간 약 17% 늘어난 수준이며, 연평균으로는 한 자릿수 초중반 성장에 머문다. 구독·수수료 기반 구조여서 고객당 결제금액이나 신규 고객이 급증하지 않으면 매출 증가세가 완만하다는 분석이 제기된다. 변동성은 보안SI에서 나오는데, 2026년 2분기 보안SI 매출은 착공 지연으로 636억원, 전년 동기 대비 25.9% 감소했다. 이 부문은 고객사의 설비 투자 일정에 따라 분기 매출 인식 시점이 좌우된다.",
-    "en": "Revenue rose about 17% over three years, from KRW 2,468.0bn in 2022 to KRW 2,889.4bn in 2025, implying only low-to-mid single-digit annual growth. Analysts note that the subscription and fee structure means revenue grows gradually unless spending per customer or new customer additions jump. The volatility comes from security SI: second-quarter 2026 security SI revenue fell 25.9% year on year to KRW 63.6bn on delayed construction starts. Timing of revenue recognition in that segment depends on customers' capital expenditure schedules."
+    "ko": "2026년 1분기 영업이익은 207억원으로 전년 동기 대비 62.4% 줄었고, 지배주주 순이익은 215억원으로 전 분기 대비 40.4% 감소했다. 회사는 평균임금 관련 소송에 따른 퇴직급여비용이 일회성으로 반영됐다고 설명했다. 소송 결과에 따른 추가 비용 반영 여부가 다음 분기 이익의 변수로 남아 있다.",
+    "en": "First-quarter 2026 operating profit was KRW 20.7 billion, down 62.4% from a year earlier, and controlling-shareholder net profit was KRW 21.5 billion, down 40.4% from the prior quarter. The company attributed the drop to retirement benefit costs tied to a wage lawsuit, recognized as a one-off. Whether further costs follow from the case's outcome remains a variable for coming quarters."
    }
   },
   {
    "title": {
-    "ko": "인건비 중심 원가와 제도 변경 리스크",
-    "en": "Labor-heavy cost base and regulatory change risk"
+    "ko": "누계 영업이익 감소와 보안SI 변동성",
+    "en": "Cumulative profit decline and SI volatility"
    },
    "body": {
-    "ko": "2026년 1분기 영업이익이 207억원으로 급감한 사례는 원가 구조의 민감도를 보여준다. 1월 대법원의 퇴직금 산정 기준 판결에 따라 퇴직급여비용을 소급 적용한 일회성 비용이 집중 반영된 결과였다. 출동·관제·시설관리 등 인력 집약 사업이 매출의 큰 부분을 차지하는 만큼, 최저임금·임금 관련 판결·근로시간 제도 변화는 마진에 직접 반영될 수 있다. 실제로 1분기 말 부채비율은 45.8%로 2025년 말 38.5%보다 7.3%포인트 상승했다는 점도 함께 확인해야 한다.",
-    "en": "The collapse of first-quarter 2026 operating profit to KRW 20.7bn illustrates cost-base sensitivity. It followed a January Supreme Court ruling on severance calculation standards, which concentrated retroactive severance costs in that quarter. Because labor-intensive operations such as dispatch, monitoring and facility management account for a large share of revenue, minimum wage changes, wage-related rulings and working-hour rules can flow straight into margins. Notably, the debt-to-equity ratio was 45.8% at the end of the first quarter, up 7.3 percentage points from 38.5% at end-2025."
+    "ko": "2026년 1~3분기 누계 영업이익은 1,505억 3,300만원으로 전년 동기 대비 15.78% 감소했다. 보안SI는 대형 프로젝트 중심이라 착공 일정에 따라 분기 매출이 흔들리며, 한 집계 자료에서는 2025년 보안SI 매출이 전년 대비 7.2% 줄었다. 2026년 4분기 이후 보안SI 매출이 회복되는지가 다음 확인 지점이다.",
+    "en": "Cumulative operating profit for the first three quarters of 2026 was KRW 150.5 billion, down 15.78% from a year earlier. Security SI is project-driven, so quarterly revenue swings with construction timing, and one aggregator data set shows Security SI revenue fell 7.2% in 2025. Whether that revenue recovers after the fourth quarter of 2026 is the next point to watch."
    }
   },
   {
    "title": {
-    "ko": "행동주의 요구의 결과는 아직 미확정",
-    "en": "Outcome of activist demands remains undetermined"
+    "ko": "순이익 증가율 둔화와 법인세 부담",
+    "en": "Slowing net profit growth"
    },
    "body": {
-    "ko": "요구 자체는 공개됐지만 이행 여부는 확인되지 않았다. FCP에 따르면 에스원 이사회는 앞으로도 계속 검토하겠다는 취지의 답변을 전달했다. FCP는 이사회가 적정 주가를 별도로 분석한 적이 없다는 답변을 받았다고 주장했다. 또한 국민연금은 2026년 3월 정기 주주총회에서 모든 안건에 찬성표를 던졌다는 점에서 주요 기관의 지지 여부도 사전에 단정할 수 없다. 지분 매각이나 자사주 소각이 실제로 결정되지 않을 경우 관련 기대는 되돌려질 수 있다.",
-    "en": "The demands are public, but implementation is unconfirmed. According to FCP, the board replied to the effect that it would continue to review the matters. FCP also said it was told the board had never separately analyzed a fair share price. And because the National Pension Service voted in favor of all agenda items at the March 2026 annual meeting, support from major institutions cannot be assumed in advance. If a stake sale or share cancellation is not actually decided, related expectations could unwind."
+    "ko": "2025년 영업이익은 12.1% 늘었지만 지배주주 순이익 증가율은 1.0%에 그쳤다. 한 집계 자료는 이 차이를 법인세 부담 증가로 설명했다. 2024년 지배주주 순이익은 1,767억원으로 2023년 1,895억원보다 줄었고, 2025년에도 2023년 수준을 회복하지 못했다. 영업 단계의 이익 증가가 순이익 단계로 얼마나 이어지는지가 확인 과제다.",
+    "en": "Operating profit rose 12.1% in 2025, but net profit attributable to controlling shareholders grew only 1.0%. One aggregator attributes the gap to higher income tax expense. Controlling-shareholder net profit was KRW 176.7 billion in 2024, below KRW 189.5 billion in 2023, and in 2025 it has not returned to the 2023 level. Whether operating gains carry through to net profit is the open question."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "전방 투자 사이클 및 프로젝트 일정",
-    "en": "Capex cycle and project scheduling"
+    "ko": "일회성 비용·소송 리스크",
+    "en": "One-off costs and litigation"
    },
    "body": {
-    "ko": "보안SI는 고객사 공장·데이터센터 착공 일정에 매출 인식이 연동된다. 2026년 2분기에는 기존에 수주한 배터리 공장의 매출화 지연이 부진 요인으로 지목됐다. 하반기 반도체·데이터센터 관련 프로젝트와 국방 경계 시스템 입찰이 회복 근거로 거론되지만, 일정이 재차 밀리면 분기 매출 편차가 다시 커질 수 있다.",
-    "en": "Security SI revenue recognition tracks customers' plant and data center construction schedules. In the second quarter of 2026, delayed revenue conversion on a previously won battery plant order was cited as the drag. Second-half semiconductor and data center projects and a defense surveillance tender are cited as grounds for recovery, but further slippage could again widen quarterly revenue swings."
+    "ko": "평균임금 관련 소송에 따른 퇴직급여비용이 2026년 1분기에 일회성으로 반영됐다. 회사는 사업의 기초 체력에는 영향이 없다고 설명했지만, 소송 결과에 따라 추가 비용이 생길 여지가 남아 있다. 이런 비용이 반복되면 분기 영업이익률이 낮아질 수 있으며, 2026년 1분기 저점이 그 가능성을 보여 준다.",
+    "en": "Retirement benefit costs tied to a wage lawsuit were recognized as a one-off in the first quarter of 2026. The company says business fundamentals are unaffected, but further costs depending on the case's outcome remain possible. If similar charges recur, quarterly operating margin could come under pressure, as the first-quarter 2026 trough shows."
    }
   },
   {
    "cat": {
-    "ko": "경쟁 및 부동산·건설 경기",
-    "en": "Competition and the property and construction cycle"
+    "ko": "대주주·그룹 의존과 자기주식 재원",
+    "en": "Parent and group dependence; treasury share funding"
    },
    "body": {
-    "ko": "물리보안 1위 지위에도 통신 계열 사업자들의 AI 기반 서비스 확대가 이어지고 있다. 케이티텔레캅은 AI 기반 신규 서비스와 효율화로 매출·순이익이 큰 폭 성장했다. 인프라 부문은 건설경기 침체로 대형건물 신축이 줄면 단기 성장 속도가 둔화되는 구조로, 신규 수주 확보가 부진하면 부동산 서비스 성장률이 둔화될 수 있다.",
-    "en": "Despite leadership in physical security, telecom-affiliated rivals keep expanding AI-based services. KT Telecop posted sharp growth in both revenue and net profit on AI-based new services and efficiency measures. The Infrastructure segment is structured so that a construction downturn that reduces new large-building starts slows near-term growth, meaning weak new-order intake could decelerate real-estate service growth."
+    "ko": "일본 SECOM이 최대주주이며, 한 집계 자료는 특수관계자 매출 비중이 연결 매출의 약 35%에 이른다고 정리했다. 그룹 내 거래 비중이 높으면 거래 조건과 계약 갱신이 실적에 미치는 영향도 커진다. 공개매수는 응모 주식이 취득예정수량에 미달했고, 미사용 재원의 구체적 활용 방안은 향후 이사회 결의로 정해진다.",
+    "en": "SECOM, a Japanese company, is the largest shareholder, and one aggregator data set puts related-party sales at roughly 35% of consolidated revenue. A high share of intragroup dealings makes contract terms and renewals more consequential for results. The tender offer was undersubscribed, and the use of the unspent funds will be set by a future board resolution."
    }
   },
   {
    "cat": {
-    "ko": "지배구조 이벤트와 그룹 관계 변화",
-    "en": "Governance events and changes in group relationships"
+    "ko": "프로젝트형 SI와 노동집약 원가",
+    "en": "Project-based SI and labor-intensive costs"
    },
    "body": {
-    "ko": "삼성 계열 지분 처리 여부는 회사가 통제할 수 없는 변수다. FCP는 삼성 금융계열사와 보안사업 사이에 뚜렷한 시너지를 찾기 어렵다며 지분 현금화를 요구했다. 반대로 그룹 관계사 대상 통합보안·보안SI 매출 비중이 있는 만큼, 관계 변화가 사업 측면에서 어떤 영향을 줄지는 사전에 계량하기 어렵다. 답변 기한이 9월 23일로 제시된 상태여서 관련 공시와 각 이사회 결정이 단기 변수로 남는다.",
-    "en": "How the Samsung affiliates handle their stake is a variable outside the company's control. FCP argued that little clear synergy exists between Samsung's financial affiliates and the security business and demanded the stake be monetized. Conversely, because integrated security and security SI revenue includes group affiliate work, the business impact of any change in that relationship is hard to quantify in advance. With a September 23 response deadline set, related disclosures and each board's decision remain near-term variables."
+    "ko": "보안SI와 건물관리 신규 수주는 건설·시설 투자 사이클의 영향을 받는다. 시큐리티 서비스는 인력과 출동 인프라 중심 구조라 인건비 상승과 인력 수급이 원가에 직접 반영된다. 한 집계는 2025년 원가율이 소폭 개선됐다고 정리했지만, 임금 상승은 이 개선을 되돌릴 수 있는 변수다.",
+    "en": "Security SI and new building-management contracts depend on construction and facility investment cycles. Security services are staffed and dispatch-based, so wage increases and labor supply feed directly into costs. One aggregator reports a slight improvement in the cost ratio in 2025, but wage pressure could reverse that gain."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 9월 23일",
-    "en": "September 23, 2026"
+    "ko": "2027년 1월 (잠정 실적 공시 예정)",
+    "en": "January 2027 (expected provisional results)"
    },
    "what": {
-    "ko": "FCP가 삼성 계열 5개사 이사회에 요구한 지분 인수 제안 답변 기한이다. 각 사의 회신 내용과 공시 여부가 지배구조 논의의 다음 단계를 좌우한다.",
-    "en": "This is the deadline FCP set for the boards of five Samsung affiliates to respond to its stake purchase proposal. The content of each reply and whether it is disclosed will shape the next stage of the governance debate."
+    "ko": "2026년 4분기 잠정 실적. 영업이익이 2개 분기 연속 증가 흐름을 이어가는지, 1분기 소송 관련 비용이 추가로 반영되는지 확인한다.",
+    "en": "Fourth-quarter 2026 provisional results. Whether operating profit extends its two-quarter rise and whether further lawsuit-related costs appear."
    }
   },
   {
    "when": {
-    "ko": "2026년 10월 말~11월 초",
-    "en": "Late October to early November 2026"
+    "ko": "2027년 3월 말 (사업보고서 법정 제출 기한)",
+    "en": "End of March 2027 (statutory annual report deadline)"
    },
    "what": {
-    "ko": "2026년 3분기 실적 발표를 확인할 시점이다. 2분기 8.9%까지 회복된 영업이익률의 지속 여부와, 636억원으로 줄었던 보안SI 매출의 회복 폭이 핵심 지표다.",
-    "en": "Time to check third-quarter 2026 results. Key metrics are whether the operating margin that recovered to 8.9% in the second quarter holds, and how far security SI revenue rebounds from the reduced KRW 63.6bn level."
+    "ko": "2026년 사업보고서. 2026 연간 매출·영업이익률과 건물관리·보안SI 매출의 연간 흐름이 확정된다.",
+    "en": "The 2026 annual report, which fixes full-year revenue, operating margin, and the annual trend of building management and security SI revenue."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기",
-    "en": "Fourth quarter of 2026"
+    "ko": "시점 미정 (이사회 결의 시)",
+    "en": "Date not set (on board resolution)"
    },
    "what": {
-    "ko": "반도체·데이터센터 관련 프로젝트와 국방 경계 시스템 입찰 관련 수주·착공 공시, 그리고 검토 중으로 전해진 자사주 매입·소각 방안의 결정 여부를 확인할 구간이다.",
-    "en": "A window to watch for order and construction disclosures tied to semiconductor and data center projects and the defense surveillance system tender, and whether the share buyback and cancellation measures reported to be under review are decided."
+    "ko": "공개매수 미사용 재원의 주주환원 방안. 규모와 방식이 정해지는지에 따라 자기주식 및 주주환원 흐름이 달라진다.",
+    "en": "The shareholder-return plan for unspent tender funds. Its size and form will shape the treasury share and shareholder-return picture."
    }
   },
   {
    "when": {
-    "ko": "2027년 1월 말",
-    "en": "Late January 2027"
+    "ko": "2027년 상반기 (일정 미확인)",
+    "en": "First half of 2027 (schedule unconfirmed)"
    },
    "what": {
-    "ko": "4분기 잠정 실적과 결산배당 이사회 결의가 나오는 시점이다. 2026 사업연도 배당성향 50~60% 유지 방침의 실제 이행 수준을 확인할 수 있다.",
-    "en": "Preliminary fourth-quarter results and the year-end dividend board resolution are due. This will show how closely the stated 50-60% payout ratio policy for fiscal 2026 is actually followed."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 3월",
-    "en": "March 2027"
-   },
-   "what": {
-    "ko": "정기 주주총회와 차기 기업가치 제고 계획 갱신 시점이다. 사외이사 구성 변경, 주주제안 상정 여부, AI·로봇 관련 신사업의 매출 기여 공시 수준을 함께 확인할 필요가 있다.",
-    "en": "The annual general meeting and the next value-up plan update. Worth checking together: any change in outside director composition, whether shareholder proposals are tabled, and how much disclosure is given on revenue contribution from AI and robotics initiatives."
+    "ko": "2026 사업연도 배당 결정. 배당성향 50~60% 유지 계획이 실제 배당 금액으로 이어지는지 확인한다.",
+    "en": "The 2026 fiscal-year dividend decision, and whether the 50% to 60% payout plan carries into the declared amount."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "에스원은 물리보안 구독 매출을 기반으로 2025년 매출 2조 8,894억원, 영업이익 2,345억원, 영업이익률 8.1%를 기록하며 2024년의 7.5%에서 마진을 회복했다. 영업활동현금흐름은 3년 연속 3,700억원 안팎을 유지하고 2025년 부채비율은 38.5%로, 이익 규모보다 현금 창출과 재무 안정성이 두드러지는 구조다. 다만 2026년 1분기에는 퇴직급여 산정 기준 변경에 따른 일회성 비용으로 영업이익이 207억원까지 줄었고, 2분기에 643억원으로 회복하는 과정에서 보안SI 매출 감소로 전체 매출은 전년 동기를 밑돌았다. 회사는 3월 기업가치 제고 계획에서 AI·로봇 기반 신상품, 통합 시설관리 확대, 배당성향 50~60% 유지를 제시했고 하반기 매출·수익성 동반 개선 방침을 밝혔다. 동시에 2대 주주 측 행동주의 펀드 FCP가 이사회 요구안과 삼성 계열 지분 인수 제안을 잇달아 내놓으며 9월 23일 답변 기한을 제시한 상태로, 지배구조 관련 일정이 실적과 별개의 변수로 자리하고 있다. 강세 요인은 안정적 현금흐름과 AI 전환에 따른 원가 구조 개선 여지, 명시된 배당 정책이며, 약세 요인은 완만한 매출 성장률, 인력 중심 원가의 제도 변경 민감도, 그리고 행동주의 요구의 이행 불확실성이다. 본 리포트는 정보 제공을 목적으로 하며 매수·매도 의견이나 목표주가를 포함하지 않는다.",
-   "en": "S-1 Corporation, built on subscription-based physical security, posted 2025 revenue of KRW 2,889.4bn and operating profit of KRW 234.6bn for an 8.1% operating margin, recovering from 7.5% in 2024. Operating cash flow held near KRW 370bn for three straight years and the 2025 debt-to-equity ratio was 38.5%, so cash generation and balance sheet stability stand out more than the absolute profit level. However, first-quarter 2026 operating profit shrank to KRW 20.7bn on a one-off cost from the change in severance calculation standards, and while it rebounded to KRW 64.4bn in the second quarter, total revenue trailed the year-earlier quarter because security SI revenue declined. In its March value-up plan the company presented AI- and robot-based new products, expansion into integrated facility management and a 50-60% dividend payout target, and it stated an intention to improve revenue and profitability together in the second half. At the same time, activist fund FCP has issued board demands and a proposal to buy the Samsung affiliates' stake, with a September 23 response deadline, placing governance events alongside earnings as a separate variable. The bullish case rests on steady cash flow, room for cost-structure improvement from the AI shift and an explicit dividend policy; the bearish case rests on gradual revenue growth, the sensitivity of a labor-heavy cost base to regulatory change, and uncertainty over whether activist demands are implemented. This report is for information purposes only and contains no buy or sell opinion and no target price."
+   "ko": "에스원은 2023년부터 2025년까지 매출이 3년 연속 늘었고, 2025년 영업이익은 2,346억원으로 2022~2025년 중 가장 큰 해였다. 사업 구조는 장기 계약 기반의 시큐리티 부문과 건물관리 중심의 인프라 부문이 거의 같은 비중으로 맞물려 있다. 2026년 1분기에는 평균임금 소송 관련 퇴직급여 비용이 반영되며 영업이익이 207억원으로 줄었지만, 2분기 644억원과 3분기 654억원으로 2개 분기 연속 늘었다. 최근 4개 분기 지배주주 순이익 합계는 1,540억원이다. 주주환원에서는 배당성향 50~60% 유지 계획과 2026년 자기주식 공개매수가 함께 진행됐다. 강세 요인은 반복 매출 기반, 건물관리 성장, 주주환원 확대이며, 약세 요인은 1분기 일회성 비용의 재발 가능성, 보안SI의 프로젝트 변동성, 2025년 지배주주 순이익 증가율 1.0%에 그친 점이다. 다음 확인 지점은 2026년 4분기 잠정 실적과 2026 사업보고서이며, 두 자료에서 영업이익률과 건물관리·보안SI 매출 흐름이 핵심이다.",
+   "en": "S-1 grew revenue for three straight years from 2023 through 2025, and 2025 operating profit of KRW 234.6 billion was the largest year in the 2022–2025 span. The business mixes a long-contract Security segment with an Infrastructure segment led by building management, at nearly equal revenue shares. In the first quarter of 2026, retirement benefit costs tied to a wage lawsuit reduced operating profit to KRW 20.7 billion, but profit rose for two consecutive quarters afterward to KRW 64.4 billion and KRW 65.4 billion. Controlling-shareholder net profit for the last four quarters totaled KRW 154 billion. On shareholder returns, a 50% to 60% payout plan and a 2026 treasury share tender offer both moved forward. Strengths include the recurring revenue base, building management growth, and expanded shareholder returns, while weaknesses include the possible recurrence of one-off costs, project volatility in security SI, and controlling-shareholder net profit growth of just 1.0% in 2025. The next checkpoints are the fourth-quarter 2026 provisional results and the 2026 annual report, with operating margin and building management and security SI revenue trends at the center."
   }
  },
  "sources": [
-  "https://www.bloter.net/news/articleView.html?idxno=669472",
-  "https://www.1conomynews.co.kr/news/articleView.html?idxno=49813",
-  "https://www.youthdaily.co.kr/news/article.html?no=224292",
-  "https://view.asiae.co.kr/article/2026080418031886642",
-  "https://www.sedaily.com/article/20074406",
-  "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-2026%EB%85%84-2%EB%B6%84%EA%B8%B0-%EC%9E%A0%EC%A0%95%EC%8B%A4%EC%A0%81-%EB%B0%9C%ED%91%9C",
-  "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-2026%EB%85%84-2%EB%B6%84%EA%B8%B0-%EC%8B%A4%EC%A0%81-%EB%B0%9C%ED%91%9C",
-  "https://www.instagram.com/p/DbInXThjyDp/",
-  "https://images.samsung.com/kdp/ir/events/2026/2026_2Q_conference_kor.pdf",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Finance.asp?pGB=1&gicode=A012750&cID=&MenuYn=Y&ReportGB=B&NewMenuID=103&stkGb=701",
-  "https://www.startuptoday.co.kr/news/articleView.html?idxno=572475",
-  "https://m.boannews.com/html/detail.html?idx=140583",
-  "https://www.hankyung.com/article/2026082521321",
-  "http://m.boannews.com/html/detail.html?idx=143437&skind=7",
-  "https://www.saramin.co.kr/zf_user/company-info/view/csn/WjVnTjlaRDR3TTFUSlNyVnM5eDJaUT09/company_nm/(%EC%A3%BC)%EC%97%90%EC%8A%A4%EC%9B%90",
-  "https://www.etnews.com/20260109000222",
-  "https://www.koreanewstoday.co.kr/news/articleView.html?idxno=80237",
-  "https://www.thepublic.kr/news/articleView.html?idxno=290431"
+  "https://www.bloter.net/news/articleView.html?idxno=637291",
+  "http://www.srtimes.kr/news/articleView.html?idxno=202528",
+  "https://www.newstomato.com/ReadNews.aspx?no=1280115",
+  "https://www.ajunews.com/view/20230428180721621",
+  "https://www.etoday.co.kr/news/view/2327796",
+  "https://www.sedaily.com/article/13606634",
+  "https://www.evolog.in/s1-history",
+  "https://www.openbizdata.com/s1/",
+  "https://www.dailysecu.com/news/articleView.html?idxno=144575",
+  "http://www.economytalk.kr/news/articleView.html?idxno=425336",
+  "https://news.nate.com/view/20260111n05662",
+  "https://news.nate.com/view/20260319n37524",
+  "https://news.nate.com/view/20260319n00049",
+  "https://m.news.nate.com/view/20260430n27818",
+  "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=707201",
+  "https://news.nate.com/view/20260115n00377",
+  "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=713170",
+  "https://m.news.nate.com/view/20260430n31698"
  ],
  "v": 2,
- "model": "claude-opus-5",
+ "model": "claude-haiku-5-5",
  "ticker": "012750",
  "name": "에스원",
  "name_en": "S-1 CORPORATION",
@@ -233,11 +223,11 @@
   "IT·소프트웨어"
  ],
  "market": "코스피",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 05:29",
- "dataDate": "20260904",
+ "reportDate": "2026-11-18",
+ "reportTs": "2026-11-18 02:52",
+ "dataDate": "20261117",
  "quant": {
-  "asOf": "2026-09-04",
+  "asOf": "2026-11-17",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -307,12 +297,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 732658198965,
-    "op": 61557254879,
-    "np_owner": 52089569111
-   },
-   {
     "q": "2025Q3",
     "rev": 698739622181,
     "op": 62125428956,
@@ -335,29 +319,36 @@
     "rev": 723127764911,
     "op": 64393913641,
     "np_owner": 46751201795
+   },
+   {
+    "q": "2026Q3",
+    "rev": 716710571907,
+    "op": 65393937355,
+    "np_owner": 49528493203
    }
   ],
   "valuation": {
-   "price": 79200,
-   "mcap": 3.0095,
+   "price": 102200,
+   "mcap": 3.8835,
    "shares": 37999178,
    "total_shares": 37999178,
-   "wavg_shares": 33805328,
-   "per": 17.534,
-   "eps": 4517,
-   "pbr": 1.5577,
-   "bps": 50844,
-   "roe_ttm": 9.0,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": 152738949638,
+   "wavg_shares": 33806386,
+   "per": 22.442,
+   "eps": 4554,
+   "pbr": 1.9568,
+   "bps": 52229,
+   "roe_ttm": 8.9,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": 153972620908,
    "ccy": "KRW",
    "bps_src": "자체",
    "eps_src": "공시",
-   "pbr_krx": 1.52,
+   "pbr_krx": 1.96,
    "bps_krx": 51947.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 2700.0,
-   "div": 3.41
+   "div": 2.64
   }
- }
+ },
+ "textRules": 2
 }
