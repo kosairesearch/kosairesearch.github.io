@@ -1,26 +1,27 @@
-=== 공시 트리거 옛 형식 갱신 Mon Nov 16 11:24:04 UTC 2026 · 대상 950260,0158S0,493410,0011T0,0035S0,0039P0 ===
-## 🤖 Batch 제출 — 대상 4개 / 상위 100개 (최근 101개 건너뜀) · 모델 claude-haiku-5-5
+=== 공시 트리거 옛 형식 갱신 Tue Nov 17 21:55:02 UTC 2026 · 대상 493410,0053F0,0039P0,0013Y0,386380,420610,387690 ===
+## 🤖 Batch 제출 — 대상 4개 / 상위 100개 (최근 107개 건너뜀) · 모델 claude-haiku-5-5
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
-  · 준비 950260 인제니아테라퓨틱스(Reg.S) (DART O)
+  · 준비 0053F0 티앤이코리아 (DART O)
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
-  · 준비 0158S0 엘리스 (DART O)
+  · 준비 0013Y0 엠에스바이오 (DART O)
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
-  · 준비 0011T0 채비 (DART O)
+  · 준비 386380 스카이랩스 (DART O)
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
-  · 준비 0035S0 빅웨이브로보틱스 (DART O)
-- ✅ 배치 제출 완료: msgbatch_01KDLUZqeEAePqHKASNQFkSn (4건) → data/batch_state.json
+  · 준비 387690 레메디 (DART O)
+- ✅ 배치 제출 완료: msgbatch_01QDVJaqZBvp7BMts1haBABP (4건) → data/batch_state.json
+  · 상태 in_progress · 처리 4/성공 0/오류 0
   · 상태 in_progress · 처리 4/성공 0/오류 0
   · 상태 in_progress · 처리 4/성공 0/오류 0
   · 상태 in_progress · 처리 4/성공 0/오류 0
@@ -29,26 +30,9 @@
   · 상태 in_progress · 처리 4/성공 0/오류 0
   · 상태 in_progress · 처리 4/성공 0/오류 0
   · 상태 ended · 처리 0/성공 4/오류 0
+- 🔎 교정 배치 제출: msgbatch_01ELZ7hk98JrjStdfW2acpFE (1건)
+  · ✏️ 0013Y0 표현 교정 1건 → 남은 0건
+💵 claude-sonnet-5-5 1회(교정 배치) · 입력 4,135(캐시쓰기 0·읽기 0) · 출력 1,267 · 검색 0 → 약 $0.01
 
 ✅ 회수 완료 · 성공 4/실패 0 · 총 보유 2695개 → data/reports/ + reports-index.js
-💵 claude-haiku-5-5 4회(배치) · 입력 21,364(캐시쓰기 157,712·읽기 20,097) · 출력 95,533 · 검색 8 → 약 $0.11
-## 🤖 Batch 제출 — 대상 2개 / 상위 100개 (최근 105개 건너뜀) · 모델 claude-haiku-5-5
-  · 준비 493260 옵토닉스 (DART X)
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-  · 준비 345290 영광와이케이엠씨 (DART O)
-- ✅ 배치 제출 완료: msgbatch_01NR1bnnTRmNdAQdqkDEKHDJ (2건) → data/batch_state.json
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 ended · 처리 0/성공 2/오류 0
-- 🧹 유니버스 제외 종목 리포트 정리: 2건 (097780, 206400)
-
-✅ 회수 완료 · 성공 2/실패 0 · 총 보유 2695개 → data/reports/ + reports-index.js
-💵 claude-haiku-5-5 2회(배치) · 입력 10,537(캐시쓰기 70,744·읽기 8,613) · 출력 58,497 · 검색 4 → 약 $0.06
+💵 claude-haiku-5-5 4회(배치) · 입력 21,563(캐시쓰기 142,448·읽기 20,097) · 출력 105,223 · 검색 8 → 약 $0.12

@@ -1,220 +1,230 @@
 {
  "title": {
-  "ko": "AI 인프라 수주 확대, 실적 계절성 여전",
-  "en": "AI Infrastructure Orders Rise, Seasonality Persists"
+  "ko": "AI 인프라 대형 계약 잇따르나 분기 실적은 변동",
+  "en": "Large AI infrastructure contracts pile up while quarterly earnings swing"
  },
  "lead": {
-  "ko": "아이크래프트는 2025년 AI 데이터센터 수요 확대에 힘입어 매출과 이익이 큰 폭으로 뛰며 흑자 전환했으나, 2026년 상반기에는 분기별 매출 편차 속에 다시 영업손실을 기록했다.",
-  "en": "Icraft posted sharply higher revenue and a swing to profit in 2025 on rising AI data center demand, but recorded operating losses again in the first half of 2026 amid pronounced quarter-to-quarter revenue swings."
+  "ko": "2026년 11월 16일 공시된 2,091억원 규모 공급계약으로 AI 인프라 매출 기반은 넓어졌지만, 2026년 1분기부터 3분기까지 영업손실이 이어지는 등 분기 실적의 변동성은 여전히 크다.",
+  "en": "A KRW 209.1 billion AI infrastructure supply contract disclosed on November 16, 2026 widens the revenue base, yet operating losses across the first three quarters of 2026 show that quarterly earnings remain volatile."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출 2,065억원(전년 대비 105.5%↑), 영업이익 80억원(401.6%↑)으로 급증, 순이익은 흑자로 전환",
-   "en": "2025 consolidated revenue reached KRW 206.5bn (up 105.5% year-on-year) and operating profit surged to KRW 8.0bn (up 401.6%), with net income turning positive"
+   "ko": "2025년 연간 실적이 흑자로 전환됐다. 매출 2,065억원(전년 대비 105.5% 증가), 지배주주 순이익 101억원(흑자 전환)이다.",
+   "en": "2025 annual results turned profitable, with revenue of KRW 206.5 billion (up 105.5%) and net income attributable to controlling shareholders of KRW 10.1 billion, a swing to profit."
   },
   {
-   "ko": "2026년 6~7월 네이버클라우드 대상 AI스토리지(1,040억원)·인피니밴드 스위치(518억원) 등 대형 공급계약을 잇따라 체결",
-   "en": "Icraft signed a series of large supply contracts with Naver Cloud in June-July 2026, including AI storage (KRW 104.0bn) and Infiniband network switches (KRW 51.8bn)"
+   "ko": "2026년 1분기부터 3분기까지 3개 분기 연속 영업손실이다. 3분기 영업손실은 7억원으로 전년 동기보다 손실 규모가 줄었다.",
+   "en": "The company posted operating losses in three consecutive quarters from Q1 to Q3 2026, and the Q3 2026 operating loss of KRW 695 million was smaller than a year earlier."
   },
   {
-   "ko": "2026년 1분기·2분기 연속 영업손실을 기록하며, 통신·공공 발주가 하반기에 집중되는 계절적 패턴이 재확인됨",
-   "en": "The company posted operating losses in both the first and second quarters of 2026, reconfirming a seasonal pattern in which telecom and public-sector orders concentrate in the second half"
+   "ko": "2026년 7월 이후 공급계약 세 건이 공시됐다. 가장 큰 계약은 2026년 11월 16일 공시된 네이버클라우드와의 2,091억원 규모 계약이다.",
+   "en": "Three supply contracts have been disclosed since July 2026, and the largest, worth KRW 209.1 billion with NAVER Cloud, was disclosed on November 16, 2026."
   },
   {
-   "ko": "엔비디아 엘리트 파트너 지위를 바탕으로 GPU·네트워킹·스토리지를 통합하는 AI 데이터센터 구축 역량을 강화 중",
-   "en": "Icraft is strengthening its integrated AI data center capabilities across GPU, networking, and storage, based on its status as an NVIDIA Elite Partner"
+   "ko": "영업활동 현금흐름은 2022년 -72.8억원, 2023년 86.7억원, 2024년 -6.7억원, 2025년 66.5억원으로 해마다 부호가 바뀌었다.",
+   "en": "Operating cash flow changed sign from year to year, moving from -KRW 7.28 billion in 2022 to KRW 8.67 billion in 2023, -KRW 675 million in 2024 and KRW 6.65 billion in 2025."
   },
   {
-   "ko": "정부의 AI 인프라(GPU 구축) 예산 확대가 우호적 산업 환경을 조성하지만, 실제 수혜는 개별 수주 성사 여부에 좌우",
-   "en": "Expanding government AI infrastructure (GPU build-out) budgets create a favorable industry backdrop, but actual benefit to Icraft depends on individual contract wins"
+   "ko": "2026년 11월 9일 이사회가 자기주식 100만주(발행주식총수의 약 6.85%) 소각을 결의했다. 소각 후에도 자본금은 줄지 않는다.",
+   "en": "On November 9, 2026 the board resolved to cancel 1 million treasury shares, about 6.85% of total shares issued, and paid-in capital will not decrease."
   }
  ],
  "business": {
-  "ko": "아이크래프트는 2000년 설립되어 2004년 12월 코스닥에 상장한 회사로, 초기에는 기간통신사업자를 대상으로 인터넷 핵심망과 전송망을 구축하는 네트워크 통합 사업을 주력으로 해왔다. 이후 일반 기업과 공공부문을 대상으로 BcN, 보안솔루션 등 토탈 네트워크 구축 서비스로 사업 영역을 넓혔다. 최근에는 AI 투자 확대에 대응해 네트워크 장비 중심 사업에서 클라우드·AI 데이터센터 시장으로 사업을 다각화하고 있으며, GPU 기반 AI 데이터센터 설계·구축과 Full-Stack AI 서비스를 새로운 성장축으로 육성하고 있다. 회사는 시엔스 등 3개 계열사를 보유하고 있어 연결 실적에 이들 자회사의 사업이 반영된다. 주요 고객군은 네이버클라우드 등 클라우드 서비스 제공업체(CSP)와 기간통신사업자, 그리고 정부·공공기관이 추진하는 AI 인프라 사업의 발주처들로 구성된다. 엔비디아의 한국 파트너로서 GPU 서버, 인피니밴드 네트워킹, AI 스토리지 등 AI 데이터센터를 구성하는 핵심 요소들을 통합 제공할 수 있는 역량을 보유한 점이 사업의 특징이다. 경쟁 구도상으로는 삼성SDS, KT클라우드 등 대형 시스템통합·클라우드 사업자들이 발주처(CSP) 지위로 시장에 참여하는 반면, 아이크래프트는 이들과 협력하거나 정부 발주 사업에 직접 참여하는 벤더·파트너로서의 포지션을 취하고 있다. 사업 특성상 개별 프로젝트의 수주·계약 체결 시점과 규모에 따라 매출 인식이 크게 좌우되는 수주형 구조를 갖고 있다.",
-  "en": "Icraft was founded in 2000 and listed on KOSDAQ in December 2004, initially focusing on network integration services building internet core and transmission networks for telecom carriers. The company later expanded into total network construction services, including BcN and security solutions, for general enterprises and the public sector. More recently, in response to expanding AI investment, Icraft has been diversifying from a network-equipment-centric business toward the cloud and AI data center market, cultivating GPU-based AI data center design and build-out along with full-stack AI services as new growth pillars. The company has three affiliates, including one called Sience, whose operations are reflected in consolidated results. Its main customer base consists of cloud service providers (CSPs) such as Naver Cloud, telecom carriers, and government or public-sector agencies procuring AI infrastructure projects. A distinguishing feature of the business is its capability, as an NVIDIA partner in Korea, to integrate core AI data center components including GPU servers, Infiniband networking, and AI storage. In terms of competitive positioning, larger system integrators and cloud operators such as Samsung SDS and KT Cloud participate in the market as CSPs, while Icraft positions itself as a vendor or partner that either collaborates with them or participates directly in government-led projects. Given this order-driven business model, revenue recognition is heavily influenced by the timing and scale of individual project awards and contracts."
+  "ko": "아이크래프트는 2000년 설립되어 2005년 코스닥에 상장된 IT·소프트웨어 기업이다. 출발점은 인터넷 핵심망 구축이었고, 현재는 AI 인프라 구축과 네트워크 솔루션, 클라우드 서비스를 함께 제공한다. 회사 소개에 따르면 GPU 컴퓨팅 플랫폼 기반 AI 데이터센터의 설계·구축과 기간통신사업자의 인터넷 핵심망·접속망 구축, 클라우드 전환 서비스가 주요 영역이다. 사업은 크게 통신사업자 대상 망 구축과 고객사 AI 인프라 대상 장비 공급·구축으로 나뉘는 것으로 보인다. 2025년 실적 개선의 배경으로 회사는 고객사 AI 인프라 투자 확대에 따른 매출 증가와 원가절감을 제시했다. 2026년에 공시된 공급계약의 품목은 NVIDIA Spectrum-X 및 Infiniband 스위치 계열이며, 2026년 7월 씨이랩과의 계약과 2026년 11월 네이버클라우드와의 계약은 모두 외주생산 방식으로 기재됐다. 장비를 자체 제조하기보다 조달·설계·구축 역량을 묶어 공급하는 구조로 읽힌다. 2026년 공시된 계약 상대방은 네이버클라우드 주식회사와 국내 법인 두 곳이어서 특정 대형 고객과의 계약 비중이 큰 편이다. 같은 IT·소프트웨어 업종의 삼성에스디에스, LG씨엔에스 등 대형 SI 기업과 비교하면 사업 범위는 좁고 프로젝트 단위 매출 비중이 높은 편이다. 최대주주 등 특수관계인 지분은 2026년 7월 31일 기준 21.10%다.",
+  "en": "iCRAFTCo was founded in 2000 and listed on KOSDAQ in 2005 as an IT and software company. It began with internet core network construction and now also provides AI infrastructure build-outs, network solutions and cloud services. According to the company profile, its main areas are design and construction of AI data centers on GPU computing platforms, construction of internet core and access networks for telecom carriers, and cloud transition services. The business appears to split into network construction for telecom operators and equipment supply and build-out for customers' AI infrastructure. The company attributed its 2025 improvement to higher revenue from customers' expanding AI infrastructure investment and to cost reduction. The 2026 supply contracts cover NVIDIA Spectrum-X and Infiniband switch lines, and the July 2026 contract with Ceylab and the November 2026 contract with NAVER Cloud were both recorded as outsourced production. The structure therefore reads as a combination of procurement, design and construction capability rather than in-house manufacturing. The counterparties disclosed in 2026 are NAVER Cloud and two other domestic companies, so revenue depends heavily on a few large customers. Compared with large SI firms in the same IT and software sector, such as Samsung SDS and LG CNS, the scope of work is narrower and project-based revenue weighs more. As of July 31, 2026, the largest shareholder and related parties held 21.10%."
  },
  "earnings": {
-  "ko": "연간 실적을 보면 2022년 매출 1,129억원, 영업이익 2.5억원으로 거의 손익 균형에 머물렀으나, 2023년에는 매출 1,387억원, 영업이익 51.5억원(영업이익률 3.7%)으로 개선됐다. 2024년에는 매출이 1,005억원으로 줄었음에도 영업이익은 16.0억원을 유지했지만, 순이익은 -9.3억원으로 적자를 기록해 영업외 요인의 부담이 있었음을 시사한다. 2025년에는 매출이 2,065억원으로 전년 대비 두 배 이상 늘고 영업이익은 80.1억원, 순이익은 101.4억원으로 뚜렷한 흑자 전환이 나타났다. 이는 FnGuide 집계 기준으로도 2025년 결산 전년동기 대비 연결기준 매출액은 105.5% 증가, 영업이익은 401.6% 증가, 당기순이익 흑자전환된 것으로 확인되며, AI 인프라에 대한 투자 확대로 데이터센터 시스템 수요 증가와 디지털 전환 가속화로 IT 시장 성장이 실적 개선을 주도했고, AI 하드웨어 및 소프트웨어 제조사와의 파트너십을 통한 인프라 제공 능력과 구축 경험이 매출 증가세를 이끌었다. 분기별로는 편차가 매우 크다. 2025년 2분기는 매출 293.8억원, 영업손실 7.2억원을 기록했는데, 이데일리 보도에서도 연결 기준 2분기 영업손실이 7억 2,200만원으로 전년 동기 대비 54.43% 감소했고, 매출액은 293억 8,000만원으로 같은 기간 48.84% 증가했다고 확인된다. 반면 2025년 4분기에는 매출이 1,091억원으로 단일 분기가 연간 매출의 절반 이상을 차지했고 영업이익 114.2억원, 순이익 81.9억원을 기록하며 연간 실적 대부분이 이 한 분기에 집중됐다. 그러나 2026년 들어서는 1분기 매출 163.4억원, 영업손실 25.0억원, 순손실 19.4억원에 이어 2분기에도 매출 400.3억원으로 회복됐음에도 영업손실 2.9억원, 순손실 17.3억원을 기록해 상반기 내내 적자가 이어졌다. 와이즈리포트는 이러한 흐름에 대해 2026년 1분기 전년동기 대비 연결기준 매출액은 59.4% 감소, 영업손실은 52.7% 증가, 당기순손실은 77.8% 증가했으며, 매출이 감소하고 영업손실이 확대되며 실적 악화가 나타난 것은 통신사업자 네트워크 투자가 하반기에 집중되어 상반기 실적이 부진했기 때문이라고 설명한다.",
-  "en": "Annual results show Icraft near breakeven in 2022 with revenue of KRW 112.9bn and operating profit of only KRW 0.25bn, before improving in 2023 to revenue of KRW 138.7bn and operating profit of KRW 5.15bn (a 3.7% operating margin). In 2024, revenue declined to KRW 100.5bn, and while operating profit held at KRW 1.6bn, net income fell to a loss of KRW 0.93bn, suggesting a drag from non-operating items. In 2025, revenue more than doubled to KRW 206.5bn, operating profit rose to KRW 8.01bn, and net income reached KRW 10.14bn, marking a clear swing to profitability. This is corroborated by FnGuide data showing consolidated 2025 revenue up 105.5% year-on-year, operating profit up 401.6%, and net income turning to a profit, with the source noting that rising AI infrastructure investment drove data center system demand and accelerated digital transformation, while partnerships with AI hardware and software makers and prior data center build-out experience supported revenue growth. Quarterly results, however, show extreme volatility. In the second quarter of 2025, revenue was KRW 29.38bn with an operating loss of KRW 0.72bn, which local media confirmed by reporting a consolidated operating loss of KRW 722 million, down 54.43% year-on-year, and revenue of KRW 29.38bn, up 48.84% over the same period. By contrast, the fourth quarter of 2025 saw revenue of KRW 109.1bn—more than half of the full-year total in a single quarter—along with operating profit of KRW 11.42bn and net income of KRW 8.19bn, meaning most of the annual result was concentrated in that one quarter. Entering 2026, however, first-quarter revenue fell to KRW 16.34bn with an operating loss of KRW 2.50bn and a net loss of KRW 1.94bn, and although second-quarter revenue recovered to KRW 40.03bn, the company still posted an operating loss of KRW 0.29bn and a net loss of KRW 1.73bn, extending losses through the first half. Wise Report attributes this pattern to the fact that consolidated first-quarter 2026 revenue fell 59.4% year-on-year, the operating loss widened 52.7%, and the net loss widened 77.8%, with the deterioration occurring because telecom carrier network investment is concentrated in the second half, leaving first-half results weak."
+  "ko": "연간 매출은 2022년 1,129억원에서 2023년 1,387억원(전년 대비 22.8% 증가)으로 늘었다가 2024년 1,005억원(전년 대비 27.5% 감소)으로 줄었고, 2025년에는 2,065억원(전년 대비 105.5% 증가)으로 2022~2025년 중 가장 큰 해가 됐다. 영업이익은 2022년 2.5억원, 2023년 51.5억원(전년 대비 1,983.2% 증가), 2024년 16억원(전년 대비 69.0% 감소), 2025년 80.1억원(전년 대비 401.4% 증가)이었다. 영업이익률은 2022년 0.2%, 2023년 3.7%, 2024년 1.6%, 2025년 3.9%로, 2025년 매출이 두 배 이상 늘었지만 마진은 3%대 중반에서 후반에 머물렀다. 지배주주 순이익은 2022년 5억원, 2023년 45.6억원, 2024년 순손실 9.3억원(적자 전환), 2025년 101억원(흑자 전환)이다. 당기순이익(비지배지분 포함)은 2025년 101억원으로 지배주주 순이익과 같은 수준이다. 분기 흐름을 보면 2025년 4분기 매출 1,091억원(전 분기 대비 293.4% 증가)은 연간 매출의 절반을 넘었고, 4분기 영업이익 114억원은 연간 영업이익 80.1억원을 웃돌았다. 2025년 3분기 매출 277억원, 영업손실 10.5억원과 비교하면 연간 실적이 4분기에 집중된 구조다. 2026년 1분기 매출은 163억원(전 분기 대비 85.0% 감소), 영업손실은 25억원으로 적자 전환했고, 2분기 매출은 400억원(전 분기 대비 145.0% 증가)으로 회복했지만 영업손실 2.9억원과 지배주주 순손실 17.3억원이 이어졌다. 2026년 3분기 매출은 366억원(전년 동기 대비 32.0% 증가), 영업손실은 7억원(전년 동기 대비 손실 축소), 지배주주 순이익은 26억원으로 흑자 전환했다. 최근 네 개 분기(2025년 4분기~2026년 3분기) 지배주주 순이익 합계는 71.2억원이며, 이 중 81.9억원이 2025년 4분기에서 나왔다. 회사는 2025년 개선 원인으로 고객사 AI 인프라 투자 확대와 원가절감을 꼽았고, 2026년 상반기 부진은 통신사업자 네트워크 투자가 하반기에 몰린 탓이라는 분석이 있다. 부채비율은 2022년 168.4%에서 2024년 80.4%까지 낮아졌다가 2025년 104.8%로 올랐다. 2025년 말 자본총계는 468억원이며 이 중 지배주주 지분은 465억원, 부채총계는 490억원이다.",
+  "en": "Annual revenue rose from KRW 112.9 billion in 2022 to KRW 138.7 billion in 2023, up 22.8%, fell to KRW 100.5 billion in 2024, down 27.5%, and then reached KRW 206.5 billion in 2025, up 105.5%, making 2025 the largest year of 2022 to 2025. Operating profit was KRW 247 million in 2022, KRW 5.15 billion in 2023 (up 1,983.2%), KRW 1.6 billion in 2024 (down 69.0%) and KRW 8.01 billion in 2025 (up 401.4%). The operating margin was 0.2% in 2022, 3.7% in 2023, 1.6% in 2024 and 3.9% in 2025, so revenue more than doubled in 2025 while margins stayed in the mid-to-high single digits. Net income attributable to controlling shareholders was KRW 505 million in 2022, KRW 4.56 billion in 2023, a net loss of KRW 926 million in 2024 that turned the year into a loss, and KRW 10.1 billion in 2025, a swing back to profit. Net income including non-controlling interests was KRW 10.1 billion in 2025, similar to the controlling-shareholder figure. The quarterly pattern shows that Q4 2025 revenue of KRW 109.1 billion, up 293.4% from the prior quarter, exceeded half of full-year revenue, and Q4 2025 operating profit of KRW 11.4 billion was larger than the full-year 2025 operating profit of KRW 8.01 billion. Against Q3 2025, when revenue was KRW 27.7 billion and the operating loss was KRW 1.05 billion, the annual result was concentrated in the fourth quarter. Q1 2026 revenue was KRW 16.3 billion, down 85.0% from the prior quarter, and the operating loss was KRW 2.5 billion, a swing back to loss. Q2 2026 revenue recovered to KRW 40 billion, up 145.0%, but the operating loss of KRW 291 million and the net loss attributable to controlling shareholders of KRW 1.73 billion continued. Q3 2026 revenue was KRW 36.6 billion, up 32.0% year on year, the operating loss narrowed to KRW 695 million, and net income attributable to controlling shareholders turned to KRW 2.6 billion. Over the last four quarters, from Q4 2025 to Q3 2026, net income attributable to controlling shareholders totaled KRW 7.12 billion, and KRW 8.19 billion of that came from Q4 2025. The company attributed the 2025 improvement to rising AI infrastructure investment by customers and cost reduction, while one analysis tied the weak first half of 2026 to telecom operators concentrating network investment in the second half. The debt-to-equity ratio fell from 168.4% in 2022 to 80.4% in 2024 and then rose to 104.8% in 2025. At the end of 2025, total equity was KRW 46.8 billion, of which KRW 46.5 billion belonged to controlling shareholders, and total liabilities were KRW 49 billion."
  },
  "industry": {
-  "ko": "한국 클라우드·AI 인프라 시장은 정부의 대규모 GPU 확보·구축 정책에 힘입어 빠르게 확대되고 있다. 관련 업계 보도에 따르면 정부는 지난해 약 1조 4,000억원 규모 GPU 확보 사업에 이어 올해도 2조 805억원 규모 GPU 구축 사업을 추진하고 있으며, 이러한 CSP들의 전략·방향성에는 정부가 추진하는 'AI 고속도로' 구축의 핵심인 GPU 확보·구축·운용지원 사업이 영향을 미치고 있다. 이 사업에는 지난해 네이버클라우드와 NHN클라우드, 카카오가 선정됐고 올해는 네이버클라우드·KT클라우드·삼성SDS·쿠팡·엘리스그룹 등이 참여하며, 대형 CSP들이 발주처로서 시장을 주도하는 구조다. 아이크래프트는 이러한 CSP들의 GPU 클러스터·데이터센터 확장 과정에서 네트워크·스토리지 등 핵심 인프라를 공급하는 벤더로 참여하고 있으며, 엔비디아 엘리트 파트너 지위를 바탕으로 AI 시장이 본격적으로 성장하기 전부터 엔비디아 기반 AI 인프라 사업을 전략적으로 육성해 왔고, DGX·HGX, AI 네트워킹, AI 스토리지, AI 플랫폼 등 AI 데이터센터 전반의 포트폴리오를 확보하고 있다는 점이 차별화 요소로 꼽힌다. 다만 시장에는 삼성SDS, KT클라우드 등 대형 시스템통합·클라우드 사업자들도 참여하고 있어 경쟁이 존재하며, GPU 아키텍처가 빠르게 세대교체(예: 엔비디아 베라 루빈 등)되는 만큼 기술 대응력과 프로젝트 실행 경험이 지속적으로 요구되는 산업이다. 산업 사이클상으로는 정부·공공 발주와 민간 CSP의 투자 확대가 겹치는 성장 국면에 있으나, 예산 배정과 개별 사업자 선정 결과에 따라 수혜의 편차가 크게 나타날 수 있는 구조다.",
-  "en": "Korea's cloud and AI infrastructure market is expanding rapidly on the back of large-scale government GPU procurement and build-out policies. Industry reporting notes that following roughly KRW 1.4 trillion in GPU procurement spending last year, the government is pursuing a GPU build-out project worth about KRW 2.08 trillion this year, and that CSP strategies are being shaped by the government's GPU procurement, build-out, and operations support project, a core pillar of its 'AI highway' initiative. Participants in this program include Naver Cloud, NHN Cloud, and Kakao selected last year, with Naver Cloud, KT Cloud, Samsung SDS, Coupang, and Elice Group participating this year, with large CSPs leading the market as project sponsors. Icraft participates as a vendor supplying core infrastructure such as networking and storage as these CSPs expand their GPU clusters and data centers, and its status as an NVIDIA Elite Partner is cited as a differentiator, noting that the company had strategically cultivated NVIDIA-based AI infrastructure business well before the AI market's rapid growth, and has secured a portfolio spanning DGX/HGX, AI networking, AI storage, and AI platforms across the full AI data center stack. Nonetheless, large system integrators and cloud operators such as Samsung SDS and KT Cloud also operate in this space, creating competition, and rapid GPU architecture generational shifts (such as NVIDIA's Vera Rubin) mean technical responsiveness and execution track record remain continuously important. Cyclically, the industry is in a growth phase where government/public procurement overlaps with private CSP investment expansion, though the extent of benefit to any single vendor can vary widely depending on budget allocation and individual contract award outcomes."
+  "ko": "국내 AI 인프라 투자는 데이터센터 증설과 GPU 기반 컴퓨팅 자원 확보가 함께 진행되면서 네트워크 장비와 구축 수요를 동시에 끌어올리고 있다. 기업모니터 기업개요 코멘트는 2026년 AI 인프라 투자로 데이터센터 수요가 늘고, AI·클라우드·디지털 전환이 IT 서비스 시장 성장을 이끌 것으로 봤다. 이는 업계 전망이며 개별 기업의 수주 규모를 보장하지 않는다. 회사의 사이클 위치는 2025년 4분기에 고객사 투자가 몰린 뒤 2026년 들어 매출이 평탄해진 국면으로 읽힌다. 2026년 1~3분기 누계 매출은 929억원으로 전년 동기 대비 4.5% 줄었다. 통신사업자 망 투자는 하반기에 집중되는 경향이 있어 분기별 매출 편차가 구조적으로 클 수 있다. 같은 IT·소프트웨어 업종의 대형 SI 기업과 비교하면 회사는 네트워크 핵심망과 AI 데이터센터 장비 구축에 특화된 편이다. 다만 계약 품목이 NVIDIA 계열 스위치 공급이어서 공급 단가와 마진은 원 제조사의 가격 정책과 조달 조건에 영향을 받을 가능성이 있다. 해외 장비 공급과 국내 구축을 묶는 구조는 고객 투자 일정과 장비 입고 시점에 따라 매출 인식 시기가 달라지는 특징을 낳는다. 업황이 호조인 시기에도 프로젝트 단위 수주에 의존하는 만큼, 경쟁 입찰과 발주처 예산 집행 속도가 분기 실적을 좌우하는 변수다.",
+  "en": "Domestic AI infrastructure investment is lifting demand for network equipment and build-outs at the same time as data center expansion and securing of GPU computing resources proceed. A company overview comment on the Kiwoom-style monitoring site, Company Monitor, said AI infrastructure investment in 2026 would increase data center demand and that AI, cloud and digital transformation would drive growth in the IT services market. This is an industry outlook and does not guarantee the order size of any single company. In cycle terms, the company's revenue flattened in 2026 after customer investment concentrated in Q4 2025. Cumulative revenue for the first nine months of 2026 was KRW 92.9 billion, down 4.5% year on year, based on preliminary results disclosed in 2026. Telecom operators tend to concentrate network investment in the second half, so quarterly revenue can be structurally uneven. Compared with large SI companies in the same IT and software sector, the company is more specialized in internet core networks and AI data center equipment build-outs. However, because the contracts involve NVIDIA-line switch supply, unit prices and margins may depend on the original manufacturer's pricing policy and procurement terms. Combining overseas equipment supply with domestic construction also means revenue timing can shift with customer investment schedules and equipment arrival dates. Even in a strong market, the company relies on project-based awards, so bidding competition and the pace of client budget execution are key variables for quarterly results."
  },
  "outlook": {
-  "ko": "2026년 하반기 실적과 관련해 확인된 사실은 6월 이후 체결된 세 건의 대형 공급계약이다. 먼저 6월 18일 공시를 통해 네이버클라우드와 2026년 NIPA NVIDIA Infiniband Network 스위치 공급 계약을 체결했으며, 계약 기간은 2026년 6월 16일부터 2027년 3월 31일까지, 계약 금액은 518억 1,817만 4,000원으로 최근 매출액의 25.09%에 해당한다. 이어 '2026년 NIPA 고성능 AI스토리지 공급 계약'으로 계약금액 1,040억원(부가가치세 별도)의 계약을 네이버클라우드와 체결했으며, 이는 2025년 말 연결기준 매출액의 50.36%에 해당하고 계약기간은 2026년 7월 3일부터 2027년 3월 31일까지이며, 대금 지급은 선금 50%, 중도금 31.31%, 잔금 18.69% 조건으로 진행된다. 또한 비엔아이엔씨와 322억 8,304만원 규모의 2026년 NIPA NVIDIA VeraRubin Network 공급 계약을 체결했으며, 이는 최근 매출액 대비 15.63%에 해당하고 계약기간은 2026년 7월23일부터 2027년 3월31일까지다. 세 계약 모두 2027년 3월 말까지 이어지는 점에서 매출 인식이 2026년 하반기부터 2027년 1분기에 걸쳐 분산될 가능성이 있다. 여기에 더해 아이크래프트는 정보통신산업진흥원(NIPA)이 추진하는 '2026년 AI컴퓨팅자원 활용기반 강화사업(GPU 확보·구축·운용지원)'을 수주했으며, 이 사업을 통해 2027년까지 AI 네트워크와 AI 스토리지 등 주요 인프라 구축을 수행하며 공공 AI 데이터센터의 안정적 운영과 효율적인 자원 활용을 지원하게 된다. 이러한 수주 파이프라인은 회사가 밝힌 계약 규모 기준으로 최근 매출액 대비 상당한 비중을 차지해 향후 실적에 긍정적으로 반영될 여지가 있으나, 앞선 분기별 실적에서 확인되듯 실제 매출 인식 시점과 속도는 프로젝트 진행 상황에 따라 유동적일 수 있다.",
-  "en": "Regarding the second half of 2026, the confirmed facts center on three large supply contracts signed since June. First, Icraft disclosed on June 18 a contract with Naver Cloud for 2026 NIPA NVIDIA Infiniband network switches, running from June 16, 2026 to March 31, 2027, valued at approximately KRW 51.82bn, or 25.09% of recent revenue. It then signed a '2026 NIPA high-performance AI storage supply contract' with Naver Cloud valued at KRW 104.0bn (excluding VAT), equivalent to 50.36% of consolidated revenue at the end of 2025, running from July 3, 2026 to March 31, 2027, with payment structured as 50% upfront, 31.31% as a progress payment, and 18.69% as final settlement. Separately, the company signed a KRW 32.28bn 2026 NIPA NVIDIA Vera Rubin network supply contract with BNI Inc., equivalent to 15.63% of recent revenue, running from July 23, 2026 to March 31, 2027. As all three contracts extend through the end of March 2027, revenue recognition could be spread across the second half of 2026 and into the first quarter of 2027. In addition, Icraft was selected for the National IT Industry Promotion Agency's (NIPA) '2026 AI Computing Resource Infrastructure Strengthening Project' (GPU procurement, build-out, and operations support), through which it will build key AI network and storage infrastructure through 2027 to support stable operation and efficient resource utilization of public AI data centers. Based on the disclosed contract values, this order pipeline represents a meaningful share of recent revenue and could support future results, though as prior quarterly patterns show, the actual timing and pace of revenue recognition may vary depending on project execution."
+  "ko": "2026년 7월 9일 공시된 계약은 데이타솔루션과의 454.2억원 규모 Infiniband 및 서버 공급 건으로, 계약 기간은 2026년 7월 8일부터 2031년 12월 31일까지다. 2026년 7월 20일 체결된 계약은 씨이랩과의 323.5억원 규모 NIPA NVIDIA Spectrum-X 공급 건으로, 2026년 7월 20일부터 2031년 12월 31일까지이며 외주생산 방식이다. 이 계약의 대금은 선금 50%, 중도금 30%, 잔금 20%로 명시됐다. 2026년 11월 16일 공시된 네이버클라우드와의 계약은 AI Factory Spectrum-X·Infiniband 스위치 공급 건으로 계약금액이 2,091억원이며, 2025년 연결 매출액의 101.26%에 해당한다. 계약 기간은 2026년 11월 13일부터 2027년 12월 31일까지이고, 대금은 각 차수별 납품 후 1개월 이내 검수를 거쳐 다섯 차례에 나눠 지급된다. 이 계약에는 계약금과 선급금이 없어 납품 전 자금 부담은 상대적으로 적다. 계약 상대방이 지정하는 법인으로 이관될 수 있고, 승계계약이 확정되면 정정공시를 하기로 했다. 세 계약의 합계 규모가 2025년 매출을 넘어서는 만큼 2026년 4분기 이후 매출 인식이 분기 실적에 어떻게 나타나는지가 핵심 확인 지점이다. 자기주식 100만주 소각은 발행주식총수를 1,360만 7,936주로 줄이는 효과가 있다. 2026 사업연도 정기보고서는 사업연도 종료 후 90일 이내인 2027년 3월 말까지 제출해야 한다. 다음 정기보고서의 영업이익률과 대형 계약의 매출 반영 규모가 다음 확인 지점이다.",
+  "en": "The contract disclosed on July 9, 2026 is an Infiniband and server supply deal worth KRW 45.42 billion with a domestic counterparty, running from July 8, 2026 to December 31, 2031. The contract signed on July 20, 2026 is a NIPA NVIDIA Spectrum-X supply deal worth KRW 32.35 billion with Ceylab, running from July 20, 2026 to December 31, 2031, under outsourced production. Its payment terms specify a 50% advance, 30% interim payment and 20% balance. The contract with NAVER Cloud disclosed on November 16, 2026 covers AI Factory Spectrum-X and Infiniband switch supply, carries a contract value of KRW 209.1 billion and equals 101.26% of 2025 consolidated revenue. It runs from November 13, 2026 to December 31, 2027, and payment is made in five installments after inspection within one month of each delivery. This contract has no down payment or advance, so the cash burden before delivery is comparatively small. The contract may be transferred to a company designated by the counterparty, and the company said it would file a correction disclosure once a succession contract is confirmed. Because the three contracts together exceed 2025 revenue, how their revenue is recognized in quarterly results from Q4 2026 onward is the central checkpoint. Cancelling 1 million treasury shares reduces total shares issued to 13,607,936. The 2026 annual report must be filed by the end of March 2027, within 90 days of fiscal year-end. The operating margin and the scale of large-contract revenue recognized in that report are the next points to verify."
  },
  "valuation_comment": {
-  "ko": "회사의 이익 흐름은 연도별로도, 분기별로도 진폭이 커서 밸류에이션 지표 역시 기준 기간에 따라 크게 달라질 수 있다는 점을 감안할 필요가 있다. 2024년 순손실에서 2025년 순이익으로 전환된 이후 2026년 상반기 들어 다시 분기 적자가 반복되고 있어, 연간 실적의 방향성은 하반기 대형 계약의 매출 인식 속도에 좌우될 가능성이 크다. 자기자본은 2022년 이후 꾸준히 늘어나는 추세를 보였으며, 이에 따라 주가와 순자산의 관계도 시기별로 변화해 왔다. 배당은 매년 소액 수준의 현금배당을 유지해 온 것으로 파악되며, 자본 확충이나 대규모 투자 필요성에 따라 배당 정책의 우선순위는 조정될 수 있다. 최근 대형 수주 소식이 이어지며 시장의 관심이 높아진 가운데, 실제 밸류에이션이 순자산 대비 프리미엄 혹은 할인 구간에 있는지는 향후 확정 실적이 누적되면서 보다 명확해질 것으로 보인다.",
-  "en": "Given the significant swings in profitability both year-to-year and quarter-to-quarter, valuation metrics for the company can differ substantially depending on the reference period chosen. After swinging from a net loss in 2024 to a net profit in 2025, the company has again posted quarterly losses in the first half of 2026, meaning the direction of full-year results is likely to hinge on the pace at which the large second-half contracts are recognized as revenue. Shareholders' equity has shown a steady upward trend since 2022, and the relationship between the share price and net asset value has shifted accordingly over time. The company appears to have maintained a modest annual cash dividend, though the priority given to dividends versus capital needs for growth investment could be adjusted going forward. With market attention rising on the back of recent large order announcements, whether the shares trade at a premium or discount to net asset value should become clearer as confirmed results accumulate over the coming quarters."
+  "ko": "주가는 2026년 들어 크게 오른 구간에 있고, 한국거래소는 최근 1년 초과 상승률이 200% 이상이라는 이유로 2026년 10월 22일 하루 투자주의종목 지정을 예고했다. 이익 기준으로 보면 2025년 4분기 지배주주 순이익 81.9억원이 최근 네 개 분기 합계 71.2억원을 웃돌아, 이 기간 이익 수준은 한 분기의 성과에 크게 기대고 있다. 2026년 1~3분기 지배주주 순이익 합계는 순손실 10.7억원이다. 따라서 이익 기준의 배수는 4분기 수준의 이익이 반복되는지에 따라 해석이 크게 달라진다. 순자산 측면에서 주가는 장부상 순자산 가치를 웃도는 구간이어서 순자산 대비 프리미엄이 붙어 있다. 배당은 2026년 3월 주주총회에서 보통주 현금배당이 확정된 수준의 소액 배당이다. 2025년 흑자 전환 이후 이익 체력이 회복된 점과 분기 손익 변동이 큰 점이 함께 밸류에이션 해석에 반영되는 요소다.",
+  "en": "The share price has risen sharply in 2026, and the Korea Exchange announced on October 21, 2026 that the stock would be designated as an investment caution issue for one day on October 22 because its excess price gain over the past year exceeded 200%. On an earnings basis, net income attributable to controlling shareholders of KRW 8.19 billion in Q4 2025 exceeded the four-quarter total of KRW 7.12 billion, so earnings over this period lean heavily on a single quarter. The same measure for Q1 to Q3 2026 totals a net loss of KRW 1.07 billion. Earnings-based multiples therefore read very differently depending on whether a Q4 2025-level profit repeats. Relative to book value, the share price sits above net asset value, which means a premium to net assets. Dividends are small cash payments approved at the March 2026 shareholder meeting. The recovery in earnings after the 2025 swing to profit and the large swings in quarterly profit both shape how valuation should be read."
  },
  "bull": [
   {
    "title": {
-    "ko": "대형 AI 인프라 수주 파이프라인 확보",
-    "en": "Sizable AI Infrastructure Order Pipeline"
+    "ko": "대형 AI 인프라 계약 잇따라",
+    "en": "Large AI infrastructure contracts keep coming"
    },
    "body": {
-    "ko": "2026년 6~7월에만 네이버클라우드를 상대로 인피니밴드 스위치(518억원), AI스토리지(1,040억원) 계약을 체결했고, 별도로 비엔아이엔씨와 베라 루빈 네트워크 계약(323억원)도 확보했다. 세 계약 모두 2027년 3월까지 이어지는 장기 계약으로, 회사가 밝힌 규모만으로도 최근 매출액의 상당 부분에 해당한다. 여기에 NIPA의 2026년 AI컴퓨팅자원 활용기반 강화사업 수주까지 더해지며 공공·민간을 아우르는 수주 기반이 넓어졌다.",
-    "en": "In June-July 2026 alone, Icraft signed an Infiniband switch contract (KRW 51.8bn) and an AI storage contract (KRW 104.0bn) with Naver Cloud, plus a separate Vera Rubin network contract (KRW 32.3bn) with BNI Inc. All three are long-duration contracts extending to March 2027, and the disclosed values alone represent a substantial share of recent revenue. This is further supplemented by the NIPA 2026 AI computing resource infrastructure project win, broadening the order base across both public and private sectors."
+    "ko": "2026년 7월 이후 공시된 공급계약은 세 건이다. 7월 9일 공시된 454.2억원 계약은 매출액 대비 21.99%, 7월 20일 체결된 323.5억원 계약은 매출액 대비 15.67%에 해당한다. 11월 16일 공시된 2,091억원 계약은 2025년 매출액 대비 101.26%로 가장 크다.",
+    "en": "Three supply contracts have been disclosed since July 2026. The KRW 45.42 billion deal equals 21.99% of 2025 revenue, the KRW 32.35 billion deal equals 15.67%, and the KRW 209.1 billion NAVER Cloud deal equals 101.26%, the largest of the three."
    }
   },
   {
    "title": {
-    "ko": "2025년 실적 턴어라운드",
-    "en": "2025 Earnings Turnaround"
+    "ko": "2025년 이익 체력 회복",
+    "en": "Earnings capacity recovered in 2025"
    },
    "body": {
-    "ko": "2025년 연결 매출은 전년 대비 105.5% 늘고 영업이익은 401.6% 증가하며 순이익이 흑자로 전환됐다. 이는 AI 인프라 투자 확대에 따른 데이터센터 시스템 수요 증가와 디지털 전환 가속화가 실적 개선을 견인한 결과로 풀이된다. 2022~2024년의 저조한 수익성과 비교하면 사업 구조가 AI 데이터센터 중심으로 재편되며 규모의 효과가 나타나기 시작했다는 점이 확인된다.",
-    "en": "Consolidated 2025 revenue rose 105.5% year-on-year and operating profit jumped 401.6%, with net income turning positive. This reflects rising data center system demand tied to expanding AI infrastructure investment and accelerating digital transformation. Relative to the weaker profitability of 2022-2024, the results suggest that scale effects are beginning to emerge as the business reorients toward AI data centers."
+    "ko": "2025년 영업이익은 80.1억원으로 전년 대비 401.4% 증가했고, 지배주주 순이익은 101억원으로 흑자 전환했다. 회사는 고객사 AI 인프라 투자 확대와 원가절감을 이익 구조 개선 요인으로 꼽았다. 영업이익률도 2024년 1.6%에서 2025년 3.9%로 높아졌다.",
+    "en": "Operating profit rose 401.4% to KRW 8.01 billion in 2025, and net income attributable to controlling shareholders swung to KRW 10.1 billion. The company cited customers' AI infrastructure investment and cost reduction as drivers. The operating margin rose from 1.6% in 2024 to 3.9% in 2025."
    }
   },
   {
    "title": {
-    "ko": "엔비디아 엘리트 파트너 지위",
-    "en": "NVIDIA Elite Partner Status"
+    "ko": "3분기 흑자 전환과 자사주 소각",
+    "en": "Q3 2026 profit swing and treasury share cancellation"
    },
    "body": {
-    "ko": "아이크래프트는 AI 시장이 본격 성장하기 전부터 엔비디아 기반 AI 인프라 사업을 육성해왔으며, DGX·HGX 서버, AI 네트워킹, AI 스토리지, AI 플랫폼을 아우르는 포트폴리오를 갖추고 있다. GPU·네트워크·스토리지를 통합해 제공할 수 있는 역량은 대형 CSP들의 데이터센터 확장 프로젝트에서 벤더로 선정될 가능성을 높이는 요인이다.",
-    "en": "Icraft has cultivated NVIDIA-based AI infrastructure business since before the AI market's rapid growth phase, and has built a portfolio spanning DGX/HGX servers, AI networking, AI storage, and AI platforms. Its ability to provide integrated GPU, network, and storage offerings enhances its prospects of being selected as a vendor for large CSPs' data center expansion projects."
+    "ko": "2026년 3분기 영업손실은 7억원으로 전년 동기보다 줄었고, 지배주주 순이익은 26억원으로 흑자 전환했다. 같은 날 이사회는 자기주식 100만주 소각을 결의했다. 소각 대상은 발행주식총수의 약 6.85%이며 자본금은 줄지 않는다.",
+    "en": "The Q3 2026 operating loss narrowed to KRW 695 million, and net income attributable to controlling shareholders turned to KRW 2.6 billion. The board also resolved to cancel 1 million treasury shares, about 6.85% of total shares issued, without reducing paid-in capital."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "분기별 실적 편차 심화",
-    "en": "Intensifying Quarter-to-Quarter Earnings Volatility"
+    "ko": "2026년 영업적자 3개 분기 이어져",
+    "en": "Operating losses persisted for three quarters of 2026"
    },
    "body": {
-    "ko": "2025년 4분기 매출은 1,091억원으로 연간 매출의 절반 이상을 차지했지만, 2026년 1분기는 163억원, 2분기는 400억원으로 큰 폭의 변동을 보였다. 통신사업자와 공공기관의 발주가 하반기에 집중되는 계절적 특성상 상반기 실적은 구조적으로 부진할 가능성이 있다. 이런 편차는 특정 시점의 실적만으로 연간 방향을 판단하기 어렵게 만든다.",
-    "en": "Fourth-quarter 2025 revenue of KRW 109.1bn accounted for more than half of annual revenue, while first-quarter 2026 revenue was KRW 16.3bn and second-quarter revenue was KRW 40.0bn, showing large swings. Given that telecom carrier and public-sector orders tend to concentrate in the second half, first-half results may be structurally weak. This volatility makes it difficult to judge the annual trajectory from any single quarter's results."
+    "ko": "2026년 1분기부터 3분기까지 영업손실이 이어졌고 누계 영업손실은 34억원대다. 1분기 매출은 163억원으로 전 분기 대비 85.0% 감소했다. 2분기 영업손실은 2.9억원으로 줄었지만 흑자 전환에는 이르지 못했다.",
+    "en": "The company posted operating losses from Q1 through Q3 2026, with a cumulative operating loss in the KRW 3 billion range. Q1 revenue fell 85.0% from the prior quarter to KRW 16.3 billion. The Q2 operating loss narrowed to KRW 291 million but did not reach profitability."
    }
   },
   {
    "title": {
-    "ko": "수주형 매출의 고객·발주처 집중",
-    "en": "Order-Based Revenue Concentrated Among Few Clients"
+    "ko": "매출 쏠림과 분기 변동성",
+    "en": "Revenue concentration and quarterly volatility"
    },
    "body": {
-    "ko": "2026년 대형 계약은 네이버클라우드 한 곳에 대한 의존도가 높고, 여기에 비엔아이엔씨나 NIPA 등 소수의 발주처가 더해지는 구조다. 특정 CSP나 정부 사업의 예산·일정 변경이 있을 경우 매출에 미치는 영향이 클 수 있다. 수주형 사업의 특성상 신규 계약이 끊기면 실적 공백이 발생할 위험도 상존한다.",
-    "en": "The 2026 large contracts are heavily concentrated with a single client, Naver Cloud, supplemented by a small number of other counterparties such as BNI Inc. and NIPA. Any change in budget or schedule at a specific CSP or government project could have an outsized impact on revenue. Given the order-driven nature of the business, there is an ongoing risk of an earnings gap if new contracts fail to materialize."
+    "ko": "2025년 4분기 매출 1,091억원은 연간 매출의 절반을 넘었다. 이후 2026년 1분기 매출은 163억원으로 급감했다. 기업모니터 기업실적 코멘트는 상반기 부진의 원인을 통신사업자 네트워크 투자가 하반기에 몰린 점으로 설명했다.",
+    "en": "Q4 2025 revenue of KRW 109.1 billion exceeded half of full-year 2025 revenue. Revenue then dropped to KRW 16.3 billion in Q1 2026. One data provider's earnings commentary attributed the weak first half to telecom operators concentrating network investment in the second half."
    }
   },
   {
    "title": {
-    "ko": "이익 안정성 부족",
-    "en": "Limited Earnings Stability"
+    "ko": "현금흐름 변동과 운전자본 부담",
+    "en": "Cash flow swings and working capital burden"
    },
    "body": {
-    "ko": "2022년에는 매출 1,129억원에 영업이익이 2.5억원에 불과해 거의 손익 균형에 머물렀고, 2024년에는 영업이익을 냈음에도 순이익은 적자를 기록했다. 부채비율도 2022년 168.4%에서 2023년 99.0%, 2024년 80.4%로 낮아졌다가 2025년 다시 104.8%로 높아지는 등 자본구조가 매년 변화하고 있다. 이는 성장 국면에서 투자·운전자본 부담이 병행되고 있음을 시사한다.",
-    "en": "In 2022, operating profit was only KRW 0.25bn on revenue of KRW 112.9bn, essentially breakeven, and in 2024 the company posted an operating profit yet still recorded a net loss. The debt ratio has also fluctuated year to year, falling from 168.4% in 2022 to 99.0% in 2023 and 80.4% in 2024 before rising again to 104.8% in 2025, suggesting that investment and working-capital burdens are accompanying the growth phase."
+    "ko": "영업활동 현금흐름은 2022년 -72.8억원, 2024년 -6.7억원으로 마이너스였고 2023년과 2025년에는 플러스였다. 네이버클라우드 계약은 계약금과 선급금이 없고 다섯 차례에 나눠 대금을 받는다. 외주생산 방식은 장비 조달 자금이 납품보다 먼저 나가는 구조를 만들 수 있다.",
+    "en": "Operating cash flow was negative in 2022 at -KRW 7.28 billion and in 2024 at -KRW 675 million, and positive in 2023 and 2025. The NAVER Cloud contract has no down payment and is paid in five installments. Outsourced production can require funding equipment procurement before delivery payments arrive."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "고객·발주처 집중 리스크",
-    "en": "Client and Project Sponsor Concentration Risk"
+    "ko": "고객·계약 집중",
+    "en": "Customer and contract concentration"
    },
    "body": {
-    "ko": "대형 계약이 네이버클라우드, 비엔아이엔씨, NIPA 등 소수 거래선에 집중돼 있어 특정 발주처의 예산 조정이나 프로젝트 일정 변경이 실적에 직접적인 영향을 줄 수 있다. 공공 사업의 경우 예산 배정이나 정책 변화에 따라 사업 규모나 시행 시기가 달라질 수 있다.",
-    "en": "Large contracts are concentrated among a small number of counterparties, including Naver Cloud, BNI Inc., and NIPA, so budget adjustments or schedule changes at any one sponsor could directly affect results. For public-sector projects, the scale and timing of implementation can shift with budget allocation or policy changes."
+    "ko": "네이버클라우드 계약은 계약상대방이 지정하는 법인으로 이관될 수 있으며, 승계 계약이 확정되면 정정공시하기로 했다. 대형 계약이 소수 고객과 프로젝트 단위로 묶여 있어 계약 주체가 바뀌면 매출 인식 일정도 달라질 수 있다. 계약 기간이 2027년 12월 31일에 끝나는 만큼 그 이후 매출 연속성은 후속 수주에 달려 있다.",
+    "en": "The NAVER Cloud contract may be transferred to a company designated by the counterparty, and the company said it would file a correction once a succession contract is confirmed. Because large contracts are tied to a few customers on a project basis, revenue timing could shift if the contracting party changes. The contract ends on December 31, 2027, so revenue continuity after that depends on follow-on orders."
    }
   },
   {
    "cat": {
-    "ko": "계절성·매출인식 타이밍 리스크",
-    "en": "Seasonality and Revenue Recognition Timing Risk"
+    "ko": "현금흐름·외주 구조",
+    "en": "Cash flow and outsourcing structure"
    },
    "body": {
-    "ko": "통신사업자 및 공공기관 발주가 하반기에 집중되는 구조적 계절성으로 인해 상반기 실적이 반복적으로 부진할 가능성이 있다. 대형 계약의 매출 인식이 프로젝트 진행률이나 인도 시점에 따라 특정 분기에 몰릴 경우 분기별 실적의 예측 가능성이 낮아진다.",
-    "en": "Structural seasonality, with telecom carrier and public-sector orders concentrated in the second half, raises the possibility of recurring first-half weakness. If revenue recognition for large contracts is concentrated in particular quarters based on project progress or delivery timing, the predictability of quarterly results is reduced."
+    "ko": "계약 대부분이 외주생산 방식이라 장비 매입 부담이 매출 인식보다 먼저 나타날 가능성이 있다. 2025년 말 부채총계는 490억원으로 자본총계 468억원을 웃돌았고, 부채비율은 104.8%다. 부채비율은 2024년 80.4%에서 2025년에 다시 올랐다.",
+    "en": "Because most contracts use outsourced production, equipment purchase costs could arrive earlier than revenue recognition. At the end of 2025, total liabilities of KRW 49 billion exceeded total equity of KRW 46.8 billion, and the debt-to-equity ratio was 104.8%. The ratio had fallen to 80.4% in 2024 before rising again in 2025."
    }
   },
   {
    "cat": {
-    "ko": "기술 변화 및 경쟁 심화 리스크",
-    "en": "Technology Change and Competitive Intensity Risk"
+    "ko": "주가 변동성·시장경보",
+    "en": "Share price volatility and market warnings"
    },
    "body": {
-    "ko": "엔비디아 GPU 아키텍처가 빠르게 세대교체되는 만큼 최신 기술 대응력을 지속적으로 갖춰야 하며, 이에 실패할 경우 경쟁력이 약화될 수 있다. 삼성SDS, KT클라우드 등 대형 시스템통합·클라우드 사업자들도 AI 인프라 시장에 참여하고 있어 벤더 선정 경쟁이 심화될 가능성이 있다.",
-    "en": "As NVIDIA GPU architectures undergo rapid generational shifts, the company must continually keep pace with the latest technology, and failure to do so could weaken its competitiveness. Large system integrators and cloud operators such as Samsung SDS and KT Cloud also participate in the AI infrastructure market, raising the potential for intensified competition in vendor selection."
+    "ko": "한국거래소는 2026년 10월 21일 공시에서 최근 1년 초과 주가상승률이 200% 이상이라는 이유로 2026년 10월 22일 하루 투자주의종목 지정을 예고했다. 투자주의 이후 투자경고 단계로 넘어가면 매매 제한이 따를 수 있고, 투자위험 단계에서는 매매거래가 정지될 수 있다. 단기간 주가 상승이 컸던 종목이라 시장 상황에 따라 주가 흐름이 크게 흔들릴 수 있다.",
+    "en": "On October 21, 2026 the Korea Exchange announced a one-day investment caution designation for October 22, citing an excess price gain of more than 200% over the past year. Escalation to investment warning can bring trading restrictions, and the investment risk stage can lead to trading suspension. Because the share price rose sharply in a short period, it can swing widely with market conditions."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중",
-    "en": "Around November 2026"
+    "ko": "2027년 2월 초",
+    "en": "Early February 2027"
    },
    "what": {
-    "ko": "3분기 실적 공시 확인 필요 — 6~7월 체결한 네이버클라우드·비엔아이엔씨 계약의 매출 인식이 3분기에 얼마나 반영되는지가 관전 포인트.",
-    "en": "Watch the third-quarter earnings disclosure to see how much of the revenue from the June-July Naver Cloud and BNI Inc. contracts has been recognized."
+    "ko": "2026년 연간 잠정 실적 발표다. 2025년 4분기 영업이익 114억원 수준의 분기 이익이 다시 나오는지, 2026년 4분기 영업손익이 흑자로 돌아서는지를 확인하는 지점이다.",
+    "en": "The preliminary 2026 full-year results. The key question is whether Q4 2026 operating profit returns to a level comparable with the KRW 11.4 billion of Q4 2025, and whether the quarter turns profitable."
    }
   },
   {
    "when": {
-    "ko": "2027년 3월 31일까지",
-    "en": "By March 31, 2027"
+    "ko": "2027년 3월 말",
+    "en": "End of March 2027"
    },
    "what": {
-    "ko": "인피니밴드 스위치, AI스토리지, 베라 루빈 네트워크 등 세 건의 2026년 대형 계약 만료 시점 — 계약 이행 완료 여부와 후속 계약 체결 여부를 확인할 필요.",
-    "en": "This marks the expiration of the three large 2026 contracts (Infiniband switches, AI storage, and Vera Rubin network) — check whether contracts are completed on schedule and whether follow-on orders emerge."
+    "ko": "2026 사업연도 사업보고서 제출 기한이다. 연간 확정 매출과 영업이익률, 자기주식 소각 반영 결과, 대형 계약의 매출 인식 규모를 정기보고서로 확인하는 지점이다.",
+    "en": "The filing deadline for the 2026 annual report. It is the point at which confirmed full-year revenue, the operating margin, the effect of the treasury share cancellation and the revenue recognized from large contracts can be checked in the regular report."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기 실적 발표 시점(2027년 초)",
-    "en": "Fourth-quarter 2026 earnings release (early 2027)"
+    "ko": "2027년 5월 중순",
+    "en": "Mid-May 2027"
    },
    "what": {
-    "ko": "2025년 4분기처럼 매출이 특정 분기에 집중되는 패턴이 재현되는지, 대형 계약의 매출 인식 속도를 확인.",
-    "en": "Check whether the pattern of revenue concentrating in a single quarter, as seen in the fourth quarter of 2025, repeats, and gauge the pace of revenue recognition from large contracts."
+    "ko": "2027년 1분기 잠정 실적 발표 시기다. 2026년 1분기 영업손실 확대 이후 대형 계약 매출이 분기 실적에 반영되는지 확인하는 지점이다.",
+    "en": "The timing of the Q1 2027 preliminary results. It is the point at which to check whether revenue from the large contracts appears in quarterly results after the operating loss widened in Q1 2026."
    }
   },
   {
    "when": {
-    "ko": "2027년까지 (NIPA AI컴퓨팅자원 활용기반 강화사업 수행 기간)",
-    "en": "Through 2027 (duration of the NIPA AI computing resource infrastructure project)"
+    "ko": "2027년 12월 31일",
+    "en": "December 31, 2027"
    },
    "what": {
-    "ko": "NIPA 공공 AI 인프라 구축 사업의 진행 상황과 추가 공공부문 수주 가능성을 지속적으로 확인.",
-    "en": "Continue monitoring progress on the NIPA public AI infrastructure project and the potential for additional public-sector order wins."
+    "ko": "네이버클라우드 계약의 종료 예정일이다. 다섯 차례 분할 납품과 검수 완료 여부, 그리고 2028년 이후를 이어 줄 후속 수주 공시가 확인 대상이다.",
+    "en": "The scheduled end date of the NAVER Cloud contract. The completion of the five installment deliveries and inspections, and follow-on order disclosures that would extend revenue beyond 2028, are the items to check."
+   }
+  },
+  {
+   "when": {
+    "ko": "시기 미정 · 수시 공시",
+    "en": "Timing undetermined, disclosed as needed"
+   },
+   "what": {
+    "ko": "네이버클라우드 계약의 승계 법인이 확정되면 회사가 정정공시하기로 했다. 계약 주체와 대금 지급 주체가 바뀌는지가 확인 대상이다.",
+    "en": "The company said it would file a correction once the succession entity for the NAVER Cloud contract is confirmed. Whether the contracting party and the payment obligor change is the item to watch."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "아이크래프트는 전통적인 네트워크 통합 사업에서 AI 데이터센터·클라우드 인프라 사업으로 축을 옮기는 과정에 있으며, 2025년 실적에서 그 성과가 뚜렷하게 나타났다. 매출은 전년 대비 두 배 이상 늘었고 영업이익과 순이익 모두 흑자로 전환됐으나, 2026년 상반기에는 계절적 요인으로 다시 적자를 기록하며 분기별 편차가 크다는 특성을 재확인시켰다. 2026년 6~7월 네이버클라우드·비엔아이엔씨와 체결한 대형 계약들과 NIPA 공공 사업 수주는 향후 매출 인식의 근거가 될 수 있는 확인된 사실이지만, 실제 실적 반영 시점과 속도는 프로젝트 진행 상황에 따라 달라질 수 있다. 회사의 자본구조와 현금흐름 역시 연도별로 변동성이 크게 나타나, 성장과 안정성을 동시에 관찰할 필요가 있다. 투자자로서는 개별 분기 실적의 등락보다는 확보된 수주 파이프라인의 실행 여부와 후속 계약 체결 여부를 지속적으로 점검하는 것이 중요해 보인다.",
-   "en": "Icraft is in the process of shifting its center of gravity from traditional network integration toward AI data center and cloud infrastructure business, and this transition showed clear results in 2025. Revenue more than doubled year-on-year, and both operating profit and net income turned positive, though the first half of 2026 saw a return to losses due to seasonal factors, reaffirming the company's characteristic quarter-to-quarter volatility. The large contracts signed with Naver Cloud and BNI Inc. in June-July 2026, along with the NIPA public-sector project win, are confirmed facts that could underpin future revenue recognition, though the actual timing and pace of that recognition will depend on project execution. The company's capital structure and cash flow have also shown considerable year-to-year variability, warranting attention to both growth and stability. For observers, tracking the execution of the secured order pipeline and the emergence of follow-on contracts appears more informative than focusing on any single quarter's swings."
+   "ko": "아이크래프트는 인터넷 핵심망 구축에서 출발해 AI 데이터센터 장비 공급과 구축으로 사업 무게중심을 옮기고 있다. 2025년에는 매출 2,065억원, 영업이익 80.1억원, 지배주주 순이익 101억원으로 연간 실적이 흑자로 전환됐다. 다만 2025년 4분기에 실적이 집중됐고, 2026년 1분기부터 3분기까지 영업손실이 이어졌다. 2026년 7월 이후 공시된 공급계약 세 건과 특히 2026년 11월 16일의 2,091억원 계약은 매출 기반을 넓히는 요인이다. 반면 계약 상대방이 특정 고객에 집중돼 있고, 계약 주체가 바뀔 수 있으며, 외주생산 구조에서 운전자본 부담이 생길 수 있다는 약세 요인도 함께 있다. 영업활동 현금흐름이 해마다 부호가 바뀌었고 부채비율이 2025년 104.8%로 올라간 점도 같은 무게로 봐야 한다. 주가는 2026년 들어 크게 오른 구간이며 투자주의종목 지정이 예고된 바 있다. 다음 확인 지점은 2027년 2월 초의 2026년 연간 잠정 실적과 2027년 3월 말 사업보고서다. 두 자료에서 대형 계약의 매출 반영 규모와 영업이익률이 확인되면 사업 구조 전환의 실체가 드러난다.",
+   "en": "iCRAFTCo began with internet core network construction and is shifting its center of gravity toward AI data center equipment supply and build-outs. In 2025 it reported revenue of KRW 206.5 billion, operating profit of KRW 8.01 billion and net income attributable to controlling shareholders of KRW 10.1 billion, a swing to profit for the year. Profit was concentrated in Q4 2025, however, and operating losses continued from Q1 through Q3 2026. The three supply contracts disclosed since July 2026, and especially the KRW 209.1 billion contract disclosed on November 16, 2026, widen the revenue base. On the other side, the counterparties are concentrated among a few customers, the contracting entity could change, and the outsourced structure may add working capital burden. Operating cash flow changed sign from year to year, and the debt-to-equity ratio rose to 104.8% in 2025, and both points deserve equal weight. The share price has risen sharply in 2026, and a caution designation was announced. The next checkpoints are the preliminary 2026 full-year results in early February 2027 and the 2026 annual report due by the end of March 2027. If those reports show how much large-contract revenue is recognized and what the operating margin is, the substance of the business shift will become clearer."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A052460&MenuYn=Y&ReportGB=B&NewMenuID=Y&stkGb=701",
-  "https://v.daum.net/v/WFxxQRFOD8",
   "http://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=052460",
-  "https://zdnet.co.kr/view/?no=20260513142605",
-  "https://www.newswire.co.kr/newsRead.php?no=1040820&sourceType=rss",
-  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=676285",
-  "https://www.cbci.co.kr/news/articleView.html?idxno=586853",
-  "https://www.edaily.co.kr/News/Read?newsId=04244326645517800",
-  "https://www.k5.co.kr/stock/052460",
-  "https://m.thinkpool.com/item/052460",
-  "https://finance.finup.co.kr/Stock/052460",
-  "https://markets.hankyung.com/stock/052460",
-  "https://www.investing.com/equities/icraft-co-ltd",
-  "https://www.edaily.co.kr/News/Read?newsId=04467366645447936",
+  "https://www.vegannews.co.kr/news/article.html?no=402581",
+  "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=713939",
+  "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=713940",
+  "https://news.nate.com/view/20260209n28142",
+  "https://m.news.nate.com/view/20260209n28133",
+  "https://www.calculator.io.kr/kor/802",
   "https://news.nate.com/view/20260511n29161",
+  "https://news.nate.com/view/20260209n27818",
   "https://v.daum.net/v/20260511184115108?f=p",
-  "https://kr.investing.com/equities/icraft-co-ltd-earnings",
-  "https://www.k5.co.kr/stock/052460/official_notice_read?sfm_idx=259696"
+  "https://www.specialtimes.co.kr/news/articleView.html?idxno=486257",
+  "https://www.specialtimes.co.kr/news/articleView.html?idxno=486238",
+  "https://news.nate.com/view/20260323n33226",
+  "https://www.g-enews.com/article/Securities/2026/11/202611170812373031923c501012_1",
+  "https://news.nate.com/view/20260721n20941",
+  "https://www.topstarnews.net/news/articleView.html?idxno=16141480",
+  "https://www.topstarnews.net/news/articleView.html?idxno=16254048",
+  "https://m.news.nate.com/view/20260710n19764"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "052460",
  "name": "아이크래프트",
  "name_en": "iCRAFTCo.,Ltd.",
@@ -223,11 +233,11 @@
   "IT·소프트웨어"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 08:21",
- "dataDate": "20260904",
+ "reportDate": "2026-11-18",
+ "reportTs": "2026-11-18 06:54",
+ "dataDate": "20261117",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-11-17",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -297,12 +307,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 29380493428,
-    "op": -721866803,
-    "np_owner": 2146305011
-   },
-   {
     "q": "2025Q3",
     "rev": 27731664273,
     "op": -1045755658,
@@ -325,28 +329,36 @@
     "rev": 40029794856,
     "op": -291419285,
     "np_owner": -1729257368
+   },
+   {
+    "q": "2026Q3",
+    "rev": 36607674571,
+    "op": -695114907,
+    "np_owner": 2598617556
    }
   ],
   "valuation": {
-   "price": 4890,
-   "mcap": 0.0714,
+   "price": 5670,
+   "mcap": 0.0828,
    "shares": 14607936,
    "total_shares": 14607936,
-   "wavg_shares": 12155510,
-   "per": 10.819,
-   "eps": 452,
-   "pbr": 1.4282,
-   "bps": 3424,
-   "roe_ttm": 13.8,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": 5423560540,
+   "wavg_shares": 12185757,
+   "per": 9.594,
+   "eps": 591,
+   "pbr": 1.5624,
+   "bps": 3629,
+   "roe_ttm": 17.3,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": 7119798192,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 1.86,
+   "eps_src": "공시",
+   "pbr_krx": 1.49,
    "bps_krx": 3826.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 100.0,
-   "div": 2.04
+   "div": 1.76
   }
- }
+ },
+ "textRules": 2
 }

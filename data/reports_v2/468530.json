@@ -1,230 +1,217 @@
 {
  "title": {
-  "ko": "신약개발로 사업축 옮기는 프로티나",
-  "en": "Proteina Shifts Its Business Axis Toward Drug Discovery"
+  "ko": "AI 항체 플랫폼, 적자 속 전임상 검증 단계",
+  "en": "AI antibody platform in preclinical validation amid losses"
  },
  "lead": {
-  "ko": "단백질 상호작용(PPI) 분석 플랫폼으로 상장한 프로티나가 항체 신약 자체개발·공동개발로 사업모델을 넓히고 있지만, 매출은 상장 당시 제시한 목표에 반복적으로 못 미치고 있고 분기 적자는 계속 확대되는 흐름을 보이고 있다.",
-  "en": "Proteina, which listed as a protein-protein interaction (PPI) analysis platform company, is expanding into proprietary and co-developed antibody drug discovery, but revenue has repeatedly fallen short of its IPO-stage targets while quarterly losses have kept widening."
+  "ko": "2025년 매출은 28.3% 늘었지만 영업손실은 확대됐고, 2026년 3분기까지 5개 분기 연속 영업손실이 이어졌다. 파이프라인 전임상 데이터와 기술이전 논의가 다음 확인 지점이다.",
+  "en": "Revenue rose 28.3% in 2025, but the operating loss widened and has continued for five straight quarters through Q3 2026, so preclinical pipeline data and licensing talks are the next checkpoints."
  },
  "keypoints": [
   {
-   "ko": "2025년 매출은 29.5억원으로 전년(23.0억원) 대비 늘었지만 영업손실은 113.7억원, 순손실은 90.1억원으로 함께 확대됐다.",
-   "en": "2025 revenue rose to KRW 2.95 billion from KRW 2.3 billion a year earlier, but operating loss widened to KRW 11.37 billion and net loss to KRW 9.01 billion."
+   "ko": "2025년 매출은 29.5억원으로 전년 대비 28.3% 증가했으나 영업손실은 114억원으로 확대됐다.",
+   "en": "Revenue reached KRW 2.95 billion in 2025, up 28.3% year on year, while the operating loss widened to KRW 11.4 billion."
   },
   {
-   "ko": "2026년 1분기 매출 1.69억원까지 줄었다가 2분기 3.49억원으로 회복됐으나, 최근 네 개 분기(2025년 3분기~2026년 2분기) 지배주주 순손실 합산은 약 120억원에 이른다.",
-   "en": "Revenue fell to KRW 168.6 million in Q1 2026 before recovering to KRW 349.3 million in Q2, while the combined net loss attributable to owners over the most recent four quarters (Q3 2025-Q2 2026) reached roughly KRW 12.0 billion."
+   "ko": "2026년 3분기 매출은 1.9억원으로 전년 동기 대비 67.8% 감소했고, 영업손실은 40.5억원이었다.",
+   "en": "Q3 2026 revenue was KRW 187 million, down 67.8% from a year earlier, and the operating loss was KRW 4.05 billion."
   },
   {
-   "ko": "회사는 상장 당시 2025년 매출 66억원, 2026년 매출 148억원을 제시했으나 실제 실적은 이를 상당히 밑돌았다는 언론 보도가 나왔다.",
-   "en": "The company projected KRW 6.6 billion in 2025 revenue and KRW 14.8 billion in 2026 revenue at IPO, but media reports say actual results have fallen well short of these targets."
+   "ko": "골관절염 후보 PRT-101과 비만·당뇨 후보 PRT1309는 모두 전임상 단계이며, 2026년 학회 발표로 데이터를 공개했다.",
+   "en": "PRT-101 for osteoarthritis and PRT1309 for obesity and diabetes are both preclinical, with new data shown at 2026 conferences."
   },
   {
-   "ko": "de novo 항체설계 신설법인 ABX 바이오사이언시스 투자, 삼성바이오에피스·서울대 공동 국책과제 등을 통해 서비스 매출 중심 모델에서 신약개발·기술이전으로 사업을 넓히고 있다.",
-   "en": "Through its investment in newly formed ABX Biosciences for de novo antibody design and a joint government-funded project with Samsung Bioepis and Seoul National University, the company is expanding from a service-revenue model toward drug discovery and licensing."
+   "ko": "2025년 9월 다국적 제약사 임상검체 분석 계약(11억 7,496만원)과 2025년 11월 국책과제 선정이 매출 기반 확장의 재료다.",
+   "en": "A KRW 1.17 billion service contract signed in September 2025 and a national R&D project selected in November 2025 expand the revenue base."
   },
   {
-   "ko": "적자 지속으로 주가수익비율은 산출되지 않으며, 주가순자산비율은 순자산 대비 프리미엄이 있는 구간에서 거래되고 있다.",
-   "en": "Due to continued losses, no price-to-earnings ratio can be calculated, while the price-to-book ratio trades at a premium to net asset value."
+   "ko": "2025년 말 부채비율은 11.9%로 부채 부담은 작은 편이지만, 2025년 영업활동 현금흐름은 -80.7억원이었다.",
+   "en": "The debt ratio was 11.9% at end-2025, but operating cash flow was -KRW 8.07 billion in 2025."
   }
  ],
  "business": {
-  "ko": "프로티나는 2015년 한국과학기술원(KAIST) 교원창업으로 설립되어 단백질 간 상호작용(PPI)을 단일분자 수준에서 분석하는 SPID 플랫폼을 상용화한 바이오테크 기업이다. SPID는 정제 없이 복잡한 시료에서도 표적 단백질을 검출할 수 있는 Pi-chip 기반 기술로, 기존 면역블롯·ELISA 방식 대비 최대 100배 높은 민감도를 확보한 것으로 소개된다. 회사의 사업은 임상 바이오마커 분석 솔루션 'PPI 패스파인더', 항체 최적화·설계 솔루션 'PPI 랜드스케이프', 기술 탑재 장비 'SPID 시스템즈' 등 세 축으로 구성된다. 그동안 매출의 중심은 패스파인더였으며, 글로벌 제약사를 포함한 다수 고객사에 기술을 제공해 2024년 전체 매출의 75%에 달하는 약 21억원을 이 부문에서 거둔 것으로 알려졌다. 경쟁구도를 보면 단백체 분석 서비스 영역에서는 메소스케일디스커버리, 퀀테릭스, 올링크, 소마로직이, 항체 개량·최적화 영역에서는 싸토리우스, 다나허가 경쟁사로 꼽힌다. 최근에는 기존 분석 서비스 중심 사업에서 자체·공동 신약개발로 사업 방향을 확장하고 있으며, 정기주주총회에서 신약개발 및 기술이전, AI 기반 신약개발 솔루션을 사업목적에 추가했다. 자체 파이프라인으로는 비만 치료를 겨냥한 장기지속형 GIPR 길항 항체 'PRT-1309'와 골관절염 치료제 후보 'PRT-101'을 보유하고 있으며, 각각 학술대회에서 전임상 데이터를 공개했다. 2026년에는 de novo 항체 설계 사업화를 위해 신설법인 ABX 바이오사이언시스에 약 34억원을 출자해 최대주주로 참여했고, 과학기술정보통신부 국책과제에서 개발 중인 AI 항체 설계 플랫폼 'AbGPT-3D'의 사업화를 이 법인이 전담한다. 이 같은 사업 재편에 따라 분석서비스·진단·공동개발·자체 파이프라인 기술이전 등으로 수익모델을 다각화하는 것이 회사의 중장기 전략이다.",
-  "en": "Proteina was founded in 2015 as a KAIST faculty spin-off and has commercialized the SPID platform, which analyzes protein-protein interactions (PPI) at the single-molecule level. SPID is based on Pi-chip technology that can detect target proteins in complex, unpurified samples, and the company states it achieves up to 100 times higher sensitivity than conventional immunoblot or ELISA methods. The company's business is organized around three pillars: the clinical biomarker analysis solution 'PPI PathFinder,' the antibody optimization and design solution 'PPI Landscape,' and the instrument-embedded product 'SPID Systems.' PathFinder has historically been the main revenue driver, generating roughly KRW 2.1 billion, or about 75% of total revenue in 2024, from multiple clients including global pharmaceutical companies. In terms of competitive positioning, Meso Scale Discovery, Quanterix, Olink, and SomaLogic are cited as competitors in proteomics analysis services, while Sartorius and Danaher are named in antibody engineering and optimization. More recently, the company has been shifting from a services-centered model toward proprietary and co-developed drug discovery, formally adding drug development, technology licensing, and AI-based drug discovery solutions to its corporate purpose at a shareholders' meeting. Its proprietary pipeline includes 'PRT-1309,' a long-acting GIPR antagonist antibody targeting obesity, and 'PRT-101,' an osteoarthritis treatment candidate, both of which have had preclinical data disclosed at scientific conferences. In 2026, the company invested roughly KRW 3.4 billion to become the largest shareholder of newly established ABX Biosciences for de novo antibody design commercialization, with that entity taking charge of commercializing the AI antibody design platform 'AbGPT-3D' developed under a Ministry of Science and ICT national R&D project. This restructuring reflects a mid-to-long-term strategy of diversifying revenue across analysis services, diagnostics, co-development, and proprietary pipeline licensing."
+  "ko": "프로티나는 단백질 간 상호작용(PPI) 데이터를 기반으로 신약 후보물질을 찾고 설계하는 AI 신약개발 기업이다. 수익의 바탕은 PPI 분석 솔루션을 제약사에 서비스로 공급하는 사업이며, 핵심 기술은 SPID 플랫폼 기반의 PPI PathFinder와 PPI Landscape다. 회사는 신약 개발 전주기를 아우르는 기술을 제공한다고 소개하고 있으며, 2025년 상반기 실적 보도에서는 임상 중개연구의 바이오마커 분석 수요가 성장 배경으로 꼽혔다. 2025년 9월에는 미국 다국적 제약사와 임상검체 분석 서비스 공급 계약(11억 7,496만원, 계약기간 2028년 12월 31일까지)을 공시했다. 같은 보도에 따르면 신규 매출원인 랜드스케이프 매출은 2025년 상반기에 1억원 남짓으로 전체 매출의 6.4% 수준이었다. 고객은 국내외 제약사로 늘고 있다는 것이 보도의 설명이다. 자체 파이프라인은 골관절염 후보 PRT-101(SOX9 단백질 표적)과 비만·당뇨 후보 PRT1309(GIPR 길항 항체)로, 모두 전임상 단계다. 2025년 11월 공시에서는 'AI 모델을 활용한 항체 바이오베터 개발 및 실증' 국책과제의 주관연구개발기관으로 선정됐다고 밝혔으며, 정부 303억원과 민간 136억원 지원이 보도됐다. 다만 두 금액의 합은 439억원으로, 보도가 표기한 470억원 규모와 차이가 있다. 경쟁 구도에서 프로티나는 항체 설계와 AI 신약 플랫폼에 초점을 두며, 같은 업종의 알테오젠(제형 기술 이전)이나 삼성바이오로직스(위탁생산)와는 수익 구조가 다르다.",
+  "en": "Proteina is an AI drug discovery company that identifies and designs drug candidates based on protein-protein interaction (PPI) data. Its revenue base is a PPI analysis solution supplied to pharmaceutical companies as a service, built on the SPID platform with its PPI PathFinder and PPI Landscape tools. The company says its technology covers the full cycle of drug development, and a 2025 first-half report cited demand for biomarker analysis in translational research as a growth driver. In September 2025 it disclosed a service supply contract with a US multinational pharmaceutical company worth KRW 1.17 billion, running through December 31, 2028. According to the same report, PPI Landscape, a newer revenue line, brought in about KRW 100 million in the first half of 2025, roughly 6.4% of revenue. Customers are described as growing in number across domestic and overseas pharmaceutical companies. Its own pipeline comprises PRT-101, an osteoarthritis candidate that targets the SOX9 protein, and PRT1309, an obesity and diabetes candidate based on GIPR antagonism; both are at the preclinical stage. In November 2025 it disclosed selection as the lead research institution for a national project on AI-assisted antibody biobetter development, with government funding of KRW 30.3 billion and private funding of KRW 13.6 billion. The two amounts sum to KRW 43.9 billion, which differs from the KRW 47 billion scale in the report. In competition, Proteina focuses on antibody design and AI drug discovery platforms, and its revenue model differs from that of Alteogen, which relies on formulation technology licensing, and Samsung Biologics, which is a contract manufacturer."
  },
  "earnings": {
-  "ko": "2025년 연결 매출액은 29.5억원으로 2024년 23.0억원 대비 증가했으나, 영업손실은 91.2억원에서 113.7억원으로, 순손실은 57.3억원에서 90.1억원으로 각각 확대됐다. 영업이익률은 2025년 -385.2%로 전년(-396.5%) 대비 소폭 개선됐지만 여전히 매출 규모를 크게 웃도는 손실 구조가 이어지고 있다. 분기별로는 2025년 3분기 매출 5.82억원에서 4분기 3.43억원, 2026년 1분기 1.69억원까지 줄었다가 2분기 3.49억원으로 다소 회복되는 등 서비스 매출 특성상 분기별 변동성이 크게 나타난다. 영업손실 역시 2025년 3분기 29.5억원에서 4분기 44.5억원, 2026년 1분기 47.1억원까지 확대된 뒤 2분기 39.6억원으로 소폭 줄었다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 지배주주 순손실 합산액은 약 120억원(11,999,933,630원)에 달해, 연간 단위로 봐도 적자 규모가 이전보다 커진 모습이다. 현금흐름 측면에서도 영업활동현금흐름이 2024년 -60.8억원에서 2025년 -80.7억원으로 유출 규모가 늘어 연구개발·인건비 지출이 매출 성장 속도를 웃돌고 있음을 보여준다. 자본총계는 2024년 157.6억원에서 2025년 283.7억원으로 늘었는데, 이는 상장 공모자금 유입 효과가 크며 부채비율은 11.9%로 낮은 수준을 유지하고 있다. 다만 상장 당시 회사가 제시했던 매출 목표와 실제 실적 간 괴리는 반복되고 있는데, 2025년 매출 목표 66억원 대비 실제 매출은 절반에도 못 미쳤고, 2026년 목표 148억원과 비교해도 상반기 매출은 목표치의 일부에 그쳤다는 보도가 나왔다. 이러한 손실 누적 속도는 향후 추가 자금조달 필요성과 연결될 수 있는 변수로 꼽힌다.",
-  "en": "Consolidated 2025 revenue rose to KRW 2.95 billion from KRW 2.3 billion in 2024, but operating loss widened from KRW 9.12 billion to KRW 11.37 billion, and net loss expanded from KRW 5.73 billion to KRW 9.01 billion. The operating margin improved slightly to -385.2% in 2025 from -396.5% the prior year, but losses still dwarf the revenue base. On a quarterly basis, revenue fell from KRW 582 million in Q3 2025 to KRW 343 million in Q4, then to KRW 169 million in Q1 2026, before recovering to KRW 349 million in Q2 2026, reflecting the volatility inherent in a service-revenue model. Operating loss similarly widened from KRW 2.95 billion in Q3 2025 to KRW 4.45 billion in Q4 and KRW 4.71 billion in Q1 2026, before narrowing slightly to KRW 3.96 billion in Q2. Over the most recent four quarters (Q3 2025 through Q2 2026), the combined net loss attributable to owners reached approximately KRW 12.0 billion (KRW 11,999,933,630), indicating that the annualized loss scale has grown larger than before. Operating cash flow also deteriorated, with outflows increasing from KRW 6.08 billion in 2024 to KRW 8.07 billion in 2025, showing that R&D and personnel spending has outpaced revenue growth. Total equity increased from KRW 15.76 billion in 2024 to KRW 28.37 billion in 2025, largely reflecting IPO proceeds, while the debt ratio remains low at 11.9%. However, the gap between IPO-stage revenue guidance and actual results has recurred: actual 2025 revenue fell short of the KRW 6.6 billion target by more than half, and reports indicate that first-half 2026 revenue represented only a fraction of the KRW 14.8 billion full-year 2026 target. The pace of accumulated losses is a variable that could be linked to future funding needs."
+  "ko": "연간 실적은 매출 성장과 적자 확대가 함께 나타난 구조다. 매출은 2024년 23억원에서 2025년 29.5억원으로 28.3% 늘었지만, 영업손실은 91.2억원에서 114억원으로 확대됐다. 영업이익률은 2024년 -396.5%에서 2025년 -385.2%로 소폭 낮아져, 매출 증가가 매출 대비 손실 비율을 일부 줄였다는 뜻이다. 지배주주 순손실은 2024년 57.3억원에서 2025년 90.1억원으로 늘어 2024년과 2025년 2년 연속 적자다. 당기순손실(비지배지분 포함)도 같은 흐름으로 2024년 57.3억원에서 2025년 90.1억원이었다. 영업손실보다 순손실 규모가 작은 것은 영업외 손익이 일부 손실을 상쇄했다는 뜻으로 읽히며, 항목별 구성은 사업보고서 손익계산서에서 따져볼 대상이다. 2024년 영업손실이 커진 배경으로 보도는 정부과제 연구비를 매출이 아닌 비용으로 회계 처리한 점을 들었다. 영업활동 현금흐름은 2024년 -60.8억원에서 2025년 -80.7억원으로 유출 규모가 커졌다. 분기 흐름을 보면 매출은 2025년 3분기 5.8억원에서 4분기 3.4억원(전 분기 대비 41.0% 감소), 2026년 1분기 1.7억원(전 분기 대비 50.9% 감소)으로 줄었다가 2분기 3.5억원(전 분기 대비 107.2% 증가)으로 반등했고, 3분기에는 1.9억원으로 다시 46.4% 줄어 전년 동기 대비 67.8% 감소했다. 영업손실은 2025년 3분기 29.5억원에서 4분기 44.5억원, 2026년 1분기 47.1억원으로 확대된 뒤 2분기 39.6억원으로 줄었고, 3분기에는 40.5억원으로 다시 늘었다. 이에 따라 2025년 3분기부터 2026년 3분기까지 5개 분기 연속 적자다. 지배주주 순손실은 2026년 3분기 29.6억원이었고, 최근 4개 분기(2025년 4분기~2026년 3분기) 합계는 124억원이다. 분기 매출이 계약 인식 시점에 따라 출렁이는 구조로 보이는 가운데, 연구개발 등 고정 성격의 비용은 매출과 무관하게 남아 있어 적자 구조가 단기간에 바뀌기는 어려워 보인다.",
+  "en": "Annual results show revenue growth alongside a larger loss. Revenue rose from KRW 2.3 billion in 2024 to KRW 2.95 billion in 2025, up 28.3%, while the operating loss widened from KRW 9.12 billion to KRW 11.4 billion. The operating margin moved from -396.5% in 2024 to -385.2% in 2025, a slight narrowing of the loss relative to sales as revenue growth offset part of the wider loss. The net loss attributable to controlling shareholders grew from KRW 5.73 billion in 2024 to KRW 9.01 billion in 2025, two straight years of losses. The net loss including noncontrolling interests followed the same path, from KRW 5.73 billion to KRW 9.01 billion. The net loss was smaller than the operating loss in both years, which suggests non-operating items offset part of the operating loss; the breakdown should be checked in the income statement of the annual report. An early 2025 report attributed the 2024 operating loss widening partly to government-funded research costs being booked as expenses rather than recognized against revenue. Operating cash flow went from -KRW 6.08 billion in 2024 to -KRW 8.07 billion in 2025. On a quarterly basis, revenue fell from KRW 582 million in Q3 2025 to KRW 343 million in Q4 2025 (down 41.0% quarter on quarter) and to KRW 169 million in Q1 2026 (down 50.9%), then rebounded to KRW 349 million in Q2 2026 (up 107.2%) before dropping to KRW 187 million in Q3 2026 (down 46.4% quarter on quarter and down 67.8% year on year). The operating loss widened from KRW 2.95 billion in Q3 2025 to KRW 4.45 billion in Q4 2025 and KRW 4.71 billion in Q1 2026, narrowed to KRW 3.96 billion in Q2 2026, and widened again to KRW 4.05 billion in Q3 2026. The company has posted operating losses for five consecutive quarters from Q3 2025 through Q3 2026. The net loss attributable to controlling shareholders was KRW 2.96 billion in Q3 2026, and the last four quarters total KRW 12.4 billion. Quarterly revenue appears to move with the timing of contract recognition, while fixed-type research costs remain, so the loss structure is unlikely to change quickly."
  },
  "industry": {
-  "ko": "PPI 분석·바이오마커 시장은 글로벌 제약사들이 신약 후보물질의 표적 결합력을 정량화하고 임상 성공률을 높이기 위한 투자를 늘리는 분야로, 프로티나는 이 시장에서 메소스케일디스커버리, 퀀테릭스, 올링크, 소마로직 등과 경쟁한다. 항체 최적화·설계 영역에서는 싸토리우스, 다나허 등 대형 장비·서비스 기업과, AI 신약개발 영역에서는 빅햇바이오사이언스, 네뷸라 등 스타트업과 경쟁 구도를 형성하고 있다. 최근 글로벌 바이오 산업은 AI 기반 항체·단백질 설계 기술 경쟁이 심화되고 있으며, 고품질 PPI 데이터 확보가 AI 모델 학습의 핵심 자원으로 부각되고 있다. 회사는 3명의 연구자가 매주 3천~5천 개의 항체를 분석할 수 있는 처리 속도를 갖췄다고 밝혔는데, 이는 100명의 연구자가 2주간 500개를 분석하는 해외 경쟁사 대비 빠른 속도라고 설명했다. 비만 치료제 시장에서는 GLP-1 계열 약물의 한계로 지적되는 체중 재증가 억제가 새로운 경쟁축으로 떠오르고 있으며, 회사의 PRT-1309도 이 지점을 겨냥하고 있다. 국내에서는 삼성바이오에피스 등 대형 바이오시밀러·신약 기업과의 공동 국책과제 참여를 통해 AI 항체 설계 생태계에 진입하는 모습이다. 다만 이 시장은 아직 임상적 검증과 대형 기술이전 사례가 제한적인 초기 단계로, 국내외 다수 플레이어가 유사한 사업모델을 추진하고 있어 경쟁 심화가 예상된다.",
-  "en": "The PPI analysis and biomarker market is one where global pharmaceutical companies are increasing investment to quantify target binding of drug candidates and improve clinical success rates, and Proteina competes here against Meso Scale Discovery, Quanterix, Olink, and SomaLogic. In antibody optimization and design, it competes with large instrument and service companies such as Sartorius and Danaher, and in AI-driven drug discovery, with startups such as BigHat Biosciences and Nebula. The global biotech industry has recently seen intensifying competition in AI-based antibody and protein design, with high-quality PPI data emerging as a key resource for training AI models. The company states that three researchers using its platform can analyze 3,000 to 5,000 antibodies per week, which it describes as faster than a peer company that requires 100 researchers two weeks to analyze 500 antibodies. In the obesity treatment market, suppressing weight regain—a limitation often cited for GLP-1 class drugs—is emerging as a new competitive axis, and the company's PRT-1309 is aimed at this point. Domestically, the company is entering the AI antibody design ecosystem through participation in a joint national R&D project with a major biosimilar and drug developer, Samsung Bioepis. However, this market remains at an early stage with limited cases of clinical validation and large-scale licensing deals, and competition is expected to intensify as multiple domestic and international players pursue similar business models."
+  "ko": "전방 수요는 두 갈래다. 첫째는 기존 항체 의약품의 효능과 투여 편의성을 개선하는 바이오베터 개발 수요이며, 프로티나의 국책과제와 항체 설계 사업이 여기에 걸쳐 있다. 둘째는 제약사의 임상 중개연구에서 쓰이는 바이오마커 분석 수요로, 2025년 상반기 실적 보도에서 성장 배경으로 꼽혔다. 기업 개요 정보 사이트는 글로벌 단백체 시장이 2030년 116조원 규모로 예상된다고 소개했으나, 이는 외부 전망치로 회사 매출과 직접 연결되지는 않는다. 골관절염 시장에서는 근본적 치료제(DMOAD)로 승인된 약물이 아직 없다는 점이 PRT-101의 위치를 정한다. 임상 3상 단계 선두 약물은 무릎 관절 공간 감소를 늦추는 부분 효과가 보고됐지만, 통증 완화 효과가 미미하고 중증 환자군에서 효능이 낮다는 한계가 지적됐다. 비만·당뇨 시장은 작용제 중심에서 억제 원리 쪽으로 기전이 넓어지는 흐름이다. 미국 암젠의 마리타이드도 같은 계열로 임상 개발이 진행 중이라고 2026년 5월 보도는 전했다. PRT1309가 GIPR 길항 기전으로 이 계열 경쟁에 들어간다는 점에서 전임상 데이터의 차별성이 핵심 변수다. 경쟁 포지션은 두 축으로 나뉜다. PPI 빅데이터와 AI 설계를 결합한 플랫폼이라는 점이 차별점이지만, 임상 진입 실적은 아직 없다. 매출 규모는 업종 안에서 소형이며, 위탁생산이나 기술이전 수익이 중심인 국내 바이오·제약 상장사와 사업 구조가 다르다.",
+  "en": "Demand from downstream markets has two sides. The first is demand for biobetters, which are improved versions of existing antibody drugs in efficacy and ease of administration, and Proteina's national project and antibody design work sit in this area. The second is demand for biomarker analysis used in translational research by pharmaceutical companies, which a 2025 first-half report cited as a growth driver. A company profile site projected the global proteomics market at KRW 116 trillion by 2030, but this is an external forecast and is not directly linked to the company's revenue. In osteoarthritis, no disease-modifying drug (DMOAD) has been approved globally, which defines the position of PRT-101. The leading phase 3 candidate reportedly showed a partial effect in slowing joint space loss in the knee, but reports noted limited pain relief and low efficacy in severe patients. In obesity and diabetes, the mechanism focus is widening from agonists toward inhibitory approaches, and Amgen's MariTide is in clinical development in the same class, according to a May 2026 report. Because PRT1309 is a GIPR antagonist entering this competitive class, preclinical differentiation is a key variable. Competitive positioning has two axes. The combination of PPI big data and AI design is the differentiator, but the company has no clinical entry yet. Its revenue scale is small within the sector, and its business structure differs from domestic listed biopharma companies whose earnings centre on contract manufacturing or technology licensing."
  },
  "outlook": {
-  "ko": "회사는 상장 당시 PPI 랜드스케이프 사업 본격화를 통해 2027년 흑자전환을 목표로 제시했다. 이를 위해 신약개발 역량 강화에 무게를 두는 방향으로 사업 전략을 재정비하고 있으며, 실제로 정관에 신약개발·기술이전·AI 신약개발 솔루션 사업을 추가했다. 자체 파이프라인인 PRT-1309(GIPR 길항 항체)와 PRT-101(골관절염 치료제 후보)은 각각 미국당뇨병학회(ADA), 유럽류마티스학회(EULAR) 학술대회에서 전임상 데이터를 공개하며 외부 검증 단계를 밟고 있다. 2026년에는 de novo 항체 설계 사업화를 위해 ABX 바이오사이언시스에 최대주주로 출자했으며, 과기정통부 국책과제 성과인 AI 설계 플랫폼 AbGPT-3D의 상업화를 이 법인이 담당한다. 삼성바이오에피스·서울대와 공동 수행하는 470억원 규모 국책과제를 통해 2027년까지 AI로 설계한 항체 신약 후보 10개를 개발하고 이 중 1개는 임상 1상 IND 제출을 목표로 하고 있다. 미국 내 CLIA랩 인수를 통한 베네토클락스 동반진단 제품 출시도 2026년 목표로 제시된 계획인데, 진행 상황에 대한 구체적 공시는 아직 확인되지 않고 있다. 다만 상장 당시 제시했던 매출 목표(2025년 66억원, 2026년 148억원)는 실제 실적과 상당한 괴리를 보이고 있어, 신약개발 피벗의 성과가 가시화되는 시점과 속도가 향후 실적 전망의 핵심 변수가 될 것으로 보인다.",
-  "en": "At its IPO, the company presented a goal of achieving profitability by 2027 through the full-scale commercialization of the PPI Landscape business. To that end, it is realigning strategy toward strengthening drug discovery capabilities and has formally added drug development, technology licensing, and AI-based drug discovery solutions to its articles of incorporation. Its proprietary pipeline candidates PRT-1309 (a GIPR antagonist antibody) and PRT-101 (an osteoarthritis treatment candidate) are undergoing external validation, having had preclinical data presented at the American Diabetes Association (ADA) and European Alliance of Associations for Rheumatology (EULAR) conferences, respectively. In 2026, the company became the largest shareholder of ABX Biosciences to commercialize de novo antibody design, with that entity handling commercialization of the AI design platform AbGPT-3D, a deliverable of a Ministry of Science and ICT national project. Through a KRW 47 billion joint national R&D project with Samsung Bioepis and Seoul National University, the goal is to develop 10 AI-designed antibody drug candidates by 2027, with one targeted for a Phase 1 IND submission. The launch of a Venetoclax companion diagnostic product via acquisition of a U.S. CLIA-certified lab was also presented as a 2026 target, though specific disclosures on its progress have not yet been confirmed. However, the revenue targets presented at IPO (KRW 6.6 billion for 2025 and KRW 14.8 billion for 2026) have shown considerable gaps versus actual results, making the timing and pace at which the drug discovery pivot's results materialize a key variable for future earnings visibility."
+  "ko": "회사가 밝힌 목표는 2027년 흑자전환이다. 이 목표는 2025년 11월 보도에서 제시된 것이며, 2027년 실적으로 검증될 수 있다. 2025년 12월 신영증권 보고서는 회사 목표로 2027년 말까지 AI로 설계한 항체신약 후보 10개 개발, 그중 1개 임상시험계획(IND) 신청, 3개 비임상 진입을 소개했다. PRT1309는 2026년 연말 영장류 모델 검증을 목표로 하며, 2027년 내 IND 신청을 추진한다고 2026년 5월 회사가 밝혔다. ADA 2026 구두 발표 선정은 학계 검증 신호로 쓰일 수 있다. PRT-101은 2026년 4월 OARSI 2026에서 초기 전임상 데이터를 공개했고, 6월 EULAR 2026에서는 임상 3상 후보 로어시비빈트와의 직접 비교 비임상 결과를 발표했다. 회사는 후속 임상 개발과 기술이전 논의를 본격화하겠다고 밝혔다. 2026년 6월 BIO USA 2026에서는 글로벌 제약사와 파트너링 미팅을 계획했다고 회사가 밝혔다. 국책과제는 최종 후보물질의 IND 승인 신청까지를 목표로 하며, 사업 기간 동안 정부와 민간 지원이 이어진다. 2026년 3월 주총에서는 신약 개발 및 기술의 라이선스 아웃·라이선스 인과 AI 기반 신약개발 솔루션을 정관상 사업목적에 추가했다. 2028년 12월 31일까지인 임상검체 분석 계약은 매출 기반을 일부 뒷받침하는 요소다. 다음 확인 지점은 2026년 사업보고서의 연간 영업손실과 2027년 흑자전환 목표의 진행 여부다.",
+  "en": "The company has set a target of returning to profit in 2027. This target was presented in a November 2025 report and can be tested against 2027 results. A December 2025 report from Shinyoung Securities described the company's goal of developing 10 AI-designed antibody drug candidates by the end of 2027, filing an IND application for one, and entering preclinical stage for three. For PRT1309, the company said in May 2026 that it targets validation in a primate model by year-end 2026 and plans to pursue an IND filing within 2027. Selection for an oral presentation at ADA 2026 may serve as an early academic validation signal. PRT-101 presented early preclinical data at OARSI 2026 in April 2026 and then direct comparative preclinical results against the phase 3 candidate lorecivivint at EULAR 2026 in June 2026. The company said it will move forward with follow-on clinical development and licensing discussions. At BIO USA 2026 in June 2026, the company said it planned partnering meetings with global pharmaceutical companies. The national project aims at an IND application for the final candidate, and government and private funding are expected to continue over the project period. At the March 2026 shareholder meeting, the company added drug licensing out and in, and AI-based drug discovery solutions, to its articles of incorporation. The clinical sample analysis contract running through December 31, 2028 provides some visibility on revenue. The next checkpoint is the annual operating loss in the 2026 annual report and progress toward the 2027 profitability target."
  },
  "valuation_comment": {
-  "ko": "프로티나는 상장 이후 아직 순이익을 내지 못하고 있어 주가수익비율(PER)을 산출할 수 없는 구간에 머물러 있다. 반면 주가순자산비율(PBR)은 상장 초기 대비 크게 늘어난 자기자본 규모에도 불구하고 순자산 대비 프리미엄이 상당한 수준에서 거래되는 모습이다. 이는 시장이 현재의 매출·손익보다는 신약개발 피벗과 국책과제·글로벌 파트너십 등 미래 성장 스토리에 더 큰 가치를 부여하고 있음을 시사한다. 배당은 지급되지 않고 있어 주주환원보다는 연구개발 투자와 사업 확장에 자금이 우선 배분되는 구조다. 다년간 실적 흐름을 보면 매출은 완만하게 늘고 있지만 손실 규모도 함께 커지는 추세가 이어지고 있어, 적자에서 흑자로의 전환 시점이 확인되기 전까지는 밸류에이션에 대한 시장의 평가가 사업 성과 뉴스에 민감하게 반응할 수 있다.",
-  "en": "Proteina has yet to generate net income since its listing, leaving it in a range where a price-to-earnings ratio cannot be calculated. By contrast, its price-to-book ratio trades at a substantial premium to net asset value, even though total equity has grown considerably since the early listing period. This suggests the market is placing greater weight on the drug discovery pivot, national R&D projects, and global partnerships as a future growth story rather than on current revenue and earnings. No dividends are being paid, indicating that capital is being prioritized toward R&D investment and business expansion rather than shareholder returns. Looking at the multi-year earnings trend, revenue has grown modestly while loss size has also continued to expand, meaning that until a clear turn from loss to profit is confirmed, the market's valuation assessment is likely to remain sensitive to business-performance news."
+  "ko": "최근 네 개 분기 기준으로 순손실이 이어져 주가수익비율은 산출되지 않으며, 이익을 기준으로 한 배수 비교는 성립하지 않는다. 대신 자본 기준으로 보면 주가순자산비율이 순자산 대비 큰 프리미엄 구간에 있어, 현재 수익보다 파이프라인과 플랫폼의 성장성에 가치가 실려 있다는 해석이 나온다. 2025년 말 자본총계는 284억원이고 부채총계는 33.8억원이어서 재무 부담은 작지만, 영업활동 현금흐름 유출이 이어지면 자본 여력은 점차 소모되는 구조다. 배당은 지급하지 않는 상태여서 배당 기준의 비교는 성립하지 않는다. 이익 기반 배수로는 같은 업종 상장사와 직접 비교하기 어렵고, 파이프라인 데이터와 기술이전 여부에 따라 평가 근거가 달라지는 구조다. 적자 기간이 이어진 만큼 배수보다 손실 추이와 자본 변화가 해석의 중심이 된다.",
+  "en": "Because the company has posted net losses over the last four quarters, a price-to-earnings multiple cannot be calculated, and comparisons on earnings-based multiples do not apply. On a book-value basis, the price-to-book ratio sits in a range with a large premium over net assets, which suggests the market is placing value on the pipeline and platform growth rather than current earnings. Total equity was KRW 28.4 billion at end-2025 and total liabilities were KRW 3.38 billion, so the financial burden is small, but if operating cash outflows continue, the capacity of equity will be gradually consumed. The company pays no dividend, so comparisons on dividend yield do not apply. Against listed peers in the same sector, direct comparison on earnings-based multiples is difficult, and the basis for valuation shifts with pipeline data and whether licensing deals are concluded. Because the operating losses have persisted, the trend of losses and changes in equity matter more than multiples for interpreting the valuation."
  },
  "bull": [
   {
    "title": {
-    "ko": "플랫폼 기술력과 글로벌 고객 레퍼런스",
-    "en": "Platform Technology and Global Client Track Record"
+    "ko": "전임상 데이터 축적",
+    "en": "Preclinical data accumulating"
    },
    "body": {
-    "ko": "SPID 플랫폼은 정제 없이 표적단백질을 검출할 수 있고 기존 방식보다 최대 100배 높은 민감도를 확보했다고 회사는 설명한다. 처리 속도 면에서도 소수 인력으로 대량 항체 분석이 가능하다는 점을 경쟁 우위로 제시하고 있다. 다국적 제약사와 임상검체 분석 서비스 계약을 다수 체결한 트랙레코드도 이 기술력을 뒷받침하는 근거로 꼽힌다.",
-    "en": "The company states that its SPID platform can detect target proteins without purification and achieves up to 100 times higher sensitivity than conventional methods. In terms of throughput, it also presents the ability to analyze large numbers of antibodies with a small team as a competitive advantage. A track record of multiple clinical sample analysis service contracts with multinational pharmaceutical companies is cited as supporting evidence for this technology."
+    "ko": "PRT-101은 2026년 4월 OARSI 2026에서 초기 전임상 데이터를 공개했고, 6월 EULAR 2026에서는 임상 3상 단계 후보물질 로어시비빈트와의 직접 비교 결과를 발표했다. PRT1309는 ADA 2026 구두 발표 과제로 선정됐으며, 전체 제출 연구 중 상위 5% 미만에만 주어지는 기회로 알려졌다. 학회 검증이 쌓일수록 기술이전 논의의 근거도 늘어나는 구조다.",
+    "en": "PRT-101 presented early preclinical data at OARSI 2026 in April 2026, then direct comparison results against the phase 3 candidate lorecivivint at EULAR 2026 in June. PRT1309 was selected for an oral presentation at ADA 2026, an opportunity reported to go to fewer than 5% of submitted studies. As conference validation builds up, the basis for licensing talks also grows."
    }
   },
   {
    "title": {
-    "ko": "신약개발·진단으로 수익모델 다각화",
-    "en": "Revenue Model Diversification Into Drug Discovery and Diagnostics"
+    "ko": "매출원과 국책과제 확대",
+    "en": "Wider revenue sources and national project"
    },
    "body": {
-    "ko": "자체 파이프라인(PRT-1309, PRT-101)과 de novo 항체 설계 신설법인 ABX 투자를 통해 서비스 매출을 넘어 기술이전·공동개발·진단 매출까지 사업영역을 넓히고 있다. 삼성바이오에피스·서울대와의 470억원 규모 국책과제 참여는 연구비 지원과 함께 대형 파트너와의 협업 경험을 축적할 기회로 볼 수 있다.",
-    "en": "Through its proprietary pipeline (PRT-1309, PRT-101) and investment in newly formed ABX Biosciences for de novo antibody design, the company is expanding beyond service revenue into technology licensing, co-development, and diagnostics revenue. Participation in the KRW 47 billion national R&D project with Samsung Bioepis and Seoul National University can be viewed as an opportunity to secure research funding while accumulating collaborative experience with major partners."
+    "ko": "2025년 9월 공시된 임상검체 분석 계약은 11억 7,496만원 규모이며 계약기간이 2028년 12월 31일까지다. 2025년 11월에는 정부 303억원과 민간 136억원 지원이 보도된 국책과제의 주관연구개발기관으로 선정됐다. 랜드스케이프 매출이 신규로 가세하면서 매출원이 PPI 분석 서비스 밖으로도 넓어지고 있다.",
+    "en": "A clinical sample analysis contract disclosed in September 2025 is worth KRW 1.17 billion and runs through December 31, 2028. In November 2025 the company was selected as lead research institution for a national project with reported government funding of KRW 30.3 billion and private funding of KRW 13.6 billion. With PPI Landscape revenue newly added, revenue sources are extending beyond PPI analysis services."
    }
   },
   {
    "title": {
-    "ko": "상장 자금 유입에 따른 낮은 재무부담",
-    "en": "Low Financial Burden Following IPO Capital Inflow"
+    "ko": "재무 부담이 작은 구조",
+    "en": "Light balance sheet burden"
    },
    "body": {
-    "ko": "공모자금 유입으로 자본총계가 2024년 157.6억원에서 2025년 283.7억원으로 늘었고 부채비율은 11.9%로 낮은 수준을 유지하고 있다. 이는 당장의 재무적 압박 없이 연구개발과 사업 재편을 이어갈 수 있는 여력으로 볼 수 있다.",
-    "en": "IPO proceeds increased total equity from KRW 15.76 billion in 2024 to KRW 28.37 billion in 2025, while the debt ratio remains low at 11.9%. This can be viewed as giving the company room to continue R&D and business restructuring without immediate financial pressure."
+    "ko": "2025년 말 부채총계는 33.8억원이고 부채비율은 11.9%로 2024년 14.0%에서 낮아졌다. 자본총계 284억원이 모두 지배주주 지분이어서 자본 구조가 단순하다. 2025년 7월 코스닥 상장으로 조달한 자금은 PPI 빅데이터 플랫폼 적용 범위 확대와 글로벌 협력에 쓰겠다는 계획이다.",
+    "en": "Total liabilities were KRW 3.38 billion at end-2025, and the debt ratio fell to 11.9% from 14.0% in 2024. Total equity of KRW 28.4 billion is entirely attributable to controlling shareholders, which keeps the capital structure simple. The company said proceeds from its July 2025 KOSDAQ listing would go toward expanding its PPI big data platform and global collaborations."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "반복되는 매출 목표 미달",
-    "en": "Recurring Shortfalls Against Revenue Targets"
+    "ko": "적자 지속과 현금 유출",
+    "en": "Persistent losses and cash outflow"
    },
    "body": {
-    "ko": "2025년 매출 목표 66억원 대비 실제 매출은 절반에도 못 미쳤고, 2026년 목표 148억원과 비교해도 상반기 매출은 목표치의 일부에 그친 것으로 보도됐다. 서비스 매출이 고객사 임상·연구 일정에 좌우되는 구조적 특성이 반복적인 추정치 괴리의 배경으로 지목된다.",
-    "en": "Actual 2025 revenue fell short of the KRW 6.6 billion target by more than half, and reports indicate first-half 2026 revenue represented only a fraction of the KRW 14.8 billion full-year target. The structural characteristic of service revenue being dependent on client clinical and research schedules is cited as the background for these recurring forecast gaps."
+    "ko": "2026년 3분기까지 5개 분기 연속 영업손실이 이어졌고, 최근 4개 분기 지배주주 순손실 합계는 124억원이다. 2025년 영업활동 현금흐름은 -80.7억원으로 2024년보다 유출이 커졌다. 영업이익률이 -385.2%인 상태에서 매출 규모가 손실을 따라잡지 못하는 구조가 이어지고 있다.",
+    "en": "Operating losses have continued for five consecutive quarters through Q3 2026, and the net loss attributable to controlling shareholders over the last four quarters totals KRW 12.4 billion. Operating cash flow was -KRW 8.07 billion in 2025, a larger outflow than in 2024. With an operating margin of -385.2%, revenue has not yet caught up with the cost base."
    }
   },
   {
    "title": {
-    "ko": "확대되는 적자와 현금소진",
-    "en": "Widening Losses and Cash Burn"
+    "ko": "분기 매출의 변동성",
+    "en": "Volatile quarterly revenue"
    },
    "body": {
-    "ko": "영업손실은 2024년 91.2억원에서 2025년 113.7억원으로, 영업활동현금흐름 유출은 60.8억원에서 80.7억원으로 각각 확대됐다. 최근 네 개 분기 지배주주 순손실 합산도 약 120억원에 달해 손실 축소의 뚜렷한 신호는 아직 확인되지 않는다.",
-    "en": "Operating loss widened from KRW 9.12 billion in 2024 to KRW 11.37 billion in 2025, and operating cash outflow expanded from KRW 6.08 billion to KRW 8.07 billion. The combined net loss attributable to owners over the most recent four quarters also reached roughly KRW 12.0 billion, and no clear sign of loss reduction has yet been confirmed."
+    "ko": "2026년 3분기 매출은 1.9억원으로 전년 동기 대비 67.8% 감소했다. 2025년 3분기 5.8억원 이후 분기 매출은 2026년 1분기 1.7억원에서 2분기 3.5억원 사이를 오갔다. 계약 매출이 특정 시점에 몰리는 구조로 보여 분기 실적의 예측 가능성은 낮은 편이다.",
+    "en": "Q3 2026 revenue was KRW 187 million, down 67.8% from a year earlier. After KRW 582 million in Q3 2025, quarterly revenue moved between KRW 169 million in Q1 2026 and KRW 349 million in Q2 2026. Because contract revenue appears to land at specific points in time, quarterly results are relatively hard to predict."
    }
   },
   {
    "title": {
-    "ko": "자금조달·희석 우려",
-    "en": "Funding and Dilution Concerns"
+    "ko": "임상 입증이 남은 과제",
+    "en": "Clinical proof still outstanding"
    },
    "body": {
-    "ko": "회사가 메자닌 발행 여력을 확대하고 정관에 M&A 목적을 추가한 점은 향후 추가 자금조달이나 지분 희석 가능성을 내포한다. 상장 후 보호예수 해제 물량에 따른 오버행 우려도 과거 증권가 코멘트에서 제기된 바 있다.",
-    "en": "The company's expansion of its mezzanine issuance capacity and addition of an M&A purpose to its articles of incorporation implies possible future fundraising or equity dilution. Concerns about overhang from lock-up releases after listing have also been raised in past brokerage commentary."
+    "ko": "PRT-101과 PRT1309는 모두 전임상 단계이며 PRT1309의 IND 신청은 2027년 내 추진 목표다. 씽크풀 보도는 AI 모델로 실제 신약을 설계하고 이를 임상으로 입증하는 것이 다음 과제라고 짚었다. 학회 발표와 비교 데이터가 임상 성공을 보장하지는 않아 개발 리스크는 여전히 남아 있다.",
+    "en": "PRT-101 and PRT1309 are both preclinical, and the IND filing for PRT1309 is targeted within 2027. A Thinkpool report pointed out that the next task is to show, in the clinic, that AI-designed drugs actually work. Conference presentations and comparative data do not guarantee clinical success, so development risk remains."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "실적/사업모델 리스크",
-    "en": "Earnings/Business Model Risk"
+    "ko": "개발 일정과 임상 진입",
+    "en": "Development timeline and clinical entry"
    },
    "body": {
-    "ko": "매출이 소수 대형 고객사와의 계약 일정에 크게 의존하는 구조여서 분기별 변동성이 크고, 상장 당시 제시한 매출 가이던스와의 괴리가 반복되고 있다. 신약개발 피벗이 본격화될 경우 기존 서비스 매출과의 우선순위 조정에 따른 매출 인식 지연 가능성도 배제할 수 없다.",
-    "en": "Revenue is heavily dependent on contract schedules with a small number of large clients, resulting in significant quarterly volatility and recurring gaps versus IPO-stage guidance. As the drug discovery pivot progresses, delays in revenue recognition from reprioritization away from existing service revenue cannot be ruled out."
+    "ko": "두 파이프라인 모두 전임상이어서 IND 신청과 임상 진입 일정이 늦어질 가능성이 있다. 목표 시점은 회사 발표 기준이며, 영장류 검증 결과에 따라 일정이 달라질 수 있다. 학회 발표 데이터가 임상 결과로 이어지지 않을 가능성도 있어 이 역시 위험 요인이다.",
+    "en": "Both pipeline assets are preclinical, so the timing of IND filings and clinical entry could slip. The targets are company-stated and could change depending on primate model validation results. Conference data may not translate into clinical results, which is also a risk factor."
    }
   },
   {
    "cat": {
-    "ko": "자금조달·재무 리스크",
-    "en": "Funding and Financial Risk"
+    "ko": "매출 집중과 회계 처리",
+    "en": "Revenue concentration and accounting treatment"
    },
    "body": {
-    "ko": "매출 대비 큰 규모의 연구개발·인건비 지출이 이어지며 영업활동현금흐름 유출이 매년 확대되고 있다. 메자닌 발행 한도 확대 등 자본조달 옵션 정비는 향후 지분 희석 가능성을 배제할 수 없음을 시사한다.",
-    "en": "R&D and personnel spending, large relative to revenue, has continued, with operating cash outflow expanding each year. The expansion of mezzanine issuance capacity suggests future equity dilution possibilities cannot be ruled out."
+    "ko": "정부 과제 연구비를 매출이 아닌 비용으로 처리한 회계 방식이 2024년 영업손실 확대에 영향을 준 것으로 보도됐다. 매출이 특정 계약과 과제에 묶여 있어 한 건의 계약 지연이나 수익 인식 시점 변경이 분기 실적을 크게 흔들 수 있다.",
+    "en": "Accounting for government-funded research costs as expenses rather than against revenue was reported to have contributed to the wider 2024 operating loss. Because revenue is tied to specific contracts and projects, a single contract delay or a change in revenue recognition timing could shift quarterly results significantly."
    }
   },
   {
    "cat": {
-    "ko": "파이프라인·사업전환 리스크",
-    "en": "Pipeline and Business Transition Risk"
+    "ko": "주식 수 증가와 주주 구성",
+    "en": "Share count increase and shareholder structure"
    },
    "body": {
-    "ko": "자체 항체 신약 파이프라인(PRT-1309, PRT-101)은 아직 전임상 단계에 머물러 있어 임상 진입, 기술이전 성사 여부가 불확실하다. 미국 CLIA랩 인수를 통한 진단사업 진출 등 기존에 제시된 계획의 실행 시점도 아직 구체적으로 확인되지 않았다.",
-    "en": "The proprietary antibody drug pipeline (PRT-1309, PRT-101) remains at the preclinical stage, leaving clinical entry and licensing outcomes uncertain. The execution timeline for previously announced plans, such as entering the diagnostics business through a U.S. CLIA lab acquisition, has also not yet been concretely confirmed."
+    "ko": "2026년 4월 27일 주식매수선택권이 행사되면서 최병산 이사가 3,343주를 추가 취득했고, 이홍원 상무의 보유 주식은 2025년 11월 27일 대비 6만 8,000주 증가했다고 공시됐다. 최대주주 등 지분율은 2025년 12월 기준 22.81%다. 주식매수선택권 행사가 이어지면 주식 수가 늘어나는 희석 요인이 된다.",
+    "en": "Stock options were exercised on April 27, 2026, with director Choi Byungsan acquiring 3,343 shares, and executive Lee Hong-won's holding rose by 68,000 shares from November 27, 2025, according to disclosures. The largest shareholder and related parties held 22.81% as of December 2025. Continued option exercises would add to the share count and act as a dilution factor."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중",
-    "en": "Mid-November 2026"
+    "ko": "2026년 12월 말",
+    "en": "Late December 2026"
    },
    "what": {
-    "ko": "2026년 3분기 보고서 공시를 통해 매출 회복 여부와 영업손실 축소 추이, 신약개발 피벗에 따른 비용구조 변화를 확인할 시점이다.",
-    "en": "The Q3 2026 report will show whether revenue is recovering, whether the operating loss trend is narrowing, and how the cost structure is changing amid the drug discovery pivot."
+    "ko": "PRT1309의 영장류 모델 검증 결과. 회사가 2026년 연말을 목표로 제시한 항목으로, 2027년 IND 신청 추진의 근거가 된다.",
+    "en": "Primate model validation results for PRT1309, a target the company set for year-end 2026. The result would serve as the basis for pursuing an IND filing in 2027."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기 중",
-    "en": "Q4 2026"
+    "ko": "2027년 3월 말",
+    "en": "Late March 2027"
    },
    "what": {
-    "ko": "미국 CLIA랩 인수 완료 및 베네토클락스 동반진단 제품 출시 여부 등 상장 당시 제시한 2026년 목표의 실행 여부를 확인할 필요가 있다.",
-    "en": "It is worth checking whether the company completes the U.S. CLIA lab acquisition and launches the Venetoclax companion diagnostic product, both of which were presented as 2026 targets at IPO."
+    "ko": "2026년 사업보고서 제출 기한. 연간 매출, 영업손실, 2026년 4분기 실적과 비용 구성이 정기보고서로 확정된다.",
+    "en": "Deadline for the 2026 annual report. Annual revenue, operating loss, Q4 2026 results and cost breakdown will be confirmed in the periodic filing."
    }
   },
   {
    "when": {
-    "ko": "2027년까지",
-    "en": "Through 2027"
+    "ko": "2027년 중",
+    "en": "Mid-2027"
    },
    "what": {
-    "ko": "삼성바이오에피스·서울대와 공동 수행하는 470억원 국책과제의 중간 성과, 즉 AI 설계 항체 후보의 진행 상황과 임상 1상 IND 제출 목표 달성 여부를 점검할 필요가 있다.",
-    "en": "Interim progress on the KRW 47 billion national R&D project with Samsung Bioepis and Seoul National University, including the status of AI-designed antibody candidates and whether the Phase 1 IND submission goal is met, should be monitored."
+    "ko": "PRT1309의 IND 신청 추진 여부. 전임상 데이터가 규제 제출 단계로 넘어가는지 보여 준다.",
+    "en": "Whether the IND filing for PRT1309 proceeds, showing if preclinical data advance to the regulatory submission stage."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기~2027년",
-    "en": "Second half of 2026 through 2027"
+    "ko": "2027년 (회사 목표 시점)",
+    "en": "2027 (company target year)"
    },
    "what": {
-    "ko": "ABX 바이오사이언시스를 통한 de novo 항체설계 AbGPT-3D 플랫폼의 사업화 마일스톤과 외부 파트너십 체결 여부를 확인할 시점이다.",
-    "en": "Commercialization milestones for the AbGPT-3D de novo antibody design platform via ABX Biosciences, as well as any external partnership agreements, should be watched."
-   }
-  },
-  {
-   "when": {
-    "ko": "향후 공시 시점",
-    "en": "Upon future disclosures"
-   },
-   "what": {
-    "ko": "메자닌 발행, M&A 관련 추가 자금조달 공시가 나올 경우 지분 희석 및 재무구조 변화를 점검해야 한다.",
-    "en": "Should disclosures emerge on mezzanine issuance or M&A-related fundraising, the resulting equity dilution and changes in financial structure should be reviewed."
+    "ko": "흑자전환 목표의 진행 상황. 2027년 분기 영업손실 추이가 목표 달성 여부를 가늠하는 지표다.",
+    "en": "Progress toward the profitability target. The quarterly operating loss trend in 2027 will indicate whether the target is being met."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "프로티나는 단백질 상호작용 분석 플랫폼이라는 독자 기술을 기반으로 항체 신약 자체개발·공동개발·진단으로 사업영역을 확장하고 있으며, 삼성바이오에피스·서울대와의 국책과제, ABX 바이오사이언시스 투자 등 굵직한 파트너십을 잇달아 발표하고 있다. 다만 재무적으로는 2025년 매출 29.5억원, 영업손실 113.7억원, 순손실 90.1억원을 기록하며 손실 규모가 매년 확대되는 추세가 이어지고 있고, 최근 네 개 분기 지배주주 순손실 합산도 약 120억원에 달한다. 상장 당시 제시한 매출 목표와 실제 실적 간 괴리가 2025년과 2026년 상반기에 걸쳐 반복적으로 관찰되고 있어, 신약개발 피벗의 성과가 언제 어느 규모로 매출·손익에 반영될지가 향후 실적의 핵심 변수다. 자본총계는 상장 자금 유입으로 늘었고 부채비율도 낮은 편이지만, 영업활동현금흐름 유출이 매년 커지고 있어 자금조달 옵션(메자닌 발행 한도 확대, M&A 목적 추가)이 이미 정비되고 있다는 점도 함께 살펴볼 부분이다. 밸류에이션은 주가수익비율을 산출할 수 없는 적자 구간에 머물러 있으며, 주가순자산비율은 순자산 대비 프리미엄이 있는 수준에서 형성돼 있어 시장이 미래 성장 스토리에 상당한 가치를 부여하고 있음을 보여준다. 향후 3분기 실적, CLIA랩·동반진단 사업화 진행, 국책과제 중간 성과, 추가 자금조달 공시 등이 사업 방향성과 재무 부담을 함께 판단할 수 있는 다음 확인 지점이 될 것이다.",
-   "en": "Proteina is expanding from its proprietary protein-protein interaction analysis platform into proprietary and co-developed antibody drug discovery and diagnostics, announcing a series of significant partnerships including the national R&D project with Samsung Bioepis and Seoul National University and its investment in ABX Biosciences. Financially, however, losses have continued to widen each year, with 2025 revenue of KRW 2.95 billion accompanied by an operating loss of KRW 11.37 billion and a net loss of KRW 9.01 billion, while the combined net loss attributable to owners over the most recent four quarters reached roughly KRW 12.0 billion. The gap between IPO-stage revenue targets and actual results has recurred through 2025 and the first half of 2026, making the timing and magnitude at which the drug discovery pivot materializes in revenue and earnings a key variable going forward. Total equity has grown on IPO proceeds and the debt ratio remains low, but operating cash outflow has expanded each year, and funding options such as an expanded mezzanine issuance capacity and an added M&A purpose have already been put in place, which also merits attention. Valuation currently sits in a loss-making range where a price-to-earnings ratio cannot be calculated, while the price-to-book ratio trades at a premium to net asset value, indicating the market is assigning substantial value to the future growth narrative. Upcoming Q3 earnings, progress on the CLIA lab and companion diagnostic commercialization, interim results from the national R&D project, and any further fundraising disclosures will be the next checkpoints for assessing both business direction and financial burden together."
+   "ko": "프로티나는 PPI 데이터를 기반으로 한 AI 항체 설계 플랫폼 기업으로, 매출 기반은 서비스 계약과 국책과제로 넓어지고 있다. 2025년 매출은 29.5억원으로 28.3% 늘었지만 영업손실은 114억원으로 확대됐고, 2026년 3분기까지 5개 분기 연속 영업손실이 이어졌다. 2026년 3분기 매출은 1.9억원으로 전년 동기 대비 67.8% 감소해 분기 매출의 변동폭이 크다. 자체 파이프라인인 PRT-101과 PRT1309는 2026년 학회에서 전임상 데이터를 공개하며 검증 단계에 들어섰지만, 임상 진입은 2027년 내 IND 추진이라는 목표로 아직 남아 있다. 재무 측면에서는 2025년 말 부채비율이 11.9%로 부채 부담은 작은 편이나, 영업활동 현금흐름 유출이 이어지는 만큼 자본 여력의 소진 속도가 주요 관찰 지점이다. 강세 요인은 학회 검증, 국책과제와 계약으로 늘어난 매출원, 낮은 부채이고, 약세 요인은 장기 적자, 분기 매출의 변동, 전임상 단계의 개발 리스크다. 이익 기준 배수는 산출되지 않아 파이프라인 평가와 손실 추이가 해석의 중심이 된다. 다음 확인 지점은 2026년 연말 PRT1309 영장류 검증 결과, 2026년 사업보고서의 연간 영업손실, 2027년 흑자전환 목표의 진행 여부다.",
+   "en": "Proteina is an AI antibody design platform company built on PPI data, and its revenue base is widening through service contracts and a national project. Revenue rose 28.3% to KRW 2.95 billion in 2025, but the operating loss widened to KRW 11.4 billion, and operating losses have continued for five straight quarters through Q3 2026. Q3 2026 revenue of KRW 187 million was down 67.8% year on year, so quarterly revenue remains volatile. Its own pipeline assets, PRT-101 and PRT1309, presented preclinical data at 2026 conferences and have entered the validation stage, but clinical entry remains a target for an IND filing within 2027. On the financial side, the debt ratio was 11.9% at end-2025, which means a light debt burden, but continued operating cash outflows make the pace at which equity is used up a key point to monitor. Bullish factors are conference validation, a wider revenue base from contracts and a national project, and low debt; bearish factors are prolonged losses, quarterly revenue swings, and development risk at the preclinical stage. Because no earnings-based multiple can be calculated, pipeline evaluation and the loss trend are central to interpretation. The next checkpoints are the PRT1309 primate validation result at year-end 2026, the annual operating loss in the 2026 annual report, and progress toward the 2027 profitability target."
   }
  },
  "sources": [
-  "https://itooza.com/vscore/468530",
   "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A468530",
-  "https://thevc.kr/proteina",
-  "http://www.bondweb.co.kr/Data/202512/2/menu01/ratingKI_878252.pdf",
-  "https://www.valueline.co.kr/finance/summary/468530",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A468530&cID=&MenuYn=Y&ReportGB=&NewMenuID=101&stkGb=701",
   "https://m.thinkpool.com/compDiscuss/cont/1021865",
-  "https://m.thinkpool.com/item/468530",
-  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=04221366645514520",
-  "https://m.irgo.co.kr/IR-COMP/468530/%ED%94%84%EB%A1%9C%ED%8B%B0%EB%82%98-IR-PAGE",
-  "https://www.seoulexchange.kr/stocks/%ED%94%84%EB%A1%9C%ED%8B%B0%EB%82%98-3508/",
-  "https://www.hitnews.co.kr/news/articleView.html?idxno=64109",
-  "https://www.mt.co.kr/thebio/2025/11/06/2025110615220889708",
-  "https://pharm.edaily.co.kr/News/Read?newsId=02010646642170888&mediaCodeNo=257",
-  "https://www.biotimes.co.kr/news/articleView.html?idxno=24924",
-  "https://www.dailyinvest.kr/news/articleView.html?idxno=68710",
-  "https://www.thebell.co.kr/front/newsview.asp?key=202604101513248840106147",
-  "https://www.finance-scope.com/article/view/scp202507150019",
-  "https://wonforecast.com/proteina"
+  "https://m.thinkpool.com/compDiscuss/cont/1022632",
+  "https://www.sedaily.com/article/14138922",
+  "https://news.nate.com/view/20260330n32454",
+  "https://scoreport.kr/stocks/A468530",
+  "https://m.finance.daum.net/quotes/A468530/news/stock/20250729091404611",
+  "https://news.nate.com/view/20260617n05759",
+  "https://news.nate.com/view/20260608n22056",
+  "https://news.nate.com/view/20260312n32051",
+  "https://news.nate.com/view/20260513n26822",
+  "https://news.nate.com/view/20260430n38530",
+  "https://m.news.nate.com/view/20260430n38529",
+  "https://view.asiae.co.kr/article/2026061708300698158"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "468530",
  "name": "프로티나",
  "name_en": "PROTEINA CO.,LTD.",
@@ -233,11 +220,11 @@
   "바이오·제약"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 09:16",
- "dataDate": "20260904",
+ "reportDate": "2026-11-18",
+ "reportTs": "2026-11-18 06:54",
+ "dataDate": "20261117",
  "quant": {
-  "asOf": "2026-09-04",
+  "asOf": "2026-11-17",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -276,12 +263,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": null,
-    "op": null,
-    "np_owner": null
-   },
-   {
     "q": "2025Q3",
     "rev": 582191361,
     "op": -2948197338,
@@ -304,25 +285,31 @@
     "rev": 349276450,
     "op": -3955963406,
     "np_owner": -3111949030
+   },
+   {
+    "q": "2026Q3",
+    "rev": 187357620,
+    "op": -4048950217,
+    "np_owner": -2958346372
    }
   ],
   "valuation": {
-   "price": 30750,
-   "mcap": 0.3415,
+   "price": 50100,
+   "mcap": 0.5564,
    "shares": 11105148,
-   "total_shares": 10939480,
+   "total_shares": 11105148,
    "wavg_shares": 9946944,
    "per": null,
-   "eps": -1120,
-   "pbr": 13.4809,
-   "bps": 2281,
-   "roe_ttm": -68.1,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": -11999933630,
+   "eps": -1135,
+   "pbr": 24.439,
+   "bps": 2050,
+   "roe_ttm": -48.3,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": -12392069472,
    "ccy": "KRW",
    "bps_src": "자체",
    "eps_src": "공시",
-   "pbr_krx": 11.85,
+   "pbr_krx": 19.2,
    "bps_krx": 2594.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
@@ -331,5 +318,6 @@
     "per": "loss"
    }
   }
- }
+ },
+ "textRules": 2
 }

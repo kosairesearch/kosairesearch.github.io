@@ -1,220 +1,220 @@
 {
  "title": {
-  "ko": "영업 흑자 전환 지속, 순이익은 부침",
-  "en": "Operating Profit Turns Positive, Net Income Still Volatile"
+  "ko": "흑자 지속 여부가 관건인 차량용 반도체 기업",
+  "en": "Whether automotive chip profits can hold"
  },
  "lead": {
-  "ko": "텔레칩스는 SoC 개발용역 매출 반영과 해외 거래처 확대로 네 개 분기 연속 영업이익 흑자를 이어갔지만, 지분법 평가손실 등 비영업 요인으로 순이익은 여전히 적자와 흑자를 오가고 있다.",
-  "en": "Telechips has posted four consecutive quarters of operating profit on the back of SoC development-service revenue and overseas customer expansion, but net income continues to swing between losses and small gains due to non-operating items such as equity-method valuation losses."
+  "ko": "텔레칩스는 2026년 들어 분기 영업이익 흑자를 이어가고 있으나, 영업이익은 2026년 1분기 정점 이후 줄었고 최근 4개 분기 지배주주 순손실 합계는 523억원으로 남아 있다.",
+  "en": "Telechips has kept posting quarterly operating profit into 2026, but operating profit has fallen since the first-quarter peak, and the last four quarters still total a KRW 52.3 billion net loss attributable to controlling shareholders."
  },
  "keypoints": [
   {
-   "ko": "2026년 1분기부터 2분기까지 영업이익 흑자를 유지했고, 상반기 누적 매출은 전년 동기 대비 크게 늘었다.",
-   "en": "Telechips maintained operating profit in both the first and second quarters of 2026, with cumulative first-half revenue rising sharply year over year."
+   "ko": "2025년 연간 매출은 1,928억원으로 2022~2025년 중 가장 컸지만, 영업손실 61.9억원과 지배주주 순손실 616억원을 기록하며 적자로 돌아섰다.",
+   "en": "Full-year 2025 revenue of KRW 192.8 billion was the largest of 2022–2025, yet the company posted an operating loss of KRW 6.19 billion and a net loss attributable to controlling shareholders of KRW 61.6 billion."
   },
   {
-   "ko": "2025년 10월 체결한 SoC 개발용역 계약(2028년 1월까지)의 매출이 로열티·라이선스 매출로 본격 반영되며 외형 성장을 이끌고 있다.",
-   "en": "Revenue from an SoC development-service contract signed in October 2025, running through January 2028, is being recognized as royalty/license revenue and driving top-line growth."
+   "ko": "2026년 1분기 매출 661억원은 디지털데일리가 창사 이래 최대 분기 매출이라고 보도한 규모다. 이후 2분기 592억원, 3분기 633억원으로 매출은 등락했다.",
+   "en": "Digital Daily reported that first-quarter 2026 revenue of KRW 66.1 billion was the company's largest quarterly revenue since its founding. Revenue then moved to KRW 59.2 billion in the second quarter and KRW 63.3 billion in the third."
   },
   {
-   "ko": "독일 콘티넨탈에 돌핀3(Dolphin3) 공급, 폭스바겐에 돌핀플러스 공급 등 해외 완성차·티어1 레퍼런스가 확대되고 있다.",
-   "en": "Overseas OEM and Tier-1 references are expanding, including Dolphin3 supply to Continental in Germany and Dolphin+ supply to Volkswagen."
+   "ko": "2026년 3분기 영업이익 4.9억원은 전년 동기 영업손실 27.2억원에서 흑자로 돌아섰으나, 핀포인트뉴스가 전한 시장 예상치 42억원에는 크게 못 미쳤다.",
+   "en": "Third-quarter 2026 operating profit of KRW 492 million turned positive from a year-earlier loss of KRW 2.72 billion, but fell well short of the KRW 4.2 billion market estimate reported by Pinpoint News."
   },
   {
-   "ko": "2025년 연간 기준으로는 영업손실과 순손실을 기록했으며, 자기자본은 전년 대비 축소되고 부채비율은 상승했다.",
-   "en": "On a full-year 2025 basis, the company posted an operating loss and a net loss, while equity contracted and the debt ratio rose from the prior year."
+   "ko": "SoC 개발 용역 매출과 기존 차량용 제품이 함께 실적을 끌고 있다. 2026년 3분기 계기판·헤드업디스플레이(HUD) 관련 매출은 전년 동기 대비 52.1% 늘었다.",
+   "en": "Revenue from SoC development services and existing automotive products is jointly driving results. Cockpit and HUD-related revenue rose 52.1% from a year earlier in the third quarter of 2026."
   },
   {
-   "ko": "ADAS 비전프로세서 N-Dolphin, 게이트웨이 칩 AXON, AI 가속기 A2X 등 신제품 포트폴리오 확장이 진행 중이다.",
-   "en": "The company continues to expand its product portfolio with the N-Dolphin ADAS vision processor, the AXON gateway chip, and the A2X AI accelerator."
+   "ko": "최근 4개 분기 순손실이 이어져 주가수익비율(PER)은 산출되지 않으며, 주가순자산비율은 1배를 밑도는 구간에 있다.",
+   "en": "Because the last four quarters include net losses, the P/E ratio cannot be calculated, while the price-to-book ratio sits below 1x."
   }
  ],
  "business": {
-  "ko": "텔레칩스는 1999년 설립된 차량용 비메모리 반도체 팹리스 기업으로, 연간 차량용 반도체를 약 1,700만개 이상 판매해 국내 차량용 반도체 기업 중 규모 면에서 1위로 꼽힌다. 주력 사업은 차량용 인포테인먼트(IVI)용 애플리케이션프로세서(AP)로, 돌핀플러스(Dolphin+)·돌핀3(Dolphin3)·돌핀5(Dolphin5)로 이어지는 제품 라인업을 보유하고 있다. 최근에는 인포테인먼트를 넘어 ADAS 비전프로세서 엔돌핀(N-Dolphin), 차량용 게이트웨이 칩 AXON, AI 가속기 A2X, 마이크로컨트롤러유닛(MCU) VCP3 등으로 사업을 확장하며 차량용 반도체 토털솔루션 구축을 추진하고 있다. 주요 고객은 현대차·기아를 비롯한 글로벌 완성차 기업이며, 폭스바겐에 돌핀플러스를 공급하기 시작했고 독일 콘티넨탈에는 돌핀3를 공급하는 계약을 체결해 유럽 시장 공급망을 넓히고 있다. 지난해 10월에는 글로벌 업체와 SoC(System on a Chip) 개발용역 계약을 체결했는데, 계약금액은 총 772억원이며 계약기간은 2028년 1월 3일까지로 이 매출은 로열티·라이선스 항목으로 인식되고 있다. 지역별로는 국내 매출 비중이 낮아지는 대신 일본·태국·멕시코·헝가리·인도 등 해외 지역 매출이 확대되며 고객 다변화가 이뤄지고 있다. 글로벌 차량용 반도체 시장은 NXP, 인피니언, 르네사스 등 해외 대형 업체가 장악하고 있으며, 텔레칩스는 보급형·중저가 제품을 중심으로 국산화와 가격 경쟁력을 앞세워 틈새시장을 공략하고 있다. 개발·양산 과정에서는 삼성전자 파운드리, 가온칩스, 사피온, 오픈엣지테크놀로지 등과 협력 관계를 맺고 있다.",
-  "en": "Founded in 1999, Telechips is a fabless automotive non-memory semiconductor company that ships more than 17 million automotive chips annually, making it the largest domestic player in the automotive semiconductor segment by volume. Its core business is application processors (APs) for in-vehicle infotainment (IVI), spanning the Dolphin+, Dolphin3, and Dolphin5 product lines. The company has expanded beyond infotainment into the N-Dolphin ADAS vision processor, the AXON automotive gateway chip, the A2X AI accelerator, and the VCP3 microcontroller unit, pursuing a total automotive semiconductor solution strategy. Its main customers are global automakers including Hyundai and Kia, and it has begun supplying Dolphin+ to Volkswagen while signing a contract to supply Dolphin3 to Continental in Germany, broadening its European supply chain. In October last year, the company signed an SoC development-service contract with a global customer worth roughly 77.2 billion won, running through January 3, 2028, with revenue recognized under royalty and license items. Regionally, domestic revenue share has been declining while overseas revenue from Japan, Thailand, Mexico, Hungary, and India has been expanding, reflecting customer diversification. The global automotive semiconductor market remains dominated by large overseas players such as NXP, Infineon, and Renesas, and Telechips targets niche segments with entry-to-mid-tier products backed by localization and cost competitiveness. For development and mass production, the company partners with Samsung Foundry, Gaonchips, Sapeon, and Openedges Technology."
+  "ko": "텔레칩스는 차량용 종합 반도체를 설계하는 전문기업으로, 차량 내 정보·오락 기능을 통합하는 인포테인먼트(IVI) 반도체를 주력으로 한다. 핀포인트뉴스 보도에 따르면 2026년 3분기 IVI 매출은 전년 동기 대비 4.0% 늘었고, 전체 매출에서 차지하는 비중은 65.1%로 가장 높았다. 같은 기간 계기판과 헤드업디스플레이(HUD)를 포함한 콕핏 관련 매출은 52.1% 증가해 제품군 다변화의 축이 되고 있다. 연구개발 용역이 포함된 로열티 매출도 266.3% 늘었으며, 글로벌 고객사와 체결한 SoC 개발 용역 매출은 2025년 4분기부터 본격 반영되기 시작했다. 회사는 2025년 10월 771억원 규모(약 5,489만달러)의 SoC 개발 용역을 수주했다고 공시했고, 계약 기간은 2025년 10월 1일부터 2028년 1월 31일까지다. 지역별로는 2026년 3분기 중국 매출이 19.2%, 멕시코 매출이 78.3% 늘었으며 기타 지역 매출도 200.8% 증가했다. 수출 비중은 2025년 2분기에 60%를 넘었고, 회사는 일본·중국·태국·인도 등에서 고객 기반을 넓히고 있다. 경쟁 측면에서는 IVI 사업에서 쌓은 기술과 완성차 고객 관계를 바탕으로 디지털 콕핏과 HUD로 제품군을 넓히는 전략이 성장으로 이어질지가 주목된다는 분석이 있다. 차량용 반도체 시장에서는 완성차 전장 시스템 고도화와 차량 내 디스플레이 확대가 부품 수요를 좌우하며, 회사는 카인포테인먼트 중심 구조를 넘어 차량용 반도체 제품군을 다각화하겠다는 방침이다.",
+  "en": "Telechips designs automotive system-on-chip products, and its core business is in-vehicle infotainment (IVI) semiconductors that integrate information and entertainment functions inside a vehicle. According to Pinpoint News, IVI sales in the third quarter of 2026 rose 4.0% from a year earlier and accounted for the largest share of total revenue at 65.1%. Cockpit-related revenue, including digital instrument clusters and head-up displays (HUD), rose 52.1% over the same period and is becoming a central pillar of product diversification. Royalty revenue, which includes R&D service revenue, grew 266.3%. SoC development service revenue from a contract with a global customer began to be recognized in the fourth quarter of 2025. The company disclosed in October 2025 an SoC development service order worth KRW 77.1 billion (about USD 54.89 million), with the contract running from October 1, 2025 to January 31, 2028. By region, third-quarter 2026 sales in China rose 19.2% and in Mexico 78.3%, while sales in other regions rose 200.8%. The export ratio exceeded 60% in the second quarter of 2025, and the company is widening its customer base in Japan, China, Thailand and India. On competition, analysts view the question as whether technology and automaker relationships built in IVI can carry expansion into digital cockpit and HUD products. Demand for automotive chips is shaped by automakers' electronic system upgrades and wider in-vehicle displays, and the company has said it will diversify beyond a car-infotainment-centered structure."
  },
  "earnings": {
-  "ko": "2025년 연결 매출액은 1,928억원으로 2024년 1,866억원 대비 소폭 늘었지만, 영업손익은 –62억원으로 2024년 영업이익 49억원에서 적자로 전환됐고 순손실도 616억원으로 2024년 386억원 손실보다 확대됐다. 이에 따라 자기자본은 2024년 2,017억원에서 2025년 1,430억원으로 줄었고 부채비율은 87.3%에서 157.1%로 크게 높아졌다. 다만 분기별로 보면 흐름이 개선되고 있는데, 2025년 2분기와 3분기에는 각각 영업손실 35억원, 27억원을 기록했으나 4분기에는 매출 530억원, 영업이익 27억원으로 흑자 전환에 성공했다. 2026년 1분기에는 매출 661억원, 영업이익 61억원으로 전년 동기 대비 크게 개선되며 분기 기준 최대 매출을 기록했고, 순이익도 9억원으로 흑자를 냈다. 2026년 2분기에는 매출 592억원, 영업이익 32억원으로 영업 흑자 기조를 이어갔으나, 순이익은 –41억원으로 다시 적자를 보였다. 이처럼 영업이익은 흑자지만 순이익이 적자로 갈리는 구간이 반복되는 것은 지분법·평가손실 등 비영업 요인이 크게 작용하고 있기 때문으로, 실제 2026년 1분기에는 영업이익 대비 세전이익이 크게 줄어든 원인으로 칩스앤미디어 보유지분 평가손실 약 60억원이 반영된 점이 지목됐다. 매출 성장의 배경에는 콕핏 매출 감소를 상쇄한 IVI 매출 증가와, 지난해 10월 체결한 SoC 개발용역 계약분이 로열티·라이선스 매출로 반영되기 시작한 효과가 있다. 종합하면 텔레칩스는 2025년 연간 실적 부진을 딛고 2025년 4분기부터 2026년 2분기까지 3개 분기 연속 영업이익 흑자를 이어가는 회복 국면에 있으나, 순이익 안정화까지는 시간이 더 필요한 모습이다.",
-  "en": "Telechips's consolidated 2025 revenue was 192.8 billion won, modestly up from 186.6 billion won in 2024, but operating profit swung to a loss of 6.2 billion won from a 4.9 billion won profit in 2024, while the net loss widened to 61.6 billion won from a 38.6 billion won loss in 2024. As a result, equity fell from 201.7 billion won in 2024 to 143.0 billion won in 2025, and the debt ratio jumped from 87.3% to 157.1%. On a quarterly basis, however, the trend has been improving: after operating losses of 3.6 billion won and 2.7 billion won in the second and third quarters of 2025, the company returned to operating profit of 2.7 billion won on revenue of 53.0 billion won in the fourth quarter. In the first quarter of 2026, revenue reached a quarterly record of 66.1 billion won with operating profit of 6.1 billion won, alongside a net profit of 0.9 billion won. In the second quarter of 2026, revenue was 59.2 billion won with operating profit of 3.2 billion won, extending the operating-profit streak, but net income reverted to a loss of 4.1 billion won. This recurring gap between positive operating profit and negative net income reflects non-operating items such as equity-method valuation losses; in the first quarter of 2026, a roughly 6 billion won valuation loss on the company's stake in Chips&Media was cited as the main reason pre-tax income fell well below operating profit. The revenue growth has been supported by IVI sales growth offsetting a decline in cockpit sales, alongside the initial recognition of royalty and license revenue from the SoC development-service contract signed in October 2025. Overall, Telechips appears to be in a recovery phase, having strung together three consecutive quarters of operating profit from the fourth quarter of 2025 through the second quarter of 2026 after a weak full-year 2025, though stabilizing net income will likely take more time."
+  "ko": "연간 매출은 2022년 1,504억원에서 2023년 1,911억원(전년 대비 27.1% 증가), 2024년 1,866억원(전년 대비 2.3% 감소), 2025년 1,928억원(전년 대비 3.3% 증가)으로 이어져 2025년이 2022~2025년 중 가장 큰 해다. 영업이익은 2022년 91.8억원, 2023년 168억원(전년 대비 82.8% 증가)에서 2024년 48.7억원(전년 대비 70.9% 감소)으로 줄었고, 2025년에는 영업손실 61.9억원으로 적자 전환했다. 영업이익률은 2022년 6.1%, 2023년 8.8%, 2024년 2.6%, 2025년 -3.2%로, 매출이 늘어난 2025년에도 마진은 마이너스로 내려갔다. 지배주주 순이익은 2022년 459억원, 2023년 626억원(전년 대비 36.5% 증가)이었으나 2024년 순손실 386억원으로 적자 전환했고, 2025년에는 순손실 616억원으로 적자가 지속되며 손실이 확대됐다. 당기순이익(비지배지분 포함)도 2024년 순손실 386억원, 2025년 순손실 616억원으로 같은 흐름이다. 2025년 말 부채비율은 157.1%로 2022년 82.8%, 2023년 52.2%, 2024년 87.3%보다 높아졌고, 영업활동 현금흐름은 2024년 57.5억원 유입에서 2025년 -91.4억원으로 유출로 돌아섰다. 분기로 보면 2025년 3분기 영업손실 27.2억원이 2025년 4분기 영업이익 26.8억원으로 바뀌었고, 2026년 1분기에는 매출 661억원과 영업이익 61.2억원으로 정점을 찍었다. 이후 2분기 영업이익은 31.8억원(전 분기 대비 48.1% 감소), 3분기 영업이익은 4.9억원(전 분기 대비 84.5% 감소)으로 2개 분기 연속 감소했다. 언론은 2분기 매출 흐름을 SoC 개발 용역 매출이 전 분기보다 줄고 IVI 등 기존 제품 매출이 그 자리를 채운 결과로 전했다. 순손익은 2025년 4분기 지배주주 순손실 508억원으로 적자 폭이 컸고, 이후 2026년 1분기 9.4억원 순이익, 2분기 41억원 순손실, 3분기 16.3억원 순이익으로 엇갈렸으며 최근 4개 분기 합계는 523억원이다. 회사는 3분기 환율 하락이 수익성 부담으로 작용했다고 설명했고, 2026년 1~3분기 누적 잠정 매출 1,885.8억원과 영업이익 97.9억원은 2025년 같은 기간 영업손실 88.7억원에서 흑자로 전환한 수치다(2026년 11월 12일 공시 잠정치).",
+  "en": "Annual revenue went from KRW 150.4 billion in 2022 to KRW 191.1 billion in 2023 (up 27.1% year on year), KRW 186.6 billion in 2024 (down 2.3%) and KRW 192.8 billion in 2025 (up 3.3%), making 2025 the largest year of 2022–2025. Operating profit was KRW 9.18 billion in 2022 and KRW 16.8 billion in 2023 (up 82.8%), then fell to KRW 4.87 billion in 2024 (down 70.9%) before turning into an operating loss of KRW 6.19 billion in 2025. The operating margin was 6.1% in 2022, 8.8% in 2023, 2.6% in 2024 and -3.2% in 2025, so margins turned negative in 2025 even as revenue grew. Net profit attributable to controlling shareholders was KRW 45.9 billion in 2022 and KRW 62.6 billion in 2023 (up 36.5%), then turned into a net loss of KRW 38.6 billion in 2024 and widened to a net loss of KRW 61.6 billion in 2025. Net income including non-controlling interests followed the same path, with net losses of KRW 38.6 billion in 2024 and KRW 61.6 billion in 2025. The debt-to-equity ratio at the end of 2025 was 157.1%, up from 82.8% in 2022, 52.2% in 2023 and 87.3% in 2024. Operating cash flow moved from an inflow of KRW 5.75 billion in 2024 to an outflow of KRW 9.14 billion in 2025. On a quarterly basis, an operating loss of KRW 2.72 billion in the third quarter of 2025 turned into operating profit of KRW 2.68 billion in the fourth quarter, and the first quarter of 2026 peaked with revenue of KRW 66.1 billion and operating profit of KRW 6.12 billion. Operating profit then fell to KRW 3.18 billion in the second quarter (down 48.1% quarter on quarter) and KRW 492 million in the third (down 84.5%), a decline across two consecutive quarters. Press coverage attributed the second-quarter revenue dip to lower SoC development service revenue, partly offset by existing products such as IVI. At the net profit line, the fourth quarter of 2025 showed a net loss attributable to controlling shareholders of KRW 50.8 billion, followed by KRW 944 million of net profit in the first quarter of 2026, a KRW 4.1 billion loss in the second and KRW 1.63 billion of profit in the third, with the last four quarters totaling a net loss of KRW 52.3 billion. The company said a weaker exchange rate weighed on profitability in the third quarter. Cumulative preliminary revenue for January to September 2026 was KRW 188.58 billion and operating profit KRW 9.79 billion, turning from an operating loss of KRW 8.87 billion in the same period of 2025 (preliminary figures disclosed on November 12, 2026)."
  },
  "industry": {
-  "ko": "차량용 반도체 시장은 자동차의 전동화·전장화·소프트웨어 정의 차량(SDV) 전환에 따라 차량 한 대당 탑재되는 반도체 종류와 양이 늘어나는 구조적 성장 국면에 있다. 다만 글로벌 시장은 NXP, 인피니언, 르네사스 등 대형 업체와 인포테인먼트 분야의 퀄컴·미디어텍 등이 상위권을 형성하고 있어, 텔레칩스와 같은 중소형 팹리스는 보급형·중저가 세그먼트에서 가격 경쟁력을 통한 틈새시장 공략에 주력하는 구조다. 국내 고객사인 현대차·기아의 일부 라인업에서 퀄컴 채택 비중이 확대된 점은 국내 매출에 부담 요인으로 작용해온 것으로 알려졌으며, 이에 따라 텔레칩스는 해외 완성차·티어1 고객 확대로 대응하는 전략을 펴고 있다. 콘티넨탈·폭스바겐·포르쉐·혼다 등 해외 레퍼런스 확보와 함께 태국·멕시코·헝가리·인도 등 신흥 시장에서 매출을 늘려가는 점이 이러한 전략의 결과로 해석된다. 팹리스 업계 전반적으로는 AI·SDV 확산에 따른 설계 수요 증가가 우호적 환경으로 꼽히지만, 대형 SoC 개발용역과 같은 특정 고객 의존형 매출 구조는 계약 종료 이후의 매출 공백 우려도 함께 내재한다. 경쟁 구도상 텔레칩스는 국내 인포테인먼트 AP 분야에서는 선두 지위를 유지하고 있으나, ADAS·게이트웨이·AI 가속기 등 신사업 영역에서는 아직 양산 초기 단계에 있어 상용화 성과가 실적에 본격적으로 기여하는 시점을 확인해야 하는 상황이다.",
-  "en": "The automotive semiconductor market is in a structural growth phase as electrification, increased electronics content, and the shift toward software-defined vehicles (SDV) raise both the variety and volume of chips required per vehicle. Globally, however, the market remains led by large players such as NXP, Infineon, and Renesas, with Qualcomm and MediaTek prominent in infotainment, leaving smaller fabless firms like Telechips to focus on entry-to-mid-tier segments where cost competitiveness matters most. An expanding share of Qualcomm chips within some Hyundai and Kia lineups has reportedly weighed on Telechips's domestic revenue, prompting the company to counter with expanded overseas OEM and Tier-1 customer relationships. Securing references with Continental, Volkswagen, Porsche, and Honda, alongside rising sales in emerging markets such as Thailand, Mexico, Hungary, and India, reflects this diversification strategy. Across the fabless industry, growing design demand tied to AI and SDV adoption is seen as a favorable backdrop, but revenue structures reliant on a single large SoC development-service contract also carry the risk of a revenue gap once that contract concludes. Competitively, Telechips retains a leading position domestically in infotainment APs, but its newer businesses in ADAS, gateway chips, and AI accelerators remain at an early mass-production stage, meaning the timing of when commercialization meaningfully contributes to earnings still needs to be confirmed."
+  "ko": "차량용 반도체 수요는 전기차와 자율주행차 확산을 배경으로 커지고 있다. 기업모니터 기업현황 페이지는 차량용 반도체 시장이 연평균 9.7% 성장할 것으로 예상된다고 요약했다. 디지털 콕핏과 HUD는 운전석 전면 디스플레이와 주행 정보 투사 기능이 넓어지며 적용 범위가 커지는 분야로 설명된다. 차량 전장화와 고급화 흐름이 HUD 수요의 배경으로 언급된다. 디지털데일리 보도는 차량용 인포테인먼트와 자율주행, 소프트웨어 정의 차량(SDV) 확산으로 차량용 반도체 수요가 늘고 있어 텔레칩스가 고객 기반 확대에 속도를 내고 있다고 전했다. 사이클 측면에서 2024년에는 전방시장 위축으로 매출 성장이 부진했고 신규 칩 개발을 위한 연구개발비도 늘었는데, 유진투자증권은 2024년 8월 리포트에서 이를 영업이익 감소의 원인으로 분석했다. 이후 2025년 말부터 SoC 개발 용역과 신규 제품 매출이 더해지는 국면에 들어섰다. 환율은 2026년 3분기 수익성 부담 요인으로 회사가 직접 언급했다. 해외 고객 측면에서는 국내 시장 집중 구조에서 벗어나 중국·멕시코·기타 지역 매출이 늘고 있다는 분석이 나온다. 동종 업체와 비교한 위치는 IVI 중심 사업에서 콕핏, HUD, 로열티, 개발 용역으로 영역을 넓히는 방식으로 읽힌다.",
+  "en": "Demand for automotive chips is growing as electric and autonomous vehicles spread. A company profile summary on WiseReport states that the automotive semiconductor market is expected to grow at an annual rate of 9.7%. Digital cockpit and HUD products are described as areas where applications are widening, as in-vehicle displays and driving-information projection expand. Electrification and premiumization of vehicles are cited as the background for HUD demand. Digital Daily reported that the spread of in-vehicle infotainment, autonomous driving and software-defined vehicles is lifting chip demand, and that Telechips is accelerating its customer base expansion. On the cycle, sales growth slowed in 2024 as the front-end market weakened and R&D spending rose for new chip development; Eugene Investment & Securities attributed the decline in operating profit to these factors in an August 2024 report. From late 2025, SoC development services and new product revenue were added on top of that base. The company itself cited the weaker exchange rate as a burden on profitability in the third quarter of 2026. On overseas customers, sales in China, Mexico and other regions are rising as the company moves away from a domestically concentrated structure. Its position relative to peers reads as an expansion from an IVI-centered business into cockpit, HUD, royalty and development service revenue."
  },
  "outlook": {
-  "ko": "회사는 인포테인먼트 AP 중심 사업을 넘어 ADAS·MCU·게이트웨이·AI 가속기를 더한 '차량용 반도체 토털솔루션' 구축을 목표로 사업 다각화를 추진하고 있다. 2025년 10월 체결한 SoC 개발용역 계약은 2028년 1월까지 이어지는 장기 프로젝트로, 개발 단계별 매출 인식이 향후에도 지속될 것으로 예정돼 있다. 콘티넨탈을 통한 돌핀3 공급은 유럽 주요 완성차 업체를 대상으로 하며, 물량 확대 시점과 규모가 향후 실적에 영향을 줄 핵심 변수로 꼽힌다. 회사는 삼성 파운드리 8나노 공정 기반의 돌핀5 양산을 진행 중이며, 차기 5나노 공정 기반 돌핀7도 개발 로드맵에 포함돼 있다고 밝힌 바 있다. 2026년 1월에는 베트남 소프트웨어 기업 FPT와 공동으로 AI 기반 차세대 인텔리전트 콕핏 플랫폼을 CES 2026에서 시연하는 등 글로벌 파트너십을 확대하고 있다. 경영진은 2030년까지 글로벌 20위권 팹리스로 도약한다는 중장기 목표를 제시한 바 있으며, 이를 위해서는 연간 매출 5,000억원 이상과 대규모 수주 잔고 확보가 필요하다는 입장을 밝힌 바 있다. 다만 이러한 목표는 신제품의 실제 양산과 고객 확보 여부에 따라 달성 시점이 달라질 수 있어, 향후 분기별 실적 발표와 신규 공급계약 공시를 통해 진행 상황을 확인할 필요가 있다.",
-  "en": "Beyond its infotainment AP-centric business, Telechips is pursuing diversification toward a total automotive semiconductor solution encompassing ADAS, MCU, gateway, and AI accelerator products. The SoC development-service contract signed in October 2025 is a long-term project running through January 2028, with revenue recognition tied to development milestones expected to continue. Dolphin3 supply through Continental targets major European automakers, and the timing and scale of any volume ramp-up are seen as key variables for future performance. The company is proceeding with mass production of Dolphin5 based on Samsung Foundry's 8-nanometer process, and has stated that a next-generation Dolphin7 based on a 5-nanometer process is included in its development roadmap. In January 2026, the company partnered with Vietnamese software firm FPT to demonstrate a next-generation AI-powered intelligent cockpit platform at CES 2026, expanding its global partnerships. Management has set a mid- to long-term goal of becoming a top-20 global fabless company by 2030, stating this would require annual revenue exceeding 500 billion won and a substantial order backlog. However, the timing of achieving these goals depends on actual mass production and customer acquisition for new products, making it necessary to monitor future quarterly earnings releases and new supply contract disclosures for progress."
+  "ko": "회사는 2026년 1분기 실적 발표에서 글로벌 고객 기반 강화와 에코파트너십 확대를 통해 성장 모멘텀을 더 키우겠다고 밝혔다. 2026년 2분기 발표에서는 하반기에 기존 제품의 글로벌 고객을 넓히고 신규 프로젝트 양산을 늘리며, SoC 개발 용역과 기존 제품 사업 간 시너지를 강화하겠다는 계획을 제시했다. 유진투자증권은 2026년 8월 리포트에서 개발 용역 매출 반영 등으로 3분기 매출 성장세가 이어질 것으로 전망했다. 같은 증권사는 2026년 11월 보도된 리포트에서 2026년 4분기 연결 매출을 596억원, 영업이익을 32억원으로 추정했다. 2025년 11월 리포트는 신제품 돌핀3를 컨티넨탈을 통해 유럽 주요 완성차에 공급하는 효과가 2026년에 본격 반영될 것으로 봤다. SoC 개발 용역 계약은 2028년 1월 31일까지 진행되므로, 그 이후 용역 매출 구조가 중기 변수가 된다. 해외 매출 측면에서는 중국·멕시코 매출 증가와 일본·태국·인도 고객 기반 확대가 2026년 흐름의 축으로 꼽힌다. 회사의 방향 제시는 정량 목표 대신 고객 확대, 양산, 시너지라는 방향 위주라서 분기 실적으로 달성 정도가 드러나는 구조다.",
+  "en": "In its first-quarter 2026 results release, the company said it would strengthen its global customer base and expand eco-partnerships to build further growth momentum. In its second-quarter 2026 release, it outlined plans to widen its global customer base for existing products, expand mass production of new projects and strengthen synergies between SoC development services and existing product businesses in the second half. Eugene Investment & Securities expected in an August 2026 report that revenue growth would continue in the third quarter, reflecting development service revenue. The same firm, in a report covered in November 2026, estimated fourth-quarter 2026 consolidated revenue at KRW 59.6 billion and operating profit at KRW 3.2 billion. A November 2025 report expected the new Dolphin3 product, supplied to major European automakers through Continental, to be fully reflected in 2026 results. The SoC development service contract runs until January 31, 2028, so the structure of development service revenue after that date is a medium-term variable. On overseas sales, rising revenue from China and Mexico and a widening customer base in Japan, Thailand and India are the main threads for 2026. The company's guidance is framed around directions such as customer expansion, mass production and synergies rather than quantified targets, so progress will be visible through quarterly results."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 순자산가치에 근접한 수준에서 거래되고 있어, 시장이 회사의 자산가치와 크게 다른 프리미엄이나 할인을 부여하고 있지는 않은 모습이다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 합산 기준으로는 여전히 순손실을 기록하고 있어, 이익 기준 밸류에이션 지표를 단순 적용하기 어려운 구간에 있다. 다년간 흐름을 보면 2023년 흑자에서 2024~2025년 순손실로 전환된 뒤, 2026년 들어 분기별로 영업이익 흑자가 이어지는 회복 흐름이 관찰된다. 배당은 지급되지 않고 있어, 배당을 통한 주주환원 기대보다는 실적 회복의 지속성이 판단의 중심이 되는 구조다. 일부 증권사는 신제품 공급 확대와 SoC 개발용역 매출 반영을 근거로 실적 정상화를 전망하고 있으나, 실제 이익 안정화 시점은 향후 분기 실적을 통해 추가로 확인해야 하는 부분이다.",
-  "en": "The current share price trades near the company's net asset value, suggesting the market is not currently assigning a large premium or discount relative to book value. On a trailing four-quarter basis (Q3 2025 through Q2 2026), the company still shows a net loss, making straightforward profit-based valuation comparisons difficult to apply. Looking across multiple years, the company moved from a profit in 2023 to net losses in 2024 and 2025, before showing a quarterly operating-profit recovery trend through 2026. The company does not currently pay a dividend, so the assessment centers less on shareholder returns via dividends and more on the durability of the earnings recovery. Some brokerages have projected earnings normalization based on expanded new-product supply and the recognition of SoC development-service revenue, but the actual timing of profit stabilization still needs to be confirmed through future quarterly results."
+  "ko": "최근 네 개 분기 지배주주 순손실이 누적되어 주가수익비율(PER)은 산출되지 않는 상태다. 주가순자산비율은 1배를 밑도는 구간이며, 2025년 말 기준 시가총액 규모는 자본총계 1,430억원보다 작다. 배당수익률은 거의 잡히지 않는 수준이라 배당을 기준으로 한 비교는 제한적이다. PER은 순이익이 흑자로 돌아설 때 산출되므로, 지배주주 순이익의 분기 흑자가 이어지는지가 배수 해석의 전제가 된다. 유진투자증권은 2026년 8월 7일 리포트에서 목표주가 20,000원과 투자의견 매수 유지를 제시했다고 전했다. 같은 리포트는 개발 용역 매출 반영을 근거로 실적 성장세가 이어질 것으로 본 것으로 전해졌으며, 이 목표주가는 2026년 8월 시점의 제시치다. 부채비율은 2025년 말 157.1%로 2022년 말보다 높아져 재무 레버리지는 확대된 상태다. 분기 영업이익률이 흑자 구간에서도 편차가 커서 배수 비교는 기간 선택에 따라 달라진다.",
+  "en": "Because net losses attributable to controlling shareholders have accumulated over the last four quarters, the P/E ratio cannot be calculated. The price-to-book ratio is below 1x, and the market capitalization is smaller than total equity of KRW 143 billion at the end of 2025. The dividend yield is close to zero, so comparisons based on dividends are limited. P/E becomes calculable only when earnings turn positive, so whether quarterly profits attributable to controlling shareholders persist is the premise for interpreting the multiple. Eugene Investment & Securities stated in an August 7, 2026 report that it maintained a BUY rating with a target price of KRW 20,000. The same report was reported to point to continued earnings growth, citing development service revenue, and this target reflects the view as of August 2026. The debt-to-equity ratio at the end of 2025 was 157.1%, higher than at the end of 2022, so financial leverage has risen. Quarterly operating margins vary widely even within profitable quarters, so multiple comparisons depend on the period chosen."
  },
  "bull": [
   {
    "title": {
-    "ko": "네 개 분기 연속 영업 흑자 기조",
-    "en": "Four Straight Quarters of Operating Profit"
+    "ko": "IVI 외 제품군의 성장",
+    "en": "Growth beyond IVI"
    },
    "body": {
-    "ko": "2025년 4분기부터 2026년 2분기까지 영업이익이 연속으로 흑자를 기록하며, 2025년 연간 적자에서 벗어나는 흐름이 확인되고 있다. SoC 개발용역 매출이 로열티·라이선스 항목으로 반영되기 시작한 효과와 기존 제품 사업 간 시너지가 맞물린 결과로 해석된다. 2026년 1분기에는 분기 기준 최대 매출을 기록하며 흑자 전환의 폭도 확대됐다.",
-    "en": "Operating profit has been positive in every quarter from the fourth quarter of 2025 through the second quarter of 2026, marking a clear departure from the full-year 2025 operating loss. This is attributed to the initial recognition of SoC development-service revenue as royalty and license income, combined with synergies across existing product lines. The first quarter of 2026 saw a quarterly revenue record, widening the scope of the profit turnaround."
+    "ko": "2026년 3분기 계기판과 HUD 관련 매출은 52.1% 늘었고 IVI 매출도 4.0% 증가했다. 로열티 매출이 266.3% 늘어 연구개발 용역과 라이선스 수익이 함께 커진 점도 확인된다. 중국과 멕시코 매출이 각각 19.2%, 78.3% 증가한 것은 해외 고객 기반이 넓어지고 있다는 뜻으로 풀이된다.",
+    "en": "Cockpit and HUD-related revenue rose 52.1% in the third quarter of 2026, and IVI sales grew 4.0%. Royalty revenue jumped 266.3%, showing that R&D service and licensing income are growing together. Sales in China rose 19.2% and in Mexico 78.3%, which analysts read as a sign that the overseas customer base is widening."
    }
   },
   {
    "title": {
-    "ko": "해외 고객 및 지역 다변화",
-    "en": "Diversification of Overseas Customers and Regions"
+    "ko": "용역 계약에 따른 매출 기간",
+    "en": "Revenue visibility from a service contract"
    },
    "body": {
-    "ko": "콘티넨탈에 돌핀3, 폭스바겐에 돌핀플러스를 공급하는 등 유럽 완성차·티어1 레퍼런스를 확보했고, 일본·태국·멕시코·헝가리·인도 등지에서 매출이 늘어나며 국내 고객 의존도가 낮아지는 추세가 나타나고 있다. 이는 특정 고객사의 정책 변화에 따른 실적 변동성을 완화하는 요인으로 작용할 수 있다.",
-    "en": "By supplying Dolphin3 to Continental and Dolphin+ to Volkswagen, Telechips has secured European OEM and Tier-1 references, while revenue growth in Japan, Thailand, Mexico, Hungary, and India points to declining reliance on domestic customers. This diversification could help cushion earnings volatility tied to any single customer's policy changes."
+    "ko": "SoC 개발 용역 계약은 2025년 10월 1일부터 2028년 1월 31일까지로 기간이 정해져 있고 계약 규모는 5,489만달러다. 2025년 10월 771억원 규모 수주를 공시한 만큼 용역 매출이 발생하는 기간이 공시로 확인된다. 2026년 2분기 용역 매출이 줄었을 때 기존 제품 매출이 그 자리를 채운 점은 사업 기반이 넓어졌다는 신호로 읽힌다.",
+    "en": "The SoC development service contract is set to run from October 1, 2025 to January 31, 2028, with a contract value of about USD 54.89 million. Because the company disclosed an order worth KRW 77.1 billion in October 2025, the period during which development service revenue is recognized can be traced through disclosures. When service revenue fell in the second quarter of 2026, existing products filled the gap, which reads as a sign that the business base has broadened."
    }
   },
   {
    "title": {
-    "ko": "신제품 파이프라인 확장",
-    "en": "Expanding New-Product Pipeline"
+    "ko": "분기 흑자 유지 전망",
+    "en": "Outlook for sustained quarterly profit"
    },
    "body": {
-    "ko": "인포테인먼트 AP를 넘어 ADAS 비전프로세서 N-Dolphin, 게이트웨이 칩 AXON, AI 가속기 A2X, MCU VCP3 등으로 제품군을 넓히고 있으며, 삼성 파운드리 8나노 기반 돌핀5 양산과 5나노 기반 돌핀7 개발 계획도 공개된 바 있다. 제품 다각화가 성공적으로 매출에 기여할 경우 특정 제품군 의존도를 낮출 수 있는 요인이다.",
-    "en": "Beyond infotainment APs, the company is broadening its lineup with the N-Dolphin ADAS vision processor, the AXON gateway chip, the A2X AI accelerator, and the VCP3 MCU, while disclosing plans for Dolphin5 mass production on Samsung Foundry's 8-nanometer process and Dolphin7 development on a 5-nanometer process. If this diversification successfully contributes to revenue, it could reduce dependence on any single product category."
+    "ko": "유진투자증권은 2026년 11월 보도된 리포트에서 2026년 4분기 매출을 596억원, 영업이익을 32억원으로 추정했다. 같은 증권사는 2026년 8월 리포트에서 개발 용역 매출 반영으로 매출 성장세가 이어질 것으로 전망했다. 영업이익률은 2026년 3분기 0.8%로 2025년 3분기 마이너스 5.4%에서 개선됐다.",
+    "en": "In a report covered in November 2026, Eugene Investment & Securities estimated fourth-quarter 2026 revenue at KRW 59.6 billion and operating profit at KRW 3.2 billion. The same firm's August 2026 report expected revenue growth to continue on development service revenue. The operating margin improved to 0.8% in the third quarter of 2026 from a negative 5.4% a year earlier."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "영업이익과 순이익 간 반복되는 괴리",
-    "en": "Recurring Gap Between Operating Profit and Net Income"
+    "ko": "수익성 회복 속도의 한계",
+    "en": "Limits to the pace of margin recovery"
    },
    "body": {
-    "ko": "2025년 4분기와 2026년 2분기 모두 영업이익은 흑자였지만 순이익은 각각 –508억원, –41억원으로 적자를 기록했다. 지분법·평가손실 등 비영업 요인이 반복적으로 순이익을 훼손하고 있어, 영업 실적 개선이 곧바로 순이익 안정화로 이어지지 않는 구조가 지속되고 있다.",
-    "en": "In both the fourth quarter of 2025 and the second quarter of 2026, operating profit was positive while net income was negative, at losses of 50.8 billion won and 4.1 billion won respectively. Recurring non-operating items such as equity-method valuation losses continue to erode net income, meaning operating improvement has not yet translated directly into stable net profit."
+    "ko": "2026년 3분기 영업이익 4.9억원은 시장 예상치 42억원을 크게 밑돌아 수익성 회복 속도가 기대에 못 미쳤다는 평가를 받았다. 영업이익률은 0.8%에 그쳤다. 핀포인트뉴스는 매출 증가가 실제 이익 개선으로 얼마나 이어질지는 추가 확인이 필요하다고 분석했다.",
+    "en": "Third-quarter 2026 operating profit of KRW 492 million fell far short of a KRW 4.2 billion market estimate, and the pace of margin recovery was judged below expectations. The operating margin was only 0.8%. Pinpoint News noted that how far revenue growth translates into actual profit improvement still needs confirmation."
    }
   },
   {
    "title": {
-    "ko": "재무건전성 약화",
-    "en": "Weakened Financial Health"
+    "ko": "용역 매출의 변동성",
+    "en": "Volatility in development service revenue"
    },
    "body": {
-    "ko": "2025년 자기자본은 1,430억원으로 2024년보다 줄었고, 부채비율은 87.3%에서 157.1%로 크게 높아졌다. 지속된 순손실이 자본을 잠식하면서 재무구조가 이전보다 취약해진 모습이며, 향후 순이익 회복이 지연될 경우 재무 여력에 추가 부담이 될 수 있다.",
-    "en": "Equity fell to 143.0 billion won in 2025 from the prior year, and the debt ratio rose sharply from 87.3% to 157.1%. Persistent net losses have eroded capital, leaving the balance sheet more fragile than before, and a delayed net-income recovery could add further pressure to financial flexibility."
+    "ko": "2026년 2분기 SoC 개발 용역 매출은 전 분기보다 줄었고, 그 빈자리는 IVI 등 기존 제품이 메웠다. 분기 영업이익은 1분기 61.2억원에서 2분기 31.8억원, 3분기 4.9억원으로 낮아졌다. 용역 매출이 분기별로 줄어드는 구간에서 기존 제품 매출이 이를 대체할 수 있는지가 분기 이익 흐름을 좌우하는 변수로 남는다.",
+    "en": "SoC development service revenue declined quarter on quarter in the second quarter of 2026, and existing products such as IVI filled the gap. Operating profit moved from KRW 6.12 billion in the first quarter to KRW 3.18 billion in the second and KRW 492 million in the third. Whether existing product sales can replace development service revenue when it falls will remain the key variable for quarterly profit."
    }
   },
   {
    "title": {
-    "ko": "대형 업체와의 경쟁 및 고객 집중",
-    "en": "Competition From Larger Players and Customer Concentration"
+    "ko": "순손익 흑자 전환의 불안정성",
+    "en": "Instability of the swing to net profit"
    },
    "body": {
-    "ko": "글로벌 시장은 NXP, 인피니언, 르네사스 등 대형 업체가 주도하고 있으며, 국내 핵심 고객인 현대차·기아 라인업 일부에서 퀄컴 채택이 확대된 점은 국내 매출에 부담이 돼 왔다. 해외 고객 확대가 이를 상쇄하는 추세이지만, 여전히 특정 고객군에 대한 의존도가 높은 구조는 남아 있다.",
-    "en": "The global market is led by large players such as NXP, Infineon, and Renesas, and expanded Qualcomm adoption within some Hyundai and Kia lineups has weighed on domestic revenue. While overseas customer expansion is offsetting this trend, the company's revenue structure still shows meaningful dependence on a concentrated set of customers."
+    "ko": "지배주주 순이익은 2026년 1분기 9.4억원 흑자 이후 2분기 순손실 41억원으로 돌아섰고, 3분기에는 16.3억원 흑자였다. 2025년 4분기 지배주주 순손실은 508억원으로 컸다. 언론은 영업 단의 개선이 최종 손익으로 이어지지 않았다고 보도했다.",
+    "en": "Net profit attributable to controlling shareholders was KRW 944 million in the first quarter of 2026, turned to a KRW 4.1 billion loss in the second quarter and returned to a KRW 1.63 billion profit in the third. The fourth quarter of 2025 had a large net loss attributable to controlling shareholders of KRW 50.8 billion. Press coverage reported that operating-level improvement did not carry through to the bottom line."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중 리스크",
-    "en": "Customer Concentration Risk"
+    "ko": "제품·고객 집중",
+    "en": "Product and customer concentration"
    },
    "body": {
-    "ko": "현대차·기아 등 소수 완성차 고객에 대한 매출 의존도가 높아, 해당 고객사의 공급업체 정책이나 플랫폼 채택 변화가 실적에 직접적인 영향을 줄 수 있다. 해외 고객 확대로 완충 여력을 키우고 있으나 아직 절대적 비중을 낮추는 데는 시간이 필요하다.",
-    "en": "The company's revenue remains heavily dependent on a small number of automaker customers such as Hyundai and Kia, meaning changes in those customers' supplier policies or platform adoption could directly affect performance. Overseas customer expansion is building a buffer, but reducing this concentration meaningfully will take time."
+    "ko": "IVI 매출은 2026년 3분기 전체의 65.1%를 차지해 단일 제품군 비중이 높다. 주요 고객이 글로벌 완성차 및 전장 업체인 만큼 완성차 생산이나 차종 채택 일정이 밀리면 매출 흐름에 바로 영향을 줄 수 있다. 신규 제품의 양산 시점이 지연될 가능성도 남아 있다.",
+    "en": "IVI accounted for 65.1% of third-quarter 2026 revenue, so a single product line carries a high share. Because key customers are global automakers and automotive electronics suppliers, delays in vehicle production or model adoption could quickly affect revenue. Delays in mass production of new products also remain a possibility."
    }
   },
   {
    "cat": {
-    "ko": "비영업 손익 변동성",
-    "en": "Non-Operating Earnings Volatility"
+    "ko": "환율과 수출 의존",
+    "en": "Exchange rate and export exposure"
    },
    "body": {
-    "ko": "지분법 평가손실 등 비영업 항목이 분기별 순이익을 크게 흔들어온 점은 실적 예측의 불확실성을 높이는 요인이다. 보유 지분의 가치 변동이 계속될 경우 영업 개선에도 순이익 변동성이 이어질 수 있다.",
-    "en": "Non-operating items such as equity-method valuation losses have significantly swung quarterly net income, adding uncertainty to earnings forecasts. If the value of held equity stakes continues to fluctuate, net income volatility could persist even as operating performance improves."
+    "ko": "회사는 3분기 환율 하락이 수익성 부담으로 작용했다고 설명했다. 수출 비중이 2025년 2분기 60%를 넘었고 해외 매출 비중이 커질수록 환율 변동이 손익에 더 크게 반영될 수 있다. 분기마다 환율 방향이 달라지면 실적 해석의 변수도 함께 커진다.",
+    "en": "The company said a weaker exchange rate weighed on profitability in the third quarter. The export ratio exceeded 60% in the second quarter of 2025, and as overseas sales grow, currency moves may feed more directly into profit. Shifts in exchange-rate direction from quarter to quarter also add to the difficulty of reading results."
    }
   },
   {
    "cat": {
-    "ko": "신제품 상용화 지연 리스크",
-    "en": "Risk of Delayed New-Product Commercialization"
+    "ko": "재무 구조와 계약 기간",
+    "en": "Balance sheet and contract timing"
    },
    "body": {
-    "ko": "ADAS·게이트웨이·AI 가속기 등 신사업 제품은 아직 양산 초기 단계로, 고객 확보와 양산 물량 확대 시점이 계획보다 지연될 경우 기대했던 매출 기여 시점도 늦춰질 수 있다. SoC 개발용역 계약 종료(2028년 1월) 이후의 매출 공백 가능성도 함께 살펴볼 필요가 있다.",
-    "en": "New businesses such as ADAS, gateway chips, and AI accelerators are still at an early mass-production stage, and if customer acquisition or volume ramp-up is delayed relative to plan, the expected timing of revenue contribution could also slip. The possibility of a revenue gap after the SoC development-service contract concludes in January 2028 also warrants attention."
+    "ko": "2025년 말 부채비율은 157.1%이며 부채총계는 2,246억원, 자본총계는 1,430억원이다. 2025년 영업활동 현금흐름은 -91.4억원으로 유출이었다. SoC 개발 용역 계약은 2028년 1월 31일에 끝나므로 그 이후 용역 매출 구조를 어떻게 이어갈지가 중기 리스크로 남는다.",
+    "en": "At the end of 2025 the debt-to-equity ratio was 157.1%, with total liabilities of KRW 224.6 billion against total equity of KRW 143 billion. Operating cash flow was an outflow of KRW 9.14 billion in 2025. Because the SoC development service contract ends on January 31, 2028, how revenue is sustained after that date is a medium-term risk."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 초",
-    "en": "Early November 2026"
+    "ko": "2027년 2월 초(직전 발표 시기 기준 추정)",
+    "en": "Early February 2027 (estimated from prior release timing)"
    },
    "what": {
-    "ko": "3분기 잠정실적 공시 예정 시점으로, 영업이익 흑자 기조가 4개 분기 연속으로 이어지는지와 SoC 개발용역 매출 반영 규모를 확인할 필요가 있다.",
-    "en": "The expected timing of the preliminary third-quarter earnings disclosure, when it will be important to confirm whether the operating-profit streak extends to a fourth consecutive quarter and how much SoC development-service revenue is being recognized."
+    "ko": "2026년 4분기 잠정실적이다. 공시 실적에 아직 없는 분기이며, 유진투자증권 추정치(매출 596억원, 영업이익 32억원)와 비교하고 4분기 순손익이 2025년 4분기 지배주주 순손실 508억원 이후 어떻게 바뀌는지 본다.",
+    "en": "Preliminary fourth-quarter 2026 results, a quarter not yet in the disclosed record. Comparing them with the Eugene estimate of KRW 59.6 billion in revenue and KRW 3.2 billion in operating profit shows whether the quarterly profit pattern holds."
    }
   },
   {
    "when": {
-    "ko": "2027년 1월 CES 2027 기간 중",
-    "en": "During CES 2027 in January 2027"
+    "ko": "2027년 3월 31일(사업보고서 법정 제출 기한)",
+    "en": "March 31, 2027 (statutory filing deadline for the annual report)"
    },
    "what": {
-    "ko": "신제품(돌핀7 등) 공개 여부와 FPT 등 협력사와의 공동 플랫폼 진전 상황을 확인할 수 있는 계기다.",
-    "en": "An opportunity to check whether new products such as Dolphin7 are unveiled and to track progress on joint platforms with partners such as FPT."
+    "ko": "2026 사업보고서는 다음 정기보고서다. 연간 영업이익률, 부채비율, 지배주주 순손익이 DART 정기보고서 기준으로 확정되며, 2025년 영업이익률 -3.2%와 부채비율 157.1%가 기준점이 된다.",
+    "en": "The 2026 annual report is the next regular filing. It will fix full-year operating margin, debt ratio and net profit attributable to controlling shareholders on a DART basis, using the 2025 operating margin of -3.2% and debt ratio of 157.1% as reference points."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기~2027년",
-    "en": "Second half of 2026 through 2027"
+    "ko": "2027년 5월 초(직전 발표 시기 기준 추정)",
+    "en": "Early May 2027 (estimated from prior release timing)"
    },
    "what": {
-    "ko": "콘티넨탈 대상 돌핀3 공급 물량 확대 여부와 유럽 매출 반영 규모를 분기 실적을 통해 지속 확인할 필요가 있다.",
-    "en": "It will be necessary to continue monitoring quarterly results for whether Dolphin3 supply volumes to Continental expand and how much European revenue is recognized."
+    "ko": "2027년 1분기 잠정실적이다. 2026년 1분기 매출 661억원과 영업이익 61.2억원을 넘어서는지, 영업이익이 2분기와 3분기 수준에서 회복되는지를 가르는 지점이다.",
+    "en": "Preliminary first-quarter 2027 results. The key test is whether revenue exceeds KRW 66.1 billion and operating profit recovers from the second- and third-quarter 2026 levels, compared with the first-quarter 2026 peak."
    }
   },
   {
    "when": {
-    "ko": "2028년 1월 계약 종료 시점까지",
-    "en": "Through the contract's expiration in January 2028"
+    "ko": "2028년 1월 31일",
+    "en": "January 31, 2028"
    },
    "what": {
-    "ko": "SoC 개발용역 계약(약 772억원)의 매출 인식 진행 상황과 계약 종료 이후 대체 매출원 확보 여부를 확인해야 한다.",
-    "en": "Progress on revenue recognition under the roughly 77.2 billion won SoC development-service contract, and whether alternative revenue sources are secured after the contract expires, should be monitored."
+    "ko": "SoC 개발 용역 계약의 종료 시점이다. 용역 매출이 줄어드는 구간에서 기존 제품 매출이 이를 대체하는지, 이후 신규 용역 계약이 이어지는지가 중기 확인 지점이다.",
+    "en": "The end date of the SoC development service contract. Whether existing product sales can replace service revenue and whether new service contracts follow are the medium-term checkpoints."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "텔레칩스는 2025년 연간 기준으로는 영업손실과 순손실을 기록하며 자기자본 축소와 부채비율 상승을 동반했지만, 2025년 4분기부터 2026년 2분기까지는 세 개 분기 연속 영업이익 흑자를 이어가는 회복 흐름을 보였다. SoC 개발용역 매출 반영과 콘티넨탈·폭스바겐 등 해외 완성차 대상 신제품 공급 확대가 매출 성장의 축으로 작용하고 있으며, 지역별로도 일본·동남아·인도 등으로 매출 기반이 넓어지는 모습이다. 다만 영업이익 흑자에도 지분법 평가손실 등 비영업 요인으로 순이익이 재차 적자로 돌아서는 구간이 반복되고 있어, 이익의 질적 안정성은 아직 확인되지 않은 상태다. ADAS·게이트웨이·AI 가속기 등 신사업은 상용화 초기 단계에 있어 향후 실적 기여 시점과 규모를 지켜볼 필요가 있다. 배당은 지급되지 않고 있으며, 주가는 순자산가치에 근접한 수준에서 거래되고 있어 이익 회복의 지속성이 향후 판단의 핵심 변수로 남아 있다. 투자 판단에 앞서 다가오는 분기 실적 발표와 신규 공급계약 공시를 통해 회복세의 지속 여부를 추가로 확인하는 것이 바람직하다.",
-   "en": "Telechips posted an operating loss and a net loss for full-year 2025, accompanied by shrinking equity and a higher debt ratio, but showed a recovery trend with three consecutive quarters of operating profit from the fourth quarter of 2025 through the second quarter of 2026. Revenue growth has been driven by the recognition of SoC development-service revenue and expanded new-product supply to overseas automakers such as Continental and Volkswagen, with the revenue base broadening geographically into Japan, Southeast Asia, and India. However, despite positive operating profit, net income has repeatedly reverted to losses due to non-operating factors such as equity-method valuation losses, meaning the qualitative stability of earnings has not yet been confirmed. New businesses in ADAS, gateway chips, and AI accelerators remain at an early commercialization stage, so the timing and scale of their future earnings contribution warrant continued observation. The company does not pay a dividend, and its share price trades near net asset value, leaving the durability of the earnings recovery as the key variable for future assessment. Before making any investment decision, it would be advisable to further confirm whether the recovery trend continues through upcoming quarterly earnings releases and new supply-contract disclosures."
+   "ko": "텔레칩스의 실적은 적자 구조에서 분기 흑자 구간으로 옮겨 가는 과정으로 읽힌다. 공시 기준 2026년 1분기 매출은 661억원, 영업이익은 61.2억원으로 정점을 찍은 뒤 2분기와 3분기에 영업이익이 줄었다. 매출 기반은 IVI, 계기판·HUD, 로열티, SoC 개발 용역으로 넓어졌으나 3분기 영업이익은 시장 예상치를 크게 밑돌았다. 지배주주 순이익은 1분기 흑자 이후 2분기 순손실 41억원, 3분기 순이익 16.3억원으로 엇갈려, 영업 단의 개선이 최종 손익으로 얼마나 이어지는지가 남은 과제다. 재무 측면에서는 2025년 말 부채비율이 157.1%로 올라 있으며, 자본총계 1,430억원 대비 부채총계 2,246억원의 구조가 이후 이익 흐름에 따라 달라질 수 있다. 우호적인 요인은 SoC 개발 용역 계약이 2028년 1월 31일까지 설정돼 있다는 점과 해외 고객 확대이며, 불리한 요인은 환율 하락과 특정 제품 비중의 집중이다. 다음 확인 지점은 2026년 4분기 잠정실적과 2026 사업보고서이며, 그 결과에 따라 분기 흑자 지속 여부가 가려진다.",
+   "en": "Telechips' results read as a shift from an operating-loss structure toward quarterly profitability. Based on disclosed figures, revenue peaked at KRW 66.1 billion and operating profit at KRW 6.12 billion in the first quarter of 2026, and operating profit fell in the second and third quarters. The revenue base has widened across IVI, cockpit and HUD, royalty and SoC development services, but third-quarter operating profit fell well short of market expectations. Net profit attributable to controlling shareholders swung from a first-quarter profit to a second-quarter loss of KRW 4.1 billion and a third-quarter profit of KRW 1.63 billion, so how far operating improvement reaches the bottom line remains the open question. On the balance sheet, the debt-to-equity ratio stood at 157.1% at the end of 2025, with total liabilities of KRW 224.6 billion against total equity of KRW 143 billion, and this structure may shift with earnings. Supportive factors include the SoC development contract running to January 31, 2028 and growth in overseas customers, while the weaker exchange rate and concentration in one product line weigh against it. The next checkpoints are the fourth-quarter 2026 preliminary results and the 2026 annual report, which will indicate whether quarterly profitability is sustained."
   }
  },
  "sources": [
-  "http://www.dailyinvest.kr/news/articleViewAmp.html?idxno=70684",
-  "https://finance.thesmileinfo.com/2026/09/car.html",
-  "https://v.daum.net/v/20260507175721582",
-  "https://stockinfo7.com/jji/view/875046",
-  "https://www.judal.co.kr/?view=talkV&category=all&themeIdx=&idx=2590",
-  "https://m.thinkpool.com/compDiscuss/cont/1011977",
-  "https://www.donppu.com/board_FNAQ19/1331144",
-  "https://m.thinkpool.com/compDiscuss/cont/1010335",
-  "https://www.dailyinvest.kr/news/articleView.html?idxno=57917",
-  "https://zdnet.co.kr/view/?no=20260806172115",
-  "https://www.newspim.com/news/view/20260807000283",
-  "https://www.investing.com/equities/telechips-inc-earnings",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260323001319&docno=&viewerhost=",
+  "https://zdnet.co.kr/view/?no=20261112170052",
+  "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=715054",
+  "https://www.ddaily.co.kr/page/view/2026050717261884799",
+  "https://news.nate.com/view/20260806n27960",
+  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=663600",
+  "https://m.news.nate.com/view/20260507n38230",
   "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=054450",
-  "https://news.nate.com/view/20260511n15120",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20251106000420",
+  "https://www.vegannews.co.kr/news/article.html?no=404271",
+  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=504052",
   "https://file.alphasquare.co.kr/media/pdfs/company-report/%EC%9C%A0%EC%A7%8420251107%ED%85%94%EB%A0%88%EC%B9%A9%EC%8A%A4.pdf",
-  "https://www.eugenefn.com/common/files/amail/20250808_054450_jongsun.park_2426.pdf"
+  "https://www.newspim.com/news/view/20260807000283",
+  "https://news.nate.com/view/20260511n15120",
+  "https://www.eugenefn.com/common/files/amail/20241108_054450_jongsun.park_2240.pdf",
+  "https://www.eugenefn.com/common/files/amail/20250808_054450_jongsun.park_2426.pdf",
+  "http://www.dailyinvest.kr/news/articleViewAmp.html?idxno=70684",
+  "https://file.alphasquare.co.kr/media/pdfs/company-report/20240812_054450_jongsun.park_2175.pdf",
+  "https://stockinfo7.com/jji/view/875046",
+  "https://m.thinkpool.com/compDiscuss/cont/1012856"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "054450",
  "name": "텔레칩스",
  "name_en": "TelechipsInc.",
@@ -223,11 +223,11 @@
   "반도체"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 07:07",
- "dataDate": "20260904",
+ "reportDate": "2026-11-18",
+ "reportTs": "2026-11-18 06:54",
+ "dataDate": "20261117",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-11-17",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -297,12 +297,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 44302951058,
-    "op": -3554239767,
-    "np_owner": -3219852873
-   },
-   {
     "q": "2025Q3",
     "rev": 50245554721,
     "op": -2719188633,
@@ -325,28 +319,39 @@
     "rev": 59173535679,
     "op": 3179899771,
     "np_owner": -4097427359
+   },
+   {
+    "q": "2026Q3",
+    "rev": 63326368317,
+    "op": 492406294,
+    "np_owner": 1633222801
    }
   ],
   "valuation": {
-   "price": 9390,
-   "mcap": 0.1422,
+   "price": 7680,
+   "mcap": 0.1163,
    "shares": 15144233,
    "total_shares": 15144233,
-   "wavg_shares": 14737338,
+   "wavg_shares": 14762792,
    "per": null,
-   "eps": -3935,
-   "pbr": 0.991,
-   "bps": 9475,
-   "roe_ttm": -34.8,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": -58083059539,
+   "eps": -3546,
+   "pbr": 0.8033,
+   "bps": 9561,
+   "roe_ttm": -31.6,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": -52343699124,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 0.95,
+   "eps_src": "공시",
+   "pbr_krx": 0.79,
    "bps_krx": 9686.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
-   "div": 0.0
+   "div": 0.0,
+   "hidden": {
+    "per": "loss"
+   }
   }
- }
+ },
+ "textRules": 2
 }

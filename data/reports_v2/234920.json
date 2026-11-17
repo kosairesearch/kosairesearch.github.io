@@ -1,220 +1,210 @@
 {
  "title": {
-  "ko": "실질심사 그늘 속 2분기 흑자전환",
-  "en": "Operating Turnaround Amid Delisting Review"
+  "ko": "매출 회복과 흑자 전환, 적자 구조는 아직",
+  "en": "Revenue rebound and first profit quarters, but the deficit history still weighs"
  },
  "lead": {
-  "ko": "자이글은 2026년 2분기 처음으로 영업이익 흑자전환에 성공했지만, 상장적격성 실질심사에 따른 거래정지 이력과 자본총계 감소세는 아직 해소되지 않았다.",
-  "en": "Zaigle posted its first quarterly operating profit in 2026 Q2, but the overhang from its KOSDAQ delisting eligibility review and a shrinking equity base has not yet been resolved."
+  "ko": "자이글은 2025년 4분기부터 2026년 3분기까지 매출이 4개 분기 연속 늘었고 2026년 2분기부터 영업이익이 흑자로 돌아섰지만, 2022년부터 2025년까지 4년 연속 적자와 자본 축소의 흔적은 그대로 남아 있다.",
+  "en": "Zaigle's revenue has risen for four straight quarters through Q3 2026 and operating profit has been positive since Q2 2026, but four years of losses from 2022 to 2025 and a shrinking equity base still define the balance sheet."
  },
  "keypoints": [
   {
-   "ko": "2026년 2분기 영업이익 7.2억원으로 흑자전환, 순이익도 1분기(1.7억원)에 이어 2개 분기 연속 흑자(6.0억원)를 기록했다.",
-   "en": "Operating profit turned positive at KRW 0.72bn in 2026 Q2, and net income to owners posted a second consecutive quarterly profit (KRW 0.60bn) after Q1's KRW 0.17bn."
+   "ko": "매출 회복: 2026년 3분기 매출은 38.5억원으로 2025년 3분기(17.3억원) 대비 전년 동기 기준 122.1% 늘었다.",
+   "en": "Revenue recovery: Q3 2026 revenue of KRW 3.85 billion was up 122.1% year on year from KRW 1.73 billion in Q3 2025."
   },
   {
-   "ko": "연간 매출은 2022년 149.9억원에서 2023년 41.4억원으로 급락한 뒤 2024년 120.7억원으로 반등했다가 2025년 82.3억원으로 다시 줄어드는 등 등락이 크다.",
-   "en": "Annual revenue swung sharply from KRW 14.99bn in 2022 to KRW 4.14bn in 2023, rebounded to KRW 12.07bn in 2024, then fell back to KRW 8.23bn in 2025."
+   "ko": "영업 흑자 전환: 2026년 2분기 영업이익 7.2억원에 이어 3분기 10.6억원으로 두 분기 연속 흑자다.",
+   "en": "Operating profit turned positive: operating profit of KRW 721 million in Q2 2026 was followed by KRW 1.06 billion in Q3, the second consecutive profitable quarter."
   },
   {
-   "ko": "자기자본은 2022년 417억원에서 2025년 192억원까지 4년 연속 줄었고, 부채비율은 같은 기간 46.4%에서 158.9%로 상승했다.",
-   "en": "Total equity declined for four straight years, from KRW 41.7bn in 2022 to KRW 19.2bn in 2025, while the debt ratio rose from 46.4% to 158.9% over the same span."
+   "ko": "연간 적자 지속: 2025년 영업손실 36.6억원, 지배주주 순손실 53.7억원으로 2022년부터 2025년까지 4년 연속 적자다.",
+   "en": "Annual losses persist: the 2025 operating loss was KRW 3.66 billion and the net loss attributable to controlling shareholders was KRW 5.37 billion, the fourth straight year of losses since 2022."
   },
   {
-   "ko": "2025년 10월 공시위반 벌점 누적으로 거래가 정지되며 상장적격성 실질심사 대상이 됐고, 6개월 개선기간 종료 이후 거래소의 최종 판단이 아직 확인되지 않았다.",
-   "en": "Trading was suspended in October 2025 after cumulative disclosure-violation penalty points triggered a delisting eligibility review, and the exchange's final decision following the six-month improvement period has not yet been confirmed."
+   "ko": "재무 부담: 2025년 말 부채비율은 158.9%이고 자본총계는 192억원, 부채총계는 305억원이다.",
+   "en": "Balance sheet pressure: the debt-to-equity ratio was 158.9% at end-2025, with total equity of KRW 19.2 billion and total liabilities of KRW 30.5 billion."
   },
   {
-   "ko": "주방 웰빙가전 중심 사업을 고주파·LED 기반 헬스케어 기기로 다각화하는 전략을 지속하고 있다.",
-   "en": "The company continues to diversify from its core wellness kitchen appliance business into radio-frequency and LED-based healthcare devices."
+   "ko": "지배구조·유동성: 최대주주 등 지분은 68.24%이고 유동주식 비율은 30.98%다(2026년 9월 30일 기준).",
+   "en": "Ownership and liquidity: the largest shareholder group holds 68.24%, and the free float ratio is 30.98% (as of September 30, 2026)."
   }
  ],
  "business": {
-  "ko": "자이글은 2008년 세계 최초의 상부 발열·하부 복사열 방식 적외선 전기 그릴을 출시하며 창업했고, 2016년 코스닥에 상장했다. 매출의 중심은 자체 브랜드 '자이글'로 판매하는 웰빙가전 사업부문으로, 그릴·에어프라이어 등 주방조리기기가 핵심 제품군이다. 여기에 산소·고주파 기반 의료기기를 더해 헬스케어 영역으로 사업을 확장했으며, 2023년 고주파 자극기 '네스트'를 출시하고 이후 '자이글온' 브랜드로 LED 피부관리기, 웨어러블 복부관리기 '셀375' 등을 내놓았다. 유통은 홈쇼핑과 온·오프라인 채널을 함께 운영하며, 5월에는 조리명장과 협업한 그릴·에어프라이어 '자이글 플립'을 선보이고 6월에는 '셀375'를 홈쇼핑에 편성하는 등 신제품 마케팅을 이어가고 있다. 외식사업과 식품유통사업도 영위하고 있으나 매출 비중은 웰빙가전·헬스케어 대비 작은 편이다. 과거 북미 이차전지 합작법인(JV) 설립을 추진했으나 자산 출자 논란과 유상증자 무산 등으로 사업이 사실상 좌초됐다. 소형 생활가전 시장은 1인가구 확대와 식생활 패턴 변화에 따라 경쟁 구도가 재편되고 있으며, 다수의 국내외 업체가 참여해 경쟁이 치열한 편이다. 회사는 이러한 환경에서 차별화된 의료가전 인허가 제품과 헬스케어 마케팅에 집중해 수익원을 다변화하려는 전략을 취하고 있다.",
-  "en": "Zaigle was founded in 2008 with the world's first infrared electric grill using top-heating and bottom radiant-heat technology, and it listed on KOSDAQ in 2016. Revenue is centered on the wellness appliance segment sold under its own 'Zaigle' brand, with grills and air fryers as core products. The company has expanded into healthcare devices based on oxygen and radio-frequency technology, launching the RF stimulator 'NEST' in 2023 and later rolling out LED skin-care devices and the wearable abdominal device 'Cell375' under the 'Zaigle On' brand. Distribution runs through home-shopping channels alongside online and offline retail; in May the company launched the grill/air fryer 'Zaigle Flip' developed with a master chef, and in June it aired 'Cell375' on home shopping as part of continued new-product marketing. Zaigle also operates food-service and food-distribution businesses, though these remain smaller than the wellness appliance and healthcare segments. The company previously pursued a North American secondary battery joint venture, but the project effectively collapsed amid controversy over overvalued in-kind asset contributions and a failed rights offering. The small-appliance market is being reshaped by rising single-person households and changing dietary patterns, with intense competition from numerous domestic and overseas players. Against this backdrop, Zaigle is focusing on regulator-approved medical appliance products and healthcare marketing to diversify its revenue base."
+  "ko": "자이글은 2008년 설립된 주방·헬스케어 가전 기업이다. 주력은 상부 가열 방식의 적외선 조리기 '자이글 그릴'이며, 적외선 가열 기술을 적용한 그릴·오븐·그리들 등 주방 가전을 개발해 생산한다. 연기와 냄새를 잡는 독창적 구조로 국내 홈쇼핑에서 높은 판매 실적을 낸 제품군이 회사의 출발점이다. 이후 산소와 고주파를 활용한 의료기기로 사업을 넓혀 헬스케어 전문 기업으로의 전환을 추진해 왔다. 2023년 3월에는 의료 가전 '자이글온 의료기'가 식약처로부터 의료기 3등급 허가를 받았고, 같은 해 4월에는 고주파 의료기 '네스트'가 출시됐다. 2025년 12월에는 고주파 얼굴순환케어기 '자이글 온 실크'와 복부마사지기 '자이글온 Cell375' 등 홈케어 신제품이 나왔다. 판매 경로는 홈쇼핑과 면세점, 자체 온라인 채널이 중심이다. 외부 집계 사이트는 2026년 2분기 매출을 웰빙가전(헬스케어) 부문 한 곳으로 분류하고 있다. 회사는 2022년 12월 국내 LFP 배터리 생산 자산을 약 74억원에 인수하며 이차전지 사업에 나섰으나, 2023년 7월 미국 합작사 자이셀의 지분 30%를 취득한 뒤 2024년 12월 현물출자와 지분 취득이 전면 취소되면서 사업은 사실상 중단된 상태로 보도됐다.",
+  "en": "Zaigle is a kitchen and healthcare appliance maker founded in 2008. Its core product is the top-heating infrared cooker 'Zaigle Grill', and the company develops and manufactures grills, ovens and griddles built on infrared heating technology. The product line that smoke- and odor-reducing design built is the starting point, and it sold strongly through Korean home shopping channels. Later the company widened into oxygen and high-frequency medical devices as it pursued a shift toward a healthcare specialist. In March 2023 the 'Zaigle ON medical device' received a Class 3 medical device approval from the Ministry of Food and Drug Safety, and the high-frequency device 'Nest' launched in April 2023. In December 2025 new home-care products were launched, including the high-frequency facial care device 'Zaigle ON Silk' and the abdominal massager 'Zaigle ON Cell375'. Sales run mainly through home shopping, duty-free stores and the company's own online channels. An external data aggregator classifies Q2 2026 revenue under a single segment, wellbeing appliances (healthcare). In December 2022 the company acquired domestic LFP battery production assets for about KRW 7.4 billion and entered secondary batteries, but after taking a 30% stake in the US joint venture ZAICELL in July 2023, the in-kind contribution and share acquisition were fully cancelled in December 2024, and the business was reported as effectively halted."
  },
  "earnings": {
-  "ko": "연간 실적을 보면 매출은 2022년 149.9억원에서 2023년 41.4억원으로 72% 급감했고, 2024년 120.7억원으로 반등했다가 2025년 82.3억원으로 다시 32% 줄어드는 등 부침이 컸다. 영업손익은 4개년 모두 적자로, 영업이익률은 2022년 -17.7%, 2023년 -209.1%, 2024년 -40.5%, 2025년 -44.4%를 기록했다. 지배주주 순손실은 2023년 103.6억원으로 가장 컸고 이후 2024년 67.7억원, 2025년 53.7억원으로 손실 규모가 점차 줄어드는 흐름을 보였다. 분기별로는 2025년 3분기 영업손실이 10.2억원으로 2분기(-8.0억원)보다 확대됐다가 4분기 -4.9억원, 2026년 1분기 -5.0억원으로 손실이 크게 축소됐고, 2026년 2분기에는 영업이익 7.2억원으로 흑자전환에 성공했다. 순이익 역시 2026년 1분기 1.7억원 흑자로 전환했는데, 이는 유형자산 처분이익 등 영업외 요인이 반영된 결과였고 영업손익 자체는 여전히 적자였다. 2분기에는 영업이익과 순이익(6.0억원)이 함께 흑자를 기록해 자산매각 효과를 제외하더라도 본업 수익성이 개선됐을 가능성을 시사한다. 다만 최근 네 개 분기(2025년 3분기~2026년 2분기) 합산 지배주주 순손실은 18.2억원으로 여전히 적자 구간에 머물러 있다. 영업활동현금흐름은 2022년 -8.3억원에서 2023년 -63.4억원, 2024년 -42.5억원, 2025년 -67.9억원으로 4개년 연속 마이너스를 기록해, 손익 개선이 현금창출력 회복으로 이어졌는지는 다음 분기 지표로 추가 확인이 필요하다.",
-  "en": "Annual revenue swung from KRW 14.99bn in 2022 down to KRW 4.14bn in 2023 (a 72% drop), rebounded to KRW 12.07bn in 2024, then fell back 32% to KRW 8.23bn in 2025. Operating margins were negative in all four years: -17.7% in 2022, -209.1% in 2023, -40.5% in 2024, and -44.4% in 2025. Net loss attributable to owners peaked at KRW 10.36bn in 2023 before narrowing to KRW 6.77bn in 2024 and KRW 5.37bn in 2025. On a quarterly basis, the operating loss widened to KRW 1.02bn in 2025 Q3 from KRW 0.80bn in Q2, then narrowed sharply to KRW 0.49bn in Q4 and KRW 0.50bn in 2026 Q1, before the company posted an operating profit of KRW 0.72bn in 2026 Q2. Net income also turned positive in 2026 Q1 at KRW 0.17bn, though that swing reflected non-operating items such as gains on disposal of tangible assets while the operating line remained in loss. In Q2, both operating profit and net income (KRW 0.60bn) turned positive together, suggesting the core business may have improved even setting aside asset-sale effects. Still, the trailing four-quarter (2025 Q3–2026 Q2) net loss to owners totaled KRW 1.82bn, keeping the company in loss territory over that window. Operating cash flow was negative in all four years — KRW -0.83bn in 2022, KRW -6.34bn in 2023, KRW -4.25bn in 2024, and KRW -6.79bn in 2025 — so whether the earnings improvement translates into a sustained recovery in cash generation requires confirmation from upcoming quarterly data."
+  "ko": "연간 매출은 2022년 150억원에서 2023년 41.4억원(전년 대비 72.4% 감소)으로 줄었다가 2024년 121억원(전년 대비 191.3% 증가)으로 회복됐고, 2025년에는 82.3억원(전년 대비 31.8% 감소)이다. 2022~2025년 중 가장 큰 해는 2022년, 가장 작은 해는 2023년이다. 영업손실은 2022년 26.5억원, 2023년 86.7억원, 2024년 48.9억원, 2025년 36.6억원으로 2022년부터 2025년까지 4년 연속 적자이며, 손실이 가장 컸던 2023년에는 매출이 줄면서 영업이익률이 -209.1%까지 떨어졌다. 2025년 영업손실은 2024년보다 줄었지만 영업이익률은 -44.4%로 2024년 -40.5%보다 낮아, 매출 감소의 영향이 컸다. 지배주주 순손실은 2022년 37.4억원에서 2023년 104억원으로 커진 뒤 2024년 67.7억원, 2025년 53.7억원으로 줄었고, 당기순이익(비지배지분 포함)도 같은 금액의 순손실로 기록됐다. 영업활동 현금흐름은 2022년 -8.3억원, 2023년 -63.4억원, 2024년 -42.5억원, 2025년 -67.9억원으로 4년 모두 마이너스다. 부채비율은 2022년 46.4%에서 2025년 158.9%로 올랐고, 2025년 말 자본총계 192억원과 부채총계 305억원 구조다. 분기 매출은 2025년 3분기 17.3억원에서 2026년 3분기 38.5억원까지 4개 분기 연속 늘었으며, 2026년 3분기는 전년 동기 대비 122.1% 증가했다. 영업손익은 2025년 3분기부터 2026년 1분기까지 영업손실이었다가 2분기 영업이익 7.2억원으로 흑자 전환했고, 3분기 10.6억원은 전 분기 대비 46.5% 증가다. 2026년 1분기 매출총이익률은 42.0%에서 73.4%로 뛰었는데, 같은 분기 매출이 8.0% 늘어나는 동안 매출원가가 절반 이하로 줄었기 때문이다. 분석 보도는 이 원가 개선이 제품 구성 변화나 재고 판매 효과가 아니라 지속 가능한 제조·매입 원가 개선이라면 본업 흑자의 지속성이 높아진다고 봤다. 지배주주 순이익은 2026년 1분기 1.7억원으로 흑자 전환한 뒤 2분기 6억원, 3분기 8.3억원으로 2개 분기 연속 늘었고, 2025년 4분기~2026년 3분기 4개 분기 합계는 4.6억원이다. 자산 매각 대금이나 소송 대금 같은 일회성 요인이 분기 이익에 섞였는지는 다음 정기보고서의 세부 항목으로 확인해야 한다.",
+  "en": "Annual revenue fell from KRW 15 billion in 2022 to KRW 4.14 billion in 2023 (down 72.4% year on year), recovered to KRW 12.1 billion in 2024 (up 191.3%), and then declined to KRW 8.23 billion in 2025 (down 31.8%). Among 2022 to 2025, 2022 was the largest year and 2023 the smallest. Operating losses were KRW 2.65 billion in 2022, KRW 8.67 billion in 2023, KRW 4.89 billion in 2024 and KRW 3.66 billion in 2025, marking four consecutive years of operating losses. In 2023, the year with the largest loss, revenue was at its lowest and the operating margin fell to -209.1%. The 2025 operating loss narrowed from 2024, yet the operating margin was -44.4% against -40.5% in 2024, so the revenue decline weighed heavily. The net loss attributable to controlling shareholders widened from KRW 3.74 billion in 2022 to KRW 10.4 billion in 2023, then narrowed to KRW 6.77 billion in 2024 and KRW 5.37 billion in 2025, and the net loss including non-controlling interests was recorded at the same amounts. Operating cash flow was -KRW 829 million in 2022, -KRW 6.34 billion in 2023, -KRW 4.25 billion in 2024 and -KRW 6.79 billion in 2025, negative in all four years. The debt-to-equity ratio rose from 46.4% in 2022 to 158.9% in 2025, with total equity of KRW 19.2 billion and total liabilities of KRW 30.5 billion at end-2025. Quarterly revenue rose for four consecutive quarters, from KRW 1.73 billion in Q3 2025 to KRW 3.85 billion in Q3 2026, and Q3 2026 was up 122.1% year on year. Operating results were losses from Q3 2025 through Q1 2026, with an operating loss of KRW 502 million in Q1 2026, before Q2 2026 turned to an operating profit of KRW 721 million, and Q3 2026 reached KRW 1.06 billion, up 46.5% from the prior quarter. Gross margin in Q1 2026 rose from 42.0% to 73.4% as cost of sales fell by more than half while revenue grew 8.0% year on year, according to an analysis of the quarterly report. That analysis argued that the durability of the profit turn depends on whether the cost gain came from sustainable manufacturing and purchasing improvements rather than product mix or inventory sales. Net income attributable to controlling shareholders turned positive at KRW 167 million in Q1 2026, then rose to KRW 597 million in Q2 and KRW 826 million in Q3, and the four-quarter total from Q4 2025 to Q3 2026 was KRW 459 million. Whether one-off items such as asset sale proceeds or litigation proceeds affected quarterly profit should be checked against the detailed items in the next periodic report."
  },
  "industry": {
-  "ko": "소형 생활가전 시장은 1인가구 확대와 식생활 패턴 변화로 인해 제품 구성과 소비 방식이 빠르게 바뀌고 있다. 원적외선 그릴이라는 니치 카테고리를 개척했던 자이글은 상대적으로 진입장벽이 낮아진 시장에서 다수의 국내외 소형가전 업체와 경쟁하고 있으며 실적 부진이 장기화된 배경으로 지목된다. 반면 고령화와 웰빙 트렌드에 힘입어 헬스케어·의료가전 분야는 상대적으로 성장 여지가 있는 것으로 평가되며, 회사는 식약처 인허가를 받은 고주파·LED 제품으로 이 시장을 공략하고 있다. 홈쇼핑 중심 유통구조는 매출 변동성을 키우는 요인으로, 특정 시즌이나 홈쇼핑 편성 효과에 따라 분기 실적이 출렁이는 경향이 있다. 경쟁사 대비 연구개발 투자 비율은 매출 대비 2024년 6.97%에서 2025년 4.22%, 2026년 1분기 2.84%로 점차 낮아지는 추세가 확인되며, 이는 신제품 개발 여력과 관련해 지켜볼 지점이다. 업종 내 소형주 다수가 유사하게 상장적격성 심사, 자본잠식 등 구조적 이슈를 겪고 있어, 자이글의 사례가 특별히 예외적인 것은 아니라는 평가도 나온다.",
-  "en": "The small home-appliance market is undergoing rapid change in product mix and consumption patterns, driven by the rise of single-person households and shifting dietary habits. Having pioneered the niche infrared grill category, Zaigle competes against numerous domestic and overseas small-appliance makers in a market with comparatively low entry barriers, a dynamic cited as a factor behind its prolonged earnings weakness. In contrast, the healthcare and medical-appliance segment is viewed as having relatively more growth potential amid an aging population and wellness trends, and the company is targeting this market with regulator-approved RF and LED products. Its home-shopping-centered distribution structure tends to amplify revenue volatility, with quarterly results swinging based on seasonal factors and shopping-channel scheduling. Research and development spending as a share of revenue has trended lower, from 6.97% in 2024 to 4.22% in 2025 and 2.84% in 2026 Q1, a point worth monitoring in relation to new-product development capacity. Many small-cap peers in the sector face similarly structural issues such as delisting eligibility reviews and capital erosion, suggesting Zaigle's situation is not necessarily an outlier within the industry."
+  "ko": "자이글은 한국거래소 업종 분류상 코스닥 전기·전자에 속하지만, 주력 제품은 주방 조리기와 가정용 헬스케어 기기라 부품 제조 중심의 같은 업종 상장사와 수익 구조가 다르다. 주방 가전에서 회사는 상부 적외선 가열이라는 조리 방식을 차별 요소로 내세운다. 홈쇼핑과 면세점 중심 유통은 신제품 반응에 따라 매출 변동이 커지는 구조라는 특징이 있다. 헬스케어 라인에는 식약처 허가 제품이 포함돼 있어 주방 가전과 다른 인허가 요건을 거친다. 2차전지 쪽 시장은 LFP 배터리 가격대가 중국 업체 중심으로 낮게 형성돼 있고 국내 대형사도 진입하고 있어, 신규 진출 기업이 가격 경쟁에 노출되기 쉽다는 업계 시각이 있다. 같은 보도에서 업계 관계자는 자이글의 2차전지 성공 여부를 미지수로 봤고, 실제 제품군 확장이 있을 가능성을 휴대용 라인업 확장 쪽으로 해석했다. 2025년 6월 주가 급등은 테슬라 로보택시 기대감에 따라 2차전지 테마주로 묶인 결과로 분석됐다. 자이글의 연구개발 투자는 매출 대비 비율이 2024년 6.97%, 2025년 4.22%, 2026년 1분기 2.84%로 낮아지는 흐름이다. 증권업계 관계자는 신사업 키워드에 주가가 반응하는 경향을 지적하며 실제 신사업 추진 여부를 까다롭게 확인해야 한다고 말했다. 같은 업종의 대형 부품사와는 규모와 수익성 차이가 커서 직접 비교보다 자체 실적 추세로 읽는 편이 적절하다.",
+  "en": "Under the Korea Exchange classification Zaigle sits in the KOSDAQ electrical and electronics sector, but its core products are kitchen cookers and household healthcare devices, so its earnings model differs from component makers in the same sector such as Samsung Electro-Mechanics and LG Innotek. In kitchen appliances, the company positions its top-down infrared cooking method as its point of difference. Distribution centered on home shopping and duty-free retail tends to make revenue swing with how new products sell. The healthcare line includes devices approved by the Ministry of Food and Drug Safety, which follow approval requirements different from those for kitchen appliances. In secondary batteries, LFP cell prices have settled low under Chinese producers and large Korean firms are also entering, so a newcomer may face price competition, a view raised by industry participants. One report noted that industry sources treated the success of Zaigle's battery business as uncertain. A June 2025 share price surge was attributed to the stock being grouped with secondary battery themes on expectations tied to Tesla's robotaxi plans. Research and development spending as a share of revenue fell from 6.97% in 2024 to 4.22% in 2025 and 2.84% in Q1 2026. A securities industry source has noted that the shares tend to react to new-business keywords and that actual progress in new businesses should be checked carefully. Because the scale and profitability gap with larger component makers in the same sector is wide, reading the company's own earnings trend is more appropriate than direct comparison."
  },
  "outlook": {
-  "ko": "회사는 상장적격성 실질심사 개선계획에서 인천·평택 공장 등 비업무용 부동산을 매각해 금융기관 차입금을 상환하고, 자체 렌털·오프라인 매장 확대와 신제품 출시로 가전사업을 정상화하겠다는 방향을 제시했다. 이에 따라 5월 그릴·에어프라이어 '자이글 플립'을, 6월 고주파 복부관리기 '셀375'를 홈쇼핑에 선보이는 등 신제품 마케팅이 이어졌다. 또한 거래정지의 발단이 된 고주파 마사지기 공급계약과 관련한 약 19억원 규모의 미수 물품대금 청구소송에서 승소해 4월 판결이 확정됐으며, 실제 현금 회수 여부가 유동성 개선의 관전 포인트로 남아 있다. 2026년 1분기에는 부동산 처분이익이 순이익 흑자전환을 이끌었고, 2분기에는 영업이익 자체가 흑자로 전환돼 개선계획 이행이 일부 실적에 반영되기 시작한 것으로 보인다. 다만 자산 매각을 통한 차입금 상환이 반복 가능한 영업이익 개선으로 이어지는지, 마케팅 비용 확대가 판매관리비 증가로 되돌아오지 않는지는 다음 분기 재무제표에서 추가로 확인해야 할 부분이다. 상장적격성 실질심사의 최종 결과(상장유지 여부)는 여전히 회사의 향후 경영활동 반경을 좌우할 핵심 변수로 남아 있다.",
-  "en": "In its delisting-eligibility improvement plan, the company outlined a path to normalize its appliance business by selling non-business-use real estate, including plants in Incheon and Pyeongtaek, to repay financial-institution borrowings, while expanding self-operated rental and offline stores and launching new products. Consistent with this, new-product marketing continued with the 'Zaigle Flip' grill/air fryer in May and the RF abdominal device 'Cell375' aired on home shopping in June. The company also won a roughly KRW 1.9bn receivables lawsuit tied to the RF massager supply contract that originally triggered the trading suspension, with the ruling finalized in April, though actual cash collection remains a point to watch for liquidity improvement. In 2026 Q1, gains from real-estate disposal drove the swing to net profit, and in Q2 the operating line itself turned positive, suggesting the improvement plan is starting to show up in results. Whether debt repayment funded by asset sales translates into repeatable operating profit improvement, and whether expanded marketing spending feeds back into higher selling and administrative expenses, remain items to verify in upcoming quarterly filings. The final outcome of the delisting eligibility review — whether the listing is maintained — remains a key variable shaping the scope of the company's future operations."
+  "ko": "전망은 공시 실적의 분기 흐름과 회사 및 언론이 짚은 관전 지점을 기준으로 정리한다. 2026년 7월 29일자 보도는 2분기 관전 지점으로 매출총이익률 73%대 유지, 영업손익 흑자 전환, 만기 차입금 상환·차환, 부동산 매각대금 사용처, 소송대금 회수를 꼽았다. 이 중 영업손익 흑자 전환은 2분기 영업이익 7.2억원으로 이행됐고 3분기 영업이익 10.6억원으로 이어졌다. 매출총이익률이 1분기 수준인 73.4%에서 유지되는지는 원가 구조가 일회성이 아닌지 가르는 확인 지점이다. 헬스케어 신제품 파이프라인으로는 2025년 12월 출시된 '자이글 온 실크'와 'Cell375'가 있으며, 이 제품군의 매출 기여가 4개 분기 연속 증가 흐름과 맞물리는지가 확인 대상이다. 2차전지 사업은 2024년 12월 지분 취득이 취소된 뒤 재개 여부가 불투명하고, 2025년 보도 당시 회사 관계자는 사업이 구체적으로 진행되면 공시로 알리겠다고 밝혔다. 상장적격성 실질심사 관련 후속 절차는 2025년 11월 조사기간 연장 보도 이후 공시로 확인해야 하는 사안이다. 자산 매각과 차입금 상환이 2026년 4분기 이후 재무제표에 어떻게 반영되는지도 확인 지점이다. 회사가 제시한 연간 실적 목표치는 이 리포트에 옮길 수 있는 형태로 정리돼 있지 않아, 전망은 확정 실적과 일정 중심으로 본다. 다음 정기보고서인 2026년 사업보고서에서 연간 영업손익과 영업활동 현금흐름의 방향이 확인된다.",
+  "en": "This outlook is organized around the quarterly trend in reported results and the checkpoints that the company and the press have highlighted. A report dated July 29, 2026 pointed to five Q2 checkpoints: keeping gross margin in the 73% range, a turn to operating profit, repayment or refinancing of maturing borrowings, use of proceeds from real estate sales, and collection of litigation proceeds. Of these, the operating profit turn was delivered in Q2 with KRW 721 million, followed by KRW 1.06 billion in Q3. Whether gross margin holds near the Q1 2026 level of 73.4% will show whether the cost gains are durable. The healthcare pipeline includes 'Zaigle ON Silk' and 'Cell375', launched in December 2025, and whether this line adds to the four-quarter revenue growth is the item to watch. The secondary battery business is uncertain after the share acquisition was cancelled in December 2024, and in 2025 the company said it would disclose through filings once the business moved forward concretely. Follow-up to the listing eligibility review, which was extended in November 2025, should be confirmed through company filings. Also to be watched is how asset sales and debt repayment are reflected in financial statements after Q4 2026. The company's annual earnings targets are not set out in a form that can be carried into this report, so the outlook is framed around reported results and scheduled filings. The direction of annual operating profit and operating cash flow will be confirmed in the 2026 annual report, the next periodic report."
  },
  "valuation_comment": {
-  "ko": "자이글은 최근 네 개 분기 기준으로도 지배주주 순손실을 벗어나지 못한 상태이며, 연간 기준으로는 4개년 연속 영업적자가 이어졌다. 이 때문에 순이익을 기준으로 한 전통적인 밸류에이션 지표를 적용하기 어려운 구간이 지속됐고, 시장의 관심은 주가와 주당순자산의 관계, 즉 순자산 대비 프리미엄 혹은 할인 여부에 더 쏠려 있다. 현재 주가는 장부상 순자산가치를 상회하는 수준에서 거래되는 편으로, 이는 향후 실적 개선 기대가 일부 반영된 결과로 해석될 수도 있고, 반대로 자본총계가 지속적으로 줄어드는 추세를 감안하면 순자산의 질적 변화를 함께 봐야 한다는 시각도 있다. 배당은 지급되지 않고 있어 배당 관련 지표는 업종 평균 대비 낮은 편에 해당한다. 2026년 2분기의 영업이익·순이익 동시 흑자전환이 다음 분기에도 이어지는지가 순자산 대비 프리미엄의 정당성을 판단하는 데 중요한 잣대가 될 것으로 보인다.",
-  "en": "Zaigle has yet to escape a net loss attributable to owners even on a trailing four-quarter basis, and on an annual basis it has posted operating losses for four consecutive years. This has made traditional profit-based valuation metrics difficult to apply, shifting market attention toward the relationship between the share price and book value per share — that is, whether the stock trades at a premium or discount to net assets. The current share price tends to sit above book net asset value, which could reflect some pricing-in of future earnings-recovery expectations, though the continuing decline in total equity means the qualitative trend of that net-asset base also warrants attention. No dividend is currently paid, placing dividend-related metrics below the sector average. Whether the simultaneous operating-profit and net-income turnaround seen in 2026 Q2 continues into subsequent quarters will likely be an important benchmark for assessing the justification of any premium to net asset value."
+  "ko": "자이글의 밸류에이션은 적자 구간이 길었던 실적 흐름 위에서 해석해야 한다. 주가수익비율(PER)은 2026년 2분기 흑자 전환 이후에도 이익 규모가 작아 배수 자체가 크게 나오며, 이는 이익 기반이 아직 얇다는 뜻으로 읽힌다. 주가순자산비율(PBR)은 2025년 말 자본총계가 192억원으로 줄어든 상태에서 순자산 대비 프리미엄이 붙은 구간에 있다. 배당수익률은 업종 평균을 밑도는 수준이다. 2023년 신사업 발표 때 단기 급등한 이력이 있어, 주가가 실적보다 테마에 반응한 시기가 있었다는 점도 함께 볼 대목이다. 최대주주 지분이 68.24%로 높고 유동주식 비율이 30.98%에 그쳐, 거래 구조가 주가 움직임에 영향을 줄 수 있다. 같은 전기·전자 업종 상장사와 단순 비교하기에는 적자 기간이 길어 비교 의미가 제한적이다. 밸류에이션 해석의 핵심 확인 지점은 4분기 영업손익이 흑자를 이어가 이익 기반이 넓어지는지다.",
+  "en": "Zaigle's valuation should be read against a long run of losses. The price-to-earnings ratio stays high even after the Q2 2026 profit turn because earnings remain small, which suggests the earnings base is still thin. The price-to-book ratio sits at a premium to net asset value, with total equity down to KRW 19.2 billion at end-2025. The dividend yield is below the sector average. The shares rose sharply in the short term when new businesses were announced in 2023, so there have been periods when the price responded to themes more than to earnings. The largest shareholder group holds 68.24% and the free float is 30.98%, so the trading structure can influence price moves. Because losses have lasted for years, a simple comparison with listed peers in the same sector has limited meaning. The key item to watch for the valuation read is whether operating profit stays positive in Q4 2026, which would widen the earnings base."
  },
  "bull": [
   {
    "title": {
-    "ko": "2분기 영업이익 첫 흑자전환",
-    "en": "First Operating Profit Turnaround in Q2"
+    "ko": "분기 매출 증가가 4개 분기 이어짐",
+    "en": "Quarterly revenue growth for four straight quarters"
    },
    "body": {
-    "ko": "2026년 2분기 영업이익이 7.2억원으로 흑자전환했고, 순이익도 6.0억원으로 1분기에 이어 2개 분기 연속 흑자를 기록했다. 1분기 순이익 흑자가 자산처분이익에 의존한 것과 달리, 2분기는 영업손익 자체가 개선된 점에서 질적으로 다른 신호로 해석될 수 있다. 매출도 2025년 3분기 17.3억원에서 2026년 2분기 27.2억원까지 4개 분기 연속 증가하는 흐름을 보였다.",
-    "en": "Operating profit turned positive at KRW 0.72bn in 2026 Q2, and net income also posted a second straight quarterly profit at KRW 0.60bn following Q1. Unlike Q1's profit, which relied on asset disposal gains, Q2's improvement stemmed from the operating line itself, marking a qualitatively different signal. Revenue also rose for four consecutive quarters, from KRW 1.73bn in 2025 Q3 to KRW 2.72bn in 2026 Q2."
+    "ko": "2025년 4분기부터 2026년 3분기까지 매출이 4개 분기 연속 증가했고, 2026년 3분기 매출은 38.5억원으로 전년 동기 대비 122.1% 늘었다. 분기별 증가율은 2025년 4분기 28.0%, 2026년 1분기 13.4%, 2분기 8.2%, 3분기 41.4%로 등락이 있다. 매출 회복이 분기 단위로 이어졌다는 점이 강세 근거다. 다만 2025년 연간 매출 82.3억원은 2022년 150억원보다 낮은 수준이다.",
+    "en": "Revenue has increased for four consecutive quarters from Q4 2025 through Q3 2026, and Q3 2026 revenue of KRW 3.85 billion was up 122.1% year on year. Quarter-on-quarter growth has been uneven, at 28.0% in Q4 2025, 13.4% in Q1 2026, 8.2% in Q2 and 41.4% in Q3. The continuity of the recovery across quarters is the main bull argument. Annual revenue of KRW 8.23 billion in 2025 is still below KRW 15 billion in 2022."
    }
   },
   {
    "title": {
-    "ko": "재무구조 개선 노력 진행",
-    "en": "Ongoing Balance Sheet Repair Efforts"
+    "ko": "영업 흑자 전환과 매출총이익률 개선",
+    "en": "Operating profit turn and gross margin improvement"
    },
    "body": {
-    "ko": "회사는 인천·평택 공장 등 비업무용 부동산을 매각해 금융기관 차입금을 상환하는 개선계획을 추진 중이다. 거래정지의 원인이 된 고주파 마사지기 공급계약과 관련해 약 19억원의 미수 물품대금 청구소송에서 승소해 4월 판결이 확정된 점도 유동성 확보에 긍정적인 요인이다. 이러한 조치들이 실제 현금 회수와 차입금 감소로 이어지는지가 향후 재무구조 개선의 핵심이다.",
-    "en": "The company is pursuing an improvement plan involving the sale of non-business real estate, including plants in Incheon and Pyeongtaek, to repay financial-institution borrowings. A court ruling finalized in April, in which the company won a roughly KRW 1.9bn receivables lawsuit tied to the RF massager supply contract that triggered the trading suspension, is also a positive factor for liquidity. Whether these steps translate into actual cash collection and debt reduction will be central to further balance-sheet improvement."
+    "ko": "2026년 2분기 영업이익 7.2억원으로 흑자 전환했고 3분기에는 10.6억원을 기록했다. 2026년 1분기 매출총이익률은 42.0%에서 73.4%로 올랐는데, 매출이 8.0% 늘어나는 동안 매출원가가 절반 이하로 줄어든 결과다. 원가 구조 개선이 지속된다면 영업 흑자의 기반이 넓어진다는 점이 강세 해석의 근거다. 개선 원인이 일시적 재고 판매인지 여부는 아직 가려야 할 과제다.",
+    "en": "Operating profit was KRW 721 million in Q2 2026, a turn to profit, and KRW 1.06 billion in Q3. Gross margin in Q1 2026 rose from 42.0% to 73.4% as cost of sales fell by more than half while revenue grew 8.0%. If the cost improvement persists, the base for operating profit widens, which is the main bull reading. Whether the improvement came from temporary inventory sales still needs to be separated out."
    }
   },
   {
    "title": {
-    "ko": "헬스케어 사업 다각화",
-    "en": "Diversification into Healthcare Devices"
+    "ko": "헬스케어 제품군 확장",
+    "en": "Expansion of the healthcare product line"
    },
    "body": {
-    "ko": "회사는 주방 웰빙가전에서 산소·고주파 기반 헬스케어 기기로 사업 영역을 확장하고 있으며, 식약처 인허가를 받은 제품을 '자이글온' 브랜드로 판매하고 있다. 5월 '자이글 플립', 6월 '셀375' 등 신제품을 잇달아 홈쇼핑에 선보이며 매출 채널을 다변화하고 있다. 고령화와 웰빙 트렌드가 이어지는 가운데 의료가전 분야는 상대적으로 성장 여지가 있는 시장으로 평가된다.",
-    "en": "The company is expanding from wellness kitchen appliances into oxygen- and RF-based healthcare devices, selling regulator-approved products under the 'Zaigle On' brand. It has rolled out new products in succession, including the 'Zaigle Flip' in May and 'Cell375' in June, diversifying its home-shopping sales channels. Amid an aging population and continuing wellness trends, the medical-appliance segment is viewed as having relatively more room to grow."
+    "ko": "2023년 3월 의료 가전 '자이글온 의료기'가 식약처로부터 의료기 3등급 허가를 받았고, 2023년 4월 고주파 의료기 '네스트'가 출시됐다. 2025년 12월에는 고주파 얼굴순환케어기와 복부마사지기 신제품이 나왔다. 주방 가전 중심이던 사업을 허가가 필요한 헬스케어 제품으로 넓힌 점이 강세 요인이다. 신제품의 매출 기여는 공시 실적으로 따로 나뉘어 있지 않아 효과는 후속 분기에서 확인해야 한다.",
+    "en": "In March 2023 the 'Zaigle ON medical device' received a Class 3 medical device approval from the Ministry of Food and Drug Safety, and the high-frequency device 'Nest' launched in April 2023. In December 2025 new high-frequency facial and abdominal care devices came out. Extending a business centered on kitchen appliances into approved healthcare products is the bull-side point. Revenue contribution from the new products is not separated in reported results, so the effect must be confirmed in later quarters."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "매출 규모 축소와 변동성",
-    "en": "Shrinking Revenue Scale and Volatility"
+    "ko": "4년 연속 영업손실과 현금 유출",
+    "en": "Four straight years of operating losses and cash outflows"
    },
    "body": {
-    "ko": "연간 매출은 2022년 149.9억원에서 2025년 82.3억원으로 줄었고, 그 사이 2023년 41.4억원까지 급락하는 등 등락이 매우 컸다. 소형 생활가전 시장의 경쟁 심화와 홈쇼핑 중심 유통구조가 매출 변동성을 키우는 구조적 요인으로 지목된다. 4년 연속 영업적자가 이어지며 사업 규모 자체가 과거 대비 축소된 상태다.",
-    "en": "Annual revenue fell from KRW 14.99bn in 2022 to KRW 8.23bn in 2025, swinging sharply lower to KRW 4.14bn in 2023 along the way. Intensifying competition in the small-appliance market and a home-shopping-centered distribution structure are cited as structural factors amplifying revenue volatility. Four consecutive years of operating losses mean the overall scale of the business has contracted relative to the past."
+    "ko": "2022년부터 2025년까지 영업손실이 4년 연속 이어졌고 지배주주 순손실도 같은 기간 계속됐다. 영업활동 현금흐름은 4년 모두 마이너스였으며, 2025년에는 -67.9억원으로 2024년의 -42.5억원보다 유출이 컸다. 2025년 영업손실은 36.6억원으로 줄었지만 영업이익률은 -44.4%로 2024년보다 나빠졌다. 분기 흑자가 연간 적자 구조를 뒤집을 때까지 구조적 부담이 남는다는 점이 약세 근거다.",
+    "en": "Operating losses have run for four consecutive years from 2022 through 2025, and the net loss attributable to controlling shareholders persisted over the same period. Operating cash flow was negative in all four years, and the 2025 outflow of -KRW 6.79 billion was larger than the -KRW 4.25 billion in 2024. The 2025 operating loss narrowed to KRW 3.66 billion, but the operating margin worsened to -44.4% from -40.5%. Until quarterly profits change the annual loss pattern, the structural burden remains the main bear argument."
    }
   },
   {
    "title": {
-    "ko": "자본 잠식 우려와 레버리지 상승",
-    "en": "Capital Erosion Concerns and Rising Leverage"
+    "ko": "자본 축소와 부채 부담 확대",
+    "en": "Shrinking equity and higher debt burden"
    },
    "body": {
-    "ko": "자기자본은 2022년 417억원에서 2025년 192억원까지 4년 연속 감소했고, 부채비율은 46.4%에서 158.9%로 크게 상승했다. 영업활동현금흐름도 4개년 연속 마이너스를 기록하며 자산 매각 등 비영업적 수단에 의존해 유동성을 확보해온 것으로 보인다. 누적 결손금 확대에 따른 자본잠식 우려가 시장에서 제기된 바 있다.",
-    "en": "Total equity fell for four straight years, from KRW 41.7bn in 2022 to KRW 19.2bn in 2025, while the debt ratio rose sharply from 46.4% to 158.9%. Operating cash flow was also negative for four consecutive years, suggesting the company has relied on non-operating means such as asset sales to secure liquidity. Concerns about capital erosion tied to a growing accumulated deficit have been raised in the market."
+    "ko": "부채비율은 2022년 46.4%에서 2023년 65.1%, 2024년 122.3%, 2025년 158.9%로 매년 올랐다. 2025년 말 자본총계는 192억원, 부채총계는 305억원이다. 자본이 줄어드는 가운데 부채가 늘어난 구조여서 재무 완충력이 약해졌다는 평가가 가능하다. 만기 차입금 상환·차환과 부동산 매각대금 사용처가 부채 부담을 가르는 변수다.",
+    "en": "The debt-to-equity ratio climbed each year from 46.4% in 2022 to 65.1% in 2023, 122.3% in 2024 and 158.9% in 2025. Total equity was KRW 19.2 billion and total liabilities were KRW 30.5 billion at end-2025. With equity shrinking while debt rose, the financial cushion has thinned. Repayment or refinancing of maturing borrowings and the use of real estate sale proceeds are the variables that will determine the debt burden."
    }
   },
   {
    "title": {
-    "ko": "지배구조·컴플라이언스 리스크",
-    "en": "Governance and Compliance Risk"
+    "ko": "2차전지 사업 좌초와 공시 신뢰도 논란",
+    "en": "Secondary battery setback and disclosure credibility concerns"
    },
    "body": {
-    "ko": "증권선물위원회는 자이글과 대표이사를 자본시장법 위반 혐의로 검찰에 고발하고 과징금을 부과한 바 있으며, 이는 실패한 이차전지 합작법인 관련 허위·과장 공시 의혹과 연결돼 있다. 공시위반 벌점 누적으로 거래가 정지되고 상장적격성 실질심사에 들어간 것도 같은 맥락의 리스크다. 가족경영 중심의 지배구조에 대한 시장의 우려도 함께 제기되고 있다.",
-    "en": "The Securities and Futures Commission referred Zaigle and its representative director to prosecutors for alleged violations of the Capital Markets Act and imposed a fine, in connection with allegations of false or exaggerated disclosures tied to the failed secondary-battery joint venture. The trading suspension and subsequent delisting eligibility review, triggered by accumulated disclosure-violation penalty points, stem from the same underlying risk. Market concerns have also been raised regarding the family-centered governance structure."
+    "ko": "2022년 12월 LFP 배터리 자산을 인수하며 신사업에 나섰지만, 2024년 12월 미국 합작사 관련 현물출자와 지분 취득이 전면 취소됐다. 2025년 1월에는 자이셀과의 계약 철회를 이유로 불성실공시법인으로 지정됐다. 관련 보도는 신사업 발표 이후 실제 사업 추진이 검증되지 않았다고 지적했다. 신사업 기대감으로 주가가 움직인 이력이 있어 공시 신뢰도가 약세 요인으로 거론된다.",
+    "en": "The company entered new business in December 2022 by acquiring LFP battery assets, but in December 2024 the in-kind contribution and share acquisition tied to the US joint venture were fully cancelled. In January 2025 it was designated an insincere disclosure company after the agreement with ZAICELL was withdrawn. Press coverage pointed out that actual progress in the new business had not been verified after the announcements. Because the share price has moved on new-business expectations, disclosure credibility is cited as a bear factor."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "상장적격성",
-    "en": "Listing Eligibility"
+    "ko": "상장 적격성",
+    "en": "Listing eligibility"
    },
    "body": {
-    "ko": "자이글은 2025년 10월 공시위반 벌점 누적으로 거래가 정지됐고, 같은 해 12월 상장적격성 실질심사 대상으로 결정돼 6개월의 개선기간을 부여받았다. 개선기간 종료 이후 기업심사위원회 등의 최종 판단(상장유지·개선기간 연장·상장폐지)이 아직 확인되지 않은 상태로, 이는 회사 지속성과 관련한 가장 큰 불확실성이다. 판단 결과에 따라 주주가치와 거래 재개 여부에 직접적인 영향이 있을 수 있다.",
-    "en": "Zaigle's trading was suspended in October 2025 after accumulated disclosure-violation penalty points, and it was designated for a delisting eligibility review in December, receiving a six-month improvement period. The final determination by the corporate review committee and related bodies following the improvement period — whether to maintain the listing, extend the period, or delist — has not yet been confirmed, representing the largest uncertainty regarding the company's continuity. The outcome could directly affect shareholder value and the resumption of trading."
+    "ko": "한국거래소는 2025년 11월 상장적격성 실질심사 조사기간을 15일 연장했고, 실질심사 대상 여부를 12월 10일까지 결정할 예정이라고 보도됐다. 상장 유지 여부와 관련된 후속 결과는 공시로 확인해야 한다. 2026년 3분기까지 정기 공시가 이어지고 있다는 점은 확인 가능한 사실이다. 결과에 따라 거래 환경이 크게 달라질 수 있어 리스크의 크기가 가장 큰 항목이다.",
+    "en": "The Korea Exchange extended the listing eligibility review period by 15 days in November 2025, and a decision on whether the company would be subject to a formal review was reported as due by December 10. Follow-up results should be confirmed through company filings. Periodic disclosures have continued through Q3 2026. Trading conditions could change significantly depending on the outcome, making this the largest risk item."
    }
   },
   {
    "cat": {
-    "ko": "법률·규제 리스크",
-    "en": "Legal and Regulatory Risk"
+    "ko": "지배구조·유동성",
+    "en": "Ownership and liquidity"
    },
    "body": {
-    "ko": "증권선물위원회는 자이글과 대표이사를 자본시장법 위반 혐의로 검찰에 고발하고 과징금을 부과했다. 이는 실패한 북미 이차전지 합작법인 관련 공시가 허위·과장으로 판단된 데 따른 것으로, 향후 검찰 수사나 소송 결과에 따라 추가적인 경영 부담이 발생할 수 있다. 반복된 공시 번복·철회 이력도 투자자 신뢰 회복에 부담 요인이다.",
-    "en": "The Securities and Futures Commission referred Zaigle and its representative director to prosecutors for alleged Capital Markets Act violations and imposed a fine, following a determination that disclosures related to the failed North American secondary-battery joint venture were false or exaggerated. Depending on the outcome of any prosecutorial investigation or litigation, additional management burdens could arise. A history of repeated disclosure reversals and withdrawals is also a headwind to rebuilding investor confidence."
+    "ko": "최대주주 등 특수관계인이 보통주의 68.24%를 보유하고 있고 유동주식 비율은 30.98%다(2026년 9월 30일 기준). 자사주는 0.78%다. 유통 물량이 적으면 소수 거래에 주가가 크게 움직일 수 있다. 최대주주의 의사결정 비중이 높은 구조여서 경영 판단의 투명성이 중요한 과제다.",
+    "en": "The largest shareholder group holds 68.24% of common shares, and the free float ratio is 30.98% as of September 30, 2026. Treasury shares account for 0.78%. With limited float, the share price can move sharply on small trades. Because the largest shareholder's decision weight is high, transparency of management decisions is an important issue."
    }
   },
   {
    "cat": {
-    "ko": "재무 건전성·유동성",
-    "en": "Financial Soundness and Liquidity"
+    "ko": "사업 신뢰도·투자 여력",
+    "en": "Business credibility and investment capacity"
    },
    "body": {
-    "ko": "영업활동현금흐름이 4개년 연속 마이너스를 기록하며 본업에서 현금을 창출하지 못하는 구조가 이어지고 있다. 자기자본은 지속적으로 줄고 부채비율은 크게 상승해, 추가적인 손실이 발생할 경우 자본잠식으로 이어질 잠재적 위험이 있다. 부동산 매각과 소송을 통한 자금 회수에 의존하는 구조는 반복 가능성이 제한적이라는 점도 고려해야 한다.",
-    "en": "Operating cash flow has been negative for four consecutive years, reflecting a structure that has not generated cash from the core business. Total equity has continued to decline while the debt ratio has risen sharply, creating potential risk of capital erosion if further losses occur. The reliance on real-estate sales and litigation-related cash recovery is also a structure with limited repeatability."
+    "ko": "2026년 1분기 연구개발비는 매출의 2.84%로 2024년 6.97%, 2025년 4.22%에 이어 낮아졌다. 자산 매각과 마케팅 확대를 병행하는 과정에서 헬스케어 연구 투자가 유지되는지가 쟁점이다. 2차전지 사업은 합작 구조가 취소된 뒤 재개 계획이 구체적으로 공시되지 않았다. 2025년 보도 당시 회사는 구체적으로 진행되면 공시하겠다고 밝힌 바 있다.",
+    "en": "Research and development spending in Q1 2026 was 2.84% of revenue, down from 6.97% in 2024 and 4.22% in 2025. Whether healthcare R&D investment is maintained while asset sales and marketing expansion proceed is the key issue. After the joint venture structure was cancelled, a concrete restart plan for the secondary battery business has not been disclosed. In 2025 the company said it would disclose through filings once the business moved forward concretely."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 9월~10월 중",
-    "en": "September–October 2026"
+    "ko": "2026년 12월 31일",
+    "en": "December 31, 2026"
    },
    "what": {
-    "ko": "상장적격성 실질심사 개선기간 종료 이후 기업심사위원회·코스닥시장위원회의 최종 심의 결과(상장유지·연장·상장폐지) 공시 여부를 확인해야 한다.",
-    "en": "Check for disclosure of the final review outcome (listing maintenance, extension, or delisting) from the corporate review committee and KOSDAQ market committee following the end of the improvement period."
+    "ko": "2026 사업연도 결산일이다. 2분기와 3분기 영업이익 흑자가 4분기에도 이어질지가 연간 영업손익 방향을 가르는 확인 지점이다.",
+    "en": "This is the close of the 2026 fiscal year. Whether the operating profit of Q2 and Q3 continues into Q4 will determine the direction of full-year operating results."
    }
   },
   {
    "when": {
-    "ko": "2026년 11월 중순(3분기보고서 법정 제출기한 전후)",
-    "en": "Mid-November 2026 (around the statutory Q3 report filing deadline)"
+    "ko": "2027년 3월 중순(전년 사업보고서 공시일 2026년 3월 16일 기준 추정)",
+    "en": "Mid-March 2027 (estimated from the March 16, 2026 filing date of the prior annual report)"
    },
    "what": {
-    "ko": "2026년 3분기 영업이익·순이익이 2분기의 흑자전환을 이어가는지, 매출 증가세가 지속되는지 확인이 필요하다.",
-    "en": "Verify whether 2026 Q3 operating profit and net income sustain the Q2 turnaround and whether the revenue growth trend continues."
+    "ko": "2026 사업보고서가 공시되는 시점이다. 연간 매출, 영업손익, 부채비율, 영업활동 현금흐름이 4년 연속 적자와 마이너스 흐름에서 바뀌었는지를 확인하는 자료다.",
+    "en": "This is when the 2026 annual report is expected to be filed. It will show whether annual revenue, operating results, the debt-to-equity ratio and operating cash flow have departed from four years of losses and negative cash flow."
    }
   },
   {
    "when": {
-    "ko": "공시 발생 시점(수시)",
-    "en": "As disclosed (ongoing)"
+    "ko": "2027년 상반기 중(일정 미정)",
+    "en": "First half of 2027 (date not fixed)"
    },
    "what": {
-    "ko": "부동산 매각대금의 차입금 상환 반영 여부와 약 19억원 물품대금 소송 승소분의 실제 현금 회수 여부를 관련 공시로 확인해야 한다.",
-    "en": "Monitor related disclosures to confirm whether real-estate sale proceeds are applied to debt repayment and whether the roughly KRW 1.9bn receivables from the won lawsuit are actually collected in cash."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 3월(2026년 사업보고서 공시 시점)",
-    "en": "March 2027 (at the 2026 annual report disclosure)"
-   },
-   "what": {
-    "ko": "연간 자기자본과 부채비율 추이를 통해 자본잠식 우려가 완화됐는지, 개선계획 이행이 재무제표에 얼마나 반영됐는지 점검해야 한다.",
-    "en": "Check the annual trend in total equity and the debt ratio to assess whether capital erosion concerns have eased and how much of the improvement plan is reflected in the financial statements."
+    "ko": "2차전지 사업 재개 여부와 자이셀 관련 후속 공시를 확인하는 지점이다. 회사가 구체적 진행 시 공시하겠다고 밝힌 만큼, 공시 내용이 사업 실체를 가늠하는 기준이다.",
+    "en": "This is the point to check whether the secondary battery business restarts and whether follow-up filings on ZAICELL appear. Since the company said it would disclose concrete progress, the content of those filings will be the measure of whether the business is real."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "자이글은 2026년 2분기 처음으로 영업이익과 순이익이 동시에 흑자로 전환되며 4년 이상 이어진 적자 흐름에 변화의 신호를 보였다. 그러나 최근 네 개 분기 합산 기준으로는 여전히 순손실 상태이고, 연간 기준으로도 4개년 연속 영업적자를 벗어나지 못했다. 자기자본이 지속적으로 감소하고 부채비율이 크게 오른 점, 영업활동현금흐름이 4개년 연속 마이너스를 기록한 점은 재무 건전성 측면에서 부담 요인으로 남아 있다. 특히 2025년 10월 이후의 상장적격성 실질심사와 관련한 거래소의 최종 판단이 아직 확인되지 않아, 이는 실적 개선 여부와는 별개로 회사의 존속 가능성에 영향을 줄 수 있는 핵심 변수다. 부동산 매각을 통한 차입금 상환, 물품대금 소송 회수, 신제품 매출 확대 등 개선계획의 실제 이행 결과가 다음 분기 이후 재무제표에 얼마나 반영되는지가 향후 판단의 근거가 될 것으로 보인다. 웰빙가전에서 헬스케어로의 사업 다각화는 장기적인 성장 스토리로 제시되고 있으나, 이를 뒷받침할 매출 기여도는 아직 충분히 확인되지 않았다.",
-   "en": "Zaigle showed its first sign of a turnaround in 2026 Q2, with both operating profit and net income turning positive simultaneously after more than four years of losses. However, on a trailing four-quarter basis the company remains in a net loss position, and on an annual basis it has not escaped operating losses for four consecutive years. A continuously shrinking equity base, a sharply higher debt ratio, and four straight years of negative operating cash flow remain burdens on its financial soundness. In particular, the exchange's final decision on the delisting eligibility review that began in October 2025 has not yet been confirmed, and this remains a key variable that could affect the company's continuity independent of any earnings improvement. How much of the improvement plan — debt repayment via real-estate sales, receivables collection through litigation, and expanded new-product sales — is actually reflected in the financial statements over coming quarters will likely form the basis for future assessment. The diversification from wellness appliances into healthcare is presented as a long-term growth story, but the revenue contribution needed to support it has not yet been fully confirmed."
+   "ko": "자이글의 2026년 공시 흐름은 매출 회복과 영업 흑자 전환이 동시에 나타난 점이 두드러진다. 2025년 4분기부터 2026년 3분기까지 매출은 4개 분기 연속 늘었고, 2026년 2분기 이후 영업이익은 2개 분기 흑자다. 그러나 2022년부터 2025년까지 영업손실과 지배주주 순손실은 4년 연속 이어졌고, 영업활동 현금흐름도 같은 기간 마이너스였다. 2025년 말 부채비율은 158.9%이며 자본총계는 192억원으로, 재무 여력은 얇은 편이다. 2차전지 사업은 지분 취득 취소와 불성실공시 지정을 거쳐 재개 여부가 불투명하다. 강세 요인은 헬스케어 제품군과 1분기 매출총이익률 개선이고, 약세 요인은 장기 적자, 자본 감소, 지배구조와 유동성의 불확실성이다. 다음 확인 지점은 2026년 4분기 영업손익이 흑자를 이어가는지와 2026 사업보고서의 연간 현금흐름이다.",
+   "en": "Zaigle's 2026 disclosures stand out for a revenue recovery and an operating profit turn arriving together. Revenue rose for four straight quarters from Q4 2025 through Q3 2026, and operating profit has been positive for two quarters since Q2 2026. However, operating and net losses attributable to controlling shareholders ran for four consecutive years from 2022 through 2025, and operating cash flow was negative over the same period. The debt-to-equity ratio was 158.9% at end-2025, with total equity of KRW 19.2 billion, so financial cushion is thin. The secondary battery business is uncertain after the share acquisition was cancelled and the insincere disclosure designation was made. Bull factors are the healthcare product line and the Q1 2026 gross margin gain, while bear factors are the long loss record, the shrinking equity base, and uncertainty over governance and liquidity. The next checkpoints are whether operating profit stays positive in Q4 2026 and what the annual cash flow shows in the 2026 annual report."
   }
  },
  "sources": [
-  "http://sateconomy.co.kr/news/view/1065574726368339",
-  "https://m.thinkpool.com/item/234920",
-  "https://meerae.ai/atlas/234920/",
-  "https://www.msn.com/ko-kr/money/stockdetails/234920-kr-stock/fi-ajrsnm?ocid=iehpjp",
-  "https://markets.hankyung.com/stock/234920/financial-summary",
-  "https://www.google.com/finance/beta/quote/234920:KOSDAQ?hl=ko",
-  "https://itooza.com/vscore/234920",
-  "https://www.valueline.co.kr/finance/summary/234920",
-  "https://markets.hankyung.com/stock/234920/chart",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A234920",
   "https://www.saramin.co.kr/zf_user/company-info/view/csn/ZDhENi9uSjY3M1JacDZNME54R1ZIUT09/company_nm/%EC%9E%90%EC%9D%B4%EA%B8%80(%EC%A3%BC)",
+  "https://www.abcn.kr/news/articleView.html?idxno=85144",
+  "http://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=234920",
+  "https://infostockdaily.co.kr/news/articleView.html?idxno=209576",
+  "https://www.sidae.com/article/2025062715035938448",
+  "https://www.ajunews.com/view/20250213160230143",
+  "https://app.rndcircle.io/company/7a1450c4-1d5b-5a62-b799-6b5070065b7c",
+  "https://m.ekn.kr/view.php?key=20241118028422701",
+  "http://www.businessreport.kr/news/articleView.html?idxno=36928",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A234920&cID=&MenuYn=Y&ReportGB=B&NewMenuID=Y&stkGb=701",
   "https://alphasquare.co.kr/home/stock-summary?code=234920",
-  "https://www.zaigle.com/",
+  "http://sateconomy.co.kr/news/view/1065574726368339",
+  "https://www.butler.works/ko/companies/01020524",
+  "https://kind.krx.co.kr/external/2026/04/27/000529/20260427001429/10001.htm",
   "https://www.jobkorea.co.kr/recruit/co_read/c/zaigle2014",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A234920&cID=&MenuYn=Y&ReportGB=D&NewMenuID=Y&stkGb=701",
-  "https://digital-friend.com/category/%EC%9E%90%EC%9D%B4%EA%B8%80/1513/",
-  "https://kind.krx.co.kr/corpgeneral/delistRealInvstg.do?method=searchDelistRealInvstgMain",
-  "https://www.rfsemi.co.kr/bbs/board.php?bo_table=notice&wr_id=14&page=1",
-  "https://v.daum.net/v/BS4YQEAiOG"
+  "https://news.samsung.com/kr/%ec%82%bc%ec%84%b1%ec%a0%84%ec%9e%90-2026%eb%85%84-3%eb%b6%84%ea%b8%b0-%ec%9e%a0%ec%a0%95%ec%8b%a4%ec%a0%81-%eb%b0%9c%ed%91%9c",
+  "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-2026%EB%85%84-2%EB%B6%84%EA%B8%B0-%EC%9E%A0%EC%A0%95%EC%8B%A4%EC%A0%81-%EB%B0%9C%ED%91%9C"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "234920",
  "name": "자이글",
  "name_en": "Zaigle Co., Ltd.",
@@ -223,11 +213,11 @@
   "전자·부품"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 17:56",
- "dataDate": "20260904",
+ "reportDate": "2026-11-18",
+ "reportTs": "2026-11-18 06:54",
+ "dataDate": "20261117",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-11-17",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -297,12 +287,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 1945070513,
-    "op": -798070926,
-    "np_owner": -928888201
-   },
-   {
     "q": "2025Q3",
     "rev": 1733918226,
     "op": -1023143704,
@@ -325,6 +309,12 @@
     "rev": 2722182643,
     "op": 721151110,
     "np_owner": 596850735
+   },
+   {
+    "q": "2026Q3",
+    "rev": 3850231609,
+    "op": 1056699180,
+    "np_owner": 826226256
    }
   ],
   "valuation": {
@@ -333,20 +323,22 @@
    "shares": 13530910,
    "total_shares": 13530910,
    "wavg_shares": 13431992,
-   "per": null,
-   "eps": -134,
-   "pbr": 3.5734,
-   "bps": 1486,
-   "roe_ttm": -8.7,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": -1819045474,
+   "per": 156.176,
+   "eps": 34,
+   "pbr": 3.4302,
+   "bps": 1548,
+   "roe_ttm": 2.2,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": 458858351,
    "ccy": "KRW",
    "bps_src": "자체",
+   "eps_src": "공시",
    "pbr_krx": 3.71,
    "bps_krx": 1431.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
    "div": 0.0
   }
- }
+ },
+ "textRules": 2
 }

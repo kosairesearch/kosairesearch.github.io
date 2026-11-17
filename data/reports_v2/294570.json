@@ -1,220 +1,218 @@
 {
  "title": {
-  "ko": "데이터·결제 매출 안정, 신사업 확장기",
-  "en": "Coocon: Core Segments Steady, New Ventures Ramp"
+  "ko": "결제 성장과 이익 변동성이 공존하는 구간",
+  "en": "Payment growth meets earnings volatility"
  },
  "lead": {
-  "ko": "쿠콘은 데이터·페이먼트 두 핵심 사업의 안정적 이익률을 바탕으로 AI 데이터·스테이블코인·글로벌결제 신사업을 실행 단계로 옮기고 있다.",
-  "en": "Coocon is moving AI data, stablecoin, and global payment initiatives into execution while its core Data and Payment segments maintain stable margins."
+  "ko": "쿠콘은 2026년 3분기 매출이 2024년 2분기 이후 최대 규모를 회복했지만 같은 분기 지배주주 순손실 9억원으로 적자 전환해, 본업 성장과 분기 순이익 변동이 함께 드러나는 국면이다.",
+  "en": "coocon's third-quarter 2026 revenue returned to its largest level since the second quarter of 2024, yet the company swung to a net loss attributable to controlling shareholders, leaving quarterly earnings volatility as the central question."
  },
  "keypoints": [
   {
-   "ko": "2025년 영업이익률 27.2%, 지배주주 순이익 215억원으로 다년간 이익 회복세가 이어졌다.",
-   "en": "The 2025 operating margin reached 27.2% and owners' net income hit KRW 21.5 billion, extending a multi-year profit recovery."
+   "ko": "2025년 연간 매출은 695억원으로 전년 대비 4.9% 감소했지만 영업이익은 189억원으로 13.7% 늘었고 영업이익률은 27.2%로 회복됐다.",
+   "en": "Annual revenue fell 4.9% to KRW 69.5 billion in 2025, while operating profit rose 13.7% to KRW 18.9 billion and the operating margin recovered to 27.2%."
   },
   {
-   "ko": "2026년 1분기 매출은 대출 규제 영향으로 전년 동기 대비 7.5% 감소했으나 2분기에는 다시 증가세로 돌아섰다.",
-   "en": "First-quarter 2026 revenue fell 7.5% year-on-year on lending regulation effects, but growth resumed in the second quarter."
+   "ko": "2026년 3분기 매출은 203억원으로 전년 동기 대비 16.9% 늘었고, 페이먼트 부문 매출이 분기 기준 처음으로 100억원을 넘었다.",
+   "en": "Third-quarter 2026 revenue reached KRW 20.3 billion, up 16.9% year on year, and the payment segment passed KRW 10 billion in quarterly revenue for the first time."
   },
   {
-   "ko": "AI 데이터(MCP API)·스테이블코인·글로벌 결제(싱가포르 진출) 등 세 축의 신사업이 실행 단계에 진입했다.",
-   "en": "Three new-business pillars—AI data (MCP APIs), stablecoins, and global payments via a planned Singapore entity—have entered the execution phase."
+   "ko": "2025년 지배주주 순이익은 215억원으로 2023년부터 3년 연속 증가했으나, 2026년 3분기에는 순손실 9억원으로 적자 전환했다.",
+   "en": "Profit attributable to controlling shareholders rose to KRW 21.5 billion in 2025 and has increased for three consecutive years, but the third quarter of 2026 recorded a net loss of KRW 896 million."
   },
   {
-   "ko": "분기별 지배주주 순이익은 영업이익과 무관하게 큰 편차를 보여 비영업적 요인에 대한 해석이 필요하다.",
-   "en": "Quarterly owners' net income has swung widely independent of the operating profit trend, requiring caution around non-operating items."
+   "ko": "부채비율은 2022년 40.8%에서 2025년 83.9%로 매년 올랐고, 2025년 영업활동 현금흐름은 450억원으로 지배주주 순이익을 웃돌았다.",
+   "en": "The debt-to-equity ratio climbed every year from 40.8% in 2022 to 83.9% in 2025, while operating cash flow of KRW 45 billion in 2025 exceeded profit attributable to controlling shareholders."
   },
   {
-   "ko": "50억원 규모 자기주식취득 신탁계약을 체결하고 2026년 주주환원 비율 30% 이상을 목표로 제시했다.",
-   "en": "The company signed a KRW 5 billion treasury-stock trust and set a target of at least 30% shareholder return ratio for 2026."
+   "ko": "MCP 기반 데이터 API 확대, 스테이블코인 결제, 전 분야 마이데이터 등 신사업은 4분기부터 본격화된다고 회사가 밝혔으나 매출 기여는 아직 부문별 공시로 확인해야 한다.",
+   "en": "The company said new businesses, including MCP-based data APIs, stablecoin payments and full-scope MyData, will ramp up from the fourth quarter, but their revenue contribution must be confirmed through segment disclosures."
   }
  ],
  "business": {
-  "ko": "쿠콘은 2006년 설립된 비즈니스 데이터 플랫폼 기업으로, 전용망·스크래핑·오픈API 기술을 통해 금융·공공·유통 등 다양한 기관의 데이터를 수집·표준화해 API 형태로 제공한다. 사업은 데이터 부문과 페이먼트 부문으로 나뉘며, 2026년 2분기 개별 기준으로 데이터 부문은 매출 86억 5,000만원, 영업이익률 31.5%를, 페이먼트 부문은 매출 93억 1,000만원, 영업이익 22억 3,000만원을 각각 기록했다. 데이터 부문은 마이데이터 신규 고객 확대와 시세정보·보험설계사 자격 검증 등 API 상품 다변화를 통해 반복 수수료 매출을 쌓는 구조다. 페이먼트 부문은 계좌 기반 간편결제, 실명 확인 가상계좌, 레그테크(eKYC·AML) 패키지 등을 대형 PG·VAN사와 빅테크에 제공하며 원가 경쟁력을 수익성 기반으로 삼는다. 고객군은 국민·농협·신한·우리·기업·하나 등 주요 은행과 카카오페이·토스 등 빅테크, 다수 증권·보험사, 공공기관을 포함한다. 경쟁 구도상 쿠콘은 국내 최대 규모의 API 스토어 '쿠콘닷넷'을 기반으로 한 선점 효과를 갖고 있으나, 마이데이터 사업자 전환에 따른 중계기관 이용 축소와 NICE평가정보 등 정보서비스 기업들과의 협업·경쟁이 병존한다. 최근에는 AI 데이터(MCP 기반 API), 스테이블코인, 글로벌 결제 등 신사업을 통해 사업 영역을 확장하고 있다.",
-  "en": "Coocon is a business data platform company founded in 2006 that collects and standardizes data from financial, public, and commerce institutions through dedicated-network, screen-scraping, and open API technologies, then delivers it as APIs. The business splits into Data and Payment segments; on a non-consolidated basis for the second quarter of 2026, the Data segment posted revenue of KRW 8.65 billion with a 31.5% operating margin, while the Payment segment posted revenue of KRW 9.31 billion and operating profit of KRW 2.23 billion. The Data segment builds recurring fee-based revenue by expanding MyData customers and diversifying API products such as market-price information and insurance-agent qualification verification. The Payment segment supplies account-based simple payment, verified virtual-account services, and RegTech (eKYC/AML) packages to large PG/VAN operators and big-tech clients, leaning on cost competitiveness for profitability. Its client base includes major banks such as Kookmin, NongHyup, Shinhan, Woori, IBK, and Hana, big-tech players like Kakaopay and Toss, numerous securities and insurance firms, and public institutions. Competitively, Coocon benefits from first-mover advantages built around Coocon.net, the country's largest business-data API store, though it also faces a mix of collaboration and competition with information-service firms such as NICE Information Service as relay-institution usage shifts under the MyData licensing regime. More recently, the company has been expanding into new businesses including AI data (MCP-based APIs), stablecoins, and global payments."
+  "ko": "쿠콘은 금융 데이터 중계와 결제 인프라를 두 축으로 삼는 비즈니스 데이터 플랫폼 기업이다. 사업은 데이터 부문과 페이먼트 부문으로 나뉘며, 2026년 3분기 발표 기준 데이터 부문 매출은 96.1억원, 페이먼트 부문 매출은 106.6억원이었다. 두 부문의 매출은 전년 동기 대비 각각 12.3%, 21.4% 늘었다. 데이터 부문은 금융 마이데이터 구축 프로젝트 매출이 반영되며 외형을 키웠고, 시세정보 API와 보험설계사 자격 검증 API 등으로 상품군을 넓히고 있다. 페이먼트 부문은 빅테크 기업과 대형 전자지급결제대행(PG)사의 거래량 증가와 신규 고객사 확보가 맞물리며 분기 매출 100억원을 처음 넘어섰다. 고객 기반은 실명 확인 가상계좌와 eKYC·AML 같은 레그테크 패키지 공급으로도 넓어지고 있다. 부문별 수익성은 차이가 있는데, 2026년 1분기 기준 데이터 부문 영업이익률은 32.5%, 페이먼트 부문은 23.6%였다. 2026년 3분기에는 데이터 부문 영업이익이 구축형 프로젝트 비중 확대에 따른 매출 구성 변화로 전년 동기 대비 9.6% 줄어 24억원이었고, 페이먼트 부문 영업이익은 27.1억원으로 26.7% 늘었다. 경쟁 측면에서 회사는 수수료 기반 중계 구조와 200만 QR 가맹점, 10만 프랜차이즈, 4만 ATM 규모의 결제 접점을 강점으로 내세운다. 금융 데이터와 결제 인증 영역에는 여러 사업자가 있어, 부문별 공시 수치만으로는 시장점유율을 산정하기 어렵다.",
+  "en": "coocon is a business data platform company built on two pillars: financial data relay and payment infrastructure. The business is split into a Data segment and a Payment segment. Based on the third-quarter 2026 release, Data segment revenue was KRW 9.61 billion and Payment segment revenue was KRW 10.66 billion. Revenue in the two segments rose 12.3% and 21.4% year on year, respectively. The Data segment grew on revenue from financial MyData construction projects and is widening its product lineup, including a market quote API and an insurance agent qualification verification API. The Payment segment, which serves big tech companies and large electronic payment gateway (PG) operators, passed KRW 10 billion in quarterly revenue for the first time as transaction volumes rose and new clients were added. The customer base is also expanding through real-name verified virtual accounts and RegTech packages such as eKYC and AML. Profitability differs by segment: in the first quarter of 2026 the Data segment operating margin was 32.5% and the Payment segment margin was 23.6%. In the third quarter of 2026, Data segment operating profit fell 9.6% year on year to KRW 2.4 billion as a higher share of build-type projects changed the revenue mix, while Payment segment operating profit rose 26.7% to KRW 2.71 billion. The company presents its fee-based relay structure and payment access points of 2 million QR merchants, 100,000 franchise outlets and 40,000 ATMs as strengths. Several operators compete in financial data and payment authentication, so market share cannot be calculated from segment disclosures alone."
  },
  "earnings": {
-  "ko": "쿠콘의 연간 매출은 2022년 645억원에서 2023년 684억원, 2024년 730억원으로 증가하다 2025년 695억원으로 소폭 줄었다. 영업이익은 2022년 200억원(영업이익률 31.0%)에서 2023년 166억원(24.3%), 2024년 166억원(22.7%)으로 낮아졌다가 2025년 189억원, 영업이익률 27.2%로 다시 개선됐다. 지배주주 순이익은 2022년 37억원에서 2023년 72억원, 2024년 158억원으로 뚜렷하게 늘었고 2025년에는 215억원까지 확대되며 다년간의 이익 회복 흐름이 이어졌다. 분기별로는 2025년 3분기 매출 173억원·영업이익 48억원, 4분기 매출 181억원·영업이익 50억원으로 매출과 영업이익이 꾸준히 늘었으나, 2026년 1분기에는 매출이 160억원, 영업이익이 45억원으로 소폭 줄어 계절적 비수기와 대출 규제 영향이 반영됐다. 2026년 2분기에는 매출 180억원, 영업이익 50억원으로 전 분기 대비 다시 늘었다. 특징적인 부분은 지배주주 순이익의 분기별 편차가 매우 크다는 점이다: 2025년 2분기 154억원, 3분기 6억원, 4분기 8억원, 2026년 1분기 74억원, 2분기 132억원으로 영업이익 흐름과는 별도로 큰 폭의 등락을 보였는데, 이는 지분법이나 금융자산 평가 등 비영업 손익 요인이 크게 작용한 결과로 추정된다. 이에 따라 영업이익률은 2025년 3분기부터 2026년 2분기까지 27~28%대에서 비교적 안정적으로 유지된 반면, 순이익률은 분기별로 크게 흔들렸다. 결국 최근 네 개 분기(2025년 3분기~2026년 2분기) 영업 실적은 매출·영업이익 모두 완만한 흐름을 보였으나, 순이익 변동성은 실적 해석 시 유의가 필요한 부분이다.",
-  "en": "Coocon's annual revenue rose from KRW 64.5 billion in 2022 to KRW 68.4 billion in 2023 and KRW 73.0 billion in 2024, before slipping to KRW 69.5 billion in 2025. Operating profit fell from KRW 20.0 billion (a 31.0% margin) in 2022 to KRW 16.6 billion (24.3%) in 2023 and KRW 16.6 billion (22.7%) in 2024, then recovered to KRW 18.9 billion with a 27.2% margin in 2025. Net income attributable to owners rose from KRW 3.7 billion in 2022 to KRW 7.2 billion in 2023 and KRW 15.8 billion in 2024, then expanded further to KRW 21.5 billion in 2025, extending a multi-year profit recovery. On a quarterly basis, revenue and operating profit rose steadily through the third quarter of 2025 (revenue KRW 17.3 billion, operating profit KRW 4.8 billion) and the fourth quarter (KRW 18.1 billion and KRW 5.0 billion), before revenue eased to KRW 16.0 billion and operating profit to KRW 4.5 billion in the first quarter of 2026, reflecting seasonal factors and mortgage-lending regulations. Revenue and operating profit both rebounded in the second quarter of 2026, to KRW 18.0 billion and KRW 5.0 billion respectively. A notable feature is the wide quarterly swing in owners' net income: KRW 15.4 billion in the second quarter of 2025, KRW 0.6 billion in the third quarter, KRW 0.8 billion in the fourth quarter, KRW 7.4 billion in the first quarter of 2026, and KRW 13.2 billion in the second quarter of 2026—fluctuations far larger than the operating-profit trend, suggesting the influence of non-operating items such as equity-method gains or financial-asset valuation changes. As a result, the operating margin stayed relatively stable in the 27%-28% range from the third quarter of 2025 through the second quarter of 2026, while the net margin swung considerably by quarter. Overall, revenue and operating profit trended gradually upward over the trailing four quarters through the second quarter of 2026, but net-income volatility warrants caution when interpreting results."
+  "ko": "연간 매출은 2022년 645억원에서 2023년 684억원(전년 대비 6.0% 증가), 2024년 730억원(전년 대비 6.8% 증가)으로 늘었다가 2025년 695억원(전년 대비 4.9% 감소)으로 줄었다. 2022~2025년 중 가장 큰 해는 2024년이고 가장 작은 해는 2022년이다. 영업이익은 2022년 200억원에서 2023년 166억원(전년 대비 17.2% 감소)으로 줄었고, 2024년 166억원(전년 대비 변동 없음)을 거쳐 2025년 189억원(전년 대비 13.7% 증가)으로 회복했다. 영업이익률은 2022년 31.0%, 2023년 24.3%, 2024년 22.7%로 낮아진 뒤 2025년 27.2%로 올랐으며, 매출이 줄어든 2025년에 이익률이 회복된 점이 이 기간의 특징이다. 지배주주 순이익은 2022년 36.5억원에서 2023년 71.7억원(전년 대비 96.4% 증가), 2024년 158억원(전년 대비 119.9% 증가), 2025년 215억원(전년 대비 36.2% 증가)으로 2023년부터 2025년까지 3년 연속 증가했다. 영업이익의 증감과 비교하면 순이익 증가 폭이 훨씬 커서, 그 차이는 영업이익 밖 항목에서 나왔을 가능성이 있으므로 정기보고서 손익계산서와 주석에서 구성을 확인할 대상이다. 분기 매출은 2025년 3분기 173억원, 4분기 181억원(전 분기 대비 4.3% 증가), 2026년 1분기 160억원(전 분기 대비 11.5% 감소), 2분기 180억원(전 분기 대비 12.2% 증가), 3분기 203억원(전 분기 대비 12.9% 증가)으로 2026년 2분기부터 2개 분기 연속 늘었다. 1분기 매출 감소의 배경으로 회사는 금융권 대출 규제에 따른 거래량 감소를 들었다. 영업이익은 2025년 3분기 47.9억원, 4분기 50.1억원, 2026년 1분기 44.7억원, 2분기 49.6억원, 3분기 51.1억원으로 5개 분기 동안 44.7억~51.1억원 범위에 머물렀다. 반면 지배주주 순이익은 2025년 3분기 5.8억원, 4분기 7.8억원에서 2026년 1분기 74.3억원, 2분기 132억원으로 늘었다가 3분기 순손실 9억원으로 적자 전환했다. 최근 네 개 분기(2025년 4분기~2026년 3분기) 지배주주 순이익 합계는 205억원이다. 영업활동 현금흐름은 2022년 102억원, 2023년 296억원, 2024년 525억원, 2025년 450억원으로, 2025년에는 지배주주 순이익 215억원을 웃돌았다.",
+  "en": "Annual revenue rose from KRW 64.5 billion in 2022 to KRW 68.4 billion in 2023 (up 6.0% year on year) and KRW 73 billion in 2024 (up 6.8%), then fell 4.9% to KRW 69.5 billion in 2025. Within 2022 to 2025, 2024 was the largest year and 2022 the smallest. Operating profit fell from KRW 20 billion in 2022 to KRW 16.6 billion in 2023 (down 17.2%), held flat at KRW 16.6 billion in 2024, and recovered to KRW 18.9 billion in 2025 (up 13.7%). The operating margin declined from 31.0% in 2022 to 24.3% in 2023 and 22.7% in 2024 before rising to 27.2% in 2025, and the margin recovery in a year of falling revenue is the defining feature of this period. Profit attributable to controlling shareholders grew from KRW 3.65 billion in 2022 to KRW 7.17 billion in 2023 (up 96.4%), KRW 15.8 billion in 2024 (up 119.9%) and KRW 21.5 billion in 2025 (up 36.2%), increasing for three consecutive years from 2023. That growth far outpaced operating profit movements, so the gap may stem from items outside operating profit, and its composition should be checked in the income statement and notes of the periodic report. Quarterly revenue went from KRW 17.3 billion in the third quarter of 2025 to KRW 18.1 billion in the fourth quarter (up 4.3% quarter on quarter), KRW 16 billion in the first quarter of 2026 (down 11.5%), KRW 18 billion in the second quarter (up 12.2%) and KRW 20.3 billion in the third quarter (up 12.9%), rising for two consecutive quarters from the second quarter of 2026. The company attributed the first-quarter decline to lower transaction volumes after financial lending regulations. Operating profit ran between KRW 4.47 billion and KRW 5.11 billion across the last five quarters. Profit attributable to controlling shareholders rose from KRW 580 million in the third quarter of 2025 and KRW 782 million in the fourth quarter to KRW 7.43 billion in the first quarter of 2026 and KRW 13.2 billion in the second quarter, then swung to a net loss of KRW 896 million in the third quarter. The sum for the last four quarters, from the fourth quarter of 2025 to the third quarter of 2026, is KRW 20.5 billion. Operating cash flow was KRW 10.2 billion in 2022, KRW 29.6 billion in 2023, KRW 52.5 billion in 2024 and KRW 45 billion in 2025, exceeding profit attributable to controlling shareholders of KRW 21.5 billion in 2025."
  },
  "industry": {
-  "ko": "국내 마이데이터 산업은 전면 시행 이후 참여 기관이 늘고 있으며, 마이데이터 2.0 시행에 따른 중계 트래픽 증가와 생성형 AI 확산에 따른 금융 데이터 수요 폭증이 중장기 성장 모멘텀으로 거론된다. 다만 2025년 이후 정부의 가계대출 규제 강화는 대출 관련 데이터 조회량을 일시적으로 줄이는 요인으로 작용했다. 페이먼트 시장에서는 간편결제·가상계좌·QR결제 확산이 이어지는 가운데 PG·VAN사와 빅테크 간 경쟁이 심화되고 있어 원가 효율성과 신규 고객 확보가 관건이다. 대형 PG사 대상 신규 고객 유치와 빅테크 대상 안정적 거래량이 페이먼트 부문의 수익성 개선에 기여하고 있는 것으로 나타난다. 스테이블코인·디지털자산 결제는 국내 법제화가 아직 완료되지 않은 신흥 영역으로, 관련 기업들의 기술검증(PoC) 단계가 이어지고 있다. 경쟁사 대비로는 쿠콘이 국내 최대 규모의 비즈니스 데이터 API 스토어를 운영하며 선점 효과를 갖고 있으나, NICE평가정보·코스콤 등 정보서비스 기업들도 데이터 유통·API 전환 사업에 나서고 있어 경쟁 구도가 점차 다변화되고 있다.",
-  "en": "Since full rollout, Korea's MyData industry has seen a growing number of participating institutions, and increased relay traffic under MyData 2.0 along with surging financial-data demand from generative-AI adoption are cited as medium-term growth momentum. However, tighter household-lending regulations since 2025 have temporarily reduced loan-related data query volumes. In the payments market, adoption of simple payment, virtual accounts, and QR payment continues to spread while competition intensifies among PG/VAN operators and big-tech firms, making cost efficiency and new-customer acquisition key. New customer wins among large PG operators and stable transaction volume from big-tech partners appear to be contributing to profitability improvement in the Payment segment. Stablecoin and digital-asset payments remain an emerging area where domestic legislation is not yet finalized, and related companies continue to work through proof-of-concept stages. Competitively, Coocon operates the country's largest business-data API store and holds a first-mover advantage, but information-service firms such as NICE Information Service and Koscom are also entering data-distribution and API-conversion businesses, gradually diversifying the competitive landscape."
+  "ko": "쿠콘의 사업은 금융 데이터 연계와 전자결제 거래량이라는 두 전방 수요에 걸쳐 있다. 데이터 부문은 금융 마이데이터 구축 프로젝트와 금융권 API 수요에 따라 매출이 움직이며, 2026년 1분기에는 계절적 비수기와 금융권 대출 규제가 매출 감소 요인으로 제시됐다. 페이먼트 부문은 빅테크 기업과 대형 PG사의 결제 거래량에 연동되어 있어, 2026년 3분기에는 거래량 확대와 신규 고객사 확보가 매출 증가를 이끌었다. 수수료 기반 구조라서 거래량 변동과 정책 변수가 곧바로 매출에 반영되는 것이 업황의 특징이다. AI 에이전트가 외부 데이터를 직접 호출하는 구조가 확산되면 데이터 API 수요가 늘 수 있다는 것이 회사의 전략 방향이다. 결제 영역에서는 스테이블코인 결제와 정산이 새로운 수요로 거론되며, 관련 제도 정비 일정이 사업화 속도를 좌우하는 변수로 제시됐다. 경쟁 구도는 금융 데이터 중계와 본인확인·결제 인증 영역의 사업자들이 겹치는 구조이며, 같은 IT·소프트웨어 업종의 NICE평가정보, 다우기술, 안랩 등이 비교 대상이 된다. 다만 이들 기업과 매출 규모나 수익성을 수치로 견줘 보려면 각 사 정기보고서를 함께 봐야 한다.",
+  "en": "coocon's business sits across two downstream demand sources: financial data connectivity and electronic payment transaction volumes. Data segment revenue moves with financial MyData construction projects and demand for financial APIs, and in the first quarter of 2026 the seasonal slow period and financial lending regulations were cited as headwinds. The Payment segment is tied to transaction volumes at large tech companies and major PG operators, and in the third quarter of 2026 higher volumes and new clients drove revenue growth. Because the model is fee-based, changes in volume and policy flow directly into revenue, which is a defining feature of this industry. The company's strategy assumes that wider adoption of structures in which AI agents call external data directly would expand demand for data APIs. In payments, stablecoin settlement is cited as a new source of demand, and the pace of commercialization depends on the timing of related regulatory work. Competition overlaps among financial data relay and identity and payment authentication providers, with peers in the same IT and software sector such as NICE Information Service, Daou Technology and Ahnlab serving as reference points. Comparing revenue scale or profitability with these companies in numbers requires reviewing each company's periodic reports."
  },
  "outlook": {
-  "ko": "쿠콘은 2026년 2분기 정례 IR에서 하반기 전략으로 MCP 기반 데이터 API 상품을 30여 종에서 100여 종으로 확대하고, 2027년까지 전 상품군의 MCP 전환을 완료하겠다는 목표를 제시했다. 스테이블코인 사업은 USDC·USDT 충전, QR결제, ATM 출금, 정산까지 이어지는 전 과정 기술검증(PoC)을 완료했으며, 원화 스테이블코인 제도화에 대응하기 위한 금융권 컨소시엄 구성을 추진 중이다. 해외 진출과 관련해서는 2026년 내 싱가포르 법인을 설립하고 싱가포르 전자금융업(MPI) 라이선스 취득을 추진해 동남아시아 이커머스 정산·B2B 자금 정산·스테이블코인 플랫폼 시장을 겨냥할 계획이다. 개인정보 전송요구권 적용 범위가 전 분야로 확대되는 흐름에 대응해 개인정보관리 전문기관 지정도 추진하고 있다. 주주환원 측면에서는 8월 5일 50억원 규모의 자기주식취득 신탁계약을 체결했으며, 2026년 주주환원 비율을 30% 이상으로 높이겠다는 목표를 제시했다. 회사는 데이터·페이먼트 두 핵심 부문에서 신규 고객 확보와 원가 효율화를 지속하는 한편, AI·스테이블코인·글로벌 결제라는 세 축의 신사업을 통해 중장기 성장동력을 다변화하려는 전략을 취하고 있다.",
-  "en": "At its second-quarter 2026 regular IR, Coocon presented a second-half strategy to expand MCP-based data API products from roughly 30 to about 100, targeting completion of MCP conversion across its entire product lineup by 2027. Its stablecoin business has completed end-to-end proof-of-concept covering USDC/USDT top-ups, QR payment, ATM withdrawal, and settlement, and the company is pursuing a financial-industry consortium to prepare for potential Korean-won stablecoin legislation. On overseas expansion, Coocon plans to establish a Singapore subsidiary within 2026 and pursue a Singapore electronic-money (MPI) license, targeting e-commerce settlement, B2B fund settlement, and stablecoin-platform opportunities across Southeast Asia. In response to the expanding scope of the personal-data transfer right across sectors, the company is also pursuing designation as a specialized personal-data management institution. On shareholder returns, it signed a KRW 5 billion treasury-stock trust contract on August 5 and set a target of raising its 2026 shareholder return ratio to at least 30%. The company is pursuing continued new-customer acquisition and cost efficiency across its Data and Payment segments while diversifying medium-term growth drivers through three new-business pillars: AI, stablecoins, and global payments."
+  "ko": "회사가 제시한 연간 매출 성장률 목표는 10%이며, 2026년 3분기 전사 매출 증가율 16.9%는 이를 웃돌았다(3분기 발표 기준). 회사는 2026년 4분기부터 AI 에이전트가 데이터를 직접 호출할 수 있도록 하는 MCP 기반 데이터 API 상품을 100여 종으로 늘리고 전 분야 마이데이터 사업을 본격 추진한다고 밝혔다. 페이먼트 부문에서는 모바일 결제 인프라 KSQR의 적용 범위를 넓히고, 관련 제도 정비에 맞춰 스테이블코인 결제·충전·출금 서비스 상용화를 추진한다. 2026년 5월 1분기 발표에서 회사는 알리페이, 위챗페이, 유니온페이 등 글로벌 결제사와의 협업을 늘리고 글로벌 스테이블코인 결제 사업화에 속도를 내겠다고 밝혔다. 2026년 11월 6일에는 블록체인 인프라 기업 DSRV와 온체인 금융데이터 API 및 AI 에이전트 결제 분야 업무협약을 맺었고, 스테이블코인 결제·정산 데이터 제공과 API 이용대금 자동 결제 기술을 공동 검증할 예정이다. 2026년 11월 9일에는 결제 전 카드 명의 확인 서비스 출시 소식도 알려졌다. 경영진은 향후 2~3년 내 글로벌 결제 사업을 전략 핵심 사업으로 키우고 AI 기반 데이터 기업으로 전환하겠다는 목표를 제시했다. 1분기 발표 당시 2분기 이후 회복이 전망됐고 실제로 2분기 매출은 180억원으로 전 분기 대비 12.2% 늘었다. 다음 확인 지점은 신사업의 매출이 부문별 공시에서 어떤 규모로 잡히는지와 영업이익률이 데이터 부문에서 회복되는지다.",
+  "en": "The company set a target of 10% annual revenue growth, and third-quarter 2026 company-wide revenue growth of 16.9% exceeded that level, according to the release. From the fourth quarter the company plans to expand MCP-based data API products to about 100 and push full-scope MyData business in earnest, which would let AI agents call data directly. In payments, it plans to broaden the reach of the KSQR mobile payment infrastructure and commercialize stablecoin payment, top-up and withdrawal services in line with related regulatory work. In its first-quarter 2026 release in May, the company said it would expand collaboration with global payment providers such as Alipay, WeChat Pay and UnionPay and speed up commercialization of global stablecoin payments. On November 6, 2026, it signed a business agreement with blockchain infrastructure firm DSRV covering on-chain financial data APIs and AI agent payments, and the two plan to jointly verify stablecoin settlement data and automatic API fee payment technology. On November 9, 2026, news reported the launch of a card holder name verification service before payment. Management set a goal of making global payments a core strategic business within two to three years and transforming into an AI-based data company. At the first-quarter release, a recovery after the second quarter was expected, and second-quarter revenue indeed rose 12.2% quarter on quarter to KRW 18 billion. The next checkpoints are how much revenue the new businesses show in segment disclosures and whether the Data segment operating margin recovers."
  },
  "valuation_comment": {
-  "ko": "쿠콘의 주가는 최근 1년 사이 순자산가치 대비 프리미엄이 상당했던 구간과 그 프리미엄이 크게 줄어든 구간을 모두 경험했다. 개별 기준 주가수익비율(PER)이 10배 초반까지 낮아졌던 시점이 확인되는데, 이는 과거 거래 밴드의 하단부에 해당한다고 볼 수 있다. 배당 정책은 주당 현금배당을 지급하는 구조를 유지하고 있으나, 회사가 신사업(AI·스테이블코인·해외법인) 투자에 자원을 배분하고 있어 배당수익률 자체보다는 자기주식취득을 통한 환원 비중이 상대적으로 부각되는 모습이다. 이익 측면에서는 2022년 이후 순이익이 뚜렷한 회복세를 보였지만 분기별 변동성이 커서, 특정 시점의 이익 수준을 그대로 밸류에이션에 대입하기보다는 영업이익 흐름을 함께 참고할 필요가 있다. 결과적으로 현재 밸류에이션 수준을 판단할 때는 안정적인 영업이익률과 신사업 진행 속도, 순이익의 비영업적 변동성을 함께 고려하는 것이 합리적이다.",
-  "en": "Over the past year, Coocon's stock has traded through periods of a meaningful premium to net asset value as well as periods where that premium narrowed considerably. There have been points at which the non-consolidated price-to-earnings ratio fell to the low double digits, which appears to sit near the lower end of its historical trading range. The dividend policy maintains a per-share cash distribution, but as the company allocates resources toward new-business investment in AI, stablecoins, and its overseas subsidiary, treasury-stock buybacks appear to carry relatively more weight in shareholder returns than the dividend yield itself. On the earnings side, net income has shown a clear recovery since 2022, but quarter-to-quarter volatility is significant, so it is worth referencing the operating-profit trend alongside any single-period earnings figure rather than relying on it in isolation for valuation purposes. Overall, assessing the current valuation level reasonably requires weighing the stable operating margin, the pace of new-business execution, and the non-operating volatility embedded in net income together."
+  "ko": "밸류에이션은 이익 기준과 순자산 기준으로 나눠 볼 수 있다. 이익 기준으로 보면 최근 네 개 분기 지배주주 순이익 합계는 205억원이지만, 이 합계는 2026년 1분기와 2분기에 이익이 몰린 결과여서 분기별 편차가 크다. 3분기에 순손실로 적자 전환한 분기가 포함되어 있어 이익 기반 배수는 분기 단위보다 연간 흐름으로 읽는 편이 해석 오차가 적다. 2025년 지배주주 순이익 215억원은 2022~2025년 중 가장 큰 해이며, 연간 영업이익률 27.2%와 함께 이익 회복 방향을 보여 준다. 순자산 기준으로는 2025년 말 자본총계 1,705억원 대비 부채총계 1,430억원, 부채비율 83.9%라는 재무 레버리지를 함께 봐야 한다. 주가순자산비율은 장부 자본 대비 소폭의 프리미엄 구간에 있어, 순자산 대비 프리미엄이 큰 구간과는 성격이 다르다. 배당 여력은 2025년 영업활동 현금흐름 450억원이 지배주주 순이익 215억원을 웃도는 점에서 가늠할 수 있다.",
+  "en": "Valuation can be viewed through two lenses, earnings and net assets. On an earnings basis, profit attributable to controlling shareholders over the last four quarters totals KRW 20.5 billion, but that total is concentrated in the first and second quarters of 2026, so quarterly variation is large. Because the window includes a quarter that swung to a net loss, earnings-based multiples are easier to read on an annual basis than quarter by quarter. Profit attributable to controlling shareholders of KRW 21.5 billion in 2025 was the largest year within 2022 to 2025 and, together with the 27.2% operating margin, points to an earnings recovery. On a net asset basis, the debt-to-equity ratio of 83.9% at the end of 2025, with total liabilities of KRW 143 billion against total equity of KRW 170.5 billion, is the leverage that needs to be considered alongside valuation. The price-to-book level sits in a range with a modest premium to book value, which differs from a range with a large premium to net assets. Dividend capacity can be gauged from operating cash flow of KRW 45 billion in 2025, which exceeded profit attributable to controlling shareholders of KRW 21.5 billion."
  },
  "bull": [
   {
    "title": {
-    "ko": "신사업 다각화(AI·스테이블코인·글로벌결제)",
-    "en": "New-business diversification (AI, stablecoin, global payments)"
+    "ko": "페이먼트 거래량 확대",
+    "en": "Payment volume growth"
    },
    "body": {
-    "ko": "2026년 2분기 IR에서 MCP 기반 데이터 API 30여 종 출시, 스테이블코인 전 과정 기술검증 완료, 싱가포르 법인 설립 계획 등 신사업이 실행 단계에 들어섰다고 밝혔다. 이 같은 신사업이 상용화로 이어지면 기존 데이터·결제 사업 외에 추가적인 매출원이 될 수 있다. 다만 신사업은 아직 초기 단계로 매출 기여가 본격화되기까지는 시간이 필요하다.",
-    "en": "At its second-quarter 2026 IR, Coocon said its new businesses had entered the execution phase, citing the launch of about 30 MCP-based data API products, completion of end-to-end stablecoin proof-of-concept, and plans to establish a Singapore subsidiary. If these initiatives reach commercialization, they could add revenue streams beyond the existing Data and Payment businesses. However, the new businesses remain at an early stage and will need time before contributing meaningfully to revenue."
+    "ko": "페이먼트 부문 3분기 매출은 106.6억원으로 전년 동기 대비 21.4% 늘었고, 분기 매출이 처음으로 100억원을 넘었다. 빅테크 기업과 대형 PG사의 거래량 증가와 신규 고객사 확보가 함께 작용한 결과로 발표됐다. 페이먼트 부문 영업이익률은 25.4%로 1.0%p 올라 외형 성장과 수익성 개선이 동시에 나타났다.",
+    "en": "Payment segment revenue reached KRW 10.66 billion in the third quarter of 2026, up 21.4% year on year, and quarterly revenue passed KRW 10 billion for the first time. The company attributed the increase to higher volumes at big tech companies and major PG operators plus new client wins. The segment operating margin rose 1.0 percentage point to 25.4%, showing revenue growth and margin improvement together."
    }
   },
   {
    "title": {
-    "ko": "안정적인 영업이익률",
-    "en": "Stable operating margin"
+    "ko": "데이터 상품군과 마이데이터",
+    "en": "Data products and MyData"
    },
    "body": {
-    "ko": "2025년 이후 분기별 영업이익률이 27~28%대에서 비교적 안정적으로 유지되고 있으며, 데이터·페이먼트 두 부문 모두 30% 안팎의 부문별 영업이익률을 기록하고 있다. 계좌 기반 간편결제의 원가 경쟁력과 반복적 수수료 매출 비중이 높은 사업 구조가 이를 뒷받침한다.",
-    "en": "Since 2025, quarterly operating margins have stayed relatively stable in the 27%-28% range, with both the Data and Payment segments posting margins near 30%. The cost competitiveness of account-based simple payment and a business structure weighted toward recurring fee revenue underpin this stability."
+    "ko": "데이터 부문은 금융 마이데이터 구축 프로젝트 매출이 반영되며 3분기 매출 96.1억원, 전년 동기 대비 12.3% 증가를 기록했다. 회사는 AI 에이전트가 데이터를 직접 호출하는 MCP 기반 API 상품을 100여 종으로 늘리고 전 분야 마이데이터 사업을 추진하겠다고 밝혔다. 기존 금융 데이터 수요 위에 AI 관련 데이터 수요가 더해질 수 있다는 점이 강세 근거로 거론된다.",
+    "en": "The Data segment recorded third-quarter 2026 revenue of KRW 9.61 billion, up 12.3% year on year, with financial MyData construction projects contributing. The company plans to expand MCP-based API products that AI agents can call directly to about 100 and to push MyData business across all sectors. Demand for AI-related data could be added on top of existing financial data demand, which is cited as a supporting argument."
    }
   },
   {
    "title": {
-    "ko": "주주환원 강화",
-    "en": "Strengthened shareholder returns"
+    "ko": "이익 회복과 현금 창출",
+    "en": "Profit recovery and cash generation"
    },
    "body": {
-    "ko": "회사는 8월 5일 50억원 규모 자기주식취득 신탁계약을 체결했고, 2026년 주주환원 비율을 30% 이상으로 높이겠다는 목표를 제시했다. 이는 기존 배당 중심 환원에서 자기주식취득을 병행하는 방향으로 정책이 확장되는 것으로 해석할 수 있다.",
-    "en": "The company signed a KRW 5 billion treasury-stock trust contract on August 5 and set a target of raising its 2026 shareholder-return ratio to at least 30%. This can be read as an expansion of return policy from dividend-centric distribution to include treasury-stock buybacks."
+    "ko": "연간 영업이익은 2025년 189억원으로 전년 대비 13.7% 늘었고, 영업이익률은 2024년 22.7%에서 27.2%로 회복됐다. 2025년 영업활동 현금흐름은 450억원으로 지배주주 순이익 215억원을 웃돌았다. 2026년 3분기 전사 매출 증가율 16.9%는 회사가 제시한 연간 매출 성장률 목표 10%를 넘었다.",
+    "en": "Annual operating profit rose 13.7% to KRW 18.9 billion in 2025, and the operating margin recovered from 22.7% in 2024 to 27.2%. Operating cash flow of KRW 45 billion in 2025 exceeded profit attributable to controlling shareholders of KRW 21.5 billion. Company-wide revenue growth of 16.9% in the third quarter of 2026 surpassed the 10% annual growth target the company had set."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "매출 성장세 둔화·정체",
-    "en": "Slowing or stalled revenue growth"
+    "ko": "분기 순이익 변동성",
+    "en": "Quarterly earnings volatility"
    },
    "body": {
-    "ko": "2025년 연간 매출은 695억원으로 전년(730억원) 대비 감소했고, 2026년 1분기에도 개별 기준 매출이 전년 동기 대비 7.5% 줄었다. 정부의 가계대출 규제 강화로 대출 관련 데이터 조회량이 줄어든 영향이 컸으며, 신사업이 아직 매출 공백을 완전히 메우지 못하는 모습이다.",
-    "en": "Full-year 2025 revenue of KRW 69.5 billion declined from KRW 73.0 billion in 2024, and non-consolidated revenue fell a further 7.5% year-on-year in the first quarter of 2026. Tighter household-lending regulations weighed heavily on loan-related data query volumes, and new businesses have yet to fully offset the resulting revenue gap."
+    "ko": "2026년 3분기 지배주주 순이익은 순손실 9억원으로 적자 전환했다. 같은 해 1분기 74.3억원, 2분기 132억원이던 것과 비교하면 분기 간 편차가 매우 크다. 영업이익이 3분기 51.1억원으로 흑자를 유지한 만큼, 영업이익 밖 항목의 영향을 확인해야 하는 상황이다.",
+    "en": "Profit attributable to controlling shareholders swung to a net loss of KRW 896 million in the third quarter of 2026. Compared with KRW 7.43 billion in the first quarter and KRW 13.2 billion in the second quarter of the same year, the quarter-to-quarter swing is very large. Operating profit stayed in the black at KRW 5.11 billion, so the effect of items outside operating profit needs to be confirmed."
    }
   },
   {
    "title": {
-    "ko": "순이익의 비영업적 변동성",
-    "en": "Non-operating volatility in net income"
+    "ko": "데이터 부문 이익 감소",
+    "en": "Lower Data segment profit"
    },
    "body": {
-    "ko": "지배주주 순이익은 2025년 2분기 154억원에서 3분기 6억원, 4분기 8억원으로 급감했다가 2026년 1분기 74억원, 2분기 132억원으로 다시 늘어나는 등 영업이익 흐름과 무관하게 큰 폭으로 출렁였다. 이는 지분법이나 금융자산 평가 등 비영업 요인이 반영된 결과로 추정되며, 분기 실적을 해석할 때 영업이익과 순이익을 구분해 볼 필요가 있다.",
-    "en": "Owners' net income plunged from KRW 15.4 billion in the second quarter of 2025 to KRW 0.6 billion in the third quarter and KRW 0.8 billion in the fourth quarter, then rose again to KRW 7.4 billion in the first quarter of 2026 and KRW 13.2 billion in the second quarter—swings far larger than the operating-profit trend. This is likely attributable to non-operating items such as equity-method gains or financial-asset valuation changes, and operating profit and net income should be viewed separately when interpreting quarterly results."
+    "ko": "데이터 부문 3분기 영업이익은 24억원으로 전년 동기 대비 9.6% 줄었다. 구축형 프로젝트 비중 확대에 따른 매출 구성 변화가 원인으로 설명됐다. 부문 영업이익률은 1분기 32.5%에서 3분기 25.0%로 낮아져, 구축형 프로젝트가 늘수록 수익성이 희석될 가능성이 있다.",
+    "en": "Data segment operating profit fell 9.6% year on year to KRW 2.4 billion in the third quarter of 2026. The company attributed the decline to a change in revenue mix as build-type projects grew as a share of the business. The segment margin fell from 32.5% in the first quarter to 25.0% in the third, suggesting that profitability could be diluted as build-type projects expand."
    }
   },
   {
    "title": {
-    "ko": "신사업의 규제·집행 불확실성",
-    "en": "Regulatory and execution uncertainty in new businesses"
+    "ko": "재무 레버리지 상승과 규제",
+    "en": "Rising leverage and regulation"
    },
    "body": {
-    "ko": "스테이블코인·디지털자산 결제 사업은 국내 법제화가 완료되지 않은 상태로, KB증권은 2025년 12월 리포트에서 가상자산 법제화 불확실성을 리스크 요인으로 지적했다. 싱가포르 MPI 라이선스 취득 등 해외 진출 계획도 현지 규제 당국의 심사 일정에 따라 지연될 수 있다.",
-    "en": "Coocon's stablecoin and digital-asset payment business operates in a domestic legal environment that has not yet been finalized; KB Securities flagged virtual-asset legislative uncertainty as a risk factor in a December 2025 report. Overseas expansion plans such as obtaining a Singapore MPI license could also be delayed depending on local regulators' review timelines."
+    "ko": "부채비율은 2022년 40.8%에서 2025년 83.9%로 매년 올랐고, 2025년 말 부채총계는 1,430억원이다. 2026년 1분기에는 금융권 대출 규제로 거래량이 줄어 매출이 전년 동기 대비 7.5% 감소했다. 정책 변수에 따라 거래량이 흔들릴 수 있다는 점이 약세 요인이다.",
+    "en": "The debt-to-equity ratio rose every year from 40.8% in 2022 to 83.9% in 2025, with total liabilities of KRW 143 billion at the end of 2025. In the first quarter of 2026, revenue fell 7.5% year on year as financial lending regulations reduced transaction volumes. Volumes can be affected by policy changes, which is a bearish factor."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "정책·규제 리스크",
-    "en": "Policy and regulatory risk"
+    "ko": "정책·규제",
+    "en": "Policy and regulation"
    },
    "body": {
-    "ko": "가계대출 규제, 마이데이터 제도 변경, 스테이블코인 법제화 여부 등 정책 변수가 데이터 조회량과 신사업 진행 속도에 직접 영향을 준다. 규제 방향이 예상과 다르게 전개될 경우 관련 매출 항목의 변동성이 커질 수 있다.",
-    "en": "Policy variables such as household-lending regulations, changes to the MyData regime, and whether stablecoin legislation advances directly affect data query volumes and the pace of new-business progress. If regulatory direction diverges from expectations, related revenue items could see greater volatility."
+    "ko": "금융권 대출 규제와 마이데이터 관련 제도가 거래량과 사업 범위를 바꿀 수 있다. 2026년 1분기에는 금융권 대출 규제 영향으로 거래량이 일부 줄었다고 회사가 설명했다. 스테이블코인 결제의 상용화 시점도 제도 정비 일정에 맞춰지므로 외부 변수의 영향이 크다.",
+    "en": "Financial lending regulations and MyData-related rules could change transaction volumes and the scope of the business. In the first quarter of 2026 the company described a partial volume decline from financial lending regulations. The timing of stablecoin payment commercialization depends on regulatory work, so external variables weigh heavily."
    }
   },
   {
    "cat": {
-    "ko": "경쟁 심화",
-    "en": "Intensifying competition"
+    "ko": "신사업 실행",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "NICE평가정보, 코스콤 등 정보서비스 기업들의 데이터 유통·API 전환 사업 진출과 PG·VAN사·빅테크 간 결제 경쟁 심화로 원가 압박이 커질 수 있다. 마이데이터 사업자 전환에 따른 중계기관 이용 축소도 관련 매출에 영향을 줄 수 있다.",
-    "en": "Entry by information-service firms such as NICE Information Service and Koscom into data-distribution and API-conversion businesses, along with intensifying payment competition among PG/VAN operators and big-tech firms, could increase cost pressure. Reduced use of relay institutions as clients convert to direct MyData operators could also affect related revenue."
+    "ko": "MCP 기반 데이터 API, 스테이블코인 결제, 글로벌 결제 협업은 아직 매출 규모가 부문별 공시로 구분되지 않는 영역이다. 알리페이·위챗페이 등 해외 결제사와의 협업과 에이전틱 AI 재단 가입 추진은 계획 단계에 가깝다. 초기 투자 부담과 수익화 지연이 이익률을 낮출 수 있다.",
+    "en": "MCP-based data APIs, stablecoin payments and global payment partnerships are areas whose revenue scale is not yet separately disclosed by segment. Partnerships with overseas payment providers such as Alipay and WeChat Pay and the planned joining of the Agentic AI Foundation are still closer to the planning stage. Early investment costs and delayed monetization could weigh on margins."
    }
   },
   {
    "cat": {
-    "ko": "해외 진출 집행 리스크",
-    "en": "Overseas-expansion execution risk"
+    "ko": "재무·이익 변동",
+    "en": "Financial and earnings volatility"
    },
    "body": {
-    "ko": "싱가포르 법인 설립과 MPI 라이선스 취득, 스테이블코인 컨소시엄 구성 등은 계획 대비 지연되거나 현지 규제 요건이 변경될 경우 사업 일정에 영향을 줄 수 있다. 초기 투자 부담이 단기적으로 수익성에 부담을 줄 가능성도 있다.",
-    "en": "Establishing the Singapore subsidiary, obtaining an MPI license, and forming a stablecoin consortium could be delayed relative to plan or affected by changes in local regulatory requirements. Upfront investment costs could also weigh on near-term profitability."
+    "ko": "부채비율 상승이 이어지면 금리와 차입 조건 변화가 이익에 부담이 될 수 있다. 지배주주 순이익이 분기마다 크게 움직여 실적 예측 가능성이 낮다. 2025년 말 기준 자본총계 1,705억원 대비 부채총계 1,430억원 규모가 재무 여력을 좌우한다.",
+    "en": "If the debt-to-equity ratio keeps rising, changes in interest rates and borrowing terms could weigh on earnings. Profit attributable to controlling shareholders moves sharply from quarter to quarter, which lowers earnings predictability. Total liabilities of KRW 143 billion against total equity of KRW 170.5 billion at the end of 2025 shape the financial room available."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 10~11월경",
-    "en": "Around October-November 2026"
+    "ko": "2026년 4분기 (2026년 10~12월)",
+    "en": "Fourth quarter 2026"
    },
    "what": {
-    "ko": "2026년 3분기 정례 IR에서 데이터·페이먼트 부문별 매출·영업이익 추이와 MCP 상품 100여 종 확대 목표의 진행 상황을 확인할 시점이다.",
-    "en": "At the third-quarter 2026 regular IR, check revenue and operating-profit trends by segment and progress toward the goal of expanding MCP products to about 100."
+    "ko": "MCP 기반 데이터 API 100여 종 확대와 전 분야 마이데이터 사업이 4분기 매출로 이어지는지 확인한다. 데이터 부문 영업이익률이 3분기 25.0%에서 1분기 수준으로 회복되는지도 함께 본다.",
+    "en": "Check whether the expansion of MCP-based data APIs to about 100 and full-scope MyData business show up in fourth-quarter revenue, and whether the Data segment operating margin recovers from 25.0% in the third quarter toward its first-quarter level."
    }
   },
   {
    "when": {
-    "ko": "2026년 내",
-    "en": "Within 2026"
+    "ko": "2027년 3월 31일 전후 (2026년 사업보고서 제출 기한)",
+    "en": "Around March 31, 2027 (2026 annual report filing deadline)"
    },
    "what": {
-    "ko": "싱가포르 법인 설립 완료 여부와 초기 사업 계획 공개 여부를 확인해야 한다.",
-    "en": "Check whether the Singapore subsidiary is established and whether initial business plans are disclosed."
+    "ko": "2026년 연간 매출, 영업이익, 지배주주 순이익이 확정된다. 2025년 영업이익률 27.2%와 부채비율 83.9%를 기준으로 연간 흐름을 확인하고, 분기 순손익 괴리의 원인이 주석에서 드러나는지 본다.",
+    "en": "Full-year 2026 revenue, operating profit and profit attributable to controlling shareholders will be finalized. Measure the annual trend against the 27.2% operating margin and 83.9% debt-to-equity ratio of 2025, and check whether the notes explain the gap between quarterly operating profit and net profit."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기",
-    "en": "Second half of 2026"
+    "ko": "2027년 5월 15일 전후 (2027년 1분기 분기보고서 제출 기한)",
+    "en": "Around May 15, 2027 (Q1 2027 quarterly report filing deadline)"
    },
    "what": {
-    "ko": "원화 스테이블코인 제도화 논의와 금융권 컨소시엄 구성 진행 상황을 점검할 필요가 있다.",
-    "en": "Monitor progress on Korean-won stablecoin legislative discussions and the formation of the financial-industry consortium."
+    "ko": "2026년 1분기 매출 160억원을 기준으로 2027년 1분기 매출 흐름과 금융권 대출 규제 영향이 줄었는지 확인한다. 분기 지배주주 순이익이 영업이익 수준으로 수렴하는지도 확인 지점이다.",
+    "en": "Use first-quarter 2026 revenue of KRW 16 billion as the base to check the first-quarter 2027 revenue trend and whether the impact of financial lending regulations has eased. Whether quarterly profit attributable to controlling shareholders converges toward operating profit is another checkpoint."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기 이후",
-    "en": "From the fourth quarter of 2026"
+    "ko": "2026년 말 이후 (일정 미정)",
+    "en": "After late 2026 (timing to be confirmed)"
    },
    "what": {
-    "ko": "50억원 규모 자기주식취득 신탁계약의 집행(매입) 현황과 2026년 주주환원 비율 30% 이상 목표 달성 여부를 확인해야 한다.",
-    "en": "Check the execution status of the KRW 5 billion treasury-stock trust and whether the 2026 shareholder-return ratio target of at least 30% is met."
+    "ko": "스테이블코인 결제·충전·출금 서비스 상용화와 글로벌 결제 협업이 매출로 연결되는지 확인한다. 제도 정비 일정에 따라 시점이 달라진다.",
+    "en": "Check whether commercialization of stablecoin payment, top-up and withdrawal services and global payment partnerships translate into revenue. The timing depends on the regulatory schedule."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "쿠콘은 데이터·페이먼트 두 핵심 사업에서 반복적 수수료 매출 구조를 유지하며 2025년 영업이익률 27.2%, 지배주주 순이익 215억원까지 이익 회복을 이어갔다. 다만 2025년 매출은 전년 대비 줄었고 2026년 1분기에도 대출 규제 영향으로 매출이 다시 감소해, 매출 성장의 재가속 여부가 관찰 대상이다. 분기별 지배주주 순이익은 영업이익과 무관하게 큰 편차를 보여 왔는데, 이는 비영업적 요인에서 기인한 것으로 추정되며 향후 실적을 판단할 때 영업이익 흐름을 함께 참고하는 것이 필요하다. 회사는 AI 데이터(MCP), 스테이블코인, 글로벌 결제(싱가포르 진출)라는 세 개의 신사업 축을 통해 중장기 성장동력을 모색하고 있으며, 2분기 IR에서 이들 사업이 실행 단계에 들어섰음을 공유했다. 주주환원 측면에서는 자기주식취득 신탁계약 체결과 2026년 환원 비율 30% 이상 목표가 제시된 상태다. 신사업의 매출 기여 시점, 규제 환경의 변화, 그리고 순이익의 비영업적 변동성이 향후 쿠콘의 실적 흐름을 판단하는 핵심 변수가 될 것으로 보인다. 본 리포트는 투자 권유가 아닌 정보 제공을 목적으로 하며 매수·매도 의견을 포함하지 않는다.",
-   "en": "Coocon has maintained a recurring, fee-based revenue structure across its Data and Payment segments, extending a profit recovery to a 27.2% operating margin and KRW 21.5 billion in owners' net income in 2025. However, 2025 revenue declined from the prior year, and revenue fell again in the first quarter of 2026 due to lending regulations, making re-acceleration of top-line growth a key item to watch. Quarterly owners' net income has swung widely independent of the operating-profit trend, likely reflecting non-operating factors, so the operating-profit trend should be referenced alongside net income when assessing future results. The company is pursuing medium-term growth drivers through three new-business pillars—AI data (MCP), stablecoins, and global payments via a planned Singapore entity—and shared at its second-quarter IR that these initiatives have entered execution. On shareholder returns, it has signed a treasury-stock trust contract and set a target of at least 30% for its 2026 return ratio. The timing of new-business revenue contribution, shifts in the regulatory environment, and the non-operating volatility in net income are likely to be the key variables shaping Coocon's future earnings trajectory. This report is intended for informational purposes only and does not constitute a buy or sell recommendation."
+   "ko": "쿠콘은 2025년 매출이 줄었지만 영업이익이 늘고 지배주주 순이익이 215억원으로 3년 연속 증가한 기업이다. 2026년에는 페이먼트 부문이 분기 매출 100억원을 처음 넘는 등 외형 회복이 뚜렷했고, 3분기 전사 매출 증가율 16.9%는 회사가 제시한 연간 목표 10%를 웃돌았다. 반면 같은 3분기에 지배주주 순손실 9억원으로 적자 전환해 분기 순이익의 변동성이 가장 큰 숙제로 드러났다. 데이터 부문의 구축형 프로젝트 비중 확대는 매출을 늘렸지만 부문 영업이익을 줄였고, 부채비율은 2022년 40.8%에서 2025년 83.9%로 올랐다. MCP 기반 데이터 API, 스테이블코인 결제, 글로벌 결제 협업은 4분기부터 본격화되지만 매출 기여는 정기보고서에서 확인해야 한다. 강세 요인은 결제 거래량과 데이터 상품군 확대, 현금창출력이고, 약세 요인은 순이익 변동과 금융 규제, 재무 레버리지다. 이 리포트는 투자의견이나 목표주가를 제시하지 않으며, 다음 확인 지점은 2026년 사업보고서의 연간 영업이익률과 부채비율, 2027년 1분기 분기보고서의 지배주주 순이익이다.",
+   "en": "coocon's revenue fell in 2025, yet operating profit rose and profit attributable to controlling shareholders grew for three consecutive years to KRW 21.5 billion. In 2026 the Payment segment passed KRW 10 billion in quarterly revenue for the first time, and third-quarter company-wide revenue growth of 16.9% exceeded the company's 10% annual target. At the same time, the third quarter brought a net loss of KRW 896 million, making quarterly earnings volatility the most visible challenge. Build-type projects in the Data segment lifted revenue but reduced segment operating profit, and the debt-to-equity ratio climbed from 40.8% in 2022 to 83.9% in 2025. MCP-based data APIs, stablecoin payments and global payment partnerships are due to ramp up from the fourth quarter, but their revenue contribution must be verified in periodic reports. Bullish factors include payment volume growth, wider data product lines and cash generation, while bearish factors include earnings swings, financial regulation and leverage. This report offers no investment opinion or target price, and the next checkpoints are the operating margin and debt ratio in the 2026 annual report and profit attributable to controlling shareholders in the Q1 2027 quarterly report."
   }
  },
  "sources": [
-  "https://alphasquare.co.kr/home/stock-summary?code=294570",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A294570",
-  "https://www.valueline.co.kr/finance/mri/294570",
-  "https://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=294570",
-  "https://www.investing.com/equities/coocon",
-  "https://m.irgo.co.kr/IR-COMP/294570",
-  "https://kbthink.com/securities-view.html?docId=20251210084823213K",
-  "https://www.newswire.co.kr/newsRead.php?no=1035014&sourceType=rss",
-  "https://m.datanews.co.kr/m/m_article.html?no=107658",
-  "https://www.dt.co.kr/article/11325889",
-  "https://m.etnews.com/20210318000229",
-  "https://www.newswire.co.kr/newsRead.php?no=908473",
-  "https://www.datanews.co.kr/news/article.html?no=107380",
-  "https://www.etnews.com/20200804000113",
-  "https://www.aitimes.com/news/articleView.html?idxno=141845",
-  "https://zdnet.co.kr/view/?no=20190516165026",
-  "http://m.ddaily.co.kr/m/m_article/?no=200579",
-  "https://m.ddaily.co.kr/page/view/2021081711520895430"
+  "https://www.fnnews.com/news/202611170907014762",
+  "https://zdnet.co.kr/view/?no=20261117161147",
+  "https://www.koit.co.kr/news/articleView.html?idxno=209944",
+  "https://www.specialtimes.co.kr/news/articleView.html?idxno=486334",
+  "https://www.gukjenews.com/news/articleView.html?idxno=3754593",
+  "https://www.m-i.kr/news/articleView.html?idxno=2019692",
+  "http://www.finomy.com/news/articleView.html?idxno=266903",
+  "https://www.thesnstime.com/kukon-3bungi-maecul-202-7eogweon-jeonnyeon-daebi-16-9-seongjang/",
+  "https://www.m-i.kr/news/articleView.html?idxno=2019408",
+  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=715905",
+  "https://zdnet.co.kr/view/?no=20260522150236",
+  "https://www.sukbakmagazine.com/news/articleView.html?idxno=69997",
+  "https://www.datanet.co.kr/news/articleView.html?idxno=300230",
+  "https://www.kmsnews.co.kr/news/articleView.html?idxno=28681",
+  "https://www.devtimes.co.kr/news/492181",
+  "https://kpinfo.kr/stock/294570"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "294570",
  "name": "쿠콘",
  "name_en": "coocon Corporation",
@@ -223,11 +221,11 @@
   "IT·소프트웨어"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 07:33",
- "dataDate": "20260904",
+ "reportDate": "2026-11-18",
+ "reportTs": "2026-11-18 06:54",
+ "dataDate": "20261117",
  "quant": {
-  "asOf": "2026-08-21",
+  "asOf": "2026-11-17",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -238,6 +236,7 @@
     "np_owner": 21485218882,
     "equity": 170511989739,
     "equity_owner": 170511989739,
+    "equity_nci": null,
     "liab": 143017206782,
     "cfo": 44999409784,
     "eps_basic": 2127,
@@ -253,6 +252,7 @@
     "np_owner": 15776286387,
     "equity": 146807135040,
     "equity_owner": 146807135040,
+    "equity_nci": null,
     "liab": 116118060118,
     "cfo": 52522491108,
     "eps_basic": 1560,
@@ -268,6 +268,7 @@
     "np_owner": 7174300310,
     "equity": 128160028671,
     "equity_owner": 128160028671,
+    "equity_nci": null,
     "liab": 79387991203,
     "cfo": 29643959210,
     "eps_basic": 703,
@@ -283,6 +284,7 @@
     "np_owner": 3653460271,
     "equity": 129406692943,
     "equity_owner": 129406692943,
+    "equity_nci": 0,
     "liab": 52794389909,
     "cfo": 10188946219,
     "eps_basic": 361,
@@ -292,12 +294,6 @@
    }
   ],
   "quarterly": [
-   {
-    "q": "2025Q2",
-    "rev": 16729264788,
-    "op": 4665380485,
-    "np_owner": 15378966817
-   },
    {
     "q": "2025Q3",
     "rev": 17337255585,
@@ -321,26 +317,36 @@
     "rev": 17958595022,
     "op": 4957780914,
     "np_owner": 13198391681
+   },
+   {
+    "q": "2026Q3",
+    "rev": 20266590762,
+    "op": 5109637517,
+    "np_owner": -895989499
    }
   ],
   "valuation": {
-   "price": 30550,
-   "mcap": 0.3083,
+   "price": 19600,
+   "mcap": 0.1978,
    "shares": 10091732,
    "total_shares": 10091732,
    "wavg_shares": 10101184,
-   "per": 13.924,
-   "eps": 2194,
-   "pbr": 1.6356,
-   "bps": 18678,
-   "roe_ttm": 12.2,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": 21986192879,
-   "pbr_krx": 1.58,
+   "per": 9.584,
+   "eps": 2045,
+   "pbr": 1.0855,
+   "bps": 18056,
+   "roe_ttm": 11.8,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": 20510610043,
+   "ccy": "KRW",
+   "bps_src": "자체",
+   "eps_src": "공시",
+   "pbr_krx": 1.16,
    "bps_krx": 16970.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 300.0,
-   "div": 0.98
+   "div": 1.53
   }
- }
+ },
+ "textRules": 2
 }

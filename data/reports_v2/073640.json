@@ -1,220 +1,209 @@
 {
  "title": {
-  "ko": "상장폐지 갈림길, 실적보다 존속 리스크가 핵심",
-  "en": "Delisting Risk Overshadows Operating Performance"
+  "ko": "영업적자 지속, 자산 매각으로 재무 조정 중",
+  "en": "Operating losses persist as Tera Science sells assets to restructure"
  },
  "lead": {
-  "ko": "테라사이언스는 3년 연속 감사의견 거절로 코스닥시장본부의 상장폐지 결정을 받았으나 효력정지 가처분으로 절차가 보류된 상태이며, 서진판지를 대상으로 한 25억원 규모 유상증자와 최대주주 변경 완료 여부가 존속의 최우선 변수로 남아 있다.",
-  "en": "Tera Science received a delisting decision from the KOSDAQ Market after three consecutive years of audit opinion disclaimers, but the procedure remains suspended via a court injunction, leaving completion of a KRW 2.5 billion third-party capital raise and the pending change of controlling shareholder as the key variables for the company's survival."
+  "ko": "테라사이언스는 2022년부터 2025년까지 4년 연속 영업손실을 기록했고, 2026년 4월 창원 공장 자산 양도 계약으로 차입금 상환과 현금 확보에 나서고 있다.",
+  "en": "Tera Science has recorded operating losses for four consecutive years through 2025 and, in April 2026, agreed to sell its Changwon plant assets to repay borrowings and secure cash."
  },
  "keypoints": [
   {
-   "ko": "한국거래소 기업심사위원회는 2023·2024사업연도 감사의견 거절을 이유로 상장폐지를 확정했고, 회사는 효력정지 가처분을 신청해 정리매매 등 절차가 보류된 상태다.",
-   "en": "The Korea Exchange's corporate review committee confirmed a delisting decision citing disclaimer opinions for fiscal years 2023 and 2024, and the company's injunction filing has suspended follow-up procedures such as liquidation trading."
+   "ko": "매출은 2023년 231억원을 정점으로 2024년부터 2025년까지 2년 연속 감소해 2025년 141억원이다.",
+   "en": "Revenue peaked at KRW 23.1 billion in 2023 and fell for two straight years to KRW 14.1 billion in 2025."
   },
   {
-   "ko": "2025사업연도 감사보고서와 2026년 반기 검토보고서 모두 검토범위 제한으로 의견거절을 받아 추가 상장폐지 사유가 누적되고 있다.",
-   "en": "Both the FY2025 audit report and the 2026 semiannual review received disclaimer opinions due to scope limitations, adding further grounds for delisting."
+   "ko": "2025년 영업손실은 101억원으로 4년 연속 적자이며, 영업이익률은 -71.7%다.",
+   "en": "The operating loss widened to KRW 10.1 billion in 2025, a fourth straight annual loss, with an operating margin of -71.7%."
   },
   {
-   "ko": "서진판지 대상 제3자배정 유상증자(2,500만 주, 주당 100원, 25억원)는 여러 차례 연기된 끝에 납입일이 9월 30일로 재조정됐으며, 완료 시 최대주주가 위플러스투자조합(10.14%)에서 서진판지(23.50%)로 바뀔 예정이다.",
-   "en": "A third-party capital raise for Seojin Panji (25 million new shares at KRW 100 each, KRW 2.5 billion) has been repeatedly postponed, with the payment date now reset to September 30; if completed, the largest shareholder would shift from Wiplus Investment Association (10.14%) to Seojin Panji (23.50%)."
+   "ko": "부채비율은 2024년 16.2%에서 2025년 96.7%로 뛰었고, 영업활동 현금흐름은 2025년 -130억원으로 적자 폭이 커졌다.",
+   "en": "The debt ratio rose from 16.2% in 2024 to 96.7% in 2025, and operating cash flow was -KRW 13 billion in 2025."
   },
   {
-   "ko": "주력인 유압 관이음쇠(Fitting) 부문은 건설중장비 수요 둔화 속에 매출이 다년간 축소됐지만, 2026년 1분기에는 비용 절감으로 영업손실 폭이 전년 동기 대비 크게 줄었다.",
-   "en": "The core hydraulic pipe fitting business has seen multi-year revenue contraction amid weak construction equipment demand, though the first quarter of 2026 showed a much narrower operating loss year over year on cost cuts."
+   "ko": "2026년 4월 창원 공장 부지·건물을 200억원에 양도하는 계약을 맺었고, 회사는 차입금 상환과 현금 유동성 확보가 목적이라고 밝혔다.",
+   "en": "In April 2026 the company agreed to sell its Changwon plant land and buildings for KRW 20 billion, saying the proceeds would repay borrowings and secure liquidity."
   },
   {
-   "ko": "리튬·신재생에너지·가상자산 플랫폼 등 신사업 다각화는 자회사 신안리튬 현장에 대한 취재 결과 가시적 진척이 확인되지 않아 실행력에 의문이 제기된 바 있다.",
-   "en": "Diversification into lithium, renewable energy, and a crypto-asset platform has drawn scrutiny after field reporting found little visible progress at the Sinan Lithium subsidiary site, raising questions about execution."
+   "ko": "주력은 건설중장비·산업차량·군장비용 고압 유압 관이음쇠로, 건설 장비 수요 사이클에 실적이 연동되는 구조다.",
+   "en": "The core business is high-pressure hydraulic pipe fittings for construction equipment, industrial vehicles and military equipment, so results track demand cycles in those markets."
   }
  ],
  "business": {
-  "ko": "테라사이언스는 1993년 삼원금속으로 설립돼 건설중장비, 산업차량, 군장비, 농업용 기계 등에 쓰이는 고압 유압 관이음쇠(Fitting)를 생산해온 제조업체로, 2020년 7월 임시주주총회에서 상호를 삼원테크에서 테라사이언스로 변경하고 코스닥에 변경상장했다. 관이음쇠 제조산업은 성숙 단계에 접어들어 경쟁이 치열하며, 개발도상국의 저가 대량생산으로 애프터마켓 비중이 확대되는 반면 OEM 시장은 품질 격차로 선진국 중심 구도를 유지하고 있다. 회사는 이 전통 사업 외에 신재생에너지, 가상자산 플랫폼, 리튬·니켈·게르마늄 생산 등으로 사업 영역을 다각화해왔다. 자회사 신안리튬을 통해 전남 신안 지역 염지하수에서 리튬을 추출하는 사업을 추진하며 2023년 리튬 염호 전문가를 영입하고 부지를 확보했다고 밝힌 바 있다. 그러나 2024년 3월 현장 취재에서는 신안 지역 사업 부지에 공사 흔적이나 진척이 거의 확인되지 않았고, 인근 주민과 신안군청 관계자들도 진전이 없었다고 전했다. 이 때문에 시장에서는 신사업 관련 발표가 실질적 사업 추진보다 주가 부양 목적에 가깝다는 의혹도 제기됐다. 결국 회사의 매출 기반은 여전히 유압 관이음쇠 부문에 집중돼 있으며, 다각화 사업들은 아직 유의미한 매출 창출로 이어졌다는 근거가 확인되지 않은 상태다. 고객 기반은 건설중장비·산업차량·군장비·농업기계 제조사 중심으로 추정되며, 구체적 거래처별 매출 비중은 공개 자료로 확인되지 않는다.",
-  "en": "Tera Science was founded in 1993 as Samwon Metal, manufacturing high-pressure hydraulic pipe fittings used in construction heavy equipment, industrial vehicles, military equipment, and agricultural machinery, and changed its name from Samwon Tech to Tera Science following an extraordinary shareholders' meeting in July 2020. The hydraulic fitting manufacturing industry has matured into a highly competitive space, where low-cost mass production from developing countries has expanded the aftermarket segment while the OEM market remains dominated by advanced economies due to quality gaps. Beyond this legacy business, the company has diversified into renewable energy, a crypto-asset platform, and lithium, nickel, and germanium production. Through subsidiary Sinan Lithium, it has pursued brine-based lithium extraction in Sinan County, South Jeolla Province, announcing in 2023 the hiring of a lithium-brine expert and land acquisitions for the project. However, on-site reporting in March 2024 found little evidence of construction or progress at the designated project sites, with local residents and county officials also reporting no advancement. This fueled market speculation that the new-business announcements were aimed more at supporting the share price than at genuine business execution. As a result, the company's revenue base remains concentrated in the hydraulic fitting segment, and the diversification businesses have not yet demonstrated verifiable revenue generation. The customer base is presumed to center on manufacturers of construction equipment, industrial vehicles, military equipment, and agricultural machinery, though a detailed breakdown by customer is not publicly disclosed."
+  "ko": "테라사이언스는 1993년 유압용 관이음쇠의 제조와 판매를 목적으로 설립됐고, 2004년 코스닥에 상장했다. 주력인 Fitting·유압 부문은 건설중장비, 산업차량, 군장비 등에 고압용 유압 관이음쇠를 공급한다. 회사 실적 요약에 따르면 이 부문의 매출은 최근 분기 전년 동기 수준을 유지했으나 매출총이익률은 소폭 하락했다. 수요처가 건설중장비·산업차량·군장비 분야에 몰려 있어 해당 장비의 설비투자와 건설 경기에 실적이 연동되는 구조다. 회사는 신재생에너지, 리튬 등 신소재, 가상자산 플랫폼으로 사업을 다각화하고 있다고 밝혀 왔다. 리튬 사업은 자회사 신안리튬이 신안 압해도 부근에 농축 설비를 구축해 시험 가동을 마쳤다는 보도가 있으나, 사업화 일정과 매출 기여 규모는 공시로 뚜렷하게 드러나지 않았다. 가상자산 플랫폼과 신재생 사업도 공시 실적에서 손익 기여분을 따로 구분하기 어렵다. 부문별 매출 비중은 정기보고서의 사업부문 주석에서 확인할 항목이다. 경쟁 구도에서는 국내외 유압 관이음쇠와 건설기계 부품 업체와 겹치며, 화학 업종 대형 상장사와는 제품과 규모가 달라 직접 비교 지표가 제한적이다. 2026년 4월에는 본사 이전과 공장 통합 운영을 추진하며 생산 효율화와 고정비 절감을 목표로 제시했다. 본업의 수요 의존도가 높은 가운데 사업 다각화가 실적을 받칠 수 있는지가 이 회사 구조의 핵심 질문이다.",
+  "en": "Tera Science was founded in 1993 to make and sell hydraulic pipe fittings and listed on KOSDAQ in 2004. Its core Fitting and hydraulic segment supplies high-pressure hydraulic fittings to makers of construction equipment, industrial vehicles and military equipment. According to the company's results commentary, segment sales in the latest quarter held near the prior-year level, while gross margin edged down. Demand is concentrated in construction equipment, industrial vehicles and military equipment, so earnings are linked to capital spending in those sectors and to construction activity. The company has said it is diversifying into renewable energy, new materials such as lithium, and a virtual asset platform. Press reports say its subsidiary Shinan Lithium built a concentration facility near Apodo island in Shinan and completed trial operation, but the commercialization timeline and revenue contribution have not been clearly disclosed. Profit contribution from the virtual asset and renewable energy businesses also cannot be separated from the disclosed figures. Segment revenue mix should be checked in the business segment note of the periodic report. Competition overlaps with domestic and foreign hydraulic fitting and construction machinery parts suppliers, while large listed chemical companies differ in products and scale, which limits direct comparison. In April 2026 the company announced a headquarters move and plant consolidation aimed at production efficiency and lower fixed costs. With the core business highly exposed to equipment demand, whether diversification can support earnings is the central question for this company."
  },
  "earnings": {
-  "ko": "연결 매출액은 2022년 228.1억원, 2023년 230.8억원에서 2024년 172.7억원, 2025년 141.3억원으로 최근 2년간 뚜렷한 하락세를 보였다. 영업손실은 2022년 -9.2억원에서 2023년 -34.7억원, 2024년 -94.8억원, 2025년 -101.4억원으로 매년 확대돼 영업이익률은 2022년 -4.0%에서 2025년 -71.7%까지 악화됐다. 지배주주 순이익은 2022년 287.8억원 흑자를 기록했으나 이는 영업손실을 낸 채로도 순이익이 흑자로 전환된 것으로, 영업외 부문의 일회성 요인에 힘입은 결과로 추정된다. 이후 2023년 -23.6억원, 2024년 -97.9억원, 2025년 -171.2억원으로 순손실 규모가 매년 확대됐다. 분기별로 보면 2025년 2분기 매출 36.5억원·영업손실 -26.3억원에서 3분기 매출 33.0억원·영업손실 -25.1억원, 4분기 매출 34.4억원·영업손실 -20.2억원으로 매출은 정체된 반면 영업손실은 다소 줄었지만, 4분기 지배주주 순손실은 -72.3억원으로 영업손실 대비 크게 확대돼 영업외 일회성 손실이 반영된 것으로 보인다. 2026년 1분기에는 매출 37.5억원, 영업손실 -17.5억원, 순손실 -19.7억원으로 손실 폭이 눈에 띄게 좁혀졌고, 2분기에는 매출이 38.9억원으로 늘었으나 영업손실은 -21.3억원으로 다시 확대됐으며 순이익은 아직 확정 공시되지 않았다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 합산 지배주주 순손실은 약 155.0억원에 달한다. 지배주주지분은 2022년 799.5억원에서 2025년 288.4억원으로 3년 만에 3분의 1 수준으로 줄었고, 부채총액은 2024년 109.3억원에서 2025년 276.9억원으로 다시 늘어 부채비율이 16.2%에서 96.7%로 급등했다. 영업활동현금흐름은 2022년 3.6억원 순유입 이후 2023~2025년 3년 연속 순유출(-45.5억원, -31.1억원, -130.1억원)로 자금 소진 속도가 빨라지는 모습이다.",
-  "en": "Consolidated revenue moved from KRW 22.81 billion in 2022 and KRW 23.08 billion in 2023 down to KRW 17.27 billion in 2024 and KRW 14.13 billion in 2025, showing a clear two-year decline. Operating loss widened every year, from KRW -0.92 billion in 2022 to KRW -3.47 billion in 2023, KRW -9.48 billion in 2024, and KRW -10.14 billion in 2025, pushing the operating margin from -4.0% to -71.7% over the period. Net income attributable to owners was a positive KRW 28.78 billion in 2022 despite an operating loss, a turnaround presumed to reflect a one-off non-operating item rather than core profitability. Net losses then widened each year to KRW -2.36 billion in 2023, KRW -9.79 billion in 2024, and KRW -17.12 billion in 2025. On a quarterly basis, revenue stalled around KRW 3.6-3.4 billion from the second through fourth quarter of 2025 while operating losses narrowed slightly from KRW -2.63 billion to KRW -2.02 billion, but the fourth-quarter net loss attributable to owners jumped to KRW -7.23 billion, far exceeding the operating loss and suggesting a non-operating one-off charge. In the first quarter of 2026, revenue was KRW 3.75 billion with an operating loss of KRW -1.75 billion and a net loss of KRW -1.97 billion, a notably narrower loss, while the second quarter saw revenue rise to KRW 3.89 billion but the operating loss widen again to KRW -2.13 billion, with net income not yet finalized. The combined net loss attributable to owners over the most recent four quarters (Q3 2025 through Q2 2026) reached roughly KRW 15.50 billion. Equity attributable to owners fell from KRW 79.95 billion in 2022 to KRW 28.84 billion in 2025, shrinking to about a third within three years, while total liabilities rose back from KRW 10.93 billion in 2024 to KRW 27.69 billion in 2025, pushing the debt ratio from 16.2% to 96.7%. Operating cash flow turned from a positive KRW 0.36 billion in 2022 to three consecutive years of net outflow in 2023-2025 (KRW -4.55 billion, -3.11 billion, -13.01 billion), indicating an accelerating pace of cash burn."
+  "ko": "연간 매출은 2022년 228억원에서 2023년 231억원(전년 대비 1.2% 증가)으로 정점을 찍었고, 이후 2024년 173억원(전년 대비 25.1% 감소), 2025년 141억원(전년 대비 18.2% 감소)으로 2024년부터 2025년까지 2년 연속 감소했다. 2022~2025년 중 가장 큰 해는 2023년이고 가장 작은 해는 2025년이다. 같은 기간 영업손실은 2022년 9.2억원에서 2023년 34.7억원, 2024년 94.8억원, 2025년 101억원으로 확대됐고, 영업이익률은 -4.0%, -15.0%, -54.9%, -71.7%로 낮아졌다. 매출 감소 폭보다 손실 확대 속도가 빨라 고정비 부담을 매출이 흡수하지 못하는 구조로 읽힌다. 회사는 2025년 실적의 원인으로 글로벌 경기침체와 세계 건설중장비 수요 감소에 따른 매출 감소, 판매비와관리비 증가를 제시했다. 지배주주 순이익은 2022년 288억원이었으나 2023년 순손실 23.6억원으로 적자 전환했고, 2024년 97.9억원, 2025년 171억원으로 손실이 늘었다. 2022년의 흑자는 같은 해 영업손실과 방향이 달라, 영업 외 항목 등 원인을 정기보고서 주석에서 따로 확인할 필요가 있다. 당기순이익(비지배지분 포함)은 2025년 순손실 172억원으로 지배주주 기준과 별도로 집계된다. 영업활동 현금흐름은 2022년 3.6억원 유입에서 2023년 -45.5억원, 2024년 -31.1억원, 2025년 -130억원으로 유출 폭이 커졌다. 분기로 보면 2025년 3분기 매출 33억원을 저점으로 2026년 3분기 38.9억원까지 회복됐고, 2026년 3분기 매출은 전년 동기 대비 17.9% 증가했다. 영업손실은 2025년 3분기 25.1억원에서 2026년 1분기 17.5억원까지 줄었다가 2026년 2분기 21.3억원, 2026년 3분기 20.2억원으로 다시 집계됐고, 2025년 3분기부터 5개 분기 연속 적자다. 2025년 4분기 지배주주 순손실은 72.3억원으로 크게 늘었고 2026년 1분기에는 19.7억원으로 축소됐으며, 최근 4개 분기 지배주주 순손실 합계는 133억원이다. 매출은 회복 쪽이지만 영업 단위의 적자는 좁혀지지 않은 상태다.",
+  "en": "Annual revenue rose from KRW 22.8 billion in 2022 to KRW 23.1 billion in 2023, up 1.2% year on year, before falling 25.1% to KRW 17.3 billion in 2024 and 18.2% to KRW 14.1 billion in 2025. Revenue has declined for two straight years since the 2023 peak. 2023 was the largest year and 2025 the smallest in the 2022 to 2025 period. Over the same span the operating loss widened from KRW 919 million in 2022 to KRW 3.47 billion in 2023, KRW 9.48 billion in 2024 and KRW 10.1 billion in 2025, and the operating margin fell from -4.0% to -15.0%, -54.9% and -71.7%. The loss has grown faster than revenue has shrunk, which suggests fixed costs are not being absorbed by sales. The company cited a global economic slowdown and lower global construction equipment demand, along with higher selling and administrative expenses, as the main causes of the 2025 results. Profit attributable to controlling shareholders was KRW 28.8 billion in 2022, turned to a net loss of KRW 2.36 billion in 2023, and widened to KRW 9.79 billion in 2024 and KRW 17.1 billion in 2025. The 2022 profit moved in the opposite direction from that year's operating loss, so the non-operating drivers should be checked in the notes to the periodic report. Net loss including non-controlling interests was KRW 17.2 billion in 2025 and is reported separately from the controlling-shareholder figure. Operating cash flow went from a KRW 357 million inflow in 2022 to outflows of -KRW 4.55 billion in 2023, -KRW 3.11 billion in 2024 and -KRW 13 billion in 2025. On a quarterly basis revenue bottomed at KRW 3.3 billion in the third quarter of 2025 and recovered to KRW 3.89 billion in the third quarter of 2026, up 17.9% year on year. The operating loss narrowed from KRW 2.51 billion in the third quarter of 2025 to KRW 1.75 billion in the first quarter of 2026, then came in at KRW 2.13 billion in the second quarter and KRW 2.02 billion in the third quarter of 2026, and the company has posted operating losses for five straight quarters since the third quarter of 2025. The controlling-shareholder net loss jumped to KRW 7.23 billion in the fourth quarter of 2025 and narrowed to KRW 1.97 billion in the first quarter of 2026, and the total for the latest four quarters is KRW 13.3 billion. Revenue has recovered, but the operating loss has not narrowed in a sustained way. One-off items that move quarterly results should be checked in the notes to the periodic reports."
  },
  "industry": {
-  "ko": "유압용 관이음쇠 제조산업은 성숙 단계에 진입해 경쟁이 치열하며, 개발도상국의 저가 대량생산으로 애프터마켓 시장 비중이 확대되는 반면 OEM 시장은 품질 격차로 선진국 중심 구도가 유지되고 있다. 전방산업인 건설중장비·산업차량 시장의 경기 둔화와 글로벌 수요 감소가 최근 몇 년간 매출 부진의 직접적 배경으로 지목된다. 이런 흐름 속에 회사의 매출은 2023년 230.8억원에서 2025년 141.3억원으로 2년 만에 약 40% 가까이 줄었다. 2026년 1분기에는 매출이 전년 동기 수준을 유지하며 매출총이익률이 소폭 하락했음에도 비용 절감 효과로 영업손실 폭이 크게 축소돼, 최소한 단기적으로는 원가 구조 조정을 통한 손익 안정화 시도가 확인된다. 다만 산업 전반의 사이클 반등 여부는 건설중장비 수요 회복 속도에 좌우될 것으로 보이며, 회사가 진출을 시도한 리튬·신재생에너지 등 신사업은 아직 명확한 산업 내 포지션이나 매출 실적으로 이어지지 않았다.",
-  "en": "The hydraulic pipe fitting manufacturing industry has entered a mature phase with intense competition; low-cost mass production from developing countries is expanding the aftermarket segment, while the OEM market remains centered on advanced economies due to quality gaps. A slowdown in the downstream construction equipment and industrial vehicle markets, along with weaker global demand, has been cited as a direct cause of the company's recent revenue weakness. Against this backdrop, company revenue fell from KRW 23.08 billion in 2023 to KRW 14.13 billion in 2025, a decline of nearly 40% in two years. In the first quarter of 2026, revenue held roughly flat year over year with a slight dip in gross margin, yet cost cuts sharply narrowed the operating loss, indicating at least a short-term attempt at cost-structure stabilization. Still, whether the broader industry cycle turns depends largely on the pace of recovery in construction-equipment demand, and the new businesses the company has pursued in lithium and renewable energy have yet to translate into a clear industry position or verified revenue."
+  "ko": "테라사이언스의 본업은 건설중장비 수요에 묶여 있다. 회사는 2025년 3분기 누적 연결 매출이 전년 동기 대비 23.0% 감소했다는 실적 요약과 함께, 건설중장비 시장 경기 둔화와 글로벌 수요 감소를 원인으로 꼽았다. 건설중장비와 산업차량은 건설 경기와 설비투자 사이클에 따라 주문이 오르내리는 경기 민감 품목이다. 매출이 2023년 정점 이후 2년 연속 줄어든 흐름은 업황 요인과 회사 고유 요인이 겹친 결과로 볼 수 있다. 업황 회복의 시점과 폭을 가늠할 수치 자료는 회사 공시에 나타나지 않는다. 경쟁 구도에서 국내외 유압 관이음쇠 업체들과 겹치지만, 화학 업종 대형 상장사인 LG Chem이나 Hanwha Solutions와는 사업 규모와 원가 구조가 달라 직접 비교 지표는 제한적이다. 2026년 들어 분기 매출이 전 분기보다 늘어난 점은 업황과 다른 방향의 신호다. 다만 회사가 2026년 1분기 매출총이익률 하락을 언급한 만큼 가격과 원가 압력은 남아 있다. 사이클의 위치가 바닥 근처인지 회복 초입인지는 공시 자료만으로 단정하기 어렵다. 신사업인 리튬, 신재생, 가상자산은 본업과 수요 기반이 다르므로 산업 분석에서는 본업의 사이클과 분리해 봐야 한다. 전방 수요가 회복되는지, 그 회복이 매출총이익률 개선으로 이어지는지가 업종 관점의 확인 포인트다.",
+  "en": "Tera Science's core business is tied to construction equipment demand. In its results summary, the company reported that cumulative consolidated revenue for the first three quarters of 2025 fell 23.0% year on year, and it attributed this to a slowdown in the construction equipment market and weaker global demand. Construction equipment and industrial vehicles are cyclical products whose orders rise and fall with construction activity and capital spending. Revenue has fallen for two straight years since the 2023 peak, which reflects both industry conditions and company-specific factors. The company's disclosures do not give numerical data that would show the timing or pace of a sector recovery. The company competes with domestic and foreign hydraulic fitting makers, but large listed chemical companies such as LG Chem and Hanwha Solutions differ in scale and cost structure, so direct comparison metrics are limited. Quarterly revenue rising from the first quarter of 2026 runs against the sector backdrop. However, the company's mention of a slight decline in gross margin in the first quarter of 2026 shows that price and cost pressure remains. Whether the cycle is near its bottom or early in a recovery cannot be determined from disclosures alone. The lithium, renewable energy and virtual asset businesses rest on different demand bases from the core business, so they should be analyzed separately from the equipment cycle. For the industry view, the key checks are whether front-end demand recovers and whether that recovery improves gross margin."
  },
  "outlook": {
-  "ko": "가장 중요한 단기 변수는 서진판지를 대상으로 한 25억원 규모 제3자배정 유상증자로, 여러 차례 연기 끝에 납입일이 9월 30일, 신주 상장 예정일이 10월 26일로 재조정된 상태다. 이 유상증자가 완료되면 최대주주가 위플러스투자조합에서 서진판지로 변경되며 지분율은 23.50%까지 확대될 예정이다. 회사는 현재 2023·2024사업연도 감사의견 거절에 따른 상장폐지 결정에 대해 법원에 효력정지 가처분을 신청해 정리매매 등 후속 절차가 보류된 상태이며, 2025사업연도 감사보고서와 2026년 반기 검토보고서에서도 각각 감사범위 제한으로 의견거절을 받아 상장폐지 사유가 계속 쌓이고 있다. 향후 개선계획 이행내역서가 제출되면 코스닥시장위원회가 서류 제출일로부터 정해진 영업일 이내에 상장폐지 여부를 다시 심의할 것으로 예상된다. 사업 측면에서는 주력인 유압 관이음쇠 부문에서 비용 절감을 통한 손익 개선 시도가 이어지고 있으나, 매출 자체의 반등을 뒷받침할 구체적 수주 확대나 신규 고객 확보 소식은 검색된 공개 자료에서 확인되지 않는다. 리튬·신재생에너지·가상자산 플랫폼 등 신사업은 사업목적상 존재하지만, 실제 매출 기여나 구체적 진행 일정에 대한 최신 공시·보도는 확인되지 않아 진행 상황을 지켜볼 필요가 있다.",
-  "en": "The most important near-term variable is the KRW 2.5 billion third-party capital raise targeting Seojin Panji, which after multiple delays has had its payment date reset to September 30 and its new-share listing date to October 26. If completed, the largest shareholder would change from Wiplus Investment Association to Seojin Panji, whose stake would expand to 23.50%. The company has filed a court injunction to suspend the effect of a delisting decision tied to disclaimer audit opinions for fiscal years 2023 and 2024, which has paused follow-up procedures such as liquidation trading, while the FY2025 audit report and the 2026 semiannual review both received disclaimer opinions due to scope limitations, continuing to add grounds for delisting. Once an improvement-plan implementation report is filed, the KOSDAQ Market Committee is expected to reassess the delisting question within a set number of business days of submission, following the standard procedure applied to similar cases. On the operating side, cost-reduction efforts continue in the core hydraulic fitting segment, but no specific new-order growth or customer-acquisition news that would support a revenue rebound was found in available public sources. The lithium, renewable energy, and crypto-asset platform businesses remain listed as corporate purposes, but no recent disclosure or reporting confirms tangible revenue contribution or a concrete project timeline, warranting continued monitoring."
+  "ko": "회사가 공시로 밝힌 가장 구체적인 계획은 창원 공장 자산 양도다. 2026년 4월 7일 계약한 공장대지·건물 및 설비 양도 금액은 200억원으로, 자산총액의 18.44%에 해당한다. 대금은 계약금 20억원(2026년 4월 8일), 중도금 20억원(2026년 5월 8일), 잔금 160억원(2026년 9월 8일 이내)으로 나누어 받는 조건이었고, 양도기준일과 등기예정일은 2026년 9월 30일이었다. 회사는 이번 양도가 차입금 상환과 현금 유동성 확보를 통해 재무구조 개선에 영향을 줄 것이라고 설명했다. 같은 시기 본사 이전과 공장 운영 구조 개편도 추진해, 생산 효율성 극대화와 고정비 절감을 목표로 제시했다. 2026년 3월 정기주주총회에서는 제33기 재무제표 승인안이 통과됐으나 정관 일부 변경안은 의결정족수 미달로 부결됐다. 이 결과는 정관 변경을 통한 지배구조 정비가 아직 이뤄지지 않았음을 뜻한다. 신사업 측면에서 리튬, 신재생, 가상자산이 거론되지만 사업화 일정을 명시한 공시는 확인 대상이다. 등기예정일이 지났으므로 잔금 수령과 등기 완료 여부는 정기보고서의 재무상태표와 주석에서 확인해야 한다. 2026년 사업보고서가 다음 정기보고서이며, 여기서 자산 양도 효과가 부채 감소로 반영됐는지가 다음 확인 지점이다.",
+  "en": "The most specific plan the company has disclosed is the sale of its Changwon plant assets. The land, buildings and equipment were contracted for sale on April 7, 2026 for KRW 20 billion, equal to 18.44% of total assets. The price was to be paid as a KRW 2 billion down payment on April 8, 2026, a KRW 2 billion interim payment on May 8, 2026, and a KRW 16 billion balance by September 8, 2026, with the transfer and registration date set for September 30, 2026. The company said the sale would improve its financial structure by repaying borrowings and securing liquidity. In the same period it pursued a headquarters move and a reorganization of plant operations, aiming to maximize production efficiency and cut fixed costs. At the 2026 annual general meeting in March, the financial statements for the 33rd fiscal year were approved, but a partial amendment to the articles of incorporation was voted down for lack of a quorum. That outcome means governance changes through the articles have not yet been completed. On new businesses, lithium, renewable energy and virtual assets have been mentioned, but timelines for commercialization are not set out in disclosures and should be tracked through periodic and ad hoc filings. The registration date has passed, so whether the balance was received and the registration completed should be confirmed from the balance sheet and notes in the periodic reports. The next periodic report is the 2026 annual report, and whether the asset sale is reflected as lower debt there is the next checkpoint."
  },
  "valuation_comment": {
-  "ko": "회사는 최근 4년 내내 순손실을 기록해 주가수익비율 기반의 밸류에이션은 산출이 어려운 구간에 있다. 주가는 장부상 순자산 대비 상당한 프리미엄에서 거래되는 모습으로, 자본총계가 최근 3년간 크게 줄어든 점을 함께 고려할 필요가 있다. 배당은 최근 수년간 지급되지 않았으며, 이는 지속된 순손실과 자본 잠식 우려와 맞물려 있다. 여기에 더해 진행 중인 유상증자가 완료되면 신주 발행으로 주당 지표 자체가 희석될 여지가 있어, 밸류에이션 지표를 볼 때는 상장폐지 절차의 진행 상황과 자본 확충 여부를 함께 살펴보는 것이 중요하다.",
-  "en": "The company has posted net losses in each of the past four fiscal years, leaving price-to-earnings-based valuation largely inapplicable. The share price appears to trade at a substantial premium to book net assets, a factor that should be weighed alongside the sharp decline in total equity over the past three years. Dividends have not been paid in recent years, consistent with sustained net losses and concerns over capital erosion. In addition, completion of the pending capital raise would issue new shares that could dilute per-share metrics going forward, making it important to consider the progress of the delisting proceedings and the capital-raise outcome alongside any valuation multiple."
+  "ko": "현재 주가 기준 주가순자산비율(PBR)은 1배를 크게 웃도는 수준으로, 장부상 자본 대비 주가 프리미엄이 붙어 있는 구간이다. 2025년 말 자본총계가 286억원 규모인 만큼, 주가에 반영된 평가는 장부 자산보다 사업 전환이나 자산 가치에 대한 기대에 가깝다는 해석이 가능하다. 최근 4개 분기 기준 순손실이 이어져 이익 기반 배수인 주가수익비율(PER)은 산출되지 않는다. 즉 이익으로 주가를 설명하기 어려운 구간이며, 평가 근거가 자산 기준에 쏠려 있다. 배당수익률은 0%로 업종 평균을 크게 밑도는 수준이다. 시가총액은 지배주주 지분 규모를 웃도는 상태로, 장부 자본 대비 시장 평가가 높게 형성돼 있다. 이 비교는 현재 주가를 기준으로 한 것이어서 주가가 움직이면 배수 수준도 함께 달라진다. 배수 해석의 전제는 영업손실 축소와 자산 매각 효과가 정기보고서 실적으로 확인되는지다.",
+  "en": "On the current share price, the price-to-book ratio sits well above 1x, which means the market is paying a premium over book equity. With total equity at the end of 2025 of roughly KRW 28.6 billion, the valuation appears to rest more on expectations for a business turnaround or asset value than on book assets. Because the company has posted net losses over the latest four quarters, the price-to-earnings ratio cannot be calculated, so the share price cannot be explained by earnings. The valuation therefore relies mainly on asset-based measures. The dividend yield is 0%, well below the industry average. Market capitalization is above the controlling shareholders' equity, meaning the market value is high relative to book equity. This comparison is based on the current share price, so the multiples will shift as the price moves. The key condition for reading these multiples is whether the narrowing of operating losses and the effect of the asset sale show up in reported results."
  },
  "bull": [
   {
    "title": {
-    "ko": "지배구조 정상화 가능성",
-    "en": "Potential Governance Normalization"
+    "ko": "매출 회복 흐름",
+    "en": "Revenue recovery"
    },
    "body": {
-    "ko": "서진판지를 대상으로 한 유상증자가 완료되면 신규 자금 25억원이 유입되고 최대주주가 명확해지면서 경영 불확실성이 일부 해소될 수 있다. 최대주주 변경에는 6개월 의무보유, 신주에는 1년 보호예수가 부과돼 단기 지분 유동화 유인은 제한적이다. 다만 서진판지가 실제로 납입을 완료할지는 여러 차례의 연기 이력을 고려할 때 지켜볼 부분이다.",
-    "en": "If the capital raise targeting Seojin Panji is completed, KRW 2.5 billion in fresh funds would flow in and a clearer controlling shareholder would emerge, potentially easing some governance uncertainty. The shareholder change carries a six-month lock-up and the new shares a one-year escrow, limiting near-term liquidation incentives. Still, given the history of repeated delays, whether Seojin Panji actually completes payment remains to be seen."
+    "ko": "2026년 3분기 매출은 38.9억원으로 전년 동기 대비 17.9% 증가했고, 2025년 3분기 33억원 저점에서 회복된 흐름이다. 2026년 1분기와 2분기에도 매출이 전 분기보다 늘었다. 다만 매출 회복이 이익 개선으로 이어졌는지는 영업손실 추이와 함께 봐야 한다.",
+    "en": "Third-quarter 2026 revenue of KRW 3.89 billion rose 17.9% year on year, recovering from the KRW 3.3 billion low in the third quarter of 2025. Revenue also rose quarter on quarter in the first and second quarters of 2026. Whether the sales recovery has translated into better profit should be read alongside the operating loss trend."
    }
   },
   {
    "title": {
-    "ko": "비용 절감을 통한 손익 개선 시도",
-    "en": "Cost-Cutting Effort to Improve Earnings"
+    "ko": "영업손실 폭 축소",
+    "en": "Narrower operating loss"
    },
    "body": {
-    "ko": "2026년 1분기 유압 관이음쇠 부문은 매출이 전년 동기 수준을 유지한 가운데 영업손실 폭이 크게 줄었다. 이는 원가·판관비 절감이 실제 손익에 반영되고 있음을 보여준다. 이러한 비용 구조 개선이 이어질 경우 매출 반등 없이도 손실 규모를 추가로 줄일 여지가 있다.",
-    "en": "In the first quarter of 2026, the hydraulic fitting segment held revenue roughly flat year over year while the operating loss narrowed sharply, indicating that cost and SG&A reductions are being reflected in actual earnings. If this cost-structure improvement continues, there is room to further reduce loss size even without a revenue rebound."
+    "ko": "영업손실은 2025년 3분기 25.1억원에서 2026년 1분기 17.5억원으로 줄었고, 2026년 3분기에는 20.2억원으로 전년 동기보다 적자 폭이 축소됐다. 회사는 비용 절감으로 영업손실 폭이 줄었다고 설명했다. 2025년 4분기 이후 분기 영업손실이 17억~21억원대에 머무는 점은 고정비 절감 효과가 일부 반영된 것으로 볼 수 있다.",
+    "en": "The operating loss narrowed from KRW 2.51 billion in the third quarter of 2025 to KRW 1.75 billion in the first quarter of 2026, and the third-quarter 2026 loss of KRW 2.02 billion was smaller than a year earlier. The company has attributed the narrower loss to cost reduction. Quarterly operating losses have stayed in the KRW 1.7 to 2.1 billion range since the fourth quarter of 2025, which suggests some effect from fixed-cost reduction."
    }
   },
   {
    "title": {
-    "ko": "신사업 다각화의 잠재적 옵션 가치",
-    "en": "Optionality From Diversification Businesses"
+    "ko": "자산 매각을 통한 재무 부담 완화",
+    "en": "Balance sheet relief from asset sale"
    },
    "body": {
-    "ko": "회사는 사업목적에 리튬·니켈·게르마늄 생산, 신재생에너지, 가상자산 플랫폼 등을 포함하고 있어 향후 상업화가 이뤄질 경우 새로운 매출원이 될 잠재력이 있다. 다만 현재까지 이들 사업의 매출 기여나 구체적 진행 일정은 확인되지 않아, 이는 실현 여부가 불확실한 옵션에 가깝다.",
-    "en": "The company's stated business purposes include lithium, nickel, and germanium production, renewable energy, and a crypto-asset platform, which could become new revenue sources if commercialized. However, no revenue contribution or concrete timeline for these businesses has been confirmed to date, making this more of an uncertain option than a established growth driver."
+    "ko": "창원 공장 부지·건물 양도 200억원은 차입금 상환과 현금 유동성 확보를 목적으로 한다. 잔금 160억원이 예정대로 지급됐다면 2025년 말 부채총계 277억원에 대한 부담을 줄이는 효과가 있을 수 있다. 다만 생산 거점을 옮기는 과정에서 생산 체제가 바뀌는 만큼 매각 후 원가 구조 변화도 함께 봐야 한다.",
+    "en": "The KRW 20 billion sale of the Changwon plant land and buildings is intended to repay borrowings and secure liquidity. If the KRW 16 billion balance was paid as scheduled, it could ease pressure on total liabilities of KRW 27.7 billion at the end of 2025. Because production is being reorganized, changes to the cost structure after the sale should also be watched."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "상장폐지 절차 미해소",
-    "en": "Unresolved Delisting Proceedings"
+    "ko": "4년 연속 영업적자",
+    "en": "Fourth straight operating loss"
    },
    "body": {
-    "ko": "한국거래소는 2023·2024사업연도 감사의견 거절을 이유로 상장폐지를 확정했고, 회사는 효력정지 가처분으로 절차를 보류시켰을 뿐 근본 사유는 해소되지 않았다. 2025사업연도 및 2026년 반기 검토에서도 거듭 의견거절을 받아 상장폐지 사유가 누적되는 구조다. 법적 절차의 최종 결과가 나오기 전까지 상장 유지 여부에 대한 불확실성은 지속될 것으로 보인다.",
-    "en": "The Korea Exchange confirmed a delisting decision citing disclaimer opinions for fiscal years 2023 and 2024, and the company has only suspended the procedure via injunction without resolving the underlying cause. Repeated disclaimer opinions in the FY2025 audit and the 2026 semiannual review continue to add to the grounds for delisting. Uncertainty over continued listing is likely to persist until the legal process reaches a final outcome."
+    "ko": "영업손실은 2022년 9.2억원에서 2025년 101억원으로 확대됐고, 영업이익률은 -71.7%다. 2022년부터 2025년까지 4년 연속 적자이며, 지배주주 순손실은 2023년부터 3년 연속 이어졌다. 매출이 회복된 2026년에도 영업손실은 2025년 3분기부터 5개 분기 연속 이어졌다. 적자 폭이 매출보다 빠르게 커진 점이 핵심 약세 요인이다.",
+    "en": "The operating loss widened from KRW 919 million in 2022 to KRW 10.1 billion in 2025, and the operating margin was -71.7%. The company has posted operating losses for four straight years from 2022 through 2025, and controlling-shareholder net losses for three straight years from 2023. Operating losses have continued for five straight quarters, even as revenue recovered in 2026. The loss growing faster than revenue is the main bearish factor."
    }
   },
   {
    "title": {
-    "ko": "핵심 사업 매출 축소",
-    "en": "Core Business Revenue Contraction"
+    "ko": "재무 부담과 현금 유출 확대",
+    "en": "Higher debt and wider cash outflows"
    },
    "body": {
-    "ko": "주력인 유압 관이음쇠 부문 매출은 2023년 230.8억원에서 2025년 141.3억원으로 2년 만에 크게 줄었다. 건설중장비 시장의 경기 둔화와 글로벌 수요 감소가 직접적 배경으로 지목되며, 영업손실은 이 기간 계속 확대됐다. 매출 기반이 좁아진 상태에서 손실 규모 자체는 여전히 크다.",
-    "en": "Revenue from the core hydraulic fitting segment fell sharply from KRW 23.08 billion in 2023 to KRW 14.13 billion in 2025 in just two years. A slowdown in the construction equipment market and weaker global demand are cited as direct causes, and operating losses continued to widen over the period. With a narrower revenue base, the absolute size of losses remains large."
+    "ko": "부채비율은 2024년 16.2%에서 2025년 96.7%로 뛰었다. 영업활동 현금흐름 적자는 2025년 -130억원으로 2024년 -31.1억원보다 크게 확대됐다. 차입금 상환을 목적으로 대형 자산을 팔아야 하는 상황은 유동성 여력이 넉넉하지 않다는 사실을 보여준다.",
+    "en": "The debt ratio rose from 16.2% in 2024 to 96.7% in 2025. The operating cash outflow widened to -KRW 13 billion in 2025 from -KRW 3.11 billion in 2024. The need to sell a major asset to repay borrowings points to limited liquidity headroom."
    }
   },
   {
    "title": {
-    "ko": "유상증자 반복 연기와 희석 우려",
-    "en": "Repeated Capital Raise Delays and Dilution Risk"
+    "ko": "공시 신뢰와 지배구조 이슈",
+    "en": "Disclosure credibility and governance issues"
    },
    "body": {
-    "ko": "서진판지 대상 유상증자는 2024년 11월 최초 결정 이후 여러 차례 납입일이 연기돼 왔고, 이 과정에서 회사는 불성실공시법인으로 지정된 바 있다. 완료 시점이 계속 늦춰짐에 따라 실제 자금 조달과 최대주주 변경이 성사될지는 여전히 불확실하다. 완료되더라도 신주 발행에 따른 지분 희석은 불가피하다.",
-    "en": "The Seojin Panji-targeted capital raise, first decided in November 2024, has had its payment date postponed multiple times, and the company was designated an unfaithful disclosure entity during this process. As the completion date continues to slip, it remains uncertain whether the funding and shareholder change will actually be finalized, and even if completed, dilution from the new share issuance is unavoidable."
+    "ko": "2024년 4월 감사보고서에서 의견거절을 받았고, 2024년 7월에는 횡령·배임 혐의 발생이 공시됐다. 불성실공시 벌점이 누적돼 상장 적격성 심사 대상에 올랐다는 보도도 있었다. 2026년 3월 정기주주총회에서는 정관 일부 변경안이 부결됐다. 공시 신뢰가 회복되는지가 약세 요인의 해소 조건이다.",
+    "en": "The company received an audit disclaimer in an April 2024 audit report, and in July 2024 it disclosed an embezzlement and breach of trust suspicion. Press reports said accumulated penalty points for unfaithful disclosure put it under listing qualification review. At the March 2026 annual general meeting, a partial amendment to the articles was voted down. Restoring disclosure credibility is the condition for easing this bearish factor."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "지배구조·공시 리스크",
-    "en": "Governance and Disclosure Risk"
+    "ko": "상장 유지·공시 리스크",
+    "en": "Listing and disclosure risk"
    },
    "body": {
-    "ko": "회사는 과거 최대주주가 여러 차례 바뀐 이력이 있으며, 유상증자 납입일 지연과 관련해 불성실공시법인으로 지정된 바 있다. 서진판지로의 최대주주 변경이 실제로 완료될지, 완료 이후 경영 방향이 어떻게 설정될지는 불확실성이 남아 있다. 지배구조가 자주 바뀌는 이력은 투자 판단에 있어 신중한 접근을 요구한다.",
-    "en": "The company has a history of multiple changes in controlling shareholder and was designated an unfaithful disclosure entity in connection with delays in the capital-raise payment date. Whether the shareholder change to Seojin Panji will actually be completed, and how management direction would be set afterward, remain uncertain. A history of frequent governance changes calls for a cautious approach in investment assessment."
+    "ko": "2024년 3월 20일부터 매매거래 정지가 이어졌다는 보도가 있으며, 감사의견 거절과 불성실공시 벌점 누적이 상장 적격성 심사 사유로 거론됐다. 회사는 재감사 계약을 체결했다고 밝혔지만 회계 투명성 회복 여부는 아직 판단하기 이르다. 현재 거래 상태와 심사 결과는 최신 공시로 따로 확인해야 한다.",
+    "en": "Press reports said trading was suspended from March 20, 2024, and the audit disclaimer and accumulated penalty points were cited as grounds for listing review. The company said it signed a re-audit contract, but it is too early to judge whether accounting transparency has been restored. Current trading status and review outcomes should be confirmed from the latest filings."
    }
   },
   {
    "cat": {
-    "ko": "회계·감사 리스크",
-    "en": "Accounting and Audit Risk"
+    "ko": "자금 조달·최대주주 리스크",
+    "en": "Funding and major shareholder risk"
    },
    "body": {
-    "ko": "2023·2024사업연도 감사의견 거절에 이어 2025사업연도 감사보고서, 2026년 반기 검토보고서까지 연속으로 의견거절을 받았다. 의견거절 사유로는 기초재무상태표에 대한 검토범위 제한과 주요 검토절차의 제약이 제시됐다. 감사의견이 정상화되지 않는 한 상장폐지 사유는 계속 남아 있게 된다.",
-    "en": "Following disclaimer opinions for fiscal years 2023 and 2024, the FY2025 audit report and the 2026 semiannual review also received consecutive disclaimer opinions, citing scope limitations on the opening balance sheet and constraints on key review procedures. Unless the audit opinion is normalized, the grounds for delisting will continue to persist."
+    "ko": "2024년 11월 결정된 30억원 규모 제3자배정 유상증자는 납입기일이 여러 차례 연기돼 2025년 8월 29일로 밀렸다는 보도가 있다. 이 증자가 완료되면 최대주주가 바뀔 수 있다는 전망도 제기됐다. 자본 확충이 지연되면 차입이나 자산 매각 의존이 커질 수 있다.",
+    "en": "A KRW 3 billion third-party share issuance decided in November 2024 saw its payment date deferred several times, to August 29, 2025, according to press reports. Completion of that issuance was also reported to possibly change the largest shareholder. If capital raising continues to be delayed, reliance on borrowing and asset sales could increase."
    }
   },
   {
    "cat": {
-    "ko": "사업 실행 리스크",
-    "en": "Business Execution Risk"
+    "ko": "사업·신사업 리스크",
+    "en": "Business and new-venture risk"
    },
    "body": {
-    "ko": "핵심 사업인 유압 관이음쇠 부문은 건설중장비 수요 사이클에 종속돼 매출 변동성이 크다. 동시에 리튬 등 신사업은 2024년 현장 취재에서 가시적 진척이 확인되지 않아 실행력에 대한 의문이 제기된 바 있다. 두 축 모두에서 향후 성과를 뒷받침할 구체적 근거가 아직 충분히 확인되지 않은 상태다.",
-    "en": "The core hydraulic fitting business is highly dependent on the construction-equipment demand cycle, resulting in significant revenue volatility. At the same time, on-site reporting in 2024 found no visible progress in the lithium and other new businesses, raising questions about execution capability. Concrete evidence to support future performance has not yet been sufficiently confirmed on either front."
+    "ko": "건설중장비 수요가 줄면 매출 감소가 이어질 수 있다. 리튬, 신재생, 가상자산 같은 신사업은 실적에 드러난 규모가 작아 성과를 수치로 가늠하기 어렵다. 과거 보도에서는 리튬 관련 신사업 추진 현황에 대한 공개가 부족하다는 지적도 있었다. 신사업 투자 비용이 손익 부담으로 이어질 가능성도 있다.",
+    "en": "A further drop in construction equipment demand could extend the revenue decline. The new businesses in lithium, renewable energy and virtual assets are not visible in reported results, making their performance hard to gauge. An older press report also pointed to limited disclosure on the progress of lithium projects. Spending on new businesses could add to the loss burden."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 9월 30일",
-    "en": "September 30, 2026"
+    "ko": "2027년 2월 말 전후",
+    "en": "Around late February 2027"
    },
    "what": {
-    "ko": "서진판지 대상 유상증자 납입 예정일로, 이번에도 연기되는지 혹은 실제 납입이 완료돼 최대주주 변경이 성사되는지가 핵심 관찰 포인트다.",
-    "en": "The scheduled payment date for the Seojin Panji-targeted capital raise; the key point to watch is whether it is delayed again or actually completed, triggering the shareholder change."
+    "ko": "2026년 연간 잠정실적 발표 시점으로 보인다. 2025년 잠정실적은 2026년 2월 23일에 발표됐다. 연간 영업손실이 2025년 101억원 수준에서 줄어드는지와 영업이익률 흐름이 확인 지점이다.",
+    "en": "This is likely when the 2026 annual provisional results will be released, as the 2025 provisional results came out on February 23, 2026. The checkpoints are whether the annual operating loss narrows from KRW 10.1 billion in 2025 and whether the operating margin improves."
    }
   },
   {
    "when": {
-    "ko": "2026년 10월 26일",
-    "en": "October 26, 2026"
+    "ko": "2027년 3월 말",
+    "en": "Late March 2027"
    },
    "what": {
-    "ko": "유상증자가 정상 진행될 경우 신주 상장이 예정된 날로, 실제 신주 상장 여부와 최대주주 지분율 확정 내용을 확인할 필요가 있다.",
-    "en": "If the capital raise proceeds as planned, this is the scheduled new-share listing date; investors should verify whether the listing actually occurs and confirm the finalized stake of the new largest shareholder."
+    "ko": "2026년 사업보고서 제출 기한이다(사업연도 종료 후 90일). 감사의견, 창원 공장 양도 대금의 재무제표 반영, 부채비율 변화를 함께 확인한다.",
+    "en": "This is the filing deadline for the 2026 annual report, 90 days after fiscal year-end. Key items are the audit opinion, how the Changwon plant sale proceeds are reflected in the financial statements, and the change in the debt ratio."
    }
   },
   {
    "when": {
-    "ko": "2026년 11월경",
-    "en": "Around November 2026"
+    "ko": "2027년 5월 중순",
+    "en": "Mid-May 2027"
    },
    "what": {
-    "ko": "2026년 3분기 실적 공시 시점으로, 유압 관이음쇠 부문 매출·손익 추세가 1분기 수준의 개선을 이어가는지, 감사인의 검토의견에 변화가 있는지를 살펴볼 시점이다.",
-    "en": "Around the time of the third-quarter 2026 earnings disclosure, this is a point to check whether the hydraulic fitting segment's revenue and loss trend continues the improvement seen in the first quarter, and whether there is any change in the auditor's review opinion."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 3월경",
-    "en": "Around March 2027"
-   },
-   "what": {
-    "ko": "2026사업연도 감사보고서 공시 예정 시점으로, 연속된 감사의견 거절 상태가 해소되는지가 상장폐지 사유 해소 여부를 가르는 분수령이 될 것으로 보인다.",
-    "en": "Around the expected disclosure date of the FY2026 audit report, this will be a watershed moment for whether the string of disclaimer opinions is resolved, determining whether the grounds for delisting are cleared."
+    "ko": "2027년 1분기 분기보고서 제출 시점이다(분기 종료 후 45일). 매출 회복이 영업손실 축소로 이어지는지, 영업활동 현금흐름 적자가 줄어드는지를 확인한다.",
+    "en": "This is the approximate filing date for the first-quarter 2027 report, 45 days after quarter-end. The checkpoints are whether revenue recovery narrows the operating loss and whether the operating cash outflow shrinks."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "테라사이언스는 현재 상장폐지 결정이 법원 가처분으로 잠정 보류된 상태이며, 2025사업연도와 2026년 반기 모두 감사의견 거절을 받아 상장폐지 사유가 계속 누적되고 있는 회사다. 핵심 사업인 유압 관이음쇠 부문은 건설중장비 경기 둔화로 매출이 다년간 축소됐고 영업손실도 매년 확대돼 왔으나, 2026년 1분기에는 비용 절감으로 손실 폭이 눈에 띄게 좁혀지는 모습도 확인됐다. 서진판지를 대상으로 한 25억원 규모 유상증자는 여러 차례 연기 끝에 9월 30일 납입, 10월 26일 신주 상장으로 일정이 재조정됐으며, 완료 시 최대주주가 변경돼 지배구조 불확실성 일부가 해소될 여지가 있다. 다만 신안리튬을 통한 리튬 사업 등 다각화 시도는 2024년 현장 취재에서 가시적 진척이 확인되지 않아 실행력에 대한 의문이 남아 있다. 종합하면 이 회사에 대한 판단은 전통적 실적 지표보다 상장폐지 절차의 향방, 유상증자·최대주주 변경의 실제 완료 여부, 그리고 감사의견 정상화 시점에 크게 좌우되는 구조다. 투자 판단 시에는 이러한 존속 관련 이벤트의 공시 내용을 지속적으로 확인하는 것이 중요하다.",
-   "en": "Tera Science currently has its delisting decision provisionally suspended via a court injunction, while both the FY2025 audit and the 2026 semiannual review received disclaimer opinions, continuing to accumulate grounds for delisting. The core hydraulic fitting business has seen multi-year revenue contraction amid a construction-equipment downturn, with operating losses widening each year, though the first quarter of 2026 showed a notably narrower loss on cost cuts. The KRW 2.5 billion capital raise targeting Seojin Panji, after repeated delays, has been rescheduled to a September 30 payment and an October 26 new-share listing, and its completion would change the controlling shareholder, potentially easing some governance uncertainty. However, diversification efforts such as the lithium business through Sinan Lithium have shown no visible progress in 2024 field reporting, leaving questions about execution unresolved. On balance, assessment of this company is shaped far more by the trajectory of the delisting proceedings, the actual completion of the capital raise and shareholder change, and the timing of audit-opinion normalization than by conventional earnings metrics. Continued monitoring of disclosures related to these survival-critical events is essential for any investment assessment."
+   "ko": "테라사이언스는 2022년부터 2025년까지 4년 연속 영업손실을 기록했고, 2025년에는 매출 141억원, 영업손실 101억원, 영업이익률 -71.7%였다. 매출은 2024년과 2025년 2년 연속 줄었지만 2026년 3분기 매출은 38.9억원으로 전년 동기 대비 17.9% 늘었다. 2026년 분기 영업손실은 17.5억원에서 21.3억원 사이에 머물고 있다. 재무 측면에서는 부채비율이 96.7%로 뛰었고 영업활동 현금흐름 적자가 확대됐으며, 창원 공장 양도 200억원이 차입금 상환 목적으로 진행 중이다. 지배구조와 공시 측면에서는 감사의견 거절, 횡령·배임 혐의, 불성실공시 벌점, 정관 변경 부결 등 신뢰 관련 이슈가 누적돼 있다. PER은 산출되지 않는 가운데 PBR은 1배를 웃도는 수준이라 평가가 자산 기준에 기대고 있다. 강세 요인은 매출 회복과 자산 매각이고, 약세 요인은 4년 연속 영업손실과 재무 부담, 공시 신뢰 이슈다. 다음 확인 지점은 2026년 사업보고서의 영업이익률, 감사의견, 자산 양도 반영 여부다.",
+   "en": "Tera Science recorded operating losses for four consecutive years from 2022 through 2025, and in 2025 it posted revenue of KRW 14.1 billion, an operating loss of KRW 10.1 billion and an operating margin of -71.7%. Revenue fell for two straight years in 2024 and 2025, but third-quarter 2026 revenue of KRW 3.89 billion rose 17.9% year on year. Quarterly operating losses in 2026 have stayed between KRW 1.75 billion and KRW 2.13 billion. On the financial side, the debt ratio rose to 96.7% and operating cash outflows widened, and the KRW 20 billion Changwon plant sale is under way to repay borrowings. On governance and disclosure, the audit disclaimer, the embezzlement and breach of trust suspicion, penalty points for unfaithful disclosure and the rejected articles amendment have accumulated. With no PER calculated and the price-to-book ratio above 1x, the valuation leans on asset-based measures. Bullish factors are the sales recovery and the asset sale, while bearish factors are four straight years of operating losses, higher financial burden and disclosure credibility concerns. The next checkpoints are the operating margin, the audit opinion and whether the asset sale is reflected in the 2026 annual report."
   }
  },
  "sources": [
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cn=&cmp_cd=073640",
+  "https://www.fieldnews.kr/news/articleView.html?idxno=23796",
+  "https://news.nate.com/view/20260223n36762",
   "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A073640&cID=&MenuYn=Y&ReportGB=D&NewMenuID=Y&stkGb=701",
-  "https://m.thinkpool.com/item/073640",
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=073640",
-  "https://itooza.com/vscore/073640",
-  "https://stocks.pluconnect.com/073640_%ED%85%8C%EB%9D%BC%EC%82%AC%EC%9D%B4%EC%96%B8%EC%8A%A4/",
-  "https://www.google.com/finance/quote/073640:KOSDAQ?hl=en",
-  "https://www.investing.com/equities/sam-won-tech-co-ltd",
-  "https://valueline.co.kr/finance/balancesheet/073640",
-  "https://kr.investing.com/news/global-filings/article-93CH-1953511",
   "https://www.ibtomato.com/mobile/mView.aspx?no=15491",
-  "https://www.s-econ.kr/news/articleView.html?idxno=4000892",
-  "https://www.drcr.co.kr/articles/510",
-  "https://www.newspim.com/news/view/20260901000798",
-  "https://m.irgo.co.kr/IR-ROOM/073640/%ED%85%8C%EB%9D%BC%EC%82%AC%EC%9D%B4%EC%96%B8%EC%8A%A4-IR-ROOM",
-  "https://kind.krx.co.kr/external/2026/03/20/001347/20260320003014/70780.htm",
-  "https://dart.fss.or.kr/html/search/SearchCompanyIR3_M.html?textCrpNM=073640",
-  "https://ket.kr/news/article.html?no=36077",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260312001204&docno=&viewerhost="
+  "https://www.newsfc.co.kr/news/articleView.html?idxno=65703",
+  "http://www.newskr.kr/news/articleView.html?idxno=104086",
+  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=570761",
+  "https://m.news.nate.com/view/20260408n37842",
+  "https://finance.biggo.com/news/jpx_tdnet_140120260414503959",
+  "https://www.jobkorea.co.kr/recruit/co_read/c/terascience1",
+  "https://m.news.nate.com/view/20260330n29962",
+  "https://www.threads.com/@moneytalk_kr_official/post/DZW8gJLAaan/-%ED%85%8C%EC%8A%A4-%ED%95%B5%EC%8B%AC-%ED%88%AC%EC%9E%90-%ED%8F%AC%EC%9D%B8%ED%8A%B8-%EC%9A%94%EC%95%BD-2026%EB%85%84-%EC%97%AD%EB%8C%80-%EC%B5%9C%EB%8C%80-%EC%8B%A4%EC%A0%81-%EA%B8%B0%EB%8C%80%EB%A7%A4%EC%B6%9C-4000%EC%96%B5-%EC%9D%B4%EC%83%81-%EC%A0%84%EB%A7%9D-%EC%98%81%EC%97%85%EC%9D%B4%EC%9D%B5-800%EC%96%B5-%ED%9B%84%EB%B0%98-%EC%98%88%EC%83%81-aihbm-%ED%88%AC%EC%9E%90-%ED%99%95%EB%8C%80-%EC%88%98%ED%98%9C-/",
+  "https://www.catch.co.kr/Comp/CompSummary/038433",
+  "https://www.jobkorea.co.kr/company/46536644",
+  "https://www.aol.com/articles/tetra-tech-reports-strong-fourth-210000000.html",
+  "https://kr.investing.com/news/transcripts/article-93CH-2168797"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "073640",
  "name": "테라사이언스",
  "name_en": "TERA SCIENCE Co.,LTD",
@@ -223,11 +212,11 @@
   "화학"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 08:21",
- "dataDate": "20260904",
+ "reportDate": "2026-11-18",
+ "reportTs": "2026-11-18 06:54",
+ "dataDate": "20261117",
  "quant": {
-  "asOf": "2026-09-04",
+  "asOf": "2026-11-17",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -297,12 +286,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 3645461916,
-    "op": -2627803410,
-    "np_owner": -1651602991
-   },
-   {
     "q": "2025Q3",
     "rev": 3296878747,
     "op": -2514772810,
@@ -325,21 +308,27 @@
     "rev": 3889837355,
     "op": -2128254550,
     "np_owner": null
+   },
+   {
+    "q": "2026Q3",
+    "rev": 3887820282,
+    "op": -2024597500,
+    "np_owner": null
    }
   ],
   "valuation": {
    "price": 654,
    "mcap": 0.0761,
    "shares": 116378770,
-   "total_shares": 106378770,
+   "total_shares": 116378770,
    "wavg_shares": 101886819,
    "per": null,
-   "eps": -151,
-   "pbr": 2.5349,
-   "bps": 258,
-   "roe_ttm": -36.6,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": -15503605358,
+   "eps": -128,
+   "pbr": 2.5748,
+   "bps": 254,
+   "roe_ttm": -32.6,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": -13334585449,
    "ccy": "KRW",
    "bps_src": "자체",
    "eps_src": "공시",
@@ -352,5 +341,6 @@
     "per": "loss"
    }
   }
- }
+ },
+ "textRules": 2
 }

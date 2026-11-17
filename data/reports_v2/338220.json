@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "유상증자로 재무 재정비 나선 뷰노",
-  "en": "VUNO Recapitalizes as DeepCARS Faces Setbacks"
+  "ko": "딥카스 평가 결과가 다음 분기점",
+  "en": "DeepCARS Review Is Vuno's Next Test"
  },
  "lead": {
-  "ko": "뷰노는 2025년 3분기 상장 후 첫 분기 흑자를 기록했지만 이후 4개 분기 연속 다시 적자로 돌아섰고, 주력 제품 딥카스의 미국 인허가 지연과 국내 매출 둔화 속에 314억원 규모 유상증자로 재무구조 재정비에 나섰다.",
-  "en": "VUNO posted its first-ever quarterly operating profit in Q3 2025 but has since returned to losses for four straight quarters, and is now restructuring its finances through a KRW 31.4 billion rights offering amid delayed U.S. clearance and slowing domestic sales for its core DeepCARS product."
+  "ko": "심정지 예측 AI 딥카스가 2026년 1~3분기 매출의 약 87%를 차지하는 가운데 4개 분기 연속 적자가 이어지고 있어, 신의료기술평가 결과와 해외 인허가가 다음 확인 지점이다.",
+  "en": "Vuno's DeepCARS accounts for about 87% of 2026 year-to-date revenue, and the company has posted losses for four straight quarters, so the outcome of the health technology assessment and overseas approvals are the next checkpoints."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출 348억원으로 전년 대비 크게 늘었지만 영업손실은 5년째 지속되고 있다.",
-   "en": "2025 consolidated revenue rose sharply year-over-year to KRW 34.8 billion, but the company has posted operating losses for a fifth straight year."
+   "ko": "공시 실적 기준 2025년 연간 매출은 348억원으로 전년 대비 34.7% 증가했고, 영업손실은 49.3억원으로 줄었다.",
+   "en": "On a disclosed basis, 2025 annual revenue was KRW 34.8 billion, up 34.7% year on year, and the operating loss narrowed to KRW 4.93 billion."
   },
   {
-   "ko": "2025년 3분기 매출 108억원, 영업이익 10억원으로 상장 후 첫 분기 흑자를 냈으나 2025년 4분기부터 2026년 2분기까지 다시 4개 분기 연속 적자로 전환했다.",
-   "en": "Q3 2025 revenue of KRW 10.8 billion and operating profit of KRW 1.0 billion marked its first quarterly profit since listing, but the company swung back to losses for four consecutive quarters from Q4 2025 through Q2 2026."
+   "ko": "2026년 3분기 매출은 56.7억원으로 전년 동기 대비 47.6% 감소했고, 영업손실은 19.7억원으로 적자가 이어졌다.",
+   "en": "Revenue in the third quarter of 2026 was KRW 5.67 billion, down 47.6% from a year earlier, and the operating loss was KRW 1.97 billion."
   },
   {
-   "ko": "매출의 86%를 차지하는 딥카스가 미국 FDA로부터 '동등성 증빙 불충분(NSE)' 판정을 받아 인허가가 지연되고 있다.",
-   "en": "DeepCARS, which accounts for 86% of revenue, received a Not Substantially Equivalent (NSE) decision from the U.S. FDA, delaying clearance."
+   "ko": "회사 설명에 따르면 딥카스의 2026년 3분기 단독 매출은 50억원으로 전년 동기 대비 약 28% 줄었으며, 신규 도입 둔화가 원인으로 꼽혔다.",
+   "en": "According to the company, DeepCARS revenue in the third quarter of 2026 was about KRW 5 billion, down roughly 28% year on year, with slower new hospital adoption cited as the cause."
   },
   {
-   "ko": "8월 28일 314억원 규모 주주배정 유상증자를 결의했으며, 신주 발행으로 주식수가 약 45% 늘어난다.",
-   "en": "On August 28, the company approved a KRW 31.4 billion rights offering that will increase share count by approximately 45%."
+   "ko": "딥카스의 신의료기술평가 결과가 4분기 중 나올 것으로 회사가 예상하고 있어, 급여 적용 여부와 병원 사용률이 실적 회복의 첫 관문으로 꼽힌다.",
+   "en": "The company expects a DeepCARS assessment result in the fourth quarter of 2026, and whether reimbursement follows is seen as the first gate for a revenue recovery."
   },
   {
-   "ko": "회사는 2026년 4분기 국내 딥카스 신의료기술평가 결과를 올해 가장 중요한 모멘텀으로 지목하고 있다.",
-   "en": "The company has identified the Q4 2026 domestic new health technology assessment outcome for DeepCARS as its most important catalyst of the year."
+   "ko": "해외에서는 중국 하이난성 2년 독점 판매계약, 쿠웨이트 인허가 목표, 독일 EMR 연동 완료 등 계약과 검증 단계의 사업이 진행 중이다.",
+   "en": "Overseas, Vuno is advancing contract and validation-stage projects, including a two-year exclusive sales deal in Hainan, China, a licensing target in Kuwait, and completed EMR integration in Germany."
   }
  ],
  "business": {
-  "ko": "뷰노는 2014년 설립돼 2021년 코스닥에 기술특례 방식으로 상장한 의료 인공지능(AI) 소프트웨어 기업이다. 매출의 핵심은 입원 환자의 활력징후 데이터를 분석해 24시간 내 심정지 위험도를 제시하는 생체신호 솔루션 '뷰노메드 딥카스(DeepCARS)'로, 2026년 상반기 매출 약 122억원 중 딥카스가 약 104억원을 차지했다. 이 밖에 흉부 엑스레이(Chest X-ray Triage), 뇌 정량화(DeepBrain), 폐 CT(Lung CT AI), 안저(Fundus AI) 등 영상판독 보조 제품군과 휴대용 심전도 측정기기 '하티브(HATIV)'를 보유하고 있다. 국내에서는 병원을 대상으로 한 B2B·구독형 판매 모델을 취하고 있으며, 딥카스는 신의료기술평가 유예 제도를 활용해 비급여로 시장에 진입했다. 해외에서는 딥브레인과 체스트 엑스레이 트리아지가 이미 미국 FDA 허가(510k)를 획득했고, 일본 PMDA 인증, 유럽 CE MDR, 브라질 ANVISA 등 다국가 인허가를 확보해 진출을 확대하고 있다. 현재 뷰노는 딥카스의 해외 시장 진출에 주력하고 있으며 독일을 포함한 유럽 대학병원과의 검증 작업도 진행 중이다. 국내 의료 AI 시장은 뷰노 외에 루닛, 제이엘케이, 코어라인소프트, 에어스메디컬, 뉴로핏 등이 특정 질환·데이터 영역에 특화된 '전문형 AI' 경쟁구도를 형성하고 있다. 경쟁사들도 신의료기술평가 유예 제도를 활용해 비급여 시장에 진입하는 사례가 늘고 있어 도입 병원 확보 경쟁이 심화되는 양상이다.",
-  "en": "Founded in 2014, VUNO listed on KOSDAQ in 2021 under the technology special listing track as a medical artificial intelligence software company. Its core revenue driver is VUNO Med-DeepCARS, a vital-signs-based solution that predicts cardiac arrest risk within 24 hours for hospitalized patients, which accounted for roughly KRW 10.4 billion of the company's approximately KRW 12.2 billion in first-half 2026 revenue. The company also offers imaging-assist products including Chest X-ray Triage, DeepBrain (brain quantification), Lung CT AI, and Fundus AI, as well as HATIV, a portable ECG device. Domestically, VUNO operates a B2B subscription-style model targeting hospitals, and DeepCARS entered the market on a non-reimbursed basis under Korea's new health technology assessment grace-period system. Overseas, DeepBrain and Chest X-ray Triage have already received U.S. FDA 510(k) clearance, and the company has secured approvals from Japan's PMDA, the EU's CE MDR, and Brazil's ANVISA, among others. VUNO is currently focused on expanding DeepCARS internationally, including validation work with university hospitals in Europe including Germany. Domestically, the medical AI market features specialized-AI competitors such as Lunit, JLK, Coreline Soft, Airs Medical, and Neurophet, each focused on specific disease areas or data types. An increasing number of competitors are also leveraging the new health technology grace-period system to enter the non-reimbursed market, intensifying competition for hospital adoption."
+  "ko": "뷰노는 생체신호 기반 의료 AI를 핵심 사업으로 삼는 기업이다. 2025년에는 비핵심 사업을 정리하는 과정이 있었고, 골연령 분석 솔루션 BoneAge 사업은 27억원 규모로 마이허브에 양도됐다. 흉부 CT 솔루션은 앞서 34억원에 코어라인소프트로 넘어갔다. 매출의 중심은 입원환자의 심정지 위험을 예측하는 의료기기 VUNO Med-DeepCARS(딥카스)다. 회사 발표에 따르면 2026년 1~3분기 누적 매출 178억원 가운데 딥카스 매출은 155억원으로 약 87%를 차지했다. 두 번째 축은 휴대용 심전도 측정기기 HATIV(하티브)로, 같은 기간 누적 매출은 16억원으로 전년 동기 대비 18% 증가했고 전체의 약 9%다. HATIV는 건설 현장 등 병원 밖 산업 안전 수요를 중심으로 키오스크형 K30의 보급이 늘었다. 딥카스는 전자의무기록에서 혈압, 심박수, 호흡수, 체온 등을 받아 24시간 이내 심정지 위험을 0~100점으로 산출하며, 고객은 주로 병원이다. 영상 판독 보조 제품으로는 안저영상 AI(Fundus AI)와 흉부 X선 AI(Chest X-ray)가 있으며, 안저영상 AI는 독일에서 판매 계약을 맺었다. 국내 주요 의료 AI 기업들은 설립 이후 매출은 늘었지만 흑자를 내지 못하고 있다는 업계 평가가 나온다.",
+  "en": "Vuno is a medical AI company centered on biosignal-based solutions. In 2025 it divested non-core businesses, transferring the BoneAge bone-age analysis business to MyHub for KRW 2.7 billion, after earlier selling its chest CT solution to Corelinesoft for KRW 3.4 billion. The core revenue driver is VUNO Med-DeepCARS, which predicts cardiac arrest risk in hospitalized patients. According to the company, DeepCARS generated KRW 15.5 billion of the KRW 17.8 billion cumulative revenue for January to September 2026, or about 87%. The second line is HATIV, a portable ECG device, whose cumulative revenue for the same period was KRW 1.6 billion, up 18% year on year and about 9% of the total. HATIV growth has come from kiosk-type K30 units deployed for occupational safety at sites such as construction areas outside hospitals. DeepCARS takes data such as blood pressure, heart rate, respiratory rate and temperature from electronic medical records and produces a 0 to 100 risk score for the next 24 hours, with hospitals as the main customers. Imaging-assist products include the Fundus AI retinal tool, which has a sales contract in Germany, and the Chest X-ray tool, which is in proof-of-concept testing in Southeast Asia. Industry commentary notes that major domestic medical AI companies have grown revenue since founding but have not yet reached profitability."
  },
  "earnings": {
-  "ko": "뷰노의 연결 매출액은 2022년 약 82억 7,000만원에서 2023년 약 132억 8,000만원, 2024년 약 258억 7,000만원, 2025년 약 348억 5,000만원으로 4년 연속 증가했다. 같은 기간 영업손실은 2022년 약 153억 7,000만원, 2023년 약 156억 8,000만원까지 확대됐다가 2024년 약 124억 5,000만원, 2025년 약 49억 3,000만원으로 축소되며 영업이익률도 -185.7%(2022년)에서 -14.2%(2025년)로 손실률이 크게 줄었다. 분기별로 보면 2025년 3분기 매출 약 108억 2,000만원, 영업이익 약 10억 2,000만원, 지배주주순이익 약 10억 3,000만원을 기록하며 상장 후 처음으로 분기 흑자를 냈다. 그러나 2025년 4분기 매출은 약 72억 3,000만원으로 줄고 영업손실 약 23억 5,000만원, 순손실 약 27억 1,000만원을 내며 다시 적자로 전환했다. 2026년 1분기와 2분기에도 매출이 각각 약 60억 5,000만원, 약 61억 1,000만원으로 낮은 수준을 유지한 가운데 영업손실은 약 41억 1,000만원, 약 42억 1,000만원으로 확대됐고, 2분기 순손실은 약 53억 8,000만원에 달했다. 최근 4개 분기(2025년 3분기~2026년 2분기) 누적 지배주주순손실은 약 110억 5,000만원으로, 단일 분기 흑자 이후 다시 손실 폭이 커진 흐름이다. 이 같은 실적 되돌림은 매출의 86%를 차지하는 딥카스의 국내 비급여 매출 둔화와 관련이 있으며, 2026년 상반기 매출은 전년 동기 대비 28% 감소한 것으로 파악됐다. 재무구조 측면에서는 2023년 자기자본이 약 50억 2,000만원까지 줄며 부채비율이 349.4%까지 치솟았으나, 이후 영구전환사채 발행 등을 통한 자본 확충으로 2025년 말 자기자본 약 361억 1,000만원, 부채비율 39.5%로 개선됐다.",
-  "en": "VUNO's consolidated revenue grew for four consecutive years, from roughly KRW 8.27 billion in 2022 to KRW 13.28 billion in 2023, KRW 25.87 billion in 2024, and KRW 34.85 billion in 2025. Over the same period, operating losses widened from about KRW 15.37 billion in 2022 to KRW 15.68 billion in 2023 before narrowing to KRW 12.45 billion in 2024 and KRW 4.93 billion in 2025, with the operating margin improving from -185.7% in 2022 to -14.2% in 2025. On a quarterly basis, Q3 2025 revenue reached about KRW 10.82 billion with operating profit of roughly KRW 1.02 billion and owner net income of about KRW 1.03 billion, marking the company's first quarterly profit since its listing. However, Q4 2025 revenue fell to about KRW 7.23 billion with an operating loss of roughly KRW 2.35 billion and a net loss of about KRW 2.71 billion, reversing back into deficit. Revenue remained low in Q1 and Q2 2026 at about KRW 6.05 billion and KRW 6.11 billion respectively, while operating losses widened to roughly KRW 4.11 billion and KRW 4.21 billion, with the Q2 net loss reaching about KRW 5.38 billion. Cumulative owner net loss over the most recent four quarters (Q3 2025 through Q2 2026) totaled about KRW 11.05 billion, reflecting a pattern of losses widening again after the single profitable quarter. This reversal is linked to slowing domestic non-reimbursed sales of DeepCARS, which makes up 86% of revenue, with first-half 2026 revenue reported to have fallen 28% year-over-year. On the balance sheet, equity fell to about KRW 5.02 billion in 2023, pushing the debt ratio up to 349.4%, before capital raised through perpetual convertible bonds and other measures improved equity to about KRW 36.11 billion and the debt ratio to 39.5% by the end of 2025."
+  "ko": "공시 실적 기준 연간 매출은 2022년 82.7억원, 2023년 133억원(전년 대비 60.4% 증가), 2024년 259억원(94.9% 증가), 2025년 348억원(34.7% 증가)이다. 2023년부터 2025년까지 3년 연속 증가했고, 2022~2025년 중 가장 큰 해는 2025년이다. 증가율은 2024년을 정점으로 둔화하는 흐름이다. 같은 기간 영업손실은 2022년 154억원, 2023년 157억원(적자 지속, 손실 확대), 2024년 125억원(손실 축소), 2025년 49.3억원(손실 축소)으로 2022년부터 2025년까지 4년 연속 적자다. 영업이익률은 2022년 -185.7%에서 2023년 -118.1%, 2024년 -48.1%, 2025년 -14.2%로 개선됐다. 지배주주 순손실은 2022년 157억원에서 2025년 57.8억원으로 줄었고, 당기순손실(비지배지분 포함)도 같은 흐름이다. 2025년 말 자본총계는 361억원이며 부채총계는 143억원이고, 부채비율은 2023년 349.4%에서 2025년 39.5%로 낮아졌다. 영업활동 현금흐름은 2022년 -163억원에서 2025년 -46.8억원으로 적자 폭이 줄었다. 분기 실적은 2025년 3분기 매출 108억원, 영업이익 10.2억원으로 정점을 찍은 뒤 2025년 4분기 72.3억원(영업손실 23.5억원, 적자 전환), 2026년 1분기 60.5억원(영업손실 41.1억원), 2분기 61.1억원(영업손실 42.1억원), 3분기 56.7억원(영업손실 19.7억원)으로 이어졌다. 2025년 3분기 매출에는 솔루션 양도에 따른 기타수익 약 30억원이 잡혀 있었는데, 2026년 3분기 매출 감소액의 약 59%가 이 기타수익이 빠진 데서 나왔다고 분기보고서 기준으로 보도됐다. 같은 분기 영업비용은 76.4억원으로 22.1% 줄었다.",
+  "en": "Disclosed annual revenue was KRW 8.27 billion in 2022, KRW 13.3 billion in 2023 (up 60.4%), KRW 25.9 billion in 2024 (up 94.9%) and KRW 34.8 billion in 2025 (up 34.7%). Revenue rose for three consecutive years from 2023 to 2025, and 2025 was the largest year of 2022 to 2025. Growth rates slowed after the 2024 peak. Operating losses over the same period were KRW 15.4 billion in 2022, KRW 15.7 billion in 2023 (losses widened), KRW 12.5 billion in 2024 (losses narrowed) and KRW 4.93 billion in 2025 (losses narrowed), a loss in each of the four years from 2022 to 2025. The operating margin improved from -185.7% in 2022 to -14.2% in 2025. The net loss attributable to controlling shareholders fell from KRW 15.7 billion in 2022 to KRW 5.78 billion in 2025, and the net loss including non-controlling interests followed the same path. At the end of 2025, total equity was KRW 36.1 billion and total liabilities were KRW 14.3 billion, with the debt ratio falling from 349.4% in 2023 to 39.5% in 2025. Operating cash flow improved from negative KRW 16.3 billion in 2022 to negative KRW 4.68 billion in 2025. Quarterly revenue peaked at KRW 10.8 billion in the third quarter of 2025, when operating profit was KRW 1.02 billion, and then fell to KRW 7.23 billion in the fourth quarter of 2025 (operating loss of KRW 2.35 billion, a swing to loss), KRW 6.05 billion in the first quarter of 2026 (operating loss of KRW 4.11 billion), KRW 6.11 billion in the second quarter (operating loss of KRW 4.21 billion) and KRW 5.67 billion in the third quarter (operating loss of KRW 1.97 billion). Quarterly filings showed about KRW 3.04 billion of other income from a solution transfer in the third quarter of 2025, and about 59% of the KRW 5.15 billion revenue decline in the third quarter of 2026 was attributed to the absence of that income. Operating expenses in the same quarter fell 22.1% to KRW 7.64 billion."
  },
  "industry": {
-  "ko": "국내 의료 AI 산업은 식약처 허가와 함께 최대 4년간 비급여로 병원에서 검사비를 청구할 수 있는 '신의료기술평가 유예' 제도를 매출 확대의 주요 경로로 활용하고 있다. 뷰노의 딥카스 역시 이 제도를 통해 비급여 시장에 진입했으며, 비급여 청구 건수는 3년 만에 80여개 병원 적용으로 확대된 것으로 파악된다. 다만 유예기간이 만료되면 정식 신의료기술평가를 통과해야 정식 수가를 받을 수 있어 제도적 전환점을 앞두고 있다. 국내 의료AI 시장은 루닛의 영상 기반 암 진단·치료, 뷰노의 의료영상·생체신호 분석, 제이엘케이의 뇌졸중 AI 등 특정 질환이나 데이터 영역에 특화된 '전문형 AI' 기업들이 주도하고 있다. 코어라인소프트, 에어스메디컬, 뉴로핏 등도 유사한 사업모델로 경쟁 중이다. 해외 시장에서는 국가별 인허가 확보가 매출 확대의 전제조건으로, 뷰노는 딥브레인과 체스트 엑스레이 트리아지 등 일부 제품에서 이미 미국 FDA 허가를 획득했다. 반면 매출 비중이 가장 큰 딥카스는 미국에서 다인종 데이터 검증 요구에 따라 인허가가 지연되고 있어, 경쟁사들과의 해외 진출 속도 경쟁에서 변수로 남아 있다.",
-  "en": "Korea's medical AI industry relies heavily on the new health technology assessment grace-period system, which allows companies with regulatory clearance to bill hospitals on a non-reimbursed basis for up to four years. VUNO's DeepCARS entered the non-reimbursed market through this system, with non-reimbursed billing reportedly expanding to roughly 80 hospitals within three years. However, once the grace period expires, products must pass the formal new health technology assessment to secure permanent reimbursement, representing an upcoming institutional turning point. Korea's medical AI market is led by specialized-AI companies such as Lunit in imaging-based cancer diagnosis and treatment, VUNO in medical imaging and vital-signs analysis, and JLK in stroke AI, each focused on specific disease areas or data domains. Coreline Soft, Airs Medical, and Neurophet also compete with similar business models. In overseas markets, securing country-specific regulatory approval is a prerequisite for revenue growth, and VUNO has already obtained U.S. FDA clearance for products including DeepBrain and Chest X-ray Triage. By contrast, DeepCARS, its largest revenue contributor, faces delayed U.S. clearance due to requirements for multi-ethnic data validation, leaving it a variable in the race with competitors expanding overseas."
+  "ko": "국내 의료 AI 산업은 제품 인허가와 건강보험 수가 적용 사이에 긴 시차가 있어, 기업들이 R&D와 해외 진출에 지속적인 자금을 투입하는 구조다. 딥카스는 2022년 5월 국내 의료 AI 최초로 선진입 의료기술로 확정돼 같은 해 8월부터 비급여 시장에 진출했다. 2026년 3월 신의료기술 평가유예가 끝나면서 본평가 심사가 진행 중이며, 평가 기간에도 병원은 비급여로 사용할 수 있다. 평가를 통과하면 건강보험 적용 여부를 판단하는 별도 절차가 이어진다. 연구단계기술로 판정되면 현장 사용이 제한된다는 것이 회사 설명이다. 제도 전환기에 놓인 만큼 매출은 기존 도입 병원에 의존하고 있다. 해외에서는 딥카스가 2025년 유럽 CE-MDR 인증을 받았고, 중국 하이난성에서는 의료특구의 선행구 제도를 활용해 현지 사용 근거를 확보하려 하고 있다. 안저영상 AI는 중국 장쑤성의 만성질환관리 플랫폼과 연동돼 현지 공공 의료기관에서 활용이 시작됐다. 중동에서는 쿠웨이트 국립병원에서 실증을 진행하며 연내 인허가를 목표로 한다. 경쟁 측면에서는 국내 의료 AI 기업들이 대체로 적자 상태인 가운데, 뷰노는 실제 병원 매출을 내는 제품을 보유했다는 점이 차별점으로 언급된다. 다만 매출의 대부분이 한 제품에 몰린 구조가 취약점으로 지목된다.",
+  "en": "Medical AI in Korea faces a long gap between product approval and reimbursement, so companies keep spending on R&D and overseas expansion. DeepCARS was confirmed in May 2022 as the first domestic medical AI product under the fast-track pathway and entered the non-reimbursed market that August. After the health technology assessment grace period ended in March 2026, the full assessment is under way, and hospitals may still use the product on a non-reimbursed basis during review. A separate reimbursement decision follows if the product passes, and the company says a finding of research-stage status would restrict on-site use. Revenue therefore still depends on existing hospital customers. Overseas, DeepCARS received CE-MDR certification in Europe in 2025, and in Hainan, China, the company is using a pilot-zone system to build local evidence. The Fundus AI tool has been connected to a chronic disease management platform in Jiangsu Province and is in use at public medical institutions there. In the Middle East, a Kuwaiti national hospital is running a proof-of-concept study with a target of local approval within 2026. Many domestic medical AI companies remain loss-making, and Vuno's distinguishing point is a product that generates hospital revenue, while the concentration of sales in a single product is cited as the main weakness."
  },
  "outlook": {
-  "ko": "회사는 2026년 4분기로 예정된 국내 딥카스 신의료기술평가 결과를 '올해 가장 중요한 모멘텀'으로 지목하고 있다. 이 평가를 통과하면 비급여에서 정식 수가 체계로 전환돼 매출 구조의 안정성이 높아질 수 있고, 통과하지 못하면 유예기간 만료에 따른 매출 공백 우려가 커질 수 있다. 미국에서는 딥카스의 510(k) 신청이 지난 4월 30일 FDA로부터 '동등성 증빙 불충분(NSE)' 판정을 받아 보완 후 재도전이 필요한 상황이다. 다만 미국 CMS가 2027 회계연도 NTAP(신기술추가지불보상) 제안 규정에 딥카스를 포함시킨 점은 향후 미국 시장 진입 시 참고할 만한 신호로 언급된다. 회사는 해외 사업 확대와 전사적 AI 전환(AX)을 통한 운영 효율화를 함께 추진하겠다는 방침을 밝혔다. 재무적으로는 314억원 규모 유상증자를 통해 조달한 자금 중 200억원을 고금리 전환 전에 제3회차 영구전환사채 조기상환에 쓰고, 나머지 약 114억원은 연구개발과 해외법인 운영 등 성장 투자에 투입할 계획이다. 유상증자 일정은 10월 2일 주주배정 기준일을 시작으로 구주주 청약(11월 9~10일), 실권주 일반공모(11월 12~13일)를 거쳐 11월 30일 신주 상장으로 마무리된다.",
-  "en": "The company has identified the Q4 2026 domestic new health technology assessment outcome for DeepCARS as its 'most important catalyst this year.' Passing this assessment would shift the product from non-reimbursed to formal reimbursement status, potentially stabilizing revenue, while failing it could raise concerns about a revenue gap once the grace period expires. In the U.S., DeepCARS' 510(k) application received a Not Substantially Equivalent (NSE) decision from the FDA on April 30, requiring supplementation before resubmission. However, the U.S. CMS including DeepCARS in its FY2027 NTAP (New Technology Add-on Payment) proposed rule is cited as a reference point for eventual U.S. market entry. The company has stated it will pursue overseas business expansion alongside operational efficiency gains through company-wide AI transformation. Financially, of the KRW 31.4 billion raised through the rights offering, KRW 20 billion is earmarked for early repayment of the third-series perpetual convertible bond before its rate steps up, with the remaining roughly KRW 11.4 billion allocated to R&D and overseas subsidiary operations for growth investment. The rights offering schedule runs from the October 2 shareholder record date through existing shareholder subscription (November 9-10) and public subscription for unclaimed shares (November 12-13), concluding with new share listing on November 30."
+  "ko": "회사는 인력 감축 등 전사 비용 효율화 효과가 2027년부터 실적에 본격 반영될 것으로 내다보고 있다. 2026년 3분기 영업비용은 76억원으로 전 분기 대비 26% 줄었다. 딥카스의 신의료기술평가 결과는 2026년 4분기 중 나올 것으로 회사가 예상하고 있으며, 급여가 적용되면 환자 부담이 줄고 별도 동의 절차가 없어져 병원 내 사용률이 높아질 것이라고 회사는 설명했다. 해외에서는 2026년 9월 중국 궈룬과 하이난성 2년 독점 판매계약을 맺었고, 회사는 현지 의료기관의 행정 등록을 6개월 안에 마치는 것을 목표로 한다고 밝혔다. 유럽에서는 독일, 스페인, 스웨덴 의료기관과 연구 협력이 진행 중이며, 독일 의료정보시스템 기업 메살보와 시스템 연동을 마쳐 해당 EMR을 쓰는 병원에 딥카스를 적용할 수 있는 기반을 갖췄다. 중동에서는 쿠웨이트 국립병원에서 PoC를 진행하며 연내 현지 인허가를 목표로 한다. 휴대용 HATIV는 2026년 2분기에 중동에서 첫 수출 계약을 맺었다는 보도가 있었다. 안저영상 AI는 독일에서 현지 검증을 마치고 의료기기 업체와 판매 계약을 맺었으며, 브라질에서는 인허가와 현지 병원 검증이 병행되고 있다. 흉부 X선 AI는 베트남과 태국 병원에서 기술 검증을 진행하며 판매 계약을 앞두고 있다고 회사가 밝혔다.",
+  "en": "The company expects headcount reductions and other cost efficiency measures to be fully reflected in earnings from 2027. Operating expenses in the third quarter of 2026 were KRW 7.64 billion, down 26% from the prior quarter. The company expects a DeepCARS health technology assessment result in the fourth quarter of 2026, and it says reimbursement would reduce patient cost-sharing and remove the separate consent step, which it expects to raise usage in hospitals. Overseas, Vuno signed a two-year exclusive sales agreement with China's Guorun for Hainan Province in September 2026, and it has set a target of completing local hospital registration within six months of that announcement. In Europe, research collaborations with hospitals in Germany, Spain and Sweden are under way, and the system integration with the German EMR company Mesalvo is complete. In the Middle East, a proof-of-concept study at a Kuwaiti national hospital targets local approval within 2026. HATIV reportedly signed its first export contract in the Middle East in the second quarter of 2026. Fundus AI completed local validation in Germany and signed a sales contract with a medical device distributor there, while approval and hospital validation are running in parallel in Brazil. The Chest X-ray tool is in technical validation at hospitals in Vietnam and Thailand, and the company says a sales contract is near."
  },
  "valuation_comment": {
-  "ko": "뷰노는 여전히 순손실을 지속하고 있어 이익 기반의 배수 지표를 적용하기 어려운 상태다. 주가는 순자산가치와 비교할 때 프리미엄이 존재하는 구간에서 거래되는 편으로, 이는 향후 성장 가능성에 대한 기대가 일부 반영된 결과로 해석할 수 있다. 2025년 3분기 첫 분기 흑자를 냈다가 이후 다시 손실이 확대된 실적 흐름은 이익의 연속성에 대한 평가를 가르는 요인으로 작용해왔다. 배당을 지급하지 않고 있어 배당 관련 지표로 비교할 대상은 제한적이다. 11월로 예정된 314억원 규모 유상증자가 완료되면 발행주식수가 약 45% 늘어나게 되므로, 주당 지표를 해석할 때 이러한 자본구조 변화를 함께 고려할 필요가 있다.",
-  "en": "VUNO continues to post net losses, making profit-based valuation multiples difficult to apply. Its shares tend to trade at a premium relative to net asset value, which can be interpreted as reflecting some degree of expectation for future growth. The pattern of a single profitable quarter in Q3 2025 followed by widening losses again has been a factor shaping assessments of earnings continuity. The company pays no dividend, limiting comparisons on dividend-related metrics. Once the KRW 31.4 billion rights offering scheduled for November is completed, shares outstanding will increase by approximately 45%, a capital structure change that should be considered alongside any interpretation of per-share metrics going forward."
+  "ko": "주가순자산비율은 1배를 크게 웃도는 수준이어서, 장부상 순자산 대비 프리미엄이 붙은 구간에서 거래되고 있다. 2025년 말 자본총계가 361억원 규모로 적자 구조에서도 자산 기반은 유지되고 있으나, 프리미엄의 근거는 이익보다 딥카스 평가와 해외 계약의 실현 여부에 달려 있다. 최근 네 개 분기 기준 지배주주 순손실 합계가 140억원이어서 이익을 기준으로 한 배수는 산출되지 않는다. 2025년 3분기에는 분기 기준 흑자를 낸 적이 있으나 이후 네 개 분기 연속 적자가 이어졌다. 배당은 사실상 없는 상태이므로 배당 수익률로 주가 수준을 비교하기는 어렵다. 업종 안에서 보면 국내 의료 AI 기업 상당수가 적자 상태라 이익 기반 배수 비교의 틀이 제한적이다. 다년 흐름에서는 영업손실 규모와 영업이익률이 2022년 이후 축소되어 적자에서 손실 축소로 방향이 바뀌었다는 점이 확인된다. 밸류에이션 판단의 근거는 딥카스 평가 결과, 해외 매출 발생 시점, 비용 효율화의 실제 반영 여부가 될 것이다.",
+  "en": "The price-to-book ratio is well above 1x, meaning the shares trade at a clear premium to book value. Total equity at the end of 2025 was KRW 36.1 billion, so the asset base remains intact despite losses, but the premium depends more on whether the DeepCARS assessment and overseas contracts convert into earnings than on current book value. Because the last four quarters have produced a combined net loss attributable to controlling shareholders of KRW 14 billion, earnings-based multiples cannot be calculated. The company posted a quarterly profit in the third quarter of 2025 but has reported losses in each quarter since. The dividend yield is effectively nil, so dividend-based comparisons are not meaningful. Among domestic medical AI companies many remain loss-making, which limits the usefulness of earnings-based peer multiples. Over several years, operating losses and the operating margin have narrowed since 2022, a shift from widening to narrowing losses. The next reference points for valuation are the DeepCARS assessment outcome, the timing of overseas revenue, and whether cost cuts show up in reported results."
  },
  "bull": [
   {
    "title": {
-    "ko": "실적 개선 흐름과 분기 흑자 경험",
-    "en": "Improving Earnings Trend and a Track Record of Quarterly Profit"
+    "ko": "딥카스 평가 통과 시 급여 가능성",
+    "en": "Reimbursement Possibility if DeepCARS Passes"
    },
    "body": {
-    "ko": "2022년부터 2025년까지 매출이 약 82억원에서 348억원으로 4년간 꾸준히 늘었고 영업손실률도 -185.7%에서 -14.2%로 큰 폭으로 개선됐다. 2025년 3분기에는 매출 108억원, 영업이익 10억원으로 상장 후 처음 분기 흑자를 기록했다. 이는 비급여 매출 확대와 R&D 용역 매출, 비용 절감이 동시에 작용한 결과로, 사업모델이 일정 조건에서 손익 균형을 넘어설 수 있음을 보여준 사례로 평가된다.",
-    "en": "Revenue grew steadily from about KRW 8.2 billion to KRW 34.8 billion between 2022 and 2025, while the operating margin improved sharply from -185.7% to -14.2%. In Q3 2025, revenue of KRW 10.8 billion and operating profit of KRW 1.0 billion marked the company's first quarterly profit since listing. This resulted from a combination of expanded non-reimbursed sales, R&D service revenue, and cost reductions, demonstrating that the business model can achieve breakeven under certain conditions."
+    "ko": "딥카스는 2026년 4분기 중 신의료기술평가 결과가 나올 것으로 회사가 예상하고 있다. 평가를 통과해 건강보험 적용이 이뤄지면 환자 부담이 줄고 병원 내 사용률이 높아질 수 있다는 것이 회사 설명이다. 2022년 이후 이 제품은 비급여 시장에서 국내 약 5만 병상에 도입돼 있어 기존 고객 기반이 있다. 급여 전환이 이뤄지면 신규 도입 둔화를 되돌릴 계기가 될 수 있다는 점이 강세 측면으로 꼽힌다.",
+    "en": "The company expects the DeepCARS assessment result in the fourth quarter of 2026. If the product passes and gains insurance coverage, the company says patient cost-sharing would fall and hospital usage could rise. The product already has an installed base in about 50,000 hospital beds in Korea on a non-reimbursed basis. Reimbursement could reverse the slowdown in new adoption."
    }
   },
   {
    "title": {
-    "ko": "다변화된 해외 인허가 포트폴리오",
-    "en": "Diversified Overseas Regulatory Portfolio"
+    "ko": "해외 허가와 계약 파이프라인",
+    "en": "Overseas Approvals and Contract Pipeline"
    },
    "body": {
-    "ko": "딥브레인과 체스트 엑스레이 트리아지 등 복수 제품이 이미 미국 FDA 허가를 획득했고 일본 PMDA, 유럽 CE MDR, 브라질 ANVISA 등 여러 국가에서 인증을 확보했다. 미국 CMS가 2027 회계연도 NTAP 제안 규정에 딥카스를 포함시킨 점도 참고할 만한 신호로 언급된다. 단일 제품·단일 시장 의존도를 낮추는 방향의 포트폴리오 확장이 진행되고 있다.",
-    "en": "Multiple products including DeepBrain and Chest X-ray Triage have already obtained U.S. FDA clearance, alongside approvals in Japan (PMDA), the EU (CE MDR), and Brazil (ANVISA). The U.S. CMS including DeepCARS in its FY2027 NTAP proposed rule is also cited as a notable reference point. Portfolio expansion is underway that reduces reliance on any single product or market."
+    "ko": "2026년 9월 중국 궈룬과 하이난성 2년 독점 판매계약을 맺었고, 쿠웨이트에서는 연내 인허가를 목표로 실증을 진행하고 있다. 유럽에서는 독일, 스페인, 스웨덴 의료기관과 연구 협력이 이어지고 있다. 안저영상 AI는 독일에서 판매 계약을 맺었고, HATIV는 중동에서 첫 수출 계약을 체결했다. 이러한 계약이 실제 매출로 이어지면 딥카스 외 매출 구조를 넓히는 근거가 된다.",
+    "en": "Vuno signed a two-year exclusive sales deal with Guorun for Hainan in September 2026 and is running a proof-of-concept study in Kuwait with a 2026 approval target. Research collaborations with hospitals in Germany, Spain and Sweden continue. Fundus AI has a sales contract in Germany, and HATIV signed a first export contract in the Middle East. If these contracts translate into revenue, they would broaden the revenue base beyond DeepCARS."
    }
   },
   {
    "title": {
-    "ko": "재무구조 선제 정비",
-    "en": "Proactive Balance Sheet Restructuring"
+    "ko": "비용 구조 효율화와 적자 폭 축소",
+    "en": "Cost Efficiency and Narrowing Losses"
    },
    "body": {
-    "ko": "8월 26일 제2회차 영구전환사채 약 93억원을 조기 상환했고, 8월 28일에는 314억원 규모 유상증자를 결의해 금리가 오르기 전 제3회차 영구전환사채도 상환할 계획을 세웠다. 부채비율은 2023년 349.4%에서 2025년 39.5%로 낮아지는 등 자본 확충을 통한 재무구조 개선이 진행돼왔다. 이 같은 선제적 대응은 이자 부담과 상환 리스크를 낮추는 효과를 기대할 수 있다.",
-    "en": "On August 26, VUNO fully repaid about KRW 9.3 billion of its second-series perpetual convertible bond, and on August 28 approved a KRW 31.4 billion rights offering partly aimed at repaying the third-series bond before its interest rate steps up. The debt ratio has declined from 349.4% in 2023 to 39.5% in 2025 as capital was raised to improve the balance sheet. Such proactive measures could be expected to reduce interest burden and repayment risk."
+    "ko": "2026년 3분기 영업손실은 19.7억원으로 2분기 42.1억원에서 줄었고, 같은 분기 영업비용은 전 분기 대비 26% 감소했다. 회사는 인력 감축 등 전사 비용 효율화 효과가 2027년부터 본격 반영될 것으로 전망했다. 영업이익률은 2022년 -185.7%에서 2025년 -14.2%로 개선돼 손실 구조가 축소되는 방향을 보이고 있다. 적자가 이어지더라도 손실 규모가 줄어드는 흐름이 확인되는 점이 강세 측면이다.",
+    "en": "The operating loss narrowed to KRW 1.97 billion in the third quarter of 2026 from KRW 4.21 billion in the second quarter, and operating expenses fell 26% from the prior quarter. The company expects headcount reductions and other efficiency measures to be reflected from 2027. The operating margin improved from -185.7% in 2022 to -14.2% in 2025. Even with continued losses, the narrowing trend is a point supporters cite."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "핵심 제품의 인허가·매출 둔화",
-    "en": "Delays and Slowing Sales for the Core Product"
+    "ko": "신규 도입 둔화와 매출 감소",
+    "en": "Slower New Adoption and Revenue Decline"
    },
    "body": {
-    "ko": "매출의 86%를 차지하는 딥카스가 미국에서 FDA로부터 동등성 증빙 불충분 판정을 받아 인허가가 지연되고 있고, 국내에서도 2026년 상반기 매출이 전년 동기 대비 28% 줄었다. 다인종 데이터 검증 요구 등 추가 보완이 필요해 승인 시점을 특정하기 어려운 상황이다.",
-    "en": "DeepCARS, which makes up 86% of revenue, faces delayed U.S. clearance after receiving a Not Substantially Equivalent decision from the FDA, while domestic first-half 2026 revenue fell 28% year-over-year. Additional data supplementation requirements, including multi-ethnic validation, make it difficult to pinpoint an approval timeline."
+    "ko": "2026년 3분기 매출은 56.7억원으로 전년 동기 대비 47.6% 줄었다. 회사 설명에 따르면 딥카스 3분기 단독 매출은 50억원으로 전년 동기 대비 약 28% 줄었고, 신규 도입이 둔화된 것이 원인이다. 2025년 3분기에는 솔루션 양도 수익이 반영돼 있어 기저 효과가 있었지만, 그 점을 제외하더라도 본업 매출의 증가 흐름이 뚜렷하지 않다는 것이 약세 측면이다.",
+    "en": "Revenue in the third quarter of 2026 was KRW 5.67 billion, down 47.6% from a year earlier. The company says DeepCARS revenue alone was about KRW 5 billion in the quarter, down roughly 28%, with slower new adoption as the reason. The prior-year quarter included solution transfer income, which creates a base effect, but the core product's revenue trend is not clearly growing."
    }
   },
   {
    "title": {
-    "ko": "분기 흑자 이후 재차 확대된 손실",
-    "en": "Losses Widening Again After a Profitable Quarter"
+    "ko": "4개 분기 연속 적자와 자금 부담",
+    "en": "Four Straight Quarterly Losses and Funding Pressure"
    },
    "body": {
-    "ko": "2025년 3분기 분기 흑자를 낸 이후 2025년 4분기부터 2026년 2분기까지 4개 분기 연속 다시 적자로 전환했다. 2026년 2분기 영업손실은 42억 1,000만원, 순손실은 53억 8,000만원으로 오히려 확대됐다. 단발성 흑자가 지속 가능한 성장으로 안착했는지는 아직 확인되지 않은 상태다.",
-    "en": "After posting a quarterly operating profit in Q3 2025, the company returned to losses for four consecutive quarters through Q2 2026. The Q2 2026 operating loss widened to about KRW 4.21 billion and net loss to about KRW 5.38 billion. Whether the single profitable quarter represents sustainable growth has yet to be confirmed."
+    "ko": "2025년 4분기부터 2026년 3분기까지 4개 분기 연속 적자이며, 같은 기간 지배주주 순손실 합계는 140억원이다. 영업활동 현금흐름은 2025년에도 -46.8억원으로 적자 상태가 이어졌다. 2025년 말 자본총계는 361억원이지만, 적자가 지속되면 추가 자금 조달이 필요해질 수 있다는 것이 약세 측면이다. 자금 조달 방식에 따라 기존 주주의 지분 가치가 희석될 가능성도 함께 고려해야 한다.",
+    "en": "The company has posted losses for four consecutive quarters from the fourth quarter of 2025 through the third quarter of 2026, with a combined net loss attributable to controlling shareholders of KRW 14 billion over that span. Operating cash flow was still negative at KRW 4.68 billion in 2025. Total equity at the end of 2025 was KRW 36.1 billion, but continued losses could require additional funding, and the form of that funding could dilute existing shareholders."
    }
   },
   {
    "title": {
-    "ko": "대규모 유상증자에 따른 지분 희석과 지배구조 이슈",
-    "en": "Dilution and Governance Concerns from the Large Rights Offering"
+    "ko": "해외 사업은 계약과 검증 단계 중심",
+    "en": "Overseas Business Still at Contract and Validation Stage"
    },
    "body": {
-    "ko": "314억원 규모 유상증자로 발행주식수가 약 45% 늘어나며 기존 주주의 지분가치 희석이 예상된다. 예정 발행가는 발표 전날 종가 대비 32% 할인된 수준으로 책정됐다. 최대주주인 이예하 이사회 의장은 배정 물량의 7%만 청약할 계획이라고 밝혀 시장에서 논란이 되고 있다.",
-    "en": "The KRW 31.4 billion rights offering will increase shares outstanding by approximately 45%, diluting existing shareholders. The planned issue price was set at a 32% discount to the closing price the day before the announcement. The controversy centers on Board Chairman and largest shareholder Ye-ha Lee's stated plan to subscribe to only 7% of his allotted shares, drawing market criticism."
+    "ko": "중국 하이난의 DeepCARS 판매는 현지 의료기관의 행정 등록을 거쳐 PoC에 들어가는 절차가 필요하고, 회사는 등록을 6개월 안에 마치는 것을 목표로 한다. 쿠웨이트 인허가도 목표 단계에 있다. 독일과 중동, 동남아는 대부분 연구, 실증, 검증 단계이며 해외 매출이 본격화되었다는 공시 기반 수치는 아직 제한적이다. 해외 확장이 지연되면 국내 매출 둔화를 상쇄하기 어렵다는 점이 약세 측면이다.",
+    "en": "Sales of DeepCARS in Hainan require local hospital registration before proof-of-concept work, with a six-month registration target. The Kuwait approval is still a target. Germany, the Middle East and Southeast Asia are mostly at research, pilot or validation stages, and disclosed overseas revenue remains limited. If overseas expansion slips, it would be hard to offset the domestic slowdown."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "규제·인허가 리스크",
-    "en": "Regulatory and Approval Risk"
+    "ko": "규제·평가 리스크",
+    "en": "Regulatory and Assessment Risk"
    },
    "body": {
-    "ko": "딥카스의 미국 FDA 510(k) 승인은 당초 2024년에서 2025년, 다시 2026년으로 계속 미뤄지고 있다. 국내에서도 신의료기술평가 유예기간 만료가 다가오는 가운데 4분기 평가 결과에 따라 비급여 매출 지속 여부가 좌우된다. 인허가 지연이 반복될 경우 매출 성장 시점이 추가로 늦춰질 수 있다.",
-    "en": "U.S. FDA 510(k) clearance for DeepCARS has been repeatedly delayed, initially expected in 2024, then pushed to 2025, and now to 2026. Domestically, as the grace period for the new health technology assessment approaches expiration, the Q4 assessment outcome will determine whether non-reimbursed sales can continue. Repeated approval delays could push back the timing of revenue growth further."
+    "ko": "딥카스는 2026년 3월 평가유예가 끝나 신의료기술 본평가를 받고 있다. 회사는 평가 결과가 4분기 중 나올 것으로 예상했지만, 결과가 기대와 다르면 연구단계기술로 판정돼 현장 사용이 제한될 수 있다. 평가 결과의 시점과 내용은 회사가 통제할 수 없는 영역이며, 급여 적용 여부를 판단하는 별도 절차도 추가로 남아 있다.",
+    "en": "DeepCARS exited its assessment grace period in March 2026 and is under full health technology assessment. The company expects a result in the fourth quarter, but a finding of research-stage status would restrict on-site use. The timing and content of the outcome are outside the company's control, and a separate reimbursement decision remains after that."
    }
   },
   {
    "cat": {
-    "ko": "재무·자본조달 리스크",
-    "en": "Financial and Funding Risk"
+    "ko": "단일 제품 집중",
+    "en": "Single-Product Concentration"
    },
    "body": {
-    "ko": "회사는 5년째 연간 영업손실을 지속하고 있으며 영업활동현금흐름도 매년 음수를 기록해 2025년에는 약 46억 7,600만원의 현금이 유출됐다. 영구전환사채 상환과 성장투자를 위해 314억원 규모 유상증자를 결정했으며, 향후에도 추가 자금조달이 필요할 가능성을 배제할 수 없다. 2025년 9월 말 기준 연결 현금성 자산은 약 225억원 수준으로 파악됐다.",
-    "en": "The company has posted annual operating losses for five straight years, with operating cash flow also negative every year, including a cash outflow of about KRW 4.68 billion in 2025. It decided on a KRW 31.4 billion rights offering to repay perpetual convertible bonds and fund growth investment, and the possibility of further capital raises cannot be ruled out. As of end-September 2025, consolidated cash and equivalents stood at about KRW 22.5 billion."
+    "ko": "2026년 1~3분기 누적 매출 가운데 딥카스가 약 87%를 차지하고 HATIV가 약 9%다. 딥카스의 병원 도입 속도나 정책 변화가 흔들리면 전사 실적이 즉각 영향을 받는 구조다. HATIV는 성장률이 높지만 매출 규모가 작아 전체 실적을 떠받치기에는 아직 제한적이다. 제품군 다변화가 매출 기여로 확인되기까지는 집중 리스크가 남아 있다.",
+    "en": "DeepCARS accounts for about 87% of revenue for January through September 2026, and HATIV for about 9%. Any slowdown in hospital adoption or policy change for DeepCARS flows directly into company results. HATIV is growing faster but is still small relative to the total, so concentration risk remains until diversification shows up in revenue."
    }
   },
   {
    "cat": {
-    "ko": "경쟁 심화 리스크",
-    "en": "Competitive Intensity Risk"
+    "ko": "재무 체력과 비용 집행",
+    "en": "Financial Capacity and Cost Execution"
    },
    "body": {
-    "ko": "국내 의료AI 시장은 루닛, 제이엘케이, 코어라인소프트, 에어스메디컬, 뉴로핏 등 여러 기업이 특정 질환·데이터 영역별로 경쟁하는 구조다. 신의료기술평가 유예 제도를 활용한 경쟁 제품들이 잇따라 비급여 시장에 진입하고 있어 딥카스의 병원 도입 확대 속도에 영향을 줄 수 있다. 경쟁사들의 해외 인허가 확보 속도도 뷰노와 유사하게 빨라지고 있다.",
-    "en": "Korea's medical AI market features multiple competitors—Lunit, JLK, Coreline Soft, Airs Medical, and Neurophet—competing across specific disease and data domains. Competing products leveraging the same new health technology grace-period system are increasingly entering the non-reimbursed market, which could affect the pace of DeepCARS' hospital adoption. Competitors are also accelerating their own overseas regulatory approvals at a pace similar to VUNO's."
+    "ko": "2025년 말 부채총계는 143억원이고 부채비율은 39.5%로 2023년의 349.4%에서 낮아졌지만, 영업활동 현금흐름은 여전히 적자다. 회사가 밝힌 비용 효율화 효과가 2027년부터 반영되려면 인력 감축과 비용 집행이 계획대로 진행되어야 한다. 해외 확장과 R&D를 병행하는 과정에서 비용이 다시 늘어나면 손실 축소 흐름이 되돌려질 수 있다.",
+    "en": "Total liabilities at the end of 2025 were KRW 14.3 billion, and the debt ratio fell to 39.5% from 349.4% in 2023, but operating cash flow remained negative. The efficiency gains the company describes depend on headcount reductions and cost execution proceeding as planned from 2027. If spending rises again while pursuing overseas expansion and R&D, the narrowing of losses could reverse."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 10월 2일",
-    "en": "October 2, 2026"
-   },
-   "what": {
-    "ko": "유상증자 신주배정기준일로, 이 날짜를 기준으로 구주주에게 신주 배정 권리가 확정된다.",
-    "en": "Rights offering shareholder record date, on which existing shareholders' new share allotment rights are finalized."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 11월 4일~11월 17일",
-    "en": "November 4-17, 2026"
-   },
-   "what": {
-    "ko": "유상증자 확정 발행가액 결정, 구주주 및 일반공모 청약, 주금 납입까지 이어지는 절차로, 최종 조달 규모와 실권주 발생 여부를 확인할 수 있다.",
-    "en": "Sequence of finalizing the issue price, existing shareholder and public subscriptions, and payment date, allowing confirmation of the final funds raised and any unclaimed share volume."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 11월 30일",
-    "en": "November 30, 2026"
-   },
-   "what": {
-    "ko": "유상증자 신주 상장 예정일로, 발행주식수가 약 45% 늘어난 이후 주당 지표 변화를 확인할 시점이다.",
-    "en": "Scheduled listing date for new shares from the rights offering, when the roughly 45% increase in shares outstanding takes effect and per-share metrics can be reassessed."
-   }
-  },
-  {
-   "when": {
     "ko": "2026년 4분기 중",
-    "en": "During Q4 2026"
+    "en": "Q4 2026"
    },
    "what": {
-    "ko": "국내 딥카스 신의료기술평가 결과 발표로, 회사가 밝힌 '올해 가장 중요한 모멘텀'이며 비급여 매출의 지속 가능성을 가늠할 수 있다.",
-    "en": "Release of the domestic new health technology assessment result for DeepCARS, described by the company as its 'most important catalyst this year' and a gauge of non-reimbursed revenue sustainability."
+    "ko": "딥카스 신의료기술평가 결과 발표. 결과에 따라 건강보험 적용 판단 절차와 병원 사용률 전망이 달라지므로 가장 먼저 확인할 지점이다.",
+    "en": "Result of the DeepCARS health technology assessment. The outcome determines the next reimbursement step and the outlook for hospital usage, making it the first item to check."
    }
   },
   {
    "when": {
-    "ko": "2026년 11월경",
-    "en": "Around November 2026"
+    "ko": "2026년 연말",
+    "en": "End of 2026"
    },
    "what": {
-    "ko": "2026년 3분기 실적 발표 시점으로, 2025년 4분기부터 이어진 손실 확대 흐름이 진정되는지 확인할 수 있다.",
-    "en": "Timing of Q3 2026 earnings release, when it can be checked whether the widening loss trend since Q4 2025 has stabilized."
+    "ko": "쿠웨이트 국립병원 실증에 따른 현지 인허가 취득 여부. 목표 시점 안에 허가가 나오면 중동 사업의 실행 속도를 가늠하는 근거가 된다.",
+    "en": "Whether local approval in Kuwait is obtained as the proof-of-concept concludes. Approval within the target window would indicate the pace of Middle East execution."
+   }
+  },
+  {
+   "when": {
+    "ko": "2027년 3월 전후",
+    "en": "Around March 2027"
+   },
+   "what": {
+    "ko": "하이난성 현지 의료기관 등록 완료 여부. 회사가 6개월 안 등록을 목표로 밝힌 일정이 2026년 9월 발표 이후 이어진다.",
+    "en": "Completion of local hospital registration in Hainan. The company set a six-month target in its September 2026 announcement, which runs into roughly March 2027."
+   }
+  },
+  {
+   "when": {
+    "ko": "2027년 3월 말(사업보고서 제출 기한)",
+    "en": "End of March 2027 (annual report deadline)"
+   },
+   "what": {
+    "ko": "2026년 사업보고서 제출. 다음 정기보고서로, 2026년 4분기와 연간 영업손실 · 현금흐름 · 자본 구조를 공시 기준으로 확인할 수 있다.",
+    "en": "Filing of the 2026 annual report, the next regular filing. It will show full-year 2026 operating loss, cash flow and capital structure on a disclosed basis."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "뷰노는 2025년까지 매출 성장과 영업손실 축소를 동시에 달성하며 2025년 3분기 상장 후 첫 분기 흑자를 기록했으나, 이후 2025년 4분기부터 2026년 2분기까지 다시 4개 분기 연속 적자로 돌아섰다. 매출의 대부분을 차지하는 딥카스는 국내에서 비급여 매출 둔화를 겪고 있고 미국에서는 FDA로부터 동등성 증빙 불충분 판정을 받아 인허가 일정이 재차 지연됐다. 회사는 제2회차 영구전환사채를 조기 상환하고 314억원 규모 유상증자를 결의하는 등 금리 상승 전 재무구조를 선제적으로 정비하고 있다. 이 유상증자는 발행주식수를 약 45% 늘리는 대규모 물량으로, 10월 초 신주배정기준일부터 11월 말 신주 상장까지 일정이 이어진다. 회사는 2026년 4분기 국내 신의료기술평가 결과를 핵심 모멘텀으로 지목하고 있으며, 이 결과와 미국 딥카스 재승인 진행 상황이 다음 실적 흐름을 가르는 변수가 될 것으로 보인다. 향후 흐름을 살필 때는 인허가 일정 변경 가능성과 유상증자에 따른 지분 희석 효과를 함께 확인할 필요가 있다.",
-   "en": "VUNO achieved simultaneous revenue growth and narrowing operating losses through 2025, culminating in its first quarterly operating profit since listing in Q3 2025, but has since returned to losses for four consecutive quarters from Q4 2025 through Q2 2026. DeepCARS, which accounts for the bulk of revenue, has seen slowing non-reimbursed sales domestically and repeated delays in U.S. clearance after an FDA Not Substantially Equivalent decision. The company proactively repaid its second-series perpetual convertible bond early and approved a KRW 31.4 billion rights offering to restructure its finances ahead of a scheduled interest rate increase. This large rights offering will increase shares outstanding by roughly 45%, with a schedule running from the early-October record date through late-November new share listing. The company has flagged the Q4 2026 domestic new health technology assessment outcome as its key catalyst, and this result along with progress on U.S. DeepCARS reapproval are likely to be key variables shaping subsequent earnings trends. Going forward, it will be important to monitor potential changes in the regulatory approval timeline alongside the dilution effects of the rights offering."
+   "ko": "뷰노는 심정지 예측 AI 딥카스 한 제품에 매출의 대부분을 의존하는 구조이며, 2025년 연간 매출은 348억원으로 3년 연속 증가했으나 2026년 3분기 매출은 전년 동기 대비 47.6% 감소했다. 영업손실은 2022년 이후 4년 연속 적자이면서도 2025년까지 축소 흐름을 보였고, 2026년 3분기 영업손실은 19.7억원으로 전 분기보다 줄었다. 강세 측면은 딥카스의 신의료기술평가 통과 시 급여 가능성, 중국과 중동 등 해외 계약 확대, 비용 효율화 효과다. 약세 측면은 신규 도입 둔화, 4개 분기 연속 적자에 따른 자금 부담, 해외 사업의 계약·검증 단계 중심 구조다. 밸류에이션은 주가순자산비율이 1배를 크게 웃도는 프리미엄 구간으로, 이익 기반 배수는 산출되지 않는다. 다음 확인 지점은 2026년 4분기 중 나오는 딥카스 평가 결과, 2026년 연말 쿠웨이트 인허가 여부, 2027년 3월 말 제출될 2026년 사업보고서다. 평가 결과와 해외 매출의 실현 여부가 실적 흐름을 가르는 핵심 변수다.",
+   "en": "Vuno depends heavily on one product, DeepCARS, which generated about 87% of revenue for January through September 2026. Annual revenue rose to KRW 34.8 billion in 2025, a third straight annual increase, but third-quarter 2026 revenue fell 47.6% from a year earlier. The operating loss has been recorded in each year from 2022 to 2025, though it narrowed in 2024 and 2025, and the third-quarter 2026 operating loss of KRW 1.97 billion was smaller than in the prior quarter. Supporting factors include possible reimbursement if DeepCARS passes assessment, expanding overseas contracts in China and the Middle East, and cost efficiency. Opposing factors include slower new adoption, four straight quarterly losses that add funding pressure, and overseas business that remains at contract and validation stages. The price-to-book ratio sits well above 1x, and earnings-based multiples cannot be calculated. The next checkpoints are the DeepCARS assessment result in the fourth quarter of 2026, the Kuwait approval target at year-end, and the 2026 annual report due by the end of March 2027. Whether the assessment result and overseas revenue materialize will be the key variables for the earnings trajectory."
   }
  },
  "sources": [
-  "https://alphasquare.co.kr/home/stock-summary?code=338220",
-  "https://m.thinkpool.com/compDiscuss/cont/1009376",
-  "https://kr.investing.com/equities/vuno-earnings",
-  "https://view.asiae.co.kr/article/2026090315315207132",
-  "https://www.investing.com/equities/vuno",
-  "https://stocks.pluconnect.com/338220_%EB%B7%B0%EB%85%B8/",
-  "https://littlebproject.com/stock/338220/249/45981",
-  "https://www.paxnet.co.kr/stock/analysis/main?abbrSymbol=338220",
-  "https://comp.wisereport.co.kr/bridgefn/company/c1010001.aspx?cmp_cd=338220",
-  "https://www.vuno.co/news/view/2564",
-  "https://www.medicaltimes.com/Main/News/NewsView.html?ID=1153922",
-  "https://www.paxetv.com/news/articleView.html?idxno=217081",
-  "https://medigatenews.com/news/2530782428",
-  "https://msale.mimint.co.kr/bbs/view/news/S1N13/5376332",
-  "https://www.biospectator.com/news/view/23615",
-  "https://v.daum.net/v/20260507082411941?f=p",
-  "https://m.thebell.co.kr/m/newsview.asp?svccode=04&newskey=202601120707269940105583",
-  "https://www.saramin.co.kr/zf_user/company-info/view/csn/NjVtTlhmSEdyMUtzZlYvY0VCMXhCZz09/company_nm/(%EC%A3%BC)%EB%B7%B0%EB%85%B8"
+  "https://news.nate.com/view/20260515n24865",
+  "https://vuno.co/news/view/3533",
+  "https://www.denews.co.kr/news/articleView.html?idxno=43119",
+  "https://www.thebionews.net/news/articleView.html?idxno=30306",
+  "https://www.getnews.co.kr/news/articleView.html?idxno=887356",
+  "https://www.rapportian.com/news/articleView.html?idxno=242504",
+  "http://www.paxetv.com/news/articleView.html?idxno=287105",
+  "https://finance.eduinfom.com/2026/08/14085/",
+  "https://m.news.nate.com/view/20260814n23149",
+  "https://www.newstap.co.kr/news/articleView.html?idxno=337981",
+  "https://news.mtn.co.kr/article/2026111716335234175",
+  "https://www.vuno.co/news/view/3252",
+  "https://www.thebionews.net/news/articleView.html?idxno=27241",
+  "https://www.etoday.co.kr/news/view/2509124",
+  "https://www.vuno.co/news/view/3161",
+  "https://www.alphabiz.co.kr/news/articleView.html?idxno=190557",
+  "https://www.fnnews.com/news/202609290917568626",
+  "https://www.ddaily.co.kr/page/view/2026111717494723136"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "338220",
  "name": "뷰노",
  "name_en": "VUNO, Inc.",
@@ -234,11 +224,11 @@
   "인공지능(AI)"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 09:12",
- "dataDate": "20260904",
+ "reportDate": "2026-11-18",
+ "reportTs": "2026-11-18 06:54",
+ "dataDate": "20261117",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-11-17",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -308,12 +298,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 9254486654,
-    "op": -169471190,
-    "np_owner": -817346997
-   },
-   {
     "q": "2025Q3",
     "rev": 10823959924,
     "op": 1016834418,
@@ -336,28 +320,39 @@
     "rev": 6111075522,
     "op": -4208921611,
     "np_owner": -5383790396
+   },
+   {
+    "q": "2026Q3",
+    "rev": 5669912212,
+    "op": -1969669106,
+    "np_owner": -1953886009
    }
   ],
   "valuation": {
-   "price": 5250,
-   "mcap": 0.0735,
+   "price": 5300,
+   "mcap": 0.0742,
    "shares": 14001823,
    "total_shares": 14001823,
    "wavg_shares": 13993975,
    "per": null,
-   "eps": -789,
-   "pbr": 2.0588,
-   "bps": 2550,
-   "roe_ttm": -35.5,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": -11047741477,
+   "eps": -1003,
+   "pbr": 3.085,
+   "bps": 1718,
+   "roe_ttm": -54.3,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": -14035624639,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 2.8,
+   "eps_src": "공시",
+   "pbr_krx": 2.05,
    "bps_krx": 2579.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
-   "div": 0.0
+   "div": 0.0,
+   "hidden": {
+    "per": "loss"
+   }
   }
- }
+ },
+ "textRules": 2
 }
