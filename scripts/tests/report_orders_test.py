@@ -702,8 +702,16 @@ for _sc, _miss, _want, _why in (
     ok(_good, f"워치독 신규 상장 재호출 — {_why}", "" if _good else _out[-300:])
 # GITHUB_TOKEN 으로 부른 실행(워치독이 켠 백필 청크 · self-chain)은 끝나도 workflow_run 이 생기지 않는다(11/16 확인) — 직접 부른다
 # 워치독이 다시 부른 신규 상장 작업도 같다(2026-11-17 영광와이케이엠씨 — 종목 페이지에는 리포트가 나왔으나 목록에 오르지 않았다)
-for _wfn, _what in (("generate_reports_v2.yml", "리포트 v2"), ("new_listings.yml", "신규 상장")):
-    _jobs = yaml.safe_load((_WFD / _wfn).read_text(encoding="utf-8"))["jobs"]
+# 배치 회수도 같다(2026-11-18 — 공시 트리거 · 리포트 v2 가 GITHUB_TOKEN 으로 회수를 부른다).
+def _perm(wf, job):
+    """작업(job) 권한 — 없으면 작업 파일 전체 권한."""
+    return (job.get("permissions") or wf.get("permissions") or {})
+
+
+for _wfn, _what in (("generate_reports_v2.yml", "리포트 v2"), ("new_listings.yml", "신규 상장"),
+                    ("collect_batch.yml", "배치 회수")):
+    _wf = yaml.safe_load((_WFD / _wfn).read_text(encoding="utf-8"))
+    _jobs = _wf["jobs"]
     _hit = [(j, s) for j in _jobs.values() for s in j.get("steps", [])
             if "gh workflow run reports_watchdog.yml -f sync_only=true" in (s.get("run") or "")]
     _job, _ask = _hit[0] if len(_hit) == 1 else ({}, {})
@@ -711,10 +719,107 @@ for _wfn, _what in (("generate_reports_v2.yml", "리포트 v2"), ("new_listings.
     _iC = next((i for i, s in enumerate(_st) if "push_main.sh" in (s.get("run") or "")), None)
     ok(len(_hit) == 1 and "github-actions[bot]" in str(_ask.get("if")) and "refs/heads/main" in str(_ask.get("if"))
        and "always()" in str(_ask.get("if")) and "data/reports_v2" in _ask["run"]
-       and (_job.get("permissions") or {}).get("actions") == "write"
+       and _perm(_wf, _job).get("actions") == "write"
        and _iC is not None and _st.index(_ask) == _iC + 1,
        f"{_what} — GITHUB_TOKEN 으로 불린 실행은 리포트를 썼을 때 커밋 바로 뒤에서 워치독(정리만)을 직접 부른다(작업 권한 actions: write)",
        str(_ask.get("if")) if _ask else "단계 없음")
+
+# 교정 배치 회수가 예약 지연으로 늦지 않게(2026-11-18) — 회수 예약(30분마다)이 실제로는 몇 시간에 한 번만 돌아, 11/17 01:50 에 공시
+# 트리거가 맡긴 교정 53편이 몇 시간 동안 저장되지 않았다. 배치를 맡긴 작업이 회수를 곧바로 부르고, 회수는 배치가 끝날 때까지 기다린다.
+import wait_batches as WB  # noqa: E402
+
+
+class _FakeBatches:
+    def __init__(self, seq):
+        self.seq, self.calls = {k: list(v) if isinstance(v, list) else v for k, v in seq.items()}, []
+        self.messages = types.SimpleNamespace(batches=self)
+
+    def retrieve(self, bid):
+        self.calls.append(bid)
+        s = self.seq[bid]
+        if isinstance(s, Exception):
+            raise s
+        return types.SimpleNamespace(processing_status=s.pop(0) if len(s) > 1 else s[0])
+
+
+def _clock():
+    t = {"now": 0.0}
+    return (lambda: t["now"]), (lambda sec: t.__setitem__("now", t["now"] + sec)), t
+
+
+_pend = [(None, {"batch_id": "B1", "repair": {"batch_id": "R1"}}), (None, {"batch_id": "B2"}),
+         (None, {"batch_id": "B3", "repair": {"batch_id": "R1"}})]
+ok(WB.targets(_pend) == ["R1", "B2"], "배치 기다리기 — 보정을 기다리는 주문은 보정 배치, 아니면 본 배치(겹침 없이)", str(WB.targets(_pend)))
+_now, _sleep, _t = _clock()
+_fc = _FakeBatches({"R1": ["in_progress", "in_progress", "ended"], "B2": ["ended"]})
+_left = WB.wait(_fc, ["R1", "B2"], 2700, step=60, now=_now, sleep=_sleep, say=lambda *_: None)
+ok(_left == [] and _t["now"] == 120 and _fc.calls.count("B2") == 1,
+   "배치 기다리기 — 끝난 배치는 다시 보지 않고, 모두 끝나면 곧바로 멈춘다", f"{_left} · {_t['now']}초 · {_fc.calls}")
+_now, _sleep, _t = _clock()
+_left = WB.wait(_FakeBatches({"R1": ["in_progress"]}), ["R1"], 150, step=60, now=_now, sleep=_sleep, say=lambda *_: None)
+ok(_left == ["R1"] and _t["now"] <= 150, "배치 기다리기 — 한도를 넘기지 않고 끝나지 않은 배치를 돌려준다", f"{_left} · {_t['now']}초")
+_now, _sleep, _t = _clock()
+_left = WB.wait(_FakeBatches({"X": RuntimeError("없음")}), ["X"], 2700, step=60, now=_now, sleep=_sleep, say=lambda *_: None)
+ok(_left == [] and _t["now"] == 0, "배치 기다리기 — 상태를 받지 못한 배치는 기다리지 않는다(회수가 판단한다)", f"{_left} · {_t['now']}초")
+
+_cb = yaml.safe_load((_WFD / "collect_batch.yml").read_text(encoding="utf-8"))
+_cbon = _cb.get("on") or _cb.get(True) or {}
+_cbjob = next(iter(_cb["jobs"].values()))
+_cbst = _cbjob["steps"]
+_wait = [s for s in _cbst if "wait_batches.py" in (s.get("run") or "")]
+ok(((_cbon.get("workflow_dispatch") or {}).get("inputs") or {}).get("wait_min") is not None
+   and len(_wait) == 1 and "${{" not in _wait[0]["run"] and "inputs.wait_min" in str((_wait[0].get("env") or {}).get("WAIT_MIN"))
+   and "*[!0-9]*" in _wait[0]["run"] and "git reset -q --hard FETCH_HEAD" in _wait[0]["run"]
+   and int(_cbjob.get("timeout-minutes", 0)) >= 80
+   and _cbst.index(_wait[0]) < next(i for i, s in enumerate(_cbst) if "generate_reports_v2.py pickup" in (s.get("run") or "")),
+   "배치 회수 — 손 · 다른 작업이 부른 실행은 배치가 끝날 때까지 기다렸다(입력은 숫자만 · 최대 50분) 최신 저장소에서 받는다",
+   str(_wait[0].get("if")) if _wait else "단계 없음")
+for _wfn, _what in (("filing_reports.yml", "공시 트리거"), ("generate_reports_v2.yml", "리포트 v2")):
+    _wf = yaml.safe_load((_WFD / _wfn).read_text(encoding="utf-8"))
+    _hit = [(j, s) for j in _wf["jobs"].values() for s in j.get("steps", [])
+            if "gh workflow run collect_batch.yml -f wait_min=45" in (s.get("run") or "")]
+    _job, _ask = _hit[0] if len(_hit) == 1 else ({}, {})
+    _st = _job.get("steps", [])
+    _iC = next((i for i, s in enumerate(_st) if "push_main.sh" in (s.get("run") or "")), None)
+    ok(len(_hit) == 1 and "always()" in str(_ask.get("if")) and "refs/heads/main" in str(_ask.get("if"))
+       and "pending_batches" in _ask["run"] and _perm(_wf, _job).get("actions") == "write"
+       and _iC is not None and _st.index(_ask) > _iC,
+       f"{_what} — 커밋 뒤 받을 배치가 있으면 배치 회수를 곧바로 부른다(45분까지 기다림 · main 에서만)",
+       str(_ask.get("if")) if _ask else "단계 없음")
+
+# 회수가 다음 교정 회차를 새로 주문했을 때만 자기를 다시 부른다 — 그 단계를 가짜 gh 와 상태 파일로 실제로 돌린다.
+_nx = [s for s in _cbst if "gh workflow run collect_batch.yml -f wait_min=45" in (s.get("run") or "")]
+ok(len(_nx) == 1 and "steps.gate.outputs.repairs" in str((_nx[0].get("env") or {}).get("BEFORE_REPAIRS")),
+   "배치 회수 — 다음 교정 회차 요청 단계가 있고, 실행 전 보정 배치 목록과 견준다", str(_nx[0].get("env")) if _nx else "단계 없음")
+
+
+def _next_round(states, before):
+    with tempfile.TemporaryDirectory() as d:
+        Path(d, "scripts").mkdir()
+        Path(d, "scripts", "_reports_state.py").write_text((HERE.parent / "_reports_state.py").read_text(encoding="utf-8"),
+                                                            encoding="utf-8")
+        Path(d, "data", "batches_v2").mkdir(parents=True)
+        for name, st in states.items():
+            Path(d, "data", "batches_v2", f"{name}.json").write_text(json.dumps(st), encoding="utf-8")
+        Path(d, "bin").mkdir()
+        Path(d, "bin", "gh").write_text('#!/bin/sh\necho "$@" >> "$FAKE_LOG"\n', encoding="utf-8")
+        Path(d, "bin", "gh").chmod(0o755)
+        env = dict(os.environ, PATH=f"{d}/bin:{os.environ['PATH']}", FAKE_LOG=f"{d}/log", BEFORE_REPAIRS=before)
+        r = subprocess.run(["bash", "-e", "-c", _nx[0]["run"]], cwd=d, env=env, capture_output=True, text=True)
+        log = Path(d, "log").read_text(encoding="utf-8") if Path(d, "log").exists() else ""
+        return r.returncode, "workflow run collect_batch.yml -f wait_min=45" in log, r.stdout + r.stderr
+
+
+if _nx:
+    _two = {"msgbatch_a": {"batch_id": "msgbatch_a", "repair": {"batch_id": "msgbatch_r2"}},
+            "msgbatch_b": {"batch_id": "msgbatch_b", "collected": "2026-11-18 03:00", "repair": {"batch_id": "msgbatch_rX"}}}
+    for _before, _want, _why in (("msgbatch_r1", True, "새 교정 회차를 주문했다 → 다시 부른다"),
+                                 ("msgbatch_r2", False, "보정 배치가 그대로다(끝나지 않은 배치) → 부르지 않는다"),
+                                 ("", True, "처음 맡긴 교정 회차 → 다시 부른다")):
+        _rc, _called, _out = _next_round(_two, _before)
+        ok(_rc == 0 and _called == _want, f"배치 회수 다음 회차 — {_why}", "" if _rc == 0 and _called == _want else _out[-300:])
+    _rc, _called, _out = _next_round({"msgbatch_c": {"batch_id": "msgbatch_c", "collected": "2026-11-18 03:00"}}, "")
+    ok(_rc == 0 and not _called, "배치 회수 다음 회차 — 받을 배치가 없으면 부르지 않는다", "" if _rc == 0 and not _called else _out[-300:])
 
 print(f"\n통과 {passed} · 실패 {failed}")
 sys.exit(1 if failed else 0)

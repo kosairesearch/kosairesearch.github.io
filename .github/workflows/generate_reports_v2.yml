@@ -154,6 +154,20 @@ jobs:
             echo "새로 쓴 리포트 없음 — 정리 요청 안 함"
           fi
 
+      # 맡긴 배치(본 배치 · 교정 배치)를 받으러 배치 회수를 곧바로 부른다(2026-11-18 · 공시 트리거와 같다). 회수 예약(30분마다)이 실제로는
+      # 몇 시간에 한 번만 돈다. 회수는 배치가 끝날 때까지 45분까지 기다렸다 받는다. 청크 여럿이 불러도 회수 실행 순서가 하나로 줄인다.
+      - name: 배치 회수 요청
+        if: ${{ always() && github.ref == 'refs/heads/main' }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          n=$(python3 -c "import sys; sys.path.insert(0, 'scripts'); import _reports_state as S; print(len(S.pending_batches()))" || echo 0)
+          if [ "${n:-0}" -gt 0 ]; then
+            gh workflow run collect_batch.yml -f wait_min=45 || echo "::warning::배치 회수 요청 실패 — 예약 실행이 받는다"
+          else
+            echo "받을 배치 없음 — 회수를 부르지 않는다"
+          fi
+
       # 스크립트가 오류로 끝났으면 잡을 실패로 표시한다. 부분 결과는 위에서 이미
       # 커밋했으므로 잃는 것은 없고, 대신 초록불에 속지 않는다.
       #   3 = DART 를 쓸 수 없음(하루 한도·점검·키). 종목 탓이 아니라 skip 을 남기지 않았다.

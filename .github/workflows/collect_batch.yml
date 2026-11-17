@@ -17,13 +17,23 @@ name: 📦 리포트 배치 회수 (남은 주문 받아오기)
 # 회수는 이미 결제된 결과를 받아오는 것이라 추가 과금이 없다. 그래서
 # data/reports_paused 가 있어도 회수는 한다 — 멈춘 동안 배치가 만료(29일)되면
 # 낸 돈이 그대로 사라진다.
+#
+# 예약(30분마다)은 실제로는 몇 시간에 한 번만 돈다(2026-11-17 마지막 예약 실행 19:56 KST — 01:50 에 공시 트리거가 맡긴 교정 배치
+# 53편이 그 뒤 몇 시간 동안 저장되지 않았다). 그래서 배치를 맡기고 끝나는 작업(공시 트리거 · 리포트 v2)이 이 작업을 곧바로 부르고
+# (wait_min), 여기서는 배치가 끝날 때까지 기다렸다 받는다(scripts/wait_batches.py). 회수가 다음 교정 회차를 주문하면 자기를 다시
+# 부른다. 예약은 그대로 둔다 — 끝나지 않은 채 한도가 지난 배치는 예약이 받는다.
 on:
   schedule:
     - cron: '*/30 * * * *'   # 30분마다
   workflow_dispatch:
+    inputs:
+      wait_min:
+        description: '진행 중인 배치가 끝날 때까지 기다리는 시간(분 · 0 = 기다리지 않음 · 최대 50)'
+        default: '0'
 
 permissions:
   contents: write
+  actions: write   # 다음 회수 · 워치독 정리 요청(GITHUB_TOKEN 으로 불린 실행)
 
 concurrency:
   group: kos-collect-batch
@@ -32,8 +42,8 @@ concurrency:
 jobs:
   pickup:
     runs-on: ubuntu-latest
-    # 회수만 하므로 오래 걸릴 일이 없다. 정량 재수집도 하지 않는다.
-    timeout-minutes: 30
+    # 회수만 하므로 오래 걸릴 일이 없다. 정량 재수집도 하지 않는다. 기다리는 실행(wait_min · 최대 50분)만큼 한도를 더 둔다.
+    timeout-minutes: 85
     steps:
       - uses: actions/checkout@v4
 
@@ -48,6 +58,9 @@ jobs:
           pend = S.pending_batches()
           print(f"go={'true' if pend else 'false'}")
           print(f"n={len(pend)}")
+          # 이 실행 전에 있던 보정 배치 — 회수가 다음 교정 회차를 새로 주문했는지 가른다(맨 끝 단계)
+          print("repairs=" + ",".join(sorted(st["repair"]["batch_id"] for _, st in pend
+                                             if isinstance(st.get("repair"), dict) and st["repair"].get("batch_id"))))
           PY
           cat $GITHUB_OUTPUT
 
@@ -57,6 +70,20 @@ jobs:
           python-version: '3.11'
       - if: steps.gate.outputs.go == 'true'
         run: pip install -r requirements.txt
+
+      # 배치를 맡긴 작업이 곧바로 부른 실행 — 배치가 끝날 때까지 기다렸다 받는다(조회만 · 돈 안 듦).
+      - name: 진행 중인 배치를 기다린다
+        if: ${{ steps.gate.outputs.go == 'true' && github.event_name == 'workflow_dispatch' }}
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          WAIT_MIN: ${{ inputs.wait_min }}
+        run: |
+          case "$WAIT_MIN" in ''|*[!0-9]*) WAIT_MIN=0 ;; esac
+          [ "$WAIT_MIN" -gt 50 ] && WAIT_MIN=50
+          python scripts/wait_batches.py $(( WAIT_MIN * 60 ))
+          # 기다리는 동안 다른 작업이 올린 것을 받아 최신 저장소에서 회수한다 — 묵은 저장소로 이미 받아 간 배치를 다시 받아
+          # 같은 파일을 고치면 충돌한다(2026-11-13). 아직 아무것도 고치지 않았으므로 그대로 맞춘다.
+          [ "$WAIT_MIN" -gt 0 ] && git fetch -q origin main && git reset -q --hard FETCH_HEAD || true
 
       - name: 회수
         if: steps.gate.outputs.go == 'true'
@@ -84,3 +111,42 @@ jobs:
           git commit -q -m "📦 리포트 배치 회수 $(TZ='Asia/Seoul' date +'%Y-%m-%d %H:%M KST')"
           # 받아 합치기 · 충돌 · 재시도 · 실패 처리는 공용 단계가 한다(scripts/push_main.sh · 2026-11-13).
           PUSH_TRIES=25 bash scripts/push_main.sh
+
+      # 리포트 목록 · 첫 화면 숫자는 워치독이 맞춘다. 이 작업이 끝나면 워치독이 workflow_run 으로 도는데, 다른 작업이 GITHUB_TOKEN 으로
+      # 부른 실행(실행 주체 github-actions[bot])은 끝나도 workflow_run 이 생기지 않는다. 그런 실행만, 리포트를 썼을 때 직접 부른다.
+      - name: 리포트 목록 정리 요청(워치독 · 정리만)
+        if: ${{ always() && steps.gate.outputs.go == 'true' && github.actor == 'github-actions[bot]' && github.ref == 'refs/heads/main' }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BEFORE: ${{ github.sha }}
+        run: |
+          if git diff --name-only "$BEFORE" HEAD -- data/reports_v2 | grep -q .; then
+            gh workflow run reports_watchdog.yml -f sync_only=true \
+              || echo "::warning::워치독 정리 요청 실패 — 예약 실행이 맞춘다"
+          else
+            echo "새로 쓴 리포트 없음 — 정리 요청 안 함"
+          fi
+
+      # 이번 회수가 다음 교정 회차를 주문했으면(영문 · 표현이 다 걸리면 두 번 오간다) 그 답을 받으러 곧바로 다시 온다. 새로 주문한
+      # 보정이 없으면 부르지 않는다 — 끝나지 않는 배치에 되풀이하지 않게(남은 것은 예약이 받는다).
+      - name: 다음 회수 요청(교정 회차)
+        if: ${{ always() && steps.gate.outputs.go == 'true' && github.ref == 'refs/heads/main' }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BEFORE_REPAIRS: ${{ steps.gate.outputs.repairs }}
+        run: |
+          new=$(python3 - <<'PY'
+          import os, sys; sys.path.insert(0, "scripts")
+          import _reports_state as S
+          before = set(filter(None, os.environ.get("BEFORE_REPAIRS", "").split(",")))
+          now = {st["repair"]["batch_id"] for _, st in S.pending_batches()
+                 if isinstance(st.get("repair"), dict) and st["repair"].get("batch_id")}
+          print(",".join(sorted(now - before)))
+          PY
+          )
+          if [ -n "$new" ]; then
+            echo "새로 주문한 교정 배치: $new — 받으러 다시 온다"
+            gh workflow run collect_batch.yml -f wait_min=45 || echo "::warning::다음 회수 요청 실패 — 예약 실행이 받는다"
+          else
+            echo "새로 주문한 교정 없음 — 다시 부르지 않는다"
+          fi
