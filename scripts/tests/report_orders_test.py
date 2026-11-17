@@ -701,15 +701,20 @@ for _sc, _miss, _want, _why in (
     _good = _rc == 0 and _called == _want
     ok(_good, f"워치독 신규 상장 재호출 — {_why}", "" if _good else _out[-300:])
 # GITHUB_TOKEN 으로 부른 실행(워치독이 켠 백필 청크 · self-chain)은 끝나도 workflow_run 이 생기지 않는다(11/16 확인) — 직접 부른다
-_v2s = yaml.safe_load((_WFD / "generate_reports_v2.yml").read_text(encoding="utf-8"))["jobs"]
-_v2steps = [s for j in _v2s.values() for s in j.get("steps", [])]
-_ask = [s for s in _v2steps if "gh workflow run reports_watchdog.yml -f sync_only=true" in (s.get("run") or "")]
-_iC = next((i for i, s in enumerate(_v2steps) if "push_main.sh" in (s.get("run") or "")), None)
-ok(len(_ask) == 1 and "github-actions[bot]" in str(_ask[0].get("if")) and "refs/heads/main" in str(_ask[0].get("if"))
-   and "always()" in str(_ask[0].get("if")) and "data/reports_v2" in _ask[0]["run"]
-   and _iC is not None and _v2steps.index(_ask[0]) == _iC + 1,
-   "리포트 v2 — GITHUB_TOKEN 으로 불린 실행은 리포트를 썼을 때 커밋 바로 뒤에서 워치독(정리만)을 직접 부른다",
-   str(_ask[0].get("if")) if _ask else "단계 없음")
+# 워치독이 다시 부른 신규 상장 작업도 같다(2026-11-17 영광와이케이엠씨 — 종목 페이지에는 리포트가 나왔으나 목록에 오르지 않았다)
+for _wfn, _what in (("generate_reports_v2.yml", "리포트 v2"), ("new_listings.yml", "신규 상장")):
+    _jobs = yaml.safe_load((_WFD / _wfn).read_text(encoding="utf-8"))["jobs"]
+    _hit = [(j, s) for j in _jobs.values() for s in j.get("steps", [])
+            if "gh workflow run reports_watchdog.yml -f sync_only=true" in (s.get("run") or "")]
+    _job, _ask = _hit[0] if len(_hit) == 1 else ({}, {})
+    _st = _job.get("steps", [])
+    _iC = next((i for i, s in enumerate(_st) if "push_main.sh" in (s.get("run") or "")), None)
+    ok(len(_hit) == 1 and "github-actions[bot]" in str(_ask.get("if")) and "refs/heads/main" in str(_ask.get("if"))
+       and "always()" in str(_ask.get("if")) and "data/reports_v2" in _ask["run"]
+       and (_job.get("permissions") or {}).get("actions") == "write"
+       and _iC is not None and _st.index(_ask) == _iC + 1,
+       f"{_what} — GITHUB_TOKEN 으로 불린 실행은 리포트를 썼을 때 커밋 바로 뒤에서 워치독(정리만)을 직접 부른다(작업 권한 actions: write)",
+       str(_ask.get("if")) if _ask else "단계 없음")
 
 print(f"\n통과 {passed} · 실패 {failed}")
 sys.exit(1 if failed else 0)
