@@ -15,7 +15,5 @@
     "거래량": "270164.0",
     "등락률": "-0.8086253369272237"
   },
-  "dart": {
-    "share_error": "ConnectTimeout: HTTPSConnectionPool(host='opendart.fss.or.kr', port=443): Max retries exceeded with url: /api/stockTotqySttus.json?crtfc_key=fe32f957e40b37428b0d5f4807aa495839506436&corp_code=01596221&bsns_year=2024&reprt_code=11011 (Caused by ConnectTimeoutError(<HTTPSConnection(host='opendart.fss.or.kr', port=443) at 0x73f6d2c49ed0>, 'Connection to opendart.fss.or.kr timed out. (connect timeout=20)'))"
-  }
+  "dart": {}
 }
