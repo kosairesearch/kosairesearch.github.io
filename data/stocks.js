@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-11-17 19:09",
+  "lastUpdated": "2026-11-17 20:11",
   "dataDate": "20261117",
   "stocks": [
     {
@@ -15955,9 +15955,9 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "493260",
       "name": "옵토닉스",
-      "name_en": "",
+      "name_en": "Optonics Co.,Ltd.",
       "market": "코스닥",
-      "sector": "기타",
+      "sector": "항공·방산",
       "price": 17670,
       "change": 47.25,
       "volume": 25648970,
@@ -15965,7 +15965,7 @@ window.KOS_LIVE_DATA = {
       "mcap": 0.169,
       "shares": 9566000,
       "categories": [
-        "기타"
+        "항공·방산"
       ],
       "rank": 886
     },
@@ -19691,7 +19691,7 @@ window.KOS_LIVE_DATA = {
       "name": "영광와이케이엠씨",
       "name_en": "YOUNGKWANG YKMC. INC.",
       "market": "코스닥",
-      "sector": "기타",
+      "sector": "반도체",
       "price": 8420,
       "change": -8.48,
       "volume": 8811843,
@@ -19699,7 +19699,7 @@ window.KOS_LIVE_DATA = {
       "mcap": 0.1219,
       "shares": 14482531,
       "categories": [
-        "기타"
+        "반도체"
       ],
       "rank": 1093
     },
