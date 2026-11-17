@@ -24,6 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      actions: write   # 배치 회수 요청(맨 끝 단계)
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -113,3 +114,17 @@ jobs:
           git commit --allow-empty -m "🗓️ 공시 트리거 리포트 $(TZ='Asia/Seoul' date +'%Y-%m-%d %H:%M KST')"
           # 받아 합치기 · 충돌 · 재시도 · 실패 처리는 공용 단계가 한다(scripts/push_main.sh · 2026-11-13).
           bash scripts/push_main.sh
+
+      # 맡긴 배치(본 배치 · 교정 배치)를 받으러 배치 회수를 곧바로 부른다(2026-11-18). 회수 예약(30분마다)이 실제로는 몇 시간에 한 번만
+      # 돌아, 11/17 01:50 에 맡긴 교정 53편이 그 뒤 몇 시간 동안 저장되지 않았다. 회수는 배치가 끝날 때까지 45분까지 기다렸다 받는다.
+      - name: 배치 회수 요청
+        if: ${{ always() && github.ref == 'refs/heads/main' }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          n=$(python3 -c "import sys; sys.path.insert(0, 'scripts'); import _reports_state as S; print(len(S.pending_batches()))" || echo 0)
+          if [ "${n:-0}" -gt 0 ]; then
+            gh workflow run collect_batch.yml -f wait_min=45 || echo "::warning::배치 회수 요청 실패 — 예약 실행이 받는다"
+          else
+            echo "받을 배치 없음 — 회수를 부르지 않는다"
+          fi
