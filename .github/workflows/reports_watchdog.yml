@@ -90,6 +90,9 @@ jobs:
       # (11/13 · 11/16 — 깃허브는 묶음마다 기다리는 실행을 하나만 둔다). 이 워치독은 리포트 작업이 끝날 때마다 돌므로 순서가 빈 직후
       # 부를 수 있다. 되풀이를 막는다 — 진행 · 대기 중인 실행이 있거나, 6시간 안에 취소되지 않고 끝난 실행이 있으면 부르지 않는다
       # (같은 이유로 거듭 저장하지 못하는 종목은 신규 상장 작업이 세 번째부터 빼고, --peek 도 같은 기준으로 센다).
+      # 공용 실행 순서의 대기 자리에 다른 실행이 있으면 부르지 않는다(2026-11-17) — 깃허브는 묶음마다 대기 실행을 하나만 두어, 새로
+      # 부른 실행이 그 실행을 취소한다. 처음 판은 이 확인이 없어, 대기 중이던 공시 트리거가 이 단계가 부른 신규 상장 작업에 취소됐다
+      # (11/17 08:51 세계 표준시). 자리가 빈 때만 들어가고, 뒤에 온 실행에 밀려 취소되면 자리가 빈 다음 워치독이 다시 부른다.
       - name: 리포트 없는 상장 종목 — 신규 상장 작업 다시 부르기
         if: ${{ !inputs.sync_only }}
         env:
@@ -104,7 +107,23 @@ jobs:
           recent=$(gh run list --workflow=new_listings.yml --limit 10 --json status,conclusion,createdAt \
                    --jq "[.[] | select(.status == \"completed\" and .conclusion != \"cancelled\" and .createdAt > \"$since\")] | length")
           echo "신규 상장 작업 — 진행 · 대기 ${busy:-?} · 6시간 안에 끝난 실행 ${recent:-?}"
-          if [ "${busy:-1}" = "0" ] && [ "${recent:-1}" = "0" ]; then
+          # 공용 실행 순서(kos-data)의 대기 자리 — 대기(pending) 실행, 또는 30분 안에 만들어져 아직 시작하지 않은 실행. 오래된 queued
+          # 실행은 깃허브에 걸려 멈춘 것이라(10/07 · 11/11 시세 갱신이 그대로 남아 있다) 세지 않는다. 목록을 못 받으면 부르지 않는다.
+          kos=$(grep -l 'group: *kos-data' .github/workflows/*.yml)
+          fresh=$(date -u -d '-30 minutes' +%Y-%m-%dT%H:%M:%SZ)
+          slot=0
+          for st in pending queued waiting requested; do
+            runs=$(gh api "repos/$GITHUB_REPOSITORY/actions/runs?status=$st&per_page=100" \
+                     --jq '.workflow_runs[] | "\(.path) \(.created_at)"') || { slot=$((slot + 1)); echo "  실행 목록을 받지 못함($st)"; continue; }
+            while read -r p c; do
+              { [ -n "$p" ] && grep -qxF "$p" <<<"$kos"; } || continue
+              if [ "$st" = pending ] || [[ "$c" > "$fresh" ]]; then
+                slot=$((slot + 1)); echo "  공용 실행 순서 대기: $p ($st · $c)"
+              fi
+            done <<<"$runs"
+          done
+          echo "공용 실행 순서의 대기 자리 — ${slot}건"
+          if [ "${busy:-1}" = "0" ] && [ "${recent:-1}" = "0" ] && [ "$slot" = "0" ]; then
             gh workflow run new_listings.yml && echo "→ 신규 상장 작업을 다시 불렀다"
           else
             echo "→ 부르지 않는다"

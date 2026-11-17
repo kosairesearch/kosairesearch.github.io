@@ -646,6 +646,60 @@ _pk = subprocess.run([sys.executable, str(HERE.parent / "new_listings.py"), "--p
 _h1 = hashlib.md5(_KT.read_bytes()).hexdigest() if _KT.exists() else None
 ok(_pk.returncode == 0 and re.search(r"^missing=\d+$", _pk.stdout, re.M) and _h0 == _h1,
    "신규 상장 --peek — 대상 수만 찍고 아무것도 쓰지 않는다(known_tickers 그대로)", _pk.stdout[-200:] + _pk.stderr[-200:])
+# 그 단계를 가짜 gh · python 으로 실제로 돌린다 — 공용 실행 순서(kos-data)의 대기 자리에 다른 실행이 있으면 부르지 않는다(2026-11-17
+# 08:51 세계 표준시 — 처음 판이 부른 신규 상장 작업이 대기 중이던 공시 트리거를 취소했다. 깃허브는 묶음마다 대기 실행을 하나만 둔다).
+import tempfile  # noqa: E402
+from datetime import datetime, timedelta, timezone  # noqa: E402
+_FAKE_GH = r'''#!/usr/bin/env python3
+import json, os, sys
+a = sys.argv[1:]
+sc = json.load(open(os.environ["FAKE_SC"]))
+if a[:2] == ["workflow", "run"]:
+    open(os.environ["FAKE_LOG"], "a").write("부름 " + a[2] + "\n"); sys.exit(0)
+if a[:2] == ["run", "list"]:
+    print(sc["busy"] if a[a.index("--json") + 1] == "status" else sc["recent"]); sys.exit(0)
+if a[:1] == ["api"]:
+    st = a[1].split("status=")[1].split("&")[0]
+    if st in sc.get("fail", []): sys.exit(1)
+    for p, c in sc.get("runs", {}).get(st, []): print(p, c)
+    sys.exit(0)
+sys.exit(2)
+'''
+
+
+def _nl_step(sc, missing=1):
+    with tempfile.TemporaryDirectory() as d:
+        for name, body in (("gh", _FAKE_GH), ("python", f"#!/bin/sh\necho missing={missing}\n")):
+            Path(d, name).write_text(body, encoding="utf-8")
+            Path(d, name).chmod(0o755)
+        Path(d, "sc.json").write_text(json.dumps(sc), encoding="utf-8")
+        env = dict(os.environ, PATH=f"{d}:{os.environ['PATH']}", FAKE_SC=f"{d}/sc.json", FAKE_LOG=f"{d}/log",
+                   GITHUB_REPOSITORY="kosairesearch/kosairesearch.github.io")
+        r = subprocess.run(["bash", "-e", "-c", _nl[0]["run"]], cwd=HERE.parent.parent, env=env,
+                           capture_output=True, text=True)
+        log = Path(d, "log").read_text(encoding="utf-8") if Path(d, "log").exists() else ""
+        return r.returncode, "부름 new_listings.yml" in log, r.stdout + r.stderr
+
+
+_now = datetime.now(timezone.utc)
+_ago = lambda m: (_now - timedelta(minutes=m)).strftime("%Y-%m-%dT%H:%M:%SZ")  # noqa: E731
+_FIL, _UPD, _WD = (".github/workflows/filing_reports.yml", ".github/workflows/update_data.yml",
+                   ".github/workflows/reports_watchdog.yml")
+for _sc, _miss, _want, _why in (
+    ({"busy": 0, "recent": 0}, 1, True, "자리가 비었다 → 부른다"),
+    ({"busy": 0, "recent": 0, "runs": {"pending": [[_FIL, _ago(1)]]}}, 1, False, "대기 중인 공시 트리거 → 부르지 않는다"),
+    ({"busy": 0, "recent": 0, "runs": {"pending": [[_FIL, _ago(600)]]}}, 1, False, "오래 기다린 대기 실행도 대기 자리다"),
+    ({"busy": 0, "recent": 0, "runs": {"queued": [[_UPD, _ago(3)]]}}, 1, False, "막 만들어진 시세 갱신 → 부르지 않는다"),
+    ({"busy": 0, "recent": 0, "runs": {"queued": [[_UPD, _ago(60 * 24 * 6)]]}}, 1, True, "엿새 전 멈춘 queued 실행은 세지 않는다"),
+    ({"busy": 0, "recent": 0, "runs": {"pending": [[_WD, _ago(1)]]}}, 1, True, "다른 실행 순서(워치독)의 대기는 상관없다"),
+    ({"busy": 0, "recent": 0, "fail": ["pending"]}, 1, False, "실행 목록을 못 받으면 부르지 않는다"),
+    ({"busy": 1, "recent": 0}, 1, False, "신규 상장 작업이 이미 진행 · 대기 중 → 부르지 않는다"),
+    ({"busy": 0, "recent": 1}, 1, False, "6시간 안에 끝난 실행이 있다 → 부르지 않는다"),
+    ({"busy": 0, "recent": 0}, 0, False, "리포트 없는 종목이 없다 → 부르지 않는다"),
+):
+    _rc, _called, _out = _nl_step(_sc, _miss)
+    _good = _rc == 0 and _called == _want
+    ok(_good, f"워치독 신규 상장 재호출 — {_why}", "" if _good else _out[-300:])
 # GITHUB_TOKEN 으로 부른 실행(워치독이 켠 백필 청크 · self-chain)은 끝나도 workflow_run 이 생기지 않는다(11/16 확인) — 직접 부른다
 _v2s = yaml.safe_load((_WFD / "generate_reports_v2.yml").read_text(encoding="utf-8"))["jobs"]
 _v2steps = [s for j in _v2s.values() for s in j.get("steps", [])]
