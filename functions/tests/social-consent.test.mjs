@@ -164,6 +164,7 @@ for (const pv of ["kakao", "naver"]) {
   const r = await login(pv);
   const c = consentsOf(UID[pv]) || {};
   eq(`① ${pv} 첫 가입 — 토큰 · 동의 화면으로 보내지 않음`, [!!r.token, r.needConsent, !!r.reauth], [true, false, false]);
+  eq(`① ${pv} 첫 가입 — 화면이 가입 기록을 남기도록 알림(signedUp)`, r.signedUp, true);
   eq(`① ${pv} 첫 가입 — 제공자 동의 기록(필수 셋 · 마케팅)`, [c.method, c.age14, c.terms, c.privacy, c.marketing], [pv === "kakao" ? "kakao-sync" : "naver-consent", true, true, true, true]);
   eq(`① ${pv} 첫 가입 — 연결을 끊지 않음 · 가입 이력`, [unlinkCalls().length, kinds(UID[pv])], [0, ["signup"]]);
 }
@@ -174,6 +175,7 @@ reset(); SC = { kakaoTerms: () => res(403, { msg: "not allowed" }) };
   const r = await login("kakao");
   eq("② 카카오 약관 조회 실패 — 동의를 적지 않음", consentsOf("kakao:1"), null);
   eq("② 카카오 약관 조회 실패 — 토큰 · 우리 동의 화면으로", [!!r.token, r.needConsent], [true, true]);
+  eq("② 동의 없이 만든 계정 — 가입 기록은 동의 화면이 남긴다(signedUp 아님)", r.signedUp, false);
   eq("② 카카오 약관 조회 실패 — 가입 대기 이력 · 연결 끊지 않음", [kinds("kakao:1"), unlinkCalls().length], [["signup_pending"], 0]);
 }
 reset(); SC = { naverAgree: () => res(200, { result: "success", agreementInfos: [] }) };
@@ -207,6 +209,7 @@ for (const pv of ["kakao", "naver"]) {
   /* 그 계정이 다음에 로그인하면 — 기존 회원이라 아무것도 묻지 않는다 */
   const r3 = await login(pv);
   eq(`④ ${pv} 다음 로그인 — 그대로 들어감`, [!!r3.token, r3.needConsent, !!r3.reauth], [true, false, false]);
+  eq(`④ ${pv} 다시 보낸 길에서 가입 · 다음 로그인은 가입이 아님(signedUp)`, [r2.signedUp, r3.signedUp], [true, false]);
 }
 
 /* ⑤ 다시 보낸 길인데 끊은 기록이 없다(기록 저장 실패 등) → 더 보내지 않고 우리 동의 화면 */
@@ -258,6 +261,7 @@ reset(); S.users["kakao:1"] = { uid: "kakao:1" }; S.docs["users/kakao:1"] = { co
 {
   const r = await login("kakao");
   eq("⑪ 기존 회원 · 동의 있음 — 그대로 · 끊지 않음", [!!r.token, r.needConsent, !!r.reauth, unlinkCalls().length], [true, false, false, 0]);
+  eq("⑪ 기존 회원 로그인 — 가입 기록 아님(signedUp)", r.signedUp, false);
 }
 reset(); S.users["kakao:1"] = { uid: "kakao:1" }; S.docs["users/kakao:1"] = { email: null }; SC = { kakaoTerms: kakaoTerms(Date.now() - 60 * DAY) };
 {

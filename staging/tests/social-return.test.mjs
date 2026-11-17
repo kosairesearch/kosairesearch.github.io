@@ -93,6 +93,15 @@ const browser = await chromium.launch({ executablePath: CHROME });
 async function context(viewport = { width: 390, height: 844 }) {
   const ctx = await browser.newContext({ viewport });
   ctx.authorizeHits = [];
+  /* 방문 통계 기록(KOSA.track)을 sessionStorage 의 __ev 에 남긴다 — 페이지가 넘어가도 같은 탭이면 남는다.
+     측정 코드(analytics.js)가 KOSA 를 다시 놓아도 받아 둔 뒤 기록하는 쪽을 내준다. */
+  await ctx.addInitScript(() => {
+    let real = null;
+    const rec = (n, p) => { try { const l = JSON.parse(sessionStorage.getItem("__ev") || "[]"); l.push([n, p || {}]); sessionStorage.setItem("__ev", JSON.stringify(l)); } catch (e) {} };
+    Object.defineProperty(window, "KOSA", { configurable: true,
+      get() { return { on: () => true, track: (n, p) => { rec(n, p); try { real && real.track(n, p); } catch (e) {} } }; },
+      set(v) { real = v; } });
+  });
   await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, (route) => {
     const url = route.request().url();
     const m = url.match(/gstatic\.com\/firebasejs\/[\d.]+\/(firebase-[a-z-]+)\.js/);
@@ -162,6 +171,26 @@ for (const [site, base] of [["실사이트", ""], ["스테이징", "staging/"]])
       await p.goto(`${HOST}${base}${page}?code=c1&state=n1`);
       const ok = await p.waitForURL(/Consent\.html\?next=Watchlist\.html$/, { timeout: 15000 }).then(() => true).catch(() => false);
       t(ok, `③ needConsent → 동의 화면으로 — ${p.url().replace(HOST, "/")}`);
+      const ev = await p.evaluate(() => JSON.parse(sessionStorage.getItem("__ev") || "[]")).catch(() => []);
+      t(!ev.some((e) => e[0] === "sign_up"), `③ 동의 화면으로 가는 계정은 여기서 가입 기록을 남기지 않는다(그 화면이 남긴다) — ${JSON.stringify(ev)}`);
+      await ctx.close();
+    }
+    /* ③-2 서버가 동의까지 갖춘 새 계정을 만듦(signedUp) → 가입 기록(sign_up) 한 번 · 그냥 로그인은 남기지 않음(2026-11-17) */
+    for (const [label, reply, want] of [["새 계정", { token: "tok", needConsent: false, signedUp: true }, 1],
+                                         ["기존 회원 로그인", { token: "tok", needConsent: false, signedUp: false }, 0],
+                                         ["옛 서버(signedUp 없음)", { token: "tok", needConsent: false }, 0]]) {
+      const ctx = await context(); const p = await ctx.newPage();
+      await prime(p, base, page, { replies: [reply] });
+      await p.goto(`${HOST}${base}${page}?code=c1&state=n1`);
+      const done = await p.waitForURL(/Watchlist\.html$/, { timeout: 15000 }).then(() => true).catch(() => false);
+      let ev = [];
+      for (let i = 0; i < 20; i++) {
+        try { ev = await p.evaluate(() => JSON.parse(sessionStorage.getItem("__ev") || "[]")); break; }
+        catch (e) { await p.waitForLoadState("load").catch(() => {}); await p.waitForTimeout(150); }
+      }
+      const su = ev.filter((e) => e[0] === "sign_up");
+      t(done && su.length === want && (!want || su[0][1].method === "naver"),
+        `③-2 ${label} — 가입 기록 ${su.length}건(기대 ${want}) ${JSON.stringify(su)} · ${p.url().replace(HOST, "/")}`);
       await ctx.close();
     }
     /* ④ 제공자 화면에서 취소 */
