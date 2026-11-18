@@ -1,0 +1,22 @@
+{
+  "batch_id": "msgbatch_01J1CB6j1gRKkQLC46VshYp8",
+  "created": "2026-11-19 03:07",
+  "model": "claude-haiku-5-5",
+  "dataDate": "20261118",
+  "count": 1,
+  "tickers": [
+    "271160"
+  ],
+  "collected": "2026-11-19 03:07",
+  "usage": {
+    "claude-haiku-5-5": {
+      "n": 1,
+      "in": 6202,
+      "cache_w": 34516,
+      "cache_r": 2871,
+      "out": 20429,
+      "search": 2,
+      "usd": 0.028
+    }
+  }
+}
