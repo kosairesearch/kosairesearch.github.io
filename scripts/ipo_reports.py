@@ -163,16 +163,32 @@ class Kind:
         self.s = session or requests.Session()
         self.s.headers.update(UA)
 
+    # KIND 가 러너에 따라 403 을 돌려줄 때가 있다(2026-11-18 — 같은 주소가 네 번 받고 다섯 번째 실행에서 첫 요청부터 403). 잠시 쉬었다
+    # 두 번 더 묻고, 그래도 막히면 그 실행은 아무것도 주문하지 않는다 — 이 작업은 하루 여러 번 불리므로(브리핑 · 예약) 다음 실행이 다시 본다.
+    RETRY_WAITS = (0, 15, 45)
+
+    def _req(self, meth, url, **kw):
+        last = None
+        for wait in self.RETRY_WAITS:
+            if wait:
+                time.sleep(wait)
+            try:
+                r = self.s.request(meth, url, timeout=30, **kw)
+                if r.status_code in (403, 429) or r.status_code >= 500:
+                    last = RuntimeError(f"HTTP {r.status_code}")
+                    continue
+                r.raise_for_status()
+                return _decode(r.content)
+            except Exception as e:                           # noqa: BLE001 — 통신 오류도 같은 방식으로 다시 묻는다
+                last = e
+        raise last
+
     def _get(self, path, **params):
-        r = self.s.get(KIND + path, params=params, timeout=30)
-        r.raise_for_status()
-        return _decode(r.content)
+        return self._req("GET", KIND + path, params=params)
 
     def _post(self, path, data):
         url = KIND + path
-        r = self.s.post(url, data=data, headers={"Referer": url, "X-Requested-With": "XMLHttpRequest"}, timeout=30)
-        r.raise_for_status()
-        return _decode(r.content)
+        return self._req("POST", url, data=data, headers={"Referer": url, "X-Requested-With": "XMLHttpRequest"})
 
     def notices(self, days=LOOKBACK_DAYS, today=None):
         today = today or kst_now().date()
