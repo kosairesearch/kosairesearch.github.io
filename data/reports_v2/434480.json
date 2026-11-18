@@ -1,220 +1,210 @@
 {
  "title": {
-  "ko": "이익 턴어라운드 속 실적 변동성 공존",
-  "en": "Profit Turnaround Amid Earnings Volatility"
+  "ko": "웹방화벽 1위 모니터랩, 클라우드 전환과 적자 사이",
+  "en": "Monitorapp: Cloud Shift Tested by Renewed Losses"
  },
  "lead": {
-  "ko": "모니터랩은 2025년 연간 영업이익 흑자 전환에 성공했지만 2026년 1분기 재차 적자로 돌아선 뒤 2분기 회복하는 등 분기별 변동성이 뚜렷하다.",
-  "en": "MonitorApp swung to full-year operating profit in 2025, but posted another quarterly loss in Q1 2026 before recovering in Q2, underscoring pronounced quarter-to-quarter earnings volatility."
+  "ko": "모니터랩은 웹방화벽 중심 어플라이언스 매출을 클라우드 구독 매출로 옮기는 중이다. 2025년 연간 흑자 전환 이후 2026년 3분기에 영업손실로 돌아서, 수익성 회복 여부가 다음 확인 과제다.",
+  "en": "Monitorapp is moving revenue from web-firewall appliances toward cloud subscriptions. After returning to an annual operating profit in 2025, it posted an operating loss again in 3Q 2026, so margin recovery is the next test."
  },
  "keypoints": [
   {
-   "ko": "2025년 매출 191.7억원, 영업이익 9.4억원으로 전년 영업손실에서 흑자 전환",
-   "en": "2025 revenue reached KRW 19.17bn with operating profit of KRW 943mn, turning positive from the prior year's operating loss"
+   "ko": "2025년 매출은 192억원으로 전년 대비 28.6% 증가했고, 영업이익 9.4억원으로 2024년 영업손실에서 흑자로 돌아섰다.",
+   "en": "Revenue reached KRW 19.2 billion in 2025, up 28.6% year on year, and operating profit of KRW 943 million reversed the 2024 operating loss."
   },
   {
-   "ko": "2026년 1분기 영업손실 7.1억원으로 재차 적자, 2분기 영업이익 4.3억원·순이익 9.6억원으로 회복",
-   "en": "Q1 2026 swung back to an operating loss of KRW 710mn before Q2 recovered to KRW 427mn operating profit and KRW 956mn net income attributable to owners"
+   "ko": "2026년 3분기 매출은 45.4억원으로 전년 동기 대비 11.1% 감소했고, 영업손실 5,179만원으로 적자로 전환했다. 7~9월 매출은 45억원으로 전년 동기보다 11.1% 감소했다.",
+   "en": "3Q 2026 revenue was KRW 4.54 billion, down 11.1% year on year, and the company posted an operating loss of KRW 51.79 million."
   },
   {
-   "ko": "클라우드 구독형 보안 플랫폼 아이온클라우드(AIONCLOUD) 매출 비중 확대가 수익 구조 전환의 핵심 축",
-   "en": "Expanding revenue share from the AIONCLOUD subscription security platform is central to the company's shift in earnings structure"
+   "ko": "클라우드 보안 매출 비중은 2024년 30.91%로, 2020년 9.4%에서 꾸준히 올라왔다. 2024년 연결 기준 매출 구성에서 클라우드 보안 매출이 46억원(30.91%)이다.",
+   "en": "The cloud security share of revenue was 30.91% in 2024, up from 9.4% in 2020."
   },
   {
-   "ko": "엔드포인트 보안 자회사 쏘마를 2025년 7월 인수 후 2026년 7월 흡수합병 완료, 통합 보안 포트폴리오 구축",
-   "en": "Endpoint security subsidiary Soma was acquired in July 2025 and fully merged in July 2026, completing an integrated security portfolio"
+   "ko": "2026년 반기보고서 기준 상반기 영업손실은 약 2.8억원이며, 2분기 흑자가 1분기 적자를 일부 상쇄했다. 2026년 반기보고서 기준 상반기 연결 매출은 약 92억 7,000만원, 영업손실은 약 2억 8,000만원이다.",
+   "en": "Based on the 2026 half-year report, first-half operating loss was about KRW 280 million, with the 2Q profit offsetting part of the 1Q loss."
   },
   {
-   "ko": "정부의 제로트러스트·국가망보안체계 정책 확산이 산업 전반의 수요 기반으로 거론됨",
-   "en": "Government-driven zero trust and national network security policy expansion is cited as a broad industry demand driver"
+   "ko": "2026년 들어 AI 바우처, 데이터바우처, 중소기업 클라우드 사업의 공급기업으로 잇따라 선정됐다. 모니터랩은 2024년부터 3년 연속 공급기업으로 참여한다.",
+   "en": "In 2026 the company was selected as a supplier for several government programs, including the AI voucher, data voucher and SME cloud programs."
   }
  ],
  "business": {
-  "ko": "모니터랩은 2005년 설립된 B2B 사이버보안 전문기업으로, 초기에는 웹방화벽(WAF) 제품 AIWAF를 중심으로 온프레미스 어플라이언스 사업을 영위했다. 2016년 클라우드 기반 구독형 보안 플랫폼 아이온클라우드(AIONCLOUD)를 출시하며 서비스형 보안(SECaaS) 기업으로 전환을 시작했고, 현재는 WAAP(웹·API 보호), WSPC(웹사이트 보안 상태 점검), SSE(보안 서비스 엣지), ZTNA(제로트러스트 네트워크 접속) 4대 서비스를 핵심 축으로 운영한다. 회사 측은 SSE 기반 네트워크 보안 풀스택(SWG·CASB·RBI 등)을 클라우드 엣지 형태로 제공하는 국내 유일 기업이라고 밝히고 있다. 2025년 7월에는 위협 헌팅 기반 엔드포인트 보안(EDR) 전문기업 쏘마를 인수해 네트워크 중심 보안에서 엔드포인트까지 아우르는 통합 포트폴리오를 구축했으며, 2026년 7월 무증자 흡수합병 방식으로 쏘마를 완전히 편입했다. 고객 기반은 기업·공공기관 대상 B2B 시장이며, 일본·미국 현지법인과 인도네시아·튀르키예·일본 파트너사 계약을 통해 해외 진출을 확대해왔다. 2023년 5월 기술특례 방식으로 코스닥에 상장했으며, 최대주주는 이광후 대표이사 측이다. 국내 경쟁구도에서는 하드웨어 기반 신뢰도를 축적한 펜타시큐리티(WAPPLES), 파이오링크(클라우드브릭 WAF+) 등이 클라우드 영역까지 사업을 확장하며 경쟁하고 있다.",
-  "en": "MonitorApp is a B2B cybersecurity company founded in 2005 that initially built its business around the AIWAF web application firewall product line for on-premises appliances. In 2016, the company launched the AIONCLOUD subscription-based cloud security platform, beginning its transition into a Security-as-a-Service (SECaaS) provider, and now operates around four core services: WAAP (web and API protection), WSPC (website security posture check), SSE (Security Service Edge), and ZTNA (Zero Trust Network Access). The company describes itself as the only domestic firm providing a full network security stack (SWG, CASB, RBI) on a cloud-edge basis under an SSE architecture. In July 2025, MonitorApp acquired Soma, a threat-hunting-based endpoint detection and response (EDR) specialist, expanding its portfolio from network-centric security to endpoint coverage, and fully absorbed Soma through a no-new-shares merger completed in July 2026. Its customer base spans corporate and public-sector B2B clients, and it has expanded overseas through local subsidiaries in Japan and the United States along with partnership agreements in Indonesia, Turkey, and Japan. The company listed on KOSDAQ in May 2023 via the technology special listing track, with CEO Lee Gwang-hoo as the controlling shareholder. Domestically, competitors such as Penta Security (WAPPLES) and Pionlink (Cloudbric WAF+), which built credibility in hardware-based solutions, are also expanding into cloud security."
+  "ko": "모니터랩은 2005년 설립된 B2B 보안 기업으로, 웹 애플리케이션 방화벽(WAF) 중심의 어플라이언스 제품과 이를 구독형 클라우드로 제공하는 서비스형 보안(SECaaS)을 함께 운영한다. 모니터랩은 국내 웹방화벽 시장에서 절대적인 1위를 유지하고 있다고 밝혔다. 이는 회사 측 설명이며 제3자가 검증한 시장점유율은 아니다. 2024년 연결 매출 149억원의 구성은 제품 판매 46.31%, 클라우드 보안 30.91%, 유지보수 13.42%, 매니지드서비스 8.64%, 기타 0.72%였다. 부문 비중은 2024년 기준 수치로 읽어야 한다. 2025년 5월 인터뷰에서 회사는 전체 매출의 80~90%가 어플라이언스 기반 보안 솔루션에서 나온다고 설명했다. 클라우드 보안 사업 매출 비중은 2020년 9.4%에서 2021년 11.2%, 2022년 15.9%로 성장했다. 2024년 1분기 기준으로는 32.6%까지 높아졌다는 것이 미래에셋증권 리서치의 집계다. 주요 고객으로는 현대자동차, 현대카드, LG전자, KT 등 국내 대기업이 거론된다. 제품 라인은 클라우드 기반 구독형 보안 플랫폼 아이온클라우드의 WAAP, WSPC, SSE, ZTNA 4개 서비스로 확장되고 있다. 경쟁 측면에서는 안랩 등 많은 보안기업들이 웹방화벽 시장에 뛰어들었지만 결국 철수했다는 설명이 있다. 해외 매출은 수출 비중이 2021년 기준 4.5%에서 1Q24(2024년 1분기) 7%까지 증가했고, 미국·일본 법인을 각각 현지에 보유하고 있다.",
+  "en": "Founded in 2005, Monitorapp is a B2B security company that sells web application firewall (WAF)-centred appliances alongside SECaaS (security as a service) delivered by cloud subscription. The company says it remains the clear leader in the domestic web firewall market, a claim made by management and not independently verified. Based on 2024 consolidated revenue of KRW 14.9 billion, product sales made up 46.31%, cloud security 30.91%, maintenance 13.42%, managed services 8.64% and other revenue 0.72%; these splits are 2024 figures. In a May 2025 interview, the company said appliance-based solutions generated 80 to 90% of total revenue. The cloud security share rose from 9.4% in 2020 to 11.2% in 2021 and 15.9% in 2022, and reached 32.6% in the first quarter of 2024 according to Mirae Asset Securities research. Customers cited include Hyundai Motor, Hyundai Card, LG Electronics and KT. The product line now includes four AIONCLOUD services: WAAP, WSPC, SSE and ZTNA. On competition, several security firms entered the web firewall market and later exited, and management stresses its long fight against foreign vendors. Exports rose from 4.5% of revenue in 2021 to 7% in the first quarter of 2024, and the company has subsidiaries in the United States and Japan."
  },
  "earnings": {
-  "ko": "2025년 연결 매출은 191.7억원으로 2024년 149.1억원 대비 크게 늘었고, 영업이익은 9.4억원을 기록하며 2024년 -6.4억원의 영업손실에서 흑자로 전환했다. 다만 지배주주 순이익은 6.7억원으로 2024년 20.8억원 대비 크게 줄었는데, 이는 영업 흑자 전환에도 불구하고 순이익 측면에서는 오히려 후퇴한 모습으로, 비영업적 요인의 영향을 배제하기 어렵다. 2023년에는 매출 141.9억원에 영업이익이 0.07억원 수준에 불과했고 순손실 13.7억원을 기록해 상장 초기 수익성 확보에 어려움을 겪었던 이력이 확인된다. 분기별로 보면 2025년 2분기 매출 38.0억원, 영업손실 1.2억원, 순손실 2.4억원에서 3분기 매출 51.1억원·영업이익 4.4억원·순이익 3.3억원, 4분기 매출 68.2억원·영업이익 10.9억원·순이익 8.7억원으로 하반기로 갈수록 실적이 개선되는 흐름을 보였다. 그러나 2026년 1분기 매출은 36.4억원으로 줄고 영업손실 7.1억원, 순손실 4.9억원을 기록하며 다시 적자로 돌아섰고, 2분기 매출 56.3억원·영업이익 4.3억원과 함께 순이익은 9.6억원으로 영업이익 대비 큰 폭으로 개선되는 모습을 보였다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 지배주주 순이익 합계는 16.7억원 수준으로, 분기 간 편차가 큰 실적 패턴이 이어지고 있다. 이러한 흐름은 공공·기업 프로젝트성 매출 인식 시점과 구독형 클라우드 매출 비중 확대가 혼재되며 나타나는 계절적 변동성으로 해석할 수 있다.",
-  "en": "Consolidated revenue in 2025 reached KRW 19.17bn, up sharply from KRW 14.91bn in 2024, while operating profit came in at KRW 943mn, reversing the operating loss of KRW 644mn recorded in 2024. However, net income attributable to owners fell to KRW 665mn from KRW 2.08bn in 2024, a notable decline despite the operating turnaround, suggesting the influence of non-operating factors cannot be ruled out. In 2023, revenue was KRW 14.19bn with an operating profit of only about KRW 7.2mn and a net loss of KRW 1.37bn, reflecting the profitability challenges the company faced shortly after listing. On a quarterly basis, revenue of KRW 3.80bn in Q2 2025 with an operating loss of KRW 121mn and a net loss of KRW 236mn improved to KRW 5.11bn revenue, KRW 442mn operating profit, and KRW 330mn net income in Q3, then to KRW 6.82bn revenue, KRW 1.09bn operating profit, and KRW 870mn net income in Q4, showing progressive improvement through the second half. That trend reversed in Q1 2026, when revenue fell to KRW 3.64bn alongside an operating loss of KRW 710mn and a net loss of KRW 490mn, before Q2 2026 revenue rebounded to KRW 5.63bn with operating profit of KRW 427mn and net income of KRW 956mn, a figure notably larger than the operating profit itself. Over the trailing four quarters (Q3 2025 through Q2 2026), net income attributable to owners totaled roughly KRW 1.67bn, illustrating a pattern of significant quarter-to-quarter dispersion. This pattern can be read as seasonal volatility arising from the mix of project-based public and corporate revenue recognition timing alongside the growing share of subscription-based cloud revenue."
+  "ko": "공시 기준 연간 매출은 2022년 141억원에서 2023년 142억원(전년 대비 0.4% 증가), 2024년 149억원(전년 대비 5.1% 증가), 2025년 192억원(전년 대비 28.6% 증가)으로 이어졌다. 2023년부터 2025년까지 3년 연속 증가했고, 2022~2025년 중 가장 큰 해는 2025년이다. 같은 기간 영업이익은 2022년 11.4억원, 2023년 720만원(전년 대비 99.4% 감소), 2024년 영업손실 6.4억원(전년 대비 적자 전환), 2025년 영업이익 9.4억원(전년 대비 흑자 전환)으로 움직였다. 영업이익률은 8.0%, 0.1%, -4.3%, 4.9%로 매출 성장과 마진 개선이 같은 속도로 움직이지 않았다. 2023년 매출이 계획에 못 미친 이유로 일부 큰 프로젝트가 2024년으로 이월되거나 수주에 실패한 점이 꼽혔고, 상장 이후 신규 인력 충원과 스톡옵션, 상장 관련 비용이 적자를 키웠다. 2024년 적자에 대해서는 투자를 강화한 것이 손실의 이유라고 대표가 설명했다. 지배주주 순이익은 2022년 7.2억원, 2023년 순손실 13.7억원, 2024년 20.8억원(전년 대비 흑자 전환), 2025년 6.7억원(전년 대비 68.0% 감소)이다. 2025년 당기순이익(비지배지분 포함)은 6.7억원으로 지배주주 순이익과 비슷하지만 같은 값은 아니다. 2025년 영업활동 현금흐름은 8.6억원으로 2024년 27.5억원보다 줄었다. 2023년과 2024년에는 클라우드 매출의 증가분만큼 어플라이언스 매출이 줄어 전체 매출이 제자리걸음했다는 분석이 나왔다. 2026년 분기 흐름은 변동이 컸다. 1분기 매출 36.4억원에 영업손실 7.1억원, 2분기 매출 56.3억원에 영업이익 4.3억원, 3분기 매출 45.4억원에 영업손실 5,179만원이다. 최근 4개 분기 지배주주 순이익 합계는 10억원이다. 미래에셋증권은 2026년 1분기 종업원 급여 지출이 22억원으로 전년 동기 대비 14% 급증했다고 분석했다. 같은 분석은 이를 전체 매출액의 61%에 달하는 수치로 보고 인건비 부담을 수익성 악화의 핵심 원인으로 꼽았다. 2026년 반기보고서 기준 상반기 매출은 약 92.7억원, 영업손실은 약 2.8억원이다.",
+  "en": "On a disclosed basis, annual revenue went from KRW 14.1 billion in 2022 to KRW 14.2 billion in 2023 (up 0.4%), KRW 14.9 billion in 2024 (up 5.1%) and KRW 19.2 billion in 2025 (up 28.6%). Revenue rose for three consecutive years from 2023 through 2025, and 2025 was the largest year of 2022 to 2025. Operating profit moved from KRW 1.14 billion in 2022 to KRW 7.2 million in 2023 (down 99.4%), an operating loss of KRW 644 million in 2024 (a swing into loss), and operating profit of KRW 943 million in 2025 (a swing into profit). Operating margin was 8.0%, 0.1%, -4.3% and 4.9% across the same years, so sales growth and margin improvement did not move together. Management attributed the 2023 shortfall to large projects slipping into the following year or failing to win orders, plus new hires, stock options and listing costs after the IPO. The 2024 loss was tied by the CEO to heavier investment. Earnings attributable to controlling shareholders were KRW 719 million in 2022, a loss of KRW 1.37 billion in 2023, KRW 2.08 billion in 2024 and KRW 665 million in 2025 (down 68.0%). Net income including non-controlling interests was KRW 669 million in 2025, close to but not the same as the controlling-shareholder figure. Operating cash flow fell to KRW 861 million in 2025 from KRW 2.75 billion in 2024. Analysts at Mirae Asset Securities noted that from 2023 to 2024 appliance revenue declined by about the amount that cloud revenue grew. Quarterly results were uneven in 2026: 1Q revenue of KRW 3.64 billion with an operating loss of KRW 710 million, 2Q revenue of KRW 5.63 billion with operating profit of KRW 427 million, and 3Q revenue of KRW 4.54 billion with an operating loss of KRW 51.79 million. Controlling-shareholder net income over the latest four quarters totaled KRW 1 billion. In June 2026 Mirae Asset Securities reported that 1Q 2026 employee salary spending rose 14% year on year to KRW 2.2 billion, equal to 61% of revenue, and identified labor cost as the main drag on margins. In the 2026 half-year report, first-half revenue was about KRW 9.27 billion and the operating loss about KRW 280 million."
  },
  "industry": {
-  "ko": "국내 사이버보안 산업은 클라우드 전환 가속화와 하이브리드 근무 확산에 따라 전통적 온프레미스 장비 중심 보안에서 클라우드 구독형 보안(SECaaS)으로 수요축이 이동하는 국면에 있다. 정부가 제로트러스트 아키텍처와 국가망보안체계 개편을 추진하면서 SSE(Security Service Edge) 및 제로트러스트 네트워크 접속(ZTNA) 분야에 대한 공공·민간 수요 확대가 업계에서 거론되고 있다. 모니터랩은 정보통신산업진흥원 주관 '중소기업 클라우드 서비스 보급 확산 사업' 공급기업으로 2026년에도 선정돼 아이온클라우드의 WAAP·WSPC·SSE·ZTNA 4종 서비스를 중소기업에 공급하는 등 정책 수혜 채널을 보유하고 있다. 경쟁구도에서는 하드웨어 기반의 오랜 신뢰도를 가진 펜타시큐리티(WAPPLES), 파이오링크(클라우드브릭 WAF+) 등이 클라우드 영역으로 사업을 확장하고 있어 국내 웹방화벽·SSE 시장에서 다자간 경쟁이 이어지고 있다. 생성형 AI 확산에 따라 AI 에이전트·MCP 트래픽 통제 등 새로운 보안 수요가 부상하고 있으며, 모니터랩은 GenAI Security 솔루션 고도화로 이 흐름에 대응하고 있다고 밝혔다. 해외에서는 일본·중동·동남아 등 신흥시장에서 파트너십을 확대하며 수출 비중을 높여가는 단계로, 글로벌 대형 보안기업들의 아시아 시장 진출 확대가 경쟁 강도를 높이는 요인으로 지목된다.",
-  "en": "The domestic cybersecurity industry is in a phase where demand is shifting from traditional on-premises appliance-based security toward cloud-based subscription security (SECaaS), driven by accelerating cloud migration and hybrid work adoption. As the government pushes zero trust architecture and reform of the national network security framework, industry commentary points to expanding public- and private-sector demand for Security Service Edge (SSE) and Zero Trust Network Access (ZTNA) solutions. MonitorApp was again selected in 2026 as a supplier under the Korea IT Industry Promotion Agency's 'SME Cloud Service Adoption Expansion Program,' providing its AIONCLOUD WAAP, WSPC, SSE, and ZTNA services to small and medium-sized enterprises, giving it a policy-linked distribution channel. On the competitive front, Penta Security (WAPPLES) and Pionlink (Cloudbric WAF+), both with long-standing hardware-based credibility, are extending into the cloud domain, keeping the domestic web application firewall and SSE market multi-player and competitive. The spread of generative AI is creating new security needs such as controlling AI agent and MCP traffic, and the company has stated it is enhancing its GenAI Security offering to address this trend. Overseas, the company is in a phase of expanding partnerships in emerging markets such as Japan, the Middle East, and Southeast Asia to raise its export share, while the expanding presence of large global security vendors in Asia is cited as a factor intensifying competition."
+  "ko": "웹방화벽 시장은 진입과 철수가 반복되는 구조다. 현재는 웹방화벽 시장에서 회사와 F기업 정도만 살아남았다고 회사는 설명한다. 산업의 중심축은 클라우드와 제로트러스트로 옮겨 가고 있다. 생성형 AI 기술 도입으로 국내 기업들의 클라우드 인프라 전환이 가속화되면서 증권가는 클라우드 기반 보안산업 확대를 전망했다. 제로트러스트 분야에서는 한국인터넷진흥원(KISA)이 주관하는 제로트러스트 도입 시범사업의 주관사로 선정돼 SSE 플랫폼 아이온클라우드를 기반으로 제로트러스트 아키텍처를 실환경에 적용했다. 이 구조는 글로벌 표준의 제로트러스트 아키텍처 가이드라인(NIST 800-207)에 부합하는 것으로 소개됐다. 생성형 AI 보안도 수요 축이다. 회사는 사용자가 생성형 AI에 입력하는 대화 맥락을 실시간으로 파악해 사전에 설정된 30개 주제를 기준으로 개인정보 침해, 소스코드 유출, 프롬프트 공격 여부를 가려낸다는 GenAI Security를 내세운다. 외산 벤더와의 경쟁에 대해서는 국내 보안 업체들이 외산 벤더의 공세에 맞서기 위해서는 부족한 핵심 기술을 서로 보완하는 연합군 모델이 필수적이라는 입장을 밝혔다. 증권사 측 시각은 엇갈린다. 미래에셋증권 김수진 연구원은 2024년 보고서에서 경기 둔화와 생성형 AI 솔루션 도입 지연이 관찰되는 상황에서 클라우드 기반 보안 솔루션으로 실적 회복이 가능한지 지켜봐야 한다고 분석했다. 한편 클라우드 매출은 어플라이언스 매출 대비 고정비가 적어 수익성 개선에도 도움이 될 것으로 예상된다는 분석도 있다. 업종 내 위치를 보면 영업이익률은 소프트웨어 업종 평균을 웃도는 편이고, 시가총액과 매출 규모는 업종 평균을 밑도는 편이다.",
+  "en": "The web firewall market has seen repeated entry and exit. The company says only it and one other vendor, referred to as F, have survived in that market. The industry's centre of gravity is shifting toward cloud and zero trust. Securities research has argued that generative AI adoption is accelerating cloud infrastructure migration among Korean enterprises and expanding the cloud security market. In zero trust, the company was selected as the lead operator of a Korea Internet and Security Agency (KISA) zero trust adoption pilot, applying an architecture built on its AIONCLOUD SSE platform in a live environment. The design was presented as aligned with the NIST 800-207 zero trust guideline. Generative AI security is another demand driver: the company's GenAI Security product analyses conversation context in real time against 30 predefined topics, covering personal data leaks, source code leaks and prompt attacks. On foreign competition, the company's CEO argued that domestic vendors need a coalition model that combines complementary technologies. Analyst views are mixed. Mirae Asset Securities said in a 2024 report that slowing economic growth and delayed adoption of generative AI solutions were visible, and that the ability of cloud-based security to restore earnings still needed to be watched. Another analysis holds that cloud revenue carries lower fixed costs than appliance revenue, which could help margins. Within the software sector, operating margin is above the industry average, while market capitalisation and revenue scale are below it."
  },
  "outlook": {
-  "ko": "모니터랩은 클라우드 구독형 서비스(SECaaS) 매출 비중 확대를 통해 예측 가능한 수익 구조를 구축하는 전략을 지속하고 있으며, 이는 온프레미스 제품 판매 대비 안정적인 현금흐름 확보에 기여할 것으로 회사 측은 기대하고 있다. 2026년 4월에는 과학기술정보통신부·정보통신산업진흥원 주관 '중소기업 클라우드 서비스 보급 확산 사업' 공급기업으로 선정돼 아이온클라우드 4종 서비스를 공급하는 정책 연계 채널을 확보했다. 2025년 7월 인수한 엔드포인트 보안 자회사 쏘마는 2026년 7월 흡수합병이 완료돼, 회사는 SSE 기반 네트워크 보안과 EDR 기반 엔드포인트 보안을 단일 플랫폼으로 통합 제공하는 방향으로 포트폴리오를 재편했다. 회사는 합병을 통해 인적·물적 자원 결합에 따른 경영 효율성 제고와 재무 건전성 개선을 기대한다고 밝혔으나, 합병 이후 추가적인 구조개편 계획은 아직 확정되지 않았다고 설명했다. 생성형 AI 보안 수요에 대응해 GenAI Security 솔루션을 고도화하고 있으며, AI 에이전트의 MCP 트래픽 통제 등 신규 보안 영역으로 사업을 확장하려는 방향성을 제시하고 있다. 해외에서는 일본·중동·동남아 파트너십을 기반으로 수출 비중 확대를 지속 추진하고 있으나, 구체적인 해외 매출 목표치나 신규 대형 수주 공시는 확인되지 않아 진행 상황을 지속적으로 확인할 필요가 있다.",
-  "en": "MonitorApp continues to pursue a strategy of expanding its share of subscription-based cloud security (SECaaS) revenue to build a more predictable earnings structure, which the company expects to support more stable cash flow relative to on-premises product sales. In April 2026, it was selected as a supplier under the Ministry of Science and ICT and Korea IT Industry Promotion Agency's SME cloud service adoption program, securing a policy-linked channel to supply its four AIONCLOUD services. The endpoint security subsidiary Soma, acquired in July 2025, was fully absorbed through a merger completed in July 2026, reshaping the company's portfolio toward integrating SSE-based network security and EDR-based endpoint security on a single platform. The company stated it expects the merger to improve management efficiency and financial soundness through combined human and physical resources, though it noted no further restructuring plans have been finalized following the merger. In response to generative AI security demand, the company is enhancing its GenAI Security solution and has signaled intent to expand into new security domains such as controlling AI agent MCP traffic. Overseas, the company continues to pursue export growth based on partnerships in Japan, the Middle East, and Southeast Asia, though no specific overseas revenue targets or major new order disclosures have been confirmed, warranting continued monitoring of progress."
+  "ko": "회사는 쏘마 인수로 네트워크 보안에 국한됐던 사업 영역을 엔드포인트까지 넓히고 있다. 인수 대상은 2016년 설립된 엔포인트 관리 및 대응(EDR) 기업 쏘마다. 대표는 2026년 상반기 내에 쏘마의 EDR을 모니터랩의 플랫폼(아이온 클라우드)에 녹여내 시장에 공급하는 것을 최우선 목표로 제시했다. 다만 통합 효과를 떼어 낸 수치는 아직 공시되지 않았다. 회사는 7월 21일 합병 종료보고서를 제출했다. 제품 측면에서는 AI 기반 위협 인텔리전스 플랫폼 'AILabs'의 신버전 v6.0을 출시했다고 2026년 11월 4일 밝혔다. 위협 간 연관 관계를 시각화하는 피벗 서치와 대화형 검색 기능 AI 봇을 새로 탑재했다. 금융권에서는 웹과 API 트래픽을 보호하는 WAAP에 금융기관으로 들어오는 문서 파일의 악성 코드를 제거하는 CDR 기술을 결합해 입체적인 방어 체계를 구축할 수 있다는 점을 강조했다. 이는 2026년 11월 12일 열린 FISCON 2026에서 발표된 내용이다. 클라우드 플랫폼 쪽에서는 중소기업 클라우드 서비스 이용료의 최대 75%를 지원받을 수 있는 수요기업 사업에 아이온클라우드 4개 서비스가 공급된다. 글로벌 확장에서는 한국, 일본, 싱가포르 등 글로벌 핵심 거점 8곳에 직접 피지컬 팝(PoP)을 구축했다고 대표가 밝혔다. 대표는 설치 과정이 없는 완전한 구독형 SaaS 플랫폼이 향후 글로벌 비즈니스 진출의 무기이자 장기적 성장 동력이라고 말했다. 조직 측면에서는 2024년 말 5명이었던 미등기임원이 2025년 9월말 기준 1명으로 줄었고, 그 자리를 새 인물로 채웠지만 기사 시점인 2026년 1월 기준 분기보고서에는 반영되지 않은 상태였다. 쏘마 EDR 통합, 글로벌 PoP 활용, 구독형 매출 비중이 2026년 이후 분기 매출에 어떻게 나타나는지가 핵심 관찰 지점이다.",
+  "en": "The company has extended its business from network security into endpoint security through its acquisition of Somma, an EDR company founded in 2016. The CEO set the top priority as bringing Somma's EDR into the AIONCLOUD platform and supplying it to the market in the first half of 2026. Figures isolating the effect of that integration have not yet been disclosed. The company filed its merger completion report on July 21, 2026. On the product side, it launched version 6.0 of its AILabs threat intelligence platform on November 4, 2026, adding Pivot Search and an AI Bot for conversational queries. At FISCON 2026, held on November 12, 2026, the company showed how its WAAP can be combined with CDR file sanitisation to address API attacks and malicious documents in financial institutions. In the SME cloud programme, four AIONCLOUD services are on the supplier list, and eligible SMEs can receive up to 75% of cloud subscription fees. For global expansion, the CEO said the company has built physical points of presence in eight core locations, including Korea, Japan and Singapore, and called its fully subscription-based SaaS platform a long-term growth engine. On governance, the number of unregistered executives fell from five at the end of 2024 to one at the end of September 2025, and as of January 2026 the new appointees had not yet been reflected in quarterly filings. Whether the Somma integration, the global points of presence and rising subscription share show up in quarterly revenue from 2026 onward is the key thing to watch."
  },
  "valuation_comment": {
-  "ko": "주가순자산비율은 순자산 대비 소폭의 할인 또는 소폭의 프리미엄 사이에서 형성되는 구간에 있어, 순자산 가치와 큰 괴리 없이 거래되는 편이다. 주가수익비율은 2025년 영업이익이 적자에서 흑자로 전환된 최근 실적 흐름을 반영하는 한편, 분기별 순이익 변동성이 커 특정 결산 시점의 순이익을 기준으로 한 배수가 분기에 따라 크게 출렁일 수 있는 구조다. 회사는 최근 결산연도 기준 배당을 지급하지 않고 있어, 배당을 통한 주주환원보다는 재투자와 사업 확장에 자금이 집중되는 모습이다. 과거 코스닥 상장 이후 실적 부진기와 최근 흑자 전환기를 오가는 과정에서 밸류에이션 배수 자체도 등락을 반복해온 만큼, 특정 시점의 배수를 절대적 기준으로 해석하기보다는 분기별 실적 흐름과 함께 살펴볼 필요가 있다.",
-  "en": "The price-to-book ratio sits in a range close to net asset value, trading without a wide gap from book value on either a discount or premium basis. The price-to-earnings ratio reflects the recent shift from an operating loss to an operating profit in 2025, but given the wide swings in quarterly net income, multiples calculated off a given settlement period's earnings can fluctuate considerably from quarter to quarter. The company has not paid dividends in its most recent fiscal years, suggesting capital is being directed toward reinvestment and business expansion rather than shareholder distributions. Since valuation multiples have themselves fluctuated as the company moved between a period of weak post-listing performance and a more recent profit-turnaround phase, a multiple observed at any single point in time is best read alongside the underlying quarterly earnings trend rather than as a standalone benchmark."
+  "ko": "주가순자산비율은 1배를 밑도는 구간이어서, 시가총액이 장부상 지배주주 지분(2025년 말 383억원)보다 낮은 상태다. 주가순자산비율만으로 자산 가치와 주가의 관계를 단정하기는 어렵고, 자기자본 규모는 자본총계 385억원 가운데 지배주주 지분이 대부분이다. 주가수익비율은 이익 규모에 크게 좌우된다. 최근 4개 분기 지배주주 순이익 합계가 10억원 수준이어서 분기 손익 한 번으로 배수 해석이 크게 달라진다. 2023년 이후 흑자와 적자가 교차해 이익 기반 배수는 기간별 편차가 크다. 배당수익률은 업종 평균을 밑도는 수준이다. 부채비율은 2022년 54.8%에서 2025년 32.1%로 바뀌었고, 부채총계는 123억원이다. 배수를 읽을 때는 이익 회복 속도와 자본 규모를 함께 보는 것이 사실 비교에 맞다.",
+  "en": "The price-to-book ratio is below 1x, meaning market capitalisation sits below the controlling-shareholder equity of KRW 38.3 billion at the end of 2025. Book value alone does not settle how the share price relates to asset value. The price-to-earnings ratio is highly sensitive to earnings, because controlling-shareholder net income over the latest four quarters totalled only KRW 1 billion, so one quarter can change how the multiple reads. Profits and losses have alternated since 2023, so earnings-based multiples have varied widely across periods. Dividend yield is below the industry average. Debt-to-equity fell from 54.8% in 2022 to 32.1% in 2025, with total liabilities of KRW 12.3 billion. Reading the multiples together with the pace of earnings recovery and the size of equity gives a fairer comparison."
  },
  "bull": [
   {
    "title": {
-    "ko": "영업 흑자 전환과 구독형 매출 확대",
-    "en": "Operating Profit Turnaround and Growing Subscription Revenue"
+    "ko": "구독 비중 확대와 외형 회복",
+    "en": "Subscription mix rising and revenue rebounding"
    },
    "body": {
-    "ko": "2025년 연간 영업이익이 9.4억원으로 흑자 전환했고 매출도 191.7억원으로 전년 대비 크게 늘었다. 클라우드 구독형 플랫폼 아이온클라우드의 매출 비중 확대가 이러한 전환의 핵심 요인으로 지목된다. 구독형 모델은 반복적 수익 창출이 가능해 매출 예측 가능성을 높이는 효과가 있다.",
-    "en": "Full-year 2025 operating profit turned positive at KRW 943mn, with revenue also rising sharply to KRW 19.17bn from the prior year. The growing share of revenue from the AIONCLOUD subscription platform is cited as the key driver of this turnaround. Subscription-based models can generate recurring revenue, improving revenue predictability."
+    "ko": "클라우드 보안 매출 비중은 2024년 30.91%였다. 2020년 9.4%에서 올라온 흐름이 이어지고 있다. 2025년 매출이 28.6% 늘어난 것과 구독 비중 증가가 같은 방향이라는 점이 강세 근거다. 2023~2024년 정체 국면을 벗어났다는 해석이 가능하다.",
+    "en": "The cloud security share was 30.91% in 2024, continuing a climb from 9.4% in 2020. Revenue growth of 28.6% in 2025 moved in the same direction as the rising subscription mix, which is the core bullish argument. It suggests the revenue stall of 2023 to 2024 has been left behind."
    }
   },
   {
    "title": {
-    "ko": "제로트러스트 정책 수혜 채널",
-    "en": "Policy-Linked Zero Trust Channel"
+    "ko": "정부 사업과 제로트러스트 수요",
+    "en": "Government programmes and zero trust demand"
    },
    "body": {
-    "ko": "정부의 제로트러스트·국가망보안체계 정책 추진이 SSE·ZTNA 관련 수요를 뒷받침하는 요인으로 거론되며, 회사는 2026년에도 중소기업 클라우드 보급 확산 사업 공급기업으로 선정돼 정책 연계 판매 채널을 보유하고 있다. 이는 민간 수주 외에 공공·정책 지원형 매출 창출 경로를 다변화하는 효과가 있다.",
-    "en": "Government-led zero trust and national network security policy initiatives are cited as supporting demand for SSE and ZTNA solutions, and the company was again selected in 2026 as a supplier under the SME cloud adoption program, giving it a policy-linked sales channel. This diversifies revenue generation beyond private-sector orders into public and policy-supported channels."
+    "ko": "모니터랩은 2026년 AI 바우처 지원사업 공급기업에 선정됐다. 2026년 데이터바우처 지원사업 공급기업으로도 선정됐다. 제로트러스트 도입 시범사업 주관사로서 SSE 플랫폼 실적을 쌓고 있다. 공공과 중소기업 수요에서 접점이 넓어지는 흐름이다.",
+    "en": "Monitorapp was selected as a supplier for the 2026 AI voucher programme and the 2026 data voucher programme. It is also building track record as lead operator of a zero trust adoption pilot on its SSE platform. Its reach into public-sector and SME demand is widening."
    }
   },
   {
    "title": {
-    "ko": "엔드포인트 보안 통합을 통한 포트폴리오 확장",
-    "en": "Portfolio Expansion via Endpoint Security Integration"
+    "ko": "흑자 전환 이력과 분기 흑자",
+    "en": "Profit reversals and a profitable 2Q 2026"
    },
    "body": {
-    "ko": "2025년 7월 쏘마 인수와 2026년 7월 흡수합병 완료로 네트워크 중심 보안에서 엔드포인트까지 아우르는 통합 보안 포트폴리오를 갖추게 됐다. 회사는 이를 통해 SSE 기반 네트워크 보안과 EDR 기반 엔드포인트 보안을 단일 플랫폼에서 제공할 수 있게 됐다고 설명한다. 통합 플랫폼은 고객에게 완성도 높은 제로트러스트 아키텍처를 제공하는 근거로 제시된다.",
-    "en": "The July 2025 acquisition of Soma and the completed July 2026 merger have given the company an integrated security portfolio spanning from network-centric security to endpoint coverage. The company states this allows it to provide SSE-based network security and EDR-based endpoint security on a single platform. This integrated platform is presented as enabling a more complete zero trust architecture for customers."
+    "ko": "2025년 영업이익 9.4억원은 2024년 영업손실에서 흑자로 돌아선 결과다. 2026년 2분기 영업이익 4.3억원은 1분기 영업손실 7.1억원 이후 흑자 분기였다. 반기 기준 영업손실은 약 2.8억원으로, 사업 체질이 적자에 고정된 상태는 아니라는 근거가 된다.",
+    "en": "Operating profit of KRW 943 million in 2025 reversed the 2024 operating loss. Operating profit of KRW 427 million in 2Q 2026 came after a 1Q 2026 operating loss of KRW 710 million, showing the business is not locked into losses. The first-half operating loss stands at about KRW 280 million."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "분기별 실적 변동성",
-    "en": "Quarterly Earnings Volatility"
+    "ko": "3분기 적자 전환과 매출 감소",
+    "en": "3Q 2026 loss and falling sales"
    },
    "body": {
-    "ko": "2025년 하반기 실적 개선이 이어졌으나 2026년 1분기 영업손실 7.1억원, 순손실 4.9억원으로 재차 적자 전환했다. 이후 2분기 회복했지만, 단기간 내 흑자·적자를 반복하는 패턴은 실적의 예측 가능성을 낮추는 요인이다. 프로젝트성 매출 인식 시점에 따라 특정 분기 실적이 크게 좌우되는 구조로 보인다.",
-    "en": "Despite improvement through the second half of 2025, Q1 2026 swung back to an operating loss of KRW 710mn and a net loss of KRW 490mn. While Q2 2026 recovered, the pattern of alternating between profit and loss within a short span reduces the predictability of results, suggesting individual quarters can be heavily influenced by the timing of project-based revenue recognition."
+    "ko": "2026년 3분기 7~9월 매출은 45억원으로 전년 동기보다 11.1% 줄었다. 3분기 연결 기준 영업손실은 5,179만원으로 집계됐다. 전년 동기에는 영업이익을 냈던 분기여서 적자 전환이 뚜렷하다. 3분기 지배주주 순손실은 3.3억원이다.",
+    "en": "Revenue for 3Q 2026 was KRW 4.54 billion, down 11.1% year on year, and the quarter produced an operating loss of KRW 51.79 million. A year earlier the same quarter had an operating profit, so the swing into loss is clear. Controlling-shareholder net loss in 3Q 2026 was KRW 334 million."
    }
   },
   {
    "title": {
-    "ko": "순이익 개선세의 불명확성",
-    "en": "Unclear Drivers Behind Net Income Swings"
+    "ko": "인건비 부담과 고정비 구조",
+    "en": "Labour cost burden and fixed-cost structure"
    },
    "body": {
-    "ko": "2025년 영업이익은 흑자로 전환했음에도 지배주주 순이익은 6.7억원으로 전년 20.8억원 대비 오히려 줄었다. 2026년 2분기에는 영업이익 4.3억원 대비 순이익이 9.6억원으로 훨씬 큰 폭 개선됐는데, 이러한 영업이익과 순이익 간 괴리의 구체적 원인은 공개된 자료로 명확히 확인되지 않는다. 이런 괴리가 반복될 경우 실적의 질적 해석에 어려움을 줄 수 있다.",
-    "en": "Despite the 2025 operating profit turnaround, net income attributable to owners fell to KRW 665mn from KRW 2.08bn a year earlier. In Q2 2026, net income of KRW 956mn far exceeded the operating profit of KRW 427mn, and the specific drivers behind this gap between operating and net income are not clearly identifiable from available disclosures. Recurrence of such gaps could complicate qualitative assessment of the earnings quality."
+    "ko": "2026년 1분기 종업원 급여 지출은 22억원으로 전년 동기 대비 14% 급증했다. 이는 전체 매출액의 61%에 달하는 수치다. 보안 전문 인력 확보를 위한 투자가 단기 실적을 누르고 있다는 분석이다. 매출이 늘어도 인건비가 고정으로 남으면 마진이 개선되기 어렵다.",
+    "en": "Employee salary spending in 1Q 2026 was KRW 2.2 billion, up 14% year on year, equal to 61% of revenue. Analysts attribute this to investment in security specialists, which is weighing on near-term results. If salary costs stay fixed while revenue grows slowly, margin improvement becomes harder."
    }
   },
   {
    "title": {
-    "ko": "경쟁 심화 및 소형주 특성",
-    "en": "Intensifying Competition and Small-Cap Characteristics"
+    "ko": "목표 대비 괴리와 이익 변동성",
+    "en": "Gap to past targets and earnings volatility"
    },
    "body": {
-    "ko": "하드웨어 기반 신뢰도를 갖춘 펜타시큐리티, 파이오링크 등 국내 경쟁사들이 클라우드 영역으로 사업을 확장하고 있어 경쟁 강도가 높아지고 있다. 아울러 시가총액 규모가 작은 코스닥 소형주로서 유동성과 정보 접근성 측면의 한계가 상대적으로 부각될 수 있다.",
-    "en": "Domestic competitors with established hardware-based credibility, such as Penta Security and Pionlink, are expanding into the cloud domain, intensifying competition. In addition, as a small-cap KOSDAQ stock, the company may face relatively greater limitations in liquidity and information accessibility compared with larger peers."
+    "ko": "모니터랩이 제시한 2024년 목표 매출액은 294억원이나 실제 매출은 절반 수준에 그쳤다. 2025년 실적도 제시한 매출액 474억원에 크게 못 미칠 것으로 예상된다는 평가가 나왔다. 2025년 지배주주 순이익은 전년 대비 68.0% 줄었다. 이익 변동성이 여전히 크다.",
+    "en": "The 2024 revenue target of KRW 29.4 billion was set against actual sales of roughly half that level. Commentary also expected 2025 results to fall well short of the KRW 47.4 billion target. Controlling-shareholder net income fell 68.0% in 2025, so earnings volatility remains high."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성 리스크",
-    "en": "Earnings Volatility Risk"
+    "ko": "실적 변동성",
+    "en": "Earnings volatility"
    },
    "body": {
-    "ko": "공공·기업 프로젝트성 매출 인식 시점에 따라 분기별 실적이 큰 편차를 보이는 구조가 지속되고 있다. 2026년 1분기와 같이 계절적으로 취약한 분기에는 재차 영업손실이 발생할 가능성을 배제할 수 없다. 이는 연간 실적 추정의 신뢰도를 낮추는 요인으로 작용할 수 있다.",
-    "en": "The structure in which quarterly results vary significantly depending on the timing of public and corporate project-based revenue recognition persists. In seasonally weak quarters such as Q1 2026, the recurrence of operating losses cannot be ruled out, which can reduce the reliability of full-year earnings estimates."
+    "ko": "영업이익은 2022년 11.4억원에서 2023년 720만원, 2024년 영업손실로 떨어졌다가 2025년 흑자로 돌아섰지만 2026년 3분기에 다시 영업손실을 냈다. 분기 단위로도 1분기 영업손실 7.1억원과 2분기 영업이익 4.3억원이 엇갈렸다. 이익 기반이 얇아 분기 손익 변동이 크다.",
+    "en": "Operating profit went from KRW 1.14 billion in 2022 to KRW 7.2 million in 2023 and an operating loss in 2024, returned to profit in 2025, and slipped back into loss in 3Q 2026. Quarterly results alternated, from a 1Q 2026 operating loss of KRW 710 million to a 2Q operating profit of KRW 427 million. A thin earnings base means quarterly swings remain large."
    }
   },
   {
    "cat": {
-    "ko": "지배구조·자사주 처리 리스크",
-    "en": "Governance and Treasury Share Handling Risk"
+    "ko": "경쟁과 외산 기술",
+    "en": "Competition and foreign vendors"
    },
    "body": {
-    "ko": "2026년 4월 모니터랩은 종속회사 쏘마의 잔여 지분 인수 대금 일부를 자기주식 24만 7천주로 지급하는 방식의 장외처분을 공시했다. 이 방식이 자사주 소각 의무화 규제 강화 국면에서 우호 지분 배분 성격으로 해석될 수 있다는 시각이 언론을 통해 제기된 바 있다. 이러한 자사주 처리 방식은 소액주주와의 이해관계 조정 측면에서 주목할 필요가 있는 사안이다.",
-    "en": "In April 2026, MonitorApp disclosed an off-market disposal of 247,000 treasury shares to pay part of the acquisition price for the remaining stake in subsidiary Soma. Media coverage has raised the view that this method could be interpreted as effectively allocating shares to an aligned party amid tightening treasury-share cancellation regulations. This treasury-share handling approach warrants attention from the standpoint of aligning interests with minority shareholders."
+    "ko": "안랩 등 많은 보안기업들이 웹방화벽 시장에 뛰어들었지만 결국 철수했다는 설명처럼, 시장 자체가 좁고 외산 기업과의 경쟁이 길었다. 클라우드 전환 속도가 경쟁사보다 늦으면 구독 전환 성과가 제한될 수 있다. 외산 벤더의 공세가 강해지면 SSE 플랫폼 확장 속도에 부담이 된다.",
+    "en": "As management notes, several domestic security companies entered the web firewall market and later exited, and the company has competed with foreign vendors for a long time. If the shift to cloud subscriptions lags competitors, the benefit may be limited. A stronger push by foreign vendors would weigh on the pace of SSE platform expansion."
    }
   },
   {
    "cat": {
-    "ko": "경쟁 및 기술 변화 리스크",
-    "en": "Competitive and Technology Shift Risk"
+    "ko": "조직 재편과 M&A 통합",
+    "en": "Reorganisation and M&A integration"
    },
    "body": {
-    "ko": "클라우드 보안 시장은 국내외 대형 보안기업들의 진입이 확대되고 있어 경쟁 강도가 계속 높아질 수 있다. 생성형 AI, AI 에이전트 등 새로운 기술 트렌드에 대응하는 신제품 개발이 지속적으로 필요하며, 대응이 지연될 경우 시장 점유율 확보에 부정적 영향을 줄 수 있다.",
-    "en": "The cloud security market continues to see expanding entry from both domestic and global large security vendors, which could keep competitive intensity elevated. Continued development of new products addressing emerging technology trends such as generative AI and AI agents is necessary, and delays in this response could negatively affect the company's ability to secure market share."
+    "ko": "2016년 설립된 EDR 기업 쏘마 인수와 공동 창업자인 안병규 부사장의 퇴임이 같은 시기에 겹쳤다. 미등기임원도 크게 줄었다. 통합 목표의 이행 여부는 공시 수치로 드러나지 않았다. 인력 재편이 개발 속도와 영업 조직에 미치는 영향은 불확실하다.",
+    "en": "The acquisition of Somma, an EDR company founded in 2016, coincided with the departure of co-founder Ahn Byung-gyu as an executive vice president. The number of unregistered executives also fell sharply. Progress on the integration target is not visible in disclosed figures. The effect of the leadership changes on development pace and sales organisation is uncertain."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중순경",
-    "en": "Mid-November 2026"
+    "ko": "2027년 3월 말",
+    "en": "Late March 2027"
    },
    "what": {
-    "ko": "2026년 3분기 실적 공시 예정 시점으로, 1분기 적자와 2분기 회복이 이어진 흐름 속에서 하반기 실적 개선세가 지속되는지 확인이 필요하다.",
-    "en": "Expected timing for the Q3 2026 earnings disclosure; given the swing from a Q1 loss to a Q2 recovery, it is worth checking whether the second-half improvement trend continues."
+    "ko": "2026년 사업보고서 제출 시점으로, 2026년 4분기 매출과 영업손익이 공시 실적으로 확정된다. 2025년 4분기 영업이익 10.9억원과 비교하는 것이 출발점이다.",
+    "en": "The 2026 annual report is due, confirming fourth-quarter 2026 revenue and operating results as disclosed figures. Comparison with the KRW 1.09 billion operating profit of 4Q 2025 is the starting point."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기~2027년 1월경",
-    "en": "Q4 2026 through around January 2027"
+    "ko": "2027년 5월 중",
+    "en": "Mid-May 2027"
    },
    "what": {
-    "ko": "쏘마 흡수합병 완료 이후 통합 운영 효과가 재무제표에 반영되는지, 특히 엔드포인트 보안(EDR) 부문의 매출 기여가 나타나는지 확인할 시점이다.",
-    "en": "A point to check whether the integration effects following the completed Soma merger are reflected in the financial statements, particularly whether the endpoint security (EDR) segment begins contributing to revenue."
+    "ko": "2027년 1분기 분기보고서로 2026년 1분기 영업손실 7.1억원 이후 흐름과 인건비 비중의 변화를 확인한다.",
+    "en": "The 1Q 2027 quarterly report will show whether results improve from the KRW 710 million operating loss of 1Q 2026 and whether the salary-to-revenue ratio falls."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 중",
-    "en": "During the second half of 2026"
+    "ko": "2026년 말 이후 (시기 미정)",
+    "en": "After late 2026 (timing not announced)"
    },
    "what": {
-    "ko": "정보통신산업진흥원 '중소기업 클라우드 서비스 보급 확산 사업' 공급 실적과 관련한 후속 수주·매출 반영 여부를 확인할 필요가 있다.",
-    "en": "Follow-up order intake and revenue recognition tied to the Korea IT Industry Promotion Agency's SME cloud service adoption program should be monitored."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 초",
-    "en": "Early 2027"
-   },
-   "what": {
-    "ko": "2026년 4분기 및 연간 잠정 실적 공시 시점으로, 연간 매출·영업이익의 전년 대비 방향성과 해외 매출 비중 변화를 확인할 필요가 있다.",
-    "en": "Timing for the Q4 and full-year 2026 preliminary earnings disclosure; it will be useful to check the year-over-year direction of annual revenue and operating profit as well as changes in the overseas revenue share."
+    "ko": "쏘마 EDR의 아이온클라우드 통합 공급 여부와 시점이 회사 공시나 보도자료로 나올 때 확인한다. 통합 효과가 SSE 매출 증가로 이어지는지가 쟁점이다.",
+    "en": "Watch for company announcements on whether and when Somma's EDR is supplied through AIONCLOUD. The key question is whether the integration lifts SSE revenue."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "모니터랩은 2025년 영업이익 흑자 전환과 클라우드 구독형 매출 비중 확대를 통해 사업 구조 개선을 진행하고 있으나, 2026년 1분기 재차 적자로 돌아선 뒤 2분기 회복하는 등 분기별 실적 변동성이 여전히 큰 상태다. 쏘마 인수 및 흡수합병을 통한 엔드포인트 보안 통합, 정부의 제로트러스트 정책과 연계된 공급기업 선정 등은 사업 확장의 긍정적 요인으로 거론된다. 반면 영업이익과 순이익 간의 괴리, 자사주 처분 방식을 둘러싼 지배구조 관련 시각, 경쟁 심화 등은 균형 있게 살펴볼 필요가 있는 요인이다. 밸류에이션 측면에서는 순자산가치에 근접한 수준에서 거래되는 편이며, 배당은 지급하지 않고 있어 재투자 중심의 자본 배분이 이어지는 모습이다. 향후 분기 실적의 방향성과 쏘마 통합 효과, 해외 매출 비중 변화 등을 지속적으로 확인하는 것이 중요하다. 본 리포트는 정보 제공 목적으로 작성되었으며 매수·매도 의견을 포함하지 않는다.",
-   "en": "MonitorApp is progressing through a business structure improvement centered on the 2025 operating profit turnaround and growing cloud subscription revenue share, but quarterly earnings volatility remains pronounced, as seen in the swing back to a loss in Q1 2026 followed by recovery in Q2. The integration of endpoint security through the Soma acquisition and merger, along with selection as a supplier linked to government zero trust policy, are cited as positive factors for business expansion. At the same time, the gap between operating profit and net income, governance-related views surrounding the treasury share disposal method, and intensifying competition are factors that warrant balanced consideration. On valuation, the stock trades at a level close to net asset value, and with no dividends being paid, capital allocation continues to lean toward reinvestment. Going forward, it will be important to continue monitoring the direction of quarterly earnings, the effects of the Soma integration, and changes in the overseas revenue share. This report is prepared for informational purposes and does not include a buy or sell recommendation."
+   "ko": "모니터랩은 웹방화벽 시장의 국내 사업자로서 어플라이언스 중심에서 클라우드 구독 중심으로 사업을 옮기는 과정에 있다. 2025년 매출은 192억원으로 3년 연속 증가 흐름이 이어졌고, 클라우드 보안 비중은 2024년 30.91%까지 올랐다. 영업이익은 2023년 720만원, 2024년 영업손실 6.4억원을 거쳐 2025년 9.4억원으로 회복됐지만, 2026년 3분기에는 영업손실 5,179만원으로 다시 적자가 났다. 강세 요인은 구독 비중 증가, 정부 사업 공급 실적, 제로트러스트 시범사업 참여이고, 약세 요인은 분기 적자 재발, 인건비 부담, 과거 매출 목표와의 괴리다. 2026년 반기 영업손실은 약 2.8억원이며 최근 4개 분기 지배주주 순이익 합계는 10억원으로 이익 기반이 얇다. 쏘마 EDR 통합의 효과와 2026년 사업보고서의 영업이익률이 다음 확인 지점이다. 이 리포트는 투자 의견을 담지 않는 정보 제공용이다.",
+   "en": "Monitorapp is a domestic web firewall vendor in the middle of shifting from appliances toward cloud subscriptions. Revenue reached KRW 19.2 billion in 2025 and has risen for three consecutive years, and the cloud security share climbed to 30.91% in 2024. Operating profit recovered from KRW 7.2 million in 2023 and an operating loss of KRW 644 million in 2024 to KRW 943 million in 2025, but the company posted an operating loss of KRW 51.79 million in 3Q 2026. Bullish factors include the rising subscription mix, government programme supplier status and participation in a zero trust pilot. Bearish factors include the return to quarterly losses, labour cost pressure and the gap to past revenue targets. The first-half 2026 operating loss was about KRW 280 million, and controlling-shareholder net income over the latest four quarters totalled KRW 1 billion, so the earnings base is thin. The next checkpoints are the effect of the Somma EDR integration and the operating margin in the 2026 annual report. This report is for information only and contains no investment opinion."
   }
  },
  "sources": [
-  "https://enzoyou.com/%EB%AA%A8%EB%8B%88%ED%84%B0%EB%9E%A9-2026%EB%85%84-%EC%A0%84%EB%A7%9D-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EB%B3%B4%EC%95%88-%EB%A7%A4%EC%B6%9C-%ED%99%95%EB%8C%80%EB%A1%9C-%EC%9D%B4%EC%9D%B5/",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=xcLx4vNKKcsp9X1G",
-  "https://www.catch.co.kr/Comp/CompInfo/499249",
-  "https://thevc.kr/monitorapp",
-  "https://judal.co.kr/?shareToken=koMiGjgDpsoyR3Y9&view=stockAI",
-  "https://judal.co.kr/?shareToken=7ijgTfM0RbblmSAN&view=stockAI",
-  "https://www.jobplanet.co.kr/companies/77294/landing/%EB%AA%A8%EB%8B%88%ED%84%B0%EB%9E%A9",
-  "https://judal.co.kr/?shareToken=2uNxQNEsKHffUQIZ&view=stockAI",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_main.asp?gicode=A434480&NewMenuID=101",
-  "https://judal.co.kr/?shareToken=WV3SOwokRgY28evf&view=stockAI",
-  "https://m.boannews.com/html/detail.html?tab_type=1&idx=143018",
-  "https://www.monitorapp.com/en",
-  "https://m.boannews.com/html/detail.html?idx=136389",
+  "https://www.vegannews.co.kr/news/article.html?no=406751",
+  "https://m.jobkorea.co.kr/company/45879059",
+  "https://ssl.pstatic.net/imgstock/upload/research/company/1701916359052.pdf",
+  "https://m.thebell.co.kr/m/newsview.asp?svccode=00&newskey=202601131516397200103422",
+  "https://www.job-post.co.kr/news/articleView.html?idxno=234252",
+  "https://m.ddaily.co.kr/page/view/2023112410181914833",
+  "https://alphasquare.co.kr/home/stock-summary?code=434480",
   "https://m.boannews.com/html/detail.html?idx=131425",
-  "https://www.monitorapp.com/ko/products",
-  "https://www.dailysecu.com/news/articleView.html?idxno=206106",
-  "https://www.epnc.co.kr/news/articleView.html?idxno=330859",
-  "https://thevc.kr/monitorapp/products"
+  "https://ket.kr/news/article.html?no=38760",
+  "https://zdnet.co.kr/view/?no=20250525180236",
+  "https://www.boannews.com/news/articleView.html?idxno=147334",
+  "https://www.dailysecu.com/news/articleView.html?idxno=209563",
+  "https://zdnet.co.kr/view/?no=20261104185325",
+  "https://www.boannews.com/news/articleView.html?idxno=145746",
+  "https://zdnet.co.kr/view/?no=20260702093929",
+  "https://m.news.nate.com/view/20260126n21763",
+  "https://zdnet.co.kr/view/?no=20260326090431",
+  "https://www.dailysecu.com/news/articleView.html?idxno=206106"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "434480",
  "name": "모니터랩",
  "name_en": "MONITORAPP CO., LTD.",
@@ -223,11 +213,11 @@
   "IT·소프트웨어"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 18:02",
- "dataDate": "20260904",
+ "reportDate": "2026-11-18",
+ "reportTs": "2026-11-18 14:35",
+ "dataDate": "20261117",
  "quant": {
-  "asOf": "2026-09-05",
+  "asOf": "2026-11-18",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -298,12 +288,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 3804813204,
-    "op": -120903262,
-    "np_owner": -236302747
-   },
-   {
     "q": "2025Q3",
     "rev": 5109487463,
     "op": 442031019,
@@ -326,29 +310,36 @@
     "rev": 5629274749,
     "op": 426999135,
     "np_owner": 955979134
+   },
+   {
+    "q": "2026Q3",
+    "rev": 4540429105,
+    "op": -51792775,
+    "np_owner": -334495715
    }
   ],
   "valuation": {
-   "price": 2665,
-   "mcap": 0.0328,
+   "price": 2495,
+   "mcap": 0.0307,
    "shares": 12310300,
-   "total_shares": 12918350,
-   "wavg_shares": 11101344,
-   "per": 15.405,
-   "eps": 173,
-   "pbr": 0.7667,
-   "bps": 3476,
-   "roe_ttm": 4.4,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": 1666430651,
+   "total_shares": 12310300,
+   "wavg_shares": 9411482,
+   "per": 27.418,
+   "eps": 91,
+   "pbr": 0.6123,
+   "bps": 4075,
+   "roe_ttm": 2.6,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": 1002075597,
    "ccy": "KRW",
    "bps_src": "자체",
    "eps_src": "공시",
-   "pbr_krx": 0.86,
+   "pbr_krx": 0.81,
    "bps_krx": 3084.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
    "div": 0.0
   }
- }
+ },
+ "textRules": 3
 }

@@ -1,220 +1,218 @@
 {
  "title": {
-  "ko": "적자 축소 넘어 2분기 흑자전환, 지속성이 관건",
-  "en": "From Narrowing Losses to Q2 Profit — Durability Is Key"
+  "ko": "가동률 회복 속 흑자 전환, 아직 초기 단계",
+  "en": "Utilization recovery and a profit turn, still at an early stage"
  },
  "lead": {
-  "ko": "윈팩은 2026년 2분기에 매출 302억원, 영업이익 8억원을 기록하며 분기 기준 흑자로 전환했으나, 연간 기준으로는 2022년 이후 4년 연속 적자 흐름이 이어지고 있다.",
-  "en": "Winpac posted quarterly revenue of KRW 30.2 billion and operating profit of KRW 0.8 billion in Q2 2026, turning profitable on a quarterly basis, but the company has remained in an annual net loss for four consecutive years since 2022."
+  "ko": "윈팩은 2023년부터 2025년까지 영업손실이 이어졌고 2026년 2분기 영업이익으로 흑자 전환했으며, 메모리 후공정 가동률 회복이 실적 개선의 핵심 변수로 떠올랐다.",
+  "en": "Winpac posted operating losses from 2023 through 2025 before returning to operating profit in 2Q 2026, and memory packaging utilization recovery has become the central variable for earnings."
  },
  "keypoints": [
   {
-   "ko": "2026년 2분기 매출 301.8억원, 영업이익 7.9억원, 지배주주순이익 1.3억원으로 4개 분기 연속 적자에서 벗어났다.",
-   "en": "Q2 2026 revenue reached KRW 30.18 billion with operating profit of KRW 0.79 billion and owner net income of KRW 0.13 billion, ending a streak of quarterly losses."
+   "ko": "매출은 2022년 1,526억원에서 2024년 741억원까지 줄었다가 2025년 755억원으로 소폭 늘었다.",
+   "en": "Revenue fell from KRW 152.6 billion in 2022 to KRW 74.1 billion in 2024 before edging up 1.9% to KRW 75.5 billion in 2025."
   },
   {
-   "ko": "2025년 연간 매출은 755억원으로 전년(741억원) 대비 소폭 늘었지만, 영업손실 143억원, 지배주주순손실 137억원으로 적자가 지속됐다.",
-   "en": "Full-year 2025 revenue was KRW 75.5 billion, slightly up from KRW 74.1 billion in 2024, but the company recorded an operating loss of KRW 14.3 billion and an owner net loss of KRW 13.7 billion."
+   "ko": "2025년 영업손실은 143억원으로 2024년 233억원보다 줄었고, 같은 해 영업이익률은 -18.9%였다.",
+   "en": "The operating loss narrowed to KRW 14.3 billion in 2025 from KRW 23.3 billion in 2024, and the operating margin was -18.9% that year."
   },
   {
-   "ko": "최대주주는 어보브반도체(지분 약 37~38%)로, MCU 팹리스 기업이 반도체 후공정 사업 다각화를 위해 2021년 인수했다.",
-   "en": "The largest shareholder is ABOV Semiconductor, holding roughly 37-38% of shares, an MCU fabless company that acquired Winpac in 2021 to diversify into back-end semiconductor services."
+   "ko": "2026년 2분기 영업이익 7.9억원으로 흑자 전환했으나, 3분기 영업이익은 2.2억원으로 전 분기 대비 72.3% 줄었다.",
+   "en": "Operating profit of KRW 795 million in 2Q 2026 marked a turn to profit, but 3Q 2026 operating profit fell 72.3% from the prior quarter to KRW 220 million."
   },
   {
-   "ko": "회사는 신규 성장동력으로 비메모리 웨이퍼 테스트 사업을 추진 중이며, 웨이퍼 테스트부터 패키지·파이널 테스트까지 이어지는 턴키 서비스 확대를 계획하고 있다.",
-   "en": "The company is pursuing non-memory wafer test business as a new growth driver and plans to expand turnkey services spanning wafer test through package and final test."
+   "ko": "2026년 1분기 패키징 가동률은 64.88%로, 2025년 같은 분기 20.6%에서 크게 올랐다는 보도가 나왔다.",
+   "en": "Packaging utilization reportedly rose to 64.88% in 1Q 2026 from 20.6% a year earlier, according to press coverage."
   },
   {
-   "ko": "부채비율은 2023년 220.0%에서 2025년 107.8%로 낮아졌으나 여전히 순차입 부담이 있으며, 영업활동현금흐름은 4년 연속 마이너스다.",
-   "en": "The debt ratio declined from 220.0% in 2023 to 107.8% in 2025, but net borrowing pressure persists, and operating cash flow has been negative for four consecutive years."
+   "ko": "영업활동 현금흐름은 2023년부터 2025년까지 적자였고, 2025년 말 부채비율은 107.8%다.",
+   "en": "Operating cash flow was negative in each year from 2023 to 2025, and the debt-to-equity ratio stood at 107.8% at the end of 2025."
   }
  ],
  "business": {
-  "ko": "윈팩은 2002년 설립되어 2013년 코스닥에 상장한 반도체 후공정 전문기업으로, 경기도 용인에 생산거점을 두고 있다. 회사는 반도체 패키징(PKG)과 테스트(TEST)를 동시에 수행하는 원스톱 후공정 체계를 갖추고 있으며, 국내 대다수 후공정 업체들이 패키징 또는 테스트 한 분야에 집중하는 것과 차별화된다. 매출 비중은 패키징이 약 80%, 테스트가 약 20% 수준으로 알려져 있으며, 주력 제품은 FBGA, WLP, MCP, CSP, DDP 등 메모리 반도체 중심의 패키징 솔루션이다. 주요 고객사 중 하나는 SK하이닉스로 매출 구조에서 큰 비중을 차지하는 것으로 파악된다. 2021년 F78 DDR4 플립칩 패키지 개발과 함께 고성능 DRAM 패키징 안정성을 높이는 MUF(Molded Underfill) 공법을 적용한 바 있다. 최대주주는 MCU 국내 1위 팹리스 기업 어보브반도체로, 2021년 티엘아이·센소니아 등으로부터 구주를 인수하고 제3자배정 유상증자에 참여하며 최대주주에 올랐고, 현재 지분율은 약 37~38% 수준이다. 회사는 신규 성장동력으로 비메모리 웨이퍼 테스트 사업을 추진하며 테스트 매출 비중 확대를 계획하고 있고, 경쟁사로는 시그네틱스, SFA반도체, 하나마이크론, LB세미콘, 엠케이전자, 두산테스나 등 국내 OSAT(외주 반도체 패키징·테스트) 업체들이 있다. 사업보고서상 향후 추진 예정 신규사업으로 당뇨인슐린 패치 사업도 언급되어 있으나 현재까지 매출에 기여하는 단계는 아니다.",
-  "en": "Winpac is a back-end semiconductor specialist founded in 2002 and listed on KOSDAQ in 2013, with its production base located in Yongin, Gyeonggi Province. The company operates a one-stop back-end system performing both packaging (PKG) and testing (TEST) simultaneously, differentiating itself from most domestic OSAT peers that focus on only one of the two areas. Packaging is reported to account for roughly 80% of revenue and testing about 20%, with core products including FBGA, WLP, MCP, CSP, and DDP packaging solutions centered on memory semiconductors. SK Hynix is understood to be one of the company's major customers, accounting for a significant share of its revenue structure. In 2021, Winpac developed the F78 DDR4 flip-chip package while adopting the Molded Underfill (MUF) method to improve reliability in high-performance DRAM packaging. The largest shareholder is ABOV Semiconductor, Korea's leading MCU fabless company, which acquired existing shares from TLI and Sensonia and participated in a third-party capital increase in 2021 to become the controlling shareholder, currently holding roughly 37-38% of shares. The company is pursuing non-memory wafer test business as a new growth driver, aiming to expand the share of test-related revenue, and competes with domestic OSAT players including Signetics, SFA Semicon, Hana Micron, LB Semicon, MK Electron, and Dtest (Doosan Tesna). The company's regulatory filings also mention a diabetic insulin patch business as a planned new venture, though it has not yet contributed to revenue."
+  "ko": "윈팩은 2002년 설립된 반도체 후공정 외주 전문 기업으로, 칩을 기판에 탑재해 밀봉하는 패키징과 완성된 반도체의 성능을 검증하는 테스트를 함께 수행한다. 국내 후공정 업체는 패키징이나 테스트 중 한 분야에 집중하는 경우가 많지만, 윈팩은 두 공정을 모두 갖춰 반도체 제조사와 팹리스 업체의 후공정을 일괄 수주할 수 있다. 생산거점은 경기도 용인이며, 그중 P캠퍼스에서는 D램, 낸드플래시, 내장형 범용 플래시 메모리(eUFS) 같은 제품을 패키징한다. 패키징 생산능력은 월 4,400만대에서 5,000만대로 늘었다고 보도됐다. 주요 공정은 FBGA, WLP, MCP 같은 패키징 제품과 반도체 테스트로 구성된다. SK하이닉스와는 4년 만에 거래가 재개됐고, 보도에 따르면 DDR4·DDR5 D램의 플립칩 패키징 물량이 윈팩에 다시 배정됐다. 회사는 웨이퍼 테스트부터 패키지와 파이널 테스트까지 잇는 턴키 서비스로 테스트 매출 비중을 끌어올리겠다는 계획을 밝혔다. 2025년 말 기준으로는 400억원 이상의 부채를 상환해 금융 비용 부담을 낮췄다고 보도됐다. 신규로 추진하는 사업으로는 당뇨인슐린 패치 사업이 소개돼 있다.",
+  "en": "Winpac, founded in 2002, is an outsourced semiconductor back-end company that performs both packaging, which mounts and seals chips on substrates, and testing, which verifies the performance of finished semiconductors. Many domestic back-end providers focus on one of packaging or testing, whereas Winpac has both processes in place and can receive back-end orders from chipmakers and fabless companies in a single contract. Its production base is in Yongin, Gyeonggi Province, and its P campus packages products such as DRAM, NAND flash and embedded universal flash memory (eUFS). Press reports said packaging capacity rose from 44 million units a month to 50 million units. Its main processes cover packaging products such as FBGA, WLP and MCP, along with semiconductor testing. Winpac resumed business with SK hynix after four years, and according to press reports DDR4 and DDR5 DRAM flip-chip packaging volume was reallocated to Winpac. The company plans to raise the share of test revenue through a turnkey service that links wafer test, package and final test. Reports also said it repaid more than KRW 40 billion of debt by the end of 2025, easing its financing cost burden. Its newly pursued business includes a diabetic insulin patch project."
  },
  "earnings": {
-  "ko": "윈팩의 연간 매출은 2022년 1,526억원에서 2023년 862억원, 2024년 741억원, 2025년 755억원으로 팬데믹 이후 메모리 업황 둔화의 영향을 크게 받았다. 영업이익은 2022년 19억원 흑자에서 2023년 -229억원, 2024년 -233억원으로 적자가 확대됐다가 2025년 -143억원으로 적자폭이 줄었다. 지배주주순손실은 2022년 -16억원에서 2023년 -333억원으로 크게 늘었다가 2024년 -300억원, 2025년 -137억원으로 점차 축소되는 흐름을 보였다. 분기별로 보면 2025년 2분기 매출 183억원·영업손실 36억원에서 2025년 3분기 214억원·영업손실 30억원, 4분기 212억원·영업손실 30억원, 2026년 1분기 222억원·영업손실 21억원으로 적자폭이 순차적으로 축소됐다. 2026년 2분기에는 매출이 302억원으로 전분기 대비 크게 늘었고, 영업이익은 7.9억원, 지배주주순이익은 1.3억원을 기록하며 분기 기준 흑자 전환에 성공했다. 회사는 물량 증가와 생산·설비 운영 효율화, 사업구조 개선이 실적 상승을 이끌었다고 설명했으며, 부가가치가 높은 테스트 사업 확대가 수익성 개선에 기여했다고 밝혔다. 최근 4개 분기(2025년 3분기~2026년 2분기) 합산 지배주주순손실은 약 76억원으로, 연간 기준 적자 규모는 여전히 이어지고 있다. 부채비율은 2023년 220.0%에서 2024년 116.3%, 2025년 107.8%로 낮아졌으며, 이는 유상증자를 통한 자본 확충과 손실 축소가 동시에 작용한 결과로 해석된다.",
-  "en": "Winpac's annual revenue fell from KRW 152.6 billion in 2022 to KRW 86.2 billion in 2023, KRW 74.1 billion in 2024, and then edged up to KRW 75.5 billion in 2025, reflecting the sharp post-pandemic memory downturn. Operating profit swung from a KRW 1.9 billion gain in 2022 to losses of KRW 22.9 billion in 2023 and KRW 23.3 billion in 2024 before narrowing to a KRW 14.3 billion loss in 2025. Owner net loss expanded sharply from KRW 1.6 billion in 2022 to KRW 33.3 billion in 2023, then gradually narrowed to KRW 30.0 billion in 2024 and KRW 13.7 billion in 2025. On a quarterly basis, the operating loss progressively narrowed from KRW 3.6 billion on revenue of KRW 18.3 billion in Q2 2025, to KRW 3.0 billion on KRW 21.4 billion in Q3 2025, KRW 3.0 billion on KRW 21.2 billion in Q4 2025, and KRW 2.1 billion on KRW 22.2 billion in Q1 2026. In Q2 2026, revenue jumped to KRW 30.2 billion versus the prior quarter, with operating profit of KRW 0.79 billion and owner net income of KRW 0.13 billion, marking the company's first quarterly profit in this stretch. The company attributed the improvement to higher volumes, greater manufacturing and equipment efficiency, and business structure improvements, noting that expansion of the higher-value-added test business contributed to the margin gain. Combined owner net loss over the trailing four quarters (Q3 2025-Q2 2026) was approximately KRW 7.6 billion, indicating the annualized loss trend has not yet fully reversed. The debt ratio declined from 220.0% in 2023 to 116.3% in 2024 and 107.8% in 2025, reflecting a combination of capital raises and narrowing losses."
+  "ko": "공시 실적 기준 매출은 2022년 1,526억원에서 2023년 862억원(전년 대비 43.5% 감소)으로 줄었고, 2024년 741억원(전년 대비 14.0% 감소)을 거쳐 2025년 755억원(전년 대비 1.9% 증가)으로 소폭 늘었으며, 2022년이 가장 큰 해이고 2024년이 가장 작은 해다. 영업이익은 2022년 19.2억원에서 2023년 영업손실 229억원으로 적자 전환된 뒤, 2024년 영업손실 233억원(적자 지속, 손실 확대)과 2025년 영업손실 143억원(적자 지속, 손실 축소)으로 이어졌다. 영업이익률은 2023년 -26.5%, 2024년 -31.4%에서 2025년 -18.9%로 낮아졌다. 지배주주 순손실은 2022년 15.7억원, 2023년 333억원, 2024년 300억원, 2025년 137억원으로 2022년부터 2025년까지 4년 연속 적자다. 당기순손실(비지배지분 포함)은 같은 기간 지배주주 순손실과 같은 금액으로 공시됐다. 영업활동 현금흐름은 2022년 189억원 유입에서 2023년 -104억원, 2024년 -101억원, 2025년 -62.3억원으로 유출이 이어졌다. 2025년 매출액 변동의 주요 원인으로 회사는 운영 효율화와 사업 구조 개선에 따른 수익성 개선을 들었고, 보도에 따르면 불필요한 설비와 자산 매각, 권고 사직이 고정비 감축에 쓰였다. 분기로 보면 2025년 3분기 매출 214억원, 영업손실 29.6억원에서 2025년 4분기 매출 212억원, 영업손실 29.9억원으로 손실이 확대됐고, 2026년 1분기 매출 222억원, 영업손실 20.6억원을 거쳐 2026년 2분기 매출 302억원(전 분기 대비 36.1% 증가), 영업이익 7.9억원으로 흑자 전환했다. 2026년 3분기 매출은 279억원(전 분기 대비 7.5% 감소, 전년 동기 대비 30.2% 증가)이었으나 영업이익 2.2억원(전 분기 대비 72.3% 감소)에 그쳤고, 지배주주 순손실은 11.2억원으로 적자 전환했다. 최근 4개 분기 지배주주 순손실 합계는 68.2억원이다.",
+  "en": "On a disclosed basis, revenue fell from KRW 152.6 billion in 2022 to KRW 86.2 billion in 2023 (down 43.5% year on year), then to KRW 74.1 billion in 2024 (down 14.0%), before edging up to KRW 75.5 billion in 2025 (up 1.9%); 2022 was the largest year and 2024 the smallest. Operating profit of KRW 1.92 billion in 2022 turned into an operating loss of KRW 22.9 billion in 2023, followed by a KRW 23.3 billion loss in 2024 (losses continued, with the loss widening) and a KRW 14.3 billion loss in 2025 (losses continued, with the loss narrowing). The operating margin was -26.5% in 2023 and -31.4% in 2024 before easing to -18.9% in 2025. Net loss attributable to controlling shareholders was KRW 1.57 billion in 2022, KRW 33.3 billion in 2023, KRW 30 billion in 2024 and KRW 13.7 billion in 2025, which is four consecutive years of losses from 2022 to 2025. The net loss including non-controlling interests was disclosed at the same amounts over the same period. Operating cash flow went from KRW 18.9 billion in 2022 to outflows of KRW 10.4 billion in 2023, KRW 10.1 billion in 2024 and KRW 6.23 billion in 2025. The company attributed the main 2025 change to operating efficiency and business structure improvement, and press reports said unnecessary facilities and assets were sold and voluntary retirements reduced fixed costs. Quarterly, revenue of KRW 21.4 billion and an operating loss of KRW 2.96 billion in 3Q 2025 widened to an operating loss of KRW 2.99 billion on revenue of KRW 21.2 billion in 4Q 2025; 1Q 2026 revenue was KRW 22.2 billion with an operating loss of KRW 2.06 billion, and 2Q 2026 revenue rose 36.1% from the prior quarter to KRW 30.2 billion with operating profit of KRW 795 million. In 3Q 2026 revenue was KRW 27.9 billion (down 7.5% from the prior quarter, up 30.2% year on year), operating profit was KRW 220 million (down 72.3% from the prior quarter), and the net loss attributable to controlling shareholders was KRW 1.12 billion, a return to loss. The net loss attributable to controlling shareholders over the last four quarters totals KRW 6.82 billion."
  },
  "industry": {
-  "ko": "국내 반도체 후공정(OSAT) 업계는 전방 산업 사이클에 따라 명확한 희비가 갈리는 구조를 보인다. 최근 업계 소식에 따르면 웨이퍼 수급이 안정화되면서 고객사들의 패키징 발주가 정상화되고 있으며, 이는 지난해 웨이퍼 단가 변동성 확대와 재고 부담으로 발주를 보수적으로 운영했던 것과 대비되는 흐름이다. 다만 고대역폭메모리(HBM)는 반도체 제조사가 대부분 자체 생산(인하우스)하는 구조여서 윈팩과 같은 외주 후공정 업체에는 직접적인 수혜가 제한적이며, 회사도 범용 메모리 시장 회복에 따른 수혜가 더 직접적일 것으로 보고 있다. 시스템반도체 후공정 업체(하나마이크론, SFA반도체, 엘비세미콘, 시그네틱스, 두산테스나 등)는 CMOS 이미지센서·SoC 등 물량 증가에 힘입어 상대적으로 양호한 실적을 낸 사례가 다수 보고된 바 있는 반면, 메모리 중심 후공정 업체는 주요 고객사의 내재화 확대 등으로 부침을 겪은 시기가 있었다. 경쟁 구도상 윈팩은 패키징과 테스트를 동시에 수행하는 원스톱 체계를 강점으로 내세우고 있으며, 이는 반도체 제조사나 팹리스 업체가 후공정을 일괄 발주할 수 있다는 점에서 차별화 요소로 언급된다. 업계에서는 AI·클라우드·전기차 등 차세대 IT 수요 증가에 따라 고성능·고집적 반도체 패키징 수요가 늘어날 것으로 보는 시각이 있으며, 시스템반도체와 고부가 제품 비중이 커질수록 테스트·패키징 동시 수행 역량의 중요성이 커질 수 있다는 평가도 나온다.",
-  "en": "Korea's OSAT (outsourced semiconductor assembly and test) industry shows a clear divergence tied to the upstream chip cycle. Recent industry reports indicate that as wafer supply has stabilized, customer packaging orders have normalized, a reversal from the prior year when volatile wafer pricing and inventory concerns led customers to place orders more conservatively. However, since high-bandwidth memory (HBM) is largely produced in-house by chipmakers, the direct benefit to outsourced back-end providers like Winpac is limited, and the company itself views recovery in the commodity memory market as the more direct driver for its business. System-semiconductor-focused OSAT players such as Hana Micron, SFA Semicon, LB Semicon, Signetics, and Doosan Tesna have reported relatively favorable results at times, boosted by rising volumes of CMOS image sensors and SoCs, while memory-centric back-end providers have at times faced headwinds from major customers' insourcing expansion. Competitively, Winpac positions its combined packaging-and-test capability as a differentiator, allowing chipmakers or fabless firms to place integrated back-end orders in one contract. Some industry observers expect demand for high-performance, high-density semiconductor packaging to rise on the back of AI, cloud, and electric vehicle demand growth, with the importance of combined test-and-packaging capability potentially increasing as system semiconductor and higher-value product mixes expand."
+  "ko": "메모리 후공정 수요는 2026년 들어 회복 흐름이 뚜렷하다. 기업 실적 코멘트에 따르면 DRAM, NAND Flash, MCP 등 메모리 반도체 후공정 수요가 늘면서 2026년 상반기 매출이 크게 늘었다. 업황 회복의 배경으로는 웨이퍼 공급 안정이 꼽힌다. 2025년에는 웨이퍼 가격 변동성이 커지자 고객사가 재고 부담을 우려해 발주를 줄였고, 그 결과 후공정 물량이 줄었다는 설명이다. 2026년 1분기 기준 패키징 가동률은 64.88%, 테스트 가동률은 32.54%로 2025년 같은 기간보다 크게 올랐다. 다만 보도에서는 테스트 수요가 아직 완전히 회복되지 않았고, 메모리 물량이 늘면 테스트 수요도 늘 것으로 기대된다고 전했다. HBM 확대가 주목받고 있지만 HBM은 대부분 반도체 제조사가 자체 생산하는 만큼, 범용 메모리 시장 회복의 수혜가 더 직접적이라는 것이 회사의 시각이다. 와이어본딩에 쓰이는 금선 가격 상승분을 제품 가격에 반영하는 작업도 추진 중이다. 고객 주문과 공장 가동률, 감가상각비 부담이 손익 회복 속도를 좌우하는 구조라는 점이 업계에서 함께 거론된다. 국내 후공정 업계에서 패키징과 테스트를 모두 수행할 수 있는 인프라는 윈팩의 차별점으로 소개된다.",
+  "en": "Demand for memory back-end work has clearly recovered in 2026. According to the company's earnings commentary, demand for back-end processing of DRAM, NAND flash and MCP products increased, and first-half 2026 revenue rose sharply. The recovery is attributed to a stabilization in wafer supply. In 2025, volatile wafer prices made customers wary of inventory risk and reduce orders, which cut back-end volume. In 1Q 2026 the packaging utilization rate was 64.88% and the test utilization rate was 32.54%, both well above the same period of 2025. Press coverage said test demand has not fully recovered and is expected to grow as memory volume increases. HBM is drawing attention, but most HBM is produced in-house by chipmakers, so the company sees the recovery in general-purpose memory as the more direct benefit. Winpac is also pursuing pass-through of higher gold wire prices into its product pricing. Order volume, plant utilization and depreciation burden determine how fast profitability recovers. Within domestic back-end providers, the ability to handle both packaging and testing is presented as Winpac's differentiator."
  },
  "outlook": {
-  "ko": "회사는 하반기에도 기존 고객 물량 증가세가 유지될 것으로 기대하고 있으며, 신규 테스트 사업과 고객 확보가 매출에 순차적으로 반영될 것이라고 밝혔다. 회사는 2분기 흑자전환을 두고 매출 성장과 사업구조 개선 성과가 실체화됐다는 점에서 의미가 있다고 자평했으며, 지속적인 매출 성장과 수익성 개선을 통해 주주가치를 제고하겠다는 방침을 밝혔다. 신규 성장동력으로는 비메모리 웨이퍼 테스트 사업을 지목하고 있으며, 웨이퍼 테스트부터 패키지·파이널 테스트로 이어지는 턴키 서비스 확대를 통해 테스트 매출 비중을 끌어올릴 계획이라고 설명했다. 회사 관계자는 웨이퍼 공급 안정화에 따라 패키징 물량과 생산 가동률이 회복되고 있다고 언급한 바 있으며, 제조 혁신과 공정 프로세스 개선, 인력 효율화를 지속적으로 추진하고 있다고 밝혔다. 다만 테스트 수요는 아직 완전히 회복되지 않았다는 평가도 함께 나왔다. 최대주주인 어보브반도체가 발행한 윈팩 주식 교환 대상 3회차 교환사채(EB)의 조기상환청구권(풋옵션) 청구 기간이 도래하는 시점이 다가오고 있어, 이와 관련한 자금 조달 구조 변화 가능성도 확인이 필요한 사안이다.",
-  "en": "The company has stated it expects existing customer order volumes to continue increasing in the second half, with new test business and customer acquisitions to be reflected in revenue in stages. Winpac characterized the Q2 return to profit as meaningful because it demonstrated tangible results from revenue growth and business structure improvement, and said it intends to keep enhancing shareholder value through continued sales growth and profitability improvement. The company has identified non-memory wafer test business as a new growth driver, explaining plans to raise the share of test-related revenue by expanding turnkey services spanning wafer test through package and final test. A company representative has noted that packaging volumes and production utilization are recovering as wafer supply stabilizes, and that the company is continuing efforts in manufacturing innovation, process improvement, and workforce efficiency. That said, some assessments note test demand has not yet fully recovered. The put-option exercise period for the third exchangeable bond issued against Winpac shares by controlling shareholder ABOV Semiconductor is approaching, making any related changes to the financing structure a matter worth monitoring."
+  "ko": "회사는 2026년 2분기 흑자 전환을 사업구조 개선 성과가 실체화된 결과라고 의미를 부여했다. 회사는 지속적인 매출 성장과 수익성 개선을 통해 주주가치를 높이겠다는 방침을 밝혔다. 신규 성장동력으로 꼽는 비메모리 웨이퍼 테스트 사업을 키워 테스트 매출 비중을 끌어올리겠다는 계획이다. 웨이퍼 테스트부터 패키지와 파이널 테스트까지 연결하는 턴키 서비스로 매출을 확대하겠다는 것이 회사의 설명이다. 2026년 상반기 보도에서 회사 관계자는 웨이퍼 공급이 안정되면서 고객사의 패키징 요청이 정상화되고 있다고 말했다. 같은 보도에서 회사 관계자는 현재 흐름이 이어진다면 2026년 실적이 2025년보다 의미 있게 개선될 수 있을 것으로 기대한다고 밝혔다. 회사는 와이어본딩 공정에 쓰이는 금선 가격 상승분을 제품 가격에 반영하는 작업을 추진하고 있다. 2026년 12월 31일 사업연도가 끝나면 4분기 가동률과 테스트 매출 비중 추이가 연간 실적으로 집계된다. SK하이닉스 물량이 2026년 4분기와 2027년 분기 매출에 어떻게 반영되는지가 다음 확인 지점이다. 회사가 밝힌 방향과 실제 분기 실적이 얼마나 일치하는지는 정기보고서 수치로 대조하게 된다.",
+  "en": "The company described the 2Q 2026 return to profit as evidence that its business structure improvements have taken hold. It said it aims to raise shareholder value through sustained revenue growth and improved profitability. It plans to expand its non-memory wafer test business, which it cites as a new growth driver, to raise the share of test revenue. The company explained that it intends to grow revenue through a turnkey service linking wafer test, package and final test. In a first-half 2026 press report, a company official said packaging requests from customers were normalizing as wafer supply stabilized. In the same report, the official said the company expects 2026 results to improve meaningfully over 2025 if current trends continue. The company is also pursuing pass-through of higher gold wire prices into product pricing. When the fiscal year ends on December 31, 2026, fourth-quarter utilization and the trend in test revenue share will be totaled into annual results. The next checkpoint is how the SK hynix volume shows up in revenue in 4Q 2026 and in 2027 quarters. Whether the company's stated direction matches its reported quarterly results will be checked against the periodic report figures."
  },
  "valuation_comment": {
-  "ko": "윈팩은 순자산 대비 주가 수준이 과거 거래 밴드 상단에 위치했던 시기가 있었으며, 당시 증권가에서는 지속된 실적 부진과 유상증자에 따른 주식 가치 희석이 높은 밸류에이션의 배경으로 지목된 바 있다. 최근 국내 OSAT 피어 그룹과 비교할 때 매출 규모와 수익성 모두 상대적으로 작은 편으로 평가된 바 있어, 동종업계 평균과의 배수 비교 시 참고가 필요하다. 배당은 최근 연도 기준으로 지급 내역이 확인되지 않아 배당수익률 측면에서 다른 배당 지급 기업과 직접 비교하기는 어렵다. 2026년 2분기 분기 흑자 전환이라는 방향성 변화가 나타났지만, 연간 기준으로는 여전히 누적 손실 구조가 이어지고 있어 순자산 대비 주가 프리미엄·할인 여부를 판단할 때 이 같은 실적 회복의 지속성이 함께 고려될 필요가 있다.",
-  "en": "Winpac's share price relative to net asset value has at times traded near the upper end of its historical range, with securities analysts previously attributing elevated valuation levels partly to sustained earnings weakness and share dilution from capital raises. Compared with domestic OSAT peers, the company has been assessed as relatively smaller in both revenue scale and profitability, a point worth considering when comparing valuation multiples against industry averages. Dividend payment records have not been confirmed for recent years, making direct dividend-yield comparisons with dividend-paying peers difficult. While Q2 2026 marked a directional shift toward quarterly profitability, the annual accounts still reflect a cumulative loss structure, and the durability of this earnings recovery is a factor to weigh alongside any premium or discount to net asset value."
+  "ko": "PER는 최근 4개 분기 기준 순손실이라 산출되지 않는 상태다. 주가순자산비율은 1배를 소폭 밑도는 수준으로, 장부상 순자산 가치보다 낮은 가격에서 주가가 형성되어 있다. 배당 측면에서는 조회된 2018년부터 2022년까지 현금배당이 지급되지 않았다. PER을 쓸 수 없으니 업종 평균과 배수로 비교하기는 어렵고, 대신 사업 지표인 영업이익률 추이로 비교하게 된다. 영업이익률은 2023년 -26.5%, 2024년 -31.4%에서 2025년 -18.9%로 낮아졌고, 2026년 2분기에는 영업이익이 흑자로 전환했다. 부채비율이 107.8%로 자본 대비 부채가 여전히 많은 구조라서, 주가순자산비율을 읽을 때 재무 구조를 함께 봐야 한다. 주가는 2026년 9월 말과 10월 초 단기 수급이 몰리며 급등락을 보였고, 보도는 이를 단기 수급 확대로 설명했다.",
+  "en": "Because the trailing four quarters show net losses, the price-to-earnings ratio cannot be calculated. The price-to-book ratio sits slightly below 1x, meaning the share price is trading below book value per share. Cash dividends were not paid in each year from 2018 through 2022 that is available for review. Without a P/E, a comparison against industry average multiples is difficult, so the operating margin trend is the more usable benchmark. The operating margin moved from -26.5% in 2023 and -31.4% in 2024 to -18.9% in 2025, and operating profit turned positive in 2Q 2026. A debt-to-equity ratio of 107.8% means debt is still large relative to equity, so the price-to-book ratio should be read alongside the balance sheet. The share price swung sharply in late September and early October 2026, and press reports attributed the moves to a surge in short-term trading flows."
  },
  "bull": [
   {
    "title": {
-    "ko": "2분기 분기 흑자 전환",
-    "en": "Q2 Quarterly Turn to Profit"
+    "ko": "메모리 물량 재배정과 가동률 회복",
+    "en": "Memory volume reallocation and utilization recovery"
    },
    "body": {
-    "ko": "2026년 2분기 매출이 302억원으로 전분기 대비 크게 늘었고 영업이익 7.9억원을 기록하며 흑자로 전환했다. 회사는 물량 증가와 생산 효율화, 테스트 사업 확대가 실적 개선을 이끌었다고 설명했다. 4개 분기 연속 적자였던 이전 흐름과 비교하면 방향성 변화로 해석될 수 있다.",
-    "en": "Q2 2026 revenue rose sharply from the prior quarter to KRW 30.2 billion, with operating profit of KRW 0.79 billion marking a return to profit. The company attributed the improvement to higher volumes, manufacturing efficiency gains, and expansion of the test business. Compared with the preceding four consecutive quarters of losses, this represents a directional shift."
+    "ko": "SK하이닉스가 4년 만에 윈팩에 DDR4·DDR5 D램 플립칩 패키징 물량을 다시 배정했다는 보도가 나왔다. 2026년 1분기 패키징 가동률은 64.88%로 2025년 같은 분기 20.6%보다 크게 높아졌다. 웨이퍼 공급이 안정되면서 고객사 발주가 정상화되고 있다는 것이 회사 관계자의 설명이다.",
+    "en": "Press reports said SK hynix reallocated DDR4 and DDR5 DRAM flip-chip packaging volume to Winpac for the first time in four years. Packaging utilization was 64.88% in 1Q 2026, well above 20.6% in the same quarter of 2025. A company official said customer orders are normalizing as wafer supply stabilizes."
    }
   },
   {
    "title": {
-    "ko": "패키징·테스트 원스톱 체계",
-    "en": "One-Stop Packaging-and-Test Platform"
+    "ko": "비용 절감과 재무 구조 개선",
+    "en": "Cost reduction and balance sheet repair"
    },
    "body": {
-    "ko": "윈팩은 국내 후공정 업체 중 드물게 패키징과 테스트를 동시에 수행할 수 있는 인프라를 갖추고 있어 고객사로부터 일괄 수주가 가능하다. 이는 반도체 제조사나 팹리스 업체가 후공정을 단일 계약으로 처리할 수 있다는 점에서 차별화 요소로 언급된다. 신규 비메모리 웨이퍼 테스트 사업도 이 같은 원스톱 전략의 연장선으로 추진되고 있다.",
-    "en": "Winpac is one of few domestic back-end providers with infrastructure to perform both packaging and testing, enabling integrated order placement from customers. This is cited as a differentiator, since chipmakers or fabless firms can consolidate back-end orders under a single contract. The new non-memory wafer test business is being pursued as an extension of this one-stop strategy."
+    "ko": "2025년 영업손실은 143억원으로 2024년 233억원보다 줄었다. 보도에 따르면 회사는 설비와 자산을 매각하고 권고 사직으로 고정비를 줄였으며, 400억원 이상의 부채를 상환해 이자 부담을 낮췄다. 부채비율은 2023년 220.0%에서 2025년 107.8%로 낮아졌다.",
+    "en": "The operating loss narrowed to KRW 14.3 billion in 2025 from KRW 23.3 billion in 2024. Press reports said the company sold facilities and assets, cut fixed costs through voluntary retirements, and repaid more than KRW 40 billion of debt to ease interest burden. The debt-to-equity ratio fell from 220.0% in 2023 to 107.8% in 2025."
    }
   },
   {
    "title": {
-    "ko": "웨이퍼 수급 정상화에 따른 물량 회복",
-    "en": "Volume Recovery on Normalizing Wafer Supply"
+    "ko": "2분기 흑자 전환과 테스트 확대",
+    "en": "2Q profit turn and test expansion"
    },
    "body": {
-    "ko": "지난해 웨이퍼 단가 변동성과 공급 불안으로 고객사 발주가 위축됐던 반면, 최근에는 공급이 안정되며 패키징 발주가 정상화되고 있다는 회사 측 설명이 있다. 생산 가동률도 회복 흐름을 보이고 있는 것으로 파악된다. 이는 매출 회복의 배경으로 지목된다.",
-    "en": "Whereas volatile wafer pricing and supply instability had curbed customer orders last year, the company has said packaging orders are normalizing as supply stabilizes recently. Production utilization is also reported to be on a recovery track. This is cited as a factor behind the revenue rebound."
+    "ko": "2026년 2분기 매출은 302억원, 영업이익은 7.9억원으로 흑자 전환했다. 회사는 웨이퍼 테스트부터 파이널 테스트까지 잇는 턴키 서비스로 테스트 매출 비중을 키울 계획이라고 밝혔다. 2026년 1분기 테스트 가동률은 32.54%로 2025년 같은 분기 11.0%에서 올랐다.",
+    "en": "Revenue was KRW 30.2 billion in 2Q 2026, and operating profit was KRW 795 million, a turn to profit. The company said it plans to raise the share of test revenue through a turnkey service linking wafer test to final test. Test utilization was 32.54% in 1Q 2026, up from 11.0% in the same quarter of 2025."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "4년 연속 연간 적자 구조",
-    "en": "Four Consecutive Years of Annual Losses"
+    "ko": "3분기 이익 후퇴",
+    "en": "Profit pulled back in 3Q"
    },
    "body": {
-    "ko": "2022년 이후 지배주주순손실이 매년 이어지고 있으며 2025년에도 137억원의 순손실을 기록했다. 2분기 흑자전환이 연간 실적 흑자로 이어질지는 아직 확인되지 않았다. 영업활동현금흐름도 4년 연속 마이너스를 기록하고 있어 현금창출력 회복이 관찰 대상이다.",
-    "en": "Owner net losses have persisted every year since 2022, with a KRW 13.7 billion net loss recorded in 2025 as well. Whether the Q2 quarterly profit will translate into full-year profitability remains unconfirmed. Operating cash flow has also been negative for four straight years, making the recovery of cash generation capacity a key item to watch."
+    "ko": "2026년 3분기 영업이익은 2.2억원으로 전 분기 대비 72.3% 줄었다. 지배주주 순이익은 2분기 1.3억원 흑자에서 3분기 순손실 11.2억원으로 적자 전환했다. 2분기 흑자가 한 분기 만에 이어지지 않은 점이 약세 쪽 근거로 거론된다.",
+    "en": "Operating profit fell to KRW 220 million in 3Q 2026, down 72.3% from the prior quarter. Net income attributable to controlling shareholders swung from a KRW 127 million profit in 2Q 2026 to a KRW 1.12 billion loss in 3Q. The failure of the 2Q profit to carry into the next quarter is cited as a bearish point."
    }
   },
   {
    "title": {
-    "ko": "HBM 수혜 제한적",
-    "en": "Limited Direct HBM Exposure"
+    "ko": "누적 적자와 현금 유출",
+    "en": "Accumulated losses and cash outflows"
    },
    "body": {
-    "ko": "고대역폭메모리(HBM)는 대부분 반도체 제조사가 자체 생산하는 구조여서 윈팩과 같은 외주 후공정 업체에는 직접적인 수혜가 제한적이라는 점을 회사도 인정하고 있다. 이는 최근 반도체 업종 전반의 HBM 관련 테마와는 다른 궤적을 의미한다. 범용 메모리 시장 회복 속도에 실적이 더 크게 좌우될 수 있다.",
-    "en": "The company itself has acknowledged that since high-bandwidth memory is mostly produced in-house by chipmakers, direct benefits to outsourced back-end providers like Winpac are limited. This implies a different trajectory from the broader HBM-related theme currently affecting the semiconductor sector. Its results may be more heavily tied to the pace of commodity memory market recovery."
+    "ko": "2023년부터 2025년까지 영업활동 현금흐름은 적자였고, 2025년 말 부채총계는 678억원이다. 2025년 매출 755억원은 2022년 1,526억원의 절반 안팎에 머문다.",
+    "en": "Operating cash flow was negative in each year from 2023 to 2025, and total liabilities stood at KRW 67.8 billion at the end of 2025. Revenue of KRW 75.5 billion in 2025 is roughly half the KRW 152.6 billion recorded in 2022."
    }
   },
   {
    "title": {
-    "ko": "대주주 교환사채(EB) 관련 이벤트",
-    "en": "Controlling Shareholder's Exchangeable Bond Event"
+    "ko": "업황 의존과 고정비 구조",
+    "en": "Dependence on the cycle and a fixed-cost structure"
    },
    "body": {
-    "ko": "최대주주 어보브반도체가 발행한 윈팩 주식 교환대상 3회차 교환사채의 조기상환청구권(풋옵션) 청구 기간이 다가오고 있다. 교환가액과 실제 주가 간 격차가 컸던 시기가 보도된 바 있어, 관련 자금 조달·주식 수급 구조에 변화가 발생할 가능성이 있다. 이는 지분 구조나 유통 물량에 영향을 줄 수 있는 사안이다.",
-    "en": "The put-option exercise period for the third exchangeable bond issued against Winpac shares by controlling shareholder ABOV Semiconductor is approaching. Reports have noted a significant gap between the exchange price and the actual share price at certain points, raising the possibility of changes to the related financing and share supply structure. This is a matter that could affect the ownership structure or floating share volume."
+    "ko": "고객 이탈과 반도체 경기 하락이 겹친 시기에는 메모리 후공정 가동률이 20~25%까지 떨어졌다는 보도가 있다. 가동률이 떨어지면 고가 장비의 감가상각비 같은 고정비가 손실로 그대로 반영된다. HBM 물량은 대부분 제조사 자체 생산이라 직접 수혜 범위가 제한된다는 시각도 있다.",
+    "en": "Press reports said memory back-end utilization fell to 20 to 25% when customer losses coincided with a chip downturn. When utilization drops, fixed costs such as depreciation on expensive equipment flow straight into losses. Some view the direct benefit from HBM as limited because most HBM is produced in-house by chipmakers."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings Volatility"
+    "ko": "고객·업황 집중",
+    "en": "Customer and cycle concentration"
    },
    "body": {
-    "ko": "매출이 2022년 1,526억원에서 2024년 741억원으로 급감했던 사례에서 보듯 전방 반도체 업황 변화에 따른 매출·수익성 변동성이 크다. 고정비 비중이 높은 후공정 산업 특성상 물량 변화가 영업손익에 미치는 영향이 확대되는 구조다. 2분기 흑자전환의 지속 여부는 향후 분기 실적으로 확인이 필요하다.",
-    "en": "As shown by revenue plunging from KRW 152.6 billion in 2022 to KRW 74.1 billion in 2024, revenue and profitability are highly sensitive to upstream semiconductor cycle shifts. Given the high fixed-cost nature of the back-end industry, volume changes have an amplified effect on operating results. Whether the Q2 return to profit is sustained needs to be confirmed through subsequent quarterly results."
+    "ko": "매출은 메모리 업황과 웨이퍼 수급에 크게 좌우된다. 2025년에는 웨이퍼 가격 변동성이 커지자 고객사가 발주를 줄였다는 설명이 있다. 고객 재배정 물량이 일시적인지 연간 기조인지는 사업보고서의 매출 추이로 가려진다.",
+    "en": "Revenue depends heavily on the memory cycle and wafer supply. In 2025, customers reduced orders as wafer price volatility increased, according to the company's explanation. Whether the reallocated volume is temporary or a full-year trend will become clear from the revenue trend in the annual report."
    }
   },
   {
    "cat": {
-    "ko": "재무구조·자금조달",
-    "en": "Financial Structure and Financing"
+    "ko": "재무 유동성",
+    "en": "Financial liquidity"
    },
    "body": {
-    "ko": "부채비율이 2025년 107.8%로 개선되었으나 과거 여러 차례의 유상증자와 교환사채 발행 이력이 있으며, 이는 주식 희석 가능성을 동반해온 구조다. 영업활동현금흐름이 지속적으로 마이너스인 만큼 추가 외부 자금조달 필요성이 이어질 수 있다. 최대주주의 자금 지원 의지와 여력도 함께 지켜볼 요인이다.",
-    "en": "The debt ratio improved to 107.8% in 2025, but the company has a history of multiple capital increases and exchangeable bond issuances, a structure that has come with potential share dilution. With operating cash flow persistently negative, the need for additional external financing could continue. The controlling shareholder's willingness and capacity to provide continued support is also a factor to monitor."
+    "ko": "영업활동 현금흐름은 2023년부터 2025년까지 유출이 이어졌고, 2025년 말 부채총계는 678억원이다. 부채 상환과 설비 매각으로 부담을 낮췄다는 보도가 있으나, 현금 창출이 흑자 전환과 함께 회복됐는지는 다음 사업보고서의 영업활동 현금흐름으로 확인된다.",
+    "en": "Operating cash flow was negative from 2023 through 2025, and total liabilities were KRW 67.8 billion at the end of 2025. Press reports say debt repayment and asset sales eased the burden, but whether cash generation has recovered alongside the profit turn will show in operating cash flow in the next annual report."
    }
   },
   {
    "cat": {
-    "ko": "고객 집중·내재화 리스크",
-    "en": "Customer Concentration and Insourcing Risk"
+    "ko": "원가·가동률 변수",
+    "en": "Cost and utilization variables"
    },
    "body": {
-    "ko": "주요 고객사 중 하나로 알려진 대형 메모리 제조사에 대한 매출 의존도가 있는 것으로 파악되며, 과거 업계에서는 대형 고객사의 후공정 내재화 확대가 외주업체 물량 감소로 이어진 사례가 보도된 바 있다. 특정 고객 의존도가 높은 구조에서는 고객사의 내부 정책 변화가 실적에 직접적인 영향을 줄 수 있다. 회사는 거래선 다변화를 추진 중이나 그 성과는 지속적으로 확인이 필요하다.",
-    "en": "The company is understood to have revenue dependence on a major memory manufacturer identified as one of its key customers, and industry reports have previously noted cases where large customers' expansion of in-house back-end capacity led to reduced outsourced volumes. In a structure with high dependence on a specific customer, changes in that customer's internal policy can directly affect results. The company is pursuing customer diversification, but the results of this effort require ongoing confirmation."
+    "ko": "금선 가격 상승분을 제품 가격에 반영하는 작업은 추진 중이라는 설명이 전부다. 반영 폭이 실적에 어떻게 나타나는지는 이후 분기 보고서에서 볼 수 있다. 가동률이 다시 떨어지면 감가상각비 부담이 손익을 크게 흔들 수 있다.",
+    "en": "The pass-through of higher gold wire costs into product prices is described only as an ongoing effort. How much of it shows up in results will be visible in later quarterly reports. A drop in utilization could again swing profit sharply because of depreciation costs."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중순경(잠정)",
-    "en": "Around mid-November 2026 (tentative)"
+    "ko": "2026년 12월 31일",
+    "en": "December 31, 2026"
    },
    "what": {
-    "ko": "2026년 3분기 실적 공시 여부를 확인해, 2분기 흑자전환이 3분기에도 이어지는지 점검할 필요가 있다.",
-    "en": "Check for the Q3 2026 earnings disclosure to assess whether the Q2 return to profit continues into the third quarter."
+    "ko": "12월 결산 법인인 윈팩의 2026년 사업연도가 끝나는 날이다. 4분기 가동률과 SK하이닉스 물량 반영 정도가 2026년 연간 실적의 바탕이 된다.",
+    "en": "The fiscal year of Winpac, which closes its books in December, ends on this date. Fourth-quarter utilization and how much of the SK hynix volume is reflected will form the basis of 2026 annual results."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 중",
-    "en": "During the second half of 2026"
+    "ko": "2027년 2월 전후",
+    "en": "Around February 2027"
    },
    "what": {
-    "ko": "비메모리 웨이퍼 테스트 사업의 신규 고객 확보 및 매출 반영 여부를 관련 공시·IR 자료를 통해 확인할 필요가 있다.",
-    "en": "Monitor company disclosures and IR materials for confirmation of new customer acquisition and revenue contribution from the non-memory wafer test business."
+    "ko": "2025년 연간 잠정 실적이 2026년 2월 6일 공시된 전례를 기준으로 본 시점이다. 2026년 연간 영업손익이 흑자로 돌아설지, 2025년 영업손실 143억원과 비교하는 지점이다.",
+    "en": "Based on the precedent of the 2025 annual preliminary results disclosed on February 6, 2026, this is when 2026 annual results are expected. The key comparison is whether operating profit turns positive against the KRW 14.3 billion operating loss in 2025."
    }
   },
   {
    "when": {
-    "ko": "2027년 6월 무렵(EB 풋옵션 청구 기간 도래 예정)",
-    "en": "Around June 2027 (EB put-option exercise period due)"
+    "ko": "2027년 3월 31일까지",
+    "en": "By March 31, 2027"
    },
    "what": {
-    "ko": "최대주주 어보브반도체가 발행한 3회차 교환사채의 조기상환청구권 행사 여부와 그에 따른 지분·자금 구조 변화를 확인할 필요가 있다.",
-    "en": "Check whether the put option on the third exchangeable bond issued by controlling shareholder ABOV Semiconductor is exercised and any resulting change in ownership or financing structure."
+    "ko": "2026년 사업보고서 제출 기한이다. 연간 영업이익률, 부채비율, 영업활동 현금흐름이 다음 정기보고서의 확인 지점이다.",
+    "en": "This is the deadline for filing the 2026 annual report. The annual operating margin, debt-to-equity ratio and operating cash flow are the next checkpoints in the periodic report."
    }
   },
   {
    "when": {
-    "ko": "다음 분기 공시 시점",
-    "en": "At the next quarterly disclosure"
+    "ko": "2027년 3월경",
+    "en": "Around March 2027"
    },
    "what": {
-    "ko": "패키징·테스트 부문별 매출 비중 변화와 가동률 추이를 확인해 수익성 개선의 구조적 지속 여부를 판단할 필요가 있다.",
-    "en": "Verify changes in the packaging-versus-test revenue mix and utilization trends to assess whether the profitability improvement is structurally sustainable."
+    "ko": "2026년 정기주주총회는 3월 27일 열려 주식병합과 정관 변경이 가결됐다. 같은 시기 열리는 총회의 안건 변화가 다음 확인 지점이다.",
+    "en": "The 2026 annual general meeting was held on March 27, where a share consolidation and articles amendment were approved. Changes in agenda items at the next meeting around the same time are the next checkpoint."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "윈팩은 2026년 2분기에 매출 302억원, 영업이익 7.9억원으로 4개 분기 연속 적자에서 분기 흑자로 전환하며 방향성 변화를 보였다. 그러나 2022년부터 2025년까지 이어진 연간 순손실 구조는 아직 해소되지 않았고, 2025년에도 137억원의 순손실을 기록했다. 회사는 물량 회복과 테스트 사업 확대를 실적 개선의 배경으로 제시하고 있으며, 비메모리 웨이퍼 테스트라는 신규 성장동력을 통해 턴키 서비스 확대를 계획하고 있다. 반면 HBM 관련 직접 수혜는 제한적이라는 점, 대형 고객사 의존도, 최대주주의 교환사채 풋옵션 이벤트 등은 계속 확인이 필요한 요인이다. 부채비율은 개선되고 있지만 영업활동현금흐름은 여전히 마이너스로, 재무구조 개선의 지속성도 관찰 대상이다. 향후 분기 실적과 신규 사업의 매출 기여 속도가 이번 흑자전환의 지속 여부를 가늠하는 핵심 지표가 될 것으로 보인다.",
-   "en": "Winpac showed a directional shift in Q2 2026, posting revenue of KRW 30.2 billion and operating profit of KRW 0.79 billion, ending four consecutive quarters of losses. However, the annual net-loss pattern that has persisted from 2022 through 2025 has not yet been resolved, with a KRW 13.7 billion net loss recorded in 2025 as well. The company points to volume recovery and test business expansion as the drivers of the improvement, and plans to expand turnkey services through its new non-memory wafer test growth driver. On the other hand, limited direct HBM exposure, dependence on a major customer, and the pending exchangeable bond put-option event involving the controlling shareholder remain factors requiring ongoing confirmation. The debt ratio is improving, but operating cash flow remains negative, making the durability of the financial structure improvement another item to watch. Future quarterly results and the pace of revenue contribution from the new business will likely be the key indicators for gauging whether this return to profit proves sustainable."
+   "ko": "윈팩은 2002년 설립된 반도체 후공정 기업으로, 패키징과 테스트를 함께 수행하는 구조를 갖췄다. 매출은 2022년 1,526억원에서 2025년 755억원으로 줄었고, 2023년부터 2025년까지 영업손실과 지배주주 순손실이 이어졌다. 2025년에는 영업손실이 143억원으로 2024년 233억원보다 줄었고, 2026년 2분기에는 영업이익 7.9억원으로 흑자 전환했다. 같은 해 3분기에는 영업이익이 2.2억원으로 줄고 순손실 11.2억원으로 적자 전환해, 흑자가 분기 단위로 이어졌는지는 아직 짧은 기간의 데이터다. 가동률은 2026년 1분기 패키징 64.88%로 회복됐다는 보도가 있고, SK하이닉스 패키징 물량 재배정이 알려졌다. 강세 요인은 물량 회복과 비용 절감이고, 약세 요인은 테스트 수요의 미회복과 최근 4개 분기 지배주주 순손실 합계 68.2억원, 영업활동 현금흐름의 유출이다. 부채비율은 2023년 220.0%에서 2025년 107.8%로 낮아졌지만 2025년 말 부채총계는 678억원이다. 다음 확인 지점은 2026년 사업연도 종료 후 발표되는 연간 실적과 2026년 사업보고서의 영업이익률 및 영업활동 현금흐름이다.",
+   "en": "Winpac, founded in 2002, is a semiconductor back-end company that combines packaging and testing. Revenue fell from KRW 152.6 billion in 2022 to KRW 75.5 billion in 2025, and operating losses and net losses attributable to controlling shareholders continued from 2023 through 2025. The operating loss narrowed to KRW 14.3 billion in 2025 from KRW 23.3 billion in 2024, and operating profit of KRW 795 million in 2Q 2026 marked a turn to profit. In 3Q 2026 operating profit fell to KRW 220 million and the company posted a net loss of KRW 1.12 billion, so whether profit can persist quarter to quarter is still a short data series. Press reports say packaging utilization recovered to 64.88% in 1Q 2026, and SK hynix volume reallocation has been reported. Strengths include volume recovery and cost reduction, while weaknesses include slow test demand recovery, a KRW 6.82 billion net loss attributable to controlling shareholders over the last four quarters, and negative operating cash flow. The debt-to-equity ratio fell from 220.0% in 2023 to 107.8% in 2025, but total liabilities were KRW 67.8 billion at the end of 2025. The next checkpoints are the annual results released after the 2026 fiscal year closes and the operating margin and operating cash flow in the 2026 annual report."
   }
  },
  "sources": [
-  "https://www.k5.co.kr/stock/097800",
-  "https://m.irgo.co.kr/IR-ROOM/097800",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Corp.asp?pGB=1&gicode=A097800&cID=&MenuYn=Y&ReportGB=&NewMenuID=102&stkGb=701",
-  "https://itooza.com/vscore/097800",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A097800&MenuYn=Y&ReportGB=B&NewMenuID=105&stkGb=701",
-  "https://m.thinkpool.com/item/097800",
-  "https://www.kokstock.com/stock/item.asp?item_cd=097800",
-  "https://www.saramin.co.kr/zf_user/company-info/view/csn/WEt6OUVjeFQ3T0VteXpZK2tVbHBvZz09/company_nm/(%EC%A3%BC)%EC%9C%88%ED%8C%A9",
-  "https://zdnet.co.kr/view/?no=20260813171241",
-  "http://www.dailyinvest.kr/news/articleView.html?idxno=60571",
-  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=411453",
-  "https://www.thelec.kr/news/articleView.html?idxno=13949",
-  "https://www.etoday.co.kr/news/view/2592714",
-  "https://www.thebell.co.kr/front/newsview.asp?key=202508121050539400103422",
   "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A097800",
-  "https://alphasquare.co.kr/home/stock-summary?code=097800",
-  "https://www.thebell.co.kr/front/newsview.asp?key=202111111512257160109175",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A102120"
+  "http://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=097800",
+  "https://www.k5.co.kr/stock/097800",
+  "https://ssl.pstatic.net/imgstock/upload/research/company/1602462271460.pdf",
+  "https://goinsider.kr/en/stock/00536286",
+  "https://news.nate.com/view/20260206n32899",
+  "https://edaily.co.kr/news/read?mediaCodeNo=257&newsId=01990966619173168",
+  "https://zdnet.co.kr/view/?no=20260813171241",
+  "https://m.etoday.co.kr/news/view/2592714",
+  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=648023",
+  "https://m.news.nate.com/view/20260327n30782",
+  "https://www.thelec.kr/news/articleView.html?idxno=62922",
+  "https://www.job-post.co.kr/news/articleView.html?idxno=230016",
+  "https://www.job-post.co.kr/news/articleView.html?idxno=230252",
+  "https://m.news.nate.com/view/20260206n32899",
+  "https://www.cbinsights.com/company/winpac"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "097800",
  "name": "윈팩",
  "name_en": "WINPAC INC.",
@@ -223,11 +221,11 @@
   "반도체"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 18:51",
- "dataDate": "20260904",
+ "reportDate": "2026-11-18",
+ "reportTs": "2026-11-18 14:35",
+ "dataDate": "20261117",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-11-18",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -297,12 +295,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 18295749465,
-    "op": -3561251744,
-    "np_owner": -5511162335
-   },
-   {
     "q": "2025Q3",
     "rev": 21438659964,
     "op": -2963767932,
@@ -325,28 +317,39 @@
     "rev": 30184870608,
     "op": 794949161,
     "np_owner": 126508217
+   },
+   {
+    "q": "2026Q3",
+    "rev": 27922464926,
+    "op": 220088282,
+    "np_owner": -1123980016
    }
   ],
   "valuation": {
-   "price": 1920,
-   "mcap": 0.0524,
+   "price": 1941,
+   "mcap": 0.053,
    "shares": 27290045,
    "total_shares": 27290045,
    "wavg_shares": null,
    "per": null,
-   "eps": -278,
-   "pbr": 0.8614,
-   "bps": 2229,
-   "roe_ttm": -12.8,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": -7588193616,
+   "eps": -250,
+   "pbr": 0.8867,
+   "bps": 2189,
+   "roe_ttm": -10.8,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": -6821357737,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 0.85,
+   "eps_src": "순이익÷주식수",
+   "pbr_krx": 0.84,
    "bps_krx": 2305.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
-   "div": 0.0
+   "div": 0.0,
+   "hidden": {
+    "per": "loss"
+   }
   }
- }
+ },
+ "textRules": 3
 }

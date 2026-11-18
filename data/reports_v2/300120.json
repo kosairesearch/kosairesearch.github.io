@@ -1,220 +1,219 @@
 {
  "title": {
-  "ko": "라온피플, TDG 편입 후 외형 급증 속 수익성 과제",
-  "en": "LaonPeople: Revenue Surges After TDG Consolidation, Profitability Still a Challenge"
+  "ko": "매출은 늘고 적자는 줄었으나 재무 부담은 남아",
+  "en": "Sales Recover and Losses Narrow; Balance Sheet Still Strained"
  },
  "lead": {
-  "ko": "라온피플은 클라우드 자회사 티디지(TDG) 편입으로 매출 규모가 크게 늘었지만, 연간 기준 영업손실이 이어지는 가운데 분기별로는 흑자와 적자를 오가는 변동성 큰 흐름을 보이고 있다.",
-  "en": "LaonPeople has seen its revenue base expand sharply after consolidating cloud subsidiary TDG, but annual operating losses have persisted while quarterly results swing between profit and loss."
+  "ko": "라온피플은 2024년 이후 매출이 2년 연속 늘고 2026년 3분기까지 분기 영업손실 폭이 줄었지만, 2025년 말 부채비율 345.8%와 4년 연속 지배주주 순손실이 다음 확인 지점으로 남아 있다.",
+  "en": "LaonPeople's sales have grown for two straight years since 2023 and its quarterly operating losses narrowed through Q3 2026, but a 345.8% debt ratio and four straight years of net losses attributable to controlling shareholders remain the key checkpoints."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출 2,238억원으로 전년 대비 소폭 늘었으나 영업손실 162억원이 이어졌다",
-   "en": "2025 consolidated revenue reached KRW 223.8 billion, a slight increase year-on-year, but the operating loss of KRW 16.2 billion continued"
+   "ko": "매출 회복: 2025년 매출은 2,238억원으로 전년 대비 1.6% 증가했고, 2024년부터 2025년까지 2년 연속 늘었다.",
+   "en": "Sales recovery: 2025 revenue was KRW 223.8 billion, up 1.6% year on year, and has risen for two consecutive years from 2024 to 2025."
   },
   {
-   "ko": "2025년 4분기와 2026년 2분기 순이익이 흑자로 전환되는 등 분기별 실적 변동성이 크다",
-   "en": "Net income turned positive in Q4 2025 and Q2 2026, highlighting significant quarter-to-quarter volatility"
+   "ko": "수익성: 2025년 영업손실은 162억원(영업이익률 -7.2%)이며, 2023년부터 3년 연속 영업적자, 2022년부터 4년 연속 지배주주 순손실이다.",
+   "en": "Profitability: 2025 operating loss was KRW 16.2 billion (operating margin -7.2%), with operating losses for three consecutive years from 2023 and net losses attributable to controlling shareholders for four consecutive years from 2022."
   },
   {
-   "ko": "197억원 규모 유상증자와 전환사채 상환을 마치며 재무구조를 정비했으나 창업주 지분율이 크게 낮아졌다",
-   "en": "The company completed a KRW 19.7 billion rights offering and convertible bond redemptions to restructure its finances, but the founder's stake was significantly diluted"
+   "ko": "분기 흐름: 2025년 4분기 영업이익 24.1억원으로 흑자 전환한 뒤, 2026년 1분기부터 3분기까지 3개 분기 연속 영업적자이나 손실 폭은 2026년 2분기 4.9억원, 3분기 1.7억원으로 줄었다.",
+   "en": "Quarterly trend: operating profit of KRW 2.41 billion in Q4 2025 turned positive, but Q1 to Q3 2026 were three consecutive quarters of operating losses, narrowing to KRW 495 million in Q2 and KRW 171 million in Q3 2026."
   },
   {
-   "ko": "AI 머신비전 본업(반도체·2차전지 검사)과 클라우드 MSP·생성형 AI 플랫폼 사업이 병행되는 구조다",
-   "en": "The company operates a dual structure combining its core AI machine vision business (semiconductor and battery inspection) with cloud MSP and generative AI platform operations"
+   "ko": "성장 동력: 골프센서 2026년 3분기 누계 매출은 41억 8,000만원으로 전년 동기 대비 약 380% 늘었고, 생성형 AI 플랫폼 매출도 큰 폭으로 늘었다.",
+   "en": "Growth drivers: golf sensor revenue for the first nine months of 2026 reached KRW 4.18 billion, up about 380% year on year, while generative AI platform revenue also rose sharply."
   },
   {
-   "ko": "정부의 자율제조·AI 바우처 정책이 사업 확대의 우호적 환경으로 거론된다",
-   "en": "Government policies on autonomous manufacturing and AI vouchers are cited as a favorable backdrop for business expansion"
+   "ko": "재무 구조: 2025년 말 부채비율은 345.8%이고 부채총계 1,522억원이 자본총계 440억원을 웃돈다. 2026년 2월 유상증자 197억원으로 2회차 CB를 상환했다.",
+   "en": "Balance sheet: the debt ratio at end-2025 was 345.8%, with total liabilities of KRW 152.2 billion exceeding total equity of KRW 44 billion. A KRW 19.7 billion rights offering in February 2026 funded the repayment of the second convertible bond."
   }
  ],
  "business": {
-  "ko": "라온피플은 2010년 설립된 AI 비전 솔루션 전문기업으로, 머신비전 카메라와 이미지 프로세싱 기술을 활용해 반도체·2차전지·자동차·PCB 등 제조 현장의 불량 검사를 수행하는 AI 머신비전 솔루션을 핵심 사업으로 영위한다. 여기에 골프센서, AI덴탈 솔루션, AI교통 솔루션, AI스마트팜 솔루션 등으로 사업영역을 확장한 AI 스마트비전 솔루션과, 스마트폰 카메라 모듈을 검사하는 카메라 모듈 검사 솔루션도 보유하고 있다. 자회사 라온로드는 지능형교통체계(ITS)와 교통신호제어 시스템을, 라온메디는 디지털 치과 및 수면무호흡증 진단 등 의료 AI 소프트웨어를 담당한다. 2024년에는 클라우드 MSP(Managed Service Provider) 기업 티디지(TDG)를 인수해 AI플랫폼 사업과 생성형 AI 비즈니스로 사업을 크게 확장했으며, 이 인수를 통해 2024년부터 클라우드 매출이 연결 실적에 본격 반영되기 시작했다. 티디지는 MS 라이선스(LSP) 및 클라우드 솔루션 파트너(MSP) 사업을 영위하며, 라온피플의 AI 기술과 플랫폼 기술과의 시너지가 기대되는 영역이다. 회사는 2024년 클라우드 MSP 자회사 티디지와 함께 AI개발 플랫폼 EZ-PLANET을 출시해 데이터 수집부터 AI모델 배포까지 이어지는 MLOps 서비스를 제공하고 있다. 자체 개발한 딥러닝 SDK를 기반으로 고객 맞춤 최적화가 가능하다는 점을 경쟁우위로 내세우고 있으며, 산업용 AI검사 분야에서는 완성차 외관검사, PCB 검사, 의류·원단 검사 등 기존 규칙기반 머신비전으로는 어려웠던 영역까지 적용 범위를 넓혀가고 있다. 태국 붕깐주와는 생성형 AI를 활용한 홍수·재난감지 솔루션 공급 관련 업무협약을 체결하고 시범사업을 진행하는 등 해외 시장 개척도 병행하고 있다.",
-  "en": "LaonPeople, founded in 2010, is an AI vision solutions specialist whose core business is AI machine vision solutions used for defect inspection in semiconductor, secondary battery, automotive, and PCB manufacturing, leveraging machine vision cameras and image processing technology. The company has also expanded into AI smart vision solutions covering golf sensors, AI dental solutions, AI traffic solutions, and AI smart farm solutions, alongside camera module inspection solutions for smartphone camera modules. Subsidiary LaonRoad handles intelligent transport systems (ITS) and traffic signal control, while subsidiary LaonMedi covers digital dentistry and sleep apnea diagnostic AI software. In 2024, the company acquired cloud MSP (Managed Service Provider) firm TDG, substantially expanding into AI platform and generative AI businesses, and cloud revenue began to be reflected in full in consolidated results starting that year. TDG operates Microsoft license (LSP) and cloud solution partner (MSP) businesses, an area where synergy with LaonPeople's AI and platform technology is anticipated. Together with TDG, the company launched the EZ-PLANET AI development platform in 2024, providing MLOps services spanning data collection through AI model deployment. The company highlights its proprietary deep learning SDK enabling customer-specific optimization as a competitive edge, and in industrial AI inspection it has extended into areas difficult for rule-based machine vision, such as vehicle exterior inspection, PCB inspection, and textile inspection. The company has also signed a memorandum of understanding with Thailand's Bueng Kan province for a generative-AI-based flood and disaster detection solution and is running a pilot project there as part of overseas market development."
+  "ko": "라온피플은 2010년 설립된 AI 비전 솔루션 전문기업으로, 제조 공정의 품질 검사에 쓰는 AI 머신비전과 스마트비전 솔루션을 핵심으로 한다. 회사는 2023년 (주)티디지 지분 인수를 통해 종속회사 3개를 보유하는 구조가 됐다. 클라우드 사업은 자회사 TDG가 맡고 있으며, 라온피플의 전체 매출에 90% 이상을 차지하는 클라우드 사업은 자회사 TDG가 담당한다는 2026년 3월 보도가 있다. 모회사는 생성형 AI 플랫폼 '하이펜(HI FENN)'과 '오딘AI(ODIN AI)'를 공공기관과 기업에 공급하고 있으며, 두 플랫폼의 매출은 2026년 3분기 누계 기준 전년 동기 대비 각각 816%, 920% 늘었다고 회사가 밝혔다. 골프센서는 북미와 호주 등 해외시장 공급 확대에 따라 2026년 3분기 누적 매출액이 41억 8,000만원으로 전년 동기 대비 약 380% 증가했다. 정부 과제로는 총 702억원 규모의 '피지컬 AI SDF 특화 기반모델 연구개발' 국책과제를 수주했고, 'K-디스플레이 AX 실증산단' 사업 등 국책 과제에도 참여하고 있다. 비전검사 사업은 2차전지나 모바일기기, 반도체 생산 기업으로 고객층을 넓혀 왔다. 골프센서는 미주와 유럽 시장을 중심으로 수출되며 공식 리셀러 채널을 통해 공급된다. 경쟁 구도에서 라온피플은 삼성에스디에스(Samsung SDS)나 현대오토에버(Hyundai Autoever) 같은 대형 IT 서비스 기업과 비교하면 매출 규모가 작은 전문 기업이다.",
+  "en": "LaonPeople is an AI vision solutions specialist founded in 2010, centered on AI machine vision and smart vision solutions for quality inspection in manufacturing. The company acquired a stake in TDG in 2023 and now holds three subsidiaries. Its cloud business is handled by subsidiary TDG, which accounts for more than 90% of total revenue according to a March 2026 report. The parent company supplies the generative AI platforms HI FENN and ODIN AI to public institutions and enterprises, and the company said revenue from both platforms rose 816% and 920% respectively year on year in the first nine months of 2026. Golf sensor revenue for the same period reached KRW 4.18 billion, up about 380% year on year, driven by overseas supply in North America and Australia. Government projects include a KRW 70.2 billion physical AI foundation model R&D program and the K-Display AX demonstration industrial complex project. Vision inspection customers have expanded to secondary battery, mobile device and semiconductor manufacturers. Golf sensors are exported mainly to the Americas and Europe through official resellers. Compared with large IT services players such as Samsung SDS and Hyundai Autoever, LaonPeople is a much smaller specialist."
  },
  "earnings": {
-  "ko": "라온피플의 연간 실적은 티디지 인수를 기점으로 매출 규모가 완전히 달라졌다. 2022년 매출 265억원에 영업이익 24억원(영업이익률 9.0%)을 기록했던 회사는 2023년 매출이 112억원으로 급감하며 영업손실 111억원을 기록했고, 2024년에는 티디지 편입 효과로 매출이 2,202억원까지 뛰었으나 영업손실은 162억원으로 여전히 이어졌다. 2025년 연결 매출은 2,238억원으로 전년 대비 소폭 늘었지만 영업손실은 162억원으로 비슷한 수준을 유지했고, 지배주주 순손실은 173억원으로 2024년의 123억원보다 확대됐다. 분기 흐름을 보면 변동성이 매우 크다. 2025년 2분기 매출 640억원에 영업손실 45억원, 3분기에는 매출이 199억원까지 줄며 영업손실이 62억원으로 커졌으나, 4분기에는 매출이 950억원으로 급증하며 영업이익 24억원, 지배주주 순이익 13억원으로 분기 기준 흑자 전환에 성공했다. 2026년에는 1분기 매출 399억원에 영업손실 27억원을 기록한 뒤, 2분기에는 매출 641억원, 영업손실 5억원 수준으로 손실 규모를 크게 줄였고 지배주주 순이익은 5억원으로 흑자를 기록했다. 이 같은 분기별 매출 편차는 클라우드·플랫폼 사업의 계약 인식 시점에 따른 영향이 큰 것으로 보이며, 연간 기준으로는 아직 뚜렷한 이익 안정화 단계에 이르지 못한 모습이다. 현금흐름 측면에서도 2025년 영업활동현금흐름이 마이너스 106억원을 기록해 2024년의 소폭 양수(3.8억원)에서 다시 악화됐다.",
-  "en": "LaonPeople's annual results changed fundamentally after the TDG acquisition. The company, which posted KRW 26.5 billion in revenue and KRW 2.4 billion in operating profit (a 9.0% operating margin) in 2022, saw revenue collapse to KRW 11.2 billion in 2023 with an operating loss of KRW 11.1 billion, before revenue jumped to KRW 220.2 billion in 2024 on the TDG consolidation effect, though the operating loss of KRW 16.2 billion persisted. Consolidated revenue in 2025 rose slightly year-on-year to KRW 223.8 billion, while the operating loss remained at a similar KRW 16.2 billion, and the net loss attributable to owners widened to KRW 17.3 billion from KRW 12.3 billion in 2024. Quarterly patterns show substantial volatility: Q2 2025 revenue was KRW 64.0 billion with an operating loss of KRW 4.5 billion, Q3 2025 revenue fell to KRW 19.9 billion with the operating loss widening to KRW 6.2 billion, but Q4 2025 revenue surged to KRW 95.0 billion, delivering an operating profit of KRW 2.4 billion and net income attributable to owners of KRW 1.3 billion, marking a quarterly swing to profit. In 2026, Q1 revenue was KRW 39.9 billion with an operating loss of KRW 2.7 billion, before Q2 revenue reached KRW 64.1 billion with the operating loss narrowed to about KRW 0.5 billion and net income attributable to owners turning positive at KRW 0.5 billion. This quarterly revenue variability appears largely driven by the timing of contract recognition in the cloud and platform businesses, and on an annual basis the company has yet to reach a clearly stabilized profit phase. On the cash flow side, operating cash flow turned negative at KRW 10.6 billion in 2025, deteriorating again from a slightly positive KRW 0.38 billion in 2024."
+  "ko": "연간 매출은 2022년 265억원에서 2023년 112억원으로 57.6% 감소한 뒤, 2024년 2,202억원(전년 대비 1,858.5% 증가)으로 크게 늘었다. 2025년 매출은 2,238억원으로 전년 대비 1.6% 증가해 2023년 저점 이후 2024년부터 2025년까지 2년 연속 증가했고, 2022~2025년 중 가장 큰 해는 2025년이다. 자회사 TDG가 연결재무제표로 라온피플 실적에 편입된 점이 매출 규모를 키운 배경으로 꼽힌다. 영업이익은 2022년 23.9억원의 흑자에서 2023년 영업손실 111억원으로 적자 전환했고, 2024년 영업손실 162억원에 이어 2025년에도 영업손실 162억원을 기록했다. 2025년 결산 전년동기 대비 연결기준 영업손실은 0.4% 감소해 손실 규모는 사실상 유지됐다. 영업이익률은 2022년 9.0%에서 2023년 -99.0%, 2024년 -7.4%, 2025년 -7.2%로 나타났다. 지배주주 순손실은 2022년 4.5억원, 2023년 81.8억원, 2024년 123억원, 2025년 173억원으로 4년 연속 적자다. 당기순손실(비지배지분 포함)은 2025년 204억원으로 지배주주 순손실보다 큰데, 주주간 계약으로 인한 파생상품평가손실이 원인으로 지목됐다. 영업활동 현금흐름은 2022년 20.8억원에서 2023년 -73.5억원, 2024년 3.8억원, 2025년 -106억원으로 2025년에 다시 유출이 커졌다. 분기로 보면 2025년 3분기 매출 199억원과 영업손실 62.2억원에서 4분기 매출 950억원(전 분기 대비 377.5% 증가), 영업이익 24.1억원으로 전환됐다. 회사 관계자는 4분기에 정부 과제 3~4개를 한꺼번에 확보해 약 20억원 규모 지원금을 받았고 이 영향으로 영업이익이 개선됐다고 설명했다. 2026년 1분기 매출은 399억원으로 58.0% 줄며 영업손실 26.9억원으로 적자 전환했고, 2분기 매출 641억원·영업손실 4.9억원, 3분기 매출 294억원·영업손실 1.7억원으로 이어졌다. 같은 기간 지배주주 순이익은 2025년 4분기 13.4억원, 2026년 2분기 5.2억원으로 흑자였고, 최근 4개 분기 지배주주 순손실 합계는 14.4억원이다. 2026년 10월 21일 별도재무제표 기준 3분기 잠정치로 영업이익 11억 8,000만원이 발표됐으나 이는 연결 공시와 기준이 달라 별도 수치로 구분해 읽어야 한다.",
+  "en": "Annual revenue fell 57.6% from KRW 26.5 billion in 2022 to KRW 11.2 billion in 2023, then rose to KRW 220.2 billion in 2024, an increase of 1,858.5%. 2025 revenue was KRW 223.8 billion, up 1.6%, marking two consecutive years of growth from the 2023 low, and 2025 was the largest year in the 2022 to 2025 period. The consolidation of subsidiary TDG into group financial statements is cited as a factor behind the scale increase. Operating profit of KRW 2.39 billion in 2022 turned into an operating loss of KRW 11.1 billion in 2023, followed by losses of KRW 16.2 billion in both 2024 and 2025. The 2025 operating loss was about 0.4% smaller than in 2024 on a consolidated basis, so the loss size was largely unchanged. Operating margin moved from 9.0% in 2022 to -99.0% in 2023, -7.4% in 2024 and -7.2% in 2025. Net loss attributable to controlling shareholders was KRW 450 million in 2022, KRW 8.18 billion in 2023, KRW 12.3 billion in 2024 and KRW 17.3 billion in 2025, four consecutive years of losses. Net loss including non-controlling interests was KRW 20.4 billion in 2025, a gap that a March 2026 report attributed to derivative valuation losses tied to a shareholder agreement. Operating cash flow was KRW 2.08 billion in 2022, negative KRW 7.35 billion in 2023, KRW 378 million in 2024 and negative KRW 10.6 billion in 2025. Quarterly revenue went from KRW 19.9 billion in Q3 2025 to KRW 95 billion in Q4 2025, up 377.5% quarter on quarter, with operating profit of KRW 2.41 billion in Q4 after an operating loss of KRW 6.22 billion in Q3 2025. A company official attributed the Q4 2025 profit partly to about KRW 2 billion in personnel cost subsidies from government projects. Q1 2026 revenue was KRW 39.9 billion with an operating loss of KRW 2.69 billion, Q2 revenue was KRW 64.1 billion with an operating loss of KRW 495 million, and Q3 revenue was KRW 29.4 billion with an operating loss of KRW 171 million. Net loss attributable to controlling shareholders over the last four quarters totaled KRW 1.44 billion. A separate-basis preliminary Q3 2026 operating profit of KRW 1.18 billion was announced on October 21, 2026, which differs from the consolidated figures and should be read separately."
  },
  "industry": {
-  "ko": "AI 머신비전 산업은 반도체, 2차전지, 자동차, 디스플레이 등 다양한 제조업 전방산업의 품질검사 자동화 수요와 직결돼 있다. 정부는 반도체·이차전지 등 주요 업종별로 AI 머신비전이 핵심인 '선도모델' 공장 구축에 5년간 1조원 이상을 투자하는 자율제조 공장 모델 확산 정책을 추진 중이며, 스마트제조혁신 3.0을 통해 중소기업의 AI 도입률을 현재 1%에서 10%까지 끌어올리기 위한 장비 도입 비용 지원도 병행하고 있다. 여기에 AI 바우처 지원사업을 통해 수요기업에 최대 2~3억원 규모의 바우처가 지급돼, 라온피플과 같은 공급기업의 AI 머신비전 솔루션 도입 부담을 낮춰주는 구조가 마련돼 있다. 클라우드 MSP·생성형 AI 플랫폼 시장에서는 국내 기업들의 클라우드 전환과 AI 도입 확대가 맞물리며 관련 매출이 확대되는 추세인데, 라온피플은 티디지 인수를 통해 이 시장에 본격 진입한 후발주자에 해당한다. 지능형교통체계(ITS) 분야에서는 지자체별 C-ITS 사업 확대와 스마트시티 정책이 맞물려 관련 수요가 이어지고 있으며, 라온로드는 화성특례시 교차로 실증사업 등 정부 주관 사업에 참여하고 있다. 경쟁 구도 측면에서 산업용 AI 검사 분야는 다수의 머신비전 전문기업과 대기업 계열 검사장비 업체가 혼재해 있어 기술력과 구축 사례를 통한 차별화가 중요한 경쟁요소로 꼽힌다.",
-  "en": "The AI machine vision industry is directly linked to demand for automated quality inspection across manufacturing end-markets including semiconductors, secondary batteries, automobiles, and displays. The government is pursuing a policy to expand autonomous manufacturing model factories, investing more than KRW 1 trillion over five years in 'leading model' factories where AI machine vision is core to key industries such as semiconductors and secondary batteries, alongside Smart Manufacturing Innovation 3.0, which supports equipment adoption costs to raise AI adoption among SMEs from about 1% currently to a target of 10%. In addition, the AI voucher support program provides vouchers of up to KRW 200-300 million to demand-side companies, lowering the burden for adopting AI machine vision solutions from suppliers such as LaonPeople. In the cloud MSP and generative AI platform market, related revenue has been expanding as domestic companies accelerate cloud migration and AI adoption, and LaonPeople is a relative latecomer that entered this market in earnest through the TDG acquisition. In the intelligent transport systems (ITS) segment, demand continues on the back of expanding municipal C-ITS projects and smart city policies, with subsidiary LaonRoad participating in government-led projects such as the Hwaseong smart intersection pilot. On the competitive front, the industrial AI inspection segment includes numerous specialized machine vision firms alongside inspection equipment units affiliated with large conglomerates, making technological differentiation and reference track records key competitive factors."
+  "ko": "라온피플이 속한 AI 비전 시장의 수요는 제조 공정 검사와 영상 관제라는 두 축으로 나뉜다. 비전검사는 불량을 찾아내는 AI 기술로, 회사는 이 분야에서 오랜 기간 강점을 보여 왔다고 설명한다. 최근에는 객체 인식 중심의 기존 기술을 넘어 시각언어모델(VLM)과 AI 에이전트 기술이 주목받고 있으며, 회사는 VLM과 AI 에이전트 기술을 이미 보유하고 있다고 밝혔다. 정부의 AI 전환(AX) 투자 확대는 국책 과제 수주로 이어지고 있다. 상반기 신규 수주는 100억원으로, 전년 동기 54억원 대비 약 85% 증가한 것으로 회사가 2026년 7월 공시에서 밝혔다. 골프센서 시장은 북미와 호주 등에서 공급이 늘고 있으나, 하드웨어 수요는 유통 채널과 해외 경기 흐름에 따라 변동할 수 있다. 생성형 AI 플랫폼 사업은 공공과 기업 고객의 도입 사례를 얼마나 쌓느냐에 따라 성장 속도가 갈릴 것으로 보인다. 경쟁 포지션을 보면 삼성에스디에스나 현대오토에버 같은 대형 IT 서비스 기업은 매출 규모와 클라우드 인프라 역량에서 앞서 있다. 반면 라온피플은 비전 AI 전문성과 정부 과제 레퍼런스를 강점으로 내세운다. 자회사 TDG가 맡은 클라우드 MSP 사업은 대형 클라우드 사업자와 경쟁하는 구도여서 수익성 측면에서 별도로 볼 필요가 있다. 전방 산업인 2차전지와 반도체 설비 투자 흐름은 비전검사 수주의 변수로 작용한다.",
+  "en": "Demand in the AI vision market LaonPeople serves splits into manufacturing inspection and video surveillance. Vision inspection uses AI to detect defects, an area where the company says it has long shown strength. Beyond object-recognition technology, vision language models and AI agents have drawn attention, and the company says it already holds VLM and AI agent technology. Expanded government AX investment is leading to national R&D project awards. The company reported in July 2026 that first-half new orders were KRW 10 billion, up about 85% from KRW 5.4 billion a year earlier. Golf sensor demand is growing in North America and Australia, but hardware demand can shift with distribution channels and overseas economic conditions. Growth in the generative AI platform business will depend on how many public and enterprise deployment references accumulate. Among peers, large IT services companies such as Samsung SDS and Hyundai Autoever lead in revenue scale and cloud infrastructure capability. LaonPeople emphasizes its vision AI specialization and government project track record. TDG's cloud MSP business competes with large cloud providers and is worth reading separately for profitability. Capital spending trends in secondary battery and semiconductor equipment are a variable for vision inspection orders."
  },
  "outlook": {
-  "ko": "회사는 클라우드와 AI 비전·생성형 AI 플랫폼 사업 매출 확대를 통해 매출 성장과 수익성 제고를 동시에 추구한다는 목표를 밝히고 있으며, 맞춤형 AI 에이전트 사업 확대와 플랫폼 고도화를 향후 성장동력으로 제시하고 있다. 자회사 라온로드는 2025년 9월 중소기업기술혁신개발사업(공동효과형)에 선정돼 '360도 AI 교차로 분석 및 디지털 트윈을 활용한 실시간 교통 관제' 사업을 수주했으며, 이 프로젝트는 화성특례시 교차로에서 실증과 검증을 거쳐 2027년 8월까지 진행될 예정이다. 태국에서는 붕깐주와 체결한 생성형 AI 기반 홍수·재난감지 솔루션 시범사업이 진행 중이며, 태국 정부 관계자들이 과천 본사를 방문해 사업성을 검토한 것으로 알려지면서 본사업 전환 여부가 관심을 받고 있다. 재무적으로는 2026년 초 197억원 규모의 주주배정 유상증자를 완료하고 2회차·3회차 전환사채를 상환하면서 재무구조 안정화 작업을 마무리한 상태다. 정부의 자율제조 얼라이언스, AI 바우처 지원사업 등 정책적 수요 기반이 확대되는 점은 산업용 AI 검사 부문의 수주 환경에 우호적 요인으로 거론된다. 다만 회사가 제시한 구체적인 2026년 연간 매출·이익 가이던스는 공개된 자료에서 확인되지 않아, 향후 분기 실적 발표를 통한 확인이 필요한 상황이다.",
-  "en": "The company states its goal of pursuing both revenue growth and improved profitability by expanding cloud, AI vision, and generative AI platform revenue, presenting expansion of customized AI agent business and platform enhancement as future growth drivers. Subsidiary LaonRoad was selected in September 2025 for a joint-effect SME technology innovation development project, winning a '360-degree AI intersection analysis and real-time traffic control using digital twin technology' project, which is being piloted and verified at intersections in Hwaseong and is scheduled to run through August 2027. In Thailand, a pilot project for a generative-AI-based flood and disaster detection solution signed with Bueng Kan province is underway, and interest has grown around a potential transition to a full-scale contract after Thai government officials reportedly visited the company's Gwacheon headquarters to review feasibility. Financially, the company completed a KRW 19.7 billion rights offering in early 2026 and redeemed its second and third convertible bond issues, finalizing balance-sheet stabilization work. Expanding policy-driven demand through government initiatives such as the autonomous manufacturing alliance and AI voucher support program is cited as a favorable factor for the order environment in the industrial AI inspection segment. However, specific full-year 2026 revenue or profit guidance from the company was not found in available disclosures, warranting confirmation through upcoming quarterly results."
+  "ko": "회사는 2026년 3월 정기 주주총회에서 골프센서 2분기 물량이 공식 리셀러를 통해 본격 공급되면 전년 대비 5배 이상 성장할 것이라고 밝혔다. 2026년 3분기 실적 발표 때는 4분기에도 흑자 기조를 이어 가겠다는 방침을 제시했다. 2026년 3월 공시에서는 오딘AI가 GS 인증 1등급을 획득했다고 밝혔고, 같은 달 북미와 캐나다 지역 골프센서 공급 계약 소식도 나왔다. 2026년 2월에는 글로벌 반도체 기업 PSK를 대상으로 AI 에이전트 플랫폼 구축 계약을 수주했다고 공시했다. 2026년 1분기 이후 신규 수주가 늘었으며, 상반기 신규 수주 100억원은 하반기 매출 인식의 선행 지표로 볼 수 있는 항목이다. 2026년 6월에는 최고기술책임자와 최고재무책임자가 장내에서 주식 9만 4,000주를 매수했다고 회사가 밝혔다. 재무 측면에서는 2026년 2월 유상증자 197억원으로 CB를 상환해 부채 부담이 일부 줄었다. 다만 재무 부담이 완전히 해소된 것은 아니어서 차입금 만기와 현금 흐름이 다음 확인 항목이다. 다음 정기보고서인 2026년 사업보고서에서는 연간 매출과 영업손익, 부채비율이 확정된다. 2026년 4분기 실적은 아직 정기보고서로 공시되지 않았으므로 잠정 수치를 기준으로 판단할 수 있다. 골프센서 북미·호주 공급과 국책 과제 매출 인식이 이어지는지가 사업 측면의 핵심 확인 지점이다.",
+  "en": "In its March 2026 annual shareholder meeting, the company said golf sensor volume through official resellers would start in earnest in the second quarter and could grow more than fivefold year on year. When it reported Q3 2026 results, it said it aimed to keep the profit trend going in Q4. In March 2026 it said its ODIN AI product achieved GS Certification Class 1, and in the same month it announced golf sensor supply agreements in North America and Canada. In February 2026 it announced a contract to build an AI agent platform for global semiconductor company PSK. New orders have increased since Q1 2026, and the KRW 10 billion in first-half new orders can be read as a leading indicator for second-half revenue. In June 2026 the CTO and CFO bought 94,000 shares on the open market, according to the company. On the financial side, the KRW 19.7 billion rights offering in February 2026 funded a partial repayment of convertible bonds, reducing debt. Debt maturities and cash flow remain items to watch. The 2026 annual business report, the next regular filing, will fix full-year sales, operating results and the debt ratio, and is due by the end of March 2027. The Q4 2026 results have not yet been filed in a regular report. Whether golf sensor supply in North America and Australia and revenue from national R&D projects continue is the key operational checkpoint."
  },
  "valuation_comment": {
-  "ko": "라온피플은 최근 네 개 분기 기준으로도 순손실을 기록하고 있어 통상적인 주가수익비율(PER) 산정이 어려운 상태다. 주가순자산비율은 순자산 대비 주가가 아직 온전한 프리미엄을 받지 못하는 구간에 머물러 있는 것으로 파악되며, 이는 회사가 연간 기준으로 아직 안정적인 이익 창출 단계에 진입하지 못한 점과 연결지어 볼 수 있다. 회사는 현재 배당을 지급하지 않고 있어 배당 관련 지표는 의미를 갖기 어렵다. 다년간의 실적을 보면 2022년의 일시적 영업흑자 이후 2023~2025년 연속으로 연간 영업손실을 기록했으나, 분기 단위로는 2025년 4분기와 2026년 2분기에 순이익 흑자로 전환된 사례가 있어 이익 안정화 여부가 향후 밸류에이션의 핵심 변수로 남아 있다. 대규모 유상증자로 총 주식수가 늘어난 점은 주당 지표 희석 요인으로 작용할 수 있어, 향후 이익 회복 속도와 함께 지켜볼 부분이다.",
-  "en": "LaonPeople has recorded net losses even on a trailing four-quarter basis, making a conventional price-to-earnings ratio difficult to calculate. Its price-to-book ratio appears to sit in a range where the stock has not yet commanded a full premium over net asset value, which can be linked to the fact that the company has not yet reached a stage of stable annual profit generation. The company currently pays no dividend, making dividend-related metrics of limited relevance. Looking across multiple years, after a one-off operating profit in 2022 the company posted consecutive annual operating losses from 2023 through 2025, though on a quarterly basis net income turned positive in Q4 2025 and Q2 2026, leaving the question of profit stabilization as a key variable for valuation going forward. The large increase in total share count from the recent rights offering is a dilution factor for per-share metrics, which is worth monitoring alongside the pace of any profit recovery."
+  "ko": "최근 네 개 분기 기준 지배주주 순손실 합계가 14.4억원이라 PER은 산출되지 않는 상태다. 이익 기반 지표가 성립하지 않는 만큼 순자산 기준 비교가 주로 쓰인다. 주가순자산비율은 과거 평균 거래 구간의 하단 쪽에 있어 장부상 자본 대비 주가가 낮은 편이다. 다만 자본총계 440억원 가운데 지배주주 지분이 327억원이고 부채총계가 1,522억원이어서, 순자산 배수 해석에는 재무 구조를 함께 반영해야 한다. 배당은 지급 이력이 짧아 배당수익률은 업종 평균을 밑도는 수준이다. 2026년 2월 유상증자는 주가 약세로 발행가액이 낮아졌고, 이 과정에서 창업주 지분율이 크게 낮아졌다. 시가총액은 2027년 1월 상향 예정인 코스닥 시가총액 요건과 비교되는 위치다. 밸류에이션 수준은 영업 흑자 전환의 지속 여부와 자본 확충 이후 재무 구조 개선 정도에 따라 해석이 달라진다.",
+  "en": "Because the last four quarters combined produced a net loss attributable to controlling shareholders of KRW 1.44 billion, the PER cannot be calculated. With earnings-based metrics unavailable, price-to-book comparisons carry more weight. The price-to-book ratio sits in the lower part of its historical trading range, meaning the share price is low relative to book value. However, of KRW 44 billion in total equity, KRW 32.7 billion belongs to controlling shareholders, and total liabilities are KRW 152.2 billion, so book-value multiples must be read alongside the capital structure. The dividend yield is below the industry average because the company has a short dividend history. The February 2026 rights offering was priced lower after share price weakness, and the founder's stake fell sharply in the process. Market capitalization sits against the KOSDAQ market capitalization requirement scheduled to rise in January 2027. Valuation interpretation will depend on whether operating profitability holds and how much the capital structure improves after the capital raise."
  },
  "bull": [
   {
    "title": {
-    "ko": "클라우드·플랫폼 편입 효과로 외형 급증",
-    "en": "Revenue Scale Expansion from Cloud/Platform Consolidation"
+    "ko": "분기 적자 폭 축소",
+    "en": "Narrowing quarterly losses"
    },
    "body": {
-    "ko": "티디지 인수로 2023년 112억원이었던 연결 매출이 2024년 2,202억원, 2025년 2,238억원까지 확대됐다. 클라우드 MSP와 생성형 AI 플랫폼 EZ-PLANET을 통한 사업 다각화가 본업인 AI 머신비전 매출과 함께 성장 동력으로 자리잡고 있다. 4분기와 같은 특정 시점에는 계약 인식이 몰리며 분기 흑자를 시현한 전례도 있다.",
-    "en": "Following the TDG acquisition, consolidated revenue expanded from KRW 11.2 billion in 2023 to KRW 220.2 billion in 2024 and KRW 223.8 billion in 2025. Business diversification through the cloud MSP business and the EZ-PLANET generative AI platform is establishing itself as a growth driver alongside core AI machine vision revenue. There is precedent for quarterly profitability when contract recognition concentrates in specific periods such as Q4."
+    "ko": "2025년 4분기 영업이익 24.1억원으로 흑자 전환한 뒤, 2026년 2분기 지배주주 순이익이 5.2억원으로 흑자를 냈다. 2026년 3분기 영업손실은 1.7억원으로 2분기 4.9억원보다 줄었다. 분기 단위에서 손실 규모가 작아지는 흐름이 이어지는지가 강세 근거의 핵심이다.",
+    "en": "Operating profit of KRW 2.41 billion in Q4 2025 turned positive, and net profit attributable to controlling shareholders was KRW 520 million in Q2 2026. The Q3 2026 operating loss of KRW 171 million was smaller than the KRW 495 million loss in Q2. Whether the quarterly loss narrowing continues is the core of the bullish case."
    }
   },
   {
    "title": {
-    "ko": "정책 우호적 산업 환경",
-    "en": "Policy-Favorable Industry Environment"
+    "ko": "골프센서·생성형 AI 고성장",
+    "en": "High growth in golf sensors and generative AI"
    },
    "body": {
-    "ko": "정부는 반도체·이차전지 분야 자율제조 선도모델 구축에 5년간 1조원 이상을 투자하는 정책을 추진 중이며, AI 바우처 지원사업을 통해 수요기업의 AI 머신비전 도입 부담을 낮춰주고 있다. 스마트제조혁신 3.0을 통한 중소기업 AI 도입률 확대 목표도 관련 수요 기반 확대에 기여할 수 있는 요인이다.",
-    "en": "The government is pursuing a policy of investing more than KRW 1 trillion over five years in autonomous manufacturing model factories for semiconductors and secondary batteries, while the AI voucher support program lowers the adoption burden for demand-side companies. The Smart Manufacturing Innovation 3.0 goal of raising SME AI adoption is also a factor that could contribute to an expanding demand base."
+    "ko": "골프센서 2026년 3분기 누계 매출은 41억 8,000만원으로 전년 동기 대비 약 380% 늘었다. 생성형 AI 플랫폼 '하이펜'과 '오딘AI'의 누계 매출도 전년 동기 대비 816%, 920% 증가했다고 회사가 밝혔다. 두 사업의 매출 비중이 커지면 전체 수익 구조가 바뀔 수 있다.",
+    "en": "Golf sensor revenue for the first nine months of 2026 reached KRW 4.18 billion, up about 380% year on year. The company said revenue from the HI FENN and ODIN AI generative AI platforms rose 816% and 920% year on year. A larger share from these businesses could change the overall earnings structure."
    }
   },
   {
    "title": {
-    "ko": "재무구조 안정화 작업 완료",
-    "en": "Completed Balance-Sheet Stabilization"
+    "ko": "정부 과제 레퍼런스 확보",
+    "en": "Government project track record"
    },
    "body": {
-    "ko": "2026년 초 197억원 규모 주주배정 유상증자가 106.52% 청약률로 완판되며 마무리됐고, 이를 통해 2회차·3회차 전환사채 상환이 순조롭게 이뤄졌다. 사채권자와의 조기상환청구 연기 합의를 통해 풋옵션 리스크도 해소된 상태다.",
-    "en": "The KRW 19.7 billion rights offering completed in early 2026 was fully subscribed at a 106.52% subscription rate, enabling smooth redemption of the second and third convertible bond issues. Put-option risk was also resolved through an agreement with bondholders to defer early redemption requests."
+    "ko": "총 사업비 702억원 규모의 피지컬 AI 기반모델 국책과제를 수주해 연구개발 비용 부담을 줄이며 기술 개발을 이어 가고 있다. 'K-디스플레이 AX 실증산단'과 AI 연안관제 구축 등 국책 과제 레퍼런스도 늘고 있다. 2026년 상반기 신규 수주는 100억원으로 전년 동기 대비 약 85% 증가했다.",
+    "en": "The company won a KRW 70.2 billion national physical AI foundation model R&D project, which reduces R&D cost burden while advancing its technology. References from projects such as the K-Display AX demonstration complex and AI coastal control systems are also accumulating. First-half 2026 new orders reached KRW 10 billion, up about 85% year on year."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "연간 기준 지속되는 영업손실",
-    "en": "Persistent Annual Operating Losses"
+    "ko": "장기 적자와 분기 영업손실 지속",
+    "en": "Prolonged losses and continued quarterly operating losses"
    },
    "body": {
-    "ko": "2022년 일시적 영업흑자를 제외하면 2023~2025년 3년 연속 연간 영업손실을 기록했다. 매출이 2024~2025년 2,200억원대로 늘었음에도 영업손실 규모는 162억원 안팎에서 크게 줄지 않았다. 원가 부담이 매출 성장을 상쇠하는 구조가 이어지고 있다.",
-    "en": "Excluding the one-off operating profit in 2022, the company posted annual operating losses for three consecutive years from 2023 through 2025. Even as revenue grew into the KRW 220 billion range in 2024-2025, the operating loss remained around KRW 16.2 billion without significant reduction, reflecting a structure in which cost burdens offset revenue growth."
+    "ko": "2025년 영업이익률은 -7.2%였고 영업손실은 162억원이었다. 지배주주 순손실은 2022년부터 2025년까지 4년 연속 이어졌다. 2026년 1분기부터 3분기까지는 3개 분기 연속 영업적자로, 흑자 전환이 분기 단위로만 확인된다.",
+    "en": "The operating margin in 2025 was -7.2%, with an operating loss of KRW 16.2 billion. Net losses attributable to controlling shareholders have continued for four years from 2022 to 2025. Operating losses have run for three consecutive quarters from Q1 to Q3 2026, so profitability has only been confirmed on a quarterly basis."
    }
   },
   {
    "title": {
-    "ko": "높은 분기별 실적 변동성",
-    "en": "High Quarter-to-Quarter Earnings Volatility"
+    "ko": "부채 부담과 현금 유출",
+    "en": "Debt burden and cash outflow"
    },
    "body": {
-    "ko": "2025년 3분기 매출은 199억원에 그쳤으나 4분기에는 950억원으로 급증하는 등 분기 간 편차가 매우 크다. 이 같은 변동성은 클라우드·플랫폼 계약의 인식 시점에 따른 것으로 보이며, 특정 분기의 흑자가 연간 추세 전환을 의미하는지는 추가 확인이 필요하다.",
-    "en": "Revenue swung from just KRW 19.9 billion in Q3 2025 to KRW 95.0 billion in Q4 2025, illustrating substantial quarter-to-quarter variance. This volatility appears tied to the timing of cloud and platform contract recognition, and whether profitability in a given quarter signals an annual trend shift requires further confirmation."
+    "ko": "부채비율은 2022년 60.8%에서 2025년 345.8%로 올랐다. 2025년 말 부채총계는 1,522억원으로 자본총계 440억원을 크게 웃돈다. 2025년 영업활동 현금흐름은 -106억원으로 다시 유출이 커졌고, 2026년 2월 유상증자로 CB를 상환했지만 차입금 만기 부담은 남아 있다.",
+    "en": "The debt ratio rose from 60.8% in 2022 to 345.8% in 2025. Total liabilities at end-2025 were KRW 152.2 billion, well above total equity of KRW 44 billion. Operating cash flow in 2025 was negative KRW 10.6 billion, and although the February 2026 rights offering repaid convertible bonds, borrowing maturities remain."
    }
   },
   {
    "title": {
-    "ko": "대규모 지분 희석",
-    "en": "Significant Equity Dilution"
+    "ko": "지배력 약화와 자회사 의존",
+    "en": "Weaker control and reliance on a subsidiary"
    },
    "body": {
-    "ko": "197억원 유상증자 과정에서 발행주식 총수가 급증하며 창업주 이석중 대표와 특별관계자의 합산 지분율이 49.11%에서 31.47%로 17.64%포인트 하락했다. 향후 추가적인 자금조달이 필요할 경우 추가 희석 우려도 배제할 수 없다.",
-    "en": "During the KRW 19.7 billion rights offering, total issued shares increased sharply, and the combined stake of founder and CEO Lee Seok-jung and related parties fell 17.64 percentage points from 49.11% to 31.47%. Further dilution concerns cannot be ruled out if additional fundraising becomes necessary in the future."
+    "ko": "대표이사와 특수관계인의 합산 지분율은 유상증자 과정에서 49.11%에서 31.47%로 낮아졌다. 클라우드 사업은 자회사 TDG가 매출의 90% 이상을 맡고 있어 자회사 실적이 전체 흐름을 좌우한다. 2025년 4분기 흑자에는 정부 과제 인건비 지원금의 영향이 있었다.",
+    "en": "The combined stake of the CEO and related parties fell from 49.11% to 31.47% through the rights offering. The cloud business, which accounts for more than 90% of revenue, depends on subsidiary TDG, so its performance drives the group. The Q4 2025 profit was partly supported by government project personnel subsidies."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "재무·조달 리스크",
-    "en": "Financial and Funding Risk"
+    "ko": "재무·유동성",
+    "en": "Financial and liquidity"
    },
    "body": {
-    "ko": "회사는 최근 몇 년간 전환사채 발행과 유상증자를 반복하며 자금을 조달해왔다. 2025년 영업활동현금흐름이 마이너스 106억원을 기록한 만큼, 향후 사업 확장이나 투자 재원 마련을 위해 추가적인 외부 조달이 필요해질 가능성이 있다.",
-    "en": "The company has repeatedly raised funds through convertible bond issuances and rights offerings in recent years. With operating cash flow turning negative at KRW 10.6 billion in 2025, there is a possibility that additional external financing may be needed to fund future business expansion or investment."
+    "ko": "부채비율이 345.8%로 높고 영업활동 현금흐름이 2025년에 음(-)으로 돌아섰다. 차입금 만기와 CB 잔액 상환이 겹치면 추가 자금 조달이 필요할 수 있다. 추가 유상증자는 기존 주주의 지분 희석으로 이어질 수 있어 자본 조달 방식이 다음 확인 지점이다.",
+    "en": "The debt ratio of 345.8% is high, and operating cash flow turned negative in 2025. Overlapping borrowing maturities and convertible bond repayments could require additional funding. Further rights offerings could dilute existing shareholders, making the financing method a key checkpoint."
    }
   },
   {
    "cat": {
-    "ko": "사업 다각화 실행 리스크",
-    "en": "Business Diversification Execution Risk"
+    "ko": "상장 유지 요건",
+    "en": "Listing maintenance requirements"
    },
    "body": {
-    "ko": "AI 머신비전, 클라우드 MSP, 의료 AI, 교통 AI 등 다수의 사업영역과 자회사를 동시에 운영하고 있어 경영 자원 배분과 통합 관리의 복잡성이 크다. 신규 사업(생성형 AI 플랫폼, 태국 사업 등)의 수익화 시점이 불확실하다는 점도 고려해야 한다.",
-    "en": "The company simultaneously operates numerous business areas and subsidiaries spanning AI machine vision, cloud MSP, medical AI, and traffic AI, creating significant complexity in resource allocation and integrated management. The uncertain timing of monetization for new businesses, such as the generative AI platform and Thailand operations, should also be considered."
+    "ko": "2026년 3월 보도에 따르면 코스닥 시가총액 상장폐지 요건이 2026년 7월 1일 150억원에서 200억원으로 올랐고, 2027년 1월에는 300억원으로 추가 상향될 예정이다. 현재 시가총액 250억원은 2027년 1월 상향 기준을 밑돈다. 요건 충족 여부는 주가와 발행주식 수 변화에 따라 달라진다.",
+    "en": "A March 2026 report said the KOSDAQ market capitalization delisting threshold rose from KRW 15 billion to KRW 20 billion on July 1, 2026, and is scheduled to rise to KRW 30 billion in January 2027. Current market capitalization of KRW 25 billion is below the January 2027 threshold. Compliance will depend on share price and changes in shares outstanding."
    }
   },
   {
    "cat": {
-    "ko": "매출 계절성·집중도 리스크",
-    "en": "Revenue Seasonality and Concentration Risk"
+    "ko": "사업 집중과 해외 의존",
+    "en": "Business concentration and overseas dependence"
    },
    "body": {
-    "ko": "분기별 매출 편차가 매우 커 특정 분기의 계약 인식 여부에 따라 실적이 크게 달라질 수 있다. 클라우드·플랫폼 계약의 갱신·수주 시점이 특정 시기에 몰릴 경우 연간 실적 예측의 불확실성이 높아질 수 있다.",
-    "en": "Very large quarterly revenue swings mean results can vary significantly depending on whether contracts are recognized in a given quarter. If cloud and platform contract renewals or orders concentrate in specific periods, uncertainty in annual earnings forecasting could increase."
+    "ko": "골프센서는 미주와 유럽 시장의 수출과 공식 리셀러 채널에 의존한다. 생성형 AI 플랫폼은 공공과 기업 고객 확보에 따라 매출이 달라지며, 국책 과제 매출은 과제 수행 일정에 좌우된다. 비용 절감과 인력 조정 과정에서 연구 인력이 줄면 신규 과제 수행 역량에도 부담이 될 수 있다.",
+    "en": "Golf sensors depend on exports to the Americas and Europe and on official reseller channels. Generative AI platform revenue depends on winning public and enterprise customers, and government project revenue depends on project schedules. Headcount reductions made during cost cutting could also strain capacity to deliver new projects."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중순",
-    "en": "Mid-November 2026"
+    "ko": "2026년 12월 말",
+    "en": "End of December 2026"
    },
    "what": {
-    "ko": "2026년 3분기 분기보고서 공시 예정 시점으로, 매출·영업손익의 계절적 변동 패턴이 이어지는지, 3분기 특유의 매출 저점이 재현되는지 확인이 필요하다.",
-    "en": "The Q3 2026 quarterly report is expected to be filed around this time; it will be worth checking whether the seasonal revenue and operating profit pattern continues and whether the Q3-specific revenue trough recurs."
+    "ko": "2026년 4분기 말 기준 분기 흑자 유지 여부를 확인할 지점이다. 회사는 4분기에도 흑자 기조를 잇겠다고 밝혔으며, 골프센서 북미·호주 공급과 국책 과제 매출 인식이 주요 변수다.",
+    "en": "Whether the company keeps its Q4 2026 profitability target, a stated goal, with golf sensor supply in North America and Australia and national project revenue as the main variables."
    }
   },
   {
    "when": {
-    "ko": "2027년 8월까지 순차 확인",
-    "en": "Progressively through August 2027"
+    "ko": "2027년 1월 이후 (일정 미정)",
+    "en": "After January 2027 (date not set)"
    },
    "what": {
-    "ko": "라온로드가 참여하는 화성특례시 '360도 AI 교차로 분석' 실증사업의 단계별 진행 상황과 성과가 향후 관련 수주 확대로 이어지는지 지켜볼 필요가 있다.",
-    "en": "The phased progress and outcomes of the Hwaseong '360-degree AI intersection analysis' pilot project involving subsidiary LaonRoad should be monitored to see whether it translates into expanded future orders."
+    "ko": "2026년 4분기 잠정 실적 공시가 나오면 연간 영업손익과 지배주주 순손실 규모가 처음으로 잠정 확인된다. 연간 영업손실이 2025년 162억원과 비교해 줄었는지가 핵심이다.",
+    "en": "The preliminary Q4 2026 results will provide the first estimate of full-year operating and net results, and whether the annual operating loss narrowed from KRW 16.2 billion in 2025 is the key test."
    }
   },
   {
    "when": {
-    "ko": "향후 공시·IR 확인 필요",
-    "en": "To be confirmed via future disclosures/IR"
+    "ko": "2027년 1월",
+    "en": "January 2027"
    },
    "what": {
-    "ko": "태국 붕깐주 홍수·재난감지 시범사업이 본사업 계약으로 전환되는지 여부는 아직 확정되지 않아, 관련 공시나 IR 자료를 통한 추가 확인이 필요하다.",
-    "en": "Whether the Thailand Bueng Kan province flood/disaster detection pilot project transitions into a full-scale contract has not yet been confirmed and requires further verification through disclosures or IR materials."
+    "ko": "2026년 3월 보도 기준으로 코스닥 시가총액 상장폐지 요건이 300억원으로 상향될 예정이다. 현재 시가총액이 이 기준을 밑도는 만큼 발행주식 수와 시가총액 변화를 확인할 지점이다.",
+    "en": "Under a March 2026 report, the KOSDAQ market capitalization requirement is scheduled to rise to KRW 30 billion. Because current market capitalization is below that level, changes in market value and shares outstanding are a checkpoint."
    }
   },
   {
    "when": {
-    "ko": "향후 분기 실적 발표 시",
-    "en": "At future quarterly earnings releases"
+    "ko": "2027년 3월 말",
+    "en": "End of March 2027"
    },
    "what": {
-    "ko": "2026년 1분기와 2분기에 영업손실 규모가 줄어드는 흐름이 이어지는지, 순이익 흑자가 지속되는지가 연간 손익 개선 여부를 가늠하는 핵심 지표가 될 것이다.",
-    "en": "Whether the narrowing operating loss trend seen in Q1-Q2 2026 continues and whether net income remains positive will be key indicators for gauging annual profit-and-loss improvement."
+    "ko": "2026년 사업보고서 제출 시점으로, 연간 매출, 영업손익, 부채비율, 영업활동 현금흐름이 정기보고서로 확정된다. 2025년 부채비율 345.8%와 영업활동 현금흐름 -106억원이 개선되는지가 다음 확인 지점이다.",
+    "en": "The 2026 annual business report will fix full-year revenue, operating results, debt ratio and operating cash flow. Whether the 2025 debt ratio of 345.8% and operating cash flow of negative KRW 10.6 billion improve is the next checkpoint."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "라온피플은 티디지 인수를 계기로 매출 규모가 크게 확대된 AI 비전·클라우드 융합 기업으로 자리매김했으나, 연간 기준으로는 2023년부터 2025년까지 3년 연속 영업손실을 기록하며 아직 안정적인 이익 창출 단계에 진입하지 못했다. 분기별로는 2025년 4분기와 2026년 2분기에 순이익 흑자를 기록하는 등 개선 조짐이 나타났지만, 3분기의 매출 저점과 같은 큰 변동성이 함께 나타나 추세 판단에는 신중함이 필요하다. 재무적으로는 197억원 유상증자와 전환사채 상환을 통해 단기 자금 리스크를 해소했지만, 그 과정에서 창업주 지분율이 크게 낮아지는 지배구조 변화가 있었다. 정부의 자율제조·AI 바우처 정책, 클라우드·생성형 AI 시장 성장 등은 사업 확장에 우호적인 환경으로 거론되나, 회사의 구체적인 연간 가이던스는 공개 자료에서 확인되지 않았다. 향후 3분기 실적과 화성·태국 등 신규 프로젝트의 진전 여부가 실적 개선의 지속성을 판단하는 데 중요한 변수가 될 것으로 보인다.",
-   "en": "LaonPeople has established itself as an AI vision and cloud convergence company with a substantially expanded revenue base following the TDG acquisition, but on an annual basis it has not yet reached a stage of stable profit generation, having posted operating losses for three consecutive years from 2023 through 2025. Quarterly signs of improvement emerged, with net income turning positive in Q4 2025 and Q2 2026, but large volatility such as the Q3 revenue trough also appeared, warranting caution in judging any trend. Financially, the company resolved near-term funding risk through a KRW 19.7 billion rights offering and convertible bond redemptions, though this process involved a significant governance change with a sharp reduction in the founder's ownership stake. Government policies on autonomous manufacturing and AI vouchers, along with growth in the cloud and generative AI markets, are cited as a favorable backdrop for business expansion, though specific annual guidance from the company was not found in public disclosures. Q3 results and progress on new projects in Hwaseong and Thailand will likely be important variables in assessing the durability of any earnings improvement going forward."
+   "ko": "라온피플은 2025년 매출 2,238억원으로 2년 연속 증가했지만 영업손실 162억원과 4년 연속 지배주주 순손실이 이어지는 구조다. 2026년에는 분기 흐름이 개선돼 2026년 2분기 지배주주 순이익 5.2억원 흑자와 3분기 영업손실 1.7억원이 나왔다. 골프센서와 생성형 AI 플랫폼의 누계 매출이 전년 동기 대비 크게 늘었고, 정부 과제 수주도 이어지고 있다. 반면 2025년 말 부채비율 345.8%, 부채총계 1,522억원, 2025년 영업활동 현금흐름 -106억원은 여전히 부담이다. 2026년 1분기부터 3분기까지 3개 분기 연속 영업적자이며, 지배주주 지분율도 유상증자로 낮아졌다. 다음 확인 지점은 2026년 4분기 잠정 실적과 2026년 사업보고서의 연간 영업이익률, 부채비율이다. 이 리포트는 정보 제공 목적이며 매수·매도 의견을 포함하지 않는다.",
+   "en": "LaonPeople's 2025 revenue of KRW 223.8 billion rose for a second straight year, but operating losses of KRW 16.2 billion and four consecutive years of net losses attributable to controlling shareholders persist. Quarterly figures improved in 2026, with a net profit attributable to controlling shareholders of KRW 520 million in Q2 and an operating loss narrowing to KRW 171 million in Q3. Golf sensor and generative AI platform revenue rose sharply year on year in the first nine months of 2026, and government project awards continue. Still, the 345.8% debt ratio, total liabilities of KRW 152.2 billion and negative operating cash flow of KRW 10.6 billion in 2025 remain burdens. Operating losses have run for three consecutive quarters from Q1 to Q3 2026, and the controlling shareholder's stake fell after the rights offering. The next checkpoints are the preliminary Q4 2026 results and the operating margin and debt ratio in the 2026 annual business report. This report is for information only and does not include a buy or sell opinion."
   }
  },
  "sources": [
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20251114001927&docno=&viewerhost=",
-  "https://dartpoint.ai/01251489",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260323001709&docno=&viewerhost=",
-  "https://kind.krx.co.kr/external/2026/05/15/002060/20260515004565/11013.htm",
-  "https://m.irgo.co.kr/IR-COMP/300120/%EB%9D%BC%EC%98%A8%ED%94%BC%ED%94%8C-%EA%B8%B0%EC%97%85%EC%A0%95%EB%B3%B4",
-  "https://alphasquare.co.kr/home/stock-summary?code=300120",
+  "https://www.fnnews.com/news/202610211350420502",
   "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=300120",
-  "https://laonpeople.com/en/news/laonpeople-accelerates-ai-business-diversification-tdg-revenue-grows-by-over-30/",
   "https://laonpeople.com/news/%EB%9D%BC%EC%98%A8%ED%94%BC%ED%94%8C-ai-%EC%82%AC%EC%97%85-%EB%8B%A4%EA%B0%81%ED%99%94-%EB%8F%8C%ED%8C%8C%EA%B5%ACtdg-%EC%9D%B8%EC%88%98%EB%8A%94-%EC%8B%A0%EC%9D%98%ED%95%9C%EC%88%98/",
-  "https://kind.krx.co.kr/external/2026/03/23/001709/20260323007255/11011.htm",
-  "https://www.valueline.co.kr/finance/summary/300120",
-  "https://securities.miraeasset.com/bbs/download/2119083.pdf?attachmentId=2119083",
-  "https://news.nate.com/view/20250917n20459",
-  "https://securities.miraeasset.com/bbs/download/2089797.pdf?attachmentId=2089797",
-  "https://m.thinkpool.com/item/300120",
-  "https://ssl.pstatic.net/imgstock/upload/research/company/1633575137989.pdf",
-  "http://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=300120",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A300120"
+  "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=708812",
+  "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=715430",
+  "https://news.nate.com/view/20260331n13832",
+  "https://www.newspim.com/news/view/20261021000944",
+  "https://laonpeople.com/en/news/laonpeople-accelerates-ai-business-diversification-tdg-revenue-grows-by-over-30/",
+  "https://news.nate.com/view/20260305n04236",
+  "https://m.news.nate.com/view/20260128n29762",
+  "https://laonpeople.com/en/news/",
+  "https://m.news.nate.com/view/20261021n22465",
+  "https://news.nate.com/view/20260305n18177",
+  "https://m.news.nate.com/view/20260331n40943",
+  "https://v.daum.net/v/20260604133753371?f=p",
+  "https://www.thebell.co.kr/front/newsview.asp?key=202603052249049520101186",
+  "https://www.hellot.net/news/tag_list_all.html?tag=%EB%9D%BC%EC%98%A8%ED%94%BC%ED%94%8C"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "300120",
  "name": "라온피플",
  "name_en": "LaonPeople Inc.",
@@ -225,11 +224,11 @@
   "로봇"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 18:40",
- "dataDate": "20260904",
+ "reportDate": "2026-11-18",
+ "reportTs": "2026-11-18 14:35",
+ "dataDate": "20261117",
  "quant": {
-  "asOf": "2026-09-05",
+  "asOf": "2026-11-18",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -299,12 +298,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 63995907427,
-    "op": -4548046935,
-    "np_owner": -6454291862
-   },
-   {
     "q": "2025Q3",
     "rev": 19892874566,
     "op": -6223303313,
@@ -327,25 +320,31 @@
     "rev": 64079294013,
     "op": -494668080,
     "np_owner": 524188405
+   },
+   {
+    "q": "2026Q3",
+    "rev": 29359846479,
+    "op": -170577872,
+    "np_owner": -315093514
    }
   ],
   "valuation": {
-   "price": 3325,
-   "mcap": 0.0329,
+   "price": 2525,
+   "mcap": 0.025,
    "shares": 9900803,
    "total_shares": 9900803,
-   "wavg_shares": 8638503,
+   "wavg_shares": 9075382,
    "per": null,
-   "eps": -761,
-   "pbr": 0.5948,
-   "bps": 5590,
-   "roe_ttm": -20.7,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": -6578083537,
+   "eps": -158,
+   "pbr": 0.4778,
+   "bps": 5285,
+   "roe_ttm": -5.0,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": -1436327331,
    "ccy": "KRW",
    "bps_src": "자체",
    "eps_src": "순이익÷주식수",
-   "pbr_krx": 0.71,
+   "pbr_krx": 0.54,
    "bps_krx": 4670.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
@@ -354,5 +353,6 @@
     "per": "loss"
    }
   }
- }
+ },
+ "textRules": 3
 }
