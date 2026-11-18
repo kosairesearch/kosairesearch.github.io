@@ -1,220 +1,210 @@
 {
  "title": {
-  "ko": "매출은 늘어도 눌리는 수익성",
-  "en": "Revenue Grows, Margins Keep Shrinking"
+  "ko": "매출은 늘고 이익은 줄어든 차체 부품사",
+  "en": "Revenue Up, Profit Down at a Body-Parts Supplier"
  },
  "lead": {
-  "ko": "세동은 2025년 매출 1,894억원으로 2022~2025년 중 가장 컸지만, 영업이익률은 같은 기간 8.0%에서 4.8%까지 낮아지며 외형과 수익성이 엇갈리는 흐름을 보이고 있다.",
-  "en": "SAE Dong posted 2025 revenue of KRW 189.4 billion, the largest among 2022-2025, while its operating margin fell from 8.0% to 4.8% over the same period, showing diverging trends between top-line growth and profitability."
+  "ko": "세동은 2025년까지 매출이 3년 연속 늘었지만 영업이익은 2024년부터 2년 연속 감소했고, 2026년 2분기와 3분기에는 두 분기 연속 영업손실을 냈다.",
+  "en": "SAE Dong's revenue rose for three straight years through 2025, but its operating profit has fallen for two straight years since 2024, and it posted operating losses in both the second and third quarters of 2026."
  },
  "keypoints": [
   {
-   "ko": "2025년 매출 1,894억원(전년 대비 10.7% 증가)으로 2022~2025년 중 가장 컸으나, 영업이익은 91억원으로 2023년 정점 이후 2년 연속 감소했다.",
-   "en": "2025 revenue reached KRW 189.4 billion (up 10.7% year-on-year), the largest among 2022-2025, while operating profit fell to KRW 9.1 billion, declining for a second straight year after peaking in 2023."
+   "ko": "2025년 매출 1,894억원은 2022~2025년 중 가장 큰 해였으나, 영업이익률은 2022년 8.0%에서 2025년 4.8%로 낮아졌다.",
+   "en": "Revenue of KRW 189.4 billion in 2025 was the largest of 2022–2025, while the operating margin declined from 8.0% in 2022 to 4.8% in 2025."
   },
   {
-   "ko": "지배주주 순이익은 2024년 순손실 11.5억원에서 2025년 58.8억원으로 흑자 전환했다.",
-   "en": "Net income attributable to controlling shareholders swung from a loss of KRW 1.15 billion in 2024 to a profit of KRW 5.88 billion in 2025."
+   "ko": "2026년 2분기 영업손실 1,794만원, 3분기 영업손실 3.2억원으로 2개 분기 연속 적자이며, 3분기 지배주주 순손실은 46.3억원이다.",
+   "en": "The company recorded an operating loss of KRW 17.94 million in the second quarter of 2026 and KRW 321 million in the third quarter, with a third-quarter net loss attributable to controlling shareholders of KRW 4.63 billion."
   },
   {
-   "ko": "2026년 2분기 영업손실 1,794만원을 기록하며 전 분기·전년 동기 대비 모두 적자 전환해 분기별 변동성이 두드러졌다.",
-   "en": "The company posted an operating loss of KRW 17.94 million in Q2 2026, turning negative both quarter-on-quarter and year-on-year, highlighting elevated quarter-to-quarter volatility."
+   "ko": "2025년 지배주주 순이익 58.8억원은 2024년 순손실 11.5억원에서 흑자로 돌아선 값이며, 최근 4개 분기 지배주주 순손실 합계는 25.6억원이다.",
+   "en": "Net income attributable to controlling shareholders of KRW 5.88 billion in 2025 marked a return to profit from a KRW 1.15 billion loss in 2024, while the last four quarters total a net loss attributable to controlling shareholders of KRW 2.56 billion."
   },
   {
-   "ko": "2025년 말 부채비율은 233.5%로 전년보다 높아졌지만, 영업활동 현금흐름은 214억원으로 2024년의 마이너스 흐름에서 개선됐다.",
-   "en": "The debt-to-equity ratio rose to 233.5% at the end of 2025, even as operating cash flow improved to KRW 21.4 billion from a negative figure in 2024."
+   "ko": "2025년 말 부채총계는 941억원, 자본총계는 403억원이며 부채비율은 233.5%로 2024년 209.5%보다 높아졌으나 2022년 285.0%보다는 낮다.",
+   "en": "At the end of 2025, total liabilities stood at KRW 94.1 billion against total equity of KRW 40.3 billion, and the debt ratio rose to 233.5% from 209.5% in 2024 but remains below 285.0% in 2022."
   },
   {
-   "ko": "주가는 장부상 순자산가치를 밑도는 수준에서 거래되는 구간이 이어지고 있다.",
-   "en": "The stock continues to trade at a level below its book net asset value."
+   "ko": "2025년 영업활동 현금흐름은 214억원으로 플러스였고, 2024년에는 -14.6억원으로 마이너스였다.",
+   "en": "Operating cash flow was KRW 21.4 billion in 2025, turning positive after KRW -1.46 billion in 2024."
   }
  ],
  "business": {
-  "ko": "세동은 1986년 설립돼 2001년 코스닥에 상장한 자동차 외장부품 전문 제조업체로, 부산 기장군에 본사와 주요 생산시설을 두고 있다. 주력 제품은 글라스 보호용 도어벨트 몰딩과 도어프레임 몰딩이며, 금속압출물·일반압출물·가변압출물·일반사출물·GAS사출물 등 압출 및 사출 성형 기술을 바탕으로 생산한다. 주요 고객사는 현대자동차와 기아이며, 현대모비스·한국GM·KG모빌리티 등에도 1차 부품 공급업체로 인증받아 납품하고 있다. 해외사업 확장을 위해 미국 법인 Saedong America, Inc.를 비롯해 브라질, 중국 현지법인을 운영하며 글로벌 완성차 고객사의 현지 생산기지에 대응하는 공급망을 갖췄다. 과거 현대자동차 브라질법인 대상 부품 공급을 위해 현지에 물류기지를 설립한 바 있으며, 이는 물류비 절감과 현지 하자 대응력 확보를 목적으로 한 것이었다. 지배구조 측면에서는 윤정상 대표이사 외 특수관계인이 27.34%의 지분을 보유하고 있다. 경쟁구도상 세동은 중소형 자동차 외장부품 업체로, 대형 모듈·전동화 부품 업체들과 달리 틈새 영역인 도어 몰딩류에 특화돼 있다는 점이 특징이다. 전방 산업인 완성차 생산량과 신차 사이클에 실적이 직접적으로 연동되는 구조다.",
-  "en": "Founded in 1986 and listed on KOSDAQ in 2001, SAE Dong is a specialized manufacturer of automotive exterior parts headquartered in Gijang, Busan. Its core products are glass-protection door belt moldings and door frame moldings, produced using metal extrusion, general extrusion, variable extrusion, general injection molding, and gas injection molding technologies. Its main customers are Hyundai Motor and KIA, and it is also certified as a Tier 1 supplier to Hyundai Mobis, GM Korea, and KG Mobility. To support overseas expansion, the company operates a U.S. subsidiary, Saedong America, Inc., along with local entities in Brazil and China, building a supply chain aligned with its global OEM customers' local production bases. SAE Dong previously established a logistics base in Brazil to supply Hyundai Motor's Brazilian operations, aimed at reducing logistics costs and improving local defect response. In terms of ownership, CEO Yoon Jeong-sang and related parties hold a 27.34% stake. Competitively, SAE Dong is a small-to-mid-sized exterior parts maker specialized in a niche segment of door moldings, distinct from large module or electrification parts suppliers. Its earnings are directly tied to the production volumes and new-model cycles of its OEM customers."
+  "ko": "세동은 자동차 부품 중에서도 도어벨트, 압출물, 사출물, 몰딩을 제조하고 판매하는 회사다. 2023년 7월 기준 NICE디앤비 기술분석보고서는 GLASS 보호용 도어벨트, 도어 보호용 일반사출물, 몰딩 제품이 회사 전체 매출을 이끈다고 정리했다. 같은 보고서는 사업부문을 국내사업장과 해외사업장으로 나눠 설명했고, 국내 제품군으로 도어벨트, 가변압출물, 일반압출물, 일반사출물, 가스사출물, 몰딩을 들었다. 회사의 기술 기반은 압출과 사출 공정이며, 보고서는 차체 경량화 기술을 바탕으로 친환경차 시대의 수주 경쟁력을 높이는 것을 과제로 봤다. 2026년 11월 4일 보도는 세동을 자동차 내외장용 몰딩과 플라스틱 부품을 공급하는 업체로 소개했다. 도어벨트와 몰딩은 완성차 생산량에 따라 물량이 움직이는 구조여서, 고객사의 생산 계획이 매출 흐름에 직접 연결된다. 경쟁 구도는 현대모비스, 성우하이텍, 명신산업, 서연이화, DN오토모티브, SL, 한국피아이엠 등 차체·내외장·소재 부품 상장사들과 함께 놓인다. 외형 성장에 비해 이익률이 낮은 것이 이 회사 사업 구조의 가장 뚜렷한 특징이다. 2026년 10월 6일 보도에서 세동은 전장 부품 관련 테마 상승 종목으로 언급됐다.",
+  "en": "SAE Dong manufactures and sells automotive parts, focusing on door belts, extruded parts, injection-molded parts and moldings. A July 2023 technical analysis report by NICE D&B identified GLASS protection door belts, general injection-molded door protection parts and moldings as the main drivers of total revenue. The same report described two business segments, domestic and overseas operations, and listed domestic product lines including door belts, variable extrusions, general extrusions, general injection molding, gas injection molding and moldings. The technical base is extrusion and injection processing, and the report framed lightweight body-part technology as the basis for competitiveness in the eco-friendly vehicle era. A November 4, 2026 news report described the company as a supplier of exterior and interior moldings and plastic parts for automakers. Door belts and moldings move with vehicle production volumes, so customers' production plans feed directly into revenue. Peers include Hyundai Mobis, Sungwoo Hitech, Myoung Shin Industry, Seoyon E-Hwa, DN Automotive, SL and PIM Korea, which together form the competitive field for body and trim parts. The most distinct feature of the business is a low profit margin relative to its revenue growth. In a October 6, 2026 news report, SAE Dong was cited among stocks that rose on the electric-vehicle parts theme."
  },
  "earnings": {
-  "ko": "세동의 연간 매출은 2022년 1,561억원에서 2023년 1,699억원(8.9% 증가), 2024년 1,711억원(0.7% 증가), 2025년 1,894억원(10.7% 증가)으로 3년 연속 늘어나며 2022~2025년 중 가장 큰 해를 2025년이 차지했다. 반면 영업이익은 2022년 124억원에서 2023년 126억원으로 소폭 늘어난 뒤 정점을 찍고, 2024년 107억원(14.7% 감소), 2025년 91억원(15.0% 감소)으로 2년 연속 줄어 2022~2025년 중 가장 작은 해가 2025년이 됐다. 영업이익률은 2022년 8.0%에서 2023년 7.4%, 2024년 6.3%, 2025년 4.8%로 매년 낮아져 매출 증가에도 수익성은 뒷걸음질쳤다. 지배주주 순이익은 2023년 98억원(20.8% 감소)에 이어 2024년 11.5억원의 순손실로 적자 전환했다가 2025년 58.8억원으로 흑자 전환했는데, 회사 측은 과거 공동기업 지분 매각에 따른 처분손실과 환율 변동에 따른 외환 손실 등 일회성 요인이 2024년 실적에 영향을 미쳤다고 설명한 바 있다. 분기별로 보면 2025년 2분기 매출 462억원에서 3분기 452억원(2.2% 감소), 4분기 561억원(24.3% 증가)으로 등락한 뒤 2026년 1분기 527억원(6.2% 감소), 2분기 538억원(2.2% 증가, 전년 동기 대비 16.5% 증가)을 기록했다. 영업이익은 2025년 2분기 30.9억원에서 3분기 24.3억원(21.2% 감소), 4분기 15.1억원(38.1% 감소)으로 줄어들다가 2026년 1분기 30.9억원(105.2% 증가)으로 반등했으나, 2026년 2분기에는 17.94백만원의 영업손실로 전 분기와 전년 동기 대비 모두 적자 전환했다. 지배주주 순이익 역시 2025년 4분기 20.8억원의 순손실, 2026년 1분기 43.2억원의 흑자, 2026년 2분기 1.6억원의 순손실로 분기마다 흑자와 적자를 오갔으며, 최근 4개 분기(2025년 3분기~2026년 2분기) 합계는 52.8억원이었다. 재무 측면에서는 부채비율이 2022년 285.0%에서 2024년 209.5%까지 낮아졌다가 2025년 233.5%로 다시 높아졌고, 영업활동 현금흐름은 2024년 -14.6억원에서 2025년 214억원으로 뚜렷하게 개선됐다.",
-  "en": "SAE Dong's annual revenue rose for three consecutive years, from KRW 156.1 billion in 2022 to KRW 169.9 billion in 2023 (up 8.9%), KRW 171.1 billion in 2024 (up 0.7%), and KRW 189.4 billion in 2025 (up 10.7%), making 2025 the largest year among 2022-2025. Operating profit, however, edged up from KRW 12.4 billion in 2022 to KRW 12.6 billion in 2023 before peaking, then fell for two straight years to KRW 10.7 billion in 2024 (down 14.7%) and KRW 9.1 billion in 2025 (down 15.0%), making 2025 the smallest year in the period. The operating margin declined every year, from 8.0% in 2022 to 7.4% in 2023, 6.3% in 2024, and 4.8% in 2025, showing profitability eroding despite rising sales. Net income attributable to controlling shareholders fell to KRW 9.8 billion in 2023 (down 20.8%), turned into a loss of KRW 1.15 billion in 2024, then swung back to a profit of KRW 5.88 billion in 2025; the company has previously attributed weaker 2024 results to one-off factors including a disposal loss from selling a joint-venture stake and foreign-exchange losses. On a quarterly basis, revenue moved from KRW 46.2 billion in Q2 2025 to KRW 45.2 billion in Q3 2025 (down 2.2%), KRW 56.1 billion in Q4 2025 (up 24.3%), KRW 52.7 billion in Q1 2026 (down 6.2%), and KRW 53.8 billion in Q2 2026 (up 2.2% quarter-on-quarter and 16.5% year-on-year). Operating profit declined from KRW 3.09 billion in Q2 2025 to KRW 2.43 billion in Q3 2025 (down 21.2%) and KRW 1.51 billion in Q4 2025 (down 38.1%), rebounded to KRW 3.09 billion in Q1 2026 (up 105.2%), then swung to an operating loss of KRW 17.94 million in Q2 2026, turning negative both quarter-on-quarter and year-on-year. Net income attributable to controlling shareholders also alternated between profit and loss across quarters, from a loss of KRW 2.08 billion in Q4 2025 to a profit of KRW 4.32 billion in Q1 2026 and a loss of KRW 165 million in Q2 2026, with the trailing four quarters (Q3 2025-Q2 2026) summing to KRW 5.28 billion. On the balance sheet, the debt-to-equity ratio fell from 285.0% in 2022 to 209.5% in 2024 before rising again to 233.5% in 2025, while operating cash flow improved markedly from negative KRW 1.46 billion in 2024 to KRW 21.4 billion in 2025."
+  "ko": "연간 실적은 매출과 이익의 방향이 엇갈린다. 매출은 2022년 1,561억원에서 2023년 1,699억원(전년 대비 8.9% 증가), 2024년 1,711억원(전년 대비 0.7% 증가), 2025년 1,894억원(전년 대비 10.7% 증가)으로 2023년부터 2025년까지 3년 연속 증가했고, 2022~2025년 중 가장 큰 해는 2025년이다. 영업이익은 2022년 124억원에서 2023년 126억원(전년 대비 0.9% 증가)으로 정점을 찍은 뒤 2024년 107억원(전년 대비 14.7% 감소), 2025년 91억원(전년 대비 15.0% 감소)으로 2024년부터 2025년까지 2년 연속 감소했다. 영업이익률은 2022년 8.0%, 2023년 7.4%, 2024년 6.3%, 2025년 4.8%로 매년 낮아졌고, 한국경제 기업재무 자료에서도 매출총이익률이 2023년 이후 하락하는 흐름으로 나타난다. 지배주주 순이익은 2022년 124억원, 2023년 98억원(전년 대비 20.8% 감소), 2024년 순손실 11.5억원(전년 대비 적자 전환), 2025년 58.8억원(전년 대비 흑자 전환)이며, 당기순이익(비지배지분 포함)도 같은 해 기준으로 같은 값을 보였다. 2024년에는 영업외비용이 크게 늘어 세전 이익이 급감했는데, 이 시기 적자 전환의 주된 원인으로 읽힌다. 분기 흐름은 더 뚜렷하다. 매출은 2025년 4분기 561억원(전 분기 대비 24.3% 증가)으로 씽크풀이 최근 3년 중 가장 높다고 보도했지만, 2026년 3분기에는 517억원(전 분기 대비 4.0% 감소)으로 내려왔다. 영업이익은 2025년 4분기 15.1억원에서 2026년 1분기 30.9억원(전 분기 대비 105.2% 증가)으로 회복된 뒤 2분기 영업손실 1,794만원, 3분기 영업손실 3.2억원으로 다시 적자가 됐다. 2026년 1분기에는 지배주주 순이익 43.2억원이 영업이익보다 커서 영업 외 손익이 이익 규모에 영향을 준 것으로 보인다. 현금흐름은 2022년 199억원, 2023년 139억원, 2024년 -14.6억원, 2025년 214억원으로 변동이 컸다. 2025년 말 부채비율은 233.5%로 2024년 209.5%보다 올랐다.",
+  "en": "Annual results show revenue and profit moving in opposite directions. Revenue went from KRW 156.1 billion in 2022 to KRW 169.9 billion in 2023 (up 8.9% year on year), KRW 171.1 billion in 2024 (up 0.7%) and KRW 189.4 billion in 2025 (up 10.7%), rising for three straight years from 2023 through 2025, with 2025 the largest year of 2022–2025. Operating profit peaked at KRW 12.6 billion in 2023 (up 0.9%), then fell to KRW 10.7 billion in 2024 (down 14.7%) and KRW 9.1 billion in 2025 (down 15.0%), declining for two straight years from 2024 to 2025. The operating margin fell every year, from 8.0% in 2022 to 7.4%, 6.3% and 4.8% in 2025, and a Hankyung financial summary shows the gross margin trending lower after 2023. Net income attributable to controlling shareholders was KRW 12.4 billion in 2022, KRW 9.8 billion in 2023 (down 20.8%), a net loss of KRW 1.15 billion in 2024 after turning from profit to loss, and KRW 5.88 billion in 2025 after turning back to profit, and total net income including non-controlling interests matched these figures in each year. In 2024, non-operating expenses rose sharply and pushed pre-tax earnings down, which appears to be the main driver of the swing to a loss. Quarterly results show the same divergence. Revenue hit KRW 56.1 billion in the fourth quarter of 2025 (up 24.3% from the prior quarter), which Thinkpool reported as the highest in three years, before easing to KRW 51.7 billion in the third quarter of 2026 (down 4.0% from the prior quarter). Operating profit fell to KRW 1.51 billion in the fourth quarter of 2025, recovered to KRW 3.09 billion in the first quarter of 2026 (up 105.2%), then turned into an operating loss of KRW 17.94 million in the second quarter and KRW 321 million in the third. In the first quarter of 2026, net income attributable to controlling shareholders of KRW 4.32 billion exceeded operating profit, suggesting non-operating items affected the bottom line. Operating cash flow swung from KRW 19.9 billion in 2022 and KRW 13.9 billion in 2023 to KRW -1.46 billion in 2024 and KRW 21.4 billion in 2025. The debt ratio rose to 233.5% at the end of 2025 from 209.5% in 2024."
  },
  "industry": {
-  "ko": "국내 완성차 업계는 2026년 상반기 일부 부품사 화재 여파로 현대차 판매가 전년 동기 대비 4.9% 줄어드는 등 공급망 차질을 겪었으나, 기아는 하이브리드·전기차 판매 호조에 힘입어 역대 상반기 최다 판매를 기록하는 등 업체별 희비가 엇갈렸다. 업계 전망 보고서는 2026년 국내 자동차 생산이 현대차 울산 신공장과 기아 광명·화성 EVO 공장 등 친환경차 전용 라인 가동에 힘입어 전년 대비 소폭 증가한 413만대 수준이 될 것으로 내다봤다. 대외 여건 측면에서는 한미 관세 합의로 자동차·부품 관세가 기존 25%에서 15%로 낮아지면서 수출 관련 불확실성이 다소 완화됐다는 평가가 나온다. 다만 2026년 8월 자동차부품 수출은 하계 휴가에 따른 조업일수 감소 등의 영향으로 전년 동월 대비 줄어드는 등 월별 변동성이 큰 모습도 확인된다. 세동과 같은 중소형 외장부품 업체의 수익성은 완성차 생산량 변화와 원자재·환율 흐름에 상대적으로 민감하게 반응하는 구조다. 실제로 세동은 과거 한 분기(2022년 1분기)에는 경쟁사 대비 영업이익률이 가장 높은 편으로 분류된 적이 있었으나, 2025년 4분기 기준으로는 경쟁사 대비 영업이익률이 가장 낮은 편으로 바뀌어 업종 내 상대적 수익성 위치가 달라졌다. 전동화 전환이 진행되는 가운데서도 도어 몰딩류와 같은 외장부품은 내연기관차와 전기차 모두에 공통으로 필요한 부품이라는 점이 구조적 수요 기반이 되고 있다.",
-  "en": "South Korea's auto industry saw uneven results in the first half of 2026, as Hyundai Motor's sales fell 4.9% year-on-year partly due to disruptions from a parts-supplier fire, while KIA posted its highest-ever first-half sales on strong hybrid and EV demand. An industry outlook report projected 2026 domestic auto production at roughly 4.13 million units, a slight increase from the prior year, driven by the launch of eco-friendly-dedicated lines including Hyundai's new Ulsan plant and KIA's Gwangmyeong and Hwaseong EVO plants. On the external front, the reduction of U.S. auto and auto-parts tariffs from 25% to 15% under the Korea-U.S. agreement has been cited as easing some export-related uncertainty. However, auto parts exports in August 2026 declined year-on-year, partly reflecting fewer working days during the summer holiday period, underscoring notable month-to-month volatility. Smaller exterior-parts makers like SAE Dong tend to be relatively sensitive to shifts in OEM production volumes as well as raw material and currency trends. Notably, SAE Dong was once classified as having among the highest operating margins relative to peers in Q1 2022, but by Q4 2025 it ranked among the lowest in operating margin relative to peers, reflecting a shift in its relative profitability position within the sector. Even as electrification proceeds, exterior parts such as door moldings remain commonly required across both internal-combustion and electric vehicles, providing a structural base of demand."
+  "ko": "자동차 부품 업종은 2026년 들어 종목별 차별화가 뚜렷하다. 2026년 10월 8일 보도는 하이브리드차 수요 증가로 전장 부품 수주가 늘 것이라는 기대가 주가에 반영됐다고 전했고, 같은 날 세동은 중소형 전장·내외장 부품주 상승 목록에 포함됐다. 2026년 10월 12일 보도는 완성차 수요 둔화 우려 속에 세동을 포함한 여러 부품주가 하락했다고 전했다. 2026년 11월 4일에는 현대차그룹의 해외 생산기지 확충으로 국내 부품사의 납품 기회가 늘 것이라는 기대가 나왔다. 2026년 11월 16일 보도에서 세동은 보합권에서 관망세를 보인 종목으로 분류됐고, 같은 날 내연기관 부품과 차체·의장 부품 업체 상당수는 단기 차익실현 매물과 수급 부담으로 약세를 나타냈다. 업계는 전동화와 자율주행에 따른 전장 부품 수요 확대를 공통된 성장 요인으로 꼽지만, 실제 매출 기여 여부와 해외 고객사 확보 여부에 따라 종목별 결과가 갈린다는 분석이 나온다. 세동은 압출·사출·몰딩 기술을 바탕으로 한 차체 부품 업체이므로 소재와 정밀 가공 기술을 함께 보유한 기업들과 비교된다. 같은 업종의 성우하이텍, 명신산업, 한국피아이엠은 소재·가공 기술을 강조하는 기업으로 분류된다. 세동의 상대적 위치는 외형 성장에 비해 영업이익률이 낮다는 점에서 동종 기업과 구분된다.",
+  "en": "The auto parts sector shows clear stock-by-stock divergence in 2026. An October 8, 2026 news report said expectations of higher hybrid demand and more electrified-parts orders were reflected in share prices, and SAE Dong was among mid-sized electronics and trim parts names that rose that day. An October 12, 2026 report said several parts stocks, including SAE Dong, fell on concern about slowing automaker demand. A November 4, 2026 report said Hyundai Motor Group's expansion of overseas production bases could create more supply opportunities for domestic parts suppliers. A November 16, 2026 report placed SAE Dong among stocks trading flat with a wait-and-see tone, while many traditional combustion-engine and body-part suppliers faced selling pressure from short-term profit-taking. The sector broadly cites the expansion of electrification and autonomous driving as a shared growth driver, but analysts argue results will differ by company depending on actual revenue contribution and overseas customer wins. SAE Dong's body and molding technology puts it alongside suppliers with materials and precision processing capabilities, including Sungwoo Hitech, Myoung Shin Industry and PIM Korea. Its position relative to peers is distinguished mainly by a low operating margin despite revenue growth."
  },
  "outlook": {
-  "ko": "완성차 고객사의 2026년 하반기 신차 효과가 변수로 작용할 전망이다. 현대차는 더 뉴 그랜저에 이어 디 올 뉴 아반떼 출시를 계획하고 있으며, 한 증권사는 아반떼·투싼 풀체인지 모델 출시로 하이브리드 물량이 늘어날 것으로 분석한 바 있다. 기아 역시 하이브리드·전기차 중심의 판매 호조가 이어지면서 완성차 생산 물량이 세동과 같은 외장부품 협력사의 수주 물량에 긍정적으로 작용할 여지가 있다. 국내에서는 현대차 울산 신공장과 기아 광명·화성 EVO 공장의 가동이 본격화하면서 친환경차 공급 능력이 확대될 것으로 전망되는데, 이는 도어 몰딩 등 외장부품 수요 기반 확대로 이어질 수 있는 요인이다. 다만 2026년 2분기 영업손실 전환에서 보듯 원자재비·인건비 등 비용 부담이 매출 성장 속도를 앞지르는 구간이 반복되고 있어, 외형 확대가 곧바로 수익성 회복으로 이어질지는 다음 분기 실적에서 확인이 필요하다. 해외법인(미국·브라질·중국)의 가동 현황과 실적 기여도 역시 향후 공시를 통해 지속적으로 확인할 대상이다. 회사의 공식 수주 가이던스는 제시되지 않고 있으며, 사업보고서에서도 수시 발주·수시 출고 특성상 수주 일자와 납기를 특정하기 어렵다고 밝히고 있어 분기 실적의 변동성은 당분간 이어질 가능성이 있다.",
-  "en": "New-model effects at its OEM customers in the second half of 2026 are likely to be a key variable. Hyundai Motor plans to follow up the new Grandeur with the launch of the all-new Avante, and one brokerage analysis suggested that the full-model-change Avante and Tucson launches would boost hybrid vehicle volumes. KIA's continued strength in hybrid and EV sales could also support order volumes for exterior-parts partners such as SAE Dong. Domestically, the ramp-up of Hyundai's new Ulsan plant and KIA's Gwangmyeong and Hwaseong EVO plants is expected to expand eco-friendly vehicle production capacity, which could broaden the demand base for exterior parts such as door moldings. However, as shown by the swing to an operating loss in Q2 2026, periods in which raw material and labor cost burdens outpace revenue growth have recurred, so whether top-line expansion translates into a profitability recovery will need to be confirmed in coming quarterly results. The operating status and earnings contribution of its overseas units in the U.S., Brazil, and China also remain items to monitor through future disclosures. The company has not issued formal order guidance, and its annual report notes that order dates and delivery schedules are difficult to specify given the on-demand nature of its order intake, suggesting quarterly volatility could persist for some time."
+  "ko": "회사의 다음 정기 공시는 2026년 사업보고서이며, 이 보고서는 2026년 연간 영업이익률과 부채비율, 영업활동 현금흐름을 공시 실적으로 처음 담게 된다. 비교 기준은 2025년 연간 값인 영업이익률 4.8%, 부채비율 233.5%, 영업활동 현금흐름 214억원이다. 분기 측면에서는 2026년 4분기 실적이 2025년 4분기 영업이익 15.1억원과 지배주주 순손실 20.8억원에 비교되는 구조가 된다. 2026년 1분기 영업이익 30.9억원은 분기 기준으로 적자 전환 이전의 가장 최근 흑자 분기다. 2026년 3분기 영업손실 3.2억원이 4분기에도 이어질지, 혹은 1분기처럼 일시적 흑자로 돌아설지가 단기 쟁점이다. 시장에서는 전동화 부품과 하이브리드 수요 확대 기대가 제기되고 있지만, 회사가 이를 매출로 연결하는 시점은 아직 공시로 확인되지 않았다. 완성차 생산 계획이 줄어드는 시기에는 도어벨트와 몰딩 물량이 먼저 영향을 받을 수 있다. 2026년 4분기 실적은 2026년 12월 31일 결산 이후 나오며 잠정 실적으로 먼저 공개될 가능성이 있다. 이 잠정 실적은 정기보고서로 확정되기 전의 수치이므로 공시 실적과 구분해서 봐야 한다. 2026년 사업보고서 제출 이후에는 연간 이익 추세와 부채 구조의 변화가 확정된 수치로 확인된다.",
+  "en": "The next periodic filing is the 2026 annual report, which will be the first to carry full-year 2026 figures for operating margin, debt ratio and operating cash flow as disclosed results. The comparison base is the 2025 values of a 4.8% operating margin, a 233.5% debt ratio and KRW 21.4 billion in operating cash flow. On a quarterly basis, the fourth quarter of 2026 will be compared against an operating profit of KRW 1.51 billion and a net loss attributable to controlling shareholders of KRW 2.08 billion in the fourth quarter of 2025. The KRW 3.09 billion operating profit in the first quarter of 2026 is the most recent profitable quarter before the losses began. Whether the KRW 321 million operating loss of the third quarter of 2026 carries into the fourth quarter, or whether the business returns to a one-off profit as in the first quarter, is the near-term question. Expectations for electrified parts and hybrid demand have been raised in the market, but the timing of converting them into revenue has not yet appeared in disclosures. When automakers cut production plans, door belt and molding volumes may be hit first. Fourth-quarter 2026 results will come after the fiscal year closes on December 31, 2026, and a preliminary figure may be released before the audited report. Such preliminary figures are not confirmed filings and should be read separately from disclosed results. Once the 2026 annual report is filed, the full-year trend in profit and debt structure will be confirmed."
  },
  "valuation_comment": {
-  "ko": "세동의 주가는 장부상 1주당 순자산가치를 밑도는 수준에서 거래되는 구간이 이어지고 있어, 주가순자산비율 기준으로 할인된 상태에 있다. 이익 측면에서는 2024년 지배주주 순손실에서 2025년 흑자로 전환했고, 최근 4개 분기 지배주주 순이익 합계도 플러스를 유지하고 있어 수익 구조가 과거 대비 개선된 모습이다. 다만 2026년 2분기에 다시 영업손실·순손실로 돌아선 점은 이러한 이익 회복이 매 분기 안정적으로 이어지지는 않고 있음을 보여준다. 배당 측면에서는 최근 수년간 배당을 지급하지 않아 온 것으로 파악되며, 이는 업종 내 배당을 지급하는 다른 완성차·부품사들과 대비되는 지점이다. 과거 조회 시점들의 주가수익비율은 2~4배대에서 형성된 사례가 확인되는 등 코스닥 자동차부품 업종 평균 대비 낮은 배수권에서 거래되는 경향을 보여왔다. 이러한 수치들은 매일 바뀌는 시장가 기준이므로, 투자 판단 시점의 최신 지표는 화면에 표시되는 값을 함께 참고할 필요가 있다.",
-  "en": "SAE Dong's shares have continued to trade below their book net asset value per share, placing the stock at a discount on a price-to-book basis. On the earnings side, the swing from a controlling-shareholder net loss in 2024 to a profit in 2025, together with a positive sum of controlling-shareholder net income over the trailing four quarters, points to an improved earnings structure compared with the prior year. However, the return to an operating loss and net loss in Q2 2026 shows that this earnings recovery has not been sustained every quarter. On dividends, the company appears not to have paid a dividend in recent years, a point of contrast with other listed automakers and parts suppliers that do distribute dividends. Historical snapshots show the price-to-earnings ratio has at times traded in the low-single to mid-single digits, generally below the broader KOSDAQ auto-parts sector average. Because these multiples move with the daily market price, readers should cross-check the latest figures displayed on-screen at the time of any investment decision."
+  "ko": "최근 4개 분기 지배주주 순손실 합계가 25.6억원이어서 수익 기준 배수(PER)는 계산이 성립하지 않는 상태다. 주가순자산비율은 1배를 밑도는 구간에 있어 순자산 가치보다 낮은 가격에서 거래되는 상태다. 과거 주가순자산비율은 2021년 말 1배를 웃돌던 시기가 있었고 이후 하향 흐름을 보였다. 배당수익률은 사실상 없는 수준이어서 주주 환원을 기준으로 한 평가는 성립하지 않는다. 시가총액 규모가 작은 소형주라 주가 변동이 업황과 수급에 크게 흔들리는 구조다. 주가순자산비율이 낮게 나타나는 배경으로는 이익 체력 약화와 부채 비율 상승이 함께 설명 변수로 놓인다. 적자 전환이 지속되면 주가순자산비율의 해석도 순자산이 이익으로 얼마나 회복되는지에 따라 달라진다.",
+  "en": "Because the last four quarters total a net loss attributable to controlling shareholders of KRW 2.56 billion, a price-to-earnings multiple cannot be calculated on a trailing basis. The price-to-book ratio sits below 1x, meaning the shares trade under the book value of net assets. The price-to-book ratio was above 1x at the end of 2021 and has trended lower since then, according to Hankyung financial data. Dividend yield is effectively nil, so the comparison rests on earnings and asset value rather than shareholder payouts. The market capitalization is small, and the share price is sensitive to sector flows and trading supply. Two variables help explain the low multiple: weaker profitability and a higher debt ratio. If losses persist, how the price-to-book ratio is read will depend on how quickly profit rebuilds the equity base."
  },
  "bull": [
   {
    "title": {
-    "ko": "매출 성장세와 흑자 전환",
-    "en": "Revenue Growth and Return to Profit"
+    "ko": "매출 규모의 확대",
+    "en": "Larger revenue base"
    },
    "body": {
-    "ko": "2025년 매출은 1,894억원으로 2022~2025년 중 가장 컸고, 지배주주 순이익도 2024년 순손실에서 2025년 58.8억원 흑자로 전환했다. 2026년 1분기에도 매출 527억원, 지배주주 순이익 43.2억원을 기록하며 이익 회복의 연장선을 보여줬다. 완성차 고객사의 신차 출시 일정이 맞물리면 외형 확대 흐름이 이어질 여지가 있다.",
-    "en": "2025 revenue of KRW 189.4 billion was the largest among 2022-2025, and controlling-shareholder net income swung from a loss in 2024 to a profit of KRW 5.88 billion in 2025. Q1 2026 also showed revenue of KRW 52.7 billion and controlling-shareholder net income of KRW 4.32 billion, extending the earnings recovery. Alignment with OEM customers' new-model launch schedules could support continued top-line expansion."
+    "ko": "2025년 매출은 1,894억원으로 2022~2025년 중 가장 큰 해였고, 2023년부터 3년 연속 증가했다. 2025년 4분기 매출 561억원은 씽크풀 보도 기준 최근 3년 중 가장 높았다. 2026년 10월 전후 보도에서는 완성차 생산 확대와 전장 부품 수요 기대가 부품주 상승 배경으로 거론됐다. 외형 성장이 이익으로 이어지는지가 확인 포인트다.",
+    "en": "Revenue reached KRW 189.4 billion in 2025, the largest year of 2022–2025, and has risen for three straight years from 2023. Thinkpool reported that fourth-quarter 2025 revenue of KRW 56.1 billion was the highest of the last three years. News reports in October 2026 cited expanding automaker production and electrified-parts demand as drivers of parts-stock gains. Whether this revenue growth converts into profit is the key point to confirm."
    }
   },
   {
    "title": {
-    "ko": "해외 거점을 통한 고객 분산",
-    "en": "Diversified Customer Base via Overseas Units"
+    "ko": "2026년 1분기 이익 회복",
+    "en": "Profit recovery in the first quarter of 2026"
    },
    "body": {
-    "ko": "세동은 미국 법인 Saedong America와 브라질, 중국 현지법인을 통해 현대차·기아의 해외 생산기지에 대응하는 공급망을 갖추고 있다. 이는 국내 완성차 생산 변동에 따른 매출 영향을 일부 분산시키는 요인이 될 수 있다. 다만 해외법인별 매출 기여도는 정기보고서에서 별도로 구분돼 공시되지 않아 세부 규모는 확인이 어렵다.",
-    "en": "Through its Saedong America subsidiary and local entities in Brazil and China, SAE Dong has built a supply chain aligned with Hyundai Motor and KIA's overseas production bases. This could partly diversify revenue exposure to fluctuations in domestic OEM production. However, the specific revenue contribution of each overseas unit is not separately disclosed in periodic reports."
+    "ko": "2026년 1분기 영업이익은 30.9억원으로 전 분기 대비 105.2% 증가했고, 지배주주 순이익은 43.2억원으로 흑자 전환했다. 분기 기준으로 손실이 나기 전의 가장 강한 이익 구간이었다. 이 회복이 일시적인지 지속 가능한지는 이후 분기 실적으로 판단할 수 있다. 4분기 이후 흑자 회복 여부가 다음 확인 지점이다.",
+    "en": "Operating profit in the first quarter of 2026 was KRW 3.09 billion, up 105.2% from the prior quarter, and net income attributable to controlling shareholders turned to a KRW 4.32 billion profit. It was the strongest profit quarter before losses began. Whether the rebound is one-off or sustained can be judged from later quarters. Whether profit returns in the fourth quarter is the next point to watch."
    }
   },
   {
    "title": {
-    "ko": "현금흐름 개선",
-    "en": "Improved Cash Flow"
+    "ko": "재무 구조의 개선 흐름",
+    "en": "Improving financial structure"
    },
    "body": {
-    "ko": "영업활동 현금흐름은 2024년 -14.6억원에서 2025년 214억원으로 뚜렷하게 개선됐다. 이는 2024년의 일회성 손실 요인이 2025년에는 상대적으로 완화됐음을 시사한다. 현금흐름이 안정화되면 부채비율 관리에도 긍정적으로 작용할 수 있다.",
-    "en": "Operating cash flow improved markedly from negative KRW 1.46 billion in 2024 to KRW 21.4 billion in 2025. This suggests the one-off loss factors seen in 2024 eased relatively in 2025. A more stable cash flow profile could also support management of the debt-to-equity ratio."
+    "ko": "부채비율은 2022년 285.0%에서 2025년 233.5%로 낮아졌다. 2025년 영업활동 현금흐름은 214억원으로 플러스를 회복했다. 2025년 지배주주 순이익 58.8억원은 2024년 순손실에서 돌아선 값이다. 2025년 말 부채 구조가 2024년보다 나빠진 점은 함께 봐야 한다.",
+    "en": "The debt ratio fell from 285.0% in 2022 to 233.5% in 2025. Operating cash flow returned to a positive KRW 21.4 billion in 2025. Net income attributable to controlling shareholders of KRW 5.88 billion in 2025 reversed the 2024 loss. The debt ratio at the end of 2025 was higher than in 2024, which should be read alongside these improvements."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "구조적인 영업이익률 하락",
-    "en": "Structural Decline in Operating Margin"
+    "ko": "2개 분기 연속 영업손실",
+    "en": "Two straight quarters of operating losses"
    },
    "body": {
-    "ko": "영업이익률은 2022년 8.0%에서 2025년 4.8%까지 매년 낮아졌으며, 매출이 늘어난 해에도 이익률은 개선되지 않았다. 2025년 4분기 기준으로는 경쟁사 대비 영업이익률이 가장 낮은 편으로 분류돼 업종 내 상대적 수익성이 약화된 모습이다. 비용 구조 개선 없이는 외형 성장이 이익으로 충분히 이어지지 않을 가능성이 있다.",
-    "en": "The operating margin declined every year from 8.0% in 2022 to 4.8% in 2025, with margins failing to improve even in years of revenue growth. As of Q4 2025, the company ranked among the lowest in operating margin relative to peers, indicating weakened relative profitability within the sector. Without an improvement in the cost structure, revenue growth may not sufficiently translate into higher profit."
+    "ko": "2026년 2분기 영업손실은 1,794만원, 3분기 영업손실은 3.2억원으로 손실 폭이 커졌다. 2026년 3분기 지배주주 순손실은 46.3억원으로 적자 전환 이후 손실이 확대됐다. 최근 4개 분기 지배주주 순손실 합계는 25.6억원이다. 적자 지속 여부가 가장 직접적인 약세 근거다.",
+    "en": "The operating loss widened from KRW 17.94 million in the second quarter of 2026 to KRW 321 million in the third. The third-quarter net loss attributable to controlling shareholders reached KRW 4.63 billion, with losses growing after the turn to deficit. The last four quarters total a net loss attributable to controlling shareholders of KRW 2.56 billion. Continued losses are the most direct bearish evidence."
    }
   },
   {
    "title": {
-    "ko": "분기 실적의 반복적 변동",
-    "en": "Recurring Quarterly Volatility"
+    "ko": "이익률의 지속적 하락",
+    "en": "Steady decline in profit margin"
    },
    "body": {
-    "ko": "최근 5개 분기 동안 영업이익과 지배주주 순이익은 흑자와 적자를 번갈아 기록했으며, 2026년 2분기에는 영업손실과 순손실이 동시에 발생했다. 이러한 변동성은 분기별 실적만으로 추세를 단정하기 어렵게 만든다. 다음 분기 실적에서 이익 안정성이 회복되는지 확인이 필요하다.",
-    "en": "Over the last five quarters, operating profit and controlling-shareholder net income alternated between profit and loss, with both an operating loss and a net loss occurring simultaneously in Q2 2026. This volatility makes it difficult to draw firm trend conclusions from any single quarter. Whether earnings stability returns will need to be confirmed in upcoming quarterly results."
+    "ko": "영업이익률은 2022년 8.0%에서 2023년 7.4%, 2024년 6.3%, 2025년 4.8%로 매년 낮아졌다. 영업이익은 2024년과 2025년 두 해 연속 감소했고, 2025년 91억원은 2022~2025년 중 가장 작은 해다. 매출이 늘어도 이익이 따라오지 않는 구조가 이어지고 있다. 원가 부담이 줄지 않으면 외형 성장의 효과가 제한된다.",
+    "en": "The operating margin declined each year, from 8.0% in 2022 to 7.4% in 2023, 6.3% in 2024 and 4.8% in 2025. Operating profit fell in both 2024 and 2025, and the KRW 9.1 billion in 2025 was the smallest of 2022–2025. Profit has not kept pace with revenue growth. Unless cost pressure eases, the benefit of higher sales stays limited."
    }
   },
   {
    "title": {
-    "ko": "부채비율 재상승",
-    "en": "Renewed Rise in Debt Ratio"
+    "ko": "완성차 수요 둔화 우려",
+    "en": "Concern over slowing automaker demand"
    },
    "body": {
-    "ko": "부채비율은 2024년 209.5%까지 낮아졌다가 2025년 233.5%로 다시 높아졌다. 부채비율이 200%대 중반 수준을 유지하는 가운데 영업이익이 줄어들면 이자 부담 대응 여력이 상대적으로 좁아질 수 있다. 재무 레버리지 수준은 향후 실적 흐름과 함께 지켜볼 요인이다.",
-    "en": "The debt-to-equity ratio fell to 209.5% in 2024 before rising again to 233.5% in 2025. With the ratio holding in the mid-200% range, a decline in operating profit could relatively narrow the company's capacity to absorb interest expense. The level of financial leverage is a factor to watch alongside future earnings trends."
+    "ko": "2026년 10월 12일 보도는 완성차 수요 둔화 우려 속에 세동을 포함한 자동차 부품주가 하락했다고 전했다. 2026년 3분기 매출은 517억원으로 전 분기 대비 4.0% 감소했다. 2026년 11월 16일에는 세동이 보합권에서 관망세를 보였다. 수요 신호가 약해지면 도어벨트와 몰딩 물량이 먼저 줄 수 있다.",
+    "en": "An October 12, 2026 news report said auto parts stocks, including SAE Dong, fell amid concern over slowing automaker demand. Third-quarter 2026 revenue was KRW 51.7 billion, down 4.0% from the prior quarter. On November 16, 2026, SAE Dong traded flat with a wait-and-see tone. If demand signals weaken, door belt and molding volumes could be the first to decline."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중도",
-    "en": "Customer Concentration"
+    "ko": "수요·고객 의존",
+    "en": "Demand and customer concentration"
    },
    "body": {
-    "ko": "세동의 주요 매출은 현대차·기아 등 소수 완성차 그룹에 집중돼 있어, 이들의 생산 계획 변화나 수요 둔화가 실적에 직접적인 영향을 줄 수 있다. 2026년 상반기 현대차의 판매 감소 사례에서 보듯 부품사 화재 등 공급망 변수도 완성차 생산에 영향을 줄 수 있다. 고객 다변화 속도는 향후 공시를 통해 확인할 필요가 있다.",
-    "en": "SAE Dong's revenue is concentrated among a small number of OEM groups, mainly Hyundai Motor and KIA, so changes in their production plans or demand could directly affect results. As seen in Hyundai's sales decline in H1 2026, supply-chain variables such as a parts-supplier fire can also affect OEM production. The pace of customer diversification will need to be tracked through future disclosures."
+    "ko": "도어벨트와 몰딩은 완성차 생산량에 따라 물량이 움직인다. 완성차 생산 계획이 줄거나 특정 차종의 생산이 종료되면 매출에 직접 영향이 간다. 2026년 10월에는 수요 둔화 우려가 부품주 전반의 하락 요인으로 거론됐다. 고객사별 매출 비중은 본문에서 수치로 다루기 어려워 위험도를 정성적으로 볼 필요가 있다.",
+    "en": "Door belts and moldings move with automaker production volumes. A cut in production plans or the end of production for a specific model would affect revenue directly. In October 2026, concern over weaker demand was cited as a reason for declines across parts stocks. Because customer-level revenue shares are not presented here as numbers, the risk should be read qualitatively."
    }
   },
   {
    "cat": {
-    "ko": "원자재 및 환율 변동",
-    "en": "Raw Material and Currency Fluctuation"
+    "ko": "재무 부담",
+    "en": "Financial burden"
    },
    "body": {
-    "ko": "금속압출 및 사출 성형에 쓰이는 철강·화학소재 가격 변동은 원가에 직접 영향을 줄 수 있다. 해외법인을 운영하는 만큼 브라질 헤알화 등 신흥국 통화의 환율 변동에 따른 외환 손익도 과거 실적에 영향을 미친 바 있다. 이러한 변수는 분기별 이익 변동성을 키우는 요인으로 작용해왔다.",
-    "en": "Fluctuations in the prices of steel and chemical materials used in metal extrusion and injection molding can directly affect costs. Given its overseas operations, foreign-exchange gains and losses tied to emerging-market currencies such as the Brazilian real have previously affected results. These factors have contributed to quarter-to-quarter earnings volatility."
+    "ko": "2025년 말 부채총계는 941억원으로 자본총계 403억원을 웃돈다. 부채비율은 2024년 209.5%에서 2025년 233.5%로 다시 올랐다. 2024년에는 영업활동 현금흐름이 -14.6억원으로 마이너스였다. 적자가 이어질 경우 차입 부담이 늘어날 수 있다.",
+    "en": "Total liabilities at the end of 2025 stood at KRW 94.1 billion, above total equity of KRW 40.3 billion. The debt ratio rose again to 233.5% in 2025 from 209.5% in 2024. Operating cash flow was negative at KRW -1.46 billion in 2024. If losses continue, borrowing costs and repayment pressure could increase."
    }
   },
   {
    "cat": {
-    "ko": "재무 레버리지",
-    "en": "Financial Leverage"
+    "ko": "수익성 회복 지연",
+    "en": "Delayed profitability recovery"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 941억원으로 자본총계 403억원 대비 높은 수준을 유지하고 있다. 영업이익이 줄어드는 구간에서 부채비율이 동반 상승하면 이자비용 부담이 커질 수 있다. 향후 현금흐름과 차입금 상환 능력을 함께 살펴볼 필요가 있다.",
-    "en": "Total liabilities stood at KRW 94.1 billion at the end of 2025, well above total equity of KRW 40.3 billion. If the debt ratio rises further during a period of declining operating profit, interest expense burdens could increase. Future cash flow and debt repayment capacity will need to be monitored together."
+    "ko": "2026년 1분기 흑자 이후 2분기와 3분기에 다시 영업손실이 나면서 분기 흐름이 안정되지 않았다. 영업외 손익이 이익을 좌우하는 구조라면 본업의 회복 여부를 가리기 어렵다. 매출 규모는 2025년 4분기 이후 500억원대에서 움직이고 있다. 영업이익률이 회복되지 않으면 외형 성장이 이익 개선으로 이어지지 않는다.",
+    "en": "After a profitable first quarter of 2026, operating losses returned in the second and third quarters, so the quarterly trend has not stabilized. If non-operating items drive reported profit, it becomes harder to judge whether core operations are recovering. Quarterly revenue has stayed in the KRW 50 billion range since the fourth quarter of 2025. Without a margin recovery, revenue growth will not translate into higher profit."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중순",
-    "en": "Mid-November 2026"
+    "ko": "2026년 12월 31일",
+    "en": "December 31, 2026"
    },
    "what": {
-    "ko": "2026년 3분기 분기보고서 공시 예정 시점으로, 2분기 영업손실 이후 수익성 반등 여부를 확인할 수 있는 시점이다.",
-    "en": "The Q3 2026 quarterly report is expected to be filed around this time, offering a chance to check whether profitability rebounds following the Q2 operating loss."
+    "ko": "2026 회계연도 결산 기준일이다. 2026년 4분기 실적은 2025년 4분기 영업이익 15.1억원과 지배주주 순손실 20.8억원을 비교 기준으로 삼게 된다.",
+    "en": "Fiscal year 2026 closes. Fourth-quarter 2026 results will be compared with the fourth quarter of 2025, when operating profit was KRW 1.51 billion and the net loss attributable to controlling shareholders was KRW 2.08 billion."
    }
   },
   {
    "when": {
-    "ko": "매월 중순(산업통상부 자동차산업 동향 발표)",
-    "en": "Mid-month (Ministry of Trade, Industry and Energy auto industry data release)"
+    "ko": "2027년 초 (발표일 미정)",
+    "en": "Early 2027 (date not yet set)"
    },
    "what": {
-    "ko": "국내 완성차 생산·수출 통계가 월별로 발표되는데, 현대차·기아의 생산 회복 속도는 세동의 수주 물량과 연동될 수 있어 지속적으로 확인할 지표다.",
-    "en": "Monthly domestic auto production and export statistics are released; the pace of Hyundai Motor and KIA's production recovery is linked to SAE Dong's order volumes and warrants ongoing monitoring."
+    "ko": "2026년 4분기 잠정 실적 발표가 예상된다. 잠정 수치이며 정기보고서로 확정되기 전의 값이므로 공시 실적과 구분해서 확인해야 한다.",
+    "en": "A preliminary fourth-quarter 2026 earnings release is expected. These are provisional figures that differ from disclosed results until confirmed in the periodic filing."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기 중",
-    "en": "During Q4 2026"
+    "ko": "2027년 3월 말",
+    "en": "Late March 2027"
    },
    "what": {
-    "ko": "현대차의 디 올 뉴 아반떼 출시 등 신차 효과가 실제 생산·판매로 이어지는지가 외장부품 협력사의 수주에 영향을 줄 수 있어 확인이 필요하다.",
-    "en": "Whether new-model effects such as Hyundai's all-new Avante launch translate into actual production and sales volumes could affect order intake for exterior-parts suppliers, and warrants confirmation."
-   }
-  },
-  {
-   "when": {
-    "ko": "다음 정기보고서 공시 시점",
-    "en": "At the next periodic report filing"
-   },
-   "what": {
-    "ko": "부채비율과 영업활동 현금흐름의 추가 변화, 해외법인(미국·브라질·중국)의 실적 기여도가 갱신되는지 확인이 필요하다.",
-    "en": "Further changes in the debt-to-equity ratio and operating cash flow, as well as any update on the earnings contribution of overseas units in the U.S., Brazil, and China, should be checked."
+    "ko": "2026년 사업보고서 제출 기한이다(통상 결산 후 90일 이내). 연간 영업이익률, 부채비율, 영업활동 현금흐름이 2025년의 4.8%, 233.5%, 214억원과 비교되는 첫 공시 자료가 된다.",
+    "en": "The deadline for the 2026 annual report, generally within 90 days after fiscal year-end. Its operating margin, debt ratio and operating cash flow will be compared with 2025 levels of 4.8%, 233.5% and KRW 21.4 billion."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "세동은 2025년 매출 1,894억원으로 2022~2025년 중 가장 큰 외형을 기록했지만, 영업이익률은 같은 기간 꾸준히 낮아져 외형과 수익성이 괴리되는 모습을 보이고 있다. 지배주주 순이익은 2024년 적자에서 2025년 흑자로 전환했으나, 2026년 2분기 다시 영업손실·순손실로 돌아서며 분기별 변동성이 해소되지 않았음을 확인시켰다. 재무 측면에서는 영업활동 현금흐름이 2025년 크게 개선된 반면 부채비율은 다시 높아지는 등 지표가 엇갈린다. 현대차·기아의 신차 출시와 친환경차 신공장 가동이 2026년 하반기 전방 수요에 영향을 줄 변수로 꼽히지만, 비용 부담이 매출 성장 속도를 앞지르는 구간이 반복돼온 만큼 다음 분기 실적으로 수익성 회복 여부를 확인하는 과정이 필요하다. 해외법인의 실적 기여도와 고객 집중도, 원자재·환율 변동은 지속적으로 살펴야 할 요인이다. 이 리포트는 공시된 재무 정보를 정리한 것으로, 투자 판단은 독자의 몫이다.",
-   "en": "SAE Dong posted its largest revenue among 2022-2025 at KRW 189.4 billion in 2025, yet its operating margin declined steadily over the same period, reflecting a divergence between top-line growth and profitability. Controlling-shareholder net income swung from a loss in 2024 to a profit in 2025, but the return to an operating loss and net loss in Q2 2026 showed that quarterly volatility has not been resolved. Financially, signals are mixed, with operating cash flow improving significantly in 2025 even as the debt-to-equity ratio rose again. New-model launches from Hyundai Motor and KIA and the ramp-up of eco-friendly-vehicle plants are cited as variables for demand in the second half of 2026, but given the recurring pattern of costs outpacing revenue growth, upcoming quarterly results will need to confirm whether profitability recovers. The earnings contribution of overseas units, customer concentration, and raw material and currency fluctuations remain factors to continue monitoring. This report compiles disclosed financial information; investment decisions are left to the reader."
+   "ko": "세동은 2025년 매출 1,894억원으로 2022~2025년 중 가장 큰 해를 기록했지만, 영업이익은 2024년과 2025년 두 해 연속 감소했고 영업이익률은 2022년 8.0%에서 2025년 4.8%로 낮아졌다. 2026년 1분기에는 영업이익 30.9억원으로 회복했으나 2분기와 3분기에 연속 영업손실이 나면서 분기 흐름은 안정되지 않은 상태다. 재무 측면에서는 2025년 말 부채비율이 233.5%로 2022년의 285.0%보다 낮지만 2024년 대비 올랐고, 2025년 영업활동 현금흐름은 214억원으로 플러스를 회복했다. 밸류에이션은 최근 4개 분기 순손실로 수익 기준 배수가 성립하지 않고, 주가순자산비율은 1배 미만으로 순자산 대비 낮은 가격에 거래되는 구간이다. 강세 요인은 매출 규모 확대, 1분기 이익 회복, 재무 구조 개선 흐름이고, 약세 요인은 연속 적자, 이익률 하락, 완성차 수요 둔화 우려다. 다음 확인 지점은 2026년 4분기 결산과 잠정 실적, 그리고 2027년 3월 말까지 제출되는 2026년 사업보고서다. 이 시점에 영업손실이 이어지는지와 영업이익률이 회복되는지가 판단의 핵심 지표가 된다.",
+   "en": "SAE Dong recorded its largest revenue year of 2022–2025 at KRW 189.4 billion in 2025, yet operating profit fell in both 2024 and 2025, and the operating margin declined from 8.0% in 2022 to 4.8% in 2025. Operating profit recovered to KRW 3.09 billion in the first quarter of 2026, but operating losses in the second and third quarters mean the quarterly trend has not stabilized. On the financial side, the debt ratio at the end of 2025 was 233.5%, below 285.0% in 2022 but higher than in 2024, and operating cash flow returned to a positive KRW 21.4 billion in 2025. On valuation, the last four quarters of net losses rule out a trailing earnings multiple, and the price-to-book ratio below 1x means the shares trade under net asset value. Bullish points are the larger revenue base, the first-quarter profit recovery and the improving financial structure. Bearish points are consecutive operating losses, a shrinking margin and concern over slowing automaker demand. The next checkpoints are the fiscal year-end on December 31, 2026, the preliminary fourth-quarter results, and the 2026 annual report due by late March 2027. Whether operating losses continue and whether the operating margin recovers will be the key indicators at that stage."
   }
  },
  "sources": [
-  "https://itooza.com/vscore/053060",
-  "https://m.news.nate.com/view/20260331n34427",
-  "https://www.google.com/finance/quote/053060:KOSDAQ?hl=ko",
-  "https://ssl.pstatic.net/imgstock/upload/research/company/1691103797612.pdf",
-  "https://m.irgo.co.kr/IR-COMP/053060/-IR-PAGE",
-  "https://securities.miraeasset.com/bbs/download/2122820.pdf?attachmentId=2122820",
-  "https://www.saramin.co.kr/zf_user/company-info/view/csn/YVUyV0Y1WnVDZVFrRjF4TnlkZXdIZz09/company_nm/(%EC%A3%BC)%EC%84%B8%EB%8F%99",
-  "https://www.saramin.co.kr/zf_user/company-info/view/csn/K2t3cEZOaitZUXJzL0VtaG5OQlAzQT09/company_nm/(%EC%A3%BC)%EC%84%B8%EB%8F%99%EC%82%B0%EC%97%85",
-  "https://www.investing.com/equities/sae-dong-co-ltd",
-  "https://kr.investing.com/equities/sae-dong-co-ltd-earnings",
-  "https://valueline.co.kr/finance/investment/053060",
-  "https://markets.hankyung.com/stock/053060/financial-summary",
-  "https://www.valueline.co.kr/finance/mri/053060",
+  "https://kpinfo.kr/stock/053060",
+  "https://stockcatcher.co.kr/%EC%84%B8%EB%8F%99-%EC%A3%BC%EC%8B%9D-%EC%A3%BC%EA%B0%80-%EB%A7%A4%EC%B6%9C-%EC%A0%84%EB%A7%9D-%ED%85%8C%EB%A7%88%EC%A3%BC-%EB%B6%84%EC%84%9D/",
+  "https://markets.hankyung.com/stock/053060",
+  "https://goinsider.kr/stock/00133663",
   "https://m.thinkpool.com/stockDiscuss/053060/cont/11865972",
-  "https://factstock.net/earnings",
-  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03801526642075112",
-  "https://www.sankun.com/company-info/iMVsDmPiFviykwmuxe9fUg",
-  "https://m.jobkorea.co.kr/company/43187896"
+  "https://securities.miraeasset.com/bbs/download/2122820.pdf?attachmentId=2122820",
+  "https://ssl.pstatic.net/imgstock/upload/research/company/1691103797612.pdf",
+  "https://markets.hankyung.com/stock/053060/financial-summary",
+  "https://www.thinkpool.com/item/053060/news/15514177",
+  "https://www.investing.com/equities/sae-dong-co-ltd",
+  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=501252",
+  "https://www.saramin.co.kr/zf_user/company-info/view/csn/YVUyV0Y1WnVDZVFrRjF4TnlkZXdIZz09/company_nm/(%EC%A3%BC)%EC%84%B8%EB%8F%99",
+  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=494361",
+  "https://www.saramin.co.kr/zf_user/company-info/view/csn/K2t3cEZOaitZUXJzL0VtaG5OQlAzQT09/company_nm/(%EC%A3%BC)%EC%84%B8%EB%8F%99%EC%82%B0%EC%97%85",
+  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=504397",
+  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=495872",
+  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=493770",
+  "https://judal.co.kr/?shareToken=BP6mX88lpoTNQR2t&view=stockAI"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "053060",
  "name": "세동",
  "name_en": "SAE DONG CO. LTD",
@@ -223,11 +213,11 @@
   "자동차"
  ],
  "market": "코스닥",
- "reportDate": "2026-10-20",
- "reportTs": "2026-10-20 01:27",
- "dataDate": "20261019",
+ "reportDate": "2026-11-18",
+ "reportTs": "2026-11-18 11:39",
+ "dataDate": "20261117",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-11-18",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -297,12 +287,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 46189050377,
-    "op": 3086706144,
-    "np_owner": 1685184228
-   },
-   {
     "q": "2025Q3",
     "rev": 45153773641,
     "op": 2433090817,
@@ -325,28 +309,39 @@
     "rev": 53821680819,
     "op": -17943595,
     "np_owner": -164739222
+   },
+   {
+    "q": "2026Q3",
+    "rev": 51672223231,
+    "op": -321083782,
+    "np_owner": -4626153031
    }
   ],
   "valuation": {
-   "price": 1227,
-   "mcap": 0.0218,
+   "price": 1327,
+   "mcap": 0.0234,
    "shares": 17657419,
    "total_shares": 17657419,
-   "wavg_shares": 17664461,
-   "per": 4.104,
-   "eps": 299,
-   "pbr": 0.5018,
-   "bps": 2445,
-   "roe_ttm": 12.8,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": 5278600350,
+   "wavg_shares": 17592763,
+   "per": null,
+   "eps": -145,
+   "pbr": 0.5903,
+   "bps": 2248,
+   "roe_ttm": -6.3,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": -2557440475,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 0.59,
+   "eps_src": "공시",
+   "pbr_krx": 0.58,
    "bps_krx": 2282.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
-   "div": 0.0
+   "div": 0.0,
+   "hidden": {
+    "per": "loss"
+   }
   }
- }
+ },
+ "textRules": 3
 }
