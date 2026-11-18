@@ -14,14 +14,12 @@ jobs:
         with:
           python-version: '3.11'
           cache: 'pip'
-      - run: pip install -r requirements.txt yfinance holidays
+      - run: pip install -r requirements.txt lxml
 
-      - name: 소스 판정
+      - name: 상장 예정 종목 자료원 판정(임시 · 작업 가지에서만)
         env:
           DART_API_KEY: ${{ secrets.DART_API_KEY }}
-          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
-          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
-          ECOS_API_KEY: ${{ secrets.ECOS_API_KEY }}
-          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
-          HOLIDAY_API_KEY: ${{ secrets.HOLIDAY_API_KEY }}
-        run: python scripts/probe_sources.py --raw
+          KRX_ID: ${{ secrets.KRX_ID }}
+          KRX_PW: ${{ secrets.KRX_PW }}
+        run: |
+          python scripts/probe_ipo.py 2>&1 | sed -u 's/\(로그인 ID: \).*/\1(가림)/'
