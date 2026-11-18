@@ -1,220 +1,210 @@
 {
  "title": {
-  "ko": "메시징 본업 회복 속 AI 사업 확장 시도",
-  "en": "Messaging Core Recovers While AI Push Expands"
+  "ko": "메시징에서 AI로, 분기 이익은 엇갈리는 인포뱅크",
+  "en": "InfoBank: Messaging Shifts Toward AI as Quarterly Profit Swings"
  },
  "lead": {
-  "ko": "인포뱅크는 기업 메시징 서비스를 핵심으로 스마트카·AI 솔루션·스타트업 투자로 사업을 다각화하고 있으며, 2026년 상반기 분기 순이익이 흑자로 돌아서는 등 실적 흐름이 개선되는 신호가 나타나고 있다.",
-  "en": "InfoBank, built on enterprise messaging services, is diversifying into smart-car, AI solutions and startup investment, and recent quarters have shown signs of improving profitability with net income turning positive in early 2026."
+  "ko": "인포뱅크는 기업 메시징을 축으로 AI 커뮤니케이션 플랫폼으로 사업을 옮기는 중이다. 2026년 1분기부터 3분기까지 지배주주 순이익은 흑자였지만, 영업손실은 2025년 3분기 이후 5개 분기 연속 이어졌다.",
+  "en": "InfoBank is shifting from enterprise messaging toward an AI communication platform. Net income attributable to controlling shareholders was positive from the first quarter through the third quarter of 2026, but operating losses have continued for five consecutive quarters since the third quarter of 2025."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출 1,351억원으로 전년과 유사한 수준을 유지했으나 영업손실은 지속됐다.",
-   "en": "2025 consolidated revenue was KRW 135.1 billion, similar to the prior year, but operating losses continued."
+   "ko": "매출은 2023년부터 2025년까지 3년 연속 감소해 2025년 1,351억원이었다. 2026년 2분기에는 437억원으로 전 분기 대비 28.4% 증가했다.",
+   "en": "Revenue fell for three consecutive years from 2023 to 2025, reaching KRW 135.1 billion in 2025. It rebounded to KRW 43.7 billion in the second quarter of 2026, up 28.4% from the prior quarter."
   },
   {
-   "ko": "2026년 1분기와 2분기 지배주주 순이익이 각각 1.7억원, 11.0억원으로 연속 흑자를 기록했다.",
-   "en": "Net income attributable to owners turned positive for two consecutive quarters in 2026, at KRW 0.17 billion in Q1 and KRW 1.1 billion in Q2."
+   "ko": "2025년 영업손실은 42억원으로 전년보다 손실 폭이 줄었다. 2026년 3분기 영업손실은 6.7억원으로 전 분기 대비 다시 확대됐다.",
+   "en": "The 2025 operating loss narrowed to KRW 4.2 billion from the prior year. The operating loss widened again to KRW 672 million in the third quarter of 2026 from the prior quarter."
   },
   {
-   "ko": "AI 협업 플랫폼 '인세븐(IN7)'과 AICC 솔루션을 통해 기업용 AI 시장 공략을 확대하고 있다.",
-   "en": "The company is expanding into the enterprise AI market through its 'IN7' AI collaboration platform and AICC solutions."
+   "ko": "지배주주 순이익은 2024년과 2025년 순손실이었으나 2026년 1분기 흑자 전환 후 2분기 11억원, 3분기 6.6억원을 기록했다. 최근 4개 분기 합계는 순손실 4.4억원이다.",
+   "en": "Net income attributable to controlling shareholders was a loss in 2024 and 2025. It turned to a profit in the first quarter of 2026, at KRW 1.1 billion in the second quarter and KRW 656 million in the third. The four-quarter total from Q4 2025 to Q3 2026 is a net loss of KRW 439 million."
   },
   {
-   "ko": "통신사(KT·LG유플러스)의 문자중계 시장 점유율 확대가 대법원 판결로 제동이 걸려 중장기 경쟁 구도 변화가 기대되는 요인으로 언급된다.",
-   "en": "A Supreme Court ruling against telecom carriers' text-relay business practices has been cited as a factor that could reshape the competitive landscape over the medium term."
+   "ko": "영업활동 현금흐름은 2023년부터 2025년까지 마이너스였다. 부채비율은 2022년 38.6%에서 2025년 43.4%로 높아졌다.",
+   "en": "Operating cash flow was negative from 2023 through 2025. The debt-to-equity ratio rose from 38.6% in 2022 to 43.4% in 2025."
   },
   {
-   "ko": "부채비율은 2022년 38.6%에서 2025년 43.4%로 다소 상승했으며, 영업활동현금흐름은 최근 3년 연속 음수를 기록했다.",
-   "en": "The debt ratio rose from 38.6% in 2022 to 43.4% in 2025, and operating cash flow has been negative for three consecutive years."
+   "ko": "AI 기반 CPaaS 전환과 클라우드 바우처 공급기업 선정 등 사업 전환이 진행 중이다.",
+   "en": "The company is moving toward an AI-based CPaaS model, and its IN7 platform was selected as a 2026 cloud voucher supplier."
   }
  ],
  "business": {
-  "ko": "인포뱅크는 1995년 설립된 1세대 벤처기업으로 국내 최초·최대 규모의 기업용 메시징 서비스 전문기업으로 출발했다. 매출 구성은 모바일 메시징 서비스가 절대적 비중을 차지하며, 스마트카(차량용 소프트웨어), 기타 모바일 서비스, 부동산 임대 등이 나머지를 구성하는 구조로 알려져 있다. 회사는 대량 문자전송·알림톡 등 기업용 커뮤니케이션 플랫폼 '비즈고(bizgo)'를 운영하며, 최근에는 커머스 알림톡 자동화·CRM·인스타그램 DM 자동화 등 신규 기능을 추가해 단순 메시지 발송에서 고객 운영 플랫폼으로 확장을 시도하고 있다. 스마트카 부문에서는 현대차그룹 대상 차량용 IVI(인포테인먼트)·텔레매틱스 모듈 개발 등 프로젝트성 용역을 수행해 왔다. AI 부문에서는 AI 협업 플랫폼 '인세븐(IN7)'을 정식 출시하고 AICC(AI 컨택센터) 솔루션, SK텔레콤과의 콜봇 개발 협력 등으로 사업 영역을 넓히고 있다. 조직 구조는 6개의 독립운영체제(iCo)를 채택해 메시징, AI, 금융 SI, 모빌리티, B2C, 스타트업 투자·액셀러레이팅 부문을 분리 운영하고 있다. 국내 기업 메시징 시장은 KT·LG유플러스 등 통신사가 직접 문자중계 사업에 뛰어들며 점유율 대부분을 차지하고 있어, 인포뱅크와 같은 비통신 사업자는 상대적으로 열위에 있는 경쟁 구도가 형성돼 있다. 최근 신희송 CAIO(전 네이버·쿠팡·쏘카 등 출신)를 영입하며 AI 전환(AX) 사업의 상용화 속도를 높이려는 움직임을 보이고 있다.",
-  "en": "Founded in 1995, InfoBank is a first-generation Korean venture company that started as the country's first and largest enterprise messaging service provider. Mobile messaging services account for the majority of revenue, with smart-car (in-vehicle software), other mobile services, and real estate rental making up the remainder. The company operates the 'bizgo' enterprise communication platform for bulk text and alert-talk messaging, and has recently added commerce alert-talk automation, CRM, and Instagram DM automation features to evolve from simple message delivery into a customer operations platform. In the smart-car segment, InfoBank has performed project-based development of in-vehicle infotainment (IVI) and telematics modules for Hyundai Motor Group. In the AI segment, the company officially launched its 'IN7' AI collaboration platform and has expanded into AICC (AI contact center) solutions along with a call-bot development partnership with SK Telecom. The organizational structure adopts six independent company units (iCo) covering messaging, AI, financial SI, mobility, B2C, and startup investment/acceleration. In Korea's enterprise messaging market, telecom carriers such as KT and LG Uplus directly operate text-relay businesses and hold the majority of market share, placing non-carrier operators like InfoBank in a relatively disadvantaged competitive position. The company recently hired a new Chief AI Officer with prior experience at Naver, Coupang, and Socar to accelerate commercialization of its AI transformation business."
+  "ko": "인포뱅크는 1995년에 설립되어 경기도 성남시에 본사를 둔 기업용 메시징과 AI 솔루션 기업이다(The company was founded in 1995 and is headquartered in Seongnam-si, South Korea.). 2026년 2분기 매출 기준으로 서비스 부문이 99%를 차지하고 기타 부문은 1%에 그친다(주요 사업부문 서비스 99% · 기타 1% (2026년 2분기 매출 기준)). 회사 소개에 따르면 사업 영역은 커뮤니케이션 플랫폼, AI 솔루션, 모빌리티·스마트카, 금융 SI, 투자·액셀러레이팅으로 나뉘며, 커뮤니케이션 플랫폼은 기업용 비즈 메시지 인프라를 담당한다(커뮤니케이션 플랫폼: 국내 최대 규모 메시징 인프라 및 기업용 비즈 메시지 서비스). 메시징 사업은 기업 대상 대량 문자 발송에서 출발해 메신저 연동 서비스와 챗봇으로 범위를 넓혔다(초기에는 기업 대상 대량 문자 발송이 중심이었지만, 현재는 메신저 연동 서비스와 챗봇으로 영역을 넓혔다.). AI 부문에서는 기업 데이터를 활용해 질문에 답하는 LLM 기반 챗봇 ‘채티스트’와 기업별 맞춤 챗봇 구축 서비스를 제공한다(기업 데이터를 활용해 질문에 답하는 LLM 기반 챗봇 ‘채티스트’와 기업별 요구에 맞춘 챗봇 구축 사업). 회사는 30년간 축적한 메시징 기술을 바탕으로 AI와 결합한 CPaaS 플랫폼으로 사업을 전환하고 있으며(30년간 축적한 메시징 기술을 바탕으로 AI와 결합한 커뮤니케이션 플랫폼(CPaaS)으로 사업을 전환하고 있습니다.), 기업부설연구소 아이랩을 중심으로 텍스트 분석과 데이터 전처리 자동화를 사업에 적용하고 있다(AI, 텍스트 분석, 데이터 전처리 자동화 등 신기술을 실험하고 사업에 적용하고 있습니다.). 2025년 10월 출시한 AI 기반 플랫폼 ‘인세븐(IN7)’은 2026년 4월 NIPA 주관 2026 클라우드 바우처 공급기업으로 선정됐다(04월 ''인세븐(IN7)'' NIPA 주관 2026 클라우드 바우처 공급기업 선정). 모빌리티 부문은 현대차그룹향 차량용 인포테인먼트(IVI)와 텔레매틱스 모듈 개발을 수행해 온 것으로 약 2023년 무렵 보도됐다(현대차그룹향 사업에서 차량용 IVI(In Vehicle Infotainment) 솔루션 개발이나 차량용 텔레매틱스 모듈 개발 등 사업을 전개하고 있다.). 같은 분석은 이 구조가 프로젝트성 시스템 구축 용역이어서 큰 마진이나 개발 이후 로열티 매출은 기대하기 어렵다고 지적했다(프로젝트성 시스템 구축 용역 개발 및 납품의 매출 구조이기에 큰 마진을 얻거나, 개발 이후 로열티 매출은 기대하기 어려운 단점을 가지고 있었다.). 경쟁 구도는 같은 시기 보도에서 국내 기업 메시징 시장을 KT, LG유플러스, 다우기술 등 7개사가 경쟁하는 구조로 소개했고, 당시 점유율은 KT 44%, LG유플러스 26%, 인포뱅크 10%로 집계됐다(국내 기업 메시징 서비스 시장은 7개사(KT, LG유플러스, 인포뱅크, 다우기술, 스탠다드네트웍스, 젬텍, CJ올리브 네트웍스)가 경쟁하고 있다. 현재 관련 기업들의 점유율은 KT 44%, LG유플러스 26%, 인포뱅크 10% 정도로). 이 점유율은 약 2023년 무렵 자료이므로 현재 시장 구도와는 차이가 있을 수 있다.",
+  "en": "InfoBank was founded in 1995 and is headquartered in Seongnam, Gyeonggi Province. Services accounted for 99% of revenue in the second quarter of 2026, with other businesses at 1%. Its business areas are a communication platform, AI solutions, mobility and smart car, financial SI, and investment and acceleration. The communication platform handles enterprise business messaging. Messaging began as bulk text sending for companies and has expanded into messenger integration and chatbots. Its AI offering includes the LLM-based chatbot Chatist, which answers questions using company data, along with custom chatbot builds. The company says it is shifting toward an AI-combined CPaaS model built on decades of messaging technology, and its research lab iLab applies text analysis and data preprocessing automation. Its IN7 platform, launched in October 2025, was selected as a 2026 cloud voucher supplier by NIPA in April 2026. Earlier reports from around 2023 described its automotive work with Hyundai Motor Group, including in-vehicle infotainment and telematics modules, which are project-based system development contracts with limited margins and few royalty prospects. A market description from around 2023 listed seven competitors in enterprise messaging, including KT, LG Uplus and Daou Technology, with KT at 44%, LG Uplus at 26% and InfoBank at 10% share. Because that data is from around 2023, current shares may differ."
  },
  "earnings": {
-  "ko": "2025년 연결 매출은 1,350억 9,551만원으로 2024년 1,368억 6,087만원, 2023년 1,368억 6,127만원과 비교해 3년간 거의 정체된 흐름을 보였다. 영업손익은 2022년 -3억 4,566만원에서 2023년 -21억 9,959만원, 2024년 -51억 3,252만원으로 손실이 확대됐다가 2025년 -42억 461만원으로 소폭 개선됐다. 순이익 측면에서는 2022년 12억 9,321만원, 2023년 59억 4,716만원의 흑자를 기록했으나 2024년 -37억 3,716만원, 2025년 -46억 9,231만원으로 2년 연속 순손실로 전환된 점이 특징적이다. 분기별로 보면 2025년 2분기 매출 329억 6,244만원에 지배주주 순손실 20억 6,324만원을 기록한 이후, 2025년 3분기에는 매출 358억 8,583만원, 지배주주 순이익 3억 244만원으로 흑자 전환했다. 2025년 4분기에는 매출 350억 798만원을 기록했으나 지배주주 순손실이 23억 6,460만원으로 다시 확대돼 분기별 변동성이 큰 모습을 보였다. 2026년 들어서는 1분기 매출 340억 4,229만원에 순이익 1억 6,774만원, 2분기 매출 437억 1,820만원에 순이익 11억 1,475만원으로 두 개 분기 연속 흑자를 기록하며 최근 4개 분기(2025년 3분기~2026년 2분기) 누적 지배주주 순이익은 -7억 9,294만원 수준으로 손실 폭이 크게 줄어든 흐름이 확인된다. 영업활동현금흐름은 2022년 45억 9,670만원의 양(+)의 흐름에서 2023년 -31억 3,962만원, 2024년 -19억 8,238만원, 2025년 -1억 5,017만원으로 3년 연속 마이너스를 기록했으나 그 폭은 점진적으로 축소되고 있다.",
-  "en": "Consolidated revenue in 2025 was KRW 135.10 billion, largely flat compared to KRW 136.86 billion in 2024 and KRW 136.86 billion in 2023, reflecting three years of near-stagnant top-line growth. Operating losses widened from KRW -0.35 billion in 2022 to KRW -2.20 billion in 2023 and KRW -5.13 billion in 2024, before narrowing slightly to KRW -4.20 billion in 2025. On the net income side, the company posted profits of KRW 1.29 billion in 2022 and KRW 5.95 billion in 2023, but swung to net losses of KRW -3.74 billion in 2024 and KRW -4.69 billion in 2025, marking two consecutive years in the red. On a quarterly basis, after posting revenue of KRW 32.96 billion and a net loss attributable to owners of KRW -2.06 billion in Q2 2025, the company turned profitable in Q3 2025 with revenue of KRW 35.89 billion and net income of KRW 0.30 billion. Q4 2025 revenue was KRW 35.01 billion but the net loss widened again to KRW -2.36 billion, showing notable quarter-to-quarter volatility. Entering 2026, the company posted net income of KRW 0.17 billion on revenue of KRW 34.04 billion in Q1, followed by net income of KRW 1.10 billion on revenue of KRW 43.72 billion in Q2, marking two consecutive profitable quarters. Over the trailing four quarters (Q3 2025 through Q2 2026), cumulative net income attributable to owners stood at approximately KRW -0.79 billion, a substantially narrower loss than in prior periods. Operating cash flow moved from positive KRW 4.60 billion in 2022 to negative territory in 2023 (KRW -3.14 billion), 2024 (KRW -1.98 billion) and 2025 (KRW -0.15 billion), though the magnitude of the shortfall has progressively narrowed."
+  "ko": "연간 매출은 2022년 1,402억원에서 2023년 1,369억원으로 줄었고, 2024년에는 1,369억원으로 전년과 같았다. 2025년에는 1,351억원(전년 대비 1.3% 감소)으로 2023년부터 2025년까지 3년 연속 감소했으며, 2022~2025년 중 매출이 가장 큰 해는 2022년이다. 영업손실은 2022년 3.5억원에서 2023년 22억원, 2024년 51.3억원으로 손실이 커졌고, 2025년에는 42억원으로 줄었다. 2022년부터 2025년까지 4년 연속 적자다. 영업이익률은 2022년 -0.2%, 2023년 -1.6%, 2024년 -3.8%, 2025년 -3.1%로 2024년에 가장 나빴고 2025년에 소폭 개선됐다. 지배주주 순이익은 2023년 61.9억원으로 전년 대비 328.6% 증가했지만 2024년 지배주주 순손실 38.3억원으로 적자 전환했고, 2025년에는 순손실 41.4억원으로 적자가 확대됐다. 영업손실이 난 2023년에 지배주주 순이익이 플러스였던 점은 영업 외 손익의 영향을 따로 봐야 한다는 뜻이다. 당기순이익(비지배지분 포함)은 2022년 12.9억원, 2023년 59.5억원, 2024년 당기순손실 37.4억원, 2025년 당기순손실 46.9억원으로, 지배주주 순이익과는 다른 값이다. 영업활동 현금흐름은 2022년 46억원에서 2023년 -31.4억원, 2024년 -19.8억원, 2025년 -1.5억원으로 2023년 이후 마이너스가 이어졌다. 부채비율은 2022년 38.6%, 2023년 29.4%, 2024년 35.0%, 2025년 43.4%로 2025년 말 자본총계 675억원 가운데 지배주주 지분은 651억원이고 부채총계는 293억원이다. 분기 흐름을 보면 2025년 3분기 매출 359억원 이후 4분기 350억원, 2026년 1분기 340억원으로 감소했다가 2분기 437억원(전 분기 대비 28.4% 증가)으로 뛰었고, 3분기에는 377억원(전 분기 대비 13.9% 감소, 전년 동기 대비 4.9% 증가)이었다. 영업손실은 2025년 3분기 3.2억원, 4분기 4.9억원, 2026년 1분기 8.8억원, 2분기 3.1억원, 3분기 6.7억원으로, 2025년 3분기부터 2026년 3분기까지 5개 분기 연속 적자다. 지배주주 순이익은 2025년 3분기 3억원에서 4분기 순손실 23.6억원으로 전환한 뒤, 2026년 1분기 1.7억원 흑자, 2분기 11억원(전 분기 대비 556.6% 증가), 3분기 6.6억원(전 분기 대비 40.4% 감소)이었다. 2분기에 매출이 늘고 순이익이 커졌지만 영업손실은 3분기에 다시 커졌다. 이는 순이익 개선이 영업 단위의 회복과 같은 속도로 진행되지 않았다는 뜻이다. 2024년 3분기 실적 발표 당시 회사는 2025년 흑자 전환을 목표로 한다고 밝혔으나(2025년에는 흑자 전환을 목표로 전사적인 노력을 기울일 것), 2025년 영업손실은 42억원이었다.",
+  "en": "Annual revenue fell from KRW 140.2 billion in 2022 to KRW 136.9 billion in 2023, was flat in 2024, and declined to KRW 135.1 billion in 2025, down 1.3% year on year. Revenue has fallen for three consecutive years from 2023 to 2025, and 2022 was the largest year in the 2022–2025 period. The operating loss widened from KRW 346 million in 2022 to KRW 2.2 billion in 2023 and KRW 5.13 billion in 2024, then narrowed to KRW 4.2 billion in 2025. The company has posted operating losses for four consecutive years from 2022 through 2025. Operating margin moved from -0.2% in 2022 to -3.8% in 2024 and -3.1% in 2025. Net income attributable to controlling shareholders was KRW 6.19 billion in 2023, up 328.6% year on year, but turned to a net loss of KRW 3.83 billion in 2024 and widened to a net loss of KRW 4.14 billion in 2025. The positive attributable profit in 2023 despite an operating loss suggests non-operating items played a role. Net income including non-controlling interests was KRW 1.29 billion in 2022, KRW 5.95 billion in 2023, a net loss of KRW 3.74 billion in 2024 and a net loss of KRW 4.69 billion in 2025, a different measure from attributable earnings. Operating cash flow went from KRW 4.6 billion in 2022 to negative figures in 2023, 2024 and 2025, with the 2025 outflow at KRW 150 million. The debt-to-equity ratio was 38.6% in 2022, 29.4% in 2023, 35.0% in 2024 and 43.4% in 2025. At the end of 2025, total equity was KRW 67.5 billion, of which KRW 65.1 billion belonged to controlling shareholders, and total liabilities were KRW 29.3 billion. Quarterly revenue went from KRW 35.9 billion in the third quarter of 2025 to KRW 35 billion, KRW 34 billion, then KRW 43.7 billion in the second quarter of 2026, before KRW 37.7 billion in the third quarter, up 4.9% year on year. Operating losses were KRW 321 million, KRW 493 million, KRW 885 million, KRW 314 million and KRW 672 million across the five quarters from the third quarter of 2025 to the third quarter of 2026. Attributable net income moved from KRW 302 million in the third quarter of 2025 to a net loss of KRW 2.36 billion in the fourth quarter, then to profits of KRW 168 million, KRW 1.1 billion and KRW 656 million in the first three quarters of 2026. In the second quarter revenue rose and profit recovered, but the operating loss widened again in the third quarter, so the earnings improvement did not move in step with operating performance. In 2024, the company said it aimed to return to operating profit the following year, but the 2025 operating loss was KRW 4.2 billion."
  },
  "industry": {
-  "ko": "국내 기업 메시징(비즈메시징) 시장은 카카오톡 알림톡, 이메일 등 다양한 채널로 확장되며 구조적으로 성장하는 산업으로 평가되며, 최근에는 인공지능을 활용한 고객 응대 서비스가 새로운 트렌드로 부상하고 있다. 다만 시장의 실질적 지배력은 KT·LG유플러스 등 대형 통신사가 직접 문자중계 사업에 뛰어들며 상당 부분을 차지하고 있어, 인포뱅크와 같은 비통신 사업자는 상대적 열위에서 경쟁하는 구조다. 통신사의 저가 판매 관행에 대한 공정거래 위반 관련 대법원 판결이 확정되면서 향후 시장 재편 가능성이 업계에서 거론되고 있으나, 관련 기업들의 수익성이 단기간에 급격히 개선될지는 불확실하다는 시각도 존재한다. AI 컨택센터(AICC), AI 협업툴 등 신사업 영역은 국내 다수의 소프트웨어 기업들이 동시에 진출하며 경쟁이 치열해지는 분야로, 저가 수주 관행이 일부 나타나고 있다는 지적도 있다. 차량용 소프트웨어(SDV·텔레매틱스) 시장은 글로벌 완성차 업체들의 소프트웨어 중심 전환에 따라 성장이 예상되는 분야이나, 인포뱅크의 관련 사업은 프로젝트성 용역 개발·납품 구조여서 로열티형 반복 매출로의 전환에는 시간이 필요한 구조로 파악된다. 전자상거래·모바일쇼핑 거래액이 꾸준히 증가하는 흐름은 알림톡·CRM 등 커머스 연계 메시징 서비스 수요를 뒷받침하는 요인으로 지목된다.",
-  "en": "Korea's enterprise messaging (business messaging) market is viewed as a structurally growing industry as it expands into channels such as KakaoTalk alert-talk and email, with AI-powered customer response services emerging as a new trend. However, the market's actual dominance is held largely by major telecom carriers such as KT and LG Uplus, which directly operate text-relay businesses, leaving non-carrier operators like InfoBank competing from a relatively disadvantaged position. A finalized Supreme Court ruling against carriers' low-price sales practices under fair trade regulations has raised industry speculation about potential market restructuring, though some observers note uncertainty over whether related companies' profitability will improve sharply in the near term. The AICC (AI contact center) and AI collaboration tool segments are becoming increasingly competitive as numerous domestic software companies enter simultaneously, with some reports noting the emergence of low-price bidding practices. The in-vehicle software (SDV/telematics) market is expected to grow amid global automakers' shift toward software-defined vehicles, but InfoBank's related business is structured around project-based development and delivery, meaning a transition to royalty-based recurring revenue would likely take time. Steady growth in e-commerce and mobile shopping transaction volumes is cited as a factor supporting demand for commerce-linked messaging services such as alert-talk and CRM."
+  "ko": "국내 기업 메시징 시장은 KT, LG유플러스, 인포뱅크, 다우기술 등 7개사가 경쟁하며 상위 3사 점유율이 약 80%에 달하는 구조다(국내 기업 메시징 서비스 시장은 7개사가 경쟁하고 있다. 현재 관련 기업들의 점유율은 KT 44%, LG유플러스 26%, 인포뱅크 10% 정도로, Top 3개사 점유율이 약 80%인 상황이다.). 같은 자료는 시장의 연평균 성장률을 16.9%로 전망했지만(연평균 성장률은 16.9%일 전망이다.), 이 역시 약 2023년 무렵 자료다. 통신사의 메시징 저가 판매가 규제될 것이라는 전망이 제기됐고, 이는 비통신사 기반의 기업 메시징 사업자에게 중장기 수혜로 해석됐다(향후 통신사들의 저가판매가 규제될 전망이기에 인포뱅크와 같은 비통신사이면서 기업 메시징 서비스를 제공하는 사업자들에게 중장기적으로 수혜가 예상된다.). 한 증권 연구원은 주력인 모바일 메시징 시장의 경쟁이 중장기적으로 완화될 가능성은 있지만 관련 기업들의 수익성이 급격히 좋아질 가능성은 높지 않다고 봤다(관련 기업들의 수익성이 급격히 개선될 가능성은 높지 않은 상황). AI 챗봇 구축 시장은 국내 여러 소프트웨어 회사가 진출해 경쟁이 치열하고, 업계에서 저가 수주 계약이 성행한다는 지적이 나왔다(AI챗봇 구축 사업은 시장에서 경쟁이 매우 치열한 분야이다. 이러다 보니 업계에서 저가수주 계약이 성행하고 있다.). 같은 IT·소프트웨어 업종의 NAVER와 Kakao는 소비자 플랫폼을 중심으로 사업을 펼치는 반면, 인포뱅크는 기업 간 메시지 인프라와 AI 솔루션에 집중한다는 점에서 사업 구조가 다르다. 메시징 분야에서 직접 경쟁 상대로는 다우기술이 꼽힌다. 금융 SI 부문은 Samsung SDS나 LG CNS 같은 대형 SI 업체와 같은 시장에서 경쟁하는 구도다.",
+  "en": "Enterprise messaging in Korea has seven competitors, including KT, LG Uplus, InfoBank and Daou Technology, and the top three players hold roughly 80% share, according to a report from around 2023. The same report projected a 16.9% annual growth rate for the market, a figure that may no longer reflect current conditions. Telecom carriers faced possible limits on low-priced messaging, which was seen as a medium-term benefit for non-carrier enterprise messaging providers like InfoBank. One securities researcher judged that competition in mobile messaging could ease over the medium term, but that profitability for these companies was unlikely to improve sharply. The AI chatbot build market is highly competitive, with many software firms entering and low-price contracts becoming common. NAVER and Kakao focus on consumer platforms, while InfoBank concentrates on enterprise messaging infrastructure and AI solutions, so their business structures differ. Daou Technology is cited as a direct messaging rival. In financial SI, InfoBank competes in a market where large SI firms such as Samsung SDS and LG CNS are also active."
  },
  "outlook": {
-  "ko": "회사는 AI 협업 플랫폼 '인세븐(IN7)'을 스타트업·중소기업 중심으로 확산한 뒤 대기업·공공기관 대상으로는 맞춤형 AI 에이전트 구축을 통해 적용 범위를 넓혀갈 계획을 밝혔다. 2025년 11월에는 AI 전환 수준을 진단하는 'AX 진단 프로그램'을 시행했으며, 2026년까지 금융·제조·공공·IT 등 주요 산업군으로 이를 확대 운영할 계획이라고 밝혔다. 2026년 7월에는 자사 메시징 플랫폼 '비즈고'에 커머스 알림톡 자동화, CRM, 인스타그램 DM 자동화 등 신규 기능을 추가해 고객 운영 플랫폼으로의 확장을 지속하고 있다. 같은 해 7월 신희송 CAIO를 영입해 엔터프라이즈 AI 시장에서의 상용화 속도를 높이겠다는 방침을 밝혔으며, 인세븐에는 사내 지식관리시스템(KMS) 연동 기능도 탑재됐다. 스마트카 부문에서는 자율주행·관제 관련 서비스 개발에 역점을 두고 정부기관·지자체 대상 고마진 사업을 모색하고 있다는 점이 과거 업계 분석에서 제시된 바 있다. 다만 이러한 신사업들의 매출 기여 규모나 시점에 대한 구체적 가이던스는 최근 공개된 자료에서 확인되지 않아, 실제 실적 반영 여부는 향후 분기 공시를 통해 확인이 필요하다.",
-  "en": "The company has stated plans to expand its 'IN7' AI collaboration platform, starting with startups and small businesses before building customized AI agents for large enterprises and public institutions. In November 2025 the company launched an 'AX diagnostic program' to assess corporate AI transformation levels, with plans to expand this to major industry sectors including finance, manufacturing, public sector, and IT through 2026. In July 2026, the company continued expanding its messaging platform 'bizgo' into a customer operations platform by adding commerce alert-talk automation, CRM, and Instagram DM automation features. That same month, the company hired a new Chief AI Officer to accelerate commercialization in the enterprise AI market, and integrated an internal knowledge management system connection into IN7. In the smart-car segment, past industry analysis has suggested the company is focusing on autonomous driving and traffic management services, targeting higher-margin business with government agencies and local municipalities. However, specific guidance on the revenue contribution timing or scale of these new initiatives has not been confirmed in recently available materials, meaning their actual impact on earnings will need to be verified through future quarterly disclosures."
+  "ko": "2026년 연간 매출 전망에 대해서는 나이스평가정보가 2026년 매출 15% 성장을 전망했다는 보도 제목이 있다(인포뱅크, AI 기업으로 체질 전환 속도...2026년 매출 15% 성장 전망-나이스). 분기 흐름을 보면 2026년 2분기 매출은 437억원으로 급증했지만 3분기 매출의 증가율은 전년 동기 대비 4.9%에 그쳤다. 따라서 분기별 성장률의 편차가 크며, 연간 성장률 전망은 4분기 매출 흐름에 따라 달라진다. AI 전환의 구체적 성과로는 인세븐(IN7)이 2026년 4월 클라우드 바우처 공급기업으로 선정된 것이 있다(04월 ''인세븐(IN7)'' NIPA 주관 2026 클라우드 바우처 공급기업 선정). 이 선정이 매출로 이어지는 시점과 규모는 아직 공시로 확인되는 수치가 없다. 회사는 2024년 3분기 실적 발표 때 다음 해 흑자 전환을 목표로 한다고 밝힌 바 있어, 목표 대비 실제 결과를 비교하는 기준이 된다. 다음 정기보고서는 2026년 사업보고서이며, 직전 사업보고서는 2026년 3월 19일 공시됐으므로(Mar 19, 2026 | 12/2025) 2027년 3월 무렵이 다음 확인 지점이다. 이 보고서에서 2026년 연간 매출이 2025년 1,351억원을 웃도는지, 영업손익이 적자 폭을 줄였는지를 확인할 수 있다. 분기보고서는 2026년 1분기가 5월 15일에 공시됐으므로(05.15 분기보고서(2026.03)) 2027년 1분기 보고서는 5월 중순 무렵이 될 것으로 보인다. 2026년 3분기 영업손실이 전년 동기 대비 확대된 원인이 인건비와 연구개발비 같은 비용 항목에 있는지는 사업보고서의 판매비와관리비 항목에서 확인해야 한다. 모빌리티 부문의 계약 규모와 시점은 현재 공시 자료로는 가늠하기 어렵다.",
+  "en": "A report headline attributed to NICE Information Service projected 15% revenue growth for 2026. Quarterly growth has been uneven. Revenue jumped to KRW 43.7 billion in the second quarter of 2026, but the third-quarter increase was only 4.9% year on year, so the full-year outlook depends on the fourth quarter. IN7 was selected as a 2026 cloud voucher supplier in April 2026, but no disclosed figures yet show when or how much revenue this will generate. In its third-quarter 2024 results, the company said it aimed for operating profit the following year, a useful benchmark against the 2025 operating loss of KRW 4.2 billion. The next periodic report is the 2026 annual report. The prior annual report was published on March 19, 2026, so the next checkpoint is around March 2027, when full-year 2026 revenue and operating results can be compared with 2025. The first-quarter report for 2026 was filed on May 15, so the first-quarter 2027 report is likely around mid-May 2027. Whether the third-quarter 2026 operating loss widened because of personnel or R&D costs will need to be checked in the annual report's expense breakdown. Timing and size of mobility contracts are not yet visible in disclosed data."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 순자산가치 대비 할인된 수준에서 거래되고 있으며, 주가순자산비율은 1배를 밑도는 구간에 위치한다. 회사는 최근 배당을 지급하지 않고 있어 배당 관련 지표는 참고하기 어려운 상태다. 이익 측면에서는 2024~2025년 순손실을 기록한 이후 2026년 상반기 두 개 분기 연속으로 이익 회복 흐름이 나타나고 있어, 향후 분기 실적이 이 흐름을 이어갈지가 밸류에이션 판단의 핵심 변수가 될 것으로 보인다. 부채비율은 최근 몇 년간 30%대에서 40%대로 다소 상승했으나 절대 수준 자체는 여전히 관리 가능한 범위로 평가된다. 특정 증권사의 목표주가 관련 공개된 최신 자료는 이번 조사에서 확인되지 않았다.",
-  "en": "The current share price trades at a discount to net asset value, with the price-to-book ratio sitting below 1x. The company has not paid dividends recently, making dividend-related metrics difficult to reference at this time. On the earnings side, after net losses in 2024 and 2025, the first half of 2026 has shown two consecutive quarters of a return to profitability, making the continuation of this trend in coming quarters a key variable for valuation assessment. The debt ratio has risen somewhat from the 30% range to the 40% range in recent years, though the absolute level is still viewed as within a manageable range. No recently published analyst price target specific to this stock was identified in this research."
+  "ko": "주가수익비율(PER)은 산출되지 않는 상태다. 최근 4개 분기 지배주주 순손실 합계가 4.4억원이어서 이익 기준의 배수를 계산할 수 없기 때문이다. 주가순자산비율(PBR)은 1배를 크게 밑도는 구간에 있으며, 2025년 말 지배주주 지분 651억원에 비해 시장 가격이 낮게 형성된 상태다. 배당수익률은 업종 평균을 밑도는 수준이다. 이 수준은 순자산 대비 할인이 큰 구간이라는 사실 비교일 뿐이며, 이를 가치 판단으로 읽을지는 해석에 따라 갈릴 수 있다. 순자산 대비 낮은 주가를 설명하는 배경으로는 5개 분기 연속 영업손실과 최근 4개 분기 순손실이 함께 꼽힌다. 반대로 2026년 1분기부터 지배주주 순이익이 흑자로 돌아섰다는 점은 시장이 이익 회복을 어떻게 반영하는지에 따라 배수 해석을 바꿀 수 있다. 2025년 말 기준 부채총계 293억원이 자본총계 675억원보다 작아 재무 부담은 상대적으로 낮은 편이다. 밸류에이션 수준의 변화는 2026 사업보고서에서 영업이익이 흑자로 전환하는지 여부에 따라 달라질 수 있는 사실이다.",
+  "en": "Price-to-earnings cannot be calculated because the net loss attributable to controlling shareholders over the last four quarters totals KRW 439 million. Price-to-book sits well below 1x, meaning the market price is low relative to book value attributable to controlling shareholders, which was KRW 65.1 billion at the end of 2025. Dividend yield is below the industry average. This is a comparison of levels rather than a verdict, and different readers may interpret the discount differently. The low book multiple is consistent with five consecutive quarters of operating losses and recent net losses. On the other side, attributable net income has been positive since the first quarter of 2026, and how the market weighs that recovery could change the multiple interpretation. Total liabilities of KRW 29.3 billion against total equity of KRW 67.5 billion at the end of 2025 indicate a relatively modest financial burden. Changes in valuation levels will depend on whether operating profit turns positive in the 2026 annual report."
  },
  "bull": [
   {
    "title": {
-    "ko": "이익 회복 신호",
-    "en": "Signs of Earnings Recovery"
+    "ko": "분기 매출 회복",
+    "en": "Revenue rebound"
    },
    "body": {
-    "ko": "2026년 1분기와 2분기 지배주주 순이익이 연속으로 흑자를 기록하며 2024~2025년의 순손실 흐름에서 벗어나는 조짐을 보이고 있다. 2분기 매출은 437억 1,820만원으로 최근 5개 분기 중 가장 높은 수준을 기록했다. 영업손실 규모도 2025년 4분기 -4억 9,305만원에서 2026년 2분기 -3억 1,357만원으로 축소되는 흐름이 나타난다. 이러한 흐름이 이어질지는 향후 분기 실적을 통해 추가 확인이 필요하다.",
-    "en": "Net income attributable to owners was positive for two consecutive quarters in Q1 and Q2 2026, showing signs of emerging from the net loss trend of 2024-2025. Q2 revenue of KRW 43.72 billion was the highest among the trailing five quarters. Operating losses have also narrowed, from KRW -0.49 billion in Q4 2025 to KRW -0.31 billion in Q2 2026. Whether this trend continues will require confirmation through future quarterly results."
+    "ko": "2026년 2분기 매출은 437억원으로 전 분기 대비 28.4% 증가했고, 3분기 매출 377억원은 전년 동기 대비 4.9% 늘었다. 2025년 한 해 매출이 줄었던 흐름과 달리 2026년 들어 분기 매출 규모가 커진 것이다. 보도 제목에 따르면 나이스평가정보는 2026년 매출 15% 성장을 전망했다. 이 전망이 맞다면 매출 감소 국면이 끝났다는 근거가 된다.",
+    "en": "Second-quarter 2026 revenue reached KRW 43.7 billion, up 28.4% from the prior quarter, and third-quarter revenue of KRW 37.7 billion rose 4.9% year on year. After revenue declined through 2025, quarterly sales levels rose in 2026. A report headline cited a 15% growth forecast for 2026. If realized, that would mark an end to the revenue decline."
    }
   },
   {
    "title": {
-    "ko": "AI 전환 사업 확장",
-    "en": "AI Transformation Business Expansion"
+    "ko": "지배주주 순이익 흑자 흐름",
+    "en": "Attributable profit turns positive"
    },
    "body": {
-    "ko": "AI 협업 플랫폼 '인세븐(IN7)'을 정식 출시하고 SharePoint 연동, KMS 연동 등 기능을 지속 추가하며 기업용 AI 시장 공략을 확대하고 있다. 네이버·쿠팡·쏘카 등을 거친 신희송 CAIO를 영입해 AI 서비스 상용화 속도를 높이려는 움직임도 나타났다. AICC 솔루션은 SK텔레콤과의 협력을 통해 컨택센터 구축 사업으로 확장되고 있다. 다만 이 분야는 다수의 경쟁사가 동시에 진출하고 있어 매출 기여 규모는 지켜볼 필요가 있다.",
-    "en": "The company officially launched its 'IN7' AI collaboration platform and has continued adding features such as SharePoint and internal knowledge management system integration, expanding its push into the enterprise AI market. The hiring of a new Chief AI Officer with experience at Naver, Coupang, and Socar signals an effort to accelerate AI service commercialization. AICC solutions are expanding into contact center construction projects through partnership with SK Telecom. However, since numerous competitors are entering this space simultaneously, the actual revenue contribution warrants continued observation."
+    "ko": "지배주주 순이익은 2025년 4분기 순손실 23.6억원에서 2026년 1분기 1.7억원 흑자로 전환했고, 2분기 11억원, 3분기 6.6억원으로 이어졌다. 최근 4개 분기 합계 순손실은 4.4억원으로 줄었다. 영업손실은 5개 분기 연속 이어졌지만 지배 주주 기준 이익은 회복 방향을 보였다. 이익 회복의 질은 다음 사업보고서에서 확인할 필요가 있다.",
+    "en": "Attributable net income swung from a KRW 2.36 billion loss in the fourth quarter of 2025 to KRW 168 million profit in the first quarter of 2026, followed by KRW 1.1 billion and KRW 656 million. The four-quarter net loss total narrowed to KRW 439 million. Operating losses persisted, but attributable earnings moved toward recovery, and the quality of that recovery remains to be checked in the annual filing."
    }
   },
   {
    "title": {
-    "ko": "통신사 규제 리스크 완화 기대",
-    "en": "Potential Easing of Telecom Regulatory Pressure"
+    "ko": "재무 여력과 AI 전환 기반",
+    "en": "Balance sheet and AI groundwork"
    },
    "body": {
-    "ko": "통신사의 문자중계 저가 판매 관행에 대한 공정거래 위반 관련 대법원 판결이 확정되면서 중장기적으로 시장 재편 가능성이 업계에서 거론된다. 이는 비통신 메시징 사업자인 인포뱅크에게 점유율 회복의 기회로 이어질 수 있다는 시각이 존재한다. 다만 관련 기업들의 수익성이 단기간에 급격히 개선될 가능성은 높지 않다는 신중한 견해도 함께 제시된 바 있다.",
-    "en": "A finalized Supreme Court ruling against telecom carriers' low-price text-relay sales practices has led to industry speculation about potential mid-to-long-term market restructuring. Some views suggest this could present an opportunity for non-carrier messaging operators like InfoBank to recover market share. However, more cautious perspectives have also noted that a sharp near-term improvement in profitability for related companies is not highly likely."
+    "ko": "2025년 말 부채총계는 293억원, 자본총계는 675억원이며 부채비율은 43.4%다. 주가순자산비율은 1배를 크게 밑도는 구간이다. 2026년 4월에는 인세븐(IN7)이 NIPA 주관 2026 클라우드 바우처 공급기업으로 선정됐다. 메시징 기반에 AI 플랫폼을 더하는 전략의 첫 공공 지원 사례가 될 수 있다.",
+    "en": "At the end of 2025, total liabilities were KRW 29.3 billion against total equity of KRW 67.5 billion, and the debt-to-equity ratio was 43.4%. Price-to-book is well below 1x. IN7 was selected as a 2026 cloud voucher supplier in April 2026, which could be an early public-sector support case for the strategy of adding an AI platform to messaging."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "매출 정체와 누적 적자",
-    "en": "Revenue Stagnation and Accumulated Losses"
+    "ko": "영업 단위 적자 지속",
+    "en": "Operating losses persist"
    },
    "body": {
-    "ko": "연간 매출은 2023년부터 2025년까지 1,350억원대에서 큰 변화 없이 정체돼 있으며, 영업손익은 4년 연속 적자를 기록하고 있다. 2024년과 2025년에는 순이익도 적자로 전환돼 이익 기반의 안정성이 약화된 모습이다. 2026년 상반기 이익 회복이 나타났으나 아직 연간 단위의 흑자 전환을 확인하기에는 이르다.",
-    "en": "Annual revenue has remained largely stagnant in the KRW 135 billion range from 2023 through 2025, and operating losses have persisted for four consecutive years. Net income also turned negative in both 2024 and 2025, weakening the stability of the earnings base. While profitability improved in the first half of 2026, it is still premature to confirm a full-year return to profit."
+    "ko": "2025년 3분기부터 2026년 3분기까지 5개 분기 연속 영업손실이 이어졌고, 2026년 3분기 영업손실 6.7억원은 전년 동기보다 손실이 커졌다. 2026년 1분기 영업손실 8.8억원은 최근 5개 분기 중 손실 규모가 가장 컸다. 연간 영업손실은 2025년에도 42억원으로 적자 구조가 남아 있다. 영업이익률은 -3.1% 수준이다.",
+    "en": "Operating losses have run for five consecutive quarters from the third quarter of 2025 to the third quarter of 2026. The third-quarter 2026 loss of KRW 672 million widened year on year. The first-quarter 2026 loss of KRW 885 million was the largest of the last five quarters. The 2025 annual operating loss remained at KRW 4.2 billion, with an operating margin of -3.1%."
    }
   },
   {
    "title": {
-    "ko": "현금흐름 부담",
-    "en": "Cash Flow Pressure"
+    "ko": "영업활동 현금흐름 마이너스",
+    "en": "Negative operating cash flow"
    },
    "body": {
-    "ko": "영업활동현금흐름은 2023년 -31억 3,962만원, 2024년 -19억 8,238만원, 2025년 -1억 5,017만원으로 3년 연속 마이너스를 기록했다. 손실 규모는 축소되는 추세이나 여전히 영업을 통한 현금 창출력이 부족한 상태다. 부채비율도 2022년 38.6%에서 2025년 43.4%로 상승하는 흐름을 보여 재무 부담이 다소 커진 모습이다.",
-    "en": "Operating cash flow was negative for three consecutive years: KRW -3.14 billion in 2023, KRW -1.98 billion in 2024, and KRW -0.15 billion in 2025. While the shortfall has been narrowing, cash generation from operations remains insufficient. The debt ratio has also risen from 38.6% in 2022 to 43.4% in 2025, indicating a somewhat greater financial burden."
+    "ko": "영업활동 현금흐름은 2022년 46억원 플러스에서 2023년 -31.4억원, 2024년 -19.8억원, 2025년 -1.5억원으로 2023년 이후 마이너스가 이어졌다. 2025년 적자 폭은 크게 줄었지만 현금을 벌어들이는 구조로 바뀌었다고 보기는 이르다. 영업손실이 이어지는 상황에서 현금흐름 회복 여부는 다음 정기보고서에서 확인해야 한다.",
+    "en": "Operating cash flow went from KRW 4.6 billion in 2022 to outflows of KRW 3.14 billion in 2023, KRW 1.98 billion in 2024 and KRW 150 million in 2025. The 2025 outflow was much smaller, but it is too early to call the business cash generative. Whether cash flow recovers while operating losses continue will need to be checked in the next periodic report."
    }
   },
   {
    "title": {
-    "ko": "경쟁 심화된 신사업 환경",
-    "en": "Intensifying Competition in New Business Areas"
+    "ko": "경쟁과 저가 수주 압박",
+    "en": "Competition and low-price bids"
    },
    "body": {
-    "ko": "AICC·AI 협업툴 시장은 국내 다수의 소프트웨어 기업들이 동시에 진출하며 경쟁이 치열해지고 있고, 일부 저가 수주 관행도 나타난다는 지적이 있다. 스마트카 부문 역시 프로젝트성 용역 매출 구조여서 반복적 로열티 매출로의 전환이 더딜 수 있다는 우려가 존재한다. 신사업이 기존 메시징 사업의 매출 정체를 상쇄할 만한 규모로 성장할지는 아직 불확실하다.",
-    "en": "The AICC and AI collaboration tool market is becoming increasingly competitive as numerous domestic software companies enter simultaneously, with some reports noting the emergence of low-price bidding practices. The smart-car segment also faces concerns that its project-based service revenue structure could slow the transition to recurring royalty-based revenue. Whether new businesses can grow to a scale sufficient to offset stagnation in the core messaging business remains uncertain."
+    "ko": "국내 기업 메시징 시장은 KT와 LG유플러스가 과반에 가까운 점유율을 쥔 구조로, 약 2023년 무렵 기준 인포뱅크 점유율은 10%였다. AI 챗봇 구축 시장도 다수의 소프트웨어 회사가 진출해 저가 수주가 성행한다는 지적이 있다. 매출이 2023년부터 2025년까지 3년 연속 감소한 배경에는 이런 가격 경쟁이 영향을 줬을 수 있다. 이 해석은 공시 수치만으로 확정할 수 없다.",
+    "en": "In enterprise messaging, KT and LG Uplus hold a combined share well above InfoBank's roughly 10% reported around 2023. The AI chatbot build market has many entrants, and low-price bids have been reported as common. Price competition may have contributed to the three years of revenue declines from 2023 to 2025, though disclosed figures alone cannot confirm the cause."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "업황 리스크",
-    "en": "Industry Risk"
+    "ko": "순이익과 영업이익의 괴리",
+    "en": "Gap between net and operating results"
    },
    "body": {
-    "ko": "기업 메시징 시장에서 KT·LG유플러스 등 대형 통신사가 직접 사업을 운영하며 대부분의 점유율을 차지하고 있어 가격 경쟁력 확보가 쉽지 않은 구조다. 대법원 판결에 따른 시장 재편이 실제로 인포뱅크의 점유율 확대로 이어질지는 불확실하다. AICC·AI 협업툴 시장의 경쟁 심화로 저가 수주가 발생할 경우 수익성 개선이 지연될 수 있다.",
-    "en": "Since major telecom carriers such as KT and LG Uplus directly operate in the enterprise messaging market and hold most of the market share, securing price competitiveness remains challenging. It is uncertain whether market restructuring following the Supreme Court ruling will actually translate into expanded market share for InfoBank. If competition intensifies in the AICC and AI collaboration tool markets, low-price bidding could delay profitability improvements."
+    "ko": "2026년 2분기에는 영업손실 3.1억원에도 지배주주 순이익이 11억원으로 나타났다. 영업 외 손익이 이익을 끌어올린 것이라면, 본업의 개선으로 보기 어렵다. 2023년에도 영업손실 중 지배주주 순이익이 플러스였던 전례가 있어, 이익의 원천을 구분해 볼 필요가 있다. 영업 기준 흑자 전환이 이뤄지지 않으면 순이익 흑자는 지속성이 낮을 수 있다.",
+    "en": "In the second quarter of 2026, attributable net income of KRW 1.1 billion came alongside an operating loss of KRW 314 million. If non-operating items drove that profit, it would not reflect improvement in core operations. A similar gap occurred in 2023, so the source of profit needs separate review. Without operating profit, the durability of net profit may be limited."
    }
   },
   {
    "cat": {
-    "ko": "재무 리스크",
-    "en": "Financial Risk"
+    "ko": "사업 집중도와 프로젝트 매출",
+    "en": "Business concentration and project revenue"
    },
    "body": {
-    "ko": "영업활동현금흐름이 3년 연속 음수를 기록하고 있어 외부 자금 조달 의존도가 높아질 가능성이 있다. 부채비율이 2022년 38.6%에서 2025년 43.4%로 상승하는 흐름을 보이고 있다. 2024~2025년 연속 순손실을 기록한 만큼, 이익 회복이 지속되지 않을 경우 자본 건전성에 추가 부담이 발생할 수 있다.",
-    "en": "With operating cash flow negative for three consecutive years, reliance on external financing could increase. The debt ratio has risen from 38.6% in 2022 to 43.4% in 2025. Given consecutive net losses in 2024 and 2025, further pressure on capital soundness could arise if the recent earnings recovery does not continue."
+    "ko": "매출의 99%가 서비스 부문에서 나오는 구조라 메시징 사업의 단가와 물량 변화에 실적이 민감하다. 모빌리티 부문은 프로젝트성 시스템 구축 용역 구조여서 계약 시점에 따라 분기 매출이 크게 흔들릴 수 있다. 이 부문의 로열티 매출 전환 여부는 불확실하다. 사업 다변화의 속도는 아직 공시 수치로 확인되지 않는다.",
+    "en": "Services generate 99% of revenue, so results are sensitive to messaging volumes and pricing. Mobility work is project-based system development, which can make quarterly revenue lumpy depending on contract timing. Whether that segment will move to royalty-type revenue is uncertain, and the pace of diversification is not yet visible in disclosed figures."
    }
   },
   {
    "cat": {
-    "ko": "신사업 실행 리스크",
-    "en": "New Business Execution Risk"
+    "ko": "대형 사업자와의 경쟁 구도",
+    "en": "Competition with larger operators"
    },
    "body": {
-    "ko": "AI 협업 플랫폼 인세븐, AICC 솔루션 등 신사업이 아직 구체적인 매출 기여 규모나 시점에 대한 공개된 가이던스가 부족한 상태다. 스마트카 부문의 해외 완성차 대상 '프로젝트 계약금+러닝로열티' 형태 매출 계약 추진은 과거 업계 분석에서 진행 속도가 더딜 가능성이 지적된 바 있다. 신규 사업의 상용화 지연이나 경쟁 심화 시 기존 메시징 사업의 성장 정체를 상쇄하기 어려울 수 있다.",
-    "en": "New business initiatives such as the IN7 AI collaboration platform and AICC solutions still lack detailed publicly disclosed guidance on revenue contribution scale or timing. Past industry analysis noted that progress on 'project fee plus running royalty' revenue arrangements with overseas automakers in the smart-car segment could be slow. Delays in commercializing new businesses or intensifying competition could make it difficult to offset stagnant growth in the core messaging business."
+    "ko": "메시징 시장은 KT와 LG유플러스 같은 통신사 기반 사업자가 상위권을 차지하고 있다. 다우기술 등 중견 사업자와도 가격 경쟁이 이어지고 있다. 통신사의 저가 판매 규제가 현실화되지 않으면 비통신 사업자의 우위가 커지기 어렵다. 규제의 방향과 시점은 공개된 자료로 아직 확인하기 어렵다.",
+    "en": "In messaging, carrier-backed operators such as KT and LG Uplus hold leading positions, and price competition continues with mid-sized players such as Daou Technology. If regulation of carrier low-price sales does not materialize, the advantage for non-carrier providers may remain limited. The direction and timing of any such regulation are hard to confirm from public sources."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중",
-    "en": "Around November 2026"
+    "ko": "2027년 3월 무렵",
+    "en": "Around March 2027"
    },
    "what": {
-    "ko": "2026년 3분기 실적 공시를 통해 상반기에 나타난 이익 회복 흐름(1분기·2분기 연속 순이익 흑자)이 3분기에도 이어지는지 확인이 필요하다.",
-    "en": "Q3 2026 earnings disclosure will need to be reviewed to confirm whether the profitability recovery seen in the first half of 2026 (two consecutive profitable quarters) continues into the third quarter."
+    "ko": "2026 사업보고서 공시. 2026년 연간 매출이 2025년 1,351억원을 웃도는지, 영업손실이 2025년 42억원보다 줄었는지, 영업활동 현금흐름이 마이너스를 벗어났는지를 확인하는 지점이다.",
+    "en": "2026 annual report. Checks whether full-year 2026 revenue exceeds KRW 135.1 billion, whether the operating loss narrows from KRW 4.2 billion, and whether operating cash flow turns positive."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 중",
-    "en": "During the second half of 2026"
+    "ko": "2027년 5월 중순 무렵",
+    "en": "Mid-May 2027"
    },
    "what": {
-    "ko": "AI 협업 플랫폼 '인세븐'의 대기업·공공기관 대상 확산 진행 상황과 AX 진단 프로그램의 금융·제조·공공·IT 등 주요 산업군 확대 진행 여부를 확인할 필요가 있다.",
-    "en": "Progress on expanding the 'IN7' AI collaboration platform to large enterprises and public institutions, and whether the AX diagnostic program expands into finance, manufacturing, public sector, and IT as planned, should be monitored."
+    "ko": "2027년 1분기 분기보고서. 2026년 1분기 보고서가 5월 15일에 공시된 점을 바탕으로 한 추정 일정이다. 영업손실이 5개 분기 연속 이어진 흐름이 끊기는지, 지배주주 순이익 흑자가 유지되는지 확인한다.",
+    "en": "Q1 2027 quarterly report, estimated from the May 15 filing date of the Q1 2026 report. Checks whether the string of operating losses breaks and whether attributable net income stays positive."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기 및 2027년 초",
-    "en": "Q4 2026 and early 2027"
+    "ko": "2027년 이후, 공시 일정 미정",
+    "en": "2027 onward, timing not yet set"
    },
    "what": {
-    "ko": "2026년 연간 결산 공시 시점에서 영업활동현금흐름의 개선 여부와 연간 기준 흑자 전환 달성 여부를 확인할 필요가 있다.",
-    "en": "At the time of the full-year 2026 financial disclosure, it will be important to check whether operating cash flow has improved and whether the company achieves a full-year return to profitability."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 하반기 중",
-    "en": "During the second half of 2026"
-   },
-   "what": {
-    "ko": "통신사(KT·LG유플러스) 문자중계 관련 대법원 판결 이후 시장 점유율 구도에 실질적 변화가 나타나는지, 그리고 이것이 인포뱅크의 메시징 매출에 미치는 영향을 확인할 필요가 있다.",
-    "en": "It should be monitored whether the Supreme Court ruling regarding telecom carriers' (KT, LG Uplus) text-relay practices leads to any tangible shift in market share dynamics, and how this affects InfoBank's messaging revenue."
+    "ko": "인세븐(IN7) 클라우드 바우처 사업과 모빌리티 프로젝트의 매출 반영 여부. 계약 규모와 시점이 공시되면 매출 구조 변화를 가늠할 수 있다.",
+    "en": "Revenue recognition from the IN7 cloud voucher program and mobility projects. Disclosed contract sizes and timing would help gauge any change in revenue mix."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "인포뱅크는 국내 1세대 기업 메시징 전문기업으로서 스마트카·AI 솔루션·스타트업 투자로 사업을 다각화해왔으나, 2023~2025년 연간 매출은 1,350억원대에서 정체되고 영업손실이 지속되는 구조적 어려움을 겪어왔다. 2024년과 2025년에는 순이익도 적자로 전환됐으나, 2026년 1분기와 2분기 연속으로 지배주주 순이익이 흑자를 기록하며 이익 회복의 초기 신호가 나타나고 있다. AI 협업 플랫폼 '인세븐'과 AICC 솔루션 등 신사업은 신규 인력 영입과 기능 고도화를 지속하며 성장 동력을 모색하고 있으나, 매출 기여 규모나 시점에 대한 구체적 가이던스는 아직 제한적이다. 통신사 관련 대법원 판결로 중장기 시장 구도 변화 가능성이 거론되지만 실질적 수혜 시점은 불확실하다. 영업활동현금흐름은 3년 연속 마이너스를 기록했고 부채비율도 다소 상승하는 흐름을 보이고 있어 재무구조 측면의 모니터링이 필요하다. 향후 분기 실적에서 이익 회복 흐름의 지속성과 신사업의 실질적 매출 기여 여부가 핵심 관찰 포인트가 될 것으로 판단된다.",
-   "en": "InfoBank, a first-generation Korean enterprise messaging company, has diversified into smart-car, AI solutions, and startup investment, but faced structural challenges from 2023 to 2025 as annual revenue stagnated around KRW 135 billion amid persistent operating losses. Net income also turned negative in both 2024 and 2025, though the company has shown early signs of earnings recovery with two consecutive quarters of positive net income attributable to owners in Q1 and Q2 2026. New businesses such as the 'IN7' AI collaboration platform and AICC solutions continue to seek growth momentum through new hires and feature enhancements, but specific guidance on revenue contribution scale or timing remains limited. While a Supreme Court ruling related to telecom carriers has raised speculation about potential mid-to-long-term shifts in market dynamics, the actual timing of any benefit remains uncertain. Operating cash flow has been negative for three consecutive years and the debt ratio has trended somewhat higher, warranting continued monitoring of the company's financial structure. Key points to watch going forward will be whether the recent earnings recovery trend persists and whether new businesses deliver tangible revenue contributions."
+   "ko": "인포뱅크는 2022년 이후 매출이 줄어든 가운데 메시징 중심 사업을 AI 커뮤니케이션 플랫폼으로 옮기는 전환기에 있다. 연간 영업손실은 2024년 51.3억원에서 2025년 42억원으로 줄었지만, 2025년 3분기부터 2026년 3분기까지 5개 분기 연속 영업손실이 이어졌다. 2026년 2분기 매출은 437억원으로 늘었고 지배주주 순이익은 2026년 1분기부터 흑자를 기록했으나, 이것이 영업 단위의 개선인지 영업 외 손익의 결과인지는 정기보고서로 가려야 한다. 재무 측면에서 2025년 말 부채총계는 293억원, 자본총계는 675억원이며 주가순자산비율은 1배를 크게 밑도는 구간이다. 강세 요인은 매출 회복, 순이익 흑자, 낮은 부채 부담이고, 약세 요인은 영업손실 지속, 영업활동 현금흐름 적자, 대형 사업자와의 경쟁에 따른 수익성 제약이다. 나이스평가정보가 2026년 매출 15% 성장을 전망했다는 보도가 있으나 3분기 매출 증가율은 전년 동기 대비 4.9%에 그쳐 분기별 편차가 크다. 다음 확인 지점은 2026 사업보고서의 연간 영업손익과 2027년 1분기 분기보고서의 영업손익 방향이다.",
+   "en": "InfoBank is in a transition from messaging toward an AI communication platform, after revenue declined from 2022. The annual operating loss narrowed from KRW 5.13 billion in 2024 to KRW 4.2 billion in 2025, yet operating losses have continued for five consecutive quarters from the third quarter of 2025 to the third quarter of 2026. Second-quarter 2026 revenue rose to KRW 43.7 billion, and attributable net income has been positive since the first quarter of 2026. Whether this reflects operating improvement or non-operating gains will need to be settled in the periodic reports. At the end of 2025, total liabilities were KRW 29.3 billion against total equity of KRW 67.5 billion, and price-to-book sits well below 1x. Supportive factors include the revenue rebound, positive attributable profit and a modest debt load. Negative factors include continued operating losses, negative operating cash flow and pressure from larger competitors. A report headline by NICE Information Service projected 15% growth for 2026, but third-quarter growth was only 4.9% year on year, showing wide quarterly variation. The next checkpoints are the 2026 annual operating results and the direction of operating profit in the first-quarter 2027 report."
   }
  },
  "sources": [
   "https://thevc.kr/infobank",
+  "https://jasoseol.com/companies/6560/insights",
+  "https://www.saramin.co.kr/zf_user/company-info/view/csn/Y2lCMEZwSUU2b0JFN1Q0cXBkYkl2UT09/company_nm/%EC%9D%B8%ED%8F%AC%EB%B1%85%ED%81%AC(%EC%A3%BC)",
   "https://www.butler.works/ko/companies/00243757",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A039290&cID=&MenuYn=Y&ReportGB=&NewMenuID=105&stkGb=701",
-  "http://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=039290",
-  "https://alphasquare.co.kr/home/stock-summary?code=039290",
-  "https://m.thinkpool.com/item/039290",
-  "https://littlebproject.com/stock/039290/5/1665",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Corp.asp?pGB=5&gicode=A039290&cID=21&MenuYn=N&ReportGB=&NewMenuID=102&stkGb=701",
-  "https://www.jobkorea.co.kr/Company/1507586/Info",
+  "https://www.vegannews.co.kr/news/article.html?no=404027",
+  "https://www.investing.com/equities/infobank-corp-earnings",
+  "https://www.infostockdaily.co.kr/news/articleView.html?idxno=194106",
   "https://www.investing.com/equities/infobank-corp",
-  "https://infostock.co.kr/Company/Analysis/Earning",
-  "https://www.mt.co.kr/finance/2026/08/31/2026083115195839489",
-  "https://www.bnkfg.com/04/02.jsp",
-  "https://quartr.com/events/first-internet-bancorp-inbk-q2-2026_ozBnP6Nb",
-  "https://finance.yahoo.com/markets/stocks/articles/inbank-unaudited-financial-results-q2-050000927.html",
-  "https://www.quiverquant.com/news/First+Internet+Bancorp+Q2+net+income+rises+to+$2.4+million",
-  "https://www.fool.com/earnings/call-transcripts/2026/08/08/first-internet-bancorp-inbk-q2-2026-earnings-call-transcript/",
-  "https://www.globenewswire.com/news-release/2026/07/30/3335737/0/en/Inbank-unaudited-financial-results-for-Q2-and-6-months-of-2026.html"
+  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=410590",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Finance.asp?pGB=1&gicode=A039290&MenuYn=Y&NewMenuID=103&stkGb=701",
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=04408326639086048",
+  "https://kr.investing.com/news/transcripts/article-93CH-2150155",
+  "https://www.streetinsider.com/Globe+Newswire/Inbank+unaudited+financial+results+for+Q3+and+9+months+of+2026/27250934.html",
+  "https://www.chartmill.com/news/INBK/Chartmill-57333-First-Internet-Bancorp-NASDAQINBK-Posts-Mixed-Q3-2026-Results-as-Revenue-Beats-but-Credit-Costs-Weigh-on-EPS",
+  "https://www.tradingkey.com/kr/news/transcripts/262261803-",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A039290&cID=&MenuYn=Y&ReportGB=B&NewMenuID=Y&stkGb=701",
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02883126599725720",
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=01495686602905024"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "039290",
  "name": "인포뱅크",
  "name_en": "InfoBankCorporation",
@@ -223,11 +213,11 @@
   "IT·소프트웨어"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 19:14",
- "dataDate": "20260904",
+ "reportDate": "2026-11-18",
+ "reportTs": "2026-11-18 11:41",
+ "dataDate": "20261117",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-11-18",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -297,12 +287,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 32962435415,
-    "op": -1848827930,
-    "np_owner": -2063239657
-   },
-   {
     "q": "2025Q3",
     "rev": 35885829522,
     "op": -321195696,
@@ -325,28 +309,39 @@
     "rev": 43718202771,
     "op": -313574753,
     "np_owner": 1101475383
+   },
+   {
+    "q": "2026Q3",
+    "rev": 37651651874,
+    "op": -672023999,
+    "np_owner": 656021676
    }
   ],
   "valuation": {
-   "price": 3840,
-   "mcap": 0.0334,
+   "price": 2960,
+   "mcap": 0.0257,
    "shares": 8693978,
    "total_shares": 8693978,
-   "wavg_shares": 8350113,
+   "wavg_shares": 8262828,
    "per": null,
-   "eps": -95,
-   "pbr": 0.4911,
-   "bps": 7819,
-   "roe_ttm": -1.2,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": -792939211,
+   "eps": -51,
+   "pbr": 0.3722,
+   "bps": 7953,
+   "roe_ttm": -0.7,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": -439357769,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 0.5,
+   "eps_src": "공시",
+   "pbr_krx": 0.38,
    "bps_krx": 7795.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
-   "div": 0.0
+   "div": 0.0,
+   "hidden": {
+    "per": "loss"
+   }
   }
- }
+ },
+ "textRules": 3
 }

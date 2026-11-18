@@ -1,220 +1,209 @@
 {
  "title": {
-  "ko": "씨티케이, ODM 넘어 신사업 확장기",
-  "en": "CTK: Expanding Beyond ODM Into New Ventures"
+  "ko": "손실 축소 속 사업 재편 성과 검증 국면",
+  "en": "CTK: Testing Whether Losses Keep Narrowing"
  },
  "lead": {
-  "ko": "씨티케이는 북미 중심 화장품 플랫폼 사업에 미국 OTC 생산시설과 생분해 플라스틱 소재 사업을 더하는 전환기에 있으며, 매출은 회복 조짐을 보이지만 지배주주 순이익은 여전히 적자 구간에 머물러 있다.",
-  "en": "CTK is in a transition period, layering a US OTC manufacturing plant and biodegradable plastics business onto its North America-centric cosmetics platform, with revenue showing signs of recovery while net income attributable to owners remains in loss territory."
+  "ko": "씨티케이는 2026년 3분기까지 5개 분기 연속 지배주주 순손실을 기록했으나, 영업손익과 지배주주 순손실의 적자 폭은 분기 단위로 줄어드는 흐름이다.",
+  "en": "CTK has posted net losses attributable to controlling shareholders for five consecutive quarters through the third quarter of 2026, although the operating and net loss sizes have narrowed on a quarterly basis."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출은 892억원으로 전년 대비 늘었으나 영업손실 57억원, 지배주주 순손실 70억원을 기록하며 2023년 흑자에서 다시 적자로 돌아섰다.",
-   "en": "2025 consolidated revenue rose to KRW 89.2 billion year over year, but the company posted an operating loss of KRW 5.7 billion and a net loss attributable to owners of KRW 7.0 billion, reverting to loss after 2023's profit."
+   "ko": "공시 실적 기준 2025년 매출은 892억원으로 연간 기준 가장 큰 해이나, 같은 해 영업손실 56.7억원과 지배주주 순손실 70.2억원으로 적자가 확대됐다.",
+   "en": "Revenue in 2025 was KRW 89.2 billion, the largest year in the 2022 to 2025 span, while the company swung to an operating loss of KRW 5.67 billion and a net loss attributable to controlling shareholders of KRW 7.02 billion."
   },
   {
-   "ko": "2026년 2분기 매출 290억원, 영업이익 4.7억원으로 세 분기 연속 영업적자에서 벗어났지만, 지배주주 순이익은 -19.8억원으로 적자가 이어졌다.",
-   "en": "In Q2 2026, revenue reached KRW 29.0 billion with an operating profit of KRW 0.47 billion, ending three consecutive quarters of operating loss, yet net income attributable to owners stayed negative at KRW -1.98 billion."
+   "ko": "2026년 3분기 매출은 245억원으로 전년 동기 대비 21.2% 감소했고, 영업손실은 28억 5,400만원 규모로 2분기 흑자 이후 다시 적자로 전환됐다.",
+   "en": "Third-quarter 2026 revenue fell 21.2% year on year to KRW 24.5 billion, and the operating result returned to a KRW 2.85 billion loss after a small profit in the second quarter."
   },
   {
-   "ko": "북미 OTC(일반의약품) 생산시설 인수와 생분해 플라스틱(PBAT·PHA) 소재 사업이 2026년 이후 본격적 실적 기여를 목표로 진행되고 있다.",
-   "en": "A North American OTC drug manufacturing facility acquisition and a biodegradable plastics (PBAT/PHA) materials business are underway, targeting meaningful earnings contribution from 2026 onward."
+   "ko": "사업 구조는 자체 공장 없이 OEM·ODM 파트너와 협력하는 턴키 방식이며, 북미 고객 비중이 높고 글로벌 브랜드를 주요 고객으로 둔다.",
+   "en": "The business runs on a turnkey model that relies on OEM and ODM partners rather than owned plants, with a heavy North American customer base."
   },
   {
-   "ko": "부채비율이 2024년 22.1%에서 2025년 75.5%로 급등하며 재무구조가 크게 변화했다.",
-   "en": "The debt ratio jumped from 22.1% in 2024 to 75.5% in 2025, marking a significant shift in the balance sheet structure."
+   "ko": "부채비율은 2025년 말 75.5%로 2024년 말 22.1%에서 크게 올랐고, 영업활동 현금흐름은 2024년과 2025년 모두 마이너스였다.",
+   "en": "The debt-to-equity ratio rose to 75.5% at the end of 2025 from 22.1% a year earlier, and operating cash flow was negative in both 2024 and 2025."
   },
   {
-   "ko": "순손실을 기록한 2025 회계연도에도 최대주주 60원, 그 외 주주 110원의 차등배당을 유지하며 주주환원 정책을 이어갔다.",
-   "en": "Despite the net loss in fiscal 2025, the company maintained a differentiated dividend of KRW 60 per share for the controlling shareholder and KRW 110 for other shareholders."
+   "ko": "주가순자산비율이 1배를 크게 밑도는 수준에 있어, 자산 가치 대비 시장 평가와 실적 회복 속도의 괴리가 핵심 쟁점이다.",
+   "en": "The price-to-book multiple sits well below 1x, so the gap between asset value and the pace of earnings recovery is the central question."
   }
  ],
  "business": {
-  "ko": "씨티케이는 완제 화장품을 외주 생산해 글로벌 브랜드에 공급하는 화장품 플랫폼 기업으로, 제품 디자인·포뮬라(성분 처방)·마케팅·생산·물류까지 전 단계 서비스를 제공한다. 자체 공장시설을 보유하지 않고 외부 제조시설을 활용해 생산 효율성을 높이는 '팹리스' 모델이 특징이며, 국내외 300여개 제조·포장재 협력사와 수평적 협업 관계를 맺고 있다. 국내 ODM 업체와의 차별점은 북미 지역 중심의 사업 전개와 색조 제품 경쟁력이다. 2025년 1분기 기준 국가별 매출 비중은 북미가 76.5%로 가장 높았고, 국내 10.4%, 유럽 및 아시아가 13.1%를 차지했다. 신성장 동력으로는 디지털 플랫폼 CTK CLIP과 친환경 소재 사업이 꼽힌다. 회사는 지난해 초 자회사를 통해 미국 캘리포니아주 소재 OTC(일반의약품) 제조 공장을 인수해 북미 시장 확대를 위한 생산 거점을 마련했다. 친환경 소재 부문에서는 생분해 플라스틱 레진(PBAT, PHA)의 상용화에 성공했으며, 기존에 널리 쓰이는 PLA 대비 환경적 이점이 있는 것으로 알려졌다. 2026년 1월에는 씨티케이바이오가 생리대 등에 적용 가능한 차세대 친환경 고흡수성 소재 기술을 개발했다고 밝히며 소재 사업의 응용 범위를 넓히고 있다.",
-  "en": "CTK is a cosmetics platform company that outsources the manufacturing of finished cosmetics for global brands, providing services across the full chain from product design and formula development to marketing, production, and logistics. Its differentiating feature is a fab-less model that relies on external manufacturing facilities rather than owning factories, working horizontally with roughly 300 domestic and overseas manufacturing and packaging partners. Compared with domestic ODM peers, CTK differentiates itself through its North America-centered business and strength in color cosmetics. As of the first quarter of 2025, North America accounted for 76.5% of revenue by region, followed by 10.4% domestically and 13.1% for Europe and Asia combined. New growth drivers cited by the company include the CTK CLIP digital platform and an eco-friendly materials business. Early last year, the company acquired an OTC (over-the-counter drug) manufacturing plant in California through a subsidiary, establishing a production base to expand its North American footprint. In eco-friendly materials, the company commercialized biodegradable plastic resins (PBAT, PHA), reported to offer environmental advantages over the widely used PLA. In January 2026, CTK Bio announced it had developed next-generation eco-friendly super-absorbent material technology applicable to feminine hygiene products, broadening the scope of its materials business."
+  "ko": "씨티케이는 뷰티 제품의 기획, 제조, 납품, 물류까지 서비스를 턴키 방식으로 묶어 제공하는 화장품 플랫폼 기업이다. 씨티케이는 뷰티에 관한 모든 서비스를 턴키로 제공하는 화장품 플랫폼 기업. 자체 공장 시설 없이 화장품 OEM·ODM 파트너사와 협력해 생산하는 구조라 생산 운영의 탄력성이 강점으로 꼽혀 왔다. 효율적이고 탄력적인 생산 운영이 가능하다는 장점이 있다. 2023년 6월 증권사 리포트 기준 2022년 매출 구성은 화장품제조 74.0%, 물류서비스 24.3%, 브랜드서비스 1.7%였다. 지역 구성에서는 북미 비중이 70%대로 보고됐다. 북미 매출비중이 72.1% 수준으로 글로벌 화장품 브랜드 및 인디 브랜드들을 고객사로 보유. 주요 고객사는 글로벌 메이저 브랜드와 독립 브랜드를 아우르며, 로레알, 유니레버, 에스티로더, 샤넬, 디올, LVMH 등 글로벌 화장품 브랜드뿐 아니라 펜티뷰티, 투페이스드, 글로시에, 히어로 코스메틱스 등 다양한 고객을 보유한 것으로 소개됐다. 2024년 사업 부문 표기에서는 CTK CLIP 사업부의 비중이 대부분으로 나타나 분류 체계가 바뀐 것으로 보이며, 부문별 비중은 정기보고서 원문으로 재확인할 필요가 있다. 경쟁 구도는 한국콜마, 코스맥스, 코스메카코리아 등 국내 화장품 ODM·OEM 상장사와 같은 업종에서 비교된다. 이들과의 차이는 자체 생산 설비를 두고 있는지 여부와 고객 구성에 있으며, 씨티케이는 생산을 파트너에 의존하는 구조라 원가와 납기를 외부 요인에 묶어 두는 특성이 있다.",
+  "en": "CTK is a cosmetics platform company that bundles planning, manufacturing, fulfillment and logistics for beauty products on a turnkey basis. It runs without owned factories and produces through OEM and ODM partners, a structure cited for production flexibility. A 2023 brokerage report put the 2022 revenue mix at cosmetics manufacturing 74.0%, logistics services 24.3% and brand services 1.7%. North America accounted for roughly 70% of revenue, and the customer list spans global brands and independent labels. The 2024 segment table shows CTK CLIP at about 97% of sales, which suggests a change in reporting categories, so segment weights should be rechecked against the periodic filings. Domestic listed ODM and OEM peers such as Kolmar Korea, Cosmax and Cosmecca Korea operate in the same industry, and the main structural difference is CTK's reliance on partner-owned production."
  },
  "earnings": {
-  "ko": "연간 실적을 보면 2022년 매출 693.6억원, 영업손실 152.2억원(영업이익률 -21.9%), 지배주주 순손실 176.5억원의 큰 적자를 기록한 뒤, 2023년에는 매출 889.2억원, 영업이익 27.4억원(영업이익률 3.1%), 지배주주 순이익 69.4억원으로 흑자 전환했다. 그러나 2024년에는 매출이 836.0억원으로 소폭 줄고 영업이익이 1.3억원(영업이익률 0.2%)까지 축소되면서 지배주주 순손실 32.7억원을 기록해 다시 적자로 돌아섰다. 2025년에는 매출이 892.3억원으로 재차 늘었지만 영업손실 56.7억원(영업이익률 -6.4%), 지배주주 순손실 70.2억원으로 적자 폭이 확대됐다. 회사 측은 종속회사 신규 편입과 주요 종속회사 매출 확대로 외형은 성장했으나, 생산 설비 정비 및 사업장 확장 이전 과정에서 발생한 일시적 비용과 이자비용 증가, 외환·금융자산 평가손익 변동이 겹치며 손익이 악화됐다고 설명했다. 분기별로는 2025년 2분기 매출 224.7억원·영업이익 2.3억원·지배주주 순이익 12.5억원이었으나 3분기에는 매출이 311.3억원으로 늘어난 대신 영업손실 40.6억원, 순손실 45.9억원으로 급격히 악화됐고, 4분기에도 매출이 159.6억원으로 줄며 영업손실 22.1억원, 순손실 36.2억원이 이어졌다. 2026년 1분기에는 매출 244.5억원에 영업손실 17.4억원, 순손실 42.8억원을 기록했으나 2분기에는 매출 289.6억원, 영업이익 4.7억원으로 세 분기 연속 적자에서 벗어났다. 다만 2026년 2분기에도 지배주주 순이익은 -19.8억원으로 영업이익 흑자 전환에도 순손실이 지속돼, 영업외 비용(금융비용·외환 관련 손익 등)이 여전히 최종 손익에 부담으로 작용하고 있음을 보여준다. 현금흐름 측면에서도 2023년(영업활동현금흐름 +105.6억원)을 제외하면 2022년, 2024년, 2025년 모두 영업활동현금흐름이 마이너스(각각 -88.2억원, -72.0억원, -82.5억원)를 기록했고, 부채비율 또한 2024년 22.1%에서 2025년 75.5%로 크게 뛰어 재무구조 변화가 뚜렷하다.",
-  "en": "Looking at annual results, CTK posted a heavy loss in 2022 with revenue of KRW 69.4 billion, an operating loss of KRW 15.2 billion (operating margin of -21.9%), and a net loss attributable to owners of KRW 17.7 billion, before turning profitable in 2023 with revenue of KRW 88.9 billion, operating profit of KRW 2.7 billion (margin 3.1%), and net income attributable to owners of KRW 6.9 billion. In 2024, however, revenue slipped slightly to KRW 83.6 billion and operating profit shrank to just KRW 0.13 billion (margin 0.2%), while net income attributable to owners swung back to a loss of KRW 3.3 billion. In 2025, revenue grew again to KRW 89.2 billion, but the operating loss widened to KRW 5.7 billion (margin -6.4%) and the net loss attributable to owners expanded to KRW 7.0 billion. The company attributed the top-line growth to newly consolidated subsidiaries and higher sales at key subsidiaries, while explaining the deteriorating bottom line as a result of one-off costs from equipment maintenance and facility relocation, rising interest expense, and fluctuations in foreign exchange and financial asset valuation. On a quarterly basis, Q2 2025 saw revenue of KRW 22.5 billion, operating profit of KRW 0.23 billion, and net income attributable to owners of KRW 1.25 billion, but Q3 2025 revenue rose to KRW 31.1 billion while the company swung to an operating loss of KRW 4.06 billion and a net loss of KRW 4.59 billion; Q4 2025 revenue fell to KRW 16.0 billion with an operating loss of KRW 2.21 billion and a net loss of KRW 3.62 billion. Q1 2026 posted revenue of KRW 24.5 billion with an operating loss of KRW 1.74 billion and a net loss of KRW 4.28 billion, but Q2 2026 revenue rose to KRW 29.0 billion with an operating profit of KRW 0.47 billion, ending three straight quarters of operating losses. Even so, net income attributable to owners in Q2 2026 remained negative at KRW -1.98 billion despite the operating profit turnaround, indicating that non-operating items such as financial costs and foreign exchange effects continue to weigh on the bottom line. On the cash flow side, operating cash flow was negative in every year except 2023 (KRW +10.6 billion), registering KRW -8.8 billion in 2022, KRW -7.2 billion in 2024, and KRW -8.2 billion in 2025, while the debt ratio also jumped sharply from 22.1% in 2024 to 75.5% in 2025, marking a notable shift in the balance sheet structure."
+  "ko": "공시 실적 기준 연간 매출은 2022년 694억원에서 2023년 889억원(전년 대비 28.2% 증가)으로 늘었고, 2024년 836억원(전년 대비 6.0% 감소)을 거쳐 2025년 892억원(전년 대비 6.7% 증가)으로 집계됐다. 2025년 매출 증가에 대해 회사는 연결 종속회사 신규 편입과 주요 종속회사 매출 확대에 따라 외형 성장이 이뤄졌다고 설명했다. 이익 측면에서는 2022년 영업손실 152억원에서 2023년 영업이익 27.4억원으로 흑자 전환했으나, 2024년에는 영업이익이 1.3억원으로 전년 대비 95.1% 줄었다. 2025년에는 영업손실 56.7억원으로 적자로 돌아섰고 영업이익률은 -6.4%를 기록했다. 지배주주 순이익은 2023년 69.4억원 흑자 이후 2024년 순손실 32.7억원, 2025년 순손실 70.2억원으로 적자가 이어졌다. 당기순이익은 비지배지분을 포함한 값으로 2025년 당기순손실 73.3억원이며, 지배주주 기준과 차이가 있다. 2026년 들어서는 분기 흐름이 엇갈렸다. 2026년 1분기 매출은 245억원, 2분기 290억원이었고, 2분기에는 영업이익 4.7억원으로 흑자 전환했다. 3분기 매출은 245억원으로 전년 동기 대비 21.2% 감소했고 영업손실은 28억 5,400만원으로 확대 전환됐다. 한편 2026년 1~3분기 누적 매출액은 779억 4,500만원으로 전년 동기보다 6.4% 늘었다. 누적 영업손실은 41억 2,500만원으로 전년 동기보다 19.3% 확대됐고, 누적 당기순손실은 84억 2,200만원으로 134.7% 증가했다. 이 누계 수치는 2026년 11월 10일 공시된 잠정치이며 외부감사인의 감사·검토가 끝나지 않아 변경될 수 있다. 최근 4개 분기 지배주주 순손실 합계는 118억원으로, 분기별 적자 폭은 줄었지만 적자 구조가 해소되지는 않은 상태다.",
+  "en": "Annual revenue in the disclosed figures rose from KRW 69.4 billion in 2022 to KRW 88.9 billion in 2023 (up 28.2% year on year), dipped to KRW 83.6 billion in 2024 (down 6.0%), and reached KRW 89.2 billion in 2025 (up 6.7%). The company attributed the 2025 growth to the consolidation of newly included subsidiaries and higher sales at major subsidiaries. Operating profit swung from an operating loss of KRW 15.2 billion in 2022 to an operating profit of KRW 2.74 billion in 2023, then fell 95.1% to KRW 135 million in 2024 and turned into an operating loss of KRW 5.67 billion in 2025, with an operating margin of -6.4%. Net income attributable to controlling shareholders moved from a KRW 6.94 billion profit in 2023 to losses of KRW 3.27 billion in 2024 and KRW 7.02 billion in 2025. Total net income including non-controlling interests was a loss of KRW 7.33 billion in 2025, a different figure from the controlling-shareholder line. Quarterly revenue was KRW 31.1 billion in the third quarter of 2025, KRW 16 billion in the fourth quarter, KRW 24.5 billion in the first quarter of 2026, KRW 29 billion in the second quarter and KRW 24.5 billion in the third quarter. The second quarter of 2026 produced an operating profit of KRW 469 million, while the third quarter reverted to an operating loss of KRW 2.85 billion. Cumulative revenue for the first three quarters of 2026 was KRW 77.9 billion, up 6.4%, while cumulative operating loss widened to KRW 4.13 billion, according to preliminary results published on November 10, 2026 that remain subject to audit review. Net losses attributable to controlling shareholders over the last four quarters totaled KRW 11.8 billion."
  },
  "industry": {
-  "ko": "K-뷰티 ODM·OEM 업계는 코스맥스, 한국콜마, 코스메카코리아 등 대형 업체를 중심으로 성장세를 이어가고 있으며, 2026년 2분기·상반기 화장품·뷰티 기업 86곳을 분석한 결과 79.1%인 68곳이 매출 성장을 기록했다. 다만 매출 성장이 산업 전체의 수익성 개선으로 직결되지는 않아, 영업적자 기업이 여전히 26곳에 달하는 등 성장기업과 한계기업 간 실적 격차가 확대되는 모습도 함께 나타났다. 같은 분석에서 씨티케이는 2분기 영업이익 성장률 103.0%를 기록해 상위권에 이름을 올렸다. 씨티케이는 코스맥스·한국콜마 등 대형 ODM사와 달리 자체 공장 없이 외부 제조시설을 활용하는 플랫폼형 사업모델을 취하며, 북미 지역 매출 비중이 압도적으로 높다는 점에서 포지셔닝이 차별화된다. 최근에는 순수 화장품 ODM을 넘어 북미 OTC(일반의약품) 생산과 생분해 플라스틱 소재 사업으로 영역을 넓히며 사업 다각화를 시도하고 있다. 정부가 탈플라스틱 로드맵을 마련하고 음료·생수 페트병 등에 재생원료 사용 의무화를 추진하는 흐름은 생분해 소재 사업에 우호적인 정책 환경으로 거론된다. 다만 신사업들은 아직 매출 기여도가 크지 않은 초기 단계로, 전통 ODM 대형사 대비 규모의 경제나 브랜드 포트폴리오 다각화 측면에서는 상대적으로 열위에 있다.",
-  "en": "The K-beauty ODM/OEM industry continues to grow, led by large players such as Cosmax, Kolmar Korea, and Cosmecca Korea, and an analysis of 86 cosmetics and beauty companies for Q2 and first-half 2026 found that 68 companies, or 79.1%, achieved revenue growth. However, revenue growth did not uniformly translate into industry-wide profitability improvement, as 26 companies still recorded operating losses, widening the performance gap between growing and struggling firms. In the same analysis, CTK ranked among the top performers with an operating profit growth rate of 103.0% in the quarter. Unlike large ODM firms such as Cosmax and Kolmar Korea, CTK operates a platform-based model that relies on external manufacturing facilities rather than owning its own factories, and its positioning is further differentiated by an overwhelmingly high share of North American revenue. More recently, the company has moved beyond pure cosmetics ODM to diversify into North American OTC drug production and biodegradable plastics materials. Government efforts to establish a deplasticization roadmap and mandate the use of recycled materials in beverage and water bottles are cited as a favorable policy backdrop for the biodegradable materials business. That said, these new businesses are still at an early stage with limited revenue contribution so far, leaving the company at a relative disadvantage to large ODM peers in terms of economies of scale and brand portfolio diversification."
+  "ko": "화장품 ODM·OEM 시장은 글로벌 브랜드의 생산 아웃소싱 수요와 인디 브랜드의 증가에 따라 움직인다. 씨티케이는 이 가운데 북미 고객 비중이 높은 턴키 공급자로, 국내 대형 ODM 상장사와 달리 자체 생산 설비를 거의 두지 않는 구조다. 이 차이는 설비 투자 부담이 작다는 장점과 함께, 생산 품질과 원가를 파트너에 기대야 한다는 한계를 동시에 가진다. 2024년 증권사 리포트는 씨티케이의 수익성 개선이 친환경 사업 부문의 적자 지속과 북미 OTC(일반의약품형 화장품) 생산 시설 투자로 제한된다고 짚었다. 친환경 사업 부문의 적자 지속과 북미 OTC 생산 시설에 대한 설비 투자로 인해 수익성 개선이 제한된 결과다. 이 진단은 2024년 시점의 평가이며, 이후 연도의 부문별 손익은 정기보고서에서 다시 확인해야 한다. 글로벌 브랜드 수요는 미국과 유럽의 소비 흐름, 환율, 주요 고객사의 재고 조정에 민감하다. 씨티케이의 분기 매출이 2025년 4분기 전 분기 대비 48.7% 줄었다가 2026년 1분기 53.2% 늘어난 것은 주문 시점에 따른 변동성이 크다는 뜻이다. 국내 동종 상장사들과 비교하면 고객 집중도와 분기 매출의 변동 폭을 함께 봐야 하는 구도다.",
+  "en": "The cosmetics ODM and OEM market moves with global brands outsourcing production and with the growth of independent labels. CTK is a turnkey supplier with a heavy North American customer mix and, unlike larger domestic ODM peers, keeps little owned production capacity. That structure lowers capex needs but makes margins depend on partners' quality and cost control. A 2024 brokerage view tied the limits on profitability to continued losses in the eco-friendly business and capacity spending on a North American OTC plant. That assessment dates from 2024, and later segment results should be checked in the periodic filings. Demand from global brands is sensitive to U.S. and European consumption, exchange rates and customer inventory decisions. Quarterly revenue swings, including a 48.7% quarter-on-quarter drop in the fourth quarter of 2025 followed by a 53.2% rebound in the first quarter of 2026, point to order timing volatility. Compared with domestic listed peers such as Cosmax, Kolmar Korea and Cosmecca Korea, customer concentration and quarterly variability are the key comparison points."
  },
  "outlook": {
-  "ko": "회사는 2025년 실적 발표 시 “중장기 성장 기반을 선제적으로 구축하는 과정에서 발생한 구조 전환기적 조정”이라고 자평하며, 인프라 구축과 매출 포트폴리오 다변화 등 체질 개선 작업이 마무리 단계에 접어든 만큼 2026년부터 실적 회복이 본격화될 것으로 내다봤다. 정인용 대표이사는 2025년을 “구조 전환과 인프라 구축이 병행된 시기”로 규정하고, 미국 OTC 생산 기반을 중심으로 과거 주력 매출을 회복하고 국내 브랜드의 북미 진출을 지원하는 원스톱 플랫폼 경쟁력을 통해 2026년 실질적인 성장 회복을 이루겠다고 밝혔다. 미국 OTC 공장은 2026년 2월 공시에서 노후화된 생산시설 대응을 위한 자금 투입이 진행 중인 것으로 확인되며, 가동 안정화 시점은 추가 확인이 필요하다. 친환경 소재 사업에서는 생분해 플라스틱 레진의 멀칭필름 시장 진출, 태성산업과의 생분해 화장품 용기 개발 협약 등 상업화 시도가 이어지고 있고, 2026년 1월에는 씨티케이바이오가 생리대 적용이 가능한 차세대 친환경 고흡수성 소재 기술을 개발했다고 밝혔다. 디지털 플랫폼 측면에서는 2026년 1월 B2B 뷰티 개발 플랫폼 'CTK CLIP.com'을 전면 개편했고, 카페24와 업무협약을 맺어 크리에이터 맞춤형 화장품 브랜드 론칭을 지원하는 스마트 커머스 생태계 구축을 추진하고 있다. 회사는 순손실을 기록한 2025 회계연도에도 최대주주 60원, 그 외 주주 110원의 차등배당을 유지하기로 했으며, 이는 일반주주에 대한 환원 비율을 확대하기 위한 결정이라고 밝혔다(최종 확정은 정기주주총회에서 이뤄질 예정이다). 이러한 신사업들의 실제 매출·이익 기여 시점과 규모는 향후 분기 실적과 추가 공시를 통해 확인이 필요하다.",
-  "en": "When announcing 2025 results, the company characterized the year's losses as a structural transition-period adjustment made in the process of proactively building a mid- to long-term growth foundation, and said that with infrastructure buildout and revenue portfolio diversification nearing completion, earnings recovery was expected to gain momentum from 2026. CEO Jeong In-yong described 2025 as a period in which structural transition and infrastructure buildout proceeded in parallel, and stated the company aims to achieve genuine growth recovery in 2026 by rebuilding past core revenue around its US OTC production base and supporting domestic brands' entry into North America through a one-stop platform. A February 2026 disclosure confirmed that capital was being injected into the US OTC plant to address aging production facilities, and the timing of stable full-scale operation still requires further confirmation. In the eco-friendly materials business, commercialization efforts continue, including entry into the mulching film market for biodegradable plastic resin and a development agreement with Taesung Industry for biodegradable cosmetics containers, and in January 2026 CTK Bio announced development of next-generation eco-friendly super-absorbent material technology applicable to feminine hygiene products. On the digital platform side, the company overhauled its B2B beauty development platform CTK CLIP.com in January 2026 and signed a memorandum of understanding with Cafe24 to build a smart commerce ecosystem supporting creator-tailored cosmetics brand launches. Despite the net loss in fiscal 2025, the company decided to maintain a differentiated dividend of KRW 60 per share for the controlling shareholder and KRW 110 for other shareholders, stating this was intended to expand the return ratio for general shareholders, with final confirmation to occur at the annual general meeting. The actual timing and scale of revenue and profit contribution from these new businesses will need to be confirmed through future quarterly results and additional disclosures."
+  "ko": "회사는 2025년 실적을 공시하면서 사업 구조 재편이 마무리됐다고 설명하고 2026년 본격적인 성장 회복을 기대한다고 밝혔다. 씨티케이가 2025년 연결 기준 연간 실적 매출 892억원, 영업손실 58억원을 기록했다고 20일 공시했다. 다만 이 기대는 2026년 실적에서 아직 확인되지 않았다. 2026년 1~3분기 누계 매출은 늘었지만 영업손실은 확대됐고, 3분기 매출은 전년 동기보다 줄었다. 2024년 증권사 리포트는 북미 OTC 제조 공장의 가동 시점과 친환경 생분해 플라스틱 사업의 성장을 주요 변수로 꼽았다. 북미 OTC 제조 공장이 2024년 4분기부터 본격적으로 가동되고, 생분해 플라스틱 사업도 친환경 정책 수요 증가와 맞물려 본격적인 성장이 기대된다. 해당 공장의 가동이 이후 매출과 원가에 어떻게 반영됐는지는 공시 실적에서 세부적으로 확인되지 않는다. 확인할 지점은 2026년 연간 실적에서 영업손익이 흑자로 돌아서는지, 그리고 2026년 4분기 매출이 전 분기 대비 회복되는지다. 또한 2026년 3분기 실적은 잠정치 기준으로 영업손실 축소와 매출 감소가 동시에 나타났으므로, 확정 실적에서 이 흐름이 유지되는지 점검할 필요가 있다.",
+  "en": "When the company disclosed its 2025 results, it said the restructuring of its business had been completed and expected a full-scale growth recovery in 2026. The 2026 outcome has not yet confirmed that expectation. Cumulative revenue for the first three quarters of 2026 rose, but the cumulative operating loss widened and third-quarter revenue fell year on year. A 2024 brokerage report cited the start-up of a North American OTC plant and growth in biodegradable plastics as key variables. That plant timing was described for 2024, and how it affected later revenue and costs is not detailed in the disclosed figures. The items to verify are whether full-year 2026 operating results return to profit and whether fourth-quarter 2026 revenue recovers from the third quarter. Since the third-quarter 2026 figures are preliminary, the final results need to confirm whether the narrowing of the operating loss holds."
  },
  "valuation_comment": {
-  "ko": "씨티케이는 최근 네 개 분기를 합산한 지배주주 순이익이 적자 구간에 있어, 통상적인 주가수익비율(PER) 잣대를 적용하기 어려운 상태다. 주가는 주당 순자산가치 대비 낮은 수준에서 형성되어 있어, 자기자본 규모 대비 시장에서 부여받는 가치는 상대적으로 보수적인 편이다. 과거 증권사 리포트에서는 동종 ODM업체 평균 주가수익비율과 비교해 씨티케이가 낮게 거래된 시기가 있었다는 평가가 있었으나, 이는 특정 시점의 실적 전망을 전제로 한 것이어서 현재 상황에 그대로 적용하기는 어렵다. 순손실을 기록한 최근 결산기에도 차등배당을 유지한 점은 주주환원 측면에서 참고할 만한 요소이나, 배당 관련 지표의 절대적 수준은 화면에 표시되는 값을 통해 별도로 확인하는 것이 적절하다. 종합적으로 밸류에이션은 신사업(OTC·친환경 소재)의 실적 기여 시점과 영업이익 안정화 여부에 따라 시장의 평가가 달라질 수 있는 구간에 있다.",
-  "en": "CTK's net income attributable to owners over the trailing four quarters remains in loss territory, making it difficult to apply a conventional price-to-earnings ratio as a valuation yardstick. The share price is set at a level below its per-share net asset value, meaning the market currently assigns a relatively conservative valuation relative to the size of shareholders' equity. Past brokerage reports noted periods when CTK traded at a discount to the average price-to-earnings ratio of peer ODM companies, but such assessments were premised on specific-period earnings forecasts and cannot be mechanically applied to the current situation. Maintaining a differentiated dividend even in a year of net loss is a notable point from a shareholder-return perspective, though the absolute level of dividend-related metrics is best checked through the figures displayed on screen. Overall, the valuation sits in a range where market assessment could shift depending on when the new OTC and eco-friendly materials businesses begin contributing to results and whether operating profit stabilizes."
+  "ko": "씨티케이의 밸류에이션은 자산 대비 주가 수준과 이익 체력 사이의 대비로 읽힌다. 주가순자산비율은 1배를 크게 밑도는 구간에 있어, 장부상 자본 대비 시장 평가가 낮은 편이다. 반면 최근 4개 분기 순손실이 이어지고 있어 주가수익비율은 산출되지 않는다. 이익 기준 배수로 비교할 수 없는 상태이므로 자산과 배당 같은 다른 축으로 살펴보는 것이 일반적이다. 배당수익률은 업종 평균과 비교한 수준이 중요하지만, 영업활동 현금흐름이 2024년과 2025년 모두 마이너스였다는 점을 함께 봐야 배당의 지속성을 가늠할 수 있다. 2023년에는 지배주주 순이익이 흑자로 전환된 적이 있어, 과거에 이익이 났던 구간과 현재 적자 구간의 차이가 밸류에이션 해석의 기준점이 된다. 부채비율이 2025년 말 75.5%로 올라 자본 대비 부채 부담이 커졌다는 점도 주가순자산비율 해석에 영향을 준다. 결국 장부가치 대비 시장 평가는 낮은 수준이지만, 그 격차가 자산의 실질 가치를 반영하는지는 손익 회복 여부에 달려 있다.",
+  "en": "CTK's valuation reads as a comparison between its market price and its book value on one side and its current earnings base on the other. The price-to-book multiple sits well below 1x, meaning the market values the company at a low level relative to book equity. Because net losses have continued over the last four quarters, a price-to-earnings multiple cannot be calculated. Asset-based and dividend-based views therefore carry more weight than earnings multiples. The dividend yield should be read alongside operating cash flow, which was negative in both 2024 and 2025. Net income attributable to controlling shareholders was positive in 2023, which marks a earnings level the company has reached before and serves as a reference point for the current loss period. The debt-to-equity ratio rose to 75.5% at the end of 2025, which affects how a low price-to-book reading should be interpreted. The gap between book value and market value is narrow to explain without knowing whether earnings recover."
  },
  "bull": [
   {
    "title": {
-    "ko": "신사업 다각화로 성장축 확대",
-    "en": "Diversified Growth Engines from New Ventures"
+    "ko": "분기 손실 폭의 축소",
+    "en": "Narrowing quarterly losses"
    },
    "body": {
-    "ko": "북미 OTC 생산시설과 생분해 플라스틱 소재 사업이 기존 화장품 ODM·플랫폼 사업에 더해지며 매출·이익 구조 다변화가 진행 중이다. 정부의 탈플라스틱 정책 방향은 생분해 소재 사업에 우호적 환경을 제공할 수 있다. 회사는 이들 신사업의 실적 기여가 2026년 이후 본격화될 것으로 기대하고 있다.",
-    "en": "A North American OTC manufacturing facility and a biodegradable plastics materials business are being layered onto the existing cosmetics ODM and platform business, diversifying the revenue and earnings structure. Government deplasticization policy direction could provide a favorable environment for the biodegradable materials business. The company expects these new ventures to make a meaningful earnings contribution from 2026 onward."
+    "ko": "2026년 3분기 영업손실은 28억 5,400만원으로 전년 동기 대비 줄었고, 2분기에는 영업이익 4.7억원으로 흑자 전환을 기록했다. 지배주주 순손실도 2025년 3분기 45.9억원에서 2026년 3분기 19억원으로 축소됐다. 분기 단위로 적자 폭이 줄어드는 흐름은 사업 회복의 초기 신호로 읽을 수 있는 수치다.",
+    "en": "Third-quarter 2026 operating loss narrowed year on year, and the second quarter of 2026 returned to an operating profit of KRW 469 million. Net loss attributable to controlling shareholders shrank from KRW 4.59 billion in the third quarter of 2025 to KRW 1.9 billion in the third quarter of 2026, a trend that can be read as an early sign of recovery."
    }
   },
   {
    "title": {
-    "ko": "2026년 2분기 실적 개선 신호",
-    "en": "Signs of Improvement in Q2 2026 Results"
+    "ko": "사업 재편과 연결 편입 효과",
+    "en": "Restructuring and consolidation effects"
    },
    "body": {
-    "ko": "2026년 2분기 매출은 289.6억원, 영업이익은 4.7억원으로 세 분기 연속 영업적자에서 벗어났다. 전년 동기 대비 영업이익도 개선되는 흐름을 보였다. 다만 순이익 단계까지의 완전한 회복은 아직 확인되지 않았다.",
-    "en": "Q2 2026 revenue reached KRW 29.0 billion with operating profit of KRW 0.47 billion, ending three consecutive quarters of operating losses. Operating profit also showed improvement compared to the same period a year earlier. However, a full recovery through to the net income line has not yet been confirmed."
+    "ko": "회사는 2025년 매출 증가를 연결 종속회사 신규 편입과 주요 종속회사의 매출 확대로 설명했다. 2025년 매출은 892억원으로 2022년 이후 가장 큰 규모다. 사업 구조 재편이 마무리됐다는 회사의 설명이 2026년 실적으로 이어진다면 외형 기반이 넓어진 효과로 평가될 수 있다.",
+    "en": "The company attributed 2025 revenue growth to newly consolidated subsidiaries and higher sales at major subsidiaries. At KRW 89.2 billion, 2025 revenue was the largest of the 2022 to 2025 period, and if the restructuring carries into 2026 results, the broader revenue base could be a lasting gain."
    }
   },
   {
    "title": {
-    "ko": "차등배당을 통한 주주환원 유지",
-    "en": "Shareholder Returns Maintained via Differentiated Dividend"
+    "ko": "글로벌 고객 기반과 턴키 구조",
+    "en": "Global customer base and turnkey model"
    },
    "body": {
-    "ko": "2025 회계연도에 순손실을 기록했음에도 최대주주 60원, 그 외 주주 110원의 차등배당을 유지했다. 회사는 이를 일반주주 환원 확대를 위한 결정이라고 설명했다. 재무 건전성을 기반으로 주주환원 정책을 유지하겠다는 입장도 함께 밝혔다.",
-    "en": "Despite the net loss in fiscal 2025, the company maintained a differentiated dividend of KRW 60 per share for the controlling shareholder and KRW 110 for other shareholders. The company described this as a decision aimed at expanding returns to general shareholders. It also stated its intention to maintain shareholder return policy based on financial soundness."
+    "ko": "씨티케이는 로레알, 유니레버, 에스티로더 등 글로벌 브랜드와 독립 브랜드를 함께 고객으로 두고 있다. 자체 공장 없이 파트너 생산을 활용하는 구조라 설비 투자 부담이 상대적으로 작다. 북미 OTC 생산 설비가 가동되면 고부가 제품군으로의 전환 여지가 생긴다는 점도 강세 요인으로 거론된다.",
+    "en": "CTK serves global brands such as L'Oréal, Unilever and Estée Lauder alongside independent labels. Its partner-based production limits fixed capital spending, and the North American OTC plant, if it runs as planned, is cited as a route to higher-value product lines."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "영업이익 흑자에도 순손실 지속",
-    "en": "Net Losses Persist Despite Operating Profit Turnaround"
+    "ko": "2년 연속 적자와 현금흐름 마이너스",
+    "en": "Two straight loss years and negative operating cash flow"
    },
    "body": {
-    "ko": "2026년 2분기 영업이익은 흑자로 전환했지만 지배주주 순이익은 -19.8억원으로 여전히 적자였다. 이는 금융비용, 외환 관련 손익 등 영업외 요인이 최종 손익에 지속적으로 부담을 주고 있음을 시사한다. 영업 실적 개선이 곧바로 순이익 개선으로 이어지지 않고 있다.",
-    "en": "While operating profit turned positive in Q2 2026, net income attributable to owners remained negative at KRW -1.98 billion. This suggests that non-operating factors such as financial costs and foreign exchange-related items continue to weigh on the bottom line. Operating performance improvement has not directly translated into net income improvement."
+    "ko": "2024년 지배주주 순손실 32.7억원, 2025년 순손실 70.2억원으로 2년 연속 적자다. 영업활동 현금흐름도 2024년 -72억원, 2025년 -82.5억원으로 두 해 모두 마이너스였다. 적자가 분기 단위로 줄고 있더라도 현금 창출 능력이 회복됐다는 근거는 아직 연간 공시에서 확인되지 않는다.",
+    "en": "Net loss attributable to controlling shareholders was KRW 3.27 billion in 2024 and KRW 7.02 billion in 2025, two consecutive loss years. Operating cash flow was negative at KRW 7.2 billion in 2024 and KRW 8.25 billion in 2025, and the annual filings do not yet show a return to cash generation."
    }
   },
   {
    "title": {
-    "ko": "신사업 초기 투자 부담과 실행 리스크",
-    "en": "Early-Stage Investment Burden and Execution Risk in New Businesses"
+    "ko": "3분기 매출 감소와 영업 적자 재전환",
+    "en": "Third-quarter revenue decline and renewed operating loss"
    },
    "body": {
-    "ko": "미국 OTC 공장은 노후 생산시설 대응을 위한 자금 투입이 필요한 상황으로 확인됐다. 생분해 플라스틱 등 신사업은 아직 매출 기여도가 크지 않은 초기 단계다. 계획된 실적 기여 시점이 지연될 가능성도 배제할 수 없다.",
-    "en": "The US OTC plant has required capital injection to address aging production facilities. New businesses such as biodegradable plastics remain at an early stage with limited revenue contribution so far. The possibility that the planned timing of earnings contribution could be delayed cannot be ruled out."
+    "ko": "2026년 3분기 매출은 245억원으로 전년 동기 대비 21.2% 감소했다. 2분기에 영업이익을 낸 뒤 3분기에 영업손실 28억 5,400만원으로 다시 적자 전환했다. 2026년 1~3분기 누계 순손실은 84억 2,200만원으로 전년 동기보다 134.7% 늘었다고 잠정 공시됐다.",
+    "en": "Third-quarter 2026 revenue fell 21.2% year on year to KRW 24.5 billion. After a second-quarter operating profit, the third quarter reverted to an operating loss of KRW 2.85 billion, and cumulative net loss for the first three quarters widened 134.7% in preliminary disclosures."
    }
   },
   {
    "title": {
-    "ko": "재무구조 변화와 현금창출력 약화",
-    "en": "Balance Sheet Shift and Weakened Cash Generation"
+    "ko": "부채 부담 증가",
+    "en": "Rising debt burden"
    },
    "body": {
-    "ko": "부채비율이 2024년 22.1%에서 2025년 75.5%로 급등하며 재무 레버리지가 크게 높아졌다. 영업활동현금흐름도 2023년을 제외한 최근 4개 연도 중 3개 연도에서 마이너스를 기록했다. 이는 신사업 투자와 병행해 재무 부담이 커지고 있음을 보여준다.",
-    "en": "The debt ratio jumped from 22.1% in 2024 to 75.5% in 2025, sharply increasing financial leverage. Operating cash flow was also negative in three of the last four years, excluding 2023. This indicates that financial burdens are rising in parallel with investment in new businesses."
+    "ko": "부채비율은 2024년 말 22.1%에서 2025년 말 75.5%로 크게 올랐다. 부채총계는 1,105억원으로 자본총계 1,463억원에 가까운 규모다. 적자가 이어지는 상태에서 부채가 늘면 재무 여력이 줄어드는 방향으로 작용할 수 있다.",
+    "en": "The debt-to-equity ratio rose from 22.1% at the end of 2024 to 75.5% at the end of 2025. Total liabilities of KRW 110.5 billion are large relative to total equity of KRW 146.3 billion, and with losses continuing, the balance sheet has less room to absorb further shocks."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "재무 리스크",
-    "en": "Financial Risk"
+    "ko": "고객·지역 집중",
+    "en": "Customer and regional concentration"
    },
    "body": {
-    "ko": "부채비율이 1년 만에 22.1%에서 75.5%로 급등했고, 영업활동현금흐름은 2023년을 제외하면 지속적으로 마이너스를 기록했다. 신사업 투자가 이어지는 가운데 외부 자금조달 의존도가 높아질 가능성이 있다.",
-    "en": "The debt ratio surged from 22.1% to 75.5% within a year, and operating cash flow has been persistently negative except in 2023. As investment in new businesses continues, reliance on external financing could increase."
+    "ko": "북미 매출 비중이 70%대로 보고되어 미국 소비와 주요 고객사의 발주 결정에 실적이 크게 좌우된다. 글로벌 브랜드의 재고 조정이나 발주 축소가 생기면 분기 매출이 급변할 수 있다. 2025년 4분기 매출이 전 분기 대비 48.7% 줄었던 흐름이 이를 보여 준다.",
+    "en": "North America accounts for roughly 70% of revenue, so results depend heavily on U.S. consumption and on the purchasing decisions of key customers. Inventory cuts or lower orders from global brands can move quarterly revenue sharply, as the 48.7% quarter-on-quarter drop in the fourth quarter of 2025 showed."
    }
   },
   {
    "cat": {
-    "ko": "지역·환율 집중 리스크",
-    "en": "Geographic and Currency Concentration Risk"
+    "ko": "잠정치와 감사 전 실적",
+    "en": "Preliminary figures before audit"
    },
    "body": {
-    "ko": "매출의 76.5%가 북미 지역에 집중돼 있어 단일 지역 수요 변동과 원/달러 환율 변동에 대한 노출도가 크다. 실제로 회사는 외환·금융자산 평가손익 변동을 2025년 손익 악화 요인 중 하나로 지목했다. 지역 다변화가 지연될 경우 이 리스크는 지속될 수 있다.",
-    "en": "With 76.5% of revenue concentrated in North America, the company is highly exposed to single-region demand fluctuations and KRW/USD exchange rate movements. Indeed, the company cited fluctuations in foreign exchange and financial asset valuation as one of the factors behind the 2025 earnings deterioration. This risk could persist if regional diversification is delayed."
+    "ko": "2026년 3분기 실적과 1~3분기 누계는 잠정치로 공시됐고, 외부감사인의 감사·검토가 끝나지 않아 변경될 수 있다고 명시됐다. 정기보고서 확정 과정에서 손익이 달라질 가능성을 열어 둬야 한다. 특히 누계 순손실 증가 폭처럼 변동 가능성이 큰 항목을 확정치로 재확인하는 것이 필요하다.",
+    "en": "The third-quarter 2026 results and the first-nine-month totals were disclosed as preliminary and may change after external audit or review. Profit and loss figures could shift during the finalization of periodic filings, especially items such as the cumulative net loss increase."
    }
   },
   {
    "cat": {
-    "ko": "신사업 실행 리스크",
-    "en": "New Business Execution Risk"
+    "ko": "재무 여력과 유동성",
+    "en": "Financial capacity and liquidity"
    },
    "body": {
-    "ko": "미국 OTC 공장의 노후 시설 대응을 위한 추가 자금 투입이 확인된 바 있어, 당초 목표한 가동 안정화 시점이 지연될 가능성이 있다. 생분해 플라스틱 사업 역시 정책·수요 환경에 성과가 좌우되는 초기 단계 사업이다. 신사업 전반의 수익화 속도가 기대에 못 미칠 경우 재무 부담이 추가로 누적될 수 있다.",
-    "en": "Confirmation that additional capital was needed for the US OTC plant to address aging facilities suggests the originally targeted timing for stable operation could be delayed. The biodegradable plastics business is also an early-stage venture whose performance depends on policy and demand conditions. If monetization across the new businesses proceeds more slowly than expected, financial burdens could accumulate further."
+    "ko": "시가총액은 337억원 수준으로 소형주에 속하고, 영업활동 현금흐름은 2년 연속 마이너스다. 부채 증가와 적자가 겹치면 추가 자금 조달 필요성이 커질 수 있다. 소형주는 거래 유동성과 주가 변동성이 커질 수 있다는 점도 함께 고려해야 한다.",
+    "en": "Market capitalization is around KRW 33.7 billion, which places CTK among small caps, and operating cash flow has been negative for two years. Rising debt combined with losses could increase the need for additional funding, and small-cap shares can also show thin trading and larger price swings."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중",
-    "en": "Mid-November 2026"
+    "ko": "2027년 1월 말~2월 중순(통상 시점)",
+    "en": "Late January to mid-February 2027 (typical timing)"
    },
    "what": {
-    "ko": "2026년 3분기보고서 공시를 통해 매출 성장세 지속 여부와 영업이익 흑자 지속 여부를 확인할 필요가 있다.",
-    "en": "Check the Q3 2026 quarterly report for whether revenue growth continues and whether the operating profit turnaround is sustained."
+    "ko": "2026년 연간 잠정실적 공시에서 영업손익이 흑자로 돌아서는지, 4분기 매출이 3분기보다 회복되는지 확인한다. 연간 영업손익 방향이 이후 정기보고서 해석의 출발점이 된다.",
+    "en": "Check whether the full-year 2026 preliminary results show an operating profit and whether fourth-quarter revenue recovers from the third quarter. The direction of full-year operating results will anchor the reading of later periodic filings."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기~2027년 초",
-    "en": "Q4 2026 to early 2027"
+    "ko": "2027년 3월 말",
+    "en": "End of March 2027"
    },
    "what": {
-    "ko": "미국 OTC 공장의 가동 안정화 및 실제 매출·마진 기여 여부에 대한 후속 공시·IR 자료를 점검할 시점이다.",
-    "en": "This is a point to review follow-up disclosures and IR materials on whether the US OTC plant's operations have stabilized and are contributing to revenue and margins."
+    "ko": "2026년 사업보고서 제출 기한으로, 부문별 매출, 지역별 매출, 현금흐름, 부채 구조의 확정치가 공개된다. 잠정치와의 차이와 영업활동 현금흐름의 방향을 확인할 지점이다.",
+    "en": "The 2026 annual business report deadline, when segment revenue, regional mix, cash flow and debt structure are finalized. The differences from preliminary figures and the direction of operating cash flow are the points to verify."
    }
   },
   {
    "when": {
-    "ko": "2027년 3월 정기주주총회",
-    "en": "March 2027 Annual General Meeting"
+    "ko": "2027년 5월 15일 무렵",
+    "en": "Around May 15, 2027"
    },
    "what": {
-    "ko": "2025 회계연도 차등배당(최대주주 60원, 기타주주 110원)의 최종 확정 여부와 향후 배당 정책 방향을 확인할 필요가 있다.",
-    "en": "Confirm the final approval of the fiscal 2025 differentiated dividend (KRW 60 for the controlling shareholder, KRW 110 for other shareholders) and the direction of future dividend policy."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 하반기 중",
-    "en": "Second half of 2026"
-   },
-   "what": {
-    "ko": "생분해 플라스틱 소재 사업의 상업화 진척(멀칭필름, 위생용품 소재 등)과 관련한 추가 계약·공시를 확인할 필요가 있다.",
-    "en": "Monitor additional contracts and disclosures related to the commercialization progress of the biodegradable plastics business, including mulching film and hygiene product materials."
+    "ko": "2027년 1분기 분기보고서 제출 기한이다. 연간 흑자 전환 여부와 별개로 분기 영업이익률이 플러스를 유지하는지, 북미 OTC 설비 효과가 매출 구성에 나타나는지 확인한다.",
+    "en": "The deadline for the first-quarter 2027 quarterly report. Beyond the full-year direction, it will show whether quarterly operating margin stays positive and whether the North American OTC capacity appears in the revenue mix."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "씨티케이는 북미 중심 화장품 플랫폼 사업을 기반으로 미국 OTC 생산과 생분해 플라스틱 소재라는 두 개의 신사업을 더해 사업구조를 다각화하는 전환기에 있다. 2025년은 신규 종속회사 편입과 인프라 구축 비용이 겹치며 매출은 늘었지만 영업손실과 순손실이 확대된 한 해였고, 2026년 들어서는 2분기 기준으로 매출과 영업이익이 함께 개선되는 흐름이 확인됐다. 다만 영업이익 흑자에도 지배주주 순이익은 여전히 적자를 벗어나지 못했고, 부채비율 급등과 영업활동현금흐름의 지속적인 마이너스는 재무적으로 눈여겨볼 지점이다. 신사업인 OTC 생산시설과 생분해 소재 사업은 아직 매출 기여가 초기 단계이며, 그 실행 속도와 규모가 향후 실적 방향을 가를 핵심 변수로 보인다. 회사는 순손실 상황에서도 차등배당을 유지하며 주주환원 의지를 보였으나, 신사업의 실제 성과는 향후 분기 실적과 추가 공시를 통해 지속적으로 확인이 필요한 상태다. 종합하면 씨티케이는 성장통과 기회가 공존하는 전환기 기업으로, 매출 회복의 지속성과 이익 구조 안정화 여부가 다음 국면을 가늠할 핵심 지표다.",
-   "en": "CTK is in a transition period, diversifying its business structure by adding two new ventures—US OTC production and biodegradable plastics materials—onto its North America-centered cosmetics platform business. 2025 was a year in which revenue grew due to newly consolidated subsidiaries and infrastructure buildout costs, but operating and net losses widened, while in 2026, Q2 data confirmed a joint improvement in revenue and operating profit. However, net income attributable to owners remained in loss territory despite the operating profit turnaround, and the sharp rise in the debt ratio along with persistently negative operating cash flow are financial points worth watching closely. The new OTC production facility and biodegradable materials businesses are still at an early stage in terms of revenue contribution, and the pace and scale of their execution appear to be the key variable determining the future direction of earnings. The company has shown a commitment to shareholder returns by maintaining a differentiated dividend even amid net losses, but the actual performance of the new businesses will need continued confirmation through future quarterly results and additional disclosures. Overall, CTK is a company in transition where growing pains and opportunity coexist, with the sustainability of revenue recovery and the stabilization of its earnings structure serving as the key indicators for gauging its next phase."
+   "ko": "씨티케이는 2025년 매출 892억원으로 외형이 늘었지만, 영업손실과 지배주주 순손실이 이어지며 이익 구조는 아직 회복되지 않은 상태다. 2026년 3분기에는 매출이 전년 동기보다 21.2% 줄었고, 2분기에 낸 영업이익이 3분기에 다시 영업손실로 바뀌었다. 다만 지배주주 순손실은 2025년 3분기 45.9억원에서 2026년 3분기 19억원으로 줄어 분기 단위의 손실 축소 흐름은 확인된다. 강세 측면에서는 사업 재편과 연결 편입 효과, 글로벌 고객 기반, 턴키 구조에 따른 낮은 설비 부담이 거론된다. 약세 측면에서는 2년 연속 적자, 영업활동 현금흐름 마이너스, 부채비율 75.5%로의 상승, 북미 고객 집중이 맞물려 있다. 밸류에이션 측면에서 주가순자산비율은 1배를 크게 밑도는 수준이지만, 이익 기준 배수는 산출되지 않는다. 다음에 확인할 지점은 2026년 연간 영업손익의 방향과 2026년 사업보고서의 현금흐름 구조다.",
+   "en": "CTK's revenue reached KRW 89.2 billion in 2025, but continued operating and net losses mean its earnings base has not yet recovered. Third-quarter 2026 revenue fell 21.2% year on year, and an operating profit in the second quarter reverted to an operating loss in the third. Net loss attributable to controlling shareholders did shrink from KRW 4.59 billion in the third quarter of 2025 to KRW 1.9 billion in the third quarter of 2026, so the quarterly narrowing is visible. Bullish points include the restructuring and consolidation effects, the global customer base and the low capital needs of a turnkey model. Bearish points include two straight loss years, negative operating cash flow, a debt-to-equity ratio that rose to 75.5% and concentration in North America. The price-to-book multiple sits well below 1x, while no earnings multiple can be calculated. The next points to verify are the direction of full-year 2026 operating results and the cash flow structure in the 2026 annual report."
   }
  },
  "sources": [
-  "https://bbn.kiwoom.com/rfCR11442",
-  "https://m.thinkpool.com/compDiscuss/cont/1019475",
-  "https://m.irgo.co.kr/IR-COMP/260930/%EC%94%A8%ED%8B%B0%EC%BC%80%EC%9D%B4-IR-PAGE",
-  "https://thevc.kr/ctk",
-  "https://m.thinkpool.com/item/260930",
+  "https://ssl.pstatic.net/imgstock/upload/research/company/1687480492297.pdf",
+  "https://www.vegannews.co.kr/news/article.html?no=404250",
   "https://kr.acrofan.com/detail.php?number=423532",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A260930",
-  "https://m.thinkpool.com/compDiscuss/cont/1021800",
-  "https://m.saramin.co.kr/job-search/company-info-view?csn=dkJlM3lINWQzT2Jzc2UvdkRqNlNRQT09",
-  "https://www.catch.co.kr/Comp/CompInfo/182081",
-  "https://www.jobkorea.co.kr/Recruit/Co_Read/C/ctk1071/Company_name/%E3%88%9C%EC%94%A8%ED%8B%B0%EC%BC%80%EC%9D%B4%EC%BD%94%EC%8A%A4%EB%A9%94%ED%8B%B1%EC%8A%A4",
-  "https://www.catch.co.kr/Comp/CompSummary/182081",
-  "https://www.beautynury.com/news/view/107572/cat/20",
-  "https://www.mediafine.co.kr/news/articleView.html?idxno=86721",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20250814003396&docno=&viewerhost=",
-  "https://kind.krx.co.kr/corpgeneral/irschedule.do?method=searchIRScheduleMain&gubun=iRSchedule",
-  "https://www.cosmorning.com/news/article.html?no=53453",
-  "https://ir.cititrends.com/news-releases/news-release-details/cititrends-announces-second-quarter-fiscal-2026-results"
+  "https://ssl.pstatic.net/imgstock/upload/research/company/1708903491812.pdf",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A260930&MenuYn=Y",
+  "https://comp.fnguide.com/SVO2/asp/SVD_FinanceRatio.asp?pGB=1&gicode=A260930&MenuYn=Y&ReportGB=B&NewMenuID=104&stkGb=701",
+  "https://m.thinkpool.com/compDiscuss/cont/1019475",
+  "http://asp01.fnguide.com/SVO2/asp/SVD_Corp.asp?pGB=1&gicode=A260930&cID=&MenuYn=Y&ReportGB=&NewMenuID=102&stkGb=701",
+  "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=714314",
+  "https://www.vegannews.co.kr/news/article.html?no=398430",
+  "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=710953",
+  "https://www.tradingkey.com/kr/news/transcripts/262214939-tradingkey",
+  "https://kr.investing.com/news/transcripts/article-93CH-2125608",
+  "https://www.tradingkey.com/kr/news/presentation/262215102-tradingkey",
+  "https://kr.investing.com/news/transcripts/article-93CH-2167723",
+  "https://kr.investing.com/news/transcripts/article-93CH-2180621",
+  "http://www.dailyinvest.kr/news/articleView.html?idxno=69482"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "260930",
  "name": "씨티케이",
  "name_en": "CTK Co., Ltd",
@@ -223,11 +212,11 @@
   "화장품"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 09:10",
- "dataDate": "20260904",
+ "reportDate": "2026-11-18",
+ "reportTs": "2026-11-18 11:41",
+ "dataDate": "20261117",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-11-18",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -297,12 +286,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 22470338179,
-    "op": 230669951,
-    "np_owner": 1251546933
-   },
-   {
     "q": "2025Q3",
     "rev": 31132549504,
     "op": -4057439015,
@@ -325,28 +308,39 @@
     "rev": 28962952611,
     "op": 469164089,
     "np_owner": -1977786795
+   },
+   {
+    "q": "2026Q3",
+    "rev": 24528977543,
+    "op": -2853570119,
+    "np_owner": -1897228145
    }
   ],
   "valuation": {
-   "price": 2460,
-   "mcap": 0.0476,
+   "price": 1740,
+   "mcap": 0.0337,
    "shares": 19341591,
    "total_shares": 19341591,
-   "wavg_shares": 18848809,
+   "wavg_shares": 18833794,
    "per": null,
-   "eps": -748,
-   "pbr": 0.3189,
-   "bps": 7713,
-   "roe_ttm": -9.7,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": -14469738386,
+   "eps": -609,
+   "pbr": 0.2366,
+   "bps": 7353,
+   "roe_ttm": -8.1,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": -11776115248,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 0.32,
+   "eps_src": "순이익÷주식수",
+   "pbr_krx": 0.22,
    "bps_krx": 7851.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 100.0,
-   "div": 4.07
+   "div": 5.75,
+   "hidden": {
+    "per": "loss"
+   }
   }
- }
+ },
+ "textRules": 3
 }
