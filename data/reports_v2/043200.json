@@ -1,220 +1,217 @@
 {
  "title": {
-  "ko": "적자·흑자 반복 속 영농형 태양광 확장",
-  "en": "Paru: Swinging Between Profit and Loss Amid Agrivoltaic Push"
+  "ko": "파루, 연간 적자 속 분기 손익 엇갈려",
+  "en": "Paru: Quarterly Results Mixed Amid Annual Losses"
  },
  "lead": {
-  "ko": "파루는 태양광 추적장치를 주력으로 하는 코스닥 상장사로, 2025년 연간 실적은 매출 감소와 영업손실 전환을 기록했으나 2026년 1분기 한때 흑자로 돌아섰다가 2분기 다시 소폭 순손실로 전환되는 등 분기별 변동성이 이어지고 있다.",
-  "en": "Paru is a KOSDAQ-listed company centered on solar tracking systems, and while its full-year 2025 results showed a revenue decline and a swing to an operating loss, the company briefly turned profitable in the first quarter of 2026 before slipping back into a net loss in the second quarter, underscoring continued quarter-to-quarter volatility."
+  "ko": "파루는 2025년 영업손실 27.3억원으로 적자 전환한 뒤 2026년 1·2분기에 영업이익을 냈으나, 3분기에는 영업손실 3.1억원으로 다시 적자 전환해 수익 구조의 안정 여부가 아직 확인되지 않은 상태다.",
+  "en": "Paru swung to an operating loss of KRW 2.73 billion in 2025, posted operating profits in the first two quarters of 2026, and then returned to an operating loss of KRW 310 million in the third quarter, so the stability of its earnings is not yet proven."
  },
  "keypoints": [
   {
-   "ko": "2025년 매출은 288억원으로 전년 대비 28.2% 감소했고 영업이익은 영업손실 27.3억원으로 적자 전환했다.",
-   "en": "2025 revenue fell 28.2% year on year to KRW28.8 billion, and operating profit swung to an operating loss of KRW2.73 billion."
+   "ko": "매출은 2023년 422억원을 정점으로 2024년 401억원, 2025년 288억원으로 2년 연속 감소했다.",
+   "en": "Revenue peaked at KRW 42.2 billion in 2023 and then declined for two consecutive years to KRW 40.1 billion in 2024 and KRW 28.8 billion in 2025."
   },
   {
-   "ko": "2026년 1분기 영업이익은 1.6억원으로 흑자 전환했으나 2분기에는 영업이익이 전 분기 대비 34.8% 줄어든 1.1억원에 그쳤고 지배주주 순이익은 다시 적자로 돌아섰다.",
-   "en": "Operating profit turned positive at KRW163 million in Q1 2026, but it fell 34.8% quarter on quarter to KRW106 million in Q2 2026, and net profit attributable to owners swung back to a loss."
+   "ko": "연간 영업이익은 2024년 흑자 한 해(2.1억원)를 제외하면 2022년부터 2025년까지 적자였고, 2025년 영업손실은 27.3억원이다.",
+   "en": "Annual operating results were negative in 2022, 2023 and 2025, with 2024 the only year of operating profit at KRW 212 million."
   },
   {
-   "ko": "주력 사업은 태양광 추적장치이며 최근에는 영농형 태양광과 AI 기반 농업·에너지 통합 솔루션으로 사업 영역을 넓히고 있다.",
-   "en": "The core business is solar tracking systems, and the company has recently been expanding into agrivoltaics and AI-based integrated agriculture-energy solutions."
+   "ko": "2026년 1분기 영업이익 1.6억원과 2분기 영업이익 1.1억원 이후 3분기에는 영업손실 3.1억원으로 다시 적자 전환했다.",
+   "en": "After operating profits of KRW 163 million in the first quarter and KRW 106 million in the second quarter of 2026, the third quarter returned to an operating loss of KRW 310 million."
   },
   {
-   "ko": "최대주주인 지본은 2026년 10월 14일 기준 지분을 24.00%까지 늘렸고, 같은 해 8월에는 5억원 규모의 자사주 매수 계획을 공시했다.",
-   "en": "Largest shareholder Jibon raised its stake to 24.00% as of October 14, 2026, and in August 2026 it disclosed a plan to purchase about KRW500 million worth of shares."
+   "ko": "2025년 말 기준 부채비율은 134.6%이고, 자본총계는 239억원, 부채총계는 322억원이다.",
+   "en": "As of the end of 2025, the debt ratio was 134.6%, with total equity of KRW 23.9 billion and total liabilities of KRW 32.2 billion."
   },
   {
-   "ko": "2025년 말 부채비율은 134.6%로 2024년(112.2%) 대비 높아졌고, 영업활동 현금흐름은 2025년 -27.5억원으로 다시 마이너스를 기록했다.",
-   "en": "The debt-to-equity ratio rose to 134.6% at end-2025 from 112.2% in 2024, and operating cash flow turned negative again at -KRW2.75 billion in 2025."
+   "ko": "2대 1 주식병합을 마친 뒤 최대주주 지본이 5억원 규모 주식 매수 계획을 2026년 8월 25일 공시했고, 같은 시기에 ESS용 단열제품의 첫 수주도 밝혔다.",
+   "en": "After completing a 2-for-1 share consolidation, the largest shareholder disclosed a plan to buy KRW 500 million of Paru shares on August 25, 2026, and the company reported its first ESS insulation product order around the same time."
   }
  ],
  "business": {
-  "ko": "파루는 1993년 설립되어 2000년 코스닥에 상장한 전라남도 순천 소재 신재생에너지 기업으로, 태양광 발전 구조물과 추적식 시스템이 매출의 핵심을 이룬다. 양축추적식·단축추적식·고정가변식 구조물을 자체 설계·생산하며, 풍하중·적설하중·지진하중을 고려한 구조 해석 기술과 조달우수제품 인증을 보유하고 있다. 위생환경사업 부문에서는 소독기, 자동릴 등의 제품도 생산해 태양광 외 매출원을 보유하고 있다. 연결대상 종속회사로는 태양광 발전사업을 하는 태인태양광발전소를 100% 지분으로 보유하고, 그 하위에 필름히터를 생산하는 에이아이타임스를 두고 있다. 과거 미국 텍사스 알라모 지역에 대규모 양축추적식 시스템을 공급하면서 추적식 태양광 분야의 해외 레퍼런스를 쌓은 바 있다. 최근에는 영농형 태양광 분야로 사업을 확장해 전남 영광에 1MW급 단축추적식 설비를 공급했고, 전남 영암에는 400kW 규모의 실증단지를 직접 구축·운영하고 있다. 2026년 8월에는 에이케이아이에스, 휴인텍과 컨소시엄을 구성해 AI 기반 작물·발전 통합 관제, 노지 스마트팜 IoT 패키지 등 농업·에너지 통합 솔루션 개발에 착수했으며, 총사업비는 약 28억 5,700만원이고 이 중 국비가 20억원 투입된다. 경쟁 구도상 국내 태양광 구조물·추적장치 시장은 다수의 중소업체가 경쟁하는 구조여서 단가 경쟁 압력이 상존하는 편이다.",
-  "en": "Founded in 1993 and listed on KOSDAQ in 2000, Paru is a renewable-energy company headquartered in Suncheon, South Jeolla Province, with solar power structures and tracking systems forming the core of its revenue. The company designs and manufactures dual-axis, single-axis, and fixed-tilt structures in-house, supported by structural analysis technology accounting for wind, snow, and seismic loads and by public-procurement excellent-product certification. Its hygiene and environment segment also produces disinfection equipment and automatic reels, giving it a revenue source outside solar. Among its consolidated subsidiaries, Paru wholly owns Taein Solar Power Plant, which operates solar generation assets, and beneath that sits AI Times, which manufactures film heaters. Paru previously built an overseas track record in tracking systems by supplying a large-scale dual-axis system in the Alamo area of Texas. More recently it has expanded into agrivoltaics, having supplied a 1MW single-axis tracking system in Yeonggwang, South Jeolla, and built and operated a 400kW demonstration site in Yeongam. In August 2026 the company formed a consortium with AKIS and Huintech to develop an AI-based integrated agriculture-energy solution covering crop-and-generation control and open-field smart-farm IoT packages, with total project cost of about KRW2.857 billion, of which KRW2 billion is government funding. Competitively, the domestic solar structure and tracker market involves numerous small and mid-sized players, keeping pricing pressure a persistent feature of the business."
+  "ko": "파루는 2000년 코스닥에 상장한 태양광 발전용 구조물 및 추적식 시스템 전문 기업이다. 주요 제품은 고정식 구조물과 단축·양축 추적식 시스템이며, 주요 매출은 태양광 사업 부문에서 발생한다. 미국 텍사스주 알라모 프로젝트에 약 400MW 규모의 추적식 시스템을 공급한 실적을 갖고 있어 대형 유틸리티급 프로젝트의 시공 역량을 보여 준다. 제품은 세계 40여 국가에 수출되고 있으며, 회사는 직접 사업을 발굴하는 EPC형 영업을 중심으로 대리점과 판매처를 넓혀 가고 있다. 해외 영업은 인도, 중동, 호주, 아프리카 시장의 대규모 유틸리티 프로젝트 개발에 초점을 두고 있다. 연결 기준으로 2개의 비상장 종속회사를 보유하고 있다. 최근에는 영농형 태양광처럼 농업과 에너지 생산을 연계하는 사업 기회를 넓히고 있다. 2026년 8월에는 국내 배터리 기업의 미주향 ESS 프로젝트에 적용되는 열폭주차단패드(TPSTOP) 단열제품을 첫 수주했다고 밝혔고, 2026년 10월부터 양산 공급을 시작한다고 밝혔다. 과거에는 소독기 등 위생 제품으로 사업을 다변화한 이력도 있다. 추적식 구조물 시장의 수주 경쟁은 가격 경쟁력과 대형 프로젝트 시공 실적에 좌우되는 구도다.",
+  "en": "Paru is a KOSDAQ-listed company, listed in 2000, specializing in solar power structures and tracking systems. Its main products are fixed-tilt structures and single-axis and dual-axis tracking systems, and most of its sales come from the solar business segment. It has supplied roughly 400MW of tracking systems to the Alamo project in Texas, USA, which demonstrates its capability in large utility-scale projects. Its products are exported to more than 40 countries, and the company is expanding its dealer and distribution network around EPC-type sales in which it develops projects directly. Overseas sales focus on large utility projects in India, the Middle East, Australia and Africa. On a consolidated basis, the company holds two unlisted subsidiaries. Recently it has widened opportunities linking agriculture and energy production, such as agrivoltaic solar. In August 2026 it reported a first order for thermal runaway barrier pads (TPSTOP) applied to an ESS project in the Americas for a domestic battery maker, and it said mass supply would start in October 2026. The company also diversified into hygiene products such as disinfection equipment in the past. Competition for tracking structure orders depends on price competitiveness and track record in large projects."
  },
  "earnings": {
-  "ko": "연간 매출은 2022년 405억원에서 2023년 422억원으로 늘며 정점을 찍은 뒤, 2024년 401억원, 2025년 288억원으로 2년 연속 감소했다. 영업손익은 2022년 영업손실 23.3억원, 2023년 영업손실 19.2억원으로 적자가 이어지다 2024년 영업이익 2.1억원으로 흑자 전환했으나, 2025년에는 영업손실 27.3억원으로 다시 적자 전환했다. 회사는 2025년 실적 변동 사유로 수주량 감소 및 단가 하락에 따른 매출 감소, 원자재값 상승에 따른 이익 감소를 공시했다. 지배주주 순이익은 2022년부터 2025년까지 4년 연속 순손실을 기록했으며, 손실 규모는 2022년 46.3억원에서 2023년 10억원, 2024년 8.1억원으로 축소됐다가 2025년 41.1억원으로 다시 확대됐다. 비지배지분을 포함한 당기순손실도 2025년 41.3억원으로 지배주주 순손실과 유사한 수준을 기록했다. 분기 기준으로는 매출이 2025년 4분기 79.7억원까지 늘었다가 2026년 1분기 69.1억원, 2분기 62.1억원으로 2개 분기 연속 감소했는데, 2026년 2분기 매출은 전년 동기 대비로는 3.5% 증가한 수준이다. 영업이익은 2025년 2분기부터 4분기까지 적자가 이어지다 2026년 1분기 1.6억원으로 흑자 전환했고, 2분기에는 1.1억원으로 전 분기 대비 34.8% 줄었지만 전년 동기 대비로는 흑자 전환에 해당한다. 지배주주 순이익은 2026년 1분기 6,642만원으로 흑자 전환했으나 2분기에는 1.4억원의 순손실로 다시 전환됐으며, 최근 4개 분기(2025년 3분기~2026년 2분기) 합산 지배주주 순손실은 11억원으로 집계된다. 영업활동 현금흐름은 2024년 19.7억원으로 플러스를 기록했다가 2025년 -27.5억원으로 재차 마이너스로 돌아서, 손익 변동성이 현금흐름에도 그대로 반영되는 모습이다.",
-  "en": "Annual revenue rose from KRW40.5 billion in 2022 to a peak of KRW42.2 billion in 2023, then declined for two consecutive years to KRW40.1 billion in 2024 and KRW28.8 billion in 2025. Operating profit stayed in loss at KRW2.33 billion in 2022 and KRW1.92 billion in 2023, turned positive at KRW212 million in 2024, and then swung back to an operating loss of KRW2.73 billion in 2025. The company's disclosure attributed the 2025 swing to lower order volumes and unit-price declines on the revenue side and to rising raw-material costs on the profit side. Net profit attributable to owners of the parent posted losses for four consecutive years from 2022 through 2025, with the loss narrowing from KRW4.63 billion in 2022 to KRW999 million in 2023 and KRW808 million in 2024, before widening again to KRW4.11 billion in 2025. Total net loss including non-controlling interests was KRW4.13 billion in 2025, a level close to the owners' net loss figure. On a quarterly basis, revenue rose to a peak of KRW7.97 billion in Q4 2025 before declining for two straight quarters to KRW6.91 billion in Q1 2026 and KRW6.21 billion in Q2 2026, though the Q2 2026 figure was still up 3.5% from the same quarter a year earlier. Operating profit remained in loss from Q2 through Q4 2025, turned positive at KRW163 million in Q1 2026, and came in at KRW106 million in Q2 2026, down 34.8% quarter on quarter but representing a swing to profit versus the year-earlier loss. Net profit attributable to owners turned positive at KRW66.42 million in Q1 2026 before swinging back to a net loss of KRW144 million in Q2 2026, and the cumulative net loss attributable to owners over the last four quarters (Q3 2025 through Q2 2026) totaled KRW1.1 billion. Operating cash flow turned positive at KRW1.97 billion in 2024 before reversing to -KRW2.75 billion in 2025, mirroring the volatility seen in reported earnings."
+  "ko": "파루의 연간 매출은 2022년 405억원에서 2023년 422억원(전년 대비 4.1% 증가)으로 정점을 기록한 뒤, 2024년 401억원(전년 대비 5.0% 감소), 2025년 288억원(전년 대비 28.2% 감소)으로 줄었다. 회사 측은 2025년 매출 감소 요인으로 수주량 감소와 단가 하락을 꼽았고, 이익 감소 요인으로 원자재값 상승을 제시했다. 영업이익은 2022년 영업손실 23.3억원, 2023년 영업손실 19.2억원(손실 축소)으로 이어졌고, 2024년 영업이익 2.1억원으로 흑자 전환한 뒤 2025년에는 영업손실 27.3억원으로 적자 전환했다. 영업이익률은 2022년 -5.8%, 2023년 -4.5%, 2024년 0.5%, 2025년 -9.5%로 나타났다. 2024년 흑자는 매출이 5.0% 줄어든 가운데 나온 결과였고, 2025년에는 매출 감소와 원재료 부담이 겹치며 영업이익률이 -9.5%까지 낮아졌다. 지배주주 순이익은 2022년 순손실 46.3억원, 2023년 순손실 10억원, 2024년 순손실 8.1억원, 2025년 순손실 41.1억원으로 네 해 모두 적자였다. 당기순이익(비지배지분 포함)은 2025년 당기순손실 41.3억원이다. 분기로 보면 2025년 3분기 영업손실 1.6억원과 4분기 영업손실 2.9억원을 거친 뒤, 2026년 1분기 영업이익 1.6억원으로 흑자 전환했고 2분기 영업이익은 1.1억원(전 분기 대비 34.8% 감소)이었다. 2026년 3분기 매출은 63.1억원으로 전 분기 대비 1.7% 늘었지만 전년 동기 대비 20.0% 감소했고, 영업손실은 3.1억원으로 적자 전환했다. 지배주주 순이익은 2026년 1분기 6,642만원 흑자 이후 2분기 순손실 1.4억원, 3분기 순손실 6.6억원으로 2개 분기 연속 적자다. 최근 4개 분기 지배주주 순손실 합계는 13.3억원이다. 부채비율은 2022년 129.0%, 2023년 133.4%, 2024년 112.2%, 2025년 134.6%로 2025년에 다시 높아졌고, 영업활동 현금흐름은 2024년 19.7억원 유입에서 2025년 -27.5억원으로 전환됐다.",
+  "en": "Annual revenue rose from KRW 40.5 billion in 2022 to KRW 42.2 billion in 2023, a 4.1% increase year on year, and then fell to KRW 40.1 billion in 2024, down 5.0%, and to KRW 28.8 billion in 2025, down 28.2%. The company attributed the 2025 revenue decline to lower order volume and lower unit prices, and the profit decline to higher raw material prices. Operating loss was KRW 2.33 billion in 2022 and KRW 1.92 billion in 2023, a narrower loss, before the company returned to operating profit of KRW 212 million in 2024 and swung back to an operating loss of KRW 2.73 billion in 2025. The operating profit margin was -5.8% in 2022, -4.5% in 2023, 0.5% in 2024 and -9.5% in 2025. The 2024 profit came as revenue fell 5.0%, while in 2025 falling sales and raw material pressure together pushed the margin down to -9.5%. Net loss attributable to controlling shareholders was KRW 4.63 billion in 2022, KRW 999 million in 2023, KRW 808 million in 2024 and KRW 4.11 billion in 2025, a loss in each of those four years. Net loss including non-controlling interests was KRW 4.13 billion in 2025. On a quarterly basis, after an operating loss of KRW 164 million in the third quarter of 2025 and KRW 288 million in the fourth quarter, the first quarter of 2026 returned to operating profit of KRW 163 million, and the second quarter recorded KRW 106 million, down 34.8% from the prior quarter. Revenue in the third quarter of 2026 was KRW 6.31 billion, up 1.7% from the prior quarter but down 20.0% year on year, and the company recorded an operating loss of KRW 310 million. Net income attributable to controlling shareholders was KRW 66.42 million in the first quarter of 2026, followed by a net loss of KRW 144 million in the second quarter and KRW 661 million in the third quarter, the second consecutive quarter of losses. The last four quarters combined show a net loss attributable to controlling shareholders of KRW 1.33 billion. The debt ratio was 129.0% in 2022, 133.4% in 2023, 112.2% in 2024 and 134.6% in 2025, rising again in 2025. Operating cash flow went from an inflow of KRW 1.97 billion in 2024 to an outflow of KRW 2.75 billion in 2025."
  },
  "industry": {
-  "ko": "국내 태양광 산업은 대규모 발전 중심 보급에서 영농형 태양광, 산업단지 및 건축물 지붕형, 주민참여형 등 분산형 모델 확대로 정책 방향이 이동하고 있다고 2026년 3월 주주총회 소집공고에 명시됐다. 농림축산식품부는 영농형 태양광의 일시사용허가 기간을 기존 8년에서 20년으로 확대하는 농지법 개정을 추진 중이며, 공익직불금 적용 확대와 가이드라인 마련도 함께 검토되고 있는 것으로 보도됐다. 파루솔라연구소가 2026년 4월 공개한 영암·완주 테스트베드의 38개월 누적 데이터에 따르면 추적식 설비가 고정식 대비 최대 31% 높은 발전 효율을 기록해 설치비 중심이던 선택 기준이 생산성 중심으로 이동할 가능성이 제기됐다. 다만 태양광 구조물·추적장치 시장은 다수의 중소업체가 참여하는 구조여서 단가 경쟁이 상존하며, 이는 2025년 파루의 매출 감소와 이익 축소의 직접적인 배경으로 지목됐다. 글로벌 태양광 공급망의 가격 하락 압력과 원자재 가격 변동성도 국내 중소형 태양광 부품업체 전반의 수익성에 영향을 미치는 변수로 꼽힌다. 경쟁사 대비 파루의 포지션은 추적식 설비의 발전 효율 데이터를 자체 연구소를 통해 축적해 온 점이 차별화 요소로 거론되나, 매출 규모 자체는 업종 내 중소형 사업자 수준에 머물러 있다.",
-  "en": "According to the company's March 2026 annual general meeting notice, Korean solar policy is shifting from large-scale centralized generation toward distributed models such as agrivoltaics, industrial-complex and building rooftop solar, and resident-participation solar. The Ministry of Agriculture, Food and Rural Affairs is reportedly pursuing an amendment to the Farmland Act that would extend the temporary land-use permit period for agrivoltaic facilities from eight to twenty years, alongside expanded public direct-payment eligibility and new operating guidelines. Thirty-eight months of cumulative test-bed data released by the Paru Solar Research Institute in April 2026 showed tracking systems achieving generation efficiency up to 31% higher than fixed systems in Yeongam and Wanju, suggesting the basis for selection could shift from upfront installation cost toward output. Even so, the solar structure and tracker market involves numerous small and mid-sized competitors, keeping unit-price competition persistent, a factor the company itself cited as a direct driver of its 2025 revenue and profit decline. Falling prices across the global solar supply chain and volatility in raw-material costs are additional variables affecting profitability across smaller domestic solar component makers broadly. Relative to peers, Paru's differentiation lies in efficiency data accumulated through its own research institute on tracking systems, though its overall revenue scale remains at the smaller end of the industry."
+  "ko": "2026년 국내에서 태양광 발전사업의 법적 기반이 마련되며 시장 확대의 근거가 생겼고, 회사는 이를 시장 확대 대응의 기회로 언급하고 있다. 회사는 관련 기술과 시공 경험을 바탕으로 시장 확대에 대응하겠다는 계획을 밝혔다. 글로벌 측면에서는 2026년 2월 5일 머스크 테슬라 최고경영자가 테슬라와 스페이스X의 태양광 연간 생산능력을 2028년까지 200GW로 늘리겠다는 목표를 언급했고, 이 보도 직후 파루는 장 초반 28%대 급등했다. 같은 보도에서 KB증권 전우제 연구원은 머스크가 과거에도 과도한 목표를 제시해 왔다는 점을 들어 달성 가능성에 의문을 제기했다. 생산능력 목표의 실현 여부는 발전소 건설 수요에 간접적으로 연결되는 변수다. 2026년 11월 17일 태양광 관련주는 혼조로 마감했고 파루도 하락 종목에 포함됐다. 업황은 재생에너지 정책과 대형 프로젝트 수주 전망에 따라 종목별로 차별화된 흐름을 보이고 있다. 태양광 업종 5개사 집계에서 파루의 2025년 영업이익률 -9.5%는 업종 평균(약 -16.8%)보다 손실률이 낮은 편이다. 수주 물량이 매출을 좌우하는 구조라 수주 흐름이 업황 판단의 핵심 지표가 된다.",
+  "en": "In 2026 Korea enacted a law establishing a legal basis for solar power generation projects, and the company has cited this as an opportunity to expand the market. The company said it plans to respond to market expansion based on its existing technology and construction experience. Globally, on February 5, 2026, Tesla's chief executive referred to a target of 200GW of annual solar production capacity for Tesla and SpaceX by 2028, and Paru's shares rose about 28% in early trading that day. In the same report, KB Securities researcher Jeon Woo-je questioned whether the target could be achieved, citing past overly ambitious targets. Whether production capacity targets are met is an indirect variable for power plant construction demand. On November 17, 2026, solar-related stocks closed mixed, and Paru was among the decliners. The industry is showing differentiated moves by stock, depending on renewable energy policy and expectations for large project orders. In a five-company solar sector comparison, Paru's 2025 operating margin of -9.5% was a smaller loss than the sector average of about -16.8%. Because order volume drives revenue, order flow is the key indicator for judging the industry cycle."
  },
  "outlook": {
-  "ko": "파루는 2026년 8월 에이케이아이에스, 휴인텍과 컨소시엄을 구성해 AI 정밀재배관리 기반 영농형 태양광 가변 차광 통합 솔루션 개발에 착수했으며, 협약일로부터 1년 안에 실제 시장 공급이 가능한 제품을 만드는 것을 목표로 한다고 밝혔다. 실증은 전남지역 파루 실증단지에서 양파와 마늘을 대상으로 파종부터 수확까지 진행되며, 작물 영상·토양 수분·기상·일사량·발전량 데이터를 수집해 패널 각도와 관수량이 생산성과 발전 효율에 미치는 영향을 검증할 계획이다. 회사는 이번 사업을 계기로 기존 발전설비 판매 중심에서 AI 관제 플랫폼 구독, 영농 데이터 서비스, 원격 유지관리 등을 결합한 사업구조로 확장하겠다는 구상을 밝혔다. 최대주주인 지본은 2026년 8월 책임경영과 주주가치 제고를 명분으로 5억원 규모의 자사주 매수 계획을 공시했고, 구체적인 매수 시기와 수량은 거래 가격과 시장 상황에 따라 결정된다고 밝혔다. 같은 해 10월에는 지본의 보유 지분이 24.00%로 늘어난 것으로 공시됐다. 회사는 2026년 8월 주가 안정화와 기업가치 제고를 위해 2대 1 비율의 주식병합을 시행해 액면가를 500원에서 1,000원으로, 발행주식 총수를 약 4,180만 주에서 약 2,090만 주로 줄였다. 2026년 3분기 실적은 아직 정기보고서로 공시되지 않았으며, 회사가 제시한 구체적인 연간 매출·이익 가이던스는 확인되지 않는다.",
-  "en": "In August 2026, Paru formed a consortium with AKIS and Huintech to begin developing an AI precision-cultivation-based agrivoltaic variable-shading integrated solution, stating a goal of bringing a market-ready product to supply within one year of the agreement date. The demonstration is being conducted at Paru's test site in South Jeolla Province on onions and garlic from planting through harvest, collecting crop imagery, soil moisture, weather, solar irradiance, and generation data to verify how panel angle and irrigation volume affect productivity and generation efficiency. The company said it intends to use this project as a springboard to expand beyond equipment sales into a business structure combining AI control-platform subscriptions, farming data services, and remote maintenance. In August 2026, largest shareholder Jibon disclosed a plan to purchase about KRW500 million worth of Paru shares for reasons described as responsible management and enhancing shareholder value, with the specific timing and quantity to be determined based on trading price and market conditions. By October 2026, Jibon's stake was reported to have risen to 24.00%. In August 2026 the company carried out a 2-for-1 share consolidation aimed at stabilizing the share price and enhancing corporate value, raising par value from KRW500 to KRW1,000 and reducing total shares outstanding from about 41.8 million to about 20.9 million. Third-quarter 2026 results have not yet been disclosed through a formal regulatory filing, and no specific annual revenue or profit guidance from the company could be confirmed."
+  "ko": "회사가 2026년 8월 공시한 ESS용 열폭주차단패드 수주는 2026년 10월부터 양산 공급이 시작된다고 밝힌 사업으로, 이 매출이 2026년 4분기와 2026년 연간 실적에 얼마나 반영되는지가 다음 확인 지점이다. 회사는 영농형 태양광 등 농업 연계 사업, 보유 기술의 고도화, 수익성 중심의 사업 운영을 중장기 성장 기반으로 제시했다. 2026년 1분기와 2분기에는 영업이익을 냈지만 3분기에 영업손실 3.1억원으로 돌아섰으므로, 분기 영업이익률이 흑자 구간을 유지하는지가 다음 분기 실적에서 확인할 사실이다. 최대주주 지본은 총 5억원 규모의 파루 주식을 매수할 계획이라고 밝혔고, 매수 시기와 수량은 거래 가격과 시장 상황에 따라 정해진다. 2026년 2대 1 주식병합으로 발행주식 총수는 2,090만 2,157주로 줄었고, 신주가 8월 27일 상장되며 매매가 재개됐다. 2026년 태양광 발전사업 법률의 제정으로 시장 기반이 마련됐다는 점은 중장기 수요 측면의 변수다. 다음 정기보고서는 2026년 사업보고서이며, 법정 제출 기한은 2027년 3월 31일이다. 회사가 제시한 정량적 분기 목표는 확인되지 않은 상태다.",
+  "en": "The ESS thermal runaway barrier pad order that the company disclosed in August 2026 is a business for which it said mass supply starts in October 2026, so how much of this revenue appears in the fourth quarter and full-year 2026 results is the next checkpoint. The company presented agrivoltaic and other agriculture-linked businesses, upgrading its existing technology and profitability-focused operations as the base for medium- to long-term growth. Operating profit was recorded in the first and second quarters of 2026, but the third quarter returned to an operating loss of KRW 310 million, so whether the quarterly operating margin holds in positive territory is a fact to be confirmed in upcoming quarterly results. The largest shareholder said it plans to buy shares worth a total of KRW 500 million, with timing and quantity to be determined by trading prices and market conditions. The 2-for-1 share consolidation reduced total issued shares to 20,902,157, and the new shares were listed on August 27, 2026, when trading resumed. The enactment of a 2026 solar power generation law has created a market foundation, which is a medium- to long-term demand variable. The next periodic report is the 2026 annual report, with a statutory filing deadline of March 31, 2027."
  },
  "valuation_comment": {
-  "ko": "파루는 최근 4개 분기(2025년 3분기~2026년 2분기) 합산 기준 지배주주 순손실을 기록하고 있어 이익 기준 밸류에이션 지표는 현재 산출되지 않는 구간에 있다. 주가순자산비율은 순자산과 비슷한 수준에서 거래되는 구간에 있어, 과거 적자가 누적된 기업들이 종종 보이는 순자산 대비 큰 폭의 할인이나 프리미엄과는 다른 양상을 보인다. 배당은 2022년부터 2025년까지 순손실이 반복된 영향으로 지급되지 않고 있으며, 이는 동일 업종 내 배당을 지급하는 대형 발전·에너지 기업들과 대비되는 지점이다. 2024년 한 해 영업이익과 영업활동 현금흐름이 동시에 플러스로 전환됐던 사례가 있었던 만큼, 향후 분기 실적에서 유사한 흑자 전환이 재현되는지가 이익 기준 지표의 정상화 여부를 가늠하는 참고점이 될 수 있다. 부채비율이 2025년 말 134.6%로 2024년 대비 높아진 점은 자본 대비 부채 부담이 다시 커졌음을 보여주는 재무 구조상의 특징이다.",
-  "en": "With a net loss attributable to owners over the trailing four quarters (Q3 2025 through Q2 2026), earnings-based valuation metrics currently sit in a range where they are not meaningfully computable for Paru. Its price-to-book ratio trades in a range close to net asset value, a pattern distinct from the large discounts or premiums to book value sometimes seen at companies with longer histories of accumulated losses. The company has not paid dividends amid recurring net losses from 2022 through 2025, a contrast with larger dividend-paying utilities and energy companies in the same industry group. Because operating profit and operating cash flow both turned positive simultaneously in 2024, whether a similar swing to profit recurs in coming quarters could serve as a reference point for whether earnings-based metrics normalize. The debt-to-equity ratio rising to 134.6% at end-2025 from the prior year is a balance-sheet feature indicating that leverage relative to equity has increased again."
+  "ko": "주가는 장부상 주당순자산을 밑도는 구간에서 형성되어 있으며, 순자산 대비 할인 수준이라는 사실이 밸류에이션 해석의 출발점이다. 다만 최근 4개 분기 지배주주 순손실 합계가 13.3억원이라 손익 기준의 배수는 산출되지 않는다. 연간으로는 2022년부터 2025년까지 지배주주 순손실이 이어졌고 2024년 한 해만 영업 흑자였으므로, 이익 기반의 비교 기간이 짧다. 현금 배당 수익률은 사실상 없는 수준이며, 2026년에는 주식병합과 최대주주의 주식 매수 계획이 주주 가치 관련 주요 사안이었다. 순자산 대비 주가 수준은 영업이익률이 흑자 구간에 머무는지에 따라 해석의 폭이 달라진다. 부채비율이 2025년 말 134.6%로 자본총계를 웃도는 구조라 재무 레버리지도 함께 봐야 하는 항목이다. 같은 업종 집계에서 파루의 2025년 영업이익률은 업종 평균보다 손실이 작은 편이다.",
+  "en": "The share price is trading below book value per share, meaning it sits at a discount to net asset value, and that fact is the starting point for interpreting valuation. However, the net loss attributable to controlling shareholders over the last four quarters totals KRW 1.33 billion, so no earnings-based multiple is calculated. On an annual basis, net losses attributable to controlling shareholders continued from 2022 to 2025, with 2024 the only year of operating profit, so the earnings-based comparison period is short. The cash dividend yield is effectively negligible, and in 2026 the share consolidation and the largest shareholder's share purchase plan were the main shareholder-related matters. The price relative to net assets is interpreted differently depending on whether the operating margin stays in profit territory. Because the debt ratio was 134.6% at the end of 2025 and total liabilities exceed total equity, financial leverage should also be considered. In the same industry comparison, Paru's 2025 operating margin shows a smaller loss than the sector average."
  },
  "bull": [
   {
    "title": {
-    "ko": "분기 영업이익 흑자 전환 재현 가능성",
-    "en": "Potential Repeat of Quarterly Operating-Profit Turnaround"
+    "ko": "해외 대형 프로젝트 공급 이력",
+    "en": "Track record in large overseas projects"
    },
    "body": {
-    "ko": "2026년 1분기 영업이익이 1.6억원으로 흑자 전환했고, 2분기에도 전년 동기 대비로는 흑자 전환에 해당하는 1.1억원을 기록했다. 2024년에도 연간 기준 영업이익과 영업활동 현금흐름이 동시에 플러스로 전환된 바 있어, 매출 규모가 일정 수준을 넘어설 경우 손익분기점을 넘는 구조가 재현될 여지가 있다. 2026년 2분기 매출은 전년 동기 대비 3.5% 증가해 매출 감소세가 일부 진정되는 모습도 함께 관찰된다.",
-    "en": "Operating profit turned positive at KRW163 million in Q1 2026, and Q2 2026's KRW106 million also represented a swing to profit versus the year-earlier quarter. Operating profit and operating cash flow turned positive together on an annual basis back in 2024, suggesting the breakeven structure could recur once revenue scale clears a certain threshold. Q2 2026 revenue also rose 3.5% year on year, pointing to some stabilization in the revenue decline."
+    "ko": "미국 알라모 프로젝트에 약 400MW 규모의 추적식 시스템을 공급한 실적이 있으며, 세계 40여 국가에 제품을 수출하고 있다. 인도, 중동, 호주, 아프리카 시장에서 대규모 유틸리티 프로젝트를 개발하기 위한 영업을 진행하고 있다. 이 같은 공급 이력은 대형 프로젝트의 시공 역량을 보여 주는 사실이다.",
+    "en": "The company has supplied roughly 400MW of tracking systems to the Alamo project in the USA and exports its products to more than 40 countries. It is pursuing sales for large utility projects in India, the Middle East, Australia and Africa. This supply record shows its construction capability for large projects."
    }
   },
   {
    "title": {
-    "ko": "영농형 태양광과 AI 융합 솔루션으로 사업 확장",
-    "en": "Business Expansion into Agrivoltaics and AI-Integrated Solutions"
+    "ko": "분기 영업이익 흑자 구간",
+    "en": "Quarterly operating profit periods"
    },
    "body": {
-    "ko": "농림축산식품부가 영농형 태양광의 일시사용허가 기간을 8년에서 20년으로 확대하는 농지법 개정을 추진 중인 것으로 보도되어 정책적 뒷받침 가능성이 있다. 파루솔라연구소의 38개월 누적 실증 데이터에서 추적식 설비가 고정식 대비 최대 31% 높은 발전 효율을 기록해 기술적 차별화 근거를 축적했다. 2026년 8월 착수한 AI 기반 농업·에너지 통합 솔루션 개발은 1년 내 상용화를 목표로 하고 있어, 기존 발전설비 판매를 넘어선 구독·데이터 서비스형 매출원으로 확장될 가능성이 제시됐다.",
-    "en": "The Ministry of Agriculture, Food and Rural Affairs is reportedly pursuing a Farmland Act amendment to extend the agrivoltaic temporary land-use permit period from eight to twenty years, a potential policy tailwind. The Paru Solar Research Institute's 38-month cumulative demonstration data showed tracking systems achieving generation efficiency up to 31% higher than fixed systems, building a technical differentiation case. The AI-based agriculture-energy integrated solution project launched in August 2026 targets commercialization within one year, with the stated potential to expand beyond equipment sales into subscription- and data-service-based revenue."
+    "ko": "2026년 1분기 영업이익은 1.6억원으로 직전 분기 영업손실 2.9억원에서 흑자로 돌아섰고, 2분기에도 영업이익 1.1억원을 기록했다. 두 분기 영업이익을 합치면 2026년 상반기는 흑자 상태다. 적자 구간에서 벗어난 분기가 있었다는 점은 손익 구조 개선의 사실로 볼 수 있다.",
+    "en": "Operating profit was KRW 163 million in the first quarter of 2026, a turnaround from an operating loss of KRW 288 million in the prior quarter, and KRW 106 million in the second quarter. Combined, the first half of 2026 was in operating profit. The fact that quarters moved out of loss territory is evidence of an improvement in the profit structure."
    }
   },
   {
    "title": {
-    "ko": "최대주주의 지분 확대와 자사주 매수 계획",
-    "en": "Largest Shareholder's Stake Increase and Buyback Plan"
+    "ko": "ESS 단열제품과 최대주주 매수 계획",
+    "en": "ESS insulation products and largest shareholder purchase plan"
    },
    "body": {
-    "ko": "최대주주 지본은 2026년 10월 14일 기준 보유 지분을 24.00%까지 늘린 것으로 공시됐다. 같은 해 8월에는 책임경영과 주주가치 제고를 명분으로 5억원 규모의 자사주 매수 계획을 밝혔다. 이와 함께 회사는 주가 안정화를 목적으로 2대 1 주식병합을 시행해 주당 가액 체계를 변경했다.",
-    "en": "Largest shareholder Jibon was disclosed to have raised its stake to 24.00% as of October 14, 2026. In August of the same year it announced a plan to purchase about KRW500 million worth of shares, citing responsible management and shareholder value. The company also carried out a 2-for-1 share consolidation aimed at stabilizing the share price, changing its par-value structure."
+    "ko": "2026년 8월 25일 국내 배터리 기업의 미주향 ESS 프로젝트에 적용되는 열폭주차단패드를 첫 수주했다고 밝혔다. 같은 날 최대주주 지본은 총 5억원 규모의 파루 주식을 매수할 계획을 공시했다. 보도에 따르면 이 결정은 중장기 성장 가능성에 대한 신뢰를 나타내는 것으로 알려졌다.",
+    "en": "On August 25, 2026, the company said it received its first order for thermal runaway barrier pads applied to an ESS project in the Americas for a domestic battery maker. On the same day the largest shareholder disclosed a plan to buy shares worth KRW 500 million in total. According to press reports, the decision was made to signal confidence in medium- to long-term growth potential."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "2025년 연간 실적 악화와 적자 전환",
-    "en": "2025 Annual Earnings Deterioration and Swing to Loss"
+    "ko": "2025년 매출과 이익의 동반 하락",
+    "en": "Revenue and profit fell together in 2025"
    },
    "body": {
-    "ko": "2025년 매출은 288억원으로 전년 대비 28.2% 감소했고, 영업이익은 27.3억원의 영업손실로 적자 전환했다. 회사는 수주량 감소와 단가 하락에 따른 매출 감소, 원자재값 상승에 따른 이익 감소를 변동 사유로 공시했다. 지배주주 순손실도 2024년 8.1억원에서 2025년 41.1억원으로 확대돼 손실 폭이 커졌다.",
-    "en": "2025 revenue fell 28.2% year on year to KRW28.8 billion, and operating profit swung to an operating loss of KRW2.73 billion. The company disclosed lower order volumes and unit-price declines as drivers of the revenue decrease, and rising raw-material costs as a driver of the profit decrease. Net loss attributable to owners also widened to KRW4.11 billion in 2025 from KRW808 million in 2024."
+    "ko": "2025년 매출은 288억원으로 전년 대비 28.2% 감소했고, 영업손실 27.3억원으로 적자 전환했다. 회사 측은 수주량 감소와 단가 하락을 매출 감소 원인으로, 원자재값 상승을 이익 감소 원인으로 제시했다. 2025년 영업활동 현금흐름도 -27.5억원으로 적자였다.",
+    "en": "Revenue fell 28.2% year on year to KRW 28.8 billion in 2025, and the company swung to an operating loss of KRW 2.73 billion. The company cited lower order volume and lower unit prices as causes of the revenue decline, and higher raw material prices as the cause of lower profit. Operating cash flow was also negative at KRW 2.75 billion in 2025."
    }
   },
   {
    "title": {
-    "ko": "2026년 들어 재발한 분기 변동성",
-    "en": "Renewed Quarterly Volatility in 2026"
+    "ko": "2026년 3분기 적자 재진입",
+    "en": "Return to losses in the third quarter of 2026"
    },
    "body": {
-    "ko": "매출은 2025년 4분기 79.7억원을 정점으로 2026년 1분기와 2분기 2개 분기 연속 감소해 2분기에는 62.1억원을 기록했다. 지배주주 순이익은 2026년 1분기 6,642만원의 흑자를 냈으나 2분기에 1.4억원의 순손실로 다시 전환됐다. 최근 4개 분기 합산 지배주주 순손실은 11억원으로, 분기별 흑자와 적자가 반복되는 패턴이 이어지고 있다.",
-    "en": "Revenue peaked at KRW7.97 billion in Q4 2025 before declining for two straight quarters to KRW6.21 billion in Q2 2026. Net profit attributable to owners posted a KRW66.42 million gain in Q1 2026 before swinging back to a KRW144 million net loss in Q2 2026. The cumulative net loss attributable to owners over the trailing four quarters totaled KRW1.1 billion, reflecting a recurring pattern of alternating quarterly profit and loss."
+    "ko": "2026년 3분기 매출은 63.1억원으로 전년 동기 대비 20.0% 감소했다. 영업손실은 3.1억원, 지배주주 순손실은 6.6억원으로 손실 폭이 커졌다. 지배주주 순손실은 2분기에 이어 3분기에도 나타나 2개 분기 연속 적자가 이어지고 있다.",
+    "en": "Revenue in the third quarter of 2026 was KRW 6.31 billion, down 20.0% year on year. The operating loss was KRW 310 million, and the net loss attributable to controlling shareholders widened to KRW 661 million. The net loss attributable to controlling shareholders continued from the second quarter into the third, making two consecutive quarters of losses."
    }
   },
   {
    "title": {
-    "ko": "재무 부담과 수급 변동성",
-    "en": "Balance-Sheet Strain and Trading Volatility"
+    "ko": "재무 부담과 주가 변동성",
+    "en": "Financial burden and share price volatility"
    },
    "body": {
-    "ko": "2025년 말 부채비율은 134.6%로 2024년 112.2% 대비 높아졌고, 영업활동 현금흐름도 2025년 -27.5억원으로 다시 마이너스로 돌아섰다. 2026년 6월에는 단일 계좌의 대규모 순매도와 주가 급락으로 투자주의종목으로 지정된 바 있다. 지분 집중도가 높은 최대주주 중심의 지배구조 아래 유상증자·주식병합 등 자본 변동 이력이 반복돼 왔다.",
-    "en": "The debt-to-equity ratio rose to 134.6% at end-2025 from 112.2% in 2024, and operating cash flow turned negative again at -KRW2.75 billion in 2025. In June 2026 the stock was designated a caution issue after large net selling from a single account coincided with a sharp price decline. Under a governance structure centered on a concentrated largest shareholder, the company has a repeated history of capital-structure changes including rights offerings and a share consolidation."
+    "ko": "2025년 말 부채총계는 322억원으로 자본총계 239억원을 웃돌아 부채비율이 134.6%다. 부채비율은 2024년 112.2%에서 2025년에 다시 높아졌다. 태양광 관련주는 2026년 11월 17일 혼조로 마감했고 파루도 하락 종목에 포함되는 등 주가 변동성이 큰 편이다.",
+    "en": "Total liabilities at the end of 2025 were KRW 32.2 billion, above total equity of KRW 23.9 billion, leaving the debt ratio at 134.6%. The debt ratio rose again in 2025 from 112.2% in 2024. Solar-related stocks closed mixed on November 17, 2026, with Paru among the decliners, reflecting a relatively volatile share price."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "가격·수주 리스크",
-    "en": "Pricing and Order-Volume Risk"
+    "ko": "원가와 단가 구조",
+    "en": "Cost and pricing structure"
    },
    "body": {
-    "ko": "2025년 실적 악화의 직접적 원인으로 수주량 감소와 단가 하락이 지목된 만큼, 국내외 태양광 구조물 시장의 경쟁 심화가 지속될 경우 유사한 압력이 재발할 수 있다. 다수의 중소업체가 참여하는 시장 구조상 단가 경쟁이 상존하는 편이다.",
-    "en": "Since lower order volumes and unit-price declines were cited as direct causes of the 2025 earnings deterioration, similar pressure could recur if competition intensifies further in domestic and overseas solar structure markets. The market structure, with numerous small and mid-sized participants, keeps unit-price competition a persistent feature."
+    "ko": "2025년에는 원자재값 상승으로 이익이 줄었고, 단가 하락으로 매출도 줄었다. 원가 부담을 판가에 전가하지 못하면 영업이익률이 적자 구간에 머물 수 있다. 2025년 영업이익률은 -9.5%였다.",
+    "en": "In 2025 higher raw material prices reduced profit, and lower unit prices reduced revenue. If the company cannot pass cost pressure on to selling prices, the operating margin could remain in loss territory. The operating margin was -9.5% in 2025."
    }
   },
   {
    "cat": {
-    "ko": "재무 구조 리스크",
-    "en": "Balance-Sheet Risk"
+    "ko": "수주 변동과 해외 사업 의존",
+    "en": "Order volatility and dependence on overseas projects"
    },
    "body": {
-    "ko": "부채비율이 2025년 말 134.6%로 높아졌고 영업활동 현금흐름도 같은 해 마이너스로 전환돼, 추가적인 외부자금 조달 필요성이 제기될 가능성을 배제할 수 없다. 과거 제3자배정 유상증자 등 자본조달 이력이 있다는 점도 함께 고려할 필요가 있다.",
-    "en": "With the debt-to-equity ratio rising to 134.6% at end-2025 and operating cash flow turning negative the same year, the possibility of a need for additional external funding cannot be ruled out. The company's history of third-party allotment capital raises in the past is also a relevant consideration."
+    "ko": "매출은 수주 물량과 프로젝트 단가에 좌우되는 구조다. 해외 대형 프로젝트의 비중이 높아 국가별 정책, 환율, 프로젝트 일정 변화의 영향을 받을 수 있다. 2026년 3분기 매출은 전년 동기 대비 20.0% 감소했다.",
+    "en": "Revenue depends on order volume and project unit prices. Because large overseas projects carry significant weight, the company may be affected by country-specific policies, exchange rates and changes in project schedules. Third-quarter 2026 revenue was down 20.0% year on year."
    }
   },
   {
    "cat": {
-    "ko": "수급·거래 변동성 리스크",
-    "en": "Trading and Liquidity Volatility Risk"
+    "ko": "재무 구조와 유통 주식 수급",
+    "en": "Financial structure and share supply"
    },
    "body": {
-    "ko": "2026년 6월 단일 계좌발 대규모 순매도로 투자주의종목에 지정된 이력이 있어, 소형주 특성상 수급에 따른 주가 변동성이 상대적으로 큰 편이다. 최대주주 지분이 24% 수준으로 집중돼 있어 대주주의 매매 동향이 주가와 유동성에 미치는 영향도 함께 살필 필요가 있다.",
-    "en": "Given the June 2026 caution-issue designation tied to large single-account net selling, the stock's small-cap characteristics make it relatively susceptible to supply-and-demand-driven price swings. With the largest shareholder's stake concentrated at about 24%, the impact of that shareholder's trading activity on the share price and liquidity also warrants attention."
+    "ko": "부채비율은 2025년 말 134.6%이며, 2025년 영업활동 현금흐름은 -27.5억원이었다. 2026년 8월 주식병합 후 거래가 재개되면서 유통 주식 수가 줄어든 상태이고 외국인 지분율은 낮은 편이다. 소형주 특성상 주가 변동성이 크게 나타날 수 있다.",
+    "en": "The debt ratio was 134.6% at the end of 2025, and operating cash flow was an outflow of KRW 2.75 billion in 2025. Trading resumed in August 2026 after the share consolidation, and foreign ownership is relatively low. Because it is a small-cap stock, share price volatility can be large."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중순경",
-    "en": "Mid-November 2026"
+    "ko": "2027년 2월 초",
+    "en": "Early February 2027"
    },
    "what": {
-    "ko": "2026년 3분기보고서 공시 예정 시점으로, 2026년 1분기 흑자 전환 후 2분기 재적자 전환이 3분기에 어느 방향으로 이어지는지 확인할 수 있다.",
-    "en": "The expected filing window for the Q3 2026 quarterly report, which will show whether the swing from Q1 2026 profit to Q2 2026 loss continues or reverses in the third quarter."
+    "ko": "2026년 연간 잠정 실적 공시가 확인 지점이다. 2025년 연간 실적은 2026년 2월 10일 공시됐으므로 비슷한 시기가 예상된다. ESS 단열제품 매출이 4분기 실적에 반영되는지와 연간 영업손익 흐름을 함께 본다.",
+    "en": "The preliminary 2026 full-year results are the checkpoint. The 2025 full-year results were disclosed on February 10, 2026, so a similar timing is expected. Whether ESS insulation revenue appears in fourth-quarter results and the full-year operating profit trend should be checked."
    }
   },
   {
    "when": {
-    "ko": "2027년 3월 말경",
-    "en": "Late March 2027"
+    "ko": "2027년 3월 31일 이전",
+    "en": "By March 31, 2027"
    },
    "what": {
-    "ko": "2026년 사업보고서(연간 정기보고서) 공시 예정 시점으로, 2026년 전체 매출·영업손익 추이와 2025년 대비 개선 여부를 확인할 수 있다.",
-    "en": "The expected filing window for the FY2026 annual report, which will confirm full-year 2026 revenue and operating profit trends versus 2025."
+    "ko": "2026년 사업보고서 제출이 다음 정기보고서다. 연간 지배주주 순손익, 부채비율, 영업활동 현금흐름이 공시 실적으로 확정되는 시점이다.",
+    "en": "Submission of the 2026 annual report is the next periodic filing. It is when full-year net income attributable to controlling shareholders, the debt ratio and operating cash flow become confirmed disclosed figures."
    }
   },
   {
    "when": {
-    "ko": "2027년 8월경",
-    "en": "Around August 2027"
+    "ko": "2027년 5월 15일 이전",
+    "en": "By May 15, 2027"
    },
    "what": {
-    "ko": "2026년 8월 착수한 AI 기반 영농형 태양광 통합 솔루션의 1년 내 상용화 목표 시점으로, 실제 제품·서비스 공급 여부와 매출 기여 가능성을 확인할 지점이다.",
-    "en": "The one-year commercialization target for the AI-based agrivoltaic integrated solution launched in August 2026, a point to check whether an actual product or service reaches supply and contributes to revenue."
+    "ko": "2027년 1분기 분기보고서가 제출되는 시점이다. 2026년 3분기 이후 영업손실과 지배주주 순손실이 이어지는지, 영업이익률이 흑자 구간을 유지하는지 확인하는 지점이다.",
+    "en": "This is when the first-quarter 2027 quarterly report is filed. It is the point to check whether operating and net losses attributable to controlling shareholders continue after the third quarter of 2026 and whether the operating margin stays in profit territory."
    }
   },
   {
    "when": {
-    "ko": "2026년 말까지",
-    "en": "Through end-2026"
+    "ko": "시기 미정 (실행 공시 시점)",
+    "en": "Timing undetermined (at execution disclosure)"
    },
    "what": {
-    "ko": "최대주주 지본의 추가 지분 매수 및 지분율 변동 공시 지속 여부를 확인할 필요가 있으며, 이는 지배구조 안정성과 수급에 영향을 줄 수 있다.",
-    "en": "Whether largest shareholder Jibon continues to disclose additional share purchases and stake changes is worth monitoring, as this could affect governance stability and share supply-demand dynamics."
+    "ko": "최대주주 지본의 총 5억원 규모 주식 매수 실행 여부와 규모가 확인 지점이다. 매수 시기와 수량은 거래 가격과 시장 상황에 따라 정해진다고 밝혀졌다.",
+    "en": "Whether the largest shareholder executes the planned purchase of shares worth KRW 500 million in total, and the scale of the purchase, is the checkpoint. Timing and quantity were stated to depend on trading prices and market conditions."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "파루는 태양광 추적장치를 주력으로 하는 코스닥 중소형 신재생에너지 기업으로, 2025년 연간 실적은 매출 감소와 영업손실 전환으로 마무리됐으나 2026년 1분기 일시적으로 영업이익과 순이익이 동시에 흑자를 기록하며 변곡점 가능성을 보였다. 다만 2분기 들어 매출과 이익이 다시 둔화되며 분기별 흑자·적자가 반복되는 패턴이 이어지고 있어, 추세적 개선인지 일시적 현상인지는 추가 분기 실적으로 확인이 필요하다. 사업 측면에서는 영농형 태양광과 AI 융합 솔루션으로 영역을 넓히며 정책 변화와 맞물린 성장 기회를 모색하고 있고, 최대주주의 지분 확대와 자사주 매수 계획은 주주가치 제고 의지를 보여주는 사실로 확인된다. 반면 부채비율 상승, 영업활동 현금흐름의 마이너스 전환, 투자주의종목 지정 이력 등은 재무·수급 측면의 유의 요인으로 남아 있다. 2026년 3분기보고서와 2026년 사업보고서, AI 영농형 솔루션의 상용화 진행 상황이 향후 실적 방향성을 가늠할 핵심 확인 지점이다. 이 보고서는 공시된 과거 실적과 확인된 사실에 기반한 정보를 제공한다.",
-   "en": "Paru is a small-cap KOSDAQ renewable-energy company centered on solar tracking systems, and while its 2025 full-year results closed with a revenue decline and a swing to an operating loss, Q1 2026 briefly showed both operating profit and net profit turning positive simultaneously, hinting at a potential inflection point. However, revenue and profit softened again in Q2 2026, continuing a pattern of alternating quarterly profit and loss, so whether this represents a sustained improvement or a temporary swing requires confirmation through further quarterly results. On the business side, the company is expanding into agrivoltaics and AI-integrated solutions, seeking growth opportunities tied to policy shifts, and the largest shareholder's stake increase and buyback plan are confirmed facts demonstrating an intent to enhance shareholder value. On the other hand, a rising debt-to-equity ratio, a swing to negative operating cash flow, and a history of caution-issue designation remain notable financial and trading-related factors. The Q3 2026 quarterly report, the FY2026 annual report, and progress on commercializing the AI agrivoltaic solution are the key checkpoints for gauging future earnings direction. This report provides information based on disclosed past results and confirmed facts."
+   "ko": "파루는 태양광 추적식 구조물과 해외 대형 프로젝트 공급 이력을 가진 기업이지만, 공시 실적 기준으로 2022년부터 2025년까지 지배주주 순손실이 이어졌고 매출은 2023년 422억원 이후 2년 연속 줄었다. 2026년 1분기와 2분기에는 영업이익을 냈으나 3분기에는 영업손실 3.1억원과 지배주주 순손실 6.6억원으로 다시 손실이 커졌다. 2025년 말 기준 부채비율은 134.6%이고 자본총계는 239억원이다. 강세 요인으로는 해외 프로젝트 이력, 분기 영업이익 흑자 구간, ESS 단열제품 수주, 최대주주의 매수 계획이 있다. 약세 요인으로는 수주 감소와 단가 하락, 3분기 적자 재진입, 재무 부담과 주가 변동성이 있다. 두 요인은 같은 무게로 봐야 하며, 어느 쪽이 우세한지는 현재 공시와 보도만으로 단정하기 어렵다. 다음 확인 지점은 2026년 연간 잠정 실적, 2026년 사업보고서의 영업이익률, ESS 제품의 매출 반영 여부다. 이 리포트는 정보 제공을 목적으로 하며 매수·매도 의견을 포함하지 않는다.",
+   "en": "Paru is a company with a track record in solar tracking structures and large overseas projects, but on a disclosed-results basis, net losses attributable to controlling shareholders continued from 2022 through 2025, and revenue has declined for two consecutive years since KRW 42.2 billion in 2023. It posted operating profits in the first and second quarters of 2026, but in the third quarter losses widened again, with an operating loss of KRW 310 million and a net loss attributable to controlling shareholders of KRW 661 million. As of the end of 2025, the debt ratio was 134.6% and total equity was KRW 23.9 billion. Bullish factors include its overseas project track record, quarters of operating profit, the ESS insulation order and the largest shareholder's purchase plan. Bearish factors include lower orders and unit prices, the return to losses in the third quarter, and financial burden and share price volatility. The two sets of factors should be weighed equally, and which side prevails cannot be determined from the disclosures and reports alone. The next checkpoints are the preliminary 2026 full-year results, the operating margin in the 2026 annual report, and whether ESS product revenue appears. This report is provided for information only and does not include a buy or sell opinion."
   }
  },
  "sources": [
-  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03309526612612840",
-  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02555126596345352",
-  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=629660",
-  "https://www.youtube.com/watch?v=hSK_OyfWT0Q",
-  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03204566645347568",
-  "https://stockcatcher.co.kr/%ED%8C%8C%EB%A3%A8-%EC%A3%BC%EC%8B%9D-%EC%A3%BC%EA%B0%80-%EB%B6%84%EC%84%9D-%ED%85%8C%EB%A7%88%EC%A3%BC-%EA%B4%80%EB%A0%A8%EC%A3%BC-%EA%B8%B0%EC%97%85-%EC%A0%84%EB%A7%9D/",
-  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02742086606059400",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=043200",
+  "https://alphasquare.co.kr/home/stock-summary?code=043200",
+  "https://simplywall.st/stocks/kr/capital-goods/kosdaq-a043200/paru-shares/news/paru-co-ltds-kosdaq043200-27-share-price-plunge-could-signal",
   "https://www.investing.com/equities/paru-co-ltd",
-  "https://getsayo.ai/companies/043200/",
-  "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=707319",
-  "https://www.topstarnews.net/news/articleView.html?idxno=16117269",
+  "https://stockcatcher.co.kr/%ED%8C%8C%EB%A3%A8-%EC%A3%BC%EC%8B%9D-%EC%A3%BC%EA%B0%80-%EB%B6%84%EC%84%9D-%ED%85%8C%EB%A7%88%EC%A3%BC-%EA%B4%80%EB%A0%A8%EC%A3%BC-%EA%B8%B0%EC%97%85-%EC%A0%84%EB%A7%9D/",
+  "https://news.nate.com/view/20260210n37811",
+  "https://www.google.com/finance/quote/043200:KOSDAQ?hl=ko",
+  "https://www.daramtickers.com/detail/043200",
+  "https://ssl.pstatic.net/imgstock/upload/research/company/1605151769178.pdf",
+  "https://www.datatooza.com/article/20260602150507270752ef34a159_80",
+  "https://pinpointnews.co.kr/news/articleView.html?idxno=505150",
+  "https://m.news.nate.com/view/20260826n27631",
+  "https://m.etoday.co.kr/news/view/2619499",
   "https://m.news.nate.com/view/20260602n23338",
-  "https://www.topstarnews.net/news/articleView.html?idxno=16150438",
-  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=693217",
-  "https://m.news.nate.com/view/20260210n37811",
-  "https://www.gminsights.com/industry-analysis/animal-vaccines-market",
-  "https://www.bioin.or.kr/board/tech/324914",
-  "https://www.databridgemarketresearch.com/reports/global-veterinaryanimal-vaccines-market"
+  "https://v.daum.net/v/pmOqxdEog4?f=p"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "043200",
  "name": "파루",
  "name_en": "PARU CO., LTD.",
@@ -223,11 +220,11 @@
   "에너지·전력"
  ],
  "market": "코스닥",
- "reportDate": "2026-10-20",
- "reportTs": "2026-10-20 05:20",
- "dataDate": "20261019",
+ "reportDate": "2026-11-18",
+ "reportTs": "2026-11-18 19:33",
+ "dataDate": "20261117",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-11-18",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -297,22 +294,16 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 5995163169,
-    "op": -1138932408,
-    "np_owner": -1624390959
-   },
-   {
     "q": "2025Q3",
     "rev": 7895042911,
     "op": -163738182,
-    "np_owner": -427145885
+    "np_owner": null
    },
    {
     "q": "2025Q4",
     "rev": 7967545577,
     "op": -288451244,
-    "np_owner": -615015329
+    "np_owner": null
    },
    {
     "q": "2026Q1",
@@ -325,35 +316,39 @@
     "rev": 6206997574,
     "op": 106190383,
     "np_owner": -143990906
+   },
+   {
+    "q": "2026Q3",
+    "rev": 6314525461,
+    "op": -310036244,
+    "np_owner": -661006001
    }
   ],
   "valuation": {
-   "price": 1289,
-   "mcap": 0.0272,
+   "price": 1105,
+   "mcap": 0.0231,
    "shares": 20902157,
-   "total_shares": 20902158,
-   "wavg_shares": 19392168,
+   "total_shares": 20902157,
+   "wavg_shares": 21102133,
    "per": null,
-   "eps": -54,
-   "pbr": 0.9478,
-   "bps": 1360,
-   "roe_ttm": -4.3,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": -1099174608,
+   "eps": -63,
+   "pbr": 0.9072,
+   "bps": 1218,
+   "roe_ttm": -5.3,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": -1333034724,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 1.03,
+   "eps_src": "공시",
+   "pbr_krx": 0.96,
    "bps_krx": 1148.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
    "div": 0.0,
-   "shares_patched": {
-    "on": "2026-09-12",
-    "was": 41804315,
-    "now": 20902157,
-    "factor": 2.0,
-    "why": "액면병합·분할·감자 — 배수로 환산"
+   "hidden": {
+    "per": "loss"
    }
   }
- }
+ },
+ "textRules": 3
 }
