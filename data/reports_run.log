@@ -1,14 +1,19 @@
-=== 공시 트리거 옛 형식 갱신 Wed Nov 18 10:33:29 UTC 2026 · 대상 493410 ===
-## 🤖 Batch 제출 — 대상 0개 / 상위 100개 (최근 34개 건너뜀) · 모델 claude-haiku-5-5
-- 갱신할 종목이 없습니다(모두 최근). 종료.
-## 🤖 Batch 제출 — 대상 1개 / 상위 100개 (최근 35개 건너뜀) · 모델 claude-haiku-5-5
-  · 준비 471800 에이엘로봇 (DART X)
-- ✅ 배치 제출 완료: msgbatch_01XYmAsZ9rbw9tthW6e9PC7V (1건) → data/batch_state.json
+=== 공시 트리거 옛 형식 갱신 Wed Nov 18 19:45:11 UTC 2026 · 대상 493410,0205H0 ===
+## 🤖 Batch 제출 — 대상 1개 / 상위 100개 (최근 36개 건너뜀) · 모델 claude-haiku-5-5
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  · 준비 0205H0 에스케이증권제14호기업인수목적 (DART O)
+- ✅ 배치 제출 완료: msgbatch_01C9jbTfYVMfNoxbmjA1EPSm (1건) → data/batch_state.json
   · 상태 in_progress · 처리 1/성공 0/오류 0
   · 상태 in_progress · 처리 1/성공 0/오류 0
   · 상태 in_progress · 처리 1/성공 0/오류 0
   · 상태 in_progress · 처리 1/성공 0/오류 0
   · 상태 ended · 처리 0/성공 1/오류 0
+- 🔎 교정 배치 제출: msgbatch_01PM9kZKkRTF4qoSgLengStT (1건)
+  · ✏️ 0205H0 표현 교정 2건 → 남은 0건
+💵 claude-sonnet-5-5 1회(교정 배치) · 입력 5,480(캐시쓰기 0·읽기 0) · 출력 1,811 · 검색 0 → 약 $0.01
 
 ✅ 회수 완료 · 성공 1/실패 0 · 총 보유 2697개 → data/reports/ + reports-index.js
-💵 claude-haiku-5-5 1회(배치) · 입력 5,398(캐시쓰기 39,215·읽기 2,871) · 출력 28,074 · 검색 2 → 약 $0.03
+💵 claude-haiku-5-5 1회(배치) · 입력 5,603(캐시쓰기 38,868·읽기 2,871) · 출력 24,367 · 검색 2 → 약 $0.03
