@@ -185,6 +185,11 @@ eq("짧은 약어는 대문자로", F.en_name("HS HWASUNG CO.,LTD"), "HS Hwasung
 eq("하이픈 뒤도 대문자", F.en_name("SAMSUNG ELECTRO-MECHANICS CO.,LTD"), "Samsung Electro-Mechanics")
 eq("붙여 쓴 이름은 붙은 꼬리를 떼고 띄운다", F.en_name("KohYoungTechnologyInc."), "Koh Young Technology")
 eq("브랜드 꼴은 그대로", (F.en_name("KakaoBank Corp."), F.en_name("PHILOPTICS CO.,LTD.")), ("KakaoBank", "Philoptics"))
+eq("붙은 'and' 를 띄운다(자연과환경 · 에스에이티 2026-11-18) · '…and' 낱말은 그대로",
+   (F.en_name("NatureandEnvironmentCo.,Ltd."), F.en_name("SystemandApplicationTechnologiesInc."),
+    F.en_name("GlobalStandardTechnologyCo.,Ltd."), F.en_name("HollandKoreaTradingCo"), F.en_name("CommandSystemsKoreaInc.")),
+   ("Nature and Environment", "System and Application Technologies", "Global Standard Technology", "Holland Korea Trading",
+    "Command Systems Korea"))
 eq("대문자뿐인 붙은 이름은 그대로 두고 표시", F.en_name("HYUNDAIMARINE&FIREINSURANCECO.,LTD.").startswith("HYUNDAIMARINE&FIREINSURANCECO(공시 영문명이 붙어"), True)
 STOCKS = [{"ticker": "000850", "name": "화천기공", "name_en": "HWACHEON MACHINE TOOL CO.,LTD", "sector": "기계·장비", "mcap": 0.1},
           {"ticker": "010660", "name": "화천기계", "name_en": "HWACHEON MACHINERY CO.,LTD", "sector": "기계·장비", "mcap": 0.08},
