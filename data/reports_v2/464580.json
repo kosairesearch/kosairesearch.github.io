@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "흑자→적자 반복, 해외 IP 협업이 변수",
-  "en": "Swinging Between Profit and Loss, Global IP Deals in Focus"
+  "ko": "적자 속 B2C 비중 확대, 회복 조건 점검",
+  "en": "Losses Deepen as B2C Share Rises; Recovery Still Unproven"
  },
  "lead": {
-  "ko": "닷밀은 2025년 3분기 창사 이래 최대 실적으로 흑자 전환에 성공했으나 2026년 1·2분기 연속 적자로 되돌아가며, 매출 성장과 수익성 안정화 사이의 간극이 여전히 큰 상태다.",
-  "en": "Dotmill swung to a record profit in the third quarter of 2025 but returned to consecutive operating losses in the first and second quarters of 2026, underscoring a persistent gap between revenue growth and earnings stability."
+  "ko": "닷밀은 2025년 매출이 43.2% 늘었지만 2026년 1분기부터 3분기까지 3개 분기 연속 영업손실을 냈고, 매출 구성에서는 자체 운영(B2C) 비중이 커지고 있다.",
+  "en": "dotmill's revenue grew 43.2% in 2025, yet it posted operating losses in each quarter from Q1 2026 through Q3 2026, while self-operated B2C businesses are taking a larger share of sales."
  },
  "keypoints": [
   {
-   "ko": "2025년 연간 매출은 338.4억원으로 전년 대비 크게 늘었으나 영업이익률은 0.4%로 급격히 낮아졌다.",
-   "en": "Annual 2025 revenue rose sharply to KRW 33.8 billion, but operating margin fell sharply to 0.4%."
+   "ko": "2025년 매출은 338억원으로 전년 대비 43.2% 증가했으나, 영업이익은 1.2억원으로 전년 대비 88.0% 감소했다.",
+   "en": "Revenue rose 43.2% to KRW 33.8 billion in 2025, but operating profit fell 88.0% to KRW 123 million."
   },
   {
-   "ko": "2025년 3분기 매출 137.9억원·영업이익 18.0억원으로 상장 이후 최대 실적을 냈지만 2026년 1·2분기는 다시 영업손실을 기록했다.",
-   "en": "The company posted its best-ever quarter in Q3 2025 with revenue of KRW 13.79 billion and operating profit of KRW 1.8 billion, but returned to operating losses in Q1 and Q2 2026."
+   "ko": "2026년 3분기 매출은 58.1억원으로 전년 동기 대비 57.9% 감소했고, 영업손실은 32.2억원으로 전년 동기 영업이익 흑자에서 적자로 돌아섰다.",
+   "en": "Q3 2026 revenue was KRW 5.81 billion, down 57.9% year on year, and the company moved from an operating profit a year earlier to an operating loss of KRW 3.22 billion."
   },
   {
-   "ko": "워너 브라더스 디스커버리 글로벌 익스피리언스와 협업한 '드래곤볼 히어로즈 라이즈'와 '해리 포터: 금지된 숲 체험' 등 글로벌 IP 콘텐츠가 잇따라 공개되고 있다.",
-   "en": "The company has rolled out a series of global-IP experiences with Warner Bros. Discovery Global Experiences, including the Dragon Ball Heroes Rise exhibition and the Harry Potter: Forbidden Forest Experience."
+   "ko": "2026년 3분기 매출에서 B2C가 차지하는 비중은 58.8%로, 전분기의 27.4%에서 높아졌다(ZDNet Korea, 2026년 11월 17일 보도).",
+   "en": "B2C accounted for 58.8% of Q3 2026 revenue, up from 27.4% in the prior quarter, according to a November 17, 2026 ZDNet Korea report."
   },
   {
-   "ko": "최대주주인 정해운 대표는 2026년 8월에도 장내매수를 이어가 특별관계자 포함 지분율을 30%대 중후반까지 끌어올렸다.",
-   "en": "CEO and largest shareholder Jung Hae-woon continued open-market share purchases in August 2026, raising his combined stake with related parties into the mid-to-high 30% range."
+   "ko": "회사는 2026년 상반기 공공 발주 지연과 신사업 초기 투자 비용이 겹쳤다고 설명했고, 2027년에는 B2G 발주가 정상화될 것으로 기대했다.",
+   "en": "The company said delayed public orders in the first half of 2026 coincided with early investment costs for new businesses, and it expects public orders to normalize in 2027."
   },
   {
-   "ko": "최근 네 개 분기(2025년 3분기~2026년 2분기) 합산 지배주주 순이익은 적자로, 분기별 실적 편차가 여전히 크다.",
-   "en": "Net income attributable to owners over the most recent four quarters (Q3 2025 through Q2 2026) was in loss territory, reflecting continued large quarter-to-quarter swings."
+   "ko": "2026년 11월 6일 이사회는 단기차입금 38억 6,500만원 증액을 결의해 단기차입금 총액이 190억원으로 늘어나게 됐다.",
+   "en": "On November 6, 2026, the board approved additional short-term borrowing of KRW 3.865 billion, lifting total short-term debt to KRW 19 billion."
   }
  ],
  "business": {
-  "ko": "닷밀은 2015년 설립된 실감미디어 기반 콘텐츠·공간 솔루션 기업으로, 2024년 11월 코스닥에 상장했다. 사업은 공공기관 대상 B2G, 기업 대상 B2B, 일반 소비자 대상 B2C 세 영역으로 구성되며, 프로젝션 맵핑·XR·홀로그램·미디어파사드 등 자체 기술을 기반으로 콘텐츠를 제작한다. B2C 부문에서는 제주 '루나폴'과 '워터월드', 경기 '글로우사파리', 서울 'OPCI' 등 자체 IP 테마파크를 직접 운영해 반복 매출 비중을 늘려가고 있다. 최근에는 글로벌 IP 라이선스 협업이 사업의 핵심 축으로 부상하고 있는데, 워너 브라더스 디스커버리 글로벌 익스피리언스와 손잡고 서울 성수동에서 '드래곤볼 히어로즈 라이즈 아시아 투어 인 서울'을 개막했으며, 12월에는 제주 루나폴에서 영화 해리 포터 시리즈의 '금지된 숲'에서 영감을 받은 인터랙티브 야간 체험 콘텐츠인 '해리 포터: 금지된 숲 체험'을 국내 최초로 선보일 예정이다. 이 콘텐츠는 영국, 미국, 프랑스, 호주, 싱가포르 등 주요 시장에서 전 세계 200만 명 이상의 관람객이 찾은 검증된 IP다. B2G·B2B 부문에서는 멀린 엔터테인먼트의 코엑스 씨라이프 아쿠아리움 프로젝트를 성공적으로 수주했고, 정해운 대표는 멀린엔터테인먼트 측이 닷밀의 기술력과 제작 역량을 높게 평가해 추가 협업이 유력하다고 전했으며 멀린엔터테인먼트는 전 세계 25개국에서 약 140개의 테마파크를 운영하는 글로벌 기업이다. 다만 실감미디어 프로젝트는 개별 계약 단위가 크고 발주처 사정에 따라 일정이 조율되는 경우가 많아, 특정 분기·연도 실적이 대형 계약 체결 여부에 좌우되는 구조적 특성을 갖는다.",
-  "en": "Dotmill, founded in 2015, is an immersive-media content and space-solution company that listed on KOSDAQ in November 2024. Its business spans three segments: government-facing B2G, corporate-facing B2B, and consumer-facing B2C, producing content built on proprietary technologies such as projection mapping, XR, hologram, and media facades. In the B2C segment, the company directly operates IP-based theme parks including Lunapol and Waterworld in Jeju, Glow Safari in Gyeonggi, and OPCI in Seoul, expanding recurring revenue. More recently, global IP licensing partnerships have become a core growth axis: working with Warner Bros. Discovery Global Experiences, the company opened the Dragon Ball Heroes Rise Asia Tour in Seongsu, Seoul, and plans to debut the Harry Potter: Forbidden Forest Experience, an interactive nighttime experience inspired by the Forbidden Forest from the Harry Potter film series, at Lunapol in Jeju in December, marking its first domestic launch. This content has drawn more than two million visitors across major markets including the UK, US, France, Australia and Singapore. On the B2G/B2B side, the company successfully won Merlin Entertainments' Coex SEA LIFE Aquarium project, and CEO Jung Hae-woon has said Merlin values Dotmill's technical and production capabilities highly, making further collaboration likely, noting Merlin operates roughly 140 theme parks across 25 countries. However, immersive media projects are typically large, discrete contracts whose timing depends heavily on client circumstances, meaning quarterly and annual results remain structurally exposed to whether major contracts are signed and executed as planned."
+  "ko": "닷밀은 실감미디어 기술로 콘텐츠 기획·제작부터 공간 설계·구축·운영까지 전 과정을 내부 인력으로 수행하는 기업이다. 사업은 세 축으로 나뉜다. 지자체와 공공기관을 고객으로 하는 B2G 수주사업이 가장 크며, 미디어아트 프로젝트와 테마파크 조성이 여기에 속한다. 기업을 고객으로 하는 B2B 사업은 비중이 작다. 수도권과 제주도에서 실감미디어 테마파크를 직접 운영하는 B2C 사업은 입장권, F&B, 굿즈 판매로 수익을 얻는다. 부문 비중은 집계 기간에 따라 다르게 나타난다. 2026년 2분기 매출 기준으로는 B2G 69%, B2C 27%, B2B 3%라는 자료가 있고, 2026년 1~3분기 누적으로는 B2G 62.3%, B2C 35.8%, B2B 1.9%로 보도됐다(ZDNet Korea, 2026년 11월 17일). 최근 확장은 B2C 쪽에 집중돼 있다. 2026년 5월 대구 이월드 83타워에 글로우 사파리가 문을 열었고, 2026년 6월에는 전시와 테마파크를 묶은 자체 예매 플랫폼 '비밀'을 출시했다. 원피스, 드래곤볼 히어로즈 라이즈 같은 글로벌 IP 전시도 2026년 상반기부터 하반기에 걸쳐 열렸다. 경쟁력으로는 국내 최대 수준의 실감미디어 레퍼런스와 콘텐츠 제작 내재화가 꼽힌다(ARC리서치, 2026년 9월).",
+  "en": "dotmill handles the full chain of its immersive media business in-house, from content planning and production to space design, construction and operation. Its business has three pillars. B2G project awards from local governments and public institutions are the largest, including media art projects and theme park construction. B2B work for corporate clients is a small share. B2C operations run immersive media theme parks in the Seoul metropolitan area and on Jeju Island, earning revenue from admissions, food and beverage, and merchandise. The segment mix varies by period. A breakdown based on Q2 2026 revenue shows B2G at 69%, B2C at 27% and B2B at 3%, while cumulative figures for January to September 2026 were reported as 62.3%, 35.8% and 1.9% respectively (ZDNet Korea, November 17, 2026). Recent expansion has centered on B2C. The Glow Safari venue at the Daegu 83 Tower complex opened in May 2026, and in June 2026 the company launched its own experience platform, bemill, which combines exhibitions, theme parks and tourism content. Global IP exhibitions such as One Piece and Dragon Ball Heroes: Rise also ran during 2026. ARC Research cited the company's large base of immersive media references in Korea and its in-house content capability as strengths (September 2026)."
  },
  "earnings": {
-  "ko": "연간 실적은 매출 성장과 수익성 둔화가 동시에 나타났다. 2023년 매출 187.8억원·영업이익 8.09억원을 냈으나 순손실 12.13억원을 기록했고, 지배주주 자본은 6.48억원에 불과해 부채비율이 3,999.2%에 달할 정도로 자본구조가 취약했다. 2024년 11월 상장으로 자본이 확충되며 지배주주 자본은 332.7억원으로 크게 늘었고, 매출 236.3억원(영업이익률 4.3%), 순이익 9.60억원으로 흑자 전환에 성공했으며 부채비율도 38.0%로 낮아졌다. 2025년에는 매출이 338.4억원으로 전년 대비 크게 늘었지만 영업이익은 1.23억원(영업이익률 0.4%)에 그쳐 외형 성장이 수익성으로 충분히 이어지지 못했다. 분기별로 보면 편차가 뚜렷한데, 2025년 2분기 매출 57.3억원·영업손실 5.02억원에서 3분기에는 매출 137.9억원·영업이익 17.98억원으로 뛰어올라 상장 이후 최대 실적을 기록했다. 이는 B2C 시설 운영 매출의 여름 성수기 효과와 연초 발주된 공공 프로젝트가 하반기에 집행되며 B2G 부문이 확대된 결과로 풀이된다. 그러나 4분기에는 매출이 89.0억원으로 줄고 영업이익도 1.09억원으로 축소됐으며, 2026년 1분기(매출 60.4억원·영업손실 15.36억원)와 2분기(매출 52.0억원·영업손실 16.84억원)에는 다시 연속 적자로 돌아섰다. 그 결과 최근 네 개 분기(2025년 3분기~2026년 2분기) 합산 지배주주 순이익은 적자를 기록해, 3분기 서프라이즈가 연간 전체의 이익 안정성으로 이어지지는 못한 모습이다. 현금흐름 측면에서는 2025년 영업활동현금흐름이 41.6억원으로 순이익보다 크게 양호했던 반면, 상장 전인 2023년에는 영업활동현금흐름이 -23.46억원으로 부진했다.",
-  "en": "Annual results show simultaneous revenue growth and margin deterioration. In 2023, revenue was KRW 18.78 billion and operating profit KRW 0.81 billion, yet the company posted a net loss of KRW 1.21 billion, with owners' equity of only KRW 0.65 billion and a debt ratio of 3999.2%, reflecting a fragile capital structure. Following the November 2024 listing, equity expanded sharply to KRW 33.27 billion, and the company swung to a net profit of KRW 0.96 billion on revenue of KRW 23.63 billion (4.3% operating margin), with the debt ratio falling to 38.0%. In 2025, revenue grew substantially to KRW 33.84 billion, but operating profit was only KRW 0.12 billion (0.4% margin), indicating top-line growth did not translate fully into profitability. Quarterly figures show pronounced volatility: from a revenue of KRW 5.73 billion and an operating loss of KRW 0.50 billion in Q2 2025, results jumped to revenue of KRW 13.79 billion and operating profit of KRW 1.80 billion in Q3 2025, the best quarter since listing. This reflected a summer peak-season effect in B2C facility operations combined with expanded B2G execution as publicly ordered projects placed earlier in the year were carried out in the second half. However, Q4 revenue slipped to KRW 8.90 billion with operating profit shrinking to KRW 0.11 billion, and the company returned to consecutive operating losses in Q1 2026 (revenue KRW 6.04 billion, operating loss KRW 1.54 billion) and Q2 2026 (revenue KRW 5.20 billion, operating loss KRW 1.68 billion). As a result, net income attributable to owners over the trailing four quarters (Q3 2025 through Q2 2026) was in loss, showing the Q3 surprise did not carry through into sustained annual profit stability. On cash flow, operating cash flow in 2025 reached KRW 4.16 billion, well ahead of net income, whereas in 2023, before listing, operating cash flow was negative at KRW -2.35 billion."
+  "ko": "연간 매출은 2023년 188억원에서 2024년 236억원(전년 대비 25.8% 증가), 2025년 338억원(전년 대비 43.2% 증가)으로 2024년부터 2025년까지 2년 연속 증가했다. 2023~2025년 중 가장 큰 해는 2025년, 가장 작은 해는 2023년이다. 영업이익은 2023년 8.1억원에서 2024년 10.2억원(전년 대비 26.5% 증가)으로 늘었으나, 2025년에는 1.2억원으로 전년 대비 88.0% 감소했다. 영업이익률은 2023년 4.3%, 2024년 4.3%에서 2025년 0.4%로 낮아졌다. 매출이 가장 크게 늘어난 해에 이익률이 가장 낮아진 셈이다. 더벨은 2026년 2월 보도에서 2025년 영업이익 감소를 신규 매출 확보 과정의 부대비용으로 설명하며, 글로벌 IP 협업, B2C 사업 확대, B2G 수주 대응으로 영업비용이 늘었다고 짚었다. 지배주주 순이익은 2023년 순손실 12.1억원에서 2024년 9.6억원 흑자로 전환한 뒤 2025년 8억원으로 전년 대비 17.2% 감소했다. 당기순이익(비지배지분 포함)은 같은 기간 2023년 순손실 12.1억원, 2024년 9.6억원, 2025년 8억원으로 지배주주 순이익과 같은 흐름을 보였다. 영업활동 현금흐름은 2023년 -23.5억원에서 2024년 33.1억원으로 플러스 전환했고 2025년에는 41.6억원으로 늘었다. 분기로 보면 2025년 3분기 매출 138억원이 최근 다섯 분기 중 가장 높았고, 이후 2025년 4분기 89억원(전 분기 대비 35.5% 감소), 2026년 1분기 60.4억원, 2분기 52억원, 3분기 58.1억원으로 낮아졌다. 영업이익은 2025년 3분기 18억원에서 4분기 1.1억원(전 분기 대비 93.9% 감소)으로 줄었고, 2026년 1분기 영업손실 15.4억원, 2분기 영업손실 16.8억원, 3분기 영업손실 32.2억원으로 적자 폭이 커졌다. 최근 4개 분기 지배주주 순손실 합계는 53.7억원이다. 회사는 2026년 상반기 공공 발주 지연과 신사업 초기 비용을 주된 원인으로 설명했다.",
+  "en": "Annual revenue rose from KRW 18.8 billion in 2023 to KRW 23.6 billion in 2024 (up 25.8% year on year) and KRW 33.8 billion in 2025 (up 43.2%), growing for two consecutive years from 2024 through 2025. 2025 was the largest year and 2023 the smallest within 2023 to 2025. Operating profit grew from KRW 809 million in 2023 to KRW 1.02 billion in 2024 (up 26.5%), then fell to KRW 123 million in 2025, down 88.0%. The operating margin was 4.3% in 2023, 4.3% in 2024 and 0.4% in 2025, so the steepest margin decline came in the year revenue grew most. In a February 2026 report, The Bell attributed the 2025 profit decline to operating costs from securing new revenue, including global IP collaborations, B2C expansion and responses to B2G tenders. Net profit attributable to controlling shareholders swung from a KRW 1.21 billion loss in 2023 to KRW 960 million profit in 2024, then declined 17.2% to KRW 796 million in 2025. Net profit including non-controlling interests followed the same pattern for those years. Operating cash flow turned positive in 2024 at KRW 3.31 billion, from negative KRW 2.35 billion in 2023, and rose to KRW 4.16 billion in 2025. Quarterly revenue peaked at KRW 13.8 billion in Q3 2025, the highest of the last five quarters, then fell to KRW 8.9 billion in Q4 2025 (down 35.5% quarter on quarter), KRW 6.04 billion in Q1 2026, KRW 5.2 billion in Q2 2026 and KRW 5.81 billion in Q3 2026. Operating profit dropped from KRW 1.8 billion in Q3 2025 to KRW 109 million in Q4 2025 (down 93.9%), then turned into operating losses of KRW 1.54 billion in Q1 2026, KRW 1.68 billion in Q2 2026 and KRW 3.22 billion in Q3 2026. Net losses attributable to controlling shareholders over the last four quarters total KRW 5.37 billion. The company cites delayed public orders in the first half of 2026 and early costs for new businesses as the main causes."
  },
  "industry": {
-  "ko": "실감미디어 산업은 관광·문화·엔터테인먼트 분야를 중심으로 확장되고 있으며, 시장조사업체 Immersive Media Market에 따르면 글로벌 실감미디어 시장은 연평균 20% 이상 성장할 것으로 전망된다. 국내에서는 정부의 지역 관광 활성화와 균형 발전 정책 강화로 실감미디어 기술 수요가 확대되고 있다는 평가가 나온다. 닷밀은 이 흐름 속에서 공공 및 지역개발 프로젝트를 중심으로 민간과 공공 영역에서 신규 사업 기회를 넓혀가고 있으며, 실감형 콘텐츠 기반의 지역 관광 모델 확산에도 주력하고 있다. 경쟁 구도는 국내에 대형 상장 경쟁사가 많지 않은 니치 시장으로, 개별 프로젝트 단위의 수주 경쟁이 핵심이다. 글로벌 무대에서는 워너 브라더스 디스커버리, 멀린 엔터테인먼트 같은 대형 IP·테마파크 운영사와의 파트너십이 진입장벽이자 성장 동력으로 작용하고 있으며, 미래에셋증권은 2025년 12월 보고서에서 회사가 연내 체결 가능성이 높은 공공 프로젝트 2건에서 우선협상지위를 확보했으며, 계약이 마무리될 시 B2G 부문 수주잔고는 100억원을 상회할 전망이라고 밝혔다. 다만 실감미디어 프로젝트는 대형 계약 단위로 이루어져 개별 프로젝트의 규모가 커 수주 성패가 매출에 직접적 영향을 미치는 불확실성이 존재한다는 점이 산업 전반의 구조적 리스크로 남아 있다.",
-  "en": "The immersive media industry is expanding centered on tourism, culture and entertainment, with market researcher Immersive Media Market forecasting the global immersive media market to grow at more than 20% annually. Domestically, industry observers note that immersive media technology demand is expanding as the government strengthens regional tourism promotion and balanced development policies. Within this trend, Dotmill is broadening new business opportunities in both private and public sectors centered on public and regional development projects, while also focusing on spreading immersive content-based regional tourism models. The competitive landscape is a niche market with few large listed domestic rivals, where competition centers on winning individual project contracts. Globally, partnerships with major IP and theme park operators such as Warner Bros. Discovery and Merlin Entertainments serve as both a barrier to entry and a growth driver; Mirae Asset Securities noted in a December 2025 report that the company had secured preferred negotiation status on two public projects likely to be finalized within the year, and that if contracts close, the B2G order backlog would exceed KRW 10 billion. However, since immersive media projects are structured as large individual contracts, the sheer scale of each project means winning or losing a bid has a direct and outsized impact on revenue, remaining a structural risk across the industry."
+  "ko": "실감미디어 산업은 전시, 테마파크, 공연, AI 등으로 적용 범위가 넓어지는 중이며, 닷밀은 이 흐름에서 공공 미디어아트와 도시재생 수요를 주로 겨냥하고 있다. 하나증권은 2026년 1월 보고서에서 국내 도시재생 시장이 경제 거점 조성과 민간 주도 성장 중심으로 재편되고 있다고 짚었다. 같은 보고서는 2026년 도시재생 및 균형발전 관련 예산이 약 62조 5,000억원이며, 이 중 도시재생 혁신지구 3곳에 약 8,323억원이 투입될 예정이라고 전했다. B2G 매출은 지자체의 예산 편성과 발주 시점에 따라 인식 시기가 달라진다. ZDNet Korea는 2026년 6월 지방선거 전후로 지자체 사업 일정이 바뀌면서 닷밀의 실적에 영향을 미쳤다는 분석을 전했다. 글로벌 IP 측면에서는 멀린 엔터테인먼트와의 협업과 세계 최대 LED 구조물 스피어의 콘텐츠 참여가 언급돼 왔다. 구형 디스플레이 기반 'ASTRA CORE' 기술은 라스베이거스 스피어나 LA 코즘 같은 대형 구형 디스플레이 프로젝트 수요와 연결된다는 분석이 있다. B2C 운영사업에 대해 FnGuide는 수도권과 제주 테마파크가 안정적 수익을 내지만 경기 악화로 성장은 제한적이라고 정리했다. 경쟁 구도에서 닷밀은 기획부터 운영까지 내부화한 구조를 차별점으로 내세우고 있다.",
+  "en": "The immersive media industry is spreading into exhibitions, theme parks, performance and AI, and dotmill is focusing mainly on public media art and urban regeneration demand within that trend. In a January 2026 report, Hana Securities said Korea's urban regeneration market is being reorganized around economic hub creation and private-led growth. The same report put 2026 urban regeneration and balanced development budgets at about KRW 62.5 trillion, with about KRW 832.3 billion to go to three urban regeneration innovation districts. B2G revenue is recognized according to local government budget allocation and tender timing. ZDNet Korea reported an analysis that shifts in local government project schedules around the June 2026 local elections affected dotmill's results. On global IP, the collaboration with Merlin Entertainments and participation in content for the Sphere in Las Vegas have been mentioned. Analysts link the ASTRA CORE spherical display technology to demand for large spherical display projects such as the Sphere and COSM in Los Angeles. On B2C operations, FnGuide noted that the Seoul metropolitan and Jeju theme parks generate stable earnings but growth is limited by the economic slowdown. In competition, dotmill presents its in-house structure spanning planning through operation as a differentiator."
  },
  "outlook": {
-  "ko": "회사는 글로벌 IP 협업을 사업 확장의 핵심 축으로 삼고 있다. 정해운 대표는 2025년 11월 더벨과의 인터뷰에서 내년 외형이 올해 대비 50% 이상 성장할 것으로 내다보고 있다고 밝혔고, NDA로 인해 자세히 말씀드릴 수는 없지만 일본을 비롯한 다수의 글로벌 IP 기업과의 계약이 눈앞에 와 있다며 내년에는 기존 파이를 뛰어넘는 매출을 낼 수 있을 것이라고 자신감을 나타냈다. 단기적으로는 서울 성수동의 드래곤볼 히어로즈 라이즈 전시가 11월 15일까지 약 3개월간 운영되며 관람객 유입 성과가 확인될 예정이고, 12월에는 제주 루나폴에서 워너 브라더스·피버와 협업한 해리 포터: 금지된 숲 체험이 개장할 예정이다. B2G 부문에서는 미래에셋증권이 언급한 대로 우선협상지위를 확보한 공공 프로젝트 2건의 연내 계약 체결 여부가 관전 포인트이며, 계약이 성사되면 수주잔고 규모가 확대될 수 있다. B2B 부문에서는 멀린 엔터테인먼트와의 코엑스 씨라이프 프로젝트 이후 추가 협업 가능성이 열려 있는 상태다. 다만 이 같은 확장 계획은 아직 구체적 계약 공시나 확정 매출로 전환되지 않은 경우가 많아, 향후 분기 공시를 통한 확인이 필요하다.",
-  "en": "The company has made global IP partnerships a core pillar of its expansion. CEO Jung Hae-woon told The Bell in a November 2025 interview that he expects next year's top line to grow more than 50% versus this year, and expressed confidence that although he could not go into detail due to NDAs, contracts with multiple global IP companies including a Japanese partner were imminent, projecting revenue exceeding the current scale next year. In the near term, the Dragon Ball Heroes Rise exhibition in Seongsu, Seoul will run for about three months through November 15, during which visitor traffic results will become clearer, while in December the Harry Potter: Forbidden Forest Experience, developed with Warner Bros. and Fever, is set to open at Lunapol in Jeju. On the B2G side, whether the two public projects for which the company holds preferred negotiation status—as noted by Mirae Asset Securities—are finalized within the year is a key point to watch, as closing them could expand the order backlog. On the B2B side, further collaboration beyond the Merlin Entertainments Coex SEA LIFE project remains a possibility. However, much of this expansion plan has not yet converted into specific disclosed contracts or confirmed revenue, warranting confirmation through future quarterly filings."
+  "ko": "회사는 2026년 11월 17일 보도 기준으로 2027년에 B2G 발주가 정상화되고 B2C 운영 효율화가 이뤄지면 실적이 본격적으로 반등할 것이라고 밝혔다. 4분기부터 초기 구축비 집행이 마무리되고 신규 B2C 거점이 본궤도에 오를 것이라는 설명도 함께 나왔다. 증권가 전망은 수치가 더 크다. 이데일리는 2026년 9월 30일 기사에서 500억원 규모 대형 프로젝트를 언급하며 2027년 매출 900억원 이상 가능성을 제목에 담았다. ARC리서치 김용호 연구원은 2026년 9월 보고서에서 아스트라 코어 450억원, 해리포터 IP 150억원, 기존 및 기타 사업 350억원의 매출 구성을 제시하며 2027년 성장 국면 진입을 전망했다. 반면 하나증권은 2026년 1월 보고서에서 2026년 매출 467억원(전년 대비 54.9% 증가)과 영업이익 흑자 전환을 예상했으나, 2026년 1분기부터 3분기까지 영업손실이 이어지면서 예상과 실적의 차이가 커졌다. 수주 측면에서는 2025년 12월부터 2026년 1월 초까지 충남 태안, 강원 강릉, 대구 미디어아트 테마파크 등 3건을 공시했고, 대구 프로젝트에는 운영 수익 배분 구조가 적용된다. 재무 측면에서는 2026년 11월 6일 이사회에서 단기차입금 증액이 결의돼 총액이 190억원이 됐다. 다만 차입 금리와 만기, 자금이 투입될 시설은 공시에 명시되지 않았다. 연내 공개 예정인 신규 IP 전시와 해외 시장으로의 플랫폼 확장도 회사가 계획으로 밝힌 항목이다.",
+  "en": "Based on a November 17, 2026 report, the company said that a normalization of B2G orders in 2027 and greater efficiency in B2C operations should lead to a full earnings recovery. It also said early construction spending should wrap up from Q4 2026 and that new B2C venues should reach full operation. Brokerage forecasts are more ambitious. On September 30, 2026, Edaily reported a large project worth KRW 50 billion and headlined the possibility of 2027 revenue above KRW 90 billion. In a September 2026 report, ARC Research analyst Kim Yong-ho presented a 2027 revenue mix of ASTRA CORE KRW 45 billion, Harry Potter IP KRW 15 billion and existing and other businesses KRW 35 billion, and projected entry into a growth phase. Hana Securities, by contrast, had expected 2026 revenue of KRW 46.7 billion (up 54.9%) and a swing to operating profit in a January 2026 report, yet operating losses continued from Q1 through Q3 2026, widening the gap between that forecast and actual results. On orders, the company disclosed three new projects from December 2025 to early January 2026, including Taean, Gangneung and a Daegu media art theme park, and the Daegu project carries an operating revenue-sharing structure. On financing, the board approved additional short-term borrowing on November 6, 2026, lifting total short-term debt to KRW 19 billion. The interest rate, maturity and facilities to be funded were not specified in the disclosure. The new IP exhibition the company planned to unveil within 2026 and its planned overseas expansion of the platform are items the company has described as plans."
  },
  "valuation_comment": {
-  "ko": "닷밀은 2025년 3분기 흑자 전환 이후 다시 적자로 돌아선 최근 실적 흐름 때문에 이익 기준 밸류에이션 지표를 안정적으로 산출하기 어려운 구간에 있다. 최근 네 개 분기 합산 순이익이 적자인 만큼 주가수익비율은 통상적인 방식으로 계산되지 않으며, 이 경우 시장에서는 주가와 순자산의 관계를 참고 지표로 활용하는 경우가 많다. 현재 주가는 주당순자산 대비 소폭 할인된 수준에서 거래되는 편으로, 순자산가치와 큰 차이 없이 형성돼 있다는 평가가 가능하다. 회사가 상장 이후 아직 배당을 지급한 이력이 없어 배당 관련 지표는 업종 평균과 직접 비교하기 어려운 상태다. 과거 실적 흐름을 보면 2023~2024년 흑자와 2025년 이익률 둔화, 2026년 상반기 재차 적자라는 등락이 반복돼 왔고, 이 같은 이익의 방향성 자체가 향후 밸류에이션 재평가 논의의 핵심 변수가 될 것으로 보인다.",
-  "en": "Because Dotmill swung back into losses after turning profitable in Q3 2025, the company sits in a stretch where earnings-based valuation metrics are difficult to calculate on a stable basis. With net income over the trailing four quarters in loss, the price-to-earnings ratio is not computed in the conventional way, and in such cases the market often refers instead to the relationship between share price and net asset value. The current share price trades at a modest discount to book value per share, suggesting it is broadly in line with net asset value rather than showing a large premium or discount. As the company has not paid a dividend since listing, dividend-related metrics are difficult to compare directly against industry averages. Looking at the historical earnings path—profitability in 2023-2024, margin deterioration in 2025, and a return to losses in the first half of 2026—this recurring swing in the direction of earnings itself is likely to remain the central variable in any future valuation reassessment."
+  "ko": "주가순자산비율(PBR)은 1배를 밑도는 구간에서 거래되고 있다. 2025년 말 자본총계와 지배주주 지분은 각각 343억원이고 부채총계는 117억원으로, 장부상 순자산에 비해 주가가 낮은 수준이다. 다만 순자산 대비 낮은 배수가 자산 가치의 실현을 보장하는 것은 아니다. 2026년 들어 단기차입금이 두 차례 늘어 부채 구조의 변화도 함께 봐야 한다. PER은 최근 네 개 분기 기준 순손실이어서 산출되지 않으며, 이익 기반 배수로는 비교가 어려운 상태다. 연간으로는 2023년 순손실에서 2024년 흑자로 전환했으나 2025년 지배주주 순이익은 전년 대비 17.2% 감소했고, 2026년에도 분기 적자가 이어져 이익 회복의 방향은 아직 확인되지 않았다. 배당 지급은 확인되지 않아 배당 환원 기준의 비교는 제한적이다.",
+  "en": "Price-to-book ratio is trading below 1x. At the end of 2025, total equity and equity attributable to controlling shareholders were each KRW 34.3 billion, and total liabilities were KRW 11.7 billion, so the share price sits low relative to book net assets. A low multiple to book value, however, does not by itself mean the asset value will be realized. Short-term borrowing increased twice in 2026, so the change in the debt structure should be read alongside the multiple. The PER cannot be calculated because the company posted net losses over the last four quarters, so earnings-based multiples are hard to compare. On an annual basis, the company moved from a net loss in 2023 to a profit in 2024, but net profit attributable to controlling shareholders fell 17.2% in 2025, and quarterly losses continued in 2026, so a direction of earnings recovery has not yet been confirmed. No dividend payment has been confirmed, so comparison on a shareholder return basis is limited."
  },
  "bull": [
   {
    "title": {
-    "ko": "글로벌 IP 파트너십 확대",
-    "en": "Expanding Global IP Partnerships"
+    "ko": "B2C 비중의 빠른 확대",
+    "en": "Rapid rise in B2C share"
    },
    "body": {
-    "ko": "워너 브라더스 디스커버리 글로벌 익스피리언스와의 협업으로 드래곤볼, 해리 포터 등 강력한 글로벌 IP 콘텐츠를 국내에 잇따라 선보이고 있다. 멀린 엔터테인먼트와의 코엑스 씨라이프 프로젝트 성공 이후 추가 협업 가능성도 제기된다. CEO는 일본 등 다수 글로벌 IP사와의 계약이 임박했다고 밝힌 바 있어, 성사될 경우 사업 다각화의 새로운 축이 될 수 있다.",
-    "en": "Through its partnership with Warner Bros. Discovery Global Experiences, the company has successively launched powerful global IP content in Korea, including Dragon Ball and Harry Potter. Following the successful Coex SEA LIFE project with Merlin Entertainments, further collaboration has also been raised as a possibility. The CEO has said contracts with multiple global IP companies, including a Japanese partner, were imminent, which could become a new axis of business diversification if realized."
+    "ko": "3분기 매출에서 B2C 비중은 58.8%로 전분기 27.4%보다 높아졌다(ZDNet Korea, 2026년 11월 17일 보도). B2C는 입장권, F&B, 굿즈 수익을 소비자로부터 직접 확보하는 구조라 지자체 발주 일정에 덜 좌우되는 수익원이 될 수 있다는 점이 강점으로 꼽힌다. 글로우 사파리, 비밀 플랫폼, 글로벌 IP 전시가 이 축을 받친다.",
+    "en": "B2C's share of Q3 2026 revenue rose to 58.8% from 27.4% in the prior quarter (ZDNet Korea, November 17, 2026). B2C earns admissions, food and beverage, and merchandise revenue directly from consumers, which is cited as a strength because it is less tied to local government tender timing. The Glow Safari venues, the bemill platform and global IP exhibitions support this business."
    }
   },
   {
    "title": {
-    "ko": "매출 규모 자체는 확대 추세",
-    "en": "Revenue Scale Continues to Expand"
+    "ko": "글로벌 IP 파이프라인",
+    "en": "Global IP pipeline"
    },
    "body": {
-    "ko": "연간 매출은 2023년 187.8억원에서 2024년 236.3억원, 2025년 338.4억원으로 꾸준히 늘었다. 상장 이후 자본 확충으로 재무구조도 개선돼, 2023년 3,999.2%에 달했던 부채비율이 2025년 34.1%까지 낮아졌다. B2C 테마파크의 반복 매출 확대와 대형 B2G 프로젝트 집행이 맞물릴 경우 3분기와 같은 실적 서프라이즈가 재현될 가능성이 있다.",
-    "en": "Annual revenue rose steadily from KRW 18.78 billion in 2023 to KRW 23.63 billion in 2024 and KRW 33.84 billion in 2025. The capital structure also improved after listing, with the debt ratio falling from 3999.2% in 2023 to 34.1% in 2025. If growing recurring revenue from B2C theme parks coincides with execution of large B2G projects, an earnings surprise similar to Q3 2025 could recur."
+    "ko": "멀린 엔터테인먼트와의 협업과 신규 파트너 합류로 글로벌 IP 파이프라인이 넓어졌다는 평가가 있다(머니투데이 더벨, 2026년 2월). 2026년 6월 출시한 비밀 플랫폼은 해외 시장 확장 계획을 담고 있다. 회사는 연내 공개할 신규 IP 전시에 플랫폼 이용자 혜택을 제공하겠다고 밝혔다.",
+    "en": "A February 2026 report by The Bell said the collaboration with Merlin Entertainments and new partners widened the global IP pipeline. The bemill platform, launched in June 2026, includes plans for overseas expansion. The company said it would offer platform users benefits for a new IP exhibition to be unveiled within 2026."
    }
   },
   {
    "title": {
-    "ko": "최대주주의 지속적 지분 매입",
-    "en": "Continued Share Purchases by the Largest Shareholder"
+    "ko": "공공 수주와 도시재생 수요",
+    "en": "Public orders and urban regeneration demand"
    },
    "body": {
-    "ko": "정해운 대표는 2026년 8월 3~4일과 8월 10~11일 등 여러 차례 장내매수를 통해 지분율을 꾸준히 늘려왔다. 특별관계자 포함 지분율은 30%대 중후반까지 상승한 것으로 공시됐다. 이는 경영진이 회사 지분을 지속적으로 확대하고 있다는 사실로, 시장 참여자들이 참고할 수 있는 정보다.",
-    "en": "CEO Jung Hae-woon has steadily increased his stake through repeated open-market purchases, including on August 3-4 and August 10-11, 2026. His combined stake with related parties has been disclosed as rising into the mid-to-high 30% range. This is a factual data point on management's continued accumulation of company shares that market participants may take into account."
+    "ko": "2025년 12월부터 2026년 1월 초까지 3건의 신규 프로젝트를 공시했고, 하나증권은 공공 미디어아트 프로젝트 증가가 사업 영역 확대에 긍정적이라고 평가했다(뉴스핌, 2026년 1월 26일). 대구 프로젝트에는 운영 수익 배분 구조가 적용돼 수익성 개선에 기여할 수 있다는 전망이 있다.",
+    "en": "The company disclosed three new projects from December 2025 to early January 2026, and Hana Securities said the rise in public media art projects is positive for its business expansion (Newspim, January 26, 2026). The Daegu project carries an operating revenue-sharing structure, which analysts said could help improve profitability."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "이익 안정성 부재",
-    "en": "Lack of Earnings Stability"
+    "ko": "매출과 영업손익의 동반 악화",
+    "en": "Revenue and operating results deteriorating together"
    },
    "body": {
-    "ko": "2025년 3분기 대규모 흑자 이후 4분기에는 이익 규모가 크게 줄었고, 2026년 1분기와 2분기에는 각각 15.36억원, 16.84억원의 영업손실을 내며 연속 적자로 돌아섰다. 최근 네 개 분기 합산 지배주주 순이익도 적자를 기록해, 분기 실적의 변동성이 매우 크다는 점이 확인된다. 대형 계약 집행 시점에 실적이 좌우되는 구조상 이 같은 편차는 앞으로도 반복될 수 있다.",
-    "en": "After a large profit surge in Q3 2025, earnings shrank sharply in Q4, and the company swung back to consecutive operating losses of KRW 1.54 billion and KRW 1.68 billion in Q1 and Q2 2026 respectively. Net income attributable to owners over the trailing four quarters was also in loss, confirming very high quarterly earnings volatility. Because results are driven by the timing of large contract execution, this kind of swing could recur."
+    "ko": "2026년 3분기 매출은 58.1억원으로 전년 동기 대비 57.9% 감소했고, 영업손실은 32.2억원으로 적자로 돌아섰다. 2026년 1분기부터 3분기까지 3개 분기 연속 영업손실이며, 최근 4개 분기 지배주주 순손실 합계는 53.7억원이다. 2025년 영업이익률도 0.4%로 떨어졌다.",
+    "en": "Q3 2026 revenue was KRW 5.81 billion, down 57.9% year on year, and the operating loss reached KRW 3.22 billion. Operating losses have continued for three consecutive quarters from Q1 2026 through Q3 2026, and net losses attributable to controlling shareholders over the last four quarters total KRW 5.37 billion. The operating margin also fell to 0.4% in 2025."
    }
   },
   {
    "title": {
-    "ko": "수주 의존형 매출 구조",
-    "en": "Order-Dependent Revenue Structure"
+    "ko": "공공 발주 의존과 일정 변동",
+    "en": "Dependence on public orders and timing swings"
    },
    "body": {
-    "ko": "실감미디어 프로젝트는 개별 계약 단위가 커 수주 성패가 매출에 직접적 영향을 미치는 특성을 지닌다. B2G·B2B 계약은 발주처 내부 사정에 따라 일정이 지연되는 경우가 잦아, 계획한 시점에 매출이 인식되지 않을 위험이 있다. 글로벌 IP 계약도 다수가 아직 NDA 상태로 구체적인 조건이나 매출 기여도가 공개되지 않았다.",
-    "en": "Immersive media projects are typically large individual contracts, meaning that winning or losing a bid has a direct impact on revenue. B2G and B2B contracts often face schedule delays due to internal client circumstances, raising the risk that revenue may not be recognized on the planned timeline. Many of the global IP contracts also remain under NDA, with specific terms and revenue contribution not yet disclosed."
+    "ko": "공공 수주 매출은 지자체 예산 편성과 발주 일정에 따라 인식 시기가 달라진다. 회사 스스로 2026년 상반기 공공 발주 지연을 실적 둔화의 원인으로 설명했다. 2026년 1~3분기 누적 기준 B2G 비중이 62.3%로 보도돼, 발주 공백이 매출 전체에 직접 영향을 주는 구조다.",
+    "en": "Public project revenue depends on local government budget allocation and tender timing. The company itself cited delayed public orders in the first half of 2026 as a cause of the slowdown. Cumulative B2G share for January to September 2026 was reported at 62.3%, so gaps in public orders feed directly into total revenue."
    }
   },
   {
    "title": {
-    "ko": "자본기반이 상대적으로 얇음",
-    "en": "Relatively Thin Capital Base"
+    "ko": "차입 확대와 재무 부담",
+    "en": "Expanded borrowing and financial burden"
    },
    "body": {
-    "ko": "지배주주 자본은 2025년 말 기준 342.99억원으로 상장 전인 2023년의 6.48억원 대비 크게 개선됐지만, 절대 규모는 여전히 작은 편이다. 상장 전인 2023년에는 영업활동현금흐름이 -23.46억원으로 부진했던 이력이 있어, 대형 프로젝트 확대 국면에서 자금 조달 필요성이 다시 커질 가능성을 배제할 수 없다.",
-    "en": "Owners' equity stood at KRW 34.30 billion at the end of 2025, a large improvement from KRW 0.65 billion before listing in 2023, but the absolute scale remains relatively small. The company also has a history of weak operating cash flow, at KRW -2.35 billion in 2023 before listing, so the possibility of renewed funding needs as large projects expand cannot be ruled out."
+    "ko": "2026년 3월 19일 115억원, 11월 6일 38억 6,500만원의 단기차입금 증액이 결의돼 총액이 190억원이 됐다. 차입 금리, 상환 만기, 자금이 투입될 시설은 공시에 명시되지 않았다. 신용보증기금의 혁신아이콘 보증을 활용한다는 점은 있으나, 영업손실이 이어지는 가운데 차입이 늘어난 점은 부담 요인이다.",
+    "en": "Short-term borrowing was increased by KRW 11.5 billion on March 19, 2026 and by KRW 3.865 billion on November 6, 2026, bringing the total to KRW 19 billion. The interest rate, repayment maturity and facilities to be funded were not specified in the disclosures. The company relies on a guarantee under the Korea Credit Guarantee Fund's innovation icon program, but borrowing has grown while operating losses continue."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "수주·계약 리스크",
-    "en": "Order and Contract Risk"
+    "ko": "실적 변동성",
+    "en": "Earnings volatility"
    },
    "body": {
-    "ko": "B2G·B2B 매출은 개별 대형 계약의 체결·집행 시점에 크게 의존한다. 우선협상지위를 확보한 공공 프로젝트도 최종 계약까지 이어지지 않을 가능성이 있으며, 계약 지연이 발생하면 해당 분기 실적이 예상보다 부진할 수 있다.",
-    "en": "B2G and B2B revenue depends heavily on the timing of signing and executing individual large contracts. Public projects for which the company holds preferred negotiation status may not necessarily convert into final contracts, and any delay could lead to weaker-than-expected quarterly results."
+    "ko": "공공 발주와 대형 프로젝트의 인식 시기가 분기마다 바뀌면서 매출 흐름이 크게 흔들린다. 분기 매출은 2025년 3분기 138억원에서 2026년 2분기 52억원으로 낮아졌다. 회사가 밝힌 2027년 정상화 시점이 늦춰지면 적자 구간이 더 길어질 수 있다.",
+    "en": "Revenue recognition for public projects and large contracts shifts from quarter to quarter, causing sharp swings in sales. Quarterly revenue fell from KRW 13.8 billion in Q3 2025 to KRW 5.2 billion in Q2 2026. If the normalization the company expects for 2027 is delayed, the period of losses could extend."
    }
   },
   {
    "cat": {
-    "ko": "실적 변동성 리스크",
-    "en": "Earnings Volatility Risk"
+    "ko": "재무·유동성",
+    "en": "Financial and liquidity"
    },
    "body": {
-    "ko": "2025년 3분기 흑자에서 2026년 1·2분기 연속 적자로 전환된 사례처럼, 분기별 실적의 편차가 매우 크다. 이 같은 변동성은 향후에도 계절성(B2C 성수기)과 대형 프로젝트 집행 시점에 따라 반복될 가능성이 있다.",
-    "en": "As shown by the swing from a Q3 2025 profit to consecutive losses in Q1 and Q2 2026, quarterly results show very large variance. This volatility could recur going forward depending on seasonality (B2C peak season) and the timing of large project execution."
+    "ko": "단기차입금이 2026년 들어 늘었고, 실제 차입 실행 여부와 금리, 만기는 추가 공시로 확인이 필요하다. 2025년 말 자본총계는 343억원이지만 영업손실이 계속되면 자본 감소 폭이 커질 수 있다. 2026년 분기별 현금흐름은 정기보고서로 아직 확인되지 않았다.",
+    "en": "Short-term borrowing increased in 2026, and whether the loans have been drawn and at what rate and maturity requires confirmation from further disclosures. Total equity was KRW 34.3 billion at the end of 2025, but continued operating losses could erode it. Quarterly cash flow for 2026 has not yet been confirmed in a periodic report."
    }
   },
   {
    "cat": {
-    "ko": "글로벌 사업 불확실성",
-    "en": "Global Business Uncertainty"
+    "ko": "주가 변동성",
+    "en": "Share price volatility"
    },
    "body": {
-    "ko": "일본 등 해외 글로벌 IP사와의 계약이 임박했다고 언급됐으나 NDA로 세부 조건이 공개되지 않은 상태다. 해외 진출이 본격화될 경우 환율, 현지 파트너와의 협상, 운영 리스크 등 국내 사업과는 다른 변수가 새롭게 발생할 수 있다.",
-    "en": "While contracts with overseas global IP companies, including a Japanese partner, have been described as imminent, specific terms remain undisclosed due to NDAs. If overseas expansion accelerates, new variables distinct from the domestic business—such as currency risk, negotiations with local partners, and operational risk—could emerge."
+    "ko": "2026년 7월 27일 종가 급변 요건으로 투자주의종목에 하루 지정됐고, 거래소는 단기 주가 변동성에 주의를 요구했다. 주가 움직임이 큰 구간에서 실적 발표 전후의 등락이 확대될 수 있다는 점이 위험 요인이다. 주당 지표의 공시 갱신에 따라 밸류에이션 해석도 달라질 수 있다.",
+    "en": "On July 27, 2026, the stock was designated a short-term investment warning stock for one day after meeting the closing price surge criteria, and the exchange flagged short-term volatility. Large price moves can widen around earnings releases. Valuation interpretation may also shift as per-share disclosures are updated."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 15일까지",
-    "en": "Through November 15, 2026"
+    "ko": "2026년 12월(연내)",
+    "en": "December 2026 (by year-end)"
    },
    "what": {
-    "ko": "서울 성수동 드래곤볼 히어로즈 라이즈 전시 종료 시점까지 관람객 유입과 B2C 매출 기여도를 확인할 필요가 있다.",
-    "en": "Through the end of the Dragon Ball Heroes Rise exhibition in Seongsu, Seoul, visitor traffic and its contribution to B2C revenue should be monitored."
+    "ko": "연내 공개를 예고한 신규 IP 전시의 오픈 여부와 B2C 매출 반응이 다음 확인 지점이다. 2026년 3분기 B2C 비중이 58.8%까지 올라온 흐름이 이어지는지가 관건이다.",
+    "en": "The next checkpoint is whether the new IP exhibition, which the company has said it will unveil within the year, actually opens, and how B2C sales respond. The key question is whether the trend that lifted the B2C share to 58.8% in the third quarter of 2026 continues."
    }
   },
   {
    "when": {
-    "ko": "2026년 11월 초(3분기 실적 공시 예상)",
-    "en": "Early November 2026 (expected Q3 disclosure)"
+    "ko": "2027년 3월 말(2026년 사업보고서 제출 기한)",
+    "en": "Late March 2027 (2026 annual report deadline)"
    },
    "what": {
-    "ko": "2026년 3분기 실적 공시를 통해 2026년 상반기 연속 적자에서 벗어나는지, B2G·B2C 성수기 효과가 재현되는지 확인할 시점이다.",
-    "en": "The Q3 2026 earnings disclosure will show whether the company breaks out of the consecutive losses seen in the first half of 2026 and whether B2G/B2C peak-season effects reappear."
+    "ko": "2026년 사업보고서로 연간 매출과 4분기 영업손익이 확정된다. 2026년 4분기 손실 폭과 연간 영업이익률이 다음 확인 지점이다.",
+    "en": "The 2026 annual report will confirm full-year revenue and fourth-quarter operating profit or loss. The size of the fourth-quarter 2026 loss and the full-year operating margin are the next checkpoints."
    }
   },
   {
    "when": {
-    "ko": "2026년 12월",
-    "en": "December 2026"
+    "ko": "2027년 5월 15일(1분기 분기보고서 제출 기한)",
+    "en": "May 15, 2027 (Q1 2027 quarterly report deadline)"
    },
    "what": {
-    "ko": "제주 루나폴에서 워너 브라더스·피버와 협업한 해리 포터: 금지된 숲 체험 개장 여부와 초기 흥행 성과를 점검해야 한다.",
-    "en": "Whether the Harry Potter: Forbidden Forest Experience, developed with Warner Bros. and Fever, opens at Lunapol in Jeju as planned, and its early performance, should be checked."
+    "ko": "회사가 밝힌 B2G 발주 정상화가 1분기 매출에 반영되는지, 3개 분기 연속 이어진 영업손실이 끊기는지가 확인 지점이다.",
+    "en": "The checkpoints are whether the normalization of B2G orders, as stated by the company, is reflected in first-quarter revenue, and whether the operating losses that have continued for three consecutive quarters come to an end."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기 중",
-    "en": "During Q4 2026"
+    "ko": "차입 실행 시점 미정(2026년 11월 6일 이사회 결의 이후)",
+    "en": "Timing undisclosed (after the November 6, 2026 board resolution)"
    },
    "what": {
-    "ko": "미래에셋증권이 언급한 우선협상지위 확보 공공 프로젝트 2건의 최종 계약 체결 여부와 B2G 수주잔고 확대 여부를 확인해야 한다.",
-    "en": "Whether the two public projects, for which the company holds preferred negotiation status as noted by Mirae Asset Securities, are finalized into contracts, and whether the B2G order backlog expands, should be confirmed."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 4분기~2027년 초",
-    "en": "Q4 2026 through early 2027"
-   },
-   "what": {
-    "ko": "CEO가 언급한 일본 등 글로벌 IP사와의 신규 계약 체결 여부와 구체적 조건 공시를 확인해야 한다.",
-    "en": "Whether new contracts with global IP companies, including a Japanese partner as mentioned by the CEO, are signed, and whether specific terms are disclosed, should be confirmed."
+    "ko": "38억 6,500만원 단기차입의 실제 차입일, 금리, 만기, 자금 용도가 추가 공시로 나오는지가 다음 확인 지점이다.",
+    "en": "The next checkpoint is whether additional disclosures reveal the actual borrowing date, interest rate, maturity, and use of funds for the KRW 3.865 billion short-term borrowing."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "닷밀은 실감미디어 기반의 B2G·B2B·B2C 콘텐츠 사업을 영위하며, 2025년 3분기 상장 이후 최대 실적을 기록한 뒤 2026년 1·2분기 연속 적자로 되돌아가는 등 이익의 방향성이 반복적으로 뒤집히는 모습을 보이고 있다. 연간 매출은 2023년부터 2025년까지 꾸준히 확대됐고 상장을 통한 자본 확충으로 재무구조도 개선됐지만, 영업이익률은 2025년 0.4%까지 낮아지며 외형 성장과 수익성 개선 사이의 간극이 뚜렷하다. 워너 브라더스 디스커버리, 멀린 엔터테인먼트 등 글로벌 IP·테마파크 운영사와의 협업이 확대되고 있는 점은 사업 다각화의 긍정적 신호이나, 다수의 해외 계약이 아직 NDA 상태로 구체적 조건이 공개되지 않아 실제 매출 기여 시점은 불확실하다. 최대주주의 지속적인 장내매수는 경영진의 지분 확대를 보여주는 사실이지만 이것만으로 향후 실적 방향을 단정할 근거는 되지 않는다. 최근 네 개 분기 합산 순이익이 적자인 만큼 이익 기준 밸류에이션 지표는 안정적으로 해석하기 어려운 구간에 있으며, 향후 3분기 실적 공시와 글로벌 IP 계약의 구체화 여부가 회사의 실적 흐름을 판단하는 핵심 변수가 될 것으로 보인다.",
-   "en": "Dotmill operates a B2G, B2B and B2C content business built on immersive media technology, and its earnings direction has repeatedly flipped—recording its best quarter since listing in Q3 2025 before returning to consecutive losses in Q1 and Q2 2026. Annual revenue grew steadily from 2023 through 2025, and the capital structure improved following the listing, yet operating margin fell to just 0.4% in 2025, highlighting a clear gap between top-line growth and profitability improvement. The expansion of partnerships with global IP and theme park operators such as Warner Bros. Discovery and Merlin Entertainments is a positive sign for business diversification, but many overseas contracts remain under NDA with specific terms undisclosed, leaving the timing of their actual revenue contribution uncertain. The largest shareholder's continued open-market purchases demonstrate management's growing stake, but this fact alone is not sufficient grounds to determine the future direction of earnings. With net income over the trailing four quarters in loss, earnings-based valuation metrics remain difficult to interpret on a stable basis, and the upcoming Q3 earnings disclosure along with the concretization of global IP contracts are likely to be the key variables in assessing the company's earnings trajectory going forward."
+   "ko": "닷밀은 2025년 매출 338억원(전년 대비 43.2% 증가)으로 외형을 키웠지만, 영업이익은 1.2억원으로 줄었고 2026년 1분기부터 3분기까지 3개 분기 연속 영업손실이 이어졌다. 2026년 3분기 매출은 58.1억원으로 전년 동기 대비 57.9% 감소했으며, 같은 분기 B2C 비중은 58.8%로 높아졌다. 회사는 상반기 공공 발주 지연과 신사업 초기 비용이 겹쳤다고 설명하고 2027년 B2G 발주 정상화를 기대하며, 증권사들은 2027년 성장 국면 진입을 전망하고 있다. 반면 하나증권이 2026년 초 예상했던 흑자 전환은 2026년 1~3분기 실적과 거리가 생겼다. 밸류에이션에서 PBR은 1배 미만이지만 PER은 최근 네 개 분기 순손실로 산출되지 않는다. 재무 측면에서 2026년 들어 단기차입금이 늘어 총액이 190억원이 됐고, 자금 용도와 금리는 추가 공시로 확인이 필요하다. 다음 확인 지점은 2026년 사업보고서의 연간 실적과 2027년 1분기 B2G 매출 회복 여부다.",
+   "en": "dotmill grew its 2025 revenue to KRW 33.8 billion (up 43.2%), but operating profit fell to KRW 123 million and operating losses have continued for three consecutive quarters from Q1 2026 through Q3 2026. Q3 2026 revenue was KRW 5.81 billion, down 57.9% year on year, while B2C's share of that quarter's revenue rose to 58.8%. The company attributes the slowdown to delayed public orders and early costs for new businesses, and expects B2G orders to normalize in 2027, while some brokerages project entry into a growth phase in 2027. By contrast, the swing to profit that Hana Securities expected in early 2026 has diverged from the January to September 2026 results. On valuation, the price-to-book ratio is below 1x, but the PER cannot be calculated because of net losses over the last four quarters. On the financial side, short-term debt rose in 2026 to KRW 19 billion in total, and the use of funds and interest rate require confirmation from further disclosures. The next checkpoints are the annual results in the 2026 annual report and whether B2G revenue recovers in Q1 2027."
   }
  },
  "sources": [
-  "https://thevc.kr/dotmill",
-  "https://www.betanews.net/article/view/beta202608110014",
-  "https://news.mtn.co.kr/news-detail/2025110415094812833",
-  "https://m.thebell.co.kr/m/newsview.asp?svccode=&newskey=202511211504540360105496",
-  "https://www.asiae.co.kr/article/2025110414130196659",
-  "https://securities.miraeasset.com/bbs/download/2140540.pdf?attachmentId=2140540",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A464580&cID=&MenuYn=Y&ReportGB=&NewMenuID=101&stkGb=701",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A464580&cID=&MenuYn=Y&ReportGB=D&NewMenuID=Y&stkGb=701",
-  "https://m.irgo.co.kr/IR-COMP/464580/%EB%8B%B7%EB%B0%80-IR-PAGE",
-  "https://www.butler.works/ko/companies/01605282",
-  "https://itooza.com/vscore/464580",
   "https://www.valueline.co.kr/finance/summary/464580",
-  "https://www.newswell.co.kr/news/articleView.html?idxno=10510",
-  "https://www.news2day.co.kr/article/20251202500213",
-  "https://www.38.co.kr/html/ipo/ipo.htm?o=v&key=1&no=3263",
-  "https://www.newsis.com/view/NISX20241022_0002930007",
-  "https://www.newspim.com/news/view/20260807000057",
-  "https://news.infostock.co.kr/a"
+  "https://m.sedaily.com/article/20095541",
+  "https://www.butler.works/ko/companies/01605282",
+  "https://marketin.edaily.co.kr/News/ReadE?newsId=03575206645484344",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A464580&cID=&MenuYn=Y&ReportGB=B&NewMenuID=Y&stkGb=701",
+  "https://www.wanted.co.kr/company/23344",
+  "https://m.news.nate.com/view/20260622n21605",
+  "https://www.newsprime.co.kr/news/article/?no=694877",
+  "https://itooza.com/vscore/464580",
+  "https://www.ddaily.co.kr/page/view/2026110617381569396",
+  "https://zdnet.co.kr/view/?no=20261117105507",
+  "https://www.newspim.com/news/view/20260126000056",
+  "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=713508",
+  "https://www.seoulexchange.kr/stocks/%EB%8B%B7%EB%B0%80-1324/",
+  "https://m.news.nate.com/view/20260326n33437",
+  "https://zdnet.co.kr/view/?no=20260622173413",
+  "https://www.mt.co.kr/stock/2026/02/13/2026021307479618408",
+  "https://www.topstarnews.net/news/articleView.html?idxno=16145015"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "464580",
  "name": "닷밀",
  "name_en": "dotmill Inc.",
@@ -233,11 +223,11 @@
   "미디어·엔터"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 18:02",
- "dataDate": "20260904",
+ "reportDate": "2026-11-18",
+ "reportTs": "2026-11-18 19:38",
+ "dataDate": "20261117",
  "quant": {
-  "asOf": "2026-09-05",
+  "asOf": "2026-11-18",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -292,12 +282,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 5730641871,
-    "op": -502176457,
-    "np_owner": -570020668
-   },
-   {
     "q": "2025Q3",
     "rev": 13790068270,
     "op": 1797830610,
@@ -320,25 +304,31 @@
     "rev": 5204533654,
     "op": -1684240425,
     "np_owner": -1692485062
+   },
+   {
+    "q": "2026Q3",
+    "rev": 5809566999,
+    "op": -3223129632,
+    "np_owner": -2966116767
    }
   ],
   "valuation": {
-   "price": 1610,
-   "mcap": 0.0296,
+   "price": 1242,
+   "mcap": 0.0229,
    "shares": 18406089,
    "total_shares": 18406089,
    "wavg_shares": 18500125,
    "per": null,
-   "eps": -28,
-   "pbr": 0.9561,
-   "bps": 1684,
-   "roe_ttm": -1.7,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": -531900912,
+   "eps": -292,
+   "pbr": 0.8155,
+   "bps": 1523,
+   "roe_ttm": -17.4,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": -5372453410,
    "ccy": "KRW",
    "bps_src": "자체",
    "eps_src": "공시",
-   "pbr_krx": 0.86,
+   "pbr_krx": 0.67,
    "bps_krx": 1863.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
@@ -347,5 +337,6 @@
     "per": "loss"
    }
   }
- }
+ },
+ "textRules": 3
 }
