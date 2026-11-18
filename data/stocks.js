@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-11-19 03:31",
+  "lastUpdated": "2026-11-19 03:50",
   "dataDate": "20261118",
   "stocks": [
     {
@@ -15797,7 +15797,7 @@ window.KOS_LIVE_DATA = {
       "name": "에이엘로봇",
       "name_en": "AL Robot Co.,Ltd",
       "market": "코스닥",
-      "sector": "기타",
+      "sector": "기계·장비",
       "price": 14340,
       "change": -18.52,
       "volume": 35911198,
@@ -15805,7 +15805,7 @@ window.KOS_LIVE_DATA = {
       "mcap": 0.173,
       "shares": 12065688,
       "categories": [
-        "기타",
+        "기계·장비",
         "로봇"
       ],
       "rank": 877
