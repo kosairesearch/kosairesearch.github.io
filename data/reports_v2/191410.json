@@ -333,9 +333,9 @@
    "total_shares": 17663618,
    "wavg_shares": 11256971,
    "per": null,
-   "eps": -580,
-   "pbr": 0.7428,
-   "bps": 2395,
+   "eps": null,
+   "pbr": null,
+   "bps": null,
    "roe_ttm": -36.9,
    "ttm_window": "2025Q4~2026Q3",
    "ttm_np_owner": -10249863773,
@@ -349,6 +349,13 @@
    "div": 0.0,
    "hidden": {
     "per": "loss"
+   },
+   "eps_hidden": {
+    "on": "2026-11-18",
+    "공시": -580,
+    "순이익÷주식수": -910,
+    "배수": 1.57,
+    "why": "두 공시가 어긋나 어느 쪽인지 모른다"
    }
   }
  },
