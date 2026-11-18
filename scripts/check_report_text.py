@@ -508,6 +508,9 @@ _AMT_HEAD = re.compile(rf"(?<![\d~·∼\-])(?P<y>20\d\d)년(?: (?P<n>[1-4])분�
                        rf"(?P<a>{_AMT_KO})(?!{_AMT_APPROX})")
 _AMT_NEXT = re.compile(rf"(?:\([^()]*\))?(?:으로|로|이고|이며|였고|이었고|를 기록했고|을 기록했고)?\s*(?:,|·|및|과|와|그리고)?\s*"
                        rf"(?P<m>{_AMT_MET})(?:은|는|이|가|도)? (?P<a>{_AMT_KO})(?!{_AMT_APPROX})")
+# 나열로 이어진 금액 바로 뒤에 다른 해가 붙으면 그 해의 금액이다 — '2025년 영업이익은 54.8억원으로, 영업손실 352억원이던 2024년과 대비되는
+# 흑자 전환'(2026-11-18 · 맞는 문장이 2025년 영업손실로 읽혀 교정 뒤에도 남아 저장되지 않았다).
+_AMT_OTHER_YEAR = re.compile(r"\s*(?:이던|였던|이었던|인|의)\s*(?P<y>20\d\d)년")
 _AMT_SKIP = re.compile(r"잠정|전망|예상|추정|컨센서스|목표|가이던스|계획|부문|사업부|자회사|종속|별도|누적|상반기|하반기|반기|합산|평균")
 _AMT_LEAD = (r"(?:(?:실제로|다만|한편|반면|또한|특히|이후|그러나|하지만|결국|그 결과|이에 따라|공시 기준으로|공시 기준|연결 기준으로|연결 기준"
              r"|회사 공시 기준|확정 실적에서|확정 실적 기준)\s*,?\s*)*")
@@ -713,6 +716,9 @@ def amount_hits(rep):
                     nx = _AMT_NEXT.match(s, pos)
                     if not nx:
                         break
+                    oy = _AMT_OTHER_YEAR.match(s, nx.end())
+                    if oy and oy.group("y") != m.group("y"):
+                        break           # 이어진 금액이 다른 해의 것이다('영업손실 352억원이던 2024년과') — 앞 해와 대조하지 않는다
                     pairs.append((nx.group("m"), nx.group("a"), nx.end()))
                     pos = nx.end()
                 for met, a, end in pairs:
@@ -1115,7 +1121,9 @@ def F_next_report(latest_q):
 # 'a year earlier' 처럼 문장 안의 다른 해를 기준으로 삼는 말은 걸지 않는다. 품질 등급이라 교정이 그 문장만 고친다.
 _YEAR_KO = re.compile(r"(?<![가-힣])(?:올해|지난해|작년|재작년|내년|내후년|금년|올\s?들어|올\s?(?:[1-4]분기|상반기|하반기))"
                       r"(?=(?:도|에|의|은|는|와|과|부터|까지|보다|처럼|만|이|가|로|으로|에는|에도|에서|에만|초|말|중)?(?![가-힣]))")
-_YEAR_EN = re.compile(r"\b(?:this|last|next) year(?:'s)?\b|\bthis (?:quarter|month)\b", re.I)
+# 'this quarter' · 'this month' 는 보지 않는다 — 연도 표현이 아니고, 위반 설명(연도를 숫자로)으로는 교정이 고치지 못했다(2026-11-18
+# 오후 공시 실행 · 체크포인트의 'This quarter' 2편이 교정 뒤에도 남아 저장되지 않았다).
+_YEAR_EN = re.compile(r"\b(?:this|last|next) year(?:'s)?\b", re.I)
 
 
 def year_rules_apply(rep):

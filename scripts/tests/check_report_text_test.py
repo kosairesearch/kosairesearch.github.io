@@ -698,6 +698,12 @@ eq("금액 뒤 '순손실' — '지배주주 순이익은 880억원 순손실로
 eq("금액 뒤 '당기순손실' · '의 순손실'도 손실로 읽는다",
    [arules(ko, quant=QD) for ko in ("2025년 지배주주 순이익은 880억원 당기순손실로 돌아섰다.", "2025년 지배주주 순이익은 880억원의 순손실이었다.")],
    [[], []])
+QO = {"annual": [{"year": 2025, "rev": 100000000000, "op": 5480000000, "np": 1000000000, "np_owner": 1000000000},
+                 {"year": 2024, "rev": 100000000000, "op": -35200000000, "np": -1000000000, "np_owner": -1000000000}],
+      "quarterly": [], "valuation": {"ccy": "KRW"}}
+eq("나열로 이어진 금액 뒤에 다른 해가 붙으면 그 해의 금액이다(127710 · 11/18 오후)",
+   arules("2025년 영업이익은 54.8억원으로, 영업손실 352억원이던 2024년과 대비되는 흑자 전환이었다.", quant=QO), [])
+eq("같은 해로 읽히는 나열은 여전히 잡는다", arules("2025년 영업이익은 54.8억원으로, 영업손실 352억원을 기록했다.", quant=QO), ["amount"])
 eq("손실 말이 없으면 여전히 잡는다", arules("2025년 지배주주 순이익은 880억원으로 늘었다.", quant=QD), ["amount"])
 eq("영어 'KRW 88.0 billion net loss'", arules(en="In 2025, net profit attributable to owners of the parent was KRW 88.0 billion net loss.",
                                               quant=QD), [])
@@ -716,6 +722,8 @@ for ko in ["2025년 매출은 전년 대비 10% 늘었다.", "전년도 매출�
     eq(ko, yr(ko), [])
 eq("영어 this year · last year · next year", [yr(en=t) for t in ("Revenue rose this year.", "It fell from last year.", "Next year's plan")],
    [["stale_year"]] * 3)
+eq("영어 'this quarter' 는 연도 표현이 아니다(교정이 고치지 못해 2편이 저장되지 않았다 · 11/18 오후)",
+   yr(en="Filing of the quarterly report for January to March 2027. This quarter's filing will show the trend."), [])
 eq("영어 year on year · a year earlier 는 된다", [yr(en=t) for t in ("up 5% year on year", "a year earlier")], [[], []])
 eq("이 규칙을 적은 지시문(textRules 3)으로 쓴 글에만 — 옛 판 · 업종 분석에는 걸지 않는다",
    [yr("올해 매출은 늘었다.", textRules=2), yr("올해 매출은 늘었다.", ticker="")], [[], []])
