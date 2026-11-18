@@ -256,11 +256,14 @@ function heroH(st){
   var cls=chg>0?'up':(chg<0?'down':'flat'), arrow=chg>0?'▲':(chg<0?'▼':'');
   var ph=(price!=null)
     ?'<span class="p">'+pyf(price,0,true)+'원</span><span class="c '+cls+'">'+arrow+' '+pct(Math.abs(chg),true).replace(/^\+/,'')+'</span><span class="d">'+fdate(DATA_DATE)+' 장마감</span>'
+    :(st.ipo&&st.ipo.list_date)?'<span class="d">'+ipoLine(st.ipo)+'</span>'
     :'<span class="d">시세 없음</span>';
   if(EN()&&I18&&I18.name) name=I18.name(st)||name;   /* 영어 화면은 영문명(자료의 name_en 을 다듬은 것) — 상장 폐지로 시세 자료에 없는 종목도 리포트의 영문명으로 */
   return '<div><div class="eyebrow"><b>'+esc(st.market||'')+'</b><span>'+esc(st.sector||'')+'</span><span>'+TK+'</span></div><h1 class="name">'+esc(name)+'</h1><div class="price">'+ph+'</div>'
     +'<div class="actions"><button type="button" class="btn btn-ink ico" id="watchBtn" aria-pressed="false"><svg class="wb-add" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg><svg class="wb-on" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span id="watchTxt">'+T.watch+'</span></button></div></div>';
 }
+/* 상장 전에 게시한 신규 상장 종목(리포트의 ipo · scripts/ipo_reports.py · 2026-11-18) — 시세 자료에 오르기 전에는 시세 대신 공모가 · 상장일 */
+function ipoLine(o){ return (o.offer_price?'공모가 '+pyf(o.offer_price,0,true)+'원 · ':'')+'상장일 '+fdate(o.list_date); }
 function statsH(st){
   var price=st.price, per,pbr,eps,div,dps,win,note;
   if(TIER==='v2'){ var val=(REP.quant&&REP.quant.valuation)||{}; per=val.per; pbr=val.pbr; eps=val.eps; div=val.div; dps=val.dps; win=val.ttm_window; }
@@ -535,9 +538,10 @@ function render(){
     var pm=document.getElementById('page'); PRE=null; pm.removeAttribute('data-pre'); pm.setAttribute('data-tier',PRE_TIER||'none');
     if(window.kosFitCharts) window.kosFitCharts(); if(window.kosTocInit) window.kosTocInit(); syncWatch(); return;
   }
-  var st=STOCK||{ticker:TK, name:(REP&&REP.name)||TK, name_en:(REP&&REP.name_en)||'', market:(REP&&REP.market)||'', sector:(REP&&REP.sector)||'', price:null, change:0};
+  var ipo=(!STOCK&&REP&&REP.ipo&&REP.ipo.list_date)?REP.ipo:null;   /* 시세 자료에 오르기 전의 신규 상장 종목 */
+  var st=STOCK||{ticker:TK, name:(REP&&REP.name)||TK, name_en:(REP&&REP.name_en)||'', market:(REP&&REP.market)||'', sector:(REP&&REP.sector)||'', price:null, change:0, shares:ipo?(ipo.shares||null):null, ipo:ipo};
   var stats=statsH(st);
-  var h='<header class="hero">'+heroH(st)+'</header><section class="stats" aria-label="핵심 지표">'+stats.html+'</section><p class="stats-note">'+stats.note+' · 시세 '+fdate(DATA_DATE)+' 장마감</p>';
+  var h='<header class="hero">'+heroH(st)+'</header><section class="stats" aria-label="핵심 지표">'+stats.html+'</section><p class="stats-note">'+(ipo?'시세와 지표는 상장일 장 마감 후 반영':stats.note+' · 시세 '+fdate(DATA_DATE)+' 장마감')+'</p>';
   var locked=false;
   if(LOADED){
     if(REP){

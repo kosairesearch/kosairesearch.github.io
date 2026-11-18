@@ -34,7 +34,9 @@ import generate_reports as g  # 프롬프트/DART/파싱 재사용 (import 시 m
 import check_report_text as C   # 저장 전 정리 · 검사 · 검토(2026-10-09 — 리포트 v2 · 업종 분석과 같은 기준)
 
 ROOT = Path(__file__).resolve().parent.parent
-STATE_JS = ROOT / "data" / "batch_state.json"
+# 상태 파일 — 신규 상장 작업 · 공시 트리거의 옛 형식 단계가 같이 쓴다. 상장 전 리포트 작업(ipo_reports.yml)은 자기 파일을 쓴다
+# (BATCH_STATE_FILE=data/ipo_batch_state.json · 2026-11-18) — 같은 파일을 쓰면 '지난 배치를 받기 전에는 새로 주문하지 않는다'에 서로 막힌다.
+STATE_JS = ROOT / (os.getenv("BATCH_STATE_FILE", "").strip() or "data/batch_state.json")
 # 저장하지 못한 신규 상장 종목의 연속 횟수(2026-10-09). 저장하지 못한 종목은 '리포트 없음'으로 남아 신규 상장 작업이 평일 밤마다
 # 다시 주문하는데, 같은 이유(검사 위반 · 잘린 글)로 계속 걸리면 상한 없이 돈이 나간다. new_listings.py 가 FAIL_MAX 번째부터
 # 재시도하지 않는다. 저장하면 그 종목 줄을 지운다. 사람이 다시 시도하게 하려면 이 파일에서 그 종목을 지운다.
@@ -138,12 +140,28 @@ def load_existing():
     return reports, fresh
 
 
+def extra_stocks():
+    """시세 자료에 아직 없는 종목 — 상장 전 리포트 작업(REPORT_EXTRA_STOCKS=ipo)이 넘긴 상장 예정 종목(data/ipo.json · 2026-11-18).
+    시세 칸은 비어 있고 공모 정보(ipo)가 붙는다 — 지시문(g.build_prompt)이 그것으로 공모 판 재료를 쓰고, 저장한 리포트에도 남는다."""
+    if os.getenv("REPORT_EXTRA_STOCKS", "").strip() != "ipo":
+        return {}
+    import ipo_listings
+    return ipo_listings.extra_stocks()
+
+
+def stock_map(data):
+    by_tk = {s["ticker"]: s for s in data["stocks"]}
+    for tk, st in extra_stocks().items():
+        by_tk.setdefault(tk, st)        # 시세 자료에 오른 종목은 시세 자료 쪽(상장 뒤에는 원래 신규 상장 리포트다)
+    return by_tk
+
+
 def submit(cl, as_of):
     data = g.load_stocks()
     tickers_env = os.getenv("REPORT_TICKERS", "").replace(" ", "")
     if tickers_env:
         want = [t for t in tickers_env.split(",") if t]
-        by_tk = {s["ticker"]: s for s in data["stocks"]}
+        by_tk = stock_map(data)
         stocks = [by_tk[t] for t in want if t in by_tk]
     else:
         stocks = sorted(data["stocks"], key=lambda x: x.get("mcap", 0) or 0, reverse=True)[:TOP_N]
@@ -512,7 +530,7 @@ def collect(cl, as_of):
         return False
 
     data = g.load_stocks()
-    by_tk = {s["ticker"]: s for s in data["stocks"]}
+    by_tk = stock_map(data)
     now_kst = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9)))
     report_date = now_kst.strftime("%Y-%m-%d")
     report_ts = now_kst.strftime("%Y-%m-%d %H:%M")
@@ -565,6 +583,9 @@ def collect(cl, as_of):
                 "textRules": C.TEXT_RULES,       # 이 글을 쓴 지시문의 본문 규칙 판 — 검사가 그 판의 규칙을 이 글에만 건다
                 "dataDate": data.get("dataDate", ""),
             })
+            if st.get("ipo"):
+                # 상장 전에 쓴 리포트 — 종목 페이지 머리가 시세 대신 공모가 · 상장일을 쓴다(build_stock_staging.heroH)
+                rep["ipo"] = {k: st["ipo"][k] for k in ("list_date", "offer_price", "shares") if st["ipo"].get(k) is not None}
             cand[tk] = C.prepare(fix_shape(rep))
         except Exception as e:
             fail += 1

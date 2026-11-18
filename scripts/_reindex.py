@@ -57,9 +57,17 @@ for f in sorted(V2.glob("*.json")):
 
 # 유령 리포트 정리 — universe에 없는(상장폐지 등) 종목 항목 제거.
 # universe 로딩에 실패하면(빈 집합) 안전하게 정리를 건너뛴다.
+# 상장 전에 게시한 신규 상장 종목(data/ipo.json · ipo_listings.active · 2026-11-18)은 시세 자료에 오르기 전에도 남긴다.
+try:
+    import sys as _sys
+    _sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import ipo_listings
+    ipo_keep = ipo_listings.active()
+except Exception:
+    ipo_keep = set()
 pruned = 0
 if universe:
-    for tk in [tk for tk in reports if tk not in universe]:
+    for tk in [tk for tk in reports if tk not in universe and tk not in ipo_keep]:
         del reports[tk]
         pruned += 1
     # 랜딩/리포트 카운트 통일용 — 전 종목 수를 함께 기록.

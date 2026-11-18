@@ -80,8 +80,11 @@ def tickers():
 
 def listed():
     """시세 자료(data/stocks.js)에 있는 종목. 나머지(상장 폐지 · 합병 · 거래 정지 등으로 리포트만 남은 종목)는 페이지는 두되 검색에
-    올리지 않는다(noindex · 사이트맵 제외) — 옛 실사이트에서도 사이트맵 · 로봇용 사본(r/)에 없던 종목이다. 시세가 다시 생기면 저절로 올라간다."""
-    return set(S.load_data()['stocks'])
+    올리지 않는다(noindex · 사이트맵 제외) — 옛 실사이트에서도 사이트맵 · 로봇용 사본(r/)에 없던 종목이다. 시세가 다시 생기면 저절로 올라간다.
+    상장 전에 게시한 신규 상장 종목(data/ipo.json · ipo_listings.active · 2026-11-18)은 시세 자료에 오르기 전에도 넣는다 — 상장일에 검색에
+    걸리려고 미리 쓴 페이지다."""
+    import ipo_listings
+    return set(S.load_data()['stocks']) | ipo_listings.active()
 
 
 def shell_dict():

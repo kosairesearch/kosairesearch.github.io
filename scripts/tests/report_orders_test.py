@@ -609,11 +609,11 @@ _WFD = HERE.parent.parent / ".github" / "workflows"
 _wd = yaml.safe_load((_WFD / "reports_watchdog.yml").read_text(encoding="utf-8"))
 _won = _wd.get(True) or _wd.get("on")
 _writers = ["filing_reports.yml", "collect_batch.yml", "generate_reports_v2.yml", "generate_reports_batch.yml",
-            "new_listings.yml"]
+            "new_listings.yml", "ipo_reports.yml"]   # 상장 전 신규 상장 리포트(2026-11-18)
 _names = [yaml.safe_load((_WFD / f).read_text(encoding="utf-8"))["name"] for f in _writers]
 _listed = ((_won.get("workflow_run") or {}).get("workflows") or [])
 ok(sorted(_listed) == sorted(_names) and (_won.get("workflow_run") or {}).get("types") == ["completed"],
-   "워치독 — 리포트를 쓰는 작업 다섯이 끝나면 돈다(작업 이름이 실제 이름과 같다)",
+   "워치독 — 리포트를 쓰는 작업 여섯이 끝나면 돈다(작업 이름이 실제 이름과 같다)",
    f"빠짐 {sorted(set(_names) - set(_listed))} · 없는 이름 {sorted(set(_listed) - set(_names))}")
 _wj = _wd["jobs"]["watchdog"]
 ok("workflow_run.head_branch == 'main'" in str(_wj.get("if")),

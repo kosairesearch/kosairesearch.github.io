@@ -87,7 +87,12 @@ def main():
     #   · stock.html?ticker=…  — 새 주소로 넘기는 껍데기다. 전에 2,687줄을 올렸다가, canonical 이 하나라 크롤러에게 전부
     #     "나는 /stock.html 이다" 라고 답해 네이버에서 'kosai' 를 찾으면 종목 상세가 사이트 대표로 올라온 일이 있었다.
     #   · r/{종목코드}.html     — 옛 로봇용 사본. 새 주소로 보내는 껍데기(scripts/retire_r_pages.py)로 바뀌었다.
-    listed = set(tickers)
+    # 상장 전에 게시한 신규 상장 종목(data/ipo.json · 2026-11-18)도 올린다 — 시세 자료에 오르기 전이라도 상장 종목이다(종목 페이지도 색인)
+    try:
+        import ipo_listings
+        listed = set(tickers) | ipo_listings.active()
+    except Exception:
+        listed = set(tickers)
     pages = sorted(f for f in (ROOT / "stock").glob("*.html") if f.stem in listed) if (ROOT / "stock").exists() else []
     for f in pages:
         out.append(
