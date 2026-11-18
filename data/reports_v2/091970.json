@@ -1,220 +1,218 @@
 {
  "title": {
-  "ko": "소재 기반 위 AI·로봇 전환기",
-  "en": "Materials Base, AI-Robotics Pivot Underway"
+  "ko": "3분기 흑자 전환, 남은 재무 부담과 신사업 초기",
+  "en": "Third-Quarter Profit Turn, Heavy Balance Sheet, Early-Stage AI Push"
  },
  "lead": {
-  "ko": "정전기 방지(ESD) 소재 기업이 원터치에이아이 인수와 사명 변경을 계기로 AI·로봇 비전 사업 진출을 선언했으며, 최근 분기 실적은 자산 매각에 따른 일회성 이익의 영향이 크게 작용했다.",
-  "en": "An ESD materials maker has declared entry into AI and robot vision through the Onetouch AI acquisition and corporate renaming, while its most recent quarterly results were heavily shaped by one-off gains from asset disposals."
+  "ko": "2026년 3분기 연결 영업이익이 흑자로 돌아섰지만, 2022년부터 2025년까지 4년 연속 적자와 2025년 말 부채비율 241.6%의 재무 부담이 남아 있고 AI·로봇 사업은 아직 초기 단계다.",
+  "en": "Lskairobot returned to a consolidated operating profit in the third quarter of 2026, but four consecutive years of losses in 2022–2025, a 241.6% debt ratio at end-2025, and an AI and robotics business still in its early stage remain the key constraints."
  },
  "keypoints": [
   {
-   "ko": "2026년 6월 나노캠텍에서 LSK아이로봇으로 사명 변경, AI 응용 소프트웨어·로봇 비전 중심 사업 재편을 선언했다.",
-   "en": "The company changed its name from Nanocamtec to LSK iRobot in June 2026, declaring a business pivot toward AI application software and robot vision."
+   "ko": "2026년 3분기 연결 매출은 134억원으로 전 분기 대비 31.7% 늘었고, 영업손실 11.4억원을 낸 2분기에서 영업이익 7.7억원으로 돌아섰다. 다만 같은 3분기 영업이익은 전년 동기 대비 10.2% 줄었다.",
+   "en": "Consolidated revenue in the third quarter of 2026 was KRW 13.4 billion, up 31.7% from the prior quarter, and operating profit of KRW 768 million turned the second quarter's operating loss of KRW 1.14 billion into a profit. Operating profit, however, fell 10.2% from a year earlier."
   },
   {
-   "ko": "2025년 연결 매출은 501억원, 영업손실 2.6억원, 지배주주순손실 87.6억원으로 전년 대비 적자가 확대됐다.",
-   "en": "Consolidated 2025 revenue was KRW 50.1 billion with an operating loss of KRW 0.26 billion and an owner net loss of KRW 8.76 billion, a wider loss than the prior year."
+   "ko": "연간 기준으로 2022년부터 2025년까지 4년 연속 지배주주 순손실이며, 2025년에는 영업이익 흑자에서 영업손실로 다시 전환했다.",
+   "en": "On an annual basis, the company posted net losses attributable to controlling shareholders for four consecutive years from 2022 to 2025, and in 2025 it swung back to an operating loss."
   },
   {
-   "ko": "2026년 2분기 지배주주순이익은 34.7억원으로 흑자 전환했으나 같은 분기 영업손익은 -11.4억원으로 적자였다.",
-   "en": "Q2 2026 owner net income turned positive at KRW 3.47 billion even as operating income remained negative at KRW -1.14 billion for the same quarter."
+   "ko": "2025년 말 부채총계는 524억원으로 자본총계 217억원을 웃돌아 부채비율이 241.6%다.",
+   "en": "At the end of 2025, total liabilities of KRW 52.4 billion exceeded total equity of KRW 21.7 billion, leaving a debt ratio of 241.6%."
   },
   {
-   "ko": "비핵심 자산(중국 법인, 캔버스엔·한일오닉스 지분) 매각으로 확보한 약 172억원을 활용해 전환사채(CB)를 순차 상환하며 재무구조를 조정 중이다.",
-   "en": "Using roughly KRW 17.2 billion raised from divesting non-core assets (a China subsidiary and stakes in Canvasen and Hanil Onyx), the company has been sequentially redeeming convertible bonds to adjust its balance sheet."
+   "ko": "AI·비전 검사 사업은 자회사 나노캠텍베트남의 생산라인 적용 단계이며, 외부 고객사 공급은 계획 단계다.",
+   "en": "The AI vision inspection business is at the stage of deployment on the Nano Chemtech Vietnam production line, while supply to outside customers is still a plan."
   },
   {
-   "ko": "원터치에이아이 인수 기술을 활용한 AI 버추얼 아티스트(체리나·채윤) 사업이 산업용 AI 솔루션 확장의 시험대로 진행 중이다.",
-   "en": "AI virtual artist projects (Cherina, Chaeyun), built on technology from the Onetouch AI acquisition, are proceeding as a testbed for expansion into industrial AI solutions."
+   "ko": "2026년 11월 6일과 9일 신해용 사내이사가 장내매수로 보통주 6,904주를 늘렸고, 보고서 기준일인 2026년 11월 11일 지분율은 0.39%다.",
+   "en": "On November 6 and 9, 2026, director Shin Hae-yong bought 6,904 common shares on the open market, bringing his stake to 0.39% as of the November 11, 2026 reporting date."
   }
  ],
  "business": {
-  "ko": "LSK아이로봇은 경기도 안성시에 본사를 둔 원천소재 기업으로, 1999년 12월 설립돼 2007년 코스닥에 상장됐다. 회사의 핵심 기술은 도전성소재인 유기전도성고분자, 이온콤플렉스 전도성고분자, 이온성액체, 카본나노튜브 등을 직접 개발·제조해 도전성원료, 도전성플라스틱 시트 및 레진, 기능성 ESD보호필름·테이프, 기능성 ESD보호막 등으로 공급하는 것이다. 이 정전기 방전(ESD) 방지 소재는 전자·반도체 부품의 포장, 이송, 제조공정에서 정전기로 인한 불량을 막는 용도로 쓰이며 오랜 기간 회사의 주력 매출원이었다. 2025년에는 중국 법인을 정리하고 캔버스엔과 한일오닉스 지분까지 매각하는 등 전방위적인 구조조정을 진행했다. 이를 통해 확보한 현금 유동성을 바탕으로 회사는 2026년 초 AI 응용 소프트웨어 기업 원터치에이아이 지분을 인수해 최대주주 지위를 확보했으며, 원터치에이아이는 삼성SDS 인공지능연구센터 책임연구원을 지낸 최종원 대표(현 중앙대학교 교수)가 이끄는 컴퓨터비전·생성형AI 기술 보유 기업이다. 회사는 이 시각지능·생성형AI 기술을 로봇 사업과 연계해 제조·물류·서비스 분야에 적용 가능한 AI 기반 로봇 솔루션 개발을 추진할 계획이라고 밝혔다. 이러한 사업 재편을 계기로 2026년 6월 사명을 나노캠텍에서 LSK아이로봇으로 변경했다. 결과적으로 회사는 기존 ESD 소재 사업의 안정적 수익 기반과 신규 AI·로봇 비전 사업이라는 두 개의 축을 동시에 운영하는 과도기에 있다.",
-  "en": "LSK iRobot is a materials company headquartered in Anseong, Gyeonggi Province, established in December 1999 and listed on KOSDAQ in 2007. Its core technology involves directly developing and manufacturing conductive materials such as organic conductive polymers, ion-complex conductive polymers, ionic liquids, and carbon nanotubes, which are then supplied as conductive raw materials, conductive plastic sheets and resins, functional ESD protective films and tapes, and functional ESD protective coatings. These electrostatic discharge (ESD) protection materials are used to prevent defects caused by static electricity during packaging, transport, and manufacturing of electronic and semiconductor components, and have long been the company's core revenue source. In 2025 the company undertook wide-ranging restructuring, winding down a China subsidiary and divesting stakes in Canvasen and Hanil Onyx. Using the cash liquidity raised from these disposals, the company acquired a controlling stake in AI application software firm Onetouch AI in early 2026, a computer vision and generative AI company led by CEO Choi Jong-won, a former principal researcher at Samsung SDS's AI Research Center now serving as a Chung-Ang University professor. The company stated it plans to combine Onetouch AI's vision intelligence and generative AI technology with robotics to develop AI-based robot solutions applicable in manufacturing, logistics, and services. Reflecting this business realignment, the company changed its name from Nanocamtec to LSK iRobot in June 2026. As a result, the company is currently in a transitional phase operating both its established ESD materials business and its new AI and robot vision ventures simultaneously."
+  "ko": "LSK아이로봇은 1999년 12월 설립된 회사로, 도전성 소재 등을 연구개발하고 제조·판매하는 것을 본업으로 한다. 이 소재 사업이 지금도 회사의 매출 기반을 이루고 있으며, 정전기 방지(ESD) 캐리어 트레이처럼 IT 제조 공정에 쓰이는 제품이 대표적인 응용처다. 해외 생산은 베트남 법인 나노캠텍베트남이 맡아 ESD 캐리어 트레이 생산라인을 운영한다. 회사는 사명을 나노캠텍에서 LSK아이로봇으로 바꾸고 AI·로봇을 신성장동력으로 내세웠다. 그 전환의 축은 2026년 초 인수를 마무리한 AI 응용 소프트웨어 기업 원터치에이아이로, 시각지능과 생성형 AI 기술을 보유하고 있다. 원터치에이아이의 기술은 두 갈래로 쓰인다. 하나는 나노캠텍베트남 생산라인에 도입된 돔형 광학 비전 AI 품질 검사 시스템이고, 다른 하나는 생성형 AI와 시각지능을 결합한 버추얼 아티스트 '채윤' 같은 AI 콘텐츠 사업이다. 회사는 생산 현장에서 쌓은 데이터를 바탕으로 외부 고객사에 비전 AI 광학 장비와 소프트웨어를 공급하는 사업으로 넓힐 계획이다. 신사업 재원으로는 비핵심 자산 매각으로 확보한 약 172억원의 현금을 쓰겠다는 방침이다. 경쟁 구도에서 회사는 LG화학·SKC 같은 대형 화학·소재사와 비교해 사업 규모가 작은 중소 소재사이며, 신사업에서는 검사 장비와 AI 솔루션 분야의 기존 공급사가 경쟁 상대가 될 수 있다.",
+  "en": "Lskairobot was founded in December 1999 and its core business is the research, manufacturing and sale of conductive materials. Materials remain the revenue base, with electrostatic discharge (ESD) carrier trays for IT manufacturing as a representative application. Overseas production runs through its Vietnamese unit, Nano Chemtech Vietnam, which operates an ESD carrier tray line. The company renamed itself from Nano Chemtech to Lskairobot and positioned AI and robotics as its new growth engine. The pivot rests on Onetouch AI, an AI application software company whose acquisition was completed at the start of 2026 and which holds computer vision and generative AI technology. That technology is being applied in two directions: a dome-type optical vision AI inspection system deployed on the Nano Chemtech Vietnam line, and an AI content business built around the virtual artist 'Chaeyun', which combines generative AI with computer vision. The company plans to extend the inspection work into supplying vision AI optical equipment and software to outside customers, using data gathered on its own production lines. It intends to fund the new businesses partly with about KRW 17.2 billion in cash raised from the sale of non-core assets. Against large chemical and materials groups such as LG Chem and SKC, the company is a small specialty materials maker, and in its new businesses it may compete with established suppliers of inspection equipment and AI solutions."
  },
  "earnings": {
-  "ko": "연간 실적을 보면 2022년 매출 501.6억원, 영업손실 24.4억원, 지배주주순손실 166.2억원을 기록한 뒤 2023년에는 매출이 424.0억원으로 줄었지만 순손실은 61.9억원으로 축소됐다. 2024년에는 매출이 555.1억원으로 회복되며 영업이익 1.8억원으로 흑자 전환했으나 지배주주순손실은 37.2억원으로 여전히 적자였다. 2025년에는 매출이 501.1억원으로 다시 줄고 영업손실 2.6억원, 지배주주순손실 87.6억원으로 적자 폭이 확대됐는데, 이는 앞서 언급한 자회사·지분 구조조정 과정에서 발생한 비용이 상당 부분 영향을 미친 것으로 해석된다. 분기별로 보면 2025년 3분기(매출 133.4억원, 영업이익 8.6억원)와 4분기(매출 205.6억원, 영업이익 10.1억원)에는 영업이익이 연속 흑자를 기록했지만, 4분기 지배주주순손실은 54.8억원에 달해 영업손익과 순손익 간 큰 괴리가 나타났다. 2026년 1분기에는 매출이 85.6억원으로 줄고 영업손실 13.9억원, 순손실 12.7억원을 기록하며 다시 적자 국면에 진입했다. 그러나 2026년 2분기에는 매출이 102.1억원으로 늘고 영업손실은 11.4억원으로 지속됐음에도 지배주주순이익이 34.7억원으로 흑자 전환했는데, 이는 비핵심 자산 매각에 따른 처분이익 등 일회성 요인이 반영된 결과로 풀이된다. 즉 최근 1년간 실적은 본업인 영업손익보다 자산 매각·구조조정에 따른 비영업 손익이 순이익 변동을 주도하는 패턴을 보이고 있다. 부채비율은 2022년 67.6%에서 2025년 241.6%로 크게 높아졌는데, 이는 CB 발행 등 외부 자금 조달이 늘어난 결과로 해석되며 이후 CB 상환을 통한 완화 시도가 진행되고 있다.",
-  "en": "Looking at annual results, revenue was KRW 50.16 billion in 2022 with an operating loss of KRW 2.44 billion and an owner net loss of KRW 16.62 billion; in 2023 revenue fell to KRW 42.4 billion but the net loss narrowed to KRW 6.19 billion. In 2024 revenue recovered to KRW 55.51 billion and the company posted a small operating profit of KRW 0.18 billion, though the owner net loss remained at KRW 3.72 billion. In 2025 revenue declined again to KRW 50.11 billion, with an operating loss of KRW 0.26 billion and a widened owner net loss of KRW 8.76 billion, which appears to reflect costs tied to the subsidiary and equity restructuring described above. On a quarterly basis, operating income was positive in both Q3 2025 (revenue KRW 13.34 billion, operating profit KRW 0.86 billion) and Q4 2025 (revenue KRW 20.56 billion, operating profit KRW 1.01 billion), yet the Q4 owner net loss reached KRW 5.48 billion, showing a large gap between operating and net results. In Q1 2026 revenue fell to KRW 8.56 billion with an operating loss of KRW 1.39 billion and a net loss of KRW 1.27 billion, marking a return to loss territory. However, in Q2 2026 revenue rose to KRW 10.21 billion and while the operating loss persisted at KRW 1.14 billion, owner net income turned positive at KRW 3.47 billion, a result that appears to reflect one-off items such as gains from non-core asset disposals. In other words, over the past year net income swings have been driven more by non-operating items tied to asset sales and restructuring than by the underlying operating business. The debt ratio rose sharply from 67.6% in 2022 to 241.6% in 2025, reflecting increased external financing including convertible bond issuance, with subsequent CB redemptions now underway to ease that burden."
+  "ko": "연간 매출은 2022년 502억원에서 2023년 424억원(전년 대비 15.5% 감소)으로 줄었고, 2024년 555억원(전년 대비 30.9% 증가)으로 2022~2025년 중 가장 큰 해가 됐다. 2025년에는 501억원(전년 대비 9.7% 감소)으로 다시 내려앉았다. 영업손익은 2022년 영업손실 24.4억원, 2023년 영업손실 18.4억원으로 두 해 모두 적자였고, 2024년에는 영업이익 1.8억원으로 흑자 전환했다. 그러나 2025년에는 영업손실 2.6억원으로 다시 적자 전환했다. 영업이익률은 2022년 -4.9%, 2023년 -4.3%, 2024년 0.3%, 2025년 -0.5%로, 흑자를 낸 해는 2024년 한 해뿐이었다. 지배주주 순손실은 2022년 166억원, 2023년 61.9억원, 2024년 37.2억원으로 줄었다가 2025년 87.6억원으로 확대돼, 2022년부터 2025년까지 4년 연속 적자다. 비지배지분을 포함한 당기순손실은 2025년 102억원으로 지배주주 순손실보다 컸다. 영업활동 현금흐름은 2022년 -87.1억원, 2023년 -45.4억원에서 2024년 37.8억원, 2025년 19.9억원으로 두 해 연속 플러스가 됐다. 분기로 보면 2025년 4분기 매출은 206억원으로 늘었지만 영업이익은 10.1억원, 지배주주 순손실은 54.8억원이었다. 2026년 1분기에는 매출 85.6억원에 영업손실 13.9억원을 냈고, 2026년 2분기 매출 102억원, 영업손실 11.4억원을 거쳐 2026년 3분기에 매출 134억원, 영업이익 7.7억원으로 흑자 전환했다. 2026년 3분기 영업이익은 전년 동기 대비 10.2% 줄었고 매출은 0.8% 늘었다. 2026년 2분기 지배주주 순이익 34.7억원은 영업손실 구간에서 나온 것이라 영업 외 항목의 영향이 컸을 가능성이 있으며, 세부 내역은 2026년 사업보고서에서 확인할 부분이다. 회사 발표에 따르면 2026년 3분기 매출총이익률은 22.44%에서 28.98%로 올랐다. 최근 네 개 분기 기준 지배주주 순손실 합계는 44.8억원이다.",
+  "en": "Annual revenue fell from KRW 50.2 billion in 2022 to KRW 42.4 billion in 2023, a 15.5% decline, then rose to KRW 55.5 billion in 2024, a 30.9% increase that made it the largest year of 2022–2025. In 2025 revenue dropped 9.7% to KRW 50.1 billion. Operating losses of KRW 2.44 billion in 2022 and KRW 1.84 billion in 2023 were followed by an operating profit of KRW 178 million in 2024, which turned back into an operating loss of KRW 262 million in 2025. Operating margin was -4.9% in 2022, -4.3% in 2023, 0.3% in 2024 and -0.5% in 2025, so 2024 was the only profitable year. Net loss attributable to controlling shareholders narrowed from KRW 16.6 billion in 2022 to KRW 3.72 billion in 2024 before widening to KRW 8.76 billion in 2025, a fourth consecutive year of losses. Including non-controlling interests, the net loss was KRW 10.2 billion in 2025. Operating cash flow moved from -KRW 8.71 billion in 2022 and -KRW 4.54 billion in 2023 to positive figures of KRW 3.78 billion in 2024 and KRW 1.99 billion in 2025. Quarterly revenue reached KRW 20.6 billion in the fourth quarter of 2025, but operating profit was KRW 1.01 billion and the net loss attributable to controlling shareholders was KRW 5.48 billion. In the first quarter of 2026 revenue was KRW 8.56 billion with an operating loss of KRW 1.39 billion. Revenue rose to KRW 10.2 billion in the second quarter with an operating loss of KRW 1.14 billion, then reached KRW 13.4 billion in the third quarter with an operating profit of KRW 768 million. Third-quarter operating profit was down 10.2% from a year earlier, while revenue was up 0.8%. The second-quarter profit attributable to controlling shareholders of KRW 3.47 billion came despite an operating loss, so non-operating items likely played a large role, and the breakdown is a point to check in the 2026 annual report. According to the company, gross margin rose from 22.44% to 28.98% in the third quarter of 2026. The net loss attributable to controlling shareholders over the last four quarters totals KRW 4.48 billion."
  },
  "industry": {
-  "ko": "ESD 소재 산업은 반도체·디스플레이·전자부품 제조공정의 정전기 관리 수요에 기반해 안정적이지만 성장률이 높지 않은 시장으로, 다수의 소재 업체가 경쟁하는 가운데 가격 경쟁이 상시적으로 작용한다. 회사의 별도(개별) 기준 사업은 2026년 상반기에도 영업이익 흑자를 유지한 것으로 알려져, 본업 자체의 수익 기반은 유지되고 있는 것으로 파악된다. 반면 AI·로봇 비전 산업은 제조·물류 자동화 수요 확대와 생성형 AI 기술 상용화 흐름을 타고 빠르게 성장하는 영역으로, 대형 정보기술(IT) 기업과 특화 스타트업이 각각 플랫폼과 응용 솔루션 경쟁을 벌이고 있다. 이 시장에 후발로 진입하는 회사는 원터치에이아이의 컴퓨터비전·생성형AI 기술을 발판으로 아마존웹서비스(AWS)와의 협업, 영국 버밍엄대학교와의 공동연구 등 외부 파트너십을 통해 기술 검증을 시도하고 있다. AI 버추얼 아티스트 같은 콘텐츠 사업은 진입장벽이 상대적으로 낮은 대신 다수의 경쟁 IP가 시장에 존재해 차별화가 쉽지 않은 영역이다. 산업용 비전 AI·로봇 제어 분야는 검증된 트랙레코드를 가진 기존 로봇·자동화 업체들이 이미 다수 존재해, 신규 진입 기업이 실제 매출로 연결되는 데는 시간이 걸릴 수 있는 구조다. 종합하면 회사는 안정적이나 저성장인 기존 사업과, 성장성은 높지만 아직 초기 단계인 신규 사업이 공존하는 산업 구도 속에 위치해 있다.",
-  "en": "The ESD materials industry is a stable but low-growth market driven by static electricity management needs in semiconductor, display, and electronic component manufacturing, with numerous material suppliers competing amid persistent price pressure. The company's standalone (parent-only) business reportedly maintained an operating profit through the first half of 2026, suggesting the core operation retains a stable earnings base. In contrast, the AI and robot vision industry is a fast-growing area driven by expanding demand for manufacturing and logistics automation alongside the commercialization of generative AI, with large IT companies and specialized startups competing on platforms and applications respectively. As a later entrant, the company is attempting technology validation through external partnerships built on Onetouch AI's computer vision and generative AI capabilities, including collaboration with Amazon Web Services and joint research with the University of Birmingham. Content businesses such as AI virtual artists face relatively low barriers to entry but also a crowded field of competing IPs, making differentiation difficult. In industrial vision AI and robot control, numerous established robotics and automation firms with proven track records already exist, meaning new entrants may take time to convert efforts into actual revenue. Overall, the company sits at the intersection of a stable but low-growth legacy business and a high-growth but still early-stage new business."
+  "ko": "회사의 소재 사업은 IT·전자 부품, 디스플레이, 2차전지 등 전방 산업의 생산량과 설비 투자에 따라 수요가 움직이는 구조다. 정전기 방지와 전자파 차폐용 도전성 소재는 제품이 얇고 정밀해질수록 쓰임이 늘어나는 분야여서, 전방 기술 변화가 수요를 좌우한다. 2025년 연간 매출이 줄었고 2026년 1분기 매출이 크게 줄었다가 2분기와 3분기에 회복된 흐름은 이런 전방 수요 변동을 반영한 것으로 볼 수 있다. 같은 화학 업종에서 LG화학·SKC·한화솔루션 같은 대형 소재사는 석유화학과 전지, 필름 등 대규모 생산 기반을 갖춘 반면, 이 회사는 기능성 소재 중심의 소규모 사업 구조다. 따라서 규모의 경쟁보다는 특정 응용처에서의 기술 차별성이 중요한 변수가 된다. 비전 AI 검사 분야에는 자동화와 검사 장비를 공급하는 업체가 이미 다수 있어, 회사는 자체 생산 라인에서 검증한 적용 사례를 외부 고객사에 보여 주는 방식으로 진입을 노리고 있다. 회사는 트레이 업계에서 비전 AI 기반 검사가 대규모 생산라인에 적용되는 첫 사례가 될 것이라고 밝혔다. AI 콘텐츠 분야는 생성형 AI 기반 버추얼 IP 시장이 빠르게 형성되는 단계여서 수익 모델의 규모를 가늠하기 어렵다. 산업 전반의 사이클 위치는 전방 기업들의 설비 투자 흐름을 함께 봐야 판단할 수 있는 영역이다.",
+  "en": "The materials business depends on demand from downstream industries such as IT and electronic components, displays and secondary batteries, which move with production volumes and capital spending. Conductive materials for static dissipation and electromagnetic shielding gain uses as products become thinner and more precise, so technology shifts downstream drive demand. The 2025 annual revenue decline and the sharp first-quarter 2026 drop followed by recovery in the second and third quarters are consistent with these swings in downstream demand. Within the chemical sector, large materials groups such as LG Chem, SKC and Hanwha Solutions have extensive production bases in petrochemicals, batteries and films, whereas Lskairobot runs a small business centered on functional materials. Scale competition is therefore less decisive than technological differentiation in specific applications. The vision AI inspection market already has many automation and inspection equipment suppliers, so the company is pursuing entry by showing outside customers applications verified on its own production lines. The company said that the deployment could be the first case of vision AI inspection on a large tray production line in the industry. The AI content business sits in a market for generative-AI virtual IP that is only starting to take shape, which makes the scale of its revenue model hard to gauge. Where the sector stands in its cycle depends on the capital spending plans of downstream manufacturers."
  },
  "outlook": {
-  "ko": "회사는 2026년 상반기 실적 발표 자리에서 하반기에는 수익성 개선과 함께 제조 현장 중심의 비전AI 적용 범위를 확대하고 AI·로봇 사업의 사업화를 가속화해 성장 기반을 강화할 계획이라고 밝혔다. AI 버추얼 아티스트 '채윤'은 2026년 9월 공개돼 인스타그램 등을 통한 콘텐츠 활동을 시작했으며, 필리핀 SNS 쇼핑몰의 메인 모델로도 활동할 예정으로 관련 활동은 2026년 하반기 시작을 목표로 하고 있다. 회사는 브랜드 협업, 광고 콘텐츠 제작, IP 라이선싱 등을 통해 AI 콘텐츠 사업을 실제 수익모델로 연결하겠다는 구상을 밝혔으며, 버추얼 아티스트 제작 과정에서 확보한 생성형AI·시각지능 기술 경험을 제조 자동화·물류 자동화·서비스 로봇 등 산업용 AI 분야로 확장하겠다는 전략도 제시했다. 재무 측면에서는 172억원 규모의 비핵심 자산 매각 대금을 활용해 제11회차 CB(30억원)를 전액 상환하고 제8회차 CB 일부(16.5억원)를 상환하는 등 메자닌 부채를 단계적으로 축소하고 있으며, 제8회차 CB의 미상환 잔액은 43.5억원, 잠재 전환 주식 수는 약 157만주로 줄어든 상태다. 회사 측은 이러한 CB 상환이 재무 안정성 제고와 주주가치 제고를 위한 조치라고 설명했다. 아직 신사업이 매출로 본격 기여하는 시점이나 규모에 대한 구체적 가이던스는 공개되지 않은 상태로, 향후 분기 공시를 통한 확인이 필요하다.",
-  "en": "In its H1 2026 earnings announcement, the company stated that in the second half it plans to improve profitability while expanding manufacturing-focused vision AI applications and accelerating the commercialization of its AI and robot business to strengthen its growth base. AI virtual artist 'Chaeyun' was unveiled in September 2026 and began content activity via Instagram and other channels, with plans to also serve as the lead model for a Philippine social media shopping platform, targeted to begin in the second half of 2026. The company outlined plans to connect its AI content business to actual revenue models through brand collaborations, advertising content production, and IP licensing, and also laid out a strategy to expand the generative AI and vision intelligence experience gained from producing virtual artists into industrial AI fields such as manufacturing automation, logistics automation, and service robots. On the financial side, the company has been stepping down its mezzanine debt using proceeds of roughly KRW 17.2 billion from non-core asset sales, fully redeeming the 11th CB (KRW 3 billion) and partially redeeming the 8th CB (KRW 1.65 billion), leaving the 8th CB's outstanding balance at KRW 4.35 billion and potential convertible shares reduced to about 1.57 million. Management described these CB redemptions as measures to strengthen financial stability and enhance shareholder value. Specific guidance on the timing or scale of when new businesses will meaningfully contribute to revenue has not yet been disclosed, warranting confirmation through upcoming quarterly filings."
+  "ko": "회사가 밝힌 사업 계획의 중심은 베트남 생산라인의 비전 AI 검사 시스템과 그 외부 공급 확대다. 이 시스템은 2026년 11월 초중순부터 월 130만개 규모의 트레이 생산에 순차 적용하는 일정으로 발표됐다. 회사에 따르면 부품당 검사 시간은 수동 검사의 10초에서 0.5초로 줄고, 불량 검출 정확도는 70~95%에서 98%로 높아졌다. 회사는 검사 자동화로 품질 검사 인력을 최대 80%가량 줄일 수 있을 것으로 기대한다고 밝혔다. 이 기대치는 회사의 전망이며 실제 인력 감축 규모는 적용 이후 실적으로 확인해야 한다. 회사는 현장 데이터를 바탕으로 비전 AI 광학 장비와 소프트웨어 공급 사업을 외부 고객사로 넓히겠다는 방침이다. 2026년 상반기 연결 매출은 188억원으로 전년 동기 대비 15.7% 증가했다고 회사가 2026년 8월 발표했다. AI 버추얼 아티스트 '채윤'은 2026년 9월 공개 후 베타테스트를 진행 중이며, 브랜드 협업과 지식재산권 라이선싱으로 수익 모델을 넓히겠다는 계획이다. 회사는 8회차와 11회차 전환사채를 만기 전에 조기 상환해 잠재 주식 전환 물량을 줄였다. 신사업 재원으로는 비핵심 자산 매각 대금이 쓰인다. 확인해야 할 점은 2026년 3분기 흑자가 한 분기에 그칠지 여부다. 2026년 사업보고서에서 4분기 영업이익과 지배주주 순손익의 구성이 확인된다.",
+  "en": "The core of the company's stated plan is the vision AI inspection system on the Vietnamese production line and its expansion to outside customers. The system was announced for phased rollout from early-to-mid November 2026 across production of 1.3 million trays a month. According to the company, inspection time per part falls from 10 seconds under manual inspection to 0.5 seconds, and defect detection accuracy rises from a range of 70–95% to 98%. The company expects inspection automation to cut quality inspection staffing by up to about 80%, which is its own projection and needs to be checked against results after deployment. The company intends to extend its vision AI optical equipment and software supply to outside customers, drawing on field data. Revenue for the first half of 2026 was KRW 18.8 billion, up 15.7% from a year earlier, according to an announcement the company made in August 2026. The virtual artist 'Chaeyun' was unveiled in September 2026 and is in beta testing, with plans to expand revenue through brand collaborations and intellectual property licensing. The company redeemed its eighth and eleventh convertible bond series before maturity, reducing potential share conversion. Proceeds from the sale of non-core assets are being used to fund the new businesses. The open question is whether the third-quarter 2026 profit becomes more than a single quarter, which the 2026 annual report will show through fourth-quarter operating profit and the breakdown of profit attributable to controlling shareholders."
  },
  "valuation_comment": {
-  "ko": "회사는 최근 수년간 대부분 순손실을 기록해 주가수익비율(PER) 산출이 어려운 구간이 많았으며, 순자산 대비 주가는 소폭 프리미엄이 형성된 구간에서 거래되고 있다. 배당은 최근 지급 이력이 없는 것으로 확인되며, 이는 실적 변동성이 큰 소형 성장기업에서 흔히 나타나는 특징이다. 다년간 실적 흐름을 보면 2022~2023년의 대규모 적자에서 2024년 영업이익 흑자 전환, 2025년 재차 소폭 적자, 그리고 2026년 2분기 순이익 흑자 전환이라는 굴곡진 경로를 거쳤다. 이러한 순이익의 변동은 본업의 구조적 개선보다는 자산 매각 등 비영업적 요인에 크게 의존하고 있어, 시장이 매기는 가치에는 기존 소재 사업의 안정성과 신규 AI·로봇 사업에 대한 기대감이 복합적으로 반영돼 있는 것으로 보인다. 신사업의 매출 기여가 가시화되는 시점과 규모가 향후 밸류에이션 논의의 핵심 변수가 될 것으로 판단된다.",
-  "en": "Because the company has posted net losses in most recent years, price-to-earnings ratio calculations have often been unavailable, and the stock has traded at a modest premium to its net asset value. No recent dividend payment history has been confirmed, a characteristic commonly seen in small-cap growth-stage companies with volatile earnings. Over multiple years, the earnings trajectory has moved through large losses in 2022-2023, an operating profit turnaround in 2024, a return to modest losses in 2025, and a net income turnaround in Q2 2026. Because these net income swings depend heavily on non-operating factors such as asset sales rather than structural improvement in the core business, the value the market assigns appears to reflect a combination of the stability of the legacy materials business and expectations surrounding the new AI and robotics venture. When and to what scale the new business begins to meaningfully contribute to revenue is likely to be a key variable in future valuation discussions."
+  "ko": "이익 기준 배수인 PER은 최근 네 개 분기 지배주주 순손실 합계가 44.8억원이어서 산출되지 않는 상태다. 흑자가 네 개 분기 이상 이어져 합계가 플러스로 바뀌어야 이익 기준 배수가 계산된다. 주가순자산비율은 장부상 순자산 가치와 거의 같은 수준이어서, 순자산 대비 프리미엄이 크지 않은 구간이라는 사실 비교가 가능하다. 다만 자본총계 217억원에 부채총계 524억원이 얹혀 있어 부채비율 241.6%를 함께 봐야 주가순자산비율의 의미가 드러난다. 순자산 가치의 상당 부분이 자산 매각으로 확보한 현금과 사업 재편 기대에 기대고 있다는 점도 해석에 들어간다. 배당 환원은 사실상 없는 수준이다. 과거 거래 밴드와 업종 평균 배수는 주가에 따라 달라지는 값이다. 밸류에이션의 방향은 흑자 지속 여부와 부채 감소 속도에 따라 달라지는 구조다.",
+  "en": "Price-to-earnings cannot be calculated because the net loss attributable to controlling shareholders over the last four quarters totals KRW 4.48 billion. An earnings-based multiple becomes computable only if profits persist for four or more quarters and the four-quarter total turns positive. The price-to-book ratio sits close to the book value of net assets, which means the shares trade at little premium to net asset value. Against total equity of KRW 21.7 billion and total liabilities of KRW 52.4 billion, the 241.6% debt ratio is needed to read that multiple correctly. Part of the net asset value rests on cash from asset sales and on expectations for the business restructuring, which also shapes interpretation. Dividend payouts are effectively negligible. Historical trading bands and industry-average multiples move with the share price. The direction of valuation depends on whether profitability holds and how quickly the debt load shrinks."
  },
  "bull": [
   {
    "title": {
-    "ko": "본업 수익 기반 유지",
-    "en": "Core Business Retains Profitability"
+    "ko": "분기 흑자 전환과 마진 개선",
+    "en": "Quarterly profit turn and margin recovery"
    },
    "body": {
-    "ko": "별도(개별) 기준 사업은 2026년 상반기에도 영업이익 흑자를 기록한 것으로 알려져, ESD 소재 사업 자체의 수익 창출력은 유지되고 있다. 이는 신사업 투자에 필요한 최소한의 현금 흐름을 뒷받침하는 기반이 될 수 있다. 다만 연결 기준 영업손익은 여전히 변동성이 크다.",
-    "en": "The standalone business reportedly maintained an operating profit through H1 2026, indicating the ESD materials operation retains its earnings power. This can serve as a base cash flow to support investment in new ventures. However, consolidated operating results remain volatile."
+    "ko": "2026년 3분기 연결 영업이익은 7.7억원으로 2분기 영업손실에서 흑자로 돌아섰다. 회사 발표에 따르면 매출총이익률은 22.44%에서 28.98%로 6.54%포인트 올라 매출 증가율을 웃도는 이익 증가가 나타났다. 별도 법인의 영업이익률 13.85%와 종속회사의 실적 회복이 함께 기여했다.",
+    "en": "Consolidated operating profit in the third quarter of 2026 was KRW 768 million, turning the second quarter's operating loss into a profit. The company said gross margin rose from 22.44% to 28.98%, and the standalone operating margin of 13.85% and recovery at subsidiaries both contributed."
    }
   },
   {
    "title": {
-    "ko": "신사업 파트너십 확보",
-    "en": "New Business Partnerships Secured"
+    "ko": "자체 생산 라인에서 검증된 비전 AI 사업",
+    "en": "Vision AI verified on the company's own production line"
    },
    "body": {
-    "ko": "원터치에이아이 인수를 통해 컴퓨터비전·생성형AI 기술 역량을 확보하고, 아마존웹서비스와의 협업 및 영국 버밍엄대학교와의 공동연구 협약을 체결했다. 이러한 외부 파트너십은 기술 검증과 신뢰도 확보에 도움이 될 수 있다. 다만 협약 체결과 실제 매출 창출 사이에는 시차가 존재한다.",
-    "en": "Through the Onetouch AI acquisition, the company secured computer vision and generative AI capabilities, and signed a collaboration with Amazon Web Services and a joint research agreement with the University of Birmingham. Such external partnerships can help with technology validation and credibility. However, a time lag typically exists between signing agreements and generating actual revenue."
+    "ko": "베트남 트레이 생산라인에 도입된 비전 AI 검사는 검사 시간을 10초에서 0.5초로 줄였다고 회사가 밝혔다. 자체 공정에서 얻은 실증 데이터를 바탕으로 외부 고객사에 광학 장비와 소프트웨어를 공급하는 사업으로 넓힌다는 계획이다. 적용 사례가 외부 레퍼런스로 이어지는지가 사업 확장의 시험대다.",
+    "en": "The company said vision AI inspection on its Vietnamese tray line cut inspection time per part from 10 seconds to 0.5 seconds. It plans to extend the business to supplying optical equipment and software to outside customers based on field data. Whether this deployment turns into external references is the test of expansion."
    }
   },
   {
    "title": {
-    "ko": "재무구조 조정 진행",
-    "en": "Balance Sheet Adjustment Underway"
+    "ko": "재무 구조 정리와 현금 확보",
+    "en": "Balance sheet clean-up and cash raised"
    },
    "body": {
-    "ko": "비핵심 자산 매각으로 확보한 172억원의 현금을 활용해 CB를 순차적으로 상환하며 잠재 전환 물량을 줄이고 있다. 제11회차 CB는 전액 소멸됐고 제8회차 CB의 잔액과 전환 가능 주식 수도 줄어든 상태다. 이는 향후 지분 희석 부담을 일부 완화하는 요인이 될 수 있다.",
-    "en": "Using KRW 17.2 billion in cash from non-core asset sales, the company has been sequentially redeeming convertible bonds, reducing potential conversion volume. The 11th CB has been fully extinguished, and the 8th CB's remaining balance and convertible share count have both been reduced. This may partly ease future dilution pressure."
+    "ko": "회사는 8회차와 11회차 전환사채를 만기 전 조기 상환해 잠재 주식 전환 물량을 줄였다. 비핵심 자산 매각으로 약 172억원의 현금을 확보해 신사업 재원으로 쓰겠다는 방침이다. 영업활동 현금흐름은 2024년과 2025년 두 해 연속 플러스로 바뀌었다.",
+    "en": "The company redeemed its eighth and eleventh convertible bond series early, reducing potential share conversion. It raised about KRW 17.2 billion from non-core asset sales and plans to use it for new businesses. Operating cash flow turned positive in both 2024 and 2025."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "기존 사업 성장 정체",
-    "en": "Legacy Business Growth Stagnation"
+    "ko": "4년 연속 적자와 2025년 재적자 전환",
+    "en": "Four straight years of losses and a return to operating loss in 2025"
    },
    "body": {
-    "ko": "연결 매출은 2022년 501.6억원에서 2025년 501.1억원으로 3년 전과 비슷한 수준에 머물러 있으며, 이 사이 영업이익률은 -4.9%에서 -0.5% 사이를 오갔다. 소재 사업 자체의 구조적 외형 성장을 보여주는 지표는 아직 뚜렷하지 않다. 신사업으로의 전환이 필요했던 배경이기도 하다.",
-    "en": "Consolidated revenue stood at KRW 50.16 billion in 2022 versus KRW 50.11 billion in 2025, essentially flat over the period, while the operating margin ranged between -4.9% and -0.5% during that time. There is not yet clear evidence of structural top-line growth in the materials business itself. This has also been part of the backdrop for the pivot toward new businesses."
+    "ko": "지배주주 순손실은 2022년부터 2025년까지 4년 연속 이어졌고 2025년에는 87.6억원으로 확대됐다. 영업이익은 2024년 흑자 한 해 뒤 2025년 영업손실 2.6억원으로 다시 적자로 돌아섰다. 영업이익률은 2025년 -0.5%로 흑자 구간이 짧았다.",
+    "en": "Net loss attributable to controlling shareholders ran for four consecutive years from 2022 to 2025 and widened to KRW 8.76 billion in 2025. Operating profit in 2024 was followed by an operating loss of KRW 262 million in 2025. The operating margin of -0.5% in 2025 shows how brief the profitable stretch was."
    }
   },
   {
    "title": {
-    "ko": "신사업 초기 단계",
-    "en": "New Business at an Early Stage"
+    "ko": "높은 부채비율과 자본 대비 부채",
+    "en": "High debt ratio and liabilities relative to equity"
    },
    "body": {
-    "ko": "AI 버추얼 아티스트 '체리나'와 '채윤'은 각각 콘텐츠 사업화의 첫 시도 단계에 있으며, 구체적인 매출 기여는 아직 공시되지 않았다. 산업용 AI 솔루션으로의 확장도 계획 단계에 머물러 있다. 상용화 속도와 규모에 대한 불확실성이 남아 있다.",
-    "en": "AI virtual artists 'Cherina' and 'Chaeyun' are each at an early stage of content commercialization, and specific revenue contributions have not yet been disclosed. Expansion into industrial AI solutions also remains at the planning stage. Uncertainty remains regarding the pace and scale of commercialization."
+    "ko": "부채비율은 2022년 67.6%에서 2025년 241.6%로 올랐다. 2025년 말 부채총계 524억원이 자본총계 217억원을 웃돌며, 지배주주 지분은 202억원이다. 이자 부담과 자금 조달 여건이 이익 회복 속도를 제약할 수 있다.",
+    "en": "The debt ratio rose from 67.6% in 2022 to 241.6% in 2025. At the end of 2025, total liabilities of KRW 52.4 billion exceeded total equity of KRW 21.7 billion, of which equity attributable to controlling shareholders was KRW 20.2 billion. Interest costs and financing conditions could constrain the pace of profit recovery."
    }
   },
   {
    "title": {
-    "ko": "순이익의 비영업적 의존",
-    "en": "Net Income Reliant on Non-Operating Items"
+    "ko": "신사업 수익화는 초기 단계",
+    "en": "Revenue from new businesses is at an early stage"
    },
    "body": {
-    "ko": "2025년 4분기 대규모 순손실(-54.8억원)과 2026년 2분기 순이익 흑자 전환(+34.7억원)은 모두 영업손익과는 방향이 다른 비영업적 요인의 영향을 크게 받은 것으로 해석된다. 이 때문에 최근 순이익 개선을 본업의 구조적 회복으로 단정하기는 어렵다. 부채비율도 2025년 241.6%로 높아진 상태다.",
-    "en": "The large Q4 2025 net loss (-KRW 5.48 billion) and the Q2 2026 net income turnaround (+KRW 3.47 billion) both appear to have been heavily influenced by non-operating factors that moved in a different direction from operating results. This makes it difficult to conclude that recent net income improvement reflects a structural recovery in the core business. The debt ratio also rose to 241.6% in 2025."
+    "ko": "AI 버추얼 아티스트 '채윤'은 베타테스트 단계이고, 브랜드 협업과 IP 라이선싱은 계획으로 제시됐다. 2026년 3분기 영업이익은 전년 동기 대비 10.2% 줄었다. 2026년 2분기 지배주주 순이익은 영업손실 구간에서 발생해 영업 외 요인에 기댄 흑자였을 가능성이 있다.",
+    "en": "The virtual artist 'Chaeyun' is in beta testing, and brand collaborations and IP licensing are presented as plans. Third-quarter 2026 operating profit fell 10.2% from a year earlier. The second-quarter 2026 profit attributable to controlling shareholders arose during an operating loss, so it may have depended on non-operating items."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "사업전환 실행 리스크",
-    "en": "Business Transition Execution Risk"
+    "ko": "실적 변동성",
+    "en": "Earnings volatility"
    },
    "body": {
-    "ko": "소재 기업에서 AI·로봇 기업으로의 전환은 짧은 기간 내 이뤄졌으며, 원터치에이아이와의 기술·조직 통합, 인력 확보, 실제 산업 현장 적용까지의 실행력이 관건이다. 원터치에이아이 대표가 대학교수를 겸직하고 있다는 점도 핵심 인력 의존도 측면에서 주시할 부분이다. 계획과 실행 사이의 간극이 발생할 가능성을 배제할 수 없다.",
-    "en": "The transition from a materials company to an AI and robotics company has occurred within a short period, and execution—covering technology and organizational integration with Onetouch AI, talent acquisition, and actual industrial deployment—remains the key challenge. The fact that Onetouch AI's CEO also holds a concurrent university faculty position is worth monitoring in terms of key-person dependency. A gap between plans and execution cannot be ruled out."
+    "ko": "분기 영업손익은 2025년 3분기 흑자, 4분기 흑자, 2026년 1분기 적자, 2분기 적자, 3분기 흑자로 방향이 자주 바뀌었다. 매출은 2026년 1분기에 전 분기 대비 58.4% 줄었다가 두 분기 연속 늘었다. 분기 흑자가 한두 분기에 그치면 연간 적자 구조가 바뀌지 않을 수 있다.",
+    "en": "Quarterly operating results have flipped repeatedly, with profits and losses alternating across the last five quarters. Revenue fell 58.4% from the prior quarter in the first quarter of 2026 before rising for two straight quarters. If profits last only a quarter or two, the annual loss pattern may not change."
    }
   },
   {
    "cat": {
-    "ko": "재무·희석 리스크",
-    "en": "Financial and Dilution Risk"
+    "ko": "자본 구조와 전환사채",
+    "en": "Capital structure and convertible bonds"
    },
    "body": {
-    "ko": "부채비율이 2025년 241.6%로 높아진 가운데, 제8회차 CB의 미상환 잔액 43.5억원과 약 157만주 규모의 잠재 전환 물량이 남아 있다. 자산 매각을 통한 현금 확보와 CB 상환으로 완화되고 있지만, 추가적인 자금 조달이 필요해질 경우 지분 희석 우려가 재부각될 수 있다.",
-    "en": "With the debt ratio having risen to 241.6% in 2025, the 8th CB still carries an outstanding balance of KRW 4.35 billion and roughly 1.57 million shares of potential conversion volume. While cash from asset sales and CB redemptions have eased this somewhat, dilution concerns could resurface if further financing becomes necessary."
+    "ko": "회사는 8회차와 11회차 전환사채를 조기 상환했지만, 잔여 전환사채와 전환 가능 물량이 남아 있는지는 공시로 확인해야 한다. 부채비율이 241.6%인 상태에서 전환사채 전환이 진행되면 주식 수와 지분 구조가 바뀐다. 자산 매각 대금이 신사업 투자에 쓰이면 재무 여력은 줄어든다.",
+    "en": "The company redeemed its eighth and eleventh convertible bond series early, but any remaining convertible bonds and potential conversion shares should be checked in disclosures. With a 241.6% debt ratio, conversion would change the share count and ownership structure. If asset sale proceeds fund new investment, financial headroom shrinks."
    }
   },
   {
    "cat": {
-    "ko": "지배구조·공시 이력 리스크",
-    "en": "Governance and Disclosure History Risk"
+    "ko": "사업 전환 실행",
+    "en": "Execution of the business pivot"
    },
    "body": {
-    "ko": "과거 2021년 경영진의 회계처리 위반으로 거래가 정지된 이력이 있으며, 2025년 2월에는 종가 급변에 따른 투자주의 종목으로 지정된 바 있다. 사명 변경과 사업 재편이 빈번한 소형주 특유의 이슈로, 공시 신뢰성과 내부통제에 대한 지속적인 확인이 필요하다.",
-    "en": "The company has a history of a trading halt in 2021 due to management's accounting violations, and was designated as an investment-caution stock in February 2025 following a sharp closing-price swing. Frequent name changes and business realignments are issues characteristic of small-cap stocks, requiring ongoing verification of disclosure reliability and internal controls."
+    "ko": "AI·로봇 사업은 원터치에이아이 인수 이후 시작된 단계로, 외부 고객사 공급 계약과 매출 규모는 아직 공시로 확인되는 부분이 적다. 사명 변경과 사업 재편은 소재 사업의 수익성 유지와 신사업 투자를 동시에 요구한다. 검사 장비와 AI 솔루션 시장에서 경쟁사 대비 차별화가 실제 수주로 이어질지가 관건이다.",
+    "en": "The AI and robotics business began after the Onetouch AI acquisition, and few external supply contracts or revenue figures have been disclosed. The renaming and restructuring demand that the materials business keep its profitability while the new businesses receive investment. Whether differentiation translates into actual orders against rivals in inspection equipment and AI solutions is the key test."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중순",
-    "en": "Mid-November 2026"
+    "ko": "2026년 12월 말",
+    "en": "End of December 2026"
    },
    "what": {
-    "ko": "3분기보고서 공시를 통해 별도 기준 소재 사업의 흑자 지속 여부와 AI·로봇 신사업의 매출 반영 여부를 확인해야 한다.",
-    "en": "Check the Q3 report filing to confirm whether the standalone materials business continues to be profitable and whether the new AI and robotics business begins to register revenue."
+    "ko": "베트남 나노캠텍베트남 라인의 비전 AI 검사 적용 범위가 월 130만개 생산 전체로 넓어졌는지, 외부 고객사 공급 계약이 나오는지를 확인한다. 외부 공급이 실제 매출로 잡히는지가 신사업의 첫 번째 신호다.",
+    "en": "Check whether vision AI inspection covers the full monthly output of 1.3 million trays on the Nano Chemtech Vietnam line and whether any outside supply contract is announced. Revenue from external supply would be the first signal for the new businesses."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 중",
-    "en": "During H2 2026"
+    "ko": "2027년 3월 말",
+    "en": "End of March 2027"
    },
    "what": {
-    "ko": "AI 버추얼 아티스트 채윤의 필리핀 SNS 쇼핑몰 모델 활동 개시 여부와 브랜드 협업·광고 등 수익모델의 구체화 정도를 확인해야 한다.",
-    "en": "Watch for whether AI virtual artist Chaeyun's Philippine social media shopping platform modeling activity begins as planned, and how concretely brand collaboration and advertising revenue models take shape."
+    "ko": "2026년 사업보고서 제출 기한이다. 2026년 4분기 실적과 연간 영업이익률, 지배주주 순손익의 영업 외 구성, 부채비율 변화를 확인한다. 3분기 흑자가 연간 흑자로 이어졌는지가 판단 지점이다.",
+    "en": "This is the filing deadline for the 2026 annual report. Check fourth-quarter 2026 results, the full-year operating margin, the non-operating breakdown of profit attributable to controlling shareholders and the change in the debt ratio. Whether the third-quarter profit carried into a full-year profit is the key point."
    }
   },
   {
    "when": {
-    "ko": "추가 공시 시점",
-    "en": "Upon Future Disclosures"
+    "ko": "2027년 5월 중순",
+    "en": "Mid-May 2027"
    },
    "what": {
-    "ko": "제8회차 CB 잔액(43.5억원)의 추가 상환 또는 전환 여부를 공시를 통해 확인해 잠재 희석 물량 변화를 점검해야 한다.",
-    "en": "Monitor future disclosures for further redemption or conversion of the remaining 8th CB balance (KRW 4.35 billion) to track changes in potential dilution volume."
+    "ko": "2027년 1분기 분기보고서 제출 기한이다. 1분기 영업이익이 흑자를 유지하는지, 전 분기 대비 매출 흐름이 이어지는지 확인한다.",
+    "en": "This is the filing deadline for the first-quarter 2027 report. Check whether operating profit stays positive and whether revenue keeps its sequential momentum."
    }
   },
   {
    "when": {
-    "ko": "추가 공시 시점",
-    "en": "Upon Future Disclosures"
+    "ko": "수시 공지(시기 미정)",
+    "en": "Ad hoc (no fixed date)"
    },
    "what": {
-    "ko": "아마존웹서비스와의 협업 및 영국 버밍엄대학교와의 공동연구가 시제품·특허·상용화 계약 등 구체적 결과물로 이어지는지 확인해야 한다.",
-    "en": "Confirm whether the Amazon Web Services collaboration and University of Birmingham joint research progress into concrete outcomes such as prototypes, patents, or commercialization contracts."
+    "ko": "AI 버추얼 IP '채윤'의 브랜드 협업과 IP 라이선싱 계약, 원터치에이아이 기술의 외부 판매 계약 공시를 확인한다. 계약 금액과 상대방이 공개되는지가 수익 모델의 실체를 보여 준다.",
+    "en": "Watch for disclosures of brand collaborations and IP licensing deals for the virtual artist 'Chaeyun', and for external sales contracts of Onetouch AI technology. Whether contract values and counterparties are disclosed will show the substance of the revenue model."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "LSK아이로봇(구 나노캠텍)은 정전기 방지(ESD) 소재 사업을 본업으로 유지하면서, 원터치에이아이 인수와 사명 변경을 계기로 AI·로봇 비전 사업으로의 전환을 추진하고 있다. 연간 실적은 2022~2023년 대규모 적자에서 2024년 영업이익 흑자, 2025년 재차 소폭 적자로 등락을 거듭했고, 최근 분기별로는 영업손익과 순손익 간 괴리가 두드러지는데 이는 비핵심 자산 매각 등 비영업적 요인의 영향이 크기 때문이다. 회사는 확보한 현금으로 CB를 순차 상환해 재무구조를 조정하는 동시에, AI 버추얼 아티스트 사업을 시작점으로 산업용 AI 솔루션 확장을 계획하고 있다. 다만 신사업은 아직 매출 기여 규모나 시점이 구체화되지 않은 초기 단계이며, 기존 소재 사업의 외형 성장도 뚜렷하지 않다. 부채비율 상승과 과거 거래정지·투자주의 지정 이력 등은 함께 살펴야 할 요소다. 향후 분기 공시를 통해 본업의 수익 지속성과 신사업의 실제 매출 반영 여부를 확인하는 것이 핵심 관찰 포인트가 될 것으로 판단된다.",
-   "en": "LSK iRobot (formerly Nanocamtec) continues to operate its core electrostatic discharge (ESD) materials business while pursuing a pivot toward AI and robot vision, marked by the Onetouch AI acquisition and corporate renaming. Annual results have fluctuated from large losses in 2022-2023 to an operating profit in 2024 and back to modest losses in 2025, and recent quarters show a notable divergence between operating and net results, largely due to non-operating factors such as non-core asset sales. The company has been adjusting its balance sheet by sequentially redeeming convertible bonds with cash raised from these disposals, while planning to expand into industrial AI solutions starting with its AI virtual artist business. However, the new business remains at an early stage with no clear guidance yet on the scale or timing of revenue contribution, and the legacy materials business has not shown clear top-line growth either. Rising debt ratios and a history of past trading halts and investment-caution designations are factors that warrant continued attention. Confirming the sustainability of core business profitability and the actual revenue impact of new ventures through upcoming quarterly disclosures will be the key points to watch going forward."
+   "ko": "LSK아이로봇은 2026년 3분기 연결 매출 134억원, 영업이익 7.7억원으로 흑자 전환을 보여 줬고, 매출총이익률도 회사 발표 기준 28.98%로 올랐다. 그러나 2022년부터 2025년까지 4년 연속 지배주주 순손실이었고, 2025년 말 부채비율은 241.6%다. 신사업인 AI 비전 검사와 AI 콘텐츠는 생산라인 적용과 베타테스트 단계이며, 외부 매출 규모는 아직 공시로 확인되는 부분이 적다. 최근 네 개 분기 지배주주 순손실 합계는 44.8억원으로, 이익 기준 배수가 산출되지 않는 상태가 이어지고 있다. 강세 요인은 분기 흑자 전환, 전환사채 조기 상환, 자산 매각 현금 확보이며, 약세 요인은 연간 적자 지속과 높은 부채 부담, 신사업 수익화의 불확실성이다. 다음 확인 지점은 2026년 사업보고서의 4분기 영업이익과 지배주주 순손익 구성이며, 2027년 1분기 분기보고서에서 흑자 유지 여부가 이어서 확인된다.",
+   "en": "Lskairobot showed a turn to profit in the third quarter of 2026, with consolidated revenue of KRW 13.4 billion and operating profit of KRW 768 million, and the company said gross margin rose to 28.98%. Still, it posted net losses attributable to controlling shareholders for four consecutive years from 2022 to 2025, and its debt ratio stood at 241.6% at end-2025. The new AI vision inspection and AI content businesses are at the production-line deployment and beta-testing stages, and few external revenue figures have been disclosed. The net loss attributable to controlling shareholders over the last four quarters totals KRW 4.48 billion, so an earnings-based multiple remains uncalculated. Strengths include the quarterly profit turn, early redemption of convertible bonds and cash from asset sales. Weaknesses include continued annual losses, a heavy debt load and uncertainty over monetizing the new businesses. The next checkpoint is fourth-quarter operating profit and the composition of profit attributable to controlling shareholders in the 2026 annual report, and whether profitability holds will be checked again in the first-quarter 2027 report."
   }
  },
  "sources": [
+  "https://view.asiae.co.kr/article/2026111712454788505",
+  "https://www.newspim.com/news/view/20261117000111",
+  "https://edaily.co.kr/news/read?amp=&amp=&amp=&amp=&amp=&mediaCodeNo=257&newsid=03621126645646704",
+  "https://supple.kr/news/cmwjxei1p1j6ejkuncsk1b17c",
+  "https://news.nate.com/view/20261117n17057",
+  "https://m.news.nate.com/view/20261117n05637",
+  "https://supple.kr/news/cmss9jxtd0064dt7697v9rpa3",
+  "https://www.mt.co.kr/stock/2026/08/14/2026081410105981902",
   "https://clever-insight.vip/stock/091970/report/",
-  "https://dartpoint.ai/00542074",
-  "https://markets.hankyung.com/stock/091970/financial-summary",
-  "https://m.thinkpool.com/item/091970",
-  "https://www.stockplus.com/m/stocks/KOREA-A091970",
+  "https://view.asiae.co.kr/article/2026102708381457986",
+  "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=714652",
+  "https://view.asiae.co.kr/article/2026062308394510273",
+  "https://view.asiae.co.kr/article/2026082809010669337",
+  "https://www.newspim.com/news/view/20261027000165",
   "https://view.asiae.co.kr/article/2026090208482411848",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20231114001419&docno=&viewerhost=",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20250515001761&docno=&viewerhost=",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=8yiZfGFMueg3e2k7",
-  "https://www.mt.co.kr/stock/2026/07/08/2026070808342882038",
-  "https://www.newspim.com/news/view/20260814001121",
-  "https://www.mt.co.kr/stock/2026/06/23/2026062308425377503",
-  "https://m.thinkpool.com/compDiscuss/cont/1026805",
-  "https://view.asiae.co.kr/article/2026060208420655996",
-  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03578486645514520",
-  "http://www.s-d.kr/news/articleView.html?idxno=80181",
-  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03050406645544368",
-  "https://www.newspim.com/news/view/20260714000895"
+  "https://view.asiae.co.kr/article/2026080508432803900"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "091970",
  "name": "LSK아이로봇",
  "name_en": "LSKAIROBOT CO.,LTD",
@@ -224,11 +222,11 @@
   "로봇"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 09:12",
- "dataDate": "20260904",
+ "reportDate": "2026-11-18",
+ "reportTs": "2026-11-18 19:36",
+ "dataDate": "20261117",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-11-18",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -298,12 +296,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 7712304651,
-    "op": -1023356103,
-    "np_owner": -1491607621
-   },
-   {
     "q": "2025Q3",
     "rev": 13338127529,
     "op": 855650270,
@@ -326,28 +318,39 @@
     "rev": 10208498925,
     "op": -1135821362,
     "np_owner": 3467054168
+   },
+   {
+    "q": "2026Q3",
+    "rev": 13441972394,
+    "op": 768333531,
+    "np_owner": -1194013850
    }
   ],
   "valuation": {
-   "price": 3980,
-   "mcap": 0.03,
+   "price": 2830,
+   "mcap": 0.0213,
    "shares": 7534780,
    "total_shares": 7534780,
    "wavg_shares": null,
    "per": null,
-   "eps": -450,
-   "pbr": 1.3223,
-   "bps": 3010,
-   "roe_ttm": -14.2,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": -3391756142,
+   "eps": -595,
+   "pbr": 1.0136,
+   "bps": 2792,
+   "roe_ttm": -19.4,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": -4484123881,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 1.43,
+   "eps_src": "순이익÷주식수",
+   "pbr_krx": 1.02,
    "bps_krx": 2780.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
-   "div": 0.0
+   "div": 0.0,
+   "hidden": {
+    "per": "loss"
+   }
   }
- }
+ },
+ "textRules": 3
 }
