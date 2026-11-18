@@ -1,220 +1,208 @@
 {
  "title": {
-  "ko": "매출 감소 속 재무재건·신사업 모색기",
-  "en": "Revenue Decline Amid Balance-Sheet Rebuild and New Ventures"
+  "ko": "매출 감소 속 적자 축소, 자본 회복이 과제",
+  "en": "Shrinking Sales, Narrowing Losses, and Recapitalization in Focus"
  },
  "lead": {
-  "ko": "푸드나무는 4년 연속 매출 감소와 두 차례의 최대주주 변경이 겹치는 가운데, 2025년 자본 재조달로 재무구조를 추스르고 축산 AI 데이터·항공기 개조 등 본업 밖 신사업을 모색하고 있다.",
-  "en": "Foodnamoo faces four consecutive years of revenue decline and two changes of controlling shareholder, while having recapitalized its balance sheet in 2025 and now exploring new ventures outside its core diet-food e-commerce business, including a livestock AI data stake and an aircraft conversion deal."
+  "ko": "푸드나무는 2023년부터 2025년까지 매출이 3년 연속 줄었지만, 2025년에는 구조조정과 자산 처분 영향으로 지배주주 순이익이 흑자 전환했고 자본총계는 350억원으로 회복됐다. 다만 2025년 3분기부터 2026년 3분기까지 5개 분기 연속 영업손실이 이어지는 점이 핵심 쟁점이다.",
+  "en": "Foodnamoo's sales have declined for three straight years through 2025, yet restructuring and asset disposals turned attributable net income positive in 2025 and lifted total equity to KRW 35 billion, while operating losses have continued through the third quarter of 2026."
  },
  "keypoints": [
   {
-   "ko": "연결 매출은 2022년 2,172억원에서 2025년 868억원으로 4년 연속 줄었고, 2026년 2분기에는 129억원으로 관찰 구간 내 최저치를 기록했다.",
-   "en": "Consolidated revenue fell for four straight years from KRW 217.2bn in 2022 to KRW 86.8bn in 2025, and hit the lowest level in the observed window at KRW 12.9bn in Q2 2026."
+   "ko": "매출은 2022년 2,172억원에서 2025년 868억원으로 줄었고, 2026년 3분기 매출 114억원은 전년 동기 대비 47.7% 감소했다.",
+   "en": "Revenue dropped from KRW 217.2 billion in 2022 to KRW 86.8 billion in 2025, and third-quarter 2026 revenue of KRW 11.4 billion fell 47.7% from a year earlier."
   },
   {
-   "ko": "최근 네 개 분기(2025Q3~2026Q2) 연속 영업손실이 지속됐고, 2026년 1분기에는 손실 규모가 70억원대로 확대됐다.",
-   "en": "Operating losses persisted for four consecutive quarters (2025Q3-2026Q2), and the loss widened to roughly KRW 7.0bn in Q1 2026."
+   "ko": "2025년 영업손실은 81.5억원으로 적자가 이어졌지만, 지배주주 순이익은 20.2억원으로 흑자 전환했다. 회사는 고정비 감소와 처분이익 증가를 배경으로 설명했다.",
+   "en": "Operating loss narrowed to KRW 8.15 billion in 2025, while attributable net income turned positive at KRW 2.02 billion, which the company attributed to lower fixed costs and higher disposal gains."
   },
   {
-   "ko": "2025년 4분기 129억원 규모의 일회성 이익에 힘입어 2025년 연간 지배주주순이익은 20억원으로 흑자 전환했으나, 이후 다시 손실로 되돌아갔다.",
-   "en": "A one-off gain of roughly KRW 12.9bn in Q4 2025 helped full-year 2025 net income attributable to owners turn positive at about KRW 2.0bn, but the company slipped back into losses afterward."
+   "ko": "2025년 말 자본총계는 350억원, 부채총계는 515억원으로, 2024년 말 자본총계 22억원 수준에서 크게 회복됐다.",
+   "en": "Total equity at the end of 2025 stood at KRW 35 billion against liabilities of KRW 51.5 billion, recovering sharply from about KRW 2.2 billion at the end of 2024."
   },
   {
-   "ko": "2024년 10월 온힐파트너스, 2026년 6월 김우주 대표로 두 차례 최대주주가 바뀌었으며, 신임 대표의 지분 인수 자금은 전액 차입으로 조달됐다.",
-   "en": "Control changed hands twice, from Onhill Partners in October 2024 to CEO Kim Woo-joo in June 2026, with the latter's acquisition funded entirely through borrowed capital."
+   "ko": "2026년 1분기부터 3분기까지 3개 분기 연속 지배주주 순손실이며, 최근 4개 분기 지배주주 순손실 합계는 40.5억원이다.",
+   "en": "Attributable net losses have continued for three straight quarters from the first quarter of 2026, and the last four quarters total an attributable net loss of KRW 4.05 billion."
   },
   {
-   "ko": "회사는 한국축산데이터 지분 투자, 미국 항공기 개조기업 KMC와의 독점 실사 계약 등 본업과 무관한 신사업을 모색 중이다.",
-   "en": "The company is exploring ventures outside its core business, including an equity stake in Korea Livestock Data and an exclusive due-diligence agreement with US aircraft conversion firm Kansas Modification Center (KMC)."
+   "ko": "최대주주는 2026년 6월 김우주 대표로 바뀌었고, 회사는 최대주주 지분과 관련해 매각 제안을 받았다고 밝혔다. 거래 세부 내용은 확정되지 않았다.",
+   "en": "The largest shareholder changed to CEO Kim Woo-ju in June 2026, and the company has said it received a proposal from a private investment firm to acquire the major stake, with terms not yet fixed."
   }
  ],
  "business": {
-  "ko": "푸드나무는 2013년 설립돼 2018년 코스닥에 상장된 푸드테크 기업으로, 다이어트 및 간편건강식품의 유통·생산을 주력으로 한다. '랭킹닭컴'을 중심으로 '개근질마트', '피키다이어트' 등 전자상거래 플랫폼을 운영하며 닭가슴살 가공식품 제조·판매, 미디어&콘텐츠 사업을 병행한다. 회사는 맛있닭, 랭커, 잇메이트, 치팅데잇, 1AM, 프레위홈, 프로틴어스 등 다수의 자체 브랜드를 보유하고 있다. 랭킹닭컴은 340만명 이상의 회원 기반을 확보하고 있으며, 이는 회사가 스스로 꼽는 핵심 경쟁력이다. 사업구조상 플랫폼 부문이 매출의 상당 비중을 차지하는데, 2024년 상반기 기준으로는 매출 903억원 중 665억원(73.6%)이 플랫폼 부문에서 발생했으며 이는 외부업체 및 자체브랜드(PB) 상품을 입점시켜 판매하는 방식이다. 제품은 외주 생산방식을 통해 신속하게 개발·공급하는 구조를 갖추고 있어 재고 부담을 낮추는 대신 생산 통제력은 상대적으로 낮은 편이다. 최근에는 최대주주 변경과 함께 사업 방향에도 변화가 나타나고 있는데, 신규 경영진은 랭킹닭컴의 회원 데이터를 활용한 맞춤형 서비스 확대와 식품·건강관리·바이오헬스케어를 연결하는 성장동력 확보를 추진하고 있다. 이와 병행해 한국축산데이터 지분 투자, 항공기 개조기업 KMC와의 독점 실사 계약 등 기존 사업 영역과는 거리가 있는 신사업도 함께 모색되고 있어, 회사의 사업 포트폴리오가 재편기에 놓여 있다.",
-  "en": "Founded in 2013 and listed on KOSDAQ in 2018, Foodnamoo is a food-tech company focused on distributing and producing diet and convenience health food. Centered on its Ranking Dak.com platform, it also operates e-commerce platforms such as Gaegeunjil Mart and Piky Diet, alongside chicken-breast processed food manufacturing/sales and a media and content business. The company operates multiple in-house brands including Masitdak, Ranker, Eatmate, Cheating Date, 1AM, Freshyhome, and Proteinus. Ranking Dak.com has built a member base of over 3.4 million registered users, which the company itself cites as a core competitive strength. The platform segment accounts for a substantial share of revenue; as of the first half of 2024, KRW 66.5bn of KRW 90.3bn in revenue (73.6%) came from the platform segment, which lists both third-party and private-brand products for sale. Products are developed and supplied quickly through an outsourced manufacturing model, which reduces inventory burden but relatively limits control over production. Following the recent change in controlling shareholder, the strategic direction has also shifted, with new management pursuing customer-tailored services built on Ranking Dak.com's member data and seeking new growth engines linking food, health management, and bio-healthcare. In parallel, the company is exploring ventures outside its traditional scope, including an equity stake in Korea Livestock Data and an exclusive due-diligence agreement with aircraft conversion firm KMC, placing its business portfolio in a period of realignment."
+  "ko": "푸드나무는 2013년에 설립된 기업으로, 닭가슴살과 간편건강식품(HMR)을 온라인 플랫폼에서 판매하는 사업을 중심으로 한다. 대표 채널은 닭가슴살 전문 플랫폼 '랭킹닭컴'이며, 2024년 보도 기준 플랫폼 사업은 '개근질마트', '피키다이어트', '다이어트&쿡', '맛있닭', '러브잇', '1am' 등 7개로 나뉘어 있었다. 기업 개요 자료는 브랜드 관리와 마케팅으로 약 319만명의 회원을 확보하고 있다고 전한다. 제품은 외주 생산 방식으로 개발 속도를 높이는 구조다. '맛있닭'은 2025년 12월 누적 판매량 2억 6,331만팩을 넘었다고 회사가 알렸다. 2025년 12월 기준 매출 유형은 상품 판매 외에 물류관리, ERP, 컨텐츠 제공 등 용역과 육계 판매가 섞여 있고, 공시 기준 국내 매출 비중이 대부분이다. 해외에서는 2024년 보도에서 중국과 베트남 사업을 언급했고, 2025년 10월에는 미국 해외법인 RANKING GLOBAL USA를 세웠다. 2024년 말 기준 자회사는 7곳이었고 이익을 낸 곳은 두 곳뿐이었다는 보도가 있다. 2025년 11월에는 자회사 에프엔풀필먼트를 매각했다. 경쟁 측면에서는 쿠팡, 현대홈쇼핑 등 온라인·홈쇼핑 유통 사업자와 고객을 두고 경쟁하며, 이마트와 롯데쇼핑 같은 대형 소매 사업자와는 외형 규모가 크게 다르다.",
+  "en": "Foodnamoo, founded in 2013, centers its business on selling chicken-breast products and convenience health foods (HMR) through online platforms. Its flagship channel is a chicken-breast specialty platform, and as of a 2024 press report its platform business was split into seven platforms including its diet-food and chicken-product brands. Company profile data cites roughly 3.19 million members built through brand management and marketing. Products are developed quickly using outsourced manufacturing. The company said its 'Matisseun' chicken brand, known in Korean as Masitdak, passed 263.31 million cumulative packs sold in December 2025. Per the December 2025 disclosure, domestic sales account for the bulk of revenue, with revenue types including product sales, logistics, ERP and content services, and chicken sales. Overseas, a 2024 press report referenced business in China and Vietnam, and in October 2025 the company set up a U.S. overseas subsidiary, RANKING GLOBAL USA. At the end of 2024 it had seven subsidiaries, and only two were reported as profitable. In November 2025 it sold its fulfillment subsidiary. Competitively, it overlaps with online and home-shopping distributors such as Coupang and Hyundai Home Shopping, and its scale is far smaller than large retailers such as E-Mart and Lotte Shopping."
  },
  "earnings": {
-  "ko": "연결 매출은 2022년 2,172억원, 2023년 1,907억원, 2024년 1,241억원, 2025년 868억원으로 4년 연속 감소했다. 영업손익은 2022년 -21억원(영업이익률 -1.0%)에서 2023년 -178억원(-9.3%), 2024년 -174억원(-14.0%)으로 손실 폭이 확대됐다가 2025년 -82억원(-9.4%)으로 다소 줄었는데, 이는 매출 급감에도 구조조정과 자산 처분을 통한 고정비 절감이 작용한 결과로 풀이된다. 지배주주순이익은 2022년 -33억원, 2023년 -199억원, 2024년 -451억원까지 손실이 눈덩이처럼 불어났으나 2025년에는 +20억원으로 흑자 전환했다. 다만 이 흑자 전환은 2025년 4분기에만 인식된 129억원 규모의 순이익이 결정적으로 작용한 결과로, 같은 분기 영업손익은 여전히 -15억원의 적자였다는 점에서 일회성 요인의 영향이 컸던 것으로 판단된다. 분기별로 보면 2025년 2분기 매출 263억원·영업손실 23억원, 3분기 매출 218억원·영업손실 22억원, 4분기 매출 153억원·영업손실 15억원으로 매출은 계속 줄었지만 손실 규모는 완만히 축소되는 흐름을 보였다. 그러나 2026년 들어서는 1분기 매출 169억원에 영업손실이 70억원으로 급격히 확대됐고, 2분기에는 매출이 129억원까지 더 줄어든 가운데 영업손실 36억원, 순손실 60억원을 기록해 손실 축소 흐름이 다시 꺾였다. 그 결과 최근 네 개 분기(2025년 3분기~2026년 2분기) 누적 지배주주순손실은 약 39억원으로, 2025년 전체 연간 흑자 전환 효과가 소멸되고 다시 적자 국면으로 복귀한 모습이다. 자기자본(지배주주 기준)은 2022년 477억원에서 2023년 226억원, 2024년에는 21억원까지 급감했다가 2025년 유상증자 등을 통해 350억원 수준으로 회복됐으며, 이에 따라 부채비율도 2024년 4,913%에 달했던 데서 2025년 147%로 크게 낮아졌다. 영업활동 현금흐름은 2025년에도 -152억원의 순유출을 기록해, 손익 개선에도 현금창출력은 여전히 취약한 상태다.",
-  "en": "Consolidated revenue fell for four straight years, from KRW 217.2bn in 2022 to KRW 190.7bn in 2023, KRW 124.1bn in 2024, and KRW 86.8bn in 2025. The operating margin deteriorated from -1.0% in 2022 to -9.3% in 2023 and -14.0% in 2024, before narrowing to -9.4% in 2025 as fixed-cost reductions from restructuring and asset disposals partly offset the sharp revenue decline. Net income attributable to owners swelled from a loss of KRW 3.3bn in 2022 to KRW 19.9bn in 2023 and KRW 45.1bn in 2024, before flipping to a profit of about KRW 2.0bn in 2025. However, this swing to profit was driven decisively by a roughly KRW 12.9bn net gain recognized in Q4 2025 alone, even as operating loss that same quarter remained at about KRW 1.5bn, indicating the turnaround was largely attributable to a one-off item. On a quarterly basis, revenue continued to slide from KRW 26.3bn in Q2 2025 to KRW 21.8bn in Q3 and KRW 15.3bn in Q4, while operating losses gradually narrowed from about KRW 2.3bn to KRW 1.5bn over the same period. Entering 2026, however, the operating loss widened sharply to about KRW 7.0bn in Q1 on revenue of KRW 16.9bn, and in Q2 revenue fell further to KRW 12.9bn with an operating loss of KRW 3.6bn and a net loss of KRW 6.0bn, reversing the earlier trend of narrowing losses. As a result, the cumulative net loss to owners over the most recent four quarters (2025Q3-2026Q2) reached about KRW 3.9bn, effectively unwinding the full-year 2025 profit swing and returning the company to a loss position. Equity attributable to owners fell from KRW 47.7bn in 2022 to KRW 22.6bn in 2023 and just KRW 2.1bn in 2024, before recovering to about KRW 35.0bn in 2025 through capital raises, which brought the debt-to-equity ratio down sharply from 4,913% in 2024 to 147% in 2025. Operating cash flow remained negative at KRW 15.2bn in 2025, underscoring that cash generation remains weak despite the reported earnings recovery."
+  "ko": "연간 매출은 2022년 2,172억원에서 2023년 1,907억원(전년 대비 12.2% 감소), 2024년 1,241억원(전년 대비 34.9% 감소), 2025년 868억원(전년 대비 30.1% 감소)으로 줄었으며, 2023년부터 2025년까지 3년 연속 감소했다. 같은 기간 영업손실은 2022년 20.9억원, 2023년 178억원, 2024년 174억원, 2025년 81.5억원으로 2022년부터 2025년까지 4년 연속 적자였고, 영업이익률은 -1.0%, -9.3%, -14.0%, -9.4%였다. 2023년 실적에 대해 회사 관계자는 소비 침체와 신규 자회사의 초기 투자 비용을 이유로 들었다. 2025년에 대해 회사는 소비심리 위축과 마케팅 활동 부진으로 매출이 줄었지만, 구조조정과 자산 처분으로 고정비가 줄고 처분이익이 늘었다고 밝혔다. 그 결과 2025년 지배주주 순이익은 20.2억원으로 흑자 전환했고, 당기순이익(비지배지분 포함)은 20.3억원이었다. 지배주주 순손실은 2023년 199억원, 2024년 451억원으로 확대된 뒤 2025년에 흑자로 돌아섰다. 부채비율은 2024년 4,913.1%에서 2025년 146.9%로 낮아졌다. 분기 매출은 2025년 3분기 218억원, 4분기 153억원(전 분기 대비 29.9% 감소), 2026년 1분기 169억원(전 분기 대비 10.6% 증가)이었고, 이후 2분기 129억원, 3분기 114억원으로 2개 분기 연속 감소했다. 영업손실은 2025년 3분기 21.7억원, 4분기 15.2억원에서 2026년 1분기 70.2억원으로 확대된 뒤 2분기 36.4억원, 3분기 30.1억원으로 줄었다. 2025년 4분기 지배주주 순이익 129억원은 흑자 전환 분기인데, 같은 분기인 2025년 11월에 자회사 매각이 있었다는 점이 함께 짚인다. 이후 2026년 1분기부터 3분기까지 3개 분기 연속 지배주주 순손실이며, 최근 4개 분기 지배주주 순손실 합계는 40.5억원이다.",
+  "en": "Annual revenue fell from KRW 217.2 billion in 2022 to KRW 190.7 billion in 2023 (down 12.2% year on year), KRW 124.1 billion in 2024 (down 34.9%) and KRW 86.8 billion in 2025 (down 30.1%), with declines in each year from 2023 through 2025. Operating losses were KRW 2.09 billion in 2022, KRW 17.8 billion in 2023, KRW 17.4 billion in 2024 and KRW 8.15 billion in 2025, and operating margins were -1.0%, -9.3%, -14.0% and -9.4% over the same years. For 2023, a company official pointed to weak consumer spending and initial investment costs at newly established subsidiaries. For 2025, the company said weaker consumer sentiment and sluggish marketing reduced sales, while restructuring and asset disposals cut fixed costs and raised disposal gains. As a result, attributable net income was KRW 2.02 billion in 2025, a swing to profit, while net income including non-controlling interests was KRW 2.03 billion. Attributable net losses widened to KRW 19.9 billion in 2023 and KRW 45.1 billion in 2024 before turning positive in 2025. The debt ratio fell from 4,913.1% in 2024 to 146.9% in 2025. Quarterly revenue was KRW 21.8 billion in the third quarter of 2025, KRW 15.3 billion in the fourth quarter (down 29.9% from the prior quarter), and KRW 16.9 billion in the first quarter of 2026 (up 10.6%), after which it fell to KRW 12.9 billion and KRW 11.4 billion, a two-quarter decline. Operating losses widened from KRW 2.17 billion and KRW 1.52 billion in the third and fourth quarters of 2025 to KRW 7.02 billion in the first quarter of 2026, then narrowed to KRW 3.64 billion and KRW 3.01 billion. The fourth-quarter 2025 attributable net income of KRW 12.9 billion came in the same quarter as the November 2025 subsidiary sale. Attributable net losses have followed for three quarters since the first quarter of 2026, and the last four quarters total KRW 4.05 billion."
  },
  "industry": {
-  "ko": "간편건강식품(HMR) 및 다이어트식 시장은 1인 가구 증가와 건강에 대한 관심 확대에 힘입어 성장하고 있으며, 저칼로리·저염·고단백 제품군이 지속적으로 확대되는 추세다. 이러한 구조적 성장 여건 속에서도 푸드나무의 매출은 2022년 이후 4년 연속 줄어들었는데, 이는 시장 전체의 성장과는 다른 개별 기업 차원의 사업 축소·구조조정 국면이 반영된 결과로 볼 수 있다. FnGuide 등 데이터 제공기관은 2025년 3분기까지 누적 기준 전자상거래 플랫폼과 간편건강식품 부문 매출이 함께 줄었다고 짚었는데, 이는 소비 위축과 마케팅 활동 축소가 겹친 영향으로 풀이된다. 경쟁 구도 측면에서는 대형 식품기업과 종합 유통 플랫폼들이 저칼로리·고단백 HMR 라인업을 확대하고 있어, 닭가슴살·다이어트식 특화 플랫폼이라는 푸드나무의 차별점이 상대적으로 옅어질 수 있는 환경이다. 회사는 외주 생산 기반의 신속한 제품 개발력과 다수의 자체 브랜드, 대규모 회원 데이터베이스를 경쟁력으로 제시하고 있으나, 매출 감소가 지속되는 만큼 이러한 강점이 실제 시장점유율 방어로 이어지고 있는지는 추가 확인이 필요한 부분이다. 최근 경영진 교체 이후 회사가 데이터 기반 맞춤형 서비스와 헬스케어 연계로 사업모델을 전환하려는 시도는 이러한 경쟁 압력에 대응하는 방향으로 해석할 수 있다.",
-  "en": "The convenience health food (HMR) and diet food market continues to grow on the back of rising single-person households and greater health consciousness, with low-calorie, low-sodium, high-protein product lines continuing to expand. Despite these structurally favorable conditions, Foodnamoo's revenue has declined for four consecutive years since 2022, suggesting company-specific contraction and restructuring rather than a market-wide slowdown. Data providers such as FnGuide have noted that both the e-commerce platform and convenience health food segments saw revenue declines through the first nine months of 2025, reflecting weaker consumer sentiment and reduced marketing activity. On the competitive front, large food companies and general retail platforms have been expanding their own low-calorie, high-protein HMR lineups, which could erode the differentiation once held by chicken-breast and diet-food specialist platforms like Foodnamoo's. The company points to its outsourced, fast product-development model, multiple in-house brands, and large member database as competitive strengths, but with revenue still declining, whether these strengths are translating into defended market share warrants further scrutiny. The recent management change and the attempt to pivot toward data-driven, personalized services connected to healthcare can be read as a response to these competitive pressures."
+  "ko": "간편건강식품과 HMR 시장은 1인 가구 증가와 건강 관심도 상승을 배경으로 성장하는 흐름으로 제시된다. 기업 정보 서비스는 저칼로리, 저염, 고단백 제품군이 확대되고 있다고 분석했다. 그러나 푸드나무의 매출은 같은 기간 줄었고, 2024년 회사 관계자는 소비 침체를 언급했으며 2025년 공시에서도 소비심리 위축이 매출 감소 원인으로 적혔다. 즉 시장 성장 흐름과 회사 외형 축소 사이에 간극이 있다. 온라인 유통과 플랫폼 경쟁에서는 대형 사업자의 자본력과 물류 규모가 영향을 준다. 이마트, 롯데쇼핑 같은 대형 소매 사업자는 외형이 훨씬 크고 카테고리가 넓은 반면, 푸드나무는 닭가슴살과 다이어트 식품에 집중한 구조다. 강점으로는 약 319만명의 회원 기반과 외주 생산을 통한 빠른 제품 개발이 꼽힌다. 사이클 위치로 보면 업황 회복 신호보다 자체 매출 축소가 먼저 나타나는 구간이다. 2026년 1분기 이후 분기 매출이 줄어드는 가운데 제품 경쟁력이 매출 회복으로 이어지는지가 다음 판단 기준이다.",
+  "en": "The convenience health food and HMR market is presented as growing, supported by rising single-person households and greater interest in health. An information service reports that low-calorie, low-sodium and high-protein product lines are expanding. Foodnamoo's sales, however, declined over the same period, a company official cited weak consumer spending in 2024, and the 2025 disclosure again pointed to weaker consumer sentiment. The gap between category growth and the company's shrinking top line is therefore the central issue. In online distribution and platform competition, the capital strength and logistics scale of large operators matter. Large retailers such as E-Mart and Lotte Shopping are far bigger and more diversified, while Foodnamoo is concentrated in chicken-breast and diet foods. Its strengths cited include a member base of about 3.19 million and fast product development through outsourced manufacturing. In cycle terms, the company's own sales contraction is appearing before any sign of sector recovery. Whether product strength can translate into revenue recovery is the next test, given that quarterly sales have declined since the first quarter of 2026."
  },
  "outlook": {
-  "ko": "2026년 6월 최대주주로 오른 김우주 대표는 재무·전략 전문가 출신으로, 랭킹닭컴의 회원 데이터를 활용한 맞춤형 서비스 확대와 운영 효율화, 수익성 중심의 내실 성장을 핵심 전략으로 제시했다. 회사 측은 식품·건강관리·바이오헬스케어를 연결하는 신규 성장동력 확보에도 속도를 내겠다고 밝혔다. 이 같은 방향성 아래 2026년 3월에는 축산 AI·빅데이터 플랫폼 '팜스플랜'을 운영하는 한국축산데이터에 30억원을 투자해 지분 5.66%를 확보했는데, 회사는 이를 중장기 투자를 통한 수익 제고 목적이라고 설명했다. 이와 별개로 회사는 미국 항공기 개조기업 KMC와 본계약 체결을 위한 독점 실사 계약을 맺고 실사 중간 진행상황을 공시하고 있는데, 이는 기존 식품·플랫폼 사업과는 성격이 전혀 다른 영역으로의 확장 시도다. 다만 이는 아직 실사 단계에 머물러 있어 본계약 체결로 이어질지, 이어질 경우 투자 규모와 사업 성격이 어떻게 구체화될지는 불확실하다. 온힐파트너스는 최대주주 지위를 김우주 대표에게 넘긴 이후에도 2대주주로 잔류하고 있어, 헬스케어·펫푸드 연계 사업 협력 가능성 자체가 완전히 소멸된 것은 아니다. 종합하면 회사의 향후 실적은 기존 플랫폼·건강식 사업의 매출 감소세가 언제 멈추는지, 그리고 새로 모색 중인 신사업들이 실제 계약과 실적으로 연결되는지에 따라 갈릴 가능성이 크다.",
-  "en": "CEO Kim Woo-joo, who became controlling shareholder in June 2026, is a finance and strategy professional who has laid out a strategy centered on expanding personalized services using Ranking Dak.com's member data, improving operational efficiency, and pursuing profitability-focused growth. Management has stated it will accelerate efforts to secure new growth engines connecting food, health management, and bio-healthcare. In line with this direction, in March 2026 the company invested KRW 3.0bn to acquire a 5.66% stake in Korea Livestock Data, which operates the livestock AI/big-data platform FarmsPlan, explaining the move as aimed at generating returns through a mid-to-long-term investment. Separately, the company has entered an exclusive due-diligence agreement toward a definitive contract with US aircraft conversion firm Kansas Modification Center (KMC) and has been disclosing interim progress updates, representing an expansion attempt into a field entirely unrelated to its existing food and platform businesses. This remains at the due-diligence stage, however, and it is uncertain whether it will lead to a definitive contract or, if so, what scale and nature the resulting business would take. Onhill Partners has remained the second-largest shareholder even after transferring controlling status to Kim, so the possibility of collaboration in healthcare and pet-food-related businesses has not entirely disappeared. Overall, the company's future results are likely to hinge on whether the decline in its core platform and health-food revenue stabilizes, and whether the new ventures being explored translate into actual contracts and results."
+  "ko": "회사는 2026년 3월 감사보고서 제출과 함께 수익성 중심의 사업 운영과 핵심 경쟁력 강화에 집중하겠다고 밝혔다. 같은 시점에 인력 구조조정, 비주력 자회사 매각, 물류 효율화를 진행 중이며, 자본 확충과 자금 조달 방안도 마련 중이라고 밝혔다. 최대주주 지분과 관련해서는 그린하버 측으로부터 매각 제안을 받았고, 회사는 실사가 완료됐지만 구체적인 내용은 확정되지 않았다는 입장이다. 제품 측면에서는 '맛있닭' 누적 판매량이 2025년 12월 2억 6,331만팩을 넘었다는 회사 발표가 있다. 해외에서는 2025년 10월 미국 해외법인을 세웠고, 2024년 보도 당시 중국 현지 판매를 2024년 하반기에 개시할 계획이라고 전했다. 공식 매출이나 이익 목표치는 이 조사에서 확인된 자료에 없다. 다음 실적 흐름은 2026년 4분기와 연간 실적에서 매출 감소가 멈추는지, 영업손실이 2026년 3분기 30.1억원 수준보다 더 줄어드는지로 가늠할 수 있다. 자본 확충 계획의 구체적 방식과 최대주주 지분 거래 조건이 정해지면 재무 구조와 지배구조 해석이 함께 바뀔 수 있다.",
+  "en": "When it submitted its audit report in March 2026, the company said it would focus on profitability-driven operations and strengthening its core competitiveness. At the same time it said it was pursuing workforce restructuring, the sale of non-core subsidiaries and logistics efficiency, and that it was preparing capital-raising and funding plans. On the major stake, the company said it received a proposal from a private investment firm, that due diligence is complete, and that specific terms have not been fixed. On products, the company announced that cumulative sales of its chicken brand passed 263.31 million packs in December 2025. Overseas, it set up a U.S. subsidiary in October 2025, and a 2024 press report said it planned to start sales in China in the second half of that year. No official revenue or profit targets were found in the sources. The next check is whether revenue declines stop in the 2026 full-year results, and whether operating losses narrow beyond the KRW 3.01 billion seen in the third quarter of 2026. The concrete form of the capital plan and the terms of the stake transaction would change how the balance sheet and ownership should be read."
  },
  "valuation_comment": {
-  "ko": "지속된 순손실로 인해 주가수익비율(PER)은 산출되지 않는 적자 구간에 머물러 있다. 주가순자산비율(PBR)은 순자산가치 대비 프리미엄이 형성된 구간에서 거래되고 있는데, 이는 최근 수년간 반복된 자본 급감과 재조달 과정에서 순자산 규모 자체가 크게 출렁였던 점이 함께 반영된 결과로 볼 수 있다. 배당의 경우 최근 수년간 지급 실적이 없어 배당을 통한 주주환원은 제한적인 상태다. 다년간의 흐름을 보면 회사는 대규모 적자에서 2025년 한 해 흑자로 전환했으나 이는 4분기 일회성 이익에 기인했고, 이후 다시 손실 국면으로 복귀한 만큼 이익의 질과 지속성에 대한 판단은 향후 분기 실적 흐름을 좀 더 지켜볼 필요가 있는 부분이다. 결국 현재의 시장가치는 실적 회복의 지속성과 최근 발표된 신사업들의 구체화 여부에 대한 시장의 기대가 함께 반영된 결과로 해석할 수 있다.",
-  "en": "Persistent net losses mean the price-to-earnings ratio remains in loss territory where a meaningful multiple cannot be calculated. The price-to-book ratio trades at a premium to net asset value, a relationship also shaped by the repeated sharp swings in equity size seen over recent years amid capital erosion and subsequent recapitalization. On dividends, there has been no payout in recent years, so shareholder returns through dividends remain limited. Looking at the multi-year pattern, the company swung from large losses to a full-year profit in 2025, but that swing was driven by a one-off gain in the fourth quarter, and the company has since reverted to losses, meaning the quality and durability of that earnings recovery warrants continued observation of upcoming quarterly results. Ultimately, the current market value can be read as reflecting both expectations about the durability of any earnings recovery and about whether the newly announced ventures materialize into concrete outcomes."
+  "ko": "배수 해석은 두 시기로 나누어 보는 것이 맞다. 2024년 말 자본총계가 22억원 수준이던 시기에는 순자산 대비 배수가 의미를 갖기 어려웠다. 2025년 말 자본총계가 350억원으로 회복되면서 주가순자산비율(PBR)이 계산되는 구간으로 들어왔고, 현재 PBR은 순자산 가치 근처의 배수다. 수익 기준 배수인 PER은 최근 네 개 분기 합계가 순손실이라 산출되지 않는다. 배당수익률은 0% 수준으로, 주주환원 측면에서 배당 기대는 낮은 편이다. 최대주주 지분 매각 제안이 구체화되면 지배구조 변화가 배수 해석의 변수가 된다. 2026년 중 제3자배정 유상증자 두 차례와 전환우선주의 보통주 전환으로 주식 수가 늘어난 점도 주당 지표를 읽을 때 고려해야 한다. 같은 업종의 대형 유통사와 배수를 비교하면 손익 구조와 자본 규모가 달라 단순 비교의 의미가 제한된다.",
+  "en": "The multiples should be read in two periods. When equity stood at about KRW 2.2 billion at the end of 2024, a book-value multiple carried little meaning. After equity recovered to KRW 35 billion at the end of 2025, the price-to-book ratio became a meaningful measure, and the current figure sits near asset value. The earnings-based P/E cannot be calculated because the last four quarters combined show a net loss. The dividend yield is around zero, so the income return from dividends is low. If the proposal for the major stake advances, the change in control would become a variable in interpreting these multiples. The two rounds of third-party share issuance in 2026 and the conversion of preferred shares into common shares increased the share count, which also matters when reading per-share measures. Comparisons with larger retailers have limited meaning because their earnings structure and capital base differ."
  },
  "bull": [
   {
    "title": {
     "ko": "재무구조 정상화 진행",
-    "en": "Balance Sheet Normalization Underway"
+    "en": "Balance sheet normalization under way"
    },
    "body": {
-    "ko": "2024년 자기자본이 21억원까지 급감하며 위기에 처했던 재무구조는 2025년 유상증자와 자산 처분을 통해 자본이 350억원 수준으로 회복되고 부채비율도 4,913%에서 147%로 크게 낮아졌다. 영업손실 규모도 2024년 174억원에서 2025년 82억원으로 축소되는 등 비용 구조조정의 효과가 일부 확인된다. 다만 2026년 상반기 손실이 다시 확대된 만큼, 이러한 개선이 지속될지는 추가 확인이 필요하다.",
-    "en": "Equity, which had collapsed to just KRW 2.1bn in 2024, recovered to roughly KRW 35.0bn in 2025 through capital raises and asset disposals, while the debt-to-equity ratio fell sharply from 4,913% to 147%. The operating loss also narrowed from KRW 17.4bn in 2024 to KRW 8.2bn in 2025, showing some effect from cost restructuring. However, losses widened again in the first half of 2026, so whether this improvement is durable requires further confirmation."
+    "ko": "2025년 말 자본총계는 350억원, 부채총계는 515억원으로 2024년 말 자본총계 22억원 수준에서 크게 회복됐다. 2025년 연결 재무제표는 외부감사에서 적정 의견을 받았고, 관리종목과 투자주의환기종목 지정에서 벗어났다. 언론은 재무 신뢰성과 경영 투명성이 회복됐다고 평가했다.",
+    "en": "Total equity rose to KRW 35 billion at the end of 2025 and liabilities fell to KRW 51.5 billion, a sharp recovery from roughly KRW 2.2 billion of equity at the end of 2024. The 2025 consolidated statements received a clean external audit opinion, and the company moved off the administrative issue and investor-caution designations. Press coverage described the recovery in financial credibility and transparency."
    }
   },
   {
    "title": {
-    "ko": "신사업 다각화 시도",
-    "en": "Diversification into New Ventures"
+    "ko": "적자 폭 축소 흐름",
+    "en": "Narrowing operating losses"
    },
    "body": {
-    "ko": "회사는 축산 AI 데이터 기업 지분 투자와 항공기 개조기업 KMC와의 독점 실사 계약 등 기존 사업과 무관한 신규 성장동력을 적극적으로 모색하고 있다. 재무·전략 전문가 출신 신임 대표가 데이터 기반 플랫폼 전환과 수익성 중심 경영을 표방하고 있다는 점도 변화의 계기가 될 수 있다. 다만 이들 신사업은 아직 초기 단계로 실적 기여 여부는 불확실하다.",
-    "en": "The company is actively exploring new growth engines unrelated to its core business, including an equity investment in a livestock AI data firm and an exclusive due-diligence agreement with aircraft conversion firm KMC. The new CEO, a finance and strategy professional, has also championed a shift toward data-driven platforms and profitability-focused management, which could serve as a catalyst for change. However, these ventures remain at an early stage and their earnings contribution is uncertain."
+    "ko": "영업손실은 2024년 174억원에서 2025년 81.5억원으로 줄었고, 영업이익률은 -14.0%에서 -9.4%로 개선됐다. 2026년 2분기 영업손실 36.4억원에서 3분기 30.1억원으로 분기 적자 폭도 좁혀졌다. 2025년 지배주주 순이익은 적자에서 흑자로 전환했다.",
+    "en": "Operating losses narrowed from KRW 17.4 billion in 2024 to KRW 8.15 billion in 2025, and the operating margin improved from -14.0% to -9.4%. Quarterly operating losses also narrowed from KRW 3.64 billion in the second quarter of 2026 to KRW 3.01 billion in the third quarter. Attributable net income moved from a loss to a profit in 2025."
    }
   },
   {
    "title": {
-    "ko": "플랫폼 자산과 회원 기반 유지",
-    "en": "Retained Platform Assets and Member Base"
+    "ko": "브랜드 판매와 시장 성장",
+    "en": "Brand volume and category growth"
    },
    "body": {
-    "ko": "매출 감소에도 랭킹닭컴은 340만명 이상의 회원 기반과 다수의 자체 브랜드를 유지하고 있으며, 외주 생산방식을 통한 신속한 제품개발력도 여전히 회사의 핵심 자산으로 꼽힌다. 이러한 플랫폼 자산은 신규 경영진이 추진하는 데이터 기반 맞춤형 서비스 전환의 기반이 될 수 있다.",
-    "en": "Despite the revenue decline, Ranking Dak.com has retained a member base of over 3.4 million along with multiple proprietary brands, and its outsourced, fast product-development capability remains a core asset of the company. These platform assets could serve as the foundation for the new management's push toward data-driven, personalized services."
+    "ko": "'맛있닭' 누적 판매량이 2025년 12월 2억 6,331만팩을 넘었다고 회사가 알렸다. 기업 정보 서비스는 1인 가구 증가와 건강 관심 상승으로 간편건강식품과 HMR 시장이 성장 중이라고 분석했다. 회사는 저칼로리, 저염, 고단백 제품군을 넓히고 있다.",
+    "en": "The company said cumulative sales of its chicken brand passed 263.31 million packs in December 2025. An information service attributes category growth in convenience health foods and HMR to rising single-person households and health awareness. The company is expanding its low-calorie, low-sodium and high-protein lines."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "매출 감소세 장기화",
-    "en": "Prolonged Revenue Decline"
+    "ko": "매출 감소 지속",
+    "en": "Persistent revenue decline"
    },
    "body": {
-    "ko": "연결 매출은 2022년 2,172억원에서 2025년 868억원으로 4년 연속 줄었고, 2026년 2분기에는 129억원까지 낮아져 관찰 구간 내 최저치를 기록했다. 성장 중인 HMR·간편건강식품 시장 환경과는 대조적인 흐름으로, 사업 축소가 언제까지 이어질지 불확실하다.",
-    "en": "Consolidated revenue fell for four consecutive years from KRW 217.2bn in 2022 to KRW 86.8bn in 2025, and dropped further to KRW 12.9bn in Q2 2026, the lowest level in the observed window. This contrasts with the broader growth trend in the HMR and convenience health food market, and it remains unclear when the contraction will stop."
+    "ko": "매출은 2023년부터 2025년까지 3년 연속 줄었고, 2026년 1분기 정점 이후 2분기와 3분기에 2개 분기 연속 감소했다. 2026년 3분기 매출 114억원은 전년 동기 대비 47.7% 감소했다. 회사가 밝힌 소비심리 위축과 마케팅 부진이 외형 회복을 막고 있다.",
+    "en": "Revenue has fallen for three straight years through 2025, and after peaking in the first quarter of 2026 it declined in the second and third quarters. Third-quarter 2026 revenue of KRW 11.4 billion was down 47.7% year on year. The company itself cites weaker consumer sentiment and sluggish marketing as drags on recovery."
    }
   },
   {
    "title": {
-    "ko": "영업손실의 재확대",
-    "en": "Re-widening of Operating Losses"
+    "ko": "분기 적자와 순손실 지속",
+    "en": "Continuing quarterly losses"
    },
    "body": {
-    "ko": "2025년 하반기까지 완만히 줄어들던 영업손실은 2026년 1분기 70억원, 2분기 36억원으로 다시 확대되며 개선 흐름이 꺾였다. 최근 네 개 분기 연속 영업손실이 지속되고 있어, 2025년의 일시적 순이익 흑자 전환이 구조적 수익성 개선으로 이어졌다고 보기는 어렵다.",
-    "en": "Operating losses, which had gradually narrowed through the second half of 2025, widened again to about KRW 7.0bn in Q1 2026 and KRW 3.6bn in Q2, breaking the improving trend. With operating losses persisting for four consecutive quarters, the temporary swing to net profit in 2025 does not appear to reflect a structural improvement in profitability."
+    "ko": "2025년 3분기부터 2026년 3분기까지 5개 분기 연속 영업손실이다. 2026년 1분기 영업손실은 70.2억원으로 확대됐다. 2026년 1분기부터 3개 분기 연속 지배주주 순손실이며 최근 4개 분기 합계는 40.5억원이다.",
+    "en": "Operating losses have continued for five straight quarters from the third quarter of 2025 through the third quarter of 2026. The first-quarter 2026 operating loss widened to KRW 7.02 billion. Attributable net losses have followed for three straight quarters since the first quarter of 2026, and the last four quarters total KRW 4.05 billion."
    }
   },
   {
    "title": {
-    "ko": "지배구조 불안정성",
-    "en": "Governance Instability"
+    "ko": "지배구조와 자금 조달 변수",
+    "en": "Ownership and funding variables"
    },
    "body": {
-    "ko": "2024년 10월 온힐파트너스, 2026년 6월 김우주 대표로 짧은 기간에 두 차례 최대주주가 변경됐다. 특히 김우주 대표의 지분 인수자금 약 225억원은 전액 차입으로 조달돼 보유 주식이 담보로 제공된 것으로 알려져, 주가 변동이 경영권 안정성에 직접적인 변수로 작용할 수 있는 구조다.",
-    "en": "Control changed twice within a short period, from Onhill Partners in October 2024 to CEO Kim Woo-joo in June 2026. Notably, Kim's roughly KRW 22.5bn acquisition financing was reportedly funded entirely through borrowing with his shares pledged as collateral, creating a structure where stock price movements can directly affect the stability of control."
+    "ko": "2026년 6월 김우주 대표가 최대주주 지분 28.63%를 확보하며 최대주주가 바뀌었다. 회사는 최대주주 지분에 대해 매각 제안을 받았다고 밝혔으나 거래 세부 내용은 확정되지 않았다. 2026년 7월과 9월에 각 100억원 규모의 제3자배정 유상증자가 있었고, 재무구조 정상화가 외부 자금과 주식 전환에 기대고 있다.",
+    "en": "In June 2026 CEO Kim Woo-ju obtained a 28.63% stake, changing the largest shareholder. The company said it received a proposal related to the major stake, but its terms are not fixed. Two third-party share issuances of KRW 10 billion each took place in July and September 2026, and the balance-sheet repair has relied on outside capital and preferred-share conversion."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "재무·유동성 리스크",
-    "en": "Financial and Liquidity Risk"
+    "ko": "소비 수요와 마케팅 효율",
+    "en": "Consumer demand and marketing efficiency"
    },
    "body": {
-    "ko": "최근 네 개 분기(2025Q3~2026Q2) 누적 지배주주순손실이 약 39억원에 달하고, 2025년 영업활동 현금흐름도 -152억원의 순유출을 기록했다. 2024년 자기자본이 21억원까지 급감했던 전례가 있는 만큼, 손실이 재차 누적될 경우 추가 자본조달 필요성이 다시 부각될 수 있다.",
-    "en": "The cumulative net loss to owners over the most recent four quarters (2025Q3-2026Q2) reached about KRW 3.9bn, and operating cash flow was negative KRW 15.2bn in 2025. Given that equity had already collapsed to just KRW 2.1bn in 2024, renewed loss accumulation could again raise the need for additional capital."
+    "ko": "회사는 2025년 매출 감소 원인으로 소비심리 위축과 마케팅 활동 부진을 꼽았다. 2026년 분기 매출이 감소하는 상황에서 마케팅 효율이 회복되지 않으면 외형 축소가 이어질 수 있다. 플랫폼 사업의 고객 이탈이 매출 기반을 줄이는 방향으로 작용할 가능성도 있다.",
+    "en": "The company attributed the 2025 sales decline to weaker consumer sentiment and sluggish marketing. With quarterly sales still falling in 2026, a failure to restore marketing efficiency could extend the contraction. Customer attrition on the platform could also erode the revenue base."
    }
   },
   {
    "cat": {
-    "ko": "지배구조·담보 리스크",
-    "en": "Governance and Collateral Risk"
+    "ko": "자금 조달과 자본 의존",
+    "en": "Funding and reliance on capital"
    },
    "body": {
-    "ko": "신임 최대주주의 지분 인수자금이 전액 차입으로 조달되고 해당 주식이 담보로 제공된 구조여서, 주가가 하락하면 담보 유지 부담이 커지고 추가 담보 제공이나 상환 요구, 나아가 담보권 실행에 따른 최대주주 재변경 가능성도 배제할 수 없다. 2024년 이후 두 차례의 최대주주 변경 자체도 경영 전략의 일관성에 부담이 될 수 있다.",
-    "en": "Because the new controlling shareholder's acquisition was funded entirely through debt with the shares pledged as collateral, a falling stock price would increase the burden of maintaining collateral value, potentially requiring additional collateral, prompting repayment demands, or in the worst case triggering another change of control if the pledge is executed. The two changes in controlling shareholder since 2024 could themselves weigh on the consistency of management strategy."
+    "ko": "2026년 상반기에는 자본잠식률이 한때 60%를 웃돌아 관리종목 지정 위기를 겪었다. 이후 유상증자와 전환우선주의 보통주 전환으로 자본을 채웠지만, 추가 자금 조달 방안을 마련 중이라고 회사가 밝혔다. 자금 조달 규모와 방식에 따라 주식 수와 재무 구조가 다시 바뀔 수 있다.",
+    "en": "In the first half of 2026 the capital-impairment ratio at one point exceeded 60%, bringing the risk of an administrative designation. Equity was rebuilt through rights issues and the conversion of preferred shares, while the company said it is preparing further funding measures. The size and form of future financing could again change the share count and balance sheet."
    }
   },
   {
    "cat": {
-    "ko": "신사업 불확실성",
-    "en": "New Venture Uncertainty"
+    "ko": "지배구조 변동과 수급",
+    "en": "Ownership change and trading dynamics"
    },
    "body": {
-    "ko": "한국축산데이터 지분 투자와 KMC와의 독점 실사 계약은 모두 기존 식품·플랫폼 사업과 거리가 있는 영역으로, 특히 KMC 관련 계약은 아직 실사 단계에 머물러 있어 본계약 체결 여부와 향후 투자 규모가 불확실하다. 본업 정상화가 지연된 상태에서 자원이 이질적인 신사업에 분산될 경우 재무 부담이 가중될 위험이 있다.",
-    "en": "Both the equity stake in Korea Livestock Data and the exclusive due-diligence agreement with KMC represent areas distant from the company's existing food and platform business, and the KMC-related process in particular remains at the due-diligence stage, leaving the prospect and scale of any definitive contract uncertain. If resources are spread into these unrelated new ventures before core-business normalization is complete, the financial burden could increase."
+    "ko": "2026년 6월 최대주주 변경 이후 지분 매각 제안이 나온 상태라 지배구조가 추가로 바뀔 수 있다. 일부 보도는 최대주주 인수 과정의 자금 조달 방식에 무자본 M&A 의혹을 제기했다. 소형주 특성상 거래량이 급증하는 시기에는 수급 요인에 따라 주가 변동이 커질 수 있다.",
+    "en": "Because the largest shareholder changed in June 2026 and a sale proposal has since surfaced, ownership could shift again. Some press reports raised questions about how the acquisition was funded, including allegations of a capital-light takeover. As a small-cap stock, its price can move sharply when trading volume spikes on supply-and-demand factors."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중순",
-    "en": "Mid-November 2026"
+    "ko": "2027년 2월 말 무렵",
+    "en": "Around late February 2027"
    },
    "what": {
-    "ko": "2026년 3분기 분기보고서 공시 시점으로, 매출 감소세 지속 여부와 영업손실 축소·확대 추이를 확인해야 한다.",
-    "en": "Timing of the Q3 2026 quarterly report filing, when investors should check whether the revenue decline continues and whether the operating loss narrows or widens further."
+    "ko": "2026년 연간 잠정 실적 공시. 2025년 연간 실적은 2026년 2월 24일 공시됐다. 2026년 매출이 2025년보다 줄었는지, 영업손실이 81.5억원 아래로 줄었는지가 확인 지점이다.",
+    "en": "The 2026 full-year preliminary results. The 2025 results were disclosed on February 24, 2026. Whether 2026 revenue falls below the 2025 level and whether the operating loss narrows below KRW 8.15 billion are the checks."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기 중",
-    "en": "During Q4 2026"
+    "ko": "2027년 3월 말까지",
+    "en": "By late March 2027"
    },
    "what": {
-    "ko": "KMC와의 독점 실사 완료 및 본계약 체결 여부에 대한 공시를 확인해야 하며, 체결 시 투자 규모와 사업 성격이 구체화될 것으로 예상된다.",
-    "en": "Watch for disclosures on the completion of exclusive due diligence with KMC and whether a definitive contract is signed, which would clarify the scale and nature of any resulting business."
+    "ko": "2026년 사업보고서 제출 기한. 정기보고서에서 분기 실적이 연간으로 확정되고, 2026년 4분기 흐름과 지배주주 순손실 지속 여부가 확정된다.",
+    "en": "Deadline for the 2026 annual report. The regular filing confirms the full-year figures, including the fourth-quarter trend and whether attributable net losses continue."
    }
   },
   {
    "when": {
-    "ko": "수시(주가 변동 시)",
-    "en": "Ongoing, as share price moves"
+    "ko": "공시 시점 미정",
+    "en": "Timing not yet set"
    },
    "what": {
-    "ko": "김우주 대표의 차입 기반 지분 인수에 따른 주식 담보 관련 공시(대량보유상황보고 등 변경)를 모니터링해, 담보 유지비율 부족 시 추가 담보 제공이나 최대주주 재변경 여부를 확인해야 한다.",
-    "en": "Monitor disclosures related to the pledged shares tied to CEO Kim Woo-joo's debt-funded acquisition (e.g., updates to large shareholding reports), checking for additional collateral requirements or a possible further change of control if maintenance ratios are breached."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 4분기 이후",
-    "en": "From Q4 2026 onward"
-   },
-   "what": {
-    "ko": "한국축산데이터에 대한 추가 투자나 사업 협력 관련 후속 공시가 있는지 확인해, 신사업 투자의 진행 상황과 성과를 점검할 필요가 있다.",
-    "en": "Check for any follow-up disclosures on additional investment in or business cooperation with Korea Livestock Data, to track the progress and outcome of this new venture."
+    "ko": "최대주주 지분 매각 제안의 거래 조건과 최종 결정. 최대주주 변경 여부와 인수 자금 구조, 그에 따른 자본 확충 계획의 변화가 함께 확인 지점이다.",
+    "en": "Final terms and decision on the proposed sale of the major stake, including any change of control, the funding structure of the acquisition, and any resulting change to the capital plan."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "푸드나무는 2022년 이후 4년 연속 매출이 줄어드는 가운데, 2025년 4분기 일회성 이익에 힘입어 연간 순이익이 흑자로 전환됐으나 2026년 상반기 다시 손실 국면으로 돌아섰다. 2024년 자기자본이 21억원까지 급감했던 재무 위기는 2025년 유상증자를 통해 일단 진화됐고 부채비율도 크게 낮아졌지만, 영업활동 현금흐름은 여전히 마이너스에 머물러 있다. 짧은 기간 두 차례 이뤄진 최대주주 변경, 특히 신임 대표의 전액 차입 기반 지분 인수와 주식 담보 구조는 주가 흐름에 따라 지배구조 안정성이 흔들릴 수 있는 요인으로 남아 있다. 회사는 이러한 상황 속에서 한국축산데이터 지분 투자와 항공기 개조기업 KMC와의 독점 실사 계약 등 본업과 이질적인 신사업을 함께 모색하며 새로운 성장동력을 찾고 있다. 다만 이들 신사업은 아직 초기 단계로 실적 기여 여부가 불확실하며, 기존 플랫폼·건강식 사업의 매출 감소세가 언제 진정될지도 확인되지 않은 상태다. 결국 향후 분기 실적에서 매출 감소세의 진정 여부, 영업손실의 지속적 축소 여부, 그리고 신사업의 구체화 여부가 함께 확인돼야 회사의 방향성을 보다 명확히 판단할 수 있을 것으로 보인다.",
-   "en": "Foodnamoo has seen revenue decline for four consecutive years since 2022, and while a one-off gain in Q4 2025 helped full-year net income turn positive, the company slipped back into losses in the first half of 2026. The financial crisis that saw equity collapse to just KRW 2.1bn in 2024 was addressed through a 2025 capital raise that sharply reduced the debt-to-equity ratio, but operating cash flow remains negative. Two changes of controlling shareholder within a short span—particularly the new CEO's fully debt-funded share acquisition with shares pledged as collateral—leave governance stability vulnerable to share price movements. Against this backdrop, the company is pursuing new growth avenues unrelated to its core business, including an equity stake in Korea Livestock Data and an exclusive due-diligence agreement with aircraft conversion firm KMC. These ventures remain at an early stage with uncertain earnings contribution, and it is not yet clear when the decline in the core platform and health-food business will stabilize. Ultimately, confirmation of a stabilizing revenue trend, sustained narrowing of operating losses, and concrete progress on new ventures in upcoming quarters will be needed to more clearly assess the company's direction."
+   "ko": "푸드나무는 매출 감소가 3년 연속 이어지는 가운데 2025년에 지배주주 순이익 흑자 전환과 자본 회복을 함께 이뤘다. 영업손실은 2025년 81.5억원에서 2026년 3분기 30.1억원으로 줄었지만, 2025년 3분기부터 5개 분기 연속 영업적자가 이어지고 있다. 2026년 3분기 매출은 114억원으로 전년 동기 대비 47.7% 감소해 외형 회복은 아직 수치로 확인되지 않는다. 부채비율은 2024년 4,913.1%에서 2025년 146.9%로 낮아졌고, 감사의견 적정으로 재무 신뢰성이 회복됐다는 평가가 나온다. 반면 최근 4개 분기 지배주주 순손실 합계는 40.5억원이고, 2025년 4분기 흑자는 같은 분기의 자회사 매각과 겹쳐 있어 이익의 지속성은 추가 분기로 확인해야 한다. 최대주주 지분 매각 제안과 추가 자본 확충 계획은 지배구조와 자금 조달 방향을 바꿀 수 있는 변수다. 다음 확인 지점은 2026년 사업보고서의 매출 추이와 영업이익률이다.",
+   "en": "Foodnamoo's sales have fallen for three straight years, yet in 2025 it achieved both a swing to attributable net profit and a recovery in equity. Operating losses narrowed from KRW 8.15 billion in 2025 to KRW 3.01 billion in the third quarter of 2026, but operating losses have continued for five straight quarters since the third quarter of 2025. Third-quarter 2026 revenue of KRW 11.4 billion was down 47.7% year on year, so a sales recovery is not yet visible in the numbers. The debt ratio fell from 4,913.1% in 2024 to 146.9% in 2025, and the clean audit opinion has led press coverage to describe a restored credibility of the financials. On the other side, the last four quarters total an attributable net loss of KRW 4.05 billion, and the fourth-quarter 2025 profit came in the same quarter as a subsidiary sale, so the durability of earnings needs more quarters to confirm. The proposed sale of the major stake and further capital plans are variables that could change ownership and funding direction. The next check is the revenue trend and operating margin in the 2026 annual report."
   }
  },
  "sources": [
-  "https://littlebproject.com/stock/290720",
-  "https://littlebproject.com/stock/290720/161/24312",
-  "https://www.similarchart.com/stock/?code=290720&lang=ko",
-  "https://www.paxnet.co.kr/stock/analysis/selling?abbrSymbol=290720",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=Hk5feOl93zCxEj14",
-  "https://m.thinkpool.com/item/290720",
-  "https://www.valueline.co.kr/finance/mri/290720",
-  "https://www.saramin.co.kr/zf_user/company-info/view/csn/QU1lajQ1TXZJbkYyc21CZXJNTGNEdz09/company_nm/(%EC%A3%BC)%ED%91%B8%EB%93%9C%EB%82%98%EB%AC%B4",
-  "https://comp.wisereport.co.kr/company/c1020001.aspx?cmp_cd=290720&cn=",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20240321001863&rcpno=20240321001492&orgid=F&tran=Y&langTpCd=0",
-  "https://www.jobkorea.co.kr/Recruit/Co_Read/C/foodnamoo/Company_name/%E3%88%9C%ED%91%B8%EB%93%9C%EB%82%98%EB%AC%B4",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A290720",
+  "https://www.etoday.co.kr/news/view/2526881",
+  "https://thevc.kr/foodnamoo",
+  "https://kong-namu.com/dashboard/dig/lab/kr/290720",
+  "http://news.bizwatch.co.kr/article/consumer/2024/07/16/0029",
+  "https://m.news.nate.com/view/20260224n35467",
   "https://comp.wisereport.co.kr/company/c1010001.aspx?cn=&cmp_cd=290720",
-  "https://www.nicebizinfo.com/ep/EP0100M002GE.nice?kiscode=I86283",
-  "https://www.catch.co.kr/Comp/CompSummary/I86283",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&cID=&MenuYn=Y&ReportGB=D&NewMenuID=105&stkGb=701&gicode=A290720",
-  "https://foodnamoo.com/",
-  "https://www.newstopkorea.com/news/articleView.html?idxno=26966"
+  "https://comp.wisereport.co.kr/company/c1020001.aspx?cmp_cd=290720&cn=",
+  "https://lab.incruit.com/inc/1447656512",
+  "https://www.asiae.co.kr/article/2026032408102143074",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A290720",
+  "https://www.investing.com/equities/foodnamoo-inc-earnings",
+  "https://www.investing.com/equities/foodnamoo-inc",
+  "https://alphasquare.co.kr/home/stock-summary?code=290720",
+  "https://m.etoday.co.kr/news/view/2526881",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=72KFszu1kX9HbtLl",
+  "https://news.nate.com/view/20260331n35274"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "290720",
  "name": "푸드나무",
  "name_en": "FOODNAMOO, INC.",
@@ -223,11 +211,11 @@
   "유통·소비재"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 18:08",
- "dataDate": "20260904",
+ "reportDate": "2026-11-18",
+ "reportTs": "2026-11-18 14:22",
+ "dataDate": "20261117",
  "quant": {
-  "asOf": "2026-09-05",
+  "asOf": "2026-11-18",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -297,12 +285,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 26291765023,
-    "op": -2323315591,
-    "np_owner": -4726127531
-   },
-   {
     "q": "2025Q3",
     "rev": 21806141310,
     "op": -2171127138,
@@ -325,25 +307,31 @@
     "rev": 12911739883,
     "op": -3635754329,
     "np_owner": -5964576459
+   },
+   {
+    "q": "2026Q3",
+    "rev": 11410059355,
+    "op": -3011603859,
+    "np_owner": -3456092277
    }
   ],
   "valuation": {
-   "price": 2725,
-   "mcap": 0.104,
+   "price": 888,
+   "mcap": 0.0339,
    "shares": 38149273,
    "total_shares": 38149273,
    "wavg_shares": null,
    "per": null,
-   "eps": -102,
-   "pbr": 4.2445,
-   "bps": 642,
-   "roe_ttm": -26.4,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": -3873300398,
+   "eps": -106,
+   "pbr": 1.2686,
+   "bps": 700,
+   "roe_ttm": -16.1,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": -4049050431,
    "ccy": "KRW",
    "bps_src": "자체",
    "eps_src": "순이익÷주식수",
-   "pbr_krx": 2.67,
+   "pbr_krx": 0.87,
    "bps_krx": 1019.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
@@ -352,5 +340,6 @@
     "per": "loss"
    }
   }
- }
+ },
+ "textRules": 3
 }

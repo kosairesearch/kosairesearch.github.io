@@ -1,220 +1,230 @@
 {
  "title": {
-  "ko": "매출 축소·손실 확대 속 SaaS 전환 승부수",
-  "en": "Revenue Shrinks, Losses Widen as Egis Bets on SaaS Shift"
+  "ko": "적자 지속 속, 구독 전환과 해외 확장이 관건",
+  "en": "Losses persist; subscription shift and overseas push in focus"
  },
  "lead": {
-  "ko": "이지스는 2025년 매출이 전년 대비 29.8% 줄고 영업손익이 적자로 전환한 데 이어 2026년 1·2분기에도 연속 영업손실을 기록한 가운데, 공공기관 대상 구독형(SaaS) 디지털트윈 공급과 신사업 확장으로 수익성 회복을 모색하고 있다.",
-  "en": "Egis saw 2025 revenue fall 29.8% year on year and swing to an operating loss, and posted consecutive operating losses in the first and second quarters of 2026, while the company pursues a recovery in profitability through subscription-based (SaaS) digital twin supply to public institutions and new business expansion."
+  "ko": "이지스는 2025년 영업손실로 적자 전환한 뒤 2026년 1분기부터 3분기까지 영업손실이 이어졌고, 구축 용역 중심 매출을 구독형으로 바꾸는 과제와 해외 협력의 실제 매출 전환이 핵심 확인 지점이다.",
+  "en": "Egis moved to an operating loss in 2025 and kept reporting operating losses from the first quarter through the third quarter of 2026, while its revenue still rests mainly on system build projects, so the pace of its subscription shift and the conversion of overseas partnerships into revenue are the key points to track."
  },
  "keypoints": [
   {
-   "ko": "2025년 매출 213억원으로 전년(303억원) 대비 29.8% 감소, 영업이익은 23.9억원에서 영업손실 68억원으로 적자 전환했다.",
-   "en": "2025 revenue fell 29.8% year on year to KRW 21.3 billion from KRW 30.3 billion, and operating profit swung from KRW 2.39 billion to an operating loss of KRW 6.8 billion."
+   "ko": "2025년 영업손실 68억원으로 2024년 영업이익 23.9억원에서 적자 전환했고, 영업이익률은 7.9%에서 -32.0%로 낮아졌다.",
+   "en": "The 2025 operating loss of KRW 6.8 billion replaced the KRW 2.39 billion operating profit of 2024, and the operating margin fell from 7.9% to -32.0%."
   },
   {
-   "ko": "2026년 1분기(영업손실 22.2억원)에 이어 2분기(영업손실 24.2억원)까지 2개 분기 연속 영업손실을 기록하며 손실 폭이 확대됐다.",
-   "en": "Operating losses widened over two consecutive quarters, from KRW 2.22 billion in Q1 2026 to KRW 2.42 billion in Q2 2026."
+   "ko": "2026년 1분기 58억원이던 매출은 2분기 55.9억원, 3분기 54.8억원으로 2개 분기 연속 줄었고, 영업손실은 22.2억원에서 25.3억원으로 확대됐다.",
+   "en": "Revenue fell from KRW 5.8 billion in the first quarter of 2026 to KRW 5.59 billion and then KRW 5.48 billion in the third quarter, while the operating loss widened from KRW 2.22 billion to KRW 2.53 billion."
   },
   {
-   "ko": "2026년 8월31일부터 하나증권과 30억원 규모 자기주식 취득 신탁계약을 체결했고, 향후 소각을 검토하고 있다.",
-   "en": "Egis entered a KRW 3 billion treasury stock trust agreement with Hana Securities starting August 31, 2026, and is considering cancelling the shares it acquires."
+   "ko": "회사 측은 2025년 매출 감소를 경기 침체와 대외 환경요인에 따른 일시적 발주 지연으로 설명했다.",
+   "en": "The company attributed the 2025 revenue decline to temporary project order delays linked to the economic slowdown and external conditions."
   },
   {
-   "ko": "제주특별자치도와 SaaS형 차세대 디지털트윈 플랫폼 구축 계약을 체결했고, 피지컬 AI·우주항공 등 신사업으로 영역을 넓히고 있다.",
-   "en": "The company signed a SaaS-based next-generation digital twin platform contract with Jeju Special Self-Governing Province and is expanding into physical AI and aerospace-related businesses."
+   "ko": "2024년 매출의 89.5%가 구축 용역이었고 구독 서비스 비중은 4.8%에 그쳐, 매출은 프로젝트 발주에 크게 좌우되는 구조다.",
+   "en": "Build-out services accounted for 89.5% of 2024 revenue, while subscription services were only 4.8%, so revenue depends heavily on project orders."
   },
   {
-   "ko": "2025년 말 부채비율은 37.9%로 낮아졌지만, 같은 해 영업활동 현금흐름은 -93.2억원으로 순유출 전환했다.",
-   "en": "The debt-to-equity ratio fell to 37.9% at the end of 2025, but operating cash flow turned negative to -KRW 9.32 billion in the same year."
+   "ko": "2025년 말 부채비율은 37.9%로 2024년 70.4%보다 낮아졌지만, 영업활동 현금흐름은 2024년 37.6억원에서 2025년 -93.2억원으로 돌아섰다.",
+   "en": "The debt ratio fell to 37.9% at the end of 2025 from 70.4% in 2024, but operating cash flow turned from KRW 3.76 billion in 2024 to -KRW 9.32 billion in 2025."
   }
  ],
  "business": {
-  "ko": "이지스는 2001년 설립된 3차원 GIS 및 디지털 트윈 기술 전문 기업으로, 2025년 12월 코스닥 시장에 기술특례 방식으로 상장했다. 핵심 기술인 디지털 어스는 실측 공간정보를 디지털화해 도시·인프라·환경을 실시간으로 분석·시뮬레이션하는 플랫폼으로, 자체 개발을 통해 높은 기술 자립성을 갖추고 있다. 회사의 주력 제품은 디지털 트윈 기반 3D GIS 플랫폼 'XDWORLD'이며, 이를 통해 공간정보 출판·정보서비스업과 소프트웨어 개발·시스템 통합 등 다양한 IT서비스를 제공한다. 상장 당시 공시된 2024년 매출 비중은 구축 용역이 89.5%로 대부분을 차지했고, 구독 서비스 4.8%, 유지보수 용역 3.4%, 기타 매출 2.3%로 구성됐다. 고객군은 정부기관·지자체 등 공공부문이 중심이며, 과거 환경부 한강홍수통제소의 디지털 트윈 물관리 플랫폼 구축 사업을 수주한 이력이 있다. 동사는 공공기관 대상 디지털 트윈 플랫폼 구축을 주력으로 하며, 초기 투자 비용과 인건비 부담으로 수익성이 제한적인 구조를 갖고 있다. 최근에는 기존 시스템 구축형 사업모델에서 벗어나 클라우드 기반 SaaS(서비스형 소프트웨어) 플랫폼으로 전환해 수익성을 개선하려는 전략을 추진 중이다. 경쟁 구도상으로는 국내 공간정보·디지털 트윈 분야에 다수의 전문 스타트업이 활동하고 있으며, 전 세계적으로도 유사한 원천 기술을 상용화한 기업은 소수에 그친다.",
-  "en": "Egis is a specialist in 3D GIS and digital twin technology founded in 2001, and it listed on KOSDAQ in December 2025 under the technology special listing track. Its core technology, Digital Earth, is a platform that digitizes measured spatial data to analyze and simulate cities, infrastructure, and the environment in real time, developed in-house to achieve a high degree of technological self-sufficiency. The company's flagship product is 'XDWORLD,' a digital-twin-based 3D GIS platform, through which it provides spatial information publishing and information services alongside software development and systems integration. At the time of listing, the disclosed 2024 revenue mix showed construction services accounting for the vast majority at 89.5%, with subscription services at 4.8%, maintenance services at 3.4%, and other revenue at 2.3%. The customer base is centered on the public sector, including government agencies and local governments, and the company has previously won a contract to build a digital twin water management platform for the Ministry of Environment's Han River Flood Control Office. The company focuses on building digital twin platforms for public institutions, a structure in which profitability remains constrained by upfront investment costs and personnel expenses. More recently, Egis has been pursuing a shift away from its traditional system-build business model toward a cloud-based SaaS platform in an effort to improve profitability. In terms of competitive positioning, a number of specialized domestic startups operate in the spatial information and digital twin space, while globally only a handful of companies have commercialized similar source technology."
+  "ko": "이지스는 3차원 공간정보(GIS)와 디지털 트윈 기술을 바탕으로 부동산·기상·교통 등 이종 데이터를 디지털 지도 위에 결합하는 플랫폼 사업을 주력으로 하는 기업이다. 2001년에 설립됐고 2025년 12월 코스닥 시장에 기술특례로 상장했다. 상장 전 투자설명 자료 기준 2024년 매출 구성은 구축 용역 89.5%, 구독 서비스 4.8%, 유지보수 용역 3.4%, 기타 매출 2.3%였다. 구축 용역 비중이 압도적이어서 프로젝트 발주 시점과 규모에 따라 매출이 크게 움직이는 구조다. 주요 고객은 공공기관으로, 공공기관 대상 디지털 트윈 플랫폼 구축이 사업의 중심이다. 회사는 자체 개발한 XDCloud 디지털 어스 플랫폼을 100% 자체 기술로 운영한다고 밝혔다. 2026년 10월 산업AI 엑스포에서는 차세대 디지털어스 플랫폼과 정밀도로지도 구축 솔루션 XD로드맵을 공개했다. 회사는 구독형 SaaS 모델로의 전환을 추진 중이며, CSAP 표준등급 인증 획득을 신뢰성의 근거로 내세우고 있다. 같은 IT·소프트웨어 업종에는 삼성에스디에스, 현대오토에버, LG씨엔에스 등 대형 SI 기업이 있으나, 이지스는 공간정보 기반 디지털 트윈 플랫폼에 사업을 집중하고 있다. 이사회를 통해 박광목 부사장이 신임 대표로 선임되어 창업주 중심 경영에서 전문경영인 체제로 전환했다.",
+  "en": "Egis is a software company whose core business is a digital twin platform that combines heterogeneous data such as real estate, weather and transport on top of 3D geographic information system (GIS) technology. The company was founded in 2001 and listed on KOSDAQ under the technology special listing route in December 2025. Based on the pre-listing investment document, build-out services made up 89.5% of 2024 revenue, subscription services 4.8%, maintenance services 3.4% and other revenue 2.3%. Because build-out services dominate, results move sharply with the timing and size of project orders. Its main customers are public institutions, and its core offering is digital twin platform construction for them. The company says it runs its self-developed XDCloud Digital Earth platform on 100% in-house technology. At the 2026 Industrial AI Expo in October 2026, it unveiled its next-generation Digital Earth platform and XDRoadMap, a solution for building precision road maps. It is pursuing a shift toward a subscription SaaS model and cites its CSAP standard-grade certification as a basis for reliability. Within the IT and software sector, large SI companies such as Samsung SDS, Hyundai Autoever and LG CNS operate, but Egis focuses on geospatial digital twin platforms. Through a board decision, Park Kwang-mok, a deputy president, was named the new CEO, moving the company from founder-led management to professional management."
  },
  "earnings": {
-  "ko": "이지스의 2025년 매출은 213억원으로 2024년 303억원 대비 29.8% 감소했다. 같은 기간 영업이익은 2024년 23.9억원에서 2025년 영업손실 68억원으로 적자 전환했고, 지배주주 순이익 역시 2024년 31.3억원에서 2025년 지배주주 순손실 48.1억원으로 적자 전환했다. 비지배지분을 포함한 당기순이익도 2024년 31.3억원에서 2025년 당기순손실 48.1억원으로 같은 방향의 흐름을 보였다. 이에 따라 영업이익률은 2024년 7.9%에서 2025년 -32.0%로 큰 폭으로 악화됐으며, 매출 감소와 비용 부담 확대가 동시에 작용한 결과로 해석된다. 2026년 들어서는 분기 매출이 1분기 58억원에서 2분기 55.9억원으로 3.6% 줄었고, 영업손실은 1분기 22.2억원에서 2분기 24.2억원으로 확대되며 2개 분기 연속 적자를 이어갔다. 지배주주 순손실도 1분기 17억원에서 2분기 29.3억원으로 손실 폭이 커지며 2개 분기 연속 적자를 기록했다. 다만 별도 기준으로 볼 때 2026년 1분기는 전년 동기 대비 매출액이 42.2% 늘어난 것으로 나타나, 연결 기준의 손익 악화와 별개로 외형 자체는 전년보다 커진 구간도 있었다. 재무 측면에서는 2025년 말 자본총계가 489억원(이 중 지배주주 지분 489억원)으로 집계됐고 부채총계는 185억원 수준이었으며, 영업활동 현금흐름은 2024년 37.6억원에서 2025년 -93.2억원으로 순유출 전환해 이익 악화가 현금흐름에도 반영됐다.",
-  "en": "Egis's 2025 revenue came to KRW 21.3 billion, down 29.8% from KRW 30.3 billion in 2024. Over the same period, operating profit swung from KRW 2.39 billion in 2024 to an operating loss of KRW 6.8 billion in 2025, and controlling-interest net profit likewise swung from KRW 3.13 billion in 2024 to a controlling-interest net loss of KRW 4.81 billion in 2025. Net income including non-controlling interests moved in the same direction, from KRW 3.13 billion in 2024 to a net loss of KRW 4.81 billion in 2025. As a result, the operating margin deteriorated sharply from 7.9% in 2024 to -32.0% in 2025, reflecting the combined effect of declining revenue and rising cost burdens. Moving into 2026, quarterly revenue fell 3.6% from KRW 5.8 billion in Q1 to KRW 5.59 billion in Q2, while the operating loss widened from KRW 2.22 billion in Q1 to KRW 2.42 billion in Q2, marking two consecutive quarters of operating losses. The controlling-interest net loss also widened from KRW 1.7 billion in Q1 to KRW 2.93 billion in Q2, likewise two consecutive quarters in the red. On a non-consolidated basis, however, Q1 2026 revenue rose 42.2% year on year, indicating that top-line growth continued in some periods even as consolidated profitability worsened. On the balance sheet, total equity stood at KRW 48.9 billion at the end of 2025 (with controlling interest equity also at KRW 48.9 billion) against total liabilities of KRW 18.5 billion, while operating cash flow swung from KRW 3.76 billion in 2024 to -KRW 9.32 billion in 2025, showing the profit deterioration flowing through to cash generation as well."
+  "ko": "공시 실적 기준 2025년 매출은 213억원으로 2024년 303억원에서 29.8% 감소했다. 같은 기간 영업이익은 23.9억원에서 영업손실 68억원으로 적자 전환했고, 영업이익률은 7.9%에서 -32.0%로 낮아졌다. 지배주주 순이익은 31.3억원에서 지배주주 순손실 48.1억원으로 적자 전환했으며, 당기순이익(비지배지분 포함)은 같은 기간 당기순손실 48.1억원으로 집계됐다. 2025년 말 자본총계는 489억원이고 이 중 전액이 지배주주 지분이며, 부채총계는 185억원이다. 부채비율은 2024년 70.4%에서 2025년 37.9%로 낮아졌지만, 영업활동 현금흐름은 2024년 37.6억원에서 2025년 -93.2억원으로 돌아섰다. 회사 측은 2025년 매출 감소를 경기 침체와 대외 환경요인에 따른 일시적 발주 지연 때문이라고 설명했고, 매출 감소로 영업손실과 당기순손실이 확대됐다고 밝혔다(2026년 2월 보도, 개별 기준 공시 설명). 분기 흐름은 2025년 3분기와 4분기의 분기 수치가 공시 실적에 포함되지 않아 2026년 1분기부터 확인된다. 2026년 1분기 매출은 58억원이었고, 2분기 55.9억원(전 분기 대비 3.6% 감소), 3분기 54.8억원(전 분기 대비 1.8% 감소)으로 2개 분기 연속 줄었다. 영업손실은 1분기 22.2억원, 2분기 24.2억원, 3분기 25.3억원으로 적자가 이어지며 손실 폭이 커졌다. 지배주주 순손실은 1분기 17억원, 2분기 29.3억원에서 3분기 24.7억원으로 전 분기 대비 손실이 축소됐다. 즉 3분기에는 지배주주 순손실은 줄었지만 영업손실은 늘어난 엇갈린 모습이다. 최근 4개 분기(2025년 1분기~2025년 4분기) 지배주주 순손실 합계는 48.1억원이다.",
+  "en": "On the disclosed annual basis, revenue in 2025 was KRW 21.3 billion, down 29.8% from KRW 30.3 billion in 2024. Over the same period, operating profit of KRW 2.39 billion turned into an operating loss of KRW 6.8 billion, and the operating margin moved from 7.9% to -32.0%. Net income attributable to controlling shareholders of KRW 3.13 billion turned into a net loss of KRW 4.81 billion, and net income including non-controlling interests moved to a net loss of KRW 4.81 billion over the same period. At the end of 2025, total equity was KRW 48.9 billion, all of it attributable to controlling shareholders, and total liabilities were KRW 18.5 billion. The debt ratio fell from 70.4% in 2024 to 37.9% in 2025, but operating cash flow turned from KRW 3.76 billion in 2024 to -KRW 9.32 billion in 2025. The company explained the 2025 revenue decline as temporary order delays caused by the economic slowdown and external factors, and said the decline widened the operating and net losses; this explanation was reported in February 2026 for the standalone disclosure. Because the disclosed quarterly table contains no figures for the third and fourth quarters of 2025, the quarterly trend is read from the first quarter of 2026. Revenue was KRW 5.8 billion in the first quarter of 2026, then KRW 5.59 billion in the second quarter (down 3.6% from the prior quarter) and KRW 5.48 billion in the third (down 1.8%), declining for two consecutive quarters. The operating loss was KRW 2.22 billion in the first quarter, KRW 2.42 billion in the second and KRW 2.53 billion in the third, so losses kept widening. Net loss attributable to controlling shareholders was KRW 1.7 billion in the first quarter and KRW 2.93 billion in the second, then narrowed to KRW 2.47 billion in the third. The third quarter therefore showed a mixed pattern, with a smaller net loss but a larger operating loss. The sum of net losses attributable to controlling shareholders over the last four quarters (first quarter to fourth quarter of 2025) is KRW 4.81 billion."
  },
  "industry": {
-  "ko": "디지털 트윈·공간정보 산업은 스마트시티, 재난안전, 환경예측, 인프라 유지관리 등 공공 영역을 중심으로 수요가 확대되는 분야다. 유진투자증권은 2025년 11월 보고서에서 글로벌 디지털 트윈 시장이 2021년부터 2027년까지 연평균 58.7% 성장할 것으로 전망했다. 이지스의 플랫폼은 클라우드 서비스 보안인증(CSAP) 중 SaaS 표준등급을 획득했으며, 국내에서 공간정보 서비스 원제공자 자격으로 이 인증을 받은 유일한 사례로 소개된다. 회사 측은 구글, 유니티를 비롯해 전 세계에서 4개 기업만 상용화한 디지털 트윈 원천 기술을 자율주행·우주항공 등 첨단 산업으로 확대 적용하고 있다고 밝혔다. 국내에는 다수의 디지털 트윈·공간정보 전문 스타트업이 활동하고 있어 공공 프로젝트 수주를 둘러싼 경쟁이 상존한다. 사업 구조상 매출의 상당 부분이 공공기관 대상 구축 용역에서 발생하는 만큼, 정부·지자체 예산 집행 시기와 사업 발주 일정에 따라 분기별 매출 변동성이 커지는 특성을 지닌다. 산업 성장성에 대한 기대와 별개로, 개별 기업의 수익성은 구독형 매출 비중 확대 속도에 따라 갈릴 것으로 보인다.",
-  "en": "The digital twin and spatial information industry is seeing expanding demand centered on public-sector applications such as smart cities, disaster safety, environmental forecasting, and infrastructure maintenance. Eugene Investment & Securities projected in a November 2025 report that the global digital twin market would grow at an average annual rate of 58.7% between 2021 and 2027. Egis's platform has obtained the SaaS standard grade under South Korea's Cloud Security Assurance Program (CSAP), described as the only case in Korea of a spatial information service original provider receiving this certification. The company has stated that it is extending digital-twin source technology, commercialized by only four companies worldwide including Google and Unity, into advanced sectors such as autonomous driving and aerospace. A number of specialized domestic digital-twin and spatial-information startups are active, so competition persists around winning public-sector projects. Because a substantial portion of revenue is generated from construction services for public institutions, quarterly revenue tends to be volatile depending on the timing of government and local government budget execution and project orders. Separate from expectations for industry-wide growth, individual companies' profitability is likely to diverge depending on how quickly subscription-based revenue expands as a share of the total."
+  "ko": "이지스의 전방은 공공기관의 디지털 전환과 공간정보 데이터 수요다. 회사는 디지털 트윈 플랫폼을 지자체와 공공기관의 물 관리·도시 인프라 관리 분야로 넓히고 있다고 밝혔다. 2026년 5월 유럽 최대 지구과학 학회 EGU 2026에서는 우주항공과 피지컬 AI를 적용한 디지털 트윈 기술을 공개했고, LLM과 디지털 트윈을 결합한 '인지 디지털 트윈' 개념을 제시했다. 자율주행 등 미래 모빌리티로 사업 영역을 넓히는 흐름은 정밀도로지도와 고정밀 3D 데이터 수요와 맞물린다. 2025년 매출 감소가 경기 침체와 대외 환경에 따른 발주 지연으로 설명된 만큼, 회사 실적은 발주 사이클의 영향을 크게 받는 구간에 있다고 읽힌다. 대형 SI 기업과 비교하면 사업 규모는 작지만, 공간정보에 특화된 플랫폼과 CSAP 인증이 차별화 요소로 제시된다. 해외에서는 독일 우주항공센터, 네덜란드 응용과학연구소와 데이터 스페이스 기반 글로벌 협력을 진행 중이다. 국내 공공 발주 의존도와 해외 레퍼런스 확보 속도가 업황 속에서 회사 포지션을 가르는 두 축이다.",
+  "en": "Egis's end market is public-sector digital transformation and demand for geospatial data. The company says it is extending its digital twin platform into water management and urban infrastructure management for local governments and public institutions. At EGU 2026, Europe's largest earth science conference, held in May 2026, it presented digital twin technology applying aerospace and physical AI, and proposed the concept of a Cognitive Digital Twin that combines large language models with digital twins. Its push into future mobility such as autonomous driving connects with demand for precision road maps and high-precision 3D data. Because the 2025 revenue decline was attributed to order delays from the economic slowdown and external conditions, results appear exposed to the public project order cycle. Compared with large SI companies, Egis is smaller in scale, but its geospatial-focused platform and CSAP certification are presented as points of differentiation. Overseas, it is pursuing data-space-based cooperation with the German Aerospace Center and the Netherlands Organisation for Applied Scientific Research. Reliance on domestic public orders and the speed of securing overseas references are the two axes that will shape its position within the industry."
  },
  "outlook": {
-  "ko": "이지스는 2026년 7월 제주특별자치도와 차세대 디지털 트윈 플랫폼 구축 계약을 체결했으며, 이 플랫폼은 기존 시스템 구축형과 달리 서비스 연동과 확장에 유리한 SaaS 형태로 공급된다. 2026년 9월 말에는 제주도가 개최한 관련 워크숍에 참가해 7월부터 진행해 온 플랫폼 구축의 중간 성과를 공개했으며, 물·교통·환경·안전 분야의 행정 데이터를 하나의 플랫폼으로 통합해 인공지능 전환(AX) 플랫폼으로 고도화하는 작업을 진행 중이라고 밝혔다. 회사는 독일 우주항공센터, 네덜란드 응용과학연구소 등과 파트너십을 맺고 베트남에서도 해양물류·교통 분야 업무협약(MOU)을 체결하는 등 해외 협력을 확대하고 있다. 신사업 측면에서는 피지컬 AI 구현을 위해 엔비디아 옴니버스 연동을 완료했고 솔루션의 정식 등록을 추진 중이며, 우주항공 분야에서는 위성 데이터 전환 테스트를 마치고 2026년 하반기 중 위성 데이터 정제 솔루션 출시를 계획하고 있다. 이와 함께 한국정보통신기술협회(TTA) 인증 취득 이후 스마트글래스 적용도 추진하고 있다고 밝혔다. 주주환원 측면에서는 2026년 8월31일부터 2027년 3월2일까지 하나증권과 30억원 규모의 자기주식 취득 신탁계약을 체결했고, 취득한 자사주는 계약 종료 후 전량 소각할 계획이라고 설명했다. 회사의 전략은 기존 구축형 매출 의존도를 낮추고 구독형(SaaS) 매출 비중을 끌어올려 수익성을 개선하는 방향에 맞춰져 있으나, 신사업과 SaaS 전환의 실제 매출 기여 시점은 아직 구체적으로 확인되지 않았다.",
-  "en": "In July 2026, Egis signed a contract with Jeju Special Self-Governing Province to build a next-generation digital twin platform, supplied in a SaaS format that, unlike traditional system-build projects, is more conducive to additional service integration and expansion. At the end of September 2026, the company took part in a related workshop hosted by Jeju Province and unveiled interim results of the platform build under way since July, saying it was integrating administrative data on water, transportation, environment, and safety into a single platform and upgrading it into an AI transformation (AX) platform. The company has been expanding overseas cooperation, including partnerships with the German Aerospace Center and a Dutch applied science research institute, as well as memoranda of understanding in Vietnam covering maritime logistics and transportation applications. On the new business front, Egis has completed integration with NVIDIA Omniverse to implement physical AI and is pursuing official registration of the solution, while in the aerospace area it has finished satellite data conversion testing and plans to launch a satellite data refinement solution in the second half of 2026. The company also said it is pursuing smart glasses applications following certification from the Telecommunications Technology Association (TTA). On shareholder returns, Egis entered a KRW 3 billion treasury stock trust agreement with Hana Securities running from August 31, 2026 to March 2, 2027, stating that shares acquired under the agreement would be fully cancelled once the contract ends. The company's strategy is oriented toward reducing reliance on construction-type revenue and raising the share of subscription-based SaaS revenue to improve profitability, though the specific timing of revenue contribution from new businesses and the SaaS transition has not yet been confirmed."
+  "ko": "회사는 2026년 10월 산업AI 엑스포에서 디지털어스 플랫폼을 공개하고, 해외 기업·기관 10곳 이상과 현지 적용과 사업 협력 가능성을 논의했다고 밝혔다. 회사 관계자는 후속 협의를 이어 신규 성과를 확보하겠다는 방침을 밝혔고, 현재 단계는 협의와 파트너 발굴 단계라는 점이 확인된다. 2026년 5월 EGU 2026 참여 이후 회사는 유럽을 포함한 글로벌 시장 진출을 본격화할 계획이라고 밝혔다. 2025년부터 인도네시아 국가토지부가 주관하는 디지털 트윈 기반 입체지적 구축 시범사업에 참여하고 있다. 회사는 구독형 솔루션 중심으로 사업 모델을 개편하고 있으며, 이 전환이 매출 구조와 영업이익률에 어떤 영향을 주는지가 다음 확인 지점이다. 자율주행 등 미래 모빌리티 영역으로 사업 기회를 넓힌다는 계획은 XD로드맵 공개와 함께 제시됐다. 2026년 3월 27일 정기주주총회에서는 정관 변경과 주식매수선택권 부여 안건이 가결됐다. 2026년 8월 31일에는 자기주식취득신탁계약 체결 결정이 공시됐고, 이 계약의 진행 상황이 주주환원 측면의 확인 지점이다. 해외 협의가 계약과 매출로 이어지는지, 구독 서비스 비중이 2024년 4.8%에서 어떻게 바뀌는지가 중기 관찰 포인트다.",
+  "en": "At the 2026 Industrial AI Expo in October 2026, the company unveiled its Digital Earth platform and said it discussed local application and business cooperation with more than 10 overseas companies and institutions. Company officials said they will continue follow-up talks to secure new results, so the current stage is one of negotiation and partner development. After its participation in EGU 2026 in May 2026, the company said it would fully launch its push into global markets, including Europe. Since 2025, it has taken part in a digital twin-based three-dimensional cadastre construction pilot run by Indonesia's National Land Agency. The company is restructuring its business model around subscription-based solutions, and how this shift affects the revenue mix and operating margin is the next point to confirm. Its plan to widen opportunities in future mobility such as autonomous driving was presented alongside the XDRoadMap launch. At the regular general meeting on March 27, 2026, amendments to the articles of incorporation and a proposal to grant stock options were approved. On August 31, 2026, a decision to enter into a share buyback trust contract was disclosed, and the progress of that contract is a point to monitor for shareholder returns. Whether overseas talks turn into contracts and revenue, and how the subscription share changes from 4.8% in 2024, are the medium-term points to watch."
  },
  "valuation_comment": {
-  "ko": "이지스는 최근 네 개 분기 합산 기준으로 순손실을 기록하고 있어 통상적인 주가수익비율 산출이 되지 않는 구간에 있다. 배당금을 지급하지 않고 있어 배당 관련 지표 역시 해당되지 않는다. 자본총계 대비 주가 수준은 과도한 할증이나 할인 없이 순자산가치에 근접한 범위에서 형성돼 있는 것으로 파악된다. 상장 당시 증권사는 미래 추정 이익을 기준으로 한 주가수익비율 밴드를 공모가 산정에 활용한 바 있으나, 이후 실적이 적자로 전환되면서 당시의 이익 추정치와 실제 결과 사이에 괴리가 발생했다. 현재로서는 실적이 적자에서 흑자로 전환되는 시점과 속도가 향후 가치평가 논의의 핵심 변수가 될 것으로 보인다. 자사주 취득·소각 결정은 발행주식수를 줄이는 요인으로 작용할 수 있다는 점에서 주당 지표의 분모 변화를 가져올 수 있다.",
-  "en": "On a trailing four-quarter basis, Egis has posted a net loss, placing it in a range where a conventional price-to-earnings ratio cannot be calculated. The company does not pay dividends, so dividend-related metrics are likewise not applicable. The share price relative to total equity appears to sit in a range close to net asset value without an extreme premium or discount. At the time of listing, the lead underwriter used a price-to-earnings band based on projected future earnings to help set the offering price, but a gap subsequently emerged between those earlier profit projections and actual results once the company swung to losses. Going forward, the timing and pace of any shift from loss to profit are likely to be the key variable in future valuation discussions. The decision to acquire and potentially cancel treasury shares could reduce the share count, which would affect the denominator used in per-share metrics."
+  "ko": "최근 네 개 분기 기준 순손실이 이어지고 있어 주가수익비율은 의미 있는 값으로 산출되지 않는 상태다. 배당은 사실상 이뤄지지 않아 배당 관련 비교는 제한적이다. 2025년 말 장부 기준 자본총계 489억원이 전부 지배주주 지분이며, 현재 시가총액은 이 장부상 지배주주 지분 규모를 밑도는 수준이어서 순자산 대비 할인 구간에서 거래되는 관계로 읽힌다. 이익 기준 배수가 산출되지 않는 국면이라 밸류에이션 비교는 자본과 자산 같은 재무 항목에 기대게 된다. 부채비율이 2024년 70.4%에서 2025년 37.9%로 낮아진 점은 재무 구조 측면의 사실이다. 다만 자산 기준 비교는 손익 회복 전까지 이익 기반 비교를 대신할 뿐이며, 자본이 손실로 얼마나 줄어드는지에 따라 같은 주가 수준의 해석이 달라진다. 주가 수준 자체에 대한 판단은 이 해설의 범위 밖이며, 다년 추세는 2024년 흑자에서 2025년 적자로 전환된 방향만 확인된다.",
+  "en": "Because net losses have continued over the last four quarters, the price-to-earnings ratio is not calculated as a meaningful figure. Dividends are effectively absent, which limits comparison on a dividend basis. Total equity of KRW 48.9 billion at the end of 2025 was entirely attributable to controlling shareholders, and the current market capitalization is below that book value of controlling shareholders, which reads as trading at a discount to net assets. Since no earnings-based multiple is calculated, valuation comparison relies more on balance-sheet items such as equity and assets. The fall in the debt ratio from 70.4% in 2024 to 37.9% in 2025 is a fact about the financial structure. However, asset-based comparison only partly substitutes for earnings-based comparison until profitability returns, and the reading of the same share price level changes depending on how much equity is reduced by losses. A judgment on the share price level itself falls outside this commentary, and the multi-year trend shows only the direction from a profit in 2024 to a loss in 2025."
  },
  "bull": [
   {
    "title": {
-    "ko": "SaaS·신사업 확장을 통한 매출 구조 다변화",
-    "en": "Revenue Diversification Through SaaS and New Business Expansion"
+    "ko": "구독 전환 여지",
+    "en": "Room for subscription shift"
    },
    "body": {
-    "ko": "제주특별자치도와의 SaaS형 디지털 트윈 플랫폼 계약 체결은 기존 구축형 매출에서 구독형 매출로 구조를 전환하려는 시도의 구체적 사례다. 엔비디아 옴니버스 연동을 통한 피지컬 AI 솔루션, 우주항공용 위성 데이터 정제 솔루션 등 신사업도 병행 추진되고 있다. 해외 연구기관·기업과의 협력 확대는 국내 공공 프로젝트 중심의 사업구조에서 벗어나는 계기가 될 수 있다.",
-    "en": "The SaaS-based digital twin platform contract with Jeju Special Self-Governing Province is a concrete example of the effort to shift the revenue mix from construction-type to subscription-type revenue. New businesses, including a physical AI solution via NVIDIA Omniverse integration and a satellite data refinement solution for aerospace use, are being pursued in parallel. Expanding partnerships with overseas research institutions and companies could help diversify the business away from its current concentration on domestic public-sector projects."
+    "ko": "구독 서비스는 2024년 매출의 4.8%에 그쳤지만 회사는 구독형 SaaS 모델 전환을 추진 중이다. 구축 용역 중심 매출이 반복 매출로 바뀌면 영업이익률이 개선될 여지가 생긴다. CSAP 표준등급 인증은 공공 시장에서 전환 과정의 신뢰 근거로 제시된다.",
+    "en": "Subscription services were only 4.8% of 2024 revenue, but the company is pursuing a shift to a subscription SaaS model. If build-out-driven revenue becomes more recurring, there is room for the operating margin to improve. The CSAP standard-grade certification is presented as a basis of trust in public-sector sales during this transition."
    }
   },
   {
    "title": {
-    "ko": "자사주 매입·소각을 통한 주주환원 의지",
-    "en": "Shareholder Return Intent via Buyback and Cancellation"
+    "ko": "해외 레퍼런스 확대",
+    "en": "Wider overseas references"
    },
    "body": {
-    "ko": "2026년 8월31일부터 하나증권과 30억원 규모 자기주식 취득 신탁계약을 체결했고, 취득한 주식은 계약 종료 후 전량 소각할 계획이라고 밝혔다. 이는 발행주식의 약 6.9%에 해당하는 규모로 적지 않은 수준이다. 이익이 적자인 상황에서도 자본정책 측면의 주주환원 조치를 취했다는 점이 눈에 띈다.",
-    "en": "Egis entered a KRW 3 billion treasury stock trust agreement with Hana Securities starting August 31, 2026, stating that the shares acquired would be fully cancelled once the contract ends. The planned acquisition equates to roughly 6.9% of outstanding shares, a meaningful size. It is notable that the company has taken a capital-policy-driven shareholder return measure even while posting losses."
+    "ko": "2026년 5월 EGU 2026에서 인지 디지털 트윈 개념을 발표했고, 독일 우주항공센터·네덜란드 응용과학연구소와 협력을 진행 중이다. 2026년 10월 산업AI 엑스포에서는 해외 기업·기관 10곳 이상과 현지 적용을 논의했다. 해외 협의가 계약으로 이어지면 공공 중심 매출의 분산 효과를 기대할 수 있다.",
+    "en": "At EGU 2026 in May 2026, the company presented the Cognitive Digital Twin concept and is running cooperation with the German Aerospace Center and the Netherlands Organisation for Applied Scientific Research. At the October 2026 Industrial AI Expo, it discussed local application with more than 10 overseas companies and institutions. If these talks turn into contracts, revenue could become less dependent on domestic public projects."
    }
   },
   {
    "title": {
-    "ko": "개선된 부채비율과 낮은 자본잠식 우려",
-    "en": "Improved Debt Ratio and Low Capital Impairment Concern"
+    "ko": "재무 구조와 주주환원 장치",
+    "en": "Balance sheet and shareholder return tools"
    },
    "body": {
-    "ko": "부채비율은 2024년 70.4%에서 2025년 37.9%로 낮아져 재무구조 측면의 부담은 상대적으로 줄어든 모습이다. 2025년 말 자본총계는 489억원으로 상장을 통한 자본 확충 효과가 반영된 결과로 해석된다. 영업손실이 이어지고 있음에도 현재까지 자본잠식과 같은 극단적 재무 위험 신호는 확인되지 않는다.",
-    "en": "The debt-to-equity ratio fell from 70.4% in 2024 to 37.9% in 2025, easing the relative burden on the balance sheet. Total equity of KRW 48.9 billion at the end of 2025 reflects the effect of capital raised through the listing. Despite continued operating losses, no extreme financial risk signal such as capital impairment has been observed to date."
+    "ko": "2025년 말 부채비율은 37.9%로 2024년 70.4%보다 낮아졌고, 부채총계는 185억원이다. 2026년 8월 31일에는 자기주식취득신탁계약 체결 결정이 공시됐다. 자본 기반이 유지되는 가운데 주주환원 수단이 함께 준비돼 있다는 사실이 확인된다.",
+    "en": "The debt ratio at the end of 2025 was 37.9%, down from 70.4% in 2024, and total liabilities were KRW 18.5 billion. A decision to enter into a share buyback trust contract was disclosed on August 31, 2026. A shareholder return tool is in place while the capital base remains intact."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "매출 급감과 수익성 악화의 지속",
-    "en": "Continued Revenue Decline and Deteriorating Profitability"
+    "ko": "영업 단계 적자 확대",
+    "en": "Operating losses widening"
    },
    "body": {
-    "ko": "2025년 매출은 전년 대비 29.8% 줄었고 영업이익은 23.9억원에서 영업손실 68억원으로 적자 전환했다. 2026년에도 1분기와 2분기 연속으로 영업손실이 이어졌고, 손실 규모는 22.2억원에서 24.2억원으로 오히려 확대됐다. 매출 감소와 손실 확대가 동시에 진행되고 있다는 점에서 단기간 내 수익성 반전을 장담하기 어려운 구간이다.",
-    "en": "2025 revenue fell 29.8% year on year, and operating profit swung from KRW 2.39 billion to an operating loss of KRW 6.8 billion. Operating losses continued into Q1 and Q2 of 2026, and the loss size actually widened from KRW 2.22 billion to KRW 2.42 billion. With revenue decline and widening losses occurring simultaneously, a near-term reversal in profitability cannot be assumed."
+    "ko": "2026년 1분기부터 3분기까지 영업손실은 22.2억원, 24.2억원, 25.3억원으로 커졌다. 2025년 영업이익률은 -32.0%까지 떨어졌다. 3분기에 지배주주 순손실이 줄었지만 영업 단계의 적자는 개선되지 않았다.",
+    "en": "From the first quarter through the third quarter of 2026, the operating loss widened from KRW 2.22 billion to KRW 2.42 billion and then KRW 2.53 billion. The operating margin fell to -32.0% in 2025. Although the net loss attributable to controlling shareholders narrowed in the third quarter, the operating-level loss did not improve."
+   }
+  },
+  {
+   "title": {
+    "ko": "매출 감소와 발주 의존",
+    "en": "Revenue decline and reliance on orders"
+   },
+   "body": {
+    "ko": "2026년 2분기와 3분기 매출은 전 분기 대비 각각 3.6%, 1.8% 줄었다. 2025년 매출은 29.8% 감소했고 회사는 일시적 발주 지연을 원인으로 들었다. 구축 용역이 매출의 대부분을 차지해 발주 공백이 길어지면 실적 변동성이 커진다.",
+    "en": "Revenue fell 3.6% and 1.8% from the prior quarter in the second and third quarters of 2026, respectively. Revenue dropped 29.8% in 2025, and the company cited temporary order delays. Because build-out services account for most revenue, a prolonged gap in orders would increase earnings volatility."
    }
   },
   {
    "title": {
     "ko": "현금흐름 악화",
-    "en": "Deteriorating Cash Flow"
+    "en": "Weaker cash flow"
    },
    "body": {
-    "ko": "영업활동 현금흐름은 2024년 37.6억원 유입에서 2025년 -93.2억원 유출로 전환됐다. 손익계산서상 손실뿐 아니라 실제 현금 창출력도 함께 약화된 것으로 볼 수 있다. 이러한 흐름이 이어질 경우 향후 투자·운영자금 조달 방식에 대한 관심이 커질 수 있다.",
-    "en": "Operating cash flow swung from an inflow of KRW 3.76 billion in 2024 to an outflow of KRW 9.32 billion in 2025. This suggests that actual cash generation weakened alongside the loss recorded on the income statement. If this trend continues, attention is likely to grow around how the company funds future investment and operations."
-   }
-  },
-  {
-   "title": {
-    "ko": "공공 프로젝트 의존에 따른 매출 변동성",
-    "en": "Revenue Volatility from Public-Sector Project Dependence"
-   },
-   "body": {
-    "ko": "2024년 기준 매출의 89.5%가 구축 용역에서 발생했을 정도로 공공기관 대상 프로젝트성 매출 비중이 높다. 이런 구조에서는 정부·지자체 예산 집행 시기나 사업 발주 일정에 따라 분기별 실적이 크게 출렁일 수 있다. SaaS 전환이 본격화되기 전까지는 이러한 변동성이 당분간 이어질 가능성이 있다.",
-    "en": "As of 2024, construction services accounted for 89.5% of revenue, reflecting a heavy reliance on project-based revenue from public institutions. Under this structure, quarterly results can swing significantly depending on the timing of government and local government budget execution and project orders. This volatility could persist for some time until the SaaS transition gains more traction."
+    "ko": "영업활동 현금흐름은 2024년 37.6억원에서 2025년 -93.2억원으로 돌아섰다. 최근 4개 분기 지배주주 순손실 합계는 48.1억원이다. 적자가 이어지는 동안 본업에서 현금을 만드는 힘이 약해졌다는 점이 약세 근거다.",
+    "en": "Operating cash flow turned from KRW 3.76 billion in 2024 to -KRW 9.32 billion in 2025. The sum of net losses attributable to controlling shareholders over the last four quarters is KRW 4.81 billion. While losses continue, the core business's ability to generate cash has weakened, which is a point on the bear side."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "재무·현금흐름 리스크",
-    "en": "Financial and Cash Flow Risk"
+    "ko": "공공 발주 의존",
+    "en": "Dependence on public orders"
    },
    "body": {
-    "ko": "2025년 영업활동 현금흐름이 -93.2억원으로 순유출 전환한 가운데, 같은 해 지배주주 순손실도 48.1억원에 달했다. 이런 상황에서 30억원 규모의 자사주 취득까지 집행하면 현금 유출 요인이 추가될 수 있다. 손실이 추가로 누적될 경우 자본 여력에 대한 점검이 필요해질 수 있다.",
-    "en": "Operating cash flow turned to an outflow of -KRW 9.32 billion in 2025, while the controlling-interest net loss for the same year reached KRW 4.81 billion. Against this backdrop, executing a KRW 3 billion treasury stock purchase adds a further cash outflow factor. If losses continue to accumulate, scrutiny of the company's capital buffer could become necessary."
+    "ko": "주요 고객이 공공기관이고 매출의 대부분이 구축 용역이어서 예산 편성과 발주 시기에 실적이 크게 좌우된다. 2025년에는 일시적 발주 지연으로 매출이 29.8% 줄었다. 공공 예산 환경이 바뀌면 분기 매출 흐름이 다시 흔들릴 수 있다.",
+    "en": "Its main customers are public institutions and most revenue comes from build-out projects, so results depend heavily on budget timing and order schedules. In 2025, temporary order delays reduced revenue by 29.8%. If the public budget environment shifts, quarterly revenue could become volatile again."
    }
   },
   {
    "cat": {
-    "ko": "고객·매출 구조 리스크",
-    "en": "Customer and Revenue Structure Risk"
+    "ko": "전환 실행 리스크",
+    "en": "Execution risk in the transition"
    },
    "body": {
-    "ko": "매출의 핵심이 공공기관 대상 구축 용역에 쏠려 있어 특정 고객군이나 예산 정책 변화에 노출된 구조다. 지자체·정부 사업은 발주 시기와 규모가 연도별로 달라질 수 있어 매출의 예측 가능성이 낮아질 수 있다. SaaS형 매출이 충분히 쌓이기 전까지는 이러한 구조적 리스크가 유지될 것으로 보인다.",
-    "en": "Revenue is heavily concentrated in construction services for public institutions, exposing the company to changes in a specific customer segment or budget policy. The timing and scale of government and local government projects can vary from year to year, which can reduce revenue predictability. This structural risk is likely to persist until SaaS-based revenue accumulates sufficiently."
+    "ko": "구독형 전환과 해외 확장은 아직 매출 비중에서 확인되는 단계가 아니다. 전환 과정에서 인력과 개발 비용이 먼저 늘면 적자 구간이 길어질 수 있다. 해외 협의가 계약으로 이어지지 않으면 비용 부담만 남을 수 있다.",
+    "en": "The subscription shift and overseas expansion are not yet visible in the revenue mix. If staffing and development costs rise before the transition pays off, the loss period could lengthen. If overseas talks do not become contracts, the company could be left with cost burdens alone."
    }
   },
   {
    "cat": {
-    "ko": "신사업 상용화 리스크",
-    "en": "New Business Commercialization Risk"
+    "ko": "최대주주 지분과 유통 구조",
+    "en": "Major shareholder stake and free float"
    },
    "body": {
-    "ko": "피지컬 AI, 우주항공용 위성 데이터 솔루션 등 신규 사업은 아직 테스트나 정식 등록 추진 단계에 있는 것으로 파악된다. 이들 사업이 실제 매출로 이어지는 시점과 규모는 아직 구체적으로 확인되지 않았다. 신사업 투자 비용이 선행되는 반면 수익화는 지연될 가능성도 배제할 수 없다.",
-    "en": "New businesses such as physical AI and the satellite data solution for aerospace use appear to still be in the testing or formal registration stage. The timing and scale at which these businesses will translate into actual revenue have not yet been specifically confirmed. There is also a possibility that investment costs for new businesses precede monetization, which could be delayed."
+    "ko": "최대주주 등(본인과 특별관계자)의 지분율은 60.62%로 2026년 3월 27일 최종 변동일 기준이다. 유통되는 주식 수가 제한적이어서 거래가 얇아질 수 있다. 상장 이후 주가 변동성이 커질 수 있다는 점도 함께 살펴볼 요인이다.",
+    "en": "The stake held by the largest shareholder and related parties is 60.62% as of the last change date of March 27, 2026. Because the number of freely tradable shares is limited, trading can be thin. Share price volatility after listing is another factor to monitor."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중순",
-    "en": "Mid-November 2026"
+    "ko": "2026년 12월 말",
+    "en": "Late December 2026"
    },
    "what": {
-    "ko": "2026년 3분기 잠정 실적 공시 예정 시점으로, 매출·영업손실의 전 분기 대비 방향성과 손실 확대 여부를 확인할 필요가 있다.",
-    "en": "The expected timing of the preliminary Q3 2026 earnings disclosure, at which point the quarter-on-quarter direction of revenue and operating losses, and whether losses continue to widen, should be checked."
+    "ko": "2026년 4분기가 마감된다. 2026년 1~3분기 영업손실 흐름(22.2억원, 24.2억원, 25.3억원)이 이어지는지가 첫 확인 지점이다.",
+    "en": "The fourth quarter of 2026 closes. Whether the operating losses seen across the first three quarters of 2026 (KRW 2.22 billion, KRW 2.42 billion and KRW 2.53 billion) continue is the first point to check."
    }
   },
   {
    "when": {
-    "ko": "2026년 12월 31일까지",
-    "en": "By December 31, 2026"
+    "ko": "2027년 3월 말까지",
+    "en": "By the end of March 2027"
    },
    "what": {
-    "ko": "회사가 예고한 우주항공용 위성 데이터 정제 솔루션의 2026년 하반기 출시 여부와 실제 매출 연계 여부를 확인할 필요가 있다.",
-    "en": "Whether the aerospace-related satellite data refinement solution the company flagged for launch in the second half of 2026 is actually released, and whether it is linked to real revenue, should be checked."
+    "ko": "2026년 사업보고서 제출 기한이다(사업연도 종료 후 90일 이내). 연간 매출과 영업이익률이 2025년 매출 213억원, 영업이익률 -32.0%와 비교해 어떻게 바뀌는지 확인한다.",
+    "en": "This is the deadline for the 2026 annual report (within 90 days after the fiscal year ends). It shows how annual revenue and operating margin compare with 2025 revenue of KRW 21.3 billion and an operating margin of -32.0%."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기 중",
-    "en": "During Q4 2026"
+    "ko": "2027년 3월 전후 정기주주총회",
+    "en": "Around March 2027 (annual general meeting)"
    },
    "what": {
-    "ko": "제주특별자치도 디지털 트윈 플랫폼 구축 사업의 진행 경과와 매출 인식 시점을 추가로 확인할 필요가 있다.",
-    "en": "The progress of the Jeju Special Self-Governing Province digital twin platform build and the timing of related revenue recognition should be further checked."
+    "ko": "2026년 정기주주총회는 3월 27일에 열렸다. 재무제표 승인과 임원 보수, 주식매수선택권 등 안건 결과가 경영 방향을 보여 준다.",
+    "en": "The 2026 regular shareholder meeting was held on March 27. Results on the financial statements, executive pay and stock option items will show the management direction."
    }
   },
   {
    "when": {
-    "ko": "2027년 3월 2일",
-    "en": "March 2, 2027"
+    "ko": "2026년 12월 이후 수시 공시",
+    "en": "Ad hoc disclosures after December 2026"
    },
    "what": {
-    "ko": "하나증권과 체결한 30억원 규모 자기주식 취득 신탁계약의 만료 시점으로, 실제 취득 수량과 소각 여부에 대한 확정 공시를 확인할 필요가 있다.",
-    "en": "The expiration date of the KRW 3 billion treasury stock trust agreement with Hana Securities, at which point the actual number of shares acquired and whether they are cancelled should be confirmed via disclosure."
+    "ko": "2026년 8월 31일 체결 결정된 자기주식취득신탁계약의 진행 상황을 확인한다. 이 계약이 실제 주주환원으로 이어지는지가 확인 지점이다.",
+    "en": "Track the progress of the share buyback trust contract whose conclusion was decided on August 31, 2026. Whether this contract leads to actual shareholder returns is the point to confirm."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 12월 이후 수시 공시",
+    "en": "Ad hoc disclosures after December 2026"
+   },
+   "what": {
+    "ko": "EGU 2026과 산업AI 엑스포 이후 해외 협의가 계약이나 시범사업으로 이어지는지 확인한다. 해외 매출이 공시 실적에 잡히는지가 다음 단계다.",
+    "en": "Check whether the talks that followed EGU 2026 and the Industrial AI Expo lead to contracts or pilot projects. Whether overseas sales show up in disclosed results is the next step."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "이지스는 2025년 매출 29.8% 감소와 영업손익 적자 전환에 이어 2026년 1·2분기까지 연속 영업손실을 기록하며 수익성 회복 과제를 안고 있다. 동시에 제주도 SaaS형 디지털 트윈 계약, 피지컬 AI·우주항공 신사업, 30억원 규모 자사주 취득·소각 등 사업·자본 양 측면에서 변화를 시도하고 있다. 부채비율은 낮아졌지만 영업활동 현금흐름은 순유출로 전환돼, 재무구조와 현금창출력 사이에 상반된 흐름이 동시에 나타나고 있다. 매출 구조상 공공기관 대상 구축 용역 의존도가 높아 분기별 변동성이 이어질 가능성이 있으며, SaaS 전환의 실제 성과는 아직 수치로 확인되지 않은 단계다. 투자자 입장에서는 다가오는 분기 실적 발표와 신사업의 매출 연계 여부, 자사주 신탁계약의 종료 결과를 순차적으로 확인하는 것이 중요해 보인다. 본 리포트는 공시된 사실관계 전달을 목적으로 한다.",
-   "en": "Egis faces a profitability recovery challenge, having posted a 29.8% revenue decline and a swing to an operating loss in 2025, followed by consecutive operating losses in Q1 and Q2 of 2026. At the same time, the company is attempting changes on both the business and capital fronts, including the SaaS-based digital twin contract with Jeju Province, new businesses in physical AI and aerospace, and a KRW 3 billion treasury stock acquisition and planned cancellation. While the debt ratio has declined, operating cash flow turned to an outflow, producing diverging signals between balance-sheet structure and cash generation capacity. Given the revenue structure's heavy reliance on construction services for public institutions, quarterly volatility may persist, and the actual results of the SaaS transition have not yet been confirmed in the numbers. For readers, it appears important to sequentially track the upcoming quarterly earnings releases, whether new businesses translate into revenue, and the outcome of the treasury stock trust agreement upon its expiration. This report is intended to convey disclosed factual information."
+   "ko": "이지스는 2025년 매출 213억원, 영업손실 68억원으로 적자 전환했고 2026년 1분기부터 3분기까지 영업손실이 이어졌다. 매출은 2026년 1분기 58억원을 정점으로 2개 분기 연속 줄었고, 영업손실 폭은 22.2억원에서 25.3억원으로 커졌다. 3분기에는 지배주주 순손실이 24.7억원으로 전 분기보다 줄었지만, 영업 단계의 적자 확대는 이어졌다. 강세 측면에서는 구독형 전환 추진, 해외 협력 확대, 부채비율 하락(37.9%)이 확인된다. 약세 측면에서는 구축 용역 중심 매출의 발주 의존, 영업활동 현금흐름의 -93.2억원 전환, 최대주주 지분 60.62%에 따른 유통 제약이 있다. 밸류에이션은 이익 기반 배수가 산출되지 않아 순자산 기준 비교 중심으로 읽히며, 다음 확인 지점은 2026년 4분기 손익과 2027년 3월 말까지 제출될 2026년 사업보고서의 연간 영업이익률이다. 해외 협력이 매출 구조에 반영되는지와 구독 비중의 변화가 중기 관찰 포인트다. 이 글은 정보 제공을 목적으로 하며 매수·매도 의견을 포함하지 않는다.",
+   "en": "Egis turned to a 2025 operating loss, with revenue of KRW 21.3 billion and an operating loss of KRW 6.8 billion, and operating losses continued from the first quarter through the third quarter of 2026. Revenue peaked at KRW 5.8 billion in the first quarter of 2026 and then declined for two consecutive quarters, while the operating loss widened from KRW 2.22 billion to KRW 2.53 billion. In the third quarter, the net loss attributable to controlling shareholders narrowed to KRW 2.47 billion from the prior quarter, but the operating-level loss kept widening. On the strength side, the company is pursuing a subscription shift, expanding overseas cooperation, and has seen its debt ratio fall to 37.9%. On the weakness side, revenue depends on build-out orders from public institutions, operating cash flow turned to -KRW 9.32 billion, and a largest-shareholder stake of 60.62% limits free float. Because no earnings-based multiple is calculated, valuation comparisons rely more on balance-sheet items, and the next checkpoints are the fourth-quarter 2026 results and the operating margin in the 2026 annual report due by the end of March 2027. Whether overseas cooperation shows up in revenue and how the subscription share changes are the medium-term points to watch. This report is for information purposes only and does not include a buy or sell opinion."
   }
  },
  "sources": [
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260320000003&rcpno=20260320000003&orgid=F&tran=Y&langTpCd=0",
-  "https://wcomp.fnguide.com/CompanyInfo/Snapshot?cmp_cd=261520",
-  "https://thevc.kr/egis",
-  "https://valueline.co.kr/finance/summary/261520",
-  "https://news.nate.com/view/20260224n16793",
-  "https://valueline.co.kr/finance/balancesheet/261520",
-  "https://signal.sedaily.com/StockFS/261520/peers",
-  "https://itooza.com/vscore/261520",
-  "https://www.awakeplus.co.kr/data/view/20251223900771",
   "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A261520",
-  "https://www.saramin.co.kr/zf_user/company-info/view-inner-finance/csn/aklOd2RCSFBadkRFdzl3OEUxYmRPQT09/company_nm/%EC%9D%B4%EC%A7%80%EC%8A%A4(%EC%A3%BC)?nomo=1%3Futm_medium%3Dorganic",
+  "https://news.nate.com/view/20260224n16793",
   "https://www.eugenefn.com/common/files/amail//20251125_B_jongsun.park_2512.pdf",
-  "https://kr.investing.com/news/stock-market-news/article-2023798",
-  "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202607100398",
-  "https://m.news.nate.com/view/20260710n26909",
-  "https://www.mt.co.kr/stock/2026/07/10/2026071016473649438",
-  "https://m.news.nate.com/view/20260710n24422",
-  "https://www.etoday.co.kr/news/view/2602408"
+  "https://wcomp.fnguide.com/CompanyInfo/Snapshot?cmp_cd=261520",
+  "https://valueline.co.kr/finance/summary/261520",
+  "https://keyzard.cc/views/nb/KDYrNwA7PiYsaGVlbW1ra29saW9vb2Zq",
+  "https://m.sedaily.com/article/20107185",
+  "http://www.newswell.co.kr/news/articleView.html?idxno=14947",
+  "https://marketin.edaily.co.kr/News/ReadE?newsId=02728966642397536",
+  "https://www.monthlypeople.com/news/articleView.html?idxno=701719",
+  "https://www.etoday.co.kr/news/view/2641047",
+  "https://m.news.nate.com/view/20260327n29192",
+  "https://m.news.nate.com/view/20260507n28225",
+  "https://news.nate.com/view/20260205n35170",
+  "https://www.newspim.com/news/view/20261028000482",
+  "https://www.seoulexchange.kr/stocks/%EC%9D%B4%EC%A7%80%EC%8A%A4-3530/",
+  "https://m.news.nate.com/view/20260512n31805",
+  "https://m.news.nate.com/view/20260805n28404"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "261520",
  "name": "이지스",
  "name_en": "EGIS Co., Ltd",
@@ -223,11 +233,11 @@
   "IT·소프트웨어"
  ],
  "market": "코스닥",
- "reportDate": "2026-10-20",
- "reportTs": "2026-10-20 05:20",
- "dataDate": "20261019",
+ "reportDate": "2026-11-18",
+ "reportTs": "2026-11-18 14:22",
+ "dataDate": "20261117",
  "quant": {
-  "asOf": "2026-10-19",
+  "asOf": "2026-11-18",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -266,12 +276,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": null,
-    "op": null,
-    "np_owner": null
-   },
-   {
     "q": "2025Q3",
     "rev": null,
     "op": null,
@@ -294,11 +298,17 @@
     "rev": 5586409070,
     "op": -2423008282,
     "np_owner": -2929954749
+   },
+   {
+    "q": "2026Q3",
+    "rev": 5484345144,
+    "op": -2532495038,
+    "np_owner": -2474872035
    }
   ],
   "valuation": {
-   "price": 5400,
-   "mcap": 0.0545,
+   "price": 4320,
+   "mcap": 0.0444,
    "shares": 10277800,
    "total_shares": 10277800,
    "wavg_shares": 8134828,
@@ -312,7 +322,7 @@
    "ccy": "KRW",
    "bps_src": "자체",
    "eps_src": "순이익÷주식수",
-   "pbr_krx": 1.06,
+   "pbr_krx": 0.85,
    "bps_krx": 5008.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
@@ -322,5 +332,6 @@
     "bps": "ref_mismatch"
    }
   }
- }
+ },
+ "textRules": 3
 }

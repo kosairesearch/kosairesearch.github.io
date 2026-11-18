@@ -1,230 +1,217 @@
 {
  "title": {
-  "ko": "3년만의 분기 흑자, 지속성이 관전포인트",
-  "en": "First Quarterly Profit in Three Years, Durability in Question"
+  "ko": "재자원화 흑자 전환, 3분기 적자로 재검증 필요",
+  "en": "Recycling Turnaround Faces a Test After the Q3 2026 Loss"
  },
  "lead": {
-  "ko": "새빗켐은 2026년 2분기 3년 만에 분기 영업이익·순이익 동반 흑자전환에 성공했으나, 최근 네 개 분기 누적으로는 여전히 순손실 상태다.",
-  "en": "Sebitchem returned to quarterly operating and net profit for the first time in three years in Q2 2026, but the trailing four-quarter total still shows a net loss."
+  "ko": "새빗켐은 2026년 상반기 잠정 실적으로 3년 만의 반기 영업흑자를 냈지만, 2026년 3분기에 영업손실 44.9억원으로 다시 적자 전환해 흑자 체력의 지속성이 다음 확인 과제가 됐다.",
+  "en": "Sebitchem posted a preliminary first-half 2026 operating profit, its first half-year operating profit in three years, but swung back to an operating loss of KRW 4.49 billion in Q3 2026, making the durability of profit the next test."
  },
  "keypoints": [
   {
-   "ko": "2026년 2분기 매출 173.8억원, 영업이익 8.7억원, 순이익 8.3억원으로 분기 기준 흑자전환",
-   "en": "Q2 2026 revenue of KRW 17.4 billion with operating profit of KRW 0.9 billion and net profit of KRW 0.8 billion marked a quarterly swing to profit"
+   "ko": "2026년 상반기 잠정 매출은 309억원으로 전년 동기 대비 49% 늘었고, 영업이익 3.9억원으로 2023년 상반기 이후 첫 반기 영업흑자를 기록했다(2026년 8월 14일 발표).",
+   "en": "First-half 2026 preliminary revenue of KRW 30.9 billion rose 49% year on year, and operating profit of KRW 390 million marked the first half-year operating profit since 2023 (announced August 14, 2026)."
   },
   {
-   "ko": "2022년 영업이익률 21.2%에서 2025년 -24.5%까지 4년 연속 마진 악화 후 저점 통과 신호",
-   "en": "Operating margin fell from 21.2% in 2022 to -24.5% in 2025 over four straight years before showing signs of bottoming"
+   "ko": "2026년 3분기 매출은 103억원으로 전 분기 대비 40.8% 줄었고, 영업손실 44.9억원으로 적자 전환됐다(정기보고서 공시 실적).",
+   "en": "Q3 2026 revenue of KRW 10.3 billion fell 40.8% from the prior quarter, and the company recorded an operating loss of KRW 4.49 billion (disclosed in the periodic report)."
   },
   {
-   "ko": "반도체 재자원화(AM-X)·탄산리튬(LiM-X)·블랙매스(BM-X) 3개 사업축으로 포트폴리오 재편",
-   "en": "Business portfolio restructured around three pillars: semiconductor waste-acid recycling (AM-X), lithium carbonate (LiM-X), and black mass (BM-X)"
+   "ko": "2025년 연간 매출은 384억원으로 전년 대비 26.5% 늘었지만, 영업손실 94.2억원과 지배주주 순손실 180억원으로 적자 폭이 커졌다.",
+   "en": "Annual 2025 revenue reached KRW 38.4 billion, up 26.5%, yet the operating loss widened to KRW 9.42 billion and the net loss attributable to controlling shareholders reached KRW 18 billion."
   },
   {
-   "ko": "부채비율이 2022년 41.9%에서 2025년 82.4%로 상승, 자기자본은 4년 연속 감소",
-   "en": "Debt ratio rose from 41.9% in 2022 to 82.4% in 2025, while equity has declined for four consecutive years"
+   "ko": "매출 축은 반도체 폐산 재자원화(AM-X), 탄산리튬 플랫폼(LiM-X), 블랙매스(BM-X)이며, 2026년 상반기 회사 발표 기준 BM-X 매출 158.0억원이 가장 컸다.",
+   "en": "Revenue rests on semiconductor waste-acid recycling (AM-X), the lithium carbonate platform (LiM-X) and black mass (BM-X), and BM-X was the largest at KRW 15.8 billion in the first half of 2026 per company figures."
   },
   {
-   "ko": "LG화학·한국전구체 중심의 장기 공급망과 3공장 증설이 향후 외형 확대의 핵심 변수",
-   "en": "The long-term supply relationship centered on LG Chem and Korea Precursor Co., along with the No.3 plant expansion, remains the key variable for future top-line growth"
+   "ko": "2026년 12월 4일 임시주주총회에 자본준비금 감액 및 이익잉여금 전입 안건이 상정돼 있으며, 자기주식 취득과 배당 재원 마련이 목적으로 기재됐다.",
+   "en": "An extraordinary shareholders meeting on December 4, 2026 will consider reducing capital reserves and transferring retained earnings, with stated purposes of funding share buybacks and dividends."
   }
  ],
  "business": {
-  "ko": "새빗켐은 1993년 동양케미스트리로 출범해 반도체·디스플레이 공정에서 발생하는 폐산을 재활용해 인산·질산나트륨 등을 생산하는 케미칼 사업부를 근간으로 성장했다. 이 사업은 새빗켐을 지탱해온 안정적인 현금창출원으로 평가된다. 2017년부터는 폐리튬이온 이차전지에서 양극활물질을 정제·분리하는 전지 사업부로 영역을 넓혀, 폐양극재를 매입해 습식 제련 방식으로 니켈·코발트·망간이 혼합된 전구체 복합액을 생산해 전구체·양극재 업체에 공급한다. 주요 매입·공급 거래선은 LG화학, 엘앤에프 계열 JH화학, 중국 이엠티 등으로 알려져 있으며, 2022년 LG화학과 켐코의 합작법인인 한국전구체주식회사와 10년간 전구체 복합액 공급 계약을 체결해 안정적 판로를 확보했다. 최근에는 사업구조를 반도체 폐인산 재자원화(AM-X), 탄산리튬 제품 플랫폼(LiM-X), 사용후 배터리 기반 블랙매스(BM-X) 세 축으로 재편해 원료 다변화와 수익 기반 확대를 동시에 추진하고 있다. 2026년 상반기 부문별 매출은 AM-X 76.3억원, LiM-X 71.3억원(전년 동기 대비 79% 증가), BM-X 158.0억원(전년 동기 18.7억원에서 대폭 확대)으로 나타나 블랙매스 부문이 가장 큰 성장을 보였다. 회사는 공정 스크랩 위주였던 원료 공급 체계를 사용후 배터리 기반 블랙매스로 전환해 원가율을 낮췄다고 설명했다. 경쟁구도 측면에서는 국내 상장 폐배터리 재활용 기업이 성일하이텍 등으로 많지 않은 편이며, 새빗켐은 액상형 분리 기술을 통한 공정 간소화를 경쟁력으로 내세우고 있다. 현재 대표이사는 이승진이다.",
-  "en": "Sebitchem began in 1993 as Dongyang Chemistry, building its foundation on a chemical division that recycles waste acid from semiconductor and display processes into phosphoric acid and sodium nitrate, a business regarded as the company's stable cash-generating core. From 2017 the company expanded into a battery division that purifies and separates cathode active material from spent lithium-ion batteries, purchasing defective cathode material and using wet smelting to produce a nickel-cobalt-manganese precursor mixed solution supplied to precursor and cathode makers. Known trading partners include LG Chem, L&F affiliate JH Chemical, and China-based EM-T, and in 2022 the company signed a ten-year supply agreement for precursor mixed solution with Korea Precursor Co., a joint venture between LG Chem and Kemco, securing a stable sales channel. More recently the company has reorganized its business around three pillars: semiconductor waste-acid recycling (AM-X), a lithium carbonate product platform (LiM-X), and black mass from spent batteries (BM-X), pursuing feedstock diversification and a broader revenue base simultaneously. In the first half of 2026, segment sales were reported at KRW 7.63 billion for AM-X, KRW 7.13 billion for LiM-X (up 79% year over year), and KRW 15.80 billion for BM-X, which expanded sharply from KRW 1.87 billion a year earlier, making black mass the fastest-growing segment. The company said it lowered its cost ratio by shifting its feedstock supply system from process scrap toward spent-battery-based black mass. In terms of competitive positioning, the number of listed domestic battery recycling companies such as SungEel HiTech is limited, and Sebitchem cites process simplification through liquid-phase separation technology as its competitive edge. The company's current chief executive is Lee Seung-jin."
+  "ko": "새빗켐(107600)은 2001년 설립된 재자원화 전문 기업으로, 2005년 현재 사명으로 바꾼 뒤 반도체·디스플레이 공정에서 나오는 폐산을 재활용하는 사업을 해 왔다. 핵심 기술은 폐산에서 인산·초산·질산나트륨 같은 산업용 화학물질을 추출해 비료, 금속 표면처리, 화학소재의 기초 원료로 다시 공급하는 데 있다. 회사는 2011년 폐배터리 재활용 연구개발에 착수해 2017년부터 관련 사업을 본격화했다. 2026년 상반기 회사 발표(잠정) 기준 부문별 매출은 반도체 폐인산 재자원화(AM-X) 76.3억원, 탄산리튬 제품 플랫폼(LiM-X) 71.3억원, 블랙매스(BM-X) 158.0억원이다. LiM-X는 전년 동기 39.8억원보다 79% 늘었고, BM-X는 전년 동기 18.7억원에서 크게 확대됐다. 회사는 BM-X의 원료를 공정 스크랩에서 사용 후 배터리 기반 블랙매스로 바꾸면서 원가율을 낮췄다고 설명한다. 반도체·디스플레이 폐산은 발생량이 많아 원료 수급이 비교적 원활하다는 점이 사업의 기반으로 꼽힌다. 2025년 초 LX인베스트먼트가 회사를 인수하면서 전처리 역량이 더해져 폐배터리 재활용의 전 공정을 갖췄다는 평가가 나온다. 회사는 글로벌 거래선 다변화를 2026년 상반기 실적 반등의 요인으로 꼽았다. 폐배터리 전용 업체와 달리 반도체 폐산이라는 비배터리 원료 기반을 함께 가진 점이 차별점으로 언급된다.",
+  "en": "Sebitchem, a recycling specialist founded in 2001 under an earlier name, adopted its current name in 2005 and has since run a business recycling waste acids from semiconductor and display processes. Its core technology extracts industrial chemicals such as phosphoric, acetic and sodium nitrate compounds from waste acid and supplies them back as base materials for fertilizers, metal surface treatment and chemical materials. The company began battery recycling R&D in 2011 and scaled the business from 2017. According to company figures for the first half of 2026 (preliminary), semiconductor waste phosphoric acid recycling (AM-X) generated KRW 7.63 billion, the lithium carbonate platform (LiM-X) KRW 7.13 billion and black mass (BM-X) KRW 15.8 billion. LiM-X grew 79% from KRW 3.98 billion a year earlier, and BM-X expanded sharply from KRW 1.87 billion. The company said it cut its cost ratio by shifting BM-X feedstock from process scrap to spent-battery-based black mass. Waste acid from semiconductor and display plants is generated in large volumes, which supports feedstock supply. LX Investment acquired the company in early 2025, and the pretreatment capability it brought gives the company a full battery recycling process. The company cited diversification of its global customer base as a driver of the first-half rebound. Unlike battery-only recyclers, Sebitchem also draws on a non-battery feedstock base in semiconductor waste acid."
  },
  "earnings": {
-  "ko": "새빗켐의 연간 실적은 뚜렷한 부침을 보였다. 2022년 매출 481.3억원, 영업이익 102.0억원(영업이익률 21.2%), 순이익 77.0억원으로 정점을 찍은 뒤, 2023년 매출 459.9억원에 영업손실 49.0억원(영업이익률 -10.7%)으로 적자 전환했다. 2024년에는 매출이 303.4억원으로 줄면서 영업손실이 61.6억원(-20.3%)으로 확대됐고, 2025년에는 매출 383.9억원으로 다소 회복됐지만 영업손실은 94.2억원(-24.5%), 순손실은 180.5억원까지 늘어 4년 연속 순손실을 기록했다. 자기자본(지배주주 기준)은 2022년 631.5억원에서 2025년 453.6억원으로 줄었고, 부채비율은 같은 기간 41.9%에서 82.4%로 뛰었다. 분기 흐름을 보면 2025년 3분기 매출 71.6억원·영업손실 31.4억원으로 손실이 가장 컸다가, 4분기 매출 105.2억원에도 순손실이 103.9억원으로 급증해 일회성 요인이 반영된 것으로 보인다. 이후 2026년 1분기 매출 134.9억원·영업손실 4.7억원으로 손실 폭이 크게 줄었고, 2분기에는 매출 173.8억원, 영업이익 8.7억원, 순이익 8.3억원으로 3년 만에 분기 기준 흑자전환에 성공했다. 다만 최근 네 개 분기(2025년 3분기~2026년 2분기) 합산 순이익은 -129.0억원으로 여전히 적자 구간에 머물러 있어, 2분기의 흑자전환이 구조적 개선인지 확인하는 데는 추가 분기 실적이 필요하다. 2025년 영업활동현금흐름은 -126.3억원으로 전년 10.2억원 대비 큰 폭의 현금 유출을 기록해, 손익 개선과 별개로 자금 소요가 확대됐음을 보여준다.",
-  "en": "Sebitchem's annual results have shown pronounced swings. After peaking in 2022 with revenue of KRW 48.1 billion, operating profit of KRW 10.2 billion (operating margin of 21.2%), and net profit of KRW 7.7 billion, the company swung to an operating loss of KRW 4.9 billion (operating margin of -10.7%) on revenue of KRW 46.0 billion in 2023. In 2024, revenue fell to KRW 30.3 billion while the operating loss widened to KRW 6.2 billion (-20.3%), and in 2025 revenue recovered somewhat to KRW 38.4 billion, but the operating loss grew to KRW 9.4 billion (-24.5%) and the net loss expanded to KRW 18.0 billion, marking a fourth consecutive year of net losses. Owner's equity fell from KRW 63.1 billion in 2022 to KRW 45.4 billion in 2025, while the debt ratio jumped from 41.9% to 82.4% over the same period. On a quarterly basis, the loss was widest in Q3 2025 with revenue of KRW 7.2 billion and an operating loss of KRW 3.1 billion, followed by a Q4 net loss that surged to KRW 10.4 billion despite revenue of KRW 10.5 billion, suggesting a one-off factor. The loss then narrowed sharply in Q1 2026 to an operating loss of KRW 0.5 billion on revenue of KRW 13.5 billion, and in Q2 2026 the company posted revenue of KRW 17.4 billion, operating profit of KRW 0.9 billion, and net profit of KRW 0.8 billion, its first quarterly profit swing in three years. However, the trailing four-quarter net result (Q3 2025 through Q2 2026) still totals a loss of KRW 12.9 billion, meaning additional quarters are needed to confirm whether the Q2 turnaround reflects a structural improvement. Operating cash flow in 2025 was negative KRW 12.6 billion, a sharp reversal from positive KRW 1.0 billion in 2024, indicating expanded funding needs even as the profit and loss picture began to improve."
+  "ko": "공시 실적 기준 연간 매출은 2022년 481억원에서 2023년 460억원(전년 대비 4.4% 감소), 2024년 303억원(전년 대비 34.0% 감소)으로 내려갔다가 2025년 384억원(전년 대비 26.5% 증가)으로 돌아섰다. 2022~2025년 중 가장 큰 해는 2022년이고 가장 작은 해는 2024년이다. 영업이익은 2022년 102억원에서 2023년 영업손실 49억원으로 적자 전환됐고, 2024년 영업손실 61.6억원, 2025년 영업손실 94.2억원으로 손실 폭이 커졌다. 영업이익률은 2022년 21.2%에서 2023년 -10.7%, 2024년 -20.3%, 2025년 -24.5%로 낮아졌다. 지배주주 순이익은 2022년 77억원에서 2023년 지배주주 순손실 11.7억원, 2024년 지배주주 순손실 107억원, 2025년 지배주주 순손실 180억원으로 확대됐고, 당기순이익(비지배지분 포함)도 같은 흐름을 보였다. 2025년 손익 악화에 대해 회사는 2차전지 시장 캐즘이 이어진 가운데 신규제품 출시로 매출은 늘었지만 고가 원료 투입에 따른 원재료비 상승과 신규제품 초기 운영비용이 영업적자를 키웠다고 설명했다. 순손실은 자산가치 감소(손상, 이연법인세)가 더해져 커졌다. 재무 구조도 나빠졌다. 부채비율은 2022년 41.9%에서 2025년 82.4%로 올랐고, 영업활동 현금흐름은 2022년 43.4억원에서 2025년 -126억원으로 적자 전환됐다. 분기 흐름은 2026년 들어 바뀌었다. 2026년 1분기 매출 135억원, 영업손실 4.7억원 뒤 2분기에는 매출 174억원, 영업이익 8.7억원으로 분기 흑자 전환됐다. 그러나 2026년 3분기 매출은 103억원으로 전 분기 대비 40.8% 줄었고 전년 동기 대비로는 43.7% 늘었으며, 영업손실 44.9억원으로 다시 적자가 됐다. 2025년 4분기부터 2026년 3분기까지 네 개 분기 지배주주 순손실 합계는 153억원이다.",
+  "en": "On a disclosed annual basis, revenue fell from KRW 48.1 billion in 2022 to KRW 46 billion in 2023 (down 4.4%) and KRW 30.3 billion in 2024 (down 34.0%), before rising to KRW 38.4 billion in 2025 (up 26.5%). Among 2022 to 2025, 2022 was the largest year and 2024 the smallest. Operating profit of KRW 10.2 billion in 2022 turned into an operating loss of KRW 4.9 billion in 2023, and the loss then widened to KRW 6.16 billion in 2024 and KRW 9.42 billion in 2025. The operating margin fell from 21.2% in 2022 to -10.7% in 2023, -20.3% in 2024 and -24.5% in 2025. Net profit attributable to controlling shareholders moved from KRW 7.7 billion in 2022 to net losses of KRW 1.17 billion in 2023, KRW 10.7 billion in 2024 and KRW 18 billion in 2025, and net income including non-controlling interests followed the same path. For 2025, the company attributed the deterioration to a continued slump in the secondary battery market, where new product launches lifted revenue but higher raw material costs from expensive inputs and early operating costs for new products widened the operating loss. Asset value declines, including impairments and deferred tax effects, enlarged the net loss. The balance sheet also weakened, with the debt ratio rising from 41.9% in 2022 to 82.4% in 2025 and operating cash flow turning from KRW 4.34 billion in 2022 to negative KRW 12.6 billion in 2025. Quarterly results turned in 2026. Q1 2026 revenue was KRW 13.5 billion with an operating loss of KRW 472 million, and Q2 2026 revenue of KRW 17.4 billion produced an operating profit of KRW 867 million. Preliminary first-half figures announced on August 14, 2026 showed revenue of KRW 30.9 billion and operating profit of KRW 390 million, the first half-year operating profit in three years. Q3 2026 revenue of KRW 10.3 billion fell 40.8% from the prior quarter and rose 43.7% year on year, but the operating loss of KRW 4.49 billion returned. Net loss attributable to controlling shareholders over the four quarters from Q4 2025 to Q3 2026 totaled KRW 15.3 billion."
  },
  "industry": {
-  "ko": "전기차 배터리의 수명주기를 고려할 때 폐배터리 발생량은 구조적으로 늘어나는 추세다. SNE리서치에 따르면 폐배터리 발생 용량은 2025년 44GWh에서 2040년 3,339GWh로 늘어날 것으로 전망된다. 이에 따라 국내에서는 성일하이텍, DS단석, GS건설(에너지머티리얼즈) 등이 잇따라 증설·신규 진입에 나서며 경쟁이 심화되고 있다. 성일하이텍은 전처리와 후처리를 모두 수행하는 국내 유일 업체로 알려져 있으며, 군산 3공장 가동을 통해 처리 규모를 기존의 3배 수준으로 늘리는 등 공급능력 확대에 속도를 내고 있다. GS건설도 자회사 에너지머티리얼즈를 통해 폐배터리 재활용 시장에 진입해 공장 가동을 준비하고 있다. 새빗켐은 후처리 중심의 습식 제련 공정과 액상형 분리 기술을 경쟁력으로 삼고 있으나, 전처리·후처리를 모두 갖춘 경쟁사들과 비교하면 공정 범위가 제한적이라는 평가도 있다. 배터리 메탈(니켈·코발트·리튬) 가격 사이클은 업체들의 매출·마진에 직접적인 영향을 미치는데, 과거에도 중국산 인산 가격 급등락이 폐산 재활용 매출에 큰 영향을 준 사례가 있었다. 유럽연합의 배터리법 등 재활용 원료 사용 의무화 규제가 강화되는 흐름은 중장기적으로 국내 리사이클링 업체들에 우호적인 환경으로 거론된다.",
-  "en": "Given the lifecycle of electric-vehicle batteries, the volume of spent batteries is on a structurally rising trend. According to SNE Research, the capacity of spent batteries generated is expected to grow from 44 GWh in 2025 to 3,339 GWh by 2040. As a result, domestic players such as SungEel HiTech, DS Dansuk, and GS E&C (through its Energy Materials unit) have moved to expand capacity or enter the market, intensifying competition. SungEel HiTech is known as the only domestic company handling both pretreatment and post-treatment, and it has moved to roughly triple its processing capacity through the startup of its No. 3 plant in Gunsan. GS E&C has also entered the spent-battery recycling market through its Energy Materials subsidiary and is preparing to bring a plant online. Sebitchem relies on post-treatment wet smelting and liquid-phase separation technology as its competitive edge, though its process scope is viewed by some as narrower than peers that cover both pretreatment and post-treatment. Battery metal (nickel, cobalt, lithium) price cycles have a direct impact on revenue and margins across the industry, and in the past sharp swings in Chinese phosphoric acid prices materially affected the waste-acid recycling business as well. Tightening regulations such as the EU Battery Regulation, which mandates the use of recycled content, are cited as a broadly favorable medium- to long-term environment for domestic recycling companies."
+  "ko": "2차전지 업황은 수요 회복이 더딘 국면이다. 회사는 2025 사업연도 공시에서 2차전지 시장의 캐즘이 이어졌다고 설명했다. 폐배터리 회수량은 배터리 교체 주기를 평균 8~10년으로 보고 2017년부터 전기차가 본격 상용화된 점을 고려하면 2026년에 2025년보다 늘어날 것이라는 전망이 보도됐다. 정부는 민간기업 폐배터리 공급 지원 활성화 등 순환이용 체계 강화 방안을 제시했다. 리튬 가격은 2025년 10월 보도 기준으로 중국 일부 광산의 가동 중단 등 공급 리스크가 부각되며 반등 조짐을 보였다. 업종 전체로는 공급 과잉 우려와 기술 진입장벽이라는 구조적 리스크가 함께 있다는 평가가 나온다. 경쟁 측면에서는 새빗켐의 액상형 분리 기술이 유가금속 회수율에서 경쟁력을 갖췄다는 분석이 제기돼 왔다. 폐배터리 재활용은 용액 기반의 정제·분리 역량이 필요하며, 회사는 폐산 재활용에서 쌓은 역량을 바탕으로 이 사업에 진입했다. 반도체·디스플레이 산업의 폐산 발생량은 원료 측면에서 배터리와 다른 강점을 준다. 회사는 태양광 폐패널 재활용 사업도 긍정적으로 검토 중이라고 밝혔다.",
+  "en": "The secondary battery cycle remains in a slow recovery phase. In its disclosure for fiscal 2025, the company said the slump in the secondary battery market continued. Spent battery volumes are expected to rise in 2026 from 2025, based on an average battery replacement cycle of eight to ten years and the full commercialization of electric vehicles from 2017, according to press reports. The government has proposed measures to strengthen the circular use system, including support for private battery supply. Lithium prices showed signs of rebounding in an October 2025 press report, as supply risks such as halted operations at some Chinese mines came into focus. For the industry as a whole, overcapacity concerns and high technology entry barriers are cited as structural risks. On competition, analysts have pointed to the competitiveness of Sebitchem's liquid-phase separation technology in recovering valuable metals. Battery recycling requires solution-based refining and separation capabilities, and the company entered this business building on its waste-acid recycling expertise. Waste acid generated by semiconductor and display manufacturing gives the company a feedstock base that differs from battery-only peers. The company has also said it is watching the recycling of waste solar panels positively."
  },
  "outlook": {
-  "ko": "회사는 2026년 상반기 실적 발표에서 이번 흑자전환이 일회성이 아닌 지속 가능한 수익 구조 구축의 결과라고 밝히며, 재자원화 공정 기술 혁신을 바탕으로 해외 파트너십과 실증 사업을 확대해 나가겠다고 밝혔다. 구체적으로는 반도체 재자원화(AM-X) 사업에서 제조 공정 고도화를 추진하는 동시에 하반기 중 인산일암모늄(MAP) 상업화를 개시할 계획이라고 밝혔다. 탄산리튬 플랫폼(LiM-X)은 2026년 상반기 매출이 전년 동기 대비 79% 늘어난 것으로 나타나 성장세를 이어가는 모습이다. 회사는 또한 국내 최초로 1차전지(1차 배터리) 리사이클링에 도전한다는 방향을 IR 자료를 통해 제시한 바 있어, 사업영역을 2차전지 이외로 확장하려는 시도가 진행 중임을 시사한다. 과거 증권가 리포트들은 전구체 복합액 생산능력을 2022년 약 1만톤에서 3공장 증설을 통해 2026년 3만톤 수준으로 늘리는 계획을 다뤄왔으며, 증설이 완료될 경우 관련 매출액이 1,000억원 이상으로 확대될 수 있다는 전망을 제시했다. 다만 이러한 캐파 확대 일정이 최근 시점에서도 동일하게 유지되고 있는지는 향후 공시를 통해 재확인이 필요하다. 원료 구매처와 판매처를 해외로 다변화하려는 시도도 병행되고 있어, 특정 고객사·특정 원료 공급망에 대한 의존도를 낮추려는 방향이 뚜렷하다.",
-  "en": "In its H1 2026 results announcement, the company said the profit turnaround was not a one-off event but the result of building a sustainable earnings structure, and stated it would expand overseas partnerships and pilot projects based on innovation in its recycling processes. Specifically, the company said it is advancing manufacturing process upgrades in its semiconductor recycling (AM-X) business while planning to begin commercializing monoammonium phosphate (MAP) in the second half of the year. Its lithium carbonate platform (LiM-X) continued to show growth, with H1 2026 sales up 79% year over year. The company has also outlined, through IR materials, an ambition to become the first in Korea to pursue primary (non-rechargeable) battery recycling, suggesting an effort to expand beyond secondary batteries. Past brokerage reports had discussed plans to raise precursor mixed-solution production capacity from roughly 10,000 tons in 2022 to around 30,000 tons by 2026 through the No. 3 plant expansion, projecting that related sales could exceed KRW 100 billion once the expansion was complete. Whether this capacity timeline still holds as of the current period will need to be reconfirmed through upcoming disclosures. The company is also pursuing diversification of both raw material sourcing and sales channels overseas, indicating a clear direction toward reducing dependence on any single customer or feedstock supply chain."
+  "ko": "회사가 밝힌 일정 중 확인 가능한 것은 2026년 하반기 중 인산일암모늄(MAP) 상업화 개시다. 회사는 제조 공정 고도화를 함께 추진한다고 밝혀, 신규 제품의 매출 기여가 2026년 하반기 실적에 어떻게 반영되는지가 관건이다. 해외 원료 수급과 글로벌 판로 확대를 병행한다는 계획도 제시됐다. 회사는 해외 파트너십과 실증 사업 확대를 언급했다. 2026년 12월 4일 임시주주총회에서는 자본준비금 감액 및 이익잉여금 전입 건이 상정되며, 자기주식 취득과 배당 재원 마련이 목적으로 기재돼 있다. 2025 사업보고서는 2026년 3월 18일 제출됐고, 2026 사업보고서는 2027년 3월경 제출될 것으로 보이며 3분기 적자의 원인 설명과 부문별 매출이 여기서 확인된다. 2027년 1분기 분기보고서는 분기 종료 후 45일 이내 제출하는 일정으로, 3분기 적자 이후 흑자 흐름이 이어지는지 확인하는 지점이다. 태양광 폐패널 재활용은 2023년 MOU 체결 이후 기술 개발 단계로 언급되고 있다. 폐배터리 회수량 증가 전망과 리튬 가격 흐름은 BM-X와 LiM-X 매출을 가르는 변수로 남아 있다.",
+  "en": "Among the company's stated timelines, the one that can be checked is the start of commercial production of monoammonium phosphate (MAP) in the second half of 2026. The company is also upgrading its manufacturing processes, so how new product sales show up in second-half results is the key point. The company also plans to expand overseas feedstock sourcing and global sales channels in parallel, and it has mentioned expanding overseas partnerships and demonstration projects. An extraordinary shareholders meeting on December 4, 2026 will consider reducing capital reserves and transferring retained earnings, with stated purposes of funding share buybacks and dividends. The fiscal 2025 annual report was filed on March 18, 2026, and the fiscal 2026 annual report is expected around March 2027, where the explanation of the Q3 loss and segment revenue will appear. The Q1 2027 quarterly report is due within 45 days after the quarter ends, and it will show whether profitability returns after the Q3 loss. Waste solar panel recycling has been described as in technology development since the 2023 MOU. Expectations for spent battery volumes and lithium prices remain the variables that will determine BM-X and LiM-X revenue."
  },
  "valuation_comment": {
-  "ko": "새빗켐은 4년 연속 순손실을 기록하며 자기자본이 지속적으로 줄어드는 국면에서 최근 두 개 분기에 걸쳐 손실이 축소되고 2분기 흑자전환이 나타난 상태로, 순자산 대비 주가 배수는 과거 이익 호황기였던 2022년 전후의 밸류에이션 수준과 직접 비교하기 어려운 구간에 있다. 현재 순자산가치 대비 주가는 프리미엄이 존재하는 편으로, 이는 흑자전환의 지속 여부에 대한 시장의 기대가 일부 반영된 결과로 해석할 수 있다. 배당은 최근 확정 데이터 기준으로 지급 실적이 없어, 주주환원 측면에서 비교할 배당수익률 자체가 형성되지 않는 상태다. 과거 이익이 안정적으로 발생했던 시기의 주가수익비율 밴드와 현재의 적자·흑자 전환기 밸류에이션을 단순 비교하는 것은 해석에 주의가 필요하며, 향후 분기 실적이 이익 회복의 연속성을 보여주는지가 밸류에이션 판단의 핵심 변수가 될 것으로 보인다.",
-  "en": "Sebitchem has posted net losses for four consecutive years, steadily eroding its equity base, but the loss narrowed over the past two quarters before the company swung to a quarterly profit in Q2 2026, putting the current price-to-book multiple in a range that is difficult to compare directly with the valuation levels seen around the profitable years of 2022. The current premium of the share price over net asset value can be read partly as reflecting market expectations about whether the profit turnaround will prove durable. Based on the most recent confirmed data, the company has no dividend payment record, so there is no dividend yield to speak of on a shareholder-return basis. Simple comparisons between the price-to-earnings band from the company's earlier stable-profit period and the current valuation during this loss-to-profit transition should be treated with caution, and whether upcoming quarterly results demonstrate continuity in the earnings recovery is likely to be the key variable for valuation going forward."
+  "ko": "주가수익배수(PER)는 최근 네 개 분기 기준 순손실이 이어져 산출되지 않는 상태다. 주가순자산비율(PBR)은 주가가 장부상 순자산을 웃도는 구간으로, 순자산 대비 소폭의 프리미엄이 붙은 상태에 가깝다. 배당수익률은 업종 평균을 밑도는 편이며, 배당 실적도 낮은 수준에 머물러 있다. 2026년 12월 4일 임시주총 안건인 자본준비금 감액과 이익잉여금 전입은 자기주식 취득과 배당 재원 마련을 목적으로 기재돼 있어, 주주환원 관련 변화는 이 안건의 실행 여부에 따라 달라진다. 이익의 방향은 2026년 상반기에 적자에서 흑자로 바뀌었다가 2026년 3분기에 다시 적자로 돌아선 구간이다. 자본총계는 2025년 말 454억원으로 지배주주 지분과 같은 규모이며, 부채총계는 374억원이다. 부채비율이 2022년 41.9%에서 2025년 82.4%로 올라 자산 대비 부채 부담이 커진 구도이므로, 배수의 해석은 이익 회복 속도와 자본 규모의 변화를 함께 봐야 한다.",
+  "en": "Price-to-earnings cannot be calculated because the company has posted net losses across the last four quarters. The price-to-book ratio places the share price modestly above book value, a small premium to net assets. The dividend yield sits below the industry average, and dividend payments have remained at a low level. The extraordinary meeting agenda for December 4, 2026, reducing capital reserves and transferring retained earnings, is stated to fund share buybacks and dividends, so shareholder return changes will depend on whether this agenda is carried out. Earnings moved from an operating loss to a profit in the first half of 2026 and back to a loss in Q3 2026. Total equity was KRW 45.4 billion at the end of 2025, equal to the portion attributable to controlling shareholders, against total liabilities of KRW 37.4 billion. The debt ratio rose from 41.9% in 2022 to 82.4% in 2025, so the multiples should be read alongside the pace of earnings recovery and changes in the equity base."
  },
  "bull": [
   {
    "title": {
-    "ko": "3년 만의 분기 흑자전환",
-    "en": "First Quarterly Profit Swing in Three Years"
+    "ko": "반도체 폐산 재자원화의 수익 기반",
+    "en": "A revenue base in semiconductor waste-acid recycling"
    },
    "body": {
-    "ko": "2026년 2분기 매출 173.8억원, 영업이익 8.7억원, 순이익 8.3억원을 기록하며 2023년 상반기 이후 3년 만에 분기 손익이 흑자로 돌아섰다. 반도체 재자원화(AM-X)의 수익 기반 확보, 탄산리튬(LiM-X)의 성장, 원료를 사용후 배터리 기반 블랙매스로 전환한 원가 절감이 복합적으로 작용했다. 1분기에도 영업손실이 4.7억원 수준으로 크게 줄었던 만큼 2개 분기 연속 개선 흐름이 확인된다.",
-    "en": "In Q2 2026, the company posted revenue of KRW 17.4 billion, operating profit of KRW 0.9 billion, and net profit of KRW 0.8 billion, swinging to a quarterly profit for the first time since H1 2023. Securing a revenue base in semiconductor waste-acid recycling (AM-X), growth in lithium carbonate (LiM-X), and cost reduction from shifting feedstock toward spent-battery-based black mass all contributed. The operating loss had already narrowed sharply to KRW 0.5 billion in Q1, indicating two consecutive quarters of improvement."
+    "ko": "AM-X 부문은 2026년 상반기 회사 발표 기준 매출 76.3억원을 기록했다. 반도체·디스플레이 폐산은 발생량이 많아 원료 수급이 비교적 원활하다. 폐산 재활용은 회사의 안정적인 캐시카우로 평가된다.",
+    "en": "The AM-X segment recorded KRW 7.63 billion in first-half 2026 revenue per company figures. Waste acid from semiconductor and display plants is generated in large volumes, which supports feedstock supply. Analysts describe waste-acid recycling as the company's stable cash generator."
    }
   },
   {
    "title": {
-    "ko": "LG화학 중심 장기 공급망 확보",
-    "en": "Long-Term Supply Chain Anchored by LG Chem"
+    "ko": "2분기 흑자 전환과 블랙매스 확대",
+    "en": "Q2 profit turn and expansion of black mass"
    },
    "body": {
-    "ko": "새빗켐은 LG화학과 켐코의 합작법인인 한국전구체주식회사와 10년간 전구체 복합액 공급 계약을 체결해 안정적인 판로를 갖추고 있다. 새빗켐은 LG화학에서 발생하는 양극재 활물질 불량품을 다시 매입해 원재료를 확보하는 선순환 구조도 구축했다. 이러한 구조는 원료 조달과 판매처가 동시에 안정화된다는 점에서 경쟁사와 차별화되는 요소로 거론된다.",
-    "en": "Sebitchem has a ten-year supply agreement for precursor mixed solution with Korea Precursor Co., a joint venture between LG Chem and Kemco, giving it a stable sales channel. The company has also built a circular structure in which it repurchases defective cathode active material generated by LG Chem to secure raw materials. This structure, which stabilizes both feedstock sourcing and sales outlets simultaneously, is cited as a differentiating factor versus competitors."
+    "ko": "2026년 2분기 매출은 174억원으로 전년 동기 대비 61.1% 늘었고, 영업이익 8.7억원으로 분기 흑자 전환을 이뤘다. BM-X 매출은 158.0억원으로 전년 동기 18.7억원에서 크게 확대됐다. 회사는 원료를 사용 후 배터리 기반 블랙매스로 바꾼 것이 원가율을 낮췄다고 설명했다.",
+    "en": "Q2 2026 revenue of KRW 17.4 billion rose 61.1% year on year, and operating profit of KRW 867 million marked a quarterly profit turn. BM-X revenue expanded sharply to KRW 15.8 billion from KRW 1.87 billion a year earlier. The company said the switch to spent-battery-based black mass lowered its cost ratio."
    }
   },
   {
    "title": {
-    "ko": "사업 포트폴리오 다각화",
-    "en": "Diversifying Business Portfolio"
+    "ko": "전 공정 확보와 리튬 플랫폼 성장",
+    "en": "Full process coverage and lithium platform growth"
    },
    "body": {
-    "ko": "회사는 반도체 폐인산 재자원화(AM-X), 탄산리튬(LiM-X), 블랙매스(BM-X) 세 축으로 사업을 재편했고, 2026년 하반기에는 인산일암모늄(MAP) 상업화도 계획하고 있다. 국내 최초 1차전지 리사이클링 도전을 IR을 통해 밝힌 바 있어, 2차전지 중심 사업에서 벗어나 시장을 넓히려는 시도가 이어지고 있다. 다변화된 사업축은 특정 제품·고객 의존에서 오는 변동성을 완화할 수 있는 요인으로 볼 수 있다.",
-    "en": "The company has reorganized its business around three pillars—semiconductor waste-acid recycling (AM-X), lithium carbonate (LiM-X), and black mass (BM-X)—and plans to commercialize monoammonium phosphate (MAP) in the second half of 2026. It has also stated through IR materials an ambition to be the first in Korea to pursue primary battery recycling, indicating an ongoing effort to expand beyond a secondary-battery-centered business. This diversified set of business lines can be seen as a factor that may reduce volatility stemming from reliance on any single product or customer."
+    "ko": "2025년 초 LX인베스트먼트 인수 이후 폐배터리 재활용의 전 공정을 갖췄다는 평가가 나온다. LiM-X 매출은 71.3억원으로 전년 동기 39.8억원보다 79% 늘었다. 회사는 해외 원료 수급과 글로벌 판로 확대를 병행한다고 밝혔다.",
+    "en": "Since LX Investment acquired the company in early 2025, it has been described as having a full battery recycling process. LiM-X revenue reached KRW 7.13 billion, up 79% from KRW 3.98 billion a year earlier. The company said it will expand overseas feedstock sourcing alongside global sales channels."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "4년 연속 순손실과 자본 잠식 우려",
-    "en": "Four Straight Years of Net Losses and Equity Erosion"
+    "ko": "3분기 적자 재전환",
+    "en": "Renewed loss in Q3"
    },
    "body": {
-    "ko": "2022년 흑자 이후 2023~2025년 3년 연속 순손실을 기록했고, 지배주주 자기자본은 2022년 631.5억원에서 2025년 453.6억원까지 줄었다. 부채비율은 같은 기간 41.9%에서 82.4%로 상승해 재무 완충력이 약화됐다. 2분기 흑자전환에도 최근 네 개 분기 합산 순이익은 -129.0억원으로 여전히 적자 구간에 있어, 개선의 지속성이 검증되지 않은 상태다.",
-    "en": "After a profitable 2022, the company posted net losses for three straight years from 2023 to 2025, and owner's equity fell from KRW 63.1 billion in 2022 to KRW 45.4 billion in 2025. The debt ratio rose from 41.9% to 82.4% over the same period, weakening the financial buffer. Despite the Q2 profit swing, the trailing four-quarter net result still totals a loss of KRW 12.9 billion, meaning the durability of the improvement remains unverified."
+    "ko": "2026년 3분기 매출은 103억원으로 전 분기 대비 40.8% 줄었고, 영업손실은 44.9억원이었다. 2분기에 나온 흑자가 한 분기 만에 되돌아갔다. 분기 실적 변동 폭이 커서 상반기 흑자가 구조적 전환인지는 이후 분기 추이로 가려야 한다.",
+    "en": "Q3 2026 revenue of KRW 10.3 billion fell 40.8% from the prior quarter, and the operating loss was KRW 4.49 billion. The Q2 profit reversed within a single quarter. Given the swings in quarterly results, whether the first-half profit reflects a structural change will depend on subsequent quarters."
    }
   },
   {
    "title": {
-    "ko": "경쟁 심화",
-    "en": "Intensifying Competition"
+    "ko": "3년 연속 영업손실과 현금흐름 악화",
+    "en": "Three straight years of operating losses and weaker cash flow"
    },
    "body": {
-    "ko": "성일하이텍은 전처리와 후처리를 모두 갖춘 국내 유일 업체로서 군산 3공장 가동을 통해 처리 규모를 기존의 3배로 늘리고 있다. DS단석도 첫 재활용 공장을 가동했고, GS건설은 에너지머티리얼즈를 통해 하반기 상업 가동을 준비하고 있다. 후처리 중심인 새빗켐 입장에서는 원료(블랙파우더·블랙매스) 확보 경쟁이 더 치열해질 수 있는 구조다.",
-    "en": "SungEel HiTech, the only domestic company covering both pretreatment and post-treatment, is roughly tripling its processing capacity through its No. 3 plant in Gunsan. DS Dansuk has also started its first recycling plant, and GS E&C is preparing to bring its Energy Materials subsidiary's plant into commercial operation in the second half. For post-treatment-focused Sebitchem, competition for feedstock such as black powder and black mass could intensify further."
+    "ko": "영업손실은 2023년부터 2025년까지 3년 연속 발생했고, 2025년 영업손실은 94.2억원으로 커졌다. 영업활동 현금흐름은 2025년 -126억원으로 적자 전환됐다. 부채비율은 2022년 41.9%에서 2025년 82.4%로 높아졌다.",
+    "en": "The company recorded operating losses for three consecutive years from 2023 through 2025, and the 2025 operating loss widened to KRW 9.42 billion. Operating cash flow turned negative at KRW 12.6 billion in 2025. The debt ratio rose from 41.9% in 2022 to 82.4% in 2025."
    }
   },
   {
    "title": {
-    "ko": "메탈 가격·원료 수급 변동성",
-    "en": "Metal Price and Feedstock Supply Volatility"
+    "ko": "재무 부담과 설비투자 부담",
+    "en": "Financial burden from capital spending"
    },
    "body": {
-    "ko": "새빗켐의 매출은 니켈·코발트·리튬 등 배터리 메탈 가격과 폐산 가격 변동에 민감한 구조다. 과거에도 중국산 인산 가격 급등락이 폐산 재활용 매출에 큰 영향을 미친 사례가 있었다. 원료를 사용후 배터리 기반 블랙매스로 전환하는 과정에서 해외 조달 비중이 늘어날 경우 환율·물류·통관 등 새로운 변동 요인에 노출될 수 있다.",
-    "en": "Sebitchem's revenue structure is sensitive to fluctuations in battery metal prices—nickel, cobalt, and lithium—as well as waste acid prices. In the past, sharp swings in Chinese phosphoric acid prices materially affected waste-acid recycling revenue. As the company shifts feedstock toward spent-battery-based black mass and increases the share of overseas sourcing, it could be exposed to new variables such as exchange rates, logistics, and customs procedures."
+    "ko": "2025년 말 자본총계는 454억원, 부채총계는 374억원이었다. 업계 보도에서는 설비투자 확대와 해외공장 개발로 재무 부담이 늘었다는 지적이 나왔다. 이자보상배율 등 재무지표 개선이 과제로 꼽혔다.",
+    "en": "At the end of 2025, total equity was KRW 45.4 billion and total liabilities were KRW 37.4 billion. Press reports pointed to rising financial strain from expanded facility investment and overseas plant development. Improving financial indicators such as the interest coverage ratio was cited as a priority."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "재무건전성",
-    "en": "Financial Soundness"
+    "ko": "원재료 · 메탈 가격",
+    "en": "Raw material and metal prices"
    },
    "body": {
-    "ko": "4년 연속 순손실로 자기자본이 줄어드는 가운데 부채비율이 82.4%까지 상승했고, 2025년 영업활동현금흐름은 -126.3억원으로 현금 유출이 확대됐다. 흑자전환이 이어지지 않을 경우 추가 외부 자금조달 필요성이 커질 수 있다. 재무구조 개선 속도는 향후 분기 실적을 통해 지속적으로 확인해야 하는 항목이다.",
-    "en": "With equity shrinking amid four consecutive years of net losses, the debt ratio rose to 82.4%, and 2025 operating cash flow turned sharply negative at KRW -12.6 billion. If the profit turnaround does not continue, the need for additional external funding could grow. The pace of balance sheet improvement is something that needs to be continuously verified through upcoming quarterly results."
+    "ko": "2025년에는 고가 원료 투입에 따른 원재료비 상승이 영업적자를 키운 요인으로 회사가 설명했다. 리튬 등 2차전지 핵심 광물 가격이 방향을 바꾸면 LiM-X 수익성과 BM-X 원가율이 흔들릴 수 있다. 2025년 10월 보도에서는 리튬 가격 반등이 업황 기대로 이어졌다는 분석이 나왔다.",
+    "en": "In 2025 the company cited higher raw material costs from expensive inputs as a driver of the operating loss. A reversal in lithium and other battery metal prices could affect LiM-X profitability and the BM-X cost ratio. An October 2025 press report linked the lithium price rebound to sector expectations."
    }
   },
   {
    "cat": {
-    "ko": "산업/가격 리스크",
-    "en": "Industry and Price Risk"
+    "ko": "수요 · 업종 구조",
+    "en": "Demand and sector structure"
    },
    "body": {
-    "ko": "배터리 메탈 가격 사이클과 폐배터리·블랙매스 시장 공급량 변화는 실적에 직접 영향을 미친다. 성일하이텍, DS단석, GS건설 등 경쟁사들의 증설이 이어지고 있어 원료 매입 경쟁과 스프레드 압박이 커질 가능성이 있다. EU 배터리법 등 규제 변화의 세부 시행 일정도 매출 인식 시점에 영향을 줄 수 있다.",
-    "en": "Battery metal price cycles and changes in the supply of spent batteries and black mass have a direct impact on results. As competitors including SungEel HiTech, DS Dansuk, and GS E&C continue to expand capacity, competition for feedstock and pressure on spreads could intensify. The detailed implementation schedule of regulatory changes such as the EU Battery Regulation could also affect the timing of revenue recognition."
+    "ko": "회사는 2025 사업연도 공시에서 2차전지 시장 캐즘이 이어졌다고 설명했다. 업종은 공급 과잉 우려와 기술 진입장벽이라는 구조적 리스크를 안고 있다는 지적이 있다. 리사이클링 매출 확대가 실제 이익으로 이어지는지가 관건으로 꼽힌다.",
+    "en": "In its fiscal 2025 disclosure, the company said the slump in the secondary battery market continued. The sector is seen as carrying structural risks, including overcapacity concerns and technology entry barriers. Whether recycling revenue growth converts into actual profit is the key question."
    }
   },
   {
    "cat": {
-    "ko": "지배구조/경영 리스크",
-    "en": "Governance and Management Risk"
+    "ko": "재무 · 지배구조",
+    "en": "Financial position and ownership"
    },
    "body": {
-    "ko": "회사의 대표이사가 이승진으로 교체된 바 있어 경영진 변화에 따른 전략 실행의 연속성을 지켜볼 필요가 있다. 신사업(1차전지 리사이클링, MAP 상업화 등)이 다수 동시에 추진되고 있어 자원 배분과 실행력에 대한 점검이 필요하다. 사업 확장 속도와 재무 여력 간의 균형을 어떻게 맞추는지가 중요한 변수다.",
-    "en": "The company's chief executive has changed to Lee Seung-jin, so the continuity of strategy execution amid this management change warrants monitoring. Multiple new businesses—primary battery recycling, MAP commercialization, and others—are being pursued simultaneously, which calls for scrutiny of resource allocation and execution capability. How the company balances the pace of business expansion against its financial capacity is an important variable to watch."
+    "ko": "2025년 초 사모펀드 운용사 LX인베스트먼트가 회사를 인수하면서 지배구조가 바뀌었다. 부채비율 82.4%와 자산 손상에 따른 순손실 확대는 재무 여력을 제약할 수 있는 요인이다. 2026년 12월 4일 임시주주회의 안건이 실행되는지가 주주환원 방향을 보여 줄 것이다.",
+    "en": "LX Investment, a private equity manager, acquired the company in early 2025, changing its ownership structure. A debt ratio of 82.4% and net losses enlarged by asset impairments could constrain financial flexibility. Whether the agenda at the December 4, 2026 meeting is carried out will show the direction of shareholder returns."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중순",
-    "en": "Mid-November 2026"
+    "ko": "2026년 12월 4일",
+    "en": "December 4, 2026"
    },
    "what": {
-    "ko": "3분기보고서 공시를 통해 2분기 흑자전환이 3분기까지 이어지는지, 매출·영업이익 개선의 연속성을 확인해야 한다.",
-    "en": "The Q3 2026 quarterly report should be checked to see whether the Q2 profit swing continued into Q3 and whether revenue and operating profit improvements proved durable."
+    "ko": "임시주주총회의 자본준비금 감액 및 이익잉여금 전입 안건 처리. 자기주식 취득과 배당 재원 마련이 목적이므로 주주환원 여력이 어떻게 바뀌는지 보여 준다.",
+    "en": "Shareholder vote on reducing capital reserves and transferring retained earnings. The stated purposes are share buybacks and dividend funding, which will show how shareholder return capacity changes."
    }
   },
   {
    "when": {
     "ko": "2026년 하반기 중",
-    "en": "During H2 2026"
+    "en": "Within the second half of 2026"
    },
    "what": {
-    "ko": "회사가 예고한 인산일암모늄(MAP) 상업화 개시 여부와 초기 매출 기여 규모를 공시·IR을 통해 확인할 필요가 있다.",
-    "en": "It is worth checking, through disclosures and IR materials, whether the company's announced commercialization of monoammonium phosphate (MAP) begins and how much it contributes to early sales."
+    "ko": "인산일암모늄(MAP) 상업화 개시 여부. 신규 제품의 매출 기여와 제조 공정 고도화 성과가 하반기 실적에 반영되는지 확인하는 지점이다.",
+    "en": "Whether commercial production of monoammonium phosphate (MAP) begins. It is the checkpoint for how new product sales and manufacturing upgrades feed into second-half results."
    }
   },
   {
    "when": {
-    "ko": "2026년 9월 이후 예정된 3공장 증설 관련 공시 시점",
-    "en": "Upcoming disclosures on the No. 3 plant expansion after September 2026"
+    "ko": "2027년 3월경",
+    "en": "Around March 2027"
    },
    "what": {
-    "ko": "과거 증권가에서 제시했던 3공장 2기 증설을 통한 전구체 복합액 캐파 확대(3만톤 목표) 일정이 실제로 유지되는지 확인이 필요하다.",
-    "en": "It is worth confirming whether the previously discussed timeline for expanding precursor mixed-solution capacity toward a 30,000-ton target through the No. 3 plant's second phase is still on track."
+    "ko": "2026 사업보고서 제출. 3분기 적자의 원인 설명, AM-X · LiM-X · BM-X 부문별 매출, 연간 영업이익률이 확인되는 자료다.",
+    "en": "Filing of the fiscal 2026 annual report. It will show the explanation of the Q3 loss, segment revenue for AM-X, LiM-X and BM-X, and the full-year operating margin."
    }
   },
   {
    "when": {
-    "ko": "1차전지 리사이클링 관련 추가 공시 시점",
-    "en": "Future disclosures on primary battery recycling"
+    "ko": "2027년 5월 15일 전후",
+    "en": "Around May 15, 2027"
    },
    "what": {
-    "ko": "국내 최초로 도전한다고 밝힌 1차전지 리사이클링 사업의 구체적 추진 일정, 투자 규모, 매출 반영 시점이 공시되는지 지켜볼 필요가 있다.",
-    "en": "It is worth watching for disclosures on the specific timeline, investment size, and revenue contribution schedule of the primary battery recycling business the company said it is pioneering domestically."
-   }
-  },
-  {
-   "when": {
-    "ko": "원료 다변화 및 해외 판로 확대 관련 후속 공시",
-    "en": "Follow-up disclosures on feedstock diversification and overseas sales expansion"
-   },
-   "what": {
-    "ko": "회사가 밝힌 해외 원료 수급과 글로벌 판로 확대 계획의 구체적 계약·MOU 체결 여부를 추적할 필요가 있다.",
-    "en": "It is worth tracking whether the company's stated plans for overseas feedstock sourcing and global sales channel expansion result in specific contracts or memoranda of understanding."
+    "ko": "2027년 1분기 분기보고서 제출. 3분기 적자 이후 흑자 흐름이 이어지는지, 영업활동 현금흐름이 회복되는지 확인하는 지점이다.",
+    "en": "Filing of the Q1 2027 quarterly report. It is the checkpoint for whether profitability returns after the Q3 2026 loss and whether operating cash flow recovers."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "새빗켐은 2022년 이후 3년 연속 순손실을 기록하며 자기자본이 줄고 부채비율이 오르는 재무적 압박을 겪었으나, 2026년 2분기 매출·영업이익·순이익이 모두 개선되며 3년 만에 분기 흑자전환을 기록했다. 반도체 재자원화(AM-X), 탄산리튬(LiM-X), 블랙매스(BM-X) 세 축으로의 포트폴리오 재편과 원료 공급 체계 전환이 개선의 배경으로 꼽힌다. 다만 최근 네 개 분기 합산 순이익은 여전히 적자이며, 4년에 걸친 손실 누적으로 형성된 재무 부담은 단기간에 해소되기 어려운 수준이다. 성일하이텍, DS단석, GS건설 등 경쟁사들의 증설이 이어지는 가운데 원료 확보 경쟁과 메탈 가격 변동이 지속적인 변수로 남아 있다. LG화학·한국전구체 중심의 장기 공급망과 MAP·1차전지 리사이클링 등 신사업 추진이 중장기 성장 스토리의 축이 되고 있으나, 이러한 계획들의 실행 속도와 재무 여력 간의 균형이 향후 실적의 방향을 가를 것으로 보인다. 투자 판단에 앞서 다가오는 분기 실적과 신사업 공시를 통해 개선의 지속성을 지속적으로 확인하는 접근이 필요하다.",
-   "en": "Sebitchem endured financial pressure from three consecutive years of net losses since 2022, with equity shrinking and the debt ratio rising, but in Q2 2026 revenue, operating profit, and net profit all improved, marking the company's first quarterly profit swing in three years. The restructuring of its portfolio around three pillars—semiconductor recycling (AM-X), lithium carbonate (LiM-X), and black mass (BM-X)—along with a shift in its feedstock supply system, are cited as behind this improvement. Still, the trailing four-quarter net result remains a loss, and the financial burden built up over four years of accumulated losses is not likely to be resolved quickly. As competitors such as SungEel HiTech, DS Dansuk, and GS E&C continue to expand capacity, competition for feedstock and metal price volatility remain persistent variables. The long-term supply chain centered on LG Chem and Korea Precursor Co., along with new initiatives such as MAP and primary battery recycling, form the core of the company's medium- to long-term growth story, but how the pace of executing these plans balances against financial capacity is likely to determine the direction of future results. Ahead of any investment decision, an approach of continuously verifying the durability of this improvement through upcoming quarterly results and new-business disclosures is warranted."
+   "ko": "새빗켐은 반도체 폐산 재자원화를 기반으로 폐배터리 재활용 사업을 넓혀 온 재자원화 기업이다. 2026년 상반기 잠정 실적은 매출 309억원, 영업이익 3.9억원으로 3년 만의 반기 영업흑자를 보여 줬다. 그러나 2026년 3분기에는 매출 103억원과 영업손실 44.9억원으로 적자가 재발했다. 2025년 연간으로는 영업손실 94.2억원과 지배주주 순손실 180억원으로 적자 폭이 커졌고, 네 개 분기 지배주주 순손실 합계는 153억원이다. 강점은 AM-X와 BM-X 등 부문의 매출 기반과 전 공정 확보에 있고, 약점은 분기 실적의 변동성과 부채비율 82.4%로 요약된다. 다음 확인 지점은 2026년 12월 4일 임시주주총회 안건, 2026년 하반기 MAP 상업화 개시, 2027년 3월경 2026 사업보고서의 3분기 원인 설명이다. 흑자가 분기 단위로 이어지는지와 재무 부담이 줄어드는지가 핵심 관전 포인트다.",
+   "en": "Sebitchem is a recycling company that has expanded from semiconductor waste-acid recycling into battery recycling. Preliminary first-half 2026 results showed revenue of KRW 30.9 billion and operating profit of KRW 390 million, the first half-year operating profit in three years. However, Q3 2026 revenue of KRW 10.3 billion and an operating loss of KRW 4.49 billion brought the losses back. For 2025, the operating loss widened to KRW 9.42 billion and the net loss attributable to controlling shareholders reached KRW 18 billion, and the four-quarter total of such losses was KRW 15.3 billion. Strengths lie in the revenue base of segments such as AM-X and BM-X and full process coverage, while weaknesses are quarterly volatility and a debt ratio of 82.4%. The next checkpoints are the December 4, 2026 shareholders meeting agenda, the start of MAP commercial production in the second half of 2026, and the explanation of the Q3 loss in the fiscal 2026 annual report around March 2027. The key questions are whether profitability continues quarter to quarter and whether the financial burden eases."
   }
  },
  "sources": [
-  "https://ssl.pstatic.net/imgstock/upload/research/company/1675638985913.pdf",
-  "https://alphasquare.co.kr/home/stock-summary?code=107600",
   "https://thevc.kr/sebitchem",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=searchInitInfo&acptNo=20250515002913&docno=",
-  "http://www.dailyinvest.kr/news/articleView.html?idxno=49433",
-  "https://m.irgo.co.kr/IR-COMP/107600/%EC%83%88%EB%B9%97%EC%BC%90-IR-PAGE",
-  "https://www.jobkorea.co.kr/recruit/co_read/c/biomost2",
+  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=636490",
   "https://www.thedailypost.kr/news/articleView.html?idxno=115010",
-  "https://www.thebell.co.kr/front/newsview.asp?key=202504231727562280102524",
-  "https://www.solartodaymag.com/news/articleView.html?idxno=12506",
-  "https://www.newspim.com/news/view/20230220001055",
-  "https://kr.investing.com/news/markets/article-835727",
-  "https://www.thelec.kr/news/articleView.html?idxno=27360",
   "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A107600",
-  "https://market.edaily.co.kr/stock/107600/",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=wMbgTlwsOKJOqb5U",
-  "https://news.infostock.co.kr/a",
-  "https://file.alphasquare.co.kr/media/pdfs/company-ir/20230408%EC%83%88%EB%B9%97%EC%BC%90_%EC%A0%84%EC%A7%80%EA%B8%89_%EC%88%98%EC%82%B0%ED%99%94%EB%A6%AC%ED%8A%AC_%ED%9A%8C%EC%88%98%EA%B8%B0%EC%88%A0_%ED%99%95%EB%B3%B4_%EC%B6%94%EC%A7%84.pdf"
+  "https://finance.eduinfom.com/2026/08/14018/",
+  "https://www.valueline.co.kr/finance/summary/107600",
+  "https://m.news.nate.com/view/20260130n26113",
+  "https://www.hankyung.com/article/202510224470a",
+  "https://news.nate.com/view/20260130n26113",
+  "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=708940",
+  "https://m.news.nate.com/view/20260303n35967",
+  "https://m.news.nate.com/view/20260122n27441",
+  "http://www.sebitchem.com/",
+  "https://sebitchem.com/index.php?bt=1&gt=cust%2Fcust01&handler=read&key=89&page=2",
+  "https://m.irgo.co.kr/IR-COMP/107600/%EC%83%88%EB%B9%97%EC%BC%90-IR-PAGE"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "107600",
  "name": "새빗켐",
  "name_en": "Sebitchem Co., LTD",
@@ -233,11 +220,11 @@
   "화학"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 07:36",
- "dataDate": "20260904",
+ "reportDate": "2026-11-18",
+ "reportTs": "2026-11-18 14:22",
+ "dataDate": "20261117",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-11-18",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -307,12 +294,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 10820350932,
-    "op": -1706691866,
-    "np_owner": -2312872727
-   },
-   {
     "q": "2025Q3",
     "rev": 7157027330,
     "op": -3136385251,
@@ -335,28 +316,39 @@
     "rev": 17378914493,
     "op": 867184755,
     "np_owner": 828014335
+   },
+   {
+    "q": "2026Q3",
+    "rev": 10281464249,
+    "op": -4491022193,
+    "np_owner": -5445304707
    }
   ],
   "valuation": {
-   "price": 15270,
-   "mcap": 0.0863,
+   "price": 9100,
+   "mcap": 0.0514,
    "shares": 5650054,
-   "total_shares": 5630054,
+   "total_shares": 5650054,
    "wavg_shares": 5472073,
    "per": null,
-   "eps": -2335,
-   "pbr": 1.8009,
-   "bps": 8479,
-   "roe_ttm": -24.6,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": -12903059730,
+   "eps": -2753,
+   "pbr": 1.2114,
+   "bps": 7512,
+   "roe_ttm": -31.6,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": -15281502478,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 1.93,
+   "eps_src": "공시",
+   "pbr_krx": 1.13,
    "bps_krx": 8056.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
-   "div": 0.0
+   "div": 0.0,
+   "hidden": {
+    "per": "loss"
+   }
   }
- }
+ },
+ "textRules": 3
 }

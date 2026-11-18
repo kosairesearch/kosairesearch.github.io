@@ -1,230 +1,209 @@
 {
  "title": {
-  "ko": "메모리컨트롤러 전환기, 적자·흑자 교차",
-  "en": "ALT: Memory-Controller Pivot Amid Swinging Profits"
+  "ko": "적자 축소 속 메모리 컨트롤러 테스트가 관건",
+  "en": "Losses Narrowing as Memory Controller Testing Scales"
  },
  "lead": {
-  "ko": "에이엘티는 비메모리 반도체 후공정 테스트 전문업체로, 메모리 컨트롤러 사업 확대 속에 분기별 적자와 흑자가 반복되며 실적 전환 초기 국면을 지나고 있다.",
-  "en": "ALT, a non-memory semiconductor back-end test specialist, is passing through an early turnaround phase marked by alternating quarterly profits and losses as its memory-controller business expands."
+  "ko": "에이엘티는 2026년 3분기 영업이익이 흑자로 돌아섰지만 2024년과 2025년에는 2년 연속 영업손실을 냈고, 메모리 컨트롤러 테스트 물량이 다음 실적 흐름을 가를 변수다.",
+  "en": "ALT returned to operating profit in the third quarter of 2026, but it posted operating losses in both 2024 and 2025, and the volume of memory controller testing is the variable that will shape its next results."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출은 483억원으로 전년 대비 늘었으나 영업손실은 지속됐다",
-   "en": "2025 consolidated revenue rose to KRW 48.4 billion, but the operating loss persisted"
+   "ko": "2025년 매출은 484억원으로 전년 대비 31.9% 늘었으나 영업손실 73.9억원으로 적자가 이어졌다.",
+   "en": "Revenue rose 31.9% year on year to KRW 48.4 billion in 2025, yet the company still recorded an operating loss of KRW 7.39 billion."
   },
   {
-   "ko": "2025년 4분기와 2026년 2분기에 영업이익이 흑자로 전환됐고, 2026년 1분기는 다시 적자를 기록했다",
-   "en": "Operating profit turned positive in 4Q25 and 2Q26, while 1Q26 reverted to a loss"
+   "ko": "2026년 3분기 영업이익은 10.8억원으로 전년 동기 대비 흑자 전환했지만, 지배주주 순이익은 2,731만원에 그쳤다.",
+   "en": "Operating profit in the third quarter of 2026 was KRW 1.08 billion, swinging to profit from a year earlier, while net income attributable to controlling shareholders was only KRW 27.31 million."
   },
   {
-   "ko": "메모리 컨트롤러 테스트 장비를 2단계에 걸쳐 증설하며 AI 데이터센터·전장용 수요에 대응 중",
-   "en": "Memory-controller test equipment is being expanded in two phases to address AI data-center and automotive demand"
+   "ko": "메모리 컨트롤러 테스트는 2026년 2월 서버·eSSD용 양산이 시작됐고, 2026년 5월 137억원 규모 장비 추가 도입이 발표됐다.",
+   "en": "Memory controller testing began mass production for server and eSSD products in February 2026, and a KRW 13.7 billion additional equipment investment was announced in May 2026."
   },
   {
-   "ko": "청주 오창테크노밸리 제2공장 신설로 생산능력 확대를 추진 중",
-   "en": "A new second plant in Cheongju's Ochang Techno Valley is expanding production capacity"
+   "ko": "부채비율은 2023년 83.9%에서 2025년 119.7%로 올랐고, 설비 투자에 따른 감가상각 부담이 이익을 누르고 있다.",
+   "en": "The debt ratio climbed from 83.9% in 2023 to 119.7% in 2025, and depreciation from equipment investment continues to weigh on earnings."
   },
   {
-   "ko": "대표이사 및 임원진의 자사주 매입이 있었다",
-   "en": "The CEO and executives have made open-market purchases of company shares"
+   "ko": "최근 네 개 분기 지배주주 순이익 합계는 24.3억원이어서, 이익 규모 대비 주가 배수는 높게 나타나고 주가순자산비율은 1배를 밑도는 구간이다.",
+   "en": "Net income attributable to controlling shareholders over the last four quarters totals KRW 2.43 billion, so the earnings multiple is high relative to profit while the price-to-book ratio sits below 1."
   }
  ],
  "business": {
-  "ko": "에이엘티는 2003년 설립돼 비메모리 반도체 후공정 테스트를 전문적으로 수행하며 2023년 코스닥시장에 상장했다. 주요 사업은 웨이퍼 테스트, 파이널 테스트, 레이저 컷 방식의 림컷(Rim-Cut), 리콘(Recon) 등이며, 테스트 대상 품목은 디스플레이구동칩(DDI), CMOS 이미지센서(CIS), 전력관리반도체(PMIC), 마이크로컨트롤러(MCU), 메모리 컨트롤러(M/C) 등 비메모리 고난이도 제품이 중심이다. 종속회사 에이지피는 세라믹 기판 및 PCB 기판을 이용해 CCTV·차량용 등에 쓰이는 CIS를 패키징하는 사업을 영위한다. 회사는 국내에서 유일하게 초박막 웨이퍼의 테두리를 레이저로 절단하는 자동화 단일 공정 기술인 '림컷'을 보유하고 있으며, 기존 블레이드 방식 대비 높은 수율을 구현한다고 알려져 있다. 최근에는 CIS와 DDI 중심 사업에서 시스템온칩(SoC), 메모리 컨트롤러 등 고사양 비메모리 제품으로 영역을 확대하고 있으며, 웨이퍼 테스트 부문에서 메모리 컨트롤러 테스트 아이템 추가와 SoC·고전력 반도체 제품 확대가 매출 증가를 이끌고 있다. DDI 물량은 주로 스마트폰에 납품되는 구조여서 휴대폰 신모델 출시 시기에 따라 매출이 좌우되는 경향이 있으며, 이를 완충하기 위해 메모리 컨트롤러 부문에 투자를 확대해왔다. 아울러 실리콘 카바이드(SiC) 전력반도체 후공정 다이싱 기술 특허를 출원하고 글로벌 고객사와 관련 기술협력을 추진하는 등 차세대 전력반도체 테스트 시장으로 사업영역을 넓히고 있다.",
-  "en": "ALT was founded in 2003 as a specialist in non-memory semiconductor back-end testing and listed on KOSDAQ in 2023. Its core operations are wafer test, final test, laser-based Rim-Cut dicing, and Recon, covering high-difficulty non-memory products such as display driver ICs (DDI), CMOS image sensors (CIS), power management ICs (PMIC), microcontrollers (MCU), and memory controllers (M/C). Its subsidiary AGP packages CIS components used in CCTV and automotive applications using ceramic and PCB substrates. The company holds a domestically unique automated single-process laser-cutting technology called Rim-Cut for trimming ultra-thin wafer edges, which is said to deliver higher yields than the conventional blade method. ALT has recently been expanding from its CIS- and DDI-centered business into higher-spec non-memory products such as system-on-chip (SoC) and memory controllers, with the addition of memory-controller test items and expansion of SoC and high-power semiconductor products driving revenue growth in the wafer test segment. Because DDI volumes are mostly tied to smartphone shipments, revenue tends to fluctuate with new handset launch timing, prompting the company to expand investment in memory controllers as a buffer. ALT has also filed a patent for SiC power-semiconductor back-end dicing technology and is pursuing technology collaboration with a global customer, extending its footprint into next-generation power-semiconductor testing."
+  "ko": "에이엘티는 2003년 설립된 비메모리 반도체 후공정 전문기업으로, 웨이퍼 테스트와 패키징을 주력으로 한다. 2023년 기준 매출 비중은 Wafer Test 80.6%, 림컷(Rim-Cut) 9.8%, 반도체 패키징 9.3%였고 COG와 파이널 테스트는 각각 0.2%, 0.1%에 머물렀다. 주요 테스트 품목은 디스플레이 구동칩(DDI), 이미지센서(CIS), 전력관리반도체(PMIC), 마이크로컨트롤러(MCU), M/C 등 시스템 반도체다. 종속회사 에이지피가 CIS 패키징을 맡아 CIS 웨이퍼 테스트 이후 리컨스트럭트(Reconstruct) 공정까지 한 흐름으로 수행하는 구조다. 2026년 2분기 매출 기준으로 본사 사업부문이 86%, 종속회사가 14%를 차지했다. 2025년 4분기 매출 151억원 중 테스트 매출은 127억원, 패키징 매출은 18억원, 가공 매출은 5억원이었다. 회사는 고사양 비메모리 제품 비중을 넓히는 방향을 밝혔다. 메모리 컨트롤러 테스트는 2026년 2월 서버와 eSSD용 제품 양산이 시작된 신사업이다. 고객 측면에서는 삼성전자와 SK하이닉스를 모두 고객사로 두고 있다는 보도가 있고, MCU 분야에서는 국내 주요 MCU 업체의 웨이퍼 테스트를 맡는다는 2024년 증권사 분석이 있다. 임직원은 2026년 8월 기준 150명 규모다.",
+  "en": "ALT is a non-memory semiconductor back-end specialist founded in 2003, focused on wafer test and packaging. In 2023, wafer test accounted for 80.6% of revenue, Rim-Cut for 9.8% and semiconductor packaging for 9.3%, with COG and final test at 0.2% and 0.1%. Its main test products span display driver ICs, image sensors, power management ICs, microcontrollers and M/C test. A CIS packaging subsidiary runs the reconstruction step that follows CIS wafer testing, giving the company an integrated in-house process. By revenue in the second quarter of 2026, the parent's business segment made up 86% and the subsidiary 14%. Within fourth-quarter 2025 revenue of KRW 15.1 billion, test revenue was KRW 12.7 billion, packaging KRW 1.8 billion and processing KRW 0.5 billion. The company has said it will keep expanding its share of high-spec non-memory products. Memory controller testing is a newer business whose mass production for server and eSSD products began in February 2026. Reports state that Samsung Electronics and SK hynix are both customers, and a 2024 brokerage analysis said the company holds exclusive wafer test work for a major Korean MCU maker. The company had about 150 employees as of August 2026."
  },
  "earnings": {
-  "ko": "연간 실적을 보면 2022년 매출 443억원, 영업이익 80억원(영업이익률 18.1%)으로 견조했으나, 2023년에는 매출 477억원, 영업이익 49억원(이익률 10.3%)으로 이익률이 축소됐다. 2024년에는 매출이 367억원으로 전년 대비 크게 줄고 영업손실 122억원(이익률 -33.3%)을 기록하며 적자 전환했고, 지배주주 순손실도 93억원에 달했다. 2025년에는 매출이 484억원으로 다시 늘었지만 영업손실 74억원(이익률 -15.3%)으로 적자가 이어졌으며, 지배주주 순손실은 90억원이었다. 분기별로 보면 2025년 2분기(-22억원)와 3분기(-28억원) 영업손실이 이어지다 4분기에는 매출 151억원에 영업이익 8억원으로 흑자 전환했으나, 2026년 1분기에 다시 매출 138억원, 영업손실 9억원으로 적자를 기록했고, 2026년 2분기에는 매출 164억원, 영업이익 21억원으로 재차 흑자로 돌아섰다. 이처럼 최근 5개 분기 동안 흑자와 적자가 교차하는 모습을 보였으며, 최근 4개 분기(2025년 3분기~2026년 2분기) 누적 매출은 약 573억원, 이 기간 지배주주 순손익은 약 -14억원으로 완전한 흑자 안정화에는 아직 이르지 못한 상태다. 다만 영업활동현금흐름(CFO)은 2022년 158억원, 2023년 150억원, 2024년 72억원, 2025년 130억원으로 회계상 순손실이 이어진 해에도 매년 양(+)의 값을 유지해, 감가상각 등 비현금성 비용이 손익에 상당한 영향을 미치고 있음을 보여준다. 지배주주 자본총계는 2023년 상장 자금 유입으로 1,071억원까지 늘었다가 이후 누적 손실로 2025년 928억원까지 줄어드는 흐름을 보였다.",
-  "en": "Annual results show revenue of KRW 44.3 billion and operating profit of KRW 8.0 billion (18.1% margin) in 2022, followed by revenue of KRW 47.7 billion and a narrower operating profit of KRW 4.9 billion (10.3% margin) in 2023. In 2024, revenue fell sharply to KRW 36.7 billion and the company swung to an operating loss of KRW 12.2 billion (-33.3% margin), with an owners' net loss of KRW 9.3 billion. In 2025, revenue recovered to KRW 48.4 billion but the operating loss continued at KRW 7.4 billion (-15.3% margin), with an owners' net loss of KRW 9.0 billion. On a quarterly basis, operating losses of KRW 2.2 billion in 2Q25 and KRW 2.8 billion in 3Q25 were followed by a turn to an operating profit of KRW 0.8 billion on revenue of KRW 15.1 billion in 4Q25, before reverting to a loss of KRW 0.9 billion on revenue of KRW 13.8 billion in 1Q26, and then swinging back to a profit of KRW 2.1 billion on revenue of KRW 16.4 billion in 2Q26. Profitability has thus alternated between quarters over the past five reporting periods; over the trailing four quarters (3Q25-2Q26), cumulative revenue was roughly KRW 57.3 billion while the owners' net result remained slightly negative at about KRW -1.4 billion, indicating the turnaround has not yet fully stabilized. Operating cash flow, however, stayed positive every year even as accounting losses persisted—KRW 15.8 billion in 2022, KRW 15.0 billion in 2023, KRW 7.2 billion in 2024, and KRW 13.0 billion in 2025—suggesting non-cash charges such as depreciation weigh heavily on the reported bottom line. Owners' equity rose to KRW 107.1 billion in 2023 on IPO proceeds before declining to KRW 92.8 billion by 2025 as accumulated losses ate into capital."
+  "ko": "연간 실적은 매출 회복과 수익성 악화가 엇갈린 흐름이었다. 매출은 2022년 443억원에서 2023년 477억원(전년 대비 7.6% 증가)으로 늘었지만 2024년에는 367억원(전년 대비 23.1% 감소)으로 줄었고, 2025년에는 484억원(전년 대비 31.9% 증가)으로 회복해 2022~2025년 중 가장 큰 해가 됐다. 영업이익률은 2022년 18.1%, 2023년 10.3%, 2024년 -33.3%, 2025년 -15.3%였다. 영업이익은 2023년 49억원(전년 대비 39.0% 감소)에서 2024년 영업손실 122억원으로 적자 전환했고, 2025년에는 영업손실 73.9억원으로 손실이 줄었다. 지배주주 순이익은 2022년 148억원 이후 2023년 51.9억원(전년 대비 64.9% 감소)을 거쳐 2024년 지배주주 순손실 92.8억원, 2025년 지배주주 순손실 89.7억원으로 이어졌다. 당기순이익(비지배지분 포함)은 2025년 순손실 88.7억원으로 지배주주 기준과 다른 값이다. 영업활동 현금흐름은 2024년 71.6억원으로 줄었다가 2025년 130억원으로 회복됐다. 분기로 보면 2025년 3분기 영업손실 28.4억원에서 4분기 영업이익 8.3억원으로 흑자 전환했고, 2026년 1분기에는 영업손실 8.6억원으로 다시 적자로 돌아섰다. 이후 2026년 2분기 영업이익 21.3억원, 3분기 영업이익 10.8억원을 기록했다. 다만 지배주주 순이익은 2026년 3분기 2,731만원으로 전 분기 대비 98.1% 줄었다. 회사는 설비 확대에 따른 고정비 부담이 연간 적자로 이어졌다고 설명했다. 2025년 말 자본총계는 935억원, 부채총계는 1,119억원, 부채비율은 119.7%다.",
+  "en": "Annual results showed revenue recovering while profitability deteriorated. Revenue went from KRW 44.3 billion in 2022 to KRW 47.7 billion in 2023, up 7.6% year on year, fell to KRW 36.7 billion in 2024, down 23.1%, and then rose to KRW 48.4 billion in 2025, up 31.9%, making 2025 the largest year in the 2022 to 2025 period. Operating margin was 18.1% in 2022, 10.3% in 2023, -33.3% in 2024 and -15.3% in 2025. Operating profit fell 39.0% to KRW 4.9 billion in 2023 and turned into an operating loss of KRW 12.2 billion in 2024, before narrowing to an operating loss of KRW 7.39 billion in 2025. Net income attributable to controlling shareholders went from KRW 14.8 billion in 2022 to KRW 5.19 billion in 2023, down 64.9%, then to a net loss of KRW 9.28 billion in 2024 and KRW 8.97 billion in 2025. Net income including non-controlling interests was a net loss of KRW 8.87 billion in 2025, a different figure from the controlling-shareholder measure. Operating cash flow dropped to KRW 7.16 billion in 2024 and recovered to KRW 13 billion in 2025. On a quarterly basis, the operating loss of KRW 2.84 billion in the third quarter of 2025 became operating profit of KRW 834 million in the fourth quarter, then an operating loss of KRW 858 million in the first quarter of 2026, followed by operating profit of KRW 2.13 billion in the second quarter and KRW 1.08 billion in the third quarter. Net income attributable to controlling shareholders, however, fell to KRW 27.31 million in the third quarter of 2026, down 98.1% from the prior quarter. The company has described the fixed-cost burden from capacity expansion as the driver of annual losses. At the end of 2025, total equity was KRW 93.5 billion, total liabilities were KRW 111.9 billion and the debt ratio was 119.7%."
  },
  "industry": {
-  "ko": "반도체 후공정 테스트 산업은 미세화 공정과 첨단 패키징 기술 도입으로 신뢰성 요구가 높아지며 성장하고 있는 것으로 평가된다. 에이엘티가 주력하는 비메모리 후공정 테스트 시장은 스마트폰 등 모바일 기기 출하 사이클과 밀접하게 연동돼 왔으며, 이로 인해 DDI 매출은 신모델 출시 시점에 따라 변동성이 큰 편이다. 최근에는 AI 데이터센터와 전장용 반도체 수요가 확대되면서 메모리 컨트롤러, 특히 서버·eSSD용 컨트롤러 테스트 수요가 새로운 성장축으로 부각되고 있다. 고전력·고신뢰성 환경에서 쓰이는 실리콘 카바이드(SiC) 전력반도체 역시 AI·전기차·산업용 전력 장비 수요 확대와 맞물려 관련 테스트 기술에 대한 관심이 커지고 있다. 경쟁 구도 측면에서 국내 반도체 후공정 테스트 업체로는 두산테스나, 네패스, 에이엘티 외에도 다양한 소부장 업체들이 경쟁하고 있으며, 에이엘티는 림컷 등 특정 공정에서 국내 유일의 기술 보유를 강점으로 내세우고 있다. 다만 회사 규모가 상대적으로 작고 고정비 비중이 높아 매출 변동에 따른 이익 변동성이 경쟁사 대비 크게 나타나는 특징이 있다.",
-  "en": "The semiconductor back-end test industry is generally described as growing amid rising reliability requirements tied to process miniaturization and advanced packaging adoption. The non-memory back-end test market that ALT focuses on has historically been closely linked to mobile device shipment cycles, making DDI revenue particularly sensitive to the timing of new smartphone model launches. More recently, expanding AI data-center and automotive semiconductor demand has elevated memory-controller testing—particularly for server and eSSD controllers—as a new growth pillar. Silicon carbide (SiC) power semiconductors, used in high-power, high-reliability environments, are also drawing greater attention for related test technology amid growing AI, electric-vehicle, and industrial power-equipment demand. On the competitive front, domestic back-end test players include Dosun Tesna and Nepes alongside various component and equipment suppliers, and ALT positions its Rim-Cut process as a domestically unique technological strength. However, the company's relatively small scale and high fixed-cost base mean earnings volatility tends to be larger relative to peers when revenue swings."
+  "ko": "비메모리 반도체는 인공지능, 자율주행, 가전 등 산업 전반의 데이터 처리 효율을 결정하는 핵심 부품으로 설명된다. 회사는 AI, 데이터센터, 전장용 반도체 등 고성장 산업군이 확대되면서 고사양 반도체 테스트 수요가 계속 늘 것으로 보고 있다. 사이클 측면에서는 2023년 7월 상장 이후 반도체 업황 부진으로 어려움을 겪었다는 2024년 보도가 있다. 이후 2026년 들어 메모리 컨트롤러 테스트가 양산 단계에 진입하면서 매출 구성이 바뀌고 있다. 2023년까지 주력이던 DDI는 모바일 수요에 크게 의존하는 품목으로, 모바일 세트 수요 변화에 따라 물량이 흔들릴 수 있다. 메모리 컨트롤러는 서버와 eSSD 등 데이터센터 쪽으로 수요처가 옮겨 가고 있어 품목 구조가 달라지는 단계다. 경쟁 측면에서 에이엘티는 DDI, CIS, PMIC, MCU 등 여러 시스템 반도체 테스트를 한 회사에서 처리하는 역량을 강점으로 내세운다. 같은 후공정 테스트 영역의 다른 상장사들과 비교하면 매출 규모는 작은 편이며, 고객 집중도와 설비 가동률이 수익성 차이를 만드는 요인이다. 회사 관계자는 고객사의 메모리 컨트롤러 수요에 맞춰 기존 생산능력 부족을 해소하겠다고 밝혔다.",
+  "en": "Non-memory chips are described as core components that determine data-processing efficiency across AI, autonomous driving and consumer electronics. The company says demand for high-spec chip testing will keep rising as high-growth sectors such as AI, data centers and automotive semiconductors expand. On the cycle, a 2024 report said the company struggled with a semiconductor downturn after its July 2023 listing. Memory controller testing entered mass production in 2026, changing the revenue mix. Display driver IC testing, once the core business, depends heavily on mobile demand, so volumes can swing with handset cycles. Memory controller demand is shifting toward data-center products such as server and eSSD, which is changing the product structure. Competitively, the company promotes its ability to handle several types of system chip testing, including DDI, CIS, PMIC and MCU, within one company. Compared with other listed back-end test companies, its revenue scale is small, and customer concentration and equipment utilization are the factors most likely to explain differences in profitability. A company official said the added capacity is meant to ease a shortage of existing production capacity as customers expand memory controller demand."
  },
  "outlook": {
-  "ko": "회사는 메모리 컨트롤러 관련 고객사의 투자 확대와 테스트 수요 증가에 대응해 설비 투자를 단계적으로 진행하고 있다. 올해 2월 1차 투자분 장비는 5월 중 셋업을 완료해 가동에 들어갔고, 하반기에는 약 137억원 규모의 2차 투자를 통해 추가 장비를 도입해 가동할 계획이다. 이와 함께 회사는 2월부터 서버 및 eSSD용 메모리 컨트롤러 제품 양산을 시작하며 관련 테스트 수요가 본격 확대되고 있다고 밝혔다. 청주 오창테크노밸리 내 제2공장 신설을 통해 기존 생산능력에서 상당한 규모의 캐파를 추가 확보하는 증설 계획도 진행 중인 것으로 알려져 있다. 회사는 SiC 전력반도체용 신규 제품 개발을 위해 글로벌 고객사와 기술협력을 추진 중이며, 고신뢰성·고전압 환경에서의 테스트 기술 고도화를 핵심 과제로 삼고 있다. 증권가에서는 2026년 2월 시점 보고서에서 메모리 컨트롤러 매출 확대와 데이터센터향 매출 가시화를 실적 개선의 근거로 제시한 바 있으나, 이는 발표 시점 기준의 전망으로 이후 실제 분기 실적과의 부합 여부는 매 분기 확인이 필요하다. DDI 부문에서는 북미 및 국내 고객사향 물량을 기반으로 안정적 매출을 이어가려는 계획이며, 과거 특정 플래그십 모델 테스트 진입에 실패한 경험을 딛고 재진입을 모색해온 것으로 보도된 바 있다.",
-  "en": "The company is proceeding with phased capital investment to meet expanding customer demand and test volume for memory controllers. Equipment from the first-phase investment made in February was set up and brought online by May, while a second-phase investment of roughly KRW 13.7 billion is planned for equipment introduction and operation in the second half of the year. The company has also stated it began mass production of server and eSSD memory-controller products from February, with related test demand expanding in earnest. A second plant under construction in Cheongju's Ochang Techno Valley is reportedly adding substantial capacity on top of existing production capability. ALT is pursuing technology collaboration with a global customer to develop new SiC power-semiconductor products, with upgrading test technology for high-reliability, high-voltage environments as a core task. Sell-side commentary from a report published in February 2026 cited expanding memory-controller revenue and emerging data-center exposure as grounds for an earnings recovery, though that view reflects the perspective at the time of publication and needs to be checked against each subsequent quarter's actual results. In the DDI segment, the company aims to sustain stable revenue based on North American and domestic customer volumes, and reports indicate it has been seeking re-entry into a flagship smartphone model's test qualification after previously failing to secure that business."
+  "ko": "회사는 2026년 2월 메모리 컨트롤러 제품의 서버 및 eSSD용 양산을 시작했다고 밝혔다. 2026년 5월 11일에는 고객사의 메모리 컨트롤러 수요 확대로 생긴 생산능력 부족을 해소하기 위해 137억원 규모의 테스트 장비를 추가 도입하는 2차 투자를 발표했다. 주요 타깃 시장은 AI 데이터센터와 전장용 반도체 부문이다. 회사는 2026년 2월 보고서에서 고사양 비메모리 제품 비중을 넓혀 실적 개선 추세를 이어갈 수 있을 것으로 기대한다고 밝혔다. 같은 보고서에서 설비 투자에 따른 비용 부담은 지속된다고 설명했다. 2025년 4분기 영업이익 흑자 전환과 2026년 2분기 영업이익 21.3억원은 테스트 매출 회복이 본격화된 결과로 설명됐다. 확인해야 할 지점은 추가 도입 장비가 가동되면서 메모리 컨트롤러 매출 비중이 얼마나 커지는지다. 또 설비 증가에 따른 감가상각이 매출 증가분을 얼마나 상쇄하는지도 중요하다. 2026년 사업보고서에서 2026년 4분기와 연간 영업이익률이 확정되면, 2024년과 2025년 이어진 적자 흐름이 끊기는지 판단할 수 있다.",
+  "en": "The company said in February 2026 that it had started mass production of memory controller products for server and eSSD use. On 11 May 2026 it announced a second investment, adding test equipment worth KRW 13.7 billion to relieve a shortage of production capacity caused by customers' rising memory controller demand. Its main target markets are AI data centers and automotive semiconductors. In its February 2026 report, the company said it expects its push to widen the share of high-spec non-memory products could keep the earnings recovery trend going. The same report said cost pressure from equipment investment would continue. The return to fourth-quarter 2025 operating profit and the KRW 2.13 billion operating profit in the second quarter of 2026 were attributed to a full recovery in test revenue. The points to verify are how large the memory controller share of revenue becomes once the added equipment runs, and how much depreciation from the expanded capacity offsets the extra sales. Once the 2026 annual report fixes the fourth-quarter and full-year operating margin, it will be possible to judge whether the losses recorded in 2024 and 2025 have ended."
  },
  "valuation_comment": {
-  "ko": "회사는 2024~2025년 연속 순손실을 기록했고 최근 4개 분기 기준으로도 지배주주 순이익이 소폭 적자 상태에 머물러 있어, 주가수익비율(PER)과 같은 이익 기반 지표는 산출이 어려운 구간에 놓여 있다. 주가순자산비율(PBR)은 순자산가치 근방에서 형성돼 있어 순자산 대비 큰 폭의 프리미엄이나 할인 없이 거래되는 모습을 보인다. 회사는 현재 배당을 지급하지 않고 있어, 배당 매력을 기대하기보다는 실적 턴어라운드의 지속성 여부가 시장의 관심사로 남아 있다. 과거 상장 이후 실적이 흑자에서 대규모 적자로, 다시 부분적 흑자 전환으로 이어진 만큼, 향후 밸류에이션은 분기별 흑자 지속 여부와 메모리 컨트롤러·데이터센터향 매출 비중 확대 속도에 따라 좌우될 가능성이 있다. 200억원 규모의 전환사채가 발행돼 있어 향후 조기상환청구권 행사나 주식 전환에 따른 자본구조 변화 가능성도 함께 살펴볼 필요가 있다.",
-  "en": "Having posted net losses in both 2024 and 2025, and with owners' net income still slightly negative on a trailing four-quarter basis, the company sits in a range where earnings-based metrics such as the price-to-earnings ratio are difficult to compute. Its price-to-book ratio trades near net asset value, without a large premium or discount relative to book value. The company currently pays no dividend, so the market's focus rests less on dividend appeal and more on whether the recent earnings turnaround can be sustained. Given that post-listing results moved from profit to a large loss and then to partial profitability, future valuation may hinge on whether quarterly profitability persists and on how quickly the memory-controller and data-center revenue mix expands. A KRW 20 billion convertible bond is outstanding, so potential changes to the capital structure from an early-redemption exercise or conversion into shares also warrant monitoring."
+  "ko": "주가순자산비율은 1배를 밑도는 구간으로, 주당순자산보다 낮은 가격에서 거래되는 상태다. 자본총계 935억원 가운데 지배주주 지분이 928억원을 차지해 자본 구성에서 비지배지분의 비중은 작다. 이익 기준 배수는 최근 네 개 분기 지배주주 순이익 합계 24.3억원과 비교하면 높게 나타나는 구간이다. 이익 규모가 작아 분기 손익이 조금만 바뀌어도 배수가 크게 움직이는 구조다. 2024년 증권사 추정에서도 2023년 기준 배수는 높은 수준으로 제시됐다. 과거 실적이 적자에서 흑자로 전환되는 방향으로 움직이면서 배수 계산의 분모가 회복되고 있다는 점이 특징이다. 배당을 통한 주주환원은 현재 제한적인 상태다. 밸류에이션을 판단하려면 2026년 연간 실적이 확정돼 이익 기반이 얼마나 넓어졌는지를 함께 보아야 한다.",
+  "en": "The price-to-book ratio sits below 1, meaning the shares trade under book value per share. Of total equity of KRW 93.5 billion, KRW 92.8 billion belongs to controlling shareholders, so non-controlling interests are a small part of the capital base. Measured against net income attributable to controlling shareholders over the last four quarters, which totals KRW 2.43 billion, the earnings-based multiple appears high. Because profit is small, the multiple moves sharply with changes in quarterly results. A 2024 brokerage estimate also showed a high multiple on 2023 results. The recovery from losses toward profit is gradually enlarging the earnings base behind the multiple. Shareholder returns through dividends are currently limited. Reading the valuation also requires checking how much the earnings base has widened once full-year 2026 results are fixed."
  },
  "bull": [
   {
    "title": {
-    "ko": "메모리 컨트롤러 중심 사업 구조 전환",
-    "en": "Pivot Toward a Memory-Controller-Centered Business"
+    "ko": "메모리 컨트롤러 테스트 확대",
+    "en": "Expanding memory controller testing"
    },
    "body": {
-    "ko": "회사는 2월부터 서버 및 eSSD용 메모리 컨트롤러 양산을 시작했으며, 1·2차에 걸친 설비투자로 관련 테스트 수요에 대응하고 있다. 이는 기존 모바일용 DDI에 편중된 매출 구조에서 데이터센터·전장용 수요로 다변화하려는 시도로 해석된다. 2025년 4분기와 2026년 2분기의 영업이익 흑자 전환은 이러한 사업 다변화가 일정 부분 성과로 연결되고 있음을 보여준다.",
-    "en": "The company began mass-producing server and eSSD memory controllers from February and is investing in equipment across two phases to meet related test demand. This represents an attempt to diversify away from a mobile DDI-centric revenue base toward data-center and automotive demand. The operating profit turnarounds in 4Q25 and 2Q26 suggest this diversification is beginning to translate into results."
+    "ko": "메모리 컨트롤러 테스트는 2026년 2월 서버와 eSSD용 양산이 시작됐고, 2026년 5월에는 137억원 규모 장비 추가 도입이 발표됐다. 회사는 주요 타깃을 AI 데이터센터와 전장용 반도체로 제시하고 있다. 고사양 비메모리 테스트 수요가 늘면 매출 구성이 달라질 여지가 있다는 점이 강세 근거다.",
+    "en": "Memory controller testing began mass production for server and eSSD products in February 2026, and in May 2026 the company announced added equipment worth KRW 13.7 billion. It names AI data centers and automotive semiconductors as its main targets. If demand for high-spec non-memory testing grows, the revenue mix could shift, which is the core of the bullish case."
    }
   },
   {
    "title": {
-    "ko": "생산능력 확충을 통한 대응력 강화",
-    "en": "Capacity Expansion Strengthening Response Capability"
+    "ko": "분기 흑자 흐름",
+    "en": "Quarterly profit trend"
    },
    "body": {
-    "ko": "청주 오창테크노밸리 내 제2공장 신설과 메모리 컨트롤러 장비 2차 증설이 진행되고 있어, 고객사의 추가 물량 요청에 대응할 수 있는 캐파가 확대되고 있다. 특히 하반기 137억원 규모의 장비 투자는 AI 데이터센터, 전장용 반도체 수요에 대응하기 위한 것으로 알려졌다. 이러한 투자가 가동률 상승으로 이어질 경우 고정비 부담 완화에 기여할 여지가 있다.",
-    "en": "A new second plant in Cheongju's Ochang Techno Valley and a second phase of memory-controller equipment expansion are underway, increasing capacity to respond to additional customer volume requests. In particular, the roughly KRW 13.7 billion equipment investment planned for the second half is reportedly aimed at meeting AI data-center and automotive semiconductor demand. If this investment translates into higher utilization, it could help ease the fixed-cost burden."
+    "ko": "2025년 4분기 영업이익은 8.3억원으로 흑자 전환했고, 2026년 2분기 영업이익은 21.3억원이었다. 2026년 3분기 영업이익은 10.8억원으로 전년 동기 영업손실에서 흑자 전환했다. 같은 기간 매출은 151억원, 164억원, 157억원으로 높은 수준을 유지했다.",
+    "en": "Operating profit turned positive at KRW 834 million in the fourth quarter of 2025, reached KRW 2.13 billion in the second quarter of 2026, and was KRW 1.08 billion in the third quarter, a swing from the prior-year operating loss. Revenue over the same stretch held at levels of KRW 15.1 billion, KRW 16.4 billion and KRW 15.7 billion."
    }
   },
   {
    "title": {
-    "ko": "경영진의 자사주 매입",
-    "en": "Insider Share Purchases"
+    "ko": "자본 대비 낮은 주가 수준",
+    "en": "Shares below book value"
    },
    "body": {
-    "ko": "대표이사 및 주요 임원진 다수가 최근 장내에서 자사주를 매입한 사실이 공시를 통해 확인됐다. 회사 측은 이를 기술 개발 중심의 중장기 성장 전략에 대한 경영진의 의지를 보여주는 조치라고 설명했다. 다만 이는 경영진의 판단을 보여주는 사실일 뿐, 주가의 향후 방향을 보장하는 신호로 해석되지는 않는다.",
-    "en": "Regulatory filings confirmed that the CEO and several senior executives recently purchased shares of the company on the open market. The company described this as a demonstration of management's commitment to a technology-driven, long-term growth strategy. This is a factual disclosure of management's own actions, however, and should not be read as a guarantee of future share price direction."
+    "ko": "주가순자산비율은 1배를 밑돌아 주당순자산보다 낮은 가격에서 거래된다. 2025년 영업활동 현금흐름은 130억원으로 2024년 71.6억원에서 회복됐다. 적자 기간에도 현금 창출이 이어졌다는 점이 재무 체력의 근거로 거론된다.",
+    "en": "The price-to-book ratio is below 1, so the shares trade under book value per share. Operating cash flow recovered to KRW 13 billion in 2025 from KRW 7.16 billion in 2024. Cash generation continued through the loss-making period, which is cited as evidence of financial resilience."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "실적 턴어라운드의 불안정성",
-    "en": "Instability of the Earnings Turnaround"
+    "ko": "2년 연속 적자와 낮은 이익 기반",
+    "en": "Two straight years of losses and a thin earnings base"
    },
    "body": {
-    "ko": "2025년 4분기와 2026년 2분기에 영업이익이 흑자로 전환됐지만, 그 사이인 2026년 1분기에는 다시 적자로 돌아갔다. 최근 4개 분기 누적으로도 지배주주 순이익은 여전히 소폭 적자 상태에 머물러 있어, 완전한 흑자 안정화 여부는 추가 분기 실적으로 확인해야 하는 상황이다. 고정비 비중이 높은 사업 구조상 매출 변동에 따른 이익 변동성이 크게 나타난다.",
-    "en": "While operating profit turned positive in 4Q25 and 2Q26, the intervening 1Q26 reverted to a loss. Even on a trailing four-quarter basis, owners' net income remains slightly negative, meaning whether the turnaround has fully stabilized will need to be confirmed through further quarterly results. Given the high fixed-cost nature of the business, earnings volatility tends to be pronounced relative to revenue swings."
+    "ko": "지배주주 순손실은 2024년 92.8억원, 2025년 89.7억원으로 2년 연속 이어졌다. 최근 네 개 분기 지배주주 순이익 합계는 24.3억원에 불과하다. 2026년 3분기 지배주주 순이익은 2,731만원으로 전 분기 대비 98.1% 줄었다.",
+    "en": "Net losses attributable to controlling shareholders were KRW 9.28 billion in 2024 and KRW 8.97 billion in 2025, two consecutive years. Net income attributable to controlling shareholders over the last four quarters totals only KRW 2.43 billion. In the third quarter of 2026 it fell to KRW 27.31 million, down 98.1% from the prior quarter."
    }
   },
   {
    "title": {
-    "ko": "모바일 고객 의존과 계절성",
-    "en": "Mobile Customer Dependence and Seasonality"
+    "ko": "부채 증가와 고정비 부담",
+    "en": "Rising debt and fixed-cost pressure"
    },
    "body": {
-    "ko": "주력 사업인 DDI 테스트는 대부분 스마트폰으로 납품돼, 휴대폰 신모델 출시 시기에 따라 매출이 크게 좌우되는 구조다. 2023년에는 특정 플래그십 모델 테스트 진입에 실패한 사례가 있었던 것으로 보도됐다. 이는 특정 고객·모델 의존도가 높은 사업 구조의 취약성을 보여준다.",
-    "en": "The company's core DDI test business mostly serves smartphones, making revenue heavily dependent on the timing of new handset model launches. Reports have noted a case in 2023 in which the company failed to secure test qualification for a particular flagship model. This illustrates the vulnerability inherent in a business structure with high dependence on specific customers and models."
+    "ko": "부채비율은 2023년 83.9%에서 2025년 119.7%로 올랐고, 2025년 말 부채총계는 1,119억원이다. 설비 투자에 따른 감가상각비 등 고정비가 실적을 누르는 요인으로 회사 스스로 설명했다. 2026년 1분기에는 매출 138억원에도 영업손실 8.6억원으로 다시 적자 전환했다.",
+    "en": "The debt ratio climbed from 83.9% in 2023 to 119.7% in 2025, and total liabilities at the end of 2025 were KRW 111.9 billion. The company itself has pointed to fixed costs such as depreciation from equipment investment as a drag on results. In the first quarter of 2026, despite revenue of KRW 13.8 billion, the company slipped back into an operating loss of KRW 858 million."
    }
   },
   {
    "title": {
-    "ko": "신사업 매출 기여의 검증 필요",
-    "en": "New-Business Revenue Contribution Still Needs Validation"
+    "ko": "품목·고객 집중",
+    "en": "Concentration in products and customers"
    },
    "body": {
-    "ko": "메모리 컨트롤러, SiC 전력반도체 등 신사업은 아직 초기 단계로, 실제 매출 비중이 회사 목표대로 확대될지는 향후 분기 실적으로 검증이 필요하다. 설비 투자에 따른 감가상각과 고정비 증가가 선행되는 반면 매출 기여는 후행하는 구조여서, 투자 회수 시점까지 수익성 부담이 이어질 가능성이 있다.",
-    "en": "New businesses such as memory controllers and SiC power semiconductors are still at an early stage, and whether their actual revenue contribution expands to the company's targeted levels will need to be validated through future quarterly results. Because depreciation and fixed costs from equipment investment tend to precede revenue contribution, profitability pressure may persist until the investment payback period is reached."
+    "ko": "2024년 증권사 자료에서는 2분기 기준 DDI 매출 비중이 29.38%, M/C가 25.32%로 집계됐다. DDI는 모바일 수요에 의존하는 품목이어서 세트 업황 변화가 실적에 바로 반영될 수 있다. 메모리 컨트롤러 비중이 커지기 전까지 기존 품목의 변동성이 실적을 좌우하는 구조다.",
+    "en": "A 2024 brokerage report put DDI at 29.38% and M/C at 25.32% of wafer test revenue in the second quarter. DDI depends on mobile demand, so changes in handset cycles can pass through to results quickly. Until memory controller testing becomes a larger share, volatility in existing products will continue to drive earnings."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "재무구조 리스크",
-    "en": "Financial Structure Risk"
+    "ko": "재무·자금 조달",
+    "en": "Financing and funding"
    },
    "body": {
-    "ko": "2025년 부채비율은 119.7%로 2023년(83.9%) 대비 높아진 수준이며, 누적 손실로 지배주주 자본총계는 2023년 1,071억원에서 2025년 928억원으로 줄었다. 설비 투자를 위한 자금 조달이 계속되는 가운데, 재무 건전성 지표의 추가 변동 여부를 지켜볼 필요가 있다.",
-    "en": "The 2025 debt ratio of 119.7% is higher than the 83.9% recorded in 2023, and owners' equity declined from KRW 107.1 billion in 2023 to KRW 92.8 billion in 2025 as losses accumulated. With financing for equipment investment continuing, further shifts in financial soundness indicators warrant monitoring."
+    "ko": "부채비율이 119.7%까지 올랐고 전환사채도 여러 건 발행된 상태다. 설비 투자는 차입과 자기자본으로 함께 조달되는 만큼, 영업손익이 흑자로 돌아서지 않으면 상환 부담이 커질 수 있다. 2026년 추가 장비 도입 규모가 큰 만큼 자금 계획과 이익 회복 속도를 함께 봐야 한다.",
+    "en": "The debt ratio rose to 119.7%, and the company has several convertible bond issues outstanding. Because equipment investment is funded through borrowing and equity together, repayment pressure could rise if operating results do not stay in the black. Given the size of the added equipment, funding plans and the pace of earnings recovery need to be read together."
    }
   },
   {
    "cat": {
-    "ko": "산업 사이클 리스크",
-    "en": "Industry Cycle Risk"
+    "ko": "업황 사이클과 전방 수요",
+    "en": "Industry cycle and end-market demand"
    },
    "body": {
-    "ko": "비메모리 후공정 테스트 수요는 스마트폰 출하와 메모리 반도체 업황에 연동되는 경향이 있어, 전방 산업의 사이클 변화에 따라 매출과 가동률이 좌우될 수 있다. 과거 전방 산업 부진 시기에 매출과 이익이 동시에 위축된 사례가 있었다.",
-    "en": "Demand for non-memory back-end testing tends to track smartphone shipments and the memory semiconductor cycle, meaning revenue and utilization can be swayed by shifts in the upstream industry cycle. There have been past periods when downstream weakness caused both revenue and profit to contract simultaneously."
+    "ko": "회사는 2023년 상장 이후 반도체 업황 부진으로 어려움을 겪었다는 보도를 받았다. 메모리 컨트롤러 수요는 AI 데이터센터 투자에 의존하는 만큼, 서버 투자 조정이 오면 테스트 물량이 빠르게 줄 수 있다. 모바일 중심 DDI 물량도 세트 업황의 영향을 받는다.",
+    "en": "Reports have described a semiconductor downturn after the company's 2023 listing. Memory controller demand depends on AI data-center investment, so an adjustment in server spending could reduce test volumes quickly. DDI volumes, which are tied to mobile sets, are also exposed to the handset cycle."
    }
   },
   {
    "cat": {
-    "ko": "자본시장·희석 리스크",
-    "en": "Capital Markets and Dilution Risk"
+    "ko": "설비 가동률과 투자 회수",
+    "en": "Equipment utilization and payback"
    },
    "body": {
-    "ko": "200억원 규모의 전환사채가 발행돼 있으며, 조기상환청구권 행사 시기가 도래하면 자금 유출 또는 주식 전환에 따른 지분 희석 가능성이 함께 존재한다. 향후 추가 설비투자를 위한 자금조달이 필요할 경우 추가적인 자본조달 이슈가 발생할 수 있다.",
-    "en": "A KRW 20 billion convertible bond is outstanding, and once the early-redemption window arrives, there is a possibility of either cash outflow from bondholder redemption or equity dilution from conversion into shares. Additional capital-raising issues could also arise if further financing is needed for future equipment investment."
+    "ko": "추가 장비가 기대 수준으로 가동되지 않으면 감가상각 부담이 매출 증가를 상쇄할 수 있다. 2025년 영업손실이 73.9억원으로 축소됐지만 아직 흑자 구조가 확인된 해는 없다. 영업이익률이 2025년 -15.3%에서 플러스로 바뀌는지가 투자 회수의 핵심 확인 지점이다.",
+    "en": "If the added equipment does not run at the expected utilization, depreciation could offset the revenue gains. The operating loss narrowed to KRW 7.39 billion in 2025, but no full year of profit has yet been recorded. Whether the operating margin moves from -15.3% in 2025 to positive territory is the key checkpoint for recovering the investment."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월경",
-    "en": "Around November 2026"
+    "ko": "2027년 3월 말",
+    "en": "Late March 2027"
    },
    "what": {
-    "ko": "2026년 3분기보고서 공시 시점으로, 4개 분기 만에 두 번의 흑자를 기록한 최근 실적 패턴이 이어지는지 확인할 시점이다.",
-    "en": "Timing of the 3Q26 quarterly report filing, when it will be possible to check whether the recent pattern of two profitable quarters out of four continues."
+    "ko": "2026년 사업보고서 제출. 2026년 4분기와 연간 영업이익률이 확정되며, 2024년과 2025년 이어진 영업손실 흐름이 끊기는지 확인하는 지점이다.",
+    "en": "Submission of the 2026 annual report. The fourth-quarter and full-year 2026 operating margin will be fixed, showing whether the operating losses recorded in 2024 and 2025 have ended."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 중",
-    "en": "During the second half of 2026"
+    "ko": "2027년 5월 15일 전후",
+    "en": "Around 15 May 2027"
    },
    "what": {
-    "ko": "메모리 컨트롤러 2차 투자 장비의 가동 개시 및 관련 매출 반영 여부, 제2공장 증설 진행 상황을 확인할 필요가 있다.",
-    "en": "Whether the second-phase memory-controller equipment begins operating and contributing to revenue, and the progress of the second-plant capacity expansion, should be tracked."
+    "ko": "2027년 1분기 분기보고서 제출 시점. 추가 도입 장비의 가동 효과가 매출과 영업이익에 반영되는지, 그리고 감가상각 부담이 얼마나 줄어드는지 확인하는 지점이다.",
+    "en": "Filing of the first-quarter 2027 quarterly report. This is the point to check whether the added equipment is lifting revenue and operating profit and how much depreciation weighs on results."
    }
   },
   {
    "when": {
-    "ko": "2026년 12월 13일 이후",
-    "en": "From December 13, 2026"
+    "ko": "2027년 상반기 중",
+    "en": "During the first half of 2027"
    },
    "what": {
-    "ko": "발행된 전환사채의 조기상환청구권(풋옵션) 행사 개시일로, 채권자의 상환 청구 여부와 그에 따른 자금·자본구조 영향을 확인해야 한다.",
-    "en": "The start date for the put option on the outstanding convertible bond, when it will be necessary to check whether bondholders exercise early redemption and the resulting impact on cash and capital structure."
-   }
-  },
-  {
-   "when": {
-    "ko": "추후 공시·보도 확인 시",
-    "en": "As future disclosures and reports emerge"
-   },
-   "what": {
-    "ko": "SiC 전력반도체 공동기술개발의 구체적 성과(수주, 양산 진입 등)와 신규 고객사 확보 여부를 추가로 확인해야 한다.",
-    "en": "Concrete outcomes of the SiC power-semiconductor joint technology development (such as orders won or mass-production entry) and any new customer wins should be further confirmed."
-   }
-  },
-  {
-   "when": {
-    "ko": "차기 플래그십 스마트폰 출시 시점",
-    "en": "At the launch of the next flagship smartphone cycle"
-   },
-   "what": {
-    "ko": "DDI 테스트 부문에서 국내 고객사의 차기 플래그십 모델 물량 확보 여부를 확인할 필요가 있다.",
-    "en": "Whether the company secures test volume from a domestic customer's next flagship smartphone model in the DDI segment should be checked."
+    "ko": "메모리 컨트롤러 테스트의 매출 비중 변화. 137억원 규모 2차 투자 장비가 본격 가동되어 고객사의 생산능력 부족이 해소되는지가 확인 대상이다.",
+    "en": "Changes in the revenue share of memory controller testing. The point to confirm is whether the second-phase equipment, worth KRW 13.7 billion, runs at full scale and eases the customers' capacity shortage."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "에이엘티는 비메모리 반도체 후공정 테스트를 주력으로 하며, 최근 메모리 컨트롤러와 SiC 전력반도체 등으로 사업 영역을 넓히고 있는 코스닥 반도체 업체다. 2024년 대규모 영업손실 이후 2025년에는 매출이 회복됐지만 연간 기준 적자가 이어졌고, 분기별로는 2025년 4분기와 2026년 2분기에 흑자를 기록한 반면 2026년 1분기는 다시 적자로 돌아서는 등 실적이 오르내리는 모습을 보였다. 최근 4개 분기 누적으로도 지배주주 순이익은 소폭의 적자 상태에 머물러 있어, 완전한 흑자 안정화 여부는 아직 확정되지 않은 상태다. 회사는 메모리 컨트롤러 설비 증설과 제2공장 신설 등을 통해 생산능력을 확대하고 있으며, 데이터센터·전장용 반도체 수요 대응을 성장 축으로 제시하고 있다. 동시에 모바일 고객 의존도, 고정비 부담에 따른 이익 변동성, 전환사채 관련 자본구조 변화 가능성 등은 계속 지켜봐야 할 요인이다. 밸류에이션 측면에서는 순자산가치 근방에서 거래되는 모습을 보이고 있으며, 이익 기반 지표는 최근 손익 상황상 산출이 제한적이다. 투자 판단에 앞서 다가오는 분기 실적과 신사업 매출 기여도의 실제 진행 상황을 확인하는 것이 중요해 보인다.",
-   "en": "ALT is a KOSDAQ-listed semiconductor company specializing in non-memory back-end testing, recently expanding into memory controllers and SiC power semiconductors. After a large operating loss in 2024, revenue recovered in 2025 but the annual result remained in the red, and quarterly results have oscillated—turning profitable in 4Q25 and 2Q26 but reverting to a loss in 1Q26. Even on a trailing four-quarter basis, owners' net income remains slightly negative, meaning a full stabilization of profitability has not yet been confirmed. The company is expanding capacity through memory-controller equipment additions and a new second plant, positioning data-center and automotive semiconductor demand as its growth pillar. At the same time, dependence on mobile customers, earnings volatility from a high fixed-cost base, and potential capital-structure changes tied to its convertible bond remain factors to monitor. On valuation, the stock trades near net asset value, while earnings-based metrics remain difficult to compute given the recent loss pattern. Ahead of any investment decision, tracking upcoming quarterly results and the actual progress of new-business revenue contribution appears important."
+   "ko": "에이엘티는 비메모리 반도체 후공정 테스트를 주력으로 하며, 2025년 매출은 484억원으로 2022~2025년 중 가장 큰 해였다. 그러나 영업손실은 2024년 122억원, 2025년 73.9억원으로 2년 연속 이어졌고, 지배주주 순손실도 같은 기간 적자가 계속됐다. 2026년 3분기에는 영업이익 10.8억원으로 흑자 전환했지만 지배주주 순이익은 2,731만원에 그쳤다. 메모리 컨트롤러 테스트의 양산과 137억원 규모 추가 장비 도입은 AI 데이터센터 수요를 겨냥한 사업 확장이다. 반면 부채비율 119.7%, 감가상각 부담, 모바일 중심 품목의 변동성은 이익 회복의 제약 요인이다. 주가순자산비율이 1배를 밑도는 점과 이익 대비 높은 배수가 함께 나타나는 구도다. 다음 확인 지점은 2026년 사업보고서의 연간 영업이익률과 2027년 1분기 분기보고서에서의 메모리 컨트롤러 매출 비중이다.",
+   "en": "ALT is focused on non-memory semiconductor back-end testing, and its revenue of KRW 48.4 billion in 2025 was the largest year in the 2022 to 2025 period. Operating losses of KRW 12.2 billion in 2024 and KRW 7.39 billion in 2025 nevertheless ran for two consecutive years, and net losses attributable to controlling shareholders continued over the same span. The third quarter of 2026 returned to operating profit of KRW 1.08 billion, but net income attributable to controlling shareholders was only KRW 27.31 million. Mass production of memory controller testing and the added equipment worth KRW 13.7 billion are an expansion aimed at AI data-center demand. On the other side, a debt ratio of 119.7%, depreciation burden and volatility in mobile-driven products constrain the earnings recovery. The price-to-book ratio below 1 coexists with a high multiple against small earnings. The next checkpoints are the full-year operating margin in the 2026 annual report and the memory controller revenue share in the first-quarter 2027 quarterly report."
   }
  },
  "sources": [
-  "https://m.thinkpool.com/compDiscuss/cont/1022994",
-  "https://news.nate.com/view/20260511n11197",
-  "https://m.news.nate.com/search?order=T&page=2&q=%EC%97%90%EC%9D%B4%EC%97%98%ED%8B%B0",
-  "https://m.thinkpool.com/stockDiscuss/172670/cont/11846856",
-  "https://m.thinkpool.com/compDiscuss/cont/1017353",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A172670&MenuYn=Y",
-  "https://www.mydailybyte.com/littlebit/stock/172670",
-  "https://thevc.kr/alt-1",
-  "https://www.widedaily.com/news/articleView.html?idxno=261180",
-  "https://t.me/s/meritz_research?before=42872",
+  "https://www.butler.works/ko/companies/00493325",
+  "https://www.hanaw.com/download/research/FileServer/WEB/info/small_cap/2024/02/13/240214_ALT.pdf",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cn=&cmp_cd=172670",
+  "https://www.vegannews.co.kr/news/article.html?no=406154",
+  "https://comp.wisereport.co.kr/company/c1020001.aspx?cmp_cd=172670",
+  "https://www.newswell.co.kr/news/articleView.html?idxno=8511",
   "https://m.thinkpool.com/compDiscuss/cont/1015585",
-  "https://comp.wisereport.co.kr/company/c1080001.aspx?cmp_cd=172670&cn=",
-  "https://www.bondweb.co.kr/_research/downloadPage.asp?number=892138&gn=1",
-  "https://markets.hankyung.com/stock/172670/consensus",
-  "https://comp.wisereport.co.kr/wiseReport/summary/ReportSummary.aspx?cmp_cd=003080",
-  "https://www.ebn.co.kr/news/articleView.html?idxno=1715653",
-  "http://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=172670",
-  "https://m.irgo.co.kr/IR-COMP/172670"
+  "https://www.eugenefn.com/common/files/amail/20240404_172670_jongsun.park_2067.pdf",
+  "https://ssl.pstatic.net/imgstock/upload/research/company/1712186774296.pdf",
+  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=448865",
+  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=322755",
+  "https://www.finance-scope.com/article/view/scp202602090011",
+  "https://thevc.kr/alt-1",
+  "https://m.news.nate.com/view/20260511n22354",
+  "https://judal.co.kr/?shareToken=a6YvwnClOKdJfSw2&view=stockAI",
+  "https://judal.co.kr/?shareToken=ymzeaR2EErX287ru&view=stockAI",
+  "https://judal.co.kr/?shareToken=bU3qstHalbfMhjhR&view=stockAI"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "172670",
  "name": "에이엘티",
  "name_en": "ALT Co.,Ltd.",
@@ -233,11 +212,11 @@
   "반도체"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 07:36",
- "dataDate": "20260904",
+ "reportDate": "2026-11-18",
+ "reportTs": "2026-11-18 14:22",
+ "dataDate": "20261117",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-11-18",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -307,12 +286,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 11228778877,
-    "op": -2246322386,
-    "np_owner": -4513620173
-   },
-   {
     "q": "2025Q3",
     "rev": 11988918433,
     "op": -2842666715,
@@ -335,28 +308,36 @@
     "rev": 16435240222,
     "op": 2131623101,
     "np_owner": 1411169269
+   },
+   {
+    "q": "2026Q3",
+    "rev": 15677320805,
+    "op": 1079211454,
+    "np_owner": 27314898
    }
   ],
   "valuation": {
-   "price": 9800,
-   "mcap": 0.0878,
+   "price": 6870,
+   "mcap": 0.0616,
    "shares": 8960259,
    "total_shares": 8960259,
-   "wavg_shares": 8843339,
-   "per": null,
-   "eps": -157,
-   "pbr": 0.9442,
-   "bps": 10379,
-   "roe_ttm": -1.5,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": -1386274411,
+   "wavg_shares": 8835934,
+   "per": 25.073,
+   "eps": 274,
+   "pbr": 0.6653,
+   "bps": 10326,
+   "roe_ttm": 2.7,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": 2428641602,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 0.98,
+   "eps_src": "공시",
+   "pbr_krx": 0.65,
    "bps_krx": 10470.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
    "div": 0.0
   }
- }
+ },
+ "textRules": 3
 }

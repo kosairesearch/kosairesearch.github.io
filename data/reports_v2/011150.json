@@ -1,220 +1,209 @@
 {
  "title": {
-  "ko": "원가 부담 속 흑자전환 시험대",
-  "en": "Cost Pressure Tests Turnaround Bid"
+  "ko": "매출은 회복, 영업적자는 지속…수익성이 관건",
+  "en": "Sales recover but operating losses persist; margins are the test"
  },
  "lead": {
-  "ko": "CJ씨푸드는 원초(김)·연육 가격 급등으로 2025년 영업적자를 기록했으며, 2026년 흑자전환을 목표로 내걸었지만 분기별 실적은 여전히 등락을 반복하고 있다.",
-  "en": "CJ Seafood posted an operating loss in 2025 amid surging raw seaweed and surimi costs, and while it has set a target to return to operating profit in 2026, quarterly results continue to swing between gains and losses."
+  "ko": "CJ씨푸드는 2026년 3분기 매출이 전년 동기 대비 29.0% 늘었지만 영업손실은 8억 6,400만원으로 확대됐고, 수익성 회복 여부가 핵심 쟁점이다.",
+  "en": "CJ Seafood's sales rose 29.0% year on year in the third quarter of 2026, but its operating loss widened, so whether profitability recovers is the central question."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출 1,921억원, 영업손실 9.1억원으로 전년 흑자에서 적자로 전환됐고, 순이익은 태국 관계기업 지분법이익 덕에 28억원 흑자를 유지했다.",
-   "en": "Consolidated 2025 revenue reached KRW 192.1 billion with an operating loss of KRW 0.91 billion, swinging from prior-year profit, while net income stayed positive at KRW 2.8 billion helped by equity-method gains from a Thai affiliate."
+   "ko": "2025년 영업손실 9.1억원으로 전년 대비 적자 전환했다. 2024년 영업이익은 43.6억원이었다.",
+   "en": "Operating loss of KRW 910 million in 2025 marked a swing to a deficit from operating profit of KRW 4.36 billion in 2024."
   },
   {
-   "ko": "원초(김)와 연육(어묵 원료) 가격이 동반 상승하며 매출원가율이 88.5%까지 오른 반면, 어묵 평균 판매가격은 제품 믹스 변화로 오히려 하락했다.",
-   "en": "Raw seaweed and surimi (fish-cake material) costs rose together, pushing the cost-of-sales ratio to 88.5%, while average fish-cake selling prices actually declined due to a shift in product mix."
+   "ko": "2026년 3분기 매출은 638억원으로 전년 동기 대비 29.0% 증가했으나 영업손실은 8.6억원으로 확대됐다. 2026년 1분기부터 3분기까지 3개 분기 연속 적자다.",
+   "en": "Third-quarter 2026 sales of KRW 63.8 billion rose 29.0% year on year, yet the operating loss widened to KRW 864 million, and the company has posted losses in three consecutive quarters since the first quarter of 2026."
   },
   {
-   "ko": "2026년 들어서도 실적은 출렁였다 — 1분기 영업손실이 14.7억원으로 확대된 뒤 2분기에는 5.8억원으로 손실 폭이 줄었다.",
-   "en": "Results kept swinging through 2026 — the operating loss widened to KRW 1.47 billion in Q1 before narrowing to KRW 0.58 billion in Q2."
+   "ko": "최근 4개 분기(2025년 4분기~2026년 3분기) 지배주주 순이익 합계는 18.2억원으로 이익 규모가 작다.",
+   "en": "Net income attributable to controlling shareholders totaled KRW 1.82 billion over the last four quarters, a small earnings base."
   },
   {
-   "ko": "회사는 기업간 거래 확대와 가동률 극대화를 통한 원가절감으로 2026년 영업이익 흑자전환을 목표로 내걸었다.",
-   "en": "The company has set a target of returning to operating profit in 2026 through expanded B2B transactions and higher factory utilization to cut costs."
+   "ko": "부채비율은 2023년 115.5%에서 2025년 91.5%로 낮아졌고, 2025년 말 자본총계는 884억원이다.",
+   "en": "The debt-to-equity ratio fell from 115.5% in 2023 to 91.5% in 2025, and total equity at the end of 2025 was KRW 88.4 billion."
   },
   {
-   "ko": "해양수산부는 2026년산 마른김 생산량이 전년보다 줄었지만 평년보다는 여전히 많다고 밝혔으며, 정부의 김 공급망 혁신방안이 중장기 원가 변수로 주목된다.",
-   "en": "The Ministry of Oceans and Fisheries said 2026 dried laver output fell from the prior year but still exceeded the historical average, with the government's laver supply-chain overhaul program emerging as a medium-term cost variable."
+   "ko": "수산 부문 매출은 2023년 1,255억원에서 2024년 1,222억원, 2025년 1,142억원으로 줄었다는 보도가 있다.",
+   "en": "Press reports show seafood segment sales declining from KRW 125.5 billion in 2023 to KRW 122.2 billion in 2024 and KRW 114.2 billion in 2025."
   }
  ],
  "business": {
-  "ko": "CJ씨푸드는 1976년 삼호물산으로 설립돼 어묵·맛살 브랜드 '삼호어묵', '삼호맛살'을 통해 국내 수산가공식품 시장에서 성장해왔으며, 2006년 CJ그룹에 편입됐다. 회사는 자체 설명상 어묵·맛살 분야에서 국내 시장점유율 1위를 유지하고 있다고 밝히고 있다. 주요 제품은 어묵, 맛살, 김, 유부, 생선구이 등이며, 간편조리식품인 생선구이는 CJ제일제당의 '비비고' 브랜드로 출시돼 어종 다양화와 생산라인 증설을 통한 대형화를 추진해왔다. 2023년에는 지배회사인 CJ제일제당으로부터 건해산물 도소매업체 삼해상사 지분 100%를 인수해 '명가김' 등 김 브랜드와 조미김 수출 역량을 확보하며 사업을 대형화했다. 해외 사업으로는 태국 법인 럭키유니온푸즈 지분 20%를 보유하고 있으며, 이 관계기업은 2025년 매출 2,030억원, 순이익 298억원을 기록해 연결 순이익에 유의미하게 기여했다. 생산기지는 성남, 이천, 김포(삼해상사), 부안(삼해상사) 등 4곳에 분산돼 있으며, 최근 몇 년간 간식형 어묵 등 신규 라인 증설과 설비 개보수를 지속해왔다. 경쟁 구도상 김 부문에서는 동원F&B(양반김), CJ제일제당(비비고 김), 풀무원(풀무원 김) 등과 경쟁하고, 어묵·맛살 부문에서는 상대적으로 독보적 지위를 갖고 있는 것으로 평가된다. 유통은 대형마트·편의점 등 소비자 채널과 함께 식자재 기업간거래(B2B) 비중 확대를 추진 중이다.",
-  "en": "CJ Seafood was founded in 1976 as Samho Corporation and grew in Korea's processed seafood market through its 'Samho Eomuk' (fish cake) and 'Samho Matsal' (crab stick) brands before joining the CJ Group in 2006. The company states it holds the No.1 domestic market share in fish cake and crab stick products. Its main products span fish cake, crab stick, laver (gim), fried tofu skin (yubu), and grilled fish, with the grilled-fish convenience product line launched under CJ CheilJedang's 'Bibigo' brand and expanded through species diversification and production-line additions. In 2023 the company acquired full ownership of Samhae Sangsa, a dried seafood wholesaler, from parent CJ CheilJedang, gaining laver brands such as 'Myungga Gim' and export capacity in seasoned laver. Overseas, CJ Seafood holds a 20% stake in Thailand's Lucky Union Foods, an affiliate that posted 2025 revenue of KRW 203 billion and net income of KRW 29.8 billion, contributing meaningfully to consolidated net income. Production is spread across four plants in Seongnam, Icheon, Gimpo (Samhae Sangsa) and Buan (Samhae Sangsa), with recent years seeing continued line expansions for snack-type fish cakes and facility upgrades. In laver, the company competes with Dongwon F&B, CJ CheilJedang, and Pulmuone, while it is viewed as holding a relatively dominant position in fish cake and crab stick. Distribution spans retail channels such as hypermarkets and convenience stores alongside an expanding B2B food-service business."
+  "ko": "CJ씨푸드는 어묵, 김, 유부, 맛살 등 수산물 가공식품을 주로 만드는 식품 기업이다. 기업 개요를 정리한 증권 정보 사이트는 주요 매출이 어묵 판매에서 나오고 김·유부·맛살 판매가 뒤를 잇는다고 정리했다. 같은 자료는 어묵의 시장점유율을 37%로 집계하며 1위를 유지한다고 적었는데, 이는 산업 통계 원자료가 아닌 사이트의 집계라는 점을 감안해야 한다. 제품은 대형 백화점과 할인점 등 유통 채널을 통해 판매된다. 수산 부문 매출은 2023년 1,255억원, 2024년 1,222억원, 2025년 1,142억원으로 줄어드는 흐름이다. 같은 보도는 수산 부문 생산량이 2025년 2만 1,629톤으로 2023년 대비 10% 가까이 줄었다고 전했다. 2025년 1분기 기업 실적 코멘트에 따르면 수산 부문과 김 부문 모두에서 영업손실이 발생했다. 원재료인 수산물과 김의 가격 상승이 원가 부담으로 꼽혔고, 2025년 기준 보도에서는 전체 매출원가율이 88.5%까지 올랐다고 소개됐다. 경쟁 측면에서는 국내 수산 가공 중견 업체들과 맞서고 있으며, 같은 시기 일부 동종 업체는 흑자를 유지했다는 보도가 나왔다. 영업 구조가 어묵·김 등 제품 판매 중심이어서 원재료 가격과 소비 흐름의 영향을 직접 받는 구조다.",
+  "en": "CJ Seafood is a food company that mainly makes processed seafood products such as fish cake, seaweed snacks, fried tofu pouches and imitation crab. An equity information site that profiles the company says its main sales come from fish cake, followed by seaweed, fried tofu pouches and imitation crab. The same source puts the company's fish cake market share at 37% and says it remains first, though this is a site estimate rather than an industry statistic. Products are sold through distribution channels such as large department stores and discount stores. Seafood segment sales declined from KRW 125.5 billion in 2023 to KRW 122.2 billion in 2024 and KRW 114.2 billion in 2025, according to a press report. The same report says seafood production fell to 21,629 tons in 2025, down nearly 10% from 2023. A 2025 first-quarter company profile notes that both the seafood and seaweed segments posted operating losses. Higher prices for raw seafood and seaweed have been cited as a cost burden, and a 2025-based report said the overall cost of sales ratio rose to 88.5%. In competition, the company faces mid-sized domestic seafood processors, and some peers reportedly stayed profitable over the same period. Because the business centers on fish cake and seaweed products, its results are directly exposed to raw material prices and consumer demand."
  },
  "earnings": {
-  "ko": "2025년 연결 매출은 1,921억원으로 전년(1,937억원) 대비 소폭 감소했으나, 영업이익은 9.1억원 손실로 전년 43.6억원 흑자에서 적자로 전환됐다. 영업이익률은 2022년 2.7%, 2023년 2.8%, 2024년 2.2%로 완만하게 낮아지다가 2025년 -0.5%로 꺾였다. 순이익은 2022년 74.2억원에서 2023년 44.4억원, 2024년 50.2억원으로 등락한 뒤 2025년 28.3억원으로 다시 줄었는데, 본업 적자에도 순이익이 유지된 것은 태국 관계기업의 지분법이익이 완충 역할을 했기 때문이다. 분기별로 보면 2025년 2분기 매출 424.7억원·영업손실 14.9억원, 3분기 매출 494.2억원·영업손실 6.3억원으로 적자가 이어졌고, 4분기에는 매출 476.9억원·영업이익 22.1억원으로 계절적 수요(겨울철 어묵 성수기) 효과에 힘입어 흑자 전환했다. 그러나 2026년 1분기에는 매출 549.5억원에 영업손실이 14.7억원으로 다시 확대됐고, 순손실도 12.9억원을 기록해 최근 다섯 개 분기 중 가장 부진한 성적을 냈다. 2026년 2분기에는 매출 482.5억원, 영업손실 5.8억원으로 손실 규모가 줄었고 순이익은 7.4억원으로 회복됐다. 이 같은 분기별 부침은 원재료(원초·연육) 투입가 변동과 계절적 수요 패턴이 동시에 작용한 결과로 해석된다. 2024년 매출이 전년 대비 크게 늘어난 배경은 2023년 말 삼해상사 지분 100% 인수에 따른 연결 실적 편입 효과로 분석된다.",
-  "en": "Consolidated revenue in 2025 was KRW 192.1 billion, a slight decline from KRW 193.7 billion in 2024, while operating profit swung to a loss of KRW 0.91 billion from a KRW 4.36 billion profit the prior year. The operating margin drifted down from 2.7% in 2022 and 2.8% in 2023 to 2.2% in 2024 before turning negative at -0.5% in 2025. Net income moved from KRW 7.42 billion in 2022 to KRW 4.44 billion in 2023 and KRW 5.02 billion in 2024, then fell again to KRW 2.83 billion in 2025; net income stayed positive despite the core operating loss because equity-method gains from the Thai affiliate cushioned the bottom line. On a quarterly basis, Q2 2025 revenue was KRW 42.47 billion with an operating loss of KRW 1.49 billion, and Q3 2025 revenue was KRW 49.42 billion with a loss of KRW 0.63 billion, before Q4 2025 revenue of KRW 47.69 billion and an operating profit of KRW 2.21 billion driven by seasonal winter demand for fish cake. However, Q1 2026 revenue rose to KRW 54.95 billion while the operating loss widened again to KRW 1.47 billion, with a net loss of KRW 1.29 billion marking the weakest quarter in the recent five-quarter window. Q2 2026 revenue was KRW 48.25 billion with a narrower operating loss of KRW 0.58 billion, while net income recovered to KRW 0.74 billion. This quarterly volatility reflects the combined effect of fluctuating raw-material input costs (dried laver, surimi) and seasonal demand patterns. The sharp revenue jump in 2024 versus 2023 is attributable to the consolidation of Samhae Sangsa following the full stake acquisition at the end of 2023."
+  "ko": "공시 실적 기준 연간 매출은 2022년 1,527억원에서 2023년 1,483억원(전년 대비 2.9% 감소)으로 줄었다가 2024년 1,937억원(전년 대비 30.6% 증가)으로 크게 늘었고, 2025년에는 1,921억원(전년 대비 0.8% 감소)이었다. 2022~2025년 중 매출이 가장 큰 해는 2024년이고 가장 작은 해는 2023년이다. 영업이익은 2022년 41.4억원, 2023년 41.4억원(전년 대비 0.1% 증가), 2024년 43.6억원(전년 대비 5.3% 증가)이었고, 2025년에는 영업손실 9.1억원으로 전년 대비 적자 전환했다. 영업이익률은 2022년 2.7%, 2023년 2.8%, 2024년 2.2%를 거쳐 2025년 -0.5%로 내려왔다. 지배주주 순이익은 2022년 74.2억원에서 2023년 44.4억원(전년 대비 40.2% 감소), 2024년 50.2억원(전년 대비 13.2% 증가), 2025년 28.3억원(전년 대비 43.7% 감소)이었다. 2022~2025년 중 가장 큰 해는 2022년이고 가장 작은 해는 2025년이다. 당기순이익(비지배지분 포함)도 같은 해 기준 74.2억원, 44.4억원, 50.2억원, 28.3억원으로 공시됐다. 영업활동 현금흐름은 2022년 -9.1억원에서 2023년 55.1억원, 2024년 41.5억원, 2025년 19.6억원으로 플러스를 이어 왔으나 감소 추세다. 분기 기준 매출은 2025년 3분기 494억원, 4분기 477억원(전 분기 대비 3.5% 감소), 2026년 1분기 550억원(전 분기 대비 15.2% 증가), 2분기 483억원(전 분기 대비 12.2% 감소), 3분기 638억원(전 분기 대비 32.1% 증가)이었다. 영업이익은 2025년 4분기 22.1억원으로 흑자 전환했으나 2026년 1분기 영업손실 14.7억원, 2분기 영업손실 5.8억원, 3분기 영업손실 8.6억원으로 3개 분기 연속 적자다. 매출 증가가 수익성 개선으로 이어지지 않은 구조다. 지배주주 순이익은 2026년 1분기 12.9억원 순손실 이후 2분기 7.4억원, 3분기 7,679만원으로 회복했으나, 최근 4개 분기 합계는 18.2억원이다. 2026년 3분기 실적 발표 당시 회사 측은 상반기부터 이어진 식품 업계 시장 부진이 계속되고 있다고 설명했다(2026년 11월 10일 공시 기준).",
+  "en": "On a disclosed basis, annual sales were KRW 152.7 billion in 2022, KRW 148.3 billion in 2023 (down 2.9% year on year), KRW 193.7 billion in 2024 (up 30.6%) and KRW 192.1 billion in 2025 (down 0.8%). Among 2022 to 2025, 2024 was the largest year for sales and 2023 the smallest. Operating profit was KRW 4.14 billion in 2022, KRW 4.14 billion in 2023 (up 0.1%) and KRW 4.36 billion in 2024 (up 5.3%), before turning to an operating loss of KRW 910 million in 2025, a swing to deficit from the prior year. The operating margin moved from 2.7% in 2022 to 2.8% in 2023, 2.2% in 2024 and -0.5% in 2025. Net income attributable to controlling shareholders was KRW 7.42 billion in 2022, KRW 4.44 billion in 2023 (down 40.2%), KRW 5.02 billion in 2024 (up 13.2%) and KRW 2.83 billion in 2025 (down 43.7%). Among 2022 to 2025, 2022 was the largest year and 2025 the smallest. Net income including non-controlling interests was reported as KRW 7.42 billion, KRW 4.44 billion, KRW 5.02 billion and KRW 2.83 billion for the same years. Operating cash flow went from negative KRW 906 million in 2022 to KRW 5.51 billion in 2023, KRW 4.15 billion in 2024 and KRW 1.96 billion in 2025, remaining positive but trending lower. Quarterly sales were KRW 49.4 billion in the third quarter of 2025, KRW 47.7 billion in the fourth quarter (down 3.5% from the prior quarter), KRW 55 billion in the first quarter of 2026 (up 15.2%), KRW 48.3 billion in the second quarter (down 12.2%) and KRW 63.8 billion in the third quarter (up 32.1%). Operating profit turned positive at KRW 2.21 billion in the fourth quarter of 2025, but the company has posted operating losses of KRW 1.47 billion, KRW 578 million and KRW 864 million in the first three quarters of 2026, which is three consecutive quarters of losses. Sales growth has not translated into better profitability. Net income attributable to controlling shareholders swung to a net loss of KRW 1.29 billion in the first quarter of 2026 before recovering to KRW 742 million in the second quarter and KRW 76.79 million in the third quarter, and the last four quarters total KRW 1.82 billion. When it reported third-quarter 2026 results on November 10, 2026, the company said the weak food market that began in the first half of the year is continuing."
  },
  "industry": {
-  "ko": "국내 수산가공식품 산업은 김 수출 호황과 K-푸드 확산에 힘입어 성장했지만, 동시에 원초(마른김의 원료인 물김) 가격 급등이라는 구조적 부담을 안고 있다. 뉴스퀘스트 보도에 따르면 마른김 도매가격은 2022년 100장당 5,760원에서 2025년 11,670원까지 두 배 넘게 뛰었고, 2026년 4월에도 11,340원으로 여전히 높은 수준을 유지했다. 다만 한국경제 보도에 따르면 해양수산부가 집계한 2026년산 마른김 생산량은 약 1억 8,000만속으로 전년(2억 369만속)보다 줄었지만 국내 과거 연평균 생산량인 1억 5,000만속을 웃도는 수준이며, 해수부는 2년 연속 물김 생산이 양호해 마른김·조미김 가격이 안정적인 수준을 보이고 있다고 설명했다. 경쟁사인 동원F&B, CJ제일제당, 풀무원도 원재료 부담을 인정하면서도 당장 가격 인상 계획은 없다고 밝혀, 업계 전반이 비슷한 원가-판가 딜레마에 놓여 있음을 보여준다. 정부는 2030년까지 마른김 수요를 2억 1,000만속으로 전망하며 양식면적 확대, 계약생산제, 정부 비축제도 도입 등을 담은 김 수출 공급망 혁신방안을 발표했는데, 이는 중장기적으로 원초 가격 변동성을 낮추는 방향으로 설계됐다. CJ씨푸드는 어묵·맛살 부문에서 상대적으로 독보적 지위를 갖고 있지만, 김 부문에서는 대형 경쟁사들과 유사한 원가 구조에 노출돼 있어 업종 내 차별화 요인은 제한적인 것으로 보인다.",
-  "en": "Korea's processed seafood industry has grown on the back of a laver export boom and the spread of K-food, but it also faces a structural burden from surging prices for raw green laver (the input for dried laver). According to Newsquest, dried laver wholesale prices more than doubled from KRW 5,760 per 100 sheets in 2022 to KRW 11,670 in 2025, and remained elevated at KRW 11,340 in April 2026. However, per a Korea Economic Daily report, the Ministry of Oceans and Fisheries tallied 2026 dried laver output at roughly 180 million units, down from 203.69 million units the prior year but still above the historical annual average of about 150 million units, with the ministry stating that two consecutive years of healthy raw laver output have kept dried and seasoned laver prices at a stable level. Competitors Dongwon F&B, CJ CheilJedang, and Pulmuone have all acknowledged raw-material cost pressure while saying they have no immediate plans to raise prices, indicating a similar cost-versus-price dilemma across the industry. The government has forecast dried laver demand reaching 210 million units by 2030 and unveiled a laver export supply-chain overhaul plan involving expanded farming areas, contract-production systems, and a new government stockpiling scheme, designed to reduce raw-material price volatility over the medium term. While CJ Seafood holds a relatively dominant position in fish cake and crab stick, it is exposed to a cost structure similar to major competitors in the laver segment, limiting differentiation within the industry."
+  "ko": "수산 가공식품은 원재료인 수산물과 김의 가격, 물류비, 소비 심리의 영향을 함께 받는 산업이다. CJ씨푸드의 수산 부문 매출이 2023년 이후 줄고 생산량도 감소한 점은 사업 규모가 축소되는 방향을 보여 준다. 같은 식품 업계의 CJ제일제당(CJ Cheiljedang)은 2026년 3분기 라이프스타일 식품사업 매출이 2조 5,744억원으로 전년 동기 대비 3.8% 늘었고, 영업이익은 1,187억원으로 전년 수준을 유지했다(2026년 11월 10일 발표). CJ제일제당은 해외 식품 매출이 유럽 26%, 베트남 14% 증가하며 K푸드 해외 판매에 힘입었다고 밝혔다. 국내에서는 비비고 생선구이 매출이 69% 늘었는데, 이는 수산 간편식 카테고리의 수요 신호로 읽을 수 있다. CJ제일제당은 원부자재와 물류비 부담이 이어졌지만 해외 주력 제품 판매 확대와 비용 효율화로 수익성을 지켰다고 설명했다. CJ씨푸드 측은 상반기부터 식품 업계 시장이 좋지 않았고 그 기조가 계속되고 있다고 설명했다. 수산 가공 업계에서는 일부 동종 업체가 흑자를 유지한 것과 대비해 CJ씨푸드의 영업 적자 전환이 두드러진다는 보도가 있었다. 수산물 업종 9개 종목 가운데 매출 규모는 8위로 집계됐다(업종 연간 기준, 증권 정보 사이트). 어묵 중심 사업 구조는 시장점유율 1위라는 강점이 있지만, 매출 규모 면에서는 업종 내에서 상대적으로 작은 편이다.",
+  "en": "Processed seafood is exposed to raw material prices for seafood and seaweed, logistics costs and consumer sentiment. CJ Seafood's seafood segment sales have declined since 2023 and production has fallen, which points to a shrinking operating base. In the same food sector, CJ Cheiljedang reported third-quarter 2026 lifestyle food sales of KRW 2.5744 trillion, up 3.8% year on year, with operating profit of KRW 118.7 billion, flat from a year earlier, announced on November 10, 2026. CJ Cheiljedang said overseas food sales rose 26% in Europe and 14% in Vietnam on K-food demand. Domestically, its grilled fish product sales rose 69%, which can be read as a demand signal for seafood convenience foods. CJ Cheiljedang also said raw material and logistics burdens persisted but profitability was supported by overseas flagship products and cost efficiency. CJ Seafood said the food market has been weak since the first half and that this trend is continuing. Some seafood peers stayed profitable, which press coverage contrasts with CJ Seafood's swing to an operating loss. Among nine companies in the seafood sector, CJ Seafood ranked eighth by annual sales on an equity information site. The fish cake leadership is a strength, but the company is relatively small within its sector by sales."
  },
  "outlook": {
-  "ko": "CJ씨푸드는 2025년 사업보고서에서 “수익 구조의 근본적 체질 개선을 최우선 과제로 삼고 턴어라운드를 실현하겠다”고 밝히며 2026년 영업이익 흑자전환을 목표로 내걸었다. 회사 관계자는 원가 부담 완화 방안으로 “기업 간 거래 확대 및 공장 가동률 극대화 등을 통한 제조원가 절감으로 수익성을 개선하겠다”고 설명했다. 다만 2026년 1분기까지는 원초 가격 부담이 이어지며 영업손실이 오히려 확대됐고, 2분기에 손실 폭이 줄어드는 등 목표 달성 경로는 아직 뚜렷하지 않다. 산업 측면에서는 해양수산부가 매년 10월부터 다음 해 5월까지인 김 주생산 시기가 오기 전 매년 9월 정부·업계가 참여하는 김 산업협의체 협의를 거쳐 수급관리 계획을 수립하기로 해, 2026년 9월 협의 결과가 하반기 원가 흐름의 단기 가늠자가 될 수 있다. 중장기적으로는 정부가 2027년 AI 기반 마른김 등급제 시범 도입과 국제 마른김 거래소 설립을 추진하고, 2028년까지 연간 생산량의 약 30% 수준인 5,600만속을 저장할 수 있는 보관시설을 구축할 계획이어서, 원초 가격 변동성이 점차 완화될 가능성이 있다. 회사 자체적으로는 성남·이천·김포·부안 등 4개 공장의 생산라인 증설과 설비 보수를 지속하며 간식형 어묵 등 신제품 확대를 추진해온 만큼, 가동률과 제품 믹스 개선이 하반기 실적의 관전 포인트가 될 전망이다.",
-  "en": "In its 2025 annual report, CJ Seafood stated it would make fundamental improvement of its earnings structure the top priority and achieve a turnaround, setting a goal of returning to operating profit in 2026. A company official explained the cost-relief approach as improving profitability through expanded B2B transactions and maximized factory utilization to cut manufacturing costs. However, raw-material cost pressure persisted through Q1 2026, when the operating loss actually widened, before narrowing again in Q2, meaning the path to the stated target remains unclear. On the industry side, the Ministry of Oceans and Fisheries plans to convene an annual laver industry council each September — ahead of the October-to-May main production season — to set data-based supply management plans, making the September 2026 council outcome a near-term gauge for second-half cost trends. Over the medium term, the government plans to pilot an AI-based dried laver grading system and pursue an international dried laver exchange by 2027, along with storage facilities capable of holding about 30% of annual output (56 million units) by 2028, which could gradually ease raw-material price volatility. On the company's own initiative, continued line expansions and facility repairs across its four plants in Seongnam, Icheon, Gimpo, and Buan, along with new snack-type fish cake products, mean utilization rates and product mix will be key points to watch in the second half."
+  "ko": "현재까지 확인된 사실을 기준으로 보면 전망은 매출 회복과 수익성 악화가 엇갈리는 흐름에서 출발한다. 2026년 3분기 매출 638억원은 공시 실적이 있는 최근 다섯 개 분기 중 가장 큰 규모다. 그러나 같은 분기 영업손실이 8.6억원으로 확대되어 매출 회복이 이익으로 이어지지 않았다. 강세 측 논리는 원재료비 부담이 완화되면 영업손익이 개선될 수 있다는 점이다. 약세 측 논리는 수산 부문 매출과 생산량 감소가 이어지면 고정비 부담이 계속될 수 있다는 점이다. 회사는 식품 업계 시장 부진이 이어진다고 설명했으며, 소비 회복 여부가 주요 변수다. 같은 그룹 계열인 CJ제일제당은 해외 K푸드 판매 확대를 강조하고 있어, 해외 수요가 수산 가공 제품으로 확장될지는 확인할 사항이다. 다음 공식 실적 확인 지점은 2026년 4분기 실적과 2026년 사업보고서다. 2026년 사업보고서에서는 수산 부문 매출, 원가율, 영업외 손익 추이를 확인할 수 있다. 2026년 사업보고서 제출 기한은 2027년 3월 말이다. 2027년 1분기 분기 실적에서는 3개 분기 연속 적자가 이어지는지가 확인 포인트다.",
+  "en": "Based on the facts confirmed so far, the outlook starts from a mixed picture of sales recovery and weaker profitability. Third-quarter 2026 sales of KRW 63.8 billion were the largest of the last five quarters with disclosed results. However, the operating loss widened to KRW 864 million in the same quarter, so the sales recovery has not yet reached operating profit. The bull case rests on the possibility that operating results improve if raw material cost pressure eases. The bear case is that fixed cost pressure could persist if seafood segment sales and production keep declining. The company said the weak food market continues, so consumer demand recovery is a key variable. CJ Cheiljedang, a fellow CJ group company, emphasizes expanding K-food overseas, and whether that demand extends to seafood processed products remains to be confirmed. The next official checkpoints are the fourth-quarter 2026 results and the 2026 annual report. The 2026 annual report should show seafood segment sales, the cost of sales ratio and non-operating income trends. The annual report is due by the end of March 2027. The first-quarter 2027 results will show whether the three-quarter losing streak continues."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 회사의 주당 순자산가치를 밑도는 수준에서 거래되고 있어, 시장이 순자산 대비 할인된 가격을 부여하고 있는 상태로 볼 수 있다. 반면 절대 이익 규모가 작다 보니 주가수익비율은 최근 네 개 분기 실적을 기준으로 볼 때 상대적으로 높은 배수 구간에서 형성돼 있는데, 이는 이익 기저가 작을 때 나타나는 통상적인 현상이다. 최근 배당을 지급하지 않아 배당을 통한 주주환원 매력은 낮은 편으로 평가된다. 다년간 실적을 보면 2022~2023년 소폭 흑자에서 2025년 영업적자로, 그리고 2026년 상반기에는 분기별로 적자와 흑자를 오가는 등 이익 안정성이 아직 확립되지 않은 상태다. 이러한 실적 변동성은 향후 밸류에이션 지표 해석에 있어서도 유의할 부분으로 남아 있다.",
-  "en": "The current share price trades below the company's per-share net asset value, indicating the market is pricing the stock at a discount to book value. At the same time, because the absolute profit base is small, the price-to-earnings multiple sits in a relatively elevated range when measured against results from the most recent four quarters, a pattern typical when the earnings base is thin. With no recent dividend payments, shareholder return through dividends is considered limited. Looking at multi-year results, performance moved from modest profit in 2022-2023 to an operating loss in 2025, and has continued swinging between quarterly losses and gains through the first half of 2026, meaning earnings stability has not yet been firmly established. This earnings volatility remains a factor worth noting when interpreting valuation metrics going forward."
+  "ko": "현재 주가순자산비율은 1배를 밑도는 구간에 있어, 장부상 자본총계 대비 할인된 가격에서 거래되는 상태다. 시가총액이 장부상 자본총계를 밑도는 구간이라는 점은 시장이 현재 이익 체력을 장부가보다 낮게 보고 있다는 해석이 가능하지만, 이는 해석의 한 방식이며 단정하기는 어렵다. 이익 기반 배수는 최근 4개 분기 지배주주 순이익 합계가 18.2억원에 그쳐 이익 규모 변화에 민감하게 움직이는 구조다. 2024년 영업이익 43.6억원에서 2025년 영업손실 9.1억원으로 이익이 적자로 전환된 점이 이익 기반 배수 해석의 출발점이다. 배당수익률은 업종 평균을 밑도는 수준이다. 재무구조는 부채비율이 2023년 115.5%에서 2025년 91.5%로 낮아져 부담이 완화된 방향이다. 이익이 흑자 기조로 돌아서는 시점에 배수가 어떻게 움직이는지가 다음 확인 지점이다. 밸류에이션 수준은 장부값과 이익 추이의 관계로 읽는 것이 사실 비교에 가깝다.",
+  "en": "The price-to-book ratio is below 1x, so the stock trades at a discount to book value. A market capitalization below total book equity can be read as the market valuing current earnings power below book value, though this is one interpretation and not a conclusion. Earnings-based multiples are sensitive to small changes because net income attributable to controlling shareholders totaled only KRW 1.82 billion over the last four quarters. The starting point for reading earnings-based multiples is the swing from operating profit of KRW 4.36 billion in 2024 to an operating loss of KRW 910 million in 2025. The dividend yield is below the sector average. The debt-to-equity ratio fell from 115.5% in 2023 to 91.5% in 2025, a lighter financial burden. The next checkpoint is how multiples move if earnings return to a profitable trend. Comparing the stock to its book value and earnings trend is a factual comparison rather than a valuation verdict."
  },
  "bull": [
   {
    "title": {
-    "ko": "태국 관계기업의 안정적 이익 기여",
-    "en": "Stable Earnings Contribution from Thai Affiliate"
+    "ko": "매출 규모의 회복",
+    "en": "Sales rebound"
    },
    "body": {
-    "ko": "럭키유니온푸즈(지분 20%)는 2025년 매출 2,030억원, 순이익 298억원을 기록해 CJ씨푸드 연결 순이익의 핵심 버팀목이 되고 있다. 본업이 영업적자를 낸 해에도 지분법이익 덕에 연결 순이익이 흑자를 유지한 사례가 반복되고 있다. 이는 국내 원가 변동성에 대한 부분적 헤지 역할을 한다.",
-    "en": "Lucky Union Foods, a 20%-owned affiliate, posted 2025 revenue of KRW 203 billion and net income of KRW 29.8 billion, serving as a key support for CJ Seafood's consolidated net income. Even in years when the core business posted an operating loss, equity-method gains have repeatedly kept consolidated net income positive. This provides a partial hedge against domestic cost volatility."
+    "ko": "2026년 3분기 매출은 638억원으로 전년 동기 대비 29.0% 증가했고, 공시 실적이 있는 최근 다섯 개 분기 중 가장 큰 규모다. 2026년 1분기 매출도 550억원으로 전 분기 대비 15.2% 증가했다. 이 매출 흐름이 영업이익 개선으로 이어지는지가 강세 논리의 핵심이다.",
+    "en": "Third-quarter 2026 sales of KRW 63.8 billion rose 29.0% year on year and were the largest among the last five quarters with disclosed results. First-quarter 2026 sales of KRW 55 billion were up 15.2% from the prior quarter. Whether this sales flow leads to operating profit gains is the core of the bull case."
    }
   },
   {
    "title": {
-    "ko": "원초 가격 안정화 조짐",
-    "en": "Signs of Raw Laver Price Stabilization"
+    "ko": "재무구조 개선",
+    "en": "Improved balance sheet"
    },
    "body": {
-    "ko": "해양수산부에 따르면 2년 연속 물김 생산이 양호해 마른김·조미김 가격이 안정적인 수준을 보이고 있으며, 2026년산 생산량도 과거 평년 대비 여전히 많은 수준이다. 정부의 양식면적 확대와 비축제도 도입 계획이 실행되면 중장기적으로 원가 부담이 완화될 여지가 있다. 이는 매출원가율 개선의 잠재 변수다.",
-    "en": "The Ministry of Oceans and Fisheries has stated that two consecutive years of healthy raw laver output have kept dried and seasoned laver prices at a stable level, and 2026 production remains above the historical average. If the government's plans to expand farming areas and introduce a stockpiling system are executed, raw-material cost pressure could ease over the medium term, a potential variable for improving the cost-of-sales ratio."
+    "ko": "부채비율은 2023년 115.5%에서 2024년 107.0%, 2025년 91.5%로 낮아졌다. 2025년 말 부채총계는 809억원, 자본총계는 884억원이다. 자본이 부채를 웃도는 구조가 유지되는 점은 실적 변동기에 재무 여력으로 작용할 수 있다.",
+    "en": "The debt-to-equity ratio fell from 115.5% in 2023 to 107.0% in 2024 and 91.5% in 2025. Total liabilities were KRW 80.9 billion and total equity KRW 88.4 billion at the end of 2025. Equity remaining larger than liabilities can serve as financial capacity during periods of earnings volatility."
    }
   },
   {
    "title": {
-    "ko": "CJ그룹 계열 및 시장 지위",
-    "en": "CJ Group Affiliation and Market Position"
+    "ko": "2분기 흑자 전환과 영업현금흐름",
+    "en": "Second-quarter profit and operating cash flow"
    },
    "body": {
-    "ko": "CJ씨푸드는 CJ그룹의 자본력과 유통망을 활용할 수 있는 계열사이며, 어묵·맛살 부문에서 국내 시장점유율 1위라고 자체 밝히고 있다. 삼해상사 인수를 통한 김 사업 대형화, 비비고 브랜드 생선구이 등 그룹 시너지도 활용 중이다. 이러한 계열 관계는 자금조달과 유통 채널 확보 측면에서 안정성을 제공한다.",
-    "en": "CJ Seafood is a CJ Group affiliate able to draw on the group's capital and distribution network, and states it holds the No.1 domestic market share in fish cake and crab stick. It has scaled up its laver business through the Samhae Sangsa acquisition and leverages group synergies such as the Bibigo-branded grilled fish line. This group relationship offers stability in financing and distribution access."
+    "ko": "2026년 2분기 지배주주 순이익은 7.4억원으로 전 분기 대비 흑자 전환했다. 영업활동 현금흐름은 2022년 -9.1억원에서 2023년 55.1억원, 2024년 41.5억원, 2025년 19.6억원으로 플러스를 이어 왔다. 본업에서 현금이 유입되는 구조가 유지된 점이 강세 측 근거다.",
+    "en": "Net income attributable to controlling shareholders turned to KRW 742 million in the second quarter of 2026 from a loss in the first quarter. Operating cash flow went from negative KRW 906 million in 2022 to KRW 5.51 billion in 2023, KRW 4.15 billion in 2024 and KRW 1.96 billion in 2025. Continued positive operating cash flow is a basis for the bull case."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "만성적 영업손익 변동성",
-    "en": "Chronic Operating Profit Volatility"
+    "ko": "영업적자 지속",
+    "en": "Persistent operating losses"
    },
    "body": {
-    "ko": "최근 다섯 개 분기(2025년 2분기~2026년 2분기) 중 네 개 분기에서 영업손실을 기록했고, 유일한 흑자 분기는 계절적 성수기인 2025년 4분기였다. 2026년 1분기에는 손실이 오히려 확대돼 흑자전환 목표와 상반된 흐름을 보였다. 이는 원가 구조 개선이 아직 뚜렷한 성과로 이어지지 않았음을 시사한다.",
-    "en": "Four of the most recent five quarters (Q2 2025 through Q2 2026) posted operating losses, with the only profitable quarter being the seasonally strong Q4 2025. In Q1 2026 the loss actually widened, running counter to the stated turnaround target. This suggests cost-structure improvements have not yet translated into clear results."
+    "ko": "2026년 1분기부터 3분기까지 3개 분기 연속 적자이며, 3분기 영업손실은 8.6억원으로 전년 동기 대비 적자가 확대됐다. 2025년 영업손실 9.1억원은 2024년 영업이익 43.6억원에서 적자로 돌아선 결과다. 매출이 늘어도 수익성이 따라오지 않는 점이 약세 측의 핵심 근거다.",
+    "en": "The company has posted operating losses in three consecutive quarters from the first quarter to the third quarter of 2026, and the third-quarter operating loss of KRW 864 million widened year on year. The KRW 910 million operating loss in 2025 followed operating profit of KRW 4.36 billion in 2024. Sales growth not carrying through to profit is the core of the bear case."
    }
   },
   {
    "title": {
-    "ko": "구조적 마진 압박",
-    "en": "Structural Margin Pressure"
+    "ko": "수산 부문 축소와 원가 부담",
+    "en": "Shrinking seafood segment and cost pressure"
    },
    "body": {
-    "ko": "2025년 매출원가율은 88.5%까지 치솟았고, 원초와 연육 가격이 동반 상승하는 가운데 어묵 평균 판매가격은 제품 믹스 변화로 오히려 하락했다. 영업이익률은 2022년 2.7%에서 2025년 -0.5%로 꾸준히 악화된 흐름을 보였다. 원가 상승분을 판가에 즉각 반영하기 어려운 시장 구조도 마진 회복의 걸림돌로 지목된다.",
-    "en": "The 2025 cost-of-sales ratio surged to 88.5%, and while raw laver and surimi prices rose together, average fish-cake selling prices actually declined due to a product-mix shift. The operating margin steadily deteriorated from 2.7% in 2022 to -0.5% in 2025. A market structure that makes it difficult to immediately pass on cost increases to selling prices has also been cited as an obstacle to margin recovery."
+    "ko": "수산 부문 매출은 2023년 1,255억원에서 2025년 1,142억원으로 줄었고, 같은 보도에서 생산량은 2023년 대비 10% 가까이 감소했다. 2025년 기준 보도에서 전체 매출원가율은 88.5%까지 올랐다. 원재료 가격 부담이 판가에 전가되지 못하면 마진 압박이 이어질 수 있다.",
+    "en": "Seafood segment sales fell from KRW 125.5 billion in 2023 to KRW 114.2 billion in 2025, and production dropped nearly 10% over the same period according to the report. A 2025-based report put the overall cost of sales ratio at 88.5%. If raw material costs cannot be passed through to selling prices, margin pressure could persist."
    }
   },
   {
    "title": {
-    "ko": "본업 대비 지분법이익 의존",
-    "en": "Reliance on Equity-Method Gains Over Core Operations"
+    "ko": "이익 규모와 변동성",
+    "en": "Small earnings base and volatility"
    },
    "body": {
-    "ko": "연결 순이익이 흑자를 유지한 배경은 본업 개선이 아니라 태국 관계기업의 지분법이익에 있다. 본업인 어묵·김 부문의 영업적자가 지속되는 한, 관계기업 실적 변동에 따라 연결 순이익의 안정성도 함께 흔들릴 수 있다. 이는 본질적 수익 개선과는 별개의 리스크로 남는다.",
-    "en": "The reason consolidated net income has stayed positive lies not in core-business improvement but in equity-method gains from the Thai affiliate. As long as the core fish-cake and laver segments continue to post operating losses, the stability of consolidated net income remains tied to fluctuations at the affiliate, a risk separate from genuine profitability improvement."
+    "ko": "지배주주 순이익은 2025년 28.3억원으로 전년 대비 43.7% 감소했고, 2026년 1분기에는 12.9억원 순손실이었다. 최근 4개 분기 합계는 18.2억원에 그친다. 이익 기반이 작아 한두 개 분기 결과에 따라 흐름이 크게 달라지는 점이 약세 측 부담이다.",
+    "en": "Net income attributable to controlling shareholders fell 43.7% to KRW 2.83 billion in 2025, and the first quarter of 2026 recorded a net loss of KRW 1.29 billion. The last four quarters total only KRW 1.82 billion. A small earnings base means the trend can change sharply based on one or two quarters."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "원자재 가격 변동성",
-    "en": "Raw Material Price Volatility"
+    "ko": "원재료·원가",
+    "en": "Raw materials and costs"
    },
    "body": {
-    "ko": "원초(물김)와 연육은 전체 원재료 매입액의 상당 비중을 차지하며, 국제 수급과 고수온 등 기후 요인에 따라 가격이 크게 출렁인다. 최근 3년간 마른김 도매가격이 크게 오른 사례처럼, 향후에도 기상 이변이나 수출 수요 급증 시 원가 부담이 재차 확대될 수 있다. 정부 정책의 실효성 여부도 변수다.",
-    "en": "Raw green laver and surimi account for a substantial share of raw-material purchases, and prices swing significantly with international supply-demand conditions and climate factors such as high sea temperatures. As seen in the sharp rise in dried laver wholesale prices over the past three years, cost pressure could re-intensify with weather anomalies or a surge in export demand, and the effectiveness of government policy measures remains uncertain."
+    "ko": "수산물과 김 등 원재료 가격 변동은 매출원가율을 직접 좌우한다. 2025년 기준 보도에서 매출원가율이 88.5%까지 올랐다는 점이 이 위험의 크기를 보여 준다. 원가 상승분을 판매 가격에 얼마나 반영할 수 있는지가 관건이다.",
+    "en": "Price swings in seafood and seaweed directly drive the cost of sales ratio. A 2025-based report put the ratio at 88.5%, showing the scale of this exposure. How much cost increases can be reflected in selling prices is the key question."
    }
   },
   {
    "cat": {
-    "ko": "판가 인상 제약",
-    "en": "Constraints on Price Increases"
+    "ko": "소비·업황",
+    "en": "Consumer demand and sector conditions"
    },
    "body": {
-    "ko": "정부의 물가 안정 기조 속에서 경쟁사들도 원가 부담을 인정하면서 가격 인상 계획이 없다고 밝히는 등, 업계 전반적으로 원가 상승분을 판가에 즉시 반영하기 어려운 환경이다. CJ씨푸드 역시 시장 구조상 원가 상승분을 즉각적으로 판가에 반영하기 어렵다고 밝힌 바 있다. 이는 마진 회복 속도를 제약하는 요인이다.",
-    "en": "Amid the government's price-stability stance, competitors have also acknowledged cost pressure while stating they have no plans to raise prices, reflecting an industry-wide environment where cost increases are difficult to pass through immediately. CJ Seafood itself has stated that market structure makes it hard to immediately reflect cost increases in selling prices, constraining the pace of margin recovery."
+    "ko": "회사는 상반기부터 이어진 식품 업계 시장 부진이 계속되고 있다고 설명했다. 수산 부문 매출과 생산량이 줄어드는 흐름도 소비 둔화와 맞물려 있을 가능성이 있다. 업황이 장기화되면 매출 회복이 수익 개선으로 이어지기 어려울 수 있다.",
+    "en": "The company said the weak food market that started in the first half of 2026 is continuing. Declines in seafood segment sales and production may also be linked to slower consumption. If sector weakness lasts, a sales recovery may struggle to become profit improvement."
    }
   },
   {
    "cat": {
-    "ko": "소형주 특성",
-    "en": "Small-Cap Characteristics"
+    "ko": "실적 확정성·주가 변동성",
+    "en": "Result finality and share price volatility"
    },
    "body": {
-    "ko": "시가총액이 작고 절대 이익 규모도 크지 않아 실적 변동에 따른 주가 반응이 상대적으로 클 수 있다. 유동성이 제한적인 소형주 특성상 거래량에 따른 가격 변동성에도 유의할 필요가 있다. 이러한 특성은 정보 접근성과 분석 커버리지 측면에서도 제약으로 작용할 수 있다.",
-    "en": "With a small market capitalization and modest absolute profit levels, share-price reactions to earnings swings can be relatively pronounced. Given the limited liquidity typical of small-cap stocks, volatility tied to trading volume also warrants attention. These characteristics can also constrain information accessibility and analyst coverage."
+    "ko": "2026년 3분기 실적은 외부감사인의 회계감사가 완료되지 않은 상태에서 작성된 잠정치로, 감사 결과에 따라 일부 수치가 바뀔 수 있다고 명시됐다. 시가총액 규모가 작은 소형주라 주가 변동 폭이 커질 수 있다. 이 두 요인은 실적과 주가 해석 모두에 불확실성을 더한다.",
+    "en": "The third-quarter 2026 results were prepared before the external audit was complete and may change depending on audit results. As a small-cap stock, the share price may move sharply. Both factors add uncertainty to interpreting earnings and the share price."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 9월",
-    "en": "September 2026"
+    "ko": "2027년 1월~2월 중(예정일 미확인)",
+    "en": "January to February 2027 (date not confirmed)"
    },
    "what": {
-    "ko": "해양수산부가 매년 9월 김 주생산 시기(10월~5월)를 앞두고 진행하는 김 산업협의체 수급관리 협의 결과를 확인할 필요가 있다 — 하반기 원초 가격 흐름의 단기 가늠자가 될 수 있다.",
-    "en": "Check the outcome of the Ministry of Oceans and Fisheries' annual September laver industry council, held ahead of the October-to-May main production season, as a near-term gauge for second-half raw laver price trends."
+    "ko": "2026년 4분기 실적 발표. 연간 영업손익이 적자 기조에서 벗어나는지, 4분기 매출이 2026년 3분기 수준을 유지하는지 확인한다.",
+    "en": "Fourth-quarter 2026 results. Check whether the operating result moves away from losses and whether fourth-quarter sales hold near the third-quarter 2026 level."
    }
   },
   {
    "when": {
-    "ko": "2026년 11월 중순경",
-    "en": "Mid-November 2026 (expected)"
+    "ko": "2027년 3월 말",
+    "en": "Late March 2027"
    },
    "what": {
-    "ko": "2026년 3분기 실적 발표(잠정치)에서 원가 부담 완화 여부와 흑자전환 목표 달성 경로를 확인해야 한다.",
-    "en": "Watch the (preliminary) Q3 2026 earnings release for signs of easing cost pressure and progress toward the stated operating-profit turnaround target."
+    "ko": "2026년 사업보고서 제출. 부문별 매출, 수산 부문 생산량과 매출 추이, 매출원가율, 영업외 손익을 정기보고서 기준으로 확인한다.",
+    "en": "Submission of the 2026 annual report. Check segment sales, seafood production and sales trends, the cost of sales ratio and non-operating items on an audited basis."
    }
   },
   {
    "when": {
-    "ko": "2026년 10월~2027년 5월",
-    "en": "October 2026 - May 2027"
+    "ko": "2027년 5월 15일 전후",
+    "en": "Around May 15, 2027"
    },
    "what": {
-    "ko": "신규 김 양식철 생산량과 마른김 도매가격 추이(aT 통계)를 모니터링해 원가 안정화가 실제로 지속되는지 확인할 필요가 있다.",
-    "en": "Monitor production volumes and dried laver wholesale price trends (via aT statistics) during the new laver farming season to verify whether cost stabilization is actually sustained."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 3월경",
-    "en": "Around March 2027"
-   },
-   "what": {
-    "ko": "2026년 연간 사업보고서·결산 발표에서 회사가 내건 흑자전환 목표의 실제 달성 여부를 확인해야 한다.",
-    "en": "Check the 2026 full-year annual report and results disclosure to confirm whether the company's stated turnaround-to-profit target was actually achieved."
+    "ko": "2027년 1분기 분기보고서. 3개 분기 연속 적자가 이어지는지와 원재료 부담이 완화되는지가 확인 포인트다.",
+    "en": "First-quarter 2027 quarterly report. The checkpoints are whether the losing streak of three consecutive quarters continues and whether raw material pressure eases."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "CJ씨푸드는 어묵·맛살 부문의 국내 시장 지위와 태국 관계기업의 지분법이익을 기반으로 순이익 흑자를 유지해왔지만, 본업인 김·수산가공식품 부문은 원초·연육 가격 급등의 영향으로 2025년 영업적자로 전환됐고 2026년 상반기까지도 분기별 등락이 이어지고 있다. 회사는 기업간거래 확대와 가동률 극대화를 통한 원가절감으로 2026년 흑자전환을 목표로 내걸었으나, 1분기 손실 확대와 2분기 손실 축소가 엇갈리며 목표 달성 경로는 아직 명확하지 않다. 산업 측면에서는 2년 연속 물김 생산이 양호해 원초 가격이 안정세를 보이고 있다는 정부 설명과, 정부의 김 공급망 혁신방안(양식면적 확대, 비축제 도입 등)이 중장기 원가 변동성을 낮출 잠재 요인으로 꼽힌다. 반면 매출원가율이 88.5%까지 오른 점, 어묵 판가가 오히려 하락한 점, 연결 순이익이 본업이 아닌 지분법이익에 의존하는 구조는 여전히 부담 요인으로 남아 있다. 투자자로서는 다가오는 9월 김 산업협의체 협의 결과와 3분기 실적을 통해 원가-판가 구조 개선이 실제로 진행되는지를 확인하는 것이 중요할 것으로 보인다. 이 리포트는 정보 제공 목적으로 작성됐으며 매수·매도 의견을 포함하지 않는다.",
-   "en": "CJ Seafood has maintained positive net income on the strength of its domestic market position in fish cake and crab stick and equity-method gains from its Thai affiliate, but its core laver and processed seafood business swung to an operating loss in 2025 amid surging raw laver and surimi costs, with quarterly results continuing to fluctuate through the first half of 2026. The company has set a target of returning to operating profit in 2026 through expanded B2B transactions and higher factory utilization, but a widening loss in Q1 followed by a narrowing loss in Q2 leaves the path to that target unclear. On the industry side, two consecutive years of healthy raw laver output have kept prices at a stable level per government statements, and the government's laver supply-chain overhaul plan (expanded farming areas, a stockpiling system, and more) is cited as a potential factor reducing medium-term cost volatility. On the other hand, a cost-of-sales ratio that climbed to 88.5%, fish-cake selling prices that actually declined, and a consolidated net income structure reliant on equity-method gains rather than the core business remain burdens. Investors will likely want to watch the upcoming September laver industry council outcome and Q3 earnings to gauge whether the cost-versus-price structure is genuinely improving. This report is provided for informational purposes and does not constitute a buy or sell recommendation."
+   "ko": "CJ씨푸드는 2026년 3분기 매출 638억원으로 전년 동기 대비 29.0% 늘어 공시 실적 기준 최근 다섯 개 분기 중 가장 큰 분기 매출을 기록했다. 그러나 같은 분기 영업손실은 8.6억원으로 확대됐고, 2026년 1분기부터 3개 분기 연속 적자다. 2025년에는 영업손실 9.1억원으로 2024년 영업이익 43.6억원에서 적자로 전환했다. 수산 부문 매출과 생산량은 2023년 이후 줄었고, 2025년 기준 보도에서 매출원가율은 88.5%까지 올랐다. 재무구조는 부채비율이 2023년 115.5%에서 2025년 91.5%로 낮아지며 개선됐다. 주가는 장부상 자본총계를 밑도는 구간에서 거래되고 있으며, 최근 4개 분기 지배주주 순이익 합계는 18.2억원이다. 다음 확인 지점은 2026년 4분기 실적과 2026년 사업보고서이며, 영업이익률이 적자에서 벗어나는지가 핵심이다.",
+   "en": "CJ Seafood recorded third-quarter 2026 sales of KRW 63.8 billion, up 29.0% year on year, the largest quarterly sales among the last five quarters with disclosed results. However, the operating loss widened to KRW 864 million in the same quarter, and the company has posted losses in three consecutive quarters since the first quarter of 2026. In 2025 it swung to an operating loss of KRW 910 million from operating profit of KRW 4.36 billion in 2024. Seafood segment sales and production have declined since 2023, and a 2025-based report put the cost of sales ratio at 88.5%. The balance sheet improved, with the debt-to-equity ratio falling from 115.5% in 2023 to 91.5% in 2025. The share price trades below book equity, and net income attributable to controlling shareholders totaled KRW 1.82 billion over the last four quarters. The next checkpoints are the fourth-quarter 2026 results and the 2026 annual report, and the key question is whether the operating margin moves out of negative territory."
   }
  },
  "sources": [
-  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=664874",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=QJgj8EtJa9rRzDmu",
-  "https://dart.fss.or.kr/navi/searchNavi.do?naviCrpCik=00129013&naviCrpNm=CJ%EC%94%A8%ED%91%B8%EB%93%9C&naviCode=A002",
-  "https://www.newsquest.co.kr/news/articleView.html?idxno=264175",
-  "https://alphasquare.co.kr/home/stock-summary?code=011155",
-  "https://jasoseol.com/companies/2947/insights",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=ta8D1J3dqRkPgSPJ",
+  "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=714235",
+  "https://www.vegannews.co.kr/news/article.html?no=403320",
+  "https://www.ebn.co.kr/news/articleView.html?idxno=1731094",
+  "https://m.news.nate.com/view/20261110n25495",
+  "https://www.g-enews.com/article/Distribution/2026/11/20261110114207994740eacf404_1",
+  "https://www.thebigdata.co.kr/view.php?ud=202611101327148500a47484cf8_23",
+  "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=712953",
+  "https://www.hankyung.com/article/202611107052i",
+  "https://kind.krx.co.kr/external/2026/05/15/002157/20260515004789/11013.htm",
+  "https://kind.krx.co.kr/external/2024/05/16/001701/20240516003989/11013.htm",
+  "https://www.kdfnews.com/news/articleView.html?idxno=190708",
+  "https://kind.krx.co.kr/external/2025/05/15/002036/20250515004782/11013.htm",
+  "https://m.sedaily.com/article/20112413",
+  "https://cjnet.irplus.co.kr/fileupload/kor/business/[CJ]%EB%B0%98%EA%B8%B0%EB%B3%B4%EA%B3%A0%EC%84%9C(2022.08.16).pdf",
+  "https://alphasquare.co.kr/home/stock-summary?code=011150",
   "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=011150",
-  "https://judal.co.kr/?shareToken=ysT4QTANcJeNKtVi&view=stockAI",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A011150",
-  "https://m.irgo.co.kr/IR-COMP/011150/CJ%EC%94%A8%ED%91%B8%EB%93%9C-IR-PAGE",
-  "https://www.jobplanet.co.kr/companies/23196/landing/cj%EC%94%A8%ED%91%B8%EB%93%9C",
-  "https://biz.newdaily.co.kr/site/data/html/2024/09/02/2024090200114.html",
-  "https://www.k5.co.kr/stock/011150",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20250317001065&docno=&viewerhost=",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A011150&cID=&MenuYn=Y&ReportGB=B&NewMenuID=105&stkGb=701",
-  "https://littlebproject.com/stock/011150/290/34602",
-  "https://www.investing.com/equities/cj-seafood-corp-prf"
+  "https://www.newsquest.co.kr/news/articleView.html?idxno=264175"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "011150",
  "name": "CJ씨푸드",
  "name_en": "CJ SEAFOOD CORPORATION",
@@ -223,11 +212,11 @@
   "식음료"
  ],
  "market": "코스피",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 18:51",
- "dataDate": "20260904",
+ "reportDate": "2026-11-18",
+ "reportTs": "2026-11-18 14:22",
+ "dataDate": "20261117",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-11-18",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -297,12 +286,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 42474176399,
-    "op": -1488275703,
-    "np_owner": 295182813
-   },
-   {
     "q": "2025Q3",
     "rev": 49423564141,
     "op": -634738682,
@@ -325,28 +308,36 @@
     "rev": 48254180054,
     "op": -578078685,
     "np_owner": 741599382
+   },
+   {
+    "q": "2026Q3",
+    "rev": 63753527025,
+    "op": -863744533,
+    "np_owner": 76792004
    }
   ],
   "valuation": {
-   "price": 1994,
-   "mcap": 0.0716,
+   "price": 1654,
+   "mcap": 0.0594,
    "shares": 35930773,
    "total_shares": 36131000,
    "wavg_shares": 36245813,
-   "per": 41.542,
-   "eps": 48,
-   "pbr": 0.8172,
-   "bps": 2440,
-   "roe_ttm": 2.0,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": 1756461210,
+   "per": 33.08,
+   "eps": 50,
+   "pbr": 0.7102,
+   "bps": 2329,
+   "roe_ttm": 2.2,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": 1822966538,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 0.82,
+   "eps_src": "공시",
+   "pbr_krx": 0.68,
    "bps_krx": 2447.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
    "div": 0.0
   }
- }
+ },
+ "textRules": 3
 }

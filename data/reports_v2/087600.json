@@ -1,220 +1,226 @@
 {
  "title": {
-  "ko": "차량용 CIS 편중 탈피, 드론·로봇 다각화 시동",
-  "en": "Beyond Automotive CIS: Diversifying Into Drones and Robotics"
+  "ko": "차량용 CIS 팹리스, 적자 축소와 과제 병존",
+  "en": "Pixelplus: Narrowing Losses, Automotive CIS Concentration"
  },
  "lead": {
-  "ko": "픽셀플러스는 차량용 이미지센서 중심의 사업구조에서 드론·보안·로봇 시장으로 다각화를 모색하며 실적 회복을 시도하고 있다.",
-  "en": "Pixelplus is seeking to diversify beyond its automotive-centric image sensor business into drones, security, and robotics as it works toward an earnings recovery."
+  "ko": "픽셀플러스는 차량용 이미지센서 매출 비중이 86~89%에 이르는 구조에서 2026년 들어 영업손실 폭을 줄이고 있으나, 4개 분기 연속 영업적자와 로봇청소기용 센서의 2027~2028년 양산 일정이 실적 경로를 가를 핵심 변수다.",
+  "en": "Pixelplus relies on automotive image sensors for 86% to 89% of revenue, and its operating losses have narrowed through 2026, but four straight loss-making quarters and the 2027 to 2028 timing of robot-vacuum sensors remain the key variables."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출 427억원, 영업손실 56억원으로 2024년 흑자에서 다시 적자로 전환했다.",
-   "en": "2025 consolidated revenue was KRW 42.7 billion with an operating loss of KRW 5.6 billion, reversing the 2024 profit."
+   "ko": "2025년 매출은 427억원으로 2022~2025년 중 가장 작은 해였다. 2022년은 629억원으로 가장 큰 해다.",
+   "en": "Revenue was KRW 42.7 billion in 2025, the smallest year in 2022 to 2025. The largest year was 2022, at KRW 62.9 billion."
   },
   {
-   "ko": "2025년 기준 매출의 86%가 차량용 센서 사업부에서 발생하며 중국 매출 비중이 63%에 달해 지역·전방산업 편중이 크다.",
-   "en": "As of 2025, 86% of revenue came from the automotive sensor division, with China accounting for 63% of sales, reflecting heavy regional and end-market concentration."
+   "ko": "영업손실은 2026년 1분기 20.5억원, 2분기 19.9억원, 3분기 15.4억원으로 줄었고, 2026년 3분기 매출은 128억원으로 전년 동기 대비 8.4% 늘었다.",
+   "en": "Operating losses narrowed from KRW 2.05 billion in the first quarter of 2026 to KRW 1.99 billion in the second and KRW 1.54 billion in the third, while third-quarter 2026 revenue of KRW 12.8 billion rose 8.4% year on year."
   },
   {
-   "ko": "회사는 드론·영상보안 CIS와 로봇청소기용 센서 PoC 등으로 사업 다각화를 추진 중이며, 유럽 시장 공략과 중국 의존도 축소를 병행하고 있다.",
-   "en": "The company is pursuing diversification through drone and security CIS along with robot vacuum sensor PoC projects, while pursuing the European market and reducing China dependence."
+   "ko": "2025년 4분기부터 2026년 3분기까지 4개 분기 연속 영업적자이며 같은 기간 지배주주 순손실 합계는 34.7억원이다. 2026년 3분기에는 지배주주 순이익 2.3억원으로 흑자 전환했다.",
+   "en": "The company posted operating losses in four consecutive quarters from the fourth quarter of 2025 to the third quarter of 2026, with cumulative net loss attributable to controlling shareholders of KRW 3.47 billion. Net income attributable to controlling shareholders turned positive at KRW 228 million in the third quarter of 2026."
   },
   {
-   "ko": "2025Q3~2026Q2 4개 분기 중 2025Q3만 영업이익이 흑자를 기록했고, 나머지 세 분기는 영업손실을 지속했다.",
-   "en": "Of the four quarters from 2025Q3 to 2026Q2, only 2025Q3 posted an operating profit, while the other three quarters remained in operating losses."
-  },
-  {
-   "ko": "유럽의 운전자 모니터링 시스템(DMS) 의무 장착 법제화가 신규 수요 요인으로 거론되나, 미중 반도체 갈등과 중국의 반도체 자립 기조는 구조적 부담으로 남아 있다.",
-   "en": "Europe's mandatory driver monitoring system (DMS) legislation is cited as a new demand driver, but the US-China semiconductor conflict and China's push for chip self-sufficiency remain structural headwinds."
+   "ko": "사업 다변화 축은 차량용 글로벌셔터·DMS 수요와 미국 기업 Q와 협업한 AI 로봇청소기용 센서다. 차량 매출 집중, 중국 매출 비중, 삼성전자 200mm 파운드리 의존이 약세 요인이다.",
+   "en": "Diversification rests on global-shutter sensors for driver monitoring in cars and on an AI robot-vacuum sensor developed with U.S. company Q. Concentration in automotive sales, China exposure and reliance on Samsung Electronics' 200mm foundry line are the main bearish factors."
   }
  ],
  "business": {
-  "ko": "픽셀플러스는 2000년 설립되어 2015년 코스닥에 상장한 CMOS 이미지센서(CIS) 및 영상처리 IC 전문 반도체 설계(팹리스) 기업이다. 회사는 CMOS 이미지 센서의 웨이퍼 및 패키지 공정을 위탁·제조하여 판매하는 구조로, 자체 파운드리 없이 설계·판매에 집중한다. 사업 구성은 2025년 기준 차량용 센서 사업부가 매출의 86%를 차지하며, 보안(5%)과 가전(6%) 사업부가 나머지를 구성한다. 주요 제품은 자동차 후방카메라·서라운드뷰모니터(SVM)·인캐빈 모니터링용 이미지센서, 보안카메라용 CIS, 특수목적용 Camera SoC 등이다. 지역별로는 2025년 기준 중국이 매출의 63%로 절대적 비중을 차지하며 한국(20%), 대만(9%), 일본(8%)이 뒤를 잇는다. 최근에는 드론용 신규 센서 개발을 완료하고 유럽 시장을 중심으로 판촉을 계획하고 있으며, 국내 가전업체와 로봇청소기용 센서 기술검증(PoC)도 진행하고 있다. 글로벌 이미지센서 시장은 소니, 옴니비전, 삼성전자 등이 선두를 형성하고 있어 픽셀플러스는 이들 대형사와의 정면 경쟁을 피해 차량용 애프터마켓과 특화 기술(HDR, LFM, 글로벌셔터) 중심의 틈새 전략을 취하고 있다.",
-  "en": "Pixelplus, founded in 2000 and listed on KOSDAQ in 2015, is a fabless semiconductor design company specializing in CMOS image sensors (CIS) and image processing ICs. The company outsources wafer and packaging processes for its CMOS image sensors, focusing on design and sales without operating its own foundry. As of 2025, the automotive sensor division accounted for 86% of revenue, with the security (5%) and home appliance (6%) divisions making up the remainder. Key products include automotive rear-view, surround-view monitor (SVM), and in-cabin monitoring image sensors, security camera CIS, and special-purpose camera SoCs. Regionally, China represented 63% of 2025 revenue by far the largest share, followed by Korea (20%), Taiwan (9%), and Japan (8%). The company recently completed development of a new drone sensor and plans to promote it primarily in the European market, while also conducting proof-of-concept (PoC) testing of robot vacuum sensors with a domestic appliance maker. The global image sensor market is led by Sony, OmniVision, and Samsung Electronics, so Pixelplus has pursued a niche strategy centered on the automotive aftermarket and differentiated technologies such as HDR, LFM, and global shutter rather than direct competition with these larger players."
+  "ko": "픽셀플러스는 2000년에 설립된 CMOS 이미지센서(CIS)·이미지신호처리장치(ISP) 전문 팹리스 반도체 기업이다. 웨이퍼와 패키지 공정은 외부에 위탁하고 설계와 판매에 집중하는 구조다. 2025년 매출 구성에서 차량용 센서 사업부는 86%, 보안 사업부는 5%, 가전 사업부는 6%를 차지했다는 2026년 보도가 있다. 2026년 상반기 기준으로는 차량 매출 비중이 89.3%, 홈 가전 매출 비중이 2.4%로 집계됐다는 2026년 9월 보도도 있다. 주력 제품은 전방·후방·사이드 카메라와 이를 결합한 서라운드 뷰 모니터(SVM)용 센서이며, 일본·유럽·중국 완성차 기업에 납품한다고 2025년 초 보도됐다. 차별점은 고속 이동체를 촬영할 때 영상 왜곡을 줄이는 글로벌셔터 방식으로, 2024년 4월에는 130만 화소 글로벌셔터 제품 PG7130KA를 출시했다. 차량 외에는 AI 로봇, 스마트 가전, 보안, 물류 등으로 적용처를 넓히고 있으며, 가전용 PK9210K는 120dB HDR을 지원한다고 소개됐다. 지역별로는 2024년 보도 기준 중국 매출 비중이 40~50%로 한국, 대만, 일본 순이었다. 경쟁 구도에서는 소니, 옴니비전, 삼성전자 등 선두 업체와 가격을 앞세운 중국 업체 사이에서 기술 수준은 높이고 가격은 낮춘 2위 전략을 쓰겠다고 회사가 밝혔다. 2026년 9월 보도에 따르면 미국 기업 Q와 AI 로봇청소기용 센서를 공동 개발 중이며, 재설계 중인 센서는 200만 화소 수준이다. 차량 중심 고객 구조는 레퍼런스가 쌓인 장점이면서 동시에 매출 변동 리스크로 작용한다.",
+  "en": "Pixelplus is a fabless semiconductor company founded in 2000 that designs CMOS image sensors (CIS) and image signal processors (ISP). It outsources wafer and packaging processes and concentrates on design and sales. A 2026 report said automotive sensors accounted for 86% of 2025 revenue, security for 5% and consumer for 6%. A September 2026 report put automotive at 89.3% of revenue and home appliances at 2.4% for the first half of 2026. Core products are front, rear and side cameras and sensors for surround view monitors (SVM), supplied to automakers in Japan, Europe and China, according to a report in early 2025. Its differentiator is global-shutter technology, which reduces image distortion on fast-moving objects, and in April 2024 it launched PG7130KA, a 1.3-megapixel global-shutter product. Beyond automotive, it is expanding into AI robots, smart appliances, security and logistics, and its appliance-oriented PK9210K is described as supporting 120dB HDR. By region, a 2024 report put China at 40% to 50% of revenue, ahead of Korea, Taiwan and Japan. Competitively, it faces leaders such as Sony, OmniVision and Samsung Electronics, and low-priced Chinese vendors, and the company says it pursues a second-place strategy of raising technical performance while lowering prices. A September 2026 report said it is co-developing an AI robot-vacuum sensor with U.S. company Q, with the redesigned sensor at about 2 megapixels. Its automotive-centric customer base is both a track record and a source of revenue volatility."
  },
  "earnings": {
-  "ko": "픽셀플러스의 연간 실적은 뚜렷한 등락을 반복해왔다. 2022년 매출 629억원, 영업이익 29억원으로 흑자를 기록했으나, 2023년에는 매출이 507억원으로 줄고 영업손실 63억원을 내며 적자로 전환했다. 2024년에는 매출 535억원, 영업이익 8억원으로 다시 흑자 전환에 성공했으나, 2025년에는 매출이 427억원으로 20.1% 감소하고 영업손실이 56억원으로 확대되며 흑자 1년 만에 재차 적자로 돌아섰다. 영업이익률은 2022년 4.6%에서 2023년 -12.4%, 2024년 1.6%, 2025년 -13.2%로 등락을 반복했다. 최근 분기별로도 변동성이 크게 나타난다. 2025Q2에는 매출 93.5억원에 영업손실 22.3억원을 기록했고, 2025Q3에는 매출 117.9억원, 영업이익 3.5억원으로 유일하게 흑자를 냈다. 이후 2025Q4에는 매출 109.2억원에 영업손실이 28.7억원으로 확대되었고, 2026Q1에는 매출 121.4억원, 영업손실 20.5억원, 2026Q2에는 매출 118.4억원, 영업손실 19.9억원을 기록해 최근 3개 분기 연속 영업손실 상태다. 지배주주 순이익도 분기별로 손익이 뒤섞여 있으며, 특히 2026Q2 순손실 19.5억원은 4개 분기 중 가장 큰 규모다. 현금흐름 측면에서는 2023년 영업활동현금흐름이 113.8억원으로 양호했던 반면 2024년에는 -3.4억원으로 순이익과 반대 방향을 보였고, 2025년에는 다시 29.5억원으로 개선되는 등 손익과 현금흐름의 괴리가 관찰된다.",
-  "en": "Pixelplus's annual results have shown pronounced swings. In 2022, revenue was KRW 62.9 billion with an operating profit of KRW 2.9 billion, but in 2023 revenue fell to KRW 50.7 billion and the company posted an operating loss of KRW 6.3 billion, turning negative. In 2024, the company returned to profit with revenue of KRW 53.5 billion and operating profit of KRW 0.8 billion, but in 2025 revenue declined 20.1% to KRW 42.7 billion and the operating loss widened to KRW 5.6 billion, reversing into a loss just one year after turning profitable. The operating margin fluctuated from 4.6% in 2022 to -12.4% in 2023, 1.6% in 2024, and -13.2% in 2025. Recent quarterly figures also show significant volatility. In 2025Q2, revenue was KRW 9.35 billion with an operating loss of KRW 2.23 billion, while 2025Q3 was the only quarter to post an operating profit, at KRW 0.35 billion on revenue of KRW 11.79 billion. Subsequently, 2025Q4 saw revenue of KRW 10.92 billion with the operating loss widening to KRW 2.87 billion, followed by 2026Q1 with revenue of KRW 12.14 billion and an operating loss of KRW 2.05 billion, and 2026Q2 with revenue of KRW 11.84 billion and an operating loss of KRW 1.99 billion, marking three consecutive quarters of operating losses. Net income attributable to owners has also fluctuated between profit and loss on a quarterly basis, with the 2026Q2 net loss of KRW 1.95 billion being the largest among the recent four quarters. On the cash flow side, operating cash flow was a healthy KRW 11.38 billion in 2023, moved to negative KRW 0.34 billion in 2024 diverging from the net profit direction, and then recovered to KRW 2.95 billion in 2025, illustrating a gap between reported earnings and cash generation."
+  "ko": "연간 매출은 2022년 629억원에서 2023년 507억원(전년 대비 19.4% 감소)으로 줄었고, 2024년 535억원(전년 대비 5.5% 증가)으로 회복된 뒤 2025년에는 427억원(전년 대비 20.1% 감소)으로 내려앉았다. 2022년이 기간 중 가장 큰 해이고 2025년이 가장 작은 해다. 영업이익은 2022년 29.1억원에서 2023년 영업손실 62.8억원으로 적자 전환했고, 2024년에는 8.5억원으로 흑자 전환했다가 2025년 영업손실 56.3억원으로 다시 적자 전환했다. 영업이익률은 2022년 4.6%, 2023년 -12.4%, 2024년 1.6%, 2025년 -13.2%로 등락이 컸다. 지배주주 순이익은 2022년 2.5억원, 2023년 순손실 4.3억원, 2024년 34.7억원, 2025년 순손실 33억원이며, 당기순이익(비지배지분 포함)도 같은 연도에 각각 2.5억원, 순손실 4.3억원, 34.7억원, 순손실 33억원으로 공시됐다. 2025년 매출 감소에 대해 회사는 시장상황 변화에 따른 매출 감소를 주요 원인으로 밝혔다. 2023년 연구개발비는 매출의 21% 수준이었다는 2024년 보도가 있어, 고정비 성격의 R&D 부담이 적자 구간을 키운 요인으로 꼽힌다. 영업활동 현금흐름은 2022년 13억원, 2023년 114억원, 2024년 -3.4억원, 2025년 29.5억원이다. 부채비율은 2022년 12.1%에서 2025년 26.3%로 올랐고, 2025년 말 자본총계 847억원은 전액 지배주주 지분이며 부채총계는 223억원이다. 분기 기준으로는 2025년 3분기 매출 118억원과 영업이익 3.5억원에서 4분기 매출 109억원(전 분기 대비 7.4% 감소)과 영업손실 28.7억원으로 적자 전환했다. 2026년 1분기 매출 121억원(전 분기 대비 11.2% 증가)에 영업손실 20.5억원, 2분기 매출 118억원(전 분기 대비 2.5% 감소)에 영업손실 19.9억원, 3분기 매출 128억원(전 분기 대비 8.0% 증가)에 영업손실 15.4억원이다. 분기 매출이 118억원에서 128억원 범위에 머무는 동안 영업손실이 축소되는 것이 2026년 흐름의 특징이며, 지배주주 순손실은 2026년 2분기 19.5억원으로 가장 컸다가 3분기 순이익 2.3억원으로 돌아섰다.",
+  "en": "Annual revenue fell from KRW 62.9 billion in 2022 to KRW 50.7 billion in 2023, a 19.4% decline, recovered to KRW 53.5 billion in 2024 (up 5.5%), and dropped to KRW 42.7 billion in 2025 (down 20.1%). 2022 was the largest year in the period and 2025 the smallest. Operating profit of KRW 2.91 billion in 2022 became an operating loss of KRW 6.28 billion in 2023, returned to a profit of KRW 846 million in 2024, and became an operating loss of KRW 5.63 billion in 2025. Operating margin ran at 4.6% in 2022, -12.4% in 2023, 1.6% in 2024 and -13.2% in 2025. Net income attributable to controlling shareholders was KRW 248 million in 2022, a net loss of KRW 430 million in 2023, KRW 3.47 billion in 2024 and a net loss of KRW 3.3 billion in 2025. Net income including non-controlling interests was reported as KRW 248 million, a net loss of KRW 430 million, KRW 3.47 billion and a net loss of KRW 3.3 billion for the same years. For 2025, the company attributed the revenue decline to changes in market conditions. A 2024 report said R&D spending in 2023 was about 21% of sales, a cost base that weighed on margins. Operating cash flow was KRW 1.3 billion in 2022, KRW 11.4 billion in 2023, negative KRW 341 million in 2024 and KRW 2.95 billion in 2025. The debt ratio rose from 12.1% in 2022 to 26.3% in 2025, and at the end of 2025 total equity of KRW 84.7 billion was entirely attributable to controlling shareholders against total liabilities of KRW 22.3 billion. On a quarterly basis, the third quarter of 2025 showed revenue of KRW 11.8 billion and operating profit of KRW 354 million, followed by fourth-quarter revenue of KRW 10.9 billion (down 7.4% quarter on quarter) and an operating loss of KRW 2.87 billion. The first quarter of 2026 recorded revenue of KRW 12.1 billion (up 11.2%) and an operating loss of KRW 2.05 billion, the second quarter revenue of KRW 11.8 billion (down 2.5%) and an operating loss of KRW 1.99 billion, and the third quarter revenue of KRW 12.8 billion (up 8.0%, up 8.4% year on year) and an operating loss of KRW 1.54 billion. Through 2026, quarterly revenue stayed in a KRW 11.8 billion to KRW 12.8 billion band while operating losses narrowed, and net loss attributable to controlling shareholders peaked at KRW 1.95 billion in the second quarter before the third quarter returned a net income of KRW 228 million."
  },
  "industry": {
-  "ko": "CMOS 이미지센서 산업은 스마트폰, 보안, 자동차, 최근에는 로봇·드론 등으로 응용 범위가 계속 확장되고 있다. 전방산업 중 자동차는 자율주행·전동화 흐름에 따라 고신뢰성 이미지센서 수요가 늘고 있으며, 유럽은 2025년부터 운전자 모니터링 시스템(DMS) 차량 의무 장착을 법제화해 CIS 수요 증가 요인으로 거론된다. 다만 픽셀플러스가 강한 애프터마켓 자동차 카메라 시장은 중국 정부의 지원을 받는 자국 반도체 기업들의 저가 공세로 경쟁이 격화되고 있으며, 미중 반도체 갈등과 중국의 반도체 자립 기조가 매출 감소의 주요 원인으로 지목되고 있다. 글로벌 이미지센서 시장은 소니, 옴니비전, 삼성전자 등 대형 업체가 주도하고 있어, 픽셀플러스와 같은 중소형 팹리스는 이들과의 직접 경쟁보다 특화 기술과 틈새 응용 분야에서 입지를 확보하는 전략을 취하고 있다. 국내 팹리스 업계 전반적으로도 적자 기업이 늘어나는 추세가 나타나고 있어, 산업 사이클상 구조조정 압력이 이어지고 있는 국면으로 판단된다. 드론·로보틱스 응용은 아직 초기 단계이나 국내 로봇 산업의 투자와 관심이 확대되는 흐름과 맞물려 신규 수요처로 주목받고 있다.",
-  "en": "The CMOS image sensor industry continues to expand its application scope from smartphones and security to automotive, and more recently robotics and drones. Within automotive end-markets, demand for high-reliability image sensors is rising alongside autonomous driving and electrification trends, and Europe's legislation mandating driver monitoring systems (DMS) in vehicles from 2025 has been cited as a factor boosting CIS demand. However, the automotive aftermarket camera segment where Pixelplus has traditionally been strong faces intensifying competition from Chinese semiconductor companies backed by government support offering low-cost products, with the US-China semiconductor conflict and China's push for chip self-sufficiency cited as key reasons for revenue declines. The global image sensor market is led by large players such as Sony, OmniVision, and Samsung Electronics, leading smaller fabless firms like Pixelplus to pursue positioning in specialized technologies and niche applications rather than direct competition. Across Korea's fabless industry more broadly, a growing number of companies have reported losses, suggesting the sector is under ongoing restructuring pressure within its cycle. Drone and robotics applications remain at an early stage but are drawing attention as new demand sources amid growing investment and interest in Korea's robotics industry."
+  "ko": "픽셀플러스가 속한 CIS 시장은 소니, 옴니비전, 삼성전자 등 선두 업체가 주도하고 있으며, 중국 업체가 낮은 가격을 앞세워 세를 넓히는 구도라고 2024년 보도가 전했다. 차량용 CIS는 설계부터 양산까지 최소 5년이 걸리고 차량 인증 요건이 까다로워 신규 진입 장벽이 높다는 점이 2026년 9월 보도에서 지적됐다. 글로벌셔터와 LED 플리커 완화(LFM) 같은 전장용 기술은 엄격한 실증 데이터가 필요해 저가 범용 센서와 구분된다는 기술 매체의 평가가 있다. 수요 측면에서는 유럽의 신차 안전 평가 제도와 도로안전법 개정으로 운전자 상태 감시(DMS)와 탑승자 감지(OMS) 탑재가 의무화되는 흐름이 보도됐다. 2024년 한국IR협의회는 후방 카메라 탑재 법적 요구 강화와 자율주행 단계별 카메라 수 증가를 중장기 성장 요인으로 제시했다. 로보틱스, 드론, 스마트 가전 등 AI·IoT 응용이 넓어지며 이미지센서 수요처가 확대되고 있다는 것도 같은 리포트의 시각이었다. 픽셀플러스는 국내에서 삼성전자 외에 이미지센서를 자체 설계하는 대표 기업으로 자리 잡았다고 회사를 소개한 보도가 있다. 다만 중국 CIS 업체의 가격 공세가 범용 시장을 압박하는 요인이라는 지적이 2026년 기사에서 함께 나왔다. 글로벌 차량용 CIS 시장은 해외 대형 반도체사가 과점하고 있어, 픽셀플러스는 기술 차별화로 점유율을 넓힐 수 있는지가 과제다.",
+  "en": "The CIS market is led by Sony, OmniVision and Samsung Electronics, while Chinese vendors are gaining share with low prices, according to a 2024 report. A September 2026 report pointed out that automotive CIS takes at least five years from design to mass production and faces demanding vehicle certification, which raises entry barriers. Automotive technologies such as global shutter and LED flicker mitigation (LFM) require extensive field validation, which a technology outlet said separates them from low-cost general-purpose sensors. On demand, a report described rules in European new-car safety assessment and road safety legislation that require driver monitoring (DMS) and occupant detection (OMS). A 2024 research report from the Korea Investor Relations Association cited tighter rear-camera requirements and a rising camera count per car as multi-year growth drivers. The same report pointed to robotics, drones and smart appliances as expanding demand for image sensors as AI and IoT applications grow. A report presented the company as one of the few Korean firms, outside Samsung Electronics, that designs image sensors in-house. A 2026 article noted that Chinese CIS price competition pressures the general-purpose segment. The global automotive CIS market is dominated by large overseas semiconductor companies, so the company's challenge is whether technical differentiation can widen its share."
  },
  "outlook": {
-  "ko": "황해수 픽셀플러스 최고재무책임자(CFO)는 2026년 3월 26일 주주총회에서 올해 매출이 지난해와 유사한 수준일 것으로 전망했다. 회사는 실적 개선을 위해 드론과 영상보안 CIS 시장에 가능성이 있다고 언급하며, 관련 신규 센서 개발을 완료하고 올해 유럽 시장을 중심으로 판촉을 계획하고 있다고 밝혔다. 신사업 개발은 이서규 대표의 자녀인 이채은 상무가 이끌고 있으며, 차량용 센서 중심 포트폴리오를 다변화하는 동시에 중국 의존도를 낮추려는 전략이 병행되고 있다. 해외 판로 확대를 위해 유럽 주변카메라 제조사들과 제품 개발을 협의 중이며, 유럽의 DMS 의무화 법제화가 신규 수요 창출로 이어질지가 관전 포인트다. 첨단 산업 분야에서는 국내 가전업체와 로봇청소기용 센서 기술검증(PoC)이 진행되고 있어, 성공적으로 양산 공급까지 이어질 경우 신규 매출원이 될 수 있다. 다만 차량용 반도체는 기술검증부터 품질검증(퀄) 통과까지 상당한 시간이 소요되는 반면 드론·영상 분야는 상대적으로 단기간에 성과로 이어질 수 있다는 점이 회사의 사업 다각화 논리로 제시되고 있다.",
-  "en": "Pixelplus CFO Hwang Hae-su forecast at the March 26, 2026 shareholders' meeting that this year's revenue would be similar to last year's level. The company stated that the drone and security CIS markets hold potential for earnings improvement, noting it has completed development of related new sensors and plans to focus promotional efforts on the European market this year. New business development is led by Managing Director Lee Chae-eun, the daughter of CEO Lee Seo-gyu, with a strategy that combines diversifying the automotive-centric sensor portfolio with reducing dependence on China. To expand overseas sales channels, the company is in discussions with European surround-camera manufacturers on product development, and whether Europe's DMS mandate translates into new demand growth is a key point to watch. In advanced industry segments, proof-of-concept testing for robot vacuum sensors is underway with a domestic appliance maker, which could become a new revenue source if it successfully transitions to mass production supply. However, the company's diversification logic rests partly on the observation that while automotive semiconductors require substantial time from technical verification through quality qualification, drone and imaging applications can potentially deliver results over a relatively shorter timeframe."
+  "ko": "2026년 3월 주주총회 무렵 황해수 최고재무책임자(CFO)는 2026년 매출이 2025년과 유사할 것이라고 전망했다. 2026년 1~3분기 분기 매출은 121억원, 118억원, 128억원으로, 3분기 기준 전년 동기 대비 8.4% 증가를 기록했다. 회사는 2026년 드론과 영상 보안 CIS 시장을 실적 개선의 가능성 축으로 제시했고, 유럽 공략과 중국 비중 축소를 계획하고 있다. 로봇청소기 쪽에서는 미국 Q사와 기존 센서 기능을 AI 로봇청소기에 맞게 수정하고 있으며, 수정 샘플을 2026년 말 Q사에 전달할 계획이다. 본격 제품 출시는 2027~2028년을 바라보고 있고, 예상 매출과 양산 규모는 그 이후 정해질 전망이다. 삼성전자와 로보락 등 로봇청소기 제조사가 최종 고객사 후보로 거론되어 샘플 평가 결과가 다음 확인 지점이 된다. 2024년 보도에서는 ISP를 통합한 차량 내부 감시(인캐빈) 센서 칩 개발 계획도 소개됐다. 센서 생산은 삼성전자 200mm 파운드리 라인에서 이뤄지는데, 삼성전자가 300mm 라인으로 전환하고 있어 장기 공급을 위해 대만 UMC 등 대체 파운드리를 검토 중이다. 재설계 센서는 200만 화소 수준이며, 신형 이미지센서 개발 비용은 100억원 수준으로 알려져 회사는 R&D와 칩 생산 자금을 마련하고 있다. 2026년 3분기 영업손실 15.4억원에서 이어지는 적자 흐름 속에서, 샘플 진행 상황과 파운드리 확정 여부가 2027년 이후 실적 경로를 가를 확인 지점이다.",
+  "en": "Around the March 2026 annual shareholder meeting, CFO Hwang Hae-su said 2026 revenue would be similar to 2025. Quarterly revenue in the first three quarters of 2026 was KRW 12.1 billion, KRW 11.8 billion and KRW 12.8 billion, with the third quarter up 8.4% year on year. The company cited drone and video-security CIS markets as possible drivers of an earnings recovery and plans to expand in Europe and reduce its China share. For robot vacuums, it is modifying its existing sensor functions for AI robot cleaners with U.S. company Q, and plans to deliver modified samples to Q by the end of 2026. Full product launch is targeted for 2027 to 2028, with expected revenue and volume to be set after that. Samsung Electronics and Roborock have been named as possible end customers, so sample evaluation results are the next checkpoint. A 2024 report also described plans for an integrated ISP chip for in-cabin sensing. Sensor production runs on Samsung Electronics' 200mm foundry line, which is moving to 300mm, so the company is considering alternative foundries including UMC of Taiwan for long-term supply. The redesigned sensor is about 2 megapixels, and a new image sensor is reported to cost about KRW 10 billion to develop, so the company is arranging funds for R&D and chip production. With operating losses of KRW 1.54 billion in the third quarter of 2026 continuing the loss streak, sample progress and foundry decisions are the checkpoints that will shape the earnings path after 2027."
  },
  "valuation_comment": {
-  "ko": "픽셀플러스는 순자산가치 대비 할인된 수준에서 주가가 형성돼 있는 모습이며, 순자산 대비 프리미엄이 크지 않은 편에 속한다. 최근 4개 연도 실적이 흑자와 적자를 오가는 변동성을 보인 만큼, 밸류에이션 지표 역시 특정 시점의 이익 규모에 따라 크게 흔들릴 수 있는 구조다. 회사는 별도의 현금배당을 지급하지 않는 무배당 정책을 유지하고 있어, 주주환원보다는 신사업 투자와 재무 안정성 확보에 자원을 배분하는 모습이다. 부채비율은 2022년 12.1%에서 2025년 26.3%로 소폭 상승했으나 여전히 낮은 수준을 유지하고 있어 재무 건전성 측면에서는 안정적인 편으로 볼 수 있다. 투자자는 실적의 방향성 전환 여부와 함께, 신사업(드론·로보틱스) 매출 기여가 실질적으로 나타나는 시점을 함께 살펴볼 필요가 있다.",
-  "en": "Pixelplus shares appear to trade at a discount relative to net asset value, without a significant premium over book value. Given that results over the past four years have swung between profit and loss, valuation metrics can also fluctuate significantly depending on the earnings level at any given point in time. The company maintains a no-dividend policy, allocating resources toward new business investment and financial stability rather than shareholder returns. The debt ratio rose modestly from 12.1% in 2022 to 26.3% in 2025 but remains at a low level overall, suggesting relatively stable financial health. Investors may wish to monitor both the direction of any earnings turnaround and the point at which new business lines such as drones and robotics begin to make a meaningful revenue contribution."
+  "ko": "최근 4개 분기 순손실 구간이어서 PER은 산출되지 않는 상태다. 주가순자산비율(PBR)은 2024년 증권사 리포트가 제시한 과거 밴드(0.3~1.4배)의 하단보다 낮은 구간에 있다. 배당 수익은 발생하지 않는 상태다. 2025년 말 자본총계 847억원은 전액 지배주주 지분이어서, 자본 규모 대비 시가총액 수준을 보는 지표로 PBR이 가장 직접적이다. 같은 리포트는 해외 이미지센서 업체 대비 낮은 배수에 거래되는 이유로 시장 지배력과 매출 규모의 차이를 꼽았다. 같은 2024년 리포트는 글로벌 완성차 고객에 대한 비포마켓 공급이 안착하면 밸류에이션 확대가 가능하다고 봤다. 이익 기반 배수가 산출되지 않는 만큼 밸류에이션 비교는 자산 대비 주가 수준과 매출 흐름, 적자 축소 추이를 함께 보는 방식이 된다.",
+  "en": "Because the company has posted net losses over the last four quarters, its PER cannot be calculated. Its price-to-book ratio sits below the lower end of the historical band of 0.3x to 1.4x presented in a 2024 research report. The company does not currently generate dividend income. Total equity of KRW 84.7 billion at the end of 2025 was entirely attributable to controlling shareholders, so the price-to-book ratio is the most direct gauge of market capitalization relative to equity. The same 2024 report attributed a low multiple relative to overseas image-sensor peers to differences in market power and revenue scale. It also judged that valuation could expand if supply to global automakers in the before-market segment takes hold. With no earnings-based multiple available, valuation comparisons rest on price relative to assets, revenue trends and the pace of loss reduction."
  },
  "bull": [
   {
    "title": {
-    "ko": "사업 다각화를 통한 편중 완화 시도",
-    "en": "Diversification Effort to Ease Concentration"
+    "ko": "차량 내부 감시 규제가 수요 축",
+    "en": "Driver-monitoring rules as a demand driver"
    },
    "body": {
-    "ko": "회사는 차량용 센서에 집중된 포트폴리오에서 드론·영상보안·로봇 분야로 사업을 다각화하려는 움직임을 보이고 있다. 신규 드론 센서 개발을 완료했으며 국내 가전업체와 로봇청소기용 센서 PoC를 진행 중이다. 성공적으로 안착할 경우 자동차·중국 편중 구조를 일부 완화할 수 있는 계기가 될 수 있다.",
-    "en": "The company is showing signs of diversifying its portfolio from automotive-centric sensors into drones, security imaging, and robotics. It has completed development of a new drone sensor and is conducting PoC testing of robot vacuum sensors with a domestic appliance maker. If successfully established, this could help partially ease the concentration in automotive and China."
+    "ko": "유럽의 신차 안전 평가 제도와 도로안전법 개정으로 운전자 상태 감시 탑재가 의무화되는 흐름이 보도됐다. 픽셀플러스는 고속 움직임에서 왜곡이 적은 글로벌셔터 센서를 강점으로 내세우고 있어 이 수요의 수혜 대상으로 거론된다. 회사는 130만 화소급 글로벌셔터 제품이 완성차 업체에 공급되고 있다고 밝혔다.",
+    "en": "Reports describe European new-car safety rules that make driver monitoring mandatory, a trend that could benefit the company's global-shutter sensors, which it positions for low motion distortion at high speed. The company says its 1.3-megapixel global-shutter products are supplied to automakers."
    }
   },
   {
    "title": {
-    "ko": "유럽 DMS 의무화라는 정책 수혜 요인",
-    "en": "Policy Tailwind from Europe's DMS Mandate"
+    "ko": "분기 손실 축소와 흑자 전환",
+    "en": "Narrowing quarterly losses and a return to profit"
    },
    "body": {
-    "ko": "유럽이 2025년부터 운전자 모니터링 시스템(DMS)의 차량 의무 장착을 법제화한 점은 관련 CIS 수요를 늘릴 수 있는 요인으로 거론된다. 회사는 유럽 주변카메라 제조사들과 제품 개발을 협의 중이며, 이는 중국 의존도를 줄이는 전략과도 맞물려 있다. 다만 실제 공급 계약과 매출 반영까지는 시간이 필요할 수 있다.",
-    "en": "Europe's legislation mandating driver monitoring systems (DMS) in vehicles from 2025 has been cited as a factor that could increase related CIS demand. The company is in discussions with European surround-camera manufacturers on product development, which also aligns with its strategy to reduce China dependence, though actual supply contracts and revenue contribution may take time to materialize."
+    "ko": "영업손실은 2026년 1분기 20.5억원, 2분기 19.9억원, 3분기 15.4억원으로 줄었다. 2026년 3분기 지배주주 순이익은 2.3억원으로 흑자 전환했고, 같은 분기 매출은 전년 동기 대비 8.4% 늘었다. 2025년 영업활동 현금흐름도 29.5억원으로 플러스를 기록했다.",
+    "en": "Operating losses narrowed from KRW 2.05 billion in the first quarter of 2026 to KRW 1.54 billion in the third. Net income attributable to controlling shareholders returned to KRW 228 million in the third quarter, and revenue rose 8.4% year on year. Operating cash flow was KRW 2.95 billion in 2025."
    }
   },
   {
    "title": {
-    "ko": "낮은 부채비율의 재무 안정성",
-    "en": "Financial Stability from a Low Debt Ratio"
+    "ko": "로봇청소기와 AI 센서로 고객 다변화",
+    "en": "Diversifying customers through robotics and AI"
    },
    "body": {
-    "ko": "부채비율이 2022년 12.1%, 2025년에도 26.3%로 업종 내에서 비교적 낮은 수준을 유지하고 있다. 반복적인 영업손실에도 재무 구조 자체는 크게 훼손되지 않은 모습이다. 이는 신사업 투자를 이어갈 수 있는 여력으로 해석될 수 있다.",
-    "en": "The debt ratio has remained relatively low within the industry, at 12.1% in 2022 and 26.3% even in 2025. Despite recurring operating losses, the balance sheet structure itself has not been significantly impaired, which could be interpreted as providing room to continue investing in new business areas."
+    "ko": "미국 Q사와 AI 로봇청소기용 센서를 개발 중이며 수정 샘플을 2026년 말 전달할 계획이다. 본격 출시는 2027~2028년을 바라보고 있다. 드론, CCTV, 물류 로봇 등으로 적용처를 넓히려는 계획도 있어, 차량 중심 매출 구조를 분산하는 계기가 될 수 있다는 것이 회사와 보도의 설명이다.",
+    "en": "The company is developing an AI robot-vacuum sensor with U.S. company Q, with modified samples planned for delivery by the end of 2026 and a full launch targeted for 2027 to 2028. Plans also cover drones, CCTV and logistics robots, which the company and reports say could spread its automotive-heavy revenue base."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "중국·차량용 편중에 따른 구조적 취약성",
-    "en": "Structural Vulnerability from China and Automotive Concentration"
+    "ko": "4개 분기 연속 영업적자",
+    "en": "Four straight quarters of operating losses"
    },
    "body": {
-    "ko": "2025년 기준 매출의 86%가 차량용 사업부에서, 63%가 중국에서 발생해 특정 지역·전방산업 의존도가 매우 높다. 미중 반도체 갈등과 중국의 반도체 자립 기조가 이미 매출 감소의 주요 원인으로 지목된 바 있다. 다각화가 본격 성과를 내기 전까지 이러한 구조적 리스크는 지속될 가능성이 있다.",
-    "en": "As of 2025, 86% of revenue came from the automotive division and 63% from China, indicating very high dependence on a specific region and end-market. The US-China semiconductor conflict and China's push for chip self-sufficiency have already been cited as key reasons for revenue declines, and this structural risk may persist until diversification efforts bear meaningful fruit."
+    "ko": "2025년 4분기부터 2026년 3분기까지 영업적자가 4개 분기 연속 이어졌고, 같은 기간 지배주주 순손실 합계는 34.7억원이다. 2025년 매출은 427억원으로 전년 대비 20.1% 줄었고, 회사는 시장상황 변화에 따른 매출 감소를 원인으로 공시했다. 2026년 2분기 지배주주 순손실 19.5억원은 분기 기준으로 가장 컸다.",
+    "en": "Operating losses have run for four consecutive quarters from the fourth quarter of 2025 through the third quarter of 2026, with cumulative net loss attributable to controlling shareholders of KRW 3.47 billion over the last four quarters. Revenue fell 20.1% to KRW 42.7 billion in 2025, which the company attributed to changes in market conditions. The second-quarter 2026 net loss of KRW 1.95 billion was the largest quarterly figure in the period."
    }
   },
   {
    "title": {
-    "ko": "반복되는 적자 전환과 이익 불안정성",
-    "en": "Recurring Losses and Earnings Instability"
+    "ko": "차량 집중과 중국 노출",
+    "en": "Automotive concentration and China exposure"
    },
    "body": {
-    "ko": "2022년 흑자에서 2023년 적자, 2024년 흑자, 2025년 다시 적자로 전환하는 등 4년간 손익이 두 차례나 뒤집혔다. 2025Q3를 제외한 최근 4개 분기 모두 영업손실을 기록해 이익 안정성에 대한 의문이 남는다. 신사업이 본격적으로 매출에 기여하기 전까지 이러한 변동성이 이어질 가능성이 있다.",
-    "en": "Profitability flipped twice over four years—from profit in 2022 to loss in 2023, back to profit in 2024, and loss again in 2025. Operating losses were recorded in three of the most recent four quarters except 2025Q3, raising questions about earnings stability. This volatility could persist until new business lines begin contributing meaningfully to revenue."
+    "ko": "2025년 차량 매출 비중은 86%, 2026년 상반기는 89.3%로 특정 산업에 집중돼 있다. 중국 매출 비중은 2024년 보도 기준 40~50%로 전해졌고, 중국 업체의 저가 공세가 범용 시장의 압박 요인으로 꼽힌다. 미국·유럽·인도 등으로의 시장 다변화는 계획 단계에 머물러 있다.",
+    "en": "Automotive accounted for 86% of 2025 revenue and 89.3% in the first half of 2026. A 2024 report put China at 40% to 50% of revenue, and low-priced Chinese vendors are cited as a pressure on the general-purpose segment. Diversification into the United States, Europe and India remains at the planning stage."
    }
   },
   {
    "title": {
-    "ko": "글로벌 대형사·중국 저가업체와의 경쟁 압력",
-    "en": "Competitive Pressure from Global Majors and Low-Cost Chinese Rivals"
+    "ko": "파운드리 수급과 개발 자금 부담",
+    "en": "Foundry supply and development funding"
    },
    "body": {
-    "ko": "글로벌 이미지센서 시장은 소니, 옴니비전, 삼성전자 등 대형 업체가 주도하고 있어 픽셀플러스와 같은 중소형 팹리스의 협상력은 제한적이다. 동시에 중국 정부 지원을 받는 자국 반도체 업체들의 저가 공세가 애프터마켓 자동차 카메라 부문의 수익성을 압박하고 있다. 신규 시장 진입에도 유사한 경쟁 구도가 반복될 가능성이 있다.",
-    "en": "The global image sensor market is led by large players such as Sony, OmniVision, and Samsung Electronics, limiting the bargaining power of smaller fabless firms like Pixelplus. At the same time, low-cost offensives from Chinese semiconductor companies backed by government support are pressuring profitability in the automotive aftermarket camera segment, and similar competitive dynamics could recur as the company enters new markets."
+    "ko": "센서는 삼성전자 200mm 파운드리 라인에서 생산되는데, 삼성전자가 300mm 라인으로 전환하고 있어 공급 변수로 꼽힌다. 신형 이미지센서 개발 비용은 100억원 수준으로 알려졌고, 회사는 R&D와 칩 생산에 필요한 자금을 마련 중이다. 영업적자가 이어지는 상황에서 자금 조달 조건이 일정에 영향을 줄 수 있다.",
+    "en": "Sensors are produced on Samsung Electronics' 200mm foundry line, which is moving to 300mm, a supply variable noted in reports. A new image sensor is reported to cost about KRW 10 billion to develop, and the company is raising funds for R&D and chip production. With operating losses continuing, financing terms could affect the schedule."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "지정학·정책 리스크",
-    "en": "Geopolitical and Policy Risk"
+    "ko": "고객·지역 집중",
+    "en": "Customer and regional concentration"
    },
    "body": {
-    "ko": "미중 반도체 갈등과 중국의 반도체 자립 정책은 이미 매출 감소의 주요 원인으로 작용한 바 있다. 향후 관세나 수출 통제가 강화될 경우 중국 매출 비중이 높은 픽셀플러스의 실적에 추가적인 부담이 될 수 있다.",
-    "en": "The US-China semiconductor conflict and China's chip self-sufficiency policy have already contributed to revenue declines. Any further tightening of tariffs or export controls could add pressure to Pixelplus's results given its high exposure to China."
+    "ko": "차량 매출 비중이 2025년 86%에서 2026년 상반기 89.3%로 높아졌다. 주요 완성차 고객의 발주 변동이 매출 전체에 영향을 주는 구조다. 중국 매출 비중이 40~50%로 전해진 만큼 중국 경기와 무역 환경 변화도 노출 요인이다.",
+    "en": "Automotive share of revenue rose from 86% in 2025 to 89.3% in the first half of 2026, so changes in orders from major automakers affect total sales. With China reported at 40% to 50% of revenue, Chinese demand and trade conditions are also an exposure."
    }
   },
   {
    "cat": {
-    "ko": "고객·품질검증 리드타임 리스크",
-    "en": "Customer and Qualification Lead-Time Risk"
+    "ko": "생산 수급",
+    "en": "Production supply"
    },
    "body": {
-    "ko": "차량용 반도체는 기술검증부터 품질검증 통과까지 상당한 시간이 소요되는 것으로 알려져 있다. 신규 고객·신규 응용 분야(드론, 로봇) 진입 역시 예상보다 지연될 가능성이 있으며, 이는 매출 반영 시점의 불확실성으로 이어질 수 있다.",
-    "en": "Automotive semiconductors are known to require substantial time from technical verification through quality qualification. Entry into new customers or new application areas such as drones and robotics could also be delayed relative to expectations, creating uncertainty around the timing of revenue contribution."
+    "ko": "센서 생산을 맡는 삼성전자 200mm 라인이 300mm로 전환되면서 장기 공급 안정성이 변수로 떠올랐다. 회사는 대만 UMC 등 대체 파운드리를 검토 중이나, 차량용 인증을 다시 받아야 하는 부담이 따른다. 로봇청소기 양산 일정도 파운드리 확보 여부에 좌우될 수 있다.",
+    "en": "Samsung Electronics' 200mm line, which produces the sensors, is moving to 300mm, making long-term supply stability a variable. The company is evaluating alternatives such as UMC of Taiwan, which could require new qualification work. The robot-vacuum production schedule may also depend on securing foundry capacity."
    }
   },
   {
    "cat": {
-    "ko": "실적 변동성 및 현금흐름 리스크",
-    "en": "Earnings Volatility and Cash Flow Risk"
+    "ko": "재무 여력과 R&D 부담",
+    "en": "Financial capacity and R&D burden"
    },
    "body": {
-    "ko": "최근 4년간 손익이 두 차례 뒤집히는 등 실적 변동성이 크고, 영업활동현금흐름도 순이익과 방향이 다르게 움직인 해가 있었다. 이러한 변동성은 향후 신사업 투자를 위한 자금 조달 계획에도 영향을 줄 수 있다.",
-    "en": "Earnings have flipped between profit and loss twice over the past four years, and operating cash flow has in some years diverged in direction from net income. This volatility could also affect future funding plans for new business investments."
+    "ko": "2024년 영업활동 현금흐름은 -3.4억원이었고, 2025년에는 29.5억원으로 회복됐다. 부채비율은 2022년 12.1%에서 2025년 26.3%로 올랐다. 신형 센서 개발 비용이 100억원 수준으로 알려져 있어 적자가 이어지면 추가 자금 조달 필요성이 커질 수 있다.",
+    "en": "Operating cash flow was negative KRW 341 million in 2024 and recovered to KRW 2.95 billion in 2025. The debt ratio rose from 12.1% in 2022 to 26.3% in 2025. With a new sensor reported to cost about KRW 10 billion, continued losses could increase the need for additional funding."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월경",
-    "en": "Around November 2026"
+    "ko": "2026년 말 예정",
+    "en": "Scheduled for end-2026"
    },
    "what": {
-    "ko": "2026년 3분기 실적 발표를 통해 드론·보안 CIS 판촉 성과와 유럽 매출 비중 변화 여부를 확인할 필요가 있다.",
-    "en": "The 2026 Q3 earnings release should be checked to see the progress of drone and security CIS promotion and any change in the European revenue share."
+    "ko": "미국 Q사에 수정 샘플이 전달되는지 확인하는 지점이다. 샘플 평가 결과가 로봇청소기용 센서의 2027~2028년 출시 일정을 가늠하는 신호가 된다.",
+    "en": "Confirms whether modified samples reach U.S. company Q. Sample evaluation will signal whether the 2027 to 2028 launch schedule for robot-vacuum sensors holds."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기 중",
-    "en": "During Q4 2026"
+    "ko": "2027년 2월 전후",
+    "en": "Around February 2027"
    },
    "what": {
-    "ko": "국내 가전업체와 진행 중인 로봇청소기용 센서 PoC가 실제 양산 공급으로 이어지는지 여부를 점검해야 한다.",
-    "en": "It is worth monitoring whether the ongoing robot vacuum sensor PoC with the domestic appliance maker progresses into actual mass-production supply."
+    "ko": "2026년 연간 잠정실적 공시가 나오는 시점이다. 2025년 연간 잠정 공시는 2026년 2월 10일에 나왔다. 2026년 4분기 영업손실과 연간 적자 규모를 확인하는 지점이다.",
+    "en": "Expected timing for preliminary 2026 full-year results. The 2025 preliminary results were disclosed on February 10, 2026. This will show the fourth-quarter 2026 operating loss and the full-year loss size."
    }
   },
   {
    "when": {
-    "ko": "2027년 초 사업보고서 공시 시점",
-    "en": "Around the FY2026 business report filing in early 2027"
+    "ko": "2027년 3월 말",
+    "en": "Late March 2027"
    },
    "what": {
-    "ko": "연간 매출 가이던스('작년과 유사') 대비 실제 달성 여부와 중국·자동차 매출 비중의 실질적 변화를 확인할 시점이다.",
-    "en": "This will be the point to verify actual results against the revenue guidance ('similar to last year') and any real change in the China and automotive revenue mix."
+    "ko": "2026년 사업보고서 제출 기한이다. 확정 연간 매출, 영업이익률, 부채비율, 영업활동 현금흐름을 DART 정기보고서로 확인하는 지점이다.",
+    "en": "Deadline for the 2026 annual business report. Confirmed annual revenue, operating margin, debt ratio and operating cash flow will be verified in the DART periodic report."
    }
   },
   {
    "when": {
-    "ko": "유럽 시장 판촉 진행 상황 발표 시",
-    "en": "Upon any disclosure on European market promotion progress"
+    "ko": "2027년 5월 중순",
+    "en": "Mid-May 2027"
    },
    "what": {
-    "ko": "유럽 주변카메라 제조사와의 제품 개발 협의가 실제 공급계약으로 전환되는지 여부가 중국 의존도 완화의 핵심 지표가 될 수 있다.",
-    "en": "Whether ongoing product development discussions with European surround-camera manufacturers convert into actual supply contracts could be a key indicator of reduced China dependence."
+    "ko": "2027년 1분기 분기보고서 제출 기한이다. 1분기 영업손실이 축소되는지와 로봇청소기 샘플 진행 상황을 함께 본다.",
+    "en": "Deadline for the first-quarter 2027 report. It will show whether the operating loss keeps narrowing and how robot-vacuum sample work is progressing."
+   }
+  },
+  {
+   "when": {
+    "ko": "2027~2028년",
+    "en": "2027 to 2028"
+   },
+   "what": {
+    "ko": "로봇청소기용 센서의 양산 목표 시점이다. 삼성전자와 로보락 등 최종 고객사 채택 여부와 파운드리 확정 여부가 양산 일정의 관건이다.",
+    "en": "Target period for mass production of robot-vacuum sensors. Final customer adoption, including Samsung Electronics and Roborock, and foundry decisions will determine the timing."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "픽셀플러스는 차량용 CIS 중심의 사업구조에서 드론·보안·로봇 분야로 다각화를 시도하며 실적 반등의 계기를 찾고 있는 단계다. 2022~2025년 연간 실적은 흑자와 적자를 오가는 변동성을 보였고, 2025Q3~2026Q2 최근 4개 분기 중에서도 2025Q3만 영업이익 흑자를 기록해 이익 안정성은 아직 확보되지 않은 모습이다. 매출의 86%가 차량용, 63%가 중국에서 발생하는 편중 구조는 강점(기존 고객 기반)과 약점(정책·경기 민감도)을 동시에 내포하고 있다. 유럽의 DMS 의무화, 드론·로봇 신사업, 낮은 부채비율 등은 긍정적 재료로 거론되나, 미중 반도체 갈등과 대형 경쟁사·중국 저가업체와의 경쟁은 여전한 부담으로 남아 있다. 회사는 무배당 정책을 유지하며 신사업 투자에 자원을 배분하는 모습으로, 향후 신사업의 실질적 매출 기여 시점이 실적 방향성을 가늠하는 핵심 변수가 될 것으로 보인다. 투자 판단에 앞서 향후 분기 실적과 사업 다각화의 구체적 진행 상황을 함께 확인하는 것이 필요하다.",
-   "en": "Pixelplus is at a stage of seeking an earnings turnaround by diversifying from its automotive-centric CIS business into drones, security, and robotics. Annual results from 2022 to 2025 have swung between profit and loss, and among the most recent four quarters from 2025Q3 to 2026Q2, only 2025Q3 posted an operating profit, indicating earnings stability has not yet been established. The concentration structure—86% of revenue from automotive and 63% from China—embeds both a strength (an established customer base) and a weakness (sensitivity to policy and economic cycles). Europe's DMS mandate, new drone and robotics businesses, and a low debt ratio are cited as positive factors, while the US-China semiconductor conflict and competition from large global players and low-cost Chinese rivals remain persistent burdens. The company maintains a no-dividend policy while allocating resources to new business investment, and the timing at which these new businesses begin to meaningfully contribute to revenue is likely to be a key variable determining the direction of future earnings. Investors should monitor upcoming quarterly results and the concrete progress of business diversification before forming a judgment."
+   "ko": "픽셀플러스는 차량용 CIS에 매출을 의존하는 팹리스 기업으로, 2025년 매출 427억원과 영업손실 56.3억원으로 실적이 꺾인 뒤 2026년 3분기에는 매출 128억원과 영업손실 15.4억원을 기록했다. 2026년 들어 영업손실은 줄었고 3분기에는 지배주주 순이익이 흑자로 돌아섰으나, 4개 분기 연속 영업적자와 지배주주 순손실 누적 34.7억원이 여전히 실적의 중심에 있다. 강세 요인으로는 운전자 상태 감시 규제 수요, 글로벌셔터 기술, 로봇청소기 협업, 자본총계 847억원 규모의 재무 여력이 꼽힌다. 약세 요인으로는 차량 매출 집중과 중국 매출 비중, 삼성전자 200mm 파운드리 의존, 신형 센서 개발비 부담이 꼽힌다. 밸류에이션은 적자로 PER이 산출되지 않고 PBR이 과거 밴드 하단을 밑도는 수준이어서, 자산 대비 주가와 사업 실행 사이의 간극이 핵심 논점이다. 다음 확인 지점은 2026년 연간 잠정실적(2027년 2월 전후), 2026년 사업보고서(2027년 3월 말 제출 기한), 로봇청소기 샘플과 파운드리 진행 상황이다. 다음 정기보고서의 영업이익률이 적자 지속 여부를 가르는 확인 지점이다. 본 리포트는 정보 제공 목적이며 투자의견과 목표주가를 포함하지 않는다.",
+   "en": "Pixelplus is a fabless company that depends on automotive CIS for most of its revenue. After revenue fell to KRW 42.7 billion and an operating loss of KRW 5.63 billion in 2025, the third quarter of 2026 showed revenue of KRW 12.8 billion and an operating loss of KRW 1.54 billion. Operating losses narrowed through 2026 and net income attributable to controlling shareholders turned positive in the third quarter, but four consecutive loss-making quarters and a cumulative net loss attributable to controlling shareholders of KRW 3.47 billion remain central to the results. Bullish factors include driver-monitoring rule-driven demand, global-shutter technology, the robot-vacuum collaboration, and financial capacity with total equity of KRW 84.7 billion. Bearish factors include automotive concentration, China exposure, reliance on Samsung Electronics' 200mm foundry line and the cost of new sensor development. Because losses leave no PER, and the price-to-book ratio sits below the lower end of a historical band, the gap between asset-based pricing and execution is the central issue. The next checkpoints are preliminary 2026 full-year results around February 2027, the 2026 annual business report due by late March 2027, and progress on robot-vacuum samples and foundry decisions. The operating margin in the next periodic report is the checkpoint for whether losses persist. This report is for information only and includes no investment opinion or target price."
   }
  },
  "sources": [
-  "https://www.saramin.co.kr/zf_user/company-info/view/csn/N0d5ZFR1c2dvNUE4Ymt2OTZZZjBndz09/company_nm/(%EC%A3%BC)%ED%94%BD%EC%85%80%ED%94%8C%EB%9F%AC%EC%8A%A4",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A087600&MenuYn=Y&ReportGB=D&NewMenuID=Y&stkGb=701",
-  "https://www.pixelplus.com/",
-  "https://www.jobkorea.co.kr/company/1367810",
+  "https://zdnet.co.kr/view/?no=20241030102728",
   "https://www.thelec.kr/news/articleView.html?idxno=54120",
-  "https://kind.krx.co.kr/external/2026/03/18/000581/20260318002974/11011.htm",
-  "https://goinsider.kr/stock/00495086",
-  "https://moneypie.net/wiki/v/픽셀플러스",
-  "http://www.pixelplus.com/kr/company/research-and-development",
+  "https://www.etoday.co.kr/news/view/2414244",
+  "https://www.thelec.kr/news/articleView.html?idxno=62458",
   "https://www.sisajournal-e.com/news/articleView.html?idxno=406859",
-  "http://m.pixelplus.com/kr/company/about-pixelplus",
-  "https://m.etnews.com/20180903000199",
-  "https://m.ddaily.co.kr/page/view/2024102916114361728",
-  "https://www.pixelplus.co.kr/about/",
-  "https://t2.kirs.or.kr/misc/info_search_pop.html?code=",
-  "https://alphasquare.co.kr/home/stock-issue?code=087600&type=news",
-  "https://news.infostock.co.kr/a",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A087600&cID=&MenuYn=Y&ReportGB=D&NewMenuID=105&stkGb=701"
+  "https://newconomy.co.kr/View.aspx?No=3542864",
+  "https://www.thelec.kr/news/articleView.html?idxno=33038",
+  "https://www.fnnews.com/news/202411141527220555",
+  "http://www.dailyinvest.kr/news/articleView.html?idxno=57799",
+  "https://www.epnc.co.kr/news/articleView.html?idxno=407157",
+  "https://www.datatooza.com/article/20260210155539926352ef3ba7e1_80",
+  "http://www.jobkorea.co.kr/Recruit/Co_Read/C/pixel314",
+  "https://m.news.nate.com/view/20260326n32966",
+  "https://markets.hankyung.com/stock/087600/consensus",
+  "https://goinsider.kr/stock/00495086",
+  "https://www.investing.com/news/transcripts/earnings-call-transcript-pixelworks-misses-q3-2026-eps-forecast-as-shares-fall-93CH-5019997",
+  "https://kr.investing.com/news/transcripts/article-93CH-2171484",
+  "https://judal.co.kr/?shareToken=rFcyWLagy4TjBlJj&view=stockAI"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "087600",
  "name": "픽셀플러스",
  "name_en": "Pixelplus. Co., Ltd.",
@@ -223,11 +229,11 @@
   "반도체"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 18:02",
- "dataDate": "20260904",
+ "reportDate": "2026-11-18",
+ "reportTs": "2026-11-18 14:22",
+ "dataDate": "20261117",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-11-18",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -297,12 +303,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 9350719203,
-    "op": -2228832531,
-    "np_owner": -2323964187
-   },
-   {
     "q": "2025Q3",
     "rev": 11793199809,
     "op": 353635124,
@@ -325,28 +325,39 @@
     "rev": 11844330572,
     "op": -1988825129,
     "np_owner": -1951271147
+   },
+   {
+    "q": "2026Q3",
+    "rev": 12786408506,
+    "op": -1536979245,
+    "np_owner": 228392861
    }
   ],
   "valuation": {
-   "price": 3955,
-   "mcap": 0.0323,
+   "price": 3235,
+   "mcap": 0.0264,
    "shares": 8166558,
    "total_shares": 8166558,
    "wavg_shares": 6518427,
    "per": null,
-   "eps": -493,
-   "pbr": 0.3158,
-   "bps": 12525,
-   "roe_ttm": -3.9,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": -3234443958,
+   "eps": -531,
+   "pbr": 0.2575,
+   "bps": 12562,
+   "roe_ttm": -4.2,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": -3473322555,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 0.29,
+   "eps_src": "공시",
+   "pbr_krx": 0.25,
    "bps_krx": 12982.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
-   "div": 0.0
+   "div": 0.0,
+   "hidden": {
+    "per": "loss"
+   }
   }
- }
+ },
+ "textRules": 3
 }

@@ -1,220 +1,229 @@
 {
  "title": {
-  "ko": "VGXI 생산 중단과 상장 리스크",
-  "en": "VGXI Production Halt and Listing Risk"
+  "ko": "CDMO 재가동과 4년 연속 적자 사이의 재무 점검",
+  "en": "CDMO restart tests a balance sheet under pressure"
  },
  "lead": {
-  "ko": "진원생명과학은 자회사 VGXI의 CDMO 생산 중단과 상장적격성 실질심사 속에서 매출 감소와 적자가 이어지고 있다.",
-  "en": "GeneOne Life Science continues to post declining revenue and losses amid a CDMO production halt at its subsidiary VGXI and an ongoing listing eligibility review."
+  "ko": "진원생명과학은 미국 CDMO 공장 재가동과 1,690만 달러 규모 공급 약정으로 매출 회복의 발판을 찾고 있으나, 2025년 말 기준 부채비율 191.5%와 최근 4개 분기 지배주주 순손실 합계 529억원이 재무 체력의 과제로 남아 있다.",
+  "en": "GeneOne Life Science is trying to rebuild revenue through a US CDMO plant restart and a USD 16.9 million DNA supply agreement, but a 191.5% debt ratio and KRW 52.9 billion in controlling-shareholder net losses over the last four quarters keep balance-sheet strength the central question."
  },
  "keypoints": [
   {
-   "ko": "매출은 2022년 487억원에서 2025년 230억원으로 3년 연속 줄었고, 영업손실과 지배주주 순손실은 2022년부터 2025년까지 4년 연속 이어졌다.",
-   "en": "Revenue fell for three straight years from KRW 48.7 billion in 2022 to KRW 23 billion in 2025, while operating loss and net loss attributable to owners continued for four consecutive years from 2022 to 2025."
+   "ko": "연간 매출은 2022년 487억원에서 2025년 230억원으로 줄었고, 2025년 4분기부터 2026년 3분기까지 4개 분기 연속 감소했다.",
+   "en": "Annual revenue fell from KRW 48.7 billion in 2022 to KRW 23 billion in 2025, and quarterly revenue has declined for four consecutive quarters from the fourth quarter of 2025 through the third quarter of 2026."
   },
   {
-   "ko": "2026년 상반기 자회사 VGXI의 텍사스 공장 생산이 전면 중단되며 CDMO 부문 매출이 발생하지 않았다.",
-   "en": "Production at subsidiary VGXI's Texas plants was fully suspended in the first half of 2026, and the CDMO segment recorded no revenue during that period."
+   "ko": "종속회사 VGXI는 2026년 상반기 CDMO 생산이 중단돼 같은 기간 CDMO 사업부문 매출이 발생하지 않았다고 2026년 7월 공시했다.",
+   "en": "Subsidiary VGXI disclosed in July 2026 that CDMO production was halted in the first half of 2026 and that no CDMO revenue was recognized in that period."
   },
   {
-   "ko": "한국거래소는 2026년 8월 7일 진원생명과학을 기업심사위원회 심의대상으로 결정해 상장적격성 실질심사를 진행하고 있다.",
-   "en": "The Korea Exchange designated GeneOne Life Science as subject to a listing eligibility committee review on August 7, 2026."
+   "ko": "머니투데이는 2026년 10월 26일 미국 제1공장 재가동을 보도했으며, 회사는 1,690만 달러(약 240억원) 규모 mRNA 원료용 DNA 공급계약을 이행하기 위해 재가동을 결정했다고 밝혔다.",
+   "en": "Money Today reported on October 26, 2026 that the company restarted its first US plant to fulfill a USD 16.9 million, about KRW 24 billion, mRNA-grade DNA supply contract."
   },
   {
-   "ko": "회사는 1대5 무상감자와 150억원 규모의 제3자배정 유상증자(리볼트투자조합 대상)를 거쳐 최대주주가 바뀌었다.",
-   "en": "Following a 5-for-1 reverse stock split and a KRW 15 billion third-party share placement to Revolt Investment Partnership, the company's largest shareholder changed."
+   "ko": "2025년 말 자본총계는 409억원이고 부채총계는 783억원으로 부채비율은 191.5%이며, 2025년 영업활동 현금흐름은 -165억원이었다.",
+   "en": "At the end of 2025, total equity was KRW 40.9 billion, total liabilities KRW 78.3 billion, the debt ratio 191.5%, and operating cash flow was -KRW 16.5 billion."
   },
   {
-   "ko": "최근 4개 분기(2025년 3분기~2026년 2분기) 지배주주 순손실 합계는 489억원에 달한다.",
-   "en": "Over the last four quarters (Q3 2025 to Q2 2026), the cumulative net loss attributable to owners reached KRW 48.9 billion."
+   "ko": "2026년 9월 30일 납입일로 150억원 규모 제3자배정 유상증자가 결정됐고, 같은 해 3월에는 최대주주 변경 지연공시로 불성실공시법인 지정이 예고됐다.",
+   "en": "A KRW 15 billion third-party share placement with a September 30, 2026 payment date was decided, and in March 2026 the company was flagged for possible designation as an unfaithful-disclosure company over a delayed largest-shareholder change disclosure."
   }
  ],
  "business": {
-  "ko": "진원생명과학은 핵산 기반 바이오의약품을 연구개발하는 바이오 기업으로, 유전자치료제와 DNA 백신의 원료인 cGMP 플라스미드 DNA 생산을 미국 텍사스 자회사 VGXI를 통해 수행하는 CDMO(위탁개발생산) 사업을 함께 영위한다. 신약 파이프라인은 과거 메르스 백신 GLS-5300, 지카 백신 GLS-5700, 코로나19 백신 GLS-5310 등을 포함해 총 10개였으나, 현재는 그중 8개가 개발 중단 또는 장기 보류 상태이며 중증열성혈소판감소증후군 예방 백신 GLS-5140과 B형간염 예방 백신 GLS-8000 정도가 남아 있다. CDMO 부문은 2008년 VGXI 인수를 계기로 육성해 온 핵심 생산 거점으로, 삼성바이오로직스를 필두로 CDMO 시장이 글로벌 성장세를 보이자 회사도 사업 전략을 플라스미드 DNA 위탁생산 쪽으로 전환했다. 그러나 VGXI의 텍사스 우드랜드 제1공장과 콘로 제2공장 생산은 2026년 상반기 동안 전면 중단되며 같은 기간 CDMO 부문 매출이 발생하지 않는 상태에 놓였다. 회사 측은 생산 중단이 법적·행정적 영업정지가 아니라 내부 공정 효율화 및 표준운영절차 적격성 평가 준비에 따른 기술적 유보라고 설명한다. 고객 기반은 기존 거래처 외에 2026년 6월 신규 업체 1곳과 1,690만달러 규모의 약정서를 체결해 본계약 체결을 준비 중인 단계에 머물러 있다. 같은 업종 내 삼성바이오로직스나 에스티팜 등과 비교하면 생산 규모와 매출 기반 면에서 격차가 크며, 회사는 CDMO 사업이 연구개발을 지원하는 보조적 제조 플랫폼의 성격이 강하다고 설명한다. 사업 조직은 수십 명 규모의 중소기업형 인력으로 운영되고 있다.",
-  "en": "GeneOne Life Science is a biopharmaceutical R&D company focused on nucleic-acid-based biologics, operating a CDMO business through its U.S. Texas subsidiary VGXI that produces cGMP plasmid DNA used as raw material for gene therapies and DNA vaccines. Its pipeline once comprised ten candidates including a MERS vaccine (GLS-5300), a Zika vaccine (GLS-5700), and a COVID-19 vaccine (GLS-5310), but eight of these are now discontinued or on long-term hold, leaving mainly an SFTS prevention vaccine (GLS-5140) and an HBV prevention vaccine (GLS-8000). The CDMO segment has been built around VGXI since its acquisition in 2008, with the company shifting strategy toward contract plasmid DNA manufacturing as the global CDMO market expanded, led by players such as Samsung Biologics. However, production at VGXI's Woodlands Plant 1 and Conroe Plant 2 in Texas was fully suspended throughout the first half of 2026, during which the CDMO segment generated no revenue. The company has stated that the suspension is not a legal or administrative business stoppage but a technical, temporary hold tied to internal process efficiency work and standard operating procedure validation. Beyond existing clients, the customer base includes a new client with whom a $16.9 million commitment letter was signed in June 2026, in preparation for a definitive contract. Compared with CDMO peers such as Samsung Biologics or ST Pharm, the gap in production scale and revenue base is substantial, and the company describes its CDMO business as a supporting manufacturing platform for its R&D activities. The organization operates with a workforce numbering in the dozens, consistent with a small-to-mid-sized company structure."
+  "ko": "진원생명과학은 1976년에 설립돼 1987년 11월 코스피 시장에 상장된 바이오·제약 기업이다. 사업은 임상시험용 DNA 백신과 유전자치료제 원료를 생산하는 제약 부문과 의류용 심지·가공직물 등을 다루는 패브릭 부문으로 나뉜다. 제약 부문의 핵심 거점은 미국 종속회사 VGXI이며, 텍사스주 더우드랜드의 제1공장과 콘로의 제2공장을 운영한다. VGXI의 CDMO 관련 생산은 2026년 상반기 동안 전면 중단됐고, 그 기간 CDMO 사업부문 매출은 발생하지 않았다고 공시됐다. 중단 사유는 공장 재가동을 위한 자산실사와 생산라인 조정에 따른 완제 생산의 일시 유보로 설명됐다. 제1공장은 임대기간이 끝난 뒤 재임대 계약을 맺어 2037년 1월 31일까지 사용할 수 있게 됐다. 고객 측면에서는 2026년 6월 25일 기준 신규 업체 1곳과 1,690만 달러 상당의 약정서를 체결해 본 계약을 준비 중이며, 기존 업체 2곳에서는 추가 생산 견적 요청이 들어왔다. 부문별 매출 비중보다 최근 흐름으로 보면 매출은 CDMO 생산 재개 여부에 크게 좌우되는 구조다. 경쟁 구도에서는 삼성바이오로직스와 셀트리온 같은 대형 CDMO 업체가 설비 규모와 고객 기반에서 앞서 있어, 진원생명과학은 미국 공장 두 곳 중심의 상대적으로 작은 생산 기반으로 비교된다. 회사는 mRNA 원료용 DNA 공급계약을 통해 수주 기반을 넓히는 중이다.",
+  "en": "GeneOne Life Science was founded in 1976 and listed on the KOSPI market in November 1987. Its business is split between a pharmaceutical segment that produces raw materials for clinical-stage DNA vaccines and gene therapies, and a fabric segment that handles apparel interlinings and processed fabrics. The core pharmaceutical base is its US subsidiary VGXI, which operates a first plant in The Woodlands, Texas and a second plant in Conroe. VGXI disclosed that its CDMO production was fully halted throughout the first half of 2026 and that no CDMO segment revenue was recognized in that period. The company attributed the halt to asset inspections and production-line adjustments needed to restart the plants, which temporarily suspended finished-product manufacturing. After its lease ended, the first plant was re-leased through January 31, 2037. On customers, as of June 25, 2026 the company signed a letter of agreement worth USD 16.9 million with one new customer and is preparing a definitive contract, while two existing customers requested additional production quotes. Looking at recent trends rather than segment weights, revenue depends heavily on whether CDMO production resumes. Against large CDMO players such as Samsung Biologics and Celltrion, which have larger facilities and customer bases, GeneOne is positioned as a smaller production base centered on two US plants. The company is widening its order base through a supply agreement for mRNA-grade DNA."
  },
  "earnings": {
-  "ko": "연결 매출액은 2022년 487억원에서 2023년 402억원(전년 대비 17.5% 감소), 2024년 357억원(전년 대비 11.2% 감소), 2025년 230억원(전년 대비 35.5% 감소)으로 2023년부터 2025년까지 3년 연속 줄었다. 같은 기간 중 매출이 가장 컸던 해는 2022년(487억원)이고 가장 작았던 해는 2025년(230억원)이다. 영업손실은 2022년 401억원에서 2023년 484억원으로 확대됐다가 2024년 430억원으로 축소됐고, 2025년에는 440억원으로 다시 확대돼 2022년부터 2025년까지 4년 연속 적자를 기록했다. 지배주주 순손실도 2022년 381억원, 2023년 778억원, 2024년 485억원, 2025년 519억원으로 같은 기간 4년 연속 적자가 이어졌고, 비지배지분을 포함한 당기순손실 역시 각각 382억원, 778억원, 485억원, 519억원으로 거의 동일한 흐름을 보였다. 영업이익률은 2022년 -82.3%에서 2023년 -120.3%, 2024년 -120.5%, 2025년 -191.1%로, 매출 감소 속도보다 고정비 부담이 더 크게 작용하며 적자 폭이 확대됐다. 회사 측은 매출 감소의 주요 원인으로 CDMO 수주 감소 등으로 인한 매출액 감소를 제시했다. 분기 기준으로도 2025년 2분기 68.1억원이던 매출이 2025년 3분기 50.8억원(전 분기 대비 25.5% 감소), 2025년 4분기 26.5억원(전 분기 대비 47.8% 감소), 2026년 1분기 25.8억원(전 분기 대비 2.7% 감소), 2026년 2분기 20.6억원(전 분기 대비 20.3% 감소, 전년 동기 대비 69.8% 감소)으로 4개 분기 연속 줄었다. 분기 영업손실은 2025년 2분기 102억원에서 2025년 3분기 117억원, 2025년 4분기 131억원으로 확대되다가 2026년 1분기 23.4억원으로 크게 줄었으나 2026년 2분기 다시 128억원으로 확대돼 5개 분기 연속 적자가 이어졌고, 최근 4개 분기(2025년 3분기~2026년 2분기) 지배주주 순손실 합계는 489억원에 달한다.",
-  "en": "Consolidated revenue fell for three consecutive years, from KRW 48.7 billion in 2022 to KRW 40.2 billion in 2023 (down 17.5% year on year), KRW 35.7 billion in 2024 (down 11.2%), and KRW 23 billion in 2025 (down 35.5%). Among these years, 2022 was the largest (KRW 48.7 billion) and 2025 the smallest (KRW 23 billion). Operating loss widened from KRW 40.1 billion in 2022 to KRW 48.4 billion in 2023, narrowed to KRW 43 billion in 2024, and widened again to KRW 44 billion in 2025, marking four consecutive years of operating losses from 2022 through 2025. Net loss attributable to owners followed a similar four-year loss streak, at KRW 38.1 billion in 2022, KRW 77.8 billion in 2023, KRW 48.5 billion in 2024, and KRW 51.9 billion in 2025, while net loss including non-controlling interests moved almost identically at KRW 38.2 billion, KRW 77.8 billion, KRW 48.5 billion, and KRW 51.9 billion, respectively. The operating margin deteriorated from -82.3% in 2022 to -120.3% in 2023, -120.5% in 2024, and -191.1% in 2025, as fixed-cost burden outpaced the pace of revenue decline. The company cited a decrease in CDMO orders as the main reason for the revenue decline. On a quarterly basis, revenue of KRW 6.81 billion in Q2 2025 fell for four consecutive quarters to KRW 5.08 billion in Q3 2025 (down 25.5% quarter on quarter), KRW 2.65 billion in Q4 2025 (down 47.8%), KRW 2.58 billion in Q1 2026 (down 2.7%), and KRW 2.06 billion in Q2 2026 (down 20.3% quarter on quarter and down 69.8% year on year). Quarterly operating loss widened from KRW 10.2 billion in Q2 2025 to KRW 11.7 billion in Q3 2025 and KRW 13.1 billion in Q4 2025, narrowed sharply to KRW 2.34 billion in Q1 2026, then widened again to KRW 12.8 billion in Q2 2026, extending the loss streak to five consecutive quarters, with the trailing four-quarter (Q3 2025 to Q2 2026) net loss attributable to owners totaling KRW 48.9 billion."
+  "ko": "공시 실적 기준 연간 매출은 2022년 487억원에서 2023년 402억원(전년 대비 17.5% 감소), 2024년 357억원(전년 대비 11.2% 감소), 2025년 230억원(전년 대비 35.5% 감소)으로 이어져 2023년부터 2025년까지 3년 연속 감소했다. 2022~2025년 중 가장 큰 해는 2022년, 가장 작은 해는 2025년이다. 영업손실은 2022년 401억원, 2023년 484억원, 2024년 430억원, 2025년 440억원으로 2022년부터 2025년까지 4년 연속 적자다. 영업이익률은 2022년 -82.3%에서 2023년 -120.3%, 2024년 -120.5%, 2025년 -191.1%로 떨어졌다. 매출이 줄어드는 동안 영업손실 규모가 크게 줄지 않아 마진 악화가 이어진 흐름이다. 지배주주 순손실은 2022년 381억원, 2023년 778억원, 2024년 485억원, 2025년 519억원이며, 당기순손실(비지배지분 포함)도 같은 해 382억원, 778억원, 485억원, 519억원으로 두 값의 차이가 작다. 영업활동 현금흐름은 2022년 -241억원, 2023년 -217억원, 2024년 -161억원, 2025년 -165억원으로 현금 유출이 계속됐다. 부채비율은 2022년 22.8%에서 2023년 35.4%, 2024년 76.8%, 2025년 191.5%로 상승했고, 2025년 말 자본총계 409억원은 전부 지배주주 지분이다. 분기 매출은 2025년 3분기 50.8억원에서 2025년 4분기 26.5억원(전 분기 대비 47.8% 감소)으로 줄었고, 2026년 3분기 17.8억원은 전 분기 대비 13.3% 감소, 전년 동기 대비 64.9% 감소다. 분기 영업손실은 2025년 3분기 117억원, 4분기 131억원, 2026년 1분기 23.4억원, 2분기 128억원, 3분기 54.1억원으로, 2026년 3분기에는 전년 동기보다 손실이 줄었다. 지배주주 순손실은 2026년 3분기 154억원으로 전 분기 189억원보다 줄었으나 전년 동기 115억원보다 늘었고, 최근 4개 분기 합계는 529억원이다. 손실 축소가 매출 회복에서 왔는지 비용 조정에서 왔는지는 다음 정기보고서의 손익 항목으로 가려야 한다. 같은 기간 2026년 5월 51억원 규모 전환사채 납입과 2026년 9월 150억원 제3자배정 유상증자가 이뤄져 외부 자금이 적자 보전에 쓰이는 구조가 이어졌다.",
+  "en": "On a reported annual basis, revenue went from KRW 48.7 billion in 2022 to KRW 40.2 billion in 2023 (down 17.5% year on year), KRW 35.7 billion in 2024 (down 11.2%), and KRW 23 billion in 2025 (down 35.5%), so revenue declined for three consecutive years from 2023 through 2025. Among 2022 to 2025, 2022 was the largest year and 2025 the smallest. Operating losses were KRW 40.1 billion in 2022, KRW 48.4 billion in 2023, KRW 43 billion in 2024 and KRW 44 billion in 2025, which means four consecutive years of operating losses from 2022 through 2025. The operating margin moved from -82.3% in 2022 to -120.3% in 2023, -120.5% in 2024 and -191.1% in 2025. Because the operating loss did not shrink much while revenue kept falling, the margin deterioration accelerated. Net loss attributable to controlling shareholders was KRW 38.1 billion in 2022, KRW 77.8 billion in 2023, KRW 48.5 billion in 2024 and KRW 51.9 billion in 2025. Net loss including non-controlling interests was KRW 38.2 billion, KRW 77.8 billion, KRW 48.5 billion and KRW 51.9 billion in the same years, so the two figures are close. Operating cash flow was -KRW 24.1 billion in 2022, -KRW 21.7 billion in 2023, -KRW 16.1 billion in 2024 and -KRW 16.5 billion in 2025, a continued cash outflow. The debt ratio rose from 22.8% in 2022 to 35.4% in 2023, 76.8% in 2024 and 191.5% in 2025, and all of the KRW 40.9 billion total equity at the end of 2025 belongs to controlling shareholders. Quarterly revenue fell from KRW 5.08 billion in the third quarter of 2025 to KRW 2.65 billion in the fourth quarter (down 47.8% from the prior quarter), and KRW 1.78 billion in the third quarter of 2026 was down 13.3% from the prior quarter and 64.9% year on year. Quarterly operating losses were KRW 11.7 billion in the third quarter of 2025, KRW 13.1 billion in the fourth quarter, KRW 2.34 billion in the first quarter of 2026, KRW 12.8 billion in the second quarter and KRW 5.41 billion in the third quarter of 2026, which was narrower than a year earlier. Net loss attributable to controlling shareholders was KRW 15.4 billion in the third quarter of 2026, smaller than KRW 18.9 billion in the prior quarter but wider than KRW 11.5 billion a year earlier, and the last four quarters total KRW 52.9 billion. Whether the narrower losses came from revenue recovery or from cost adjustments should be settled by the line items in the next periodic report. Over the same period, a KRW 5.1 billion convertible bond was paid in on May 7, 2026 and a KRW 15 billion third-party placement was scheduled for September 30, 2026, so outside funding kept covering the losses."
  },
  "industry": {
-  "ko": "글로벌 CDMO 시장은 바이오의약품 위탁생산 수요 확대에 힘입어 성장해 왔으며, 국내에서는 삼성바이오로직스를 비롯한 대형 사업자들이 생산능력을 지속적으로 늘려 왔다. 핵산 기반 의약품(DNA·플라스미드·mRNA) 생산 분야는 유전자치료제와 백신 개발 확대에 따라 수요가 커지는 틈새 영역으로 꼽힌다. 진원생명과학은 자회사 VGXI를 통해 이 영역에 진입했으나, VGXI의 우드랜드 제1공장과 콘로 제2공장의 CDMO 관련 생산은 2026년 상반기 동안 중단된 상태였고 같은 기간 CDMO 사업부문 매출액이 발생하지 않았다. VGXI는 작년말 기준 부채가 자산보다 많은 완전자본잠식 상태에 놓였고, 모회사인 진원생명과학도 2025년 말 기준 부채비율이 191.5%까지 높아졌다. 경쟁사인 삼성바이오로직스나 에스티팜 등은 대규모 생산설비와 안정적 고객 기반을 바탕으로 시장 지위를 유지하고 있어, 소규모 사업자인 진원생명과학과의 격차는 뚜렷하다. 코로나19의 엔데믹 전환 이후 감염병 백신에 대한 투자 유인이 줄면서 메르스·지카·코로나19 백신 등 과거 주력 파이프라인의 상업화 동력도 약화됐다. 회사는 현재 SFTS 백신 GLS-5140과 HBV 백신 GLS-8000 등 제한된 파이프라인에 의존하고 있어, 신약 개발 부문에서의 산업 내 위치는 과거 대비 축소된 상태다.",
-  "en": "The global CDMO market has grown on the back of expanding demand for biopharmaceutical contract manufacturing, with large domestic players such as Samsung Biologics continuously expanding capacity. Production of nucleic-acid-based medicines (DNA, plasmid, mRNA) is considered a niche area with growing demand tied to gene therapy and vaccine development. GeneOne Life Science entered this space through subsidiary VGXI, but CDMO-related production at VGXI's Woodlands Plant 1 and Conroe Plant 2 remained suspended throughout the first half of 2026, during which the CDMO segment recognized no revenue. VGXI was in a state of complete capital impairment at the end of last year, with liabilities exceeding assets, while parent GeneOne Life Science's debt-to-equity ratio rose to 191.5% at the end of 2025. Competitors such as Samsung Biologics and ST Pharm maintain market positions backed by large-scale facilities and stable client bases, creating a clear gap versus smaller players like GeneOne Life Science. Since the transition of COVID-19 to an endemic phase, investment incentives for infectious disease vaccines have diminished, weakening the commercialization momentum of former flagship pipeline candidates for MERS, Zika, and COVID-19. The company now relies on a narrowed pipeline of the SFTS vaccine GLS-5140 and the HBV vaccine GLS-8000, reflecting a reduced industry position in drug development versus its past standing."
+  "ko": "진원생명과학이 속한 영역은 임상시험용 DNA 백신과 유전자치료제 원료를 공급하는 CDMO로, 고객사의 임상 진행과 파이프라인 수요에 실적이 좌우되는 구조다. 이번 공급 약정이 mRNA 원료용 DNA에 집중된다는 점은 mRNA 기반 의약품 개발 수요가 회사의 생산 기반과 맞닿아 있음을 보여 준다. 팬데믹 시기 백신 생산에서 출발한 DNA 생산 기반이 다른 용도의 원료 수요로 옮겨 가는 과정으로 읽힌다. 경쟁사 대비 포지션을 보면 삼성바이오로직스와 셀트리온은 대규모 생산 설비와 바이오의약품 생산 경험을 갖춘 대형 업체이고, 진원생명과학은 설비 규모가 상대적으로 작다. 같은 바이오·제약 업종에서도 알테오젠이나 HLB처럼 기술 수출과 플랫폼 중심으로 평가되는 기업과 달리, 진원생명과학은 가동률과 고객 계약 이행이 실적의 핵심 변수다. 2026년 상반기 공장 가동 중단은 계약을 이행할 수 있는지에 대한 질문을 키운 요인이다. 1,690만 달러 약정과 기존 업체의 추가 견적 요청 2건은 수요가 있다는 신호로 볼 수 있으나, 본 계약 전환 여부가 확인돼야 실적에 반영된다. 생산 기술의 희소성은 장기 계약 확보의 근거가 될 수 있지만 계약 조건과 단가는 공시로 확인되지 않은 부분이다. 업황의 방향은 고객사 임상 일정과 mRNA 관련 원료 발주가 얼마나 이어지는지에 따라 정해질 것이다.",
+  "en": "The field GeneOne operates in is CDMO work supplying raw materials for clinical-stage DNA vaccines and gene therapies, so results depend on client clinical progress and pipeline demand. The fact that the latest supply agreement centers on DNA for mRNA-grade raw material suggests that demand for mRNA-based drug development overlaps with the company's production base. Read in context, a DNA production base that grew out of pandemic-era vaccine manufacturing appears to be moving toward raw-material demand for other uses. Against competitors, Samsung Biologics and Celltrion are large players with major production capacity and biopharma manufacturing track records, while GeneOne's facility scale is comparatively small. Even within the same biopharma sector, where Alteogen and HLB are assessed mainly on technology licensing and platforms, GeneOne's key variables are plant utilization and fulfillment of customer contracts. The halt in plant operations in the first half of 2026 raised questions about the company's ability to deliver on contracts. The USD 16.9 million agreement and two additional quote requests from existing customers point to demand, but the figures only reach reported results once the definitive contract is signed. Scarcity of production know-how could support long-term contract wins, yet contract terms and pricing have not been disclosed. The direction of the industry will depend on how steadily client clinical schedules and mRNA-related raw-material orders continue."
  },
  "outlook": {
-  "ko": "회사는 2026년 9월 리볼트투자조합을 대상으로 150억원 규모의 제3자배정 유상증자를 결정해 신주 622만 4,066주를 주당 2,410원에 발행했으며, 납입일은 2026년 9월 30일, 신주 상장 예정일은 2026년 10월 16일이다. 조달 자금은 VGXI 공장운영비 대여 70억원과 본사 운영비 61억원 등 운영자금 130억원, 상상인저축은행 차입금 상환용 채무상환자금 19억원으로 구성됐다. 이 증자가 납입 완료되면 최대주주는 동반성장투자조합제1호(지분율 8.49%)에서 리볼트투자조합(지분율 25.51%)으로 변경될 예정이다. VGXI는 미국 C2R과 콘로 제2공장 환매권 행사 기한을 기존 9월 1일에서 12월 15일로 연장하는 계약을 체결했으며, 총 환매권 행사금액 3,990만달러 중 잔금 3,590만달러를 12월 15일 정산할 예정이다. 회사는 VGXI 제1공장(우드랜드 소재)에서 보유 특허기술을 활용한 소규모 완제의약품 생산 프로젝트로 전환해 향후 10개월 내 총 26회 가동을 추진하겠다는 계획을 공시했다. 제2공장(콘로)은 신축 이후 생산 실적이 없는 상태로, 펀딩 이후 시운전과 재검증 단계를 거쳐 가동을 준비한다는 구상이다. 영업 측면에서는 2026년 6월 신규 업체 1곳과 1,690만달러 규모의 약정서를 체결해 본계약 체결을 준비 중이며, 기존 업체 2곳으로부터 추가 생산 견적 요청을 받았다고 공시됐다. 다만 이러한 계획들이 실제 매출 회복으로 이어졌는지는 아직 정기보고서로 확인되지 않은 단계이며, VGXI와 모회사를 상대로 한 1.7억달러 규모 소송 관련 공시도 2026년 8월 이뤄진 만큼 소송 진행 경과가 향후 재무 부담에 영향을 줄 수 있는 변수로 남아 있다.",
-  "en": "In September 2026 the company decided on a KRW 15 billion third-party share placement to Revolt Investment Partnership, issuing 6,224,066 new shares at KRW 2,410 per share, with payment due September 30, 2026 and new shares scheduled to list on October 16, 2026. The proceeds are allocated to KRW 13 billion of working capital, including a KRW 7 billion loan to cover VGXI's plant operating costs and KRW 6.1 billion for headquarters operations, plus KRW 1.9 billion for debt repayment to Sangsangin Savings Bank. Once the placement is completed, the largest shareholder is set to change from Shared Growth Investment Partnership No. 1 (8.49% stake) to Revolt Investment Partnership (25.51% stake). VGXI signed an agreement with C2R in the U.S. extending the exercise deadline for the Conroe Plant 2 repurchase right from September 1 to December 15, 2026, with a remaining balance of $35.9 million out of a total repurchase amount of $39.9 million due to be settled on December 15. The company disclosed plans to convert VGXI's Plant 1 (Woodlands) into a small-scale finished-drug production project leveraging its proprietary patented technology, targeting a total of 26 production runs within the next ten months. Plant 2 (Conroe) has had no production output since construction, with plans to proceed through commissioning and requalification after funding before resuming operations. On the commercial side, the company signed a $16.9 million commitment letter with a new client in June 2026 in preparation for a definitive contract, and disclosed receiving additional production quote requests from two existing clients. However, whether these plans have translated into actual revenue recovery has not yet been confirmed through periodic reports, and since an August 2026 disclosure referenced a $170 million lawsuit against the company and VGXI, the progress of that litigation remains a variable that could affect future financial burden."
+  "ko": "회사는 2026년 상반기 공시에서 공장 재가동을 위한 자산실사와 생산라인 조정을 거친 뒤 하반기 신규 프로젝트 가동과 함께 매출을 실현할 예정이라고 밝혔다. 2026년 10월 26일 보도에서 회사 관계자는 유효성 평가와 인력 배치를 마치면 2026년 11월 초부터 본격적인 생산 재개가 가능하다고 설명했다. 이 시점 이후의 실제 가동 여부는 아직 공시 실적에 나타나지 않는다. 제2공장은 자산 유동화 일정이 지연되고 있다고 보도됐고, 회사는 이를 이유로 제1공장을 유지하기로 결정했다. 1,690만 달러 규모 약정의 본 계약 체결 여부가 다음 매출 흐름의 가장 큰 변수다. 운영자금 130억원은 2026년 중 전액 사용할 예정이라고 공시됐다. 채무상환 19억원은 2026년 3월 차입한 상상인저축은행 차입금을 갚는 데 쓰이며, 해당 차입은 이자율 10%로 기재됐다. 유상증자 공시에 따르면 납입이 완료되면 최대주주가 동반성장투자조합에서 리볼트투자조합(지분율 25.51%)으로 바뀌는 구조다. 신주 622만 4,066주는 전량 1년간 보호예수될 예정으로 공시됐다. 2026년 임시주주총회 소집 공시도 있었으나 세부 결과는 이 리포트의 공시 실적에 포함되지 않는다. 다음 공식 확인 지점은 2026 사업연도 사업보고서에서 매출 회복 여부와 영업손실 규모가 어떻게 나오는지다.",
+  "en": "In a first-half 2026 disclosure, the company said that after asset inspections and production-line adjustments to restart its plants, it expects to recognize revenue alongside the start of new projects in the second half. In a report dated October 26, 2026, a company representative said production could fully resume from early November 2026 once effectiveness testing and staffing are completed. Whether production actually ran after that point does not yet appear in reported results. The second plant's asset monetization schedule has reportedly been delayed, and the company decided to keep the first plant operating for that reason. Whether the USD 16.9 million agreement becomes a definitive contract is the biggest variable for the next revenue trend. The company disclosed that its KRW 13 billion operating fund is to be fully used during 2026. The KRW 1.9 billion debt repayment is for a March 2026 borrowing from a savings bank, recorded at a 10% interest rate. According to the placement disclosure, once payment is completed the largest shareholder is set to change from a shared-growth investment partnership to a private investment partnership holding 25.51%. The 6,224,066 new shares were disclosed as fully subject to a one-year lock-up. A provisional shareholders' meeting was also convened for October 30, 2026, but its detailed outcomes are not part of the reported results here. The next formal checkpoint is whether revenue recovers and how large the operating loss is in the 2026 annual business report."
  },
  "valuation_comment": {
-  "ko": "진원생명과학은 최근 네 개 분기 연속 지배주주 순손실을 기록해 주가수익비율은 산출되지 않는 상태로, 수익성을 기준으로 한 밸류에이션 비교가 어렵다. 주가순자산비율은 자본총계 대비 일정한 프리미엄이 반영된 수준에서 거래되고 있으나, 2025년 말 기준 부채비율이 191.5%까지 높아지고 자본잠식이 진행됐던 이력을 감안하면 장부가치 자체의 변동성이 큰 편이다. 배당수익률은 지급 이력이 없어 업종 평균을 밑도는 수준에 머물러 있다. 2026년 들어 1대5 무상감자와 수차례의 유상증자·전환사채 발행이 이어지면서 발행주식수와 자본구조가 단기간에 크게 바뀌었고, 이는 주당 지표의 연속성을 해치는 요인으로 작용한다. 상장적격성 실질심사 대상 지정 이력과 반기검토 의견 관련 불확실성은 밸류에이션 비교의 전제가 되는 재무제표 신뢰도에도 영향을 줄 수 있는 변수로 남아 있다.",
-  "en": "GeneOne Life Science has posted net losses attributable to owners for four consecutive quarters, leaving the price-to-earnings ratio unmeasurable and making profitability-based valuation comparisons difficult. The price-to-book ratio trades at a level reflecting some premium to total equity, but given that the debt-to-equity ratio rose to 191.5% at the end of 2025 and the company has gone through a period of capital impairment, the book value itself carries considerable volatility. The dividend yield remains below sector averages given the absence of a payout history. Since 2026, a 5-for-1 reverse stock split together with multiple rights offerings and convertible bond issuances have substantially altered the share count and capital structure within a short period, undermining the continuity of per-share metrics. The history of being designated for a listing eligibility review and uncertainty related to the auditor's half-year review opinion remain variables that could affect the reliability of the financial statements underlying any valuation comparison."
+  "ko": "PER은 최근 4개 분기 지배주주 순손실이 이어져 산출되지 않는 상태이므로, 이익 기준의 배수 비교는 현재로서는 성립하지 않는다. PBR은 주가가 자본총계 대비 프리미엄이 붙은 구간임을 보여 준다. 손실이 누적되면서 자본총계가 줄어드는 흐름에서는 같은 주가라도 순자산 대비 배수가 높아지는 효과가 생긴다. 배당수익률은 배당 수준이 낮아 업종 평균을 밑도는 편이다. 2026년 9월 증자는 기준주가에서 10% 할인한 발행가로 배정됐으며, 기준주가는 5대1 주식병합 이후 기준으로 산정됐다. 이익이 정상화되기 전까지는 순자산 기준 비교가 가장 현실적인 잣대다. 따라서 영업손실 축소 흐름과 부채비율 변화가 밸류에이션 해석의 전제 조건으로 남는다.",
+  "en": "PER cannot be calculated because the last four quarters show net losses attributable to controlling shareholders, so earnings-based multiple comparisons do not currently apply. PBR indicates that the share price sits at a premium to book value. As losses accumulate and total equity shrinks, the same share price produces a higher multiple of net assets. The dividend yield is low and sits below the industry average. The September 2026 placement was priced at a 10% discount to a reference price, and that reference price was set after the 5-for-1 share consolidation. Until earnings normalize, net-asset-based comparison is the most practical yardstick. The trend in operating losses and the debt ratio therefore remains a precondition for reading the valuation."
  },
  "bull": [
   {
    "title": {
-    "ko": "재무구조 조정과 신규 자금 유입",
-    "en": "Balance Sheet Restructuring and New Capital Inflow"
+    "ko": "공급 약정과 공장 재가동",
+    "en": "Supply agreement and plant restart"
    },
    "body": {
-    "ko": "2026년 상반기 1대5 무상감자와 9월 150억원 규모 제3자배정 유상증자를 거치며 자본구조를 재정비했다. 새 최대주주로 올라선 리볼트투자조합이 보호예수 1년 조건으로 지분 25.51%를 확보해, 단기 매도 압력이 제한된 지분 구조가 형성됐다. VGXI 콘로 제2공장 환매권 행사 기한도 12월 중순까지 연장돼 당장의 자산 유출 압력은 일부 완화됐다.",
-    "en": "The company restructured its capital base through a 5-for-1 reverse stock split in the first half of 2026 and a KRW 15 billion third-party share placement in September. New largest shareholder Revolt Investment Partnership secured a 25.51% stake under a one-year lock-up, forming a shareholder structure with limited near-term sell pressure. The exercise deadline for VGXI's Conroe Plant 2 repurchase right was also extended to mid-December, partially easing immediate asset-loss pressure."
+    "ko": "머니투데이는 2026년 10월 26일 미국 제1공장 재가동을 보도했고, 회사는 1,690만 달러(약 240억원) 규모 mRNA 원료용 DNA 공급계약 이행을 재가동 이유로 밝혔다. 디지털투데이에 따르면 기존 업체 2곳에서 추가 생산 견적 요청이 들어왔다. 본 계약이 체결되고 생산이 이어지면 CDMO 매출이 다시 발생할 수 있는 경로가 열린다.",
+    "en": "Money Today reported the restart of the first US plant on October 26, 2026, and the company cited fulfillment of a USD 16.9 million, about KRW 24 billion, mRNA-grade DNA supply agreement as the reason. According to Digital Today, two existing customers requested additional production quotes. If a definitive contract is signed and production continues, a path opens for CDMO revenue to return."
    }
   },
   {
    "title": {
-    "ko": "CDMO 사업 재가동 준비",
-    "en": "Preparations to Restart CDMO Operations"
+    "ko": "영업손실 축소 구간",
+    "en": "Narrower operating losses"
    },
    "body": {
-    "ko": "VGXI는 2026년 5월 미국 FDA의 GMP 규제 검사를 통과하며 플라스미드 DNA 생산의 기술적 역량을 재확인받았다. 회사는 제1공장에서 소규모 완제의약품 생산 프로젝트로 전환해 10개월 내 총 26회 가동을 추진한다는 계획을 공시했다. 신규 고객사와 1,690만달러 규모의 약정서 체결 등 영업활동도 이어지고 있어, 가동 재개가 현실화될 경우 CDMO 매출의 기저 회복 여지가 있다.",
-    "en": "VGXI passed a U.S. FDA GMP regulatory inspection in May 2026, reaffirming its technical capability in plasmid DNA production. The company disclosed plans to convert Plant 1 into a small-scale finished-drug production project targeting 26 production runs within ten months. Commercial activity continues, including a $16.9 million commitment letter with a new client, leaving room for a base recovery in CDMO revenue should the restart materialize."
+    "ko": "분기 영업손실은 2026년 1분기 23.4억원, 2026년 3분기 54.1억원으로, 2026년 3분기는 전년 동기 대비 적자 폭이 줄었다. 2025년 4분기 131억원, 2026년 2분기 128억원의 손실 규모와 비교하면 손실 수준이 낮아진 분기가 나타났다. 손실 축소가 지속되는지가 이익 구조 개선 여부를 가리는 첫 신호가 된다.",
+    "en": "Quarterly operating losses were KRW 2.34 billion in the first quarter of 2026 and KRW 5.41 billion in the third quarter of 2026, and the third-quarter loss was narrower than a year earlier. Compared with KRW 13.1 billion in the fourth quarter of 2025 and KRW 12.8 billion in the second quarter of 2026, some quarters show a lower loss level. Whether the narrowing continues will be the first signal of an improving profit structure."
    }
   },
   {
    "title": {
-    "ko": "비용 구조 조정에 따른 손실 축소 국면",
-    "en": "Cost Discipline Leading to Periods of Narrower Losses"
+    "ko": "구조조정과 자본 확충",
+    "en": "Restructuring and capital raising"
    },
    "body": {
-    "ko": "2026년 1분기 영업손실은 23.4억원으로 직전 분기(131억원) 대비 손실 폭이 크게 줄었다. 2024년 연간 영업손실도 430억원으로 2023년(484억원) 대비 축소된 전례가 있어, 구조조정 국면에서 비용 통제를 통한 손실 축소 가능성을 보여준다. 다만 2026년 2분기 영업손실이 다시 128억원으로 확대돼 추세의 지속 여부는 추가 확인이 필요하다.",
-    "en": "Operating loss narrowed sharply to KRW 2.34 billion in Q1 2026 from KRW 13.1 billion in the prior quarter. Annual operating loss also narrowed to KRW 43 billion in 2024 from KRW 48.4 billion in 2023, showing a precedent for cost control reducing losses during restructuring periods. However, the operating loss widened again to KRW 12.8 billion in Q2 2026, so whether this pattern persists requires further confirmation."
+    "ko": "머니투데이는 회사가 대규모 적자 해소를 위한 구조조정을 추진해 왔다고 보도했다. 2026년 9월 150억원 규모 제3자배정 유상증자는 운영자금 130억원과 채무상환자금 19억원으로 쓰이도록 결정됐다. 자본 확충이 상환 부담을 일부 줄이면 재무 체력 회복의 여지가 생긴다.",
+    "en": "Money Today reported that the company has been pursuing restructuring to resolve its large losses. The KRW 15 billion third-party placement in September 2026 was set to fund KRW 13 billion of operating needs and KRW 1.9 billion of debt repayment. If the capital raise eases repayment pressure, room opens for a financial recovery."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "상장적격성 리스크 지속",
-    "en": "Ongoing Listing Eligibility Risk"
+    "ko": "매출 감소 지속",
+    "en": "Revenue decline continues"
    },
    "body": {
-    "ko": "2026년 7월 VGXI의 생산·판매 중단을 사유로 상장적격성 실질심사 사유가 발생했고, 8월 7일 기업심사위원회 심의대상으로 결정됐다. 여기에 반기검토 의견에서 '부적정' 판정이 나오며 상장 유지와 관련한 불확실성이 추가로 커졌다. 최대주주 변경 지연 공시로 불성실공시법인 벌점이 누적되는 등 공시 신뢰도 측면의 부담도 함께 존재한다.",
-    "en": "In July 2026 a listing eligibility review trigger arose due to VGXI's production and sales suspension, and on August 7 the company was designated subject to a listing eligibility committee review. An adverse half-year review opinion added further uncertainty around continued listing. Accumulated penalty points from a delayed disclosure on the change of largest shareholder also weigh on disclosure credibility."
+    "ko": "매출은 2025년 4분기부터 2026년 3분기까지 4개 분기 연속 감소했고, 2026년 3분기 17.8억원은 전년 동기 대비 64.9% 감소다. 2026년 상반기 VGXI의 CDMO 매출은 발생하지 않았다고 공시됐다. 2025년 연간 매출은 230억원으로 2022년 487억원의 절반 수준을 밑돌았다.",
+    "en": "Revenue has declined for four consecutive quarters from the fourth quarter of 2025 through the third quarter of 2026, and KRW 1.78 billion in the third quarter of 2026 was down 64.9% year on year. VGXI disclosed that no CDMO revenue was recognized in the first half of 2026. Annual revenue of KRW 23 billion in 2025 was below half of KRW 48.7 billion in 2022."
    }
   },
   {
    "title": {
-    "ko": "매출 기반 공백과 적자 지속",
-    "en": "Revenue Base Gap and Persistent Losses"
+    "ko": "재무 체력 약화",
+    "en": "Weaker financial health"
    },
    "body": {
-    "ko": "2026년 2분기 매출은 20.6억원으로 전년 동기 대비 69.8% 감소했고, 같은 분기 지배주주 순손실은 189억원으로 전년 동기 대비 손실이 확대됐다. 최근 4개 분기(2025년 3분기~2026년 2분기) 지배주주 순손실 합계는 489억원에 이르러, CDMO 매출 공백이 실적 전반에 부담을 주고 있다. 영업활동 현금흐름도 2022년부터 2025년까지 매년 마이너스를 기록하며 외부 자금조달 의존도가 높아진 상태다.",
-    "en": "Q2 2026 revenue fell 69.8% year on year to KRW 2.06 billion, while net loss attributable to owners in the same quarter widened year on year to KRW 18.9 billion. The trailing four-quarter (Q3 2025 to Q2 2026) net loss attributable to owners totaled KRW 48.9 billion, as the CDMO revenue gap weighs on overall performance. Operating cash flow was also negative every year from 2022 through 2025, deepening reliance on external financing."
+    "ko": "2025년 말 부채비율은 191.5%이고 부채총계 783억원이 자본총계 409억원을 웃돈다. 영업활동 현금흐름은 2022년부터 2025년까지 유출이 이어졌고 2025년에는 -165억원이었다. 2025년 영업손실은 440억원으로 2022년부터 4년 연속 적자 흐름이 계속됐다.",
+    "en": "The debt ratio at the end of 2025 was 191.5%, with total liabilities of KRW 78.3 billion exceeding total equity of KRW 40.9 billion. Operating cash flow was negative in every year from 2022 through 2025, at -KRW 16.5 billion in 2025. The company recorded an operating loss of KRW 44 billion in 2025, extending four consecutive years of losses."
    }
   },
   {
    "title": {
-    "ko": "자회사 VGXI의 재무 부실",
-    "en": "Financial Distress at Subsidiary VGXI"
+    "ko": "자금 조달 의존과 손실 확대 분기",
+    "en": "Reliance on funding and wider loss quarters"
    },
    "body": {
-    "ko": "VGXI는 장기대여금과 미수수익에 대한 803억원 규모의 손상차손 인식 이후에도 부채가 자산을 초과하는 완전자본잠식 상태에 놓여 있다. 콘로 제2공장은 담보대출 형태의 대물변제 계약으로 소유권이 일시 채권자 측으로 이전된 상태이며, 환매권 행사금액을 기한 내 전액 상환하지 못하면 자산을 상실할 위험이 있다. 진원생명과학과 VGXI를 상대로 한 1.7억달러 규모 소송도 진행 중이어서, 추가적인 우발 채무 가능성을 배제하기 어렵다.",
-    "en": "Even after recognizing an KRW 80.3 billion impairment loss on long-term loans and accrued receivables, VGXI remains in complete capital impairment with liabilities exceeding assets. Ownership of the Conroe Plant 2 has been temporarily transferred to the creditor under a collateralized repayment-in-kind arrangement, and failure to fully settle the repurchase amount by the deadline risks loss of the asset. A $170 million lawsuit against GeneOne Life Science and VGXI is also ongoing, making further contingent liabilities difficult to rule out."
+    "ko": "2026년 3분기 지배주주 순손실 154억원은 전년 동기 115억원보다 확대됐고, 최근 4개 분기 합계는 529억원이다. 2026년 3월 차입은 연 10% 이자율로 기재됐다. 2026년 들어 전환사채 납입과 제3자배정 증자가 이어져 외부 자금에 대한 의존도가 높은 상태다.",
+    "en": "Net loss attributable to controlling shareholders was KRW 15.4 billion in the third quarter of 2026, wider than KRW 11.5 billion a year earlier, and the last four quarters total KRW 52.9 billion. A March 2026 borrowing was recorded at a 10% interest rate. Convertible bond payments and a third-party placement during 2026 show a high reliance on outside funding."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "상장적격성·회계 리스크",
-    "en": "Listing Eligibility and Accounting Risk"
+    "ko": "재무·유동성 리스크",
+    "en": "Financial and liquidity risk"
    },
    "body": {
-    "ko": "한국거래소는 VGXI의 CDMO 사업 중단을 이유로 2026년 8월 7일 진원생명과학을 기업심사위원회 심의대상으로 결정했다. 이후 반기검토 의견에서도 '부적정' 판정이 나오며 상장 유지와 관련한 심사 절차가 중첩됐다. 심의 결과에 따라 매매거래정지, 개선기간 부여, 상장폐지 등 여러 시나리오가 모두 열려 있는 상태다.",
-    "en": "The Korea Exchange designated GeneOne Life Science subject to a listing eligibility committee review on August 7, 2026 due to the CDMO business suspension at VGXI. An adverse half-year review opinion subsequently overlapped with this listing review process. Depending on the committee's decision, outcomes ranging from trading suspension to an improvement period or delisting remain all on the table."
+    "ko": "2026년 5월 51억원 규모 전환사채 납입과 2026년 9월 150억원 제3자배정 유상증자가 이어져 자금 조달이 반복되고 있다. 2025년 말 부채비율 191.5%와 영업활동 현금흐름 적자가 지속되면 추가 조달 필요성이 커질 수 있다. 신주 보호예수가 걸려 있어 유통 물량 증가 시점도 한정된다.",
+    "en": "A KRW 5.1 billion convertible bond was paid in on May 7, 2026, and a KRW 15 billion third-party placement followed in September 2026, so fundraising has recurred. With the debt ratio at 191.5% and operating cash outflows continuing at the end of 2025, the need for further funding could grow. Because the new shares are under a one-year lock-up, the timing of any increase in tradable supply is also limited."
    }
   },
   {
    "cat": {
-    "ko": "유동성·재무구조 리스크",
-    "en": "Liquidity and Capital Structure Risk"
+    "ko": "생산·계약 이행 리스크",
+    "en": "Production and contract execution risk"
    },
    "body": {
-    "ko": "2025년 말 기준 부채비율은 191.5%, 자본총계는 409억원에 그쳐 재무 완충력이 크게 줄어든 상태다. 회사는 무상감자, 복수의 유상증자, 전환사채 발행 등으로 자금을 조달해 왔는데, 이는 기존 주주의 지분 희석으로 이어질 수 있다. VGXI의 완전자본잠식과 콘로 제2공장 환매권 관련 자금 납입 일정도 추가 유동성 부담 요인이다.",
-    "en": "At the end of 2025, the debt-to-equity ratio stood at 191.5% with total equity of only KRW 40.9 billion, significantly reducing the company's financial buffer. The company has raised funds through a reverse stock split, multiple rights offerings, and convertible bond issuances, which can lead to dilution for existing shareholders. VGXI's complete capital impairment and the upcoming payment schedule tied to the Conroe Plant 2 repurchase right are additional liquidity burdens."
+    "ko": "2026년 상반기 CDMO 생산은 전면 중단됐고, 중단 사유에는 적격성 평가 준비와 생산라인 조정이 포함됐다. 제2공장의 자산 유동화 일정이 지연되면서 제1공장을 재임대해 운영하는 상황이다. 1,690만 달러 약정이 본 계약으로 이어지지 않거나 가동이 늦어지면 매출 회복 시점이 밀릴 수 있다.",
+    "en": "CDMO production was fully halted in the first half of 2026, and the reasons included qualification assessment preparation and production-line adjustments. The asset monetization of the second plant has been delayed, so the company is operating the first plant under a re-lease. If the USD 16.9 million agreement does not become a definitive contract or production starts late, the timing of a revenue recovery could slip."
    }
   },
   {
    "cat": {
-    "ko": "사업·소송 리스크",
-    "en": "Business and Litigation Risk"
+    "ko": "지배구조·공시 리스크",
+    "en": "Governance and disclosure risk"
    },
    "body": {
-    "ko": "신약 파이프라인 10개 중 8개가 개발 중단 또는 장기 보류 상태로, 남은 파이프라인의 상업화 시점은 불확실하다. CDMO 사업은 2026년 상반기 매출이 발생하지 않을 정도로 가동이 위축됐으며, 재가동 계획의 실행 여부가 아직 확인되지 않았다. 진원생명과학 및 VGXI를 상대로 한 1.7억달러 규모 소송이 2026년 8월 공시됐고, 결과에 따라 추가 재무 부담이 발생할 수 있다.",
-    "en": "Eight of the company's ten drug pipeline candidates are discontinued or on long-term hold, leaving the commercialization timeline for the remaining candidates uncertain. The CDMO business contracted to the point of generating no revenue in the first half of 2026, and whether the restart plans will be executed has not yet been confirmed. A $170 million lawsuit against GeneOne Life Science and VGXI was disclosed in August 2026, and the outcome could create additional financial burden."
+    "ko": "2026년 2월 13일 최대주주 변경을 2026년 3월 17일에 지연 공시하면서 불성실공시법인 지정이 예고됐고, 최근 1년간 부과누계벌점은 5점이었다. 공시규정상 부과벌점이 10점 이상이면 지정일 당일 매매거래정지가 따른다. 최대주주 지분이 동반성장투자조합에서 리볼트투자조합으로 바뀌는 구조여서 경영 방향과 지배구조 변화가 함께 확인돼야 한다.",
+    "en": "A largest-shareholder change dated February 13, 2026 was disclosed late on March 17, leading to a flagged possible designation as an unfaithful-disclosure company, with a cumulative penalty score of 5 points over the past year. Under the exchange rules, a penalty score of 10 or more triggers a one-day trading suspension on the designation date. Because the largest shareholder stake is set to shift to a private investment partnership, changes in management direction and governance will need to be checked together."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중순",
-    "en": "Mid-November 2026"
+    "ko": "2026년 12월 31일 (2026 사업연도 종료)",
+    "en": "December 31, 2026 (end of fiscal 2026)"
    },
    "what": {
-    "ko": "2026년 3분기 분기보고서 공시 예정 시점으로, 매출 감소세 지속 여부와 영업손실·지배주주 순손실 규모를 확인할 수 있다.",
-    "en": "Expected timing of the Q3 2026 quarterly report, which will show whether the revenue decline persists and the scale of operating and net losses attributable to owners."
+    "ko": "2026년 4분기 매출이 4개 분기 연속 감소 흐름을 끊는지, 제1공장 가동이 CDMO 매출로 이어졌는지를 확인하는 기준 시점이다.",
+    "en": "The reference point for checking whether fourth-quarter 2026 revenue breaks the four-quarter decline and whether first-plant operations translate into CDMO revenue."
    }
   },
   {
    "when": {
-    "ko": "2026년 12월 15일",
-    "en": "December 15, 2026"
+    "ko": "2026년 12월 이후 수시 공시 (시점 미정)",
+    "en": "Ad hoc disclosure after December 2026 (timing undetermined)"
    },
    "what": {
-    "ko": "VGXI의 콘로 제2공장 환매권 잔금 3,590만달러 정산 기한으로, 이 자금을 마련하지 못하면 해당 공장 자산을 잃을 위험이 있다.",
-    "en": "Deadline for VGXI to settle the remaining $35.9 million balance on the Conroe Plant 2 repurchase right; failure to secure this funding risks loss of the plant asset."
+    "ko": "1,690만 달러 약정의 본 계약 체결 여부와 계약 규모 확정이 다음 매출 흐름을 가르는 공시다.",
+    "en": "Whether the USD 16.9 million letter of agreement becomes a definitive contract and its final size will determine the next revenue path."
    }
   },
   {
    "when": {
-    "ko": "한국거래소 기업심사위원회 최종 결론 공시 시점",
-    "en": "At the time of the Korea Exchange's final listing committee decision"
+    "ko": "2026년 12월 이후 (일정 미정)",
+    "en": "After December 2026 (schedule undetermined)"
    },
    "what": {
-    "ko": "상장폐지 여부, 개선기간 부여 여부, 매매거래정지 지속 여부 등 상장적격성 실질심사의 최종 결과가 공시될 예정이며, 상장 유지 가능성을 가늠하는 핵심 변수다.",
-    "en": "The final outcome of the listing eligibility review—delisting, grant of an improvement period, or continued trading suspension—will be disclosed, representing a key variable for continued listing."
+    "ko": "제2공장 자산 유동화 일정과 공장 운영 방식이 확정되는지 여부로, 고정비 부담과 생산 능력 확보에 영향을 준다.",
+    "en": "Whether the second plant's asset monetization schedule and operating structure are confirmed, which affects fixed-cost burden and production capacity."
    }
   },
   {
    "when": {
-    "ko": "VGXI 제1공장 첫 가동 보고 시점",
-    "en": "At the time VGXI reports the first restart of Plant 1"
+    "ko": "2027년 3월 31일 (사업보고서 제출 기한)",
+    "en": "March 31, 2027 (annual report filing deadline)"
    },
    "what": {
-    "ko": "소규모 완제의약품 생산 프로젝트의 실제 가동 개시 여부를 확인해 CDMO 매출 회복의 현실화 여부를 판단할 수 있다.",
-    "en": "Confirmation of whether the small-scale finished-drug production project actually begins operating will indicate whether CDMO revenue recovery is materializing."
+    "ko": "2026 사업연도 매출, 영업손실, 부채비율, 자본총계가 정기보고서로 공식화되는 시점이다.",
+    "en": "The point at which fiscal 2026 revenue, operating loss, debt ratio and total equity are formalized in the periodic report."
+   }
+  },
+  {
+   "when": {
+    "ko": "2027년 10월 중순 (보호예수 1년 기간 만료 예정)",
+    "en": "Mid-October 2027 (scheduled end of one-year lock-up)"
+   },
+   "what": {
+    "ko": "신주 상장 예정일인 2026년 10월 16일 기준 보호예수가 풀리는 시점으로, 최대주주 지분 구조와 유통 물량 변화를 확인하는 지점이다.",
+    "en": "Based on the scheduled listing date of October 16, 2026, the point when the lock-up on new shares ends, a checkpoint for changes in the largest-shareholder stake and tradable supply."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "진원생명과학은 2022년부터 2025년까지 매출이 487억원에서 230억원으로 줄며 3년 연속 감소했고, 같은 기간 영업손실과 지배주주 순손실도 4년 연속 이어졌다. 2026년 들어서는 자회사 VGXI의 생산 중단과 완전자본잠식, 상장적격성 실질심사, 반기검토 '부적정' 의견 등 재무·상장 관련 불확실성이 동시에 불거졌다. 회사는 1대5 무상감자와 150억원 규모의 제3자배정 유상증자, VGXI 콘로 제2공장 환매권 연장 등 자금조달과 자산 유지를 위한 조치를 이어가고 있다. 신규 고객사와의 약정 체결, 소규모 완제의약품 생산 프로젝트 전환 등 CDMO 사업 재가동을 위한 계획도 공시됐으나, 실제 매출로 이어졌는지는 아직 확인되지 않았다. 2026년 2분기까지 매출은 4개 분기 연속, 영업손실과 지배주주 순손실은 5개 분기 연속 이어지고 있어 단기간 내 추세 전환 여부를 가늠하기는 이르다. 상장적격성 실질심사의 최종 결론과 VGXI의 자산 정상화 여부가 향후 재무구조와 사업 지속성을 좌우할 핵심 변수로 남아 있다.",
-   "en": "GeneOne Life Science's revenue declined for three consecutive years from KRW 48.7 billion in 2022 to KRW 23 billion in 2025, while operating loss and net loss attributable to owners continued for four consecutive years over the same period. In 2026, financial and listing-related uncertainties emerged simultaneously, including production suspension and complete capital impairment at subsidiary VGXI, a listing eligibility review, and an adverse half-year review opinion. The company has pursued a series of measures to secure funding and preserve assets, including a 5-for-1 reverse stock split, a KRW 15 billion third-party share placement, and an extension of VGXI's Conroe Plant 2 repurchase right. Plans to restart the CDMO business, including a new client commitment letter and conversion to a small-scale finished-drug production project, have also been disclosed, though whether they have translated into actual revenue remains unconfirmed. Through Q2 2026, revenue has declined for four consecutive quarters while operating loss and net loss attributable to owners have continued for five consecutive quarters, making it premature to assess whether the trend will reverse in the near term. The final outcome of the listing eligibility review and the normalization of VGXI's asset base remain the key variables that will determine the company's future capital structure and business continuity."
+   "ko": "진원생명과학은 2022년부터 2025년까지 매출이 줄고 4년 연속 적자가 이어진 가운데, 2026년에는 미국 CDMO 공장 재가동과 1,690만 달러 규모 공급 약정으로 매출 재개의 조건을 만들고 있다. 2026년 3분기 영업손실은 54.1억원으로 전년 동기보다 줄었지만, 지배주주 순손실은 154억원으로 전년 동기보다 확대돼 항목별 방향이 엇갈린다. 재무 측면에서는 2025년 말 부채비율 191.5%, 자본총계 409억원, 영업활동 현금흐름 적자가 이어져 외부 자금 조달에 대한 의존도가 높다. 강세 요인으로는 공급 약정, 공장 재가동, 손실 규모 축소가 꼽히고, 약세 요인으로는 매출 4개 분기 연속 감소, 반복된 증자와 전환사채 발행, 지배구조 공시 이력이 꼽힌다. 두 요인의 무게는 본 계약 체결과 가동 후 매출이 공시로 확인되는 시점에 따라 달라진다. 다음 공식 확인 지점은 2026 사업연도 사업보고서이며 제출 기한은 2027년 3월 31일이다. 그 전에 2026년 4분기 매출 흐름과 제2공장 자산 유동화 일정이 확인되면 현재 재무 과제의 크기가 더 분명해진다.",
+   "en": "GeneOne Life Science has seen revenue decline and four consecutive years of operating losses from 2022 through 2025, and in 2026 it is working to create conditions for revenue recovery through a US CDMO plant restart and a USD 16.9 million supply agreement. The operating loss in the third quarter of 2026 was KRW 5.41 billion, narrower than a year earlier, but the net loss attributable to controlling shareholders was KRW 15.4 billion, wider than a year earlier, so the line items point in different directions. On the financial side, the debt ratio of 191.5%, total equity of KRW 40.9 billion and continued operating cash outflow at the end of 2025 mean the company depends heavily on outside funding. Strengths cited include the supply agreement, the plant restart and the narrower operating loss, while weaknesses cited include four consecutive quarters of revenue decline, repeated capital raising through convertible bonds and placements, and a governance disclosure history. The weight of these factors will shift depending on whether the definitive contract is signed and whether post-restart revenue appears in disclosures. The next formal checkpoint is the fiscal 2026 annual business report, due by March 31, 2027. The fourth-quarter 2026 revenue trend and the second plant's asset monetization schedule will make the scale of the financial challenge clearer before then."
   }
  },
  "sources": [
-  "https://news.nate.com/view/20260303n35953",
+  "https://www.jobkorea.co.kr/recruit/co_read/c/klca0441",
   "https://www.digitaltoday.co.kr/news/articleView.html?idxno=684898",
-  "https://news.bizwatch.co.kr/article/healthcare/2026/04/08/0036",
+  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=663532",
+  "https://kormedi.com/2869933/",
+  "https://bestwellth.org/jinwon-life-science-stock-analysis-covid-theme-rally-financial-risk/",
+  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=643700",
+  "https://www.mt.co.kr/stock/2026/10/26/2026102609434538676",
+  "https://m.news.nate.com/view/20260319n35145",
   "https://www.digitaltoday.co.kr/news/articleView.html?idxno=689958",
-  "https://m.sedaily.com/article/20095585",
-  "https://www.topstarnews.net/news/articleView.html?idxno=16157879",
-  "https://www.dailyan.com/news/article.html?no=777318",
-  "https://news.nate.com/view/20260410n16921",
-  "https://www.topstarnews.net/news/articleView.html?idxno=16157588",
-  "https://pflow.keywordegg.com/domestic/011000",
-  "https://news.nate.com/view/20260415n12992",
-  "https://www.mt.co.kr/stock/2026/05/08/2026050809121251793",
+  "https://markets.hankyung.com/stock/011000",
+  "https://markets.hankyung.com/stock/011000/consensus",
   "https://www.investing.com/equities/vgx-intl",
-  "https://www.etoday.co.kr/news/view/2000599",
-  "https://www.etoday.co.kr/news/view/2092623",
-  "https://www.etoday.co.kr/news/view/1985928",
-  "https://www.etoday.co.kr/news/view/2209220",
-  "https://edaily.co.kr/news/read?mediaCodeNo=257&newsId=01722006625996224"
+  "https://pflow.keywordegg.com/domestic/011000",
+  "https://littlebproject.com/stock/011000/267/47119",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=cYpy9ocWIeQQY84I",
+  "http://www.paxnet.co.kr/stock/analysis/main?abbrSymbol=011000",
+  "https://alpha-lenz.com/ko/companies/477"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "011000",
  "name": "진원생명과학",
  "name_en": "GeneOne Life Science, Inc.",
@@ -223,11 +232,11 @@
   "바이오·제약"
  ],
  "market": "코스피",
- "reportDate": "2026-10-20",
- "reportTs": "2026-10-20 01:01",
- "dataDate": "20261019",
+ "reportDate": "2026-11-18",
+ "reportTs": "2026-11-18 14:22",
+ "dataDate": "20261117",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-11-18",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -297,12 +306,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 6812910584,
-    "op": -10185945964,
-    "np_owner": -15409161686
-   },
-   {
     "q": "2025Q3",
     "rev": 5076235165,
     "op": -11661379506,
@@ -325,6 +328,12 @@
     "rev": 2056175287,
     "op": -12810356801,
     "np_owner": -18948997728
+   },
+   {
+    "q": "2026Q3",
+    "rev": 1781992320,
+    "op": -5414413256,
+    "np_owner": -15407607540
    }
   ],
   "valuation": {
@@ -332,21 +341,26 @@
    "mcap": 0.0485,
    "shares": 18176581,
    "total_shares": 18176581,
-   "wavg_shares": 17746253,
+   "wavg_shares": 17886369,
    "per": null,
-   "eps": -2757,
-   "pbr": 1.3277,
-   "bps": 2011,
-   "roe_ttm": -99.7,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": -48935522000,
+   "eps": -2250,
+   "pbr": 2.4011,
+   "bps": 1112,
+   "roe_ttm": -140.5,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": -52874744413,
    "ccy": "KRW",
    "bps_src": "자체",
+   "eps_src": "공시",
    "pbr_krx": 1.11,
    "bps_krx": 2400.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
-   "div": 0.0
+   "div": 0.0,
+   "hidden": {
+    "per": "loss"
+   }
   }
- }
+ },
+ "textRules": 3
 }
