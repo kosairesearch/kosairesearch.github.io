@@ -28,6 +28,7 @@ on:
       - "리포트 v2 생성 (정량+정성 · Batch)"
       - "🤖📦 AI 리포트 대량 생성 (Batch · 50%↓)"
       - "🆕 신규 상장 자동 리포트"
+      - "🆕 상장 전 신규 상장 리포트"
     types: [completed]
 
 concurrency:

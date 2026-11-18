@@ -22,4 +22,4 @@ jobs:
           KRX_ID: ${{ secrets.KRX_ID }}
           KRX_PW: ${{ secrets.KRX_PW }}
         run: |
-          python scripts/probe_ipo.py 2>&1 | sed -u 's/\(로그인 ID: \).*/\1(가림)/'
+          python scripts/ipo_reports.py scan 2>&1 | sed -u 's/\(로그인 ID: \).*/\1(가림)/'

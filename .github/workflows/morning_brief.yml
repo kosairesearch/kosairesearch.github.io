@@ -59,6 +59,7 @@ on:
 
 permissions:
   contents: write
+  actions: write   # 상장 전 신규 상장 리포트 작업을 깨운다(① 다음 단계 · 2026-11-18)
 
 concurrency:
   # 06:00 시도가 도는 중에 06:40 이 겹치면 같은 브리핑을 두 번 만든다.
@@ -111,6 +112,17 @@ jobs:
           print(f"next={(around or {}).get('next', '')}")
           PY
           cat $GITHUB_OUTPUT
+
+      # 상장 전 신규 상장 리포트(ipo_reports.yml)를 깨운다(2026-11-18 사장 "상장 당일에 리포트를 뿌려야 유입이 많이 되는데"). 깃허브 예약은
+      # 몇 시간씩 밀려서, 파이어베이스가 정해진 시각(06:40 · 07:15)에 깨우는 이 작업이 대신 부른다 — 상장 이틀 전 오후에 나온 '신규상장'
+      # 안내의 종목을 상장 전날 아침에 쓰고 게시한다. 따로 도는 작업이라 브리핑을 기다리게 하지 않고, 실패해도 브리핑에는 영향이 없다.
+      # 몇 번 불려도 같다(리포트가 있는 종목은 다시 쓰지 않는다).
+      - name: 상장 전 신규 상장 리포트 깨우기
+        if: steps.gate.outputs.open == 'true'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run ipo_reports.yml --ref main || echo "::warning::상장 전 신규 상장 리포트 작업을 깨우지 못했다 — 그 작업의 예약이 다시 본다"
 
       - name: 휴장일 — 아무것도 하지 않는다
         if: steps.gate.outputs.open != 'true' && inputs.allow_closed != true

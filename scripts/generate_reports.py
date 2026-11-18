@@ -122,6 +122,15 @@ def load_existing_reports():
     return reports
 
 
+def _ipo_active():
+    """상장 전 · 상장 당일에 게시한 신규 상장 종목(ipo_listings.active) — 읽지 못하면 빈 집합."""
+    try:
+        import ipo_listings
+        return ipo_listings.active()
+    except Exception:                                        # noqa: BLE001
+        return set()
+
+
 def write_reports(reports, model, as_of):
     """종목별 JSON(data/reports/{tk}.json) + 가벼운 인덱스(reports-index.js)로 저장.
     인덱스는 목록/카드용 최소 필드(title·reportDate·reportTs)만 담아 window.KOS_REPORTS 로 노출한다
@@ -129,7 +138,8 @@ def write_reports(reports, model, as_of):
     # 유니버스에서 빠진 종목(상폐·우선주 정리 등)의 리포트는 함께 정리.
     # 데이터 글리치로 대량 삭제되는 사고를 막기 위해 종목 수·고아 수 가드를 둔다.
     try:
-        stk = {s["ticker"] for s in load_stocks()["stocks"]}
+        # 상장 전에 게시한 종목(data/ipo.json · 2026-11-18)은 시세 자료에 오르기 전에도 상장 종목으로 친다 — 지우면 쓴 글이 사라진다
+        stk = {s["ticker"] for s in load_stocks()["stocks"]} | _ipo_active()
         orphans = [tk for tk in reports if tk not in stk]
         if len(stk) >= 2000 and 0 < len(orphans) <= 60:
             for tk in orphans:
@@ -187,7 +197,8 @@ def write_reports(reports, model, as_of):
     except Exception:
         universe = set()
     if universe:
-        for tk in [t for t in index if t not in universe]:
+        keep_ipo = _ipo_active()        # 상장 전에 게시한 종목은 목록에 둔다(종목 수 stockCount 는 시세 자료 그대로)
+        for tk in [t for t in index if t not in universe and t not in keep_ipo]:
             del index[tk]
         payload["stockCount"] = len(universe)
     REPORTS_INDEX_JS.write_text(
@@ -374,6 +385,53 @@ SYSTEM = (
 )
 
 
+IPO_RULES = """
+[신규 상장 종목 — 아래 작성 지침에 더한다]
+- 상장일(매매개시일) 전에 쓰는 글이다. 주가 · 등락률 · 거래대금 · 상장 첫날 시초가는 아직 없다 — 쓰지 않고, 상장 뒤 주가나 공모가 대비 수익률을 예상하지 않는다.
+- recent 칸에는 주가 흐름 대신 공모 과정(수요예측 · 일반 청약 경쟁률 · 희망 공모가 범위와 확정 공모가 · 공모 자금의 쓰임 · 의무보유 확약 · 상장 직후 유통 가능 물량)과 최근 실적(증권신고서 · 투자설명서 기준)을 쓴다. 경쟁률 · 확약 비율 · 유통 물량 · 실적은 검색으로 확인된 값만 쓴다.
+- 상장일은 날짜로 쓴다 — '상장일은 2026년 11월 20일이다'처럼. '상장 예정' · '상장했다' · '내일 상장'처럼 글을 쓴 때에 기대는 말을 쓰지 않는다.
+- 공모가를 정할 때 쓴 비교 회사 · 배수 · 할인율은 증권신고서 · 기사에 적힌 값만 인용한다. 우리 목소리로 공모가가 높다 · 낮다고 판단하지 않는다.
+"""
+
+
+def ipo_material(stock):
+    """상장 전 종목의 재료 줄 — 한국거래소 '신규상장' 안내와 KIND 공모진행 현황(scripts/ipo_reports.py · data/ipo.json). 시세 줄 대신 쓴다.
+    금액 뒤 [ ] 안은 영어 본문 표기다(fin_material 과 같은 관례 — 저장 전 정리가 한국어 칸의 [ ] 표기를 걷는다)."""
+    o = stock.get("ipo") or {}
+    lines = []
+    d = str(o.get("list_date") or "")
+    if re.fullmatch(r"\d{4}-\d{2}-\d{2}", d):
+        y, m, dd = (int(x) for x in d.split("-"))
+        lines.append(f"- 상장일(매매개시일): {y}년 {m}월 {dd}일 · 신규 상장 · 첫 거래 전")
+    price, shares, amt = o.get("offer_price"), o.get("shares"), o.get("offer_amount_mil")
+    a = []
+    if price:
+        a.append(f"확정 공모가 {price:,}원[KRW {price:,}]")
+    if amt:
+        a.append(f"공모금액 {fin_material.won(amt * 1e6)}[{fin_material.won_en(amt * 1e6)}]")
+    if o.get("underwriter"):
+        a.append(f"대표 주관사 {o['underwriter']}")
+    if a:
+        lines.append("- " + " · ".join(a))
+    b = [f"{k} {o[v]}" for k, v in (("수요예측", "bookbuild"), ("일반 청약", "subscribe")) if o.get(v)]
+    if b:
+        lines.append("- " + " · ".join(b))
+    if shares:
+        c = f"- 상장주식수 {shares:,}주"
+        if price:
+            c += f" · 공모가 기준 시가총액 {fin_material.won(price * shares)}[{fin_material.won_en(price * shares)}]"
+        lines.append(c)
+    d2 = [f"{k} {o[v]}" for k, v in (("정식 회사명", "full_name"), ("대표이사", "ceo"), ("소속부", "division")) if o.get(v)]
+    if d2:
+        lines.append("- " + " · ".join(d2))
+    d3 = [f"{k} {o[v]}" for k, v in (("업종(한국거래소)", "industry"), ("주요 제품", "products")) if o.get(v)]
+    if d3:
+        lines.append("- " + " · ".join(d3))
+    if o.get("holders"):
+        lines.append(f"- 주요주주(상장 안내 기준) {o['holders']}")
+    return "\n".join(lines)
+
+
 def build_prompt(stock, as_of, dart_block=""):
     name = stock["name"]
     sector = stock.get("sector", "")
@@ -390,15 +448,20 @@ def build_prompt(stock, as_of, dart_block=""):
         names = "\n" + fin_material.name_block(stock) + "\n"
     except Exception:
         names = ""
+    # 상장 전 종목(2026-11-18 · scripts/ipo_reports.py)은 시세가 없다 — 시세 줄 대신 공모 정보 줄과 공모주 지침을 쓴다
+    if stock.get("ipo"):
+        market_lines, ipo_rules = ipo_material(stock), IPO_RULES
+    else:
+        market_lines = (f"- 현재가: {price:,}원 (전일대비 {change:+.2f}%)\n- 시가총액: {mcap_txt}\n"
+                        f"- 거래대금: {fmt_won(trading_value)}")
+        ipo_rules = ""
     return f"""다음 종목에 대한 기업 리서치 리포트를 작성하세요.
 
 [종목 · 작성 시점 — {as_of} KST]
 - 종목명: {name} ({stock['ticker']})
 - 시장/업종: {market} · {sector}
-- 현재가: {price:,}원 (전일대비 {change:+.2f}%)
-- 시가총액: {mcap_txt}
-- 거래대금: {fmt_won(trading_value)}
-{dart_section}{names}
+{market_lines}
+{dart_section}{names}{ipo_rules}
 [작성 지침]
 1. 먼저 web_search 도구로 이 기업의 최신 실적, 사업 현황, 업종 동향, 최근 뉴스를 조사하세요(한국어로 검색). 최소 2~4회 검색합니다. 출처는 **신뢰할 수 있는 것만** 사용하세요: DART 공시·기업 IR/홈페이지·증권사 리포트·주요 언론·공신력 있는 통계. **나무위키 등 위키, 개인 블로그, 종목토론방·커뮤니티 같은 비공식·검증 안 된 출처는 참고하거나 인용하지 마세요.**
 2. 이 회사의 실적 수치는 위 **[공시 실적]**의 표기를 그대로 옮기세요(원 단위로 다시 계산하거나 자릿수를 바꾸지 말 것 · 영어 본문은 [ ] 안의 표기). 그 외 수치는 검색으로 **확인된 것만** 쓰고, 확인 안 된 구체적 숫자는 추정하지 말고 정성적으로 서술하세요. 숫자를 지어내지 마세요.
