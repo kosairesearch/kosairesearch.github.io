@@ -280,12 +280,20 @@ def merge(ipo, found, now):
     return ipo
 
 
-def todo(ipo, today=None):
-    """리포트를 쓸 종목 — 창 안 · 상장일이 오늘 이후 · 시세 자료에 없음 · 리포트 없음. 상장일 순."""
-    today = (today or kst_now().date()).isoformat()
+def before_trading(entry, now=None):
+    """첫 거래 전인가 — 상장일이 내일 이후이거나, 오늘이고 장 시작(09:00) 전. 거래가 시작된 종목은 '첫 거래 전' 판으로 쓰지 않고
+    신규 상장 작업(new_listings · 상장일 시세가 들어온 뒤 · 평소 지시문)에 맡긴다."""
+    now = now or kst_now()
+    d = str((entry or {}).get("list_date", ""))
+    return d > now.date().isoformat() or (d == now.date().isoformat() and now.hour < 9)
+
+
+def todo(ipo, now=None):
+    """리포트를 쓸 종목 — 창 안 · 첫 거래 전 · 시세 자료에 없음 · 리포트 없음. 상장일 순."""
+    now = now or kst_now()
     listed = listed_tickers()
     out = [tk for tk, e in (ipo.get("stocks") or {}).items()
-           if L.in_window(e) and str(e.get("list_date", "")) >= today and tk not in listed and not has_report(tk)]
+           if L.in_window(e, now.date()) and before_trading(e, now) and tk not in listed and not has_report(tk)]
     return sorted(out, key=lambda t: (ipo["stocks"][t].get("list_date", ""), t))[:MAX_NEW]
 
 
