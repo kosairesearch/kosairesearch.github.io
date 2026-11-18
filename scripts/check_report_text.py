@@ -511,7 +511,9 @@ _AMT_NEXT = re.compile(rf"(?:\([^()]*\))?(?:으로|로|이고|이며|였고|이�
 _AMT_SKIP = re.compile(r"잠정|전망|예상|추정|컨센서스|목표|가이던스|계획|부문|사업부|자회사|종속|별도|누적|상반기|하반기|반기|합산|평균")
 _AMT_LEAD = (r"(?:(?:실제로|다만|한편|반면|또한|특히|이후|그러나|하지만|결국|그 결과|이에 따라|공시 기준으로|공시 기준|연결 기준으로|연결 기준"
              r"|회사 공시 기준|확정 실적에서|확정 실적 기준)\s*,?\s*)*")
-_AMT_LOSS_AFTER = re.compile(r"\s*(?:의\s*)?(?:적자|손실)")
+# 금액 뒤의 손실 말 — '880억원 적자' · '880억원의 손실' · '880억원 순손실로'(2026-11-18 DL — '지배주주 순이익은 880억원 순손실로'의
+# '순손실'을 읽지 못해 맞는 문장이 교정 뒤에도 걸려 저장되지 않았다).
+_AMT_LOSS_AFTER = re.compile(r"\s*(?:의\s*)?(?:(?:지배주주\s?)?(?:당기)?순|영업)?(?:적자|손실)")
 _EN_MET = (r"revenue|sales|operating profit|operating income|operating loss"
            r"|net profit attributable to (?:owners|controlling shareholders)(?: of the parent)?"
            r"|net income attributable to (?:owners|controlling shareholders)(?: of the parent)?"
@@ -739,8 +741,84 @@ def amount_hits(rep):
                 x = m.group("x").replace(",", "")
                 u = _EN_UNIT[m.group("u")]
                 unit = u / 10 ** (len(x.split(".")[1]) if "." in x else 0)
-                loss = "loss" in m.group("m").lower() or bool(re.match(r"\s*(?:loss|deficit)", s[m.end():]))
+                loss = "loss" in m.group("m").lower() or bool(re.match(r"\s*(?:net\s|operating\s)?(?:loss|deficit)", s[m.end():]))
                 judge(sec, s, label, row, m.group("m"), float(x) * u, unit, loss, en=True)
+    return hits
+
+
+# ── 구간 증감률(2026-11-18) ────────────────────────────────────────────────────────────────────────────────
+# 'A년 X원에서 B년 Y원으로 N% 감소'의 N 은 X → Y 의 증감률이어야 한다. 3분기 공시 리포트 점검(11/18 · 무작위 15편)에서 POSCO홀딩스가
+# '지배주주 순이익은 2022년 3조 1,441억원에서 2025년 6,577억원으로 39.9% 감소'(실제 79.1% — 39.9% 는 2025년 한 해의 전년 대비)를,
+# 엑시콘이 '2022년 912억원에서 2024년 316억원으로 61.6% 줄었고'(실제 65.3%)를 썼다. 재료의 '전년 대비' 증감률을 여러 해 구간에 붙인
+# 것이다. 금액 대조(amount_hits)는 금액만 보아 놓쳤다. 문장 속 두 금액으로 계산하므로 공시 값이 없어도 된다. 표기의 반올림(금액의
+# 마지막 자리 · 정수로 쓴 증감률)은 허용한다. 측정: 사이트 2,586편의 한국어 283문장 · 영어 464문장 중 걸린 곳은 위 둘(영어 1곳 포함)뿐.
+_SPAN_PER = r"20\d\d년(?: [1-4]분기)?"
+_SPAN_KO = re.compile(
+    rf"(?P<p1>{_SPAN_PER})[^.]*?(?P<a1>{_AMT_KO})(?:의 [가-힣]+)?에서\s*(?:(?P<p2>{_SPAN_PER})(?:에|에는)?\s*)?(?:[가-힣]+\s)?"
+    rf"(?P<a2>{_AMT_KO})(?:으)?로\s*(?:(?P<about>약|모두|각각)\s*)?(?P<n>\d+(?:,\d{{3}})*(?:\.\d+)?)%\s*"
+    r"(?P<d>증가|감소|늘|줄|확대|축소|상승|하락|급증|급감|성장|뛰|커|작아|불어|쪼그라|낮아|높아)")
+_SPAN_UP = ("증가", "늘", "확대", "상승", "급증", "성장", "뛰", "커", "불어", "높아")
+_SPAN_PER_EN = r"(?:Q[1-4] )?20\d\d|the (?:first|second|third|fourth) quarter of 20\d\d"
+_SPAN_EN = re.compile(
+    rf"from KRW (?P<x1>[\d.,]+) (?P<u1>trillion|billion|million)(?: in (?P<p1>{_SPAN_PER_EN}))? to KRW (?P<x2>[\d.,]+) "
+    rf"(?P<u2>trillion|billion|million)(?: in (?P<p2>{_SPAN_PER_EN}))?,? (?:\(\s*)?(?:an? )?"
+    r"(?P<d>decline|decrease|drop|fall|increase|rise|jump|gain|growth|surge|down|up)(?: of)? (?P<about>about |roughly |around )?"
+    r"(?P<n>\d+(?:,\d{3})*(?:\.\d+)?)%(?!\s*(?:year|from the previous|from the prior|from a year|compared|quarter|on-year|on year"
+    r"|in (?:20\d\d|that year|that quarter|the (?:latest|final|last|same) (?:year|quarter))|alone|,? \d+(?:\.\d+)?%))")
+_SPAN_UP_EN = ("increase", "rise", "jump", "gain", "growth", "surge", "up")
+
+
+def _span_judge(v1, u1, v2, u2, n_txt, up, about):
+    """두 금액(값 · 마지막 자리 한 칸)과 적힌 증감률이 맞는가. 맞지 않으면 계산한 증감률(%), 맞으면 None."""
+    if v1 <= 0 or v2 <= 0 or u1 is None or u2 is None or v1 - u1 / 2 <= 0:
+        return None
+    lo = (v2 - u2 / 2) / (v1 + u1 / 2) - 1
+    hi = (v2 + u2 / 2) / (v1 - u1 / 2) - 1
+    n = float(n_txt.replace(",", "")) / 100 * (1 if up else -1)
+    dec = len(n_txt.split(".")[1]) if "." in n_txt else 0
+    slack = (0.5 / 10 ** dec + (0.5 if about else 0) + 0.01) / 100
+    if lo - slack <= n <= hi + slack:
+        return None
+    return (v2 / v1 - 1) * 100
+
+
+def span_pct_hits(rep):
+    """'A에서 B로 N% 증가 · 감소'의 N 이 두 금액으로 계산한 값과 다른 곳 — 위험(금액 규칙과 같은 교정 · 저장 문턱)."""
+    hits = []
+    for sec, s in sentences(rep):
+        for m in _SPAN_KO.finditer(s):
+            gap = s[m.end("a2"):m.start("n")]
+            if "대비" in gap:
+                continue
+            if re.search(r"손실|적자", s[max(0, m.start("a1") - 12):m.end("a2") + 4]):
+                continue
+            v1, u1 = _amt_value(m.group("a1"))
+            v2, u2 = _amt_value(m.group("a2"))
+            calc = _span_judge(v1, u1, v2, u2, m.group("n"), m.group("d").startswith(_SPAN_UP), m.group("about") == "약")
+            if calc is not None:
+                hits.append({"rule": "span_pct", "level": "위험", "section": sec, "match": m.group("n") + "%",
+                             "why": f"증감률이 두 금액과 맞지 않는다 — {m.group('a1')}에서 {m.group('a2')}(으)로는 "
+                                    f"{abs(calc):.1f}% {'증가' if calc > 0 else '감소'}다. {m.group('n')}%가 마지막 해(분기) 한 번의 "
+                                    "전년(전 분기) 대비 증감률이면 그 해에 붙여 쓸 것",
+                             "sentence": s[:160]})
+    for sec, t in en_texts(rep):
+        for m in _SPAN_EN.finditer(t):
+            if re.search(r"loss|deficit", t[max(0, m.start() - 30):m.start()], re.I):
+                continue
+            def ev(x, u):
+                raw = x.replace(",", "")
+                mul = _EN_UNIT[u]
+                dec = len(raw.split(".")[1]) if "." in raw else 0
+                return float(raw) * mul, mul / 10 ** dec
+            v1, u1 = ev(m.group("x1"), m.group("u1"))
+            v2, u2 = ev(m.group("x2"), m.group("u2"))
+            calc = _span_judge(v1, u1, v2, u2, m.group("n"), m.group("d") in _SPAN_UP_EN, bool(m.group("about")))
+            if calc is not None:
+                i = m.start()
+                hits.append({"rule": "span_pct", "level": "위험", "section": sec, "match": m.group("n") + "%",
+                             "why": f"영어 증감률이 두 금액과 맞지 않는다 — 계산하면 {abs(calc):.1f}% "
+                                    f"{'증가' if calc > 0 else '감소'}다. 마지막 해(분기) 한 번의 전년(전 분기) 대비 증감률이면 그 해에 붙여 쓸 것",
+                             "sentence": t[max(0, i - 60):i + 140]})
     return hits
 
 
@@ -839,7 +917,10 @@ def new_rule_hits(rep):
 # 둘 다 품질 등급이라 교정이 그 문장만 고친다. 이 규칙을 적은 지시문으로 쓴 리포트에만 건다 — 생성기(리포트 v2 · 옛 형식 배치)가
 # 저장하는 글에 'textRules': TEXT_RULES 를 단다(작성 시각으로 가르면 병합 시각에 따라 옛 지시문의 글이 걸린다). 그 전 글은 공시로
 # 다시 쓸 때 바뀐다. 면책 문장('이 리포트는 정보 제공 목적이며 …')은 걸지 않는다.
-TEXT_RULES = 2
+# 판마다 더한 규칙 — 2: 글을 쓴 과정 · 지난 분기 일정(2026-11-09) · 3: 연도 상대 표현(2026-11-18 · year_hits). 생성기는 지금 판을 단다.
+TEXT_RULES = 3
+PROCESS_RULES = 2
+YEAR_RULES = 3
 _PROCESS_KO = re.compile(
     r"이번\s*(?:검색|조사|확인|리포트)"
     r"|검색(?:으로|에서)(?:는|도)?\s*(?:확인|찾지|파악)"
@@ -933,7 +1014,7 @@ def process_rules_apply(rep):
     """글을 쓴 과정 · 지난 분기 일정 규칙을 거는가 — 종목 리포트이고, 이 규칙을 적은 지시문으로 썼으면(textRules)."""
     if not isinstance(rep, dict) or not rep.get("ticker"):
         return False
-    if (rep.get("textRules") or 0) >= TEXT_RULES:
+    if (rep.get("textRules") or 0) >= PROCESS_RULES:
         return True
     return not (rep.get("reportTs") or rep.get("reportDate"))   # 작성 시각이 없으면(비용 시험의 글) 건다
 
@@ -1024,6 +1105,54 @@ def F_next_report(latest_q):
     return F.next_report(f"{latest_q[0]}Q{latest_q[1]}")
 
 
+# ── 연도 상대 표현(2026-11-18) ───────────────────────────────────────────────────────────────────────────────
+# 3분기 공시 리포트 점검(11/18): 11월에 쓴 1,938편 중 한국어 424편이 '올해 · 지난해 · 작년 · 내년'을, 영어 373편이 'this year ·
+# last year · next year'를 썼다. 두 가지로 틀린다 — ① 기사 속 '내년'을 그대로 옮긴다('SK증권은 2025년 11월 보고서에서 … 내년
+# 증설 규모' — 그 '내년'은 2026년인데 2026년 11월에 읽으면 2027년이다 · HL홀딩스 '작년 역대 최고 매출액'은 2025년 기사의 2024년).
+# ② 리포트는 해가 바뀐 뒤에도 걸려 있다 — 3분기 리포트는 이듬해 3월 사업보고서까지 그대로라 2027년 1~3월에는 '올해'가 모두
+# 틀린 말이 된다. 2026-10-09 상대 시점 규칙은 '해가 바뀌기 전까지 맞다'며 연도를 빼 두었다. 이 규칙을 적은 지시문으로 쓴 글
+# (textRules ≥ YEAR_RULES)에만 건다 — 그 전 글은 해가 바뀌기 전에 따로 고친다. '전년 대비' · '전년도' · 'year on year' ·
+# 'a year earlier' 처럼 문장 안의 다른 해를 기준으로 삼는 말은 걸지 않는다. 품질 등급이라 교정이 그 문장만 고친다.
+_YEAR_KO = re.compile(r"(?<![가-힣])(?:올해|지난해|작년|재작년|내년|내후년|금년|올\s?들어|올\s?(?:[1-4]분기|상반기|하반기))"
+                      r"(?=(?:도|에|의|은|는|와|과|부터|까지|보다|처럼|만|이|가|로|으로|에는|에도|에서|에만|초|말|중)?(?![가-힣]))")
+_YEAR_EN = re.compile(r"\b(?:this|last|next) year(?:'s)?\b|\bthis (?:quarter|month)\b", re.I)
+
+
+def year_rules_apply(rep):
+    """연도 상대 표현 규칙을 거는가 — 종목 리포트이고, 이 규칙을 적은 지시문으로 썼으면(textRules) · 작성 시각이 없는 시험 글이면."""
+    if not isinstance(rep, dict) or not rep.get("ticker"):
+        return False
+    if (rep.get("textRules") or 0) >= YEAR_RULES:
+        return True
+    return not (rep.get("reportTs") or rep.get("reportDate"))
+
+
+def year_hits(rep):
+    """연도 상대 표현 — 품질(교정이 연도 숫자로 고친다)."""
+    if not year_rules_apply(rep):
+        return []
+    d = str(rep.get("reportDate") or "")[:10]
+    y = int(d[:4]) if d[:4].isdigit() else None
+    when = (f"이 글은 {y}년 {int(d[5:7])}월에 썼다 — 이 글을 쓴 때 기준이면 '올해'는 {y}년, '지난해 · 작년'은 {y - 1}년, '내년'은 {y + 1}년"
+            if y and d[5:7].isdigit() else "작성 시점 기준으로 연도를 계산")
+    why = (f"연도 상대 표현 — 리포트는 해가 바뀐 뒤에도 걸려 있다. 연도를 숫자로 쓸 것({when}). 문장 속 기사 · 보고서의 날짜가 있으면 그 날짜"
+           " 기준으로 계산하고, 어느 해인지 알 수 없으면 시점 표현을 뺀다")
+    hits = []
+    for sec, s in sentences(rep):
+        if DISCLAIMER.search(s):
+            continue
+        m = _YEAR_KO.search(s)
+        if m:
+            hits.append({"rule": "stale_year", "level": "품질", "section": sec, "match": m.group(0), "why": why, "sentence": s[:160]})
+    for sec, t in en_texts(rep):
+        m = _YEAR_EN.search(t)
+        if m:
+            i = m.start()
+            hits.append({"rule": "stale_year", "level": "품질", "section": sec, "match": m.group(0), "why": why,
+                         "sentence": t[max(0, i - 60):i + 100]})
+    return hits
+
+
 def check(rep):
     """위반 목록을 돌려준다. [] 면 통과."""
     hits = []
@@ -1062,7 +1191,8 @@ def check(rep):
             hits.append({"rule": "hangul_en", "level": "품질", "section": sec,
                          "match": t[i:i + 12], "why": "영문에 한글이 남았다 — 로마자/영문 명칭으로",
                          "sentence": t[max(0, i - 60):i + 60]})
-    return hits + streak_hits(rep) + amount_hits(rep) + enmix_hits(rep) + defects(rep) + new_rule_hits(rep) + process_hits(rep)
+    return (hits + streak_hits(rep) + amount_hits(rep) + span_pct_hits(rep) + enmix_hits(rep) + defects(rep) + new_rule_hits(rep)
+            + process_hits(rep) + year_hits(rep))
 
 
 # ── 교정: 걸린 문장만 다시 쓴다 ──────────────────────────────────────────
@@ -1089,6 +1219,8 @@ _RULE_TEXT = "\n".join(f"  · {key}: {why}" for key, _lv, _pat, why in RULES) + 
     "\n  · amount: 이 회사의 실적 금액이 공시 값과 다르다 — 위반 설명에 적힌 공시 값으로 그 금액만 고친다(같은 문장의 '전 분기 · 전년'"
     " 금액이 같은 자리에서 틀렸으면 그것도, 같은 칸의 영어 금액도 같은 값으로). 그 문장이 이 회사가 아니라 자회사 · 부문 · 다른 회사의"
     " 수치라면 금액은 두고 문장 앞에 그 이름을 밝힌다."
+    "\n  · span_pct: 'A에서 B로 N% 증가 · 감소'의 N 이 두 금액으로 계산한 값과 다르다 — 위반 설명의 계산값으로 N 만 고치거나, N 이 마지막"
+    " 해(분기) 한 번의 전년(전 분기) 대비 증감률이면 'B년은 전년 대비 N% 감소'처럼 그 해에 붙여 쓴다. 금액은 바꾸지 않는다. 같은 칸의 영어도 같이."
     "\n  · reader: 독자 · 투자자를 주어로 세우거나 무엇을 확인 · 대비 · 판단하라고 권하는 문장이다('독자는 …', '투자자는 … 필요가 있다',"
     " '판단은 독자에게 맡긴다', 영어 'Investors should …'). 주어와 권유를 빼고 사실로 고친다(예: '3분기 영업이익률이 다음 확인"
     " 지점이다'). 판단을 누구에게 맡긴다는 문장은 통째로 지운다. 같은 칸의 짝 언어도 같은 뜻으로 고친다."
@@ -1101,6 +1233,9 @@ _RULE_TEXT = "\n".join(f"  · {key}: {why}" for key, _lv, _pat, why in RULES) + 
     "\n  · stale_cp: 이미 공시된 기간의 보고서 · 실적 발표를 다음 일정 · 확인 지점으로 썼다 — 위반 설명에 적힌 다음 정기보고서로"
     " 바꾸고(시점은 그 보고서가 나오는 때로), 그 보고서에서 확인할 내용도 맞춘다. 체크포인트 항목은 지우지 말고 바꾼다. 같은 칸의"
     " 짝 언어도 같이."
+    "\n  · stale_year: '올해 · 지난해 · 작년 · 내년'(영어 'this year · last year · next year')을 연도 숫자로 바꾼다 — 위반 설명에 적힌"
+    " 작성 시점 기준으로 계산하되, 문장 속 기사 · 보고서의 날짜가 있으면 그 날짜 기준으로('2025년 11월 보고서의 내년' → '2026년').'"
+    " 어느 해인지 알 수 없으면 시점 표현을 뺀다. 같은 칸의 짝 언어도 같이."
     "\n  · no_use: 협의 없이 쓰지 않는 사이트(치킨스탁 · chickstockfi.com)의 이름이 있다 — 그 이름과, 그 사이트를 근거로 든 내용을"
     " 문장에서 뺀다. 다른 근거가 없는 수치나 주장이면 그 문장을 통째로 지운다. 같은 칸의 영어도 같이."
     "\n  · template: 지시문 틀의 안내 문구('한국어 650~800자' · '확인할 이벤트·지표와 그 의미' · 영어 '...' · 'headline')가 그대로"
@@ -1143,7 +1278,8 @@ def repair(cl, rep, hits, model=None):
         f"{listing}\n\n규칙:\n{_RULE_TEXT}\n\n"
         "지시:\n"
         "1. 위반된 문장만 규칙에 맞게 고쳐 쓰세요. 사실(숫자·고유명사·인과)은 바꾸지 말고 표현만 바꾸세요 — "
-        "다만 amount · streak 위반은 위반 설명에 적힌 공시 값 · 햇수로 그 숫자만 고치세요. "
+        "다만 amount · streak 위반은 위반 설명에 적힌 공시 값 · 햇수로, span_pct 위반은 위반 설명에 적힌 계산값으로 그 숫자만 고치세요"
+        "(span_pct 는 그 증감률이 마지막 해 한 번의 전년 대비 값이면 그 해에 붙여 써도 됩니다) · stale_year 위반은 연도를 숫자로 바꾸세요. "
         "목표주가는 증권사명·시점을 알 수 없으면 수치를 지우고 정성 서술로 바꾸세요.\n"
         "2. 위반이 없는 문장은 글자 하나도 바꾸지 마세요. 키 구조·배열 길이·ko/en 짝을 그대로 유지하세요.\n"
         "3. 영어(en)에 한글이 있으면 로마자 또는 영문 명칭으로 바꾸세요. 한국어(ko)에 한자를 쓰지 마세요.\n"
@@ -1364,12 +1500,14 @@ _WHY_EXTRA = {
     "meta": "받은 자료를 가리키는 말", "stale_time": "상대 시점(지난달 · 이번 주 · 오늘)", "en_word": "한국어 문장 속 영어 낱말",
     "streak": "연속 연수가 실적 표와 다름(정점 다음 해부터 센다)",
     "amount": "본문 금액이 공시 값과 다름",
+    "span_pct": "구간 증감률이 두 금액과 다름(마지막 해의 증감률을 여러 해 구간에 붙임)",
     "no_use": "협의 없이 쓰지 않는 사이트(치킨스탁)의 이름",
     "template": "지시문 틀의 안내 문구가 그대로 남음",
     "reader": "독자 · 투자자를 부르거나 권하는 문장(2026-11-08 뒤 작성분)",
     "dup": "다른 칸의 문장을 글자 그대로 되풀이(2026-11-08 뒤 작성분)",
     "process": "글을 쓴 과정 · 지시문 · 다른 회사 해명(2026-11-09 지시문으로 쓴 글)",
     "stale_cp": "이미 공시된 분기를 다음 일정으로 씀(2026-11-09 지시문으로 쓴 글)",
+    "stale_year": "연도 상대 표현(올해 · 지난해 · 내년 — 2026-11-18 지시문으로 쓴 글)",
 }
 
 

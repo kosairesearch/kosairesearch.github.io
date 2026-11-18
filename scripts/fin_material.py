@@ -362,6 +362,9 @@ def material(q, name=""):
 _GLUED_SUFFIX = re.compile(r"(?<=[a-z])(?:CompanyLimited|Corporation|Company|Limited|Corp|Inc|Co|Ltd)$")
 
 
+_AND_WORDS = {"command", "husband", "thousand", "understand", "highland", "headband", "broadband", "wristband"}
+
+
 def en_name(raw):
     """공시 영문명 → 본문에 쓸 꼴. clean_en(화면과 같은 정리)을 바탕으로 세 가지만 더 한다.
       · 대문자 공시 이름의 짧은 약어는 대문자로 둔다 — 'HS HWASUNG' → 'HS Hwasung'(clean_en 은 'Hs')
@@ -385,6 +388,11 @@ def en_name(raw):
             c = c[:m.start()]
             if len(c) >= 12:
                 c = re.sub(r"(?<=[a-z])(?=[A-Z])|(?<=[A-Z])(?=[A-Z][a-z])", " ", c)
+                # 붙은 'and' 를 띄운다 — 'NatureandEnvironmentCo' 가 'Natureand Environment' 로 나와 영어 본문에 그대로 쓰였다
+                # (자연과환경 · 에스에이티 2026-11-18). '…land' · 'Command' 처럼 'and' 로 끝나는 낱말은 그대로 둔다.
+                c = re.sub(r"\b([A-Z][a-z]{3,}?)and(?= [A-Z])",
+                           lambda m: m.group(0) if (m.group(1).endswith("l") or m.group(0).lower() in _AND_WORDS)
+                           else m.group(1) + " and", c)
         elif (" " not in core and re.fullmatch(r"[A-Z&.]+", core)
               and len(re.sub(r"[^A-Za-z]", "", core)) > 12):
             return f"{core.rstrip('.')}(공시 영문명이 붙어 있다 — 같은 철자로 단어를 띄어 쓸 것)"

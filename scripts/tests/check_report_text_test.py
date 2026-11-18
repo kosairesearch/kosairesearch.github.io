@@ -653,6 +653,79 @@ res = C.send_batch(cl_b, {"a": C.review_params({"lead": {"ko": "가.", "en": "a.
                    log=lambda *_: None, sleep=lambda *_: None)
 eq("send_batch — 배치 하나 · 성공은 답 · 실패는 None", (len(cl_b.messages.batches.reqs), C.message_text(res["a"]), res["b"]), (2, "ok", None))
 
+print("\n── 구간 증감률(span_pct) · 금액 뒤 '순손실' · 연도 상대 표현(stale_year) (2026-11-18) ──")
+# 3분기 공시 리포트 점검(11/18)에서 나온 것 — 마지막 해 한 번의 증감률을 여러 해 구간에 붙임(POSCO홀딩스 · 엑시콘), 맞는 문장
+# ('지배주주 순이익은 880억원 순손실로')을 금액 검사가 틀렸다고 해 저장하지 못함(DL), 연도 상대 표현(424편).
+
+
+def sp(ko="가", en="x"):
+    return [h["rule"] for h in C.span_pct_hits({"ticker": "000001", "earnings": {"ko": ko, "en": en}})]
+
+
+for ko in ["지배주주 순이익은 2022년 3조 1,441억원에서 2025년 6,577억원으로 39.9% 감소했고, 당기순이익도 줄었다.",   # POSCO홀딩스(실제 79.1%)
+           "연간 매출은 2022년 912억원에서 2024년 316억원으로 61.6% 줄었고, 2024년에는 영업손실을 기록했다.",          # 엑시콘(실제 65.3%)
+           "지배주주 순이익도 2024년 44억 253만원에서 2025년 66억 523만원으로 49.9% 늘었다."]:                      # 계산 50.0%
+    eq(ko[:40], sp(ko), ["span_pct"])
+eq("영어 — 마지막 해 증감률을 여러 해 구간에(괄호)",
+   sp(en="Net profit rose from KRW 163.9 billion in 2022 to KRW 350.7 billion in 2024 (up 87.3%) and eased."), ["span_pct"])
+eq("영어 — a decline of N%",
+   sp(en="Annual revenue fell from KRW 91.2 billion in 2022 to KRW 31.6 billion in 2024, a decline of 61.6%, and losses followed."), ["span_pct"])
+for ko in ["지배주주 순이익은 2022년 3조 1,441억원에서 2025년 6,577억원으로 79.1% 감소했다.",
+           "매출은 2024년 1조 949억원에서 2025년 6,577억원으로 39.9% 감소했다.",                              # 한 해 구간
+           "수주잔고는 2025년 4분기 1조 5,391억원에서 2026년 1분기 1조 8,741억원으로 22% 늘었다.",               # 정수 반올림
+           "시공 부문 매출은 2024년 1,951억원에서 2025년 1,061억원으로 약 46% 줄었다.",
+           "매출은 2022년 912억원에서 2024년 316억원(전년 대비 61.6% 감소)으로 줄었다.",                         # '전년 대비' — 그 해의 증감률
+           "영업손실은 2022년 185억원에서 2025년 192억원으로 3.8% 늘었다."]:                                    # 손실 금액은 보지 않는다
+    eq(ko[:40], sp(ko), [])
+for en in ["Operating profit grew from KRW 158.5 billion in 2022 to KRW 648.9 billion in 2025, up 88.2% in 2025, and kept rising.",
+           "Profit fell from KRW 5.21 billion in 2022 to KRW 2.66 billion in 2025, down 40.7% in that year.",
+           "Net profit rose from KRW 163.9 billion in 2022 to KRW 350.7 billion in 2024 (up 87.3% year on year).",
+           "Profit fell from KRW 3.94 billion in Q4 2025 to KRW 2.56 billion in Q3 2026, down 29.7% from the prior quarter.",
+           "Revenue fell from KRW 7.76 billion in 2022 to KRW 4.55 billion in 2023, a decrease of 41.3%."]:      # 3자리 표기의 반올림
+    eq(en[:40], sp(en=en), [])
+eq("위반 설명에 계산값을 적는다(교정이 그 값으로 고친다)",
+   "79.1% 감소" in C.span_pct_hits({"ticker": "1", "earnings": {"ko": "순이익은 2022년 3조 1,441억원에서 2025년 6,577억원으로 39.9% 감소했다.",
+                                                                 "en": "x"}})[0]["why"], True)
+eq("check() 가 구간 증감률을 함께 돌린다(위험)", [(h["rule"], h["level"]) for h in C.check({"ticker": "1", "earnings": {
+    "ko": "매출은 2022년 912억원에서 2024년 316억원으로 61.6% 줄었다.", "en": "x"}})], [("span_pct", "위험")])
+eq("교정 지시에 span_pct · stale_year(숫자를 고쳐도 되는 예외)", ("span_pct:" in C._RULE_TEXT, "stale_year:" in C._RULE_TEXT,
+   "span_pct 위반은" in C.repair.__code__.co_consts.__repr__()), (True, True, True))
+
+QD = {"annual": [{"year": 2025, "rev": 5326721292281, "op": 298546039560, "np": -96298295176, "np_owner": -88007769786}],
+      "quarterly": [], "valuation": {"ccy": "KRW"}}
+eq("금액 뒤 '순손실' — '지배주주 순이익은 880억원 순손실로'는 맞는 문장(DL)",
+   arules("2025년 지배주주 순이익은 880억원 순손실로 적자 전환했고, 영업이익은 2,985억원으로 전년 대비 27.6% 줄었다.", quant=QD), [])
+eq("금액 뒤 '당기순손실' · '의 순손실'도 손실로 읽는다",
+   [arules(ko, quant=QD) for ko in ("2025년 지배주주 순이익은 880억원 당기순손실로 돌아섰다.", "2025년 지배주주 순이익은 880억원의 순손실이었다.")],
+   [[], []])
+eq("손실 말이 없으면 여전히 잡는다", arules("2025년 지배주주 순이익은 880억원으로 늘었다.", quant=QD), ["amount"])
+eq("영어 'KRW 88.0 billion net loss'", arules(en="In 2025, net profit attributable to owners of the parent was KRW 88.0 billion net loss.",
+                                              quant=QD), [])
+
+_Y = {"ticker": "000001", "model": "claude-haiku-5-5", "reportDate": "2026-11-18", "reportTs": "2026-11-18 10:00", "textRules": 3}
+
+
+def yr(ko="가", en="x", **kw):
+    return [h["rule"] for h in C.year_hits(dict(_Y, business={"ko": ko, "en": en}, **kw))]
+
+
+for ko in ["올해 매출은 늘었다.", "지난해 영업이익은 줄었다.", "회사는 내년에도 투자를 이어간다고 밝혔다.", "작년보다 늘었다.",
+           "올 들어 수주가 늘었다.", "올 3분기 매출이 늘었다."]:
+    eq(ko, yr(ko), ["stale_year"])
+for ko in ["2025년 매출은 전년 대비 10% 늘었다.", "전년도 매출과 같다.", "올리브영 매출이 늘었다."]:
+    eq(ko, yr(ko), [])
+eq("영어 this year · last year · next year", [yr(en=t) for t in ("Revenue rose this year.", "It fell from last year.", "Next year's plan")],
+   [["stale_year"]] * 3)
+eq("영어 year on year · a year earlier 는 된다", [yr(en=t) for t in ("up 5% year on year", "a year earlier")], [[], []])
+eq("이 규칙을 적은 지시문(textRules 3)으로 쓴 글에만 — 옛 판 · 업종 분석에는 걸지 않는다",
+   [yr("올해 매출은 늘었다.", textRules=2), yr("올해 매출은 늘었다.", ticker="")], [[], []])
+eq("위반 설명에 작성 시점 기준 연도를 적는다",
+   "'올해'는 2026년" in C.year_hits(dict(_Y, business={"ko": "올해 매출은 늘었다.", "en": "x"}))[0]["why"], True)
+eq("생성기가 지금 판(3)을 단다 · 과정 규칙은 2부터 그대로", (C.TEXT_RULES, C.PROCESS_RULES, C.YEAR_RULES), (3, 2, 3))
+eq("세 지시문(리포트 v2 · 옛 형식 · 업종 분석)에 연도 규칙",
+   [f for f in ("generate_reports_v2.py", "generate_reports.py", "generate_sectors.py")
+    if "연도도 숫자로 쓴다" not in (ROOT_S / f).read_text(encoding="utf-8")], [])
+
 print("\n── 전수: 화면에 나오는 리포트·업종 분석에 글자 결함이 없다 ──")
 import json, re  # noqa: E402
 ROOT = HERE.parent.parent
