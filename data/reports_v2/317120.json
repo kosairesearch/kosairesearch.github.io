@@ -1,220 +1,208 @@
 {
  "title": {
-  "ko": "적자 지속 속 양자보안·SDV MCU 전환점 모색",
-  "en": "Ranix Navigates Losses While Pivoting to Quantum Security and SDV MCU"
+  "ko": "라닉스, 적자 축소 속 양자보안칩 과제",
+  "en": "Ranix: Narrower Losses, Quantum-Secure Chip Test"
  },
  "lead": {
-  "ko": "라닉스는 자동차 ETC칩 중심의 안정적 국내 점유율을 바탕으로 하되, 다년간 적자가 이어지는 가운데 양자보안(PQC)과 차세대 차량용 네트워크 MCU(IMFAS)를 새로운 성장축으로 준비하고 있다.",
-  "en": "Ranix maintains a dominant domestic share in automotive ETC chips but has posted losses for several consecutive years, while positioning post-quantum cryptography (PQC) and next-generation automotive network MCU (IMFAS) as new growth pillars."
+  "ko": "라닉스는 2026년 3분기 영업손실이 6.7억원으로 줄었지만, 2022년부터 2025년까지 4년 연속 적자와 2024년 이후 2년 연속 매출 감소가 이어진 실적 구조는 아직 바뀌지 않았다.",
+  "en": "Ranix's operating loss narrowed to KRW 668 million in the third quarter of 2026, but the four straight years of losses from 2022 through 2025 and two years of falling sales since 2024 have not yet reversed."
  },
  "keypoints": [
   {
-   "ko": "2025년 매출 74.7억원, 영업손실 60.5억원으로 4년 연속 적자, 손실 규모는 확대",
-   "en": "2025 revenue of KRW 7.47bn with an operating loss of KRW 6.05bn, marking a fourth straight year of losses that have widened"
+   "ko": "2025년 매출은 74.7억원으로, 2023년 정점(115억원) 이후 2024년과 2025년 2년 연속 감소했다.",
+   "en": "Sales in 2025 were KRW 7.47 billion, falling for two consecutive years after the 2023 peak of KRW 11.5 billion."
   },
   {
-   "ko": "Automotive MCU(ETCS) 부문 국내 Before Market 점유율 91% 이상으로 안정적 매출 기반 확보",
-   "en": "The Automotive MCU (ETCS) segment holds over 91% domestic Before Market share, anchoring a stable revenue base"
+   "ko": "2025년 영업손실은 60.5억원, 영업이익률은 -81.0%였고 손실 폭은 2022년 이후 매년 확대됐다.",
+   "en": "The 2025 operating loss was KRW 6.05 billion, with an operating margin of -81.0%, and losses widened every year since 2022."
   },
   {
-   "ko": "양자내성암호(PQC) 칩 RQ2722 출시, TRNG 보안 IP는 2026년 9월 NIST 국제 인증 획득",
-   "en": "Ranix launched its PQC chip RQ2722 and obtained NIST international certification for its TRNG security IP in September 2026"
+   "ko": "2026년 3분기 영업손실은 6.7억원으로 2분기(15.5억원)보다 줄었으나, 매출은 14.9억원으로 전년 동기 대비 29.3% 감소했다.",
+   "en": "The third-quarter 2026 operating loss narrowed to KRW 668 million from KRW 1.55 billion in the prior quarter, but sales of KRW 1.49 billion fell 29.3% year on year."
   },
   {
-   "ko": "SDV 대응 차량용 네트워크 MCU(IMFAS)는 신뢰성 테스트 단계로, 글로벌 OEM·Tier-1 상용화는 아직 초기",
-   "en": "The SDV-oriented automotive network MCU (IMFAS) is in reliability testing, with commercialization to global OEMs and Tier-1s still at an early stage"
+   "ko": "사업 축은 차량용 MCU와 V2X 통신에서 양자내성암호(PQC) 보안칩으로 넓어지는 중이며, PQC 보안칩은 2026년 말 고객 샘플(CS) 완료를 목표로 한다.",
+   "en": "The business is widening from automotive MCUs and V2X communication into post-quantum cryptography (PQC) security chips, with customer sample (CS) completion targeted for late 2026."
   },
   {
-   "ko": "토지 자산 재평가 등으로 자본총계는 확대되고 부채비율은 낮아지는 추세지만 순손실은 지속",
-   "en": "Equity has expanded and the debt ratio has trended lower, partly aided by asset revaluation, even as net losses persist"
+   "ko": "2025년 말 부채총계는 221억원, 영업활동 현금흐름은 -51.2억원이어서 자금 조달 부담이 실적 과제로 남아 있다.",
+   "en": "Total liabilities at the end of 2025 were KRW 22.1 billion and operating cash flow was KRW -5.12 billion, leaving funding needs as a key challenge."
   }
  ],
  "business": {
-  "ko": "라닉스는 2003년 설립돼 2019년 코스닥에 상장한 자동차·IoT 무선통신 및 보안 시스템 전문 팹리스 업체다. 사업부문은 자율주행차용 V2X 모뎀 및 네트워크용 MCU, 그리고 스마트 라이프 분야로 구성되어 있다. 주력인 Automotive MCU 부문은 하이패스(ETCS)용 통신칩을 중심으로 국내 Before Market 점유율 91% 이상을 유지하며 안정적 매출 기반이 되고 있다. 회사는 자동차 표준통신 프로토콜 DSRC를 자체 개발해 현대·기아차 및 수입차 브랜드에 20년 가까이 공급해온 이력을 갖고 있으며, 보안·인증 칩은 국내 스마트폰 제조사의 정품 인증용으로도 공급된다. 신성장동력으로는 소프트웨어 중심 차량(SDV) 전환에 대응하는 차량용 네트워크 MCU '지능형 통합 마이크로 플랫 안테나 시스템(IMFAS)'을 개발 중이며, 5G·와이파이·GNSS·저전력 블루투스·UWB 등 다중 무선 신호를 하나의 칩에서 동기화해 차량 내 이더넷 네트워크로 라우팅하는 구조다. 보안 영역에서는 양자내성암호(PQC) 칩 'RQ2722'를 출시했고, 2025년 3분기 초에는 양자보안칩 RQ2622의 1차 양산 제품이 공급된 바 있다. 최근에는 하드웨어 기반 진성난수발생기(TRNG) 보안 IP에 대해 미국 NIST의 국제 검증 인증을 획득해 자동차·국방·IoT·산업용 반도체 기업 대상 IP 라이선스 공급도 추진하고 있다. 이 외에 헬스케어 부문에서는 60GHz 레이더 제품, 스마트워치, 체중계 등을 요양원·보건소에 B2B로 공급하는 사업 다각화도 진행 중이다.",
-  "en": "Founded in 2003 and listed on KOSDAQ in 2019, Ranix is a fabless designer of automotive and IoT wireless communication and security systems. Its business is organized around V2X modems and network MCUs for autonomous vehicles, plus a Smart Life segment. Its core Automotive MCU segment, centered on Hi-pass (ETCS) communication chips, holds over 91% domestic Before Market share and forms the company's stable revenue base. The company developed its own DSRC automotive communication protocol and has supplied Hyundai, Kia and imported car brands for nearly two decades, while its security/authentication chips are also supplied to domestic smartphone makers for genuine-product authentication. As a new growth driver, Ranix is developing an automotive network MCU called the Integrated Micro Flat Antenna System (IMFAS) for the software-defined vehicle (SDV) transition, which synchronizes multiple wireless signals—5G, Wi-Fi, GNSS, low-power Bluetooth and UWB—on a single chip and routes them through an in-vehicle Ethernet network. In the security domain, Ranix launched its post-quantum cryptography (PQC) chip 'RQ2722,' and initial mass-production units of its quantum security chip RQ2622 were supplied in early Q3 2025. More recently, the company obtained NIST international certification for its hardware-based True Random Number Generator (TRNG) security IP, and is pursuing IP licensing to automotive, defense, IoT and industrial chip developers. The company is also diversifying into healthcare, supplying 60GHz radar products, smartwatches and body-composition scales on a B2B basis to nursing homes and public health centers."
+  "ko": "라닉스는 차량용 무선통신과 보안 반도체를 설계하는 회사다. 주력은 Automotive MCU 부문으로, 회사 기업 요약 자료는 국내 ETCS 관련 시장(Before Market)에서 점유율 91% 이상을 유지한다고 소개한다. 통신 부문은 C-V2X와 5G-V2X 통합 솔루션 사업화에 무게를 두고 있으며, 2025년 기업설명회에서는 국내 유일의 5G V2X 통합 솔루션을 보유했다고 강조했다. 보안 부문에서는 양자보안칩 RQ2622가 2025년 3분기 초 1차 양산 제품으로 공급됐다. 양자내성암호(PQC) 보안칩은 2026년 말 고객 샘플(CS) 완료를 목표로 개발 중이다. 2025년 9월에는 한국형 양자내성암호 기술을 FPGA에 구현한 시제품이 공개됐고, 회사는 이후 제품 문의와 기술개발 의뢰가 이어진다고 밝혔다. 생산은 파운드리 업체에 의뢰하는 구조여서 설계 중심의 팹리스 형태에 가깝다. 2022년 IR 자료에 따르면 국내 차량용 MCU의 97~98%가 수입에 의존하고 있어 회사는 MCU 국산화를 추진해 왔다. 중국 전용 DSRC 칩 개발을 2016년부터 진행했고, 2021년에는 상해 현지 법인을 세워 중국 ETCS 전장 시장 공략에 나섰다. 매출 기반이 자동차 전장 수요에 집중돼 있어 이 시장의 수요 변화가 실적에 직접 닿는 구조다.",
+  "en": "Ranix designs automotive wireless communication and security semiconductors. Its core is the Automotive MCU segment, which the company's profile says holds a share of more than 91% in the domestic ETCS-related market (Before Market). On the communication side it has focused on commercializing integrated C-V2X and 5G-V2X solutions, and at a 2025 investor briefing it stressed that it is the only domestic company with an integrated 5G V2X solution. In security, the quantum-secure chip RQ2622 was supplied as its first mass-production product in early Q3 2025. A post-quantum cryptography (PQC) security chip is in development with customer sample (CS) completion targeted for late 2026. In September 2025 the company unveiled a prototype applying Korean PQC algorithms on an FPGA, and said product inquiries and technology development requests followed. Production is outsourced to foundries, so the model is closer to a design-centric fabless structure. According to 2022 IR material, 97 to 98 percent of domestic automotive MCUs were imported, and the company pursued MCU localization. It began developing a China-specific DSRC chip in 2016 and set up a Shanghai subsidiary in 2021 to pursue China's ETCS automotive market. Because sales rely heavily on automotive electronics demand, shifts in that market flow directly into results."
  },
  "earnings": {
-  "ko": "라닉스의 연간 매출은 2022년 109.8억원에서 2023년 115.4억원으로 늘었으나 2024년 77.1억원, 2025년 74.7억원으로 축소됐다. 반면 영업손실은 2022년 18.0억원에서 2023년 29.6억원, 2024년 54.2억원, 2025년 60.5억원으로 매년 확대됐고, 영업이익률은 2025년 -81.0%까지 악화됐다. 지배주주 순손실도 2022년 49.3억원에서 2025년 77.7억원으로 늘어나는 추세다. 분기별로는 2025년 3분기(매출 21.1억원, 영업손실 9.3억원)에 손실 규모가 일시적으로 줄었으나, 2025년 4분기 다시 영업손실 17.5억원으로 확대됐고 2026년 1분기(-15.7억원), 2026년 2분기(-15.5억원)까지 비슷한 수준의 손실이 이어지고 있다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 매출 합계는 약 73.9억원, 순손실 합계는 약 75.2억원으로, 연간 실적과 유사한 적자 구조가 지속되고 있음을 보여준다. 매출 감소와 손실 확대가 동시에 나타난 배경에는 하이패스(ETC) 시장 경쟁 심화와 신사업(PQC·IMFAS·헬스케어) 투자에 따른 개발비 부담이 함께 작용한 것으로 풀이된다. 다만 자본총계는 2023년 106.3억원에서 2025년 213.1억원으로 늘었고 부채비율은 같은 기간 174.9%에서 103.9%로 낮아져, 손익과는 별개로 재무구조 지표는 개선되는 모습이다. 영업활동현금흐름(CFO)도 2025년 -51.2억원으로 여전히 마이너스이나, 2024년 -56.8억원보다는 유출 규모가 줄었다.",
-  "en": "Ranix's annual revenue rose from KRW 10.98bn in 2022 to KRW 11.54bn in 2023, but then contracted to KRW 7.71bn in 2024 and KRW 7.47bn in 2025. Operating losses, however, widened every year, from KRW 1.80bn in 2022 to KRW 2.96bn in 2023, KRW 5.42bn in 2024, and KRW 6.05bn in 2025, pushing the operating margin down to -81.0% in 2025. Net loss attributable to owners also grew from KRW 4.93bn in 2022 to KRW 7.77bn in 2025. On a quarterly basis, the loss narrowed temporarily in Q3 2025 (revenue KRW 2.11bn, operating loss KRW 0.93bn), before widening again to an operating loss of KRW 1.75bn in Q4 2025, and remaining at a similar magnitude in Q1 2026 (-KRW 1.57bn) and Q2 2026 (-KRW 1.55bn). Over the trailing four quarters (Q3 2025 through Q2 2026), combined revenue was approximately KRW 7.39bn with a combined net loss of roughly KRW 7.52bn, showing a loss structure similar to the annual pattern. The simultaneous revenue decline and widening losses appear to reflect intensifying competition in the Hi-pass (ETC) market alongside development cost burdens tied to new business investments in PQC, IMFAS and healthcare. Total equity nonetheless increased from KRW 10.63bn in 2023 to KRW 21.31bn in 2025, while the debt ratio fell from 174.9% to 103.9% over the same period, indicating that balance-sheet metrics have improved independently of the operating loss trend. Operating cash flow (CFO) remained negative at -KRW 5.12bn in 2025, though the outflow narrowed from -KRW 5.68bn in 2024."
+  "ko": "공시 실적 기준 라닉스의 매출은 2022년 11억원에서 2023년 115억원으로 가장 컸고, 2024년 77.1억원(전년 대비 33.2% 감소)과 2025년 74.7억원(전년 대비 3.2% 감소)으로 2년 연속 줄었다. 영업손실은 2022년 18억원, 2023년 29.6억원, 2024년 54.2억원, 2025년 60.5억원으로 매년 확대됐고, 영업이익률은 -16.4%, -25.6%, -70.3%, -81.0%로 낮아졌다. 2024년과 2025년에는 매출 감소 폭보다 영업손실 확대 폭이 커서 매출 규모 대비 고정 비용 부담이 키진 구조로 읽힌다. 지배주주 순손실은 2022년 49.3억원에서 2025년 77.7억원으로 늘었고, 당기순손실(비지배지분 포함)도 같은 해 77.7억원으로 나타났다. 2026년 3월 정기주주총회 공시에서도 제23기 연결 매출과 영업손실이 같은 수준으로 확인됐다. 재무 구조는 부채비율이 2022년 193.1%에서 2025년 103.9%로 낮아졌으나, 이는 자본 확충과 부채 감소가 함께 작용한 결과라 자본총계(213억원)와 부채총계(221억원)가 거의 같은 규모로 맞춰졌다. 분기 기준으로는 2025년 3분기 매출 21.1억원이 정점이었고, 4분기 17.9억원, 2026년 1분기 15.6억원으로 줄었다가 2분기 19.4억원(전 분기 대비 23.9% 증가)으로 반등했으며 3분기에는 14.9억원(전 분기 대비 23.0% 감소)이었다. 영업손실은 2025년 4분기 17.5억원으로 가장 컸고, 2026년 1분기 15.7억원, 2분기 15.5억원, 3분기 6.7억원으로 축소됐다. 다만 3분기 손실 축소는 매출이 줄어든 상황에서 나타난 것이라 원가 개선인지 비용 집행 시점의 차이인지는 사업보고서 주석에서 구분돼야 한다. 최근 4개 분기 지배주주 순손실 합계는 71.1억원이며, 영업활동 현금흐름은 2024년 -56.8억원, 2025년 -51.2억원으로 현금 유출이 이어졌다.",
+  "en": "On a consolidated basis, Ranix's sales rose from KRW 11 billion in 2022 to KRW 11.5 billion in 2023, the largest year in the 2022 to 2025 period, and then fell 33.2% to KRW 7.71 billion in 2024 and 3.2% to KRW 7.47 billion in 2025. The operating loss widened every year, from KRW 1.8 billion in 2022 to KRW 2.96 billion in 2023, KRW 5.42 billion in 2024 and KRW 6.05 billion in 2025. The operating margin moved from -16.4% in 2022 to -25.6%, -70.3% and -81.0% in 2025. In 2024 and 2025 the loss grew faster than sales shrank, which points to a higher fixed-cost burden relative to revenue. The loss attributable to controlling shareholders grew from KRW 4.93 billion in 2022 to KRW 7.77 billion in 2025, and the net loss including non-controlling interests was also KRW 7.77 billion in 2025. The debt-to-equity ratio fell from 193.1% in 2022 to 103.9% in 2025, with year-end equity of KRW 21.3 billion and total liabilities of KRW 22.1 billion. Quarterly sales peaked at KRW 2.11 billion in the third quarter of 2025, fell to KRW 1.79 billion and KRW 1.56 billion, rebounded to KRW 1.94 billion in the second quarter of 2026 (up 23.9% from the prior quarter), and dropped to KRW 1.49 billion in the third quarter (down 23.0% quarter on quarter and 29.3% year on year). The operating loss was largest at KRW 1.75 billion in the fourth quarter of 2025 and narrowed to KRW 1.57 billion, KRW 1.55 billion and KRW 668 million in the next three quarters. The narrowing in the third quarter came with lower sales, so whether it reflects cost improvement or timing of spending needs to be separated in the notes to the 2026 annual report. The controlling-shareholder net loss for the latest four quarters totals KRW 7.11 billion, and operating cash outflows were KRW -5.68 billion in 2024 and KRW -5.12 billion in 2025."
  },
  "industry": {
-  "ko": "국내 하이패스(ETC) 및 자동차용 통신칩 시장은 성숙기에 접어들어 있으며, 라닉스는 국내 Before Market에서 90%를 넘는 점유율로 지배적 위치를 지키고 있으나 시장 자체의 성장 여력은 제한적이다. 글로벌 자동차 MCU·SoC 시장에서는 르네사스가 AP(Application Processor) SoC와 MCU를 합산한 글로벌 점유율 1위를 차지하고 있어, 라닉스와 같은 국내 팹리스가 SDV용 네트워크 MCU 시장에 진입하기 위해서는 상당한 기술·고객 검증 장벽을 넘어야 한다. 반면 양자보안(PQC) 시장은 정책적 뒷받침을 받으며 빠르게 형성되고 있다. 한국 정부는 2026년 3월 국무회의에서 양자산업법 개정안을 의결해 국가 보안 인프라의 양자내성암호 전환을 법적 의무로 명문화했고, 서울-대전 구간의 양자 암호 테스트망을 전국으로 확충하는 예산도 배정했다. 미국 역시 CNSA 2.0 마스터플랜에 따라 2030~2033년 사이 고전 암호체계 사용을 중단하고 2035년까지 국가안보시스템을 양자 안전 체계로 전환할 계획이며, 국내에서도 2035년까지 국가 핵심 인프라의 암호체계를 PQC로 전환하는 목표가 제시돼 있다. 이런 흐름 속에서 KT, SK텔레콤 등 통신사들이 양자암호통신 생태계 구축에 나서고 있고, 라닉스는 KT의 양자암호통신 얼라이언스 파트너로 '퀀텀코리아 2026'에 참가하는 등 대형 통신사와의 협력 접점을 만들어가고 있다. 다만 양자보안 반도체 시장은 아직 상용화 초기 단계로, SK텔레콤 등 대형 통신사도 자체 칩(QKEV7 등)을 선보이는 등 경쟁 구도가 형성되는 중이다.",
-  "en": "South Korea's Hi-pass (ETC) and automotive communication chip market has matured, and while Ranix retains a dominant position with over 90% share of the domestic Before Market, the segment itself offers limited growth headroom. In the global automotive MCU/SoC market, Renesas holds the top combined global share in Application Processor SoCs and MCUs, meaning domestic fabless players like Ranix face significant technology and customer-qualification barriers to entering the SDV network MCU market. By contrast, the post-quantum cryptography (PQC) market is forming rapidly with policy support. In March 2026, the Korean government passed an amendment to the Quantum Industry Act at a cabinet meeting, legally mandating the transition of national security infrastructure to post-quantum cryptography, and allocated budget to expand the Seoul-Daejeon quantum cryptography test network nationwide. The United States, under its CNSA 2.0 master plan, aims to phase out classical cryptography between 2030 and 2033 and transition all national security systems to quantum-safe standards by 2035, while Korea has set a similar 2035 target for transitioning core national infrastructure to PQC. Amid this backdrop, telecom operators such as KT and SK Telecom are building out quantum cryptography ecosystems, and Ranix has positioned itself as a KT Quantum Cryptography Alliance partner, participating in 'Quantum Korea 2026' to build touchpoints with major telecom carriers. However, the quantum security semiconductor market remains at an early commercialization stage, with large carriers such as SK Telecom also unveiling their own chips (e.g., QKEV7), indicating a competitive landscape still taking shape."
+  "ko": "라닉스가 속한 영역은 차량용 MCU와 V2X 통신 칩, 그리고 차량·국방용 보안 칩이다. 2022년 IR 자료는 국내 차량용 MCU 수입 의존도가 97~98%라고 설명했고, 회사는 이를 국산화 대상으로 삼았다. 국산화가 진전되면 수입 대체 수요를 일부 흡수할 수 있다는 것이 회사의 논리이지만, 상용화 시점과 매출 기여는 공시 실적에서 따로 드러나지 않는다. V2X 분야는 자율주행 확산과 함께 C-V2X와 5G-V2X 방식이 병행되는 영역이다. 정부도 5G 기반 차세대 차량 통신 기술 개발 지원을 확대해 온 것으로 보도됐다. 양자내성암호 분야는 2025년 9월 시제품 공개 이후 시장 관심이 커졌고, 당시 주가가 상한가를 기록했다고 보도됐다. 사이클 측면에서 라닉스 매출은 2023년 정점 이후 감소 국면에 있어, 차량용 부품 수요의 회복이 매출 반등으로 이어지는지가 관건이다. 같은 업종 상장사 가운데 삼성전자와 SK하이닉스 같은 메모리 중심 대형주는 사업 구조가 다르고, 라닉스는 차량용 통신·보안 칩 설계에 집중한다. 장비·소재 중심 상장사와 비교하면 라닉스는 매출 규모가 작고, 보안칩 사업의 매출 기여는 아직 초기 단계에 있다.",
+  "en": "Ranix operates in automotive MCUs, V2X communication chips and automotive and defense security chips. A 2022 IR document said 97 to 98 percent of domestic automotive MCUs are imported, and the company treated localization as a target. Successful localization could absorb part of that import-substitution demand, but the timing of commercialization and its revenue contribution do not appear separately in the reported results. In V2X, C-V2X and 5G-V2X approaches are developing side by side as autonomous driving spreads. Government support for 5G-based next-generation vehicle communication technology has also been reported. Interest in post-quantum cryptography rose after the prototype was unveiled in September 2025, and press reports said the share price hit its daily limit up at that time. On the cycle, Ranix's sales have been in a decline since the 2023 peak, so whether recovery in automotive parts demand translates into a sales rebound is the key question. Among listed peers, memory-focused large caps such as Samsung Electronics and SK hynix have a different business structure, while Ranix concentrates on designing automotive communication and security chips. Compared with equipment and materials peers, Ranix has a small revenue base, and its security-chip business is still at an early revenue stage."
  },
  "outlook": {
-  "ko": "회사는 차세대 차량용 네트워크 MCU(IMFAS)의 기능 검증을 마치고 양산을 위한 최종 신뢰성 테스트를 진행 중이며, 2026년 상반기 내 검증 완료를 목표로 이후 글로벌 완성차(OEM) 및 1차 협력사(Tier-1) 대상 상용화 로드맵에 착수할 계획이라고 밝혔다. 최승욱 대표는 2025년 12월 인터뷰에서 대기업과의 상생협력을 통해 보안 반도체 개발을 진행 중이며 이르면 연말부터 검증이 시작될 것이라고 언급했고, 내년 중순 양산 돌입과 그 이듬해 고객사 탑재라는 타임라인을 제시했다. PQC 보안칩은 FnGuide 자료에 따르면 2026년 말 CS(설계 검증) 완료를 목표로 개발 중이며, 이는 상용화까지 시간이 더 필요함을 시사한다. 최근 하드웨어 기반 TRNG 보안 IP의 NIST 국제 인증 획득은 자체 칩 탑재뿐 아니라 자동차·국방·IoT·산업용 반도체 기업들을 대상으로 한 IP 라이선스 공급이라는 부수적 수익 경로를 열어줄 수 있는 이벤트다. KT와는 양자암호통신 얼라이언스 파트너로서 하드웨어 PQC 기술을 KT의 하이브리드 양자보안 인프라에 접목하는 방향의 협의가 진행 중인 것으로 알려졌으나, 구체적 계약이나 매출 인식 시점은 아직 확인되지 않았다. 헬스케어 부문은 다양한 기업과의 MOU를 기반으로 요양원·보건소 대상 B2B 공급을 계획하고 있어 안정적 수익 기반 마련을 시도하고 있다. 종합하면 신사업 파이프라인은 다수 존재하나 대부분 검증·상용화 초기 단계에 머물러 있어, 실제 매출 기여 시점은 향후 분기 공시와 계약 체결 여부를 통해 확인이 필요하다.",
-  "en": "The company has completed functional verification of its next-generation automotive network MCU (IMFAS) and is conducting final reliability testing for mass production, targeting completion within the first half of 2026 before beginning a commercialization roadmap aimed at global OEMs and Tier-1 suppliers. In a December 2025 interview, CEO Choi Seung-wook said security chip development is proceeding through collaboration with a large corporate partner, with verification expected to begin as early as year-end, and outlined a timeline of mass production by mid-next-year and customer adoption the year after. According to FnGuide data, the PQC security chip is being developed with a target of completing chip-sample (CS) verification by the end of 2026, suggesting further time is needed before commercialization. The recent NIST international certification of the hardware-based TRNG security IP could open a secondary revenue path through IP licensing to automotive, defense, IoT and industrial semiconductor companies, in addition to use in the company's own chips. As a Quantum Cryptography Communication Alliance partner, Ranix is reportedly in discussions with KT to integrate its hardware PQC technology into KT's hybrid quantum security infrastructure, though specific contract terms or revenue recognition timing have not been confirmed. The healthcare segment is pursuing B2B supply to nursing homes and public health centers based on MOUs with multiple partners, in an attempt to build a more stable revenue base. Overall, the company has a diversified pipeline of new businesses, but most remain at an early verification or commercialization stage, so the actual timing of revenue contribution will need to be confirmed through future quarterly disclosures and contract announcements."
+  "ko": "회사가 제시한 PQC 보안칩 일정 중 가장 가까운 이정표는 2026년 말 고객 샘플(CS) 완료 목표다. 2025년 9월 공개 자료에서는 2025년 하반기 파운드리 업체에 생산을 의뢰해 2026년 상반기 양산용 샘플 칩을 완성한다는 계획이 제시됐다. 이 계획이 실제 매출로 이어지는지는 사업보고서의 사업 내용과 매출 구성에서 가늠할 수 있다. 2026년 3월 3일 회사는 자기주식 25,710주 처분을 결정했고, 목적으로 운영자금 및 재원 확보와 주주가치 제고를 명시했다. 처분 예정 주식 수는 발행주식총수의 0.17% 수준이어서 희석 영향은 경미할 것으로 공시됐다. 2026년 3월 26일 정기주주총회에서는 제23기 재무제표 승인 등 안건이 원안대로 가결됐다. 분기 흐름을 보면 2026년 2분기 매출 반등이 3분기에 다시 꺾였기 때문에, 매출 회복이 일시적인지 지속적인지는 아직 공시로 구분되지 않는다. 2022년 IR에서 제시된 MCU 국산화와 5G V2X 3단계 CCU 레퍼런스 모듈 검증은 2024년부터 진행될 계획이었다. 이 일정이 이후 매출에 어떻게 반영됐는지는 공시 실적만으로는 직접 드러나지 않는다. 따라서 2026년 사업보고서의 연간 매출과 영업손실 규모가 보안칩 사업의 가시성을 가늠하는 첫 정기 지표가 된다.",
+  "en": "The nearest milestone the company has set for its PQC security chip is customer sample (CS) completion in late 2026. A September 2025 disclosure outlined outsourcing production to a foundry in the second half of 2025, with mass-production sample chips targeted for completion in the first half of 2026. Whether this plan converts into revenue can be judged from the business section and revenue breakdown of the annual report. On March 3, 2026, the company decided to dispose of 25,710 treasury shares, citing operating funds, funding resources and shareholder value. The planned disposal equals about 0.17% of total issued shares, and the company disclosed that the dilution impact would be minor. At the regular shareholders' meeting on March 26, 2026, the agenda including approval of the 23rd fiscal year financial statements passed as proposed. Sales rebounded in the second quarter of 2026 but fell again in the third, so it is not yet separable in disclosures whether the recovery is temporary or lasting. The MCU localization and the third phase of 5G V2X, the CCU reference module validation, were presented in a 2022 IR document as starting from 2024. How those timelines fed into revenue cannot be read directly from the reported results alone. The 2026 annual report's full-year sales and operating loss will therefore be the first regular indicator of how much visibility the security-chip business offers."
  },
  "valuation_comment": {
-  "ko": "라닉스는 다년간 순손실이 이어지고 있어 주가수익비율(PER) 산출 자체가 큰 의미를 갖기 어려운 상태다. 주가와 주당순자산의 관계는 산출 기준에 따라 차이를 보이는데, 자체 기준으로는 순자산 대비 일정한 프리미엄이 있는 구간에서, 거래소 공식 기준으로는 순자산에 근접하거나 소폭 하회하는 구간에서 거래되는 것으로 나타난다. 배당은 최근 지급 이력이 없어 배당 관련 지표는 형성되지 않고 있다. 과거 여러 해에 걸쳐 매출은 늘었다가 줄었고 영업손익은 적자 폭이 지속적으로 확대돼 온 만큼, 밸류에이션을 이익 흐름과 연결해 해석하기보다는 신사업(PQC·IMFAS)의 상용화 진행 상황과 자본구조 변화를 함께 살펴보는 것이 필요하다. 시가총액 규모가 작은 코스닥 소형주 특성상 이벤트(양자보안 이슈, 신제품 발표 등)에 따른 가격 변동성이 상대적으로 큰 편이라는 점도 고려할 부분이다.",
-  "en": "Because Ranix has posted net losses for multiple consecutive years, calculating a price-to-earnings ratio carries limited analytical meaning at this stage. The relationship between the share price and book value per share differs depending on the calculation basis: on an in-house basis it trades at a certain premium to net asset value, while on the exchange's official basis it trades close to or slightly below net asset value. There has been no recent dividend payment history, so dividend-related metrics are not meaningful at this time. Given that revenue has risen and then declined over multiple years while operating losses have continued to widen, valuation is better interpreted alongside the progress of new business commercialization (PQC, IMFAS) and changes in capital structure rather than through earnings trends alone. As a small-cap KOSDAQ stock with a modest market capitalization, price volatility tied to event-driven news flow—such as quantum security developments or new product announcements—tends to be relatively pronounced, which is another factor worth considering."
+  "ko": "라닉스는 최근 네 개 분기 기준 순손실 상태라 주가수익비율(PER)은 산출되지 않는다. 주가순자산비율(PBR)은 자본총계 대비 주가가 1배 부근에 있어 순자산 대비 프리미엄이 크지 않은 구간이다. 배당수익률은 사실상 없는 수준으로 업종 평균을 크게 밑도는 구조다. 과거 PER 밴드와의 비교는 손실 구간에서 배수가 산출되지 않아 의미가 제한된다. 2025년 9월 양자보안칩 시제품 공개 때 주가가 상한가를 기록한 것처럼, 이 종목의 가격 움직임은 기술 이벤트에 크게 반응해 온 흐름이 뉴스에 나타난다. 영업손실이 2026년 3분기 들어 축소된 만큼 배수 해석은 손실이 얼마나 더 좁혀지는지와 매출이 함께 회복되는지에 따라 달라지는 구도다. 현재 밸류에이션은 이익 기반 지표보다 자산 기반 지표로 읽히는 구간이다.",
+  "en": "Ranix has a net loss over the latest four quarters, so its price-to-earnings ratio cannot be calculated. Its price-to-book ratio sits near 1x of shareholders' equity, meaning the premium over net assets is not large. The dividend yield is effectively nil and sits well below the industry average. Comparison with the past P/E band has limited meaning, because no multiple can be calculated during loss periods. As seen when the share price hit its daily limit up on the September 2025 quantum-secure chip prototype, the stock has tended to react strongly to technology news. Because the operating loss narrowed in the third quarter of 2026, how the multiples read will depend on how far losses narrow and whether sales recover alongside. At present the valuation reads more through asset-based measures than earnings-based ones."
  },
  "bull": [
   {
    "title": {
-    "ko": "국내 ETC 시장의 견고한 지배력",
-    "en": "Solid Dominance in the Domestic ETC Market"
+    "ko": "양자내성암호 보안칩 진행",
+    "en": "Post-quantum security chip progress"
    },
    "body": {
-    "ko": "라닉스는 국내 하이패스(ETCS) Before Market에서 91% 이상의 점유율을 유지하며 현대·기아차 및 수입차 브랜드에 20년 가까이 통신칩을 공급해온 이력을 갖고 있다. 이는 매출 감소 국면에서도 최소한의 매출 기반을 지지하는 요인으로 작용한다. 신규 진입자의 진입장벽이 높은 시장 특성도 긍정적이다.",
-    "en": "Ranix maintains over 91% share of the domestic Hi-pass (ETCS) Before Market and has a nearly two-decade history of supplying communication chips to Hyundai, Kia and imported car brands. This provides a floor for revenue even during periods of decline, and the market's high barriers to new entrants are a further supportive factor."
+    "ko": "양자보안칩 RQ2622는 2025년 3분기 초 1차 양산 제품이 공급됐고, PQC 보안칩은 2026년 말 고객 샘플 완료를 목표로 개발이 진행 중이다. 2025년 9월 시제품 공개 후 제품 문의와 기술개발 의뢰가 이어진다고 회사가 밝혔다. 보안 솔루션이 차량과 국방 영역으로 확장되는 구조라는 점이 강세 근거로 꼽힌다.",
+    "en": "The RQ2622 quantum-secure chip was supplied as its first mass-production product in early Q3 2025, and the PQC security chip is in development with customer sample completion targeted for late 2026. After the September 2025 prototype, the company said product inquiries and development requests followed. Its security solutions extending into automotive and defense are cited as a bull argument."
    }
   },
   {
    "title": {
-    "ko": "정책 뒷받침을 받는 양자보안 신사업",
-    "en": "Quantum Security as a Policy-Backed New Business"
+    "ko": "차량용 MCU 기반 점유율",
+    "en": "Automotive MCU share base"
    },
    "body": {
-    "ko": "한국 정부가 양자산업법 개정을 통해 국가 보안 인프라의 PQC 전환을 법적 의무로 규정하면서 관련 수요 확대 가능성이 열려 있다. 라닉스는 RQ2722 PQC 칩 출시와 TRNG 보안 IP의 NIST 국제 인증 획득 등으로 기술적 준비를 갖췄고, KT의 양자암호통신 얼라이언스 파트너로 참여해 대형 통신사와의 협력 접점도 마련했다.",
-    "en": "With the Korean government legally mandating the PQC transition of national security infrastructure through an amended Quantum Industry Act, related demand could expand. Ranix has built technical readiness through the launch of its RQ2722 PQC chip and NIST international certification of its TRNG security IP, and has established a collaboration touchpoint with a major telecom carrier as a KT Quantum Cryptography Alliance partner."
+    "ko": "회사 기업 요약 자료는 국내 ETCS 관련 시장에서 점유율 91% 이상을 유지한다고 소개한다. 2022년 IR 자료 기준 국내 차량용 MCU 수입 의존도가 97~98%로 높아, 국산화가 진전되면 수입 대체 수요를 흡수할 여지가 있다. 기존 점유율 기반이 있다는 점이 보안칩 사업의 출발점이 될 수 있다.",
+    "en": "The company profile puts its share of the domestic ETCS-related market above 91%. The 2022 IR material cited a 97 to 98 percent import dependence for domestic automotive MCUs, so localization progress could absorb import-substitution demand. An existing share base may serve as the starting point for the security-chip business."
    }
   },
   {
    "title": {
-    "ko": "자본구조 개선 추세",
-    "en": "Improving Capital Structure Trend"
+    "ko": "분기 손실 축소 흐름",
+    "en": "Quarterly loss narrowing"
    },
    "body": {
-    "ko": "자본총계는 2023년 106억원에서 2025년 213억원으로 늘었고, 부채비율은 같은 기간 175%에서 104%로 낮아졌다. 순손실이 이어지는 가운데서도 재무건전성 지표가 개선된 점은 자본확충이나 자산 재평가 등을 통해 완충력을 확보했음을 시사한다.",
-    "en": "Total equity increased from KRW 10.6bn in 2023 to KRW 21.3bn in 2025, while the debt ratio fell from 175% to 104% over the same period. The improvement in financial soundness metrics despite ongoing net losses suggests the company has built a financial buffer through capital raises or asset revaluation."
+    "ko": "2026년 3분기 영업손실은 6.7억원으로 2025년 4분기 17.5억원과 2026년 2분기 15.5억원보다 작아졌다. 지배주주 순손실도 9.6억원으로 2026년 2분기 21.4억원에서 줄었다. 2026년 2분기에는 매출이 전 분기보다 23.9% 늘어난 바 있다. 다만 3분기 매출이 다시 14.9억원으로 줄어, 강세 근거로서의 무게는 매출 반등이 동반되는지에 따라 달라진다.",
+    "en": "The third-quarter 2026 operating loss of KRW 668 million was smaller than KRW 1.75 billion in the fourth quarter of 2025 and KRW 1.55 billion in the second quarter of 2026. The controlling-shareholder net loss also narrowed to KRW 961 million from KRW 2.14 billion in the prior quarter. Sales rose 23.9% in the second quarter of 2026 but fell back to KRW 1.49 billion in the third, so the weight of this argument depends on whether sales recovery follows."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "매출 감소와 손실 확대의 동시 진행",
-    "en": "Simultaneous Revenue Decline and Widening Losses"
+    "ko": "매출 기반의 축소",
+    "en": "Shrinking revenue base"
    },
    "body": {
-    "ko": "매출은 2023년 115억원에서 2025년 75억원으로 줄었고, 영업손실은 같은 기간 30억원에서 61억원으로 두 배 이상 확대됐다. 영업이익률은 2025년 -81%까지 악화돼, 핵심 사업의 수익성 회복이 뚜렷하게 나타나지 않고 있다.",
-    "en": "Revenue declined from KRW 11.5bn in 2023 to KRW 7.5bn in 2025, while the operating loss more than doubled from KRW 3.0bn to KRW 6.1bn over the same period. The operating margin worsened to -81% in 2025, with no clear sign yet of a profitability recovery in the core business."
+    "ko": "매출은 2023년 115억원 수준에서 2025년 74.7억원으로 줄었고, 2024년과 2025년 2년 연속 감소했다. 2026년 3분기 매출은 14.9억원으로 전년 동기 대비 29.3% 감소했다. 매출 규모가 작은 상태에서는 분기 손실이 줄어도 영업레버리지 효과가 제한적이라는 점이 약세 근거다.",
+    "en": "Sales fell from KRW 11.5 billion in 2023 to KRW 7.47 billion in 2025, down two years in a row. Third-quarter 2026 sales of KRW 1.49 billion were 29.3% lower year on year. With a small revenue base, the operating leverage from any loss narrowing is limited, which is the bear argument."
    }
   },
   {
    "title": {
-    "ko": "신사업 상용화의 시간 지연 위험",
-    "en": "Timing Risk in New Business Commercialization"
+    "ko": "4년 연속 적자와 손실 확대",
+    "en": "Four straight years of losses"
    },
    "body": {
-    "ko": "IMFAS 네트워크 MCU는 신뢰성 테스트 단계, PQC 보안칩은 2026년 말 CS 완료를 목표로 하는 등 대부분의 신사업이 상용화 초기 단계에 머물러 있다. CEO도 흑자 전환 목표 시점을 2027년으로 언급한 만큼, 매출 기여까지 추가 시간이 필요할 가능성이 있다.",
-    "en": "Most new businesses remain at an early commercialization stage—the IMFAS network MCU is in reliability testing, while the PQC security chip targets CS completion only by the end of 2026. As the CEO has referenced 2027 as a target for a return to profitability, meaningful revenue contribution may still require additional time."
+    "ko": "2022년부터 2025년까지 4년 연속 영업손실과 지배주주 순손실이 이어졌고, 2025년 영업이익률은 -81.0%다. 2025년 지배주주 순손실은 77.7억원으로 2022년보다 커졌다. 최근 4개 분기 지배주주 순손실 합계는 71.1억원이며, 5개 분기 연속 적자가 공시로 확인된다.",
+    "en": "Operating and controlling-shareholder net losses persisted for four straight years from 2022 through 2025, with a 2025 operating margin of -81.0%. The 2025 controlling-shareholder net loss of KRW 7.77 billion was larger than in 2022. The latest four quarters total KRW 7.11 billion in losses, and five consecutive loss-making quarters are reported."
    }
   },
   {
    "title": {
-    "ko": "글로벌 경쟁사 대비 규모의 열위",
-    "en": "Scale Disadvantage Versus Global Competitors"
+    "ko": "현금 유출과 자금 조달 부담",
+    "en": "Cash outflows and funding needs"
    },
    "body": {
-    "ko": "글로벌 자동차 MCU·SoC 시장은 르네사스 등 대형 업체가 AP SoC와 MCU를 합산해 세계 1위 점유율을 차지하고 있다. 라닉스와 같은 소형 팹리스가 SDV용 네트워크 MCU 시장에서 신규 고객사(OEM·Tier-1)를 확보하기 위해서는 상당한 검증 기간과 자원 투입이 필요할 것으로 보인다.",
-    "en": "In the global automotive MCU/SoC market, large players such as Renesas hold the top combined global share in AP SoCs and MCUs. For a smaller fabless firm like Ranix to secure new OEM and Tier-1 customers in the SDV network MCU market, a substantial qualification period and resource commitment are likely to be required."
+    "ko": "영업활동 현금흐름은 2024년 -56.8억원, 2025년 -51.2억원으로 유출이 이어졌다. 2025년 말 부채총계는 221억원으로 자본총계 213억원과 비슷한 규모다. 2026년 3월 자기주식 처분 공시에서 운영자금 및 재원 확보가 목적으로 명시됐다는 점이 자금 조달 부담을 보여 준다.",
+    "en": "Operating cash flow was KRW -5.68 billion in 2024 and KRW -5.12 billion in 2025, so cash outflows persisted. Total liabilities of KRW 22.1 billion at the end of 2025 are close to shareholders' equity of KRW 21.3 billion. The March 2026 treasury share disposal disclosure cites securing operating funds as one purpose, which points to funding needs."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "실행 리스크",
-    "en": "Execution Risk"
+    "ko": "기술 상용화 리스크",
+    "en": "Commercialization risk"
    },
    "body": {
-    "ko": "IMFAS 신뢰성 테스트, PQC 칩 CS 검증 등 다수의 신사업이 예정된 일정대로 완료될지가 불확실하다. 보안·전장용 반도체는 인증 절차가 길고 고객사 검증에도 상당한 시간이 소요되는 특성이 있어, 일정 지연이 발생할 가능성을 배제할 수 없다.",
-    "en": "It remains uncertain whether multiple new business initiatives—such as IMFAS reliability testing and PQC chip CS verification—will be completed on the stated schedule. Security and automotive-grade semiconductors typically require lengthy certification processes and customer qualification periods, so schedule delays cannot be ruled out."
+    "ko": "PQC 보안칩의 고객 샘플 완료 목표는 2026년 말이고, 양산용 샘플 칩 완성은 2026년 상반기 계획으로 제시됐다. 생산을 파운드리에 맡기는 구조라 생산 일정과 수율이 외부 요인에 좌우된다. 시제품 단계의 관심이 실제 양산 주문으로 이어지지 않으면 기술 개발 투자가 매출로 회수되지 않을 수 있다.",
+    "en": "The PQC chip's customer sample completion is targeted for late 2026, and mass-production sample chips were planned for the first half of 2026. Because production is outsourced to foundries, schedules and yields depend on external factors. If interest from the prototype stage does not turn into mass-production orders, development spending may not be recovered through sales."
    }
   },
   {
    "cat": {
-    "ko": "경쟁 및 시장 리스크",
-    "en": "Competitive and Market Risk"
+    "ko": "재무 및 자금 조달 리스크",
+    "en": "Financing risk"
    },
    "body": {
-    "ko": "국내 ETC 시장은 성숙기에 진입해 성장 여력이 제한적이며, 양자보안 시장에서도 SK텔레콤 등 대형 통신사가 자체 칩을 선보이며 경쟁이 형성되고 있다. 글로벌 자동차 반도체 시장에서는 르네사스, NXP, 인피니언 등 대형 업체와의 경쟁이 불가피하다.",
-    "en": "The domestic ETC market has matured with limited growth potential, and in the quantum security space, large telecom carriers such as SK Telecom are also unveiling their own chips, intensifying competition. In the global automotive semiconductor market, competition with major players such as Renesas, NXP and Infineon is unavoidable."
+    "ko": "2025년 말 기준 자본총계 213억원, 부채총계 221억원이고 영업활동 현금흐름은 적자 상태다. 운영자금 확보 목적의 자기주식 처분이 공시됐고, 추가 자금 조달이 주식 발행으로 이어질 경우 주주 지분 희석이 발생할 수 있다. 부채비율이 낮아졌더라도 현금 유출이 계속되면 재무 여력이 줄어든다.",
+    "en": "At the end of 2025, shareholders' equity was KRW 21.3 billion against total liabilities of KRW 22.1 billion, and operating cash flow remained negative. The treasury share disposal was disclosed partly to secure operating funds. If additional funding takes the form of new shares, shareholder dilution could follow. Even with a lower debt ratio, continued cash outflows would reduce financial flexibility."
    }
   },
   {
    "cat": {
-    "ko": "재무 및 자본조달 리스크",
-    "en": "Financial and Capital-Raising Risk"
+    "ko": "사업 집중 및 일정 리스크",
+    "en": "Concentration and timing risk"
    },
    "body": {
-    "ko": "순손실이 여러 해 지속되고 영업활동현금흐름도 마이너스를 이어가고 있어, 신사업 투자와 운영자금 확보를 위해 추가적인 자본조달이 필요할 가능성이 있다. 이 경우 기존 주주의 지분 희석 가능성을 배제할 수 없다.",
-    "en": "With net losses persisting for several years and operating cash flow remaining negative, additional capital raises may be needed to fund new business investment and working capital. This could carry a risk of dilution for existing shareholders."
+    "ko": "매출과 주력 사업이 자동차 MCU와 ETCS 관련 시장에 집중돼 있어 이 시장의 수요 변화가 직접 영향을 준다. 중국 ETCS 전장 시장 진출을 추진해 왔는데, 해외 시장 진출은 현지 규제와 경쟁 환경의 영향을 받는다. 2022년 IR에서 제시된 2024년 목표 일정이 이후 사업 실적에 어떻게 반영됐는지는 공시 실적에서 직접 드러나지 않는다.",
+    "en": "Sales and the core business concentrate on automotive MCUs and ETCS-related markets, so demand shifts in that market pass through directly. The company has pursued China's ETCS automotive market, and overseas entry is shaped by local regulation and competition. How the 2024 target timelines presented in the 2022 IR material fed into business results cannot be read directly from the reported figures."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중순",
-    "en": "Mid-November 2026"
+    "ko": "2026년 12월 말",
+    "en": "Late December 2026"
    },
    "what": {
-    "ko": "2026년 3분기 실적 공시 확인 — 최근 분기의 매출·영업손실 흐름이 2026년 상반기 수준(분기 매출 15~19억원, 영업손실 15~16억원)에서 유지되는지, 혹은 개선·악화되는지 점검 필요.",
-    "en": "Check the Q3 2026 earnings disclosure to see whether recent quarterly revenue and operating loss trends (quarterly revenue of roughly KRW 1.5–1.9bn, operating loss of roughly KRW 1.5–1.6bn) are maintained, improve, or worsen."
+    "ko": "PQC 보안칩 고객 샘플(CS) 완료 목표 시점이다. 완료 여부와 이후 양산 일정이 사업 전환을 가늠하는 첫 번째 확인 지점이다.",
+    "en": "Target timing for completion of customer samples (CS) of the PQC security chip. Whether it is completed and how mass production follows is the first checkpoint for judging the business transition."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기",
-    "en": "Q4 2026"
+    "ko": "2027년 3월 31일",
+    "en": "March 31, 2027"
    },
    "what": {
-    "ko": "IMFAS 차량용 네트워크 MCU의 신뢰성 테스트 완료 및 글로벌 OEM·Tier-1 대상 상용화 로드맵 착수 여부 확인.",
-    "en": "Confirm whether reliability testing for the IMFAS automotive network MCU has been completed and whether a commercialization roadmap targeting global OEMs and Tier-1 suppliers has begun."
+    "ko": "2026년 사업보고서 제출 기한(사업연도 종료 후 90일)이다. 연간 매출, 영업손실, 영업이익률, 부채비율이 다음 정기 확인 지점이다.",
+    "en": "Deadline for filing the 2026 annual business report (90 days after fiscal year-end). Full-year sales, operating loss, operating margin and debt ratio are the next regular checkpoints."
    }
   },
   {
    "when": {
-    "ko": "2026년 말",
-    "en": "Year-end 2026"
+    "ko": "2027년 5월 15일 전후",
+    "en": "Around May 15, 2027"
    },
    "what": {
-    "ko": "PQC 보안칩의 CS(설계 검증) 완료 목표 달성 여부와 KT 등과의 협력 논의가 구체적 계약으로 이어지는지 확인.",
-    "en": "Confirm whether the PQC security chip meets its CS (design verification) completion target and whether collaboration discussions with partners such as KT progress into concrete contracts."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 초",
-    "en": "Early 2027"
-   },
-   "what": {
-    "ko": "경영진이 언급한 '보안칩 원년, 흑자 목표' 진행 상황 — 실제 매출 인식 및 흑자 전환 시점에 대한 추가 공시나 IR 발언 확인.",
-    "en": "Track progress on management's stated goal of a security-chip-driven 'year of profitability'—look for further disclosures or IR commentary on actual revenue recognition and the timing of any return to profitability."
+    "ko": "2027년 1분기 분기보고서 제출 기한(분기 종료 후 45일)이다. 2026년 4분기 이후 분기 매출과 영업손실의 방향이 이어지는지 확인하는 지점이다.",
+    "en": "Filing deadline for the Q1 2027 quarterly report (45 days after quarter-end). It is the point to check whether the direction of quarterly sales and operating loss continues after the fourth quarter of 2026."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "라닉스는 국내 ETC 시장에서의 견고한 점유율을 기반으로 하되, 2022년부터 2025년까지 매출은 등락을 거치고 영업손실은 지속적으로 확대되는 실적 구조를 보여왔다. 최근 4개 분기(2025년 3분기~2026년 2분기)에도 분기당 15~24억원 규모의 순손실이 이어지고 있어, 적자 흐름이 단기간에 반전됐다고 보기는 어렵다. 다만 자본총계 확대와 부채비율 하락 등 재무구조 지표는 개선되는 모습을 보이고 있으며, 양자보안(PQC)과 SDV 대응 차량용 네트워크 MCU(IMFAS)라는 두 개의 신사업 축이 구체적인 제품·인증 성과를 축적해가고 있다. TRNG 보안 IP의 NIST 인증, RQ2722 PQC 칩 출시, KT와의 협력 등은 기술적 진전을 보여주는 사실이나, 상용화에 따른 실제 매출 기여 시점은 아직 확인되지 않았다. 경영진은 2027년을 보안칩 사업의 흑자 전환 목표 시점으로 언급한 바 있어, 향후 몇 개 분기 동안의 실적과 신사업 진행 상황을 함께 지켜볼 필요가 있다. 투자 판단은 이러한 사업 전환의 진행 속도와 재무 성과의 실제 연동 여부를 확인한 뒤 독자적으로 이뤄져야 한다.",
-   "en": "Ranix has maintained a solid share of the domestic ETC market, but its financial performance from 2022 through 2025 shows fluctuating revenue alongside continuously widening operating losses. Net losses of roughly KRW 1.5–2.4bn per quarter have continued through the trailing four quarters (Q3 2025–Q2 2026), making it difficult to characterize the loss trend as having reversed in the near term. That said, financial structure metrics such as total equity and the debt ratio have improved, and the company's two new business pillars—quantum security (PQC) and SDV-oriented automotive network MCU (IMFAS)—are accumulating concrete product and certification milestones. NIST certification of the TRNG security IP, the launch of the RQ2722 PQC chip, and collaboration with KT all represent tangible technical progress, but the timing of actual revenue contribution from commercialization has not yet been confirmed. Management has referenced 2027 as a target for the security chip business to turn profitable, so the coming quarters' earnings and new business progress warrant continued monitoring. Any investment judgment should be made independently, after confirming the pace of this business transition and whether it translates into actual financial performance."
+   "ko": "라닉스의 공시 실적은 2023년 정점 이후 매출 축소와 2022년부터 2025년까지 이어진 적자 확대로 정리된다. 2025년 연간 매출은 74.7억원, 영업손실은 60.5억원, 영업이익률은 -81.0%였다. 2026년 3분기에는 영업손실이 6.7억원, 지배주주 순손실이 9.6억원으로 줄었지만 매출은 14.9억원으로 전년 동기보다 29.3% 낮았다. 강점으로는 차량용 MCU의 국내 점유율과 양자내성암호 보안칩의 양산 진행이 꼽히고, 약점으로는 매출 기반의 축소, 장기간 이어진 현금 유출, 자금 조달 필요성이 꼽힌다. 분기 손실 축소가 매출 회복과 함께 나타나는지가 강세와 약세를 가르는 핵심 변수다. 다음 확인 지점은 PQC 보안칩의 고객 샘플 완료 여부와 2026년 사업보고서의 연간 영업이익률·부채비율이다. 주가 수준은 최근 네 개 분기 순손실 구간이라 PER이 산출되지 않으며 순자산 대비 1배 부근에 있다. 이 리포트는 투자 의견이나 목표주가를 제시하지 않으며, 사실과 확인 지점을 정리하는 데 목적이 있다.",
+   "en": "Ranix's reported results show falling sales since the 2023 peak and widening losses through 2025. Full-year 2025 sales were KRW 7.47 billion, the operating loss was KRW 6.05 billion, and the operating margin was -81.0%. In the third quarter of 2026 the operating loss narrowed to KRW 668 million and the controlling-shareholder net loss to KRW 961 million, but sales of KRW 1.49 billion were 29.3% lower year on year. Strengths include the domestic MCU share and mass-production progress on the PQC security chip, while weaknesses include the shrinking revenue base, persistent cash outflows and funding needs. Whether quarterly loss narrowing comes with a sales recovery is the key variable separating the bull and bear cases. The next checkpoints are completion of PQC customer samples and the full-year operating margin and debt ratio in the 2026 annual report. The share price sits in a net-loss period over the latest four quarters, so no P/E ratio is calculated, and the price is near 1x net assets. This report does not present an investment opinion or target price and is intended to summarize facts and checkpoints."
   }
  },
  "sources": [
-  "https://www.investing.com/equities/ranix-inc",
   "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A317120",
+  "http://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=317120",
+  "https://m.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02728966639058168",
+  "https://stockvery.com/stock/%40317120",
   "https://www.investing.com/equities/ranix-inc-financial-summary",
-  "https://stocks.pluconnect.com/317120_%EB%9D%BC%EB%8B%89%EC%8A%A4/",
-  "https://m.irgo.co.kr/IR-COMP/317120/%EB%9D%BC%EB%8B%89%EC%8A%A4-%EA%B8%B0%EC%97%85%EC%A0%95%EB%B3%B4",
-  "https://m.thinkpool.com/item/317120",
-  "https://littlebproject.com/stock/317120/40/6735",
-  "https://www.jobkorea.co.kr/Recruit/Co_Read/C/ranix123/Company_name/%E3%88%9C%EB%9D%BC%EB%8B%89%EC%8A%A4",
-  "https://www.ranix.co.kr/kr/index.php",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20250317001337&rcpno=20250317000979&orgid=F&tran=Y&langTpCd=0",
-  "https://www.cbinsights.com/company/ranix",
-  "https://nfcwork.com/how-iot-and-nfc-are-converging-to-create-smarter-solutions/?lang=ko",
-  "https://m.etnews.com/20201125000056?obj=Tzo4OiJzdGRDbGFzcyI6Mjp7czo3OiJyZWZlcmVyIjtOO3M6NzoiZm9yd2FyZCI7czoxMzoid2ViIHRvIG1vYmlsZSI7fQ%3D%3D",
-  "https://www.enetnews.co.kr/news/articleView.html?idxno=54018",
-  "https://www.newspim.com/news/view/20250207000163",
-  "https://www.enetnews.co.kr/news/articleView.html?idxno=52063",
-  "https://enterprise.kt.com/pd/P_PD_NE_00_381.do",
-  "https://www.bloter.net/news/articleView.html?idxno=659777"
+  "https://file.alphasquare.co.kr/media/pdfs/company-ir/20220920%EB%9D%BC%EB%8B%89%EC%8A%A4-IR%ED%81%90%EB%8D%94%EC%8A%A4-%EB%A6%AC%ED%8F%AC%ED%8A%B8-%EC%9E%90%EB%8F%99%EC%B0%A8-%ED%86%B5%EC%8B%A0-%EB%B0%8F-%EB%B3%B4%EC%95%88%EC%B9%A9-%EC%86%94%EB%A3%A8%EC%85%98-%EC%A0%84%EB%AC%B8%EA%B8%B0%EC%97%85-%EB%9D%BC%EB%8B%89%EC%8A%A4.pdf",
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=04628086642067896",
+  "https://www.news2day.co.kr/article/20250924500143",
+  "https://news.nate.com/view/20260326n29838",
+  "https://www.rayence.com/IR_notice/80487",
+  "https://m.news.nate.com/view/20260303n30736",
+  "https://www.rayence.com/IR_notice/81628",
+  "https://kind.krx.co.kr/external/2026/04/27/000529/20260427001429/10001.htm",
+  "https://kr.investing.com/news/transcripts/article-93CH-2147452",
+  "https://kr.investing.com/news/stock-market-news/article-93CH-2160886",
+  "https://kind.krx.co.kr/external/2026/07/30/000336/20260727000072/99626.htm"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "317120",
  "name": "라닉스",
  "name_en": "RANIX INC.",
@@ -223,11 +211,11 @@
   "반도체"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 19:22",
- "dataDate": "20260904",
+ "reportDate": "2026-11-19",
+ "reportTs": "2026-11-19 04:53",
+ "dataDate": "20261118",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-11-18",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -297,12 +285,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 1501318719,
-    "op": -1920986648,
-    "np_owner": -2419846488
-   },
-   {
     "q": "2025Q3",
     "rev": 2106563138,
     "op": -933939427,
@@ -325,28 +307,39 @@
     "rev": 1936491027,
     "op": -1550813526,
     "np_owner": -2135183831
+   },
+   {
+    "q": "2026Q3",
+    "rev": 1490308002,
+    "op": -667535411,
+    "np_owner": -961406545
    }
   ],
   "valuation": {
-   "price": 1462,
-   "mcap": 0.0223,
+   "price": 1082,
+   "mcap": 0.0165,
    "shares": 15260000,
    "total_shares": 15260000,
    "wavg_shares": null,
    "per": null,
-   "eps": -492,
-   "pbr": 1.2825,
-   "bps": 1140,
-   "roe_ttm": -45.4,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": -7521439442,
+   "eps": -466,
+   "pbr": 1.0065,
+   "bps": 1075,
+   "roe_ttm": -36.1,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": -7110747948,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 0.98,
+   "eps_src": "순이익÷주식수",
+   "pbr_krx": 0.77,
    "bps_krx": 1399.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
-   "div": 0.0
+   "div": 0.0,
+   "hidden": {
+    "per": "loss"
+   }
   }
- }
+ },
+ "textRules": 3
 }
