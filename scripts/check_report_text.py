@@ -278,7 +278,20 @@ def clean_markup(s):
 
 
 _NOT_TEXT = {"sources", "quant", "ticker", "name", "name_en", "market", "sector", "categories",
-             "reportDate", "reportTs", "dataDate", "v", "hasPaid", "model", "usage", "meta", "asOf", "textRules"}
+             "reportDate", "reportTs", "dataDate", "v", "hasPaid", "model", "usage", "meta", "asOf", "textRules", "ipo"}
+
+
+def _quant(rep):
+    """본문 금액 · 연속 연수를 대조할 공시 값 — 리포트 v2 의 quant, 없으면 상장 전 리포트의 증권신고서 요약재무정보(ipo.quant ·
+    scripts/ipo_filing.quant · 2026-11-18). 둘 다 없으면 None."""
+    if not isinstance(rep, dict):
+        return None
+    q = rep.get("quant")
+    if isinstance(q, dict):
+        return q
+    o = rep.get("ipo")
+    q = o.get("quant") if isinstance(o, dict) else None
+    return q if isinstance(q, dict) else None
 _KS_OK = set("웻몐퀜")          # 2,350자 밖이지만 맞는 말 — 웻 스테이션 · 쓰촨성 몐양 · 초전도 코일 퀜치
 _TAG = re.compile(r"<\s*/?\s*(?:sup|sub|citation|cite|br|span|div|p|b|i|em|strong|u|small|mark|ref|source|li|ul|ol|table|tr|td|h[1-6])"
                   r"\b[^<>]{0,160}>|<a\s[^<>]*href|\b(?:index|href|src|class)\s*=\s*\"|\*\*|&(?:amp|lt|gt|quot|nbsp|#\d+);"
@@ -464,7 +477,7 @@ _STREAK_METRIC = re.compile(r"매출|영업이익|순이익|영업손실|순손�
 
 def streak_hits(rep):
     """정점 · 저점 다음 해부터 센 햇수보다 큰 'N년 연속'. 실적 표(quant.annual)가 없으면 판정하지 않는다."""
-    q = rep.get("quant") if isinstance(rep.get("quant"), dict) else {}
+    q = _quant(rep) or {}
     last_data = max((a.get("year") for a in (q.get("annual") or []) if isinstance(a, dict) and isinstance(a.get("year"), int)),
                     default=None)
     if not last_data:
@@ -600,7 +613,7 @@ _MIX_OTHER_POST = re.compile(r"\s*(?:규모|상당)(?:의)?\s*[^.,]{0,10}?(?:계
 def enmix_hits(rep):
     """한국어 본문에 영어 금액 표기의 수를 '억원'으로 옮긴 곳 — 위험(금액 규칙과 같은 교정 · 저장 문턱)."""
     import fin_material as F                                  # noqa: E402
-    q = rep.get("quant") if isinstance(rep, dict) else None
+    q = _quant(rep)
     if not isinstance(q, dict):
         return []
     v = q.get("valuation") or {}
@@ -665,7 +678,7 @@ def enmix_hits(rep):
 def amount_hits(rep):
     """본문의 이 회사 실적 금액 ↔ 공시 값(quant). 다르면 '위험'. 공시 값이 없거나 외화 공시 회사면 보지 않는다."""
     import fin_material as F                                  # noqa: E402 — 표준 라이브러리만 쓴다(돌림 의존 없음)
-    q = rep.get("quant") if isinstance(rep, dict) else None
+    q = _quant(rep)
     if not isinstance(q, dict):
         return []
     if str((q.get("valuation") or {}).get("ccy") or "KRW").upper() != "KRW":

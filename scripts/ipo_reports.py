@@ -163,16 +163,32 @@ class Kind:
         self.s = session or requests.Session()
         self.s.headers.update(UA)
 
+    # KIND 가 러너에 따라 403 을 돌려줄 때가 있다(2026-11-18 — 같은 주소가 네 번 받고 다섯 번째 실행에서 첫 요청부터 403). 잠시 쉬었다
+    # 두 번 더 묻고, 그래도 막히면 그 실행은 아무것도 주문하지 않는다 — 이 작업은 하루 여러 번 불리므로(브리핑 · 예약) 다음 실행이 다시 본다.
+    RETRY_WAITS = (0, 15, 45)
+
+    def _req(self, meth, url, **kw):
+        last = None
+        for wait in self.RETRY_WAITS:
+            if wait:
+                time.sleep(wait)
+            try:
+                r = self.s.request(meth, url, timeout=30, **kw)
+                if r.status_code in (403, 429) or r.status_code >= 500:
+                    last = RuntimeError(f"HTTP {r.status_code}")
+                    continue
+                r.raise_for_status()
+                return _decode(r.content)
+            except Exception as e:                           # noqa: BLE001 — 통신 오류도 같은 방식으로 다시 묻는다
+                last = e
+        raise last
+
     def _get(self, path, **params):
-        r = self.s.get(KIND + path, params=params, timeout=30)
-        r.raise_for_status()
-        return _decode(r.content)
+        return self._req("GET", KIND + path, params=params)
 
     def _post(self, path, data):
         url = KIND + path
-        r = self.s.post(url, data=data, headers={"Referer": url, "X-Requested-With": "XMLHttpRequest"}, timeout=30)
-        r.raise_for_status()
-        return _decode(r.content)
+        return self._req("POST", url, data=data, headers={"Referer": url, "X-Requested-With": "XMLHttpRequest"})
 
     def notices(self, days=LOOKBACK_DAYS, today=None):
         today = today or kst_now().date()
@@ -266,12 +282,12 @@ def collect(kind, today=None, listed=None, log_fn=log):
 
 
 def merge(ipo, found, now):
-    """data/ipo.json 에 반영 — 게시 · 알림 기록(published · pinged)은 그대로 둔다."""
+    """data/ipo.json 에 반영 — 게시 · 알림 기록(published · pinged)과 증권신고서 재무(filing)는 그대로 둔다."""
     st = ipo.setdefault("stocks", {})
     changed = False
     for tk, e in found.items():
         old = st.get(tk) or {}
-        keep = {k: old[k] for k in ("published", "pinged") if k in old}
+        keep = {k: old[k] for k in ("published", "pinged", "filing") if k in old}
         new = dict({k: v for k, v in e.items() if v not in (None, "")}, **keep, seen=old.get("seen") or now)
         if new != old:
             st[tk], changed = new, True
@@ -295,6 +311,43 @@ def todo(ipo, now=None):
     out = [tk for tk, e in (ipo.get("stocks") or {}).items()
            if L.in_window(e, now.date()) and before_trading(e, now) and tk not in listed and not has_report(tk)]
     return sorted(out, key=lambda t: (ipo["stocks"][t].get("list_date", ""), t))[:MAX_NEW]
+
+
+def attach_filing(ipo, tks, key=None, codes=None):
+    """리포트를 쓸 종목에 증권신고서 · 투자설명서의 요약재무정보와 공모 자금 사용 계획을 단다(scripts/ipo_filing.py · 2026-11-18
+    사장 "재무제표라든지 리포트에 필요한 다른 데이터들은 없어??"). 이미 단 종목은 다시 받지 않는다. 받지 못하면 그 종목은 재무 없이
+    전처럼 검색으로 쓴다 — 리포트를 막지 않는다. 단 종목 수를 돌려준다."""
+    key = key if key is not None else os.getenv("DART_API_KEY", "").strip()
+    need = [tk for tk in tks if not ((ipo.get("stocks") or {}).get(tk) or {}).get("filing")]
+    if not need:
+        return 0
+    if not key:
+        log("  · DART 키가 없어 증권신고서 재무를 싣지 않는다")
+        return 0
+    import ipo_filing
+    try:
+        if codes is None:
+            import dart_reader
+            codes = dart_reader.reader(key).corp_codes
+    except Exception as e:                                   # noqa: BLE001
+        log(f"  · DART 회사 목록을 받지 못했다 — {type(e).__name__} · 증권신고서 재무 없이 쓴다")
+        return 0
+    n = 0
+    for tk in need:
+        e = ipo["stocks"][tk]
+        try:
+            fin = ipo_filing.collect(key, codes, e.get("full_name"), e.get("name"), log=log)
+        except Exception as ex:                              # noqa: BLE001
+            log(f"  · {tk} 증권신고서 읽기 실패 — {type(ex).__name__}")
+            fin = None
+        if fin:
+            e["filing"] = fin
+            n += 1
+            yrs = [p["end"] for p in fin["periods"]]
+            log(f"  · {tk} {e.get('name')} 증권신고서 재무: {fin.get('report_nm')}({fin.get('rcept_dt')})"
+                f" · {'연결' if fin.get('basis') == '연결' else '연결 표시 없음'} · {yrs[0]}~{yrs[-1]} {len(yrs)}개 기간"
+                f" · 자금 사용 계획 {len((fin.get('funds') or {}).get('uses') or [])}항목")
+    return n
 
 
 def describe(tk, e):
@@ -325,6 +378,8 @@ def cmd_scan_prepare(write):
         log("  · 안내가 나온 상장 예정 종목이 없다")
     tks = todo(ipo)
     log(f"리포트를 쓸 종목: {','.join(tks) or '없음'}" + (f" · 창이 지난 줄 {n_old}개 정리" if n_old else ""))
+    if tks and write and attach_filing(ipo, tks):
+        changed = True
     if write:
         if changed:          # 바뀐 것이 없으면 쓰지 않는다 — 하루 여러 번 불려도 커밋이 생기지 않게
             L.save(ipo)
