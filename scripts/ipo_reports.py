@@ -345,7 +345,7 @@ def attach_filing(ipo, tks, key=None, codes=None):
             n += 1
             yrs = [p["end"] for p in fin["periods"]]
             log(f"  · {tk} {e.get('name')} 증권신고서 재무: {fin.get('report_nm')}({fin.get('rcept_dt')})"
-                f" · {'연결' if fin.get('basis') == '연결' else '별도'} · {yrs[0]}~{yrs[-1]} {len(yrs)}개 기간"
+                f" · {'연결' if fin.get('basis') == '연결' else '연결 표시 없음'} · {yrs[0]}~{yrs[-1]} {len(yrs)}개 기간"
                 f" · 자금 사용 계획 {len((fin.get('funds') or {}).get('uses') or [])}항목")
     return n
 
