@@ -586,6 +586,11 @@ def collect(cl, as_of):
             if st.get("ipo"):
                 # 상장 전에 쓴 리포트 — 종목 페이지 머리가 시세 대신 공모가 · 상장일을 쓴다(build_stock_staging.heroH)
                 rep["ipo"] = {k: st["ipo"][k] for k in ("list_date", "offer_price", "shares") if st["ipo"].get(k) is not None}
+                # 증권신고서 요약재무정보(연간)를 금액 검사의 공시 값으로 남긴다 — 본문 금액을 그 값과 대조한다(check_report_text._quant)
+                import ipo_filing
+                q = ipo_filing.quant(st["ipo"].get("filing"))
+                if q:
+                    rep["ipo"]["quant"] = q
             cand[tk] = C.prepare(fix_shape(rep))
         except Exception as e:
             fail += 1

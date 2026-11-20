@@ -348,7 +348,8 @@ def material_lines(fin):
     by_end = {p["end"]: p for p in ps}
     for p in ps:
         lb = _label(p, fm)
-        audit = re.sub(r"\s+", " ", re.sub(r"\s*\(\s*([^()]*?)\s*\)", r" \1", p.get("audit") or "")).strip()
+        audit = re.sub(r"\s*\(\s*[-–]?\s*\)", "", p.get("audit") or "")             # '한울회계법인 (-)' — 의견 칸이 빈 것
+        audit = re.sub(r"\s+", " ", re.sub(r"\s*\(\s*([^()]*?)\s*\)", r" \1", audit)).strip()
         meta = " · ".join(x for x in (p.get("std"), audit) if x)
         parts = []
         prev = None

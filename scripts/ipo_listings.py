@@ -91,7 +91,8 @@ def stock_dict(tk, e):
         "bookbuild": of.get("bookbuild"), "subscribe": of.get("subscribe"), "division": e.get("division"),
         "industry": e.get("industry"), "products": e.get("products"), "holders": e.get("holders"),
         "full_name": e.get("full_name"), "ceo": e.get("ceo"), "par": e.get("par"),
-    }.items() if v not in (None, "")}
+        "filing": e.get("filing"),       # 증권신고서 요약재무정보 · 공모 자금 사용 계획(scripts/ipo_filing.py)
+    }.items() if v not in (None, "", {})}
     return {"ticker": tk, "name": e.get("name") or tk, "name_en": e.get("name_en") or "", "market": e.get("market") or "",
             "sector": e.get("sector") or "기타", "categories": e.get("categories") or [], "price": None, "change": None,
             "mcap": None, "trading_value": None, "volume": None, "shares": e.get("shares"), "ipo": ipo}

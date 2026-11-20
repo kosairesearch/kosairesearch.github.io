@@ -40,8 +40,10 @@ jobs:
       - name: 패키지 설치
         run: pip install -r requirements.txt
 
-      - name: 1) 상장 예정 종목 찾기(KIND '신규상장' 안내 · 공모진행 현황)
+      - name: 1) 상장 예정 종목 찾기(KIND '신규상장' 안내 · 공모진행 현황 · 증권신고서 요약재무정보)
         id: prep
+        env:
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}   # 리포트를 쓸 종목의 증권신고서 · 투자설명서 원문(scripts/ipo_filing.py)
         run: |
           python scripts/ipo_reports.py prepare 2>&1 | tee -a $GITHUB_STEP_SUMMARY
           # 지난 실행이 시간 안에 받지 못한 배치가 있으면 그것부터 받는다(생성기가 먼저 회수한다)

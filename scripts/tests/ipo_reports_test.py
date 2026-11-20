@@ -18,6 +18,11 @@
                    창이 지나면 원래대로 정리한다
   ⑨ 작업 파일      브리핑이 개장일에 깨운다 · 공용 실행 순서(kos-data) 밖 · 자기 상태 파일 · 하이쿠 · 배치 · push_main.sh · 워치독
   ⑩ 네이버 알림    열린 페이지만, 종목마다 한 번
+  ⑪ 증권신고서     요약재무정보(연결 우선 · 단위 · 머리 두 줄 · 연도만 쓴 머리 · 감사의견 · 괄호 음수) · 자금 사용 계획 · 단위 오독은 버린다
+  ⑫ 가져오기       정식명으로 회사 찾기 · 요약재무정보가 없는 서류(발행조건확정)는 앞 서류로 · 준비 단계가 리포트를 쓸 종목에만 단다 ·
+                   목록 파일에 남고 다시 받지 않는다 · 키가 없거나 실패해도 리포트는 그대로 쓴다
+  ⑬ 재료 · 검사    지시문의 [증권신고서 요약재무정보] · 저장한 리포트의 ipo.quant 로 본문 금액을 대조한다 · 정리가 ipo 를 건드리지 않는다
+  ⑭ KIND 다시 읽기 403 · 서버 오류면 두 번 더 묻고, 끝내 막히면 실패로 넘긴다
 """
 import datetime
 import json
@@ -34,6 +39,9 @@ SCRIPTS = HERE.parent
 REPO = SCRIPTS.parent
 sys.path.insert(0, str(SCRIPTS))
 
+sys.path.insert(0, str(HERE))
+import ipo_filing as IF                # noqa: E402
+import ipo_filing_fixtures as FX       # noqa: E402
 import ipo_listings as L               # noqa: E402
 import ipo_reports as R                # noqa: E402
 import generate_reports as G           # noqa: E402
@@ -188,6 +196,11 @@ ok("555550" in R.todo(ipo, NOW) and "555550" not in R.todo(ipo, NOW.replace(hour
 ipo["stocks"].pop("555550")
 
 print("⑥ 지시문")
+FIN_HANA = IF.parse_summary(FX.HANA)
+FIN_HANA.update({"rcept_no": "20261109000166", "report_nm": "[기재정정]투자설명서", "rcept_dt": "2026-11-09",
+                 "funds": IF.parse_funds(FX.HANA_FUNDS)})
+ipo["stocks"]["271160"]["filing"] = FIN_HANA
+L.save(ipo)
 st = L.stock_dict("271160", ipo["stocks"]["271160"])
 ok(st["price"] is None and st["mcap"] is None and st["ipo"]["offer_price"] == 5700 and st["ipo"]["list_date"] == "2026-11-20",
    "생성기 종목 꼴 — 시세 칸은 비우고 공모 정보", json.dumps(st["ipo"], ensure_ascii=False)[:160])
@@ -197,6 +210,17 @@ ok("상장일(매매개시일): 2026년 11월 20일" in p and "확정 공모가 
    "공모 판 재료 — 상장일 · 공모가 · 공모금액 · 상장주식수 · 공모가 기준 시가총액 · 주관사")
 ok("[신규 상장 종목 — 아래 작성 지침에 더한다]" in p and "현재가" not in p and "거래대금:" not in p and "Hana Aero Dynamics" in p,
    "공모주 지침 · 시세 줄 없음 · 영문명 블록")
+ok("[증권신고서 요약재무정보 — 회사가 공모 때 낸 투자설명서(2026년 11월 9일 접수)" in p
+   and "- 2025년(K-IFRS · 삼덕회계법인 적정): 매출 333억원[KRW 33.3 billion](전년 대비 3.0% 증가) · 영업이익 49.9억원" in p
+   and "- 2026년 상반기(1~6월)(K-IFRS · 현대회계법인 검토): 매출 206억원" in p and "당기순손실 1.2억원[KRW 118 million]" in p
+   and "- 2023년(K-GAAP · 현대회계법인 적정)" in p and "회계처리기준이 해마다 다르다" in p and "감사받지 않은 재무제표" in p
+   and "공모 자금 사용 계획(확정 공모가 기준): 순수입금 248억원[KRW 24.8 billion] — 시설자금 248억원[KRW 24.8 billion]" in p
+   and p.index("[증권신고서 요약재무정보") < p.index("[신규 상장 종목 — 아래 작성 지침에 더한다]"),
+   "증권신고서 재무 블록 — 연도별 실적 · 전년 대비 · 회계처리기준 · 감사의견 · 상반기 누적 · 자금 사용 계획 · 지침보다 앞")
+ok("실적은 위 [증권신고서 요약재무정보]가 있으면 그 금액 · 증감을 그대로 쓴다" in G.IPO_RULES
+   and "경쟁률 · 확약 비율 · 유통 물량은 검색으로 확인된 값만 쓴다" in G.IPO_RULES, "공모주 지침 — 실적은 증권신고서 값 그대로")
+p_nf = G.build_prompt(L.stock_dict("271160", {k: v for k, v in ipo["stocks"]["271160"].items() if k != "filing"}), "2026-11-19 06:45", "")
+ok("[증권신고서 요약재무정보 —" not in p_nf and "확정 공모가 5,700원" in p_nf, "증권신고서 재무가 없으면 블록 없이 전처럼")
 p0 = G.build_prompt({"ticker": "005930", "name": "삼성전자", "market": "코스피", "sector": "반도체", "price": 100000, "change": 1.5,
                      "mcap": 600.0, "trading_value": 2e12}, "2026-11-19 06:45", "")
 ok("- 현재가: 100,000원 (전일대비 +1.50%)\n- 시가총액: 600조원\n- 거래대금:" in p0 and "신규 상장 종목" not in p0,
@@ -251,9 +275,15 @@ stt = json.loads(GB.STATE_JS.read_text(encoding="utf-8"))
 ok(stt.get("pending") and stt.get("batch_id") == "msgbatch_IPO1", "자기 상태 파일(BATCH_STATE_FILE)에 주문을 적는다", GB.STATE_JS.name)
 GB.collect(cl, "2026-11-19 07:05")
 w = written.get("271160") or {}
+wi = dict(w.get("ipo") or {})
+wq = wi.pop("quant", None)
 ok(w.get("name") == "하나에어로" and w.get("market") == "코스닥" and w.get("sector") == "항공·방산"
-   and w.get("ipo") == {"list_date": "2026-11-20", "offer_price": 5700, "shares": 17729964},
-   "저장한 리포트에 이름 · 시장 · 업종과 공모 정보(ipo)를 단다", json.dumps({k: w.get(k) for k in ("name", "market", "ipo")}, ensure_ascii=False))
+   and wi == {"list_date": "2026-11-20", "offer_price": 5700, "shares": 17729964},
+   "저장한 리포트에 이름 · 시장 · 업종과 공모 정보(ipo)를 단다", json.dumps({k: w.get(k) for k in ("name", "market")}, ensure_ascii=False))
+ok(isinstance(wq, dict) and [a["year"] for a in wq["annual"]] == [2023, 2024, 2025] and wq["annual"][2]["rev"] == 33286338798
+   and wq["annual"][2]["np"] == 2420372481 and "fy_end_month" not in wq,
+   "증권신고서 연간 실적을 금액 검사의 공시 값(ipo.quant)으로 남긴다", json.dumps(wq, ensure_ascii=False)[:160])
+ok("[증권신고서 요약재무정보" in reqs[0]["params"]["messages"][0]["content"], "주문한 지시문에 증권신고서 재무 블록이 들어간다")
 os.environ.pop("REPORT_TICKERS", None)
 os.environ.pop("REPORT_EXTRA_STOCKS", None)
 src = (SCRIPTS / "generate_reports_batch.py").read_text(encoding="utf-8")
@@ -378,5 +408,185 @@ R.cmd_ping(wait_sec=0)
 ok(sent == [], "이미 알린 종목은 다시 보내지 않는다")
 
 shutil.rmtree(TMP, ignore_errors=True)
+print("⑪ 증권신고서 · 투자설명서 읽기")
+
+
+def per(fin, end):
+    return next((x for x in (fin or {}).get("periods", []) if x["end"] == end), {})
+
+
+f = IF.parse_summary(FX.HANA)
+ok(f and [x["end"] for x in f["periods"]] == ["2023-12", "2024-12", "2025-12", "2026-06"] and f["fy_end_month"] == 12
+   and f["basis"] == "", "하나에어로 — 네 기간 · 결산월 · 연결 표시가 없는 표", str(f and [x["end"] for x in f["periods"]]))
+ok(per(f, "2025-12") == {"end": "2025-12", "months": 12, "std": "K-IFRS", "audit": "삼덕회계법인(적정)", "rev": 33286338798,
+                         "op": 4988489314, "np": 2420372481, "assets": 61427175401, "liab": 46269336195, "equity": 15157839206},
+   "재무상태 머리('제19기(2025년12월말)')와 손익 머리('(2025.1.1.~2025.12.31.)')를 끝 시점으로 잇는다", json.dumps(per(f, "2025-12"), ensure_ascii=False))
+ok(per(f, "2026-06").get("months") == 6 and per(f, "2026-06").get("np") == -117833618 and per(f, "2025-12").get("np") > 0,
+   "'당기순손실' 줄도 부호는 괄호로 — 손실은 음수, 이익(괄호 없음)은 양수 · 반기는 6개월 누적")
+ok(per(f, "2024-12").get("audit") == "감사받지 아니한재무제표" and per(f, "2023-12").get("std") == "K-GAAP"
+   and "rev" not in {k for k, v in per(f, "2023-12").items() if v == 1}, "감사의견 · 회계처리기준을 해마다 남긴다 · 다음 제목의 표는 읽지 않는다")
+u = IF.parse_summary(FX.UCAST)
+ok(u and u["basis"] == "연결" and per(u, "2025-12").get("op") == -1826074490 and per(u, "2025-12").get("audit") == "도원회계법인(적정)"
+   and per(u, "2023-12").get("audit") == "감사받지 아니함" and "rev" not in per(u, "2023-12") and per(u, "2025-12").get("equity") == -4950236136,
+   "유캐스트 — 연결 · 별도가 따로면 연결 · 감사인과 감사의견이 다른 줄 · '-'는 빈 칸 · 법인세차감전순이익은 순이익이 아니다",
+   json.dumps(per(u, "2025-12"), ensure_ascii=False)[:200])
+m = IF.parse_summary(FX.MBD)
+ok(m and m["basis"] == "" and [x["end"] for x in m["periods"]] == ["2023-12", "2024-12", "2025-12", "2026-06"]
+   and per(m, "2026-06").get("assets") == 17857104132 and per(m, "2026-06").get("np") == 11197798264
+   and per(m, "2025-12").get("audit") == "삼일회계법인(적정)",
+   "엠비디 — 연결 '해당사항 없음' · 연도만 쓴 머리('제11기(2025년)' · '제12기(2026년 반기)')도 손익 머리와 잇는다",
+   str(m and [x["end"] for x in m["periods"]]))
+e_ = IF.parse_summary(FX.EST)
+ok(e_ and e_["basis"] == "연결" and per(e_, "2025-12").get("rev") == 35418086000 and per(e_, "2025-12").get("np_owner") == 1952923000
+   and per(e_, "2026-06").get("assets") == 70981255000,
+   "이에스티 — 천원 단위 · 이름 칸 없는 둘째 머리 줄 · '- 지배회사지분순이익'", json.dumps(per(e_, "2025-12"), ensure_ascii=False)[:200])
+o_ = IF.parse_summary(FX.OPTO)
+ok(o_ and o_["basis"] == "연결" and per(o_, "2025-12").get("rev") == 25602568905 and per(o_, "2026-06").get("months") == 6
+   and "equity_owner" not in per(o_, "2025-12"), "옵토닉스 — '2026년도 반기' · 둘째 줄 '(제23기 반기)' · 비지배지분은 지배 지분이 아니다")
+lb = IF.parse_summary(FX.LABLUP)
+ok(lb and per(lb, "2025-12").get("rev") == 6718495122 and per(lb, "2025-12").get("equity_owner") == -2269211587
+   and per(lb, "2024-12").get("std") == "K-IFRS", "래블업 — 영업수익 · 자본총계 앞의 [지배회사지분] · 각주 '(주1)'을 걷는다")
+dw = IF.parse_summary(FX.DONGWON)
+ok(dw and per(dw, "2025-12").get("rev") == 92254987000 and per(dw, "2024-12").get("audit") == "신한회계법인(적정)"
+   and per(dw, "2026-06").get("months") == 6, "동원파츠 — 천원 · '2026년 반기(제30기)' · '사업연도' 머리")
+ok(IF.parse_summary(FX.SHORT) is None, "요약재무정보가 없는 서류(발행조건확정)는 None")
+ok(IF.parse_summary(FX.EST.replace("(단위 : 천원)", "")) is None, "단위를 못 찾아 천원 표를 원으로 읽으면(자산총계 10억원 미만) 버린다")
+bad = FX.HANA.replace("<TD ALIGN=\"RIGHT\">46,269,336,195</TD>", "<TD ALIGN=\"RIGHT\">6,269,336,195</TD>")
+ok(bad != FX.HANA and IF.parse_summary(bad) is None, "자산 = 부채 + 자본이 맞지 않으면(열 어긋남) 버린다")
+ok(IF.parse_funds(FX.HANA_FUNDS) == {"uses": [{"use": "시설자금", "amt": 24814000000}], "net": 24814218640},
+   "자금 사용 계획 — 따로 된 단위 표(백만원) · 순수입금(원) · 계는 뺀다", str(IF.parse_funds(FX.HANA_FUNDS)))
+ok(IF.parse_funds(FX.NEXI_FUNDS) == {"uses": [{"use": "운영자금", "amt": 39427580000}], "net": 39427580000}
+   and IF.parse_funds(FX.BARO_FUNDS)["uses"] == [{"use": "운영자금", "amt": 14889000000}, {"use": "타법인증권취득자금", "amt": 14000000000}],
+   "원 단위 사용 계획 · 두 항목")
+ok(IF.parse_funds(FX.BARO_FUNDS.replace("(단위 : 백만원)", "(단위 : 원)")).get("uses", [{}])[0].get("amt") == 14889000000,
+   "적힌 단위가 순수입금과 맞지 않으면 순수입금과 합계로 정한다(앞 표의 단위를 이어 읽은 경우)")
+NO_NET = FX.BARO_FUNDS.replace("순수입금 [(1) + (2) - (3)]", "기타 항목").replace("(단위 : 백만원)", "")
+ok(IF.parse_funds(NO_NET) == {}, "순수입금도 없고 단위로 읽은 합계가 1억원 미만이면 버린다", str(IF.parse_funds(NO_NET)))
+ok(IF.parse_funds(FX.BARO_FUNDS.replace("(단위 : 백만원)", "")).get("uses", [{}])[0].get("amt") == 14889000000,
+   "단위를 못 찾으면 순수입금과 합계로 정한다")
+
+print("⑫ 가져오기 · 준비 단계")
+import io                              # noqa: E402
+import zipfile                         # noqa: E402
+CODES = [{"corp_code": "99999999", "corp_name": "하나에어로", "stock_code": ""},
+         {"corp_code": "01025617", "corp_name": "하나에어로다이내믹스", "stock_code": " "}]
+ok(IF.find_corp(CODES, "(주)하나에어로다이내믹스", "하나에어로") == ["01025617"]
+   and IF.find_corp(CODES, "주식회사 없는회사", "하나에어로") == ["99999999"] and IF.find_corp(CODES, "", "") == [],
+   "정식명('(주)' · '주식회사'를 뗀 이름)부터, 없으면 약명으로")
+LIST = [{"rcept_no": "20261109000163", "report_nm": "[발행조건확정]증권신고서(지분증권)", "rcept_dt": "20261109"},
+        {"rcept_no": "20261109000166", "report_nm": "[기재정정]투자설명서 ", "rcept_dt": "20261109"},
+        {"rcept_no": "20261116001887", "report_nm": "분기보고서 (2026.09)", "rcept_dt": "20261116"},
+        {"rcept_no": "20260921000405", "report_nm": "증권신고서(지분증권)", "rcept_dt": "20260921"}]
+DOCS = {"20261109000166": FX.SHORT, "20261109000163": FX.HANA + FX.HANA_FUNDS, "20260921000405": FX.HANA}
+asked = []
+
+
+def fake_get(url, params=None, timeout=None):
+    asked.append((url.rsplit("/", 1)[-1], (params or {}).get("rcept_no") or (params or {}).get("corp_code")))
+    if url.endswith("/list.json"):
+        return types.SimpleNamespace(json=lambda: {"status": "000", "list": LIST if params["corp_code"] == "01025617" else []})
+    buf = io.BytesIO()
+    with zipfile.ZipFile(buf, "w") as z:
+        z.writestr(f"{params['rcept_no']}.xml", DOCS[params["rcept_no"]].encode("utf-8"))
+        z.writestr(f"{params['rcept_no']}_00760.xml", ("<P>첨부</P>" * 99999).encode("utf-8"))
+    return types.SimpleNamespace(content=buf.getvalue())
+
+
+notes = []
+fin = IF.collect("KEY", CODES, "(주)하나에어로다이내믹스", "하나에어로", today=datetime.date(2026, 11, 18), get=fake_get, log=notes.append)
+ok(fin and fin["rcept_no"] == "20261109000163" and fin["rcept_dt"] == "2026-11-09" and fin["report_nm"] == "[발행조건확정]증권신고서(지분증권)"
+   and per(fin, "2025-12").get("rev") == 33286338798 and fin["funds"]["net"] == 24814218640,
+   "가장 최근 서류부터 — 요약재무정보가 없는 서류(정정 대비표뿐)는 건너뛰고 앞 서류로 · 본문 파일(접수번호.xml)을 읽는다",
+   str(fin and fin.get("rcept_no")))
+ok([a for a in asked if a[0] == "document.xml"] == [("document.xml", "20261109000166"), ("document.xml", "20261109000163")]
+   and any("요약재무정보를 읽지 못함" in n for n in notes), "정기보고서는 받지 않는다 · 건너뛴 사유를 남긴다", str(asked))
+notes.clear()
+ok(IF.collect("KEY", CODES, "(주)없는회사", "없는회사", get=fake_get, log=notes.append) is None
+   and any("회사 목록에" in n for n in notes), "회사를 못 찾으면 None(사유를 남긴다)")
+ok(IF.collect("KEY", [{"corp_code": "77777777", "corp_name": "새회사"}], "새회사", "", get=fake_get, log=notes.append) is None
+   and any("공모 서류 없음" in n for n in notes), "공모 서류가 없으면 None")
+
+ipo2 = {"stocks": {"271160": {"name": "하나에어로", "full_name": "(주)하나에어로다이내믹스", "list_date": "2026-11-20"},
+                   "222220": {"name": "내일상장", "full_name": "(주)내일상장", "list_date": "2026-11-21", "filing": {"periods": [1]}}}}
+got = []
+real_collect = IF.collect
+IF.collect = lambda key, codes, full, name, **k: (got.append((key, full)) or dict(FIN_HANA))
+logs = []
+R_log = R.log
+R.log = lambda *a: logs.append(" ".join(str(x) for x in a))
+ok(R.attach_filing(ipo2, ["271160", "222220"], key="KEY", codes=CODES) == 1 and got == [("KEY", "(주)하나에어로다이내믹스")]
+   and ipo2["stocks"]["271160"]["filing"]["rcept_no"] == "20261109000166" and ipo2["stocks"]["222220"]["filing"] == {"periods": [1]},
+   "준비 단계 — 리포트를 쓸 종목 가운데 재무가 없는 종목만 받아 목록 파일 항목에 단다", str(got))
+got.clear()
+ok(R.attach_filing(ipo2, ["271160"], key="KEY", codes=CODES) == 0 and not got, "이미 단 종목은 다시 받지 않는다")
+ok(R.attach_filing({"stocks": {"333330": {"name": "x"}}}, ["333330"], key="", codes=CODES) == 0 and any("DART 키" in x for x in logs),
+   "키가 없으면 받지 않고 알린다(리포트는 재무 없이 쓴다)")
+IF.collect = lambda *a, **k: (_ for _ in ()).throw(RuntimeError("boom"))
+ok(R.attach_filing({"stocks": {"333330": {"name": "x"}}}, ["333330"], key="KEY", codes=CODES) == 0, "읽다 멈춰도 준비 단계는 계속한다")
+IF.collect = real_collect
+R.log = R_log
+merged = {"stocks": {"271160": dict(ipo2["stocks"]["271160"], published="2026-11-19 03:11")}}
+R.merge(merged, {"271160": {"name": "하나에어로", "list_date": "2026-11-20", "shares": 17729964}}, "2026-11-19 06:45")
+ok(merged["stocks"]["271160"].get("filing", {}).get("rcept_no") == "20261109000166" and merged["stocks"]["271160"].get("published"),
+   "안내를 다시 합쳐도 증권신고서 재무(filing)를 지킨다")
+ok(L.stock_dict("271160", merged["stocks"]["271160"])["ipo"]["filing"]["rcept_no"] == "20261109000166"
+   and "filing" not in L.stock_dict("271160", {"name": "x", "filing": {}})["ipo"], "종목 꼴에 재무를 넘긴다(빈 값은 뺀다)")
+wf = (REPO / ".github" / "workflows" / "ipo_reports.yml").read_text(encoding="utf-8")
+prep = wf.split("- name: 1)")[1].split("- name: 2)")[0]
+ok("DART_API_KEY: ${{ secrets.DART_API_KEY }}" in prep, "준비 단계에 DART 키를 준다")
+
+print("⑬ 재료 · 검사")
+import check_report_text as C        # noqa: E402
+q = IF.quant(FIN_HANA)
+rep = {"ticker": "271160", "name": "하나에어로", "ipo": {"list_date": "2026-11-20", "offer_price": 5700, "quant": q},
+       "recent": {"ko": "2025년 매출은 330억원이다.", "en": "2025 revenue was KRW 33.3 billion."}}
+hits = C.amount_hits(rep)
+ok(len(hits) == 1 and hits[0]["rule"] == "amount" and "333억원" in hits[0]["why"],
+   "본문 금액을 증권신고서 연간 실적과 대조한다(공시 값 333억원)", str([h["why"] for h in hits]))
+rep["recent"]["ko"] = "2025년 매출은 332억 8,600만원, 영업이익은 49억 8,800만원이다."
+ok(C.amount_hits(rep) == [], "맞는 금액(더 자세한 표기 포함)은 걸지 않는다")
+ok(C.amount_hits(dict(rep, ipo={"list_date": "2026-11-20"})) == [] and C._quant({"quant": {"annual": []}, "ipo": {"quant": q}}) == {"annual": []},
+   "증권신고서 값이 없으면 대조하지 않는다 · 리포트 v2 의 quant 가 먼저다")
+pre = C.prepare(dict(rep, ipo=json.loads(json.dumps(rep["ipo"]))))
+ok(pre["ipo"] == rep["ipo"] and "ipo" in C._NOT_TEXT, "저장 전 정리는 ipo(공모 정보 · 증권신고서 값)를 건드리지 않는다")
+q3 = IF.quant(dict(FIN_HANA, fy_end_month=3))
+ok(q3.get("fy_end_month") == 3 and IF.quant({"periods": [{"end": "2026-06", "months": 6, "rev": 1}]}) is None and IF.quant(None) is None,
+   "결산월이 12월이 아니면 표시 · 누적 기간만 있으면 None")
+ok(IF.material_lines(None) == "" and IF.material_lines({"periods": []}) == "", "재무가 없으면 블록 없음")
+ok("- 2026년 상반기(1~6월)(K-IFRS · 한울회계법인): 매출" in IF.material_lines(
+    {"fy_end_month": 12, "periods": [{"end": "2026-06", "months": 6, "std": "K-IFRS", "audit": "한울회계법인 (-)", "rev": 3021157962}]}),
+   "감사의견 칸이 '-'면 감사인 이름만(넥스아이 반기)")
+mu = IF.material_lines(dict(IF.parse_summary(FX.UCAST), rcept_dt="2026-11-17", report_nm="[기재정정]투자설명서"))
+ok("· 연결 기준 ·" in mu and "자본총계 -49.5억원[KRW -4.95 billion] — 자본총계가 마이너스인 자본잠식 상태" in mu
+   and "- 2023년(K-IFRS · 감사받지 아니함): 손익 자료 없음" in mu and "영업손실 18.3억원[KRW 1.83 billion](전년 대비 적자 지속(손실 확대))" in mu,
+   "연결 기준 표시 · 자본잠식 · 손익이 빈 해 · 손실 이름과 적자 지속", mu.split("\n")[3][:120])
+
+print("⑭ KIND 다시 읽기")
+
+
+class FakeSession:
+    def __init__(self, codes):
+        self.codes, self.headers, self.calls = list(codes), {}, 0
+
+    def request(self, meth, url, timeout=None, **kw):
+        self.calls += 1
+        code = self.codes.pop(0)
+        if isinstance(code, Exception):
+            raise code
+        return types.SimpleNamespace(status_code=code, content="<html>본문</html>".encode("utf-8"), raise_for_status=lambda: None)
+
+
+k = R.Kind(session=FakeSession([403, 503, 200]))
+k.RETRY_WAITS = (0, 0, 0)
+ok(k._get("/x") == "<html>본문</html>" and k.s.calls == 3, "403 · 503 뒤 세 번째에 받는다")
+k = R.Kind(session=FakeSession([403, ConnectionError("끊김"), 403]))
+k.RETRY_WAITS = (0, 0, 0)
+try:
+    k._get("/x")
+    ok(False, "세 번 모두 막히면 실패로 넘긴다")
+except Exception as ex:                                        # noqa: BLE001
+    ok("403" in str(ex) and k.s.calls == 3, "세 번 모두 막히면 실패로 넘긴다(준비 단계가 받아 그 실행은 주문하지 않는다)", str(ex))
+ok(R.Kind.RETRY_WAITS == (0, 15, 45), "기다림 15초 · 45초")
+
 print(f"\n통과 {passed} · 실패 {failed}")
 sys.exit(1 if failed else 0)

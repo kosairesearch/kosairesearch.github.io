@@ -54,7 +54,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_DIRS = ("data/reports_v2", "data/reports")
 
 # 본문이 아닌 것 — 숫자 덩어리와 URL 이라 손댈 이유가 없다.
-SKIP_KEYS = ("quant", "sources")
+SKIP_KEYS = ("quant", "sources", "ipo")       # ipo — 상장 전 리포트의 공모 정보 · 증권신고서 값(글이 아니다)
 
 # 가로 공백만 — 줄바꿈을 먹으면 문단이 붙는다.
 _SP = r"[^\S\r\n]"
