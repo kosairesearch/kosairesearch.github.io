@@ -1,7 +1,7 @@
 // KOS ai — 업종 AI 분석 (자동 생성). 직접 수정 금지.
 window.KOS_SECTORS = {
-  "lastUpdated": "2026-10-09 22:23",
-  "model": "claude-sonnet-5",
+  "lastUpdated": "2026-11-21 18:18",
+  "model": "claude-sonnet-5-5",
   "sectors": {
     "유통·소비재": {
       "lead": {
@@ -67,1808 +67,1940 @@ window.KOS_SECTORS = {
     },
     "부동산·리츠": {
       "lead": {
-        "ko": "국내 증시에서 비중은 작지만 안정적 배당과 자산 재평가 기대가 공존하는 업종으로, 최근 스폰서 신용도에 따른 종목 간 차별화가 뚜렷해지고 있다.",
-        "en": "A sector with a small footprint in the Korean market but characterized by stable dividend profiles and asset revaluation expectations, where recent differentiation by sponsor credit quality has become pronounced."
+        "ko": "부동산·리츠 업종은 시장 비중이 작은 배당 중심 업종으로, 2026년 들어 금리 부담과 유상증자 여파로 주가가 약세를 보였고 11월에는 금리 안정 기대 속에 종목별 차별화가 나타나고 있다.",
+        "en": "Korea's real estate and REIT sector is a small, dividend-driven group of listings. In 2026 it was pressured by interest-rate costs and equity offerings, and in November, hopes for stable rates have produced stock-by-stock divergence."
       },
       "overview": {
-        "ko": "부동산·리츠 업종은 상장리츠, 인프라펀드, 부동산 개발·임대 관련 기업으로 구성되며, 임대수익이나 운용수익을 배당으로 돌려주는 소득형 자산이 중심이다. 코스피·코스닥 전체 시가총액 대비 비중은 미미하지만 종목 수가 많아 개별 자산 유형별로 투자 성격이 크게 갈리는 업종이다. 맥쿼리인프라와 같은 인프라펀드부터 SK리츠·롯데리츠·한화리츠 등 대기업 스폰서 리츠, ESR켄달스퀘어리츠 같은 물류센터 전문 리츠, 자이에스앤디 같은 주택·건축 기업까지 사업 모델이 다양하다. 국내 리츠 시장은 최근 10년간 빠르게 성장해 총자산 120조원을 넘어섰다. 다만 개별 상장 리츠의 주가는 코스피 전반과 달리 후행적으로 반응하는 경향이 있어, 시장 전체 흐름과는 다른 사이클을 보이는 경우가 많다.",
-        "en": "The real estate and REITs sector comprises listed REITs, infrastructure funds, and property development or leasing companies, centered on income-generating assets that return rental or operating income as dividends. While the sector's share of total market capitalization is negligible, the large number of constituent stocks means investment characteristics vary significantly by asset type. Business models range from infrastructure funds such as Macquarie Korea Infrastructure Fund, to large conglomerate-sponsored REITs like SK REITs, Lotte REIT, and Hanwha REIT, specialized logistics REITs such as ESR Kendall Square REIT, and builders like Xi S&D. The domestic REITs market has grown rapidly over the past decade, with total assets surpassing 120 trillion won. However, individual listed REIT share prices tend to react with a lag relative to the broader KOSPI, often tracing a different cycle from the overall market."
+        "ko": "부동산·리츠 업종은 오피스·물류센터·리테일 같은 부동산과 도로·항만 같은 인프라 자산에서 나오는 수익을 배당으로 돌려주는 상장 상품이 중심이다. 전체 시장에서 차지하는 비중은 1%에 크게 못 미치고 종목 수도 적은 소형 업종이다. 시가총액이 가장 큰 종목은 인프라펀드인 맥쿼리인프라이며, 그 뒤를 SK리츠·롯데리츠 등 대형 리츠가 잇는다. 업종에는 리츠가 아닌 자이에스앤디도 포함되는데, 이 회사는 GS건설의 자회사로 건축·주택·홈솔루션 세 부문을 운영한다. 리츠는 임대수익에서 금융비용을 차감한 후 배당하는 구조여서 금융비용이 늘면 곧바로 배당 여력이 줄어든다. 이 때문에 업종 주가는 금리와 배당 매력의 상대 비교에 크게 좌우된다.",
+        "en": "The real estate and REIT sector is built mainly around listed vehicles that pay out income from properties such as offices, logistics centers and retail, and from infrastructure assets such as roads and ports. Its weight in the overall market is well below 1%, and the number of listings is small. The largest name by market capitalization is the infrastructure fund Macquarie Korea Infrastructure Fund, followed by large REITs such as SK REIT and Lotte REIT. The sector also includes Xi S&D, which is not a REIT but a GS E&C subsidiary operating in construction, housing and home solutions (HS). A REIT distributes rental income after deducting financing costs, so higher financing costs directly reduce its capacity to pay dividends. As a result, sector share prices depend heavily on how interest rates compare with dividend appeal."
       },
       "structure": {
-        "ko": "업종 내 밸류체인은 자산 유형과 스폰서 구조로 나뉜다. 상단에는 맥쿼리인프라와 같이 인프라 자산에서 안정적 현금흐름을 확보하는 인프라펀드가 있고, 그 아래 SK리츠·롯데리츠·한화리츠·삼성FN리츠처럼 대기업 계열사 자산을 기초로 하는 스폰서형 리츠가 시가총액 상위를 형성한다. ESR켄달스퀘어리츠는 물류센터, 신한알파리츠는 오피스·복합자산, 코람코라이프인프라리츠는 주유소 부지 중심으로 특화되어 있으며, 맵스리얼티와 KB스타리츠는 해외 부동산 자산을 포트폴리오에 담고 있다. 자이에스앤디는 리츠가 아닌 주택·건축 사업을 하는 건설사로, 밸류체인의 상단인 자산 조성 단계에 위치한다. 이지스밸류플러스리츠 등 중소형 리츠는 특정 자산군이나 지역에 집중하며 운용사의 자산 리사이클링 역량에 성과가 좌우되는 구조다. 전반적으로 대기업 스폰서 여부와 운용사 신용도가 종목 간 밸류에이션 격차를 가르는 핵심 변수로 작용하고 있다.",
-        "en": "The sector's value chain is segmented by asset type and sponsorship structure. At the top are infrastructure funds like Macquarie Korea Infrastructure Fund, which secure stable cash flows from infrastructure assets, followed by sponsor-backed REITs such as SK REITs, Lotte REIT, Hanwha REIT, and Samsung FN REIT, which hold conglomerate-affiliated assets and occupy the upper tier by market capitalization. ESR Kendall Square REIT specializes in logistics centers, Shinhan Alpha REIT in office and mixed-use assets, and Koramco Life Infra REIT in gas station sites, and Mirae Asset Maps Realty and KB Star REIT hold overseas real estate in their portfolios. Xi S&D, not a REIT but a housing and building contractor, sits at the upstream asset-creation stage of the value chain. Smaller REITs such as IGIS Value Plus REIT concentrate on specific asset classes or regions, with performance heavily dependent on the asset manager's capital recycling capability. Overall, conglomerate sponsorship and asset manager credit quality have emerged as the key variables driving valuation gaps between constituents."
+        "ko": "업종은 기초자산 유형과 스폰서 구조에 따라 나뉜다. 오피스형으로는 서울 도심과 판교 등 수도권 오피스를 보유한 SK리츠, 국내 최초의 대형 공모 오피스 리츠인 신한알파리츠, 삼성생명·삼성화재가 스폰서인 삼성FN리츠가 있다. 롯데리츠는 롯데그룹 유통 부동산을 기초자산으로 하고, ESR켄달스퀘어리츠는 물류센터 중심이며, 코람코라이프인프라리츠는 상장 당시 보유자산 전체가 주유소 관련 자산이었다. 한화리츠와 신한서부티엔디리츠는 각각 한화그룹과 서부T&D를 스폰서로 두고, 제이알글로벌리츠는 해외 부동산에 투자한다. 인프라 쪽에서는 맥쿼리인프라가 도로를 중심으로 항만과 데이터센터로 자산을 넓히고 있다. 규모는 맥쿼리인프라가 가장 크고 나머지 리츠는 중소형이어서, 종목별 자산 구성과 스폰서 역량에 따라 성과가 갈린다.",
+        "en": "The sector divides by underlying asset type and sponsor structure. In offices, SK REIT holds offices in central Seoul, Pangyo and the wider capital region, Shinhan Alpha REIT is Korea's first large publicly offered office REIT, and SamsungFN REIT is sponsored by Samsung Life and Samsung Fire. Lotte REIT is built on Lotte Group retail real estate, ESR Kendall Square REIT centers on logistics centers, and Koramco Life Infra REIT held only gas-station-related assets when it listed. Hanwha REIT and Shinhan Seobu T&D REIT are backed by the Hanwha Group and Seobu T&D respectively, while JR Global REIT invests in overseas property. On the infrastructure side, Macquarie Korea Infrastructure Fund is centered on roads and is extending into ports and data centers. Macquarie Korea Infrastructure Fund is the largest by size and the other REITs are small to mid-sized, so results diverge with each vehicle's asset mix and sponsor capability."
       },
       "trends": {
-        "ko": "국내 리츠 시장은 외형 측면에서 꾸준히 확대되어 왔으나, 2026년 들어서는 종목 간 차별화가 심화되는 흐름을 보였다. 2026년 4월에는 제이알글로벌리츠가 해외 자산 재감정평가에 따른 자산가치 하락으로 LTV 커버넌트(대출 약정)를 위반하는 사태가 발생했고, 이 사태 이후 국내 리츠 주가는 18% 급락했으나, 자산 섹터보다는 스폰서의 성격과 운용 역량에 따라 하락 폭이 다르게 나타나는 차별화 양상을 보였다. 이로 인해 국내 상장 리츠는 2026년 5월 14일 기준 연초 대비 -7.7%의 수익률을 기록하는 등 전반적으로 부진한 흐름이 나타났다. 다만 상반기에는 한화리츠가 이마트타워를 비스폰서 자산으로 편입하고, 코람코라이프인프라리츠와 SK리츠가 보유 주유소 매각을 지속하는 등 개별 종목 차원의 자산 재편은 꾸준히 진행됐다. 실적 측면에서 자이에스앤디는 2026년 2분기 연결 매출이 전년 동기 대비 10.0% 감소한 3,033억원을 기록했으나 영업이익은 90억원으로 흑자 전환했다.",
-        "en": "While the domestic REITs market has steadily expanded in scale, 2026 has seen intensifying differentiation among individual constituents. In April 2026, JR Global REIT breached an LTV covenant after a reappraisal cut the value of an overseas asset, and in the aftermath domestic REIT share prices fell 18%, though the extent of declines varied more by sponsor characteristics and asset management capability than by asset sector. As a result, domestic listed REITs posted a year-to-date return of roughly negative 7.7% as of May 14, 2026, reflecting broadly weak sentiment. Nonetheless, portfolio restructuring continued at the individual stock level during the first half, including Hanwha REIT's acquisition of the E-Mart Tower as a non-sponsor asset and ongoing gas station divestitures by Koramco Life Infra REIT and SK REITs. On the earnings front, Xi S&D reported consolidated second-quarter 2026 revenue of 303.3 billion won, down 10.0% year-on-year, while operating profit turned positive at 9.0 billion won."
+        "ko": "2026년 11월 4일 보도 기준으로 KRX 부동산 리츠·인프라 지수는 연초 이후 약 17% 하락했다. 주요 리츠가 1~2년 사이 자산 매입과 차입 관리를 위해 잇달아 유상증자를 한 점도 부담으로 지목됐다. 반면 2026년 11월 13일에는 금리 환경 개선 기대에 리츠 업종이 상승 흐름을 보였다. 이날 SK리츠는 3.47% 올랐고, 롯데리츠는 3.11% 상승했다. 같은 날 한화리츠·삼성FN리츠·코람코라이프인프라리츠는 하락했다. 인프라 쪽에서는 맥쿼리인프라가 2026년 상반기 배당금을 주당 350원으로 책정해 직전보다 7.9% 줄였다. 비리츠 종목인 자이에스앤디는 2026년 3분기 공시 기준 매출이 4,194억원으로 전년 동기 대비 4.1% 늘었지만 영업이익은 78억원으로 72.7% 줄었다.",
+        "en": "As of a November 4, 2026 report, the KRX Real Estate REITs & Infrastructure Index had fallen about 17% since the start of the year. Successive rights offerings by major REITs over the past one to two years to acquire assets and manage debt were also cited as a growing burden. By contrast, on November 13, 2026 the REIT group rose on expectations of an improving rate environment. That day, SK REIT gained 3.47% and Lotte REIT rose 3.11%. Hanwha REIT, SamsungFN REIT and Koramco Life Infra REIT fell on the same day. On the infrastructure side, Macquarie Korea Infrastructure Fund set its first-half 2026 dividend at 350 won per share, a 7.9% cut from the previous payout. Xi S&D, a non-REIT name in the group, reported third-quarter 2026 revenue of 419.4 billion won, up 4.1% year on year, while operating profit fell 72.7% to 7.8 billion won."
       },
       "outlook": {
-        "ko": "향후 관전 포인트로는 정책 모멘텀이 꼽힌다. 2026년 1월 9일 발표된 경제성장전략에는 조세특례제한법 개정을 통한 상장 리츠 배당소득 저율 분리과세 추진 내용이 포함됐으며, 추진 시점은 2026년 하반기로 예정되어 있어 제도 도입 여부가 투자 수요 회복의 변수가 될 수 있다. 실적 측면에서는 임대수익 증가와 이자비용 감소에 따라 리츠 실적 개선이 본격화될 전망이며 주당배당금을 상회하는 배당 여력 확보도 기대되는 구간이라는 평가가 나온다. 밸류에이션 측면에서는 리츠 주가가 순자산가치 대비 19% 수준 할인된 상태이며, 상장 리츠의 인수합병이 활발하게 진행되고 있다는 점도 주목할 부분이다. 또한 일부 리츠는 자산 매각 차익에 따른 특별배당을 예정하고 있어 2026년 하반기 상장 리츠의 배당 총액이 늘어날 가능성이 크다는 전망도 제기된다. 다만 배당수익률이 이례적으로 높게 나타나는 종목 중 일부는 주가 하락에 따른 수치상 왜곡인 경우가 있어, 배당률 자체보다 임대수익의 질과 자산 재편 전략을 함께 살펴볼 필요가 있다.",
-        "en": "A key point of interest going forward is policy momentum: the economic growth strategy announced on January 9, 2026 included plans to pursue preferential low-rate separate taxation on listed REIT dividend income through revision of the Special Tax Treatment Control Act, with implementation targeted for the second half of 2026, making the actual adoption of this scheme a potential variable for demand recovery. On the earnings front, rental income growth combined with declining interest expenses is expected to drive a broader earnings improvement, with dividend coverage above DPS guidance also anticipated. From a valuation standpoint, REIT share prices trade at roughly a 19 percent discount to net asset value, while M&A activity among listed REITs has been active. Additionally, some REITs plan special dividends tied to asset disposal gains, raising the likelihood that aggregate dividend payouts among listed REITs will increase in the second half of 2026. That said, some stocks showing unusually high dividend yields reflect distortions from falling share prices rather than genuine payout growth, so the quality of rental income and asset restructuring strategy warrant attention alongside the yield figure itself."
+        "ko": "나이스신용평가는 2026년 리츠업계 실적이 전년 수준을 유지하는 데 그칠 것으로 보면서도, 신규 차입금리가 2023~2024년보다 낮아져 수익성 압력이 완화되고 있다고 평가했다. 삼성증권은 국내 자산을 담은 상장리츠의 평균금리가 2024년 4%대 고점을 찍은 뒤 2026년 3%대 중후반으로 내려갈 것으로 전망했다. 차입 만기 도래에 따른 리파이낸싱이 이어지면 이자비용 감소가 배당에 반영되는 시점이 관전 포인트다. 나이스신용평가는 CBD·강남권 대형 오피스는 임차 수요가 견조해 실적 방어력이 높다고 평가했다. 이 평가는 서울 도심 오피스를 보유한 SK리츠나 신한알파리츠 같은 종목의 자산 구성을 살필 때 참고가 된다. 맥쿼리인프라는 신규 투자가 확보되면 배당 재원이 달라질 수 있다는 업계 설명이 나온 만큼, 신규 자산 편입과 배당 회복 여부를 확인할 필요가 있다.",
+        "en": "NICE Ratings expects REIT earnings in 2026 to merely hold at the prior-year level, while noting that new borrowing rates are lower than in 2023 and 2024, easing pressure on profitability. Samsung Securities forecast that the average interest rate of listed REITs holding domestic assets, after peaking in the 4% range in 2024, would fall to the mid-to-high 3% range in 2026. As refinancing continues with debt maturities, a key point to watch is when lower interest costs show up in dividends. NICE Ratings assessed that large offices in the CBD and Gangnam areas have relatively solid tenant demand and strong earnings resilience. That assessment is a useful reference when examining the asset mix of names such as SK REIT and Shinhan Alpha REIT, which hold offices in central Seoul. For Macquarie Korea Infrastructure Fund, an industry source said its distributable funds could change if new investments are secured, so new asset acquisitions and any dividend recovery are worth monitoring."
       },
       "risks": [
         {
           "title": {
-            "ko": "금리 환경 변화",
-            "en": "Interest Rate Environment Shifts"
+            "ko": "금리와 금융비용 부담",
+            "en": "Interest rates and financing costs"
           },
           "body": {
-            "ko": "리츠는 차입 의존도가 높아 금융비용 변화에 실적이 민감하다. 2026년 하반기에는 중동 지정학적 리스크 장기화와 금리 동결 기조로 금리 인하 기대가 약해진 상태여서, 금리 인하가 늦어질수록 리파이낸싱 비용 절감 효과도 늦어질 수 있다.",
-            "en": "REITs carry high leverage, making earnings sensitive to changes in financing costs. In the second half of 2026, prolonged Middle East geopolitical risk and a policy-rate hold have weakened expectations for rate cuts, and the longer cuts are delayed, the later refinancing cost savings will arrive."
+            "ko": "차입금리가 오르면 리츠의 순이익이 줄고 주주 배당이 직접 감소한다. 상장리츠의 평균 조달금리는 3년간 3.7%에서 4.5%로 올랐고 금융비용 커버리지는 1.9배에서 1.6배로 낮아졌다. 금리 하락이 지연되면 배당 여력 회복도 늦어질 수 있다.",
+            "en": "Higher borrowing costs reduce REITs' net income, directly leading to lower dividends for shareholders. The average funding rate of listed REITs rose from 3.7% to 4.5% over three years, while financial cost coverage fell from 1.9 times to 1.6 times. If rate declines are delayed, the recovery in dividend capacity could also be delayed."
           }
         },
         {
           "title": {
-            "ko": "스폰서·운용 리스크",
-            "en": "Sponsor and Asset Management Risk"
+            "ko": "유상증자와 수급 부담",
+            "en": "Equity offerings and supply-demand pressure"
           },
           "body": {
-            "ko": "제이알글로벌리츠 사태에서 드러났듯 해외 자산 재감정평가나 환헤지 부담, 단기 차입금 만기 집중 등은 특정 리츠의 신용 이슈로 이어질 수 있다. 사태 이후 시장에서는 자산 유형보다 스폰서의 신용도와 운용사의 자본 리사이클링 역량에 따라 주가 향방이 갈리고 있어, 운용사 역량이 종목 간 차별화의 핵심 요인이 됐다.",
-            "en": "As demonstrated by the JR Global REIT incident, overseas asset reappraisals, currency hedging burdens, and concentrated short-term debt maturities can trigger credit issues at individual REITs. Since the incident, the market has shown that share price direction is determined more by sponsor credit quality and the asset manager's capital recycling capability than by asset type, making manager competence a key factor differentiating individual REITs."
+            "ko": "신주 발행에 따른 희석 효과와 잠재 매도 물량이 아직 소화되지 않은 상태에서 금리 우려가 겹쳐 매도세가 강해졌다. 2026년 국정감사 자료에 따르면 리츠 유상증자 25건 중 23건에서 이사회 결의 전일과 최종발행가 확정일 사이에 주가가 내렸고 평균 하락률은 10%였다. 추가 증자가 나오면 주가 변동성이 커질 수 있다.",
+            "en": "Selling intensified as interest rate concerns compounded the still-unabsorbed dilution from new share issuance and the overhang of potential selling. According to 2026 National Assembly audit materials, share prices fell between the day before the board resolution and the final issue-price date in 23 of 25 REIT rights offerings, by 10% on average. Further offerings could raise share price volatility."
           }
         },
         {
           "title": {
-            "ko": "자산 유형별 양극화",
-            "en": "Divergence Across Asset Types"
+            "ko": "자산별·종목별 편차",
+            "en": "Divergence by asset and by company"
           },
           "body": {
-            "ko": "오피스·주택 등 전통 자산과 물류센터·데이터센터 등 구조적 성장 자산 간 임대 수요 회복 속도가 다르게 나타나고 있다. 금리 인하가 진행되더라도 상업용 부동산 시장 침체와 자산별 양극화가 이어지고 있다는 점에서 2026년 리츠업계 전반의 실적이 전년 수준을 유지하는 데 그칠 것이라는 지적도 있어, 자산 포트폴리오 구성에 따른 실적 차이가 지속될 가능성이 있다.",
-            "en": "The pace of leasing demand recovery differs between traditional asset classes such as office and residential, and structurally growing segments such as logistics centers and data centers. Even as rate cuts proceed, continued stagnation in the commercial real estate market and divergence by asset type have led some to note that overall REIT sector earnings in 2026 may merely hold flat versus the prior year, suggesting performance gaps tied to portfolio composition could persist."
+            "ko": "서울 도심과 경기 일부 지역에서 오피스 공실률이 올랐고, 핵심 입지일수록 공실이 빠르게 해소되는 것으로 나타났다. 인프라 쪽에서는 맥쿼리인프라가 부산항 컨테이너 부두 운영사 비엔씨티의 후순위대출 이자 축소로 상반기 배당을 줄였다. 비리츠 종목인 자이에스앤디는 2026년 3분기 영업이익이 전년 동기 대비 72.7% 줄어 리츠와는 다른 실적 변수를 안고 있다.",
+            "en": "Office vacancy rates rose in central Seoul and parts of Gyeonggi, though vacancies were resolved faster in core locations. In infrastructure, Macquarie Korea Infrastructure Fund cut its first-half dividend after the interest on its subordinated loan to BNCT, the operator of a Busan port container terminal, was reduced. Xi S&D, a non-REIT name, saw operating profit fall 72.7% year on year in the third quarter of 2026, so it carries earnings drivers different from those of the REITs."
           }
         }
       ],
       "sources": [
-        "https://www.newspim.com/news/view/20260818001200",
-        "https://www.shinhangroup.com/kr/archive/insight/extend/detail/32904",
-        "https://seoulpi.io/reitsfocus/article/00510584645785513984",
-        "https://m.joseilbo.com/news/view.htm?newsid=571914",
-        "https://m.news.nate.com/view/20260106n25640"
+        "https://www.bloter.net/news/articleView.html?idxno=651026",
+        "https://view.asiae.co.kr/en/article/2026110316075011313",
+        "https://www.pinpointnews.co.kr/news/articleView.html?idxno=503955",
+        "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202606221446529810262",
+        "https://m.news.nate.com/view/20260106n25640",
+        "https://www.samsungpop.com/common.do?cmd=down&contentType=application%2Fpdf&inlineYn=Y&saveKey=research.pdf&fileName=2020%2F2025120914315006K_02_01.pdf",
+        "https://news.nate.com/view/20261009n00171"
       ],
       "sector": "부동산·리츠",
-      "generatedAt": "2026-10-08 18:49"
+      "generatedAt": "2026-11-21 18:05"
     },
     "철강·금속": {
       "lead": {
-        "ko": "비철금속(아연·동)은 가격 강세에 힘입어 실적이 개선되는 반면, 판재·봉형강 중심의 철강 부문은 중국산 공급과잉과 건설 경기 부진의 이중 부담 속에서 완만한 회복을 모색하는 이원화된 흐름을 보이는 업종이다.",
-        "en": "Within the steel and metals sector, the non-ferrous segment (zinc, copper) is benefiting from firm commodity prices, while the steel segment centered on flat and long products seeks a gradual recovery under the dual pressure of Chinese oversupply and sluggish construction demand, producing a bifurcated industry picture."
+        "ko": "철강·금속 업종은 2026년 3분기 공시 기준으로 상위 12개 종목의 매출이 모두 늘었지만 영업이익은 종목별로 엇갈렸고, 건설 수요 부진과 환율 하락 속에 전방산업별 차별화가 뚜렷해진 업종이다.",
+        "en": "In Q3 2026 filings, revenue rose at all 12 of the sector's largest stocks, but operating profit diverged by company, and weak construction demand and a lower won-dollar rate have sharpened the gap between end-markets."
       },
       "overview": {
-        "ko": "철강·금속 업종은 철광석을 원료로 한 판재·봉형강·강관 등 철강 제품군과 아연·동·알루미늄 등 비철금속 제련 및 가공 제품군을 모두 포괄하는 소재 산업이다. 전체 상장 종목 수는 많지만 개별 기업 규모는 크지 않아 전체 증시에서 차지하는 비중은 제한적인 업종에 속한다. 다만 업종 내에서는 비철금속 제련 대표주인 고려아연이 압도적인 규모로 업종 전체 시가총액을 견인하는 구조이며, 현대제철이 종합 철강업체로서 그 뒤를 잇고 있다. 자동차·조선·건설·방산 등 전방산업에 소재를 공급하는 역할을 하기 때문에 경기 민감도가 높고, 국제 원자재 가격과 환율 변동에 직접적으로 노출되는 특성을 지닌다. 최근에는 중국의 구조적 공급과잉과 미국의 통상 정책 변화가 업종 전반의 수익성에 동시에 영향을 미치는 변수로 부각되고 있다.",
-        "en": "The steel and metals sector encompasses both iron-ore-based steel products such as flat steel, long products, and steel pipes, as well as non-ferrous smelting and processing of zinc, copper, and aluminum. While the sector includes a large number of listed companies, most are relatively small in scale, leaving the sector's overall weight in the broader market limited. Within the sector, however, Korea Zinc, the leading non-ferrous smelter, overwhelmingly dominates sector market capitalization, followed by Hyundai Steel as the representative integrated steelmaker. The sector supplies core materials to automotive, shipbuilding, construction, and defense industries, making it highly sensitive to the economic cycle and directly exposed to global commodity price and currency fluctuations. Recently, China's structural oversupply and shifting U.S. trade policy have emerged as key variables simultaneously affecting profitability across the sector."
+        "ko": "철강·금속 업종에는 철강, 비철금속 제련, 구리·알루미늄 가공, 특수합금 소재 기업이 함께 분류돼 있다. 상장 종목 수는 업종 가운데 중간 수준이다. 전체 시장에서 차지하는 비중은 1%를 밑돈다. 시가총액은 고려아연에 크게 쏠려 있어 업종 시가총액의 절반가량이 한 종목에 집중돼 있고, 현대제철이 그 뒤를 잇는다. 사업 성격이 다른 종목이 섞여 있어 같은 분기에도 종목별 실적 방향이 다르게 나타나는 점이 이 업종의 특징이다.",
+        "en": "The Steel & Metals sector groups steelmakers, non-ferrous smelters, copper and aluminum processors, and specialty alloy producers. The number of listed stocks is mid-range among sectors. The sector's share of the total market is below 1%. Market capitalization is heavily skewed toward Korea Zinc, which accounts for roughly half of the sector total, followed by Hyundai Steel Company. Because the constituents run very different businesses, earnings can move in opposite directions within the same quarter."
       },
       "structure": {
-        "ko": "밸류체인 상류에는 철광석과 비철금속 정광을 원료로 하는 제련·제강 단계가 있으며, 고려아연과 영풍이 비철금속 제련을, 현대제철이 고로와 전기로를 병행하는 종합 제철을 담당한다. 중류에는 열연·냉연·후판 등 판재류를 생산하는 동국제강·KG스틸, 강관과 선재를 가공하는 세아제강·고려제강, 표면처리강판을 만드는 TCC스틸이 위치하며, 포스코엠텍은 원료 및 부원료 가공 영역에서 포스코그룹 공급망에 속해 있다. 비철금속 쪽에서는 삼아알미늄이 이차전지·전자 소재용 알루미늄박을, 에이치브이엠이 첨단 산업용 고순도 금속 소재를 생산하며, 풍산은 동 압연 제품과 방산용 탄약 사업을 겸하는 독특한 포지션을 갖고 있다. 업종 집중도는 비철금속 쪽이 상대적으로 높아 고려아연 한 종목이 업종 시가총액의 절반 이상을 차지하는 반면, 철강 쪽은 현대제철을 중심으로 다수의 중소형 판재·강관 업체들이 분포하는 분산된 구조를 보인다.",
-        "en": "At the upstream end of the value chain, smelting and steelmaking convert iron ore and non-ferrous concentrates into intermediate materials, with Korea Zinc and Youngpoong handling non-ferrous smelting and Hyundai Steel operating an integrated steel business combining blast furnaces and electric arc furnaces. In the midstream, Dongkuk Steel and KG Steel produce flat products such as hot-rolled, cold-rolled, and plate steel, while SeAH Steel and Kiswire process pipes and wire products and TCC Steel makes surface-treated steel sheet; POSCO M-Tech operates within the POSCO group's raw and auxiliary material supply chain. On the non-ferrous side, Sama Aluminium produces aluminum foil for batteries and electronics and HVM makes high-purity specialty metals for advanced industries, while Poongsan occupies a distinctive position combining copper rolled products with a defense ammunition business. Sector concentration is notably higher on the non-ferrous side, where Korea Zinc alone accounts for more than half of sector market capitalization, whereas the steel side shows a more dispersed structure with numerous small and mid-cap flat-product and pipe makers surrounding Hyundai Steel."
+        "ko": "원료에 가까운 상류에는 비철금속 제련 기업이 있다. 고려아연은 국내 최대 비철금속 기업이고, 영풍은 경북 봉화의 석포제련소에서 아연괴를 생산한다. 철강 부문에서는 현대제철이 판재류와 봉형강을, 동국제강이 봉형강과 후판을, KG스틸이 냉연강판과 표면처리강판을 만든다. 포스코엠텍은 철강제품 포장과 철강부원료를 맡는다. 풍산은 구리를 가공하는 신동 사업과 탄약을 만드는 방산 사업을 함께 운영한다. 고려제강은 와이어로프와 특수선재를, 삼아알미늄은 알루미늄박을, 에이치브이엠은 진공 용해 특수합금 잉곳과 빌렛을 공급한다.",
+        "en": "Upstream, close to raw materials, sit the non-ferrous smelters: Korea Zinc is Korea's largest non-ferrous metals company, and Youngpoong produces zinc ingots at its Seokpo smelter in Bonghwa, North Gyeongsang. In steel, Hyundai Steel Company makes flat products and long products, Dongkuk Steel Mill makes long products and heavy plate, and KG Dongbusteel makes cold-rolled and surface-treated steel sheet. POSCO M-Tech handles steel product packaging and steel by-materials. Poongsan runs a copper-processing business alongside a defense business that makes ammunition. Kiswire makes wire rope and specialty wire rod, Sama Aluminium makes aluminum foil, and HVM supplies vacuum-melted specialty alloy ingots and billets."
       },
       "trends": {
-        "ko": "2026년 2분기 공시 기준으로 업종 내 실적은 비철금속과 철강 간 뚜렷한 온도차를 드러냈다. 고려아연은 전년 동기보다 높은 귀금속 가격과 제련 마진 개선에 힘입어 2분기 매출 6조 3,726억원, 영업이익 5,871억원을 기록하며 전년 동기 대비 각각 66.6%, 126.8% 증가하는 큰 폭의 성장을 보였다. 반면 현대제철은 봉형강 판매 확대와 제품가 상승으로 전분기 대비 실적이 개선됐음에도 전년 동기 대비로는 영업이익이 43.3% 줄어드는 부진을 겪었는데, 이는 공급 과잉과 수출 여건 악화에 따른 수익성 둔화가 반영된 결과로 풀이된다. 동국제강, KG스틸, 세아제강은 매출과 영업이익이 두 자릿수대로 동반 성장하며 상대적으로 양호한 흐름을 보였고, 고려제강은 매출이 1.6% 늘었지만 영업이익이 73.8% 줄었다. 업종 전반으로는 신용평가사들이 중국발 공급과잉 우려를 들어 철강업 전망을 '부정적'으로 제시한 반면, 비철금속은 전기화와 데이터센터 투자로 산업용 금속 소비가 유지될 것이라는 기대를 받아 대조를 이뤘다.",
-        "en": "Based on second-quarter 2026 disclosures, performance within the sector diverged sharply between the non-ferrous and steel segments. Korea Zinc posted quarterly revenue of KRW 6.3726 trillion and operating profit of KRW 587.1 billion, up 66.6% and 126.8% year-on-year respectively, driven by precious metal prices that remained above year-earlier levels and improved smelting margins. Hyundai Steel, by contrast, saw operating profit fall 43.3% year-on-year despite a quarter-on-quarter improvement from stronger long-product sales and price increases, a decline attributed to profitability pressure from oversupply and deteriorating export conditions. Dongkuk Steel, KG Steel, and SeAH Steel all achieved double-digit growth in both revenue and operating profit, showing relatively favorable momentum, while Kiswire's revenue rose 1.6% but its operating profit plunged 73.8%. Across the broader sector, credit rating agencies assigned a 'negative' outlook to the steel industry, citing Chinese oversupply, while non-ferrous metals benefited from expectations that electrification and data center investment would sustain industrial metal consumption."
+        "ko": "2026년 3분기 공시 기준으로 상위 12개 종목의 매출은 모두 전년 동기 대비 늘었고 증가율은 한국철강 1.4%에서 에이치브이엠 96.1%까지 분포했다. 영업이익은 풍산이 155.6%, SIMPAC이 77.8%, 포스코엠텍이 45.1%, 동국제강이 22.0% 늘었다. 반면 고려아연은 48.2%, KG스틸은 53.9%, 현대제철은 6.5% 줄었고, 삼아알미늄은 흑자로 전환했다. 고려제강은 적자로 전환했고 에이치브이엠·영풍·한국철강은 적자가 이어졌다. 고려아연은 2분기 평균 1,502원이던 원·달러 환율이 9월 말 1,352.9원으로 낮아진 점이 부담이 됐다, 영업이익률은 2021년 이후 분기 기준 최저 수준으로 떨어졌다. 현대제철의 연결 영업이익은 2분기보다 51% 늘었고, 자동차강판 등 고부가가치 제품 비중 확대와 제품가격 인상이 이를 뒷받침했다.",
+        "en": "In Q3 2026 filings, revenue rose year on year at all 12 of the sector's largest stocks, with growth ranging from 1.4% at Kisco to 96.1% at HVM. Operating profit rose 155.6% at Poongsan, 77.8% at SIMPAC, 45.1% at POSCO M-Tech and 22.0% at Dongkuk Steel Mill. By contrast, it fell 48.2% at Korea Zinc, 53.9% at KG Dongbusteel and 6.5% at Hyundai Steel Company, while Sama Aluminium returned to profit. Kiswire swung to an operating loss, and HVM, Youngpoong and Kisco kept posting losses. At Korea Zinc, the won-dollar rate fell from a Q2 average of 1,502 won to 1,352.9 won at the end of September, and its operating margin dropped to the lowest quarterly level since 2021. At Hyundai Steel Company, consolidated operating profit rose 51% from Q2, supported by a higher share of high-value products such as automotive steel and by price increases."
       },
       "outlook": {
-        "ko": "철강 부문은 중국과 일본산 열연 및 후판에 대한 반덤핑 관세와 가격약속제도(MIP)가 국내 철강가격의 하단을 지지하고 있으며, 원료탄 가격이 하반기 들어 안정화되면서 투입원가 부담이 다소 완화되는 흐름이 관전 포인트로 꼽힌다. 현대제철은 하반기에는 건설 시황 회복과 AI·에너지 소재 판매 확대로 수익성 개선을 기대하고 있으며, 데이터센터·반도체·원전용 고부가 철강재로 공급처를 넓히는 전략을 병행하고 있다. 다만 중국은 조강 생산량이 전년 대비 약 3% 줄어들 전망인데도 완제품 수출이 5월과 6월 두 달 연속 1,000만 톤을 웃돌아, 중국산 수출 물량은 국내 업황의 부담 요인으로 남아 있다. 비철금속 부문은 수급이 빠듯한 가운데 아연 가격이 강세를 이어가고 있어 고려아연을 중심으로 상대적으로 양호한 실적 흐름이 예상되지만, 금·은 등 귀금속 가격 변동성과 원화 강세는 분기별 실적 편차를 키울 수 있는 변수로 남아 있다. 정부가 추진하는 철강 고도화 방안과 K-스틸법 등 공급과잉 품목 설비조정 및 저탄소 전환 정책의 실행 속도도 중장기 업황 개선 여부를 가를 핵심 관전 포인트다.",
-        "en": "In the steel segment, anti-dumping tariffs and the minimum import price system applied to Chinese and Japanese hot-rolled and plate products are supporting a floor under domestic steel prices, while stabilizing coking coal costs in the second half are easing input cost pressure—developments worth monitoring closely. Hyundai Steel expects profitability to improve in the second half on construction demand recovery and expanded sales of AI and energy-related steel materials, pursuing a parallel strategy of broadening supply into data centers, semiconductor plants, and nuclear power applications. In China, however, crude steel output is projected to fall about 3% year-on-year, yet finished steel exports exceeded 10 million tons for two consecutive months in May and June, leaving Chinese export volumes a lingering burden on the domestic market. In non-ferrous metals, continued tightness in zinc supply-demand conditions points to relatively favorable earnings momentum centered on Korea Zinc, though volatility in gold and silver prices along with a stronger won remain variables that could widen quarterly earnings swings. The pace of execution of government-led steel industry upgrade measures and the K-Steel Act—aimed at adjusting oversupplied capacity and accelerating low-carbon transition—also stands as a key factor determining the sector's medium-term trajectory."
+        "ko": "포스코의 마케팅전략실장은 3분기 컨퍼런스콜에서 2027년에도 국내 철강 수요가 완만하게 회복하겠지만 산업별 차별화는 더 뚜렷해질 것이라고 밝혔다. 자동차와 조선 등 제조업을 중심으로 수요 개선이 기대되는 반면, 건설용 철근과 형강은 건설경기 침체로 회복이 더디다. 동국제강은 반도체 공장과 AI 데이터센터 등 대형 프로젝트 수요에 맞춰 봉형강 생산과 판매를 늘렸다. 정책 측면에서는 중국산 열연후판에 가격 인상 약속에 참여하지 않은 수출자 기준 최대 34.10%의 반덤핑 관세가 5년간 부과된다. 중국은 2026년 1월 1일부터 약 300여 개 철강 품목을 수출허가 관리 대상으로 편입했다. 고려아연은 금속가격과 환율이 안정되고 게르마늄 본격 생산으로 제품 포트폴리오가 넓어지면 수익성이 강화될 것으로 내다본다.",
+        "en": "At its Q3 earnings call, POSCO's head of marketing strategy said domestic steel demand should recover gradually in 2027, but that differences between industries will become more pronounced. Demand is expected to improve mainly in manufacturing such as autos and shipbuilding, while rebar and sections for construction recover slowly because of the construction downturn. Dongkuk Steel Mill expanded long-product production and sales to match demand from large projects such as semiconductor plants and AI data centers. On policy, anti-dumping duties of up to 34.10% will apply for five years to Chinese hot-rolled plate exporters that did not join the price undertaking. China brought roughly 300 steel product categories under export-license control from January 1, 2026. Korea Zinc expects profitability to strengthen once metal prices and exchange rates stabilize and full-scale germanium production broadens its product portfolio."
       },
       "risks": [
         {
           "title": {
-            "ko": "중국발 공급과잉 지속",
-            "en": "Persistent Chinese Oversupply"
+            "ko": "건설 경기 부진과 내수 수요",
+            "en": "Construction downturn and domestic demand"
           },
           "body": {
-            "ko": "내수 시장 침체로 인해 값싼 중국산 제품이 해외로 유입되면서 국내 철강사들은 가격과 수급 측면에서 어려움을 겪어왔고, 이러한 기조는 지속될 것으로 보인다. 중국 정부의 구조조정 실행 속도가 더딜 경우 국내 철강업체들의 가격 협상력 회복이 지연될 수 있다.",
-            "en": "As China's weak domestic market pushes low-priced Chinese products into overseas markets, domestic steelmakers have faced difficulties on both price and supply-demand fronts, and this trend appears set to continue. If the pace of China's structural adjustment remains slow, the recovery of pricing power for domestic steelmakers could be delayed."
+            "ko": "현대제철은 계절적 비수기와 건설 경기 침체로 판재류와 봉형강 판매가 모두 부진했다. 3분기 별도 영업이익은 123억원으로 전년 동기 대비 73.9% 줄었고, 1~3분기 누적 별도 영업손실은 491억원으로 적자 폭이 커졌다. 건설용 철강재 수요 회복이 늦어지면 봉형강 비중이 높은 기업의 수익성 개선은 제한될 수 있다.",
+            "en": "At Hyundai Steel Company, sales of both flat and long products were weak amid the seasonal off-peak and the construction slump. Standalone operating profit in Q3 was 12.3 billion won, down 73.9% year on year, and the cumulative standalone operating loss for the first three quarters widened to 49.1 billion won. If demand for construction steel recovers late, margin improvement could be limited for companies with a high share of long products."
           }
         },
         {
           "title": {
-            "ko": "건설 경기 부진에 따른 수요 둔화",
-            "en": "Demand Slowdown from Weak Construction Activity"
+            "ko": "환율·금속가격 변동과 고려아연의 투자·재무 부담",
+            "en": "Currency and metal price swings, and Korea Zinc's investment and financing burden"
           },
           "body": {
-            "ko": "철근, 형강 등 건설용 철강재는 국내 건설 수주 회복 지연의 직접적인 영향을 받는다. 현대제철의 경우 2분기 영업이익이 전년 동기 대비 43.3% 감소하며 건설 시황 침체의 영향을 실적으로 확인시켰고, 하반기 회복 여부가 불확실성으로 남아 있다.",
-            "en": "Construction-related steel products such as rebar and shapes are directly affected by delays in the recovery of domestic construction orders. Hyundai Steel's second-quarter operating profit fell 43.3% year-on-year, confirming the impact of weak construction conditions on earnings, and whether a recovery materializes in the second half remains uncertain."
+            "ko": "고려아연은 달러 결제 비중이 높아 환율 하락과 귀금속 가격 약세가 수익성에 불리하게 작용했다. 총차입금은 8조 1,654억원으로 늘었고 이자보상배율은 1분기 13.9배에서 3분기 2.0배로 떨어졌다. 영풍·MBK파트너스와의 경영권 분쟁이 길어지면서 자문 비용 등 지급수수료 부담도 커졌다.",
+            "en": "Korea Zinc has a high share of dollar-denominated sales, so the lower won-dollar rate and weaker precious metal prices weighed on profitability. Gross borrowings rose to 8.1654 trillion won, and the interest coverage ratio fell from 13.9x in Q1 to 2.0x in Q3. The prolonged control dispute with Youngpoong and MBK Partners has also raised fees for legal and advisory services."
           }
         },
         {
           "title": {
-            "ko": "비철금속 가격 및 환율 변동성",
-            "en": "Non-Ferrous Price and Currency Volatility"
+            "ko": "비용 부담 확대와 소형주 적자",
+            "en": "Rising cost burdens and losses at smaller companies"
           },
           "body": {
-            "ko": "고려아연을 비롯한 비철금속 업체는 금·은·아연 등 국제 원자재 가격과 원화 환율 변동에 실적이 민감하게 반응한다. 실제로 아연 가격이 전분기보다 10% 오른 분기에도 은과 금 가격이 각각 19%, 5% 내리고 원화가 강세를 보이면서 전분기 대비 영업이익 감소 요인으로 지목된 바 있어, 분기별 실적 변동성이 커질 수 있다.",
-            "en": "Non-ferrous producers including Korea Zinc have earnings highly sensitive to international commodity prices for gold, silver, and zinc as well as won exchange rate movements. Indeed, even in a quarter when zinc prices rose 10% quarter-on-quarter, silver and gold fell 19% and 5%, respectively, and a stronger won was cited as a factor reducing operating profit from the prior quarter, suggesting potential for wider quarterly earnings volatility."
+            "ko": "업계에서는 2027년부터 늘어나는 탄소배출권·에너지 비용 부담과 환율 하락으로 경영환경의 변동성이 커질 것으로 본다. 2026년 3분기 공시 기준으로 에이치브이엠·영풍·한국철강은 영업손실이 이어졌고 고려제강은 적자로 전환했다. 비용이 늘어나는 국면에서는 이처럼 적자 기업의 부담이 더 커질 수 있다.",
+            "en": "Industry officials expect volatility to rise because of carbon-credit and energy costs that increase from 2027 and a weaker exchange rate. In Q3 2026 filings, HVM, Youngpoong and Kisco kept posting operating losses, and Kiswire swung to a loss. As costs rise, the burden on these loss-making companies could grow."
           }
         }
       ],
       "sources": [
-        "https://www.fntimes.com/html/view.php?ud=202608031543203404fa6b69a559_18",
-        "https://v.daum.net/v/WtbReb71Az?f=m",
-        "https://ko.tradingeconomics.com/commodity/zinc/news/531928",
-        "https://finance.thesmileinfo.com/2026/09/steel.html",
-        "https://www.seoul.co.kr/news/economy/2026/08/03/20260803500250",
-        "https://news.bizwatch.co.kr/article/market/2026/10/01/0007"
+        "https://news.jkn.co.kr/post/1070280",
+        "https://www.thebigdata.co.kr/view.php?ud=202611201008521614bbceadc3c9_23",
+        "https://www.thepublic.kr/news/articleView.html?idxno=325659",
+        "https://news.mtn.co.kr/article/2026110718333673509",
+        "https://www.specialtimes.co.kr/news/articleView.html?idxno=480420",
+        "https://www.snmnews.com/news/articleView.html?idxno=557321",
+        "https://www.mtnews.net/news/articleView.html?idxno=23680",
+        "https://www.newsway.co.kr/news/view?ud=2026110314472978790",
+        "https://thetracker.co.kr/View.aspx?No=4295531"
       ],
       "sector": "철강·금속",
-      "generatedAt": "2026-10-08 18:29"
+      "generatedAt": "2026-11-21 18:12"
     },
     "통신": {
       "lead": {
-        "ko": "5G 본업의 성장 정체를 AI 데이터센터·AX(AI 전환) 신사업으로 돌파하려는 흐름이 뚜렷해지는 업종으로, 통신 3사 중심의 과점 구조와 소형 장비·부가서비스 종목들로 구성된다.",
-        "en": "This sector shows a clear shift from mature 5G core businesses toward AI data center and AX (AI transformation) ventures as new growth engines, structured around an oligopoly of three major carriers alongside smaller equipment and value-added service names."
+        "ko": "이동통신 3사가 업종 대부분을 차지하는 통신 업종은 2026년 3분기에 2025년 해킹 사고와 일회성 비용의 기저효과로 SK텔레콤과 LG유플러스의 이익이 크게 늘었다. KT는 매출과 영업이익이 모두 줄어 업체별로 엇갈렸고, AI 데이터센터가 새 성장축으로 부각되고 있다.",
+        "en": "The telecom sector is dominated by the three mobile carriers. In the third quarter of 2026, SK Telecom and LG Uplus posted sharp profit gains on a low base created by the 2025 hacking incident and one-off costs. KT saw both revenue and operating profit decline, and AI data centers are emerging as the new growth axis."
       },
       "overview": {
-        "ko": "통신업은 이동통신·초고속인터넷·IPTV 등 유무선 네트워크 서비스를 제공하는 내수 기반 산업으로, 전형적인 방어주 성격을 지닌다. 국내 증시에서는 전체 시장 대비 비중이 작은 편이지만 SK텔레콤·KT·LG유플러스 3사가 업종 시가총액의 대부분을 차지하는 고도 집중 구조를 보인다. 나머지 종목들은 네트워크 장비, 케이블방송, 알뜰폰·기간통신 서비스 등 세부 영역에서 중소형 규모로 분포한다. 최근에는 5G 가입자 포화에 따라 통신 3사가 데이터센터·AI 등 신사업으로 사업 영역을 확장하는 'AICT' 전환이 핵심 화두로 떠오르고 있다.",
-        "en": "The telecom sector provides fixed and mobile network services including mobile communications, broadband internet, and IPTV, functioning as a domestically oriented, traditionally defensive industry. Within the Korean equity market it represents a relatively small share of overall capitalization, yet exhibits high concentration with SK Telecom, KT, and LG Uplus accounting for the bulk of sector value. The remaining constituents are smaller-cap names spread across network equipment, cable broadcasting, and budget mobile (MVNO) and fixed-line services. With mobile 5G subscriber growth maturing, the three major carriers' pivot toward data centers and AI—often termed the 'AICT' transformation—has emerged as the central industry theme."
+        "ko": "통신 업종은 이동통신·초고속인터넷·IPTV 등 통신 서비스와 이를 뒷받침하는 장비·인프라 기업으로 구성된다. 시가총액 규모는 전체 시장의 1%를 밑돌아 비중이 크지 않다. 업종 안에서는 SK텔레콤·KT·LG유플러스 3사가 시가총액의 대부분을 차지해 집중도가 매우 높다. 나머지 종목은 쏠리드·에치에프알·우리넷 같은 통신장비 업체, 위성방송의 스카이라이프, 케이블TV와 알뜰폰의 LG헬로비전 등 소형주가 중심이다. 가입자 기반의 안정적 현금흐름이 특징이지만, 내수 시장이 포화해 성장은 AI와 데이터센터 같은 신사업에 기대는 구조다.",
+        "en": "The telecom sector comprises communication services such as mobile, broadband and IPTV, along with the equipment and infrastructure companies that support them. Its market capitalization is below 1% of the overall Korean market, so its weight is modest. Within the sector, SK Telecom, KT and LG Uplus account for most of the market value, making concentration very high. The remaining names are mostly small caps, including equipment makers such as Solid, HFR and Woori-Net, satellite broadcaster KT Skylife, and cable TV and MVNO operator LG HelloVision. The sector is known for stable subscriber-based cash flow, but with the domestic market saturated, growth increasingly depends on new businesses such as AI and data centers."
       },
       "structure": {
-        "ko": "업종 밸류체인은 크게 망 운영 주체인 이동통신사(SK텔레콤·KT·LG유플러스), 유선방송·위성방송 플랫폼(스카이라이프·LG헬로비전), 네트워크 장비·인프라 공급업체(쏠리드·에치에프알·우리넷·와이어블)로 구분된다. 세종텔레콤은 국제전화·기업 통신과 알뜰폰(MVNO) 사업을 영위하는 기간통신사업자이며, 업종 분류상 함께 묶인 더즌은 은행 전산망 연동 기반의 디지털 금융 인프라 기업, 현대퓨처넷은 디지털 사이니지·기업 메시징 사업을 하는 현대백화점그룹 계열 ICT 기업이다. 시가총액 기준으로는 SK텔레콤·KT·LG유플러스 3사가 업종을 압도적으로 지배하며, 쏠리드·현대퓨처넷 등 중소형주는 상대적으로 규모가 작아 개별 이슈에 따른 주가 변동성이 크게 나타나는 구조다. 이 가운데 쏠리드와 에치에프알은 5G 중계기·기지국 장비를 공급해 통신사의 투자 사이클에 실적이 연동되는 특성을 지닌다.",
-        "en": "The sector's value chain can be divided into mobile network operators (SK Telecom, KT, LG Uplus), wired/satellite broadcasting platforms (Skylife, LG HelloVision), and network equipment and infrastructure suppliers (Solid, HFR, Woori-Net, Wiable). Sejong Telecom is a facilities-based carrier offering international calling, enterprise telecom, and budget mobile (MVNO) services, while Dozn, a digital finance infrastructure company linked to bank networks, and Hyundai Futurenet, a Hyundai Department Store Group ICT company focused on digital signage and enterprise messaging, are grouped in the sector by classification. By market capitalization, the three major carriers overwhelmingly dominate the sector, while smaller names like Solid and Hyundai Futurenet exhibit greater share-price volatility tied to company-specific developments. Among these, Solid and HFR supply 5G repeater and base station equipment, linking their earnings closely to the carriers' capital expenditure cycles."
+        "ko": "가치사슬의 중심에는 무선과 유선 통신망을 운영하는 SK텔레콤·KT·LG유플러스가 있다. 이들은 최근 AI 데이터센터(AIDC)와 AI 전환(AX) 사업으로 영역을 넓히고 있다. 통신망 아래 단계에서는 쏠리드가 중계기와 인빌딩 분산안테나시스템(DAS)을, 우리넷이 광 기반 패킷 전송망 장비(PTN)를, 에치에프알이 유선·무선 통신 장비를 공급한다. 와이어블은 공용무선기지국 구축과 운용·유지보수를 맡는 인프라 기업이다. 서비스 쪽에서는 스카이라이프가 위성방송 플랫폼을, LG헬로비전이 케이블TV와 알뜰폰을 기반으로 한 홈 사업을 운영하며, 3사의 자회사 구조와 맞물려 있다.",
+        "en": "At the center of the value chain are SK Telecom, KT and LG Uplus, which operate the wireless and wireline networks. They have recently expanded into AI data centers (AIDC) and AI transformation (AX) businesses. Further down the network chain, Solid supplies mobile repeaters and in-building distributed antenna systems (DAS), Woori-Net supplies optical packet transport network (PTN) equipment, and HFR supplies wireline and wireless telecom equipment. Wiable is an infrastructure company that builds, operates and maintains shared wireless base stations. On the service side, KT Skylife runs a satellite broadcasting platform and LG HelloVision runs a home business built on cable TV and MVNO services, both closely tied to the carrier groups."
       },
       "trends": {
-        "ko": "2026년 2분기 실적은 통신 3사 간 희비가 엇갈렸다. SK텔레콤은 2025년 유심 정보유출 사고에 따른 일회성 비용이 빠지면서 영업이익이 전년 동기 대비 67.3% 늘었고, AI 데이터센터 사업은 SKT의 사업 영역 가운데 가장 가파른 성장세를 보이고 있으며 2분기 AI DC 매출은 1,362억원으로 전년 동기 대비 92.5% 증가했다. LG유플러스는 영업이익 3,445억원으로 분기 기준 사상 최대치를 기록했으며 전년 동기 대비 13.1%, 전 분기 대비로는 26.5% 늘었다. 반면 KT는 2025년 2분기 강북본부 부지 개발사업의 분양 매출과 이익이 반영된 데 따른 역기저효과가 컸다며 매출과 영업이익이 각각 두 자릿수 감소했다. 다만 KT는 서비스수익이 1.8% 늘어난 5조 9,229억원을 기록해 본업 자체는 견조했음을 시사한다. 중소형주 중에서는 쏠리드·현대퓨처넷·더즌이 매출 성장을 이어간 반면, 장비 업체 에치에프알은 매출이 42.2% 줄고 영업손실로 돌아서 업체별 편차가 뚜렷했다.",
-        "en": "Second-quarter 2026 results diverged sharply among the three major carriers. SK Telecom's operating profit rose 67.3% year-on-year as one-off costs from the 2025 SIM data leak incident dropped out of the comparison, while its AI data center business posted the fastest growth among its segments, with AI DC revenue climbing 92.5% to 136.2 billion won. LG Uplus achieved a record quarterly operating profit of 344.5 billion won, up 13.1% year-on-year and 26.5% quarter-on-quarter. KT, by contrast, saw double-digit declines in both revenue and operating profit, which the company attributed to a high base from sales and profit on its Gangbuk headquarters site development booked in the second quarter of 2025, though its service revenue still grew 1.8% to 5.9229 trillion won, suggesting underlying resilience. Among smaller names, Solid, Hyundai Futurenet, and Dozn continued to grow revenue, while equipment maker HFR saw revenue fall 42.2% and swung to an operating loss, highlighting considerable dispersion across individual companies."
+        "ko": "2026년 3분기 통신 3사의 합산 영업이익은 1조 3,552억원으로, 2025년 같은 분기의 7,483억원보다 81.1% 늘었다. SK텔레콤은 3분기 공시 기준 영업이익이 5,523억원으로 전년 동기 대비 1,040.2% 늘었고, 2025년 3분기 영업이익이 해킹 사고 후 고객 감사 패키지 영향으로 484억원까지 줄었던 기저효과가 컸다. LG유플러스는 영업이익이 2,976억원으로 84.1% 늘었는데, 2025년 일회성 인건비에 따른 기저효과와 사업 구조 효율화가 배경이다. KT는 매출 6조 9,975억원(-1.8%), 영업이익 5,053억원(-6.1%)으로 3사 중 유일하게 동반 감소했으며, 고객 보상 프로그램이 7월까지 이어진 영향이 컸다. 중소형주에서는 쏠리드(+84.0%), 현대퓨처넷(+68.3%), 와이어블(+63.5%)의 영업이익이 늘었고, 세종텔레콤은 흑자 전환했다. 반면 LG헬로비전은 매출이 24.2% 줄고 영업이익이 2억원에 그쳤으며, 에치에프알은 영업손실 21억원으로 적자가 이어졌다.",
+        "en": "Combined operating profit of the three carriers in the third quarter of 2026 was KRW 1.3552 trillion, up 81.1% from KRW 748.3 billion a year earlier. SK Telecom's third-quarter filing shows operating profit of KRW 552.3 billion, up 1,040.2% year on year, and the low base was a major factor as its operating profit had fallen to KRW 48.4 billion in the third quarter of 2025 under the customer appreciation package after the hacking incident. LG Uplus reported operating profit of KRW 297.6 billion, up 84.1%, reflecting a base effect from one-off labor costs in 2025 and efficiency gains in its business structure. KT was the only one of the three to see both measures decline, with revenue of KRW 6.9975 trillion (-1.8%) and operating profit of KRW 505.3 billion (-6.1%), largely because its customer compensation program continued through July. Among smaller names, operating profit rose at Solid (+84.0%), Hyundai Futurenet (+68.3%) and Wiable (+63.5%), and Sejong Telecom returned to profit. LG HelloVision, by contrast, saw revenue fall 24.2% and operating profit of only KRW 200 million, while HFR remained loss-making with an operating loss of KRW 2.1 billion."
       },
       "outlook": {
-        "ko": "향후 업종의 관전 포인트는 통신 본업의 성장 정체를 AI 데이터센터·AX 신사업이 얼마나 보완하느냐에 있다. SK텔레콤은 AI DC 사업 전담 법인 'SK하이퍼'를 설립해 사업 확장에 속도를 내고 있고, LG유플러스는 파주에 대규모 AI 데이터센터를 건설 중이며, KT도 데이터센터 용량 확대를 계획하고 있어 3사 모두 신사업 투자가 본격화되는 국면이다. 아울러 5G 초기 투자분의 감가상각이 마무리 단계에 접어들며 통신사들의 비용 구조가 개선될 가능성도 주목할 변수다. 다만 통신 요금 인상이 제한적인 환경에서 신사업 투자 부담과 수익화 속도 간 균형이 관건이 될 것으로 보인다. 장비주의 경우 통신사의 5G 고도화 및 특화망(Private 5G) 투자 재개 여부가 실적 반등의 핵심 변수로 꼽힌다.",
-        "en": "The sector's key watch points going forward center on how effectively AI data center and AX ventures can offset stagnating growth in the core telecom business. SK Telecom has established a dedicated entity, 'SK Hyper,' to accelerate its AI DC expansion, LG Uplus is building a large-scale AI data center in Paju, and KT also plans to expand data center capacity, indicating that all three carriers are entering a phase of intensified new-business investment. The gradual completion of depreciation on early 5G capital expenditure is another variable worth monitoring, as it could structurally improve carriers' cost profiles. However, with limited room for tariff increases, balancing new-business investment burdens against monetization speed will remain a central challenge. For equipment makers, whether carriers resume 5G network upgrade and private 5G investment cycles will be a key determinant of any earnings rebound."
+        "ko": "과학기술정보통신부와 통신 3사는 2026년 12월 5G SA 전국 상용화를 추진하고 있다. AIDC는 3사가 공통으로 키우는 사업이다. LG유플러스의 3분기 AIDC 매출은 1,317억원으로 전년 동기 대비 27.7% 늘었고, SK텔레콤은 1,261억원으로 6.2% 늘었다. KT와 KT클라우드를 합산한 3분기 AX 매출은 3,933억원으로 9.8% 증가했다. 또한 KT는 AI 데이터센터를 2031년까지 1GW로 확대하는 계획을 내놓았다. 관전 포인트는 기저효과가 사라진 뒤에도 성장세가 이어질지 여부이며, 통신 본업의 수익성 유지와 AI 투자의 이익 전환이 핵심이다.",
+        "en": "The Ministry of Science and ICT and the three carriers are working toward a nationwide commercial launch of 5G SA in December 2026. AIDC is a business all three carriers are building. LG Uplus's third-quarter AIDC revenue was KRW 131.7 billion, up 27.7% year on year, and SK Telecom's was KRW 126.1 billion, up 6.2%. Combined AX revenue of KT and KT Cloud in the third quarter was KRW 393.3 billion, up 9.8%. KT has also set out a plan to expand its AI data center capacity to 1GW by 2031. The key question is whether growth can continue once the base effect fades, which depends on sustaining core telecom profitability and converting AI investment into earnings."
       },
       "risks": [
         {
           "title": {
-            "ko": "신사업 투자 부담과 수익화 지연",
-            "en": "New-Business Investment Burden and Monetization Delay"
+            "ko": "기저효과 소멸과 본업 성장 한계",
+            "en": "Fading base effect and limited core growth"
           },
           "body": {
-            "ko": "AI 데이터센터는 대규모 초기 투자가 선행되는 사업으로, 전력·냉각 인프라 확충에 상당한 자본이 소요된다. 투자 대비 수익화 속도가 기대에 미치지 못할 경우 통신사의 재무 부담으로 이어질 수 있다.",
-            "en": "AI data centers require substantial upfront capital investment, particularly for power and cooling infrastructure expansion. If monetization lags behind the pace of investment, this could translate into financial strain for the carriers."
+            "ko": "2026년 3분기 이익 증가의 상당 부분은 2025년 일회성 비용에 따른 기저효과다. KT의 3분기 가입자당 평균매출(ARPU)은 3만 4,394원으로 전년 동기 대비 2.6% 감소했다. 기저효과가 사라지면 이익 증가율이 둔화할 수 있다.",
+            "en": "A large part of the third-quarter 2026 profit increase reflects a base effect from one-off costs in 2025. KT's third-quarter average revenue per user (ARPU) was KRW 34,394, down 2.6% year on year. Profit growth could slow once the base effect disappears."
           }
         },
         {
           "title": {
-            "ko": "요금 규제 및 정책 변수",
-            "en": "Tariff Regulation and Policy Variables"
+            "ko": "보안 사고와 규제 부담",
+            "en": "Security incidents and regulatory burden"
           },
           "body": {
-            "ko": "통신 요금은 정부 정책과 여론에 민감해 임의로 인상하기 어려운 환경이 지속되고 있다. 판매장려금 담합 등 법적 리스크도 상존해 통신사들의 수익성 개선 속도를 제약할 수 있다.",
-            "en": "Telecom tariffs remain sensitive to government policy and public opinion, constraining carriers' ability to raise rates freely. Legal risks such as sales subsidy collusion disputes also persist, potentially limiting the pace of profitability improvement."
+            "ko": "2025년 4월 SK텔레콤에서 유심 정보 2,696만건이 유출됐고, 개인정보보호위원회가 부과한 과징금 1,348억원이 2025년 3분기 영업비용에 반영됐다. KT도 2025년 8월부터 불거진 무단 소액결제 사태로 고객 보상과 위약금 면제 부담을 졌다. 유사 사고가 재발하면 비용과 가입자 이탈이 다시 커질 수 있다.",
+            "en": "In April 2025, 26.96 million SIM records were leaked at SK Telecom, and a KRW 134.8 billion fine imposed by the Personal Information Protection Commission was booked as an operating expense in the third quarter of 2025. KT also bore customer compensation and early-termination fee waivers after the unauthorized micropayment incident that surfaced in August 2025. A recurrence of similar incidents could again raise costs and subscriber churn."
           }
         },
         {
           "title": {
-            "ko": "중소형 장비주의 실적 편차",
-            "en": "Earnings Dispersion Among Smaller Equipment Makers"
+            "ko": "AI 투자 수익화와 소형주 실적 변동",
+            "en": "AI investment payback and small-cap earnings volatility"
           },
           "body": {
-            "ko": "5G 장비 공급업체들은 통신사의 투자 사이클에 실적이 직접 연동돼 변동성이 크다. 실제로 동일 분기에도 매출·이익 추이가 기업별로 크게 엇갈려 개별 수주 상황에 대한 모니터링이 필요하다.",
-            "en": "5G equipment suppliers' earnings are directly linked to carriers' capex cycles, resulting in high volatility. Indeed, revenue and profit trends diverged sharply across companies even within the same quarter, underscoring the need to monitor individual order backlogs."
+            "ko": "AIDC 투자는 AI 투자를 실질적인 이익으로 연결하는 것이 관건이며, 매출 기여는 아직 제한적이다. 소형주도 실적 변동이 크다. 2026년 3분기 영업이익은 더즌이 35.5%, 우리넷이 91.8% 줄었고 에치에프알은 적자가 이어졌다.",
+            "en": "For AIDC, the key is converting AI investment into actual profit, and its revenue contribution is still limited. Small caps also show large earnings swings. In the third quarter of 2026, operating profit fell 35.5% at Dozn and 91.8% at Woori-Net, while HFR remained loss-making."
           }
         }
       ],
       "sources": [
-        "https://news.sktelecom.com/229015",
-        "https://bizhankook.com/articles/telco-ai-data-center-expansion.html",
-        "https://www.mt.co.kr/tech/2026/08/12/2026081214062485202"
+        "https://www.dailian.co.kr/news/view/1713272/%ED%86%B5%EC%8B%A0-3%EC%82%AC-3%EB%B6%84%EA%B8%B0-%EC%8B%A4%EC%A0%81-%ED%9D%AC%EB%B9%84SKTLG-2026",
+        "https://www.g-enews.com/article/ICT/2026/11/2026111009193921473d7a510102_1",
+        "https://supple.kr/news/cmwa190tsx72ual9podstdp1m",
+        "https://www.sidae.com/article/2026102515411414085",
+        "https://www.joongangenews.com/news/articleView.html?idxno=563005",
+        "https://www.newsinside.kr/news/articleView.html?idxno=5046149",
+        "https://v.daum.net/v/20251030122215121"
       ],
       "sector": "통신",
-      "generatedAt": "2026-10-08 18:29"
+      "generatedAt": "2026-11-21 18:05"
     },
     "항공·방산": {
       "lead": {
-        "ko": "지상방산 수출 확대와 항공 통합 재편이 동시에 진행되며 종목 간 실적 편차가 뚜렷한 업종이다.",
-        "en": "A sector marked by expanding land-defense exports alongside an aviation industry reshaped by consolidation, with notable earnings divergence across names."
+        "ko": "항공·방산은 2026년 3분기에 방산 수출 인도 일정이 뒤로 밀려 이익이 줄었고, 항공은 외형이 커지는 가운데 연료비 부담이 이어지는 업종이다.",
+        "en": "In the third quarter of 2026, defense earnings fell as export deliveries were pushed back, while airlines kept growing their top lines under continued fuel-cost pressure."
       },
       "overview": {
-        "ko": "항공·방산 업종은 지상·항공 무기체계를 생산하는 방산 기업군과 여객·화물을 운송하는 항공사군으로 구성된다. 한국 증시에서는 상장 종목 수가 많지 않지만 최근 몇 년간 방산 수출 확대에 힘입어 개별 기업의 시가총액이 빠르게 커진 업종이다. 방산 쪽은 한화그룹 계열사들이 지상·우주·시스템 영역에서 압도적 비중을 차지하고 있고, 항공 쪽은 대한항공과 아시아나항공의 기업결합이 진행 중이어서 산업 구조 자체가 재편되는 국면에 있다. 두 산업군 모두 정부 정책과 환율, 지정학적 변수에 민감하게 반응하는 특성을 공유한다. 전체 시장에서 차지하는 비중은 크지 않지만 상위 소수 종목으로의 집중도가 매우 높다는 점이 특징이다.",
-        "en": "The aerospace and defense sector comprises weapons-system manufacturers spanning land, air, and space domains, alongside passenger and cargo airlines. While the number of listed names in Korea is relatively small, individual market capitalizations have grown rapidly on the back of defense export expansion in recent years. On the defense side, Hanwha Group affiliates dominate the land, space, and systems segments, while the airline segment is undergoing structural reshaping amid the ongoing Korean Air–Asiana Airlines business combination. Both sub-sectors share sensitivity to government policy, foreign exchange rates, and geopolitical variables. Despite a modest overall market weight, concentration among a handful of leading names is exceptionally high."
+        "ko": "항공·방산 업종에는 지상무기·유도무기·항공기·위성을 만드는 방산 제조사와 항공운송 사업자가 함께 묶여 있다. 종목 수는 업종 가운데 적은 편이지만 시가총액 상위에 한화에어로스페이스, 대한항공, 한국항공우주 같은 대형주가 모여 있어 시장 내 존재감은 크다. 방산은 계약 이후 납품 시점에 매출이 잡히기 때문에 방산 계약은 납품 일정에 따라 매출 인식 시점이 달라져 실적 변동성이 크다. 한화시스템은 2026년 3분기 매출이 전년 동기 대비 45.6% 줄었지만 영업이익은 630.4% 늘어, 매출과 이익이 엇갈리는 모습을 보였다. 항공은 경기와 유가, 환율, 국제 정세의 영향을 동시에 받는 산업이다. 2026년 3분기 공시 기준으로 상위 12개 종목 가운데 매출이 늘어난 회사는 8곳, 영업이익이 늘어난 회사는 4곳이었다.",
+        "en": "The Aerospace & Defense sector groups defense manufacturers, which make land weapons, guided missiles, aircraft and satellites, with air transport operators. It has relatively few listed stocks, but large caps such as Hanwha Aerospace, Korean Air Lines and Korea Aerospace Industries rank near the top by market capitalization, so its presence in the market is significant. Defense revenue is booked at delivery, so quarterly earnings swing widely because the timing of revenue recognition follows delivery schedules. In the third quarter of 2026, Hanwha Systems' revenue fell 45.6% year on year while its operating profit rose 630.4%, so sales and profit moved in opposite directions. Airlines are affected simultaneously by the economy, oil prices, exchange rates and international affairs. Among the 12 largest stocks, 8 reported higher revenue and 4 reported higher operating profit in the third quarter of 2026, based on filings."
       },
       "structure": {
-        "ko": "방산 밸류체인은 완제품 체계종합(한화에어로스페이스, 한국항공우주, 현대로템), 전자·시스템 통합(한화시스템, LIG디펜스앤에어로스페이스), 위성·광학 부품(쎄트렉아이, 아이쓰리시스템), 특수차량 구동부품(SNT다이내믹스) 등으로 단계가 나뉜다. 한화에어로스페이스는 지상방산과 항공엔진, 발사체 사업을 아우르며 그룹 지배구조상 한화시스템·한화 등과 연계돼 있어 그룹 내 시너지가 가치사슬 전반에 작동한다. 항공 밸류체인은 대한항공과 아시아나항공의 풀서비스캐리어(FSC) 두 축과 제주항공 등 저비용항공사(LCC)로 구분되며, 대한항공은 완제기 부품 생산 및 항공기 MRO로 영역을 넓히고 있다. 산업 집중도 측면에서는 방산은 한화그룹 계열사 비중이 절대적으로 높고, 항공은 대한항공 중심의 통합이 진행되면서 집중도가 더욱 높아지는 구조로 전환되고 있다.",
-        "en": "The defense value chain spans end-system integration (Hanwha Aerospace, Korea Aerospace Industries, Hyundai Rotem), electronics and systems integration (Hanwha Systems, LIG Defense and Aerospace), satellite and optics components (SATREC Initiative, I3System), and specialty vehicle drivetrain components (SNT Dynamics). Hanwha Aerospace spans land-defense, aero-engine, and launch-vehicle businesses and is linked to Hanwha Systems and Hanwha Corp. under the group's governance structure, enabling intra-group synergies across the chain. The airline value chain divides between the two full-service carriers, Korean Air and Asiana Airlines, and low-cost carriers such as Jeju Air, with Korean Air expanding into aerostructure component production and aircraft MRO. In terms of concentration, Hanwha Group affiliates hold an overwhelmingly dominant share of defense, while airline concentration is rising further as Korean Air-led consolidation proceeds."
+        "ko": "방산에서 한화에어로스페이스는 지상방산과 항공우주, 현대로템은 철도·방산·플랜트, LIG디펜스앤에어로스페이스는 유도무기·감시정찰·지휘통제·통신을 주력으로 한다. 한국항공우주는 고정익·회전익 항공기, 민항기 구조물, 우주·위성 사업을 함께 운영하고, 한화시스템은 방산·ICT·우주 사업을 맡는다. SNT다이내믹스는 변속기·차축과 방산용 파워팩·총포류를, 쎄트렉아이는 위성시스템을 만들며, 한화는 방산과 화학·건설·조선·금융 등 여러 계열 사업을 가진 회사다. 이익 기여는 한쪽으로 쏠려 있어, 방산 4사의 3분기 합산 영업이익 감소분 약 4,210억원 가운데 한화에어로스페이스가 약 3,876억원, 92%를 차지했다. 항공운송에서는 대한항공이 여객과 화물, 방산을 함께 영위하고, 제주항공과 진에어는 저비용항공사로 여객 운송이 중심이다. 대한항공은 12월 17일 아시아나항공과의 통합 항공사 출범을 앞두고 있다.",
+        "en": "In defense, Hanwha Aerospace focuses on land defense and aerospace, Hyundai-Rotem on rail, defense and plant businesses, and LIG Defense&Aerospace on guided weapons, surveillance and reconnaissance, and command, control and communications. Korea Aerospace Industries operates fixed-wing and rotary-wing aircraft, commercial aircraft structures and space and satellite businesses, while Hanwha Systems runs defense, ICT and space businesses. SNT Dynamics makes transmissions, axles, and defense power packs and firearms, SatrecInitiativeCo develops satellite systems, and Hanwha is a group holding with defense, chemicals, construction, shipbuilding and finance affiliates. Earnings contribution is concentrated: Hanwha Aerospace accounted for about 387.6 billion won, or 92%, of the roughly 421 billion won decline in the four defense firms' combined third-quarter operating profit. In air transport, Korean Air Lines covers passenger, cargo and defense, while Jejuair and Jin Air are low-cost carriers centered on passenger service. Korean Air Lines is preparing for the launch of the combined carrier with Asiana Airlines on December 17."
       },
       "trends": {
-        "ko": "2026년 2분기 공시를 보면 방산 대형주의 실적 호조가 두드러진다. 한화에어로스페이스는 매출 9조 2,929억원, 영업이익 1조 3,655억원으로 전년 동기 대비 각각 47.2%, 57.9% 증가했고, 한화시스템도 영업이익이 209.9% 늘며 급성장을 보였다. 반면 한국항공우주와 현대로템은 매출이 늘었지만 영업이익은 각각 43.2%, 9.8% 줄었다. 수출에서는 한화에어로스페이스가 크로아티아에 천무 다연장로켓 18대를 수출했고, K9 자주포는 11개국에 1,200문 이상 수출된 데 이어 2026년 8월 미국과 스페인 수출도 성사되는 등 수출 지역 다변화가 이어지고 있다. 항공 부문에서는 대한항공이 매출은 늘었지만 영업손실로 돌아섰고, 아시아나항공과 제주항공도 영업손실이 이어져 항공사 전반의 수익성이 약해졌다.",
-        "en": "Second-quarter 2026 filings show pronounced earnings strength among large defense names. Hanwha Aerospace posted revenue of KRW 9.2929 trillion and operating profit of KRW 1.3655 trillion, up 47.2% and 57.9% year-on-year respectively, while Hanwha Systems saw operating profit surge 209.9%. In contrast, Korea Aerospace Industries and Hyundai Rotem grew revenue but saw operating profit decline 43.2% and 9.8%, respectively. On the export front, Hanwha Aerospace shipped 18 Chunmoo multiple rocket launchers to Croatia, and its K9 self-propelled howitzer has been exported to 11 countries with more than 1,200 units, followed by sales to the United States and Spain in August 2026, underscoring continued geographic diversification of defense exports. In aviation, Korean Air grew revenue but swung to an operating loss, and Asiana Airlines and Jeju Air also continued to post operating losses, pointing to weak profitability across the airline industry."
+        "ko": "방산 4사의 2026년 3분기 합산 매출은 9조 8,506억원이었고 합산 영업이익은 8,461억원으로 전년 동기 대비 33.2% 줄었다. 한화에어로스페이스는 영업이익이 4,520억원으로 47.2% 감소했고, 지상방산 영업이익은 5,725억원에서 217억원으로 줄었는데 폴란드 K9·천무 수출 물량의 인도가 4분기에 집중된 영향이다. 현대로템 영업이익은 11.0% 줄었고 LIG디펜스앤에어로스페이스는 24.6% 줄었으며, LIG는 R&D 비중이 3분기 기준 18.8%에서 24.5%로 높아졌다. 한국항공우주는 영업이익이 794억원으로 31.9% 늘었고, 9월부터 공군 납품을 시작한 KF-21 등에 힘입어 국내사업 매출이 83% 증가했다. 대한항공은 연결 기준 영업이익이 3,492억원으로 121.6% 늘었으며, 별도 기준으로 화물 매출은 1조 4,323억원으로 AI·반도체 관련 고부가가치 화물이 성장을 뒷받침했다. 저비용항공사인 제주항공과 진에어는 영업이익이 흑자로 전환했지만, 아시아나항공은 영업손실 1,824억원으로 적자가 이어졌다.",
+        "en": "The four defense firms' combined third-quarter 2026 revenue was 9.8506 trillion won, and combined operating profit was 846.1 billion won, down 33.2% year on year. Hanwha Aerospace's operating profit fell 47.2% to 452.0 billion won, and its land defense operating profit dropped from 572.5 billion won to 21.7 billion won because deliveries of Poland-bound K9 and Chunmoo exports were concentrated in the fourth quarter. Hyundai-Rotem's operating profit fell 11.0% and LIG Defense&Aerospace's fell 24.6%, with LIG's R&D share rising from 18.8% to 24.5% in the third quarter. Korea Aerospace Industries' operating profit rose 31.9% to 79.4 billion won, and domestic revenue grew 83%, helped by KF-21 deliveries to the air force that began in September. Korean Air Lines' consolidated operating profit rose 121.6% to 349.2 billion won, and on a standalone basis cargo revenue reached 1.4323 trillion won, supported by steady demand for high-value AI and semiconductor cargo. The low-cost carriers Jejuair and Jin Air returned to operating profit, while Asiana Airlines posted an operating loss of 182.4 billion won, extending its losses."
       },
       "outlook": {
-        "ko": "방산 부문은 유럽과 중동, 미국 등으로의 수출 다변화가 지속되는 가운데 노르웨이, 루마니아 등에서의 대형 입찰 결과가 향후 수주 모멘텀의 관전 포인트로 꼽힌다. 한화에어로스페이스는 K9 자주포 수출국을 30개국으로 늘리겠다는 목표를 제시해, 수출 실적이 더 쌓일 가능성이 있다. 항공 부문은 대한항공과 아시아나항공의 법인 통합이 2026년 12월로 예정돼 있고, 진에어·에어부산·에어서울의 LCC 통합도 뒤따를 예정이어서 통합에 따른 비용 절감과 노선 조정 효과가 중장기 관전 포인트가 된다. 다만 통합 시너지는 단기간에 실적에 반영되기보다 점진적으로 나타날 것으로 업계에서 언급되고 있어 통합 일정의 진행 상황을 지속적으로 확인할 필요가 있다. 위성·전자부품 계열 중소형주는 매출 성장세가 이어지고 있어 방산 공급망 저변 확대의 수혜 여부가 관찰 포인트다.",
-        "en": "In defense, continued export diversification toward Europe, the Middle East, and the United States is expected, with the outcomes of large tenders in Norway and Romania serving as key catalysts for order momentum. Hanwha Aerospace has set a target of expanding K9 howitzer export destinations to 30 countries, suggesting further growth in its export track record. In aviation, the corporate integration of Korean Air and Asiana Airlines is scheduled for December 2026, to be followed by the integration of low-cost carriers Jin Air, Air Busan, and Air Seoul, making cost-saving and route-rationalization effects from consolidation a medium-term watch point. However, integration synergies are generally expected to materialize gradually rather than immediately, warranting continued monitoring of the integration timeline. Smaller satellite and electronic-component names continue to post revenue growth, making their exposure to broader defense supply-chain expansion another point of observation."
+        "ko": "방산 업계는 4분기부터 폴란드 K9 자주포와 천무 인도가 본격화되면 3분기에 이연된 물량이 매출로 반영되어 지상방산 실적도 회복될 수 있다고 본다. 현대로템도 폴란드향 K2 전차 인도가 늘 것으로 기대되지만, 2차 계약 물량의 생산 일정이 일부 지연되어 납품 정상화 속도가 변수다. 수주잔고 회복의 열쇠는 신규 계약이며, 한화에어로스페이스는 폴란드 K9 3차 계약과 UAE·사우디아라비아·이라크의 K9·천무 사업을 수주 후보로 본다. 한국항공우주는 누적 신규 수주가 연간 목표의 21.2%에 그쳐 인도네시아 KF-21 수출과 LAH 후속 양산 계약이 관건이다. 한 증권사 보고서는 2027년 안에 수주잔고의 변곡점이 나타나고 2028년에 회복할 것으로 예상했다. 항공에서는 12월 17일 대한항공과 아시아나항공의 통합 출범과 전통적인 항공화물 성수기인 4분기의 화물 수요가 관전 포인트다.",
+        "en": "The defense industry expects that once deliveries of K9 howitzers and Chunmoo to Poland pick up from the fourth quarter, volumes deferred from the third quarter can be booked as revenue and land defense earnings could recover. Hyundai-Rotem is also expected to benefit from larger K2 tank deliveries to Poland, but the pace of delivery normalization is a variable because production of the second-contract volumes has been partly delayed. New contracts are the key to rebuilding order backlogs, and Hanwha Aerospace is eyeing a third Polish K9 contract and K9 and Chunmoo projects in the UAE, Saudi Arabia and Iraq. For Korea Aerospace Industries, cumulative new orders reached only 21.2% of the annual target, so KF-21 exports to Indonesia and a follow-on LAH production contract are pivotal. One brokerage report expects the order backlog to hit an inflection point within 2027 and recover in 2028. In airlines, the December 17 launch of the combined Korean Air Lines and Asiana Airlines carrier and cargo demand in the fourth quarter, the traditional peak season are the points to watch."
       },
       "risks": [
         {
           "title": {
-            "ko": "수주 일정 지연 리스크",
-            "en": "Order Timing and Delay Risk"
+            "ko": "신규 수주 부진과 수주잔고 감소",
+            "en": "Weak new orders and shrinking backlogs"
           },
           "body": {
-            "ko": "대형 방산 수주는 상대국 정부의 예산·입찰 절차에 따라 일정이 변동되기 쉽다. 루마니아 보병전투차량 사업처럼 예상보다 지연되는 사례가 있어 분기별 실적 변동성을 키울 수 있다.",
-            "en": "Large defense contracts are susceptible to shifting timelines tied to counterpart governments' budget and procurement processes. Cases such as the delayed Romanian infantry fighting vehicle program illustrate how such slippage can amplify quarter-to-quarter earnings volatility."
+            "ko": "2026년 10월 말까지 1,000억원 이상 해외 무기 수출 계약은 6건, 4조 4,000억원으로 2025년 약 17조원의 4분의 1 수준이었다. 방산 4사의 3분기 말 합산 수주잔고는 약 95조 3,000억원으로 2025년 말보다 5.9% 줄었다. 대형 계약 시점이 늦어지면 중장기 매출 가시성이 약해질 수 있다.",
+            "en": "Overseas arms export contracts of 100 billion won or more totaled 6 deals worth 4.4 trillion won through the end of October 2026, about a quarter of the roughly 17 trillion won in 2025. The four defense firms' combined backlog at the end of the third quarter was about 95.3 trillion won, down 5.9% from the end of 2025. If large contracts are delayed, medium-term revenue visibility could weaken."
           }
         },
         {
           "title": {
-            "ko": "항공업 비용 상승 부담",
-            "en": "Rising Cost Burden in Aviation"
+            "ko": "수익성 변동: 인도 일정·환율·비용",
+            "en": "Margin volatility from delivery timing, FX and costs"
           },
           "body": {
-            "ko": "신기재 도입에 따른 감가상각비와 리스료, 원화 약세에 따른 연료비·정비비 부담이 항공사 수익성에 지속적인 압박 요인으로 작용하고 있다. 특히 LCC는 운임 방어력이 낮아 비용 상승 영향을 더 크게 받는 구조다.",
-            "en": "Rising depreciation and lease costs from new aircraft deliveries, combined with won depreciation-driven fuel and maintenance expenses, continue to pressure airline profitability. Low-cost carriers, with weaker fare-defense capability, are structurally more exposed to these cost increases."
+            "ko": "한화에어로스페이스는 환율 영향으로 영업이익이 약 10% 줄어드는 효과가 있었다고 설명했다. 대전사업장 복구 비용 약 300억원 등 일회성 비용 약 500억원도 3분기 실적에 반영됐다. 수출 인도 시점이 밀리거나 R&D 비용이 늘면 분기 이익이 크게 흔들릴 수 있다.",
+            "en": "Hanwha Aerospace explained that exchange rates reduced its operating profit by about 10%. One-off costs of about 50 billion won, including roughly 30 billion won for restoring the Daejeon site, were also reflected in third-quarter earnings. If export deliveries slip or R&D spending rises, quarterly profit can swing sharply."
           }
         },
         {
           "title": {
-            "ko": "통합 일정 불확실성",
-            "en": "Integration Schedule Uncertainty"
+            "ko": "항공: 연료비와 지정학 변수",
+            "en": "Airlines: fuel costs and geopolitics"
           },
           "body": {
-            "ko": "대한항공과 아시아나항공의 완전한 법인·브랜드 통합은 규제기관의 조건 이행과 마일리지 통합안 등 다수 절차를 거쳐야 완성되며 일정이 지연될 가능성이 있다. 통합 시너지가 실적에 본격 반영되는 시점도 지연될 수 있다.",
-            "en": "Full corporate and brand integration between Korean Air and Asiana Airlines requires completing multiple procedural steps, including regulatory condition fulfillment and mileage program unification, with the timeline subject to potential delay. The point at which integration synergies are fully reflected in earnings could likewise be pushed back."
+            "ko": "대한항공의 3분기 연료비는 별도 기준 1조 6,962억원으로 전년 동기보다 67.0% 증가했다. 회사는 4분기에도 중동 전쟁 장기화에 따른 연료비 부담이 지속될 것으로 전망했다. 아시아나항공의 적자 지속과 통합 과정의 비용도 부담 요인이다.",
+            "en": "Korean Air Lines' third-quarter fuel cost was 1.6962 trillion won on a standalone basis, up 67.0% year on year. The company expects the fuel cost burden from the prolonged Middle East war to continue in the fourth quarter. Asiana Airlines' continued losses and the costs of the integration process are additional burdens."
           }
         }
       ],
       "sources": [
-        "https://supple.kr/community/economy/135396260",
-        "https://www.hankookilbo.com/news/article/A2026100710340001232"
+        "https://newsway.co.kr/news/view?ud=2026110913435054844",
+        "https://www.pinpointnews.co.kr/news/articleView.html?idxno=490175",
+        "http://www.the-biz.co.kr/news/articleView.html?idxno=730895",
+        "https://www.thebigdata.co.kr/view.php?ud=2026101612414961250ecbf9426b_23",
+        "https://www.ddaily.co.kr/page/view/2026110711405301779",
+        "https://www.sidae.com/article/2026110413082914301",
+        "https://www.klnews.co.kr/news/articleView.html?idxno=323110",
+        "https://www.newsway.co.kr/news/view?ud=2026111914513054588",
+        "https://www.hankyung.com/koreamarket/consensus/pdf/2026-11-27b539db7da099d7aaca07b982beab54",
+        "https://news.mtn.co.kr/article/2026111216354450811"
       ],
       "sector": "항공·방산",
-      "generatedAt": "2026-10-08 18:29"
+      "generatedAt": "2026-11-21 18:05"
     },
     "호텔·레저": {
       "lead": {
-        "ko": "인바운드 카지노·면세 부문의 회복과 아웃바운드 여행·스크린골프의 구조적 부진이 뚜렷하게 엇갈리는 업종으로, 종목별 실적 차이가 커지고 있다.",
-        "en": "The hotel and leisure sector is marked by a sharp divergence between the recovering inbound casino and duty-free businesses and the structurally weak outbound travel and screen-golf segments, resulting in widening performance gaps across individual stocks."
+        "ko": "호텔·레저 업종은 2026년 3분기 공시 기준으로 실적이 갈렸다. 외국인 카지노와 호텔은 개선됐고, 내국인 카지노와 패키지 여행은 부진했다.",
+        "en": "Results in the Hotel & Leisure sector diverged in the third quarter of 2026, based on filings. Foreign-only casinos and hotels improved, while the domestic casino and package-tour businesses weakened."
       },
       "overview": {
-        "ko": "호텔·레저 업종은 카지노·복합리조트, 면세·호텔, 여행알선, 스크린골프, 스키리조트 등 소비 서비스업이 혼재된 업종으로, 내국인 대비 외국인 관광 수요에 대한 노출도가 종목별로 크게 다르다. 한국 증시 전체에서 업종이 차지하는 비중은 크지 않지만, 외국인 관광객 유입과 환율, 유가 등 매크로 변수에 대한 민감도가 높아 관광 경기의 선행지표로 활용되는 경우가 많다. 상장 종목 수는 많지 않으며, 그중에서도 카지노·복합리조트 관련 종목과 호텔·면세 종목이 업종 내 시가총액의 핵심을 이루고 있다. 강원랜드는 내국인 전용 카지노라는 독점적 지위를 갖고 있고, 호텔신라는 면세·호텔 사업을 겸영한다는 점에서 업종 내 상위권 종목들 간에도 사업모델의 이질성이 크다. 파라다이스, GKL, 롯데관광개발 등은 외국인 전용 카지노와 복합리조트를 운영하며 인바운드 관광 수요에 직접 노출돼 있고, 하나투어·모두투어·레드캡투어 등 여행 관련 종목은 반대로 아웃바운드(내국인의 해외여행) 수요에 연동된다. 골프존과 모나용평은 각각 스크린골프와 스키리조트라는 국내 레저 소비에 기반한 사업을 영위한다는 점에서 관광 업황과는 결이 다른 변수에 영향을 받는다.",
-        "en": "The hotel and leisure sector encompasses a mix of consumer services businesses including casinos and integrated resorts, duty-free and hotel operations, travel agencies, screen-golf, and ski resorts, with exposure to foreign versus domestic tourism demand varying widely by company. While the sector's overall weight in the Korean equity market is not large, its high sensitivity to macro variables such as foreign visitor inflows, exchange rates, and oil prices makes it a useful leading indicator for tourism conditions. The number of listed companies is relatively small, with casino and integrated resort names together with hotel and duty-free operators forming the core of the sector's market capitalization. Kangwon Land holds a monopoly position as the only casino licensed for domestic customers, while Hotel Shilla also operates duty-free business, reflecting significant heterogeneity in business models even among the sector's top names. Paradise, GKL, and Lotte Tour Development operate foreign-only casinos and integrated resorts with direct exposure to inbound tourism demand, whereas travel-related names such as Hana Tour, Mode Tour, and Redcap Tour are instead linked to outbound (domestic residents traveling abroad) demand. Golfzone and Mona Yongpyong, operating screen-golf and ski resort businesses respectively, are driven by domestic leisure consumption patterns distinct from the broader tourism cycle."
+        "ko": "호텔·레저 업종은 카지노, 호텔·면세, 리조트·골프, 여행 중개 사업을 한데 묶은 업종이다. 전체 시장에서 차지하는 비중은 매우 작고, 종목 수도 업종 가운데 적은 편이다. 강원랜드, 호텔신라, 파라다이스 세 종목이 업종 시가총액의 절반 이상을 차지해 상위 쏠림이 크다. 강원랜드는 내국인 출입이 가능한 카지노와 리조트를 운영하는 기업이다. 파라다이스와 GKL은 외국인 전용 카지노를 운영한다. 방한 외국인 수요, 내국인 해외여행, 환율 같은 외부 변수에 실적이 민감하게 움직이는 것이 이 업종의 특성이다.",
+        "en": "The Hotel & Leisure sector groups casinos, hotels and duty-free, resorts and golf, and travel intermediation. Its weight in the overall market is very small, and it has a relatively small number of listed stocks among sectors. Kangwon Land, Hotel Shilla and Paradise together account for more than half of the sector's market capitalization, so the sector is heavily top-weighted. Kangwon Land operates a casino open to Korean nationals along with resort facilities. Paradise and Grand Korea Leisure (GKL) operate foreign-only casinos. Earnings are sensitive to external variables such as inbound foreign demand, outbound Korean travel and exchange rates."
       },
       "structure": {
-        "ko": "업종의 가치사슬은 크게 카지노·복합리조트, 호텔·면세, 여행알선, 스포츠·레저 시설 운영의 네 갈래로 나뉜다. 카지노 부문은 내국인 전용인 강원랜드와 외국인 전용인 파라다이스, GKL, 롯데관광개발, 아난티 등으로 다시 구분되며, 외국인 전용 카지노들은 단순 게임 영업을 넘어 호텔·식음·엔터테인먼트를 결합한 복합리조트 형태로 진화하고 있다. 호텔·면세 부문은 호텔신라와 서부T&D가 대표적으로, 호텔신라는 면세점과 호텔을 겸영하며 인바운드 소비와 연결되고, 서부T&D는 호텔을 포함한 복합개발 자산을 보유한다. 여행알선 부문은 하나투어와 모두투어가 패키지·에어텔 중심의 아웃바운드 송출 시장을 양분하고 있고, 레드캡투어는 여행업과 함께 렌터카·MRO 사업을 겸영해 상대적으로 사업 포트폴리오가 분산돼 있다. 레저시설 부문에서는 골프존이 스크린골프 시장에서 독보적 점유율을 가진 1위 업체이며, 모나용평은 스키장을 기반으로 한 계절성이 뚜렷한 사업을 영위한다. 업종 내 시가총액은 강원랜드와 호텔신라 등 상위 소수 종목에 집중돼 있는 반면, 중소형 여행·레저 종목들은 개별 이벤트와 계절 요인에 따른 주가 변동성이 상대적으로 크다.",
-        "en": "The sector's value chain can be broadly divided into four segments: casinos and integrated resorts, hotels and duty-free, travel agencies, and sports and leisure facility operations. The casino segment is further split between Kangwon Land, which serves domestic customers exclusively, and foreign-only operators such as Paradise, GKL, Lotte Tour Development, and Ananti, with the latter group increasingly evolving from pure gaming operations toward integrated resorts combining hotels, dining, and entertainment. In the hotel and duty-free segment, Hotel Shilla is linked to inbound consumption through its combined duty-free and hotel operations, while Seobu T&D holds mixed-use development assets including hotels. In the travel agency segment, Hana Tour and Mode Tour together dominate the outbound package and air-tel market, while Redcap Tour maintains a relatively diversified portfolio combining travel with car rental and MRO services. Within leisure facilities, Golfzone holds a dominant share of the screen-golf market, while Mona Yongpyong operates a ski-resort business with pronounced seasonality. Market capitalization within the sector is concentrated in a handful of top names such as Kangwon Land and Hotel Shilla, whereas smaller travel and leisure names tend to exhibit relatively greater share price volatility tied to individual events and seasonal factors."
+        "ko": "카지노는 내국인 대상과 외국인 전용으로 나뉜다. 내국인 대상은 강원랜드가 맡고, 외국인 전용은 파라다이스·GKL·롯데관광개발이 맡는다. 롯데관광개발은 1971년 설립된 여행 기업이지만 현재 실적의 중심은 카지노다. 호텔신라는 면세(TR) 부문과 호텔·레저 부문을 두 축으로 운영한다. 서부T&D는 관광호텔과 쇼핑몰 등 부동산 기반 사업을 영위하고, 아난티와 모나용평은 호텔·리조트·골프·스키 등 체류형 레저를 운영한다. 골프존은 스크린골프 시스템을 가맹점에 공급하는 구조이고, 하나투어·모두투어·레드캡투어는 여행 중개와 출장 중심 사업을 맡는다.",
+        "en": "Casinos split into a domestic-customer segment and a foreign-only segment. Kangwon Land covers the domestic segment, while Paradise, GKL and Lotte Tour Development cover the foreign-only segment. Lotte Tour Development was founded as a travel company in 1971, but casinos now drive its earnings. Hotel Shilla runs two pillars: the duty-free (TR) division and the hotel and leisure division. Seobu T&D runs real-estate-based businesses such as tourist hotels and a shopping mall, while Ananti and Mona Yongpyong operate stay-type leisure such as hotels, resorts, golf and skiing. Golfzon supplies screen-golf systems to franchisees, and Hanatour, Modetour Network and RedcapTour handle travel intermediation and business travel."
       },
       "trends": {
-        "ko": "최근 업황은 인바운드와 아웃바운드 부문이 뚜렷하게 엇갈리는 흐름을 보이고 있다. 외국인 관광객 증가로 국내 카지노업계가 회복세에 진입했다. 일본·중국 관광객 유입 확대와 함께 카지노 드롭액, 호텔 객실 점유율이 상승했으나, 업체별로 실적 격차가 뚜렷하게 나타났다. 2026년 2분기 공시 기준으로 롯데관광개발은 매출과 영업이익이 각각 28.9%, 56.8% 증가했고 GKL도 매출 19.3%, 영업이익 30.5% 증가하며 호조를 보인 반면, 강원랜드는 매출과 영업이익이 각각 4.2%, 25.1% 감소하며 내국인 카지노 특유의 규제·접근성 제약을 반영했다. 반면 아웃바운드 여행업은 상반된 흐름을 보이고 있는데, 지정학적 리스크로 유가 변동성이 커지면서 유류할증료 부담이 가중되고 원화 약세로 해외여행 체감 물가가 오르는 등 여행업 업황이 3년 연속 부진한 모습을 보이고 있다. 하나투어의 2026년 패키지 송객 수는 전년 대비 2% 줄어 2년 연속 감소할 것으로 추산된다. 실제 2026년 2분기 공시에서도 하나투어는 매출 3.8%, 영업이익 43.6% 감소했고 모두투어는 영업손실로 전환했다. 레저 부문에서는 2025년 전국 골프장 내장객 수가 전년 대비 2.1% 줄어 높은 이용료와 인구 구조 변화, 해외 골프 수요 확대가 맞물린 구조적 전환이 나타나고 있으며, 골프존도 2분기 매출과 영업이익이 각각 16.4%, 66.5% 줄었다.",
-        "en": "Recent industry conditions show a clear divergence between the inbound and outbound segments. The domestic casino industry has entered a recovery phase amid rising numbers of foreign visitors, with expanded inflows of Japanese and Chinese tourists lifting casino drop amounts and hotel occupancy, although performance gaps between individual operators have widened considerably. Based on second-quarter 2026 disclosures, Lotte Tour Development posted revenue and operating profit growth of 28.9% and 56.8% respectively, and GKL also showed strong results with revenue up 19.3% and operating profit up 30.5%, whereas Kangwon Land saw revenue and operating profit decline 4.2% and 25.1%, reflecting the regulatory and accessibility constraints unique to a domestic-only casino. In contrast, the outbound travel industry has faced the opposite trend, with rising fuel surcharge burdens from oil price volatility tied to geopolitical risk and higher perceived travel costs from won weakness contributing to a third consecutive year of weak industry conditions. Hana Tour's package tour volume in 2026 is estimated to decline about 2% year-on-year, a second consecutive annual decline. Indeed, in second-quarter 2026 filings Hana Tour's revenue and operating profit fell 3.8% and 43.6% respectively, while Mode Tour swung to an operating loss. In the leisure segment, the number of visitors to domestic golf courses fell 2.1% in 2025, reflecting a structural shift driven by high usage fees, demographic changes, and growing demand for overseas golf, and Golfzone's second-quarter revenue and operating profit also fell 16.4% and 66.5%, respectively."
+        "ko": "2026년 3분기 공시 기준 영업이익은 호텔신라 +382.4%, 파라다이스 +62.3%, 모나용평 +62.8%, 레드캡투어 +2.0%로 늘었다. 반면 강원랜드(-17.9%), 롯데관광개발(-41.8%), 서부T&D(-33.5%), 하나투어(-38.0%), GKL(-44.4%), 아난티(-15.3%), 골프존(-34.3%)은 줄었고, 모두투어는 영업손실이 이어졌다. 파라다이스의 3분기 카지노 매출은 2,675억원으로 23.1% 늘어 분기 기준 최대였고, 드롭액은 8.3% 늘었으며 홀드율은 12.9%로 1.6%포인트 올랐다. 호텔신라는 호텔·레저 영업이익이 279억원으로 28% 늘어 면세 부문의 273억원을 앞질렀다. 강원랜드는 3분기 순손실 36억원으로 적자 전환했고, 일반 업장 매출은 방문객과 드롭액 감소로 4.8% 줄었다. 하나투어는 기획상품 이용객이 약 40만명으로 11% 감소했지만, 개별여행(FIT) 이용 실적은 126만건으로 15% 늘었다. 모두투어는 영업손실이 전년 3분기 35억원에서 9억원으로 줄었으나 적자는 이어졌다.",
+        "en": "Based on third-quarter 2026 filings, operating profit rose at Hotel Shilla (+382.4%), Paradise (+62.3%), Mona Yongpyong (+62.8%) and RedcapTour (+2.0%). It fell at Kangwon Land (-17.9%), Lotte Tour Development (-41.8%), Seobu T&D (-33.5%), Hanatour (-38.0%), GKL (-44.4%), Ananti (-15.3%) and Golfzon (-34.3%), while Modetour Network remained in operating loss. Paradise's third-quarter casino revenue rose 23.1% to KRW 267.5 billion, a quarterly record, with drop up 8.3% and a hold rate of 12.9%, up 1.6 percentage points. At Hotel Shilla, hotel and leisure operating profit rose 28% to KRW 27.9 billion, overtaking the duty-free division's KRW 27.3 billion. Kangwon Land swung to a net loss of KRW 3.6 billion in the third quarter, and revenue at its general gaming floor fell 4.8% on lower visitors and drop. At Hanatour, package-tour customers fell 11% to about 400,000, while FIT usage rose 15% to 1.26 million bookings. Modetour Network narrowed its operating loss from KRW 3.5 billion a year earlier to KRW 900 million, but the loss continued."
       },
       "outlook": {
-        "ko": "향후 업황의 핵심 성장 동인은 인바운드 관광 수요의 지속 여부와 그에 따른 카지노·복합리조트 부문의 실적 모멘텀이다. 2026년 1~7월 누적 방한 외국인은 1,280만 명으로 역대 최대 수준을 기록했고, 연간 인바운드는 약 2,300만 명에 이를 것으로 전망됐다. 다만 중국·일본 관광객이 늘어도 VIP 카지노 매출이 곧바로 늘어난다고 단정하기는 어려워, 드롭액·홀드율 등 질적 지표를 함께 지켜볼 필요가 있다. 강원랜드는 'K-HIT 프로젝트'를 통한 글로벌 복합리조트 도약을 내세우며 2026년 3월 외국인 전용 카지노 존 시범 운영을 시작했고, 외국인 1회 베팅 한도를 기존 30만원에서 최대 3억원까지 단계적으로 상향할 계획이어서 내국인 전용 사업모델에서 벗어나려는 시도가 실적에 어떻게 반영될지가 관전 포인트다. 여행업에서는 경기가 회복되거나 비용 부담을 키웠던 변수가 사라지면 미뤄뒀던 여행 수요가 뒤늦게 나타나는 이연 수요 특성이 있는 만큼, 유가와 환율 안정화 시점이 업황 반등의 분기점이 될 가능성이 있다. 동북아 카지노 시장에서는 오사카 등 경쟁 IR 프로젝트의 진행 상황이 국내 복합리조트 업체들의 중장기 경쟁 구도에 영향을 줄 수 있는 변수로 꼽힌다.",
-        "en": "The key growth driver going forward is whether inbound tourism demand continues to hold up, and the resulting performance momentum in the casino and integrated resort segment. Cumulative foreign arrivals in Korea from January to July 2026 reached a record 12.8 million, with full-year inbound visitors projected to reach approximately 23 million. However, rising visitor numbers from China and Japan do not automatically translate into higher VIP casino revenue, so qualitative indicators such as drop amounts and hold rates warrant monitoring. Kangwon Land has positioned itself around a \"K-HIT Project\" aimed at transforming into a global integrated resort, launching a pilot foreign-only casino zone in March 2026 and planning to progressively raise the per-bet limit for foreign customers from the previous 300,000 won toward up to 300 million won, making it a focal point whether this shift away from its domestic-only model will be reflected in earnings. In travel, given the industry's characteristic of deferred demand resurfacing once economic conditions improve or cost burdens ease, the timing of oil price and currency stabilization could mark a turning point for a recovery. In the Northeast Asian casino market, the progress of competing integrated resort projects such as those in Osaka is considered a variable that could affect the medium- to long-term competitive landscape for domestic integrated resort operators."
+        "ko": "카지노에서는 외국인 고객 구성의 변화와 홀드율 수준이 실적 방향을 좌우할 것으로 보인다. 파라다이스의 3분기 중국 VIP 드롭액은 9.3% 줄었지만, 일본 VIP와 기타 VIP 드롭액이 각각 6.7%, 32.9% 늘었다. 파라다이스는 서울 장충동 호텔의 완공을 2028년으로 목표하고 있다. 호텔신라는 2026년 10월 28일 실적 발표에서 중국 국경절 연휴와 한중 항공 노선 확대에 따른 인바운드 수요 회복을 기대한다고 밝혔다. 여행 부문에서는 패키지 수요가 돌아서는지와 개별여행 부문의 수익성 개선 여부가 관전 포인트다. 2026년 11월 19일에는 한중 FTA 타결 소식과 함께 하나투어, 롯데관광개발, 모두투어 등 주요 여행주가 일제히 강세를 보였다. 다만 이는 주가 반응이며, 실적 개선 여부는 이후 분기 공시로 확인해야 한다.",
+        "en": "In casinos, shifts in the foreign customer mix and the level of hold rates are likely to shape earnings. At Paradise, China VIP drop fell 9.3% in the third quarter, while Japan VIP and other VIP drop rose 6.7% and 32.9%, respectively. Paradise is targeting completion of its Seoul Jangchungdong hotel in 2028. At its October 28, 2026 earnings release, Hotel Shilla said it expected inbound demand to recover on China's National Day holiday and expanded China-Korea flight routes. In travel, the points to watch are whether package demand turns around and whether profitability improves in the independent-travel business. On November 19, 2026, major travel stocks including Hanatour, Lotte Tour Development and Modetour Network rose broadly alongside news of a Korea-China FTA agreement. That was a share-price reaction, however, and any earnings improvement must be confirmed in later quarterly filings."
       },
       "risks": [
         {
           "title": {
-            "ko": "아웃바운드 여행수요의 구조적 둔화",
-            "en": "Structural Slowdown in Outbound Travel Demand"
+            "ko": "특정 고객층 의존과 카지노 규제",
+            "en": "Customer concentration and casino regulation"
           },
           "body": {
-            "ko": "여행업 업황은 3년 연속 부진한 모습을 보이고 있으며, 2024년 티메프 사태와 정책적 불확실성 등으로 펀더멘털에 부정적인 환경이 장기화됐다. 고유가와 원화 약세가 겹치는 기간에는 유류할증료 부담과 해외여행 체감 물가 상승이 동시에 작용해 여행사들의 실적 회복 시점을 늦출 가능성이 있다.",
-            "en": "Industry conditions in the travel sector have remained weak for three consecutive years, with negative fundamentals prolonged by the 2024 TMON-WeMakePrice crisis and policy uncertainty. During periods when high oil prices coincide with won weakness, increased fuel surcharge burdens and rising perceived travel costs abroad could simultaneously delay the timing of earnings recovery for travel agencies."
+            "ko": "외국인 카지노는 중국 VIP 수요 둔화와 홀드율 변동에 따라 분기 실적이 크게 달라질 수 있다. 관광진흥기금 관련 규제 불확실성도 증권가가 짚는 부담 요인이다. 내국인 대상 카지노인 강원랜드는 일반 업장 방문객 감소가 이어지는지가 변수다.",
+            "en": "Quarterly earnings at foreign-customer casinos can swing widely with softer China VIP demand and hold-rate volatility. Brokerages also point to regulatory uncertainty over the tourism promotion fund as a burden. At Kangwon Land, which serves domestic customers, a key variable is whether visitor declines at its general gaming floor continue."
           }
         },
         {
           "title": {
-            "ko": "카지노·복합리조트 간 실적 차별화 및 역내 경쟁 심화",
-            "en": "Earnings Divergence Among Casino Operators and Intensifying Regional Competition"
+            "ko": "패키지 여행 수요 둔화와 비용 변수",
+            "en": "Weak package-tour demand and cost variables"
           },
           "body": {
-            "ko": "외국인 관광객 증가와 함께 카지노 드롭액, 호텔 객실 점유율이 상승했으나 업체별로 실적 격차가 뚜렷하게 나타나고 있어 복합리조트 운영 역량과 VIP 고객 다변화 정도에 따라 종목별 수익성 차이가 더욱 벌어질 수 있다. 접근성이 취약한 강원랜드처럼 특정 지리적·규제적 제약을 지닌 사업자는 역내 경쟁 IR 프로젝트 확대 시 상대적으로 더 큰 영향을 받을 가능성이 있다.",
-            "en": "While rising foreign tourist numbers have lifted casino drop amounts and hotel occupancy, clear performance gaps have emerged between individual operators, suggesting that differences in integrated resort operating capability and the degree of VIP client diversification could widen profitability disparities further. Operators facing particular geographic or regulatory constraints, such as Kangwon Land's limited accessibility, may be relatively more exposed as competing integrated resort projects expand in the region."
+            "ko": "하나투어는 중동 정세 불안, 짧은 추석 연휴, 유류할증료 인상이 겹쳐 기획상품 모객이 줄었다고 설명했다. 모두투어의 3분기 패키지 송객 인원은 13만 8,911명으로 19.4% 감소했다. 비용을 줄여도 매출 감소 폭이 더 크면 이익이 줄어드는 구조여서, 매출 회복 없이는 수익성 개선에 한계가 있다.",
+            "en": "Hanatour said package bookings fell as Middle East instability, a short Chuseok holiday and higher fuel surcharges combined. Modetour Network's third-quarter package passengers fell 19.4% to 138,911. When revenue falls faster than costs, profit declines even with cost cuts, so profitability improvement is limited without a revenue recovery."
           }
         },
         {
           "title": {
-            "ko": "레저 소비의 구조적 둔화",
-            "en": "Structural Slowdown in Leisure Consumption"
+            "ko": "면세 부문 회복 지연과 환율",
+            "en": "Slow duty-free recovery and exchange rates"
           },
           "body": {
-            "ko": "골프장 이용객 감소는 단순한 경기 침체가 아니라 높은 이용료, 인구 구조 변화, 해외 골프 수요 확대가 맞물린 구조적 전환 신호로 해석된다. 국내 스크린골프 시장도 거의 포화상태라는 평가가 나오고 있어, 국내 레저 소비에 기반한 사업모델은 중장기적으로 성장 한계에 직면할 수 있다.",
-            "en": "The decline in golf course visitors is interpreted not merely as a cyclical downturn but as a signal of structural transition driven by a combination of high usage fees, demographic shifts, and growing demand for overseas golf. With the domestic screen-golf market also widely viewed as nearing saturation, business models reliant on domestic leisure consumption may face growth limitations over the medium to long term."
+            "ko": "호텔신라의 면세 부문은 중국 보따리상 비수기에 따른 할인율 상승과 원화 강세 구간의 매입 단가 부담으로 직전 분기보다 수익성이 둔화됐다. 3분기 영업이익은 시장 컨센서스 약 577억원을 소폭 하회했다. 면세 매출 회복 속도와 환율 흐름에 따라 호텔신라의 이익 구성이 다시 달라질 수 있다.",
+            "en": "Hotel Shilla's duty-free division saw profitability slow from the prior quarter, as higher discount rates in the off-season for Chinese resellers combined with purchasing costs during a stronger won. Third-quarter operating profit came in slightly below the market consensus of about KRW 57.7 billion. The pace of duty-free sales recovery and exchange-rate moves could shift Hotel Shilla's earnings mix again."
           }
         }
       ],
       "sources": [
-        "https://newsway.co.kr/news/view?ud=2026051512133143041",
-        "https://www.mt.co.kr/amp/stock/2026/05/14/2026051407511973149",
-        "https://view.asiae.co.kr/article/2026100209344007297",
-        "https://www.asiae.co.kr/article/2026032012074904448",
-        "https://www.donppu.com/board_FNAQ19/1333294",
-        "https://pilseungbet.com/casino/korea/",
-        "https://www.golfjournal.co.kr/news/articleView.html?idxno=10845"
+        "https://www.insight.co.kr/news/581502",
+        "https://m.news.nate.com/view/20261028n26034",
+        "https://www.businesspost.co.kr/BP?command=article_view&num=451413",
+        "https://www.ddaily.co.kr/page/view/2026111711273266593",
+        "https://www.newstomato.com/ReadNews.aspx?no=1320769",
+        "https://www.biztribune.co.kr/news/articleView.html?idxno=362307",
+        "https://www.leadeconomy.co.kr/news/articleView.html?idxno=11374",
+        "https://m.news.nate.com/view/20261119n34397",
+        "https://supple.kr/news/cmwkamd2wi7n9jkun1efruusc",
+        "https://www.infostockdaily.co.kr/news/articleView.html?idxno=218653"
       ],
       "sector": "호텔·레저",
-      "generatedAt": "2026-10-08 18:29"
+      "generatedAt": "2026-11-21 18:05"
     },
     "자동차": {
       "lead": {
-        "ko": "미국 관세 부담이 완성차 수익성을 압박하는 가운데 타이어·부품 일부는 고부가 제품 믹스 개선으로 차별화된 흐름을 보이는 업종이다.",
-        "en": "A sector where U.S. tariff burdens continue to pressure OEM profitability, while select tire and parts makers are diverging through improved high-value product mix."
+        "ko": "2026년 3분기 공시 기준으로 시총 상위 12개 종목 가운데 8곳의 영업이익이 늘었으나, 미국 관세율 인하와 환율 효과가 이익을 떠받친 만큼 업종 내 편차를 함께 봐야 하는 국면이다.",
+        "en": "In 3Q 2026 filings, eight of the 12 largest stocks reported higher operating profit, but because the lower US tariff rate and the exchange rate propped up earnings, dispersion within the sector needs to be watched alongside the headline."
       },
       "overview": {
-        "ko": "자동차 업종은 완성차(현대차·기아)를 중심으로 핵심 부품(현대모비스·HL만도·현대위아 등), 타이어(한국타이어앤테크놀로지·금호타이어), 열관리(한온시스템) 등 전후방 연관 산업이 함께 묶인 대표 제조업 섹터다. 완성차 2개사가 업종 시가총액의 절대적인 비중을 차지하며, 나머지 부품·타이어 기업들은 중소형주 군을 형성하는 구조다. 전체 증시 내 비중은 크지 않은 편이지만 수출 비중이 높아 환율·통상 정책 등 대외 변수에 민감하게 반응하는 대표적인 수출 업종으로 꼽힌다. 상장 종목 수는 많지만 상위 소수 종목으로 시가총액이 집중돼 있어 업종 내 양극화가 뚜렷하다. 완성차·부품·타이어 각 단계별로 실적 사이클이 다르게 움직이는 것도 이 업종의 특징이다.",
-        "en": "The automotive sector is a representative manufacturing group spanning OEMs (Hyundai Motor, Kia) at its core alongside core parts makers (Hyundai Mobis, HL Mando, Hyundai Wia and others), tire makers (Hankook Tire & Technology, Kumho Tire), and thermal management (Hanon Systems). The two OEMs account for the overwhelming majority of the sector's market capitalization, while the remaining parts and tire companies form a group of small- and mid-cap stocks. Although the sector's overall weight in the broader market is relatively modest, its high export exposure makes it highly sensitive to external variables such as exchange rates and trade policy, marking it as a key export-oriented sector. With many listed names but capitalization concentrated in a handful of top names, polarization within the sector is pronounced. Earnings cycles also differ meaningfully across the OEM, parts, and tire segments."
+        "ko": "자동차 업종은 완성차와 부품, 타이어를 아우르는 한국 수출 제조업의 중심축이다. 전체 시장에서 차지하는 비중은 크지 않지만 현대차, 기아, 현대모비스가 시가총액 상위를 차지해 대형주 쏠림이 뚜렷하다. 그 뒤로 한국타이어앤테크놀로지, 한온시스템, DN오토모티브, 에스엘, HL만도, 금호타이어, 현대위아 등이 이어진다. 업황은 미국 관세, 원·달러 환율, 전동화 속도에 크게 좌우된다. 2026년 3분기 공시 기준 영업이익이 늘어난 회사는 8곳, 줄어든 회사는 3곳이며, 삼현은 적자가 이어졌다.",
+        "en": "The auto sector spans finished vehicles, parts and tires, and it is a pillar of Korea's export manufacturing. Its share of the overall market is modest, but Hyundai Motor, Kia and Hyundai Mobis rank at the top by market capitalization, so large-cap concentration is pronounced. Hankook Tire & Technology, Hanon Systems, DN Automotive, SL, HL Mando, Kumho Tire and Hyundai WIA follow. Conditions depend heavily on US tariffs, the won-dollar exchange rate and the pace of electrification. In 3Q 2026 filings, operating profit rose at eight of the 12 largest companies and fell at three, while Samhyun remained loss-making."
       },
       "structure": {
-        "ko": "밸류체인 최상단에는 완성차인 현대차·기아가 있고, 핵심 모듈과 구동계를 공급하는 현대모비스·현대위아·HL만도, 램프·전장 부품의 에스엘, 모터·구동부품과 방산 제품을 함께 만드는 SNT모티브, 액추에이터의 삼현, 방진부품·축전지와 공작기계 사업을 하는 DN오토모티브가 1차 부품군을 구성한다. 타이어는 한국타이어앤테크놀로지와 금호타이어가 글로벌 완성차 신차용(OE)과 교체용(RE) 시장에 동시 공급하며 양분하는 구조다. 한온시스템은 열관리 시스템 전문업체로 현재 한국타이어 계열에 편입돼 있다. 시가총액 상위 3개사인 현대차·기아·현대모비스가 업종 전체 비중의 대부분을 차지해 집중도가 매우 높고, 나머지는 1차·2차 협력사 중심의 중소형주로 포진돼 있다.",
-        "en": "At the top of the value chain are the OEMs, Hyundai Motor and Kia, while the tier-1 parts group includes module and drivetrain suppliers such as Hyundai Mobis, Hyundai Wia and HL Mando, lamp and electronics specialist SL Corporation, SNT Motiv, which makes motors and drive components alongside defense products, actuator maker Samhyun, and DN Automotive, which makes anti-vibration parts and batteries alongside machine tools. In tires, Hankook Tire & Technology and Kumho Tire split the market, supplying both the OE and replacement segments globally. Hanon Systems, a thermal management specialist, now sits under the Hankook Tire group. The top three names by market capitalization—Hyundai Motor, Kia, and Hyundai Mobis—account for the vast majority of the sector's total weight, resulting in very high concentration, with the remainder populated by small- and mid-cap tier-1 and tier-2 suppliers."
+        "ko": "완성차는 현대차와 기아가 맡으며, 현대차는 승용·RV·상용차를 생산하고 금융 계열사를 함께 두고 있다. 현대모비스는 모듈·핵심부품, A/S 부품, 전동화 부품을 축으로 하는 대표 부품사다. 에스엘은 램프와 전동화 부품을, HL만도는 제동·조향·현가 장치와 ADAS를 공급하고, 한온시스템은 열관리 시스템 전문기업이다. 현대위아는 엔진·모듈·구동부품·열관리 부품을, DN오토모티브는 공작기계와 자동차 부품, 축전지·튜브를 다룬다. 한국타이어앤테크놀로지와 금호타이어는 타이어, 삼현은 모션 컨트롤, SNT모티브는 자동차 부품·방산·반도체장비 부품 사업을 한다. 현대차그룹 계열 업체가 많아 완성차 생산 상황이 부품사 실적으로 전달되는 구조다.",
+        "en": "Hyundai Motor and Kia lead finished-vehicle production, and Hyundai Motor also has financial affiliates alongside its passenger, RV and commercial vehicle business. Hyundai Mobis is the main parts supplier, built around modules and core parts, aftersales parts and electrification components. SL supplies lamps and electrification parts, HL Mando supplies braking, steering and suspension systems and ADAS, and Hanon Systems specializes in thermal management. Hyundai WIA focuses on engines, modules, drivetrain parts and thermal management, while DN Automotive spans machine tools, auto parts, and batteries and tubes. Hankook Tire & Technology and Kumho Tire make tires, Samhyun is a motion-control specialist, and SNT Motiv operates in auto parts, defense and semiconductor-equipment parts. Many companies are Hyundai Motor Group affiliates, so conditions in finished-vehicle production pass through to parts makers' earnings."
       },
       "trends": {
-        "ko": "2026년 2분기 현대차는 매출이 전년 동기 대비 늘었음에도 영업이익이 20.8% 줄었고 기아도 영업이익이 4.9% 감소하며 관세 비용이 완성차 수익성을 눌렀다. 실제로 현대차는 2분기 실적발표 콘퍼런스콜에서 2분기 납부 관세가 약 9,000억원이라고 밝혔고, 1분기 8,600억원을 더한 상반기 관세는 약 1조 8,000억원에 이른다. 기아도 2분기 8,150억원, 1분기 7,550억원을 내 상반기 관세가 1조 5,000억원을 넘었고, 그룹 전체로는 3조원을 웃돈다. 반면 타이어 업종에서는 한국타이어가 2026년 2분기 전년 동기 대비 5.8% 증가한 매출액 5조 6,825억원, 영업이익은 58.1% 증가한 5,591억원을 기록했으며 매출액과 영업이익 모두 전분기 대비로도 증가했다. 다만 업계 전반적으로는 원재료 가격 상승 및 해상 운임 인상, 미국 반덤핑 관세 관련 일회성 비용 반영 등이 원가 부담으로 작용하며 매출 성장에도 이익이 줄어드는 종목이 혼재했다. 자동차 수출 측면에서는 2026년 8월 자동차 수출이 하계 휴가에 따른 조업일수 감소와 일부 업체의 파업에 따른 생산차질 등의 영향으로 전년 동월 대비 29.8% 감소하는 등 단기 변동성도 나타났다.",
-        "en": "In Q2 2026, Hyundai Motor's operating profit fell 20.8% year-over-year despite higher revenue, while Kia's operating profit declined 4.9%, as tariff costs weighed on OEM profitability. Indeed, Hyundai Motor disclosed on its Q2 earnings call that it paid roughly KRW 900 billion in tariffs during the quarter, bringing first-half tariff payments to roughly KRW 1.8 trillion when combined with Q1's KRW 860 billion, while Kia paid KRW 815 billion in Q2 and KRW 755 billion in Q1, pushing its first-half tariff bill above KRW 1.5 trillion, for a combined group total exceeding KRW 3 trillion. In contrast, within the tire segment, Hankook Tire posted Q2 2026 revenue of KRW 5.6825 trillion, up 5.8% year-over-year, and operating profit of KRW 559.1 billion, up 58.1%, with both metrics also rising sequentially. Across the broader tire industry, however, rising raw material costs, higher ocean freight rates, and one-off costs tied to U.S. anti-dumping tariff rulings weighed on margins, leaving a mixed picture of revenue growth alongside profit declines at some names. On the export side, short-term volatility was also evident, as August 2026 auto exports fell 29.8% year-over-year due to fewer working days from summer vacations and production disruptions from strikes at some manufacturers."
+        "ko": "현대차의 2026년 3분기 매출은 전년 동기 대비 3.4% 줄었으나 영업이익은 5.5% 늘었다. 현대차의 3분기 글로벌 도매판매는 11.3% 감소했고, 국내 판매는 파업에 따른 생산 차질로 27.2% 줄었다. 환율에 따른 영업이익 증가 효과는 현대차 1조 2,830억원, 기아 5,290억원 등 총 1조 8,120억원에 달했다. 기아는 매출이 10.1%, 영업이익이 24.3% 늘었으며, 미국이 자동차 관세율을 25%에서 15%로 조정하면서 5,300억원가량의 기저효과가 발생했다. 기아는 관세 영향을 제외하면 영업이익이 1,770억원 감소했다고 밝혔다. 부품사는 엇갈렸다. 현대모비스 영업이익은 17.2% 늘었고, HL만도는 반도체·원자재 비용 부담 등으로 영업이익이 45.3% 감소했다.",
+        "en": "Hyundai Motor's 3Q 2026 revenue fell 3.4% year on year, while operating profit rose 5.5%. Its global wholesale volume in the quarter fell 11.3%, and domestic sales dropped 27.2% because of strike-related production disruption. The exchange-rate effect on operating profit totaled 1.812 trillion won, including 1.283 trillion won at Hyundai Motor and 529 billion won at Kia. Kia's revenue rose 10.1% and operating profit rose 24.3%, and the US cut in the auto tariff rate from 25% to 15% produced a base effect of roughly 530 billion won. Kia said that excluding tariff effects, operating profit fell by 177 billion won. Parts makers diverged: Hyundai Mobis's operating profit rose 17.2%, while HL Mando's operating profit fell 45.3% on semiconductor and raw-material cost burdens, among other factors."
       },
       "outlook": {
-        "ko": "미국의 한국산 자동차 관세는 15%로 확정돼 불확실성은 완화됐지만 관세 자체는 계속 부담으로 남아 있는 상황이다. 완성차 업계는 현지 생산 확대와 부품 현지 조달 비중 확대를 통해 관세 영향을 줄이려는 전략을 이어가고 있으며, 현대차와 기아는 미국 시장에서 전기차 모델을 생산지 중심으로 차별화하는 전략을 추진하면서 아이오닉6는 일반 모델의 판매를 중단하고 기아 EV6 GT는 관세 영향으로 미국 출시를 연기하는 등 라인업을 조정하고 있다. 하이브리드차 수요 강세와 유럽의 친환경 규제 강화는 완성차·부품업체들의 중기적인 수출 동인으로 꼽힌다. 부품·타이어 업체들은 고부가 제품 비중 확대와 매출처 다변화를 통한 수익성 방어 여부가 향후 관전 포인트가 될 것으로 보인다. 다만 중동 정세와 원자재·운임 변동성은 업종 전반의 비용 구조에 지속적인 변수로 작용할 전망이다.",
-        "en": "While the confirmation of a 15% U.S. tariff on Korean-made vehicles has reduced policy uncertainty, the tariff burden itself remains a persistent drag. OEMs continue to pursue localization strategies—expanding U.S. production and local parts sourcing—to mitigate tariff exposure, with Hyundai Motor and Kia differentiating their EV lineups by production origin in the U.S. market, discontinuing the standard Ioniq 6 trim and delaying the U.S. launch of the Kia EV6 GT due to tariff impacts. Robust hybrid vehicle demand and tightening European emissions regulations are viewed as medium-term export drivers for both OEMs and parts suppliers. For parts and tire makers, the key watch points ahead will be whether expanding high-value product mix and diversifying customer bases can sustain margin defense. Meanwhile, Middle East geopolitical conditions and raw material and freight cost volatility are likely to remain ongoing variables for the sector's overall cost structure."
+        "ko": "미국에서는 전기차 구매 세액공제가 종료되면서 별도 충전이 필요 없는 하이브리드가 대안으로 자리 잡고 있다. 현대차·기아는 2027년형 북미 라인업에서 하이브리드 SUV를 전면에 내세웠다. 한국산 자동차에 적용되는 15% 관세는 조기 철회를 기대하기 어렵다는 분석이 나온다. 현대차는 9월부터 국내 공장 생산이 정상화된 만큼 4분기 생산량 회복을 기대하고 있다. 다만 현대차는 2026년 연간 판매 목표를 400만 대로, 영업이익률 목표를 5.5~6.5%로 낮췄다. 부품 쪽에서는 HL만도의 휴머노이드 로봇용 액추에이터가 중장기 동력이지만, 한국투자증권은 비용 회수와 로봇 매출이 맞물리는 시기를 2028년으로 제시했다.",
+        "en": "In the US, the end of the EV purchase tax credit has made hybrids, which need no separate charging, a leading alternative. Hyundai Motor and Kia put hybrid SUVs at the front of their 2027 model-year North American lineups. Analysts say an early withdrawal of the 15% tariff on Korean-made vehicles is hard to expect. Hyundai Motor expects a production recovery in the fourth quarter, since domestic plant output returned to normal from September. However, Hyundai Motor lowered its 2026 sales target to 4 million units and its operating margin target to 5.5-6.5%. Among parts makers, HL Mando's humanoid-robot actuator business is a medium- to long-term driver, but Korea Investment & Securities puts the point when cost recovery and robot revenue align at 2028."
       },
       "risks": [
         {
           "title": {
-            "ko": "미국 관세 부담 지속",
-            "en": "Persistent U.S. Tariff Burden"
+            "ko": "관세·환율 의존도",
+            "en": "Dependence on tariffs and the exchange rate"
           },
           "body": {
-            "ko": "현대차·기아는 품목관세 분류로 환급 대상에서 제외돼 관세 비용이 그대로 손익에 반영되는 구조다. 2026년 상반기에만 두 회사 합산 관세 납부액이 3조원을 넘어서며 영업이익 감소의 핵심 요인으로 작용했다.",
-            "en": "Because the tariffs are classified as product-specific rather than reciprocal duties, Hyundai Motor and Kia are ineligible for refunds, meaning the full cost flows directly through to earnings. Combined tariff payments by the two companies exceeded KRW 3 trillion in the first half of 2026 alone, serving as a key driver of the operating profit decline."
+            "ko": "현대차·기아의 3분기 합산 영업이익 증가분 대부분은 환율 효과와 관세 부담 완화 덕분이었다. 환율이 하락하거나 관세 조건이 바뀌면 이익 개선 폭이 달라질 수 있다.",
+            "en": "Most of the 3Q increase in Hyundai Motor and Kia's combined operating profit came from the exchange-rate effect and lighter tariff burdens. A weaker dollar or a change in tariff terms could alter the size of the profit improvement."
           }
         },
         {
           "title": {
-            "ko": "원자재·물류비 변동성",
-            "en": "Raw Material and Logistics Cost Volatility"
+            "ko": "원가 상승과 중동 분쟁",
+            "en": "Rising costs and the Middle East conflict"
           },
           "body": {
-            "ko": "중동 정세 불안에 따른 유가·나프타 가격 상승은 타이어·부품업계의 원가 부담을 키우는 요인이다. 해상 운임 상승과 일회성 관세 비용이 겹치면서 매출 성장에도 영업이익이 줄어드는 사례가 나타났다.",
-            "en": "Geopolitical instability in the Middle East, which has driven up oil and naphtha prices, is intensifying cost pressures for tire and parts makers. Rising ocean freight rates combined with one-off tariff costs have led to cases of operating profit declines despite revenue growth."
+            "ko": "기아가 집계한 영업이익 감소 요인은 원자재 가격 상승 3,680억원, 중동 분쟁 영향 2,090억원 등 약 5,770억원이었다. HL만도도 반도체 비용 약 160억원과 원재료비 약 260억원이 이익을 깎았다는 분석이 나왔다.",
+            "en": "Kia counted about 577 billion won in profit headwinds, including 368 billion won from higher raw-material prices and 209 billion won from the Middle East conflict. KB Securities estimated that semiconductor costs of about 16 billion won and raw-material costs of about 26 billion won cut into HL Mando's profit."
           }
         },
         {
           "title": {
-            "ko": "전기차 수요 변동성과 라인업 재편",
-            "en": "EV Demand Volatility and Lineup Restructuring"
+            "ko": "생산 차질과 중국 업체와의 경쟁",
+            "en": "Production disruption and Chinese competition"
           },
           "body": {
-            "ko": "미국 내 전기차 가격 경쟁력 약화로 일부 모델의 판매가 급감하면서 완성차업체들이 생산지 중심으로 라인업을 재편하고 있다. 이 과정에서 신차 출시 지연이나 판매 전략 변경이 반복될 경우 단기적인 매출 변동성 요인이 될 수 있다.",
-            "en": "Weakening price competitiveness of EVs in the U.S. market has led to sharp sales declines for certain models, prompting OEMs to restructure their lineups around production origin. Repeated model launch delays or shifts in sales strategy during this process could introduce short-term revenue volatility."
+            "ko": "완성차 생산량이 줄면 부품 납품 물량이 감소하고 공장 가동률 하락에 따른 고정비 부담이 커질 수 있다. 중국 업체들이 저가 전기차로 유럽과 신흥 시장을 잠식하고 있다는 점도 부담이다.",
+            "en": "Lower finished-vehicle output can reduce parts delivery volumes and raise fixed-cost burdens as plant utilization falls. Chinese makers are also eating into Europe and emerging markets with low-priced EVs, which adds pressure."
           }
         }
       ],
       "sources": [
-        "https://view.asiae.co.kr/article/2026072711044003022",
-        "https://www.hankooktire.com/kr/ko/company/media-list/media-detail.633710.html",
-        "https://www.goodkyung.com/news/articleView.html?idxno=289768",
-        "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156782122",
-        "https://newsway.co.kr/news/view?ud=2026091715392412837"
+        "https://www.newsway.co.kr/news/view?ud=2026103014562340407",
+        "https://www.seoul.co.kr/news/economy/car/2026/11/02/20261102032002",
+        "https://www.hyundaimotorgroup.com/ko/news/kia-2026-q3-earnings",
+        "https://www.dailian.co.kr/news/view/1708771/%EC%BB%A8%EC%BD%9C-%EA%B8%B0%EC%95%84-%E2%80%9C%EA%B4%80%EC%84%B8-%EC%98%81%ED%96%A5-%EC%A0%9C%EC%99%B8%ED%95%98%EB%A9%B4-3%EB%B6%84-2026",
+        "https://www.etoday.co.kr/news/view/2649934",
+        "https://view.asiae.co.kr/article/2026111316212706169",
+        "https://news.nate.com/view/20261106n35725",
+        "https://www.ziksir.com/news/articleView.html?idxno=153247"
       ],
       "sector": "자동차",
-      "generatedAt": "2026-10-08 18:49"
+      "generatedAt": "2026-11-21 18:05"
     },
     "식음료": {
       "lead": {
-        "ko": "K-푸드 수출 호조와 원가·환율 변수가 교차하는 가운데 내수 방어력과 해외 성장성으로 종목별 차별화가 진행 중인 업종이다.",
-        "en": "A sector navigating a crosscurrent of robust K-food export growth and raw-material/currency swings, with stock-level differentiation driven by domestic defensiveness versus overseas growth potential."
+        "ko": "2026년 3분기 식음료 업종은 해외 매출 비중이 높은 라면·제과 기업과 내수 중심 기업의 이익 격차가 벌어졌고, 원가 부담과 내수 부진이 공통 변수로 남아 있다.",
+        "en": "In the third quarter of 2026, the gap in earnings widened between food and beverage companies with high overseas sales exposure, such as instant noodle and confectionery makers, and those focused on the domestic market. Cost pressure and weak domestic demand remain common variables."
       },
       "overview": {
-        "ko": "식음료 업종은 라면, 제과, 유가공, 주류, 조미료 등 생활 필수 소비재를 아우르며 경기 변동에 상대적으로 둔감한 방어적 성격을 지닌다. 코스피·코스닥 전체 시가총액에서 차지하는 비중은 크지 않지만 KT&G, 삼양식품, 오리온, CJ제일제당 등 대표 소비재 기업이 다수 포함돼 있다. 최근 몇 년간 라면과 과자류를 중심으로 한 K-푸드 수출 확대가 업종 전반의 성장 스토리를 재편하는 핵심 변수로 부상했다. 전통적으로 내수 중심 성장에 머물렀던 업종이 해외 매출 비중 확대를 통해 밸류에이션 재평가 국면을 맞고 있다는 점이 특징적이다. 다만 곡물, 원당, 나프타 등 원자재 대부분을 해외 수입에 의존해 환율과 국제 원자재 가격 변동에 수익성이 민감하게 반응하는 구조다.",
-        "en": "The food and beverage sector spans daily consumer staples such as instant noodles, confectionery, dairy, alcoholic beverages, and seasonings, carrying a defensive profile relatively insulated from economic cycles. While its share of total KOSPI/KOSDAQ market capitalization is modest, the sector includes many prominent consumer companies such as KT&G, Samyang Foods, Orion, and CJ CheilJedang. In recent years, the expansion of K-food exports—led by instant noodles and snacks—has emerged as the central variable reshaping the sector's growth narrative. Notably, a segment traditionally anchored in domestic-led growth is now undergoing a valuation re-rating as overseas sales contribution expands. However, heavy reliance on imported raw materials such as grains, raw sugar, and naphtha leaves profitability highly sensitive to currency and global commodity price swings."
+        "ko": "식음료 업종은 담배, 라면, 제과, 종합식품, 주류·음료, 유가공 등 생활 밀접 품목을 두루 포괄한다. 전체 시장 시가총액에서 차지하는 비중은 크지 않은 편이다. 업종 내에서는 담배와 건강기능식품을 두 축으로 하는 KT&G가 가장 크고, 불닭 브랜드를 앞세운 삼양식품이 그 뒤를 잇는다. 전통적으로 경기 방어적 성격이 강한 업종으로 분류되어 왔지만, 최근에는 수출 비중에 따라 기업별 실적과 주가의 차별화가 두드러진다. 2026년 11월 6일에는 원자재 가격 변동성과 내수 소비 둔화 우려로 식품 업종이 전반적인 약세를 보였다는 보도가 나왔다.",
+        "en": "The food and beverage sector spans everyday categories including tobacco, instant noodles, confectionery, integrated foods, alcoholic and non-alcoholic beverages, and dairy. Its share of total market capitalization is modest. Within the sector, KT&G, which rests on tobacco and health functional foods, is the largest, followed by Samyang Foods, which is led by its Buldak brand. The sector has traditionally been regarded as defensive, but earnings and share performance now diverge sharply by export exposure. On November 6, 2026, one report said food stocks broadly weakened on concerns over raw material price volatility and slowing domestic consumption."
       },
       "structure": {
-        "ko": "밸류체인은 크게 원재료 조달, 가공·제조, 브랜드·유통으로 구분되며 각 단계에서 대표 기업의 포지셔닝이 뚜렷하다. 라면·스낵 부문은 농심과 삼양식품, 오뚜기가 경쟁하며 삼양식품은 불닭 시리즈를 앞세운 수출 확대로 존재감을 키웠다. 종합식품·가공식품군에서는 CJ제일제당이 바이오 사업까지 포괄하는 다각화된 사업구조를 갖추고 있고, 동원산업은 원양어업과 수산물 유통을, 롯데웰푸드는 제과와 빙과를 주력으로 한다. 음료·주류 부문은 롯데칠성과 하이트진로가, 유제품은 빙그레가 대표적이며 KT&G는 담배 본업에 인삼류 사업을 더해 업종 내 최대 시가총액을 보유하고 있다. 동서는 커피 합작사(동서식품) 지분과 식품 유통·제조 사업을 함께 가진 기업이다. 업종 내 상위 소수 종목에 시가총액이 집중되는 경향이 있어 개별 종목의 수출 성과와 가격 전가력이 업종 전반의 체감 경기를 좌우한다.",
-        "en": "The value chain divides broadly into raw material sourcing, processing/manufacturing, and brand/distribution, with clear positioning among leading players at each stage. In instant noodles and snacks, Nongshim, Samyang Foods, and Ottogi compete, with Samyang Foods notably expanding its export presence through its Buldak spicy noodle lineup. Among diversified food companies, CJ CheilJedang operates a business structure that extends into bio, while Dongwon Industries focuses on deep-sea fishing and seafood distribution and Lotte Wellfood on confectionery and ice cream. In beverages and alcohol, Lotte Chilsung and Hite Jinro lead, while Binggrae represents dairy, and KT&G holds the sector's largest market capitalization through its core tobacco business supplemented by ginseng products. Dongsuh holds a stake in the coffee joint venture Dongsuh Foods alongside its own food distribution and manufacturing business. Market capitalization tends to concentrate among a small number of top names, meaning individual export performance and pricing power significantly shape the sector's overall market sentiment."
+        "ko": "라면 부문에서는 삼양식품과 농심이 양대 축이며, 오뚜기는 면제품 외에 양념소스·즉석식품·냉동식품까지 사업을 넓혔다. 제과에서는 한국·중국·베트남·러시아·인도에서 생산하는 오리온과 제과·빙과·식품을 함께 다루는 롯데웰푸드가 대표적이다. 종합식품 부문의 CJ제일제당은 식품과 바이오 소재를 두 축으로 하고, 동원산업은 수산·식품 가공·물류·포장재·건설 계열사를 거느린 사업 지주사다. 주류·음료는 소주와 맥주 중심의 하이트진로, 음료·주류·해외 사업을 축으로 하는 롯데칠성이 맡는다. 빙그레는 유가공을 단일 사업 부문으로 운영하며, 동서는 1975년 설립되어 2016년 유가증권시장에 상장한 중견기업이다. 같은 업종 안에서도 수출 비중, 원재료 구성, 주력 채널이 달라 실적 민감도가 기업마다 크게 다르다.",
+        "en": "In instant noodles, Samyang Foods and Nongshim are the two main players, while Otoki has expanded from noodle products into seasoning sauces, ready-to-eat foods and frozen foods. In confectionery, Orion, which produces in Korea, China, Vietnam, Russia and India, and Lotte Wellfood, which covers confectionery, ice cream and foods, are the representative names. Among integrated food companies, CJ Cheiljedang is built on food and bio materials, and Dongwon Industries is a business holding company with fisheries, food processing, logistics, packaging and construction affiliates. In beverages and alcohol, Hite Jinro centers on soju and beer, and Lotte Chilsung Beverage operates across beverages, alcohol and overseas business. Binggrae runs dairy processing as its single business segment, and Dong Suh Companies is a mid-sized company founded in 1975 and listed on the KOSPI in 2016. Even within the same sector, export exposure, raw material mix and main sales channels differ, so earnings sensitivity varies widely by company."
       },
       "trends": {
-        "ko": "농림축산식품부가 발표한 2026년 상반기 K-푸드 플러스 수출 동향에 따르면 같은 기간 농식품 수출액은 53억 8,190만 달러로 전년 같은 기간보다 5% 가량 늘어 역대 최대를 기록했고, 이 가운데 라면 수출액이 9억 3,540만 달러로 27.9% 늘어 수출 증가를 이끌었다. 2분기 실적에서는 삼양식품의 매출과 영업이익이 전년 동기 대비 각각 39.3%, 46.7% 늘어 수출 호조가 뚜렷하게 반영됐고, 오리온도 매출이 15.0% 늘었다. 롯데웰푸드와 빙그레는 영업이익이 각각 88.5%, 159.9% 늘었다. 반면 상반기 내내 포장재의 원료가 되는 나프타 가격 급등과 높은 환율 등으로 수입 가격이 오르면서 매출에서 차지하는 원가율이 지난 2022년 이후 처음으로 상승 반전하는 등 원가 부담이 업종 전반의 수익성을 압박했다. 이에 따라 CJ제일제당과 롯데칠성은 매출 성장에도 영업이익이 전년 동기 대비 감소하는 모습을 보였다. 하반기 들어서는 잠잠하던 식품 가격이 다시 움직이며, 해태제과 등이 여러 브랜드의 가격을 올리는 등 비용 전가가 재개됐다.",
-        "en": "According to the Ministry of Agriculture, Food and Rural Affairs, agri-food exports rose about 5% year-on-year to a record $5.3819 billion in the first half of 2026, led by instant noodle exports, which climbed 27.9% to $935.4 million. In second-quarter results, Samyang Foods' revenue and operating profit rose 39.3% and 46.7% year-on-year, respectively, clearly reflecting the export tailwind, and Orion's revenue grew 15.0%. Lotte Wellfood and Binggrae grew operating profit 88.5% and 159.9%, respectively. Conversely, cost pressures weighed on sector-wide profitability throughout the first half, as surging naphtha prices and elevated exchange rates drove import costs higher, pushing the cost-of-sales ratio to its first year-on-year increase since 2022. As a result, CJ CheilJedang and Lotte Chilsung saw operating profit decline year-on-year despite revenue growth. Entering the second half, previously stable food prices began to move again, with Haitai Confectionery and others raising prices across multiple brands as cost pass-through resumed."
+        "ko": "2026년 3분기 공시 기준 시총 상위 12개사 가운데 매출이 늘어난 곳은 7곳, 영업이익이 늘어난 곳은 7곳이다. 삼양식품은 매출 7,918억원, 영업이익 1,962억원으로 각각 25.3%, 49.9% 늘었고, 3분기 해외 매출은 전년 동기 대비 29.4% 증가한 6,608억원으로 분기 기준 최대치였다. 오리온은 매출 9,227억원, 영업이익 1,509억원으로 각각 11.3%, 9.4% 늘었으며, 한국과 베트남 법인의 원가 부담에도 중국·러시아 법인이 실적을 뒷받침했다. 롯데웰푸드는 영업이익이 899억원으로 29.7% 늘었고, 해외 법인 영업이익은 231억원으로 137.8% 늘었다. 반면 농심은 영업이익이 497억원으로 8.6% 줄었고, 오뚜기는 363억원으로 34.5%, 롯데칠성은 570억원으로 37.9% 줄었다. 국내에서는 내수 부진 속에 원부자재·물류비 부담과 유통 채널의 판촉 경쟁이 겹쳤다. CJ제일제당은 연결 영업이익이 3,090억원으로 10.8% 줄었으나, CJ대한통운을 제외한 영업이익은 2,030억원으로 6.9% 늘었다.",
+        "en": "Based on third-quarter 2026 filings, among the 12 largest listed companies, seven reported higher sales and seven reported higher operating profit. Samyang Foods posted sales of KRW 791.8 billion and operating profit of KRW 196.2 billion, up 25.3% and 49.9% year on year, and its third-quarter overseas sales rose 29.4% year on year to KRW 660.8 billion, a quarterly record. Orion reported sales of KRW 922.7 billion and operating profit of KRW 150.9 billion, up 11.3% and 9.4%, and its China and Russia units offset cost pressure at the Korean and Vietnamese units. Lotte Wellfood's operating profit rose 29.7% to KRW 89.9 billion, and its overseas units' operating profit rose 137.8% to KRW 23.1 billion. By contrast, Nongshim's operating profit fell 8.6% to KRW 49.7 billion, Otoki's fell 34.5% to KRW 36.3 billion, and Lotte Chilsung Beverage's fell 37.9% to KRW 57.0 billion. In the domestic market, weak demand was compounded by higher raw material and logistics costs and promotional competition among retail channels. CJ Cheiljedang's consolidated operating profit fell 10.8% to KRW 309.0 billion, while its operating profit excluding CJ Logistics rose 6.9% to KRW 203.0 billion."
       },
       "outlook": {
-        "ko": "하반기 전망의 핵심 변수는 원·달러 환율 방향성과 가격 인상 효과의 실적 반영 시점이다. 증권가에서는 상반기 비용 부담 속에서도 실적 방어에 성공한 음식료 업종이 하반기 가격 인상 효과 본격화, 원·달러 환율 하락, 해외 공장 증설 모멘텀을 동시에 맞이하며 재평가 국면에 들어설 것이라는 분석을 내놓았다. 다만 해외 사업 비중이 커지면서 환율 하락의 영향은 기업마다 달라져, 과거처럼 업종 전체를 환율 하락의 수혜로 묶기는 어려워졌다. K-푸드 수출은 라면 편중 구조에서 벗어나 과자, 즉석밥, 냉동식품 등으로 품목 다변화를 모색하는 단계에 있어 이 과정의 성과가 중장기 성장성을 좌우할 전망이다. 내수 소비 둔화가 이어지는 상황에서는 담배·인삼 등 경기 방어적 사업 비중이 큰 기업과 해외 유통망을 확보한 수출 기업 간 체감 경기 격차가 지속될 가능성이 있다.",
-        "en": "The key variables shaping the second-half outlook are the direction of the won-dollar exchange rate and the timing of price-increase effects flowing through to earnings. Market analysts have suggested that the food and beverage sector, having successfully defended earnings despite first-half cost pressures, may enter a re-rating phase as price hikes take full effect, the won strengthens, and overseas capacity expansion gains momentum in the second half. However, as overseas business has grown, the impact of a stronger won now differs by company, making it harder than in the past to treat the whole sector as a beneficiary of currency moves. K-food exports are in a phase of diversifying beyond their heavy reliance on instant noodles toward snacks, instant rice, and frozen foods, and the success of this diversification will likely shape medium-term growth prospects. Amid continued softness in domestic consumption, a persistent gap in perceived business conditions may continue between defensively positioned companies with tobacco or ginseng exposure and export-oriented firms with established overseas distribution networks."
+        "ko": "수출 지표는 성장 동력이 이어지고 있음을 보여준다. 2026년 1~10월 라면 수출액은 15억 8,510만 달러로 전년 동기 대비 26.3% 늘었다. 이는 2025년 연간 실적인 15억 2,090만 달러를 이미 넘어선 규모다. 삼양식품은 4분기 매출이 7,235억원 이상이면 연간 매출 3조원을 달성하게 된다. 한국농수산식품유통공사 조사에서는 2026년 4분기 식품산업 경기전반 전망지수가 102.0, 수출판매 전망지수가 105.2로 모두 기준치 100을 웃돌았다. 관전 포인트는 해외에서 늘어난 판매가 내수 기업의 수익성 회복으로 이어지는지, 그리고 원가 부담이 가격 정책과 환율에 따라 어떻게 흡수되는지다.",
+        "en": "Export indicators show that the growth drivers remain in place. From January to October 2026, instant noodle exports were USD 1.5851 billion, up 26.3% year on year. That figure has already surpassed the full-year 2025 total of USD 1.5209 billion. For Samyang Foods, fourth-quarter sales of KRW 723.5 billion or more would lift full-year sales past KRW 3 trillion. In the Korea Agro-Fisheries & Food Trade Corporation survey, the fourth-quarter 2026 outlook indices were 102.0 for overall food industry conditions and 105.2 for export sales, both above the 100 benchmark. Key points to watch are whether stronger overseas sales translate into a profit recovery for domestically focused companies, and how cost pressure is absorbed through pricing policy and exchange rates."
       },
       "risks": [
         {
           "title": {
-            "ko": "원자재·환율 변동성",
-            "en": "Raw Material and Currency Volatility"
+            "ko": "원재료 가격과 가격 인상 제약",
+            "en": "Raw material prices and limits on price increases"
           },
           "body": {
-            "ko": "곡물, 원당, 나프타 등 핵심 원재료의 해외 의존도가 높아 국제 가격과 원·달러 환율 변동이 원가율에 직접적인 영향을 미친다. 2026년 상반기 주요 식음료 기업들의 매출 원가율이 4년 만에 최고 수준으로 상승한 바 있어 하반기 환율·유가 흐름에 따라 수익성 변동폭이 커질 수 있다.",
-            "en": "Heavy reliance on imported grains, raw sugar, and naphtha means international commodity prices and the won-dollar exchange rate directly affect cost ratios. With the cost-of-sales ratio among major food and beverage companies rising to a four-year high in the first half of 2026, profitability swings could widen depending on second-half currency and oil price trends."
+            "ko": "2026년 3분기 국제 원당 가격은 22.9% 올라 분기 기준 최대 상승 폭을 기록했고, 소맥 가격도 41% 올랐다. 정부는 주요 식품업체에 원가 상승분을 자체 흡수하고 가격 인상을 자제해 달라고 요청해 왔다. 원가 상승을 제품 가격에 반영하기 어려운 구조가 내수 중심 기업의 이익을 압박할 수 있다.",
+            "en": "In the third quarter of 2026, international raw sugar prices rose 22.9%, the largest quarterly increase, and wheat prices rose 41%. The government has publicly asked major food companies to absorb cost increases themselves and refrain from raising prices. A structure in which higher costs are hard to pass through to product prices could weigh on the earnings of domestically focused companies."
           }
         },
         {
           "title": {
-            "ko": "수출 품목 편중 리스크",
-            "en": "Export Concentration Risk"
+            "ko": "내수 소비 부진",
+            "en": "Weak domestic consumption"
           },
           "body": {
-            "ko": "K-푸드 수출 증가세가 라면 품목에 과도하게 집중돼 있어 특정 카테고리의 수요 둔화나 경쟁 심화가 업종 전체 수출 모멘텀에 큰 영향을 줄 수 있다. 과자, 즉석식품 등 후속 품목의 수출 규모가 아직 라면과 상당한 격차를 보이고 있어 다변화 성과가 가시화되기까지 시간이 필요할 수 있다.",
-            "en": "Since the growth in K-food exports is heavily concentrated in instant noodles, a slowdown in that single category or intensifying competition could materially affect sector-wide export momentum. Follow-up categories such as snacks and ready-to-eat foods still trail far behind instant noodles in export scale, meaning diversification results may take time to materialize."
+            "ko": "한국농수산식품유통공사의 3분기 식품산업 경기전반 현황지수는 99.5로 기준치 100을 밑돌았다. 경기가 악화했다고 보는 이유로는 소비량 감소와 내수 부진을 꼽은 응답이 42.8%로 가장 많았다. 해외 비중이 낮은 오뚜기와 롯데칠성, 동서 등은 내수 둔화의 영향을 더 직접적으로 받을 수 있다.",
+            "en": "The Korea Agro-Fisheries & Food Trade Corporation's third-quarter index of current food industry conditions was 99.5, below the 100 benchmark. Among reasons for the deterioration, lower consumption volumes and weak domestic demand were cited most often, at 42.8% of responses. Companies with a low overseas share, such as Otoki, Lotte Chilsung Beverage and Dong Suh Companies, may be more directly exposed to the domestic slowdown."
           }
         },
         {
           "title": {
-            "ko": "내수 소비 둔화 및 가격 인상 저항",
-            "en": "Domestic Consumption Slowdown and Pricing Resistance"
+            "ko": "라면 수출 쏠림과 환율 변수",
+            "en": "Concentration in instant noodle exports and currency effects"
           },
           "body": {
-            "ko": "내수 시장에서는 소비 둔화가 이어지는 가운데 비용 전가를 위한 가격 인상이 소비자 저항이나 판매량 감소로 이어질 가능성이 상존한다. 일부 업체는 가격 인상 대신 중량 축소를 선택하는 등 소비자 체감 부담을 관리하려는 움직임도 나타나고 있어 수익성 개선 속도가 기대에 못 미칠 위험이 있다.",
-            "en": "Amid ongoing domestic consumption softness, price increases implemented to offset cost pressures carry the risk of consumer resistance or declining sales volumes. Some companies have opted to reduce product weight rather than raise prices to manage perceived consumer burden, suggesting the pace of profitability improvement could fall short of expectations."
+            "ko": "2026년 10월 기준 K푸드 전체 수출에서 라면이 차지하는 비중은 약 17.6%에 달한다. 수출 성장이 특정 품목과 일부 기업에 모여 있어 해외 수요가 둔화되면 영향이 클 수 있다. 원화 강세가 수출 기업의 수익성에 미칠 영향도 변수로 꼽힌다.",
+            "en": "As of October 2026, instant noodles account for about 17.6% of total K-food exports. Because export growth is concentrated in a single product category and a few companies, a slowdown in overseas demand could have a large impact. The effect of a stronger won on exporters' profitability is also cited as a variable."
           }
         }
       ],
       "sources": [
-        "https://zdnet.co.kr/view/?no=20260714162133",
-        "https://www.fnnews.com/news/202609081451577171",
-        "https://www.kukinews.com/article/view/kuk202610060200",
-        "https://www.etoday.co.kr/news/view/2622742"
+        "https://m.news.nate.com/view/20261106n23065",
+        "https://www.mydaily.co.kr/page/view/2026111713493586046",
+        "https://www.metroseoul.co.kr/article/20261117500443",
+        "https://supple.kr/news/cmwfj5hn2mxcsal9pw1lrjata",
+        "https://www.etoday.co.kr/news/view/2650393",
+        "https://supple.kr/news/cmvcy1bcz000bny3g9mglakz6",
+        "https://m.news.nate.com/view/20261118n01796",
+        "https://view.asiae.co.kr/article/2026112011132603808"
       ],
       "sector": "식음료",
-      "generatedAt": "2026-10-08 19:21"
+      "generatedAt": "2026-11-21 18:12"
     },
     "IT·소프트웨어": {
       "lead": {
-        "ko": "국내 IT·소프트웨어 업종은 인터넷 플랫폼부터 IT서비스(SI), 보안, 신용정보까지 사업모델이 다양하며, 전사적으로 AI 전환이 실적과 투자 방향을 가르는 핵심 변수로 부상하고 있다.",
-        "en": "Korea's IT and software sector spans internet platforms, IT services (SI), security, and credit information businesses, with AI transformation emerging as the key variable shaping both earnings and investment direction across the board."
+        "ko": "기업의 AI 전환과 클라우드 수요를 받은 IT서비스 기업은 2026년 3분기에 외형과 이익이 함께 늘었고, 플랫폼 기업은 AI 투자 규모에 따라 이익 흐름이 갈린 업종이다.",
+        "en": "In Q3 2026, IT service companies grew both revenue and profit on corporate AI transformation and cloud demand, while platform companies saw profit trends diverge depending on the scale of their AI investment."
       },
       "overview": {
-        "ko": "IT·소프트웨어 업종은 포털·메신저 기반 인터넷 플랫폼, 대기업 계열 IT서비스(SI), 물리보안, 신용평가 등 이질적인 하위 산업을 아우른다. 전체 시장에서 차지하는 비중은 크지 않지만 상장 종목 수가 많아 업종 내 개별 기업 간 규모와 사업 모델의 편차가 큰 편이다. NAVER와 카카오 등 인터넷 플랫폼이 업종 시가총액의 상당 부분을 차지하며, 삼성에스디에스·현대오토에버·LG씨엔에스·포스코DX 등 대기업 계열 IT서비스사들이 그 뒤를 잇는다. 에스원(물리보안), NICE평가정보(신용정보) 등은 안정적 현금흐름을 바탕으로 한 전통적 서비스업 성격이 강하다. 최근에는 거의 모든 하위 산업에서 AI 접목이 공통된 화두로 자리잡으며 업종 전반의 사업 재편이 진행 중이다.",
-        "en": "The IT and software sector encompasses heterogeneous sub-industries including portal and messenger-based internet platforms, conglomerate-affiliated IT services (SI), physical security, and credit rating services. While its overall market weight is modest, the large number of listed companies results in significant variation in scale and business models within the sector. NAVER and Kakao account for a substantial share of sector market capitalization among internet platforms, followed by conglomerate-affiliated IT service firms such as Samsung SDS, Hyundai Autoever, LG CNS, and POSCO DX. Companies like S-1 (physical security) and NICE Information Service (credit information) exhibit more traditional service-industry characteristics underpinned by stable cash flows. Recently, AI integration has become a common theme across nearly every sub-industry, driving broad business restructuring across the sector."
+        "ko": "IT·소프트웨어 업종에는 대기업 IT서비스(시스템통합·클라우드·데이터센터), 인터넷 플랫폼, 보안, 신용정보 등 성격이 다른 사업이 함께 묶여 있다. 상장 종목 수는 업종 가운데 많은 편이지만 전체 시장 시가총액에서 차지하는 비중은 크지 않다. 시가총액 상단은 NAVER, 삼성에스디에스, 카카오가 차지하고 현대오토에버와 LG씨엔에스가 뒤를 잇는다. 삼성에스디에스, LG씨엔에스, 현대오토에버, 포스코DX 같은 그룹 계열 IT서비스사는 모그룹의 디지털 전환 투자 여건이 실적에 직접 반영되는 구조다. 업종 분류상 사업이 다른 회사도 포함되어 있어, 스피어는 발사체 엔진과 노즐 등에 쓰이는 고내열·내식성 특수합금을 OEM 방식으로 제조해 공급한다.",
+        "en": "The IT and software sector groups together businesses of different character, including large-scale IT services (system integration, cloud and data centers), internet platforms, security and credit information. It has one of the larger numbers of listed stocks among the sectors, but its share of total market capitalization is modest. NAVER, Samsung SDS and Kakao occupy the top of the market-cap ranking, followed by Hyundai Autoever and LG CNS. Group-affiliated IT service providers such as Samsung SDS, LG CNS, Hyundai Autoever and POSCO DX Company see their parent groups' digital transformation spending feed directly into their results. The sector also contains companies whose business differs from the classification; Sphere, for example, manufactures high-heat-resistant, corrosion-resistant special alloys on an OEM basis for launch vehicle engines and nozzles."
       },
       "structure": {
-        "ko": "밸류체인 상단에는 클라우드 인프라와 AI 데이터센터 투자를 주도하는 NAVER가 위치하며, 자체 초거대 AI 모델과 검색·커머스·광고 서비스를 결합하는 풀스택 전략을 취하고 있다. 카카오는 대규모 인프라 투자보다 카카오톡이라는 플랫폼 위에서 외부 AI 기술을 결합하는 자산경량형 전략으로 차별화된다. 중간 단계에는 삼성에스디에스·현대오토에버·LG씨엔에스·포스코DX 등 그룹 계열사 시스템 구축·운영(SI)을 기반으로 하는 IT서비스 기업들이 자리하며, 각각 삼성·현대차·LG·포스코 그룹의 내부 IT 수요에 크게 의존하는 구조다. 에스원은 물리보안 서비스, NICE평가정보는 신용정보·데이터 분석 서비스로 영역이 구분되며, NHN은 게임·결제·클라우드 사업을 겸하는 복합 사업자다. 다우기술은 IT 사업을 영위하지만 연결 실적의 대부분이 증권 자회사에서 나오며, 업종 분류상 함께 묶인 스피어(우주 발사체용 소재 공급)와 제이에스링크(유전체 분석)는 IT 서비스와 사업 성격이 다르다.",
-        "en": "At the top of the value chain sits NAVER, which leads cloud infrastructure and AI data center investment while pursuing a full-stack strategy combining proprietary large language models with search, commerce, and advertising services. Kakao differentiates itself through an asset-light strategy that layers external AI technology onto its KakaoTalk platform rather than pursuing large-scale infrastructure investment. The middle tier consists of IT service firms such as Samsung SDS, Hyundai Autoever, LG CNS, and POSCO DX, which are built around system integration and operation for their respective conglomerate affiliates and remain heavily dependent on internal IT demand from Samsung, Hyundai Motor, LG, and POSCO groups respectively. S-1 operates in physical security services while NICE Information Service specializes in credit information and data analytics, and NHN operates as a diversified player spanning gaming, payments, and cloud businesses. Daou Technology runs IT businesses but derives most of its consolidated results from a securities subsidiary, while Sphere (materials supply for space launch vehicles) and JS Link (genome analysis), grouped in the sector by classification, differ in nature from IT services."
+        "ko": "플랫폼 계층에서는 NAVER가 네이버 플랫폼, 파이낸셜 플랫폼, 글로벌 도전 세 부문으로, 카카오가 플랫폼과 콘텐츠 두 부문으로 사업을 나눠 운영한다. IT서비스·인프라 계층에는 IT서비스와 물류를 운영하는 삼성에스디에스, 디지털비즈니스·클라우드&AI·스마트엔지니어링을 두는 LG씨엔에스, 차량 소프트웨어까지 맡는 현대오토에버, IT와 자동화(EIC)를 맡는 포스코DX가 있다. 다우기술은 키움 계열 금융사의 IT 인프라 운영을 맡는 파이낸셜 IT를 중심축으로 두고 있다. 보안·정보 계층에는 일본 SECOM이 최대주주인 에스원, 통합 보안 기업 안랩, 신용정보 회사 NICE평가정보가 있고 NHN은 게임·결제·기술(클라우드) 세 축으로 운영한다. 시가총액은 상위 소수 종목에 몰려 있어 하위 종목과의 격차가 크다. 계열 IT서비스사는 모그룹 의존도가 높아, 현대오토에버는 2025년 매출 4조 2,521억원 가운데 약 96%가 현대차그룹 계열사에서 나왔다.",
+        "en": "In the platform layer, NAVER runs three segments (NAVER Platform, Financial Platform and Global Challenge), while Kakao operates two (Platform and Content). The IT service and infrastructure layer includes Samsung SDS (IT services and logistics), LG CNS (digital business, cloud & AI, and smart engineering), Hyundai Autoever (which also handles vehicle software) and POSCO DX Company (IT and automation, or EIC). Daou Technology centers on financial IT, running the IT infrastructure of Kiwoom-affiliated financial firms. The security and information layer includes S-1, whose largest shareholder is Japan's SECOM, the integrated security company Ahnlab and the credit information provider NICE Information Service, while NHN operates around gaming, payments and technology (cloud). Market capitalization is concentrated in a few top names, leaving a wide gap to the smaller stocks. Affiliated IT service companies depend heavily on their parent groups: about 96% of Hyundai Autoever's 2025 revenue of 4.2521 trillion won came from Hyundai Motor Group affiliates."
       },
       "trends": {
-        "ko": "2026년 2분기 실적은 업종 내 명암이 뚜렷하게 갈렸다. NAVER는 매출이 두 자릿수 증가했으나 영업이익은 전년 동기 수준에 그쳤는데, 이는 AI 인프라 투자 확대에 따른 비용 부담이 반영된 결과로 풀이된다. 반면 카카오는 매출 증가율이 상대적으로 낮았음에도 영업이익이 전년 대비 큰 폭으로 늘었는데, 톡비즈와 금융·모빌리티 중심 수익성 개선 및 비즈니스 메시지 광고와 커머스 거래액 성장이 영업이익 상승을 이끈 것으로 분석됐다. IT서비스 진영에서는 현대오토에버가 매출·이익 모두 두 자릿수 성장을 기록한 반면, 포스코DX는 매출과 이익이 모두 큰 폭으로 감소하며 업황 둔화가 나타났다. 산업 전반적으로는 운영 자동화, 데이터 분석 고도화, 신규 서비스 창출 등 AI를 중심으로 한 시스템 재구성이 공공, 금융, 제조 전반으로 확산되면서 SI 기업들이 전통적 수익 구조를 재정비하는 흐름이 뚜렷하다. 국내 퍼블릭 클라우드 도입률도 전년 대비 상승세를 이어가며 2026년 기준 66%로 전년 62%에서 높아졌고, 공공·방산에서의 도입률이 가장 큰 폭으로 올라 국가 차원의 AI·클라우드 인프라 투자 확대를 보여주고 있다.",
-        "en": "Second-quarter 2026 results showed a clear divergence within the sector. NAVER posted double-digit revenue growth, yet operating profit remained flat year-over-year, reflecting the cost burden of expanding AI infrastructure investment. Kakao, by contrast, achieved a sizable increase in operating profit despite relatively modest revenue growth, driven by improved profitability in its Talk Biz and fintech/mobility businesses alongside growth in business message advertising and commerce transaction volume. Among IT service providers, Hyundai Autoever delivered double-digit growth in both revenue and profit, while POSCO DX experienced a sharp decline in both metrics, signaling a slowdown in certain end-market demand. Across the industry, a broad shift toward AI-centered system restructuring is underway, spreading across public sector, finance, and manufacturing, prompting SI firms to overhaul traditional revenue structures built around infrastructure and maintenance. Domestic public cloud adoption has continued to rise, reaching 66% in 2026 from 62% the prior year, with public sector and defense showing the sharpest increase as national AI and cloud infrastructure investment expands."
+        "ko": "2026년 3분기 공시 기준으로 상위 12개사의 매출은 모두 전년 동기 수준 이상이었고, 영업이익은 8곳이 늘고 3곳이 줄었으며 스피어는 흑자 전환했다. 삼성에스디에스는 연결 매출 3조 7,725억원, 영업이익 2,410억원을 기록했고, 클라우드 매출은 금융권 AI 전환과 조선업종 ERP 구축 등에 힘입어 18% 늘어난 7,961억원이었다. LG씨엔에스는 영업이익이 15.0% 늘었고, AI·클라우드 사업 매출은 9,615억원으로 9.3% 증가해 전체 매출의 약 57%를 차지했다. 현대오토에버는 매출이 16.2% 늘었지만 영업이익은 2.6% 줄었으며, 차량 소프트웨어 사업의 회복이 지연된 점이 영향을 준 것으로 전해졌다. NAVER는 매출이 10.7% 늘었으나 영업이익이 20.9% 줄었는데, 인프라 비용이 신규 컴퓨팅 자산의 감가상각비와 데이터센터 관련 비용 증가로 29.1% 늘었다. 카카오는 영업이익이 15.5% 늘었고, 플랫폼 부문 매출은 1조 2,350억원으로 전년 동기 대비 17% 증가했다.",
+        "en": "Based on Q3 2026 filings, all 12 top companies reported revenue at or above the prior-year level; operating profit rose at eight, fell at three, and Sphere turned profitable. Samsung SDS posted consolidated revenue of 3.7725 trillion won and operating profit of 241.0 billion won, and its cloud revenue rose 18% to 796.1 billion won, helped by financial-sector AI transformation and shipbuilding ERP projects. LG CNS grew operating profit by 15.0%, and its AI and cloud revenue rose 9.3% to 961.5 billion won, about 57% of total revenue. Hyundai Autoever's revenue rose 16.2% while operating profit fell 2.6%, and the delayed recovery of its vehicle software business was cited as a factor. NAVER's revenue rose 10.7% but operating profit fell 20.9%, as infrastructure costs rose 29.1% on depreciation of new computing assets and data center-related expenses. Kakao's operating profit rose 15.5%, and its Platform segment revenue grew 17% year on year to 1.235 trillion won."
       },
       "outlook": {
-        "ko": "향후 업종의 핵심 관전 포인트는 AI 서비스의 실질적 수익화 여부다. NAVER와 카카오 모두 AI 에이전트 기반 신규 서비스를 넓히고 있으며, NAVER는 AI 브리핑 광고를 시작으로 AI 서비스 전반에 수익모델을 붙일 계획으로 광고주 대상 베타 테스트를 진행하고 있다. 수익화 성과가 언제 가시화되는지가 관건이다. IT서비스 기업들에는 GPU 인프라 구축과 AI 솔루션 컨설팅 수요가 늘고 있으며, 국내 클라우드 사업자(CSP)는 자체 칩을 쓰는 글로벌 CSP와 달리 최신 GPU 확보 경쟁에 집중하는 양상이 이어질 것으로 보인다. 국내 퍼블릭 클라우드 소프트웨어 시장은 중기적으로 두 자릿수 성장세가 예상되는 영역으로 꼽히며, 이는 관련 SI·클라우드 매출 확대의 기반이 될 수 있다. 다만 정책 예산 측면에서는 AI 관련 예산이 큰 폭으로 늘어난 반면 클라우드 산업 육성 예산은 줄어드는 등 정책 중심이 인프라에서 AI 응용 서비스로 이동하는 점도 유의할 부분이다.",
-        "en": "The key factor to monitor going forward is whether AI services can achieve tangible monetization. Both NAVER and Kakao are expanding AI agent-based services, and NAVER plans to extend revenue models across its AI offerings starting with AI briefing ads, with advertiser beta tests underway. The key question is when monetization results become visible. Among IT service firms, demand for GPU infrastructure buildout and AI solution consulting is increasing under an AI-first strategy, with domestic cloud service providers continuing to focus on securing the latest GPU capacity in contrast to global hyperscalers pursuing proprietary chip-based full-stack strategies. The domestic public cloud software market is cited as an area poised for double-digit medium-term growth, which could underpin further SI and cloud-related revenue expansion. However, it is also worth noting that policy focus appears to be shifting from infrastructure toward AI application services, as AI-related budgets have risen sharply while cloud industry promotion budgets have declined."
+        "ko": "삼성에스디에스는 2031년까지 AI 인프라, AX·AI 서비스, AI 플랫폼·솔루션, 인수합병 등에 총 10조원을 투자하겠다는 계획을 제시했다. 이 계획의 일환으로 경북 구미에 60MW급 AI 데이터센터를 4,273억원을 들여 건설하며 2028년 준공을 목표로 한다. LG씨엔에스는 2026년 11월 2일 인도네시아 자카르타에 30MW급 AI 데이터센터를 완공했고, 말레이시아·태국·베트남으로 진출하겠다는 구상이다. NAVER는 미국 AI 추론기업과 약 2조원 규모의 컴퓨팅 서비스 공급 계약을 체결했고, 2027년 상반기 상용 서비스 개시와 함께 매출을 순차적으로 반영할 예정이다. 카카오는 2026년 12월 AI 어시스턴트 카나나 스페이스의 파일럿 서비스를 시작하고, 2028년 AI 사업의 손익분기점 도달을 목표로 제시했다. 관전 포인트는 기대를 수주와 매출로 얼마나 빨리 전환하느냐이며, 투자 집행이 이익률에 미치는 영향도 함께 확인할 대상이다.",
+        "en": "Samsung SDS has outlined a plan to invest a total of 10 trillion won through 2031 in AI infrastructure, AX and AI services, AI platforms and solutions, and M&A. As part of this, it is building a 60MW AI data center in Gumi, North Gyeongsang, at a cost of 427.3 billion won, targeting completion in 2028. LG CNS completed a 30MW AI data center in Jakarta, Indonesia on November 2, 2026, and plans to expand into Malaysia, Thailand and Vietnam. NAVER signed a computing service supply contract of about 2 trillion won with a US AI inference company, with revenue to be recognized in stages as commercial service starts in the first half of 2027. Kakao will begin a pilot of its AI assistant Kanana Space in December 2026 and has set a goal of breaking even in its AI business in 2028. The key point to watch is how quickly expectations convert into orders and revenue, along with the effect of investment spending on margins."
       },
       "risks": [
         {
           "title": {
-            "ko": "AI 투자 부담 확대",
-            "en": "Rising AI Investment Burden"
+            "ko": "AI 투자비와 원가 부담",
+            "en": "AI investment and cost burden"
           },
           "body": {
-            "ko": "NAVER를 비롯한 주요 플랫폼 기업들은 GPU·데이터센터 등 AI 인프라에 대규모 자본을 투입하고 있어 단기적으로 수익성 압박 요인이 될 수 있다. 투자 회수 시점과 수익화 속도가 기대에 못 미칠 경우 실적 변동성이 확대될 가능성이 있다.",
-            "en": "Major platform companies including NAVER are deploying substantial capital into AI infrastructure such as GPUs and data centers, which could pressure near-term profitability. If the pace of investment recoupment and monetization falls short of expectations, earnings volatility may increase."
+            "ko": "NAVER의 영업이익률은 약 13.0%로 전년 동기 약 18.2%에서 5.2%포인트 내려갔다. 삼성에스디에스는 별도 기준으로 매출원가가 약 10.0% 늘어 매출 증가율을 웃돌았다. 현대오토에버도 별도 기준으로 매출원가가 16.7% 늘어 매출 증가율을 웃돌았다.",
+            "en": "NAVER's operating margin fell 5.2 percentage points from about 18.2% a year earlier to about 13.0%. At Samsung SDS, on a standalone basis, cost of sales rose about 10.0%, outpacing revenue growth. At Hyundai Autoever, also on a standalone basis, cost of sales rose 16.7%, outpacing revenue growth."
           }
         },
         {
           "title": {
-            "ko": "AI 서비스 수익화 불확실성",
-            "en": "Uncertainty in AI Service Monetization"
+            "ko": "그룹 계열 의존도",
+            "en": "Dependence on parent groups"
           },
           "body": {
-            "ko": "AI 에이전트·검색·커머스 결합 서비스가 다수 출시되고 있으나 아직 안정적 수익모델로 정착했다고 보기는 이르다. 광고·커머스 연계 수익화가 시장 기대만큼 빠르게 확산되지 못할 경우 밸류에이션 재평가가 지연될 수 있다.",
-            "en": "While numerous AI agent, search, and commerce-integrated services have launched, it remains premature to conclude that stable revenue models have taken hold. If advertising and commerce-linked monetization fails to scale as quickly as market expectations, valuation re-ratings could be delayed."
+            "ko": "현대오토에버는 2025년 매출의 약 96%가 현대차그룹 계열사에서 나왔다. 로보틱스 사업의 구체적인 매출 규모와 수익화 시점은 아직 공개되지 않았다. 에스원도 삼성 계열 특수관계자 매출 비중이 높다고 정리한 집계 자료가 있어, 모그룹의 투자 기조 변화가 실적에 영향을 줄 수 있다.",
+            "en": "About 96% of Hyundai Autoever's 2025 revenue came from Hyundai Motor Group affiliates. For its robotics business, the specific revenue scale and the timing of monetization have not yet been disclosed. One compilation also notes that S-1 derives a high share of revenue from Samsung-affiliated related parties, so shifts in a parent group's investment stance can affect results."
           }
         },
         {
           "title": {
-            "ko": "계열사·공공 발주 의존 리스크",
-            "en": "Dependence on Affiliate and Public Sector Orders"
+            "ko": "기대 선반영과 금리 변수",
+            "en": "Priced-in expectations and interest rates"
           },
           "body": {
-            "ko": "삼성에스디에스, 현대오토에버, LG씨엔에스, 포스코DX 등 주요 IT서비스 기업은 소속 그룹 계열사의 IT 투자 집행에 수익이 크게 좌우되는 구조다. 그룹 전반의 설비투자나 공공 IT 예산이 축소될 경우 수주와 실적에 직접적 영향을 받을 수 있다.",
-            "en": "Major IT service firms such as Samsung SDS, Hyundai Autoever, LG CNS, and POSCO DX have revenue structures heavily dependent on IT spending execution by their respective affiliated groups. A reduction in group-wide capital expenditure or public sector IT budgets could directly affect order intake and earnings."
+            "ko": "2026년 5월 27일 삼성에스디에스가 29.78%, 현대오토에버가 19.91%, LG씨엔에스가 14.11% 오르며 시스템통합 종목이 동반 급등했다. 주가 급등이 실적으로 확인되기까지는 시간이 필요하다는 지적이 있다. 금리 인상 가능성이 커지면 고성장주 전반의 밸류에이션 부담도 커질 수 있다.",
+            "en": "On May 27, 2026, Samsung SDS rose 29.78%, Hyundai Autoever 19.91% and LG CNS 14.11%, as system integration stocks surged together. Some observers note that it will take time for the share price surge to be confirmed in earnings. If the likelihood of a rate hike grows, valuation pressure on high-growth stocks as a whole could also increase."
           }
         }
       ],
       "sources": [
-        "https://v.daum.net/v/20260729075440463",
-        "https://www.comworld.co.kr/news/articleView.html?idxno=51882",
-        "http://www.samsungsds.com/kr/insights/enterprise-cloud-survey-2026.html",
-        "https://v.daum.net/v/20260707071102764",
-        "https://busanhaps.com/tech/cloud-computing-services-korea-guide-2026/"
+        "https://zdnet.co.kr/view/?no=20260527182618",
+        "https://www.sentv.co.kr/article/view/sentv202610300201",
+        "https://news.mtn.co.kr/article/2026111616532990087",
+        "https://news.nate.com/view/20261030n30431",
+        "https://www.techm.kr/news/articleView.html?idxno=157280",
+        "https://news.nate.com/view/20261112n36584",
+        "https://news.nate.com/view/20260601n12732",
+        "https://m.news.nate.com/view/20261103n00255",
+        "https://www.mydaily.co.kr/page/view/2026111214255911541",
+        "https://www.kyungjeilbo.com/view/20260601111039385?input=feed_google"
       ],
       "sector": "IT·소프트웨어",
-      "generatedAt": "2026-10-08 18:29"
+      "generatedAt": "2026-11-21 18:05"
     },
     "보험": {
       "lead": {
-        "ko": "금리와 손해율에 민감한 전통 금융업종으로, IFRS17 체제 안착 국면에서 보험사별 실적이 크게 엇갈리고 있는 업종이다.",
-        "en": "A traditional financial sector highly sensitive to interest rates and loss ratios, currently showing wide earnings divergence across insurers as the IFRS17 regime settles in."
+        "ko": "보험 업종은 2026년 3분기에 보험손익 개선과 투자손익 변동이 엇갈리면서, 종목별 영업이익이 증가·감소·적자 전환으로 갈렸다.",
+        "en": "In the third quarter of 2026, the insurance sector saw improving underwriting results offset by volatile investment income, and operating profit at individual names split into increases, declines and swings to losses."
       },
       "overview": {
-        "ko": "보험업은 생명보험, 손해보험(장기·일반·자동차), 재보험, 보증보험, 보험대리점(GA) 등으로 세분화되는 전통 금융 산업이다. 국내 증시에서는 상장 종목 수가 많지 않고 삼성생명과 삼성화재 등 소수 대형사에 시가총액이 크게 쏠려 있는 구조적 특징을 보인다. 생명보험사는 저축성·보장성 보험과 변액보험을, 손해보험사는 자동차·장기보험·일반보험을 주력으로 하며 코리안리는 재보험, 서울보증보험은 보증보험이라는 독자적 영역을 담당한다. 2023년 IFRS17 도입 이후 업계 전반의 경영 초점이 외형 성장보다 계약서비스마진(CSM) 중심의 수익성·자본관리로 이동한 점도 업종 전반의 공통된 특징이다. 저성장 환경과 인구구조 변화 속에서 업종 전체의 성장 탄력은 제한적인 편이다.",
-        "en": "The insurance industry is segmented into life insurance, non-life insurance (long-term, general, and auto), reinsurance, surety insurance, and insurance agencies (GA), representing a traditional pillar of the financial sector. On the Korean market, the number of listed names is relatively limited, with market capitalization heavily concentrated in a few large-cap names such as Samsung Life Insurance and Samsung Fire & Marine Insurance. Life insurers focus on savings-type, protection-type, and variable insurance products, while non-life insurers center on auto, long-term, and general insurance; Korean Re operates in reinsurance and Seoul Guarantee Insurance occupies the distinct surety insurance niche. Since the adoption of IFRS17 in 2023, the industry's management focus has broadly shifted from volume growth toward profitability and capital management centered on the contractual service margin (CSM). Amid a low-growth environment and demographic shifts, overall sector growth momentum remains constrained."
+        "ko": "보험 업종에는 생명보험, 손해보험, 재보험, 보증보험, 독립법인보험대리점(GA)이 함께 분류되어 있다. 상장 종목 수는 업종 가운데 적은 편이고, 전체 시장에서 차지하는 시가총액 비중도 크지 않다. 삼성생명과 삼성화재 두 종목이 업종 시가총액의 절반을 크게 넘어, 업종 흐름은 대형주 중심으로 읽힌다. 이익은 보험 인수에서 나오는 보험손익과 보험료를 운용해 얻는 투자손익으로 구성된다. 그 결과 업종 실적은 보험금 지급 수준과 금융시장 변동에 함께 좌우된다.",
+        "en": "The insurance sector groups life insurers, non-life insurers, a reinsurer, a surety insurer and a general agency (GA) under one classification. It has a relatively small number of listed stocks, and its share of total market capitalization is modest. Samsung Life Insurance and Samsung Fire & Marine Insurance together account for well over half of the sector's market value, so the sector tends to be read through its largest names. Earnings come from underwriting results and from investment income earned on invested premiums. As a result, sector profits depend on both the level of claims paid and financial-market volatility."
       },
       "structure": {
-        "ko": "밸류체인 측면에서는 원수보험을 담당하는 생명·손해보험사가 중심에 있고, 그 위험을 분산하는 재보험사(코리안리), 신용·보증 리스크를 인수하는 보증보험사(서울보증보험), 판매 채널 역할을 하는 GA(에이플러스에셋)가 주변부를 구성한다. 생명보험 대표주는 삼성생명·한화생명·미래에셋생명이며, 손해보험은 삼성화재·DB손해보험·현대해상·한화손해보험·롯데손해보험·흥국화재 등으로 다수를 이룬다. 시가총액 기준으로는 삼성생명과 삼성화재 두 종목이 업종 내 압도적 비중을 차지하고, DB손해보험이 그 뒤를 이어 상위권을 형성하는 집중도 높은 구조다. 중소형 손해보험사들은 자동차보험·장기보험 손해율 변동에 상대적으로 민감하며, 실적 변동성도 대형사 대비 큰 편이다.",
-        "en": "Within the value chain, primary insurers—both life and non-life—sit at the center, flanked by reinsurers that diversify risk (Korean Re), surety insurers that underwrite credit and guarantee risk (Seoul Guarantee Insurance), and GA distribution channels (A-Plus Asset). Representative life insurance names include Samsung Life, Hanwha Life, and Mirae Asset Life, while the non-life segment is populated by a larger group including Samsung Fire & Marine, DB Insurance, Hyundai Marine & Fire, Hanwha General Insurance, Lotte Non-Life Insurance, and Heungkuk Fire & Marine. By market capitalization, Samsung Life and Samsung Fire & Marine together command an overwhelming share of the sector, with DB Insurance following as the next-largest name, reflecting a highly concentrated structure. Mid- and small-cap non-life insurers tend to be relatively more exposed to fluctuations in auto and long-term insurance loss ratios, resulting in comparatively greater earnings volatility than the large-cap peers."
+        "ko": "생명보험에서는 삼성생명이 생명보험을 본업으로 하며 보험서비스손익과 투자손익이 이익의 두 축이다. 한화생명은 생명보험 본업에 손해보험·해외·GA 자회사를 함께 보유한 그룹 구조다. 손해보험에서는 삼성화재가 장기보험, 자동차보험, 일반보험을 본업으로 하고, DB손해보험, 현대해상, 한화손해보험, 롯데손해보험, 흥국화재가 같은 시장에서 경쟁한다. 서울보증보험은 국내 유일의 전업 보증보험사이고, 코리안리는 1963년 설립된 국내 유일의 전업 재보험사다. 에이플러스에셋은 2007년 설립된 GA로 보험사의 판매 채널 역할을 한다. 자동차보험에서는 대형 손보사 4곳의 2026년 상반기 시장점유율이 84.8%로 집중도가 높다.",
+        "en": "In life insurance, Samsung Life Insurance is a life insurer whose earnings rest on two pillars: insurance service results and investment income. Hanwha Life Insurance combines its core life business with non-life, overseas and GA subsidiaries in a group structure. In non-life insurance, Samsung Fire & Marine Insurance focuses on long-term, auto and general insurance, and DB Insurance, Hyundai Marine & Fire Insurance, Hanwha General Insurance, Lotte Non-Life Insurance and Heungkuk Fire & Marine Insurance compete in the same market. Seoul Guarantee Insurance Company is the only dedicated surety insurer in Korea, and Korean Reinsurance Company, founded in 1963, is the only dedicated reinsurer. A Plus Asset Advisor, a GA established in 2007, serves as a sales channel for insurers. Concentration is high in auto insurance, where the four large non-life insurers held an 84.8% market share in the first half of 2026."
       },
       "trends": {
-        "ko": "2026년 2분기 실적은 종목별로 뚜렷하게 엇갈렸다. DB손해보험은 2분기 영업이익이 전년 동기 대비 47.0% 증가했고 한화생명은 160.4% 급증했으며, 현대해상(+33.0%), 코리안리(+26.9%), 흥국화재(+83.8%) 등도 두 자릿수 이상 증가세를 보였다. 반면 삼성생명은 2분기 영업이익이 전년 동기 대비 32.0% 감소했고, 미래에셋생명(-63.6%)과 롯데손해보험(-93.7%)은 큰 폭의 이익 감소를 기록했다. 업황 측면에서는 손해보험업계의 자동차보험이 2026년 상반기 약 1,890억원의 영업손실을 기록하며 2020년 상반기 이후 6년 만에 적자로 돌아섰다. 다만 1분기 손해율은 85.9%로 전년보다 급등했다가 중동전쟁발 고유가로 차량 운행량이 줄면서 2분기엔 다소 개선된 것으로 나타났다. 삼성화재의 경우 보상원가 상승에도 사고율 감소와 손익 관리를 통해 2분기 자동차보험 보험손익이 흑자 전환했다. 한편 신계약 CSM은 한화손해보험 등 일부사에서 분기 최대치를 경신하며 성장세를 이어갔으나, 생명보험 CSM은 2026년에 감소로 돌아설 것으로 추정되고, 손해보험 CSM도 증가율이 크게 둔화될 것으로 제시되는 등 업종 전반의 미래이익 성장 속도는 둔화되는 흐름이다.",
-        "en": "Second-quarter 2026 earnings diverged sharply across names. DB Insurance posted a 47.0% year-on-year increase in operating profit, Hanwha Life surged 160.4%, and Hyundai Marine & Fire (+33.0%), Korean Re (+26.9%), and Heungkuk Fire & Marine (+83.8%) also recorded double-digit or higher growth. In contrast, Samsung Life's operating profit fell 32.0% year-on-year, while Mirae Asset Life (-63.6%) and Lotte Non-Life Insurance (-93.7%) saw sharp declines. On the industry front, Korea's non-life insurers posted an operating loss of roughly KRW 189 billion in auto insurance in the first half of 2026, the first such loss in six years since the first half of 2020. That said, the first-quarter loss ratio spiked to 85.9% year-on-year before improving somewhat in the second quarter as high oil prices from the Middle East conflict reduced vehicle usage. At Samsung Fire & Marine specifically, despite rising claims costs, a decline in accident rates and loss management led its second-quarter auto insurance result to turn profitable. Meanwhile, new-business CSM continued to grow at some insurers, with Hanwha General Insurance setting quarterly records, yet the broader trajectory shows deceleration, as life insurance CSM is estimated to begin declining in 2026, and non-life insurance CSM growth is also expected to slow sharply."
+        "ko": "2026년 3분기 공시 기준 영업이익이 늘어난 곳은 삼성생명 9,377억원(+14.9%), DB손해보험 6,183억원(+40.1%), 한화손해보험 1,207억원(+89.1%), 에이플러스에셋 150억원(+143.5%)이다. 같은 기간 삼성화재는 5,774억원(-13.0%), 현대해상은 2,758억원(-61.0%), 서울보증보험은 391억원(-51.7%), 코리안리는 684억원(-55.5%)으로 영업이익이 줄었다. 한화생명 1,565억원, 미래에셋생명 431억원, 롯데손해보험 1,194억원, 흥국화재 899억원은 영업손실로 돌아섰다. 3분기 누적 기준 보험 본업은 대체로 개선됐지만 투자 부문은 부진했다. 삼성생명과 삼성화재를 제외하면 투자손익이 전년 동기보다 늘어난 곳이 없었다. 자동차보험에서는 5대 손보사의 3분기 손익이 합산 113억원 흑자로, 전년 동기 2,375억원 적자에서 개선됐다.",
+        "en": "On a third-quarter 2026 filing basis, operating profit rose at Samsung Life Insurance to KRW 937.7 billion (+14.9%), DB Insurance to KRW 618.3 billion (+40.1%), Hanwha General Insurance to KRW 120.7 billion (+89.1%) and A Plus Asset Advisor to KRW 15.0 billion (+143.5%). Over the same period, operating profit fell at Samsung Fire & Marine Insurance to KRW 577.4 billion (-13.0%), Hyundai Marine & Fire Insurance to KRW 275.8 billion (-61.0%), Seoul Guarantee Insurance Company to KRW 39.1 billion (-51.7%) and Korean Reinsurance Company to KRW 68.4 billion (-55.5%). Hanwha Life Insurance (KRW 156.5 billion), MIRAE ASSET Life Insurance (KRW 43.1 billion), Lotte Non-Life Insurance (KRW 119.4 billion) and Heungkuk Fire & Marine Insurance (KRW 89.9 billion) swung to operating losses. On a cumulative basis through the third quarter, core insurance results generally improved while investment results were weak. Excluding Samsung Life Insurance and Samsung Fire & Marine Insurance, no major insurer reported higher investment income than a year earlier. In auto insurance, the five large non-life insurers posted a combined profit of KRW 11.3 billion in the third quarter, an improvement from a KRW 237.5 billion loss a year earlier."
       },
       "outlook": {
-        "ko": "향후 관전 포인트는 크게 세 가지다. 첫째, 자동차보험 손해율의 추가 개선 여부로, 업계는 보험료 인상과 할인특약 정비 효과가 하반기로 갈수록 본격화될 것으로 기대하고 있다. 둘째, IFRS17 원칙 중심 회계가 안착하는 과정에서 신계약 CSM 확보 속도와 질적 수익성(가치배수) 개선 여부가 각사 미래이익 체력을 가늠하는 핵심 지표로 남아 있다. 셋째, 2023년 IFRS17 도입 이후 손해율 조정이 보험사의 이익뿐 아니라 CSM, 자본 적정성에도 영향을 미치는 핵심 변수로 떠오르면서 보험료 인상 압력도 지속될 가능성이 있어 규제·보험료 정책 변화가 업종 전반의 비용 구조에 영향을 줄 수 있다. 아울러 시니어·헬스케어 연계 보험상품 개발과 디지털 언더라이팅 고도화 등 신성장동력 모색도 중장기 관전 포인트로 꼽힌다. 자본비율(K-ICS) 관리와 주주환원 정책 확대 여부 역시 대형사를 중심으로 지속적으로 관찰할 필요가 있다.",
-        "en": "Several factors warrant monitoring going forward. First is whether auto insurance loss ratios continue to improve, as the industry expects premium hikes and the restructuring of discount riders to take fuller effect in the second half. Second, as IFRS17's principle-based accounting framework matures, the pace of new-business CSM accumulation and qualitative profitability metrics such as value multiples remain key gauges of each insurer's future earnings capacity. Third, since the introduction of IFRS17 in 2023, loss ratio adjustments have emerged as a key variable affecting not only profits but also CSM and capital adequacy, with continued pressure for premium increases likely, meaning regulatory and pricing policy shifts could continue to shape the sector's cost structure. Additionally, the development of senior- and healthcare-linked insurance products and advances in digital underwriting represent medium-term growth themes worth tracking. Capital ratio (K-ICS) management and the scope of shareholder return policies, particularly among large-cap insurers, also merit ongoing attention."
+        "ko": "첫째 관전 포인트는 자동차보험으로, 대형 4개사의 1~9월 누적 손해율이 84.7%로 손익분기점으로 보는 80%대 초반을 웃돌아 손해율이 계절적으로 높아지는 4분기를 넘겨야 회복 여부를 판단할 수 있다는 분석이 있다. 둘째로 도수치료 관리급여화에 따른 보험금 청구 감소가 예실차 개선 요인으로 거론되어, 장기보험 손해율이 안정될지가 확인 대상이다. 셋째로 미래 이익 지표인 보험계약마진(CSM)은 증가세여서, 삼성생명의 3분기 누적 신계약 CSM은 2조 6,259억원으로 14.3% 늘었다. 넷째로 해외 사업이 이익 기여처로 커지고 있어, 한화생명의 해외법인 이익은 3분기 누적 840억원에서 1,470억원으로 늘었다. 다섯째로 DB손해보험은 미국 보험사 포테그라 손익이 처음 연결로 반영되어, 연결 실적의 해외 비중 변화가 관건이다.",
+        "en": "The first point to watch is auto insurance, where the four large insurers' cumulative January–September loss ratio of 84.7% remains above the low-80% break-even level, and analysts say recovery can only be judged after the fourth quarter, when loss ratios seasonally rise. Second, lower claims following the shift of manual therapy to managed benefits have been cited as a driver of better actual-versus-expected claims results, so whether long-term insurance loss ratios stabilize bears watching. Third, the contractual service margin (CSM), a forward earnings indicator, continues to grow; Samsung Life Insurance's cumulative new-business CSM through the third quarter rose 14.3% to KRW 2.6259 trillion. Fourth, overseas operations are becoming a larger earnings contributor, as Hanwha Life Insurance's overseas subsidiary earnings rose from KRW 84.0 billion to KRW 147.0 billion over the first three quarters. Fifth, DB Insurance consolidated the earnings of the U.S. insurer Fortegra for the first time, so the changing overseas weight in its consolidated results is a key point."
       },
       "risks": [
         {
           "title": {
-            "ko": "자동차·장기보험 손해율 변동성",
-            "en": "Volatility in Auto and Long-Term Insurance Loss Ratios"
+            "ko": "투자손익 변동성",
+            "en": "Investment income volatility"
           },
           "body": {
-            "ko": "자동차보험은 상반기 기준 6년 만에 적자로 전환했으며, 손해율이 손익분기점을 상회하는 구간이 이어지고 있다. 유가·운행량 등 외부 변수에 따라 분기별 손익 변동성이 커질 수 있는 점은 관련 손해보험사 실적의 주요 변수다.",
-            "en": "Auto insurance turned unprofitable in the first half for the first time in six years, with loss ratios persistently above the breakeven threshold. Quarterly earnings volatility tied to external variables such as oil prices and driving volume remains a key factor for non-life insurers exposed to this line."
+            "ko": "삼성화재는 3분기 보험손익이 3,958억원으로 6.9% 늘었지만 투자손익은 2,555억원으로 23.1% 줄었다. 한화생명은 3분기 투자손익이 4,048억원 적자를 내면서 389억원의 분기 순손실을 기록했다. 증시·금리·환율 변동이 분기 이익을 흔드는 구조여서, 4분기 자산운용 성과에 따라 연간 실적이 갈릴 수 있다.",
+            "en": "Samsung Fire & Marine Insurance's third-quarter insurance profit rose 6.9% to KRW 395.8 billion, but its investment income fell 23.1% to KRW 255.5 billion. Hanwha Life Insurance posted a quarterly net loss of KRW 38.9 billion after investment income recorded a KRW 404.8 billion loss in the third quarter. Because equity, interest-rate and exchange-rate moves can swing quarterly earnings, fourth-quarter asset-management results may determine full-year outcomes."
           }
         },
         {
           "title": {
-            "ko": "CSM 성장 둔화와 규제 변화",
-            "en": "Slowing CSM Growth and Regulatory Shifts"
+            "ko": "손해율과 보험료 조정의 한계",
+            "en": "Loss ratios and limits on premium adjustment"
           },
           "body": {
-            "ko": "생명·손해보험 모두 신계약 CSM 증가율이 둔화될 것으로 전망되는 가운데, 수수료 규제 및 손해율·사업비 가이드라인 등 정책 변화가 신계약 확보 전략에 영향을 미칠 수 있다. 이는 업종 전반의 중장기 이익 체력을 좌우하는 변수다.",
-            "en": "With new-business CSM growth projected to slow across both life and non-life insurers, policy changes such as commission regulations and loss ratio/expense guidelines could influence new-business acquisition strategies. This represents a variable shaping the sector's medium- to long-term earnings capacity."
+            "ko": "손보사 전체의 자동차보험은 2026년 상반기에 1,848억원 적자였고, 3분기 흑자는 비가 적게 오고 유가가 올라 운행이 줄어든 영향이 컸다는 업계 평가가 있다. 보험료 인상은 당초 2.5% 안팎에서 금융당국과 협의하며 1%대 초반으로 조정되었다. 정비수가와 인건비 상승 등 원가 요인이 남아 있어 손해율 부담이 재확대될 수 있다.",
+            "en": "Auto insurance across all non-life insurers posted a KRW 184.8 billion loss in the first half of 2026, and industry sources attribute much of the third-quarter profit to light rainfall and reduced driving amid higher fuel prices. The premium increase was scaled back from about 2.5% to the low-1% range after discussions with regulators. Cost pressures such as higher repair rates and labor costs remain, so the loss-ratio burden could widen again."
           }
         },
         {
           "title": {
-            "ko": "금리·자본건전성 민감도",
-            "en": "Sensitivity to Interest Rates and Capital Adequacy"
+            "ko": "자본건전성과 규제 부담",
+            "en": "Capital adequacy and regulatory burden"
           },
           "body": {
-            "ko": "보험사 자산운용수익과 K-ICS 비율은 금리 환경 변화에 민감하게 반응하며, 금리 하락이나 해지율 상승 등 비우호적 가정 변경은 자본건전성 지표에 부담을 줄 수 있다. 회사별 리스크 관리 역량에 따라 영향의 폭이 달라질 수 있다.",
-            "en": "Insurers' investment income and K-ICS ratios respond sensitively to shifts in the interest rate environment, and unfavorable assumption changes such as rate declines or rising lapse rates could pressure capital adequacy indicators. The magnitude of impact may vary depending on each company's risk management capabilities."
+            "ko": "2026년 6월 말 경과조치 적용 후 지급여력비율(K-ICS)은 215.2%로 3월 말보다 0.8%포인트 하락했고, 생보사는 206.8%, 손보사는 230.9%였다. 하락 배경은 주가 상승으로 보유 주식의 가격변동 위험이 커지며 요구자본이 늘어난 것이다. 경과조치 적용 전 비율은 203.6%로 이보다 낮아, 자본의 질 관리와 감독 강화가 부담 요인이 될 수 있다.",
+            "en": "At the end of June 2026, the K-ICS solvency ratio after transitional measures was 215.2%, down 0.8 percentage point from the end of March, with life insurers at 206.8% and non-life insurers at 230.9%. The decline reflected higher required capital, as rising share prices increased price-volatility risk on equity holdings. The ratio before transitional measures was 203.6%, lower than the headline figure, so closer oversight of capital quality could become a burden."
           }
         }
       ],
       "sources": [
-        "https://www.newsspace.kr/news/article.html?no=14959",
-        "https://www.nspna.com/news/?mode=view&newsid=824258",
-        "https://www.insjournal.co.kr/news/articleView.html?idxno=28590",
-        "https://www.insjournal.co.kr/news/articleView.html?idxno=29000"
+        "https://www.cbci.co.kr/news/articleView.html?idxno=624732",
+        "https://news.bizwatch.co.kr/article/finance/2026/11/13/0042",
+        "https://www.goodkyung.com/news/articleView.html?idxno=293515",
+        "https://biz.heraldcorp.com/article/10938139",
+        "https://www.mediapen.com/news/view/1138290",
+        "https://www.hankyung.com/article/2026111236841",
+        "https://www.asiatoday.co.kr/kn/view.php?key=20261117010006662",
+        "https://m.news.nate.com/view/20260916n27049",
+        "http://www.srtimes.kr/news/articleView.html?idxno=212609"
       ],
       "sector": "보험",
-      "generatedAt": "2026-10-08 19:21"
+      "generatedAt": "2026-11-21 18:05"
     },
     "바이오·제약": {
       "lead": {
-        "ko": "CDMO와 바이오시밀러를 축으로 한 대형사들의 실적 성장과 중소형 신약 개발사들의 기술력 재평가가 동시에 진행되는 업종이다.",
-        "en": "A sector where large-cap CDMO and biosimilar makers post steady earnings growth while mid- and small-cap drug developers undergo a fresh re-rating of technological competitiveness."
+        "ko": "바이오시밀러·피하주사 플랫폼·신약 직판 기업의 이익이 늘어난 반면 적자 기업과 약가 부담을 안은 기업이 공존해, 2026년 3분기 공시 기준으로 종목별 차별화가 뚜렷한 업종이다.",
+        "en": "Profits grew at biosimilar, subcutaneous-platform and directly marketed new-drug companies, while loss-making firms and companies facing drug-price pressure coexist, so the sector shows clear stock-by-stock divergence in the Q3 2026 filings."
       },
       "overview": {
-        "ko": "바이오·제약 업종은 위탁개발생산(CDMO), 바이오시밀러, 합성신약·바이오신약 개발, 백신 등 다양한 사업모델이 혼재된 산업이다. 상장 종목 수가 많아 코스피·코스닥을 통틀어 가장 세분화된 업종 중 하나이며, 전체 시장에서 차지하는 비중도 작지 않은 수준이다. 삼성바이오로직스와 셀트리온 두 대형주가 업종 시가총액의 상당 부분을 차지하면서 나머지 다수 종목은 연구개발 단계나 기술이전 기대감에 따라 주가 변동성이 큰 특징을 보인다. 최근에는 미국의 생물보안법 시행 등 글로벌 공급망 재편 이슈가 업종 전반의 관심을 끌고 있다. 전통 제약사와 바이오 플랫폼 기업이 공존하면서 실적 안정성과 기술 성장성이 함께 평가받는 구조다.",
-        "en": "The bio-pharma sector encompasses a mix of business models including contract development and manufacturing (CDMO), biosimilars, synthetic and biologic new drug development, and vaccines. With a very large number of listed names, it is one of the most fragmented sectors across the KOSPI and KOSDAQ, and it still accounts for a meaningful share of the overall market. Samsung Biologics and Celltrion together represent a substantial portion of the sector's market capitalization, while the remaining names tend to show high share-price volatility tied to R&D progress or licensing expectations. Recently, global supply-chain realignment triggered by the U.S. Biosecure Act has drawn broad sector attention. Traditional pharmaceutical companies coexist with biotech platform firms, so both earnings stability and technological growth potential are weighed together by the market."
+        "ko": "바이오·제약 업종에는 바이오의약품 위탁개발생산, 바이오시밀러, 플랫폼 기술, 신약, 백신, 전통 제약, 에스테틱 같은 서로 다른 사업이 함께 묶여 있다. 상장 종목 수는 업종 가운데 많은 편이다. 그러나 시가총액은 소수 대형주에 쏠려 있다. 삼성바이오로직스와 셀트리온 두 종목이 업종 시가총액의 절반에 가까운 비중을 차지한다. 업종이 전체 시장 시가총액에서 차지하는 비중은 한 자릿수 초반이다. 2026년 11월 20일 코스피 지수는 4928.51로 개장해 10월 30일 종가 대비 14.00% 하락했다. 같은 날 에스테틱·바이오시밀러·전통 제약사를 중심으로 외국인과 기관의 매수세가 유입되며 제약·바이오는 하락장 속에서도 상승세를 보였다.",
+        "en": "The biopharma sector bundles very different businesses: biologics contract development and manufacturing, biosimilars, platform technologies, new drugs, vaccines, traditional pharmaceuticals and aesthetics. It has one of the larger numbers of listed stocks among Korean sectors. Its market capitalization, however, is concentrated in a handful of large caps. Samsung Biologics and Celltrion together account for close to half of the sector's market value. The sector's share of total market capitalization is in the low single digits. On November 20, 2026 the KOSPI opened at 4928.51, down 14.00% from its October 30 close. That day, buying by foreign and institutional investors in aesthetics, biosimilars and traditional drugmakers lifted the sector even as the market fell."
       },
       "structure": {
-        "ko": "가치사슬 최상단에는 바이오의약품 위탁생산을 담당하는 삼성바이오로직스가 있으며, 글로벌 상위 제약사들을 고객사로 확보한 대규모 생산 캐파가 경쟁력의 핵심이다. 셀트리온은 자체 바이오시밀러 개발·판매와 더불어 미국 현지 생산시설 확보를 통한 CDMO 영역 확장을 동시에 추진하고 있다. 알테오젠은 피하주사 제형 변환 플랫폼 기술을 보유해 글로벌 제약사와의 기술이전 구조로 수익을 창출하는 중간 단계 역할을 한다. 한미약품·유한양행·SK바이오팜 등은 합성신약 및 신약 파이프라인 중심의 전통적 제약 모델을 유지하고 있으며, HLB·펩트론 등은 임상 개발 단계에 있는 바이오텍으로 분류된다. 삼성에피스홀딩스는 바이오시밀러 지주 구조로 분리된 기업이며, SK바이오사이언스는 백신 생산을 전문으로 한다. 이처럼 밸류체인 단계별로 대표 종목이 뚜렷이 나뉘어 있어 업종 내 집중도는 CDMO 영역에서 특히 높게 나타난다.",
-        "en": "At the top of the value chain sits Samsung Biologics, which handles contract manufacturing of biologic drugs, with its large-scale production capacity serving top global pharmaceutical clients as its core competitive edge. Celltrion is simultaneously pursuing its own biosimilar development and sales business while expanding into the CDMO space through U.S.-based production facilities. Alteogen occupies a mid-chain role, monetizing its subcutaneous injection formulation conversion platform through licensing arrangements with global pharmaceutical companies. Hanmi Pharmaceutical, Yuhan Corporation, and SK Biopharmaceuticals maintain traditional pharmaceutical models centered on synthetic drug and new drug pipelines, while HLB and Peptron are classified as clinical-stage biotech developers. Samsung Epis Holdings operates as a biosimilar holding structure spun off separately, and SK Bioscience specializes in vaccine production. Because representative companies are clearly segmented by value-chain stage, concentration within the sector is particularly pronounced in the CDMO segment."
+        "ko": "삼성바이오로직스(Samsung Biologics)는 고객의 바이오의약품을 대신 생산하는 위탁생산과 공정 개발을 맡는 위탁개발을 함께 하는 위탁개발생산(CDMO) 기업이다. 삼성에피스홀딩스(Samsung Epis Holdings)는 삼성바이오로직스의 인적분할로 2025년 11월 3일 설립된 바이오 투자 지주회사다. 셀트리온(Celltrion)은 바이오시밀러를 개발해 생산·판매하며 매출의 핵심 무대는 유럽과 미국이다. 알테오젠(Alteogen)은 정맥주사 의약품을 피하주사 제형으로 바꾸는 하이브로자임 플랫폼을 중심으로 사업을 편다. 신약 쪽에서는 SK바이오팜(SK biopharmaceuticals)이 뇌전증 치료제 세노바메이트를, 한미약품(Hanmi Pharm)이 전문의약품 판매와 신약 연구개발을 두 축으로 삼는다. 백신의 SK바이오사이언스(SK Bioscience), 안과 중심의 삼천당제약(Sam Chun Dang Pharm), 연어 DNA 유래 소재를 쓰는 재생의학 기업 파마리서치(PharmaResearch)도 업종에 포함된다.",
+        "en": "Samsung Biologics is a contract development and manufacturing organization (CDMO) that combines contract manufacturing of clients' biologics with process development. Samsung Epis Holdings is a bio investment holding company established on November 3, 2025 through a spin-off from Samsung Biologics. Celltrion develops, manufactures and sells biosimilars, with Europe and the United States as its core markets. Alteogen builds its business around the Hybrozyme platform, which converts intravenous drugs into subcutaneous formulations. In new drugs, SK biopharmaceuticals centers on the epilepsy treatment cenobamate, while Hanmi Pharm rests on two pillars: prescription drug sales and new-drug R&D. SK Bioscience in vaccines, Sam Chun Dang Pharm with its ophthalmology focus, and PharmaResearch, a regenerative medicine company using salmon-DNA-derived materials, round out the sector."
       },
       "trends": {
-        "ko": "2026년 2분기 공시 기준으로 삼성바이오로직스는 매출 1조 3,209억원, 영업이익 5,864억원을 기록하며 전년 동기 대비 두 자릿수 영업이익 성장을 이어갔다. 셀트리온은 같은 기간 매출 1조 3,937억원, 영업이익 4,518억원으로 전년 동기 대비 각각 45.0%, 86.3% 증가하며 신규 제품군 확대 효과가 본격화되는 모습을 보였다. 알테오젠은 매출이 전년 동기 대비 269.5% 늘고 영업이익이 흑자로 전환되며 기술이전 수익의 반영이 뚜렷해졌고, 한미약품도 영업이익이 116.9% 증가하는 등 중견 제약사들의 실적 개선세가 확인된다. 반면 HLB와 펩트론은 각각 영업손실이 지속되며 임상 개발 비용 부담이 이어지고 있고, SK바이오사이언스는 매출이 소폭 감소하며 영업손실을 기록했다. 업황 측면에서는 미국의 생물보안법 시행에 따라 글로벌 제약사들의 공급망이 중국에서 벗어나려는 흐름이 가속화되고 있으며, 국내 CDMO 기업들이 이 과정에서 수주 기회를 확대하고 있다는 분석이 나온다.",
-        "en": "Based on second-quarter 2026 filings, Samsung Biologics reported revenue of KRW 1.3209 trillion and operating profit of KRW 586.4 billion, extending double-digit year-on-year operating profit growth. Celltrion posted revenue of KRW 1.3937 trillion and operating profit of KRW 451.8 billion over the same period, up 45.0% and 86.3% year-on-year respectively, reflecting the full effect of its expanding new product lineup. Alteogen saw revenue surge 269.5% year-on-year and turn operating profit positive as licensing income became more pronounced, while Hanmi Pharmaceutical's operating profit grew 116.9%, confirming an earnings improvement trend among mid-tier pharmaceutical companies. In contrast, HLB and Peptron continued to post operating losses amid ongoing clinical development cost burdens, and SK Bioscience recorded a slight revenue decline alongside an operating loss. Industry commentary notes that the U.S. Biosecure Act has created growing opportunity as global pharmaceutical companies diversify away from China, with domestic CDMO firms expected to capture a portion of the resulting order volume."
+        "ko": "셀트리온은 2026년 3분기 공시 기준 매출 1조 5,755억원으로 전년 동기 대비 53.1%, 영업이익 5,253억원으로 74.3% 증가했다. 신규 제품군 매출은 9,058억원으로 약 74% 늘었고 바이오 제품 매출에서 차지하는 비중은 67%로 높아졌다. 삼성바이오로직스는 3분기 매출 1조 4,903억원, 영업이익 6,401억원을 기록했으며 두 수치 모두 분기 기준 사상 최대다. 다만 3분기 영업이익률은 약 43.0%로 전년 동기 약 50.4%보다 낮아졌다. 알테오젠은 매출 1,198억원(+144.4%), 영업이익 789억원(+195.8%)을 냈고, SK바이오팜은 매출 2,584억원(+34.8%), 영업이익 1,163억원(+65.9%)을 기록했다. 반면 한미약품은 영업이익이 378억원으로 31.3% 줄었고, HLB는 275억원, SK바이오사이언스는 112억원의 영업손실을 이어갔다. 전통 제약업계에서는 약가인하에 따른 매출 감소와 인력 감축이 맞물린 악순환을 우려하고 있다.",
+        "en": "Celltrion reported Q3 2026 revenue of KRW 1,575.5 billion, up 53.1% year on year, and operating profit of KRW 525.3 billion, up 74.3%. Revenue from its new product group rose about 74% to KRW 905.8 billion, and the group's share of biologics sales climbed to 67%. Samsung Biologics posted Q3 revenue of KRW 1,490.3 billion and operating profit of KRW 640.1 billion, both record highs on a quarterly basis. However, its Q3 operating margin was about 43.0%, lower than about 50.4% a year earlier. Alteogen reported revenue of KRW 119.8 billion (+144.4%) and operating profit of KRW 78.9 billion (+195.8%), while SK biopharmaceuticals posted revenue of KRW 258.4 billion (+34.8%) and operating profit of KRW 116.3 billion (+65.9%). By contrast, Hanmi Pharm's operating profit fell 31.3% to KRW 37.8 billion, and HLB and SK Bioscience continued to post operating losses of KRW 27.5 billion and KRW 11.2 billion. Traditional drugmakers worry that revenue declines from drug price cuts and headcount reductions could feed a vicious cycle."
       },
       "outlook": {
-        "ko": "삼성바이오로직스는 세계 최대 수준의 바이오의약품 생산능력을 바탕으로 수주를 늘려 가고 있다. 셀트리온은 릴리의 뉴저지 브랜치버그 공장을 인수해 미국 내 생산시설을 확보함으로써 관세 리스크에 대응하는 동시에 CDMO 사업 확장을 병행하고 있어, 바이오시밀러와 위탁생산 두 영역에서의 성장 동력을 동시에 갖추고 있다. 글로벌 CDMO 시장 자체도 구조적 성장이 예상되는 영역으로 평가되며, 국내 상위 기업들의 생산 캐파 확충이 이러한 시장 확대와 맞물려 있다는 점이 관전 포인트다. 알테오젠과 같은 플랫폼 기술 기업의 추가 기술이전 성과, 한미약품·유한양행 등 전통 제약사들의 신약 파이프라인 진전 여부도 기업 간 차별화의 기준이 될 것으로 보인다. 다만 대형사들의 사상 최대 수준 실적 발표에도 주가 반응은 기업별로 엇갈리고 있어, 향후에는 생산 안정성과 글로벌 고객 신뢰 확보 능력이 평가의 핵심 변수로 부각될 가능성이 있다.",
-        "en": "Samsung Biologics continues to expand orders on the strength of one of the world's largest biologics manufacturing capacities. Celltrion has secured U.S.-based manufacturing capacity by acquiring Eli Lilly's Branchburg, New Jersey facility to address tariff risk, while simultaneously expanding its CDMO business, giving it growth drivers in both biosimilars and contract manufacturing. The global CDMO market itself is viewed as an area of structural growth, and the capacity expansion underway at leading domestic firms is closely tied to this broader market expansion. Additional licensing achievements from platform technology firms such as Alteogen, as well as pipeline progress at traditional pharmaceutical companies like Hanmi Pharmaceutical and Yuhan Corporation, are likely to serve as benchmarks for differentiation within the sector. However, even as large-cap companies report record earnings, share price reactions have diverged by company, suggesting that production stability and the ability to secure global customer trust may emerge as key evaluation variables going forward."
+        "ko": "삼성바이오로직스는 2026년 연간 매출 성장률 전망치를 기존 15~20%에서 20%로 상향했다. 수익성 확대 시점은 5공장 상업생산 전환이 본격화되는 2027년 하반기 이후로 전망된다. 글로벌 펩타이드 CDMO 기업 폴리펩타이드그룹(PolyPeptide Group)의 공개매수에서는 지분 87.88%를 확보했다. 유상증자 납입은 2026년 11월 17일에 완료됐고 폴리펩타이드 주식 양수 예정일은 12월 31일이다. 셀트리온은 신규 제품군 비중을 2026년 연말까지 70%로 확대할 계획이다. 하나증권은 최근 헬스케어 업종 상승을 코스피 상장 제약사가 이끌었고 이들을 제외하면 기술이전 건수는 부진했다고 분석했다. 한미약품은 2026년 10월 29일 GC녹십자와 공동개발 중인 후보물질 HM15421을 미국 바이오마린에 이전하는 계약을 발표했다.",
+        "en": "Samsung Biologics raised its 2026 annual revenue growth guidance from 15–20% to 20%. Profitability expansion is expected after the second half of 2027, when commercial production at Plant 5 gets fully under way. In its tender offer for PolyPeptide Group, a global peptide CDMO, the company secured an 87.88% stake. The rights offering payment was completed on November 17, 2026, and the scheduled date for the transfer of PolyPeptide shares is December 31. Celltrion plans to raise the share of its new product group to 70% by the end of 2026. Hana Securities noted that KOSPI-listed drugmakers led the recent rise in healthcare, and that technology transfer deals were sluggish outside these companies. On October 29, 2026, Hanmi Pharm announced a contract to transfer HM15421, a candidate co-developed with GC Biopharma, to BioMarin of the United States."
       },
       "risks": [
         {
           "title": {
-            "ko": "임상 개발 지연 및 자금 조달 부담",
-            "en": "Clinical Development Delays and Funding Burden"
+            "ko": "대형 투자와 수익성 괴리",
+            "en": "Gap between large investments and profitability"
           },
           "body": {
-            "ko": "HLB, 펩트론 등 임상 단계 바이오텍은 영업손실이 지속되는 구조로, 신약 개발 성과가 지연되거나 임상에 실패할 경우 자금 조달 압박이 커질 수 있다. 임상 결과 발표 시점을 둘러싼 주가 변동성도 상시적인 위험 요인이다.",
-            "en": "Clinical-stage biotech firms such as HLB and Peptron operate with persistent operating losses, so any delay in new drug development or clinical trial failure could intensify funding pressure. Share price volatility around clinical trial result announcements also remains a constant risk factor."
+            "ko": "삼성바이오로직스의 2026년 3분기 영업이익률은 약 43.0%로 전년 동기 약 50.4%보다 낮아졌다. 5공장 신축, 미국 록빌 공장 인수, 폴리펩타이드 그룹 인수 등 대형 투자가 아직 수익성 확대로 이어지지 않은 과도기라는 평가가 있다. 유상증자 납입은 끝났지만 인수 대금 결제가 남아 있고 노사 갈등도 진행 중이다.",
+            "en": "Samsung Biologics' Q3 2026 operating margin was about 43.0%, lower than about 50.4% a year earlier. Some assess that large investments, including the new Plant 5, the US Rockville facility and the PolyPeptide Group acquisition, are in a transition phase and have yet to translate into higher profitability. The rights offering payment is complete, but settlement of the acquisition price remains, and a labor dispute is ongoing."
           }
         },
         {
           "title": {
-            "ko": "글로벌 공급망 정책 변화",
-            "en": "Shifts in Global Supply-Chain Policy"
+            "ko": "약가 정책과 증시 변동성",
+            "en": "Drug-price policy and market volatility"
           },
           "body": {
-            "ko": "미국 생물보안법과 관세 정책 등 통상 환경 변화는 국내 CDMO 기업들에 기회 요인으로 작용하고 있지만, 정책 방향이 바뀌거나 시행이 지연될 경우 기대했던 수주 반사이익이 축소될 수 있다. 특정 국가의 정책 결정에 업종 실적이 좌우되는 구조적 의존성이 존재한다.",
-            "en": "Changes in the trade environment, including the U.S. Biosecure Act and tariff policy, are currently working as a tailwind for domestic CDMO companies, but any shift in policy direction or delay in implementation could reduce the anticipated order benefits. A structural dependence exists whereby sector earnings are influenced by specific national policy decisions."
+            "ko": "제약업계는 약가인하에 따른 매출 감소와 인력 감축이 악순환으로 이어질 가능성을 우려한다. 코스피는 2026년 11월 20일 인공지능 산업 투자 불확실성과 대외 금리 부담 속에 조정을 받았다. 업종이 상대적으로 선방했더라도 시장 전반의 위험 회피가 커지면 변동성이 확대될 수 있다.",
+            "en": "The pharmaceutical industry worries that revenue declines from drug price cuts and headcount reductions could turn into a vicious cycle. On November 20, 2026 the KOSPI corrected amid uncertainty over investment in artificial intelligence and external interest-rate pressure. Even if the sector has held up relatively well, stronger risk aversion across the market could widen its volatility."
           }
         },
         {
           "title": {
-            "ko": "실적과 주가 괴리 및 운영 리스크",
-            "en": "Earnings-Valuation Divergence and Operational Risk"
+            "ko": "실적 편차와 미국 시장 침투 속도",
+            "en": "Earnings dispersion and pace of US market penetration"
           },
           "body": {
-            "ko": "대형사들이 사상 최대 수준의 실적을 기록하고 있음에도 주가 반응은 기업별로 상이하게 나타나며, 노사 관계나 공급 안정성 같은 운영상의 이슈가 평가에 영향을 미치고 있다. 실적 호조가 반드시 주가 상승으로 이어지지 않는 구조적 특성을 유의할 필요가 있다.",
-            "en": "Even as large-cap companies post record earnings, share price reactions vary by company, with operational issues such as labor relations and supply stability influencing market assessment. It is worth noting the structural characteristic whereby strong earnings do not necessarily translate into share price gains."
+            "ko": "HLB는 2026년 3분기 영업손실 275억원, SK바이오사이언스는 112억원으로 적자가 이어졌다. 셀트리온의 3분기 당기순이익은 784억원으로 전년 동기 3,319억원 대비 약 76.4% 감소했다. 미국에서는 보험사의 선호의약품 지정뿐 아니라 의료진의 처방과 환자의 제품 전환 여부에 따라 바이오시밀러의 시장 침투 속도가 달라질 수 있다.",
+            "en": "HLB and SK Bioscience continued to post operating losses in Q3 2026, of KRW 27.5 billion and KRW 11.2 billion. Celltrion's Q3 net profit was KRW 78.4 billion, down about 76.4% from KRW 331.9 billion a year earlier. In the United States, the pace of biosimilar market penetration can vary with insurers' preferred-drug listings as well as physician prescribing and patient switching."
           }
         }
       ],
       "sources": [
-        "https://www.thebionews.net/news/articleView.html?idxno=21165",
-        "https://www.dailypharm.com/user/news/39346",
-        "https://view.asiae.co.kr/en/article/2025121610243935832"
+        "https://www.ebn.co.kr/news/articleView.html?idxno=1732442",
+        "https://www.biotimes.co.kr/news/articleView.html?idxno=35608",
+        "https://www.hankyung.com/article/2026102167331",
+        "https://www.upkoreanews.kr/news/articleView.html?idxno=100894",
+        "https://www.hitnews.co.kr/news/articleView.html?idxno=80766",
+        "https://www.huffingtonpost.kr/article/261564",
+        "https://www.ftoday.co.kr/news/articleView.html?idxno=367818",
+        "https://www.sano.co.kr/%EC%82%BC%EC%84%B1%EB%B0%94%EC%9D%B4%EC%98%A4%EB%A1%9C%EC%A7%81%EC%8A%A4-%EC%9C%A0%EC%83%81%EC%A6%9D%EC%9E%90-%EB%82%A9%EC%9E%85-%EC%99%84%EB%A3%8C-%EC%9D%B4%ED%9B%84-%EA%BC%AD-%EC%82%B4%ED%8E%B4",
+        "https://kpenews.com/View.aspx?No=4322586",
+        "https://finance.thesmileinfo.com/2026/11/bio.html"
       ],
       "sector": "바이오·제약",
-      "generatedAt": "2026-10-08 19:06"
+      "generatedAt": "2026-11-21 18:05"
     },
     "화장품": {
       "lead": {
-        "ko": "K-뷰티 수출이 미국·유럽 중심으로 구조적 확장을 이어가며 화장품 업종 전반의 실적 개선이 뚜렷하게 나타나고 있는 국면이다.",
-        "en": "K-beauty exports continue to expand structurally around the US and Europe, driving a broad-based earnings recovery across the cosmetics sector."
+        "ko": "2026년 3분기 공시 기준으로 상위 12개 종목 가운데 11곳의 영업이익이 전년 동기 대비 늘었다. 화장품 수출이 역대 최대 흐름을 이어가는 가운데 업종 내 실적 편차는 뚜렷해졌다.",
+        "en": "In 3Q 2026 filings, 11 of the 12 largest names reported higher operating profit year on year. Cosmetics exports continue to set records, but earnings dispersion within the sector has widened."
       },
       "overview": {
-        "ko": "화장품 업종은 브랜드사, 위탁개발생산(ODM) 전문기업, 용기·부자재 기업, 유통·브랜드사 등으로 구성된 소비재 산업이다. 코스피·코스닥을 합쳐 상장 종목 수는 다른 업종에 비해 적은 편이지만, 에이피알·아모레퍼시픽 등 개별 종목의 시가총액이 커지면서 업종 내 쏠림이 존재한다. 업종 전체 시가총액이 전체 시장에서 차지하는 비중은 크지 않으나, 해외 매출 비중이 높아지면서 투자자들의 관심이 꾸준히 이어지고 있다. 아모레퍼시픽과 LG생활건강은 브랜드와 생활용품을 함께 영위하는 종합 소비재 기업이고, 코스맥스·한국콜마·코스메카코리아·한국화장품제조는 브랜드사의 제품을 위탁 개발·생산하는 ODM 기업으로 분류된다. 실리콘투는 국내 인디 브랜드 제품을 해외에 유통하는 수출 유통 기업이며, 펌텍코리아는 화장품 용기를 전문으로 생산하는 부자재 기업이다.",
-        "en": "The cosmetics sector comprises brand owners, original development and manufacturing (ODM) specialists, packaging and materials makers, and export distributors within the consumer goods space. Combined across the KOSPI and KOSDAQ, the number of listed names is relatively small compared with other sectors, though the growing market capitalization of individual names such as APR and Amorepacific has created concentration within the sector. The sector's aggregate market capitalization accounts for a modest share of the overall market, but rising overseas sales exposure continues to draw sustained investor attention. Amorepacific and LG H&H operate as diversified consumer goods companies spanning brands and household products, while Cosmax, Kolmar Korea, Cosmecca Korea, and Hankook Cosmetics Manufacturing are classified as ODM firms that develop and manufacture products on behalf of brand owners. Silicon 2 is an export distributor that supplies domestic indie brand products to overseas retailers, while Pum-tech Korea specializes in manufacturing cosmetics containers as a materials supplier."
+        "ko": "화장품 업종은 브랜드사, 위탁생산(ODM·OEM) 기업, 패키징 업체, 해외 유통사가 함께 속한 소비재 업종이다. 상장 종목 수는 업종 가운데 적은 편이며, 시가총액은 전체 시장의 1%에 못 미친다. 시가총액 상위권에는 에이피알과 아모레퍼시픽이 있고, LG생활건강·코스맥스·한국콜마가 뒤를 잇는다. 2026년 1~10월 화장품 누적 수출액은 125억 6,900만 달러로, 2025년 연간 수출액 114억 1,800만 달러를 이미 넘어섰다. 이처럼 수출이 실적의 핵심 변수여서 업종은 해외 수요와 통상 환경에 민감하게 반응하는 특성을 보인다.",
+        "en": "The cosmetics sector is a consumer-goods group that includes brand owners, contract manufacturers (ODM/OEM), packaging makers and overseas distributors. It has relatively few listed companies, and its share of total market capitalization is below 1%. APR and Amorepacific rank at the top by market value, followed by LG H&H, Cosmax and Kolmar Korea. Cumulative cosmetics exports for January to October 2026 reached US$12.569 billion, already above the full-year 2025 figure of US$11.418 billion. Because exports are the key earnings driver, the sector tends to react sharply to overseas demand and the trade environment."
       },
       "structure": {
-        "ko": "가치사슬은 원료·부자재 조달부터 제형 개발, 생산, 브랜드 마케팅, 유통까지 이어진다. 상류 단계에서는 펌텍코리아가 용기 금형 설계부터 사출·증착까지 전 공정을 내재화해 부자재를 공급하고, 중류 단계에서는 코스맥스·한국콜마·코스메카코리아·한국화장품제조가 브랜드사의 위탁을 받아 처방 개발과 생산을 대행하는 ODM 구조를 이룬다. 하류 단계의 브랜드사 중 아모레퍼시픽과 LG생활건강은 자체 브랜드와 유통망을 보유한 전통 대형사이고, 에이피알·달바글로벌·브이티·네오팜은 특정 브랜드나 제품군에 집중한 중소형 브랜드사다. 실리콘투는 생산이 아닌 해외 유통 단계에 위치해 인디 브랜드 제품을 매입해 해외 유통업체에 공급하는 역할을 맡는다. ODM 시장은 코스맥스와 한국콜마 양사로 집중도가 높은 편이며, 두 회사의 국내 공장 가동률 상승이 업종 성장의 핵심 축으로 꼽힌다.",
-        "en": "The value chain runs from raw material and components sourcing through formulation development, manufacturing, brand marketing, and distribution. At the upstream stage, Pum-tech Korea supplies packaging by internalizing the entire process from mold design to injection molding and metallization, while at the midstream stage Cosmax, Kolmar Korea, Cosmecca Korea, and Hankook Cosmetics Manufacturing form an ODM structure that develops formulations and manufactures products on commission for brand owners. Among downstream brand owners, Amorepacific and LG H&H are traditional large-cap companies with their own brands and distribution networks, while APR, d'Alba Global, Vt, and NeopharmCO are small and mid-cap brand companies focused on specific brands or product categories. Silicon 2 sits at the overseas distribution stage rather than manufacturing, purchasing indie brand products and supplying them to overseas retailers. The ODM market shows relatively high concentration around Cosmax and Kolmar Korea, with rising utilization rates at their domestic plants cited as a key driver of sector growth."
+        "ko": "브랜드 단계에는 아모레퍼시픽, LG생활건강, 에이피알, 달바글로벌, 네오팜, 마녀공장, 브이티가 있다. 에이피알은 뷰티 디바이스와 화장품을 함께 파는 기업이고, 네오팜은 민감성 화장품 전문 기업이다. 제조 단계에서는 코스맥스, 한국콜마, 코스메카코리아가 고객 브랜드를 대신해 제품을 개발하고 생산한다. 펌텍코리아는 펌프·용기와 튜브 등 화장품 패키징을 맡고, 실리콘투는 K-뷰티 제품을 직매입해 해외 거래처에 공급하는 유통 기업이다. 브랜드 수가 많은 반면 제조와 유통 단계는 소수 기업에 모여 있어, 인디 브랜드의 성장이 ODM과 유통사의 실적으로 이어지는 구조다.",
+        "en": "At the brand level are Amorepacific, LG H&H, APR, d'Alba Global, NeopharmCO, Manyo Factory and VT. APR sells beauty devices alongside cosmetics, while NeopharmCO specializes in sensitive-skin cosmetics. In manufacturing, Cosmax, Kolmar Korea and Cosmecca Korea develop and produce products for client brands. Pum-Tech Korea supplies cosmetics packaging such as pumps, containers and tubes, and Silicon 2 buys K-beauty products directly and supplies overseas customers. Brands are numerous, whereas manufacturing and distribution are concentrated in a few companies, so growth at indie brands tends to flow through to ODM and distribution earnings."
       },
       "trends": {
-        "ko": "2026년 상반기 국내 화장품 수출액은 전년 동기보다 27.3% 늘어난 70억 달러로 역대 모든 상반기 중 최대치를 기록했다. 미국이 상반기 수출의 20.7%를 차지하며 중국(14.4%)을 제치고 최대 수출국 자리를 지켰고, 미국향 수출은 전년 동기보다 41.5% 늘었다. 반면 중국향 수출은 6.6% 줄며 아시아·태평양 지역의 성장 둔화가 뚜렷해졌다. 이 같은 흐름 속에 주요 화장품 기업들은 2026년 2분기에 시장 전망치를 웃도는 실적을 발표했는데, 에이피알은 2분기 매출 7,675억원(전년 동기 대비 +134.2%)과 영업이익 1,906억원(전년 동기 대비 +125.4%)을 기록하며 북미·유럽 매출이 각각 264.6%, 380.3% 급증했다. 아모레퍼시픽은 2분기 영업이익 1,173억원으로 시장 컨센서스를 상회했고, 코스맥스와 한국콜마도 각각 매출 27.5%, 17.8% 늘며 국내 공장 가동률 상승의 수혜를 받았다. 다만 ODM 양사의 북미 사업은 희비가 엇갈렸는데, 코스맥스는 신규 고객 확보로 북미 생산 물량이 늘어난 반면 한국콜마 미국 법인은 2분기 매출이 3.3% 줄고 14억원의 영업손실을 내며 고객 포트폴리오 재편 과정의 공백을 겪었다.",
-        "en": "In the first half of 2026, Korea's cosmetics exports rose 27.3% year on year to $7.0 billion, the highest first-half figure on record. The US accounted for 20.7% of first-half exports, overtaking China (14.4%) to remain the top destination, with exports to the US up 41.5% year on year, while exports to China fell 6.6% amid a slowdown across the Asia-Pacific region. Against this backdrop, major cosmetics companies posted second-quarter 2026 results that exceeded market expectations: APR reported second-quarter sales of KRW 767.5 billion (up 134.2% year on year) and operating profit of KRW 190.6 billion (up 125.4% year on year), with North American and European sales surging 264.6% and 380.3%, respectively. Amorepacific's second-quarter operating profit of KRW 117.3 billion beat market consensus, while Cosmax and Kolmar Korea grew sales 27.5% and 17.8%, respectively, benefiting from higher domestic plant utilization rates. However, the two leading ODM firms diverged in North America, as Cosmax expanded production volume on new client wins while Kolmar Korea's US subsidiary saw second-quarter sales fall 3.3% and post an operating loss of KRW 1.4 billion amid a client portfolio transition."
+        "ko": "3분기 공시 기준 상위 12개 종목 가운데 10곳의 매출이 전년 동기 대비 늘었고, 증가율은 11.1~100.3%였다. 에이피알은 매출 7,731억원으로 100.3% 늘었고 영업이익은 1,606억원으로 67.1% 늘었다. 코스맥스는 영업이익이 94.9%, 달바글로벌은 100.7% 증가했다. 반면 LG생활건강은 매출이 0.2% 줄었지만 영업이익은 52.4% 늘었고, 마녀공장은 매출이 14.1%, 영업이익이 92.0% 감소했다. 2026년 10월 화장품 수출은 14.4억 달러로 57.5% 늘었고, 미국을 중심으로 중국과 EU 등에서 고르게 증가했다. 3분기 기초화장품 수출액은 16억 5,113만 달러로 전년 동기 대비 35.4% 증가했다. 다만 실적 발표가 마무리된 뒤 주요 7개 상장사의 주가는 실적 호조에도 조정을 받았다.",
+        "en": "In 3Q 2026 filings, 10 of the 12 largest names grew revenue year on year, with growth rates of 11.1% to 100.3%. APR's revenue rose 100.3% to KRW 773.1 billion and its operating profit rose 67.1% to KRW 160.6 billion. Operating profit grew 94.9% at Cosmax and 100.7% at d'Alba Global. LG H&H's revenue fell 0.2% while its operating profit rose 52.4%, and Manyo Factory's revenue fell 14.1% and operating profit fell 92.0%. Cosmetics exports in October 2026 rose 57.5% to US$1.44 billion, with growth led by the US and spread across China and the EU. Basic cosmetics exports in the third quarter reached US$1.651 billion, up 35.4% year on year. However, after earnings releases ended, share prices of seven major listed companies pulled back despite the strong results."
       },
       "outlook": {
-        "ko": "수출 다변화는 지속되는 흐름으로 보이며, 기초화장품과 바디케어·홈뷰티 디바이스 등 퍼스널케어 전반에서 수출 증가세가 나타나고 있어 특정 품목이나 지역에 국한되지 않는 구조적 확장이 관전 포인트다. 미국 관세 체계는 2026년 들어 여러 차례 바뀌었는데, 2월 24일 이후 15% 상호관세가 중단되고 7월 24일부터는 최혜국 관세를 포함해 12.5%로 적용되고 있어 관세 부담 추이가 기업별 수익성에 영향을 줄 수 있다. 한국콜마는 유럽 중심의 선케어 수출 호조를 반영해 국내 법인의 연간 성장 가이던스를 높였고, 코스맥스와 한국콜마 모두 3분기에도 해외 수요 확대에 따른 수주 증가가 이어질 것으로 업계에서는 보고 있다. 유통 채널 측면에서는 아마존 중심에서 타겟·월마트·코스트코·세포라·울타 등 미국 오프라인 채널로 입점이 확대되는 흐름이 이어지고 있어, 채널 다변화의 성과가 하반기 이후 실적에 어떻게 반영되는지가 관찰 대상이다.",
-        "en": "Export diversification appears set to continue, with growth broadening across personal care categories including basic skincare, body care, and home beauty devices rather than being confined to specific products or regions, which stands as a key point to watch. The US tariff regime shifted multiple times in 2026: the 15% reciprocal tariff ceased after February 24, and since July 24 a combined rate of 12.5% including the most-favored-nation rate has applied, meaning tariff trends could affect company-level profitability going forward. Kolmar Korea raised its full-year growth guidance for its domestic entity on strong Europe-led sun care exports, and industry observers expect both Cosmax and Kolmar Korea to see continued order growth from expanding overseas demand into the third quarter. On the distribution side, expansion continues from an Amazon-centered presence into US offline channels such as Target, Walmart, Costco, Sephora, and Ulta, making it worth monitoring how this channel diversification translates into results in subsequent periods."
+        "ko": "수출 시장이 미국에서 유럽과 중남미로 넓어지는 점이 성장 동인이다. 중소기업 화장품 수출은 3분기에 북미 33.1%, 유럽 58.6% 늘었고, 중남미는 141.3% 늘었다. 미국에서는 K-브랜드의 대형 유통망 입점이 늘며 중소기업 화장품 수출이 14.5% 증가했다. 11월과 12월 실적이 남아 있어 2026년 연간 수출액은 사상 최대치를 경신할 가능성이 커졌다. 브랜드 성장이 코스맥스, 한국콜마 같은 제조사와 펌텍코리아 같은 패키징 업체의 주문으로 이어지는지가 관전 포인트다. 4분기 실적에서 매출 성장이 영업이익 증가로 이어지는지도 점검할 대목이다.",
+        "en": "The widening of export markets from the US to Europe and Latin America is a growth driver. In the third quarter, cosmetics exports by small and mid-sized firms rose 33.1% to North America and 58.6% to Europe, and rose 141.3% to Latin America. In the US, more K-brand listings at major retail chains lifted these exports by 14.5%. With November and December still to report, full-year 2026 exports are increasingly likely to set a new record. A key point to watch is whether brand growth carries through to orders at manufacturers such as Cosmax and Kolmar Korea and at packaging makers such as Pum-Tech Korea. Fourth-quarter results will also show whether revenue growth continues to convert into operating profit."
       },
       "risks": [
         {
           "title": {
-            "ko": "미국 관세 정책의 불확실성",
-            "en": "Uncertainty over US tariff policy"
+            "ko": "기업별 실적 편차",
+            "en": "Earnings dispersion across companies"
           },
           "body": {
-            "ko": "2026년 들어 미국의 한국산 화장품에 대한 관세율이 15%에서 중단된 뒤 7월 24일부터 12.5%로 재조정되는 등 제도 변화가 잦았다. 관세 부담은 소매 마진과 마케팅 분담금 책정 이전 단계에서 발생하기 때문에 현지 가격 구조 재설계가 필요하며, 추가적인 통상 협상 결과에 따라 기업별 수익성이 달라질 수 있다.",
-            "en": "US tariffs on Korean cosmetics changed frequently through 2026, moving from a 15% reciprocal rate that stopped being collected to a reconfigured 12.5% rate effective July 24. Because the tariff is incurred before retail margins and marketing contributions are set, pricing structures require rebuilding in the US market, and further trade negotiation outcomes could alter company-level profitability."
+            "ko": "3분기 공시 기준 영업이익 증가율은 코스메카코리아 0.1%에서 달바글로벌 100.7%까지 분포했다. 마녀공장은 영업이익이 92.0% 줄었고, LG생활건강은 매출이 0.2% 감소했다. 수출 호조가 모든 종목의 실적 개선으로 이어지지는 않는다.",
+            "en": "Operating profit growth in 3Q filings ranged from 0.1% at Cosmecca Korea to 100.7% at d'Alba Global. Manyo Factory's operating profit fell 92.0%, and LG H&H's revenue declined 0.2%. Strong exports have not translated into better earnings at every company."
           }
         },
         {
           "title": {
-            "ko": "중국 시장 수요 둔화",
-            "en": "Slowing demand in the Chinese market"
+            "ko": "실적과 주가의 괴리",
+            "en": "Gap between earnings and share prices"
           },
           "body": {
-            "ko": "2026년 상반기 중국향 화장품 수출은 전년 동기 대비 6.6% 감소하며 아시아·태평양 지역 전반의 성장 둔화가 나타났다. 중국 사업 비중이 높은 기업일수록 중국 소비 경기와 현지 저가 경쟁 심화에 따른 실적 영향을 더 크게 받을 수 있다.",
-            "en": "Cosmetics exports to China fell 6.6% year on year in the first half of 2026, reflecting a broader slowdown across the Asia-Pacific region. Companies with greater exposure to the Chinese market may be more affected by trends in Chinese consumer spending and intensifying low-price competition locally."
+            "ko": "주요 7개 상장사는 3분기 실적이 좋았는데도 주가가 일제히 조정을 받았다. 실적 기대가 주가에 먼저 반영되면 발표 이후 변동성이 커질 수 있다. 외국인 수급 변화도 주가에 영향을 줄 수 있다.",
+            "en": "Seven major listed companies saw their share prices fall together even though their third-quarter results were strong. When earnings expectations are priced in early, volatility can rise after results are released. Shifts in foreign investor flows can also affect share prices."
           }
         },
         {
           "title": {
-            "ko": "ODM 기업 간 북미 사업 격차",
-            "en": "Diverging North American performance among ODM firms"
+            "ko": "품목·시장 쏠림",
+            "en": "Concentration by product and market"
           },
           "body": {
-            "ko": "같은 ODM 업종 내에서도 북미 사업의 성과는 고객 포트폴리오와 생산 품목 구성에 따라 갈리고 있다. 한국콜마 미국 법인은 메이크업 매출 비중이 높은 반면 선케어·스킨케어 비중이 낮아 북미 수요 변화에 대한 대응이 상대적으로 더 필요한 구조다.",
-            "en": "Even within the same ODM category, North American performance diverges based on client portfolios and production mix. Kolmar Korea's US subsidiary carries a high proportion of makeup sales but a low share of sun care and skincare, leaving it structurally more exposed to the need to adapt to shifting North American demand."
+            "ko": "2026년 1~9월 기초화장품 수출은 87억 1,000만 달러로 전년 동기 대비 37.7% 늘었고, 수출 성장의 대부분을 이끌었다. 같은 기간 색조화장품 수출은 11.1억 달러로 3.6% 줄었다. 미국이 최대 수출 시장이어서 현지 소비와 유통, 통상 환경이 바뀌면 업종 전반의 실적이 영향을 받을 수 있다.",
+            "en": "Basic cosmetics exports for January to September 2026 reached US$8.71 billion, up 37.7% year on year, and drove most of the export growth. Color cosmetics exports over the same period fell 3.6% to US$1.11 billion. The US is the largest export market, so changes in local consumption, retail channels or the trade environment could affect earnings across the sector."
           }
         }
       ],
+      "sources": [
+        "https://www.thebk.co.kr/news/articleView.html?idxno=312608",
+        "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172360/view",
+        "https://www.thebk.co.kr/news/articleView.html?idxno=312310",
+        "https://www.thebk.co.kr/news/articleView.html?idxno=312806",
+        "https://www.etoday.co.kr/news/view/2639922",
+        "https://m.news.nate.com/view/20261027n00253",
+        "https://www.meconomynews.com/news/articleView.html?idxno=202997",
+        "https://www.sideview.co.kr/news/articleView.html?idxno=20506"
+      ],
       "sector": "화장품",
-      "generatedAt": "2026-10-09 22:23"
+      "generatedAt": "2026-11-21 18:05"
     },
     "전기장비": {
       "lead": {
-        "ko": "미국을 중심으로 한 AI 데이터센터 전력 수요 급증이 초고압 변압기·전력기기 업종 전반의 실적 상승을 이끌고 있다.",
-        "en": "Surging AI data center power demand, centered on the United States, is driving broad-based earnings growth across Korea's ultra-high-voltage transformer and electrical equipment sector."
+        "ko": "AI 데이터센터 투자 확대와 북미 전력망 수요에 힘입어 변압기·전선 대형주를 중심으로 이익이 늘고 있는 업종이다. 반면 소형주는 의료기기·크레인 제어 등 사업이 달라 실적이 엇갈린다.",
+        "en": "The sector is led by transformer and cable large caps, whose earnings are rising on AI data center investment and North American grid demand. Small caps diverge because their businesses differ, spanning medical devices and crane control systems."
       },
       "overview": {
-        "ko": "전기장비 업종은 변압기·차단기·배전반 등 전력 설비와 전력케이블·전선을 생산하는 기업들로 구성되며, 전체 시장 대비 비중은 크지 않지만 최근 수년간 성장성이 가장 두드러진 업종 중 하나로 부각됐다. 업종 내에는 초고압 변압기와 중전기기를 아우르는 대형 기업과 전선·케이블 전문 기업이 중심을 이루고, 업종 분류상 함께 묶인 의료기기 기업(씨어스, 원텍)도 일부 포함돼 있다. LS ELECTRIC, 효성중공업, HD현대일렉트릭 등 상위 3개사가 시가총액 기준으로 업종을 대표하며 초고압 변압기와 송배전 설비에서 경쟁력을 보유하고 있다. 가온전선, 대한전선, 일진전기 등은 전력케이블과 중소형 변압기를 중심으로 글로벌 공급망에 참여하고 있다. 업종 전반이 국내 전력망 투자뿐 아니라 수출, 특히 북미 시장 의존도가 높아 환율과 해외 수주 동향에 민감한 특성을 보인다.",
-        "en": "The electrical equipment sector comprises manufacturers of power equipment such as transformers, circuit breakers, and switchgear, as well as power cables and wires; although its weight within the overall market is modest, it has emerged as one of the most notable growth sectors in recent years. The sector is centered on large manufacturers of ultra-high-voltage transformers and heavy electrical equipment and on specialized cable and wire producers, while a few medical device companies (SEERS and Won Tech) are also grouped in it by classification. LS ELECTRIC, Hyosung Heavy Industries, and HD Hyundai Electric represent the sector by market capitalization, holding competitive strength in ultra-high-voltage transformers and transmission and distribution equipment. Gaon Cable, Taihan Cable & Solution, and Iljin Electric participate in global supply chains centered on power cables and small-to-mid-sized transformers. The sector as a whole shows high sensitivity to exchange rates and overseas order trends, given its reliance not only on domestic grid investment but also on exports, particularly to the North American market."
+        "ko": "전기장비 업종의 중심은 변압기, 배전반, 전선·케이블 등 전력 인프라 기기를 만드는 기업이다. 전체 시장 시가총액에서 차지하는 비중은 작지만, 상위 세 종목이 업종 시가총액의 상당 부분을 차지하는 쏠림 구조다. LS ELECTRIC은 초고압 변압기, 배전반, 가스절연개폐장치(GIS) 등을 주력으로 하는 전력 인프라 기기 업체다. HD현대일렉트릭은 초고압 전력변압기, 배전기기, 회전기기를 주력으로 하는 전력기기 제조사다. 효성중공업은 중공업 부문과 건설 부문 두 축으로 사업을 벌인다. 씨어스와 원텍은 업종 분류만 전기장비일 뿐 실제 사업은 웨어러블·피부미용 등 의료기기다.",
+        "en": "The core of the electrical equipment sector is companies that make power infrastructure equipment such as transformers, switchgear, and power cables. Its share of total market capitalization is small, but the top three stocks account for a large part of the sector's market value, which makes it a concentrated structure. LS Electric is a power infrastructure equipment maker focused on extra-high-voltage transformers, switchgear, and gas-insulated switchgear (GIS). HD Hyundai Electric is a power equipment manufacturer focused on extra-high-voltage power transformers, distribution equipment, and rotating machinery. Hyosung Heavy Industries operates two business lines, heavy industries and construction. Seers and Won Tech are classified as electrical equipment, but their actual businesses are medical devices, namely wearable monitoring and aesthetic devices."
       },
       "structure": {
-        "ko": "업종의 밸류체인은 크게 발전·송전 단계의 초고압 변압기, 배전 단계의 중소형 변압기·차단기·배전반, 그리고 전력 전달을 담당하는 전력케이블·전선으로 구분된다. LS ELECTRIC은 초고압 변압기부터 저압 배전까지 전 영역을 아우르는 종합 포트폴리오를 갖추고 있으며, 효성중공업과 HD현대일렉트릭은 초고압 변압기와 중전기기에 특화돼 북미 수주를 주도하고 있다. 중소형 변압기 영역에서는 산일전기와 일진전기, 제룡전기가 미국 노후 전력망 교체 수요를 겨냥해 수출 비중을 높여왔다. 전력케이블 분야에서는 가온전선과 대한전선, 대원전선이 국내외 송배전망 및 해저케이블 수요에 대응하고 있다. 업종 상위 3개사의 시가총액 비중이 매우 높아 집중도가 높은 구조이며, 중소형 종목들은 특정 품목이나 지역 수출에 대한 의존도가 상대적으로 크다.",
-        "en": "The sector's value chain divides broadly into ultra-high-voltage transformers for generation and transmission, small-to-mid-sized transformers, breakers, and switchgear for distribution, and power cables and wires for delivery. LS ELECTRIC maintains a comprehensive portfolio spanning from ultra-high-voltage transformers to low-voltage distribution, while Hyosung Heavy Industries and HD Hyundai Electric specialize in ultra-high-voltage transformers and heavy electrical equipment, leading North American order intake. In the small-to-mid-sized transformer segment, Sanil Electric, Iljin Electric, and Cheryong Electric have increased export exposure targeting aging U.S. grid replacement demand. In power cables, Gaon Cable, Taihan Cable & Solution, and Dawon Cable address domestic and overseas transmission and distribution network and submarine cable demand. The structure shows high concentration, with the top three companies accounting for a very large share of sector market capitalization, while smaller names tend to carry relatively greater dependence on specific products or export regions."
+        "ko": "가치사슬은 크게 변압기·배전반 등 송배전 기기와 전선·케이블 두 갈래로 나뉜다. 초고압 변압기와 배전 분야에서는 LS ELECTRIC, HD현대일렉트릭, 효성중공업 3사가 중심이며, 이들 3사의 합산 수주잔고는 38조원을 넘어섰다. 산일전기는 특수변압기와 리액터를 미국 중심의 해외 전력망과 신재생에너지 시장에 공급하고, 제룡전기는 변압기 중심 체제를 갖춘 전력기기 기업이다. 케이블 분야에서는 가온전선이 배전·초고압 케이블과 버스덕트를, 대한전선이 전력 케이블과 초고압·해저케이블을 생산한다. 일진전기는 전선 사업과 중전기 사업을 함께 운영하고, 대원전선은 1969년 설립된 중견 전선 기업이다. 서호전기는 항만·조선소·제철소 크레인의 전기·전자 제어시스템을 공급해 전력 인프라와는 수요처가 다르다.",
+        "en": "The value chain splits broadly into transmission and distribution equipment such as transformers and switchgear, and wires and cables. In extra-high-voltage transformers and distribution, LS Electric, HD Hyundai Electric, and Hyosung Heavy Industries are the core players, and their combined order backlog has surpassed 38 trillion won. Sanil Electric supplies special transformers and reactors to overseas power grids and renewable energy markets, mainly in the United States, while Cheryong Electric is a power equipment maker centered on transformers. In cables, Gaon Cable makes distribution and extra-high-voltage cables and busducts, and Taihan Cable & Solution produces power cables and extra-high-voltage and submarine cables. Iljin Electric runs both a wire business and a heavy electric equipment business, and Dawon Cable is a mid-sized cable maker founded in 1969. Seoho Electric supplies electrical and electronic control systems for cranes at ports, shipyards, and steel mills, so its customers differ from those of power infrastructure."
       },
       "trends": {
-        "ko": "2026년 2분기 실적 공시를 보면 LS ELECTRIC, 효성중공업, HD현대일렉트릭, 가온전선, 대한전선, 일진전기 등 주요 기업이 모두 전년 동기 대비 두 자릿수 매출 성장을 기록했고, 영업이익 증가율은 HD현대일렉트릭 37.2%에서 대한전선 113.0%까지 분포했다. 이러한 실적 개선의 배경에는 북미를 중심으로 한 AI 데이터센터 전력 인프라 투자 확대가 있으며, 미국에서는 노후 전력망 교체 수요에 더해 AI 데이터센터 투자와 재생에너지 확대 정책이 동시에 추진되고 있다. 실제로 효성중공업은 한 달 사이에만 3,865억원 규모의 초고압 변압기를 수주했으며, 미국 남·북부 지역에 건립되는 AI 데이터센터에 각각 765㎸와 345㎸ 변압기를 공급하는 계약을 체결했다. LS ELECTRIC도 북미 하이퍼스케일 AI 데이터센터 프로젝트에서 총 1억 3,341만달러 규모의 345kV 초고압 변압기 공급 계약을 체결하고 9개 변전소에 2030년까지 순차적으로 납품하기로 했다. 이에 따라 초고압 변압기와 차단기 등 핵심 전력기기 수요가 급증해 일부 품목은 공급 부족으로 납기가 수년까지 늘어났다. 주요 기업들은 울산공장 증설과 미국 앨라배마주 제2공장 건설, 멤피스 초고압 변압기 공장 증설, 부산사업장 생산능력 확대 등 설비투자를 통해 대응하고 있다. 다만 중소형 변압기 업체인 제룡전기는 매출이 40.9%, 영업이익이 74.4% 줄어 업종 안에서도 실적이 엇갈렸다.",
-        "en": "Second-quarter 2026 earnings disclosures show that major companies including LS ELECTRIC, Hyosung Heavy Industries, HD Hyundai Electric, Gaon Cable, Taihan Cable & Solution, and Iljin Electric all posted double-digit year-over-year revenue growth, with operating profit growth ranging from 37.2% at HD Hyundai Electric to 113.0% at Taihan Cable & Solution. Underlying this improvement is expanding AI data center power infrastructure investment centered on North America, where aging grid replacement needs converge with AI data center investment and renewable energy expansion policies. Hyosung Heavy Industries alone secured roughly KRW 386.5 billion in ultra-high-voltage transformer orders within a single month, supplying 765kV and 345kV units for AI data centers in the southern and northern United States, while LS ELECTRIC signed a USD 133.41 million contract for 345kV ultra-high-voltage transformers for a North American hyperscale AI data center project, with sequential delivery to nine substations through 2030. As a result, demand for core power equipment such as ultra-high-voltage transformers and breakers has surged, with lead times for some products extending to several years amid supply shortages, prompting major firms to expand capacity through plant expansions in Ulsan, a new second plant in Alabama, expansion of the Memphis ultra-high-voltage transformer facility, and capacity expansion at the Busan site. Earnings within the sector diverged, however, as Cheryong Electric, a small and mid-sized transformer maker, saw revenue fall 40.9% and operating profit drop 74.4%."
+        "ko": "LS ELECTRIC, 효성중공업, HD현대일렉트릭 3사의 2026년 3분기 합산 매출은 4조 2,509억원, 합산 영업이익은 7,537억원으로 전년 동기 대비 각각 26.7%, 38.6% 늘었다. 2026년 10월 전기기기 수출액은 19억 9,000만달러로 전년 동월 대비 74.0% 증가해 월간 기준 최대를 기록했다. 3분기 공시 기준 상위 종목 가운데 영업이익이 늘어난 회사는 9곳이며 증가율은 제룡전기 3.6%에서 대원전선 727.6%까지 분포했다. LS ELECTRIC은 영업이익률이 8.3%에서 12.4%로 4.1%포인트 올랐고, 영업이익은 전년 동기 대비 131.7% 늘었다. 효성중공업은 영업이익이 10.8%, HD현대일렉트릭은 15.1% 늘었으며, 효성중공업은 물류 차질로 일부 매출 인식이 미뤄지면서 영업이익이 전 분기보다 7.9% 줄었다. 케이블에서는 가온전선 영업이익이 99.1%, 일진전기가 98.2% 늘었지만 대한전선은 4.5% 증가에 그쳤고, 제룡전기·씨어스·원텍·서호전기는 매출 또는 이익이 줄거나 적자로 돌아서며 대형주와 엇갈렸다.",
+        "en": "The combined third-quarter 2026 revenue of LS Electric, Hyosung Heavy Industries, and HD Hyundai Electric was 4.2509 trillion won and combined operating profit was 753.7 billion won, up 26.7% and 38.6% year on year, respectively. Electrical equipment exports in October 2026 reached 1.99 billion dollars, up 74.0% year on year and a monthly record. Among the top stocks, nine reported higher operating profit in the third-quarter filings, with growth ranging from 3.6% at Cheryong Electric to 727.6% at Dawon Cable. LS Electric's operating margin rose 4.1 percentage points, from 8.3% to 12.4%, and its operating profit grew 131.7% year on year. Hyosung Heavy Industries grew operating profit by 10.8% and HD Hyundai Electric by 15.1%, but Hyosung's operating profit fell 7.9% from the previous quarter as logistics disruptions delayed some revenue recognition. Among cable makers, Gaon Cable's operating profit rose 99.1% and Iljin Electric's 98.2%, while Taihan Cable & Solution grew only 4.5%, and Cheryong Electric, Seers, Won Tech, and Seoho Electric saw revenue or profit decline or turn to a loss, diverging from the large caps."
       },
       "outlook": {
-        "ko": "업종의 중장기 성장 동인은 AI 데이터센터발 전력 수요 확대가 지속될 것인지에 좌우될 전망이다. 시장조사기관 분석에 따르면 글로벌 데이터센터 전력 수요 용량은 클라우드 기업들의 설비투자에 힘입어 2026년 161GW로 전년 대비 31% 증가할 것으로 추정되며, 2027년에도 클라우드 서비스 제공업체들의 지속적인 인프라 확장이 이어지면서 연간 전력 수요 성장률은 30%를 웃돌 전망이다. 북미 전력망의 공급 병목이 당분간 해소되기 어려운 만큼 초고압 변압기 제조사들의 수주 모멘텀은 이어질 가능성이 있으며, 북미 수주 잔고를 확보한 한국 전력기기 3사는 동남아 진출을 확대할 것으로 관측돼 수출 지역 다변화 여부도 관전 포인트다. 업계에서는 AI 산업의 경쟁 축이 GPU 성능에서 AI 팩토리 구축으로 옮겨 가면서 전력기기의 전략적 가치가 높아지고 있다는 평가도 나온다. 반도체와 서버를 확보해도 전력 공급이 늦어지면 데이터센터를 가동하지 못할 수 있어, 전력기기 조달 속도가 AI 인프라 확장의 제약 요인이 될 수 있다는 지적이다. 생산능력 증설 완료 시점과 신규 수주 단가, 원자재 가격 추이 등이 향후 실적의 변동 요인으로 꼽힌다.",
-        "en": "The sector's medium-to-long-term growth driver hinges on whether AI data center-driven power demand expansion continues. Market research indicates that global data center power demand capacity is estimated to reach 161GW in 2026, a 31% increase from the prior year on the back of cloud companies' capital expenditure, with annual power demand growth expected to exceed 30% again in 2027 as cloud service providers continue infrastructure expansion. As bottlenecks in the North American grid are unlikely to be resolved in the near term, order momentum for ultra-high-voltage transformer makers could persist, and Korean electrical equipment firms with North American order backlogs are observed to be expanding into Southeast Asia, making export region diversification a point worth monitoring. Industry voices also note that as competition in AI shifts from GPU performance to building AI factories, the strategic value of power equipment is rising. Because delayed power supply can keep data centers idle even when chips and servers are secured, the pace of power equipment procurement could itself become a constraint on AI infrastructure expansion. Timing of capacity expansion completion, new order pricing, and raw material cost trends are cited as key variables for future earnings."
+        "ko": "HD현대일렉트릭 임원은 2026년 10월 30일 콘퍼런스에서 톱티어 업체의 대형 변압기 리드타임이 5년 이상이라고 밝혔다. 수주잔고가 길게 쌓여 있어 당분간 매출 가시성은 높은 편이다. 공급 확대도 진행 중이어서 HD현대일렉트릭은 2,118억원을 들인 울산 초고압 변압기 신공장을 2026년 11월부터 본격 가동했다. 수요처도 넓어지고 있다. LS ELECTRIC은 2026년 10월 미국 블룸에너지와 1,853억원 규모의 수배전반 및 배전용 변압기 공급 계약을 맺었다. 케이블에서는 대한전선이 640kV급 초고압 직류송전(HVDC) 해저케이블 생산이 가능한 해저 2공장을 건설 중이다. 관전 포인트는 쌓인 수주가 매출과 이익률로 이어지는 속도와 증설 설비의 안정적 가동 여부다.",
+        "en": "At a conference on October 30, 2026, an HD Hyundai Electric executive said lead times for large transformers at top-tier suppliers exceed five years. With backlogs stacked up for years, revenue visibility is high for the time being. Supply is also expanding: HD Hyundai Electric began full-scale operation of its new 211.8 billion won extra-high-voltage transformer plant in Ulsan in November 2026. Demand sources are broadening as well. In October 2026, LS Electric signed a 185.3 billion won contract with Bloom Energy of the United States to supply switchgear and distribution transformers. In cables, Taihan Cable & Solution is building a second submarine cable plant capable of producing 640kV high-voltage direct current (HVDC) submarine cables. The key points to watch are how fast accumulated orders convert into revenue and margins, and whether the expanded facilities run stably."
       },
       "risks": [
         {
           "title": {
-            "ko": "수주 편중과 지역 집중 리스크",
-            "en": "Order Concentration and Regional Exposure Risk"
+            "ko": "북미 수요·정책 의존",
+            "en": "Dependence on North American demand and policy"
           },
           "body": {
-            "ko": "업종 상위 기업들의 실적 개선이 북미 시장과 AI 데이터센터 투자에 크게 의존하고 있어, 해당 수요가 둔화되거나 경쟁 심화로 수주 단가가 하락할 경우 실적 모멘텀이 약화될 수 있다. 특정 고객사나 프로젝트에 대한 매출 집중도가 높은 중소형 기업일수록 이러한 변동성에 더 취약하다.",
-            "en": "Earnings improvement among leading sector companies depends heavily on the North American market and AI data center investment, so any slowdown in that demand or order price declines from intensified competition could weaken earnings momentum. Smaller companies with higher revenue concentration on specific customers or projects are more vulnerable to such volatility."
+            "ko": "2026년 1~3분기 대형 변압기 미국 수출액은 8억 900만달러로 전년 동기 대비 44.2% 늘었고, 전체 대형 변압기 수출에서 미국이 차지하는 비중은 69.4%다. 중국산 전력기기에 대한 미국 정부의 견제도 한국 기업에 유리한 요인으로 꼽힌다. 데이터센터 투자 속도나 통상 정책이 바뀌면 수주와 수출이 함께 영향을 받을 수 있다.",
+            "en": "In the first three quarters of 2026, exports of large transformers to the United States were 809 million dollars, up 44.2% year on year, and the United States accounted for 69.4% of total large transformer exports. The US government's wariness toward Chinese power equipment is also cited as a favorable factor for Korean companies. A change in the pace of data center investment or in trade policy could affect orders and exports together."
           }
         },
         {
           "title": {
-            "ko": "원자재 가격 및 환율 변동",
-            "en": "Raw Material Price and Exchange Rate Volatility"
+            "ko": "원자재 가격과 수익성 편차",
+            "en": "Raw material prices and margin dispersion"
           },
           "body": {
-            "ko": "변압기와 전력케이블 제조는 구리, 철강 등 원자재 투입 비중이 높아 국제 원자재 가격 변동이 원가에 직접 영향을 미친다. 매출의 상당 부분을 수출에서 거두는 기업들은 원달러 환율 변동에 따른 수익성 영향도 함께 고려해야 한다.",
-            "en": "Transformer and power cable manufacturing relies heavily on raw material inputs such as copper and steel, so fluctuations in global commodity prices directly affect costs. Companies generating a significant portion of revenue from exports must also account for profitability impacts from won-dollar exchange rate movements."
+            "ko": "전선 업종은 구리 가격과 원자재 조달 비용, 제품 판매가격, 프로젝트별 수익성에 따라 실적 변동성이 나타날 수 있다. HD현대일렉트릭은 3분기 매출이 18.5% 늘었지만 영업이익률은 24.1%로 전년 대비 0.7%포인트 낮아졌다. 대한전선도 3분기 영업이익 증가율이 4.5%로 매출 증가율 37.6%에 크게 못 미쳤다.",
+            "en": "Earnings in the cable industry can fluctuate with copper prices, raw material procurement costs, product selling prices, and project-level profitability. HD Hyundai Electric's third-quarter revenue grew 18.5%, but its operating margin was 24.1%, down 0.7 percentage points year on year. Taihan Cable & Solution's third-quarter operating profit grew only 4.5%, well below its 37.6% revenue growth."
           }
         },
         {
           "title": {
-            "ko": "생산능력 확장에 따른 투자 부담",
-            "en": "Investment Burden from Capacity Expansion"
+            "ko": "수주 인식 시점과 소형주 실적 변동",
+            "en": "Order recognition timing and small-cap earnings volatility"
           },
           "body": {
-            "ko": "수요 대응을 위한 해외 공장 신설과 국내 증설이 동시에 진행되면서 대규모 자본지출이 수반되고 있다. 투자 완료 이후 수요가 예상보다 둔화될 경우 가동률 저하와 고정비 부담으로 이어질 수 있는 점을 함께 감안해야 한다.",
-            "en": "Large-scale capital expenditure is underway as companies simultaneously build new overseas plants and expand domestic capacity to meet demand. If demand slows more than expected after investment completion, this could lead to lower utilization rates and fixed-cost burdens, a factor that warrants consideration."
+            "ko": "HD현대일렉트릭의 3분기 신규 수주는 9억 8,000만달러로 전년 대비 줄었는데, 상반기 대규모 수주에 따른 기저효과가 컸다. 소형주는 분기별 변동이 더 크다. 제룡전기는 3분기 매출이 45.5% 줄었고, 씨어스는 영업손실 19억원으로 적자 전환했다.",
+            "en": "HD Hyundai Electric's third-quarter new orders fell year on year to 980 million dollars, largely because of the high base from large orders in the first half. Small caps show larger quarterly swings. Cheryong Electric's third-quarter revenue fell 45.5%, and Seers swung to an operating loss of 1.9 billion won."
           }
         }
       ],
       "sources": [
-        "https://www.asiatoday.co.kr/kn/view.php?key=20260601010000353",
-        "https://m.sedaily.com/article/20098080",
-        "https://www.energydaily.co.kr/news/articleView.html?idxno=203724",
-        "https://www.g-enews.com/article/Global-Biz/2026/09/202609171038346482fbbec65dfb_1",
-        "https://www.g-enews.com/article/Global-Biz/2026/08/20260813102731460fbbec65dfb_1",
-        "https://v.daum.net/v/20260713180038087"
+        "http://www.the-biz.co.kr/news/articleView.html?idxno=730433",
+        "https://news.bizwatch.co.kr/article/industry/2026/11/04/0040",
+        "https://www.g-enews.com/article/Industry/2026/10/2026102214475655353084322ec9_1",
+        "https://www.g-enews.com/article/Industry/2026/11/2026110314050637813084322ec9_1",
+        "https://supple.kr/news/cmvxfximktpvt13pak8lp9c18",
+        "https://www.asiatoday.co.kr/kn/view.php?key=20261120010008030",
+        "https://www.fnnews.com/news/202604281055408906",
+        "https://www.hankyung.com/article/2026101670421",
+        "https://www.pinpointnews.co.kr/news/articleView.html?idxno=503365",
+        "https://www.wolyo.co.kr/news/articleView.html?idxno=319671"
       ],
       "sector": "전기장비",
-      "generatedAt": "2026-10-08 18:29"
+      "generatedAt": "2026-11-21 18:05"
     },
     "운송·물류": {
       "lead": {
-        "ko": "컨테이너·벌크·육상물류·모빌리티가 혼재된 업종으로, 소수의 대형 해운·물류사가 시가총액을 견인하는 구조다.",
-        "en": "A sector spanning container shipping, dry bulk, land logistics, and mobility, where a handful of large shipping and logistics names dominate total market value."
+        "ko": "운송·물류 업종은 2026년 3분기 HMM과 팬오션의 이익이 운임 강세로 크게 늘었다. 반면 CJ대한통운 등 육상 물류는 비용 부담으로 이익이 줄어, 세부 업종별 차별화가 뚜렷하다.",
+        "en": "In the third quarter of 2026, Korea's transport and logistics sector split by segment. HMM and Pan Ocean posted sharply higher profit on strong freight rates, while land-based logistics such as CJ Logistics saw profit fall on cost pressure."
       },
       "overview": {
-        "ko": "운송·물류 업종은 원양 컨테이너선과 벌크선, 택배·종합물류, 카셰어링·여객운송까지 서로 다른 사업모델을 포괄한다. 국내 증시에서는 전체 시장 비중이 크지 않은 중소형 업종이지만, 수출입 물동량과 직결되는 만큼 경기와 환율 흐름에 민감하게 반응하는 경기순환형 섹터로 분류된다. HMM과 현대글로비스 두 종목이 업종 시가총액의 절대 비중을 차지하고 있어 업종 전체 주가 흐름이 이들 대형주의 등락에 크게 좌우되는 특징이 있다. 나머지 종목들은 벌크·탱커 전문 선사, 항만하역·운송주선, 해저케이블 시공, 카셰어링 등으로 사업 영역이 세분화돼 있다. 업종 내 개별 기업의 실적 편차가 커서 동일 업종이라도 사업 포트폴리오에 따라 주가 방향성이 엇갈리는 경우가 많다.",
-        "en": "The transport and logistics sector encompasses a wide range of business models, from ocean container and dry bulk shipping to parcel delivery, integrated logistics, car-sharing, and passenger transport. Within the Korean market it remains a relatively small sector by overall weight, but as it is directly tied to import-export volumes it is classified as a cyclical sector highly sensitive to economic conditions and currency movements. HMM and Hyundai Glovis together account for the overwhelming majority of the sector's market capitalization, meaning the sector's overall share price trend is heavily influenced by the movements of these two large-cap names. The remaining constituents are segmented across specialized bulk and tanker operators, port handling and freight forwarding, subsea cable installation, and car-sharing services. Earnings dispersion across individual companies within the sector is substantial, often causing share price direction to diverge even among firms classified under the same industry depending on their specific business mix."
+        "ko": "운송·물류 업종은 해운, 종합물류, 택배, 항만하역, 해저케이블 시공, 차량 공유, 고속버스 등 이질적인 사업이 함께 묶여 있다. 상장 종목 수는 업종 가운데 적은 편이고, 전체 시장에서 차지하는 비중도 크지 않다. 시가총액은 HMM과 현대글로비스 두 종목에 크게 쏠려 있어 업종 흐름이 이 두 회사에 좌우되는 경향이 있다. 해운사는 글로벌 운임지수와 물동량에, 내륙 물류사는 국내 소비와 택배 물량, 인건비·원가에 실적이 연동된다. 이 때문에 같은 업종 안에서도 이익 사이클이 서로 다르게 움직인다.",
+        "en": "The transport and logistics sector bundles dissimilar businesses: shipping, integrated logistics, parcel delivery, port handling, submarine cable installation, car sharing and express bus services. It has relatively few listed companies and accounts for a modest share of the overall market. Market capitalization is heavily concentrated in HMM and Hyundai Glovis, so the sector's direction tends to follow these two companies. Shipping companies' earnings track global freight indices and cargo volumes, while domestic logistics companies depend on consumption, parcel volumes, labor and operating costs. As a result, profit cycles within the sector often diverge."
       },
       "structure": {
-        "ko": "가치사슬 최상단에는 원양 해운이 자리하며, 컨테이너선 중심의 HMM과 벌크·탱커·LNG선을 겸영하는 팬오션, 벌크·LNG 장기운송계약 비중이 높은 대한해운, 케미컬탱커 중심의 흥아해운, 가스·석유화학제품 운반에 특화된 KSS해운이 포진해 있다. 완성차·부품 물류와 벌크 해운을 겸하는 현대글로비스는 그룹 물량을 기반으로 한 안정적 사업구조를 갖추고 있다. 육상·종합물류 영역에는 택배와 계약물류를 영위하는 CJ대한통운과 한진, 항만하역·운송주선의 세방이 자리하며, 모빌리티·여객 부문은 카셰어링의 쏘카와 고속버스 운송의 천일고속이 담당한다. 이 밖에 LS마린솔루션은 해저케이블 시공·매설이라는 특화 영역에서 해상 인프라 구축 수요에 대응하고 있다. 업종 시가총액은 HMM과 현대글로비스 두 종목에 고도로 집중돼 있어, 나머지 종목들은 개별 사업모델과 실적 모멘텀에 따라 독자적인 주가 흐름을 보이는 경향이 강하다.",
-        "en": "At the top of the value chain sits ocean shipping, led by container-focused HMM, Pan Ocean which operates across bulk, tanker, and LNG segments, Korea Line with a high proportion of long-term bulk and LNG contracts, chemical tanker operator Heung-A Shipping, and KSS Line specializing in gas and petrochemical product carriers. Hyundai Glovis, which combines finished-vehicle logistics and bulk shipping, benefits from a relatively stable business structure anchored in captive group volumes. The land and integrated logistics segment includes CJ Logistics and Hanjin in parcel delivery and contract logistics, and Sebang in port handling and freight forwarding, while the mobility and passenger segment is represented by car-sharing operator Socar and intercity bus operator Chunil Express. Separately, LS Marine Solution addresses offshore infrastructure demand through its specialized subsea cable installation and burial business. Sector market capitalization is heavily concentrated in HMM and Hyundai Glovis, leaving the remaining names to trade largely on their own individual business models and earnings momentum."
+        "ko": "해운에서는 컨테이너 중심의 HMM이 대표 종목이며, 3분기 매출에서 컨테이너가 차지한 비중은 87.1%였다. HMM의 컨테이너 비중은 2026년 3분기에 87.1%로 다시 높아졌다. 팬오션은 드라이벌크를 중심으로 탱커, 컨테이너선, LNG선, 곡물 사업을 함께 운영하고, 9월 말 기준 벌크선 220척을 포함해 총 273척의 선대를 보유하고 있다. 대한해운은 건화물 전용선과 탱커, LNG 운반선, 자동차운반선을 운영하고, 흥아해운은 케미컬탱커, KSS해운은 LPG·암모니아·VCM 등을 나르는 가스선이 주력이다. 종합물류에서는 현대글로비스가 물류·해운·유통 세 부문, CJ대한통운이 택배·계약물류·글로벌 세 부문으로 나뉘고, 한진은 택배·항만하역·글로벌·에너지, 세방은 항만하역과 화물운송 중심이다. 이 밖에 LS마린솔루션은 해저 전력·통신케이블 시공, 쏘카는 카셰어링, 천일고속은 고속버스를 영위해 업종 내 성격이 가장 다른 종목들이다.",
+        "en": "In shipping, container-focused HMM is the flagship name, and containers accounted for 87.1% of its revenue in the third quarter of 2026. HMM's container share rose back to 87.1% in the third quarter of 2026. Pan Ocean centers on dry bulk and also runs tankers, container ships, LNG carriers and a grain business, and as of end-September it operated 273 vessels, including 220 bulk carriers. Korea Line operates dry bulk carriers, tankers, LNG carriers and car carriers, Heung-A Shipping focuses on chemical tankers, and KSS Line on gas carriers for LPG, ammonia and VCM. In integrated logistics, Hyundai Glovis reports three segments (logistics, shipping and distribution) and CJ Logistics reports three (parcel, contract logistics and global), while HANJIN Logistics spans parcel, port handling, global and energy, and Sebang centers on port handling and freight transport. LS Marine Solution (submarine power and telecom cable installation), Socar (car sharing) and Chunil Express (express buses) have business models that differ most from the rest of the sector."
       },
       "trends": {
-        "ko": "최근 컨테이너 해상운임은 노선별 차별화가 뚜렷하다. 유럽 노선의 운임 조정이 SCFI 전체 지수를 끌어내리고 있는 가운데 북미 노선은 여전히 높은 운임 수준을 유지하고 있다. 북미 노선은 중국 국경절 연휴를 앞둔 선적 수요와 항만 혼잡 등으로 재상승한 반면 유럽·지중해 노선은 조정 국면이 이어지는 모습이다. 벌크 시황은 상대적으로 견조해, 팬오션의 경우 2026년 연간 매출액이 전년보다 28% 증가하고 영업이익은 42% 늘어날 것으로 전망될 만큼 수익성 개선 기대가 형성돼 있으며, 이는 VLCC 선대 확대와 LNG선의 안정적인 수익 기여에 더해 선대 구성 자체가 수익성이 높은 에너지 수송 분야로 이동하고 있는 점에 기인한다. 실제 2026년 2분기 공시 기준 HMM은 매출 3조 4,020억원(전년 동기 대비 +29.7%), 영업이익 3,541억원(+51.9%)을 기록했고 팬오션도 매출 1조 9,137억원(+47.9%), 영업이익 1,937억원(+57.4%)으로 호실적을 나타냈다. 반면 현대글로비스와 CJ대한통운은 매출 성장에도 영업이익이 각각 전년 동기 대비 감소했으며, 대한해운은 매출이 5.8% 줄었음에도 영업이익이 90.5% 늘어 기업별 실적 편차가 뚜렷했다. 모빌리티 부문의 쏘카는 매출과 영업이익이 동반 큰 폭으로 증가하며 외형과 수익성을 함께 개선한 모습을 보였다.",
-        "en": "Recent container freight trends show clear route-level divergence. Europe-bound rates have been pulling down the overall SCFI index even as North American routes maintain relatively firm levels. Trans-Pacific rates have rebounded on shipments ahead of China's National Day holiday and port congestion, while Europe and Mediterranean routes remain in an adjustment phase. Dry bulk conditions have been comparatively resilient, with Pan Ocean's annual revenue projected to rise 28% year on year and operating profit by 42% in 2026, supported by VLCC fleet expansion, stable LNG carrier contributions, and a fleet mix shift toward higher-margin energy transport. Based on second-quarter 2026 disclosures, HMM posted revenue of KRW 3.402 trillion (up 29.7% year on year) and operating profit of KRW 354.1 billion (up 51.9%), while Pan Ocean also delivered strong results with revenue of KRW 1.9137 trillion (up 47.9%) and operating profit of KRW 193.7 billion (up 57.4%). In contrast, Hyundai Glovis and CJ Logistics saw operating profit decline year on year despite revenue growth, and Korea Line's operating profit rose 90.5% despite a 5.8% revenue decline, underscoring significant earnings divergence across companies. In mobility, Socar delivered simultaneous strong growth in both revenue and operating profit, improving top-line scale and profitability together."
+        "ko": "HMM은 2026년 3분기 공시 기준 영업이익이 1조 3,946억원으로 전년 동기 대비 369.8% 늘었다. 3분기 SCFI 평균은 직전 분기 대비 45% 오른 3,388포인트였다. 팬오션은 영업이익이 1,974억원으로 57.7% 늘었고, 3분기 평균 BDI는 3,041로 전년 동기 평균 1,978보다 53.7% 올랐다. 같은 해운업이어도 대한해운의 영업이익은 0.9% 줄었고 KSS해운은 7.1% 줄어 선종별로 엇갈렸다. 현대글로비스는 매출이 23.1% 늘어난 9조 536억원, 영업이익이 8.1% 늘어난 5,665억원을 기록했다. CJ대한통운은 매출이 9.5% 늘었지만 영업이익은 25.3% 줄었는데, 추석 연휴에 따른 영업일수 감소와 물류서비스 투자 확대, 대외 여건 악화가 수익성에 영향을 줬다고 설명했다.",
+        "en": "HMM's operating profit in the third quarter of 2026 was KRW 1,394.6 billion per its filing, up 369.8% year on year. The average SCFI in the third quarter rose 45% from the previous quarter to 3,388 points. Pan Ocean's operating profit rose 57.7% to KRW 197.4 billion, and the average BDI for the quarter was 3,041, up 53.7% from 1,978 a year earlier. Within shipping, results diverged by vessel type, as Korea Line's operating profit fell 0.9% and KSS Line's fell 7.1%. Hyundai Glovis reported revenue of KRW 9,053.6 billion, up 23.1%, and operating profit of KRW 566.5 billion, up 8.1%. CJ Logistics grew revenue 9.5% but operating profit fell 25.3%, and the company said fewer business days from the Chuseok holiday, higher service investment and a weaker external environment weighed on profitability."
       },
       "outlook": {
-        "ko": "업종 전반의 관전 포인트는 선복 수급 균형이다. 컨테이너선 시장은 신조선 인도가 이어지는 가운데 노선별 운임 차별화가 당분간 지속될 가능성이 있으며, 벌크선 시장은 물동량 증가율보다 선복량 증가율이 높게 예상되지만 케이프사이즈 운임은 철광석 물동량에 기반해 높은 수준을 이어갈 것으로 예상되는 등 상대적으로 완만한 하방 압력이 전망된다. 팬오션처럼 벌크 중심에서 탱커·LNG 등 에너지 수송으로 사업 포트폴리오를 다변화하는 움직임은 해운사들의 수익 안정성 확보 전략으로 주목할 만하다. HMM은 부산 본사 이전 등 지배구조·경영 현안과 함께 친환경 선대 전환에 따른 투자 부담을 관리해야 하는 과제를 안고 있다. 육상물류 부문에서는 이커머스 확대에 따른 택배·계약물류 수요가 완만한 성장 동력으로 작용할 수 있으며, LS마린솔루션은 해상풍력 등 해저 인프라 구축 수요 증가가 중장기 성장 변수로 꼽힌다. 모빌리티 부문의 쏘카는 수익성 개선 추세의 지속 여부가 관전 포인트다.",
-        "en": "A key point to watch across the sector is the balance between vessel supply and cargo demand. In container shipping, continued newbuild deliveries may sustain route-level rate divergence for some time, while in dry bulk, although fleet growth is expected to outpace cargo volume growth, Capesize rates are expected to remain firm on the back of iron ore demand, suggesting relatively moderate downside pressure. The shift by operators such as Pan Ocean from a bulk-centric model toward tanker and LNG energy transport diversification stands out as a strategy to secure more stable earnings. HMM faces governance and management issues including its headquarters relocation to Busan, alongside the investment burden of transitioning to a greener fleet. In land logistics, growth in e-commerce-driven parcel and contract logistics demand could provide a modest growth driver, while LS Marine Solution's exposure to offshore wind and subsea infrastructure build-out is cited as a medium-term growth variable. In mobility, whether Socar can sustain its recent profitability improvement trend is a point worth monitoring."
+        "ko": "컨테이너 운임은 고점에서 내려오는 흐름이다. 11월 20일 SCFI는 3,503.78로 전주 대비 1.92% 하락했다. HMM은 4분기 운임이 항로별 변동성을 보이며 약보합세를 나타낼 것으로 예상했다. 팬오션의 경우 4분기 벌크 운임의 상승 폭은 크지 않을 것으로 전망됐고, 3분기까지 누적 신조선 인도량은 전년보다 24% 늘었다. 팬오션의 신규 선박 투자는 2027년부터 이익 기여가 본격화될 것으로 미래에셋증권은 전망했다. 이 때문에 운임 상승 효과가 약해진 뒤에는 선박 확보 원가와 선대 구성, 장기계약을 통한 수익 안정성이 선사별 실적을 가를 변수로 꼽힌다. 육상 물류에서는 CJ대한통운이 4분기 대형 이커머스 화주 물량 확보와 AI 기반 물량 예측을 통한 원가 개선을 계획하고 있어, 택배 부문의 수익성 회복 여부가 관전 포인트다.",
+        "en": "Container freight rates are easing from their highs. The SCFI stood at 3,503.78 on November 20, down 1.92% from the previous week. HMM expects fourth-quarter rates to be slightly weaker, with volatility varying by trade lane. For Pan Ocean, bulk rate gains in the fourth quarter were expected to be limited, and cumulative newbuilding deliveries through the third quarter were up 24% year on year. Regarding Pan Ocean's new vessel investments, Mirae Asset Securities expects the earnings contribution to become meaningful from 2027. Once the boost from higher freight rates fades, vessel acquisition cost, fleet mix and the stability of long-term contracts are likely to determine differences among carriers. In land logistics, CJ Logistics plans to secure volumes from large e-commerce shippers in the fourth quarter and cut unit costs through AI-based volume forecasting, so a recovery in parcel profitability is a key point to watch."
       },
       "risks": [
         {
           "title": {
-            "ko": "선복 공급과잉에 따른 운임 변동성",
-            "en": "Freight rate volatility from vessel oversupply"
+            "ko": "컨테이너 운임 하락과 선박 공급 증가",
+            "en": "Falling container rates and rising vessel supply"
           },
           "body": {
-            "ko": "신조선 인도가 지속되는 가운데 물동량 증가가 이를 따라가지 못할 경우 컨테이너·벌크 운임이 단기간에 급변동할 수 있다. 노선별·선형별로 수급 상황이 다르게 전개되고 있어 운임 추이를 일률적으로 판단하기 어려운 환경이 이어지고 있다.",
-            "en": "Continued newbuild vessel deliveries, if not matched by cargo volume growth, could lead to sharp short-term swings in container and bulk freight rates. Supply-demand conditions are diverging by route and vessel class, making it difficult to apply a uniform read on rate trends."
+            "ko": "SCFI는 2026년 10월 30일 3,687.35를 기록한 뒤 11월 20일까지 3주 연속 하락했다. 이 기간 하락 폭은 183.57포인트, 4.98%였다. HMM은 컨테이너 비중이 높아 운임이 더 내려가면 실적 변동 폭이 커질 수 있다.",
+            "en": "The SCFI fell for three straight weeks after recording 3,687.35 on October 30, 2026, through November 20. The decline over that period was 183.57 points, or 4.98%. Because containers make up most of HMM's revenue, further rate declines could widen the swings in its earnings."
           }
         },
         {
           "title": {
-            "ko": "통상·관세 정책 불확실성",
-            "en": "Trade and tariff policy uncertainty"
+            "ko": "지정학 요인에 기댄 운임의 지속성",
+            "en": "Durability of geopolitics-driven freight rates"
           },
           "body": {
-            "ko": "미국과 중국 간 통상 갈등이나 입항수수료·관세 정책 변화는 주요 항로의 물동량과 선대 운용 전략에 직접적인 영향을 미칠 수 있다. 정책 변수의 전개 방향에 따라 선사별 손익 영향이 상이하게 나타날 수 있다.",
-            "en": "US-China trade tensions or changes in port entry fee and tariff policy can directly affect cargo volumes on major routes and fleet deployment strategies. The profit and loss impact may vary significantly across carriers depending on how these policy variables evolve."
+            "ko": "2026년 3분기 해운사 호실적에는 중동 정세 등 지정학 요인이 작용했다는 분석이 있다. 전쟁에 따른 운임 상승효과가 약해지면 선박 확보 원가와 선대 구성, 장기계약이 선사별 실적을 가를 것이라는 전망이다. 운임 변동에 노출된 선사일수록 실적 변동성이 클 수 있다.",
+            "en": "Some analysis attributes the strong third-quarter 2026 results of shipping companies partly to geopolitical factors such as the situation in the Middle East. Once the freight-rate boost from the war fades, vessel acquisition cost, fleet mix and long-term contracts are expected to separate carriers' results. Carriers more exposed to freight-rate swings may see greater earnings volatility."
           }
         },
         {
           "title": {
-            "ko": "환경규제 대응 비용 부담",
-            "en": "Cost burden of environmental regulation compliance"
+            "ko": "물류·내수 업종의 원가 부담과 수익성",
+            "en": "Cost pressure and profitability in logistics and domestic businesses"
           },
           "body": {
-            "ko": "국제해사기구의 환경 규제 강화에 따라 친환경 연료 선박 전환과 관련 투자 부담이 커지고 있다. 규제 이행 속도와 대체연료 기술·비용 효율성에 따라 선사별 투자 부담과 경쟁력 격차가 벌어질 수 있다.",
-            "en": "Tightening IMO environmental regulations are increasing the investment burden associated with transitioning to eco-friendly fuel vessels. Depending on the pace of regulatory implementation and the cost-efficiency of alternative fuel technologies, investment burdens and competitive gaps among carriers could widen."
+            "ko": "CJ대한통운은 2026년 3분기 택배 물량이 4.6% 늘었지만 영업이익은 25.3% 줄었다. 유가·물가 상승과 운영원가 부담 증가로 계약물류 부문 영업이익도 전년 동기 대비 감소했다. 천일고속은 같은 분기 영업손실 16억원으로 적자가 이어졌다.",
+            "en": "CJ Logistics' parcel volume rose 4.6% in the third quarter of 2026, yet its operating profit fell 25.3%. Operating profit in its contract logistics segment also declined year on year on higher oil prices, inflation and operating costs. Chunil Express remained loss-making, with an operating loss of KRW 1.6 billion in the same quarter."
           }
         }
       ],
       "sources": [
-        "https://www.oceanpress.co.kr/news/article.html?no=31374",
-        "https://www.pinpointnews.co.kr/news/articleView.html?idxno=488716",
-        "https://www.shippingnewsnet.com/news/articleView.html?idxno=67122"
+        "https://www.huffingtonpost.kr/article/262100",
+        "https://www.viva100.com/article/20261102500995",
+        "https://www.fntimes.com/html/view.php?ud=202611021515288641fa6b69a559_18",
+        "https://www.hankyung.com/article/202611107111g",
+        "http://www.haesanews.com/news/articleView.html?idxno=153060",
+        "https://m.news.nate.com/view/20261112n28112",
+        "http://www.ksdaily.co.kr/news/articleView.html?idxno=111366",
+        "https://view.asiae.co.kr/article/2026111815214288970",
+        "https://cjnews.cj.net/cj%EB%8C%80%ED%95%9C%ED%86%B5%EC%9A%B4-3%EB%B6%84%EA%B8%B0-%EB%A7%A4%EC%B6%9C-3%EC%A1%B03581%EC%96%B5%C2%B7%EC%98%81%EC%97%85%EC%9D%B5-1105%EC%96%B5-%EA%B8%B0%EB%A1%9D/"
       ],
       "sector": "운송·물류",
-      "generatedAt": "2026-10-08 18:29"
+      "generatedAt": "2026-11-21 18:05"
     },
     "건설·건자재": {
       "lead": {
-        "ko": "국내 건설·건자재 업종은 수주 지표 개선과 실제 매출 인식(기성) 부진이 공존하는 가운데, 원전·데이터센터 등 신규 테마가 상위 종목 중심으로 부각되고 있다.",
-        "en": "Korea's construction and building materials sector shows diverging signals between improving order intake and still-lagging revenue recognition, while nuclear power and data center themes are emerging as new growth drivers for leading names."
+        "ko": "2026년 3분기 공시 기준 상위 12개사 가운데 영업이익이 늘어난 곳은 7곳, 줄어든 곳은 4곳, 흑자 전환은 1곳이다. 매출은 7곳이 줄어, 이익 회복과 외형 성장이 엇갈리는 업종이다.",
+        "en": "In Q3 2026 filings, operating profit rose at 7 of the 12 largest companies, fell at 4 and turned positive at 1. Revenue declined at 7 of them, so the sector shows a profit recovery that is not matched by top-line growth."
       },
       "overview": {
-        "ko": "건설·건자재 업종은 주택·토목·플랜트 시공과 시멘트·레미콘 등 기초 자재 생산을 아우르는 전통 산업으로, 국내 경기 민감도가 높고 정부 재정·금리 정책의 영향을 크게 받는다. 전체 코스피·코스닥 시가총액에서 차지하는 비중은 크지 않지만 삼성물산, 현대건설, 삼성E&A 등 대형주가 해외 플랜트와 원전 수주로 재평가되며 시장의 주목을 받고 있다. 업종 내에는 종합건설사와 전문 EPC, 건자재 생산업체가 혼재돼 있어 매출 구조와 수익성 흐름이 종목별로 상이하다. 최근에는 국내 주택 경기 침체가 장기화하는 반면 해외 플랜트·원전 수주가 새로운 실적 변수로 떠오르면서 업종 내 양극화가 뚜렷해지고 있다.",
-        "en": "The construction and building materials sector spans residential and civil engineering construction, plant EPC, and basic materials such as cement and ready-mixed concrete, making it highly sensitive to the domestic economic cycle, government fiscal policy, and interest rates. Although its overall market capitalization weight is relatively small, large-cap names such as Samsung C&T, Hyundai E&C, and Samsung E&A have drawn attention through overseas plant and nuclear power contracts. The sector comprises a mix of general contractors, specialized EPC firms, and materials producers, resulting in divergent revenue structures and profitability trends across individual names. Recently, prolonged weakness in domestic housing has contrasted with emerging overseas plant and nuclear order momentum, deepening polarization within the sector."
+        "ko": "건설·건자재 업종은 주택·토목·플랜트를 시공하는 건설사와 시멘트 같은 건자재 제조사, 설비 시공 기업이 함께 묶인 업종이다. 전체 시장에서 차지하는 시가총액 비중은 한 자릿수 초반에 그친다. 업종 시가총액에서는 삼성물산 한 종목이 절반 안팎을 차지해 쏠림이 크다. 삼성물산은 건설, 상사·투자, 패션, 리조트 네 개 부문으로 사업을 나눠 보고하므로 순수 건설주와는 성격이 다르다. 삼성E&A는 화공, 첨단산업, 뉴에너지 부문에서 석유화학 플랜트와 반도체 공장 같은 시설을 설계·조달·시공하는 엔지니어링 기업이다. 한양이엔지는 반도체·디스플레이 공장의 배관 설비와 화학물질 중앙공급장치(CCSS)를 시공하고 제조하는 설비 전문 기업이다.",
+        "en": "The construction and building materials sector groups contractors that build housing, civil works and plants with materials makers such as cement producers and specialist equipment installers. Its share of total market capitalization is only in the low single digits. Within the sector, Samsung C&T alone accounts for roughly half of aggregate market capitalization, so concentration is high. Samsung C&T reports four segments (construction, trading and investment, fashion and resort), so it differs in character from a pure-play contractor. Samsung E&A is an engineering company that designs, procures and builds facilities such as petrochemical plants and semiconductor fabs across its chemicals, advanced industry and new energy divisions. Hanyang Eng installs and manufactures piping systems and chemical central supply systems (CCSS) for semiconductor and display plants."
       },
       "structure": {
-        "ko": "가치사슬 최상단에는 삼성물산, 현대건설, 대우건설, GS건설, DL이앤씨, IPARK현대산업개발, HJ중공업, 태영건설 등 주택·토목·건축을 겸영하는 종합건설사가 자리하며, 이들은 국내 수주잔고와 해외 플랜트 수주를 동시에 관리한다. 플랜트·화공 EPC에 특화된 삼성E&A는 계열사 발주와 글로벌 석유화학·수소 플랜트 프로젝트를 주력으로 하며 종합건설사와는 다른 사업 구조를 갖는다. 반도체 클린룸 등 특수 설비 엔지니어링을 담당하는 한양이엔지는 건설 밸류체인 중에서도 반도체 투자 사이클에 연동되는 틈새 영역에 위치한다. 하류에는 한일시멘트와 삼표시멘트 등 기초 건자재 생산업체가 있어 전방 건설 착공량에 실적이 후행적으로 연동된다. 업종 내 시가총액은 삼성물산 한 종목에 쏠려 있어 종합건설 대형주와 중소형 건자재·전문 건설사 간 규모 격차가 크다.",
-        "en": "At the top of the value chain are general contractors—Samsung C&T, Hyundai E&C, Daewoo E&C, GS E&C, DL E&C, HDC Hyundai Development, HJ Shipbuilding & Construction, and Taeyoung Construction—which manage both domestic order backlogs and overseas plant contracts. Samsung E&A, specializing in plant and petrochemical EPC, operates on a different business model centered on affiliate orders and global petrochemical and hydrogen plant projects. Hanyang Eng, which handles specialized engineering such as semiconductor cleanrooms, occupies a niche segment of the construction value chain tied to the semiconductor capex cycle. Downstream, basic materials producers such as Hanil Cement and Sampyo Cement see their results lag behind upstream construction starts. Market capitalization within the sector is heavily concentrated in Samsung C&T, creating a wide scale gap between large general contractors and smaller materials or specialized construction firms."
+        "ko": "가치사슬 상류에는 시멘트·레미탈·레미콘을 만드는 한일시멘트와 강원도 삼척에 본사를 둔 삼표시멘트 같은 자재 제조사가 있고, 이들의 수요는 건축 착공에 연동된다. 중류의 시공 단계에서는 현대건설, 대우건설, DL이앤씨, IPARK현대산업개발, GS건설이 주택·도시정비·토목·플랜트를 맡는다. 이 가운데 GS건설은 자이(Xi) 브랜드의 건축·주택 사업이 핵심이고, IPARK현대산업개발도 주택 건설 중심이다. 하이테크·플랜트 쪽에서는 삼성물산 건설부문과 삼성E&A, 한양이엔지가 반도체 공장과 에너지 설비 수요를 받는다. HJ중공업은 조선과 건설 두 축을 운영하고, 태영건설은 2023년 12월 워크아웃을 신청한 뒤 2024년 10월 채권단과 부채 재조정·자산매각 합의안을 마련했다(딜사이트, 2026년 4월 보도). 집중도는 해외 쪽에서 두드러져 2026년 해외건설 수주에서 상위 5개사가 차지한 비중은 75.5%이고, 시멘트는 주요 업계의 생산능력이 연간 6,100만톤에 달해 수요 대비 설비 규모가 크다.",
+        "en": "At the upstream end are materials makers such as Hanilcementco, which produces cement, remicon and ready-mixed concrete, and SAMPYO Cement, which is headquartered in Samcheok, Gangwon Province; their demand tracks building starts. In the midstream construction stage, Hyundai Engineering & Construction, Daewoo Engineering & Construction, DL E&C, Ipark Hyundai Development Company and GS Engineering & Construction handle housing, urban redevelopment, civil works and plants. Among them, GS Engineering & Construction centers on building and housing under its Xi brand, and Ipark Hyundai Development Company is also housing-focused. In high-tech and plant work, Samsung C&T's construction division, Samsung E&A and Hanyang Eng serve semiconductor fab and energy facility demand. HJ Shipbuilding & Construction runs shipbuilding and construction as its two pillars, while Taeyoung Engineering & Construction applied for a workout in December 2023 and reached a debt restructuring and asset sale agreement with creditors in October 2024 (Dealsite, reported April 2026). Concentration is most visible overseas, where the top five companies took 75.5% of overseas construction orders in 2026, and in cement, where major producers' capacity reaches 61 million tons a year, large relative to demand."
       },
       "trends": {
-        "ko": "2026년 2분기 실적을 보면 대형 종합건설사들의 매출은 대체로 전년 동기 대비 감소했으나 영업이익은 개선된 경우가 많아, 수주잔고 믹스 개선과 준공 현장의 수익성 정상화가 동시에 진행되고 있음을 시사한다. 현대건설은 매출이 전년 동기 대비 11.4% 줄었음에도 영업이익은 20.7% 늘었고, 대우건설은 매출 감소에도 영업이익이 182.6% 급증했으며, HJ중공업은 매출과 영업이익이 각각 43.7%, 1,114.7% 늘어나는 큰 폭의 개선을 나타냈다. 반면 GS건설은 매출(-13.0%)과 영업이익(-43.6%)이 동반 악화돼 종목별 온도차가 뚜렷했다. 업황 측면에서는 2026년 건설수주가 전년 대비 큰 폭으로 늘고 토목수주도 강하게 개선되고 있지만, 건설기성 감소와 건축허가 부진, 건설비용 상승이 회복을 제약하고 있다는 진단이 나왔다. 건자재 쪽에서는 건설경기 침체가 장기화하면서도 주택을 비롯한 건축물 착공이 늘며 시멘트 수요가 하반기부터 살아날 수 있다는 기대가 제기됐으며, 실제 2026년 상반기 건축 착공 면적은 전년 동기 대비 9%, 주택 착공 면적은 14.4% 증가했으나 착공과 출하 사이의 시차로 즉각적인 실적 반영은 아직 지켜볼 필요가 있다.",
-        "en": "Second-quarter 2026 results showed that most large general contractors posted year-on-year revenue declines but improved operating profit, suggesting backlog mix improvement and normalization of profitability on completing projects. Hyundai E&C's revenue fell 11.4% year-on-year yet operating profit rose 20.7%, Daewoo E&C's operating profit surged 182.6% despite lower revenue, and HJ Shipbuilding & Construction posted sharp gains in both revenue (+43.7%) and operating profit (+1,114.7%). In contrast, GS E&C saw both revenue (-13.0%) and operating profit (-43.6%) deteriorate, highlighting wide dispersion across names. On the industry side, construction orders in 2026 have risen sharply year-on-year with civil engineering orders improving strongly, but declining completed work, weak building permits, and rising costs are restraining the recovery. In materials, despite prolonged construction downturn, rising building and housing starts have raised expectations that cement demand could revive from the second half, and indeed first-half 2026 building start area rose 9% year-on-year, with housing starts up 14.4%, though the lag between starts and shipments means the actual earnings impact remains to be confirmed."
+        "ko": "삼성물산 건설부문·현대건설·GS건설·대우건설·DL이앤씨·IPARK현대산업개발 6곳의 2026년 3분기 합산 영업이익은 1조 505억원이다. 이익 개선의 배경으로는 과거 수주한 저수익 사업장의 매출 비중이 줄고 공사비 상승분을 반영한 현장이 늘어난 점이 꼽힌다. 대우건설은 3분기 영업이익이 1,832억원으로 223.8% 늘었지만 매출은 7.4% 줄었고, 현대건설도 영업이익이 114.2% 늘었으나 매출은 20.3% 감소했다. 삼성E&A는 매출이 45.8%, 영업이익이 183.6% 늘었고, 삼성물산 연결 기준으로는 매출이 18.3%, 영업이익이 15.0% 늘었다. GS건설은 영업이익이 35.7% 줄었는데, 건축·주택사업본부 매출이 전년 동기보다 18.7% 감소한 영향이 컸다. DL이앤씨는 영업이익이 8.1% 줄었고, 샤힌 프로젝트의 공기 연장과 돌관공사 비용이 총예정원가에 반영됐다. 시멘트 쪽에서는 한일시멘트의 영업이익이 43.8%, 삼표시멘트의 영업이익이 39.0% 줄었고, 2025년 시멘트 국내 출하량은 3,810만톤으로 1991년 이후 처음 4,000만톤을 밑돌았다.",
+        "en": "Combined Q3 2026 operating profit for six contractors (Samsung C&T's construction division, Hyundai E&C, GS E&C, Daewoo E&C, DL E&C and Ipark Hyundai Development) was 1.0505 trillion won. Analysts attribute the improvement to a shrinking revenue share from low-margin sites won earlier and more sites that reflect higher construction costs. Daewoo Engineering & Construction's Q3 operating profit rose 223.8% to 183.2 billion won while revenue fell 7.4%, and Hyundai Engineering & Construction's operating profit rose 114.2% while revenue fell 20.3%. Samsung E&A's revenue rose 45.8% and operating profit rose 183.6%, while Samsung C&T on a consolidated basis posted revenue up 18.3% and operating profit up 15.0%. GS Engineering & Construction's operating profit fell 35.7%, largely because revenue in its building and housing division fell 18.7% year on year. DL E&C's operating profit fell 8.1%, as the Shaheen project's schedule extension and overtime costs were reflected in total estimated costs. In cement, Hanilcementco's operating profit fell 43.8% and SAMPYO Cement's fell 39.0%, and domestic cement shipments in 2025 were 38.1 million tons, the first time below 40 million tons since 1991."
       },
       "outlook": {
-        "ko": "향후 관전 포인트는 공공 발주 확대가 민간 부문 회복으로 얼마나 파급되는지, 그리고 해외 원전·플랜트·데이터센터 수주가 실제 계약 체결로 이어지는지에 있다. AI 인프라 확대에 따른 데이터센터 건설, 글로벌 원전 프로젝트, 해외 플랜트 발주 확대가 하반기 건설업의 새로운 성장 동력으로 부각되고 있으며, 데이터센터 분야에서는 GS건설과 DL이앤씨, 해외 원전·EPC 분야에서는 현대건설과 대우건설이 거론된다. 다만 일회성 이익과 실제 수주 성과를 구분해야 한다는 지적이 있어, 수주 모멘텀이 실적으로 이어지는 속도를 확인할 필요가 있다. 건자재 부문은 물량 정체와 품질 기준 상향, 규제 강화가 굳어지는 가운데 가격 인상 여력이 제한돼 수익성이 제품 믹스와 운영 효율에서 갈릴 것으로 보여, 외형 성장보다 비용관리와 믹스 개선이 핵심 변수가 될 전망이다. 전반적으로 업종 내에서는 해외 수주 모멘텀을 보유한 대형 종합건설사와 내수 의존도가 높은 중소형 건자재·건설사 간 실적 양극화가 당분간 이어질 가능성이 높다.",
-        "en": "Key factors to monitor going forward include whether the expansion of public-sector orders spreads to a broader private-sector recovery, and whether overseas nuclear, plant, and data center opportunities translate into finalized contracts. Data center construction driven by AI infrastructure expansion, global nuclear projects, and overseas plant orders are emerging as new growth drivers for the construction industry in the second half, with GS E&C and DL E&C cited in data centers and Hyundai E&C and Daewoo E&C in overseas nuclear and EPC. However, as some note the need to distinguish one-off gains from actual order wins, the pace at which order momentum converts into earnings remains to be confirmed. In building materials, with stagnant volumes, rising quality standards, and tighter regulation becoming entrenched while pricing power remains limited, profitability will likely be determined by product mix and operational efficiency, suggesting cost management will matter more than top-line growth. Overall, earnings polarization between large contractors with overseas order momentum and smaller, domestically focused materials and construction firms is likely to persist for the time being."
+        "ko": "삼성물산 건설부문은 연간 수주 목표를 기존 23조 5,000억원에서 30조 1,000억원으로 높였다. 현대건설은 수주잔고가 99조 5,310억원에 이르고, 대부분의 원전 공사 본계약은 2027년 이후로 예정돼 있다. 서울 도시정비 수주도 이어지고 있어 DL이앤씨의 3분기 누적 도시정비 수주는 3조 3,903억원이고, IPARK현대산업개발은 수주잔액의 85.5%가 주택사업이다. GS건설은 신규 주택사업의 공사가 본격화하면 매출 회복에 도움이 될 것으로 기대하고 있다. 시멘트는 2027년 수요가 3,965만톤으로 2026년보다 2.4% 늘 것으로 전망되지만, 4,000만톤 회복은 2029년(4,099만톤)으로 예측된다. 해외에서는 2026년 수주 목표 500억달러에 대한 3분기 누적 달성률이 41.3%여서 4분기 계약 흐름이 관전 포인트다.",
+        "en": "Samsung C&T's construction division raised its annual order target from 23.5 trillion won to 30.1 trillion won. Hyundai Engineering & Construction has an order backlog of 99.531 trillion won, and most main contracts for nuclear projects are scheduled for 2027 or later. Redevelopment orders in Seoul continue, with DL E&C's cumulative Q3 urban redevelopment orders at 3.3903 trillion won and housing making up 85.5% of Ipark Hyundai Development's order backlog. GS Engineering & Construction expects revenue to recover once construction of new housing projects gets under way. For cement, 2027 demand is forecast at 39.65 million tons, up 2.4% from 2026, but shipments are projected to top 40 million tons only in 2029, at 40.99 million tons. Overseas, cumulative orders through Q3 reached 41.3% of the 2026 target of USD 50 billion, so Q4 contract flow is a key point to watch."
       },
       "risks": [
         {
           "title": {
-            "ko": "기성 부진에 따른 매출 인식 지연",
-            "en": "Delayed Revenue Recognition Amid Weak Completed Work Volume"
+            "ko": "주택 착공 지연과 매출 공백",
+            "en": "Delayed housing starts and revenue gap"
           },
           "body": {
-            "ko": "수주가 늘어도 실제 공사 진행에 따른 매출 인식(기성)이 지연되면 수주 개선이 단기 실적에 반영되는 속도가 느려질 수 있다. 착공 지연과 공사기간 장기화가 겹칠 경우 이러한 격차는 더 길어질 수 있다.",
-            "en": "Even as order intake improves, delayed revenue recognition tied to actual construction progress can slow the pace at which order gains feed through to near-term earnings. This gap may widen further if construction starts are delayed or project timelines are extended."
+            "ko": "건설 경기 불황과 주택 착공 감소가 시차를 두고 매출 감소로 이어지는 구조여서 외형 축소가 이어질 수 있다. 현대건설과 DL이앤씨의 3분기 누적 주택 착공 실적은 연간 목표의 절반에 못 미쳤다. 업계 전반의 자금 부담도 커서 건설사 폐업 신고는 2026년 1~10월 3,538곳으로 17년 만의 최대치였다.",
+            "en": "Because the construction downturn and falling housing starts feed through to lower revenue with a lag, top-line shrinkage could continue. Cumulative Q3 housing starts at Hyundai E&C and DL E&C fell short of half their annual targets. Financial strain across the industry is also heavy, as construction company closure filings reached 3,538 in January–October 2026, the highest in 17 years."
           }
         },
         {
           "title": {
-            "ko": "건자재 수요의 구조적 둔화",
-            "en": "Structural Slowdown in Building Materials Demand"
+            "ko": "해외 수주 변동성과 플랜트 원가",
+            "en": "Overseas order volatility and plant costs"
           },
           "body": {
-            "ko": "시멘트·레미콘은 주택 착공 감소의 영향을 시차를 두고 받는 구조여서 착공 반등이 즉각적인 출하량 회복으로 이어지지 않을 수 있다. 업계 협회는 2026년 수요가 전년과 비슷하거나 소폭 줄어들 것으로 전망한 바 있어 구조적 저성장 국면이 이어질 가능성이 있다.",
-            "en": "Because cement and ready-mixed concrete demand responds to housing starts with a time lag, a rebound in construction starts may not immediately translate into a shipment volume recovery. Industry associations have projected 2026 demand to be flat to slightly lower than the prior year, suggesting a structurally low-growth phase may persist."
+            "ko": "2026년 1~9월 해외건설 누적 수주액은 206억 6,000만달러로 전년 동기 대비 50% 감소했고, 중동 수주도 46% 줄었다. 한국수력원자력은 2026년 10월 29일 체코 두코바니 원전 시공계약 협상을 종료한다고 밝혔다. 플랜트 현장에서는 DL이앤씨의 샤힌 프로젝트처럼 추가 원가가 이익을 갉아먹을 수 있다.",
+            "en": "Cumulative overseas construction orders in January–September 2026 were USD 20.66 billion, down 50% year on year, and Middle East orders fell 46%. Korea Hydro & Nuclear Power announced on October 29, 2026 that it was ending construction contract negotiations for the Czech Dukovany nuclear project. At plant sites, additional costs, as seen at DL E&C's Shaheen project, can erode profit."
           }
         },
         {
           "title": {
-            "ko": "해외 수주 불확실성과 일회성 이익 혼동 가능성",
-            "en": "Overseas Order Uncertainty and Risk of Conflating One-Off Gains"
+            "ko": "시멘트 수요 부진과 환경 투자 부담",
+            "en": "Weak cement demand and environmental capex"
           },
           "body": {
-            "ko": "원전·플랜트 등 대형 해외 프로젝트는 계약 체결 시점과 조건이 불확실해 기대가 선반영된 이후 지연되거나 변경될 위험이 있다. 또한 분기별 이익 변동 중 일회성 요인과 지속 가능한 수익성 개선을 구분하지 않으면 업황 판단에 오류가 생길 수 있다.",
-            "en": "Large overseas projects such as nuclear power plants and petrochemical plants carry uncertainty around contract timing and terms, creating the risk that pre-reflected expectations could face delays or changes. In addition, failing to distinguish one-off factors from sustainable profitability improvements in quarterly earnings swings could lead to misjudging the underlying industry trend."
+            "ko": "최근 수 년간 국내 주요 시멘트 공장의 가동률은 60% 이하로 떨어졌다. 한일시멘트와 삼표시멘트의 3분기 영업이익이 각각 43.8%, 39.0% 줄어 고정비 부담이 실적에 그대로 드러났다. 시멘트업계의 2026년 설비투자 계획은 4,297억원이어서, 수요 회복이 더딘 가운데 환경 대응 투자가 재무 부담으로 이어질 수 있다.",
+            "en": "Utilization at major domestic cement plants has fallen below 60% in recent years. Operating profit at Hanilcementco and SAMPYO Cement fell 43.8% and 39.0% respectively in Q3, showing the fixed-cost burden in reported earnings. The cement industry's 2026 capital expenditure plan totals 429.7 billion won, so environmental investment could weigh on balance sheets while demand recovers slowly."
           }
         }
       ],
       "sources": [
-        "https://www.kpi.or.kr/www/contents/ai_report.asp?CFG_CD=kpi_c_ai_outlook",
-        "https://news.mtn.co.kr/news-detail/2026100213043415013",
-        "https://finance.thesmileinfo.com/2026/08/Construction.html",
-        "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202511041006158830324"
+        "https://www.newsway.co.kr/news/view?ud=2026111611211788153",
+        "https://www.etoday.co.kr/news/view/2648224",
+        "https://www.datasom.co.kr/news/articleView.html?idxno=210817",
+        "https://www.g-enews.com/article/Real-Estate/2026/10/2026103114203494882aa6f4cdad_1",
+        "https://www.fntimes.com/html/view.php?ud=202611021309567814b372994c95_18",
+        "https://www.fnnews.com/news/202611151824422614",
+        "https://www.segye.com/newsView/20261030509890",
+        "https://m.news.nate.com/view/20261102n00340",
+        "https://www.news1.kr/realestate/general/6341516",
+        "https://m.news.nate.com/view/20261115n06018"
       ],
       "sector": "건설·건자재",
-      "generatedAt": "2026-10-08 19:06"
+      "generatedAt": "2026-11-21 18:12"
     },
     "섬유·패션·생활": {
       "lead": {
-        "ko": "섬유·패션·생활 업종은 상장 종목 수는 많지만 개별 기업 규모가 작아 전체 시장에서 차지하는 비중은 미미한 업종으로, 2026년 2분기 들어 화섬·수출 OEM 부문의 수익성 개선이 뚜렷해지는 양상이다.",
-        "en": "The textile, fashion, and living goods sector comprises a large number of listed companies but carries limited aggregate market weight given the small scale of individual issuers, with notable profitability improvement emerging in the synthetic fiber and export OEM segments in the second quarter of 2026."
+        "ko": "섬유·패션·생활 업종은 2026년 3분기 공시에서 내수 브랜드사의 이익 회복과 소재·수출 제조사의 부진이 엇갈린, 기업별 차별화가 뚜렷한 업종이다.",
+        "en": "In the 2026 third-quarter filings, the Textile, Fashion & Lifestyle sector showed a clear split between companies: domestic brand operators recovered profit, while some materials and export manufacturers lagged."
       },
       "overview": {
-        "ko": "이 업종은 섬유 원사·직물 생산부터 의류 OEM 수출, 내수 패션 브랜드, 가구·생활용품까지 이질적인 하위 산업을 포괄한다. 영원무역·한세실업·제이에스코퍼레이션 등 글로벌 의류 OEM 업체들이 시가총액과 실적 양 측면에서 업종을 주도하고 있으며, F&F·한섬·신세계인터내셔날 등 내수 패션 브랜드와 LF 등 종합 패션기업이 그 뒤를 잇는다. 효성티앤씨는 스판덱스 등 화학섬유 소재를 공급하는 업스트림 기업으로 업종 내에서 독특한 위치를 차지한다. 에이스침대·퍼시스·DI동일 등은 가구·생활·섬유 소재 영역에서 각자의 틈새를 형성하고 있다. 업종 전반적으로 수출 비중이 높은 기업일수록 환율과 글로벌 수요, 관세 환경에 민감하게 반응하는 구조다. 반면 내수 패션·가구 기업들은 국내 소비심리와 주택 경기에 실적이 좌우되는 경향을 보인다.",
-        "en": "This sector spans a heterogeneous mix of sub-industries, from synthetic yarn and fabric production to apparel OEM exports, domestic fashion brands, and furniture and household goods. Global apparel OEM manufacturers such as Youngone, Hansae, and JS Corporation lead the sector in both market capitalization and earnings, followed by domestic fashion brands including F&F, Handsome, and Shinsegae International, as well as diversified fashion group LF. Hyosung TNC occupies a distinctive upstream position as a supplier of synthetic fiber materials such as spandex. Furniture and living-goods names including Ace Bed, Fursys, and DI Dong-il each occupy their own niches within furniture, living, and textile materials segments. Export-oriented companies across the sector tend to be highly sensitive to exchange rates, global demand conditions, and tariff environments, while domestically focused fashion and furniture firms are more directly affected by consumer sentiment and the housing market."
+        "ko": "섬유·패션·생활 업종은 의류 제조 수출, 브랜드 패션, 섬유 소재, 가구·침대 등 생활 소비재를 함께 담고 있다. 전체 시장 시가총액에서 차지하는 비중은 1%에 못 미치는 소형 업종이다. 상장 종목 수는 업종 가운데 중간 수준이다. 시가총액 상위에는 영원무역, F&F, 효성티앤씨가 있고, LF·한섬·신세계인터내셔날 같은 브랜드사와 에이스침대·퍼시스 같은 가구사가 뒤를 잇는다. 같은 업종 안에서도 수출 제조, 내수 브랜드, 소재 부문의 실적 동인이 서로 달라 종목별 구분이 필요하다.",
+        "en": "The Textile, Fashion & Lifestyle sector spans apparel manufacturing for export, branded fashion, textile materials, and household goods such as beds and furniture. It is a small sector, accounting for less than 1% of total market capitalization. Its number of listed stocks sits in the middle range among sectors. Youngone, F&F and Hyosung TNC lead by market capitalization, followed by brand operators such as LF, Handsome and Shinsegae International and furniture makers such as AceBed and Fursys. Export manufacturing, domestic brands and materials are driven by different factors, so the stocks need to be assessed individually."
       },
       "structure": {
-        "ko": "가치사슬 상류에는 효성티앤씨 같은 화학섬유·소재 업체가 자리하며, 글로벌 스판덱스·폴리에스터 수급과 원재료 가격에 실적이 연동된다. 중류의 의류 OEM 부문은 영원무역·한세실업·제이에스코퍼레이션이 주도하는데, 이들은 글로벌 스포츠·아웃도어 브랜드로부터 주문을 받아 베트남·방글라데시·인도네시아 등 해외 생산기지에서 제조해 수출하는 구조다. 하류의 브랜드·유통 부문은 F&F·한섬·신세계인터내셔날·LF가 자체 브랜드를 기획·유통하며 내수 소비와 더 밀접하게 연동된다. 가구·생활 부문은 퍼시스(사무용 가구)와 에이스침대(침대)가 각각 B2B·B2C 영역에서 상대적으로 독립적인 수요 기반을 갖는다. 조광피혁은 피혁 소재를, DI동일은 섬유 소재와 알루미늄 사업을 함께 하는 등 소규모 특화 기업들이 업종 전반에 포진해 있다. 전반적으로 상위 소수 OEM·화섬 기업에 실적과 시가총액이 집중되는 구조다.",
-        "en": "At the upstream end of the value chain sit chemical fiber and materials producers such as Hyosung TNC, whose earnings are closely tied to global spandex and polyester supply-demand conditions and raw material costs. The midstream apparel OEM segment is led by Youngone, Hansae, and JS Corporation, which manufacture for global sportswear and outdoor brands using overseas production bases in Vietnam, Bangladesh, and Indonesia for export. The downstream brand and distribution segment, comprising F&F, Handsome, Shinsegae International, and LF, plans and distributes proprietary brands and is more directly linked to domestic consumption. In furniture and living goods, Fursys (office furniture) and Ace Bed (beds) maintain relatively independent demand bases in the B2B and B2C segments respectively. Smaller specialized firms such as Chokwang Leather (leather materials) and DI Dong-il (textile materials and aluminum) are dispersed across the sector. Overall, earnings and market value remain concentrated among a small number of leading OEM and synthetic fiber companies."
+        "ko": "소재 단계에서는 효성티앤씨가 스판덱스 중심의 섬유 부문과 화학·철강 제품을 거래하는 무역 부문을 운영한다. DI동일은 섬유소재에 알루미늄, 환경 플랜트, 가구·화장품을 더한 4대 사업 축을 갖고 있고, 조광피혁은 신발·핸드백·차량용 시트에 쓰이는 피혁원단을 만든다. 제조 단계에서는 영원무역이 기능성·아웃도어 의류를 해외 브랜드에 OEM 방식으로 공급하고, 한세실업은 미국 소매업체와 글로벌 브랜드를 고객으로 의류를 생산해 수출한다. 제이에스코퍼레이션은 여성용 핸드백과 의류를 OEM 방식으로 해외 브랜드에 공급한다. 브랜드 단계에는 MLB와 디스커버리를 보유한 F&F, 헤지스 등을 운영하는 LF, 여성복 중심의 한섬, 패션과 화장품을 양대 축으로 하는 신세계인터내셔날이 있다. 생활 부문에서는 에이스침대와 퍼시스가 각각 침대와 사무용 가구를 맡는다. 시가총액은 상위 3개 종목과 나머지 종목 사이의 격차가 크다.",
+        "en": "In materials, Hyosung TNC runs a textile division centered on spandex and a trading division that handles chemical and steel products. DI Dong Il operates four business pillars: textile materials, aluminum, environmental plants, and furniture and cosmetics. Chokwang Leather makes leather fabrics used in shoes, handbags and automotive seating. In manufacturing, Youngone supplies functional and outdoor apparel to overseas brands on an OEM basis, and Hansae produces and exports apparel for U.S. retailers and global brands. JS supplies women's handbags and apparel to overseas brands on an OEM basis. Among brand operators, F&F owns MLB and Discovery, LF runs brands such as Hazzys, Handsome is centered on women's wear, and Shinsegae International builds its business on fashion and cosmetics. In lifestyle goods, AceBed makes beds and Fursys makes office furniture. The market capitalization gap between the top three stocks and the rest is wide."
       },
       "trends": {
-        "ko": "2026년 2분기 공시 기준으로 업종 내 수출 중심 기업들의 실적 개선이 두드러졌다. 효성티앤씨는 매출 2조 4,162억원, 영업이익 1,888억원으로 전년 동기 대비 영업이익이 157.5% 급증했으며, 한세실업과 제이에스코퍼레이션도 각각 영업이익이 192.8%, 100.8% 늘어나는 등 의류 OEM 부문의 수익성 회복이 뚜렷했다. 영원무역 역시 매출과 영업이익이 각각 18.6%, 20.5% 증가하며 양호한 흐름을 이어갔다. 업계 집계에 따르면 2026년 상반기 섬유패션 상장사 76개사의 합산 매출은 22조 7,562억원으로 전년 동기 대비 9.0% 증가했고 영업이익은 1조 9,885억원으로 37.8% 늘었으며 영업이익률도 6.9%에서 8.7%로 상승했다. 다만 의류 수출과 소비가 두 자릿수 증가한 반면 국내 의류 생산은 감소했고, 직물은 수출 감소와 재고 증가가 동시에 나타나는 등 업종 내 온도차가 존재한다. 반면 내수 패션·가구와 일부 소재 기업은 부진했는데, 퍼시스와 조광피혁은 2분기에 영업손실로 돌아섰고 LF는 영업이익이 0.4% 줄었다. 한섬은 영업이익이 46억원으로 늘었지만 규모는 크지 않았다. 신세계인터내셔날은 매출이 감소했음에도 영업이익이 흑자로 전환되는 등 비용 효율화를 통한 수익성 방어 사례도 나타났다.",
-        "en": "Based on second-quarter 2026 disclosures, export-oriented companies in the sector showed pronounced earnings improvement. Hyosung TNC posted revenue of KRW 2.4162 trillion and operating profit of KRW 188.8 billion, up 157.5% year-on-year, while Hansae and JS Corporation saw operating profit surge 192.8% and 100.8% respectively, reflecting a clear profitability recovery in the apparel OEM segment. Youngone also maintained solid momentum with revenue and operating profit up 18.6% and 20.5% respectively. According to industry compilations, combined first-half 2026 revenue of 76 listed textile and fashion companies rose 9.0% year-on-year to KRW 22.7562 trillion, while operating profit surged 37.8% to KRW 1.9885 trillion, with the operating margin rising from 6.9% to 8.7%. However, disparities persist within the sector, as apparel exports and consumption posted double-digit growth even as domestic apparel production declined, while fabric exports fell alongside rising inventories. In contrast, domestically focused fashion and furniture companies and some materials makers were weak: Fursys and Chokwang Leather swung to operating losses in the second quarter, and LF's operating profit slipped 0.4%. Handsome's operating profit rose to KRW 4.6 billion but remained small. Shinsegae International, meanwhile, turned operating profit positive despite a revenue decline, illustrating cost-efficiency-driven profit defense in some cases."
+        "ko": "2026년 3분기 공시 기준으로 시가총액 상위 12개 사 가운데 매출은 8곳이 늘고 4곳이 줄었으며, 영업이익은 5곳이 늘고 4곳이 줄었다. 영원무역은 영업이익이 1,990억원으로 전년 동기 대비 9.8% 늘었다. 한섬은 영업이익이 76억원으로 206.1% 늘었고, 간절기 의류 판매 증가와 비용 관리로 영업이익률이 0.8%에서 2.3%로 개선됐다. F&F는 매출이 4,521억원으로 4.7%, 영업이익이 1,084억원으로 15.3% 줄었는데, 중국 물량 조절의 영향으로 보도됐다. 효성티앤씨는 영업이익이 1,102억원으로 전년 동기 대비 96.7% 늘었으나, 직전 분기보다는 42% 감소했다. 한세실업은 매출이 5,887억원으로 8.3% 늘었지만 영업이익은 2억원으로 99.3% 줄었다.",
+        "en": "In the 2026 third-quarter filings, revenue rose at 8 of the 12 largest companies by market capitalization and fell at 4, while operating profit rose at 5 and fell at 4. Youngone's operating profit rose 9.8% year on year to KRW 199.0 billion. Handsome's operating profit rose 206.1% to KRW 7.6 billion, and stronger sales of transitional-season apparel and cost control lifted its operating margin from 0.8% to 2.3%. F&F's revenue fell 4.7% to KRW 452.1 billion and its operating profit fell 15.3% to KRW 108.4 billion, which was attributed to the adjustment of shipment volumes to China. Hyosung TNC's operating profit rose 96.7% year on year to KRW 110.2 billion, but it fell 42% from the previous quarter. Hansae's revenue rose 8.3% to KRW 588.7 billion, but its operating profit fell 99.3% to KRW 200 million."
       },
       "outlook": {
-        "ko": "향후 관전 포인트는 크게 공급망 재편과 내수 소비 회복 속도 두 가지로 요약된다. 미국의 관세 정책 변화에 대응해 베트남과 인도네시아 등 동남아시아에 집중됐던 국내 패션 OEM 업계의 생산 지도가 과테말라·니카라과·엘살바도르 등 중미 지역으로 넓어지고 있으며, 영원무역을 비롯한 OEM 업체들이 생산지 다변화에 나서고 있다. 이러한 니어쇼어링 전략이 중장기적으로 관세 리스크를 낮추는 요인이 될 수 있는지가 관건이다. 화섬 부문은 효성티앤씨의 스판덱스 수급 개선이 지속될지, 글로벌 의류 수요 사이클과 연동된 수주 흐름이 유지될지가 중요하다. 내수 패션·가구 부문은 2025년의 부진 이후에도 큰 폭의 매출 성장은 기대하기 어렵다는 전망이 많아, 가구업계의 구독 서비스·B2B 확장 등 신사업 성과가 관전 포인트다. 미국 패션 브랜드와 소매업체 상당수가 2026년 구매처를 더 다양화할 계획이라는 점도 국내 OEM 기업들의 경쟁 구도에 영향을 줄 수 있는 변수다.",
-        "en": "Key points to monitor going forward center on supply chain restructuring and the pace of domestic consumption recovery. In response to shifting US tariff policy, the production footprint of Korean fashion OEM firms, previously concentrated in Vietnam and Indonesia, is expanding into Central American countries such as Guatemala, Nicaragua, and El Salvador, with Youngone and other OEM companies pursuing production diversification. Whether this nearshoring strategy can meaningfully reduce tariff-related risk over the medium term remains a central question. In the synthetic fiber segment, continuity of the spandex supply-demand improvement at Hyosung TNC and the sustainability of order flows tied to the global apparel demand cycle are important considerations. For domestic fashion and furniture businesses, many expect little room for strong revenue growth even after a difficult 2025, making new initiatives such as furniture subscription services and B2B expansion a point to watch. The fact that many US fashion brands and retailers plan to further diversify their sourcing in 2026 also represents a variable that could affect the competitive positioning of domestic OEM companies."
+        "ko": "내수 패션에서는 백화점 여성캐주얼 매출이 7월 13.6%, 8월 16.8%에 이어 9월까지 3개월 연속 두 자릿수 증가율을 기록했다. LF는 영업이익이 511억원으로 216.6% 늘었고, 신세계인터내셔날과 퍼시스는 3분기에 흑자로 전환했다. 겨울 성수기를 앞두고는 정상가 판매 확대와 재고 관리가 관건으로 지목된다. F&F는 누적 매출의 53.3%가 중국 시장에서 발생해 중국 소비 회복 여부가 변수다. 효성티앤씨에 대해 iM증권은 4분기 영업이익을 1,285억원으로 전망했고, 중국 스판덱스 공장 가동률은 86%까지 회복되고 재고일수는 37일로 줄었다는 분석이 2026년 10월 하나증권 보고서에서 나왔다. 영원무역은 자회사 스캇의 누적 영업손실이 전년 동기 748억원에서 296억원으로 줄어 부담이 완화되고 있다.",
+        "en": "In domestic fashion, women's casual sales at department stores posted double-digit growth for three straight months through September, after 13.6% in July and 16.8% in August. LF's operating profit rose 216.6% to KRW 51.1 billion, and Shinsegae International and Fursys turned profitable in the third quarter. Ahead of the winter peak season, expanding full-price sales and managing inventory are seen as the key issues. China accounts for 53.3% of F&F's cumulative revenue, so a recovery in Chinese consumption is a swing factor. For Hyosung TNC, iM Securities forecast fourth-quarter operating profit of KRW 128.5 billion, and an October 2026 Hana Securities report noted that the utilization rate of Chinese spandex plants had recovered to 86% and inventory days had fallen to 37. At Youngone, the burden is easing as its subsidiary SCOTT's cumulative operating loss narrowed from KRW 74.8 billion to KRW 29.6 billion year on year."
       },
       "risks": [
         {
           "title": {
-            "ko": "관세·무역정책 불확실성",
-            "en": "Tariff and Trade Policy Uncertainty"
+            "ko": "내수 소비와 백화점 업황 의존",
+            "en": "Dependence on domestic consumption and department stores"
           },
           "body": {
-            "ko": "미국의 고율 관세 정책과 공급망 재편 압력은 베트남·방글라데시 등 아시아 생산기지에 의존하는 국내 OEM 수출기업들에 직접적인 비용 부담 요인이 될 수 있다. 소싱 다변화와 생산기지 이전에 따른 초기 투자 부담도 수익성에 영향을 줄 수 있다.",
-            "en": "High US tariff policies and supply chain restructuring pressures could directly raise costs for domestic OEM exporters reliant on Asian production bases such as Vietnam and Bangladesh. Initial investment burdens from sourcing diversification and production relocation may also weigh on profitability."
+            "ko": "내수 중심 기업의 주가 반등 폭은 수출·중국 비중이 큰 기업보다 제한적이며, 백화점 업황 둔화가 배경으로 지목된다. 에이스침대는 3분기 매출이 1.3%, 영업이익이 20.1% 줄었다. 소비 회복세가 꺾이면 브랜드사의 이익 개선도 지속되기 어렵다.",
+            "en": "Share price rebounds at domestically focused companies have been more limited than at those with large export or China exposure, with slowing department store conditions cited as a backdrop. AceBed's third-quarter revenue fell 1.3% and its operating profit fell 20.1%. If the consumption recovery loses momentum, the profit improvement at brand operators may be hard to sustain."
           }
         },
         {
           "title": {
-            "ko": "내수 소비 둔화",
-            "en": "Domestic Consumption Slowdown"
+            "ko": "수출 제조사의 미국 의존과 관세",
+            "en": "U.S. exposure and tariffs for export manufacturers"
           },
           "body": {
-            "ko": "국내 패션·가구 기업들은 장기화된 내수 침체와 주택 경기 부진의 영향을 받고 있으며, 2분기 실적에서 일부 기업의 적자 전환이 이를 보여준다. 소비 심리 회복이 지연될 경우 내수 비중이 높은 기업의 수익성 개선이 더뎌질 수 있다.",
-            "en": "Domestic fashion and furniture companies have been affected by prolonged consumption weakness and a sluggish housing market, as reflected in the operating losses posted by some firms in the second quarter. A delayed recovery in consumer sentiment could slow profitability improvement for companies with high domestic exposure."
+            "ko": "한세실업은 전체 매출의 약 80~90%를 미국에서 올리는 구조이며, 3분기 영업이익은 2억원으로 99.3% 줄었다. 2025년 업계 보도에서는 관세 부담이 브랜드사에 전적으로 귀속되지 않고 OEM에도 일부 전가될 수 있다고 지적했다. 저가 마트 고객사의 발주가 줄면 가동률 하락이 마진을 압박한다.",
+            "en": "Hansae earns roughly 80–90% of its total revenue in the U.S., and its third-quarter operating profit fell 99.3% to KRW 200 million. A 2025 industry report noted that tariff costs are not borne entirely by brands and may be partly passed on to OEMs. If orders from low-priced mass-retail customers decline, lower utilization rates put pressure on margins."
           }
         },
         {
           "title": {
-            "ko": "원가·환율 변동성",
-            "en": "Raw Material and Exchange Rate Volatility"
+            "ko": "중국 수요·원재료·환율 변동",
+            "en": "China demand, raw materials and exchange rates"
           },
           "body": {
-            "ko": "화섬 부문은 원료 가격과 글로벌 스판덱스·폴리에스터 수급 변화에, OEM 수출 부문은 환율 변동에 실적이 민감하게 반응하는 구조다. 원부자재 가격 상승은 가구업계처럼 내수 중심 기업의 원가 부담으로도 이어질 수 있다.",
-            "en": "The synthetic fiber segment is sensitive to raw material prices and shifts in global spandex and polyester supply-demand conditions, while OEM export businesses are exposed to exchange rate fluctuations. Rising raw material costs can also pressure margins at domestically focused companies such as furniture makers."
+            "ko": "효성티앤씨는 3분기에 스판덱스 판매량이 중국에서 약 8~9% 줄었고, 폴리에스터·나일론 부문은 고가 원재료 투입으로 적자 폭이 다시 커졌다. 영원무역은 환율 변동에 따른 외환·파생상품 손실로 3분기 순이익이 전년 동기 대비 56.4% 감소했다. F&F의 중국 사업 재고 조정과 합쳐 보면 중국 수요와 환율, 원료 가격이 실적 변동성을 키우는 요인이다.",
+            "en": "In the third quarter, Hyosung TNC's spandex sales volume in China fell by about 8–9%, and the loss in its polyester and nylon business widened again because of costly raw materials. Youngone's third-quarter net income fell 56.4% year on year because of foreign-exchange and derivatives losses from currency moves. Together with F&F's inventory adjustment in China, Chinese demand, exchange rates and raw material prices add to earnings volatility."
           }
         }
       ],
       "sources": [
-        "https://www.ktnews.com/news/articleView.html?idxno=147785",
-        "https://www.tinnews.co.kr/32209",
-        "https://v.daum.net/v/20261004075159418",
-        "https://www.ktnews.com/news/articleView.html?idxno=143164",
-        "http://www.ktnews.com/news/articleView.html?idxno=143235"
+        "https://www.hankooki.com/news/articleView.html?idxno=348618",
+        "https://www.g-enews.com/article/Securities/2026/11/202611191422333105923c501012_1",
+        "https://www.thepowernews.co.kr/view.php?ud=202611021322032538de3f0aa1be_7",
+        "https://www.fnnews.com/news/202611181803415839",
+        "https://www.pinpointnews.co.kr/news/articleView.html?idxno=496627",
+        "https://www.asiatoday.co.kr/kn/view.php?key=20260304010000744",
+        "https://fashionbiz.co.kr/article/217377"
       ],
       "sector": "섬유·패션·생활",
-      "generatedAt": "2026-10-08 18:29"
+      "generatedAt": "2026-11-21 18:05"
     },
     "지주": {
       "lead": {
-        "ko": "지주 업종은 상법 개정에 따른 거버넌스 개혁과 핵심 자회사 실적 호조가 맞물리며 전통적인 순자산가치(NAV) 대비 할인이 축소되는 재평가 국면에 들어서 있다.",
-        "en": "The holding company sector is undergoing a re-rating phase as corporate governance reform under the revised Commercial Act converges with strong earnings at key subsidiaries, narrowing the sector's traditional discount to net asset value (NAV)."
+        "ko": "자회사 실적에 따라 이익이 갈리는 가운데, 상법 개정에 따른 자사주 소각과 주주환원 확대가 순자산가치 할인 축소 논의의 중심에 선 업종이다.",
+        "en": "The holding company sector's earnings diverge with those of their subsidiaries, while share cancellations under the amended Commercial Act and expanded shareholder returns sit at the center of the debate over narrowing net asset value discounts."
       },
       "overview": {
-        "ko": "지주회사는 그룹 지배구조의 최상단에서 자회사 지분을 보유하며 배당금과 지분법 손익을 수익원으로 삼는 투자 성격의 기업군이다. 상장 종목 수는 많지만 개별 회사가 속한 산업은 반도체, 철강, 조선, 금융, 화학, 항공 등으로 제각각이어서 업종 자체가 단일한 업황 사이클을 공유하지는 않는다. 그간 국내 지주사는 자회사 지분가치 합산 대비 상당폭 할인되어 거래되는 '지주사 디스카운트'가 고질적 현상으로 지목돼 왔다. 그러나 2026년 들어 상법 개정과 자사주 소각 확산 등 지배구조 개선 움직임이 본격화되면서 할인율 축소 기대가 커지고 있다. 특히 SK가 보유 자사주의 20% 넘는 물량을 소각하기로 결정하면서 지배구조 개선과 주주가치 제고 흐름이 한층 뚜렷해졌다는 평가가 나온다. 시가총액 상위에는 SK스퀘어, SK, POSCO홀딩스 등 그룹 지주사가 포진해 있다.",
-        "en": "Holding companies sit atop group governance structures, holding equity stakes in subsidiaries and generating income primarily from dividends and equity-method gains, giving the group an investment-company character. Although the number of listed names is large, the underlying industries span semiconductors, steel, shipbuilding, finance, chemicals, and aviation, so the sector does not share a single, unified business cycle. Korean holding companies have long traded at a substantial discount to the sum of their subsidiary stake values, a phenomenon commonly referred to as the 'holding company discount.' Entering 2026, however, expectations for a narrower discount have grown as governance reforms, including amendments to the Commercial Act and expanding treasury share cancellations, have gained momentum. Market commentary notes that SK's decision to cancel more than 20% of its treasury shares has made the trend toward improved governance and shareholder value more pronounced. The sector's largest names by market capitalization include SK Square, SK Inc., and POSCO Holdings, among other group holding companies."
+        "ko": "지주 업종은 자회사 지분을 보유하고 배당, 상표권 수익, 지분법손익으로 실적을 채우는 회사들을 묶은 업종이다. 전체 시장에서는 한 자릿수 비중이지만, 시가총액 1위인 SK스퀘어가 2위인 SK의 두 배를 웃돌 만큼 상위 종목 쏠림이 크다. 업종 안에는 SK하이닉스 지분을 핵심 자산으로 둔 SK스퀘어, SK·LG·GS·LS 같은 그룹 지주사, 손해보험과 금융투자를 영위하는 메리츠금융지주가 함께 있다. 한미사이언스는 의약품 도매와 헬스케어를 직접 운영하고 두산은 자체사업을 병행해, 같은 업종 안에서도 사업 성격이 다르다. 국내 지주회사는 통상 순자산가치 대비 30~60% 할인된 가격에서 거래돼 왔으며, 지배구조 리스크와 중복상장, 낮은 주주환원율이 복합적으로 작용한 결과다.",
+        "en": "The holding company sector groups companies that own subsidiary stakes and earn income from dividends, brand royalties and equity-method gains. Its weight in the overall market is in the single digits, yet it is highly concentrated at the top, as SK Square, the largest by market capitalization, is more than twice the size of the second-largest, SK. The sector includes SK Square, whose core asset is its SK hynix stake, group holding companies such as SK, LG, GS and LS, and Meritz Financial Group, which operates in non-life insurance and financial investment. Hanmi Science directly runs pharmaceutical wholesale and healthcare businesses and Doosan operates its own businesses alongside its holdings, so business profiles differ even within the sector. Korean holding companies have typically traded at discounts of 30-60% to net asset value, reflecting governance risk, duplicate listings and low shareholder returns."
       },
       "structure": {
-        "ko": "업종 내 구조는 전형적인 하나의 가치사슬이라기보다 그룹별로 상이한 지배구조 피라미드의 집합에 가깝다. SK스퀘어는 SK하이닉스 지분을 보유한 투자형 지주사로 반도체 사이클에 연동되며, SK는 에너지·통신·배터리 계열사를 거느린 사업형 지주사다. POSCO홀딩스는 철강과 이차전지 소재 사업을 겸하고, 두산은 에너지·기계, 메리츠금융지주는 보험·증권 등 금융 계열사를 통할한다. LG와 GS는 각각 전자·화학, 에너지·유통 계열을 아우르고 HD현대는 조선·중공업, 에코프로는 이차전지 소재, 한진칼은 항공, LS는 전선·에너지, OCI홀딩스는 태양광 폴리실리콘과 화학 사업을 기반으로 한다. 업종 내 집중도는 매우 높은 편으로, SK스퀘어와 SK 두 종목이 업종 시가총액에서 차지하는 비중이 압도적이며 이는 SK하이닉스 지분가치 재평가가 업종 전체 시가총액 변동에 큰 영향을 미치는 구조임을 보여준다.",
-        "en": "Rather than forming a single value chain, the sector is better understood as a collection of distinct group governance pyramids. SK Square operates as an investment-type holding company centered on its SK hynix stake and is thus closely tied to the semiconductor cycle, while SK Inc. is an operating holding company spanning energy, telecom, and battery affiliates. POSCO Holdings combines steel with battery materials businesses, Doosan oversees energy and machinery, and Meritz Financial Group governs insurance and securities affiliates. LG and GS cover electronics/chemicals and energy/distribution respectively, while HD Hyundai is anchored in shipbuilding and heavy industry, Ecopro in battery materials, Hanjin KAL in aviation, LS in cable and energy, and OCI Holdings in solar-grade polysilicon and chemicals. Concentration within the sector is notably high, with SK Square and SK Inc. together accounting for an outsized share of total sector market capitalization, illustrating how revaluation of the SK hynix stake can materially move the sector's aggregate value."
+        "ko": "지주 업종의 가치사슬은 상장·비상장 자회사에서 나온 이익이 배당, 상표권 수익, 지분법손익의 형태로 지주사에 모이는 구조다. SK스퀘어는 SK하이닉스 지분 20.7%를 보유한 최대 주주다. SK는 자회사 배당, 브랜드 로열티, IT서비스 매출로 수익을 얻고, LG는 LG전자·LG화학·LG CNS·LG유플러스 등에서 받는 배당과 상표권 수익, 지분법손익으로 실적이 채워진다. HD현대는 조선·해양을 중심으로 건설기계, 에너지, 전력기기 자회사를 거느리고, POSCO홀딩스는 철강을 축으로 이차전지소재, 인프라, 에너지 자원을 묶고 있다. 한진칼은 대한항공 지분을 핵심 자산으로 보유하고, 에코프로는 에코프로그룹의 지주회사로 코스닥에 상장되어 있다. 지주사별로 수익원이 지분법손익 중심인지 자체사업 중심인지가 달라서, 자회사 한 곳의 실적 변화가 지주사 이익에 반영되는 정도도 종목마다 다르다.",
+        "en": "The value chain runs from listed and unlisted subsidiaries, whose profits flow up to the holding company as dividends, brand royalties and equity-method gains. SK Square is the largest shareholder of SK hynix, with a 20.7% stake. SK earns income from subsidiary dividends, brand royalties and IT service revenue, while LG's earnings are made up of dividends, trademark royalties and equity-method gains from affiliates such as LG Electronics, LG Chem, LG CNS and LG Uplus. HD Hyundai oversees construction equipment, energy and power equipment subsidiaries centered on shipbuilding and offshore, and POSCO Holdings groups battery materials, infrastructure and energy resources around steel. Hanjinkal holds a stake in Korean Air as its core asset, and Ecopro is the holding company of the Ecopro Group, listed on KOSDAQ. Because the main source of income differs between equity-method gains and own businesses, the extent to which one subsidiary's results flow into the parent's profit varies by company."
       },
       "trends": {
-        "ko": "2026년 2분기 실적은 핵심 자회사 업황이 지주사 손익에 그대로 전이되는 모습을 보여줬다. SK스퀘어는 연결 기준 2분기 영업이익 19조 2,354억원, 순이익 18조 6,750억원을 기록했다고 밝혔으며, 이는 핵심 자산인 SK하이닉스의 실적 호조가 지분법 이익으로 반영된 결과다. SK스퀘어의 NAV 할인율도 2025년 2분기 말 50.1%에서 38%로 큰 폭으로 낮아졌다. SK 역시 2분기 영업이익이 전년 동기 대비 큰 폭 증가했고, 조선업 호황을 등에 업은 HD현대는 고선가 선박의 매출 확대와 생산성 향상에 힘입어 2분기 영업이익이 4조 1,246억원으로 전년 동기 대비 262.2% 늘었으며, 조선 부문 영업이익률은 20%에 육박했다. GS와 두산, LS, 메리츠금융지주, LG 등 상위 종목 대부분이 전년 동기 대비 영업이익 증가를 기록했고 OCI홀딩스는 흑자 전환했다. 업종 전반으로는 상법 개정 시행에 따른 지배구조 개선 기대가 밸류에이션 재평가의 공통 동력으로 작용하고 있다.",
-        "en": "Second-quarter 2026 results showed how conditions at core subsidiaries flow directly through to holding company earnings. SK Square reported consolidated operating profit of KRW 19.2354 trillion and net income of KRW 18.675 trillion for the quarter, driven by equity-method gains from the strong performance of its key asset, SK hynix. SK Square's NAV discount also narrowed sharply, from 50.1% at the end of the second quarter of 2025 to 38%. SK Inc. also posted a substantial year-on-year increase in operating profit, while HD Hyundai, buoyed by the shipbuilding upcycle, grew second-quarter operating profit 262.2% year-on-year to KRW 4.1246 trillion on expanded sales of high-value vessels and improved productivity, with the shipbuilding segment's operating margin approaching 20%. Most other top names, including GS, Doosan, LS, Meritz Financial Group, and LG, posted year-on-year operating profit growth, while OCI Holdings swung to profitability. Across the sector, expectations for improved governance stemming from the revised Commercial Act are acting as a common driver of valuation re-rating."
+        "ko": "2026년 3분기 공시 기준 영업이익은 상위 종목 가운데 7곳이 늘었고, 증가율은 GS 46.0%에서 SK 507.1%까지 분포했다. SK는 매출 41조 3,379억원(+33.2%), 영업이익 5조 232억원(+507.1%)을 기록했다. SK스퀘어의 3분기 영업이익 증가에는 SK하이닉스 실적 개선에 따른 지분법이익 확대가 영향을 미쳤으며, 지분법손익은 7조 9,575억원으로 전년 동기 2조 6,601억원의 약 3배였다. 두산은 영업이익이 98.6%, LS는 89.9%, HD현대는 71.5% 늘었다. 반면 메리츠금융지주는 영업이익이 39.7%, LG는 21.8%, 한미사이언스는 51.3% 줄었고, 에코프로는 매출이 15.5% 감소하면서 영업이익도 92.5% 줄었다. 한진칼은 영업이익 119억원으로 흑자 전환했다. 2026년 11월 중순 지주사 업종은 주주환원 확대 기대와 자회사 실적 개선 전망에 힘입어 강세로 거래를 마쳤다.",
+        "en": "Based on Q3 2026 filings, operating profit rose at seven of the top companies, with growth ranging from 46.0% at GS to 507.1% at SK. SK recorded revenue of KRW 41.3379 trillion (+33.2%) and operating profit of KRW 5.0232 trillion (+507.1%). SK Square's Q3 operating profit rose on higher equity-method gains from SK hynix's improved results, with equity-method gains of KRW 7.9575 trillion, about three times the KRW 2.6601 trillion a year earlier. Operating profit rose 98.6% at Doosan, 89.9% at LS and 71.5% at HD Hyundai. By contrast, operating profit fell 39.7% at Meritz Financial Group, 21.8% at LG and 51.3% at Hanmi Science, while Ecopro's revenue fell 15.5% and its operating profit fell 92.5%. Hanjinkal returned to an operating profit of KRW 11.9 billion. In mid-November 2026, the holding company sector closed higher on expectations of expanded shareholder returns and improved subsidiary earnings."
       },
       "outlook": {
-        "ko": "향후 관전 포인트는 상법 개정 후속 조치의 순차 시행 여부다. 독립이사제도, 감사위원 선임 시 3% 룰 강화, 대규모 상장사의 집중투표제 의무화, 감사위원 분리선출 확대, 전자주주총회 의무화 등이 2026년 하반기부터 순차적으로 시행되면 지주사 할인율은 추가로 축소될 여지가 있다. 자사주 의무소각과 배당소득 분리과세 등 자본정책 관련 제도 변화도 주주환원 확대를 유도하는 요인으로 거론된다. 다만 모든 지주사가 같은 폭으로 재평가되는 것은 아니며, 실제 현금흐름과 주주환원 구조를 갖춘 지주사일수록 할인 폭이 줄어드는 계기가 될 수 있다. 동시에 개별 지주사의 주가 흐름은 결국 핵심 자회사의 업황에 좌우될 것으로 보이며, 반도체·조선·이차전지 등 각 그룹의 주력 산업 사이클이 업종 내 종목별 차별화를 지속시킬 전망이다.",
-        "en": "A key point to watch going forward is whether follow-up measures under the revised Commercial Act are implemented as scheduled. If provisions such as a mandatory independent director system, tightened 3% voting caps for audit committee member elections, mandatory cumulative voting for large listed firms, expanded separate election of audit committee members, and mandatory electronic shareholder meetings are phased in from the second half of 2026, holding company discounts could narrow further. Capital-policy changes such as mandatory treasury share cancellation and separate taxation of dividend income are also cited as factors that could encourage greater shareholder returns. That said, not every holding company is likely to be re-rated to the same degree; those with genuine cash flow generation and robust shareholder-return structures are better positioned to see their discounts narrow. At the same time, individual holding company share performance will likely continue to hinge on conditions at core subsidiaries, with cycles in semiconductors, shipbuilding, and battery materials expected to sustain differentiation across names within the sector."
+        "ko": "가장 큰 제도적 동인은 3차 상법 개정이다. 2026년 2월 25일 본회의를 통과해 3월 6일 공포·발효된 이 개정안은 신규 취득 자사주는 1년 이내, 기보유 자사주는 1년 6개월 이내 소각하도록 의무화했다. SK는 이사회에서 임직원 보상용을 제외한 자사주 전량인 약 1,469만주를 소각하기로 공시했다. SK스퀘어는 2028년까지 SK하이닉스에서 받을 것으로 예상하는 배당금 6조 2,000억원 이상 가운데 최소 4조 3,000억원을 주주에게 돌려줄 계획이다. SK스퀘어가 공개한 3분기 순자산가치 할인율은 43.1%로 2025년 3분기 52.6%보다 9.5%포인트 낮아졌다. 관전 포인트는 소각과 환원 계획의 실제 이행 속도, 자회사 실적의 방향, 업종 내 실적 격차가 할인율에 미치는 영향이다.",
+        "en": "The main institutional driver is the third amendment to the Commercial Act. Passed by the National Assembly on February 25, 2026 and promulgated on March 6, the amendment requires newly acquired treasury shares to be cancelled within one year and previously held shares within one and a half years. SK disclosed a board decision to cancel all of its treasury shares except those for employee compensation, about 14.69 million shares. SK Square plans to return at least KRW 4.3 trillion to shareholders by 2028 out of the more than KRW 6.2 trillion in dividends it expects from SK hynix. SK Square's Q3 net asset value discount, as it disclosed, was 43.1%, 9.5 percentage points lower than the 52.6% in Q3 2025. Points to watch are the pace at which cancellations and return plans are actually carried out, the direction of subsidiary earnings, and how the earnings gap within the sector affects discounts."
       },
       "risks": [
         {
           "title": {
-            "ko": "핵심 자회사 의존 리스크",
-            "en": "Dependence on Core Subsidiary Performance"
+            "ko": "핵심 자회사 의존과 지분법이익의 성격",
+            "en": "Dependence on core subsidiaries and the nature of equity-method gains"
           },
           "body": {
-            "ko": "SK스퀘어의 실적이 SK하이닉스 지분법 이익에 좌우되듯, 다수 지주사는 특정 핵심 자회사의 업황 변동에 손익이 크게 흔들린다. 반도체·조선 등 사이클 산업의 업황이 둔화될 경우 지주사 실적과 주가도 동반 조정될 수 있다.",
-            "en": "As SK Square's results are driven largely by equity-method gains from SK hynix, many holding companies see their earnings swing sharply with conditions at a single core subsidiary. Should cyclical industries such as semiconductors or shipbuilding slow, holding company earnings and share prices could adjust in tandem."
+            "ko": "SK스퀘어는 SK하이닉스 실적이 지분법손익으로 반영되는 구조여서 이익이 한 자회사의 사이클에 크게 좌우된다. 지분법이익 가운데 SK스퀘어에 실제 현금으로 들어오는 금액은 SK하이닉스가 정하는 배당 규모에 달려 있다. 다른 지주사도 핵심 자회사의 실적이 꺾이면 배당과 지분법손익이 함께 줄 수 있다.",
+            "en": "Because SK hynix's results flow into SK Square as equity-method gains, its profit depends heavily on a single subsidiary's cycle. The cash that SK Square actually receives from those gains depends on the dividend that SK hynix decides to pay. At other holding companies as well, a downturn at a core subsidiary can reduce dividends and equity-method gains together."
           }
         },
         {
           "title": {
-            "ko": "제도 변화의 이행 불확실성",
-            "en": "Implementation Uncertainty Around Regulatory Change"
+            "ko": "주주환원 확대에 따른 재무 부담",
+            "en": "Financial burden from expanded shareholder returns"
           },
           "body": {
-            "ko": "상법 개정 후속 조항과 세제 개편은 아직 순차 시행 단계에 있어 실제 적용 범위와 시기가 유동적이다. 제도 시행이 지연되거나 시장 기대에 못 미칠 경우 할인율 축소 기대가 되돌려질 가능성이 있다.",
-            "en": "Follow-up provisions to the revised Commercial Act and related tax reforms remain in a phased implementation stage, leaving their actual scope and timing somewhat fluid. Delays in implementation or outcomes falling short of market expectations could reverse expectations for a narrower NAV discount."
+            "ko": "NICE신용평가는 주주환원이 재무여력을 넘어 확대되면 현금흐름과 재무안정성에 부담이 될 수 있다고 분석했다. 공표한 환원 목표를 줄이거나 바꾸기 어려워지면 실적이 나빠져도 환원 기조를 유지해야 할 유인이 커질 수 있다.",
+            "en": "NICE Ratings has analyzed that if shareholder returns expand beyond financial capacity, they can weigh on cash flow and financial stability. Once announced return targets become hard to scale back or change, the incentive to maintain them even when earnings weaken can grow."
           }
         },
         {
           "title": {
-            "ko": "업종 내 이질성",
-            "en": "Heterogeneity Within the Sector"
+            "ko": "종목 간 실적 격차와 정책 기대의 변동",
+            "en": "Earnings dispersion across companies and shifting policy expectations"
           },
           "body": {
-            "ko": "지주 업종은 반도체, 철강, 조선, 금융, 항공 등 서로 다른 산업에 노출된 종목들의 집합이어서 업종 평균 지표만으로 개별 종목의 투자 판단 근거를 삼기 어렵다. 종목별 실적과 지배구조 개선 수준에 따른 차별화가 지속될 가능성이 크다.",
-            "en": "Because the holding company sector encompasses names exposed to disparate industries such as semiconductors, steel, shipbuilding, finance, and aviation, sector-average metrics alone offer limited basis for assessing individual names. Differentiation based on company-specific earnings and the degree of governance improvement is likely to persist."
+            "ko": "2026년 3분기 공시 기준으로 에코프로·메리츠금융지주·LG·한미사이언스는 영업이익이 줄어, 업종 안에서도 실적 방향이 엇갈렸다. 주가가 상법 개정과 밸류업 기대에 민감하게 움직이는 만큼, 제도 시행 속도나 소각 이행이 기대에 못 미치면 업종 전반의 투자심리가 흔들릴 수 있다.",
+            "en": "Based on Q3 2026 filings, operating profit fell at Ecopro, Meritz Financial Group, LG and Hanmi Science, so earnings direction diverged even within the sector. Because share prices respond sensitively to expectations around the Commercial Act amendment and value-up policies, slower implementation or weaker follow-through on cancellations than expected could unsettle sentiment across the sector."
           }
         }
       ],
       "sources": [
-        "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02699446645382336",
-        "https://www.biztribune.co.kr/news/articleView.html?idxno=357474",
-        "https://m.news.nate.com/view/20260814n30433",
-        "https://www.dailian.co.kr/news/view/1672302/%EC%88%98%EC%A3%BC-%EB%AA%A9%ED%91%9C-96-%EC%B1%84%EC%9A%B4-HD%ED%95%9C%EA%B5%AD%EC%A1%B0%EC%84%A0%ED%95%B4%EC%96%91-2026",
-        "https://file.alphasquare.co.kr/media/pdfs/market-report/%EC%A7%80%EC%A3%BC%ED%9A%8C%EC%82%AC%ED%95%A0%EC%9D%B8%EC%9C%A8%EC%9D%B420260528SK%EC%A6%9D%EA%B6%8C.pdf",
-        "http://www.leadersfact.co.kr/news/articleView.html?idxno=23515"
+        "https://www.fnnews.com/news/202605241427019659",
+        "https://m.sedaily.com/article/20114963",
+        "https://www.ziksir.com/news/articleView.html?idxno=153541",
+        "https://www.pinpointnews.co.kr/news/articleView.html?idxno=504064",
+        "https://kr.investing.com/news/stock-market-news/article-1860510",
+        "https://dealsite.co.kr/articles/172881",
+        "https://www.webeconomy.co.kr/news/articleView.html?idxno=2377718",
+        "https://biz.newdaily.co.kr/site/data/html/2026/10/12/2026101200318.html"
       ],
       "sector": "지주",
-      "generatedAt": "2026-10-08 18:49"
+      "generatedAt": "2026-11-21 18:18"
     },
     "미디어·엔터": {
       "lead": {
-        "ko": "상반기 주가 조정을 겪은 K팝이 하반기 대형 아티스트 월드투어를 축으로 반등을 모색하는 가운데, 드라마·영화·광고 등 콘텐츠 밸류체인 전반이 수익 모델 전환기를 지나고 있는 업종이다.",
-        "en": "Korea's media and entertainment sector is navigating a transition period across its value chain, as K-pop seeks a rebound led by major artists' world tours in the second half following a first-half share-price correction, while drama, film, and advertising segments undergo business-model shifts."
+        "ko": "2026년 3분기 공시 기준으로 하이브는 BTS 월드투어 반영으로 흑자 전환했고 CJ CGV는 극장 관객 회복으로 영업이익이 분기 최대를 기록한 반면, 에스엠·제일기획·SOOP 등은 영업이익이 줄어 종목별 편차가 큰 업종이다.",
+        "en": "In Q3 2026 filings, Hybe returned to an operating profit on its BTS world tour and CJ CGV posted a record quarterly operating profit on a theater recovery, while SM Entertainment, Cheil Worldwide and Soop saw operating profit decline, leaving wide dispersion across the sector."
       },
       "overview": {
-        "ko": "미디어·엔터 업종은 음악(K팝 기획사), 영상 콘텐츠(드라마·예능 제작, 극장), 광고대행 등 서로 다른 성격의 사업군이 함께 묶여 있는 것이 특징이다. 하이브·에스엠·JYP Ent.·와이지엔터테인먼트 등 K팝 4대 기획사가 업종 시가총액에서 가장 큰 비중을 차지하며, 제일기획과 이노션 등 대형 광고대행사, CJ ENM·스튜디오드래곤·CJ CGV 등 콘텐츠·극장 기업이 그 뒤를 잇는다. 한국 증시 전체에서 차지하는 비중은 크지 않지만, K팝과 K드라마의 글로벌 확산을 바탕으로 해외 투자자들의 관심이 꾸준한 업종이기도 하다. 상장 종목 수는 비교적 많은 편이나 시가총액은 상위 몇 개 종목에 집중된 쏠림 구조를 보인다. 콘텐츠 IP를 기반으로 한 공연·MD·라이선싱 등 파생 수익 모델이 확대되면서 전통적인 음반·광고 매출 중심의 수익 구조에서 벗어나는 변화가 진행 중이다.",
-        "en": "The Korean media and entertainment sector brings together distinct business lines, including music (K-pop agencies), video content (drama, variety production, cinemas), and advertising agencies. HYBE, SM Entertainment, JYP Entertainment, and YG Entertainment, the four major K-pop agencies, account for the largest share of sector market capitalization, followed by large advertising agencies such as Cheil Worldwide and Innocean, and content and cinema companies including CJ ENM, Studio Dragon, and CJ CGV. While the sector's weight in the overall Korean equity market remains modest, it continues to draw sustained interest from overseas investors on the back of the global spread of K-pop and K-drama. Although the number of listed companies is relatively large, market capitalization is concentrated in a handful of top names. The sector is undergoing a shift away from a traditional revenue structure centered on album sales and advertising fees toward derivative revenue streams built around content IP, such as concerts, merchandise, and licensing."
+        "ko": "미디어·엔터 업종은 K팝 기획사, 방송·드라마 제작, 극장, 광고대행, 팬덤 플랫폼, 라이브 스트리밍, 교육 콘텐츠 기업을 폭넓게 포괄한다. 상장 종목 수는 업종 가운데 중간 수준이지만 시가총액 비중은 전체 시장의 1%를 밑도는 소형 업종이다. 시가총액 최상위는 하이브이고, 에스엠·제일기획·JYP Ent.·CJ ENM이 뒤를 잇는다. 업종 내 사업 모델이 이질적이어서 실적 동인도 아티스트 활동, 영화 흥행, 광고 예산 등으로 갈린다. 올 들어 엔터 업종 주가가 50%가량 하락했다는 점에서 보듯 2026년 주가 조정 폭이 컸던 업종이기도 하다.",
+        "en": "The media and entertainment sector spans K-pop agencies, broadcast and drama production, movie theaters, advertising agencies, fandom platforms, live streaming and educational content. The number of listed stocks is mid-range among sectors, but the sector's share of total market capitalization is below 1%, making it a small one. Hybe is the largest by market value, followed by SM Entertainment, Cheil Worldwide, JYP Entertainment and CJ ENM. Business models within the sector are heterogeneous, so earnings drivers range from artist activity to box-office hits and advertising budgets. Entertainment stocks had fallen by roughly 50% year to date, so 2026 has also been a year of sizable share-price correction for the group."
       },
       "structure": {
-        "ko": "밸류체인 상류에는 아티스트 육성과 음악 제작을 담당하는 하이브·에스엠·JYP Ent.·와이지엔터테인먼트가 위치하며, 디어유처럼 팬덤 플랫폼으로 이들과 연계된 종목도 있다. 영상 콘텐츠 영역에서는 CJ ENM과 자회사 스튜디오드래곤이 드라마 제작·유통을 담당하고, CJ CGV가 극장 상영 단계를 맡는 구조다. 광고대행업에서는 제일기획과 이노션이 각각 삼성과 현대차그룹 계열사 광고 물량을 기반으로 안정적인 매출 기반을 갖추고 있다. 디지털대성은 교육 콘텐츠, SOOP은 실시간 스트리밍 플랫폼으로 업종 내 상대적으로 독립적인 영역을 형성한다. 전반적으로 상위 4~5개 종목이 업종 시가총액의 대부분을 차지하는 집중도 높은 구조이며, 중소형 종목은 개별 콘텐츠 흥행이나 아티스트 활동에 따라 주가 변동성이 큰 편이다.",
-        "en": "At the upstream end of the value chain sit HYBE, SM Entertainment, JYP Entertainment, and YG Entertainment, which handle artist development and music production, with Dear U operating an adjacent fandom platform business. In video content, CJ ENM and its subsidiary Studio Dragon handle drama production and distribution, while CJ CGV covers theatrical exhibition. In advertising, Cheil Worldwide and Innocean maintain stable revenue bases anchored by affiliated-group advertising volumes from Samsung and Hyundai Motor Group, respectively. Digital Daesung operates in education content and SOOP in live streaming, forming relatively independent niches within the sector. Overall, the structure is highly concentrated, with the top four to five names accounting for most of sector market capitalization, while smaller names tend to show greater share-price volatility tied to individual content hits or artist activity cycles."
+        "ko": "IP 기획·제작 단계에는 음반·공연·MD 수익을 내는 하이브, 에스엠, JYP Ent., 와이지엔터테인먼트가 자리한다. 2026년 3분기 매출에서 하이브는 엔터 4사 합계의 68%를 차지해 집중도가 높다. 유통·플랫폼 단계에는 구독형 팬덤 플랫폼 '버블'을 운영하는 디어유와 라이브 스트리밍 업체 SOOP이 있다. 영상 콘텐츠에서는 미디어플랫폼·영화드라마·음악·커머스를 아우르는 CJ ENM과 그 자회사인 드라마 스튜디오 스튜디오드래곤이 있고, 극장은 CJ CGV가 맡는다. 광고대행에서는 제일기획과 이노션이 계열 광고주 비중이 높은 구조이며, 이 업종에는 교육 콘텐츠 기업 디지털대성도 함께 분류된다.",
+        "en": "The IP planning and production stage includes Hybe, SM Entertainment, JYP Entertainment and YG Entertainment, which earn from albums, concerts and merchandise. In Q3 2026 revenue, Hybe accounted for 68% of the four agencies' combined total, so concentration is high. The distribution and platform stage includes Dear U, which runs the subscription fandom platform Bubble, and Soop, a live-streaming operator. In video content, CJ ENM spans media platforms, film and drama, music and commerce, its subsidiary Studio Dragon is a drama studio, and CJ CGV operates the theaters. In advertising, Cheil Worldwide and Innocean Worldwide rely heavily on affiliated advertisers, and the sector also includes Digital Daesung, an educational content company."
       },
       "trends": {
-        "ko": "2026년 2분기 실적을 보면 하이브가 매출 1조 4,500억원, 영업이익 1,709억원으로 전년 동기 대비 큰 폭의 증가를 기록했는데, 이는 BTS 등 대형 아티스트의 공연 매출 반영 효과가 컸던 것으로 분석된다. 반면 JYP Ent.는 매출과 영업이익이 각각 두 자릿수대 감소를 보였고 SOOP 역시 영업이익이 전년 동기 대비 크게 줄어드는 등 종목별 실적 편차가 뚜렷했다. 앞서 2026년 상반기에는 국내 4대 엔터사의 주가가 대외 요인 등으로 전반적으로 하락했다. K팝 음반 시장은 BTS와 블랙핑크의 복귀, 신인 그룹의 밀리언셀러 달성이 맞물리며 2026년 상반기 판매량 신기록을 세웠고, 이 흐름이 이어지면 연간 총판매량이 다시 1억 장을 넘어설 수 있다는 분석이 나왔다. 드라마·영화 등 영상 콘텐츠 부문에서는 CJ CGV의 영업이익이 전년 동기 대비 568.1% 늘고 스튜디오드래곤이 흑자 전환하는 등 회복세가 나타났다. 다만 영화 산업 전반은 공급이 줄어든 가운데 개별 작품의 흥행 성공률을 높여야 하는 구조적 과제를 안고 있으며, 코로나19 기간 제작된 개봉 대기작이 소진되면서 신규 투자작만으로 상영작을 채워야 하는 상황이다. 광고대행업은 제일기획과 이노션 모두 영업이익이 견조한 모습을 보이며 계열사 물량 기반의 안정성을 재확인했다.",
-        "en": "In the second quarter of 2026, HYBE posted sharp year-on-year growth, with revenue of KRW 1.45 trillion and operating profit of KRW 170.9 billion, reflecting the large contribution from concert revenue tied to major artists including BTS. By contrast, JYP Entertainment saw double-digit declines in both revenue and operating profit, and SOOP's operating profit fell sharply year-on-year, highlighting notable divergence in performance across names. Earlier, in the first half of 2026, share prices of Korea's four major entertainment agencies broadly declined on external factors and other pressures. The K-pop album market set a new half-year sales record in the first half of 2026 on the back of BTS and BLACKPINK's comeback alongside million-selling rookie acts, with full-year sales potentially surpassing 100 million units again if the pace continues. In the video content segment, signs of recovery emerged as CJ CGV's operating profit rose 568.1% year-on-year and Studio Dragon turned profitable. The broader film industry, however, still faces the structural challenge of raising the success rate of individual releases amid reduced supply, and with the backlog of pandemic-era productions exhausted, theaters must rely solely on newly financed films. The advertising agency segment reaffirmed its stability, with both Cheil Worldwide and Innocean maintaining solid operating profits anchored by affiliated-group ad volumes."
+        "ko": "2026년 3분기 공시 기준 하이브는 매출 1조 5,257억원으로 전년 동기 대비 109.8% 늘었고, 영업이익은 1,885억원으로 흑자 전환했다. BTS 월드투어 '아리랑'의 북미·유럽 공연이 반영되며 공연 매출이 전년 동기 대비 197% 늘었다. JYP Ent.는 영업이익 480억원(+17.6%)을 기록했고, 스트레이키즈의 해외 음반 판매와 관련 상품 매출 증가가 실적 개선을 이끌었다. 에스엠은 매출 -10.5%, 영업이익 -30.3%였고, 와이지엔터테인먼트는 영업이익이 56.8% 줄었으며, 에스엠에 대해서는 신보 공백과 원가율 상승이 숨 고르기 요인으로 지목됐다. CJ CGV는 영업이익 736억원으로 215.2% 늘었고, 국내 관람객은 2,005만 명으로 28.6% 증가했다. 광고 쪽에서는 제일기획의 매출이 12.6%, 영업이익이 19.7% 감소했으며, 회사는 주요 고객사의 마케팅 예산 효율화와 원화 강세를 원인으로 설명했다.",
+        "en": "In Q3 2026 filings, Hybe's revenue rose 109.8% year on year to KRW 1,525.7 billion and its operating profit of KRW 188.5 billion marked a return to profit. Concert revenue rose 197% year on year as North American and European dates of the BTS world tour 'ARIRANG' were booked. JYP Entertainment reported operating profit of KRW 48.0 billion (+17.6%), and higher overseas album sales and related merchandise by Stray Kids drove the improvement. SM Entertainment's revenue fell 10.5% and its operating profit fell 30.3%, YG Entertainment's operating profit fell 56.8%, and for SM a gap in album releases and a higher cost ratio were cited as factors in a pause. CJ CGV's operating profit rose 215.2% to KRW 73.6 billion, and its domestic admissions rose 28.6% to 20.05 million. In advertising, Cheil Worldwide's revenue fell 12.6% and its operating profit fell 19.7%, and the company attributed this to major clients' marketing budget efficiency and a stronger won."
       },
       "outlook": {
-        "ko": "향후 K팝 업종의 핵심 관전 포인트는 하반기 대형 아티스트들의 월드투어가 전 세계에서 350만 명 이상의 관객을 모으며 공연 매출 확대로 이어질지 여부다. 동시에 음반 중심에서 공연 및 IP 비즈니스 중심으로 수익 구조를 전환하는 체질 개선이 업계의 과제로 꼽히며, 실물 음반 비중이 줄어드는 대신 공연 매출과 스트리밍 수익이 늘어나는 흐름이 지속될 것으로 보인다. 차세대 아티스트 라인업의 해외 흥행 성과도 중장기 성장성을 가늠할 변수로 거론된다. 드라마·영상 콘텐츠 부문에서는 해외 스튜디오 및 유통망 확장을 통한 글로벌 제작 거점화 전략이 이어질 것으로 예상되며, 영화 산업은 공급 축소 속 선별적 흥행을 통한 수익성 회복 여부가 관건이다. 광고대행업은 계열사 매출 비중이 높은 만큼 그룹 전반의 광고 집행 사이클에 연동된 흐름을 보일 가능성이 크다.",
-        "en": "The key focus for the K-pop segment going forward is whether major artists' world tours in the second half draw more than 3.5 million concertgoers worldwide and translate into higher concert revenue. At the same time, the industry faces the task of restructuring its revenue model from an album-centric approach toward one centered on concerts and IP business, with physical album sales shrinking while concert and streaming revenue continues to expand. The overseas commercial success of next-generation artist lineups is also cited as a variable for gauging mid- to long-term growth potential. In the drama and video content segment, strategies to expand overseas studios and distribution networks toward establishing global production hubs are expected to continue, while the film industry's path to profitability recovery hinges on selective box-office success amid reduced supply. Given their high reliance on affiliated-group revenue, advertising agencies are likely to continue tracking the broader advertising spending cycles of their parent conglomerates."
+        "ko": "하이브는 3분기 누적 매출이 3조 6,740억원에 달해 엔터사 최초로 연 매출 4조원 달성이 유력해졌다. 업종 주가의 관건은 신규 IP의 성장 속도로, 저연차·신규 IP가 새로운 실적 축으로 자리 잡는지가 반등을 가를 핵심 변수로 거론된다. JYP Ent.는 스트레이키즈의 군입대가 다가오고 트와이스의 재계약도 앞둔 만큼 차세대 아티스트 육성이 과제다. CJ CGV는 4분기에도 글로벌 대작 개봉에 따른 극장·기술특별관 성장 모멘텀이 이어질 것이라는 입장이며, 극장 회복이 제작·배급으로 확산되는지는 별도로 지켜볼 대목이다. 광고 업종에서는 제일기획이 비계열 광고주 영입 확대로 실적 방어를 추진하고 있다.",
+        "en": "For Hybe, cumulative nine-month revenue reached KRW 3.674 trillion, making annual revenue of KRW 4 trillion, a first for an entertainment company, likely. The key variable for sector shares is the growth pace of new IP, as whether junior and new IP become a new earnings pillar is seen as the factor that decides a rebound. For JYP Entertainment, with Stray Kids' military enlistment approaching and Twice's contract renewal ahead, developing the next artists is the task. CJ CGV's position is that growth momentum in theaters and premium formats from global blockbuster releases should continue into Q4, and whether the theater recovery spreads to production and distribution is a separate point to watch. In advertising, Cheil Worldwide says it is defending earnings by adding non-affiliated advertisers."
       },
       "risks": [
         {
           "title": {
-            "ko": "플랫폼 쏠림 및 공급 축소 리스크",
-            "en": "Platform Concentration and Supply Contraction Risk"
+            "ko": "핵심 IP 의존과 세대교체 부담",
+            "en": "Reliance on core IP and generational turnover"
           },
           "body": {
-            "ko": "영상 콘텐츠 업계는 작품을 편성할 플랫폼이 한정된 가운데 넷플릭스 쏠림이 심해져, 제작사들이 준비한 작품이 편성을 받지 못하는 사례가 늘고 있다. 특정 플랫폼 의존도가 높은 제작사일수록 수익성이 영향을 받을 수 있다. 영화 산업 역시 신규 투자 위축으로 연간 개봉작 수가 과거 대비 줄어든 상태여서 공급 측 제약이 지속될 가능성이 있다.",
-            "en": "The video content industry faces intensifying reliance on Netflix amid a limited number of platforms, leaving production companies' prepared titles without broadcast slots, which could affect the profitability of producers with high exposure to a single platform. The film industry also continues to see annual release counts fall below past levels amid subdued new investment, suggesting supply-side constraints may persist."
+            "ko": "핵심 IP에 대한 높은 의존도와 차세대 성장 동력의 불확실성이 엔터주 약세의 배경으로 거론된다. 3분기 실적을 이끈 스트레이키즈도 일부 멤버의 군복무 시기가 다가오고 있다. 주력 아티스트의 활동 공백이 생기면 기획사 실적 변동성이 커질 수 있다.",
+            "en": "Heavy reliance on core IP and uncertainty over next-generation growth drivers are cited behind the weakness in entertainment shares. Stray Kids, which led Q3 results, also faces some members' approaching military service. A gap in the activity of flagship artists could raise earnings volatility at agencies."
           }
         },
         {
           "title": {
-            "ko": "아티스트·IP 의존 리스크",
-            "en": "Artist and IP Dependency Risk"
+            "ko": "영업이익과 최종 손익의 괴리",
+            "en": "Gap between operating profit and bottom line"
           },
           "body": {
-            "ko": "K팝 기획사의 실적은 소수 핵심 아티스트의 활동 일정과 흥행에 크게 좌우되는 구조로, 2026년 2분기 하이브와 JYP Ent.의 실적 격차에서도 이러한 편차가 드러났다. 특정 아티스트의 활동 공백이나 계약 변동이 발생할 경우 개별 기획사 실적에 직접적인 영향을 줄 수 있다.",
-            "en": "K-pop agencies' earnings are heavily dependent on the activity schedules and commercial success of a small number of core artists, a divergence clearly reflected in the second-quarter 2026 performance gap between HYBE and JYP Entertainment. Activity hiatuses or contract changes involving specific artists can directly affect individual agencies' results."
+            "ko": "하이브는 영업이익이 1,885억원이었지만 세전이익은 399억원에 그쳤다. 에스엠은 영업이익은 흑자였으나 외화 손실 영향으로 당기순이익이 적자로 돌아섰다. 영업 실적이 개선되어도 영업외 손익과 환율에 따라 최종 이익이 달라질 수 있다.",
+            "en": "Hybe's operating profit was KRW 188.5 billion, but its pre-tax profit was only KRW 39.9 billion. SM Entertainment kept an operating profit, but its net income turned to a loss because of foreign currency losses. Even when operating results improve, non-operating items and exchange rates can change bottom-line earnings."
           }
         },
         {
           "title": {
-            "ko": "광고 경기 민감도",
-            "en": "Sensitivity to Advertising Cycles"
+            "ko": "광고대행 구조 변화와 극장 재무 부담",
+            "en": "Shifts in advertising and theater balance-sheet burden"
           },
           "body": {
-            "ko": "제일기획과 이노션은 각각 특정 대기업 그룹 계열사 물량에 대한 매출 의존도가 높아, 그룹 전반의 광고 예산 집행 사이클이나 계열사 실적 변화에 따라 수익성이 영향을 받을 수 있는 구조다. 비계열 광고주 확대 속도가 더딜 경우 성장성이 제한될 가능성도 있다.",
-            "en": "Cheil Worldwide and Innocean each derive a high share of revenue from their respective parent conglomerate's affiliated companies, meaning profitability can be affected by shifts in the group's overall advertising budget cycles or affiliate performance. Growth potential could also be constrained if the pace of expanding non-affiliated clients remains slow."
+            "ko": "광고대행 업계에서는 생성형 AI로 광고물을 자체 제작하는 기업이 늘어 광고대행사의 설 자리가 좁아질 것이라는 관측이 나온다. CJ CGV는 영업이익이 크게 늘었지만 차입금과 극장 임차계약에 따른 금융비용 부담이 여전히 과제로 남아 있다. 광고 예산 축소와 흥행작 편중은 두 사업의 실적 변동 요인이다.",
+            "en": "In advertising, there are concerns that more companies producing ad materials in-house with generative AI will narrow agencies' room to operate. CJ CGV's operating profit rose sharply, but financial costs from borrowings and theater lease contracts remain an issue. Smaller ad budgets and a reliance on a few hit films are sources of earnings volatility for the two businesses."
           }
         }
       ],
       "sources": [
-        "https://www.marieclairekorea.com/celebrity/2026/07/enterstock/",
-        "https://m.news.nate.com/view/20260728n31673",
-        "https://www.dailian.co.kr/news/view/1596089/2026-%EC%A0%84%EB%A7%9D%EB%B3%B4%EA%B3%A0%EC%84%9C-%ED%95%9C%EA%B5%AD%EC%98%81%ED%99%94%EA%B3%84-%EB%B2%BC%EB%9E%91-2026",
-        "https://v.daum.net/v/20260109073122278",
-        "https://news.nate.com/view/20260109n03446",
-        "https://cine21.com/news/view/?mag_id=109411"
+        "https://www.hankyung.com/article/2026111236111",
+        "https://www.seoultimes.news/news/article.html?no=2000102123",
+        "https://www.mydaily.co.kr/page/view/2026110514511208301",
+        "https://www.hankyung.com/article/2026111219116",
+        "https://www.insight.co.kr/news/581206",
+        "https://supple.kr/news/cmvuhu35sb3pe13pa5nukbjgj",
+        "https://bizhankook.com/articles/why-kpop-stocks-fell-despite-earnings.html",
+        "https://www.huffingtonpost.kr/article/261994",
+        "https://dealsite.co.kr/articles/172300",
+        "https://www.hankyung.com/article/2026102787241"
       ],
       "sector": "미디어·엔터",
-      "generatedAt": "2026-10-08 18:29"
+      "generatedAt": "2026-11-21 18:05"
     },
     "화학": {
       "lead": {
-        "ko": "국내 화학업종은 범용 석유화학 부문의 구조적 공급과잉과 스페셜티·2차전지 소재로의 체질 전환이 동시에 진행되는 과도기에 있다.",
-        "en": "Korea's chemical sector is navigating a transitional phase marked by structural oversupply in commodity petrochemicals alongside an ongoing pivot toward specialty and battery materials."
+        "ko": "화학 업종은 2026년 3분기에 범용 석유화학 부문이 다시 적자로 돌아서며 기업별 사업 구조에 따라 실적이 갈렸고, 설비 감축과 스페셜티 전환의 진척이 핵심 관전 포인트다.",
+        "en": "In the third quarter of 2026, commodity petrochemical operations slipped back into losses and results diverged by business mix, so progress on capacity cuts and the shift to specialty products is the key issue for the Korean chemicals sector."
       },
       "overview": {
-        "ko": "화학업종은 원유·나프타를 기초 원료로 하는 석유화학에서부터 2차전지 소재, 반도체 소재, 건축자재, 합성섬유까지 폭넓은 하위 산업을 포괄한다. 코스피·코스닥 전체 시가총액 대비 비중은 크지 않지만 국가 수출과 제조업 가치사슬에서 차지하는 위치는 상당하며, 상장 종목 수가 많아 세부 밸류체인별로 다양한 기업이 분포한다. 업종 내에는 나프타분해설비(NCC) 기반의 범용 석유화학 대기업부터 2차전지 전해질·전해액 소재, 반도체 공정 소재, 건축용 도료·단열재 등 특화 분야 기업까지 사업 모델이 크게 갈린다. 최근 수년간 중국의 대규모 증설에 따른 공급과잉이 범용 제품 업황을 짓누르면서 업종 내 기업 간 실적 양극화가 뚜렷해지고 있다. 이에 따라 업종을 단일하게 보기보다 범용 석유화학과 스페셜티·소재 부문을 구분해 접근하는 시각이 필요하다.",
-        "en": "The chemical sector spans a wide range of subsectors, from naphtha-based petrochemicals to battery materials, semiconductor materials, construction materials, and synthetic fibers. While its weight in overall market capitalization is modest, the sector plays a significant role in national exports and the manufacturing value chain, with a large number of listed companies spread across different value-chain segments. Business models vary widely within the sector, ranging from naphtha cracking center (NCC)-based commodity petrochemical conglomerates to specialized players in battery electrolytes, semiconductor process materials, and construction coatings and insulation. Persistent oversupply driven by large-scale Chinese capacity additions has weighed heavily on commodity petrochemical margins in recent years, widening the performance gap among companies within the sector. As such, the sector is increasingly viewed through a bifurcated lens separating commodity petrochemicals from specialty and advanced materials businesses."
+        "ko": "화학 업종은 석유화학 기초 유분부터 합성고무, 정밀화학, 첨단소재, 도료와 건자재까지 성격이 다른 사업이 함께 묶인 업종이다. 상장 종목 수는 많은 편이지만 전체 시장에서 차지하는 비중은 작다. LG화학은 석유화학, 첨단소재, 생명과학 부문에 자회사 LG에너지솔루션을 연결해 실적을 내는 구조여서 시가총액이 가장 큰 종목이다. 한화솔루션은 신재생에너지, 케미칼, 첨단소재 세 부문으로 나뉘고, KCC는 실리콘, 도료, 건자재가 주력이다. 이처럼 같은 업종 안에서도 석유화학 업황에 대한 민감도가 종목마다 크게 다르다.",
+        "en": "The chemicals sector groups businesses of very different character, from basic petrochemical feedstocks to synthetic rubber, fine chemicals, advanced materials, paints and building materials. It has many listed stocks, but its weight in the overall Korean market is small. LG Chem is the largest by market value, and it reports results by consolidating its petrochemicals, advanced materials and life sciences divisions together with its subsidiary LG Energy Solution. Hanwha Solutions operates in three segments: renewable energy, chemicals and advanced materials. KCC focuses on silicones, paints and building materials. Sensitivity to the petrochemical cycle therefore varies widely from stock to stock within the sector."
       },
       "structure": {
-        "ko": "가치사슬 상류에는 나프타를 분해해 에틸렌·프로필렌 등 기초 유분을 생산하는 NCC 설비가 있으며, LG화학과 롯데케미칼이 이 영역의 대표 기업이다. 중류에는 이들 기초 유분을 가공해 합성수지·합성고무 등을 만드는 업체들이 자리하는데, 금호석유화학이 합성고무 부문에서, 한화솔루션이 태양광 소재와 범용 화학을 함께 영위하며 이 구간을 대표한다. 하류에는 2차전지 전해질·소재(후성), 특수가스 및 정밀화학(이수스페셜티케미컬, 롯데정밀화학), 건축자재·도료(KCC), 산업자재·LNG 운반선용 보냉재(한국카본), 합성섬유·석유화학(코오롱인더, 태광산업), 이차전지용 동박과 반도체 소재(SKC) 등 다양한 스페셜티 기업들이 포진한다. 상류 NCC 부문은 대규모 설비투자가 필요해 소수 대기업에 집중된 반면, 하류 스페셜티 부문은 기술 차별화를 바탕으로 한 중소형 기업들의 진입이 활발해 업종 내 집중도는 가치사슬 단계별로 크게 다르다.",
-        "en": "At the upstream end of the value chain sit naphtha cracking centers (NCCs) that produce basic olefins such as ethylene and propylene, with LG Chem and Lotte Chemical representing this segment. The midstream segment, where basic olefins are processed into synthetic resins and rubber, is represented by Kumho Petrochemical in synthetic rubber and by Hanwha Solutions, which combines solar materials with commodity chemicals. Downstream, a diverse group of specialty players operates across battery electrolyte materials (Foosung), specialty gases and fine chemicals (Isu Specialty Chemical, Lotte Fine Chemical), construction materials and coatings (KCC), industrial materials and LNG carrier insulation (Hankuk Carbon), synthetic fibers and petrochemicals (Kolon Industries, Taekwang Industrial), and battery copper foil and semiconductor materials (SKC). While the upstream NCC segment requires massive capital investment and is concentrated among a handful of large conglomerates, the downstream specialty segment is more fragmented, with active entry by smaller firms leveraging technological differentiation, resulting in markedly different concentration levels across value-chain stages."
+        "ko": "기초화학 단계에서는 롯데케미칼이 나프타와 에탄 같은 원료를 분해해 기초 유분과 합성수지를 만들고, 태광산업은 화섬사와 석유화학제품을 제조한다. 금호석유화학은 합성고무를 중심으로 합성수지, 페놀유도체, EPDM·TPV 등을 운영하는 석유화학 기업이다. 정밀화학과 소재 단계에는 염소·셀룰로스·암모니아 계열의 롯데정밀화학, 불소화학 기반의 후성, 정밀화학과 전고체전지 소재를 다루는 이수스페셜티케미컬, 나노분말 기술의 나노신소재가 자리한다. 코오롱인더(화학·산업자재·패션)와 SKC(소재 전문), KCC(실리콘·도료·건자재)는 최종 소재와 제품 쪽에 가깝다. 롯데케미칼의 3분기 연결 매출은 5조 3,951억원이며, 자회사 롯데정밀화학은 같은 기간 영업이익 220억원을 냈다. 국내 기초화학은 여수·울산·대산 3대 산단에 설비가 몰려 있고, NICE신용평가에 따르면 국내 에틸렌 생산능력은 약 1,300만t으로 내수 수요 약 820만t을 크게 웃돈다.",
+        "en": "In basic chemicals, Lotte Chemical cracks feedstocks such as naphtha and ethane into base petrochemicals and synthetic resins, while Taekwang Industrial makes synthetic fibers and petrochemical products. Kumho Petro Chemical is a petrochemical company built around synthetic rubber, with synthetic resins, phenol derivatives and EPDM/TPV also in its portfolio. Fine chemicals and materials include LOTTE Fine Chemical (chlorine, cellulose and ammonia lines), Foosung (fluorochemicals), ISU Specialty Chemical (fine chemicals and solid-state battery materials) and Advanced Nano Products (nano powders). Kolon Industries (chemicals, industrial materials and fashion), SKC (a materials specialist) and KCC (silicones, paints and building materials) sit closer to end-use materials and products. Lotte Chemical's consolidated third-quarter revenue was 5.3951 trillion won, and its subsidiary LOTTE Fine Chemical posted operating profit of 22.0 billion won in the same period. Basic-chemicals capacity is concentrated in the three major petrochemical complexes of Yeosu, Ulsan and Daesan, and according to NICE Ratings, domestic ethylene capacity of about 13 million tons far exceeds domestic demand of about 8.2 million tons."
       },
       "trends": {
-        "ko": "2026년 2분기 공시를 보면 업종 내 기업 대부분의 영업이익이 전년 동기 대비 늘었다. 범용 석유화학에 주력하는 롯데케미칼은 매출이 39.2% 늘고 영업이익이 흑자로 돌아섰으며, 롯데정밀화학(610.6%)과 금호석유화학(419.7%), 한화솔루션(200.3%)의 영업이익도 큰 폭으로 늘었다. 반면 SKC와 태광산업은 영업손실이 이어졌고, KCC는 영업이익이 4.3% 줄었다. 업황 측면에서는 석유화학 기업의 수익성을 좌우하는 핵심 지표인 에틸렌-납사 스프레드가 2022년 이후 톤당 200달러 초반에 머물며 손익분기점으로 꼽히는 250~300달러를 크게 밑돌아 왔다. 2025년 상반기에는 주요 석유화학 기업들의 평균 매출 원가율이 98.6%까지 올라 수익성이 거의 0에 가까웠다는 평가도 나왔다. 이러한 구조적 부진 속에서 정부와 업계는 국내 나프타분해설비 생산능력의 18~25%(연 270만~370만t) 감축을 목표로 대산·여수·울산 산업단지별 구조조정을 추진하고 있다.",
-        "en": "Second-quarter 2026 filings show that most companies in the sector grew operating profit year-on-year. Lotte Chemical, heavily weighted toward commodity petrochemicals, posted a 39.2% revenue increase and returned to operating profit, while operating profit also rose sharply at Lotte Fine Chemical (610.6%), Kumho Petrochemical (419.7%), and Hanwha Solutions (200.3%). By contrast, SKC and Taekwang Industrial remained in operating loss, and KCC's operating profit fell 4.3%. On the industry backdrop, the ethylene-naphtha spread, the key profitability gauge for petrochemical producers, has stayed in the low-$200-per-ton range since 2022, well below the breakeven level of roughly $250-300. In the first half of 2025, average cost-of-sales ratios for major petrochemical producers reportedly climbed to 98.6%, leaving margins close to zero. Amid this structural downturn, the government and industry are pursuing capacity cuts targeting 18-25% (2.7 to 3.7 million tons annually) of domestic naphtha cracking capacity, with restructuring advancing by industrial complex across Daesan, Yeosu, and Ulsan."
+        "ko": "주요 석유화학 4개사의 3분기 영업손실 합산액은 5,225억원으로, 2분기의 영업이익 9,627억원에서 적자로 돌아섰다. 상반기 중동 전쟁 여파로 누렸던 호실적이 사라지고, 비싸게 산 원료를 싸게 파는 역래깅 효과가 본격적으로 반영됐다. LG화학의 3분기 연결 영업이익은 5,612억원으로 전년 동기 대비 17.4% 감소했고, 석유화학 부문은 영업손실 1,756억원으로 적자 전환했다. 롯데케미칼은 영업손실 2,814억원으로 적자가 이어졌고, 금호석유화학은 연결 기준 208억원의 영업손실로 2015년 4분기 이후 처음 적자로 전환했다. 반면 한화솔루션은 영업이익 905억원으로 흑자 전환했고, 코오롱인더(34.6%), 후성(518.2%), 나노신소재(632.5%)는 영업이익이 늘었다. 11월 들어 NCC 스프레드가 손익분기점을 웃돌았지만, 이것이 수요 회복으로 이어지는지는 더 지켜봐야 한다.",
+        "en": "The combined third-quarter operating loss of the four major petrochemical companies was 522.5 billion won, a swing from an operating profit of 962.7 billion won in the second quarter. The strong results enjoyed in the first half on the back of the Middle East war faded, and the reverse-lag effect of selling products made from expensive feedstock at lower prices fully hit earnings. LG Chem's third-quarter consolidated operating profit was 561.2 billion won, down 17.4% year on year, and its petrochemicals division swung to an operating loss of 175.6 billion won. Lotte Chemical's operating loss of 281.4 billion won continued, and Kumho Petro Chemical posted a consolidated operating loss of 20.8 billion won, its first quarterly loss since the fourth quarter of 2015. By contrast, Hanwha Solutions returned to profit with operating profit of 90.5 billion won, while operating profit rose at Kolon Industries (34.6%), Foosung (518.2%) and Advanced Nano Products (632.5%). In November the NCC spread rose above the break-even level, but it remains to be seen whether this translates into a genuine recovery in demand."
       },
       "outlook": {
-        "ko": "향후 업종의 관전 포인트는 구조조정의 실행 속도와 스페셜티 전환의 성과로 요약된다. 대산단지에서는 롯데케미칼과 HD현대케미칼이 합자 법인 설립을 계획하고 있으며, 한국 석화 구조조정은 대산에서 여수, 울산 순서로 진행될 전망이어서 지역별 진행 단계를 추적하는 것이 중요하다. 다만 동북아·유럽 내 노후·저효율 설비 구조조정이 진행되고 있으나 이를 상회하는 신규 증설이 예정돼 있어 당분간 유의미한 수급 개선을 기대하기 어렵다는 평가가 나오는 만큼 범용 부문의 회복은 완만할 가능성이 크다. 이런 환경에서 LG화학, 한화솔루션, 롯데정밀화학 등 주요 기업들은 반도체, 전지, 모빌리티, 바이오, 친환경 소재 등 고부가가치 스페셜티 사업 비중을 확대하는 방향으로 체질 개선을 추진하고 있다. 아울러 지속가능항공유(SAF)나 폐플라스틱 재활용 등 친환경 신사업이 다음 성장축으로 부각되는지도 주목할 부분이다.",
-        "en": "Key factors to monitor going forward include the pace of capacity restructuring execution and the outcomes of the specialty-materials transition. In the Daesan complex, Lotte Chemical and HD Hyundai Chemical are planning to establish a joint venture, and Korea's petrochemical restructuring is expected to proceed sequentially from Daesan to Yeosu and then Ulsan, making regional progress an important indicator to track. However, observers note that while restructuring of aging, inefficient facilities is underway across Northeast Asia and Europe, new capacity additions exceeding these cuts mean meaningful supply-demand improvement is unlikely to materialize in the near term, suggesting any recovery in the commodity segment is likely to be gradual. Against this backdrop, major players such as LG Chem, Hanwha Solutions, and Lotte Fine Chemical are pursuing business transformation by expanding high-value-added specialty businesses in semiconductors, batteries, mobility, bio, and eco-friendly materials. Additionally, whether emerging green businesses such as sustainable aviation fuel (SAF) and plastic recycling can become the sector's next growth engine remains a point worth watching."
+        "ko": "충남 대산과 전남 여수에서 NCC 연산 249만t의 감축이 확정됐지만, 정부가 제시한 감축 목표는 연간 270만~370만t이다. LG화학과 GS칼텍스는 연내 여수 NCC 사업재편 방향을 결정할 계획이다. 롯데케미칼과 여천NCC의 여수 통합법인 출범은 2027년 상반기로 늦춰졌다. 에쓰오일은 2027년 1월부터 연산 180만t 규모의 샤힌 프로젝트 설비를 순차 가동할 예정이다. ICIS는 세계 에틸렌과 폴리에틸렌 생산능력 증가가 2027년 정점에 이르고 업황 저점은 2028~2029년이 될 것으로 전망했다. 업계는 반도체용 IPA, 전기차용 SSBR 같은 고부가 제품으로 전환을 서두르고 있으나, 주요 석유화학사의 스페셜티 매출 비중은 대부분 50%에 못 미친다.",
+        "en": "Capacity cuts of 2.49 million tons per year of NCC output have been confirmed in Daesan and Yeosu, but the government's reduction target is 2.7 million to 3.7 million tons per year. LG Chem and GS Caltex plan to decide the direction of the Yeosu NCC restructuring within 2026. The launch of the Yeosu merged entity of Lotte Chemical and Yeochun NCC has been pushed back to the first half of 2027. S-Oil plans to start up its Shaheen project facilities in phases from January 2027, with ethylene capacity of 1.8 million tons per year. ICIS projects that global ethylene and polyethylene capacity additions will peak in 2027 and that the industry trough will come in 2028-2029. Companies are accelerating a shift toward higher-value products such as semiconductor-grade IPA and SSBR for electric vehicles, but specialty products still account for less than 50% of sales at most major petrochemical companies."
       },
       "risks": [
         {
           "title": {
-            "ko": "글로벌 공급과잉 구조",
-            "en": "Structural Global Oversupply"
+            "ko": "공급과잉과 구조조정 지연",
+            "en": "Oversupply and delayed restructuring"
           },
           "body": {
-            "ko": "중국과 중동을 중심으로 한 대규모 증설이 지속되면서 에틸렌 등 기초 유분의 수급 불균형이 장기화될 가능성이 있다. 이는 범용 석유화학 비중이 높은 기업들의 스프레드 회복을 제약하는 핵심 변수로 작용할 수 있다.",
-            "en": "Continued large-scale capacity expansion centered on China and the Middle East could prolong the supply-demand imbalance in basic olefins such as ethylene. This remains a key variable constraining spread recovery for companies with heavy exposure to commodity petrochemicals."
+            "ko": "범용 설비 감축 논의는 지지부진하며, 울산에서는 설비 감축 범위를 둘러싼 기업 간 이견이 좁혀지지 않고 있다. 확정된 감축분만으로는 국내 생산능력과 내수 수요의 격차가 해소되지 않는다. 중국발 공급과잉과 신규 설비 가동이 겹치면 가동률 하락과 적자가 길어질 수 있다.",
+            "en": "Talks on cutting commodity capacity are making slow progress, and in Ulsan companies have not narrowed their differences over the scope of cuts. The confirmed reductions alone do not close the gap between domestic capacity and domestic demand. If oversupply from China and new capacity start-ups overlap, lower utilization and losses could persist."
           }
         },
         {
           "title": {
-            "ko": "구조조정 지연 리스크",
-            "en": "Risk of Delayed Restructuring"
+            "ko": "원료가격·환율 변동과 스프레드",
+            "en": "Feedstock prices, exchange rates and spreads"
           },
           "body": {
-            "ko": "대산·여수·울산 산업단지별 설비 통합 및 폐쇄 논의가 이해관계자 간 협의 지연으로 당초 일정보다 늦어질 가능성이 있다. 구조조정 실행이 늦어질 경우 과잉설비에 따른 수익성 압박이 예상보다 오래 지속될 수 있다.",
-            "en": "Discussions on facility consolidation and closures across the Daesan, Yeosu, and Ulsan industrial complexes could be delayed beyond initial timelines due to prolonged negotiations among stakeholders. If restructuring execution is delayed, profitability pressure from excess capacity may persist longer than currently anticipated."
+            "ko": "석유화학 제품 가격은 통상 판매 시점의 나프타 가격과 연동된다. 원료 가격이 급변하면 매입 시점과 판매 시점의 시차로 스프레드가 흔들리고, 환율 하락과 운반비 증가도 수익성에 부담을 준다. 3분기 LG화학과 롯데케미칼의 석유화학 적자도 이러한 요인이 겹친 결과였다.",
+            "en": "Petrochemical product prices are generally linked to naphtha prices at the time of sale. When feedstock prices swing sharply, the lag between purchase and sale disturbs spreads, and a weaker exchange rate and higher freight costs add to the pressure on profitability. The third-quarter petrochemical losses at LG Chem and Lotte Chemical reflected a combination of these factors."
           }
         },
         {
           "title": {
-            "ko": "원재료 가격 및 환율 변동",
-            "en": "Raw Material Price and Exchange Rate Volatility"
+            "ko": "스페셜티 전환의 실행 부담과 재무 여력",
+            "en": "Execution burden of the specialty shift and financial capacity"
           },
           "body": {
-            "ko": "나프타 등 원재료 가격은 국제 유가에 연동되어 변동성이 크며, 환율 변동은 수출 비중이 높은 화학기업들의 원가와 채산성에 직접적인 영향을 미친다. 유가 하락이 원가 부담을 완화하더라도 수요 부진에 따른 제품가 동반 하락으로 스프레드 개선 효과가 상쇄될 수 있다는 점도 고려할 필요가 있다.",
-            "en": "Prices of raw materials such as naphtha are closely tied to global crude oil prices and subject to significant volatility, while currency fluctuations directly affect cost structures and profitability for chemical companies with high export exposure. It should also be noted that even if falling oil prices ease cost pressures, any accompanying decline in product prices amid weak demand could offset potential spread improvements."
+            "ko": "스페셜티 확대는 이미 10년 가까이 업계가 내세워 온 카드다. 설비 통합과 신사업 투자에는 대규모 자금이 필요한데, 업황 침체가 길어지면서 주요 석유화학 업체의 신용등급 하향 조정 요구도 커지고 있다. 전환 속도가 늦어지거나 투자 부담이 커지면 재무 안정성에 영향을 줄 수 있다.",
+            "en": "Expanding specialty products is a card the industry has played for nearly a decade. Plant consolidation and new-business investment require large amounts of capital, and as the downturn drags on, calls for credit rating downgrades of major petrochemical companies are growing. A slower transition or a heavier investment burden could weigh on financial stability."
           }
         }
       ],
       "sources": [
-        "https://v.daum.net/v/GDuC8ZWIAJ",
-        "https://gscaltexmediahub.com/energy/petrochemical-2025-review-2026-outlook/",
-        "https://www.gokorea.kr/news/articleView.html?idxno=858190",
-        "https://www.hankyung.com/koreamarket/consensus/pdf/2026-05-3f9e323aafe41126ba371ba1d38204ff",
-        "https://m.news.nate.com/view/20251225n06212",
-        "https://www.fnnews.com/news/202606141842115919"
+        "https://thetracker.co.kr/View.aspx?No=4306049",
+        "https://thetracker.co.kr/View.aspx?No=4250551",
+        "https://www.investchosun.com/site/data/html_dir/2026/11/12/2026111280164.html",
+        "https://www.hankyung.com/article/2026111683841",
+        "https://www.polinews.co.kr/news/articleView.html?idxno=748598",
+        "https://www.mt.co.kr/amp/industry/2026/11/10/2026110913380459708",
+        "https://www.ekn.kr/web/view.php?key=20261119022381586",
+        "https://biz.newdaily.co.kr/site/data/html/2026/11/16/2026111650108.html",
+        "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=01521926645647032"
       ],
       "sector": "화학",
-      "generatedAt": "2026-10-08 18:49"
+      "generatedAt": "2026-11-21 18:05"
     },
     "반도체": {
       "lead": {
-        "ko": "AI 인프라 투자 확대에 따른 메모리 슈퍼사이클이 지속되며 국내 반도체 업종 전반의 실적 모멘텀이 강화되고 있다.",
-        "en": "The domestic semiconductor sector continues to benefit from a memory supercycle driven by expanding AI infrastructure investment, reinforcing earnings momentum across the industry."
+        "ko": "AI 서버용 메모리 수요에 힘입어 2026년 3분기 삼성전자와 SK하이닉스의 영업이익이 전년 동기 대비 각각 783.1%, 632.1% 늘었다. 소비자용 메모리 현물가 약세와 대외 변수가 함께 나타나는 국면의 업종이다.",
+        "en": "Driven by AI server memory demand, operating profit at Samsung Electronics and SK hynix rose 783.1% and 632.1% year on year in the third quarter of 2026. The sector is now in a phase where weaker consumer-memory spot prices and external uncertainties coexist with that strength."
       },
       "overview": {
-        "ko": "반도체 업종은 메모리와 시스템반도체(파운드리·팹리스), 그리고 이를 뒷받침하는 장비·소재·후공정 기업들로 구성된 한국 증시 최대 업종이다. 전체 시장 시가총액의 절반 가까이를 차지할 만큼 비중이 크며, 이는 삼성전자와 SK하이닉스 두 메모리 공급사의 위상에 기인한다. 상장 종목 수가 많아 소재·부품·장비 전 분야에 걸쳐 두터운 공급망을 형성하고 있다는 점도 특징이다. 다만 시가총액은 상위 소수 종목에 극도로 집중돼 있어 업종 지수의 등락이 메모리 양강 기업의 주가 흐름에 좌우되는 구조다. 한국 증시에서 반도체는 수출과 경기 민감도가 높은 대표 업종으로, 글로벌 IT 수요 사이클과 환율, 미중 기술 패권 경쟁의 영향을 직접적으로 받는다.",
-        "en": "The semiconductor sector is the largest industry group on the Korean stock market, encompassing memory and system semiconductor (foundry/fabless) producers along with the equipment, materials, and back-end process companies that support them. Its weight is overwhelming, accounting for nearly half of total market capitalization, a reflection of the dominant positions held by Samsung Electronics and SK Hynix in memory. With a large number of listed companies, the sector also features a deep supply chain spanning materials, components, and equipment. However, market capitalization is heavily concentrated among a handful of top names, meaning the sector index tends to move in lockstep with the two memory giants. As Korea's leading export- and cycle-sensitive industry, semiconductors are directly exposed to global IT demand cycles, currency movements, and US-China technology competition."
+        "ko": "반도체 업종은 메모리, 파운드리, 장비·소재·부품, 기판을 아우르며 한국 수출의 중심축을 이룬다. 10월 반도체 수출은 전체 수출 증가액의 73.1%를 차지했다. 전체 시장 시가총액의 절반에 가까운 비중을 차지하는 대형 업종이다. 상장 종목 수는 업종 가운데 많은 편이지만 시가총액은 삼성전자와 SK하이닉스에 압도적으로 쏠려 있다. 삼성전자는 반도체를 맡는 DS 부문 외에 스마트폰·가전 중심의 DX 부문, 하만, 디스플레이 사업으로 구성되어 연결 실적에 반도체 외 사업이 함께 반영된다.",
+        "en": "The semiconductor sector spans memory, foundry, equipment, materials and components, and substrates, and it anchors Korea's exports. Semiconductors accounted for 73.1% of the increase in total exports in October. The sector carries a weight close to half of the entire market's capitalization. It has one of the larger numbers of listed stocks, yet market value is overwhelmingly concentrated in Samsung Electronics and SK hynix. Samsung Electronics consists of the DS division for semiconductors, the DX division covering smartphones, appliances and networks, the automotive and audio subsidiary Harman, and the display business, so its consolidated results also reflect non-semiconductor operations."
       },
       "structure": {
-        "ko": "밸류체인 최상단에는 메모리 종합반도체기업(IDM)인 삼성전자와 SK하이닉스가 위치하며, 양사는 D램·낸드 생산은 물론 HBM 등 고부가 제품까지 아우르는 수직계열화 구조를 갖추고 있다. 파운드리·시스템반도체 영역에서는 DB하이텍이 8인치 아날로그·혼성신호 파운드리를 전문으로 하며 독자적 입지를 확보하고 있다. 후공정·패키징 관련해서는 한미반도체와 이오테크닉스가 각각 TC본더·레이저 장비, 대덕전자와 심텍이 반도체 기판(패키지 서브스트레이트) 분야에서 역할을 담당한다. 전공정 장비에서는 주성엔지니어링과 원익IPS가 증착 장비를, HPSP는 고압수소 어닐링 장비로 특화된 공정 솔루션을 제공한다. 검사·테스트 분야에서는 리노공업과 ISC가 테스트 소켓·프로브 핀 시장에서 높은 점유율을 보유하고 있어, 업종 내 세분화된 전문 기업들이 메모리 양강을 중심으로 유기적인 공급망을 형성하고 있다.",
-        "en": "At the top of the value chain sit Samsung Electronics and SK Hynix, integrated device manufacturers that operate vertically integrated structures spanning DRAM and NAND production as well as high-value-added products such as HBM. In foundry and system semiconductors, DB HiTek has carved out a distinct niche as a specialized 8-inch analog and mixed-signal foundry. In back-end packaging, Hanmi Semiconductor and EO Technics supply TC bonders and laser equipment respectively, while Daeduck Electronics and Simmtech serve the package substrate segment. In front-end equipment, Jusung Engineering and Wonik IPS provide deposition tools, and HPSP offers specialized high-pressure hydrogen annealing solutions. In inspection and testing, Leeno Industries and ISC hold substantial shares of the test socket and probe pin markets, together forming a tightly interlinked supply chain anchored by the two memory leaders."
+        "ko": "가치사슬의 정점에는 메모리를 주력으로 하는 SK하이닉스와 삼성전자가 있고, 두 회사가 업종 시가총액의 대부분을 차지한다. 시스템반도체 쪽에서는 DB하이텍이 200밀리미터(8인치) 파운드리를 주력으로 한다. 전공정 장비에서는 증착장비의 주성엔지니어링과 원익IPS, 고압 수소 어닐링 장비의 HPSP가 대표적이다. 후공정에서는 한미반도체가 HBM 적층용 열압착 본더를, 이오테크닉스가 레이저 응용장비를 공급한다. 검사 단계에서는 리노공업과 ISC가 테스트 핀과 소켓을 만들고, 기판에서는 심텍과 대덕전자가 인쇄회로기판과 반도체 패키지기판을 맡는다.",
+        "en": "At the top of the value chain are SK hynix and Samsung Electronics, both centered on memory, and together they account for most of the sector's market value. In system semiconductors, DB HiTek focuses on 200mm (8-inch) foundry services. Among front-end equipment makers, Jusung Engineering and Wonik IPS supply deposition equipment, and HPSP supplies high-pressure hydrogen annealing equipment. In back-end processes, HANMI Semiconductor supplies thermal compression bonders used for stacking HBM, and EO Technics supplies laser application equipment. In testing, LEENO Industrial and ISC make test pins and sockets, while in substrates Simmtech and Daeduck Electronics produce printed circuit boards and semiconductor package substrates, respectively."
       },
       "trends": {
-        "ko": "2026년 2분기 공시 기준 삼성전자는 매출 171조 4,995억원, 영업이익 89조 4,924억원을 기록하며 전년 동기 대비 각각 130.0%, 1,813.8% 늘었다. SK하이닉스 역시 같은 기간 매출 79조 3,187억원, 영업이익 60조 5,426억원으로 전년 동기 대비 각각 256.8%, 557.2% 늘어나며 메모리 가격 상승의 수혜를 직접적으로 반영했다. 카운터포인트리서치에 따르면 2026년 2분기 글로벌 HBM 시장에서 SK하이닉스가 매출 기준 점유율 50%로 1위를 지켰으나, 전년 동기 64%였던 점유율보다는 낮아진 것으로 나타났다. 반면 삼성은 점유율을 21%(1분기)에서 33%로 크게 끌어올리며 격차를 좁혔다. 장비·소재·후공정 기업들의 실적도 전반적으로 메모리 호황 수혜를 공유해, 한미반도체·대덕전자·심텍·DB하이텍·ISC 등이 2분기 두 자릿수 이상의 매출 성장을 기록한 반면, 주성엔지니어링과 원익IPS는 고객사 투자 시기 차이 등으로 매출과 영업이익이 전년 대비 감소하는 등 중소형 종목 간 실적 편차가 뚜렷하게 나타났다.",
-        "en": "According to Q2 2026 disclosures, Samsung Electronics posted sales of KRW 171.4995 trillion and operating profit of KRW 89.4924 trillion, representing year-on-year increases of 130.0% and 1,813.8%, respectively. SK Hynix likewise recorded sales of KRW 79.3187 trillion and operating profit of KRW 60.5426 trillion in the same period, up 256.8% and 557.2% year-on-year, directly reflecting the benefits of rising memory prices. According to Counterpoint Research, in the second quarter of 2026 SK Hynix retained the top spot in the global HBM market with a revenue-based share of 50%, though this was down from 64% in the same period a year earlier. By contrast, Samsung sharply increased its share from 21% in the first quarter to 33%, narrowing the gap. Equipment, materials, and back-end companies broadly shared in the memory boom, with Hanmi Semiconductor, Daeduck Electronics, Simmtech, DB HiTek, and ISC posting double-digit or higher sales growth in the second quarter, while Jusung Engineering and Wonik IPS saw sales and operating profit decline year-on-year amid differing customer investment timing, highlighting a clear divergence in performance among smaller names."
+        "ko": "3분기 공시 기준 삼성전자의 연결 영업이익은 107조 4,405억원으로 전년 동기 대비 783.1% 늘었다. SK하이닉스는 3분기 매출 104.6조원, 영업이익 83.3조원으로 분기 매출 100조원을 처음 돌파했다. 영업이익률은 79.7%로 역대 최고치를 나타냈다. HBM4는 3분기부터 본격적으로 양산·출하가 확대됐다. 한편 D램 현물가격은 한 달간 약 5%, 낸드는 20% 하락했지만 주요 고객사와 거래하는 계약가격은 상승세를 유지했다. 상위 12개 종목 가운데 리노공업(영업이익 -18.3%)을 제외한 11곳의 영업이익이 늘었고, 증가율은 DB하이텍 11.7%에서 삼성전자 783.1%까지 분포했다.",
+        "en": "According to third-quarter disclosures, Samsung Electronics' consolidated operating profit was KRW 107.4405 trillion, up 783.1% year on year. SK hynix posted third-quarter revenue of KRW 104.6 trillion and operating profit of KRW 83.3 trillion, with quarterly revenue topping KRW 100 trillion for the first time. Its operating margin of 79.7% was the highest on record. HBM4 moved into full-scale mass production and shipment expansion from the third quarter. Meanwhile, DRAM spot prices fell about 5% and NAND about 20% over one month, but contract prices with major customers kept rising. Among the top 12 stocks, 11 posted higher operating profit year on year, with LEENO Industrial the exception at -18.3%, and the increases ranged from 11.7% at DB HiTek to 783.1% at Samsung Electronics."
       },
       "outlook": {
-        "ko": "업계 전망에 따르면 DRAM 3사가 2026년 설비투자를 전년 대비 평균 40% 이상 늘렸지만, 유의미한 출하 확대는 2027년 하반기 이후에나 반영될 가능성이 높다는 분석이 나오고 있어, 당분간 공급 제약이 가격 강세를 뒷받침하는 구조가 이어질 가능성이 거론된다. HBM 시장에서는 현재 매출의 대부분이 HBM3E에서 발생하고 있으며, HBM4 출하는 2026년 하반기부터 본격적으로 가시화될 전망이어서 차세대 제품 전환이 향후 주요 관전 포인트로 꼽힌다. 다만 일각에서는 중국 기업의 공격적 생산능력 확대에 따라 메모리 가격 하락 가능성도 제기되고 있어, 공급 측 변수가 사이클의 지속 기간을 좌우할 전망이다. 후공정·장비 기업들은 HBM 및 선단 공정 전환 투자 확대의 직접적 수혜 범위에 있어, 관련 투자 집행 속도와 고객사 발주 동향이 개별 기업 실적의 주요 변수로 작용할 것으로 보인다. 시스템반도체·파운드리 영역은 메모리 대비 상대적으로 완만한 흐름을 보이고 있어, 메모리와의 실적 격차가 업종 내 종목별 주가 차별화 요인으로 작용할 가능성이 있다.",
-        "en": "Industry analysis suggests that while the three major DRAM makers have raised their 2026 capex by an average of more than 40% year-on-year, meaningful shipment expansion is unlikely to materialize before the second half of 2027, implying that supply constraints could continue to underpin price strength for some time. In the HBM market, most current revenue is still generated from HBM3E, with HBM4 shipments expected to become fully visible from the second half of 2026, making the transition to next-generation products a key point to watch going forward. At the same time, some observers have raised the possibility of a decline in memory prices driven by aggressive capacity expansion from Chinese manufacturers, suggesting that supply-side variables will determine how long the current cycle persists. Back-end and equipment companies stand to benefit directly from expanded investment in HBM and leading-edge process transitions, making the pace of related capex execution and customer order flow key variables for individual company performance. The system semiconductor and foundry segment has shown comparatively subdued momentum relative to memory, which could drive further differentiation in stock performance within the sector."
+        "ko": "KB증권은 2027년 글로벌 D램 수요가 2026년보다 25% 증가하는 반면 공급 증가율은 18%에 그칠 것으로 전망했다. 이에 따라 삼성전자와 SK하이닉스의 2027년 D램 평균판매가격은 계약가격 기준 40% 상승할 것으로 추정했다. SK하이닉스는 2027~2028년 생산능력의 50% 이상을 장기공급계약으로 확보했다. 회사는 2027년 용인 1단계 시설의 본격 가동으로 설비투자가 크게 증가할 것으로 예상했다. 투자 확대는 전공정·후공정 장비와 부품 기업의 수주로 이어질 수 있어 관전 포인트가 된다. 트렌드포스는 HBM4 가격이 2027년에 2026년보다 2배 이상 오를 것으로 전망했다.",
+        "en": "KB Securities projects that global DRAM demand will grow 25% in 2027 from 2026, while supply growth is limited to 18%. On that basis, it estimates that the average DRAM selling prices of Samsung Electronics and SK hynix will rise 40% in 2027 on a contract-price basis. SK hynix has secured long-term supply agreements covering more than 50% of its 2027–2028 production capacity. The company expects capital expenditure to rise sharply in 2027 as the first phase of its Yongin facility begins full-scale operation. Expanded investment could translate into orders for front-end and back-end equipment makers and component suppliers, which makes it a key point to watch. TrendForce forecasts that HBM4 prices in 2027 will be more than double those of 2026."
       },
       "risks": [
         {
           "title": {
-            "ko": "메모리 가격 사이클 반전 리스크",
-            "en": "Memory Price Cycle Reversal Risk"
+            "ko": "소비자용 메모리 약세와 계약가 협상",
+            "en": "Weak consumer memory and contract price negotiations"
           },
           "body": {
-            "ko": "현재의 가격 강세는 공급 제약에 크게 의존하고 있어, 중국 업체의 생산능력 확대나 투자 사이클 변화에 따라 가격 흐름이 급반전될 가능성이 상존한다. 메모리 비중이 높은 업종 특성상 가격 변동은 상위 기업뿐 아니라 장비·소재 밸류체인 전반의 실적에 직접적인 영향을 미친다.",
-            "en": "The current price strength depends heavily on supply constraints, meaning a shift in Chinese capacity expansion or investment cycles could trigger a sharp reversal in pricing trends. Given the sector's heavy memory weighting, price swings directly affect not only the top companies but the entire equipment and materials value chain."
+            "ko": "D램익스체인지 기준 낸드 TLC 512Gb 웨이퍼의 현물가격은 한 달 전보다 24% 하락했다. 트렌드포스는 2027년 1분기 전체 낸드 계약가격이 전분기 대비 0~5% 하락할 것으로 예측했다. 스마트폰·PC 수요 부진이 길어지면 계약가격 협상에 영향을 줄 수 있다.",
+            "en": "According to DRAMeXchange, the spot price of TLC 512Gb NAND wafers fell 24% from a month earlier. TrendForce forecasts that overall NAND contract prices will fall 0–5% quarter on quarter in the first quarter of 2027. A prolonged slump in smartphone and PC demand could weigh on contract price negotiations."
           }
         },
         {
           "title": {
-            "ko": "업종 내 양극화 심화",
-            "en": "Growing Polarization Within the Sector"
+            "ko": "AI 투자 심리와 정책 불확실성",
+            "en": "AI investment sentiment and policy uncertainty"
           },
           "body": {
-            "ko": "2분기 실적을 보면 메모리 대형주와 HBM 관련 후공정 장비주는 큰 폭의 성장을 기록한 반면, 일부 전공정 장비 기업은 매출과 이익이 오히려 감소해 수혜의 편중이 뚜렷하다. 고객사 투자 시점과 제품 포트폴리오에 따라 개별 기업 간 실적 격차가 계속 벌어질 가능성이 있다.",
-            "en": "Second-quarter results show large memory names and HBM-related back-end equipment makers posting substantial growth, while some front-end equipment companies saw sales and profit decline, indicating a pronounced concentration of benefits. Performance gaps between individual companies could continue to widen depending on customer investment timing and product portfolios."
+            "ko": "미국 중간선거에서 민주당이 승리하면서 AI 데이터센터 건립이 지연될 수 있다는 우려가 제기됐다. KB증권은 반도체 주가 급락의 원인으로 엔비디아의 리더십 변화와 미국 민주당의 AI 규제 기조 등 대외 변수를 꼽았다. 이런 변수는 실적과 별개로 업종 주가의 변동성을 키울 수 있다.",
+            "en": "Concerns have emerged that AI data center construction could be delayed after the Democratic Party's win in the US midterm elections. KB Securities cited external variables such as a leadership change at Nvidia and the Democratic Party's stance on AI regulation as factors behind the sharp fall in semiconductor shares. Such variables can amplify volatility in sector share prices regardless of earnings."
           }
         },
         {
           "title": {
-            "ko": "지정학·공급망 변수",
-            "en": "Geopolitical and Supply Chain Variables"
+            "ko": "이익 쏠림과 종목 간 편차",
+            "en": "Earnings concentration and divergence among stocks"
           },
           "body": {
-            "ko": "미중 기술 패권 경쟁에 따른 수출 통제, 관세 정책 변화 등은 반도체 업종의 대외 의존도가 높은 만큼 공급망 전반에 영향을 줄 수 있는 변수다. 주요 고객사의 지역별 생산 전략 변화나 규제 강화는 개별 기업의 매출 구조에도 파급될 수 있다.",
-            "en": "Export controls and tariff policy shifts stemming from US-China technology competition represent variables that could affect the broader supply chain, given the sector's high dependence on external markets. Changes in major customers' regional production strategies or tightened regulations could also ripple through individual companies' revenue structures."
+            "ko": "업종 시가총액과 이익이 삼성전자와 SK하이닉스에 집중되어 두 회사의 흐름이 업종 전체의 방향을 좌우한다. 2026년 3분기 공시 기준 리노공업은 매출이 14.6%, 영업이익이 18.3% 줄어 업종 호조가 모든 종목에 고르게 나타나지는 않았다. HBM4E 이후 세대에서 하이브리드 본딩 양산 채택이 확대되면 열압착 본딩 장비 공급사에 영향이 있을 수 있다는 지적도 있다.",
+            "en": "Market value and profits are concentrated in Samsung Electronics and SK hynix, so the performance of these two companies largely sets the direction of the whole sector. In third-quarter 2026 disclosures, LEENO Industrial's revenue fell 14.6% and its operating profit fell 18.3%, showing that the sector's strength was not evenly spread across all stocks. It has also been noted that wider adoption of hybrid bonding in generations after HBM4E could affect suppliers of thermal compression bonding equipment."
           }
         }
       ],
       "sources": [
-        "https://korea.counterpointresearch.com/global-hbm-market-share-q2-2026/",
-        "https://www.shinhangroup.com/kr/archive/insight/extend/detail/32873",
-        "https://tradersunion.com/ko/news/financial-news/show/2072010-korea-memory-semiconductor-2026-price-drop/"
+        "https://www.etoday.co.kr/news/view/2649707",
+        "https://news.skhynix.co.kr/q3-2026-business-results/",
+        "https://www.hankyung.com/article/2026102814891",
+        "https://www.thelec.kr/news/articleView.html?idxno=64413",
+        "https://www.ddaily.co.kr/page/view/2026112009533284560",
+        "https://news.skhynix.co.kr/q3-2026-business-results-sh/",
+        "https://www.hantoday.net/news/articleView.html?idxno=55508",
+        "https://m.news.nate.com/view/20261119n34017",
+        "https://www.dt.co.kr/article/12095772",
+        "https://www.thepublic.kr/news/articleView.html?idxno=327783"
       ],
       "sector": "반도체",
-      "generatedAt": "2026-10-08 19:52"
+      "generatedAt": "2026-11-21 18:05"
     },
     "게임": {
       "lead": {
-        "ko": "크래프톤·엔씨·펄어비스 등 대형사의 신작 흥행과 비용 효율화로 실적 회복세가 뚜렷한 반면, 신작 공백에 시달린 중소형사와의 실적 양극화가 두드러지는 업종이다.",
-        "en": "The sector shows a clear earnings recovery among large-cap players such as Krafton, NC, and Pearl Abyss on new-title hits and cost efficiency, while a widening performance gap with small and mid-cap firms facing a lack of new releases stands out."
+        "ko": "게임 업종은 시장 비중이 1%를 밑도는 소규모 업종으로, 2026년 3분기 공시 기준 상위 12개사 중 매출이 늘어난 곳은 크래프톤·NC·더블유게임즈 3곳에 그쳐 신작과 장수 IP의 성과에 따라 실적이 크게 엇갈렸다.",
+        "en": "Games is a small sector that accounts for less than 1% of the Korean market. In Q3 2026 filings, only three of the top 12 companies (Krafton, NC and DoubleUGames) grew revenue year on year, so results diverged sharply depending on new releases and long-running franchises."
       },
       "overview": {
-        "ko": "게임산업은 모바일·PC·콘솔 플랫폼에서 자체 개발 IP와 퍼블리싱을 결합해 수익을 창출하는 콘텐츠·IT 업종으로, 해외 매출 비중이 높아 환율과 글로벌 플랫폼 정책 변화에 민감한 특성을 지닌다. 국내 증시에서는 상장 종목 수가 적지 않지만 전체 시가총액 비중은 크지 않아, 코스피·코스닥 전체로 보면 중소형 성장 업종으로 분류된다. 업종 내에서도 크래프톤·엔씨·넷마블 등 대형사와 위메이드·네오위즈 등 중소형사 간 체력 차이가 크다. 모바일 다중접속역할수행게임(MMORPG) 중심의 국내 과금 구조에서 벗어나 PC·콘솔 중심의 글로벌 대작 전략으로 이행하는 전환기에 있다. 신작 출시 주기와 흥행 여부가 실적 변동성을 좌우하는 업종이라는 점도 특징이다.",
-        "en": "The video game industry is a content/IT sector that generates revenue by combining self-developed IP with publishing across mobile, PC, and console platforms, with high overseas sales exposure making it sensitive to exchange rates and global platform policy shifts. On the Korean market, while the number of listed names is not small, the sector's overall market capitalization weight remains modest, placing it among small-to-mid-cap growth sectors relative to the KOSPI and KOSDAQ as a whole. Within the sector, there is a substantial gap in financial strength between large caps such as Krafton, NC, and Netmarble and smaller players such as Wemade and Neowiz. The industry is in a transition period, moving away from domestic mobile MMORPG-centric monetization toward a global AAA strategy centered on PC and console platforms. It is also a representative event-driven sector where new-title release cycles and their commercial success largely determine earnings volatility."
+        "ko": "게임 업종은 PC·모바일·콘솔 게임을 개발하고 서비스하는 기업으로 구성된다. 상장 종목 수는 업종 가운데 적은 편이며 전체 시장에서 차지하는 비중도 1%에 못 미친다. 시가총액 1위인 크래프톤은 PUBG: 배틀그라운드를 중심으로 게임을 개발·서비스하는 회사다. 크래프톤은 전체 매출의 90% 이상을 해외에서 거두고 있다. NC와 넷마블이 그 뒤를 잇고, 펄어비스·시프트업·카카오게임즈·더블유게임즈가 중견 그룹을 이룬다. 매출이 신작 흥행과 라이브 서비스 운영에 좌우되고 환율에도 민감해 분기별 실적 변동성이 큰 업종이다.",
+        "en": "The games sector consists of companies that develop and operate PC, mobile and console titles. It has relatively few listed stocks and accounts for less than 1% of the overall Korean market. Krafton, the largest by market capitalization, develops and operates games centered on PUBG: Battlegrounds. More than 90% of Krafton's revenue comes from overseas. NC and Netmarble follow, with Pearl Abyss, Shift Up, Kakao Games and DoubleUGames forming the mid-sized group. Because revenue depends on new-title performance and live-service operations, and is also sensitive to exchange rates, quarterly earnings tend to be volatile."
       },
       "structure": {
-        "ko": "밸류체인은 게임 개발-플랫폼 유통(앱마켓·스팀 등)-라이브 서비스 운영 단계로 구성되며, 대형사들은 개발과 퍼블리싱을 동시에 수행해 수익을 내부화하는 구조를 갖춘다. 크래프톤은 배틀그라운드 IP를 중심으로 PC·모바일·콘솔 전 플랫폼에 걸친 포트폴리오를 보유하고 있고, 엔씨는 리니지 IP 기반 MMORPG에서 신규 IP로 포트폴리오를 확장하는 중이다. 넷마블과 카카오게임즈는 자체 개발작과 퍼블리싱 라인업을 병행하는 구조이며, 펄어비스와 시프트업은 각각 콘솔 대작과 서브컬처 장르에서 상대적으로 좁은 라인업으로 승부하는 특화형 사업 구조를 보인다. 더블유게임즈는 북미 소셜카지노 장르에 특화되어 있어 국내 대형사들과는 수익 구조가 차별화된다. 업종 시가총액은 상위 소수 대형사에 집중되는 경향이 뚜렷하며, 위메이드·위메이드맥스·네오위즈·컴투스 등 중견사는 특정 IP나 장르에 의존하는 구조를 보인다.",
-        "en": "The value chain consists of game development, platform distribution (app markets, Steam, etc.), and live-service operation, with large caps typically internalizing revenue by handling both development and publishing. Krafton's portfolio spans PC, mobile, and console platforms centered on the PUBG IP, while NC is expanding from Lineage IP-based MMORPGs toward new IP. Netmarble and Kakao Games combine in-house development with publishing lineups, whereas Pearl Abyss and Shift Up pursue relatively specialized business models centered on console AAA titles and sub-culture genre games, respectively. Double U Games is specialized in the North American social casino genre, differentiating its revenue structure from domestic large caps. Sector market capitalization is heavily concentrated among a handful of top-tier firms, while mid-tier players such as Wemade, Wemade Max, Neowiz, and Com2uS tend to depend on specific IP or genres."
+        "ko": "가치사슬은 크게 게임 개발, 퍼블리싱(유통·운영), 플랫폼과 결제 채널로 나뉘고, 국내 상장사는 대부분 개발과 퍼블리싱을 함께 수행한다. 크래프톤은 PUBG 프랜차이즈를 축으로 하면서 외부 개발사에 대한 투자와 퍼블리싱을 연계해 신작을 확보하는 방식도 쓴다. NC는 리니지 시리즈와 아이온 IP를 축으로 PC와 모바일 게임을 만든다. 넷마블은 모바일 중심의 자체 개발과 퍼블리싱을 병행하며, 2026년 3분기 해외 매출 비중이 75%였다. 펄어비스는 PC·콘솔 패키지 게임과 온라인 장기 서비스 게임을, 더블유게임즈는 소셜카지노를 중심으로 한 사업을 운영한다. 위메이드는 MMORPG를, 웹젠은 장수 IP 뮤를 중심으로 한다. 시가총액은 상위 소수 종목에 쏠려 있고, 국내 최대 경쟁사 가운데 하나인 넥슨은 일본 증시에 상장돼 있어 한국 증시 업종 지표에는 잡히지 않는다.",
+        "en": "The value chain splits broadly into game development, publishing (distribution and operations), and platform and payment channels, and most listed Korean companies handle both development and publishing. Krafton is anchored by the PUBG franchise and also secures new titles by linking investment in outside developers with publishing. NC builds PC and mobile games around the Lineage series and the Aion IP. Netmarble combines in-house development with publishing, centered on mobile, and overseas sales were 75% of its revenue in Q3 2026. Pearl Abyss runs PC and console package games alongside long-running online games, while DoubleUGames operates a business centered on social casino. Wemade focuses on MMORPGs and Webzen on its long-running MU franchise. Market capitalization is concentrated in a few top names, and Nexon, one of the largest domestic rivals, is listed in Japan and therefore does not appear in this Korean sector's figures."
       },
       "trends": {
-        "ko": "2026년 2분기 공시 기준 업종 내 실적은 뚜렷하게 갈렸다. 크래프톤의 2026년 2분기 연결 매출액은 1조 2,902억원, 영업이익은 4,109억원으로 전년 동기 대비 각각 94.9%, 67.0% 늘었다. 이는 배틀그라운드 IP의 꾸준한 성장과 2026년 5월 얼리 액세스로 출시한 서브노티카 2(Subnautica 2)가 22일 만에 판매량 500만 장을 넘어선 신작 흥행이 겹친 결과다. 엔씨는 신작 성과에 힘입어 영업이익이 전년 동기 대비 10배 이상 늘며 뚜렷한 턴어라운드를 보였고, 펄어비스는 콘솔 신작 흥행을 바탕으로 영업이익이 흑자로 전환했다. 반면 넷마블은 매출은 소폭 늘었으나 영업이익이 역성장했고, 시프트업은 전작 흥행 피크 이후 역성장 국면에 진입했으며, 카카오게임즈와 위메이드·위메이드맥스는 신작 공백 속에 적자가 지속되는 모습을 보였다. 업계 전반적으로는 넥슨, 엔씨, 넷마블 등 대형 게임사는 물론 카카오게임즈, 스마일게이트, 컴투스, 데브시스터즈와 같은 중견 업체들도 신작 경쟁에 뛰어들었으며 모바일 MMORPG에 치중했던 과거와 달리 액션, 슈팅, 서브컬처, 방치형 등 장르가 다양해진 것은 물론 다양한 플랫폼을 지원하는 작품들이 출시되는 흐름이 확인된다.",
-        "en": "Based on second-quarter 2026 disclosures, performance within the sector diverged sharply. Krafton posted second-quarter consolidated revenue of KRW 1.2902 trillion and operating profit of KRW 410.9 billion, up 94.9% and 67.0% year-on-year, respectively, driven by sustained growth of the PUBG franchise and the hit launch of Subnautica 2, which surpassed five million units sold within 22 days of its May 2026 early access release. NC delivered a clear turnaround with operating profit surging more than tenfold year-on-year on new-title momentum, while Pearl Abyss swung to an operating profit backed by a successful console title launch. In contrast, Netmarble saw modest revenue growth but declining operating profit, Shift Up entered a contraction phase following the peak of its prior hit title, and Kakao Games along with Wemade and Wemade Max continued to post operating losses amid a lack of new releases. Industry-wide, major publishers and mid-tier studios alike have ramped up new-title competition, with genres diversifying beyond mobile MMORPGs into action, shooter, sub-culture, and idle categories across multiple platforms."
+        "ko": "2026년 3분기 공시 기준 매출은 크래프톤(+11.6%), NC(+90.7%), 더블유게임즈(+5.0%) 3곳이 전년 동기 대비 늘었고 넷마블·시프트업·카카오게임즈 등 9곳은 줄었다. 영업이익은 펄어비스가 +94.6%, 더블유게임즈가 +7.4%, 위메이드가 +0.3% 늘었고, NC와 컴투스는 흑자로 전환했다. 크래프톤은 영업이익이 35.5% 줄었는데, 게임스컴 참가 등 일회성 비용과 사업 확장에 따른 비용 부담이 수익성에 영향을 미쳤다. 크래프톤은 순이익이 684억원 손실을 기록해 적자로 돌아섰다. NC는 3분기 PC 게임 매출 2,894억원 가운데 리니지 클래식이 1,587억원을 차지해 회복을 이끌었다. 넷마블은 하반기로 잡혀 있던 신작들이 2027년으로 밀리면서 영업이익이 44.6% 줄었다. 카카오게임즈와 넥슨게임즈는 영업손실이 이어졌다.",
+        "en": "In Q3 2026 filings, revenue rose year on year at three companies: Krafton (+11.6%), NC (+90.7%) and DoubleUGames (+5.0%). Nine others, including Netmarble, Shift Up and Kakao Games, reported declines. Operating profit rose 94.6% at Pearl Abyss, 7.4% at DoubleUGames and 0.3% at Wemade, while NC and Com2uS returned to profit. Krafton's operating profit fell 35.5%, as one-off costs such as attending Gamescom and expansion-related expenses weighed on profitability. Krafton also posted a net loss of 68.4 billion won. At NC, Lineage Classic generated 158.7 billion won of the 289.4 billion won in Q3 PC game revenue, driving the recovery. Netmarble's operating profit fell 44.6% as new titles planned for the second half were pushed back to 2027. Kakao Games and NEXON Games continued to post operating losses."
       },
       "outlook": {
-        "ko": "향후 업종의 핵심 변수는 대형 신작 출시 결과다. 엔씨는 '아이온2'의 글로벌 출시와 오픈월드 택티컬 슈터 '신더시티', 서브컬처 신작 등 신규 라인업을 글로벌 테스트를 거쳐 순차적으로 선보일 계획이어서, 신작 성과가 향후 실적의 관건이 될 전망이다. 넥슨도 마비노기 영웅전 IP를 이은 '빈딕투스: 디파잉 페이트'를 2026년 하반기 출시작으로 준비하고 있어, 업종 전반에 신작 출시가 몰리는 국면이다. 아울러 구글이 북미·유럽 지역부터 인앱결제 수수료를 기존 30%에서 20% 수준으로 낮추는 정책을 시행할 예정인 점은 수익성 개선 변수로 주목된다. 업계에서는 다양한 신작 출시가 신규 이용자 유입과 산업 전반의 선순환에 긍정적일 수 있다는 평가와 함께, 흥행작과 비흥행작 간 격차가 커질 것이라는 전망도 나온다. AI 기반 개발 효율화와 라이브 서비스 운영 역량이 중장기 경쟁력의 핵심 변수로 부각되는 점도 관전 포인트다.",
-        "en": "The key variable for the sector going forward is the outcome of major new-title launches. NC plans to roll out the global release of 'Aion 2' along with a new lineup including the open-world tactical shooter 'Cinder City' and a sub-culture title in sequence after global testing, making new-title performance the key to future earnings. Nexon is also preparing 'Vindictus: Defying Fate,' which carries on the Mabinogi Heroes IP, for release in the second half of 2026, adding to a crowded launch schedule across the industry. In addition, Google's planned reduction of in-app payment fees from 30% to around 20% starting in North America and Europe is a notable variable for profitability improvement. Industry observers note that a diverse slate of new titles can positively support new-user acquisition and a virtuous cycle for the broader industry, while also anticipating a widening gap between hit and underperforming titles. AI-driven development efficiency and live-service operational capability are also emerging as key medium-term competitiveness factors worth monitoring."
+        "ko": "2026년 4분기의 관전 포인트는 기존 IP의 업데이트와 협업 이벤트다. 크래프톤은 4분기 벤틀리·아이브 협업 이벤트와 신규 모드로 PC 매출을 일부 만회할 것으로 증권가는 본다. 2026년 11월 19~22일 열린 지스타에서는 크래프톤과 웹젠이 신작을 선보였고, 엔씨는 AGF를 통해 서브컬처 이용자 공략에 나선다. 3N은 지스타에 대형 전시관을 마련하지 않았고 2026년 12월 AGF에 참가한다. 넷마블은 2027년 신작 13종 이상을 내놓을 계획이어서 출시 일정이 실적 회복의 변수다. 카카오게임즈는 2027년 선보일 오딘Q 등 신작 4종의 출시 일정이 수익성 개선의 관건으로 꼽힌다. 전시 현장의 반응보다 출시 이후의 매출 전환이 주가와 실적을 가를 변수다.",
+        "en": "The focus for Q4 2026 is on updates and collaboration events for existing IP. Analysts expect Krafton to recoup part of its PC revenue through a Bentley and IVE collaboration event and a new mode in Q4. At G-STAR 2026, held November 19-22, Krafton and Webzen showcased new titles, while NC targets subculture players through AGF. The three largest Korean publishers (Nexon, Netmarble and NC) did not set up large exhibition halls at G-STAR and will attend AGF in December 2026. Netmarble plans to release 13 or more new titles in 2027, so launch timing is a key variable for its recovery. For Kakao Games, the release schedule of four new titles, including Odin Q, planned for 2027 is seen as the key to improving profitability. Conversion of these titles into revenue after launch, more than reactions at exhibitions, will drive earnings and share prices."
       },
       "risks": [
         {
           "title": {
-            "ko": "신작 흥행의 높은 변동성",
-            "en": "High Volatility of New-Title Success"
+            "ko": "신작 공백과 기존 IP 의존",
+            "en": "New-release gaps and reliance on existing IP"
           },
           "body": {
-            "ko": "업종 실적은 개별 신작의 흥행 여부에 크게 좌우되며, 흥행에 실패할 경우 개발비 회수 지연과 실적 공백이 장기화될 위험이 있다. 시프트업·카카오게임즈처럼 전작 피크 이후 신작 부재가 이어질 경우 역성장이 지속될 수 있다.",
-            "en": "Sector earnings are heavily dependent on the commercial success of individual new titles, and a failed launch risks delayed recoupment of development costs and prolonged earnings gaps. As seen with Shift Up and Kakao Games, a continued absence of new releases following a prior title's peak can sustain negative growth."
+            "ko": "신작 출시가 늦어지면 기존 게임의 매출 하향 안정화를 메우지 못한다. 넷마블은 3분기에 대형 신작 출시가 없었고 기존 흥행작의 매출이 하향 안정세를 보였다. 웹젠도 신작 출시 지연에 따른 공백을 메워야 하는 상황이다.",
+            "en": "Delays in new releases leave no offset to the stabilization of existing games' revenue at a lower level. Netmarble had no major new release in Q3, and revenue from its existing hits settled lower. Webzen also has to fill a gap caused by delayed releases."
           }
         },
         {
           "title": {
-            "ko": "규제 및 플랫폼 정책 리스크",
-            "en": "Regulatory and Platform Policy Risk"
+            "ko": "환율 변동",
+            "en": "Exchange-rate swings"
           },
           "body": {
-            "ko": "확률형 아이템 정보공개 등 국내 규제 강화가 이어지는 가운데, 앱마켓 수수료 정책 변화나 해외 게임 규제 동향도 수익성에 영향을 줄 수 있다. 특정 지역에 국한된 수수료 인하 정책이 전사 수익 구조에 미치는 영향은 지역별 매출 비중에 따라 달라질 수 있다.",
-            "en": "Amid continued tightening of domestic regulations such as probability-item disclosure requirements, changes in app market fee policy or overseas gaming regulations could also affect profitability. The impact of fee reductions limited to specific regions on a company's overall revenue structure may vary depending on each firm's regional sales mix."
+            "ko": "해외 매출 비중이 높은 기업은 원화 강세의 영향을 받는다. 원화 강세로 외화 가치가 하락하면서 환차손이 크래프톤의 순이익에 악영향을 미친 것으로 풀이된다. NC도 당기순이익이 환율 변동에 따른 외화 관련 손익 감소로 전분기보다 85% 줄었다.",
+            "en": "Companies with a high share of overseas revenue are exposed to a stronger won. Foreign-currency losses from the weaker value of foreign currencies are interpreted as having hurt Krafton's net income. NC's net income also fell 85% from the previous quarter on lower foreign-currency gains."
           }
         },
         {
           "title": {
-            "ko": "경쟁 심화와 개발비 부담",
-            "en": "Intensifying Competition and Rising Development Costs"
+            "ko": "비용 부담과 적자 지속",
+            "en": "Cost pressure and continued losses"
           },
           "body": {
-            "ko": "국내외 업체들이 동시에 멀티플랫폼·멀티장르 신작을 쏟아내면서 마케팅비와 개발비 부담이 커질 수 있으며, 흥행작과 비흥행작 간 격차가 확대될 경우 중소형사의 수익성 악화가 심화될 수 있다. 해외 대형 퍼블리셔와의 글로벌 경쟁도 장기적인 리스크 요인이다.",
-            "en": "As domestic and global firms simultaneously release multi-platform, multi-genre titles, marketing and development cost burdens may rise, and widening gaps between hit and non-hit titles could deepen profitability deterioration for smaller players. Global competition with major overseas publishers also represents a longer-term risk factor."
+            "ko": "매출이 늘어도 비용 증가로 이익이 줄 수 있다. 크래프톤은 매출이 11.6% 늘었지만 영업이익은 35.5% 줄었다. 카카오게임즈와 넥슨게임즈는 2026년 3분기에도 영업손실을 이어갔고, 매출은 각각 45.8%, 22.9% 줄었다.",
+            "en": "Higher costs can reduce profit even when revenue grows. Krafton's revenue rose 11.6% but its operating profit fell 35.5%. Kakao Games and NEXON Games kept posting operating losses in Q3 2026, with revenue down 45.8% and 22.9% respectively."
           }
         }
       ],
       "sources": [
-        "https://www.hankyung.com/article/202607317280i",
-        "https://www.dailian.co.kr/news/view/1672348/%ED%81%AC%EB%9E%98%ED%94%84%ED%86%A4-%EB%B0%B0%EA%B7%B8-UGC-%EC%84%9C%EB%B8%8C%EB%85%B8%ED%8B%B0%EC%B9%B4%EB%A1%9C-%EC%84%B1-2026",
-        "https://www.krafton.com/news/press/%ED%81%AC%EB%9E%98%ED%94%84%ED%86%A4-2026%EB%85%84-%EC%83%81%EB%B0%98%EA%B8%B0-%EC%97%AD%EB%8C%80-%EC%B5%9C%EB%8C%80-%EB%A7%A4%EC%B6%9C-2%EC%A1%B0-6616%EC%96%B5-%EC%9B%90%C2%B7%EC%98%81%EC%97%85/",
-        "https://byline.network/2026/08/30-599/",
-        "https://www.betanews.net/article/view/beta202606240002",
-        "https://www.shinhangroup.com/kr/archive/insight/extend/detail/32826",
-        "https://news.bizwatch.co.kr/article/mobile/2026/09/22/0014"
+        "https://kr.investing.com/news/stock-market-news/article-2171525",
+        "https://www.mediapen.com/news/view/1134350",
+        "https://www.newsq.co.kr/news/articleView.html?idxno=500836",
+        "https://www.techm.kr/news/articleView.html?idxno=157293",
+        "https://www.issueedico.co.kr/news/article.html?no=38915",
+        "https://kr.investing.com/news/stock-market-news/article-2179020",
+        "https://m.news.nate.com/view/20261119n18136",
+        "https://www.kmjournal.net/news/articleView.html?idxno=14082"
       ],
       "sector": "게임",
-      "generatedAt": "2026-10-08 18:49"
+      "generatedAt": "2026-11-21 18:05"
     },
     "에너지·전력": {
       "lead": {
-        "ko": "국내 에너지·전력 업종은 한국전력·한국가스공사 등 규제산업 성격의 공공 유틸리티와 풍력·태양광·수소 등 신재생 밸류체인이 혼재돼 있으며, 최근 국제 연료비 급등과 정부의 재생에너지 전환 정책이 동시에 실적 흐름을 좌우하고 있다.",
-        "en": "Korea's energy and power sector combines regulated public utilities such as Korea Electric Power Corporation (KEPCO) and Korea Gas Corporation with a renewable energy value chain spanning wind, solar and hydrogen, with recent earnings trends shaped simultaneously by surging global fuel costs and the government's renewable energy transition policy."
+        "ko": "한국전력·한국가스공사 등 공기업을 축으로 설계·정비, 풍력·태양광·연료전지 기업이 함께 묶인 업종으로, 2026년 3분기에는 중동 전쟁발 연료가격 상승 속에서 종목별 실적이 엇갈렸다.",
+        "en": "The sector is anchored by state-run utilities such as Korea Electric Power and Korea Gas Corporation, alongside plant design and maintenance firms and wind, solar and fuel cell companies, and in the third quarter of 2026 results diverged by company amid higher fuel prices tied to the Middle East war."
       },
       "overview": {
-        "ko": "이 업종은 발전·송배전·가스공급을 담당하는 공공 유틸리티, 신재생 설비·부품 제조사, 발전설비 정비·엔지니어링 서비스사로 구성된다. 한국전력과 한국가스공사는 전기·가스요금이 정부 승인을 거쳐 결정되는 구조여서 국제 연료가격과 요금정책의 영향을 직접적으로 받는다. 씨에스윈드(풍력타워), HD현대에너지솔루션(태양광모듈), 두산퓨얼셀(수소연료전지), SK이터닉스(신재생 발전사업) 등은 정부의 재생에너지 확대 정책과 글로벌 수주 사이클에 실적이 연동되는 성장형 기업군이다. 한전기술·한전KPS·우리기술은 원전·발전설비의 설계와 정비를 담당하는 엔지니어링 서비스 영역을 형성한다. 업종 내 종목 수는 적지 않지만 시가총액 비중은 크지 않아, 코스피 전체에서 차지하는 영향력보다는 정책 민감도가 높은 업종으로 평가된다.",
-        "en": "The sector comprises public utilities responsible for power generation, transmission and gas supply, renewable equipment and component manufacturers, and power-plant maintenance and engineering service providers. KEPCO and Korea Gas Corporation operate under a structure where electricity and gas tariffs require government approval, making them directly exposed to international fuel prices and tariff policy. Companies such as CS Wind (wind towers), HD Hyundai Energy Solutions (solar modules), Doosan Fuel Cell (hydrogen fuel cells) and SK Eternix (renewable power development) form a growth-oriented group whose results track government renewable expansion policy and global order cycles. KEPCO E&C, KEPCO Plant Service, and Woori Technology form an engineering services segment covering nuclear and power-plant design and maintenance. While the number of listed names is substantial, the sector's overall market capitalization weight remains modest, positioning it as a policy-sensitive segment rather than a market-moving one."
+        "ko": "에너지·전력 업종은 전력·가스 공급 공기업, 발전소 설계·정비 기업, 신재생에너지 설비·운영 기업이 한데 묶인 업종이다. 상장 종목 수는 업종 가운데 적은 편이고, 전체 시장에서 차지하는 비중은 1%를 밑돈다. 시가총액 상위는 한국전력, 한국가스공사, 한전기술 순으로 공기업과 그 계열사가 앞선다. 이들 공기업은 규제 요금과 연료비의 격차에 실적이 좌우되는 규제 산업의 성격이 강하다. 씨에스윈드, 두산퓨얼셀, HD현대에너지솔루션 등 신재생 관련 기업은 수주와 설치 사이클을 따르는 성장 산업의 성격이 짙다.",
+        "en": "The Energy & Power sector groups state-run power and gas suppliers, power plant design and maintenance firms, and renewable equipment and operating companies. It has a relatively small number of listed stocks and accounts for less than 1% of the overall market. By market capitalization, state-run companies and their affiliates lead, in the order of Korea Electric Power, Korea Gas Corporation and KEPCO Engineering & Construction Company. These utilities are largely regulated businesses whose earnings depend on the gap between regulated tariffs and fuel costs. Renewable-related companies such as CS Wind, Doosan Fuel Cell and HD Hyundai Energy Solutions follow order and installation cycles and have more of a growth-industry character."
       },
       "structure": {
-        "ko": "밸류체인 상류에는 연료 조달 부문이 있으며, 한국가스공사가 LNG 도입과 국내 공급을, SK가스가 LPG 수입·트레이딩을 담당한다. 중류는 발전·송배전·열공급으로, 한국전력이 송배전과 전기 판매를 독점적으로 수행하고(발전은 자회사가 담당) 지역난방공사가 집단에너지를 공급한다. 하류의 신재생 설비 부문은 씨에스윈드(해상풍력타워), HD현대에너지솔루션(태양광모듈·시스템), SK이터닉스(신재생 발전소 개발·운영), 지엔씨에너지(비상 발전기·환경설비), 두산퓨얼셀(수소연료전지)로 세분화돼 있다. 설계·정비 서비스는 한전기술(원전 설계), 한전KPS(발전설비 정비), 우리기술(계측제어)이 맡는다. 시가총액 기준으로는 한전이 업종 내 압도적 1위이며, 나머지 종목들은 상대적으로 소형주 위주로 구성돼 개별 종목의 변동성이 업종 전체 흐름보다 두드러지는 구조다.",
-        "en": "Upstream, Korea Gas Corporation handles LNG procurement and domestic supply while SK Gas manages LPG imports and trading. Midstream covers generation, transmission and heat supply, with KEPCO holding a monopoly on transmission, distribution and retail sales (generation is handled by its subsidiaries) and Korea District Heating Corporation supplying integrated energy. The downstream renewable equipment segment is divided among CS Wind (offshore wind towers), HD Hyundai Energy Solutions (solar modules and systems), SK Eternix (renewable plant development and operation), GNC Energy (emergency generators and environmental equipment), and Doosan Fuel Cell (hydrogen fuel cells). Design and maintenance services are provided by KEPCO E&C (nuclear design), KEPCO Plant Service (plant maintenance) and Woori Technology (instrumentation and control). By market capitalization, KEPCO overwhelmingly dominates the sector, while the remaining names are mostly smaller-cap stocks whose individual volatility tends to stand out more than the sector's aggregate trend."
+        "ko": "연료와 전력 공급 단계에서는 한국가스공사가 LNG 도입과 도매를, 한국전력이 발전·송배전·판매를 맡는다. SK가스는 LPG 유통에서 출발해 LNG 발전, LNG 터미널, 프로판탈수소화 사업으로 영역을 넓혔고, 지역난방공사는 열 사업과 열병합발전 전력 판매를 함께 운영한다. 설계·정비·제어 단계에서는 한전기술이 발전소를 설계하고, 한국전력의 자회사인 한전KPS가 발전설비 정비를 맡으며, 우리기술은 원전 계측제어시스템을 공급한다. 신재생 단계에서는 씨에스윈드가 풍력 타워, SK오션플랜트가 해상풍력 하부구조물, HD현대에너지솔루션이 태양광 모듈과 인버터, 두산퓨얼셀이 연료전지를 담당한다. SK이터닉스는 태양광·육상풍력·연료전지 발전자원을 개발하고 운영하는 사업자로, 시가총액 상위에서 한국전력의 비중이 가장 커 업종 전체 흐름이 이 종목에 크게 좌우된다.",
+        "en": "In fuel and power supply, Korea Gas Corporation handles LNG imports and wholesale supply, while Korea Electric Power covers generation, transmission, distribution and retail. SK Gas grew from LPG distribution into LNG power generation, LNG terminals and propane dehydrogenation, and Korea District Heating runs a heat business together with electricity sales from cogeneration. In design, maintenance and control, KEPCO Engineering & Construction Company designs power plants, KEPCO Plant Service & Engineering, a Korea Electric Power subsidiary, maintains generation facilities, and Woori Technology supplies nuclear instrumentation and control systems. In renewables, CS Wind makes wind towers, SK oceanplant makes offshore wind substructures, HD Hyundai Energy Solutions sells solar modules and inverters, and Doosan Fuel Cell supplies fuel cell systems. SK eternix develops and operates solar, onshore wind and fuel cell generation assets, and because Korea Electric Power is the largest of the top stocks by market capitalization, the sector's overall direction depends heavily on it."
       },
       "trends": {
-        "ko": "2026년 2분기 실적은 연료비 변동성이 업종 전반의 수익성을 갈랐다. 한국전력은 매출이 전년 동기와 거의 비슷했으나 영업이익이 1조 1,286억원으로 전년 동기 대비 47.2% 줄었는데, 이는 국제 LNG 가격 급등에 따른 발전원가 부담이 반영된 결과로 풀이된다. 실제로 중동 정세 불안에 따른 호르무즈 해협 리스크와 카타르 수출 차질로 국제 천연가스 가격이 급등하면서 2026년 아시아의 액화천연가스(LNG) 수입 수요가 2년 연속 감소할 것으로 전망됐다. 현물 가격이 백만BTU당 26달러 선까지 치솟자 한국, 중국, 일본 등 동북아시아 주요 소비국들이 원자력 및 석탄 발전 가동을 늘리며 가스 수요를 대폭 억제한 것으로 나타났다. 반면 한국가스공사는 매출이 소폭 줄었음에도 영업이익이 66.9% 늘어 연료비 전가 구조상 원가 반영 시차의 수혜를 받은 것으로 보이며, 이는 LNG 도입가격이 통상 4~5개월 후 전기요금과 도시가스요금 원가에 반영된다는 구조와 맞닿아 있다. 신재생 설비주 중에서는 씨에스윈드와 HD현대에너지솔루션의 매출과 영업이익이 함께 늘어난 반면, 두산퓨얼셀은 매출이 65.5% 줄고 적자가 이어졌다. LPG 수입·유통 기업인 SK가스는 매출이 23.0% 늘었지만 영업손실로 돌아섰다.",
-        "en": "The second quarter of 2026 was marked by fuel-cost volatility that separated profitability across the sector. KEPCO's revenue was nearly flat year-on-year, but operating profit fell 47.2% to KRW 1.1286 trillion, reflecting the burden of generation costs tied to surging international LNG prices. Amid Middle East instability, a surge in international natural gas prices driven by the Strait of Hormuz crisis and disruptions to Qatari exports was projected to cause a second consecutive year of decline in Asian LNG import demand in 2026. As spot prices climbed toward $26 per mmBtu, major Northeast Asian consumers including Korea, China and Japan sharply curbed gas demand by increasing nuclear and coal-fired generation. In contrast, Korea Gas Corporation saw operating profit rise 66.9% despite a modest revenue decline, likely benefiting from the timing lag in cost pass-through, consistent with the structure whereby LNG import prices are typically reflected in electricity and city gas tariffs with a four-to-five-month lag. Among renewable equipment makers, CS Wind and HD Hyundai Energy Solutions grew both revenue and operating profit, while Doosan Fuel Cell's revenue fell 65.5% amid continued losses. SK Gas, an LPG importer and distributor, swung to an operating loss despite 23.0% revenue growth."
+        "ko": "한국전력은 2026년 3분기 영업이익이 1조 6,441억원으로 전년 동기 대비 70.9% 감소했다. 한전은 2월 말 중동 전쟁에 따른 연료가격 상승 영향이 3분기부터 실적에 본격 반영됐다고 설명했다. 한국가스공사는 영업이익이 5,878억원으로 51.1% 늘었고, 해외 자원개발 사업의 수익성 확대가 실적 개선의 주요 원인이 됐다. 신재생 부문에서는 씨에스윈드의 영업이익이 807억원으로 22.8%, HD현대에너지솔루션의 영업이익이 204억원으로 39.3% 늘었다. SK이터닉스는 매출이 391.1% 늘었지만 영업손실 37억원으로 적자 전환했다. 두산퓨얼셀은 매출이 59.9% 늘었음에도 영업손실 170억원으로 적자가 이어졌다.",
+        "en": "Korea Electric Power's operating profit in the third quarter of 2026 was KRW 1,644.1 billion, down 70.9% year on year. The company said the impact of higher fuel prices from the Middle East war, which began in late February, was fully reflected in results from the third quarter. Korea Gas Corporation's operating profit rose 51.1% to KRW 587.8 billion, and higher profitability in its overseas resource development business was the main driver of the improvement. In renewables, CS Wind's operating profit rose 22.8% to KRW 80.7 billion and HD Hyundai Energy Solutions' rose 39.3% to KRW 20.4 billion. SK eternix's revenue rose 391.1%, but it swung to an operating loss of KRW 3.7 billion. Doosan Fuel Cell's revenue grew 59.9%, yet it remained in an operating loss of KRW 17.0 billion."
       },
       "outlook": {
-        "ko": "정부는 에너지 대전환 정책을 통해 2030년까지 재생에너지 발전용량을 대폭 확대하겠다는 목표를 제시했으며, 관련 투자 규모도 상당하다. 실제로 철강·석유화학·반도체 등의 주요 공정을 탈탄소 공정으로 전환하고 2030년까지 재생에너지 100GW 달성을 추진하겠다는 계획이 발표됐고, 2035년까지 1,000조원의 재원을 녹색대전환(K-GX)에 투입하는 방안이 제시됐다. 이러한 정책 기조는 해상풍력·태양광 관련 장비·EPC 업체들의 중장기 수주 모멘텀으로 이어질 여지가 있다. 다만 전력망 확충, 계통 안정성 확보가 재생에너지 보급 속도를 뒷받침해야 하는 과제로 남아 있으며, 2026년 중 확정될 것으로 예상되는 차기 전력수급기본계획에서 전원믹스 조정 방향이 구체화될 전망이다. 한전·가스공사 등 공공 유틸리티는 국제 연료가격 추이와 요금 정상화 속도가 수익성 회복의 핵심 변수로 작용할 것으로 보인다.",
-        "en": "The government has set out an energy transition policy aiming for a substantial expansion of renewable generation capacity by 2030, backed by sizable planned investment. Specifically, plans call for converting major processes in steel, petrochemicals and semiconductors to decarbonized operations while pursuing 100GW of renewable energy capacity by 2030, alongside a commitment to channel KRW 1,000 trillion into the green transition (K-GX) through 2035. This policy direction could translate into medium-to-long-term order momentum for offshore wind and solar equipment and EPC companies. However, grid expansion and system stability remain prerequisites for sustaining the pace of renewable deployment, and the direction of the power generation mix is expected to be clarified in the next basic electricity supply plan anticipated to be finalized sometime in 2026. For public utilities such as KEPCO and Korea Gas Corporation, the trajectory of international fuel prices and the pace of tariff normalization are likely to remain the key variables for a recovery in profitability."
+        "ko": "한국전력의 2027년 1분기 전기요금 결정이 2026년 12월 하순 발표될 예정이어서 요금 조정 논의가 다시 불붙을 전망이다. 한국전력은 인공지능 데이터센터 등 첨단산업에 필요한 국가 전력망을 적기에 구축하는 데 힘을 쏟겠다는 계획이다. 전력망 투자가 실제로 한전기술과 한전KPS의 일감으로 이어지는지가 관전 포인트다. 풍력에서는 2026년 3월 증권사 보고서가 중국을 제외한 2026년 풍력 신규 설치량이 전년 대비 26.4% 늘고 2027년에도 16.2% 증가할 것으로 전망했다. 태양광은 GlobalData가 2026년 신규 설치량이 2018년 이후 처음 감소하되 2027년부터 회복될 것으로 내다봤다. 국내 해상풍력은 2030년까지 14.3GW 설치가 목표지만 어민 반발과 인허가 지연이 걸림돌이다.",
+        "en": "Korea Electric Power's tariff decision for the first quarter of 2027 is due in late December 2026, and the debate over tariff adjustments is expected to flare up again. The company also plans to build the national power grid needed for advanced industries such as AI data centers on schedule. A key point to watch is whether grid investment translates into actual workloads for KEPCO Engineering & Construction Company and KEPCO Plant Service & Engineering. In wind, a March 2026 brokerage report forecast that new wind installations outside China would grow 26.4% in 2026 and 16.2% again in 2027. In solar, GlobalData expects new installations to fall in 2026 for the first time since 2018, with a recovery from 2027. For domestic offshore wind, the target is 14.3GW installed by 2030, but fishermen's opposition and permitting delays are obstacles."
       },
       "risks": [
         {
           "title": {
-            "ko": "국제 연료가격 변동성",
-            "en": "International Fuel Price Volatility"
+            "ko": "요금 규제와 누적 부채·미수금",
+            "en": "Tariff regulation and accumulated debt and receivables"
           },
           "body": {
-            "ko": "LNG·유가는 중동 지정학적 리스크에 따라 급등락을 반복하고 있으며, 한국전력·한국가스공사·SK가스 등 연료 조달 비중이 큰 기업의 원가 부담에 직접 영향을 미친다. 요금 반영 시차로 인해 가격 급등기에는 일시적으로 수익성이 악화될 수 있다.",
-            "en": "LNG and oil prices have repeatedly swung sharply due to Middle East geopolitical risk, directly affecting the cost burden of companies with large fuel procurement exposure such as KEPCO, Korea Gas Corporation and SK Gas. The lag in tariff pass-through can cause temporary profitability deterioration during periods of price spikes."
+            "ko": "한국전력의 연결 기준 부채는 2026년 3분기 209.6조원에 달한다. 한국가스공사의 원료비 미수금은 2026년 9월 말 14조 6,451억원으로 6월 말보다 늘었다. 요금 조정이 지연되면 두 회사의 재무 부담이 이어질 수 있다.",
+            "en": "Korea Electric Power's consolidated debt reached KRW 209.6 trillion in the third quarter of 2026. Korea Gas Corporation's raw material cost receivables stood at KRW 14.6451 trillion at the end of September 2026, up from the end of June. If tariff adjustments are delayed, the financial burden on both companies could persist."
           }
         },
         {
           "title": {
-            "ko": "공공요금 정책 불확실성",
-            "en": "Public Tariff Policy Uncertainty"
+            "ko": "국제 연료가격 변동",
+            "en": "International fuel price volatility"
           },
           "body": {
-            "ko": "전기·가스요금은 정부 승인을 거쳐 결정되는 구조로, 물가·여론 등 정책적 고려에 따라 원가 반영 시기와 폭이 좌우된다. 요금 정상화가 지연될 경우 공공 유틸리티의 재무구조 개선이 늦어질 수 있다.",
-            "en": "Electricity and gas tariffs require government approval, meaning the timing and extent of cost pass-through are shaped by political considerations such as inflation and public sentiment. Delays in tariff normalization could slow improvement in public utilities' financial structures."
+            "ko": "한전은 국제에너지가격 상승세가 장기화되고 있어 예의주시하고 있다고 밝혔다. 연료비 상승이 요금에 충분히 반영되지 않으면 한국전력의 분기 이익은 2026년 3분기처럼 크게 줄 수 있다. 같은 가격 상승이 한국가스공사의 해외 자원개발 이익에는 유리하게 작용해 종목별로 영향의 방향이 다르다.",
+            "en": "Korea Electric Power said it is closely monitoring the prolonged rise in international energy prices. If higher fuel costs are not sufficiently reflected in tariffs, its quarterly profit could shrink sharply, as it did in the third quarter of 2026. The same price increase benefits Korea Gas Corporation's overseas resource development earnings, so the direction of the impact differs by company."
           }
         },
         {
           "title": {
-            "ko": "재생에너지 전환 속도와 계통 제약",
-            "en": "Pace of Renewable Transition and Grid Constraints"
+            "ko": "신재생 수요·정책과 수익성",
+            "en": "Renewable demand, policy and profitability"
           },
           "body": {
-            "ko": "정부의 재생에너지 확대 목표가 실현되려면 송배전망 확충과 계통 수용력 확보가 병행돼야 하며, 이러한 인프라 제약이 신재생 설비·EPC 업체의 수주 실현 속도에 변수로 작용할 수 있다. 글로벌 공급망 경쟁과 보조금 정책 변화도 관련 기업 실적에 영향을 줄 수 있다.",
-            "en": "Achieving the government's renewable expansion targets requires parallel expansion of transmission and distribution networks along with grid capacity, and such infrastructure constraints could affect the pace at which renewable equipment and EPC companies convert orders into realized revenue. Global supply chain competition and changes in subsidy policy could also influence the performance of related companies."
+            "ko": "미국은 2028년부터 AMPC 지급이 종료되어 풍력 설치량이 2027년부터 감소할 것으로 전망된다. 태양광 설치량 감소 전망과 국내 해상풍력의 인허가 지연도 수주 일정에 부담이 될 수 있다. SK이터닉스와 지역난방공사가 2026년 3분기 적자 전환했고 두산퓨얼셀과 우리기술은 적자가 이어져, 업종 내 수익성 편차가 크다.",
+            "en": "Because AMPC payments in the United States end in 2028, US wind installations are expected to decline from 2027. The forecast drop in solar installations and permitting delays for domestic offshore wind could also weigh on order schedules. SK eternix and Korea District Heating swung to operating losses in the third quarter of 2026, while Doosan Fuel Cell and Woori Technology remained in losses, so profitability varies widely within the sector."
           }
         }
       ],
       "sources": [
-        "https://www.g-enews.com/article/Global-Biz/2026/09/202609180808051960c8c1c064d_1",
-        "https://v.daum.net/v/20260603175857432",
-        "https://mt.co.kr/economy/2026/10/07/2026100709082534421"
+        "http://www.epitimes.co.kr/bbs/board.php?bo_table=news&wr_id=34529",
+        "https://www.ajunews.com/view/20261112142622219",
+        "https://www.fnnews.com/news/202611121550122986",
+        "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003284403",
+        "https://samsungpop.com/common.do?cmd=down&contentType=application%2Fpdf&fileName=2020%2F2026031815472048K_02_01.pdf&inlineYn=Y&saveKey=research.pdf",
+        "https://www.indexbox.io/blog/global-solar-pv-additions-hit-record-in-2025-set-for-first-decline-since-2018-in-2026/",
+        "https://newspump.co.kr/%EC%9E%AC%EC%83%9D%EC%97%90%EB%84%88%EC%A7%80-%EC%A0%84%ED%99%98-%ED%98%84%ED%99%A9-2/",
+        "https://www.kdpress.co.kr/news/articleView.html?idxno=209864"
       ],
       "sector": "에너지·전력",
-      "generatedAt": "2026-10-08 18:29"
+      "generatedAt": "2026-11-21 18:12"
     },
     "금융": {
       "lead": {
-        "ko": "증시 활황에 따른 증권업 실적 급증과 밸류업 정책 기대를 받는 은행·지주사가 함께 이끄는 업종으로, 금리·거래대금 사이클에 민감한 구조를 보인다.",
-        "en": "A sector jointly led by securities firms riding a trading-volume boom and bank holding companies benefiting from value-up policy expectations, with a structure highly sensitive to interest-rate and trading-volume cycles."
+        "ko": "은행 중심 금융지주가 이익의 중심을 잡는 가운데, 2026년 3분기에는 증시 거래 위축으로 증권사 실적이 회사별로 크게 갈린 업종이다.",
+        "en": "Bank-centered financial holding companies anchor earnings in this sector, while in the third quarter of 2026 weaker equity trading caused brokerage results to diverge sharply by company."
       },
       "overview": {
-        "ko": "금융업종은 은행지주(KB금융·신한지주·하나금융지주·우리금융지주·기업은행·카카오뱅크)와 증권사(미래에셋증권·NH투자증권·한국금융지주·삼성증권·키움증권), 그리고 핀테크(카카오페이) 등으로 구성된다. 전체 시장에서 차지하는 비중은 제한적이지만 개별 대형 금융지주의 시가총액이 커 업종 내 집중도가 높은 편이다. 은행은 예대마진을 기반으로 한 안정적 이익 흐름을 보이는 반면, 증권업은 증시 거래대금과 시장 변동성에 실적이 크게 좌우되는 사이클성이 강한 특성을 지닌다. 최근에는 정부의 기업 밸류업 정책과 주주환원 확대 기조가 업종 전반의 밸류에이션 재평가 요인으로 부각되고 있다. 금리·증시·정책 변수가 복합적으로 작용하는 만큼 업종 내에서도 은행과 증권의 실적 방향성이 다르게 나타날 수 있다.",
-        "en": "The financial sector comprises bank holding companies (KB Financial, Shinhan Financial, Hana Financial, Woori Financial, Industrial Bank of Korea, KakaoBank), securities firms (Mirae Asset Securities, NH Investment & Securities, Korea Investment Holdings, Samsung Securities, Kiwoom Securities), and fintech players such as Kakao Pay. While the sector's overall market weight is limited, concentration within the sector is relatively high given the large market capitalizations of individual bank holding companies. Banks tend to show stable earnings driven by net interest margins, whereas securities firms exhibit strong cyclicality tied to trading volumes and market volatility. Recently, the government's corporate value-up policy and expanded shareholder returns have emerged as key drivers for sector-wide valuation re-rating. With interest rates, equity markets, and policy variables all interacting, earnings trajectories can diverge meaningfully between banks and brokerages within the sector."
+        "ko": "금융 업종은 은행 중심의 금융지주, 증권, 카드, 인터넷전문은행 등으로 구성된다. 상장 종목 수는 업종 가운데 중간 수준이고, 전체 시장 시가총액에서는 한 자릿수 비중을 차지한다. 시가총액 상위권은 KB금융, 신한지주, 하나금융지주, 우리금융지주 등 은행 계열 금융지주가 차지하고 있다. 기업은행은 중소기업 금융을 핵심으로 하는 정책금융 성격의 은행이며 최대주주는 정부다. 업종 이익은 기준금리, 증시 거래대금, 가계대출 규제에 따라 좌우되는 구조다. 주주환원도 투자 판단의 주요 변수다.",
+        "en": "The financial sector comprises bank-centered financial holding companies, brokerages, card companies and internet-only banks. The number of listed stocks is mid-range among sectors, and the sector accounts for a single-digit share of total market capitalization. The top of the market-cap ranking is occupied by bank-based holding companies such as KB Financial Group, Shinhan Financial Group, Hana Financial Group and Woori Financial Group. Industrial Bank Of Korea is a policy-oriented bank focused on SME lending, and the government is its largest shareholder. Sector earnings depend on the policy rate, equity trading volume and household-loan regulation. Shareholder returns are also a key variable for investment judgment."
       },
       "structure": {
-        "ko": "은행지주 그룹(KB금융·신한지주·하나금융지주·우리금융지주)이 여신·수신을 기반으로 한 전통적 이자수익과 비은행 계열사 포트폴리오를 결합한 구조를 갖추고 있으며, 기업은행은 중소기업 금융에 특화돼 있다. 증권업에서는 미래에셋증권·한국금융지주·NH투자증권·삼성증권·키움증권이 브로커리지·WM·IB 전 영역에서 경쟁하며, 대형사와 중소형사 간 실적 개선이 함께 나타나는 양상이다. 카카오뱅크와 카카오페이는 모바일 플랫폼 기반의 디지털 금융 영역을 대표하며 기존 전통 금융사와는 수익 구조와 성장 경로가 다르다. 밸류체인 측면에서 은행은 예대마진·수수료, 증권사는 수탁수수료·자기매매·IB 수익이 핵심 축을 이루며, 업종 내 상위 종목으로의 자본 집중도가 뚜렷하다.",
-        "en": "The bank holding group (KB Financial, Shinhan Financial, Hana Financial, Woori Financial) combines traditional deposit-and-loan interest income with diversified non-bank subsidiary portfolios, while Industrial Bank of Korea specializes in SME financing. In securities, Mirae Asset Securities, Korea Investment Holdings, NH Investment & Securities, Samsung Securities, and Kiwoom Securities compete across brokerage, wealth management, and investment banking, with earnings improvement observed across both large and mid-sized firms. KakaoBank and Kakao Pay represent mobile-platform-based digital finance, with revenue structures and growth paths distinct from traditional financial institutions. In value-chain terms, banks rely on net interest margin and fee income, while securities firms depend on brokerage commissions, proprietary trading, and IB revenue, with capital notably concentrated among the sector's top names."
+        "ko": "KB금융, 신한지주, 하나금융지주, 우리금융지주는 은행을 중심으로 증권, 카드, 보험, 캐피탈 등 비은행 계열사를 거느린 금융지주회사다. 기업은행은 정책금융 성격의 은행이고, 카카오뱅크는 모바일 기반 인터넷전문은행으로 플랫폼형 금융 사업을 영위한다. 증권 부문에는 미래에셋증권, NH투자증권, 한국금융지주, 삼성증권, 키움증권이 있으며 위탁매매, 자산관리, 투자은행, 운용 부문에서 수익을 얻는다. 삼성카드는 신용판매와 카드대출, 할부리스를 축으로 영업하는 카드사다. 시가총액 상위는 은행 계열 지주에 몰려 있고 증권과 카드사가 그 뒤를 잇는 구조다. KB금융은 비은행 부문의 그룹 이익 기여도가 40%에 달했다.",
+        "en": "KB Financial Group, Shinhan Financial Group, Hana Financial Group and Woori Financial Group are holding companies built around a bank, with non-bank affiliates in securities, cards, insurance and capital. Industrial Bank Of Korea is a policy-oriented bank, and KakaoBank is a mobile-based internet-only bank running a platform-type financial business. The brokerage segment includes Mirae Asset Securities, NH Investment & Securities, Korea Investment Holdings, Samsung Securities and KIWOOM Securities, which earn revenue from brokerage, wealth management, investment banking and trading. Samsung Card operates around credit sales, card loans and installment leasing. Market capitalization is concentrated in the bank-based holding companies, followed by brokerages and card companies. At KB Financial Group, non-bank businesses contributed 40% of group earnings."
       },
       "trends": {
-        "ko": "2026년 2분기 공시 기준 KB금융과 신한지주의 영업이익은 전년 동기 대비 각각 27.2%, 22.9% 늘었고, 우리금융지주(18.7%)와 하나금융지주(6.8%)도 증가했다. 증권업은 특히 눈에 띄는 실적 개선을 보였는데, 2026년 2분기 국내 증권회사 61곳의 순이익은 전분기 대비 20.0% 늘었고 전년 동기와 비교하면 두 배 가까이로 커졌다. 이는 코스피 거래대금이 전 분기 2,775조원에서 2분기 4,438조원으로 59.9% 급증하면서 수탁 수수료가 큰 폭으로 늘어난 영향이며, 자산관리(WM)와 기업금융(IB) 부문 수수료도 함께 견조한 성장세를 보였다. 미래에셋증권·NH투자증권·한국금융지주·삼성증권·키움증권 등 상위 증권사의 2분기 영업이익은 전년 동기 대비 93.2%(키움증권)에서 397.5%(미래에셋증권)까지 늘어 거래대금 확대의 수혜를 그대로 반영했다. 다만 기업은행은 영업이익이 전년 동기 대비 1.3% 줄어 은행과 증권 사이의 실적 편차도 나타났다.",
-        "en": "Based on second-quarter 2026 disclosures, KB Financial and Shinhan Financial grew operating profit 27.2% and 22.9% year-on-year, respectively, while Woori Financial (18.7%) and Hana Financial (6.8%) also posted increases. The securities industry showed particularly notable improvement: aggregate net income of Korea's 61 securities firms rose 20.0% quarter-on-quarter in Q2 2026, and profit nearly doubled compared to the same period a year earlier. This was driven by a 59.9% surge in KOSPI trading value from KRW 2,775 trillion to KRW 4,438 trillion quarter-on-quarter, sharply boosting brokerage commissions, while wealth management and investment banking fee income also showed solid growth. Leading brokerages including Mirae Asset Securities, NH Investment & Securities, Korea Investment Holdings, Samsung Securities, and Kiwoom Securities posted year-on-year operating profit gains ranging from 93.2% (Kiwoom Securities) to 397.5% (Mirae Asset Securities), directly reflecting the benefit of expanded trading volumes. Industrial Bank of Korea, however, saw operating profit slip 1.3% year-on-year, highlighting earnings divergence between banks and brokerages."
+        "ko": "KB·신한·하나·우리·NH농협 등 5대 금융지주의 2026년 3분기 누적 당기순이익은 19조 6,297억원으로 전년 동기 대비 8.62% 늘어 3분기 누적 기준 역대 최대였다. 3분기 비이자이익은 3조 6,915억원으로 2분기 6조 1,429억원보다 39.9% 감소했다. 2026년 3분기 공시 기준 영업이익은 하나금융지주가 전년 동기 대비 10.4%, 우리금융지주가 43.6% 늘었고 신한지주는 2.3% 줄어 지주별로 엇갈렸다. 국내 증시 일평균 거래대금은 2분기 118조 1,000억원에서 3분기 75조 3,000억원으로 36.2% 감소했다. 미래에셋증권은 3분기 연결 영업손실 5,023억원을 기록했으며 스페이스X 관련 투자자산 평가손실이 부담으로 작용했다. NH투자증권은 2026년 3분기 영업이익이 5,211억원으로 전년 동기 대비 33.2% 증가했다.",
+        "en": "The five major financial groups (KB, Shinhan, Hana, Woori and NH Nonghyup) posted cumulative net income of 19.6297 trillion won for the first three quarters of 2026, up 8.62% year on year and a record for a nine-month period. Third-quarter non-interest income was 3.6915 trillion won, down 39.9% from 6.1429 trillion won in the second quarter. Per third-quarter 2026 filings, operating profit rose 10.4% year on year at Hana Financial Group and 43.6% at Woori Financial Group, while Shinhan Financial Group fell 2.3%, so results diverged by holding company. Average daily trading value on the domestic market fell 36.2%, from 118.1 trillion won in the second quarter to 75.3 trillion won in the third. Mirae Asset Securities recorded a consolidated third-quarter operating loss of 502.3 billion won, weighed by valuation losses on SpaceX-related investment assets. NH Investment & Securities reported third-quarter 2026 operating profit of 521.1 billion won, up 33.2% year on year."
       },
       "outlook": {
-        "ko": "증권업은 거래대금 사이클에 민감한 만큼 향후 증시 변동성과 거래량 추이가 실적 방향을 좌우할 핵심 변수로 작용할 전망이다. 은행지주는 정부의 밸류업 정책과 주주환원 확대 기조가 이어지는 가운데, 수익성에 비해 낮은 밸류에이션이 글로벌 주요 은행과 견줘 얼마나 좁혀질지가 관전 포인트로 꼽힌다. 금리 환경 변화는 은행·보험에는 수익성·건전성 측면에서 긍정적으로 작용할 수 있는 반면 증권업에는 유동성 여건 변화를 통해 다른 방향으로 영향을 줄 수 있어, 업종 내 세부 하위 그룹별 민감도 차이에 대한 모니터링이 필요하다. 디지털 금융 영역에서는 카카오뱅크·카카오페이의 플랫폼 기반 성장 지속 여부가 관심사로 남아 있다. 전반적으로는 실적 모멘텀과 정책 기대가 동시에 작용하는 구간으로, 거래대금·금리·정책 변수의 조합이 향후 업종 흐름을 결정할 것으로 보인다.",
-        "en": "Given the securities industry's sensitivity to trading-volume cycles, future equity market volatility and trading activity are expected to remain the key variable determining earnings direction. For bank holding companies, amid continued government value-up policy and expanded shareholder returns, a key focal point is how far their valuations, which remain low relative to profitability, narrow the gap with global peer banks. Interest rate shifts may affect banks and insurers positively through profitability and soundness channels, while potentially affecting securities firms differently via changes in liquidity conditions, warranting monitoring of differing sensitivities across sub-groups within the sector. In digital finance, the sustainability of platform-driven growth at KakaoBank and Kakao Pay remains a point of interest. Overall, this is a period where earnings momentum and policy expectations operate simultaneously, with the combination of trading volume, interest rates, and policy variables likely to shape sector trends going forward."
+        "ko": "한국은행은 2026년 7월과 8월 두 차례 연속 기준금리를 인상해 연 3.00%까지 끌어올렸다. 이후 10월 22일에는 기준금리를 3.00%로 동결했다. 11월 금융통화위원회에서 추가 인상 가능성이 주목받고 있다. 정부가 가계대출 총량 목표를 1.5%에서 3.0%로 확대하면서 5대 은행의 연간 대출 취급 가능 규모는 4조 3,400억원에서 7조 1,319억원으로 늘었다. 우리금융은 3분기 주당 배당금을 220원으로 결정했다. 증권업계는 국고채 입찰 담합 과징금까지 더해져 4분기 실적 부담이 커질 것으로 보인다.",
+        "en": "The Bank of Korea raised its policy rate in two consecutive moves in July and August 2026, bringing it to 3.00%. It then held the rate at 3.00% on October 22. Attention is on the possibility of a further hike at the November Monetary Policy Board meeting. After the government raised the household-loan growth target from 1.5% to 3.0%, the five major banks' annual lending capacity rose from 4.34 trillion won to 7.1319 trillion won. Woori Financial Group set its third-quarter dividend at 220 won per share. Brokerages are expected to face a heavier fourth-quarter earnings burden once the bond-bidding collusion fines are added."
       },
       "risks": [
         {
           "title": {
-            "ko": "거래대금 사이클 변동성",
-            "en": "Trading Volume Cycle Volatility"
+            "ko": "증시 거래대금·평가손익 변동성",
+            "en": "Volatility in trading value and valuation gains and losses"
           },
           "body": {
-            "ko": "증권업 실적은 거래대금과 시장 변동성에 크게 의존하는 구조로, 최근의 사상 최대 수준 실적은 거래대금 급증에 기인한다. 증시 활력이 둔화될 경우 수탁수수료와 자기매매손익이 동반 축소될 수 있어 실적 변동성이 확대될 위험이 있다.",
-            "en": "Securities industry earnings are heavily dependent on trading volume and market volatility, with recent record profits driven by a surge in trading activity. Should market momentum slow, brokerage commissions and proprietary trading gains could contract together, increasing earnings volatility risk."
+            "ko": "자기자본 상위 10개 증권사의 3분기 연결 영업이익은 1조 8,459억원으로 2분기 7조 6,181억원보다 75.8% 줄었다. 한국금융지주의 2026년 3분기 영업이익도 전년 동기 대비 64.6% 감소했다. 거래대금과 투자자산 평가손익에 따라 분기 실적의 변동 폭이 크다.",
+            "en": "Consolidated third-quarter operating profit of the ten largest brokerages by equity was 1.8459 trillion won, down 75.8% from 7.6181 trillion won in the second quarter. Korea Investment Holdings' third-quarter 2026 operating profit also fell 64.6% year on year. Quarterly results swing widely with trading value and valuation gains and losses on investment assets."
           }
         },
         {
           "title": {
-            "ko": "금리 경로의 이원적 영향",
-            "en": "Divergent Impact of Interest Rate Path"
+            "ko": "금리 상승과 순이자마진·자산건전성 부담",
+            "en": "Rising rates, net interest margin and asset quality"
           },
           "body": {
-            "ko": "금리 상승은 은행·보험의 수익성과 건전성에 긍정적으로 작용할 수 있으나 증권업의 자금 조달 및 유동성 여건에는 상이한 영향을 줄 수 있다. 통화정책 경로의 불확실성이 업종 내 하위그룹별 실적 차별화를 심화시킬 수 있다.",
-            "en": "Rising rates may positively affect bank and insurer profitability and soundness, but could have differing effects on securities firms' funding and liquidity conditions. Uncertainty in the monetary policy path may deepen earnings differentiation across sub-groups within the sector."
+            "ko": "KB금융의 3분기 그룹 순이자마진은 1.92%, 은행 순이자마진은 1.72%로 2분기 대비 각각 2bp 하락했다. 3분기 들어 중소기업 대출 연체율이 상승하면서 자산건전성 관리가 과제로 떠올랐다. 가계대출의 57.3%가 변동금리여서 금리 상승에 취약하다.",
+            "en": "At KB Financial Group, the third-quarter group net interest margin was 1.92% and the bank margin 1.72%, each down 2 basis points from the second quarter. Rising delinquency rates on SME loans in the third quarter have made asset-quality management a key task. Floating-rate loans account for 57.3% of household loans, leaving borrowers vulnerable to higher rates."
           }
         },
         {
           "title": {
-            "ko": "밸류업 정책 이행의 지속성",
-            "en": "Sustainability of Value-Up Policy Implementation"
+            "ko": "과징금 등 규제·일회성 비용",
+            "en": "Fines and other regulatory or one-off costs"
           },
           "body": {
-            "ko": "은행지주의 밸류에이션 재평가 기대는 정부 정책과 주주환원 정책의 실질적 이행 여부에 상당 부분 의존하고 있다. 정책 추진력이 약화되거나 자본정책 이행이 지연될 경우 기대했던 할인 축소가 더뎌질 가능성이 있다.",
-            "en": "Expectations for valuation re-rating among bank holding companies depend substantially on the actual implementation of government policy and shareholder return commitments. Should policy momentum weaken or capital policy execution be delayed, the anticipated narrowing of valuation discounts could be slower than expected."
+            "ko": "공정거래위원회가 증권사 10곳에 부과한 국고채 입찰 담합 과징금은 총 1조 3,760억원이다. 미래에셋증권은 과징금 2,148억원의 회계 처리와 반영 시점을 검토 중이다. 다른 증권사도 3분기 실적을 정정하거나 4분기에 관련 비용을 반영할 가능성이 있다.",
+            "en": "The Fair Trade Commission imposed fines totaling 1.376 trillion won on ten brokerages over Treasury bond bidding collusion. Mirae Asset Securities is reviewing the accounting treatment and timing of its 214.8 billion won fine. Other brokerages may restate third-quarter results or book the related costs in the fourth quarter."
           }
         }
       ],
       "sources": [
-        "https://www.huffingtonpost.kr/article/260344",
-        "https://www.dt.co.kr/article/12083184",
-        "https://www.hankyung.com/koreamarket/consensus/pdf/2026-06-421650f000bf3c79c6e62d40552805e4"
+        "https://supple.kr/news/cmvt7e7m0n4jvm5vuz2x63gsv",
+        "https://www.lcnews.co.kr/news/articleView.html?idxno=210797",
+        "https://www.thepublic.kr/news/articleView.html?idxno=324697",
+        "https://www.sentv.co.kr/article/view/sentv202611130088",
+        "https://www.sidae.com/article/2026111216192063283",
+        "https://www.sentv.co.kr/article/view/sentv202610130179",
+        "https://mango21.com/2026-11%EC%9B%94-%EA%B8%B0%EC%A4%80%EA%B8%88%EB%A6%AC-%EC%A0%84%EB%A7%9D/",
+        "https://m.news.nate.com/view/20261029n29235",
+        "https://www.dt.co.kr/article/12094899"
       ],
       "sector": "금융",
-      "generatedAt": "2026-10-08 18:29"
+      "generatedAt": "2026-11-21 18:05"
     },
     "기계·장비": {
       "lead": {
-        "ko": "기계·장비 업종은 원전·가스터빈 등 발전설비, 건설기계, 협동로봇까지 이질적인 하위 산업이 뒤섞여 있으며, 2026년 2분기 들어 주요 종목 대부분에서 매출과 수익성이 함께 개선되는 흐름이 확인된다.",
-        "en": "The machinery and equipment sector spans heterogeneous sub-industries from nuclear and gas turbine power generation equipment to construction machinery and collaborative robots, and most major names posted simultaneous revenue and profitability improvement in the second quarter of 2026."
+        "ko": "기계·장비 업종은 2026년 3분기에 두산에너빌리티·두산밥캣·HD건설기계가 이익 개선을 이끌었다. 반면 레인보우로보틱스·로보티즈·두산로보틱스 등 로봇 종목은 매출이 늘었어도 영업손실이 이어져 종목별 차이가 큰 업종이다.",
+        "en": "In the third quarter of 2026, Doosan Enerbility, Doosan Bobcat and HD Construction Equipment led the profit improvement in the machinery and equipment sector. Robot names such as Rainbow Robotics, Robotis and Doosan Robotics still posted operating losses despite higher sales, so results diverge widely by company."
       },
       "overview": {
-        "ko": "기계·장비 업종은 발전설비, 건설기계, 산업용·협동로봇, 승강기, 물류자동화 등 성격이 크게 다른 하위 산업들이 하나의 업종으로 묶여 있는 것이 특징이다. 상장 종목 수는 많지만, 종목 대부분은 중소형주이고 업종 전체가 시장에서 차지하는 비중은 크지 않은 편이다. 업종 내부적으로는 발전설비를 영위하는 두산에너빌리티가 압도적인 비중을 차지해 업종 흐름을 사실상 좌우하는 구조이며, 그 뒤를 레인보우로보틱스·HD건설기계·두산밥캣·두산로보틱스 등이 잇고 있다. 이 때문에 전통 중후장대 산업과 로봇 등 신성장 산업이 한 업종 안에서 공존하며, 종목별로 업황 사이클과 밸류에이션 논리가 크게 갈리는 점이 다른 업종과 구별되는 특징이다.",
-        "en": "The machinery and equipment sector bundles together sub-industries with markedly different characteristics, from power generation equipment to construction machinery, industrial and collaborative robots, elevators, and logistics automation. The sector has a large number of listed names, but most are small- and mid-cap stocks, and the sector's overall weight in the broader market remains relatively modest. Within the sector, power equipment maker Doosan Enerbility holds an overwhelming weight that effectively drives the sector's overall performance, followed by Rainbow Robotics, HD Hyundai Construction Equipment, Doosan Bobcat, and Doosan Robotics. As a result, traditional heavy industry and emerging growth businesses such as robotics coexist under one sector label, with cycle timing and valuation logic diverging sharply across names."
+        "ko": "기계·장비 업종에는 발전설비, 건설기계, 승강기, 물류 자동화, 정밀 모터·감속기, 검사장비, 로봇 등 성격이 다른 사업이 한데 묶여 있다. 시가총액 기준 최대 종목은 두산에너빌리티이며, 두 번째 종목과도 몇 배의 격차가 난다. 업종 전체가 전체 시장에서 차지하는 비중은 크지 않은 편이다. 시총 상위에는 두산에너빌리티·두산밥캣·HD건설기계 같은 전통 제조업체와 레인보우로보틱스·로보티즈·두산로보틱스 같은 로봇 기업이 함께 올라 있다. 로봇 기업은 분기 매출 규모에 비해 시가총액이 큰 편이다. 이 때문에 업종 안에서 실적이 확인되는 제조업과 성장 기대가 반영되는 로봇주가 공존한다.",
+        "en": "The machinery and equipment sector groups businesses of very different character, including power generation equipment, construction machinery, elevators, logistics automation, precision motors and reducers, inspection equipment and robots. By market capitalization the largest name is Doosan Enerbility, which is several times the size of the second-largest stock. The sector's share of the overall market is modest. The upper ranks hold traditional manufacturers such as Doosan Enerbility, Doosan Bobcat and HD Construction Equipment alongside robot companies such as Rainbow Robotics, Robotis and Doosan Robotics. The robot companies have large market capitalizations relative to their quarterly sales. As a result, manufacturers with confirmed earnings and robot stocks priced on growth expectations coexist within the sector."
       },
       "structure": {
-        "ko": "밸류체인 최상단에는 원전 주기기와 가스터빈을 공급하는 두산에너빌리티가 자리하며, 건설기계는 HD건설기계와 두산밥캣이 양대 축을 형성한다. 로봇 영역은 협동로봇을 만드는 두산로보틱스·레인보우로보틱스, 로봇 부품·완제품의 로보티즈, 로봇 활용 검사장비의 고영 등으로 세분화돼 있다. 승강기 제조의 현대엘리베이터, 물류자동화 설비의 현대무벡스, 정밀 감속기·모터의 에스피지, 인쇄회로기판(PCB) 습식공정 장비의 태성, 발전용 배열회수보일러의 비에이치아이 등도 업종을 구성한다. 전반적으로 상위 한두 종목에 시가총액이 집중돼 있고, 하위로 내려갈수록 개별 기업 규모는 작아지는 전형적인 쏠림 구조를 보인다.",
-        "en": "At the top of the value chain sits Doosan Enerbility, which supplies nuclear reactor main equipment and gas turbines, while construction machinery is anchored by the twin pillars of HD Hyundai Construction Equipment and Doosan Bobcat. The robotics segment is further subdivided into collaborative robot makers Doosan Robotics and Rainbow Robotics, component and finished-robot maker Robotis, and robot-based inspection equipment maker Koh Young. The sector also includes elevator maker Hyundai Elevator, logistics automation equipment maker Hyundai Movex, precision reducer and motor maker SPG, PCB wet-process equipment maker Taesung, and heat recovery steam generator (HRSG) maker BHI. Overall, market capitalization is heavily concentrated in the top one or two names, with individual company scale shrinking progressively further down the ranking."
+        "ko": "발전설비에서는 두산에너빌리티가 원자력 주기기, 터빈, 가스터빈, 소형모듈원전(SMR), 해상풍력을 맡는다. 두산에너빌리티의 실적 개선 요인 가운데 하나는 자회사 두산밥캣의 실적이다. 건설기계에서는 두산밥캣이 소형장비·산업차량·포터블파워 세 제품군을 운영하고, HD건설기계는 2026년 1월 1일 HD현대인프라코어를 흡수합병해 출범했다. 두산밥캣의 해외 매출에서 북미가 차지하는 비중은 70%를 웃돈다. 승강기와 물류 자동화는 현대엘리베이터와 현대무벡스(자동창고 AS/RS)가 맡고 있다. 로봇은 레인보우로보틱스·두산로보틱스(협동로봇) 같은 완제품 업체와 로보티즈(액추에이터)·에스피지(정밀 모터·감속기) 같은 부품 업체로 나뉘고, 고영(3D 검사장비)과 태성(PCB·글래스기판 공정 자동화 장비)은 전자 제조 공정 장비 쪽에 속한다.",
+        "en": "In power generation equipment, Doosan Enerbility covers nuclear primary components, turbines, gas turbines, small modular reactors (SMRs) and offshore wind. One driver of Doosan Enerbility's improved results is the performance of its subsidiary Doosan Bobcat. In construction machinery, Doosan Bobcat runs three product groups (small equipment, industrial vehicles and portable power), while HD Construction Equipment was launched on January 1, 2026 by absorbing HD Hyundai Infracore. North America accounts for more than 70% of Doosan Bobcat's overseas sales. Elevators and logistics automation are covered by Hyundai Elevator and Hyundai Movex (automated storage and retrieval systems, AS/RS). Robots split into finished-robot makers such as Rainbow Robotics and Doosan Robotics (collaborative robots) and component suppliers such as Robotis (actuators) and SPG (precision motors and reducers), while KohYoungTechnologyInc (3D inspection equipment) and Taesung (automation equipment for PCB and glass substrate processes) sit in electronics manufacturing equipment."
       },
       "trends": {
-        "ko": "2026년 2분기 공시 기준으로 업종 내 주요 종목 대부분이 전년 동기 대비 외형과 수익성이 함께 개선되는 모습을 보였다. 두산에너빌리티는 매출 4조 7,248억원, 영업이익 3,143억원으로 각각 3.4%, 15.9% 증가했는데, 체코 두코바니 원전 5·6호기 건설 사업 수주의 영향으로 1분기 신규 수주액이 전년 동기 대비 61.9% 늘었고 북미 지역에서 데이터센터용 터빈을 연이어 수주하며 가스터빈·스팀터빈 실적을 뒷받침했다. HD건설기계는 2026년 1월 HD현대인프라코어를 흡수합병한 효과가 더해져 2분기 매출이 2조 4,342억원(+151.5%), 영업이익이 2,489억원(+521.5%)으로 크게 늘었으며, 1분기에도 건설기계 수요 회복과 산업·방산용 엔진 성장으로 성장세를 보였다. HD건설기계의 2분기 북미 매출은 전년 동기 대비 약 7% 증가해 그동안 부진했던 북미 수요 회복이 실적에 반영되기 시작했음을 보여준다. 두산밥캣도 영업이익이 34.0% 늘며 안정적 수익성을 유지했고, 로보티즈·고영·태성·비에이치아이는 매출이 크게 늘면서 흑자로 돌아서거나 영업이익이 큰 폭으로 늘었다. 반면 로봇 업체인 레인보우로보틱스와 두산로보틱스는 매출이 각각 97.9%, 290.0% 늘었음에도 영업적자가 이어졌다.",
-        "en": "Based on second-quarter 2026 disclosures, most major names in the sector posted simultaneous top-line and profitability improvement year on year. Doosan Enerbility recorded revenue of KRW 4.7248 trillion and operating profit of KRW 314.3 billion, up 3.4% and 15.9% respectively, as first-quarter new orders rose 61.9% year on year on the Dukovany 5 and 6 nuclear project win and successive gas and steam turbine orders for North American data centers supported results. Helped by its January 2026 absorption of HD Hyundai Infracore, HD Hyundai Construction Equipment's second-quarter revenue rose to KRW 2.4342 trillion (+151.5%) and operating profit to KRW 248.9 billion (+521.5%), following first-quarter growth driven by recovering construction machinery demand and growth in industrial and defense engines; its North American revenue in the second quarter rose about 7% year on year, signaling that the long-awaited recovery in North American demand is beginning to show in results. Doosan Bobcat also maintained solid profitability with operating profit up 34.0%, and Robotis, Koh Young, Taesung, and BHI posted sharp revenue growth along with a return to profit or large operating profit gains. Robot makers Rainbow Robotics and Doosan Robotics, by contrast, remained in operating losses despite revenue growth of 97.9% and 290.0%, respectively."
+        "ko": "두산에너빌리티는 2026년 3분기 공시 기준 매출 4조 4,494억원(전년 동기 대비 +14.7%), 영업이익 2,612억원(+90.6%)을 기록했다. 수주잔고는 3분기 말 26조 5,805억원으로 직전 분기보다 약 1조원 늘었다. HD건설기계의 공시상 증가율(매출 +119.1%, 영업이익 +182.5%)에는 합병 효과가 반영돼 있으며, 합병 이전 두 회사의 지난해 실적을 합산해 비교하면 매출은 6.1%, 영업이익은 23.9% 증가했다. 두산밥캣은 매출이 13.0%, 영업이익이 22.0% 늘었다. 로봇 종목은 로보티즈(매출 +45.8%)와 두산로보틱스(+59.1%), 레인보우로보틱스(+30.1%)의 매출이 늘었지만, 로보티즈가 영업손실 26억원으로 적자 전환했고 두산로보틱스(134억원)와 레인보우로보틱스(18억원)는 적자가 이어졌다. 현대엘리베이터(영업이익 -33.6%)·현대무벡스(-35.9%)·에스피지(-30.5%)는 영업이익이 줄었고, 고영은 매출이 76.8%, 영업이익이 312.0% 늘었다.",
+        "en": "Doosan Enerbility reported third-quarter 2026 sales of KRW 4.4494 trillion (+14.7% year on year) and operating profit of KRW 261.2 billion (+90.6%), according to its filing. Its order backlog stood at KRW 26.5805 trillion at the end of the third quarter, about KRW 1 trillion more than the previous quarter. The reported growth rates for HD Construction Equipment (sales +119.1%, operating profit +182.5%) reflect the merger, and compared with the combined results of the two predecessor companies a year earlier, sales rose 6.1% and operating profit rose 23.9%. Doosan Bobcat's sales rose 13.0% and operating profit rose 22.0%. Among robot stocks, sales rose at Robotis (+45.8%), Doosan Robotics (+59.1%) and Rainbow Robotics (+30.1%), but Robotis swung to an operating loss of KRW 2.6 billion, while Doosan Robotics (KRW 13.4 billion) and Rainbow Robotics (KRW 1.8 billion) kept posting losses. Operating profit fell at Hyundai Elevator (-33.6%), Hyundai Movex (-35.9%) and SPG (-30.5%), while KohYoungTechnologyInc grew sales 76.8% and operating profit 312.0%."
       },
       "outlook": {
-        "ko": "발전설비 부문은 체코 원전 후속 계약과 불가리아·폴란드 등 유럽 프로젝트, 미국 내 전력 수요 증가에 따른 대형원전·SMR·가스터빈 수주 확대가 중기 성장 동인으로 꼽힌다. 건설기계 부문은 북미를 비롯한 선진 시장의 수요 회복이 이어질지, 그리고 합병 이후 라인업 통합에 따른 원가 효율화가 수익성 개선으로 이어질지가 관전 포인트다. 로봇 부문은 글로벌 협동로봇 시장이 2026년 이후에도 연 20% 안팎의 성장률을 이어갈 것으로 전망되는 만큼, 국내 업체들이 매출 성장을 넘어 수익성 전환 시점을 얼마나 앞당기는지가 핵심 변수가 될 전망이다. 승강기·물류자동화·정밀부품 등 상대적으로 안정적인 하위 업종은 완만한 실적 개선 흐름 속에서 개별 기업의 수주·신사업 진행 상황이 주가 흐름을 좌우할 것으로 보인다.",
-        "en": "In the power equipment segment, follow-on contracts tied to Czech nuclear projects, European pipeline opportunities in Bulgaria and Poland, and expanding large-reactor, SMR, and gas turbine orders amid rising U.S. power demand stand out as medium-term growth drivers. For construction machinery, the key watch points are whether the demand recovery in advanced markets including North America continues and whether cost efficiencies from post-merger lineup integration translate into margin improvement. In robotics, with the global collaborative robot market projected to keep growing at roughly 20% annually beyond 2026, the central variable will be how quickly domestic players can move from revenue growth toward profitability. For relatively stable sub-sectors such as elevators, logistics automation, and precision components, gradual earnings improvement combined with individual order wins and new business progress is likely to drive share price direction."
+        "ko": "북미 데이터센터 전력 수요와 글로벌 가스발전 투자 확대는 두산에너빌리티에 우호적인 환경으로 평가된다. 두산에너빌리티는 연간 수주 목표 13조 3,000억원 가운데 약 75.2%를 확보했으며, 4분기 추가 수주가 외형 유지의 관건이다. SMR에서는 미국 테라파워의 핵심 기자재 제작 계약을 3분기에 확보했다. HD건설기계는 군산 신공장에서 내년부터 메가와트급 발전기용 디젤엔진을 생산하고 인천공장의 대형 가스엔진 라인을 증설할 계획이다. 로봇에서는 레인보우로보틱스가 휠형 휴머노이드 RB-Y2를 2027년 상반기부터 양산 공급할 계획이다. 액추에이터가 휴머노이드 원가의 40~60%를 차지한다는 분석이 있어, 로보티즈·에스피지 같은 부품 업체의 실제 납품 확대 여부가 관전 포인트다.",
+        "en": "North American data center power demand and expanding global gas-fired generation investment are viewed as favorable conditions for Doosan Enerbility. Doosan Enerbility has secured about 75.2% of its annual order target of KRW 13.3 trillion, so additional fourth-quarter orders are the key to sustaining its top line. In SMRs, it won a contract in the third quarter to manufacture core components for US-based TerraPower. HD Construction Equipment plans to produce megawatt-class generator diesel engines at its new Gunsan plant from 2027 and to expand the large gas engine line at its Incheon plant. In robotics, Rainbow Robotics plans to begin mass-production supply of its wheeled humanoid RB-Y2 in the first half of 2027. One analysis puts actuators at 40-60% of a humanoid's cost, so the key point to watch is whether component suppliers such as Robotis and SPG actually expand deliveries."
       },
       "risks": [
         {
           "title": {
-            "ko": "대형 프로젝트 수주·매출 인식 시차",
-            "en": "Lag Between Large Project Orders and Revenue Recognition"
+            "ko": "원전 수주 부진과 수주 편중",
+            "en": "Weak nuclear orders and concentrated order mix"
           },
           "body": {
-            "ko": "원전·가스터빈·플랜트 설비는 수주부터 실제 매출 인식까지 수년이 걸리는 구조여서, 해외 프로젝트의 인허가·최종투자결정(FID) 지연이 발생하면 예상보다 실적 반영 시점이 늦춰질 수 있다. 수주 잔고가 쌓이는 속도와 실제 매출화 속도 간 괴리를 지속적으로 점검할 필요가 있다.",
-            "en": "Nuclear, gas turbine, and plant equipment projects typically take several years from order booking to actual revenue recognition, so delays in permitting or final investment decisions on overseas projects can push back the timing of earnings reflection. The gap between the pace of order backlog accumulation and actual revenue conversion warrants ongoing monitoring."
+            "ko": "두산에너빌리티의 2026년 누적 수주 가운데 가스·수소와 복합화력 EPC가 합쳐 약 72%를 차지한다. 한국수력원자력은 2026년 10월 29일 체코 두코바니 원전 5·6호기 시공계약 협상을 종료한다고 밝혔다. 영업이익 개선과 수주잔고 증가에도 재무부담이 커지고 있어 차입금 관리가 과제로 남아 있다.",
+            "en": "Gas and hydrogen plus combined-cycle EPC together account for about 72% of Doosan Enerbility's cumulative 2026 orders. On October 29, 2026, Korea Hydro & Nuclear Power said it was ending negotiations on the construction contract for Czech Dukovany units 5 and 6. Despite higher operating profit and backlog, the financial burden is growing, leaving debt management as an open issue."
           }
         },
         {
           "title": {
-            "ko": "건설기계 수요의 경기·통상 민감도",
-            "en": "Cyclical and Trade-Policy Sensitivity of Construction Machinery Demand"
+            "ko": "로봇 종목의 적자 지속과 중국 경쟁",
+            "en": "Continued robot-segment losses and Chinese competition"
           },
           "body": {
-            "ko": "건설기계는 글로벌 경기 사이클, 금리 수준, 지역별 인프라 투자 및 광산 수요에 민감하게 반응하는 업종으로, 북미 등 핵심 시장의 회복세가 꺾이거나 관세·통상 환경이 변화할 경우 실적 변동성이 커질 수 있다. 최근의 실적 개선이 일회성 기저효과나 합병 효과에 기인한 부분이 있는지 구분해 볼 필요가 있다.",
-            "en": "Construction machinery demand is highly sensitive to the global business cycle, interest rate levels, and regional infrastructure and mining investment, so a pullback in the recovery of core markets such as North America or shifts in tariff and trade conditions could increase earnings volatility. It is also worth distinguishing how much of the recent earnings improvement stems from base effects or merger-related accounting changes rather than underlying demand."
+            "ko": "2026년 3분기 공시 기준 레인보우로보틱스는 영업손실 18억원, 두산로보틱스는 134억원이며, 로보티즈는 영업손실 26억원으로 적자 전환했다. DS투자증권에 따르면 2026년 상반기 글로벌 휴머노이드 출하량에서 중국이 차지하는 비중은 86.6%다. 양산 시점이 늦어지면 실적 확인 전에 기대가 먼저 반영된 주가의 부담이 커질 수 있다.",
+            "en": "In third-quarter 2026 filings, Rainbow Robotics reported an operating loss of KRW 1.8 billion and Doosan Robotics KRW 13.4 billion, while Robotis swung to an operating loss of KRW 2.6 billion. According to DS Investment & Securities, China accounted for 86.6% of global humanoid shipments in the first half of 2026. If mass production is delayed, share prices that already reflect expectations ahead of confirmed earnings could come under greater pressure."
           }
         },
         {
           "title": {
-            "ko": "신성장 로봇 부문의 수익성 미확보",
-            "en": "Unproven Profitability in the Emerging Robotics Segment"
+            "ko": "환율·일회성 요인과 건설기계 현금흐름",
+            "en": "Exchange rates, one-off items and construction machinery cash flow"
           },
           "body": {
-            "ko": "협동로봇 등 로봇 부문은 매출 성장세가 뚜렷하지만 레인보우로보틱스와 두산로보틱스처럼 영업적자가 지속되는 기업이 있어, 성장성 대비 수익성 입증이 아직 이뤄지지 않은 단계다. 글로벌 경쟁 심화에 따른 가격 하락 압력도 중장기 수익성 개선 속도에 영향을 줄 수 있는 변수다.",
-            "en": "While robotics names show clear revenue growth, companies such as Rainbow Robotics and Doosan Robotics continue to post operating losses, meaning profitability has yet to be proven relative to growth potential. Intensifying global competition and resulting pricing pressure are additional variables that could affect the pace of medium-term margin improvement."
+            "ko": "HD건설기계의 2026년 3분기 당기순이익은 18억원으로 전년 동기 1,012억원에서 98.2% 감소했다. 3분기 영업이익에는 미국 관세 관련 판결에 따른 환급금 약 277억원이 반영됐다. 두산밥캣은 2026년 3분기까지 영업이익이 늘었지만 영업활동으로 들어온 현금은 37% 줄었다.",
+            "en": "HD Construction Equipment's third-quarter 2026 net income was KRW 1.8 billion, down 98.2% from KRW 101.2 billion a year earlier. Third-quarter operating profit included a tariff refund of about KRW 27.7 billion following a US tariff ruling. Doosan Bobcat's operating profit rose through the third quarter of 2026, but cash inflow from operating activities fell 37%."
           }
         }
       ],
       "sources": [
-        "https://v.daum.net/v/20260514070311488",
-        "https://news.nate.com/view/20260427n25979",
-        "https://finance.thesmileinfo.com/2026/08/machinery.html"
+        "https://zdnet.co.kr/view/?no=20261029162701",
+        "https://www.widedaily.com/news/articleView.html?idxno=304257",
+        "https://www.bloter.net/news/articleView.html?idxno=677157",
+        "https://news.bizwatch.co.kr/article/industry/2026/10/26/0037",
+        "https://theviewers.co.kr/View.aspx?No=4310651",
+        "https://m.news.nate.com/view/20261026n21628",
+        "https://www.irobotnews.com/news/articleView.html?idxno=49437",
+        "https://www.shinhangroup.com/kr/archive/insight/extend/detail/32871",
+        "https://www.irobotnews.com/news/articleView.html?idxno=49226",
+        "https://dealsite.co.kr/articles/171355"
       ],
       "sector": "기계·장비",
-      "generatedAt": "2026-10-08 19:06"
+      "generatedAt": "2026-11-21 18:05"
     },
     "인공지능(AI)": {
       "lead": {
-        "ko": "정부 정책 지원과 산업 전반의 AI 도입 확산 속에서 매출 성장세는 뚜렷하지만 대다수 기업이 아직 수익성 확보 단계에 이르지 못한 업종이다.",
-        "en": "A sector marked by clear revenue growth amid government policy support and broad-based AI adoption across industries, though most constituents have yet to reach sustained profitability."
+        "ko": "시장 비중은 작지만 의료영상·음성·데이터·반도체 IP·차량용 비전 등 AI 응용 기업이 모인 업종으로, 2026년 3분기 공시에서는 흑자 기업과 적자 지속 기업의 성적이 뚜렷이 갈렸다.",
+        "en": "The AI sector is a small slice of the Korean market, grouping application-level companies in medical imaging, speech, data, semiconductor IP and automotive vision, and its Q3 2026 filings showed a clear split between profitable names and those still posting losses."
       },
       "overview": {
-        "ko": "AI 업종은 영상 진단·언어모델·반도체 IP·번역·보안 등 다양한 응용 분야에 걸친 기업들로 구성되며, 코스닥 중심의 중소형 성장주가 대부분을 차지한다. 상장 종목 수는 적지 않으나 개별 기업의 시가총액 규모가 작아 전체 증시에서 차지하는 비중은 크지 않은 틈새 업종에 해당한다. 루닛과 같은 의료영상 AI 기업부터 오픈엣지테크놀로지 같은 반도체 설계자산(IP) 기업, 솔트룩스·코난테크놀로지 같은 언어·인지 AI 기업까지 사업모델이 상이해 업종 내 동질성은 낮은 편이다. 2026년 1월 시행된 인공지능 기본법은 중소기업에 새로운 기회와 도전 과제를 동시에 제시하는 제도적 전환점으로 평가된다. 전반적으로 기술 검증 단계를 지나 상업화 성과가 주가와 실적의 핵심 변수로 부상하고 있는 국면이다.",
-        "en": "The AI sector spans diverse application areas including medical imaging diagnostics, language models, semiconductor IP, translation, and security, and is dominated by small- and mid-cap growth names mostly listed on KOSDAQ. While the number of listed companies is not small, individual market capitalizations remain modest, making this a niche segment within the broader market. Business models vary widely, from medical-imaging AI firms such as Lunit to semiconductor IP designers like OpenEdge Technology and language/cognitive AI firms such as Saltlux and Konan Technology, resulting in low intra-sector homogeneity. The Basic Act on Artificial Intelligence, which took effect in January 2026, is viewed as a regulatory turning point that presents both opportunities and challenges for smaller firms. Overall, the sector is moving past the technology-validation stage, with commercialization outcomes now serving as the key variable for both share performance and earnings."
+        "ko": "인공지능 업종은 AI 기술을 제품과 서비스로 상품화한 중소형 기업이 모인 업종이다. 전체 시장 시가총액에서 차지하는 비중은 1%에 크게 못 미치는 작은 업종이다. 시가총액 선두는 루닛이고, 엘리스·노타·마키나락스가 뒤를 잇는다. 업종 분류는 제각각이어서 루닛은 바이오·제약, 오픈엣지테크놀로지는 반도체, 나머지 상위 종목은 대부분 IT·소프트웨어로 분류된다. AI 기본법과 시행령이 2026년 1월 22일 시행되어 AI 사업자에게 투명성·안전성 확보 의무가 부과되었다. 이 때문에 정책 일정과 AI 투자심리가 개별 기업의 실적과 함께 주가에 영향을 주는 업종이다.",
+        "en": "The AI sector groups small and mid-sized companies that have turned AI technology into products and services. Its share of total Korean market capitalization is far below 1%, making it a small sector. Lunit leads by market value, followed by Elice, Nota and MakinaRocks. Classifications differ across the group: Lunit is classed under bio and pharma, Openedges Technology under semiconductors, and most other top names under IT and software. The AI Basic Act and its enforcement decree took effect on January 22, 2026, imposing transparency and safety obligations on AI business operators. As a result, policy timelines and AI investor sentiment influence share prices alongside company-level earnings."
       },
       "structure": {
-        "ko": "밸류체인 상류에는 오픈엣지테크놀로지와 같은 반도체 IP·NPU 설계 기업이 위치하며, 온디바이스 AI 확산의 수혜를 받는 구조다. 중류에는 솔트룩스·코난테크놀로지·네오사피엔스 등 언어모델·음성합성 기반 플랫폼 기업과 마키나락스 같은 산업용 AI 솔루션 기업이 자리한다. 응용단에는 의료영상 진단의 루닛·제이엘케이, 자율주행 인지의 스트라드비젼, 번역의 플리토, 사이버보안의 샌즈랩 등 수직 특화 기업들이 포진해 있다. 노타·셀바스AI는 온디바이스 경량화와 음성·문서 AI 등 B2B 솔루션에 주력하는 구조다. 업종 내 시가총액 1위인 루닛이 전체의 상당 비중을 차지하지만 2위군과의 격차가 크지 않아 단일 기업으로의 쏠림은 제한적이며, 각 세부 분야별로 선도 기업이 분산된 다극화된 구조가 특징이다.",
-        "en": "Upstream in the value chain are semiconductor IP and NPU design firms such as OpenEdge Technology, positioned to benefit from the spread of on-device AI. Midstream comprises language-model and speech-synthesis platform firms including Saltlux, Konan Technology, and Neosapience, alongside industrial AI solution providers such as Makinarocks. Downstream, vertically specialized players are concentrated in medical imaging diagnostics (Lunit, JLK), autonomous-driving perception (StradVision), translation (Flitto), and cybersecurity (SandsLab). Nota and Selvas AI focus on on-device model lightweighting and B2B voice/document AI solutions. While Lunit, the sector's largest constituent by market capitalization, accounts for a meaningful share, the gap to the next tier is not overly wide, limiting single-company concentration and reflecting a multipolar structure with leading firms dispersed across sub-segments."
+        "ko": "모델·엔진 단계에서는 솔트룩스가 자체 거대언어모델 '루시아'와 검색증강생성 솔루션 'A.RAG'로 기업용 AI 사업을 넓히고 있다. 코난테크놀로지는 텍스트 AI와 비전 AI를 기반 기술로 삼고, 셀바스AI는 음성인식·음성합성·필기인식·OCR 기술을 바탕으로 AI 엔진과 솔루션을 공급한다. 인프라 단계에서는 노타가 AI 모델 경량화 기술을, 오픈엣지테크놀로지가 AI 반도체 설계자산(IP)을 공급하며, 엘리스·마키나락스·래블업도 IT·소프트웨어로 분류되어 이 업종에 포함된다. 데이터 단계에서는 플리토가 AI 학습데이터 판매와 AI 통번역 솔루션을 두 축으로 한다. 응용 단계에서는 루닛이 의료영상 분석 AI를, 스트라드비젼이 차량용 비전 AI를 공급하고, 에스피소프트는 마이크로소프트 소프트웨어 유통과 데이터센터 서비스를 운영한다. 독자 AI 파운데이션 모델 2차 평가에 오른 4개 팀은 SK텔레콤, LG AI연구원, 업스테이지, 모티프테크놀로지스로, 이 업종 상위 종목에는 포함되지 않아 상장사는 특정 기업 중심이 아니라 분야별로 분산된 구조다.",
+        "en": "At the model and engine layer, Saltlux is extending its enterprise AI business with its own large language model, LUXIA, and its retrieval-augmented generation solution, A.RAG. Konan Technology Incorporation builds on text AI and vision AI, while Selvas AI supplies AI engines and solutions based on speech recognition, speech synthesis, handwriting recognition and OCR. At the infrastructure layer, Nota provides AI model compression technology and Openedges Technology supplies AI semiconductor IP, and Elice, MakinaRocks and Lablup are also classed as IT and software within this sector. At the data layer, Flitto runs two businesses: AI training data sales and AI translation solutions. At the application layer, Lunit supplies medical imaging AI, StradVision supplies automotive vision AI, and SPSoft distributes Microsoft software and operates data center services. The four teams in the second round of the sovereign AI foundation model project were SK Telecom, LG AI Research, Upstage and Motif Technologies, none of which are among this sector's top listed names, so the listed universe is spread across segments rather than centered on one company."
       },
       "trends": {
-        "ko": "2026년 2분기 실적을 보면 매출 성장세는 업종 전반에 걸쳐 확인된다. 루닛은 2분기 매출이 전년 동기 대비 22.0% 늘었고, 스트라드비젼은 107.6% 급증했으며, 솔트룩스도 64.3% 증가하는 등 다수 기업이 두 자릿수 이상의 외형 성장을 기록했다. 다만 수익성 측면에서는 셀바스AI(영업이익 18억원)와 플리토(14억원) 등 일부를 제외하면 루닛·노타·오픈엣지테크놀로지·솔트룩스·코난테크놀로지·스트라드비젼·제이엘케이·샌즈랩 등 대다수가 영업손실을 지속하고 있다. 의료 AI 분야로 범위를 넓히면 상장 의료AI 기업 17곳 중 11곳의 매출이 증가했고 흑자기업이 4곳에서 6곳으로 늘어나는 등 업황 개선 조짐이 나타나고 있다. 피지컬AI 분야에서는 사업 확대와 일부 기업의 매출 성장이 이어지고 있지만 수익성은 기대를 따라가지 못하고 있다는 평가가 나오는 등, 외형 성장과 수익성 확보 사이의 괴리가 업종 전반의 공통된 특징으로 관찰된다.",
-        "en": "Second-quarter 2026 results confirm broad-based revenue growth across the sector. Lunit's quarterly sales rose 22.0% year on year, StradVision surged 107.6%, and Saltlux grew 64.3%, with numerous names posting double-digit or higher top-line expansion. On the profitability front, however, aside from a few profitable names such as Selvas AI (KRW 1.8 billion in operating profit) and Flitto (KRW 1.4 billion), most constituents—including Lunit, Nota, OpenEdge Technology, Saltlux, Konan Technology, StradVision, JLK, and SandsLab—continued to post operating losses. Broadening the lens to medical AI, among 17 listed medical-AI firms, 11 posted revenue growth and the number of profitable firms rose from four to six, signaling incremental improvement in the sub-sector. In physical AI, commentary notes that while business expansion and revenue growth continue at some firms, profitability has not kept pace with expectations, underscoring a gap between top-line growth and earnings realization as a common theme across the broader sector."
+        "ko": "2026년 3분기 공시 기준 상위 종목 가운데 매출이 전년 동기 대비 늘어난 회사는 루닛(+13.5%), 셀바스AI(+31.4%), 솔트룩스(+88.4%), 플리토(+51.0%), 스트라드비젼(+677.8%)이다. 같은 기간 오픈엣지테크놀로지(-67.5%), 코난테크놀로지(-52.0%), 에스피소프트(-1.7%)는 매출이 줄었다. 영업이익은 셀바스AI가 19억원으로 79.8%, 플리토가 90억원으로 217.1% 늘었고, 솔트룩스는 5,373만원으로 흑자 전환했다. 에스피소프트의 영업이익은 6억원으로 50.4% 줄었다. 루닛(107억원), 노타(36억원), 오픈엣지테크놀로지(81억원), 코난테크놀로지(23억원), 스트라드비젼(91억원)은 영업손실을 기록했다. 정책 면에서는 2026년 8월 18일 독자 AI 파운데이션 모델 2차 평가 결과 업스테이지·SK텔레콤·LG AI연구원 3개 팀이 다음 단계에 진출했다.",
+        "en": "In Q3 2026 filings, year-on-year revenue rose at Lunit (+13.5%), Selvas AI (+31.4%), Saltlux (+88.4%), Flitto (+51.0%) and StradVision (+677.8%). Over the same period, revenue fell at Openedges Technology (-67.5%), Konan Technology Incorporation (-52.0%) and SPSoft (-1.7%). Operating profit rose 79.8% to KRW 1.9 billion at Selvas AI and 217.1% to KRW 9.0 billion at Flitto, while Saltlux returned to profit with KRW 53.73 million. SPSoft's operating profit fell 50.4% to KRW 600 million. Lunit (KRW 10.7 billion), Nota (KRW 3.6 billion), Openedges Technology (KRW 8.1 billion), Konan Technology Incorporation (KRW 2.3 billion) and StradVision (KRW 9.1 billion) posted operating losses. On the policy side, the second-round evaluation of the sovereign AI foundation model project on August 18, 2026 sent Upstage, SK Telecom and LG AI Research to the next stage."
       },
       "outlook": {
-        "ko": "정부는 2026년을 AI가 산업 전반의 핵심 인프라로 자리 잡는 전환점으로 설정하고 있으며, 인공지능 기본법 시행과 더불어 국가 AI 컴퓨팅 인프라 확충 등 정책적 뒷받침이 이어지고 있다. 온디바이스·엣지 AI로의 기술 적용 환경 확장은 오픈엣지테크놀로지와 같은 반도체 IP 기업과 경량화 기술을 보유한 노타·셀바스AI 등에 구조적 기회 요인으로 작용할 수 있다. 의료 AI 분야에서는 미국 FDA 등 해외 인허가 확대와 보험 수가 진입 여부가 루닛·제이엘케이 등의 해외 매출 확대 속도를 가늠하는 지표가 될 전망이다. 업종 전반적으로는 개별 기업의 상업화 성과와 흑자 전환 시점이 주가 차별화의 관건이 될 것으로 보이며, 실적 발표 때마다 매출 성장률과 손익분기점 도달 여부가 핵심 관전 포인트로 부각될 가능성이 크다.",
-        "en": "The government has positioned 2026 as a turning point in which AI becomes core infrastructure across industries, with the Basic Act on Artificial Intelligence and expanded national AI computing infrastructure providing ongoing policy support. The broadening of technology deployment toward on-device and edge AI could present structural opportunities for semiconductor IP firms such as OpenEdge Technology and model-lightweighting specialists such as Nota and Selvas AI. In medical AI, progress on overseas regulatory approvals such as U.S. FDA clearance and insurance reimbursement access is likely to be a key gauge of overseas revenue expansion for firms such as Lunit and JLK. Across the sector, individual firms' commercialization progress and timing of profitability are likely to be the key differentiators for share performance, with revenue growth rates and progress toward breakeven set to remain focal points at each earnings release."
+        "ko": "독자 AI 파운데이션 모델 사업은 2026년 연말까지 3차 평가를 거쳐 최종 한두 개 팀을 선발할 예정이라고 8월 발표에서 밝혀졌다. 정부는 다음 단계에 진출한 팀에 고성능 GPU 지원을 확대할 계획이다. 이 사업의 결과는 국산 모델 생태계에 대한 정부 지원의 방향을 가늠하는 지표가 될 수 있다. AI 기본법에는 과태료 부과 전에 최소 1년 이상의 계도 기간이 예정되어 있어, 규제 대응 수요가 실제 매출로 이어지는지는 시간을 두고 확인해야 한다. 해외에서는 엔비디아가 2027회계연도 3분기(2026년 8~10월) 매출 1,158억달러로 전년 대비 103% 증가를 기록해 AI 인프라 투자 흐름이 이어지고 있다. 국내 상장 AI 기업에서는 적자 기업의 흑자 전환 시점과 흑자 기업의 매출 성장 지속 여부가 핵심 관전 포인트다.",
+        "en": "The August 2026 announcement said the sovereign AI foundation model project would pick one or two final teams after a third-round evaluation by year-end. The government plans to expand high-performance GPU support for the teams that advance. The outcome can serve as a gauge of the direction of government support for the domestic model ecosystem. The AI Basic Act provides for a grace period of at least one year before fines are imposed, so it will take time to see whether regulatory-compliance demand turns into actual revenue. Overseas, Nvidia reported fiscal Q3 2027 (August to October 2026) revenue of USD 115.8 billion, up 103% year on year, showing that AI infrastructure spending continues. Among Korean-listed AI companies, the key points to watch are when loss-making firms reach profitability and whether profitable firms sustain revenue growth."
       },
       "risks": [
         {
           "title": {
-            "ko": "수익성 미확보에 따른 변동성",
-            "en": "Volatility from Unproven Profitability"
+            "ko": "적자 지속과 실적 변동성",
+            "en": "Persistent losses and earnings volatility"
           },
           "body": {
-            "ko": "업종 내 다수 기업이 수년째 영업손실을 지속하고 있어 외부 자금조달 환경이나 투자심리 변화에 실적과 주가가 민감하게 반응할 수 있다. 매출 성장이 이어져도 손익분기점 도달 시점이 불투명한 기업은 추가적인 비용 부담이나 희석 리스크에 노출될 수 있다.",
-            "en": "Many sector constituents have posted operating losses for several consecutive years, leaving earnings and share prices sensitive to shifts in external financing conditions or investor sentiment. Even with continued revenue growth, firms with uncertain timelines to breakeven may face additional cost burdens or dilution risk."
+            "ko": "2026년 3분기 공시 기준 루닛·노타·오픈엣지테크놀로지·코난테크놀로지·스트라드비젼은 영업손실을 기록해 상위 종목 9곳 중 5곳이 적자다. 오픈엣지테크놀로지(-67.5%)와 코난테크놀로지(-52.0%)처럼 분기 매출이 절반 넘게 줄어든 사례도 있어 프로젝트·계약 성격의 매출은 분기별 편차가 클 수 있다.",
+            "en": "In Q3 2026 filings, Lunit, Nota, Openedges Technology, Konan Technology Incorporation and StradVision posted operating losses, so five of the nine top names are loss-making. Revenue fell by more than half at Openedges Technology (-67.5%) and Konan Technology Incorporation (-52.0%), which suggests that project- and contract-based sales can swing widely from quarter to quarter."
           }
         },
         {
           "title": {
-            "ko": "업종 내 이질성과 개별 기업 리스크",
-            "en": "Intra-Sector Heterogeneity and Idiosyncratic Risk"
+            "ko": "AI 투자 과열 논란과 투자심리",
+            "en": "AI overinvestment concerns and sentiment"
           },
           "body": {
-            "ko": "의료영상·언어모델·반도체 IP·번역 등 사업모델이 상이해 업종 전체를 하나의 흐름으로 해석하기 어렵고, 개별 기업의 수주·인허가 이슈가 업종 평균과 괴리된 주가 움직임을 만들 수 있다. 특정 종목의 호재나 악재가 업종 전반의 동향으로 오인될 가능성에 유의할 필요가 있다.",
-            "en": "Given divergent business models spanning medical imaging, language models, semiconductor IP, and translation, interpreting the sector as a single coherent trend is difficult, and firm-specific order wins or regulatory approvals can cause share movements that diverge from the sector average. Care should be taken not to mistake company-specific developments for sector-wide trends."
+            "ko": "BofA 조사에서 기술주 비중 확대 의향이 2026년 10월 37%에서 11월 12%로 떨어져 AI 투자 과잉 우려가 커졌다. 시가총액이 작은 종목이 많은 업종이어서 글로벌 AI 투자심리가 흔들리면 주가 변동이 커질 수 있다.",
+            "en": "In a BofA survey, the share of respondents intending to overweight tech fell from 37% in October 2026 to 12% in November, reflecting rising concern over AI overinvestment. The sector contains many small-cap names, so a shift in global AI sentiment could amplify share price swings."
           }
         },
         {
           "title": {
-            "ko": "정책·규제 환경 변화",
-            "en": "Policy and Regulatory Environment Shifts"
+            "ko": "정책 지원 집중과 경쟁 심화",
+            "en": "Concentrated policy support and intensifying competition"
           },
           "body": {
-            "ko": "인공지능 기본법 시행에 따른 하위 법령과 가이드라인이 구체화되는 과정에서 규제 강도나 적용 범위가 기업별 사업 운영에 상이한 영향을 줄 수 있다. 정부 예산 집행 속도나 지원 정책의 지속성 여부도 중소형 AI 기업들의 성장 경로에 변수로 작용할 수 있다.",
-            "en": "As subordinate regulations and guidelines under the Basic Act on Artificial Intelligence are finalized, the intensity and scope of regulation could affect individual companies' operations differently. The pace of government budget execution and the continuity of support policies may also serve as variables in the growth trajectories of small and mid-cap AI firms."
+            "ko": "과기정통부는 GPU 등 지원을 여러 팀에 나누는 데 회의적인 입장을 보였고, 대형 모델 한 곳에 집중할 가능성도 거론된다. 지원이 소수 팀에 모이면 상장 중소형 AI 기업이 받는 수혜는 제한될 수 있다. 글로벌 모델과의 격차 우려도 이어지고 있어 국산 솔루션의 경쟁력 입증이 과제다.",
+            "en": "The Ministry of Science and ICT has been skeptical about spreading GPU and other support across several teams, and concentrating on a single large model has been floated as a possibility. If support gathers in a few teams, the benefit to listed small and mid-sized AI firms may be limited. Concerns about the gap with global models also persist, so proving the competitiveness of domestic solutions remains a challenge."
           }
         }
       ],
       "sources": [
-        "https://verireport.com/library/industry",
-        "https://www.medipana.com/news/articleView.html?idxno=417281",
-        "https://www.ddaily.co.kr/page/view/2026082211552931246"
+        "https://www.shinkim.com/kor/media/newsletter/pdf/3114",
+        "https://www.ytn.co.kr/_ln/0105_202608181113010376",
+        "https://wowtale.net/2026/08/18/263113/",
+        "https://dazabi.com/insurance_magazine/article.php?id=41848",
+        "https://peekaboolabs.ai/blog/ai-basic-law-guide",
+        "https://m.sedaily.com/article/20116283",
+        "https://m.news.nate.com/view/20260818n24121"
       ],
       "sector": "인공지능(AI)",
-      "generatedAt": "2026-10-08 19:06"
+      "generatedAt": "2026-11-21 18:18"
     },
     "로봇": {
       "lead": {
-        "ko": "로봇 업종은 휴머노이드 상용화 초기 국면과 맞물려 매출 성장세가 뚜렷하지만, 수익성은 종목별로 크게 갈리는 전환기에 있다.",
-        "en": "The robotics sector is entering an early commercialization phase for humanoid robots, showing clear top-line growth while profitability diverges sharply across individual names."
+        "ko": "로봇 업종은 2026년 3분기 공시에서 매출 증가와 영업적자 지속이 함께 나타났고, 주가는 휴머노이드와 피지컬 AI 기대감에 크게 좌우되는 구조다.",
+        "en": "In its Q3 2026 filings, the Korean robotics sector showed rising revenue alongside continued operating losses, and its share prices remain heavily driven by expectations for humanoids and physical AI."
       },
       "overview": {
-        "ko": "로봇 산업은 산업용 로봇, 협동로봇, 물류·서비스로봇, 그리고 최근 부상한 휴머노이드까지 다양한 제품군을 포괄하는 복합 기계·전자·소프트웨어 산업이다. 한국 증시에서는 상장 종목 수가 많은 편이지만 개별 기업의 시가총액은 아직 크지 않아 전체 시장 내 비중은 제한적인 성장형 업종으로 분류된다. 다만 최근 휴머노이드 로봇에 대한 글로벌 투자와 관심이 급격히 확대되면서 업종 전반의 주가 민감도와 시장의 주목도가 높아진 상태다. 레인보우로보틱스, 두산로보틱스, 로보티즈 등 대형주를 중심으로 완제품 로봇뿐 아니라 감속기·모터 등 핵심 부품을 생산하는 에스피지, 삼현, 하이젠알앤엠 등 부품사들도 함께 업종을 구성하고 있다. 산업 특성상 연구개발 투자 비중이 높고 초기 수익성이 낮은 기업이 많아 매출 성장과 손익 구조가 엇갈리는 경향이 짙다.",
-        "en": "The robotics industry spans a broad range of product categories, including industrial robots, collaborative robots, logistics/service robots, and the recently emerging humanoid segment, making it a complex mechanical, electronic, and software-driven industry. On the Korean stock market, the sector is characterized by a relatively large number of listed names but still-modest individual market capitalizations, placing it among growth-stage sectors with a limited overall market weight. However, rapidly expanding global investment and attention toward humanoid robots have recently heightened the sector's stock price sensitivity and market visibility. Alongside large-cap finished-robot makers such as Rainbow Robotics, Doosan Robotics, and Robotis, the sector also includes component suppliers of reducers and motors such as SPG, Samhyun, and Higen RNM. Given the industry's heavy R&D spending and the early-stage profitability of many constituents, revenue growth and earnings structures tend to diverge significantly across companies."
+        "ko": "로봇 업종은 협동로봇·산업용 로봇 완제품, 액추에이터·감속기·모터 같은 핵심 부품, 운영 소프트웨어를 포괄하는 업종이다. 최근에는 휴머노이드와 피지컬 AI가 업종의 핵심 테마로 자리 잡았다. 전체 시장에서 차지하는 시가총액 비중은 1%에 못 미쳐 규모는 작은 편이다. 시가총액은 레인보우로보틱스, 로보티즈, 두산로보틱스 등 소수 종목에 몰려 있다. 업종 분류도 기계·장비, 자동차, IT·소프트웨어로 나뉘어 있어 사업 내용이 종목마다 다르다. 실적보다 기대감이 주가에 먼저 반영되는 경향이 있다.",
+        "en": "The robotics sector spans finished collaborative and industrial robots, core components such as actuators, reducers and motors, and robot operating software. Humanoids and physical AI have recently become the sector's central theme. Its share of total market capitalization is below 1%, so the sector is small in scale. Market value is concentrated in a few names, including Rainbow Robotics, Robotis and Doosan Robotics. The constituents are also classified across machinery and equipment, automobiles, and IT and software, so their businesses differ by company. Share prices tend to price in expectations before earnings follow."
       },
       "structure": {
-        "ko": "로봇 업종의 밸류체인은 크게 완제품(매니퓰레이터·협동로봇·휴머노이드)과 핵심 부품(감속기·서보모터·제어기·센서), 그리고 소프트웨어·AI 솔루션 단으로 구분된다. 완제품 영역에는 레인보우로보틱스, 두산로보틱스, 뉴로메카, 로보스타가 있으며, 협동로봇·휴머노이드와 산업용 로봇 등으로 제품군이 나뉜다. 업종 분류상 함께 묶인 전진건설로봇은 콘크리트 펌프카를 만드는 건설기계 기업이다. 핵심 부품 영역에서는 에스피지와 삼현이 감속기·정밀모터를, 하이젠알앤엠이 산업용 모터를 공급하며 완제품 업체들의 하드웨어 경쟁력을 뒷받침한다. 소프트웨어·자율주행 기반 솔루션 영역에는 클로봇이 위치해 있으며, 유일로보틱스와 휴림로봇은 각각 사출 자동화 설비와 산업용·서비스 로봇 영역에서 사업을 영위하고 있다. 밸류체인 전반에 걸쳐 완제품과 부품사 간 기술 결합도가 높아 소수 대형주의 수주·개발 성과가 부품사 실적에도 연동되는 구조적 특징을 보인다.",
-        "en": "The robotics sector's value chain can be broadly divided into finished products (manipulators, collaborative robots, humanoids), core components (reducers, servo motors, controllers, sensors), and software/AI solutions. The finished-product segment includes Rainbow Robotics, Doosan Robotics, Neuromeka, and Robostar, with product lines spanning collaborative robots, humanoids, and industrial robots. Junjin Construction & Robot, grouped in the sector by classification, is a construction-machinery maker of concrete pump trucks. In core components, SPG and Samhyun supply reducers and precision motors while Higen RNM provides industrial motors, underpinning the hardware competitiveness of finished-product makers. Clobot occupies the software and autonomy-based solutions layer, while Yuil Robotics and Hyulim Robot operate in injection-molding automation equipment and industrial and service robots, respectively. Across the value chain, the tight technological linkage between finished-product makers and component suppliers means that order wins and development milestones at a handful of large-cap names tend to flow through to component-maker earnings as well."
+        "ko": "완제품 단계에서는 레인보우로보틱스가 KAIST 휴보 개발 인력이 세운 로봇 플랫폼 기업으로 자리하고 있다. 두산로보틱스는 협동로봇 팔과 자동화 솔루션을, 뉴로메카는 협동로봇 본체·제어기·소프트웨어를 자체 개발한다. 유일로보틱스와 로보스타는 산업용 로봇과 자동화 시스템을 공급한다. 부품 단계에서는 로보티즈가 액추에이터와 정밀감속기를, 삼현이 모터·제어기·감속기를 묶은 3-in-1 기술을 보유하고 있다. 에스피지는 정밀 제어용 모터·감속기를, 하이젠알앤엠은 서보모터와 로봇용 액추에이터를 만든다. 소프트웨어에서는 클로봇이 로봇 운영 플랫폼을 맡는다. 전진건설로봇은 콘크리트 펌프카를 주력으로 하는 건설기계 제조사이고, 휴림로봇은 특수 목적용 기계 제조업체여서 업종 내에서도 로봇 본업과는 거리가 있다.",
+        "en": "At the finished-robot stage, Rainbow Robotics is a robot platform company founded by researchers who took part in developing KAIST's HUBO. Doosan Robotics supplies collaborative robot arms and automation solutions, while Neuromeka develops its own collaborative robot bodies, controllers and software. Yuilrobotics and Robostar supply industrial robots and automation systems. At the component stage, Robotis makes actuators and precision reducers, and Samhyun holds a 3-in-1 technology that integrates motor, controller and reducer. SPG makes precision control motors and reducers, and Higen RNM produces servo motors and robot actuators. In software, Clobot provides a robot operating platform. Junjin Construction & Robot is a construction machinery maker focused on concrete pump trucks, and Hyulim ROBOT is a special-purpose machinery manufacturer, so both sit further from core robotics."
       },
       "trends": {
-        "ko": "2026년 2분기 공시 기준으로 업종 상위 종목들의 매출은 대체로 견조한 증가세를 보였다. 레인보우로보틱스는 매출이 전년 동기 대비 97.9% 늘었고 두산로보틱스는 290.0% 급증했지만, 두 회사 모두 영업손실이 지속되며 외형 성장과 수익성 개선 사이의 시차가 뚜렷하게 나타났다. 반면 로보티즈는 매출 95.1% 증가와 함께 영업이익이 전년 동기 대비 722.9% 늘어나는 뚜렷한 수익성 개선을 보였고, 로보스타는 매출 34.2% 증가와 함께 흑자로 전환했다. 전진건설로봇은 매출이 8.2% 감소했음에도 영업이익이 전년 수준을 유지하는 안정적 수익구조를 보였고, 반대로 삼현과 휴림로봇은 매출 감소와 함께 영업손실로 전환했다. 산업 환경 측면에서는 테슬라 옵티머스의 초기 양산 돌입과 현대차그룹의 보스턴다이내믹스 아틀라스 공장 투입 로드맵 제시 등으로 휴머노이드 로봇이 연구개발을 넘어 양산·상업화 단계에 들어서는 모습이 확인됐다. 레인보우로보틱스의 이동형 양팔로봇 RB-Y1도 2026년 들어 연구용을 넘어 산업 현장 검증 단계에 진입했으며, 쿠팡이 이를 풀필먼트센터에 도입해 실증에 들어간 점이 업황 개선의 구체적 사례로 거론된다.",
-        "en": "Based on second-quarter 2026 disclosures, top-tier robotics names generally posted solid revenue growth. Rainbow Robotics' revenue rose 97.9% year-on-year and Doosan Robotics surged 290.0%, yet both companies continued to post operating losses, highlighting a clear lag between top-line expansion and profitability improvement. Robotis, by contrast, combined 95.1% revenue growth with a 722.9% year-on-year jump in operating profit, while Robostar swung to an operating profit alongside 34.2% revenue growth. Junjin Construction & Robot maintained stable operating profit despite an 8.2% revenue decline, whereas Samhyun and Hyulim Robot both swung to operating losses amid falling sales. On the industry front, Tesla's initial mass production of Optimus and Hyundai Motor Group's roadmap to deploy Boston Dynamics' Atlas in its factories show humanoid robots moving beyond R&D into production and commercialization. Rainbow Robotics' mobile dual-arm robot RB-Y1 has also advanced from research use to on-site industrial validation in 2026, and Coupang's pilot deployment of the robot at a fulfillment center is cited as a concrete example of improving conditions."
+        "ko": "2026년 3분기 공시에서 로보티즈, 레인보우로보틱스, 두산로보틱스는 모두 전년 동기 대비 매출이 두 자릿수 늘었지만 영업손실을 벗어나지 못했다. 상위 종목 전체로 보면 매출이 늘어난 회사는 7곳, 줄어든 회사는 5곳이며, 늘어난 회사의 증가율은 삼현 3.9%에서 클로봇 102.4%까지 분포했다. 영업이익 흑자는 에스피지 34억원, 전진건설로봇 56억원, 로보스타 2억원(흑자 전환) 3곳이고, 나머지 9곳은 영업손실을 기록했다. 로보티즈는 매출 135억원(45.8% 증가)에 영업손실 26억원으로 적자 전환했는데, 원자재 가격 상승과 수익성이 낮은 액추에이터 판매 비중 확대, 성과급과 연구개발비 증가가 수익성을 압박했다. 두산로보틱스는 매출 162억원(59.1% 증가)에 영업손실 134억원을 기록했으며, 북미 자동화 솔루션 사업이 매출 증가를 이끌었다. 주가는 실적 발표 직후 흔들렸다. 로보티즈는 3분기 영업적자 소식에 2026년 11월 17일 8% 넘게 급락했다. 그러나 11월 18일에는 엔비디아의 3분기 실적과 CES 2027 휴머노이드 공개 기대감이 겹치며 로봇주가 일제히 급등했다.",
+        "en": "In the Q3 2026 filings, Robotis, Rainbow Robotics and Doosan Robotics all posted double-digit year-on-year revenue growth but remained in operating losses. Across the top names, revenue rose at 7 companies and fell at 5, and the increases ranged from 3.9% at Samhyun to 102.4% at Clobot. Three companies reported operating profit: SPG at KRW 3.4 billion, Junjin Construction & Robot at KRW 5.6 billion, and Robostar at KRW 0.2 billion after turning profitable; the other 9 recorded operating losses. Robotis swung to an operating loss of KRW 2.6 billion on revenue of KRW 13.5 billion, up 45.8%, and higher raw material prices, a larger share of lower-margin actuator sales, and higher bonuses and R&D spending weighed on profitability. Doosan Robotics recorded revenue of KRW 16.2 billion, up 59.1%, with an operating loss of KRW 13.4 billion, and its North American automation solutions business drove the revenue increase. Share prices swung sharply after the results. Robotis fell more than 8% on November 17, 2026 on news of its Q3 operating loss. On November 18, however, robotics stocks rose together on Nvidia's Q3 results and expectations that humanoids would be unveiled at CES 2027."
       },
       "outlook": {
-        "ko": "향후 업종의 핵심 성장 동인은 휴머노이드 로봇의 양산 본격화와 이에 따른 부품·소프트웨어 수요 확대다. 보스턴다이내믹스의 전신 제어 기술 고도화와 현대차그룹의 공장 투입 로드맵, 테슬라의 대규모 양산 계획 등은 글로벌 공급망 재편을 예고하며, 한국 기업들은 완제품뿐 아니라 액추에이터·감속기·모터 등 핵심 부품에서 참여 기회를 모색하고 있다. 정부도 K-로봇 피지컬AI 생태계조성사업과 로봇활용 제조혁신 지원사업 등을 통해 제조현장 로봇 도입과 기술개발을 뒷받침하고 있어 정책적 수요 기반도 형성돼 있다. 다만 중국이 휴머노이드 시장점유율 78%를 차지한 가운데 한국은 현장 데이터 경쟁력을 갖춰야 한다는 분석이 나오는 만큼, 국내 기업들이 가격과 양산 경쟁력에서 중국과 어떻게 차별화할지가 중요하다. 이 밖에 상위 종목들의 적자 축소 속도, 완제품 기업과 부품사 간 공급 계약 확대 여부, 고령화에 따른 제조·서비스 현장의 구조적 인력 부족이 실제 로봇 수요로 이어지는 속도가 관전 포인트로 꼽힌다.",
-        "en": "The sector's principal growth driver going forward is the acceleration of humanoid robot mass production and the resulting expansion in demand for components and software. Boston Dynamics' advancing whole-body control technology, Hyundai Motor Group's factory-deployment roadmap, and Tesla's large-scale production plans all point to a reshaping of the global supply chain, with Korean firms seeking opportunities not only in finished robots but also in core components such as actuators, reducers, and motors. Government programs including the K-Robot Physical AI ecosystem initiative and the robot-based manufacturing innovation support program are also reinforcing policy-driven demand for robot adoption on factory floors. That said, analysis suggesting that China has already captured a 78% share of the humanoid robot market underscores how important it will be for domestic firms to differentiate themselves from Chinese competitors on price and mass-production capability. Key points to monitor include the pace at which top-tier names narrow operating losses, the expansion of supply agreements between finished-robot makers and component suppliers, and how quickly structural labor shortages stemming from an aging workforce translate into actual robot demand."
+        "ko": "첫 번째 동인은 대기업의 휴머노이드 공개 일정이다. 삼성전자는 이족보행 휴머노이드를, LG전자는 엔비디아와 협업한 휴머노이드를 공개할 것으로 알려졌다. 공개 시점은 2027년 1월 CES 2027이며, 삼성전자가 최대주주인 레인보우로보틱스의 협력 범위가 관전 포인트다. 두 번째 동인은 정부 정책으로, 정부는 2030년까지 휴머노이드 생태계에 총 2조 3,000억원을 투자하고 핵심부품 국산화율을 45%에서 80%로 높일 계획이다. 국산 휴머노이드는 2027년 250대, 2030년까지 1,080대를 정부가 구입해 대학과 국책연구기관 등에 보급한다. 세 번째로 부품 병목이 있다. 액추에이터는 휴머노이드 원가의 40~60%를 차지하는 핵심 부품으로 평가된다. 로보티즈, 삼현, 에스피지, 하이젠알앤엠 같은 부품사가 실제 양산 공급으로 이어지는지가 확인 대상이다. 다만 3분기 공시에서 보듯 매출 성장이 이익으로 연결되는 시점은 아직 확인되지 않았다.",
+        "en": "The first driver is the humanoid unveiling schedule of large corporations. Samsung Electronics is expected to unveil a bipedal humanoid and LG Electronics a humanoid developed with Nvidia. The unveilings are expected at CES 2027 in January 2027, and the scope of cooperation at Rainbow Robotics, whose largest shareholder is Samsung Electronics, is a point to watch. The second driver is government policy: the government plans to invest a total of KRW 2.3 trillion in the humanoid ecosystem through 2030 and raise the domestic share of core humanoid components from 45% to 80%. The government will buy 250 domestic humanoids in 2027 and 1,080 by 2030 and distribute them to universities and state-run research institutes. The third is the component bottleneck. Actuators are described as a core component accounting for 40-60% of humanoid cost. It remains to be seen whether component makers such as Robotis, Samhyun, SPG and Higen RNM convert development into actual volume supply. As the Q3 filings show, however, the point at which revenue growth turns into profit has not yet been confirmed."
       },
       "risks": [
         {
           "title": {
-            "ko": "수익성 지연 리스크",
-            "en": "Delayed Profitability Risk"
+            "ko": "적자 지속과 수익성 개선 지연",
+            "en": "Persistent losses and delayed profit recovery"
           },
           "body": {
-            "ko": "레인보우로보틱스, 두산로보틱스, 삼현, 하이젠알앤엠, 유일로보틱스, 휴림로봇, 클로봇, 뉴로메카 등 다수 종목이 2026년 2분기에도 영업손실을 기록하며 매출 성장과 수익성 개선 사이의 간극이 이어지고 있다. 연구개발 투자가 지속되는 가운데 손익 개선 시점이 지연될 경우 밸류에이션 부담으로 이어질 수 있다.",
-            "en": "Many names, including Rainbow Robotics, Doosan Robotics, Samhyun, Higen RNM, Yuil Robotics, Hyulim Robot, Clobot, and Neuromeka, continued to post operating losses in the second quarter of 2026, reflecting a persistent gap between revenue growth and profitability improvement. If the timing of an earnings turnaround is delayed amid ongoing R&D spending, this could weigh on valuations."
+            "ko": "2026년 3분기 공시 기준으로 상위 12개 종목 가운데 9곳이 영업손실을 기록했다. 두산로보틱스는 매출 162억원에 영업손실 134억원으로 손실 규모가 매출에 근접했다. 매출 확대보다 연구개발비와 양산 준비비가 빠르게 늘면 손익 개선 시점이 늦어질 수 있다.",
+            "en": "In the Q3 2026 filings, 9 of the top 12 companies recorded operating losses. Doosan Robotics posted an operating loss of KRW 13.4 billion on revenue of KRW 16.2 billion, so the loss came close to the size of its revenue. If R&D and mass-production preparation costs grow faster than revenue, the point of profit recovery could be pushed back."
           }
         },
         {
           "title": {
-            "ko": "글로벌 경쟁 심화 리스크",
-            "en": "Intensifying Global Competition Risk"
+            "ko": "기대감 중심의 주가 변동성",
+            "en": "Expectation-driven share price volatility"
           },
           "body": {
-            "ko": "중국 업체들이 가격 경쟁력을 바탕으로 휴머노이드 시장에서 이미 높은 점유율을 확보한 것으로 분석되며, 테슬라·보스턴다이내믹스 등 글로벌 선두주자들의 양산 속도도 빠르게 높아지고 있다. 국내 기업들이 기술력과 양산 원가에서 뒤처질 경우 시장 점유율 확보가 어려워질 수 있다.",
-            "en": "Chinese manufacturers are assessed to have already secured a substantial share of the humanoid robot market on the back of price competitiveness, while global frontrunners such as Tesla and Boston Dynamics are also rapidly accelerating their production pace. If domestic firms fall behind in technology or mass-production cost efficiency, gaining market share could become more challenging."
+            "ko": "2026년 11월 17일에는 로보티즈가 적자 전환 소식에 8% 넘게 하락했고, 이튿날인 11월 18일에는 CES 기대감으로 로봇주가 일제히 반등했다. 이처럼 실적 발표와 행사 일정에 따라 주가가 크게 움직여 변동성이 높다. 로봇 수주가 일회성 개발 계약인지 반복 매출인지 구분해야 한다는 지적도 있다.",
+            "en": "On November 17, 2026, Robotis fell more than 8% on news of its swing to a loss, and on November 18 robotics stocks rebounded together on CES expectations. Share prices thus move sharply with earnings releases and event schedules, which keeps volatility high. There is also a view that one should distinguish whether robot orders are one-off development contracts or recurring revenue."
           }
         },
         {
           "title": {
-            "ko": "정책·보조금 의존 리스크",
-            "en": "Policy and Subsidy Dependence Risk"
+            "ko": "중국과의 경쟁 및 대외 규제 변수",
+            "en": "Competition from China and external regulatory variables"
           },
           "body": {
-            "ko": "로봇 업종은 제조혁신 지원사업, 서비스로봇 실증사업 등 정부 보조금 및 정책 과제에 대한 의존도가 상대적으로 높은 중소형 기업이 다수 포함돼 있다. 정책 예산 규모나 사업 방향이 변경될 경우 해당 기업들의 수주·실증 일정에 영향을 줄 수 있다.",
-            "en": "The sector includes numerous small and mid-cap companies that are relatively dependent on government subsidies and policy-driven programs such as manufacturing innovation support projects and service robot pilot programs. Changes in policy budget size or program direction could affect these companies' order intake and pilot project timelines."
+            "ko": "중국의 유니트리는 2025년 4,200대, 애지봇은 5,200여 대를 생산했고, 중국에는 완성형 휴머노이드 기업이 160곳, 핵심 부품 공급 기업이 600곳 이상 있다. 양산 규모에서 국내 기업이 열세라는 점은 부담이다. 한편 미국 상무부와 미국무역대표부가 2027년 상반기 무역확장법 제232조 기반의 로봇 부품 관세 부과안을 구체화할 것으로 관측된다. 이 안의 내용에 따라 국내 업체의 수혜 여부가 달라질 수 있다.",
+            "en": "China's Unitree produced 4,200 units and AgiBot more than 5,200 units in 2025, and China has 160 makers of complete humanoids and more than 600 suppliers of core components. The gap in mass-production scale is a burden for Korean companies. Separately, the US Commerce Department and the US Trade Representative are expected to firm up a robot-parts tariff proposal under Section 232 in the first half of 2027. Whether domestic companies benefit could depend on the content of that proposal."
           }
         }
       ],
       "sources": [
+        "https://www.mstoday.co.kr/news/articleView.html?idxno=200508",
+        "https://zdnet.co.kr/view/?no=20261029195515",
+        "https://www.hankyung.com/article/2026111725876",
+        "https://www.hankyung.com/article/202611185064i",
+        "https://www.hankyung.com/article/2026111855081",
+        "https://m.news.nate.com/view/20260827n32403",
+        "https://www.korea.kr/news/policyNewsView.do?newsId=148970725",
         "https://www.shinhangroup.com/kr/archive/insight/extend/detail/32871",
-        "https://www.koreabizreview.com/articles/kbr-analysis-kbr-research-notes-robot-20260619-33gp",
-        "https://m.sedaily.com/amparticle/20049026"
+        "https://www.job-post.co.kr/news/articleView.html?idxno=239268",
+        "https://view.asiae.co.kr/article/2026100612211838316"
       ],
       "sector": "로봇",
-      "generatedAt": "2026-10-08 19:06"
+      "generatedAt": "2026-11-21 18:05"
     },
     "조선": {
       "lead": {
-        "ko": "고선가 수주 물량의 매출 인식이 본격화되며 조선 3사를 중심으로 실적 레벨업이 뚜렷해진 업종이다.",
-        "en": "A sector marked by a clear earnings step-up centered on the top three shipbuilders, as high-priced order backlogs begin to flow through to recognized revenue."
+        "ko": "조선 업종은 2026년 3분기 공시에서 조선 대형 4사의 영업이익이 모두 전년 동기 대비 늘었고 수주잔고도 두터운 상태다. 다만 원화 강세와 시장 기대치 미달로 주가 변동성이 커진 업종이다.",
+        "en": "In Q3 2026 filings, all four large Korean shipbuilders posted year-on-year growth in operating profit, and their order backlogs remain thick. Even so, a strong won and results that fell short of market expectations have raised share-price volatility in the sector."
       },
       "overview": {
-        "ko": "조선업은 선박 건조와 해양플랜트, 선박엔진·기자재를 아우르는 자본집약적 수주산업으로, 계약 시점과 매출 인식 시점 사이에 2~3년의 시차가 존재하는 구조적 특징을 갖는다. 한국 증시에서는 전체 시장 대비 비중은 크지 않지만 HD현대중공업, 한화오션, HD한국조선해양, 삼성중공업 등 대형 조선사를 중심으로 시가총액이 집중돼 있다. 글로벌 신조선 시장에서 한국은 LNG운반선·초대형원유운반선 등 고부가 선종에서 중국과 함께 양강 체제를 형성하고 있다. 최근 몇 년간 이어진 수주 호황으로 조선 3사는 3~4년치 이상의 일감을 확보한 상태이며, 저선가 수주분 인도가 마무리되고 고선가 물량이 매출에 반영되는 국면으로 전환되고 있다. 엔진·기자재 업체와 블록 제작, 도장 등 협력사까지 포함하면 밸류체인 저변이 비교적 넓은 산업이다. 업황 사이클에 대한 민감도가 높아 해운 운임과 신조선가, 환율 변동이 실적에 직접적인 영향을 미친다.",
-        "en": "Shipbuilding is a capital-intensive, order-driven industry spanning vessel construction, offshore plants, and marine engines and equipment, with a structural time lag of two to three years between contract signing and revenue recognition. Within the Korean equity market the sector's overall weight is modest, but market capitalization is concentrated among large shipbuilders such as HD Hyundai Heavy Industries, Hanwha Ocean, HD Korea Shipbuilding & Offshore Engineering, and Samsung Heavy Industries. Globally, Korea forms a duopoly with China in high-value-added vessel categories such as LNG carriers and very large crude carriers. Following several years of robust ordering, the three major Korean shipbuilders have secured backlogs exceeding three to four years, and the industry is transitioning into a phase where previously low-priced orders have largely been delivered while high-priced contracts begin to flow through to revenue. Including engine and equipment makers as well as block fabrication and coating subcontractors, the value chain's base is relatively broad. The sector exhibits high sensitivity to the shipping cycle, with freight rates, newbuilding prices, and exchange rates directly affecting earnings."
+        "ko": "조선 업종은 상선·해양플랜트·특수선을 건조하는 완성선 업체와 엔진·블록·선실 같은 기자재 업체로 이뤄진다. 상장 종목 수는 업종 가운데 적은 편이고 전체 시장에서 차지하는 비중은 2% 안팎에 그친다. 시가총액은 HD현대중공업, HD한국조선해양, 삼성중공업, 한화오션 등 4개 대형사에 크게 쏠려 있다. 업종 실적은 수주 후 2~3년 뒤 인도 시점에 매출로 잡히는 구조여서, 수주잔고와 선가가 이익을 좌우한다. 원·달러 환율과 후판 가격, 조업일수도 분기 실적에 영향을 준다.",
+        "en": "The shipbuilding sector consists of yard operators that build commercial vessels, offshore plants and naval ships, plus suppliers of engines, blocks and deckhouses. It has relatively few listed companies and accounts for only around 2% of the overall market. Market capitalization is heavily concentrated in four large names: HD Hyundai Heavy Industries, HD Korea Shipbuilding & Offshore Engineering, Samsung Heavy Industries and Hanwha Ocean. Revenue is recognized at delivery, typically two to three years after an order is placed, so backlog and newbuilding prices drive earnings. The won-dollar exchange rate, steel plate prices and the number of working days also affect quarterly results."
       },
       "structure": {
-        "ko": "밸류체인 최상단에는 선박 설계와 건조를 담당하는 HD현대중공업, 한화오션, HD한국조선해양, 삼성중공업 등 대형 조선사가 위치하며 이들이 업종 시가총액의 대부분을 차지한다. 중간 단계에는 선박용 엔진과 발전설비를 공급하는 HD현대마린엔진, 한화엔진, STX엔진이 있으며, 하단에는 블록 제작과 기자재를 담당하는 현대힘스, 세진중공업, 케이프 등 중소형 협력사가 자리하며, 수에즈막스·아프라막스급 원유운반선을 건조하는 중형 조선사 대한조선도 업종에 속한다. 사후 서비스 영역에서는 HD현대마린솔루션이 선박 유지보수와 친환경 개조 사업을 영위하며 별도의 성장축을 형성하고 있다. 업종 내 집중도는 매우 높은 편이며, 대형 조선사를 제외한 중소형주는 개별 규모가 작다. 대형 조선사는 자체 엔진 계열사나 기자재 계열사를 보유해 수직계열화가 일부 진행돼 있으며, 이는 수주부터 인도까지의 공급 안정성에 영향을 미치는 요인이다.",
-        "en": "At the top of the value chain sit large shipbuilders responsible for vessel design and construction—HD Hyundai Heavy Industries, Hanwha Ocean, HD Korea Shipbuilding & Offshore Engineering, and Samsung Heavy Industries—which account for the bulk of the sector's market capitalization. The midstream includes marine engine and power generation equipment suppliers such as HD Hyundai Marine Engine, Hanwha Engine, and STX Engine, while the downstream comprises small and mid-cap subcontractors handling block fabrication and equipment, including Hyundai HYMS, Sejin Heavy Industries, and Cape Industries; Daehan Shipbuilding, a mid-sized yard building Suezmax and Aframax crude tankers, also belongs to the sector. In the aftermarket segment, HD Hyundai Marine Solution operates vessel maintenance and eco-friendly retrofit businesses, forming a separate growth axis. Concentration within the sector is quite high, and apart from the large shipbuilders, the small and mid-cap names are individually modest in scale. Large shipbuilders maintain some degree of vertical integration through affiliated engine and equipment subsidiaries, which is a factor affecting supply stability from order to delivery."
+        "ko": "HD한국조선해양은 HD현대 조선 부문의 중간지주사로, 실제 건조 능력은 연결 자회사가 대부분 갖고 있다. HD현대중공업은 상선과 함정을 포함한 조선 부문, 엔진기계 부문, 해양플랜트 부문으로 나뉘고, 삼성중공업은 상선과 해양 두 부문으로 나뉜다. 한화오션은 조선과 방산을 함께 영위하며, 대한조선은 선박 건조를 하는 중견 조선사다. 엔진 분야에서는 한화엔진과 HD현대마린엔진이 선박용 엔진을, 케이프가 저속 엔진용 실린더라이너를 만든다. 세진중공업은 데크하우스와 LPG·LCO2 운반선용 탱크를, 현대힘스는 선박 블록과 선박구성부분품을 공급한다. HD현대마린솔루션은 선박 부품·정비와 벙커링, 친환경 개조를 맡는 애프터마켓 기업이다.",
+        "en": "HD Korea Shipbuilding & Offshore Engineering is the intermediate holding company for HD Hyundai's shipbuilding business, and most actual building capacity sits with its consolidated subsidiaries. HD Hyundai Heavy Industries is divided into shipbuilding (including commercial vessels and naval ships), engine and machinery, and offshore plant segments, while Samsung Heavy Industries operates two segments, commercial vessels and offshore. Hanwha Ocean combines shipbuilding and defense, and Daehan Shipbuilding is a mid-sized yard. In engines, Hanwha Engine and HD-Hyundai Marine Engine make marine engines, and Cape Industries makes cylinder liners for low-speed engines. Sejin Heavy Industries supplies deckhouses and tanks for LPG and LCO2 carriers, and Hyundai Hyms supplies ship blocks and ship components. HD Hyundai Marine Solution is an aftermarket company covering ship parts and maintenance, bunkering and eco-friendly retrofits."
       },
       "trends": {
-        "ko": "2026년 2분기 공시 기준 HD한국조선해양은 매출 8조 9,270억원, 영업이익 1조 6,451억원을 기록하며 전년 동기 대비 각각 20.2%, 72.5% 증가했고, HD현대중공업과 한화오션도 영업이익이 각각 120.6%, 98.0% 늘어나는 등 대형 조선사 전반에서 가파른 이익 개선이 확인됐다. 이는 2022~2023년 고선가로 수주한 물량이 본격적으로 건조·인도 단계에 진입하면서 매출 질이 개선된 결과로 풀이된다. 중소형 기자재 업체 중에서는 HD현대마린엔진과 세진중공업이 두 자릿수 이상 영업이익 증가율을 보인 반면, STX엔진과 케이프는 영업이익이 감소하는 등 중소형주 간 실적 편차도 나타났다. 신조선가 지수는 꾸준한 상승세를 유지하고 있으며, 특히 17만 4,000㎥급 LNG운반선의 신조선가는 척당 2억 4,850만달러로 높은 수준을 유지하고 있다는 평가가 나온다. LNG운반선에 이어 초대형원유운반선(VLCC) 발주도 크게 늘면서 대형 조선사들은 3년 이상의 일감을 확보했다는 분석이 나온다.",
-        "en": "Based on second-quarter 2026 disclosures, HD Korea Shipbuilding & Offshore Engineering posted revenue of KRW 8.927 trillion and operating profit of KRW 1.6451 trillion, up 20.2% and 72.5% year-on-year respectively, while HD Hyundai Heavy Industries and Hanwha Ocean saw operating profit surge 120.6% and 98.0%, confirming a broad-based sharp earnings improvement among the major shipbuilders. This reflects improved revenue quality as orders contracted at high prices during 2022-2023 enter full-scale construction and delivery stages. Among smaller equipment makers, HD Hyundai Marine Engine and Sejin Heavy Industries posted double-digit or higher operating profit growth, while STX Engine and Cape saw operating profit decline, indicating performance divergence among smaller-cap names. The newbuilding price index has maintained a steady upward trend, with the price of a 174,000-cubic-meter LNG carrier assessed as holding firm at $248.5 million per vessel. Orders have broadened beyond LNG carriers to very large crude carriers (VLCCs), and analysts note that the major shipbuilders have secured backlogs of more than three years."
+        "ko": "2026년 3분기 공시 기준 영업이익 증가율은 HD현대마린솔루션 2.2%에서 HD현대마린엔진 197.2%까지 분포했다. 대형 4사는 HD현대중공업 61.4%, HD한국조선해양 37.3%, 삼성중공업 42.1%, 한화오션 67.6%로 모두 늘었다. 반면 STX엔진은 영업이익이 10.2% 줄었고 케이프는 영업손실 30억원으로 적자 전환했다. 3분기 실적이 원화 강세와 조업일수 감소로 시장 눈높이에 못 미쳤다는 분석이 나왔고, 조선주 4개사의 시가총액은 2026년 10월 한 달에만 약 36조원 줄었다. 수주 측면에서는 2026년 1~9월 전 세계 신규 선박 계약 금액이 2,051억달러로 2007년 같은 기간 수준을 넘어섰다. 1~9월 누적 가동률은 HD한국조선해양 조선부문 103.3%, 삼성중공업 98.9%, 한화오션 100%를 기록했다.",
+        "en": "In Q3 2026 filings, year-on-year growth in operating profit ranged from 2.2% at HD Hyundai Marine Solution to 197.2% at HD-Hyundai Marine Engine. Among the large four, it rose 61.4% at HD Hyundai Heavy Industries, 37.3% at HD Korea Shipbuilding & Offshore Engineering, 42.1% at Samsung Heavy Industries and 67.6% at Hanwha Ocean. By contrast, STX Engine's operating profit fell 10.2%, and Cape Industries swung to an operating loss of KRW 3.0 billion. Analysts said Q3 results fell short of market expectations because of a strong won and fewer working days. The combined market capitalization of four shipbuilders fell by about KRW 36 trillion in October 2026 alone. On orders, global newbuilding contracts in January–September 2026 reached USD 205.1 billion, exceeding the level of the same period in 2007. Cumulative January–September utilization was 103.3% at HD Korea Shipbuilding's shipbuilding segment, 98.9% at Samsung Heavy Industries and 100% at Hanwha Ocean."
       },
       "outlook": {
-        "ko": "조선업은 노후선 교체 수요와 환경 규제 대응을 위한 친환경 선박 발주가 겹치면서 LNG운반선과 VLCC를 중심으로 한 고부가 선종 발주 흐름이 지속될 것으로 관측된다. 미국과 카타르 등지의 LNG 생산시설 확충으로 2027년 이후 인도될 예정인 LNG선만 260척이 넘는다. 건조 물량 대부분이 한국과 중국에 몰려 있어 선박이 제때 확보되지 않으면 가스 공급 확대 일정에도 차질이 생길 수 있다는 분석이 나오는 만큼, 당분간 도크 확보 경쟁이 이어질 가능성이 있다. 국내 조선사들의 2029년 인도 슬롯 상당 부분이 이미 소진된 상태로, 잔여 슬롯을 둘러싼 선주들의 경쟁이 선가 강세를 뒷받침하는 구조가 유지되고 있다. 다만 일부 기관에서는 글로벌 발주 심리 위축과 탈탄소 규제 일정 지연을 이유로 중기 수주 둔화 가능성을 제기하고 있어, 발주 사이클의 지속성과 선종 구조 변화 여부가 향후 관전 포인트로 꼽힌다. 후판 가격과 환율은 당분간 수익성을 좌우할 변수로 꼽힌다.",
-        "en": "The sector is expected to see continued high-value-added vessel ordering centered on LNG carriers and VLCCs, driven by both aging fleet replacement demand and environmental regulation-driven green vessel orders. With more than 260 LNG carriers slated for delivery after 2027 and most construction capacity concentrated in Korea and China, there is a possibility that dock competition will persist for some time, as any delay in securing vessels could disrupt broader gas supply expansion schedules. A substantial portion of domestic shipbuilders' 2029 delivery slots has already been filled, sustaining a structure in which competition among shipowners for remaining slots underpins firm newbuilding prices. However, some institutions have raised the possibility of a medium-term order slowdown, citing weakening global ordering sentiment and delays in decarbonization regulatory timelines, making the durability of the ordering cycle and shifts in vessel-type composition key points to monitor going forward. Steel plate prices and exchange rates are expected to remain key swing factors for profitability for the time being."
+        "ko": "2026년 9월 말 수주잔고는 HD한국조선해양 조선부문 72조 3,617억원, 삼성중공업 34조 9,024억원, 한화오션 31조 7,066억원으로 수년 치 일감이 확보돼 있다. 2026년 1~10월 세계 대형 LNG 운반선 발주 76척 가운데 국내 조선사가 44척을 수주해 57.9%의 점유율을 기록했다. 메리츠증권은 2027~2028년에는 북미 LNG 투자 확대에 따른 가스선 발주, 선가 상승, 고선가 수주잔고의 실적 반영이 핵심이라고 분석했다. 신조선가지수는 2026년 10월 30일 기준 187.20으로 전주 대비 0.51포인트 올랐다. 한화엔진의 2026년 3분기 누적 신규 수주 2조 7,973억원 가운데 선박엔진이 2조 5,957억원이어서, 엔진 업체로도 선박 발주 효과가 이어지는 점이 관전 포인트다. 미국 조선 협력 프로젝트 MASGA의 후속 사업이 실제 발주로 구체화되는 시점도 지켜볼 대목이다.",
+        "en": "At the end of September 2026, order backlogs stood at KRW 72.3617 trillion at HD Korea Shipbuilding's shipbuilding segment, KRW 34.9024 trillion at Samsung Heavy Industries and KRW 31.7066 trillion at Hanwha Ocean, securing work for several years. Of 76 large LNG carriers ordered worldwide in January–October 2026, Korean yards won 44, a 57.9% share. Meritz Securities said that in 2027–2028 the key factors are gas carrier orders from North American LNG investment, rising prices, and the earnings impact of high-priced backlog. The newbuilding price index stood at 187.20 as of October 30, 2026, up 0.51 points from the previous week. At Hanwha Engine, marine engines accounted for KRW 2.5957 trillion of KRW 2.7973 trillion in new orders in the first nine months of 2026, so engine makers are also benefiting from ship orders. Another point to watch is when follow-up projects under the MASGA US shipbuilding cooperation initiative turn into actual orders."
       },
       "risks": [
         {
           "title": {
-            "ko": "글로벌 발주 사이클 둔화 가능성",
-            "en": "Potential slowdown in the global ordering cycle"
+            "ko": "원화 강세와 수익성 시차",
+            "en": "Strong won and profit lag"
           },
           "body": {
-            "ko": "일부 기관은 해운 시황 회복 지연과 탈탄소 규제 일정 불확실성을 근거로 중기 발주 감소 가능성을 제기하고 있다. 현재 조선사들은 3~4년치 일감을 확보해 즉각적인 충격은 제한적이지만, 수주 공백이 장기화될 경우 중기 실적에 영향을 줄 수 있다.",
-            "en": "Some institutions point to delayed shipping market recovery and uncertainty over decarbonization regulatory timelines as grounds for a potential medium-term decline in orders. Shipbuilders currently hold three to four years of backlog, limiting immediate impact, but a prolonged ordering gap could affect medium-term earnings."
+            "ko": "2026년 3분기 실적은 원화 강세와 조업일수 감소로 시장 기대에 못 미쳤다는 평가를 받았다. 삼성중공업은 3분기 영업이익이 전년 동기 대비 42.1% 늘었지만 시장 컨센서스에는 3.1% 미달했다. 선가 상승은 계약 단계에서 정해지므로 수주 시점, 원가, 환율 헤지, 건조 일정에 따라 실제 수익성 반영에 시차가 생긴다.",
+            "en": "Q3 2026 results were seen as falling short of market expectations because of the strong won and fewer working days. Samsung Heavy Industries' Q3 operating profit rose 42.1% year on year but came in 3.1% below the market consensus. Because price increases are set at contract signing, the timing of order, costs, currency hedging and build schedules create a lag before profitability actually shows."
           }
         },
         {
           "title": {
-            "ko": "중국 조선업과의 경쟁 구도",
-            "en": "Competitive dynamics with Chinese shipbuilders"
+            "ko": "중국 경쟁과 미국 사업 불확실성",
+            "en": "Chinese competition and US project uncertainty"
           },
           "body": {
-            "ko": "중국은 가격 경쟁력을 바탕으로 신조선 시장 점유율을 확대해왔으며, 최근 도크 포화로 선별 수주로 전환하는 모습을 보이고 있다. 다만 중국의 전략 변화가 지속되지 않을 경우 한국 조선사와의 선가·수주 경쟁이 다시 심화될 가능성이 있다.",
-            "en": "China has expanded its newbuilding market share on the back of price competitiveness and has recently shown signs of shifting toward selective ordering amid dock saturation. However, if this strategic shift does not persist, price and order competition with Korean shipbuilders could intensify again."
+            "ko": "중국의 LNG선 추격과 미국 함정 사업 지연 우려가 장기 성장 기대를 낮추고 있다는 분석이 있다. 메리츠증권도 미국 군함과 부유식 데이터센터 수주에는 정책·계약 불확실성이 남아 있다고 짚었다. 이들 사업이 지연되면 신성장동력에 대한 시장 기대가 조정될 수 있다.",
+            "en": "Analysts say concerns over Chinese catch-up in LNG carriers and delays in US naval projects are lowering long-term growth expectations. Meritz Securities also noted that policy and contract uncertainty remains for US warship and floating data center orders. Delays in these projects could force a reassessment of market expectations for new growth drivers."
           }
         },
         {
           "title": {
-            "ko": "투입 비용·환율 변동성",
-            "en": "Input cost and exchange rate volatility"
+            "ko": "노사 갈등과 해외 생산 리스크",
+            "en": "Labor disputes and overseas production risk"
           },
           "body": {
-            "ko": "후판 가격과 환율은 조선사 수익성에 직접적인 영향을 미치는 변수로, 최근에는 후판 유통가 인상 움직임과 인건비 상승 요구 등이 일부 거론되고 있다. 이러한 비용 변동이 누적되면 고선가 수주 물량의 마진 개선 효과가 일부 상쇄될 수 있다.",
-            "en": "Steel plate prices and exchange rates are variables that directly affect shipbuilder profitability, with recent reports of rising steel plate distribution prices and labor cost pressures. If such cost pressures accumulate, they could partially offset the margin improvement effect from high-priced order backlogs."
+            "ko": "업계에서는 노사 갈등과 원화 강세가 장기화하면 기존 수주 물량의 채산성이 낮아질 수 있다고 본다. 미국 진출은 높은 인건비와 숙련 인력 부족, 근로 문화 차이 등으로 생산성 리스크가 상존한다는 평가를 받는다. 중소형 기자재 업체는 STX엔진의 영업이익 감소와 케이프의 적자 전환에서 보듯 실적 편차도 크다.",
+            "en": "Industry sources say that if labor disputes and the strong won persist, the profitability of existing orders could decline. Expansion into the US faces persistent productivity risks from high labor costs, a shortage of skilled workers and differences in work culture. Smaller equipment suppliers also show wide earnings dispersion, as seen in STX Engine's lower operating profit and Cape Industries' swing to a loss."
           }
         }
       ],
       "sources": [
-        "https://www.fnnews.com/news/202608141014526944",
-        "https://www.g-enews.com/article/Global-Biz/2026/10/2026100801284652170c8c1c064d_1"
+        "https://www.hankyung.com/article/202610294054i",
+        "https://www.newspim.com/news/view/20261102000307",
+        "https://www.g-enews.com/article/Industry/2026/11/20261117144513372924debea800_1",
+        "https://www.mt.co.kr/industry/2026/11/15/2026111313442274003",
+        "https://finance.thesmileinfo.com/2026/11/shipbuilding.html",
+        "https://www.thepublic.kr/news/articleView.html?idxno=321400",
+        "https://www.biztribune.co.kr/news/articleView.html?idxno=346661"
       ],
       "sector": "조선",
-      "generatedAt": "2026-10-08 18:29"
+      "generatedAt": "2026-11-21 18:05"
     },
     "2차전지": {
       "lead": {
-        "ko": "전기차 수요 둔화와 ESS(에너지저장장치) 고성장이 교차하는 전환기에 있는 업종으로, 셀 업체 간 실적 차이가 뚜렷하다.",
-        "en": "The battery sector stands at an inflection point where slowing EV demand intersects with rapid ESS growth, with earnings diverging among the major cell makers."
+        "ko": "전기차 수요 둔화 속에서도 에너지저장장치(ESS)가 배터리 셀 업체의 새로운 실적 동력으로 떠올랐고, 소재 업체는 업체별 실적이 엇갈리는 업종이다.",
+        "en": "Energy storage systems (ESS) have emerged as a new earnings driver for battery cell makers despite softer EV demand, while results among materials companies remain divergent."
       },
       "overview": {
-        "ko": "2차전지 업종은 전기차와 에너지저장장치(ESS)에 들어가는 리튬이온 배터리 셀과 양극재·음극재·분리막·전해질 등 핵심 소재를 생산하는 기업들로 구성된다. 한국 증시에서는 셀 제조사인 LG에너지솔루션과 삼성SDI가 업종 시가총액의 대부분을 차지하며, 포스코퓨처엠·에코프로비엠 등 소재 기업들이 그 뒤를 잇는 구조다. 글로벌 배터리 공급망에서 한국 업체들은 상위권 점유율을 유지해 왔으나 최근 들어 중국 업체와의 경쟁이 심화되고 있다. 업종 전반이 2024~2025년 전기차 수요 정체(캐즘)의 영향을 받았으며, 2026년에도 지역별·제품별 수요 편차가 지속되고 있다. 상장 종목 수는 많지 않지만 셀 제조사의 비중이 압도적이어서 업종 내 쏠림이 큰 편이다.",
-        "en": "The battery sector comprises lithium-ion cell manufacturers and makers of core materials such as cathodes, anodes, separators, and electrolytes used in electric vehicles and energy storage systems (ESS). On the Korean exchange, cell makers LG Energy Solution and Samsung SDI account for the bulk of sector market capitalization, followed by materials companies such as POSCO Future M and Ecopro BM. Korean battery makers have historically held leading positions in the global supply chain, though competition from Chinese rivals has intensified recently. The sector as a whole was affected by the 2024-2025 EV demand slowdown often described as a 'chasm,' and regional and product-level demand divergence has persisted into 2026. While the number of listed names is limited, the dominance of cell makers creates significant concentration within the sector."
+        "ko": "2차전지 업종은 전기차와 ESS에 들어가는 배터리 셀, 그리고 양극재·음극재·분리막·전지박 같은 소재를 만드는 기업군이다. 상장 종목 수는 업종 가운데 적은 편이지만 시가총액은 일부 대형주에 크게 쏠려 있다. LG에너지솔루션과 삼성SDI 두 셀 업체가 업종 시가총액의 과반을 차지하고, 포스코퓨처엠과 에코프로비엠이 그 뒤를 잇는다. 실적은 전기차 수요, 리튬 등 메탈 가격, 환율, 미국 정책에 민감하게 움직이는 특성이 있다. 다만 금양은 발포제를 만드는 정밀화학 기업이고 비츠로셀은 리튬일차전지 전문 제조사여서, 전기차 사이클과 거리가 있는 종목도 함께 분류돼 있다.",
+        "en": "The secondary battery sector comprises makers of the battery cells used in EVs and ESS, together with materials suppliers such as cathode, anode, separator and battery foil producers. It has relatively few listed companies, but its market capitalization is heavily concentrated in a handful of large caps. LG Energy Solution and Samsung SDI, the two cell makers, account for more than half of the sector's market value, followed by POSCO Future M and Ecopro BM. Earnings are highly sensitive to EV demand, metal prices such as lithium, exchange rates and U.S. policy. However, Kumyang is a fine chemicals company that makes blowing agents and Vitzrocell is a specialist in lithium primary batteries, so some constituents sit apart from the EV cycle."
       },
       "structure": {
-        "ko": "밸류체인은 리튬·니켈 등 원자재 확보, 양극재·음극재 등 소재 제조, 배터리 셀 생산, 완성차·ESS용 공급의 단계로 이어진다. 최상단 셀 부문은 LG에너지솔루션과 삼성SDI가 대표하며, 양사는 전기차용 파우치형·각형 셀뿐 아니라 ESS용 셀로 사업 비중을 빠르게 확대하고 있다. 양극재는 포스코퓨처엠·에코프로비엠·엘앤에프·코스모신소재가, 실리콘 음극재는 대주전자재료가, 분리막은 SK아이이테크놀로지가 맡는 구조다. 전구체·리사이클링 영역에는 에코프로머티가, 동박에는 롯데에너지머티리얼즈가 위치하며, 비츠로셀은 산업용 특수전지, LS머트리얼즈는 울트라커패시터와 알루미늄 부품을 생산한다. 전반적으로 셀 제조사를 정점으로 한 수직적 밸류체인이 형성돼 있고, 소재 기업들의 실적은 셀 업체의 가동률과 수주 흐름에 연동되는 경향이 강하다.",
-        "en": "The value chain runs from raw material sourcing (lithium, nickel), through cathode and anode material production, to cell manufacturing, and finally supply to automakers and ESS integrators. At the top, LG Energy Solution and Samsung SDI represent the cell segment, both rapidly expanding ESS-dedicated cell lines alongside their traditional pouch and prismatic EV cells. Cathode materials are supplied by POSCO Future M, Ecopro BM, L&F, and Cosmo AM&T, silicon anode materials by Daejoo Electronic Materials, and separators by SK IE Technology. Ecopro Materials operates in precursor and recycling, Lotte Energy Materials in copper foil, Vitzrocell in specialty industrial batteries, and LS Materials in ultracapacitors and aluminum components. Overall, the chain is vertically organized around the two major cell makers, and materials suppliers' performance tends to closely track cell makers' utilization rates and order momentum."
+        "ko": "셀 단계에는 전기차용 파우치·원통형 배터리와 ESS를 두 축으로 하는 LG에너지솔루션, 배터리와 전자재료 부문으로 나뉘는 삼성SDI가 있다. 양극재에서는 포스코퓨처엠(배터리소재와 기초소재 부문), 에코프로비엠, 엘앤에프가 중심이고, 코스모신소재는 양극재와 MLCC용 이형필름을 함께 만든다. 음극재와 도전재 쪽에서는 대주전자재료가 실리콘 음극재와 전도성 페이스트를 생산한다. 롯데에너지머티리얼즈는 전지박과 회로박, SK아이이테크놀로지는 리튬이온 배터리용 분리막을 주력으로 하고, 에코프로머티는 2차전지 소재 기업이다. 소재사는 특정 셀 고객에 대한 의존도가 높은 편이어서, 엘앤에프는 2026년 상반기 매출의 86.7%가 LG에너지솔루션에서 발생했다.",
+        "en": "At the cell stage, LG Energy Solution builds its business on EV batteries (pouch and cylindrical) and ESS, while Samsung SDI is split into battery and electronic materials divisions. In cathodes, POSCO Future M (battery materials and basic materials divisions), Ecopro BM and L&F are the core names, and Cosmo Advanced Materials & Technology makes cathode materials alongside release film for MLCCs. In anodes and conductive materials, Daejoo Electronic Materials produces silicon anode material and conductive paste. Lotte Energy Materials focuses on battery foil and circuit foil, SK ie technology on lithium-ion battery separators, and Ecopro Materials is a secondary battery materials company. Materials makers tend to depend heavily on specific cell customers: 86.7% of L&F's first-half 2026 revenue came from LG Energy Solution."
       },
       "trends": {
-        "ko": "2026년 2분기 실적은 업종 내 명암이 뚜렷하게 갈렸다. LG에너지솔루션은 매출이 전년 동기 대비 35.8% 늘었으나 영업이익은 77.0% 급감했고, 포스코퓨처엠·엘앤에프·코스모신소재 등은 외형 성장과 함께 이익도 개선된 반면 에코프로비엠·롯데에너지머티리얼즈·SK아이이테크놀로지는 매출 감소나 적자 지속을 겪었다. 삼성SDI는 매출 18.5% 증가와 함께 영업이익 흑자 전환을 기록해 셀 업체 중 상대적으로 견조한 실적을 보였다. 업황 측면에서는 미국의 전기차 보조금 축소와 정책 후퇴로 북미 전기차 수요가 위축된 반면, 미국 시장에서 ESS는 재생에너지의 간헐성을 보완하고 AI 데이터센터의 급격한 전력 수요를 감당하는 핵심 인프라로 부각되며 북미 ESS 수주도 급증하고 있다. 실제로 에너지저장장치(ESS) 부문은 빠른 속도로 주력 사업으로 올라서고 있으며 신재생에너지 발전 투자 확대와 AI 데이터센터 증설 수요가 맞물리면서 ESS 배터리 출하량이 늘고 있다.",
-        "en": "Second-quarter 2026 results revealed a clear divergence within the sector. LG Energy Solution's revenue grew 35.8% year-on-year, but operating profit plunged 77.0%, while POSCO Future M, L&F, and Cosmo AM&T posted both revenue and profit improvement, in contrast to Ecopro BM, Lotte Energy Materials, and SK IE Technology, which saw declining sales or continued losses. Samsung SDI turned operating profit positive alongside 18.5% revenue growth, posting relatively solid results among the cell makers. On the demand side, U.S. EV incentive cutbacks and policy retrenchment have weighed on North American EV demand, even as ESS has emerged as critical infrastructure in the U.S. market, buffering renewable energy intermittency and meeting surging AI data center power demand, driving a sharp rise in North American ESS orders. Indeed, ESS has rapidly become a core business pillar as expanding renewable energy investment and AI data center buildouts combine to lift ESS battery shipment volumes."
+        "ko": "LG에너지솔루션은 2026년 3분기 영업이익 7,560억원을 기록했고, ESS 출하량 증가가 실적 개선에 크게 기여했다. 북미 생산 보조금 4,169억원을 제외한 영업이익은 3,391억원이다. 삼성SDI는 영업이익 4,078억원으로 흑자 전환했으며, ESS와 배터리백업유닛 판매 확대가 개선을 이끌었다. 소재 쪽에서는 포스코퓨처엠의 영업이익 821억원에 양극재 판매 회복과 판매가격 상승, 고객사 보상금이 반영됐다. 에코프로비엠은 2025년 3분기에 일회성 수익 508억원이 반영된 기저효과로 영업이익이 120억원, 전년 동기 대비 76.2% 감소했다. 엘앤에프는 원재료 가격 하락에 따른 재고자산평가손실 426억원이 발생해 영업손실 265억원으로 적자 전환했다.",
+        "en": "LG Energy Solution posted operating profit of KRW 756.0 billion in the third quarter of 2026, and higher ESS shipments contributed significantly to the improvement. Excluding KRW 416.9 billion of North American production credits, operating profit was KRW 339.1 billion. Samsung SDI returned to profit with operating profit of KRW 407.8 billion, driven by higher sales of ESS and battery backup units. In materials, POSCO Future M's operating profit of KRW 82.1 billion reflected recovering cathode sales, higher selling prices and customer compensation. Ecopro BM faced a high base, as one-off gains of KRW 50.8 billion were booked in the third quarter of 2025, and its operating profit fell 76.2% year on year to KRW 12.0 billion. L&F booked KRW 42.6 billion in inventory valuation losses on lower raw material prices and swung to an operating loss of KRW 26.5 billion."
       },
       "outlook": {
-        "ko": "향후 업황의 핵심 변수는 ESS 사업이 전기차 수요 공백을 얼마나 메울 수 있는지 여부다. 미국 ESS 시장은 AI 데이터센터 전력 수요 증가로 2025년 90GWh에서 2030년 160GWh까지 성장할 전망이며, 국내 셀 업체들은 북미 현지 생산능력 확충을 통해 이 성장을 흡수하려 하고 있다. 다만 전기차 수요의 빈자리를 채워줄 것으로 기대되는 ESS 시장 역시 전체 배터리 수요에서 차지하는 비중이 약 20% 수준에 불과해 전기차 공백을 완전히 대체하기에는 구조적 한계가 있다는 지적도 있다. 유럽에서는 CO2 규제 강화와 보조금 재개로 전기차 수요가 상대적으로 양호한 흐름을 보이고 있어 지역별 수요 편차가 당분간 지속될 가능성이 있다. 소재 기업들은 ESS용 LFP 양극재 전환, 고객사 다변화, 가동률 회복 속도가 실적의 관건이 될 전망이며, 셀 업체의 수주 모멘텀이 하위 밸류체인 실적에 시차를 두고 반영되는 구조가 이어질 것으로 보인다.",
-        "en": "The key variable going forward is whether ESS can sufficiently offset the demand gap left by slowing EV growth. The U.S. ESS market is expected to expand from 90GWh in 2025 to 160GWh by 2030 on the back of rising AI data center power demand, and domestic cell makers are seeking to capture this growth by expanding North American production capacity. However, some analysts note that ESS, while expected to fill the EV demand gap, still accounts for only about 20% of total battery demand, leaving structural limits to how fully it can substitute for EV volume. In Europe, tightened CO2 regulations and renewed subsidies have supported relatively resilient EV demand, suggesting regional demand divergence may persist for some time. For materials companies, the pace of conversion to ESS-grade LFP cathodes, customer diversification, and utilization rate recovery will likely determine performance, with cell makers' order momentum continuing to filter through to downstream value chain results with a time lag."
+        "ko": "ESS 수요는 중기 성장 동인으로 꼽힌다. LG에너지솔루션의 3분기 말 ESS 수주잔고는 160GWh 수준이며, 현재 계획된 생산능력 기준으로 2028년까지의 물량은 대부분 확정된 상태다. 삼성SDI는 2026년 ESS 배터리 수주 60GWh 이상을 확보했다. LG에너지솔루션은 북미 ESS 생산능력을 2026년 말 50GWh 이상에서 2027년 말 70GWh 이상으로 늘릴 계획이다. 소재에서는 리튬인산철(LFP) 양극재가 관전 포인트로, 포스코퓨처엠은 2026년 9월 SK온과 1조 742억원, 10월 삼성SDI와 6조 515억원 규모의 LFP 양극재 공급계약을 맺었다. 국내에서는 제3차 ESS 중앙계약시장 물량이 1,180MW이고, 우선협상대상사업자는 11월 중 발표될 예정이다.",
+        "en": "ESS demand is regarded as the medium-term growth driver. LG Energy Solution's ESS order backlog stood at around 160GWh at the end of the third quarter, and volumes through 2028 are largely confirmed on currently planned capacity. Samsung SDI has secured more than 60GWh of ESS battery orders in 2026. LG Energy Solution plans to lift North American ESS capacity from over 50GWh at the end of 2026 to over 70GWh by the end of 2027. In materials, lithium iron phosphate (LFP) cathodes are a key area to watch, as POSCO Future M signed LFP cathode supply contracts worth KRW 1.0742 trillion with SK On in September and KRW 6.0515 trillion with Samsung SDI in October 2026. In Korea, the third ESS central contract market totals 1,180MW, with preferred bidders due to be announced in November."
       },
       "risks": [
         {
           "title": {
-            "ko": "미국 정책·관세 불확실성",
-            "en": "U.S. Policy and Tariff Uncertainty"
+            "ko": "일회성 요인 의존과 수익성 변동",
+            "en": "Reliance on one-off items and earnings volatility"
           },
           "body": {
-            "ko": "미국의 전기차 보조금 축소와 친환경 정책 후퇴는 북미 전기차용 배터리 수요에 직접적인 영향을 미치고 있다. 동시에 중국산 배터리에 대한 관세 변화나 첨단제조생산세액공제(AMPC) 등 보조금 제도의 지속 여부도 실적 변동성을 키우는 요인이다.",
-            "en": "U.S. cutbacks in EV purchase incentives and the broader retreat from green policy are directly weighing on North American EV battery demand. At the same time, changes in tariffs on Chinese batteries and the continuity of incentive programs such as the Advanced Manufacturing Production Credit (AMPC) add further volatility to earnings."
+            "ko": "3분기 실적에는 보조금과 고객사 보상금 같은 일회성 요인이 포함돼 있다. LG에너지솔루션은 4분기 ESS 출하량이 전분기 대비 약 40% 늘 것으로 보면서도 수익성은 일부 둔화가 불가피하다고 밝혔다. 포스코퓨처엠은 보상금 덕에 영업이익이 늘었으나 본업 수익성 개선은 미미하다는 평가를 받는다.",
+            "en": "Third-quarter results include one-off items such as subsidies and customer compensation. LG Energy Solution expects fourth-quarter ESS shipments to rise about 40% from the prior quarter, but said some slowdown in profitability is unavoidable. POSCO Future M's operating profit rose on compensation, while improvement in its core profitability is seen as minimal."
           }
         },
         {
           "title": {
-            "ko": "전기차·ESS 간 수요 불균형",
-            "en": "Demand Imbalance Between EV and ESS"
+            "ko": "중국 업체의 ESS 공세와 점유율 하락",
+            "en": "Chinese ESS push and share erosion"
           },
           "body": {
-            "ko": "ESS 수요가 빠르게 늘고 있지만 전체 배터리 수요에서 차지하는 비중은 아직 제한적이어서 전기차 수요 공백을 완전히 메우기 어렵다는 지적이 있다. ESS로의 사업 재편 속도가 예상보다 더디거나 수익성이 기대에 못 미칠 경우 셀·소재 업체의 실적 회복 시점이 지연될 수 있다.",
-            "en": "While ESS demand is growing rapidly, its share of total battery demand remains limited, raising concerns that it cannot fully offset the EV demand shortfall. If the pace of business realignment toward ESS proves slower than expected or profitability falls short, the earnings recovery timeline for cell and materials makers could be delayed."
+            "ko": "CATL은 약 25%인 ESS 매출 비중을 2030년 50%까지 높일 계획이다. EVE에너지의 2026년 3분기 누적 ESS 배터리 출하량은 67.52GWh로 전년 동기 대비 39.5% 늘었다. 소재 분야에서도 2026년 1~9월 전기차용 양극재 적재량 기준 한국계 공급사 점유율은 12.1%에서 9.1%로 낮아졌다.",
+            "en": "CATL plans to raise ESS to 50% of its revenue by 2030 from about 25% now. EVE Energy's cumulative ESS battery shipments in the first nine months of 2026 reached 67.52GWh, up 39.5% year on year. In materials as well, the share of Korean suppliers in EV cathode loadings fell from 12.1% to 9.1% in January to September 2026."
           }
         },
         {
           "title": {
-            "ko": "업체 간 실적 양극화 및 중국 경쟁",
-            "en": "Earnings Divergence and Competition from Chinese Rivals"
+            "ko": "전기차 수요·원재료 가격·환율 변수와 적자 기업",
+            "en": "EV demand, raw material prices, FX and loss-making companies"
           },
           "body": {
-            "ko": "2026년 2분기 실적에서 확인되듯 업종 내 종목 간 매출·이익 흐름의 편차가 크며, 일부 소재 기업은 매출 감소나 적자가 지속되고 있다. 동시에 중국 배터리·소재 업체와의 가격 경쟁 심화는 한국 업체들의 점유율과 수익성에 지속적인 압박 요인으로 작용할 수 있다.",
-            "en": "As confirmed by second-quarter 2026 results, revenue and profit trends vary significantly across names within the sector, with some materials companies continuing to post declining sales or sustained losses. At the same time, intensifying price competition from Chinese battery and materials makers remains an ongoing pressure on the market share and profitability of Korean companies."
+            "ko": "엘앤에프는 3분기에 환율 하락으로 약 220억원의 손실도 반영했다. 2025년 10월 보조금 중단 여파로 미국 전기차 판매는 2026년 들어 30%대 역성장을 이어간 것으로 분석됐다. 공시 기준 3분기 영업손실 기업은 엘앤에프, 롯데에너지머티리얼즈, 에코프로머티, SK아이이테크놀로지이고, 금양도 2026년 1분기 적자였다.",
+            "en": "L&F also booked a loss of about KRW 22.0 billion in the third quarter from a weaker exchange rate. After U.S. subsidies ended in October 2025, U.S. EV sales were reported to be contracting by around 30% in 2026. Per filings, L&F, Lotte Energy Materials, Ecopro Materials and SK ie technology posted third-quarter operating losses, and Kumyang also recorded a loss in the first quarter of 2026."
           }
         }
       ],
       "sources": [
-        "https://magazine.hankyung.com/business/article/202512031412b",
-        "http://www.ftoday.co.kr/news/articleView.html?idxno=357417",
-        "https://www.shinhangroup.com/kr/archive/insight/extend/detail/32860",
-        "https://m.ekn.kr/view.php?key=20251229024482667"
+        "https://m.news.nate.com/view/20261103n27248",
+        "https://www.newsway.co.kr/news/view?ud=2026102715545767120",
+        "https://www.g-enews.com/article/Industry/2026/11/202611021448455282139bf6e4b2_1",
+        "https://newsway.co.kr/news/view?ud=2026110516381766027",
+        "https://www.ddaily.co.kr/page/view/2026110517512657224",
+        "https://biz.newdaily.co.kr/site/data/html/2026/11/04/2026110400164.html",
+        "https://dailian.co.kr/news/view/1717295/1%EC%B0%A8-%EC%82%BC%EC%84%B1SDI-2%EC%B0%A8-SK%EC%98%A82%EC%A1%B0%EC%9B%90-E-2026",
+        "https://www.thebigdata.co.kr/view.php?ud=2026110614524559910ecbf9426b_23",
+        "https://feat.page/nhsec/secondary-battery-2026-h2"
       ],
       "sector": "2차전지",
-      "generatedAt": "2026-10-08 18:49"
+      "generatedAt": "2026-11-21 18:12"
     },
     "정유": {
       "lead": {
-        "ko": "중동발 공급 차질로 정제마진이 사상 최고 수준까지 치솟으며 2분기 실적이 큰 폭으로 개선됐으나, 유가 안정화와 가격 규제 변수에 따라 하반기 이익 흐름의 지속 여부가 관건인 업종이다.",
-        "en": "Refining margins surged to historic highs amid Middle East supply disruptions, driving a sharp earnings recovery in the second quarter, though the sector's outlook for the second half hinges on oil price stabilization and regulatory variables."
+        "ko": "정유 4사의 2026년 3분기 합산 영업이익은 4조 6,581억원으로 전년 동기의 9,296억원보다 크게 늘었다. 이 이익은 상장사 가운데 SK이노베이션과 S-Oil에 집중돼 있고, 나머지 소형주는 윤활유·특수유 중심으로 실적이 엇갈리는 업종이다.",
+        "en": "The four domestic refiners posted combined operating profit of KRW 4.6581 trillion in the third quarter of 2026, up sharply from KRW 929.6 billion a year earlier. Those earnings are concentrated in SK Innovation and S-Oil, while the smaller listed names, centered on lubricants and specialty oils, show mixed results."
       },
       "overview": {
-        "ko": "정유업은 원유를 정제해 휘발유·경유·항공유 등 석유제품과 윤활기유를 생산·판매하는 장치산업으로, 국제유가와 정제마진이라는 외생 변수에 실적이 크게 좌우되는 대표적 경기민감 업종이다. 한국 증시에서 정유 업종은 상장 종목 수가 많지 않고 전체 시장에서 차지하는 비중도 크지 않지만, SK이노베이션과 S-Oil 등 대형 정유사가 국가 에너지 안보와 수출 비중이 높은 석유제품 산업을 대표한다. 설비투자 규모가 막대하고 신규 진입장벽이 높아 소수 대형사 중심의 과점 구조가 오랫동안 유지되어 왔다. 최근에는 정유 본업 외에 윤활기유, 석유화학, 배터리 소재 등으로 사업 다각화가 진행되며 업종 내 기업별 포트폴리오 차이가 실적 변동성에 영향을 미치고 있다.",
-        "en": "The refining industry is a capital-intensive process industry that refines crude oil into petroleum products such as gasoline, diesel, and jet fuel along with lubricant base oil, making its earnings highly sensitive to exogenous variables like international oil prices and refining margins. On the Korean stock market, the refining sector has a relatively small number of listed companies and a modest share of total market capitalization, yet large refiners such as SK Innovation and S-Oil represent an industry central to national energy security and export-driven petroleum products. High capital expenditure requirements and steep entry barriers have long sustained an oligopolistic structure dominated by a few major players. More recently, diversification beyond core refining into lubricant base oil, petrochemicals, and battery materials has progressed, causing portfolio differences among companies to increasingly influence earnings volatility within the sector."
+        "ko": "정유 업종은 원유를 정제해 휘발유·경유 등 석유제품과 윤활기유를 만드는 산업이다. 한국 증시에서는 상장 종목 수가 적은 편이고 전체 시장에서 차지하는 비중도 1%를 밑돈다. 업종의 시가총액은 SK이노베이션과 S-Oil 두 종목에 크게 쏠려 있다. 한국쉘석유, 미창석유, 극동유화는 윤활유·특수유 중심의 소형주여서 대형 정유사와는 사업 성격이 다르다. 대원은 업종 분류만 정유일 뿐 주택 분양과 토목 공사를 하는 종합건설업체다. 정유사의 수익성은 정제마진뿐 아니라 유가·환율 변동에 따른 재고손익, 정기보수 이후 가동률 회복 속도에도 좌우된다.",
+        "en": "The refining sector turns crude oil into petroleum products such as gasoline and diesel, as well as lubricant base oil. On the Korean market it has relatively few listed companies and accounts for less than 1% of total market capitalization. Its market value is heavily concentrated in SK Innovation and S-Oil. Hankook Shell Oil, Michang Oil Ind and Kukdong Oil & Chemicals are small caps centered on lubricants and specialty oils, so their business profile differs from the large refiners. Daewon is grouped under refining only by classification and is in fact a general contractor engaged in housing development and civil works. Refiner profitability depends not only on refining margins but also on inventory gains and losses from oil price and exchange rate moves, and on how quickly utilization recovers after scheduled maintenance."
       },
       "structure": {
-        "ko": "밸류체인은 원유 도입과 정제 공정을 거쳐 석유제품 생산, 유통·판매로 이어지며, 일부 기업은 윤활기유나 석유화학 제품으로 다운스트림을 확장한다. SK이노베이션과 S-Oil이 정제능력과 매출 규모 면에서 업종을 압도적으로 주도하는 양강 구도를 형성하고 있으며, 두 회사 모두 정유 본업과 함께 윤활유 사업을 핵심 수익원으로 운영한다. 한국쉘석유는 윤활유 제품에 특화된 중견기업이고, 미창석유와 극동유화는 석유화학 원료 및 윤활유 관련 제품을 다루는 소형사로 분류된다. 업종 분류상 함께 묶인 대원은 정유업이 아닌 종합건설업체다. 이처럼 업종 내 시가총액과 매출 규모의 격차가 커 대형 2개사에 업황 민감도가 집중되는 구조적 특징을 보인다.",
-        "en": "The value chain runs from crude oil procurement and refining through petroleum product manufacturing to distribution and sales, with some companies extending downstream into lubricant base oil or petrochemical products. SK Innovation and S-Oil overwhelmingly lead the sector in refining capacity and revenue scale, forming a duopoly in which both companies rely on lubricant businesses alongside core refining as key profit sources. Hankook Shell Oil is a mid-sized company specializing in lubricant products, while Michang Oil and Kukdong Oil are classified as smaller firms handling petrochemical feedstocks and lubricant-related products. Daewon, grouped in the sector by classification, is a general construction company rather than a refiner. This wide gap in market capitalization and revenue across the sector reflects a structural concentration of industry sensitivity in the two large players."
+        "ko": "가치사슬은 원유 도입, 정제, 석유제품·윤활기유·석유화학 제품 판매의 순서로 이어진다. SK이노베이션은 정유·석유화학, 윤활유, 가스·발전(E&S), 배터리, 석유개발 사업을 묶은 에너지 사업회사다. S-Oil은 정유 부문을 기반으로 윤활기유와 석유화학 부문을 함께 운영하는 정유사다. 국내 정유 4사 가운데 GS칼텍스와 HD현대오일뱅크는 비상장사다. 따라서 상장사 중 대형 정제설비를 갖춘 곳은 SK이노베이션과 S-Oil 두 곳이며, 업종 이익도 이 두 곳에서 대부분 나온다. 미창석유는 윤활유와 고무배합유, 전기절연유를 중심으로 한 특수유 제조사이고, 극동유화는 윤활유와 석유화학 전문 기업이다.",
+        "en": "The value chain runs from crude procurement and refining to sales of petroleum products, lubricant base oil and petrochemicals. SK Innovation is an energy holding operating company that combines refining and petrochemicals, lubricants, gas and power (E&S), batteries and oil development. S-Oil is a refiner built on its refining segment, which it runs alongside lubricant base oil and petrochemical segments. Of the four domestic refiners, GS Caltex and HD Hyundai Oilbank are unlisted. As a result, SK Innovation and S-Oil are the only listed companies with large refining capacity, and most of the sector's profit comes from these two. Michang Oil Ind is a specialty oil maker focused on lubricants, rubber compounding oil and electrical insulating oil, while Kukdong Oil & Chemicals specializes in lubricants and petrochemicals."
       },
       "trends": {
-        "ko": "2026년 상반기 중동 지역 분쟁에 따른 원유 생산 및 정유설비 가동 차질로 국제유가가 급등했고, 이 과정에서 국내 정유사들은 역사적으로 높은 수준의 정제마진 환경을 맞이했다. SK이노베이션은 2026년 2분기 연결 매출 29조 2,362억원, 영업이익 3조 4,873억원을 기록하며 흑자 전환했으며, 이는 정유·윤활유 사업 호조에 더해 SK온이 7개 분기 만에 흑자로 돌아서며 분사 이후 최대 영업이익을 낸 영향이 겹친 결과다. S-Oil도 2분기 매출 11조 3,435억원, 영업이익 9,650억원으로 흑자 전환했는데, 정유부문 이익이 전분기보다 줄었지만 윤활부문이 역대 최고 수준의 분기 실적을 기록하며 이를 상쇄했다. 다만 2026년 6월 미-이란 간 종전 양해각서(MOU) 체결 이후 유가가 하락하면서 재고 관련 이익이 축소되어 2분기 이익 폭이 전분기 대비 줄어드는 흐름도 함께 나타났다. 한국쉘석유, 미창석유, 극동유화 등 중소형사는 윤활유·석유화학 원료 수요 회복에 힘입어 매출 증가세를 보였으나 영업이익은 기업별로 엇갈렸다.",
-        "en": "In the first half of 2026, conflict in the Middle East disrupted crude oil production and refinery operations, driving a sharp rise in international oil prices and giving domestic refiners a historically high refining margin environment. SK Innovation posted consolidated revenue of KRW 29.2362 trillion and operating profit of KRW 3.4873 trillion in the second quarter of 2026, turning profitable on strong refining and lubricant businesses, while SK On returned to profit for the first time in seven quarters and posted its highest operating profit since its spin-off. S-Oil also swung to a profit with second-quarter revenue of KRW 11.3435 trillion and operating profit of KRW 965 billion, as a record quarterly performance in the lubricant division offset refining profits that were lower than in the prior quarter. However, oil prices fell after the US and Iran signed a ceasefire memorandum of understanding in June 2026, shrinking inventory-related gains and causing second-quarter profits to decline from the prior quarter. Smaller firms such as Hankook Shell Oil, Michang Oil, and Kukdong Oil & Chemicals saw revenue growth on recovering demand for lubricants and petrochemical feedstocks, though operating profit trends diverged by company."
+        "ko": "2026년 3분기 호실적은 중동의 지정학적 불확실성으로 석유제품 공급이 부족해지고 정제마진이 강세를 보인 결과다. 공시 기준 SK이노베이션의 3분기 영업이익은 3조 7,043억원으로 전년 동기 대비 545.9% 늘었고, S-Oil은 1조 4,067억원으로 513.7% 늘었다. S-Oil에서는 윤활기유 부문 영업이익이 분기 사상 최대인 7,427억원으로 전체 영업이익의 절반을 넘었다. S-Oil의 석유화학 부문은 264억원의 영업손실을 냈다. 소형주는 엇갈렸다. 미창석유(+66.6%)와 극동유화(+66.3%)는 영업이익이 늘었고, 한국쉘석유는 매출이 9.6% 늘었지만 영업이익은 7.7% 줄었으며, 대원은 영업손실 33억원으로 적자가 이어졌다.",
+        "en": "The strong third-quarter 2026 results reflect tight petroleum product supply and firm refining margins amid heightened geopolitical uncertainty in the Middle East. Based on filings, SK Innovation's third-quarter operating profit was KRW 3.7043 trillion, up 545.9% year on year, and S-Oil's was KRW 1.4067 trillion, up 513.7%. At S-Oil, the lubricant base oil segment earned a record quarterly operating profit of KRW 742.7 billion, more than half of the total. S-Oil's petrochemical segment posted an operating loss of KRW 26.4 billion. The smaller names diverged. Michang Oil Ind (+66.6%) and Kukdong Oil & Chemicals (+66.3%) grew operating profit, Hankook Shell Oil's operating profit fell 7.7% despite a 9.6% rise in sales, and Daewon's losses continued with an operating loss of KRW 3.3 billion."
       },
       "outlook": {
-        "ko": "향후 업황의 핵심 변수는 정제마진의 정상화 속도와 정부의 가격 규제 정책이다. 일부 증권사는 하반기 복합정제마진을 배럴당 26달러 수준으로 전망하며, 이는 전쟁 이전 수준보다 높은 수준이라고 분석하는 한편, 정제설비의 구조적인 부족 상황을 감안하면 역사적으로 높은 정제마진이 오랫동안 유지될 가능성도 제기되고 있다. 다만 OPEC+ 증산과 아시아 역내 정제설비 가동률 상승으로 유가와 정제마진 상승세가 누그러질 것이라는 전망도 있어, 정제마진의 추가 확대 여력에는 불확실성이 남아 있다. 또한 정부가 석유화학산업 구조개편을 진행하고 최고가격제(가격상한제)가 적용되면서 향후 실적 개선 흐름은 제한적일 수 있다는 분석도 나오고 있어 정책 변수에 대한 모니터링이 필요하다. 대형사들은 윤활기유 사업 확장과 비정유 부문(배터리 등) 수익성 개선을 통해 정유 본업의 변동성을 완충하려는 움직임을 보이고 있어, 사업 다각화 성과가 향후 실적 차별화의 관전 포인트가 될 전망이다.",
-        "en": "The key variables for the industry going forward are the pace of refining margin normalization and government pricing regulations. Some brokerages forecast that the composite refining margin will stand at around USD 26 per barrel in the second half, higher than pre-conflict levels, while others suggest that given the structural shortage of refining capacity, historically high refining margins could persist for an extended period. However, there are also projections that OPEC+ production increases and rising refinery utilization in Asia will ease the upward momentum in oil prices and refining margins, leaving uncertainty over further margin expansion. In addition, analysis suggests that as the government pursues restructuring of the petrochemical industry and applies a price cap system, the future earnings improvement trend may be limited, warranting close monitoring of policy variables. Major players are seeking to buffer core refining volatility through lubricant base oil business expansion and profitability improvements in non-refining segments such as batteries, making diversification outcomes a key point of differentiation in future performance."
+        "ko": "2026년 4분기의 관건은 정제마진이 얼마나 높게 유지되느냐다. 국제 유가가 하루 만에 7% 넘게 떨어졌는데도 원유 가격이 석유제품 가격보다 빠르게 하락해 정제마진은 오히려 개선됐다는 분석이 나왔다. 증권가는 중동의 원유 공급이 회복되더라도 경유·항공유 등 석유제품 공급은 더디게 늘어 정유업체의 수익성이 높을 것으로 본다. 반면 3분기에는 정제마진과 유가, 윤활기유가 동시에 우호적이었지만 4분기에는 운임과 보험료 등 물류비 부담이 본격화하고 있다. S-Oil은 Shaheen 프로젝트가 2027년 초 가동 목표에 맞춰 진행되고 있다고 밝혔다. 관전 포인트는 정제마진의 지속성, 윤활기유 스프레드, 유가 하락에 따른 재고평가손익의 크기다.",
+        "en": "The key issue for the fourth quarter of 2026 is how well refining margins hold up. Analysts noted that margins improved even after international oil prices fell more than 7% in a single day, because crude prices dropped faster than product prices. Brokerages expect refiner profitability to stay high because product supply such as diesel and jet fuel recovers slowly even if Middle East crude supply returns. On the other hand, margins, oil prices and base oil were all favorable in the third quarter, but logistics costs such as freight and insurance are now weighing in the fourth. S-Oil said its Shaheen project is proceeding on schedule for a start-up target in early 2027. Points to watch are the durability of margins, lubricant base oil spreads and the size of inventory valuation gains or losses as oil prices fall."
       },
       "risks": [
         {
           "title": {
-            "ko": "유가 및 정제마진 변동성",
-            "en": "Oil Price and Refining Margin Volatility"
+            "ko": "유가 하락과 재고평가손실",
+            "en": "Falling oil prices and inventory valuation losses"
           },
           "body": {
-            "ko": "정유사 실적은 국제유가 및 정제마진의 급격한 변동에 직접 노출되어 있으며, 유가 하락 국면에서는 재고 관련 손실이 발생할 수 있다. 지정학적 상황 변화에 따라 공급 차질이 해소되거나 재발할 경우 분기별 이익 변동 폭이 커질 수 있다.",
-            "en": "Refiners' earnings are directly exposed to sharp swings in international oil prices and refining margins, and inventory-related losses can occur during periods of falling oil prices. Depending on shifts in geopolitical conditions, the resolution or recurrence of supply disruptions could widen quarterly earnings fluctuations."
+            "ko": "GS칼텍스는 3분기 가동률을 높였는데도 국제유가와 환율 하락에 따른 재고 관련 손실이 수익성을 제약했다. 상장 정유사도 유가가 빠르게 내리면 같은 방식으로 이익이 줄 수 있다. 이 때문에 정제마진이 높아도 분기 이익이 같은 폭으로 늘지는 않는다.",
+            "en": "At GS Caltex, inventory-related losses from lower oil prices and a weaker exchange rate constrained profitability in the third quarter even though utilization rose. Listed refiners could see earnings squeezed the same way if oil prices fall quickly. High refining margins therefore do not always translate into an equal rise in quarterly profit."
           }
         },
         {
           "title": {
-            "ko": "정부 가격 규제 및 산업 구조개편",
-            "en": "Government Price Regulation and Industry Restructuring"
+            "ko": "가격 규제와 담합 조사",
+            "en": "Price controls and collusion probe"
           },
           "body": {
-            "ko": "석유제품 최고가격제 적용과 석유화학산업 구조개편 논의는 정유사의 가격 전가력과 수익성에 영향을 미칠 수 있는 정책 변수다. 규제 강도와 적용 범위에 따라 업종 전반의 이익 개선 속도가 제한될 가능성이 있다.",
-            "en": "The application of a price cap system for petroleum products and discussions on petrochemical industry restructuring are policy variables that could affect refiners' pricing power and profitability. Depending on the intensity and scope of regulation, the pace of sector-wide earnings improvement could be constrained."
+            "ko": "정부는 2026년 10월 16일 제11차 석유제품 최고가격을 동결했다. 국제유가와 정제마진이 올라도 국내 판매가격에 이를 온전히 반영하기 어려운 구조다. 수출 제한과 가격 담합 의혹 조사도 경영 부담으로 거론된다.",
+            "en": "The government froze the 11th petroleum product price cap on October 16, 2026. Even when oil prices and refining margins rise, refiners find it hard to pass the full increase through to domestic selling prices. Export restrictions and an investigation into alleged price collusion are also cited as burdens on management."
           }
         },
         {
           "title": {
-            "ko": "에너지 전환 및 수요 구조 변화",
-            "en": "Energy Transition and Demand Structure Shifts"
+            "ko": "비정유 부문과 소형주의 실적 편차",
+            "en": "Earnings dispersion in non-refining segments and small caps"
           },
           "body": {
-            "ko": "중장기적으로 전기차 보급 확대와 탄소중립 정책 강화는 전통 석유제품 수요에 구조적 압력으로 작용할 수 있다. 업종 내 기업들이 윤활기유·석유화학·배터리 소재 등으로 사업을 다각화하는 배경에는 이러한 수요 구조 변화에 대한 대응이 자리한다.",
-            "en": "Over the medium to long term, expanding electric vehicle adoption and strengthening carbon-neutrality policies could place structural pressure on traditional petroleum product demand. Companies' diversification into lubricant base oil, petrochemicals, and battery materials reflects efforts to respond to these shifting demand dynamics."
+            "ko": "석유화학사의 실적 악화는 나프타 가격 상승과 중국발 공급 과잉에서 비롯됐다. S-Oil의 석유화학 부문도 3분기에 적자를 기록해 정유사의 비정유 다각화에는 한계가 있다. 업종 안에서도 한국쉘석유는 영업이익이 줄고 대원은 적자가 이어져, 대형 정유사 흐름이 소형주로 번지지 않는 점에 유의해야 한다.",
+            "en": "The deterioration at petrochemical companies stems from higher naphtha prices and oversupply from China. S-Oil's petrochemical segment also lost money in the third quarter, which shows the limits of refiners' non-refining diversification. Within the sector, Hankook Shell Oil's operating profit declined and Daewon's losses continued, so the large refiners' trend does not carry over to the smaller names."
           }
         }
       ],
       "sources": [
-        "https://thetracker.co.kr/View.aspx?No=4202960",
-        "https://view.asiae.co.kr/article/2026080309565876853",
-        "http://www.ttlnews.com/news/articleView.html?idxno=3130271",
-        "https://www.shinhangroup.com/kr/archive/insight/extend/detail/32864",
-        "https://biz.newdaily.co.kr/site/data/html/2026/07/27/2026072700106.html",
-        "https://www.investchosun.com/site/data/html_dir/2026/08/03/2026080380081.html"
+        "https://news.bizwatch.co.kr/article/industry/2026/11/13/0034",
+        "https://www.asiatoday.co.kr/kn/view.php?key=20261110010003458",
+        "https://www.ddaily.co.kr/page/view/2026102215562711138",
+        "https://www.ajunews.com/view/20261105153431391",
+        "https://kr.investing.com/news/transcripts/article-93CH-2152946",
+        "https://www.todayenergy.kr/news/articleView.html?idxno=305439",
+        "https://www.hankyung.com/article/202611032475i",
+        "https://www.pointdaily.co.kr/news/articleView.html?idxno=323089"
       ],
       "sector": "정유",
-      "generatedAt": "2026-10-08 19:06"
+      "generatedAt": "2026-11-21 18:05"
     },
     "전자·부품": {
       "lead": {
-        "ko": "AI 서버·데이터센터발 수동부품·기판 수요가 업종 전반의 실적 모멘텀을 이끄는 가운데, 완제품부터 디스플레이·부품까지 밸류체인이 폭넓게 걸쳐 있는 업종이다.",
-        "en": "Driven by AI server and data-center demand for passive components and substrates, this sector spans a broad value chain from finished products to displays and core components."
+        "ko": "AI 데이터센터용 MLCC·반도체 기판 수요가 2026년 3분기 공시 실적을 끌어올린 업종이다. 환율과 사업 구조에 따라 종목별 이익 흐름은 갈리고 있다.",
+        "en": "AI data-center demand for MLCCs and semiconductor substrates lifted the sector's Q3 2026 reported results. Profit trends differ by company depending on currency exposure and business mix."
       },
       "overview": {
-        "ko": "전자·부품 업종은 TV·가전 등 완제품(LG전자)부터 디스플레이(LG디스플레이), 적층세라믹콘덴서(MLCC)·카메라모듈·반도체 패키지기판(삼성전기, LG이노텍), 인쇄회로기판(코리아써키트, 이수페타시스), 보안·광통신 장비(한화비전, 대한광통신)까지 폭넓은 제품군을 아우른다. 반도체 업종에 비해 상대적으로 전체 시장 내 비중은 크지 않지만, 상장 종목 수가 많아 산업 저변이 넓은 특징을 보인다. 업종 내에서는 시가총액이 가장 큰 삼성전기의 업황이 업종 전체 분위기에 큰 영향을 미친다. 완제품-부품-소재로 이어지는 다단계 밸류체인 특성상 전방 산업인 스마트폰·서버·자동차 전동화 수요의 사이클에 민감하게 반응하는 것도 이 업종의 특징이다.",
-        "en": "The electronics and components sector spans a wide product range, from finished goods such as TVs and home appliances (LG Electronics) to displays (LG Display), multilayer ceramic capacitors (MLCC), camera modules and semiconductor packaging substrates (Samsung Electro-Mechanics, LG Innotek), printed circuit boards (Korea Circuit, Isu Petasys), and security and optical communication equipment (Hanwha Vision, Taihan Fiberoptics). While its overall weight in the broader market is relatively modest compared to semiconductors, the large number of listed names reflects a broad industrial base. Business conditions at Samsung Electro-Mechanics, the largest company in the sector by market capitalization, strongly shape the sector's overall tone. Given the multi-tier value chain from finished products to components and materials, the sector is highly sensitive to cycles in downstream demand such as smartphones, servers, and vehicle electrification."
+        "ko": "전자·부품 업종은 MLCC, 반도체 기판, PCB, 카메라 모듈, 디스플레이, 광통신, RF 반도체 등 전자제품의 핵심 부품을 만드는 기업군이다. 상장 종목 수는 업종 가운데 많은 편이지만, 전체 시장 시가총액에서 차지하는 비중은 한 자릿수 초반이다. 시가총액 상위는 삼성전기, LG전자, LG이노텍, 이수페타시스, LG디스플레이 순이다. 삼성전기는 업종 안에서 단일 종목으로 가장 큰 비중을 차지한다. 2026년 3분기 공시 기준으로 시총 상위 12개 종목 가운데 매출이 늘어난 회사는 11곳이고, 줄어든 회사는 LG디스플레이 1곳이다. 업종은 AI 인프라 투자 사이클, 스마트폰·가전 수요, 원·달러 환율에 동시에 영향을 받는 특성이 있다.",
+        "en": "The electronics components sector covers companies that make core parts for electronic products, including MLCCs, semiconductor substrates, PCBs, camera modules, displays, optical communications and RF semiconductors. It has one of the larger numbers of listed stocks among the sectors, but its share of total market capitalization is in the low single digits. By market capitalization the largest names are Samsung Electro-Mechanics, LG Electronics, LG Innotek, Isupetasys and LG Display, in that order. Samsung Electro-Mechanics is the single largest stock within the sector. Based on Q3 2026 filings, 11 of the 12 largest stocks grew revenue year on year, and only LG Display saw a decline. The sector is exposed at once to the AI infrastructure investment cycle, smartphone and home-appliance demand, and the won-dollar exchange rate."
       },
       "structure": {
-        "ko": "밸류체인 상단에는 완제품 기업인 LG전자가 있으며, 디스플레이 단계에서는 LG디스플레이가 유기발광다이오드(OLED) 중심의 사업 전환을 진행 중이다. 핵심 부품 단계에서는 삼성전기와 LG이노텍이 각각 MLCC·카메라모듈·반도체 패키지기판(FC-BGA) 분야에서 경쟁하며, 코리아써키트와 이수페타시스는 인쇄회로기판(PCB), 삼화콘덴서는 MLCC 등 콘덴서를, 성호전자는 필름콘덴서와 전원공급장치를 공급한다. 통신·RF 분야에서는 RFHIC가 5G 및 방산용 질화갈륨(GaN) 반도체를, 대한광통신은 광섬유케이블을 생산하며, 서진시스템은 통신장비와 에너지저장장치(ESS)용 금속 함체·부품을 공급한다. 보안 카메라 분야에서는 한화비전이 글로벌 영상보안 시장에서 사업을 영위하고 있다. 전반적으로 삼성전기·LG이노텍 등 상위 소수 기업의 시가총액 비중이 크고, 그 아래로 다수의 중소형 부품사가 특정 제품군에 특화된 분업 구조를 이루고 있다.",
-        "en": "At the top of the value chain sits LG Electronics as the finished-product maker, while LG Display is undergoing a business transition centered on OLED technology. In core components, Samsung Electro-Mechanics and LG Innotek compete in MLCCs, camera modules, and semiconductor packaging substrates (FC-BGA), while Korea Circuit and Isu Petasys supply printed circuit boards, Samwha Capacitor supplies MLCCs and other capacitors, and Sungho Electronics supplies film capacitors and power supply units. In communications and RF, RFHIC produces gallium nitride (GaN) semiconductors for 5G and defense applications, Taihan Fiberoptics manufactures optical fiber cables, and Seojin System supplies metal enclosures and parts for telecom equipment and energy storage systems (ESS). In security cameras, Hanwha Vision operates in the global video surveillance market. Overall, a small number of large-cap names such as Samsung Electro-Mechanics and LG Innotek account for most of the sector's market value, while numerous small and mid-cap suppliers specialize in particular product niches beneath them."
+        "ko": "수동부품 단계에서는 삼성전기의 컴포넌트 사업부가 MLCC를 만든다. 기판 단계에서는 삼성전기의 패키지솔루션 사업부가 FC-BGA를, LG이노텍이 반도체 기판을, 이수페타시스가 다중적층 기판(MLB)을 생산한다. 코리아써키트와 티엘비는 PCB 전문 기업으로 이 단계에 속한다. 통신·RF 영역에서는 대한광통신이 광섬유 모재부터 광케이블까지 일관 생산하고, RFHIC가 질화갈륨(GaN) 기반 RF 반도체를 만든다. 완제품·모듈 영역에서는 LG전자가 생활가전·영상가전·전장·냉난방공조 4개 사업본부를 운영하고, LG디스플레이가 디스플레이 패널을, 한화비전이 영상보안 장비와 반도체·산업용 장비를 담당한다. 서진시스템은 금속 소재 가공부터 조립까지 수직계열화를 내세우고, 성호전자는 필름콘덴서·전원공급장치에서 반도체·광통신 자회사 편입으로 사업 구조를 넓히고 있다.",
+        "en": "At the passive-component stage, the Components division of Samsung Electro-Mechanics makes MLCCs. At the substrate stage, the Package Solution division of Samsung Electro-Mechanics produces FC-BGA, LG Innotek produces semiconductor substrates, and Isupetasys produces multilayer boards (MLB). Korea Circuit and TLB are PCB specialists in this segment. In communications and RF, TAIHAN Fiberoptics runs integrated production from optical fiber preform to optical cable, and Rfhic makes gallium nitride (GaN) based RF semiconductors. In finished goods and modules, LG Electronics runs four business headquarters covering home appliances, home entertainment, vehicle components and HVAC, LG Display makes display panels, and Hanwha Vision covers video surveillance equipment and semiconductor and industrial equipment. Seojin System emphasizes vertical integration from metal processing to assembly, while Sungho Electronics is widening its business from film capacitors and power supplies by adding semiconductor and optical communications subsidiaries."
       },
       "trends": {
-        "ko": "2026년 들어 인공지능(AI) 서버·데이터센터 투자 확대가 전자부품 업종 전반의 실적 개선을 견인하고 있다. AI 서버용 MLCC 수요가 급증하면서 공급 부족 현상이 심화되고 있으며, AI 서버가 진화할수록 필요한 MLCC도 늘어나는 추세다. 이러한 흐름 속에 삼성전기는 2분기 연결 매출 3조 4,572억원, 영업이익 4,404억원으로 전년 동기 대비 각각 24.2%, 106.7% 늘었다. AI 서버·데이터센터와 전장용 적층세라믹콘덴서(MLCC) 등 고부가 제품 판매 확대가 실적을 이끌었고, 컴포넌트 부문 매출은 전년 동기 대비 29% 늘었다. 아울러 삼성전기는 글로벌 대형 클라우드 사업자와 주요 반도체 업체 등 10여 개 고객사와 MLCC 장기공급계약(LTA)을 체결했다. 같은 흐름에서 AI 서버용 고다층 기판을 만드는 이수페타시스의 2분기 영업이익이 전년 동기 대비 83.2% 늘었고, 코리아써키트도 213.4% 늘었다. LG이노텍의 영업이익은 전년 동기의 낮은 기저 위에서 20배 이상 늘었다. 다만 LG디스플레이는 2분기에도 영업손실 1,077억원을 기록하며 적자가 지속됐는데, 이는 구조조정에 따른 일회성 비용 탓으로 분석된다.",
-        "en": "In 2026, expanding investment in AI servers and data centers has been the primary driver of earnings improvement across the electronics components sector. Demand for AI-server MLCCs has surged, intensifying supply shortages, and the capacitor requirement per server continues to rise as AI server architectures evolve. Against this backdrop, Samsung Electro-Mechanics posted second-quarter consolidated revenue of KRW 3.4572 trillion and operating profit of KRW 440.4 billion, up 24.2% and 106.7% year-on-year, respectively. Expanded sales of high-value products such as MLCCs for AI servers, data centers, and vehicles drove the growth, and component division revenue rose 29% year-on-year. The company also signed long-term supply agreements for MLCCs with roughly a dozen clients, including major global cloud operators and leading semiconductor firms. In the same vein, second-quarter operating profit at Isu Petasys, a maker of high-layer-count boards for AI servers, rose 83.2% year-on-year, and Korea Circuit's climbed 213.4%. LG Innotek's operating profit rose more than twentyfold from a low base a year earlier. LG Display, however, posted a second-quarter operating loss of KRW 107.7 billion, continuing its losses, a result attributed to one-off restructuring costs."
+        "ko": "삼성전기는 2026년 3분기 매출과 영업이익 모두 역대 분기 최대 실적을 기록했다. 매출은 3조 7,633억원, 영업이익은 6,910억원이다. MLCC를 담당하는 컴포넌트 사업부 매출은 전년 동기 대비 36% 늘어난 1조 8,830억원이었다. 패키지솔루션 사업부 매출은 전년 동기 대비 58% 늘어난 9,390억원이었다. 이수페타시스는 3분기 영업이익이 949억원으로 전년 동기 대비 62.4% 늘었고, 3분기 말 수주잔고는 7,849억원으로 집계됐다. 반면 LG이노텍은 매출이 18.6% 늘었지만 영업이익은 948억원으로 53.4% 줄었고, 회사는 원재료 매입과 제품 출하 사이의 환율 하락을 원인으로 꼽았다. LG디스플레이는 매출이 9.8%, 영업이익이 41.9% 감소해 업종 안에서 대비를 이뤘다.",
+        "en": "Samsung Electro-Mechanics posted record quarterly revenue and operating profit in Q3 2026. Revenue was KRW 3.7633 trillion and operating profit was KRW 691.0 billion. Revenue at the Components division, which handles MLCCs, rose 36% year on year to KRW 1.883 trillion. Revenue at the Package Solution division rose 58% year on year to KRW 939.0 billion. Isupetasys reported Q3 operating profit of KRW 94.9 billion, up 62.4% year on year, and its order backlog at the end of Q3 stood at KRW 784.9 billion. LG Innotek, by contrast, grew revenue 18.6% but saw operating profit fall 53.4% to KRW 94.8 billion, and the company cited a drop in the exchange rate between raw-material purchase and product shipment as the cause. LG Display's revenue fell 9.8% and its operating profit fell 41.9%, a contrast within the sector."
       },
       "outlook": {
-        "ko": "AI 가속기와 하이퍼스케일러의 데이터센터 투자가 지속되는 가운데, 고용량·고전압 MLCC와 FC-BGA, 고다층 PCB 등 고부가 제품 중심의 공급 부족 국면이 이어질 것으로 업계는 보고 있다. 삼성전기와 무라타 등 주요 업체들은 고부가 제품으로 생산 여력을 전환하며 저가 소비재용 제품 가격 인상에 나서는 등 시장 분화가 뚜렷해지는 양상이다. 디스플레이 쪽에서는 대형 OLED와 애플용 모바일 OLED가 LG디스플레이의 실적을 뒷받침하고 있으며, 중장기적으로는 아이폰18 시리즈 대응과 게이밍 모니터용 OLED 확대가 성장축으로 꼽힌다. 구조조정 비용 반영이 마무리된 뒤의 수익성 추이가 관전 포인트다. 전장화(ADAS·xEV) 확산에 따른 차량용 MLCC·카메라모듈 수요 역시 부품사들의 중장기 성장 동력으로 거론된다. 다만 하이퍼스케일러의 AI 투자 집행 속도와 범용 전자제품(스마트폰, PC 등) 수요 회복 여부가 세트-부품 양쪽의 실적 방향을 함께 좌우할 변수로 꼽힌다.",
-        "en": "As AI accelerator and hyperscaler data-center investment continues, the industry expects ongoing supply tightness concentrated in high-value products such as high-capacity, high-voltage MLCCs, FC-BGA substrates, and high-layer-count PCBs. Major suppliers including Samsung Electro-Mechanics and Murata are shifting capacity toward premium products while raising prices on lower-end consumer items, a clear sign of market bifurcation. On the display side, large-area OLED and mobile OLED supply to Apple are supporting LG Display's results, with iPhone 18 series supply and expanding OLED gaming monitor adoption cited as medium-term growth drivers. Profitability after restructuring costs are fully booked is a key point to watch. Expanding vehicle electrification and ADAS adoption are also cited as medium-term growth drivers for automotive MLCC and camera module demand. However, the pace of hyperscaler AI capital spending and the recovery trajectory of general consumer electronics demand such as smartphones and PCs remain key variables shaping earnings for both finished-product makers and component suppliers."
+        "ko": "삼성전기는 4분기 MLCC와 FC-BGA의 수급이 3분기보다 한층 더 타이트해질 것으로 전망했다. 회사는 약 50개 고객사와 장기공급계약(LTA)을 체결했거나 추진 중이며, 2027년 MLCC 매출의 절반 이상이 LTA에서 나올 것으로 예상했다. FC-BGA 증설분은 2027년부터 단계적으로 양산에 들어가 2028년부터 매출에 본격 기여할 예정이다. 이수페타시스에 대해서는 기존 고객사용 ASIC 가속기와 1.6T 스위치, 신규 고객사용 다중적층 제품이 2027년 1분기 초도 양산을 시작할 것으로 전망됐다. 이수페타시스는 2026년 11월 2일 대구시·달성군과 7공장 신설을 위한 약 5,000억원 규모의 투자협약을 체결했다. 관전 포인트는 LG이노텍의 구매·출하 시점 환율 차이가 어떻게 달라지는지와 4분기 고객사 재고 조정 여부다.",
+        "en": "Samsung Electro-Mechanics expects the MLCC and FC-BGA supply-demand balance in Q4 to tighten further compared with Q3. The company has signed or is negotiating long-term supply agreements (LTAs) with about 50 customers and expects LTAs to account for more than half of 2027 MLCC revenue. The added FC-BGA capacity is to begin mass production in phases from 2027 and contribute meaningfully to revenue from 2028. For Isupetasys, first mass production of ASIC accelerator and 1.6T switch products for existing customers, and multilayer products for a new customer, is expected to start in Q1 2027. On November 2, 2026, Isupetasys signed an investment agreement of about KRW 500 billion with Daegu City and Dalseong County to build a seventh plant. Key points to watch are how the exchange-rate gap between purchase and shipment evolves for LG Innotek and whether customers adjust inventories in Q4."
       },
       "risks": [
         {
           "title": {
-            "ko": "범용 제품 가격 경쟁 심화",
-            "en": "Intensifying price competition in commodity products"
+            "ko": "환율 하락에 따른 수익성 압박",
+            "en": "Profitability pressure from a stronger won"
           },
           "body": {
-            "ko": "무라타 등 해외 주요 업체가 소비재용·차량용 MLCC 생산을 축소하며 고부가 제품에 집중하는 가운데, 중국 제조사들은 범용 제품 증설을 추진하고 있어 저가 제품 영역의 가격 경쟁이 심화될 소지가 있다. 고부가 제품 비중 확대가 더딘 중소형 부품사일수록 수익성 변동에 노출될 수 있다.",
-            "en": "As major overseas suppliers such as Murata scale back consumer and automotive MLCC production to focus on premium products, Chinese manufacturers are expanding commodity-grade capacity, raising the risk of intensified price competition in the lower-end segment. Smaller component makers that are slower to shift toward higher value-added products may face greater earnings volatility as a result."
+            "ko": "LG이노텍은 상대적으로 높은 환율에 원재료를 사들인 뒤 환율이 내려간 시점에 제품을 출하해 원가 부담이 커졌다고 설명했다. 삼성전기도 원·달러 환율이 가파르게 하락하는 불리한 환경에서 실적을 냈다. 수출 비중이 큰 부품 업종은 환율 방향에 따라 이익 변동폭이 커질 수 있다.",
+            "en": "LG Innotek explained that it bought raw materials at a relatively high exchange rate and shipped products after the rate fell, which raised its cost burden. Samsung Electro-Mechanics also reported its results amid a sharp decline in the won-dollar rate. Component makers with large export exposure can see wide swings in profit depending on the direction of the exchange rate."
           }
         },
         {
           "title": {
-            "ko": "세트 수요 둔화 및 환율 변동성",
-            "en": "Set-demand slowdown and FX volatility"
+            "ko": "원재료 공급 제약과 증설 경쟁",
+            "en": "Raw-material supply limits and capacity competition"
           },
           "body": {
-            "ko": "원·달러 환율 하락과 북미 고객사의 패널 가격 인하 압력, 메모리 반도체 가격 급등에 따른 IT 기기 수요 위축이 완제품·디스플레이 업체의 실적에 부담 요인으로 지목된다. 메모리 가격 상승이 완제품 원가에 전이될 경우 스마트폰·PC 등 세트 수요 회복이 지연될 가능성도 있다.",
-            "en": "A weaker won-dollar rate, panel price-cut pressure from North American customers, and softer IT device demand stemming from surging memory chip prices have been flagged as headwinds for finished-product and display makers. Should rising memory costs pass through to end-product pricing, a recovery in set demand for smartphones and PCs could be delayed."
+            "ko": "PCB 업계에서는 원재료 가격 상승과 경쟁사의 생산능력 확대로 수익성이 나빠질 수 있다는 우려가 제기됐다. 이수페타시스의 경우 E-glass와 동박 공급 부족에 따른 CCL 수급 제약이 추가 생산 확대의 제약 요인으로 제시됐다. 증설이 이어지면 신규 라인의 수율과 감가상각 부담도 함께 따를 수 있다.",
+            "en": "Concerns have been raised in the PCB industry that rising raw-material prices and competitors' capacity expansion could erode profitability. For Isupetasys, constrained CCL supply caused by shortages of E-glass and copper foil was cited as a limit on further output growth. Continued expansion can also bring yield and depreciation burdens on new lines."
           }
         },
         {
           "title": {
-            "ko": "구조조정 및 설비투자 부담",
-            "en": "Restructuring and capex burden"
+            "ko": "고객 집중과 주가 변동성",
+            "en": "Customer concentration and share-price volatility"
           },
           "body": {
-            "ko": "LG디스플레이는 2분기에도 1,077억원의 영업손실을 기록했으며, 구조조정에 따른 일회성 비용이 분기 실적의 변동성을 키우고 있다. AI 서버 수요에 대응한 대규모 증설이 이어지는 가운데, 수요 사이클이 예상보다 둔화될 경우 가동률 저하에 따른 수익성 부담이 발생할 수 있다.",
-            "en": "LG Display posted a second-quarter operating loss of KRW 107.7 billion, and one-off restructuring costs continue to add volatility to its quarterly results. As large-scale capacity expansions proceed in response to AI server demand, a slower-than-expected demand cycle could lead to utilization declines and associated profitability pressure."
+            "ko": "LG이노텍의 최대 고객사 매출 비중은 3분기 누적 80.4%로 전년 동기보다 1.7%포인트 높아졌다. 이수페타시스는 신규 생산능력의 가동률과 4분기 고객사 재고 조정 여부가 실적 추세를 좌우할 전망이다. 이수페타시스 주가는 약 한 달 사이 40% 넘게 떨어진 뒤 반등해, 업황 기대에 따른 변동성이 크다.",
+            "en": "LG Innotek's largest customer accounted for 80.4% of cumulative Q3 revenue, up 1.7 percentage points year on year. For Isupetasys, the utilization of new capacity and whether customers adjust inventories in Q4 are expected to determine the earnings trend. Isupetasys shares fell more than 40% in about a month before rebounding, showing how volatile prices are around industry expectations."
           }
         }
       ],
       "sources": [
-        "https://www.mt.co.kr/industry/2026/06/16/2026061614280862866",
-        "https://www.etnews.com/20260730000201",
-        "https://m.news.nate.com/view/20260730n27373",
-        "https://www.newspim.com/news/view/20260625000102",
-        "https://www.g-enews.com/article/Global-Biz/2026/09/202609211949063314fbbec65dfb_1",
-        "https://datanews.co.kr/news/article.html?no=144593",
-        "https://www.pinpointnews.co.kr/news/articleView.html?idxno=490408",
-        "https://www.thelec.kr/news/articleView.html?idxno=55565"
+        "https://www.thelec.kr/news/articleView.html?idxno=64447",
+        "https://www.hankyung.com/article/2026102814471",
+        "https://m.news.nate.com/view/20261119n06483",
+        "https://m.sedaily.com/article/20106712",
+        "https://www.businesspost.co.kr/BP?command=article_view&num=450525",
+        "https://www.g-enews.com/article/Securities/2026/11/202611111628179237153ddfb15a_1",
+        "https://www.pinpointnews.co.kr/news/articleView.html?idxno=500239",
+        "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202611200073",
+        "https://www.sidae.com/article/2026111913431795652",
+        "https://www.job-post.co.kr/news/articleView.html?idxno=238963"
       ],
       "sector": "전자·부품",
-      "generatedAt": "2026-10-08 18:29"
+      "generatedAt": "2026-11-21 18:05"
     }
   }
 };
