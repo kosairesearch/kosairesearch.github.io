@@ -1,69 +1,69 @@
 // KOS ai — 업종 AI 분석 (자동 생성). 직접 수정 금지.
 window.KOS_SECTORS = {
-  "lastUpdated": "2026-11-21 18:18",
+  "lastUpdated": "2026-11-21 21:04",
   "model": "claude-sonnet-5-5",
   "sectors": {
     "유통·소비재": {
       "lead": {
-        "ko": "외국인 관광객 유입과 고환율 효과로 백화점이 업종 성장을 주도하는 가운데 대형마트·편의점은 채널별로 뚜렷한 온도차를 보이는 양극화 국면이 이어지고 있다.",
-        "en": "Department stores are leading sector growth on the back of inbound tourism and a weak won, while discount marts and convenience stores show diverging trajectories, extending a polarized retail cycle."
+        "ko": "소매유통, 종합상사, 렌탈, 가구 기업이 함께 묶인 업종이다. 2026년 3분기 공시 기준 상위 12개 종목 가운데 9곳은 영업이익이 늘고 이마트·SK네트웍스·한샘은 줄어 종목별 편차가 큰 국면이다.",
+        "en": "The sector groups retailers, trading houses, rental companies and a furniture maker. Based on Q3 2026 filings, nine of the top 12 stocks grew operating profit while E-Mart, SK Networks and Hanssem saw it fall, so dispersion across names is wide."
       },
       "overview": {
-        "ko": "유통·소비재 업종은 백화점·대형마트·편의점 등 전통 오프라인 유통채널과 렌탈·홈퍼니싱 등 소비재 서비스, 그리고 종합상사형 트레이딩 기업까지 폭넓게 아우른다. 상장 종목 수는 많은 편이지만 개별 기업의 시가총액은 상대적으로 작아 코스피·코스닥 전체에서 차지하는 비중은 크지 않은 업종이다. 내수 소비 흐름에 민감하게 반응하는 업종 특성상 소비심리지수, 환율, 외국인 관광객 수 등 거시 변수의 영향을 직접적으로 받는다. 포스코인터내셔널·LX인터내셔널 등 종합상사 계열이 시가총액 상위에 포진해 있어 순수 소비재보다는 트레이딩·에너지 사업 비중이 반영된 구조도 특징이다. 코웨이와 같은 렌탈 기반 구독형 비즈니스도 업종 내 주요 축을 이루고 있다.",
-        "en": "The retail and consumer goods sector spans traditional offline channels such as department stores, discount marts, and convenience stores, alongside rental and home-furnishing services as well as general trading houses. While the number of listed names is relatively large, individual market capitalizations tend to be modest, keeping the sector's overall weight in the broader market limited. Given its heavy reliance on domestic consumption, the sector is directly exposed to macro variables such as consumer sentiment indices, foreign exchange rates, and inbound tourist arrivals. Notably, general trading companies such as POSCO International and LX International rank among the largest names by market value, reflecting a structure weighted toward trading and energy operations rather than pure consumer goods. Subscription-based rental businesses such as Coway also form a significant pillar within the sector."
+        "ko": "유통·소비재 업종은 백화점, 편의점, 대형마트 같은 소매유통을 중심으로 렌탈, 종합상사, 홈인테리어 기업이 함께 속해 있다. 전체 시장 시가총액에서 차지하는 비중은 크지 않은 편이다. 시가총액 상위에는 종합상사인 포스코인터내셔널과 생활가전 렌탈 기업 코웨이가 자리하고, 신세계·BGF리테일·롯데쇼핑 같은 유통사가 그 뒤를 잇는다. 업종 안에서 사업 성격이 이질적이어서 하나의 업황으로 설명하기 어렵다. 내수 소비와 외국인 관광객 쇼핑, 무역·자원 시황, 렌탈 수요가 종목마다 서로 다른 실적 변수로 작용한다.",
+        "en": "The Distribution & Consumer Goods sector is centered on retail formats such as department stores, convenience stores and hypermarkets, and it also includes rental companies, trading houses and home-interior businesses. Its share of total market capitalization is modest. POSCO International, a trading company, and Coway, a home-appliance rental company, rank at the top by market value, followed by retailers such as Shinsegae, BGF retail and Lotte Shopping. Because the business models inside the sector differ so much, no single cycle explains it. Domestic consumption, spending by foreign visitors, trade and resource markets, and rental demand each drive earnings differently by company."
       },
       "structure": {
-        "ko": "밸류체인 상단에는 신세계·롯데쇼핑·현대백화점 등 프리미엄 소비를 흡수하는 백화점 3사가 자리하며, 이들은 최근 외국인 인바운드 수요 확대의 최대 수혜 채널로 부상했다. 중간 유통 단계에서는 BGF리테일·GS리테일이 편의점을 중심으로 근거리 소비를 담당하고, 이마트는 대형마트와 온라인몰을 함께 운영하며 채널 전환기의 압박을 가장 크게 받고 있다. 렌탈·구독 모델의 코웨이와 자동차 렌탈의 롯데렌탈은 전통 유통과는 다른 안정적 현금흐름 구조를 갖추고 있으며, 한샘은 홈퍼니싱 전문기업으로 주거 관련 소비재를 대표한다. 포스코인터내셔널·LX인터내셔널은 에너지·자원 트레이딩을 중심으로 한 종합사업회사이고, SK네트웍스는 정보통신 기기 유통과 렌탈·호텔 자회사를 둔 사업지주회사로, 유통업종 내에서도 이질적인 사업 포트폴리오를 지닌다. 전반적으로 업태별 집중도는 높은 편으로, 백화점은 3사, 편의점은 사실상 2강 구도가 형성돼 있다.",
-        "en": "At the top of the value chain sit the three department store operators—Shinsegae, Lotte Shopping, and Hyundai Department Store—which capture premium consumption and have recently emerged as the primary beneficiaries of expanding inbound foreign demand. In the mid-tier, BGF Retail and GS Retail serve localized consumption through convenience store networks, while E-Mart, operating both discount marts and online channels, faces the greatest pressure amid the ongoing channel shift. Subscription-based Coway and auto-rental operator Lotte Rental maintain cash-flow structures distinct from traditional retail, while Hanssem represents home-furnishing-related consumer goods. POSCO International and LX International are trading-centered business groups focused on energy and resources, while SK Networks is an operating holding company with telecom device distribution and rental and hotel subsidiaries, giving them notably different portfolios within the sector. Overall concentration by sub-segment is high, with department stores effectively a three-way field and convenience stores largely a two-player structure."
+        "ko": "백화점은 신세계, 현대백화점, 롯데쇼핑의 백화점 부문이 대표적이고, 현대백화점은 면세점과 가구·매트리스 계열사 지누스를 함께 가지고 있다. 편의점은 CU를 운영하는 BGF리테일과 GS25를 운영하는 GS리테일이 맞서는 구도로, 업계에서는 이 둘을 편의점 양강으로 본다. 대형마트는 이마트와 롯데쇼핑이 중심이며, 이마트는 트레이더스, 온라인 자회사 SSG.COM, 스타벅스를 운영하는 SCK컴퍼니, 신세계건설까지 거느린 복합 구조다. 종합상사는 철강 트레이딩과 에너지·소재 사업의 포스코인터내셔널, 자원·트레이딩·물류 세 부문의 LX인터내셔널이 있고, SK네트웍스는 AI 중심 사업지주회사로 전환하며 종합상사 시절의 사업을 정리하는 중이다. 렌탈은 정수기·공기청정기 등 생활가전의 코웨이와 자동차 장기렌터카의 롯데렌탈로 나뉘고, 홈인테리어 가구는 한샘이 맡는다.",
+        "en": "In department stores, the main names are Shinsegae, Hyundai Department Store and the department-store division of Lotte Shopping, and Hyundai Department Store also owns duty-free operations and the furniture and mattress unit Zinus. In convenience stores, BGF retail, which runs CU, and GS Retail, which runs GS25, face off, and the industry regards the two as the leading pair. In hypermarkets, E-Mart and Lotte Shopping lead, and E-Mart is a complex group that includes Traders, the online unit SSG.COM, SCK Company (which operates Starbucks in Korea) and Shinsegae E&C. Among trading houses, POSCO International covers steel trading, energy and materials, LX International splits into resources, trading and new growth, and logistics, and SK Networks is turning into an AI-focused holding company while winding down its legacy trading businesses. Rental is split between Coway in home appliances and LOTTE rental in long-term car rentals, and Hanssem covers home-interior furniture."
       },
       "trends": {
-        "ko": "NICE신용평가는 2026년 상반기 국내 소매판매액이 338조원으로 전년 동기보다 5.6% 늘어 증가세로 돌아섰다고 분석했다. 다만 업태별 온도차는 뚜렷해, 백화점 매출은 전년 동기 대비 20.1% 늘어 2025년 상반기 증가율(0.5%)을 크게 웃돌았다. 특히 해외 유명 브랜드 매출이 30.8% 늘어 외국인 관광객과 고소득층 소비가 성장을 이끌었다. 공시 기준으로도 신세계와 롯데쇼핑의 2026년 2분기 영업이익이 전년 동기 대비 각각 121.8%, 121.2% 늘었다. 다만 현대백화점은 영업이익이 8.7% 줄었다. 반면 대형마트와 SSM은 식품 판매 부진으로 상반기 매출이 각각 7.3%, 6.6% 줄었고, 이는 이마트가 2분기에 영업손실로 돌아선 배경으로 해석된다. 편의점 매출은 2025년 상반기 1.0% 감소에서 2026년 상반기 3.7% 증가로 돌아섰으며, 이른 무더위로 음료와 즉석식품 판매가 늘어 BGF리테일과 GS리테일의 2분기 영업이익도 늘었다.",
-        "en": "According to NICE Investors Service, domestic retail sales rose 5.6% year-on-year to KRW 338 trillion in the first half of 2026, returning to growth. Performance diverged sharply by channel, however: department store sales rose 20.1%, far outpacing the 0.5% growth in the first half of 2025, as luxury brand sales jumped 30.8% on spending by foreign tourists and high-income consumers. Disclosed results corroborate this trend, with Shinsegae and Lotte Shopping posting second-quarter 2026 operating profit growth of 121.8% and 121.2%, respectively, although Hyundai Department Store's operating profit fell 8.7%. In contrast, discount marts and supermarket chains saw first-half sales fall 7.3% and 6.6%, respectively, on weak food sales, a backdrop that helps explain E-Mart's swing to an operating loss in the second quarter. Convenience store sales returned to growth, rising 3.7% in the first half of 2026 after a 1.0% decline a year earlier, as early summer heat boosted beverage and ready-to-eat food sales and lifted second-quarter operating profit at BGF Retail and GS Retail."
+        "ko": "2026년 3분기 공시 기준 상위 12개 종목 중 영업이익이 늘어난 회사는 9곳이고, 증가율은 BGF리테일 3.3%에서 LX인터내셔널 120.9%까지 분포했다. 롯데백화점, 신세계백화점, 현대백화점의 3분기 영업이익은 각각 35.7%, 23.5%, 27.8% 증가했다. 연결 기준 영업이익 증가율은 신세계 64.7%, 롯데쇼핑 34.5%, 현대백화점 30.1%였다. 이마트는 별도 기준 영업이익이 46.3% 늘었지만 연결 영업이익은 461억원으로 전년 동기 대비 69.6% 감소했다. 스타벅스를 운영하는 SCK컴퍼니가 453억원의 영업손실을 기록한 것이 연결 실적에 부담이 됐다. 편의점에서는 GS25의 영업이익이 782억원으로 8.1% 감소했으나 GS리테일 연결 영업이익은 16.0% 늘었다. 한샘은 매출이 19.0%, 영업이익이 76.5% 줄었고, SK네트웍스도 매출 1.9%, 영업이익 9.9%가 감소했다.",
+        "en": "Based on Q3 2026 filings, nine of the top 12 stocks grew operating profit, with growth ranging from 3.3% at BGF retail to 120.9% at LX International. Operating profit at Lotte, Shinsegae and Hyundai department stores rose 35.7%, 23.5% and 27.8% respectively in the third quarter. Consolidated operating profit growth was 64.7% at Shinsegae, 34.5% at Lotte Shopping and 30.1% at Hyundai Department Store. E-Mart's standalone operating profit rose 46.3%, but its consolidated operating profit was KRW 46.1 billion, down 69.6% year on year. SCK Company, which operates Starbucks, posted an operating loss of KRW 45.3 billion, which weighed on consolidated results. In convenience stores, GS25's operating profit fell 8.1% to KRW 78.2 billion, while GS Retail's consolidated operating profit rose 16.0%. Hanssem's revenue fell 19.0% and its operating profit fell 76.5%, and SK Networks saw revenue fall 1.9% and operating profit fall 9.9%."
       },
       "outlook": {
-        "ko": "향후 업종의 관건은 외국인 인바운드 수요의 지속성과 소비 양극화의 완화 여부다. 환율 수준이 백화점·면세 채널의 수익성에 직접 영향을 미치는 만큼 원화 강세 전환 시 외국인 매출 기여도 변화를 주시할 필요가 있다. 대형마트·SSM은 온라인 식품 수요 이전이라는 구조적 과제에 직면해 있어 퀵커머스·즉시배송 등 서비스 확장이 실적 반등의 핵심 변수로 꼽힌다. 렌탈·구독형 비즈니스는 경기 변동에 상대적으로 덜 민감한 안정적 수익 구조를 유지할 가능성이 높으며, 트레이딩 계열사는 에너지·자원 가격과 글로벌 수요 동향에 연동된 별도의 사이클을 보일 전망이다. 전반적으로 업태 간 실적 격차는 당분간 이어질 가능성이 높다.",
-        "en": "Going forward, the sector's key considerations are the durability of foreign inbound demand and whether consumption polarization eases. Because exchange rate levels directly affect the profitability of department store and duty-free channels, any shift toward won appreciation would warrant attention to changes in foreign tourist revenue contribution. Discount marts and supermarket chains face the structural challenge of food demand migrating online, making expansion of quick-commerce and instant delivery services a key variable for any earnings recovery. Rental and subscription-based businesses are likely to maintain relatively stable earnings structures less sensitive to economic cycles, while trading-house affiliates will likely follow a separate cycle tied to energy and resource prices and global demand trends. Overall, performance gaps between sub-segments are likely to persist for some time."
+        "ko": "대한상공회의소의 4분기 소매유통업 경기전망지수는 88로 전 분기보다 4포인트 하락했다. 업태별로는 백화점이 130, 대형마트가 111로 기준치를 웃돈 반면 편의점은 127에서 79로 급락했다. 백화점에서는 외국인 소비가 핵심 동력으로, 신세계백화점의 2026년 1~3분기 누적 외국인 매출은 8,500억원으로 전년 동기 대비 두 배 이상 늘었다. 편의점은 가공식품 가격 인상 여부가 관건으로 꼽힌다. 규제 측면에서는 정부가 대형마트의 새벽배송 금지 규제 완화에 나서는 한편, 의무휴업일을 법정 공휴일로 강제하는 방안도 재추진될 가능성이 거론된다. 포스코인터내셔널·LX인터내셔널·코웨이 등 비소매 종목은 3분기의 이익 증가가 이어질지가 관전 포인트다.",
+        "en": "The Korea Chamber of Commerce and Industry's fourth-quarter retail outlook index fell 4 points from the previous quarter to 88. By format, department stores at 130 and hypermarkets at 111 stayed above the baseline, while convenience stores dropped sharply from 127 to 79. In department stores, foreign-visitor spending is the key driver, and Shinsegae Department Store's cumulative foreign sales for January to September 2026 reached KRW 850 billion, more than double the prior-year level. For convenience stores, whether processed-food prices rise is the key variable. On regulation, the government is moving to ease the ban on early-morning delivery by hypermarkets, even as a push to mandate closures on public holidays may return. For non-retail names such as POSCO International, LX International and Coway, the question is whether the profit growth seen in the third quarter continues."
       },
       "risks": [
         {
           "title": {
-            "ko": "소비 양극화 심화",
-            "en": "Deepening Consumption Polarization"
+            "ko": "신중해진 가계 소비",
+            "en": "More cautious household spending"
           },
           "body": {
-            "ko": "소득 상위 20%와 하위 20%의 처분가능소득 격차가 최고치를 기록한 가운데, 소비 여력이 부족한 계층은 가격을 중시하는 반면 고소득층은 고가 상품 지출을 이어가고 있다. 이는 백화점과 대형마트 간 실적 격차를 구조적으로 고착시킬 수 있는 요인이다.",
-            "en": "The gap in disposable income between the top and bottom income quintiles has reached a record high, with lower-income households increasingly price-conscious while high earners sustain premium spending. This dynamic risks structurally entrenching the performance gap between department stores and discount marts."
+            "ko": "4분기 경기 악화를 예상한 203개 업체 중 70%가 신중해진 가계 씀씀이를 최대 요인으로 지목했다. 가성비 상품 선호가 늘었다는 응답은 33.2%였다. 연말 소비가 기대에 못 미치면 소매 종목의 이익 증가세가 둔화될 수 있다.",
+            "en": "Of 203 companies expecting a worse fourth quarter, 70% named more cautious household spending as the biggest factor. 33.2% of respondents said preference for value-for-money products had increased. If year-end spending falls short of expectations, profit growth at retail names could slow."
           }
         },
         {
           "title": {
-            "ko": "온라인 침투에 따른 오프라인 식품 채널 위축",
-            "en": "Erosion of Offline Food Channels from Online Penetration"
+            "ko": "규제 변화와 온라인 경쟁",
+            "en": "Regulatory shifts and online competition"
           },
           "body": {
-            "ko": "장보기 수요의 온라인 이전이 가속화되면서 품목별로는 가전·문화, 패션·잡화 등이 고르게 성장한 반면 식품은 온라인에서 11.0% 증가하고 오프라인에서는 0.5% 감소하는 흐름이 나타났다. 대형마트·SSM 중심 기업에는 구조적 매출 압박 요인으로 작용할 수 있다.",
-            "en": "As grocery shopping demand continues migrating online, category data shows electronics, culture, and fashion goods growing broadly while online food sales rose 11.0% even as offline food sales declined 0.5%. This trend represents a structural sales headwind for companies centered on discount marts and supermarket formats."
+            "ko": "대형마트는 의무휴업과 새벽배송 규제의 방향에 따라 영업 여건이 달라질 수 있다. 온라인 쪽에서는 쿠팡의 3분기 영업손실이 6,423억원으로 적자 전환했을 만큼 비용 부담이 크다. 할인·배송 혜택 강화는 비용 부담으로 이어질 수 있어 경쟁이 심해지면 오프라인 업체의 판촉 비용도 늘 수 있다.",
+            "en": "Hypermarket operating conditions could change depending on the direction of mandatory closure and early-morning delivery rules. Online, cost pressure is heavy, as Coupang swung to an operating loss of KRW 642.3 billion in the third quarter. Stronger discount and delivery benefits can raise costs, so intensifying competition could also lift promotional spending at offline retailers."
           }
         },
         {
           "title": {
-            "ko": "환율·외국인 수요 의존도",
-            "en": "Dependence on Exchange Rates and Foreign Demand"
+            "ko": "자회사·부문별 실적 편차",
+            "en": "Earnings dispersion across subsidiaries and segments"
           },
           "body": {
-            "ko": "백화점의 실적 개선은 원화 약세에 따른 외국인 관광객 유입 확대와 맞물려 있어, 환율 방향이 바뀌면 외국인 매출의 기여도가 줄어들 수 있다.",
-            "en": "Department store gains are closely tied to foreign tourist inflows driven by a weak won, so a reversal in the exchange rate could reduce the contribution from foreign shoppers."
+            "ko": "이마트는 SCK컴퍼니의 영업손실이 연결 이익을 끌어내렸고, 현대백화점도 지누스의 125억원 영업손실이 부담으로 작용했다. 한샘은 2026년 3분기 매출과 영업이익이 모두 줄었고, SK네트웍스는 사업 구조 정리 과정에 있다. 본업이 좋아도 자회사와 비주력 부문의 적자가 연결 실적을 좌우할 수 있다.",
+            "en": "At E-Mart, losses at SCK Company dragged down consolidated profit, and Hyundai Department Store was also weighed down by a KRW 12.5 billion operating loss at Zinus. Hanssem's revenue and operating profit both fell in Q3 2026, and SK Networks is still restructuring its business portfolio. Even when core operations are healthy, losses at subsidiaries and non-core segments can determine consolidated results."
           }
         }
       ],
       "sources": [
-        "https://www.mydaily.co.kr/page/view/2026100201504736028",
-        "https://v.daum.net/v/20260729110305816",
-        "https://www.mt.co.kr/economy/2026/07/29/2026072910393977254",
-        "https://v.daum.net/v/20260102070222723?f=p"
+        "https://www.ddaily.co.kr/page/view/2026111115343393732",
+        "https://www.asiatoday.co.kr/kn/view.php?key=20261021010006904",
+        "https://www.viva100.com/article/20261014500396",
+        "https://www.bntnews.co.kr/article/view/bnt202609260124"
       ],
       "sector": "유통·소비재",
-      "generatedAt": "2026-10-08 18:29"
+      "generatedAt": "2026-11-21 21:04"
     },
     "부동산·리츠": {
       "lead": {
