@@ -11,6 +11,7 @@
   ② 주문      걸린 칸만 요청에 담고, 칸 지문을 남긴다 · 즉시 호출 없이 배치로
   ③ 끼우기    연도로 바꾼 답은 저장 · 원래 파일 꼴(들여쓰기 · 끝 줄바꿈) 그대로 · textRules 는 그대로
   ④ 저장 문턱  숫자를 지움 · 연도 아닌 숫자를 더함 · 다른 검사 위반 · 영어 빈 칸 · 위반이 줄지 않음 · 칸 구조가 다름 → 저장하지 않는다
+               연도에 붙은 분기 · 월 번호('2025년 3분기' · 'Q3 2025') · 그 칸에 이미 있던 숫자는 새 숫자로 치지 않는다(11/23)
   ⑤ 덮지 않기  배치를 기다리는 동안 다시 쓰인 글(칸 지문이 다름)은 건드리지 않는다
   ⑥ 작업 파일  수동 · 기본은 세기만 · 최신 main 으로 맞춘 뒤 끼운다 · push_main.sh · 워치독 정리 · 실패를 넘기지 않는다(pipefail)
 """
@@ -147,6 +148,25 @@ ok(R.judge("stale_year", rep, msg({"earnings": {"ko": "내년 매출 목표는 3
 ok(R.judge("stale_year", rep, msg({"earnings": "2027년"}))[0] is None, "칸 구조가 다른 답은 저장하지 않는다")
 good5 = R.judge("stale_year", rep, msg({"earnings": {"ko": "2027년 매출 목표는 30억원이다.", "en": "The 2027 target is KRW 3 billion."}}))
 ok(good5[0] is not None and good5[1] == "2 → 0", "한국어 · 영어 두 곳을 모두 고친 답은 통과", good5[1])
+# 11/23 두 번째 실행 — '2025년 3분기' · 같은 칸의 날짜를 쓴 맞는 답 13편이 '연도가 아닌 새 숫자'로 버려졌다
+rep7 = rep_of("777770", "2026년 3분기 영업이익률은 9.9%로 지난해 같은 기간 2.6%보다 높았다. 수주액은 2026년 5월 24일 기준 집계다.",
+              "The Q3 2026 operating margin was 9.9%, up from 2.6% last year. Orders are as of May 24, 2026.")
+q7 = R.judge("stale_year", rep7, msg({"earnings": {
+    "ko": "2026년 3분기 영업이익률은 9.9%로 2025년 3분기 2.6%보다 높았다. 수주액은 2026년 5월 24일 기준 집계다.",
+    "en": "The Q3 2026 operating margin was 9.9%, up from 2.6% in Q3 2025. Orders are as of May 24, 2026."}}))
+ok(q7[0] is not None, "연도에 붙은 분기 번호('2025년 3분기' · 'Q3 2025')는 새 숫자로 치지 않는다", q7[1])
+q7b = R.judge("stale_year", rep7, msg({"earnings": {
+    "ko": "2026년 3분기 영업이익률은 9.9%로 2025년 1~3분기 2.6%보다 높았다. 2026년 수주액은 5월 24일 기준 집계다.",
+    "en": "The Q3 2026 operating margin was 9.9%, up from 2.6% in 3Q 2025. Orders are as of May 24, 2026."}}))
+ok(q7b[0] is not None, "기간 범위('2025년 1~3분기') · 그 칸에 이미 있던 날짜(24)도 새 숫자로 치지 않는다", q7b[1])
+q7c = R.judge("stale_year", rep7, msg({"earnings": {
+    "ko": "2026년 3분기 영업이익률은 9.9%로 2025년 3분기 2.6%보다 7.3%포인트 높았다. 수주액은 2026년 5월 24일 기준 집계다.",
+    "en": "The Q3 2026 operating margin was 9.9%, up 7.3 points from 2.6% in Q3 2025. Orders are as of May 24, 2026."}}))
+ok(q7c[0] is None and "연도가 아닌 새 숫자 7.3" in q7c[1], "연도에 붙지 않은 새 숫자(7.3)는 여전히 막는다", q7c[1])
+q7d = R.judge("stale_year", rep7, msg({"earnings": {
+    "ko": "2026년 3분기 영업이익률은 9.9%로 2025년 같은 기간 2.6%보다 높았다. 수주액은 2026년 5월 기준 집계다.",
+    "en": "The Q3 2026 operating margin was 9.9%, up from 2.6% in 2025. Orders are as of May 2026."}}))
+ok(q7d[0] is None and "숫자가 빠짐" in q7d[1], "있던 날짜(24)를 지운 답은 여전히 막는다", q7d[1])
 
 print("⑤ 덮지 않기")
 p6 = write("reports_v2", "555550", rep_of("555550", "올해 매출은 40억원이다.", "Revenue this year was KRW 4 billion."))
