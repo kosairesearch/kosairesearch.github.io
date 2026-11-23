@@ -1,0 +1,89 @@
+name: ✏️ 리포트 표현 교정 (걸린 문장만 · 배치 · 수동)
+
+# 화면에 나오는 리포트에 남은 검사 위반을 걸린 문장만 교정 배치(소넷 5.5)로 고친다 — scripts/repair_rules_batch.py.
+# 첫 쓰임(2026-11-23 · 자동 점검 3/3): 11/18 규칙 전에 쓴 리포트의 연도 상대 표현('올해 · 지난해 · 내년')을 해가 바뀌기 전에 숫자로.
+# 글 전체를 다시 쓰지 않는다. 배치를 기다리는 동안 다른 작업이 다시 쓴 리포트는 건드리지 않는다(최신 main 으로 맞춘 뒤 칸 지문을 견준다).
+# 저장 문턱 · 돈은 스크립트 머리말. dry(기본)는 대상만 센다 — 돈 안 듦.
+on:
+  workflow_dispatch:
+    inputs:
+      rule:
+        description: '고칠 규칙'
+        type: choice
+        options: [stale_year]
+        default: stale_year
+      limit:
+        description: '최대 편수(0 = 전부)'
+        default: '0'
+      dry:
+        description: '대상만 세기(주문하지 않음 · 돈 안 듦)'
+        type: boolean
+        default: true
+
+concurrency:
+  group: kos-repair
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  actions: write   # 끝난 뒤 리포트 워치독(정리만)을 부른다 — 목록 · 종목 페이지 · 첫 화면 숫자
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - name: 패키지 설치
+        run: pip install -r requirements.txt
+
+      - name: 1) 대상 세기
+        run: |
+          set -o pipefail
+          python scripts/repair_rules_batch.py plan --rule "${{ inputs.rule }}" --limit "${{ inputs.limit }}" 2>&1 | tee -a $GITHUB_STEP_SUMMARY
+
+      - name: 2) 교정 배치 주문 · 기다리기
+        if: ${{ !inputs.dry }}
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          set -o pipefail
+          python scripts/repair_rules_batch.py order --rule "${{ inputs.rule }}" --limit "${{ inputs.limit }}" 2>&1 | tee -a $GITHUB_STEP_SUMMARY
+
+      # 배치를 기다리는 동안 다른 작업이 main 에 올린 리포트를 덮지 않게, 받은 답은 최신 main 의 글에 끼운다
+      - name: 3) 최신 main 으로 맞추기
+        if: ${{ !inputs.dry }}
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+
+      - name: 4) 받은 답 끼우기(저장 문턱을 넘은 글만)
+        id: apply
+        if: ${{ !inputs.dry }}
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          set -o pipefail
+          python scripts/repair_rules_batch.py apply 2>&1 | tee -a $GITHUB_STEP_SUMMARY
+
+      - name: 5) 커밋 · 올리기
+        if: ${{ !inputs.dry }}
+        run: |
+          git config --global user.email "bot@kosairesearch.github.io"
+          git config --global user.name "KOS ai Bot"
+          git add data/reports_v2 data/reports
+          git commit -m "✏️ 리포트 표현 교정(${{ inputs.rule }}) $(TZ='Asia/Seoul' date +'%Y-%m-%d %H:%M KST')" || { echo "변경 없음"; exit 0; }
+          bash scripts/push_main.sh
+
+      # 수동 실행은 워치독의 workflow_run 대상이 아니다 — 고친 글이 있으면 정리(목록 · 종목 페이지 · 첫 화면 숫자)를 직접 부른다
+      - name: 6) 리포트 목록 정리 요청(워치독 · 정리만)
+        if: ${{ !inputs.dry && steps.apply.outputs.saved != '' && steps.apply.outputs.saved != '0' }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run reports_watchdog.yml -f sync_only=true || echo "::warning::워치독 정리 요청 실패 — 예약 실행이 맞춘다"
