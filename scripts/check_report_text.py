@@ -1174,6 +1174,22 @@ def year_hits(rep):
     return hits
 
 
+# 업종 분석(data/sectors.js)의 칸 → 리포트 칸. 업종 분석은 종목이 없어 year_hits 가 걸리지 않는다 — 칸을 옮기고 종목 자리를 채워 건다.
+SECTOR_AS_REPORT = {"lead": "lead", "overview": "business", "structure": "industry", "trends": "earnings",
+                    "outlook": "outlook", "risks": "risks"}
+
+
+def sector_year_hits(sec, date=None):
+    """업종 분석의 연도 상대 표현(2026-11-23) — 리포트와 같은 규칙(year_hits). 업종 분석도 다음 분기 갱신까지 걸려 있어 해가
+    바뀌면 '올해 · 내년'이 틀린다. 11/21 판 30편에 '지난해 실적' · '내년부터'(기계 · 장비) · '올 들어'(미디어 · 엔터)가 있었다.
+    date 는 작성일(없으면 그 업종의 generatedAt)."""
+    if not isinstance(sec, dict):
+        return []
+    rep = {SECTOR_AS_REPORT[k]: v for k, v in sec.items() if k in SECTOR_AS_REPORT}
+    rep.update(ticker="sector", textRules=YEAR_RULES, reportDate=str(date or sec.get("generatedAt") or "")[:10])
+    return year_hits(rep)
+
+
 def check(rep):
     """위반 목록을 돌려준다. [] 면 통과."""
     hits = []

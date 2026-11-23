@@ -761,6 +761,8 @@ for name, obj in sectors.items():
         bad += [("sectors/" + name, h) for h in C.defects(obj)]
         bad += [("sectors/" + name, h) for h in C.check({AS_REPORT[k]: v for k, v in obj.items() if k in AS_REPORT})
                 if h["level"] == "위험" or h["rule"] in SEC_GATE]
+        # 연도 상대 표현(2026-11-23) — 생성기는 마지막 회차에 받는다. 그렇게 받은 글은 여기서 걸린다 — 손으로 연도 숫자로 고친다
+        bad += [("sectors/" + name, h) for h in C.sector_year_hits(obj)]
 for where, h in bad[:8]:
     print(f"      {where} [{h['section']}] {h['rule']} {h['match']!r} — {h['sentence'][:70]}")
 eq(f"리포트 {n:,}개 · 업종 {len(sectors)}개 — 검사 위반 0(글자 결함 · 받은 자료 언급 · 상대 시점 · 영어 낱말 · 투자 판단 · 주당지표 …)", len(bad), 0)

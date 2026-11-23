@@ -822,11 +822,51 @@ def fin_hits(rep, info):
                     if len(gap) >= 2:
                         judge(m4.group(0), gap, lambda n: None if any(yo(n, k) is None for k in keys)
                               else all(yo(n, k) < 0 for k in keys), keys)
+            # ③ 나열한 회사의 합산 — 'A, B, C 3사의 3분기 합산 매출은 X원, 합산 영업이익은 Y원으로 전년 동기 대비 각각 a%, b% 늘었다'
+            #    (2026-11-23). 11/21 판 전기장비가 기사의 합계를 옮겨 재료 합(4조 7,983억원 · +25.1%)과 다른 4조 2,509억원 · +26.7% 를
+            #    썼다. 이름을 나열한 문장만 본다('방산 4사의 합산 …'처럼 회사를 밝히지 않으면 누구를 더했는지 알 수 없다).
+            #    회사 이름 뒤에 부문이 붙으면('삼성물산 건설부문') 재료(연결 실적)와 다른 값이라 보지 않는다. 별도 기준도 같다.
+            if q_here and "합산" in sent and "별도" not in sent:
+                sums = list(_FH_SUM.finditer(sent))
+                before = [(a0, a1, nm) for a0, a1, nm in occ if sums and a0 < sums[0].start()]
+                names = list(dict.fromkeys(nm for _, _, nm in before))
+                seg = any(re.match(r"\s*(?:[가-힣A-Za-z]+\s*)?부문", sent[a1:]) for _, a1, _ in before)
+                if len(names) >= 2 and not seg:
+                    mets = []
+                    for sm_ in sums:
+                        key = met_key(sm_.group("m"))
+                        cur = [facts[n].get(key) for n in names]
+                        prv = [facts[n].get(key + "_p") for n in names]
+                        if any(x is None for x in cur) or sm_.group("m") == "영업손실":
+                            continue
+                        total, total_p = sum(cur), (sum(prv) if all(x is not None for x in prv) else None)
+                        mets.append((sm_.group("m"), total, total_p))
+                        num, unit = C._amt_value(sm_.group("a"))
+                        if unit is not None and abs(total - num) > unit * 1.5:
+                            out.append(f"합산 대조({path}) {'·'.join(names)} 합산 {sm_.group('m')} {sm_.group('a')} — 재료 합은 "
+                                       f"{'영업손실 ' if total < 0 else ''}{_won(abs(total))}")
+                    tm = _FH_SUM_TAIL.match(sent, sums[-1].end()) if sums else None
+                    if tm and mets:
+                        pcts = [x for x in (tm.group(1), tm.group(2)) if x]
+                        pairs = list(zip(mets, pcts)) if len(pcts) == len(mets) else [(mets[-1], pcts[0])] if len(pcts) == 1 else []
+                        sign = 1 if re.match(_FH_UP, tm.group("v")) else -1
+                        for (met, total, total_p), pc in pairs:
+                            r = _yoy(total, total_p)
+                            if r is None:
+                                continue
+                            want = float(pc.replace(",", "")) * sign
+                            if abs(want - round(r, 1)) > (0.15 if "." in pc else 0.55):
+                                out.append(f"합산 대조({path}) {'·'.join(names)} 합산 {met} 전년 동기 대비 {pc}% — 재료 합은 {_pct_text(r)}")
             prev_q = q_here
     return list(dict.fromkeys(out))
 
 
-def defects(rep, message=None, info=None, sources=None):
+_FH_SUM = re.compile(rf"합산\s*(?P<m>{_FH_MET})(?:은|는|이|가|도)?\s*(?P<a>{_FH_AMT})")
+_FH_SUM_TAIL = re.compile(rf"(?:이었고|였고|이며|으로|로)?\s*,?\s*(?:전년 동기 대비|전년 대비|1년 전보다)\s*(?:각각\s*)?{_FH_PCT}"
+                          rf"(?:\s*(?:,|와|과|및)\s*{_FH_PCT})?\s*(?:씩\s*)?(?P<v>{_FH_UP}|{_FH_DOWN})")
+
+
+def defects(rep, message=None, info=None, sources=None, year=None):
     """저장하면 안 되는 결함 목록. 비어 있으면 정상.
 
     2026-08 생성분에서 실제로 나온 것들이다. 한 번 저장되면 다음 분기까지 그대로
@@ -844,6 +884,11 @@ def defects(rep, message=None, info=None, sources=None):
         먼저 걸릴 수 있었다.
       · 출처 0건 — sources 를 넘기면(목록) 웹 검색 인용이 하나도 없는 글을 거른다.
         None 이면 보지 않는다(마지막 회차 · collect 의 strict_sources 참고).
+
+    2026-11-23 — 연도 상대 표현('올해 · 지난해 · 내년 · 올 들어' · 'this · last · next year'). year 에 작성일을 넘기면
+    거른다(리포트와 같은 규칙 · check_report_text.sector_year_hits). 업종 분석도 다음 분기 갱신까지 걸려 있어 해가 바뀌면
+    틀린다(11/21 판 30편 중 2편 3곳 — 지시문에 '연도도 숫자로'가 있어도 썼다). 출처 0건처럼 마지막 회차는 받는다(year=None) —
+    계속 버리면 그 업종이 옛 글에 갇힌 채 돈만 나간다. 그렇게 받은 글은 검사 묶음의 전수 검사가 잡는다(손으로 고친다).
     """
     out = []
     if getattr(message, "stop_reason", None) == "max_tokens":
@@ -874,6 +919,9 @@ def defects(rep, message=None, info=None, sources=None):
     for h in C.check(_as_report(rep)):
         if h["level"] == "위험" or h["rule"] in GATE_RULES:
             out.append(f"글자 결함 {h['rule']}({_FROM_REPORT.get(h['section'], h['section'])}) {h['match']!r}")
+    if year:
+        for h in C.sector_year_hits(rep, year):
+            out.append(f"연도 상대 표현({_FROM_REPORT.get(h['section'], h['section'])}) {h['match']!r}")
     if sources is not None and not sources:
         out.append("출처 0건(웹 검색 인용 없음)")
     # 협의 없이 쓰지 않는 사이트(치킨스탁 등)가 검색 결과 · 인용에 들어왔으면 그 글은 쓰지 않는다(2026-10-19) — 다시 쓴다
@@ -961,7 +1009,7 @@ def prepare(rep):
 
 
 # 검토로 고칠 수 없는 결함 — 글이 잘렸거나 비었거나 출처가 없다. 이런 글은 다시 쓴다(다음 회차).
-_REWRITE = ("max_tokens", "리스크 3개 미만", " 빔", "문장 안 끝남", "출처 0건", "쓰지 않기로 한 사이트")
+_REWRITE = ("max_tokens", "리스크 3개 미만", " 빔", "문장 안 끝남", "출처 0건", "쓰지 않기로 한 사이트", "연도 상대 표현")
 # 검토를 켜고 끈다. 끄면 2026-10-08 판처럼 기계 검사만 하고 저장한다(검토 비용이 들지 않는다).
 # 기본은 끔(2026-10-09) — 시험(review_replay)에서 검토 모델이 출처 있는 수치를 '재료에 없다'며 지우고, 영문명을 대소문자 ·
 # 옛 이름으로 바꾸는 틀린 고침을 냈다. 고친 뒤 시험을 통과하면 SECTOR_REVIEW=1 로 켠다.
@@ -1094,7 +1142,7 @@ def collect(cl, as_of, strict_sources=True):
             rep = prepare(g.parse_report(text))
             srcs = g.collect_sources(result.result.message)
             why = defects(rep, result.result.message, agg.get(sec),
-                          sources=srcs if strict_sources else None)
+                          sources=srcs if strict_sources else None, year=as_of if strict_sources else None)
             hard = _needs_rewrite(why) if REVIEW else why
             if hard:
                 fail += 1; dropped.append(sec)
@@ -1116,11 +1164,16 @@ def collect(cl, as_of, strict_sources=True):
                 fail += 1; dropped.append(sec)
                 log(f"  · ⚠️ {sec} {note} — 저장하지 않음"); continue
             rep = prepare(got)
-            why = defects(rep, None, agg.get(sec), sources=srcs if strict_sources else None)
+            why = defects(rep, None, agg.get(sec), sources=srcs if strict_sources else None,
+                          year=as_of if strict_sources else None)
             if why:
                 fail += 1; dropped.append(sec)
                 log(f"  · ⚠️ {sec} 검토 뒤에도 결함 — 저장하지 않음 ({'; '.join(why)})"); continue
             log(f"  · 🔎 {sec} {note}")
+        yh = C.sector_year_hits(rep, as_of)
+        if yh:                          # 마지막 회차라 받았다 — 전수 검사(check_report_text_test)가 잡는다. 그 문장을 손으로 고친다
+            log(f"  · ⚠️ {sec} 연도 상대 표현 {len(yh)}곳 — 마지막 회차라 저장한다("
+                f"{', '.join(repr(h['match']) for h in yh[:3])} · 손으로 연도 숫자로 고칠 것)")
         rep.pop("sources", None)        # 출처는 웹 검색 인용에서만 — 모델이 글 안에 적은 목록은 쓰지 않는다
         if srcs:
             rep["sources"] = srcs[:10]
