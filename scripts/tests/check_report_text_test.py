@@ -562,6 +562,20 @@ eq("약어는 대문자 그대로 · 보통 낱말은 첫 글자만", [C.clean_e
     "KOREAN AIR LINES CO.,LTD", "A-JIN INDUSTRY", "3C TAE YANG", "DI DONG IL", "KIA CORPORATION", "SAMSUNG BIOLOGICS")],
    ["Samsung SDS", "LG CNS", "SKC", "DTS", "CJ ENM", "APR", "Hyundai WIA", "S-OIL",
     "Korean Air Lines", "A-Jin Industry", "3C Tae Yang", "DI Dong Il", "Kia", "Samsung Biologics"])
+# 붙여 쓴 공시 영문명(2026-11-23) — 영어 종목 페이지 제목에 'KolonGlobalCorporation (003070) Report' 가 나왔다. 붙은 회사 꼬리를 떼고,
+# 꼬리가 길거나 남은 이름이 12자 이상이면 띄운다. 짧은 꼬리의 짧은 이름 · 한 글자 소문자로 시작하는 이름은 브랜드 꼴 그대로.
+eq("붙여 쓴 영문명 — 붙은 꼬리를 떼고 띄운다", [C.clean_en(x) for x in (
+    "KoreaGasCorporation", "SKNetworksCompanyLimited", "KolonGlobalCorporation CO.,LTD", "KohYoungTechnologyInc.",
+    "NatureandEnvironmentCo.,Ltd.", "SystemandApplicationTechnologiesInc.", "HANILCEMENTCO.,LTD.", "MODETOURNETWORKINC.",
+    "BIONEERCORPORATION", "NeopharmCO.,LTD.", "Daebonglsco.,Ltd", "eSANGNetworksCo.,Ltd", "ToolGen Incorporated")],
+   ["Korea Gas", "SK Networks", "Kolon Global", "Koh Young Technology", "Nature and Environment",
+    "System and Application Technologies", "Hanilcement", "Modetournetwork", "Bioneer", "Neopharm", "Daebongls", "eSANG Networks",
+    "ToolGen"])
+eq("붙여 쓴 영문명 — 브랜드 꼴 · 붙은 꼬리가 없는 이름은 그대로", [C.clean_en(x) for x in (
+    "ESTsoftCorp.", "UniTestInc.", "KakaoBank Corp.", "PearlAbyss Corp.", "Celltrion, Inc.", "HANJINKAL", "iMarketKorea Inc.",
+    "Genome&Company", "NSCompany CO., LTD.", "Brainzcompany Co., Ltd.", "POSCO Holdings Inc.")],
+   ["ESTsoft", "UniTest", "KakaoBank", "PearlAbyss", "Celltrion", "Hanjinkal", "iMarketKorea", "Genome&Company", "NSCompany",
+    "Brainzcompany", "POSCO Holdings"])
 # 화면(staging/i18n.js 의 cleanEn)과 같은지 — 시세 자료의 영문명 전부를 두 판에 넣어 견준다. 한쪽만 고치면 여기서 걸린다.
 import json as _jsn, re as _re, subprocess as _sp  # noqa: E402
 _root = HERE.parent.parent
@@ -761,6 +775,8 @@ for name, obj in sectors.items():
         bad += [("sectors/" + name, h) for h in C.defects(obj)]
         bad += [("sectors/" + name, h) for h in C.check({AS_REPORT[k]: v for k, v in obj.items() if k in AS_REPORT})
                 if h["level"] == "위험" or h["rule"] in SEC_GATE]
+        # 연도 상대 표현(2026-11-23) — 생성기는 마지막 회차에 받는다. 그렇게 받은 글은 여기서 걸린다 — 손으로 연도 숫자로 고친다
+        bad += [("sectors/" + name, h) for h in C.sector_year_hits(obj)]
 for where, h in bad[:8]:
     print(f"      {where} [{h['section']}] {h['rule']} {h['match']!r} — {h['sentence'][:70]}")
 eq(f"리포트 {n:,}개 · 업종 {len(sectors)}개 — 검사 위반 0(글자 결함 · 받은 자료 언급 · 상대 시점 · 영어 낱말 · 투자 판단 · 주당지표 …)", len(bad), 0)

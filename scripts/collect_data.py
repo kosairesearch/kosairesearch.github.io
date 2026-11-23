@@ -1320,14 +1320,84 @@ def krx_english_names():
             if isinstance(e, str) and e.strip()}
 
 
-def fill_name_en_from_krx(results, fetch=None):
-    """DART · 수동 목록을 거친 뒤에도 영문명이 빈 종목만 한국거래소 영문 종목명으로 채운다.
+# ── 붙여 쓴 공시 영문명(2026-11-23) ────────────────────────────────────────────────────────────────
+# DART 영문명 가운데 단어를 붙여 쓴 것이 많아('KohYoungTechnologyInc.' · 'HYUNDAIMARINE&FIREINSURANCECO.,LTD.') 영어 종목
+# 페이지 제목이 'KolonGlobalCorporation (003070) Report' 처럼 보였다. 한국거래소 영문 종목명은 같은 글자를 띄어 쓴 것이
+# 많다('Koh Young Technology Inc.' · 'Hyundai MARINE & FIRE INSURANCE CO.,LTD'). 글자가 같을 때만 한국거래소의 띄어쓰기를
+# 옮긴다 — 글자 · 대소문자는 공시 그대로라 이름이 바뀌지 않는다. 한국거래소도 붙여 쓴 이름('KoreaGasCorporation')은 화면의
+# 다듬기(staging/i18n.js cleanEn · check_report_text.clean_en)가 붙은 회사 꼬리를 떼고 띄운다.
+_EN_TAIL = re.compile(r"[\s,.]*\b(CO|LTD|LTE|INC|CORP|CORPORATION|INCORPORATED|LIMITED|PLC|LLC)\b\.?\s*,?\s*\.?$", re.I)
+_EN_GLUED_TAIL = re.compile(r"(?:COMPANYLIMITED|INCORPORATED|CORPORATION|LIMITED|CORP|INC|LTD|CO)$")
 
-    이미 영문명이 있는 종목은 건드리지 않는다. 받지 못하면 건너뛴다 — 영문명이 비면 화면이
-    한국어 이름을 쓸 뿐, 수집을 멈출 일은 아니다. 채운 값은 다음 날부터 stocks.js 에서 이월된다.
+
+def _en_head(name):
+    """영문명에서 띄어 쓴 회사 꼬리(', Co., Ltd.' 등)를 뗀 앞부분."""
+    s = (name or "").strip()
+    while s:
+        t = _EN_TAIL.sub("", s).strip()
+        if t == s:
+            break
+        s = t
+    return re.sub(r"[,.\s]+$", "", s)
+
+
+def _en_core(name):
+    """회사 꼬리를 뗀 글자(대문자로) — 붙여 쓴 꼬리('…TECHNOLOGYCO')도 두 번까지 뗀다. 공시 · 한국거래소 이름을 견줄 때 쓴다."""
+    u = re.sub(r"[^A-Za-z]", "", name or "").upper()
+    for _ in range(2):
+        m = _EN_GLUED_TAIL.search(u)
+        if not m or m.start() < 3:
+            break
+        u = u[:m.start()]
+    return u
+
+
+def en_glued(name):
+    """붙여 쓴 영문명인가 — 회사 꼬리를 뗀 앞부분에 띄어쓰기 · 하이픈 · 점이 없고 글자가 8자를 넘는다."""
+    h = _en_head(name)
+    return bool(h) and not re.search(r"[\s\-.]", h) and len(re.sub(r"[^A-Za-z]", "", h)) > 8
+
+
+def respace_from_krx(dart, krx):
+    """붙여 쓴 공시 영문명을 한국거래소 영문명의 띄어쓰기로 — 바꿀 것이 없으면 None.
+    회사 꼬리를 뺀 글자가 같고, 한국거래소가 그 안이나 바로 뒤를 띄어 썼을 때만 바꾼다. 앞부분의 글자는 공시의 대소문자 그대로,
+    띄어쓰기 · 문장부호('&' 앞뒤 등)와 회사 꼬리는 한국거래소 것을 쓴다."""
+    d, k = (dart or "").strip(), (krx or "").strip()
+    if not d or not k or not en_glued(d) or re.search(r"[가-힣]", k):
+        return None
+    core = _en_core(d)
+    if len(core) < 6 or _en_core(k) != core:
+        return None
+    n = len(core)
+    pos = [i for i, ch in enumerate(k) if ch.isascii() and ch.isalpha()]
+    if len(pos) < n:
+        return None
+    end = pos[n - 1]
+    if " " not in k[:end + 1] and not k[end + 1:end + 2] == " ":
+        return None
+    dl = [ch for ch in d if ch.isascii() and ch.isalpha()]
+    out, li = [], 0
+    for ch in k:
+        if ch.isascii() and ch.isalpha():
+            out.append(dl[li] if li < n else ch)
+            li += 1
+        else:
+            out.append(ch)
+    new = re.sub(r"\s+", " ", "".join(out)).strip()
+    return new if new != d else None
+
+
+def fill_name_en_from_krx(results, fetch=None):
+    """DART · 수동 목록을 거친 뒤에도 영문명이 빈 종목을 한국거래소 영문 종목명으로 채우고,
+    붙여 쓴 공시 영문명은 한국거래소의 띄어쓰기로 고친다(respace_from_krx · 2026-11-23).
+
+    이미 영문명이 있는 종목은 띄어쓰기 말고는 건드리지 않는다(수동 목록 NAME_EN_OVERRIDE 종목은 띄어쓰기도). 받지 못하면
+    건너뛴다 — 영문명이 비면 화면이 한국어 이름을 쓸 뿐, 수집을 멈출 일은 아니다. 고친 값은 다음 날부터 stocks.js 에서 이월된다.
     """
     empty = [tk for tk, s in results.items() if not s.get("name_en")]
-    if not empty:
+    glued = [tk for tk, s in results.items()
+             if s.get("name_en") and tk not in NAME_EN_OVERRIDE and en_glued(s["name_en"])]
+    if not empty and not glued:
         return 0
     try:
         names = (fetch or krx_english_names)()
@@ -1340,7 +1410,14 @@ def fill_name_en_from_krx(results, fetch=None):
         if re.search(r"[A-Za-z]{2}", en) and not re.search(r"[가-힣]", en):
             results[tk]["name_en"] = en
             n += 1
-    print(f"  [영문명] 한국거래소 영문 종목명으로 {n}개 채움(빈 종목 {len(empty)}개)")
+    r = 0
+    for tk in glued:
+        new = respace_from_krx(results[tk]["name_en"], names.get(tk))
+        if new:
+            results[tk]["name_en"] = new
+            r += 1
+    print(f"  [영문명] 한국거래소 영문 종목명으로 {n}개 채움(빈 종목 {len(empty)}개) · "
+          f"붙여 쓴 영문명 {r}개를 띄어 씀(후보 {len(glued)}개)")
     return n
 
 

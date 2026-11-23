@@ -1174,6 +1174,22 @@ def year_hits(rep):
     return hits
 
 
+# 업종 분석(data/sectors.js)의 칸 → 리포트 칸. 업종 분석은 종목이 없어 year_hits 가 걸리지 않는다 — 칸을 옮기고 종목 자리를 채워 건다.
+SECTOR_AS_REPORT = {"lead": "lead", "overview": "business", "structure": "industry", "trends": "earnings",
+                    "outlook": "outlook", "risks": "risks"}
+
+
+def sector_year_hits(sec, date=None):
+    """업종 분석의 연도 상대 표현(2026-11-23) — 리포트와 같은 규칙(year_hits). 업종 분석도 다음 분기 갱신까지 걸려 있어 해가
+    바뀌면 '올해 · 내년'이 틀린다. 11/21 판 30편에 '지난해 실적' · '내년부터'(기계 · 장비) · '올 들어'(미디어 · 엔터)가 있었다.
+    date 는 작성일(없으면 그 업종의 generatedAt)."""
+    if not isinstance(sec, dict):
+        return []
+    rep = {SECTOR_AS_REPORT[k]: v for k, v in sec.items() if k in SECTOR_AS_REPORT}
+    rep.update(ticker="sector", textRules=YEAR_RULES, reportDate=str(date or sec.get("generatedAt") or "")[:10])
+    return year_hits(rep)
+
+
 def check(rep):
     """위반 목록을 돌려준다. [] 면 통과."""
     hits = []
@@ -1559,17 +1575,52 @@ def _en_cap(w):
     return w[:1].upper() + w[1:].lower()
 
 
+# 붙여 쓴 공시 영문명(2026-11-23) — 'KoreaGasCorporation' · 'SKNetworksCompanyLimited' · 'HANILCEMENTCO.,LTD.' 가 영어 종목 페이지
+# 제목에 그대로 나왔다. 붙은 회사 꼬리를 떼고, 꼬리가 길거나('Corporation' · 'Incorporated' · 'CompanyLimited') 남은 이름이 12자 이상이면
+# 단어 자리에서 띄운다. 짧은 꼬리의 짧은 이름은 브랜드 꼴이라 그대로('ESTsoftCorp' → 'ESTsoft' · 'UniTestInc' → 'UniTest').
+# 한국거래소가 같은 글자를 띄어 쓴 이름은 수집이 먼저 고친다(collect_data.respace_from_krx). staging/i18n.js 의 cleanEn 과 같다.
+_GLUE_LONG = re.compile(r"(?<=[A-Za-z])(?:CompanyLimited|Incorporated|Corporation|COMPANYLIMITED|INCORPORATED|CORPORATION)$")
+_GLUE_CAP = re.compile(r"(?<=[A-Za-z])(?:Corp|Inc|Ltd|Limited|Co)$")
+_GLUE_UP = re.compile(r"(?<=[a-z])(?:CORP|INC|LTD|CO)$")
+_GLUE_AND = {"command", "husband", "thousand", "understand", "highland", "headband", "broadband", "wristband"}
+
+
+def _unglue(raw, s):
+    """붙여 쓴 한 낱말 영문명 — 붙은 회사 꼬리를 떼고 띄운다(clean_en 안에서 · 띄어쓰기가 있거나 8자 이하면 그대로)."""
+    if re.search(r"\s", s) or len(re.sub(r"[^A-Za-z]", "", s)) <= 8:
+        return s
+    m = _GLUE_LONG.search(s)
+    long_ = bool(m)
+    m = m or _GLUE_CAP.search(s) or _GLUE_UP.search(s)
+    if not m and re.search(r"co$", s, re.I) and re.search(re.escape(s) + r"\s*[.,]", raw):
+        m = re.search(r"co$", s, re.I)          # 'HANILCEMENTCO.,LTD.' · 'Daebonglsco.,Ltd' — 'CO' 뒤에 '.,' 가 오면 회사 꼬리다
+    if not m and re.search(r"[A-Z]INC$", s) and re.search(re.escape(s) + r"\.", raw):
+        m = re.search(r"INC$", s)               # 'MODETOURNETWORKINC.'
+    if not m or m.start() < 3:
+        return s
+    s = s[:m.start()]
+    if long_ or len(re.sub(r"[^A-Za-z]", "", s)) >= 12:
+        s = re.sub(r"(?<=[a-z]{2})(?=[A-Z])|(?<=[A-Z])(?=[A-Z][a-z])", " ", s)
+        s = re.sub(r"\b([A-Z][a-z]{3,}?)and(?= [A-Z])",
+                   lambda x: x.group(0) if (x.group(1).endswith("l") or x.group(0).lower() in _GLUE_AND)
+                   else x.group(1) + " and", s)
+    return s
+
+
 def clean_en(s):
     """영문명을 화면과 같은 꼴로 — 'SAMSUNG ELECTRONICS CO,.LTD' → 'Samsung Electronics' · 'SAMSUNG SDS' → 'Samsung SDS'
     (staging/i18n.js 의 cleanEn 과 같다 — check_report_text_test 가 시세 자료 전부로 둘을 견준다).
-    시세 자료의 영문명은 공시 그대로라 대문자 · 'Co., Ltd.' 꼬리가 붙어 있다 — 그대로 주면 영어 문장에 그 꼴이 옮겨진다."""
-    s = (s or "").strip()
+    시세 자료의 영문명은 공시 그대로라 대문자 · 'Co., Ltd.' 꼬리가 붙어 있다 — 그대로 주면 영어 문장에 그 꼴이 옮겨진다.
+    붙여 쓴 이름('KoreaGasCorporation')은 붙은 꼬리를 떼고 띄운다(_unglue · 2026-11-23)."""
+    raw = s = (s or "").strip()
     while s:
         prev = s
-        s = re.sub(r"[\s,.]*\b(CO|LTD|INC|CORP|CORPORATION|LIMITED|PLC|LLC)\b\.?\s*,?\s*\.?$", "", s, flags=re.I).strip()
+        s = re.sub(r"[\s,.]*\b(CO|LTD|LTE|INC|CORP|CORPORATION|INCORPORATED|LIMITED|PLC|LLC)\b\.?\s*,?\s*\.?$", "", s,
+                   flags=re.I).strip()
         if s == prev:
             break
     s = re.sub(r"[,.\s]+$", "", s).strip()
+    s = _unglue(raw, s)
     letters, upper = re.sub(r"[^A-Za-z]", "", s), re.sub(r"[^A-Z]", "", s)
     if letters and len(upper) / len(letters) > 0.8:
         s = " ".join(_en_cap(w) for w in s.split())

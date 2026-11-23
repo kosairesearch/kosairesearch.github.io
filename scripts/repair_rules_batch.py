@@ -15,7 +15,9 @@ order 와 apply 사이에 작업 파일이 저장소를 main 의 최신으로 �
   · 그 규칙의 위반이 줄었다(고친 뒤에도 남으면 다음 실행이 다시 고친다)
   · 다른 검사 위반이 늘지 않았다(check — 그 글의 textRules 그대로)
   · 칸 구조가 같고(repair 가 본다), 한국어가 있는 칸의 영어가 비지 않았다
-  · 숫자를 지우지 않았고, 새로 생긴 숫자는 연도(2019~2031)뿐이다 — 사실은 바꾸지 않고 표현만 바꾸게
+  · 숫자를 지우지 않았고, 새로 생긴 숫자는 연도(2019~2031) · 연도에 붙은 분기 · 반기 · 월 번호('2025년 3분기' · '2025년 1~3분기' ·
+    'Q3 2025') · 그 칸에 이미 있던 숫자뿐이다 — 사실은 바꾸지 않고 표현만 바꾸게(11/23 두 번째 실행에서 '2025년 3분기' ·
+    '5월 24일'(같은 칸의 날짜)을 쓴 맞는 답 13편이 '연도가 아닌 새 숫자'로 버려졌다)
 textRules 는 바꾸지 않는다(그 글을 쓴 지시문의 판이다). 파일은 원래 꼴(들여쓰기)대로 쓴다. 돈은 배치 단가로 편당 약 0.01~0.02달러.
 """
 import argparse
@@ -144,14 +146,34 @@ def numbers(obj):
     return c
 
 
+# 연도에 붙은 분기 · 반기 · 월 번호 — '2025년 3분기' · '2025년 1~3분기' · '2026년 5월' · 'Q3 2025' · '3Q 2025' · 'H1 2025' · '2025 Q3'.
+_TIME_NUM = (re.compile(r"(?:19|20)\d\d년\s*(\d{1,2})(?:\s*~\s*(\d{1,2}))?\s*(?:분기|월)"),
+             re.compile(r"\b[QH]([1-4])\s*(?:FY\s*)?(?:19|20)\d\d\b"),
+             re.compile(r"\b([1-4])[QH]\s*(?:FY\s*)?(?:19|20)\d\d\b"),
+             re.compile(r"\b(?:19|20)\d\d\s*[QH]([1-4])\b"))
+
+
+def time_numbers(obj):
+    """글 안에서 연도에 붙어 쓰인 분기 · 반기 · 월 번호."""
+    out = set()
+    for f in C._flat_fields(obj).values():
+        for side in ("ko", "en"):
+            t = f.get(side) or ""
+            for pat in _TIME_NUM:
+                for m in pat.finditer(t):
+                    out.update(g for g in m.groups() if g)
+    return out
+
+
 def number_guard(before, after):
-    """지운 숫자가 없고, 새 숫자는 연도뿐인가 — (통과, 사유)."""
+    """지운 숫자가 없고, 새 숫자는 연도 · 연도에 붙은 분기 · 월 번호 · 그 칸에 이미 있던 숫자뿐인가 — (통과, 사유)."""
     a, b = numbers(before), numbers(after)
     lost = a - b
     new = b - a
     if lost:
         return False, "숫자가 빠짐 " + ", ".join(sorted(lost)[:5])
-    odd = [n for n in new if not (n.isdigit() and 2019 <= int(n) <= 2031)]
+    timed = time_numbers(after)
+    odd = [n for n in new if not ((n.isdigit() and 2019 <= int(n) <= 2031) or n in timed or a[n])]
     if odd:
         return False, "연도가 아닌 새 숫자 " + ", ".join(sorted(odd)[:5])
     return True, ""

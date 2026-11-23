@@ -356,6 +356,14 @@ true("저장 문턱(defects)이 함께 본다", any("묶음 말" in x for x in S
     {"lead": {"ko": "가.", "en": "a."}, "overview": {"ko": "가.", "en": "a."}, "structure": {"ko": "가.", "en": "a."},
      "trends": {"ko": old_ko, "en": "a."}, "outlook": {"ko": "가.", "en": "a."},
      "risks": [{"title": {"ko": "가", "en": "a"}, "body": {"ko": "가.", "en": "a."}}] * 3}, info=I9)))
+# ③ 나열한 회사의 합산(2026-11-23 — 11/21 판 전기장비가 기사의 3사 합계를 옮겨 재료 합과 달랐다)
+eq("합산 — 재료 합과 같으면 통과",
+   fh("2026년 2분기 LS ELECTRIC, HD현대일렉트릭 2사의 합산 매출은 2조 5,000억원, 합산 영업이익은 4,100억원으로 전년 동기 대비 각각 29.2%, 46.7% 늘었다."), [])
+h = fh("2026년 2분기 LS ELECTRIC, HD현대일렉트릭 2사의 합산 매출은 2조 1,000억원, 합산 영업이익은 4,100억원으로 전년 동기 대비 각각 26.7%, 46.7% 늘었다.")
+true("합산 — 금액 · 증감률이 재료 합과 다르면 잡는다", len(h) == 2 and "재료 합은 2조 5,000억원" in h[0] and "재료 합은 +29.2%" in h[1], h)
+eq("합산 — 회사 이름 뒤에 부문이 붙으면 보지 않는다(재료는 연결 실적)",
+   fh("2026년 2분기 LS ELECTRIC 전력부문과 HD현대일렉트릭의 합산 영업이익은 3,000억원이다."), [])
+eq("합산 — 회사를 밝히지 않은 묶음('2사')은 보지 않는다", fh("2026년 2분기 전력기기 2사의 합산 매출은 2조 1,000억원이다."), [])
 gs = S.group_summary(I9)
 true("묶음 요약 — 늘어난 회사 · 줄어든 회사 · 증가율 범위 · 적자 전환을 코드가 센다",
      "늘어난 회사" in gs and "줄어든 회사 1곳(제룡전기 -40.9%)" in gs and "적자 전환 1곳(제룡전기)" in gs
@@ -370,8 +378,31 @@ _cur = json.loads(_secjs[_secjs.find("{"): _secjs.rfind("}") + 1]).get("sectors"
 _bad = [(k, x) for k, o in _cur.items() if isinstance(o, dict) for x in S.fin_hits(o, real.get(k))]
 eq("지금 화면에 나오는 업종 분석 — 회사별 숫자 · 묶음 말 위반 0", _bad[:3], [])
 
+# ── ⑩ 연도 상대 표현(2026-11-23) ─────────────────────────────
+# 11/21 판 30편에 '합병 이전 두 회사의 지난해 실적' · '군산 신공장에서 내년부터'(기계 · 장비) · '올 들어'(미디어 · 엔터)가 있었다.
+# 저장 문턱이 연도 상대 표현을 보지 않았다(year_hits 는 종목 리포트에만 걸린다). 출처 0건처럼 마지막 회차 전에는 다시 쓴다.
+print("⑩ 연도 상대 표현")
+Y = "2026-11-21 18:05"
+true("'내년부터'를 거른다(작성일을 넘긴 회차)",
+     any(x.startswith("연도 상대 표현(trends)") for x in S.defects(rep("군산 신공장에서 내년부터 엔진을 생산한다."), None, INFO, sources=["u"], year=Y)))
+true("'지난해 실적' · '올 들어'도 거른다", all(any(x.startswith("연도 상대 표현") for x in S.defects(rep(t), None, INFO, sources=["u"], year=Y))
+                                        for t in ("두 회사의 지난해 실적을 합산했다.", "올 들어 주가가 50% 하락했다.")))
+eq("연도 숫자로 쓴 글은 통과", [x for x in S.defects(rep("군산 신공장에서 2027년부터 엔진을 생산한다."), None, INFO, sources=["u"], year=Y)
+                       if x.startswith("연도 상대 표현")], [])
+r_y = rep()
+r_y["outlook"] = {"ko": "업황이 이어진다.", "en": "Demand should recover next year."}
+true("영어 'next year'도 거른다", any(x.startswith("연도 상대 표현(outlook)") for x in S.defects(r_y, None, INFO, sources=["u"], year=Y)))
+eq("마지막 회차(year=None)는 보지 않는다", [x for x in S.defects(rep("내년부터 생산한다."), None, INFO, sources=None) if x.startswith("연도")], [])
+true("검토로 고치지 않고 다시 쓴다(_REWRITE)", S._needs_rewrite(["연도 상대 표현(trends) '내년'"]) != [])
+saved, retry, _ = run_collect(True, extra=(("라업종", rep("두 회사의 지난해 실적을 합산했다.")),))
+true("회수 — 마지막 회차 전에는 저장하지 않고 다시 쓸 목록에", "라업종" not in saved and "라업종" in retry, str(retry))
+saved, retry, _ = run_collect(False, extra=(("라업종", rep("두 회사의 지난해 실적을 합산했다.")),))
+true("회수 — 마지막 회차는 받는다(전수 검사가 잡아 손으로 고친다)", "라업종" in saved and "라업종" not in retry, str(retry))
+eq("지금 화면에 나오는 업종 분석 — 연도 상대 표현 0", [(k, h["match"]) for k, o in _cur.items() for h in S.C.sector_year_hits(o)], [])
+
 # ── 묶는 줄 — 회차마다 출처 기준을 넘긴다 ───────────────────────
 gen = (ROOT / "scripts" / "generate_sectors.py").read_text(encoding="utf-8")
+true("회수가 회차마다 연도 기준을 넘긴다(마지막 회차만 받는다)", gen.count("year=as_of if strict_sources else None") == 2)
 true("auto 의 회차마다 마지막만 출처 0건을 받는다", "collect(cl, as_of, strict_sources=(rnd < ROUNDS))" in gen)
 
 print(f"\n통과 {ok} · 실패 {fail}")
