@@ -34,6 +34,7 @@ CONTACT = '''<main class="wrap">
     <p class="crumb">도움말</p>
     <h1>문의하기</h1>
     <p class="sub">서비스 의견과 협업 제안, 데이터 오류 제보를 보내 주시기 바랍니다. 영업일 기준 2~3일 내에 답변드립니다.</p>
+    <p class="sub">투자 판단이나 개별 종목에 관한 질문에는 답변드리지 않습니다.</p>
   </header>
   <div class="page-body">
     <form id="form" novalidate>
@@ -60,6 +61,7 @@ FEEDBACK = '''<main class="wrap">
     <p class="crumb">도움말</p>
     <h1>피드백 보내기</h1>
     <p class="sub">KOSAI를 이용하시면서 느끼신 점을 들려주시기 바랍니다. 좋았던 점도, 아쉬웠던 점도 모두 환영합니다.</p>
+    <p class="sub">투자 판단이나 개별 종목에 관한 질문에는 답변드리지 않습니다.</p>
   </header>
   <div class="page-body">
     <form id="form" novalidate>
