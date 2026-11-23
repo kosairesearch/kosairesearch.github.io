@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: kos-probe-names
+  group: kos-data
   cancel-in-progress: false
 
 jobs:
@@ -29,4 +29,17 @@ jobs:
           KRX_PW: ${{ secrets.KRX_PW }}
         run: |
           # pykrx 는 한국거래소에 로그인할 때 아이디를 찍는다 — 저장소에 남는 기록에서는 가린다(2026-10-08).
-          python scripts/probe_krx_names.py 2>&1 | sed -u 's/\(로그인 ID: \).*/\1(가림)/' || true
+          python scripts/probe_krx_fundamental.py 2>&1 | sed -u 's/\(로그인 ID: \).*/\1(가림)/' | tee data/probe_result.txt || true
+
+      - name: 결과 커밋
+        run: |
+          git config --global user.email "bot@kosairesearch.github.io"
+          git config --global user.name "KOS ai Bot"
+          git add data/probe_result.txt
+          git commit -m "🔍 KRX 밸류에이션 프로브 결과" || exit 0
+          for i in 1 2 3 4 5; do
+            git fetch origin main && git rebase -X theirs origin/main && git push origin main && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep $((i*3))
+          done
+          exit 1

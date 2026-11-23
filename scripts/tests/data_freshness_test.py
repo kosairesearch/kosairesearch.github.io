@@ -547,6 +547,30 @@ calls.clear()
 ok(M.fill_name_en_from_krx({"005930": {"ticker": "005930", "name_en": "X Co"}}, fetch=_boom) == 0
    and not calls, "빈 종목이 없으면 한국거래소를 부르지 않는다")
 
+# 붙여 쓴 공시 영문명(2026-11-23) — 한국거래소가 같은 글자를 띄어 썼으면 그 띄어쓰기만 옮긴다(글자 · 대소문자는 공시 그대로).
+# 영어 종목 페이지 제목에 'KolonGlobalCorporation (003070) Report' 가 나왔다. 실제 값은 11/23 러너 진단에서 받은 한국거래소 영문명.
+eq_cases = [("KohYoungTechnologyInc.", "Koh Young Technology Inc.", "Koh Young Technology Inc."),
+            ("HYUNDAIMARINE&FIREINSURANCECO.,LTD.", "Hyundai MARINE & FIRE INSURANCE CO.,LTD",
+             "HYUNDAI MARINE & FIRE INSURANCE CO.,LTD"),
+            ("NeopharmCO.,LTD.", "Neopharm CO., LTD.", "Neopharm CO., LTD."),
+            ("meerecompanyIncorporated", "meerecompany Incorporated", "meerecompany Incorporated"),
+            ("InfoBankCorporation", "InfoBank Corporation", "InfoBank Corporation"),
+            ("KoreaGasCorporation", "KoreaGasCorporation", None),                      # 한국거래소도 붙여 씀
+            ("Hyundai-Rotem Co.", "HYUNDAI ROTEM", None),                               # 하이픈은 공시 그대로
+            ("NEWFLEXTECHNOLGYCo.,LTD.", "NEWFLEX TECHNOLOGY Co., LTD.", None),         # 글자가 다르면 그대로
+            ("SAMSUNG ELECTRONICS CO,.LTD", "SamsungElectronics", None),                # 띄어 쓴 공시 이름은 건드리지 않는다
+            ("Celltrion, Inc.", "Celltrion", None)]
+got = [(d, M.respace_from_krx(d, k)) for d, k, _ in eq_cases]
+ok(got == [(d, w) for d, _, w in eq_cases], "★ 붙여 쓴 공시 영문명을 한국거래소의 띄어쓰기로(글자가 같을 때만)", got)
+R3 = {"098460": {"ticker": "098460", "name_en": "KohYoungTechnologyInc."},
+      "005930": {"ticker": "005930", "name_en": "SAMSUNG ELECTRONICS CO,.LTD"},
+      next(iter(M.NAME_EN_OVERRIDE)): {"ticker": next(iter(M.NAME_EN_OVERRIDE)), "name_en": "SamsungEpisHoldingsCo"}}
+M.fill_name_en_from_krx(R3, fetch=lambda: {"098460": "Koh Young Technology Inc.", "005930": "Samsung Electronics Co., Ltd.",
+                                           next(iter(M.NAME_EN_OVERRIDE)): "Samsung Epis Holdings Co"})
+ok(R3["098460"]["name_en"] == "Koh Young Technology Inc." and R3["005930"]["name_en"] == "SAMSUNG ELECTRONICS CO,.LTD"
+   and R3[next(iter(M.NAME_EN_OVERRIDE))]["name_en"] == "SamsungEpisHoldingsCo",
+   "★ 수집이 붙여 쓴 영문명만 띄어 쓴다(띄어 쓴 이름 · 수동 목록은 그대로)", R3)
+
 # main() 의 순서 — 수동 목록(NAME_EN_OVERRIDE)이 한국거래소 값보다 먼저다.
 with tempfile.TemporaryDirectory() as td:
     cwd = os.getcwd()

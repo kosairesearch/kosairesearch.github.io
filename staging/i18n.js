@@ -325,10 +325,34 @@
 
   /* 종목명 — 자료의 영문명은 'SAMSUNG ELECTRONICS CO,.LTD' 꼴이라 다듬는다(실사이트 cleanEn 과 같다). */
   function cleanEn(s) {
-    s = (s || '').trim();
+    var raw = (s || '').trim();
+    s = raw;
     var prev;
-    do { prev = s; s = s.replace(/[\s,\.]*\b(CO|LTD|INC|CORP|CORPORATION|LIMITED|PLC|LLC)\b\.?\s*,?\s*\.?$/i, '').trim(); } while (s !== prev && s);
+    do { prev = s; s = s.replace(/[\s,\.]*\b(CO|LTD|LTE|INC|CORP|CORPORATION|INCORPORATED|LIMITED|PLC|LLC)\b\.?\s*,?\s*\.?$/i, '').trim(); } while (s !== prev && s);
     s = s.replace(/[,.\s]+$/, '').trim();
+    /* 붙여 쓴 한 낱말 영문명(2026-11-23) — 'KoreaGasCorporation' · 'SKNetworksCompanyLimited' · 'HANILCEMENTCO.,LTD.' 가 영어 종목
+       페이지 제목에 그대로 나왔다. 붙은 회사 꼬리를 떼고, 꼬리가 길거나 남은 이름이 12자 이상이면 단어 자리에서 띄운다. 짧은 꼬리의
+       짧은 이름은 브랜드 꼴이라 그대로('ESTsoftCorp' → 'ESTsoft'). check_report_text._unglue 와 같아야 한다. 뒤돌아보기 정규식은
+       쓰지 않는다(옛 사파리가 파일 전체를 읽지 못한다). */
+    if (!/\s/.test(s) && s.replace(/[^A-Za-z]/g, '').length > 8) {
+      var gm, gl = 0, longT = false;
+      var esc = function (x) { return x.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); };
+      if ((gm = s.match(/[A-Za-z](CompanyLimited|Incorporated|Corporation|COMPANYLIMITED|INCORPORATED|CORPORATION)$/))) { gl = gm[1].length; longT = true; }
+      else if ((gm = s.match(/[A-Za-z](Corp|Inc|Ltd|Limited|Co)$/))) gl = gm[1].length;
+      else if ((gm = s.match(/[a-z](CORP|INC|LTD|CO)$/))) gl = gm[1].length;
+      else if (/co$/i.test(s) && new RegExp(esc(s) + '\\s*[.,]').test(raw)) gl = 2;
+      else if (/[A-Z]INC$/.test(s) && new RegExp(esc(s) + '\\.').test(raw)) gl = 3;
+      if (gl && s.length - gl >= 3) {
+        s = s.slice(0, s.length - gl);
+        if (longT || s.replace(/[^A-Za-z]/g, '').length >= 12) {
+          s = s.replace(/([a-z]{2})(?=[A-Z])/g, '$1 ').replace(/([A-Z])(?=[A-Z][a-z])/g, '$1 ');
+          var AND = { command: 1, husband: 1, thousand: 1, understand: 1, highland: 1, headband: 1, broadband: 1, wristband: 1 };
+          s = s.replace(/\b([A-Z][a-z]{3,}?)and(?= [A-Z])/g, function (m0, w) {
+            return (/l$/.test(w) || AND[m0.toLowerCase()]) ? m0 : w + ' and';
+          });
+        }
+      }
+    }
     var letters = s.replace(/[^A-Za-z]/g, ''), upper = s.replace(/[^A-Z]/g, '');
     if (letters && upper.length / letters.length > 0.8) {
       /* 약어는 대문자 그대로 둔다 — 목록에 있는 것(모음이 든 약어: ISC · APR · CJ ENM …)과 모음이 없는 낱말(SDS · CNS · DTS — 모음 없는
