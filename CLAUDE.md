@@ -1331,6 +1331,17 @@ Consent · auth-action · Settings · stock · 404)은 스테이징과 같은 �
     채운다(`fill_name_en_from_krx` · 수동 목록이 먼저 · 받지 못하면 건너뛰고 실행 요약에 '남은 빈 종목' 수를 남긴다). 새 상장마다 수동 목록에
     손으로 더하지 않아도 된다. 영문명 없이 쓴 신규 상장 리포트는 영어 본문의 회사 이름이 공식 이름과 다를 수 있다 — 그날 3편 · 모회사 리포트
     1편을 공식 표기로 맞췄다('Mobi Contents Tech' → 'Mobicontents Tech' 등). 지키는 검사 data_freshness_test ⑫.
+  · **붙여 쓴 공시 영문명**(2026-11-23 · 자동 점검 3/3) — DART 영문명 가운데 단어를 붙여 쓴 것이 영어 종목 페이지 제목에 그대로 나왔다
+    ('KolonGlobalCorporation (003070) Report' · 'KoreaGasCorporation' · 'HANILCEMENTCO.,LTD.'). 두 겹으로 고친다.
+    ① 수집(`collect_data.respace_from_krx` · `fill_name_en_from_krx` 안) — 한국거래소 영문 종목명이 회사 꼬리를 뺀 같은 글자를 띄어 썼으면
+    그 띄어쓰기만 옮긴다(글자 · 대소문자는 공시 그대로 · 하이픈 · 점이 든 이름과 수동 목록은 건드리지 않는다). 11/23 러너 진단에서 한국거래소는
+    'Koh Young Technology Inc.' · 'Hyundai MARINE & FIRE INSURANCE CO.,LTD' · 'InfoBank Corporation' 처럼 띄어 쓴 것이 많았고, 'KoreaGasCorporation' ·
+    'SamsungElectronics' 처럼 붙여 쓴 것도 있었다. 고친 값은 stocks.js 에서 이월된다. ② 화면 다듬기(`staging/i18n.js` cleanEn · `check_report_text.clean_en`
+    — 두 판이 같아야 한다) — 한 낱말 이름에 붙은 회사 꼬리('…Corporation' · '…CompanyLimited' · '…Inc' · '…Co' · 대문자 이름의 'CO.,LTD' 의 CO ·
+    'INC.')를 떼고, 꼬리가 길거나 남은 이름이 12자 이상이면 단어 자리에서 띄운다('Korea Gas' · 'SK Networks' · 'Kolon Global'). 짧은 꼬리의 짧은
+    이름('ESTsoftCorp' → 'ESTsoft' · 'UniTestInc' → 'UniTest')과 한 글자 소문자로 시작하는 이름('eSANG' · 'iMarketKorea')은 브랜드 꼴이라 띄우지
+    않는다. 시세 자료 전 종목에서 화면 이름이 바뀐 것은 71개다. **cleanEn 에 뒤돌아보기 정규식((?<=…))을 쓰지 말 것** — 옛 사파리는 파일 전체를
+    읽지 못해 번역 엔진이 통째로 멈춘다. 지키는 검사 check_report_text_test(붙여 쓴 영문명 · 두 판 대조) · data_freshness_test ⑫.
     종목코드 · 이메일이 문장 안에 끼는 안내('없는 종목' · 비밀번호 재설정)는 사전으로 못 바꿔 화면 코드가 영어 문장을 직접 쓴다.
   · 랜딩 카피 영어판(landing.json)은 직역하지 않고 같은 목소리로 — 기관 리서치의 말투, 큰 제목은 명사구 두 줄(휴대폰에서도 두 줄에 들어가게 짧게:
     'Beyond broker coverage' · 'Full analysis in one report'), 서브는 끝까지 쓴 문장, 과장·감탄 없음. 한국어 카피를 고치면 이 파일도 같이 고친다.
