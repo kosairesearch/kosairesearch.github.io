@@ -1195,7 +1195,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "090430",
       "name": "아모레퍼시픽",
-      "name_en": "AMOREPACIFIC CORPORATION",
+      "name_en": "AMOREPACIFIC CORP.",
       "market": "코스피",
       "sector": "화장품",
       "price": 135700,
@@ -2583,7 +2583,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "004170",
       "name": "신세계",
-      "name_en": "SHINSEGAE Co.,Ltd",
+      "name_en": "SHINSEGAE Inc.",
       "market": "코스피",
       "sector": "유통·소비재",
       "price": 270500,
@@ -5538,7 +5538,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "082920",
       "name": "비츠로셀",
-      "name_en": "VITZROCELL Co., Ltd.",
+      "name_en": "VITZROCELL Co.,Ltd.",
       "market": "코스닥",
       "sector": "2차전지",
       "price": 19040,
@@ -7361,7 +7361,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "064290",
       "name": "인텍플러스",
-      "name_en": "INTEKPLUS CO.,LTD",
+      "name_en": "INTEKPLUS CO., LTD",
       "market": "코스닥",
       "sector": "반도체",
       "price": 38800,
@@ -14119,7 +14119,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "389650",
       "name": "넥스트바이오메디컬",
-      "name_en": "NEXTBIOMEDICAL CO., LTD.",
+      "name_en": "NEXTBIOMEDICAL Co., Ltd.",
       "market": "코스닥",
       "sector": "바이오·제약",
       "price": 23350,
@@ -15940,7 +15940,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "053690",
       "name": "한미글로벌",
-      "name_en": "HanmiGlobal Co., Ltd",
+      "name_en": "HanmiGlobal Co., Ltd.",
       "market": "코스피",
       "sector": "건설·건자재",
       "price": 14720,
@@ -16698,7 +16698,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "114840",
       "name": "아이패밀리에스씨",
-      "name_en": "iFamilySC Co., Ltd.",
+      "name_en": "iFamilySC Co,. Ltd.",
       "market": "코스닥",
       "sector": "화장품",
       "price": 8970,
@@ -16878,7 +16878,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "484120",
       "name": "도우인시스",
-      "name_en": "DOWOOINSYS CO., LTD.",
+      "name_en": "DOWOOINSYS Co., LTD.",
       "market": "코스닥",
       "sector": "반도체",
       "price": 13540,
@@ -18428,7 +18428,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "459510",
       "name": "나우로보틱스",
-      "name_en": "NAUROBOTICS Co., Ltd.",
+      "name_en": "NAUROBOTICS  Co., Ltd.",
       "market": "코스닥",
       "sector": "기계·장비",
       "price": 10110,
@@ -21641,7 +21641,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "142210",
       "name": "유니트론텍",
-      "name_en": "Unitrontech Co.,Ltd.",
+      "name_en": "Unitrontech Co., Ltd.",
       "market": "코스닥",
       "sector": "전자·부품",
       "price": 4845,
@@ -22506,7 +22506,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "100700",
       "name": "세운메디칼",
-      "name_en": "SEWOONMEDICAL CO., LTD.",
+      "name_en": "SEWOONMEDICAL CO,. LTD.",
       "market": "코스닥",
       "sector": "바이오·제약",
       "price": 2130,
@@ -24690,7 +24690,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "023000",
       "name": "삼원강재",
-      "name_en": "SAMWONSTEEL Co., Ltd.",
+      "name_en": "SAMWONSTEEL Co.,Ltd.",
       "market": "코스피",
       "sector": "철강·금속",
       "price": 1995,
@@ -35222,7 +35222,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "393210",
       "name": "토마토시스템",
-      "name_en": "TOMATOSYSTEM Co.,Ltd.",
+      "name_en": "TOMATOSYSTEM Co., Ltd.",
       "market": "코스닥",
       "sector": "IT·소프트웨어",
       "price": 2435,
@@ -38610,7 +38610,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "250030",
       "name": "진코스텍",
-      "name_en": "JINCOSTECH CO.,LTD",
+      "name_en": "JINCOSTECH CO.,LTD.",
       "market": "코스닥",
       "sector": "화학",
       "price": 7750,
@@ -41261,7 +41261,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "362990",
       "name": "드림인사이트",
-      "name_en": "DREAMINSIGHT Co.,Ltd.",
+      "name_en": "DREAMINSIGHT Co., Ltd.",
       "market": "코스닥",
       "sector": "미디어·엔터",
       "price": 1392,

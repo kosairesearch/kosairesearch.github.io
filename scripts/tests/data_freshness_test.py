@@ -559,7 +559,12 @@ eq_cases = [("KohYoungTechnologyInc.", "Koh Young Technology Inc.", "Koh Young T
             ("Hyundai-Rotem Co.", "HYUNDAI ROTEM", None),                               # 하이픈은 공시 그대로
             ("NEWFLEXTECHNOLGYCo.,LTD.", "NEWFLEX TECHNOLOGY Co., LTD.", None),         # 글자가 다르면 그대로
             ("SAMSUNG ELECTRONICS CO,.LTD", "SamsungElectronics", None),                # 띄어 쓴 공시 이름은 건드리지 않는다
-            ("Celltrion, Inc.", "Celltrion", None)]
+            ("Celltrion, Inc.", "Celltrion", None),
+            ("SeouLinBioscienceCO.,LTD.", "SeouLinBioscience CO., LTD.", "SeouLinBioscience CO., LTD."),  # 붙은 꼬리만 띄운다
+            # 11/23 밤 갱신 — 이미 꼬리를 띄어 쓴 한 낱말 이름의 꼬리가 한국거래소 표기로 바뀌었다(법인명이 공시와 달라짐)
+            ("SHINSEGAE Inc.", "SHINSEGAE Co.,Ltd", None),
+            ("AMOREPACIFIC CORP.", "AMOREPACIFIC CORPORATION", None),
+            ("VITZROCELL Co.,Ltd.", "VITZROCELL Co., Ltd.", None)]
 got = [(d, M.respace_from_krx(d, k)) for d, k, _ in eq_cases]
 ok(got == [(d, w) for d, _, w in eq_cases], "★ 붙여 쓴 공시 영문명을 한국거래소의 띄어쓰기로(글자가 같을 때만)", got)
 R3 = {"098460": {"ticker": "098460", "name_en": "KohYoungTechnologyInc."},
