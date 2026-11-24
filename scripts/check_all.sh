@@ -48,6 +48,9 @@ run "SEO·구조"      python3 scripts/check_seo.py
 # 있었지만 아무도 안 돌려서 스테이징 15개가 [상호]·[000-00-00000]
 # 같은 자리표시자를 달고 오래 서 있었다. 어긋나면 여기서 막는다.
 run "사업자 정보"   python3 scripts/patch_biz_footer.py --check
+# 사이트 꼬리와 결제 · 약관 안내 메일의 사업자 표시가 같은지, 통신판매업 신고번호 · 대표전화 없이 유료 시행일(PAID_LIVE)에
+# 실사이트를 만들지 않는지(2026-11-25 · 전자상거래법 제10조 · 제13조).
+run "통신판매 표시" python3 scripts/tests/biz_sell_test.py
 run "헤더(스테이징)" python3 scripts/patch_header.py staging --check
 run "스테이징 생성기" python3 scripts/build_staging.py --check
 # 실사이트(루트)도 2026-10-03 부터 같은 생성기의 결과다(live 모드 · 멤버십 없음). 손으로 고친 페이지가 생성기와 어긋나거나,

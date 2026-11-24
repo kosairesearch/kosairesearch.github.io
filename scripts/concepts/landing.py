@@ -1064,7 +1064,7 @@ def foot():
     notice = legal = ''
     if real():   # 사업자 정보의 원본은 patch_biz_footer.BIZ 하나다(comp_common.BIZ_SPANS — 다른 스테이징 · 실사이트 페이지와 같은 글)
         import comp_common
-        biz = comp_common.BIZ_SPANS
+        biz = comp_common.BIZ_SPANS + comp_common.sell_spans(MODE)   # 통신판매 표시 — 스테이징은 늘, 실사이트는 PAID_LIVE 부터
         # 약관 개정 공지 · 유사투자자문업자 법정 표시 — 다른 페이지 꼬리(comp_common.footer_html)와 같은 스위치 · 같은 글
         if MODE == "staging" or comp_common.NOTICE_LIVE:
             notice = a("약관 개정 안내")

@@ -356,8 +356,41 @@ def simil_on():
     return MODE == 'staging' or (MODE == 'live' and SIMIL_LIVE)
 
 
+def sell_on(mode=None):
+    """통신판매 사업자 표시(통신판매업 신고 · 대표전화 · 호스팅서비스)를 보이는가 — 스테이징은 늘, 실사이트는 유료 시행일(PAID_LIVE)부터."""
+    mode = mode or MODE
+    return mode == 'staging' or (mode == 'live' and PAID_LIVE)
+
+
+def sell_spans(mode=None):
+    """꼬리 사업자 정보 뒤에 붙는 통신판매 표시(patch_biz_footer.SELL). 값이 빈 칸이면 스테이징은 '(… 후 기재)' 로 비워 두고,
+    실사이트는 만들지 않고 멈춘다 — 신고번호 · 전화번호 없이 결제를 여는 길을 막는다(전자상거래법 제10조 · 제13조)."""
+    mode = mode or MODE
+    if not sell_on(mode):
+        return ''
+    out = []
+    for k, v, _en in _biz.SELL:
+        if not v:
+            if mode == 'live':
+                raise SystemExit(f'PAID_LIVE 를 켜기 전에 scripts/patch_biz_footer.py 의 SELL 에서 "{k}" 값을 채워야 합니다'
+                                 '(전자상거래법 제10조 · 제13조 — functions/index.js 의 MAIL_ORDER_NO · BIZ_PHONE 도 같은 값으로).')
+            v = _sell_tbd(k)[0]
+        out.append(f'<span>{k} {v}</span>')
+    return ''.join(out)
+
+
+def _sell_tbd(label):
+    """통신판매 표시의 값이 아직 없을 때 스테이징에 적는 말(한국어, 영어)."""
+    if '유사투자자문업' in label:
+        return '(수리 후 기재)', '(to be added once accepted)'
+    if '신고' in label:
+        return '(신고 후 기재)', '(to be added after registration)'
+    return '(개통 후 기재)', '(to be added)'
+
+
 def footer_html(tpl):
     return (tpl.replace('{NOTICE_LINK}', '<a href="/Notice.html">약관 개정 안내</a>' if notice_on() else '')
+               .replace('{BIZ_SELL}', sell_spans())
                .replace('{LEGAL_NOTE}', f'\n  <p class="legal-note">{LEGAL_NOTE_KO}</p>' if simil_on() else ''))
 
 
@@ -421,6 +454,11 @@ def i18n_table():
             for pg in str(raw.get('//always', '')).split(','):
                 if pg.strip():
                     always.setdefault(pg.strip(), set()).update(d)
+        # 꼬리의 통신판매 표시(patch_biz_footer.SELL) — 이름만 영어로 바꾸고 값(신고번호 · 전화번호 · 회사 이름)은 그대로 둔다.
+        # 값을 채워도 사전 파일을 따로 고치지 않게 여기서 만든다.
+        for k, v, en in _biz.SELL:
+            ko_v, en_v = (v, v) if v else _sell_tbd(k)
+            allp[_i18n_norm(f'{k} {ko_v}')] = f'{en} {en_v}'
         _I18N['all'], _I18N['common'], _I18N['stg'], _I18N['always'] = allp, common, stg, always
     return _I18N
 
@@ -570,7 +608,7 @@ FOOTER_T = '''<footer class="foot"><div class="wrap">
     <div class="fcol"><h4>회사</h4><a href="/About.html">회사 소개</a><a href="/Contact.html">문의하기</a><a href="/Feedback.html">피드백</a></div>
     <div class="fcol"><h4>정책</h4><a href="/Terms.html">이용약관</a><a href="/Privacy.html">개인정보 처리방침</a>{NOTICE_LINK}</div>
   </div>
-  <div class="biz">{BIZ_SPANS}</div>{LEGAL_NOTE}
+  <div class="biz">{BIZ_SPANS}{BIZ_SELL}</div>{LEGAL_NOTE}
   <div class="copy">© 2026 KOSAI</div>
 </div></footer>'''.replace('{BIZ_SPANS}', BIZ_SPANS)
 
