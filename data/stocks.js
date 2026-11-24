@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-11-24 19:48",
+  "lastUpdated": "2026-11-24 21:56",
   "dataDate": "20261124",
   "stocks": [
     {
@@ -28912,7 +28912,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "498150",
       "name": "엠비디",
-      "name_en": "",
+      "name_en": "MBD Co., Ltd.",
       "market": "코스닥",
       "sector": "기타",
       "price": 4220,
