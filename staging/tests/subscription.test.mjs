@@ -307,9 +307,10 @@ console.log("\n── 요금제 변경은 없다 ──");
   await w.KOSDemo.call("changePlan", { plan: "pro" }).catch(e => { code = e.code; });
   ok("changePlan 은 모르는 요청으로 거절한다", code === "not-found", code || "그냥 진행됨");
   ok("구독은 그대로 멤버십", sub().plan === "member" && !("pendingPlan" in sub()), JSON.stringify(sub()));
-  let code2 = "";
-  await w.KOSDemo.call("getUsage", {}).catch(e => { code2 = e.code; });
-  ok("오늘 열람 수(getUsage)도 더는 없다", code2 === "not-found", code2 || "그냥 진행됨");
+  /* 오늘 연 리포트 수는 서버처럼 {active, plan, used} 로만 준다 — 한도(limit) 칸이 없다 */
+  const u = (await w.KOSDemo.call("getUsage", {})).data;
+  ok("오늘 열람 수(getUsage)에 한도 칸이 없다", u.active === true && u.plan === "member" && typeof u.used === "number" && !("limit" in u),
+     JSON.stringify(u));
 }
 
 /* ── 환불 금액 — 명세 3절의 예시 ─────────────────────────────
@@ -324,8 +325,9 @@ console.log("\n── 환불 금액: 명세 예시 ──");
   let q = (await w.KOSDemo.call("refundPreview", {})).data;
   ok("3일째 · 열람 있음 → 13,410원 (early)", q.amount === 13410 && q.why === "early", JSON.stringify(q));
   ok("계산 내역을 함께 준다 — 결제금액 · 이용일수/기간 · 이용료 · 위약금",
-     q.price === PRICE && q.usedDays === 3 && q.totalDays === 30 && q.fee === 1490 && q.penalty === 0 && q.reason === "early",
+     q.price === PRICE && q.usedDays === 3 && q.totalDays === 30 && q.fee === 1490 && q.penalty === 0,
      JSON.stringify(q));
+  ok("사유 글(reason)은 서버가 카드 취소에 적는 글과 같다", q.reason === "7일 이내 환불(이용일수 차감)", q.reason);
   let r = (await w.KOSDemo.call("requestRefund", { expectAmount: q.amount })).data;
   ok("실행해도 같은 금액", r.refunded === 13410 && r.amount === 13410, JSON.stringify(r));
   ok("early → 오늘 자정까지 이용", r.endsAt === endOfToday() && w.KOSPaywall.state().active === true,

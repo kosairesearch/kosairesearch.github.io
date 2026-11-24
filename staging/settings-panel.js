@@ -519,7 +519,11 @@ function ask(title, body, why, opts = {}) {
   card.appendChild(btns);
   ov.appendChild(card);
   document.body.appendChild(ov);
-  (yes || no).focus();
+  /* 단추로 초점을 옮기되 창을 굴리지 않는다 — 환불 확인 창은 계산 내역 · 환불 기준 · 사유가 실려 휴대폰에서 창보다 길다.
+     그냥 focus() 하면 창이 맨 아래(단추)까지 굴러 제목과 환불 금액이 화면 위로 사라진 채 열린다(2026-11-24 membership.test ⑥).
+     preventScroll 을 모르는 옛 브라우저를 위해 굴린 자리도 맨 위로 되돌린다. */
+  (yes || no).focus({ preventScroll: true });
+  card.scrollTop = 0;
 
   return new Promise(res => {
     const done = v => {

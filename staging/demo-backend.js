@@ -38,11 +38,20 @@ const PAID_KEYS = ["earnings", "industry", "outlook", "valuation_comment",
    다르면 미리보기에서 보이던 줄이 실제에서 안 보인다. */
 const PAYMENT_PAGE = 24;
 
-/* 서버가 돌려주는 거절 문구. 화면은 이 문구를 그대로 보여 준다. */
+/* 서버가 돌려주는 거절 문구 — 서버(functions/index.js burstMessage · requestRefund)와 같은 글이다.
+   자동 수집 제한은 화면의 말(lang)로 준다. */
 const MSG = {
-  burst: "짧은 시간에 리포트를 너무 많이 열어 열람이 잠시 제한되었습니다. 잠시 후 다시 이용하여 주시기 바랍니다.",
+  burst: { ko: "짧은 시간에 리포트를 너무 많이 열어 열람이 잠시 제한되었습니다. 잠시 후 다시 이용하여 주시기 바랍니다.",
+           en: "You opened too many reports in a short time, so viewing is paused for a while. Please try again shortly." },
   noRefund: "환불 가능한 금액이 없습니다.",
 };
+/* 환불 사유(reason) — 서버 refundQuote 가 카드 취소 사유와 결제 내역에 적는 글과 같다. 화면은 why 로 이름표를 고른다. */
+const REASON = {
+  withdraw: "청약철회(7일 이내·미열람)",
+  early: "7일 이내 환불(이용일수 차감)",
+  late: "7일 경과 환불(이용일수·위약금 차감)",
+};
+const langNow = () => (window.KOSi18n && window.KOSi18n.lang === "en" ? "en" : "ko");
 
 const read = (k, d) => { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch (e) { return d; } };
 const write = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} };
@@ -124,13 +133,17 @@ function opensInWindow(now = Date.now()) {
 /* 열람을 남긴다. 서버 getReport 의 자동 수집 제한과 같은 규칙.
      · 오늘 이미 연 종목 — 언제나 허용(새로고침 · 다른 기기 · 뒤로 가기)
      · 새 종목 — 최근 60분 안에 새로 연 종목이 60개에 이르렀으면 거절(61번째부터)
-   거절이면 false. */
+   돌려주는 값 — { ok, used(오늘 연 종목 수) } · 거절이면 { ok: false, waitMs }. 서버 recordRead 와 같은 모양. */
 function consume(ticker) {
   const now = Date.now();
   const r = todayReads();
   if (!r.tickers.includes(ticker)) {
     const recent = r.opens.filter((o) => o.at > windowStart(now));
-    if (recent.length >= BURST_MAX) return false;
+    if (recent.length >= BURST_MAX) {
+      /* 창에서 하나가 빠지면 다시 열린다 — 그때까지 남은 시간(서버가 오류 세부에 주는 waitMs 와 같다) */
+      const oldest = recent.map((o) => o.at).sort((a, b) => a - b)[recent.length - BURST_MAX];
+      return { ok: false, waitMs: Math.max(0, oldest + BURST_WINDOW_MIN * 60e3 - now) };
+    }
     r.tickers.push(ticker);
     r.opens = [...recent, { t: ticker, at: now }];   // 창에서 빠진 기록은 버린다 — 문서가 하루 종일 자라지 않게
   }
@@ -144,10 +157,10 @@ function consume(ticker) {
   const sub = read(SUB_KEY, null);
   if (sub) { sub.readsSincePay = (sub.readsSincePay || 0) + 1; write(SUB_KEY, sub); }
   emit();
-  return true;
+  return { ok: true, used: r.tickers.length };
 }
 
-async function fetchPaid(ticker) {
+async function fetchPaid(ticker, opts = {}) {
   const st = snapshot();
   if (!st.user) throw err("unauthenticated", "로그인이 필요합니다.");
   if (!st.active) throw err("permission-denied", "멤버십이 필요합니다.");
@@ -162,8 +175,13 @@ async function fetchPaid(ticker) {
   if (!Object.keys(paid).length) throw err("not-found", "유료 구간이 없습니다.");
 
   // 리포트가 있는 걸 확인한 뒤에 남긴다(없는 종목으로 창을 채우면 안 된다)
-  if (!consume(ticker)) throw err("resource-exhausted", MSG.burst);
-  return { ticker, paid, plan: st.plan };
+  const use = consume(ticker);
+  if (!use.ok) {
+    const e = err("resource-exhausted", MSG.burst[(opts.lang || langNow()) === "en" ? "en" : "ko"]);
+    e.details = { waitMs: use.waitMs };
+    throw e;
+  }
+  return { ticker, paid, plan: st.plan, used: use.used };
 }
 
 /* 결제 — 카드도 안 묻고 바로 구독을 만든다. planId 는 옛 주소(?plan=basic · pro)도
@@ -308,24 +326,32 @@ function refundQuote(sub, at = Date.now()) {
   const viewed = (sub.readsSincePay || 0) > 0;
   const base = { price, usedDays, totalDays };
   if (within7 && !viewed) {
-    return { ...base, amount: price, why: "withdraw", fee: 0, penalty: 0, chargedToday: false };
+    return { ...base, amount: price, why: "withdraw", reason: REASON.withdraw, fee: 0, penalty: 0, chargedToday: false };
   }
   const fee = Math.floor(price * usedDays / totalDays);
   // floor(P × 0.10) 와 같다 — 정수 나눗셈으로 적어 소수 오차가 끼지 않게 한다
   const penalty = within7 ? 0 : Math.floor(price / 10);
-  return { ...base, amount: Math.max(0, price - fee - penalty), why: within7 ? "early" : "late",
+  const why = within7 ? "early" : "late";
+  return { ...base, amount: Math.max(0, price - fee - penalty), why, reason: REASON[why],
            fee, penalty, chargedToday: true };
 }
 
-/* 이름이 있는 요청만 받는다. 모르는 이름(예전의 changePlan · getUsage)은 거절한다 —
+/* 이름이 있는 요청만 받는다. 모르는 이름(예전의 changePlan)은 거절한다 —
    예전에는 모르는 이름도 아래로 흘러가 '성공'을 돌려줬다. 서버에 없는 함수를 부르면
    실제로는 실패한다. */
 const KNOWN = new Set(["refundPreview", "requestRefund", "listPayments", "submitForm",
-                       "deleteAccount", "cancelSubscription", "resumeSubscription"]);
+                       "deleteAccount", "cancelSubscription", "resumeSubscription", "getUsage"]);
 
 /* 구독 관리 버튼들. 서버 함수와 같은 이름·같은 규칙. */
 async function call(name, arg) {
   if (!KNOWN.has(name)) throw err("not-found", `알 수 없는 요청입니다: ${name}`);
+  /* 오늘 연 리포트 수 — 서버 getUsage 와 같은 모양({active, plan, used}). 하루 한도가 없어 limit 칸은 없다.
+     지금 화면은 부르지 않는다(구독 칸에 한도 · 남은 수를 적지 않는다). */
+  if (name === "getUsage") {
+    const st = snapshot();
+    if (!st.active) return { data: { active: false, plan: null, used: 0 } };
+    return { data: { active: true, plan: st.plan, used: todayReads().tickers.length } };
+  }
   /* 환불 견적. 돈을 건드리지 않고 계산만 한다(서버 refundPreview 와 같다).
      확인 창이 계산 내역(결제금액 · 이용일수 · 이용료 · 위약금 · 환불 금액)을 그대로 적는다. */
   if (name === "refundPreview") {
@@ -333,7 +359,7 @@ async function call(name, arg) {
     if (!s0 || !activeNow(s0)) throw err("failed-precondition", "이용 중인 구독이 없습니다.");
     if (s0.refundedAt) throw err("failed-precondition", "이미 환불이 완료되었습니다.");
     const q = refundQuote(s0);
-    return { data: { amount: q.amount, why: q.why, reason: q.why, chargedToday: q.chargedToday,
+    return { data: { amount: q.amount, why: q.why, reason: q.reason, chargedToday: q.chargedToday,
                      endsAt: q.chargedToday ? kstEndOfToday() : Date.now(),
                      price: q.price, usedDays: q.usedDays, totalDays: q.totalDays,
                      fee: q.fee, penalty: q.penalty } };
@@ -389,9 +415,12 @@ async function call(name, arg) {
   /* 환불이 끝난 구독에는 아무것도 하지 않는다. 오늘 몫을 받은 환불은 자정까지
      살아 있어서, 그 사이에 해지·재환불을 또 누를 수 있다. 서버 refundedAlready
      와 같은 규칙이다. */
-  if (sub.refundedAt) throw err("failed-precondition", "환불이 완료된 구독입니다.");
+  if (sub.refundedAt) {
+    throw err("failed-precondition", name === "requestRefund" ? "이미 환불이 완료되었습니다." : "환불이 완료된 구독입니다.");
+  }
   let refunded = 0;                   // 환불액 — 화면이 얼마가 돌아가는지 말해야 한다
   let endsAt = 0;                     // 언제까지 볼 수 있는지 — 화면이 그대로 말한다
+  let why = null;                     // 환불 사유(withdraw · early · late) — 서버 requestRefund 와 같이 돌려준다
   if (name === "cancelSubscription") { sub.cancelAtPeriodEnd = true; delete sub.pendingPlan; }
   else if (name === "resumeSubscription") sub.cancelAtPeriodEnd = false;
   else if (name === "requestRefund") {
@@ -407,6 +436,7 @@ async function call(name, arg) {
         `환불 금액이 ${q.amount.toLocaleString("ko-KR")}원으로 변경되었습니다. 다시 확인해 주시기 바랍니다.`);
     }
     refunded = q.amount;
+    why = q.why;
     /* 한 이용 기간에 결제가 여러 건일 수 있다(옛 시연 기록의 업그레이드 차액 등).
        카드사는 결제 건 하나를 그 건의 금액 안에서만 취소해 주므로, 최근 건부터
        차례로 각 건의 금액만큼 취소한다. 서버 doRefund 와 같은 규칙이다.
@@ -418,7 +448,7 @@ async function call(name, arg) {
       if (rest <= 0) break;
       const take = Math.min(rest, src.amount || 0);
       if (take <= 0) continue;
-      pay({ amount: -take, description: "환불 (모의)", kind: "refund",
+      pay({ amount: -take, description: `환불 · ${q.reason} (모의)`, kind: "refund",
             why: q.why, status: "refunded", plan: planIdOf(sub) || PLAN.id });
       rest -= take;
     }
@@ -437,7 +467,7 @@ async function call(name, arg) {
   emit();
   /* amount 는 서버 requestRefund 가 쓰는 이름이다. 미리보기만 refunded 로
      주면 화면이 실제 서버에서는 금액을 못 읽는다 — 둘 다 담아 보낸다. */
-  return { data: { ok: true, refunded, amount: refunded, endsAt } };
+  return { data: { ok: true, refunded, amount: refunded, why, endsAt } };
 }
 
 window.__KOSDEMO = true;

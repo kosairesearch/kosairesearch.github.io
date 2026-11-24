@@ -141,7 +141,11 @@ async function liveAYear(seed, { chaos }) {
       } else if (roll < 0.40) {                             // 몰아서 본다 — 자동 수집 제한에 닿는다
         for (let i = 0; i < 70; i++) { try { await PW.fetchPaid("M" + dayNo + "-" + i); } catch (e) { break; } }
         log.push(`${dayNo}:몰아보기`);
-      } else if (roll < 0.44) { try { await D.call("changePlan", { plan: "pro" }); log.push(`${dayNo}:요금제 변경 통과`); } catch (e) { /* 없는 기능 — 거절이 맞다 */ } }
+      } else if (roll < 0.44) {                             // 없는 기능 — 요금제 변경은 언제나 거절이어야 한다
+        let passed = true;
+        try { await D.call("changePlan", { plan: "pro" }); } catch (e) { passed = false; }
+        if (passed) return { seed, bad: `${dayNo}일차: 없는 요금제 변경(changePlan)이 통과했다`, log: log.slice(-14) };
+      }
       else if (roll < 0.47) { await D.call("cancelSubscription", {}); log.push(`${dayNo}:해지`); }
       else if (roll < 0.50) { await D.call("resumeSubscription", {}); log.push(`${dayNo}:해지취소`); }
       else if (roll < 0.53) { await D.call("requestRefund", {}); log.push(`${dayNo}:환불`); }
@@ -192,7 +196,7 @@ ok(`${ran}명 × 365일 = ${ran * 365}일`, !broken);
 console.log("\n── 재시도 성공: 그 순간부터 새 한 달 ──\n");
 {
   localStorage.clear();
-  D.subscribe("basic");
+  D.subscribe("member");
   D.advance(31);
   D.runRenewal({ decline: true });
   ok("거절되면 '결제 실패' 로 둔다", sub().status === "past_due", sub().status);
@@ -214,8 +218,8 @@ console.log("\n── 재시도 성공: 그 순간부터 새 한 달 ──\n");
   ok("거기서부터 한 달", (s.currentPeriodEnd - s.currentPeriodStart) / DAY > 27);
   ok("실패 흔적이 지워진다", s.failedAt === undefined && s.retryCount === undefined,
      JSON.stringify({ failedAt: s.failedAt, retryCount: s.retryCount }));
-  ok("결제 기록이 새로 시작된다",
-     s.periodPayments.length === 1 && s.periodPayments[0].amount === PLANS.basic.price);
+  ok("결제 기록이 새로 시작된다(멤버십 14,900원)",
+     s.periodPayments.length === 1 && s.periodPayments[0].amount === PRICE);
   ok("내역에 결제가 한 줄 늘었다", pays().length === before + 1);
   ok("다시 리포트를 볼 수 있다",
      await PW.fetchPaid("005930").then(() => true).catch(() => false));
@@ -224,7 +228,7 @@ console.log("\n── 재시도 성공: 그 순간부터 새 한 달 ──\n");
 console.log("\n── 재시도 중 카드를 직접 바꾸면 바로 되살아난다 ──\n");
 {
   localStorage.clear();
-  D.subscribe("pro");
+  D.subscribe("member");
   D.advance(31);
   D.runRenewal({ decline: true });
   D.updateCard();
@@ -234,33 +238,46 @@ console.log("\n── 재시도 중 카드를 직접 바꾸면 바로 되살아�
   ok("그 순간부터 새 기간", Math.abs(s.currentPeriodStart - Date.now()) < 5000);
 }
 
-/* ── 예약해 둔 다운그레이드가 되살아날 때 반영되는가 ──────────
-   BASIC 으로 내리겠다고 예약한 사람의 카드가 다음 결제일에 거절됐다. 되살릴
-   때 옛 플랜(PRO)으로 청구하면, 내리겠다고 말해 둔 사람에게 비싼 값을 받고
-   비싼 플랜을 그대로 물려 놓는 셈이 된다. 되살리는 길은 둘이다 — 카드 재등록,
-   배치 재시도. 둘 다 확인한다. */
-console.log("\n── 내리기로 예약해 둔 사람이 되살아나면 ──\n");
+/* ── 옛 요금제 기록이 되살아날 때 ─────────────────────────────
+   개편 전에 스테이징을 눌러 본 브라우저에는 PRO 구독에 BASIC 변경 예약(pendingPlan)이 걸린 기록이 남아 있을 수
+   있다. 그 구독의 카드가 다음 결제일에 거절됐다가 되살아나면, 옛 요금제 값(9,900 · 14,900원 중 하나)이 아니라
+   하나뿐인 멤버십 값으로 받고 예약 칸은 지워야 한다. 되살리는 길은 둘이다 — 카드 재등록, 배치 재시도. */
+console.log("\n── 옛 요금제 기록이 되살아나면 ──\n");
 for (const [how, revive] of [
   ["카드 재등록", () => D.updateCard()],
   ["배치 재시도", () => { D.advance(1); D.runRenewal({ decline: false }); }],
 ]) {
   localStorage.clear();
-  D.subscribe("pro");
-  await D.call("changePlan", { plan: "basic" });          // 다음 결제일부터 BASIC
-  D.advance(31);
+  const t0 = Date.now() - 31 * DAY;
+  localStorage.setItem("kos-demo-sub", JSON.stringify({
+    status: "active", plan: "pro", pendingPlan: "basic",
+    currentPeriodStart: t0, currentPeriodEnd: Date.now() - 1000, cancelAtPeriodEnd: false, startedAt: t0,
+    periodPayments: [{ key: "old", amount: 14900, from: t0 }], readsSincePay: 3,
+  }));
   D.runRenewal({ decline: true });                        // 그 결제일에 거절됐다
   const was = pays().length;
   revive();
   const s = sub();
-  ok(`${how} — BASIC 으로 되살아난다`, s.status === "active" && s.plan === "basic",
+  ok(`${how} — 멤버십으로 되살아난다`, s.status === "active" && s.plan === "member",
      `${s.status} · ${s.plan}`);
-  ok(`${how} — 예약이 비워진다`, !s.pendingPlan, String(s.pendingPlan));
-  ok(`${how} — BASIC 값만 받는다`,
-     s.periodPayments.length === 1 && s.periodPayments[0].amount === PLANS.basic.price,
+  ok(`${how} — 옛 변경 예약이 지워진다`, !("pendingPlan" in s), String(s.pendingPlan));
+  ok(`${how} — 멤버십 값만 받는다`,
+     s.periodPayments.length === 1 && s.periodPayments[0].amount === PRICE,
      JSON.stringify(s.periodPayments));
-  ok(`${how} — 내역에도 BASIC 으로 적힌다`,
-     pays().length === was + 1 && pays()[0].amount === PLANS.basic.price,
+  ok(`${how} — 내역에도 멤버십으로 적힌다`,
+     pays().length === was + 1 && pays()[0].amount === PRICE && pays()[0].plan === "member",
      JSON.stringify(pays()[0]));
+}
+
+/* ── 요금제 변경은 없다 ─────────────────────────────────────── */
+console.log("\n── 요금제 변경은 없다 ──\n");
+{
+  localStorage.clear();
+  D.subscribe("member");
+  let code = "";
+  await D.call("changePlan", { plan: "pro" }).catch((e) => { code = e.code; });
+  ok("changePlan 은 모르는 요청으로 거절한다", code === "not-found", code || "그냥 진행됨");
+  ok("구독은 그대로 멤버십", sub().plan === "member" && sub().periodPayments.length === 1);
 }
 
 rmSync(TMP, { recursive: true, force: true });
