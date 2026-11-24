@@ -869,11 +869,18 @@ var IDX=null,busy=false,wait=[];
 /* 영어 화면(staging/i18n.js) — 영문명으로도 찾고, 후보는 영문명으로 보인다 */
 var I=window.KOSi18n, EN=function(){return !!(I&&I.lang==='en')};
 function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
+/* 종목은 시세 자료(stocks.js)에서, 상장 전에 게시한 리포트의 종목은 리포트 색인(reports-index.js)의 ipo 칸에서 읽는다 — 시세 자료에는
+   상장일 장 마감 뒤에야 종목이 오른다(2026-11-24 엠비디). 둘을 함께 받고 둘 다 온 뒤 찾는다 — 시세 자료만으로 먼저 찾으면 '엠비디'가
+   '아이엠비디엑스' 하나로 정해져 그 리포트로 간다. 색인을 못 받으면 시세 자료만으로 찾는다 */
 function load(cb){if(IDX){cb();return}wait.push(cb);if(busy)return;busy=true;
-  function done(){var d=window.KOS_LIVE_DATA,seen={};IDX=[];((d&&d.stocks)||[]).forEach(function(s){if(seen[s.ticker])return;seen[s.ticker]=1;IDX.push({t:s.ticker,n:s.name,e:I?I.nameEn(s):'',s:s.sector||''})});
+  var left=2,bad=false;
+  function done(){if(--left)return;if(bad){busy=false;wait=[];return}
+    var d=window.KOS_LIVE_DATA,ip=(window.KOS_REPORTS&&KOS_REPORTS.ipo)||{},seen={};IDX=[];
+    ((d&&d.stocks)||[]).forEach(function(s){if(seen[s.ticker])return;seen[s.ticker]=1;IDX.push({t:s.ticker,n:s.name,e:I?I.nameEn(s):'',s:s.sector||''})});
+    Object.keys(ip).forEach(function(t){var x=ip[t]||{};if(seen[t])return;seen[t]=1;IDX.push({t:t,n:x.name||t,e:I?I.nameEn({name:x.name||t,name_en:x.name_en||''}):'',s:x.sector||''})});
     var w=wait;wait=[];w.forEach(function(f){f()})}
-  if(window.KOS_LIVE_DATA){done();return}
-  var sc=document.createElement('script');sc.src='../data/stocks.js';sc.onload=done;sc.onerror=function(){busy=false;wait=[]};document.head.appendChild(sc)}
+  function get(src,ready,must){if(ready){done();return}var sc=document.createElement('script');sc.src=src;sc.onload=done;sc.onerror=function(){if(must)bad=true;done()};document.head.appendChild(sc)}
+  get('../data/stocks.js',window.KOS_LIVE_DATA,1);get('../data/reports-index.js',window.KOS_REPORTS,0)}
 function find(q){var t=q.trim().toLowerCase();if(!t||!IDX)return[];
   return IDX.map(function(s){var nm=s.n.toLowerCase(),ne=(s.e||'').toLowerCase(),sc=-1;
     if(nm.indexOf(t)===0||ne.indexOf(t)===0)sc=0;else if(s.t.toLowerCase().indexOf(t)===0)sc=1;else if(nm.indexOf(t)>=0||ne.indexOf(t)>=0)sc=2;else if(s.t.toLowerCase().indexOf(t)>=0)sc=3;else if(s.s.toLowerCase().indexOf(t)>=0)sc=4;
@@ -1282,7 +1289,8 @@ def page():
                 f'<style>\n{CSS.strip()}\n{LIVE_CSS.strip()}\n</style>{theme}</head><body>')
         return (head + nav() + main + foot() + rv_js + cyc_js + dawn_js + orb_js + js
                 # 종목 링크는 맨 위부터 쓴 옛 모양으로 두면 comp_common.finish 가 종목마다 만든 페이지(/stock/005930.html)로 바꾼다
-                + "<script>" + SEARCH_JS.replace("'../data/stocks.js'", "'/data/stocks.js'").replace("'stock.html?ticker='", "'/stock.html?ticker='")
+                + "<script>" + SEARCH_JS.replace("'../data/stocks.js'", "'/data/stocks.js'").replace("'../data/reports-index.js'", "'/data/reports-index.js'")
+                .replace("'stock.html?ticker='", "'/stock.html?ticker='")
                 .replace('href="stock.html?ticker=', 'href="/stock.html?ticker=') + "</script>\n</body></html>")
     if stg:
         # 스테이징 — 다른 스테이징 페이지와 같은 머리 스크립트(모의 결제 · 통계 끔) · 전화번호 자동인식 끔 · 아이콘. 옷은 한 장에 담는다(생성기 비교가

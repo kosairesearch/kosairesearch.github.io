@@ -88,7 +88,8 @@ JS = r'''(function(){
   var I=window.KOSi18n, PK=function(o){return I?I.pick(o):(o&&o.ko)||''}, NM=function(s){return I?I.name(s):s.name};
   function won(n){return n==null?'—':Number(n).toLocaleString('ko-KR')+'원'} function chg(c){c=c||0;return (c>0?'▲ ':c<0?'▼ ':'')+Math.abs(c).toFixed(2)+'%'} function dir(c){return c>0?'up':c<0?'down':'flat'}
   /* 목록 — 스테이징·실사이트는 KOSWatch(Firestore 계정별 목록, watchlist.js)가 채운다. 모듈은 이 스크립트보다 늦게 오므로 나타날 때까지 기다리고, 바뀔 때마다(koswatch:change) 다시 그린다. 시안(KOSWatch 없음)은 예시 목록. */
-  var q=new URLSearchParams(location.search),byTk={};live.forEach(function(s){byTk[s.ticker]=s});
+  /* 상장 전에 게시한 리포트의 종목(리포트 색인의 ipo 칸 · comp_common.IPO_JS)도 담을 수 있다 — 종목 페이지에 '관심종목 추가'가 있다(2026-11-24) */
+  var q=new URLSearchParams(location.search),byTk={};live.concat(kosIpo(live)).forEach(function(s){byTk[s.ticker]=s});
   var DEFAULT=['005930','000660','035420','035720','005380','068270'],LIST,W=null,waitedW=false;
   function fromWatch(){return W.tickers().map(function(t){var s=byTk[t];return s?Object.assign({},s,{added:(W.addedAt&&W.addedAt(t))||0}):null}).filter(Boolean)}
   function bindWatch(){W=window.KOSWatch;if(!W)return false;LIST=fromWatch();addEventListener('koswatch:change',function(){LIST=fromWatch();page=1;render()});render();return true}
@@ -105,7 +106,7 @@ JS = r'''(function(){
   function row(s,i){var r=RREP[s.ticker],t=r&&r.title&&PK(r.title),c=s.change||0;
     return '<a class="row" href="/stock.html?ticker='+s.ticker+'" data-tk="'+s.ticker+'"><button type="button" class="rm" data-rm="'+s.ticker+'" aria-label="제거"><svg viewBox="0 0 24 24"><path d="M5 12h14"/></svg></button><span class="rk">'+(i+1)+'</span>'
       +'<div><div class="r-name">'+esc(s.name)+'</div><div class="r-meta">'+s.ticker+' · '+esc(s.market)+' · '+esc(s.sector)+(r&&r.reportDate?'<span class="md"> · <b>'+esc(r.reportDate)+'</b></span>':'')+'</div></div>'
-      +'<div class="r-title'+(t?'':' none')+'">'+(t?esc(t):'리포트 준비 중')+'</div><div class="r-price">'+won(s.price)+'<span class="c '+dir(c)+'">'+chg(c)+'</span></div><div class="r-date">'+esc(r&&r.reportDate||'—')+'</div></a>'}
+      +'<div class="r-title'+(t?'':' none')+'">'+(t?esc(t):'리포트 준비 중')+'</div><div class="r-price">'+(s.ipo?'공모가 '+won(s.ipo.offer_price):won(s.price)+'<span class="c '+dir(c)+'">'+chg(c)+'</span>')+'</div><div class="r-date">'+esc(r&&r.reportDate||'—')+'</div></a>'}
   function render(){document.getElementById('count').textContent='관심종목 · '+LIST.length+'개 종목';
     if(!LIST.length){rowsEl.innerHTML='';emptyEl.hidden=!!(waitedW&&(!W||(W.ready===false)));pagerEl.hidden=true;document.querySelector('.bar').hidden=true;return}
     emptyEl.hidden=true;document.querySelector('.bar').hidden=false;
@@ -144,7 +145,7 @@ def build(out_path):
     js = JS.replace("document.documentElement.hasAttribute('data-staging')", 'true') if C.MODE == 'live' else JS
     html = (C.head(C.title('관심종목'), extra=GATE if stg else '') + '\n<style>\n' + C.CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n' + MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
             + C.nav('관심종목') + '\n' + body + '\n' + C.FOOTER + '\n'
-            + '<script src="/data/stocks.js"></script>\n<script src="/data/reports-index.js"></script>\n<script>\n' + js + C.JS + '\n</script>\n</body>\n</html>')
+            + '<script src="/data/stocks.js"></script>\n<script src="/data/reports-index.js"></script>\n<script>\n' + C.IPO_JS + js + C.JS + '\n</script>\n</body>\n</html>')
     C.emit(out_path, html)
     print(f'✅ {out_path} · {len(html):,}자')
 

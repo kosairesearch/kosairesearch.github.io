@@ -201,6 +201,14 @@ def write_reports(reports, model, as_of):
         for tk in [t for t in index if t not in universe and t not in keep_ipo]:
             del index[tk]
         payload["stockCount"] = len(universe)
+    # 상장 전에 게시한 종목의 이름 · 시장 · 업종 · 공모가 — 검색 · 목록 화면이 시세 자료에 없는 이 종목을 그린다(_reindex 와 같은 칸 · 2026-11-24 엠비디)
+    try:
+        import ipo_listings
+        ipo_idx = ipo_listings.index_entries(set(index), universe)
+    except Exception:                                        # noqa: BLE001 — 못 읽으면 칸 없이(목록에 안 보일 뿐)
+        ipo_idx = {}
+    if ipo_idx:
+        payload["ipo"] = ipo_idx
     REPORTS_INDEX_JS.write_text(
         "// KOS ai — 리포트 인덱스(자동 생성). 전체 본문은 data/reports 폴더의 종목별 JSON 참조.\n"
         "window.KOS_REPORTS = " + json.dumps(payload, ensure_ascii=False) + ";\n",

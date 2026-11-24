@@ -315,6 +315,21 @@ idx = json.loads(G2.REPORTS_INDEX_JS.read_text(encoding="utf-8").split("=", 1)[1
 ok(files == sorted([universe[0], "271160"]), "리포트 정리가 상장 예정 종목 파일은 지키고 상장 폐지 종목은 지운다", str(files))
 ok(sorted(idx["reports"]) == sorted([universe[0], "271160"]) and idx["stockCount"] == 2000,
    "목록 색인에 상장 예정 종목을 남긴다(종목 수 stockCount 는 시세 자료 그대로)", str(sorted(idx["reports"])))
+# 검색 · 목록 화면이 시세 자료에 없는 그 종목을 그릴 이름 · 시장 · 업종 · 상장일 · 공모가(2026-11-24 엠비디 — 종목 페이지에만 있고 검색 · 목록에 없었다)
+ip = (idx.get("ipo") or {}).get("271160") or {}
+ok(list(idx.get("ipo") or {}) == ["271160"] and ip.get("name") == "하나에어로" and ip.get("name_en") == "Hana Aero Dynamics Co.,Ltd"
+   and ip.get("market") == "코스닥" and ip.get("sector") == "항공·방산" and ip.get("list_date") == "2026-11-20"
+   and ip.get("offer_price") == 5700 and ip.get("shares") == 17729964 and "filing" not in ip and "published" not in ip,
+   "목록 색인의 ipo 칸 — 검색 · 목록이 그릴 이름 · 시장 · 업종 · 상장일 · 공모가만(증권신고서 재무 · 게시 기록은 싣지 않는다)", json.dumps(idx.get("ipo"), ensure_ascii=False))
+G2.load_stocks = lambda: {"stocks": [{"ticker": t} for t in universe + ["271160"]], "dataDate": "20261120"}
+os.chdir(WR)
+try:
+    G2.write_reports(dict(reps), "claude-haiku-5-5", "2026-11-20 20:05")
+finally:
+    os.chdir(cwd)
+idx = json.loads(G2.REPORTS_INDEX_JS.read_text(encoding="utf-8").split("=", 1)[1].strip().rstrip(";"))
+ok("ipo" not in idx and "271160" in idx["reports"] and idx["stockCount"] == 2001,
+   "시세 자료에 오르면 ipo 칸에서 빠진다(평소 종목 — 종목 수에도 든다)", json.dumps(idx.get("ipo"), ensure_ascii=False))
 
 # _reindex.py — 표준 라이브러리만 쓰는 독립 스크립트라 임시 저장소에 옮겨 돌린다
 RX = TMP / "rx"
@@ -330,11 +345,14 @@ lst = {"updated": "", "stocks": {"271160": {"name": "하나에어로", "list_dat
 subprocess.run([sys.executable, str(RX / "scripts" / "_reindex.py")], capture_output=True, text=True, check=False)
 rx = json.loads((RX / "data" / "reports-index.js").read_text(encoding="utf-8").split("=", 1)[1].strip().rstrip(";"))
 ok(sorted(rx["reports"]) == ["005930", "271160"], "워치독 색인 동기화(_reindex)도 상장 예정 종목을 남긴다", str(sorted(rx["reports"])))
+ok(rx.get("ipo") == {"271160": {"name": "하나에어로", "sector": "기타", "list_date": lst["stocks"]["271160"]["list_date"]}},
+   "워치독 색인 동기화도 ipo 칸을 쓴다(빈 칸은 싣지 않는다)", json.dumps(rx.get("ipo"), ensure_ascii=False))
 lst["stocks"]["271160"]["list_date"] = (datetime.date.today() - datetime.timedelta(days=30)).isoformat()
 (RX / "data" / "ipo.json").write_text(json.dumps(lst, ensure_ascii=False), encoding="utf-8")
 subprocess.run([sys.executable, str(RX / "scripts" / "_reindex.py")], capture_output=True, text=True, check=False)
 rx = json.loads((RX / "data" / "reports-index.js").read_text(encoding="utf-8").split("=", 1)[1].strip().rstrip(";"))
 ok(sorted(rx["reports"]) == ["005930"], "창이 지나도 시세 자료에 없으면 원래대로 정리한다(상장이 미뤄진 경우)", str(sorted(rx["reports"])))
+ok("ipo" not in rx, "창이 지나면 ipo 칸도 걷는다(검색 · 목록에서 빠진다)", json.dumps(rx.get("ipo"), ensure_ascii=False))
 
 # 사이트맵 · 종목 페이지 색인
 import generate_sitemap as GS                      # noqa: E402

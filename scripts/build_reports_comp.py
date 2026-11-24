@@ -137,7 +137,10 @@ BODY = '''<main class="wrap">
 </div>'''
 
 JS = r'''(function(){
-  var REPORTS=(window.KOS_LIVE_DATA&&KOS_LIVE_DATA.stocks)||[], RREP=(window.KOS_REPORTS&&KOS_REPORTS.reports)||{};
+  var LIVE=(window.KOS_LIVE_DATA&&KOS_LIVE_DATA.stocks)||[], RREP=(window.KOS_REPORTS&&KOS_REPORTS.reports)||{};
+  /* 상장 전에 게시한 리포트의 종목(리포트 색인의 ipo 칸 · comp_common.IPO_JS)도 목록에 둔다 — 시세 자료에는 상장일 장 마감 뒤에야 오른다
+     (2026-11-24 엠비디). 머리 줄 종목 수(nBoth)에는 넣지 않는다 — 랜딩 첫 화면 · 홈과 같은 '국내 상장' 수 */
+  var REPORTS=LIVE.concat(kosIpo(LIVE));
   /* 영어 화면(staging/i18n.js) — 리포트 제목은 자료의 영어 쪽, 검색 · 이름순은 영문명으로도. 한국어 문구는 사전이 바꾼다. */
   var I=window.KOSi18n, PK=function(o){return I?I.pick(o):(o&&(o.ko||o.en))||''}, NM=function(s){return I?I.name(s):s.name};
   function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
@@ -150,7 +153,7 @@ JS = r'''(function(){
   var state={q:'',sort:'mcap_desc',page:1,pageSize:20,filters:{}};
   var SORT_LABEL={mcap_desc:'시가총액 높은 순',mcap_asc:'시가총액 낮은 순',change_desc:'등락률 높은 순',change_asc:'등락률 낮은 순',date:'최신 리포트순',name:'종목명순',per_asc:'PER 낮은 순',pbr_asc:'PBR 낮은 순',div_desc:'배당수익률 높은 순'};
   var rowsEl=document.getElementById('rows'),rlEl=document.getElementById('rl'),emptyEl=document.getElementById('empty'),pagerEl=document.getElementById('pager');
-  var nBoth=REPORTS.filter(function(s){return RREP[s.ticker]}).length;
+  var nBoth=LIVE.filter(function(s){return RREP[s.ticker]}).length;
   document.getElementById('eyebrow').textContent='국내 상장 '+nBoth.toLocaleString('ko-KR')+'개 종목 리포트';   // 랜딩 첫 화면과 같은 표기(2026-10-03)
   /* 값이 없는 종목은 방향과 상관없이 뒤로 보낸다. 앞에 두면 'PER 낮은 순'의 첫 화면이 전부 '—' 가 된다. */
   function byNum(k,d){return function(a,b){var x=a[k],y=b[k],xb=(x==null||isNaN(x)),yb=(y==null||isNaN(y));if(xb&&yb)return (b.mcap||0)-(a.mcap||0);if(xb)return 1;if(yb)return -1;return (x-y)*d}}
@@ -173,7 +176,7 @@ JS = r'''(function(){
   function rowHtml(r,i){var c=r.change||0,t=repTitle(r.ticker),d=repDate(r.ticker);
     return '<a class="rl-row" href="/stock.html?ticker='+r.ticker+'" data-tk="'+r.ticker+'"><span class="rk">'+(i+1)+'</span>'
       +'<div><div class="r-name">'+esc(r.name)+'</div><div class="r-meta">'+r.ticker+' · '+esc(r.market)+' · '+esc(r.sector)+metricBits(r).map(function(m){return ' · '+m}).join('')+(d?'<span class="md"> · <b>'+esc(d)+'</b></span>':'')+'</div></div>'
-      +'<div class="r-title'+(t?'':' none')+'">'+(t?esc(t):'리포트 준비 중')+'</div><div class="r-price">'+won(r.price)+'<span class="c '+dir(c)+'">'+chg(c)+'</span></div><div class="r-date">'+esc(d||'—')+'</div>'
+      +'<div class="r-title'+(t?'':' none')+'">'+(t?esc(t):'리포트 준비 중')+'</div><div class="r-price">'+(r.ipo?'공모가 '+won(r.ipo.offer_price):won(r.price)+'<span class="c '+dir(c)+'">'+chg(c)+'</span>')+'</div><div class="r-date">'+esc(d||'—')+'</div>'
       +'<button type="button" class="wl'+(isW(r.ticker)?' on':'')+'" data-wl="'+r.ticker+'" title="'+(isW(r.ticker)?'관심종목에서 빼기':'관심종목 추가')+'" aria-label="'+(isW(r.ticker)?'관심종목에서 빼기':'관심종목 추가')+'" aria-pressed="'+(isW(r.ticker)?'true':'false')+'">'+bmSvg+'</button></a>'}
   /* ── 숫자 조건 ── PER·PBR·배당·성장률은 /data/valuation.js 에 있다. 필터를 처음 건드릴 때 받는다. */
   var valState='none',valPromise=null;
@@ -286,7 +289,7 @@ JS = r'''(function(){
 def build(out_path):
     html = (C.head(C.title('종목 리포트')) + '\n<style>\n' + C.CSS + '\n' + C.FORM_CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n' + MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
             + C.nav('리포트') + '\n' + BODY + '\n' + C.FOOTER + '\n'
-            + '<script src="/data/stocks.js"></script>\n<script src="/data/reports-index.js"></script>\n<script>\n' + JS + C.JS + '\n</script>\n</body>\n</html>')
+            + '<script src="/data/stocks.js"></script>\n<script src="/data/reports-index.js"></script>\n<script>\n' + C.IPO_JS + JS + C.JS + '\n</script>\n</body>\n</html>')
     C.emit(out_path, html)
     print(f'✅ {out_path} · {len(html):,}자')
 

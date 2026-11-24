@@ -90,9 +90,14 @@ async function open(viewport = DESK) {
 const shown = (p) => p.evaluate(() => +document.getElementById("countN").textContent.replace(/,/g, ""));
 const chips = (p) => p.evaluate(() => [...document.querySelectorAll(".fchip .lab")].map((e) => e.textContent));
 
-/* 원자료에서 직접 센다. 화면과 같은 코드를 쓰지 않는 것이 요점이다. */
+/* 원자료에서 직접 센다. 화면과 같은 코드를 쓰지 않는 것이 요점이다.
+   목록에는 상장 전에 게시한 리포트의 종목(리포트 색인의 ipo 칸 · 시세 자료에 아직 없는 종목 — 2026-11-24)도 있으므로 그 종목도 센다.
+   시세가 없어 숫자 조건에는 걸리지 않고 업종 · 시장 조건에만 걸린다. */
+const ALL = `(function(){var L=window.KOS_LIVE_DATA.stocks,X=(window.KOS_REPORTS&&KOS_REPORTS.ipo)||{},h={};L.forEach(function(s){h[s.ticker]=1});
+  return L.concat(Object.keys(X).filter(function(t){return !h[t]}).map(function(t){var e=X[t];
+    return {ticker:t,name:e.name,market:e.market,sector:e.sector,categories:e.categories||[],price:null,mcap:null}}))})()`;
 function countBy(page, fn) {
-  return page.evaluate(`(${fn})(window.KOS_LIVE_DATA.stocks, window.KOS_VALUATION && KOS_VALUATION.stocks)`);
+  return page.evaluate(`(${fn})(${ALL}, window.KOS_VALUATION && KOS_VALUATION.stocks)`);
 }
 
 /* ── ② 안 쓰면 안 받는다 ────────────────────────────────── */

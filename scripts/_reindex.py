@@ -64,6 +64,7 @@ try:
     import ipo_listings
     ipo_keep = ipo_listings.active()
 except Exception:
+    ipo_listings = None
     ipo_keep = set()
 pruned = 0
 if universe:
@@ -72,6 +73,17 @@ if universe:
         pruned += 1
     # 랜딩/리포트 카운트 통일용 — 전 종목 수를 함께 기록.
     payload["stockCount"] = len(universe)
+
+# 상장 전에 게시한 종목의 이름 · 시장 · 업종 · 공모가 — 검색 · 목록 화면이 시세 자료에 없는 이 종목을 그린다(2026-11-24 엠비디).
+# 종목 수(stockCount)에는 넣지 않는다. 같은 칸을 리포트 생성기(generate_reports.write_reports)도 쓴다.
+try:
+    ipo_idx = ipo_listings.index_entries(set(reports), universe) if ipo_listings else {}
+except Exception:
+    ipo_idx = {}
+if ipo_idx:
+    payload["ipo"] = ipo_idx
+else:
+    payload.pop("ipo", None)
 
 IDX.write_text(
     "// KOS ai — 리포트 인덱스(자동 생성). 전체 본문은 data/reports 폴더의 종목별 JSON 참조.\n"
