@@ -102,15 +102,16 @@ if (isConfigured) {
 }
 
 /* ── 열람 기록 ─────────────────────────────────────────────────
-   하루 문서 하나에 둔다 — { day, tickers, opens }.
+   하루 문서 하나에 둔다 — { day, tickers, opens, last }. 서버의 report_reads/{uid}_{날짜}와 같은 모양이다.
      tickers  오늘 연 종목(다시 열 때는 막지 않는다)
      opens    새로 연 종목과 그 시각({ t, at }) — 자동 수집 제한의 창(최근 60분)을 센다
-   날이 바뀌면(한국 시간 자정) 문서가 새로 시작되어 창도 빈다. 명세가 허용한 단순화다
-   ("하루 문서를 쓰는 지금 구조라면 날이 바뀌면 창이 비어도 된다"). */
+     last     마지막으로 연 시각(다시 연 것도) — 시간을 앞으로 돌릴 때(advance) 이 문서가 어느 날의 것인지 정한다
+   날이 바뀌면(한국 시간 자정) 문서가 새로 시작되어 창도 빈다. 명세가 허용한 단순화이고, 서버도
+   같은 식이다("하루 문서를 쓰는 지금 구조라면 날이 바뀌면 창이 비어도 된다"). */
 function todayReads() {
   const r = read(READ_KEY, null);
-  if (!r || r.day !== kstDay()) return { day: kstDay(), tickers: [], opens: [] };
-  return { day: r.day, tickers: r.tickers || [], opens: r.opens || [] };
+  if (!r || r.day !== kstDay()) return { day: kstDay(), tickers: [], opens: [], last: 0 };
+  return { day: r.day, tickers: r.tickers || [], opens: r.opens || [], last: r.last || 0 };
 }
 const windowStart = (now) => now - BURST_WINDOW_MIN * 60e3;
 
@@ -132,8 +133,9 @@ function consume(ticker) {
     if (recent.length >= BURST_MAX) return false;
     r.tickers.push(ticker);
     r.opens = [...recent, { t: ticker, at: now }];   // 창에서 빠진 기록은 버린다 — 문서가 하루 종일 자라지 않게
-    write(READ_KEY, r);
   }
+  r.last = now;
+  write(READ_KEY, r);
   /* 이번 이용 기간에 유료 영역을 연 적이 있는가를 따로 센다. 하루 기록은 자정에
      비므로 '결제 후 한 번도 안 열었는가'를 그것으로 답할 수 없다 — 환불(청약철회
      전액) 기준이 바로 그 질문이라 별도로 쌓아 둔다. 결제 시점에 0 으로 돌아간다.
@@ -469,9 +471,13 @@ window.KOSDemo = {
       (sub.periodPayments || []).forEach((x) => { if (typeof x.from === "number") x.from -= ms; });
       write(SUB_KEY, sub);
     }
+    /* 열람 기록이 어느 날의 것인지는 마지막으로 연 시각(last)을 민 자리로 다시 정한다. 예전에는 '지금 − 넘긴 시간'
+       으로 정해서, 하루를 넘긴 뒤 20분을 더 넘기면 어제 기록이 오늘 것으로 되살아났다. last 가 없는 옛 기록은
+       그날 정오에 연 것으로 친다. */
     const r = read(READ_KEY, null);
     if (r) {
-      write(READ_KEY, { ...r, day: new Date(Date.now() + 9 * 3600e3 - ms).toISOString().slice(0, 10),
+      const last = (r.last || Date.parse(r.day + "T12:00:00+09:00")) - ms;
+      write(READ_KEY, { ...r, last, day: new Date(last + 9 * 3600e3).toISOString().slice(0, 10),
                         opens: (r.opens || []).map((o) => ({ ...o, at: o.at - ms })) });
     }
     const pays = read(PAY_KEY, []);

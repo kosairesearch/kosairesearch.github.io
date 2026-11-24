@@ -130,7 +130,10 @@ const dlgClick = async label => {
   b.click();
   await settle();
 };
-const endOfToday = () => (Math.floor((Date.now() + KST) / DAY) + 1) * DAY - KST;
+const kstDayNo = (ms) => Math.floor((ms + KST) / DAY);
+const endOfToday = () => (kstDayNo(Date.now()) + 1) * DAY - KST;
+/* 결제일부터 한 달(서버 · 시연 addMonth 와 같은 식 — 31일이면 다음 달 말일) */
+const addMonth = (from) => { const d = new Date(from), day = d.getDate(); d.setMonth(d.getMonth() + 1); if (d.getDate() !== day) d.setDate(0); return d.getTime(); };
 const won = (n) => n.toLocaleString("en-US") + "원";
 
 /* 결제한 지 elapsed 일 지난 구독(이용 기간 len 일)을 만든다. 결제 시점(from)도 같이 옮긴다 —
@@ -541,9 +544,9 @@ console.log("\n── 환불한 날 다시 시작하기 ──");
   localStorage.clear();
   w.KOSDemo.subscribe("member");
   await w.KOSPaywall.fetchPaid("005930");        // 결제 후 열람 — 환불은 이용분 차감(early)
+  const s1 = sub(), tot = kstDayNo(s1.currentPeriodEnd) - kstDayNo(s1.currentPeriodStart);
   const r0 = (await w.KOSDemo.call("requestRefund", {})).data;
-  ok("열람 뒤 당일 환불은 하루치를 뺀다", r0.refunded === PRICE - Math.floor(PRICE * 1 / sub().periodPayments.length / 1 / Math.max(1, Math.round((sub().currentPeriodEnd - sub().currentPeriodStart) / DAY)) * 1) || r0.refunded < PRICE,
-     String(r0.refunded));
+  ok("열람 뒤 당일 환불은 하루치 이용료를 뺀다", r0.refunded === PRICE - Math.floor(PRICE / tot), `${r0.refunded}원 · 이용 기간 ${tot}일`);
   await openSubs();
   ok("환불 뒤 화면이 다시 시작할 길을 준다", btns().includes("다시 시작하기"), btns().join("|"));
   ok("환불 뒤에도 자정까지는 이용 중", w.KOSPaywall.state().active === true);
@@ -566,8 +569,8 @@ console.log("\n── 환불한 날 다시 시작하기 ──");
   ok("새 구독은 오늘부터",
      sub().currentPeriodStart <= Date.now() + 60000,
      new Date(sub().currentPeriodStart).toISOString());
-  ok("겹친 하루만큼 기간 끝이 뒤로 밀린다",
-     sub().currentPeriodEnd > Date.now() + 30 * 86400e3 - 2 * 86400e3 && sub().currentPeriodEnd > endOfToday(),
+  ok("겹친 하루만큼 기간 끝이 뒤로 밀린다(오늘 자정부터 한 달)",
+     Math.abs(sub().currentPeriodEnd - addMonth(endOfToday())) < 60000 && sub().currentPeriodEnd > addMonth(Date.now()),
      new Date(sub().currentPeriodEnd).toISOString());
 
   /* 새 이용 기간에 같은 종목을 다시 연 것도 '결제 후 열람' 이다 — 아니면 그 종목을 읽고도
@@ -657,7 +660,9 @@ console.log("\n── 옛 시연 기록 ──");
   const r = (await w.KOSDemo.call("requestRefund", { expectAmount: q.amount })).data;
   const rows = w.KOSDemo.payments().filter(p => p.kind === "refund").slice(0, w.KOSDemo.payments().filter(p => p.kind === "refund").length - before);
   ok("취소가 결제 건마다 따로 나간다", rows.length === 2, JSON.stringify(rows.map(p => p.amount)));
-  ok("각 취소는 그 결제 건의 금액을 넘지 않는다", -rows[0].amount <= 3870 && -rows[1].amount <= 9900, JSON.stringify(rows.map(p => p.amount)));
+  /* 최근 건(3,870원)부터 취소한다 — 그 건은 통째로, 나머지는 첫 건(9,900원)에서 */
+  const amts = rows.map(p => -p.amount).sort((a, b) => a - b);
+  ok("각 취소는 그 결제 건의 금액을 넘지 않는다", amts[0] <= 3870 && amts[1] <= 9900 && amts.includes(3870), JSON.stringify(rows.map(p => p.amount)));
   ok("취소 합계 = 환불 금액", rows.reduce((a, b) => a - b.amount, 0) === r.refunded, `${rows.reduce((a, b) => a - b.amount, 0)} vs ${r.refunded}`);
 
   // 옛 구독이 갱신되면 멤버십 값으로

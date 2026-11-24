@@ -2,8 +2,11 @@
    1년을 살아 본다 — 날마다 하루씩 넘기며
 
    왜 있는가. 지금까지의 검사는 한 순간을 본다. 실제 구독은 열두 달을 산다 —
-   달마다 갱신되고, 중간에 카드가 거절되고, 재시도로 되살아나고, 플랜을 올리고
-   내리고, 환불하고 다시 시작한다. 그 긴 흐름에서만 드러나는 것이 있다.
+   달마다 갱신되고, 중간에 카드가 거절되고, 재시도로 되살아나고, 해지했다 되살리고,
+   환불하고 다시 시작한다. 그 긴 흐름에서만 드러나는 것이 있다.
+
+   2026-11-24 요금제 개편 — 요금제는 멤버십 하나(월 14,900원)이고 요금제 변경은 없다.
+   하루 열람 한도 대신 자동 수집 제한(60분 안에 새 종목 60개)이 있다.
 
    그래서 하루씩 365번 넘기면서 매일
      · 갱신 배치를 돌리고
@@ -12,7 +15,7 @@
 
    지키는 것
      1. 받은 돈보다 많이 돌려주지 않는다
-     2. 하루 열람이 플랜 한도를 넘지 않는다
+     2. 60분 안에 새로 연 종목이 60개를 넘지 않는다 · 요금제는 멤버십 하나 · 결제는 늘 14,900원
      3. 이용 기간이 거꾸로 가지 않는다
      4. 결제 없이 이용 중이 되지 않는다        ← 공짜로 여는 길
      5. 이용 중인데 결제 기록이 비어 있지 않다  ← 환불할 근거가 사라진 상태
@@ -63,7 +66,7 @@ globalThis.fetch = async () => ({ ok: true, json: async () => ({
 await import(`file://${TMP}/demo.js`);
 
 const D = window.KOSDemo, PW = window.KOSPaywall;
-const PLANS = { basic: { price: 9900, limit: 5 }, pro: { price: 14900, limit: 15 } };
+const PRICE = 14900, BURST_MAX = 60;
 const RETRY_MAX = 4;
 const DAY = 86400e3;
 const sub = () => JSON.parse(localStorage.getItem("kos-demo-sub") || "null");
@@ -105,12 +108,11 @@ function checkDay(log, dayNo) {
   const len = (s.currentPeriodEnd - s.currentPeriodStart) / DAY;
   if (len > 34) return `${dayNo}일차: 이용 기간이 ${len.toFixed(1)}일 — 너무 길다`;
 
-  // 2. 하루 열람이 한도를 넘지 않는다
-  const r = JSON.parse(localStorage.getItem("kos-demo-reads") || "null");
-  const used = ((r && r.tickers) || []).length;
-  const limit = (PLANS[s.plan] || {}).limit || 0;
-  if (used > Math.max(limit, PLANS.pro.limit)) {
-    return `${dayNo}일차: 하루 열람 ${used}건 — 한도를 넘었다`;
+  // 2. 자동 수집 제한 · 요금제는 멤버십 하나 · 결제는 늘 멤버십 값
+  if (D.opensInWindow() > BURST_MAX) return `${dayNo}일차: 60분 안에 새 종목 ${D.opensInWindow()}개 — 문턱을 넘었다`;
+  if (s.plan !== "member" || s.pendingPlan) return `${dayNo}일차: 요금제가 멤버십이 아니다 (${s.plan} · 예약 ${s.pendingPlan})`;
+  if ((s.periodPayments || []).some((p) => p.amount !== PRICE)) {
+    return `${dayNo}일차: 이번 기간 결제가 멤버십 값이 아니다 ${JSON.stringify(s.periodPayments)}`;
   }
   return null;
 }
@@ -120,7 +122,7 @@ async function liveAYear(seed, { chaos }) {
   const rnd = rng(seed);
   localStorage.clear();
   const log = [];
-  D.subscribe(rnd() < 0.5 ? "basic" : "pro");
+  D.subscribe(rnd() < 0.8 ? "member" : "basic");   // 옛 주소(plan=basic)로 와도 멤버십
   log.push("결제");
 
   for (let dayNo = 1; dayNo <= 365; dayNo++) {
@@ -136,13 +138,15 @@ async function liveAYear(seed, { chaos }) {
       if (roll < 0.35) {                                   // 리포트를 본다
         const n = 1 + Math.floor(rnd() * 4);
         for (let i = 0; i < n; i++) { try { await PW.fetchPaid("T" + Math.floor(rnd() * 40)); } catch (e) { break; } }
-      } else if (roll < 0.40) { await D.call("changePlan", { plan: "pro" }); log.push(`${dayNo}:올림`); }
-      else if (roll < 0.44) { await D.call("changePlan", { plan: "basic" }); log.push(`${dayNo}:내림`); }
+      } else if (roll < 0.40) {                             // 몰아서 본다 — 자동 수집 제한에 닿는다
+        for (let i = 0; i < 70; i++) { try { await PW.fetchPaid("M" + dayNo + "-" + i); } catch (e) { break; } }
+        log.push(`${dayNo}:몰아보기`);
+      } else if (roll < 0.44) { try { await D.call("changePlan", { plan: "pro" }); log.push(`${dayNo}:요금제 변경 통과`); } catch (e) { /* 없는 기능 — 거절이 맞다 */ } }
       else if (roll < 0.47) { await D.call("cancelSubscription", {}); log.push(`${dayNo}:해지`); }
       else if (roll < 0.50) { await D.call("resumeSubscription", {}); log.push(`${dayNo}:해지취소`); }
       else if (roll < 0.53) { await D.call("requestRefund", {}); log.push(`${dayNo}:환불`); }
       else if (roll < 0.57) { D.updateCard(); log.push(`${dayNo}:카드변경`); }
-      else if (roll < 0.61) { D.subscribe(rnd() < 0.5 ? "basic" : "pro"); log.push(`${dayNo}:재결제`); }
+      else if (roll < 0.61) { D.subscribe("member"); log.push(`${dayNo}:재결제`); }
     } catch (e) { /* 거절은 정상이다 */ }
 
     const bad = checkDay(log, dayNo);

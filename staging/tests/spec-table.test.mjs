@@ -1,5 +1,5 @@
 /* ============================================================
-   결제 규칙 명세표가 실제와 맞는가 — 상태 7 × 동작 10
+   결제 규칙 명세표가 실제와 맞는가 — 상태 7 × 동작 8
 
    왜 있는가. 표를 만들어 놓고 코드가 그대로 도는지는 눈으로만 확인했다.
    표와 코드가 갈라지면 표가 거짓말이 되고, 우리는 거짓말을 보고 판단하게 된다.
@@ -9,6 +9,10 @@
 
    '자동 갱신'은 여기서 다루지 않는다. 미리보기에는 갱신 배치가 없다(브라우저에
    크론이 없다). 그쪽은 functions/tests/renew.test.mjs 가 본다.
+
+   2026-11-24 요금제 개편 — 요금제는 멤버십 하나다. 플랜 올리기 · 내리기 · 변경 예약(상태 D)은
+   없앴고, '요금제 변경'(changePlan)은 어느 상태에서도 거절되는지 본다. 대신 '환불 금액 0원'(H —
+   27일째)을 더했다 — 환불은 실행하지 않고 해지는 된다.
 
    실행
      npm install --no-save jsdom
@@ -79,19 +83,19 @@ const ok = (n, c, x = "") => {
   else { fail++; console.log("  FAIL " + n + (x ? "\n         " + x : "")); }
 };
 
-/* ── 상태 만들기 ────────────────────────────────────────────
-   plan 을 받는 이유: '플랜 올리기'는 BASIC 일 때만, '내리기'는 PRO 일 때만
-   뜻이 있다. 같은 상태를 두 플랜으로 만들 수 있어야 한다. */
-async function setup(state, plan = "basic") {
+/* ── 상태 만들기 ──────────────────────────────────────────── */
+async function setup(state) {
   localStorage.clear();
   if (state === "A") return;                       // 무료 — 구독 없음
-  // 변경 예약은 PRO 에서 BASIC 으로 내릴 때만 생긴다. BASIC 에서는 만들 수 없다.
-  if (state === "D") plan = "pro";
-  D.subscribe(plan);
+  D.subscribe("member");
   if (state === "B") return;                       // 이용 중
   if (state === "C") { await D.call("cancelSubscription", {}); return; }
-  if (state === "D") {                             // 변경 예약 — PRO 쓰며 BASIC 예약
-    await D.call("changePlan", { plan: "basic" }); return;
+  if (state === "H") {                             // 환불 금액 0원 — 30일 기간의 27일째, 열람 있음
+    const s = sub(), DAY = 86400e3, noon = Math.floor((Date.now() + 9 * 3600e3) / DAY) * DAY - 9 * 3600e3 + 12 * 3600e3;
+    s.currentPeriodStart = noon - 26 * DAY; s.currentPeriodEnd = s.currentPeriodStart + 30 * DAY;
+    s.periodPayments = s.periodPayments.map((p) => ({ ...p, from: s.currentPeriodStart }));
+    s.readsSincePay = 5; put(s);
+    return;
   }
   if (state === "E") { D.simulate("past_due"); return; }
   if (state === "F") {                             // 환불 완료 — 오늘 1건 봐서 자정까지 살아 있음
@@ -105,41 +109,41 @@ async function setup(state, plan = "basic") {
 
 /* ── 동작 ───────────────────────────────────────────────── */
 const ACTIONS = {
-  "구독 시작":      { plan: "basic", run: () => D.subscribe("pro") },
-  "카드 변경":      { plan: "basic", run: () => D.updateCard() },
-  "플랜 올리기":    { plan: "basic", run: () => D.call("changePlan", { plan: "pro" }) },
-  "플랜 내리기":    { plan: "pro",   run: () => D.call("changePlan", { plan: "basic" }) },
-  "변경 예약 취소": { plan: "pro",   run: () => D.call("changePlan", { plan: "pro" }) },
-  "해지":           { plan: "basic", run: () => D.call("cancelSubscription", {}) },
-  "해지 취소":      { plan: "basic", run: () => D.call("resumeSubscription", {}) },
-  "환불 신청":      { plan: "basic", run: () => D.call("requestRefund", {}) },
-  "회원 탈퇴":      { plan: "basic", run: () => D.call("deleteAccount", {}) },
-  "리포트 열람":    { plan: "basic", run: () => PW.fetchPaid("000660") },
+  "구독 시작":   () => D.subscribe("member"),
+  "카드 변경":   () => D.updateCard(),
+  "해지":        () => D.call("cancelSubscription", {}),
+  "해지 취소":   () => D.call("resumeSubscription", {}),
+  "환불 신청":   () => D.call("requestRefund", {}),
+  "회원 탈퇴":   () => D.call("deleteAccount", {}),
+  "리포트 열람": () => PW.fetchPaid("000660"),
+  /* 요금제가 하나라 바꿀 데가 없다 — 서버에도 changePlan 이 없다. 어느 상태에서든 거절한다. */
+  "요금제 변경": () => D.call("changePlan", { plan: "member" }),
 };
 
 /* ── 표 그대로 ──────────────────────────────────────────────
    O 된다 · X 거절한다 · - 그 상태에선 없는 동작(안 본다) */
 const TABLE = {
-  //                시작 카드 올림 내림 예약취소 해지 해지취소 환불 탈퇴 열람
-  "A 무료":        ["O", "X", "X", "X", "X", "X", "X", "X", "O", "X"],
-  "B 이용 중":     ["X", "O", "O", "O", "X", "O", "-", "O", "O", "O"],
+  //                시작 카드 해지 해지취소 환불 탈퇴 열람 요금제변경
+  "A 무료":        ["O", "X", "X", "X", "X", "O", "X", "X"],
+  "B 이용 중":     ["X", "O", "O", "-", "O", "O", "O", "X"],
   /* C 의 '구독 시작' 은 거절한다. 남은 기간이 그대로 있는 구독 위에 새 결제를
      얹으면 이용 기간이 두 달 가까이 늘어나면서, 받은 돈 기록은 새 한 건으로
      갈아엎어져 첫 달 결제가 환불 대상에서 사라진다. 되돌리는 길은 '해지 취소'
-     이며 공짜다. 플랜을 바꾸려는 것이라면 '플랜 올리기·내리기' 가 해지 예약도
-     함께 푼다 — 결제 화면으로 갈 이유가 없다. */
-  "C 해지 예약":   ["X", "O", "O", "O", "X", "-", "O", "O", "O", "O"],
-  "D 변경 예약":   ["X", "O", "-", "-", "O", "O", "-", "O", "O", "O"],
+     이며 공짜다. */
+  "C 해지 예약":   ["X", "O", "-", "O", "O", "O", "O", "X"],
   /* E 의 '해지' 는 된다. 카드가 거절되면 1·3·5·7일째에 다시 결제를 시도하므로,
      그만두려는 사람에게 멈출 방법이 있어야 한다. 예약이 아니라 즉시 종료다 —
      이미 낸 달은 다 썼고 다음 달 값은 받지 못해, 남겨서 지킬 기간이 없다. */
-  "E 결제 실패":   ["O", "O", "X", "X", "X", "O", "X", "X", "O", "X"],
-  "F 환불 완료":   ["O", "X", "X", "X", "X", "X", "X", "X", "O", "O"],
-  "G 이용 종료":   ["O", "X", "X", "X", "X", "X", "X", "X", "O", "X"],
+  "E 결제 실패":   ["O", "O", "O", "X", "X", "O", "X", "X"],
+  /* F 의 '리포트 열람' 은 된다 — 열람한 뒤 환불하면 오늘 몫을 받아 오늘 자정까지 열어 둔다. */
+  "F 환불 완료":   ["O", "X", "X", "X", "X", "O", "O", "X"],
+  "G 이용 종료":   ["O", "X", "X", "X", "X", "O", "X", "X"],
+  /* H 는 계산한 환불 금액이 0원이다(27일째) — 환불은 실행하지 않고(더 청구하지도 않는다), 해지는 된다. */
+  "H 환불 0원":    ["X", "O", "O", "-", "X", "O", "O", "X"],
 };
 const NAMES = Object.keys(ACTIONS);
 
-console.log("── 표 70칸을 실제로 눌러 본다 ──\n");
+console.log("── 표 56칸을 실제로 눌러 본다 ──\n");
 
 const grid = [];
 for (const [stateName, want] of Object.entries(TABLE)) {
@@ -149,9 +153,9 @@ for (const [stateName, want] of Object.entries(TABLE)) {
     const act = NAMES[i], expect = want[i];
     if (expect === "-") { row.push("-"); continue; }
 
-    await setup(code, ACTIONS[act].plan);
+    await setup(code);
     let got = "O", err = "";
-    try { await ACTIONS[act].run(); }
+    try { await ACTIONS[act](); }
     catch (e) { got = "X"; err = (e && e.message) || String(e); }
 
     row.push(got === expect ? got : `${got}!`);
@@ -176,15 +180,15 @@ console.log("\n── 거절 문구 ──\n");
 const MSG = [
   ["A", "카드 변경",   () => D.updateCard(),                          "이용 중인 구독이 없습니다."],
   ["A", "해지",        () => D.call("cancelSubscription", {}),         "이용 중인 구독이 없습니다."],
-  ["B", "구독 시작",   () => D.subscribe("pro"),                       "이미 이용 중인 구독이 있습니다."],
-  ["B", "예약 취소",   () => D.call("changePlan", { plan: "basic" }),  "이미 해당 플랜을 이용 중입니다."],
+  ["B", "구독 시작",   () => D.subscribe("member"),                    "이미 이용 중인 구독이 있습니다."],
+  ["C", "구독 시작",   () => D.subscribe("member"),                    "해지가 예약된 구독이 있습니다. 구독 관리에서 해지를 취소해 주시기 바랍니다."],
   ["E", "환불 신청",   () => D.call("requestRefund", {}),              "이용 중인 구독이 없습니다."],
-  ["F", "플랜 올리기", () => D.call("changePlan", { plan: "pro" }),    "환불이 완료된 구독입니다."],
   ["F", "환불 신청",   () => D.call("requestRefund", {}),              "환불이 완료된 구독입니다."],
   ["G", "해지",        () => D.call("cancelSubscription", {}),         "이용 중인 구독이 없습니다."],
+  ["H", "환불 신청",   () => D.call("requestRefund", {}),              "환불 가능한 금액이 없습니다."],
 ];
 for (const [st, act, run, want] of MSG) {
-  await setup(st, st === "B" && act === "예약 취소" ? "basic" : "basic");
+  await setup(st);
   let msg = "(거절하지 않았다)";
   try { await run(); } catch (e) { msg = (e && e.message) || String(e); }
   const good = msg === want;
@@ -212,24 +216,29 @@ const txt = () => mount().textContent.replace(/\s+/g, " ").trim();
 const btns = () => [...mount().querySelectorAll(".ks-btn")].map((b) => b.textContent.trim());
 
 const SCREEN = [
-  ["A", "무료로 이용하고 계십니다", ["멤버십 보기"],       ["해지", "환불 신청"]],   /* 요금제 화면으로 가는 단추는 G 와 같은 이름(2026-10-03) */
-  ["B", "이용 중",         ["해지", "환불 신청"],          ["다시 시작하기", "해지 취소"]],
-  ["C", "해지 예약됨",     ["해지 취소", "환불 신청"],     ["해지"]],
-  ["D", "이용 중",         ["해지", "환불 신청"],          ["다시 시작하기"]],
-  ["E", "결제 실패",       ["결제 수단 변경"],             ["해지", "환불 신청"]],
-  ["F", "환불 완료",       ["다시 시작하기"],              ["해지", "환불 신청", "플랜 변경"]],
+  ["A", "무료로 이용하고 계십니다", ["멤버십 보기"],                         ["해지하기", "환불 신청하기"]],   /* 요금제 화면으로 가는 단추는 G 와 같은 이름(2026-10-03) */
+  ["B", "이용 중",         ["결제 수단 변경하기", "해지하기", "환불 신청하기"], ["다시 시작하기", "해지 취소하기"]],
+  ["C", "해지 예약됨",     ["해지 취소하기", "환불 신청하기"],                ["해지하기"]],
+  ["E", "결제 실패",       ["결제 수단 변경하기", "해지하기"],               ["환불 신청하기"]],
+  ["F", "환불 완료",       ["다시 시작하기"],                                ["해지하기", "환불 신청하기"]],
   /* 끝난 구독은 '멤버십 보기' 다. 환불 직후(F)만 '다시 시작하기' 로 다르게
      적는다 — 마음이 바뀐 사람에게 필요한 건 요금표 구경이 아니라 결제로 가는
      길이라서다. 둘 다 요금제 화면으로 간다. */
-  ["G", "이용 종료됨",     ["멤버십 보기"],                ["해지", "환불 신청"]],
+  ["G", "이용 종료됨",     ["멤버십 보기"],                                  ["해지하기", "환불 신청하기"]],
+  /* 환불 금액이 0원이어도 '환불 신청하기' 는 남긴다 — 누르면 계산 내역과 함께 '환불 가능한 금액이 없습니다' 와 해지를 안내한다 */
+  ["H", "이용 중",         ["해지하기", "환불 신청하기"],                    ["다시 시작하기"]],
 ];
 for (const [code, badge, must, mustNot] of SCREEN) {
-  await setup(code, code === "D" ? "pro" : "basic");
+  await setup(code);
   await draw();
   const t = txt(), b = btns();
   ok(`${code} 화면이 "${badge}" 로 적는다`, t.includes(badge), t.slice(0, 140));
-  for (const x of must) ok(`${code} 화면에 [${x}] 가 있다`, b.some((y) => y.includes(x)), b.join(" | "));
+  for (const x of must) ok(`${code} 화면에 [${x}] 가 있다`, b.some((y) => y === x), b.join(" | "));
   for (const x of mustNot) ok(`${code} 화면에 [${x}] 가 없다`, !b.some((y) => y === x), b.join(" | "));
+  /* 요금제 변경 단추(업그레이드 · 다운그레이드 · 변경 취소)는 어느 상태에도 없다 */
+  ok(`${code} 화면에 요금제 변경 단추가 없다`, !b.some((y) => /업그레이드|BASIC|PRO|변경 취소|요금제 변경|플랜 변경/.test(y)), b.join(" | "));
+  /* 하루 열람 한도는 없다 — 어느 상태에서도 한도 · 남은 열람을 적지 않는다 */
+  ok(`${code} 화면에 하루 한도가 없다`, !/하루 열람 한도|남은 열람/.test(t), t.slice(0, 200));
   console.log(`  ${code}  ${badge.padEnd(12)} ${b.join(" · ")}`);
 }
 
