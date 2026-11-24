@@ -565,6 +565,18 @@ FOOTER = ''
 JS = ''
 set_mode('preview')
 
+# 상장 전에 게시한 리포트의 종목 — 리포트 색인(reports-index.js)의 ipo 칸(ipo_listings.index_entries · 이름 · 시장 · 업종 · 상장일 · 공모가)을
+# 목록 · 검색이 쓰는 종목 꼴로. 시세 자료(stocks.js)에 이미 있는 종목은 건너뛴다 — 상장일 장 마감 뒤 시세가 들어오면 평소 줄이 된다.
+# 시세 칸은 비우고 ipo 를 단다(가격 칸에 '공모가'를 그린다). 홈 · 리포트 목록이 쓰고, 첫 화면 검색(landing.SEARCH_JS)은 같은 칸을 따로 읽는다.
+# 이것이 없을 때는 상장 전 리포트가 종목 페이지에만 있고 검색 · 목록에는 나오지 않았다(2026-11-24 엠비디 · 사장 "엠비디 리포트 왜 없냐").
+IPO_JS = r'''function kosIpo(live){var IPO=(window.KOS_REPORTS&&KOS_REPORTS.ipo)||{},have={};(live||[]).forEach(function(s){have[s.ticker]=1});
+  var out=Object.keys(IPO).filter(function(tk){return !have[tk]}).map(function(tk){var e=IPO[tk]||{};
+    return {ticker:tk,name:e.name||tk,name_en:e.name_en||'',market:e.market||'',sector:e.sector||'기타',categories:e.categories||[],price:null,change:null,mcap:null,
+      trading_value:null,ipo:{list_date:e.list_date||'',offer_price:e.offer_price==null?null:e.offer_price,shares:e.shares==null?null:e.shares}}});
+  if(window.KOSi18n&&KOSi18n.names)KOSi18n.names(out);   // 영어 화면의 종목명 — 시세 자료의 종목은 번역 엔진이 스스로 싣는다
+  return out}
+'''
+
 
 # 폼 — 밑줄 입력(검색과 같은 문법) · 구분 탭 · 체크 · 오류 글. 문의·피드백·로그인·회원가입·리포트 필터 창이 쓴다
 FORM_CSS = """.fld{display:block;margin:0 0 26px} .fld>label,.fld .lbl{display:block;font:500 12px/16px var(--font);color:var(--ink-62);margin-bottom:4px} .fld .opt{font-weight:400;color:var(--ink-30)}

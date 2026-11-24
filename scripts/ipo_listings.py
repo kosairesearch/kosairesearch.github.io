@@ -98,6 +98,27 @@ def stock_dict(tk, e):
             "mcap": None, "trading_value": None, "volume": None, "shares": e.get("shares"), "ipo": ipo}
 
 
+def index_entries(tickers, universe, path=None, today=None):
+    """리포트 색인(data/reports-index.js)의 'ipo' 칸 — 리포트가 있고(tickers) 시세 자료(universe)에 아직 없는 창 안 종목의
+    이름 · 영문명 · 시장 · 업종 · 상장일 · 공모가 · 상장주식수. {종목코드: {...}}.
+
+    목록 · 검색 화면(첫 화면 검색 · 홈 · 리포트 목록)은 종목을 시세 자료에서 읽는다. 이 칸이 없을 때는 상장 전에 게시한 리포트가
+    종목 페이지에만 있고 검색 · 목록에는 나오지 않았다(2026-11-24 엠비디 — 11/21 게시 · 사장 "엠비디 리포트 왜 없냐").
+    화면은 시세 자료에 이미 있는 종목은 건너뛴다 — 상장일 장 마감 뒤 시세가 들어오면 평소 줄이 된다."""
+    tickers, universe = set(tickers or ()), set(universe or ())
+    out = {}
+    for tk, e in (load(path).get("stocks") or {}).items():
+        if tk not in tickers or tk in universe or not in_window(e, today):
+            continue
+        of = e.get("offer") or {}
+        out[tk] = {k: v for k, v in {
+            "name": e.get("name") or tk, "name_en": e.get("name_en") or "", "market": e.get("market") or "",
+            "sector": e.get("sector") or "기타", "categories": e.get("categories") or [],
+            "list_date": e.get("list_date"), "offer_price": of.get("offer_price"), "shares": e.get("shares"),
+        }.items() if v not in (None, "", [])}
+    return {tk: out[tk] for tk in sorted(out)}
+
+
 def extra_stocks(path=None, today=None):
     """창 안의 종목을 생성기의 종목 꼴로 — {종목코드: 종목}. 시세 자료에 없는 종목을 생성기가 찾을 수 있게."""
     return {tk: stock_dict(tk, e) for tk, e in (load(path).get("stocks") or {}).items() if in_window(e, today)}

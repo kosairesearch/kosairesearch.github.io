@@ -130,16 +130,18 @@ JS = r'''(function(){
   // 리포트가 있는 종목 수 하나만 — 종목 수와 리포트 수를 나란히 두면 새로 상장돼 아직 리포트가 없는 종목만큼 어긋나 보인다
   var nBoth=live.filter(function(s){return RREP[s.ticker]}).length;
   document.getElementById('eyebrow').textContent='국내 상장 '+nBoth.toLocaleString('ko-KR')+'개 종목';   // 랜딩 첫 화면과 같은 표기(2026-10-03)
+  /* 상장 전에 게시한 리포트의 종목(리포트 색인의 ipo 칸 · comp_common.IPO_JS) — 최신 리포트와 검색에 넣는다. 머리 줄 종목 수에는 넣지 않는다 */
+  var UP=kosIpo(live);
 
   /* ---- 최신 리포트 6편 (Home.html 과 같은 규칙) ---- */
-  var REPORTS=live.filter(function(s){return RREP[s.ticker]}).map(function(s){var r=RREP[s.ticker];return Object.assign({},s,{reportDate:r.reportDate,reportTs:r.reportTs||r.reportDate,title:r.title||''})});
+  var REPORTS=live.concat(UP).filter(function(s){return RREP[s.ticker]}).map(function(s){var r=RREP[s.ticker];return Object.assign({},s,{reportDate:r.reportDate,reportTs:r.reportTs||r.reportDate,title:r.title||''})});
   REPORTS.sort(function(a,b){return String(b.reportTs||'').localeCompare(String(a.reportTs||''))||(b.mcap||0)-(a.mcap||0)}); REPORTS=REPORTS.slice(0,6);
   /* 검색어로 이 목록을 거르지 않는다 — 6편 안에서만 찾아 '검색 결과가 없습니다'가 떴다(2026-10-05 사장 지적 화면). 검색은 위 검색창이 맡는다 */
   var rowsEl=document.getElementById('reportRows');
   function renderReports(){
     rowsEl.innerHTML=REPORTS.map(function(d){var c=d.change||0;
       return '<a class="row" href="/stock.html?ticker='+d.ticker+'"><div><div class="r-name">'+esc(d.name)+'</div><div class="r-meta">'+d.ticker+' · '+esc(d.market)+' · '+esc(d.sector)+'<span class="md"> · '+esc(d.reportDate)+'</span></div></div>'
-        +'<div class="r-title">'+esc(PK(d.title))+'</div><div class="r-price">'+fmt.won(d.price)+'<span class="c '+fmt.dir(c)+'">'+fmt.chg(c)+'</span></div><div class="r-date">'+esc(d.reportDate)+'</div></a>'}).join('');
+        +'<div class="r-title">'+esc(PK(d.title))+'</div><div class="r-price">'+(d.ipo?'공모가 '+fmt.won(d.ipo.offer_price):fmt.won(d.price)+'<span class="c '+fmt.dir(c)+'">'+fmt.chg(c)+'</span>')+'</div><div class="r-date">'+esc(d.reportDate)+'</div></a>'}).join('');
   }
 
   /* ---- 업종 탭 + 거래대금 순 종목 표 ---- */
@@ -188,7 +190,7 @@ JS = r'''(function(){
   body.addEventListener('click',function(e){var tr=e.target.closest('tr[data-tk]');if(!tr||e.target.closest('a'))return;location.href='/stock.html?ticker='+tr.dataset.tk});
 
   /* ---- 검색 · 자동완성 · 최근 본 종목 (Home.html 의 규칙 그대로) ---- */
-  var INDEX=[],seen={}; live.forEach(function(s){if(seen[s.ticker])return;seen[s.ticker]=1;INDEX.push({ticker:s.ticker,name:s.name,en:I?I.nameEn(s):'',sector:s.sector||''})});
+  var INDEX=[],seen={}; live.concat(UP).forEach(function(s){if(seen[s.ticker])return;seen[s.ticker]=1;INDEX.push({ticker:s.ticker,name:s.name,en:I?I.nameEn(s):'',sector:s.sector||''})});
   function search(q){var t=q.trim().toLowerCase();if(!t)return[];
     return INDEX.map(function(s){var nm=s.name.toLowerCase(),ne=(s.en||'').toLowerCase(),sc=-1;
       if(nm.indexOf(t)===0||ne.indexOf(t)===0)sc=0;else if(s.ticker.indexOf(t)===0)sc=1;else if(nm.indexOf(t)>=0||ne.indexOf(t)>=0)sc=2;else if(s.ticker.indexOf(t)>=0)sc=3;else if(s.sector.toLowerCase().indexOf(t)>=0)sc=4;
@@ -231,7 +233,7 @@ JS = r'''(function(){
 def build(out_path):
     html = (C.head(C.title('홈')) + '\n<style>\n' + C.CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n' + MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
             + C.nav('홈') + '\n' + BODY + '\n' + C.FOOTER + '\n'
-            + '<script src="/data/stocks.js"></script>\n<script src="/data/reports-index.js"></script>\n<script>\n' + JS + C.JS + '\n</script>\n</body>\n</html>')
+            + '<script src="/data/stocks.js"></script>\n<script src="/data/reports-index.js"></script>\n<script>\n' + C.IPO_JS + JS + C.JS + '\n</script>\n</body>\n</html>')
     C.emit(out_path, html)
     print(f'✅ {out_path} · {len(html):,}자')
 
