@@ -1373,9 +1373,14 @@ def respace_from_krx(dart, krx):
     if len(pos) < n:
         return None
     end = pos[n - 1]
-    if " " not in k[:end + 1] and not k[end + 1:end + 2] == " ":
-        return None
     dl = [ch for ch in d if ch.isascii() and ch.isalpha()]
+    if " " not in k[:end + 1]:
+        # 한국거래소가 앞부분 안을 띄어 쓰지 않았으면, 공시가 꼬리를 붙여 쓴 경우('…BioscienceCO.,LTD' · 'InfoBankCorporation')만
+        # 그 뒤를 띄운다. 이미 띄어 쓴 한 낱말 이름('SHINSEGAE Inc.' · 'AMOREPACIFIC CORP.')의 꼬리를 한국거래소 표기('Co.,Ltd' ·
+        # 'CORPORATION')로 바꾸지 않는다 — 11/23 밤 갱신에서 15개가 바뀌어 구조화 데이터의 법인명(legalName)이 공시와 달라졌다.
+        dpos = [i for i, ch in enumerate(d) if ch.isascii() and ch.isalpha()]
+        if k[end + 1:end + 2] != " " or not d[dpos[n - 1] + 1:dpos[n - 1] + 2].isalpha():
+            return None
     out, li = [], 0
     for ch in k:
         if ch.isascii() and ch.isalpha():
