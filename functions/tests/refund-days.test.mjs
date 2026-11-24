@@ -100,7 +100,8 @@ for (const [start, want, why] of [
   clock.set(start);
   S.users.add(UID);
   await call("confirmBilling", { authKey: "auth", customerKey: UID });
-  const endKst = kst(sub().currentPeriodEnd.toMillis());
+  const s0 = sub();
+  const endKst = s0 && s0.currentPeriodEnd ? kst(s0.currentPeriodEnd.toMillis()) : null;
   clock.set(start + DAY);
   eq("한국 시간 08시 결제 — 기간은 한국 날짜로 30일(12월 2일 08시까지)",
      [((await call("refundPreview")).data || {}).totalDays, endKst], [30, "2026-12-02 08:00:00"]);

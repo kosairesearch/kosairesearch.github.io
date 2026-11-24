@@ -1087,6 +1087,10 @@ KOSAI 계정은 없는데 연결만 남은 사람은 화면 없이 계정이 만
     무료 영역과 잠금 미리보기가 '미리보기 제공'이다).
   · 약관 원문(scripts/content/terms.src.html)은 아직 무료 판이다. 유료 시행안 전문은 신고 서류 인쇄본(2026-11-24 사장에게 보낸 PDF)에 있고,
     유료 개시 때 그 판으로 바꾼다(위 '유료화 개정안은 스테이징에만 얹지 마라' — 실사이트 · 스테이징을 같이).
+  · **결제를 켜기 전에 할 일**(서버 · 2026-11-24 확인) — 갱신 배치(renewSubscriptions)의 질의는 Firestore 복합 색인
+    subscriptions(status · currentPeriodEnd)이 있어야 돈다. 저장소에 색인 파일이 없고 firebase.json · 배포 작업도 색인을 올리지 않는다 —
+    firestore.indexes.json 을 더하고 배포 작업에 색인을 올리는 줄을 넣는다. 배포 목록(--only)에는 결제 함수(confirmBilling · listPayments ·
+    cancelSubscription · resumeSubscription · requestRefund · refundPreview · renewSubscriptions)를 더한다 — changePlan 은 없어졌다.
 
 ### 네이버 로그인도 두 신고에 걸려 있다 *(2026-09-26 확인)*
 

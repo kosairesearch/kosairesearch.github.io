@@ -11,10 +11,16 @@
    브라우저에는 {_seconds: …} 라는 객체로 도착한다. 화면의 날짜 함수는 숫자·
    글자·Timestamp 만 읽으므로 그 객체는 NaN 이 되고, 내역 표의 '일자' 칸이
    통째로 빈다. 표는 그려지는데 날짜만 없어서 눈으로는 잘 안 보인다.
+
+   맨 아래 '진짜 listPayments' 는 결제 스위치를 켠 진짜 함수를 가짜 파이어스토어로
+   돌린다(lib/paid-harness.mjs). 요금제는 하나(member 월 14,900원)이고, 환불 사유는
+   withdraw · early · late 다(2026-11-24). 그 전에 남은 내역의 사유(used · left)도
+   그대로 내보낸다 — 화면이 이름표로 읽는다.
    ============================================================ */
 import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
+import { call, reset, store, Ts, UID } from "./lib/paid-harness.mjs";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, "..", "..");
@@ -73,12 +79,12 @@ eq("안 바꾸고 보내면 못 읽는다(막으려는 사고)",
 
 console.log("\n── 한 줄의 모양 ──");
 const row = rowOf({
-  amount: 9900, description: "BASIC 월 구독", kind: "subscription",
-  status: "paid", plan: "basic",
+  amount: 14900, description: "멤버십 월 구독", kind: "subscription",
+  status: "paid", plan: "member",
   paymentKey: "tviva20260830", orderId: "kosai_new_abc123_xyz",
   paidAt: "2026-08-30T05:00:00.000Z", createdAt: stamp("2026-08-30T05:00:01.000Z"),
 });
-eq("금액", row.amount, 9900);
+eq("금액", row.amount, 14900);
 eq("종류", row.kind, "subscription");
 /* 토스 식별자는 나가면 안 된다. 화면이 쓸 일이 없고, 결제 건을 취소할 수
    있는 열쇠라 브라우저에 둘 이유가 없다. */
@@ -87,11 +93,11 @@ eq("결제 식별자는 안 나간다", "paymentKey" in row || "orderId" in row,
    kind 로 문구를 만든다. */
 eq("한국어 설명 문장도 안 나간다", "description" in row, false);
 
-const refund = rowOf({ amount: -6237, kind: "refund", why: "used",
-                       status: "refunded", plan: "basic", paidAt: null,
+const refund = rowOf({ amount: -13410, kind: "refund", why: "early",
+                       status: "refunded", plan: "member", paidAt: null,
                        createdAt: stamp("2026-08-30T05:00:00.000Z") });
-eq("환불은 음수", refund.amount, -6237);
-eq("환불 사유가 실린다", refund.why, "used");
+eq("환불은 음수", refund.amount, -13410);
+eq("환불 사유가 실린다", refund.why, "early");
 eq("환불 줄도 날짜가 읽힌다", readableAt(refund.createdAt), true);
 
 console.log("\n── 서버와 미리보기의 줄 수가 같은가 ──");
@@ -110,6 +116,36 @@ eq("서버에 값이 있다", server, 24);
 eq("미리보기에 값이 있다", demo, 24);
 /* null === null 로 통과해 버리면 안 된다. 값이 있고, 그 값이 같아야 한다. */
 eq("두 값이 같다", server !== null && server === demo, true);
+
+console.log("\n── 진짜 listPayments ──");
+{
+  reset();
+  const at = (iso) => new Ts(Date.parse(iso));
+  const put = (id, v) => store.set(`payments/${UID}/items/${id}`, v);
+  put("a", { amount: 14900, description: "멤버십 월 구독", kind: "subscription", status: "paid", plan: "member",
+             paymentKey: "pay_1", orderId: "kosai_new_x", paidAt: "2026-11-02T05:00:00.000Z", createdAt: at("2026-11-02T05:00:01Z") });
+  put("b", { amount: -13410, description: "환불 · 7일 이내 환불(이용일수 차감)", kind: "refund", why: "early",
+             status: "refunded", plan: "member", paymentKey: "pay_1", paidAt: "2026-11-04T05:00:00.000Z",
+             createdAt: at("2026-11-04T05:00:01Z") });
+  put("c", { amount: -5940, description: "환불 · 이용분 차감 환불", kind: "refund", why: "used",
+             status: "refunded", plan: "basic", paymentKey: "pay_0", paidAt: "2026-08-30T05:00:00.000Z",
+             createdAt: at("2026-08-30T05:00:01Z") });
+  for (let i = 0; i < 30; i++) {
+    put("old" + i, { amount: 9900, kind: "subscription", status: "paid", plan: "basic",
+                     paymentKey: "p" + i, paidAt: null, createdAt: at(`2024-0${1 + (i % 9)}-0${1 + (i % 9)}T00:00:0${i % 10}Z`) });
+  }
+  const r = await call("listPayments", {});
+  const items = (r.data && r.data.items) || [];
+  eq("한 번에 24줄까지", items.length, 24);
+  eq("최근 것부터 — 환불(early) · 결제 · 옛 환불(used)", items.slice(0, 3).map((x) => [x.kind, x.why, x.amount]),
+     [["refund", "early", -13410], ["subscription", null, 14900], ["refund", "used", -5940]]);
+  eq("요금제 칸은 적힌 그대로(옛 내역은 basic)", items.slice(0, 3).map((x) => x.plan), ["member", "member", "basic"]);
+  eq("시각은 화면이 읽는 글자", [items[0].createdAt, readableAt(items[0].createdAt)], ["2026-11-04T05:00:01.000Z", true]);
+  eq("결제 식별자 · 한국어 설명 문장이 나가지 않는다",
+     items.every((x) => !("paymentKey" in x) && !("orderId" in x) && !("description" in x)), true);
+  const none = await call("listPayments", {}, { uid: null });
+  eq("로그인하지 않으면 unauthenticated", none.error && none.error.code, "unauthenticated");
+}
 
 console.log(`\n통과 ${pass} · 실패 ${fail}`);
 process.exit(fail ? 1 : 0);

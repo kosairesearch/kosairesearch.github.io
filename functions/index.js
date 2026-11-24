@@ -3311,8 +3311,6 @@ if (PAYMENTS_LIVE) exports.confirmBilling = onCall(
         currentPeriodStart: admin.firestore.Timestamp.fromDate(start),
         currentPeriodEnd: admin.firestore.Timestamp.fromDate(end),
         cancelAtPeriodEnd: false,
-        // 요금제 변경 예약(옛 기능)이 남은 문서면 함께 지운다.
-        pendingPlan: admin.firestore.FieldValue.delete(),
         /* 환불하고 다시 시작한 경우엔 시작일도 새로 본다. 지난 구독은 돈까지
            돌려주고 끝냈는데 '구독 시작일' 만 그때로 남으면 이어진 것처럼 읽힌다. */
         startedAt: (cur && !cur.refundedAt && cur.startedAt) || admin.firestore.Timestamp.fromDate(start),
@@ -3336,6 +3334,7 @@ if (PAYMENTS_LIVE) exports.confirmBilling = onCall(
            남으면 다음 환불이 이미 취소한 것으로 알고 건너뛴다 — 돈을 안 돌려주고
            끝난다. 주기가 새로 시작하는 자리마다 반드시 지운다. */
         refundDone: admin.firestore.FieldValue.delete(),
+        pendingPlan: admin.firestore.FieldValue.delete(),   // 옛 요금제 변경 예약
         updatedAt: admin.firestore.FieldValue.serverTimestamp(),
       }, { merge: true });
 
