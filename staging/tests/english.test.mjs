@@ -114,7 +114,7 @@ const LIVE = JSON.parse((s => s.slice(s.indexOf("{"), s.lastIndexOf("}") + 1))(r
 const NO_EN = LIVE.stocks.filter((s) => !s.name_en).map((s) => s.name);
 const PENDING = "0220W0";   // 준비 중 화면은 이 종목의 리포트 파일을 없는 척해서 본다
 
-async function scan(path, { signedIn = false, act = null, width = 1280 } = {}) {
+async function scan(path, { signedIn = false, act = null, width = 1280, init = null, must = null } = {}) {
   const ctx = await browser.newContext({ viewport: { width, height: 900 } });
   const fake = FAKE(signedIn);
   await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, (route) => {
@@ -128,6 +128,10 @@ async function scan(path, { signedIn = false, act = null, width = 1280 } = {}) {
       localStorage.setItem("__fakefs:users/" + uid, JSON.stringify({ consents: { age14: true, terms: true, privacy: true, version: v } }));
     } catch (e) {}
   }, [UID, CONSENT_VERSION]);
+  /* 장면마다 미리 깔아 둘 브라우저 기록(모의 결제의 구독 · 열람 기록) — 페이지 스크립트보다 먼저 */
+  if (init) await ctx.addInitScript((pairs) => {
+    try { for (const [k, v] of pairs) localStorage.setItem(k, v); } catch (e) {}
+  }, Object.entries(init()).map(([k, v]) => [k, JSON.stringify(v)]));
   const page = await ctx.newPage();
   const errors = [];
   page.on("pageerror", (e) => errors.push(String(e.message || e)));
@@ -155,8 +159,11 @@ async function scan(path, { signedIn = false, act = null, width = 1280 } = {}) {
     return [...out.entries()];
   }, NO_EN);
   const lang = await page.evaluate(() => [document.documentElement.lang, !!window.KOSi18n, window.KOSi18n && window.KOSi18n.lang]);
+  /* 장면이 뜻한 화면까지 갔는가 — 확인 창이 안 열렸거나 제한 안내가 안 떴는데 '한국어 없음' 으로 통과하면 아무것도 안 본 것이다 */
+  const seenText = await page.evaluate(() => document.body.innerText.replace(/\s+/g, " "));
+  const missing = (must || []).filter((x) => !seenText.includes(x));
   await ctx.close();
-  return { left, errors, lang };
+  return { left, errors, lang, missing };
 }
 
 const clickAll = (sel) => async (page) => { for (const h of await page.$$(sel)) { try { await h.click({ timeout: 800 }); } catch (e) {} } };
@@ -164,6 +171,29 @@ const typeIn = (sel, text) => async (page) => { await page.click(sel); await pag
 const seq = (...fs) => async (page) => { for (const f of fs) await f(page); };
 const openMenu = async (page) => { await page.setViewportSize({ width: 390, height: 844 }); await page.waitForTimeout(200); const b = await page.$("#menuBtn"); if (b && await b.isVisible()) await b.click(); };
 const openDetails = async (page) => page.evaluate(() => document.querySelectorAll("details").forEach((d) => (d.open = true)));
+/* 모의 결제의 기록 — 멤버십 구독(결제한 지 elapsed 일 · 열람 여부)과 자동 수집 제한에 닿은 열람 기록(최근 60분 안에 60종목) */
+const DAY_MS = 86400e3, KST_MS = 9 * 3600e3;
+const demoSub = (elapsed, viewed = true) => {
+  const noon = Math.floor((Date.now() + KST_MS) / DAY_MS) * DAY_MS - KST_MS + 12 * 3600e3, start = noon - elapsed * DAY_MS;
+  return { status: "active", plan: "member", currentPeriodStart: start, currentPeriodEnd: start + 30 * DAY_MS, cancelAtPeriodEnd: false,
+           startedAt: start, card: { company: "", issuerCode: "61", number: "0000-00**-****-0000" },
+           periodPayments: [{ key: "demo", amount: 14900, from: start }], readsSincePay: viewed ? 3 : 0 };
+};
+const burstReads = () => {
+  const now = Date.now(), t = Array.from({ length: 60 }, (_, i) => "B" + String(i).padStart(5, "0"));
+  return { day: new Date(now + KST_MS).toISOString().slice(0, 10), tickers: t, opens: t.map((x, i) => ({ t: x, at: now - 30 * 60e3 + i * 1000 })), last: now - 60e3 };
+};
+/* 옛 시연 기록 — 개편 전에 눌러 본 브라우저(basic · pro · 옛 환불 사유 · 요금제 변경 차액) */
+const oldPays = () => {
+  const t = Date.now() - 40 * DAY_MS;
+  return [
+    { createdAt: t, paidAt: t, amount: -5000, kind: "refund", why: "used", status: "refunded", plan: "basic" },
+    { createdAt: t, paidAt: t, amount: -3000, kind: "refund", why: "left", status: "refunded", plan: "pro" },
+    { createdAt: t, paidAt: t, amount: 3870, kind: "upgrade", description: "PRO 업그레이드 차액 (모의)", status: "paid", plan: "pro" },
+    { createdAt: t, paidAt: t, amount: 9900, kind: "subscription", status: "paid", plan: "basic" },
+  ];
+};
+const clickRefund = async (page) => { await page.click('.ks-btn:has-text("Request a refund")', { timeout: 3000 }); await page.waitForTimeout(800); };
 const scrollAll = async (page) => { for (let y = 0; y < 12000; y += 700) { await page.evaluate((y) => scrollTo(0, y), y); await page.waitForTimeout(120); } };
 
 /* 장면 — [이름, 사이트 안 주소, { signedIn 로그인 · act 동작 · pending 준비 중 · paid 멤버십 장면 · live 실사이트에만 있는 장면 }].
@@ -194,14 +224,33 @@ const SCENES = [
   ["계정 인증 — 이메일 확인", "/auth-action.html?mode=verifyEmail&oobCode=x", {}],
   ["멤버십 — 로그아웃", "/pricing.html", { act: openDetails, paid: true }],
   ["멤버십 — 로그인", "/pricing.html", { signedIn: true, act: openDetails, paid: true }],
-  ["결제", "/checkout.html?plan=basic", { signedIn: true, paid: true }],
+  ["결제", "/checkout.html?plan=member", { signedIn: true, paid: true, must: ["Refund terms", "within 3 business days", "Membership"] }],
+  ["결제 — 옛 주소(plan=basic)", "/checkout.html?plan=basic", { signedIn: true, paid: true, must: ["Pay and start"] }],
   ["설정 — 로그아웃", "/Settings.html", {}],
   ["설정 — 일반", "/Settings.html?tab=general", { signedIn: true }],
   ["설정 — 알림", "/Settings.html?tab=notifications", { signedIn: true }],
   ["설정 — 구독", "/Settings.html?tab=subscription", { signedIn: true, paid: true }],
+  /* 멤버십 이용 중 — 구독 칸과 환불 확인 창(계산 내역 · 까닭 한 줄 · 환불 기준)을 영어로 */
+  ["설정 — 구독(이용 중) · 환불 확인 창(7일 안)", "/Settings.html?tab=subscription",
+    { signedIn: true, paid: true, init: () => ({ "kos-demo-sub": demoSub(2) }), act: clickRefund,
+      must: ["Request a refund?", "KRW 13,410 will be refunded.", "Usage charge", "Refund terms", "within 3 business days"] }],
+  ["설정 — 구독(이용 중) · 환불 확인 창(7일 뒤)", "/Settings.html?tab=subscription",
+    { signedIn: true, paid: true, init: () => ({ "kos-demo-sub": demoSub(9) }), act: clickRefund,
+      must: ["KRW 8,444 will be refunded.", "Cancellation fee", "-KRW 1,490", "10 of 30 days"] }],
+  ["설정 — 구독(이용 중) · 환불 금액 없음", "/Settings.html?tab=subscription",
+    { signedIn: true, paid: true, init: () => ({ "kos-demo-sub": demoSub(26) }), act: clickRefund,
+      must: ["No refund is due. If you cancel, you will not be charged from your next billing date.", "Refund amount"] }],
+  ["설정 — 구독 · 옛 시연 기록의 결제 내역", "/Settings.html?tab=subscription",
+    { signedIn: true, paid: true, init: () => ({ "kos-demo-sub": { ...demoSub(3), plan: "pro", pendingPlan: "basic" }, "kos-demo-pays": oldPays() }),
+      must: ["Membership", "Plan change difference", "usage deducted", "remaining days"] }],
+  ["멤버십 — 이용 중", "/pricing.html", { signedIn: true, paid: true, init: () => ({ "kos-demo-sub": demoSub(2) }), must: ["Manage subscription"] }],
   ["설정 — 계정", "/Settings.html?tab=account", { signedIn: true }],
   ["리포트 상세 — 새 형식", "/stock.html?ticker=005930", { act: openDetails }],
   ["리포트 상세 — 새 형식(로그인)", "/stock.html?ticker=005930", { signedIn: true, act: openDetails }],
+  /* 자동 수집 제한 — 최근 60분 안에 새 종목 60개를 연 구독자가 새 종목을 열면 잠금 카드가 제한 안내로 바뀐다 */
+  ["리포트 상세 — 자동 수집 제한(구독 중)", "/stock.html?ticker=005930",
+    { signedIn: true, paid: true, init: () => ({ "kos-demo-sub": demoSub(2), "kos-demo-reads": burstReads() }),
+      must: ["You opened too many reports in a short time, so viewing is paused for a while.", "Please try again shortly."] }],
   ["리포트 상세 — 옛 형식", "/stock.html?ticker=0001A0", { act: openDetails }],
   ["리포트 상세 — 준비 중", `/stock.html?ticker=${PENDING}`, { pending: true }],
   ["리포트 상세 — 없는 종목", "/stock.html?ticker=999999", {}],
@@ -222,8 +271,9 @@ for (const [name, path, opt] of CASES) {
   if (only && !only.test(name)) continue;
   if (opt.pending) MISSING.add(PENDING); else MISSING.clear();
   const r = await scan(path, opt);
-  const bad = r.left.length || !r.lang[1] || r.lang[0] !== "en";
-  if (bad) { fail++; report[name] = r.left; console.log(`FAIL  ${name} — 남은 한국어 ${r.left.length}개` + (!r.lang[1] ? " · 번역 엔진 없음" : "") + (r.lang[0] !== "en" ? ` · html lang=${r.lang[0]}` : "")); if (!process.env.LIST) r.left.slice(0, 12).forEach(([t, w]) => console.log(`        ${t.slice(0, 90)}   ← ${w}`)); }
+  const bad = r.left.length || !r.lang[1] || r.lang[0] !== "en" || r.missing.length;
+  if (bad) { fail++; report[name] = r.left; console.log(`FAIL  ${name} — 남은 한국어 ${r.left.length}개` + (!r.lang[1] ? " · 번역 엔진 없음" : "") + (r.lang[0] !== "en" ? ` · html lang=${r.lang[0]}` : "")
+    + (r.missing.length ? ` · 장면에 없는 글: ${r.missing.join(" | ")}` + (r.errors.length ? ` (${r.errors.slice(0, 2).join(" | ")})` : "") : "")); if (!process.env.LIST) r.left.slice(0, 12).forEach(([t, w]) => console.log(`        ${t.slice(0, 90)}   ← ${w}`)); }
   else { pass++; console.log(`PASS  ${name}`); }
   if (r.errors.length && process.env.VERBOSE) console.log("        스크립트 오류: " + r.errors.slice(0, 3).join(" | "));
 }

@@ -200,21 +200,39 @@ console.log("\n── 띠 문구가 길어져도 따라간다 ──\n");
 }
 
 /* ── 확인 창이 띠에 가리지 않는가 ──────────────────────────
-   .dlg-box 는 최대 88vh 를 가운데 정렬한다. 띠가 확인 창보다 위에 그려지면
-   내용이 긴 창은 제목이 있는 윗부분이 띠 밑으로 들어가 읽을 수가 없다. */
+   확인 창은 최대 86vh 를 가운데 정렬한다. 띠가 확인 창보다 위에 그려지면
+   내용이 긴 창은 제목이 있는 윗부분이 띠 밑으로 들어가 읽을 수가 없다.
+   요금제 화면의 확인 창(.dlg — 요금제 변경)은 요금제를 하나로 합치며 없앴다(2026-11-24). 남은 확인 창은
+   설정의 해지 · 환불 확인 창(.ks-dlg — 환불 창은 계산 내역 · 환불 기준까지 실려 가장 길다)과 회원 탈퇴 창(.wd-ov)이다. */
 console.log("\n── 확인 창이 띠에 가리지 않는다 ──\n");
 {
   const page = await browser.newPage({ viewport: PHONE, deviceScaleFactor: 2 });
-  await page.goto(BASE + "/staging/pricing.html", { waitUntil: "domcontentloaded" });
-  await page.waitForTimeout(400);
+  /* 설정 화면은 파이어베이스 묶음을 받아야 그려진다 — 시험에서는 로그아웃 상태의 대역으로 바꿔 끼운다 */
+  const FAKE_FB = {
+    "firebase-app": "export function initializeApp(c){ return { options: c || {} }; } export function getApp(){ return {}; } export function getApps(){ return []; }",
+    "firebase-auth": "const A = { currentUser: null }; export function getAuth(){ return A; } export function onAuthStateChanged(a, cb){ setTimeout(() => cb(null), 0); return () => {}; }"
+      + " const no = async () => ({}); export const signOut = no, deleteUser = no, signInWithCustomToken = no, signInWithEmailAndPassword = no;",
+    "firebase-firestore": "export function getFirestore(){ return {}; } export function doc(){ return {}; } export async function getDoc(){ return { exists: () => false, data: () => null }; }"
+      + " export async function setDoc(){} export async function deleteDoc(){} export function onSnapshot(){ return () => {}; } export function serverTimestamp(){ return 0; }",
+    "firebase-functions": "export function getFunctions(){ return {}; } export function httpsCallable(){ return async () => ({ data: {} }); }",
+  };
+  await page.route(/gstatic\.com\/firebasejs\/[\d.]+\/firebase-[a-z-]+\.js/, (route) => {
+    const m = route.request().url().match(/(firebase-[a-z-]+)\.js/);
+    return FAKE_FB[m[1]] != null ? route.fulfill({ status: 200, contentType: "text/javascript", body: FAKE_FB[m[1]] }) : route.abort();
+  });
+  await page.goto(BASE + "/staging/Settings.html", { waitUntil: "domcontentloaded" });
+  await page.waitForFunction(() => document.getElementById("kos-settings-css"), null, { timeout: 10000 }).catch(() => {});
   const z = await page.evaluate(() => {
-    const num = (s) => parseInt(getComputedStyle(document.querySelector(s)).zIndex, 10);
-    return { bar: num(".kos-staging-bar"), nav: num(".nav"),
-             menu: num(".mmenu"), dlg: num(".dlg") };
+    const num = (s) => { const e = document.querySelector(s); return e ? parseInt(getComputedStyle(e).zIndex, 10) : NaN; };
+    /* 확인 창은 누를 때 만들어진다 — 같은 이름의 빈 창을 잠깐 붙여 옷(z-index)만 잰다 */
+    const probe = document.createElement("div"); probe.className = "ks-dlg"; document.body.appendChild(probe);
+    const out = { bar: num(".kos-staging-bar"), nav: num(".nav"), menu: num(".mmenu"), dlg: num(".ks-dlg") };
+    probe.remove();
+    return out;
   });
   await page.close();
   ok("띠가 헤더·메뉴보다 위에 그려진다", z.bar > z.nav && z.bar > z.menu, JSON.stringify(z));
-  ok("띠가 확인 창보다는 아래에 그려진다", z.bar < z.dlg, JSON.stringify(z));
+  ok("띠가 확인 창(설정의 해지 · 환불)보다는 아래에 그려진다", z.bar < z.dlg, JSON.stringify(z));
 }
 
 /* ── 실사이트 — 띠가 없을 뿐 메뉴는 스테이징과 같다 ───────────

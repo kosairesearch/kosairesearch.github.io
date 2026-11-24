@@ -126,12 +126,16 @@ console.log("\n── 자물쇠: 오래된 것은 없는 셈 친다 ──");
 }
 
 /* ── 환불: 중간에 실패해도 두 번 취소하지 않는다 ───────────── */
-const PRICE = { basic: 9900, pro: 14900 };
+/* 요금제는 하나다(2026-11-24 · member 월 14,900원). 결제 건 기록이 없는 옛 구독은
+   정가 한 건으로 본다 — refundSources 가 index.js 와 같은지는 아래에서 견준다. */
+const PRICE = { member: 14900 };
+const PLAN_ID = "member";
 function refundSources(sub) {
-  const list = ((sub && sub.periodPayments) || []).filter((e) => e && e.key && e.amount > 0);
+  const list = ((sub && sub.periodPayments) || [])
+    .filter((e) => e && e.key && e.amount > 0);
   if (list.length) return list.slice().reverse();
   return sub && sub.lastPaymentKey
-    ? [{ key: sub.lastPaymentKey, amount: PRICE[sub.plan] || 0 }] : [];
+    ? [{ key: sub.lastPaymentKey, amount: PRICE[PLAN_ID] }] : [];
 }
 
 /* doRefund 의 알맹이. toss 와 writePayment 만 대역으로 받는다. */
@@ -155,6 +159,8 @@ async function doRefund(ref, sub, q, toss, writePayment) {
 
 console.log("\n── 환불: 중간에 실패하고 다시 눌렀을 때 ──");
 {
+  /* 결제가 두 건인 기간 — 요금제를 하나로 합치기 전에 업그레이드 차액을 낸 기간이
+     그렇다. 취소가 두 번 나가므로 중간에 끊길 수 있다. */
   const { ref, peek } = makeDb();
   const sub = {
     plan: "pro", lastPaymentKey: "pay_base",
@@ -201,13 +207,13 @@ console.log("\n── 환불: 중간에 실패하고 다시 눌렀을 때 ──
 console.log("\n── 환불: 같은 이름으로 보내는가 ──");
 {
   const { ref } = makeDb();
-  const sub = { plan: "basic", lastPaymentKey: "pay_a",
-                periodPayments: [{ key: "pay_a", amount: 9900, from: 0 }] };
+  const sub = { plan: "member", lastPaymentKey: "pay_a",
+                periodPayments: [{ key: "pay_a", amount: 14900, from: 0 }] };
   const seen = [];
   const toss = async (p, b, idem) => { seen.push(idem); };
-  await doRefund(ref, sub, { amount: 6237 }, toss, async () => {});
+  await doRefund(ref, sub, { amount: 13410 }, toss, async () => {});
   const { ref: ref2 } = makeDb();
-  await doRefund(ref2, sub, { amount: 6237 }, toss, async () => {});
+  await doRefund(ref2, sub, { amount: 13410 }, toss, async () => {});
   ok("같은 환불은 같은 이름으로 나간다", seen[0] === seen[1], JSON.stringify(seen));
   ok("이름에 시각이 안 들어간다", !/\d{10,}/.test(seen[0]), seen[0]);
 }
@@ -236,14 +242,18 @@ console.log("\n── 옮겨 적은 것이 원본과 같은가 ──");
   /* 대역을 쓰느라 본문이 똑같지는 않다. 대신 반드시 있어야 할 것들을 확인한다 —
      하나라도 빠지면 자물쇠가 자물쇠 노릇을 못 한다. */
   ok("트랜잭션 안에서 확인하고 잠근다", /runTransaction/.test(real || ""));
+  /* 위 환불 시험이 쓰는 refundSources 사본이 원본과 같아야 시험이 원본을 지킨다 */
+  const mine = readFileSync(fileURLToPath(import.meta.url), "utf8");
+  const a = body(src, "refundSources"), b = body(mine, "refundSources");
+  ok("refundSources 가 index.js 와 같다", a !== null && a === b, a === null ? "index.js 에서 못 찾음" : "본문이 다르다");
   ok("TTL 로 오래된 자물쇠를 풀어 준다", /BUSY_TTL/.test(real || ""));
   ok("finally 에서 반드시 푼다", /finally/.test(real || ""));
   /* 구독 문서를 고치는 함수는 전부 자물쇠를 잡아야 한다. 돈이 나가는 넷은
-     두 번 청구를 막으려고, 해지·해지 취소는 '해지 예약 + 플랜 변경 예약' 이라는
-     있어서는 안 되는 상태가 만들어지는 것을 막으려고. */
+     두 번 청구를 막으려고, 해지·해지 취소는 결제 · 환불과 겹쳐 서로의 쓰기를
+     덮지 않게. 요금제 변경(plan)은 2026-11-24 없앴다. 탈퇴는 subRef 로 따로 잡는다. */
   const locked = [...src.matchAll(/withLock\(db, (?:d\.)?ref, "(\w+)"/g)].map((m) => m[1]).sort();
-  ok("구독을 고치는 자리 일곱에 다 걸려 있다",
-     JSON.stringify(locked) === JSON.stringify(["billing", "cancel", "dunning", "plan", "refund", "renew", "resume"]),
+  ok("구독을 고치는 자리 여섯에 다 걸려 있다",
+     JSON.stringify(locked) === JSON.stringify(["billing", "cancel", "dunning", "refund", "renew", "resume"]),
      JSON.stringify(locked));
   ok("결제·취소가 멱등 이름을 들고 나간다",
      /Idempotency-Key/.test(src) && /refund_\$\{uid\}_\$\{src\.key\}/.test(src));
@@ -265,9 +275,15 @@ console.log("\n── 옮겨 적은 것이 원본과 같은가 ──");
      /Number\.isFinite\(amount\)/.test(src),
      "amount < MIN_CHARGE 만으로는 undefined·NaN 을 못 막는다");
 
-  ok("업그레이드 기록에 올린 뒤 플랜을 적는다",
-     /charge\(db, uid, \{ \.\.\.sub, plan: next \}/.test(src),
-     "올리기 전 플랜을 적으면 'PRO 업그레이드 차액' 옆에 BASIC 이 남는다");
+  /* 최소 결제 금액보다 작은 금액을 '건너뛰고 넘어가면' 결제 없이 한 달이 열린다.
+     요금제 변경(업그레이드 차액)을 없앤 뒤로 그 길로 오는 금액은 계산이 틀린 것뿐이다. */
+  ok("최소 결제 금액보다 작으면 건너뛰지 않고 멈춘다",
+     !/if \(amount < MIN_CHARGE\) return null;/.test(src) &&
+     /if \(amount < MIN_CHARGE\) \{[\s\S]{0,200}throw new HttpsError/.test(src),
+     "건너뛰면 결제 없이 한 달이 열린다");
+  ok("요금제 변경(changePlan · 업그레이드 차액 결제)이 없다",
+     !/exports\.changePlan\b/.test(src) && !/`up_\$\{/.test(src),
+     "요금제는 하나다(2026-11-24)");
 
   /* 새 주기가 시작되는 자리마다 refundDone 을 지워야 한다. 남으면 다음 환불이
      '이미 취소했다' 고 알고 건너뛰어 돈을 안 돌려주고 끝난다.
@@ -301,14 +317,6 @@ console.log("\n── 옮겨 적은 것이 원본과 같은가 ──");
     ok(`${what} 가 재시도 횟수를 지운다`,
        del("retryCount").test(near), "다음 달에 받을 재시도 기회가 줄어든다");
   }
-  /* 반대로 업그레이드는 같은 주기이므로 지우면 안 된다. */
-  {
-    const at = src.indexOf("`up_");
-    const near = src.slice(Math.max(0, at - 900), at + 900);
-    ok("업그레이드는 refundDone 을 지우지 않는다",
-       !/refundDone: admin\.firestore\.FieldValue\.delete\(\)/.test(near),
-       "같은 주기인데 지우면 이미 나간 취소를 또 시도한다");
-  }
 
   /* 이용 중인 구독 위에 또 결제하는 길을 막는다.
 
@@ -328,21 +336,23 @@ console.log("\n── 옮겨 적은 것이 원본과 같은가 ──");
      "지난달에 쓴 횟수가 이어져 재시도 기회가 줄어든다");
 
   /* 카드가 거절된 뒤 다시 받는 자리는 셋이다 — 배치 재시도, 카드 재등록,
-     그리고 결제 화면에서 새로 결제하기. 셋 다 예약해 둔 플랜 변경을 반영해야
-     한다. 다운그레이드는 '다음 결제일부터' 인데 그 결제일이 바로 거절된
-     날이므로, 옛 플랜으로 청구하면 내리겠다고 예약한 사람에게 비싼 값을
-     받고 옛 플랜을 그대로 물려 놓는 셈이 된다. */
+     그리고 결제 화면에서 새로 결제하기. 요금제는 하나라(2026-11-24) 셋 다
+     member 정가를 받는다. 구독 문서에 옛 요금제 값(basic · pro)이나 다운그레이드
+     예약(pendingPlan)이 남아 있어도 그 값으로 금액을 찾지 않는다 — PRICE["basic"]
+     은 없는 칸이라 금액이 비고, 예약을 따르면 없어진 요금으로 청구한다.
+     (진짜 함수로는 plan.test ⑤ · renew.test 가 본다) */
   {
     const at = src.indexOf("`retry_${uid}");
     const near = src.slice(Math.max(0, at - 1200), at + 900);
-    ok("카드 재등록으로 되살릴 때 예약해 둔 플랜을 적용한다",
-       /const nextPlan = PRICE\[cur\.pendingPlan\] \? cur\.pendingPlan : cur\.plan;/.test(near)
-       && /PRICE\[nextPlan\]/.test(near),
-       "내리겠다고 예약한 사람에게 옛 플랜 값을 받는다");
-    ok("되살릴 때 예약을 비운다",
-       /patch\.pendingPlan = null/.test(near),
-       "남으면 다음 달에 또 내려간다");
+    ok("카드 재등록으로 되살릴 때 옛 요금제 값도 member 로 읽는다",
+       /const nextPlan = planOf\(cur\.plan\);/.test(near) && /PRICE\[nextPlan\]/.test(near),
+       "옛 값으로 금액을 찾으면 금액이 빈다");
+    ok("되살릴 때 옛 변경 예약 칸을 지운다",
+       /patch\.pendingPlan = admin\.firestore\.FieldValue\.delete\(\)/.test(near),
+       "남으면 화면이 없어진 예약을 말한다");
   }
+  ok("어디서도 pendingPlan 으로 청구할 요금제를 고르지 않는다",
+     !/pendingPlan \|\||PRICE\[cur\.pendingPlan\]|\.pendingPlan \?/.test(src));
 
   /* 카드를 긁는 고리는 둘이다 — 월 갱신과 재시도. 둘 다 긁기 전에 계정이
      살아 있는지 봐야 한다. 탈퇴한 사람의 카드를 긁는 사고는 되돌릴 수 없다. */

@@ -2,8 +2,11 @@
    1년을 살아 본다 — 날마다 하루씩 넘기며
 
    왜 있는가. 지금까지의 검사는 한 순간을 본다. 실제 구독은 열두 달을 산다 —
-   달마다 갱신되고, 중간에 카드가 거절되고, 재시도로 되살아나고, 플랜을 올리고
-   내리고, 환불하고 다시 시작한다. 그 긴 흐름에서만 드러나는 것이 있다.
+   달마다 갱신되고, 중간에 카드가 거절되고, 재시도로 되살아나고, 해지했다 되살리고,
+   환불하고 다시 시작한다. 그 긴 흐름에서만 드러나는 것이 있다.
+
+   2026-11-24 요금제 개편 — 요금제는 멤버십 하나(월 14,900원)이고 요금제 변경은 없다.
+   하루 열람 한도 대신 자동 수집 제한(60분 안에 새 종목 60개)이 있다.
 
    그래서 하루씩 365번 넘기면서 매일
      · 갱신 배치를 돌리고
@@ -12,7 +15,7 @@
 
    지키는 것
      1. 받은 돈보다 많이 돌려주지 않는다
-     2. 하루 열람이 플랜 한도를 넘지 않는다
+     2. 60분 안에 새로 연 종목이 60개를 넘지 않는다 · 요금제는 멤버십 하나 · 결제는 늘 14,900원
      3. 이용 기간이 거꾸로 가지 않는다
      4. 결제 없이 이용 중이 되지 않는다        ← 공짜로 여는 길
      5. 이용 중인데 결제 기록이 비어 있지 않다  ← 환불할 근거가 사라진 상태
@@ -63,7 +66,7 @@ globalThis.fetch = async () => ({ ok: true, json: async () => ({
 await import(`file://${TMP}/demo.js`);
 
 const D = window.KOSDemo, PW = window.KOSPaywall;
-const PLANS = { basic: { price: 9900, limit: 5 }, pro: { price: 14900, limit: 15 } };
+const PRICE = 14900, BURST_MAX = 60;
 const RETRY_MAX = 4;
 const DAY = 86400e3;
 const sub = () => JSON.parse(localStorage.getItem("kos-demo-sub") || "null");
@@ -105,12 +108,11 @@ function checkDay(log, dayNo) {
   const len = (s.currentPeriodEnd - s.currentPeriodStart) / DAY;
   if (len > 34) return `${dayNo}일차: 이용 기간이 ${len.toFixed(1)}일 — 너무 길다`;
 
-  // 2. 하루 열람이 한도를 넘지 않는다
-  const r = JSON.parse(localStorage.getItem("kos-demo-reads") || "null");
-  const used = ((r && r.tickers) || []).length;
-  const limit = (PLANS[s.plan] || {}).limit || 0;
-  if (used > Math.max(limit, PLANS.pro.limit)) {
-    return `${dayNo}일차: 하루 열람 ${used}건 — 한도를 넘었다`;
+  // 2. 자동 수집 제한 · 요금제는 멤버십 하나 · 결제는 늘 멤버십 값
+  if (D.opensInWindow() > BURST_MAX) return `${dayNo}일차: 60분 안에 새 종목 ${D.opensInWindow()}개 — 문턱을 넘었다`;
+  if (s.plan !== "member" || s.pendingPlan) return `${dayNo}일차: 요금제가 멤버십이 아니다 (${s.plan} · 예약 ${s.pendingPlan})`;
+  if ((s.periodPayments || []).some((p) => p.amount !== PRICE)) {
+    return `${dayNo}일차: 이번 기간 결제가 멤버십 값이 아니다 ${JSON.stringify(s.periodPayments)}`;
   }
   return null;
 }
@@ -120,7 +122,7 @@ async function liveAYear(seed, { chaos }) {
   const rnd = rng(seed);
   localStorage.clear();
   const log = [];
-  D.subscribe(rnd() < 0.5 ? "basic" : "pro");
+  D.subscribe(rnd() < 0.8 ? "member" : "basic");   // 옛 주소(plan=basic)로 와도 멤버십
   log.push("결제");
 
   for (let dayNo = 1; dayNo <= 365; dayNo++) {
@@ -136,13 +138,19 @@ async function liveAYear(seed, { chaos }) {
       if (roll < 0.35) {                                   // 리포트를 본다
         const n = 1 + Math.floor(rnd() * 4);
         for (let i = 0; i < n; i++) { try { await PW.fetchPaid("T" + Math.floor(rnd() * 40)); } catch (e) { break; } }
-      } else if (roll < 0.40) { await D.call("changePlan", { plan: "pro" }); log.push(`${dayNo}:올림`); }
-      else if (roll < 0.44) { await D.call("changePlan", { plan: "basic" }); log.push(`${dayNo}:내림`); }
+      } else if (roll < 0.40) {                             // 몰아서 본다 — 자동 수집 제한에 닿는다
+        for (let i = 0; i < 70; i++) { try { await PW.fetchPaid("M" + dayNo + "-" + i); } catch (e) { break; } }
+        log.push(`${dayNo}:몰아보기`);
+      } else if (roll < 0.44) {                             // 없는 기능 — 요금제 변경은 언제나 거절이어야 한다
+        let passed = true;
+        try { await D.call("changePlan", { plan: "pro" }); } catch (e) { passed = false; }
+        if (passed) return { seed, bad: `${dayNo}일차: 없는 요금제 변경(changePlan)이 통과했다`, log: log.slice(-14) };
+      }
       else if (roll < 0.47) { await D.call("cancelSubscription", {}); log.push(`${dayNo}:해지`); }
       else if (roll < 0.50) { await D.call("resumeSubscription", {}); log.push(`${dayNo}:해지취소`); }
       else if (roll < 0.53) { await D.call("requestRefund", {}); log.push(`${dayNo}:환불`); }
       else if (roll < 0.57) { D.updateCard(); log.push(`${dayNo}:카드변경`); }
-      else if (roll < 0.61) { D.subscribe(rnd() < 0.5 ? "basic" : "pro"); log.push(`${dayNo}:재결제`); }
+      else if (roll < 0.61) { D.subscribe("member"); log.push(`${dayNo}:재결제`); }
     } catch (e) { /* 거절은 정상이다 */ }
 
     const bad = checkDay(log, dayNo);
@@ -188,7 +196,7 @@ ok(`${ran}명 × 365일 = ${ran * 365}일`, !broken);
 console.log("\n── 재시도 성공: 그 순간부터 새 한 달 ──\n");
 {
   localStorage.clear();
-  D.subscribe("basic");
+  D.subscribe("member");
   D.advance(31);
   D.runRenewal({ decline: true });
   ok("거절되면 '결제 실패' 로 둔다", sub().status === "past_due", sub().status);
@@ -210,8 +218,8 @@ console.log("\n── 재시도 성공: 그 순간부터 새 한 달 ──\n");
   ok("거기서부터 한 달", (s.currentPeriodEnd - s.currentPeriodStart) / DAY > 27);
   ok("실패 흔적이 지워진다", s.failedAt === undefined && s.retryCount === undefined,
      JSON.stringify({ failedAt: s.failedAt, retryCount: s.retryCount }));
-  ok("결제 기록이 새로 시작된다",
-     s.periodPayments.length === 1 && s.periodPayments[0].amount === PLANS.basic.price);
+  ok("결제 기록이 새로 시작된다(멤버십 14,900원)",
+     s.periodPayments.length === 1 && s.periodPayments[0].amount === PRICE);
   ok("내역에 결제가 한 줄 늘었다", pays().length === before + 1);
   ok("다시 리포트를 볼 수 있다",
      await PW.fetchPaid("005930").then(() => true).catch(() => false));
@@ -220,7 +228,7 @@ console.log("\n── 재시도 성공: 그 순간부터 새 한 달 ──\n");
 console.log("\n── 재시도 중 카드를 직접 바꾸면 바로 되살아난다 ──\n");
 {
   localStorage.clear();
-  D.subscribe("pro");
+  D.subscribe("member");
   D.advance(31);
   D.runRenewal({ decline: true });
   D.updateCard();
@@ -230,33 +238,46 @@ console.log("\n── 재시도 중 카드를 직접 바꾸면 바로 되살아�
   ok("그 순간부터 새 기간", Math.abs(s.currentPeriodStart - Date.now()) < 5000);
 }
 
-/* ── 예약해 둔 다운그레이드가 되살아날 때 반영되는가 ──────────
-   BASIC 으로 내리겠다고 예약한 사람의 카드가 다음 결제일에 거절됐다. 되살릴
-   때 옛 플랜(PRO)으로 청구하면, 내리겠다고 말해 둔 사람에게 비싼 값을 받고
-   비싼 플랜을 그대로 물려 놓는 셈이 된다. 되살리는 길은 둘이다 — 카드 재등록,
-   배치 재시도. 둘 다 확인한다. */
-console.log("\n── 내리기로 예약해 둔 사람이 되살아나면 ──\n");
+/* ── 옛 요금제 기록이 되살아날 때 ─────────────────────────────
+   개편 전에 스테이징을 눌러 본 브라우저에는 PRO 구독에 BASIC 변경 예약(pendingPlan)이 걸린 기록이 남아 있을 수
+   있다. 그 구독의 카드가 다음 결제일에 거절됐다가 되살아나면, 옛 요금제 값(9,900 · 14,900원 중 하나)이 아니라
+   하나뿐인 멤버십 값으로 받고 예약 칸은 지워야 한다. 되살리는 길은 둘이다 — 카드 재등록, 배치 재시도. */
+console.log("\n── 옛 요금제 기록이 되살아나면 ──\n");
 for (const [how, revive] of [
   ["카드 재등록", () => D.updateCard()],
   ["배치 재시도", () => { D.advance(1); D.runRenewal({ decline: false }); }],
 ]) {
   localStorage.clear();
-  D.subscribe("pro");
-  await D.call("changePlan", { plan: "basic" });          // 다음 결제일부터 BASIC
-  D.advance(31);
+  const t0 = Date.now() - 31 * DAY;
+  localStorage.setItem("kos-demo-sub", JSON.stringify({
+    status: "active", plan: "pro", pendingPlan: "basic",
+    currentPeriodStart: t0, currentPeriodEnd: Date.now() - 1000, cancelAtPeriodEnd: false, startedAt: t0,
+    periodPayments: [{ key: "old", amount: 14900, from: t0 }], readsSincePay: 3,
+  }));
   D.runRenewal({ decline: true });                        // 그 결제일에 거절됐다
   const was = pays().length;
   revive();
   const s = sub();
-  ok(`${how} — BASIC 으로 되살아난다`, s.status === "active" && s.plan === "basic",
+  ok(`${how} — 멤버십으로 되살아난다`, s.status === "active" && s.plan === "member",
      `${s.status} · ${s.plan}`);
-  ok(`${how} — 예약이 비워진다`, !s.pendingPlan, String(s.pendingPlan));
-  ok(`${how} — BASIC 값만 받는다`,
-     s.periodPayments.length === 1 && s.periodPayments[0].amount === PLANS.basic.price,
+  ok(`${how} — 옛 변경 예약이 지워진다`, !("pendingPlan" in s), String(s.pendingPlan));
+  ok(`${how} — 멤버십 값만 받는다`,
+     s.periodPayments.length === 1 && s.periodPayments[0].amount === PRICE,
      JSON.stringify(s.periodPayments));
-  ok(`${how} — 내역에도 BASIC 으로 적힌다`,
-     pays().length === was + 1 && pays()[0].amount === PLANS.basic.price,
+  ok(`${how} — 내역에도 멤버십으로 적힌다`,
+     pays().length === was + 1 && pays()[0].amount === PRICE && pays()[0].plan === "member",
      JSON.stringify(pays()[0]));
+}
+
+/* ── 요금제 변경은 없다 ─────────────────────────────────────── */
+console.log("\n── 요금제 변경은 없다 ──\n");
+{
+  localStorage.clear();
+  D.subscribe("member");
+  let code = "";
+  await D.call("changePlan", { plan: "pro" }).catch((e) => { code = e.code; });
+  ok("changePlan 은 모르는 요청으로 거절한다", code === "not-found", code || "그냥 진행됨");
+  ok("구독은 그대로 멤버십", sub().plan === "member" && sub().periodPayments.length === 1);
 }
 
 rmSync(TMP, { recursive: true, force: true });

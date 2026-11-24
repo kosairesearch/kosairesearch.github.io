@@ -1,8 +1,13 @@
 /* ============================================================
    KOSAI — 결제(구독 시작)
    ------------------------------------------------------------
+   요금제는 멤버십 하나다(2026-11-24 — 월 14,900원 · 요금제 변경 없음). 결제 전에 환불 기준을
+   반드시 보이게 둔다(전자상거래법 제17조⑥ — 7일 안에도 이용한 날을 빼는 제한은 결제 전에
+   알려야 효력이 있다). 글은 payment-config.js 의 REFUND_NOTICE 하나를 자주 묻는 질문 ·
+   설정의 환불 확인 창과 같이 쓴다.
+
    흐름
-     1) ?plan=basic|pro 확인 → 로그인 확인
+     1) ?plan=member 확인(없으면 멤버십 · 옛 주소의 basic · pro 도 멤버십) → 로그인 확인
      2) 카드 등록(토스페이먼츠 빌링 인증) → 결제창으로 이동
      3) 돌아오면 ?authKey&customerKey 를 서버로 넘겨 confirmBilling 호출
         서버가 빌링키를 발급하고 첫 결제를 승인한 뒤 subscriptions/{uid} 를 쓴다
@@ -12,12 +17,12 @@
    바꿀 데가 있어야 하고, 갱신이 실패해 멈춘 구독도 여기서 되살아난다. 이때는
    결제하지 않는다(서버 confirmBilling 의 updateMethod).
 
-   금액은 여기서 정하지 않는다. 클라이언트가 보낸 금액을 믿으면 9,900원짜리를
+   금액은 여기서 정하지 않는다. 클라이언트가 보낸 금액을 믿으면 14,900원짜리를
    100원에 파는 요청을 만들 수 있다. 서버가 plan 만 받아 자기 표에서 금액을 읽는다.
    ============================================================ */
-import "./paywall.js?v=01294faf";
+import "./paywall.js?v=8eff9bf3";
 import { app, auth, isConfigured, SOCIAL } from "./firebase-config.js?v=7b8f27a5";
-import { PLANS, TOSS, payReady as _payReady, planOf, won } from "./payment-config.js?v=4ae73997";
+import { PLAN, TOSS, payReady as _payReady, planOf, planName, won, REFUND_NOTICE } from "./payment-config.js?v=da400e2b";
 const payReady = window.__KOSDEMO ? true : _payReady;
 import { getFunctions, httpsCallable }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-functions.js";
@@ -36,23 +41,22 @@ const esc = (x) => String(x == null ? "" : x)
 
 const T = {
   ko: {
-    step1: "주문 확인", step2: "결제 수단", step3: "약관 동의",
+    step1: "주문 확인", step2: "결제 수단", stepRefund: "환불 기준", step3: "약관 동의",
     card: "신용·체크카드", cardD: "국내에서 발급된 카드로 매달 자동 결제됩니다.",
     sumPlan: "플랜", sumCycle: "결제 주기", sumFirst: "첫 결제일", sumNext: "다음 결제일",
     sumStart: "이용 시작일",
-    startsLater: "이미 이용 중인 기간이 오늘 자정까지 남아 있습니다. 새 구독은 오늘 바로 시작되며, 오늘 하루 열람 한도는 이미 열람하신 만큼 차감된 상태로 이어집니다. 겹치는 하루는 이용 기간 끝에 더해 드립니다.",
+    startsLater: "이미 이용 중인 기간이 오늘 자정까지 남아 있습니다. 새 구독은 오늘 바로 시작되며, 겹치는 하루는 이용 기간 끝에 더해 드립니다.",
     monthly: "매월", today: "오늘", total: "결제 금액", vat: "부가가치세 포함",
     agreeAll: "아래 내용에 모두 동의합니다",
     agree1: '<a href="Terms.html" target="_blank" rel="noopener">이용약관</a>과 <a href="Privacy.html" target="_blank" rel="noopener">개인정보 처리방침</a>에 동의합니다. (필수)',
     agree2: "매월 같은 날짜에 등록하신 카드로 자동 결제되는 정기결제에 동의합니다. 결제가 승인되지 않는 경우 1일·3일·5일·7일째에 다시 시도되는 것에 동의합니다. (필수)",
-    agree3: "디지털 콘텐츠 특성상 리포트를 열람하시면 청약철회가 제한될 수 있음을 확인했습니다. (필수)",
+    agree3: "위 환불 기준을 확인했으며, 결제 후 리포트의 유료 영역을 열람하면 7일 이내에도 이용한 날의 이용료를 뺀 금액이 환불되는 것에 동의합니다. (필수)",
     agree4: "만 19세 이상이거나, 미성년자인 경우 법정대리인의 동의를 받았습니다. (필수)",
     pay: "결제하고 시작하기",
-    fine: '결제 후 7일 이내에 리포트를 열람하지 않으셨다면 전액 환불됩니다. 자세한 기준은 <a href="pricing.html#faq">환불 기준</a>을 확인하여 주시기 바랍니다. 구독은 <a href="billing.html">구독 관리</a>에서 언제든지 해지하실 수 있습니다.',
     loading: "불러오는 중…", paying: "결제창을 여는 중…", confirming: "결제를 확인하는 중…",
     needLogin: "로그인이 필요합니다", needLoginD: "구독은 계정에 연결됩니다. 로그인하신 뒤 계속 진행하여 주시기 바랍니다.",
     login: "로그인", toPricing: "멤버십 보기",
-    already: "이미 이용 중입니다", alreadyD: "현재 {plan} 플랜을 이용하고 계십니다. 플랜 변경과 해지는 구독 관리에서 하실 수 있습니다.",
+    already: "이미 이용 중입니다", alreadyD: "현재 멤버십을 이용하고 계십니다. 해지와 환불은 구독 관리에서 하실 수 있습니다.",
     toBilling: "구독 관리로 이동",
     notReady: "결제 준비 중입니다", notReadyD: "결제 연동 설정이 아직 완료되지 않았습니다. 잠시 후 다시 시도하여 주시기 바랍니다.",
     badPlan: "요금제를 찾을 수 없습니다", badPlanD: "멤버십 페이지에서 다시 선택하여 주시기 바랍니다.",
@@ -73,23 +77,22 @@ const T = {
     mNoSubD: "결제 수단은 구독 시작 후 변경하실 수 있습니다.",
   },
   en: {
-    step1: "Order", step2: "Payment method", step3: "Agreements",
+    step1: "Order", step2: "Payment method", stepRefund: "Refund terms", step3: "Agreements",
     card: "Credit or debit card", cardD: "Billed automatically each month to the card you register.",
     sumPlan: "Plan", sumCycle: "Billing cycle", sumFirst: "First charge", sumNext: "Next charge",
     sumStart: "Access starts",
-    startsLater: "Your current period runs until midnight today. The new subscription starts right away, and today's view limit continues from what you have already used. The overlapping day is added to the end of your billing period.",
+    startsLater: "Your current period runs until midnight today. The new subscription starts right away, and the overlapping day is added to the end of your billing period.",
     monthly: "Monthly", today: "Today", total: "Amount due", vat: "VAT included",
     agreeAll: "I agree to everything below",
     agree1: 'I agree to the <a href="Terms.html" target="_blank" rel="noopener">Terms of Service</a> and <a href="Privacy.html" target="_blank" rel="noopener">Privacy Policy</a>. (required)',
     agree2: "I agree to recurring monthly charges to the card I register, on the same date each month, and to retries on days 1, 3, 5 and 7 if a charge is declined. (required)",
-    agree3: "I understand that opening a report may limit my right to withdraw, as this is digital content. (required)",
+    agree3: "I have read the refund terms above and agree that, once I open the paid sections of a report after payment, a refund within 7 days is the amount paid minus the usage charge for the days used. (required)",
     agree4: "I am 19 or older, or I am a minor with my legal guardian's consent. (required)",
     pay: "Pay and start",
-    fine: 'If you have not opened a report within 7 days of payment, you get a full refund. See <a href="pricing.html#faq">refund terms</a> for details. You can cancel anytime on the <a href="billing.html">subscription page</a>.',
     loading: "Loading…", paying: "Opening the payment window…", confirming: "Confirming your payment…",
     needLogin: "Sign in required", needLoginD: "Subscriptions are tied to your account. Please sign in to continue.",
     login: "Sign in", toPricing: "See plans",
-    already: "You are already subscribed", alreadyD: "You are on the {plan} plan. You can change or cancel it on the subscription page.",
+    already: "You are already subscribed", alreadyD: "You already have an active membership. You can cancel or request a refund on the subscription page.",
     toBilling: "Go to subscription",
     notReady: "Payments are not live yet", notReadyD: "Payment integration is not finished. Please try again shortly.",
     badPlan: "Plan not found", badPlanD: "Please pick a plan again from the pricing page.",
@@ -144,6 +147,18 @@ function renewBase(sub) {
   return new Date(Math.max(Date.now(), Number.isFinite(ms) ? ms : 0));
 }
 
+/* 환불 기준 — 결제 전에 반드시 보이게 둔다(전자상거래법 제17조⑥ · 2026-11-24 명세 4절). 자주 묻는 질문 ·
+   설정의 환불 확인 창과 같은 글(payment-config.js REFUND_NOTICE)이다. 접어 두지 않는다 — 펼쳐야 보이는 글은
+   '보이게 둔' 것이 아니다. 두 말을 다 갖고 있어 번역 사전을 거치지 않는다(이 자리는 data-i18n-skip). */
+function refundHtml() {
+  const n = REFUND_NOTICE[EN() ? "en" : "ko"];
+  return `<div class="co-refund" id="coRefund">
+        <p>${esc(n.lead)}</p>
+        <ol>${n.steps.map((x) => `<li>${esc(x)}</li>`).join("")}</ol>
+        <ul>${n.notes.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>
+      </div>`;
+}
+
 function form(plan, sub) {
   const k = t();
   const base = renewBase(sub);
@@ -161,7 +176,10 @@ function form(plan, sub) {
         </label>
       </div>
 
-      <div class="co-step"><span class="n">2</span><h3>${esc(k.step3)}</h3></div>
+      <div class="co-step"><span class="n">2</span><h3>${esc(k.stepRefund)}</h3></div>
+      ${refundHtml()}
+
+      <div class="co-step"><span class="n">3</span><h3>${esc(k.step3)}</h3></div>
       <div class="agree">
         <label class="all"><input type="checkbox" id="agAll" /><span>${esc(k.agreeAll)}</span></label>
         <label><input type="checkbox" class="ag" /><span>${k.agree1}</span></label>
@@ -173,15 +191,14 @@ function form(plan, sub) {
       <button type="button" class="btn btn-primary co-btn" id="payBtn">${esc(k.pay)}</button>
       <p class="co-msg" id="coMsg"></p>
       ${later ? `<p class="co-note">${esc(k.startsLater)}</p>` : ""}
-      <p class="co-fine">${k.fine}</p>
     </section>
 
     <aside class="sum glass">
-      <span class="plan-badge">${esc(plan.name)}</span>
+      <span class="plan-badge">${esc(planName(plan, EN()))}</span>
       <div class="amt">${EN() ? `${esc(won(plan.price, true))}<small> / mo</small>` : `<small class="pre">월 </small>${esc(won(plan.price, false))}`}</div>
       <div class="cyc">${esc(k.vat)}</div>
       <ul>
-        <li><span>${esc(k.sumPlan)}</span><b>${esc(plan.name)}</b></li>
+        <li><span>${esc(k.sumPlan)}</span><b>${esc(planName(plan, EN()))}</b></li>
         <li><span>${esc(k.sumCycle)}</span><b>${esc(k.monthly)}</b></li>
         <li><span>${esc(k.sumFirst)}</span><b>${esc(k.today)}</b></li>
         <li><span>${esc(k.sumStart)}</span><b>${esc(k.today)}</b></li>
@@ -218,11 +235,11 @@ function methodForm(plan, sub) {
     </section>
 
     <aside class="sum glass">
-      <span class="plan-badge">${esc(plan.name)}</span>
+      <span class="plan-badge">${esc(planName(plan, EN()))}</span>
       <div class="amt">${esc(won(0, EN()))}</div>
       <div class="cyc">${esc(k.mNow)}</div>
       <ul>
-        <li><span>${esc(k.mSum)}</span><b>${esc(plan.name)}</b></li>
+        <li><span>${esc(k.mSum)}</span><b>${esc(planName(plan, EN()))}</b></li>
         ${cardNow ? `<li><span>${esc(k.mCurCard)}</span><b>${esc(cardNow.number || cardNow.company || "")}</b></li>` : ""}
       </ul>
     </aside>
@@ -316,9 +333,11 @@ function screen(fn) { repaint = fn; fn(); }
 (async function main() {
   const k = t();
   const method = qp("method") === "1";
-  const planId = String(qp("plan") || "").toLowerCase();
+  /* 요금제는 멤버십 하나다 — 주소에 요금제가 없으면 멤버십, 옛 주소의 basic · pro 도 멤버십으로 읽는다.
+     모르는 값만 안내 화면으로 보낸다(잘못 만든 링크를 조용히 결제로 바꾸지 않는다). */
+  const planId = String(qp("plan") || PLAN.id).toLowerCase();
   const plan = planOf(planId);
-  const here = "checkout.html?plan=" + planId + (method ? "&method=1" : "");
+  const here = "checkout.html?plan=" + encodeURIComponent(plan ? plan.id : planId) + (method ? "&method=1" : "");
   if (!plan) {
     screen(() => { const kk = t();
       state(kk.badPlan, kk.badPlanD, `<a class="btn btn-primary" href="pricing.html">${esc(kk.toPricing)}</a>`); });
@@ -388,9 +407,8 @@ function screen(fn) { repaint = fn; fn(); }
      열어 두는데, 그걸 '이용 중' 으로 보면 환불한 날 다시 시작할 길이 없다.
      서버도 이미 허용한다(confirmBilling 이 해지 예약된 구독 위에 새로 만든다). */
   if (st.active && !(st.sub && st.sub.refundedAt)) {
-    const cur = PLANS[st.plan] ? PLANS[st.plan].name : String(st.plan || "").toUpperCase();
     screen(() => { const kk = t();
-      state(kk.already, kk.alreadyD.replace("{plan}", cur),
+      state(kk.already, kk.alreadyD,
         `<a class="btn btn-primary" href="billing.html">${esc(kk.toBilling)}</a>`); });
     return;
   }

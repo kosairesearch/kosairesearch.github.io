@@ -8,16 +8,20 @@
      .ready                  → Promise (첫 인증 확인이 끝나면 resolve)
      .state()                → { user, sub, active, plan }
      .onChange(fn)           → 로그인/구독이 바뀔 때마다 호출(즉시 1회 포함)
-     .fetchPaid(ticker)      → Promise<{ paid, plan, limit }>
+     .fetchPaid(ticker)      → Promise<{ paid, plan }>
                                실패하면 code 를 가진 Error 를 던진다:
                                unauthenticated / permission-denied /
-                               resource-exhausted / not-found / internal
+                               resource-exhausted(자동 수집 제한) / not-found / internal
+
+   요금제는 멤버십(member) 하나이고 하루 한도는 없다(2026-11-24). 대신 짧은 시간에
+   새 종목을 너무 많이 열면 서버가 잠시 거절한다(resource-exhausted — payment-config.js
+   BURST_WINDOW_MIN · BURST_MAX). 오늘 이미 연 종목을 다시 여는 것은 거절하지 않는다.
 
    구독 문서는 subscriptions/{uid}. 서버(Functions)만 쓰고 클라이언트는 읽기만
-   한다 — 사용자가 자기 문서의 plan 을 pro 로 고쳐 쓸 수 있으면 안 된다.
+   한다 — 사용자가 자기 문서의 구독 상태를 고쳐 쓸 수 있으면 안 된다.
    ============================================================ */
 import { app, auth, isConfigured, SOCIAL } from "./firebase-config.js?v=7b8f27a5";
-import { PLANS } from "./payment-config.js?v=4ae73997";
+import { PLANS, planOf } from "./payment-config.js?v=da400e2b";
 import { onAuthStateChanged }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import { getFirestore, doc, onSnapshot }
@@ -44,11 +48,9 @@ function activeNow(s) {
 }
 
 function snapshot() {
-  const plan = (sub && sub.plan) || null;
-  // 한도 숫자는 payment-config 한 곳에서 온다. 화면마다 5·15를 적어 두면
-  // 값을 바꿀 때 한 군데를 빼먹는다.
-  return { user, sub, active: activeNow(sub), plan,
-           limit: (PLANS[plan] || {}).limit || null, plans: PLANS };
+  // 요금제 이름은 payment-config 한 곳에서 읽는다 — 옛 값(basic · pro)도 member 로 읽힌다.
+  const plan = sub ? ((planOf(sub.plan) || {}).id || null) : null;
+  return { user, sub, active: activeNow(sub), plan, plans: PLANS };
 }
 
 function emit() {

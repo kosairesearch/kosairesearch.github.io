@@ -42,6 +42,14 @@ body .ks-dlg .ks-btns{display:flex;justify-content:flex-end;gap:12px;margin-top:
 .need{margin-top:32px;padding-top:24px;border-top:1px solid var(--line)} .need p{margin:0 0 20px;font:400 15px/24px var(--font);color:var(--ink-72)}
 @media (max-width:820px){#mount .ks-kv{grid-template-columns:96px 1fr} #mount .ks-row{align-items:flex-start;flex-direction:column;gap:10px}}'''
 
+# 환불 확인 창의 계산 내역 · 환불 기준(2026-11-24 요금제 개편) — 스테이징에만 싣는다. 실사이트 설정에는 구독 칸이 없고,
+# 옷을 같이 고치면 실사이트 Settings.html 이 바뀐다(build_live --check).
+STAGING_CSS = '''
+body .ks-dlg-kv{gap:4px 16px;margin:18px 0 0;padding:12px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font:400 14px/22px var(--font)}
+body .ks-dlg-kv dt{color:var(--ink-62)} body .ks-dlg-kv dd{color:var(--ink)} body .ks-dlg-kv .sum{color:var(--ink);font-weight:600}
+body .ks-dlg-n{margin:18px 0 0;font:400 13px/20px var(--font);color:var(--ink-62)} body .ks-dlg-n .ks-dlg-q{margin:0 0 6px;font:600 13px/20px var(--font);color:var(--ink-72)}
+body .ks-dlg-n ol,body .ks-dlg-n ul{margin:6px 0 0;padding-left:18px} body .ks-dlg-n li{margin:0 0 4px}'''
+
 BODY = '''<main class="wrap"><div class="auth wide">
   <p class="crumb">계정</p><h1>설정</h1>
   <div id="mount" aria-live="polite"><p class="ks-note">불러오는 중…</p></div>
@@ -73,7 +81,7 @@ def build(out_path=None, live=False):
     js = (JS.replace('const TABS = ["general", "notifications", "subscription", "account"];', 'const TABS = ["general", "notifications", "account"];')
             .replace('if (q.get("card") === "1") window.__KOS_CARD_NOTICE = true;\n', '')) if live else JS   # 결제 수단 변경 알림도 실사이트에는 없다
     assert not live or ('"subscription"' not in js and '__KOS_CARD_NOTICE' not in js)
-    html = (C.head('설정 | KOSAI') + '\n<style>\n' + C.CSS + '\n' + C.FORM_CSS + '\n' + C.AUTH_CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
+    html = (C.head('설정 | KOSAI') + '\n<style>\n' + C.CSS + '\n' + C.FORM_CSS + '\n' + C.AUTH_CSS + '\n' + CSS + ('' if live else STAGING_CSS) + '\n' + C.MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
             + C.nav('') + '\n' + BODY + '\n' + C.FOOTER + '\n<script>\n' + C.JS + '\n</script>\n<script type="module">\n' + js + '\n</script>\n</body>\n</html>')
     out = Path(out_path) if out_path else ROOT / 'staging/Settings.html'
     C.emit(out, html)
