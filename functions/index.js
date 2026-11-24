@@ -30,6 +30,33 @@ const CAP_PUBLIC = 20, CAP_ADMIN = 2, CAP_SCHEDULE = 1;
    한쪽만 올리면 같은 날 가입한 사람이 서로 다른 판으로 기록된다. */
 const CONSENT_VERSION = "2026-08-20";
 
+/* 유료 시행안 약관의 판 — 2027년 1월 1일 시행(금융감독원에 낸 유사투자자문업 신고 서류의 이용약관과 같은 판).
+   결제 화면에서 받은 동의 기록(confirmBilling)과 약관 개정 개별 통지 메일(runTermsNotice)이 이 판으로 적는다.
+   시행일을 미루거나 약관을 다시 고치면 같이 고친다 — 통지 메일의 시행일 글자도 이 값에서 만든다. */
+const TERMS_VERSION = "2027-01-01";
+
+/* ── 결제 메일 꼬리의 사업자 표시 ─────────────────────────────────
+   계약 내용 안내 메일(전자상거래법 제13조제2항)과 약관 개정 통지 메일 꼬리에 싣는다. 전자상거래법 제10조(사업자의
+   신원 표시)와 자본시장법 제101조의3(유사투자자문업자의 표시)을 메일에서도 지킨다.
+
+   아직 없는 셋은 빈 글자로 둔다. 값이 생기면 여기만 채우면 된다 — 빈 칸이면 그 줄을 싣지 않는다.
+     MAIL_ORDER_NO   통신판매업 신고번호(약관 제9조 — 유료 서비스를 개시하기 전에 신고를 마친다)
+     ADVISORY_NO     유사투자자문업 신고(수리되면 그 신고번호)
+     BIZ_PHONE       대표전화
+   사업자 정보는 사이트 푸터(scripts/patch_biz_footer.py 의 BIZ)와 같은 사업자여야 한다. 주소는 신고 서류의 표기를
+   따랐다(푸터는 '서울시 양천구 목동동로12길 50' 으로 적는다). */
+const MAIL_ORDER_NO = "";
+const ADVISORY_NO = "";
+const BIZ_PHONE = "";
+const BIZ_INFO = {
+  name: ["코사이", "KOSAI"],
+  ceo: ["임범준", "Beomjun Lim"],
+  regNo: "380-25-02019",
+  address: ["서울특별시 양천구 목동동로 12길 50, 동성빌딩 4층 459호",
+            "#459, 4F Dongseong Bldg., 50 Mokdongdong-ro 12-gil, Yangcheon-gu, Seoul, Republic of Korea"],
+  email: "hello@kosai.kr",
+};
+
 const KAKAO_REST_KEY = defineSecret("KAKAO_REST_KEY");
 const KAKAO_CLIENT_SECRET = defineSecret("KAKAO_CLIENT_SECRET"); // 카카오에서 사용 안 하면 빈 값
 const NAVER_CLIENT_ID = defineSecret("NAVER_CLIENT_ID");
@@ -1349,7 +1376,10 @@ function customActionLink(rawLink, lang){
 
 function esc(s){ return String(s || "").replace(/[&<>"]/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;" }[c])); }
 
-function mailLayout({ lang, heading, intro, btnText, link, outro, unsubLink }){
+/* body · legal 은 결제 · 약관 안내 메일(아래 '결제 · 약관 안내 메일')만 쓴다 — 첫 문단 아래의 표 · 절(HTML)과 꼬리의
+   사업자 · 법정 표시(HTML). 단추(btnText · link)와 맺음말(outro)은 비우면 그 줄을 싣지 않는다(회원 탈퇴 환불 메일은
+   누를 곳이 없다). 넷 다 주지 않은 메일(인증 · 재설정 · 동의 안내 · 재확인 · 운영 알림)은 전과 글자 하나까지 같다. */
+function mailLayout({ lang, heading, intro, body, btnText, link, outro, unsubLink, legal }){
   const en = lang === "en";
   /* 마케팅 수신에 관한 메일에만 붙는 수신거부 줄(처리방침 15항 — '발송되는 모든 메일 하단의 수신거부 링크').
      인증 · 비밀번호 재설정 · 동의 안내처럼 회원이 요청했거나 법에 따라 보내야 하는 안내에는 붙이지 않는다. */
@@ -1375,17 +1405,17 @@ function mailLayout({ lang, heading, intro, btnText, link, outro, unsubLink }){
     </td></tr>
     <tr><td style="padding:18px 32px 0;">
       <h1 style="margin:0;font:700 20px/1.4 ${FONT};color:#0d0d12;letter-spacing:-.01em;">${esc(heading)}</h1>
-      <p style="margin:14px 0 0;font:400 15px/1.65 ${FONT};color:#41434d;">${intro}</p>
-    </td></tr>
+      <p style="margin:14px 0 0;font:400 15px/1.65 ${FONT};color:#41434d;">${intro}</p>${body || ""}
+    </td></tr>${btnText && link ? `
     <tr><td style="padding:22px 32px 0;">
       <a href="${esc(link)}" style="display:inline-block;background:#0d69d4;color:#ffffff;text-decoration:none;font:600 15px/1 ${FONT};padding:14px 28px;border-radius:10px;">${esc(btnText)}</a>
-    </td></tr>
+    </td></tr>` : ""}${outro ? `
     <tr><td style="padding:18px 32px 0;">
       <p style="margin:0;font:400 13px/1.6 ${FONT};color:#8a8c97;">${esc(outro)}</p>
-    </td></tr>
+    </td></tr>` : ""}
     <tr><td style="padding:22px 32px 28px;">
       <hr style="border:none;border-top:1px solid #eceef5;margin:0 0 16px;">
-      <p style="margin:0;font:400 12px/1.65 ${FONT};color:#a7a9b4;">${footBrand}<br>${footContact} <a href="mailto:hello@kosai.kr" style="color:#8a8c97;text-decoration:none;">hello@kosai.kr</a> · <a href="${SITE_URL}" style="color:#8a8c97;text-decoration:none;">kosai.kr</a>${unsub}</p>
+      <p style="margin:0;font:400 12px/1.65 ${FONT};color:#a7a9b4;">${footBrand}<br>${footContact} <a href="mailto:hello@kosai.kr" style="color:#8a8c97;text-decoration:none;">hello@kosai.kr</a> · <a href="${SITE_URL}" style="color:#8a8c97;text-decoration:none;">kosai.kr</a>${unsub}</p>${legal || ""}
     </td></tr>
   </table>
   <p style="max-width:480px;margin:14px auto 0;font:400 11px/1.5 ${FONT};color:#b3b5bf;">${autoNote}</p>
@@ -1568,6 +1598,316 @@ function marketingRecheckMail(lang, agreedAtText, unsubLink){
       btnText: "설정 화면 열기", link,
       outro: "본 메일은 수신 동의 확인을 위한 법정 안내이며 광고성 정보가 아닙니다. 문의사항은 hello@kosai.kr로 연락 주시기 바랍니다.",
       unsubLink })
+  };
+}
+
+/* ── 결제 · 약관 안내 메일 ──────────────────────────────────────────
+   회원에게 가는 결제 메일 여섯 가지(구독 시작 · 정기결제 · 재시도 성공 · 환불 · 승인 실패 · 재시도 끝 종료)와 약관 개정
+   개별 통지 메일의 글. 보내는 자리는 결제 함수(아래 sendMail)와 통지 도구(runTermsNotice)다.
+
+   광고가 아니다 — 거래와 계약에 관한 안내라 마케팅 수신 동의와 관계없이 보내고 수신거부 줄을 싣지 않는다(위 mailLayout
+   주석). 구독 시작 메일은 전자상거래법 제13조제2항의 계약 내용 안내(서면 교부)라 상품 · 금액 · 결제 일시 · 이용 기간 ·
+   다음 결제일 · 결제 수단 · 해지 · 청약철회와 환불 · 약관 · 사업자 표시를 모두 싣는다. 결제 메일 꼬리에는 사업자 표시와
+   자본시장법 제101조의3 의 세 사항(금융투자업자가 아님 · 개별 투자상담과 자금운용을 하지 않음 · 원금 손실과 그 귀속)을 단다.
+
+   시각은 한국 시간으로 적는다(영어 메일은 KST 를 붙인다). 금액은 서버 표(PRICE)와 결제 기록의 값이다. */
+
+/* 청약철회와 환불 안내 — staging/payment-config.js 의 REFUND_NOTICE 와 글자 하나까지 같아야 한다(결제 화면 · 자주 묻는
+   질문 · 환불 확인 창이 쓰는 글이다). 한쪽만 고치면 functions/tests/billing-mail.test.mjs 가 잡는다. */
+const REFUND_NOTICE = /*@json*/{
+  "ko": {
+    "lead": "환불 금액은 환불 신청일부터 3영업일 이내에 결제하신 수단으로 돌려드립니다.",
+    "steps": [
+      "결제일(정기결제 갱신 결제일 포함)부터 7일 이내에 신청하시면, 결제금액에서 이용하신 날의 이용료를 뺀 금액을 환불합니다. 결제 후 리포트의 유료 영역을 열람하지 않으셨다면 전액 환불합니다.",
+      "결제일부터 7일이 지난 뒤에 신청하시면, 결제금액에서 이용하신 날의 이용료와 결제금액의 10%(위약금)를 뺀 금액을 환불합니다. 계산한 금액이 0원 이하이면 환불 금액은 없으며, 추가로 청구하지 않습니다."
+    ],
+    "notes": [
+      "이용하신 날의 이용료 = 결제금액 ÷ 해당 이용 기간의 일수 × 이용일수(이용 기간 시작일부터 환불 신청일까지). 1원 미만은 회원에게 유리하게 처리합니다.",
+      "예) 이용 기간 30일 기준 — 3일째 신청 13,410원 환불 / 10일째 신청 8,444원 환불",
+      "의무 사용 기간은 없으며, 설정의 구독 항목에서 언제든지 해지하실 수 있습니다. 해지하시면 다음 결제일부터 이용료가 청구되지 않고, 이미 결제하신 기간이 끝날 때까지 이용하실 수 있습니다."
+    ]
+  },
+  "en": {
+    "lead": "Refunds are returned to your original payment method within 3 business days of your refund request.",
+    "steps": [
+      "If you request a refund within 7 days of the billing date (including renewal billing dates), we refund the amount paid minus the usage charge for the days you have used. If you have not opened the paid sections of any report since payment, we refund the full amount.",
+      "If you request a refund more than 7 days after the billing date, we refund the amount paid minus the usage charge for the days you have used and 10% of the amount paid (a cancellation fee). If the result is zero or less, no refund is due and nothing further is charged."
+    ],
+    "notes": [
+      "Usage charge = amount paid ÷ number of days in the billing period × days used (from the start of the billing period to the day of your refund request). Amounts below KRW 1 are rounded in your favor.",
+      "Example (30-day billing period): a request on day 3 is refunded KRW 13,410; a request on day 10 is refunded KRW 8,444.",
+      "There is no minimum term. You can cancel at any time under Subscription in Settings. Once you cancel, you will not be charged from the next billing date, and you keep access until the end of the period you have already paid for."
+    ]
+  }
+}/*@/json*/;
+
+/* 자본시장법 제101조의3 이 유사투자자문업자에게 표시하게 한 세 사항을 두 문장에 담는다. 약관 제16조와 같은 말이다. */
+const LEGAL_LINES = {
+  ko: ["KOSAI는 금융투자업자가 아닌 유사투자자문업자로, 개별적인 투자상담과 자금운용을 하지 않습니다.",
+       "투자에는 원금 손실이 발생할 수 있으며, 그 손실은 투자자에게 귀속됩니다."],
+  en: ["KOSAI is a quasi-investment advisory business, not a licensed financial investment business, and does not provide individual investment advice or manage funds.",
+       "Investing can result in a loss of principal, and any such loss is borne by the investor."],
+};
+
+/* 카드사 이름. 구독 문서의 card.company 에는 토스가 준 발급사 코드(issuerCode)가 들어 있다(confirmBilling). 아는 코드만
+   이름으로 바꾸고, 모르는 코드는 '카드' 로 적는다 — 틀린 카드사 이름을 적는 것보다 낫다. 코드는 토스페이먼츠 개발자 문서의
+   카드사 코드 표를 따랐다. 코드가 아닌 글자(카드사 이름)가 들어 있으면 그대로 쓴다. */
+const CARD_ISSUER = {
+  "11": ["KB국민카드", "KB Kookmin Card"], "21": ["하나카드", "Hana Card"], "31": ["BC카드", "BC Card"],
+  "41": ["신한카드", "Shinhan Card"], "51": ["삼성카드", "Samsung Card"], "61": ["현대카드", "Hyundai Card"],
+  "71": ["롯데카드", "Lotte Card"], "91": ["NH농협카드", "NH NongHyup Card"], "W1": ["우리카드", "Woori Card"],
+  "15": ["카카오뱅크", "KakaoBank"], "24": ["토스뱅크", "Toss Bank"], "3A": ["케이뱅크", "K Bank"],
+  "36": ["씨티카드", "Citi Card"], "4V": ["VISA", "VISA"], "4M": ["마스터카드", "Mastercard"],
+  "4J": ["JCB", "JCB"], "7A": ["아메리칸 익스프레스", "American Express"], "3C": ["유니온페이", "UnionPay"],
+  "6D": ["다이너스 클럽", "Diners Club"], "6I": ["디스커버", "Discover"],
+};
+function cardLabel(card, lang){
+  if (!card) return "";
+  const en = lang === "en";
+  const code = String(card.company || "").trim();
+  const known = CARD_ISSUER[code.toUpperCase()];
+  const name = known ? known[en ? 1 : 0]
+    : (!code || /^[0-9A-Z]{2}$/i.test(code)) ? (en ? "Card" : "카드") : code;
+  const num = String(card.number || "").trim();
+  return num ? `${name} ${num}` : name;
+}
+
+/* 한국 시간의 날짜 · 시각 글자. 한국은 일광 절약 시간이 없어 9시간을 더하면 된다. */
+const MON_EN = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+function kstPieces(ms){
+  const d = new Date(ms + 9 * 3600 * 1000);
+  const hm = String(d.getUTCHours()).padStart(2, "0") + ":" + String(d.getUTCMinutes()).padStart(2, "0");
+  return { y: d.getUTCFullYear(), m: d.getUTCMonth() + 1, d: d.getUTCDate(), hm };
+}
+function mailDay(ms, lang){
+  const p = kstPieces(ms);
+  return lang === "en" ? `${MON_EN[p.m - 1]} ${p.d}, ${p.y}` : `${p.y}년 ${p.m}월 ${p.d}일`;
+}
+function mailTime(ms, lang){
+  const p = kstPieces(ms);
+  return lang === "en" ? `${MON_EN[p.m - 1]} ${p.d}, ${p.y} ${p.hm} KST` : `${p.y}년 ${p.m}월 ${p.d}일 ${p.hm}`;
+}
+function mailWon(n, lang){
+  const s = Number(n || 0).toLocaleString("en-US");
+  return lang === "en" ? `KRW ${s}` : `${s}원`;
+}
+const COUNT_WORD = { ko: ["", "한", "두", "세", "네", "다섯", "여섯", "일곱"], en: ["", "one", "two", "three", "four", "five", "six", "seven"] };
+
+/* 본문 조각. 글은 모두 esc 를 거친다 — 이름이나 카드 번호에 꺾쇠가 섞여도 메일이 깨지지 않게. */
+function mailRows(rows){
+  const tr = rows.filter(Boolean).map(([k, v]) =>
+    `<tr><td style="padding:10px 14px 10px 0;border-bottom:1px solid #eceef5;color:#8a8c97;font:600 13px/1.5 ${FONT};white-space:nowrap;vertical-align:top;">${esc(k)}</td>` +
+    `<td style="padding:10px 0;border-bottom:1px solid #eceef5;color:#1c1e26;font:400 14px/1.55 ${FONT};">${esc(v)}</td></tr>`).join("");
+  return `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:18px 0 0;border-top:1px solid #eceef5;">${tr}</table>`;
+}
+function mailH2(t){ return `<h2 style="margin:24px 0 0;font:700 15px/1.45 ${FONT};color:#0d0d12;">${esc(t)}</h2>`; }
+function mailP(t){ return `<p style="margin:10px 0 0;font:400 14px/1.65 ${FONT};color:#41434d;">${esc(t)}</p>`; }
+function mailList(items, ordered){
+  const tag = ordered ? "ol" : "ul";
+  return `<${tag} style="margin:10px 0 0;padding:0 0 0 20px;font:400 13px/1.6 ${FONT};color:#41434d;">` +
+    items.map((x) => `<li style="margin:0 0 6px;">${esc(x)}</li>`).join("") + `</${tag}>`;
+}
+function mailLinkP(label, url){
+  return `<p style="margin:16px 0 0;font:400 13px/1.6 ${FONT};color:#41434d;">${esc(label)}<a href="${esc(url)}" style="color:#0d69d4;">${esc(url)}</a></p>`;
+}
+
+/* 꼬리의 사업자 표시. legal 이면 유사투자자문업자의 법정 표시 두 문장을 붙인다(결제 메일). 빈 상수의 줄은 싣지 않는다. */
+function bizHtml(lang, legal){
+  const en = lang === "en", i = en ? 1 : 0;
+  const lines = [en
+    ? `Company ${BIZ_INFO.name[i]} · CEO ${BIZ_INFO.ceo[i]} · Business Reg. No. ${BIZ_INFO.regNo} · ${BIZ_INFO.address[i]} · ${BIZ_INFO.email}`
+    : `상호 ${BIZ_INFO.name[i]} · 대표 ${BIZ_INFO.ceo[i]} · 사업자등록번호 ${BIZ_INFO.regNo} · ${BIZ_INFO.address[i]} · ${BIZ_INFO.email}`];
+  if (MAIL_ORDER_NO) lines.push(en ? `Mail-order Sales Registration No. ${MAIL_ORDER_NO}` : `통신판매업 신고번호 ${MAIL_ORDER_NO}`);
+  if (ADVISORY_NO) lines.push(en ? `Quasi-investment Advisory Business Report No. ${ADVISORY_NO}` : `유사투자자문업 신고 ${ADVISORY_NO}`);
+  if (BIZ_PHONE) lines.push(en ? `Phone ${BIZ_PHONE}` : `대표전화 ${BIZ_PHONE}`);
+  if (legal) lines.push(...LEGAL_LINES[en ? "en" : "ko"]);
+  return `<p style="margin:12px 0 0;font:400 11px/1.65 ${FONT};color:#a7a9b4;">${lines.map(esc).join("<br>")}</p>`;
+}
+
+/* 결제 메일 한 통. kind 와 d(밀리초 시각 · 금액):
+     new · renew · revive   amount · paidAt · start · end · card      구독 시작 · 정기결제 · 재시도로 되살아남
+     refund                 amount · price · fee · penalty · usedDays · totalDays · why · chargedToday ·
+                            requestedAt · endsAt · card · withdrawal(회원 탈퇴 환불)
+     fail                   amount · failedAt · card                   이번 달 첫 승인 거절
+     end                    endedAt                                     재시도를 모두 실패해 종료 */
+function billingMail(kind, lang, d){
+  const en = lang === "en";
+  const L = en ? "en" : "ko";
+  const card = cardLabel(d.card, L);
+  const manage = SITE_URL + "/Settings.html?tab=subscription";
+  const terms = mailLinkP(en ? "Terms of Service: " : "이용약관: ", SITE_URL + "/Terms.html");
+  const cancel = mailH2(en ? "Cancellation" : "해지") + mailP(en
+    ? "You can cancel at any time under Subscription in Settings. Once you cancel, you will not be charged from the next billing date, and you keep access until the end of the period you have already paid for."
+    : "해지는 설정 화면의 구독 항목에서 언제든지 하실 수 있습니다. 해지하시면 다음 결제일부터 이용료가 청구되지 않으며, 이미 결제하신 이용 기간이 끝날 때까지 이용하실 수 있습니다.");
+  const vat = (n) => (en ? `${mailWon(n, L)} (VAT included)` : `${mailWon(n, L)}(부가가치세 포함)`);
+  const payRows = () => mailRows([
+    [en ? "Product" : "상품", en ? "KOSAI Membership (monthly subscription)" : "KOSAI 멤버십 월 구독"],
+    [en ? "Amount paid" : "결제 금액", vat(d.amount)],
+    [en ? "Paid at" : "결제 일시", mailTime(d.paidAt, L)],
+    [en ? "Billing period" : "이용 기간", en ? `${mailTime(d.start, L)} to ${mailTime(d.end, L)}` : `${mailTime(d.start, L)} ~ ${mailTime(d.end, L)}`],
+    [en ? "Next billing date" : "다음 결제일", en
+      ? `${mailDay(d.end, L)} (charged automatically on the same day each month until you cancel)`
+      : `${mailDay(d.end, L)}(해지 전까지 매월 같은 날 자동 결제)`],
+    card ? [en ? "Payment method" : "결제 수단", card] : null,
+  ]);
+  const n = RETRY_DAYS.length;
+  const mail = (subject, heading, intro, body, opt = {}) => ({
+    subject,
+    html: mailLayout({
+      lang: L, heading, intro: esc(intro), body,
+      btnText: opt.noButton ? "" : (en ? "Manage subscription" : "구독 관리"),
+      link: opt.noButton ? "" : manage,
+      outro: en
+        ? "This email concerns your payment and contract. It is not a marketing message and is sent regardless of your marketing preferences."
+        : "이 메일은 결제와 계약에 관한 안내로, 광고성 정보가 아니며 마케팅 정보 수신 동의와 관계없이 발송됩니다.",
+      legal: bizHtml(L, true),
+    }),
+  });
+
+  if (kind === "new") {
+    const N = REFUND_NOTICE[L];
+    return mail(
+      en ? "[KOSAI] Membership payment confirmed: your contract details" : "[KOSAI] 멤버십 결제 완료 및 계약 내용 안내",
+      en ? "Membership payment and contract details" : "멤버십 결제 완료 및 계약 내용 안내",
+      en ? "Thank you for subscribing to KOSAI Membership. Below are your payment and contract details. This email is a statement of your contract under the Korean Act on the Consumer Protection in Electronic Commerce, so please keep it for your records."
+         : "KOSAI 멤버십을 구독해 주셔서 감사합니다. 결제 내용과 계약 내용을 안내드립니다. 이 메일은 「전자상거래 등에서의 소비자보호에 관한 법률」에 따른 계약 내용 안내이므로 보관하여 주시기 바랍니다.",
+      payRows() + cancel + mailH2(en ? "Withdrawal and refunds" : "청약철회와 환불") +
+        mailP(N.lead) + mailList(N.steps, true) + mailList(N.notes, false) + terms);
+  }
+  if (kind === "renew" || kind === "revive") {
+    return mail(
+      en ? "[KOSAI] Membership renewal payment confirmed" : "[KOSAI] 멤버십 정기결제 완료 안내",
+      en ? "Membership renewal payment" : "멤버십 정기결제 완료 안내",
+      kind === "revive"
+        ? (en ? "The membership fee that was previously declined has now been paid, and your access has resumed. Your billing period is recalculated from this payment date."
+              : "승인되지 않았던 이용료가 결제되어 이용이 다시 시작되었습니다. 이용 기간은 이번 결제일부터 다시 계산합니다.")
+        : (en ? "Your KOSAI Membership fee has been charged as a recurring payment. Here are the payment details."
+              : "KOSAI 멤버십 이용료가 정기결제로 결제되었습니다. 결제 내용을 안내드립니다."),
+      payRows() + mailP(en
+        ? `If you request a refund within ${REFUND_WINDOW_DAYS} days of the billing date, we refund the amount paid minus the usage charge for the days you have used (the full amount if you have not opened the paid sections).`
+        : `결제일부터 ${REFUND_WINDOW_DAYS}일 이내에 환불을 신청하시면 이용하신 날의 이용료만 빼고 환불합니다(유료 영역을 열람하지 않으셨다면 전액).`) +
+        cancel + terms);
+  }
+  if (kind === "refund") {
+    const ends = d.withdrawal
+      ? (en ? "Ended immediately with the closure of your account" : "회원 탈퇴와 함께 즉시 종료되었습니다")
+      : !d.chargedToday
+        ? (en ? `Ended immediately (${mailTime(d.endsAt, L)})` : `즉시 종료되었습니다(${mailTime(d.endsAt, L)})`)
+        /* 오늘 값을 받은 환불은 오늘 자정(다음 날 0시)에 끝난다 — 날짜는 그 앞날로 적는다 */
+        : (en ? `You keep access until 24:00 (midnight) KST on ${mailDay(d.endsAt - 1, L)}`
+              : `${mailDay(d.endsAt - 1, L)} 24:00(자정)까지 이용하실 수 있습니다`);
+    const rows = mailRows([
+      [en ? "Refund amount" : "환불 금액", mailWon(d.amount, L)],
+      [en ? "Amount paid" : "결제 금액", mailWon(d.price, L)],
+      [en ? "Usage charge for days used" : "이용한 날의 이용료", d.why === "withdraw"
+        ? (en ? `${mailWon(0, L)} (full refund, as you had not opened the paid sections since payment)`
+              : `${mailWon(0, L)}(결제 후 유료 영역을 열람하지 않으셔서 전액 환불)`)
+        : (en ? `${mailWon(d.fee, L)} (${d.usedDays} of ${d.totalDays} days used)`
+              : `${mailWon(d.fee, L)}(이용일수 ${d.usedDays}일 / 기간 ${d.totalDays}일)`)],
+      d.penalty > 0 ? [en ? "Cancellation fee" : "위약금", en
+        ? `${mailWon(d.penalty, L)} (${REFUND_PENALTY_PCT}% of the amount paid)`
+        : `${mailWon(d.penalty, L)}(결제금액의 ${REFUND_PENALTY_PCT}%)`] : null,
+      [en ? "Requested on" : "신청일", mailDay(d.requestedAt, L)],
+      [en ? "Refund method" : "환불 수단", en
+        ? `We have cancelled the charge to your card${card ? ` (${card})` : ""}. Depending on your card issuer, it may take a few days to appear on your statement.`
+        : `결제하신 카드${card ? `(${card})` : ""}의 결제를 취소하였습니다. 카드사에 따라 취소 내역이 반영되기까지 며칠이 걸릴 수 있습니다.`],
+      [en ? "Access ends" : "이용 종료", ends],
+    ]);
+    return mail(
+      en ? "[KOSAI] Your refund has been processed" : "[KOSAI] 환불 처리 안내",
+      en ? "Refund processed" : "환불 처리 안내",
+      d.withdrawal
+        ? (en ? "Following your request to close your account, we have refunded your membership fee. Here are the details. Payment and refund records are kept for five years as required by the Korean Act on the Consumer Protection in Electronic Commerce; your other member information is deleted along with your account."
+              : "회원 탈퇴 신청에 따라 멤버십 이용료를 환불하였습니다. 환불 내용을 안내드립니다. 결제와 환불 기록은 「전자상거래 등에서의 소비자보호에 관한 법률」에 따라 5년간 보관하며, 그 밖의 회원 정보는 탈퇴와 함께 삭제합니다.")
+        : (en ? "We have processed your membership refund. Here are the details." : "요청하신 멤버십 환불을 처리하였습니다. 환불 내용을 안내드립니다."),
+      rows + mailP(en ? "Refunds follow Article 11 (Withdrawal and Refunds) of our Terms of Service."
+                      : "환불 기준은 이용약관 제11조(청약철회 및 환불)를 따릅니다.") + terms,
+      { noButton: !!d.withdrawal });
+  }
+  if (kind === "fail") {
+    const days = RETRY_DAYS.map((k) => mailDay(d.failedAt + k * 86400000, L));
+    return mail(
+      en ? "[KOSAI] Your membership payment was declined" : "[KOSAI] 정기결제 승인 실패 안내",
+      en ? "Membership payment declined" : "정기결제 승인 실패 안내",
+      en ? "The membership fee could not be charged to the card on file, so access to the paid sections has been paused."
+         : "등록하신 카드로 멤버십 이용료가 승인되지 않아 유료 영역 이용이 일시 중지되었습니다.",
+      mailRows([
+        [en ? "Amount due" : "청구 금액", vat(d.amount)],
+        [en ? "Declined on" : "승인 거절일", mailDay(d.failedAt, L)],
+        [en ? "Retry dates" : "다시 시도하는 날", en
+          ? `${days.join("; ")} (${RETRY_DAYS.slice(0, -1).join(", ")} and ${RETRY_DAYS[n - 1]} days after the first decline)`
+          : `${days.join(", ")}(첫 거절일로부터 ${RETRY_DAYS.map((k) => k + "일").join(", ")} 뒤)`],
+        card ? [en ? "Payment method" : "결제 수단", card] : null,
+      ]) +
+      mailP(en
+        ? "To change your payment method, open Manage subscription below and register a new card. The new card is charged right away, your access resumes, and your billing period is recalculated from that payment date."
+        : "결제 수단을 바꾸시려면 아래 '구독 관리'에서 카드를 변경하여 주시기 바랍니다. 새로 등록하신 카드로 바로 결제되어 이용이 다시 시작되며, 이용 기간은 그 결제일부터 다시 계산합니다.") +
+      mailP(en
+        ? `If a retry succeeds, a new billing period starts that day. If all ${COUNT_WORD.en[n]} retries are declined, your subscription ends and nothing further is charged.`
+        : `다시 시도하는 날에 결제가 완료되면 그날부터 새 이용 기간이 시작됩니다. ${COUNT_WORD.ko[n]} 번 모두 승인되지 않으면 구독이 종료되며, 별도로 청구되는 금액은 없습니다.`));
+  }
+  if (kind === "end") {
+    return mail(
+      en ? "[KOSAI] Your membership has ended" : "[KOSAI] 멤버십 종료 안내",
+      en ? "Membership ended" : "멤버십 종료 안내",
+      en ? `All ${COUNT_WORD.en[n]} retries were declined, so your subscription has ended. Nothing further will be charged. To use the membership again, please start a new subscription.`
+         : `${COUNT_WORD.ko[n]} 번의 재시도가 모두 승인되지 않아 구독이 종료되었습니다. 추가로 청구되는 금액은 없습니다. 다시 이용하시려면 구독을 새로 신청하여 주시기 바랍니다.`,
+      mailRows([[en ? "Ended on" : "종료일", mailDay(d.endedAt, L)]]) +
+      mailP(en ? "The card details on file (the billing key and card information) have been deleted now that your subscription has ended."
+               : "등록하신 결제 수단 정보(빌링키와 카드 정보)는 구독 종료와 함께 삭제하였습니다."));
+  }
+  throw new Error("billingMail: 모르는 종류 " + kind);
+}
+
+/* 약관 개정 개별 통지 메일(약관 제3조제2항 — 불리하거나 중대한 변경은 적용일 30일 전부터 공지하고 전자우편으로 개별 통지).
+   글은 2026-11-24 사장에게 보고한 통지문 그대로다. 시행일 · 이용료 · 7일 · 10% 는 상수에서 만든다 — 상수와 글이 어긋나지
+   않게. 광고가 아니므로 수신거부 줄을 싣지 않고, 맺음말에 그 사실을 적는다(동의 안내 메일과 같은 까닭). 사업자 표시를 꼬리에
+   달되 법정 표시 두 문장은 본문 ③ 에 이미 있어 꼬리에 되풀이하지 않는다. */
+function termsNoticeMail(lang){
+  const en = lang === "en";
+  const L = en ? "en" : "ko";
+  const [y, m, dd] = TERMS_VERSION.split("-").map(Number);
+  const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  const day = en ? `${MONTHS[m - 1]} ${dd}, ${y}` : `${y}년 ${m}월 ${dd}일`;
+  const price = mailWon(PRICE[PLAN_ID], L);
+  const items = en ? [
+    `① The earnings analysis, industry analysis, outlook, valuation commentary, bull and bear factors, risk factors, next checkpoints and overall view in our reports will be provided to Membership subscribers (${price} a month, VAT included). The report overview, business structure, earnings trend and sources, as well as our industry analysis and Morning Brief, remain free.`,
+    `② Membership is a monthly recurring payment by credit or debit card and can be cancelled at any time. Within ${REFUND_WINDOW_DAYS} days of the billing date, we refund the amount paid minus the usage charge for the days used (the full amount if you have not opened the paid sections); after ${REFUND_WINDOW_DAYS} days, we refund the amount paid minus the usage charge for the days used and ${REFUND_PENALTY_PCT}% of the amount paid.`,
+    `③ The paid service will start after our report as a quasi-investment advisory business is accepted. ${LEGAL_LINES.en[0]} ${LEGAL_LINES.en[1]}`,
+    "④ Our Privacy Policy adds the processing of the payment information needed for subscription payments and refunds and of records of viewing the paid sections, and the outsourcing of payment processing (Toss Payments).",
+  ] : [
+    `① 리포트의 실적 분석, 산업 분석, 전망, 밸류에이션 해설, 강세·약세 요인, 리스크 요인, 다음 체크포인트, 종합 의견은 멤버십(월 ${price}, 부가가치세 포함) 회원에게 제공합니다. 리포트의 개요, 사업 구조, 실적 추이, 참고 출처와 업종 분석, 모닝브리핑은 계속 무료로 제공합니다.`,
+    `② 멤버십은 신용·체크카드 월 정기결제이며 언제든지 해지할 수 있습니다. 결제일부터 ${REFUND_WINDOW_DAYS}일 이내에는 이용한 날의 이용료만 빼고 환불하며(유료 영역을 열람하지 않으셨다면 전액), ${REFUND_WINDOW_DAYS}일이 지난 뒤에는 이용한 날의 이용료와 결제금액의 ${REFUND_PENALTY_PCT}%를 빼고 환불합니다.`,
+    `③ 유료 서비스는 유사투자자문업 신고 수리 후 시작하며, KOSAI는 금융투자업자가 아닌 유사투자자문업자로서 개별적인 투자상담과 자금운용을 하지 않습니다. ${LEGAL_LINES.ko[1]}`,
+    "④ 개인정보 처리방침에 구독 결제와 환불에 필요한 결제 정보, 유료 영역 열람 기록의 처리와 결제 처리 위탁(토스페이먼츠)을 추가합니다.",
+  ];
+  const tail = en ? [
+    "No existing member will be charged automatically on the effective date. Membership fees are charged only if you subscribe yourself.",
+    "If you do not agree to the revised Terms, you may close your account in Settings before the effective date. If you do not express an objection by the effective date, you will be deemed to have agreed to the revised Terms (Article 3 of the current Terms of Service).",
+    "If the effective date is postponed for reasons such as the timing of the acceptance of our quasi-investment advisory business report, we will notify you again.",
+  ] : [
+    "기존 회원께서 시행일에 자동으로 결제되는 금액은 없습니다. 멤버십은 직접 구독을 신청하시는 경우에만 이용료가 청구됩니다.",
+    "개정 약관에 동의하지 않으시면 시행일 전까지 설정 화면에서 회원 탈퇴를 하실 수 있습니다. 시행일까지 거부 의사를 표시하지 않으시면 개정 약관에 동의하신 것으로 봅니다(현행 이용약관 제3조).",
+    "유사투자자문업 신고 수리 등 준비 사정으로 시행일이 늦어지는 경우 다시 안내드립니다.",
+  ];
+  return {
+    subject: en ? `[KOSAI] Changes to our Terms of Service and Privacy Policy (effective ${day})`
+                : `[KOSAI] 이용약관 및 개인정보 처리방침 개정 안내(${day} 시행)`,
+    html: mailLayout({
+      lang: L,
+      heading: en ? "Changes to our Terms of Service and Privacy Policy" : "이용약관 및 개인정보 처리방침 개정 안내",
+      intro: esc(en
+        ? `Thank you for using KOSAI. As we introduce a paid service (Membership) from ${day}, we have revised our Terms of Service and Privacy Policy and are writing to let you know.`
+        : `KOSAI를 이용해 주셔서 감사합니다. ${day}부터 유료 서비스(멤버십)를 도입함에 따라 이용약관과 개인정보 처리방침을 개정하여 안내드립니다.`),
+      body: mailRows([[en ? "Effective date" : "시행일", day]]) + mailH2(en ? "Key changes" : "주요 내용") +
+        items.map(mailP).join("") + tail.map(mailP).join(""),
+      btnText: en ? "Read the full changes" : "개정 내용 자세히 보기",
+      link: SITE_URL + "/Notice.html",
+      outro: en
+        ? "This is an individual notice of changes to our Terms under Article 3 of the Terms of Service, not a commercial advertisement. Contact: hello@kosai.kr"
+        : "본 메일은 이용약관 제3조에 따라 회원님께 개별 통지하는 약관 개정 안내이며, 광고성 정보가 아닙니다. 문의: hello@kosai.kr",
+      legal: bizHtml(L, false),
+    }),
   };
 }
 
@@ -2051,6 +2391,9 @@ exports.getReport = onCall(
        customerKey·카드)을 지우고 status 를 'deleted' 로 바꾼다. 다시 긁힐
        여지를 없애는 게 목적이다.
      · watchlists/{uid}, report_reads  지운다. 보관할 이유가 없다.
+     · billingMails(결제 메일 발송 기록)  남긴다. 계약 내용을 안내했다는 기록이라
+       결제 기록과 같이 둔다(회원 번호 · 종류 · 시각만 있고 주소는 없다).
+     · termsNotices(약관 개정 통지 발송 기록)  지운다.
    ─────────────────────────────────────────────────────────── */
 /* ── 가입 동의 기록 ──────────────────────────────────────────────
    동의는 나중에 "언제 무엇에 동의했는가" 를 답해야 하는 기록이다. 그런데
@@ -2255,10 +2598,10 @@ exports.deleteAccount = onCall(
      TOSS_SECRET_KEY 는 결제가 꺼져 있으면 null 이다(파일 위쪽). 그래서 스위치
      하나로 두 경우가 다 맞는다 — 결제를 켜는 날 여기를 손대야 하는 일이 없다.
      사람이 기억해야 하는 단계로 두면 언젠가 잊고, 그러면 유료 회원이 탈퇴를
-     못 하게 된다. */
+     못 하게 된다. 메일 키도 같이 붙인다 — 탈퇴하며 환불하면 환불 안내를 보낸다(sendMail). */
   { region: REGION, maxInstances: CAP_PUBLIC, cors: true,
     secrets: [KAKAO_ADMIN_KEY, NAVER_CLIENT_ID, NAVER_CLIENT_SECRET,
-              ...(TOSS_SECRET_KEY ? [TOSS_SECRET_KEY] : [])] },
+              ...(TOSS_SECRET_KEY ? [TOSS_SECRET_KEY, RESEND_API_KEY] : [])] },
   async (req) => {
   const uid = req.auth && req.auth.uid;
   if (!uid) throw new HttpsError("unauthenticated", "로그인이 필요합니다.");
@@ -2284,7 +2627,7 @@ exports.deleteAccount = onCall(
      문서가 없는 무료 회원에게는 자물쇠를 걸지 않는다. withLock 은 자물쇠를
      잡으면서 문서를 먼저 만들기 때문에, 구독한 적 없는 사람 앞으로 빈 구독
      문서가 하나 생겨 남는다. */
-  let refunded = 0;
+  let refunded = 0, refundQ = null;
   const first = await subRef.get();
   let sub = first.exists ? first.data() : null;
 
@@ -2298,6 +2641,7 @@ exports.deleteAccount = onCall(
           try {
             await doRefund(db, uid, subRef, sub, q);
             refunded = q.amount;
+            refundQ = q;
           } catch (e) {
             console.error(`[delete] 환불 실패 uid=${uid}`, e && e.message);
             throw new HttpsError("failed-precondition",
@@ -2316,6 +2660,12 @@ exports.deleteAccount = onCall(
         deletedAt: admin.firestore.FieldValue.serverTimestamp(),
         updatedAt: admin.firestore.FieldValue.serverTimestamp(),
       }, { merge: true });
+      /* 환불했으면 환불 안내를 보낸다. 받는 주소(계정 · 회원 문서)를 지우기 전이어야 한다 — 그래서 여기서, 계정과 회원 문서를
+         지우기 전에 보낸다. 못 보내도 탈퇴는 이어 간다(sendMail 은 던지지 않는다). */
+      if (refunded > 0) {
+        await sendMail(db, uid, "refund", reqLangOf(req) || sub.mailLang,
+          refundMailData(refundQ, refundEndsAt(refundQ).getTime(), sub.card, true));
+      }
     });
   }
 
@@ -2344,6 +2694,9 @@ exports.deleteAccount = onCall(
     const evs = await db.collection("consentEvents").where("uid", "==", uid).limit(500).get();
     await Promise.all(evs.docs.map((d) => d.ref.delete()));
   } catch (e) { console.warn("[delete] consentEvents", e && e.message); }
+  /* 약관 개정 통지의 발송 기록(termsNotices · runTermsNotice). 같은 회원 번호로 다시 가입한 카카오 · 네이버 회원이
+     '이미 보냄'으로 걸러지지 않게 지운다. 보냈다는 증빙(consentEvents 의 terms_notice)은 위에서 함께 지웠다. */
+  try { await db.doc(`termsNotices/${TERMS_VERSION}_${uid}`).delete(); } catch (e) { console.warn("[delete] termsNotice", e && e.message); }
   /* 카카오 연결을 먼저 끊는다. 우리 계정을 지우고 나서 하면, 중간에
      실패했을 때 어느 쪽이 남았는지 알기 어려워진다.
 
@@ -3024,10 +3377,128 @@ const orderId = (uid, tag) =>
   `kosai_${tag}_${uid.slice(0, 12)}_${Date.now().toString(36)}`;
 
 async function writePayment(db, uid, data) {
-  await db.collection(`payments/${uid}/items`).add({
+  return db.collection(`payments/${uid}/items`).add({
     ...data,
     createdAt: admin.firestore.FieldValue.serverTimestamp(),
   });
+}
+
+/* ── 결제 메일 보내기 ─────────────────────────────────────────
+   글은 위 billingMail 이 만든다. 여기는 받는 사람을 찾고, 보내고, 보낸 사실을 남기는 자리다.
+
+   메일이 실패해도 결제 · 환불은 실패시키지 않는다. 카드는 이미 긁혔거나 취소됐다 — 메일 때문에 그 결과를 오류로 돌려주면
+   회원은 결제가 안 된 줄 알고 다시 누른다. 그래서 던지지 않고, 기다리는 시간에도 상한을 둔다(MAIL_TIMEOUT_MS — 메일 서비스가
+   멈춰도 결제 응답이 함수 시간 한도에 걸리지 않게).
+
+   보냈는지는 billingMails 에 한 줄씩 남긴다(회원 번호 · 종류 · 성공 여부 · 오류 이름 · 시각 — 주소는 적지 않는다). 함수 기록
+   (로그)에는 회원 번호 · 주소 · 카드번호를 찍지 않으므로, 못 보낸 계약 내용 안내를 찾아 다시 보낼 자리가 이 컬렉션이다.
+   읽기 · 쓰기는 서버만 한다(firestore.rules 에 규칙이 없는 컬렉션은 막힌다). 결제 기록과 같이 회원 탈퇴 뒤에도 남긴다 —
+   계약 내용을 안내했다는 기록이다.
+
+   받는 주소는 계정(Auth)의 주소, 없으면 회원 문서(users/{uid}.email — 이메일을 심기 전에 만들어진 옛 카카오 · 네이버 계정).
+   말은 부른 쪽이 정한다(reqLangOf → 구독 문서의 mailLang → 한국어). */
+const MAIL_TIMEOUT_MS = Number(process.env.KOSAI_MAIL_TIMEOUT_MS) || 8000;
+
+function withTimeout(p, ms) {
+  let t;
+  const late = new Promise((_, reject) => {
+    t = setTimeout(() => reject(Object.assign(new Error("메일 서비스가 제때 답하지 않았다"), { name: "timeout" })), ms);
+  });
+  return Promise.race([p, late]).finally(() => clearTimeout(t));
+}
+
+async function memberEmail(db, uid) {
+  try {
+    const u = await admin.auth().getUser(uid);
+    if (u && emailOk(u.email)) return String(u.email).trim().toLowerCase();
+  } catch (e) { /* 계정을 못 읽으면 회원 문서를 본다 */ }
+  try {
+    const s = await db.doc(`users/${uid}`).get();
+    const e = s.exists && (s.data() || {}).email;
+    if (emailOk(e)) return String(e).trim().toLowerCase();
+  } catch (e) { /* 둘 다 못 읽으면 보낼 곳이 없다 */ }
+  return null;
+}
+
+/* 부른 화면이 보낸 말(confirmBilling 은 결제 화면이 보낸다). 없으면 null — 구독 문서의 mailLang 으로 넘어간다. */
+function reqLangOf(req) {
+  const l = req && req.data && req.data.lang;
+  return l === "en" || l === "ko" ? l : null;
+}
+
+async function sendMail(db, uid, kind, lang, data) {
+  const L = lang === "en" ? "en" : "ko";
+  let ok = false, error = null;
+  try {
+    const to = await memberEmail(db, uid);
+    if (!to) {
+      error = "no-email";
+    } else {
+      const mail = billingMail(kind, L, data || {});
+      const resend = new Resend(RESEND_API_KEY.value());
+      const r = await withTimeout(resend.emails.send({ from: MAIL_FROM, to, subject: mail.subject, html: mail.html }), MAIL_TIMEOUT_MS);
+      if (r && r.error) error = String(r.error.name || "send_failed");
+      else ok = true;
+    }
+  } catch (e) {
+    error = String((e && e.name) || "send_failed");
+  }
+  if (!ok) console.error(`[billing-mail] ${kind} 안내 메일을 보내지 못했다: ${error}`);
+  try {
+    await db.collection("billingMails").add({
+      uid, kind, lang: L, ok, error, at: admin.firestore.FieldValue.serverTimestamp(),
+    });
+  } catch (e) {
+    console.error(`[billing-mail] ${kind} 발송 기록을 남기지 못했다: ${(e && e.name) || "error"}`);
+  }
+  return ok;
+}
+
+/* 구독이 끝나면 결제 수단 정보를 지운다 — 개인정보 처리방침(유료판) '결제 수단 식별값(빌링키) · 카드 정보는 구독이 끝나거나
+   회원이 탈퇴하면 지체 없이 파기'. 끝나는 길은 넷이다 — 해지 예약 · 이용일수를 뺀 환불이 기간 끝에 닫힐 때(갱신 배치),
+   재시도를 모두 실패해 종료될 때(재시도 배치), 결제가 밀린 구독을 해지할 때(cancelSubscription), 청약철회(전액 환불)로 그
+   자리에서 끝날 때(requestRefund). 탈퇴는 deleteAccount 가 따로 지운다.
+   되살릴 수 있는 상태는 지우지 않는다 — 결제가 밀린 구독(past_due · 카드를 바꾸거나 재시도로 되살아난다)과 해지 예약 중
+   기간 안(해지 취소로 이어 간다). 지운 시각을 billingErasedAt 에 남긴다(파기 기록). 새 구독이 시작되면 confirmBilling 이 지운다. */
+function eraseBilling() {
+  return {
+    billingKey: admin.firestore.FieldValue.delete(),
+    customerKey: admin.firestore.FieldValue.delete(),
+    card: admin.firestore.FieldValue.delete(),
+    billingErasedAt: admin.firestore.FieldValue.serverTimestamp(),
+  };
+}
+
+/* 결제 화면에서 확인받은 사항(staging/checkout.js 의 동의 네 줄 — 이용약관과 개인정보 처리방침이 한 줄이다).
+   결제 화면은 네 줄을 모두 체크해야 결제창을 열고, 그 사실을 같은 탭에 남겨 돌아온 뒤 서버에 항목과 연령 확인을 보낸다.
+   서버는 아는 항목만 받고 판(TERMS_VERSION)과 시각은 직접 박는다. 화면이 항목을 보내지 않았으면(옛 결제 화면 · 브라우저가
+   탭 저장소를 막은 경우) 빈 목록으로 적는다 — 받지 않은 동의를 받은 것으로 적지 않는다. 연령 확인은 본인 신고다(검증하려면
+   본인인증이 필요하다). 첫 결제 때 구독 문서와 첫 결제 기록(5년 보관)에 함께 남긴다. 카드만 바꾸는 길(updateMethod)은 적지 않는다. */
+const CHECKOUT_CONSENT_ITEMS = ["terms", "privacy", "recurring", "refund", "age"];
+function checkoutConsent(d) {
+  const sent = Array.isArray(d && d.agreed) ? d.agreed.map(String) : [];
+  return {
+    version: TERMS_VERSION,
+    items: CHECKOUT_CONSENT_ITEMS.filter((k) => sent.includes(k)),
+    adultConfirmed: !!(d && d.adultConfirmed === true),
+    at: admin.firestore.FieldValue.serverTimestamp(),
+  };
+}
+
+/* 결제 메일에 싣는 이번 결제의 값. pay 는 토스 응답(approvedAt), sub 는 카드 정보를 든 구독 값. */
+function paidMailData(amount, pay, startMs, endMs, sub) {
+  const at = Date.parse((pay && pay.approvedAt) || "");
+  return { amount, paidAt: Number.isFinite(at) ? at : startMs, start: startMs, end: endMs, card: (sub && sub.card) || null };
+}
+
+/* 환불 메일에 싣는 값 — 환불 견적(refundQuote)과 이용이 끝나는 시각(refundEndsAt) 그대로. card 는 환불 전 구독의 카드다
+   (청약철회는 같은 자리에서 카드 정보를 지운다). withdrawal 은 회원 탈퇴에 따른 환불. */
+function refundMailData(q, endsAtMs, card, withdrawal) {
+  return {
+    amount: q.amount, price: q.price, fee: q.fee, penalty: q.penalty, usedDays: q.usedDays, totalDays: q.totalDays,
+    why: q.why, chargedToday: !!q.chargedToday, requestedAt: Date.now(), endsAt: endsAtMs,
+    card: card || null, withdrawal: !!withdrawal,
+  };
 }
 
 /* 화면에 보여 줄 결제 내역 줄 수. 월 구독이라 24줄이면 2년이다.
@@ -3106,7 +3577,8 @@ function refundSources(sub) {
     ? [{ key: sub.lastPaymentKey, amount: PRICE[PLAN_ID] }] : [];
 }
 
-async function charge(db, uid, sub, amount, description, tag, kind, idem) {
+/* extra 는 결제 기록에 함께 남길 칸이다(첫 결제의 동의 기록 consent — checkoutConsent). */
+async function charge(db, uid, sub, amount, description, tag, kind, idem, extra = null) {
   /* 숫자가 아니면 부르지 않는다.
 
      'amount < MIN_CHARGE' 만으로는 못 막는다 — undefined 와 NaN 은 어떤 수와
@@ -3141,13 +3613,16 @@ async function charge(db, uid, sub, amount, description, tag, kind, idem) {
     status: "paid", plan: sub.plan,
     paymentKey: pay.paymentKey, orderId: pay.orderId,
     paidAt: pay.approvedAt || new Date().toISOString(),
+    ...(extra || {}),
   });
   return pay;
 }
 
 /* ── 1) 카드 등록 + 첫 결제 ───────────────────────────────── */
+/* 결제가 끝나면 회원에게 계약 내용 안내(구독 시작) · 재시도 성공(카드를 바꿔 되살림) 메일을 보낸다(sendMail). 메일의 말은
+   결제 화면이 보낸 lang 이고, 구독 문서에 mailLang 으로 적어 둔다 — 갱신 배치 · 환불처럼 화면이 말을 보내지 않는 자리가 그 값을 쓴다. */
 if (PAYMENTS_LIVE) exports.confirmBilling = onCall(
-  { region: REGION, maxInstances: CAP_PUBLIC, cors: true, secrets: [TOSS_SECRET_KEY] },
+  { region: REGION, maxInstances: CAP_PUBLIC, cors: true, secrets: [TOSS_SECRET_KEY, RESEND_API_KEY] },
   async (req) => {
     const uid = uidOrThrow(req);
     const plan = planOrThrow(req.data && req.data.plan);
@@ -3192,6 +3667,8 @@ if (PAYMENTS_LIVE) exports.confirmBilling = onCall(
         const card = { company: (re.card && re.card.issuerCode) || "", number: (re.card && re.card.number) || "" };
         const patch = { billingKey: re.billingKey, customerKey, card,
                         updatedAt: admin.firestore.FieldValue.serverTimestamp() };
+        if (reqLangOf(req)) patch.mailLang = reqLangOf(req);
+        let revived = null;                 // 되살린 결제(토스 응답) — 아래에서 재시도 성공 안내를 보낸다
         // 갱신 결제가 실패해 멈춰 있던 구독이라면, 새 카드로 바로 받아 되살린다.
         // 카드만 갈아 끼우고 끝내면 다음 배치가 돌 때까지 하루를 잠긴 채로 둔다.
         if (cur.status === "past_due") {
@@ -3215,6 +3692,7 @@ if (PAYMENTS_LIVE) exports.confirmBilling = onCall(
           const pay = await charge(db, uid, { ...cur, ...patch, plan: nextPlan },
             PRICE[nextPlan], `${PLAN_NAME[nextPlan]} 월 구독`, "retry", null,
             `retry_${uid}_${kstDay()}_${String(re.billingKey).slice(-12)}`);
+          revived = pay;
           patch.status = "active";
           patch.plan = nextPlan;
           patch.pendingPlan = admin.firestore.FieldValue.delete();
@@ -3234,6 +3712,11 @@ if (PAYMENTS_LIVE) exports.confirmBilling = onCall(
           patch.retryCount = admin.firestore.FieldValue.delete();
         }
         await ref.set(patch, { merge: true });
+        /* 되살렸으면 재시도 성공 안내를 보낸다(재시도 배치가 되살린 것과 같은 메일). 카드만 바꾼 것은 결제가 없어 보내지 않는다. */
+        if (revived) {
+          await sendMail(db, uid, "revive", patch.mailLang || cur.mailLang,
+            paidMailData(PRICE[patch.plan], revived, patch.currentPeriodStart.toMillis(), patch.currentPeriodEnd.toMillis(), patch));
+        }
         // 되살렸으면 그때 적은 요금제(member)를 돌려준다 — 옛 값이 여기서 member 로 바뀐다.
         return { ok: true, plan: patch.plan || planOf(cur.plan) || PLAN_ID, updated: true };
       }
@@ -3302,8 +3785,11 @@ if (PAYMENTS_LIVE) exports.confirmBilling = onCall(
         billingKey: issued.billingKey, customerKey, plan,
         card: { company: (issued.card && issued.card.issuerCode) || "", number: (issued.card && issued.card.number) || "" },
       };
+      /* 결제 화면에서 확인받은 사항 — 첫 결제 기록과 구독 문서에 함께 남긴다(checkoutConsent 설명). */
+      const consent = checkoutConsent(req.data);
+      const mailLang = reqLangOf(req) || (cur && cur.mailLang) || "ko";
       const pay = await charge(db, uid, sub, PRICE[plan], `${PLAN_NAME[plan]} 월 구독`, "new", null,
-        `new_${uid}_${plan}_${kstDay()}`);
+        `new_${uid}_${plan}_${kstDay()}`, { consent });
 
       await ref.set({
         ...sub,
@@ -3335,8 +3821,14 @@ if (PAYMENTS_LIVE) exports.confirmBilling = onCall(
            끝난다. 주기가 새로 시작하는 자리마다 반드시 지운다. */
         refundDone: admin.firestore.FieldValue.delete(),
         pendingPlan: admin.firestore.FieldValue.delete(),   // 옛 요금제 변경 예약
+        /* 지난 구독이 끝날 때 결제 수단을 지운 기록(eraseBilling) — 새 카드가 들어왔으니 지운다. */
+        billingErasedAt: admin.firestore.FieldValue.delete(),
+        consent, mailLang,
         updatedAt: admin.firestore.FieldValue.serverTimestamp(),
       }, { merge: true });
+
+      /* 계약 내용 안내(전자상거래법 제13조제2항). 못 보내도 결제는 끝난 것이다 — sendMail 은 던지지 않는다. */
+      await sendMail(db, uid, "new", mailLang, paidMailData(PRICE[plan], pay, start.getTime(), end.getTime(), sub));
 
       return { ok: true, plan };
     });
@@ -3381,6 +3873,7 @@ if (PAYMENTS_LIVE) exports.cancelSubscription = onCall({ region: REGION, maxInst
         // 재시도 일정을 지운다. 남으면 배치가 이 문서를 다시 집을 근거가 된다.
         failedAt: admin.firestore.FieldValue.delete(),
         retryCount: admin.firestore.FieldValue.delete(),
+        ...eraseBilling(),          // 구독이 끝났다 — 결제 수단 정보를 지운다
         updatedAt: admin.firestore.FieldValue.serverTimestamp(),
       }, { merge: true });
       return { ok: true, stopped: true };
@@ -3593,7 +4086,7 @@ async function doRefund(db, uid, ref, sub, q) {
 }
 
 if (PAYMENTS_LIVE) exports.requestRefund = onCall(
-  { region: REGION, maxInstances: CAP_PUBLIC, cors: true, secrets: [TOSS_SECRET_KEY] },
+  { region: REGION, maxInstances: CAP_PUBLIC, cors: true, secrets: [TOSS_SECRET_KEY, RESEND_API_KEY] },
   async (req) => {
     const uid = uidOrThrow(req);
     const db = admin.firestore();
@@ -3651,8 +4144,15 @@ if (PAYMENTS_LIVE) exports.requestRefund = onCall(
         pendingPlan: admin.firestore.FieldValue.delete(),   // 옛 요금제 변경 예약
         currentPeriodEnd: admin.firestore.Timestamp.fromDate(endAt),
         refundedAt: admin.firestore.FieldValue.serverTimestamp(),
+        /* 청약철회(전액)는 그 자리에서 구독이 끝난다 — 결제 수단 정보를 지운다(eraseBilling). 오늘 자정까지 쓰는 환불은
+           다음 날 갱신 배치가 구독을 닫을 때 지운다. */
+        ...(q.chargedToday ? {} : eraseBilling()),
         updatedAt: admin.firestore.FieldValue.serverTimestamp(),
       }, { merge: true });
+
+      /* 환불 안내 — 환불 금액 · 계산 내역 · 환불 수단 · 이용 종료 시점. 못 보내도 환불은 끝난 것이다(sendMail 은 던지지 않는다). */
+      await sendMail(db, uid, "refund", reqLangOf(req) || sub.mailLang,
+        refundMailData(q, endAt.getTime(), sub.card, false));
 
       return { ok: true, amount, why: q.why, endsAt: endAt.toISOString() };
     });
@@ -3695,7 +4195,9 @@ if (PAYMENTS_LIVE) exports.refundPreview = onCall({ region: REGION, maxInstances
 if (PAYMENTS_LIVE) exports.renewSubscriptions = onSchedule(
   // 카드를 긁으려면 토스 키, 실패를 알리려면 메일 키가 필요하다. 부르는 함수가
   // 쓰는 열쇠를 여기서 선언하지 않으면 그 자리에서 터진다.
-  { region: REGION, maxInstances: CAP_SCHEDULE, schedule: "0 2 * * *", timeZone: "Etc/UTC",
+  /* timeoutSeconds — 한 회원마다 카드사 호출과 안내 메일을 기다린다. 기본 한도(60초)로는 하루 대상이 수십 명만 되어도 중간에
+     끊겨, 끊긴 뒤의 회원은 다음 날로 밀린다. 9분(540초)을 준다. */
+  { region: REGION, maxInstances: CAP_SCHEDULE, schedule: "0 2 * * *", timeZone: "Etc/UTC", timeoutSeconds: 540,
     secrets: [TOSS_SECRET_KEY, RESEND_API_KEY] },
   async () => {
     const db = admin.firestore();
@@ -3735,7 +4237,7 @@ if (PAYMENTS_LIVE) exports.renewSubscriptions = onSchedule(
           if (e && e.code === "auth/user-not-found") {
             console.warn(`[renew] 계정 없음 — 건너뜀 uid=${uid}`);
             await d.ref.set({
-              status: "deleted", billingKey: admin.firestore.FieldValue.delete(),
+              status: "deleted", ...eraseBilling(),
               updatedAt: admin.firestore.FieldValue.serverTimestamp(),
             }, { merge: true });
             continue;
@@ -3765,7 +4267,9 @@ if (PAYMENTS_LIVE) exports.renewSubscriptions = onSchedule(
           plan = planOf(sub.plan);
 
           if (sub.cancelAtPeriodEnd) {
-            await d.ref.set({ status: "expired", updatedAt: admin.firestore.FieldValue.serverTimestamp() }, { merge: true });
+            /* 해지 예약 · 이용일수를 뺀 환불이 기간 끝에 닫힌다 — 구독이 끝났으니 결제 수단 정보를 지운다(eraseBilling). */
+            await d.ref.set({ status: "expired", ...eraseBilling(),
+              updatedAt: admin.firestore.FieldValue.serverTimestamp() }, { merge: true });
             return;
           }
           const pay = await charge(db, uid, { ...sub, plan }, PRICE[plan],
@@ -3786,6 +4290,9 @@ if (PAYMENTS_LIVE) exports.renewSubscriptions = onSchedule(
             retryCount: admin.firestore.FieldValue.delete(),
             updatedAt: admin.firestore.FieldValue.serverTimestamp(),
           }, { merge: true });
+          /* 정기결제 완료 안내 — 못 보내도 결제는 끝난 것이다(sendMail 은 던지지 않는다). */
+          await sendMail(db, uid, "renew", sub.mailLang,
+            paidMailData(PRICE[plan], pay, now.getTime(), addMonth(now).getTime(), sub));
         });
       } catch (e) {
         /* 자물쇠를 못 잡은 것은 실패가 아니다. 그 사람이 지금 결제·환불을 하는
@@ -3813,6 +4320,12 @@ if (PAYMENTS_LIVE) exports.renewSubscriptions = onSchedule(
           amount: PRICE[plan] || 0, description: "정기결제 실패",
           kind: "failed", status: "failed", plan, paidAt: null,
         });
+        /* 회원에게 승인 실패 안내 — 이번 달 첫 거절 때 한 번이다(재시도가 실패할 때는 보내지 않는다). 카드사가 승인하지 않은
+           경우(토스의 거절 — failed-precondition)만 보낸다. 금액을 계산하지 못했거나(모르는 요금제 값) 계정 조회 · 통신이 끊긴
+           경우는 카드가 거절된 것이 아니라 그렇게 적으면 틀린 안내가 된다 — 운영 알림(아래)이 잡는다. */
+        if (e && e.code === "failed-precondition") {
+          await sendMail(db, uid, "fail", sub.mailLang, { amount: PRICE[plan], failedAt: now.getTime(), card: sub.card });
+        }
       }
     }
 
@@ -3849,7 +4362,7 @@ if (PAYMENTS_LIVE) exports.renewSubscriptions = onSchedule(
           if (e && e.code === "auth/user-not-found") {
             console.warn(`[renew] 재시도 — 계정 없음, 건너뜀 uid=${uid}`);
             await d.ref.set({
-              status: "deleted", billingKey: admin.firestore.FieldValue.delete(),
+              status: "deleted", ...eraseBilling(),
               updatedAt: admin.firestore.FieldValue.serverTimestamp(),
             }, { merge: true });
             continue;
@@ -3878,7 +4391,7 @@ if (PAYMENTS_LIVE) exports.renewSubscriptions = onSchedule(
              매일 이 목록에 올라오면서 아무 일도 일어나지 않는다. */
           console.warn(`[renew] 재시도를 모두 마친 문서를 닫는다 uid=${uid}`);
           await d.ref.set({
-            status: "expired", updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+            status: "expired", ...eraseBilling(), updatedAt: admin.firestore.FieldValue.serverTimestamp(),
           }, { merge: true });
           continue;
         }
@@ -3911,13 +4424,16 @@ if (PAYMENTS_LIVE) exports.renewSubscriptions = onSchedule(
               updatedAt: admin.firestore.FieldValue.serverTimestamp(),
             }, { merge: true });
             revived.push(`${uid} · ${plan} · ${tried + 1}번째 시도에서 성공`);
+            /* 재시도 성공 안내 — 이용이 다시 시작됐고 이용 기간은 이번 결제일부터 다시 센다. */
+            await sendMail(db, uid, "revive", fresh.mailLang,
+              paidMailData(PRICE[plan], pay, now.getTime(), addMonth(now).getTime(), fresh));
           } catch (e) {
             const next = tried + 1;
             const done = next >= RETRY_DAYS.length;
             await d.ref.set({
               retryCount: next,
-              // 마지막까지 안 되면 종료한다. 무한정 붙잡고 있을 수는 없다.
-              ...(done ? { status: "expired" } : {}),
+              // 마지막까지 안 되면 종료한다. 무한정 붙잡고 있을 수는 없다. 끝났으니 결제 수단 정보도 지운다(eraseBilling).
+              ...(done ? { status: "expired", ...eraseBilling() } : {}),
               updatedAt: admin.firestore.FieldValue.serverTimestamp(),
             }, { merge: true });
             await writePayment(db, uid, {
@@ -3927,6 +4443,8 @@ if (PAYMENTS_LIVE) exports.renewSubscriptions = onSchedule(
             });
             if (done) gaveUp.push(`${uid} · ${plan} · ${(e && e.message) || e}`);
             console.warn(`[renew] 재시도 ${next}회 실패 uid=${uid}`, e && e.message);
+            /* 네 번을 다 실패해 끝났으면 종료 안내를 보낸다. 중간 재시도의 실패는 보내지 않는다(첫 거절 때 일정을 알렸다). */
+            if (done) await sendMail(db, uid, "end", fresh.mailLang, { endedAt: now.getTime() });
           }
         });
       } catch (e) {
@@ -4469,10 +4987,62 @@ exports.adminMarketingRecheck = onCall(
   }
 );
 
+/* ── 유료 영역 열람 기록 1년 파기 ─────────────────────────────────
+   개인정보 처리방침(유료판) '유료 영역 열람 기록: 열람한 날부터 1년간 보관한 후 파기(회원 탈퇴 시에는 지체 없이 파기)'.
+   report_reads/{uid}_{날짜} 는 리포트를 연 날마다 한 문서씩 쌓인다(recordRead). 탈퇴하면 deleteAccount 가 지우지만, 탈퇴하지
+   않은 회원의 기록은 그대로 쌓인다. 그래서 매일 도는 아래 purgeUnconsented 가 이 단계를 함께 돈다 — 새 예약 작업을 만들지
+   않는다(예약 작업 수가 곧 비용이다 · CLAUDE.md '파이어베이스 비용' 절). 결제 스위치와 관계없이 돈다 — 기록은 결제를 끈
+   뒤에도 남는다.
+
+   문서의 day(한국 시간 'YYYY-MM-DD')로 찾는다 — 한 칸의 범위 질의라 복합 색인이 필요 없다. 오늘(한국 시간)의 1년 전 같은
+   날보다 앞선 날을 지운다(2027년 11월 25일에는 2026년 11월 24일까지 지우고 11월 25일은 남긴다). 2월 29일은 2월 28일로 당긴다.
+   환불 계산(viewedSince)은 이번 이용 기간(길어야 40일)만 보므로 1년 지난 기록을 지워도 계산이 바뀌지 않는다.
+
+   한 번에 지우는 양에 상한을 둔다(READS_PURGE_MAX) — 되돌릴 수 없는 삭제를 사람 확인 없이 매일 하므로, 조건이 틀려도 한 번에
+   다 지우지 않게. 상한에 걸리면 남은 것은 다음 날 이어서 지우고 기록에 남긴다. 실패해도 던지지 않는다 — 이 작업의 본래 일
+   (동의를 마치지 못한 계정 정리)을 막지 않는다. 기록에는 건수와 기준일만 찍는다(회원 번호를 찍지 않는다). */
+const READS_PURGE_MAX = 2000;
+const READS_PURGE_BATCH = 400;
+
+function readsCutoffDay(nowMs){
+  const k = new Date(nowMs + 9 * 3600 * 1000);
+  const y = k.getUTCFullYear() - 1, m = k.getUTCMonth(), d = k.getUTCDate();
+  const last = new Date(Date.UTC(y, m + 1, 0)).getUTCDate();
+  return new Date(Date.UTC(y, m, Math.min(d, last))).toISOString().slice(0, 10);
+}
+
+async function purgeOldReads(db, nowMs = Date.now()){
+  const cutoff = readsCutoffDay(nowMs);
+  let deleted = 0;
+  try {
+    while (deleted < READS_PURGE_MAX) {
+      const lim = Math.min(READS_PURGE_BATCH, READS_PURGE_MAX - deleted);
+      const snap = await db.collection("report_reads").where("day", "<", cutoff).limit(lim).get();
+      if (snap.empty) break;
+      const batch = db.batch();
+      snap.docs.forEach((d) => batch.delete(d.ref));
+      await batch.commit();
+      deleted += snap.size;
+      if (snap.size < lim) break;
+    }
+  } catch (e) {
+    console.error("[purge] 열람 기록 파기 실패:", e && e.message);
+  }
+  const capped = deleted >= READS_PURGE_MAX;
+  if (deleted) {
+    console.log(`[purge] 열람 기록 ${deleted}건 파기(열람일 ${cutoff} 앞)` +
+                (capped ? ` — 상한(${READS_PURGE_MAX})에 걸려 남은 것은 다음 날 이어서 지운다` : ""));
+  }
+  return { deleted, capped, cutoff };
+}
+
 exports.purgeUnconsented = onSchedule(
   { region: REGION, maxInstances: CAP_SCHEDULE, schedule: "30 3 * * *", timeZone: "Etc/UTC" },   // 12:30 KST
   async () => {
     const db = admin.firestore();
+
+    /* 유료 영역 열람 기록 1년 파기(위 purgeOldReads) — 아래 계정 정리보다 먼저, 따로 돈다. 던지지 않는다. */
+    await purgeOldReads(db);
     const GRACE_MS = 24 * 60 * 60 * 1000;
     const cutoff = Date.now() - GRACE_MS;
 
@@ -4582,3 +5152,175 @@ exports.purgeUnconsented = onSchedule(
     }
   }
 );
+
+/* ── 약관 개정 개별 통지(이용약관 제3조제2항) ─────────────────────────
+   불리하거나 중대한 변경은 적용일 30일 전부터 공지하고 전자우편으로 개별 통지한다(현행 약관 제3조). 2027년 1월 1일 유료
+   시행안은 그 변경이라, 시행일 30일 전(2026년 12월 2일)까지 회원 전원에게 보낸다. 글은 위 termsNoticeMail.
+
+   손으로 돌리는 작업(.github/workflows/terms_notice_mail.yml · scripts/send_terms_notice.cjs)이 이 함수를 부른다. 배포하는
+   함수가 아니고(아래 kosTools — 내보내기 목록에 보이지 않게 붙인다) 예약도 없다. 사장 승인 뒤 사람이 돌린다.
+
+     count   보낼 대상 수만 센다(전체 · 인증됨 · 미인증 · 영어로 받는 회원 · 이미 보낸 회원). 아무것도 쓰지 않는다.
+     sample  관리자 주소(hello@kosai.kr)로 한 통 — 제목 앞 [시험]. 발송 기록을 남기지 않는다.
+     send    대상 전원. 한 번에 limit 통까지.
+
+   대상 — 이메일이 있는 모든 회원. 비활성(disabled) 계정은 뺀다. 주소는 계정(Auth)의 주소, 없으면 회원 문서의 주소(이메일을
+   심기 전에 만들어진 옛 카카오 · 네이버 계정). 영어로 받는 회원은 결제 화면을 영어로 쓴 회원이다(구독 문서의 mailLang) — 화면
+   언어는 브라우저에만 저장돼 서버가 알 수 없어, 나머지는 한국어로 받는다.
+
+   같은 회원에게 두 번 보내지 않는다.
+     · 보내기 전에 트랜잭션으로 그 회원 줄(termsNotices/{판}_{회원 번호})을 '보내는 중'으로 잡는다. 이미 '보냄'이면 건너뛰고,
+       다른 실행이 15분 안에 잡은 줄도 건너뛴다(작업 파일도 같은 묶음 concurrency 로 겹쳐 돌지 않는다).
+     · 메일 서비스에 요청 이름(Idempotency-Key — 판 · 회원 번호의 지문 · 실패 횟수)을 붙인다. 보낸 뒤 기록을 남기기 전에 실행이
+       죽어도, 24시간 안에 다시 돌리면 메일 서비스가 같은 메일을 다시 보내지 않는다.
+     · 실패하면 '실패'로 적고 실패 횟수를 올린다 — 다음 실행이 새 요청 이름으로 다시 보낸다.
+   속도 — 한 통마다 gapMs(600ms) 쉰다(메일 서비스의 초당 2건 아래). 한 번에 보내는 수에 상한(limit)을 둔다 — 메일 서비스
+   요금제의 하루 한도 안에서 나눠 보내고, 인증 · 비밀번호 재설정 메일이 쓸 몫을 남긴다. 한도에 걸리면(quota) 그 자리에서 멈추고
+   남은 수를 돌려준다. 잇달아 다섯 번 실패하면 멈춘다(열쇠가 틀렸거나 서비스 장애 — 다섯 통 이상 헛되이 '실패'로 적지 않게).
+   보낸 사실은 consentEvents 에 terms_notice(주소 · 판 · 말)로 남긴다 — 관리자 동의 조회가 보여 주고, 탈퇴하면 함께 지워진다.
+   돌려주는 값과 기록에는 숫자만 있다 — 실행 기록이 공개라 주소 · 회원 번호를 내지 않는다. */
+const NOTICE_SAMPLE_TO = "hello@kosai.kr";
+const NOTICE_GAP_MS = 600;
+const NOTICE_CLAIM_TTL = 15 * 60 * 1000;
+const NOTICE_FAIL_STREAK = 5;
+const noticeRef = (db, uid) => db.doc(`termsNotices/${TERMS_VERSION}_${uid}`);
+/* 시행일 30일 전 — 이날까지 통지를 시작해야 한다(약관 제3조의 '30일 전부터'). */
+const noticeDeadline = () =>
+  new Date(Date.parse(TERMS_VERSION + "T00:00:00Z") - 30 * 86400000).toISOString().slice(0, 10);
+
+async function termsNoticeTargets(db){
+  const all = [];
+  let disabled = 0, pageToken;
+  do {
+    const page = await admin.auth().listUsers(1000, pageToken);
+    pageToken = page.pageToken;
+    for (const u of page.users || []) {
+      if (u.disabled) { disabled++; continue; }
+      all.push({ uid: u.uid, email: emailOk(u.email) ? String(u.email).trim().toLowerCase() : "",
+                 verified: !!u.emailVerified, fromDoc: false });
+    }
+  } while (pageToken);
+  const bare = all.filter((t) => !t.email);
+  for (let i = 0; i < bare.length; i += 100) {
+    const part = bare.slice(i, i + 100);
+    const snaps = await db.getAll(...part.map((t) => db.doc(`users/${t.uid}`)));
+    snaps.forEach((s, j) => {
+      const e = s && s.exists && (s.data() || {}).email;
+      if (emailOk(e)) { part[j].email = String(e).trim().toLowerCase(); part[j].fromDoc = true; }
+    });
+  }
+  const en = new Set();
+  (await db.collection("subscriptions").where("mailLang", "==", "en").get()).forEach((d) => en.add(d.id));
+  const targets = all.filter((t) => t.email)
+    .map((t) => ({ ...t, lang: en.has(t.uid) ? "en" : "ko" }))
+    .sort((a, b) => (a.uid < b.uid ? -1 : a.uid > b.uid ? 1 : 0));
+  return { targets, disabled, noEmail: all.length - targets.length };
+}
+
+/* 한 통 보내기 — { ok, name, quota }. 초당 한도(rate_limit_exceeded)면 2초 쉬고 한 번 더 보낸다. */
+async function noticeSendOnce(client, to, mail, idem, sleep){
+  for (let attempt = 0; attempt < 2; attempt++) {
+    let name;
+    try {
+      const r = await withTimeout(client.emails.send({ from: MAIL_FROM, to, subject: mail.subject, html: mail.html },
+        idem ? { idempotencyKey: idem } : undefined), MAIL_TIMEOUT_MS);
+      if (!(r && r.error)) return { ok: true, name: null, quota: false };
+      name = String(r.error.name || "send_failed");
+    } catch (e) {
+      name = String((e && e.name) || "send_failed");
+    }
+    if (name === "rate_limit_exceeded" && attempt === 0) { await sleep(2000); continue; }
+    return { ok: false, name, quota: /quota/i.test(name) || name === "rate_limit_exceeded" };
+  }
+  return { ok: false, name: "send_failed", quota: false };
+}
+
+async function runTermsNotice({ mode = "count", limit = 100, gapMs = NOTICE_GAP_MS, lang = "ko",
+                                sleep = (ms) => new Promise((r) => setTimeout(r, ms)) } = {}){
+  const db = admin.firestore();
+  if (mode === "sample") {
+    const L = lang === "en" ? "en" : "ko";
+    const mail = termsNoticeMail(L);
+    const r = await noticeSendOnce(new Resend(RESEND_API_KEY.value()), NOTICE_SAMPLE_TO,
+      { subject: "[시험] " + mail.subject, html: mail.html }, null, sleep);
+    return { mode, version: TERMS_VERSION, lang: L, to: NOTICE_SAMPLE_TO, sent: r.ok ? 1 : 0, error: r.ok ? null : r.name };
+  }
+  if (mode !== "count" && mode !== "send") throw new Error("runTermsNotice: 모르는 방식 " + mode);
+
+  const { targets, disabled, noEmail } = await termsNoticeTargets(db);
+  const sentBefore = new Set();
+  for (let i = 0; i < targets.length; i += 100) {
+    const part = targets.slice(i, i + 100);
+    const snaps = await db.getAll(...part.map((t) => noticeRef(db, t.uid)));
+    snaps.forEach((s, j) => { if (s && s.exists && (s.data() || {}).status === "sent") sentBefore.add(part[j].uid); });
+  }
+  const out = {
+    mode, version: TERMS_VERSION, deadline: noticeDeadline(),
+    total: targets.length,
+    verified: targets.filter((t) => t.verified).length,
+    unverified: targets.filter((t) => !t.verified).length,
+    en: targets.filter((t) => t.lang === "en").length,
+    fromDoc: targets.filter((t) => t.fromDoc).length,
+    alreadySent: sentBefore.size,
+    remaining: targets.length - sentBefore.size,
+    disabled, noEmail,
+  };
+  if (mode === "count") return out;
+
+  const client = new Resend(RESEND_API_KEY.value());
+  const mails = { ko: termsNoticeMail("ko"), en: termsNoticeMail("en") };
+  let sent = 0, failed = 0, skipped = 0, busy = 0, tries = 0, streak = 0, stoppedBy = null;
+  for (const t of targets) {
+    if (sentBefore.has(t.uid)) continue;
+    if (tries >= limit) { stoppedBy = "limit"; break; }
+    const ref = noticeRef(db, t.uid);
+    const claim = await db.runTransaction(async (tx) => {
+      const snap = await tx.get(ref);
+      const d = (snap.exists && snap.data()) || {};
+      if (d.status === "sent") return { state: "sent" };
+      const at = msOf(d.claimedAt);
+      if (d.status === "sending" && Number.isFinite(at) && Date.now() - at < NOTICE_CLAIM_TTL) return { state: "busy" };
+      tx.set(ref, { uid: t.uid, version: TERMS_VERSION, status: "sending",
+                    claimedAt: admin.firestore.FieldValue.serverTimestamp() }, { merge: true });
+      return { state: "go", failures: Number(d.failures) || 0 };
+    });
+    if (claim.state === "sent") { skipped++; continue; }
+    if (claim.state === "busy") { busy++; continue; }
+    if (tries > 0 && gapMs > 0) await sleep(gapMs);
+    tries++;
+    const idem = `terms-notice/${TERMS_VERSION}/` +
+      `${crypto.createHash("sha256").update(String(t.uid)).digest("hex").slice(0, 24)}/${claim.failures}`;
+    const r = await noticeSendOnce(client, t.email, mails[t.lang], idem, sleep);
+    /* 같은 요청 이름을 메일 서비스가 이미 받았다는 답(같은 이름 · 다른 글 / 같은 이름이 처리 중)은 앞선 실행이 보냈다는 뜻이다. */
+    const dedup = !r.ok && /idempotent/.test(r.name || "");
+    if (r.ok || dedup) {
+      await ref.set({ status: "sent", lang: t.lang, sentAt: admin.firestore.FieldValue.serverTimestamp(),
+                      ...(dedup ? { dedup: r.name } : {}) }, { merge: true });
+      await logConsent(db, t.uid, "terms_notice", { email: t.email, version: TERMS_VERSION, lang: t.lang }, null);
+      sent++; streak = 0;
+      continue;
+    }
+    await ref.set({ status: "failed", failures: claim.failures + 1, error: r.name,
+                    failedAt: admin.firestore.FieldValue.serverTimestamp() }, { merge: true });
+    failed++; streak++;
+    if (r.quota) { stoppedBy = "quota"; break; }
+    if (streak >= NOTICE_FAIL_STREAK) { stoppedBy = "errors"; break; }
+  }
+  Object.assign(out, { sent, failed, skipped, busy, stoppedBy,
+                       remaining: targets.length - sentBefore.size - sent - skipped });
+  console.log(`[terms-notice] 보냄 ${sent} · 실패 ${failed} · 처리 중이라 건너뜀 ${busy} · 남음 ${out.remaining}` +
+              (stoppedBy ? ` · 멈춘 까닭 ${stoppedBy}` : ""));
+  return out;
+}
+
+/* 도구 · 시험이 쓰는 것 — 배포하는 함수가 아니다. 파이어베이스 배포 도구는 내보내기 목록을 Object.entries 로 훑어 함수를
+   찾으므로 열거되지 않는 칸(enumerable: false)은 보지 않는다. 배포 목록 검사(functions/tests/runtime.test.mjs ③)도 이 칸을
+   함수로 세지 않는다. 함수를 여기에 붙이지 말 것 — 배포되는 함수는 위처럼 이름으로 내보낸다. */
+Object.defineProperty(module.exports, "kosTools", {
+  enumerable: false,
+  value: Object.freeze({
+    termsNotice: Object.freeze({ run: runTermsNotice, mail: termsNoticeMail, targets: termsNoticeTargets, deadline: noticeDeadline }),
+    billingMail, refundNotice: REFUND_NOTICE, termsVersion: TERMS_VERSION,
+    readsCutoffDay, purgeOldReads,
+  }),
+});
