@@ -45,6 +45,11 @@ PAGES = ['index.html', 'Home.html', 'Reports.html', 'industry.html', 'Watchlist.
 MODULES = ['i18n.js', 'auth-state.js']
 NOINDEX = {'Watchlist.html', 'Consent.html', 'auth-action.html', '404.html'}   # 옛 실사이트와 같다
 
+
+def notice_pages():
+    """약관 · 방침 개정 공지 기간의 실사이트 페이지 — comp_common.NOTICE_LIVE 를 켰을 때만(사장 승인 뒤 · 시행 30일 전까지)."""
+    return ['Notice.html', 'Terms-2027.html', 'Privacy-2027.html'] if C.NOTICE_LIVE else []
+
 _PAID = re.compile(r'/\*@paid\*/(.*?)/\*@/paid\*/', re.S)
 _LIVE = re.compile(r'/\*@live\n(.*?)\n@\*/', re.S)
 
@@ -76,6 +81,10 @@ def build_pages(out_dir: Path):
     build_about_comp.build(o('About.html'))
     build_legal_comp.build('terms', o('Terms.html'))
     build_legal_comp.build('privacy', o('Privacy.html'))
+    if C.NOTICE_LIVE:   # 개정 공지 기간 — 공지 · 개정 전문(시행 예정)
+        build_legal_comp.build('notice', o('Notice.html'))
+        build_legal_comp.build('terms', o('Terms-2027.html'), upcoming=True)
+        build_legal_comp.build('privacy', o('Privacy-2027.html'), upcoming=True)
     build_forms_comp.build({'contact': o('Contact.html'), 'feedback': o('Feedback.html')})
     build_auth_comp.build({'login': o('Login.html'), 'signup': o('Signup.html'), 'consent': o('Consent.html'),
                            'action': o('auth-action.html'), 'settings': o('_unused.html')})   # 설정은 아래 build_settings_staging(live)
@@ -113,7 +122,7 @@ def audit(dir_: Path):
     """멤버십 · 스테이징 흔적, 색인 설정, 모듈 문법. 문제 목록을 돌려준다."""
     bad = []
     stg_keys = {re.sub(r'\s+', ' ', k).strip() for k in json.loads((ROOT / 'scripts/i18n/staging.json').read_text(encoding='utf-8')) if not k.startswith('//')}
-    for name in PAGES + archive_pages(dir_):
+    for name in PAGES + notice_pages() + archive_pages(dir_):
         f = dir_ / name
         if not f.exists():
             bad.append(f'{name} 없음')
@@ -183,7 +192,7 @@ def main():
                 cur = ROOT / name
                 if not cur.exists() or unstamped(cur.read_text(encoding='utf-8')) != unstamped((t / name).read_text(encoding='utf-8')):
                     diff.append(name)
-            for name in PAGES + archive_pages(t):
+            for name in PAGES + notice_pages() + archive_pages(t):
                 cur = ROOT / name
                 have = cur.read_text(encoding='utf-8') if cur.exists() else None
                 fresh = (t / name).read_text(encoding='utf-8')

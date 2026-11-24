@@ -66,8 +66,19 @@ def g(pat, s, flags=re.S):
 SRC = ROOT / 'scripts' / 'content' / 'about.src.html'
 
 
+# 유사투자자문업 신고 수리 뒤의 고지(자본시장법 제101조의3 — 금융투자업자가 아니라는 사항 · 개별 상담 불가 · 원금 손실). 스테이징은 늘,
+# 실사이트는 신고 수리 통지를 받은 날(comp_common.SIMIL_LIVE) 바꾼다. '금융위원회 정식 등록' 같은 말은 쓰지 않는다(금융감독원 매뉴얼).
+NOT_REGISTERED = re.compile(r'<div class="item"><b>유사투자자문업·투자자문업·투자일임업 등록 사업자가 아닙니다\.</b><p>.*?</p></div>', re.S)
+REPORTED = ('<div class="item"><b>금융투자업자가 아닌 유사투자자문업자입니다.</b><p>KOSAI는 「자본시장과 금융투자업에 관한 법률」 제101조에 따라 '
+            '신고한 유사투자자문업자로, 투자자문업·투자일임업 등 금융투자업자가 아닙니다. 개별적인 투자상담과 자금운용을 하지 않으며, '
+            '개별 종목에 대한 자문·일임 서비스를 제공하지 않습니다. 투자에는 원금 손실이 발생할 수 있으며, 그 손실은 투자자에게 귀속됩니다.</p></div>')
+
+
 def build(out_path):
     src = SRC.read_text(encoding='utf-8')
+    if C.simil_on():
+        src, n = NOT_REGISTERED.subn(REPORTED, src)
+        assert n == 1, '회사 소개: 금융업 등록 여부 문장을 찾지 못했다'
     a = src.index('<div class="wrap" data-screen-label="08 About">')
     b = src.find('<footer', a)
     b = len(src) if b < 0 else b

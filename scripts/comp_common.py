@@ -53,6 +53,16 @@ window.kosInd=function(box,axis,sel){
 
 MODE = 'preview'   # set_mode() 로 바꾼다
 
+# ── 유료화(2027-01-01 시행) 스위치 — 실사이트에만 듣는다. 스테이징은 늘 '시행 뒤' 모습이다 ──────────────────────────────
+# NOTICE_LIVE  약관 · 방침 개정 공지(Notice.html · Terms-2027.html · Privacy-2027.html · 약관 화면 안내 상자 · 꼬리 '약관 개정 안내')를
+#              실사이트에 싣는다. 사장 승인 뒤 켠다(시행 30일 전 — 2026년 12월 2일까지). 회원 개별 통지 메일과 같은 날.
+# SIMIL_LIVE   유사투자자문업자 법정 표시(꼬리 문구 · 회사 소개 문장 — 자본시장법 제101조의3). 금융감독원 신고 수리 통지를 받은 날 켠다.
+# PAID_LIVE    시행일(2027-01-01)에 실사이트 Terms.html · Privacy.html 을 유료판 원문으로 바꾼다.
+# 날짜를 미루면 켜지 말고 공지를 '시행일 연기'로 고친다(CLAUDE.md '유료화를 시작할 때' 날짜 규칙).
+NOTICE_LIVE = False
+SIMIL_LIVE = False
+PAID_LIVE = False
+
 # 스테이징 머리: demo-backend 는 반드시 <head> 의 첫 module 이어야 한다(__KOSDEMO 를 먼저 세워야 paywall·subscription-api·checkout 이 모의로 돈다).
 STAGING_HEAD = '''<script src="i18n.js"></script>
 <script type="module" src="demo-backend.js"></script>
@@ -79,6 +89,9 @@ LIVE_SEO = {
     'Feedback.html': ('KOSAI를 이용하시면서 느끼신 점을 들려주시기 바랍니다.', None),
     'Terms.html': ('KOSAI 서비스 이용에 관한 기본적인 사항을 규정합니다.', None),
     'Privacy.html': ('KOSAI는 이용자의 개인정보를 소중히 여기며, 관련 법령을 준수합니다.', None),
+    'Notice.html': ('2027년 1월 1일부터 유료 서비스(멤버십)를 도입함에 따라 이용약관과 개인정보 처리방침을 개정합니다.', None),
+    'Terms-2027.html': ('2027년 1월 1일부터 시행하는 개정 이용약관입니다.', None),
+    'Privacy-2027.html': ('2027년 1월 1일부터 시행하는 개정 개인정보 처리방침입니다.', None),
     'Login.html': ('KOSAI 계정으로 로그인하시면 관심종목과 리포트를 이어서 보실 수 있습니다.', None),
     'Signup.html': ('무료 계정을 만드시면 관심종목을 저장하고 여러 기기에서 함께 보실 수 있습니다.', None),
     'Consent.html': ('가입을 완료하시려면 약관에 동의하여 주시기 바랍니다.', 'noindex,nofollow'),
@@ -280,11 +293,13 @@ PAGES = PAGES_LIVE
 LIVE2PREVIEW = {'/': '/preview/home.html', '/Home.html': '/preview/home.html', '/Reports.html': '/preview/reports.html', '/industry.html': '/preview/industry.html',
                 '/Watchlist.html': '/preview/watchlist.html', '/brief.html': '/preview/brief.html', '/About.html': '/preview/about.html', '/Contact.html': '/preview/contact.html',
                 '/Feedback.html': '/preview/feedback.html', '/Terms.html': '/preview/terms.html', '/Privacy.html': '/preview/privacy.html', '/Login.html': '/preview/login.html',
-                '/Signup.html': '/preview/signup.html', '/Settings.html': '/preview/settings.html', '/Consent.html': '/preview/consent.html', '/auth-action.html': '/preview/auth-action.html'}
+                '/Signup.html': '/preview/signup.html', '/Settings.html': '/preview/settings.html', '/Consent.html': '/preview/consent.html', '/auth-action.html': '/preview/auth-action.html',
+                '/Notice.html': '/preview/notice.html'}
 LIVE2STAGING = {'/': './', '/Home.html': 'Home.html', '/Reports.html': 'Reports.html', '/industry.html': 'industry.html', '/Watchlist.html': 'Watchlist.html',
                 '/brief.html': 'brief.html', '/pricing.html': 'pricing.html', '/checkout.html': 'checkout.html', '/billing.html': 'billing.html', '/About.html': 'About.html',
                 '/Contact.html': 'Contact.html', '/Feedback.html': 'Feedback.html', '/Terms.html': 'Terms.html', '/Privacy.html': 'Privacy.html', '/Login.html': 'Login.html',
-                '/Signup.html': 'Signup.html', '/Settings.html': 'Settings.html', '/Consent.html': 'Consent.html', '/auth-action.html': 'auth-action.html', '/stock.html': 'stock.html'}
+                '/Signup.html': 'Signup.html', '/Settings.html': 'Settings.html', '/Consent.html': 'Consent.html', '/auth-action.html': 'auth-action.html', '/stock.html': 'stock.html',
+                '/Notice.html': 'Notice.html', '/Terms-2027.html': 'Terms.html', '/Privacy-2027.html': 'Privacy.html'}
 # 시안 안에서 쓴 /preview/… 주소 → 스테이징 이름 (finish 가 바꾼다)
 PREVIEW2STAGING = {v: LIVE2STAGING[k] for k, v in LIVE2PREVIEW.items() if k in LIVE2STAGING}
 
@@ -296,6 +311,7 @@ PAGE_SCRIPTS = {
     'pricing.html': ['auth-state.js'], 'checkout.html': ['checkout.js', 'auth-state.js'], 'Login.html': ['auth-state.js'], 'Signup.html': ['auth-state.js'],
     'Contact.html': ['auth-state.js', 'submit-form.js'], 'Feedback.html': ['auth-state.js', 'submit-form.js'],
     'About.html': ['auth-state.js'], 'Privacy.html': ['auth-state.js'], 'Terms.html': ['auth-state.js'], 'brief.html': ['auth-state.js'],
+    'Notice.html': ['auth-state.js'], 'Terms-2027.html': ['auth-state.js'], 'Privacy-2027.html': ['auth-state.js'],
     'Settings.html': ['auth-state.js'], 'Consent.html': ['auth-state.js'], 'auth-action.html': ['auth-state.js'],
 }
 
@@ -321,6 +337,30 @@ document.addEventListener('click',function(e){var a=e.target.closest&&e.target.c
 '''
 
 
+# 유사투자자문업자 법정 표시(자본시장법 제101조의3 — 개별 투자상담 · 자금운용 불가, 원금 손실과 그 귀속, 금융투자업자가 아닌
+# 유사투자자문업자). 신고서 첨부 3 사업계획서가 '신고 수리 후 모든 페이지 하단, 요금 안내와 결제 화면, 광고에 표시'를 약속했다.
+LEGAL_NOTE_KO = ('KOSAI는 금융투자업자가 아닌 유사투자자문업자로, 개별적인 투자상담과 자금운용을 하지 않습니다. '
+                 '투자에는 원금 손실이 발생할 수 있으며, 그 손실은 투자자에게 귀속됩니다.')
+
+
+LEGAL_NOTE_CSS = '\n.foot .legal-note{margin:12px 0 0;max-width:720px;font:400 12px/18px var(--font);color:var(--ink-62)}'
+
+
+def notice_on():
+    """약관 개정 공지를 보이는가 — 스테이징은 늘, 실사이트는 NOTICE_LIVE 일 때."""
+    return MODE == 'staging' or (MODE == 'live' and NOTICE_LIVE)
+
+
+def simil_on():
+    """유사투자자문업자 법정 표시를 보이는가 — 스테이징은 늘, 실사이트는 신고 수리 뒤(SIMIL_LIVE)."""
+    return MODE == 'staging' or (MODE == 'live' and SIMIL_LIVE)
+
+
+def footer_html(tpl):
+    return (tpl.replace('{NOTICE_LINK}', '<a href="/Notice.html">약관 개정 안내</a>' if notice_on() else '')
+               .replace('{LEGAL_NOTE}', f'\n  <p class="legal-note">{LEGAL_NOTE_KO}</p>' if simil_on() else ''))
+
+
 def set_mode(mode):
     """'preview' | 'staging' | 'live'. 빌더를 부르기 전에 한 번."""
     global MODE, PAGES, FOOTER, JS, CSS
@@ -328,8 +368,10 @@ def set_mode(mode):
     MODE = mode
     # 실사이트에는 STAGING 띠가 없다 — 띠의 전환 이름 규칙도 뺀다(reports-filter.test 가 실사이트 글에 'kos-staging-bar' 가 없는지 본다)
     CSS = CSS_ALL.replace('.kos-staging-bar{view-transition-name:kos-bar} ', '') if mode == 'live' else CSS_ALL
+    if simil_on():   # 꼬리의 법정 표시 문구 — 표시할 때만 싣는다(실사이트 옷은 SIMIL_LIVE 를 켤 때까지 그대로)
+        CSS += LEGAL_NOTE_CSS
     PAGES = PAGES_STAGING if mode == 'staging' else PAGES_LIVE
-    FOOTER = links(FOOTER_T if mode != 'staging' else FOOTER_T.replace('<a href="/Watchlist.html">관심종목</a>', '<a href="/Watchlist.html">관심종목</a><a href="/pricing.html">멤버십</a>'))
+    FOOTER = links(footer_html(FOOTER_T if mode != 'staging' else FOOTER_T.replace('<a href="/Watchlist.html">관심종목</a>', '<a href="/Watchlist.html">관심종목</a><a href="/pricing.html">멤버십</a>')))
     JS = links(JS_T + (JS_DEMO if mode == 'preview' else '') + '\n})();')
 
 
@@ -526,9 +568,9 @@ FOOTER_T = '''<footer class="foot"><div class="wrap">
   <div class="fgrid">
     <div class="fcol"><h4>서비스</h4><a href="/Home.html">홈</a><a href="/Reports.html">리포트</a><a href="/industry.html">업종 분석</a><a href="/Watchlist.html">관심종목</a><a href="/brief.html">모닝브리핑</a></div>
     <div class="fcol"><h4>회사</h4><a href="/About.html">회사 소개</a><a href="/Contact.html">문의하기</a><a href="/Feedback.html">피드백</a></div>
-    <div class="fcol"><h4>정책</h4><a href="/Terms.html">이용약관</a><a href="/Privacy.html">개인정보 처리방침</a></div>
+    <div class="fcol"><h4>정책</h4><a href="/Terms.html">이용약관</a><a href="/Privacy.html">개인정보 처리방침</a>{NOTICE_LINK}</div>
   </div>
-  <div class="biz">{BIZ_SPANS}</div>
+  <div class="biz">{BIZ_SPANS}</div>{LEGAL_NOTE}
   <div class="copy">© 2026 KOSAI</div>
 </div></footer>'''.replace('{BIZ_SPANS}', BIZ_SPANS)
 

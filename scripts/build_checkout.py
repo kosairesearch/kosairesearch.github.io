@@ -24,6 +24,7 @@ input[type=radio],input[type=checkbox]{accent-color:var(--ink);width:16px;height
 .agree label{display:flex;align-items:flex-start;gap:12px;padding:10px 0;border-top:1px solid var(--hair);font:400 14px/22px var(--font);cursor:pointer} .agree label.all{font-weight:600;border-top:0;border-bottom:1px solid var(--line)} .agree label a{text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line)}
 #payBtn{margin-top:28px;width:100%;justify-content:center;height:46px;font-size:15px}
 .co-msg{display:none;margin:12px 0 0;font:400 13px/20px var(--font);color:var(--ink-72)} .co-msg.err{display:block;color:var(--up)} .co-msg:not(:empty){display:block}
+.co-legal{margin:40px 0 0;max-width:720px;font:400 12px/18px var(--font);color:var(--ink-62)}
 .co-note{margin:14px 0 0;font:400 13px/20px var(--font);color:var(--ink-72)} .co-fine{margin:18px 0 0;font:400 12px/18px var(--font);color:var(--ink-62)} .co-fine a{text-decoration:underline;text-underline-offset:3px}
 /* 환불 기준 — 결제 전에 읽히게 본문 글자로 펼쳐 둔다(접지 않는다) */
 .co-refund{font:400 14px/22px var(--font);color:var(--ink-72);word-break:keep-all} .co-refund p{margin:0} .co-refund ol,.co-refund ul{margin:10px 0 0;padding-left:20px} .co-refund li{margin:0 0 6px} .co-refund li::marker{color:var(--ink-62)}
@@ -46,7 +47,8 @@ BODY = '''<main class="wrap">
     <p class="sub" id="coH2">결제 수단을 등록하시면 바로 이용하실 수 있습니다. 언제든지 해지하실 수 있습니다.</p>
   </header>
   <div id="coApp" data-i18n-skip><div class="co-state"><p><span class="spin"></span>불러오는 중…</p></div></div>
-</main>'''
+  <p class="co-legal">{LEGAL}</p>
+</main>'''.replace('{LEGAL}', C.LEGAL_NOTE_KO)   # 유사투자자문업자 법정 표시 — 결제 화면에 반드시 둔다(자본시장법 제101조의3)
 
 
 def build(out_path=None):

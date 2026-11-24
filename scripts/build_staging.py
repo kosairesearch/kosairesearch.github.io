@@ -49,6 +49,7 @@ def build_all(out_dir: Path, strict=False):
     build_about_comp.build(str(out_dir / 'About.html'))
     build_legal_comp.build('terms', str(out_dir / 'Terms.html'))
     build_legal_comp.build('privacy', str(out_dir / 'Privacy.html'))
+    build_legal_comp.build('notice', str(out_dir / 'Notice.html'))   # 약관 · 방침 개정 공지(2027-01-01 시행) — 스테이징은 늘 싣는다
     build_forms_comp.build({'contact': str(out_dir / 'Contact.html'), 'feedback': str(out_dir / 'Feedback.html')})
     build_auth_comp.build({'login': str(out_dir / 'Login.html'), 'signup': str(out_dir / 'Signup.html'), 'consent': str(out_dir / 'Consent.html'),
                            'action': str(out_dir / 'auth-action.html'), 'settings': str(out_dir / '_unused.html')})   # 설정은 build_settings_staging

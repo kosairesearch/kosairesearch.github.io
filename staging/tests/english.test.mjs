@@ -217,6 +217,7 @@ const SCENES = [
   ["피드백", "/Feedback.html", { act: clickAll("button[type=submit]") }],
   ["이용약관", "/Terms.html", {}],
   ["개인정보 처리방침", "/Privacy.html", {}],
+  ["약관 개정 안내", "/Notice.html", {}],   // 2027-01-01 유료화 공지(2026-11-25) — 스테이징 약관 · 방침은 유료판이다
   ["로그인", "/Login.html", { act: clickAll("button[type=submit]") }],
   ["회원가입", "/Signup.html", { act: clickAll("button[type=submit]") }],
   ["약관 동의", "/Consent.html", { signedIn: true }],
