@@ -121,8 +121,9 @@ jobs:
       # functions/tests/runtime.test.mjs ③ 이 함수 파일의 내보내기와 이 목록을 견준다.
       #
       # 그래서 올릴 함수를 하나씩 적는다. 결제를 실제로 넣을 때 아래 목록에
-      # confirmBilling·changePlan·cancelSubscription·resumeSubscription·
-      # requestRefund·renewSubscriptions 를 더하면 된다.
+      # confirmBilling·listPayments·cancelSubscription·resumeSubscription·
+      # refundPreview·requestRefund·renewSubscriptions 를 더하면 된다
+      # (요금제 변경 changePlan 은 2026-11-24 요금제를 하나로 합치며 없앴다).
       - name: 함수 배포 (결제 제외)
         run: |
           set -o pipefail

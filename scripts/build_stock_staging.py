@@ -142,16 +142,16 @@ window.kosHash=function(s){ var x=0x811c9dc5; for(var k=0;k<s.length;k++){ x^=s.
 /* 영어 화면(staging/i18n.js) — 리포트 본문은 자료의 영어 쪽(pk), 라벨은 아래 T, 나머지 한국어 문구는 사전이 바꾼다. */
 var I18=window.KOSi18n; function EN(){ return !!(I18&&I18.lang==='en'); }
 var T_EN={ watch:'Add to Watchlist', watched:'In Watchlist', peers:'Other reports in this industry', peersMore:'View industry analysis',/*@paid*/
-  lockTitle:'The full report is available to members', lockSub:'BASIC from ₩9,900 a month', lockSubN:'{s} sections · about {m} min read · BASIC from ₩9,900 a month',
+  lockTitle:'The full report is available to members', lockSub:'Membership ₩__PRICE__ a month', lockSubN:'{s} sections · about {m} min read · Membership ₩__PRICE__ a month',
   cta:'See membership', ctaLogin:'Sign in to keep reading', ctaOpen:'Continue reading', loading:'Loading…',
   note:'Already a member? Please sign in.',
-  limitT:'You have reached your daily reading limit', limitS:'Your reading limit resets every day at midnight (Korea time).', upgrade:'Upgrade to PRO',
+  burstT:'You opened too many reports in a short time, so viewing is paused for a while.', burstS:'Please try again shortly.',
   errNone:'The members-only sections for this stock are not ready yet.', errFail:'Could not load. Please try again shortly.'/*@/paid*/ };
 var T={ watch:'관심종목 추가', watched:'관심종목 추가됨', peers:'같은 업종의 다른 리포트', peersMore:'업종 분석 보기',/*@paid*/
-  lockTitle:'리포트 전체는 구독 회원에게 제공됩니다', lockSub:'BASIC 월 9,900원부터', lockSubN:'{s}개 섹션 · 약 {m}분 분량 · BASIC 월 9,900원부터',
+  lockTitle:'리포트 전체는 구독 회원에게 제공됩니다', lockSub:'멤버십 월 __PRICE__원', lockSubN:'{s}개 섹션 · 약 {m}분 분량 · 멤버십 월 __PRICE__원',
   cta:'멤버십 보기', ctaLogin:'로그인하고 이어 보기', ctaOpen:'이어서 읽기', loading:'불러오는 중…',
   note:'이미 구독 중이시라면 로그인하여 주시기 바랍니다.',
-  limitT:'하루 열람 한도에 도달했습니다', limitS:'열람 한도는 매일 자정(한국 시간)에 초기화됩니다.', upgrade:'PRO로 업그레이드',
+  burstT:'짧은 시간에 리포트를 너무 많이 열어 열람이 잠시 제한되었습니다.', burstS:'잠시 후 다시 이용하여 주시기 바랍니다.',
   errNone:'이 종목은 유료 구간이 아직 준비되지 않았습니다.', errFail:'불러오지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.'/*@/paid*/ };
 var LOCK_SVG='<svg class="lk" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>';
 function qp(n){ return new URLSearchParams(location.search).get(n); }
@@ -452,12 +452,13 @@ function wireLock(){
     }catch(e){
       btn.disabled=false; delete btn.dataset.busy; btn.textContent=T.ctaOpen;
       if(e.code==='resource-exhausted'){
-        /* 이미 구독자다 — 카드 머리의 '월 9,900원부터'와 '멤버십 보기'는 맞는 말이 아니다. 한도 안내로 바꿔 단다. */
-        var st2=P.state(), pro=(st2.plans&&st2.plans.pro)||{};
-        var h3=card&&card.querySelector('h3'), sb=card&&card.querySelector('.lock-sub'), cta=card&&card.querySelector('.lock-cta');
-        if(h3) h3.textContent=T.limitT;
-        if(sb) sb.textContent=T.limitS;
-        if(cta){ if(st2.plan==='basic'&&pro.limit) cta.innerHTML='<a class="btn btn-ink" href="billing.html">'+esc(T.upgrade)+'</a>'; else cta.style.display='none'; }   /* BASIC 이면 올릴 자리 · PRO 는 더 올릴 데가 없다 */
+        /* 자동 수집 제한(약관 제9조③ · 2026-11-24) — 짧은 시간에 새 종목을 너무 많이 연 구독자다. 하루 한도는 없다.
+           카드 머리의 요금 안내와 '멤버십 보기'는 맞는 말이 아니다 — 제한 안내로 바꿔 달고, 잠시 뒤 다시 누를 수 있게
+           '이어서 읽기'는 남긴다(창에서 빠지면 다시 열린다 · 오늘 이미 연 종목은 언제나 열린다). */
+        var h3=card&&card.querySelector('h3'), sb=card&&card.querySelector('.lock-sub'), buy=card&&card.querySelector('.lock-cta .btn-ink');
+        if(h3) h3.textContent=T.burstT;
+        if(sb) sb.textContent=T.burstS;
+        if(buy) buy.style.display='none';
       }
       else if(e.code==='not-found') show(T.errNone);
       else if(e.code==='unauthenticated') location.href='Login.html?next='+nextParam();
@@ -680,8 +681,12 @@ def page_js():
     # 다른 종목 리포트로 가는 주소 — 실사이트는 종목마다 미리 만든 페이지(영어 페이지에서는 영어 페이지로), 스테이징은 껍데기 한 장(유료 구간 잠금 때문)
     peer_href = ("function peerHref(t){ return (PRE_LANG==='en'?'/en/stock/':'/stock/')+encodeURIComponent(t)+'.html'; }" if C.MODE == 'live'
                  else "function peerHref(t){ return 'stock.html?ticker='+encodeURIComponent(t); }")
-    return (for_mode(PAGE_JS).replace('__CONST__', const).replace('__LIVE_FUNCS__', live_paragraph_code())
-            .replace('__PEER_HREF__', peer_href).replace('__ROOT__', root))
+    js = (for_mode(PAGE_JS).replace('__CONST__', const).replace('__LIVE_FUNCS__', live_paragraph_code())
+          .replace('__PEER_HREF__', peer_href).replace('__ROOT__', root))
+    if '__PRICE__' in js:   # 잠금 카드의 요금(유료 구간 · 스테이징만) — 요금제 화면 · 결제 화면과 같은 값(staging/payment-config.js PLANS)
+        import build_pricing
+        js = js.replace('__PRICE__', f"{build_pricing.member()['price']:,}")
+    return js
 
 
 def build_html():

@@ -1,443 +1,269 @@
 /* ============================================================
-   자동 갱신 — 매일 한 번 도는 배치
+   자동 갱신 — 매일 한 번 도는 배치(renewSubscriptions)
 
    왜 따로 있는가. 표의 열 하나(자동 갱신)만 미리보기에서 눌러 볼 수 없다.
    브라우저에는 크론이 없어서다. 여기서 그 자리를 메운다.
 
    무엇을 보는가
+     · 요금제는 하나다 — 구독 문서에 옛 요금제 값(basic · pro)이나 다운그레이드
+       예약(pendingPlan)이 남아 있어도 member 14,900원을 받는다(2026-11-24)
+     · 모르는 요금제 값이면 카드사를 부르지 않는다 — 금액이 비어 NaN 이 나가지 않는다
      · 해지 예약이면 긁지 않고 닫는다
-     · 예약된 다운그레이드를 그때 적용한다
-     · 새 주기라 지난 주기의 결제 기록을 끊는다
-     · 카드가 거절되면 끊지 않고 '결제 실패' 로 두고 기다린다
+     · 새 주기라 지난 주기의 결제 기록 · 환불 기록을 끊는다
+     · 카드가 거절되면 끊지 않고 '결제 실패' 로 두고 정해진 날에 다시 시도한다
      · 계정이 사라진 문서는 긁지 않는다
      · 사용자가 같은 순간에 결제하면 두 번 청구되지 않는다  ← 제일 중요하다
      · 목록을 만든 뒤 상태가 바뀌었으면 다시 긁지 않는다
 
-   서버는 여기서 돌릴 수 없다(파이어베이스가 필요하다). 그래서 배치가 한 건을
-   처리할 때 하는 판단만 그대로 옮겨 놓고, 파이어스토어와 토스를 아주 작은
-   대역으로 흉내 낸다. 옮겨 적은 것이 원본과 어긋나지 않는지는 맨 아래에서
-   따로 본다.
+   전에는 배치가 한 건을 처리하는 판단을 이 파일에 옮겨 적어 시험했다. 이제 진짜
+   함수를 결제 스위치를 켜고 가짜 파이어스토어 · 가짜 토스로 돌린다
+   (lib/paid-harness.mjs). 옮겨 적은 사본은 원본이 바뀌어도 통과한다.
 
    실행
      node functions/tests/renew.test.mjs
+     FN_INDEX=<고치기 전 functions/index.js> node functions/tests/renew.test.mjs   # 고치기 전이면 걸리는지
    ============================================================ */
+import {
+  clock, runJob, reset, seedSub, sub, store, hooks, S, charges, chargeTries, payments, failToss,
+  indexNeeds, SRC, ok, eq, section, done, DAY, HOUR, UID, ts, kstDayNo, kstDay, addMonthMs,
+} from "./lib/paid-harness.mjs";
 
-const PRICE = { basic: 9900, pro: 14900 };
-const DAY = 86400000;
-const kstDayNo = (ms) => Math.floor((ms + 9 * 3600000) / DAY);
-const DELETE = Symbol("delete");
-
-let pass = 0, fail = 0;
-const ok = (n, c, x = "") => {
-  if (c) { pass++; console.log("PASS  " + n); }
-  else { fail++; console.log("FAIL  " + n + (x ? "  ← " + x : "")); }
-};
-
-class Err extends Error { constructor(m, locked) { super(m); if (locked) this.kosLocked = true; } }
-
-/* ── 대역 ──────────────────────────────────────────────────── */
-function makeRef(doc) {
-  return {
-    _doc: doc,
-    async get() { return { data: () => ({ ...doc }) }; },
-    async set(patch) {
-      for (const [k, v] of Object.entries(patch)) {
-        if (v === DELETE) delete doc[k]; else doc[k] = v;
-      }
-    },
-  };
-}
-
-/* renewSubscriptions 가 한 건을 처리할 때 하는 일. index.js 의 루프 본문과 같다. */
-async function renewOne(ref, now, deps) {
-  const { authExists, withLock, charge, writePayment } = deps;
-  const d0 = (await ref.get()).data();
-  const uid = "u1";
-  let sub = d0;
-  let plan = sub.pendingPlan || sub.plan;
-  try {
-    if (!authExists()) {
-      await ref.set({ status: "deleted", billingKey: DELETE });
-      return "deleted";
-    }
-    let out = "renewed";
-    await withLock(async () => {
-      const fresh = (await ref.get()).data();
-      if (!fresh || fresh.status !== "active") { out = "skip"; return; }
-      const endMs = fresh.currentPeriodEnd || 0;
-      if (endMs > now) { out = "skip"; return; }
-      sub = fresh;
-      plan = sub.pendingPlan || sub.plan;
-
-      if (sub.cancelAtPeriodEnd) {
-        await ref.set({ status: "expired" });
-        out = "expired";
-        return;
-      }
-      const pay = await charge(PRICE[plan], `renew_${uid}_${kstDayNo(endMs)}`);
-      await ref.set({
-        plan, pendingPlan: null, status: "active",
-        currentPeriodStart: now,
-        currentPeriodEnd: now + 30 * DAY,
-        lastPaymentKey: pay ? pay.paymentKey : sub.lastPaymentKey,
-        periodPayments: pay ? [{ key: pay.paymentKey, amount: PRICE[plan], from: now }] : [],
-        refundDone: DELETE,
-        failedAt: null,
-      });
-    });
-    return out;
-  } catch (e) {
-    if (e && e.kosLocked) return "locked";
-    await ref.set({ status: "past_due", failedAt: now });
-    await writePayment({ amount: PRICE[plan] || 0, kind: "failed", status: "failed", plan });
-    return "past_due";
-  }
-}
-
-const noLock = (fn) => fn();
-const okCharge = (n = 0) => async () => ({ paymentKey: "pay_" + (++n) });
-const NOW = Date.parse("2026-09-02T02:00:00Z");
-const base = () => ({
-  status: "active", plan: "basic", lastPaymentKey: "old",
-  currentPeriodStart: NOW - 30 * DAY, currentPeriodEnd: NOW - 1000,
-  periodPayments: [{ key: "old", amount: 9900, from: NOW - 30 * DAY }],
-  refundDone: [{ key: "old", amount: 100 }],
-});
-
-console.log("── 보통 갱신 ──");
-{
-  const doc = base(); const ref = makeRef(doc);
-  const charged = [];
-  const r = await renewOne(ref, NOW, {
-    authExists: () => true, withLock: noLock,
-    charge: async (amt, idem) => { charged.push({ amt, idem }); return { paymentKey: "pay_new" }; },
-    writePayment: async () => {},
+/* 배치가 도는 시각 — 02:00 UTC(한국 시간 11시) */
+const NOW = Date.parse("2026-11-10T02:00:00Z");
+const tries = [];
+function fresh() { tries.push(...chargeTries()); reset(); clock.set(NOW); }
+/* 기간이 막 끝난 이용 중 구독 */
+function due(over = {}, uid = UID) {
+  return seedSub({
+    uid, startMs: NOW - 30 * DAY, endMs: NOW - 1000, payKey: "old",
+    refundDone: [{ key: "old", amount: 100 }], ...over,
   });
-  ok("갱신됐다", r === "renewed");
-  ok("플랜 정가를 받는다", charged[0].amt === 9900, String(charged[0].amt));
-  ok("새 기간이 시작된다", doc.currentPeriodStart === NOW && doc.currentPeriodEnd > NOW);
-  ok("지난 주기 결제 기록을 끊는다",
-     doc.periodPayments.length === 1 && doc.periodPayments[0].key === "pay_new",
-     JSON.stringify(doc.periodPayments));
-  ok("지난 환불 기록(refundDone)을 지운다", doc.refundDone === undefined,
-     "남으면 다음 환불이 이미 취소한 줄 알고 건너뛴다");
-  ok("멱등 이름은 그 주기로 고정된다",
-     charged[0].idem === `renew_u1_${kstDayNo(NOW - 1000)}`, charged[0].idem);
+}
+/* 카드가 거절돼 재시도를 기다리는 구독 */
+function stuck(over = {}, uid = UID) {
+  return seedSub({
+    uid, startMs: NOW - 60 * DAY, endMs: NOW - 30 * DAY, payKey: "old", status: "past_due",
+    refundDone: [{ key: "old", amount: 100 }], failedAt: ts(NOW - 30 * DAY), ...over,
+  });
+}
+const renew = () => runJob("renewSubscriptions");
+const failRows = (uid = UID) => payments(uid).filter((p) => p.kind === "failed");
+const alerts = () => S.mails.filter((m) => /정기결제/.test(m.subject || ""));
+
+section("보통 갱신");
+{
+  fresh();
+  due();
+  const endMs = sub().currentPeriodEnd.toMillis();
+  const r = await renew();
+  const s = sub();
+  ok("배치가 오류 없이 끝난다", !r.error, JSON.stringify(r.error));
+  eq("member 정가 14,900원을 받는다", charges(), [14900]);
+  ok("새 기간이 지금부터 한 달", s.currentPeriodStart.toMillis() === NOW && s.currentPeriodEnd.toMillis() === addMonthMs(NOW));
+  eq("지난 주기 결제 기록을 끊는다", s.periodPayments, [{ key: s.lastPaymentKey, amount: 14900, from: NOW }]);
+  ok("지난 환불 기록(refundDone)을 지운다 — 남으면 다음 환불이 이미 취소한 줄 알고 건너뛴다", !("refundDone" in s));
+  eq("멱등 이름은 그 주기로 고정된다", (S.toss.find((c) => /^\/billing\/bk/.test(c.path)) || {}).idem, `renew_${UID}_${kstDayNo(endMs)}`);
+  const pay = payments()[0] || {};
+  eq("결제 내역 — 14,900원 · member · '멤버십 월 구독'", [pay.amount, pay.plan, pay.description, pay.kind],
+     [14900, "member", "멤버십 월 구독", "subscription"]);
+  eq("거절이 없는 날은 운영 알림을 보내지 않는다", alerts().length, 0);
 }
 
-console.log("\n── 해지 예약이면 긁지 않는다 ──");
+section("옛 요금제 값 · 다운그레이드 예약이 남은 구독 — 모두 14,900원");
 {
-  const doc = { ...base(), cancelAtPeriodEnd: true }; const ref = makeRef(doc);
-  let charged = 0;
-  const r = await renewOne(ref, NOW, {
-    authExists: () => true, withLock: noLock,
-    charge: async () => { charged++; return { paymentKey: "x" }; }, writePayment: async () => {},
-  });
-  ok("종료로 닫는다", r === "expired" && doc.status === "expired", doc.status);
-  ok("카드를 긁지 않는다", charged === 0, String(charged));
+  fresh();
+  due({ plan: "basic" }, "a");
+  due({ plan: "pro", pendingPlan: "basic" }, "b");
+  due({ plan: "PRO" }, "c");
+  due({ plan: "basic", pendingPlan: "pro" }, "d");
+  due({}, "e");
+  await renew();
+  eq("다섯 구독 모두 14,900원(옛 9,900원 · 예약된 다운그레이드를 쓰지 않는다)", charges(), [14900, 14900, 14900, 14900, 14900]);
+  ok("요금제는 모두 member 로 적힌다", ["a", "b", "c", "d", "e"].every((u) => sub(u).plan === "member"),
+     ["a", "b", "c", "d", "e"].map((u) => sub(u).plan).join(","));
+  ok("변경 예약 칸(pendingPlan)은 지운다", ["a", "b", "c", "d", "e"].every((u) => !("pendingPlan" in sub(u))));
+  ok("결제 기록 금액도 14,900원", ["a", "b", "c", "d"].every((u) => sub(u).periodPayments[0].amount === 14900));
 }
 
-console.log("\n── 예약된 다운그레이드를 적용한다 ──");
-{
-  const doc = { ...base(), plan: "pro", pendingPlan: "basic" }; const ref = makeRef(doc);
-  const charged = [];
-  await renewOne(ref, NOW, {
-    authExists: () => true, withLock: noLock,
-    charge: async (amt) => { charged.push(amt); return { paymentKey: "p" }; }, writePayment: async () => {},
-  });
-  ok("내린 플랜 금액을 받는다", charged[0] === PRICE.basic, String(charged[0]));
-  ok("플랜이 바뀐다", doc.plan === "basic", doc.plan);
-  ok("예약이 지워진다", doc.pendingPlan === null);
-  ok("결제 기록도 내린 플랜 금액", doc.periodPayments[0].amount === PRICE.basic);
+section("모르는 요금제 값 — 카드사를 부르지 않는다");
+for (const plan of ["enterprise", null]) {
+  fresh();
+  due({ plan });
+  await renew();
+  eq(`요금제 ${JSON.stringify(plan)} → 결제 요청 0건`, chargeTries().length, 0);
+  eq("  '결제 실패' 로 남는다(카드를 긁지 않았으니 이용도 열지 않는다)", sub().status, "past_due");
+  eq("  실패 내역의 금액은 0원 — 실제와 다른 금액을 적지 않는다", failRows().map((p) => p.amount), [0]);
+  ok("  운영 알림에 뜬다", alerts().length === 1);
 }
 
-console.log("\n── 카드가 거절되면 ──");
+section("해지 예약 · 환불이 끝난 구독");
 {
-  const doc = { ...base(), plan: "pro", pendingPlan: "basic" }; const ref = makeRef(doc);
-  const rows = [];
-  const r = await renewOne(ref, NOW, {
-    authExists: () => true, withLock: noLock,
-    charge: async () => { throw new Err("한도 초과"); },
-    writePayment: async (x) => rows.push(x),
-  });
-  ok("끊지 않고 '결제 실패' 로 둔다", r === "past_due" && doc.status === "past_due", doc.status);
-  ok("실패 기록이 남는다", rows.length === 1 && rows[0].kind === "failed");
-  /* 다운그레이드가 예약돼 있었으면 청구하려던 건 BASIC 이다. 옛 플랜(PRO)으로
-     적으면 내역에 실제와 다른 금액이 남는다. */
-  ok("청구하려던 플랜으로 적는다", rows[0].plan === "basic" && rows[0].amount === PRICE.basic,
-     JSON.stringify(rows[0]));
-}
-
-console.log("\n── 계정이 사라진 문서 ──");
-{
-  const doc = base(); const ref = makeRef(doc);
-  let charged = 0;
-  const r = await renewOne(ref, NOW, {
-    authExists: () => false, withLock: noLock,
-    charge: async () => { charged++; return {}; }, writePayment: async () => {},
-  });
-  ok("긁지 않는다", charged === 0 && r === "deleted");
-  ok("카드를 지운다", doc.billingKey === undefined && doc.status === "deleted");
-}
-
-console.log("\n── 사용자가 같은 순간에 결제하면 ──");
-{
-  /* 갱신 대상은 기간이 끝난 문서라 subActive 가 false 다. 그래서 해지·환불은
-     저절로 막히지만 '새 결제' 만은 막히지 않는다. 배치가 자물쇠를 안 잡으면
-     같은 사람에게 두 번 청구된다. */
-  const doc = base(); const ref = makeRef(doc);
-  let charged = 0;
-  const rows = [];
-  const r = await renewOne(ref, NOW, {
-    authExists: () => true,
-    withLock: async () => { throw new Err("처리하는 중입니다", true); },
-    charge: async () => { charged++; return {}; },
-    writePayment: async (x) => rows.push(x),
-  });
-  ok("건너뛴다", r === "locked", r);
-  ok("두 번 청구하지 않는다", charged === 0, String(charged));
-  ok("'결제 실패' 로 적지 않는다", doc.status === "active" && rows.length === 0,
-     "방금 결제한 사람에게 실패가 뜨면 안 된다");
-}
-
-console.log("\n── 목록을 만든 뒤 상태가 바뀌었으면 ──");
-{
-  // 자물쇠를 잡는 사이에 사용자가 새로 결제해 기간이 미래로 옮겨졌다
-  const doc = base(); const ref = makeRef(doc);
-  let charged = 0;
-  const r = await renewOne(ref, NOW, {
-    authExists: () => true,
-    withLock: async (fn) => { doc.currentPeriodEnd = NOW + 30 * DAY; return fn(); },
-    charge: async () => { charged++; return {}; }, writePayment: async () => {},
-  });
-  ok("다시 긁지 않는다", charged === 0 && r === "skip", `${r} · ${charged}회`);
+  fresh();
+  due({ cancelAtPeriodEnd: true });
+  await renew();
+  ok("해지 예약이면 긁지 않고 종료로 닫는다", sub().status === "expired" && chargeTries().length === 0);
 }
 {
-  // 그 사이 해지·탈퇴로 active 가 아니게 됐다
-  const doc = base(); const ref = makeRef(doc);
-  let charged = 0;
-  const r = await renewOne(ref, NOW, {
-    authExists: () => true,
-    withLock: async (fn) => { doc.status = "deleted"; return fn(); },
-    charge: async () => { charged++; return {}; }, writePayment: async () => {},
-  });
-  ok("active 가 아니면 건드리지 않는다", charged === 0 && r === "skip", `${r} · ${charged}회`);
+  fresh();
+  due({ cancelAtPeriodEnd: true, refundedAt: ts(NOW - 12 * HOUR) });
+  await renew();
+  ok("이용일수를 뺀 환불 뒤 자정이 지난 구독도 긁지 않고 닫는다", sub().status === "expired" && chargeTries().length === 0);
 }
 
-/* ── 옮겨 적은 것이 원본과 같은가 ─────────────────────────────
-   본문을 그대로 베낄 수는 없다(파이어스토어 호출이 섞여 있다). 대신 반드시
-   있어야 할 것들이 index.js 에 남아 있는지 본다. 하나라도 빠지면 위 검사는
-   전부 통과하면서 실제로는 두 번 청구된다.
-   ─────────────────────────────────────────────────────────── */
+section("카드가 거절되면");
+{
+  fresh();
+  due({ plan: "pro", pendingPlan: "basic" });
+  failToss(/^\/billing\/bk/, { message: "한도 초과" });
+  await renew();
+  const s = sub();
+  ok("끊지 않고 '결제 실패' 로 둔다", s.status === "past_due" && s.retryCount === 0 && s.failedAt.toMillis() === NOW,
+     JSON.stringify([s.status, s.retryCount]));
+  eq("실패 내역 — 청구하려던 14,900원 · member", failRows().map((p) => [p.amount, p.plan]), [[14900, "member"]]);
+  eq("운영 알림 — 새로 거절 1건", alerts().map((m) => m.subject), ["[KOSAI] 정기결제 — 새로 거절 1건"]);
+}
+
+section("계정이 사라진 문서");
+{
+  fresh();
+  due();
+  S.users.delete(UID);
+  await renew();
+  ok("긁지 않고 닫는다 · 카드를 지운다", chargeTries().length === 0 && sub().status === "deleted" && !("billingKey" in sub()));
+}
+
+section("사용자가 같은 순간에 결제 · 환불하는 중이면");
+{
+  /* 갱신 대상은 기간이 끝난 문서라 subActive 가 false 다. 해지 · 환불은 저절로
+     막히지만 '새 결제' 는 막히지 않는다. 배치가 자물쇠를 안 잡으면 두 번 청구된다. */
+  fresh();
+  due({ busy: { op: "billing", at: ts(NOW - 10 * 1000) } });
+  await renew();
+  ok("건너뛴다 — 두 번 청구하지 않는다", chargeTries().length === 0);
+  ok("'결제 실패' 로 적지 않는다", sub().status === "active" && failRows().length === 0);
+}
+
+section("목록을 만든 뒤 상태가 바뀌었으면");
+{
+  fresh();
+  due();
+  hooks.beforeTx = () => { store.get(`subscriptions/${UID}`).currentPeriodEnd = ts(NOW + 30 * DAY); };
+  await renew();
+  ok("그 사이 새 기간이 시작됐으면 다시 긁지 않는다", chargeTries().length === 0);
+}
+{
+  fresh();
+  due();
+  hooks.beforeTx = () => { store.get(`subscriptions/${UID}`).status = "deleted"; };
+  await renew();
+  ok("그 사이 active 가 아니게 됐으면 건드리지 않는다", chargeTries().length === 0 && sub().status === "deleted");
+}
+
 /* ── 카드가 거절된 뒤의 재시도 ─────────────────────────────
-   한 번 거절됐다고 바로 끊지 않는다. 정해진 날에 다시 시도하고, 성공하면
-   그 순간부터 새 한 달이 시작된다. 네 번 다 실패하면 종료한다.
+   한 번 거절됐다고 바로 끊지 않는다. 정해진 날(1 · 3 · 5 · 7일째)에 다시
+   시도하고, 성공하면 그 순간부터 새 한 달이 시작된다. 네 번 다 실패하면 종료한다.
    ─────────────────────────────────────────────────────────── */
-const RETRY_DAYS = [1, 3, 5, 7];
-
-/* renewSubscriptions 의 재시도 루프가 한 건에 하는 일. */
-async function dunOne(ref, now, deps) {
-  const { withLock, charge, writePayment } = deps;
-  const sub = (await ref.get()).data();
-  const plan = sub.pendingPlan || sub.plan;
-  const failedMs = sub.failedAt || 0;
-  if (!failedMs) {
-    /* 언제 실패했는지 모르면 재시도 날짜를 셀 수가 없다. 그냥 넘기면 이 문서는
-       영영 past_due 에 머물러 결제도 종료도 되지 않는다 — 오늘을 기준일로
-       잡아 다시 세기 시작한다. */
-    await ref.set({ failedAt: now, retryCount: 0 });
-    return "no-failedAt";
-  }
-  const dayN = kstDayNo(now) - kstDayNo(failedMs);
-  const tried = sub.retryCount || 0;
-  if (tried >= RETRY_DAYS.length) {
-    // 마지막 시도까지 실패했는데 아직 past_due 라면, 종료 쓰기가 실패한 것이다.
-    await ref.set({ status: "expired" });
-    return "done-already";
-  }
-  if (dayN < RETRY_DAYS[tried]) return "too-early";
-
-  let out = "";
-  try {
-    await withLock(async () => {
-      const fresh = (await ref.get()).data();
-      if (!fresh || fresh.status !== "past_due") { out = "gone"; return; }
-      if ((fresh.retryCount || 0) !== tried) { out = "gone"; return; }
-      try {
-        const pay = await charge(PRICE[plan], `dun_u1_${kstDayNo(now)}`);
-        await ref.set({
-          plan, pendingPlan: null, status: "active",
-          currentPeriodStart: now, currentPeriodEnd: now + 30 * DAY,
-          lastPaymentKey: pay ? pay.paymentKey : fresh.lastPaymentKey,
-          periodPayments: pay ? [{ key: pay.paymentKey, amount: PRICE[plan], from: now }] : [],
-          refundDone: DELETE, failedAt: DELETE, retryCount: DELETE,
-        });
-        out = "revived";
-      } catch (e) {
-        const next = tried + 1;
-        const fin = next >= RETRY_DAYS.length;
-        await ref.set({ retryCount: next, ...(fin ? { status: "expired" } : {}) });
-        await writePayment({ amount: PRICE[plan] || 0, kind: "failed", status: "failed", plan,
-                             description: fin ? "정기결제 실패(최종)" : `정기결제 재시도 실패(${next}회)` });
-        out = fin ? "gave-up" : "retry-failed";
-      }
-    });
-  } catch (e) {
-    if (e && e.kosLocked) return "locked";
-    throw e;
-  }
-  return out;
+section("재시도: 정해진 날에만");
+for (const [tried, dayN, want] of [
+  [0, 0, "기다림"], [0, 1, "되살림"], [1, 2, "기다림"], [1, 3, "되살림"],
+  [2, 4, "기다림"], [2, 5, "되살림"], [3, 6, "기다림"], [3, 7, "되살림"], [4, 30, "종료"],
+]) {
+  fresh();
+  stuck({ retryCount: tried, failedAt: ts(NOW - dayN * DAY) });
+  await renew();
+  const got = sub().status === "active" ? "되살림" : sub().status === "expired" ? "종료" : "기다림";
+  const paid = charges().length;
+  ok(`${tried}번 시도함 · ${dayN}일째 → ${want}`, got === want && paid === (want === "되살림" ? 1 : 0), `${got} · 결제 ${paid}건`);
 }
 
-const stuck = (over = {}) => ({
-  status: "past_due", plan: "basic", lastPaymentKey: "old",
-  currentPeriodStart: NOW - 60 * DAY, currentPeriodEnd: NOW - 30 * DAY,
-  periodPayments: [{ key: "old", amount: 9900, from: NOW - 60 * DAY }],
-  refundDone: [{ key: "old", amount: 100 }],
-  failedAt: NOW - 30 * DAY, ...over,
-});
-
-console.log("\n── 재시도: 정해진 날에만 ──");
+section("재시도 성공 — 그 순간부터 새 한 달 · 옛 요금제 값이어도 14,900원");
 {
-  for (const [tried, dayN, want] of [
-    [0, 0, "too-early"], [0, 1, "revived"],
-    [1, 2, "too-early"], [1, 3, "revived"],
-    [2, 4, "too-early"], [2, 5, "revived"],
-    [3, 6, "too-early"], [3, 7, "revived"],
-    [4, 30, "done-already"],
-  ]) {
-    const doc = stuck({ retryCount: tried, failedAt: NOW - dayN * DAY });
-    const r = await dunOne(makeRef(doc), NOW, {
-      withLock: noLock, charge: async () => ({ paymentKey: "ok" }), writePayment: async () => {},
-    });
-    ok(`${tried}번 시도함 · ${dayN}일째 → ${want}`, r === want, r);
-  }
+  fresh();
+  stuck({ plan: "pro", pendingPlan: "basic" });
+  await renew();
+  const s = sub();
+  eq("14,900원을 받는다", charges(), [14900]);
+  ok("되살아나 지금부터 한 달", s.status === "active" && s.currentPeriodStart.toMillis() === NOW &&
+     s.currentPeriodEnd.toMillis() === addMonthMs(NOW));
+  ok("요금제 member · 변경 예약 칸 · 밀린 흔적 · 환불 기록을 지운다",
+     s.plan === "member" && !("pendingPlan" in s) && !("failedAt" in s) && !("retryCount" in s) && !("refundDone" in s));
+  eq("지난 주기 결제 기록을 끊는다", s.periodPayments, [{ key: s.lastPaymentKey, amount: 14900, from: NOW }]);
+  eq("멱등 이름이 그날로 고정된다", (S.toss.find((c) => /^\/billing\/bk/.test(c.path)) || {}).idem, `dun_${UID}_${kstDay(NOW)}`);
+  eq("운영 알림 — 재시도 성공 1건", alerts().map((m) => m.subject), ["[KOSAI] 정기결제 — 재시도 성공 1건"]);
 }
 
-console.log("\n── 재시도 성공: 그 순간부터 새 한 달 ──");
+section("재시도 실패 · 마지막 실패");
 {
-  const doc = stuck(); const ref = makeRef(doc);
-  const charged = [];
-  const r = await dunOne(ref, NOW, {
-    withLock: noLock,
-    charge: async (amt, idem) => { charged.push({ amt, idem }); return { paymentKey: "pay_dun" }; },
-    writePayment: async () => {},
-  });
-  ok("되살아난다", r === "revived" && doc.status === "active", `${r} · ${doc.status}`);
-  ok("정가를 받는다", charged[0].amt === PRICE.basic, String(charged[0].amt));
-  ok("성공한 시점부터 시작한다", doc.currentPeriodStart === NOW, String(doc.currentPeriodStart));
-  ok("거기서부터 한 달", doc.currentPeriodEnd === NOW + 30 * DAY);
-  ok("실패 기록을 지운다", doc.failedAt === undefined && doc.retryCount === undefined);
-  ok("지난 주기 결제 기록을 끊는다",
-     doc.periodPayments.length === 1 && doc.periodPayments[0].key === "pay_dun");
-  ok("지난 환불 기록도 지운다", doc.refundDone === undefined);
-  ok("멱등 이름이 그날로 고정된다", charged[0].idem === `dun_u1_${kstDayNo(NOW)}`, charged[0].idem);
+  fresh();
+  stuck({ retryCount: 1, failedAt: ts(NOW - 3 * DAY) });
+  failToss(/^\/billing\/bk/);
+  await renew();
+  ok("아직 끊지 않고 횟수만 올린다", sub().status === "past_due" && sub().retryCount === 2);
+  eq("실패 내역 — '정기결제 재시도 실패(2회)' · 14,900원", failRows().map((p) => [p.description, p.amount]),
+     [["정기결제 재시도 실패(2회)", 14900]]);
 }
-
-console.log("\n── 재시도 실패: 횟수만 올리고 기다린다 ──");
 {
-  const doc = stuck({ retryCount: 1, failedAt: NOW - 3 * DAY }); const ref = makeRef(doc);
-  const rows = [];
-  const r = await dunOne(ref, NOW, {
-    withLock: noLock, charge: async () => { throw new Err("한도 초과"); },
-    writePayment: async (x) => rows.push(x),
-  });
-  ok("아직 끊지 않는다", r === "retry-failed" && doc.status === "past_due", `${r} · ${doc.status}`);
-  ok("횟수가 올라간다", doc.retryCount === 2, String(doc.retryCount));
-  ok("실패 기록이 남는다", /재시도 실패\(2회\)/.test(rows[0].description), rows[0].description);
+  fresh();
+  stuck({ retryCount: 3, failedAt: ts(NOW - 7 * DAY) });
+  failToss(/^\/billing\/bk/);
+  await renew();
+  ok("네 번째도 실패하면 이용을 종료한다", sub().status === "expired" && sub().retryCount === 4);
+  eq("  최종 실패로 적는다", failRows().map((p) => p.description), ["정기결제 실패(최종)"]);
+  eq("  운영 알림 — 최종 실패 1건", alerts().map((m) => m.subject), ["[KOSAI] 정기결제 — 최종 실패 1건"]);
 }
-
-console.log("\n── 마지막 시도까지 실패하면 종료 ──");
 {
-  const doc = stuck({ retryCount: 3, failedAt: NOW - 7 * DAY }); const ref = makeRef(doc);
-  const rows = [];
-  const r = await dunOne(ref, NOW, {
-    withLock: noLock, charge: async () => { throw new Err("정지된 카드"); },
-    writePayment: async (x) => rows.push(x),
-  });
-  ok("이용을 종료한다", r === "gave-up" && doc.status === "expired", `${r} · ${doc.status}`);
-  ok("최종 실패로 적는다", /최종/.test(rows[0].description), rows[0].description);
-  ok("횟수가 상한에 닿는다", doc.retryCount === RETRY_DAYS.length);
+  fresh();
+  stuck({ plan: "enterprise", retryCount: 0, failedAt: ts(NOW - DAY) });
+  await renew();
+  ok("재시도도 모르는 요금제 값이면 카드사를 부르지 않는다", chargeTries().length === 0 && sub().retryCount === 1,
+     JSON.stringify([chargeTries().length, sub().retryCount]));
 }
-
-console.log("\n── 재시도 중 사용자가 카드를 바꿔 되살아났으면 ──");
 {
-  const doc = stuck(); const ref = makeRef(doc);
-  let charged = 0;
-  const r = await dunOne(ref, NOW, {
-    withLock: async (fn) => { doc.status = "active"; return fn(); },
-    charge: async () => { charged++; return {}; }, writePayment: async () => {},
-  });
-  ok("건드리지 않는다", r === "gone" && charged === 0, `${r} · ${charged}회`);
+  fresh();
+  stuck({ failedAt: undefined });
+  await renew();
+  ok("언제 실패했는지 모르면 오늘을 기준일로 다시 잡는다(긁지 않는다)",
+     sub().failedAt && sub().failedAt.toMillis() === NOW && sub().retryCount === 0 && chargeTries().length === 0);
 }
-
-console.log("\n── 재시도가 사용자 조작과 겹치면 ──");
 {
-  const doc = stuck(); const ref = makeRef(doc);
-  let charged = 0;
-  const r = await dunOne(ref, NOW, {
-    withLock: async () => { throw new Err("처리하는 중", true); },
-    charge: async () => { charged++; return {}; }, writePayment: async () => {},
-  });
-  ok("건너뛴다", r === "locked" && charged === 0, `${r} · ${charged}회`);
-  ok("상태를 바꾸지 않는다", doc.status === "past_due" && (doc.retryCount || 0) === 0);
+  fresh();
+  stuck({ retryCount: 0, failedAt: ts(NOW - DAY) });
+  S.users.delete(UID);
+  await renew();
+  ok("재시도도 긁기 전에 계정을 확인한다", chargeTries().length === 0 && sub().status === "deleted");
 }
 
-console.log("\n── 원본에 그 장치들이 있는가 ──");
+section("재시도가 사용자 조작과 겹치면");
 {
-  const { readFileSync } = await import("node:fs");
-  const { fileURLToPath } = await import("node:url");
-  const { dirname, join } = await import("node:path");
-  const src = readFileSync(join(dirname(fileURLToPath(import.meta.url)), "..", "index.js"), "utf8");
-  /* 본문 끝을 글자 수로 어림잡지 않는다. 코드가 조금 길어지면 뒤쪽 검사가
-     조용히 아무것도 안 보게 된다 — 실제로 그렇게 통과할 뻔했다. 괄호로 끊는다. */
-  const i = src.indexOf("exports.renewSubscriptions");
-  const open = src.indexOf("(", src.indexOf("onSchedule", i));
-  let depth = 0, end = open;
-  for (; end < src.length; end++) {
-    if (src[end] === "(") depth++;
-    else if (src[end] === ")" && --depth === 0) break;
-  }
-  const body = src.slice(i, end + 1);
-
-  ok("갱신도 같은 자물쇠를 잡는다", /withLock\(db, d\.ref, "renew"/.test(body));
-  ok("자물쇠를 잡은 뒤 다시 읽는다", /const fresh = \(await d\.ref\.get\(\)\)\.data\(\)/.test(body));
-  ok("그 사이 새 기간이 시작됐으면 건너뛴다", /endMs > now\.getTime\(\)/.test(body));
-  ok("active 가 아니면 건너뛴다", /fresh\.status !== "active"/.test(body));
-  ok("자물쇠 실패는 실패로 적지 않는다", /e\.kosLocked/.test(body));
-  ok("실패 기록에 청구하려던 플랜을 쓴다",
-     /amount: PRICE\[plan\] \|\| 0[\s\S]{0,80}plan,/.test(body));
-  ok("새 주기에 refundDone 을 지운다", /refundDone: admin\.firestore\.FieldValue\.delete\(\)/.test(body));
-  ok("상한까지 찼으면 알린다", /상한\(400\)까지 찼다/.test(body));
-  /* 카드가 거절돼도 여태 아무 데도 안 알렸다. 사용자는 설정 창을 열기 전에는
-     모르고, 우리는 몇 명이 멈춰 있는지 알 방법이 없었다. */
-  ok("카드 거절·재시도 결과를 운영자에게 알린다", /alertOps\(`정기결제 — /.test(body));
-  ok("거절이 없는 날은 알리지 않는다",
-     /if \(failed\.length \|\| gaveUp\.length \|\| revived\.length\)/.test(body));
-  // 재시도
-  ok("거절된 카드를 다시 시도한다", /where\("status", "==", "past_due"\)/.test(body));
-  ok("재시도 일정이 정해져 있다", /RETRY_DAYS\[tried\]/.test(body));
-  ok("재시도도 자물쇠를 잡는다", /withLock\(db, d\.ref, "dunning"/.test(body));
-  ok("자물쇠를 잡은 뒤 다시 읽는다", /fresh\.status !== "past_due"/.test(body));
-  ok("그 사이 횟수가 바뀌었으면 건너뛴다", /\(fresh\.retryCount \|\| 0\) !== tried/.test(body));
-  ok("성공하면 그 순간부터 새 기간", /currentPeriodStart: admin\.firestore\.Timestamp\.fromDate\(now\)[\s\S]{0,400}dun_/.test(body)
-     || /dun_[\s\S]{0,600}currentPeriodStart: admin\.firestore\.Timestamp\.fromDate\(now\)/.test(body));
-  ok("끝까지 안 되면 종료한다", /done \? \{ status: "expired" \}/.test(body));
-  ok("재시도 이름이 카드 재등록과 다르다", /`dun_\$\{uid\}/.test(body) && /`retry_\$\{uid\}/.test(src));
-  ok("withLock 이 우리 표시를 붙인다", /e\.kosLocked = true/.test(src));
-  /* 재시도 고리도 카드를 긁는다 — 갱신 고리와 같은 확인이 있어야 한다. */
-  ok("재시도도 긁기 전에 계정을 확인한다",
-     (body.match(/admin\.auth\(\)\.getUser\(uid\)/g) || []).length === 2,
-     "탈퇴한 사람의 카드를 긁는 사고는 되돌릴 수 없다");
-  /* past_due 에서 빠져나가지 못하는 문서를 남기지 않는다. 조용히 묶여 있으면
-     결제도 종료도 안 된 채로 매일 목록에만 올라온다. */
-  ok("failedAt 이 없으면 오늘을 기준으로 다시 잡는다",
-     /failedAt 이 없다[\s\S]{0,400}retryCount: 0/.test(body),
-     "그냥 넘기면 영영 past_due 에 머문다");
-  ok("재시도를 모두 마친 문서는 닫는다",
-     /tried >= RETRY_DAYS\.length\) \{[\s\S]{0,500}status: "expired"/.test(body),
-     "종료 쓰기가 실패했으면 매일 목록에만 올라온다");
+  fresh();
+  stuck({ retryCount: 0, failedAt: ts(NOW - DAY) });
+  hooks.beforeTx = () => { store.get(`subscriptions/${UID}`).status = "active"; };
+  await renew();
+  ok("그 사이 카드를 바꿔 되살아났으면 건드리지 않는다", chargeTries().length === 0);
+}
+{
+  fresh();
+  stuck({ retryCount: 0, failedAt: ts(NOW - DAY), busy: { op: "billing", at: ts(NOW - 5000) } });
+  await renew();
+  ok("처리 중이면 건너뛰고 상태를 바꾸지 않는다",
+     chargeTries().length === 0 && sub().status === "past_due" && (sub().retryCount || 0) === 0);
 }
 
-console.log(`\n통과 ${pass} · 실패 ${fail}`);
-process.exit(fail ? 1 : 0);
+section("카드사에 보낸 결제 금액");
+tries.push(...chargeTries());
+ok(`위의 결제 요청 ${tries.length}건의 금액이 모두 숫자였다(NaN · undefined 없음)`,
+   tries.length > 0 && tries.every((c) => Number.isFinite(c.body.amount)));
+
+section("원본에 남아 있어야 할 장치");
+{
+  const i = SRC.indexOf("exports.renewSubscriptions");
+  const body = SRC.slice(i, SRC.indexOf("\n);\n", i));
+  ok("상한(400)까지 찼으면 알린다(갱신 · 재시도 모두)",
+     /대상이 상한\(400\)까지 찼다/.test(body) && /재시도 대상이 상한\(400\)까지 찼다/.test(body));
+  ok("예약해 둔 변경(pendingPlan)으로 청구할 요금제를 고르지 않는다", !/pendingPlan \|\|/.test(body));
+}
+/* 갱신 대상을 고르는 질의(status 같다 + currentPeriodEnd 범위)는 파이어스토어 복합 색인이
+   있어야 돈다. 저장소에는 색인 설정이 없다 — 결제를 켜기 전에 색인을 만들어야 한다. */
+if (indexNeeds.length) console.log("\n참고  복합 색인이 필요한 질의: " + [...new Set(indexNeeds)].join(" / "));
+
+done();

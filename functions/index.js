@@ -1886,18 +1886,30 @@ exports.submitForm = onCall(
      reports_paid/{ticker}   — 유료 섹션(earnings·bull·bear·verdict 등)
      subscriptions/{uid}     — { status, plan, currentPeriodEnd }
                                status: active | canceled | expired
-                               plan  : basic | pro
+                               plan  : member (요금제는 하나다 — 옛 basic · pro 도 member 로 읽는다)
 
-   열람 한도는 요금제로 갈린다. pricing.html에 고지한 수치와 반드시 같아야 한다.
+   열람 종목 수에는 한도가 없다(2026-11-24 사장 "요금제는 1개 14900원. 열람은 무제한").
+   하루 열람 한도(BASIC 5종목 · PRO 15종목)를 없앴다.
+
+   대신 약관 제9조③의 단서 — '짧은 시간에 비정상적으로 많은 열람이 발생한 계정의
+   열람을 일시적으로 제한할 수 있다' — 를 자동 수집 제한으로 건다. 사람이 읽는
+   속도로는 닿지 않는 선이다.
+     · 최근 60분 안에 새로 연 서로 다른 종목이 60개에 이르면 61번째 새 종목부터 거절한다.
+     · 오늘 이미 연 종목을 다시 여는 것은 언제나 허용한다(새로고침 · 다른 기기 · 뒤로 가기).
+     · 60분이 지나 창에서 빠지면 다시 열 수 있다.
+     · 창은 하루 문서 안에서 센다. 한국 시간 자정에 새 문서가 시작되면 창도 비어서
+       시작한다. 자정 앞뒤의 두 문서를 엮지 않는 것은 시연(staging/demo-backend.js)과
+       같은 식을 쓰려는 것이다 — 화면의 안내와 실제 제한이 달라지면 안 된다.
+   두 값(BURST_WINDOW_MIN · BURST_MAX)은 시연과 같아야 한다.
    ============================================================ */
-const DAILY_LIMIT = { basic: 5, pro: 15 };   // 1일 '서로 다른 종목' 열람 수
+const BURST_WINDOW_MIN = 60;   // 분 — 이 시간 안에 새로 연 종목을 센다
+const BURST_MAX = 60;          // 그 창 안에서 새로 열 수 있는 서로 다른 종목 수
 
 /* 환불이 끝난 구독인가.
 
-   오늘 값을 받은 환불은 자정까지 subActive 가 참이다. 그 사이에 해지·플랜
-   변경·환불을 또 누를 수 있는데, 두 번째 환불은 이미 취소한 결제 건을 다시
-   취소하려 들고 업그레이드는 방금 환불한 카드에 차액을 긁는다.
-   끝난 구독에는 아무것도 하지 않는다. */
+   이용일수를 뺀 환불은 오늘 값을 받으므로 그 구독이 자정까지 subActive 다.
+   그 사이에 해지·환불을 또 누를 수 있는데, 두 번째 환불은 이미 취소한 결제
+   건을 다시 취소하려 든다. 끝난 구독에는 아무것도 하지 않는다. */
 function refundedAlready(sub) { return !!(sub && sub.refundedAt); }
 
 function subActive(sub) {
@@ -1909,38 +1921,72 @@ function subActive(sub) {
   return Number.isFinite(ms) && ms > Date.now();
 }
 
-// 한국 시간 기준 날짜. UTC로 끊으면 한도가 오전 9시(장 시작)에 초기화된다.
-function kstDay() {
-  return new Date(Date.now() + 9 * 3600 * 1000).toISOString().slice(0, 10);
+// 한국 시간 기준 날짜. UTC로 끊으면 하루 문서가 오전 9시(장 시작)에 바뀐다.
+function kstDay(ms = Date.now()) {
+  return new Date(ms + 9 * 3600 * 1000).toISOString().slice(0, 10);
 }
 
-/* 하루 열람 한도 차감. 한도 안이면 true.
+/* 열람 한 건을 남기고, 자동 수집 제한에 걸리는지 본다. 열 수 있으면 ok: true.
 
-   같은 종목을 다시 열 때는 차감하지 않는다. 새로고침·뒤로가기·다른 기기에서
-   다시 보기가 전부 한 건씩 깎으면, 사용자는 서로 다른 두 종목만 보고도
-   '한도 초과'를 만나게 된다. 그래서 횟수가 아니라 '오늘 본 종목'을 센다. */
-async function consumeDailyRead(db, uid, ticker, limit) {
-  const day = kstDay();
+   기록은 하루에 한 문서다(report_reads/{uid}_{날짜}). 한도가 없어진 뒤에도
+   남긴다 — 환불의 '이번 이용 기간에 열었는가'(viewedSince)와 회원 탈퇴 정리가
+   이 기록을 본다.
+     tickers   오늘 연 종목(처음 연 순서). 같은 종목을 다시 열면 늘지 않는다.
+     openedAt  그 종목들을 처음 연 시각. 자동 수집 제한은 최근 60분 안의 것만 센다.
+     lastAt    마지막으로 연 시각(다시 연 것도 넣는다). 결제한 날의 문서는 이 시각이
+               결제 시각 뒤인지로 '이번 기간에 열었는가'를 가른다. 다시 연 것을
+               안 남기면, 환불하고 같은 날 다시 결제한 사람이 아침에 본 종목을 다시
+               열어도 '이번 기간에는 안 열었다'가 되어 전액 환불이 열린다.
+
+   같은 종목을 다시 여는 것은 제한에 세지 않는다. 새로고침·뒤로 가기·다른 기기에서
+   다시 보기까지 한 건씩 세면, 사람이 읽는 속도로도 제한에 닿는다. 그래서 횟수가
+   아니라 '새로 연 종목'을 센다.
+
+   한 트랜잭션 안에서 읽고 쓴다. 두 창에서 동시에 열어도 창 안의 개수가 어긋나지
+   않는다. */
+async function recordRead(db, uid, ticker) {
+  const now = Date.now();
+  const day = kstDay(now);
   const ref = db.doc(`report_reads/${uid}_${day}`);
   return db.runTransaction(async (tx) => {
     const snap = await tx.get(ref);
-    const seen = (snap.exists && snap.data().tickers) || [];
-    const used = seen.length;
-    if (seen.includes(ticker)) return { ok: true, used };   // 오늘 이미 본 종목 — 추가 차감 없음
-    if (used >= limit) return { ok: false, used };
+    const d = (snap.exists && snap.data()) || {};
+    const seen = Array.isArray(d.tickers) ? d.tickers : [];
+    const opened = Array.isArray(d.openedAt) ? d.openedAt : [];
+    const stamp = { lastAt: now, updatedAt: admin.firestore.FieldValue.serverTimestamp() };
+    if (seen.includes(ticker)) {
+      tx.set(ref, stamp, { merge: true });   // 오늘 이미 연 종목 — 연 시각만 남긴다
+      return { ok: true, used: seen.length };
+    }
+    const win = BURST_WINDOW_MIN * 60 * 1000;
+    const recent = opened.filter((t) => typeof t === "number" && t > now - win).sort((a, b) => a - b);
+    if (recent.length >= BURST_MAX) {
+      /* 창에서 하나가 빠지면 다시 열린다. 그때까지 남은 시간을 함께 준다 —
+         화면이 '언제 다시' 를 말하고 싶을 때 쓴다. */
+      const waitMs = recent[recent.length - BURST_MAX] + win - now;
+      return { ok: false, used: seen.length, waitMs: Math.max(0, waitMs) };
+    }
     tx.set(ref, {
-      tickers: admin.firestore.FieldValue.arrayUnion(ticker),
+      uid, day,
+      tickers: [...seen, ticker],
+      openedAt: [...opened, now],
       count: seen.length + 1,
-      day,
-      uid,
-      updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+      ...stamp,
     }, { merge: true });
-    return { ok: true, used: used + 1 };
+    return { ok: true, used: seen.length + 1 };
   });
 }
 
-/* 오늘 몇 개를 썼는지. 화면이 '남은 개수'를 보여 주려면 필요하다.
-   report_reads 는 클라이언트가 읽지 못하게 막아 뒀으므로(firestore.rules) 서버가 준다.
+/* 자동 수집 제한 안내. 화면이 언어를 보내면(lang) 그 말로 준다 — 메일 횟수 제한
+   (mailQuotaMessage)과 같은 방식이다. */
+function burstMessage(lang) {
+  return lang === "en"
+    ? "You opened too many reports in a short time, so viewing is paused for a while. Please try again shortly."
+    : "짧은 시간에 리포트를 너무 많이 열어 열람이 잠시 제한되었습니다. 잠시 후 다시 이용하여 주시기 바랍니다.";
+}
+
+/* 오늘 연 종목 수. report_reads 는 클라이언트가 읽지 못하게 막아 뒀으므로
+   (firestore.rules) 서버가 준다.
 
    그냥 오늘 본 종목 수다. 구독별로 따로 세지 않는다 — 구독 기간이 겹치지
    않게(confirmBilling 이 이전 구독이 끝나는 시점부터 시작한다) 만들어 두었기
@@ -1959,6 +2005,7 @@ exports.getReport = onCall(
     }
     const uid = req.auth && req.auth.uid;
     if (!uid) throw new HttpsError("unauthenticated", "로그인이 필요합니다.");
+    const lang = (req.data && req.data.lang) === "en" ? "en" : "ko";
 
     const db = admin.firestore();
 
@@ -1969,24 +2016,22 @@ exports.getReport = onCall(
       throw new HttpsError("permission-denied", "멤버십이 필요합니다.");
     }
 
-    const plan = String(sub.plan || "").toLowerCase();
-    const limit = DAILY_LIMIT[plan];
-    if (!limit) {
-      console.error(`[getReport] 알 수 없는 요금제 plan=${sub.plan} uid=${uid}`);
-      throw new HttpsError("failed-precondition", "요금제 정보를 확인할 수 없습니다.");
-    }
+    /* 요금제는 하나라 이용 중인 구독이면 모두 같은 권리다. 옛 요금제 값(basic · pro)이
+       남은 구독도 막지 않는다 — 전에는 한도를 요금제 값으로 찾았기 때문에, 모르는
+       값이면 돈을 낸 사람을 '요금제를 확인할 수 없다' 로 막았다. */
+    const plan = planOf(sub.plan) || PLAN_ID;
 
-    // 리포트가 없으면 한도를 깎지 않는다 — 없는 종목을 눌러 한도를 잃으면 안 된다.
+    // 리포트가 없으면 기록하지 않는다 — 없는 종목을 눌러 제한의 한 칸을 쓰면 안 된다.
     const snap = await db.doc(`reports_paid/${ticker}`).get();
     if (!snap.exists) throw new HttpsError("not-found", "리포트를 찾을 수 없습니다.");
 
-    const use = await consumeDailyRead(db, uid, ticker, limit);
+    const use = await recordRead(db, uid, ticker);
     if (!use.ok) {
-      console.warn(`[getReport] 일일 한도(${plan}=${limit}) 초과 uid=${uid}`);
-      throw new HttpsError("resource-exhausted", "오늘 열람 한도를 모두 사용했습니다.");
+      console.warn(`[getReport] 자동 수집 제한(${BURST_WINDOW_MIN}분 ${BURST_MAX}종목) uid=${uid}`);
+      throw new HttpsError("resource-exhausted", burstMessage(lang), { waitMs: use.waitMs });
     }
 
-    return { ticker, paid: snap.data(), plan, limit, used: use.used };
+    return { ticker, paid: snap.data(), plan, used: use.used };
   }
 );
 
@@ -2222,8 +2267,10 @@ exports.deleteAccount = onCall(
 
   /* 탈퇴한다고 환불받을 권리가 사라지지는 않는다. 결제 후 7일 이내에 리포트를
      한 번도 열지 않았다면 전액 환불은 전자상거래법 제17조가 준 권리이고,
-     요금제 페이지에도 그렇게 적어 뒀다. '환불 신청' 버튼을 먼저 누르지 않았다는
-     이유로 돈을 가질 수는 없다. 그래서 여기서 같은 기준으로 계산해 먼저 돌려준다.
+     결제 화면에도 그렇게 적어 뒀다. 7일이 지났어도 이용일수와 위약금을 빼고
+     남는 돈이 있으면 돌려주기로 고지했다. '환불 신청' 버튼을 먼저 누르지 않았다는
+     이유로 돈을 가질 수는 없다. 그래서 환불 신청과 같은 계산(refundQuote)으로
+     먼저 돌려준다. 돌려줄 금액이 0원이면 돌려주지 않고 탈퇴만 한다.
 
      환불이 실패하면 탈퇴를 진행하지 않는다. 계정을 지운 뒤에 실패하면 당사자는
      로그인도 못 하는데 돈은 우리가 들고 있는 상태가 된다 — 되돌릴 방법이 없다.
@@ -2260,7 +2307,9 @@ exports.deleteAccount = onCall(
       }
       await subRef.set({
         status: "deleted",
-        cancelAtPeriodEnd: true, pendingPlan: null,
+        cancelAtPeriodEnd: true,
+        // 요금제 변경 예약(옛 기능)이 남은 문서면 함께 지운다.
+        pendingPlan: admin.firestore.FieldValue.delete(),
         billingKey: admin.firestore.FieldValue.delete(),
         customerKey: admin.firestore.FieldValue.delete(),
         card: admin.firestore.FieldValue.delete(),
@@ -2274,9 +2323,17 @@ exports.deleteAccount = onCall(
   /* 동의 기록. 동의 화면에서 "보유 기간: 회원 탈퇴 시까지"라고 알리고 받았으니
      탈퇴하면 지워야 한다. 클라이언트도 지우지만 창을 닫아 버리면 남는다. */
   try { await db.doc(`users/${uid}`).delete(); } catch (e) { console.warn("[delete] user doc", e && e.message); }
+  /* 열람 기록. 하루 한도를 없앤 뒤에도 리포트를 연 날마다 한 문서씩 쌓인다(환불의
+     '열람 여부'가 본다). 오래 쓴 회원은 200일을 넘기므로 200개씩 빌 때까지 지운다 —
+     한 번만 지우면 나머지가 탈퇴 뒤에 남는다. 50번(1만 개)에서 멈추는 것은 고리가
+     끝나지 않는 일을 막으려는 것이다. */
   try {
-    const reads = await db.collection("report_reads").where("uid", "==", uid).limit(200).get();
-    await Promise.all(reads.docs.map((d) => d.ref.delete()));
+    for (let round = 0; round < 50; round++) {
+      const reads = await db.collection("report_reads").where("uid", "==", uid).limit(200).get();
+      if (reads.empty) break;
+      await Promise.all(reads.docs.map((d) => d.ref.delete()));
+      if (reads.size < 200) break;
+    }
   } catch (e) { console.warn("[delete] reads", e && e.message); }
 
   /* 동의 이력. "보유 기간: 회원 탈퇴 시까지" 라고 알리고 받았으므로 이력에
@@ -2305,9 +2362,6 @@ exports.deleteAccount = onCall(
   await admin.auth().deleteUser(uid);
   return { ok: true, hadSubscription: !!(sub && sub.plan), refunded };
 });
-
-/* 오늘 남은 열람 수. 구독 관리 화면이 이걸로 '3 / 5개'를 보여 준다.
-   한도에 부딪히기 전에는 알 길이 없었다 — 다 쓰고 나서야 알려 주는 건 늦다. */
 
 /* ── 관리자 조회 ──────────────────────────────────────────────────
    동의를 받아 두기만 하고 볼 방법이 없으면 받지 않은 것과 크게 다르지 않다.
@@ -2791,14 +2845,16 @@ exports.adminUserList = onCall({ region: REGION, maxInstances: CAP_ADMIN, cors: 
   return { count: rows.length, truncated, rows };
 });
 
+/* 오늘 연 리포트 수. 하루 열람 한도를 없앤 뒤(2026-11-24)로는 '남은 개수'가 없다 —
+   구독 관리 화면이 오늘 연 종목 수를 보여 줄 때 쓴다. 배포 목록에 있는 함수라
+   지우지 않고 모양만 바꿨다(한도 칸 limit 을 뺐다 · {active, plan, used}). */
 exports.getUsage = onCall({ region: REGION, maxInstances: CAP_PUBLIC, cors: true }, async (req) => {
   const uid = req.auth && req.auth.uid;
   if (!uid) throw new HttpsError("unauthenticated", "로그인이 필요합니다.");
   const db = admin.firestore();
   const sub = (await db.doc(`subscriptions/${uid}`).get()).data() || null;
-  if (!subActive(sub)) return { active: false, used: 0, limit: 0 };
-  const plan = String(sub.plan || "").toLowerCase();
-  return { active: true, plan, limit: DAILY_LIMIT[plan] || 0, used: await usageOf(db, uid) };
+  if (!subActive(sub)) return { active: false, plan: null, used: 0 };
+  return { active: true, plan: planOf(sub.plan) || PLAN_ID, used: await usageOf(db, uid) };
 });
 
 /* ============================================================
@@ -2809,23 +2865,50 @@ exports.getUsage = onCall({ region: REGION, maxInstances: CAP_PUBLIC, cors: true
 
    Firestore
      subscriptions/{uid}      { status, plan, currentPeriodStart, currentPeriodEnd,
-                                cancelAtPeriodEnd, pendingPlan, billingKey, customerKey,
-                                card:{company,number}, startedAt, updatedAt }
-     payments/{uid}/items/{id}{ amount, description, status, paymentKey, orderId,
-                                plan, paidAt, createdAt }
+                                cancelAtPeriodEnd, billingKey, customerKey,
+                                card:{company,number}, startedAt, updatedAt,
+                                lastPaymentKey, periodPayments, refundDone, refundedAt }
+     payments/{uid}/items/{id}{ amount, description, kind, why, status, paymentKey,
+                                orderId, plan, paidAt, createdAt }
 
    ⚠️ 금액은 서버 표(PRICE)에서만 읽는다. 클라이언트가 보낸 금액은 쓰지 않는다.
    ⚠️ 구독 문서는 서버만 쓴다(firestore.rules 에서 클라이언트 쓰기 금지).
    ============================================================ */
 const { onSchedule } = require("firebase-functions/v2/scheduler");
 
-const PRICE = { basic: 9900, pro: 14900 };        // pricing.html·payment-config.js 와 같아야 한다
-const PLAN_NAME = { basic: "BASIC", pro: "PRO" };
-const REFUND_FEE_RATE = 0.10;                     // 서비스 수수료 10% (요금제 페이지 고지)
-/* 카드로 이 금액 미만은 결제할 수 없다(토스 제한). staging/payment-config.js
-   의 MIN_CHARGE 와 같아야 한다 — 다르면 미리보기에서 되던 게 실제에서 막힌다. */
+/* 요금제는 하나다(2026-11-24 사장 "요금제는 1개 14900원"). 월 14,900원(부가가치세 포함) ·
+   1개월 단위 정기결제(결제일부터 한 달 — addMonth). BASIC(9,900원 · 하루 5종목) ·
+   PRO(14,900원 · 하루 15종목)와 요금제 변경(업그레이드 차액 결제 · 다운그레이드 예약
+   pendingPlan · changePlan)을 없앴다. 금액은 결제 화면(staging/payment-config.js)·약관 ·
+   금융감독원에 낸 신고 서류와 같아야 한다.
+   PRICE 는 한 줄로 둔다 — 스테이징 검사가 이 줄을 읽어 화면의 요금과 견준다. */
+const PRICE = { member: 14900 };
+const PLAN_ID = "member";
+const PLAN_NAME = { member: "멤버십" };
+/* 요금제를 하나로 합치기 전의 id. 구독 문서나 옛 결제 화면이 이 값을 보내도 member 로
+   받는다 — PRICE["basic"] 처럼 없는 칸을 읽으면 금액이 undefined 가 되어, 청구는
+   카드사 앞에서 멈추고(charge) 환불은 받은 돈을 0원으로 센다. */
+const LEGACY_PLAN = { basic: "member", pro: "member" };
+
+/* 요금제 id 를 읽는다. 아는 값이면 그 id, 옛 id 면 member, 그 밖에는 null.
+   null 을 받은 자리는 요금제를 모르는 것으로 다룬다 — 청구하는 자리에서는 금액이
+   비어 charge 가 카드사를 부르기 전에 멈추고, 열람 · 화면 표시는 member 로 읽는다
+   (이용 중인 구독이면 요금제와 관계없이 같은 권리다). 구독 문서는 서버만 쓰므로
+   모르는 값이 생길 일은 없지만, 생기면 돈은 움직이지 않고 기록이 남는 쪽을 고른다. */
+function planOf(p) {
+  const id = String(p == null ? "" : p).trim().toLowerCase();
+  return PRICE[id] ? id : (LEGACY_PLAN[id] || null);
+}
+
+/* 위약금 = 결제금액의 10%(7일이 지난 뒤의 환불 · 약관과 결제 화면에 고지). 정수 백분율로
+   둔다 — 0.10 을 곱하면 금액에 따라 소수점 아래가 모자라 1원이 깎일 수 있다. */
+const REFUND_PENALTY_PCT = 10;
+/* 결제일부터 이 날 수까지는 '7일 이내'(결제한 날은 세지 않는다 — 회원에게 유리한 쪽).
+   이 안에서 유료 영역을 열지 않았으면 전액, 열었으면 이용일수만 빼고 돌려준다. */
+const REFUND_WINDOW_DAYS = 7;
+/* 카드로 이 금액 미만은 결제할 수 없다(토스 제한). 청구 금액의 마지막 관문으로 둔다
+   (charge 설명 참고). */
 const MIN_CHARGE = 100;
-const FREE_WITHDRAW_DAYS = 7;                     // 미열람 시 전액 환불 기간
 
 /* 카드가 거절된 뒤 며칠째에 다시 시도하는가(첫 실패로부터).
 
@@ -2923,10 +3006,13 @@ function addMonth(from) {
   if (d.getDate() !== day) d.setDate(0);
   return d;
 }
-const days = (ms) => ms / 86400000;
+/* 결제 화면이 보낸 요금제. 고를 것이 하나뿐이라 비어 있으면 member 다. 옛 결제 화면이
+   basic · pro 를 보내도 member(월 14,900원)로 받는다 — 금액은 언제나 서버 표(PRICE)에서
+   읽는다. 그 밖의 값은 거절한다. */
 function planOrThrow(p) {
-  const id = String(p || "").toLowerCase();
-  if (!PRICE[id]) throw new HttpsError("invalid-argument", "요금제를 확인할 수 없습니다.");
+  if (p == null || p === "") return PLAN_ID;
+  const id = planOf(p);
+  if (!id) throw new HttpsError("invalid-argument", "요금제를 확인할 수 없습니다.");
   return id;
 }
 function uidOrThrow(req) {
@@ -2998,12 +3084,13 @@ if (PAYMENTS_LIVE) exports.listPayments = onCall(
    ⚠️ 설명 문장을 한국어로 굳혀 저장하면 영어 화면에서 번역할 방법이 없다.
       화면이 언어에 맞춰 문구를 만들 수 있도록 kind 를 준다. description 은
       관리자 화면·로그에서 사람이 읽기 위한 값으로만 남겨 둔다. */
-/* 이번 결제 주기에 실제로 받은 돈. 환불은 이 합계를 기준으로 계산하고, 이
-   건들을 취소해 돌려준다 — 요금제의 정가가 아니다.
+/* 이번 이용 기간에 실제로 받은 돈. 환불은 이 합계를 기준으로 계산하고(환불 계산의 P),
+   이 건들을 취소해 돌려준다 — 요금제의 정가가 아니다.
 
-   업그레이드하면 한 주기에 결제가 둘이 된다(월 구독 + 차액). 정가를 기준으로
-   삼으면 받지도 않은 돈을 기준으로 환불액을 내고, 취소할 때는 그중 한 건만
-   가리키게 되어 카드사가 거절한다. */
+   요금제가 하나라 보통은 월 구독 한 건(14,900원)이다. 그래도 정가를 다시 쓰지 않는다.
+   정가를 바꾸는 날 옛 가격으로 결제한 기간이 남고, 그 기간에 정가를 기준으로 삼으면
+   받지도 않은 돈을 기준으로 환불액을 낸다. 요금제를 하나로 합치기 전에 업그레이드
+   차액을 낸 기간은 결제가 두 건이다(월 구독 + 차액) — 둘 다 받은 돈이다. */
 const paidThisPeriod = (sub) =>
   ((sub && sub.periodPayments) || []).reduce((a, e) => a + (e.amount || 0), 0);
 
@@ -3012,38 +3099,11 @@ function refundSources(sub) {
   const list = ((sub && sub.periodPayments) || [])
     .filter((e) => e && e.key && e.amount > 0);
   if (list.length) return list.slice().reverse();
-  // periodPayments 가 붙기 전에 만들어진 구독. 있는 것으로 최선을 다한다.
+  /* periodPayments 가 붙기 전에 만들어진 구독. 월 구독 한 건이 기간 전체를 산 것으로
+     본다 — 환불 계산의 P 도 이때는 정가(14,900원)다. 구독 문서의 옛 요금제 값으로
+     정가를 찾으면(PRICE["basic"]) 0원이 되어 취소할 몫이 없다. */
   return sub && sub.lastPaymentKey
-    ? [{ key: sub.lastPaymentKey, amount: PRICE[sub.plan] || 0 }] : [];
-}
-
-/* 아직 안 쓴 돈. 결제 건마다 그 돈이 사는 기간이 다르므로 따로 센다.
-
-   월 구독은 주기 전체를 산다. 업그레이드 차액은 '그날부터 주기 끝까지' 만
-   산다 — 청구할 때 남은 일수로 나눠 받았으니 돌려줄 때도 같은 기간으로
-   나눠야 한다.
-
-     BASIC 9,900원(31일) → 7일 쓰고 PRO 로 올림(차액 3,870원) → 바로 환불
-
-       한 덩어리로 세면   13,770 × 24/31        = 10,661 → 수수료 빼고 9,594
-       건마다 세면        9,900 × 24/31 = 7,665
-                          3,870 × 24/24 = 3,870  = 11,535 → 수수료 빼고 10,381
-
-   한 덩어리로 세면 차액에서도 7일을 뺀다. 그런데 그 7일 동안 이 사람은
-   BASIC 을 썼지 PRO 를 쓴 적이 없다. 쓰지 않은 날의 값을 받는 셈이라 787원을
-   덜 돌려주게 된다. */
-function unusedOf(sub, startMs, endMs, usedUntilDay) {
-  const endDay = kstDayNo(endMs);
-  const list = ((sub && sub.periodPayments) || []).length
-    ? sub.periodPayments
-    // 옛 구독. 월 구독 한 건이 주기 전체를 산 것으로 본다.
-    : [{ amount: PRICE[sub.plan] || 0, from: startMs }];
-  return list.reduce((sum, p) => {
-    const fromDay = kstDayNo(p.from || startMs);
-    const win = Math.max(1, endDay - fromDay);                 // 그 돈이 사는 날 수
-    const left = Math.max(0, endDay - Math.max(fromDay, usedUntilDay));
-    return sum + (p.amount || 0) * Math.min(1, left / win);
-  }, 0);
+    ? [{ key: sub.lastPaymentKey, amount: PRICE[PLAN_ID] }] : [];
 }
 
 async function charge(db, uid, sub, amount, description, tag, kind, idem) {
@@ -3052,15 +3112,22 @@ async function charge(db, uid, sub, amount, description, tag, kind, idem) {
      'amount < MIN_CHARGE' 만으로는 못 막는다 — undefined 와 NaN 은 어떤 수와
      비교해도 false 라 그 관문을 그냥 지나가고, 그대로 카드사로 나간다.
      PRICE[plan] 이 undefined 가 되는 경우(구독 문서의 plan 이 우리가 아는 값이
-     아닐 때)가 그렇게 새는 길이다. 조용히 넘기지 않고 소리 내어 멈춘다. */
+     아닐 때 — planOf 가 null)가 그렇게 새는 길이다. 조용히 넘기지 않고 소리 내어
+     멈춘다. */
   if (!Number.isFinite(amount)) {
     console.error("[charge] 금액이 숫자가 아니다", uid, tag, amount);
     throw new HttpsError("internal", "결제 금액을 계산하지 못했습니다.");
   }
-  /* 100원 미만은 청구를 건너뛰고 넘어간다. 업그레이드 차액은 남은 기간에
-     비례하므로 주기 마지막 날에는 몇십 원이 된다. 그대로 토스에 보내면
-     거절당해 플랜 변경 자체가 실패한다 — 몇십 원 받자고 기능을 막는 셈이다. */
-  if (amount < MIN_CHARGE) return null;
+  /* 최소 결제 금액보다 작으면 청구하지 않고 멈춘다.
+
+     요금제 변경을 없앤 뒤로 청구는 언제나 요금제 정가다. 전에는 업그레이드 차액이
+     기간 마지막 날 몇십 원이 되는 경우를 위해 '청구를 건너뛰고 넘어가기'(null)를
+     두었는데, 이제 이 관문에 닿는 금액은 계산이 틀린 것뿐이다. 건너뛰고 넘어가면
+     결제 없이 한 달이 열린다. */
+  if (amount < MIN_CHARGE) {
+    console.error("[charge] 최소 결제 금액보다 작다", uid, tag, amount);
+    throw new HttpsError("internal", "결제 금액을 계산하지 못했습니다.");
+  }
   /* orderId 에는 시각이 들어가 매번 달라진다. 두 번째 요청을 막는 이름은
      따로 받는다 — idem 이 없으면 토스는 재시도도 새 결제로 받는다. */
   const pay = await toss(`/billing/${sub.billingKey}`, {
@@ -3070,7 +3137,7 @@ async function charge(db, uid, sub, amount, description, tag, kind, idem) {
     orderName: description,
   }, idem);
   await writePayment(db, uid, {
-    amount, description, kind: kind || (tag === "up" ? "upgrade" : "subscription"),
+    amount, description, kind: kind || "subscription",
     status: "paid", plan: sub.plan,
     paymentKey: pay.paymentKey, orderId: pay.orderId,
     paidAt: pay.approvedAt || new Date().toISOString(),
@@ -3129,15 +3196,12 @@ if (PAYMENTS_LIVE) exports.confirmBilling = onCall(
         // 카드만 갈아 끼우고 끝내면 다음 배치가 돌 때까지 하루를 잠긴 채로 둔다.
         if (cur.status === "past_due") {
           const at = new Date();
-          /* 예약해 둔 플랜 변경을 여기서 적용한다.
-
-             다운그레이드는 '다음 결제일부터' 다. 그 다음 결제일이 바로 결제가
-             거절된 그날이므로, 되살릴 때 적용해야 할 플랜은 예약해 둔 쪽이다.
-             옛 플랜으로 청구하면 BASIC 으로 내리겠다고 예약한 사람에게 PRO
-             값을 받고 PRO 를 그대로 물려 놓는 셈이 된다. 갱신 배치와 재시도
-             배치는 이미 pendingPlan 을 보고 있었는데, 카드 재등록으로 되살리는
-             이 길만 옛 플랜을 보고 있었다. */
-          const nextPlan = PRICE[cur.pendingPlan] ? cur.pendingPlan : cur.plan;
+          /* 요금제는 하나다. 구독 문서에 옛 요금제 값(basic · pro)이 남아 있어도
+             member 정가(14,900원)로 받는다 — 갱신 배치 · 재시도 배치와 같은 기준이다.
+             예전에는 여기서 예약해 둔 다운그레이드(pendingPlan)를 적용했다. 요금제
+             변경을 없애면서 그 칸은 읽지 않고 아래에서 지운다. 모르는 값이면 금액이
+             비어 charge 가 카드사를 부르기 전에 멈춘다(planOf 설명). */
+          const nextPlan = planOf(cur.plan);
           /* 멱등 이름에 카드(빌링키)를 섞는다.
 
              날짜만으로 지으면 같은 날 카드 A 로 실패한 뒤 카드 B 로 다시 걸 때
@@ -3153,7 +3217,7 @@ if (PAYMENTS_LIVE) exports.confirmBilling = onCall(
             `retry_${uid}_${kstDay()}_${String(re.billingKey).slice(-12)}`);
           patch.status = "active";
           patch.plan = nextPlan;
-          patch.pendingPlan = null;
+          patch.pendingPlan = admin.firestore.FieldValue.delete();
           patch.currentPeriodStart = admin.firestore.Timestamp.fromDate(at);
           patch.currentPeriodEnd = admin.firestore.Timestamp.fromDate(addMonth(at));
           patch.lastPaymentKey = pay ? pay.paymentKey : null;
@@ -3170,8 +3234,8 @@ if (PAYMENTS_LIVE) exports.confirmBilling = onCall(
           patch.retryCount = admin.firestore.FieldValue.delete();
         }
         await ref.set(patch, { merge: true });
-        // 되살렸으면 실제로 적용된 플랜을 돌려준다 — 예약해 둔 변경이 여기서 반영된다.
-        return { ok: true, plan: patch.plan || cur.plan, updated: true };
+        // 되살렸으면 그때 적은 요금제(member)를 돌려준다 — 옛 값이 여기서 member 로 바뀐다.
+        return { ok: true, plan: patch.plan || planOf(cur.plan) || PLAN_ID, updated: true };
       }
 
       /* 이용 중인 구독 위에 또 결제하지 않는다. 돈을 두 번 받는 자리다.
@@ -3184,7 +3248,7 @@ if (PAYMENTS_LIVE) exports.confirmBilling = onCall(
          해지 예약(cancelAtPeriodEnd)은 예외가 아니다. 한때 열어 뒀는데,
          그러면 이런 일이 난다 —
 
-           1일  BASIC 결제(1일~31일)
+           1일  결제(1일~31일)
            5일  해지 예약. 31일까지는 그대로 이용한다.
            7일  결제 화면으로 들어와 다시 결제
 
@@ -3195,8 +3259,7 @@ if (PAYMENTS_LIVE) exports.confirmBilling = onCall(
          첫 달 값을 영영 돌려받지 못한다.
 
          해지 예약을 되돌리는 길은 이미 있다 — 구독 관리의 '해지 취소'
-         (resumeSubscription)다. 공짜이고 즉시 반영된다. 플랜을 바꾸려는
-         것이라면 changePlan 이 해지 예약도 함께 푼다. 결제가 필요한 길은
+         (resumeSubscription)다. 공짜이고 즉시 반영된다. 결제가 필요한 길은
          하나도 없으므로, 여기서는 막고 그쪽으로 안내한다. */
       if (subActive(cur) && !cur.refundedAt) {
         throw new HttpsError("already-exists", cur.cancelAtPeriodEnd
@@ -3207,34 +3270,30 @@ if (PAYMENTS_LIVE) exports.confirmBilling = onCall(
       const issued = await toss("/billing/authorizations/issue", { authKey, customerKey });
       const now = new Date();
 
-      /* 이용은 지금부터. 이전 구독과 겹치는 하루는 기간 끝에 붙여 돌려준다.
+      /* 이용은 지금부터. 이전 구독과 겹치는 시간은 기간 끝에 붙여 돌려준다.
 
-         환불한 날 다시 시작하는 사람이 여기로 온다. 오늘 리포트를 봤다면 오늘
-         요금은 이미 환불에서 차감했고, 그 구독은 오늘 자정까지 살아 있다.
-         거기에 새 구독까지 오늘부터 시작하니 같은 하루를 두 번 내는 셈이다.
+         환불한 날 다시 시작하는 사람이 여기로 온다. 이용일수를 뺀 환불(7일 이내
+         열람 · 7일 경과)은 오늘을 이용일로 넣어 오늘 값을 받았고, 그 구독은 오늘
+         자정까지 살아 있다. 거기에 새 구독까지 오늘부터 시작하니 같은 하루를 두 번
+         내는 셈이다.
 
-         그 하루를 앞에서 빼지 않고 뒤에 붙인다.
+         그 시간을 앞에서 빼지 않고 뒤에 붙인다.
 
            start  지금
            end    addMonth(이전 구독이 끝나는 시점)   ← 겹친 만큼 뒤로 밀린다
 
-           BASIC 2건 보고 환불 → PRO 재결제
-             오늘    PRO 한도로 13건 더. 오늘 총 15건 — 한도 그대로.
-             기간    오늘부터 다음 달 그날 + 하루
+           9월 1일 14시 이용일수를 뺀 환불 → 같은 날 15시 다시 결제
+             오늘    바로 열린다(새 구독도 지금부터다).
+             기간    9월 2일 0시를 기준으로 한 달 — 10월 2일 0시까지.
+                     오늘 남은 시간만큼 뒤에서 더 받는다.
 
-           PRO 15건 다 보고 환불 → PRO 재결제
-             오늘    이미 다 썼으므로 0건.
-             기간    31일. 오늘 하루를 못 쓴 만큼 뒤에서 하루를 더 받는다.
-                     실제로 쓸 수 있는 날 수는 30일로 같다.
+         앞에서 빼는 방식(새 구독을 내일 0시부터 시작)도 날 수는 맞지만, 결제한
+         사람이 아직 시작하지 않은 기간을 들고 있게 된다. 환불의 '결제일부터 7일'과
+         '이번 기간에 열었는가'가 결제 시각이 아니라 다음 날 0시부터 세어진다.
+         뒤에 붙이면 기간은 언제나 결제 시각에서 시작한다.
 
-         앞에서 빼는 방식(새 구독을 내일부터 시작)도 계산은 맞지만, 구독 문서가
-         '오늘까지는 옛 플랜, 내일부터 새 플랜' 두 겹을 들고 있어야 한다. 한도를
-         판정하는 자리가 세 곳(서버·미리보기·화면)이라 한 곳만 놓쳐도 화면 숫자와
-         실제로 열리는 개수가 어긋난다 — 실제로 그렇게 어긋난 적이 있다.
-         뒤에 붙이면 판정할 것이 하나도 늘지 않는다.
-
-         이전 구독이 이미 끝났으면(오늘 한 건도 안 봐서 환불과 동시에 닫힌
-         경우, 또는 처음 가입) 겹치는 하루가 없으므로 그냥 한 달이다 — max 가
+         이전 구독이 이미 끝났으면(청약철회로 전액을 돌려주며 그 자리에서 닫힌
+         경우, 또는 처음 가입) 겹치는 시간이 없으므로 그냥 한 달이다 — max 가
          그 두 갈래를 한 줄로 처리한다. */
       const prevEnd = cur && cur.currentPeriodEnd ? cur.currentPeriodEnd.toMillis() : 0;
       const start = now;
@@ -3252,7 +3311,8 @@ if (PAYMENTS_LIVE) exports.confirmBilling = onCall(
         currentPeriodStart: admin.firestore.Timestamp.fromDate(start),
         currentPeriodEnd: admin.firestore.Timestamp.fromDate(end),
         cancelAtPeriodEnd: false,
-        pendingPlan: null,
+        // 요금제 변경 예약(옛 기능)이 남은 문서면 함께 지운다.
+        pendingPlan: admin.firestore.FieldValue.delete(),
         /* 환불하고 다시 시작한 경우엔 시작일도 새로 본다. 지난 구독은 돈까지
            돌려주고 끝냈는데 '구독 시작일' 만 그때로 남으면 이어진 것처럼 읽힌다. */
         startedAt: (cur && !cur.refundedAt && cur.startedAt) || admin.firestore.Timestamp.fromDate(start),
@@ -3263,7 +3323,7 @@ if (PAYMENTS_LIVE) exports.confirmBilling = onCall(
           ? [{ key: pay.paymentKey, amount: PRICE[plan], from: start.getTime() }] : [],
         /* 지난 구독이 남긴 표시를 전부 지운다. merge 로 쓰기 때문에 안 지우면
            그대로 붙어 있는다 — 특히 refundedAt 이 남으면 방금 결제한 구독이
-           '환불 완료' 로 보이고, 해지·플랜 변경·환불이 전부 막힌다.
+           '환불 완료' 로 보이고, 해지·환불이 전부 막힌다.
            환불한 날 다시 시작하는 사람이 바로 여기로 온다. */
         refundedAt: admin.firestore.FieldValue.delete(),
         canceledAt: admin.firestore.FieldValue.delete(),
@@ -3284,93 +3344,21 @@ if (PAYMENTS_LIVE) exports.confirmBilling = onCall(
   }
 );
 
-/* ── 2) 플랜 변경 ─────────────────────────────────────────────
-   업그레이드는 즉시 적용하고 남은 기간만큼 차감해 차액만 받는다(결제일 유지).
-   다운그레이드는 다음 결제일부터 — 즉시 내리면 환불이 생기고, 남은 기간
-   PRO 를 이미 쓴 사람에게 돈을 돌려주는 구조가 된다.
-
-   ⚠️ 해지 예약과 플랜 변경 예약은 함께 둘 수 없다. renewSubscriptions 는
-      cancelAtPeriodEnd 를 먼저 보고 끝내므로, 둘 다 걸려 있으면 해지가 이기고
-      예약해 둔 변경은 조용히 사라진다. 화면에는 둘 다 예약된 것처럼 보이니
-      그건 거짓말이 된다. 게다가 업그레이드는 그 자리에서 차액을 받는데 며칠
-      뒤 구독이 닫히면 돈만 받고 닫는 꼴이다.
-      다음 달 쓸 플랜을 고르는 건 계속 쓰겠다는 뜻이므로, 여기서 해지 예약을 푼다
-      (반대로 해지를 누르면 cancelSubscription 이 변경 예약을 지운다).
+/* ── 2) 요금제 변경 — 없앴다(2026-11-24) ────────────────────────
+   요금제가 하나라 바꿀 것이 없다. 업그레이드(남은 기간의 차액을 바로 결제) ·
+   다운그레이드(다음 결제일부터 바꾸는 예약 pendingPlan)와 그 함수(changePlan)를
+   지웠다. 옛 구독 문서에 pendingPlan 이 남아 있어도 아무 데서도 읽지 않고, 구독을
+   다시 쓰는 자리(결제 · 갱신 · 재시도 · 해지 · 환불 · 탈퇴)에서 지운다.
    ─────────────────────────────────────────────────────────── */
-if (PAYMENTS_LIVE) exports.changePlan = onCall(
-  { region: REGION, maxInstances: CAP_PUBLIC, cors: true, secrets: [TOSS_SECRET_KEY] },
-  async (req) => {
-    const uid = uidOrThrow(req);
-    const next = planOrThrow(req.data && req.data.plan);
-    const db = admin.firestore();
-    const ref = db.doc(`subscriptions/${uid}`);
-
-    return withLock(db, ref, "plan", async () => {
-      const sub = (await ref.get()).data();
-      if (!subActive(sub)) throw new HttpsError("failed-precondition", "이용 중인 구독이 없습니다.");
-      if (refundedAlready(sub)) throw new HttpsError("failed-precondition", "환불이 완료된 구독입니다.");
-      if (sub.plan === next && !sub.pendingPlan) {
-        throw new HttpsError("already-exists", "이미 해당 플랜을 이용 중입니다.");
-      }
-
-      if (PRICE[next] > PRICE[sub.plan]) {
-        const endMs = sub.currentPeriodEnd.toMillis();
-        const startMs = sub.currentPeriodStart ? sub.currentPeriodStart.toMillis() : endMs - 30 * 86400000;
-        const total = Math.max(1, days(endMs - startMs));
-        const left = Math.max(0, days(endMs - Date.now()));
-        // 남은 기간에 해당하는 두 요금의 차액. 원 단위 절사(사용자에게 유리하게).
-        const diff = Math.floor((PRICE[next] - PRICE[sub.plan]) * (left / total));
-        /* 결제 기록에 적히는 플랜은 charge 안에서 sub.plan 으로 정해진다. 여기에
-           올리기 전 구독을 그대로 넘기면 'PRO 업그레이드 차액' 이라는 설명 옆에
-           plan 은 BASIC 으로 남는다 — 내역을 보면 앞뒤가 안 맞는다.
-           미리보기는 올린 뒤 플랜으로 적고 있었다(서버만 달랐다). */
-        const pay = await charge(db, uid, { ...sub, plan: next }, diff,
-          `${PLAN_NAME[next]} 업그레이드 차액`, "up", null,
-          `up_${uid}_${next}_${kstDay()}`);
-        await ref.set({
-          plan: next, pendingPlan: null,
-          // 해지 예약과 함께 둘 수 없다 — 아래 설명 참고.
-          cancelAtPeriodEnd: false, canceledAt: null,
-          /* 차액도 이번 주기에 받은 돈이다. 안 적으면 환불이 월 구독 한 건만
-             보고 계산하고, 차액은 돌려주지 않은 채로 끝난다. */
-          periodPayments: pay
-            ? [...((sub.periodPayments) || []),
-               // 차액은 '지금부터 주기 끝까지' 를 산다. 그 값으로 청구했으니
-               // 환불도 그 기간으로 나눠야 한다.
-               { key: pay.paymentKey, amount: diff, from: Date.now() }]
-            : (sub.periodPayments || []),
-          updatedAt: admin.firestore.FieldValue.serverTimestamp(),
-        }, { merge: true });
-        /* 실제로 청구한 금액을 돌려준다. 100원 미만이면 청구를 건너뛰었으므로
-           0원이다 — diff 를 그대로 주면 화면이 받지도 않은 돈을 안내한다. */
-        return { ok: true, plan: next, charged: pay ? diff : 0 };
-      }
-
-      // 지금 쓰는 플랜을 다시 고르는 건 '예약 취소'다. 그대로 넣으면 예약이
-      // 남아 화면에 '9월 8일부터 PRO' 같은 말이 계속 붙는다.
-      const pending = next === sub.plan ? null : next;
-      await ref.set({
-        pendingPlan: pending,
-        cancelAtPeriodEnd: false, canceledAt: null,
-        updatedAt: admin.firestore.FieldValue.serverTimestamp(),
-      }, { merge: true });
-      return { ok: true, pendingPlan: pending, resumed: !!sub.cancelAtPeriodEnd };
-    });
-  }
-);
 
 /* ── 3) 해지 / 해지 취소 ─────────────────────────────────────
    해지는 '지금 끊기'가 아니라 '갱신 안 함'이다. 이미 결제한 기간은 그대로 쓴다.
    ─────────────────────────────────────────────────────────── */
 /* 돈이 나가지는 않지만 자물쇠를 잡는다.
 
-   해지와 플랜 변경은 함께 둘 수 없는 예약이다(위 changePlan 설명). 그런데
-   두 요청이 겹치면 '해지 예약 + 플랜 변경 예약' 이라는, 있어서는 안 되는
-   상태가 만들어진다 — 갱신 배치는 해지를 먼저 보고 끝내므로 예약해 둔 변경은
-   조용히 사라지고, 화면에는 둘 다 예약된 것처럼 보인다.
-
-   결제와도 겹친다. 새 구독을 만드는 사이에 해지가 들어오면 방금 결제한 구독이
-   해지 예약된 채로 시작한다. */
+   결제와 겹친다. 새 구독을 만드는 사이에 해지가 들어오면 방금 결제한 구독이
+   해지 예약된 채로 시작한다. 환불 · 갱신과도 겹친다 — 환불이 구독을 닫는
+   사이에 해지 예약이 끼어들면 두 쓰기가 서로의 값을 덮는다. */
 if (PAYMENTS_LIVE) exports.cancelSubscription = onCall({ region: REGION, maxInstances: CAP_PUBLIC, cors: true }, async (req) => {
   const uid = uidOrThrow(req);
   const db = admin.firestore();
@@ -3388,24 +3376,26 @@ if (PAYMENTS_LIVE) exports.cancelSubscription = onCall({ region: REGION, maxInst
        받지 못했으므로, 남겨서 지킬 이용 기간이 없다. */
     if (sub && sub.status === "past_due") {
       await ref.set({
-        status: "expired", cancelAtPeriodEnd: true, pendingPlan: null,
+        status: "expired", cancelAtPeriodEnd: true,
+        pendingPlan: admin.firestore.FieldValue.delete(),   // 옛 요금제 변경 예약
         canceledAt: admin.firestore.FieldValue.serverTimestamp(),
         // 재시도 일정을 지운다. 남으면 배치가 이 문서를 다시 집을 근거가 된다.
         failedAt: admin.firestore.FieldValue.delete(),
         retryCount: admin.firestore.FieldValue.delete(),
         updatedAt: admin.firestore.FieldValue.serverTimestamp(),
       }, { merge: true });
-      return { ok: true, droppedPlan: null, stopped: true };
+      return { ok: true, stopped: true };
     }
     if (!subActive(sub)) throw new HttpsError("failed-precondition", "이용 중인 구독이 없습니다.");
     if (refundedAlready(sub)) throw new HttpsError("failed-precondition", "환불이 완료된 구독입니다.");
+    /* 응답에 droppedPlan('취소된 변경 예약')을 더는 싣지 않는다 — 요금제 변경이
+       없어져 취소될 예약이 없다. 옛 문서에 남은 예약 칸은 여기서 지운다. */
     await ref.set({
       cancelAtPeriodEnd: true, canceledAt: admin.firestore.FieldValue.serverTimestamp(),
-      // 해지하면 다음 결제 자체가 없다 — 예약해 둔 플랜 변경은 의미가 없다.
-      pendingPlan: null,
+      pendingPlan: admin.firestore.FieldValue.delete(),
       updatedAt: admin.firestore.FieldValue.serverTimestamp(),
     }, { merge: true });
-    return { ok: true, droppedPlan: sub.pendingPlan || null };
+    return { ok: true };
   });
 });
 
@@ -3427,88 +3417,137 @@ if (PAYMENTS_LIVE) exports.resumeSubscription = onCall({ region: REGION, maxInst
 });
 
 /* ── 4) 환불 ─────────────────────────────────────────────────
-   요금제 페이지에 고지한 기준 그대로 계산한다. 문구와 계산이 어긋나면
-   그건 그냥 거짓말이 된다.
-     · 리포트 미열람 + 7일 이내  → 전액
-     · 리포트 미열람 + 7일 경과  → 잔여 기간분 − 수수료 10%
-     · 리포트 열람              → 이용 일수 차감 후 − 수수료 10%
+   약관 · 결제 화면 · 자주 묻는 질문에 고지한 기준 그대로 계산한다(2026-11-24 사장
+   "7일 이내 환불할 때는 이용일수만 차감하고 환불. 7일 이후 환불은 이용일수 차감하고
+   결제가격의 10%만큼 떼고 환불"). 문구와 계산이 어긋나면 그건 그냥 거짓말이 된다.
+   시연(staging/demo-backend.js)도 같은 식을 쓴다.
 
-   오늘 하루를 셀지 말지는 '오늘 리포트를 열었는가' 가 정한다.
+     P         이번 이용 기간에 실제로 받은 금액(paidThisPeriod · 없으면 정가 14,900원)
+     total     그 이용 기간의 일수 = 끝나는 날 − 시작한 날(한국 시간 날짜 · 28~31일)
+     elapsed   오늘 − 시작한 날
+     usedDays  시작한 날부터 환불을 신청한 날까지(둘 다 넣는다) = min(total, elapsed + 1)
+     fee       이용한 날의 이용료 = floor(P × usedDays ÷ total)
+               — 빼는 돈이라 1원 미만은 버린다(회원에게 유리한 쪽)
+     penalty   위약금 = floor(P × 10%) — 14,900원이면 1,490원
 
-     오늘 0건    오늘 값을 받지 않는다 → 이용은 지금 끝난다
-     오늘 1건+   오늘 값을 받는다     → 이용은 오늘 자정까지
+     결제일부터 7일 이내(elapsed ≤ 7 — 결제한 날은 세지 않는다)
+       · 유료 영역을 열지 않았다   P(전액)                    why withdraw  이용은 지금 끝난다
+       · 열었다                    P − fee                    why early     이용은 오늘 자정까지
+     7일이 지났다                  max(0, P − fee − penalty)  why late      이용은 오늘 자정까지
 
-   여태 경과 시간을 초 단위로 나눠 썼다(9.375일). 그런데 우리가 파는 단위는
-   하루다 — 하루 5건, 한국 시간 자정 리셋. 쪼갤 수 없는 것을 소수로 차감하니
-   양쪽 다 어긋났다.
+     예(30일 기간 · 14,900원)  3일째 · 열람 있음 13,410원 / 10일째 8,444원 /
+                               27일째 0원(환불 없음) / 2일째 · 열람 없음 14,900원
 
-     오전 9시에 한 건도 안 보고 환불   오늘 값 0.375일을 내고 5건은 못 봄
-     오전 9시에 5건 다 보고 환불       하루치를 다 쓰고 0.375일만 냄
+   오늘을 이용일로 넣었으면(early · late) 오늘은 끝까지 쓰게 둔다. 돈과 이용 기간이
+   같은 하루를 가리켜야 한다 — 오늘 값을 받아 놓고 이용을 끊으면 대가는 받고 물건은
+   회수하는 셈이다. 전액을 돌려주는 청약철회는 지금 끝낸다.
 
-   밤 11시 50분에 한 건도 안 보고 환불하면 오늘 값을 거의 다 내고 아무것도
-   못 보는데, 그게 가장 이상했다.
+   계산한 금액이 0원이면 돌려줄 것이 없다. 환불 신청은 실행하지 않고(requestRefund 가
+   거절한다) 회원에게 더 청구하지도 않는다. 해지하면 다음 결제일부터 이용료가
+   청구되지 않는다 — 화면이 미리 보기(refundPreview)에서 그렇게 안내한다.
 
-   요금제 페이지에는 처음부터 '이용하신 일수를 차감' 이라고 적어 두었다.
-   고지는 일수인데 계산이 초였다 — 이제 적어 둔 대로 센다.
+   전에는 하루 열람 한도에 맞춰 '오늘 리포트를 열었는가' 로 오늘을 셀지 정했고, 7일이
+   지나면 남은 기간분에서 수수료 10%를 뗐다(9,900원 · 30일 · 10일째 → 5,940원). 요금제를
+   하나로 합치며 위 기준으로 바꿨다. 옛 결제 내역의 환불 사유(why: used · left)는 화면이
+   이름표로 읽는다.
    ─────────────────────────────────────────────────────────── */
 const KST_OFFSET = 9 * 3600 * 1000;
 /* 한국 시간 기준으로 며칠째인가(1970-01-01 = 0). 날짜끼리 빼면 날 수가 된다. */
 const kstDayNo = (ms) => Math.floor((ms + KST_OFFSET) / 86400000);
+/* 날짜 번호 → '2026-11-24'. 열람 기록 문서 이름에 쓰는 날짜(kstDay)와 같은 글자다. */
+const kstDayName = (n) => new Date(n * 86400000).toISOString().slice(0, 10);
 /* 오늘이 끝나는 순간 = 내일 0시(KST). 오늘 값을 받았을 때 여기까지 열어 준다. */
 const kstEndOfToday = (ms = Date.now()) =>
   new Date((kstDayNo(ms) + 1) * 86400000 - KST_OFFSET);
 
-/* 환불 금액 계산 — 요금제 페이지에 고지한 기준 그대로.
-   환불 신청과 회원 탈퇴가 같은 계산을 써야 한다. 두 곳에 따로 적으면 언젠가
-   한쪽만 고치고 지나가고, 그러면 고지한 기준과 실제가 어긋난다. */
-async function refundQuote(db, uid, sub) {
-  if (!sub || !sub.lastPaymentKey) return { amount: 0, reason: "" };
-  const startMs = sub.currentPeriodStart.toMillis();
-  const endMs = sub.currentPeriodEnd.toMillis();
-  /* 주기는 addMonth 로 잡으므로 시각이 같아 원래 정수일이다. 반올림은 만약을
-     대비한 것 — 소수가 섞이면 아래 날짜 뺄셈과 단위가 어긋난다. */
-  const total = Math.max(1, Math.round(days(endMs - startMs)));
-  /* 기준은 요금제의 정가가 아니라 이번 주기에 실제로 받은 돈이다.
+/* 구독 문서의 시각(Timestamp · 밀리초 · 글자)을 밀리초로. 읽을 수 없으면 NaN. */
+const msOf = (v) =>
+  v == null ? NaN
+  : typeof v.toMillis === "function" ? v.toMillis()
+  : typeof v === "number" ? v : Date.parse(v);
 
-     BASIC 을 쓰다 PRO 로 올리면 9,900원 + 차액을 받는데, 정가(14,900원)를
-     기준으로 삼으면 받은 적 없는 돈까지 계산에 들어간다. 게다가 취소할 때는
-     결제 건 하나만 가리키므로, 그 건보다 큰 금액을 취소하려 들어 카드사가
-     통째로 거절한다 — 업그레이드한 사람은 환불이 아예 안 됐다. */
-  const price = paidThisPeriod(sub) || PRICE[sub.plan] || 0;
+/* 이번 이용 기간(startMs 이후)에 리포트의 유료 영역을 한 번이라도 열었는가.
 
-  // 이번 결제 기간에 리포트를 한 건이라도 열었는가
-  const reads = await db.collection("report_reads")
-    .where("uid", "==", uid)
-    .where("updatedAt", ">=", sub.currentPeriodStart)
-    .limit(1).get();
-  const opened = !reads.empty;
+   열람 기록은 하루에 한 문서다(report_reads/{uid}_{날짜} · recordRead). 기간의 날짜마다
+   문서를 이름으로 읽는다 — 이용 기간이 한 달이라 많아야 32개다.
 
-  /* 오늘 한 건이라도 열었는가. 하루 한도를 세는 문서를 그대로 본다 —
-     같은 자료를 두 곳에서 다르게 세면 화면의 '오늘 남은 열람' 과 환불 계산이
-     어긋난다. */
-  const openedToday = (await usageOf(db, uid)) > 0;
+   전에는 uid 와 updatedAt 을 함께 거는 질의(같다 + 이후)를 썼다. 그런 질의는
+   파이어스토어에 복합 색인이 있어야 도는데 저장소에 색인 설정이 없다. 결제를 켜는 날
+   환불 견적 · 환불 · 회원 탈퇴가 '색인이 필요하다' 는 오류로 멈출 자리였다 — 탈퇴는
+   환불 계산이 먼저라 유료 회원이 탈퇴를 못 하게 된다. 이름으로 읽으면 색인이 필요 없다.
 
-  // 지난 날은 전부 차감하고, 오늘은 열었을 때만 더한다.
-  const elapsed = Math.max(0, kstDayNo(Date.now()) - kstDayNo(startMs));
-  const used = Math.min(total, elapsed + (openedToday ? 1 : 0));
-
-  if (!opened && used <= FREE_WITHDRAW_DAYS) {
-    return { amount: price, reason: "청약철회(7일 이내·미열람)", why: "withdraw",
-             chargedToday: false };
-  }
-  // 이 날짜까지는 쓴 것으로 본다. 그 뒤에 남은 돈만 돌려준다.
-  const unused = unusedOf(sub, startMs, endMs, kstDayNo(startMs) + used);
-  return {
-    amount: Math.floor(unused * (1 - REFUND_FEE_RATE)),
-    reason: opened ? "이용분 차감 환불" : "잔여 기간 환불",
-    why: opened ? "used" : "left",
-    chargedToday: openedToday,
-  };
+   시작한 날의 문서에는 결제하기 전의 열람(같은 날 앞선 구독)이 섞일 수 있다. 그날은
+   마지막으로 연 시각(lastAt — 다시 연 것 포함)이 시작 시각 뒤일 때만 센다. lastAt 이
+   없는 옛 문서는 updatedAt 을 본다. 그 뒤의 날은 기간 안이라 열람이 있으면 센다. */
+async function viewedSince(db, uid, startMs) {
+  const first = kstDayNo(startMs);
+  const last = Math.min(kstDayNo(Date.now()), first + 40);
+  if (last < first) return false;
+  const refs = [];
+  for (let n = first; n <= last; n++) refs.push(db.doc(`report_reads/${uid}_${kstDayName(n)}`));
+  const snaps = await db.getAll(...refs);
+  return snaps.some((s, i) => {
+    const d = (s && s.exists && s.data()) || null;
+    if (!d || !Array.isArray(d.tickers) || !d.tickers.length) return false;
+    if (i > 0) return true;
+    const lastAt = typeof d.lastAt === "number" ? d.lastAt : msOf(d.updatedAt);
+    return lastAt >= startMs;
+  });
 }
 
-/* 한 주기에 결제가 여러 건일 수 있다(월 구독 + 업그레이드 차액). 카드사는
-   결제 건 하나를 그 건의 금액 안에서만 취소해 준다. 그래서 최근 건부터 차례로,
-   각 건의 금액만큼만 취소해 합계를 맞춘다.
+/* 환불 금액 계산 — 위 표 그대로.
+   환불 신청 · 환불 견적 · 회원 탈퇴가 같은 계산을 써야 한다. 여러 곳에 따로 적으면
+   언젠가 한쪽만 고치고 지나가고, 그러면 고지한 기준과 실제가 어긋난다.
+
+   돌려주는 값 — amount(환불 금액) · why · reason · chargedToday(오늘을 이용일로
+   넣었는가 = why 가 withdraw 가 아니다) · price(P) · usedDays · totalDays · fee ·
+   penalty(청약철회면 fee · penalty 는 0). 화면이 계산을 그대로 보여 줄 수 있게 준다. */
+async function refundQuote(db, uid, sub) {
+  if (!sub || !sub.lastPaymentKey) {
+    return { amount: 0, why: null, reason: "", chargedToday: false,
+             price: 0, usedDays: 0, totalDays: 0, fee: 0, penalty: 0 };
+  }
+  const startMs = msOf(sub.currentPeriodStart);
+  const endMs = msOf(sub.currentPeriodEnd);
+  if (!Number.isFinite(startMs) || !Number.isFinite(endMs)) {
+    /* 기간을 모르면 이용일수를 셀 수 없다. 어림으로 계산해 돈을 움직이지 않는다 —
+       탈퇴도 이 자리에서 멈추고 문의로 안내한다(deleteAccount). */
+    console.error(`[refund] 이용 기간을 읽을 수 없다 uid=${uid}`);
+    throw new HttpsError("failed-precondition",
+      "이용 기간을 확인할 수 없습니다. hello@kosai.kr로 문의해 주시기 바랍니다.");
+  }
+  /* 기준은 요금제의 정가가 아니라 이번 기간에 실제로 받은 돈이다(paidThisPeriod 설명).
+     결제 건 기록이 없는 옛 구독만 정가로 센다. */
+  const price = paidThisPeriod(sub) || PRICE[PLAN_ID];
+  const total = Math.max(1, kstDayNo(endMs) - kstDayNo(startMs));
+  const elapsed = Math.max(0, kstDayNo(Date.now()) - kstDayNo(startMs));
+  const usedDays = Math.min(total, elapsed + 1);
+  const within = elapsed <= REFUND_WINDOW_DAYS;
+  const base = { price, usedDays, totalDays: total };
+
+  if (within && !(await viewedSince(db, uid, startMs))) {
+    return { ...base, amount: price, fee: 0, penalty: 0, why: "withdraw",
+             reason: "청약철회(7일 이내·미열람)", chargedToday: false };
+  }
+  const fee = Math.floor(price * usedDays / total);
+  if (within) {
+    return { ...base, amount: Math.max(0, price - fee), fee, penalty: 0, why: "early",
+             reason: "7일 이내 환불(이용일수 차감)", chargedToday: true };
+  }
+  const penalty = Math.floor(price * REFUND_PENALTY_PCT / 100);
+  return { ...base, amount: Math.max(0, price - fee - penalty), fee, penalty, why: "late",
+           reason: "7일 경과 환불(이용일수·위약금 차감)", chargedToday: true };
+}
+
+/* 이용이 끝나는 시각. 환불 견적과 환불 실행이 같은 값을 써야 한다 — 확인 창에 적은
+   '언제까지 이용' 과 실제가 달라지면 안 된다. 오늘을 이용일로 넣었으면 오늘 자정까지,
+   아니면(청약철회) 지금. */
+const refundEndsAt = (q) => (q.chargedToday ? kstEndOfToday() : new Date());
+
+/* 한 기간에 결제가 여러 건일 수 있다(요금제를 하나로 합치기 전의 월 구독 +
+   업그레이드 차액). 카드사는 결제 건 하나를 그 건의 금액 안에서만 취소해 준다.
+   그래서 최근 건부터 차례로, 각 건의 금액만큼만 취소해 합계를 맞춘다. 요금제가
+   하나인 지금은 보통 한 건이지만 이 구조는 그대로 둔다.
 
    건마다 내역을 따로 남긴다. 취소가 둘로 나가면 카드 명세서에도 둘로 찍히므로,
    한 줄로 뭉뚱그리면 명세서와 우리 내역이 안 맞는다.
@@ -3574,8 +3613,10 @@ if (PAYMENTS_LIVE) exports.requestRefund = onCall(
       const amount = q.amount;
       if (amount <= 0) throw new HttpsError("failed-precondition", "환불 가능한 금액이 없습니다.");
 
-      /* 보여준 금액으로만 실행한다. 확인 창을 띄운 뒤 리포트를 한 건 열면 오늘이
-         이용일로 잡혀 금액이 달라진다. 그대로 진행하면 사용자는 본 적 없는
+      /* 보여준 금액으로만 실행한다. 확인 창을 띄운 뒤에도 금액이 바뀔 수 있다 —
+         7일 이내에 열람 없이 전액이 나오던 사람이 그 사이 리포트를 한 건 열면
+         이용일수를 빼는 환불이 되고, 확인 창을 연 채 자정을 넘기면 이용일이
+         하루 늘거나 7일 경계를 넘는다. 그대로 진행하면 사용자는 본 적 없는
          금액을 받는다 — 새 금액을 알려 주고 다시 묻게 한다. */
       if (Number.isFinite(expect) && expect !== amount) {
         throw new HttpsError("failed-precondition",
@@ -3584,15 +3625,14 @@ if (PAYMENTS_LIVE) exports.requestRefund = onCall(
       }
       await doRefund(db, uid, ref, sub, q);
 
-      /* 오늘 값을 받았으면 오늘은 끝까지 쓰게 둔다. 안 받았으면 지금 끝낸다.
-         돈과 이용 기간이 같은 하루를 가리켜야 한다 — 오늘 값을 받아 놓고
-         이용을 끊으면 대가는 받고 물건은 회수하는 셈이고, 값을 안 받고 열어
-         주면 하루를 공짜로 주는 셈이다.
+      /* 오늘 값을 받았으면(이용일수를 뺀 환불) 오늘은 끝까지 쓰게 둔다. 안
+         받았으면(청약철회 · 전액) 지금 끝낸다. 돈과 이용 기간이 같은 하루를
+         가리켜야 한다 — 오늘 값을 받아 놓고 이용을 끊으면 대가는 받고 물건은
+         회수하는 셈이고, 전액을 돌려주고 열어 두면 남은 날을 공짜로 주는 셈이다.
 
-         q.chargedToday 를 다시 계산하지 않고 그대로 쓴다. 위에서 이미 그 값으로
-         돈을 계산했으므로, 여기서 다시 세면 그 사이에 한 건 연 사람에게 값을
-         안 받고 하루를 열어 주게 된다. */
-      const endAt = q.chargedToday ? kstEndOfToday() : new Date();
+         q 를 다시 계산하지 않고 그대로 쓴다. 위에서 이미 그 값으로 돈을
+         계산했으므로, 여기서 다시 세면 돈과 이용 기간이 다른 판정을 따른다. */
+      const endAt = refundEndsAt(q);
 
       /* status 는 "refunded" 가 아니라 "active" 로 둔다.
 
@@ -3604,17 +3644,18 @@ if (PAYMENTS_LIVE) exports.requestRefund = onCall(
          이 문서를 집어 cancelAtPeriodEnd 를 보고 카드를 긁지 않고 "expired"
          로 닫는다(해지 예약과 같은 길이다).
 
-         '환불이 끝났다' 는 refundedAt 이 말한다. 그 값이 있으면 해지·플랜
-         변경·재환불이 전부 막힌다(refundedAlready).
-         오늘 값을 안 받은 환불은 endAt 이 지금이라 곧바로 닫힌다. */
+         '환불이 끝났다' 는 refundedAt 이 말한다. 그 값이 있으면 해지 ·
+         재환불이 전부 막힌다(refundedAlready).
+         청약철회는 endAt 이 지금이라 곧바로 닫힌다. */
       await ref.set({
-        status: "active", cancelAtPeriodEnd: true, pendingPlan: null,
+        status: "active", cancelAtPeriodEnd: true,
+        pendingPlan: admin.firestore.FieldValue.delete(),   // 옛 요금제 변경 예약
         currentPeriodEnd: admin.firestore.Timestamp.fromDate(endAt),
         refundedAt: admin.firestore.FieldValue.serverTimestamp(),
         updatedAt: admin.firestore.FieldValue.serverTimestamp(),
       }, { merge: true });
 
-      return { ok: true, amount, endsAt: endAt.toISOString() };
+      return { ok: true, amount, why: q.why, endsAt: endAt.toISOString() };
     });
   }
 );
@@ -3626,6 +3667,11 @@ if (PAYMENTS_LIVE) exports.requestRefund = onCall(
    누른 다음에야 얼마인지 알았고, 그 사이 리포트를 한 건 열면 확인할 때와 다른
    금액이 나갔다. 여기서 받은 값을 requestRefund 에 그대로 되돌려주면, 달라진
    경우 실행하지 않고 다시 묻는다.
+
+   금액과 함께 계산에 쓴 값(price · usedDays · totalDays · fee · penalty)을 준다 —
+   화면이 '결제금액 − 이용하신 날의 이용료 − 위약금' 을 그대로 보여 줄 수 있게.
+   0원이면 오류로 막지 않고 0원을 준다. 화면은 그 자리에서 '환불 가능한 금액이
+   없습니다' 와 해지를 안내한다(실행은 requestRefund 가 거절한다).
    ─────────────────────────────────────────────────────────── */
 if (PAYMENTS_LIVE) exports.refundPreview = onCall({ region: REGION, maxInstances: CAP_PUBLIC, cors: true }, async (req) => {
   const uid = uidOrThrow(req);
@@ -3634,10 +3680,12 @@ if (PAYMENTS_LIVE) exports.refundPreview = onCall({ region: REGION, maxInstances
   if (!subActive(sub)) throw new HttpsError("failed-precondition", "이용 중인 구독이 없습니다.");
   if (refundedAlready(sub)) throw new HttpsError("failed-precondition", "이미 환불이 완료되었습니다.");
   const q = await refundQuote(db, uid, sub);
-  const endAt = q.chargedToday ? kstEndOfToday() : new Date();
+  const endAt = refundEndsAt(q);
   return {
     amount: q.amount, why: q.why || null, reason: q.reason || "",
     chargedToday: !!q.chargedToday, endsAt: endAt.toISOString(),
+    price: q.price, usedDays: q.usedDays, totalDays: q.totalDays,
+    fee: q.fee, penalty: q.penalty,
   };
 });
 
@@ -3672,8 +3720,12 @@ if (PAYMENTS_LIVE) exports.renewSubscriptions = onSchedule(
     for (const d of due.docs) {
       const uid = d.id;
       let sub = d.data();
-      // 실패 기록에 쓸 플랜. try 안에서 정하면 catch 가 못 본다.
-      let plan = sub.pendingPlan || sub.plan;
+      /* 실패 기록에 쓸 요금제. try 안에서 정하면 catch 가 못 본다.
+         요금제는 하나다 — 옛 값(basic · pro)도 member 정가로 받는다. 예전에는 예약해
+         둔 다운그레이드(pendingPlan)를 여기서 적용했는데, 요금제 변경을 없애면서 그
+         칸은 읽지 않는다. 모르는 값이면 planOf 가 null 을 내고 금액이 비어, charge 가
+         카드사를 부르기 전에 멈춘다 — 그 구독은 '결제 실패' 로 남고 운영 알림에 뜬다. */
+      let plan = planOf(sub.plan);
       try {
         // 탈퇴로 계정이 사라진 문서가 남아 있으면 긁지 않는다. deleteAccount 가
         // status 를 바꿔 두므로 여기까지 오지 않지만, 한 번 더 확인한다 —
@@ -3694,7 +3746,7 @@ if (PAYMENTS_LIVE) exports.renewSubscriptions = onSchedule(
         /* 사용자가 만지는 함수들과 같은 자물쇠를 잡는다.
 
            안 잡으면 이런 일이 난다. 갱신 대상은 '기간이 이미 끝난' 문서라
-           subActive 가 false 다. 그래서 해지·환불·플랜 변경은 저절로 막히지만,
+           subActive 가 false 다. 그래서 해지·환불은 저절로 막히지만,
            '새 결제' 만은 막히지 않는다("이미 이용 중" 검사를 안 타므로). 배치가
            카드를 긁는 사이에 그 사람이 결제 화면에서 결제하면 같은 사람에게 두
            번 청구되고, periodPayments 는 나중에 쓴 쪽만 남아 다른 한 건은 환불도
@@ -3711,7 +3763,7 @@ if (PAYMENTS_LIVE) exports.renewSubscriptions = onSchedule(
             ? fresh.currentPeriodEnd.toMillis() : 0;
           if (endMs > now.getTime()) return;      // 그 사이 새 기간이 시작됐다
           sub = fresh;
-          plan = sub.pendingPlan || sub.plan;     // 예약된 다운그레이드를 여기서 적용
+          plan = planOf(sub.plan);
 
           if (sub.cancelAtPeriodEnd) {
             await d.ref.set({ status: "expired", updatedAt: admin.firestore.FieldValue.serverTimestamp() }, { merge: true });
@@ -3721,7 +3773,8 @@ if (PAYMENTS_LIVE) exports.renewSubscriptions = onSchedule(
             `${PLAN_NAME[plan]} 월 구독`, "renew", null,
             `renew_${uid}_${kstDayNo(endMs)}`);
           await d.ref.set({
-            plan, pendingPlan: null, status: "active",
+            plan, status: "active",
+            pendingPlan: admin.firestore.FieldValue.delete(),   // 옛 요금제 변경 예약
             currentPeriodStart: admin.firestore.Timestamp.fromDate(now),
             currentPeriodEnd: admin.firestore.Timestamp.fromDate(addMonth(now)),
             lastPaymentKey: pay ? pay.paymentKey : sub.lastPaymentKey,
@@ -3755,8 +3808,8 @@ if (PAYMENTS_LIVE) exports.renewSubscriptions = onSchedule(
           failedAt: admin.firestore.FieldValue.serverTimestamp(),
           updatedAt: admin.firestore.FieldValue.serverTimestamp(),
         }, { merge: true });
-        /* 청구하려던 플랜으로 적는다. 다운그레이드가 예약돼 있었으면 옛 플랜의
-           금액을 적게 되는데, 내역에 실제와 다른 금액이 남는다. */
+        /* 청구하려던 요금제와 금액으로 적는다. 모르는 요금제 값이라 청구하지
+           못했으면 금액은 0원으로 남는다 — 내역에 실제와 다른 금액을 적지 않는다. */
         await writePayment(db, uid, {
           amount: PRICE[plan] || 0, description: "정기결제 실패",
           kind: "failed", status: "failed", plan, paidAt: null,
@@ -3784,8 +3837,8 @@ if (PAYMENTS_LIVE) exports.renewSubscriptions = onSchedule(
     for (const d of stuck.docs) {
       const uid = d.id;
       const sub = d.data();
-      // 실패 기록에 쓸 플랜. 자물쇠를 잡은 뒤 다시 읽은 값으로 덮어쓴다.
-      let plan = sub.pendingPlan || sub.plan;
+      // 실패 기록에 쓸 요금제. 자물쇠를 잡은 뒤 다시 읽은 값으로 덮어쓴다(위 갱신 고리와 같다).
+      let plan = planOf(sub.plan);
       try {
         /* 위 갱신 고리와 같은 이유로 계정부터 확인한다. 여기도 카드를 긁는
            자리다 — 탈퇴한 사람의 카드를 긁는 사고는 되돌릴 수가 없다.
@@ -3838,7 +3891,7 @@ if (PAYMENTS_LIVE) exports.renewSubscriptions = onSchedule(
           if (!fresh || fresh.status !== "past_due") return;
           if ((fresh.retryCount || 0) !== tried) return;
           // 목록을 만든 시점의 값을 그대로 믿지 않는다(갱신 고리와 같다).
-          plan = fresh.pendingPlan || fresh.plan;
+          plan = planOf(fresh.plan);
 
           try {
             const pay = await charge(db, uid, { ...fresh, plan }, PRICE[plan],
@@ -3846,7 +3899,8 @@ if (PAYMENTS_LIVE) exports.renewSubscriptions = onSchedule(
               `dun_${uid}_${kstDay()}`);
             /* 성공 — 그 순간부터 새 한 달이다. */
             await d.ref.set({
-              plan, pendingPlan: null, status: "active",
+              plan, status: "active",
+              pendingPlan: admin.firestore.FieldValue.delete(),   // 옛 요금제 변경 예약
               currentPeriodStart: admin.firestore.Timestamp.fromDate(now),
               currentPeriodEnd: admin.firestore.Timestamp.fromDate(addMonth(now)),
               lastPaymentKey: pay ? pay.paymentKey : fresh.lastPaymentKey,

@@ -15,7 +15,7 @@
 
      일반    테마 · 언어
      알림    마케팅 정보 수신
-     구독    상태 · 결제 · 사용량 · 플랜 변경 · 해지/재개/환불 · 결제 내역
+     구독    상태 · 결제 · 해지/재개 · 환불(계산 내역과 환불 기준) · 결제 내역
      계정    닉네임 · 이메일 · 로그아웃 · 회원 탈퇴
 
    구독 자료는 window.KOSPaywall(paywall.js)에서 받고, 바꾸는 일은
@@ -39,8 +39,8 @@ import { onAuthStateChanged, signOut }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import { getMarketing, setMarketing, accountInfo } from "./consent.js?v=a8eed02c";
 import { call } from "./subscription-api.js?v=7e5d7618";
-import { PLANS, planOf, won, fmtDay, payReady, upgradeDiff, MIN_CHARGE }
-  from "./payment-config.js?v=4ae73997";
+import { PLAN, planOf, won, fmtDay, payReady, REFUND_NOTICE }
+  from "./payment-config.js?v=da400e2b";
 
 const T = m => (window.KOSi18n ? window.KOSi18n.t(m) : m);
 const EN = () => (window.KOSi18n ? window.KOSi18n.lang : "ko") === "en";
@@ -75,10 +75,11 @@ if (window.KOSi18n) window.KOSi18n.register({
   "개인정보 처리방침": "Privacy Policy",
   "과 ": " and ",
   "에서 확인할 수 있습니다.": ".",
-  /* 구독 — 문구는 옛 구독 관리 페이지가 쓰던 것을 그대로 옮겼다. 화면만
-     바뀌었을 뿐 사용자가 읽는 말이 달라질 이유가 없다. */
+  /* 구독 — 문구는 옛 구독 관리 페이지가 쓰던 것을 바탕으로 2026-11-24 요금제 개편(멤버십 하나 · 하루 한도
+     없음 · 요금제 변경 없음 · 새 환불 계산)에 맞춰 고쳤다. 단추는 '대상+동사-기'(해지하기 · 환불 신청하기). */
   "불러오는 중…": "Loading…",
   "이용 중인 플랜": "Current plan",
+  "멤버십": "Membership",
   "무료": "Free",
   "무료로 이용하고 계십니다. 분석과 전망, 리스크 진단은 멤버십 구독 후 보실 수 있습니다.":
     "You are on the free plan. The analysis, outlook, and risk sections come with a membership.",
@@ -92,9 +93,6 @@ if (window.KOSi18n) window.KOSi18n.register({
   "이용 종료일": "Access until",
   "구독 시작일": "Started",
   "결제 금액": "Amount",
-  "하루 열람 한도": "Daily limit",
-  "오늘 남은 열람": "Left today",
-  "예정된 변경": "Scheduled change",
   "결제 수단": "Payment method",
   "등록된 카드가 없습니다.": "No card registered.",
   "등록하신 카드": "Card on file",
@@ -102,48 +100,49 @@ if (window.KOSi18n) window.KOSi18n.register({
   "아직 결제 내역이 없습니다.": "No payments yet.",
   "일자": "Date", "내용": "Description", "금액": "Amount",
   "결제 완료": "Paid", "환불": "Refunded", "실패": "Failed",
-  "{p} 월 구독": "{p} monthly", "{p} 업그레이드 차액": "{p} upgrade difference",
+  "{p} 월 구독": "{p} monthly",
+  /* 옛 시연 기록 — 요금제 변경이 있던 때의 차액 결제 줄. 지금은 생기지 않지만 브라우저에 남아 있으면 이 이름으로 적는다. */
+  "요금제 변경 차액": "Plan change difference",
   "정기결제 실패": "Renewal failed",
-  "청약철회": "withdrawal", "이용분 차감": "usage deducted", "잔여 기간": "remaining days",
+  "청약철회": "withdrawal", "이용분 차감": "usage deducted",
+  "이용분 · 위약금 차감": "usage and cancellation fee deducted", "잔여 기간": "remaining days",
   "환불 완료": "Refunded",
   "환불이 완료되었습니다. 오늘 자정까지 이용하실 수 있으며, 언제든 다시 시작하실 수 있습니다.":
     "Refunded. You keep access until midnight tonight, and you can start again whenever you like.",
   "환불이 완료되어 이용이 종료되었습니다. 언제든 다시 시작하실 수 있습니다.":
     "Refunded. Your access has ended. You can start again whenever you like.",
   "다시 시작하기": "Start again",
-  "{r}개 / {l}개": "{r} of {l}", "{d}부터 {p}": "{p} from {d}",
-  "PRO로 업그레이드": "Upgrade to PRO", "BASIC으로 변경": "Switch to BASIC",
-  "변경 취소": "Undo change",
-  "결제 수단 변경": "Change card",
-  "구독 해지": "Cancel subscription",
-  "해지 취소": "Keep subscription",
-  "환불 신청": "Request a refund",
+  "결제 수단 변경하기": "Change card",
+  "해지하기": "Cancel subscription",
+  "해지 취소하기": "Keep subscription",
+  "환불 신청하기": "Request a refund",
   "확인": "Confirm", "취소": "Cancel",
   "구독을 해지하시겠습니까?": "Cancel your subscription?",
   "{date}까지는 그대로 이용하실 수 있으며, 그 이후 결제되지 않습니다. 해지는 언제든지 취소하실 수 있습니다.":
     "You keep access until {date}, and you will not be charged after that. You can undo this anytime.",
   "환불을 신청하시겠습니까?": "Request a refund?",
-  "환불 금액은 이용하신 일수를 차감해 산정됩니다.":
-    "The refund deducts the days you have used.",
+  "환불 금액": "Refund amount",
   "{a}이 환불됩니다.": "{a} will be refunded.",
   "오늘 자정까지 이용하실 수 있습니다.": "You keep access until midnight today.",
   "이용은 신청 즉시 종료됩니다.": "Your access ends as soon as you confirm.",
-  "오늘 리포트를 보셨다면 오늘까지 이용하실 수 있고, 오늘 한 건도 보지 않으셨다면 오늘은 차감하지 않고 이용이 바로 종료됩니다.":
-    "If you opened a report today, you keep access until midnight; if you opened none today, today is not charged and your access ends right away.",
-  "플랜 변경만 원하시는 경우에는 환불 대신 위의 ‘플랜 변경’을 이용하여 주시기 바랍니다. 남은 기간에 대한 차액만 결제되며 즉시 적용됩니다.":
-    "If you only want to switch plans, use “Change plan” above instead of a refund — you are charged only the difference for the remaining period, and it applies immediately.",
-  "PRO로 업그레이드하시겠습니까?": "Upgrade to PRO?",
-  "즉시 PRO가 적용됩니다. 남은 기간에 해당하는 BASIC 금액을 차감한 차액 {a}이 등록하신 카드로 지금 결제되며, 결제일은 그대로 유지됩니다.":
-    "PRO applies immediately. The unused part of BASIC is credited and the difference, {a}, is charged to your card now; your billing date stays the same.",
-  "즉시 PRO가 적용됩니다. 이번 결제 주기가 거의 끝나 지금 청구되는 금액은 없으며, 다음 결제일부터 PRO 요금으로 청구됩니다.":
-    "PRO applies immediately. This billing period is nearly over, so nothing is charged now — PRO pricing starts from your next billing date.",
-  "BASIC으로 변경하시겠습니까?": "Switch to BASIC?",
-  "{date}부터 BASIC이 적용됩니다. 그때까지는 PRO를 그대로 이용하실 수 있습니다.":
-    "BASIC applies from {date}. You keep PRO until then.",
-  "플랜 변경을 취소하시겠습니까?": "Undo the scheduled change?",
-  "{date} 이후에도 {p} 플랜이 그대로 유지됩니다.": "You stay on {p} after {date}.",
-  " 예약해 두신 해지는 함께 취소됩니다.": " Your scheduled cancellation will be undone.",
-  " 예약해 두신 {p} 플랜 변경은 함께 취소됩니다.": " Your scheduled change to {p} will be dropped.",
+  "결제일부터 7일 이내에 신청하셨고 결제 후 리포트의 유료 영역을 열람하지 않으셔서 전액 환불합니다.":
+    "You are within 7 days of the billing date and have not opened the paid sections of any report since payment, so the full amount is refunded.",
+  "결제일부터 7일 이내에 신청하셔서 결제금액에서 이용하신 날의 이용료를 뺀 금액을 환불합니다.":
+    "You are within 7 days of the billing date, so we refund the amount paid minus the usage charge for the days you have used.",
+  "결제일부터 7일이 지나 결제금액에서 이용하신 날의 이용료와 결제금액의 10%(위약금)를 뺀 금액을 환불합니다.":
+    "More than 7 days have passed since the billing date, so we refund the amount paid minus the usage charge for the days you have used and a 10% cancellation fee.",
+  "환불 가능한 금액이 없습니다. 해지하시면 다음 결제일부터 이용료가 청구되지 않습니다.":
+    "No refund is due. If you cancel, you will not be charged from your next billing date.",
+  "환불 가능한 금액이 없습니다. 해지가 예약되어 있어 다음 결제일부터 이용료가 청구되지 않습니다.":
+    "No refund is due. Your cancellation is already scheduled, so you will not be charged from your next billing date.",
+  "환불 가능한 금액이 없습니다.": "No refund is due.",
+  "환불 금액은 아래 환불 기준에 따라 산정됩니다.": "The refund amount is calculated under the refund terms below.",
+  "결제금액": "Amount paid",
+  "이용일수": "Days used",
+  "{u}일 / {t}일": "{u} of {t} days",
+  "이용료": "Usage charge",
+  "위약금": "Cancellation fee",
+  "환불 기준": "Refund terms",
   "사유를 알려주시면 개선에 반영하겠습니다 (복수 선택 가능)":
     "Telling us why helps us improve (select all that apply)",
   "자세한 의견 (선택)": "Tell us more (optional)",
@@ -154,12 +153,6 @@ if (window.KOSi18n) window.KOSi18n.register({
   "환불 신청이 접수되었습니다. {a}이 환불되며, 이용은 지금 종료됩니다.":
     "Refund requested. {a} will be returned, and your access ends now.",
   "환불 신청이 접수되었습니다.": "Your refund request has been received.",
-  "{p} 플랜이 바로 적용되었습니다. 차액 {a}이 결제되었습니다.":
-    "You are on {p} as of now. {a} has been charged.",
-  "{p} 플랜이 바로 적용되었습니다. 지금 청구된 금액은 없습니다.":
-    "You are on {p} as of now. Nothing was charged.",
-  "{d}부터 {p} 플랜으로 변경됩니다.": "You move to {p} on {d}.",
-  "플랜 변경이 취소되었습니다.": "The scheduled change has been cancelled.",
   "처리하지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.": "Could not complete. Please try again in a moment.",
   "등록하신 카드로 결제가 승인되지 않았습니다. 결제일로부터 1일·3일·5일·7일째에 자동으로 다시 시도하며, 결제가 완료되면 그 시점부터 새로운 이용 기간이 시작됩니다. 카드를 다시 등록하시면 즉시 재개하실 수 있습니다.":
     "The card on file was declined. We retry automatically on days 1, 3, 5 and 7 after the billing date; once a payment succeeds, a new billing period starts from that moment. Registering a card again restores access immediately.",
@@ -331,6 +324,16 @@ function css() {
 .ks-dlg-d{width:100%;margin-top:8px;padding:8px 10px;border-radius:9px;resize:vertical;
   border:1px solid var(--border-2,rgba(0,0,0,.12));background:transparent;color:var(--fg-1);
   font:400 12.5px/1.5 var(--font-sans,system-ui)}
+/* 환불 확인 창 — 계산 내역(결제금액 · 이용일수 · 이용료 · 위약금 · 환불 금액)과 환불 기준(결제 화면 ·
+   자주 묻는 질문과 같은 글). 금액 칸은 오른쪽에 붙여 위아래로 견주어 읽히게 한다. */
+.ks-dlg-kv{display:grid;grid-template-columns:1fr auto;gap:6px 16px;margin:14px 0 0;padding:10px 0;
+  border-top:1px solid var(--border-2,rgba(0,0,0,.1));border-bottom:1px solid var(--border-2,rgba(0,0,0,.1));
+  font:400 13px/1.5 var(--font-sans,system-ui)}
+.ks-dlg-kv dt{color:var(--fg-3)} .ks-dlg-kv dd{margin:0;text-align:right;color:var(--fg-1);font-variant-numeric:tabular-nums}
+.ks-dlg-kv dt.sum,.ks-dlg-kv dd.sum{font-weight:700;color:var(--fg-1)}
+.ks-dlg-n{margin:14px 0 0;font:400 11.5px/1.6 var(--font-sans,system-ui);color:var(--fg-3);word-break:keep-all}
+.ks-dlg-n .ks-dlg-q{margin:0 0 4px}
+.ks-dlg-n p{margin:0} .ks-dlg-n ol,.ks-dlg-n ul{margin:6px 0 0;padding-left:18px} .ks-dlg-n li{margin:0 0 4px}
 /* 좁은 화면 — 왼쪽 목록을 위쪽 가로줄로 눕힌다. 196px 를 떼어 주면
    내용이 들어갈 자리가 남지 않는다. */
 @media (max-width:640px){
@@ -457,8 +460,8 @@ function paneNotifications(user) {
    만 옮기고 버튼은 이름만 달아 두었는데, 그건 화면이지 기능이 아니었다.
    페이지가 실제로 하던 것을 그대로 가져온다.
 
-     · 되돌리기 어려운 것(해지·환불·플랜 변경)은 반드시 한 번 묻는다
-     · 업그레이드는 얼마가 청구되는지 보여 주고 묻는다
+     · 되돌리기 어려운 것(해지·환불)은 반드시 한 번 묻는다
+     · 환불은 얼마가 왜 돌아가는지(계산 내역 · 환불 기준) 보여 주고 묻는다
      · 해지·환불은 사유를 함께 받는다(답하지 않아도 진행된다)
      · 결제 실패·이용 종료도 각각 제 화면을 갖는다
      · 결제 내역을 보여 준다
@@ -468,8 +471,12 @@ function paneNotifications(user) {
 
 /* 확인 대화상자. why 를 주면 사유를 함께 묻는다.
    돌려주는 값: 취소면 false, 확인이면 { reason, detail }.
-   답하지 않아도 진행된다 — 환불은 권리이지 설문의 대가가 아니다. */
-function ask(title, body, why) {
+   답하지 않아도 진행된다 — 환불은 권리이지 설문의 대가가 아니다.
+
+   body 는 글(빈 줄로 문단을 나눈다)이거나, 글과 요소(계산 내역 · 환불 기준)를 섞은 배열이다.
+   opts.yes · opts.no 는 단추 이름이다(없으면 '확인' · '취소'). opts.yes 가 null 이면 확인 단추 없이
+   닫기만 둔다 — 환불 가능한 금액이 없을 때처럼 실행할 것이 없는 안내 창이다. */
+function ask(title, body, why, opts = {}) {
   css();
   const ov = el("div", "ks-dlg");
   const card = el("div", "ks-dlg-card");
@@ -478,7 +485,10 @@ function ask(title, body, why) {
   card.appendChild(el("p", "ks-dlg-t", title));
   /* 본문이 여러 문단일 수 있다. 빈 줄로 끊어 문단마다 <p> 를 만든다 —
      줄바꿈 문자를 그대로 넣으면 HTML 이 공백 하나로 뭉개 한 덩어리가 된다. */
-  String(body).split("\n\n").forEach(p => card.appendChild(el("p", "ks-dlg-b", p)));
+  (Array.isArray(body) ? body : [body]).forEach(part => {
+    if (part instanceof Node) card.appendChild(part);
+    else String(part).split("\n\n").forEach(p => card.appendChild(el("p", "ks-dlg-b", p)));
+  });
 
   let boxes = [], detail = null;
   if (why) {
@@ -501,14 +511,15 @@ function ask(title, body, why) {
   }
 
   const btns = el("div", "ks-btns");
-  const no = el("button", "ks-btn", T("취소"));
-  const yes = el("button", "ks-btn primary", T("확인"));
-  no.type = yes.type = "button";
-  btns.appendChild(no); btns.appendChild(yes);
+  const no = el("button", "ks-btn", opts.no || T("취소"));
+  const yes = opts.yes === null ? null : el("button", "ks-btn primary", opts.yes || T("확인"));
+  no.type = "button";
+  btns.appendChild(no);
+  if (yes) { yes.type = "button"; btns.appendChild(yes); }
   card.appendChild(btns);
   ov.appendChild(card);
   document.body.appendChild(ov);
-  yes.focus();
+  (yes || no).focus();
 
   return new Promise(res => {
     const done = v => {
@@ -518,7 +529,7 @@ function ask(title, body, why) {
     };
     function onKey(e) { if (e.key === "Escape") done(false); }
     document.addEventListener("keydown", onKey);
-    yes.addEventListener("click", () => done(why
+    if (yes) yes.addEventListener("click", () => done(why
       ? { reason: boxes.filter(b => b.checked).map(b => b.value).join(", "),
           detail: detail.value.trim() }
       : {}));
@@ -539,19 +550,61 @@ function sendReason(category, ans) {
     .catch(e => console.warn("[settings] 사유 전송 실패", e && e.message));
 }
 
+/* 결제 내역 한 줄의 이름. 요금제 이름은 payment-config 에서 읽는다 — 옛 시연 기록의 basic · pro 도 '멤버십'으로 적힌다.
+   환불 사유(why)는 계산이 쓴 값 그대로다 — withdraw(7일 이내 · 열람 없음 · 전액) · early(7일 이내 · 이용분 차감) ·
+   late(7일 뒤 · 이용분과 위약금 차감). used · left 는 예전 환불 계산의 이름이라 지금은 생기지 않지만, 브라우저에 남은
+   옛 시연 기록이 깨지지 않게 이름표를 남겨 둔다. kind 'upgrade'(요금제 변경 차액)도 같은 이유로 남긴다. */
 function payLabel(p) {
-  const name = (planOf(p.plan) || {}).name || String(p.plan || "").toUpperCase();
+  const plan = planOf(p.plan);
+  const name = plan ? T(plan.name) : String(p.plan || "").toUpperCase();
   if (p.kind === "subscription") return T("{p} 월 구독").replace("{p}", name);
-  if (p.kind === "upgrade") return T("{p} 업그레이드 차액").replace("{p}", name);
+  if (p.kind === "upgrade") return T("요금제 변경 차액");
   if (p.kind === "failed") return T("정기결제 실패");
   if (p.kind === "refund") {
-    const why = p.why === "used" ? T("이용분 차감")
-              : p.why === "withdraw" ? T("청약철회")
+    const why = p.why === "withdraw" ? T("청약철회")
+              : p.why === "early" ? T("이용분 차감")
+              : p.why === "late" ? T("이용분 · 위약금 차감")
+              : p.why === "used" ? T("이용분 차감")
               : p.why === "left" ? T("잔여 기간") : "";
     return why ? `${T("환불")} · ${why}` : T("환불");
   }
   return p.description || "";
 }
+
+/* 환불 확인 창의 계산 내역 — 서버(또는 시연)의 refundPreview 가 준 값을 그대로 적는다. 화면에서 다시 셈하지
+   않는다 — 둘이 갈라지면 보여 준 금액과 돌려준 금액이 달라진다. 뺀 금액은 '-' 를 붙여 적는다. */
+function quoteNode(q, en) {
+  const dl = el("dl", "ks-dlg-kv");
+  const row = (k, v, cls) => { dl.appendChild(el("dt", cls || null, T(k))); dl.appendChild(el("dd", cls || null, v)); };
+  const minus = v => (v > 0 ? "-" : "") + won(v || 0, en);
+  row("결제금액", won(q.price, en));
+  row("이용일수", T("{u}일 / {t}일").replace("{u}", q.usedDays).replace("{t}", q.totalDays));
+  row("이용료", minus(q.fee));
+  row("위약금", minus(q.penalty));
+  row("환불 금액", won(Math.max(0, q.amount), en), "sum");
+  return dl;
+}
+
+/* 환불 기준 — 결제 화면 · 자주 묻는 질문과 같은 글(payment-config.js REFUND_NOTICE). 두 말을 다 갖고 있어
+   번역 사전을 거치지 않는다. */
+function noticeNode() {
+  const k = REFUND_NOTICE[EN() ? "en" : "ko"];
+  const box = el("div", "ks-dlg-n");
+  box.appendChild(el("div", "ks-dlg-q", T("환불 기준")));
+  box.appendChild(el("p", null, k.lead));
+  const ol = el("ol"), ul = el("ul");
+  k.steps.forEach(x => ol.appendChild(el("li", null, x)));
+  k.notes.forEach(x => ul.appendChild(el("li", null, x)));
+  box.appendChild(ol); box.appendChild(ul);
+  return box;
+}
+
+/* 환불 사유(why)마다 확인 창에 적는 한 줄 — 왜 이 금액인지 */
+const WHY_LINE = {
+  withdraw: () => T("결제일부터 7일 이내에 신청하셨고 결제 후 리포트의 유료 영역을 열람하지 않으셔서 전액 환불합니다."),
+  early: () => T("결제일부터 7일 이내에 신청하셔서 결제금액에서 이용하신 날의 이용료를 뺀 금액을 환불합니다."),
+  late: () => T("결제일부터 7일이 지나 결제금액에서 이용하신 날의 이용료와 결제금액의 10%(위약금)를 뺀 금액을 환불합니다."),
+};
 
 function paneSubscription() {
   const box = el("div");
@@ -587,8 +640,8 @@ function paneSubscription() {
     dl.appendChild(dd);
   };
 
-  const cardHref = sub =>
-    "checkout.html?plan=" + encodeURIComponent((sub && sub.plan) || "basic") + "&method=1";
+  /* 요금제는 멤버십 하나다 — 옛 기록의 plan(basic · pro)이 남아 있어도 주소에는 member 를 싣는다. */
+  const cardHref = () => "checkout.html?plan=" + encodeURIComponent(PLAN.id) + "&method=1";
 
   /* 결제창 키가 아직 안 꽂혔으면 카드 관련 버튼은 눌러야 빈 화면이다. 다만
      미리보기(__KOSDEMO)는 토스 없이 checkout.js 안에서 흉내내므로 키가 없어도
@@ -615,7 +668,8 @@ function paneSubscription() {
       refresh();
     } catch (e) {
       console.error("[settings] " + fn, e);
-      say(e && e.message ? e.message : T("처리하지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다."), "err");
+      /* 서버 문구를 그대로 적는다. 사전에 있는 문구(예: '환불 가능한 금액이 없습니다.')는 영어 화면에서 바꿔 적는다. */
+      say(e && e.message ? T(e.message) : T("처리하지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다."), "err");
       all.forEach(b => { b.disabled = false; });
     }
   }
@@ -677,14 +731,14 @@ function paneSubscription() {
        이용 중     전부 보여 주고 전부 할 수 있다
        결제 실패   왜 막혔는지 말하고 카드 재등록으로 보낸다
        이용 종료   끝난 사실을 말하고 다시 시작할 길을 준다 */
-  function draw(st, usage, payments) {
+  function draw(st, payments) {
     body.textContent = "";
     const en = EN();
     const sub = (st && st.sub) || null;
     const active = !!(st && st.active);
-    /* 환불이 끝났는가. 오늘 값을 받은 환불은 자정까지 살아 있어서 status 가
+    /* 환불이 끝났는가. 오늘 몫을 받은 환불은 자정까지 살아 있어서 status 가
        그대로 "active" 다 — 그것만 보면 방금 환불한 사람에게 '이용 중' 과 해지·
-       플랜 변경 버튼을 그대로 보여 주게 된다. 환불 여부는 refundedAt 이 말한다. */
+       환불 버튼을 그대로 보여 주게 된다. 환불 여부는 refundedAt 이 말한다. */
     const refunded = !!(sub && sub.refundedAt);
     const due = !active && !refunded && sub && sub.status === "past_due";
     /* 이용 중도, 결제 실패도, 환불도 아닌데 기간이 있으면 끝난 구독이다.
@@ -714,7 +768,7 @@ function paneSubscription() {
     }
 
     const dl = el("dl", "ks-kv");
-    kv(dl, "이용 중인 플랜", (plan && plan.name) || String(sub.plan || "").toUpperCase());
+    kv(dl, "이용 중인 플랜", plan ? T(plan.name) : String(sub.plan || "").toUpperCase());
 
     const badge = el("span", "ks-badge " + (active && !refunded && !sub.cancelAtPeriodEnd ? "on" : "warn"),
       T(refunded ? "환불 완료"
@@ -723,29 +777,11 @@ function paneSubscription() {
         : sub.cancelAtPeriodEnd ? "해지 예약됨" : "이용 중"));
     kv(dl, "상태", badge);
 
-    if ((active || due) && !refunded) {
-      kv(dl, "결제 금액", won((plan && plan.price) || 0, en));
-      if (plan && plan.limit) kv(dl, "하루 열람 한도", `${plan.limit}${en ? "" : "개"}`);
-    }
-
-    /* 남은 열람으로 적는다. '오늘 열람 2건' 은 많이 본 건지 적게 본 건지를
-       한도와 견줘 봐야 알 수 있다 — 사용자가 궁금한 건 몇 개가 남았는가다.
-       usage.limit 이 0 일 수 있어 ?? 가 아니라 || 로 받는다(0 ?? x 는 0). */
-    if (active && usage && typeof usage.used === "number") {
-      const lim = usage.limit || (plan && plan.limit) || 0;
-      if (lim) kv(dl, "오늘 남은 열람",
-        T("{r}개 / {l}개").replace("{r}", Math.max(0, lim - usage.used)).replace("{l}", lim));
-    }
+    /* 하루 한도 · 오늘 남은 수는 적지 않는다 — 2026-11-24 부터 열람 종목 수에 한도가 없다
+       (자동 수집 제한은 짧은 시간에 몰아 열 때만 걸리고, 리포트 화면이 그 자리에서 알린다). */
+    if ((active || due) && !refunded) kv(dl, "결제 금액", won((plan && plan.price) || 0, en));
 
     if (endDay) kv(dl, active && !sub.cancelAtPeriodEnd ? "다음 결제일" : "이용 종료일", endDay);
-
-    /* 다운그레이드는 다음 결제일부터라 지금 화면에는 아무것도 안 바뀐다.
-       예약된 걸 어디에도 안 적어 두면, 확인을 눌러도 아무 일도 안 일어난 것처럼
-       보이고 다음 달에 왜 금액이 바뀌었는지 알 수 없다. */
-    const pend = active && sub.pendingPlan && sub.pendingPlan !== sub.plan
-      ? planOf(sub.pendingPlan) : null;
-    if (pend) kv(dl, "예정된 변경",
-      T("{d}부터 {p}").replace("{d}", endDay).replace("{p}", pend.name));
 
     if (sub.startedAt) kv(dl, "구독 시작일", fmtDay(sub.startedAt, en));
 
@@ -758,7 +794,7 @@ function paneSubscription() {
 
     const btns = el("div", "ks-btns");
 
-    /* 환불이 끝났으면 더 할 일이 없다. 해지·플랜 변경 버튼을 남겨 두면 이미
+    /* 환불이 끝났으면 더 할 일이 없다. 해지·환불 버튼을 남겨 두면 이미
        끝난 구독을 다시 만지려 들고, 서버는 거절한다 — 눌리는 버튼이 거절만
        하는 것보다 없는 편이 낫다. 남은 건 언제까지 볼 수 있는지 뿐이다. */
     if (refunded) {
@@ -776,18 +812,18 @@ function paneSubscription() {
     }
 
     if (due) {
-      /* 결제가 막힌 사람에게 필요한 건 설명과 카드 한 장이다. 플랜 변경까지
-         같이 두면 무엇부터 눌러야 할지가 흐려지므로 두 가지만 둔다.
+      /* 결제가 막힌 사람에게 필요한 건 설명과 카드 한 장이다. 이번 기간의 결제가
+         없으니 환불할 것도 없다 — 두 가지만 둔다.
 
          해지는 빼지 않는다. 카드가 거절되면 정해진 날에 다시 결제를 시도하므로,
          그만두시려는 분께 멈출 방법이 없으면 원치 않는 요금이 청구될 수 있다. */
-      const a = el("a", "ks-btn primary", T("결제 수단 변경"));
-      a.href = cardHref(sub);
+      const a = el("a", "ks-btn primary", T("결제 수단 변경하기"));
+      a.href = cardHref();
       btns.appendChild(a);
-      btns.appendChild(button("구독 해지", "danger", b => act(b, {
+      btns.appendChild(button("해지하기", "danger", b => act(b, {
         confirm: () => ask(T("구독을 해지하시겠습니까?"),
           T("결제 재시도가 중지되며 구독이 즉시 종료됩니다. 이미 결제된 금액은 없으므로 추가로 청구되는 금액도 없습니다."),
-          "cancel"),
+          "cancel", { yes: T("해지하기"), no: T("닫기") }),
         fn: "cancelSubscription",
         done: () => T("구독이 해지되었으며, 결제 재시도도 중지되었습니다."),
         survey: "구독 해지",
@@ -809,119 +845,93 @@ function paneSubscription() {
     }
 
     /* ── 이용 중 ─────────────────────────────────────────────── */
-
-    const other = sub.plan === "pro" ? PLANS.basic : PLANS.pro;
-    const up = !pend && (other.price || 0) > ((plan && plan.price) || 0);
-    /* 해지 예약과 플랜 변경 예약은 함께 둘 수 없다 — 서버가 갱신할 때 해지를
-       먼저 보고 끝내므로, 둘 다 걸어 두면 변경은 조용히 사라진다. 한쪽을
-       고르면 다른 쪽이 풀린다는 걸 누르기 전에 말해 준다. */
-    const alsoResume = sub.cancelAtPeriodEnd ? T(" 예약해 두신 해지는 함께 취소됩니다.") : "";
-
-    btns.appendChild(button(
-      pend ? "변경 취소" : sub.plan === "pro" ? "BASIC으로 변경" : "PRO로 업그레이드",
-      null,
-      b => act(b, {
-        confirm: () => {
-          if (pend) return ask(T("플랜 변경을 취소하시겠습니까?"),
-            T("{date} 이후에도 {p} 플랜이 그대로 유지됩니다.")
-              .replace("{date}", endDay).replace("{p}", (plan && plan.name) || "") + alsoResume);
-          if (up) {
-            /* 얼마가 청구되는지 보여 주고 묻는다. 금액 없이 확인을 받으면
-               카드에서 얼마가 빠져나갈지 모르는 채로 누르게 된다. */
-            const diff = upgradeDiff(sub, other.id);
-            return ask(T("PRO로 업그레이드하시겠습니까?"),
-              (diff >= MIN_CHARGE
-                ? T("즉시 PRO가 적용됩니다. 남은 기간에 해당하는 BASIC 금액을 차감한 차액 {a}이 등록하신 카드로 지금 결제되며, 결제일은 그대로 유지됩니다.")
-                    .replace("{a}", won(diff, en))
-                : T("즉시 PRO가 적용됩니다. 이번 결제 주기가 거의 끝나 지금 청구되는 금액은 없으며, 다음 결제일부터 PRO 요금으로 청구됩니다."))
-              + alsoResume);
-          }
-          return ask(T("BASIC으로 변경하시겠습니까?"),
-            T("{date}부터 BASIC이 적용됩니다. 그때까지는 PRO를 그대로 이용하실 수 있습니다.")
-              .replace("{date}", endDay) + alsoResume);
-        },
-        fn: "changePlan",
-        arg: { plan: pend ? sub.plan : other.id },
-        /* 업그레이드 결과 문구는 미리 보여 준 금액이 아니라 실제 청구액으로
-           쓴다 — 둘이 다를 수 있고(서버가 다시 계산한다), 다르면 카드 명세와
-           화면이 어긋난다. */
-        done: d => pend ? T("플랜 변경이 취소되었습니다.")
-          : up ? ((d && d.charged > 0)
-              ? T("{p} 플랜이 바로 적용되었습니다. 차액 {a}이 결제되었습니다.")
-                  .replace("{p}", other.name).replace("{a}", won(d.charged, en))
-              : T("{p} 플랜이 바로 적용되었습니다. 지금 청구된 금액은 없습니다.")
-                  .replace("{p}", other.name))
-          : T("{d}부터 {p} 플랜으로 변경됩니다.")
-              .replace("{d}", endDay).replace("{p}", other.name),
-      })));
+    /* 요금제 변경(업그레이드 · 다운그레이드 · 변경 예약)은 없다 — 요금제가 멤버십 하나다(2026-11-24).
+       남은 일은 카드 바꾸기 · 해지(또는 해지 취소) · 환불 셋이다. */
 
     if (canCard()) {
       /* 주소 모양은 pricing.html 과 같아야 한다(plan + method=1).
          method 를 빼면 결제창이 '카드 변경' 이 아니라 새 결제로 뜬다. */
-      const a = el("a", "ks-btn", T("결제 수단 변경"));
-      a.href = cardHref(sub);
+      const a = el("a", "ks-btn", T("결제 수단 변경하기"));
+      a.href = cardHref();
       btns.appendChild(a);
     }
+
+    /* 해지 한 벌 — '해지하기' 단추와, 환불 가능한 금액이 없을 때 환불 창이 안내하는 해지가 같은 길을 지난다. */
+    const cancelFlow = {
+      confirm: () => ask(T("구독을 해지하시겠습니까?"),
+        T("{date}까지는 그대로 이용하실 수 있으며, 그 이후 결제되지 않습니다. 해지는 언제든지 취소하실 수 있습니다.")
+          .replace("{date}", endDay),
+        "cancel", { yes: T("해지하기"), no: T("닫기") }),
+      fn: "cancelSubscription",
+      done: () => T("해지 예약이 완료되었습니다."),
+      survey: "구독 해지",
+    };
 
     /* 해지와 재개는 한 자리에서 뒤집힌다. 버튼을 둘 다 두면 지금 어느 상태인지가
        흐려진다. 재개는 되돌리기 쉬우므로 묻지 않는다. */
     if (sub.cancelAtPeriodEnd) {
-      btns.appendChild(button("해지 취소", "primary", b => act(b, {
+      btns.appendChild(button("해지 취소하기", "primary", b => act(b, {
         fn: "resumeSubscription",
         done: () => T("해지가 취소되었습니다."),
       })));
     } else {
-      btns.appendChild(button("구독 해지", "danger", b => act(b, {
-        confirm: () => ask(T("구독을 해지하시겠습니까?"),
-          T("{date}까지는 그대로 이용하실 수 있으며, 그 이후 결제되지 않습니다. 해지는 언제든지 취소하실 수 있습니다.")
-            .replace("{date}", endDay)
-          + (pend ? T(" 예약해 두신 {p} 플랜 변경은 함께 취소됩니다.").replace("{p}", pend.name) : ""),
-          "cancel"),
-        fn: "cancelSubscription",
-        done: () => T("해지 예약이 완료되었습니다."),
-        survey: "구독 해지",
-      })));
+      btns.appendChild(button("해지하기", "danger", b => act(b, cancelFlow)));
     }
 
     /* 확인 창에서 사용자가 본 금액. 그 값 그대로 서버에 되돌려주고, 서버는
-       다시 계산해 다르면 실행하지 않는다. 창을 띄운 뒤 리포트를 한 건 열면
-       오늘이 이용일로 잡혀 금액이 달라지는데, 그대로 진행하면 사용자는 본 적
-       없는 금액을 받게 된다. */
+       다시 계산해 다르면 실행하지 않는다. 창을 띄운 뒤 리포트를 처음 열거나
+       날짜가 바뀌면 금액이 달라지는데, 그대로 진행하면 사용자는 본 적 없는
+       금액을 받게 된다. */
     let quoted = null;
-    btns.appendChild(button("환불 신청", "danger", b => act(b, {
-      /* 금액을 먼저 물어보고 창에 적는다. 여태 "이용하신 일수를 차감해
-         산정됩니다" 만 적고 얼마인지는 누른 뒤에야 알려 줬다.
-
-         그리고 플랜을 바꾸려고 환불을 누르는 사람이 있다. 환불했다 다시 사면
-         한 달치를 새로 내지만, 플랜 변경은 남은 기간의 차액만 받고 바로
-         적용된다. 누르기 전에 말해 주지 않으면 훨씬 비싼 길로 돌아가게 된다. */
+    btns.appendChild(button("환불 신청하기", "danger", b => act(b, {
+      /* 금액을 먼저 물어보고 창에 적는다 — 환불 금액과 계산 내역(결제금액 · 이용일수 ·
+         이용료 · 위약금), 그 금액이 나온 까닭 한 줄, 그리고 결제 화면 · 자주 묻는 질문과
+         같은 환불 기준. 계산은 서버(시연)가 한 값을 그대로 쓴다. */
       confirm: async () => {
         quoted = null;
-        let head = T("환불 금액은 이용하신 일수를 차감해 산정됩니다.");
+        let q = null;
         try {
-          const q = (await call("refundPreview", {})).data;
-          if (q && Number.isFinite(q.amount)) {
-            quoted = q.amount;
-            const endMs = typeof q.endsAt === "number" ? q.endsAt : Date.parse(q.endsAt);
-            head = T("{a}이 환불됩니다.").replace("{a}", won(q.amount, en)) + " "
-              + (Number.isFinite(endMs) && endMs > Date.now()
-                 ? T("오늘 자정까지 이용하실 수 있습니다.")
-                 : T("이용은 신청 즉시 종료됩니다."));
-          }
+          const d = (await call("refundPreview", {})).data;
+          if (d && Number.isFinite(d.amount)) q = d;
         } catch (e) {
           // 견적을 못 받아도 신청 자체는 막지 않는다. 금액만 못 적을 뿐이다.
           console.error("[settings] refundPreview", e);
         }
-        return ask(T("환불을 신청하시겠습니까?"),
-          head + "\n\n"
-          + T("오늘 리포트를 보셨다면 오늘까지 이용하실 수 있고, 오늘 한 건도 보지 않으셨다면 오늘은 차감하지 않고 이용이 바로 종료됩니다.")
-          + "\n\n" + T("플랜 변경만 원하시는 경우에는 환불 대신 위의 ‘플랜 변경’을 이용하여 주시기 바랍니다. 남은 기간에 대한 차액만 결제되며 즉시 적용됩니다."),
-          "refund");
+        /* 계산한 금액이 0원이면 환불을 실행하지 않는다(서버도 거절한다). 환불 단추 대신
+           해지를 안내한다 — 해지하면 다음 결제일부터 청구되지 않는다. 더 청구하는 일은 없다.
+           해지가 이미 예약돼 있으면 할 일이 없으니 닫기만 둔다. */
+        if (q && q.amount <= 0) {
+          const scheduled = !!sub.cancelAtPeriodEnd;
+          const go = await ask(T("환불 금액"), [
+            scheduled
+              ? T("환불 가능한 금액이 없습니다. 해지가 예약되어 있어 다음 결제일부터 이용료가 청구되지 않습니다.")
+              : T("환불 가능한 금액이 없습니다. 해지하시면 다음 결제일부터 이용료가 청구되지 않습니다."),
+            quoteNode(q, en), noticeNode(),
+          ], null, scheduled ? { yes: null, no: T("닫기") } : { yes: T("해지하기"), no: T("닫기") });
+          if (go && !scheduled) await act(b, cancelFlow);
+          return false;
+        }
+        const parts = [];
+        if (q) {
+          quoted = q.amount;
+          const endMs = typeof q.endsAt === "number" ? q.endsAt : Date.parse(q.endsAt);
+          parts.push(T("{a}이 환불됩니다.").replace("{a}", won(q.amount, en)) + " "
+            + (Number.isFinite(endMs) && endMs > Date.now()
+               ? T("오늘 자정까지 이용하실 수 있습니다.")
+               : T("이용은 신청 즉시 종료됩니다.")));
+          const line = WHY_LINE[q.why || q.reason];
+          if (line) parts.push(line());
+          parts.push(quoteNode(q, en));
+        } else {
+          parts.push(T("환불 금액은 아래 환불 기준에 따라 산정됩니다."));
+        }
+        parts.push(noticeNode());
+        return ask(T("환불을 신청하시겠습니까?"), parts, "refund", { yes: T("환불 신청하기"), no: T("닫기") });
       },
       fn: "requestRefund",
       arg: () => (quoted == null ? {} : { expectAmount: quoted }),
       /* 언제까지 볼 수 있는지를 결과에 같이 적는다. 금액만 알려 주면 오늘
-         남은 열람을 쓸 수 있는지 없는지를 눌러 봐야 안다.
+         더 볼 수 있는지 없는지를 눌러 봐야 안다.
          endsAt 은 미리보기가 밀리초, 서버가 ISO 문자열로 준다 — 문자열을
          숫자와 그냥 비교하면 늘 거짓이 되어 항상 '지금 종료' 로 적힌다.
          금액 이름도 둘이 다르다(서버 amount · 미리보기 refunded). */
@@ -956,19 +966,18 @@ function paneSubscription() {
   }
 
   const load = async (st) => {
-    const [usage, payments] = await Promise.all([
-      call("getUsage", {}).then(r => (r && r.data) || null).catch(() => null),
-      /* 결제 내역. 미리보기든 실제든 같은 이름을 부른다 — 화면이 어느 쪽에
-         붙어 있는지 따질 이유가 없다.
+    /* 결제 내역. 미리보기든 실제든 같은 이름을 부른다 — 화면이 어느 쪽에
+       붙어 있는지 따질 이유가 없다.
 
-         받아 왔으면 배열이고(비어 있어도 배열이다), 못 받아 왔으면 null 이다.
-         그 둘을 구별해야 한다. 실패를 빈 배열로 뭉개면 결제한 사람에게
-         '아직 결제 내역이 없습니다' 가 뜬다 — 돈이 안 들어온 줄 안다. */
-      call("listPayments", {})
-        .then(r => ((r && r.data && r.data.items) || []))
-        .catch(() => null),
-    ]);
-    draw(st, usage, payments);
+       받아 왔으면 배열이고(비어 있어도 배열이다), 못 받아 왔으면 null 이다.
+       그 둘을 구별해야 한다. 실패를 빈 배열로 뭉개면 결제한 사람에게
+       '아직 결제 내역이 없습니다' 가 뜬다 — 돈이 안 들어온 줄 안다.
+
+       오늘 열람 수(getUsage)는 더 부르지 않는다 — 하루 한도가 없어 적을 칸이 없다(2026-11-24). */
+    const payments = await call("listPayments", {})
+      .then(r => ((r && r.data && r.data.items) || []))
+      .catch(() => null);
+    draw(st, payments);
   };
   const refresh = () => load(pw.state());
 

@@ -37,8 +37,8 @@ if(window.KOSi18n) window.KOSi18n.register({
     "Something went wrong while deleting your account. Please try again later.",
   "정말 탈퇴하시겠습니까?":"Delete your account?",
   /*@paid*/"이용 중인 구독이 있습니다":"You have an active subscription",
-  "탈퇴하시면 구독이 즉시 해지되고, 환불 기준에 따라 산정된 금액이 자동으로 환불됩니다. 오늘 리포트를 열람하셨다면 오늘은 이용일로 차감되며, 계정이 삭제되므로 오늘 남은 열람은 사용하실 수 없습니다. 금액을 먼저 확인하시거나 오늘 남은 열람을 사용하신 뒤 나가시려면 구독 관리에서 환불을 신청하여 주시기 바랍니다.":
-    "Deleting your account cancels the subscription right away and refunds the amount due under our refund terms. If you opened a report today, today counts as a used day, and because the account is deleted you cannot use the rest of today's limit. To see the amount first, or to use the rest of today before leaving, request the refund under Subscription instead.",
+  "탈퇴하시면 구독이 즉시 해지되고, 환불 기준에 따라 산정된 금액이 자동으로 환불됩니다. 계정이 삭제되므로 남은 이용 기간은 이용하실 수 없습니다. 환불 금액은 구독 관리의 환불 신청 화면에서 먼저 확인하실 수 있습니다.":
+    "Deleting your account cancels the subscription right away and refunds the amount due under our refund terms. Because the account is deleted, you cannot use the rest of your billing period. You can check the refund amount first on the refund screen under Subscription.",
   "구독 관리로 이동":"Go to subscription",
   "환불을 처리하지 못하여 탈퇴를 진행하지 않았습니다. 구독 관리에서 환불을 먼저 신청하여 주시기 바랍니다.":
     "We could not process the refund, so your account was not deleted. Please request the refund on the subscription page first.",/*@/paid*/
@@ -136,7 +136,7 @@ async function openWithdrawModal(){
       <p class="wd-warn">${T("계정과 저장된 관심종목이 영구 삭제되며, 되돌릴 수 없습니다.")}</p>
       ${/*@paid*/sub ? `<div class="wd-sub">
         <b>${T("이용 중인 구독이 있습니다")}</b>
-        <p>${T("탈퇴하시면 구독이 즉시 해지되고, 환불 기준에 따라 산정된 금액이 자동으로 환불됩니다. 오늘 리포트를 열람하셨다면 오늘은 이용일로 차감되며, 계정이 삭제되므로 오늘 남은 열람은 사용하실 수 없습니다. 금액을 먼저 확인하시거나 오늘 남은 열람을 사용하신 뒤 나가시려면 구독 관리에서 환불을 신청하여 주시기 바랍니다.")}</p>
+        <p>${T("탈퇴하시면 구독이 즉시 해지되고, 환불 기준에 따라 산정된 금액이 자동으로 환불됩니다. 계정이 삭제되므로 남은 이용 기간은 이용하실 수 없습니다. 환불 금액은 구독 관리의 환불 신청 화면에서 먼저 확인하실 수 있습니다.")}</p>
         <button type="button" class="wd-tosubs">${T("구독 관리로 이동")}</button>
       </div>` : /*@/paid*/""}
       <p class="wd-q">${T("떠나시는 이유를 알려주시면 개선에 반영하겠습니다 (복수 선택 가능)")}</p>
