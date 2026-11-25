@@ -132,8 +132,12 @@ const dlgClick = async label => {
 };
 const kstDayNo = (ms) => Math.floor((ms + KST) / DAY);
 const endOfToday = () => (kstDayNo(Date.now()) + 1) * DAY - KST;
-/* 결제일부터 한 달(서버 · 시연 addMonth 와 같은 식 — 31일이면 다음 달 말일) */
-const addMonth = (from) => { const d = new Date(from), day = d.getDate(); d.setMonth(d.getMonth() + 1); if (d.getDate() !== day) d.setDate(0); return d.getTime(); };
+/* 한 달 뒤의 결제일 오전 9시(한국 시간) — 서버 · 시연 addMonth 와 같은 식(2026-11-25 · 31일이면 다음 달 말일) */
+const addMonth = (from) => {
+  const k = new Date(from + 9 * 3600e3), y = k.getUTCFullYear(), m = k.getUTCMonth() + 1;
+  const last = new Date(Date.UTC(y, m + 1, 0)).getUTCDate();
+  return Date.UTC(y, m, Math.min(k.getUTCDate(), last), 9) - 9 * 3600e3;
+};
 const won = (n) => n.toLocaleString("en-US") + "원";
 
 /* 결제한 지 elapsed 일 지난 구독(이용 기간 len 일)을 만든다. 결제 시점(from)도 같이 옮긴다 —
@@ -612,7 +616,9 @@ ok("배지가 '결제 실패'", txt().includes("결제 실패"));
 ok("왜 막혔는지 설명한다", txt().includes("승인되지 않았습니다"));
 /* 카드 재등록과 해지, 둘뿐이다. 해지를 빼면 재시도를 멈출 방법이 없어진다. */
 ok("카드 재등록과 해지, 둘만 준다", btns().join("|") === "결제 수단 변경하기|해지하기", btns().join("|"));
-ok("언제 다시 시도하는지 알려 준다", txt().includes("1일·3일·5일·7일째"), txt().slice(0, 400));
+/* 날짜는 서버의 재시도 일정(RETRY_DAYS · 최초 거절일 다음 날부터 센다)과 같은 말로 쓴다. 옛 문구 '1일·3일·5일·7일째' 는
+   거절된 날을 1일째로 읽을 수 있어 하루 어긋났다(2026-11-25 · 약관 유료판 제9조와 같은 말로 맞췄다). */
+ok("언제 다시 시도하는지 알려 준다", txt().includes("최초 승인 거절일부터 1일·3일·5일·7일이 되는 날에"), txt().slice(0, 400));
 {
   /* 해지하면 재시도가 멈추고 그 자리에서 끝난다 — 예약이 아니다. */
   const r = await w.KOSDemo.call("cancelSubscription", {});

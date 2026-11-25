@@ -1642,12 +1642,13 @@ const REFUND_NOTICE = /*@json*/{
   }
 }/*@/json*/;
 
-/* 자본시장법 제101조의3 이 유사투자자문업자에게 표시하게 한 세 사항을 두 문장에 담는다. 약관 제16조와 같은 말이다. */
+/* 자본시장법 제101조의3 이 유사투자자문업자에게 표시하게 한 세 사항을 두 문장에 담는다. 약관 제16조와 같은 말이다.
+   한국어는 사이트 꼬리(comp_common.LEGAL_NOTE_KO), 영어는 그 문장의 번역(scripts/i18n/legal.json)과 같다 — biz_sell_test 가 견준다. */
 const LEGAL_LINES = {
   ko: ["KOSAI는 금융투자업자가 아닌 유사투자자문업자로, 개별적인 투자상담과 자금운용을 하지 않습니다.",
        "투자에는 원금 손실이 발생할 수 있으며, 그 손실은 투자자에게 귀속됩니다."],
-  en: ["KOSAI is a quasi-investment advisory business, not a licensed financial investment business, and does not provide individual investment advice or manage funds.",
-       "Investing can result in a loss of principal, and any such loss is borne by the investor."],
+  en: ["KOSAI is a quasi-investment advisory business, not a financial investment business entity, and does not provide individual investment consultation or manage funds.",
+       "Investments may result in loss of principal, and any such loss is borne by the investor."],
 };
 
 /* 카드사 이름. 구독 문서의 card.company 에는 토스가 준 발급사 코드(issuerCode)가 들어 있다(confirmBilling). 아는 코드만
@@ -1875,12 +1876,16 @@ function termsNoticeMail(lang){
   const items = en ? [
     `① The earnings analysis, industry analysis, outlook, valuation commentary, bull and bear factors, risk factors, next checkpoints and overall view in our reports will be provided to Membership subscribers (${price} a month, VAT included). The report overview, business structure, earnings trend and sources, as well as our industry analysis and Morning Brief, remain free.`,
     `② Membership is a monthly recurring payment by credit or debit card and can be cancelled at any time. Within ${REFUND_WINDOW_DAYS} days of the billing date, we refund the amount paid minus the usage charge for the days used (the full amount if you have not opened the paid sections); after ${REFUND_WINDOW_DAYS} days, we refund the amount paid minus the usage charge for the days used and ${REFUND_PENALTY_PCT}% of the amount paid.`,
-    `③ The paid service will start after our report as a quasi-investment advisory business is accepted. ${LEGAL_LINES.en[0]} ${LEGAL_LINES.en[1]}`,
+    "③ The paid service will start after our report as a quasi-investment advisory business is accepted. Article 16 of the revised Terms "
+      + "states that KOSAI is a quasi-investment advisory business, not a financial investment business entity, and does not provide individual "
+      + "investment consultation or manage funds, and that investments may result in loss of principal, which is borne by the investor.",
     "④ Our Privacy Policy adds the processing of the payment information needed for subscription payments and refunds and of records of viewing the paid sections, and the outsourcing of payment processing (Toss Payments).",
   ] : [
     `① 리포트의 실적 분석, 산업 분석, 전망, 밸류에이션 해설, 강세·약세 요인, 리스크 요인, 다음 체크포인트, 종합 의견은 멤버십(월 ${price}, 부가가치세 포함) 회원에게 제공합니다. 리포트의 개요, 사업 구조, 실적 추이, 참고 출처와 업종 분석, 모닝브리핑은 계속 무료로 제공합니다.`,
     `② 멤버십은 신용·체크카드 월 정기결제이며 언제든지 해지할 수 있습니다. 결제일부터 ${REFUND_WINDOW_DAYS}일 이내에는 이용한 날의 이용료만 빼고 환불하며(유료 영역을 열람하지 않으셨다면 전액), ${REFUND_WINDOW_DAYS}일이 지난 뒤에는 이용한 날의 이용료와 결제금액의 ${REFUND_PENALTY_PCT}%를 빼고 환불합니다.`,
-    `③ 유료 서비스는 유사투자자문업 신고 수리 후 시작하며, KOSAI는 금융투자업자가 아닌 유사투자자문업자로서 개별적인 투자상담과 자금운용을 하지 않습니다. ${LEGAL_LINES.ko[1]}`,
+    /* 통지는 신고 수리 전에 나간다 — 지금 유사투자자문업자인 것처럼 쓰지 않고, 개정 약관 제16조에 둘 고지로 쓴다(2026-11-25). */
+    "③ 유료 서비스는 유사투자자문업 신고가 수리된 뒤에 시작합니다. 개정 약관 제16조에는 KOSAI가 금융투자업자가 아닌 유사투자자문업자로서 "
+      + "개별적인 투자상담과 자금운용을 하지 않는다는 사항과, 투자에는 원금 손실이 발생할 수 있으며 그 손실은 투자자에게 귀속된다는 사항을 둡니다.",
     "④ 개인정보 처리방침에 구독 결제와 환불에 필요한 결제 정보, 유료 영역 열람 기록의 처리와 결제 처리 위탁(토스페이먼츠)을 추가합니다.",
   ];
   const tail = en ? [
@@ -3353,14 +3358,24 @@ async function withLock(db, ref, op, fn) {
   }
 }
 
-/** 한 달 뒤. 31일처럼 다음 달에 없는 날짜는 그 달의 마지막 날로 맞춘다. */
-function addMonth(from) {
-  const d = new Date(from);
-  const day = d.getDate();
-  d.setMonth(d.getMonth() + 1);
-  if (d.getDate() !== day) d.setDate(0);
-  return d;
+/* 이용 기간이 끝나는 시각 — 결제일 오전 9시(한국 시간). 2026-11-25 고침(약관 제9조② '해지 전까지 매월 같은 날 자동으로 결제').
+   전에는 결제한 시각 그대로 한 달 뒤에 끝났고, 갱신 배치(하루 한 번 11시)는 이미 끝난 기간만 결제했다. 그래서 오후에 결제한 회원은 한 달
+   뒤 결제일 오후에 기간이 끝난 뒤 다음 날 11시까지 유료 영역이 잠겼고 결제일이 하루 밀렸다. 배치가 몇 초 일찍 돌아도 같은 일이 되풀이됐다.
+   이제 기간은 결제일 9시에 끝나고, 갱신 배치(renewSubscriptions)가 결제일 8시 30분에 그날 끝나는 기간을 결제한다. 약관 제2조제6호의 이용
+   기간(결제일부터 다음 결제일 전날까지)은 날로 세므로 시각을 맞춰도 날 수는 같다(환불의 이용일수 · 기간 일수도 날로 센다 — refundQuote). */
+const PERIOD_END_HOUR = 9;
+
+/** 한 달 뒤의 결제일 오전 9시(한국 시간). day 를 주면 그 날(그 달에 없으면 마지막 날), 주지 않으면 from 의 한국 날짜.
+    서버 시계는 세계 표준시라 한국 날짜로 센다 — getDate 로 세면 한국 시간 0~9시에 시작한 기간이 월말에 하루 밀린다
+    (3월 31일 8시 → 5월 1일). 31일에 시작한 구독은 짧은 달에는 마지막 날, 그다음 달에는 다시 31일이다(구독 문서 billingDay). */
+function addMonth(from, day = 0) {
+  const k = new Date(new Date(from).getTime() + KST_OFFSET);          // 한국 시간의 벽시계를 UTC 칸에 담아 센다
+  const y = k.getUTCFullYear(), m = k.getUTCMonth() + 1;              // 다음 달(12월의 다음은 Date.UTC 가 이듬해 1월로 넘긴다)
+  const last = new Date(Date.UTC(y, m + 1, 0)).getUTCDate();          // 다음 달의 마지막 날
+  return new Date(Date.UTC(y, m, Math.min(day || k.getUTCDate(), last), PERIOD_END_HOUR) - KST_OFFSET);
 }
+/** 한국 날짜의 '일'(1~31) — 구독 문서의 결제일(billingDay)로 적는다. */
+const kstDom = (ms) => new Date(new Date(ms).getTime() + KST_OFFSET).getUTCDate();
 /* 결제 화면이 보낸 요금제. 고를 것이 하나뿐이라 비어 있으면 member 다. 옛 결제 화면이
    basic · pro 를 보내도 member(월 14,900원)로 받는다 — 금액은 언제나 서버 표(PRICE)에서
    읽는다. 그 밖의 값은 거절한다. */
@@ -3702,6 +3717,7 @@ if (PAYMENTS_LIVE) exports.confirmBilling = onCall(
           patch.pendingPlan = admin.firestore.FieldValue.delete();
           patch.currentPeriodStart = admin.firestore.Timestamp.fromDate(at);
           patch.currentPeriodEnd = admin.firestore.Timestamp.fromDate(addMonth(at));
+          patch.billingDay = kstDom(at);   // 약관 제9조④ — 결제가 완료되면 그날부터 새 이용 기간(결제일도 그날로)
           patch.lastPaymentKey = pay ? pay.paymentKey : null;
           /* 새 주기다 — 지난 주기의 결제 건은 여기서 끊는다. 안 끊으면 환불이
              이미 다 쓴 지난달 결제까지 기준에 넣고, 그 건을 취소하려 든다. */
@@ -3785,6 +3801,7 @@ if (PAYMENTS_LIVE) exports.confirmBilling = onCall(
       const prevEnd = cur && cur.currentPeriodEnd ? cur.currentPeriodEnd.toMillis() : 0;
       const start = now;
       const end = addMonth(new Date(Math.max(now.getTime(), prevEnd)));
+      const billingDay = kstDom(Math.max(now.getTime(), prevEnd));   // 매월 같은 날(약관 제9조②) — 31일이면 짧은 달 뒤에 다시 31일
       const sub = {
         billingKey: issued.billingKey, customerKey, plan,
         card: { company: (issued.card && issued.card.issuerCode) || "", number: (issued.card && issued.card.number) || "" },
@@ -3800,6 +3817,7 @@ if (PAYMENTS_LIVE) exports.confirmBilling = onCall(
         status: "active",
         currentPeriodStart: admin.firestore.Timestamp.fromDate(start),
         currentPeriodEnd: admin.firestore.Timestamp.fromDate(end),
+        billingDay,
         cancelAtPeriodEnd: false,
         /* 환불하고 다시 시작한 경우엔 시작일도 새로 본다. 지난 구독은 돈까지
            돌려주고 끝냈는데 '구독 시작일' 만 그때로 남으면 이어진 것처럼 읽힌다. */
@@ -4193,22 +4211,26 @@ if (PAYMENTS_LIVE) exports.refundPreview = onCall({ region: REGION, maxInstances
 });
 
 /* ── 5) 정기결제 갱신 ────────────────────────────────────────
-   매일 한 번 돌며 기간이 끝난 구독을 갱신한다. 크론은 UTC 로만 해석되므로
-   02:00 UTC(= 같은 날 11:00 KST)로 적는다. 15시 이후로 잡으면 한국 날짜가 밀린다.
+   매일 한국 시간 8시 30분에 돌며 오늘(한국 날짜) 끝나는 기간을 결제한다 — 기간은 결제일 9시에 끝나므로(addMonth) 끝나기 전에
+   결제되고, 결제일이 밀리지 않는다(약관 제9조② '매월 같은 날'). 2026-11-25 전에는 11시에 돌며 이미 끝난 기간만 결제해, 오후에
+   결제한 회원은 결제일 오후부터 다음 날 11시까지 잠기고 결제일이 하루 밀렸다. 해지 예약 · 이용일수 환불의 종료는 기간이 실제로
+   끝난 뒤에만 닫는다(오늘 오후에 끝나는 것은 내일 배치가 닫는다 — 이용 권한은 currentPeriodEnd 에서 저절로 닫힌다).
    ─────────────────────────────────────────────────────────── */
 if (PAYMENTS_LIVE) exports.renewSubscriptions = onSchedule(
   // 카드를 긁으려면 토스 키, 실패를 알리려면 메일 키가 필요하다. 부르는 함수가
   // 쓰는 열쇠를 여기서 선언하지 않으면 그 자리에서 터진다.
   /* timeoutSeconds — 한 회원마다 카드사 호출과 안내 메일을 기다린다. 기본 한도(60초)로는 하루 대상이 수십 명만 되어도 중간에
      끊겨, 끊긴 뒤의 회원은 다음 날로 밀린다. 9분(540초)을 준다. */
-  { region: REGION, maxInstances: CAP_SCHEDULE, schedule: "0 2 * * *", timeZone: "Etc/UTC", timeoutSeconds: 540,
+  { region: REGION, maxInstances: CAP_SCHEDULE, schedule: "30 8 * * *", timeZone: "Asia/Seoul", timeoutSeconds: 540,
     secrets: [TOSS_SECRET_KEY, RESEND_API_KEY] },
   async () => {
     const db = admin.firestore();
     const now = new Date();
+    /* 오늘(한국 날짜) 안에 끝나는 기간 — 이미 끝난 것과 오늘 9시에 끝날 것. 내일 0시 앞까지. */
+    const todayEnd = kstEndOfToday(now.getTime());
     const due = await db.collection("subscriptions")
       .where("status", "==", "active")
-      .where("currentPeriodEnd", "<=", admin.firestore.Timestamp.fromDate(now))
+      .where("currentPeriodEnd", "<", admin.firestore.Timestamp.fromDate(todayEnd))
       .limit(400).get();
     console.log(`[renew] 대상 ${due.size}건`);
 
@@ -4266,10 +4288,13 @@ if (PAYMENTS_LIVE) exports.renewSubscriptions = onSchedule(
           if (!fresh || fresh.status !== "active") return;
           const endMs = fresh.currentPeriodEnd && fresh.currentPeriodEnd.toMillis
             ? fresh.currentPeriodEnd.toMillis() : 0;
-          if (endMs > now.getTime()) return;      // 그 사이 새 기간이 시작됐다
+          if (endMs >= todayEnd.getTime()) return;      // 그 사이 새 기간이 시작됐다(끝나는 날이 오늘 뒤)
           sub = fresh;
           plan = planOf(sub.plan);
 
+          /* 해지 예약 · 이용일수를 뺀 환불은 기간이 실제로 끝난 뒤에 닫는다 — 오늘 오후 · 자정에 끝나는 것을 아침에 닫으면 남은 시간을
+             빼앗는다. 내일 배치가 닫는다(그때까지 이용 권한은 currentPeriodEnd 에서 저절로 닫힌다). */
+          if (sub.cancelAtPeriodEnd && endMs > now.getTime()) return;
           if (sub.cancelAtPeriodEnd) {
             /* 해지 예약 · 이용일수를 뺀 환불이 기간 끝에 닫힌다 — 구독이 끝났으니 결제 수단 정보를 지운다(eraseBilling). */
             await d.ref.set({ status: "expired", ...eraseBilling(),
@@ -4279,11 +4304,18 @@ if (PAYMENTS_LIVE) exports.renewSubscriptions = onSchedule(
           const pay = await charge(db, uid, { ...sub, plan }, PRICE[plan],
             `${PLAN_NAME[plan]} 월 구독`, "renew", null,
             `renew_${uid}_${kstDayNo(endMs)}`);
+          /* 다음 결제일 — 구독 문서의 결제일(billingDay)로 센다. 31일 결제는 2월 28일 다음에 3월 31일이다. 칸이 없는 옛 문서는
+             끝나는 날의 '일'. 배치가 멈춰 결제일을 넘겨 결제하게 되면(우리 쪽 사정으로 늦은 결제) 그날부터 한 달을 준다 — 결제일에
+             맞추면 늦은 만큼 짧은 기간에 한 달 값을 받게 된다. */
+          const late = kstDayNo(now.getTime()) > kstDayNo(endMs);
+          const day = late ? kstDom(now.getTime()) : (sub.billingDay || kstDom(endMs));
+          const nextEnd = addMonth(now, day);
           await d.ref.set({
             plan, status: "active",
             pendingPlan: admin.firestore.FieldValue.delete(),   // 옛 요금제 변경 예약
             currentPeriodStart: admin.firestore.Timestamp.fromDate(now),
-            currentPeriodEnd: admin.firestore.Timestamp.fromDate(addMonth(now)),
+            currentPeriodEnd: admin.firestore.Timestamp.fromDate(nextEnd),
+            billingDay: day,
             lastPaymentKey: pay ? pay.paymentKey : sub.lastPaymentKey,
             // 새 주기다 — 지난 주기의 결제 건은 여기서 끊는다. 이어 붙이면
             // 환불이 이미 지나간 달의 돈까지 기준에 넣는다.
@@ -4296,7 +4328,7 @@ if (PAYMENTS_LIVE) exports.renewSubscriptions = onSchedule(
           }, { merge: true });
           /* 정기결제 완료 안내 — 못 보내도 결제는 끝난 것이다(sendMail 은 던지지 않는다). */
           await sendMail(db, uid, "renew", sub.mailLang,
-            paidMailData(PRICE[plan], pay, now.getTime(), addMonth(now).getTime(), sub));
+            paidMailData(PRICE[plan], pay, now.getTime(), nextEnd.getTime(), sub));
         });
       } catch (e) {
         /* 자물쇠를 못 잡은 것은 실패가 아니다. 그 사람이 지금 결제·환불을 하는
@@ -4419,6 +4451,7 @@ if (PAYMENTS_LIVE) exports.renewSubscriptions = onSchedule(
               pendingPlan: admin.firestore.FieldValue.delete(),   // 옛 요금제 변경 예약
               currentPeriodStart: admin.firestore.Timestamp.fromDate(now),
               currentPeriodEnd: admin.firestore.Timestamp.fromDate(addMonth(now)),
+              billingDay: kstDom(now.getTime()),   // 약관 제9조④ — 결제가 완료된 날이 새 결제일
               lastPaymentKey: pay ? pay.paymentKey : fresh.lastPaymentKey,
               periodPayments: pay
                 ? [{ key: pay.paymentKey, amount: PRICE[plan], from: now.getTime() }] : [],

@@ -29,13 +29,14 @@ import {
   ok, eq, section, done, DAY, HOUR, MIN, UID, kstMidnightAfter,
 } from "./lib/paid-harness.mjs";
 
-/* functions/index.js 의 addMonth 와 같아야 한다(⑦ 이 견준다). */
-function addMonth(from) {
-  const d = new Date(from);
-  const day = d.getDate();
-  d.setMonth(d.getMonth() + 1);
-  if (d.getDate() !== day) d.setDate(0);   // 31일 → 다음 달 말일
-  return d;
+/* functions/index.js 의 addMonth 와 같아야 한다(⑦ 이 견준다). 2026-11-25 — 한국 날짜로 세고, 기간은 결제일 오전 9시에 끝난다. */
+const KST_OFFSET = 9 * 3600 * 1000;
+const PERIOD_END_HOUR = 9;
+function addMonth(from, day = 0) {
+  const k = new Date(new Date(from).getTime() + KST_OFFSET);          // 한국 시간의 벽시계를 UTC 칸에 담아 센다
+  const y = k.getUTCFullYear(), m = k.getUTCMonth() + 1;              // 다음 달(12월의 다음은 Date.UTC 가 이듬해 1월로 넘긴다)
+  const last = new Date(Date.UTC(y, m + 1, 0)).getUTCDate();          // 다음 달의 마지막 날
+  return new Date(Date.UTC(y, m, Math.min(day || k.getUTCDate(), last), PERIOD_END_HOUR) - KST_OFFSET);
 }
 
 /* confirmBilling 의 새 구독 기간 계산. */
@@ -203,7 +204,8 @@ section("⑧-2 이용일수를 뺀 환불 뒤 같은 날 다시 결제 — 자�
   eq("  아침에 본 종목을 새 기간에 다시 열면 연 것이다 → 이용일수 차감", n2.why, "early");
 }
 {
-  /* 겹친 시간을 붙인 기간이 달 끝에 걸리면 32일이 된다 — 그래도 같은 식으로 센다 */
+  /* 겹친 시간을 붙인 기간이 달 끝에 걸린다 — 기준(3월 31일 0시)의 한 달 뒤는 4월 말일이다(31일 → 짧은 달 말일).
+     2026-11-25 전에는 한 달 더하기를 세계 표준시로 세어 3월 31일 0시(UTC 로는 30일)가 5월 1일이 되고 32일 기간이었다. */
   const T3 = Date.parse("2027-03-30T05:00:00Z");      // 한국 시간 3월 30일 14시
   begin(T3);
   await pay();
@@ -215,7 +217,8 @@ section("⑧-2 이용일수를 뺀 환불 뒤 같은 날 다시 결제 — 자�
   await pay();
   clock.set(T3 + 2 * DAY);
   const q = (await call("refundPreview")).data || {};
-  eq("3월 30일 환불 뒤 재결제 → 5월 1일 0시까지 · 32일 기간", [q.totalDays, q.usedDays], [32, 3]);
+  eq("3월 30일 환불 뒤 재결제 → 결제일 4월 30일 9시까지 · 31일 기간", [q.totalDays, q.usedDays], [31, 3]);
+  eq("  결제일은 31일로 남는다 — 4월 30일 다음 결제일은 5월 31일", sub()?.billingDay, 31);
 }
 
 done();

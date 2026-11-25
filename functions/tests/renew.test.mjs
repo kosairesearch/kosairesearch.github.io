@@ -249,6 +249,71 @@ section("재시도가 사용자 조작과 겹치면");
      chargeTries().length === 0 && sub().status === "past_due" && (sub().retryCount || 0) === 0);
 }
 
+section("결제일 — 매월 같은 날 · 끝나기 전에 결제한다(2026-11-25 · 약관 제9조②)");
+{
+  /* 배치는 한국 시간 8시 30분에 돈다. 기간은 결제일 9시에 끝난다(addMonth). 전에는 11시에 돌며 이미 끝난 기간만 결제해,
+     오후에 끝나는 구독은 다음 날로 밀리고 그사이 잠겼다. */
+  const B = Date.parse("2026-12-02T08:30:00+09:00");
+  const later = Date.parse("2026-12-02T15:00:00+09:00");       // 오늘 오후에 끝나는 옛 기간(결제한 시각 그대로 끝나던 문서)
+  reset(); clock.set(B);
+  seedSub({ startMs: Date.parse("2026-11-02T15:00:00+09:00"), endMs: later, payKey: "old" });
+  await renew();
+  const s = sub();
+  eq("오늘 오후에 끝나는 기간도 오늘 아침에 결제한다", charges(), [14900]);
+  eq("  다음 결제일은 다음 달 같은 날 9시(한국 시간)", new Date(s.currentPeriodEnd.toMillis()).toISOString(), "2027-01-02T00:00:00.000Z");
+  eq("  결제일(billingDay)을 적는다", s.billingDay, 2);
+  eq("  같은 날 두 번 돌아도 다시 결제하지 않는다", (await renew(), charges()), [14900]);
+}
+{
+  const B = Date.parse("2026-12-02T08:30:00+09:00");
+  reset(); clock.set(B);
+  seedSub({ startMs: Date.parse("2026-11-03T09:00:00+09:00"), endMs: Date.parse("2026-12-03T09:00:00+09:00"), payKey: "old" });
+  await renew();
+  eq("내일 끝나는 기간은 오늘 결제하지 않는다", chargeTries().length, 0);
+}
+{
+  /* 다음 달 배치가 몇 초 일찍 돌아도 밀리지 않는다 — 끝나는 날이 오늘이면 결제한다 */
+  const B = Date.parse("2027-01-02T08:29:58+09:00");
+  reset(); clock.set(B);
+  seedSub({ startMs: Date.parse("2026-12-02T08:30:00+09:00"), endMs: Date.parse("2027-01-02T09:00:00+09:00"), payKey: "old", billingDay: 2 });
+  await renew();
+  eq("결제일 9시 전에 돌면 그날 결제한다", charges(), [14900]);
+  eq("  다음 결제일 2월 2일 9시", new Date(sub().currentPeriodEnd.toMillis()).toISOString(), "2027-02-02T00:00:00.000Z");
+}
+{
+  /* 31일 결제 — 짧은 달에는 말일, 그다음 달에는 다시 31일 */
+  const B = Date.parse("2027-02-28T08:30:00+09:00");
+  reset(); clock.set(B);
+  seedSub({ startMs: Date.parse("2027-01-31T14:00:00+09:00"), endMs: Date.parse("2027-02-28T09:00:00+09:00"), payKey: "old", billingDay: 31 });
+  await renew();
+  eq("2월 28일에 결제하고 다음 결제일은 3월 31일 9시", [charges(), new Date(sub().currentPeriodEnd.toMillis()).toISOString(), sub().billingDay],
+     [[14900], "2027-03-31T00:00:00.000Z", 31]);
+}
+{
+  /* 해지 예약 · 이용일수를 뺀 환불은 기간이 실제로 끝난 뒤에 닫는다 — 아침에 닫으면 남은 시간을 빼앗는다 */
+  const B = Date.parse("2026-12-02T08:30:00+09:00");
+  reset(); clock.set(B);
+  seedSub({ startMs: Date.parse("2026-11-02T15:00:00+09:00"), endMs: Date.parse("2026-12-02T15:00:00+09:00"), payKey: "old", cancelAtPeriodEnd: true });
+  await renew();
+  eq("오늘 오후에 끝나는 해지 예약은 아침에 닫지 않는다(결제도 없다)", [sub().status, chargeTries().length, !!sub().billingKey], ["active", 0, true]);
+  clock.set(Date.parse("2026-12-03T08:30:00+09:00"));
+  await renew();
+  eq("  다음 날 배치가 닫고 결제 수단 정보를 지운다", [sub().status, chargeTries().length, "billingKey" in sub()], ["expired", 0, false]);
+}
+{
+  /* 배치가 멈춰 결제일을 넘긴 경우(우리 쪽 사정) — 늦은 날부터 한 달을 준다. 결제일에 맞추면 짧은 기간에 한 달 값을 받는다 */
+  const B = Date.parse("2026-12-05T08:30:00+09:00");
+  reset(); clock.set(B);
+  seedSub({ startMs: Date.parse("2026-11-02T09:00:00+09:00"), endMs: Date.parse("2026-12-02T09:00:00+09:00"), payKey: "old", billingDay: 2 });
+  await renew();
+  eq("결제일을 넘겨 결제하면 그날부터 한 달 · 결제일도 그날", [charges(), new Date(sub().currentPeriodEnd.toMillis()).toISOString(), sub().billingDay],
+     [[14900], "2027-01-05T00:00:00.000Z", 5]);
+}
+{
+  const i = SRC.indexOf("exports.renewSubscriptions");
+  ok("배치는 한국 시간 8시 30분에 돈다", /schedule: "30 8 \* \* \*", timeZone: "Asia\/Seoul"/.test(SRC.slice(i, i + 400)));
+}
+
 section("카드사에 보낸 결제 금액");
 tries.push(...chargeTries());
 ok(`위의 결제 요청 ${tries.length}건의 금액이 모두 숫자였다(NaN · undefined 없음)`,

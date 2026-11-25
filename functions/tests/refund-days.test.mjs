@@ -69,9 +69,9 @@ for (const [start, now, want, why] of [
   eq(why, (await quoteAt(at(start), at(now))).usedDays, want);
 }
 {
-  /* 기간 마지막 날(끝나는 시각 전) — 이용일수가 기간 일수를 넘지 않는다 */
+  /* 기간 마지막 날(끝나는 시각 전) — 이용일수가 기간 일수를 넘지 않는다. 기간은 결제일 오전 9시에 끝난다(2026-11-25 — addMonth) */
   const start = at("2026-11-02T14:00:00+09:00");
-  const q = await quoteAt(start, at("2026-12-02T10:00:00+09:00"));
+  const q = await quoteAt(start, at("2026-12-02T08:00:00+09:00"));
   eq("기간 마지막 날 — 이용일수는 기간 일수(30)에서 멈춘다", [q.usedDays, q.totalDays, q.amount], [30, 30, 0]);
 }
 
@@ -103,8 +103,8 @@ for (const [start, want, why] of [
   const s0 = sub();
   const endKst = s0 && s0.currentPeriodEnd ? kst(s0.currentPeriodEnd.toMillis()) : null;
   clock.set(start + DAY);
-  eq("한국 시간 08시 결제 — 기간은 한국 날짜로 30일(12월 2일 08시까지)",
-     [((await call("refundPreview")).data || {}).totalDays, endKst], [30, "2026-12-02 08:00:00"]);
+  eq("한국 시간 08시 결제 — 기간은 한국 날짜로 30일(결제일 12월 2일 9시까지)",
+     [((await call("refundPreview")).data || {}).totalDays, endKst], [30, "2026-12-02 09:00:00"]);
 }
 
 section("④ 7일 경계 — 신청한 날 − 결제한 날 ≤ 7 (한국 시간 날짜)");

@@ -249,7 +249,7 @@ async function firstPay(data = {}, { email = MAIL } = {}) {
   eq("보내는 주소", m.from, "KOSAI <hello@kosai.kr>");
   eq("메일의 결제 일시 · 이용 기간 · 다음 결제일은 실제 구독과 같다",
      [row(m.html, "결제 일시"), row(m.html, "이용 기간"), row(m.html, "다음 결제일"), row(m.html, "결제 수단")],
-     ["2026년 11월 2일 14:00", "2026년 11월 2일 14:00 ~ 2026년 12월 2일 14:00",
+     ["2026년 11월 2일 14:00", "2026년 11월 2일 14:00 ~ 2026년 12월 2일 09:00",
       "2026년 12월 2일(해지 전까지 매월 같은 날 자동 결제)", "KB국민카드 4330****1234"]);
   const s = sub() || {};
   const c = s.consent || {};
@@ -322,11 +322,11 @@ section("⑤ 카드 변경 — 이용 중이면 안내 없음 · 결제가 밀�
   ok("밀린 구독을 새 카드로 되살린다", r.data && (sub() || {}).status === "active", JSON.stringify(r.error));
   eq("  재시도 성공 안내", memberMails().map((m) => m.subject), ["[KOSAI] 멤버십 정기결제 완료 안내"]);
   ok("  첫머리 — 이용이 다시 시작 · 이용 기간을 다시 계산", hasText(lastMail().html, "승인되지 않았던 이용료가 결제되어 이용이 다시 시작되었습니다."));
-  eq("  메일의 이용 기간 = 새 구독 기간", row(lastMail().html, "이용 기간"), "2026년 11월 2일 14:00 ~ 2026년 12월 2일 14:00");
+  eq("  메일의 이용 기간 = 새 구독 기간", row(lastMail().html, "이용 기간"), "2026년 11월 2일 14:00 ~ 2026년 12월 2일 09:00");
   ok("  결제 기록에 동의 칸을 만들지 않는다", payments().every((p) => !("consent" in p)));
 }
 
-/* ── ⑥ ── */
+/* ── ⑥ ── 이용 기간은 결제일 오전 9시(한국 시간)에 끝난다(2026-11-25 — functions/index.js addMonth) */
 section("⑥ 갱신 배치 — 정기결제 · 첫 거절 · 재시도 성공 · 종료");
 const BATCH = Date.parse("2026-11-10T02:00:00Z");
 function due(over = {}) { begin({ startMs: BATCH - 30 * DAY, endMs: BATCH - 1000, ...over }); clock.set(BATCH); }
@@ -336,7 +336,7 @@ function due(over = {}) { begin({ startMs: BATCH - 30 * DAY, endMs: BATCH - 1000
   ok("배치가 끝난다", !r.error, JSON.stringify(r.error));
   eq("정기결제 완료 — 회원이 고른 말(영어)로", memberMails().map((m) => m.subject), ["[KOSAI] Membership renewal payment confirmed"]);
   eq("  표의 금액 · 이용 기간", [row(lastMail().html, "Amount paid"), row(lastMail().html, "Billing period")],
-     ["KRW 14,900 (VAT included)", "Nov 10, 2026 11:00 KST to Dec 10, 2026 11:00 KST"]);
+     ["KRW 14,900 (VAT included)", "Nov 10, 2026 11:00 KST to Dec 10, 2026 09:00 KST"]);
 }
 {
   due();

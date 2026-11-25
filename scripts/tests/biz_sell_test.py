@@ -10,7 +10,7 @@
   전자상거래법 제10조 · 제13조가 요구하는 표시 없이 결제를 여는 것이 된다 — 그때는 생성기가 멈춰야 한다.
 
   ① 메일의 상호 · 대표 · 사업자등록번호 · 주소 · 이메일 = 꼬리의 BIZ (글자 하나까지)
-  ② 메일의 통신판매업 신고번호 · 유사투자자문업 신고 · 대표전화 = 꼬리의 SELL
+  ② 메일의 통신판매업 신고번호 · 유사투자자문업 신고 · 대표전화 = 꼬리의 SELL · 메일의 법정 표시 두 문장 = 꼬리의 문장(한국어 · 영어)
   ③ 실사이트: PAID_LIVE 가 꺼져 있으면 통신판매 표시가 없다 · 켰는데 값이 비면 멈춘다 · 값이 있으면 싣는다
   ④ 스테이징 꼬리(새 디자인 · 첫 화면)에 세 줄이 있고, 영어 사전에 그 줄이 있다
 
@@ -74,6 +74,17 @@ for const, label in (("MAIL_ORDER_NO", "통신판매업 신고"), ("ADVISORY_NO"
     ok(got == sell.get(label), f"메일 꼬리의 {label}가 사이트 꼬리(SELL)와 같다",
        f'사이트 "{sell.get(label)}" · 메일 "{got}" — 두 곳을 같은 값으로 채워라')
 ok(sell.get("호스팅서비스"), "호스팅서비스 값이 있다(전자상거래법 시행령 제11조의4)")
+
+# ②-2 결제 메일 꼬리의 유사투자자문업자 법정 표시(자본시장법 제101조의3) = 사이트 꼬리의 문장과 그 번역
+import json  # noqa: E402
+m = re.search(r"const LEGAL_LINES = \{\s*ko: \[(.*?)\],\s*en: \[(.*?)\],\s*\};", FN, re.S)
+ok(m is not None, "functions/index.js 에 LEGAL_LINES 가 있다")
+if m:
+    ko = " ".join(re.findall(r'"([^"]*)"', m.group(1)))
+    en = " ".join(re.findall(r'"([^"]*)"', m.group(2)))
+    ok(ko == C.LEGAL_NOTE_KO, "메일의 법정 표시(한국어)가 사이트 꼬리와 같다", f'사이트 "{C.LEGAL_NOTE_KO}" · 메일 "{ko}"')
+    legal_en = json.loads((ROOT / "scripts/i18n/legal.json").read_text(encoding="utf-8")).get(C.LEGAL_NOTE_KO)
+    ok(en == legal_en, "메일의 법정 표시(영어)가 사이트 꼬리의 번역과 같다", f'사이트 "{legal_en}" · 메일 "{en}"')
 
 # ③ 실사이트 스위치
 saved = (C.PAID_LIVE, [tuple(x) for x in B.SELL])

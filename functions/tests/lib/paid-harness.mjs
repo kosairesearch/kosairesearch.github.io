@@ -55,13 +55,12 @@ export const clock = {
 export const kstDayNo = (ms) => Math.floor((ms + 9 * HOUR) / DAY);
 export const kstDay = (ms) => new RealDate(ms + 9 * HOUR).toISOString().slice(0, 10);
 export const kstMidnightAfter = (ms) => (kstDayNo(ms) + 1) * DAY - 9 * HOUR;
-/* addMonth 와 같은 달력 계산(UTC 에서 돈다) */
-export function addMonthMs(ms) {
-  const d = new RealDate(ms);
-  const day = d.getUTCDate();
-  d.setUTCMonth(d.getUTCMonth() + 1);
-  if (d.getUTCDate() !== day) d.setUTCDate(0);
-  return d.getTime();
+/* addMonth 와 같은 달력 계산 — 한국 날짜로 세고 결제일 오전 9시(한국 시간)에 끝난다(2026-11-25). day 를 주면 그 날(없으면 그 달 말일). */
+export function addMonthMs(ms, day) {
+  const k = new RealDate(ms + 9 * HOUR);
+  const y = k.getUTCFullYear(), m = k.getUTCMonth() + 1;
+  const last = new RealDate(RealDate.UTC(y, m + 1, 0)).getUTCDate();
+  return RealDate.UTC(y, m, Math.min(day || k.getUTCDate(), last), 9) - 9 * HOUR;
 }
 
 /* ── 가짜 파이어스토어 ─────────────────────────────────────── */

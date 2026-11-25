@@ -135,6 +135,45 @@ if (NOTICE_LIVE) {
   ok(!existsSync(join(ROOT, "Notice.html")), "공지 전에는 실사이트에 Notice.html 이 없다");
 }
 
+/* ③ 공고일 · 시행일 — 세 원문(유료판 약관 · 방침 · 공지)이 같은 날을 적고, 시행일까지 30일 이상 남긴다(현행 약관 제3조 —
+   불리하거나 중대한 변경은 적용일 30일 전부터 공지). 공지를 올리는 날 공고일을 그날로 고치는데(CLAUDE.md '유료화 일정'),
+   한 곳만 고치거나 30일을 넘겨 고치면 여기서 걸린다. 시행일은 서버의 약관 판(functions/index.js TERMS_VERSION — 결제 화면
+   확인 기록 · 통지 메일이 쓴다)과 같아야 하고, 영어 사전(legal.json)에 그 줄의 번역이 같은 날로 있어야 한다. */
+{
+  const KO = /공고일 (\d{4})년 (\d{1,2})월 (\d{1,2})일 · 시행일 (\d{4})년 (\d{1,2})월 (\d{1,2})일/;
+  const day = (y, m, d) => Date.UTC(+y, +m - 1, +d);
+  const iso = (ms) => new Date(ms).toISOString().slice(0, 10);
+  const got = {};
+  for (const f of ["terms.paid.src.html", "privacy.paid.src.html", "notice.src.html"]) {
+    const m = (srcBody(join(CONTENT, f)) || "").match(KO);
+    if (ok(m, `${f} 에 '공고일 … · 시행일 …' 줄이 있다`)) got[f] = [day(m[1], m[2], m[3]), day(m[4], m[5], m[6])];
+  }
+  const vals = Object.values(got);
+  if (vals.length === 3) {
+    ok(new Set(vals.map((v) => v[0])).size === 1, "세 원문의 공고일이 같다",
+       Object.entries(got).map(([f, v]) => `${f} ${iso(v[0])}`).join(" · "));
+    ok(new Set(vals.map((v) => v[1])).size === 1, "세 원문의 시행일이 같다",
+       Object.entries(got).map(([f, v]) => `${f} ${iso(v[1])}`).join(" · "));
+    const [notice, eff] = vals[0];
+    const gap = Math.round((eff - notice) / 86400000);
+    ok(gap >= 30, `공고일이 시행일 30일 전까지다(현행 약관 제3조) — 지금 ${gap}일`,
+       `공고일 ${iso(notice)} · 시행일 ${iso(eff)} — ${iso(eff - 30 * 86400000)}까지 공지해야 한다. 늦어지면 시행일을 미루고 다시 공지한다`);
+    const fn = readFileSync(join(ROOT, "functions/index.js"), "utf8");
+    const ver = (fn.match(/^const TERMS_VERSION = "(\d{4}-\d{2}-\d{2})";/m) || [])[1];
+    ok(ver === iso(eff), "시행일이 서버의 약관 판(TERMS_VERSION)과 같다", `원문 ${iso(eff)} · 서버 ${ver}`);
+    const dict = JSON.parse(readFileSync(join(ROOT, "scripts/i18n/legal.json"), "utf8"));
+    const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    const en = (ms) => { const d = new Date(ms); return `${MONTHS[d.getUTCMonth()]} ${d.getUTCDate()}, ${d.getUTCFullYear()}`; };
+    for (const f of Object.keys(got)) {
+      const line = ((srcBody(join(CONTENT, f)) || "").match(/공고일 [^·]*· 시행일 [^·]*(· 최초 시행일 [^·]*?)?(?= 제1조| 주식회사| KOSAI| 코사이|$)/) || [""])[0].trim();
+      const keys = Object.keys(dict).filter((k) => k.startsWith("공고일 ") && line.startsWith(k));
+      const k = keys.sort((a, b) => b.length - a.length)[0];
+      ok(k && dict[k].includes(`Announced ${en(notice)}`) && dict[k].includes(`Effective ${en(eff)}`),
+         `${f} 의 공고일 줄에 같은 날의 영어가 있다(scripts/i18n/legal.json)`, k ? `${k} → ${dict[k]}` : `사전에 '${line.slice(0, 40)}…' 가 없다`);
+    }
+  }
+}
+
 /* 9월 개정에서 들어온 것들. 본문 비교로 이미 걸리지만, 이 이름들이 로그에
    찍혀야 무엇을 잃을 뻔했는지 다음 사람이 안다. 유료판은 같은 뜻을 더 구체적인 말로
    담았다(청약철회 제한 요건 → 전자상거래법 제17조제2항제5호 · 가분적 콘텐츠 → 이용 기간에 따라 나눌 수 있는 디지털콘텐츠). */

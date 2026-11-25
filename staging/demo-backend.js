@@ -58,12 +58,15 @@ const write = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } ca
 const kstDay = () => new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10);
 const err = (code, msg) => { const e = new Error(msg); e.code = code; return e; };
 
-function addMonth(from) {
-  const d = new Date(from), day = d.getDate();
-  d.setMonth(d.getMonth() + 1);
-  if (d.getDate() !== day) d.setDate(0);
-  return d.getTime();
+/* 한 달 뒤의 결제일 오전 9시(한국 시간) — 서버 functions/index.js 의 addMonth 와 같은 계산(2026-11-25). day 를 주면 그 날
+   (그 달에 없으면 말일), 주지 않으면 from 의 한국 날짜. 31일 결제는 짧은 달에 말일, 그다음 달에 다시 31일이다(billingDay). */
+function addMonth(from, day = 0) {
+  const k = new Date(from + 9 * 3600e3);
+  const y = k.getUTCFullYear(), m = k.getUTCMonth() + 1;
+  const last = new Date(Date.UTC(y, m + 1, 0)).getUTCDate();
+  return Date.UTC(y, m, Math.min(day || k.getUTCDate(), last), 9) - 9 * 3600e3;
 }
+const kstDom = (ms) => new Date(ms + 9 * 3600e3).getUTCDate();
 function activeNow(s) {
   return !!(s && s.status === "active" && s.currentPeriodEnd > Date.now());
 }
@@ -221,6 +224,7 @@ function subscribe(planId) {
   write(SUB_KEY, {
     status: "active", plan: p.id,
     currentPeriodStart: start, currentPeriodEnd: end,
+    billingDay: kstDom(Math.max(now, (cur && cur.currentPeriodEnd) || 0)),   // 매월 같은 날(서버와 같다)
     cancelAtPeriodEnd: false,
     // 실제 서버는 카드사 이름을 모르면 비워 둔다(토스가 코드로만 준다).
     card: { company: "", issuerCode: "61", number: "0000-00**-****-0000" },
@@ -239,12 +243,14 @@ function subscribe(planId) {
    서버가 그 자리마다 같은 값을 쓰는 것과 짝을 맞춘다. 특히 refundDone·failedAt·
    retryCount 를 지우는 것이 중요하다(남으면 다음 환불이 건너뛴다). 옛 시연 기록의
    요금제(basic · pro)와 변경 예약(pendingPlan)은 여기서 멤버십으로 정리된다. */
-function newPeriod(sub, at) {
+function newPeriod(sub, at, day) {
   sub.status = "active";
   sub.plan = PLAN.id;
   delete sub.pendingPlan;
   sub.currentPeriodStart = at;
-  sub.currentPeriodEnd = addMonth(at);
+  /* 결제일 — 제때 갱신하면 구독의 결제일(day), 재시도 · 카드 재등록으로 되살리면 그날(서버 renewSubscriptions · confirmBilling 과 같다) */
+  sub.billingDay = day || kstDom(at);
+  sub.currentPeriodEnd = addMonth(at, sub.billingDay);
   sub.periodPayments = [{ key: "demo-" + at, amount: PLAN.price, from: at }];
   sub.readsSincePay = 0;
   delete sub.failedAt;
@@ -535,8 +541,10 @@ window.KOSDemo = {
     if (!sub) return "구독 없음";
     const now = Date.now();
 
-    // ① 기간이 끝난 이용 중 구독 — 갱신한다(요금제는 멤버십 하나 · 옛 기록도 멤버십 값으로)
-    if (sub.status === "active" && sub.currentPeriodEnd <= now) {
+    // ① 오늘(한국 날짜) 끝나는 이용 중 구독 — 갱신한다(요금제는 멤버십 하나 · 옛 기록도 멤버십 값으로). 서버 renewSubscriptions 와 같이
+    //    결제일 9시 전에 결제하고, 해지 예약은 기간이 실제로 끝난 뒤에만 닫는다.
+    if (sub.status === "active" && kstDayNo(sub.currentPeriodEnd) <= kstDayNo(now)
+        && !(sub.cancelAtPeriodEnd && sub.currentPeriodEnd > now)) {
       if (sub.cancelAtPeriodEnd) {
         sub.status = "expired"; write(SUB_KEY, sub); emit();
         return "해지 예약이라 결제 없이 종료했습니다.";
@@ -547,7 +555,8 @@ window.KOSDemo = {
         pay({ amount: PLAN.price, description: "정기결제 실패 (모의)", kind: "failed", status: "failed", plan: PLAN.id });
         return `카드가 거절되어 '결제 실패' 로 두었습니다. ${RETRY_DAYS.join("·")}일 뒤에 다시 시도합니다.`;
       }
-      newPeriod(sub, now);
+      const late = kstDayNo(now) > kstDayNo(sub.currentPeriodEnd);   // 결제일을 넘겼으면 그날부터(서버와 같다)
+      newPeriod(sub, now, late ? kstDom(now) : (sub.billingDay || kstDom(sub.currentPeriodEnd)));
       pay({ amount: PLAN.price, description: `${PLAN.name} 월 구독 (모의)`, kind: "subscription", status: "paid", plan: PLAN.id });
       return `${PLAN.name}으로 갱신했습니다.`;
     }

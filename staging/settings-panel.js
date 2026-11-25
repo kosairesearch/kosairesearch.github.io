@@ -154,8 +154,8 @@ if (window.KOSi18n) window.KOSi18n.register({
     "Refund requested. {a} will be returned, and your access ends now.",
   "환불 신청이 접수되었습니다.": "Your refund request has been received.",
   "처리하지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.": "Could not complete. Please try again in a moment.",
-  "등록하신 카드로 결제가 승인되지 않았습니다. 결제일로부터 1일·3일·5일·7일째에 자동으로 다시 시도하며, 결제가 완료되면 그 시점부터 새로운 이용 기간이 시작됩니다. 카드를 다시 등록하시면 즉시 재개하실 수 있습니다.":
-    "The card on file was declined. We retry automatically on days 1, 3, 5 and 7 after the billing date; once a payment succeeds, a new billing period starts from that moment. Registering a card again restores access immediately.",
+  "등록하신 카드로 결제가 승인되지 않았습니다. 최초 승인 거절일부터 1일·3일·5일·7일이 되는 날에 자동으로 다시 시도하며, 결제가 완료되면 그 시점부터 새로운 이용 기간이 시작됩니다. 카드를 다시 등록하시면 즉시 재개하실 수 있습니다.":
+    "The card on file was declined. We retry automatically 1, 3, 5 and 7 days after the first declined charge; once a payment succeeds, a new billing period starts from that moment. Registering a card again restores access immediately.",
   "결제 재시도가 중지되며 구독이 즉시 종료됩니다. 이미 결제된 금액은 없으므로 추가로 청구되는 금액도 없습니다.":
     "Retries stop and your subscription ends immediately. Nothing was charged for this period, so there is nothing further to bill.",
   "구독이 해지되었으며, 결제 재시도도 중지되었습니다.":
@@ -834,7 +834,7 @@ function paneSubscription() {
       })));
       body.appendChild(btns);
       body.appendChild(el("p", "ks-note",
-        T("등록하신 카드로 결제가 승인되지 않았습니다. 결제일로부터 1일·3일·5일·7일째에 자동으로 다시 시도하며, 결제가 완료되면 그 시점부터 새로운 이용 기간이 시작됩니다. 카드를 다시 등록하시면 즉시 재개하실 수 있습니다.")));
+        T("등록하신 카드로 결제가 승인되지 않았습니다. 최초 승인 거절일부터 1일·3일·5일·7일이 되는 날에 자동으로 다시 시도하며, 결제가 완료되면 그 시점부터 새로운 이용 기간이 시작됩니다. 카드를 다시 등록하시면 즉시 재개하실 수 있습니다.")));
       const h = histSection(payments); if (h) body.appendChild(h);
       return;
     }
