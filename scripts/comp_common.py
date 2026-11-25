@@ -369,12 +369,15 @@ def sell_spans(mode=None):
     if not sell_on(mode):
         return ''
     out = []
-    for k, v, _en in _biz.SELL:
+    for k, v, _en, v_en in _biz.SELL:
         if not v:
             if mode == 'live':
                 raise SystemExit(f'PAID_LIVE 를 켜기 전에 scripts/patch_biz_footer.py 의 SELL 에서 "{k}" 값을 채워야 합니다'
-                                 '(전자상거래법 제10조 · 제13조 — functions/index.js 의 MAIL_ORDER_NO · BIZ_PHONE 도 같은 값으로).')
+                                 '(전자상거래법 제10조 · 제13조 — functions/index.js 의 MAIL_ORDER_NO · ADVISORY_NO · BIZ_PHONE 도 같은 값으로).')
             v = _sell_tbd(k)[0]
+        elif mode == 'live' and re.search('[가-힣]', v) and not v_en:
+            raise SystemExit(f'scripts/patch_biz_footer.py 의 SELL 에서 "{k}" 값에 한글이 있어 영어 값(넷째 칸)을 채워야 합니다'
+                             ' — 비워 두면 영어 화면 꼬리에 한글이 남습니다.')
         out.append(f'<span>{k} {v}</span>')
     return ''.join(out)
 
@@ -442,7 +445,7 @@ def i18n_table():
     파일에 "//always": "stock.html" 처럼 페이지를 적으면 그 파일의 문구는 그 페이지에 늘 싣는다 — 페이지 글이 아니라
     자료에서 오는 문구(리포트의 밸류에이션 기준 줄 등)는 페이지를 훑어서는 찾을 수 없다."""
     if not _I18N:
-        allp, common, stg, always = {}, {}, {}, {}
+        allp, common, stg, always, paid = {}, {}, {}, {}, {}
         for p in sorted(I18N_DIR.glob('*.json')):
             raw = json.loads(p.read_text(encoding='utf-8'))
             d = {_i18n_norm(k): v for k, v in raw.items() if not k.startswith('//')}
@@ -451,15 +454,17 @@ def i18n_table():
                 common.update(d)
             elif p.stem == 'staging':
                 stg.update(d)
+            elif p.stem == 'paid':   # 유료판 약관 · 공지에만 쓰는 말 — 실사이트는 공지 · 유료판을 싣는 날부터(i18n_block)
+                paid.update(d)
             for pg in str(raw.get('//always', '')).split(','):
                 if pg.strip():
                     always.setdefault(pg.strip(), set()).update(d)
         # 꼬리의 통신판매 표시(patch_biz_footer.SELL) — 이름만 영어로 바꾸고 값(신고번호 · 전화번호 · 회사 이름)은 그대로 둔다.
         # 값을 채워도 사전 파일을 따로 고치지 않게 여기서 만든다.
-        for k, v, en in _biz.SELL:
-            ko_v, en_v = (v, v) if v else _sell_tbd(k)
+        for k, v, en, v_en in _biz.SELL:
+            ko_v, en_v = (v, v_en or v) if v else _sell_tbd(k)
             allp[_i18n_norm(f'{k} {ko_v}')] = f'{en} {en_v}'
-        _I18N['all'], _I18N['common'], _I18N['stg'], _I18N['always'] = allp, common, stg, always
+        _I18N['all'], _I18N['common'], _I18N['stg'], _I18N['always'], _I18N['paid'] = allp, common, stg, always, paid
     return _I18N
 
 
@@ -492,8 +497,11 @@ def i18n_block(html, page):
     if MODE != 'live':
         pick.update(tb['stg'])   # STAGING 띠 · 멤버십 메뉴 — 스테이징 모든 페이지
     pick.update({k: tb['all'][k] for k in tb['always'].get(page, ())})
+    # paid.json — 유료판 약관 · 공지의 말 가운데 지금 실사이트 글에도 든 낱말('공지' · '문의' · '시행일' …). 실사이트에는 공지 ·
+    # 유료판을 싣는 날부터 싣는다 — 그 전에 실으면 실사이트 페이지 사전이 바뀌고, 그날 손으로 옮기게 두면 잊는다.
+    paid_off = MODE == 'live' and not (NOTICE_LIVE or PAID_LIVE)
     for k, v in tb['all'].items():
-        if k in pick or (MODE == 'live' and (k in tb['stg'] or k in LIVE_DICT_DROP)):
+        if k in pick or (MODE == 'live' and (k in tb['stg'] or k in LIVE_DICT_DROP)) or (paid_off and k in tb['paid']):
             continue
         if '#' in k or '@' in k:   # 숫자(#) · 날짜(@) 자리 — 나머지 조각이 모두 페이지에 있으면
             parts = [x.strip() for x in re.split(r'[#@]', k) if x.strip()]

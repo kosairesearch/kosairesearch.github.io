@@ -48,7 +48,9 @@ const T = {
     startsLater: "이미 이용 중인 기간이 오늘 자정까지 남아 있습니다. 새 구독은 오늘 바로 시작되며, 겹치는 하루는 이용 기간 끝에 더해 드립니다.",
     monthly: "매월", today: "오늘", total: "결제 금액", vat: "부가가치세 포함",
     agreeAll: "아래 내용에 모두 동의합니다",
-    agree1: '<a href="Terms.html" target="_blank" rel="noopener">이용약관</a>과 <a href="Privacy.html" target="_blank" rel="noopener">개인정보 처리방침</a>에 동의합니다. (필수)',
+    /* 개인정보 처리방침은 동의를 받는 문서가 아니라 알리는 문서다 — 결제 정보는 계약 이행에 필요한 처리라(개인정보 보호법 제15조제1항제4호)
+       동의 없이 처리하고 처리방침으로 알린다. 그래서 '확인했습니다'로 받는다(2026-11-25). */
+    agree1: '<a href="Terms.html" target="_blank" rel="noopener">이용약관</a>에 동의하며, <a href="Privacy.html" target="_blank" rel="noopener">개인정보 처리방침</a>을 확인했습니다. (필수)',
     agree2: "매월 같은 날짜에 등록하신 카드로 자동 결제되는 정기결제에 동의합니다. 결제가 승인되지 않는 경우 1일·3일·5일·7일째에 다시 시도되는 것에 동의합니다. (필수)",
     agree3: "위 환불 기준을 확인했으며, 결제 후 리포트의 유료 영역을 열람하면 7일 이내에도 이용한 날의 이용료를 뺀 금액이 환불되는 것에 동의합니다. (필수)",
     agree4: "만 19세 이상이거나, 미성년자인 경우 법정대리인의 동의를 받았습니다. (필수)",
@@ -84,7 +86,7 @@ const T = {
     startsLater: "Your current period runs until midnight today. The new subscription starts right away, and the overlapping day is added to the end of your billing period.",
     monthly: "Monthly", today: "Today", total: "Amount due", vat: "VAT included",
     agreeAll: "I agree to everything below",
-    agree1: 'I agree to the <a href="Terms.html" target="_blank" rel="noopener">Terms of Service</a> and <a href="Privacy.html" target="_blank" rel="noopener">Privacy Policy</a>. (required)',
+    agree1: 'I agree to the <a href="Terms.html" target="_blank" rel="noopener">Terms of Service</a> and have read the <a href="Privacy.html" target="_blank" rel="noopener">Privacy Policy</a>. (required)',
     agree2: "I agree to recurring monthly charges to the card I register, on the same date each month, and to retries on days 1, 3, 5 and 7 if a charge is declined. (required)",
     agree3: "I have read the refund terms above and agree that, once I open the paid sections of a report after payment, a refund within 7 days is the amount paid minus the usage charge for the days used. (required)",
     agree4: "I am 19 or older, or I am a minor with my legal guardian's consent. (required)",
@@ -313,7 +315,7 @@ async function confirm(authKey, customerKey, planId, method) {
     } catch (e) {}
     await httpsCallable(fns, "confirmBilling")(
       { authKey, customerKey, plan: planId, updateMethod: method || undefined,
-        adultConfirmed: adult || undefined });
+        adultConfirmed: adult || undefined, agreed: adult ? ["terms", "privacy", "recurring", "refund", "age"] : undefined, lang: EN() ? "en" : "ko" });
     location.replace(method ? "billing.html?card=1" : "billing.html");
   } catch (e) {
     console.error("[checkout] confirmBilling", e);

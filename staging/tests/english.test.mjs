@@ -217,7 +217,9 @@ const SCENES = [
   ["피드백", "/Feedback.html", { act: clickAll("button[type=submit]") }],
   ["이용약관", "/Terms.html", {}],
   ["개인정보 처리방침", "/Privacy.html", {}],
-  ["약관 개정 안내", "/Notice.html", {}],   // 2027-01-01 유료화 공지(2026-11-25) — 스테이징 약관 · 방침은 유료판이다
+  ["약관 개정 안내", "/Notice.html", { ifExists: true }],
+  ["개정 이용약관 전문", "/Terms-2027.html", { ifExists: true }],   // 실사이트 공지 기간에만 있다(NOTICE_LIVE)
+  ["개정 개인정보 처리방침 전문", "/Privacy-2027.html", { ifExists: true }],   // 2027-01-01 유료화 공지(2026-11-25) — 스테이징은 늘, 실사이트는 공지를 켠 뒤(comp_common.NOTICE_LIVE)
   ["로그인", "/Login.html", { act: clickAll("button[type=submit]") }],
   ["회원가입", "/Signup.html", { act: clickAll("button[type=submit]") }],
   ["약관 동의", "/Consent.html", { signedIn: true }],
@@ -262,7 +264,9 @@ const SCENES = [
   ["영어 종목 페이지 — 휴대폰 메뉴", "/en/stock/005930.html", { act: openMenu, live: true }],
 ];
 const SITES = [["스테이징", "/staging"], ["실사이트", ""]];
-const CASES = SITES.flatMap(([site, pre]) => SCENES.filter(([, , opt]) => !(opt.paid && !pre) && !(opt.live && pre))
+// ifExists — 그 사이트에 페이지가 있을 때만 본다(실사이트 공지 화면은 사장 승인 뒤 NOTICE_LIVE 를 켜야 생긴다)
+const CASES = SITES.flatMap(([site, pre]) => SCENES.filter(([, path, opt]) => !(opt.paid && !pre) && !(opt.live && pre)
+    && !(opt.ifExists && !existsSync(join(ROOT, pre.replace(/^\//, ""), path.replace(/^\//, "")))))
   .map(([name, path, opt]) => [`${site} · ${name}`, pre + path, opt]));
 
 const only = process.env.ONLY ? new RegExp(process.env.ONLY) : null;

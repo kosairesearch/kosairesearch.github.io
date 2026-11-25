@@ -76,13 +76,15 @@ def build(key, out_path=None, paid=None, upcoming=False):
     src = (ROOT / (cfg['paid'] if (paid or upcoming) else cfg['src'])).read_text(encoding='utf-8')
     lede, upd, intro, sections, legal = extract(src)
     h1, page_title, box = cfg['h1'], cfg['title'], ''
+    # 안내 상자는 문장과 링크를 따로 둔다 — 번역 엔진은 글 조각마다 바꾸므로 링크가 문장 가운데 끼면 영어 어순이 깨진다.
+    # 영어는 scripts/i18n/paid.json(실사이트에는 NOTICE_LIVE 부터 실린다).
     if upcoming:
         h1, page_title = '개정 ' + cfg['h1'], '개정 ' + cfg['title']
-        box = (f'<p class="notice-box">이 {cfg["noun"]}은 2027년 1월 1일부터 시행합니다. 지금 적용되는 {cfg["h1"]}은 '
-               f'<a href="/{cfg["cur"]}">{cfg["h1"]}</a>에서, 바뀌는 내용은 <a href="/Notice.html">개정 안내</a>에서 확인하실 수 있습니다.</p>')
+        box = (f'<p class="notice-box">이 {cfg["noun"]}은 2027년 1월 1일부터 시행합니다. '
+               f'<a href="/{cfg["cur"]}">지금 적용되는 {cfg["h1"]} 보기</a> · <a href="/Notice.html">개정 안내 보기</a></p>')
     elif cfg.get('paid') and not paid and C.notice_on():
         box = (f'<p class="notice-box">{cfg["h1"]}이 개정되어 2027년 1월 1일부터 시행합니다. '
-               f'<a href="/Notice.html">개정 안내 보기</a> · <a href="/{cfg["nxt"]}">개정 {cfg["h1"]} 전문 보기</a></p>')
+               f'<a href="/Notice.html">개정 안내 보기</a> · <a href="/{cfg["nxt"]}">개정 {cfg["h1"]} 보기</a></p>')
     toc, chips, body = [], [], []
     for i, (title, inner) in enumerate(sections, 1):
         m = cfg['num'].match(text_of(title))

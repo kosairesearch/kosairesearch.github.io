@@ -50,11 +50,13 @@ LABEL_EN = {
 #   (옛 디자인 푸터 — 관리자 화면 — 에는 싣지 않는다. 회원이 보는 화면이 아니다.)
 #   유사투자자문업 신고 줄은 현행 약관 제9조의 약속이다 — '유료 서비스를 개시하기 전에 통신판매업 신고와 유사투자자문업 신고를
 #   마치고, 그 신고 사항을 서비스 화면에 표시합니다'. 금융감독원이 수리하면 그 신고번호(번호가 없으면 수리일)를 적는다.
+#   칸은 (이름, 값, 영어 이름, 영어 값). 값에 한글이 있으면(신고번호의 '제 … 호' · 신고 기관 · 수리일) 영어 값을 꼭 채운다 —
+#   영어 화면은 이름만 바꾸고 값은 그대로 두므로, 비워 두면 영어 종목 페이지 꼬리에 한글이 남아 실사이트 생성기가 멈춘다.
 SELL = [
-    ("통신판매업 신고", "", "Mail-order Sales Registration No."),   # 신고번호와 신고 기관 — 예: '제2026-서울양천-0000호(양천구청)'
-    ("유사투자자문업 신고", "", "Quasi-investment Advisory Business Report"),   # functions/index.js 의 ADVISORY_NO 와 같은 값
-    ("대표전화", "", "Phone"),
-    ("호스팅서비스", "GitHub, Inc.", "Hosting provider"),   # 사이트를 올려 두는 곳(GitHub Pages)
+    ("통신판매업 신고", "", "Mail-order Sales Registration No.", ""),   # 예: '제2026-서울양천-0000호(양천구청)' · 'No. 2026-Seoul Yangcheon-0000 (Yangcheon-gu Office)'
+    ("유사투자자문업 신고", "", "Quasi-investment Advisory Business Report", ""),   # functions/index.js 의 ADVISORY_NO 와 같은 값 · 예: '2026년 12월 20일 수리' · 'Accepted December 20, 2026'
+    ("대표전화", "", "Phone", ""),
+    ("호스팅서비스", "GitHub, Inc.", "Hosting provider", ""),   # 사이트를 올려 두는 곳(GitHub Pages)
 ]
 
 MARK_START = "<!-- BIZ:START · scripts/patch_biz_footer.py 가 넣는다 -->"

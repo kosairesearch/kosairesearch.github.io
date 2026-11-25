@@ -122,6 +122,9 @@ def audit(dir_: Path):
     """멤버십 · 스테이징 흔적, 색인 설정, 모듈 문법. 문제 목록을 돌려준다."""
     bad = []
     stg_keys = {re.sub(r'\s+', ' ', k).strip() for k in json.loads((ROOT / 'scripts/i18n/staging.json').read_text(encoding='utf-8')) if not k.startswith('//')}
+    # 약관 개정 공지 · 유료판 약관 · 방침은 멤버십 도입을 알리는 글이라 '멤버십' 낱말이 들어 있는 것이 맞다(2026-11-25 · NOTICE_LIVE ·
+    # PAID_LIVE). 그 페이지들에서만 그 낱말을 허용하고, 모의 결제 · 구독 관리 같은 스테이징 흔적은 그대로 막는다.
+    legal_paid = set(notice_pages()) | ({'Terms.html', 'Privacy.html'} if C.PAID_LIVE else set())
     for name in PAGES + notice_pages() + archive_pages(dir_):
         f = dir_ / name
         if not f.exists():
@@ -139,10 +142,10 @@ def audit(dir_: Path):
             if not h.startswith('\n<script>window.KOSi18n&&KOSi18n.load()</script>', m.end()):
                 continue
             for k in json.loads(m.group(1).replace('<\\/', '</')):
-                if k in stg_keys or any(w in k for w in DICT_FORBIDDEN):
+                if k in stg_keys or any(w in k for w in DICT_FORBIDDEN if not (w == '멤버십' and name in legal_paid)):
                     bad.append(f'{name}: 번역 사전에 멤버십 · 스테이징 문구 "{k[:30]}"')
         vt = visible_text(h) + ' '.join(re.findall(r'<title>(.*?)</title>', h, re.S))
-        for w in ('멤버십', '디자인 시안', 'STAGING'):
+        for w in ('디자인 시안', 'STAGING') if name in legal_paid else ('멤버십', '디자인 시안', 'STAGING'):
             if w in vt:
                 bad.append(f'{name}: 화면 글 · 제목에 "{w}"')
         ni = bool(re.search(r'<meta name="robots" content="[^"]*noindex', h))

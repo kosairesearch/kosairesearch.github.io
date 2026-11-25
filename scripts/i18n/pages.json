@@ -109,5 +109,8 @@
  "설정 화면에서 마케팅 정보 수신을 끄시거나, hello@kosai.kr로 알려 주시면 처리하겠습니다.": "Please switch off Marketing messages in Settings, or let us know at hello@kosai.kr and we will take care of it.",
  "설정 화면 열기": "Open settings",
  "// 홈 — 휴대폰 업종 탭 끝의 단추(시트를 연다)": "",
- "전체 업종": "All industries"
+ "전체 업종": "All industries",
+ "// 회사 소개 — 유사투자자문업 신고 수리 뒤의 고지(scripts/build_about_comp.py REPORTED · 스테이징은 늘, 실사이트는 comp_common.SIMIL_LIVE 를 켠 뒤). 'quasi-investment advisory business'(신고 — filed a report)로 옮기고 registered · licensed · authorized 처럼 등록 · 인가로 읽히는 말을 쓰지 않는다. 그 밖의 회사 소개 글은 live.json": "",
+ "금융투자업자가 아닌 유사투자자문업자입니다.": "We are a quasi-investment advisory business, not a financial investment business entity.",
+ "KOSAI는 「자본시장과 금융투자업에 관한 법률」 제101조에 따라 신고한 유사투자자문업자로, 투자자문업·투자일임업 등 금융투자업자가 아닙니다. 개별적인 투자상담과 자금운용을 하지 않으며, 개별 종목에 대한 자문·일임 서비스를 제공하지 않습니다. 투자에는 원금 손실이 발생할 수 있으며, 그 손실은 투자자에게 귀속됩니다.": "KOSAI is a quasi-investment advisory business that has filed a report under Article 101 of the Financial Investment Services and Capital Markets Act; it is not a financial investment business entity such as an investment advisory business or a discretionary investment business. We do not provide individual investment consultation or manage funds, and we do not offer advisory or discretionary services on individual stocks. Investments may result in loss of principal, and any such loss is borne by the investor."
 }

@@ -58,7 +58,7 @@ def js_info(key):
 
 
 biz = {label: ko for label, ko, _ in B.BIZ}
-sell = {label: v for label, v, _ in B.SELL}
+sell = {label: v for label, v, _, _v_en in B.SELL}
 
 # ① 메일의 사업자 정보 = 꼬리의 BIZ
 ok(js_info("name") is not None, "functions/index.js 에 BIZ_INFO 가 있다")
@@ -76,32 +76,48 @@ for const, label in (("MAIL_ORDER_NO", "통신판매업 신고"), ("ADVISORY_NO"
 ok(sell.get("호스팅서비스"), "호스팅서비스 값이 있다(전자상거래법 시행령 제11조의4)")
 
 # ③ 실사이트 스위치
-saved = (C.PAID_LIVE, [list(x) for x in B.SELL])
+saved = (C.PAID_LIVE, [tuple(x) for x in B.SELL])
+saved_sell = lambda: [tuple(x) for x in saved[1]]
 try:
     C.PAID_LIVE = False
     ok(C.sell_spans("live") == "", "PAID_LIVE 가 꺼져 있으면 실사이트 꼬리에 통신판매 표시가 없다")
     C.PAID_LIVE = True
-    B.SELL[:] = [(k, "", en) if k != "호스팅서비스" else (k, v, en) for k, v, en in B.SELL]
+    B.SELL[:] = [(k, "", en, "") if k != "호스팅서비스" else (k, v, en, ve) for k, v, en, ve in B.SELL]
     try:
         C.sell_spans("live")
         ok(False, "PAID_LIVE 를 켰는데 신고번호 · 전화번호가 비어 있으면 실사이트 생성기가 멈춘다")
     except SystemExit as e:
         ok("통신판매업 신고" in str(e), "멈출 때 무엇을 채워야 하는지 알려 준다", str(e))
-    B.SELL[:] = [(k, v or "시험값-1234", en) for k, v, en in B.SELL]
+    # 한글이 든 값(신고번호 '제 … 호' 등)에 영어 값이 없으면 멈춘다 — 영어 화면 꼬리에 한글이 남는다
+    B.SELL[:] = [(k, v or "제2026-서울양천-0000호", en, "") for k, v, en, ve in B.SELL]
+    try:
+        C.sell_spans("live")
+        ok(False, "한글이 든 값에 영어 값이 없으면 실사이트 생성기가 멈춘다")
+    except SystemExit as e:
+        ok("영어 값" in str(e), "멈출 때 영어 값을 채우라고 알려 준다", str(e))
+    B.SELL[:] = [(k, v if k == "호스팅서비스" else "제2026-서울양천-0000호", en, "" if k == "호스팅서비스" else "No. 2026-0000")
+                 for k, v, en, ve in B.SELL]
+    C._I18N.clear()
+    tb = C.i18n_table()
+    ok(tb["all"].get("통신판매업 신고 제2026-서울양천-0000호") == "Mail-order Sales Registration No. No. 2026-0000",
+       "영어 사전에는 영어 이름과 영어 값이 실린다", str(tb["all"].get("통신판매업 신고 제2026-서울양천-0000호")))
+    C._I18N.clear()
+    B.SELL[:] = [(k, v or "TEST-1234", en, ve) for k, v, en, ve in saved_sell()]
     spans = C.sell_spans("live")
-    ok(spans.count("<span>") == len(B.SELL) and "시험값-1234" in spans and "기재)" not in spans,
+    ok(spans.count("<span>") == len(B.SELL) and "TEST-1234" in spans and "기재)" not in spans,
        "값을 채우고 PAID_LIVE 를 켜면 실사이트 꼬리에 통신판매 표시를 모두 싣는다", spans)
 finally:
     C.PAID_LIVE = saved[0]
-    B.SELL[:] = [tuple(x) for x in saved[1]]
+    B.SELL[:] = saved_sell()
+    C._I18N.clear()
 
 # ④ 스테이징 꼬리 · 첫 화면 · 영어 사전
 for page in ("staging/Home.html", "staging/stock.html", "staging/checkout.html", "staging/index.html"):
     html = (ROOT / page).read_text(encoding="utf-8")
-    for label, v, en in B.SELL:
+    for label, v, en, v_en in B.SELL:
         text = f"{label} {v or C._sell_tbd(label)[0]}"
         ok(f"<span>{text}</span>" in html, f"{page} 꼬리에 '{text}' 가 있다")
-        ok(f'"{text}":"{en} {v or C._sell_tbd(label)[1]}"' in html, f"{page} 영어 사전에 '{text}' 가 있다")
+        ok(f'"{text}":"{en} {(v_en or v) if v else C._sell_tbd(label)[1]}"' in html, f"{page} 영어 사전에 '{text}' 가 있다")
 live_home = (ROOT / "Home.html").read_text(encoding="utf-8")
 if not C.PAID_LIVE:
     ok("호스팅서비스" not in live_home, "PAID_LIVE 전에는 실사이트 꼬리에 통신판매 표시가 없다")
