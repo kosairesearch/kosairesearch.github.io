@@ -663,6 +663,9 @@ IPO_JS = r'''function kosIpo(live){var IPO=(window.KOS_REPORTS&&KOS_REPORTS.ipo)
       trading_value:null,ipo:{list_date:e.list_date||'',offer_price:e.offer_price==null?null:e.offer_price,shares:e.shares==null?null:e.shares}}});
   if(window.KOSi18n&&KOSi18n.names)KOSi18n.names(out);   // 영어 화면의 종목명 — 시세 자료의 종목은 번역 엔진이 스스로 싣는다
   return out}
+/* 가격 칸 — 공모가가 있으면 '공모가 N원', 없으면 '상장일 YYYY-MM-DD'(종목 페이지 ipoLine 과 같은 규칙 · 영어는 사전의 '공모가 #원' · '상장일 #-#-#').
+   공모 없이 상장하는 코넥스 종목(에이치스틸 2026-11-27)은 공모가가 없다 — '공모가 —'로 그리면 공모가가 있는데 모르는 것처럼 읽히고 영어 사전에도 없다. */
+function kosIpoPrice(o,won){o=o||{};return o.offer_price?'공모가 '+won(o.offer_price):(o.list_date?'상장일 '+o.list_date:'—')}
 '''
 
 

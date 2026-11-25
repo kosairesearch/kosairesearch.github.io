@@ -106,7 +106,7 @@ JS = r'''(function(){
   function row(s,i){var r=RREP[s.ticker],t=r&&r.title&&PK(r.title),c=s.change||0;
     return '<a class="row" href="/stock.html?ticker='+s.ticker+'" data-tk="'+s.ticker+'"><button type="button" class="rm" data-rm="'+s.ticker+'" aria-label="제거"><svg viewBox="0 0 24 24"><path d="M5 12h14"/></svg></button><span class="rk">'+(i+1)+'</span>'
       +'<div><div class="r-name">'+esc(s.name)+'</div><div class="r-meta">'+s.ticker+' · '+esc(s.market)+' · '+esc(s.sector)+(r&&r.reportDate?'<span class="md"> · <b>'+esc(r.reportDate)+'</b></span>':'')+'</div></div>'
-      +'<div class="r-title'+(t?'':' none')+'">'+(t?esc(t):'리포트 준비 중')+'</div><div class="r-price">'+(s.ipo?'공모가 '+won(s.ipo.offer_price):won(s.price)+'<span class="c '+dir(c)+'">'+chg(c)+'</span>')+'</div><div class="r-date">'+esc(r&&r.reportDate||'—')+'</div></a>'}
+      +'<div class="r-title'+(t?'':' none')+'">'+(t?esc(t):'리포트 준비 중')+'</div><div class="r-price">'+(s.ipo?kosIpoPrice(s.ipo,won):won(s.price)+'<span class="c '+dir(c)+'">'+chg(c)+'</span>')+'</div><div class="r-date">'+esc(r&&r.reportDate||'—')+'</div></a>'}
   function render(){document.getElementById('count').textContent='관심종목 · '+LIST.length+'개 종목';
     if(!LIST.length){rowsEl.innerHTML='';emptyEl.hidden=!!(waitedW&&(!W||(W.ready===false)));pagerEl.hidden=true;document.querySelector('.bar').hidden=true;return}
     emptyEl.hidden=true;document.querySelector('.bar').hidden=false;

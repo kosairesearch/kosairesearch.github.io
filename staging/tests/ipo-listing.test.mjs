@@ -245,6 +245,40 @@ for (const [site, base] of SITES) {
   }
 }
 
+/* ── ⑥ 공모가가 없는 종목 — 공모 없이 상장하는 코넥스 종목(에이치스틸 · 2026-11-27) ──
+   가격 칸은 종목 페이지(ipoLine)처럼 '상장일 YYYY-MM-DD'. 예전에는 '공모가 —'로 그려 공모가를 모르는 것처럼 읽혔고, 영어 사전에 없어
+   영어 화면에도 한국어로 남았다(english.test 의 '약관 동의' 장면이 리포트 목록에서 잡았다 · 2026-11-25). */
+{
+  const NOOFF = scene("pre");
+  const ix = JSON.parse(NOOFF.index.slice(NOOFF.index.indexOf("=") + 1).trim().replace(/;\s*$/, ""));
+  const e = Object.assign({}, IPO, { market: "코넥스" }); delete e.offer_price;
+  ix.ipo = { [TK]: e };
+  NOOFF.index = "window.KOS_REPORTS = " + JSON.stringify(ix) + ";\n";
+  for (const [site, base] of SITES) {
+    console.log(`\n── ${site} 공모가가 없는 종목 ──`);
+    for (const lang of ["ko", "en"]) {
+      const { ctx, p, errs } = await open(base + "/Reports.html", NOOFF, { lang });
+      await p.waitForFunction(() => document.querySelectorAll(".rl-row").length > 0, null, { timeout: 15000 }).catch(() => {});
+      await p.evaluate(() => { const R = window.__kosReports; R.state.sort = "date"; R.state.page = 1; R.render(); });
+      await p.waitForTimeout(lang === "en" ? 600 : 200);
+      const cell = await p.evaluate((tk) => { const a = [...document.querySelectorAll(".rl-row")].find((r) => r.dataset.tk === tk);
+        const c = a && a.querySelector(".r-price"); return c ? c.textContent.replace(/\s+/g, " ").trim() : null; }, TK);
+      if (lang === "ko") ok(`${site} 목록 — 가격 칸은 '상장일 2026-11-24'('공모가 —' 아님)`, cell === "상장일 2026-11-24", cell);
+      else ok(`${site} 목록(영어) — 'Listing date 2026-11-24' · 한국어 없음`, cell === "Listing date 2026-11-24", cell);
+      ok(`${site} 목록(${lang}) — 스크립트 오류가 없다`, errs.length === 0, errs.slice(0, 2).join(" / "));
+      await ctx.close();
+    }
+    {
+      const { ctx, p } = await open(base + "/Watchlist.html", NOOFF, { watch: [TK] });
+      await p.waitForFunction(() => document.querySelectorAll("#rows .row").length > 0, null, { timeout: 15000 }).catch(() => {});
+      const t = await p.evaluate((tk) => { const a = [...document.querySelectorAll("#rows .row")].find((r) => r.dataset.tk === tk);
+        const c = a && a.querySelector(".r-price"); return c ? c.textContent.replace(/\s+/g, " ").trim() : null; }, TK);
+      ok(`${site} 관심종목 — 가격 칸은 '상장일 2026-11-24'`, t === "상장일 2026-11-24", t);
+      await ctx.close();
+    }
+  }
+}
+
 await browser.close();
 server.close();
 console.log(`\n${pass} 통과 · ${fail} 실패`);

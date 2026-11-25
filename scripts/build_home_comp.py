@@ -141,7 +141,7 @@ JS = r'''(function(){
   function renderReports(){
     rowsEl.innerHTML=REPORTS.map(function(d){var c=d.change||0;
       return '<a class="row" href="/stock.html?ticker='+d.ticker+'"><div><div class="r-name">'+esc(d.name)+'</div><div class="r-meta">'+d.ticker+' · '+esc(d.market)+' · '+esc(d.sector)+'<span class="md"> · '+esc(d.reportDate)+'</span></div></div>'
-        +'<div class="r-title">'+esc(PK(d.title))+'</div><div class="r-price">'+(d.ipo?'공모가 '+fmt.won(d.ipo.offer_price):fmt.won(d.price)+'<span class="c '+fmt.dir(c)+'">'+fmt.chg(c)+'</span>')+'</div><div class="r-date">'+esc(d.reportDate)+'</div></a>'}).join('');
+        +'<div class="r-title">'+esc(PK(d.title))+'</div><div class="r-price">'+(d.ipo?kosIpoPrice(d.ipo,fmt.won):fmt.won(d.price)+'<span class="c '+fmt.dir(c)+'">'+fmt.chg(c)+'</span>')+'</div><div class="r-date">'+esc(d.reportDate)+'</div></a>'}).join('');
   }
 
   /* ---- 업종 탭 + 거래대금 순 종목 표 ---- */
