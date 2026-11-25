@@ -40,11 +40,12 @@ const TERMS_VERSION = "2027-01-01";
    신원 표시)와 자본시장법 제101조의3(유사투자자문업자의 표시)을 메일에서도 지킨다.
 
    아직 없는 셋은 빈 글자로 둔다. 값이 생기면 여기만 채우면 된다 — 빈 칸이면 그 줄을 싣지 않는다.
-     MAIL_ORDER_NO   통신판매업 신고번호(약관 제9조 — 유료 서비스를 개시하기 전에 신고를 마친다)
+     MAIL_ORDER_NO   통신판매업 신고번호와 신고 기관(약관 제9조 — 유료 서비스를 개시하기 전에 신고를 마친다)
      ADVISORY_NO     유사투자자문업 신고(수리되면 그 신고번호)
      BIZ_PHONE       대표전화
-   사업자 정보는 사이트 푸터(scripts/patch_biz_footer.py 의 BIZ)와 같은 사업자여야 한다. 주소는 신고 서류의 표기를
-   따랐다(푸터는 '서울시 양천구 목동동로12길 50' 으로 적는다). */
+   사업자 정보의 원본은 사이트 꼬리(scripts/patch_biz_footer.py 의 BIZ · SELL)다 — 글자 하나까지 같게 둔다. 한쪽만 고치면
+   회원이 받은 계약 내용 안내와 사이트의 사업자 정보가 달라진다(지키는 검사 scripts/tests/biz_sell_test.py). 영어 칸도
+   그 파일의 영어 표기와 같다. */
 const MAIL_ORDER_NO = "";
 const ADVISORY_NO = "";
 const BIZ_PHONE = "";
@@ -52,7 +53,7 @@ const BIZ_INFO = {
   name: ["코사이", "KOSAI"],
   ceo: ["임범준", "Beomjun Lim"],
   regNo: "380-25-02019",
-  address: ["서울특별시 양천구 목동동로 12길 50, 동성빌딩 4층 459호",
+  address: ["서울시 양천구 목동동로12길 50, 동성빌딩 4층 459호",
             "#459, 4F Dongseong Bldg., 50 Mokdongdong-ro 12-gil, Yangcheon-gu, Seoul, Republic of Korea"],
   email: "hello@kosai.kr",
 };
@@ -1717,8 +1718,9 @@ function bizHtml(lang, legal){
   const lines = [en
     ? `Company ${BIZ_INFO.name[i]} · CEO ${BIZ_INFO.ceo[i]} · Business Reg. No. ${BIZ_INFO.regNo} · ${BIZ_INFO.address[i]} · ${BIZ_INFO.email}`
     : `상호 ${BIZ_INFO.name[i]} · 대표 ${BIZ_INFO.ceo[i]} · 사업자등록번호 ${BIZ_INFO.regNo} · ${BIZ_INFO.address[i]} · ${BIZ_INFO.email}`];
-  if (MAIL_ORDER_NO) lines.push(en ? `Mail-order Sales Registration No. ${MAIL_ORDER_NO}` : `통신판매업 신고번호 ${MAIL_ORDER_NO}`);
-  if (ADVISORY_NO) lines.push(en ? `Quasi-investment Advisory Business Report No. ${ADVISORY_NO}` : `유사투자자문업 신고 ${ADVISORY_NO}`);
+  /* 이름표는 사이트 꼬리(scripts/patch_biz_footer.py 의 SELL)와 같은 말이다 */
+  if (MAIL_ORDER_NO) lines.push(en ? `Mail-order Sales Registration No. ${MAIL_ORDER_NO}` : `통신판매업 신고 ${MAIL_ORDER_NO}`);
+  if (ADVISORY_NO) lines.push(en ? `Quasi-investment Advisory Business Report ${ADVISORY_NO}` : `유사투자자문업 신고 ${ADVISORY_NO}`);
   if (BIZ_PHONE) lines.push(en ? `Phone ${BIZ_PHONE}` : `대표전화 ${BIZ_PHONE}`);
   if (legal) lines.push(...LEGAL_LINES[en ? "en" : "ko"]);
   return `<p style="margin:12px 0 0;font:400 11px/1.65 ${FONT};color:#a7a9b4;">${lines.map(esc).join("<br>")}</p>`;
@@ -1836,7 +1838,7 @@ function billingMail(kind, lang, d){
         [en ? "Declined on" : "승인 거절일", mailDay(d.failedAt, L)],
         [en ? "Retry dates" : "다시 시도하는 날", en
           ? `${days.join("; ")} (${RETRY_DAYS.slice(0, -1).join(", ")} and ${RETRY_DAYS[n - 1]} days after the first decline)`
-          : `${days.join(", ")}(첫 거절일로부터 ${RETRY_DAYS.map((k) => k + "일").join(", ")} 뒤)`],
+          : `${days.join(", ")}(최초 승인 거절일부터 ${RETRY_DAYS.map((k) => k + "일").join(", ")}이 되는 날 — 이용약관 제9조)`],
         card ? [en ? "Payment method" : "결제 수단", card] : null,
       ]) +
       mailP(en
@@ -3469,7 +3471,9 @@ function eraseBilling() {
   };
 }
 
-/* 결제 화면에서 확인받은 사항(staging/checkout.js 의 동의 네 줄 — 이용약관과 개인정보 처리방침이 한 줄이다).
+/* 결제 화면에서 확인받은 사항(staging/checkout.js 의 네 줄 — 개인정보 처리방침 유료판 '결제 화면에서 확인한 사항과 그 일시').
+     terms      이용약관 동의          privacy    개인정보 처리방침 확인(동의가 아니라 알린 것을 확인 — 첫 줄에 약관과 함께 있다)
+     recurring  정기결제 · 재시도 동의   refund     환불 기준 확인 · 동의        age        만 19세 이상 또는 법정대리인 동의
    결제 화면은 네 줄을 모두 체크해야 결제창을 열고, 그 사실을 같은 탭에 남겨 돌아온 뒤 서버에 항목과 연령 확인을 보낸다.
    서버는 아는 항목만 받고 판(TERMS_VERSION)과 시각은 직접 박는다. 화면이 항목을 보내지 않았으면(옛 결제 화면 · 브라우저가
    탭 저장소를 막은 경우) 빈 목록으로 적는다 — 받지 않은 동의를 받은 것으로 적지 않는다. 연령 확인은 본인 신고다(검증하려면
@@ -5160,82 +5164,112 @@ exports.purgeUnconsented = onSchedule(
    손으로 돌리는 작업(.github/workflows/terms_notice_mail.yml · scripts/send_terms_notice.cjs)이 이 함수를 부른다. 배포하는
    함수가 아니고(아래 kosTools — 내보내기 목록에 보이지 않게 붙인다) 예약도 없다. 사장 승인 뒤 사람이 돌린다.
 
-     count   보낼 대상 수만 센다(전체 · 인증됨 · 미인증 · 영어로 받는 회원 · 이미 보낸 회원). 아무것도 쓰지 않는다.
+     count   보낼 대상 수만 센다. 아무것도 쓰지 않는다.
      sample  관리자 주소(hello@kosai.kr)로 한 통 — 제목 앞 [시험]. 발송 기록을 남기지 않는다.
-     send    대상 전원. 한 번에 limit 통까지.
+     send    대상 전원. 한 번에 limit 통까지(나머지는 다음 실행).
 
    대상 — 이메일이 있는 모든 회원. 비활성(disabled) 계정은 뺀다. 주소는 계정(Auth)의 주소, 없으면 회원 문서의 주소(이메일을
-   심기 전에 만들어진 옛 카카오 · 네이버 계정). 영어로 받는 회원은 결제 화면을 영어로 쓴 회원이다(구독 문서의 mailLang) — 화면
-   언어는 브라우저에만 저장돼 서버가 알 수 없어, 나머지는 한국어로 받는다.
+   심기 전에 만들어진 옛 카카오 · 네이버 계정). 같은 주소를 쓰는 계정이 둘 이상이면 한 통만 보내고 그 계정 모두에 보냈다고
+   적는다. 영어로 받는 회원은 결제 화면을 영어로 쓴 회원이다(구독 문서의 mailLang) — 화면 언어는 브라우저에만 저장돼 서버가
+   알 수 없어, 나머지는 한국어로 받는다.
 
    같은 회원에게 두 번 보내지 않는다.
-     · 보내기 전에 트랜잭션으로 그 회원 줄(termsNotices/{판}_{회원 번호})을 '보내는 중'으로 잡는다. 이미 '보냄'이면 건너뛰고,
-       다른 실행이 15분 안에 잡은 줄도 건너뛴다(작업 파일도 같은 묶음 concurrency 로 겹쳐 돌지 않는다).
-     · 메일 서비스에 요청 이름(Idempotency-Key — 판 · 회원 번호의 지문 · 실패 횟수)을 붙인다. 보낸 뒤 기록을 남기기 전에 실행이
-       죽어도, 24시간 안에 다시 돌리면 메일 서비스가 같은 메일을 다시 보내지 않는다.
-     · 실패하면 '실패'로 적고 실패 횟수를 올린다 — 다음 실행이 새 요청 이름으로 다시 보낸다.
-   속도 — 한 통마다 gapMs(600ms) 쉰다(메일 서비스의 초당 2건 아래). 한 번에 보내는 수에 상한(limit)을 둔다 — 메일 서비스
-   요금제의 하루 한도 안에서 나눠 보내고, 인증 · 비밀번호 재설정 메일이 쓸 몫을 남긴다. 한도에 걸리면(quota) 그 자리에서 멈추고
-   남은 수를 돌려준다. 잇달아 다섯 번 실패하면 멈춘다(열쇠가 틀렸거나 서비스 장애 — 다섯 통 이상 헛되이 '실패'로 적지 않게).
+     · 보내기 전에 트랜잭션으로 그 주소의 첫 계정 줄(termsNotices/{판}_{회원 번호})을 '보내는 중'으로 잡는다. 이미 '보냄'이면
+       건너뛰고, 다른 실행이 15분 안에 잡은 줄도 건너뛴다(작업 파일도 같은 묶음 concurrency 로 겹쳐 돌지 않는다).
+     · 메일 서비스에 요청 이름(Idempotency-Key — 판 · 주소의 지문 · 확정 실패 횟수)을 붙인다. 보낸 뒤 기록을 남기기 전에
+       실행이 죽거나 답을 못 받았어도(시간 초과 · 통신 오류 — 이때는 실패 횟수를 올리지 않는다), 24시간 안에 다시 돌리면
+       메일 서비스가 같은 메일을 다시 보내지 않는다.
+     · 메일 서비스가 거절하면 '실패'로 적고 실패 횟수를 올린다 — 다음 실행이 새 요청 이름으로 다시 보낸다.
+   속도 — 한 통마다 gapMs(600ms) 쉰다(메일 서비스의 초당 2건 아래). 초당 한도에 걸리면 2초 쉬고 한 번 더 보낸다. 한 번에
+   보내는 수에 상한(limit)을 둔다 — 메일 서비스 요금제의 하루 한도 안에서 나눠 보내고, 인증 · 비밀번호 재설정 메일이 쓸 몫을
+   남긴다. 하루 · 월 한도에 걸리면(quota) 그 자리에서 멈춘다. 열쇠 · 보내는 주소가 틀렸으면(auth) 바로 멈추고, 잇달아 다섯 번
+   실패하면 멈춘다 — 헛되이 '실패'로 적지 않게.
    보낸 사실은 consentEvents 에 terms_notice(주소 · 판 · 말)로 남긴다 — 관리자 동의 조회가 보여 주고, 탈퇴하면 함께 지워진다.
-   돌려주는 값과 기록에는 숫자만 있다 — 실행 기록이 공개라 주소 · 회원 번호를 내지 않는다. */
+   이 함수는 아무것도 찍지 않는다. 돌려주는 값에는 숫자만 있고(주소 · 회원 번호 없음), 그 숫자도 회원 수라 작업 파일이 잠가서만
+   찍는다(CLAUDE.md '마케팅 숫자 — 공개 실행 기록에 찍지 않는다'). */
 const NOTICE_SAMPLE_TO = "hello@kosai.kr";
 const NOTICE_GAP_MS = 600;
+const NOTICE_LIMIT = 100;
 const NOTICE_CLAIM_TTL = 15 * 60 * 1000;
 const NOTICE_FAIL_STREAK = 5;
 const noticeRef = (db, uid) => db.doc(`termsNotices/${TERMS_VERSION}_${uid}`);
+const noticeAddr = (e) => String(e).trim().toLowerCase();
 /* 시행일 30일 전 — 이날까지 통지를 시작해야 한다(약관 제3조의 '30일 전부터'). */
 const noticeDeadline = () =>
   new Date(Date.parse(TERMS_VERSION + "T00:00:00Z") - 30 * 86400000).toISOString().slice(0, 10);
 
+/* 보낼 곳 — 주소마다 한 줄 { email, uids, verified, lang }. 계정 순서(회원 번호 순)로 늘 같은 차례다. */
 async function termsNoticeTargets(db){
-  const all = [];
+  const accounts = [];
   let disabled = 0, pageToken;
   do {
     const page = await admin.auth().listUsers(1000, pageToken);
-    pageToken = page.pageToken;
     for (const u of page.users || []) {
       if (u.disabled) { disabled++; continue; }
-      all.push({ uid: u.uid, email: emailOk(u.email) ? String(u.email).trim().toLowerCase() : "",
-                 verified: !!u.emailVerified, fromDoc: false });
+      accounts.push({ uid: u.uid, email: emailOk(u.email) ? noticeAddr(u.email) : "", verified: !!u.emailVerified });
     }
+    pageToken = page.pageToken;
   } while (pageToken);
-  const bare = all.filter((t) => !t.email);
+  const bare = accounts.filter((a) => !a.email);
   for (let i = 0; i < bare.length; i += 100) {
     const part = bare.slice(i, i + 100);
-    const snaps = await db.getAll(...part.map((t) => db.doc(`users/${t.uid}`)));
+    const snaps = await db.getAll(...part.map((a) => db.doc(`users/${a.uid}`)));
     snaps.forEach((s, j) => {
       const e = s && s.exists && (s.data() || {}).email;
-      if (emailOk(e)) { part[j].email = String(e).trim().toLowerCase(); part[j].fromDoc = true; }
+      if (emailOk(e)) part[j].email = noticeAddr(e);
     });
   }
   const en = new Set();
   (await db.collection("subscriptions").where("mailLang", "==", "en").get()).forEach((d) => en.add(d.id));
-  const targets = all.filter((t) => t.email)
-    .map((t) => ({ ...t, lang: en.has(t.uid) ? "en" : "ko" }))
-    .sort((a, b) => (a.uid < b.uid ? -1 : a.uid > b.uid ? 1 : 0));
-  return { targets, disabled, noEmail: all.length - targets.length };
+  const withMail = accounts.filter((a) => a.email).sort((a, b) => (a.uid < b.uid ? -1 : a.uid > b.uid ? 1 : 0));
+  const byAddr = new Map();
+  for (const a of withMail) {
+    const g = byAddr.get(a.email) || { email: a.email, uids: [], verified: false, lang: "ko" };
+    g.uids.push(a.uid);
+    if (a.verified) g.verified = true;
+    if (en.has(a.uid)) g.lang = "en";
+    byAddr.set(a.email, g);
+  }
+  return { targets: [...byAddr.values()], members: withMail.length, disabled, noEmail: accounts.length - withMail.length };
 }
 
-/* 한 통 보내기 — { ok, name, quota }. 초당 한도(rate_limit_exceeded)면 2초 쉬고 한 번 더 보낸다. */
+/* 한 통 보내기. 답 { ok, name, quota, fatal, unsure }.
+     quota   하루 · 월 한도(초당 한도는 2초 쉬고 한 번 더 보낸 뒤에도 걸릴 때)
+     fatal   열쇠 · 보내는 주소가 틀림 — 누구에게 보내도 같다
+     unsure  답을 받지 못함(시간 초과 · 통신 오류 · 메일 서비스 내부 오류) — 보내졌을 수도 있다 */
 async function noticeSendOnce(client, to, mail, idem, sleep){
-  for (let attempt = 0; attempt < 2; attempt++) {
-    let name;
+  for (let attempt = 0; ; attempt++) {
+    let name, thrown = false;
     try {
       const r = await withTimeout(client.emails.send({ from: MAIL_FROM, to, subject: mail.subject, html: mail.html },
         idem ? { idempotencyKey: idem } : undefined), MAIL_TIMEOUT_MS);
-      if (!(r && r.error)) return { ok: true, name: null, quota: false };
+      if (!(r && r.error)) return { ok: true, name: null, quota: false, fatal: false, unsure: false };
       name = String(r.error.name || "send_failed");
     } catch (e) {
+      thrown = true;
       name = String((e && e.name) || "send_failed");
     }
     if (name === "rate_limit_exceeded" && attempt === 0) { await sleep(2000); continue; }
-    return { ok: false, name, quota: /quota/i.test(name) || name === "rate_limit_exceeded" };
+    return { ok: false, name, quota: /quota/i.test(name) || name === "rate_limit_exceeded",
+             fatal: /api_key|from_address|invalid_access|security_error/i.test(name),
+             unsure: thrown || name === "application_error" || name === "internal_server_error" };
   }
-  return { ok: false, name: "send_failed", quota: false };
 }
 
-async function runTermsNotice({ mode = "count", limit = 100, gapMs = NOTICE_GAP_MS, lang = "ko",
+async function noticeMarkSent(db, uid, g, extra){
+  const at = admin.firestore.FieldValue.serverTimestamp();
+  await noticeRef(db, uid).set({ uid, version: TERMS_VERSION, status: "sent", lang: g.lang, sentAt: at, ...extra },
+    { merge: true });
+  try {
+    await db.collection("consentEvents").add({ uid, kind: "terms_notice", at, ip: null, ua: null,
+      email: g.email, version: TERMS_VERSION, lang: g.lang, ...(extra.sharedAddress ? { sharedAddress: true } : {}) });
+    return true;
+  } catch (e) {
+    return false;   // 보낸 사실은 termsNotices 에 남았다. 기록 줄은 숫자로만 센다(회원 번호를 찍지 않는다).
+  }
+}
+
+async function runTermsNotice({ mode = "count", limit = NOTICE_LIMIT, gapMs = NOTICE_GAP_MS, lang = "ko",
                                 sleep = (ms) => new Promise((r) => setTimeout(r, ms)) } = {}){
   const db = admin.firestore();
   if (mode === "sample") {
@@ -5243,83 +5277,102 @@ async function runTermsNotice({ mode = "count", limit = 100, gapMs = NOTICE_GAP_
     const mail = termsNoticeMail(L);
     const r = await noticeSendOnce(new Resend(RESEND_API_KEY.value()), NOTICE_SAMPLE_TO,
       { subject: "[시험] " + mail.subject, html: mail.html }, null, sleep);
-    return { mode, version: TERMS_VERSION, lang: L, to: NOTICE_SAMPLE_TO, sent: r.ok ? 1 : 0, error: r.ok ? null : r.name };
+    return { mode, version: TERMS_VERSION, lang: L, sent: r.ok ? 1 : 0, error: r.ok ? null : r.name };
   }
   if (mode !== "count" && mode !== "send") throw new Error("runTermsNotice: 모르는 방식 " + mode);
+  const cap = Number.isInteger(limit) && limit > 0 ? limit : NOTICE_LIMIT;
 
-  const { targets, disabled, noEmail } = await termsNoticeTargets(db);
-  const sentBefore = new Set();
-  for (let i = 0; i < targets.length; i += 100) {
-    const part = targets.slice(i, i + 100);
-    const snaps = await db.getAll(...part.map((t) => noticeRef(db, t.uid)));
-    snaps.forEach((s, j) => { if (s && s.exists && (s.data() || {}).status === "sent") sentBefore.add(part[j].uid); });
+  const { targets, members, disabled, noEmail } = await termsNoticeTargets(db);
+  const sentUids = new Set();
+  const allUids = targets.flatMap((g) => g.uids);
+  for (let i = 0; i < allUids.length; i += 100) {
+    const part = allUids.slice(i, i + 100);
+    const snaps = await db.getAll(...part.map((u) => noticeRef(db, u)));
+    snaps.forEach((s, j) => { if (s && s.exists && (s.data() || {}).status === "sent") sentUids.add(part[j]); });
   }
+  const isDone = (g) => g.uids.every((u) => sentUids.has(u));
+  const anySent = (g) => g.uids.some((u) => sentUids.has(u));
   const out = {
     mode, version: TERMS_VERSION, deadline: noticeDeadline(),
-    total: targets.length,
-    verified: targets.filter((t) => t.verified).length,
-    unverified: targets.filter((t) => !t.verified).length,
-    en: targets.filter((t) => t.lang === "en").length,
-    fromDoc: targets.filter((t) => t.fromDoc).length,
-    alreadySent: sentBefore.size,
-    remaining: targets.length - sentBefore.size,
+    addresses: targets.length, members,
+    verified: targets.filter((g) => g.verified).length,
+    unverified: targets.filter((g) => !g.verified).length,
+    en: targets.filter((g) => g.lang === "en").length,
+    ko: targets.filter((g) => g.lang !== "en").length,
+    alreadySent: targets.filter(anySent).length,
+    remaining: targets.filter((g) => !anySent(g)).length,
     disabled, noEmail,
   };
   if (mode === "count") return out;
 
   const client = new Resend(RESEND_API_KEY.value());
   const mails = { ko: termsNoticeMail("ko"), en: termsNoticeMail("en") };
-  let sent = 0, failed = 0, skipped = 0, busy = 0, tries = 0, streak = 0, stoppedBy = null;
-  for (const t of targets) {
-    if (sentBefore.has(t.uid)) continue;
-    if (tries >= limit) { stoppedBy = "limit"; break; }
-    const ref = noticeRef(db, t.uid);
+  let sent = 0, failed = 0, unsure = 0, raced = 0, busy = 0, shared = 0, logMiss = 0;
+  let tries = 0, streak = 0, stoppedBy = null;
+  for (const g of targets) {
+    if (isDone(g)) continue;
+    if (anySent(g)) {
+      /* 같은 주소로 이미 보냈다(그 뒤에 같은 주소의 계정이 생김) — 다시 보내지 않고 기록만 남긴다 */
+      for (const u of g.uids) {
+        if (sentUids.has(u)) continue;
+        if (!(await noticeMarkSent(db, u, g, { sharedAddress: true }))) logMiss++;
+      }
+      shared++;
+      continue;
+    }
+    if (tries >= cap) { stoppedBy = "limit"; break; }
+    const lead = g.uids[0];
+    const ref = noticeRef(db, lead);
     const claim = await db.runTransaction(async (tx) => {
       const snap = await tx.get(ref);
       const d = (snap.exists && snap.data()) || {};
       if (d.status === "sent") return { state: "sent" };
       const at = msOf(d.claimedAt);
       if (d.status === "sending" && Number.isFinite(at) && Date.now() - at < NOTICE_CLAIM_TTL) return { state: "busy" };
-      tx.set(ref, { uid: t.uid, version: TERMS_VERSION, status: "sending",
+      tx.set(ref, { uid: lead, version: TERMS_VERSION, status: "sending",
                     claimedAt: admin.firestore.FieldValue.serverTimestamp() }, { merge: true });
       return { state: "go", failures: Number(d.failures) || 0 };
     });
-    if (claim.state === "sent") { skipped++; continue; }
+    if (claim.state === "sent") { raced++; continue; }
     if (claim.state === "busy") { busy++; continue; }
     if (tries > 0 && gapMs > 0) await sleep(gapMs);
     tries++;
     const idem = `terms-notice/${TERMS_VERSION}/` +
-      `${crypto.createHash("sha256").update(String(t.uid)).digest("hex").slice(0, 24)}/${claim.failures}`;
-    const r = await noticeSendOnce(client, t.email, mails[t.lang], idem, sleep);
-    /* 같은 요청 이름을 메일 서비스가 이미 받았다는 답(같은 이름 · 다른 글 / 같은 이름이 처리 중)은 앞선 실행이 보냈다는 뜻이다. */
+      `${crypto.createHash("sha256").update(g.email).digest("hex").slice(0, 32)}/${claim.failures}`;
+    const r = await noticeSendOnce(client, g.email, mails[g.lang], idem, sleep);
+    /* 같은 요청 이름을 메일 서비스가 이미 받았다는 답(같은 이름 · 다른 글 / 같은 이름이 처리 중)은 앞선 실행이 보냈다는 뜻이다 */
     const dedup = !r.ok && /idempotent/.test(r.name || "");
     if (r.ok || dedup) {
-      await ref.set({ status: "sent", lang: t.lang, sentAt: admin.firestore.FieldValue.serverTimestamp(),
-                      ...(dedup ? { dedup: r.name } : {}) }, { merge: true });
-      await logConsent(db, t.uid, "terms_notice", { email: t.email, version: TERMS_VERSION, lang: t.lang }, null);
+      for (const u of g.uids) {
+        const extra = u === lead ? (dedup ? { dedup: r.name } : {}) : { sharedAddress: true };
+        if (!(await noticeMarkSent(db, u, g, extra))) logMiss++;
+      }
       sent++; streak = 0;
       continue;
     }
-    await ref.set({ status: "failed", failures: claim.failures + 1, error: r.name,
-                    failedAt: admin.firestore.FieldValue.serverTimestamp() }, { merge: true });
+    /* 답을 못 받았으면 실패 횟수를 올리지 않는다 — 다음 실행이 같은 요청 이름으로 보내, 이미 나갔으면 메일 서비스가 막는다 */
+    await ref.set({ status: "failed", error: r.name, failedAt: admin.firestore.FieldValue.serverTimestamp(),
+                    ...(r.unsure ? { unsure: true } : { failures: claim.failures + 1, unsure: false }) }, { merge: true });
     failed++; streak++;
+    if (r.unsure) unsure++;
+    if (r.fatal) { stoppedBy = "auth"; break; }
     if (r.quota) { stoppedBy = "quota"; break; }
     if (streak >= NOTICE_FAIL_STREAK) { stoppedBy = "errors"; break; }
   }
-  Object.assign(out, { sent, failed, skipped, busy, stoppedBy,
-                       remaining: targets.length - sentBefore.size - sent - skipped });
-  console.log(`[terms-notice] 보냄 ${sent} · 실패 ${failed} · 처리 중이라 건너뜀 ${busy} · 남음 ${out.remaining}` +
-              (stoppedBy ? ` · 멈춘 까닭 ${stoppedBy}` : ""));
+  const left = targets.filter((g) => !g.uids.some((u) => sentUids.has(u))).length - sent - raced;
+  Object.assign(out, { limit: cap, sent, failed, unsure, raced, busy, shared, logMiss, stoppedBy, remaining: left });
   return out;
 }
 
 /* 도구 · 시험이 쓰는 것 — 배포하는 함수가 아니다. 파이어베이스 배포 도구는 내보내기 목록을 Object.entries 로 훑어 함수를
-   찾으므로 열거되지 않는 칸(enumerable: false)은 보지 않는다. 배포 목록 검사(functions/tests/runtime.test.mjs ③)도 이 칸을
-   함수로 세지 않는다. 함수를 여기에 붙이지 말 것 — 배포되는 함수는 위처럼 이름으로 내보낸다. */
+   찾으므로(firebase-functions 의 loader extractStack) 열거되지 않는 칸(enumerable: false)은 보지 않는다. 배포 목록 검사
+   (functions/tests/runtime.test.mjs ③)도 이 칸을 함수로 세지 않는다. 배포할 함수를 여기에 붙이지 말 것 — 배포되는 함수는
+   위처럼 이름으로 내보낸다. */
 Object.defineProperty(module.exports, "kosTools", {
   enumerable: false,
   value: Object.freeze({
-    termsNotice: Object.freeze({ run: runTermsNotice, mail: termsNoticeMail, targets: termsNoticeTargets, deadline: noticeDeadline }),
+    termsNotice: Object.freeze({ run: runTermsNotice, mail: termsNoticeMail, targets: termsNoticeTargets,
+                                 deadline: noticeDeadline, limit: NOTICE_LIMIT }),
     billingMail, refundNotice: REFUND_NOTICE, termsVersion: TERMS_VERSION,
     readsCutoffDay, purgeOldReads,
   }),

@@ -1,0 +1,122 @@
+name: 📮 약관 개정 통지 메일
+
+# 이용약관 제3조 — 회원에게 불리하거나 중대한 변경은 적용일 30일 전부터 공지하고 전자우편으로 개별 통지한다.
+# 2027년 1월 1일 유료 시행안이 그 변경이라 시행일 30일 전(2026년 12월 2일)까지 이메일이 있는 회원 전원에게 보낸다.
+# 글 · 대상 · 중복 방지는 functions/index.js 의 runTermsNotice(scripts/send_terms_notice.cjs 가 부른다)에 있다.
+#
+# 순서 — count(대상 수) → sample(관리자 주소로 한 통 · 글 확인) → send(전원 · confirm 에 '보내기'). 사장 승인 뒤 사람이 돌린다.
+#   send 는 한 번에 limit 통까지 보내고 멈춘다. 같은 회원에게는 두 번 가지 않으니(회원별 발송 기록 termsNotices) 남은 회원은
+#   다시 돌리면 이어서 보낸다. 메일 서비스(Resend) 요금제의 하루 한도 안에서 나눠 보내고, 인증 · 비밀번호 재설정 메일이 쓸
+#   몫을 남긴다. 수동 실행만 — 예약을 걸지 말 것.
+#
+# 결과는 잠가서만 찍는다 (CLAUDE.md '마케팅 숫자 — 공개 실행 기록에 찍지 않는다')
+#   이 저장소는 공개라 실행 기록(로그 · 요약 칸)을 누구나 본다. 회원 수 · 보낸 수는 마케팅 숫자다. count · send 는 공개 열쇠(key —
+#   python3 scripts/marketing_seal.py newkey 가 찍은 한 줄)를 받아 출력을 파일에 모은 뒤 잠근 줄만 찍고, key 가 없으면 아무것도
+#   하지 않고 실패로 끝난다. 여는 쪽은 python3 scripts/marketing_seal.py open --job <job id>. sample 은 관리자 주소로 한 통이라
+#   숫자가 없다 — key 없이도 돌고, 성공 여부 한 줄만 찍는다. 출력을 그대로 찍는 길(tee · cat · 요약 칸에 붙이기)을 만들지 말 것.
+#   지키는 검사 functions/tests/terms-notice.test.mjs(이 파일의 단계를 가짜 숫자로 실제로 돌린다).
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'count(대상 수 · 잠가서) · sample(관리자 주소로 한 통) · send(전원 · confirm 필요)'
+        type: choice
+        default: count
+        options:
+          - count
+          - sample
+          - send
+      lang:
+        description: 'sample 메일의 말'
+        type: choice
+        default: ko
+        options:
+          - ko
+          - en
+      limit:
+        description: 'send 한 번에 보낼 상한(통) — 메일 서비스의 하루 한도 안에서'
+        default: '100'
+      confirm:
+        description: "send 일 때만 — '보내기' 라고 적는다"
+        default: ''
+      key:
+        description: '잠글 공개 열쇠 — scripts/marketing_seal.py newkey 가 찍은 한 줄 (count · send 는 없으면 돌지 않는다)'
+        default: ''
+
+permissions:
+  contents: read
+
+# 두 실행이 겹쳐 같은 회원을 두고 다투지 않게 한 줄로 세운다(서버 쪽도 회원별 기록을 트랜잭션으로 잡는다).
+concurrency:
+  group: terms-notice-mail
+  cancel-in-progress: false
+
+jobs:
+  notice:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      # 열쇠 · 확인 문구부터 본다 — 열쇠 없이 돌리면 숫자를 찍을 곳이 공개 기록뿐이다.
+      - name: 열쇠 · 확인 문구 확인
+        env:
+          MODE: ${{ inputs.mode }}
+          KEY: ${{ inputs.key }}
+          CONFIRM: ${{ inputs.confirm }}
+        run: |
+          if [ "$MODE" = "send" ] && [ "$CONFIRM" != "보내기" ]; then
+            echo "::error title=확인 문구 없음::send 는 confirm 에 '보내기'라고 적어야 보낸다. 아무것도 보내지 않았다."
+            exit 1
+          fi
+          if [ "$MODE" != "sample" ] && [ -z "$KEY" ]; then
+            echo "::error title=열쇠 없음::count · send 의 결과(회원 수 · 보낸 수)는 잠가서만 찍는다. python3 scripts/marketing_seal.py newkey 가 찍은 한 줄을 key 에 넣어 다시 돌린다. 아무것도 하지 않았다."
+            exit 1
+          fi
+          if [ -n "$KEY" ]; then
+            python3 scripts/marketing_seal.py check --key "$KEY"
+          fi
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: 함수 의존성 설치
+        run: cd functions && npm install --no-audit --no-fund
+
+      - name: 서비스 계정 인증
+        env:
+          SA: ${{ secrets.GCP_SA_KEY }}
+        run: |
+          printf '%s' "$SA" > "$HOME/sa.json"
+          echo "GOOGLE_APPLICATION_CREDENTIALS=$HOME/sa.json" >> "$GITHUB_ENV"
+
+      # 출력(오류 줄까지)은 파일로만 받는다. count · send 는 잠근 줄만, sample 은 성공 여부 한 줄만 찍는다.
+      - name: 통지 (결과는 잠가서만 찍는다)
+        env:
+          MODE: ${{ inputs.mode }}
+          NOTICE_LANG: ${{ inputs.lang }}
+          LIMIT: ${{ inputs.limit }}
+          CONFIRM: ${{ inputs.confirm }}
+          KEY: ${{ inputs.key }}
+          RESEND_API_KEY: ${{ inputs.mode != 'count' && secrets.RESEND_API_KEY || '' }}
+          GCLOUD_PROJECT: kosai-ae167
+          GOOGLE_CLOUD_PROJECT: kosai-ae167
+        run: |
+          if [ "$MODE" != "sample" ] && [ -z "$KEY" ]; then
+            echo "::error title=열쇠 없음::count · send 는 key 가 있어야 돈다. 아무것도 하지 않았다."
+            exit 1
+          fi
+          rc=0
+          node scripts/send_terms_notice.cjs > /tmp/notice.txt 2>&1 || rc=$?
+          if [ -n "$KEY" ]; then
+            python3 scripts/marketing_seal.py seal --key "$KEY" --in /tmp/notice.txt
+            echo "## 약관 개정 통지($MODE) — 결과는 잠겨 있습니다 (끝 코드 $rc)" >> "$GITHUB_STEP_SUMMARY"
+          fi
+          if [ "$MODE" = "sample" ]; then
+            if [ "$rc" = "0" ]; then line="시험 메일을 관리자 주소로 보냈다(제목 앞 [시험])."; else line="시험 메일을 보내지 못했다(끝 코드 $rc)."; fi
+            echo "$line"
+            echo "## 약관 개정 통지 시험 발송 — $line" >> "$GITHUB_STEP_SUMMARY"
+          fi
+          exit $rc

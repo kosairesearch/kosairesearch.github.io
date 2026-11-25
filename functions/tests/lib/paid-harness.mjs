@@ -13,7 +13,10 @@
      · 파이어베이스 관리자 SDK — 문서 · 질의 · 트랜잭션 · getAll · 시각 · 지우기 표시
      · 토스 — fetch 를 가로채 카드 등록 · 결제 · 취소를 기록하고 성공으로 답한다
        (failToss 로 거절도 낸다)
-     · 메일(Resend) — 보낸 것을 기록만 한다
+     · 메일(Resend) — 보낸 것을 기록만 한다(S.mailFail 로 거절 · 시간 초과도 낸다. 요청 이름(Idempotency-Key)은
+       그 메일의 idem 에 남긴다)
+     · 계정(Auth) — getUser · listUsers · getUsers · deleteUser. 주소는 S.emails(회원 번호 → 주소)에 심은 회원만
+       돌려준다(심지 않으면 전처럼 주소 없는 계정 — 결제 메일이 나가지 않는다). 인증 · 비활성은 S.userMeta.
      · 시계 — Date.now() 와 new Date() 가 clock.set 으로 정한 시각을 낸다.
        함수는 클라우드 함수처럼 UTC 에서 돈다(addMonth 가 지역 시각을 쓴다).
 
@@ -177,6 +180,21 @@ const db = {
   doc: (path) => docRef(path),
   collection: (name) => coll(name),
   async getAll(...refs) { return refs.map((r) => snapOf(r.path)); },
+  /* 묶음 쓰기 — commit 때 한꺼번에 들어간다. 진짜처럼 한 묶음 500개를 넘으면 실패한다. */
+  batch() {
+    const ops = [];
+    const b = {
+      set(ref, v, opt) { ops.push(() => write(ref.path, v, opt)); return b; },
+      update(ref, v) { ops.push(() => write(ref.path, v, { merge: true })); return b; },
+      delete(ref) { ops.push(() => store.delete(ref.path)); return b; },
+      async commit() {
+        S.batches.push(ops.length);
+        if (ops.length > 500) throw new Error("한 묶음에 500개를 넘는 쓰기 " + ops.length);
+        for (const f of ops) f();
+      },
+    };
+    return b;
+  },
   /* 트랜잭션끼리는 줄을 선다. 쓰기는 끝날 때 한꺼번에 들어간다(진짜와 같다). */
   runTransaction(fn) {
     const run = chain.then(async () => {
@@ -202,11 +220,32 @@ firestore.FieldValue = {
 firestore.Timestamp = { fromDate: (d) => new Ts(d.getTime()), fromMillis: (ms) => new Ts(ms), now: () => new Ts(NOW) };
 
 /* ── 가짜 인증 · 메일 · 토스 ───────────────────────────────── */
-export const S = { users: new Set(), deletedUsers: [], mails: [], toss: [], tossFail: [] };
+export const S = { users: new Set(), deletedUsers: [], mails: [], toss: [], tossFail: [],
+                   emails: new Map(), userMeta: new Map(), mailFail: null, pageSize: 1000, batches: [] };
+/* 계정 한 줄. 만든 시각은 동의 제도(2026-08-20) 앞으로 둔다 — purgeUnconsented 가 지울 대상이 되지 않게. */
+function userRec(uid) {
+  const m = S.userMeta.get(uid) || {};
+  const e = S.emails.get(uid);
+  return { uid, ...(e ? { email: e } : {}), emailVerified: !!m.emailVerified, disabled: !!m.disabled,
+           metadata: { creationTime: m.creationTime || "Mon, 01 Jun 2026 00:00:00 GMT" } };
+}
 const authApi = {
   async getUser(uid) {
     if (!S.users.has(uid)) throw Object.assign(new Error("없는 회원"), { code: "auth/user-not-found" });
-    return { uid };
+    const e = S.emails.get(uid);
+    return e ? { uid, email: e } : { uid };
+  },
+  /* 진짜처럼 회원 번호 순 · 쪽마다 pageToken. S.pageSize 로 쪽을 작게 해 넘기기를 시험한다. */
+  async listUsers(max = 1000, pageToken) {
+    const all = [...S.users].sort();
+    const from = pageToken ? Number(pageToken) : 0;
+    const n = Math.min(max, S.pageSize);
+    const users = all.slice(from, from + n).map(userRec);
+    return { users, pageToken: from + n < all.length ? String(from + n) : undefined };
+  },
+  async getUsers(ids) {
+    const users = ids.filter((x) => S.users.has(x.uid)).map((x) => userRec(x.uid));
+    return { users, notFound: ids.filter((x) => !S.users.has(x.uid)) };
   },
   async deleteUser(uid) { S.users.delete(uid); S.deletedUsers.push(uid); },
 };
@@ -218,7 +257,13 @@ const FAKES = {
   "firebase-functions/v2/https": { onCall: (opts, fn) => fn || opts, HttpsError },
   "firebase-functions/v2/scheduler": { onSchedule: (opts, fn) => fn || opts },
   "firebase-functions/params": { defineSecret: (name) => ({ value: () => "test-" + name }) },
-  "resend": { Resend: class { constructor() { this.emails = { send: async (m) => { S.mails.push(m); return {}; } }; } } },
+  /* S.mailFail(m, idem) 가 값을 돌려주면 그 값이 답이다(보내지 않은 것으로 친다) — {error:{name}} 은 거절, 던지면 통신 오류. */
+  "resend": { Resend: class { constructor() { this.emails = { send: async (m, opts) => {
+    const idem = (opts && opts.idempotencyKey) || null;
+    if (S.mailFail) { const r = await S.mailFail(m, idem); if (r) return r; }
+    S.mails.push(idem ? { ...m, idem } : m);
+    return { data: { id: "mail_" + (++seq) }, error: null };
+  } }; } } },
 };
 const origLoad = Module._load;
 Module._load = function (request, parent, isMain) {
@@ -298,6 +343,7 @@ export function reset() {
   indexNeeds.length = 0;
   hooks.beforeTx = null;
   S.users.clear(); S.deletedUsers.length = 0; S.mails.length = 0; S.toss.length = 0; S.tossFail.length = 0;
+  S.emails.clear(); S.userMeta.clear(); S.mailFail = null; S.pageSize = 1000; S.batches.length = 0;
   chain = Promise.resolve();
 }
 /* 이용 중인 구독 하나. 기본은 지금 결제한 member 14,900원 · 한 달. */
