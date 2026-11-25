@@ -1,0 +1,22 @@
+{
+ "// 약관 개정 공지 · 유료판 약관 · 방침에만 쓰는 영어 가운데, 같은 한국어 낱말이 지금 실사이트 페이지 글에도 들어 있는 것('공지' · '문의' · '시행일' · '개정 사유' · '서비스의 내용' · '에서 확인하실 수 있습니다.' · 유료판 제17조 문단). legal.json 에 두면 실사이트 페이지 사전에 실려 실사이트가 바뀐다. 이 파일은 스테이징에는 늘, 실사이트에는 공지 · 유료판을 싣는 날(comp_common.NOTICE_LIVE · PAID_LIVE)부터 실린다 — 손으로 옮길 필요가 없다(comp_common.i18n_block).": "",
+ "공지": "Notice",
+ "개정 사유": "Reasons for the Amendments",
+ "시행일": "Effective Date",
+ "문의": "Inquiries",
+ "에서 확인하실 수 있습니다.": ".",
+ "서비스의 내용": "Content of the Service",
+ "회사는 천재지변, 불가항력, 이용자의 귀책사유로 인한 서비스 이용 장애에 대하여 책임을 지지 않습니다. 회사는 무료로 제공되는 서비스의 이용과 관련하여 손해배상 책임을 부담하지 않습니다. 다만 회사 또는 그 이행보조자의 고의 또는 중대한 과실로 인하여 발생한 손해에 대하여는 그러하지 아니합니다.": "The Company is not liable for any interruption of the Service caused by natural disaster, force majeure, or reasons attributable to the user. The Company bears no liability for damages in connection with the use of services provided free of charge. This does not apply to damages caused by the wilful misconduct or gross negligence of the Company or its agents.",
+ "// 실사이트 공지 기간의 약관 화면 안내 상자 · 개정 전문 화면(build_legal_comp — 스테이징에는 나오지 않는다)": "",
+ "이용약관이 개정되어 2027년 1월 1일부터 시행합니다.": "The Terms of Service have been amended, effective January 1, 2027.",
+ "개인정보 처리방침이 개정되어 2027년 1월 1일부터 시행합니다.": "The Privacy Policy has been amended, effective January 1, 2027.",
+ "개정 안내 보기": "View the notice of amendments",
+ "개정 이용약관 보기": "View the amended Terms of Service",
+ "개정 개인정보 처리방침 보기": "View the amended Privacy Policy",
+ "이 약관은 2027년 1월 1일부터 시행합니다.": "These Terms take effect on January 1, 2027.",
+ "이 방침은 2027년 1월 1일부터 시행합니다.": "This Policy takes effect on January 1, 2027.",
+ "지금 적용되는 이용약관 보기": "View the Terms of Service currently in effect",
+ "지금 적용되는 개인정보 처리방침 보기": "View the Privacy Policy currently in effect",
+ "개정 이용약관": "Amended Terms of Service",
+ "개정 개인정보 처리방침": "Amended Privacy Policy"
+}

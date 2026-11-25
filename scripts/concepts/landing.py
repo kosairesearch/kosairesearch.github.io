@@ -47,7 +47,7 @@ FONTS = "../../../fonts"
 MODE = "preview"
 # 스테이징에서 링크가 가는 곳(staging/ 안의 상대 주소). 시안은 '#'(머리의 리포트 · 업종 분석 · 모닝브리핑은 같은 페이지의 절)
 HREF = {"홈": "Home.html", "리포트": "Reports.html", "업종 분석": "industry.html", "관심종목": "Watchlist.html", "멤버십": "pricing.html", "모닝브리핑": "brief.html",
-        "회사 소개": "About.html", "문의하기": "Contact.html", "피드백": "Feedback.html", "이용약관": "Terms.html", "개인정보 처리방침": "Privacy.html",
+        "회사 소개": "About.html", "문의하기": "Contact.html", "피드백": "Feedback.html", "이용약관": "Terms.html", "개인정보 처리방침": "Privacy.html", "약관 개정 안내": "Notice.html",
         "로그인": "Login.html", "회원가입": "Signup.html", "brand": "./",
         "hero_link": "Reports.html", "trust_link": "About.html#s03", "brief_link": "brief.html", "sectors_link": "industry.html"}
 
@@ -1061,9 +1061,16 @@ def nav():
 
 def foot():
     a = lambda t, cls="": f'<a{cls} href="{href(t)}">{t}</a>'
+    notice = legal = ''
     if real():   # 사업자 정보의 원본은 patch_biz_footer.BIZ 하나다(comp_common.BIZ_SPANS — 다른 스테이징 · 실사이트 페이지와 같은 글)
         import comp_common
-        biz = comp_common.BIZ_SPANS
+        biz = comp_common.BIZ_SPANS + comp_common.sell_spans(MODE)   # 통신판매 표시 — 스테이징은 늘, 실사이트는 PAID_LIVE 부터
+        # 약관 개정 공지 · 유사투자자문업자 법정 표시 — 다른 페이지 꼬리(comp_common.footer_html)와 같은 스위치 · 같은 글
+        if MODE == "staging" or comp_common.NOTICE_LIVE:
+            notice = a("약관 개정 안내")
+        if MODE == "staging" or comp_common.SIMIL_LIVE:
+            legal = (f'<p class="legal-note">{comp_common.LEGAL_NOTE_KO}</p>'
+                     '<style>.foot .legal-note{margin:12px 0 0;max-width:720px;font:400 12px/18px var(--font);color:var(--ink-62)}</style>')
     else:
         biz = ('<span>상호 코사이</span><span>대표 임범준</span><span>사업자등록번호 380-25-02019</span>'
                '<span>주소 서울시 양천구 목동동로12길 50, 동성빌딩 4층 459호</span><span>이메일 hello@kosai.kr</span>')
@@ -1071,8 +1078,8 @@ def foot():
             f'<img class="dk" src="{ASSETS}/kosai-wordmark-white.png" alt="KOSAI"></a>'
             '<div class="fgrid"><div class="fcol"><h4>서비스</h4>' + "".join(a(t) for t, _ in nav_links()) + '</div>'   # 머리와 같은 목록 — 스테이징은 멤버십까지(다른 스테이징 페이지 꼬리와 같음)
             '<div class="fcol"><h4>회사</h4>' + "".join(a(t) for t in ("회사 소개", "문의하기", "피드백")) + '</div>'
-            '<div class="fcol"><h4>정책</h4>' + a("이용약관") + a("개인정보 처리방침", ' class="pp"') + '</div></div>'
-            f'<div class="biz">{biz}</div>'
+            '<div class="fcol"><h4>정책</h4>' + a("이용약관") + a("개인정보 처리방침", ' class="pp"') + notice + '</div></div>'
+            f'<div class="biz">{biz}</div>{legal}'
             '<div class="copy">© 2026 KOSAI</div></div></footer>')
 
 

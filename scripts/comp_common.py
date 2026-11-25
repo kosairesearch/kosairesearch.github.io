@@ -53,6 +53,16 @@ window.kosInd=function(box,axis,sel){
 
 MODE = 'preview'   # set_mode() 로 바꾼다
 
+# ── 유료화(2027-01-01 시행) 스위치 — 실사이트에만 듣는다. 스테이징은 늘 '시행 뒤' 모습이다 ──────────────────────────────
+# NOTICE_LIVE  약관 · 방침 개정 공지(Notice.html · Terms-2027.html · Privacy-2027.html · 약관 화면 안내 상자 · 꼬리 '약관 개정 안내')를
+#              실사이트에 싣는다. 사장 승인 뒤 켠다(시행 30일 전 — 2026년 12월 2일까지). 회원 개별 통지 메일과 같은 날.
+# SIMIL_LIVE   유사투자자문업자 법정 표시(꼬리 문구 · 회사 소개 문장 — 자본시장법 제101조의3). 금융감독원 신고 수리 통지를 받은 날 켠다.
+# PAID_LIVE    시행일(2027-01-01)에 실사이트 Terms.html · Privacy.html 을 유료판 원문으로 바꾼다.
+# 날짜를 미루면 켜지 말고 공지를 '시행일 연기'로 고친다(CLAUDE.md '유료화를 시작할 때' 날짜 규칙).
+NOTICE_LIVE = False
+SIMIL_LIVE = False
+PAID_LIVE = False
+
 # 스테이징 머리: demo-backend 는 반드시 <head> 의 첫 module 이어야 한다(__KOSDEMO 를 먼저 세워야 paywall·subscription-api·checkout 이 모의로 돈다).
 STAGING_HEAD = '''<script src="i18n.js"></script>
 <script type="module" src="demo-backend.js"></script>
@@ -79,6 +89,9 @@ LIVE_SEO = {
     'Feedback.html': ('KOSAI를 이용하시면서 느끼신 점을 들려주시기 바랍니다.', None),
     'Terms.html': ('KOSAI 서비스 이용에 관한 기본적인 사항을 규정합니다.', None),
     'Privacy.html': ('KOSAI는 이용자의 개인정보를 소중히 여기며, 관련 법령을 준수합니다.', None),
+    'Notice.html': ('2027년 1월 1일부터 유료 서비스(멤버십)를 도입함에 따라 이용약관과 개인정보 처리방침을 개정합니다.', None),
+    'Terms-2027.html': ('2027년 1월 1일부터 시행하는 개정 이용약관입니다.', None),
+    'Privacy-2027.html': ('2027년 1월 1일부터 시행하는 개정 개인정보 처리방침입니다.', None),
     'Login.html': ('KOSAI 계정으로 로그인하시면 관심종목과 리포트를 이어서 보실 수 있습니다.', None),
     'Signup.html': ('무료 계정을 만드시면 관심종목을 저장하고 여러 기기에서 함께 보실 수 있습니다.', None),
     'Consent.html': ('가입을 완료하시려면 약관에 동의하여 주시기 바랍니다.', 'noindex,nofollow'),
@@ -280,11 +293,13 @@ PAGES = PAGES_LIVE
 LIVE2PREVIEW = {'/': '/preview/home.html', '/Home.html': '/preview/home.html', '/Reports.html': '/preview/reports.html', '/industry.html': '/preview/industry.html',
                 '/Watchlist.html': '/preview/watchlist.html', '/brief.html': '/preview/brief.html', '/About.html': '/preview/about.html', '/Contact.html': '/preview/contact.html',
                 '/Feedback.html': '/preview/feedback.html', '/Terms.html': '/preview/terms.html', '/Privacy.html': '/preview/privacy.html', '/Login.html': '/preview/login.html',
-                '/Signup.html': '/preview/signup.html', '/Settings.html': '/preview/settings.html', '/Consent.html': '/preview/consent.html', '/auth-action.html': '/preview/auth-action.html'}
+                '/Signup.html': '/preview/signup.html', '/Settings.html': '/preview/settings.html', '/Consent.html': '/preview/consent.html', '/auth-action.html': '/preview/auth-action.html',
+                '/Notice.html': '/preview/notice.html'}
 LIVE2STAGING = {'/': './', '/Home.html': 'Home.html', '/Reports.html': 'Reports.html', '/industry.html': 'industry.html', '/Watchlist.html': 'Watchlist.html',
                 '/brief.html': 'brief.html', '/pricing.html': 'pricing.html', '/checkout.html': 'checkout.html', '/billing.html': 'billing.html', '/About.html': 'About.html',
                 '/Contact.html': 'Contact.html', '/Feedback.html': 'Feedback.html', '/Terms.html': 'Terms.html', '/Privacy.html': 'Privacy.html', '/Login.html': 'Login.html',
-                '/Signup.html': 'Signup.html', '/Settings.html': 'Settings.html', '/Consent.html': 'Consent.html', '/auth-action.html': 'auth-action.html', '/stock.html': 'stock.html'}
+                '/Signup.html': 'Signup.html', '/Settings.html': 'Settings.html', '/Consent.html': 'Consent.html', '/auth-action.html': 'auth-action.html', '/stock.html': 'stock.html',
+                '/Notice.html': 'Notice.html', '/Terms-2027.html': 'Terms.html', '/Privacy-2027.html': 'Privacy.html'}
 # 시안 안에서 쓴 /preview/… 주소 → 스테이징 이름 (finish 가 바꾼다)
 PREVIEW2STAGING = {v: LIVE2STAGING[k] for k, v in LIVE2PREVIEW.items() if k in LIVE2STAGING}
 
@@ -296,6 +311,7 @@ PAGE_SCRIPTS = {
     'pricing.html': ['auth-state.js'], 'checkout.html': ['checkout.js', 'auth-state.js'], 'Login.html': ['auth-state.js'], 'Signup.html': ['auth-state.js'],
     'Contact.html': ['auth-state.js', 'submit-form.js'], 'Feedback.html': ['auth-state.js', 'submit-form.js'],
     'About.html': ['auth-state.js'], 'Privacy.html': ['auth-state.js'], 'Terms.html': ['auth-state.js'], 'brief.html': ['auth-state.js'],
+    'Notice.html': ['auth-state.js'], 'Terms-2027.html': ['auth-state.js'], 'Privacy-2027.html': ['auth-state.js'],
     'Settings.html': ['auth-state.js'], 'Consent.html': ['auth-state.js'], 'auth-action.html': ['auth-state.js'],
 }
 
@@ -321,6 +337,66 @@ document.addEventListener('click',function(e){var a=e.target.closest&&e.target.c
 '''
 
 
+# 유사투자자문업자 법정 표시(자본시장법 제101조의3 — 개별 투자상담 · 자금운용 불가, 원금 손실과 그 귀속, 금융투자업자가 아닌
+# 유사투자자문업자). 신고서 첨부 3 사업계획서가 '신고 수리 후 모든 페이지 하단, 요금 안내와 결제 화면, 광고에 표시'를 약속했다.
+LEGAL_NOTE_KO = ('KOSAI는 금융투자업자가 아닌 유사투자자문업자로, 개별적인 투자상담과 자금운용을 하지 않습니다. '
+                 '투자에는 원금 손실이 발생할 수 있으며, 그 손실은 투자자에게 귀속됩니다.')
+
+
+LEGAL_NOTE_CSS = '\n.foot .legal-note{margin:12px 0 0;max-width:720px;font:400 12px/18px var(--font);color:var(--ink-62)}'
+
+
+def notice_on():
+    """약관 개정 공지를 보이는가 — 스테이징은 늘, 실사이트는 NOTICE_LIVE 일 때."""
+    return MODE == 'staging' or (MODE == 'live' and NOTICE_LIVE)
+
+
+def simil_on():
+    """유사투자자문업자 법정 표시를 보이는가 — 스테이징은 늘, 실사이트는 신고 수리 뒤(SIMIL_LIVE)."""
+    return MODE == 'staging' or (MODE == 'live' and SIMIL_LIVE)
+
+
+def sell_on(mode=None):
+    """통신판매 사업자 표시(통신판매업 신고 · 대표전화 · 호스팅서비스)를 보이는가 — 스테이징은 늘, 실사이트는 유료 시행일(PAID_LIVE)부터."""
+    mode = mode or MODE
+    return mode == 'staging' or (mode == 'live' and PAID_LIVE)
+
+
+def sell_spans(mode=None):
+    """꼬리 사업자 정보 뒤에 붙는 통신판매 표시(patch_biz_footer.SELL). 값이 빈 칸이면 스테이징은 '(… 후 기재)' 로 비워 두고,
+    실사이트는 만들지 않고 멈춘다 — 신고번호 · 전화번호 없이 결제를 여는 길을 막는다(전자상거래법 제10조 · 제13조)."""
+    mode = mode or MODE
+    if not sell_on(mode):
+        return ''
+    out = []
+    for k, v, _en, v_en in _biz.SELL:
+        if not v:
+            if mode == 'live':
+                raise SystemExit(f'PAID_LIVE 를 켜기 전에 scripts/patch_biz_footer.py 의 SELL 에서 "{k}" 값을 채워야 합니다'
+                                 '(전자상거래법 제10조 · 제13조 — functions/index.js 의 MAIL_ORDER_NO · ADVISORY_NO · BIZ_PHONE 도 같은 값으로).')
+            v = _sell_tbd(k)[0]
+        elif mode == 'live' and re.search('[가-힣]', v) and not v_en:
+            raise SystemExit(f'scripts/patch_biz_footer.py 의 SELL 에서 "{k}" 값에 한글이 있어 영어 값(넷째 칸)을 채워야 합니다'
+                             ' — 비워 두면 영어 화면 꼬리에 한글이 남습니다.')
+        out.append(f'<span>{k} {v}</span>')
+    return ''.join(out)
+
+
+def _sell_tbd(label):
+    """통신판매 표시의 값이 아직 없을 때 스테이징에 적는 말(한국어, 영어)."""
+    if '유사투자자문업' in label:
+        return '(수리 후 기재)', '(to be added once accepted)'
+    if '신고' in label:
+        return '(신고 후 기재)', '(to be added after registration)'
+    return '(개통 후 기재)', '(to be added)'
+
+
+def footer_html(tpl):
+    return (tpl.replace('{NOTICE_LINK}', '<a href="/Notice.html">약관 개정 안내</a>' if notice_on() else '')
+               .replace('{BIZ_SELL}', sell_spans())
+               .replace('{LEGAL_NOTE}', f'\n  <p class="legal-note">{LEGAL_NOTE_KO}</p>' if simil_on() else ''))
+
+
 def set_mode(mode):
     """'preview' | 'staging' | 'live'. 빌더를 부르기 전에 한 번."""
     global MODE, PAGES, FOOTER, JS, CSS
@@ -328,8 +404,10 @@ def set_mode(mode):
     MODE = mode
     # 실사이트에는 STAGING 띠가 없다 — 띠의 전환 이름 규칙도 뺀다(reports-filter.test 가 실사이트 글에 'kos-staging-bar' 가 없는지 본다)
     CSS = CSS_ALL.replace('.kos-staging-bar{view-transition-name:kos-bar} ', '') if mode == 'live' else CSS_ALL
+    if simil_on():   # 꼬리의 법정 표시 문구 — 표시할 때만 싣는다(실사이트 옷은 SIMIL_LIVE 를 켤 때까지 그대로)
+        CSS += LEGAL_NOTE_CSS
     PAGES = PAGES_STAGING if mode == 'staging' else PAGES_LIVE
-    FOOTER = links(FOOTER_T if mode != 'staging' else FOOTER_T.replace('<a href="/Watchlist.html">관심종목</a>', '<a href="/Watchlist.html">관심종목</a><a href="/pricing.html">멤버십</a>'))
+    FOOTER = links(footer_html(FOOTER_T if mode != 'staging' else FOOTER_T.replace('<a href="/Watchlist.html">관심종목</a>', '<a href="/Watchlist.html">관심종목</a><a href="/pricing.html">멤버십</a>')))
     JS = links(JS_T + (JS_DEMO if mode == 'preview' else '') + '\n})();')
 
 
@@ -367,7 +445,7 @@ def i18n_table():
     파일에 "//always": "stock.html" 처럼 페이지를 적으면 그 파일의 문구는 그 페이지에 늘 싣는다 — 페이지 글이 아니라
     자료에서 오는 문구(리포트의 밸류에이션 기준 줄 등)는 페이지를 훑어서는 찾을 수 없다."""
     if not _I18N:
-        allp, common, stg, always = {}, {}, {}, {}
+        allp, common, stg, always, paid = {}, {}, {}, {}, {}
         for p in sorted(I18N_DIR.glob('*.json')):
             raw = json.loads(p.read_text(encoding='utf-8'))
             d = {_i18n_norm(k): v for k, v in raw.items() if not k.startswith('//')}
@@ -376,10 +454,17 @@ def i18n_table():
                 common.update(d)
             elif p.stem == 'staging':
                 stg.update(d)
+            elif p.stem == 'paid':   # 유료판 약관 · 공지에만 쓰는 말 — 실사이트는 공지 · 유료판을 싣는 날부터(i18n_block)
+                paid.update(d)
             for pg in str(raw.get('//always', '')).split(','):
                 if pg.strip():
                     always.setdefault(pg.strip(), set()).update(d)
-        _I18N['all'], _I18N['common'], _I18N['stg'], _I18N['always'] = allp, common, stg, always
+        # 꼬리의 통신판매 표시(patch_biz_footer.SELL) — 이름만 영어로 바꾸고 값(신고번호 · 전화번호 · 회사 이름)은 그대로 둔다.
+        # 값을 채워도 사전 파일을 따로 고치지 않게 여기서 만든다.
+        for k, v, en, v_en in _biz.SELL:
+            ko_v, en_v = (v, v_en or v) if v else _sell_tbd(k)
+            allp[_i18n_norm(f'{k} {ko_v}')] = f'{en} {en_v}'
+        _I18N['all'], _I18N['common'], _I18N['stg'], _I18N['always'], _I18N['paid'] = allp, common, stg, always, paid
     return _I18N
 
 
@@ -412,8 +497,11 @@ def i18n_block(html, page):
     if MODE != 'live':
         pick.update(tb['stg'])   # STAGING 띠 · 멤버십 메뉴 — 스테이징 모든 페이지
     pick.update({k: tb['all'][k] for k in tb['always'].get(page, ())})
+    # paid.json — 유료판 약관 · 공지의 말 가운데 지금 실사이트 글에도 든 낱말('공지' · '문의' · '시행일' …). 실사이트에는 공지 ·
+    # 유료판을 싣는 날부터 싣는다 — 그 전에 실으면 실사이트 페이지 사전이 바뀌고, 그날 손으로 옮기게 두면 잊는다.
+    paid_off = MODE == 'live' and not (NOTICE_LIVE or PAID_LIVE)
     for k, v in tb['all'].items():
-        if k in pick or (MODE == 'live' and (k in tb['stg'] or k in LIVE_DICT_DROP)):
+        if k in pick or (MODE == 'live' and (k in tb['stg'] or k in LIVE_DICT_DROP)) or (paid_off and k in tb['paid']):
             continue
         if '#' in k or '@' in k:   # 숫자(#) · 날짜(@) 자리 — 나머지 조각이 모두 페이지에 있으면
             parts = [x.strip() for x in re.split(r'[#@]', k) if x.strip()]
@@ -526,9 +614,9 @@ FOOTER_T = '''<footer class="foot"><div class="wrap">
   <div class="fgrid">
     <div class="fcol"><h4>서비스</h4><a href="/Home.html">홈</a><a href="/Reports.html">리포트</a><a href="/industry.html">업종 분석</a><a href="/Watchlist.html">관심종목</a><a href="/brief.html">모닝브리핑</a></div>
     <div class="fcol"><h4>회사</h4><a href="/About.html">회사 소개</a><a href="/Contact.html">문의하기</a><a href="/Feedback.html">피드백</a></div>
-    <div class="fcol"><h4>정책</h4><a href="/Terms.html">이용약관</a><a href="/Privacy.html">개인정보 처리방침</a></div>
+    <div class="fcol"><h4>정책</h4><a href="/Terms.html">이용약관</a><a href="/Privacy.html">개인정보 처리방침</a>{NOTICE_LINK}</div>
   </div>
-  <div class="biz">{BIZ_SPANS}</div>
+  <div class="biz">{BIZ_SPANS}{BIZ_SELL}</div>{LEGAL_NOTE}
   <div class="copy">© 2026 KOSAI</div>
 </div></footer>'''.replace('{BIZ_SPANS}', BIZ_SPANS)
 
@@ -575,6 +663,9 @@ IPO_JS = r'''function kosIpo(live){var IPO=(window.KOS_REPORTS&&KOS_REPORTS.ipo)
       trading_value:null,ipo:{list_date:e.list_date||'',offer_price:e.offer_price==null?null:e.offer_price,shares:e.shares==null?null:e.shares}}});
   if(window.KOSi18n&&KOSi18n.names)KOSi18n.names(out);   // 영어 화면의 종목명 — 시세 자료의 종목은 번역 엔진이 스스로 싣는다
   return out}
+/* 가격 칸 — 공모가가 있으면 '공모가 N원', 없으면 '상장일 YYYY-MM-DD'(종목 페이지 ipoLine 과 같은 규칙 · 영어는 사전의 '공모가 #원' · '상장일 #-#-#').
+   공모 없이 상장하는 코넥스 종목(에이치스틸 2026-11-27)은 공모가가 없다 — '공모가 —'로 그리면 공모가가 있는데 모르는 것처럼 읽히고 영어 사전에도 없다. */
+function kosIpoPrice(o,won){o=o||{};return o.offer_price?'공모가 '+won(o.offer_price):(o.list_date?'상장일 '+o.list_date:'—')}
 '''
 
 

@@ -48,8 +48,10 @@ const T = {
     startsLater: "이미 이용 중인 기간이 오늘 자정까지 남아 있습니다. 새 구독은 오늘 바로 시작되며, 겹치는 하루는 이용 기간 끝에 더해 드립니다.",
     monthly: "매월", today: "오늘", total: "결제 금액", vat: "부가가치세 포함",
     agreeAll: "아래 내용에 모두 동의합니다",
-    agree1: '<a href="Terms.html" target="_blank" rel="noopener">이용약관</a>과 <a href="Privacy.html" target="_blank" rel="noopener">개인정보 처리방침</a>에 동의합니다. (필수)',
-    agree2: "매월 같은 날짜에 등록하신 카드로 자동 결제되는 정기결제에 동의합니다. 결제가 승인되지 않는 경우 1일·3일·5일·7일째에 다시 시도되는 것에 동의합니다. (필수)",
+    /* 개인정보 처리방침은 동의를 받는 문서가 아니라 알리는 문서다 — 결제 정보는 계약 이행에 필요한 처리라(개인정보 보호법 제15조제1항제4호)
+       동의 없이 처리하고 처리방침으로 알린다. 그래서 '확인했습니다'로 받는다(2026-11-25). */
+    agree1: '<a href="Terms.html" target="_blank" rel="noopener">이용약관</a>에 동의하며, <a href="Privacy.html" target="_blank" rel="noopener">개인정보 처리방침</a>을 확인했습니다. (필수)',
+    agree2: "매월 같은 날짜에 등록하신 카드로 자동 결제되는 정기결제에 동의합니다. 결제가 승인되지 않는 경우 최초 승인 거절일부터 1일·3일·5일·7일이 되는 날에 다시 시도되는 것에 동의합니다. (필수)",
     agree3: "위 환불 기준을 확인했으며, 결제 후 리포트의 유료 영역을 열람하면 7일 이내에도 이용한 날의 이용료를 뺀 금액이 환불되는 것에 동의합니다. (필수)",
     agree4: "만 19세 이상이거나, 미성년자인 경우 법정대리인의 동의를 받았습니다. (필수)",
     pay: "결제하고 시작하기",
@@ -69,7 +71,7 @@ const T = {
     mDesc: "새로 등록하신 카드로 다음 결제일부터 자동 결제됩니다. 현재 청구되는 금액은 없습니다.",
     mDue: "직전 정기결제가 정상적으로 처리되지 않았습니다. 정해진 날에 자동으로 다시 시도해 드리며, 카드를 등록하시면 기다리지 않고 즉시 결제 후 이용이 재개됩니다.",
     mBtn: "카드 등록하기",
-    mAgree: "등록하신 카드로 매월 자동 결제되는 정기결제에 동의합니다. 결제가 승인되지 않는 경우 1일·3일·5일·7일째에 다시 시도되는 것에 동의합니다. (필수)",
+    mAgree: "등록하신 카드로 매월 자동 결제되는 정기결제에 동의합니다. 결제가 승인되지 않는 경우 최초 승인 거절일부터 1일·3일·5일·7일이 되는 날에 다시 시도되는 것에 동의합니다. (필수)",
     mFine: '기존에 등록된 카드는 새 카드로 대체됩니다. 구독은 <a href="billing.html">구독 관리</a>에서 언제든지 해지하실 수 있습니다.',
     mSum: "현재 이용 중인 플랜", mCurCard: "현재 카드", mNoSub: "이용 중인 구독이 없습니다",
     mH1: "결제 수단 변경", mH2: "새 카드를 등록하시면 다음 결제일부터 해당 카드로 청구됩니다.",
@@ -84,8 +86,8 @@ const T = {
     startsLater: "Your current period runs until midnight today. The new subscription starts right away, and the overlapping day is added to the end of your billing period.",
     monthly: "Monthly", today: "Today", total: "Amount due", vat: "VAT included",
     agreeAll: "I agree to everything below",
-    agree1: 'I agree to the <a href="Terms.html" target="_blank" rel="noopener">Terms of Service</a> and <a href="Privacy.html" target="_blank" rel="noopener">Privacy Policy</a>. (required)',
-    agree2: "I agree to recurring monthly charges to the card I register, on the same date each month, and to retries on days 1, 3, 5 and 7 if a charge is declined. (required)",
+    agree1: 'I agree to the <a href="Terms.html" target="_blank" rel="noopener">Terms of Service</a> and have read the <a href="Privacy.html" target="_blank" rel="noopener">Privacy Policy</a>. (required)',
+    agree2: "I agree to recurring monthly charges to the card I register, on the same date each month, and, if a charge is declined, to retries 1, 3, 5 and 7 days after the first declined charge. (required)",
     agree3: "I have read the refund terms above and agree that, once I open the paid sections of a report after payment, a refund within 7 days is the amount paid minus the usage charge for the days used. (required)",
     agree4: "I am 19 or older, or I am a minor with my legal guardian's consent. (required)",
     pay: "Pay and start",
@@ -105,7 +107,7 @@ const T = {
     mDesc: "Your new card will be charged from the next billing date. No amount is charged today.",
     mDue: "Your most recent renewal was not processed. We retry automatically on a set schedule; register a card and it will be charged immediately so you do not have to wait.",
     mBtn: "Register card",
-    mAgree: "I agree to recurring monthly charges to the card I register, and to retries on days 1, 3, 5 and 7 if a charge is declined. (required)",
+    mAgree: "I agree to recurring monthly charges to the card I register, and, if a charge is declined, to retries 1, 3, 5 and 7 days after the first declined charge. (required)",
     mFine: 'The card on file is replaced by the new one. You can cancel anytime on the <a href="billing.html">subscription page</a>.',
     mSum: "Current plan", mCurCard: "Card on file", mNoSub: "No active subscription",
     mH1: "Change payment method", mH2: "Register a new card and it is charged from your next billing date.",
@@ -313,7 +315,7 @@ async function confirm(authKey, customerKey, planId, method) {
     } catch (e) {}
     await httpsCallable(fns, "confirmBilling")(
       { authKey, customerKey, plan: planId, updateMethod: method || undefined,
-        adultConfirmed: adult || undefined });
+        adultConfirmed: adult || undefined, agreed: adult ? ["terms", "privacy", "recurring", "refund", "age"] : undefined, lang: EN() ? "en" : "ko" });
     location.replace(method ? "billing.html?card=1" : "billing.html");
   } catch (e) {
     console.error("[checkout] confirmBilling", e);

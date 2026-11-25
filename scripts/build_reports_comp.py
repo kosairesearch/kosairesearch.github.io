@@ -176,7 +176,7 @@ JS = r'''(function(){
   function rowHtml(r,i){var c=r.change||0,t=repTitle(r.ticker),d=repDate(r.ticker);
     return '<a class="rl-row" href="/stock.html?ticker='+r.ticker+'" data-tk="'+r.ticker+'"><span class="rk">'+(i+1)+'</span>'
       +'<div><div class="r-name">'+esc(r.name)+'</div><div class="r-meta">'+r.ticker+' · '+esc(r.market)+' · '+esc(r.sector)+metricBits(r).map(function(m){return ' · '+m}).join('')+(d?'<span class="md"> · <b>'+esc(d)+'</b></span>':'')+'</div></div>'
-      +'<div class="r-title'+(t?'':' none')+'">'+(t?esc(t):'리포트 준비 중')+'</div><div class="r-price">'+(r.ipo?'공모가 '+won(r.ipo.offer_price):won(r.price)+'<span class="c '+dir(c)+'">'+chg(c)+'</span>')+'</div><div class="r-date">'+esc(d||'—')+'</div>'
+      +'<div class="r-title'+(t?'':' none')+'">'+(t?esc(t):'리포트 준비 중')+'</div><div class="r-price">'+(r.ipo?kosIpoPrice(r.ipo,won):won(r.price)+'<span class="c '+dir(c)+'">'+chg(c)+'</span>')+'</div><div class="r-date">'+esc(d||'—')+'</div>'
       +'<button type="button" class="wl'+(isW(r.ticker)?' on':'')+'" data-wl="'+r.ticker+'" title="'+(isW(r.ticker)?'관심종목에서 빼기':'관심종목 추가')+'" aria-label="'+(isW(r.ticker)?'관심종목에서 빼기':'관심종목 추가')+'" aria-pressed="'+(isW(r.ticker)?'true':'false')+'">'+bmSvg+'</button></a>'}
   /* ── 숫자 조건 ── PER·PBR·배당·성장률은 /data/valuation.js 에 있다. 필터를 처음 건드릴 때 받는다. */
   var valState='none',valPromise=null;
