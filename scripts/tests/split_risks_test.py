@@ -243,6 +243,18 @@ ok(nd[0] is not None and nd[0]["risks"] == base["risks"] and nd[0]["riskSplit"] 
    "같은 사안이 없다는 답은 글을 바꾸지 않고 표시만")
 ok(S.judge(dict(base, textRules=4), GOOD)[0] is None and S.judge(dict(base, riskSplit=1), GOOD)[0] is None,
    "끼우는 순간에도 새 판 · 이미 본 글이면 건드리지 않는다")
+selfko = with_body(0, BODY1.replace("정책 발표 시점에 따라", "리포트에는 관세율이 제시되지 않아 정책 발표 시점에 따라"), BODY1_EN)
+ok(J(selfko)[0] is None and "리포트 자체" in J(selfko)[1], "리포트 자체를 가리키는 말('리포트에는 … 제시되지 않아')은 막는다", J(selfko)[1])
+selfsec = with_body(0, BODY1.replace("미국의 화장품 관세 정책이", "산업 분석은 관세 영향을 설명했으나 미국의 화장품 관세 정책이"), BODY1_EN)
+ok(J(selfsec)[0] is None and "리포트 자체" in J(selfsec)[1], "다른 절을 가리키는 말('산업 분석은 …')은 막는다", J(selfsec)[1])
+selfen = with_body(0, BODY1, BODY1_EN + " The report does not give tariff rates.")
+ok(J(selfen)[0] is None and "리포트 자체" in J(selfen)[1], "영어의 'The report does not …'도 막는다", J(selfen)[1])
+broker = with_body(0, BODY1.replace("정책 발표 시점에 따라", "KB증권은 2026년 5월 리포트에서 관세 영향을 분석하지 않았고, 정책 발표 시점에 따라"), BODY1_EN)
+ok(J(broker)[0] is not None, "증권사 리포트를 가리키는 말('KB증권은 … 리포트에서')은 막지 않는다", J(broker)[1])
+stale = with_body(1, BODY3.replace("2027년 상반기 가동이 목표다.", "2026년 8월 첫 선적이 예정되어 있다.").replace("1,500억원", "1,500억원"),
+                  BODY3_EN)
+ok(J(stale)[0] is None and "지난 일정" in J(stale)[1], "작성일보다 앞선 달의 일정을 '예정'으로 쓴 답은 막는다(작성일 2026-11-14)", J(stale)[1])
+ok("작성일(2026-11-14)" in S.params_of(rep_of("1"))["messages"][0]["content"], "지시문에 작성일을 적는다(지난 일정을 고르지 않게)")
 yr = with_body(1, BODY3.replace("2027년 상반기 가동이", "2027년 3분기 가동이"),
                BODY3_EN.replace("first half of 2027", "third quarter of 2027"))
 ok(J(yr)[0] is not None, "연도 · 연도에 붙은 분기 번호는 새 수치로 치지 않는다", J(yr)[1])

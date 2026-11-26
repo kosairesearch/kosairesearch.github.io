@@ -62,12 +62,17 @@ PROMPT = """아래는 한 회사의 기업 분석 리포트(JSON)입니다. 약�
 2. 같은 사안인 리스크 항목만 새로 쓴다. 새 항목은
    · 약세 요인의 어느 항목과도, 다른 리스크 항목과도 다른 사안이다.
    · 이 리포트의 다른 절(business · earnings · industry · outlook · valuation_comment · checkpoints · verdict · lead · keypoints)에
-     적힌 사실에 근거한 앞으로의 위험이다. 리포트에 없는 사실을 만들지 않는다.
+     적힌 계획 · 사건 · 조건에 근거한 앞으로의 위험이다. 리포트에 없는 사실이나 근거 없는 가정(유상증자 · 지분 희석 등)을 만들지
+     않는다.
+   · 주가 · 수급 · 주가 변동성 · 밸류에이션 배수는 리스크로 쓰지 않는다 — 회사의 실적 · 사업에 닿는 사안만 쓴다.
+   · 작성일({date})보다 앞선 날짜의 일정(예정 · 계획 · 목표)은 이미 지난 일이므로 앞으로의 위험으로 쓰지 않는다.
    · 수치는 리포트의 다른 절에 이미 있는 것만 그 뜻 그대로 쓴다. 약세 요인에 쓴 수치는 쓰지 않는다. 수치가 없어도 된다.
    · cat 은 위험의 분류를 짧게(한국어 4~12자), body 는 한국어 150~200자 · 3~4문장이다.
    · 이 회사에 닿는 구체적 사안을 쓴다. 업계 일반론('경기 둔화' · '경쟁 심화')만으로 채우지 않는다.
    · 문장은 '…이다 · …했다 · …수 있다'로 끝나는 보고서 문체로 쓴다. 투자 권유 · 가치 단정 · 독자나 투자자를 부르는 말 · 글을 쓴
      과정('이번 조사에서' · '이 리포트에서는') · 과장을 쓰지 않는다. 연도는 숫자로 쓴다('올해' · '지난해' 금지).
+   · 새 항목은 리포트 본문의 한 절로 읽혀야 한다. 이 글이나 그 절을 가리키지 않고('리포트에는 … 제시되지 않아' · '산업 분석은
+     … 설명했다' 금지), 리포트에 무엇이 없다고 쓰지 않는다.
    · en 은 같은 뜻의 영어다. 한글을 한 글자도 쓰지 않는다. 회사 · 제품 · 기관 이름은 리포트 영어 본문의 표기를 따른다.
 3. 같은 사안이 아닌 리스크 항목은 바꾸지 않는다(출력에 넣지 않는다).
 
@@ -118,7 +123,8 @@ def targets(limit=0, only=None, root=None):
 
 def params_of(rep):
     part = {k: v for k, v in rep.items() if k not in C._NOT_TEXT and k != MARK}
-    text = PROMPT.format(n=len(rep["risks"]), b=len(rep["bear"]), report=json.dumps(part, ensure_ascii=False, indent=1))
+    text = PROMPT.format(n=len(rep["risks"]), b=len(rep["bear"]), date=str(rep.get("reportDate") or "")[:10] or "작성일",
+                         report=json.dumps(part, ensure_ascii=False, indent=1))
     return {"model": MODEL, "max_tokens": 16000, "thinking": {"type": "adaptive"},
             "messages": [{"role": "user", "content": text}]}
 
@@ -155,6 +161,47 @@ def _sentences_ko(obj):
             if len(k) >= 25:
                 out.add(k)
     return out
+
+
+# 리포트 자체나 그 절을 가리키는 말 — 2026-11-26 시험 27항목 중 3항목('리포트에는 발급 규모와 거래 단가가 제시되지 않아' ·
+# '거래처별 매출 비중은 리포트에 제시되지 않아' · '산업 분석은 … 설명했으나'). 증권사 리포트를 가리키는 말('KB증권은 5월 리포트에서')은 뺀다.
+_SELF_KO = re.compile(r"리포트(?:에는|에|에서는|에서도|에서)\s*[^.]{0,40}?(?:제시|나와|나오|담기|담겨|포함|언급|드러나|확인|나타나)"
+                      r"(?:되|하|돼)?(?:지|진)?\s*않"
+                      r"|(?<![가-힣])(?:산업|실적|사업|전망|밸류에이션)\s*분석(?:은|에서는|에서|이|에 따르면)\s"
+                      r"|(?<![가-힣])(?:본문|이 절|앞 절|위 절)(?:에|에서|에는|은|의)?\s")
+_SELF_EN = re.compile(r"\b(?:the|this) report (?:does not|doesn't|did not|gives no|provides no|shows no|lacks)\b"
+                      r"|\bnot (?:given|shown|provided|disclosed|stated) in (?:the|this) report\b"
+                      r"|\bthe (?:industry|earnings|business|valuation|outlook) (?:analysis|section) (?:explains|says|notes|states|shows|describes)\b"
+                      r"|\b(?:this|the above|the previous) section\b", re.I)
+_BROKER = re.compile(r"(?:증권|투자|리서치|애널리스트|자산운용|은행)[^.]{0,12}$")
+
+
+def self_ref(item):
+    """새 항목이 리포트 자체나 그 절을 가리키는가 — 걸린 말 또는 ''."""
+    ko = " ".join(((item.get(k) or {}).get("ko") or "") for k in ("cat", "body"))
+    en = " ".join(((item.get(k) or {}).get("en") or "") for k in ("cat", "body"))
+    for m in _SELF_KO.finditer(ko):
+        if m.group(0).startswith("리포트") and _BROKER.search(ko[:m.start()]):
+            continue                                   # 'KB증권은 5월 리포트에서 …' — 증권사 리포트
+        return m.group(0)[:30]
+    m = _SELF_EN.search(en)
+    return m.group(0)[:30] if m else ""
+
+
+_YM = re.compile(r"(20\d\d)년\s*(\d{1,2})월")
+_PLAN = re.compile(r"예정(?:이다|되어|돼|이며|이고|이라|인|대로)|계획(?:이다|이며|이고)|목표(?:다|이다|로 하)|앞두고")
+
+
+def stale_plan(item, report_date):
+    """작성일보다 앞선 달의 일정을 앞으로의 일('…예정되어')로 쓴 문장 — 걸린 문장 또는 ''."""
+    m = re.match(r"(\d{4})-(\d{2})", str(report_date or ""))
+    if not m:
+        return ""
+    now = (int(m.group(1)), int(m.group(2)))
+    for s in re.split(r"(?<=[.다])\s+", (item.get("body") or {}).get("ko") or ""):
+        if _PLAN.search(s) and any((int(y), int(mo)) < now for y, mo in _YM.findall(s)):
+            return s[:40]
+    return ""
 
 
 def parse(msg):
@@ -232,6 +279,14 @@ def judge(rep_now, ans):
         odd = mine - _side_nums(rest, side)
         if odd:
             return None, f"리포트에 없는 수치({side}) " + ", ".join(sorted(odd)[:4]), []
+    # 리포트 자체를 가리키는 말 · 이미 지난 일정을 앞으로의 일로
+    for x in changed:
+        hit = self_ref(x)
+        if hit:
+            return None, f"리포트 자체를 가리킴 — {hit}", []
+        hit = stale_plan(x, rep_now.get("reportDate"))
+        if hit:
+            return None, f"지난 일정을 앞으로의 일로 — {hit}", []
     # 다른 칸의 문장을 글자 그대로 옮기지 않았다
     if _sentences_ko(changed) & _sentences_ko({k: v for k, v in rep_now.items() if k not in C._NOT_TEXT and k != "risks"}):
         return None, "다른 칸의 문장을 그대로 옮김", []
@@ -347,7 +402,7 @@ def cmd_apply(cl, state=None, show=False, dry=False):
                 if isinstance(j, dict):
                     judged["같은 사안" if j.get("same_as") else "다른 사안"] += 1
         if rep2 is None:
-            key = re.sub(r"[\s(].*$", "", why) if why.startswith(("리포트에", "약세", "검사", "새 항목")) else why
+            key = re.sub(r"[\s(].*$", "", why) if why.startswith(("리포트에", "약세", "검사", "새 항목", "리포트 자체", "지난 일정")) else why
             skip[key] += 1
             log(f"  · 건너뜀 {cid} — {why}")
             continue
