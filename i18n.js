@@ -115,10 +115,16 @@
     }
     var w = u === '조' ? v * 1e12 : u === '억' ? v * 1e8 : u === '만' ? v * 1e4 : v;
     if (u === '조' || w >= 1e12) return sg + '₩' + fmt(w / 1e12) + 'T';
-    if (w >= 1e9) return sg + '₩' + fmt(w / 1e9) + 'B';
+    if (w >= 1e9) return sg + '₩' + fmt(w / 1e9, chartCtx && w >= 1e11 ? 0 : 1) + 'B';
     if (w >= 1e6 && u) return sg + '₩' + fmt(w / 1e6) + 'M';
+    if (chartCtx && u && w >= 1e3) return sg + '₩' + fmt(w / 1e3, 0) + 'K';
     return sg + '₩' + fmt(w, 0);
   }
+  /* 리포트 차트의 값 라벨(.ch-val)은 좁은 칸이라 짧게 적는다 — ₩100B 이상은 소수점 없이('₩148B'), 만 단위 금액은 K('₩170K').
+     '₩147.9B' 가 옆 막대 · 라벨에 닿아 차트 위쪽까지 떠올랐다(2026-11-26 · 영어 리포트 136장 · 한국어는 같은 날 1억 미만을 '만' 단위로).
+     표 · 지표 칸은 그대로다 */
+  var chartCtx = false;
+  function isChartVal(el) { return !!(el && el.nodeType === 1 && /(^|\s)ch-val(\s|$)/.test(el.getAttribute('class') || '')); }
   function look1(core) {
     var en = dict[core];
     if (en != null) return en;
@@ -234,8 +240,8 @@
       var v = node.nodeValue;
       if (!v || !v.trim()) return;
       if (!txtOrig.has(node)) { if (!HAN.test(v)) return; txtOrig.set(node, v); }
-      var o = txtOrig.get(node);
-      var want = lang === 'en' ? translateText(o) : o;
+      var o = txtOrig.get(node), want = o;
+      if (lang === 'en') { chartCtx = isChartVal(node.parentNode); try { want = translateText(o); } finally { chartCtx = false; } }
       if (node.nodeValue !== want) node.nodeValue = want;
     }
   }
