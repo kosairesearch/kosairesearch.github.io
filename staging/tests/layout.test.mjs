@@ -456,7 +456,8 @@ for (const width of [320, 390, 1440]) {
           n++;
           others.forEach((o) => { if (hit(a.r, o.r)) out.push(`${a.t}~${o.t}`); });
           vals.forEach((b, j) => { if (j > i && hit(a.r, b.r)) out.push(`${a.t}~${b.t}`); });
-          if (a.r.left < cr.left - 0.5 || a.r.right > cr.right + 0.5) out.push(`${a.t} 차트 밖`);
+          /* 차트 옆 여백 16px 까지는 나가도 된다 — 차트 끝 라벨을 안으로 밀어 넣다 옆 막대에 닿으면 멀리 떠오르므로(2026-11-26 · 아래 블록) */
+          if (a.r.left < Math.max(cr.left - 16.5, 3.5) || a.r.right > Math.min(cr.right + 16.5, document.documentElement.clientWidth - 3.5)) out.push(`${a.t} 차트 밖`);
           if (cap && a.r.top < B(cap).bottom + 1) out.push(`${a.t}~제목`);
           if (lg && a.r.bottom > B(lg).top - 1) out.push(`${a.t}~범례`);
         });
@@ -464,9 +465,68 @@ for (const width of [320, 390, 1440]) {
       return { out, n };
     });
     await page.close();
-    ok(`${label} ${width}px ${tk} — 값 라벨 ${got.n}개가 막대·라벨·축·제목·범례에 닿지 않고 차트 안에 있다`,
+    ok(`${label} ${width}px ${tk} — 값 라벨 ${got.n}개가 막대·라벨·축·제목·범례에 닿지 않고 차트 안(옆 여백 16px 까지)에 있다`,
        got.n > 0 && !got.out.length, got.out.slice(0, 4).join(" | "));
   }
+}
+
+/* ── 차트 끝 값 라벨은 제 막대 바로 위에 둔다 (두 사이트) ──────
+   2026-11-26 사장이 보낸 에이피알 리포트 화면(휴대폰) — 마지막 분기(26Q3) 영업이익 라벨 '1,606억'이 매출 라벨 '7,731억' 위로 떠 있었다.
+   그 라벨은 막대 왼쪽 끝에서 오른쪽으로 쓰는데 차트 오른쪽 끝을 넘었고, 차트 안으로 밀어 넣으면 옆 매출 막대에 1px 겹쳐 비켜 세우기
+   (stock_page.CHART_FIT_JS)가 144px 띄웠다. 이제 차트 옆 여백(16px · 화면 끝 4px 안)까지 내보낸 자리를 먼저 본다. 그날 차트를 그대로
+   끼워 넣고 잰다 — 리포트가 다시 쓰여도 장면은 같다. 고치기 전 판이면 라벨이 막대에서 150px 가까이 떨어져 걸린다. */
+const APR_Q = '<div class="ch" role="img" aria-label="매출·영업이익 막대그래프" style="height:220px"><svg viewBox="0 0 520 220" preserveAspectRatio="none" aria-hidden="true"><line x1="8" y1="192.0" x2="512" y2="192.0" class="ch-base" vector-effect="non-scaling-stroke"/><rect class="ch-rev" x="33.4" y="110.1" width="22.0" height="81.9"/><rect class="ch-op" x="61.4" y="171.6" width="22.0" height="20.4"/><rect class="ch-rev" x="134.2" y="75.8" width="22.0" height="116.2"/><rect class="ch-op" x="162.2" y="164.4" width="22.0" height="27.6"/><rect class="ch-rev" x="235.0" y="66.1" width="22.0" height="125.9"/><rect class="ch-op" x="263.0" y="159.7" width="22.0" height="32.3"/><rect class="ch-rev" x="335.8" y="29.2" width="22.0" height="162.8"/><rect class="ch-op" x="363.8" y="151.6" width="22.0" height="40.4"/><rect class="ch-rev" x="436.6" y="28.0" width="22.0" height="164.0"/><rect class="ch-op" x="464.6" y="157.9" width="22.0" height="34.1"/></svg><span class="ch-val" style="left:8.54%;top:105.1px">3,859억</span><span class="ch-val l" style="left:11.81%;top:166.6px">961억</span><span class="ch-lab" style="left:11.23%;top:200px">25Q3</span><span class="ch-val" style="left:27.92%;top:70.8px">5,476억</span><span class="ch-val l" style="left:31.19%;top:159.4px">1,303억</span><span class="ch-lab" style="left:30.62%;top:200px">25Q4</span><span class="ch-val" style="left:47.31%;top:61.1px">5,934억</span><span class="ch-val l" style="left:50.58%;top:154.7px">1,523억</span><span class="ch-lab" style="left:50.00%;top:200px">26Q1</span><span class="ch-val" style="left:66.69%;top:24.2px">7,675억</span><span class="ch-val l" style="left:69.96%;top:146.6px">1,906억</span><span class="ch-lab" style="left:69.38%;top:200px">26Q2</span><span class="ch-val" style="left:86.08%;top:23.0px">7,731억</span><span class="ch-val l" style="left:89.35%;top:152.9px">1,606억</span><span class="ch-lab" style="left:88.77%;top:200px">26Q3</span></div>';
+console.log("\n── 차트 끝 값 라벨은 제 막대 바로 위에 둔다 (두 사이트) ──\n");
+for (const [label, url] of [["스테이징", (tk) => `${BASE}/staging/stock.html?ticker=${tk}&paywall=0`],
+                            ["실사이트", (tk) => `${BASE}/stock.html?ticker=${tk}`]])
+for (const width of [360, 390, 402]) {
+  const page = await browser.newPage({ viewport: { width, height: 900 } });
+  await page.route("**gstatic.com/**", (r) => r.abort());
+  await page.goto(url("278470"), { waitUntil: "domcontentloaded" });
+  await page.waitForSelector(".ch .ch-val", { timeout: 20000 });
+  await page.waitForTimeout(400);
+  const got = await page.evaluate((html) => {
+    document.querySelector(".ch").outerHTML = html;
+    window.kosFitCharts();
+    const c = document.querySelector(".ch"), rs = [...c.querySelectorAll("rect")], vs = [...c.querySelectorAll(".ch-val")];
+    const op = rs[rs.length - 1].getBoundingClientRect(), rev = rs[rs.length - 2].getBoundingClientRect(), lab = vs[vs.length - 1].getBoundingClientRect();
+    return { t: vs[vs.length - 1].textContent, gap: +(op.top - lab.bottom).toFixed(1), dl: +(lab.left - op.left).toFixed(1), revR: +rev.right.toFixed(1),
+             labL: +lab.left.toFixed(1), labR: +lab.right.toFixed(1), chR: +c.getBoundingClientRect().right.toFixed(1), vw: document.documentElement.clientWidth };
+  }, APR_Q);
+  await page.close();
+  ok(`${label} ${width}px — 마지막 분기 영업이익 라벨이 제 막대 바로 위(막대 왼쪽 끝부터)에 있고 옆 매출 막대에 닿지 않는다`,
+     got.t === "1,606억" && got.gap >= 2 && got.gap <= 12 && Math.abs(got.dl) <= 1.5 && got.labL >= got.revR, JSON.stringify(got));
+  ok(`${label} ${width}px — 그 라벨은 차트 옆 여백 16px · 화면 끝 4px 안에 있다`, got.labR <= Math.min(got.chR + 16.5, got.vw - 3.5), JSON.stringify(got));
+}
+
+/* ── 작은 막대 옆에 큰 막대가 붙은 차트 — 라벨은 옆으로 조금 비켜 제 막대 위에 둔다 (두 사이트) ──────
+   은행 · 금융지주의 분기 차트는 매출 칸(영업수익 일부)이 영업이익보다 훨씬 작아, 작은 매출 막대 바로 오른쪽에 큰 영업이익 막대가 붙는다.
+   가운데에 쓴 매출 라벨이 큰 막대에 몇 px 겹쳐 비켜 세우기가 큰 막대 위까지 띄웠다(2026-11-26 기업은행 '315억' 164px · 신한지주 등 7장).
+   이제 옆으로 16px 안에서 옮긴 자리(제 막대 가운데는 덮은 채 · 다른 막대와 2px 띄움)를 함께 본다. 그날 기업은행 분기 차트를 끼워 넣고 잰다
+   — 고치기 전 판이면 라벨이 막대에서 120px 넘게 떨어져 걸린다. */
+const IBK_Q = '<div class="ch" role="img" aria-label="매출·영업이익 막대그래프" style="height:220px"><svg viewBox="0 0 520 220" preserveAspectRatio="none" aria-hidden="true"><line x1="8" y1="192.0" x2="512" y2="192.0" class="ch-base" vector-effect="non-scaling-stroke"/><rect class="ch-rev" x="33.4" y="187.0" width="22.0" height="5.0"/><rect class="ch-op" x="61.4" y="36.7" width="22.0" height="155.3"/><rect class="ch-rev" x="134.2" y="187.2" width="22.0" height="4.8"/><rect class="ch-op" x="162.2" y="76.3" width="22.0" height="115.7"/><rect class="ch-rev" x="235.0" y="186.8" width="22.0" height="5.2"/><rect class="ch-op" x="263.0" y="43.7" width="22.0" height="148.3"/><rect class="ch-rev" x="335.8" y="185.9" width="22.0" height="6.1"/><rect class="ch-op" x="363.8" y="46.5" width="22.0" height="145.5"/><rect class="ch-rev" x="436.6" y="186.4" width="22.0" height="5.6"/><rect class="ch-op" x="464.6" y="28.0" width="22.0" height="164.0"/></svg><span class="ch-val" style="left:8.54%;top:182.0px">315억</span><span class="ch-val l" style="left:11.81%;top:31.7px">9,767억</span><span class="ch-lab" style="left:11.23%;top:200px">25Q3</span><span class="ch-val" style="left:27.92%;top:182.2px">303억</span><span class="ch-val l" style="left:31.19%;top:71.3px">7,274억</span><span class="ch-lab" style="left:30.62%;top:200px">25Q4</span><span class="ch-val" style="left:47.31%;top:181.8px">328억</span><span class="ch-val l" style="left:50.58%;top:38.7px">9,325억</span><span class="ch-lab" style="left:50.00%;top:200px">26Q1</span><span class="ch-val" style="left:66.69%;top:180.9px">381억</span><span class="ch-val l" style="left:69.96%;top:41.5px">9,151억</span><span class="ch-lab" style="left:69.38%;top:200px">26Q2</span><span class="ch-val" style="left:86.08%;top:181.4px">352억</span><span class="ch-val l" style="left:89.35%;top:23.0px">1.0조</span><span class="ch-lab" style="left:88.77%;top:200px">26Q3</span></div>';
+console.log("\n── 작은 막대 옆에 큰 막대가 붙은 차트 — 라벨은 옆으로 조금 비켜 제 막대 위에 둔다 (두 사이트) ──\n");
+for (const [label, url] of [["스테이징", (tk) => `${BASE}/staging/stock.html?ticker=${tk}&paywall=0`],
+                            ["실사이트", (tk) => `${BASE}/stock.html?ticker=${tk}`]])
+for (const width of [360, 390, 402]) {
+  const page = await browser.newPage({ viewport: { width, height: 900 } });
+  await page.route("**gstatic.com/**", (r) => r.abort());
+  await page.goto(url("024110"), { waitUntil: "domcontentloaded" });
+  await page.waitForSelector(".ch .ch-val", { timeout: 20000 });
+  await page.waitForTimeout(400);
+  const got = await page.evaluate((html) => {
+    document.querySelector(".ch").outerHTML = html;
+    window.kosFitCharts();
+    const c = document.querySelector(".ch"), rev = [...c.querySelectorAll("rect.ch-rev")], op = [...c.querySelectorAll("rect.ch-op")];
+    const vs = [...c.querySelectorAll(".ch-val:not(.l)")];
+    return vs.map((v, i) => { const l = v.getBoundingClientRect(), b = rev[i].getBoundingClientRect(), o = op[i].getBoundingClientRect();
+      return { t: v.textContent, gap: +(b.top - l.bottom).toFixed(1), cover: l.left <= (b.left + b.right) / 2 && (b.left + b.right) / 2 <= l.right,
+               room: +(o.left - l.right).toFixed(1) }; });
+  }, IBK_Q);
+  await page.close();
+  const bad = got.filter((g) => !(g.gap >= 2 && g.gap <= 12 && g.cover && g.room >= 1.5));
+  ok(`${label} ${width}px — 매출 라벨 다섯이 모두 제 막대 바로 위(가운데를 덮은 채)에 있고 옆 큰 막대에 닿지 않는다`,
+     got.length === 5 && !bad.length, JSON.stringify(bad.length ? bad : got));
 }
 
 await browser.close();

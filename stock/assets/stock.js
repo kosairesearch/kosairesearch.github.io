@@ -40,7 +40,10 @@ function fit(ch){
   ch.style.marginTop=''; ch.style.marginBottom=''; labs.forEach(function(l){ l.style.marginTop=''; l.style.marginLeft=''; });
   var c0=box(ch); if(c0.r-c0.l<1) return;
   var rects=[].slice.call(ch.querySelectorAll('rect')).map(box), obst=rects.concat([].slice.call(ch.querySelectorAll('.ch-lab')).map(box)), lo=c0.t, hi=c0.b;
+  /* 라벨이 차트 옆으로 나가도 되는 범위 — 차트 상자에서 양옆 16px(휴대폰 본문 여백 20px · 데스크톱 두 칸 사이 40px 의 절반 안)이고, 화면 끝에서 4px 은 남긴다 */
+  var vw=document.documentElement.clientWidth, OL=Math.max(c0.l-16,4), OR=Math.min(c0.r+16,vw-4);
   function inside(b,dx){ if(b.r+dx>c0.r) dx=c0.r-b.r; if(b.l+dx<c0.l) dx=c0.l-b.l; return dx; }
+  function spill(b,dx){ if(b.r+dx>OR) dx=OR-b.r; if(b.l+dx<OL) dx=OL-b.l; return dx; }
   function lift(b,up){
     var dy=0, n, k, o, hit;
     for(n=0;n<24;n++){
@@ -54,12 +57,31 @@ function fit(ch){
   labs.map(function(l){ return {el:l, up:!l.classList.contains('dn'), b:box(l)}; })
     .sort(function(a,c){ return a.up!==c.up?(a.up?-1:1):(a.up?a.b.t-c.b.t:c.b.b-a.b.b); })
     .forEach(function(it){
-      var b=it.b, dx=inside(b,0), dy=lift(mv(b,dx),it.up), bar, cx, cy;
+      var b=it.b, dx=inside(b,0), dy=lift(mv(b,dx),it.up), bar, cx, cy, sx, sy, own, mid, best, bx, by, k, s, nx, nb, ny;
+      /* 차트 끝을 넘는 라벨을 차트 안으로 밀어 넣다 옆 막대에 닿으면 멀리 떠올랐다(2026-11-26 사장 · 에이피알 26Q3 영업이익 — 매출 막대에 1px
+         겹쳐 매출 라벨 위로 144px 떠올랐다). 그럴 때는 차트 옆 여백까지 내보낸 자리를 먼저 본다 — 제 막대 바로 위에 남는다 */
+      if(dy){ sx=spill(b,0); if(sx!==dx){ sy=lift(mv(b,sx),it.up); if(Math.abs(sy)<Math.abs(dy)){ dx=sx; dy=sy; } } }
       /* 막대 왼쪽 끝에서 쓰는 영업이익 라벨(.l)이 비켜야 하면 제 막대 가운데로 옮긴 자리와 견줘, 덜 움직이는 쪽(비슷하면 가운데)을 쓴다 —
          멀리 떠오른 라벨은 제 막대 바로 위에 있어야 어느 막대의 값인지 읽힌다 */
       if(dy&&it.el.classList.contains('l')){
         bar=rects.filter(function(r){ return Math.abs(r.l-b.l)<1.5; })[0];
         if(bar){ cx=inside(b,(bar.r-bar.l)/2-(b.r-b.l)/2); cy=lift(mv(b,cx),it.up); if(Math.abs(cy)<=Math.abs(dy)+4){ dx=cx; dy=cy; } }
+      }
+      /* 그래도 비켜야 하면 옆으로 조금(16px 안) 옮긴 자리를 본다 — 제 막대 가운데는 덮은 채로, 다른 막대 · 라벨과 2px 띄우고, 옮긴 거리와
+         떠오른 높이의 합이 가장 작은 자리를 쓴다. 작은 막대 바로 옆에 큰 막대가 붙은 차트(은행 · 금융지주의 매출 칸)에서 라벨이 큰 막대
+         위까지 떠오르지 않게(2026-11-26 · 기업은행 분기 매출 '315억'이 164px 떠올랐다) */
+      if(dy){
+        own=rects.filter(function(r){ return it.el.classList.contains('l')?Math.abs(r.l-b.l)<1.5:Math.abs((r.l+r.r)/2-(b.l+b.r)/2)<1.5; })[0];
+        if(own){
+          mid=(own.l+own.r)/2; best=Math.abs(dy); bx=dx; by=dy;
+          for(k=1;k<=16;k++) for(s=-1;s<=1;s+=2){
+            nx=dx+s*k; nb=mv(b,nx);
+            if(nb.l<OL||nb.r>OR||nb.l>mid||nb.r<mid) continue;
+            ny=lift({l:nb.l-2,r:nb.r+2,t:nb.t,b:nb.b},it.up);
+            if(Math.abs(ny)+k<best){ best=Math.abs(ny)+k; bx=nx; by=ny; }
+          }
+          dx=bx; dy=by;
+        }
       }
       if(dx) it.el.style.marginLeft=dx+'px';
       if(dy) it.el.style.marginTop=dy+'px';
