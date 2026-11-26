@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "기술이전 시점과 조건",
-    "en": "Timing and terms of licensing"
+    "ko": "규제 승인과 상업화 일정",
+    "en": "Regulatory approval and commercial timing"
    },
    "body": {
-    "ko": "회사는 기술이전 시점이 불명확하다는 시장의 우려를 인식하고 있다. 익수다와 시스톤은 바이오텍으로서 임상 2상과 3상을 직접 수행하기보다 제3자 기술이전을 추진할 가능성이 거론된다. 파트너의 재계약이 지연되면 서브라이선싱 수익도 기대보다 늦어질 수 있다.",
-    "en": "The company is aware of market concern over the unclear timing of new licensing deals. IKSUDA and Systimmune, as biotech companies, may pursue third-party licensing rather than run Phase 2 and Phase 3 trials themselves. If partners' re-licensing is delayed, sublicensing income could arrive later than expected."
+    "ko": "익수다의 LCB73은 중국 등 일부 지역에서 2027년 상업화가 기대된다는 보도가 있다. 이 일정은 현지 허가 심사가 예정대로 끝나는 것을 전제로 하며, 허가가 늦어지면 상업화 시점도 뒤로 밀린다. 상업화 단계에서 발생하는 단계별 기술료 유입도 파트너의 허가 일정에 따라 늦어질 수 있다. 회사의 실적은 파트너사의 허가 진행 상황을 간접적으로 반영하는 구조다.",
+    "en": "IKSUDA's LCB73 is reported to be expected for commercialization as early as 2027 in some regions, including China. This timeline assumes local regulatory review concludes as planned, and if approval is delayed, the commercial launch would also slip. Milestone receipts tied to commercial stages could likewise be delayed according to the partner's approval schedule. The company's results therefore reflect partner regulatory progress only indirectly."
    }
   },
   {
    "cat": {
-    "ko": "자금 소진과 비용 구조",
-    "en": "Cash burn and cost structure"
+    "ko": "자체 임상 자금 조달 구조",
+    "en": "Funding structure for in-house clinical trials"
    },
    "body": {
-    "ko": "회사는 1조원 규모의 재원을 활용할 수 있다고 밝혔지만 임상 확대에 따라 지출도 커진다. 2026년 3분기 연구개발비는 546억원으로 전년 동기와 비슷한 수준이었다. 연간 IND 4~5개 확보 목표를 실행하려면 비용 효율화와 함께 재원 집행을 관리해야 한다.",
-    "en": "The company says it can draw on about KRW 1 trillion in funding, but spending will rise as clinical programs expand. R&D spending in the third quarter of 2026 was KRW 54.6 billion, close to the prior-year level. Meeting the target of four to five INDs a year will require managing spending alongside cost discipline."
+    "ko": "회사는 핵심 자산을 임상 2상과 3상까지 직접 끌고 가겠다는 방침이다. 이 계획은 국민성장펀드 납입금을 포함한 보유자금 8,321억원을 전제로 한다. 자체 개발 비중이 높아질수록 추가 자금 조달 여건이 계획 실행에 영향을 줄 수 있다. 부채비율도 2022년 15.0%에서 2025년 29.7%로 오른 상태여서 차입 확대 여부가 재무 구조를 바꿀 수 있다.",
+    "en": "The company plans to take its core assets through Phase 2 and Phase 3 trials on its own. This plan rests on cash on hand of KRW 832.1 billion, including the National Growth Fund payment. As the share of in-house development rises, the terms of any additional funding could affect execution. The debt ratio has also risen from 15.0% in 2022 to 29.7% in 2025, so the extent of future borrowing could alter the capital structure."
    }
   }
  ],
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

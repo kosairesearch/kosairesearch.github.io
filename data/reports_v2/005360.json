@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "수요 구조",
-    "en": "Demand structure"
+    "ko": "저가 수입품 경쟁",
+    "en": "Low-priced import competition"
    },
    "body": {
-    "ko": "학령인구 감소와 스마트 기기 확산으로 펜 수요가 줄고 있고, 매출의 70% 이상이 전통 문구류에 의존한다. 시장 점유율이 1위라도 시장 자체가 축소되면 매출 회복 폭은 제한된다. 2026년 3분기 매출이 전년 동기보다 늘었더라도 그 흐름이 연간으로 이어질지는 확인이 필요하다.",
-    "en": "A shrinking school-age population and smart-device adoption are reducing pen demand, and more than 70% of revenue depends on traditional stationery. Even with the top market share, a shrinking market limits how much revenue can recover. Third-quarter 2026 revenue rose year on year, but whether that continues across a full year remains to be confirmed."
+    "ko": "국내 문구 시장에는 중국 등 신흥국의 저가 상품이 유입되며 경쟁이 강해졌다는 분석이 나온다. 모나미는 2024년 기준 점유율 41%로 업계 최고 수준이지만, 저가 제품과의 가격 경쟁이 심해지면 점유율을 지키기 위해 수익성을 내주어야 할 수 있다. 문구사업의 흑자 폭이 크지 않은 만큼 마진이 조금만 낮아져도 흑자가 사라질 수 있다.",
+    "en": "Industry analyses point to intensifying competition in the domestic stationery market as low-priced goods from China and other emerging markets enter. Monami held a 41% share in 2024, the highest in the industry, but a price war with low-cost products could force it to give up margin to defend that position. Because the stationery turnaround rests on a thin profit margin, even a small cut in pricing could erase the profit."
    }
   },
   {
    "cat": {
-    "ko": "신사업 실행",
-    "en": "New-business execution"
+    "ko": "해외 시장 진출",
+    "en": "Overseas market entry"
    },
    "body": {
-    "ko": "화장품 자회사는 공장 가동률 20% 수준에서 50%를 목표로 제시했으나, 달성 시점과 수주 규모는 아직 확인된 수치가 없다. 해외 매출은 2025년 상반기 아시아에서 39.6% 줄었다. 신사업 부진이 2026년 상반기 적자 폭 확대의 원인으로 지목됐다는 점에서 실행 리스크가 크다.",
-    "en": "The cosmetics subsidiary's utilization target of 50% is set against a current level of about 20%, and the timing and size of orders have not been firmly quantified. Asian overseas revenue fell 39.6% in the first half of 2025. Weakness in new businesses was cited as a driver of the wider first-half 2026 loss, so execution risk is significant."
+    "ko": "해외 시장에서는 미국, 동남아, 유럽 진출 계획이 보도됐다. 아프리카 등 신규 시장에서 매출이 늘고 있어 새 지역 진출이 매출 기반을 넓힐 수 있다. 다만 현지 유통망 구축에는 시간과 비용이 들어, 진출이 늦어지면 해외 매출이 전사 실적에 기여하는 시기도 늦어질 수 있다.",
+    "en": "Plans to enter the United States, Southeast Asia and Europe have been reported for overseas markets. Revenue has been growing in new markets such as Africa, so entering new regions could broaden the revenue base. However, building local distribution networks takes time and money, and any delay could push back the point at which overseas sales contribute to group results."
    }
   },
   {
    "cat": {
-    "ko": "재무와 상장 유지",
-    "en": "Financial strain and listing standards"
+    "ko": "인력·채널 재편",
+    "en": "Staffing and channel restructuring"
    },
    "body": {
-    "ko": "2025년 말 부채비율은 117.8%이고 자본총계는 810억원이다. 2026년 3월 보도 기준 시가총액은 2029년 코스피 퇴출 기준인 500억원에 못 미쳤다. 2026년 7월 개인 매수세로 주가가 단기 급등한 것처럼 수급 요인에 따른 가격 변동성도 큰 편이다.",
-    "en": "Debt-to-equity stood at 117.8% at end-2025, with total equity of KRW 81 billion. A March 2026 report said market capitalization was below the KRW 50 billion level of the KOSPI delisting standard applying from 2029. Price swings driven by supply and demand have been large, including a sharp one-day rise in July 2026 on retail buying."
+    "ko": "회사는 인력 운영 효율화와 적자 영업 채널 축소를 실행 과제로 밝혔다. 채널을 줄이면 손실은 줄어들 수 있지만, 그만큼 문구 매출이 함께 빠질 수 있다. 문구 매출은 이미 감소 추세에 있어, 채널 축소가 매출 회복을 늦추는 방향으로 작용할 가능성도 배제하기 어렵다. 이 재편의 성과는 2027년 1분기 보고서에서 매출과 기타 사업부 손실 폭으로 확인될 수 있다.",
+    "en": "The company has named more efficient staffing and fewer loss-making sales channels as its execution tasks. Cutting channels can reduce losses, but it can also remove stationery sales at the same time. Since revenue is already on a downward trend, the reduction could slow revenue recovery, and its effect may appear in revenue and the other unit's losses in the first-quarter 2027 report."
    }
   }
  ],
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

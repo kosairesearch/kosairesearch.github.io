@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "자금 조달과 희석",
-    "en": "Funding and Dilution"
+    "ko": "해외 신규 검사 매출 반영",
+    "en": "Overseas New Test Revenue"
    },
    "body": {
-    "ko": "영업손실이 이어지는 상황에서 2026년에는 CB와 CPS로 300억원을 조달했다. 전환사채와 전환우선주는 전환이 이루어질 때 발행주식 수를 늘린다. 자금이 글로벌 진단 확대와 AI 신약개발 연구개발에 쓰이는 만큼 집행 성과가 확인되기 전까지 자금 소요가 계속될 수 있다.",
-    "en": "With operating losses continuing, the company raised KRW 30 billion through CB and CPS in 2026. Conversion of the convertible bonds and preferred shares would increase the number of shares outstanding. Because the proceeds fund global diagnostics expansion and AI drug discovery R&D, funding needs could continue until the results of that spending become visible."
+    "ko": "신생아 선별검사 3B-NEO는 2026년 6월 해외 출시되어 필리핀 정부 신생아선별검사 사업의 수행기관으로 선정됐다. 회사는 관련 실적이 2026년 하반기부터 순차적으로 반영될 것이라고 밝혔다. 이 사업의 검사 물량과 매출 인식 시점이 계획보다 늦어지면 2026년 4분기 이후 해외 매출 증가 폭이 예상에 못 미칠 수 있다.",
+    "en": "The newborn screening test 3B-NEO launched overseas in June 2026 and was selected as a provider for a Philippine government newborn screening program. The company said related revenue would be reflected in stages starting in the second half of 2026. If the testing volume or revenue recognition timing of this program falls behind plan, overseas sales growth after the fourth quarter of 2026 could fall short of expectations."
    }
   },
   {
@@ -335,5 +335,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

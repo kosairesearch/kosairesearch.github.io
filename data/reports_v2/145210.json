@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장·거래 리스크",
-    "en": "Listing and trading risk"
+    "ko": "품질 승인·공정 리스크",
+    "en": "Quality approval and process risk"
    },
    "body": {
-    "ko": "감사의견 한정이 2년 연속 이어져 상장폐지 기준에 해당했고, 한국거래소 개선기간은 2027년 4월 14일이다. 개선기간 안에 감사의견이 정상화되지 않으면 상장 유지 여부가 쟁점이 된다. 거래재개 절차는 회계 투명성과 내부통제 강화의 이행 여부에 달려 있다고 회사는 밝혔다.",
-    "en": "Two consecutive limited audit opinions triggered a delisting criterion, and the Korea Exchange cure period runs to April 14, 2027. If the audit opinion is not normalized within that period, the question of continued listing becomes central. The company says the trading resumption process depends on implementing stronger accounting transparency and internal controls."
+    "ko": "회사는 자동화 공정과 표준화된 생산 프로세스를 넓혀 제조 리드타임을 줄이고 있다고 설명한다. 금형은 고객사 품질 승인과 반복 생산 효율이 수익성을 좌우하므로, 승인이 늦어지면 공정 개선 효과가 이익으로 이어지는 시점도 밀릴 수 있다. 특허 기술 제품과 글로벌 전략 고객사와의 기술 협력이 성장 근거로 제시된 만큼, 협력 성과가 기대에 못 미치면 고부가 수주 확대도 제한될 수 있다.",
+    "en": "The company says it is expanding automated processes and standardized production to shorten manufacturing lead times. Because mold orders depend on customer quality approval and repeat-production efficiency, delays in approval could push back the point at which process gains reach profit. Since patented-technology products and technical cooperation with global strategic customers are cited as growth bases, weaker-than-expected cooperation results could also limit the expansion of high-value orders."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

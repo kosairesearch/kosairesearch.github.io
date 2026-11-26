@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·수출 집중 리스크",
-    "en": "Customer and export concentration risk"
+    "ko": "공급계약 이행 일정",
+    "en": "Contract performance timing"
    },
    "body": {
-    "ko": "최대 고객사 비중 55%와 수출 비중 89.9%는 특정 고객의 설비 투자 일정이나 해외 정책 변화에 실적이 좌우될 수 있다는 뜻이다. 중국 패널 업체의 증설 일정이 늦어지면 디스플레이 수주가 줄 수 있다. 수주잔고 381억 8,100만원이 분기 매출로 얼마나 빨리 전환되는지가 관건이다.",
-    "en": "A 55% share for the largest customer and 89.9% exports mean results could depend heavily on one customer's capex timing or overseas policy. Delays in Chinese panel capacity expansion could reduce display orders. How quickly the KRW 38.18 billion order backlog converts into quarterly revenue is the key variable."
+    "ko": "2026년 9월 22일 공시된 디스플레이 제조 장비 공급계약(60억 3,554만 8,000원)은 계약기간이 2026년 12월 14일까지이며, 종료일은 양사 협의로 변경된 일자다. 이행이 지연되면 해당 물량의 매출 인식이 2027년 이후로 밀릴 수 있다. 수주잔고 381억 8,100만원의 매출 전환 속도와 함께 4분기 실적을 흔드는 요인이 될 수 있다.",
+    "en": "The display manufacturing equipment supply contract disclosed on September 22, 2026 (KRW 6.04 billion) runs to December 14, 2026, and its end date was changed by mutual agreement. If performance is delayed, revenue recognition for that volume could slip into 2027 or later. Together with the pace at which the KRW 38.18 billion order backlog converts into revenue, this could weigh on fourth-quarter results."
    }
   },
   {
    "cat": {
-    "ko": "일회성 이익과 해석",
-    "en": "One-off gains and interpretation"
+    "ko": "성장 전망 달성 여부",
+    "en": "Achievement of growth outlook"
    },
    "body": {
-    "ko": "2025년 순이익과 2025년 4분기 지배주주 순이익 499억원에는 토지 양도 관련 영업외 이익이 크게 반영됐다. 이 이익은 반복되기 어려우므로 영업이익과 분리해 해석해야 한다. 2026년 3분기 순손실은 영업 흑자와 달리 순손익 변동성이 크다는 신호다.",
-    "en": "Controlling-shareholder net income of KRW 49.9 billion in the fourth quarter of 2025 reflects large non-operating gains from the land sale. Such gains are unlikely to recur, so they must be separated from operating results. The third-quarter 2026 net loss, despite operating profit, signals high volatility in net earnings."
+    "ko": "대표는 2026년 연간 매출이 전년 대비 50% 이상 성장할 것으로 전망했지만, 2026년 1~3분기 누적 매출은 514억원이다. 전망을 맞추려면 4분기 매출이 3분기까지의 흐름보다 크게 늘어야 해 달성이 어려울 수 있다. 미달 시 전망과 실적의 격차는 2027년 3월 31일 제출 기한의 사업보고서에서 확인될 수 있다.",
+    "en": "The CEO expects 2026 revenue to grow by more than 50% over 2025, but cumulative revenue for the first three quarters of 2026 was KRW 51.4 billion. Reaching that target requires fourth-quarter revenue to rise well above the pace of the first three quarters, which may be difficult. If the target is missed, the gap between outlook and actual results could become visible in the 2026 annual business report due by March 31, 2027."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

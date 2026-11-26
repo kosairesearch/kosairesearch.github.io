@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율·관세",
-    "en": "FX and tariffs"
+    "ko": "골프화 판매 회복",
+    "en": "FootJoy sales recovery"
    },
    "body": {
-    "ko": "원화 강세는 아쿠쉬네트의 원화 기준 실적을 낮추는 요인으로 작용해 KB증권의 목표주가 하향 배경이 됐다. 2026년 1분기 영업이익은 관세 및 신제품 마케팅 비용 증가에도 환율 효과와 매출 성장으로 개선됐다. 관세 환급 같은 일회성 효과는 분기 수치를 흔들 수 있다.",
-    "en": "A stronger won lowered Acushnet's KRW-based earnings and was part of the rationale behind KB Securities' target cut. In Q1 2026, operating profit rose despite higher tariff and new-product marketing costs, helped by currency effects and revenue growth. One-time items such as tariff refunds can distort quarterly figures."
+    "ko": "풋조이 골프화 판매 부진이 2026년 3분기 아쿠쉬네트 실적을 누른 요인으로 제시됐다. 타이틀리스트 골프볼과 웨지 판매가 견조하더라도 풋조이 판매가 회복되지 않으면 골프 장비 전반의 수익성 개선 폭이 제한될 수 있다. 골프 사업이 지주사 실적의 중심인 만큼 이 부진이 이어지면 이익 회복 속도가 늦춰질 수 있다. 하반기 사업 효율화 과제가 골프화 판매 회복으로 이어지는지가 점검 대상이다.",
+    "en": "Weaker FootJoy golf shoe sales were cited as a drag on Acushnet's results in Q3 2026. Even if Titleist golf ball and wedge sales hold up, failure to recover FootJoy sales could limit profit improvement across golf equipment. Because golf is the core of the group's results, a prolonged slump in this line could slow the pace of earnings recovery. Whether the second-half efficiency program leads to a rebound in FootJoy sales is the item to watch."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 레버리지와 주주환원",
-    "en": "Leverage and shareholder returns"
+    "ko": "주주환원 정책 집행",
+    "en": "Shareholder return execution"
    },
    "body": {
-    "ko": "부채비율은 2025년 말 112.7%로 2022년 87.3%보다 높다. 2025년 말 부채총계는 2조 9,248억원이다. 주주환원으로 2025년 약 2,854억원을 집행하며 자본 사용이 늘었고, 영업활동 현금흐름은 2025년 5,674억원으로 2023년 이후 플러스를 유지했다.",
-    "en": "The debt ratio stood at 112.7% at the end of 2025, above 87.3% in 2022. Total liabilities at the end of 2025 were KRW 2.92 trillion. Shareholder returns of about KRW 285.4 billion in 2025 increased capital outflows, while operating cash flow of KRW 567.4 billion in 2025 stayed positive after 2023."
+    "ko": "2025~2027년 주주환원 정책은 최대 5,000억원 규모이며, 2026년 5월 발표 기준 누적 집행률은 61.1%다. 2026~2027년 총주주환원율 40% 이상 유지 계획은 분기 이익 변동이 큰 흐름 속에서 현금 사용 부담으로 작용할 수 있다. 실적이 가이던스에 못 미치는 해에도 환원 수준을 유지하면 다른 용도로 쓸 현금 여력이 줄어들 수 있다. 정책 기간 종료 시점의 누적 집행액과 환원율 유지 여부가 확인 지점이다.",
+    "en": "The 2025–2027 shareholder return policy sets a ceiling of up to KRW 500 billion, and cumulative execution stood at 61.1% as of a May 2026 announcement. Keeping the total shareholder return ratio at 40% or more for 2026–2027 could strain cash use in a period when quarterly profit swings widely. If returns are maintained in a year when results fall short of guidance, room to use cash for other purposes may narrow. The cumulative payout at the end of the policy period and whether the 40% ratio is maintained are the points to check."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 5.27
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

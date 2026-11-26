@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "시장 리스크 · 주택 침체",
-    "en": "Market risk · Housing downturn"
+    "ko": "실행 리스크 · 비주택 확장",
+    "en": "Execution risk · Non-housing expansion"
    },
    "body": {
-    "ko": "지방 미분양 등으로 주택시장 침체가 지속되면 민간 주택 수주가 막히고 공공 발주 의존도가 더 커진다. 주택 수주잔고 4조 6,459억원은 사업 전체의 중심이므로 분양 시장 악화는 착공과 매출 전환에 직접 영향을 준다. 회사도 민간 주택은 우량 사업지만 선별 수주하겠다고 밝혀 물량 확보 속도에는 제약이 있을 수 있다.",
-    "en": "If the housing market slump persists amid local unsold homes, private housing orders could stall and dependence on public orders would grow. Because the KRW 4.65 trillion housing backlog is the center of the business, a weaker sales market directly affects construction starts and revenue conversion. The company has said it will only selectively win private housing projects, which may limit the speed of order intake."
+    "ko": "회사는 주택 의존을 줄이기 위해 삼성전자 플랙트 한국공장 신축 같은 첨단산업시설과 호남권 반도체 클러스터, 재생에너지 인프라로 영역을 넓히겠다고 밝혔다. 연면적 2만 3,588㎡의 냉난방공조 메인 공장과 실험실을 짓는 이 공사는 설비 일정과 맞물려 공정 관리 부담이 클 수 있다. 반도체 설비 투자가 둔화되면 비주택 발주가 늦어지거나 줄 수 있고, 그러면 주택 공백을 메우는 효과도 약해질 수 있다.",
+    "en": "To reduce its reliance on housing, the company said it will widen its business into advanced industrial facilities such as the Samsung Electronics Flakt Korea factory construction, the Honam semiconductor cluster and renewable energy infrastructure. The 23,588-square-meter project, which will house a main HVAC factory and laboratories, could carry heavy process-management demands because it is tied to equipment schedules. If semiconductor equipment investment slows, non-housing orders could be delayed or shrink, and the effect of filling the gap left by the housing downturn would weaken."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 2.32
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

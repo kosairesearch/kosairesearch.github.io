@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무구조와 차입 부담",
-    "en": "Financial Structure and Debt Burden"
+    "ko": "신규 개발 수주의 양산 전환",
+    "en": "Conversion of New Development Inquiries"
    },
    "body": {
-    "ko": "2025년 말 부채총계 1,283억원이 자본총계 554억원을 웃돌고 부채비율은 231.7%다. 2023년부터 3분기 누적으로 영업 적자가 이어지는 구간에서 부채 상환 여력은 자산유동화 실행 여부에 따라 달라질 수 있다. 자산 1,837억원에는 투자부동산 300억원이 포함돼 있어 자산 매각 시점과 가격이 재무 개선의 변수다.",
-    "en": "Total liabilities at the end of 2025 were KRW 128.3 billion, above total equity of KRW 55.4 billion, and the debt ratio stood at 231.7%. Debt repayment capacity could depend on whether asset securitization is carried out, given the continued operating losses. Total assets of KRW 183.7 billion include KRW 30 billion of investment property, so the timing and price of asset sales are variables for financial improvement."
+    "ko": "2026년 5월 보도에서 회사 관계자는 터보차저 관련 신규 개발 문의가 꾸준히 이어지고 있다고 밝혔다. 이 문의가 양산 발주와 매출로 이어지는 시점은 아직 확인되지 않았다. 개발 단계에서 양산 전환까지는 시간이 걸릴 수 있어, 전방 확대 효과가 분기 매출 구성에 나타나는 시기가 늦어질 수 있다. 전환이 지연되면 매출 증가에 대한 기대와 분기 실적 사이의 간격이 길어질 수 있다.",
+    "en": "A May 2026 report quoted a company official saying inquiries for new turbocharger development continue steadily. It has not yet been confirmed when these inquiries will lead to mass-production orders and revenue. The time needed to move from development to mass production could delay the point at which downstream expansion appears in the revenue mix. If this conversion is delayed, the gap between expected sales growth and quarterly results could widen."
    }
   },
   {
    "cat": {
-    "ko": "환율 의존 이익의 변동성",
-    "en": "Volatility of Exchange-Rate-Driven Profit"
+    "ko": "베트남 생산 확대의 실행",
+    "en": "Execution of Vietnam Production Expansion"
    },
    "body": {
-    "ko": "2026년 1분기 순이익 흑자 전환은 환율 상승에 따른 환차익이 기여했다고 회사가 설명했다. 환율이 반대 방향으로 움직이면 같은 항목이 손실로 바뀔 수 있다. 수출 비중이 높은 구조에서 환율은 영업 손익과 영업 밖 손익을 함께 흔든다. 분기별 순손익이 영업손익과 다른 방향으로 움직이는 이유를 환율 효과로 분리해 확인하는 것이 필요하다.",
-    "en": "The company said the first-quarter 2026 net profit turnaround reflected foreign exchange gains from a rising exchange rate. If the exchange rate moves the other way, the same item could turn into a loss. Exchange rates can move operating and non-operating results together in an export-linked business. Separating the exchange rate effect when quarterly net income moves differently from operating income is necessary."
+    "ko": "2025년 쑤저우 공장을 매각한 뒤 재임대하고 베트남법인 생산을 늘리는 방식으로 사업구조를 바꿨다고 보도됐다. 생산 거점 이전이 계획대로 진행되는지에 따라 원가 절감 효과의 크기와 반영 시기가 달라질 수 있다. 베트남 생산 확대가 고객 물량 배정 일정과 맞물려 늦어지면 구조조정 효과가 분기 실적에 충분히 나타나지 않을 수 있다. 회사가 제시한 원가 절감 근거가 실제 생산 구조 변화로 이어지는지가 확인 지점이다.",
+    "en": "Press coverage reported that in 2025 the company sold its Suzhou factory, leased it back, and changed its business structure by expanding production at its Vietnam subsidiary. The size and timing of cost reductions could vary depending on whether this production relocation proceeds as planned. If Vietnam output expansion is delayed alongside the timing of customer volume allocations, the restructuring effect may not fully appear in quarterly results. Whether the cost-reduction basis cited by the company translates into an actual change in production structure is the point to confirm."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

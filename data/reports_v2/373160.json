@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "사업·시장 집중",
-    "en": "Business and market concentration"
+    "ko": "일본 청년층 수요 의존",
+    "en": "Reliance on young Japanese demand"
    },
    "body": {
-    "ko": "개인 대상 온라인 강의 비중이 여전히 절반 가까이이고, 해외 매출의 61%가 일본 시장에서 나온다. 개인 시장 위축이나 일본 수요 변화가 동시에 실적에 영향을 줄 수 있다. 콘텐츠 재활용 구조가 신규 시장에서도 같은 효율을 내는지는 분기 공헌이익률로 확인된다.",
-    "en": "Individual online courses still account for close to half of revenue, and about 61% of global revenue came from Japan as of September 2025. A slowdown in consumer demand or a shift in Japanese demand could weigh on results at the same time. Whether the content reuse model delivers the same efficiency in new markets will show up in quarterly contribution margins."
+    "ko": "일본 법인 매출은 콜로소 재팬 이용자 분석에서 가장 큰 비중을 차지한 18~24세, 그 뒤를 잇는 25~34세 청년층 수요에 기대고 있다. 빠른 진로 결정과 실무 기술 습득을 중시하는 이 수요가 줄거나 경쟁 강좌로 옮겨가면 일본 매출의 성장 흐름이 약해질 수 있다. 일본 매출이 해외 부문의 대부분을 차지하는 만큼 청년층 수요 변화는 해외 실적 전체에 직접 닿는다.",
+    "en": "Japan operations rely on demand from young adults, with users aged 18 to 24 forming the largest group in the Colosso Japan user analysis and those aged 25 to 34 following. If demand from this group, which prioritizes quick career decisions and practical skills, weakens or shifts to rival courses, growth in Japanese revenue could slow. Because Japan accounts for most overseas revenue, changes in youth demand would flow directly into results for the entire overseas segment."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무와 주주환원 여력",
-    "en": "Financial capacity and shareholder returns"
+    "ko": "강사·플랫폼 확보",
+    "en": "Instructor and platform access"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 364억원이고, 2026년 9월 기준 리스부채는 208억 7,565만원으로 크게 늘었다. 최근 네 개 분기 순손실이 이어지면 3년간 당기순이익 최소 30%를 환원한다는 계획은 이익 수준에 좌우된다. 자기주식 매입과 소각 규모가 손실 흐름과 맞물려 어떻게 조정되는지가 확인 지점이다.",
-    "en": "Total liabilities at the end of 2025 were KRW 36.4 billion, and lease liabilities reached KRW 20.88 billion by September 2026. Because the planned return of at least 30% of net income depends on earnings, continued losses would constrain that plan. How the scale of buybacks and cancellations adjusts alongside the loss trend is a point to monitor."
+    "ko": "패스트캠퍼스·콜로소·제로베이스 강의는 강사와 플랫폼 확보에 따라 제작과 유통 조건이 달라진다. 주요 강사가 이탈하거나 플랫폼 조건이 바뀌면 자체 제작 콘텐츠를 여러 채널에 재활용하는 원가 구조가 약해질 수 있다. 이는 분기 공헌이익률 개선 흐름을 되돌릴 수 있는 요인이다.",
+    "en": "Fastcampus, Colosso and Zerobase courses depend on securing instructors and platforms, which sets the terms of production and distribution. If key instructors leave or platform terms change, the cost structure that reuses in-house content across channels could weaken. Such a shift could reverse the improvement in quarterly contribution margin that the company reported."
    }
   }
  ],
@@ -328,5 +328,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

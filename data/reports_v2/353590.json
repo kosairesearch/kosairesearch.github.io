@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "완성차 그룹 의존",
-    "en": "Automaker group dependence"
+    "ko": "차량 데이터 규제",
+    "en": "Vehicle data regulation"
    },
    "body": {
-    "ko": "공식 멤버십 몰과 신차 연계 용품이 매출 구조의 중심이어서 완성차 브랜드의 판매 전략, 용품 정책, 신차 출시 일정에 따라 매출이 달라질 수 있다. 2026년 3분기 매출이 전년 동기 대비 23.3% 줄어든 것도 이런 구조와 무관하지 않을 수 있다. 채널 의존도를 낮추는 신사업의 진척 속도가 이 리스크를 가르는 기준이 된다.",
-    "en": "Revenue centers on official membership malls and new-model accessories, so sales could shift with automaker sales strategies, accessory policies and launch schedules. Third-quarter 2026 sales down 23.3% year on year may partly reflect this structure. The pace at which new businesses reduce channel dependence will determine how this risk plays out."
+    "ko": "2024년 보도에서 밝힌 차량용 전자제품은 고객 또는 차량 데이터를 수집하고 완성차와 개발하는 통합 애플리케이션으로 관리하는 구조다. 개인정보와 차량 데이터의 수집·이용·보관에 관한 규제가 강화되면 제품 설계와 서비스 출시 일정이 늦어질 수 있다. 스마트 인포 패널과 차량 내 제어 소프트웨어 영역이 넓어질수록 데이터 처리 기준을 맞추는 비용도 늘어날 수 있다.",
+    "en": "A 2024 report described in-vehicle electronics that collect customer or vehicle data and are managed through an integrated application developed with automakers. Tighter rules on the collection, use and storage of personal and vehicle data could delay product design and service launches. As smart info panels and in-vehicle control software expand, the cost of meeting data-handling standards may also rise."
    }
   },
   {
    "cat": {
-    "ko": "재무구조와 현금흐름",
-    "en": "Financial structure and cash flow"
+    "ko": "인허가·안전 규제",
+    "en": "Permit and safety regulation"
    },
    "body": {
-    "ko": "부채비율 194.7%와 부채총계 362억원은 자본 규모 대비 차입 부담이 크다는 뜻이다. 유동비율이 2025년 127%로 낮아진 점도 단기 자금 여력을 점검해야 하는 이유다. 영업활동 현금흐름이 2025년 -3.7억원으로 마이너스로 돌아서 흑자 전환과 현금 창출의 연결이 약한 상태다.",
-    "en": "A debt ratio of 194.7% and total liabilities of KRW 36.2 billion point to a heavy borrowing burden relative to equity. The current ratio falling to 127% in 2025 makes short-term liquidity a point to monitor. Operating cash flow of KRW -366 million in 2025 shows a weak link between the operating turn to profit and cash generation."
+    "ko": "정관 변경으로 사업목적에 추가된 고압가스 판매업은 허가 또는 등록과 설비·안전 기준 충족이 필요하다. 인허가 취득 시기나 요건이 늦어지면 신규 사업목적의 실행도 지연될 수 있다. 안전 관리 책임이 따르는 영역이어서 사업 개시 이후에도 사고 예방과 규제 점검 체계를 갖춰야 한다. 사업 확장이 실제 매출로 이어지는지도 이 절차를 거쳐야 드러난다.",
+    "en": "The high-pressure gas sales business added to the company's business purpose through the articles amendment requires a license or registration and compliance with equipment and safety standards. Delays in obtaining permits or meeting requirements could also postpone the launch of this new business purpose. Because it carries safety management duties, the company must maintain accident prevention and regulatory inspection systems even after operations begin. Whether this scope expansion produces revenue will depend on clearing these procedures."
    }
   },
   {
    "cat": {
-    "ko": "신사업 수익화 시점",
-    "en": "Timing of new-business monetization"
+    "ko": "정부 지원사업 수행",
+    "en": "Government program execution"
    },
    "body": {
-    "ko": "SPACE ZONE 플랫폼의 차량 내 제어 시스템과 소프트웨어 영역은 확대 계획이 밝혀졌지만 매출 규모는 아직 공시로 확인할 수 없다. 2024년 보도에서 밝힌 모빌리티 데이터 플랫폼 계획도 완성차와의 협업이 전제다. 사업목적에 고압가스 판매업과 종합여행업이 추가된 점은 사업 범위 확대 의지를 보여주지만 수익성은 아직 드러나지 않았다.",
-    "en": "The company has said it plans to expand SPACE ZONE into in-vehicle control and software, but its revenue scale cannot yet be confirmed from disclosures. The mobility data platform plan announced in a 2024 report also depends on automaker collaboration. The addition of high-pressure gas sales and comprehensive travel to the business purpose signals broader scope, but their profitability has not yet appeared."
+    "ko": "2026년 8월 과학기술정보통신부 '2026년 AX 원스톱 바우처 지원사업'의 주관사로 선정됐다. 주관사는 참여 과제와 지원금 집행을 정해진 기준에 맞춰 관리해야 하므로, 성과 요건이나 정산 기준을 충족하지 못하면 지원 효과가 제한될 수 있다. 바우처 사업이 플랫폼과 용품 매출로 이어지지 않으면 운영 비용 부담만 남을 수 있다.",
+    "en": "The company was selected in August 2026 as lead operator of the 2026 AX One-Stop Voucher program run by the Ministry of Science and ICT. As lead operator it must manage participating projects and the execution of support funds against set standards, so failing to meet performance or settlement requirements could limit the benefit of the support. If the voucher program does not translate into platform and accessory sales, the company may be left with operating costs alone."
    }
   }
  ],
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

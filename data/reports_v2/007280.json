@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "대외 수급과 환율",
-    "en": "External supply, demand and currency"
+    "ko": "고부가 강재 확대 실행",
+    "en": "Execution of high-value steel expansion"
    },
    "body": {
-    "ko": "중국발 공급과잉이 장기화하면 내수 철근과 형강의 판가와 마진에 압력이 이어질 수 있다. 고환율로 원재료 조달 비용이 오르면 원가 부담이 커져 영업이익률이 다시 낮아질 수 있다. 내수 비중이 95.9%로 높아 국내 건설 경기 둔화가 매출에 직접 연결되는 구조다.",
-    "en": "If Chinese oversupply persists, pressure could continue on domestic rebar and section steel prices and margins. A strong-dollar environment raises raw material costs and could push the operating margin lower again. With domestic sales at 95.9%, a slowdown in domestic construction would feed directly into revenue."
+    "ko": "고부가 강재와 친환경 철강 분야 확대가 계획대로 진행되지 않을 수 있다. 이 분야는 고객 인증과 품질 기준 충족이 선행돼야 해 신규 핵심 거래선 확보가 늦어지면 신규압연공장의 가동률과 투자 회수가 지연될 수 있다. 회사가 정량 목표 없이 방향만 제시한 만큼 성과를 점검하기 어렵다는 점도 관찰 과제다.",
+    "en": "Expansion into higher-value steel grades and eco-friendly steel may not proceed as planned. These segments require customer qualification and compliance with quality standards first, so delays in securing new key customers could slow utilization of the new rolling mill and the recovery of its investment. Because the company set out a directional plan without quantitative targets, measuring progress against it remains difficult."
    }
   },
   {
    "cat": {
-    "ko": "매출채권과 현금회수",
-    "en": "Receivables and cash collection"
+    "ko": "해외 판로 확대 실행",
+    "en": "Execution of overseas channel expansion"
    },
    "body": {
-    "ko": "2025년 상반기 보도에 따르면 매출채권 증가율이 매출 증가율의 두 배 가량이었고, 매출채권회전율은 전년 동기보다 낮아졌다. 같은 기간 영업활동 현금흐름이 줄었다는 점에서 외상 확대가 현금 회수를 늦추는 요인으로 읽힌다. 2025년 영업활동 현금흐름이 91.8억원으로 줄어든 흐름과 연결해 살펴볼 필요가 있다.",
-    "en": "A 2025 media report said receivables grew at roughly twice the pace of sales, and the receivables turnover ratio fell from the prior-year period. Operating cash flow also declined over that period, suggesting that expanded credit terms may be slowing cash collection. This should be read together with the drop in 2025 operating cash flow to KRW 9.18 billion."
+    "ko": "해외 영업 네트워크를 활용한 신규 핵심 거래선 발굴과 해외 매출 비중 확대가 지연될 수 있다. 수출 비중이 4.1%에 머무는 구조에서 해외 판로가 넓어지지 않으면 내수 건설·제조 수요에 대한 의존이 그대로 남는다. 해외 시장은 시장별로 맞춤형 전략이 필요해 거래선 확보 비용이 늘어날 수 있으며, 그 성과가 가격과 마진에 어떻게 반영될지도 확인이 필요하다.",
+    "en": "Finding new key overseas customers and raising the export share through the overseas sales network may be delayed. With exports at 4.1% of sales, if overseas channels do not broaden, dependence on domestic construction and manufacturing demand will remain. Because each overseas market requires its own strategy, customer acquisition costs could rise, and how these efforts feed into prices and margins still needs to be confirmed."
    }
   },
   {
@@ -354,5 +354,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

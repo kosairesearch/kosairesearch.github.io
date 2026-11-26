@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 투자 사이클 리스크",
-    "en": "Customer capex cycle risk"
+    "ko": "제품 경쟁력·수주 경쟁",
+    "en": "Product competitiveness, order competition"
    },
    "body": {
-    "ko": "중계기 발주는 통신사업자의 망 투자 계획에 따라 달라진다. 통신사 투자가 다시 줄면 생산량과 납기가 흔들릴 수 있다. 2026년 3분기 매출 반등이 특정 발주에 따른 것인지, 지속 가능한 수요인지는 아직 분기 흐름으로 가려야 한다.",
-    "en": "Repeater orders depend on carriers' network investment plans. If carrier spending contracts again, output and delivery schedules could be disrupted. Whether the third-quarter 2026 rebound reflects specific orders or sustained demand needs to be tested in later quarters."
+    "ko": "CS는 5G 광 중계기와 5G RF 중계기를 자체 개발해 통신사에 공급하고 있어, 제품 라인업의 기술 경쟁력이 수주 배분을 좌우한다. 통신장비 업종 내 대형 업체가 비슷한 제품으로 통신사 발주를 가져가면 CS의 수주 비중이 줄 수 있다. 자체 개발 제품 라인업이 신규 규격이나 사양 변화에 맞추지 못하면 2026년 3분기 같은 매출 회복이 이어지기 어려울 수 있다.",
+    "en": "CS develops its own 5G optical and 5G RF repeaters and supplies them to carriers, so the technical competitiveness of its product lineup largely determines how orders are allocated. If larger telecom equipment peers win carrier orders with comparable products, CS's order share could shrink. If its in-house lineup does not keep pace with changes in new standards or product specifications, it may be difficult to sustain a revenue recovery like the one seen in the third quarter of 2026."
    }
   },
   {
    "cat": {
-    "ko": "분기 실적 변동성",
-    "en": "Quarterly earnings volatility"
+    "ko": "신규 공급 계약 공백",
+    "en": "Gap in new supply contracts"
    },
    "body": {
-    "ko": "2025년 4분기 매출 103억원 뒤 2026년 1분기 매출은 33.1억원으로 급감했다. 분기별 매출이 크게 오르내리면서 영업손익도 흑자와 적자 사이를 오갔다. 분기 흑자가 한두 번 나왔다고 손익 구조가 안정됐다고 보기는 어렵다.",
-    "en": "Revenue went from KRW 10.3 billion in the fourth quarter of 2025 to KRW 3.31 billion in the first quarter of 2026. Operating results swung between profit and loss from quarter to quarter. One or two profitable quarters do not yet establish a stable earnings structure."
+    "ko": "매출 반등이 이어지려면 신규 공급 계약이 꾸준히 체결돼야 한다. 기존 발주가 소진된 뒤 새 계약이 끊기면 수주 잔고가 줄고 납품 일정에 공백이 생길 수 있다. 인수합병을 병행하는 가운데 본업 계약 공백이 길어지면 2026년 3분기 흑자 흐름을 유지하기 어려울 수 있다. 이런 계약 공백은 통신사 투자 축소와 별개로도 생길 수 있는 사안이다.",
+    "en": "Sustaining the revenue rebound depends on new supply contracts being signed on a steady basis. If new contracts stop once existing orders are used up, the order backlog could shrink and gaps could open in delivery schedules. If a lull in core-business contracts lengthens while acquisition efforts run in parallel, the profit run seen in the third quarter of 2026 may be hard to maintain. Such a contract gap could arise even apart from carriers' investment cuts."
    }
   },
   {
    "cat": {
-    "ko": "인수합병 실행과 재무 리스크",
-    "en": "Acquisition execution and financial risk"
+    "ko": "순자산 완충 약화",
+    "en": "Thinning book-value cushion"
    },
    "body": {
-    "ko": "미래정보기술 인수는 자금 확보가 보도됐지만 인수 완료와 이후 통합 성과는 아직 확인할 사안이다. 인수 과정에서 발생하는 비용이나 피인수 사업의 손익이 연결 실적에 반영되면 변동성이 커질 수 있다. 대출이 실행되면 원리금 상환 부담도 재무 구조의 새 변수가 된다.",
-    "en": "Funding for the Mirae Information Technology acquisition has been reported, but completion and post-deal integration results remain open. Acquisition costs and the profit or loss of the acquired business could add volatility to consolidated results. If the loan is drawn, debt service becomes a new variable in the financial structure."
+    "ko": "최근 4개 분기 지배주주 순손실 합계 4.2억원이 남아 있어, 손실이 이어지면 자본총계가 줄고 장부상 순자산 완충이 얇아질 수 있다. 순자산은 이익 기준 배수가 산출되지 않는 상태에서 회사를 비교하는 주요 기준이라, 자본이 줄면 그 근거도 약해질 수 있다. 분기 흑자가 몇 분기에 그치면 누적 손실이 자본을 깎는 속도가 빨라질 수 있다.",
+    "en": "Cumulative attributable net losses of KRW 423 million over the last four quarters remain, and if losses continue, equity could decline and the book-value cushion could thin. Net assets are the main reference point while earnings-based multiples cannot be calculated, so a smaller equity base would also weaken the basis for comparison on a book-value measure. If quarterly profits prove to be only a few isolated results, the pace at which accumulated losses erode equity could accelerate."
    }
   }
  ],
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

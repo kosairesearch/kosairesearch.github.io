@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "원재료·환율·물류",
-    "en": "Raw Materials, FX and Logistics"
+    "ko": "해외 증설·공장 건설",
+    "en": "Overseas Capacity Build-Out"
    },
    "body": {
-    "ko": "철스크랩과 니켈 등 원재료 가격은 판매단가에 늦게 반영되는 경우가 많아 롤마진을 흔든다. 중동 정세 불안에 따른 해상 물류비와 환율 변동성은 원가 항목 가운데 회사가 제어하기 어려운 부분이다. 원가 전가가 늦어지면 2026년 3분기처럼 영업이익이 급감할 수 있다.",
-    "en": "Raw material prices such as steel scrap and nickel are often reflected in selling prices with a lag, which shakes roll margins. Shipping costs tied to Middle East instability and currency volatility are cost items the company has limited control over. If pass-through lags, operating profit can fall sharply, as it did in Q3 2026."
+    "ko": "사우디아라비아에서 건설 중인 연간 2만톤 규모 스테인리스 무계목강관 공장은 완공 이후 해외 수요를 확보해야 효과가 나타난다. 공사 기간이 늘어나거나 현지 수요와 판매 가격이 기대에 못 미치면 투자 회수가 늦어질 수 있다. 건설비 증가는 이미 줄어든 영업활동 현금흐름과 높아진 부채비율에 추가 부담이 될 수 있다. 이 공장은 국내 특수강 사업과 수요처가 달라 별도의 수익성 검증이 필요한 신규 생산 기반이다.",
+    "en": "The 20,000-ton-per-year stainless seamless steel pipe plant under construction in Saudi Arabia will contribute only after completion and once its output finds overseas demand. Construction delays or selling prices below expectations could slow the return on the investment. Higher construction costs could add pressure to operating cash flow and the liabilities-to-equity ratio, both already weakened. As a new production base serving end markets different from domestic special steel operations, its profitability will need separate verification."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 4.1
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "합병 무산·조건 변경 리스크",
-    "en": "Risk of Merger Failure or Term Changes"
+    "ko": "신사업 실행 리스크",
+    "en": "New Business Execution Risk"
    },
    "body": {
-    "ko": "매수청구 금액 합산이 휴맥스 20억원, 휴맥스홀딩스 10억원을 초과하면 어느 한쪽이 합병계약을 해제할 수 있다. 계약이 해제될 경우 양사 모두 강화된 코스닥 상장유지 기준에 다시 노출되며, 관리종목 지정 이후 회복 요건(90거래일 내 45거래일 연속 충족)을 채우지 못하면 상장폐지 절차가 재개될 수 있다. 공시 정정이 다섯 차례 이어졌던 점도 절차상 불확실성을 보여준다.",
-    "en": "If the combined appraisal claim amount exceeds KRW 2 billion for Humax or KRW 1 billion for Humax Holdings, either party may terminate the merger agreement. If terminated, both companies would again face the tightened KOSDAQ listing-maintenance criteria, and delisting procedures could resume if they fail to meet the recovery requirement of 45 consecutive trading days within a 90-trading-day window after administrative-issue designation. Five rounds of disclosure amendments also underscore procedural uncertainty."
+    "ko": "회사 측은 합병 후 휴맥스홀딩스의 기업용 AI 전환 기술 'AXNEXUS'를 휴맥스 모빌리티 플랫폼에 접목할 계획이다. 모빌리티 부문의 흑자 전환이 하이파킹·휴맥스이브이에 크게 기대고 있어, 이 기술 접목이 예정대로 진행되지 않거나 운영 효율 개선으로 이어지지 않으면 수익성 개선 폭이 제한될 수 있다. 합병기일 이후 기술 적용 일정이 늦어질 경우 계획된 효과의 시점도 불확실해진다.",
+    "en": "The company plans to integrate Humax Holdings' enterprise AI-transformation technology, AXNEXUS, into Humax's mobility platform after the merger. Because Humax Mobility's return to profitability relies heavily on Hi-Parking and Humax EV, the profit improvement could be limited if the integration does not proceed as scheduled or fails to deliver operating efficiency gains. If technology deployment is delayed after the merger effective date, the timing of the planned benefits would also become uncertain."
    }
   },
   {
@@ -348,5 +348,6 @@
    "dps": 0.0,
    "div": 0.0
   }
- }
+ },
+ "riskSplit": 1
 }

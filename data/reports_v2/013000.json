@@ -112,22 +112,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료 · 지정학",
-    "en": "Raw materials and geopolitics"
+    "ko": "고부가 제품 · 영업망 확충",
+    "en": "High-value products and sales network expansion"
    },
    "body": {
-    "ko": "원유와 나프타 가격, 중동 등 지정학 변수에 따라 원재료 수급과 판매 단가가 바뀔 수 있다. 원료 가격이 급등하면 재고 평가와 판매 마진이 흔들릴 수 있다. 그 영향은 분기 영업이익률 변화에 간접적으로 드러난다.",
-    "en": "Crude oil and naphtha prices and geopolitical factors such as the Middle East situation can change raw material supply and selling prices. A sharp rise in material costs could pressure inventory valuation and sales margins. Such effects appear indirectly in quarterly operating margin changes."
+    "ko": "회사는 신기술 기반 고부가 제품 개발과 영업망 확충을 성장 방향으로 제시해 왔다. 이 계획이 제품 구성과 판매 단가 개선으로 이어지지 않으면 영업이익률 개선 흐름이 유지되기 어려울 수 있다. 신규 영업망 확대 과정에서 판관비가 먼저 늘고 매출 반영이 늦어질 수 있다. 이 성과는 이후 정기보고서의 매출 구성과 영업이익률로 확인해야 한다.",
+    "en": "The company has presented development of high-value products based on new technologies and expansion of its sales network as its growth direction. If these plans do not translate into an improved product mix and higher selling prices, the operating margin improvement may be hard to sustain. Expanding the sales network could first raise selling and administrative costs, with revenue contribution arriving later. The outcome should be checked against the product mix and operating margin trend in upcoming periodic reports."
    }
   },
   {
    "cat": {
-    "ko": "주가 변동성 · 지분 집중",
-    "en": "Share price volatility and ownership concentration"
+    "ko": "공급선 · 대리점 관계",
+    "en": "Supplier and agency relationships"
    },
    "body": {
-    "ko": "2021년 거래정지와 재개, 2026년 3월 급등 등 주가가 시장 테마에 따라 크게 움직인 이력이 있다. 증권가도 테마성 급등 특성에 유의하라고 밝혔다. 최대주주 측 지분이 39.44%에 이르러 거래 가능한 물량이 제한될 수 있고, 그만큼 가격 변동 폭이 커질 수 있다.",
-    "en": "The stock has moved sharply on market themes, including a trading suspension and resumption around 2021 and a surge in March 2026. Market commentary also flagged the theme-driven nature of such rallies. With the largest shareholder group holding 39.44%, the tradable share count is limited, which can amplify price swings."
+    "ko": "회사는 사빅 이노베이티브 플라스틱의 국내 대리점으로서 여러 공급선의 소재를 취급한다. 판매 구조가 특정 공급선의 소재 공급과 대리점 지위에 기대고 있어, 공급선의 정책이나 공급 조건이 바뀌면 취급 품목과 매출 구성이 영향을 받을 수 있다. 공급선 확보가 경쟁 환경의 핵심 변수로 꼽히는 만큼 공급 관계의 변화는 실적에 직접 닿는다. 공급선별 비중과 계약 조건의 변화는 정기보고서의 사업 현황에서 확인해야 한다.",
+    "en": "The company operates as a domestic agent for SABIC Innovative Plastics and handles materials from several other suppliers. Its sales structure relies on supply of materials and agency status from particular suppliers, so changes in supplier policy or supply terms could affect its product range and revenue mix. Since securing supply lines is cited as a key variable in its competitive position, changes in these relationships bear directly on earnings. Changes in revenue share by supplier and in contract terms should be checked in periodic business disclosures."
    }
   },
   {
@@ -346,5 +346,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

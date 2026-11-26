@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "환율과 철강 시황",
-    "en": "Exchange rates and steel market conditions"
+    "ko": "철강 시황·트레이딩",
+    "en": "Steel market and trading"
    },
    "body": {
-    "ko": "환율 하락은 철강과 소재·바이오 부문의 이익을 낮췄고, 이종통화 환손실은 이익에 추가 부담을 줬다. 철강 시황 부진이 이어진다는 점은 신용평가 보고서에서도 언급됐다. 두 사업은 매출이 늘어도 수익성이 따라 오르지 않을 수 있다.",
-    "en": "A weaker exchange rate lowered profit in steel and materials and bio, and foreign-currency translation losses added to the pressure. A credit rating report also flagged a continued slump in steel market conditions. Both businesses can see sales rise without a matching improvement in profitability."
+    "ko": "철강 부문 매출은 2025년 14조 5,465억원으로 회사 내 가장 큰 사업이다. 신용평가 보고서는 철강 시황 부진이 이어진다는 점을 트레이딩 실적의 변동 요인으로 꼽았다. 시황이 회복되지 않으면 거래 물량과 마진이 함께 줄어 매출 규모가 이익으로 이어지지 않을 수 있다. 철강 시황 회복이 지연되면 전사 실적에 직접 영향을 준다.",
+    "en": "Steel sales were KRW 14.55 trillion in 2025, the largest of the company's businesses. A credit rating report named the continued slump in steel market conditions as a source of volatility in trading results. If market conditions do not recover, both trading volume and margins could shrink, so sales growth may not translate into profit. A delayed steel recovery would therefore feed directly into group earnings."
    }
   },
   {
    "cat": {
-    "ko": "투자·인수 실행과 재무 부담",
-    "en": "Execution of acquisitions and investment"
+    "ko": "증설 준공과 LNG 설비",
+    "en": "Gwangyang terminal expansion"
    },
    "body": {
-    "ko": "미국 가스자산 인수가 목표 시점에 종결되지 않거나 기대만큼 생산이 붙지 않으면 투자 회수 기간이 길어질 수 있다. 2026년 3분기 말 차입금은 6조 1,971억원이고 순차입금비율은 67.3%다. 2027년 투자 계획 약 2조원이 집행되면 재무 여력이 더 좁아질 수 있다.",
-    "en": "If the U.S. gas asset acquisition does not close on schedule, or production does not ramp as expected, payback could take longer. Borrowings at the end of 3Q 2026 were KRW 6.20 trillion and net debt to equity was 67.3%. Execution of the roughly KRW 2 trillion 2027 investment plan could further narrow financial headroom."
+    "ko": "광양 제2LNG터미널의 저장능력은 93만㎘에서 133만㎘로 늘어날 예정이며 2026년 11월 종합 준공을 준비하고 있다. 준공이 일정보다 늦어지거나 증설 설비의 가동이 지연되면 LNG 터미널과 발전 사업의 이익 확대 시점도 밀릴 수 있다. 에너지 사업은 2025년 전사 영업이익의 54%를 차지하므로 증설 지연은 전사 이익 구조에 직접 영향을 준다. 준공 이후 실제 저장 물량과 수익 기여가 계획대로 나타나는지가 확인 과제다.",
+    "en": "The Gwangyang second LNG terminal's storage capacity is set to rise from 930,000 kl to 1.33 million kl, with full completion being prepared for November 2026. If completion slips or the expanded facilities ramp up later than planned, profit gains from the LNG terminal and power business could be delayed as well. Energy accounted for 54% of 2025 group operating profit, so a delay in this expansion would reach the company's overall earnings structure directly. Whether actual storage volumes and revenue contribution match the plan after completion is the point to verify."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 3.71
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

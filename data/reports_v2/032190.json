@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "금융 시장 사이클",
-    "en": "Financial market cycle"
+    "ko": "고객 구성 전환 속도",
+    "en": "Pace of customer mix shift"
    },
    "body": {
-    "ko": "금융 자회사 수익이 증시 거래와 투자 환경에 따라 움직여, 시장이 식으면 연결 영업이익이 빠르게 줄 수 있다. 2023년 영업이익 14.0% 감소와 2026년 3분기 전 분기 대비 46.3% 감소가 그 예다. 연결 매출 규모가 커져도 이익의 변동 폭은 여전히 시장에 크게 노출돼 있다.",
-    "en": "Because financial subsidiaries' income moves with trading volumes and the investment climate, consolidated operating profit can fall quickly when markets cool. Operating profit fell 14.0% in 2023, and in the third quarter of 2026 it fell 46.3% from the prior quarter. Even with a larger revenue base, profit remains highly exposed to market swings."
+    "ko": "고객 구성이 VM웨어 중심에서 Citrix·Nutanix 같은 고급형 솔루션 중심으로 옮겨 가는 중이어서, 두 흐름의 속도 차이가 매출에 영향을 줄 수 있다. 기존 VM웨어 관련 매출의 감소보다 고급형 솔루션 매출의 증가가 늦어지면 본체 매출이 일시적으로 위축될 수 있다. 전환 기간 동안 고객별 라이선스와 컨설팅 역량을 유지하는지가 관건이다.",
+    "en": "Customer mix is shifting from VMware-centered work toward premium solutions such as Citrix and Nutanix, so the pace of the two flows could affect revenue. If revenue from legacy VMware work declines faster than premium solution sales grow, parent-level revenue could contract temporarily. Whether license and consulting capabilities for each customer hold up during the transition is the key issue."
    }
   },
   {
    "cat": {
-    "ko": "지배 구조와 주주 귀속",
-    "en": "Ownership structure and shareholder attribution"
+    "ko": "결제 사업 결합 효과",
+    "en": "Payment business integration effect"
    },
    "body": {
-    "ko": "연결 이익 가운데 지배주주 귀속분이 작아 비지배지분 몫이 크다. 2026년 3분기 지배주주 순이익은 388억원으로 전년 동기 대비 40.6% 감소했다. 최근 4개 분기 지배주주 순이익 합계가 3,091억원이라는 사실은 주주 귀속 이익의 규모를 가늠하는 기준으로 쓰인다.",
-    "en": "The controlling shareholders' share of consolidated profit is small, leaving a large portion to non-controlling interests. In the third quarter of 2026, profit attributable to controlling shareholders was KRW 38.8 billion, down 40.6% year on year. The last four quarters totaled KRW 309.1 billion for controlling shareholders, which is a useful benchmark for the scale of attributable profit."
+    "ko": "결제 부문은 VAN과 PG를 묶어 서비스 혁신의 기반으로 삼는 방향이어서, 두 사업을 결합한 효과가 실제 수익으로 이어지는지가 관건이다. 결합 서비스가 기존 고객에게 자리 잡지 못하면 결제 부문의 성장 기여는 계획보다 작을 수 있다. 본체 성장 지표에서 결제 부문을 따로 구분해 추적해야 하는 이유도 여기에 있다.",
+    "en": "The payment business aims to combine VAN and PG as a foundation for service innovation, so whether the combined effect turns into actual profit is the key question. If the integrated services fail to take root with existing customers, the growth contribution from payments could be smaller than planned. This is also why payments should be tracked separately from the parent-level growth indicators."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 3.51
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "분기 이익 변동성",
-    "en": "Quarterly earnings volatility"
+    "ko": "자회사 실적 의존",
+    "en": "Subsidiary earnings dependence"
    },
    "body": {
-    "ko": "분기 영업이익은 2025년 3분기 영업손실에서 2026년 2분기 23.6억원까지 큰 폭으로 움직였다. 2026년 3분기에는 전 분기보다 55.2% 줄었다. 분기 손익의 등락이 크면 연간 실적 방향을 읽기 어려워진다. 연간 확정치는 2026년 사업보고서에서 공시된다.",
-    "en": "Quarterly operating profit swung from a loss in the third quarter of 2025 to KRW 2.36 billion in the second quarter of 2026. It fell 55.2% in the third quarter of 2026 from the prior quarter. Large quarter-to-quarter swings make the annual direction harder to read. Confirmed full-year figures will come from the 2026 annual report."
+    "ko": "연결 매출에는 자회사 매출이 포함되며, 별도 기준 매출은 연결 기준보다 작아 외형의 일부가 자회사에서 나오는 것으로 보인다. 자회사의 매출이 줄거나 거래 구조가 바뀌면 연결 실적이 모회사 본업과 다른 방향으로 움직일 수 있다. 자회사별 매출 비중은 사업보고서의 사업부문 정보로 확인된다. 2026년 사업보고서 공시 이후 연결과 별도 차이가 얼마나 유지되는지 판단할 수 있다.",
+    "en": "Consolidated sales include revenue from subsidiaries, and standalone sales are smaller than consolidated sales, suggesting that part of Dongil Metal's revenue base comes from subsidiaries. If subsidiary sales decline or their transaction structure changes, consolidated results could move in a different direction from the parent company's core business. The sales mix by subsidiary can be checked in the segment information of the annual report. Whether the gap between consolidated and standalone results persists can be judged after the 2026 annual report is disclosed."
    }
   },
   {
@@ -338,5 +338,6 @@
    "div": 4.6
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

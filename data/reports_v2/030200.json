@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "보안·고객 이탈",
-    "en": "Security and customer churn"
+    "ko": "데이터센터 가동 전환",
+    "en": "AI data center activation pace"
    },
    "body": {
-    "ko": "침해사고 후속 조치 비용이 반복되면 본업 이익 회복 속도가 늦어질 수 있다. 위약금 면제와 데이터 혜택 같은 고객 유지 비용은 ARPU를 낮추는 요인으로 작용했다. 별도 이익 감소가 세 분기째 이어졌다는 점에서 이 리스크는 단기 실적에 남아 있다.",
-    "en": "If security-incident follow-up costs keep recurring, the pace of core profit recovery could slow. Customer-retention costs such as penalty waivers and data offers have acted as a drag on ARPU. Standalone profit declining for three straight quarters shows the impact is still in short-term results."
+    "ko": "주요 부지 911메가와트 가운데 152메가와트만 가동 중이어서, 나머지 물량을 가동 상태로 바꾸는 속도가 AI 데이터센터 일정을 좌우한다. 2026년 4분기 추가 60메가와트 추진이 계획대로 끝나지 않으면 2031년 1GW 이상 공급 목표의 중간 단계가 밀릴 수 있다. 가동 지연은 관련 수주의 매출 인식 시점도 함께 늦출 수 있다.",
+    "en": "Only 152 megawatts of the 911 megawatts secured across primary sites are operating, so the pace of bringing the remaining capacity online will determine the AI data center schedule. If the additional 60 megawatts planned for Q4 2026 do not proceed as scheduled, interim steps toward the more than 1 GW supply target by 2031 could slip. Delays in activation could also push back the timing when related orders are recognized as revenue."
    }
   },
   {
    "cat": {
-    "ko": "AI 투자 집행과 재무 부담",
-    "en": "AI investment execution and financial burden"
+    "ko": "수주 고객 집중",
+    "en": "Concentration of B2B order customers"
    },
    "body": {
-    "ko": "AIDC와 해저케이블에 향후 5년간 약 6조원을 투자하는 계획은 대규모 설비 투자다. 2025년 말 부채총계는 23조 4,906억원이고 부채비율은 120.7%다. 비수도권 사업은 테넌트 수요에 따라 진행 속도가 달라질 수 있다.",
-    "en": "The plan to invest about KRW 6 trillion over five years in AIDC and submarine cables represents large capital spending. Total liabilities at the end of 2025 were KRW 23.5 trillion, with a debt-to-equity ratio of 120.7%. Non-metropolitan projects may move at varying speeds depending on tenant demand."
+    "ko": "B2B 수주 증가분은 기존 국내 대기업뿐 아니라 네오클라우드와 글로벌 CSP 등으로 넓어지고 있다. 고객군이 소수 대형 사업자에 몰리면 계약 조건이나 설비 인도 일정 변경이 매출 인식 시점에 집중적으로 영향을 줄 수 있다. 2027년까지 매출로 이어진다는 회사 전망은 개별 고객의 계약 이행 속도에 기대는 부분이 크다. 고객 구조가 바뀌면 수주 잔액이 늘어도 분기 매출 흐름은 달라질 수 있다.",
+    "en": "The growth in B2B orders is spreading beyond existing domestic conglomerates to neocloud providers and global CSPs. If order flow concentrates on a small number of large customers, changes in contract terms or equipment delivery schedules could weigh heavily on revenue timing. The company's expectation that orders convert into revenue through 2027 depends largely on the contract execution pace of individual customers. Even if the order backlog grows, quarterly revenue could move differently if this customer mix shifts."
    }
   },
   {
    "cat": {
-    "ko": "AX 수익화 속도",
-    "en": "Pace of AX monetization"
+    "ko": "자회사 실적 의존",
+    "en": "Reliance on subsidiary earnings"
    },
    "body": {
-    "ko": "AI 페스타 2026 발표 자료에는 생산성 개선율이나 비용 절감 규모가 구체적으로 제시되지 않았다. 토큰 팩토리는 2026년 10월 말 출시된 신규 플랫폼이라 매출 기여가 드러나기까지 시간이 필요하다. 수주 파이프라인이 실제 매출과 이익으로 전환되는 속도가 AX 투자 회수의 관건이다.",
-    "en": "The materials for the AI Festa 2026 presentation did not specifically quantify productivity gains or cost reductions. Token Factory launched at the end of October 2026, so its revenue contribution will take time to show. How quickly the order pipeline converts into actual revenue and profit will determine the payback on AX investment."
+    "ko": "KT에스테이트의 호텔·분양 매출과 콘텐츠 자회사, KT클라우드의 성장이 그룹 외형을 일부 받치고 있다. 호텔과 분양 매출은 부동산 수요에 따라 움직여 본업 통신보다 변동성이 클 수 있다. 본업 무선 매출이 회복되지 않는 동안 자회사 성장분에 기대는 비중이 커질 수 있다. 자회사 실적이 둔화되면 연결 기준 매출 성장 흐름이 약해질 수 있다.",
+    "en": "KT Estate's hotel and property sales, along with content subsidiaries and KT Cloud, are partly supporting group revenue growth. Hotel and property sales move with real estate demand, so their revenue can be more volatile than core telecom. While core wireless revenue remains below the prior-year level, a larger share of growth may rely on subsidiary gains. A slowdown in these subsidiaries could weaken consolidated revenue growth."
    }
   }
  ],
@@ -360,5 +360,6 @@
    "div": 4.71
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

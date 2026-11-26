@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "프로젝트 일정 리스크",
-    "en": "Project timing risk"
+    "ko": "증설 실행 리스크",
+    "en": "Expansion execution risk"
    },
    "body": {
-    "ko": "해상풍력 하부구조물 매출은 스틸커팅과 착공 시점에 좌우된다. 2026년 실적이 상저하고 흐름으로 예상된 이유도 주요 프로젝트의 스틸커팅이 하반기로 밀렸기 때문이다. 발전사업자의 금리 부담이 커지면 발주가 늦어질 수 있고, 이 경우 분기 실적의 변동성이 커진다.",
-    "en": "Offshore wind substructure revenue depends on steel cutting and construction start dates. The 2026 earnings path was expected to be back-half weighted because steel cutting on key projects slipped to the second half. Higher financing costs for power producers could delay orders and increase quarter-to-quarter volatility."
+    "ko": "고성 양촌·용정지구의 해상풍력 특화 생산기지는 157만㎡ 규모로 1조원이 투입되며 2026년 말 완공이 계획돼 있다. 이 기지는 하부구조물 생산능력을 넓히는 기반이어서 공사가 늦어지면 신규 수주를 제때 제작 물량으로 바꾸기 어려울 수 있다. 완공이 늦춰지면 FPSO나 해상변전소 수주가 확정되더라도 생산 설비가 병목으로 작용할 수 있다.",
+    "en": "The offshore wind production base in the Yangchon and Yongjeong districts of Goseong covers 1.57 million square meters, with about KRW 1,000 billion invested and completion planned for the end of 2026. Because the base expands substructure capacity, a delay could make it harder to convert new orders into fabrication volume on schedule. If completion slips, production facilities could become a bottleneck even after the FPSO or substation orders are confirmed."
    }
   },
   {
    "cat": {
-    "ko": "지배구조·매각 리스크",
-    "en": "Ownership transition risk"
+    "ko": "수주 확정 리스크",
+    "en": "Order confirmation risk"
    },
    "body": {
-    "ko": "최대주주 지분 매각이 완료되면 사업 전략이 바뀔 가능성이 열려 있다. 기존 특수선과 해상풍력 중심의 사업 구조가 유지될지, 상선 등 다른 사업으로 재편될지는 아직 확인되지 않았다. 거래 종결 전후로 수주 의사결정과 투자 계획이 변할 수 있다.",
-    "en": "Once the sale of the controlling stake is complete, the business strategy could change. Whether the current mix of special vessels and offshore wind will be maintained, or reshaped around commercial shipping, has not been confirmed. Order decisions and investment plans could shift around the closing."
+    "ko": "그리스 선주와의 아프라막스 계약 6척에는 옵션 2척이 있으며, 행사되면 계약 규모가 커진다. 여기에 2026년 연말에서 2027년 초 예정된 FPSO 수주와 유럽 해상변전소 수주가 더해지면 수주잔고 구성이 크게 달라질 수 있다. 이들 계약이 예정대로 확정되지 않으면 수주잔고 증가 흐름이 둔화되고, 2027년 이후 매출 회복의 근거도 약해질 수 있다.",
+    "en": "The Greek Aframax contract for six vessels includes two option vessels, and exercising them would enlarge the contract. If the FPSO order expected from late 2026 to early 2027 and the European offshore substation order are added, the composition of the backlog could shift considerably. If these contracts are not confirmed as scheduled, growth in the order backlog could slow and the basis for a sales recovery from 2027 could weaken."
    }
   },
   {
@@ -357,5 +357,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

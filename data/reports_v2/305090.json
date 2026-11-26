@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "해외 판매 채널 실행",
+    "en": "Overseas channel execution"
    },
    "body": {
-    "ko": "분기 매출이 11.4억원에서 39.8억원까지 큰 폭으로 오르내리며, 손익도 흑자 근접에서 대규모 손실까지 급변한다. 소수 대형 고객사에 대한 의존도가 있는 것으로 파악되어 특정 계약의 매출 인식 시점에 따라 실적이 크게 흔들릴 수 있다.",
-    "en": "Quarterly revenue has swung widely, from KRW 1.14bn to KRW 3.98bn, with profitability moving from near breakeven to large losses. Reported reliance on a small number of large customers means results can shift materially depending on the timing of revenue recognition for specific contracts."
+    "ko": "OrbTec 브랜드를 통한 북미 시장 침투 속도는 파커하니핀과의 협업 성과에 달려 있으며, 북미 판매 규모는 아직 초기 단계로 평가된다. 세럼 인스티튜트와의 공급계약이 실제 매출로 인식되는 시점과 규모도 계약 이행 일정에 따라 달라질 수 있다. 해외 매출 비중이 확대되지 않을 경우 내수 중심의 매출 구조가 이어지고, 수출 확대를 전제로 한 성장 전략의 실현이 지연될 수 있다.",
+    "en": "Penetration speed in the North American market through the OrbTec brand depends on the collaboration with Parker Hannifin, and sales scale there remains at an early stage. The timing and size of revenue recognized from the Serum Institute of India supply agreement may also vary with contract execution schedules. If the overseas revenue share does not expand, the domestic-centered revenue structure would persist and the export-led growth strategy could be delayed."
    }
   },
   {
    "cat": {
-    "ko": "자금조달 및 재무구조",
-    "en": "Funding and balance-sheet structure"
+    "ko": "정부 지원금 집행",
+    "en": "Government support execution"
    },
    "body": {
-    "ko": "영업활동현금흐름이 4년 연속 순유출을 기록했고, 부채비율도 2024년 86.1%에서 2025년 125.2%로 다시 높아졌다. 향후 추가적인 외부 자금조달이 필요할 경우 주식 수 증가 등 주주가치 희석 가능성을 배제할 수 없다.",
-    "en": "Operating cash flow has been negative for four consecutive years, and the debt ratio rose again from 86.1% in 2024 to 125.2% in 2025. If further external funding is needed, the possibility of shareholder dilution through an increase in share count cannot be ruled out."
+    "ko": "산업통상자원부 소부장 으뜸기업 지정에 따른 지원 자금(약 100억원 내외로 알려짐)의 집행 계획과 시기는 아직 구체적으로 확인되어야 한다. 이 자금이 R&D와 생산능력 확충에 투입되더라도 투자 성과가 매출로 이어지는 데는 시간이 걸릴 수 있다. 집행 일정이 지연되면 소용량 CGT용 바이오리액터와 일회용 배양백의 제품 고도화 및 증설 계획도 함께 늦어질 수 있다.",
+    "en": "The execution plan and timing for government support tied to the trade ministry's bio materials-parts-equipment champion designation (reported at around KRW 10bn) still need to be confirmed. Even if the funds are directed to R&D and capacity expansion, it may take time for these investments to translate into revenue. If the disbursement schedule slips, product upgrades for small-volume CGT bioreactors and single-use culture bags, as well as expansion plans, could also be delayed."
    }
   },
   {
    "cat": {
-    "ko": "상장 유지 관련 규제 리스크",
-    "en": "Listing-maintenance regulatory risk"
+    "ko": "대형 고객 공급 시점",
+    "en": "Anchor-customer supply timing"
    },
    "body": {
-    "ko": "코스닥의 동전주 관리종목 규정이 2026년 7월부터 시행돼, 낮은 주가 수준이 지속될 경우 관리종목 지정 및 상장폐지 심사로 이어질 수 있는 제도적 리스크가 있다. 이 경우 액면병합·유상증자 등 자본구조 변경이 논의될 가능성도 있다.",
-    "en": "A KOSDAQ rule targeting low-priced 'penny stocks' took effect in July 2026, creating an institutional risk that a sustained low share price could lead to administrative-issue designation and delisting review. In such a case, capital-structure changes such as a reverse stock split or rights offering could be discussed."
+    "ko": "셀트리온·삼성바이오로직스 등 대형 CMO의 증설과 공정 전환 수요가 주요 수주 기회로 거론되지만, 수주 시기는 고객사 일정에 따라 좌우된다. 신규 탑티어 고객사에 대한 공급 개시가 늦어지면 분기 매출 회복 시점도 지연될 수 있다. 소수 고객 의존도가 높은 구조에서는 특정 고객의 발주 공백이 매출 공백으로 직결될 가능성이 있다.",
+    "en": "Capacity expansion and process-conversion demand at large contract manufacturers such as Celltrion and Samsung Biologics are cited as order opportunities, but order timing depends on customer schedules. If supply start to new top-tier customers is delayed, the timing of a recovery in quarterly revenue could also slip. Under a structure reliant on a small number of large customers, an order gap from a single client could translate directly into a revenue gap."
    }
   }
  ],
@@ -352,5 +352,6 @@
     "per": "loss"
    }
   }
- }
+ },
+ "riskSplit": 1
 }

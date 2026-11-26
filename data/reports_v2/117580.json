@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "정책 · 요금 제도 리스크",
-    "en": "Policy and tariff risk"
+    "ko": "구입단가 고시 정책 변경",
+    "en": "Government-notified purchase cost policy"
    },
    "body": {
-    "ko": "판매 가격과 구입단가가 정부 고시 단가와 원가보상 방식에 묶여 있어 정책 변경이 실적에 직접 영향을 준다. 요금 조정 시점이 원료비 변동과 어긋나면 이익이 일시적으로 줄 수 있다. 2022년 영업이익이 9.4억원까지 낮아진 사례가 이를 보여 준다.",
-    "en": "Selling prices and purchase costs are tied to government-notified rates and a cost-plus framework, so policy changes flow directly into earnings. If tariff adjustments fall out of step with raw material costs, profit can fall temporarily. The 2022 episode, when operating profit dropped to KRW 939 million, illustrates this."
+    "ko": "회사의 구입단가는 정부 고시 단가에 따라 정해진다. 고시 기준이나 단가 수준이 바뀌면 판매요금 조정과 별개로 매입 원가가 달라져 마진 구조가 재조정될 수 있다. 권역 독점 구조 때문에 이 영향은 대구·경북 전체 수요가에게 한꺼번에 미친다. 연간 손익을 해석할 때 고시 변경 여부를 함께 확인할 필요가 있다.",
+    "en": "The company's purchase costs are set by government-notified rates. If the notification standard or rate level changes, the purchase cost can move independently of selling price adjustments, which could reshape the margin structure. Because of the regional monopoly, the effect would reach the entire customer base in Daegu and North Gyeongsang at once. Annual earnings should be read with attention to whether any notification changes occur."
    }
   },
   {
    "cat": {
-    "ko": "분기 실적 변동성",
-    "en": "Quarterly earnings volatility"
+    "ko": "신용등급과 자금 조달",
+    "en": "Credit rating and funding costs"
    },
    "body": {
-    "ko": "2026년 1분기 매출 3,924억원에서 2분기 1,610억원, 3분기 1,399억원으로 분기 규모가 크게 바뀌었다. 적자 전환과 흑자 전환이 분기마다 번갈아 나타나 분기 단위 실적의 폭이 넓다. 2025년 영업이익 303억원으로 연간 개선이 있었지만 분기 편차는 여전히 크다.",
-    "en": "Quarterly revenue moved from KRW 392.4 billion in the first quarter of 2026 to KRW 161 billion in the second and KRW 139.9 billion in the third. Profit and loss have alternated from quarter to quarter, making quarterly results wide-ranging. Annual operating profit improved to KRW 30.3 billion in 2025, yet quarterly swings remain large."
+    "ko": "회사는 국내 신용평가사 두 곳으로부터 모두 A+ 등급을 받고 있다. 등급이 낮아지면 차입 조건과 조달 비용이 달라져 운전자금 운용에 부담이 될 수 있다. 2025년 말 부채총계 4,455억원이 자본총계 3,457억원을 웃돌아 자금 조달 여건의 변화에 민감하다. 등급 유지 여부는 재무 안정성을 가늠하는 확인 대상이다.",
+    "en": "The company holds A+ ratings from two domestic credit rating agencies. A downgrade could change borrowing terms and funding costs, adding pressure on working capital. Total liabilities of KRW 445.5 billion at the end of 2025 exceeded total equity of KRW 345.7 billion, so the company is sensitive to changes in funding conditions. Whether the ratings are maintained is a point to check for financial stability."
    }
   },
   {
@@ -339,5 +339,6 @@
    "div": 3.64
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

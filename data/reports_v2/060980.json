@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "업황·고객사 집중",
-    "en": "Demand and customer concentration"
+    "ko": "물류 사업 기반 전환",
+    "en": "Logistics base transition"
    },
    "body": {
-    "ko": "2PL 물류는 모회사와 계열사의 물량에 묶여 있어 고객사 생산 정체가 곧 매출 정체로 이어진다. 2025년 3분기에도 2PL 물동량과 모듈 고객사 생산량 감소가 매출을 끌어내렸다. 자회사 HL만도의 2026년 3분기 영업이익 감소는 같은 자동차 사이클 위험이 지주사로 전이되는 경로다.",
-    "en": "The 2PL logistics business is tied to volumes from the parent and affiliates, so a stall in customer output quickly becomes a revenue stall. In Q3 2025, lower 2PL volumes and weaker module-customer output pulled down revenue. The decline in the auto-parts subsidiary's Q3 2026 operating profit shows the same auto cycle risk reaching the holding company."
+    "ko": "자체사업의 2PL 물류는 모회사와 계열사 물량에 묶여 있어, 회사는 자동차 부품 물류만 하는 구조의 한계를 지적하며 사업 기반 변화를 내세웠다. 이 전환이 늦어지면 고객 주문에 따라 물량이 정해지는 구조가 이어져 자체사업 영업이익의 회복이 다시 멈출 수 있다. 전환 과정에서 설비와 인력에 대한 투자 부담이 새 기반의 매출보다 먼저 커질 가능성도 있다.",
+    "en": "The self-run logistics business relies on 2PL volumes tied to the parent and affiliates, and the company has said an auto-parts-only structure limits growth while pointing to a change in its logistics base. If that shift is delayed, volumes set by customer orders could keep the self-run operating recovery from continuing. Investment in facilities and staff could also rise before the new base contributes revenue."
    }
   },
   {
    "cat": {
-    "ko": "지분법·관계기업 손익 변동",
-    "en": "Equity-method and affiliate volatility"
+    "ko": "건설 자회사 실적 회복",
+    "en": "Construction subsidiary recovery"
    },
    "body": {
-    "ko": "관계기업 운영 손실과 지분법 손실은 영업이익과 별개로 지배주주 순이익을 흔든다. 2024년에도 관계기업 손실이 지분법 손실을 키워 영업이익 감소의 원인이 됐다. 2026년 3분기 지배주주 순손실 194억원이 영업손실 26억원보다 크게 나온 것은 영업외·지분법 손익의 영향이 컸음을 보여 준다.",
-    "en": "Affiliate operating losses and equity-method losses move profit attributable to controlling shareholders apart from operating profit. In 2024, affiliate losses widened equity-method losses and contributed to the decline in operating profit. The Q3 2026 net loss of KRW 19.4 billion, far larger than the KRW 2.6 billion operating loss, suggests non-operating and equity-method items weighed heavily."
+    "ko": "건설 자회사 HL D&I의 이익 회복은 하반기 신규 현장의 매출화에 기대고 있다. 한화투자증권은 토목 부문의 이익률 회복을 전망했지만, 신규 현장의 매출 인식이 늦어지면 회복 시점이 뒤로 밀릴 수 있다. 건설 이익이 자동차 부품 부진을 상쇄하지 못하면 자회사별 실적이 엇갈리는 흐름이 지주사 연결 손익에 그대로 남을 수 있다.",
+    "en": "The profit recovery at construction subsidiary HL D&I depends on new sites in the second half turning into revenue. A Korean brokerage expected civil-engineering margins to recover, but if revenue recognition from new sites is delayed, the timing of the recovery could slip. If construction gains fail to offset weakness in auto parts, the divergence between subsidiaries would remain in holding-company earnings."
    }
   },
   {
    "cat": {
-    "ko": "신사업 부담과 부채 규모",
-    "en": "New-business burden and debt"
+    "ko": "로봇 매출 확대 계획",
+    "en": "Robotics revenue ramp plan"
    },
    "body": {
-    "ko": "HL로보틱스는 2025년 3분기 누적 순손실 155억원으로 신사업 적자가 이익에 부담이 된다. 2025년 말 부채총계는 1조 2,560억원으로 부채비율은 116.7%다. 자본 규모가 크지만 부채가 많아 금리와 이익 변동에 따른 재무 부담을 함께 봐야 한다.",
-    "en": "The robotics unit's net loss of KRW 15.5 billion in the first nine months of 2025 weighs on earnings. Total liabilities were KRW 1.26 trillion at the end of 2025, and the debt ratio stood at 116.7%. Equity is large, but the debt load means interest costs and earnings swings still need to be watched together."
+    "ko": "회사는 로봇 사업의 매출을 매년 2배 이상 늘리겠다는 목표를 밝혔으나, 이 계획은 아직 실적으로 확인되지 않았다. 매출 증가가 늦어지면 스탠리 로보틱스와 HL로보틱스에 대한 사업 투자의 회수 시점도 뒤로 밀려 지주사 손익 개선이 지연될 수 있다. 두 법인의 성장 속도가 엇갈리면 목표 달성 여부에 대한 평가도 나뉠 수 있다.",
+    "en": "The company aims to more than double robotics revenue each year, but that plan has not yet been confirmed in reported results. If revenue growth lags, the payback period for investment in Stanley Robotics and the HL robotics unit could stretch out and delay improvement in holding-company earnings. If the two units grow at different speeds, the assessment of whether the target is met could also diverge."
    }
   }
  ],
@@ -360,5 +360,6 @@
    "div": 6.08
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

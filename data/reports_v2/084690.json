@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "원가와 수익성",
-    "en": "Cost and profitability"
+    "ko": "고부가 소재 전환",
+    "en": "High-value materials shift"
    },
    "body": {
-    "ko": "소재 사업의 원가 상승과 수출 비용이 자회사 수익성을 누르고 있다. 3분기 영업이익률은 약 3.5%로 전년 동기보다 낮아졌다. 원가 부담이 이어지면 지주사가 받는 배당과 로열티 수익이 줄 수 있다. 원가 부담이 완화되는지는 자회사 분기 실적에서 확인할 수 있다.",
-    "en": "Higher costs and export expenses in materials are weighing on subsidiary profitability. The third-quarter operating margin fell to about 3.5% from a year earlier. If cost pressure persists, dividend and royalty income that the holding company receives could decline. Whether that pressure eases will show up in subsidiary quarterly results."
+    "ko": "자회사 대상(주)은 고부가가치 소재 사업을 강화하고 대체당 사업을 키우겠다는 방향을 제시했다. 이 계획은 설비와 개발 투자가 뒤따를 수 있고, 상업화 시점과 규모에 따라 성과가 달라질 수 있다. 신규 소재 제품이 계획대로 판매처를 확보하지 못하면 소재 부문의 수익 기여는 늦어질 수 있다. 지주사의 입장에서는 자회사 이익 증가 속도가 이 전환의 결과에 따라 달라진다.",
+    "en": "Subsidiary Daesang has outlined plans to strengthen its high-value materials business and grow alternative sugar operations. Executing these plans may require follow-on facility and development investment, and results may vary with the timing and scale of commercialization. If new materials products do not secure sales channels as planned, the materials segment's contribution to profit could be delayed. For the holding company, the pace of growth in subsidiary earnings will depend on the outcome of this shift."
    }
   },
   {
    "cat": {
-    "ko": "재무구조",
-    "en": "Financial structure"
+    "ko": "채널·제품 전환",
+    "en": "Channel and portfolio shift"
    },
    "body": {
-    "ko": "2025년 부채비율은 236.3%로 전년 164.4%에서 크게 올랐다. 부채총계 3조 857억원이 자본총계 1조 3,061억원보다 크다. 적자가 이어지면 자본 감소가 레버리지를 키울 수 있다. 차입 구조와 상환 계획은 다음 정기보고서의 주석과 재무상태 항목에서 확인해야 한다.",
-    "en": "The debt-to-equity ratio rose to 236.3% in 2025 from 164.4% in 2024. Total liabilities of KRW 3.09 trillion exceed total equity of KRW 1.31 trillion. If losses persist, shrinking equity could raise leverage further. The borrowing structure and repayment plans should be checked in the notes and balance sheet items of the next annual report."
+    "ko": "자회사 대상(주)은 건강과 편의 중심의 제품 포트폴리오를 넓히고 기업 간 거래와 온라인 채널을 키우겠다는 계획을 밝혔다. 이런 채널 전환에는 초기 비용이 먼저 발생할 수 있어 단기 수익성에 부담이 될 수 있다. 신규 제품과 채널이 기존 매출을 보완할 규모에 이르지 못하면 식품 부문의 성장은 제한될 수 있다. 이 변화는 자회사 영업이익을 거쳐 지주사의 배당과 로열티 수익에 반영된다.",
+    "en": "Subsidiary Daesang has planned to broaden its portfolio centered on health and convenience and to grow business-to-business and online channels. Shifting channels may bring up-front costs before revenue builds, which could weigh on near-term profitability. If new products and channels fail to reach a scale that complements existing sales, growth in the food segment could be limited. These changes flow through subsidiary operating profit into the holding company's dividend and royalty income."
    }
   },
   {
@@ -339,5 +339,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

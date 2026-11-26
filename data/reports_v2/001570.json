@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장폐지·회계 리스크",
-    "en": "Delisting and audit risk"
+    "ko": "자원·인허가 리스크",
+    "en": "Resource and permitting risk"
    },
    "body": {
-    "ko": "2년 연속 감사의견 거절에 따라 이미 상장폐지가 결정된 상태이며, 회사가 낸 효력정지 가처분의 인용 여부에 따라 상장 유지 여부가 갈린다. 가처분이 기각되면 정리매매와 상장폐지가 단기간 내 진행될 수 있다.",
-    "en": "A delisting decision has already been made following two consecutive years of disclaimed audit opinions, and whether the company remains listed hinges on the outcome of its injunction request. If the injunction is denied, liquidation trading and delisting could proceed within a short period."
+    "ko": "리튬 자원 확보를 위해 지분을 보유한 몽골 몬라 광산과 콩고민주공화국 마노노 인근 광산은 모두 탐사·인허가 단계에 머물러 있다. 인허가가 지연되거나 자원국의 정치·제도 여건이 바뀌면, 몽골 광산 매출 추정치가 대폭 하향된 것처럼 광산 지분의 가치와 수산화리튬 가공사업의 원료 조달이 함께 흔들릴 수 있다. 리튬 가격이 변동하면 분쇄·가공 사업의 원가 경쟁력도 영향을 받을 수 있다.",
+    "en": "Lithium mining stakes in the Monlaa mine in Mongolia and the mine near Manono in the Democratic Republic of Congo remain at the exploration and permitting stage. If permitting is delayed or political and regulatory conditions in the resource-holding countries change, the value of these stakes and the raw-material supply for the lithium hydroxide processing business could both be affected, as the sharp downward revision of the Mongolia mine's revenue estimate illustrates. Fluctuations in lithium prices could also affect the cost competitiveness of the grinding and processing business."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "사업실행·거래상대방 리스크",
-    "en": "Execution and counterparty risk"
+    "ko": "양산·인증 리스크",
+    "en": "Mass-production and qualification risk"
    },
    "body": {
-    "ko": "핵심 자금조달 창구로 제시된 해외 투자사의 실체와 자본력에 대한 시장의 의구심이 크고, 배터리·광산 등 신사업은 수년간 일정이 반복적으로 지연돼 온 전력이 있다. 이는 향후 자금조달 성사 여부와 사업 정상화 시점의 불확실성을 높이는 요인이다.",
-    "en": "There is significant market skepticism about the identity and financial capacity of the foreign investor presented as the key funding channel, and the battery and mining ventures have a track record of repeated schedule delays over several years. This heightens uncertainty over whether future fundraising will succeed and when, if ever, the business can normalize."
+    "ko": "자체 개발한 2170·4695(46파이) 셀은 아직 상업 생산과 고객 계약 실적이 확인되지 않았다. 삼성SDI·LG에너지솔루션·SK온이 이미 46파이 시장에 먼저 진입한 상황에서 셀 성능 검증이나 고객사 인증이 지연되면, 기장 공장의 가동 시점과 배터리 사업의 매출 전환이 함께 늦어질 수 있다. 2026년 매출 4조원 목표가 제시된 만큼 양산 일정 차질은 사업 계획 전반에 영향을 줄 수 있다.",
+    "en": "The self-developed 2170 and 4695 (46-series) cells have yet to be confirmed in commercial production or customer contracts. With Samsung SDI, LG Energy Solution, and SK On already ahead in the 46-series market, delays in cell performance validation or customer qualification could push back the operating timeline of the Gijang plant and the conversion of the battery business into revenue. Given the stated target of 4 trillion won in revenue by 2026, any slippage in mass-production schedules could affect the company's overall business plan."
    }
   }
  ],
@@ -352,5 +352,6 @@
     "per": "loss"
    }
   }
- }
+ },
+ "riskSplit": 1
 }

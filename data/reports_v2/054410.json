@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "분기 실적 변동과 영업 외 손익",
-    "en": "Quarterly volatility and non-operating items"
+    "ko": "도금 대체 수요와 환경 규제",
+    "en": "Plating replacement demand and regulation"
    },
    "body": {
-    "ko": "지배주주 순이익은 2026년 1분기 29.3억원, 2분기 6.1억원, 3분기 순손실 34.5억원으로 분기마다 크게 바뀌었다. 영업이익 규모와 지배주주 순이익의 격차가 커서 영업 외 항목이 결과를 좌우하고 있다. 이 항목의 내역이 정기보고서에서 명확해지기 전까지는 분기 이익의 지속성을 가늠하기 어렵다.",
-    "en": "Net income attributable to owners moved from KRW 2.93 billion in the first quarter of 2026 to KRW 613 million in the second quarter and a KRW 3.45 billion net loss in the third quarter. The gap between operating profit and profit attributable to owners is wide, which means non-operating items drive the result. Until the composition of these items becomes clear in periodic reports, the durability of quarterly profit is hard to judge."
+    "ko": "플라즈마 코팅은 도금을 대체하는 공정으로, 도금 공정에 대한 환경 규제가 강화될수록 수요가 늘어날 수 있는 기술이다. 다만 규제가 시행되는 시점과 대체 수요의 규모에 따라 실제 매출 기여의 크기가 달라진다. 규제 일정이 늦어지거나 고객이 기존 도금 공정을 유지하면, 이 기술의 성장이 매출로 이어지는 시점이 뒤로 밀릴 수 있다.",
+    "en": "Plasma coating is a process that replaces plating and could see demand rise as environmental rules on plating processes tighten. However, the actual contribution to revenue depends on when the regulations take effect and on the scale of replacement demand. If the regulatory timetable slips or customers keep their existing plating processes, the point at which this technology's growth turns into sales could be pushed back."
    }
   },
   {
    "cat": {
-    "ko": "현금 창출과 재무 여력",
-    "en": "Cash generation and financial capacity"
+    "ko": "제조 고객 생산 물량",
+    "en": "Customer production volumes"
    },
    "body": {
-    "ko": "영업활동 현금흐름은 2025년 2.3억원으로 2023년 13.3억원보다 크게 줄었다. 부채총계는 2025년 말 410억원으로 자본총계 548억원 대비 부채비율 74.8%다. 영업 현금 창출이 약한 상태에서 차입 부담을 줄이려면 이익 회복이 뒷받침돼야 한다.",
-    "en": "Operating cash flow was KRW 229 million in 2025, far below KRW 1.33 billion in 2023. Total liabilities stood at KRW 41 billion at the end of 2025 against total equity of KRW 54.8 billion, a debt-to-equity ratio of 74.8%. With operating cash generation weak, reducing borrowing burdens depends on a recovery in profit."
+    "ko": "케이피티유의 매출은 제품을 만드는 제조 고객의 생산 물량에 연동되는 구조다. 전방 제조업의 생산이 조정 국면에 들어서면 표면처리 가공 물량이 함께 줄 수 있다. 이 경우 공정 가동률이 떨어지고 영업이익 회복 속도가 늦어질 수 있다. 2026년 1분기와 2분기에 늘어난 매출 흐름도 고객의 생산 수요가 이어질 때에만 유지될 수 있다.",
+    "en": "KPTU's revenue is linked to the production volumes of the manufacturing customers that make its parts. If production at downstream manufacturers enters a downturn, surface treatment volumes could fall with it. In that case, line utilization could decline and the pace of operating profit recovery could slow. The revenue increases in the first and second quarters of 2026 can be sustained only if customer production demand continues."
    }
   }
  ],
@@ -339,5 +339,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

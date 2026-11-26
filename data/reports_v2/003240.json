@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "석유화학 업황·수급",
-    "en": "Petrochemical market and supply"
+    "ko": "탄소섬유 수요 실현",
+    "en": "Carbon fiber demand realization"
    },
    "body": {
-    "ko": "석유화학 업황 부진이 이어지고 있어, 프로필렌 수급이 개선되지 않으면 설비 재가동 시점은 늦어질 수 있다. 업계는 재가동 시점이 불투명하다고 본다. 사업의 중심인 석유화학 비중이 2022년 기준 70%여서 업황 변동이 실적에 직접 반영되는 구조다.",
-    "en": "The petrochemical downturn continues, and if propylene supply and demand do not improve, the restart of the idled unit could be delayed. Industry observers view the timing of a restart as uncertain. With petrochemicals at 70% of standalone sales in 2022, swings in market conditions pass directly into results."
+    "ko": "회사는 항공·자동차·조선 등에서 탄소섬유 수요가 늘어날 것으로 기대하며, 울산공장에 연산 3,000톤 규모 전구체와 1,500톤 규모 탄소섬유 설비를 두고 있다. 이 수요가 매출로 이어진 정도는 부문별 정보에서 확인해야 할 사항이다. 탄소섬유 수요 확대가 기대에 미치지 못하면 프로필렌에서 전구체로 이어지는 수직계열화의 효과가 실적에 충분히 반영되지 않을 수 있다.",
+    "en": "The company expects carbon fiber demand to grow in aerospace, automotive and shipbuilding, and its Ulsan plant has annual capacity of 3,000 tons of precursor and 1,500 tons of carbon fiber. How much of this demand turns into sales must be confirmed through segment information. If demand growth falls short of expectations, the benefit of the vertical chain running from propylene to precursor may not be fully reflected in earnings."
    }
   },
   {
    "cat": {
-    "ko": "영업 외 손익 변동성",
-    "en": "Volatility in non-operating items"
+    "ko": "분기 매출 지속성",
+    "en": "Sustainability of quarterly sales"
    },
    "body": {
-    "ko": "2026년 2분기에는 영업손실이 10.8억원에 그쳤지만 지배주주 순이익은 585억원이었다. 반면 3분기에는 영업손실 466억원보다 큰 968억원의 지배주주 순손실이 나왔다. 영업 외 항목이 분기 순손익을 크게 좌우하는 만큼 본업 개선과 순이익 흐름을 구분해서 봐야 한다.",
-    "en": "In the second quarter of 2026, the operating loss was only KRW 1.08 billion while net income attributable to controlling shareholders was KRW 58.5 billion. In the third quarter, the net loss of KRW 96.8 billion was larger than the operating loss of KRW 46.6 billion. Because non-operating items swing quarterly results, core operating improvement and net income need to be read separately."
+    "ko": "2026년 3분기 매출은 직전 분기보다 크게 늘었지만, 이 증가가 이후 분기에도 이어질지는 아직 확인되지 않았다. 매출 기반이 다시 줄어들면 공장 가동률과 외형 회복이 함께 되돌아갈 수 있다. 2026년 4분기 잠정 실적에서 매출 증가 유지 여부가 확인되기 전까지 외형 회복의 지속성은 불확실하다.",
+    "en": "Third-quarter 2026 sales rose sharply from the prior quarter, but it is not yet confirmed whether that increase will continue in later quarters. If the sales base falls back, plant utilization and the recovery in scale could reverse together. Until the provisional fourth-quarter 2026 results show whether sales growth holds, the durability of the top-line recovery remains uncertain."
    }
   },
   {
    "cat": {
-    "ko": "현금창출력",
-    "en": "Cash generation"
+    "ko": "섬유 부문 가동률",
+    "en": "Textile segment utilization"
    },
    "body": {
-    "ko": "2025년 영업활동 현금흐름은 -1,333억원으로 적자였다. 2023년과 2024년에는 흑자였던 만큼 연도별 변동 폭이 크다. 현금흐름이 적자로 돌아선 원인은 정기보고서의 현금흐름표에서 세부적으로 확인해야 하며, 자산 규모에 비해 현금 창출이 안정적인지는 아직 판단하기 이르다.",
-    "en": "Operating cash flow was negative at KRW 133.3 billion in 2025, while it had been positive in 2023 and 2024, so the year-to-year swing is large. The reasons for the 2025 negative figure should be checked in the cash flow statement of the annual report. Whether cash generation is stable relative to the asset base cannot yet be determined."
+    "ko": "섬유 부문은 화섬사와 방적사 중심으로 2022년 기준 매출 비중이 29%였으며, 2023년 사업보고서 기준 평균가동률은 74%였다. 섬유 부문은 석유화학 부진의 영향을 일부 나눠 받을 수 있는 영역이지만, 가동률이 높아지지 않으면 석유화학 설비가 멈춘 기간 동안 전체 매출을 떠받치는 힘이 제한될 수 있다. 2026년 사업보고서에서 섬유 부문의 매출 비중과 가동률 변화를 확인해야 한다.",
+    "en": "The textile segment, centered on synthetic yarn and spun yarn, accounted for 29% of sales in 2022, and the average utilization rate was 74% in the 2023 annual report. The segment can absorb part of the petrochemical downturn, but if utilization does not rise, its ability to support total sales during the idle period of petrochemical units may be limited. The sales share and utilization trend of the textile segment should be checked in the 2026 annual report."
    }
   }
  ],
@@ -348,5 +348,6 @@
    "div": 0.2
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

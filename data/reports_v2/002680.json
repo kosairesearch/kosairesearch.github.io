@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "법적·규제 리스크",
-    "en": "Legal and regulatory risk"
+    "ko": "신규 사업 실행",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "공정거래위원회 과징금 약 243억원에 대한 행정소송과 집행정지 신청의 결과는 아직 나오지 않았다. 판결 결과에 따라 과징금 부담과 회계 처리가 달라질 수 있다. 회사는 결과가 나오는 대로 공시하겠다고 밝혔으며, 규제 조사와 관련해 동종업계 가격 인하가 이어진 점도 리스크 요인이다.",
-    "en": "The administrative suit and the request to suspend the fine have not yet produced a result. The ruling could change the fine burden and its accounting treatment. The company says it will disclose outcomes as they come, and industry-wide price cuts tied to the regulatory probe are another risk factor."
+    "ko": "회사는 제과·제빵 제조·판매업과 식자재 도소매업을 신규 사업으로 추진하고 있다. 제분과 사료에 집중된 현재 사업 구조에 새 영역이 더해지는 계획이며, 이 사업들이 의미 있는 매출로 이어질지는 불확실하다. 영업손실이 이어지는 상황에서 신규 사업에 투입되는 인력과 자금이 기존 사업의 수익성 회복과 경합할 수 있다. 신규 사업의 초기 성과가 부진하면 회사가 밝힌 사업 다각화 효과는 실적에 반영되지 않을 수 있다.",
+    "en": "The company is pursuing new businesses in confectionery and bakery manufacturing and sales and in food-ingredient wholesale and retail. These add areas to a structure centered on flour milling and feed, and whether they become meaningful revenue remains uncertain. With operating losses continuing, the staff and funds committed to new businesses could compete with efforts to restore profitability in existing operations. If early results of the new businesses fall short, the diversification the company describes may not show up in earnings."
    }
   },
   {
    "cat": {
-    "ko": "원가·환율 변동",
-    "en": "Cost and currency volatility"
+    "ko": "가격 인상과 거래처 이탈",
+    "en": "Price increase and customer attrition"
    },
    "body": {
-    "ko": "제분 부문은 원료 가격과 환율의 영향을 받아 원가가 쉽게 바뀌는 구조다. 2025년 상반기에도 원자재 가격 변동이 실적 하락 요인으로 지목된 바 있다. 2026년 상반기에는 환율 급등과 외환 관련 손실이 영업외 부담을 키웠다. 환율이 다시 불안해지면 하반기 계획이 무력화될 수 있다.",
-    "en": "The flour division's costs shift with raw-material prices and the exchange rate. Raw-material swings were cited as a drag on first-half 2025 results. In first-half 2026, currency spikes and foreign-exchange losses added to non-operating pressure. If the currency turns volatile again, the second-half plan could be undermined."
+    "ko": "회사는 제품 가격을 현실화해 수익성을 개선하는 계획을 밝혔다. 한탑은 대형 식품사와 달리 원료·중간재 공급 비중이 커서 거래처의 구매 조건에 따라 물량이 크게 움직일 수 있다. 가격 인상이 거래처의 구매 선택을 바꾸면 수익성 회복 계획이 물량 감소로 상쇄될 수 있다. 거래처 관계 유지를 위해 회사가 강조하는 질적 서비스가 가격 부담을 얼마나 흡수하는지가 관건이다.",
+    "en": "The company plans to improve profitability by bringing product prices up to realistic levels. Unlike large food makers, Hantop is weighted toward raw and intermediate supply, so volumes can shift considerably with trading partners' purchasing terms. If higher prices change partners' buying decisions, the profitability plan could be offset by lower volumes. Whether the service quality the company emphasizes for trading partners can absorb the price burden is the key question."
    }
   },
   {
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

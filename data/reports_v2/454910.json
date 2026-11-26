@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무 여력",
-    "en": "Financial cushion"
+    "ko": "사업장 확장·이전",
+    "en": "Facility expansion and relocation"
    },
    "body": {
-    "ko": "영업손실이 이어지면서 3분기 말 순현금은 1,584억원으로 2025년 말보다 387억원 줄었다. 장기차입금 500억원이 새로 잡혔고, 자본총계는 2025년 말 3,486억원에서 3분기 말 3,048억원으로 줄었다. 적자 구간에서 현금이 줄어드는 속도가 사업 전환에 주어진 시간의 폭을 좌우하는 변수다.",
-    "en": "Persistent operating losses reduced net cash to KRW 158.4 billion at end-September 2026, KRW 38.7 billion lower than at year-end 2025. KRW 50 billion of long-term borrowings appeared, and total equity fell from KRW 348.6 billion at end-2025 to KRW 304.8 billion at end-September 2026. The pace of cash burn will determine how long the business transition can run without new funding."
+    "ko": "가이던스는 DRA의 사업장 확장·이전 효과를 전제로 제시됐다. 생산 공간과 설비의 이전이 계획대로 진행되지 않으면 EOL 물량을 소화할 생산 능력이 가이던스 시점에 맞춰 갖춰지지 않을 수 있다. 이전 과정에서 생산이 일시 중단되거나 설비 가동이 늦어지면 북미 자동화 매출 인식 시기도 뒤로 밀릴 수 있다. 솔루션 중심 완제품 공급으로의 전환 속도도 이 설비 준비에 달려 있다.",
+    "en": "The guidance rests on the effect of expanding and relocating DRA's facility. If the move of production space and equipment does not proceed as planned, the production capacity needed to absorb EOL volume may not be in place by the guided period. A production pause or delayed equipment start-up during the relocation could also push back the timing of North American automation revenue. The pace of shifting to solution-centered finished-product supply also depends on this facility readiness."
    }
   },
   {
    "cat": {
-    "ko": "수주 · 지역 집중",
-    "en": "Orders and regional concentration"
+    "ko": "신제품 공개 일정",
+    "en": "Product launch timing"
    },
    "body": {
-    "ko": "북미 매출 비중이 2026년 1~3분기 누적 55%로 높아져 미국 법인의 수주 흐름이 전사 실적에 직접 영향을 준다. DRA 수주 잔고는 910만 달러로 2025년 말 1,490만 달러보다 줄었고, 3분기 매출은 전 분기보다 8.5% 줄었다. 가이던스 달성 여부는 이 잔고가 다음 분기 매출로 얼마나 빠르게 옮겨 가는지에 달려 있다.",
-    "en": "North America reached 55% of January–September 2026 sales, so orders at the US unit now weigh heavily on group results. DRA's backlog was USD 9.1 million at end-September 2026, down from USD 14.9 million at year-end 2025, and third-quarter sales fell 8.5% from the prior quarter. Whether the guidance is reached depends on how fast this backlog converts into revenue."
+    "ko": "에이전틱 로봇 OS 기반 지능형 솔루션은 2027년 공개가 계획돼 있다. 공개 일정이 늦어지거나 엔비디아와의 피지컬 AI 협력이 제품 성능으로 이어지지 않으면 솔루션 전환의 근거가 약해질 수 있다. 차세대 협동로봇 팔과 산업용 휴머노이드 개발도 같은 OS를 바탕으로 추진되어 한 과제의 지연이 다른 과제 일정으로 번질 수 있다. 자체 AI 작업 지능화 모델과 데이터 인프라 구축 성과도 이 과정에서 확인이 필요하다.",
+    "en": "The agentic robot OS-based intelligent solution is planned for unveiling in 2027. If the launch slips or the physical AI collaboration with NVIDIA does not translate into product performance, the basis for the shift to solutions could weaken. Next-generation collaborative arm and industrial humanoid development also run on the same OS, so a delay in one could push back the others. Results from the in-house AI work-intelligence model and data infrastructure also need confirmation along the way."
    }
   },
   {
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

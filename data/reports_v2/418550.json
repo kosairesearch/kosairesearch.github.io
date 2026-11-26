@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "고정비와 설비 투자 부담",
-    "en": "Fixed costs and capital investment burden"
+    "ko": "증설 실행과 투자 회수",
+    "en": "Expansion execution and investment recovery"
    },
    "body": {
-    "ko": "2025년 2분기 보도에서 생산설비 확대에 따른 고정비 부담이 영업이익을 누른 것으로 설명됐다. 매출이 줄어든 상태에서 고정비가 유지되면 손익분기 회복이 늦어진다. 2024년 영업활동 현금흐름은 적자였고 2025년 8.7억원으로 회복됐으나 규모는 작다.",
-    "en": "A press report from the second quarter of 2025 attributed lower operating profit to fixed-cost pressure from expanded capacity. When sales decline while fixed costs remain, the return to breakeven slows. Operating cash flow was negative in 2024 and recovered to KRW 872 million in 2025, a small amount."
+    "ko": "2023년 6월 보도에서 제시된 안산 공장 증설 계획은 약 700억원을 투입해 CNT 생산능력을 늘리는 것이다. 증설이 계획대로 집행되고 가동 규모가 목표 수준에 이르는지에 따라 CNT 수요 증가가 매출로 이어질 수 있다. 증설이 지연되거나 가동률이 낮게 머물면 투자 대비 매출 회수가 늦어지고, 증권가가 제시한 이익 증가 시각도 실적에 반영되기 어려울 수 있다.",
+    "en": "A June 2023 report described a plan to invest about KRW 70 billion in a second Ansan plant to expand CNT capacity. Whether the expansion is executed as planned and the plant reaches its target operating scale will determine whether rising CNT demand converts into sales. If the expansion is delayed or utilization stays low, recovery of the investment through sales would slow, and the earnings growth that securities analysts projected may not show up in results."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

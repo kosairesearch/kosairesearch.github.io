@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·제품 집중",
-    "en": "Customer and product concentration"
+    "ko": "가동률과 고정비 부담",
+    "en": "Utilization and fixed-cost burden"
    },
    "body": {
-    "ko": "KrF 소재와 국내 주요 고객사 한 곳에 대한 의존이 실적 변동성을 키울 수 있다. 대신증권은 2025년 KrF 소재 비중을 약 50%로 추정했다. 고객사의 투자 일정이나 세대 전환 시기가 바뀌면 분기 매출이 흔들릴 수 있다. 2026년 1분기 정점 이후 분기 매출이 줄어든 흐름도 이 구조와 맞닿아 있다.",
-    "en": "Heavy reliance on KrF materials and one main domestic customer can amplify earnings volatility. Daishin Securities estimated KrF at about half of 2025 sales. Changes in a customer's investment or generation-transition timing could move quarterly revenue. The decline in quarterly revenue since the Q1 2026 peak is consistent with this structure."
+    "ko": "생산능력은 매출 기준 연 2,000억원 수준이지만 2026년 1월 보도에서 가동률은 60%대로 전해졌다. 배치 생산 특성상 실질적인 최대 가동률이 80~85% 내외로 추정되므로, 가동률이 낮은 상태에서 2027~2028년 100억~150억원 규모의 증설이 진행되면 고정비 부담이 늘어날 수 있다. 이 부담이 커지면 2025년 14.1%였던 영업이익률을 유지하기 어려울 수 있다.",
+    "en": "Annual capacity is about KRW 200 billion on a sales basis, but a January 2026 report put utilization in the 60% range. Given batch production, practical maximum utilization is estimated at 80–85%, so if expansion of KRW 10–15 billion proceeds in 2027–2028 while utilization stays low, fixed-cost burden could rise. A heavier burden could make it hard to sustain the 14.1% operating margin of 2025."
    }
   },
   {
    "cat": {
-    "ko": "환율·수출",
-    "en": "Exchange rates and exports"
+    "ko": "전망치와 실적 괴리",
+    "en": "Gap versus broker forecasts"
    },
    "body": {
-    "ko": "2026년 반기 수출 비중은 69%였고, 1분기 수출 비중은 73%였다. 원화 강세나 약세는 수출 매출의 원화 환산액과 수익성에 영향을 줄 수 있다. 환율 변동에 따른 외화 관련 손익은 분기 순이익의 변동 요인이 될 수 있다.",
-    "en": "Exports were 69% of sales in the 2026 half-year report and 73% in Q1 2026. Currency moves can change the won value of export revenue and affect profitability. Foreign-currency gains and losses tied to exchange rates can also drive swings in quarterly net income."
+    "ko": "신한투자증권은 2026년 1월 추정에서 2026년 매출을 1,485억원, 영업이익을 234억원으로 전망했다. 이 전망은 연초 기준이어서 2분기와 3분기 실적 감소가 반영되기 전의 수치다. 4분기 매출이 3분기 수준에 머물면 연간 실적이 전망치에 미치지 못할 수 있으며, 이 경우 증권사 추정치도 하향 조정될 수 있다.",
+    "en": "Shinhan Investment Corp. projected 2026 revenue of KRW 148.5 billion and operating profit of KRW 23.4 billion in January 2026. That estimate predates the declines in Q2 and Q3, so it may not reflect the current quarterly trend. If Q4 revenue stays near the Q3 level, full-year results could fall short of the forecast, and brokerage estimates may then be revised down."
    }
   },
   {
    "cat": {
-    "ko": "양산 전환·증설 일정",
-    "en": "Timing of mass production and capacity expansion"
+    "ko": "제품 믹스와 이익률",
+    "en": "Product mix and margin"
    },
    "body": {
-    "ko": "ArF·EUV 소재는 고객사의 양산 일정과 품질 인증에 따라 매출 시점이 밀릴 수 있다. 2027년 하반기로 예상된 증설 시기와 최대 150억원 규모의 투자액도 증권사 추정치다. 추정 일정이 늦어지면 2027년 매출 확대 전망도 같이 조정될 수 있다.",
-    "en": "Revenue from ArF and EUV materials can slip if customers' mass-production or qualification schedules shift. The second-half 2027 expansion timing and the investment of up to KRW 15 billion are brokerage estimates. If those timelines slip, the 2027 sales outlook may also be revised."
+    "ko": "대신증권은 고부가 PR 소재 비중 확대로 제품 믹스가 좋아진 것을 2025년 이익률 상승의 배경으로 봤다. 2026년 반기 기준 PR 소재가 매출의 63.89%를 차지하고 있어, 고부가 소재의 비중이 이 수준에서 더 커지지 않으면 이익률 개선 효과가 약해질 수 있다. 선단 소재의 양산 전환이 늦어지면 믹스 개선 속도도 둔화될 수 있다.",
+    "en": "Daishin Securities attributed the 2025 margin gain to a larger share of high-value PR materials, which improved the product mix. PR materials were 63.89% of sales in the 2026 half-year report. If the share of high-value materials stops growing, or if advanced-material mass production is delayed, the margin benefit from mix could weaken."
    }
   }
  ],
@@ -333,5 +333,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

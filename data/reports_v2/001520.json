@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "건설 정책과 수요 리스크",
-    "en": "Construction policy and demand risk"
+    "ko": "지역 집중 생산 리스크",
+    "en": "Regional concentration risk"
    },
    "body": {
-    "ko": "주택 공급 확대 기대로 2026년 11월 시멘트·레미콘 업종이 오르기도 했지만, 기대가 실제 착공 물량으로 이어지지 않으면 주가 반응이 되돌아갈 수 있다. 레미콘은 지역 건설 경기와 운송비에 따라 실적 변동이 커질 수 있다는 업계 분석이 있다. 공공 수요가 민간 부진을 얼마나 보완하는지가 관건이다.",
-    "en": "Expectations of housing supply expansion lifted cement and RMC stocks in November 2026, but if those expectations do not translate into actual construction starts, the share price reaction could reverse. Industry analysts note that RMC earnings can swing widely with regional construction activity and transport costs. Whether public demand can offset private weakness is the key variable."
+    "ko": "17개 레미콘 공장 가운데 8개가 경상도에 몰려 있어, 이 지역 착공 물량이 줄면 가동률과 매출이 함께 흔들릴 수 있다. 레미콘은 배합 후 약 90분 안에 현장에 투하해야 해 다른 권역 공장으로 물량을 옮기기 어렵다. 수도권 개발 사업은 지역 편중을 줄이는 요인이지만 준공 이후에야 실적에 반영된다.",
+    "en": "Eight of Tongyang's 17 ready-mixed concrete plants are concentrated in the Gyeongsang region, so a drop in construction starts there could hit utilization and revenue together. Because concrete must be placed on site within about 90 minutes of mixing, output is hard to shift to plants in other regions. The Bucheon development project may reduce regional concentration, but it will affect earnings only after completion."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

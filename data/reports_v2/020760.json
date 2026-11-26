@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 유지 리스크",
-    "en": "Listing maintenance risk"
+    "ko": "사업 축소 실행 리스크",
+    "en": "Business scale-down execution risk"
    },
    "body": {
-    "ko": "개선기간이 끝나면 한국거래소가 개선계획서를 검토해 상장 유지 여부를 결정한다. 매매거래정지가 계속되면 주식의 유동성이 제한되고, 심사 결과에 따라 거래 구조가 크게 달라질 수 있다. 이 리스크는 사업 실적과 별도로 움직일 수 있다는 점이 특징이다.",
-    "en": "When the improvement period ends, the Korea Exchange will review the improvement plan and decide whether the listing can be maintained. If trading remains suspended, liquidity is limited, and the outcome could change the trading structure significantly. This risk can move separately from operating results."
+    "ko": "사파이어 사업이 축소되면 음성공장 잉곳·웨이퍼 라인에서 나오던 매출이 연결 실적에서 빠진다. 2024년 음성공장 매출은 226억원(연결 매출의 25.4%)이어서 축소 범위에 따라 매출 기반이 크게 줄 수 있다. 설비 처분 과정에서 자산 손상이나 처분 손실이 생길 가능성도 있다. 터치 패널 수요가 축소분을 메우지 못하면 사업 재편의 효과는 제한될 수 있다.",
+    "en": "If the sapphire business is scaled back, sales from the Eumseong ingot and wafer lines would drop out of consolidated results. Eumseong plant sales of KRW 22.6 billion in 2024, or 25.4 percent of consolidated sales, mean the revenue base could shrink sharply depending on the scope of the cutback. Asset impairment or disposal losses could arise during equipment sales. If touch panel demand does not offset the reduction, the effect of the restructuring may be limited."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 체력과 현금흐름",
-    "en": "Financial capacity and cash flow"
+    "ko": "해외 생산 집중 리스크",
+    "en": "Overseas production concentration risk"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 388억원으로 자본총계 286억원을 웃돈다. 영업활동 현금흐름은 2022년부터 2024년까지 마이너스였고 2025년에 1억원으로 돌아섰지만 한 해 기록이다. 영업손실이 이어지는 상태에서 차입 부담이 커지면 설비 투자와 사업 재편의 여력이 제한될 수 있다.",
-    "en": "Total liabilities at the end of 2025 were KRW 38.8 billion, above total equity of KRW 28.6 billion. Operating cash flow was negative from 2022 through 2024 and turned to KRW 105 million in 2025, but that is a single year's result. With operating losses continuing, borrowing costs could constrain capital spending and restructuring."
+    "ko": "터치 패널 생산은 베트남 법인 중심으로 옮겨졌고, 2025년 상반기 DS사업부 가동률 53.2%도 이 공장의 생산 증가가 뒷받침했다. 수요가 줄어드는 국면에서 생산이 한 거점에 몰리면 가동률이 떨어질 때 고정비 부담이 그대로 손익에 반영될 수 있다. 국내 거점의 재편이 진행 중인 만큼 생산 배분 변화가 원가와 납기에 영향을 줄 수 있다. 베트남 법인의 분기별 가동률 유지 여부가 확인 지점이다.",
+    "en": "Touch panel output has shifted mainly to the Vietnam subsidiary, and the DS division's 53.2 percent utilization in the first half of 2025 was supported by higher output there. If demand keeps falling and production stays concentrated at one site, fixed costs could weigh directly on earnings when utilization drops. Because the domestic site restructuring is still under way, changes in production allocation could affect costs and delivery. Whether utilization at the Vietnam subsidiary holds up each quarter is the point to monitor."
    }
   }
  ],
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

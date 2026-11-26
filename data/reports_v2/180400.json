@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "임상·기술이전 불확실성",
-    "en": "Clinical and licensing uncertainty"
+    "ko": "해외 고객 계약 전환",
+    "en": "Conversion of overseas customer inquiries"
    },
    "body": {
-    "ko": "경구용 GLP-1 후보는 비임상 단계이고 IND 목표는 2027년 하반기다. 항바이러스 후보의 활성은 세포 수준 결과이며 IND 목표는 2029년이다. 기술이전이 여러 건 발표됐지만 선급금이 없는 구조여서, 단계별 조건 달성 여부에 따라 수익 시점이 크게 달라질 수 있다.",
-    "en": "The oral GLP-1 candidate is preclinical, with an IND target in the second half of 2027. The antiviral candidates show activity only at the cell level, with an IND target in 2029. Several licensing deals have been announced, but without upfront payments, revenue timing could shift widely with stage-gate outcomes."
+    "ko": "진단 쪽에서는 BIX 2026 참가 중 동유럽 업체들이 비침습적 산전검사와 착상 전 유전검사에 관심을 보였고, 건강기능식품 쪽에서는 미국과 일부 유럽 기업이 견적을 요청했다. 이런 관심이 실제 공급 계약과 반복 주문으로 이어져야 매출 기반이 넓어진다. 견적 단계의 문의가 계약으로 전환되지 않거나 규모가 작으면 분기 매출은 60억원대 중반 수준에 머물 수 있다.",
+    "en": "In diagnostics, Eastern European companies showed interest in non-invasive prenatal testing and preimplantation genetic testing at BIX 2026, and in health products, companies in the United States and parts of Europe requested quotes. Turning these inquiries into supply contracts and repeat orders would widen the revenue base. If the quotes do not convert or stay small, quarterly revenue could remain in the mid-KRW 6 billion range."
    }
   },
   {
    "cat": {
-    "ko": "재무·자금 조달",
-    "en": "Financing and funding"
+    "ko": "자체 제조 사업 전환",
+    "en": "Shift to in-house manufacturing revenue"
    },
    "body": {
-    "ko": "2025년 말 자본총계는 958억원으로 늘었지만 영업활동 현금흐름은 -189억원으로 여전히 유출이다. 2025년 3월 보도는 자본잠식 위험을 거론했고, 단기차입으로 급한 자금을 메운 사례도 있다. 추가 유상증자가 이뤄지면 기존 주주의 지분 희석이 불가피하다.",
-    "en": "Total equity rose to KRW 95.8 billion at end-2025, but operating cash flow was still negative at KRW -18.9 billion. A March 2025 report raised the risk of capital erosion, and the company has used short-term borrowing to cover urgent needs. Any further rights offering would dilute existing shareholders."
+    "ko": "회사는 2026년 9월 대표 선임 과정에서 신약 라이선스아웃에 무게를 두기보다 자체 제조 역량을 활용해 직접 매출을 늘리겠다고 밝혔다. 이 전환은 생산 물량 확보와 판매 채널 구축이 함께 맞아야 실적에 반영된다. 계획이 지연되거나 제조 수주가 기대에 못 미치면 매출 구조 변화는 늦어지고, 적자 축소 흐름도 기술이전 수익에 기대는 상태로 남을 수 있다.",
+    "en": "In September 2026, during the CEO appointment process, the company said it would expand direct revenue from its own manufacturing capacity rather than rely mainly on pipeline licensing out. Realizing this shift requires securing production volume and building sales channels at the same time. If the plan is delayed or manufacturing orders fall short, the change in revenue structure would slow, and the narrowing loss trend would continue to depend on licensing income."
    }
   },
   {
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

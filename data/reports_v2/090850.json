@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "마진 압박",
-    "en": "Margin pressure"
+    "ko": "신사업 확장 부담",
+    "en": "New business expansion burden"
    },
    "body": {
-    "ko": "매출이 늘어도 영업이익률이 흔들리면 외형 성장이 이익으로 이어지지 않는다. 영업이익률은 2025년 17.0%였지만 2026년에는 2분기와 3분기가 연속 감소했다. 누계 기준 영업이익 감소율이 매출 증가율을 크게 웃돌아 비용 항목의 점검이 필요하다.",
-    "en": "If the operating margin weakens while sales grow, top-line growth does not reach profit. The margin was 17.0% in 2025, but operating profit fell in both the second and third quarters of 2026. On a nine-month basis the operating profit decline far exceeds the sales growth, so cost items need to be reviewed."
+    "ko": "현대이지웰은 식대 복지와 BPO, 공공복지, 지역화폐몰로 사업 영역을 넓히고 있다. 이들 사업은 기존 복지몰과 고객 기반과 운영 방식이 달라 초기 인력과 운영 비용이 늘어날 수 있다. 신규 사업이 고객사 확보로 이어지지 않으면 투입 비용이 회수되지 않아 수익성을 낮출 수 있다. 확장 성과는 BPO와 지역화폐몰의 매출 기여 수준으로 확인할 필요가 있다.",
+    "en": "Hyundai Ezwel is expanding into meal-voucher services, business process outsourcing, public welfare and local currency malls. These businesses differ from the existing welfare mall in customer base and operating model, so initial staffing and operating costs may rise. If the new businesses do not win client companies, the costs invested will not be recovered and profitability may decline. The results of the expansion need to be confirmed through the revenue contribution of BPO and the local currency mall."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 5.33
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

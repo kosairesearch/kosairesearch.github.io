@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "수요 위축 장기화",
-    "en": "Prolonged Demand Weakness"
+    "ko": "원가 개선 지속성",
+    "en": "Durability of Cost Gains"
    },
    "body": {
-    "ko": "주류시장 위축이 장기화되면 소주와 맥주 물량이 추가로 줄 수 있다. 2025년 소주 출고량이 10.9% 줄어든 흐름이 이어지는지가 핵심 변수다. 원가와 판관비 절감만으로 영업이익을 지키는 데는 범위가 있다.",
-    "en": "If the liquor market contraction lasts, soju and beer volumes could decline further. Whether the 10.9% drop in soju shipments seen in 2025 continues is the key variable. Cost cuts and lower SG&A can only protect operating profit within limits."
+    "ko": "매출원가율이 56%에서 55.5%로 낮아진 것은 비용 효율화에 따른 것이다. 이 개선이 원재료와 물류 등 원가 부담이 커지는 국면에서도 유지될 수 있는지가 변수다. 원가 부담이 다시 커지면 영업이익률이 2024년 8.0%에서 2025년 6.9%로 낮아진 흐름이 반복될 수 있다. 판매관리비 절감 여력이 줄어드는 시점에는 이익 방어 폭이 좁아질 수 있다.",
+    "en": "The cost of sales ratio fell from 56% to 55.5% on cost efficiency. Whether this improvement holds when raw material and logistics costs rise is the key variable. If cost pressure returns, the pattern of operating margin easing from 8.0% in 2024 to 6.9% in 2025 could repeat. If room for SG&A cuts narrows, the cushion protecting profit could thin."
    }
   },
   {
    "cat": {
-    "ko": "맥주 경쟁과 신제품 효과",
-    "en": "Beer Competition and New Product Effect"
+    "ko": "소주 주력 브랜드 집중",
+    "en": "Concentration on Flagship Soju Brand"
    },
    "body": {
-    "ko": "맥주 시장은 1위 브랜드와의 경쟁이 이어지고 있다. 테라 제로와 테라 스파클링 같은 신제품 효과가 맥주 누적 실적에 반영되는지 확인이 필요하다. 2026년 2분기 맥주 매출이 15.3% 줄어든 만큼 신제품의 매출 기여가 아직 드러나지 않은 상태다.",
-    "en": "Competition with the market leader in beer continues. Whether new products such as Terra Zero and Terra Sparkling show up in cumulative beer results still needs confirmation. Second-quarter 2026 beer sales fell 15.3%, so the sales contribution from new products has not yet clearly appeared."
+    "ko": "소주 시장에서 참이슬은 압도적인 점유율을 유지하고 있다는 분석이 있다. 3분기 소주 영업이익이 450억원으로 늘어 전체 이익을 떠받치고 있어, 이 점유율이 낮아지면 이익 기반이 함께 약해질 수 있다. 소주 이익이 단일 주력 브랜드에 집중된 구조이므로, 참이슬의 경쟁력 변화가 회사 전체 실적에 크게 반영될 수 있다.",
+    "en": "One analysis says Chamisul keeps an overwhelming share of the soju market. With third-quarter soju operating profit at KRW 45.0 billion holding up overall earnings, a lower share would weaken the profit base. Because soju profit depends on a single flagship brand, changes in Chamisul's competitiveness could weigh heavily on overall results."
    }
   },
   {
@@ -347,5 +347,6 @@
    "div": 4.39
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

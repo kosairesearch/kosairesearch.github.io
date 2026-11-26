@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "사업 구조 리스크",
-    "en": "Business Structure Risk"
+    "ko": "글로벌 프로젝트 실행 리스크",
+    "en": "Global Project Execution Risk"
    },
    "body": {
-    "ko": "매출의 상당 부분이 프로젝트 단위 수주에 기대고 있어 분기별 변동이 크다. 2025년 3분기 58억원에서 2026년 3분기 463억원까지 움직인 매출 폭은 예측 가능성이 낮다는 뜻이다. 대형 프로젝트가 특정 분기에 몰리면 이익 개선이 일시적으로 보일 수 있다. 수주 파이프라인이 공개 자료에서 수치로 제시되지 않아 지속성을 가늠하기 어렵다.",
-    "en": "A large share of revenue depends on project-based wins, causing sharp quarterly swings. Moving from KRW 5.8 billion in Q3 2025 to KRW 46.3 billion in Q3 2026 shows low predictability. If large projects cluster in a single quarter, profit improvement may look temporary. Because the project pipeline is not quantified in public materials, sustainability is hard to gauge."
+    "ko": "CG·VFX 기술을 바탕으로 한 글로벌 기업 프로젝트는 참여가 확정됐다고 회사가 밝힌 사안이다. 이 프로젝트가 매출로 인식되는 시기와 규모에 따라 다음 분기 이후 실적 흐름이 달라질 수 있다. 제작 인력과 장비가 국내 행사·공공 프로젝트와 겹치면 납기 관리 부담이 커질 수 있다. 기업 고객의 발주가 계획대로 이어지지 않으면 외형 회복 속도가 제약받을 수 있다.",
+    "en": "The company has said its global corporate projects built on CG and VFX capabilities are confirmed. Depending on when and how much of this work is recognized as revenue, results after the next quarter could diverge. If production staff and equipment overlap with domestic event and public-sector projects, delivery management could become harder. If corporate client orders do not follow the planned path, the pace of revenue recovery could be constrained."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "통합·지배구조 리스크",
-    "en": "Integration and Ownership Risk"
+    "ko": "합병 통합 비용 리스크",
+    "en": "Merger Integration Cost Risk"
    },
    "body": {
-    "ko": "2026년 합병으로 엔피와 위지윅스튜디오의 조직·인프라를 통합하는 과정이 진행 중이다. 통합 비용과 인력 재배치가 이익 구조에 영향을 줄 수 있다. 최대주주 성격의 주주 지분이 줄어든 상황에서 지배구조와 경영 방향이 바뀔 가능성도 함께 봐야 한다. 주주 구성 변화는 소액주주와 유통 주식 수급에도 영향을 준다.",
-    "en": "The 2026 merger is still in the process of integrating NP and Wisewig Studio's organizations and infrastructure. Integration costs and staff reallocation could affect the profit structure. With a major holder reducing its stake, governance and management direction could also change, and shareholder composition shifts affect float and trading supply."
+    "ko": "2026년 합병으로 엔피와 위지윅스튜디오의 조직과 인프라를 묶는 작업이 진행 중이며, 회사는 이를 고정비 절감의 근거로 제시했다. 통합 과정에서 생기는 일회성 비용과 인력 재배치가 절감 효과가 실적에 반영되는 시점을 늦출 수 있다. 자회사 간 업무가 겹치는 제작 부문을 재편하는 과정에서 프로젝트 납기와 수주 대응이 흔들릴 수 있다. 통합 완료 시점과 고정비 감소 규모는 실적으로 확인해야 한다.",
+    "en": "The 2026 merger is bringing NP and Wisewig Studio's organizations and infrastructure together, and the company has cited this as the basis for fixed-cost reduction. One-time integration costs and staff reallocation could delay when the savings appear in results. Reorganizing overlapping production units between the subsidiaries could disrupt project delivery and bid responses. The completion timing of integration and the scale of fixed-cost reduction should be confirmed through reported results."
    }
   }
  ],
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

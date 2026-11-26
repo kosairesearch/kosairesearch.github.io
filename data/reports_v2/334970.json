@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무 · 유동성",
-    "en": "Financial and liquidity"
+    "ko": "물량 의존 · 가동률",
+    "en": "Volume dependence and utilization"
    },
    "body": {
-    "ko": "부채비율이 194.7%로 높고 부채총계가 자본총계의 두 배 가까이 된다. 회사는 손상처리의 현금 영향이 제한적이라고 밝혔으나, 상환 일정과 차환 여부에 따라 자금 부담이 달라질 수 있다. 전환사채의 전환 또는 상환 조건도 재무 구조에 영향을 준다.",
-    "en": "The debt ratio is 194.7%, with total liabilities close to twice total equity. The company says the cash impact of impairments is limited, but the repayment schedule and refinancing options will determine the funding burden. Conversion or redemption terms of the convertible bonds also affect the capital structure."
+    "ko": "2025년 보도에서 1공장 가동률이 최대 생산배치 기준 70%를 넘은 것으로 언급됐고, 그 바탕에는 모회사 파이프라인 물량의 대량 생산이 있다. 이 물량의 일정이나 규모가 바뀌면 1공장의 가동률과 고정비 흡수 수준이 함께 흔들릴 수 있다. 외부 수주 물량과 모회사 물량의 비중이 달라지면 가동률 여지를 강세 요인으로 보는 해석도 달라질 수 있다.",
+    "en": "Reporting in 2025 said the first plant exceeded 70% utilization at peak batch capacity, with mass production of parent-company pipeline volumes cited as a key basis. If the timing or scale of this volume changes, the first plant's utilization and its absorption of fixed costs could both move. If the mix between external orders and parent-company volume shifts, the reading of utilization headroom as a bullish factor could also change."
    }
   },
   {
@@ -354,5 +354,6 @@
   },
   "fy_end_month": 6
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

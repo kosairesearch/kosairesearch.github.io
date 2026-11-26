@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무·상장 요건",
-    "en": "Financing and listing requirements"
+    "ko": "연구개발 자금 소요",
+    "en": "R&D funding needs"
    },
    "body": {
-    "ko": "2025년 말 관리종목 지정 면제 기간이 끝났다. 회사는 향후 필요 시 자금조달 여부를 신중히 검토하겠다고 밝혔다. 부채비율이 높아진 상태에서 추가 자금조달이 이뤄지면 주주 가치 희석 가능성이 있다. 영업활동 현금흐름 적자가 이어지는 만큼 기술이전 계약 없이는 외부 자금 의존도가 유지된다.",
-    "en": "The exemption from delisting-related management designation expired at the end of 2025. The company said it will carefully consider whether to raise funds when needed. With the debt ratio elevated, any new financing could dilute shareholders. Continued negative operating cash flow means reliance on external funding persists unless licensing deals close."
+    "ko": "회사는 190억원 규모 전환사채로 PHI-101의 임상 2상 진입과 후속 연구개발 자금을 확보했다고 밝혔다. 임상 2상 준비 기간이 길어지거나 연구비 집행 속도가 계획과 다르면 자금 소요 시점이 앞당겨질 수 있다. 회사는 향후 추가 자금조달을 시장 상황과 연구개발 진행에 따라 검토하겠다고 밝혔으며, 조달 시점과 조건은 아직 정해지지 않았다.",
+    "en": "The company said the KRW 19 billion convertible bond secures funding for PHI-101's Phase 2 entry and later R&D. If preparation for the Phase 2 trial takes longer or spending runs ahead of plan, the timing of cash needs could move earlier. The company said it will weigh further fundraising against market conditions and R&D progress, and the timing and terms have not yet been set."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

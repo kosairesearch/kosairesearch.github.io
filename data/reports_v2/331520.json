@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings Volatility"
+    "ko": "플랫폼 협상 · 파트너",
+    "en": "Platform Negotiation and Partners"
    },
    "body": {
-    "ko": "2025년 4분기 영업이익 18.2억원과 2026년 3분기 영업이익 4,541만원의 차이는 세 분기 만에 벌어졌다. 매출이 100억원대를 유지해도 비용 구조나 일회성 요인에 따라 이익이 크게 달라질 수 있다. 분기 이익의 폭이 큰 만큼 연간 실적으로 흐름을 확인하는 것이 필요하다.",
-    "en": "The gap between Q4 2025 operating profit of KRW 1.82 billion and Q3 2026 operating profit of KRW 45.41 million opened within three quarters. Even with sales holding near KRW 10 billion to KRW 12 billion, profit can shift sharply with cost structure or one-off items. Given the size of quarterly swings, the trend is better read on an annual basis."
+    "ko": "밸로프는 일본 주요 플랫폼 사업자와 투자 및 서비스 전략을 논의 중이라는 보도가 나왔다. 이 협의가 성사되면 일본에서 신작의 서비스 조건과 투자 구조가 정해진다. 협의가 지연되거나 조건이 기대보다 불리하면 일본 매출 기여가 늦어질 수 있다. 일본은 회사가 아바 IP 운영 경험을 가진 핵심 권역이어서 협의 결과가 해외 실적 방향에 직접 닿는다.",
+    "en": "Valofe is reported to be in talks with major Japanese platform operators on investment and service strategy. If the talks conclude, service terms and investment structure for its new titles in Japan will be set. Delays in the talks or less favorable terms could slow the contribution of Japanese revenue. Japan is a core region where the company has operated A.V.A IP, so the outcome bears directly on the direction of overseas earnings."
    }
   },
   {
    "cat": {
-    "ko": "IP · 라이선스 · 권역 의존",
-    "en": "IP, License and Regional Dependence"
+    "ko": "재출시 · 엔진 전환",
+    "en": "Relaunch and Engine Shift"
    },
    "body": {
-    "ko": "AVA RE:BIRTH는 네오위즈가 보유한 아바 IP 라이선스에 기반하므로 라이선스 조건이 사업에 영향을 준다. 라스트오리진2는 개발 단계라 출시 시점이 공개되지 않았다. 해외 서비스는 일본, 태국, 브라질, 북미, 유럽 등 특정 플랫폼과 권역에 기대는 구조여서, 중국 판호 발급이 지연되면 서비스 확대가 늦어질 수 있다.",
-    "en": "AVA RE:BIRTH relies on the A.V.A IP license held by Neowiz, so license terms affect the business. Last Origin 2 is still in development with no launch date disclosed. Overseas service depends on specific platforms and regions, so delays in China approvals could slow expansion."
+    "ko": "마스터 오브 판타지는 2010년 서비스가 종료된 뒤 재출시가 진행 중이며, 자체 엔진을 언리얼 엔진 5.8로 옮기는 작업이 포함된다. 엔진 전환은 개발 일정과 인력 배분에 부담이 될 수 있다. 재출시가 늦어지면 자체 IP 매출 확대 시점도 늦어질 수 있다. 재출시 시점과 성과는 아직 확인되지 않았으며, 부진할 경우 개발 투자 회수에도 영향을 줄 수 있다.",
+    "en": "The relaunch of Master of Fantasy, a 2D side-scrolling MMORPG that ended service in 2010, is under way and includes moving the in-house engine to Unreal Engine 5.8. The engine transition could weigh on development schedules and staff allocation. If the relaunch is delayed, the timing of revenue expansion from in-house IP could also slip. The timing and results of the relaunch have not yet been confirmed, and a weak reception could affect recovery of development spending."
    }
   }
  ],
@@ -358,5 +358,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

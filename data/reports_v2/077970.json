@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "지배구조·수급",
-    "en": "Ownership and supply"
+    "ko": "증설·신사업 실행",
+    "en": "Capacity expansion"
    },
    "body": {
-    "ko": "최대주주 지분율이 높아 유통 주식 수가 제한적인 구조다. 블록딜이 이뤄지면 거래 가능한 물량이 늘어나 기관 수급에 영향을 줄 수 있다. 경영권 매각이 본격화되면 인수자 구조에 따라 사업 방향이 달라질 여지도 있다.",
-    "en": "The largest shareholder's high stake leaves a limited free float. Block trades would add tradable shares and could affect institutional flows. A full sale of control could change the business direction depending on the buyer."
+    "ko": "중속엔진 설비 증설이 어느 시점에 어떤 규모로 이뤄지는지에 따라 2028년 실적 추정이 달라질 수 있다. 군함엔진 매출이 메리츠증권 전망대로 늘어나려면 생산 능력이 뒷받침돼야 하며, 증설이 늦어지면 수주잔고의 매출 전환 속도도 늦어질 수 있다. 증설 물량이 방산과 민수 중 어디에 배분되는지도 사업 구성의 무게추를 바꿀 수 있는 변수다.",
+    "en": "Whether and when medium-speed engine capacity is expanded, and at what scale, could change 2028 earnings estimates. For naval engine sales to rise toward Meritz's projections, production capacity must keep pace, and a delay in expansion could slow the conversion of backlog into revenue. How added capacity is allocated between defense and civilian orders could also shift the balance of the business mix."
    }
   },
   {
    "cat": {
-    "ko": "법률·보증",
-    "en": "Legal and guarantees"
+    "ko": "고객·공급망",
+    "en": "Customers and supply chain"
    },
    "body": {
-    "ko": "한수원 입찰 제한은 2년간 공공기관 입찰 참여를 막아 공공 수주 기회를 제한할 수 있다. 중국 계열사의 중정절차와 채무보증은 장부상 지급보증 부채 규모와 함께 점검 대상이다. 소송과 구조조정 진행은 공시로 추적할 수 있는 사항이다.",
-    "en": "KHNP's bidding restriction bars public-sector bids for two years and could limit public contract wins. The Chinese affiliate's restructuring and the guarantee exposure are part of the balance sheet review. Court and restructuring developments can be tracked through disclosures."
+    "ko": "호주 레드백 장갑차용 디젤엔진 공급이 2027년까지 순차 진행될 예정이며, 기술이전 패키지가 포함된 것으로 보도됐다. 해외 고객에 대한 인도 일정이 늦어지면 방산 매출의 인식 시점이 뒤로 밀릴 수 있다. 중국 NTS 조선소의 선박엔진 계약은 옵션 6척의 행사 여부에 따라 물량이 달라져 수주 규모에 불확실성이 남아 있다.",
+    "en": "Supply of diesel engines for Australian Redback armored vehicles is reported to proceed in stages through 2027, including a technology transfer package. If delivery schedules to overseas customers slip, the timing of defense revenue recognition could be pushed back. Whether the six optional ships under the NTS contract are exercised will change the volume of that order, leaving its size uncertain."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

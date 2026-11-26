@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "환율·재무 리스크",
-    "en": "FX and Financial Risk"
+    "ko": "고객 이탈 리스크",
+    "en": "Customer Attrition Risk"
    },
    "body": {
-    "ko": "원·달러 환율 변동은 판가 인상 효과를 상쇄할 수 있고, 3분기에 이미 그 영향이 나타났다. 부채비율이 2025년 말 33.4%로 올라간 만큼 재무 여력의 변화는 정기보고서 수치로 추적할 수 있다. 자회사 실적 변동이 연결 이익을 흔드는 구조라는 점도 함께 고려할 요인이다.",
-    "en": "Won-dollar fluctuations can offset the effect of price increases, as already seen in the third quarter. With the debt-to-equity ratio rising to 33.4% at the end of 2025, changes in financial capacity can be tracked through regular report figures. Subsidiary earnings swings that move consolidated profit are another factor to weigh."
+    "ko": "회사는 고객이 요청한 물량을 모두 배정하기 어려운 상황이 이어진다고 설명했다. 생산능력을 고객 확보와 투자 여력에 맞춰 단계적으로 늘리는 방침이어서, 배정을 기다리는 물량이 쌓이면 일부 고객이 Nexchip 등 다른 8인치 파운드리로 주문을 옮길 수 있다. 이 경우 가동률이 유지되더라도 장기 공급 계약과 판가 협상력이 약해질 수 있다.",
+    "en": "The company said it is difficult to allocate all the volume customers request. Because capacity will be added in stages in line with customer wins and investment capacity, customers left waiting for allocation could move some orders to other 8-inch foundries such as Nexchip. In that case, even with utilization maintained, long-term supply contracts and pricing leverage could weaken."
    }
   }
  ],
@@ -348,5 +348,6 @@
    "div": 0.99
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

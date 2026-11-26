@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무·자금조달",
-    "en": "Financing and balance sheet"
+    "ko": "신사업 실행",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "자본총계 축소와 부채비율 572.5%로 재무 여력이 좁다. 유상증자와 전환사채 계획이 철회되면서 운영자금 확보 경로가 불확실해졌다. 2026년 8월 이사회는 약 5억원 규모 제3자배정 유상증자를 결정했고, 조달 자금은 인건비와 운영비에 쓰일 예정이라고 밝혔다.",
-    "en": "Total equity of KRW 10.8 billion against a debt-to-equity ratio of 572.5 percent leaves limited financial room. With the rights offering and convertible bond plans withdrawn, the route to operating funds is less certain. In August 2026, the board approved a rights offering of about KRW 500 million, with proceeds allocated to personnel and other operating costs."
+    "ko": "국내외 신약개발 파이프라인을 발굴해 글로벌 제약사와 공동개발 또는 라이선스 아웃을 추진하는 바이오 플랫폼 구축은 알파스퀘어 기업 개요에 실린 계획 단계의 사업이다. 주력인 반도체 제조 장비와 기술 기반이 달라 파이프라인 발굴과 상대 제약사와의 계약 성사에 필요한 역량을 새로 쌓아야 한다. 영업적자가 이어지는 상황에서 계획이 지연되거나 계약이 성사되지 않으면 신규 사업의 손익 기여는 늦어지고 투입 비용만 남을 수 있다.",
+    "en": "The bio platform, which would discover drug development pipelines in Korea and abroad and pursue co-development or licensing out to global pharmaceutical companies, is a plan-stage business described in AlphaSquare's company profile. Because its technology base differs from the core semiconductor manufacturing equipment business, THE Codi would need to build new capabilities for pipeline discovery and for reaching partnership deals with pharmaceutical companies. If the plan is delayed or no contracts are signed while operating losses continue, the new business may contribute to profit late and leave only the costs incurred."
    }
   },
   {
    "cat": {
-    "ko": "수요·원가",
-    "en": "Demand and cost structure"
+    "ko": "양산·수주 실현",
+    "en": "Mass production and award realization"
    },
    "body": {
-    "ko": "가전과 전기차 시장의 수요 둔화가 2026년 상반기 매출 감소 요인으로 지목됐다. 고정비 부담이 큰 구조에서 매출이 줄면 영업손실이 확대되는 흐름이 2026년 1분기와 3분기에 나타났다. 원가율 상승이 더해지면 분기 적자 폭은 매출 회복 전까지 좁아지기 어렵다.",
-    "en": "Weaker demand in home appliance and electric vehicle markets was cited as a reason for lower sales in the first half of 2026. In a cost structure with high fixed costs, lower sales widened operating losses in the first and third quarters of 2026. If the cost ratio keeps rising, quarterly losses may not narrow until sales recover."
+    "ko": "미주 직공급 Micro Inverter는 본격 양산 단계에 들어섰고 한 고객사의 K3 프로젝트를 수주해 장기 물량을 확보했다고 WiseReport가 전했다. 다만 이 제품의 연간 매출 기여는 공시 수치로 확인되지 않아, 양산과 K3 물량이 실제 매출과 영업손익 개선으로 이어질지는 아직 불확실하다. 양산 초기에 고객 납품 일정이 계획과 어긋나면 수주 물량의 실현 시점이 늦어질 수 있다.",
+    "en": "WiseReport reports that the Micro Inverter for direct supply to North America has entered full-scale mass production and that a K3 project from one customer secured long-term volume. However, its contribution to annual sales cannot be confirmed from disclosed figures, so whether mass production and the K3 volume will translate into actual sales and an improvement in operating results remains uncertain. If delivery schedules to the customer slip from plan during the early stage of mass production, the timing of realizing the awarded volume could be delayed."
    }
   },
   {
@@ -347,5 +347,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

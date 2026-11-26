@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 반도체 업황",
-    "en": "Customer concentration and chip cycle"
+    "ko": "해외 매출과 환율",
+    "en": "Overseas sales and FX"
    },
    "body": {
-    "ko": "매출은 ALD 장비·소재 제조사 등 제한된 고객층에 의존하며, 이들의 투자 속도가 주문과 실적에 바로 반영된다. 3분기처럼 분기 실적이 한 번에 줄어드는 구간에서는 이익의 변동 폭이 커질 수 있다. 회사는 업황 조정에도 급격한 감소 가능성은 크지 않다고 밝히지만, 그 전제는 고객 투자 흐름에 달려 있다.",
-    "en": "Sales depend on a limited customer base of ALD equipment and materials makers, and their investment pace feeds directly into orders and results. Quarterly profit can swing sharply, as it did in Q3 2026. The company says a sharp decline is unlikely even with a chip cycle adjustment, but that view depends on customer investment flows."
+    "ko": "해외 매출은 2026년 1분기에 전년 동기 대비 21.5% 늘어 국내 매출 증가율 10.8%를 웃돌았다. 해외 매출 비중이 높아질수록 원화 환산 매출과 이익은 환율 변동의 영향을 받을 수 있다. 해외 수요가 유지되더라도 환율이 불리하게 움직이면 원화 기준 실적이 낮아질 수 있다. 분기별 이익 변동이 커진 상황에서는 이 요인이 실적 변동을 키우는 원인이 될 수 있다.",
+    "en": "Overseas sales rose 21.5% year on year in Q1 2026, outpacing the 10.8% growth in domestic sales. As the overseas share of sales rises, won-denominated sales and profit can be affected by exchange-rate movements. Even if overseas demand holds, an unfavorable currency move could lower results in won terms. In a period of larger quarterly profit swings, this factor could add to earnings volatility."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "지배구조와 유동성",
-    "en": "Governance and liquidity"
+    "ko": "주주환원 실행",
+    "en": "Shareholder return execution"
    },
    "body": {
-    "ko": "최대주주 등 지분이 70%를 넘고 유동주식비율이 28% 수준이어서 거래가 소수 물량에 좌우될 수 있다. 2026년 8월 기준 최근 3개월 이내 투자의견이 없었다는 점은 시장의 분석 범위가 좁다는 뜻이다. 자회사 인수 논란이 제기된 만큼 자본 배분에 대한 시장의 시선도 함께 살펴야 한다.",
-    "en": "The largest shareholder and related parties hold over 70%, and the free float is about 28%, so trading can be driven by a small number of shares. As of August 2026, no investment opinion had been issued in the prior three months, suggesting limited analyst coverage. Because the subsidiary acquisition has drawn debate, capital allocation decisions will also draw market attention."
+    "ko": "배당은 자본잉여금 25억원을 이익잉여금으로 전환해 재원을 마련하는 방식으로 준비됐다. 다만 배당의 최종 확정에는 주주총회 승인이 필요해, 승인이 이뤄지지 않으면 주주환원 계획이 예정대로 실행되지 않을 수 있다. 자본 전입으로 재원을 마련했더라도 분기 이익이 줄어드는 시기에는 배당 여력에 대한 판단이 더 엄격해질 수 있다.",
+    "en": "The dividend was prepared by transferring KRW 2.5 billion of capital surplus into retained earnings to secure funding. However, final dividend confirmation requires shareholder meeting approval, so if approval is not obtained, the shareholder return plan may not be carried out as scheduled. Even with funding secured through the capital surplus transfer, the assessment of dividend capacity could become stricter in periods when quarterly profit declines."
    }
   }
  ],
@@ -338,5 +338,6 @@
    "div": 1.06
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

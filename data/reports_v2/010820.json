@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무 구조와 현금흐름",
-    "en": "Balance sheet and cash flow"
+    "ko": "신사업 투자 회수 시차",
+    "en": "Timing of new-business returns"
    },
    "body": {
-    "ko": "부채비율은 2025년 말 388.8%로 2024년 450.4%보다 낮아졌지만 여전히 높은 수준이다. 영업활동 현금흐름의 마이너스 전환이 이어지면 운전자본 부담이 커질 수 있다. 사업 확장에 필요한 자금 조달 여력이 제약될 가능성도 함께 봐야 한다.",
-    "en": "The debt ratio fell to 388.8% at the end of 2025 from 450.4% in 2024 but remains high. If operating cash flow stays negative, working capital pressure could grow. Financing capacity for expansion could also be constrained."
+    "ko": "무인항공기와 도심항공모빌리티 사업은 개발·생산 투자가 확대되는 단계다. 투자 비용은 개발 기간 동안 먼저 발생하는 반면 매출 기여는 양산과 납품 이후에 나타나므로 시차가 생길 수 있다. 대형 국책사업의 일정이 바뀌면 이 시차가 길어져 이익 개선이 늦어질 수 있다. 매출 기여 시점이 밀리면 투자 확대의 효과가 실적에 반영되기까지 시간이 더 걸릴 수 있다.",
+    "en": "Unmanned aircraft and urban air mobility businesses are in a stage of expanding development and production investment. Investment costs arise first during the development period, while revenue contribution appears after mass production and delivery, so a time gap can emerge. If schedules of large state-led programs shift, this gap could lengthen and delay profit improvement. If the timing of revenue contribution slips, it may take longer for the effects of expanded investment to show in results."
    }
   },
   {
    "cat": {
-    "ko": "수급과 지정학 변동성",
-    "en": "Trading flows and geopolitical volatility"
+    "ko": "국방 예산 심의 변수",
+    "en": "Defense budget review risk"
    },
    "body": {
-    "ko": "중동 등 지정학 이슈에 따라 주가가 급등한 뒤 급락하는 패턴이 반복돼 왔다. 2026년 4월 투자경고종목 지정 이후에도 거래소는 추가 상승 시 재지정될 수 있다고 안내했다. 긴장이 완화되면 테마 수급이 빠져나갈 수 있다는 점이 리스크다.",
-    "en": "Share prices have repeatedly spiked and then fallen on Middle East geopolitical news. Even after the April 2026 investment-warning designation, the exchange has said re-designation is possible if prices rise further. If tensions ease, theme-driven buying could reverse quickly."
+    "ko": "2027년도 국방 예산안은 국회 심의를 거치며 방위력개선비 반영 규모가 정해진다. 2026년 방위력개선비의 증가 흐름이 2027년도 예산에서도 이어지는지에 따라 방산 부품 수요의 중기 방향이 달라질 수 있다. 예산 심의 과정에서 증액 폭이 줄거나 사업 우선순위가 조정되면 대형 국책사업의 발주 일정이 늦춰질 수 있다. 이는 퍼스텍의 부품 공급 물량과 수주 시점에 영향을 줄 수 있는 정책 변수다.",
+    "en": "The 2027 national defense budget will set the scale of defense improvement spending through National Assembly review. Whether the rise in 2026 defense improvement spending continues into the 2027 budget could change the medium-term direction of demand for defense components. If the budget increase is trimmed or program priorities are adjusted during review, order timing for large state-led programs could be delayed. This is a policy variable that could affect Firstec's component supply volumes and order timing."
    }
   },
   {
    "cat": {
-    "ko": "체계업체 수주 일정 의존",
-    "en": "Dependence on prime contractor order timing"
+    "ko": "매출 목표 달성 부담",
+    "en": "Pressure to meet the revenue target"
    },
    "body": {
-    "ko": "퍼스텍의 실적은 한화에어로스페이스, 현대로템, 한국항공우주 등 체계업체의 수주 물량에 따라 움직인다. 특정 사업의 일정이 늦어지면 분기 실적이 바로 흔들릴 수 있다. 2026년 3분기 영업이익 감소처럼 분기별 납품 시점 차이가 실적에 크게 반영될 수 있다.",
-    "en": "Firstec's results move with order volumes at prime contractors such as Hanwha Aerospace, Hyundai-Rotem and Korea Aerospace Industries. Delays in specific programs can quickly affect quarterly results. As the third-quarter 2026 decline shows, differences in delivery timing can weigh heavily on reported earnings."
+    "ko": "회사는 2026년 매출 4,000억원 돌파를 목표로 하고 있다. 2025년 매출 2,948억원 기준으로 35%를 넘는 성장이 필요한데, 2026년 1분기부터 3분기까지 분기 매출은 800억원 안팎에 머물러 있다. 목표를 맞추려면 4분기에 분기 매출이 크게 늘어야 하므로 납품과 매출 인식이 연말에 몰릴 수 있다. 목표에 미달하면 연간 성장 기대가 낮아질 수 있다.",
+    "en": "The company is aiming to lift 2026 revenue above KRW 400 billion. From KRW 294.8 billion in 2025, that requires growth of more than 35%, while quarterly revenue from the first to the third quarter of 2026 has stayed around KRW 80 billion. Meeting the target would require a sharp rise in fourth-quarter revenue, so deliveries and revenue recognition could concentrate at year-end. Missing the target could lower expectations for annual growth."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

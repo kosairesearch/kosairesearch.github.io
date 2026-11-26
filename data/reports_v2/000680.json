@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "소비 트렌드와 브랜드 리스크",
-    "en": "Consumer trend and brand risk"
+    "ko": "리브랜딩 실행 리스크",
+    "en": "Rebranding execution risk"
    },
    "body": {
-    "ko": "러닝·등산 수요가 늘어도 브랜드 매출이 줄어든 만큼, 수요 회복이 자동으로 실적으로 이어지지 않는다. 리브랜딩 효과가 매출에 반영되기까지 시간이 걸릴 수 있고, 신발·의류 수요가 꺾이면 재고 부담이 커질 수 있다.",
-    "en": "Brand revenue has declined even as running and hiking demand grew, so a demand recovery does not automatically translate into earnings. Rebranding may take time to show up in sales, and a slowdown in footwear and apparel demand could raise inventory burdens."
+    "ko": "전면적 리브랜딩이 젊은 소비층을 다시 끌어들이지 못하면 브랜드 부문의 감소세가 이어질 수 있다. 리브랜딩은 제품과 마케팅을 새로 짜는 투자 과정이어서, 효과가 매출로 나오기 전까지 비용이 먼저 늘 수 있다. PRO-SPECS와 mont-bell 두 브랜드를 함께 바꾸는 작업이 길어지면 기존 고객 이탈과 신규 고객 확보가 동시에 지연될 수 있다. 그만큼 브랜드 부문의 실적 회복 시점도 뒤로 밀릴 수 있다.",
+    "en": "If the full rebrand fails to win back younger consumers, the decline in the brand segment could continue. A rebrand requires reworking products and marketing, so costs may rise before the effects appear in sales. If the overhaul of both PRO-SPECS and mont-bell takes longer, losses of existing customers and the acquisition of new ones could be delayed together. The timing of a recovery in brand earnings could then slip further."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 레버리지와 현금흐름",
-    "en": "Leverage and cash flow"
+    "ko": "임대 공실과 임차인 유치",
+    "en": "Vacancy and tenant leasing risk"
    },
    "body": {
-    "ko": "부채 규모가 자본을 크게 웃돌고 영업활동 현금흐름이 연도별로 크게 달라, 차입 조건 변화나 운전자본 변동이 재무 부담으로 작용할 수 있다. 2024년과 2025년에 지배주주 순손실이 이어진 점도 재무 여력에 부담 요인이다.",
-    "en": "Liabilities far exceed equity, and operating cash flow has varied widely from year to year, so changes in borrowing terms or working capital could weigh on finances. Consecutive net losses attributable to controlling shareholders in 2024 and 2025 also add pressure on financial capacity."
+    "ko": "LS용산타워의 공실 해소와 신규 임차인 유치가 계획대로 이어지지 않으면 임대 수익이 줄어들 수 있다. 임대 부문은 연결 매출에서 비중이 커진 만큼, 임차인이 이탈하거나 신규 계약이 늦어지면 매출 구조 전체에 영향을 줄 수 있다. 계약 만기에 맞춘 재계약 과정에서도 수익이 흔들릴 수 있다. 공실이 다시 늘면 임대 부문이 금융 부문의 손익 변동을 완충하는 역할도 약해질 수 있다.",
+    "en": "If vacancy reduction and new tenant attraction at the LS Yongsan Tower do not proceed as planned, leasing income could decline. Because the leasing segment's share of consolidated revenue has grown, tenant departures or delayed new contracts could affect the overall revenue structure. Renewals at contract expiry could also make rental income less stable. If vacancies rise again, the leasing segment's ability to cushion swings in financial-unit earnings would weaken."
    }
   }
  ],
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

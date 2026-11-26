@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "재무 부담과 채권 회수",
-    "en": "Financial burden and receivable recovery"
+    "ko": "관계기업 투자 손상",
+    "en": "Associate investment impairment"
    },
    "body": {
-    "ko": "부채비율은 2025년 말 444.9%로 2022년의 163.1%보다 높다. 영업활동 현금흐름은 2023년과 2024년 마이너스였고 2025년 플러스로 돌아섰다. 미회수채권과 관계기업 투자 손상이 2025년 손실을 키운 만큼, 채권 회수 여부가 재무 리스크의 핵심이다.",
-    "en": "The debt ratio stood at 444.9% at the end of 2025, above the 163.1% recorded in 2022. Operating cash flow was negative in 2023 and 2024 before turning positive in 2025. Because impairments on uncollected receivables and on associate investments added to the 2025 loss, receivable recovery is central to the financial risk."
+    "ko": "회사는 2025년 순손실을 키운 요인으로 신재생 관련 관계기업 투자주식 손상을 들었다. 해당 관계기업의 사업 성과가 회복되지 않으면 투자 자산의 추가 손상이 이어질 수 있다. 이 손상이 분기 손익에 다시 반영되면 2026년 3분기까지 이어진 지배주주 순이익의 불안정성이 깊어질 수 있다. 관계기업 투자 자산의 회수 가능성은 손익 회복의 별도 변수로 남는다.",
+    "en": "The company cited impairment of investments in renewable-energy-related associates as a factor widening the 2025 net loss. If those associates' business performance does not recover, further impairment of the investment assets could follow. If such impairments are recognized in quarterly results again, the instability of net profit attributable to controlling shareholders seen through Q3 2026 could deepen. Recoverability of the associate investments therefore remains a separate variable for the earnings recovery."
    }
   },
   {
    "cat": {
-    "ko": "건설·플랜트 수주 공백",
-    "en": "Construction and plant order gap"
+    "ko": "경량화 방탄판 개발",
+    "en": "Lightweight armor plate development"
    },
    "body": {
-    "ko": "2026년 1분기 기업모니터 코멘트는 건설·플랜트 부문 수주 감소와 공사 지연을 매출 감소 요인으로 꼽았다. 2025년 신규 수주 감소도 매출 감소의 원인으로 회사가 설명했다. 원가 절감 효과가 이어지는지는 다음 분기 수주 흐름으로 가늠해야 한다.",
-    "en": "WiseReport's Q1 2026 commentary named lower construction and plant orders and project delays as reasons for the revenue decline. The company also cited lower new orders as a cause of the 2025 revenue decline. Whether the cost reduction effect continues will depend on order flow in coming quarters."
+    "ko": "WiseReport는 2026년 1분기 실적 코멘트에서 경량화 방탄판 개발과 방탄 분야 사업 확대를 언급했다. 경량화 제품이 방산 조달 요건을 충족하고 양산 납품으로 이어지는지는 아직 확인되지 않은 상태다. 개발 일정이 늦어지면 방산 매출이 기대 경로보다 늦게 잡힐 수 있다. 방탄 레벨4용 방탄판 납품 실적이 있더라도 신규 제품의 상용화 시점은 별도 변수다.",
+    "en": "WiseReport's Q1 2026 commentary mentioned development of lightweight armor plates and expansion of the ballistics business. Whether the lightweight products meet defense procurement requirements and move into mass-production supply has not yet been confirmed. If development schedules slip, defense revenue could be recognized later than expected. Even with Level 4 armor plate deliveries already made, the commercialization timing of new products remains a separate variable."
    }
   }
  ],
@@ -349,5 +349,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

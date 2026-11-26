@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "건설 경기와 지역 수요",
-    "en": "Construction cycle and regional demand"
+    "ko": "파일 매출 집중",
+    "en": "Pile sales concentration"
    },
    "body": {
-    "ko": "레미콘과 2차제품 수요는 건설 공사 물량에 연동된다. 회사의 주 시장이 광주광역시와 인근 권역에 집중돼 있어 지역 공사 물량 변화가 실적에 직접 반영될 수 있다. 2025년 상반기에도 건설경기 침체가 실적 악화의 배경으로 제시됐다.",
-    "en": "Demand for ready-mix and secondary concrete products follows construction volumes. The company's main market is concentrated in Gwangju and nearby areas, so changes in local construction activity can feed directly into results. A construction slowdown was cited as a cause of weaker results in the first half of 2025."
+    "ko": "2026년 1분기 흑자 전환은 파일 매출이 전체의 50.50%를 차지한 구조에 크게 기대고 있다. 파일 수요가 특정 공사 발주에 몰리거나 단가가 낮아지면 2차제품 성장세가 꺾여 흑자 기반이 약해질 수 있다. 파일 외 제품군의 매출 비중이 아직 작아 한 품목의 변동이 전사 손익에 직접 반영될 수 있다. 파일 매출 성장이 여러 분기 유지되는지가 이 위험의 확인 지점이다.",
+    "en": "In the first quarter of 2026, piles accounted for 50.50% of sales, so the profit turn rests heavily on a single product line. If pile demand concentrates in a few construction orders or unit prices fall, growth in secondary products could stall and weaken the earnings base. Because products outside piles make up a small share of sales, swings in one item can pass directly into consolidated results. Whether pile sales growth holds over several quarters is the point to monitor for this risk."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "신사업과 기술 변화",
-    "en": "New business and technology change"
+    "ko": "영업현금흐름 악화",
+    "en": "Operating cash flow pressure"
    },
    "body": {
-    "ko": "에너지솔루션 부문의 전기차 충전기 사업은 기술 변화가 빠른 분야다. 현재까지 뚜렷한 성과가 확인되지 않았다는 평가가 있어 투자 회수 시점이 불확실하다. 이 부문의 손익이 전사 실적에 주는 부담이 얼마나 되는지는 사업보고서의 부문 정보에서 확인할 필요가 있다.",
-    "en": "The EV charger business in the energy solutions segment operates in a field where technology changes quickly. One commentary says it has not yet produced clear results, so the timing of any return on investment is uncertain. How much this segment weighs on consolidated results should be checked in the segment information of the annual report."
+    "ko": "영업활동 현금흐름은 2024년 플러스에서 2025년 20.5억원 마이너스로 돌아섰다. 영업손실이 이어지는 동안 현금 유출이 계속되면 사업 조정에 쓸 수 있는 자금 여력이 줄어들 수 있다. 부채비율이 5.4%로 낮아 차입 여력은 남아 있으나, 그 여력을 얼마나 쓸지는 손익 회복 속도에 따라 달라질 수 있다. 2026년 분기별 현금흐름의 방향을 손익 추세와 함께 확인할 필요가 있다.",
+    "en": "Operating cash flow turned from positive in 2024 to negative KRW 2.05 billion in 2025. If cash outflows continue while operating losses persist, the funds available for business adjustment could shrink. The debt-to-equity ratio of 5.4% leaves room for borrowing, but how much of that room is used will depend on the pace of the profit recovery. The direction of quarterly cash flow in 2026 needs to be checked alongside the earnings trend."
    }
   }
  ],
@@ -340,5 +340,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

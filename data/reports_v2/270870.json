@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "제품 집중도",
-    "en": "Product concentration"
+    "ko": "해외 판로 실행",
+    "en": "Overseas channel execution"
    },
    "body": {
-    "ko": "에버콜라겐과 판도라 등 이너뷰티 제품군의 판매 부진이 2025년 실적 악화의 직접 원인으로 지목됐다. 단일 브랜드와 단일 제품군에 매출이 기대는 구조에서는 소비 트렌드가 바뀌면 실적 변동폭이 커진다. 신규 카테고리가 기존 제품의 매출 감소를 상쇄하는 속도가 리스크 관리의 핵심이다.",
-    "en": "Weak sales in the Ever Collagen and Pandora inner-beauty lines were cited as a direct cause of the 2025 earnings decline. When sales rely on one brand and one product line, shifts in consumer trends can move results sharply. How fast new categories offset declines in existing products is the core of managing this risk."
+    "ko": "에버콜라겐은 미국 아마존과 일본 큐텐에 입점해 해외 판매를 진행하며, 2~3년 안에 가시적인 성과를 내는 것을 목표로 제시됐다. 말레이시아 시장 공략도 병행되어 판로 확대 작업이 여러 곳에서 동시에 이뤄지고 있다. 해외 플랫폼 판매가 목표 시점까지 늘지 않으면 국내 매출 감소를 상쇄하지 못한 채 해외 비용만 쌓일 수 있다. 완제품과 원료 모두에서 해외 매출 비중이 기대만큼 오르지 않는다면 실적 회복 시점도 늦춰질 수 있다.",
+    "en": "Ever Collagen is sold overseas through listings on Amazon in the United States and Qoo10 in Japan, with visible results targeted within two to three years. Malaysia is being pursued in parallel, so market expansion is advancing on several fronts at once. If sales on overseas platforms do not grow by the target timing, the company may fail to offset domestic declines while overseas costs keep building. If the overseas share of both finished products and ingredients stays below expectations, the timing of an earnings recovery could also be pushed back."
    }
   },
   {
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

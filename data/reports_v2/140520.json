@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무 구조와 자본",
-    "en": "Balance sheet and capital structure"
+    "ko": "대형 현장 수요 집중",
+    "en": "Concentration on large project demand"
    },
    "body": {
-    "ko": "2025년 말 자본총계는 1,493억원이고 부채총계는 1,046억원이다. 부채비율은 2022년 43.8%에서 2025년 70.1%로 올랐다. 자본 규모가 이익 규모에 비해 크기 때문에 낮은 수익성이 장기간 이어지면 재무 여력이 줄어들 가능성이 있다.",
-    "en": "At year-end 2025, total equity was KRW 149.3 billion and total liabilities were KRW 104.6 billion. The debt-to-equity ratio rose from 43.8% in 2022 to 70.1% in 2025. Equity is large relative to profit, so prolonged low profitability could reduce financial flexibility."
+    "ko": "ACCESS FLOOR는 평택 주한미군 이전사업 등 대형 현장 수요와 연결돼 매출 규모가 커지고 있다. 고가형 이중바닥재 매출이 소수 대형 사업의 발주와 공사 일정에 묶여 있어, 사업 일정이 늦어지거나 축소되면 제품 판매가 예상보다 줄어들 수 있다. 신규 건설과 리모델링 수요가 이를 대체하지 못하면 제품별 매출 구성과 가공 물량이 함께 흔들릴 수 있다.",
+    "en": "ACCESS FLOOR sales are growing on the back of large project demand, including the Pyeongtaek US military relocation project. Sales of this high-end double-floor product depend on the ordering and construction schedules of a few large projects. If those projects slip or shrink and new construction and remodeling demand does not fill the gap, product sales could fall short of expectations and processing volumes could fluctuate."
    }
   },
   {
@@ -338,5 +338,6 @@
    "div": 7.69
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

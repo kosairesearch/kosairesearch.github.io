@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율과 외화환산손실",
-    "en": "Currency and translation losses"
+    "ko": "증설 자금과 계열 대여",
+    "en": "Expansion funding and intercompany loans"
    },
    "body": {
-    "ko": "베트남 법인에 대한 대여금은 달러로 집행되어 환율 변동에 따른 외화환산손실이 발생할 수 있다. 2026년 3분기에도 환율 급락으로 외화환산손실이 커지며 지배주주 순이익이 급감했다. 증설에 따라 대여금 규모가 늘면 같은 구조의 변동성도 커질 수 있다.",
-    "en": "Loans to the Vietnam subsidiary are denominated in dollars, so currency moves can create translation losses. In Q3 2026 a sharp fall in the won increased such losses and sharply reduced net profit attributable to controlling shareholders. If loan balances grow with expansion, the same volatility could increase."
+    "ko": "베트남 증설은 회사가 종속회사 휴엠앤씨 Vina에 제공하는 대여금에 기대 추진된다. 기존 대여금 510만 달러의 만기를 연장하고 70만 달러를 신규 대여하기로 했으며, 자금은 설비 고도화와 증설에 쓰일 계획이다. 집행 시기가 늦어지거나 증설 공정이 계획보다 지연되면 신규 거래처의 물량 공급 대응이 늦어져 매출 확대 효과가 다음 정기보고서에 반영되지 않을 수 있다. 대여금 잔액이 늘어난 만큼 종속회사의 상환 능력과 회수 시점도 함께 살펴볼 필요가 있다.",
+    "en": "Vietnam expansion relies on loans the company provides to its subsidiary HuM&C Vina. The company extended the maturity of the existing USD 5.1 million loan and agreed to a new USD 700,000 loan, with funds planned for facility upgrades and expansion. If funds are disbursed later than planned or construction is delayed, the response to supply demand from new customers could slow, and the sales effect may not appear in the next annual report. As loan balances grow, the subsidiary's repayment capacity and timing of collection also warrant review."
    }
   },
   {
@@ -347,5 +347,6 @@
    "div": 7.62
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

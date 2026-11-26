@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원료·물류 비용",
-    "en": "Feedstock and Logistics Costs"
+    "ko": "고부가 전환 실행",
+    "en": "High-Value Mix Execution"
    },
    "body": {
-    "ko": "프로판은 베트남 PDH 설비의 핵심 원료이며, 프로판 가격이 오르는데 PP 판매가격에 반영하지 못하면 스프레드가 줄어든다. 2026년 3분기에는 물류비 상승으로 생산원가가 올랐다. 원료 조달가격과 제품 판매가격의 차이가 수익성을 좌우하는 구조라 두 변수가 동시에 움직이면 이익률이 낮아질 수 있다.",
-    "en": "Propane is the key feedstock for the Vietnam PDH unit. If propane prices rise and PP selling prices cannot follow, the spread narrows. Production costs rose in 3Q 2026 because of higher logistics expenses. Because the gap between feedstock cost and selling price determines profitability, margins could fall if both move against the company at once."
+    "ko": "회사는 고부가 제품 비중을 2026년 54.5%, 2030년 75%까지 높이겠다는 계획을 밝혔다. 이 목표가 늦어지면 PP 스프레드를 방어할 수단이 약해져 범용 제품 가격 변동에 대한 노출이 그대로 남는다. 고부가 제품의 판매처 확보와 베트남 법인의 생산 배분이 함께 맞아야 하므로, 진행 속도는 설비 운영에 따라 달라질 수 있다.",
+    "en": "The company plans to raise the high-value product share to 54.5% in 2026 and 75% by 2030. If this target is delayed, its means of defending PP spreads weakens and exposure to commodity-grade price swings remains. Securing buyers for high-value products and allocating production at the Vietnam subsidiary must proceed together, so the pace may depend on plant operations."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

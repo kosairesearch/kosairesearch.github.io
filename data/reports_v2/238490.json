@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "재무 유동성 리스크",
-    "en": "Financial liquidity risk"
+    "ko": "신사업 실행 리스크",
+    "en": "New business execution risk"
    },
    "body": {
-    "ko": "2025년 영업활동 현금흐름은 -145억원이었고 부채비율은 53.3%다. 2025년 말 부채총계는 310억원이다. 적자가 이어지면 현금 소진 속도와 차입 여력이 다음 확인 항목이 된다.",
-    "en": "Operating cash flow was an outflow of KRW 14.5 billion in 2025, and the debt ratio is 53.3%. Total liabilities at the end of 2025 were KRW 31 billion. If losses continue, the pace of cash burn and borrowing capacity become the next items to check."
+    "ko": "반도체 후공정 검사 설비와 마이크로 LED 관련 장비는 회사가 OLED 외 사업 축으로 개발을 추진하는 품목이다. 이 장비들이 수주와 매출로 이어지지 않으면 OLED 의존도를 낮추지 못하고 개발 비용만 영업손실에 남을 수 있다. 고객 검증과 양산 전환이 늦어지면 신사업이 실적을 받치기까지 시간이 더 걸릴 수 있다.",
+    "en": "Semiconductor back-end inspection equipment and micro LED-related tools are product lines the company is developing as routes beyond OLED. If these tools do not convert into orders and revenue, the company may not reduce its reliance on OLED, and development costs alone could remain in operating losses. If customer qualification and the move to volume production are delayed, the new business may take longer to support earnings."
    }
   },
   {
    "cat": {
-    "ko": "분기 실적 변동성",
-    "en": "Quarterly earnings volatility"
+    "ko": "수주 공백 리스크",
+    "en": "Order gap risk"
    },
    "body": {
-    "ko": "2026년 2분기 매출은 전 분기 대비 40.4% 줄었고, 3분기에는 전년 동기 대비 35.2% 줄었다. 분기 매출이 수주 시점에 따라 크게 움직이는 구조라 실적 예측 가시성이 낮다. 손실 폭도 분기마다 2.5억원에서 72.8억원까지 달라졌다.",
-    "en": "Second-quarter 2026 sales fell 40.4% from the prior quarter, and third-quarter sales fell 35.2% year on year. Because quarterly revenue moves with order timing, earnings visibility is limited. The operating loss has ranged from KRW 249 million to KRW 7.28 billion across the last five quarters."
+    "ko": "2026년 3월 공시된 반도체 장비 계약은 계약 기간이 2026년 5월 31일까지였다. 이후 OLED와 반도체 장비의 추가 수주 공시가 이어지지 않으면 다음 분기 매출을 뒷받침할 근거가 약해질 수 있다. 수주 시점에 따라 분기 매출이 크게 움직이는 구조라 수주 공백은 분기 실적의 방향을 바꿀 수 있다. 계약 종료 이후 수주 흐름을 어떻게 이어가는지가 다음 분기 실적의 핵심 변수가 된다.",
+    "en": "The semiconductor equipment contract disclosed in March 2026 ran through May 31, 2026. If no further OLED or semiconductor equipment order disclosures follow, the revenue basis for the following quarters could weaken. Because quarterly revenue moves with order timing, a gap in orders could change the direction of quarterly results. How the company keeps orders flowing after that contract ends will be the key variable for next-quarter results."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

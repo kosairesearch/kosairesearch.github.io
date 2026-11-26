@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "매출처 편중",
-    "en": "Customer concentration"
+    "ko": "개발·양산 전환 지연",
+    "en": "Delay in development-to-mass-production"
    },
    "body": {
-    "ko": "매출의 70% 이상을 단일 거래처에 의존하는 구조라 해당 고객의 발주 변동이 실적에 직접 반영된다. 회사는 에릭슨 등 신규 고객 확보로 이를 줄이겠다고 밝혔으나 확정 수주는 아직 없다. 2026년 2분기 매출이 전 분기 대비 20.2% 줄어든 데서 보듯 분기 매출의 변동폭도 크다.",
-    "en": "Because more than 70% of sales depend on one customer, order changes from that customer flow directly into results. The company says it will reduce this dependence by adding customers such as Ericsson, but no firm orders have been announced. Quarterly sales volatility is also large, as the 20.2% quarter-on-quarter drop in the second quarter of 2026 shows."
+    "ko": "5G 기지국 안테나·필터 사업은 개발 과제를 고객사 검증·승인을 거쳐 양산 물량으로 연결해야 매출이 된다. 이 절차가 늦어지면 2027년 228억원 목표 달성 시점이 뒤로 밀릴 수 있다. 2026년 신사업 투자 136억원은 승인 이전에 먼저 집행되므로, 전환이 지연되는 동안 투자 부담이 누적될 수 있다. 승인 일정은 회사가 직접 통제하기 어려운 변수다.",
+    "en": "In the 5G base-station antenna and filter business, sales arise only when development projects pass customer validation and approval and convert into mass-production orders. If this process is delayed, the timing of reaching the KRW 22.8 billion RF communication sales target for 2027 could slip. The KRW 13.6 billion of new-business spending planned for 2026 would be executed before approval, so the investment burden could build up while conversion is delayed. The approval timeline is a variable the company cannot fully control."
    }
   },
   {
@@ -360,5 +360,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

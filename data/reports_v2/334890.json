@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "금리와 자금조달 비용",
-    "en": "Interest rates and funding costs"
+    "ko": "판교 R&D센터 편입 실행",
+    "en": "Pangyo R&D center integration"
    },
    "body": {
-    "ko": "부동산 리츠는 차입과 조달에 의존하는 구조라 금리 상승은 이자 비용을 늘리고 배당 여력을 줄인다. 신규 자산 출자나 차환 과정에서 부대비용이 발생하면 단기 영업이익이 흔들릴 수 있다. 2026년 8월 결산 부채비율 45.1%는 2025년 8월 결산의 52.2%보다 낮지만 부채 규모 자체는 2,013억원이다.",
-    "en": "Because a property REIT relies on borrowing and fundraising, higher rates raise interest costs and reduce distributable capacity. Transaction costs from new asset contributions or refinancing can cause short-term swings in operating profit. The debt ratio of 45.1% in the year ended August 2026 is lower than 52.2% a year earlier, but total liabilities remain KRW 201.3 billion."
+    "ko": "회사는 2025년 초 보도된 약 4,000억원 규모의 삼성중공업 판교 R&D센터 투자에 나섰다. 이 자산의 편입과 수익 기여가 확인되지 않으면 영업이익 개선 효과가 지연될 수 있다. 편입 자산의 임대 조건과 공실 여부에 따라 임대 수익의 안정성이 달라질 수 있다. 편입 시점과 수익 기여 규모에 따라 향후 분기 실적 흐름이 달라질 수 있다.",
+    "en": "The company moved to invest about KRW 400 billion in a Samsung Heavy Industries R&D center in Pangyo, as reported in early 2025. If the asset's inclusion in the portfolio and its contribution to earnings are not confirmed, the expected improvement in operating profit could be delayed. Rent terms and vacancy at the added asset will determine the stability of rental income. The timing of inclusion and the scale of the earnings contribution could change the earnings trend in coming quarters."
    }
   },
   {
    "cat": {
-    "ko": "자산 평가손익 변동",
-    "en": "Volatility from asset valuation"
+    "ko": "배당 재원 현금흐름",
+    "en": "Cash flow funding dividends"
    },
    "body": {
-    "ko": "이 리츠의 영업이익은 부동산 관련 증권의 재구조화 평가이익에 크게 좌우된 사례가 있다. 평가이익이 줄거나 손실로 바뀌면 영업이익과 지배주주 순이익이 급격히 달라질 수 있다. 2024년 8월 결산의 순손실이 그 예다.",
-    "en": "Operating profit at this REIT has in the past depended heavily on valuation gains from restructuring real estate-related securities. If such gains shrink or turn into losses, operating profit and net profit attributable to controlling shareholders can change sharply. The net loss in the year ended August 2024 is an example."
+    "ko": "분기 배당의 재원은 영업활동 현금흐름과 이익 흐름에 연결되어 있다. 2026년 8월 결산 영업활동 현금흐름 86.5억원은 지배주주 순이익을 웃돌았지만, 평가손익처럼 현금이 아닌 항목의 영향을 함께 봐야 한다. 현금흐름이 줄어들면 배당 재원이 좁아져 배당 지급 여력이 낮아질 수 있다.",
+    "en": "Dividends are paid quarterly and their funding is tied to operating cash flow and earnings. Operating cash flow of KRW 8.65 billion in the year ended August 2026 exceeded net profit attributable to controlling shareholders, but non-cash items such as valuation gains must also be considered. If cash flow declines, the funding available for dividends could narrow and distribution capacity could fall."
    }
   },
   {
@@ -318,5 +318,6 @@
   },
   "fy_end_month": 8
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "유동성·자금 조달",
-    "en": "Liquidity and funding"
+    "ko": "국내 약가·처방 정책",
+    "en": "Domestic drug pricing and prescribing policy"
    },
    "body": {
-    "ko": "영업활동 현금 유출이 이어지는 상태에서 차입과 전환사채에 자금 조달을 의존하는 구조다. 전환 가능 주식 수가 많아 오버행 우려가 제기됐다. 최근 4개 분기 지배주주 순손실 합계 737억원이 자기자본 감소로 이어지는 점도 주의 지점이다.",
-    "en": "With operating cash outflows continuing, the company relies on borrowing and convertible bonds for funding. The large number of convertible shares has raised overhang concerns. The four-quarter attributable net loss total of KRW 73.7 billion is reducing equity."
+    "ko": "제약 매출은 국내 처방 시장에 주로 기대고 있으며, 소화기관용약과 순환계용약의 내수 비중은 2025년 기준 각각 95% 이상이다. 건강보험 약가 조정이나 처방 정책이 바뀌면 제품 판매 단가와 거래처 확대 속도에 직접 영향을 줄 수 있다. 제네릭 중심 사업에서 가격 인하가 이어지면 매출 회복 흐름이 둔화될 수 있다. 제약 부문의 정책 민감도는 회사 매출 구조에서 주요 변수다.",
+    "en": "Pharmaceutical sales depend mainly on the domestic prescription market, where gastrointestinal and cardiovascular drugs each had domestic shares above 95% in 2025. Changes in national health insurance drug pricing or prescribing policy could directly affect unit selling prices and the pace of customer expansion. If price cuts continue in a generics-focused business, the recovery in revenue could slow. The policy sensitivity of pharmaceutical sales is a key variable in the company's revenue structure."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "지배구조·그룹 내부 자금",
-    "en": "Governance and intragroup funding"
+    "ko": "종속회사 편입 사업의 원가",
+    "en": "Subsidiary cost pressure"
    },
    "body": {
-    "ko": "최대주주 차입금에 대한 자산 담보 제공과 계열회사 인수 방식의 전환사채 구조는 그룹 내부 자금 흐름에 따라 회사 재무 부담이 달라질 수 있음을 뜻한다. 계열 간 거래 조건이 바뀌는지가 주요 변수다.",
-    "en": "Asset collateral for borrowings from the largest shareholder and a convertible bond placed with an affiliate mean the company's financial burden depends on intragroup funding flows. Changes in terms of transactions with affiliates are a key variable."
+    "ko": "종속회사 편입으로 2025년 매출이 늘었지만, 회사는 매출원가 증가를 영업손실 확대 요인으로 제시했다. 편입 사업의 원가 부담이 이어지면 연결 기준 영업손실 축소 속도가 늦어질 수 있다. 종속회사의 수주와 생산 실적이 기대에 못 미치면 연결 매출 증가분이 일회성에 그칠 수 있다. 종속회사의 실적과 원가율 변화는 연결 손익의 주요 변수다.",
+    "en": "Consolidating a subsidiary lifted 2025 revenue, but the company cited higher cost of sales as a driver of the wider operating loss. If cost pressure from the consolidated business persists, the pace at which the operating loss narrows could slow. If the subsidiary's orders and output fall short, the revenue gain from consolidation may prove one-off. Subsidiary performance and cost ratios are key variables for consolidated profit and loss."
    }
   }
  ],
@@ -347,5 +347,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

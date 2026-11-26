@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "사업 집중 리스크",
-    "en": "Concentration risk"
+    "ko": "기업금융 신용 리스크",
+    "en": "Corporate finance credit risk"
    },
    "body": {
-    "ko": "렌탈 부문과 도매·소매 항목에 매출이 집중돼 있다. 2023년과 2024년 매출 변동이 이 항목에서 발생했으며, 특정 거래나 계약 구조가 바뀌면 매출 전체가 크게 움직일 수 있다. 사업 다변화 수준은 사업보고서의 부문 공시로 확인해야 한다.",
-    "en": "Revenue is concentrated in the Rental segment and the wholesale and retail line. The 2023 and 2024 swings originated there, so a change in specific contracts or transaction structures could move total revenue sharply. The degree of diversification should be checked against segment disclosures in the annual report."
+    "ko": "기업금융 부문은 회사채를 사들이고 대출을 제공해 자금을 운용하는 구조다. 발행사나 차주의 상환 능력이 떨어지면 이자수익이 줄고 대손 비용이 늘어날 수 있다. 이 부문은 세 부문 가운데 규모가 가장 작지만, 개별 거래처의 상환 문제는 부문 실적에 곧바로 반영된다. 회사채와 대출 잔액의 관리 상황은 사업보고서의 자산 관련 공시로 가늠할 수 있다.",
+    "en": "The Corporate Finance segment deploys funds by buying corporate bonds and providing loans. If issuers or borrowers become less able to repay, interest income could fall and bad-debt expenses could rise. Although this is the smallest of the three segments, repayment problems with individual counterparties would flow directly into segment results. The management of bond and loan balances can be gauged from the asset disclosures in the annual report."
    }
   },
   {
    "cat": {
-    "ko": "마진 하락 리스크",
-    "en": "Margin compression risk"
+    "ko": "현금흐름 지속성 리스크",
+    "en": "Cash flow sustainability risk"
    },
    "body": {
-    "ko": "영업이익률은 2024년 32.9%, 2025년 34.9%로 높지만, 2026년 3분기에는 매출이 늘고 영업이익이 줄어 마진이 낮아졌다. 높은 마진 구조가 이어질지는 분기 흐름에 달려 있다. 2026년 1분기에는 영업이익이 전 분기 대비 31.7% 줄어 저점을 찍은 바 있다.",
-    "en": "The operating margin was high at 32.9% in 2024 and 34.9% in 2025, but in the third quarter of 2026 revenue rose while operating profit fell, which narrowed the margin. Whether the high-margin structure holds depends on quarterly trends. Operating profit fell 31.7% from the fourth quarter of 2025 to the first quarter of 2026, reaching the period low."
+    "ko": "2025년 영업활동 현금흐름은 173억원으로 순이익을 크게 웃돌았다. 이 차이가 일회성 요인에서 왔는지, 반복될 흐름인지에 따라 2026년 이후 현금 창출력에 대한 해석이 달라질 수 있다. 현금흐름이 이 수준을 이어가지 못하면 배당 등 주주환원에 쓸 수 있는 여력도 줄어들 수 있다. 추이는 2026년 사업보고서의 현금흐름표로 확인할 수 있다.",
+    "en": "Operating cash flow in 2025 was KRW 17.3 billion, well above net profit. Whether this gap came from one-off factors or a recurring pattern will shape how cash generation after 2026 is read. If cash flow does not stay near this level, room for shareholder returns such as dividends could narrow. The trend can be traced in the cash flow statement of the FY2026 annual report."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 5.78
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

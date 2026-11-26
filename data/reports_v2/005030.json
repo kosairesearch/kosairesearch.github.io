@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 적격성 리스크",
-    "en": "Listing Eligibility Risk"
+    "ko": "지배구조 변동 리스크",
+    "en": "Governance Change Risk"
    },
    "body": {
-    "ko": "2025년 11월 상장폐지 결정 이후에도 거래정지가 이어지고 있어 정리매매나 상장 유지 여부에 대한 최종 절차가 마무리되지 않은 것으로 파악된다. 관련 이의신청이나 가처분 절차의 결과에 따라 주주가 실제로 주식을 매도할 수 있는 시점과 가격이 크게 달라질 수 있다. 투자자는 회사 실적보다 이 절차의 진행 상황을 우선적으로 확인할 필요가 있다.",
-    "en": "Even after the November 2025 delisting decision, the trading halt has continued, indicating the final procedure for a clearance sale or continued listing has not concluded. Depending on the outcome of any objection or injunction process, the timing and price at which shareholders can actually sell shares could vary significantly. Investors should prioritize monitoring the progress of this procedure over the company's operating results."
+    "ko": "최대주주가 2025년 하반기 장세훈 외 4인 체제로 변경된 이후 재무구조 개선과 사업 재편을 주도할 주체와 의사결정 방향이 아직 명확히 드러나지 않았다. 자본잠식 해소나 부지 매각 등 주요 계획의 추진 속도는 새 경영진의 자금 조달 방식과 우선순위에 따라 달라질 수 있다. 경영권 관련 추가 변동이 생기면 자금 조달과 상장 대응 계획의 연속성이 흔들릴 수 있다.",
+    "en": "Since the controlling shareholder changed in the second half of 2025 to a group led by an individual and four others, the party leading balance-sheet repair and business restructuring, and the direction of its decision-making, have not yet been clearly established. The pace of key plans such as resolving capital impairment or selling the industrial site may depend on the financing approach and priorities of the new management. Any further change in management control could disrupt the continuity of funding and listing response plans."
    }
   },
   {
    "cat": {
-    "ko": "재무 건전성 리스크",
-    "en": "Financial Solvency Risk"
+    "ko": "고객 발주 구조 리스크",
+    "en": "Customer Order Dependence Risk"
    },
    "body": {
-    "ko": "2사업연도 연속 자본잠식 50% 이상과 부채비율 1,000%를 웃도는 재무구조는 추가 자본 확충이나 채무조정이 지연될 경우 계속기업 가정에 부담을 줄 수 있다. 영업활동현금흐름도 2023~2025년 3년 연속 순유출을 기록해 자체 현금창출력이 취약한 상태다. 이런 구조에서는 예정된 자산 매각이나 증자가 지연될 경우 유동성 리스크가 커질 수 있다.",
-    "en": "A financial structure marked by capital impairment above 50% for two consecutive fiscal years and a debt-to-equity ratio exceeding 1,000% could strain the going-concern assumption if further capital raising or debt restructuring is delayed. Operating cash flow also posted net outflows for three consecutive years from 2023 through 2025, indicating weak internal cash generation. Under this structure, delays in planned asset sales or capital increases could heighten liquidity risk."
+    "ko": "회사는 국내외 완성차 업체와 1차 부품업체를 주요 고객으로 하는 단일 사업 구조이므로, 고객사의 생산 계획과 발주 조정이 매출에 곧바로 반영되는 구조다. 완성차 업계의 차종 개편이나 생산 물량 조정이 발생하면 주물 부품 주문량이 예상과 다르게 변할 수 있다. 사업 부문이 자동차 부품 하나로 집중돼 있어 특정 고객사의 발주 변동이 전체 실적 흐름에 미치는 영향이 클 수 있다.",
+    "en": "Because the company operates a single automotive parts segment and supplies domestic and overseas automakers and Tier-1 parts suppliers, changes in customer production plans and order adjustments flow directly into revenue. Model changes or production volume adjustments at automakers could shift casting component orders from expected levels. With the business concentrated in one segment, order fluctuations from specific customers could have a large effect on overall results."
    }
   },
   {
@@ -348,5 +348,6 @@
    "dps": 0.0,
    "div": 0.0
   }
- }
+ },
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 · 업황 집중",
-    "en": "Customer and industry concentration"
+    "ko": "고객사 구성 변화",
+    "en": "Shifts in customer mix"
    },
    "body": {
-    "ko": "LCD 사업은 2026년 1분기 매출의 44.8%를 차지해 디스플레이 패널 수요와 발주 변동의 영향을 크게 받는다. 대표는 LCD를 성숙 산업이라고 표현했고, 고객 구성에서는 LG전자와 중국 고객사 비중 변화가 함께 거론된다. 특정 고객의 발주 변화가 분기 실적에 바로 반영되는 구조다.",
-    "en": "LCD accounted for 44.8% of revenue in the first quarter of 2026, so the business is highly exposed to display panel demand and order swings. The CEO described LCD as a mature industry, and shifts in the share of LG Electronics and Chinese customers are part of the customer mix. Order changes from a single customer can flow directly into quarterly results."
+    "ko": "LG전자 내 폼 패드 점유율 1위 회복과 중국 고객사 비중 확대는 회사가 기대하는 LCD 사업 성장의 전제다. 두 고객사의 점유율과 발주 방향이 예상과 달리 움직이면 특정 고객 의존도가 유지되거나 커질 수 있다. 중국 고객사 비중이 늘어나면 고객 구성의 지역 쏠림도 함께 커질 수 있다. 이 변화가 분기 매출 증가세에 어떻게 반영되는지가 고객 구조의 실제 영향이다.",
+    "en": "Recovering the number one foam pad share at LG Electronics and growing the Chinese customer share are premises for the growth the company expects in its LCD business. If the share and order direction at these two customers move differently from expectations, dependence on specific customers could persist or increase. A larger Chinese customer share could also heighten regional concentration in the customer mix. How this shift is reflected in quarterly revenue growth is the practical impact of the change in customer structure."
    }
   },
   {
    "cat": {
-    "ko": "재무 · 손익 변동성",
-    "en": "Financial and earnings volatility"
+    "ko": "2차전지 소재 상용화",
+    "en": "Secondary battery commercialization"
    },
    "body": {
-    "ko": "2025년 말 부채비율은 232.8%이고 최근 네 개 분기 지배주주 순이익 합계는 6.3억원이다. 2026년 3분기 순손실의 원인으로 제시된 일시적 평가손실이 다음 분기에도 반복되면 손익 개선 흐름이 흔들릴 수 있다. 영업이익이 흑자여도 순손익이 적자인 구조는 아직 해소되지 않았다.",
-    "en": "The debt ratio was 232.8% at the end of 2025, and net profit attributable to controlling shareholders for the last four quarters totaled KRW 627 million. If the temporary valuation loss cited for the third quarter of 2026 recurs, the earnings recovery could be disrupted. The gap in which operating profit is positive while net results are negative has not yet been resolved."
+    "ko": "화염지연 점착 소재는 특허를 등록했지만 고객사 테스트가 진행 중이며, 회사는 상용화를 목표로 하고 있다. 테스트 결과에 따라 상용화 시점이 늦어지거나 채택 범위가 제한될 수 있다. 에너지 사업은 회사 스스로 초기 단계라고 설명한 만큼 매출 기여는 당분간 제한적일 수 있다. 이 사업이 자리 잡지 못하면 LCD·OLED 중심 구조의 변화 폭도 좁아진다.",
+    "en": "Although the flame-retardant adhesive material has been patented, it is still in customer testing, and the company aims to commercialize it. Depending on test results, commercialization could be delayed or the scope of adoption could be limited. The company itself describes the energy business as early-stage, so its revenue contribution may remain limited for some time. If this business does not take hold, the shift away from the LCD- and OLED-centered structure will stay narrow."
    }
   },
   {
@@ -346,5 +346,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

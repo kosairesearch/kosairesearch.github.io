@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중",
-    "en": "Customer concentration"
+    "ko": "신규 솔루션 확대 실행",
+    "en": "Execution of solution expansion"
    },
    "body": {
-    "ko": "SK텔레콤 계약은 계약금액이 2025년 매출의 48.7% 수준이어서 한 고객에 대한 의존도가 높아지는 구조다. 계약 이행, 가격 조건, 재계약 시점에 따라 매출 흐름이 크게 달라질 수 있다. 계약 기간이 2033년까지 길어 중간에 조건이 변경되는지도 공시로 확인해야 한다.",
-    "en": "The SK Telecom contract equals about 48.7% of 2025 revenue, so dependence on a single customer would rise. Revenue could change materially depending on contract execution, pricing terms and renewal timing. Because the contract runs through 2033, any mid-term changes to its terms would need to be checked in disclosures."
+    "ko": "회사는 클라우드 기반 AICC 인프라와 xtrmVOB, 스마트팩토리 솔루션의 적용 범위를 넓히고 있다. 이 확대에는 인프라 구축과 인력 투입이 먼저 필요해, 수요가 기대만큼 붙지 않으면 투입 비용을 매출로 회수하는 시점이 늦어질 수 있다. 석유화학, 반도체, 조선 등 신규 산업의 레퍼런스 확보 속도가 IT 솔루션 부문 성장의 지속성을 좌우한다.",
+    "en": "The company is widening the application of its cloud-based AICC infrastructure, the xtrmVOB solution and smart factory solutions. This expansion requires infrastructure build-out and staffing up front, so if demand does not materialize as expected, the recovery of invested costs through revenue could be delayed. The speed at which it secures references in new industries such as petrochemicals, semiconductors and shipbuilding will determine whether growth in the IT solutions segment can be sustained."
    }
   },
   {
    "cat": {
-    "ko": "수익성과 원가 부담",
-    "en": "Profitability and cost pressure"
+    "ko": "대형 SI 업체 수주 경쟁",
+    "en": "Competition with large SI firms"
    },
    "body": {
-    "ko": "2026년 상반기 기업 코멘트는 컨택센터 부문에서 매출이 늘었지만 비용 증가로 수익성이 낮아졌다고 짚었다. 영업이익률이 3%대 중반 이하에서 정체된 상태라 원가 상승이 이익에 직접 영향을 준다. 매출 증가가 이익 개선으로 이어지지 않는 구간이 이어지면 이익 회복의 폭이 제한될 수 있다.",
-    "en": "A first-half 2026 company commentary noted that contact center revenue grew while higher costs lowered profitability. With the operating margin stuck at around 3.7% or below, cost increases feed directly into profit. If revenue growth keeps failing to lift profit, the room for earnings recovery could stay limited."
+    "ko": "IT서비스 부문은 삼성에스디에스, LG CNS, 현대오토에버, 포스코DX 같은 대형 시스템통합 기업과 비교되며, 회사는 이들과 규모 차이가 큰 중소형 구간에 속한다. 대형 경쟁사가 대규모 프로젝트 수주를 넓힐 경우 중소형 사업자인 회사의 수주 경쟁과 가격 조건이 불리해질 수 있다. 이는 IT 솔루션 및 ITO 부문의 매출 성장과 이익률에 영향을 줄 수 있다.",
+    "en": "The IT services business is compared with large system integrators such as Samsung SDS, LG CNS, Hyundai Autoever and POSCO DX, and the company sits in a small-to-mid-cap range far smaller than these peers. If the larger competitors widen their pursuit of large projects, the company's bidding competition and pricing terms as a smaller player could turn less favorable. That could weigh on revenue growth and margins in the IT solutions and ITO segments."
    }
   },
   {
    "cat": {
-    "ko": "재무 구조와 유통 주식",
-    "en": "Balance sheet and free float"
+    "ko": "배당 목표 이행 부담",
+    "en": "Strain from dividend target"
    },
    "body": {
-    "ko": "2025년 말 부채비율이 160.0%로 올라 재무 부담이 늘었다. 최대주주 조현준 외 1인이 68.30%를 보유하고 자사주도 4.50%(2026년 10월 6일 기준)여서 시장에서 거래되는 주식 비중이 크지 않다. 이 구조는 주가가 거래량 변화에 민감하게 반응하는 요인이 될 수 있다.",
-    "en": "The debt ratio rose to 160.0% at the end of 2025, increasing the financial burden. The largest shareholder and one other person hold 68.30%, and treasury shares account for 4.50% as of October 6, 2026, so the share of stock available for trading is limited. This structure could make the stock more sensitive to changes in trading volume."
+    "ko": "회사는 2026 사업연도 배당성향 50% 이상 유지를 목표로 제시했고, 이 기준은 2025년 지배주주 순이익 155억원과 최근 4개 분기 합계 141억원 수준의 이익을 바탕으로 한다. 분기 영업이익이 줄어드는 구간이 이어지면 이 목표를 지키기 위해 이익 감소분을 현금으로 메워야 할 수 있다. 무거워진 재무 구조와 겹치면 투자나 사업 실행에 쓸 자금의 여력이 줄어드는 요인이 될 수 있다.",
+    "en": "The company set a target to keep the 2026 fiscal-year payout ratio at 50% or higher, a standard based on net income attributable to controlling shareholders of KRW 15.5 billion in 2025 and KRW 14.1 billion over the last four quarters. If quarterly operating profit keeps declining, maintaining that target could require cash to cover the shortfall in earnings. Combined with a heavier financial structure, this could reduce the funds available for investment and business execution."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 6.57
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

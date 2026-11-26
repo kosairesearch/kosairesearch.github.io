@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "정책·금리 리스크",
-    "en": "Policy and interest rate risk"
+    "ko": "오프라인 매장 재편 리스크",
+    "en": "Offline store restructuring risk"
    },
    "body": {
-    "ko": "대출 규제와 세제 강화, 고금리가 주택 매매 거래를 누르는 구조가 이어지면 B2C 리하우스 수요와 B2B 특판 발주가 함께 위축될 수 있다. 미래에셋증권은 다주택자 양도세 중과 유예 종료가 거래를 떠받칠 것으로 봤지만, 이는 정책 변화에 따라 달라지는 전제다.",
-    "en": "If lending curbs, tax tightening and high rates keep suppressing housing sales, both B2C Rehouse demand and B2B contract orders could weaken together. Mirae Asset Securities saw the expiry of the multi-home surcharge supporting transactions, but that assumption depends on policy changes."
+    "ko": "오프라인은 비효율 매장을 정리하고 주요 상권 중심으로 재편하는 중이다. 매장 축소 과정에서 지역 고객의 구매가 남은 매장이나 온라인으로 옮겨가지 않으면 오프라인 매출이 예상보다 크게 빠질 수 있다. 한샘몰은 자체 브랜드 중심으로 개편된 만큼, 두 채널 사이에서 매출이 얼마나 빠르게 옮겨가는지가 전체 외형에 영향을 줄 수 있다.",
+    "en": "The company is closing inefficient offline stores and concentrating on key commercial districts. If customers in closed areas do not shift their purchases to remaining stores or online, offline sales could fall more than expected. With Hanssem Mall reorganized around its own brands, how quickly sales move between the two channels could affect total revenue."
    }
   },
   {
    "cat": {
-    "ko": "원가·비용 리스크",
-    "en": "Cost and expense risk"
+    "ko": "4분기 이월 수요 전환 리스크",
+    "en": "Fourth-quarter demand carryover risk"
    },
    "body": {
-    "ko": "중동발 원부자재 가격과 운임 상승, 고환율이 이어지면 벤더 단가 인상 압박이 마진을 깎을 수 있다. 회사는 2026년 8월 하반기에도 주택 경기 불확실성과 원자재·운임비 인상 등 대외 불안 요소가 이어질 것으로 보고 있다고 밝혔다.",
-    "en": "If Middle East-linked raw material prices, freight costs and a strong exchange rate persist, vendor price increases could compress margins. In August 2026 the company said housing uncertainty and rising raw material and freight costs would continue into the second half."
+    "ko": "회사는 3분기에서 이월된 소비 수요를 쌤페스타와 신학기 학생방 기획전으로 4분기 매출에 연결하겠다고 밝혔다. 이월 수요가 기대만큼 흡수되지 않으면 4분기 매출은 3분기에 이어 줄어드는 흐름이 계속될 수 있다. 4분기 영업이익의 회복 폭과 합병 시너지가 처음 반영되는 시점도 이 전환 속도에 따라 달라질 수 있다.",
+    "en": "The company said it will convert demand shifted from the third quarter into fourth-quarter sales through the Ssam Festa promotion and a new-school-year student room campaign. If the carryover demand is not absorbed as expected, fourth-quarter sales could keep falling as they did in the third quarter. The size of the profit recovery and the timing of the first merger synergies could also depend on how quickly this shift takes place."
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

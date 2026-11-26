@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "임상·규제 일정",
-    "en": "Clinical and regulatory timing"
+    "ko": "판관비 절감 되돌림",
+    "en": "Reversal of SG&A savings"
    },
    "body": {
-    "ko": "NP-201의 후속 개발은 기술 도입 기업의 결정에 달려 있고, 리제노타이드는 미국 임상 2상 진입 전 단계다. 비임상 결과가 실제 환자에서 재현되는지는 임상을 통해서만 확인할 수 있어 개발 일정이 늦어질 수 있다. 치과 재생소재의 해외 허가도 국가별 심사 기간에 따라 매출 시점이 달라진다.",
-    "en": "Follow-on development of NP-201 depends on the licensee's decisions, and Regenotide is still before its US Phase 2 trial. Whether preclinical results hold in patients can only be tested in clinical studies, so development timelines could slip. Overseas approvals for dental regenerative materials also vary by country review periods, which shifts the timing of sales."
+    "ko": "2026년 1분기 흑자는 판매비와 관리비가 전년 동기보다 약 35% 줄어든 효과가 컸다. 이 절감이 일시적인 비용 조정이었다면 판관비가 다시 늘어날 때 본업의 분기 영업이익이 손실로 돌아설 수 있다. 본업 매출이 분기마다 크게 움직이는 상황에서 고정비 부담까지 커지면 흑자 유지가 어려워질 수 있다. 이후 판관비 추이가 본업 이익 회복을 가늠하는 기준이 된다.",
+    "en": "The 1Q 2026 profit relied heavily on a roughly 35% drop in selling, general and administrative expenses. If that reduction was a temporary cost adjustment, a rebound in SG&A could push quarterly operating results back into a loss. With core business revenue moving sharply from quarter to quarter, higher fixed costs could make it harder to sustain profitability. SG&A trends after 4Q 2026 will serve as a benchmark for judging whether core profit can recover."
    }
   },
   {
    "cat": {
-    "ko": "기술이전 수익의 일회성",
-    "en": "One-off nature of licensing income"
+    "ko": "환율에 따른 원화 환산 변동",
+    "en": "Exchange-rate translation effect"
    },
    "body": {
-    "ko": "2025년 흑자는 2025년 2분기에 반영된 선급금에 따른 것이다. 마일스톤과 로열티는 임상과 상업화 진행에 달려 있어 반복성이 낮다. 분기 실적이 기술이전 시점에 따라 크게 움직이는 구조라 분기 손익을 단순 비교하기 어렵다.",
-    "en": "The 2025 profit reflects an upfront payment recognized in 2Q 2025. Milestones and royalties depend on clinical and commercial progress, so their recurrence is limited. Because quarterly results move sharply with licensing timing, quarter-to-quarter profit comparisons are difficult."
+    "ko": "기술이전 계약 금액은 달러로 정해져 있어 원화 환산 규모가 환율에 따라 달라질 수 있다. 계약금 약 800만달러가 약 109억원으로 반영된 것처럼 마일스톤과 로열티를 원화로 옮기는 과정에서 환율 영향이 생긴다. 해외 판매 매출도 외화 결제 비중이 있다면 같은 영향을 받을 수 있다. 이에 따라 마일스톤이 인식되는 분기의 원화 실적이 계약 금액보다 작거나 크게 보일 수 있다.",
+    "en": "Licensing terms are set in US dollars, so the won-denominated value of milestones and royalties can change with the exchange rate. The upfront payment of about US$8 million was recognized as about KRW 10.9 billion, showing that the won value moves with the rate at booking. Overseas product sales could face the same effect if a share is settled in foreign currency. As a result, won-based results in the quarter a milestone is recognized could look larger or smaller than the contract amount."
    }
   },
   {
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

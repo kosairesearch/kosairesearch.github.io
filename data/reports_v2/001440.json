@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무·현금흐름 리스크",
-    "en": "Financial and cash flow risk"
+    "ko": "증설 일정 리스크",
+    "en": "Capacity expansion timing risk"
    },
    "body": {
-    "ko": "2025년에는 부채비율이 올랐고 영업활동 현금흐름도 마이너스였다. 수주가 늘수록 원재료 구매와 생산에 자금이 먼저 나가므로 수주 확대가 현금 창출로 이어지는지가 관건이다. 차입과 설비 투자가 동시에 진행되면 이익이 나와도 재무 부담이 남을 수 있다.",
-    "en": "In 2025, the debt-to-equity ratio rose and operating cash flow was negative. As orders grow, cash goes out first for raw materials and production, so whether order growth turns into cash generation is the key question. If borrowing and facility spending run together, the financial burden can persist even when profits improve."
+    "ko": "당진 해저케이블 2공장은 2027년 준공과 640kV급 HVDC 생산 개시를 목표로 하고 있다. 생산 능력이 현재의 약 5배로 늘어나야 수주잔고 3조 8,273억원의 매출 전환 속도가 빨라지는 구조다. 준공이 지연되거나 설비 가동 시점이 늦어지면 대형 프로젝트의 공정 일정과 매출 인식 시기가 함께 밀릴 수 있다.",
+    "en": "The Dangjin No. 2 submarine cable plant is scheduled for completion in 2027 and the start of 640kV HVDC production. Raising capacity to about five times the current level is the condition for converting the KRW 3.83 trillion backlog into sales more quickly. If completion is delayed or equipment starts up later than planned, project schedules and the timing of revenue recognition could slip together."
    }
   },
   {
    "cat": {
-    "ko": "법적·지배구조 리스크",
-    "en": "Legal and governance risk"
+    "ko": "대형 발주 일정 리스크",
+    "en": "Large-project tender timing risk"
    },
    "body": {
-    "ko": "해저케이블 기술유출 수사와 주요 주주 지분 블록딜이 단기 변수로 꼽혔다. 블록딜은 주식 수급을 흔들 수 있어 주가 변동성의 원인이 될 수 있다. 수사 결과와 지분 거래 일정은 공시를 통해 확인해야 하는 사안이다.",
-    "en": "The technology leak investigation into submarine cable and a block sale by a major shareholder were flagged as short-term variables. A block sale can move the supply and demand of shares and add to share price volatility. The outcome of the investigation and the timing of the share transaction should be tracked through disclosures."
+    "ko": "한국전력은 새만금~서화성 HVDC 사업을 2030년까지 완료하는 계획으로, 2026년 기본설계를 마친 뒤 2027년 초 해저케이블 공사를 발주할 방침이다. 대한전선은 이 발주를 포함한 서해안 에너지 고속도로 사업을 공략 대상으로 두고 있다. 발주 시점이 늦어지거나 경쟁에서 수주하지 못하면 2공장 가동 이후의 생산 물량을 채울 대형 프로젝트가 줄어들 수 있다.",
+    "en": "KEPCO plans to complete the Saemangeum to Seohwaseong HVDC project by 2030, finish basic design in 2026 and tender the submarine cable work in early 2027. Taihan Cable & Solution is targeting this project and the wider West Coast Energy Highway. If the tender slips or the company fails to win it, the large projects needed to fill output after the No. 2 plant starts could shrink."
    }
   },
   {
    "cat": {
-    "ko": "이익 변동성과 원자재·경쟁 리스크",
-    "en": "Earnings volatility, raw materials and competition"
+    "ko": "포설선 운용 리스크",
+    "en": "Installation vessel operation risk"
    },
    "body": {
-    "ko": "영업이익은 2026년 3분기 309억원으로 전 분기 대비 49.3% 줄었고, 지배주주 순손익은 분기마다 방향이 바뀌었다. 구리 가격은 매출을 키우지만 원가 부담을 함께 키운다. LS 계열과의 수주 경쟁이 심해지면 마진 개선 속도가 늦어질 수 있다.",
-    "en": "Operating profit fell to KRW 30.9 billion in the third quarter of 2026, down 49.3% from the prior quarter, and the direction of net results attributable to controlling shareholders changed from quarter to quarter. Copper prices lift revenue but also raise cost pressure. If bidding competition with the LS Group intensifies, margin improvement could slow."
+    "ko": "시공 역량은 팔로스(적재량 4,400t)와 대한커넥터(7,000t) 두 척에 의존한다. 회사는 이 두 척으로 국내 유일의 해상풍력용 CLV 선대를 운용하고 있다고 밝혔다. 한 척이 정비나 운항 차질로 가동하지 못하면 해저케이블 포설과 시공 일정이 늦어져 프로젝트 준공과 매출 인식이 지연될 수 있다.",
+    "en": "Installation capacity depends on two vessels, PALOS with a 4,400-tonne cable capacity and Taihan Connector with 7,000 tonnes. The company said the two form the only offshore wind CLV fleet in Korea. If one vessel cannot operate due to maintenance or voyage disruption, submarine cable laying and installation schedules could slip, delaying project completion and revenue recognition."
    }
   }
  ],
@@ -361,5 +361,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "환율·금융자산 평가 손익",
-    "en": "Foreign exchange and fair-value swings"
+    "ko": "AI ISP 상용화 지연",
+    "en": "AI ISP commercialisation delay"
    },
    "body": {
-    "ko": "2026년 3분기 순손실은 환차손과 금융자산 평가손실 반영이 원인으로 제시됐다. 영업이익이 개선되더라도 비영업 손익 변동으로 순이익이 줄 수 있다. 영업이익과 순이익의 차이를 분기마다 함께 확인해야 하는 이유다.",
-    "en": "The Q3 2026 net loss was attributed to foreign exchange losses and fair-value losses on financial assets. Net income can fall even when operating profit improves, because non-operating items can swing. Checking the gap between operating profit and net income each quarter is therefore necessary."
+    "ko": "회사는 AI ISP 상용화를 기술 측면의 추진 과제로 두고 있으나, 상용화 일정이 늦어지면 NPU와 함께 제품군을 넓히려던 라이선스 확대 계획이 지연될 수 있다. AI ISP는 영상 신호를 처리하는 IP로, 고객사 칩 설계에 채택되기까지 검증 기간이 필요하다. 채택이 늦어지면 신규 라이선스 매출과 이후의 로열티 기여가 함께 늦춰질 수 있다.",
+    "en": "The company plans to commercialise AI ISP as a technology priority. If commercialisation slips, the expansion of licence revenue from the product line alongside the NPU could be delayed. AI ISP is an image-signal-processing IP that requires validation before customers adopt it in their chip designs. A delay in adoption would push back both new licence revenue and later royalty contributions."
    }
   },
   {
    "cat": {
-    "ko": "표준 전환과 개발비 부담",
-    "en": "Standards transition and development cost"
+    "ko": "모빌리티 분야 적용 확대",
+    "en": "Expansion into mobility applications"
    },
    "body": {
-    "ko": "APV·AV2 등 차세대 표준으로 넘어가는 과정에서 IP 수요 구조가 바뀔 수 있다. NPU와 AI ISP 개발에 연구개발비가 계속 투입되는데, 개발 성과가 로열티로 연결되지 못하면 비용 부담이 이어진다. 개발 투자와 로열티 회수 사이의 시차가 길수록 이익 회복이 늦어진다.",
-    "en": "The IP demand structure could shift as the industry moves to next-generation standards such as APV and AV2. Ongoing R&D into NPU and AI ISP products adds cost, and if development does not convert into royalties, the burden persists. The longer the lag between development spending and royalty collection, the slower the earnings recovery."
+    "ko": "회사는 자율주행차·로보틱스·드론 등 모빌리티 분야로 고객 기반을 넓히고 있으며, 카메라·로봇·드론 분야의 적용 범위 확대를 계획하고 있다. 이 분야는 차량용 기능안전 요건을 맞춘 IP가 필요해 고객사의 설계 검증 기간이 길다. 적용 확대가 계획보다 느리면 모빌리티 라이선스·로열티 매출의 성장 속도가 제한될 수 있다.",
+    "en": "The company is widening its customer base into autonomous driving, robotics and drones, and plans to extend its application into cameras, robots and drones. These fields require IP that meets automotive functional-safety requirements, so customers' design verification takes time. If application expansion proceeds more slowly than planned, the growth of mobility licence and royalty revenue could be constrained."
    }
   }
  ],
@@ -359,5 +359,6 @@
    "div": 0.93
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

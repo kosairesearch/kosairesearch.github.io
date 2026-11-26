@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "금융자산 평가손익",
-    "en": "Fair-value swings in financial assets"
+    "ko": "매출원가 개선 지속성",
+    "en": "Sustainability of cost-of-sales gains"
    },
    "body": {
-    "ko": "2025년 잠정 공시에서 회사는 금융자산 평가이익 감소를 손익 변동 요인으로 제시했다. 평가손익은 영업 성과와 별개로 움직여 순이익의 변동성을 키운다. 2025년 4분기에는 영업이익이 전 분기 대비 13.0% 줄었는데 지배주주 순이익은 55.8% 줄어, 두 지표의 차이가 컸다. 영업이익 흐름과 순이익 흐름을 나눠 봐야 하는 이유다.",
-    "en": "In its preliminary 2025 disclosure, the company cited a smaller gain from fair-value changes in financial assets as a factor in profit changes. Fair-value gains and losses move apart from operating performance and widen the volatility of net profit. In the fourth quarter of 2025, operating profit fell 13.0% from the prior quarter while profit attributable to controlling shareholders fell 55.8%, a wide gap between the two measures. This is why operating and net profit trends should be read separately."
+    "ko": "2025년 잠정 공시에서 회사는 매출원가 감소를 손익 개선의 주요 요인으로 제시했다. 이 감소가 운영 구조 변화에서 나온 것인지 일회성 요인인지는 가려내야 할 사안이다. 매출원가 부담이 다시 늘면 영업이익률이 2025년 수준에서 낮아질 수 있으며, 매출이 줄고 있는 상황에서는 같은 원가 증가도 이익에 더 크게 닿는다. 2026년 연간 잠정 실적에서 원가 흐름이 이익률에 어떻게 반영되는지가 확인 대상이다.",
+    "en": "In its preliminary 2025 disclosure, the company cited lower cost of sales as a main driver of profit improvement. Whether this decline came from a change in operating structure or from a one-off factor remains to be determined. If cost-of-sales burdens rise again, the operating margin could fall from its 2025 level, and with revenue declining, the same cost increase would weigh more heavily on profit. How the cost trend feeds into the operating margin in the 2026 preliminary annual results is the point to confirm."
    }
   },
   {
    "cat": {
-    "ko": "신사업·해외 관계사",
-    "en": "New ventures and overseas affiliates"
+    "ko": "정부 인증 사업 지정",
+    "en": "Government certification designation"
    },
    "body": {
-    "ko": "2024년 12월 기준 독일 법인 여러 곳과 AI 관련 법인을 포함한 6개 관계사를 두고 있다. 신사업 투자가 늘면 현금 사용과 손익 부담이 함께 커질 수 있다. 관계사의 매출과 손익은 공시 실적 표에 분리돼 있지 않아 본업과 구분해 보기 어렵다. 투자 규모와 회수 시점이 공시로 드러나기 전까지는 리스크의 크기를 가늠하기 어렵다.",
-    "en": "As of December 2024, the company had six affiliates, including several German entities and an AI-related company. If spending on new ventures rises, cash use and earnings burden could both increase. Affiliate revenue and profit are not separated in the earnings table, which makes them hard to distinguish from the core business. Until investment scale and recovery timing appear in disclosures, the size of this risk is difficult to gauge."
+    "ko": "2022년 7월 정부 웹보안인증서 발급 사업자로 선정된 점은 회사가 공공 인증 영역에서 맡은 사업 중 하나다. 지정 조건이나 정책 방향이 바뀌면 이 발급 사업의 매출 기반이 영향을 받을 수 있다. 정책 변화가 실적에 닿는 규모와 시점은 정책 발표와 정기보고서로 확인해야 한다.",
+    "en": "The selection in July 2022 as a government web security certificate issuer places the company in a public certification role. If the conditions of that designation or the policy direction changes, the revenue base of this issuance business could be affected. The scale and timing of any impact on earnings should be confirmed through policy announcements and periodic reports."
    }
   }
  ],
@@ -334,5 +334,6 @@
    "div": 3.1
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

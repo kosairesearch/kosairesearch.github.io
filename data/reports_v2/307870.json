@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무 · 희석 리스크",
-    "en": "Financing and Dilution Risk"
+    "ko": "의료·응급케어 실행 리스크",
+    "en": "Medical and Emergency Care Execution Risk"
    },
    "body": {
-    "ko": "2025년 영업활동 현금흐름 유출이 56.9억원으로 커진 상태에서 운영자금 확보를 위해 전환사채를 발행한다. 조달 자금 가운데 85억원은 운영자금, 15억원은 채무상환자금이다. 2026년 1월에는 자기전환사채 매도 결정을 상호 합의로 철회한 이력도 있어 자금 조달 계획의 안정성이 점검 대상이다.",
-    "en": "Operating cash outflow reached KRW 5.69 billion in 2025, and the company is now issuing convertible bonds to secure operating funds. Of the proceeds, KRW 8.5 billion goes to operating funds and KRW 1.5 billion to debt repayment. In January 2026 the company also withdrew a decision to sell treasury convertible bonds by mutual agreement, so the stability of its funding plans is an item to watch."
+    "ko": "중앙보훈병원 AI 기반 디지털 전환 사업 컨소시엄에 참여해 원스톱 응급대응 시스템을 구축하고, 실버케어에서 응급케어로 사업 범위를 넓히고 있다. 응급대응 시스템은 병원 현장 운영과 맞물려 구축 완료 시점과 운영 단계 이행이 컨소시엄 내 역할 분담에 따라 달라질 수 있다. 의료·돌봄 분야에서 회사의 데이터 품질·거버넌스 제품과 맞물리는 범위는 아직 구체화되지 않은 상태다. 매출 규모와 수익성이 확정되지 않아 의료 사업의 실적 기여 시점이 늦어질 수 있다.",
+    "en": "B2En has joined an AI-based digital transformation consortium at Central Veterans Hospital to build a one-stop emergency response system and is extending its scope from silver care to emergency care. Because the system is tied to on-site hospital operations, the timing of completion and the move into operations may depend on how roles are divided within the consortium. The extent to which the medical and care business connects with the company's data quality and governance products has not yet been defined. With revenue scale and profitability not yet set, the medical business may contribute to earnings later than expected."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "현금 창출력과 재무 여력",
-    "en": "Cash Generation and Financial Capacity"
+    "ko": "고정비 절감의 지속성",
+    "en": "Sustainability of Cost Cuts"
    },
    "body": {
-    "ko": "영업활동 현금흐름은 2025년 -158억원으로 마이너스 전환됐다. 부채비율은 2022년 57.5%에서 2025년 73.1%로 올랐다. 연결 현금및현금성자산 규모가 작아, 영업손실이 이어질 경우 재무 여력이 좁아질 수 있다.",
-    "en": "Operating cash flow turned to minus KRW 15.8 billion in 2025. The debt ratio rose from 57.5% in 2022 to 73.1% in 2025. With cash and cash equivalents at a modest level, continued operating losses could narrow financial flexibility."
+    "ko": "2025년 판매비와관리비는 386억원으로 2024년보다 줄었지만 매출총이익은 187억원으로 소폭 늘었을 뿐이다. 영업손실 축소가 비용 절감에 기대는 구조여서, 부품 물량이나 제품사업 구성이 바뀌어 매출총이익이 줄면 손실 축소 흐름이 멈출 수 있다. 2026 사업보고서에서 매출총이익과 판매비와관리비의 추이를 함께 확인해야 한다.",
+    "en": "Selling and administrative expenses fell to KRW 38.6 billion in 2025 from KRW 48.8 billion in 2024, but gross profit rose only slightly to KRW 18.7 billion from KRW 18.3 billion. Because the narrowing of the operating loss relies largely on cost reduction, a decline in parts volumes or a shift in the product mix could halt the trend if gross profit falls. Gross profit and selling and administrative expense trends should be checked together in the 2026 annual report."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

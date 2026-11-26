@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "원재료 공급 차질",
+    "en": "Raw-material supply disruption"
    },
    "body": {
-    "ko": "분기 매출은 2025년 3분기 126억원에서 2026년 2분기 164억원, 3분기 108억원으로 폭이 컸다. 분기 영업이익도 14.9억원에서 39.6억원, 다시 13억원으로 움직여 단기 실적 해석이 어렵다. 이익 규모가 작아 분기 변동이 비율로 크게 나타나는 구조다.",
-    "en": "Quarterly revenue swung from KRW 12.6 billion in the third quarter of 2025 to KRW 16.4 billion in the second quarter of 2026 and KRW 10.8 billion in the third. Quarterly operating profit moved from KRW 1.49 billion to KRW 3.96 billion and back to KRW 1.3 billion, which makes short-term reading difficult."
+    "ko": "기초소재 공급 여건은 분기 실적을 흔든 원인으로 작동해 왔다. 기초소재 공급이 다시 빠듯해지면 원재료 조달 비용과 생산 일정에 부담이 생겨 매출원가가 높아질 수 있다. 이는 조선선재의 제품 생산이 원재료 공급 안정에 기대고 있다는 뜻이다. 공급 차질이 생산 일정을 늦추면 분기 매출이 잡히는 시점도 함께 바뀔 수 있다.",
+    "en": "Raw-material conditions have driven quarterly swings in results. If base-material supply tightens again, procurement costs and production schedules could come under pressure and raise cost of sales. This means Chosun Welding's output relies on a steady supply of raw materials. If supply disruption delays production, the timing of quarterly revenue recognition could also shift."
    }
   },
   {
    "cat": {
-    "ko": "영업 외 손익과 순손익",
-    "en": "Non-operating items and net income"
+    "ko": "일본 법인 고객 수요",
+    "en": "Japanese subsidiary customer demand"
    },
    "body": {
-    "ko": "2024년에는 영업이익이 줄었는데 순이익이 늘었고, 2026년 3분기에는 영업이익 흑자에도 순손실이 났다. 영업 아래 단계의 손익 변동이 순이익을 크게 좌우한 시기가 두 차례 나타났다. 순이익 추세를 영업이익만으로 읽기 어려운 이유다.",
-    "en": "In 2024 operating profit fell while net income rose, and in the third quarter of 2026 operating profit was positive yet the company posted a net loss. Below-operating-profit items drove net income on two occasions. Net income trends cannot be read from operating profit alone."
+    "ko": "일본 현지 법인 CHOSUNWELDING JAPAN은 일본 고객에게 제품을 공급하는 창구 역할을 한다. 일본 고객사의 발주 시점이나 물량이 바뀌면 이 법인을 통한 판매가 영향을 받을 수 있다. 일본 수요는 조선·건설·자동차 흐름과 별개로 움직일 수 있어 국내 수요 판단과 엇갈릴 수 있다. 해외 판매 경로의 수요 변화는 회사 전체 매출 흐름에 추가 변수로 작용할 수 있다.",
+    "en": "The Japanese local subsidiary, CHOSUNWELDING JAPAN, serves as the channel for supplying products to Japanese customers. If the timing or volume of orders from Japanese customers changes, sales through this subsidiary could be affected. Japanese demand can move apart from the shipbuilding, construction and auto cycles, and may diverge from domestic demand signals. Demand shifts in the overseas sales channel could add another variable to total company revenue."
    }
   },
   {
    "cat": {
-    "ko": "업황·수주 리스크",
-    "en": "Cycle and order risk"
+    "ko": "자동차 부문 수요",
+    "en": "Automotive-sector demand"
    },
    "body": {
-    "ko": "국내 조선 수주량은 2025년 950만CGT로 줄었고 2026년에도 900만CGT 내외가 예상된다. 수주 공백이 이어지면 중기 실적 악화가 불가피하다는 우려가 제기된다. 건설 경기 장기 침체도 과거 매출 감소 요인으로 작용한 전례가 있다.",
-    "en": "Korean shipbuilding orders were projected at about 9.5 million CGT in 2025 and around 9 million CGT in 2026. Concern persists that a prolonged gap in orders could weigh on medium-term earnings. A prolonged construction slump has also reduced sales in the past."
+    "ko": "조선선재의 수요는 자동차 생산에도 걸쳐 있어 자동차 부문의 주문 흐름이 매출 구성에 영향을 준다. 자동차 생산이 조선이나 건설과 다른 방향으로 움직이면 제품별 판매 비중이 달라질 수 있다. 특정 산업 수요가 약할 때 다른 산업 수요가 이를 메워 주는지가 분기 실적의 안정성을 좌우한다. 자동차 부문 수요 변화는 용접재료 주문 물량 구성에 직접 닿는 사안이다.",
+    "en": "Chosun Welding's demand also spans automotive production, so order flow from the auto sector affects the revenue mix. If auto output moves in a different direction from shipbuilding or construction, the sales mix by product could shift. Whether other industries offset weakness in one sector will determine how stable quarterly results remain. Changes in auto-sector demand bear directly on the mix of welding consumables orders."
    }
   }
  ],
@@ -347,5 +347,6 @@
    "div": 0.72
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

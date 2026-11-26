@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "단일 브랜드 의존",
-    "en": "Single-brand dependence"
+    "ko": "온라인 채널 실행 리스크",
+    "en": "Online channel execution risk"
    },
    "body": {
-    "ko": "실적의 대부분이 스노우피크 어패럴에서 나오는 구조라 브랜드 인지도나 상품 반응이 약해지면 매출과 이익이 함께 흔들릴 수 있다. 의류 부문 매출 비중이 약 95.8%라는 점이 이 구조의 크기를 보여준다. 신제품 컬렉션의 판매 속도와 재고 관리가 분기 실적에 바로 반영된다.",
-    "en": "Most earnings come from Snow Peak Apparel, so weaker brand appeal or product response could hit revenue and profit together. Apparel's share of about 95.8% of revenue shows how large this exposure is. Sell-through of new collections and inventory management feed directly into quarterly results."
+    "ko": "회사는 공식 자사몰의 UI·UX를 개편하고 주요 패션 플랫폼과 협업 마케팅을 진행해 온·오프라인 채널 시너지를 높이겠다는 계획이다. 자사몰 개편 효과가 기대에 못 미치거나 플랫폼 협업의 판매 전환이 약하면 온라인 판매 증가가 둔화될 수 있다. 온라인 판매 비중이 늘면 마케팅 비용과 재고 운용이 분기 이익률에 미치는 영향도 커질 수 있다.",
+    "en": "The company plans to revamp the UI and UX of its official online store and run co-marketing with major fashion platforms to strengthen synergy between online and offline channels. If the store revamp fails to lift conversion or platform collaborations deliver weaker sales, online growth could slow. As online sales take a larger share, marketing spend and inventory management could also weigh more on quarterly margins."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "계절성과 소비 둔화",
-    "en": "Seasonality and consumption slowdown"
+    "ko": "주주환원 계획 이행",
+    "en": "Shareholder return plan delivery"
    },
    "body": {
-    "ko": "아우터 성수기인 4분기에 이익이 집중되는 구조라 겨울 기온이나 판매 시기의 변화가 연간 실적을 크게 움직일 수 있다. 국내 패션 업계의 소비 둔화 우려가 이어지는 가운데 이익률 유지가 과제다. 2026년 1~3분기 영업이익 감소가 4분기에 회복되는지가 핵심 변수다.",
-    "en": "Profit concentrates in the fourth-quarter outerwear season, so shifts in winter temperatures or selling timing can move full-year results sharply. Margin maintenance is a challenge while concerns about slowing fashion consumption persist. Whether the operating profit decline seen from the first to the third quarter of 2026 reverses in the fourth quarter is the central variable."
+    "ko": "3개년 기업가치 제고 계획은 직전 사업연도 당기순이익의 50% 이상을 주주에게 환원하는 것을 전제로 한다. 2026년 지배주주 순이익이 분기별로 줄고 있어 그 결과를 기준으로 한 환원 규모도 이익 흐름에 따라 달라질 수 있다. 배당 확대와 자사주 소각을 함께 이어가는 계획이므로 이익이 줄어드는 가운데 환원 수준을 유지할 수 있을지가 과제로 남는다.",
+    "en": "The three-year value-up plan rests on returning at least 50% of the prior fiscal year's net income to shareholders. With controlling-shareholder net income declining for three quarters in 2026, the return amount set on the 2026 result could move with that profit trend. Because dividend increases and share cancellations are to continue together, whether the company can hold its return level while profit falls remains an open question."
    }
   }
  ],
@@ -338,5 +338,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

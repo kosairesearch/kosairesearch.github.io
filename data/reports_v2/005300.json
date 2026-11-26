@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료·물류비·유가",
-    "en": "Raw materials, logistics and oil prices"
+    "ko": "수출 수요 의존",
+    "en": "Reliance on export demand"
    },
    "body": {
-    "ko": "중동 지역 분쟁에 따른 유가 상승이 원재료 가격과 해상 물류비를 함께 끌어올렸다. 회사는 원부자재 가격 상승을 음료와 해외 수익성 악화의 요인으로 설명했다. 비용 상승이 제품 가격에 얼마나 반영되는지는 이후 분기 실적에서 확인해야 할 사항이다.",
-    "en": "Higher oil prices tied to Middle East conflict pushed up raw material costs and sea freight rates together. The company attributed weaker beverage and overseas profitability to rising input prices. How much of the cost increase is passed through to product prices will show up in later quarterly results."
+    "ko": "음료 수출은 밀키스와 레쓰비의 해외 수요에 기대 늘어났다. 수출 매출은 400억원 수준으로 음료 부문 전체에 비해 작아, 두 제품의 수요가 꺾이면 해외 매출 증가세가 빠르게 둔화될 수 있다. 수출 흐름이 이어지는지가 해외 사업의 실적 방향을 가를 수 있다. 원재료와 물류비 부담이 계속되면 수출 마진에도 영향을 줄 수 있다.",
+    "en": "Beverage exports rely on overseas demand for Milkis and Rex. At about KRW 40 billion, export sales are small relative to total beverage revenue, so a drop in demand for these two products could slow overseas sales growth quickly. Whether the export trend holds will shape the direction of overseas results. Continued pressure from raw material and logistics costs could also weigh on export margins."
    }
   },
   {
    "cat": {
-    "ko": "내수 소비와 경쟁 심화",
-    "en": "Domestic demand and competition"
+    "ko": "신제품·효율화 실행",
+    "en": "Execution of new products and efficiency"
    },
    "body": {
-    "ko": "장기화된 내수 소비 침체가 음료 전 카테고리의 판매 감소로 이어졌다. 국내 음료 시장의 경쟁 심화는 판매 경쟁이 수익성에 부담이 되는 구조를 만든다. 회사는 2026년 9월 혁신TF를 신설해 체질 개선을 시도하고 있으나, 그 효과는 아직 실적으로 확인되지 않았다.",
-    "en": "A prolonged domestic consumption slowdown led to sales declines across all beverage categories. Intensifying competition in the domestic beverage market creates a structure in which sales battles weigh on profitability. The company set up an innovation task force in September 2026 to improve its domestic business, but results have not yet shown the effect."
+    "ko": "4분기 음료 부문은 칠성사이다 리치와 펩시 프리바이오틱 제로슈거 요거트향 등 3분기 출시 신제품의 판매 속도에 매출 반등이 달려 있다. 신제품이 기대만큼 팔리지 않으면 4분기 영업이익 목표 구간을 채우기 어려울 수 있다. 2026년 9월 신설한 혁신TF의 비용 효율화 성과도 함께 확인해야 할 변수다. 실행이 늦어지면 내수 사업의 체질 개선이 실적에 반영되기까지 시간이 더 걸릴 수 있다.",
+    "en": "Fourth-quarter beverage revenue depends on the sales pace of new products launched in the third quarter, including Chilsung Cider RICH and Pepsi Prebiotic Zero Sugar Yogurt. If these products sell below expectations, reaching the fourth-quarter operating profit level targeted in guidance could become harder. The cost efficiency results of the innovation task force set up in September 2026 are another variable to watch. Delays in execution could push back the time before domestic restructuring shows up in earnings."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 3.36
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "그룹 의존과 외주 경쟁",
-    "en": "Group dependence and competition from outsourced designers"
+    "ko": "플랫폼 구독 전환 지연",
+    "en": "Delayed shift to platform subscriptions"
    },
    "body": {
-    "ko": "테스트 기판의 초기 고객 기반은 모회사 TSE에 기대고 있으며, 설계는 외부 업체와 경쟁해 사업성을 입증해야 한다. 고난도 설계 기술이 외부 업체를 통해 공급되는 구조에서는 기술 유출 우려도 함께 거론된다. 그룹 물량이 곧바로 넘어오는 구조가 아니라는 점에서 수익화 속도는 불확실하다.",
-    "en": "The early customer base for test boards relies on parent TSE, while the design work must compete with outside firms to prove viability. The company has also raised concern about technology leakage where high-difficulty PCB design is supplied through outside vendors. Because group volume does not transfer directly, the speed of monetization is uncertain."
+    "ko": "산업안전 플랫폼은 Safemate Cloud를 바탕으로 렌탈과 구독형 모델을 병행해 반복 매출 구조를 만들 계획이다. 2030년 해당 매출 비중 60% 목표를 달성하려면 센서 연동 범위와 구독 고객 수가 함께 늘어야 한다. 통합 관리 기능이 고객에게 받아들여지지 않으면 구독 전환 속도가 늦어질 수 있다. 이 경우 플랫폼의 수익 구조 전환 시점도 목표보다 뒤로 밀릴 수 있다.",
+    "en": "The industrial safety platform plans to build recurring revenue by combining rental and subscription models on top of Safemate Cloud. Reaching the 60% revenue share target by 2030 requires both the range of connected sensors and the number of subscribers to grow. If customers do not accept the integrated management features, the shift to subscriptions could slow. In that case, the timing of the platform's move to a recurring-revenue structure could also fall behind target."
    }
   },
   {
    "cat": {
-    "ko": "실적 변동과 소형주 특성",
-    "en": "Earnings volatility and small-cap characteristics"
+    "ko": "광센서 IC 고객 확대",
+    "en": "Expansion of optical sensor IC customers"
    },
    "body": {
-    "ko": "2023년과 2024년에는 적자가 이어졌고 2025년 흑자 전환 이후에도 2026년 분기 손익이 여러 차례 바뀌었다. 시가총액 규모가 작은 종목이라 거래가 얇으면 가격이 크게 움직일 수 있다. 실적 변동과 거래 특성이 함께 위험 요인으로 작용할 수 있다.",
-    "en": "The company posted losses in 2023 and 2024, and after returning to profit in 2025, its quarterly results in 2026 have changed direction several times. As a small-cap stock, thin trading can cause large price moves. Earnings volatility and trading characteristics together can act as risk factors."
+    "ko": "광센서 IC는 2025년 양산에 들어가 중국 2개 업체에 공급 중이며, 2026년 중 고객사를 Tier 1 업체를 포함한 4곳으로 늘릴 계획이다. 신규 고객 확보가 늦어지면 반도체 포트폴리오 확장 속도도 함께 늦어질 수 있다. 거리센서와 보안 CCTV 모듈로의 응용처 확대도 이 확보를 전제로 한다. 고객 기반이 좁은 상태가 이어지면 광센서 IC의 매출 기여는 제한적일 수 있다.",
+    "en": "Optical sensor ICs entered mass production in 2025 and are supplied to two companies in China. The company plans to expand its customer base to four companies, including a Tier 1 supplier, during 2026. If new customers are secured late, the pace of expanding the semiconductor portfolio could also slow. Medium-term expansion into distance sensors and security CCTV modules also depends on that customer base, and if it stays narrow, the revenue contribution of optical sensor ICs may remain limited."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

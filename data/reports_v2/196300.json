@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무·유동성",
-    "en": "Financial and liquidity"
+    "ko": "해외 등록·공급 실행",
+    "en": "Overseas registration and supply"
    },
    "body": {
-    "ko": "2025년 말 부채총계 281억원이 자본총계 257억원을 웃돌고, 영업활동 현금흐름은 -55.7억원이다. 2025년 4분기에는 영업손실이 31.7억원으로 가장 컸고, 2026년 3분기까지 5개 분기 연속 영업적자가 이어졌다. 추가 자금 조달이 필요해지면 희석 또는 부채 증가가 주주 구조에 영향을 줄 수 있다.",
-    "en": "At the end of 2025, total liabilities of KRW 28.1 billion exceeded total equity of KRW 25.7 billion, and operating cash flow was -KRW 5.57 billion. The operating loss was largest in Q4 2025 at KRW 3.17 billion, and operating losses have continued for five straight quarters through Q3 2026. If additional funding becomes necessary, dilution or higher debt could affect the shareholder structure."
+    "ko": "멕시코 허가 이후 류프로렐린, 데스모프레신, 가니렐릭스, 바소프레신의 해외 등록을 넓힐 계획이다. 미국 FDA DMF 등록은 순차적으로 진행 중이며, 인터켐과의 파트너십으로 고객사 수주 구조도 구축하고 있다. 등록 절차가 지연되거나 고객사 발주가 늦어지면 해외 원료 공급이 매출로 잡히는 시점도 밀릴 수 있다. 신경계 개발사와의 임상용 원료 계약 이행 속도가 이를 가늠할 기준이다.",
+    "en": "After the Mexican approval, the company plans to expand overseas registrations for leuprorelin, desmopressin, ganirelix and vasopressin. FDA DMF registration is advancing step by step, and a partnership with InterChem is being used to build a customer order structure in the United States. If registration procedures are delayed or customer orders come later, the timing of overseas API supply reaching revenue could also slip. The pace of executing the clinical API contract with the neurology developer is the benchmark for judging this."
    }
   },
   {
    "cat": {
-    "ko": "사업 집중과 원가 구조",
-    "en": "Business concentration and cost structure"
+    "ko": "신약·신사업 실행",
+    "en": "Pipeline and new business execution"
    },
    "body": {
-    "ko": "매출은 펩타이드 원료의약품과 연구용역 중심이며, 의약용 펩타이드 소재 매출이 줄어든 것이 2025년 실적 악화의 배경으로 꼽힌다. 매출원가가 매출을 웃돌았던 원인은 가동률 저하, 외주비 확대, 저마진 연구용역 비중 확대 등 복합적 요인으로 거론된다. 매출을 늘려도 원가율이 개선되지 않으면 손실이 커질 수 있다는 우려가 나온다.",
-    "en": "Revenue depends mainly on peptide APIs and research services, and the decline in medical peptide materials is cited as a reason for the 2025 deterioration. Causes of cost of sales exceeding revenue are cited as a mix of lower utilization, higher outsourcing and a growing share of low-margin research services. Market observers have warned that if cost ratios do not improve, higher sales could increase losses."
+    "ko": "비만 후보물질 AGM-217은 일본에서 비임상 독성 시험이 진행 중이며, 마이크로니들 패치형과 장기지속형 제형을 추진할 방침이다. 방사성 표적 항암제 AGM-330은 레이메드와 공동개발 협약에 따라 개발 중이다. 비임상 결과가 기대에 못 미치거나 제형 개발이 지연되면 임상 진입 시점이 늦어질 수 있다. 현재 손익 구조가 전환되지 않은 상태에서 신사업의 실적 반영 시점은 불확실하다.",
+    "en": "The obesity candidate AGM-217 is in non-clinical toxicity testing in Japan, and the company plans microneedle patch and long-acting formulations. The radiopharmaceutical candidate AGM-330 is under development through a joint development agreement with Raymed. If non-clinical results fall short or formulation work is delayed, the entry into clinical stages could be pushed back. With the current earnings structure not yet turned, the timing of any contribution from these new businesses remains uncertain."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

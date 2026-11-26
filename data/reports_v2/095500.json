@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "전방 수요 리스크",
-    "en": "Downstream demand risk"
+    "ko": "증설 실행 리스크",
+    "en": "Capacity execution risk"
    },
    "body": {
-    "ko": "LCD TV 수요와 광학필름 가동률이 회복되지 않으면 매출 감소가 길어질 수 있다. 2025년 실적 공시에서 전방산업 둔화가 원인으로 언급됐다. 2026년 2분기와 3분기 매출은 각각 1,067억원과 1,122억원이었다.",
-    "en": "If LCD TV demand and optical film utilization do not recover, the sales decline could extend. The 2025 results disclosure cited a slowdown in downstream industries. Sales were KRW 106.7 billion in the second quarter of 2026 and KRW 112.2 billion in the third."
+    "ko": "2차전지 소재 증설이 계획대로 진행되지 않을 수 있다. 수산화리튬 생산능력 확대와 새만금 전구체 공장 계획은 2028년까지 이어지는 일정이어서 집행 속도에 따라 성과가 달라진다. 이 사업은 원재료 가격과 고객사 수요에 영향을 받아 실적 기여가 늦어질 수 있다. 설비가 가동되기 전에는 투자 부담이 먼저 커지고, 광학필름 부문의 둔화를 메우지 못하는 기간이 길어질 수 있다.",
+    "en": "Battery materials capacity expansion may not proceed as planned. The lithium hydroxide capacity expansion and the Saemangeum precursor project run on a schedule through 2028, so results will depend on how quickly they are carried out. Because the business is affected by raw material prices and customer demand, its contribution to earnings could be delayed. Until the plants start operating, investment costs may rise first and the period in which they fail to offset weakness in optical films could lengthen."
    }
   },
   {
@@ -342,5 +342,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

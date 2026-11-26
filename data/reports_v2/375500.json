@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "주택 착공 · 분양 사이클",
-    "en": "Housing start and sales cycle"
+    "ko": "서울 정비사업 수주 경쟁",
+    "en": "Seoul redevelopment bidding competition"
    },
    "body": {
-    "ko": "주택 부문은 착공 물량이 늘어야 매출로 이어지는 시차 구조를 가진다. 2026년 주택 착공이 감소한다는 전망이 나온 만큼, 착공 회복이 늦어지면 외형 축소가 길어질 수 있다. 정비사업 수주가 늘더라도 공사 진행 단계에 따라 매출 인식 시점이 뒤로 밀릴 수 있다.",
-    "en": "The housing business has a lag structure in which revenue follows construction starts. With a forecast of lower housing starts in 2026, a slower recovery in starts could prolong the revenue decline. Even as redevelopment orders grow, revenue recognition can shift later depending on construction progress."
+    "ko": "서울 핵심 정비사업 수주는 성수2지구 등 하반기 추진 사업에 달려 있으며, 이 사업들은 대형 건설사와 직접 맞붙는 구도다. 입찰에서 수주에 실패하면 2026년 신규 수주 목표를 다른 사업으로 메워야 하는 부담이 생긴다. 공공 발주가 종합심사낙찰제 대형 공사 중심으로 이어지는 점도 그 밖의 공공 공사 확보에 제약이 될 수 있다. 수주 공백이 길어지면 2027년 이후 주택 매출 기반이 약해질 수 있다.",
+    "en": "Securing Seoul's core redevelopment projects, including Seongsu 2 district, depends on second-half 2026 bids that pit DL E&C directly against large builders. A loss in these tenders would require the 2026 new order target to be filled by other projects. Because public tenders are concentrated in large comprehensive-screening contracts, the company may also face limits in winning other public work. A prolonged gap in orders could weaken the housing revenue base after 2027."
    }
   },
   {
@@ -358,5 +358,6 @@
    "div": 1.65
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

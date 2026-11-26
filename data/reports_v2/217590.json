@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "프로젝트 타이밍 리스크",
-    "en": "Project timing risk"
+    "ko": "증설 실행 리스크",
+    "en": "Capacity expansion execution risk"
    },
    "body": {
-    "ko": "해양플랜트 프로젝트는 발주 시점이 유가와 대외 정세에 따라 밀리는 경향이 있다. 2025년에도 해양 프로젝트 지연이 매출과 수익성을 압박했다는 보도가 있다. 고마진 매출의 발생 시점이 불확실하면 분기 영업이익의 변동성도 커진다. 2026년 3분기 영업손실 전환의 세부 원인은 정기보고서에서 확인할 대상이다.",
-    "en": "Offshore plant orders tend to slip depending on oil prices and external conditions. Reports said delays in offshore projects weighed on revenue and profitability in 2025 as well. When the timing of high-margin revenue is uncertain, quarterly operating profit becomes more volatile."
+    "ko": "회사는 생산능력을 2026년 약 200억원 수준에서 시장 상황에 따라 2029년 최대 600억원 수준까지 늘릴 계획이다. 이 증설 일정은 2028년 데이터센터 관련 사업 비중 확대 목표와 맞물려 있다. 증설 속도가 북미 수주 증가를 따라가지 못하거나 설비 투자 부담이 먼저 비용으로 잡히면 목표 시점의 이익 개선이 늦어질 수 있다. 증설 물량이 실제 가동률로 이어지는지가 중장기 실적의 확인 지점이다.",
+    "en": "The company plans to expand production capacity from roughly KRW 20.0 billion in 2026 to as much as KRW 60.0 billion by 2029, depending on market conditions. The expansion schedule is tied to the target of raising the data center business to a meaningful share by 2028. If capacity additions lag behind growth in North American orders, or if investment burdens are booked as fixed costs first, the timing of margin improvement toward the target could slip. Whether added capacity translates into higher utilization is the key point for medium-term earnings."
    }
   },
   {
@@ -320,5 +320,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

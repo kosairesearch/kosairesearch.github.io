@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "특허 분쟁",
-    "en": "Patent litigation"
+    "ko": "제품 구성과 이익률",
+    "en": "Product mix and margin"
    },
    "body": {
-    "ko": "고쿠사이와의 특허 분쟁은 장기화 가능성이 제기돼 왔다. 판결 결과에 따라 ALD 장비 판매 구도와 로열티 부담이 달라질 수 있다. 분쟁의 진행 상황은 판결과 공시를 통해 드러나는 대상이다.",
-    "en": "The patent dispute with Kokusai Electric has been flagged as potentially long-running. Depending on the ruling, the ALD sales landscape and royalty burden could change. Progress will become visible through court decisions and disclosures."
+    "ko": "2026년 3분기 매출은 전 분기보다 13.5% 줄었지만 영업이익은 249억원으로 늘어, 이익률 개선이 제품 구성 변화에 얼마나 기댔는지는 아직 분명하지 않다. 업계 설명에 따르면 ALD 퍼니스 장비는 대당 60~70억원으로 일반 CVD 장비보다 높은 가격대에 거래되므로, 장비 구성이 CVD 쪽으로 이동하면 단위당 수익성이 달라질 수 있다. 분기별 제품 구성이 다시 바뀌면 영업이익률이 낮아질 가능성도 있다. 다음 분기 실적에서 제품별 매출 흐름을 함께 확인해야 하는 이유다.",
+    "en": "Third-quarter 2026 revenue fell 13.5% from the prior quarter while operating profit rose to KRW 24.9 billion, so it remains unclear how far the margin gain depended on product mix. According to industry sources, ALD furnace tools sell for KRW 6-7 billion each, above conventional CVD tools at KRW 3-4 billion, so a shift in the tool mix toward CVD could change per-unit profitability. If the product mix shifts again from quarter to quarter, operating margin could fall back. Product-level revenue trends will need to be checked alongside results in the coming quarters."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "이익 변동과 일회성 손익",
-    "en": "Earnings volatility and one-off items"
+    "ko": "공정 전환과 수주 속도",
+    "en": "Node transition and order pace"
    },
    "body": {
-    "ko": "2025년 영업이익은 15.5% 줄었고, 2026년 2분기에는 지배주주 순이익이 영업이익을 크게 웃돌았다. 영업외 손익이나 세금 효과가 이익을 밀어 올렸다면 실제 영업 체력과 차이가 날 수 있다. 사업보고서의 손익 세부 항목이 이를 가르는 확인 기준이다.",
-    "en": "Operating profit fell 15.5% in 2025, and in 2Q26 net profit attributable to controlling shareholders was far above operating profit. If non-operating items or tax effects lifted that figure, it could diverge from underlying operating strength. The detailed income-statement items in the annual report are the reference for separating the two."
+    "ko": "고객사의 미세화 공정 전환이 늦어지면 ALD 장비 투입이 예상만큼 늘지 않을 수 있다. 2024년 보도는 미세화 공정 투자가 장비 공정 단계를 늘려 수주 확대로 이어질 것으로 봤으나, 이는 당시의 전망이어서 현재 수주 흐름과 대조할 대상이다. 선단 공정 전환 일정이 밀리면 2026년 분기 실적 회복이 수주 확대에 기대고 있는 만큼 회복 속도가 둔화될 수 있다. 전환 시점과 ALD 수주 비중의 변화가 확인 기준이다.",
+    "en": "If customers' migration to finer geometries slows, ALD tool insertions may not grow as expected. A 2024 report expected finer-geometry investment to add process steps and lift order intake, but that was an outlook at the time and should be checked against current order flow. If the timing of advanced-node transitions slips, the pace of the recovery in quarterly results, which relies on order expansion, could slow. The timing of node transitions and the share of ALD in new orders are the reference points."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 0.29
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

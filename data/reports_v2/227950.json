@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "지배구조 · 특수관계 거래",
-    "en": "Governance and related-party transactions"
+    "ko": "해외법인 · 신사업 실행",
+    "en": "Overseas unit and new business execution"
    },
    "body": {
-    "ko": "최대주주 변경 후 엔투텍은 에이프로젠 기업집단에 편입됐고, 계열사 전환사채 인수와 대여금이 이어졌다. 2026년 5월에는 에이프로젠 제31회 전환사채 100억원을 직접 취득했다. 특수관계 거래 규모가 커질수록 독립적인 자금 판단과 소액 주주 시각에서 의사결정 구조가 함께 점검 대상이 된다.",
-    "en": "After the change in largest shareholder, N2TECH was brought into an affiliate group, and purchases of affiliate convertible bonds and loans followed. In May 2026 it directly acquired KRW 10 billion of an affiliate's 31st convertible bond. As related-party transactions grow, decision-making governance becomes an area for close review."
+    "ko": "2025년 4월 설립된 미국 현지법인 N2TECH USA CORP.과 같은 해 9월 개설한 인천지점의 부동산 임대업은 아직 초기 단계의 신사업이다. 해외 법인이 현지에서 맡을 거래 범위와 운영 비용이 본업 부품 투자 여력과 어떻게 맞물릴지가 변수다. 부동산 임대의 비중은 작은 편이어서, 신사업이 자리 잡는 속도가 전체 실적을 흔드는 정도는 제한적일 수 있다.",
+    "en": "The US subsidiary N2TECH USA CORP., set up in April 2025 in Austin, Texas, and the real estate leasing business at the Incheon branch opened in September of the same year are new businesses still at an early stage. Whether the overseas unit takes on a defined scope of transactions locally and how its operating costs build up will determine how these ventures compete for funds with core semiconductor parts investment. Real estate leasing is a small share of the business, so the pace at which the new ventures take hold may have a limited effect on overall results."
    }
   },
   {
    "cat": {
-    "ko": "실적 변동성과 사업 집중",
-    "en": "Earnings volatility and business concentration"
+    "ko": "장비 국산화 수혜 지속성",
+    "en": "Durability of equipment localization benefit"
    },
    "body": {
-    "ko": "매출은 2023년 343억원, 2024년 136억원, 2025년 288억원으로 해마다 크게 움직였다. 2025년 흑자에는 매출 증가와 함께 관계회사주식 처분이익이 포함된 것으로 회사가 설명했다. 본업 반도체 장비 부품에 집중된 구조에서 분기 매출이 흔들리면 이익 폭도 함께 흔들릴 수 있다.",
-    "en": "Annual sales swung sharply, from KRW 34.3 billion in 2023 to KRW 13.6 billion in 2024 and KRW 28.8 billion in 2025. The company cited a gain on disposal of affiliate shares alongside higher sales as a driver of the 2025 improvement. With business concentrated in semiconductor equipment parts, a shortfall in quarterly sales can move profit sharply."
+    "ko": "반도체 장비 부품 매출 증가의 배경으로 꼽힌 장비 국산화 흐름은 엔투텍 매출 구조에서 차지하는 비중에 따라 효과가 달라진다. 국산화 수혜가 줄거나 장비 업체가 국산 부품 채택을 늦추면 최근 4개 분기 이어진 매출 증가 흐름이 꺾일 수 있다. 같은 업종의 장비 부품 업체들과 발주를 두고 경쟁이 강해지면 회복의 지속 기간도 짧아질 수 있다.",
+    "en": "The localization of equipment cited as a driver of semiconductor equipment parts sales growth affects N2TECH to a degree that depends on how much of its sales mix this trend accounts for. If the localization benefit fades or equipment makers slow the adoption of domestic parts, the sales growth that has run for four consecutive quarters could reverse. If competition for orders intensifies among component makers in the same sector, the duration of the recovery could also shorten."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

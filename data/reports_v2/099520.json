@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장·거래 지위",
-    "en": "Listing and trading status"
+    "ko": "경영진 구성 변동",
+    "en": "Management composition change"
    },
    "body": {
-    "ko": "상장유지 결정은 확정된 사실이지만, 상장 지위는 감사의견과 공시 의무 이행에 따라 다시 흔들릴 수 있다. 2026년 사업보고서의 감사의견과 기한 내 제출 여부가 가장 직접적인 확인 지점이다. 거래 재개 이후 유동성과 주가 변동성이 커질 가능성도 함께 봐야 한다.",
-    "en": "The listing-maintained decision is settled, but listing status can be affected again by audit opinions and disclosure obligations. The audit opinion and timely submission of the 2026 annual report are the most direct checkpoints. Liquidity and share price volatility could also change once trading is fully active."
+    "ko": "사내이사 3명의 임기가 2027년 3월 29일 만료된다. 대표이사를 포함한 임원 재선임 여부에 따라 경영진 구성이 바뀔 수 있으며, 신규사업을 총괄하는 체계도 함께 달라질 수 있다. 신재생에너지와 AI NVR을 성장 축으로 삼는 계획이 경영진 교체와 맞물릴 경우 사업 추진 속도에 영향을 줄 수 있다.",
+    "en": "Three inside directors' terms expire on March 29, 2027, and re-election decisions, including that of the CEO, could change the management structure. Because the company positions renewable energy and AI NVR as growth axes, a change in the team overseeing new businesses could affect how quickly those projects advance. Management continuity is therefore a point to confirm alongside the 2027 filings."
    }
   },
   {
    "cat": {
-    "ko": "실적 변동성과 사업 집중",
-    "en": "Earnings volatility and business concentration"
+    "ko": "해외 판매 거점 노출",
+    "en": "Exposure of overseas sales bases"
    },
    "body": {
-    "ko": "매출은 CCTV 영상보안 장비에 집중돼 있고, 분기 매출은 2025년 4분기 104억원에서 2026년 3분기 25.3억원까지 크게 움직였다. 프로젝트와 출하 시기에 따른 변동이 큰 구조라 연간 흑자가 분기 흑자로 안정되기 어렵다. 해외 거래처 의존도 역시 환율과 거래처 사정에 노출된다.",
-    "en": "Revenue is concentrated in CCTV video security equipment, and quarterly revenue moved from KRW 10.4 billion in the fourth quarter of 2025 to KRW 2.53 billion in the third quarter of 2026. Timing of projects and shipments can cause large swings, which makes steady quarterly profitability hard to sustain. Reliance on overseas customers also exposes results to exchange rates and customer conditions."
+    "ko": "판매 거점이 유럽, 러시아, 중동, 동남아시아에 걸쳐 있어 해외 거래처 매출은 현지 규제와 지정학 변화의 영향을 받을 수 있다. 외화 환율이 움직이면 해외 매출을 원화로 환산한 금액과 수익성도 함께 바뀔 수 있다. 해외 거래처 매출은 CCTV 부문의 성장 축이어서, 이 경로가 흔들리면 사업 전반의 방향에도 영향을 줄 수 있다.",
+    "en": "The sales base spans Europe, Russia, the Middle East and Southeast Asia, so overseas customer sales could be affected by local regulation and geopolitical change. Movements in foreign exchange rates could also change the won value and profitability of overseas sales. Because overseas customer sales remain a growth lever for the CCTV segment, weakening in this channel could affect the direction of the business as a whole."
    }
   },
   {
@@ -342,5 +342,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

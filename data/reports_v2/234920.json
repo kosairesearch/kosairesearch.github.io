@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "사업 신뢰도·투자 여력",
-    "en": "Business credibility and investment capacity"
+    "ko": "헬스케어 신제품 성과",
+    "en": "Healthcare product performance"
    },
    "body": {
-    "ko": "2026년 1분기 연구개발비는 매출의 2.84%로 2024년 6.97%, 2025년 4.22%에 이어 낮아졌다. 자산 매각과 마케팅 확대를 병행하는 과정에서 헬스케어 연구 투자가 유지되는지가 쟁점이다. 2차전지 사업은 합작 구조가 취소된 뒤 재개 계획이 구체적으로 공시되지 않았다. 2025년 보도 당시 회사는 구체적으로 진행되면 공시하겠다고 밝힌 바 있다.",
-    "en": "Research and development spending in Q1 2026 was 2.84% of revenue, down from 6.97% in 2024 and 4.22% in 2025. Whether healthcare R&D investment is maintained while asset sales and marketing expansion proceed is the key issue. After the joint venture structure was cancelled, a concrete restart plan for the secondary battery business has not been disclosed. In 2025 the company said it would disclose through filings once the business moved forward concretely."
+    "ko": "2025년 12월 출시된 신제품의 매출 기여가 드러나지 않으면 분기 매출 증가가 기존 제품 수요에 기댄 것일 수 있다. 홈쇼핑과 면세점 중심 판매 구조에서는 신제품 반응에 따라 분기 매출 변동이 커질 수 있다. 헬스케어 제품은 주방 가전과 다른 인허가 요건을 거쳐 제품군 확대에 추가 절차가 필요할 수 있다. 이 제품군이 매출 증가 흐름을 떠받치지 못하면 회복의 지속성이 약해질 수 있다.",
+    "en": "If the new products launched in December 2025 do not show a visible revenue contribution, the quarterly revenue gains could rest on demand for existing products. Sales concentrated in home shopping and duty-free channels can make quarterly revenue swing with how new products sell. Healthcare devices follow approval requirements different from kitchen appliances, so expanding the line may require additional procedures. If this product line does not sustain the revenue growth, the durability of the recovery could weaken."
    }
   }
  ],
@@ -340,5 +340,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

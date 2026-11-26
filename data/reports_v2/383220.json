@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "중국 채널 재고와 환율",
-    "en": "China channel inventory and FX"
+    "ko": "국내 상권·면세 채널 의존",
+    "en": "Reliance on domestic districts and duty-free"
    },
    "body": {
-    "ko": "중국 MLB는 재고 관리에 따라 출고 속도가 바뀌고, 그 영향이 분기 매출과 영업이익률에 바로 나타난다. 위안화와 원화의 방향에 따라 원화 환산 매출이 달라지는 구조도 변수다. 4분기 출고가 예정대로 회복되지 않으면 연간 가이던스 달성이 어려워질 수 있다.",
-    "en": "China MLB shipment pace changes with inventory management, and the impact shows up directly in quarterly revenue and operating margin. The won-converted sales value also changes with the direction of the renminbi against the won. If fourth-quarter shipments do not recover as planned, achieving the annual guidance could become difficult."
+    "ko": "국내 MLB 성장은 가로수길·한남·명동·성수 등 주요 상권의 플래그십 매장과 면세 채널에 집중되어 있다. 이 매출은 외국인 관광객 유입에 따라 움직이므로, 방한 수요가 줄거나 상권별 유동인구가 바뀌면 국내 매출 증가 속도가 함께 둔화될 수 있다. 내수 소비 회복이 이를 대체하지 못하면 국내 채널의 성장률이 현재 수준을 유지하기 어려울 수 있다.",
+    "en": "Domestic MLB growth is concentrated in flagship stores in major districts such as Garosu-gil, Hannam, Myeongdong and Seongsu, as well as in the duty-free channel. Because these sales move with the inflow of foreign tourists, a drop in visits or a shift in foot traffic across districts could slow domestic sales growth. If domestic consumption recovery fails to offset this, growth in the domestic channel may be hard to sustain at its current level."
    }
   },
   {
    "cat": {
-    "ko": "디스커버리 등 비MLB 브랜드",
-    "en": "Non-MLB brands such as Discovery"
+    "ko": "영업 외 손익과 순이익 변동",
+    "en": "Non-operating items and net income swings"
    },
    "body": {
-    "ko": "디스커버리 매출은 2022년 4,900억원에서 2025년 3,470억원으로 줄었다. 국내 소비 환경이 바뀌면 MLB 외 브랜드의 부진이 전사 실적을 다시 누를 수 있다. 포트폴리오가 MLB에 집중될수록 단일 브랜드의 채널과 수요 변화에 대한 노출도 커진다.",
-    "en": "Discovery sales fell from KRW 490 billion in 2022 to KRW 347 billion in 2025. If domestic consumption conditions shift, weakness in non-MLB brands could weigh on company-wide results again. The more the portfolio concentrates on MLB, the greater the exposure to channel and demand changes for a single brand."
+    "ko": "2026년 1분기에는 지배주주 순이익이 영업이익을 웃돌아 영업 외 항목의 기여가 컸을 가능성이 있다. 이런 항목은 사업 성과와 직접 연결되지 않아 다음 분기에도 반복되는지 예측하기 어렵다. 영업 외 항목이 줄어들면 영업이익이 유지되더라도 지배주주 순이익은 낮아질 수 있다. 최근 4개 분기 순이익 합계를 기준으로 한 이익 해석도 이 항목의 지속 여부에 따라 달라질 수 있다.",
+    "en": "In the first quarter of 2026, net income attributable to controlling shareholders exceeded operating profit, suggesting that non-operating items made a substantial contribution. Such items are not directly tied to business performance, so it is difficult to predict whether they will recur in later quarters. If non-operating items shrink, net income attributable to controlling shareholders could fall even if operating profit holds up. The earnings reading based on the combined total of the last four quarters could also change depending on whether these items persist."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 4.49
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

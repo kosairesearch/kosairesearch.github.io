@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "제품·고객 집중",
-    "en": "Product and customer concentration"
+    "ko": "증설·신규 라인 가동",
+    "en": "Expansion and new line ramp-up"
    },
    "body": {
-    "ko": "2025년 매출에서 메모리 관련 제품이 81.2%를 차지했다는 공시 기반 집계가 있다. 메모리 수요가 둔화하면 매출이 흔들릴 수 있고, 단일 고객 의존도도 함께 거론된다. 회사는 비메모리 사업의 고객 다변화를 대응 방향으로 제시하고 있다.",
-    "en": "Public filing-based tallies show memory-related products made up 81.2% of 2025 revenue. A slowdown in memory demand could weigh on revenue, and single-customer dependence has also been raised. The company has presented non-memory customer diversification as its response."
+    "ko": "회사는 범핑 사업장 준공 이후 설비 투자를 늘리며 범핑을 주력으로 키우는 중이다. 모회사 에스에프에이 관계자는 신규 라인이 본격 가동되면 실적 개선이 예상된다고 했으나 시기와 금액은 특정하지 않았다. 신규 라인의 가동이 늦어지거나 가동률이 오르지 않으면 설비 투자의 회수 시점도 뒤로 밀릴 수 있다.",
+    "en": "The company has expanded bumping equipment investment since completing its bumping plant and is growing bumping into a core business. An official at parent SFA said earnings are expected to improve once the new SFA Semicon line is fully operating, but did not specify timing or amounts. If the new line's startup is delayed or utilization fails to rise, the payback period on equipment investment could also slip."
    }
   },
   {
    "cat": {
-    "ko": "원가·가동률 실행",
-    "en": "Cost and utilization execution"
+    "ko": "2027년 흑자 전환 전망",
+    "en": "Achievement of the 2027 turnaround forecast"
    },
    "body": {
-    "ko": "필리핀 법인과 국내 K1 라인의 가동률 차이가 원가와 손익을 좌우한다. 2025년 실적 악화 원인에 원가 부담이 포함됐고, 후공정 업계의 경쟁이 심해지면 마진 회복이 늦어질 수 있다. DDR5 테스트 셋업이 전망대로 4분기에 가동되지 않으면 테스트 매출 반영도 늦어진다.",
-    "en": "The utilization gap between the Philippine subsidiary and the domestic K1 line will shape costs and profitability. Cost burdens were part of the 2025 deterioration, and if competition in back-end work intensifies, margin recovery could be delayed. If the DDR5 test setup does not start in Q4 as projected, test revenue will also be recognized later."
+    "ko": "삼성증권은 2026년 10월 28일 리포트에서 2027년 흑자 전환과 역대 최대 실적을 전망했으나, 이는 DDR5 테스트 매출 본격화와 D램 물량 증가를 전제로 한 추정이다. 필리핀 법인의 4분기 테스트 셋업이 가동되지 않거나 D램 물량이 기대에 못 미치면 흑자 전환 시점이 늦어질 수 있다. 한국투자증권이 제시한 한국공장 매출 비중 확대 역시 메모리 패키징 물량 흐름에 기대고 있어 같은 조건에 놓여 있다.",
+    "en": "Samsung Securities projected a return to operating profit in 2027 and record annual results in an October 28, 2026 report, but this rests on DDR5 test revenue ramping and higher DRAM volumes. If the Philippine test setup does not go live in Q4 or DRAM volume falls short of expectations, the timing of a turnaround could slip. The rise in the Korean plant's revenue share that Korea Investment & Securities expects also depends on the same memory packaging volume trend."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

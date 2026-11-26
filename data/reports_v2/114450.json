@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중",
-    "en": "Customer Concentration"
+    "ko": "증설 실행 위험",
+    "en": "Expansion Execution Risk"
    },
    "body": {
-    "ko": "상위 거래처 2곳이 매출의 81.64%를 차지한다는 보도가 있다. 특정 고객의 주문이 줄거나 계약이 갱신되지 않으면 가동률과 매출이 함께 흔들릴 수 있다. 2026년 말 두 계약이 종료되는 만큼 후속 계약 체결 여부가 가장 직접적인 리스크다.",
-    "en": "Reports say the top two customers account for 81.64 percent of sales. If orders from a specific customer fall or contracts are not renewed, utilization and revenue could both be affected. With both current contracts ending in late 2026, whether follow-on contracts are signed is the most direct risk."
+    "ko": "회사는 화치공장에 65억원 규모 신규 시설 투자를 진행해 연말까지 증설을 마칠 계획이다. 주문이 생산능력을 웃도는 상황에서 증설이 늦어지면 늘어난 주문을 매출로 옮기지 못할 수 있다. 신규 설비가 AI반도체 소재와 원료의약품 생산 확대로 이어질지도 불확실하다. GLP-1 펩타이드 중간체는 상업 생산 시점이 공개되지 않아 신규 매출 기여가 늦어질 수 있다.",
+    "en": "The company plans to complete the KRW 6.5 billion new facility investment at the Hwachi plant by year end. If the expansion is delayed while orders exceed production capacity, the company may be unable to convert the added orders into sales. It is also uncertain whether the new facility will lead to higher output of AI chip materials and APIs. Commercial production timing for GLP-1 peptide intermediates has not been disclosed, so their contribution to new revenue could be delayed."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중·사업 지연",
-    "en": "Customer concentration and program delays"
+    "ko": "해외 수출 협의",
+    "en": "Export negotiations"
    },
    "body": {
-    "ko": "매출처는 방산 대기업과 정부 연구기관 중심이라 예산과 프로젝트 진행 상황에 따라 매출이 흔들릴 수 있다. 사업이 지연되면 회사 실적이 직접 타격을 받는 구조다. 상위 2개사 비중이 높아 한 고객의 발주 시기 변동이 분기 실적에 크게 반영된다.",
-    "en": "Its customers are mainly large defense contractors and government research institutes, so revenue can swing with budgets and project progress. Delays in programs hit reported results directly. With the top two customers representing a high share, shifts in one customer's order timing show up sharply in quarterly results."
+    "ko": "회사는 현재 3개국과 직접 수출을 협의하고 있다고 밝혔다. 주력 제품이 천무, K9, K2 등 체계업체 플랫폼에 탑재되어 해외 물량은 체계업체의 해외 계약 성사 여부와 연동된다. 협의가 계약으로 이어지지 않거나 체계업체의 수출 일정이 늦어지면 2027년 이후 양산 전환에 따른 매출 증가가 기대에 못 미칠 수 있다.",
+    "en": "The company says it is currently in direct export talks with three countries. Its core products are mounted on platforms such as Chunmoo, K9 and K2, so overseas volume depends on whether prime contractors win overseas contracts. If talks do not lead to contracts or prime contractors' export schedules slip, revenue growth from mass production after 2027 could fall short of expectations."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

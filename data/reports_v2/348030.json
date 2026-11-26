@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "외형 축소와 운영 매출 의존",
-    "en": "Revenue contraction and reliance on live titles"
+    "ko": "결제율·광고단가 변동",
+    "en": "Paying rate and ad price changes"
    },
    "body": {
-    "ko": "장기 운영 타이틀의 이용자 이탈이 빨라지면 매출 감소가 이어질 수 있다. 2026년 3분기 매출은 2025년 3분기 대비 절반 수준에 머문다. 신작이 공백을 메우지 못하면 외형 회복이 늦어질 수 있다.",
-    "en": "If users leave long-running titles faster, revenue declines could continue. Q3 2026 revenue is about half of Q3 2025 revenue. If new releases do not fill the gap, a recovery in revenue could be delayed."
+    "ko": "모비릭스의 매출은 인앱 결제와 광고에서 나오므로, 이용자 수가 유지되더라도 결제율과 광고단가가 떨어지면 매출과 수익성이 달라질 수 있다. 장기 운영 게임은 기존 이용자의 결제 패턴에 수익이 좌우되어, 결제율 하락이 여러 타이틀에 동시에 나타날 수 있다. 광고단가가 낮아지면 광고 매출 비중이 큰 타이틀의 이익 기여가 줄어들 수 있다. 이 변수들은 신작 출시 여부와 무관하게 이익 구조에 영향을 준다.",
+    "en": "Mobirix's revenue comes from in-app purchases and advertising, so even if user numbers hold, lower paying rates or ad prices could change revenue and profitability. Because long-running games depend on the payment patterns of existing users, a decline in paying rates could appear across several titles at once. Lower ad prices could reduce the profit contribution of titles with a large advertising share. These variables affect the profit structure regardless of whether new titles launch."
    }
   },
   {
    "cat": {
-    "ko": "분기 이익의 변동성",
-    "en": "Quarterly earnings volatility"
+    "ko": "영업현금흐름 재전환",
+    "en": "Reversal of operating cash flow"
    },
    "body": {
-    "ko": "영업이익은 2026년 분기마다 흑자였지만 지배주주 순이익은 3분기에 순손실 3,458만원으로 돌아섰다. 영업이익과 순이익의 방향이 엇갈린 분기가 나타나 흑자 지속성이 불확실하다. 분기 규모가 작아 일부 항목 변화에도 결과가 쉽게 바뀔 수 있다.",
-    "en": "Operating profit was positive in each 2026 quarter, but net profit attributable to controlling shareholders turned to a loss of KRW 34.58 million in Q3. Operating and net results have diverged in some quarters, so the durability of profit is uncertain. Because quarterly amounts are small, results can shift easily with changes in a few items."
+    "ko": "영업활동 현금흐름은 2024년 마이너스 89억원이었다가 2025년 11.5억원 플러스로 바뀌었다. 흑자 전환 이후에도 현금 창출은 기간에 따라 다시 마이너스로 돌아설 수 있다. 현금흐름이 악화되면 부채 부담이 낮더라도 운영 비용과 신작 준비 비용을 자체 자금으로 충당하기 어려울 수 있다. 현금흐름의 연속성은 다음 정기보고서의 현금흐름표로 확인된다.",
+    "en": "Operating cash flow was negative KRW 8.9 billion in 2024 and turned to positive KRW 1.15 billion in 2025. Even after the turn, cash generation could return to negative in a given period. If cash flow weakens, Mobirix may find it harder to fund operating costs and preparation for new titles from internal cash, even with a low debt burden. The continuity of cash flow can be checked in the cash flow statement of the next periodic report."
    }
   },
   {
    "cat": {
-    "ko": "공시 기준 혼동과 소형주 특성",
-    "en": "Basis confusion and small-cap characteristics"
+    "ko": "환율 변동",
+    "en": "Exchange rate fluctuation"
    },
    "body": {
-    "ko": "연결과 별도 수치가 함께 보도되어 같은 기간의 실적이 다르게 읽힐 수 있다. 시가총액이 게임 업종 내에서 작은 축이라 주가 변동성이 커질 수 있다. 공시 기준을 확인하지 않으면 보도된 수치를 잘못 비교할 위험이 있다.",
-    "en": "Consolidated and separate figures are reported together, so the same period can be read differently. As one of the smaller listed game companies, its share price can be more volatile. Without checking the disclosure basis, reported figures may be compared incorrectly."
+    "ko": "모비릭스는 글로벌 시장에 게임을 서비스하는 구조라 외화로 발생하는 인앱 결제와 광고 매출이 원화로 환산된다. 원화 강세가 나타나면 같은 외화 매출의 원화 환산액이 줄어 실적에 영향을 줄 수 있다. 해외 이용자 비중이 큰 타이틀일수록 환율 영향이 더 크게 나타날 수 있다. 환율은 영업이익과 현금흐름 모두에 닿는 변수다.",
+    "en": "Because Mobirix serves games to global markets, in-app purchase and advertising revenue earned in foreign currencies is translated into won. A stronger won would reduce the won-equivalent value of the same foreign-currency revenue and could affect results. Titles with a larger share of overseas users could show a bigger exchange rate effect. The exchange rate affects both operating profit and cash flow."
    }
   }
  ],
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

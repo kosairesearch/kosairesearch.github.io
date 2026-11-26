@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "금 가격·거래량 의존",
-    "en": "Dependence on gold prices and volume"
+    "ko": "연간 실적의 4분기 의존",
+    "en": "Reliance on fourth-quarter results"
    },
    "body": {
-    "ko": "웹3 부문 매출은 금 가격과 KRX 금 거래대금에 연동된다는 분석이 있다. 금 시장 거래량이 줄거나 가격이 급변하면 매출과 이익이 크게 흔들릴 수 있다. 2026년 3분기 영업손실은 이러한 변동성이 이미 실적에 반영됐음을 보여 준다.",
-    "en": "Analysis indicates Web3 segment revenue is linked to gold prices and KRX gold trading value. A drop in volume or a sharp price swing could move revenue and profit significantly. The third-quarter 2026 operating loss shows this volatility already feeding into results."
+    "ko": "회사는 웹3와 IT서비스 부문 모두 매출과 이익이 4분기에 몰리는 특성을 들어 높은 연간 실적을 기대한다고 밝혔다. 최근 4개 분기 지배주주 순이익 합계 657억원도 2025년 4분기 262억원에 크게 기대고 있다. 2026년 4분기 실적이 기대에 못 미치면 연간 실적과 이익 기반 전체가 흔들릴 수 있다. 이는 연간 이익이 분기 실적 하나에 얹혀 있는 구조라는 뜻이다.",
+    "en": "The company expects a strong full-year result, citing that both the Web3 and IT services segments concentrate revenue and profit in the fourth quarter. Net income attributable to controlling shareholders over the latest four quarters, KRW 65.7 billion, also leans heavily on KRW 26.2 billion posted in the fourth quarter of 2025. If fourth-quarter 2026 results fall short of expectations, full-year results and the overall earnings base could be shaken, showing that annual profit depends on a single quarter."
    }
   },
   {
    "cat": {
-    "ko": "재무 구조와 현금흐름",
-    "en": "Financial structure and cash flow"
+    "ko": "현금흐름 변동과 비지배지분",
+    "en": "Cash flow volatility and non-controlling interests"
    },
    "body": {
-    "ko": "부채비율은 2025년 212.5%로 높은 편이다. 영업활동 현금흐름은 2023년 -293억원으로 적자였다가 2025년 2,382억원으로 늘었지만, 연도별 변동이 크다. 2025년 당기순이익 1,983억원 가운데 지배주주 순이익은 466억원이어서 비지배지분 몫에 따라 주주 귀속 이익이 크게 달라질 수 있다.",
-    "en": "The debt ratio was 212.5% in 2025, which is high. Operating cash flow was negative KRW 29.3 billion in 2023 and rose to KRW 238.2 billion in 2025, but it has varied widely between years. Of 2025 net income of KRW 198.3 billion, KRW 46.6 billion was attributable to controlling shareholders, so the earnings available to shareholders depend heavily on the non-controlling share."
+    "ko": "영업활동 현금흐름은 2023년 적자에서 2025년 흑자로 바뀌었지만 연도별 변동이 크다. 2025년 당기순이익 1,983억원 가운데 지배주주 몫은 466억원이어서 비지배지분의 비중이 크다. 향후 현금 창출이 이 폭으로 흔들리면 부채 상환과 투자 여력이 제약될 수 있고, 주주에게 돌아가는 이익 규모도 자회사 지분 구조에 따라 달라질 수 있다.",
+    "en": "Operating cash flow swung from a deficit in 2023 to a surplus in 2025 and has varied widely between years. Of 2025 net income of KRW 198.3 billion, only KRW 46.6 billion was attributable to controlling shareholders, indicating a large non-controlling share. If future cash generation swings by similar magnitudes, debt repayment and investment capacity could be constrained, and profit available to shareholders could vary with the ownership structure of subsidiaries."
    }
   },
   {
@@ -358,5 +358,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

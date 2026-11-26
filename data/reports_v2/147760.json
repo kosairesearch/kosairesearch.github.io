@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "자금 조달과 지분 희석",
-    "en": "Financing and dilution"
+    "ko": "신제품 채택과 확대",
+    "en": "New product adoption"
    },
    "body": {
-    "ko": "2026년 4월 9일 공시된 유상증자는 184억 9,797만원 규모이며 발행가 산정에 할인율 25%가 적용됐다. 신주가 늘면 기존 주주의 지분 가치가 희석될 수 있다. 보도에서는 반복적인 자본 조달이 리스크로 지적됐다.",
-    "en": "The rights offering disclosed on April 9, 2026 was worth KRW 18.5 billion, with a 25% discount applied in setting the issue price. Issuing more shares can dilute the value of existing shareholders' stakes. Press coverage flagged repeated capital raising as a risk."
+    "ko": "피엠티는 2023년부터 2D MEMS 프로브 카드를 개발해 공급하면서 제품 라인을 넓히고 있다. 이 제품이 신규 고객에게 채택되어 기존 프로브 카드와 함께 매출 기반을 넓히는 것이 회사의 다음 단계다. 그러나 채택 속도가 늦어지거나 양산 공급이 기대만큼 이어지지 않으면 단일 제품 구성의 쏠림이 그대로 남을 수 있다. 신제품 공급이 실적에 반영되는 시점도 분기별로 달라 손익 편차가 이어질 수 있다.",
+    "en": "Protec Mems Technology has broadened its product line by developing and supplying 2D MEMS probe cards since 2023. Adoption of this product by new customers, alongside existing probe cards, is the next step in widening the revenue base. If customer adoption slows or mass-production supply does not continue as expected, the concentration in a single product line could persist. The timing at which new-product supply is reflected in results may also vary by quarter, leaving earnings uneven."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

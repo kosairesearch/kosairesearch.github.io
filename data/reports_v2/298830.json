@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "규제 환경과 주가 변동성",
-    "en": "Regulatory environment and share price volatility"
+    "ko": "유럽 AI 규제 대응",
+    "en": "European AI regulation response"
    },
    "body": {
-    "ko": "AI 규제가 강화되는 유럽과 국내 시장에서 AI 검증 수요는 확대될 수 있지만, 검증 기준과 인증 체계가 바뀌면 사업 구조가 영향을 받을 수 있다. 주가는 2026년 8월 투자주의종목 지정이 보여 주듯 단기 수급에 크게 흔들렸다. 실적과 주가의 괴리가 커지는 구간에서는 공시 확인이 중요하다.",
-    "en": "Demand for AI verification could expand as Europe and Korea tighten AI rules, but changes to verification standards or certification schemes could affect the business model. The share price has swung sharply on short-term trading, as the August 2026 investment caution designation showed. When the gap between results and share price widens, filings become the main reference point."
+    "ko": "유럽 AI 규제 대응을 검토하려고 프랑스 AI 검증 기업과 협력한 만큼, 유럽 시장에서의 사업 범위는 규제 요건이 확정되는 방식에 따라 달라질 수 있다. 요건이 확정되기 전 제품 기능을 맞추는 개발 비용이 먼저 늘면 VERIFAI 제품군의 수익성에 부담이 될 수 있다. 반대로 검증 절차가 구체화되면 KOLAS 인정을 확대한 데이터 품질 검증 역량이 수요를 흡수할 수 있다.",
+    "en": "Because the company partnered with a French AI verification firm to explore responses to European AI regulation, the scope of its business in Europe could shift depending on how the rules are finalized. If development costs to align product functions rise before requirements are set, profitability of the VERIFAI product line could come under pressure. Conversely, once verification procedures become concrete, data quality testing capabilities with expanded KOLAS accreditation could absorb demand."
    }
   }
  ],
@@ -339,5 +339,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

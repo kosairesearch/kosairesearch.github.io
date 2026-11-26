@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 유지 리스크",
-    "en": "Listing risk"
+    "ko": "회생절차와 채무조정",
+    "en": "Rehabilitation and debt restructuring"
    },
    "body": {
-    "ko": "거래 정지는 2026년 4월 28일부터 이어지고 있고, 감사의견 거절로 발생한 상장폐지 사유에 대한 개선기간은 2027년 4월 14일까지다. 개선기간 안에 감사의견이 해소되지 않으면 상장 유지 여부가 불투명해진다. 이 경우 주주의 유동성 문제는 상장 유지 결정과 함께 가장 먼저 드러나는 변수가 된다.",
-    "en": "Trading has been suspended since April 28, 2026, and the remedy period for the delisting trigger caused by the disclaimer of opinion runs until April 14, 2027. If the audit opinion is not resolved within that period, whether the listing can be maintained becomes uncertain. In that case, shareholder liquidity would be the first variable to surface alongside the listing decision."
+    "ko": "서울회생법원은 회생절차 개시 여부 결정을 2026년 12월 13일까지 보류한 상태다. 개시 결정이 내려지면 국내 채무는 법원 관리 아래에서 조정되고, 사채권자집회에서 채무조건 변경이 의결되지 않으면 상환 일정을 다시 짜야 한다. 이 과정에서 자산 운용과 경영 판단의 권한이 제약될 수 있다. 채무조정 결과에 따라 두 자리츠의 자산 운용 계획과 상환 재원 배분이 함께 바뀔 수 있다.",
+    "en": "The Seoul Rehabilitation Court has deferred its decision on commencing rehabilitation proceedings until December 13, 2026. If the court commences proceedings, domestic debt would be adjusted under court supervision, and if changes to debt terms are not approved at the bondholders meeting, the repayment schedule would have to be restructured. Operating and management decisions on the assets could be constrained during this process. Depending on the outcome of debt restructuring, the asset management plans for the two child REITs and the allocation of funds for repayment could both change."
    }
   },
   {
    "cat": {
-    "ko": "담보와 채무 구조",
-    "en": "Collateral and debt structure"
+    "ko": "벨기에 자산 투자 집행",
+    "en": "Belgian asset investment execution"
    },
    "body": {
-    "ko": "벨기에 자산 관련 담보 대출이 핵심 부담이다. 대주단은 기한이익 상실 선언을 유보하며 담보권 실행 권리를 보유하고 있다. 2026년 2월에는 단기사채 상환과 벨기에 자산 CAPEX 투자를 위해 500억원 규모의 차입을 진행했고, 이 차입의 발행금리는 6%였다.",
-    "en": "Loans secured by the Belgian asset are the core burden. The lender group has reserved its right to enforce security while withholding a declaration of loss of the benefit of term. In February 2026 the company borrowed KRW 50 billion to repay short-term bonds and fund CAPEX on the Belgian asset, and the issuance in that tranche carried a 6% coupon."
+    "ko": "벨기에 자산 CAPEX 투자는 2026년 2월 차입의 용도에 포함되어 있다. 채무조정 절차가 진행되는 동안 추가 자금 조달이 제한되면 투자 일정이 지연되거나 범위가 줄어들 수 있다. 투자 효과가 임대 수익이나 자산 가치로 이어지는 시점도 늦춰질 수 있다. 보유 자산이 두 곳뿐인 구조에서는 한 자산의 투자 지연이 전체 임대 수익 흐름에 크게 반영된다.",
+    "en": "Capital expenditure on the Belgian asset is one of the uses of the borrowing made in February 2026. If additional funding is constrained while debt restructuring proceeds, the investment schedule could be delayed or its scope reduced. The point at which the investment starts to feed into rental income or asset value could also be pushed back. In a structure with only two assets, a delay in one asset's investment would be reflected heavily in total rental income."
    }
   },
   {
@@ -329,5 +329,6 @@
   },
   "fy_end_month": 6
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

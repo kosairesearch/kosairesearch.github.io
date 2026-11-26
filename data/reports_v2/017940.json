@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "외환·파생상품 평가 리스크",
-    "en": "FX and derivative valuation risk"
+    "ko": "해외 터미널 실행 리스크",
+    "en": "Overseas terminal execution risk"
    },
    "body": {
-    "ko": "2024년 세전이익은 헷지용 파생상품 평가 손실과 연말 환율 급등에 따른 외환평가손실로 부진했다. 선박리스부채와 수입 원가가 외화 기반이라 환율 변동이 이익을 흔들 수 있다. 파생상품 평가 손익은 기초자산 가격 변화에 따라 방향이 바뀐다.",
-    "en": "In 2024, pre-tax profit weakened on a hedge derivative loss and FX valuation losses from a year-end currency spike. Vessel lease liabilities and import costs are dollar-linked, so currency moves can shake earnings, and derivative valuation direction changes with underlying prices."
+    "ko": "베트남 꽝닌성 티엔펑 산업단지의 8만톤 LPG 냉동터미널은 지분 50%의 합작법인이 2027년 상업 가동을 목표로 건설 중이다. 공사가 지연되면 저장시설과 초기 판매 물량이 늦어져 해외 사업의 수익 기여가 밀릴 수 있다. 1억 6,000만달러 프로젝트파이낸싱의 상환 부담도 가동 시점에 맞춰 커질 수 있다. 북부 지역 수입 수요 약 80만톤을 실제 판매로 잇는지가 관건이다.",
+    "en": "The 80,000-ton LPG cold terminal in Tien Phong Industrial Park, Quang Ninh province, is being built by a joint venture in which E1 holds a 50% stake, targeting commercial operation in 2027. A construction delay would push back storage capacity and early sales volumes, slowing the overseas business's contribution to earnings. Repayment of the USD 160 million project financing could also become heavier around the start of operations. Whether annual import demand of about 800,000 tons in northern Vietnam converts into actual sales is the key question."
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 5.83
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

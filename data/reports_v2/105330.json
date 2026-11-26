@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 건전성과 현금흐름",
-    "en": "Financial soundness and cash flow"
+    "ko": "특정 제품군 의존도",
+    "en": "Dependence on a single product line"
    },
    "body": {
-    "ko": "2025년 말 자본총계는 1,221억원인 반면 부채총계는 1,451억원으로, 부채비율이 118.8%까지 올랐다. 영업활동 현금흐름은 2025년 -17.4억원으로 적자 전환했다. 지배주주 순손실이 이어지면 자본이 추가로 잠식될 수 있어 재무 여력이 줄어드는 방향이다. 자사주 소각과 최대주주 변경 이후 재무 구조가 어떻게 조정되는지가 중요하다.",
-    "en": "At the end of 2025, total liabilities of KRW 145.1 billion exceeded total equity of KRW 122.1 billion, and the debt ratio reached 118.8%. Operating cash flow turned to an outflow of KRW 1.74 billion in 2025. If net losses continue, equity could erode further and financial flexibility could narrow. How the capital structure is adjusted after the treasury share cancellation and the change in largest shareholder will be important."
+    "ko": "플루오린코리아의 반도체용 특수가스는 2022년 상반기 연결 매출의 65.0%를 차지했다. 이 제품군의 고객 인증과 설비 연계가 흔들리면 연결 실적 전반에 영향이 번질 수 있다. 반도체 설비 투자가 줄어 주요 고객의 주문이 감소하면 가동률도 낮아질 수 있다. 매출이 한 자회사 제품군에 기대는 구조가 실적 변동성을 키울 수 있다.",
+    "en": "Semiconductor special gases supplied by subsidiary Fluorine Korea accounted for 65.0% of consolidated revenue in the first half of 2022. If customer qualification and equipment linkage for this product line weaken, the effect could spread across consolidated results. If capital investment in semiconductors declines and key customers reduce orders, utilization could also fall. A revenue base that depends on a single subsidiary's product line could amplify earnings volatility."
    }
   }
  ],
@@ -348,5 +348,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

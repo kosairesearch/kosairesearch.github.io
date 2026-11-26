@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "현금흐름과 부채",
-    "en": "Cash flow and leverage"
+    "ko": "미국 시공 원가 부담",
+    "en": "U.S. project cost pressure"
    },
    "body": {
-    "ko": "2025년 영업활동 현금흐름이 -175억원으로 적자였다. 부채비율이 64.6%로 올라 2024년 27.9%보다 높아졌다. 영업이익이 흑자 전환했어도 영업 외 손익과 세금 등 영업이익 아래 항목이 순손익을 끌어내리는 구조가 남아 있다. 이 구간에서 자금 조달 여건이 달라지면 사업 확장 속도가 영향을 받을 수 있다.",
-    "en": "Operating cash flow was -KRW 17.5 billion in 2025. The debt ratio rose to 64.6% from 27.9% in 2024. Even with operating profit back in the black, items below operating profit continue to pull net results down. Changes in funding conditions could affect the pace of expansion."
+    "ko": "회사 설명에 따르면 미국에서는 건설 자재비와 인건비가 함께 오르고 있다. 엠코 애리조나 1차 공급은 약 10개월 일정의 시공이어서, 공사 기간 중 원가가 계약 금액을 웃돌면 프로젝트 이익률이 낮아질 수 있다. 후속 프로젝트를 늘릴수록 이런 원가 압박이 해외 매출의 수익성에 반복해서 영향을 줄 수 있다.",
+    "en": "According to the company, construction material and labor costs are rising together in the United States. The first Amkor Arizona supply order runs for about 10 months, so if costs exceed the contract price during construction, project margins could decline. As follow-on projects increase, this cost pressure could repeatedly affect the profitability of overseas sales."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

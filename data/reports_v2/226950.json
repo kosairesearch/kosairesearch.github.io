@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "자금 조달과 시장 변동성",
-    "en": "Funding needs and market volatility"
+    "ko": "확장 과제 실행",
+    "en": "Expansion execution risk"
    },
    "body": {
-    "ko": "영업활동 현금흐름이 4년 연속 마이너스이고 영업손실이 2026년 들어 확대되고 있어, 개발비를 충당하려면 추가 자금 조달이 필요할 수 있다. 바이오 업종은 2026년 3월 KRX 헬스케어 지수가 10% 급락하는 등 지정학 변수에 민감했다. 업종 전반의 투자 심리 변화가 주가 변동성에 영향을 줄 수 있다.",
-    "en": "Operating cash flow has been negative for four straight years and the operating loss has widened in 2026, so additional funding could be needed to cover development costs. The biotech sector is sensitive to geopolitical shocks, as the KRX Healthcare Index fell 10% in March 2026. Shifts in sector-wide sentiment could add to share price volatility."
+    "ko": "회사는 '올릭스 2.0' 로드맵으로 적용 조직을 지방 조직, 중추신경계, 신장, 근육까지 넓히고 있다. 2026년 7월 공개한 오아시스-듀오 플랫폼과 2027년 IND 제출 목표의 ALK7 프로그램도 이 확장에 속한다. 여러 조직과 표적을 동시에 개발하면 인력과 파트너 협의가 분산되어 일정이 늦어질 수 있다. 확장 프로그램이 목표 시점에 IND나 임상 단계에 이르지 못하면 장기 파이프라인 평가가 늦어질 수 있다.",
+    "en": "The company is widening the tissues its platform addresses, from fat tissue to the central nervous system, kidney and muscle, under its 'OliX 2.0' roadmap. The OASIS-DUO platform unveiled in July 2026 and the ALK7 program, with an IND submission target in 2027, also belong to this expansion. Developing several tissues and targets at once could spread research staff and partner discussions, which may delay timelines. If expansion programs fail to reach IND or clinical stages by their target dates, the evaluation of the long-term pipeline could be pushed back."
    }
   }
  ],
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

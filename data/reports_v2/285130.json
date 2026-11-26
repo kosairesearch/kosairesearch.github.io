@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "자회사 실적 변동",
-    "en": "Subsidiary earnings volatility"
+    "ko": "제약 목표와 복합제 개발",
+    "en": "Pharma target and combination R&D"
    },
    "body": {
-    "ko": "연결 영업이익은 SK바이오사이언스의 백신과 CDMO 매출, 그리고 적자 폭에 따라 크게 좌우된다. 2026년 1분기 연결 영업손실 189억원이 보여 주듯, 자회사 손익이 악화하면 본체 흑자가 있어도 연결 실적이 적자로 돌아설 수 있다. 자회사 손익은 고객사 주문과 생산 효율에 따라 분기마다 달라진다.",
-    "en": "Consolidated operating profit depends heavily on vaccine and CDMO sales at SK bioscience and on the size of its losses. As the Q1 2026 consolidated operating loss of KRW 18.9 billion shows, a deterioration at subsidiaries can push consolidated results into the red even when the core business is profitable. Subsidiary results change from quarter to quarter with customer orders and production efficiency."
+    "ko": "2030년 제약사업 영업이익 500억원 목표는 내과 분야 라이선스 인 3건과 복합제 중심 단기 연구개발 5건 이상의 진행에 기대고 있다. 도입 품목의 판매가 기대만큼 늘지 않거나 복합제 개발 일정이 늦어지면 목표 달성 시점이 뒤로 밀릴 수 있다. 제약 부문의 2026년 3분기 영업이익은 97억원으로, 목표 수준까지는 아직 간격이 크다.",
+    "en": "The 2030 target of KRW 50 billion in pharmaceutical operating profit depends on three in-licensing deals in internal medicine and progress on five or more short-term R&D projects centered on combination drugs. If sales of in-licensed products fall short of expectations or combination drug development runs behind schedule, the timing of reaching the target could slip. Pharmaceutical operating profit was KRW 9.7 billion in Q3 2026, so the gap to the target remains wide."
    }
   },
   {
    "cat": {
-    "ko": "화학 업황과 원재료·환율",
-    "en": "Chemicals cycle, raw materials and currency"
+    "ko": "고부가 소재와 중국 공급",
+    "en": "Higher-value materials and China supply"
    },
    "body": {
-    "ko": "원료 가격 상승, 환율 하락, 유가 변동이 화학 부문 수익성에 동시에 부담을 줬다. 중동 특수 효과가 사라지면서 판매량이 줄어든 점은 수요 사이클의 위험을 보여 준다. 중국 공급 확대와 글로벌 수요 둔화가 길어지면 고부가 제품 비중 확대의 효과가 제한될 수 있다.",
-    "en": "Higher raw material prices, a weaker won and oil price swings weighed on chemicals profitability at the same time. The fading of the Middle East-driven demand boost, which reduced sales volumes, shows the risk in the demand cycle. If Chinese supply growth and weaker global demand persist, the effect of a higher-value product mix may be limited."
+    "ko": "고부가 코폴리에스터의 화장품 용기·의료용 소재 등 용도 확대는 회사가 계획한 성장 축이다. 2025년 키움증권 리포트는 중국 업체의 고부가 공급 확대가 어렵다고 봤지만, 중국 정책이 설비 증설로 이어지면 이 전제가 달라질 수 있다. 중국 공급이 늘면 고부가 제품의 가격과 물량 확대 효과가 제한될 수 있다.",
+    "en": "Expanding higher-value copolyester into uses such as cosmetic containers and medical materials is a growth axis the company has set out. A 2025 Kiwoom Securities report judged that Chinese producers find it hard to expand higher-value supply, but if China's policy push translates into new capacity, that premise could change. Growing Chinese supply could limit the price and volume gains from the higher-value product mix."
    }
   },
   {
    "cat": {
-    "ko": "재무 구조와 이익 기반",
-    "en": "Capital structure and earnings base"
+    "ko": "열병합 설비 가동",
+    "en": "Cogeneration plant operations"
    },
    "body": {
-    "ko": "부채비율은 2022년 45.7%에서 2025년 93.8%로 올라갔고, 2025년 말 부채총계는 2조 9,472억원이다. 영업활동 현금흐름은 2024년 -893억원에서 2025년 2,359억원으로 연도별 변동이 크다. 최근 4개 분기 지배주주 순이익 합계 110억원은 이익 완충력이 크지 않다는 뜻이다.",
-    "en": "The debt ratio climbed from 45.7% in 2022 to 93.8% in 2025, with total liabilities of KRW 2.95 trillion at year-end 2025. Operating cash flow swung from -KRW 89.3 billion in 2024 to KRW 235.9 billion in 2025, a large year-to-year change. Net income attributable to controlling shareholders of KRW 11 billion over the last four quarters indicates limited earnings cushion."
+    "ko": "울산 열병합발전소는 2025년 11월 상업 가동을 시작해 연결 매출을 늘리는 요인이 됐다. 이 설비의 가동이 중단되거나 기대만큼 안정되지 않으면 유틸리티 자회사의 매출 기여가 줄어들 수 있다. 연결 매출은 화학·제약 본체와 함께 이 자회사의 가동에도 기대고 있어, 설비 운전 상태가 연결 실적 변동의 한 요인이 된다.",
+    "en": "The cogeneration plant in Ulsan began commercial operation in November 2025 and has added to consolidated revenue. If the plant suffers outages or does not run as stably as planned, the revenue contribution from the utility subsidiary could shrink. Because consolidated revenue also depends on this subsidiary's operation alongside the chemicals and pharmaceutical core, plant performance becomes one factor behind swings in consolidated results."
    }
   }
  ],
@@ -340,5 +340,6 @@
    "div": 2.89
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

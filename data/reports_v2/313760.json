@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 적격성",
-    "en": "Listing Eligibility"
+    "ko": "신사업 실행",
+    "en": "New Business Execution"
    },
    "body": {
-    "ko": "2026년 4월 1일부터 상장폐지 사유 발생에 따른 주권매매거래 정지가 공시됐고, 정지는 이의신청 기간 만료 또는 상장폐지 여부 결정까지 이어지도록 제시됐다. 불성실공시법인 지정 예고와 추가 벌점 가능성도 같은 시기에 겹쳐 있다. 감사보고서 제출 지연은 감사의견 형성 과정과 연결돼 있어 절차 일정 자체가 리스크다.",
-    "en": "Trading was suspended from April 1, 2026 due to a delisting cause, with the suspension set to last until the appeal period expires or a delisting decision is made. The notice of possible unfaithful-disclosure designation and the risk of additional penalty points overlap with this period. The delayed audit report is tied to the audit opinion process, so the timetable itself is a risk."
+    "ko": "회사는 태양광, ESS, VPP, 수소연료전지 발전소와 송전선로 설계·시공으로 사업을 넓히는 중이다. 이들 사업의 수주 규모는 아직 공시 수치로 확인되지 않았다. 수주가 기대에 못 미치면 매출 감소를 상쇄하지 못하고 사업 비용 부담이 이어질 수 있다. 신재생 사업이 분리된 종속기업을 통해 수행되는 구조라 회사 손익에 반영되는 방식도 함께 확인해야 한다.",
+    "en": "The company is widening its business into solar power, ESS, VPP, hydrogen fuel cell power plants, and transmission line design and construction. The size of orders in these areas has not yet been confirmed in disclosed figures. If orders fall short of expectations, the company may be unable to offset the sales decline, and the cost burden of these businesses could persist. Because renewable operations run through a separate subsidiary, how their results flow into the company's profit and loss also needs to be checked."
    }
   },
   {
    "cat": {
-    "ko": "재무·유동성",
-    "en": "Financial Position and Liquidity"
+    "ko": "협업 채널 의존",
+    "en": "Construction Partner Channel"
    },
    "body": {
-    "ko": "2025년 말 부채총계 313억원이 자본총계 214억원을 웃돌고, 부채비율은 146.6%다. 영업활동 현금흐름은 2022년부터 2025년까지 적자였고 적자 폭은 줄었지만 여전히 음(-)이다. 최근 4개 분기 지배주주 순손실 합계 68.8억원이 자본을 계속 깎아 먹는 구조라면 재무 여력은 더 줄어든다.",
-    "en": "At the end of 2025, total liabilities of KRW 31.3 billion exceeded total equity of KRW 21.4 billion, and the debt ratio stood at 146.6%. Operating cash flow was negative in each year from 2022 through 2025, and although the outflow narrowed, it remains negative. If net losses of KRW 6.88 billion over the last four quarters keep eroding equity, the financial cushion will continue to thin."
+    "ko": "건축물 태양광 설치는 주요 건설사와의 협업을 통해 영업하고 있고, 설계 단계 참여로 수주 확률을 높이는 것이 회사의 방향이다. 이 채널의 수주는 건설사의 착공 일정과 발주 방식에 따라 좌우되므로 현장 일정이 밀리면 수주가 늦어질 수 있다. 설계 단계 참여가 실제 수주로 이어지는지도 아직 공시 수치로 확인되지 않았다.",
+    "en": "Rooftop solar installation is sold through cooperation with major construction firms, and the company aims to raise its win rate by joining projects at the design stage. Orders through this channel depend on the construction firms' start schedules and tender methods, so delays on site could push back awards. Whether design-stage participation actually turns into orders has not yet been confirmed in disclosed figures."
    }
   },
   {
    "cat": {
-    "ko": "사업 기반·수요",
-    "en": "Business Base and Demand"
+    "ko": "환경규제 일정",
+    "en": "Environmental Regulation Timing"
    },
    "body": {
-    "ko": "매출은 2025년 74.8억원까지 줄었고 2026년 2분기에는 2,337만원으로 급감했다. 주력 제품의 수요 감소가 실적 악화의 배경으로 제시됐고, 특정 제품군과 고객 의존도가 높은 구조다. 신재생과 ESS 등 신사업의 매출 기여는 아직 정기보고서 수치로 드러나지 않았다.",
-    "en": "Revenue fell to KRW 7.48 billion in 2025, and Q2 2026 revenue dropped to KRW 23.37 million. Weaker demand for the core products was cited as the cause of the deterioration, and the business relies heavily on a few product lines and customers. The sales contribution from new areas such as renewables and ESS has not yet appeared in periodic report figures."
+    "ko": "선박 평형수 처리 장치는 국제 환경규제 강화를 배경으로 한 제품이어서, 규제의 시행 시점과 기준이 수요를 좌우한다. 규제 적용이 늦춰지거나 기준이 바뀌면 선박 발주와 설치 수요의 시기가 함께 밀릴 수 있다. 이 제품군의 매출 규모는 아직 확인된 수치가 없어, 규제 변화가 실적에 미치는 폭을 가늠하기 어렵다.",
+    "en": "The marine ballast water treatment unit reflects tighter international environmental rules, so the timing and standards of those rules shape its demand. If enforcement is delayed or the standards change, the timing of ship orders and installation demand could shift as well. Sales for this product line have no confirmed figures yet, so it is difficult to gauge how far regulatory changes would affect results."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

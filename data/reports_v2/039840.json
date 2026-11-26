@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "중국 가격·유통 리스크",
-    "en": "China pricing and distribution risk"
+    "ko": "해외 법인 매출 목표 리스크",
+    "en": "Overseas subsidiary target risk"
    },
    "body": {
-    "ko": "중국은 국공립 의료기관 대상 저가 대량 구매 제도(VBP)를 운영하고 있으며, 2차 VBP는 가격 압박의 변수로 꼽힌다. 2026년 3분기에는 중국 내 일부 유통 이슈가 분기 매출을 끌어내린 사례가 있어 유통 채널 관리가 과제로 남는다. 중국 사천 공장의 현지 생산이 입찰 전략의 핵심으로 제시됐다.",
-    "en": "China runs a volume-based procurement system for public hospitals, and a second round is seen as a source of price pressure. In the third quarter of 2026, some distribution issues in China weighed on quarterly revenue, so channel management remains a challenge. Local production at the Sichuan plant has been presented as central to the bidding strategy."
+    "ko": "회사는 미국 법인의 2026년 매출 100억원 돌파와 인도·호주·러시아 각 100억원 달성을 목표로 제시했다. 이들 법인의 매출이 목표에 못 미치면 7개 전략 국가 30% 이상 성장 계획의 속도가 늦어질 수 있다. 해외 매출 비중이 높은 구조에서 신규 법인의 성장 지연은 외형 성장 폭을 좁힐 수 있다. 목표 미달이 이어지면 국가별 영업 계획의 재조정이 필요할 수 있다.",
+    "en": "The company set targets for its US subsidiary to pass KRW 10 billion in 2026 sales and for India, Australia and Russia to each reach KRW 10 billion. If these subsidiaries fall short, the pace of the plan to grow more than 30% across seven strategic countries could slow. With overseas sales making up most of revenue, slower growth at newer subsidiaries could narrow the scope of overseas expansion. Persistent shortfalls could require recalibrating country-level sales plans."
    }
   },
   {
    "cat": {
-    "ko": "환율·외화환산 손익 리스크",
-    "en": "Currency and translation gain-loss risk"
+    "ko": "PrismX 해외 공급 확대 리스크",
+    "en": "PrismX overseas supply expansion risk"
    },
    "body": {
-    "ko": "해외 판매법인에 대한 외화표시 관계사채권을 기말환율로 평가하면서 손실이 발생했다고 회사는 설명했다. 해외 매출 비중이 80%를 넘는 만큼 환율 변동이 영업외 손익과 순이익의 변동성을 키울 수 있다. 누적 기준 순손실의 배경으로 외화환산손실이 보도됐다.",
-    "en": "The company explained that its foreign-currency intercompany bonds at overseas sales subsidiaries, valued at period-end exchange rates, generated losses. With more than 80% of sales overseas, currency moves can widen volatility in non-operating items and net income. Foreign-currency translation losses were reported as a reason for the cumulative net loss."
+    "ko": "PrismX는 2026년 연말 호주·멕시코·미국·포르투갈·인도·튀르키예 등을 중심으로 공급을 확대할 계획이다. 8도 커넥션 제품의 공급 확대가 계획보다 늦어지면 해외 매출 성장의 한 축이 시기를 넘길 수 있다. 주력 제품인 UNICON·SICON과 함께 PrismX가 해외 공급 라인업을 넓히는 역할을 맡고 있어, 확대 지연은 해외 실적 전망에 영향을 줄 수 있다. 해외 매출 증가로 반영되는지는 이후 분기 실적에서 확인될 수 있다.",
+    "en": "PrismX is planned to expand supply around year-end 2026, centered on Australia, Mexico, the United States, Portugal, India and Turkey. If supply expansion of this 8-degree connection product falls behind plan, one pillar of overseas sales growth could slip. Alongside the core UNICON and SICON, PrismX is meant to widen the overseas supply lineup, so a delay could weigh on the overseas outlook. Whether the expansion shows up in overseas sales could become visible in quarterly results after it begins."
    }
   },
   {
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

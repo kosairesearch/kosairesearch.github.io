@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원·부자재 수급 리스크",
-    "en": "Raw and sub-material supply risk"
+    "ko": "신규 품목·유통 실행",
+    "en": "New item and channel execution"
    },
    "body": {
-    "ko": "지정학적 리스크로 원·부자재 수급이 흔들리면 생산과 공급이 제약을 받는다. 2026년 상반기 영업손실이 확대된 배경 중 하나로 이 요인이 지목됐다. 자동화 설비가 늘어도 원료 조달이 안정되지 않으면 증설 효과가 상쇄될 수 있다. 조달처 다변화 여부는 공시 외에 확인할 자료가 제한적이라 분기 실적으로 추적하는 것이 현실적이다.",
-    "en": "If geopolitical tensions disrupt raw and sub-material supply, production and delivery are constrained. The disruption was cited as one reason the first-half 2026 operating loss widened. Even with more automated capacity, expansion benefits could be offset if sourcing stays unstable. Quarterly results are the practical way to track the effect."
+    "ko": "펫푸드 부문은 신규 유통 경로를 넓혀 매출원을 다각화할 계획이며, 식기세척기용 캡슐도 판매 품목 확대의 축으로 제시됐다. 계획이 유통 확보로 이어지지 않으면 동물용품 비중 18.6%는 현 수준에 머물 수 있다. 신규 품목은 충진·포장 공정 외에 판매 경로를 새로 확보해야 해 초기 비용이 손익에 먼저 반영될 수 있다. 이 성과는 분기별 매출 구성 변화로 확인하는 것이 현실적이다.",
+    "en": "The pet-food segment plans to widen distribution channels to diversify revenue, and dishwasher capsules are cited as a focus for expanding the product list. If the plan does not translate into secured distribution, the 18.6% animal-products share may stay at its current level. New items need separate sales channels beyond the filling and packaging process, so initial costs may hit profit first. Tracking changes in the quarterly revenue mix is the practical way to check the results."
    }
   },
   {
@@ -336,5 +336,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

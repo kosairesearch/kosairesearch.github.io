@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "종속기업 손익 리스크",
-    "en": "Subsidiary earnings risk"
+    "ko": "2차전지 투자 수요 리스크",
+    "en": "Secondary battery investment demand risk"
    },
    "body": {
-    "ko": "파워로직스의 유효지분율은 33.75%로, 2차전지·카메라모듈 사업의 손익이 연결 실적에 크게 반영된다. 2025년 실적 부진의 원인으로 종속기업 부진이 지목된 만큼, 자회사 매출 증가보다 원가와 비용 부담이 더 빠르게 늘어나는지 살펴야 한다. 지배주주 몫과 전체 손익의 차이도 함께 확인해야 한다.",
-    "en": "Powerlogics, in which the company holds a 33.75% effective stake, carries a large share of consolidated results from the secondary battery and camera module business. Weak subsidiary performance was cited for 2025, so whether costs rise faster than subsidiary sales must be watched. The gap between attributable and total results also needs tracking."
+    "ko": "2차전지 장비 및 ES 부문은 2026년 1분기 매출의 19.56%를 차지하고, 중대형 배터리팩 실적은 전기차·ESS 시장 확대에 기대어 있다. 신규 시설 투자 확대는 국내 배터리 제조사의 수주잔고 증가를 근거로 한 기대일 뿐 확인된 발주는 아니다. 고객의 설비 투자가 지연되면 이 부문 매출과 파워로직스 손익이 함께 흔들릴 수 있다.",
+    "en": "Secondary battery and ES operations accounted for 19.56% of Q1 2026 revenue, and results from medium and large battery packs depend on EV and ESS market expansion. Expansion of new facility investment is an expectation based on rising order backlogs at domestic battery makers, not yet confirmed by orders. If customers' capital spending is delayed, sales in this segment and Powerlogics' earnings could both be affected."
    }
   },
   {
    "cat": {
-    "ko": "고객·수출 집중 리스크",
-    "en": "Customer and export concentration risk"
+    "ko": "전장 장비 목표 달성 리스크",
+    "en": "Automotive electronics target risk"
    },
    "body": {
-    "ko": "2026년 1분기 카메라모듈 부문이 매출의 71.68%를 차지해 특정 제품과 수요에 대한 의존도가 높다. 수출 비중은 86.50%로 해외 고객의 설비 투자와 환율 변화에 따라 매출이 흔들릴 수 있다. 고객 다변화 수준과 제품별 채택 현황은 공시와 실적에서 확인해야 한다.",
-    "en": "In Q1 2026 the camera module segment made up 71.68% of revenue, so dependence on specific products and demand is high. With exports at 86.50%, sales can move with overseas customers' capital spending and exchange rates. Customer diversification and product-level adoption must be checked in disclosures and results."
+    "ko": "자동차 전장 장비는 계기판과 중앙정보 디스플레이를 일체형으로 만드는 본딩 장비로, 연간 250억원 이상 매출을 목표로 제품 다각화와 시장 확대를 추진하고 있다. 이 목표는 전장 고객의 제품 채택과 양산 전환에 달려 있다. 채택이 지연되거나 고객의 차량 프로그램이 바뀌면 목표 매출과 설비 투자 회수가 늦어질 수 있다.",
+    "en": "Automotive electronics equipment is bonding equipment that integrates instrument clusters and center information displays, and the company is pursuing product diversification and market expansion with a target of annual sales above KRW 25 billion. Reaching this target depends on electronics customers adopting its products and moving to mass production. If adoption is delayed or customers' vehicle programs change, target sales and recovery of equipment investment could be pushed back."
    }
   },
   {
@@ -350,5 +350,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "규제/허가",
-    "en": "Regulatory/Approval"
+    "ko": "증설·투자 집행",
+    "en": "Plant Expansion Execution"
    },
    "body": {
-    "ko": "미프지미소는 2021년 최초 신청 이후 두 차례 자진 취하 또는 보완 절차를 거쳤고, 현재 세 번째 신청에 대한 식약처 심사가 진행 중이다. HDNO-1605 역시 임상 2b상 단계로, 상업화까지는 추가 임상과 허가 절차가 남아 있다. 규제 당국의 심사 일정과 결과는 회사가 통제하기 어려운 변수다.",
-    "en": "Mifegymiso has gone through voluntary withdrawals or supplementary submissions twice since its initial 2021 application, with a third application now under review by the Ministry of Food and Drug Safety. HDNO-1605 also remains at the phase 2b clinical stage, with further trials and approval procedures required before commercialization. The timing and outcome of regulatory reviews are variables largely outside the company's control."
+    "ko": "회사는 2026년 초 자사주 처분 자금을 천안공장 증설과 제2형 당뇨병 치료제 임상시험에 투입할 계획이다. 두 공장의 누적 평균 가동률은 97.1%로 증설 필요성이 있으나, 일정 지연이나 투자 대비 매출 회수가 늦어지면 고정비 부담이 이익 개선 흐름을 약화시킬 수 있다. 임상시험 비용도 개발 일정에 따라 늘어날 수 있어 자금 배분의 적정성이 주요 변수다.",
+    "en": "The company has said it plans to direct proceeds from the early-2026 treasury share disposal toward expanding its Cheonan plant and funding clinical trials for its type 2 diabetes drug candidate. With average utilization at 97.1% across its plants, expansion is needed, but delays in construction or slow recovery of returns on the investment could raise fixed-cost burdens and weaken the profit recovery. Clinical trial costs may also rise with the development timeline, making the appropriateness of capital allocation a key variable."
    }
   },
   {
@@ -349,5 +349,6 @@
    "dps": 30.0,
    "div": 0.41
   }
- }
+ },
+ "riskSplit": 1
 }

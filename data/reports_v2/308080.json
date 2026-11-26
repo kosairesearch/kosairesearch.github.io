@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "규제 리스크",
-    "en": "Regulatory risk"
+    "ko": "첨단재생의료 제도 리스크",
+    "en": "Advanced regenerative medicine system risk"
    },
    "body": {
-    "ko": "2차 지표 미달로 식약처의 조건부 허가 판단이 불확실하며, 국내에서 항암제가 2상 단독 자료로 조건부 허가를 받은 사례는 드물다. 추가 임상 요구 범위가 넓어지면 허가 일정과 상업화 시점이 2027년 상반기 목표에서 밀릴 수 있다. 회사는 규제기관과 충분히 협의하겠다는 입장이다.",
-    "en": "Because the secondary endpoint was missed, the Ministry of Food and Drug Safety's conditional approval decision is uncertain, and few anticancer drugs in Korea have won conditional approval on Phase 2 data alone. If the scope of required additional trials expands, approval and launch could slip from the first-half 2027 target. The company has said it will consult extensively with regulators."
+    "ko": "회사는 2026년 9월부터 첨단재생의료 치료계획에 따라 환자 치료와 등록을 진행하고 있다. 이 경로는 조건부 허가와 별개로 치료 실적을 쌓는 수단인데, 등록 환자 수와 치료 결과가 제도 기준을 충족해야 운영 범위가 유지된다. 제도 기준이나 심의 절차가 바뀌면 치료계획의 승인 범위와 등록 일정이 조정될 수 있다.",
+    "en": "The company has been treating and enrolling patients under an advanced regenerative medicine treatment plan since September 2026. This route serves as a way to build treatment records apart from conditional approval, but its operating scope depends on whether enrolled patient numbers and treatment outcomes meet the system's standards. If the system's criteria or review procedures change, the approved scope of the treatment plan and enrollment timelines could be adjusted."
    }
   },
   {
    "cat": {
-    "ko": "재무 리스크",
-    "en": "Financial risk"
+    "ko": "GMP 생산·위탁 리스크",
+    "en": "GMP manufacturing and contract risk"
    },
    "body": {
-    "ko": "2022년부터 4년 연속 영업손실이고 최근 4개 분기 지배주주 순손실 합계는 134억원이다. 연 매출 30억원 요건과 2021년 특례 일몰이 맞물려 있어 매출 확보가 시급하다는 분석이 있다. 추가 자금조달이 필요해질 경우 지분 희석 가능성도 배제하기 어렵다.",
-    "en": "Operating losses have persisted for four years from 2022, and the net loss attributable to controlling shareholders over the last four quarters totaled KRW 13.4 billion. Analysts note that the KRW 3 billion annual revenue requirement and the expiring listing exemption make revenue generation urgent. If additional funding becomes necessary, dilution of existing shareholders cannot be ruled out."
+    "ko": "자체 GMP 제조시설인 V-Cell Center는 자가 치료제와 위탁생산 물량을 함께 감당해야 한다. 허가 이후 상용 공급 물량이 늘어나면 생산 일정과 품질 관리가 병목이 될 수 있다. 위탁개발생산 고객 확보가 늦어지면 외부 고객 매출 기반도 함께 제한된다. 이 경우 수익화 시점이 기술이전이나 출시 일정과 어긋날 수 있다.",
+    "en": "The in-house GMP facility, the V-Cell Center, must handle both autologous therapy production and contract manufacturing volumes. As commercial supply grows after approval, production scheduling and quality control could become bottlenecks. If contract development and manufacturing clients are slow to be secured, the external revenue base will also remain limited. In that case, the timing of monetization could diverge from licensing and launch schedules."
    }
   },
   {
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

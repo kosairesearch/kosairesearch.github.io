@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무·자본 구조",
-    "en": "Financial and capital structure"
+    "ko": "주주환원과 투자 재원",
+    "en": "Shareholder returns vs. investment funding"
    },
    "body": {
-    "ko": "2025년 말 부채비율은 119.0%이고 자본총계는 2,085억원이다. 1,406억원 규모 유상증자에 따른 주식 수 증가는 주당 지표의 희석으로 이어질 수 있다. 전환사채 평가손익은 순손익을 흔들어 재무 판단의 불확실성을 키운다.",
-    "en": "The debt-to-equity ratio was 119.0% at the end of 2025, with total equity of KRW 208.5 billion. The increase in share count from the rights offering could dilute per-share metrics. Convertible bond valuation gains and losses swing net income and add uncertainty to financial assessment."
+    "ko": "회사는 자사주 매입·소각과 배당 등 추가 주주환원 방안을 검토하고 있으며, 동탄 시설자금 1,050억원을 배정해 둔 상태다. 주주환원에 쓰이는 현금이 생산시설 투자 재원과 경합하면 증설 일정과 재무 여력에 부담이 될 수 있다. 제3회 전환사채 취득 대금 지급과 운영자금 배정도 같은 자금 흐름 안에서 조정될 필요가 있다.",
+    "en": "The company is reviewing additional shareholder returns such as buybacks, cancellations, and dividends, while KRW 105 billion of facility funding for Dongtan has been allocated. If cash used for shareholder returns competes with production facility investment, the expansion schedule and financial flexibility could come under pressure. Payment for the third convertible bond acquisition and the allocation of operating funds would also need to be adjusted within the same cash flow."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "증설 실행과 수요 균형",
-    "en": "Expansion execution and demand balance"
+    "ko": "중국 자회사 운영",
+    "en": "China subsidiary operations"
    },
    "body": {
-    "ko": "월 15만개 생산 설비 준비와 2027년 증설 가동이 계획대로 진행되지 않으면 수요와 생산능력의 균형이 어긋날 수 있다. 반대로 증설분이 가동된 뒤 수요가 따라오지 않으면 고정비 부담이 커진다. 한 증권 분석은 동탄 투자 규모가 현재 외형에 비해 선제적이라고 평가했다.",
-    "en": "If equipment for 150,000 units a month and the 2027 expansion do not proceed on schedule, supply and demand may fall out of balance. Conversely, if demand does not keep pace after expansion output starts, fixed-cost pressure would increase. One securities analysis described the Dongtan investment as ahead of current business scale."
+    "ko": "중국 쿤산의 L&C Bioscience Technology는 의료기기를 제조·판매하는 연결 대상 법인이다. 중국 현지의 규제나 생산 운영에 변화가 생기면 의료기기 부문 매출과 연결 실적에 직접 영향을 줄 수 있다. 수출 중심 전략으로 무게중심이 옮겨 가는 것으로 풀이되는 만큼, 쿤산 법인의 역할과 생산 운영 여부가 해외 전략의 실행에 영향을 줄 수 있다.",
+    "en": "L&C Bioscience Technology (Kunshan), which manufactures and sells medical devices in China, is a consolidated subsidiary. Changes in local regulation or production operations in China could directly affect device sales and consolidated results. As the strategy appears to shift toward export-oriented production, the role and operation of the Kunshan unit could influence how the overseas strategy is executed."
    }
   }
  ],
@@ -362,5 +362,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

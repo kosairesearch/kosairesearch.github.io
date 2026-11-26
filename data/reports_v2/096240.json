@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "인구 구조와 규제",
-    "en": "Demographics and regulation"
+    "ko": "신규 과정·플랫폼 확장",
+    "en": "Expansion of new courses and platform"
    },
    "body": {
-    "ko": "학령인구 감소는 교육 업종 전체의 구조적 과제이며, 크레버스의 수강료 중심 매출 구조에 직접 영향을 준다. 교육과정과 평가 체계가 바뀌면 기존 커리큘럼의 적합성이 달라질 수 있다. 회사는 개정 교육과정을 기회로 보지만, 신규 과정이 재원생 확보로 이어지는지는 등록 추이로 확인해야 한다.",
-    "en": "The shrinking school-age population is a structural challenge for the whole education sector and directly affects a revenue base built on tuition. Changes to the curriculum and assessment system could alter the fit of existing course content. The company sees the revised curriculum as an opportunity, but whether new courses lead to enrollment has to be confirmed through registration trends."
+    "ko": "회사는 청담어학원의 THE OPEN 과정과 CMS영재관의 고등부 수학 과정을 확장하고 있으며, 메타버스 플랫폼 '바운시'를 강화하고 있다. 온라인 교재·교구와 프랜차이즈를 키워 수익원을 넓히려는 계획도 있다. 이들 신규 과정과 플랫폼이 수강료 수준의 재원생 확보와 수익으로 이어지지 않으면 개발과 운영 비용만 늘어날 수 있다. 사업 확장의 성과는 재원생 추이와 분기 영업이익률로 확인해야 한다.",
+    "en": "The company is expanding the THE OPEN course at Chungdahm English Academy and the high-school math course at CMS gifted education, and is strengthening its Bouncy metaverse platform. It also plans to grow online learning materials and franchising to widen its revenue sources. If these new courses and platform fail to secure enrollment and revenue on the scale of tuition, development and operating costs could rise without a matching return. Results of the expansion should be checked against enrollment trends and quarterly operating margins."
    }
   },
   {
    "cat": {
-    "ko": "재무·유동성",
-    "en": "Financial and liquidity"
+    "ko": "교육과정 개편 대응",
+    "en": "Response to curriculum revision"
    },
    "body": {
-    "ko": "부채총계 1,342억원은 자본총계 452억원을 웃돈다. 2025년 3분기 말 현금 및 현금성자산은 186억원, 유동비율은 53.6%였다. 교환사채 발행과 자산 매각으로 재무 여건을 관리하고 있지만, 차입과 이자 부담이 이익 회복 속도보다 빠르게 쌓이면 재무 여력이 줄어들 수 있다.",
-    "en": "Total liabilities of KRW 134.2 billion exceed total equity of KRW 45.2 billion. Cash and cash equivalents were KRW 18.6 billion and the current ratio was 53.6% at the end of the third quarter of 2025. The company is managing its financial position through an exchangeable bond issue and asset sales, but financial room could narrow if borrowing and interest costs build faster than earnings recover."
+    "ko": "개정 교육과정은 근거를 들어 의견을 표현하고 문제를 해결하는 역량을 강조하는데, 회사는 축적된 사고력 교육 경험이 이 방향과 맞는다고 설명한다. 다만 이는 회사의 자체 판단이며 외부 검증 자료가 아니다. 교육과정과 평가 체계가 실제로 바뀌면 기존 커리큘럼의 적합성과 학부모의 선택 기준이 달라질 수 있다. 이 변화가 재원생 증가로 이어지는지는 이후 등록 추이로 확인해야 한다.",
+    "en": "The revised curriculum emphasizes competencies such as explaining one's reasoning with evidence and solving problems, and the company argues that its accumulated thinking-skills teaching fits this direction. However, this is the company's own assessment and has not been externally verified. If the curriculum and assessment system change in practice, the fit of existing course content and the criteria parents use to choose courses could shift. Whether these changes lead to higher enrollment should be confirmed through later registration trends."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 9.77
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

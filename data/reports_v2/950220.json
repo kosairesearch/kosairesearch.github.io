@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "임상·규제 리스크",
-    "en": "Clinical and regulatory risk"
+    "ko": "규제 경로 리스크",
+    "en": "Regulatory pathway risk"
    },
    "body": {
-    "ko": "NT-I7의 임상 결과는 적응증과 환자군에 따라 편차가 컸던 사례가 과거 보도된 바 있다. 간 전이가 있는 환자군의 객관적 반응률은 2.7%로 보고되었고, 간 전이가 없는 군과 차이가 뚜렷했다. 연구자 주도 임상으로 옮기는 과정에서 데이터 품질과 일정 관리가 중요해진다. 규제 측면에서는 ARS 적응증이 동물 데이터 기반 허가 경로를 따르는 만큼 최종 데이터의 해석이 핵심이 된다.",
-    "en": "Clinical results for NT-I7 have shown wide variation across indications and patient groups in past reports. The objective response rate in patients with liver metastasis was reported at 2.7%, a clear gap from the group without liver metastasis. Shifting to investigator-led trials makes data quality and schedule control more important. For ARS, which can follow an animal-data approval path, the interpretation of final data will be central."
+    "ko": "ARS 치료제 후보는 인체 임상 없이 동물 데이터로 허가를 받을 수 있는 적응증이어서, 2023년 미국에서 시작한 영장류 모델 시험의 최종 데이터가 허가 경로의 핵심 근거가 된다. 최종 데이터는 빠르면 2026년 말 확보될 것으로 전망돼 있으나, 일정이 늦어지거나 결과 해석이 엇갈리면 허가 추진 시점이 뒤로 밀릴 수 있다. 동물 데이터만으로 허가 요건을 충족하는지는 데이터 해석에 따라 달라진다. 이 경로가 막히면 ARS 적응증의 사업화 시점과 파이프라인 가치 평가가 함께 조정될 수 있다.",
+    "en": "The ARS candidate can be approved on animal data rather than human trials, so final data from the primate model study started in the US in 2023 will be the core basis of the approval path. Final data are expected as early as late 2026, but if the timeline slips or interpretation diverges, the timing of the approval filing could be pushed back. Whether animal data alone meet the approval requirements depends on how the data are interpreted. If this path is blocked, the commercialization timing of the ARS indication and the pipeline valuation could both be adjusted."
    }
   },
   {
    "cat": {
-    "ko": "자금·희석 리스크",
-    "en": "Funding and dilution risk"
+    "ko": "상업화 실행 리스크",
+    "en": "Commercial execution risk"
    },
    "body": {
-    "ko": "2025년 영업활동 현금흐름은 -236억원이었고, 자본총계는 554억원이다. 회사는 2026년 2월 인터뷰에서 추가 자금 조달 계획이 현재로서는 없다고 밝혔지만, 전환사채 전환에 따른 주식 수 증가 가능성은 남아 있다. 5대 1 주식병합으로 발행주식총수는 줄었으나, 이는 기업가치 자체를 바꾸는 변화가 아니다.",
-    "en": "Operating cash flow was KRW -23.6 billion in 2025, against total equity of KRW 55.4 billion. In its February 2026 interview the company said it had no additional fundraising plans for now, but share-count increases from convertible bond conversion remain possible. The 5-to-1 consolidation reduced the number of shares outstanding, but it does not by itself change the underlying business value."
+    "ko": "엔다리는 겸상적혈구 빈혈증 치료제이며, 회사는 2026년 5월 메릴랜드주 정부로부터 미국 판매 라이선스를 최종 획득했다. 회사는 이후 엔다리 마케팅을 강화하는 계획을 밝혔다. 판매 실행이 계획보다 느리면 라이선스 획득이 매출 증가로 이어지는 속도가 늦어질 수 있다. 2025년 연간 매출이 8,945만원이었던 만큼, 이 품목의 판매 확대는 아직 검증이 필요한 단계다.",
+    "en": "Endari is a treatment for sickle cell anemia, and in May 2026 the company obtained a final US sales license from the State of Maryland. The company has since stated plans to strengthen marketing for Endari. If sales execution runs slower than planned, the pace at which the license converts into revenue growth could lag. With annual revenue of KRW 89.45 million in 2025, sales expansion for this product still needs to be verified."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

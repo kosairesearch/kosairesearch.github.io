@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "사업 집중과 전방 투자 사이클",
-    "en": "Business concentration and downstream capex cycle"
+    "ko": "LG전자 계약 종료와 후속 수주",
+    "en": "LG contract expiry and follow-on orders"
    },
    "body": {
-    "ko": "카메라모듈 장비가 실적의 중심을 차지하고 있어 고객사 투자 시기에 따라 분기 매출 변동폭이 커질 수 있다. 반도체 장비 매출은 2025년 85억원으로 늘었지만 절대적인 규모는 크지 않다. 신사업 비중이 본격적으로 커지기 전까지는 기존 사업의 투자 사이클에 실적이 묶이는 구조가 이어진다.",
-    "en": "Camera module equipment remains the center of earnings, so quarterly sales can swing widely with customer investment timing. Semiconductor equipment sales reached KRW 8.5 billion in 2025, but the absolute scale is still modest. Until the new businesses grow to a larger share, earnings remain tied to the investment cycle of the existing business."
+    "ko": "LG전자와의 검사 장비 공급계약은 2026년 12월 31일까지로 기간이 정해져 있다. 계약 종료 이후 후속 수주가 이어지지 않으면 매출 공백이 4분기 이후 실적에 직접 반영될 수 있다. 3분기 말 별도 수주잔고 359억원이 매출로 소진된 뒤 신규 주문이 확보되는지가 매출 지속성을 가르는 변수다. 이 고객과의 거래가 지속되지 않으면 검사 장비 부문의 매출 기반이 약해질 수 있다.",
+    "en": "The inspection equipment supply contract with LG Electronics runs only through December 31, 2026. If follow-on orders do not follow after the contract ends, the sales gap could feed directly into results from the fourth quarter. Whether new orders are secured after the KRW 35.9 billion standalone backlog at the end of the third quarter is recognized as sales will determine revenue continuity. Without continued transactions with this customer, the revenue base in inspection equipment could weaken."
    }
   },
   {
    "body": {
-    "ko": "단납기 대응과 생산 선투입으로 재료원가율이 올랐다. 회사는 이를 일시적이라고 밝혔지만 하반기 정상화는 실적으로 확인된 상태가 아니다. 신규 장비 개발과 고객사 대응을 위한 선제적 비용 반영이 영업이익 적자를 지속시켰다. 반도체 신사업의 개발비 부담이 분기 손익에 계속 걸려 있다.",
-    "en": "Rush-order handling and upfront production raised the material cost ratio. The company called this temporary, but normalization in the second half has not yet been confirmed in results. Upfront costs for new equipment development and customer support kept operating results in the red. Development costs in new semiconductor businesses continue to weigh on quarterly profit and loss."
+    "ko": "펠티어 기반 메모리 테스트 핸들러는 현재 장비 검증이 진행 중이며, 회사는 그 결과에 따라 2027년 양산라인 공급을 추진할 계획이다. 국내 대형 종합반도체 고객사와는 2026년 11월부터 직접 거래를 시작했고, 핸들러와 검사 장비를 공동 개발하고 있다. 공동 개발이 양산 공급으로 이어지지 않으면 반도체 장비 매출은 현재 규모에 머물 수 있다. 양산 채택이 늦어지면 반도체 사업이 전체 매출 구조를 바꾸는 시점도 그만큼 늦어질 수 있다.",
+    "en": "The Peltier-based memory test handler is still under equipment validation, and the company plans to pursue supply to a 2027 mass-production line based on the results. Direct trading with a large domestic integrated chip maker began in November 2026, and the two sides are co-developing handlers and inspection equipment. If co-development does not lead to volume supply, semiconductor equipment sales could remain near their current scale. A delay in mass-production adoption would also push back the point at which semiconductors change the overall revenue mix."
    },
    "cat": {
-    "ko": "원가율과 선투입 비용",
-    "en": "Cost ratios and upfront production costs"
+    "ko": "반도체 장비 양산 전환",
+    "en": "Transition of semiconductor equipment to volume supply"
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

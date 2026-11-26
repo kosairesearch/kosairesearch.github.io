@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무 건전성",
-    "en": "Financial soundness"
+    "ko": "신규 제품군 확대 실행",
+    "en": "Execution of new product expansion"
    },
    "body": {
-    "ko": "부채비율이 383.1%이고 자본총계가 151억원 수준이라 완충 여력이 작다. 영업활동 현금흐름이 2025년에 플러스로 바뀌었으나 한 해의 결과여서 지속성은 아직 검증되지 않았다. 추가 자본 조달이 이어지면 지분 희석과 재무 부담이 함께 움직인다.",
-    "en": "A debt-to-equity ratio of 383.1% and total equity of KRW 15.1 billion leave a thin buffer. Operating cash flow turned positive in 2025, but that is a single year, so sustainability is not yet tested. Further capital raising would bring dilution and financial burden together."
+    "ko": "회사는 2026년 하반기에 전력용 커패시터 매출을 늘려 안정적인 수익 구조를 만들겠다고 밝혔다. 이 계획은 자동차용 DC-Link 중심의 매출 구조를 넓히려는 것이므로, 판매처 확보와 생산 전환이 예정대로 이뤄지지 않으면 수익 구조 개선 시점이 늦어질 수 있다. 신규 제품의 매출 기여가 지연되면 기존 자동차용 제품에 대한 의존도는 그대로 남는다. 전력용 매출 확대의 실행 속도가 흑자 흐름을 지속시키는 변수가 된다.",
+    "en": "The company stated that it will expand power capacitor sales in the second half of 2026 to build a more stable earnings base. Because this plan widens a revenue mix now centered on automotive DC-Link capacitors, a delay in securing customers or converting production could postpone the earnings improvement. If revenue from the new products contributes slowly, reliance on existing automotive products will remain. The pace of power capacitor expansion is therefore a variable for whether profit can be sustained."
    }
   },
   {
    "cat": {
-    "ko": "상장 제도와 거래 여건",
-    "en": "Listing rules and trading conditions"
+    "ko": "간접 공급 경로 확대",
+    "en": "Expansion of indirect supply channel"
    },
    "body": {
-    "ko": "2026년 8월 관리종목지정우려 안내가 공시됐고, 주가가 1,000원 아래에 머무르면 관리종목 지정 판단이 이어질 수 있다. 시가총액 기준이 상향된 점도 상장 유지 조건을 좁힌다. 제도 요건과 주가 흐름이 맞물려 있어 두 변수를 함께 봐야 한다.",
-    "en": "The August 2026 disclosure flagged a possible managed-issue designation, and a share price below KRW 1,000 could lead to a designation decision. The raised market-cap threshold narrows the conditions for remaining listed. These rules and the share price are linked, so both need to be tracked together."
+    "ko": "회사는 인버터 제조업체를 거쳐 글로벌 자동차업체로 공급을 넓히려 하는 것으로 정리됐다. 이 경로는 인버터 제조업체를 거치는 간접 구조여서 채택 시점과 거래 조건에 따라 실제 매출 반영 규모가 달라질 수 있다. 경로 확대가 지연되면 신규 차종 공급 효과가 2026년 실적에 충분히 나타나지 않을 수 있다. 새 고객 채널의 성과가 확인되기 전까지 공급처 다변화 효과는 불확실하다.",
+    "en": "The company plans to widen supply to global automakers through inverter manufacturers, according to Wisereport. Because this route runs through intermediate inverter makers, the timing of adoption and the terms of those transactions could determine how much revenue is recognized. If channel expansion is delayed, the effect of new-model supply may not fully appear in 2026 results. Until performance through the new customer channel is confirmed, the benefit of supplier diversification remains uncertain."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "수주 일정 집중",
-    "en": "Concentration of order timing"
+    "ko": "미국 시장 진출 실행",
+    "en": "Execution of U.S. market entry"
    },
    "body": {
-    "ko": "방산 물량은 계약과 납품 일정에 따라 분기 실적 변동이 크다. 2026년 1분기 정점 이후 2·3분기 실적이 연속 줄어든 것이 이 구조를 보여준다. 대형 계약 몇 건에 매출이 몰리는 만큼 특정 체계업체의 발주 흐름이 바뀌면 영향이 크다.",
-    "en": "Defense volumes swing sharply quarter to quarter with contract and delivery timing. The consecutive declines in the second and third quarters after the first-quarter 2026 peak show this pattern. Because revenue depends on a few large contracts, any change in a prime contractor's order flow would have a large effect."
+    "ko": "회사는 CMMC 레벨 2 인증을 바탕으로 미군 MRO와 양산 공급망, NATO 등 해외 방산 시장 진출을 계획하고 있다. 최평규 회장은 미국 방산 시장을 최종 시장으로 삼아 미군 무기체계 핵심 부품 양산과 MRO의 Tier-1 파트너가 되겠다는 목표를 밝혔다. 미군 MRO나 양산 계약의 체결 시점은 아직 정해지지 않았다. 계약이 늦어지면 해외 매출 확대 목표의 달성 속도도 늦어질 수 있다.",
+    "en": "The company plans to pursue U.S. military MRO and production supply chains and NATO markets based on its CMMC Level 2 certification. The chairman of the SNT group has set a goal of becoming a Tier-1 partner for core components of U.S. weapon systems in production and MRO, with the U.S. defense market as its final market. The timing of U.S. military MRO or production contracts has not yet been set. If those contracts are delayed, the pace of reaching the overseas revenue expansion target could also slow."
    }
   },
   {
    "cat": {
-    "ko": "수출 지역과 승인",
-    "en": "Export markets and approvals"
+    "ko": "유럽 전동화 부품 고객",
+    "en": "European electrified parts customers"
    },
    "body": {
-    "ko": "중동과 유럽, 튀르키예 수출은 현지 수요와 각국 승인 절차에 따라 달라진다. K2 전차 변속기는 과거 독일 수출 승인 제약이 걸림돌이었던 사례가 있다. 2026년 1분기 수출이 전년 동기 대비 7.4% 줄어든 만큼 해외 매출 성장이 일관되지 않을 수 있다.",
-    "en": "Exports to the Middle East, Europe and Turkey depend on local demand and each country's approval procedures. K2 tank transmissions were previously constrained by German export approvals. Because first-quarter 2026 exports fell 7.4% year on year, overseas revenue growth may not be consistent."
+    "ko": "민간 차량 부품 쪽에서는 유럽 전동화 모델 부품 수출이 2026년 1분기 실적을 받쳤다는 보도가 있다. 이 수출은 유럽 전동화 모델의 생산 계획에 기대는 구조여서, 해당 모델의 생산 물량이 조정되면 매출에 바로 반영될 수 있다. 전동 구동장치가 핵심 연구개발 과제로 제시된 만큼 고객 요구 사양의 변화도 부품 수요에 영향을 줄 수 있다.",
+    "en": "Reports said exports of parts for European electrified models supported first-quarter 2026 results in the commercial vehicle parts business. This business depends on the production plans of European electrified models, so any adjustment to output of those models could feed directly into revenue. Because electric drive units are named among key R&D projects, changes in customer specification requirements could also affect parts demand."
    }
   },
   {
    "cat": {
-    "ko": "주주정책과 노사",
-    "en": "Shareholder policy and labor relations"
+    "ko": "배당과 이익 흐름",
+    "en": "Dividends and earnings trend"
    },
    "body": {
-    "ko": "상법 개정으로 보유 자기주식의 의무 소각 논의가 있었지만 회사는 단기 소각 계획이 없다고 밝혔다. 업계에서는 실적이 이어지면 배당 확대와 자사주 정책 강화 가능성을 언급했으나, 이는 회사의 공식 계획이 아니다. 노조는 희망퇴직과 사내하청 확대를 비판하고 있어 노사 관계가 변수로 남아 있다.",
-    "en": "Amendments to the Commercial Act raised the question of mandatory cancellation of held treasury shares, but the company said it has no short-term cancellation plan. Industry sources have mentioned possible dividend increases and stronger treasury share policies if earnings continue, but these are not official company plans. The union's criticism of voluntary retirement and subcontracting leaves labor relations as an open variable."
+    "ko": "분기배당 95억 5,512만원은 2026년 5월 12일 이사회에서 결정됐다. 2025년 배당 총액 412억 9,800만원은 배당성향 67.1%에 이를 만큼 이익 대비 지급 비중이 높았다. 최근 네 개 분기 지배주주 순이익 합계는 353억원이어서, 이익 감소 흐름이 이어지면 현행 배당 규모를 유지하는 데 드는 현금 부담이 커질 수 있다.",
+    "en": "The quarterly dividend of KRW 9.55 billion for the first quarter of 2026 was approved by the board on May 12, 2026. Total dividends for 2025 were KRW 41.3 billion, a payout ratio of 67.1%, meaning a high share of earnings was paid out. Controlling-shareholder profit over the last four quarters totals KRW 35.3 billion, so if the earnings decline continues, the cash needed to keep the current dividend level could become a larger burden."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 6.91
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

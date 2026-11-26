@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "개발·설비 투자 리스크",
-    "en": "Development and capex risk"
+    "ko": "임상·인증 일정 리스크",
+    "en": "Clinical and certification timing risk"
    },
    "body": {
-    "ko": "장티푸스·수막구균·RSV·대상포진 백신은 임상 또는 인증 이후의 초기 단계에 있다. 임상 결과가 기대에 못 미치거나 공급 일정이 늦어지면 신규 매출 시점이 밀린다. 제3공장 투자는 수요가 기대만큼 늘지 않을 경우 고정비 부담으로 돌아올 수 있다.",
-    "en": "Typhoid, meningococcal, RSV and shingles vaccines are at early stages after certification or in clinical trials. If trial results disappoint or supply schedules slip, new revenue will be delayed. If demand does not grow as expected, the third plant could become a fixed-cost burden."
+    "ko": "EuMCV5 5가 수막구균 백신은 2025년 보도 기준 국내 임상 1상을 마치고 아프리카에서 임상 2/3상을 진행 중이다. 회사 목표인 2028년 공공시장 진출은 임상 자료 확보와 인증 절차가 예정대로 진행되는 것을 전제로 한다. 일정이 늦어지면 장티푸스 백신 이후의 신규 매출 축 형성도 함께 밀릴 수 있다. 수막구균 백신이 지연되면 경영진이 언급한 수년 내 매출 목표 시점도 이동할 수 있다.",
+    "en": "EuMCV5, the pentavalent meningococcal vaccine, completed Phase 1 in Korea as of a 2025 report and is in Phase 2/3 trials in Africa. The company's 2028 target for public-market entry assumes that trial data are secured and certification procedures proceed on schedule. If the timeline slips, the start of new revenue beyond the typhoid vaccine may also be pushed back. A delay in the meningococcal vaccine could also shift the timing of the multi-year revenue goal cited by management."
    }
   }
  ],
@@ -360,5 +360,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

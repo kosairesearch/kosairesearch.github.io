@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "거래·시장 감시",
-    "en": "Trading and market surveillance"
+    "ko": "해외 자회사 손익",
+    "en": "Overseas subsidiary earnings"
    },
    "body": {
-    "ko": "투자주의종목 지정과 관리종목지정 우려 안내는 주가 급등락이 거래소 감시 대상이 된 사례다. 5대 1 주식병합으로 주식 수와 주당 가격 기준이 바뀌어 거래 구조가 달라졌다. 상장 유지 요건 관련 거래소 시장안내는 공시로 확인된다.",
-    "en": "The one-day investment caution designation and the administrative-issue warning show that sharp price moves drew exchange scrutiny. The 5-for-1 share consolidation changed both the number of shares and the per-share price basis. Exchange market notices on listing requirements are confirmed through disclosures."
+    "ko": "미국 IMD는 2026년 6월 투자자 레터 기준으로 아직 적자 상태이며, 회사는 NGS 기반 고부가가치 사업 집중과 효율화 효과가 나타나는 2026년 하반기 이후 점진적으로 개선될 것으로 보고 있다. 미국 검사실 통합으로 QDx와 IMD의 중복 검사 기능과 운영조직이 하나로 묶였지만, 이 통합 효과가 IMD 손익 개선으로 확인되는 시점은 아직 정해지지 않았다. IMD의 적자가 이 시점 이후에도 이어지면 연결 손익 회복 속도는 QDx의 수익성 개선 폭에 더 크게 의존하게 된다.",
+    "en": "US subsidiary IMD was still loss-making as of the June 2026 investor letter, and the company expects it to improve gradually from the second half of 2026, once its focus on higher-value NGS-based work and efficiency measures takes effect. The consolidation of overlapping QDx and IMD testing functions and operating teams into one structure has been completed, but the timing at which this shows up as an improvement in IMD's results remains open. If IMD's losses continue beyond that period, the pace of recovery in consolidated profit will depend more heavily on margin gains at QDx."
    }
   },
   {
    "cat": {
-    "ko": "사업·규제",
-    "en": "Business and regulatory"
+    "ko": "미국 주력 법인 성장",
+    "en": "US core unit growth"
    },
    "body": {
-    "ko": "검체 수탁 제도 변화로 국내 외형 성장이 어렵다는 것이 회사의 진단이다. 미국 IMD의 적자가 2026년 하반기 이후 개선되지 않으면 연결 손익 회복이 늦어진다. 디엑솜 패널의 상업화 속도와 매출 반영 시점도 확인이 필요한 변수다.",
-    "en": "The company itself says domestic growth is difficult because the specimen outsourcing system is changing. If IMD's losses do not improve after the second half of 2026, the recovery in consolidated profit will be delayed. The pace at which the Dxome panels are commercialized and begin to contribute revenue is another variable to track."
+    "ko": "QDx는 연결 매출의 약 50%를 차지하는 미국 CLIA Lab의 핵심 법인이며, 회사는 영업 인력 강화와 원가 절감 효과가 2026년 하반기부터 매출 성장과 수익성 개선으로 나타날 것으로 기대하고 있다. 이 기대가 실현되지 않으면 연결 매출 감소 흐름이 이어지고 영업손실 축소 폭도 제한된다. 회사는 QDx가 별도 기준으로 2025년 흑자 전환한 이력을 근거로 제시하지만, 하반기 성장이 지속되는지는 분기 실적으로 확인해야 한다.",
+    "en": "QDx is the core unit of the US CLIA Lab business, which accounts for about half of consolidated revenue, and the company expects its larger sales team and cost reductions to produce revenue growth and margin improvement from the second half of 2026. If this expectation is not met, the decline in consolidated revenue will continue and the room for narrowing operating losses will be limited. The company points to QDx's turn to standalone profitability in 2025 as supporting evidence, but whether growth holds through the second half must be confirmed in quarterly results."
    }
   }
  ],
@@ -342,5 +342,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

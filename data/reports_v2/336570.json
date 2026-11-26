@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율과 외화환산손익",
-    "en": "Exchange rates and translation gains or losses"
+    "ko": "신제품·헬스케어 사업 실행",
+    "en": "New product and healthcare execution"
    },
    "body": {
-    "ko": "해외 매출 비중이 75.4%에 이르러 환율 변동이 매출과 손익에 직접 반영되는 구조다. 3분기 순손실 28.5억원은 외화환산손실이 주된 원인으로 회사가 설명한 항목이다. 환율이 반대로 움직이면 평가이익으로 전환될 가능성도 있다고 회사는 밝혔지만, 분기별 손익의 변동성은 상존한다.",
-    "en": "With overseas sales at 75.4% of total, exchange rate moves feed directly into revenue and earnings. The company attributed the KRW 2.85 billion Q3 net loss mainly to foreign currency translation losses. The company has said such losses could reverse into gains if rates move, but quarterly earnings volatility remains."
+    "ko": "2026년 계획된 신제품 출시와 헬스케어 사업 확장이 일정대로 진행되지 않을 수 있다. 올리지오 엑스엠 등 신제품의 출시가 늦어지거나 판매가 기대에 못 미치면 장비 판매 이후 이어지는 소모품 매출 기반도 약해질 수 있다. CES 2026에서 공개한 비접촉 생체신호 측정과 통증 치료 솔루션은 상업화 시점이 아직 확인되지 않았다. 이 사업이 성과를 내지 못하면 신규 투자 부담이 회수되지 않은 채 남을 수 있다.",
+    "en": "New product launches planned for 2026 and the expansion into healthcare may not proceed on schedule. If the launch of new products such as Oligio XM is delayed or sales fall short of expectations, the consumables revenue base that follows equipment sales could also weaken. The timing of commercialization for the noninvasive vital-sign measurement and pain therapy solutions unveiled at CES 2026 has not yet been confirmed. If these businesses fail to gain traction, the new investment burden could remain unrecovered for an extended period."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "비용 선집행과 자금 조달",
-    "en": "Upfront spending and funding needs"
+    "ko": "해외 법인 조직 재편",
+    "en": "Overseas subsidiary restructuring"
    },
    "body": {
-    "ko": "판관비와 광고선전비가 크게 늘어 중장기 성장 투자 효과가 실적으로 확인되기 전까지 이익률이 압박받는다. 750억원 규모 전환사채는 운영자금과 채무상환 목적이며, 전환 시 지분 희석이 생길 수 있다. 한편 자기주식 소각과 취득은 주주환원 기조를 보여 주지만, 동시에 현금 사용과 자금 조달의 균형을 함께 봐야 한다.",
-    "en": "Selling, general and administrative expenses and advertising costs have grown sharply, pressuring margins until the effect of mid-term investment shows up in results. The KRW 75 billion convertible bond is aimed at operating funds and debt repayment, and conversion could dilute shareholders. Treasury share cancellations signal a return policy, but they also require balancing cash use against funding needs."
+    "ko": "해외 법인을 단순 판매 거점에서 지역별 기획·실행 조직으로 바꾸는 작업이 진행 중이다. 미국·일본 법인장 영입과 동남아 총괄 조직 신설이 함께 이뤄지고 있어 조직 변화 과정에서 현지 영업 인력 이탈이나 의사결정 지연이 생길 수 있다. 이러한 변화가 길어지면 현지 판매 활동의 연속성이 떨어질 수 있다. 조직 재편의 효과가 판매 실적으로 이어지는지는 시간이 지나야 드러날 것이다.",
+    "en": "The company is converting its overseas subsidiaries from simple sales outlets into regional planning and execution hubs. With new country heads appointed in the United States and Japan and a new Southeast Asia command being set up at the same time, staff departures or slower local decisions could occur during the transition. If this change takes longer than planned, continuity of local sales activity could decline. Whether the restructuring translates into sales results will become clear only over time."
    }
   }
  ],
@@ -338,5 +338,6 @@
    "div": 1.4
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무·자금 조달",
-    "en": "Financing and funding"
+    "ko": "처방 확산 리스크",
+    "en": "Prescription uptake risk"
    },
    "body": {
-    "ko": "매출이 없는 상태에서 영업활동 현금 유출이 확대됐고 2025년 말 자본총계는 143억원이다. 적자가 이어지면 추가 자금 조달 필요성이 커질 수 있으며, 그 경우 기존 주주 지분 희석 여부가 쟁점이 된다. 자금 계획은 정기보고서의 현금흐름 항목에서 확인하는 것이 기준이다.",
-    "en": "Operating cash outflows increased while the company has no sales, and total equity was KRW 14.3 billion at the end of 2025. If losses continue, the need for additional funding could grow, and whether existing shareholders are diluted would become an issue. Funding plans should be checked against the cash flow items in the regular reports."
+    "ko": "INV-002는 관절 특화 조영제로 기존 조영제와 적응증이 달라, 처방 확산 속도는 의료기관의 채택 정도에 따라 달라질 수 있다. 허가를 받더라도 관절 조영술 수요가 기존 조영 방식에서 얼마나 옮겨 올지가 매출 규모를 가르는 변수가 된다. 회사는 사업 파트너와의 협력으로 매출을 일으키는 구조여서, 파트너의 영업망과 채널 확보 속도도 확산에 영향을 줄 수 있다. 이 과정이 지연되면 2027년 매출 본격화 전망의 실현 시점도 뒤로 밀릴 수 있다.",
+    "en": "INV-002 is a musculoskeletal-focused contrast agent whose indications differ from existing agents, so the speed of prescription uptake could depend on how widely medical institutions adopt it. Even after approval, how far musculoskeletal arthrography demand shifts from existing imaging methods will determine the size of sales. Because the company plans to generate sales through commercial partners, the speed at which partners build sales networks and channels could also affect uptake. A delay in this process could push back the expected full-scale sales start in 2027."
    }
   }
  ],
@@ -322,5 +322,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

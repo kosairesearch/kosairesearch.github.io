@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "유동성·현금흐름",
-    "en": "Liquidity and cash flow"
+    "ko": "임상평가·제품 개선",
+    "en": "Clinical evaluation and product improvement"
    },
    "body": {
-    "ko": "영업활동 현금흐름은 2023년 이후 매년 마이너스이며 2025년에는 -146억원이었다. 2025년 말 자본총계 765억원과 부채총계 217억원은 손실을 흡수할 여력을 보여주지만, 적자가 이어지면 자본 감소가 누적된다. 2026년 사업보고서에서 영업활동 현금흐름 개선 여부를 확인해야 한다.",
-    "en": "Operating cash flow has been negative every year since 2023, reaching KRW -14.6 billion in 2025. Total equity of KRW 76.5 billion and liabilities of KRW 21.7 billion show some capacity to absorb losses, but continued losses would steadily erode equity. Whether operating cash flow improves should be checked in the 2026 annual business report."
+    "ko": "알레르기 검사시약과 S-Blot 3 PLUS는 임상평가를 거쳐 정확도와 비용 효율을 높이는 개선이 진행 중이다. 임상 결과가 기대에 못 미치거나 일정이 늦어지면 개선 제품의 시장 투입과 매출 반영이 지연될 수 있다. 정부 임상이 공급 계약으로 이어지는 경로를 감안하면 평가 기간이 길어질 때 계약 시점도 함께 밀릴 수 있다.",
+    "en": "The allergy test reagent and S-Blot 3 PLUS are undergoing clinical evaluation to improve accuracy and cost efficiency. If clinical results fall short of expectations or the schedule slips, market launch of the improved products and their revenue contribution could be delayed. Given that government clinical testing can lead to supply contracts, a longer evaluation period could also push back contract timing."
    }
   },
   {
    "cat": {
-    "ko": "수요 변동과 사업 집중",
-    "en": "Demand volatility and business concentration"
+    "ko": "펨테크 미국 진출",
+    "en": "Femtech US market entry"
    },
    "body": {
-    "ko": "매출은 감염병 진단 수요와 정부 조달 일정에 따라 크게 움직인 이력이 있다. 2023년 매출이 93.0% 줄었듯, 특정 계약이나 조달 축에 기댄 구조에서는 매출 공백이 생길 수 있다. 중국 JV의 마일스톤과 로열티는 현지 판매 실적에 따라 달라 실현 시점이 불확실하다.",
-    "en": "Revenue has moved sharply with infectious disease testing demand and government procurement timing. As the 93.0% drop in 2023 shows, a business leaning on specific contracts or procurement channels can see revenue gaps. Milestone and royalty income from the China JV depends on local sales, so its timing is uncertain."
+    "ko": "여성 건강 영역은 자회사가 맡아 미국 시장 진출을 앞둔 커플 산전 관리 플랫폼의 글로벌 비전을 공유했다. 미국 진출 시점, 현지 규제 요건 충족, 파트너 확보가 계획대로 이뤄지지 않으면 호르몬 데이터 플랫폼의 매출 기여는 늦어질 수 있다. 초기 사업 비용이 손익에 반영되면 영업손실 축소 속도가 기대보다 느려질 수 있다.",
+    "en": "The femtech subsidiary has shared a global vision for a couples' prenatal care platform ahead of a planned US market entry. If the US launch timing, local regulatory requirements or partner securing do not proceed as planned, revenue contribution from the hormone data platform could be delayed. Early-stage launch costs flowing into the income statement could slow the pace at which operating losses narrow."
    }
   },
   {
    "cat": {
-    "ko": "주주 구조와 희석",
-    "en": "Shareholder structure and dilution"
+    "ko": "공공 조달 납품 실행",
+    "en": "Public procurement delivery"
    },
    "body": {
-    "ko": "2026년 9월 16일 기준 최대주주 손미진 외 7인이 14.55%, 자사주가 8.68%를 보유하고 있다(와이즈리포트). 주식매수선택권 부여 신고와 임원·주요주주의 특정증권 소유상황 보고가 이어진 만큼, 정기 공시로 주식 수와 지분 구조 변화를 추적할 필요가 있다. 자사주 활용 여부도 유통 주식 수에 영향을 준다.",
-    "en": "As of September 16, 2026, the largest shareholder group led by Son Mi-jin held 14.55% and treasury shares accounted for 8.68%, according to WiseReport. Given the stock option filing and officer and major shareholder holding reports, periodic disclosures should be tracked for changes in share count and ownership. Use of treasury shares would also affect the free float."
+    "ko": "임신진단키트는 UNICEF 장기계약(LTA)에 편입돼 최장 5년간 UN 산하 기관에 납품할 판로가 열렸다는 보도가 있다. 장기계약이 곧 확정 물량을 뜻하지는 않으므로, 실제 발주 규모와 시기에 따라 매출 기여 폭이 달라질 수 있다. 발주가 지연되면 공공 조달 판로에서 분기 매출이 기대만큼 늘지 않을 수 있다.",
+    "en": "Reports say the pregnancy test kit was placed on a UNICEF long-term arrangement, opening a channel to supply UN agencies for up to five years. A long-term arrangement does not by itself guarantee fixed volumes, so the revenue contribution will depend on the scale and timing of actual orders. If orders are delayed, quarterly revenue from this public procurement channel may not rise as expected."
    }
   }
  ],
@@ -341,5 +341,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

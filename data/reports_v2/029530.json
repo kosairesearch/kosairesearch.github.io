@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "수요 구조 리스크",
-    "en": "Demand structure risk"
+    "ko": "영업 흑자 지속성 리스크",
+    "en": "Operating profit sustainability risk"
    },
    "body": {
-    "ko": "종이 사용량 감소와 설치기반 포화는 복합기 수요를 구조적으로 누르는 요인이다. 매출이 3개 분기 연속 줄어든 흐름이 이어지면 고정비 부담이 커질 수 있다. 소모품과 서비스 매출이 이를 얼마나 완충하는지가 관건이다.",
-    "en": "Lower paper use and a saturated installed base weigh structurally on MFP demand. If the three-quarter revenue decline continues, fixed cost burden could grow. How much consumables and services can cushion the impact is the key question."
+    "ko": "2026년 2분기 영업손실 87.9억원 이후 3분기에 영업이익 25.9억원으로 다시 흑자 전환했지만, 흑자 폭이 작아 비용 조정의 효과가 지속될지 불분명하다. 2025년 영업이익률이 2.0%에 머물러 여유가 적으므로, 매출이 추가로 줄면 영업손실이 재발할 수 있다. 2026년 4분기 잠정 실적에서 영업 흑자 유지 여부가 이 위험을 가르는 신호다.",
+    "en": "Operating profit returned to the black in the third quarter of 2026 after an operating loss of KRW 8.79 billion in the second quarter, but the profit is small and it is unclear whether the effect of cost adjustments will last. With the operating margin at 2.0% in 2025, there is little room, so a further revenue decline could bring back an operating loss. Whether operating profit stays positive in the preliminary fourth-quarter 2026 results will show whether this risk materializes."
    }
   },
   {
    "cat": {
-    "ko": "이익 질과 영업 외 리스크",
-    "en": "Earnings quality and non-operating risk"
+    "ko": "현금 창출 여력 리스크",
+    "en": "Cash generation capacity risk"
    },
    "body": {
-    "ko": "2024년 지배주주 순이익 732억원은 영업이익 202억원을 크게 웃돌았고, 2026년 3분기에는 영업이익 흑자와 순손실 353억원이 함께 나타났다. 영업 외 손익의 변동이 최종 손익을 좌우하는 구조로 보인다. 이 부분은 사업보고서 주석과 분기보고서 설명에서 확인해야 한다.",
-    "en": "Attributable net profit of KRW 73.2 billion in 2024 far exceeded operating profit of KRW 20.2 billion, and in the third quarter of 2026 an operating profit coexisted with a KRW 35.3 billion net loss. Swings in non-operating items appear to drive bottom-line results. This needs to be verified in the footnotes of the business report and the quarterly report explanations."
+    "ko": "영업활동 현금흐름은 2023년 954억원에서 2025년 521억원으로 줄었다. 최종 손익 적자가 이어지면 손실을 흡수하는 현금 창출 여력이 점차 얇아질 수 있다. 자본이 부채의 13배를 넘는 재무 기반이 유지되더라도, 현금 흐름 감소 폭이 커지면 배당 등 주주환원 여력이 제약받을 수 있다.",
+    "en": "Operating cash flow fell from KRW 95.4 billion in 2023 to KRW 52.1 billion in 2025. If attributable net losses continue, the cash cushion that absorbs losses could gradually thin. Even with equity more than 13 times liabilities, a larger decline in cash generation could constrain room for shareholder returns such as dividends."
    }
   },
   {
    "cat": {
-    "ko": "자본 배분과 경영 리스크",
-    "en": "Capital allocation and management risk"
+    "ko": "상품 판매 의존 리스크",
+    "en": "Goods resale dependence risk"
    },
    "body": {
-    "ko": "보유 현금과 부동산 자산이 많다는 평가에도 인수합병이나 신사업 투자의 구체적 성과는 2025년 초 보도 시점까지 뚜렷하지 않았다. 대표이사 교체 이후의 투자 방향과 주주환원 정책의 변화는 이 리포트의 공시 범위에서 추가로 확인해야 한다. 자본 활용 방향이 불확실하면 자산 기반의 평가도 제약을 받을 수 있다.",
-    "en": "Despite reported cash and real estate holdings, concrete results from M&A or new-business investment had not become visible as of the early 2025 press coverage. Any change in investment direction under current management and in shareholder-return policy should be checked in future filings. If the use of capital remains unclear, asset-based valuation may also be constrained."
+    "ko": "상품 매출이 전체의 73.30%를 차지하고 자체 제품인 복합기 매출 비중은 1.89%에 그쳐, 실적이 상품 판매 조건에 크게 기대고 있다. 공급 조건이나 판매 단가가 바뀌면 매출과 마진이 직접 영향을 받을 수 있다. 2022년 기준 상품 부문 비중 78.8%는 이 구조가 여러 해 이어졌음을 보여 준다. 제품 구성 변화에 대응할 수 있는 자체 제품 비중이 작아 조정 폭도 제한될 수 있다.",
+    "en": "Goods account for 73.30% of sales, while sales of the company's own MFP products are only 1.89%, so results depend heavily on the terms of goods resale. Changes in supply conditions or selling prices could directly affect revenue and margins. The goods segment was 78.8% of revenue in 2022, showing that this structure has persisted for several years. With a small share of own products to respond to shifts in the product mix, the room for adjustment may also be limited."
    }
   }
  ],
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중 리스크",
-    "en": "Customer concentration risk"
+    "ko": "지분법 이익 실현 리스크",
+    "en": "Equity-method income realization risk"
    },
    "body": {
-    "ko": "ODM 매출이 전체의 83.82%를 차지하는 사업 구조에서 주요 고객사 비중이 80%를 넘는다. 특정 고객의 발주가 줄거나 거래가 바뀌면 매출 변동이 크게 나타난다. 고객 다변화 진척은 다음 정기보고서의 고객별 매출 구성으로 확인할 수 있다.",
-    "en": "With ODM sales at 83.82% of total and key customer share above 80%, a reduction in orders or a change in terms from a single customer would cause large sales swings. Progress in diversification can be checked through the customer mix in upcoming periodic reports."
+    "ko": "지분법 이익 전망치 105억원은 영업이익 추정치보다 훨씬 큰 손익 항목이다. 사업지주 구조에서 계열사 투자 성과는 본업과 별도로 실적을 가르는 요인인데, 계열사 실적이 기대에 못 미치면 지분법 이익이 전망보다 낮게 반영될 수 있다. 이 손익은 2026년 사업보고서에서 실제 규모가 확인되기 전까지 실현 여부가 불확실하다. 지분법 이익이 줄면 연간 손익 구조가 영업이익 중심의 추정과 달라질 수 있다.",
+    "en": "The projected equity-method income of KRW 10.5 billion is a far larger profit item than the operating profit estimate. In a business holding structure, returns from affiliate investments separate earnings from the core business. If affiliate results fall short of expectations, equity-method income could be recognized below the projection. Until the actual size is confirmed in the 2026 annual report, whether this income is realized remains uncertain, and a decline would shift the full-year earnings structure away from one centered on operating profit."
    }
   },
   {
    "cat": {
-    "ko": "영업 외 손익 변동성",
-    "en": "Volatility of non-operating income"
+    "ko": "자본 운용·주주환원 리스크",
+    "en": "Capital allocation and shareholder return risk"
    },
    "body": {
-    "ko": "2023년에는 영업손실이었지만 지배주주 순이익이 373억원에 이를 만큼 순이익과 영업이익의 간극이 컸다. 2026년 3분기에는 영업이익 3.4억원에 지배주주 순손실 37.1억원이 나타났다. 영업이익만으로 실적 흐름을 판단하기 어려운 구조다.",
-    "en": "In 2023, attributable net income reached KRW 37.3 billion despite an operating loss, showing a wide gap between net and operating results. In Q3 2026, an operating profit of KRW 337 million coexisted with an attributable net loss of KRW 3.71 billion. Earnings trends are hard to judge from operating profit alone."
+    "ko": "2026년 1월 결정된 자기주식 52만 3,591주의 공익법인 무상출연은 ESG경영과 사회공헌 목적으로 설명됐다. 배당수익률이 업종 평균을 밑도는 상황에서 이 조치가 주주환원 정책으로 평가받을지는 후속 자본 운용에 따라 달라질 수 있다. 자기주식 보유분이 줄면 향후 자사주 활용의 선택지도 좁아진다. 분기 이익 변동이 큰 구간에서 자본 운용 계획이 명확히 밝혀지지 않으면 주주환원 평가가 낮아질 수 있다.",
+    "en": "The gratuitous contribution of 523,591 treasury shares to a foundation, decided in January 2026, was explained as serving ESG management and social contribution purposes. With the dividend yield below the industry average, whether this step is judged as shareholder-return policy will depend on subsequent capital management. A smaller treasury share holding also narrows future options for using treasury shares. If plans for capital management are not clearly disclosed while quarterly earnings remain volatile, the shareholder-return assessment could weaken."
    }
   },
   {
@@ -339,5 +339,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

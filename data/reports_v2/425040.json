@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "업황과 고객 집중",
-    "en": "Industry cycle and customer concentration"
+    "ko": "용인 클러스터 장비 매출 인식",
+    "en": "Timing of Yongin cluster equipment revenue"
    },
    "body": {
-    "ko": "실적은 메모리 반도체 설비투자와 가동률에 크게 연동되며, 국내 IDM 고객을 기반으로 한 매출 구조는 특정 고객의 투자 조정이 매출에 바로 반영될 수 있다는 뜻이다. 2025년 매출은 전년 대비 9.8% 줄었던 만큼 매출 기반은 외부 환경에 민감하다. 신규 미국 공급이 기존 고객 변동을 얼마나 상쇄하는지는 분기 매출 구성에서 확인해야 한다.",
-    "en": "Earnings are closely tied to memory chip capex and utilization, and a revenue base built on domestic IDM customers means a single customer's investment cut can hit sales directly. Revenue fell 9.8% in 2025, so the revenue base is sensitive to the external environment. How far new U.S. supply offsets changes at existing customers will need to be checked in the quarterly revenue mix."
+    "ko": "용인 반도체 클러스터 1차 물량의 장비 매출은 2026년 3월 보도에서 연간 실적을 키울 요인으로 언급됐다. 이 매출의 인식 시점은 클러스터 설비 일정과 고객의 설치 진도에 따라 정해져, 일정이 늦춰지면 장비 부문 기여도도 뒤로 밀릴 수 있다. 이 경우 케미칼 공급장치 납품과 함께 장비 매출이 분기 실적에 반영되는 속도가 낮아질 수 있다.",
+    "en": "Equipment revenue from the first Yongin semiconductor cluster order was cited in a March 2026 report as a factor that could add to full-year growth. The timing of its recognition depends on the cluster's installation schedule and the customer's progress, so a delay could push back the contribution from the equipment segment. In that case, the pace at which equipment sales reflect in quarterly results, alongside chemical supply-system deliveries, could slow."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "이익 단계별 엇갈림과 주가 변동성",
-    "en": "Divergence across profit lines and share price volatility"
+    "ko": "중동 사태와 헬륨 수급",
+    "en": "Middle East conflict and helium supply"
    },
    "body": {
-    "ko": "분기 지배주주 순이익이 15.8억원에서 66.9억원 사이로 움직인 만큼 이익 기반 지표는 분기마다 크게 달라질 수 있다. 2026년 3분기 영업이익이 늘었는데도 지배주주 순이익이 줄어든 것은 영업 외 손익과 세금 등 이익 단계별 요인을 확인해야 한다는 뜻이다. 주가는 반도체 업종 테마 흐름의 영향을 받을 수 있다.",
-    "en": "With quarterly net income attributable to controlling shareholders moving between KRW 1.58 billion and KRW 6.69 billion, earnings-based metrics can change sharply from quarter to quarter. Operating profit rose in Q3 2026 while controlling-shareholder net income fell, which points to the need to check non-operating items and taxes. The share price can also be affected by semiconductor sector theme flows."
+    "ko": "중동 사태로 글로벌 헬륨 수급에 차질이 생기면서 고순도 헬륨 양산이 새로운 성장동력으로 거론됐다. 다만 공급 여건이 바뀌면 헬륨의 판매 가격과 수요도 함께 달라져 이 사업의 채산성에 영향을 줄 수 있다. 헬륨 생산이 네온 제조 공정과 연결된 만큼, 해당 공정의 가동 여부와 원가 구조도 함께 확인할 필요가 있다.",
+    "en": "Supply disruptions in global helium linked to the Middle East conflict have made high-purity helium production a potential new growth driver. However, if supply conditions shift, helium selling prices and demand could also change, affecting the profitability of this business. Because helium production is tied to the neon manufacturing process, the operating status and cost structure of that process also need to be checked."
    }
   }
  ],
@@ -337,5 +337,6 @@
    "div": 1.1
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

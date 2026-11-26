@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 유지 요건",
-    "en": "Listing-maintenance requirement"
+    "ko": "주문 이행·재고 차질",
+    "en": "Order fulfilment and stock"
    },
    "body": {
-    "ko": "코스피 상장 유지를 위한 시가총액 기준이 2026년 7월 1일부터 기존 200억원에서 300억원으로 상향됐다. 2026년 7월 상장폐지 우려가 커지자 응원 매수와 자사몰 구매가 몰렸지만, 이 수요가 시가총액을 지속적으로 받칠지는 불확실하다. 기준을 밑도는 상태가 이어지면 추가 절차가 거론될 수 있는 구도다.",
-    "en": "The KRW 30 billion market capitalization requirement for KOSPI listing maintenance took effect July 1, 2026, up from KRW 20 billion. Support-driven buying and online mall purchases surged in July 2026 as delisting concerns grew, but whether that demand can sustain market capitalization is uncertain. If the company stays below the threshold, additional procedures could come into discussion."
+    "ko": "2026년 7월 자사몰 주문이 평시 대비 크게 늘었지만, 회사는 출고 지연과 일부 재고 부족으로 주문이 취소될 수 있다고 안내했다. 주문 취소와 이행 지연이 늘면 매출 인식이 분기 사이에서 밀릴 수 있고, 재구매 고객이 줄어드는 결과로 이어질 가능성도 있다. 일시 수요가 정상 판매로 전환되는지는 2026년 4분기 이후 매출에서 확인해야 한다. 재고 확보와 생산 능력이 주문 증가를 따라갈 수 있는지가 관건이다.",
+    "en": "Online mall orders surged in July 2026, but the company warned that shipping delays and partial stock shortages could lead to order cancellations. Cancellations and delayed fulfilment could shift revenue recognition between quarters and reduce repeat purchases. Whether the temporary demand converts into regular sales will show in revenue from Q4 2026 onward. The key question is whether inventory and production capacity can keep pace with the spike in orders."
    }
   },
   {
    "cat": {
-    "ko": "재무 레버리지",
-    "en": "Financial leverage"
+    "ko": "가격 인상 의존도",
+    "en": "Reliance on price increases"
    },
    "body": {
-    "ko": "부채비율 262.0%와 부채총계 1,764억원 구조에서는 영업이익이 크게 움직일 때 지배주주 순손익이 적자와 흑자 사이를 오간다. 2025년 지배주주 순이익 1.7억원과 2026년 3분기 순손실 13억원이 그 예다. 다음 사업보고서에서 이자비용과 영업 외 손익의 규모가 확인 지점이다.",
-    "en": "With a debt-to-equity ratio of 262.0% and total liabilities of KRW 176.4 billion, controlling-shareholder results swing between profit and loss whenever operating profit moves sharply. Net income of KRW 167 million in 2025 and a KRW 1.3 billion net loss in Q3 2026 are examples. The size of interest expense and non-operating items in the next annual report is the checkpoint."
+    "ko": "주요 제품 가격 인상이 매출 증가를 이끈 요인으로 거론됐기 때문에, 인상 이후 판매량이 둔화될 가능성이 있다. 크래미·런천미트 판매량 증가가 가격 인상과 함께 이어졌는지는 이후 분기 매출 구성으로 가늠해야 한다. 인상 폭이 소비자 수요를 넘어서면 식품부문 매출이 정체되고, 원가 상승분을 판매가에 전가하지 못하는 구조가 될 수 있다. 식품부문 비중이 큰 만큼 이 변화는 전체 매출에 영향을 준다.",
+    "en": "Price increases on key products were cited as a driver of revenue growth, so sales volumes could slow after those increases. Whether sales of Kraemi and Luncheon Meat kept rising alongside the price increases should be judged from the revenue mix in coming quarters. If price increases outpace consumer demand, Food segment revenue could stall and the company may be unable to pass cost increases on to prices. Because the Food segment accounts for the larger share of revenue, such a shift would affect total sales."
    }
   },
   {
@@ -357,5 +357,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

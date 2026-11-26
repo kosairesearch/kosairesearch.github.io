@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "원재료와 환율 리스크",
-    "en": "Raw Material and Currency Risk"
+    "ko": "유럽 법인 공급 실행 리스크",
+    "en": "European Subsidiary Execution Risk"
    },
    "body": {
-    "ko": "알루미늄 매입가와 판매가 반영 시차가 3분기 영업손실의 원인으로 제시됐다. 환율 상승은 평가손실을 키워 순손익 변동을 확대했다. 회사는 4분기부터 원재료 투입단가 안정화를 기대하지만 시세 변화에 따라 원가 부담은 다시 커질 수 있다.",
-    "en": "The timing gap between aluminum purchase and selling prices was cited as the cause of the third-quarter operating loss. A rise in the exchange rate widened valuation losses and expanded swings in net results. The company expects raw-material input costs to stabilize from the fourth quarter, but cost pressure could return if metal prices move again."
+    "ko": "유럽 법인은 주력 제품 공급 비중을 2026년 8월부터 100%로 높였고, 11월 신규 품목 양산과 2027년 1월 현대차·기아 대상 신규 공급을 준비하고 있다. 양산 개시나 고객 승인이 늦어지면 법인의 가동률과 수익성 개선 시점이 밀릴 수 있다. 신규 증설 없이 여유 설비를 쓰는 구조여서 물량이 계획에 못 미치면 고정비 부담이 그대로 남는다. 연결 실적 기여도 확대 효과도 이 실행 속도에 좌우된다.",
+    "en": "The European subsidiary raised its main product supply share to 100% from August 2026 and is preparing new item mass production in November 2026 and new supply to Hyundai and Kia from January 2027. Delays in the start of mass production or in customer approval could push back improvement in the subsidiary's utilization and profitability. Because growth relies on existing spare lines without new capacity, a shortfall versus plan would leave fixed costs unchanged. The effect on consolidated earnings contribution also depends on the pace of execution."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

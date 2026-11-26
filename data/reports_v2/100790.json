@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "투자자산 평가 변동",
-    "en": "Valuation swings in investments"
+    "ko": "GP 출자 부담",
+    "en": "GP commitment burden"
    },
    "body": {
-    "ko": "운용 실적은 보유 지분의 평가이익과 처분이익에 크게 의존한다. 2026년 3분기 영업손실과 지배주주 순손실은 이런 평가 구조가 분기 적자로 연결될 수 있음을 보여 준다. 평가 손익이 분기마다 크게 움직이면 연간 이익 흐름을 예측하기 어려워진다. 확인할 지점은 평가손익과 영업손익이 어떻게 나뉘는지다.",
-    "en": "Operating results depend heavily on valuation gains and disposal gains on held stakes. The third-quarter 2026 operating and net losses show how this structure can produce a quarterly loss. When valuation gains swing sharply from quarter to quarter, annual earnings become harder to forecast. The split between valuation and operating results is the point to monitor."
+    "ko": "일부 조합에서 GP 출자 비율이 15%를 넘는 등 회사의 자기자본 출자가 높은 수준이다. 펀드 평가 손익이 회사 수익에 크게 반영되는 구조에서 투자 손실이 나면 자기자본을 직접 잠식할 수 있다. 2025년 말 지배주주 지분이 3,012억원인 점을 감안하면 GP 출자 부담은 자본 규모에 비해 작지 않다. 신규 펀드를 늘리면서 GP 출자 비율을 유지할 경우 이 노출은 더 커질 수 있다.",
+    "en": "Some funds carry GP commitments above 15 percent, placing a substantial share of the company's own capital in its funds. Because fund valuation results flow into company income, investment losses in those funds could erode that equity directly. With controlling shareholders' equity at KRW 301.2 billion at the end of 2025, the burden of GP commitments is not small relative to the capital base. If the company keeps GP commitment ratios high while expanding new funds, this exposure could grow further."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

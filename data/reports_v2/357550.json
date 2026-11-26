@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "규제·인증 일정 의존",
-    "en": "Dependence on regulation and qualification timelines"
+    "ko": "토너 전방 수요 의존",
+    "en": "Toner end-market dependence"
    },
    "body": {
-    "ko": "변압기 소음 규제 강화는 리서치알음 보고서가 제시한 성장 경로지만, 규제 개정의 시점과 강도는 아직 정해지지 않았다. 반도체 패키징과 전고체 소재는 고객사 테스트 결과에 따라 양산 일정이 밀릴 수 있다. 특정 소재의 인증이 지연되면 증권사 추정치의 전제도 흔들릴 수 있다.",
-    "en": "Tighter transformer noise rules are the growth path cited in the research report, but the timing and strength of rule revisions remain undecided. Semiconductor packaging and solid-state electrolyte materials could see mass-production schedules slip depending on customer test outcomes. If qualification of a given material is delayed, the assumptions behind brokerage estimates could also be affected."
+    "ko": "토너 외첨제 수요는 프린터 토너 제조사의 생산량에 따라 움직인다. 중국 신규 거래처 확보와 미국·일본 고객사의 양산 평가가 이어지고 있어, 평가 결과와 거래처 확보 속도가 매출 반영 폭을 좌우할 수 있다. 전방 토너 생산이 줄거나 양산 평가가 지연되면 토너 외첨제 출하가 분기마다 달라질 수 있다.",
+    "en": "Demand for toner external additives moves with the output of printer toner makers. New customers in China are being secured while mass-production evaluations at US and Japanese customers continue, so the outcome of those evaluations and the pace of customer wins could determine how much sales are recognized. A drop in downstream toner production or a delay in mass-production evaluations could cause toner additive shipments to vary from quarter to quarter."
    }
   }
  ],
@@ -348,5 +348,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

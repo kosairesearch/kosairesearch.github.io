@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "관세·환율",
-    "en": "Tariffs and FX"
+    "ko": "신모델 출시 시점",
+    "en": "Timing of new model launches"
    },
    "body": {
-    "ko": "미국 연방대법원의 IEEPA 관세 관련 판결 이후 환급 절차가 진행 중이며, 고객사 정산액이 분기 매출을 줄였다. 수출 비중이 높아 환율 변동이 평가손익과 외환차손으로 직접 나타난다. 2026년 3분기 환율 관련 순손실은 118억 2,000만원이었다.",
-    "en": "Tariff refund procedures are under way after a US Supreme Court IEEPA ruling, and customer settlements have reduced quarterly revenue. High export exposure means currency moves show up directly in valuation and FX translation losses. Q3 2026 FX-related net losses were KRW 11.82 billion."
+    "ko": "신규 콘텐츠와 디스플레이 대형화에 따른 신모델이 매출 흐름의 축으로 거론된다. 분기 실적은 신모델 출시 시점에 따라 움직이므로, 출시가 늦어지면 분기 매출 회복이 그만큼 지연될 수 있다. 신모델 출시가 특정 분기에 몰리면 분기 간 매출 변동이 더 커질 수 있다. 이 사안은 2026년 4분기 실적과 신모델 출시 일정을 함께 봐야 판단할 수 있다.",
+    "en": "New models tied to new content and larger display sizes are cited as the axis of sales momentum, and quarterly results move with the timing of those launches. If launches are delayed, the recovery of quarterly sales could be pushed back by the same period. If launches cluster in a single quarter, quarter-to-quarter revenue swings could widen. This issue should be judged together with Q4 2026 results and the launch schedule."
    }
   },
   {
    "cat": {
-    "ko": "카지노 시장 집중",
-    "en": "Concentration in casino end markets"
+    "ko": "기타 산업용 모니터 수요",
+    "en": "Demand for other industrial monitors"
    },
    "body": {
-    "ko": "매출 구조가 카지노 게이밍기기에 집중돼 있어 업황이 꺾이면 실적 충격이 크다. 2023년에는 기타 모니터 매출 급감이 전체 매출을 끌어내렸다. 신흥국 정책이나 복합리조트 투자 속도가 바뀌면 수요 방향도 달라질 수 있다.",
-    "en": "Revenue is concentrated in casino gaming equipment, so a downturn in that end market would hit results hard. In 2023, a sharp drop in other monitor sales pulled down total revenue. Changes in emerging-market policy or the pace of integrated resort investment could shift demand direction."
+    "ko": "기타 산업용 모니터는 2023년 기준 매출 비중이 17.9%였으며, 이 사업의 매출이 다시 급감하면 전체 매출 감소로 이어질 수 있다. 게이밍 모니터 외 제품군의 수요는 카지노 투자 흐름과 다른 경로로 움직일 수 있어 실적 변동 요인이 된다. 이 제품군의 수요 회복 여부는 매출 구조가 다변화되는지를 가늠하는 기준이다.",
+    "en": "Other industrial monitors accounted for 17.9% of 2023 revenue, and a renewed sharp fall in this business could lead to a decline in total revenue. Demand for product lines outside gaming monitors may move along a different path from casino investment flows, which makes it a source of earnings volatility. Whether demand in this line recovers is a gauge of whether the revenue structure is diversifying."
    }
   },
   {
    "cat": {
-    "ko": "분기 실적과 현금흐름 변동성",
-    "en": "Quarterly earnings and cash flow volatility"
+    "ko": "베트남 생산 거점 운영",
+    "en": "Vietnam production base operations"
    },
    "body": {
-    "ko": "영업이익률은 2023년 1.5%에서 2025년 9.5%로 회복됐지만 분기 이익은 2026년 2분기 160억원에서 3분기 73.5억원으로 크게 줄었다. 영업현금흐름은 2025년 39.5억원에 그쳐 이익과 현금의 괴리가 있다. 이 두 요소가 함께 나타나면 배당과 투자 여력에 부담이 될 수 있다.",
-    "en": "The operating margin recovered from 1.5% in 2023 to 9.5% in 2025, but quarterly operating profit fell from KRW 16 billion in Q2 2026 to KRW 7.35 billion in Q3. Operating cash flow of KRW 3.95 billion in 2025 shows a gap between profit and cash. If both persist, they could weigh on dividend and investment capacity."
+    "ko": "KORTEK VINA는 베트남 생산법인으로 수출 중심 구조에서 생산 거점 역할을 한다. 이 법인의 가동에 차질이 생기면 출하 일정과 매출 인식 시점이 함께 밀릴 수 있다. 현지 운영 비용이나 생산 여건이 바뀌면 제품 원가와 수출 채산성에도 영향을 줄 수 있다.",
+    "en": "KORTEK VINA is the Vietnam production subsidiary and serves as a production base in an export-driven structure. If operations at this subsidiary are disrupted, shipment schedules and the timing of revenue recognition could slip together. Changes in local operating costs or production conditions could also affect product costs and export profitability."
    }
   }
  ],
@@ -339,5 +339,6 @@
    "div": 3.44
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

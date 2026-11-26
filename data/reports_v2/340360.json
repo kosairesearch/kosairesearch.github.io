@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "자금조달과 희석",
-    "en": "Funding and dilution"
+    "ko": "주요 고객 발주 의존",
+    "en": "Dependence on key customer orders"
    },
    "body": {
-    "ko": "3회차 전환사채의 만기일은 2027년 9월 25일, 2회차 전환사채의 만기일은 2028년 3월 26일로 보도됐다. 2026년 1월에는 9억 9,999만 8,000원 규모의 제3자배정 유상증자가 있었고, 2026년 8월 보도 기준 80억원 규모 유상증자의 납입도 연기됐다. 본업 현금 창출력이 약한 상태에서 외부 조달에 의존하면 주식 수 증가가 이어질 수 있다. 자금 조달 방식은 재무 부담과 주주 가치 희석 사이의 선택 문제다.",
-    "en": "Press reports put the maturity of the third convertible bond batch at September 25, 2027 and the second at March 26, 2028. A third-party rights issue of KRW 999,998,000 was completed in early 2026, and the payment for a later KRW 8.0 billion issue was postponed. With weak cash generation from operations, reliance on external funding could keep increasing the share count. The financing path involves a trade-off between financial burden and shareholder dilution."
+    "ko": "회사는 KT와 LG유플러스의 1차 벤더로 통신망 구축 장비를 공급해 왔고, 매출은 두 통신사의 설비 발주 흐름에 따라 움직인다. 통신사의 망 투자 주기가 늦춰지거나 발주가 줄면 AP 장비 수주와 분기 매출이 함께 흔들릴 수 있다. 신사업이 실적으로 자리 잡기 전까지는 통신사 발주 의존도가 높은 상태가 이어질 수 있다.",
+    "en": "The company has supplied network equipment as a first-tier vendor to KT and LG Uplus, and its revenue moves with these two operators' equipment order flow. If the operators slow their network investment cycles or order volumes fall, AP equipment orders and quarterly revenue could fluctuate together. Until new businesses become established in reported results, the company may remain heavily dependent on operator orders."
    }
   },
   {
    "cat": {
-    "ko": "신사업 실행과 주력 사업 침식",
-    "en": "New-business execution and erosion of the core"
+    "ko": "두봇 파트너십 의존",
+    "en": "Reliance on the Dobot partnership"
    },
    "body": {
-    "ko": "주력 AP 매출은 2023년 702억원에서 2024년 585억원으로 줄었고, 회사는 경쟁사 진입을 매출 감소 요인으로 꼽았다. 로봇·드론·방산은 자본 집약적 산업으로, 성과가 나기까지 시간과 자금이 필요하다는 평가다. 신사업에 자원을 나누는 동안 본업 원가율 개선이 지연될 수 있다. 신사업의 실적 반영 시점이 불확실하다는 점이 위험 요인이다.",
-    "en": "Core AP revenue fell from KRW 70.2 billion in 2023 to KRW 58.5 billion in 2024, and the company cited new competitors as a reason for the decline. Robotics, drones and defense are capital-intensive, and press assessments say results will take time and funding. Spreading resources across new businesses could delay cost-ratio improvement in the core. The timing of revenue from new businesses remains uncertain."
+    "ko": "로봇 SI 사업은 두봇의 국내 전문 유통 대리점 지위와 로봇 SI 파트너 선정을 기반으로 한다. 두봇 한국 지사 설립이 추진 중이어서 설립이 지연되거나 유통 조건이 바뀌면 강남 휴머노이드 쇼룸의 기술검증과 현장 실증 계획이 함께 늦어질 수 있다. 로봇 제품 공급을 외부 파트너에 기대는 구조라는 점이 위험 요인이다.",
+    "en": "The robot systems integration business rests on Davolink's position as a domestic exclusive distributor and integration partner for Dobot. Because a Korean subsidiary of Dobot is still being set up, any delay in its establishment or change in distribution terms could slow technology verification and field trials at the Gangnam showroom. The structure relies on an outside partner for robot supply, which is a risk factor."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

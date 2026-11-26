@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "개발 일정과 임상 진입",
-    "en": "Development timeline and clinical entry"
+    "ko": "기술이전 협상 진행",
+    "en": "Licensing negotiation progress"
    },
    "body": {
-    "ko": "두 파이프라인 모두 전임상이어서 IND 신청과 임상 진입 일정이 늦어질 가능성이 있다. 목표 시점은 회사 발표 기준이며, 영장류 검증 결과에 따라 일정이 달라질 수 있다. 학회 발표 데이터가 임상 결과로 이어지지 않을 가능성도 있어 이 역시 위험 요인이다.",
-    "en": "Both pipeline assets are preclinical, so the timing of IND filings and clinical entry could slip. The targets are company-stated and could change depending on primate model validation results. Conference data may not translate into clinical results, which is also a risk factor."
+    "ko": "회사가 밝힌 후속 임상 개발과 기술이전 논의가 예상보다 늦어질 수 있다. 파트너링 성사가 지연되면 외부 협력에서 나오는 수익 확보 시점도 함께 미뤄질 수 있다. 이 경우 2027년 흑자전환 목표의 진행 속도에 부담이 될 수 있다. 협상 조건과 시점은 전임상 데이터의 설득력과 글로벌 제약사의 평가에 따라 달라질 수 있다.",
+    "en": "Follow-on clinical development and licensing talks that the company said it will advance could take longer than expected. If partnering deals are delayed, the timing of revenue from external collaborations could also slip. This could weigh on the pace toward the profitability target for 2027. Deal terms and timing could depend on the strength of preclinical data and the assessment of global pharmaceutical companies."
    }
   },
   {
    "cat": {
-    "ko": "매출 집중과 회계 처리",
-    "en": "Revenue concentration and accounting treatment"
+    "ko": "국책과제 연구비 회계 처리",
+    "en": "Accounting for national project research costs"
    },
    "body": {
-    "ko": "정부 과제 연구비를 매출이 아닌 비용으로 처리한 회계 방식이 2024년 영업손실 확대에 영향을 준 것으로 보도됐다. 매출이 특정 계약과 과제에 묶여 있어 한 건의 계약 지연이나 수익 인식 시점 변경이 분기 실적을 크게 흔들 수 있다.",
-    "en": "Accounting for government-funded research costs as expenses rather than against revenue was reported to have contributed to the wider 2024 operating loss. Because revenue is tied to specific contracts and projects, a single contract delay or a change in revenue recognition timing could shift quarterly results significantly."
+    "ko": "국책과제 수행 기간 동안 정부 지원 연구비를 매출이 아닌 비용으로 처리하는 방식이 이어질 수 있다. 이 처리 방식은 2024년 영업손실이 커진 배경으로 보도된 바 있다. 정부 303억원과 민간 136억원 규모의 과제가 2025년 11월 선정 이후 진행되는 만큼, 연구 투입이 늘수록 손실 규모도 함께 커질 수 있다. 과제 비용이 집중되는 기간에는 분기 영업손익이 더 나빠질 수 있다.",
+    "en": "Government-funded research costs under the national project may continue to be recorded as expenses rather than against revenue during the project period. This treatment was reported as a factor behind the wider operating loss in 2024. With government funding of KRW 30.3 billion and private funding of KRW 13.6 billion in a project selected in November 2025, operating losses could grow as research spending increases. During periods when project costs are concentrated, quarterly operating results could weaken further."
    }
   },
   {
@@ -319,5 +319,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

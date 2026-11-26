@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "업황·경쟁 리스크",
-    "en": "Industry and Competition Risk"
+    "ko": "해외 사업 실행 리스크",
+    "en": "Overseas Expansion Execution Risk"
    },
    "body": {
-    "ko": "여성의류 시장은 진입·퇴출장벽이 낮아 다수 브랜드 간 경쟁이 치열한 구조다. 트렌드 변화에 대응하지 못하거나 신규 브랜드 확장이 기대만큼의 매출로 이어지지 못할 경우 수익성에 부담이 될 수 있다.",
-    "en": "The women's apparel market has low entry and exit barriers, resulting in intense competition among numerous brands. Failure to keep pace with trend changes, or new brand expansion falling short of expected sales, could pressure profitability."
+    "ko": "베트남 호찌민 매장의 매출 반응이 양호해 현지 법인장을 두고 영업을 강화할 방침이다. 해외 매장은 국내와 다른 현지 인력과 운영 체계가 필요해 초기 부담이 국내 사업보다 클 수 있다. 현지 매출이 기대에 못 미치거나 운영 인력 확보가 늦어지면 해외 채널이 전사 수익성에 부담이 될 수 있다. 해외 사업이 국내 대비 어떤 속도로 자리 잡는지는 향후 실적에서 확인할 사안이다.",
+    "en": "Given the positive sales response at its Ho Chi Minh City store in Vietnam, the company plans to strengthen operations under a local country manager. Overseas stores require local staffing and operating systems distinct from domestic ones, so the upfront burden may be larger than in the domestic business. If local sales fall short of expectations or securing operating personnel is delayed, the overseas channel could weigh on overall profitability. How quickly the overseas business establishes itself relative to domestic operations is a matter to verify in future results."
    }
   },
   {
    "cat": {
-    "ko": "재무·자본조달 리스크",
-    "en": "Financial and Capital-Raising Risk"
+    "ko": "로드쇼 채널 의존 리스크",
+    "en": "Costco Roadshow Channel Dependence"
    },
    "body": {
-    "ko": "부채비율은 매년 낮아지고 있으나 2025년에도 153.2%로 여전히 높은 수준이다. 2025년 상환전환우선주 발행으로 외부 자금을 조달한 만큼, 향후 전환·상환 조건이 재무구조와 지분 구조에 어떤 영향을 미칠지 지켜볼 필요가 있다.",
-    "en": "While the debt ratio has declined each year, it remained elevated at 153.2% in 2025. Given that the company raised external capital through the 2025 redeemable convertible preferred share issuance, it is worth monitoring how future conversion or redemption terms could affect the capital and ownership structure."
+    "ko": "코스트코 로드쇼 채널은 약 25개 매장에서 매출을 올리며 안정적인 매출 구조로 자리 잡은 것으로 평가된다. 다만 팝업 형태의 로드쇼는 개최 장소와 기간에 따라 매출이 달라지는 구조라 고정 매장 채널과 성격이 다르다. 로드쇼 매장 확대가 계획대로 이뤄지지 않거나 개최 조건이 바뀌면 이 채널의 매출 성장이 둔화될 수 있다. 특정 할인점 채널에 대한 의존도가 높아질수록 유통 조건 변화가 매출에 미치는 영향도 커질 수 있다.",
+    "en": "The Costco roadshow channel generates sales across around 25 locations and has been described as having become a stable sales structure. However, pop-up roadshows are structured so that sales vary with venue and event period, which differs in nature from fixed store channels. If roadshow expansion does not proceed as planned or hosting conditions change, sales growth in this channel could slow. As reliance on a single discount retail channel rises, the effect of changes in distribution terms on revenue could also grow."
    }
   },
   {
    "cat": {
-    "ko": "시장구조·유동성 리스크",
-    "en": "Market Structure and Liquidity Risk"
+    "ko": "온라인 플랫폼 의존 리스크",
+    "en": "Online Platform Dependence Risk"
    },
    "body": {
-    "ko": "코넥스 시장은 코스닥 대비 거래량과 공시 빈도가 낮아 가격 형성 과정에서 정보 비대칭이나 변동성이 커질 수 있다. 소형주 특성상 소수 거래로도 가격이 크게 움직일 수 있다는 점도 함께 고려할 부분이다.",
-    "en": "The KONEX market has lower trading volume and disclosure frequency than KOSDAQ, which can amplify information asymmetry and volatility in price formation. As a small-cap stock, prices can also move significantly on relatively few trades, which should be factored in as well."
+    "ko": "미쥬는 4050 세대를 겨냥한 온라인 플랫폼 퀸잇 입점으로 온라인 매출을 키우고 있으며, 르니골프는 온라인 중심으로 육성할 계획이다. 온라인 채널의 판매 실적은 외부 플랫폼의 노출 방식과 거래 조건에 따라 좌우되는 구조다. 플랫폼 정책이 바뀌거나 노출 경쟁이 심화되면 온라인 판매가 계획보다 부진할 수 있다. 온라인 비중이 커질수록 플랫폼 의존에 따른 매출 변동성도 함께 높아질 수 있다.",
+    "en": "Miju is growing online sales through its listing on the Queenit platform, which targets consumers in their 40s and 50s, and plans to develop Le.NIC Golf primarily online. Online sales performance depends on the exposure mechanics and trading terms set by external platforms. If platform policies change or competition for visibility intensifies, online sales could fall short of plan. As the online share grows, revenue volatility stemming from platform dependence could also increase."
    }
   }
  ],
@@ -321,5 +321,6 @@
     "dps": "no_div"
    }
   }
- }
+ },
+ "riskSplit": 1
 }

@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "설계변경과 원가 변동",
-    "en": "Design changes and cost volatility"
+    "ko": "생산능력 확충 지연",
+    "en": "Delay in capacity expansion"
    },
    "body": {
-    "ko": "모듈러 사업 수행 중 설계변경 등 계약조건과 관련한 변경 요인이 생길 수 있으며, 이는 조달청 계약조건에 따라 조정될 수 있다고 회사가 밝혔다. 2025년에는 신규 설비 감가상각비와 인력 확보 비용이 늘어 영업이익이 줄었다. 공사 이익률은 설계 변경과 공정 차질의 영향을 받을 수 있다.",
-    "en": "The company has said that design changes and other contract-condition changes may arise during modular projects and can be adjusted under Public Procurement Service contract terms. In 2025, higher depreciation on new equipment and personnel costs reduced operating profit. Project margins can be affected by design changes and process delays."
+    "ko": "군산 제1공장의 자동화 설비 확충과 스마트공장 구축이 계획대로 끝나지 않으면 PC모듈러 골조 생산능력이 충분히 늘지 않을 수 있다. 2분기 가동률은 40.5%, 연환산 생산능력은 4,600모듈 수준이어서 수주 물량이 이를 넘으면 계약 이행이 밀릴 수 있다. 이행이 늦어지면 강원지방조달청 계약(2027년 2월 10일까지)과 대구수창초등학교 계약(2027년 3월 31일까지)의 매출 인식 시점도 뒤로 밀릴 수 있다.",
+    "en": "If the automation equipment expansion and smart factory build-out at the Gunsan No. 1 plant are not completed as planned, PC modular frame capacity may not rise enough. Second-quarter utilization was 40.5% and annualized capacity is about 4,600 modules, so if order volume exceeds that range, contract execution could slip. Delays could also push back revenue recognition for the Gangwon regional procurement office contract (through February 10, 2027) and the Daegu Suchang Elementary School contract (through March 31, 2027)."
    }
   }
  ],
@@ -329,5 +329,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

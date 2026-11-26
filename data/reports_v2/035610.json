@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "자회사 실적 변동",
-    "en": "Subsidiary Earnings Volatility"
+    "ko": "연구개발 투자 축소",
+    "en": "Reduced R&D Investment"
    },
    "body": {
-    "ko": "매출과 이익의 상당 부분이 의료IT 자회사의 판매에 달려 있어, 병원 설비 투자 시기나 제품 수주 흐름이 바뀌면 지주사 실적이 크게 흔들릴 수 있다. 2026년 분기 매출은 1분기 353억원에서 3분기 252억원으로 한 해 안에서도 큰 폭으로 움직였다. 이 변동성이 줄어드는지 여부가 다음 확인 지점이다.",
-    "en": "A large part of sales and profit depends on sales at the medical IT subsidiary, so changes in hospital equipment spending or order flow could significantly move the holding company's results. Quarterly sales moved from KRW 35.3 billion in the first quarter of 2026 to KRW 25.2 billion in the third quarter, a sizable swing within one year. Whether this volatility narrows is the next point to check."
+    "ko": "연구개발비는 2022년 매출 대비 9.40%에서 2025년 5.69%로 낮아졌다. PACS 공급사 간 경쟁이 기능·안정성·구축 서비스에서 갈리는 만큼, 개발 투자 비중이 계속 낮아지면 주력 제품의 기능 개선이 늦어질 수 있다. 이는 자회사의 PACS 판매 확대 흐름을 약화시켜 지주사 연결 실적의 회복을 늦출 수 있다.",
+    "en": "R&D spending fell from 9.40% of sales in 2022 to 5.69% in 2025. Competition among PACS suppliers turns on functionality, stability, and implementation services, so if development spending keeps shrinking, improvements to the core product could slow. That could weaken the subsidiary's PACS sales growth and delay the recovery of consolidated results at the holding company."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

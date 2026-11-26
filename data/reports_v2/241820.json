@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 지위 리스크",
-    "en": "Listing status risk"
+    "ko": "정기공시·관리 리스크",
+    "en": "Periodic disclosure risk"
    },
    "body": {
-    "ko": "상장폐지 결정이 법원 가처분으로 잠시 보류된 상태일 뿐 취소된 것은 아니어서, 소송 결과에 따라 정리매매 및 상장폐지가 재개될 수 있다. 또한 분기보고서 미제출 등 추가적인 관리종목 지정 사유가 발생한 사례도 보도된 바 있어, 정기공시 이행 여부 자체가 리스크 요인이다. 거래정지가 장기화될 경우 투자자의 매매·평가 자체가 제약된다.",
-    "en": "The delisting decision has only been temporarily stayed by a court injunction, not reversed, so liquidation trading and delisting could resume depending on the litigation outcome. Reports have also cited additional administrative-issue designation triggers, such as failure to file quarterly reports, meaning compliance with periodic disclosure obligations is itself a risk factor. A prolonged trading suspension also constrains investors' ability to trade or mark positions."
+    "ko": "과거 보고서 미제출로 관리종목 지정 사유가 추가된 바 있어, 정기공시 지연이 반복되면 추가 관리종목 지정으로 이어질 수 있다. 2026년 1분기 실적은 보도에 따른 잠정치로 아직 공시 확정치가 아니므로, 차기 정기보고서에서 확정 여부가 상장 지위 판단의 한 요소가 된다. 회생절차가 진행되는 기간에 공시 의무가 지켜지지 않으면 채권자와 투자자의 정보 접근이 제약될 수 있다.",
+    "en": "A past failure to file reports added administrative-issue designation grounds, so repeated delays in periodic filings could lead to further designation. The first-quarter 2026 results are provisional figures reported in the media and not yet confirmed by disclosure, so whether the next periodic report confirms them will be a factor in judging listing status. If disclosure obligations are not met while receivership proceeds, creditors' and investors' access to information may be restricted."
    }
   },
   {
    "cat": {
-    "ko": "법적·규제 리스크",
-    "en": "Legal and regulatory risk"
+    "ko": "신사업 전환 실행 리스크",
+    "en": "New-business execution risk"
    },
    "body": {
-    "ko": "임상시험 조작 의혹은 검찰 수사의뢰와 경찰의 혐의 인정 통보, 식약처의 품목허가 취소로 이어졌다. 관련 수사나 행정소송이 진행 중일 가능성이 있으며, 그 결과에 따라 추가적인 제재나 손해배상 책임이 발생할 수 있다. 회사는 의혹을 부인하고 있어 최종 판단까지는 상당한 불확실성이 남아 있다.",
-    "en": "The clinical-trial falsification allegations led to a prosecutorial investigation referral, a police notification confirming the allegations, and revocation of product approval by the drug regulator. Related investigations or administrative litigation may still be ongoing, and the outcome could result in additional sanctions or damages liability. The company denies the allegations, leaving substantial uncertainty until a final determination is reached."
+    "ko": "회사는 명지병원 등과 스마트 혈액원 및 혈장분획공장(PDMP) 구축을 논의하고 있으나, 구체적인 매출 기여 시점은 확인되지 않았다. 이 사업은 설비 투자와 인허가가 뒤따를 수 있어 회생 및 경영권 이전 과정의 자금 여력과 맞물린다. 임시주주총회에서 유아동 제품 유통, 광고대행업 등 기존 진단사업과 거리가 먼 사업목적 47개가 추가된 점도 있어, 경영 자원이 분산되면 핵심 진단 사업에 대한 투자가 약화될 수 있다.",
+    "en": "The company is in discussions with Myongji Hospital and others on building a smart blood bank and a plasma-derived medicinal product (PDMP) facility, but no confirmed timeline for revenue contribution has been identified. Such projects could require facility investment and regulatory approvals, linking their execution to funding capacity during receivership and the change-of-control process. Roughly 47 new business purposes unrelated to core diagnostics, including consumer-goods distribution and advertising services, were also added at an extraordinary shareholders meeting, and if management resources are spread across these areas, investment in core diagnostics could weaken."
    }
   },
   {
@@ -347,5 +347,6 @@
     "bps": "no_equity"
    }
   }
- }
+ },
+ "riskSplit": 1
 }

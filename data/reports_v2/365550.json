@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "금리 · 차입",
-    "en": "Interest Rates and Borrowing"
+    "ko": "신용등급 · 조달 여건",
+    "en": "Credit Rating and Funding Terms"
    },
    "body": {
-    "ko": "부채총계가 1조 6,235억원에 이르러 금리 변동이 이자 비용을 통해 순이익에 바로 연결된다. 금리 하락에 따른 조달 비용 감소 기대가 리츠주 주가에 영향을 주고 있다. 차입 만기 도래분의 재조달 조건이 다음 결산의 핵심 변수다.",
-    "en": "Total liabilities of KRW 1.62 trillion mean rate changes flow directly into net profit through interest expense. Expectations of lower funding costs from rate declines have been moving REIT share prices. Refinancing terms for maturing debt are the key variable for the next fiscal year."
+    "ko": "2022년 8월 한국신용평가(Moody's Korea)로부터 A- 등급과 안정적 전망을 받았다. 신용등급 전망이 부정적으로 바뀌거나 등급이 하향되면 차입 한도와 재조달 금리가 모두 불리하게 움직일 수 있다. 부채비율이 높은 상태에서 등급이 낮아지면 조달 여건의 악화 폭이 커질 수 있다. 등급 변동 여부는 이후 신용평가 발표와 공시로 확인된다.",
+    "en": "Moody's Korea assigned the company an A- rating with a stable outlook in August 2022. A negative outlook or a downgrade could worsen both the borrowing limits and the refinancing rates available to the company. With the debt ratio at an elevated level, a lower rating would widen the deterioration in funding conditions. Any change in the rating would show up in later rating announcements and disclosures."
    }
   },
   {
    "cat": {
-    "ko": "임차인 · 계약",
-    "en": "Tenants and Leases"
+    "ko": "자산 가치 평가",
+    "en": "Asset Valuation"
    },
    "body": {
-    "ko": "임차 면적이 특정 e커머스 기업에 집중되어 있어 해당 기업의 물류 전략 변화가 임대수익에 직접 영향을 줄 수 있다. 계약 만기와 갱신 조건이 몰리는 시기에는 임대료 조정 폭이 줄어들 수 있다. 임차인별 비중은 사업보고서의 임차 현황에서 확인된다.",
-    "en": "Leased area is concentrated in one e-commerce tenant, so a change in that company's logistics strategy could directly affect rental income. In periods when many leases expire or renew together, the room for rent adjustments may narrow. Tenant-level shares are reported in the annual report's leasing section."
+    "ko": "보유 물류센터의 자산 평가액은 평가 방식에 따라 달라질 수 있어, 평가 기준이 바뀌면 자본총계와 장부상 자산 규모가 함께 흔들릴 수 있다. 부채비율이 높은 구조에서는 평가액 변동이 자본가치에 더 크게 반영된다. 평가손실이 나면 자본 감소로 이어지고, 이는 차입 여력과 분기 배당 여건에도 영향을 줄 수 있다.",
+    "en": "Appraised values of the company's logistics centers can change with the valuation method used, so a shift in appraisal basis could move both book equity and reported asset size. Because the debt ratio is elevated, changes in appraised values pass through more heavily to equity value. An appraisal loss would reduce equity and could affect borrowing capacity and quarterly dividend conditions."
    }
   },
   {
@@ -309,5 +309,6 @@
   },
   "fy_end_month": 5
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

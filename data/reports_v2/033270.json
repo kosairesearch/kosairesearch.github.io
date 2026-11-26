@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "정책·약가 리스크",
-    "en": "Policy and pricing risk"
+    "ko": "해외 계약 매출 전환",
+    "en": "Overseas contract conversion"
    },
    "body": {
-    "ko": "정부가 제네릭 중심으로 약가제도 개편을 추진하고 있다. 회사는 개량신약 비중 확대와 제네릭의 완충 역할로 영향을 줄이겠다는 입장이다. 상상인증권은 2026년 8월 보도에서 약가 인하 영향이 제한적일 것이라고 분석했으나, 정책 방향이 달라지면 영향 범위도 달라질 수 있다.",
-    "en": "The government is pursuing a pricing revision centered on generics. The company says a higher improved-drug share and the buffer role of generics will limit the impact. Sangsangin Securities judged the effect limited in an August 2026 report, but the scope could change if policy direction shifts."
+    "ko": "2026년 9월 말레이시아 공급계약과 10월 필리핀·베트남 항암제 수출계약은 아직 매출로 확인되지 않았다. 계약이 납품과 후속 주문으로 이어지지 않으면 2026년 해외 매출 목표 3,000만 달러 달성이 늦어질 수 있다. 말레이시아 공급은 정부 산하 병원 대상이라 조달 일정과 물량이 계약 금액에 그대로 반영될지 불확실하다.",
+    "en": "Export supply deals signed in September 2026 with a Malaysian distributor and the anticancer export contracts signed in October 2026 with partners in the Philippines and Vietnam have not yet been confirmed as recognized sales. If the contracts do not convert into deliveries and follow-on orders, reaching the 2026 overseas sales target of USD 30 million could be delayed. Because supply to Malaysia targets government-affiliated hospitals, it is uncertain whether procurement timing and volumes will be reflected in the full contract value."
    }
   },
   {
    "cat": {
-    "ko": "실적 변동성·일회성 항목",
-    "en": "Earnings volatility and one-off items"
+    "ko": "신제품 출시 실행",
+    "en": "New product launch execution"
    },
    "body": {
-    "ko": "2026년 3분기에는 환수 예상액과 환차손이 매출과 손익에 반영됐다. 2024년에는 영업이익이 늘었지만 지배주주 순이익은 32.8% 감소했다. 영업이익과 순이익의 흐름이 엇갈리는 해가 있어 분기 단위 해석에는 주의가 필요하다.",
-    "en": "In Q3 2026 an expected recovery charge and foreign exchange losses affected sales and profit. In 2024 operating profit rose while controlling-shareholder net profit fell 32.8%. Because operating and net profit sometimes diverge, quarterly readings require caution."
+    "ko": "2026년 신제품 7종의 순차 출시 계획이 일정대로 진행되지 않을 수 있다. 실로듀오는 2026년 매출 100억원이 목표로 제시됐으나 초기 매출이 이에 못 미칠 가능성이 있다. 신제품 출시가 늦어지거나 초기 매출이 부진하면 개량신약 비중 60% 유지 계획에 부담이 된다.",
+    "en": "The planned sequential launch of seven new products in 2026 may not proceed on schedule. Silduo has been given a 2026 sales target of KRW 10 billion, but its early sales could fall short of that level. If launches are delayed or early sales are weak, the plan to keep improved drugs at 60% of sales would come under pressure."
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 3.96
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

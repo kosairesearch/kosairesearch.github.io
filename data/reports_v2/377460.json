@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장폐지 · 거래 제약",
-    "en": "Delisting and trading constraints"
+    "ko": "가전 판매 사이클 연동",
+    "en": "Appliance sales cycle linkage"
    },
    "body": {
-    "ko": "상장폐지 여부는 개선기간 종료 후 결정될 예정이며, 결정 전까지 매매거래정지가 이어진다. 상장폐지가 확정되면 거래 자체가 어려워지는 구조라 가장 큰 리스크로 꼽힌다. 개선기간 중 이의신청과 결정 절차가 일정에 영향을 줄 수 있다.",
-    "en": "The delisting decision is set to follow the end of the improvement period, and the trading halt continues until then. A confirmed delisting would make trading itself impractical, which makes it the largest risk. Objections and the decision procedure during the improvement period could shift the timetable."
+    "ko": "가전 설치·케어 서비스 수요는 신규 가전 판매와 렌탈 가입에 연동되어 있어, 판매 사이클이 둔화되면 설치 물량도 함께 줄 수 있다. 김치냉장고 등 대형 가전은 교체 주기가 길어 판매 감소가 설치 수요에 시차를 두고 나타날 수 있다. 설치·케어와 물류가 한 사업 구조로 묶여 있어 한 부문의 부진이 다른 부문의 매출 회복을 제약할 가능성도 있다.",
+    "en": "Demand for home appliance installation and care services is tied to new appliance sales and rental sign-ups, so a slowdown in the sales cycle could also reduce installation volume. Large appliances such as kimchi refrigerators have long replacement cycles, so a drop in sales may show up in installation demand with a lag. Because installation and care services and logistics sit in one business structure, weakness in one segment could also hold back a recovery in another."
    }
   },
   {
    "cat": {
-    "ko": "재무 · 현금흐름",
-    "en": "Financial position and cash flow"
+    "ko": "물류 운임 · 원가",
+    "en": "Logistics freight and costs"
    },
    "body": {
-    "ko": "부채비율은 2024년 909.2%를 기록한 이력이 있고 2025년 말에도 부채총계는 990억원이다. 영업활동 현금흐름은 2022년, 2024년, 2025년에 유출을 기록했다. 2025년 흑자 전환은 1개 연도 실적이어서 지속성을 아직 판단하기 어렵다.",
-    "en": "The debt ratio reached 909.2% in 2024, and total liabilities stood at KRW 99 billion at year-end 2025. Operating cash flow was negative in 2022, 2024 and 2025. The 2025 return to profit covers only one year, so its durability remains uncertain."
+    "ko": "물류 부문은 창고·콜센터 운영과 국제 운송, 수출입 신고 대행을 포함해 해상·항공 운임 변동의 영향을 받는다. 운임이 오르면 국제 운송 원가가 높아져 물류 부문의 수익성을 압박할 수 있다. 운임 상승분을 얼마나 가격에 전가할 수 있는지에 따라 손익 영향의 폭이 달라질 수 있다.",
+    "en": "The logistics segment, which includes warehouse and call center operation, international transportation and export-import declaration services, is exposed to sea and air freight rate changes. Higher freight rates would raise international transport costs and could pressure the segment's profitability. How far those increases can be passed on in pricing would determine the size of the impact on earnings."
    }
   },
   {
    "cat": {
-    "ko": "공시 정정 · 내부통제",
-    "en": "Disclosure corrections and internal controls"
+    "ko": "영업 외 손익 · 순손익",
+    "en": "Non-operating items and net income"
    },
    "body": {
-    "ko": "2026년 상반기 반기보고서의 영업손익 기재가 정정됐고, 회사는 정정 경위를 구체적으로 밝히지 않았다. 상장적격성 실질심사가 진행되는 시점에 나온 정정이어서 공시 정확성에 대한 시장의 관심이 크다. 정정 과정에서 내부 관리 체계가 어떻게 바뀌는지가 향후 쟁점이다.",
-    "en": "The operating profit and loss entries in the first-half 2026 semi-annual report were corrected, and the company did not describe how the error arose. The correction came while a listing qualification review was underway, which heightens attention to disclosure accuracy. How internal controls change after the correction is a continuing issue."
+    "ko": "2026년 3분기 지배주주 순손실 18.2억원은 영업손실 9.8억원보다 커서, 영업 외 손익이 순손익을 좌우한 것으로 읽힌다. 영업 외 항목의 방향이 바뀌지 않으면 영업손익이 개선되더라도 지배주주 순손익은 적자로 남을 수 있다. 판관비 구조 변화와 영업 외 손익을 함께 확인해야 손익 전환 여부를 판단할 수 있다.",
+    "en": "The Q3 2026 net loss attributable to controlling shareholders of KRW 1.82 billion exceeded the KRW 982 million operating loss, suggesting non-operating items drove the bottom line. If non-operating items do not reverse, net results could remain in the red even as operating losses narrow. Whether profitability turns depends on changes in selling expenses and non-operating items viewed together."
    }
   }
  ],
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

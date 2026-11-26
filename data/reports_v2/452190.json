@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 투자 사이클",
-    "en": "Customer investment cycle"
+    "ko": "해외 판매와 중국 법인",
+    "en": "Overseas sales and China unit"
    },
    "body": {
-    "ko": "회사 측도 전방산업 수요 감소와 고객사의 투자·주문 감소, 사업 전략 변경 등으로 제품 수요가 줄 수 있다는 입장이다. 장비 주문이 하반기에 몰리는 특성도 분기 편차를 키운다. 배터리와 자동차 고객의 설비 투자가 줄면 분기 매출이 다시 감소할 수 있다.",
-    "en": "The company itself has said that lower demand in end markets, reduced customer investment and orders, and shifts in customer strategies could reduce demand for its products. Equipment orders also tend to bunch in the second half, which widens quarterly swings. A pullback in battery or automotive capex could push quarterly revenue down again."
+    "ko": "중국, 베트남 등 동남아와 유럽, 미국이 판매처이며 중국법인 CHBL Co., Ltd.와 해외 자회사 HBES를 둔다. 충방전기는 중국이 독점해 온 시장에 진출한 제품이어서 현지 경쟁과 무역·산업 정책 변화가 수출과 중국법인 실적에 영향을 줄 수 있다. 3kW급 보급형 레이저의 시험 생산 거점인 베트남 케이엔에스 공장의 운영 여건 변화도 같은 경로로 실적에 닿을 수 있다.",
+    "en": "Sales go to China, Vietnam and other Southeast Asian markets, Europe and the US, and HBL operates a Chinese unit, CHBL Co., Ltd., and a 100%-owned subsidiary, HBES. Its charge-discharge equipment entered a market long dominated by China, so local competition and changes in trade or industrial policy could affect export volumes and the earnings of the Chinese unit. Changes in operating conditions at KNS's Vietnam factory, planned as the test-production and marketing base for the 3kW-class entry-level laser, could reach earnings through the same path."
    }
   },
   {
    "body": {
-    "ko": "매출 인식이 검수와 납품 시점에 좌우되어 분기 이익이 크게 흔들린다. 2025년 영업활동 현금흐름이 3억원에 그친 점은 이익이 현금으로 바로 회수되지 않았음을 보여 준다. 부채비율 상승 속도도 함께 살펴볼 대상이다.",
-    "en": "Revenue recognition depends on inspection and delivery timing, so quarterly profit can swing sharply. Operating cash flow of KRW 303 million in 2025 shows that profit did not convert to cash quickly. The pace of the rise in the debt-to-equity ratio also needs watching."
+    "ko": "우주 국책과제는 117억원 규모의 주관기관 선정 소식으로 소개되며 회사가 과제를 이끈다. 과제 수행 일정이 늦어지거나 단계별 검수 결과에 따라 매출 인식 시점이 뒤로 밀릴 수 있다. 국책과제의 매출 기여는 아직 공시 실적에 나타나지 않았으므로, 기존 장비 사업과 구분해 얼마나 잡히는지 확인이 필요하다. 신사업이 본업의 이익 회복과 어떻게 맞물리는지도 살펴볼 대상이다.",
+    "en": "A space national project, with HBL selected as lead organization in a KRW 11.7 billion program, is reported. Delays in the project schedule or stage-by-stage inspection results could push back when revenue is recognized. The project's contribution has not yet appeared in filed results, so how much of it is separated from the existing equipment business needs to be confirmed. How this new business fits with the recovery in core profit is also a point to watch."
    },
    "cat": {
-    "ko": "실적 변동성과 현금창출력",
-    "en": "Earnings volatility and cash generation"
+    "ko": "우주 국책과제 수행",
+    "en": "Space national project execution"
    }
   },
   {
@@ -351,5 +351,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "업황과 선종 집중",
-    "en": "Market cycle and vessel concentration"
+    "ko": "고선가 물량 이후 이익률",
+    "en": "Margin after high-priced backlog"
    },
    "body": {
-    "ko": "수주 공시가 원유운반선 중심이라 탱커 발주와 운임 흐름에 실적이 연동된다. 노후 유조선 교체와 환경 규제 강화가 수요를 떠받치고 있으나, 이 수요가 꺾이면 수주 속도와 선가에 영향이 생길 수 있다. 다른 선종으로 건조 범위를 넓히는 과정에서는 추가 비용이 발생할 수 있다는 업계 지적이 있다.",
-    "en": "Because disclosed orders are centered on crude oil tankers, earnings are linked to tanker ordering and freight trends. Replacement of aging tankers and tighter environmental rules support demand, but a slowdown could affect order pace and newbuild prices. Industry commentary warns that expanding into other vessel types may add costs."
+    "ko": "2024년 수주한 고선가 선박의 건조가 진행되며 영업이익률이 높게 유지돼 왔다. 이 물량의 건조가 끝난 뒤의 이익은 새로 수주하는 선박의 선가와 원가에 따라 정해진다. 2026년 수주가 원유운반선에 집중돼 있어 신규 계약 선가가 낮아지면 영업이익률이 23.9%보다 낮아질 수 있다. 인도가 2028년부터 2030년까지 이어지는 만큼 이 전환에 따른 수익성 변화는 여러 해에 걸쳐 나타날 수 있다.",
+    "en": "Operating margins have stayed high as vessels ordered at high prices in 2024 moved into construction. Profit after that backlog is built will depend on the prices and costs of newly contracted vessels. Because 2026 orders are concentrated in crude oil tankers, lower prices on new contracts could push the operating margin below 23.9%. With deliveries running from 2028 through 2030, the profitability shift may unfold over several years."
    }
   },
   {
    "cat": {
-    "ko": "환율과 원가 부담",
-    "en": "Currency and cost pressure"
+    "ko": "대형 조선사와의 수주 경쟁",
+    "en": "Order competition with large yards"
    },
    "body": {
-    "ko": "2026년 3분기 원·달러 평균 환율은 1,423원으로 전 분기 1,502원에서 하락했다. 원화 환산 매출이 줄어드는 효과가 계약 환율 구조에 따라 나타날 수 있다. 조업일수 감소와 함께 가동 효율이 실적에 부담이 됐다. 회사는 도크 가동률과 공정 효율로 생산 흐름을 유지했다고 설명했다.",
-    "en": "The average won-dollar rate fell to 1,423 in Q3 2026 from 1,502 in the prior quarter. Depending on contract currency structure, the won-denominated value of revenue may be reduced. Fewer working days weighed on output efficiency. The company said it maintained production flow through dock utilization and process efficiency."
+    "ko": "대한조선은 HD한국조선해양, 한화오션, 삼성중공업 같은 대형 조선사에 비해 생산 규모가 작은 중형 조선사다. 업황이 호조를 보이면 대형사가 시장의 주된 수혜를 받아 대형 선주의 발주가 그쪽으로 몰릴 수 있다. 수주가 수에즈막스 탱커 같은 특정 선종에 기대는 구조여서, 같은 선종의 물량을 대형사와 나눠 가져야 하는 상황도 생길 수 있다. 신규 수주가 줄면 2027년 이후 건조 물량의 골격에 영향을 줄 수 있다.",
+    "en": "Daehan Shipbuilding is a mid-sized yard with smaller production scale than large shipbuilders such as HD Korea Shipbuilding & Offshore Engineering, Hanwha Ocean and Samsung Heavy Industries. In an upcycle, large yards are the main beneficiaries, so orders from large shipowners could flow to them. Because its orders rely on specific vessel types such as Suezmax tankers, it may have to share demand for those types with larger yards. A decline in new orders could affect the shape of construction volume from 2027 onward."
    }
   },
   {
@@ -319,5 +319,6 @@
    "div": 0.7
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

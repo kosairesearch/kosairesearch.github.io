@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "자금 조달과 재무 구조",
-    "en": "Funding and financial structure"
+    "ko": "6인치 공정 전환 실행",
+    "en": "6-inch process transition execution"
    },
    "body": {
-    "ko": "100억원 규모 CB 발행 결정이 2026년 11월 9일 철회됐다. 회사는 정관 보완 후 재추진하겠다고 밝혔지만 조건은 미정이다. 자본총계는 349억원이나 2025년 부채비율이 50.5%로 올라 조달 부담이 커질 수 있다.",
-    "en": "The KRW 10 billion convertible bond decided in late October 2026 was withdrawn on November 9. The company says it will re-pursue the issue after amending its articles, but the terms remain undetermined. Total equity is KRW 34.9 billion, yet the debt ratio rose to 50.5% in 2025, so financing costs could weigh more heavily."
+    "ko": "쏘닉스는 4인치 SAW에서 6인치 TF-SAW로 공정을 옮기고 있으며, 전환 속도가 해외 필터 제조사와의 기술·가격 경쟁에서 위치를 가를 변수다. TF-SAW 수요가 2029년까지 연평균 19%로 늘어날 전망인 만큼, 전환이 늦어지면 고객 확보 기회를 놓칠 수 있다. 신규 공정의 양산 안정화가 늦어지면 고객 인증 일정이 밀려 해당 공정의 매출 기여도 뒤로 밀릴 수 있다.",
+    "en": "Sawnics is moving its process from 4-inch SAW to 6-inch TF-SAW, and the pace of this transition will be a key factor in its technology and price competition with overseas filter makers. With TF-SAW demand projected to grow at a 19% compound annual rate through 2029, a slower transition could cause the company to miss customer win opportunities. If mass-production stabilization on the new process is delayed, customer qualification schedules could slip and push back the revenue contribution from that process."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "공공 발주 의존과 수주 변동성",
-    "en": "Dependence on public contracts"
+    "ko": "신사업 실행",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "매출이 도로·철도 공공 발주 프로젝트 단위로 발생해 2025년 4분기 593억원과 2026년 1분기 155억원처럼 분기 차이가 크다. 한 건의 계약이 완료되거나 발주 일정이 밀리면 분기 손익이 크게 흔들린다. 대형 공공 프로젝트에 대한 의존도가 높다는 점은 실적 예측의 불확실성으로 남는다.",
-    "en": "Revenue is booked project by project from public clients, which is why quarterly revenue ranged from KRW 15.5 billion to KRW 59.3 billion in the last five quarters. A single contract finishing or a delayed tender can move quarterly profit sharply. High reliance on large public projects keeps earnings forecasting uncertain."
+    "ko": "회사는 2026년 AX사업본부를 출범시키고 한국도로공사 AI 기반 원격유지관리 사업을 수행하고 있다. 원격 제어와 AI 성능진단을 결합한 고장 예측 기능이 현장에서 구현되어 반복 수요로 이어지는지가 관건이다. 신규 사업은 개발과 인력 투입 비용이 매출 인식보다 먼저 발생할 수 있어, 사업 확장이 손익 개선으로 이어지는 시점은 불확실하다.",
+    "en": "The company launched its AX business division in 2026 and is carrying out the AI-based remote maintenance project for Korea Expressway Corporation. Whether the failure prediction function, which combines remote control with AI performance diagnostics, is delivered in the field and leads to repeat demand remains to be seen. Development and staffing costs for new businesses can arrive before revenue is recognized, so the timing at which this expansion improves profit is uncertain."
    }
   },
   {
    "cat": {
-    "ko": "적자 지속과 이익 체력",
-    "en": "Continued losses and earnings capacity"
+    "ko": "대심도 사업 추가 수주",
+    "en": "Additional deep-underground awards"
    },
    "body": {
-    "ko": "2026년 1분기부터 3분기까지 3개 분기 연속 적자이며, 최근 4개 분기 지배주주 순손실 합계는 11.1억원이다. 영업이익률은 2025년 5.3%로 2023년 11.8%보다 낮아진 상태다. 매출이 회복되지 않으면 고정 비용 부담이 손익을 계속 누를 수 있다.",
-    "en": "The company has posted losses for three consecutive quarters from Q1 2026 through Q3 2026, and attributable net losses over the last four quarters total KRW 1.11 billion. The operating margin was 5.3% in 2025, below 11.8% in 2023. If revenue does not recover, fixed cost burdens could keep pressuring profit."
+    "ko": "회사는 동부 간선지하도로, 만덕-센텀 도시고속도로, 성남-강남 민자고속도로, 경부 고속지하도로 등 계획 중인 대심도·지하도로 사업의 추가 수주를 기대하고 있다. 이들 사업의 발주 시기와 낙찰 여부는 아직 정해지지 않았으며, 서울 대심도 사업 수주에 이어 추가 수주가 이뤄지는지가 매출 기반 회복의 전제가 된다. 수주가 지연되거나 다른 사업자에게 돌아가면 매출 회복과 이익 개선 시점도 그만큼 늦어질 수 있다.",
+    "en": "The company expects additional awards for planned deep-underground and underground road projects, including the East Trunk Underground Road, the Mandeok-Centum urban expressway, the Seongnam-Gangnam private expressway and the Gyeongbu high-speed underground road. Their procurement timing and award outcomes have not been set, so whether awards continue after the Seoul deep-underground projects is the premise for a revenue recovery. If awards are delayed or go to other bidders, the timing of revenue recovery and profit improvement could also be pushed back."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

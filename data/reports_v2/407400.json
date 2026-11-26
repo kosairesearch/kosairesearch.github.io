@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "인수 통합과 비용 부담",
-    "en": "Integration and Cost Burden"
+    "ko": "증설 가동과 출고 정상화",
+    "en": "Second-Factory Ramp-Up"
    },
    "body": {
-    "ko": "자회사 편입 과정에서 무형자산 상각과 손상이 2025년 손익을 악화시킨 것으로 회사가 설명했다. 2026년 합병 이후에도 통합 비용과 신규 품목의 초기 비용이 정기 이익을 흔들 수 있다. 키움증권 등 외부 분석은 판관비 통제 여부를 핵심 변수로 꼽았다.",
-    "en": "The company said amortization and impairment tied to subsidiary acquisitions worsened 2025 earnings. Integration costs after the 2026 merger and early costs of new categories could continue to move quarterly profit. External analysis, including Kiwoom Securities, has pointed to control of selling and administrative expenses as the key variable."
+    "ko": "옥토아이앤씨는 2026년 5월 2공장 증설을 마치고 양산에 들어갔지만, 1공장의 생산 능력 한계로 1만 건 이상의 출고가 지연된 적이 있다. 2공장 가동이 출고 정상화로 이어지지 않으면 시공매트 매출 증가가 계획보다 늦어지고, 증설로 늘어난 고정비가 분기 영업손익의 부담으로 남을 수 있다. 이 효과는 2027년 1분기 분기보고서의 매출 흐름으로 확인해야 한다.",
+    "en": "The TPU-mat subsidiary completed its second factory in May 2026 and entered full production, but shipments were previously delayed by more than 10,000 orders because of the first factory's capacity limit. If the second factory does not restore shipment timing, installed-mat sales growth could arrive later than planned, and the fixed costs of the expansion may keep weighing on quarterly operating results. Whether this effect appears in sales should be confirmed in the Q1 2027 quarterly report."
    }
   }
  ],
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

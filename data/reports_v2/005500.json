@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "약가 정책 리스크",
-    "en": "Drug pricing risk"
+    "ko": "신약 임상 진행 리스크",
+    "en": "Clinical development risk"
    },
    "body": {
-    "ko": "2026년 하반기 약가 제도 개편의 시행 여부와 인하 폭이 가장 큰 변수다. 보도 기준 업계 타협선 10%와 복지부 최초 안이 맞서 있었다. 제네릭 비중이 높아 인하 영향이 매출과 이익에 직접 반영될 수 있다.",
-    "en": "Whether the second-half 2026 pricing reform takes effect, and how deep the cuts go, is the largest variable. As of press reports, the industry's 10% compromise line and the Ministry's original plan were at odds. With a high generic share, the impact of cuts would flow directly into revenue and profit."
+    "ko": "면역 염증 신약 후보물질 SJN 314는 2026년 2월 식품의약품안전처에 임상시험계획을 신청한 단계다. 임상시험계획이 승인되고 임상이 진행돼야 파이프라인이 실적에 반영될 수 있으나, 일정과 결과는 정해지지 않았다. 신약 과제 16건을 가동 중이어서 개발비 부담이 이어질 수 있고, 임상 지연이나 결과 부진은 연구비 지원과 신사업 기대를 함께 낮출 수 있다.",
+    "en": "The company filed an investigational new drug plan with the Ministry of Food and Drug Safety in February 2026 for SJN 314, an immune-inflammatory candidate. Its pipeline will reach earnings only if the plan is approved and clinical trials proceed, and neither timing nor outcome has been set. With 16 new drug projects under way, development spending may continue to weigh on the company, and delays or weak results in clinical trials could lower expectations for both government-funded R&D support and new business growth."
    }
   },
   {
    "cat": {
-    "ko": "실적 계절성과 신제품 공백",
-    "en": "Seasonality and new-product timing"
+    "ko": "주사제 허가·공급 지연",
+    "en": "Injectable approval and supply delay"
    },
    "body": {
-    "ko": "호흡기 치료제는 감염병 유행에 따라 분기별 변동이 크다. 2026년 1분기 매출 감소가 이를 보여 준 사례다. 신제품 공급 시점이 늦어지면 기존 매출 감소분을 상쇄하는 속도도 늦어질 수 있다.",
-    "en": "Respiratory treatments swing sharply from quarter to quarter with the infection cycle, as the first quarter of 2026 showed. If new product supply comes later than planned, the pace at which they offset the decline in existing sales could also slow."
+    "ko": "오송공장의 주사제는 품목허가가 순차적으로 진행 중이어서, 허가가 늦어지면 정상 생산과 생산량 증가도 늦어질 수 있다. 회사는 항암제와 CNS 계열 신제품 공급이 본격화되면 기존 매출 감소분을 상쇄할 것으로 설명했으나, 이 시점은 확정되지 않았다. 두 축의 공급이 예상보다 늦어지면 매출 감소분을 메우는 속도가 떨어질 수 있다.",
+    "en": "Injectable products at the Osong plant are going through product approvals in sequence, so if approvals are delayed, a return to normal production and a rise in output could also be delayed. The company said that once supply of anticancer and CNS-area new products is in full swing, it would offset the earlier sales decline, but that timing has not been set. If supply of both lines comes later than expected, the pace at which the company fills its sales gap could slow."
    }
   },
   {
    "cat": {
-    "ko": "재무·운전자본 부담",
-    "en": "Financial and working-capital strain"
+    "ko": "해외 협약 실행 리스크",
+    "en": "Overseas partnership execution risk"
    },
    "body": {
-    "ko": "부채비율은 2025년 62.0%로 2022년 47.4%보다 높다. 재고자산과 차입금이 늘어난 점은 운전자본 부담으로 보도됐다. 2026년 1분기 영업활동현금흐름이 확대된 점은 이 부담을 일부 완충하는 요인이다.",
-    "en": "The debt ratio was 62.0% in 2025, above 47.4% in 2022. Higher inventory and borrowings have been reported as a working-capital burden. Operating cash flow widening in the first quarter of 2026 partly cushions this strain."
+    "ko": "회사는 2024년 보도 기준 베트남과 캐나다의 해외 제약사와 협약을 맺고 해외 매출 비중을 키우려 하고 있다. 해외 매출 확대는 현지 허가 절차와 협약 이행 속도에 따라 달라질 수 있다. 협약이 예정대로 실행되지 않거나 판매 성과가 기대에 못 미치면 국내 매출 변동을 보완하는 효과도 제한될 수 있다.",
+    "en": "The company has signed partnerships with overseas drugmakers in Vietnam and Canada, as reported in 2024, aiming to raise its overseas revenue share. Overseas expansion may depend on local approval procedures and how quickly the partnerships are carried out. If the agreements are not executed as planned or sales fall short of expectations, their ability to offset swings in domestic revenue could be limited."
    }
   }
  ],
@@ -339,5 +339,6 @@
    "div": 4.72
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

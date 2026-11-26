@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "생산 차질과 안전",
-    "en": "Production disruption and safety"
+    "ko": "증설 투자 일정 연장",
+    "en": "Capacity expansion schedule delay"
    },
    "body": {
-    "ko": "대전 사업장 사고로 생산이 중단되면서 3분기 일회성 비용이 반영됐다. 회사는 안전 확보를 최우선으로 하며 생산 차질 영향을 최소화하겠다고 밝혔다. 대전 사업장 정상 가동이 2027년 상반기로 제시된 만큼, 그 사이 납품 일정이 다시 흔들릴 여지가 남아 있다.",
-    "en": "A Daejeon plant accident halted production and triggered one-off costs in Q3. The company said it would prioritize safety and minimize the impact on output. Because normal operation is targeted for the first half of 2027, delivery schedules could still be disrupted in the interim."
+    "ko": "대전 사업장 생산능력 증대 투자의 누적 투자액은 477억원으로 늘었고, 투자 종료 시점은 2028년 9월로 연장됐다. 투자 기간이 길어지면서 증설 설비가 실제 생산 능력으로 반영되는 시점도 함께 늦어질 수 있다. 증설 일정이 밀리면 지상방산 물량 확대가 매출 증가로 이어지는 속도도 제한될 수 있다.",
+    "en": "The cumulative investment in the Daejeon plant's capacity expansion rose to KRW 47.7 billion, and the completion date was extended to September 2028. As the investment period lengthens, the point at which the added equipment is reflected in actual production capacity may also be delayed. If the expansion schedule slips, the pace at which larger ground defense volumes convert into revenue could be constrained."
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 1.09
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 완성차 수요",
-    "en": "Customer concentration and vehicle demand"
+    "ko": "종속회사 손익 의존",
+    "en": "Dependence on subsidiary earnings"
    },
    "body": {
-    "ko": "매출이 현대자동차 및 계열사 납품에 기대고 있어 완성차 생산 계획과 판매·수출 흐름이 실적을 직접 좌우한다. 차종 생산 종료나 신차 양산 지연은 특정 분기 매출을 크게 흔들 수 있다. 2026년 6월 결산 매출이 소폭 감소한 것도 이런 구조와 무관하지 않다.",
-    "en": "Because sales depend on deliveries to Hyundai Motor and its affiliates, production plans and sales and export trends for completed vehicles directly shape results. The end of a model's production run or a delay in a new model launch could move a single quarter's sales significantly. The slight decline in sales for the fiscal year ended June 2026 is consistent with this dependence."
+    "ko": "회사는 2026년 6월 결산 영업이익 증가의 주요 원인으로 종속회사 손익 개선을 꼽았다. 이 개선이 분기 단위로 이어지는지는 아직 확인되지 않았다. 종속회사의 수익성이 되돌아가면 연결 영업이익도 함께 낮아질 수 있다. 연결 이익이 종속회사 실적에 기대는 정도가 커질수록 이익 흐름은 해외 계열사의 경영 여건에 더 크게 좌우될 수 있다.",
+    "en": "The company cited improved earnings at its subsidiaries as the main reason for the increase in operating profit for the fiscal year ended June 2026. Whether that improvement carries through at the quarterly level has not yet been confirmed. If subsidiary profitability reverses, consolidated operating profit could also decline. As consolidated profit relies more on subsidiary results, the earnings trend could depend more on conditions at overseas affiliates."
    }
   },
   {
    "cat": {
-    "ko": "분기 이익 변동성",
-    "en": "Quarterly earnings volatility"
+    "ko": "금형 부문 수주 변동",
+    "en": "Mold segment order volatility"
    },
    "body": {
-    "ko": "2026년 1분기 영업손실 6.7억원, 2분기 영업이익 113억원, 3분기 영업이익 9.9억원으로 분기 간 편차가 크다. 최근 네 개 분기 지배주주 순이익 합계는 329억원인데, 분기 단위로는 적자와 흑자가 번갈아 나타났다. 이 변동성은 연간 실적만으로는 가늠하기 어려운 흐름을 만든다.",
-    "en": "Operating results ranged from an operating loss of KRW 670 million in the March 2026 quarter to operating profit of KRW 11.3 billion in the June 2026 quarter and KRW 986 million in the September 2026 quarter. Net profit attributable to controlling shareholders totaled KRW 32.9 billion over the last four quarters, yet quarterly results alternated between loss and profit. This volatility makes the trend hard to read from annual figures alone."
+    "ko": "자동차 부품 금형은 알파스퀘어 기업 요약 기준 매출의 16.76%를 차지하는 것으로 표시돼 있다. 금형 사업은 차종 개발 단계와 맞물려 있어 신차 개발 계획이 바뀌면 주문 시점과 규모가 함께 달라질 수 있다. 금형 주문이 특정 시기에 몰리거나 줄어들면 차체부품 양산 매출과 다른 방향으로 분기 실적이 움직일 수 있다. 이 부문의 수주 흐름은 완성차 업체의 개발 일정에 따라 정해지는 구조다.",
+    "en": "Automotive parts molds account for 16.76% of sales according to Alphasquare's company summary. Mold work is tied to vehicle development stages, so changes in new model development plans can shift the timing and size of orders. If mold orders concentrate in some periods or decline, quarterly results could move differently from body-part mass-production sales. The order flow in this segment depends on the development schedules of automakers."
    }
   },
   {
    "cat": {
-    "ko": "해외 계열사와 연결 구조",
-    "en": "Overseas affiliate and group structure"
+    "ko": "친환경차·SUV 전환",
+    "en": "Shift toward eco-friendly vehicles and SUVs"
    },
    "body": {
-    "ko": "연결 실적에는 해외 계열사 Sewon America가 포함되며, 이 회사의 차입금을 위해 정기예금 538억원이 담보로 제공됐다. 담보 제공 기간은 2027년 10월 2일까지다. 계열사 실적이나 차입 조건이 바뀌면 연결 손익과 현금흐름에 영향을 줄 수 있다.",
-    "en": "Consolidated results include overseas affiliate Sewon America, for which KRW 53.8 billion of time deposits were pledged as collateral. The collateral period runs through October 2, 2027. Changes in the affiliate's results or borrowing terms could affect consolidated profit and cash flow."
+    "ko": "업계는 SUV 확대와 친환경차 성장, 자율주행 기술 고도화를 자동차 산업의 성장 요인으로 제시한다. 차종 구성이 이런 방향으로 옮겨 가면 기존 차종에 묶인 차체부품 물량은 줄고 새 차종 부품 수주는 늘어날 수 있다. 세원정공의 수주가 이 전환에 얼마나 맞춰 옮겨 가는지는 신규 차종 양산 일정과 수주 공시로 확인해야 한다. 전환이 늦어지면 기존 납품 물량의 공백이 실적에 반영될 수 있다.",
+    "en": "The industry outlook cites the expansion of SUVs, growth in eco-friendly vehicles and advances in autonomous driving as drivers of sustained growth. If vehicle mix shifts toward these models, body-part volumes tied to existing models could decline while orders for parts on new models could rise. Whether the company's orders move with this shift depends on new model production schedules and order announcements. A delay in that transition could leave a gap in existing delivery volumes that shows up in results."
    }
   }
  ],
@@ -348,5 +348,6 @@
   },
   "fy_end_month": 6
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

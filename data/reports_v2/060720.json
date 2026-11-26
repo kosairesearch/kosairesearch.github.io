@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객사 집중",
-    "en": "Customer concentration"
+    "ko": "중기 성장 목표 부담",
+    "en": "Mid-term growth target"
    },
    "body": {
-    "ko": "삼성전자 한 고객사에 대한 매출 의존도가 높아 폴더블폰 모델 변경이나 생산 조정이 바로 실적에 반영된다. 2025년 힌지 매출이 회복됐지만 다음 폴더블 세대의 물량이 같은 수준으로 이어질지는 확인되지 않은 상태다. 고객 다변화 속도가 이 리스크의 크기를 좌우한다.",
-    "en": "Heavy reliance on one customer means model changes or production adjustments at Samsung Electronics pass through directly to results. Hinge revenue recovered in 2025, but whether the next foldable generation carries similar volume has not been confirmed. The pace of customer diversification determines how large this risk is."
+    "ko": "회사는 'WISE210' 중기 경영 비전에서 연평균 매출 성장률 20% 달성을 목표로 제시했다. 이 목표는 힌지 매출 회복만으로 채우기 어렵고, 자동차·AI 데이터센터·로봇 등 신사업 매출이 2027년 이후 본격화해야 달성 가능성이 높아진다. 신사업 매출이 계획보다 늦어지면 목표와의 격차가 커지고, 중기 비전에 대한 신뢰가 흔들릴 수 있다.",
+    "en": "The company set a mid-term vision, 'WISE210', targeting average annual revenue growth of 20%. Reaching that goal is difficult with hinge recovery alone and depends on automotive, AI data center and robotics revenue becoming full-scale from 2027. If new-business revenue arrives later than planned, the gap against the target could widen and weaken confidence in the mid-term vision."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "원가·환율 변동",
-    "en": "Cost and currency volatility"
+    "ko": "생산거점 집중",
+    "en": "Production site concentration"
    },
    "body": {
-    "ko": "메모리 가격 상승은 고객사 스마트폰 생산 조정과 함께 원가 부담으로 이어질 수 있다. 외환 관련 손익은 분기 순손익을 크게 흔드는 요인으로 확인됐다. 영업활동 현금흐름이 2024년 이후 150억원대에 머문 점도 투자 여력에 영향을 줄 수 있는 변수다.",
-    "en": "Higher memory chip prices could feed into cost pressure alongside smartphone production adjustments at customers. Foreign-exchange items have been large enough to swing quarterly net results. Operating cash flow has stayed in the KRW 15 billion range since 2024, which could affect investment capacity."
+    "ko": "AI 데이터센터 수랭 부품의 이너 매니폴드, 콜드플레이트, 서버용 캐스팅 하우징은 베트남 타이응웬 생산거점에서 일괄 생산될 계획이다. 같은 거점은 자동차 디스플레이 브래킷 양산도 맡으며, 이 제품은 인도 법인을 거쳐 Visteon에 공급되는 구조다. 한 거점에 여러 신사업 품목이 몰리면 생산 차질이 발생할 때 복수 사업의 납기와 공급 일정이 함께 흔들릴 수 있다.",
+    "en": "Inner manifolds, cold plates and server casting housings for AI data center cooling parts are planned to be produced in one line at the Thai Nguyen base in Vietnam. The same base will also handle mass production of automotive display brackets, which are supplied to Visteon through the Indian unit. If several new-business items concentrate at one site, a production disruption could affect delivery schedules across multiple businesses at once."
    }
   }
  ],
@@ -362,5 +362,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

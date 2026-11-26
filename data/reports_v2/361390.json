@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "수주 전환 시점",
-    "en": "Timing of order conversion"
+    "ko": "위성 발사 계획 변경",
+    "en": "Changes to satellite launch plans"
    },
    "body": {
-    "ko": "수주잔고가 늘어도 개발 과제의 양산 전환이 늦어지면 매출 인식도 늦어진다. 2026년 3분기 매출은 98.4억원으로 줄었다. KB증권이 짚은 하반기 전환이 실제 분기 실적에 나타나는지가 가장 먼저 확인할 지점이다.",
-    "en": "Even if the backlog grows, revenue recognition slows if development projects shift into production late. Third-quarter 2026 revenue fell to KRW 9.84 billion. Whether the second-half conversion KB Securities highlighted shows up in quarterly results is the first thing to verify."
+    "ko": "정부의 제3차 우주개발진흥 기본계획에 따라 2040년까지 국내에서 69기의 위성 발사가 계획되어 있다. 제노코의 위성 탑재체 부품과 EGSE 매출은 이 발사 일정에 따라 수요가 정해지므로, 계획이 조정되면 위성 관련 매출 전망도 함께 바뀔 수 있다. 2026년 2월 수주한 저궤도 통신위성 사업의 일정 변경도 같은 방향으로 작용할 수 있다. 발사 계획의 유지 여부가 중장기 수요를 판단하는 기준이 된다.",
+    "en": "Under the third basic space development plan, 69 satellites are planned for launch from Korea by 2040. Genohco's satellite payload parts and EGSE revenue depend on these launch schedules, so a revision to the plan could change the outlook for satellite-related sales. A change in the timing of the low-earth-orbit communications program, for which the company won its OBC contract in February 2026, could push in the same direction. Whether the launch plan holds is the benchmark for judging medium-term demand."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "대주주 협력 의존과 현금흐름",
-    "en": "Dependence on KAI and cash flow"
+    "ko": "동종 상장사와 사업 중첩",
+    "en": "Overlap with listed peers"
    },
    "body": {
-    "ko": "KAI의 지분 취득 이후 KAI향 물량 비중이 커질 수 있으며, 특정 고객의 발주 일정에 실적이 묶일 가능성이 있다. 영업활동 현금흐름이 2025년 -198억원으로 유출된 만큼, 손익 회복 전까지 운전자금 부담이 이어질 수 있다.",
-    "en": "After KAI's stake acquisition, KAI-related volumes could account for a larger share, tying results to one customer's ordering schedule. Operating cash flow was a KRW 19.8 billion outflow in 2025, so working-capital pressure could persist until earnings recover."
+    "ko": "위성통신 단말·안테나 분야에서는 인텔리안테크 등 국내 동종 상장사와 사업 영역이 겹친다. 제노코는 위성 탑재체 부품, 항공전자, 지상 점검장비, 방산 핵심부품을 함께 공급하는 다품목 구조라 특정 부문의 약세를 다른 부문이 일부 흡수할 수 있다. 다만 부문별 수익성 편차가 전체 손익에 함께 반영되므로, 위성통신 부문에서 동종 업체에 밀리면 수익 구조 전반에 부담이 될 수 있다.",
+    "en": "In satellite communications terminals and antennas, the company's business overlaps with listed peers such as Intellian Technologies. Because Genohco supplies satellite payload parts, avionics, ground test equipment and core defense components together, weakness in one segment can be partly absorbed by others. However, segment-level margin differences feed into consolidated results, so falling behind peers in satellite communications could weigh on the overall earnings structure."
    }
   }
  ],
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

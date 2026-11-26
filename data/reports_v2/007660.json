@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중",
-    "en": "Customer concentration"
+    "ko": "통상·수출 환경",
+    "en": "Trade and export environment"
    },
    "body": {
-    "ko": "구글 등 글로벌 빅테크 기업들을 핵심 고객사로 확보하고 있어 특정 고객의 투자 계획이나 설계 변경이 매출에 직접 영향을 줄 수 있다. 고객사 내 점유율 변화도 같은 맥락에서 실적 변동 요인이다. 신규 하이퍼스케일러 고객 확보는 이 집중을 줄이는 방향이지만, 매출 기여가 확인되기까지는 시간이 걸린다.",
-    "en": "The company counts global big-tech firms such as Google among its key customers, so changes in investment plans or designs at specific customers can directly affect revenue. Share shifts within those customers are another source of earnings volatility. Winning new hyperscale customers would reduce this concentration, but their revenue contribution will take time to appear."
+    "ko": "회사는 매출의 95%를 넘는 수출 구조를 갖고 있어 주요 수출국의 무역 규제나 관세 조치가 바뀌면 판매 가격과 물량에 영향을 줄 수 있다. 중국 해외 공장이 일반 공법의 중다층 제품을 맡고 있어 대중 통상 환경이 달라지면 생산 배분과 원가가 함께 흔들릴 수 있다. 미국·대만·상하이 영업사무소를 통한 판매 구조도 현지 규제 변화에 노출돼 있다.",
+    "en": "The company's export share exceeds 95% of sales, so changes in trade restrictions or tariffs in major export markets could affect selling prices and volumes. The Chinese overseas plant makes conventional-process mid-layer products, so a shift in trade conditions with China could affect production allocation and costs together. Sales routed through the sales offices in the United States, Taiwan and Shanghai are also exposed to local regulatory changes."
    }
   },
   {
    "cat": {
-    "ko": "공정 수율과 원가",
-    "en": "Process yield and cost"
+    "ko": "경쟁사 증설과 판가",
+    "en": "Rival capacity and pricing"
    },
    "body": {
-    "ko": "수율 리스크도 존재한다. 다중적층 제품은 공정 단계가 늘어나 수율이 떨어지면 원가가 올라가고 판가 상승 효과가 상쇄될 수 있다. 2026년 2분기 이후 판가 인상이 거론되지만, 수율 안정화 여부가 이익률 유지의 관건이다.",
-    "en": "Yield risk also exists. As process steps increase for multi-layer products, lower yields can raise costs and offset the benefit of higher selling prices. Price increases have been mentioned since the second quarter of 2026, but yield stabilization is key to sustaining margins."
+    "ko": "경쟁사들의 증설이 주로 동남아시아에 집중되어 있다는 점은 하이엔드 MLB 공급 구도를 바꿀 수 있는 변수다. 경쟁 공급이 고다층 생산에 가까워지면 수주 배분과 판가 협상력이 약해질 수 있다. 회사가 고층 네트워크와 HDI 시장에 투자를 집중하겠다고 밝힌 만큼, 같은 시장에서 경쟁사 설비가 늘어나는 속도가 수주 경쟁의 강도를 가르게 된다.",
+    "en": "Competitors' capacity additions are concentrated mainly in Southeast Asia, which could shift the supply balance in high-end MLB. If rival supply moves closer to high-layer production, order allocation and pricing leverage could weaken. Because the company is focusing investment on high-layer network and HDI markets, the pace at which rivals add equipment in those same markets will shape the intensity of competition for orders."
    }
   },
   {
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

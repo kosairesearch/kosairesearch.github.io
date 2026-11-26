@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "시장·금리 리스크",
-    "en": "Market and interest rate risk"
+    "ko": "리테일 상품 실행 리스크",
+    "en": "Retail product execution risk"
    },
    "body": {
-    "ko": "자기매매와 파생 거래 비중이 커서 주가 하락이나 금리 급변이 평가손익과 거래손익을 빠르게 바꿀 수 있다. 2026년 3분기에도 시장 변동성 확대와 금리 상승이 영업환경의 부담으로 지목됐다. 영업이익이 분기 단위로 크게 흔들리는 점이 이 리스크의 실제 모습이다.",
-    "en": "Proprietary trading and derivatives make up a large share of activity, so sharp moves in share prices or interest rates can quickly change valuation and trading gains. In Q3 2026, rising volatility and higher rates were again cited as headwinds. Quarterly operating profit swings sharply, which is how this risk shows up in the numbers."
+    "ko": "MTS 개편과 온라인 특판 RP, 목표전환형 펀드로 넓히는 상품 라인업이 실제 고객 유입과 수수료 수익으로 이어지지 않을 수 있다. 비대면 채널에서 거래 편의와 고객 신뢰를 유지하지 못하면 리테일 수탁수수료와 신용공여 이자수익의 증가 흐름도 약해질 수 있다. 상품 판매가 특정 시장 여건에 기대는 경우 수익 기여가 계획보다 낮을 수 있다.",
+    "en": "The product lineup expansion, including the MTS revamp, online special-offer RP and target-return funds, may fail to translate into new customer inflows and fee income. If the non-face-to-face channel does not maintain transaction convenience and customer trust, the growth in retail brokerage commissions and margin lending interest may also weaken. Where product sales depend on specific market conditions, their contribution to revenue may fall short of plans."
    }
   },
   {
@@ -339,5 +339,6 @@
    "div": 8.71
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

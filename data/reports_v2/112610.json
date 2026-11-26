@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "정책·인허가",
-    "en": "Policy and permitting"
+    "ko": "미국 증설 실행",
+    "en": "US capacity expansion"
    },
    "body": {
-    "ko": "미국 인허가 지연과 AMPC 등 보조금 제도 변화는 미국 매출과 이익의 변수다. 신한투자증권은 미국 인허가 지연을 2026년 수주가 전년 수준에 머무는 원인으로 들었다. 유럽연합 정책과 중국 기업과의 경쟁도 장기 변수로 남아 있다.",
-    "en": "US permitting delays and changes to subsidy programs such as AMPC are variables for US revenue and profit. Shinhan Investment Corp. cited US permitting delays as a reason 2026 orders are flat with the prior year. EU policy and competition from Chinese companies remain longer-term variables."
+    "ko": "미국 법인의 연간 생산능력은 1조 2,000억원에서 1조 4,000억원으로 확대될 계획이며, 대만과 말레이시아의 숙련 인력을 투입할 예정이다. 증설 일정이 늦어지거나 숙련 인력 배치가 지연되면 2027년 미국 물량을 계획대로 생산하지 못할 수 있다. 증설 이후 생산성이 기존 법인 수준에 도달하는지가 미국 매출과 이익 회복의 변수다.",
+    "en": "The US plant's annual capacity is planned to rise from KRW 1.2 trillion to KRW 1.4 trillion, with skilled workers from Taiwan and Malaysia to be deployed. If the expansion schedule slips or skilled-worker deployment is delayed, US volume for 2027 may not be produced as planned. Whether productivity after the expansion reaches the level of the existing plant will determine the recovery of US revenue and profit."
    }
   },
   {
    "cat": {
-    "ko": "환율·원자재",
-    "en": "Currency and raw materials"
+    "ko": "하부구조물 수주 공백",
+    "en": "Substructure order gap"
    },
    "body": {
-    "ko": "원/달러 환율 하락은 원화 환산 매출과 이익을 줄이는 요인으로 꼽혔다. 튀르키예 법인의 후판 수급 차질은 생산 일정에 영향을 줄 수 있다. 원재료와 물류비, 고객사별 계약 조건도 수주액과 실제 수익성 사이의 차이를 만드는 요인이다.",
-    "en": "A weaker US dollar against the won was cited as reducing won-converted revenue and profit. A plate-steel supply disruption at the Türkiye unit could affect production schedules. Raw material and logistics costs, along with customer-specific contract terms, create gaps between order value and actual profitability."
+    "ko": "씨에스윈드오프쇼어와 블라트가 맡는 하부구조물은 현재 확보한 2개 프로젝트로 2027년 3분기까지 실적을 낼 수 있다. 이후에도 실적을 이어가려면 추가 프로젝트 수주가 필요하며, 그 시기가 늦어지면 이 부문의 매출 기여가 줄어들 수 있다. 유럽 해상풍력 신규 수주 확보 여부가 하부구조물 실적의 다음 확인 지점이다.",
+    "en": "Substructure projects secured so far can generate earnings through the third quarter of 2027 under CS Offshore and Bladt. Additional project orders are needed to sustain earnings after that, and a delay could reduce this segment's contribution to revenue. Whether new European offshore orders are secured is the next checkpoint for substructure results."
    }
   },
   {
    "cat": {
-    "ko": "자산·고객 집중",
-    "en": "Asset impairment and customer concentration"
+    "ko": "고객 집중·계약 만료",
+    "en": "Customer concentration and contract expiry"
    },
    "body": {
-    "ko": "2025년 4분기 Lindo 야드 폐쇄로 자산손상차손이 반영되며 일회성 손실이 발생했다. 주요 고객사 베스타스와 노르덱스에 물량이 몰려 있어 고객사 발주 일정이 실적을 좌우한다. 야드 판매와 기계자산 이전 과정의 손익 변동도 확인이 필요한 변수다.",
-    "en": "The Lindo yard closure in the fourth quarter of 2025 led to an asset impairment and a one-time loss. Volume is concentrated among key customers Vestas and Nordex, so their order timing drives results. Gains or losses from selling the yard and moving machinery assets are variables to monitor."
+    "ko": "미국 물량은 베스타스와 노르덱스 계약에 집중돼 있고, 2027년 미국 법인 생산물량도 두 회사와의 계약으로 확보됐다. 베스타스 타워 공급계약(1,353.3억원)은 2026년 12월 11일에 기간이 끝나므로, 후속 발주가 이어지는지가 관건이다. 두 고객사의 발주 시점이 밀리면 분기별 타워 매출 흐름이 흔들릴 수 있다.",
+    "en": "US volume is concentrated in contracts with Vestas and Nordex, and 2027 US production volume has been secured through contracts with both. The Vestas tower supply agreement worth KRW 135.33 billion ends on December 11, 2026, so whether follow-on orders continue is the key issue. If order timing slips at either customer, the quarterly flow of tower revenue could be disrupted."
    }
   }
  ],
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

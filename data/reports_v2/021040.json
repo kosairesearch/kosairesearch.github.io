@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무 · 차입 리스크",
-    "en": "Financial and borrowing risk"
+    "ko": "정부 지원사업 집행 리스크",
+    "en": "Government-funded project execution risk"
    },
    "body": {
-    "ko": "부채비율은 353.1%로 높은 수준이며, 단기차입 확대는 이자 부담과 차환 부담을 키울 수 있다. 차입 조건은 실제 대출 실행 과정에서 바뀔 수 있다고 회사가 밝혔다. 적자가 이어지는 동안 차입으로 운영자금을 메우는 구조라면 재무 여력이 좁아질 수 있다.",
-    "en": "The debt-to-equity ratio of 353.1% is high, and expanding short-term borrowing could raise interest and refinancing burdens. The company has said the terms of the loan may change at execution. If operating funds continue to rely on borrowing during the loss period, financial flexibility could narrow."
+    "ko": "FEMS+ 구축사업은 사업비 6억 6,000만원 가운데 6억원을 정부 출연금으로 충당하며, 2026년 하반기부터 본격 추진될 예정이다. 우선협상대상자 선정 이후 협약 체결과 집행이 늦어지면 공정 에너지 효율화와 제품 탄소발자국 데이터 자동화 효과도 늦어질 수 있다. 정부 출연금의 집행 조건이나 일정이 바뀌면 민간 부담금 6,000만원의 규모와 시기도 달라질 수 있다.",
+    "en": "The FEMS+ project carries a total cost of KRW 660 million, of which KRW 600 million is government funding, with full-scale work scheduled from the second half of 2026. If the agreement signing or execution after the preferred-bidder selection is delayed, the gains from process energy efficiency and automated product carbon footprint data could also be pushed back. Any change in the conditions or timing of government funding could alter the scale and timing of the KRW 60 million company burden."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "수요 · 원가 변동 리스크",
-    "en": "Demand and cost volatility risk"
+    "ko": "신사업 실행 리스크",
+    "en": "New business execution risk"
    },
    "body": {
-    "ko": "특수강 선재 수요는 자동차와 건설 등 수요산업의 경기에 따라 움직인다. 2026년 3분기에는 매출이 전년 동기 대비 3.0% 늘었음에도 영업손익이 적자로 돌아섰다. 이는 원가와 판매비와관리비가 매출 증가분을 상쇄한 것으로 읽을 수 있어 비용 구조 관리가 중요하다.",
-    "en": "Demand for specialty wire moves with end markets such as automotive and construction. In the third quarter of 2026, revenue rose 3.0% year on year, yet operating results swung to a loss, which suggests that cost and SG&A pressure offset sales growth and that cost control remains central."
+    "ko": "AI 서비스 부문은 AI 학습용 데이터 구축과 패션 룩북 서비스 출시로 확장 단계에 있으며, 생성형 AI 기업 이오이스 인수가 미래 성장 수단으로 언급됐다. 철강 제조와 사업 성격이 달라 인수와 초기 투자의 실행이 지연되거나 기대만큼 성과를 내지 못할 수 있다. 두 사업의 성과가 한 숫자로 합쳐져 나타나므로, 실행 부진이 철강 본업의 수익성 회복 신호를 가릴 수 있다.",
+    "en": "The AI services segment is in an early expansion stage, with AI training-data projects and the launch of an AI fashion lookbook service, and the company has cited its acquisition of generative AI firm iOES as a means to secure future growth. Because this business differs in nature from steel making, delays in the acquisition or early investment, or results short of expectations, could weigh on the company. Since the two businesses appear together in one consolidated figure, weak execution in AI could obscure signs of profit recovery in the core steel business."
    }
   }
  ],
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

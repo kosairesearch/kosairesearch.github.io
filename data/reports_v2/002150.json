@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "프로젝트 원가와 충당금",
-    "en": "Project costs and provisions"
+    "ko": "국내 공공 발주 의존",
+    "en": "Reliance on domestic public orders"
    },
    "body": {
-    "ko": "EPC와 공사 관련 사업에서 충당금이 한꺼번에 반영되면 분기 이익이 급변할 수 있다. 2024년 영업손실의 배경이 이 충당금 선반영이었다. 원재료비와 인건비 부담이 커지면 설계 수수료 중심의 수익성에도 압박이 될 수 있다.",
-    "en": "When provisions are booked all at once in EPC and construction-related projects, quarterly profit can swing sharply. Early booking of such provisions was the backdrop to the 2024 operating loss. Higher materials and labor costs could also pressure margins in fee-based design work."
+    "ko": "도화엔지니어링의 주요 고객은 공공 발주처이며, 2025년 말 수주잔고의 66%가 국내 사업이다. 국내 SOC 예산 조정이나 상하수도·교통 분야 발주 일정이 늦춰지면 설계와 감리 수주가 계획보다 줄 수 있다. 2026년 수주 목표 1조원 달성 여부도 이 국내 발주 흐름에 크게 기대고 있다. 국내 경쟁사와의 수주 격차가 다시 좁혀지면 점유율 방어도 과제가 될 수 있다.",
+    "en": "Dohwa's main clients are public bodies, and domestic projects account for 66% of backlog at year-end 2025. If domestic SOC budgets are adjusted or water and transport tender schedules slip, design and supervision awards could fall short of plan. Reaching the KRW 1 trillion 2026 order target also depends heavily on this domestic flow. If domestic rivals that narrowed the gap in order intake regain ground, defending its market share may become a challenge."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 구조와 신용 측면",
-    "en": "Balance sheet and credit profile"
+    "ko": "해외 종속회사 운영과 통합",
+    "en": "Overseas subsidiary management and integration"
    },
    "body": {
-    "ko": "부채비율이 187.8%로 높아진 상태에서 영업활동 현금흐름은 감소 흐름이다. 회사 홈페이지는 신용등급을 A2+로 소개하고 있다. 금리나 차입 여건이 바뀌면 이자 부담과 재무 유연성에 영향을 줄 수 있다.",
-    "en": "With the debt ratio at 187.8% and operating cash flow trending lower, the balance sheet has less room for error. The company's website lists its credit rating as A2+. A change in interest rates or borrowing conditions would affect interest costs and financial flexibility."
+    "ko": "2023년 인수한 폴란드 철도 엔지니어링사는 유럽 거점으로 자리 잡았고, 베트남·인도네시아·인도 등 8개국에 종속회사가 있다. 종속회사가 늘수록 현지 인력 관리, 회계 기준 통일, 본사의 프로젝트 통제가 쉽지 않아질 수 있다. 폴란드 철도사업과 PMC 등 대형 해외 사업이 이 조직을 통해 실행되므로, 통합이 지연되면 수주 이후 수행 품질과 일정에 영향을 줄 수 있다.",
+    "en": "The Polish rail engineering firm acquired in 2023 serves as the European base, and subsidiaries operate in eight countries including Vietnam, Indonesia and India. As the subsidiary network grows, managing local staffing, aligning accounting standards and keeping project execution under headquarters control become harder. Because Polish rail projects and large overseas PMC work will be carried out through this organization, delays in integration could affect delivery quality and schedules after awards."
    }
   }
  ],
@@ -357,5 +357,6 @@
    "div": 5.79
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

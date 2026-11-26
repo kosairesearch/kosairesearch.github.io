@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 존속",
-    "en": "Listing status"
+    "ko": "자산 매각과 시설",
+    "en": "Asset sale and facilities"
    },
    "body": {
-    "ko": "상장폐지 결정이 내려진 상태에서 효력정지 가처분 결과가 나오기 전까지 절차가 멈춰 있다. 법원 판단이 회사에 불리하게 나오면 거래 환경이 빠르게 바뀔 수 있다. 실질심사 사유가 추가되면서 거래소가 후속 조치를 취할 여지도 남아 있다.",
-    "en": "A delisting decision is in place, and the process remains suspended until the court rules on the injunction. If the ruling goes against the company, trading conditions could change quickly. The added qualification review also leaves the exchange room to take further steps."
+    "ko": "매각 보도에서는 울주군 생산공장 부지와 충북 오송 연구소의 장부가치가 약 95억원 수준으로 거론됐다. 인수합병 절차에서 이 두 시설이 매각 대상에 포함되면 진단 검사와 연구 개발의 설비 기반이 회사 밖으로 넘어갈 수 있다. 자체 검사 생산과 연구 수행 능력이 제한되면 서비스 매출을 유지하는 데 필요한 기반도 줄어든다. 처분 범위와 시점은 신규 투자자 확정 여부에 따라 달라질 수 있다.",
+    "en": "Press reports on the sale cited the book value of the Ulju County production plant and the Osong, Chungbuk research center at roughly KRW 9.5 billion. If these sites are included in the sale during the merger and acquisition process, the equipment base for testing and research development could move outside the company. Limits on in-house production and research capacity would also reduce the foundation needed to sustain service revenue. The scope and timing of any disposal could depend on whether a new investor is confirmed."
    }
   },
   {
    "cat": {
-    "ko": "유동성과 자금 조달",
-    "en": "Liquidity and funding"
+    "ko": "해외 법인 확대",
+    "en": "Overseas subsidiary expansion"
    },
    "body": {
-    "ko": "자체 자금 조달 능력을 잃었다는 보도가 나왔고, 금융권이 대출 만기 연장을 거부한 것으로 전해졌다. 영업손실은 2026년 1분기 이후 분기마다 늘어 현금 소진 속도를 높이고 있다. 신규 자금이 들어오지 않으면 회생절차 재신청 여부도 불투명하다.",
-    "en": "Reports said the company had lost its ability to raise funds on its own, and that lenders declined to extend loan maturities. Operating losses have widened each quarter since the first quarter of 2026, which accelerates cash consumption. Without new capital, the timing of any rehabilitation refiling remains unclear."
+    "ko": "회사는 미국과 영국 등에 법인을 설립해 해외 진출을 추진해 왔다. 국내 매출 기반이 줄어든 상황에서 해외 법인은 설립 비용과 운영비를 추가로 부담하는 구조다. 신규 투자자가 확정되기 전에는 해외 사업 확대에 필요한 자금을 마련하기 어려워 법인의 사업 전개가 지연되거나 축소될 수 있다. 해외 매출이 국내 매출 감소를 상쇄하지 못하면 고정비 부담이 손익 구조를 더 악화시킬 수 있다.",
+    "en": "The company set up subsidiaries in the United States and United Kingdom to pursue overseas expansion. Those subsidiaries carry their own setup and operating costs while the domestic revenue base is shrinking. Before a new investor is confirmed, funds for expanding overseas operations may be hard to secure, so subsidiary activity could be delayed or scaled back. If overseas revenue does not offset the domestic decline, the fixed-cost burden could further worsen the profit and loss structure."
    }
   },
   {
    "cat": {
-    "ko": "회계와 지배구조",
-    "en": "Accounting and governance"
+    "ko": "기술의 매출 전환",
+    "en": "Technology commercialization"
    },
    "body": {
-    "ko": "2024 사업연도 감사의견은 비적정이었고, 2025 사업연도 감사의견은 의견거절로 나왔다. 감사보고서 제출이 법정 기한을 넘기는 일도 있었다. 경영진 고발 보도와 자금 유출 정황은 재무 신뢰와 관련된 불확실성을 키우는 요인이다.",
-    "en": "The fiscal 2024 audit opinion was qualified, and the fiscal 2025 opinion was a disclaimer. The audit report was also delayed beyond the statutory deadline in 2026. Reports of a complaint against management and possible fund outflows add uncertainty about the reliability of financial disclosures."
+    "ko": "액체생검 플랫폼과 빅데이터 센터는 기술 차별화 요소로 꼽히지만, 이것이 매출로 이어지는 속도가 관건이다. CTC와 cfDNA 검출 기술과 다중오믹스 분석을 상용 서비스로 옮기는 과정에는 추가 검증과 설비 운영이 필요하다. 이 과정이 늦어지면 기술 자산이 매출 회복으로 이어지지 않고 연구 비용 부담만 남을 수 있다. 빅데이터 센터 데이터의 활용 범위도 자금 여력에 따라 제약될 수 있다.",
+    "en": "The liquid biopsy platform and the big-data center are cited as technical differentiators, but the speed at which they convert into revenue is the key question. Moving CTC and cfDNA detection and multi-omics analysis into commercial services requires further validation and facility operation. If this process slips, the technology assets may not lead to a revenue recovery and only research costs would remain. The range in which data held at the big-data center can be used may also be constrained by funding capacity."
    }
   }
  ],
@@ -344,5 +344,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

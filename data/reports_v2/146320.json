@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "업황과 고객 투자 사이클",
-    "en": "Industry and customer investment cycle"
+    "ko": "특정 고객 수요 집중",
+    "en": "North American silicon ingot demand"
    },
    "body": {
-    "ko": "반도체 제조사 매출 비중이 높아 소모성 부품 수요가 전방 설비 투자와 미세화 속도에 좌우된다. 2023년 매출이 653억원으로 줄었던 것은 이 구조의 민감도를 보여준다. 대형 고객의 투자 조정이 분기 실적에 빠르게 반영될 수 있다.",
-    "en": "With chipmakers accounting for a high share of revenue, demand for consumable parts depends on front-end equipment investment and the pace of miniaturization. The drop in revenue to KRW 65.3 billion in 2023 shows how sensitive this structure is. Investment adjustments by large customers can quickly show up in quarterly results."
+    "ko": "북미 고객사에 대한 실리콘 잉곳 양산 공급이 본격화되어 해당 고객의 발주가 매출 흐름에 반영되고 있다. 실리콘은 2025년 반기 매출의 7%를 차지하는 품목이어서, 이 고객의 발주 시기나 물량이 바뀌면 분기 매출이 빠르게 흔들릴 수 있다. 단일 해외 고객에 대한 공급 의존이 커질수록 수요 변화가 분기 실적의 변동 폭을 키울 수 있다.",
+    "en": "Silicon ingot mass supply to a North American customer has started in earnest, and that customer's orders are now reflected in revenue. Silicon accounted for 7% of revenue in the first half of 2025, so a change in the timing or volume of this customer's orders could move quarterly revenue quickly. The more supply depends on a single overseas customer, the more its demand changes can widen swings in quarterly results."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무구조와 대주주 지분 이동",
-    "en": "Financial structure and major shareholder stake transfer"
+    "ko": "자체 생산 소재 공급",
+    "en": "In-house material supply stability"
    },
    "body": {
-    "ko": "부채비율이 125.3%로 높은 편이며, 영업활동 현금흐름은 2025년 흑자였으나 2023년과 2024년에는 마이너스였다. 2026년 9월 공시에 따르면 대표이사 보유 보통주 127만 9,793주가 증여로 감소했고, 대주주 김동석이 같은 수량을 수증으로 취득한 것으로 나타났다. 지분 이동이 경영 방향에 미치는 영향은 이후 정기 공시를 통해 드러난다.",
-    "en": "The debt ratio of 125.3% is high, and operating cash flow was positive in 2025 but negative in 2023 and 2024. A September 2026 filing showed that 1,279,793 common shares held by the CEO decreased through gift, and that major shareholder Kim Dong-seok acquired the same number of shares as a gift. The effect of this stake transfer on management direction will become visible in later periodic filings."
+    "ko": "비씨엔씨는 해외 수입에 의존하던 합성쿼츠를 자체 생산으로 전환했으며, 이 소재가 주력 제품군의 원재료 역할을 한다. 자체 생산 체계에서 생산량과 품질 균일성을 안정적으로 유지하지 못하면 주요 고객사에 대한 납품 일정이 밀릴 수 있다. 합성쿼츠 계열 부품 비중이 큰 만큼 이 공급 안정성은 매출 흐름의 직접 변수가 된다.",
+    "en": "BCnC moved synthetic quartz that it had imported into in-house production, and this material serves as the raw material for its main product family. If output and quality uniformity from in-house production are not held steady, delivery schedules to key customers could slip. Because synthetic quartz parts make up a large share of sales, the stability of this supply directly affects the revenue trajectory."
    }
   }
  ],
@@ -333,5 +333,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

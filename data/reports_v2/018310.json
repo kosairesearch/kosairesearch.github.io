@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "업황·수요",
-    "en": "Demand and cycle"
+    "ko": "해외 생산 거점 확대",
+    "en": "Overseas plant expansion"
    },
    "body": {
-    "ko": "아파트 착공과 분양 시장 회복이 지연되면 알루미늄폼 수요가 추가로 줄 수 있다. 대출금리 규제 등 정책 변수가 소비 심리에 영향을 준 것으로 보도된 만큼, 금리와 정책 방향이 수요를 좌우하는 변수로 남는다. 국내 수요 둔화가 해외 거점의 실적으로 얼마나 상쇄되는지도 확인이 필요하다.",
-    "en": "If apartment starts and sales recovery stay delayed, demand for aluminum forms could fall further. Policy variables such as mortgage-rate regulation have been reported to weigh on consumer sentiment, so rates and policy direction remain key demand variables. How far overseas plants can offset domestic weakness also needs to be confirmed."
+    "ko": "회사는 해외 매출 확대를 수익 방침의 한 축으로 밝혔지만, 인도와 말레이시아 생산 거점의 가동 실적은 아직 공시 매출로 확인되지 않았다. 국내 아파트 수요가 줄어드는 국면에서 해외 거점이 기대만큼 매출을 채우지 못하면 전사 매출 회복 폭은 제한될 수 있다. 지역별 매출 공시가 나오기 전까지 해외 거점의 기여 규모는 가늠하기 어렵다.",
+    "en": "The company has stated that expanding overseas sales is one pillar of its profitability plan, but the operating results of the Indian and Malaysian production sites have not yet appeared in disclosed revenue. If overseas plants fail to fill the gap as domestic apartment demand weakens, the scope of a company-wide sales recovery could be limited. Until regional sales disclosures are released, the size of the overseas contribution is hard to gauge."
    }
   },
   {
    "cat": {
-    "ko": "수익성·가격",
-    "en": "Profitability and pricing"
+    "ko": "대체 공법 경쟁",
+    "en": "Substitution competition"
    },
    "body": {
-    "ko": "수주 경쟁이 이어지면 수주 단가가 낮게 유지되어 매출이 일정해도 영업이익률이 낮게 머무를 수 있다. 2025년 영업이익률은 2.0%였고, 2026년에도 4개 분기 연속 영업손실이 이어졌다. 원가 절감과 설비 활용률 개선이 단가 하락을 상쇄하지 못하면 적자 구조가 길어질 수 있다.",
-    "en": "If bidding competition persists, order prices may stay low, so the operating margin could remain thin even with steady revenue. The 2025 operating margin was 2.0%, and operating losses continued for four quarters into 2026. If cost cuts and better equipment utilization fail to offset price declines, the loss pattern could persist."
+    "ko": "회사 매출의 80% 이상이 알루미늄폼 사업에서 나오므로, 기존 공법과의 대체 경쟁이 실적의 핵심 변수다. 신기술 알루미늄 거푸집 시스템이 기존 공법을 대체하며 매출 감소를 늦췄다는 평가가 있지만, 경쟁 공법이 기술 격차를 좁히면 점유를 지키기 어려워질 수 있다. 시장 축소기에 점유가 밀리면 보유 설비의 활용 폭도 함께 좁아질 수 있다.",
+    "en": "Because more than 80% of sales come from aluminum forms, the substitution contest with conventional methods is a core variable for results. An assessment says a new aluminum formwork system has replaced conventional methods and slowed the decline in sales, but if rival methods narrow the technology gap, holding share could become harder. If share slips in a shrinking market, the utilization of owned formwork systems could also narrow."
    }
   },
   {
    "cat": {
-    "ko": "지배구조·주주환원",
-    "en": "Governance and shareholder returns"
+    "ko": "영업현금흐름 감소",
+    "en": "Operating cash flow decline"
    },
    "body": {
-    "ko": "최대주주와 관계사 거래를 둘러싼 비판과 낮은 배당성향은 소액주주 신뢰에 부담이 된다. 회사는 주주환원 정책을 다각적으로 모색하겠다고 답했지만, 구체적인 정책 방향은 다음 사업보고서에서 확인될 사안이다. 최대주주 지분 집중도가 높은 구조에서는 정책 결정의 방향이 소수 주주의 영향을 덜 받을 수 있다.",
-    "en": "Criticism over dealings with the largest shareholder and related companies, together with a low payout, weighs on minority shareholder confidence. The company said it is exploring various shareholder return policies, but concrete direction is a matter for the next annual report. With concentrated ownership, policy decisions may be less influenced by minority holders."
+    "ko": "영업활동 현금흐름은 2024년 811억원에서 2025년 415억원으로 절반 가까이 줄었다. 현재는 플러스를 유지하고 있지만, 영업손실이 이어지는 동안 이 흐름이 계속 줄어들면 자본 여유를 바탕으로 한 재무 완충 효과가 약해질 수 있다. 2027년 1분기 영업손익이 흑자로 돌아서는지가 현금 창출 회복을 가늠하는 확인 지점이 된다.",
+    "en": "Operating cash flow fell from KRW 81.1 billion in 2024 to KRW 41.5 billion in 2025, roughly half the prior level. It remained positive, but if the decline continues while operating losses persist, the cushion provided by the capital base could weaken. Whether operating results return to profit in Q1 2027 will be the checkpoint for judging a recovery in cash generation."
    }
   }
  ],
@@ -337,5 +337,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

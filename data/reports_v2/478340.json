@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "수주의 매출 전환과 원가율",
-    "en": "Order-to-revenue conversion and cost ratio"
+    "ko": "위성 운용 확대 계획 이행",
+    "en": "Execution of satellite operation expansion plan"
    },
    "body": {
-    "ko": "수주잔고가 매출로 옮겨지는 속도가 늦어지면 적자 축소가 지연된다. 2025년 원가율은 75.7%로 전년 45.7%보다 높아졌고, 위성 양산과 시험 비용이 원가에 반영되는 구조다. 제작 수주가 늘어도 시험과 납품 과정의 비용 관리가 수익성을 좌우한다는 분석이 나와 있다. 원가율이 높은 상태가 이어지면 매출이 늘어도 영업손실이 남을 수 있다.",
-    "en": "If the order backlog converts to revenue more slowly, the narrowing of losses will be delayed. The 2025 cost of revenue ratio rose to 75.7% from 45.7% a year earlier, as satellite production and testing costs are reflected in cost of sales. Analysts note that even as manufacturing orders grow, cost control during testing and delivery determines profitability. If the cost ratio stays high, operating losses could persist even as revenue grows."
+    "ko": "2025년 12월 상장 당시 회사는 2031년까지 84기의 위성을 운용하는 계획을 밝혔고, 증권가는 2028년부터 운용 위성 수가 가파르게 늘 것으로 내다봤다. 이 계획은 상장 자금으로 추진하는 2세대 광학 위성 시제기 개발과 양산, 환경모니터링 위성 양산에 기대고 있다. 위성 제작이나 발사가 계획보다 늦어지면 위성 운용 기반 데이터 사업의 매출 시점도 뒤로 밀릴 수 있다. 운용 위성 수 증가가 더디면 고정비 부담이 길어질 수 있다.",
+    "en": "At its December 2025 listing, the company presented a plan to operate 84 satellites by 2031, and a securities researcher expects the number of operating satellites to rise steeply from 2028. The plan depends on the second-generation optical satellite prototype and mass production and on mass production of environmental monitoring satellites, both funded by listing proceeds. If manufacturing or launches fall behind this schedule, the revenue start of the satellite-operation-based data business could be delayed. A slower increase in operating satellites could prolong the burden of fixed costs."
    }
   },
   {
@@ -322,5 +322,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

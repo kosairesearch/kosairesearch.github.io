@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "아티스트 활동 일정 의존",
-    "en": "Dependence on artist schedules"
+    "ko": "대형 IP 투어 수익성",
+    "en": "Tour profitability of major IP"
    },
    "body": {
-    "ko": "MD 매출과 음반 판매는 블랙핑크 등 주요 IP의 활동 일정에 크게 좌우된다. 모기업 와이지엔터테인먼트에 대한 LS증권 리포트는 2026년 9월 9일 블랙핑크의 활동 공백 우려를 짚었다. 활동 공백이 길어지면 MD 매출의 기저가 낮아질 수 있다.",
-    "en": "MD sales and album sales depend heavily on the activity schedules of major IP such as BLACKPINK. LS Securities' September 9, 2026 report on parent YG Entertainment flagged concern over a BLACKPINK activity gap. A prolonged gap could lower the base for MD revenue."
+    "ko": "빅뱅의 월드투어가 본격화됐지만 대형 IP 활동은 레거시 특성상 정산율이 높아 과거 투어보다 수익성이 낮을 가능성이 있다. LS증권은 2026년 9월 9일 모기업 와이지엔터테인먼트를 다룬 리포트에서 이 점을 짚었다. 투어 관련 매출이 늘어도 정산 부담이 커지면 와이지플러스의 MD 매출과 유통 수익이 이익으로 남는 폭이 좁아질 수 있다.",
+    "en": "The BIGBANG world tour has begun in earnest, but legacy IP activity carries higher royalty rates, so its profitability is likely to be lower than past tours. LS Securities flagged this point in a September 9, 2026 report on parent YG Entertainment. Even if tour-linked revenue rises, higher royalty payments could narrow how much MD and distribution revenue converts into profit for YG PLUS."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 0.94
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

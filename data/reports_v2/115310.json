@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "제도·수요 리스크",
-    "en": "Regulatory and demand risk"
+    "ko": "고객·경쟁 구조 리스크",
+    "en": "Customer and competitive risk"
    },
    "body": {
-    "ko": "인증 수단 다양화와 제도 변화는 휴대폰 인증서 보관서비스의 수요를 직접 흔들 수 있다. 회사는 금융권에서 공공기관과 일반 법인으로 적용 범위를 넓혀 왔으나, 인증 방식 간 경쟁이 심해지면 이용량과 단가가 함께 낮아질 수 있다. 이 부분은 사업부문별 매출 표로 흐름을 확인할 사항이다.",
-    "en": "Diversifying authentication methods and regulatory changes could directly affect demand for the mobile certificate storage service. The company has extended its reach from banks to public agencies and corporations, but if competition among authentication methods intensifies, both usage and unit pricing could weaken. Trends should be tracked in the segment revenue tables."
+    "ko": "NAVER와 카카오는 본인확인과 결제 기능을 자체 생태계 안에 두고 있다. 이들 플랫폼이 외부 인증 서비스 없이 자체 인증 경로를 넓히면, 인포바인의 휴대폰 인증서 보관서비스가 거래 단계에서 대체될 수 있다. 금융권에서 공공기관과 일반 법인으로 넓힌 고객 기반이 이런 플랫폼과 겹치면 계약 갱신과 이용량에 영향을 줄 수 있다. 이 변화는 사업부문별 매출 표에서 확인할 사항이다.",
+    "en": "NAVER and Kakao keep identity verification and payments within their own ecosystems. If these platforms expand their in-house authentication paths without external services, INFOvine's mobile certificate storage service could be replaced at the transaction stage. If the customer base that expanded from banks to public agencies and corporations overlaps with these platforms, contract renewals and usage could be affected. Such a shift should be tracked in the segment revenue tables."
    }
   },
   {
    "cat": {
-    "ko": "사업 집중·실적 변동",
-    "en": "Concentration and earnings volatility"
+    "ko": "영업 외 수익 의존 리스크",
+    "en": "Reliance on non-operating income"
    },
    "body": {
-    "ko": "인증 서비스 비중은 2023년 73.49%로 높고, 게임 부문 비중은 2022년 1.30%에서 2023년 8.93%로 뛰었다. 특정 사업 비중이 크면 한 부문의 수요 변화가 전체 이익을 흔든다. 2025년 영업이익이 18.0% 줄어든 원인을 부문별로 나눠 볼 필요가 있다.",
-    "en": "The certificate service made up 73.49% of revenue in 2023, while the game share jumped from 1.30% in 2022 to 8.93% in 2023. When a few businesses carry most of the revenue, demand shifts in one segment move total earnings. The 18.0% drop in 2025 operating profit should be broken down by segment."
+    "ko": "지배주주 순이익은 2024년과 2025년 모두 영업이익을 웃돌았고, 2024년 금융수익 관련 계정이 33억원 규모로 집계됐다. 순이익이 영업 외 수익에 기대는 구조라는 뜻이다. 금융수익이 줄면 영업이익이 같아도 순이익은 크게 줄 수 있다. 2025년 지배주주 순이익이 21.5% 감소한 흐름도 이 의존도와 함께 읽어야 한다.",
+    "en": "Net income attributable to controlling shareholders exceeded operating profit in both 2024 and 2025, and a financial income-related account for 2024 was reported at about KRW 3.3 billion. This means net income relies on non-operating income. If financial income declines, net income could fall sharply even with unchanged operating profit. The 21.5% drop in 2025 controlling-shareholder net income should be read alongside this dependence."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

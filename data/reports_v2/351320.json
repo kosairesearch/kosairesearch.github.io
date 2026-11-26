@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무와 유동성",
-    "en": "Financing and liquidity"
+    "ko": "AI 서버 초기 수요",
+    "en": "Early AI server demand"
    },
    "body": {
-    "ko": "영업활동 현금 유출이 2025년 -81억원으로 커졌고, 이를 재무활동 자금으로 메우는 구조가 반복되고 있다. 2025년 3분기부터 2026년 3분기까지 분기마다 영업손실이 이어졌다. 회사가 병행 추진하는 300억원 규모 추가 유상증자가 실행되면 기존 주주의 지분 희석이 커질 수 있다. 전환사채가 주식으로 전환되면 희석은 더 커진다.",
-    "en": "Operating cash outflow widened to -KRW 8.1 billion in 2025, and financing inflows have repeatedly covered the gap. Operating losses have continued in every quarter from 3Q 2025 through 3Q 2026. If the additional KRW 30 billion rights offering goes ahead, dilution for existing shareholders could increase. Conversions of convertible bonds would add further dilution."
+    "ko": "AI GPU 서버의 초기 수요는 디씨코리아와 디씨피 그룹과의 협업에 기대고 있다. 수도권 엣지 AI 데이터센터와 당진 하이퍼스케일 데이터센터 연계 공급도 이 협업을 전제로 한다. 협업 물량이 예정대로 확보되지 않으면 시화 전용라인의 가동률이 낮아져 고정비 부담이 손익을 더 누를 수 있다. 일본 기업과의 공급 계약도 이행 시점에 따라 실적 반영이 늦어질 수 있다.",
+    "en": "Early demand for the AI GPU server business relies on collaboration with DC Korea and the DCP group. Supply to the urban edge AI data center in the Seoul metropolitan area and the hyperscale data center in Dangjin also depends on this collaboration. If the expected volume does not materialize, utilization of the dedicated Siheung line could fall, raising fixed-cost pressure on earnings. The timing of revenue recognition from the supply contract with a Japanese company could also slip depending on delivery."
    }
   },
   {
    "cat": {
-    "ko": "지배구조와 공시",
-    "en": "Governance and disclosure"
+    "ko": "원가 구조와 외주 비용",
+    "en": "Cost structure and outsourcing"
    },
    "body": {
-    "ko": "2026년 9월 최대주주가 바뀌었고 같은 시기 대표이사도 교체됐다. 최근 몇 년간 7회차에 걸쳐 481.1억원 규모의 전환사채가 발행됐으며, 전환 시 주식 희석 가능성이 존재한다고 보도됐다. 불성실공시 벌점 관련 지정 유예 건과 전환사채 발행 효력을 다투는 소송 기록도 이어지고 있다.",
-    "en": "The largest shareholder changed in September 2026, and the CEO was replaced in the same period. A press report said the company has issued KRW 48.11 billion of convertible bonds across seven tranches in recent years, creating potential dilution on conversion. The deferred insincere-disclosure designation and a lawsuit over bond issuance validity also remain on record."
+    "ko": "외주가공비 부담이 매출원가를 누르는 구조가 이어질 수 있다. 2025년 3분기까지 누적 외주가공비는 58억원이었고, 매출이 2025년 수준을 회복하지 못한 상태에서 원가율이 낮아지지 않으면 적자 축소 폭은 제한될 수 있다. AI 서버 라인이 가동되면 생산 구조가 바뀌겠지만, 시험생산 단계에서는 초기 원가 부담이 먼저 나타날 수 있다. 판관비 증가가 겹치면 손익 개선은 더 늦어질 수 있다.",
+    "en": "Outsourced processing costs could keep pressuring cost of sales. Cumulative outsourced processing costs reached KRW 5.8 billion through 3Q 2025, and if the cost ratio does not improve while revenue remains below 2025 levels, the room to narrow the operating loss may stay limited. The GPU server line may change the production structure once it runs, but initial costs during trial production could appear first. If higher selling, general and administrative expenses continue alongside, the improvement in earnings could be delayed."
    }
   },
   {
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·프로젝트 집중",
-    "en": "Customer and project concentration"
+    "ko": "양산 물량 규모 불확실성",
+    "en": "Mass-production volume uncertainty"
    },
    "body": {
-    "ko": "매출의 상당 부분이 유럽 소재 글로벌 통신장비사와의 ASIC 프로젝트에 연결돼 있다. 고객사가 설비투자를 미루거나 제품 사양을 바꾸면 양산 시점과 물량이 함께 흔들릴 수 있다. 회사는 양산 매출이 통신사 투자 현황에 따라 달라진다고 설명해 왔다.",
-    "en": "A large share of revenue is tied to ASIC projects with a European global telecom equipment maker. If that customer delays capital spending or changes product specifications, both the timing and volume of mass production could shift. The company has said mass-production revenue depends on telecom operators' investment plans."
+    "ko": "회사는 1차 XGSPON ASIC이 양산에 들어가면 향후 10년 이상 연간 약 500억원 규모 매출이 가능하다고 설명했으나, 이는 회사 측 설명이며 확정된 가이던스가 아니다. 실제 양산 물량이 이 수준에 못 미치면 성장 시나리오의 폭이 줄어들 수 있다. 2차 계약의 실적 기여 규모도 양산 물량에 따라 달라지므로, 계약 금액만으로 매출 규모를 가늠하기는 어렵다.",
+    "en": "The company has said that once the first XGSPON ASIC enters mass production, it could generate annual revenue of about KRW 50 billion for more than ten years, but this is the company's own description and not a confirmed guidance figure. If actual mass-production volumes fall short of this level, the range of growth scenarios could narrow. Because the earnings contribution of the second contract also depends on mass-production volumes, the contract value alone makes it difficult to gauge the revenue scale."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "희석과 재무 변수",
-    "en": "Dilution and financial variables"
+    "ko": "병행 개발 과제의 비용 부담",
+    "en": "Cost burden from parallel development projects"
    },
    "body": {
-    "ko": "제1회 전환사채의 대부분이 보통주로 전환되면서 발행주식 수가 늘었다. 주식 전환으로 재무 부담은 줄었지만, 주주 지분은 희석된 상태다. 개발비 지출과 운전자본 증가가 겹치면 영업활동 현금흐름이 다시 음수로 돌아설 수 있어 분기별 현금흐름 추이가 중요하다.",
-    "en": "Most of the first convertible bonds converted into common shares, which increased the number of shares outstanding. The conversion reduced debt but diluted existing shareholders. If development spending and working capital needs rise together, operating cash flow could turn negative again, so quarterly cash-flow trends matter."
+    "ko": "회사는 XGSPON 2차 ASIC 외에 RISC-V 기반 통신반도체, 모빌리티용 네트워크 프로세서, 뉴로모픽 칩 등 여러 개발 과제를 함께 진행하고 있다. 2026년 8월 발표에서도 25GS-PON과 모빌리티 반도체 등 차세대 제품 개발을 추진한다고 밝혔다. 과제가 동시에 늘어나면 연구개발비가 양산 매출보다 먼저 쌓여 영업이익 흑자 기조를 압박할 수 있다. 이들 과제가 양산 매출로 이어지는 시점은 아직 확정되지 않아, 비용이 먼저 발생하고 수익이 뒤따르지 않을 수 있다.",
+    "en": "Alongside the second XGSPON ASIC, the company is pursuing several development projects, including RISC-V-based telecom chips, mobility network processors and neuromorphic chips. In its August 2026 announcement, the company also said it would advance next-generation products such as 25GS-PON and mobility semiconductors. If these projects increase at the same time, R&D spending could build up ahead of mass-production revenue and pressure the operating profit trend. Because the timing of revenue from these projects has not been set, costs may arrive first while returns follow later or not at all."
    }
   }
  ],
@@ -361,5 +361,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

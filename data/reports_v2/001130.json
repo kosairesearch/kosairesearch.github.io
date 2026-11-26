@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "규제·법적 리스크",
-    "en": "Regulatory and Legal Risk"
+    "ko": "거래처 구매 정책",
+    "en": "Customer Purchasing Policy"
    },
    "body": {
-    "ko": "담합 제재로 부과된 과징금 1,793억원은 납부 일정과 함께 현금흐름에 영향을 준다. 미반영 과징금 849억원이 추가로 인식될 경우 손실 폭과 부채비율이 함께 변한다. 제분업계 가격 정책에 대한 규제 감시가 강화되면 판가 운영의 폭도 좁아질 수 있다.",
-    "en": "The KRW 179.3 billion penalty affects cash flow according to its payment schedule. If an unrecognized KRW 84.9 billion is booked, both the loss and the debt ratio would change. Tighter regulatory scrutiny of milling sector pricing could narrow room for pricing decisions."
+    "ko": "대형 식품사 거래처의 구매 정책이 바뀌면 밀가루와 사료의 물량과 판가가 함께 움직일 수 있다. 농심과 오뚜기 등과의 거래가 유지되는지가 매출 안정성의 주요 조건이다. 거래처의 원가 부담이 커지면 구매 단가 인하 요구나 물량 조정으로 이어질 수 있다. CJ제일제당도 2026년 3분기 원부자재·물류비 부담을 설명했다는 점에서, 업계 원가 압박이 거래처 구매 조건에 옮겨 갈 수 있다.",
+    "en": "If purchasing policies at large food customers such as Nongshim and Otoki change, both volumes and selling prices of flour and feed could move together. Maintaining these transactions is a key condition for sales stability. Rising cost burdens at customers could lead to requests for lower purchase prices or volume adjustments. CJ Cheiljedang also described raw material and logistics cost burdens in its third-quarter 2026 results, so cost pressure across the food sector could pass through to customer purchase terms."
    }
   },
   {
    "cat": {
-    "ko": "원재료·환율 리스크",
-    "en": "Raw Material and Currency Risk"
+    "ko": "신사업 성과",
+    "en": "New Business Performance"
    },
    "body": {
-    "ko": "소맥, 옥수수, 대두박 등 주요 원재료 대부분을 수입에 의존해 국제 곡물가격과 환율 변동에 노출된다. 2026년에는 고환율 기조와 원재료 가격 상승이 판가 인하와 겹쳐 마진 스프레드가 좁아졌다. 원재료 가격이 다시 오르면 같은 구조에서 이익이 추가로 압박받을 수 있다.",
-    "en": "Most key raw materials, including wheat, corn and soybean meal, are imported, so the company is exposed to global grain prices and currency moves. In 2026, a high-exchange-rate environment and higher raw material prices combined with price cuts to narrow the margin spread. A further rise in raw material costs would add pressure to earnings under the same structure."
+    "ko": "반려동물과 식음료는 2020년부터 키워 온 신규 사업으로, 매출 비중은 아직 소맥분과 사료에 비해 작다. 이 두 사업이 기대만큼 성장하지 않으면 본업 마진 저하를 상쇄할 수단이 제한된다. 신사업의 수익성은 원재료 조달과 판매 채널 확대에 따라 달라질 수 있다. 과징금 납부와 주주환원 과제가 함께 놓인 상황에서 신사업 성과는 이익 회복의 보완 축이 된다.",
+    "en": "Pet and food and beverage businesses have been developed as new ventures since 2020, and their share of sales remains small relative to wheat flour and feed. If these businesses do not grow as expected, the company has limited means to offset margin declines in its core operations. Profitability in these areas depends on raw material sourcing and the expansion of sales channels. With the penalty payment and shareholder return challenges both pending, new business performance would serve as a supplementary source of profit recovery."
    }
   },
   {
    "cat": {
-    "ko": "지배구조·내수 집중",
-    "en": "Governance and Domestic Concentration"
+    "ko": "내수 수요 집중",
+    "en": "Domestic Demand Concentration"
    },
    "body": {
-    "ko": "수출 비중은 매출의 1%에 못 미쳐 내수 경기 변동에 취약하다. 2026년 3월 주주총회에서 자사주 취득 안건이 부결된 뒤 회사는 주주가치 제고 방안을 검토 중이라고 밝혔다. 오너 일가의 보수가 올라간 점을 두고 주주들의 반발이 이어지고 있어 주주환원 정책의 구체화 여부가 중요해졌다.",
-    "en": "Exports account for less than 1% of sales, leaving the company exposed to domestic demand swings. After the buyback proposal was rejected at the March 2026 shareholder meeting, the company said it was reviewing shareholder value measures. Shareholder criticism over pay for the controlling family continues, which makes the concrete form of shareholder return policy more important."
+    "ko": "수출 비중은 매출의 1%에 못 미쳐 사업 대부분이 국내 수요에 기대고 있다. 소맥분과 사료 판매는 국내 식품 소비의 변화를 직접 받는 구조여서, 소비 둔화나 소비 패턴 변화가 물량에 바로 반영될 수 있다. 해외 판로로 국내 수요 감소를 보완하는 경로가 사실상 없어 수요 조정을 흡수할 여지가 작다. 판가 조정이 이어지는 상황에서 내수 물량이 줄면 실적 변동 폭이 커질 수 있다.",
+    "en": "Exports account for less than 1% of sales, so nearly all of the business depends on domestic demand. Flour and feed sales respond directly to changes in domestic food consumption, so a slowdown or shift in consumption patterns could quickly appear in volumes. With almost no overseas channel to offset weaker domestic demand, the room to absorb a demand decline is limited. If volumes fall while price adjustments continue, earnings swings could widen."
    }
   }
  ],
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

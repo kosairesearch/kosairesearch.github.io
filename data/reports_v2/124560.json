@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "거래처 신용·대손",
-    "en": "Customer credit and bad debt"
+    "ko": "석유화학 화주 물량 변동",
+    "en": "Petrochemical shipper volumes"
    },
    "body": {
-    "ko": "중앙아시아 거래처의 대금 결제가 현지 정부 지급 지연에 묶이면 대손충당금이 추가로 쌓인다. 2025년 연간 손익에도 주요 거래처 대손충당금 추가 인식이 반영됐다. 회수 시 환입이 예상되더라도 거래처 집중에 따른 손익 변동성은 남아 있다.",
-    "en": "When a Central Asian customer's payments are held up by local government payment delays, bad-debt provisions build up. The 2025 full-year results also reflected additional provisions on major customer receivables. Even with a reversal expected on collection, earnings volatility from customer concentration remains."
+    "ko": "롯데케미칼·LG화학 등 석유화학 화주의 설비 가동과 출하 계획이 바뀌면 운송 물량이 늘거나 줄 수 있다. 석유화학 화주는 회사의 주요 고객군을 이루고 있어, 업종별 경기 변화가 운송 물량에 직접 옮겨 갈 수 있다. 삼성E&A와 체결한 해외 EPC 프로젝트 운송도 발주처 일정에 따라 물량이 늦춰질 수 있다.",
+    "en": "Shifts in operating rates and shipping plans at petrochemical shippers such as Lotte Chemical and LG Chem may raise or reduce transport volumes. Petrochemical shippers form a major customer group, so sector-specific changes can pass directly into cargo volumes. Project transport under the overseas EPC contract signed with Samsung E&A may also be delayed by client schedules."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 6.97
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

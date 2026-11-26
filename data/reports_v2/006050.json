@@ -117,12 +117,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "관리종목 지정과 상장 유지",
-    "en": "Listing-watch designation and listing status"
+    "ko": "신사업 인증 일정",
+    "en": "New business certification timing"
    },
    "body": {
-    "ko": "시가총액이 200억원 기준을 밑도는 상태가 이어지면 관리종목 지정 우려가 커진다. 기준을 30거래일 연속 밑돌면 지정 가능성이 제기된다는 것이 회사의 설명이다. 회사는 주주환원과 IR 강화로 대응하겠다고 밝혔으나, 시가총액 회복 여부는 시장 가격에 달려 있다.",
-    "en": "If market capitalization stays below the KRW 20 billion threshold, the listing-watch designation risk rises. The company has described a designation as possible if the shortfall persists for 30 consecutive trading days. The company plans to respond through shareholder returns and stronger IR, but whether market capitalization recovers depends on market prices."
+    "ko": "BIPV는 호주 ClearVue와 라이선스 계약을 맺고 국내 인증 절차를 마무리하는 단계다. 인증 승인이 지연되거나 조건부로 나오면 고부가 제품의 국내 매출 시점이 밀릴 수 있다. 방산용 윈드스크린과 전파 차단 복층유리의 개발 일정도 길어질 수 있어 신사업의 수익 기여가 늦어질 수 있다. 신사업 성과가 늦어지면 기존 시공 부문의 실적 둔화를 상쇄하기 어렵다.",
+    "en": "BIPV is nearing completion of domestic certification under its license agreement with Australia's ClearVue. If certification approval is delayed or granted with conditions, the timing of domestic sales for these higher-value products could slip. Development of the defense windscreen and radio wave-blocking double glazing could also take longer, delaying their contribution to earnings. If new-business results come later than expected, they may not be enough to offset weaker results in the core glazing business."
    }
   },
   {
@@ -361,5 +361,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

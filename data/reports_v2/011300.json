@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "유동성과 재무 구조",
-    "en": "Liquidity and capital structure"
+    "ko": "신사업 실행과 계약 이행",
+    "en": "New business execution and contracts"
    },
    "body": {
-    "ko": "보도에 따르면 2025년 말 현금 및 현금성자산은 14억원 수준이었고 유동비율은 21%였다. 부채총계 701억원이 자본총계 312억원을 웃도는 구조에서 단기 상환 부담이 커질 수 있다. 유증 납입 지연과 전환사채 전환가액 조정은 자금조달 시점을 불확실하게 만든다.",
-    "en": "Reports say cash and equivalents were about KRW 1.4 billion at the end of 2025 and the current ratio was 21%. With total liabilities of KRW 70.1 billion exceeding total equity of KRW 31.2 billion, short-term repayment pressure could build. Delays in capital raising and convertible bond conversion price adjustments make the timing of funding uncertain."
+    "ko": "신사업인 엔진 발전기는 80억원 규모 초도 계약의 연내 납품과 현장 설치·시운전이 일정대로 끝나야 첫 매출로 확인된다. 판매를 5개 전문 대리점에 의존하고 있어 대리점의 설치 역량이 늦으면 매출 인식이 다음 해로 밀릴 수 있다. 2025년 앵글로아메리카 공사의 발주가 없었던 만큼 추가 계약이 이어지지 않으면 초도 물량 이후 사업 규모가 제한될 수 있다.",
+    "en": "The new engine generator business is confirmed as revenue only if delivery, installation and commissioning of the KRW 8 billion first contract are completed on schedule within the year. Sales depend on five specialized dealers, so slow installation capacity at those dealers could push revenue recognition into the following year. Since no orders came from the Anglo American project in 2025, the business scale could stay limited beyond the first volume if further contracts do not follow."
    }
   },
   {
@@ -349,5 +349,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

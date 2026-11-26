@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "공공 계약 집중과 갱신",
-    "en": "Concentration in public contracts"
+    "ko": "제품 확대와 도입 지연",
+    "en": "Product expansion and adoption delay"
    },
    "body": {
-    "ko": "지자체 정보보호 컨설팅 계약은 수주 규모가 크지만 계약기간이 2026년 12월 31일에 끝난다. 계약 종료 뒤 갱신이나 신규 수주가 이어지지 않으면 분기 매출이 다시 줄 수 있다. 정부 예산과 발주 일정에 따른 변동성도 함께 봐야 할 리스크다.",
-    "en": "The local government consulting contract is large but ends on December 31, 2026. If renewals or new awards do not follow, quarterly revenue could decline again. Government budgets and procurement schedules add further variability."
+    "ko": "CC 인증을 받은 PROM SIEM AI의 공공기관과 금융권 적용 확대 계획은 아직 실행 단계에 있다. 회사가 밝힌 AI와 SOAR 결합 효과와 자동 처리 비율은 자체 운영 환경에서 나온 것이어서 고객사 도입에서도 같은 성과가 재현될지 확인이 필요하다. 도입이 지연되거나 기대에 미치지 못하면 제품 매출과 관제 서비스 확장 효과가 늦어질 수 있다. Agentic AI 기반 관제로의 단계적 확장도 개발 일정에 따라 달라질 수 있다.",
+    "en": "The plan to widen PROM SIEM AI, which has received CC certification, into public institutions and financial services remains at the execution stage. The AI and SOAR results and automated ticket share cited by the company come from its own operating environment, so it remains to be seen whether customer deployments reproduce them. If adoption is delayed or falls short of expectations, product revenue and the expansion of monitoring services could slow. The step-by-step move toward Agentic AI-based monitoring may also shift with development schedules."
    }
   },
   {
    "cat": {
-    "ko": "이익 지속성과 적자 재발",
-    "en": "Earnings durability and relapse risk"
+    "ko": "조직 개편과 인력 가동률",
+    "en": "Reorganization and staff utilization"
    },
    "body": {
-    "ko": "2025년에는 영업이익과 지배주주 순이익이 모두 악화됐고, 영업이익 흑자는 2026년 2분기와 3분기 두 분기뿐이다. 2026년 1분기에는 영업손실이 발생해 분기 단위 흑자가 안정적으로 이어진다는 근거는 아직 짧다. 영업활동 현금흐름도 2025년 순유출로 돌아섰다는 점이 재무 리스크로 남아 있다.",
-    "en": "Operating profit and profit attributable to controlling shareholders both deteriorated in 2025, and operating profit has been positive only in Q2 and Q3 2026. The record of consistent quarterly profit is still short after the Q1 2026 operating loss. Operating cash flow also turned to an outflow in 2025."
+    "ko": "회사는 기업가치 제고 계획에서 사업 조직구조 효율화와 원가 경쟁력 강화를 실행 과제로 제시했고, 보안컨설팅본부 개편과 레드팀 구축을 마쳤다고 밝혔다. 매출이 수주 규모와 인력 가동률에 따라 움직이는 용역 중심 구조여서, 조직 재편 과정에서 인력이 재배치되면 가동률이 떨어질 수 있다. 원가 절감을 위한 인력 운용 조정은 프로젝트 납기와 고객 대응 품질에도 영향을 줄 수 있다.",
+    "en": "In its value-up plan the company set out streamlining its business organization and strengthening cost competitiveness as execution tasks, and said it had reorganized its security consulting division and set up a red team. Because revenue in this services-based model moves with contract volume and staff utilization, relocating personnel during reorganization could lower utilization. Staffing adjustments made to cut costs could also affect project delivery timing and the quality of client response."
    }
   },
   {
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

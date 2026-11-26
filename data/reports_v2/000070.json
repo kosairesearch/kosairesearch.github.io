@@ -122,22 +122,22 @@
   },
   {
    "cat": {
-    "ko": "자회사 실적 의존",
-    "en": "Dependence on subsidiary results"
+    "ko": "지주 수입 구조 변화",
+    "en": "Change in holding income structure"
    },
    "body": {
-    "ko": "2024년 연결 매출에서 삼양사 비중 75.2%가 나타난 것처럼 지주 실적은 한 자회사의 실적에 집중되어 있다. 식품 원재료는 해외 수입 비중이 높아 환율과 원자재 가격 변동에 노출되고, 화학 부문은 원료 가격과 수요에 따라 마진이 달라진다. 이 두 축이 동시에 부진하면 지주 실적의 하방 폭이 커진다.",
-    "en": "As the 2024 share of 75.2% of consolidated sales from Samyang shows, holding company results are concentrated in one subsidiary. Food raw materials are heavily imported and exposed to exchange rates and commodity prices, while chemical margins depend on feedstock prices and demand. If both businesses weaken at the same time, the downside for holding company earnings widens."
+    "ko": "지주 자체 수익은 자회사 배당 외에 상표권, SSC(공유 서비스 센터) 수수료, 임대 수입으로 구성된다. 이들 수입은 계열사와의 계약 조건과 사용 범위에 따라 정해져, 계약이 바뀌거나 계열사의 사업 범위가 조정되면 지주 수입의 규모와 구성이 달라질 수 있다. 식품과 화학 자회사 배당에 이 수입이 더해져 지주 실적이 만들어지는 만큼, 어느 한 축의 변화가 전체 수입 구조에 미치는 영향을 함께 봐야 한다.",
+    "en": "Beyond subsidiary dividends, the holding company's own income consists of trademark royalties, shared service center fees and rental income. Because these revenues depend on contract terms and usage scope with affiliates, a change in contract conditions or an adjustment to affiliates' business scope could alter the size and mix of holding company income. Since these revenues add to dividends from the food and chemical subsidiaries to form holding company earnings, the effect of a change in any one of them on the overall income structure should be considered together."
    }
   },
   {
    "cat": {
-    "ko": "재무 레버리지 확대",
-    "en": "Higher financial leverage"
+    "ko": "배당 지급 결정",
+    "en": "Dividend payment decision"
    },
    "body": {
-    "ko": "부채비율이 2025년 98.8%로 2024년 76.5%에서 올랐다. 2025년 말 부채총계 2조 6,195억원은 자본총계 2조 6,525억원과 비슷한 규모다. 이자 부담과 차입 만기 구조가 회복 국면에서 비용으로 작용할 수 있고, 이는 자회사 배당에 의존하는 지주의 현금 여력을 줄일 수 있다.",
-    "en": "The debt-to-equity ratio rose from 76.5% in 2024 to 98.8% in 2025. Total liabilities of KRW 2.62 trillion at year-end 2025 are close in size to total equity of KRW 2.65 trillion. Interest costs and the maturity profile of borrowings could weigh during a recovery and reduce the cash room of a holding company that depends on subsidiary dividends."
+    "ko": "2026년 사업보고서 제출 시점에 배당 지급 결정이 이뤄질 예정이다. 2025년 지배주주 순손실 2,000억원으로 적자 전환한 상태에서 배당 규모를 정하면 지주의 현금 유출 부담이 달라질 수 있다. 2026년 3분기 지배주주 순이익이 늘었더라도 연간 손익이 흑자로 마감될지에 따라 배당 여력의 판단이 달라진다. 영업활동 현금흐름이 유지되더라도 배당 지급은 별도의 현금 사용으로 잡혀 지주 자금 운용에 영향을 줄 수 있다.",
+    "en": "The dividend payment decision is scheduled to be made at the filing of the 2026 annual report. With the company in a net loss attributable to controlling shareholders of KRW 200 billion in 2025, setting the dividend size could change the cash outflow burden on the holding company. Even with higher profit attributable to controlling shareholders in Q3 2026, the judgment on dividend capacity depends on whether annual profit closes in the black. Even if operating cash flow is maintained, dividend payments are a separate use of cash and could affect the holding company's funding."
    }
   }
  ],
@@ -339,5 +339,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

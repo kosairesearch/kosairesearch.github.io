@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객사 생산 · 원재료 가격",
-    "en": "Customer output and raw material prices"
+    "ko": "원재료 · 물류비 부담",
+    "en": "Raw material and logistics costs"
    },
    "body": {
-    "ko": "중동 전쟁에 따른 유가 상승은 원재료와 물류비를 자극하고, 국내 부품사 화재는 완성차 생산에 간접적인 충격을 준 것으로 분석된다. 완성차 업체의 시가총액과 영업이익이 함께 줄어든 흐름은 협력사 발주 압력으로 이어질 수 있다. 두 변수가 동시에 나빠지면 매출과 원가율 양쪽에서 이익이 압박받는 구조다.",
-    "en": "Higher oil prices tied to the Middle East conflict pressure raw material and logistics costs, and a domestic parts-maker fire indirectly hit vehicle output. Declining market value and operating profit at automakers could translate into pressure on supplier orders. If both variables worsen together, profit faces pressure from both sales and cost of sales."
+    "ko": "주원재료가 철강 선재인 구조에서 중동 전쟁 이후 유가가 오르면 원재료 조달 단가와 운송비가 함께 높아질 수 있다. 매출원가율이 대체로 87~89%대에 머무는 원가 구조에서는 상승분을 판매가에 바로 반영하기 어려울 때 영업이익률이 압박받는다. 완성차 업체와의 거래 가격이 원재료 변동을 늦게 반영하면 마진 축소가 분기 실적에 먼저 나타날 수 있다.",
+    "en": "Because the main raw material is steel wire rod, higher oil prices tied to the Middle East conflict could raise both raw material procurement costs and transport costs. With a cost-of-sales ratio that has generally stayed in the 87–89% range, operating margin would come under pressure whenever cost increases cannot be passed through to selling prices. If transaction prices with vehicle makers reflect raw material changes with a lag, margin compression could show up first in quarterly results."
    }
   },
   {
    "cat": {
-    "ko": "재무 구조 · 현금흐름",
-    "en": "Balance sheet and cash flow"
+    "ko": "해외 수출 수요",
+    "en": "Overseas export demand"
    },
    "body": {
-    "ko": "부채총계 4,430억원 대비 자본총계 1,663억원으로 재무 레버리지가 높은 편이다. 영업활동 현금흐름이 2023년 -91.7억원, 2025년 -74.7억원으로 두 차례 마이너스였다는 점은 이익의 현금 전환이 안정적이지 않다는 신호다. 이자 비용과 차입 조달 여건이 악화되면 설비 투자 여력이 줄어들 수 있다.",
-    "en": "With total liabilities of KRW 443 billion against equity of KRW 166.3 billion, leverage is elevated. Operating cash flow was negative in 2023 (-KRW 9.17 billion) and again in 2025 (-KRW 7.47 billion), suggesting profit does not convert to cash steadily. Worsening borrowing conditions would reduce room for capital investment."
+    "ko": "2024년 기준 냉간단조제품 매출의 71.60%가 수출이어서 해외 완성차 수요가 실적에 미치는 비중이 크다. 미국 물가 상승과 긴축 기대가 이어지면 해외 완성차 생산과 주문이 둔화되고, 이는 수출 물량 감소로 이어질 수 있다. 수출 비중이 높은 만큼 해외 주문 감소는 매출 구조 전체에 영향을 주는 구조다.",
+    "en": "In 2024, 71.60% of cold-forged product sales were exports, so overseas vehicle demand carries a large weight in results. If US inflation and tightening expectations persist, overseas vehicle production and orders could slow, and export volumes could decline as a result. Given the high export share, a drop in overseas orders would affect the company's revenue structure as a whole."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.32
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "운임 사이클",
-    "en": "Freight cycle"
+    "ko": "곡물 교역 흐름 변동",
+    "en": "Grain trade flow shifts"
    },
    "body": {
-    "ko": "드라이벌크와 탱커 운임은 신조 발주와 선복 공급에 따라 바뀐다. 2026년 3분기 실적은 운하 통항 제한과 태풍 같은 일시적 공급 제약에 힘입은 면이 있어, 그 조건이 완화되면 실적 탄력도 낮아질 수 있다. 2027년 공급 과잉 가능성은 KB증권이 제기한 핵심 우려다.",
-    "en": "Dry bulk and tanker freight move with newbuild deliveries and effective capacity. Part of the third-quarter 2026 result came from temporary supply constraints such as canal restrictions and typhoons, and easing those conditions could reduce earnings momentum. KB Securities raised the risk of oversupply in 2027 as a key concern."
+    "ko": "곡물 사업은 2026년 3분기 매출 6,783억원, 물동량 172만톤으로 분기 최대 매출을 냈다. 남미산 옥수수와 중국향 대두 거래, 한국·베트남 등 아시아향 판매 확대가 성장을 이끌었다. 이 거래 흐름이 교역 정책이나 수입국 수요 변화로 줄어들면 곡물 부문의 매출과 이익이 함께 낮아질 수 있다. 분기 최대 실적이 특정 거래선 물량에 얼마나 기대는지가 지속성의 관건이다.",
+    "en": "The grain business recorded a quarterly record of KRW 678.3 billion in third-quarter 2026 revenue on 1.72 million tons of volume. Growth was led by South American corn and Chinese-bound soybean trade and sales to Asia, including Korea and Vietnam. If those trade flows narrow due to trade policy or changes in importing-country demand, grain revenue and earnings could fall together. How far the record quarter relies on volumes from specific trade lanes will determine its sustainability."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 구조와 주주환원",
-    "en": "Balance sheet and shareholder returns"
+    "ko": "선대 도입 일정",
+    "en": "Fleet delivery schedule"
    },
    "body": {
-    "ko": "부채비율이 2025년 89.6%로 올라 있어 선박 도입 자금 조달 부담이 실적과 함께 주목된다. 주주환원 확대는 신규 배당정책 발표 여부에 달려 있으나 발표 시기가 정해지지 않았다. 재무 여력과 배당 계획이 함께 확인되어야 주주환원 기대가 현실화된다.",
-    "en": "With the debt-to-equity ratio at 89.6 percent in 2025, financing costs for vessel additions draw attention alongside earnings. Expanded shareholder returns depend on a new dividend policy whose timing has not been set. Balance sheet capacity and dividend plans together will determine whether those expectations materialize."
+    "ko": "회사는 중형 탱커 5척, 신조 VLCC 3척, 중고 VLCC 10척 도입을 계획하고 있다. 2027년 순차 도입으로 VLCC 선대가 14척 이상으로 늘어나는 것이 2027년 이익 반영의 전제다. 도입이 지연되거나 취득 조건이 달라지면 탱커 부문의 이익 증가 속도가 예상보다 늦어질 수 있다. 선대 확대 일정과 실적 반영 시점이 맞물리는지가 핵심이다.",
+    "en": "The company plans to add 5 MR tankers, 3 newbuild VLCCs and 10 secondhand VLCCs. Phased deliveries through 2027, lifting VLCC capacity above 14 vessels, are the premise for reflecting those earnings in 2027. If deliveries slip or acquisition terms change, the pace of tanker earnings growth could come in slower than expected. Whether the fleet expansion timing matches the timing of earnings recognition is the key point."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 3.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

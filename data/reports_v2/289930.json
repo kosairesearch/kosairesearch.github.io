@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "수주·납품 일정",
-    "en": "Order and Delivery Timing"
+    "ko": "증설 일정·투자 집행",
+    "en": "Capacity Expansion Timing"
    },
    "body": {
-    "ko": "방산 프로젝트는 개발, 양산 전환, 납품 시기가 길고 분기마다 집중된다. 납품이 다음 연도로 밀리면 분기 매출이 급감할 수 있다. 2026년 1분기 매출이 51.9억원으로 줄었던 것도 이런 시차의 영향으로 해석할 수 있다. 다음 수주와 양산 전환 계약의 공시 시점을 함께 봐야 한다.",
-    "en": "Defense programs run long from development through mass-production conversion to delivery, and deliveries cluster in specific quarters. If delivery slips into the following year, quarterly revenue can drop sharply. The first-quarter 2026 revenue decline of KRW 5.19 billion can be read as an example of this timing gap. Follow-on order and mass-production contract disclosures should be tracked together."
+    "ko": "천안 차세대 GaN RF 공장은 2027년까지 준공하는 계획으로, 글로벌 시장 진출에 대비한 선제적 증설이다. 공장 준공이 늦어지거나 투자 집행 시점이 밀리면 차세대 양산 능력 확보가 지연될 수 있다. 준공 전에 고정비 부담이 먼저 발생할 수 있어 이미 적자인 영업손익에 추가 압력이 될 수 있다. 준공 진척과 설비 투자 공시를 함께 확인해야 한다.",
+    "en": "The Cheonan next-generation GaN RF plant is planned for completion by 2027 as a pre-emptive capacity investment for possible global market entry. If completion is delayed or capital spending slips, securing next-generation mass-production capacity could be pushed back. Fixed-cost burdens could arrive before completion, adding pressure on operating results that are already in deficit. Construction progress and equipment investment disclosures should be checked together."
    }
   },
   {
    "cat": {
-    "ko": "자본 감소와 재무구조",
-    "en": "Equity Erosion and Balance Sheet"
+    "ko": "해외 시장 진출 일정",
+    "en": "Overseas Market Entry Timing"
    },
    "body": {
-    "ko": "2026년 3분기 지배주주 순손실이 363억원으로 크게 나타나, 자본총계 변동 폭이 커질 수 있다. 2025년 말 기준 자본총계는 512억원이고 부채총계는 591억원이다. 자본이 줄어드는 속도와 차입 여력은 2026 사업보고서의 재무상태표에서 확인할 대상이다.",
-    "en": "The third-quarter 2026 controlling-shareholder net loss of KRW 36.3 billion is large enough to move total equity meaningfully. At the end of 2025, total equity was KRW 51.2 billion against total liabilities of KRW 59.1 billion. The pace of equity change and borrowing capacity should be checked in the balance sheet of the 2026 annual report."
+    "ko": "유럽을 차세대 전략 시장으로 계획하고 있으며, 인도와 국내외 고객 저변 확대도 추진 중이다. 해외 고객의 인증과 공급자 등록 절차가 길어지면 신규 시장의 매출 기여 시점이 늦어질 수 있다. 인도 방산 기업향 고출력 증폭기 공급 계약은 확보된 상태여서, 계약 이행 일정과 현지 납품 조건도 함께 확인해야 한다. 이 계획의 진척은 후속 공시에서 추적할 대상이다.",
+    "en": "The company plans Europe as a next-generation strategic market, and expansion into India and broader domestic and overseas customers is under way. If customer qualification and supplier registration in overseas markets take longer than planned, the timing of revenue from new markets could slip. The supply contract with an Indian defense company for high-power amplifiers is already secured, so its delivery schedule and local supply terms should also be checked. Progress on these plans should be tracked through follow-up disclosures."
    }
   },
   {
@@ -331,5 +331,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

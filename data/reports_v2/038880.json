@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "사업 집중도와 인수 의존",
-    "en": "Business Concentration and Reliance on Acquisitions"
+    "ko": "신사업 실행 리스크",
+    "en": "New Business Execution Risk"
    },
    "body": {
-    "ko": "2026년 매출 증가는 디씨이솔루션 편입에 크게 의존하고 있어, 편입 사업의 수익성이 악화되면 연결 실적이 되돌아갈 수 있다. 자동차 전장 본업 매출은 2025년 감소했고, 전장부품 시장 경쟁이 심해지는 흐름이 이어질 수 있다. 자회사 아이에이클라우드는 2025년 매출 1억원에 순손실 102억원을 기록해 사업 정상화 여부가 가장 큰 불확실성으로 남아 있다.",
-    "en": "The 2026 revenue increase relies heavily on the consolidation of DC E Solution, so a weaker profit trend at that business could reverse consolidated results. Core automotive electronics sales declined in 2025, and competition in automotive parts may keep intensifying. The cloud-services subsidiary recorded 2025 revenue of KRW 100 million and a net loss of KRW 10.2 billion, leaving normalization of that business as a major uncertainty."
+    "ko": "국산 NPU 기반 AI 데이터센터 사업과 유럽 AI 인프라 시장 진출은 아직 실행 단계가 확인되지 않은 신사업이다. 자회사 아이에이클라우드는 인수 이후 2025년 매출 1억원에 그쳐 고객 확보가 관건이다. 데이터센터 사업은 전장 중심 사업과 고객군이 달라 신규 계약과 투자 집행이 함께 이뤄져야 하며, 지연되면 사업 전환 시점이 늦어질 수 있다. 2026년 사업보고서의 AI 사업 매출 규모와 투자 계획이 실행 여부를 가르는 기준이다.",
+    "en": "The AI data center business based on domestic NPUs and the push into Europe's AI infrastructure market are new ventures whose execution has yet to be confirmed. The cloud subsidiary, iA Cloud, reported KRW 100 million in 2025 revenue after its acquisition, so securing customers remains the key issue. Because the data center business serves customer groups different from the automotive-centred business, new contracts and investment must proceed together, and any delay could push back the timing of the business shift. Whether the revenue scale and investment plan of the AI business appear in figures in the 2026 annual report will determine execution."
    }
   },
   {
@@ -350,5 +350,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

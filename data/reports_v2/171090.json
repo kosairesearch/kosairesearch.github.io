@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "품질보증·대손 비용",
-    "en": "Warranty and bad-debt costs"
+    "ko": "생산 증설 가동 지연",
+    "en": "Plant expansion ramp-up delay"
    },
    "body": {
-    "ko": "장비 인도 뒤 발생하는 하자보수충당부채와 매출채권 대손충당금이 2026년 상반기 손익을 끌어내렸다. 회사는 비현금성 회계 반영이 포함된 수치라고 설명했지만, 이 비용이 반복되는지는 사업보고서 주석에서 확인해야 한다. 대형 장비 인도가 한 분기에 몰리면 이익 변동폭은 더 커진다.",
-    "en": "Warranty provisions for post-delivery defects and bad-debt allowances on receivables pulled down first-half 2026 results. The company said the figures include non-cash accounting effects, but whether such costs recur should be checked in the notes to the annual report. Concentrated large deliveries in a single quarter would widen profit swings."
+    "ko": "평택 브레인시티 신규 공장은 A·B동이 완공되면 사업장 면적이 약 1.8배 늘어나 하반기 출하 집중을 떠받칠 생산 기반이다. 다만 증설된 생산능력이 실제 설치와 검수 물량으로 이어지는 속도는 아직 정해지지 않았다. 설치 인력과 검수 일정이 증설 속도를 따라가지 못하면 수주잔고의 매출 전환이 늦어질 수 있다. 증설 효과가 지연되면 대형 장비 인도가 특정 분기에 더 몰리는 구조가 될 수 있다.",
+    "en": "Once Buildings A and B of the new Pyeongtaek Brain City plant are complete, floor space will rise about 1.8 times, forming the production base for concentrated second-half shipments. However, the pace at which added capacity turns into installed and inspected equipment volume has not been set. If installation staffing and inspection schedules fail to keep up with the expansion, the conversion of backlog into revenue could slow. A delayed expansion effect could concentrate large equipment deliveries in particular quarters."
    }
   },
   {
@@ -347,5 +347,6 @@
    "div": 1.41
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

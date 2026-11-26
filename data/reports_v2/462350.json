@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "일정 · 인허가",
-    "en": "Schedule and licensing"
+    "ko": "고객 계약 이행",
+    "en": "Customer contract fulfillment"
    },
    "body": {
-    "ko": "한빛-나노 발사는 조사 결과 반영 제작·검증 일정, 우주항공청 발사허가 심의, 브라질 현지 운용 일정 때문에 2~3개월 연기된 데 이어 2027년 상반기로 미뤄졌다. 브라질 알칸타라 우주센터의 운영 체계가 바뀌는 과정도 발사 슬롯 운영 계획의 변수로 언급됐다. 일정 변수는 실적 추정의 시점을 계속 옮기는 요인이다.",
-    "en": "HANBIT-Nano's launch was first delayed by two to three months due to manufacturing and verification schedules reflecting the investigation results, the launch permit review at the Korea AeroSpace Administration and local operations in Brazil, and has since been pushed to the first half of 2027. The transition of the operating system at the Alcântara Space Center was also cited as a variable in launch slot planning. Schedule variables keep shifting the timing of any earnings forecast."
+    "ko": "이노스페이스는 브라질·인도·한국 고객사 5곳과 발사 서비스 계약을 맺었고, 2026년 4월 보도된 일본 자룩스와의 위성 발사 계약은 2028년 이행을 목표로 한다. 당초 2025년 12월 발사에는 고객 위성을 포함한 정규 탑재체 8기가 실릴 예정이었다. 발사 시점이 계속 조정되면 고객 탑재 일정과 계약 이행 시기가 함께 바뀌어 고객 관계와 수주 기반에 부담이 될 수 있다.",
+    "en": "Innospace has launch service contracts with five customers in Brazil, India and Korea, and the satellite launch contract with Japan's Lusix reported in April 2026 targets implementation in 2028. The December 2025 mission was scheduled to carry eight regular payloads, including customer satellites. If launch timing keeps being adjusted, the schedules for customer payloads and contract fulfillment will shift together, which could weigh on customer relationships and the order base."
    }
   },
   {
    "cat": {
-    "ko": "재무 · 자금 조달",
-    "en": "Financial and funding"
+    "ko": "차세대 발사체 개발 실행",
+    "en": "Next-vehicle development execution"
    },
    "body": {
-    "ko": "영업손실과 영업현금 유출이 이어지는 상황에서 자금 조달이 지속되면 주주 지분 희석이 커질 수 있다. 2026년 4월 Post-IPO 투자 유치와 2026년 6~7월의 증자 연혁이 이 흐름을 보여 준다. 자본총계 520억원 대비 영업손실 규모가 커지는 추세가 이어지면 재무 여력의 축소로 이어질 수 있다.",
-    "en": "If funding continues amid operating losses and cash outflows, dilution of shareholder stakes could increase. The post-IPO investment in April 2026 and the capital increase history in June and July 2026 reflect this pattern. If operating losses continue to grow relative to total equity of KRW 52 billion, financial headroom could narrow."
+    "ko": "회사는 차기 발사체 한빛-마이크로의 상단에 쓰일 추력 0.4톤급 액체 메탄엔진 LiMEK-04의 핵심 기술 개발이 마무리된 것으로 확인된다. 다만 엔진 개발이 상단 통합과 비행 검증으로 이어져야 차기 발사체가 상업 운용 단계에 들어갈 수 있다. 개발 단계가 길어지면 한빛-나노 이후 발사 라인업 확장과 신규 고객 대응 시점이 늦춰질 수 있다.",
+    "en": "The core technology development for LiMEK-04, a 0.4-tonne-thrust liquid methane engine for the upper stage of the next vehicle HANBIT-Micro, has been confirmed as completed. However, engine development must still lead to upper-stage integration and flight verification before the next vehicle can enter commercial operation. If the development stage runs longer, the expansion of the launch lineup beyond HANBIT-Nano and the timing of service to new customers could also be pushed back."
    }
   }
  ],
@@ -348,5 +348,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

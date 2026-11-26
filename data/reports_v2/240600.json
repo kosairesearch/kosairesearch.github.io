@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "전방 투자 사이클과 고객 집중",
-    "en": "End-market capex cycle and customer concentration"
+    "ko": "ESS·LFP 전환 실행",
+    "en": "ESS and LFP transition execution"
    },
    "body": {
-    "ko": "매출은 전기차와 배터리 업체의 설비투자 결정에 크게 좌우되며, 2025년에는 고객사의 설비투자 축소로 매출이 감소했다. 배터리 산업이 LFP와 ESS로 넓어지는 흐름은 기회이면서도 기존 고객 중심 구조를 바꿔야 하는 과제다. 주요 고객인 LG에너지솔루션과 삼성SDI의 투자 계획이 바뀌면 매출 변동 폭이 커질 수 있다.",
-    "en": "Sales depend heavily on capital spending decisions by electric vehicle and battery makers, and in 2025 revenue fell as customers cut equipment investment. The shift toward LFP and ESS batteries is an opportunity but also requires changing a structure built around existing customers. If investment plans at major customers such as LG Energy Solution and Samsung SDI change, revenue swings could widen."
+    "ko": "회사는 ESS용 각형 배터리 라인의 핵심 부품 공급을 늘리고, 국내에서 검증한 LFP용 정밀금형 기술을 미국과 유럽 법인으로 넓히는 계획을 제시했다. 두 가지를 동시에 키우는 작업이어서 수주가 기대만큼 이어지지 않거나 양산 전환이 늦어지면 투자 부담이 먼저 늘 수 있다. 조지아주 신규 고객 샘플 평가와 윈저 생산기지 커터 카트리지 테스트 결과가 이 계획의 초기 성과를 보여 줄 지점이다.",
+    "en": "The company plans to expand supply of core parts for prismatic-cell ESS production lines and to extend LFP precision mold technology verified in Korea to its US and European subsidiaries. Because it is pursuing both at once, orders may not materialize as expected or mass-production handover may slip, which could raise investment burden first. Sample evaluation for a new Georgia customer and the cutter cartridge test at the Windsor plant in Canada will indicate early results of this plan."
    }
   },
   {
@@ -364,5 +364,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 의존",
-    "en": "Customer dependence"
+    "ko": "북미 현지화 공급 변화",
+    "en": "North American localization shift"
    },
    "body": {
-    "ko": "주요 고객의 해외 판매와 생산 계획이 매출 흐름을 직접 좌우한다. 고객사가 자체 생산을 확대하거나 다른 공급처를 늘리면 물량 감소로 이어질 수 있다. 고객사의 북미 현지화가 진행되면서 공급 지역과 방식이 바뀔 가능성도 함께 봐야 한다.",
-    "en": "The main customer's overseas sales and production plans directly shape revenue. If the customer expands in-house production or adds suppliers, volumes could fall. As the customer localizes in North America, the region and method of supply could also change."
+    "ko": "불닭볶음면이 미국 대형 유통 채널에 입점하는 흐름이 성장 요인으로 꼽힌다. 고객사가 북미 현지화를 강화하면 소스 원료 공급의 지역 구성과 공급 방식이 바뀔 수 있다. 이에 따라 생산 계획과 설비 가동 배분을 다시 맞춰야 할 수 있다. 현지화의 진행 속도는 고객사의 해외 판매 흐름과 회사의 물량 변화를 함께 놓고 확인할 필요가 있다.",
+    "en": "Growth has been linked to Buldak noodles entering large U.S. retail channels. If the customer strengthens localization in North America, the regional mix and method of supplying sauce materials could change. Production plans and line allocation may then need to be realigned. The pace of localization should be checked against the customer's overseas sales flow and changes in the company's volumes."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "분기 변동성과 주가 흐름",
-    "en": "Quarterly volatility and share price movement"
+    "ko": "신사업 확장 실행",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "분기 매출과 이익은 2026년 들어 전 분기 대비 큰 폭으로 오르내렸다. 이러한 변동은 연간 실적의 방향을 읽기 어렵게 만든다. 주가는 실적과 별개로 수급과 시장 흐름에 따라 움직일 수 있어, 실적 발표 전후의 움직임은 공시 수치와 나눠 볼 필요가 있다.",
-    "en": "Quarterly revenue and profit have swung sharply from quarter to quarter in 2026, which makes the direction of annual earnings harder to read. The share price can move with supply and demand and market flows separately from earnings, so movements around results announcements should be read apart from the disclosed figures."
+    "ko": "생활용품·화장품용 천연물 소재 연구로 사업 영역을 넓히고 있으나, 매출 구성에서 이 부문이 차지하는 비중은 아직 크지 않다. 현재 외형 성장의 무게중심은 소스 원료 한 축에 놓여 있다. 신사업의 사업화가 지연되거나 고객 확보가 늦어지면 연구에 투입한 자원이 매출로 이어지지 않을 수 있다. 신사업이 기존 소재 사업의 수익성을 대체할 만큼 자리 잡을지는 향후 부문 공시로 확인해야 한다.",
+    "en": "The company is widening its business into natural ingredients for household goods and cosmetics, but this segment still accounts for a small share of revenue. Growth remains centered on the single sauce-material line. If commercialization is delayed or customer acquisition is slow, resources invested in research may not turn into revenue. Whether the new business becomes large enough to offset the profitability of the core ingredient business should be confirmed through future segment disclosures."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 3.59
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

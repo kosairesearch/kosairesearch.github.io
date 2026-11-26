@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "수주 집중과 고객 비공개",
-    "en": "Order concentration and undisclosed customers"
+    "ko": "증설 가동과 수주 목표",
+    "en": "Capacity expansion and order target"
    },
    "body": {
-    "ko": "계약 상대방은 영업비밀 보호 요청에 따라 공개되지 않았다. 납품 일정과 계약 조건은 향후 변경될 수 있다고 공시에 적혔다. 계약 금액은 2025년 매출의 15.45%라 한 건의 계약 일정 변동이 분기 매출 흐름에 영향을 줄 수 있다.",
-    "en": "The counterparty of the logistics automation contract has not been disclosed at its request to protect trade secrets. The filing notes that delivery schedules and contract terms may change. At 15.45% of 2025 revenue, a shift in one contract's timing could affect quarterly revenue."
+    "ko": "회사는 평택 신공장이 본격 가동되면 생산능력이 기존 대비 약 4배 이상 늘어난다고 밝혔다. 연간 수주 1,000억원 돌파 목표도 함께 제시했다. 증설된 생산능력에 비해 수주가 따라오지 않으면 가동률 저하가 실적 부담으로 이어질 수 있다. 장비 발주가 고객 증설 일정에 따라 움직이는 만큼 목표 달성 시점도 그 일정에 좌우될 수 있다.",
+    "en": "The company said its capacity would expand by roughly four times or more once the new Pyeongtaek plant is fully operational. It also set a target of breaking KRW 100 billion in annual orders for the first time. If orders do not keep pace with the expanded capacity, lower utilization could weigh on results. Because equipment orders follow customers' expansion schedules, the timing of reaching that target may depend on those schedules."
    }
   },
   {
    "cat": {
-    "ko": "재무 레버리지와 적자 지속",
-    "en": "Financial leverage and continued losses"
+    "ko": "수계공정 기술 채택",
+    "en": "Adoption of aqueous process technology"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 598억원, 자본총계는 420억원이며 최근 4개 분기 지배주주 순손실 합계는 77.2억원이다. 적자가 이어지면 차입이나 자본 확충 필요성이 커질 수 있다. 영업활동 현금흐름이 2025년 플러스로 바뀌었지만 한 해 실적이라는 점은 같이 봐야 한다.",
-    "en": "Total liabilities at year-end 2025 were KRW 59.8 billion against total equity of KRW 42 billion, and the combined net loss attributable to controlling shareholders over the last four quarters is KRW 7.72 billion. If losses continue, the need for borrowing or capital raising could grow. Operating cash flow turned positive in 2025, but that is one year of data."
+    "ko": "LFP 양극 활물질 수계공정 기술은 원가 절감 효과로 고객의 관심을 받았고, 일부 기업에 샘플을 제공해 협업을 이어가기로 했다. 다만 샘플 단계의 기술이 고객의 양산 공정에 채택되는지는 아직 확인되지 않았다. 채택이 늦어지면 장비 수요로 연결되는 시점도 함께 밀릴 수 있다. 공동 개발 파트너와의 협업 범위와 상용화 조건도 수익화 속도를 가를 수 있다.",
+    "en": "The aqueous process for LFP cathode active material is drawing customer interest for its cost-reduction benefit, and the company will provide samples to some companies to continue collaboration. Whether this technology is adopted in customers' mass-production lines has not yet been confirmed. If adoption is delayed, the timing of its link to equipment demand could also slip. The scope of collaboration with its joint-development partner and commercialization terms could also determine how quickly it generates revenue."
    }
   },
   {
    "cat": {
-    "ko": "신사업 상용화 시점",
-    "en": "Timing of new-business commercialization"
+    "ko": "해외 복원기 사업 전개",
+    "en": "Overseas restoration equipment rollout"
    },
    "body": {
-    "ko": "전고체 장비의 대규모 수주는 관련 고객사들의 양산 진입에 따라 기대되는 상황이다. 휴머노이드용 전원 솔루션은 특허 심사가 진행 중이다. 복원기 사업은 복수의 해외 기업과 협의를 진행 중인 단계로 전해졌다.",
-    "en": "Large solid-state equipment orders depend on customers entering mass production. The extended power solution for humanoids is still under patent examination. Reports describe the restoration equipment business as being in talks with several overseas companies."
+    "ko": "폐배터리 복원기는 일본·동남아 등 해외 시장을 중심으로 우선 전개할 방침이다. 해외 고객 확보와 계약 조건에 따라 매출 인식 시기가 달라질 수 있다. 국내와 다른 고객 구조와 납품 방식이 적용되면 사업 확대 속도가 예상보다 늦어질 수 있다. 전고체·휴머노이드와 함께 신사업 축으로 제시된 만큼 투입 자원이 여러 사업에 나뉠 수 있다.",
+    "en": "The company plans to prioritize overseas markets such as Japan and Southeast Asia for its waste battery restoration equipment. Revenue recognition timing may vary depending on securing overseas customers and contract terms. If customer structures and delivery methods differ from those in Korea, the pace of expansion could be slower than expected. Because restoration equipment is presented alongside solid-state and humanoid businesses as new growth areas, resources may be spread across several businesses."
    }
   }
  ],
@@ -322,5 +322,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

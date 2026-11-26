@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "관계사 의존 · 지배구조",
-    "en": "Related-party dependence and governance"
+    "ko": "원재료 · 원가 경쟁력",
+    "en": "Raw materials and cost competitiveness"
    },
    "body": {
-    "ko": "인벤티지랩이 최대주주이면서 주요 CDMO 거래 상대방이어서 거래 구조의 독립성이 쟁점이 될 수 있다. 계약 금액이 비공개여서 매출 중 관계사 비중을 외부에서 정확히 가늠하기 어렵다. 인벤티지랩 연결 재무에서 큐라티스 자산이 차지하는 비중이 커서 큐라티스 실적이 모회사 재무에 영향을 줄 수 있다.",
-    "en": "Inventage Lab is both the largest shareholder and a principal CDMO counterparty, so the independence of the transaction structure could become a focus. Because the contract values are undisclosed, the related-party share of revenue cannot be gauged from outside. Quratis accounts for a large share of Inventage Lab's consolidated assets, so its results can affect the parent's financials."
+    "ko": "면역증강제의 주원재료인 스쿠알렌을 대체품으로 바꾸는 방안을 원료 파트너와 논의하고 있다. 글로벌 규모 공급에서는 원가 경쟁력이 계약 조건을 좌우하므로, 전환이 늦어지면 20여 개 기관과 진행 중인 공급 협의의 가격 조건이 불리해질 수 있다. 원료가 바뀌면 공급 일정과 제품 품질 조건도 달라질 수 있다. 이 사안은 AAHI 공급계약 이행과 면역증강제 매출 확대 속도에 영향을 줄 수 있다.",
+    "en": "Squalene, the main raw material of the adjuvant, is being discussed with raw-material partners for replacement with an alternative. In global-scale supply, cost competitiveness shapes contract terms, so a delayed switch could weaken price terms in the adjuvant supply talks under way with more than 20 institutions. A change of raw material may also alter supply schedules and product quality conditions. If the switch is delayed, the pace of performance under the AAHI supply contract and of adjuvant revenue growth could be affected."
    }
   },
   {
    "cat": {
-    "ko": "시장 · 상장 요건",
-    "en": "Market and listing requirements"
+    "ko": "임상 진행 · 개발 일정",
+    "en": "Clinical progress and development timeline"
    },
    "body": {
-    "ko": "2026년 8월 7일 투자주의종목 지정은 종가 기준 5일 전 대비 60% 이상 상승에 따른 것이었다. 주가 변동성이 커 단기 매매 쏠림에 따른 가격 왜곡이 생길 수 있다. 법차손 요건이 적용되면 관리종목 지정 가능성이 있어, 적자 축소 속도가 상장 유지 조건과 직결된다.",
-    "en": "The August 7, 2026 designation as an investment caution stock followed a rise of more than 60% over five trading days. High price volatility can distort prices through short-term trading concentration. Because the pre-tax loss rule could lead to managed-issue designation, the pace of loss reduction is directly tied to listing conditions."
+    "ko": "QTP101은 장·노년 대상 1상의 중간분석이 진행 중이고, 남아프리카공화국 등에서 2b상 유효성 임상으로 넘어가는 계획이 제시됐다. 2b상 결과가 기대에 못 미치면 3상과 글로벌 상업 공급 일정이 늦춰질 수 있다. 아프리카와 미국의 치료백신 임상 계약도 협의 단계여서 체결이 지연되면 임상 일정 전체가 밀릴 수 있다. 이런 지연은 백신 사업의 매출 전환 시점을 뒤로 미룰 수 있다.",
+    "en": "QTP101 is in the interim analysis of its Phase 1 trial in older adults, and a Phase 2b efficacy trial in places such as South Africa has been presented as the next step. If the Phase 2b results fall short of expectations, the timing of Phase 3 and global commercial supply could be delayed. Negotiations on therapeutic vaccine trials for QTP101 in Africa and the United States are still in progress, so any delay in signing could push back the overall clinical schedule. Such delays could also postpone the point at which the vaccine business begins to generate revenue."
    }
   }
  ],
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

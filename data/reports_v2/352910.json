@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "파생상품 평가손익 변동",
-    "en": "Derivative valuation volatility"
+    "ko": "피지컬 AI 사업화 지연",
+    "en": "Physical AI commercialization delay"
    },
    "body": {
-    "ko": "회사는 2026년 3분기 당기순손실에 주가 상승에 따른 파생상품 평가손실이 반영됐다고 밝혔다. 회사는 이 손실이 실제 현금 유출을 수반하지 않는 회계상 손실이라고 설명했다. 주가 움직임에 따라 순손익이 영업손익과 크게 어긋날 수 있는 구조라, 두 지표를 나눠 보는 것이 필요하다.",
-    "en": "The company said the Q3 2026 net loss reflected a derivative valuation loss tied to the share price rise. It described this as an accounting loss without actual cash outflow. Because net results can diverge sharply from operating results when the share price moves, the two measures need to be read separately."
+    "ko": "볼트는 글로벌 에너지 기업과 전력 분야 기술검증을 마치고 변전소 설계·모니터링 사업화를 검토 중이다. 후속 절차가 계약으로 이어지지 않으면 피지컬 AI 사업의 매출 반영 시점은 늦어질 수 있다. 한국인터넷진흥원 공급망 보안 지원사업 참여도 아직 매출로 이어지기 전 단계다. 따라서 피지컬 AI 영역의 수익화 속도는 후속 계약 진행에 따라 달라질 수 있다.",
+    "en": "BOLT has completed technology verification in the power sector with a global energy company and is reviewing commercialization for substation design and monitoring. If follow-on procedures do not lead to contracts, the point at which physical AI revenue is recognized could slip. Participation in the KISA supply-chain security support program is also still short of generating sales. Monetization speed in physical AI may therefore depend on progress toward follow-on contracts."
    }
   },
   {
    "cat": {
-    "ko": "신사업 상용화와 M&A 집행",
-    "en": "Commercialization and M&A execution"
+    "ko": "해외 완성차 콘텐츠 공급",
+    "en": "Overseas automaker content supply"
    },
    "body": {
-    "ko": "150억원 규모 투자 유치금은 피지컬 AI 분야 M&A에 투입될 계획이다. 해외 완성차 공급 논의와 볼트의 산업 적용은 공급 논의 또는 기술검증 단계에 있다는 것이 회사 설명이다. 신사업 매출이 연구개발비와 선제 투자 부담을 넘어서는 시점은 다음 정기보고서의 영업손실 추이로 확인해야 한다.",
-    "en": "The KRW 15 billion raised is planned for physical AI M&A. The company describes overseas automaker supply and BOLT's industrial deployment as still in supply discussion or verification stages. When new-business revenue exceeds research and upfront investment costs should be confirmed through the operating loss trend in upcoming regular reports."
+    "ko": "픽시리즈는 다수의 글로벌 완성차 그룹과 공급을 논의 중이며, 글로벌 기업과 픽나우 공급 계약을 체결했다. 논의가 실제 계약으로 이어지지 않으면 AI 콘텐츠 구독 매출의 확대 속도는 기대에 못 미칠 수 있다. 픽클의 적용 차종 확대도 완성차 그룹의 채택 일정에 좌우된다. 따라서 해외 완성차 공급 계약의 규모와 시점이 콘텐츠 사업의 수익 기여도를 가르는 변수가 될 수 있다.",
+    "en": "PickSeries is in supply discussions with several global automaker groups, and the company has signed a supply contract for PickNow with a global company. If these discussions do not convert into contracts, the expansion of AI content subscription revenue could fall short of expectations. Expanding P!ckle's applicable models also depends on automaker groups' adoption schedules. The scale and timing of overseas automaker supply contracts may therefore determine the content business's contribution to earnings."
    }
   }
  ],
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "뷰티 사업 성장 리스크",
-    "en": "Beauty business growth risk"
+    "ko": "라인업 확대 실행 리스크",
+    "en": "Lineup expansion execution risk"
    },
    "body": {
-    "ko": "회사는 2026년 하반기 해외 매출 50억원과 2027년 100억원 이상을 목표로 제시했으나, 화장품 유통과 해외 채널 확대는 현지 규제와 마케팅 비용에 좌우된다. 자회사 지분 60%는 샤페론이 보유한 상태이며 잔여 지분은 우선매수권의 대상이다. 편입 이후 분기 매출이 이어지지 않으면 연결 매출의 변동성이 커질 수 있다.",
-    "en": "The company set targets of KRW 5 billion in overseas sales for the second half of 2026 and more than KRW 10 billion in 2027, but cosmetics distribution and overseas expansion depend on local regulation and marketing spend. Shaperon holds a 60% stake in the subsidiary, and the remaining shares are subject to its right of first refusal. If quarterly revenue does not persist after consolidation, the volatility of consolidated sales could increase."
+    "ko": "뷰티 자회사의 2027년 상반기 기능성 화장품 라인업 확대는 샤페론의 독점 원료 공급과 니즈테크의 제품 기획이 맞물려야 가능하다. 원료 공급이나 기획에 차질이 생기면 신제품 출시가 늦어지고, 2027년 해외 매출 100억원 이상 목표 달성 시점도 밀릴 수 있다. 두 회사가 역할을 나눠 맡고 있어 일정 조정이 뷰티 매출 확대 속도를 좌우할 수 있다.",
+    "en": "Expanding the functional cosmetics lineup in the first half of 2027 depends on Shaperon's exclusive ingredient supply and NeedsTech's product planning. Delays in ingredient supply or planning could postpone new launches and the timing of reaching the target of more than KRW 10 billion in overseas sales in 2027. Because the two companies split these roles, scheduling coordination between them could determine the pace of beauty revenue growth."
    }
   },
   {
    "cat": {
-    "ko": "재무·상장 유지 리스크",
-    "en": "Financial and listing risk"
+    "ko": "지분 구조·손익 귀속",
+    "en": "Ownership and profit attribution"
    },
    "body": {
-    "ko": "2025년 영업활동 현금흐름은 -145억원이고 최근 4개 분기 지배주주 순손실 합계는 156억원이다. 관리종목 해제 요건은 변경상장 후 45거래일 연속 종가 1,000원 이상이며, 회사 목표 시점인 2026년 12월 3일까지 이 요건을 충족해야 한다. 자본 조달이 필요해질 경우 주식 발행에 따른 희석이 뒤따를 수 있다.",
-    "en": "Operating cash flow was -KRW 14.5 billion in 2025, and the net loss attributable to controlling shareholders over the last four quarters totaled KRW 15.6 billion. Removal from the administrative list requires closing prices of at least KRW 1,000 for 45 consecutive trading days after relisting, and that must be met by the company's December 3, 2026 target. If capital must be raised, share issuance could dilute existing holders."
+    "ko": "뷰티 자회사의 잔여 지분은 샤페론의 우선매수권 대상이며, 추가 매입 전까지 자회사 이익의 일부는 비지배지분에 귀속된다. 뷰티 사업의 이익이 커질수록 지배주주 귀속 순손익이 얼마나 개선되는지가 이 구분에 따라 갈릴 수 있다. 우선매수권 행사 시점에 따라 지배주주 귀속 손익의 구조도 달라질 수 있다.",
+    "en": "The remaining shares of the beauty subsidiary are subject to Shaperon's right of first refusal, and until Shaperon buys more shares, part of the subsidiary's profit is attributed to non-controlling interests. As the beauty business grows, how far the net loss attributable to controlling shareholders improves may depend on this split. The timing of exercising the right of first refusal could also change the structure of earnings attributable to controlling shareholders."
    }
   }
  ],
@@ -360,5 +360,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

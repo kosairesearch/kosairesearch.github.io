@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료·수입육 가격",
-    "en": "Raw material and imported meat prices"
+    "ko": "사료 원재료비 부담",
+    "en": "Feed raw material costs"
    },
    "body": {
-    "ko": "정육유통은 수입 우육 가격과 환율, 대체재 수요에 노출된다. 2026년 1분기 실적 코멘트는 미국산 우육 공급 부족과 호주산 대체 수요가 수입 원가를 올렸다고 설명했다. 원가 상승분을 판매가에 반영하지 못하면 회사 전체의 영업이익률이 낮아질 수 있다.",
-    "en": "Meat distribution is exposed to imported beef prices, exchange rates and substitute demand. The first-quarter 2026 commentary attributed higher import costs to US beef supply shortages and Australian substitution demand. If cost increases cannot be reflected in selling prices, the company-wide operating margin could fall."
+    "ko": "배합사료 부문의 마진은 곡물 등 원재료 가격에 좌우된다. 2025년 영업이익 증가의 주요 원인으로 회사가 사료 부문 원재료비 하락을 공시에서 제시한 만큼, 이 하락 효과가 이어지지 않으면 이익 개선분이 줄어들 수 있다. 원료 가격이 다시 오르면 낙농 사료 물량이 안정적이더라도 원가 상승분을 판매 단가에 충분히 반영하기 어려워 사료 부문 이익률이 낮아질 수 있다.",
+    "en": "Feed segment margins depend on grain and other raw material prices. The company cited lower feed-segment raw material costs as the main driver of the 2025 operating profit gain, so if that cost relief does not persist, the improvement may shrink. If ingredient prices rise again, dairy feed volume may stay stable, but cost increases may be hard to pass fully into selling prices, which could lower feed segment margins."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "영업 외 손익 변동",
-    "en": "Swings in non-operating items"
+    "ko": "정육 거래처 집중",
+    "en": "Meat distribution customer concentration"
    },
    "body": {
-    "ko": "2023년에는 지배주주 순이익이 영업이익을 크게 웃돌았고, 2025년에는 지분법평가이익이 세전이익을 끌어올렸다. 영업이익 규모가 수억원에서 수십억원 수준이라 영업 외 항목이 순이익의 방향을 바꿀 수 있다. 본업 이익과 순이익의 차이를 분기별로 나눠 보는 것이 필요하다.",
-    "en": "In 2023 controlling-shareholder net income far exceeded operating income, and in 2025 equity-method gains lifted pre-tax profit. With operating income in the range of a few hundred million to several billion won, non-operating items can change the direction of net income. Separating core operating profit from net income quarter by quarter is necessary."
+    "ko": "정육유통의 주요 거래처는 올롯미트그룹코리아와 커민사이드 등으로 나타났다. 정육 매출이 소수 거래처에 기대는 구조라면 이들 거래처의 구매 물량이나 거래 조건이 바뀔 때 매출과 이익이 함께 흔들릴 수 있다. 정육유통은 회사 매출의 중심인 만큼, 거래처 변화가 연결 실적에 미치는 영향의 크기도 커질 수 있다.",
+    "en": "The main meat distribution customers include Olot Meat Group Korea and Cumin Side. If meat sales depend on a small number of buyers, changes in their purchase volumes or trading terms could move both sales and profit. Because meat distribution is the core of revenue, the effect of such customer changes on consolidated results could be large."
    }
   }
  ],
@@ -347,5 +347,6 @@
    "div": 3.71
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }
