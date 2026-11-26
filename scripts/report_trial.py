@@ -4,6 +4,8 @@
 
     REPORT_TRIAL_CONFIGS=h2,h0,s2l python3 scripts/report_trial.py        # 주문 → 기다림 → 결과
     REPORT_TRIAL_BATCH=msgbatch_… python3 scripts/report_trial.py          # 낸 시험 배치를 다시 받는다
+    REPORT_TRIAL_BATCH=latest REPORT_TRIAL_SECTIONS=bear,risks REPORT_TRIAL_SHOW=20 python3 scripts/report_trial.py
+                                                                           # 가장 최근 시험 배치를 다시 받아 그 칸만 찍는다(돈 안 듦)
 
 2026-10-29 사장 "전 종목 다시 작성해도 20만원 이하가 나와야한다". 지금 설정(시총 상위 300 오퍼스 5.5 · 나머지 소넷 5.5 ·
 웹 검색 최대 6회)으로는 그 기준을 넘는다. 어느 설정이 기준 안에 들고 글이 검사를 통과하는지 추정이 아니라 실제로 써서 잰다.
@@ -275,8 +277,9 @@ def render(rows, n_all, failed=()):
     return "\n".join(L)
 
 
-def show(reps, n):
-    """본문을 기록에 찍는다 — 앞의 n개 종목의 설정별 한국어 핵심 칸(사람이 읽고 견주는 용도)."""
+def show(reps, n, sections=None):
+    """본문을 기록에 찍는다 — 앞의 n개 종목의 설정별 한국어 핵심 칸(사람이 읽고 견주는 용도).
+    sections 를 주면 그 칸만 찍는다(첨부에 닿지 못하는 곳에서 몇 칸만 견줄 때 — 2026-11-26 약세 · 리스크 중복 시험)."""
     tks = []
     for (cfg, tk) in reps:
         if tk not in tks:
@@ -286,6 +289,18 @@ def show(reps, n):
             if t != tk or rep is None:
                 continue
             print(f"\n===== {tk} {rep.get('name', '')} · 설정 {cfg} =====")
+            if sections:
+                for k in sections:
+                    v = rep.get(k)
+                    for x in (v if isinstance(v, list) else [v]):
+                        if isinstance(x, dict) and ("body" in x or "title" in x or "cat" in x):
+                            head = x.get("title") or x.get("cat") or {}
+                            body = x.get("body") or {}
+                            print(f"[{k}] {(head.get('ko') if isinstance(head, dict) else head) or ''} — "
+                                  f"{(body.get('ko') if isinstance(body, dict) else body) or ''}")
+                        elif x is not None:
+                            print(f"[{k}] {(x.get('ko') if isinstance(x, dict) else x) or ''}")
+                continue
             for k in ("title", "lead", "earnings", "industry", "outlook", "valuation_comment"):
                 v = rep.get(k)
                 print(f"[{k}] {(v.get('ko') if isinstance(v, dict) else v) or ''}")
@@ -332,6 +347,20 @@ def save_reports(reps, rows, out_dir, raws=None):
     out.mkdir(parents=True, exist_ok=True)
     (out / "rows.json").write_text(json.dumps(rows, ensure_ascii=False, indent=1, default=str), encoding="utf-8")
     return n
+
+
+def latest_trial_batch(cl, look=40):
+    """가장 최근에 낸 시험 배치 — 끝난 배치 가운데 첫 결과가 시험 요청(trial-…)인 것. 실행 기록에서 배치 번호를 찾지 못할 때."""
+    for b in cl.messages.batches.list(limit=look):
+        rc = b.request_counts
+        total = rc.processing + rc.succeeded + rc.errored + rc.canceled + rc.expired
+        if b.processing_status != "ended" or total > MAX_REQ:
+            continue
+        for res in cl.messages.batches.results(b.id):
+            if split_id(res.custom_id):
+                return b.id
+            break
+    return None
 
 
 def wait(cl, bid, budget=WAIT_SEC):
@@ -396,6 +425,12 @@ def main():
     stocks = data["stocks"]
     by_tk = {s["ticker"]: s for s in stocks}
     bid = os.getenv("REPORT_TRIAL_BATCH", "").strip()
+    if bid == "latest":
+        bid = latest_trial_batch(cl)
+        if not bid:
+            print("❌ 최근 시험 배치를 찾지 못했다 — batch_id 에 배치 번호를 넣는다")
+            sys.exit(1)
+        print(f"- 가장 최근 시험 배치 {bid} 를 다시 받는다(새 주문 없음)", flush=True)
     if not bid:
         configs = [c.strip() for c in os.getenv("REPORT_TRIAL_CONFIGS", "h2,h0,s2l").split(",") if c.strip()]
         for c in configs:
@@ -427,7 +462,8 @@ def main():
     if summ:
         with open(summ, "a", encoding="utf-8") as f:
             f.write(text + "\n")
-    show(reps, int(os.getenv("REPORT_TRIAL_SHOW", "2") or "2"))
+    show(reps, int(os.getenv("REPORT_TRIAL_SHOW", "2") or "2"),
+         [k.strip() for k in os.getenv("REPORT_TRIAL_SECTIONS", "").split(",") if k.strip()] or None)
     save = os.getenv("REPORT_TRIAL_SAVE", "").strip()
     if save:
         n = save_reports(reps, rows, save, raws)

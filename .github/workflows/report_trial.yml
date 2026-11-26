@@ -15,11 +15,14 @@ on:
         description: '종목코드(쉼표) — 비우면 시총 순위가 고르게 퍼진 8개'
         default: ''
       batch_id:
-        description: '이미 낸 시험 배치를 다시 받을 때(비우면 새로 주문)'
+        description: '이미 낸 시험 배치를 다시 받을 때(비우면 새로 주문 · latest 는 가장 최근 시험 배치)'
         default: ''
       show:
         description: '본문을 기록에 찍을 종목 수'
         default: '2'
+      sections:
+        description: '기록에 찍을 칸만(쉼표 · 예: bear,risks · 비우면 핵심 칸)'
+        default: ''
       save:
         description: '시험 글 전부를 실행 첨부로 남긴다(1 · 저장소에는 쓰지 않는다 · 7일 보관)'
         default: ''
@@ -46,6 +49,7 @@ jobs:
           REPORT_TRIAL_TICKERS: ${{ inputs.tickers }}
           REPORT_TRIAL_BATCH: ${{ inputs.batch_id }}
           REPORT_TRIAL_SHOW: ${{ inputs.show }}
+          REPORT_TRIAL_SECTIONS: ${{ inputs.sections }}
           REPORT_TRIAL_SAVE: ${{ inputs.save == '1' && format('{0}/trial_out', runner.temp) || '' }}
         run: python3 scripts/report_trial.py
 

@@ -258,5 +258,45 @@ except ValueError:
     ok(not (ROOT / "data" / "_trial_out").exists(), "저장소 안 폴더는 거절한다")
 ok(git_status() == before8, "첨부를 써도 저장소 파일은 그대로다")
 
+print("⑨ 가장 최근 시험 배치 · 칸 골라 찍기(2026-11-26 — 첨부에 닿지 못하는 세션이 약세 · 리스크만 견줄 때)")
+import contextlib  # noqa: E402
+import io  # noqa: E402
+
+
+def _rc(n):
+    return NS(processing=0, succeeded=n, errored=0, canceled=0, expired=0)
+
+
+class _LB:
+    def __init__(self):
+        self.items = [NS(id="b_filing", processing_status="ended", request_counts=_rc(5)),
+                      NS(id="b_running", processing_status="in_progress", request_counts=_rc(3)),
+                      NS(id="b_big", processing_status="ended", request_counts=_rc(500)),
+                      NS(id="b_trial", processing_status="ended", request_counts=_rc(20))]
+        self.read = []
+
+    def list(self, limit=20):
+        return self.items[:limit]
+
+    def results(self, bid):
+        self.read.append(bid)
+        cid = "trial-h2-005930" if bid == "b_trial" else "v2_005930"
+        return iter([NS(custom_id=cid)])
+
+
+lb = _LB()
+ok(T.latest_trial_batch(NS(messages=NS(batches=lb))) == "b_trial" and lb.read == ["b_filing", "b_trial"],
+   "끝난 배치 가운데 시험 요청이 든 가장 최근 배치를 고른다(진행 중 · 큰 배치는 결과를 읽지도 않는다)", str(lb.read))
+lb.items = lb.items[:3]
+ok(T.latest_trial_batch(NS(messages=NS(batches=lb))) is None, "시험 배치가 없으면 None")
+buf = io.StringIO()
+with contextlib.redirect_stdout(buf):
+    T.show({("h2", "005930"): {"name": "가", "bear": [{"title": {"ko": "약점"}, "body": {"ko": "약점 본문"}}],
+                               "risks": [{"cat": {"ko": "규제"}, "body": {"ko": "규제 본문"}}],
+                               "earnings": {"ko": "실적 본문"}}}, 5, ["bear", "risks"])
+out = buf.getvalue()
+ok("[bear] 약점 — 약점 본문" in out and "[risks] 규제 — 규제 본문" in out and "실적 본문" not in out,
+   "칸을 주면 그 칸만 찍는다")
+
 print(f"\n통과 {passed} · 실패 {failed}")
 sys.exit(1 if failed else 0)
