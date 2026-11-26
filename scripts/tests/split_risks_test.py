@@ -131,11 +131,13 @@ def msg(obj, raw=None):
 
 class FakeBatches:
     def __init__(self, answers):
-        self.answers, self.created, self.polls = answers, [], 0
+        self.answers, self.created, self.polls, self.by_id = answers, [], 0, {}
 
     def create(self, requests):
         self.created.append(requests)
-        return types.SimpleNamespace(id="msgbatch_SPLIT1")
+        bid = f"msgbatch_SPLIT{len(self.created)}"
+        self.by_id[bid] = requests
+        return types.SimpleNamespace(id=bid)
 
     def retrieve(self, bid):
         self.polls += 1
@@ -143,7 +145,7 @@ class FakeBatches:
 
     def results(self, bid):
         out = []
-        for r in self.created[-1]:
+        for r in self.by_id[bid]:
             a = self.answers.get(r["custom_id"])
             if a is None:
                 out.append(types.SimpleNamespace(custom_id=r["custom_id"], result=types.SimpleNamespace(type="errored")))
@@ -161,7 +163,7 @@ cl = types.SimpleNamespace(messages=types.SimpleNamespace(batches=fb))
 bid = S.cmd_order(cl, 0, sleep=lambda s: None)
 st = json.loads(S.STATE.read_text(encoding="utf-8"))
 reqs = fb.created[-1] if fb.created else []
-ok(bid == "msgbatch_SPLIT1" and sorted(r["custom_id"] for r in reqs) == ["v1_333330", "v2_111110", "v2_666660"] and fb.polls == 2,
+ok(bid == ["msgbatch_SPLIT1"] and sorted(r["custom_id"] for r in reqs) == ["v1_333330", "v2_111110", "v2_666660"] and fb.polls == 2,
    "글마다 요청 하나 · 끝날 때까지 기다린다", str(sorted(r["custom_id"] for r in reqs)))
 p = next(r["params"] for r in reqs if r["custom_id"] == "v2_111110")
 body = p["messages"][0]["content"]
@@ -263,6 +265,22 @@ S.cmd_order(cl3, 0, sleep=lambda s: None)
 before8 = p8.read_text(encoding="utf-8")
 res3 = S.cmd_apply(cl3, dry=True)
 ok(p8.read_text(encoding="utf-8") == before8 and res3["changed"] == 1, "시험(--dry)은 판단만 하고 저장하지 않는다")
+
+print("⑤-b 여러 배치로 나눠 주문 · 모두 받기")
+for tk in ("911110", "922220", "933330"):
+    write("reports_v2", tk, rep_of(tk))
+S.CHUNK = 2
+fb4 = FakeBatches({"v2_911110": NODUP, "v2_922220": GOOD, "v2_933330": NODUP})
+cl4 = types.SimpleNamespace(messages=types.SimpleNamespace(batches=fb4))
+bids4 = S.cmd_order(cl4, 0, only={"911110", "922220", "933330"}, sleep=lambda s: None)
+st4 = json.loads(S.STATE.read_text(encoding="utf-8"))
+ok(len(bids4) == 2 and [len(r) for r in fb4.created] == [2, 1] and st4["batch_ids"] == bids4 and len(st4["items"]) == 3,
+   "배치 하나에 정해 둔 수까지 · 넘으면 배치를 나눈다 · 상태 파일에 배치 번호를 모두 남긴다", str([len(r) for r in fb4.created]))
+res4 = S.cmd_apply(cl4)
+ok(sorted(res4["saved"]) == ["911110", "922220", "933330"] and res4["changed"] == 1, "나눈 배치의 답을 모두 받아 끼운다", str(res4))
+S.CHUNK = 800
+ok(S.cmd_apply(cl4, state={"batch_id": "msgbatch_SPLIT1", "items": {}}) == {"saved": [], "changed": 0, "items": 0, "skip": {}, "usd": 0.0},
+   "예전 꼴의 상태 파일(batch_id 하나)도 읽는다")
 
 print("⑥ 작업 파일")
 import yaml  # noqa: E402

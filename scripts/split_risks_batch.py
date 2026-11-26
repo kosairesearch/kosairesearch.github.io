@@ -41,6 +41,7 @@ import repair_rules_batch as R  # noqa: E402 — 리포트 목록 · 파일 꼴 
 MODEL = os.getenv("SPLIT_RISKS_MODEL", "claude-haiku-5-5")
 STATE = Path(os.getenv("SPLIT_RISKS_STATE", "/tmp/split_risks_state.json"))
 WAIT_SEC = int(os.getenv("SPLIT_RISKS_WAIT_SEC", str(4 * 3600)))
+CHUNK = int(os.getenv("SPLIT_RISKS_CHUNK", "800"))   # 배치 하나에 담는 글 수 — 요청 하나가 수십 KB 라 배치 한도(256MB)에 넉넉히 들게
 PRICE = {"in": 0.05, "out": 0.25, "cache_w": 0.0625, "cache_r": 0.005}   # 하이쿠 5.5 배치 · 100만 토큰당 달러(기록용 · 콘솔이 기준)
 SPLIT_RULES = 4        # 이 판(textRules) 부터는 지시문이 두 절을 가른다 — 고칠 대상이 아니다
 MARK = "riskSplit"     # 이 도구가 본 글의 표시(값 1) — check_report_text._NOT_TEXT
@@ -70,11 +71,14 @@ PROMPT = """아래는 한 회사의 기업 분석 리포트(JSON)입니다. 약�
    · en 은 같은 뜻의 영어다. 한글을 한 글자도 쓰지 않는다. 회사 · 제품 · 기관 이름은 리포트 영어 본문의 표기를 따른다.
 3. 같은 사안이 아닌 리스크 항목은 바꾸지 않는다(출력에 넣지 않는다).
 
-출력 — 마커 사이에 JSON 하나만 쓴다. judge 에는 리스크 항목마다 하나씩, same_as 는 같은 사안인 약세 요인 번호(1~{b}) 또는 0(같은
-사안 없음), why 는 판단 근거를 한국어 40자 안으로. replace 에는 same_as 가 0 이 아닌 항목만 넣는다(없으면 빈 목록).
+출력 — 마커 사이에 JSON 하나만 쓴다. 다른 말은 쓰지 않는다. 아래는 모양을 보이는 예다.
 ===JSON_START===
-{{"judge": [{{"risk": 1, "same_as": 0, "why": ""}}], "replace": [{{"risk": 1, "cat": {{"ko": "", "en": ""}}, "body": {{"ko": "", "en": ""}}}}]}}
+{{"judge": [{{"risk": 1, "same_as": 2, "why": "판단 근거"}}, {{"risk": 2, "same_as": 0, "why": "판단 근거"}}, {{"risk": 3, "same_as": 0, "why": "판단 근거"}}],
+ "replace": [{{"risk": 1, "cat": {{"ko": "분류", "en": "Category"}}, "body": {{"ko": "본문", "en": "Body"}}}}]}}
 ===JSON_END===
+· judge 는 리스크 항목마다 하나씩(1~{n}). same_as 는 같은 사안인 약세 요인 번호(1~{b}) 또는 0(같은 사안 없음). why 는 판단 근거를
+  한국어 40자 안으로 쓴다.
+· replace 에는 same_as 가 0 이 아닌 항목만 넣는다. 같은 사안이 없으면 "replace": [] 로 쓴다.
 
 ===REPORT===
 {report}
@@ -262,29 +266,33 @@ def cmd_order(cl, limit, only=None, sleep=time.sleep):
     ts = targets(limit, only)
     if not ts:
         log("## 리스크 나누기 — 볼 리포트 없음")
-        STATE.write_text(json.dumps({"batch_id": None, "items": {}}, ensure_ascii=False), encoding="utf-8")
-        return None
+        STATE.write_text(json.dumps({"batch_ids": [], "items": {}}, ensure_ascii=False), encoding="utf-8")
+        return []
     from anthropic.types.message_create_params import MessageCreateParamsNonStreaming
     from anthropic.types.messages.batch_create_params import Request
-    reqs, items = [], {}
-    for f, rep in ts:
-        cid = R.cid_of(f)
-        items[cid] = {"file": str(f.relative_to(ROOT)), "fp": fingerprint(rep)}
-        reqs.append(Request(custom_id=cid, params=MessageCreateParamsNonStreaming(**params_of(rep))))
-    b = cl.messages.batches.create(requests=reqs)
-    log(f"## 리스크 나누기 — 배치 제출 {b.id} · {len(reqs)}편")
-    STATE.write_text(json.dumps({"batch_id": b.id, "items": items}, ensure_ascii=False), encoding="utf-8")
+    bids, items = [], {}
+    for i in range(0, len(ts), CHUNK):
+        reqs = []
+        for f, rep in ts[i:i + CHUNK]:
+            cid = R.cid_of(f)
+            items[cid] = {"file": str(f.relative_to(ROOT)), "fp": fingerprint(rep)}
+            reqs.append(Request(custom_id=cid, params=MessageCreateParamsNonStreaming(**params_of(rep))))
+        b = cl.messages.batches.create(requests=reqs)
+        bids.append(b.id)
+        log(f"## 리스크 나누기 — 배치 제출 {b.id} · {len(reqs)}편")
+        STATE.write_text(json.dumps({"batch_ids": bids, "items": items}, ensure_ascii=False), encoding="utf-8")
     waited = 0
-    while True:
-        st = cl.messages.batches.retrieve(b.id)
-        if st.processing_status == "ended":
+    left = list(bids)
+    while left:
+        left = [b for b in left if cl.messages.batches.retrieve(b).processing_status != "ended"]
+        if not left:
             break
         if waited >= WAIT_SEC:
-            raise TimeoutError(f"배치가 {WAIT_SEC // 60}분 안에 끝나지 않았다({b.id}) — 같은 배치를 apply 로 다시 받는다")
+            raise TimeoutError(f"배치가 {WAIT_SEC // 60}분 안에 끝나지 않았다({', '.join(left)}) — 같은 배치를 apply 로 다시 받는다")
         sleep(60)
         waited += 60
-    log(f"- 배치 끝 ({waited // 60}분)")
-    return b.id
+    log(f"- 배치 {len(bids)}개 끝 ({waited // 60}분)")
+    return bids
 
 
 def _show(cid, rep_now, rep2, ans, want):
@@ -300,21 +308,23 @@ def _show(cid, rep_now, rep2, ans, want):
 
 def cmd_apply(cl, state=None, show=False, dry=False):
     st = state or json.loads(STATE.read_text(encoding="utf-8"))
-    bid, items = st.get("batch_id"), st.get("items") or {}
-    if not bid:
+    bids = st.get("batch_ids") or ([st["batch_id"]] if st.get("batch_id") else [])
+    items = st.get("items") or {}
+    if not bids:
         log("받을 배치 없음")
         return {}
     use = Counter()
     got = {}
-    for r in cl.messages.batches.results(bid):
-        if r.custom_id in items and r.result.type == "succeeded":
-            got[r.custom_id] = r.result.message
-            u = getattr(r.result.message, "usage", None)
-            if u is not None:
-                use["in"] += getattr(u, "input_tokens", 0) or 0
-                use["out"] += getattr(u, "output_tokens", 0) or 0
-                use["cache_w"] += getattr(u, "cache_creation_input_tokens", 0) or 0
-                use["cache_r"] += getattr(u, "cache_read_input_tokens", 0) or 0
+    for bid in bids:
+        for r in cl.messages.batches.results(bid):
+            if r.custom_id in items and r.result.type == "succeeded":
+                got[r.custom_id] = r.result.message
+                u = getattr(r.result.message, "usage", None)
+                if u is not None:
+                    use["in"] += getattr(u, "input_tokens", 0) or 0
+                    use["out"] += getattr(u, "output_tokens", 0) or 0
+                    use["cache_w"] += getattr(u, "cache_creation_input_tokens", 0) or 0
+                    use["cache_r"] += getattr(u, "cache_read_input_tokens", 0) or 0
     saved, changed, items_changed, skip = [], 0, 0, Counter()
     judged = Counter()
     for cid, it in sorted(items.items()):
